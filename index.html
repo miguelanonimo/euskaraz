@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<meta name="theme-color" content="#f2f0ec">
+<meta name="description" content="Aprende euskera batua desde cero. Módulo piloto de nivel A1.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Euskaraz · Aprende euskera desde cero</title>
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ══════════ CABECERA ══════════ -->
+  <header class="topbar" id="topbar">
+    <button class="topbar__back" id="btnBack" aria-label="Volver" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="topbar__mid">
+      <span class="topbar__title" id="topbarTitle">Euskaraz</span>
+      <div class="progressbar" id="progressbar" hidden>
+        <div class="progressbar__fill" id="progressbarFill"></div>
+      </div>
+    </div>
+    <div class="topbar__right" id="topbarRight">
+      <span class="hearts" id="hearts" hidden></span>
+    </div>
+  </header>
+
+  <!-- ══════════ PANTALLA: ACCESO ══════════ -->
+  <main class="screen screen--auth" id="screenAuth" hidden>
+    <div class="authbox">
+      <div class="hero__mark" aria-hidden="true"><span>E</span></div>
+      <h1 class="hero__title">Euskaraz</h1>
+      <p class="authbox__sub" id="authSub">Escribe tu correo y te mandamos un enlace para entrar. Así tu progreso se guarda y sincroniza entre dispositivos.</p>
+      <form class="authform" id="authForm">
+        <input type="email" class="dictinput" id="authEmail" placeholder="tú@correo.com"
+               autocomplete="email" inputmode="email" required>
+        <button class="btn btn--primary" type="submit" id="authSubmit">Enviar enlace</button>
+      </form>
+      <p class="authbox__msg" id="authMsg" hidden aria-live="polite"></p>
+    </div>
+  </main>
+
+  <!-- ══════════ PANTALLA: INICIO ══════════ -->
+  <main class="screen screen--home" id="screenHome" hidden>
+    <div class="hero">
+      <div class="hero__mark" aria-hidden="true">
+        <span>E</span>
+      </div>
+      <h1 class="hero__title">Euskaraz</h1>
+      <p class="hero__sub" id="heroSub">Módulo piloto · Euskera batua · A1</p>
+    </div>
+
+    <section class="stats" id="stats" aria-label="Tu progreso">
+      <div class="stat">
+        <span class="stat__num" id="statUnidades">0</span>
+        <span class="stat__lbl">unidades hechas</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" id="statPalabras">0</span>
+        <span class="stat__lbl">palabras vistas</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" id="statRacha">0<small>%</small></span>
+        <span class="stat__lbl">del curso</span>
+      </div>
+    </section>
+
+    <h2 class="section-head">Unidades</h2>
+    <ul class="unitlist" id="unitList"></ul>
+
+    <h2 class="section-head">Repasar</h2>
+    <div class="cardstack">
+      <button class="navcard" id="goRepaso">
+        <span class="navcard__body">
+          <span class="navcard__title">Repaso mezclado</span>
+          <span class="navcard__sub" id="repasoCount"></span>
+        </span>
+        <span class="navcard__due" id="repasoDue" hidden></span>
+        <span class="navcard__chev" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </span>
+      </button>
+
+      <button class="navcard" id="goVocabRepaso">
+        <span class="navcard__body">
+          <span class="navcard__title">Repaso de vocabulario</span>
+          <span class="navcard__sub" id="vocabRepasoCount"></span>
+        </span>
+        <span class="navcard__due" id="vocabRepasoDue" hidden></span>
+        <span class="navcard__chev" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </span>
+      </button>
+
+      <button class="navcard" id="goDicc">
+        <span class="navcard__body">
+          <span class="navcard__title">Diccionario</span>
+          <span class="navcard__sub" id="diccCount"></span>
+        </span>
+        <span class="navcard__chev" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="home-foot">
+      <button class="btn btn--ghost btn--sm" id="btnReset">Reiniciar mi progreso</button>
+      <p class="home-foot__note">Tu progreso se guarda en tu cuenta y sincroniza entre dispositivos.</p>
+    </div>
+  </main>
+
+  <!-- ══════════ PANTALLA: PORTADA DE UNIDAD ══════════ -->
+  <main class="screen" id="screenUnit" hidden>
+    <div class="unithero" id="unitHero">
+      <span class="unithero__num" id="unitHeroNum">Unitatea 1</span>
+      <h1 class="unithero__title" id="unitHeroTitle"></h1>
+      <p class="unithero__sub" id="unitHeroSub"></p>
+      <p class="unithero__goal" id="unitHeroGoal"></p>
+    </div>
+
+    <div class="cardstack">
+      <button class="navcard" id="goGramatica">
+        <span class="navcard__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h9"/></svg>
+        </span>
+        <span class="navcard__body">
+          <span class="navcard__title">Gramática</span>
+          <span class="navcard__sub" id="gramCount"></span>
+        </span>
+        <span class="navcard__chev" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </span>
+      </button>
+
+      <button class="navcard" id="goVocab">
+        <span class="navcard__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 016.5 3H19v15H6.5A2.5 2.5 0 004 20.5z"/></svg>
+        </span>
+        <span class="navcard__body">
+          <span class="navcard__title">Vocabulario</span>
+          <span class="navcard__sub" id="vocabCount"></span>
+        </span>
+        <span class="navcard__chev" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </span>
+      </button>
+
+      <button class="navcard navcard--accent" id="goPractica">
+        <span class="navcard__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12z"/></svg>
+        </span>
+        <span class="navcard__body">
+          <span class="navcard__title">Practicar</span>
+          <span class="navcard__sub" id="practiceCount"></span>
+        </span>
+        <span class="navcard__chev" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </span>
+      </button>
+    </div>
+  </main>
+
+  <!-- ══════════ PANTALLA: GRAMÁTICA ══════════ -->
+  <main class="screen" id="screenGram" hidden>
+    <div class="reader" id="gramContent"></div>
+    <div class="reader-foot">
+      <p class="footnav__head">¿Y ahora?</p>
+      <div class="footnav">
+        <button class="btn btn--primary" id="gramPractica">Hacer los ejercicios</button>
+        <button class="btn btn--ghost" id="gramVocab">Estudiar el vocabulario</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════════ PANTALLA: VOCABULARIO ══════════ -->
+  <main class="screen" id="screenVocab" hidden>
+    <div class="reader" id="vocabContent"></div>
+    <div class="reader-foot">
+      <p class="footnav__head">¿Y ahora?</p>
+      <div class="footnav">
+        <button class="btn btn--primary" id="vocabPractica">Hacer los ejercicios</button>
+        <button class="btn btn--ghost" id="vocabGram">Estudiar la gramática</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════════ PANTALLA: DICCIONARIO ══════════ -->
+  <main class="screen" id="screenDict" hidden>
+    <div class="reader">
+      <div class="dictbar">
+        <input type="search" class="dictinput" id="dictInput"
+               placeholder="Buscar en euskera o en castellano…"
+               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+               aria-label="Buscar en el diccionario">
+        <p class="dictcount" id="dictCount" aria-live="polite"></p>
+      </div>
+      <div id="dictContent"></div>
+    </div>
+  </main>
+
+  <!-- ══════════ PANTALLA: EJERCICIOS ══════════ -->
+  <main class="screen screen--quiz" id="screenQuiz" hidden>
+    <div class="quiz" id="quizContent"></div>
+  </main>
+
+  <!-- ══════════ PANTALLA: RESULTADO ══════════ -->
+  <main class="screen screen--result" id="screenResult" hidden>
+    <div class="result" id="resultContent"></div>
+  </main>
+
+  <!-- ══════════ BARRA DE FEEDBACK ══════════ -->
+  <div class="feedback" id="feedback" hidden aria-live="polite">
+    <div class="feedback__inner">
+      <div class="feedback__head">
+        <span class="feedback__icon" id="feedbackIcon" aria-hidden="true"></span>
+        <span class="feedback__title" id="feedbackTitle"></span>
+      </div>
+      <p class="feedback__body" id="feedbackBody"></p>
+      <button class="btn btn--feedback" id="feedbackNext">Continuar</button>
+    </div>
+  </div>
+
+  <!-- ══════════ BARRA DE ACCIÓN DEL QUIZ ══════════ -->
+  <div class="actionbar" id="actionbar" hidden>
+    <button class="btn btn--primary" id="btnCheck" disabled>Comprobar</button>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
