@@ -974,6 +974,7 @@ svg{
   .screen--home{ max-width: 900px; }
   .unitlist{ display: grid; grid-template-columns: 1fr 1fr; column-gap: calc(var(--u) * 6); }
   .unitlist li:nth-child(2){ border-top: 0; }
+  .unitlist li:nth-last-child(-n+2){ border-bottom: 0; }
 }
 
 @media (prefers-reduced-motion: reduce){
