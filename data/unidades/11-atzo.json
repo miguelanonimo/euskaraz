@@ -6,40 +6,210 @@
   "objetivo": "Contar lo que pasó ayer, el año pasado o cuando eras pequeño.",
   "color": "ocre",
   "vocabulario": [
-    { "eu": "nintzen", "es": "(yo) era, fui", "nota": null, "audio": "unidades/u11/nintzen.mp3" },
-    { "eu": "zinen", "es": "(tú) eras, fuiste", "nota": null, "audio": "unidades/u11/zinen.mp3" },
-    { "eu": "zen", "es": "(él/ella) era, fue", "nota": null, "audio": "unidades/u11/zen.mp3" },
-    { "eu": "ginen", "es": "(nosotros) éramos", "nota": null, "audio": "unidades/u11/ginen.mp3" },
-    { "eu": "zineten", "es": "(vosotros) erais", "nota": null, "audio": "unidades/u11/zineten.mp3" },
-    { "eu": "ziren", "es": "(ellos) eran", "nota": null, "audio": "unidades/u11/ziren.mp3" },
-    { "eu": "nuen", "es": "(yo) tenía, tuve", "nota": null, "audio": "unidades/u11/nuen.mp3" },
-    { "eu": "zenuen", "es": "(tú) tenías", "nota": null, "audio": "unidades/u11/zenuen.mp3" },
-    { "eu": "zuen", "es": "(él/ella) tenía", "nota": null, "audio": "unidades/u11/zuen.mp3" },
-    { "eu": "genuen", "es": "(nosotros) teníamos", "nota": null, "audio": "unidades/u11/genuen.mp3" },
-    { "eu": "zuten", "es": "(ellos) tenían", "nota": null, "audio": "unidades/u11/zuten.mp3" },
-    { "eu": "nengoen", "es": "(yo) estaba", "nota": null, "audio": "unidades/u11/nengoen.mp3" },
-    { "eu": "zegoen", "es": "(él/ella) estaba", "nota": null, "audio": "unidades/u11/zegoen.mp3" },
-    { "eu": "lehen", "es": "antes", "nota": null, "audio": "unidades/u11/lehen.mp3" },
-    { "eu": "orduan", "es": "entonces", "nota": null, "audio": "unidades/u11/orduan.mp3" },
-    { "eu": "gero", "es": "luego", "nota": "Ya lo viste como «después»; aquí encadena hechos pasados.", "audio": "unidades/u11/gero.mp3" },
-    { "eu": "herenegun", "es": "anteayer", "nota": null, "audio": "unidades/u11/herenegun.mp3" },
-    { "eu": "iaz", "es": "el año pasado", "nota": null, "audio": "unidades/u11/iaz.mp3" },
-    { "eu": "aurten", "es": "este año", "nota": null, "audio": "unidades/u11/aurten.mp3" },
-    { "eu": "joan den astean", "es": "la semana pasada", "nota": "«joan den» es «la que se ha ido».", "audio": "unidades/u11/joan-den-astean.mp3" },
-    { "eu": "duela bi urte", "es": "hace dos años", "nota": "«duela» + el tiempo: duela hilabete, duela urtebete.", "audio": "unidades/u11/duela-bi-urte.mp3" },
-    { "eu": "txikitan", "es": "de pequeño", "nota": "De «txiki» + esa -tan de plural que ya conoces.", "audio": "unidades/u11/txikitan.mp3" },
-    { "eu": "garai hartan", "es": "en aquella época", "nota": null, "audio": "unidades/u11/garai-hartan.mp3" },
-    { "eu": "jaio", "es": "nacer", "nota": null, "audio": "unidades/u11/jaio.mp3" },
-    { "eu": "ezagutu", "es": "conocer", "nota": null, "audio": "unidades/u11/ezagutu.mp3" },
-    { "eu": "gogoratu", "es": "recordar", "nota": null, "audio": "unidades/u11/gogoratu.mp3" },
-    { "eu": "ahaztu", "es": "olvidar", "nota": null, "audio": "unidades/u11/ahaztu.mp3" },
-    { "eu": "hasi", "es": "empezar", "nota": null, "audio": "unidades/u11/hasi.mp3" },
-    { "eu": "bukatu", "es": "terminar", "nota": "También «amaitu».", "audio": "unidades/u11/bukatu.mp3" },
-    { "eu": "gertatu", "es": "ocurrir, pasar", "nota": null, "audio": "unidades/u11/gertatu.mp3" },
-    { "eu": "oporrak", "es": "las vacaciones", "nota": "Siempre en plural.", "audio": "unidades/u11/oporrak.mp3" },
-    { "eu": "jaiak", "es": "las fiestas", "nota": "Las de un pueblo. En singular, «jaia» es la fiesta suelta.", "audio": "unidades/u11/jaiak.mp3" },
-    { "eu": "aspaldi", "es": "hace mucho tiempo", "nota": null, "audio": "unidades/u11/aspaldi.mp3" },
-    { "eu": "berriro", "es": "otra vez", "nota": null, "audio": "unidades/u11/berriro.mp3" }
+    {
+      "eu": "nintzen",
+      "es": "(yo) era, fui",
+      "nota": null,
+      "audio": "unidades/u11/nintzen.mp3"
+    },
+    {
+      "eu": "zinen",
+      "es": "(tú) eras, fuiste",
+      "nota": null,
+      "audio": "unidades/u11/zinen.mp3"
+    },
+    {
+      "eu": "zen",
+      "es": "(él/ella) era, fue",
+      "nota": null,
+      "audio": "unidades/u11/zen.mp3"
+    },
+    {
+      "eu": "ginen",
+      "es": "(nosotros) éramos",
+      "nota": null,
+      "audio": "unidades/u11/ginen.mp3"
+    },
+    {
+      "eu": "zineten",
+      "es": "(vosotros) erais",
+      "nota": null,
+      "audio": "unidades/u11/zineten.mp3"
+    },
+    {
+      "eu": "ziren",
+      "es": "(ellos) eran",
+      "nota": null,
+      "audio": "unidades/u11/ziren.mp3"
+    },
+    {
+      "eu": "nuen",
+      "es": "(yo) tenía, tuve",
+      "nota": null,
+      "audio": "unidades/u11/nuen.mp3"
+    },
+    {
+      "eu": "zenuen",
+      "es": "(tú) tenías",
+      "nota": null,
+      "audio": "unidades/u11/zenuen.mp3"
+    },
+    {
+      "eu": "zuen",
+      "es": "(él/ella) tenía",
+      "nota": null,
+      "audio": "unidades/u11/zuen.mp3"
+    },
+    {
+      "eu": "genuen",
+      "es": "(nosotros) teníamos",
+      "nota": null,
+      "audio": "unidades/u11/genuen.mp3"
+    },
+    {
+      "eu": "zuten",
+      "es": "(ellos) tenían",
+      "nota": null,
+      "audio": "unidades/u11/zuten.mp3"
+    },
+    {
+      "eu": "nengoen",
+      "es": "(yo) estaba",
+      "nota": null,
+      "audio": "unidades/u11/nengoen.mp3"
+    },
+    {
+      "eu": "zegoen",
+      "es": "(él/ella) estaba",
+      "nota": null,
+      "audio": "unidades/u11/zegoen.mp3"
+    },
+    {
+      "eu": "lehen",
+      "es": "antes",
+      "nota": null,
+      "audio": "unidades/u11/lehen.mp3"
+    },
+    {
+      "eu": "orduan",
+      "es": "entonces",
+      "nota": null,
+      "audio": "unidades/u11/orduan.mp3"
+    },
+    {
+      "eu": "gero",
+      "es": "luego",
+      "nota": "Ya lo viste como «después»; aquí encadena hechos pasados.",
+      "audio": "unidades/u11/gero.mp3"
+    },
+    {
+      "eu": "herenegun",
+      "es": "anteayer",
+      "nota": null,
+      "audio": "unidades/u11/herenegun.mp3"
+    },
+    {
+      "eu": "iaz",
+      "es": "el año pasado",
+      "nota": null,
+      "audio": "unidades/u11/iaz.mp3"
+    },
+    {
+      "eu": "aurten",
+      "es": "este año",
+      "nota": null,
+      "audio": "unidades/u11/aurten.mp3"
+    },
+    {
+      "eu": "joan den astean",
+      "es": "la semana pasada",
+      "nota": "«joan den» es «la que se ha ido».",
+      "audio": "unidades/u11/joan-den-astean.mp3"
+    },
+    {
+      "eu": "duela bi urte",
+      "es": "hace dos años",
+      "nota": "«duela» + el tiempo: duela hilabete, duela urtebete.",
+      "audio": "unidades/u11/duela-bi-urte.mp3"
+    },
+    {
+      "eu": "txikitan",
+      "es": "de pequeño",
+      "nota": "De «txiki» + esa -tan de plural que ya conoces.",
+      "audio": "unidades/u11/txikitan.mp3"
+    },
+    {
+      "eu": "garai hartan",
+      "es": "en aquella época",
+      "nota": null,
+      "audio": "unidades/u11/garai-hartan.mp3"
+    },
+    {
+      "eu": "jaio",
+      "es": "nacer",
+      "nota": null,
+      "audio": "unidades/u11/jaio.mp3"
+    },
+    {
+      "eu": "ezagutu",
+      "es": "conocer",
+      "nota": null,
+      "audio": "unidades/u11/ezagutu.mp3"
+    },
+    {
+      "eu": "gogoratu",
+      "es": "recordar",
+      "nota": null,
+      "audio": "unidades/u11/gogoratu.mp3"
+    },
+    {
+      "eu": "ahaztu",
+      "es": "olvidar",
+      "nota": null,
+      "audio": "unidades/u11/ahaztu.mp3"
+    },
+    {
+      "eu": "hasi",
+      "es": "empezar",
+      "nota": null,
+      "audio": "unidades/u11/hasi.mp3"
+    },
+    {
+      "eu": "bukatu",
+      "es": "terminar",
+      "nota": "También «amaitu».",
+      "audio": "unidades/u11/bukatu.mp3"
+    },
+    {
+      "eu": "gertatu",
+      "es": "ocurrir, pasar",
+      "nota": null,
+      "audio": "unidades/u11/gertatu.mp3"
+    },
+    {
+      "eu": "oporrak",
+      "es": "las vacaciones",
+      "nota": "Siempre en plural.",
+      "audio": "unidades/u11/oporrak.mp3"
+    },
+    {
+      "eu": "jaiak",
+      "es": "las fiestas",
+      "nota": "Las de un pueblo. En singular, «jaia» es la fiesta suelta.",
+      "audio": "unidades/u11/jaiak.mp3"
+    },
+    {
+      "eu": "aspaldi",
+      "es": "hace mucho tiempo",
+      "nota": null,
+      "audio": "unidades/u11/aspaldi.mp3"
+    },
+    {
+      "eu": "berriro",
+      "es": "otra vez",
+      "nota": null,
+      "audio": "unidades/u11/berriro.mp3"
+    }
   ],
   "gramatica": [
     {
@@ -48,15 +218,18 @@
       "ejemplos": [
         {
           "eu": "Ni Gernikan jaio nintzen.",
-          "es": "Nací en Gernika."
+          "es": "Nací en Gernika.",
+          "audio": "unidades/u11/ni-gernikan-jaio-nintzen.mp3"
         },
         {
           "eu": "Atzo Bilbon zen.",
-          "es": "Ayer estuvo en Bilbao."
+          "es": "Ayer estuvo en Bilbao.",
+          "audio": "unidades/u11/atzo-bilbon-zen.mp3"
         },
         {
           "eu": "Gu lagunak ginen.",
-          "es": "Éramos amigos."
+          "es": "Éramos amigos.",
+          "audio": "unidades/u11/gu-lagunak-ginen.mp3"
         }
       ]
     },
@@ -66,15 +239,18 @@
       "ejemplos": [
         {
           "eu": "Atzo film bat ikusi nuen.",
-          "es": "Ayer vi una película."
+          "es": "Ayer vi una película.",
+          "audio": "unidades/u11/atzo-film-bat-ikusi-nuen.mp3"
         },
         {
           "eu": "Zer egin zenuen?",
-          "es": "¿Qué hiciste?"
+          "es": "¿Qué hiciste?",
+          "audio": "unidades/u11/zer-egin-zenuen.mp3"
         },
         {
           "eu": "Haiek etxe bat zuten.",
-          "es": "Ellos tenían una casa."
+          "es": "Ellos tenían una casa.",
+          "audio": "unidades/u11/haiek-etxe-bat-zuten.mp3"
         }
       ]
     },
@@ -84,15 +260,18 @@
       "ejemplos": [
         {
           "eu": "Atzo etxean nengoen.",
-          "es": "Ayer estaba en casa."
+          "es": "Ayer estaba en casa.",
+          "audio": "unidades/u11/atzo-etxean-nengoen.mp3"
         },
         {
           "eu": "Non zegoen liburua?",
-          "es": "¿Dónde estaba el libro?"
+          "es": "¿Dónde estaba el libro?",
+          "audio": "unidades/u11/non-zegoen-liburua.mp3"
         },
         {
           "eu": "Haiek tabernan zeuden.",
-          "es": "Ellos estaban en el bar."
+          "es": "Ellos estaban en el bar.",
+          "audio": "unidades/u11/haiek-tabernan-zeuden.mp3"
         }
       ]
     },
@@ -102,15 +281,18 @@
       "ejemplos": [
         {
           "eu": "Atzo Bilbora joan nintzen.",
-          "es": "Ayer fui a Bilbao."
+          "es": "Ayer fui a Bilbao.",
+          "audio": "unidades/u11/atzo-bilbora-joan-nintzen.mp3"
         },
         {
           "eu": "Txikitan Gernikan bizi nintzen.",
-          "es": "De pequeño vivía en Gernika."
+          "es": "De pequeño vivía en Gernika.",
+          "audio": "unidades/u11/txikitan-gernikan-bizi-nintzen.mp3"
         },
         {
           "eu": "Gaur ez naiz joan.",
-          "es": "Hoy no he ido."
+          "es": "Hoy no he ido.",
+          "audio": "unidades/u11/gaur-ez-naiz-joan.mp3"
         }
       ]
     },
@@ -120,15 +302,18 @@
       "ejemplos": [
         {
           "eu": "Joan den astean Bilbon nengoen.",
-          "es": "La semana pasada estaba en Bilbao."
+          "es": "La semana pasada estaba en Bilbao.",
+          "audio": "unidades/u11/joan-den-astean-bilbon-nengoen.mp3"
         },
         {
           "eu": "Duela bi urte ezagutu nuen.",
-          "es": "La conocí hace dos años."
+          "es": "La conocí hace dos años.",
+          "audio": "unidades/u11/duela-bi-urte-ezagutu-nuen.mp3"
         },
         {
           "eu": "Txikitan euskaraz hitz egiten nuen.",
-          "es": "De pequeño hablaba en euskera."
+          "es": "De pequeño hablaba en euskera.",
+          "audio": "unidades/u11/txikitan-euskaraz-hitz-egiten-nuen.mp3"
         }
       ]
     },
@@ -138,15 +323,18 @@
       "ejemplos": [
         {
           "eu": "Ni Gernikan jaio nintzan.",
-          "es": "Nací en Gernika. — batua: nintzen."
+          "es": "Nací en Gernika. — batua: nintzen.",
+          "audio": "unidades/u11/ni-gernikan-jaio-nintzan.mp3"
         },
         {
           "eu": "Ikusi neban.",
-          "es": "Lo vi. — batua: ikusi nuen."
+          "es": "Lo vi. — batua: ikusi nuen.",
+          "audio": "unidades/u11/ikusi-neban.mp3"
         },
         {
           "eu": "Etxean egoan.",
-          "es": "Estaba en casa. — batua: etxean zegoen."
+          "es": "Estaba en casa. — batua: etxean zegoen.",
+          "audio": "unidades/u11/etxean-egoan.mp3"
         }
       ]
     }

@@ -292,6 +292,7 @@ svg{
 /* Lista de unidades: filas separadas por filete, sin cajas */
 .unitlist{ list-style: none; margin: 0 0 calc(var(--u) * 8); padding: 0; border-top: 1px solid var(--filete-alto); }
 .unitlist li{ border-bottom: 1px solid var(--filete); }
+.unitlist li:last-child{ border-bottom: 0; }
 
 .unitcard{
   display: grid;
@@ -524,7 +525,12 @@ svg{
   padding: calc(var(--u) * 1.5) 0;
   border-bottom: 1px solid var(--filete);
 }
+.exlist li:last-child{ border-bottom: 0; }
 .exlist .eu{
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
   font-size: var(--t-m);
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -543,6 +549,7 @@ svg{
   padding: calc(var(--u) * 2) 0;
   border-bottom: 1px solid var(--filete);
 }
+.vocabgroup > .vitem:last-child{ border-bottom: 0; }
 .vitem__row{
   display: grid;
   grid-template-columns: minmax(0, 11em) 1fr;
@@ -696,6 +703,7 @@ svg{
 }
 .opt.is-mal .opt__key{ color: var(--acento); text-decoration: none; }
 .opt[disabled]{ cursor: default; }
+.opts .opt:last-child{ border-bottom: 0; }
 
 /* — Emparejar — */
 .pairs{

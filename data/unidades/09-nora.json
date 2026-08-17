@@ -6,42 +6,222 @@
   "objetivo": "Decir adónde vas, de dónde vienes y cómo llegas, y pedir una dirección.",
   "color": "rojo",
   "vocabulario": [
-    { "eu": "joan", "es": "ir", "nota": null, "audio": "unidades/u9/joan.mp3" },
-    { "eu": "noa", "es": "(yo) voy", "nota": null, "audio": "unidades/u9/noa.mp3" },
-    { "eu": "zoaz", "es": "(tú) vas", "nota": null, "audio": "unidades/u9/zoaz.mp3" },
-    { "eu": "doa", "es": "(él/ella) va", "nota": null, "audio": "unidades/u9/doa.mp3" },
-    { "eu": "etorri", "es": "venir", "nota": null, "audio": "unidades/u9/etorri.mp3" },
-    { "eu": "nator", "es": "(yo) vengo", "nota": null, "audio": "unidades/u9/nator.mp3" },
-    { "eu": "zatoz", "es": "(tú) vienes", "nota": null, "audio": "unidades/u9/zatoz.mp3" },
-    { "eu": "dator", "es": "(él/ella) viene", "nota": null, "audio": "unidades/u9/dator.mp3" },
-    { "eu": "ibili", "es": "andar, andar por ahí", "nota": null, "audio": "unidades/u9/ibili.mp3" },
-    { "eu": "nabil", "es": "(yo) ando", "nota": null, "audio": "unidades/u9/nabil.mp3" },
-    { "eu": "dabil", "es": "(él/ella) anda", "nota": null, "audio": "unidades/u9/dabil.mp3" },
-    { "eu": "irten", "es": "salir", "nota": "También «atera» en muchos sitios.", "audio": "unidades/u9/irten.mp3" },
-    { "eu": "sartu", "es": "entrar", "nota": null, "audio": "unidades/u9/sartu.mp3" },
-    { "eu": "iritsi", "es": "llegar", "nota": null, "audio": "unidades/u9/iritsi.mp3" },
-    { "eu": "geltokia", "es": "la estación, la parada", "nota": null, "audio": "unidades/u9/geltokia.mp3" },
-    { "eu": "autobusa", "es": "el autobús", "nota": null, "audio": "unidades/u9/autobusa.mp3" },
-    { "eu": "trena", "es": "el tren", "nota": null, "audio": "unidades/u9/trena.mp3" },
-    { "eu": "kotxea", "es": "el coche", "nota": "También «autoa».", "audio": "unidades/u9/kotxea.mp3" },
-    { "eu": "bizikleta", "es": "la bicicleta", "nota": null, "audio": "unidades/u9/bizikleta.mp3" },
-    { "eu": "oinez", "es": "a pie", "nota": "De «oin» (pie) + la -z de «por medio de».", "audio": "unidades/u9/oinez.mp3" },
-    { "eu": "hondartza", "es": "la playa", "nota": null, "audio": "unidades/u9/hondartza.mp3" },
-    { "eu": "mendia", "es": "el monte", "nota": null, "audio": "unidades/u9/mendia.mp3" },
-    { "eu": "merkatua", "es": "el mercado", "nota": null, "audio": "unidades/u9/merkatua.mp3" },
-    { "eu": "azoka", "es": "la feria, el mercado", "nota": "La de Gernika, los lunes, es la más conocida.", "audio": "unidades/u9/azoka.mp3" },
-    { "eu": "denda", "es": "la tienda", "nota": null, "audio": "unidades/u9/denda.mp3" },
-    { "eu": "liburutegia", "es": "la biblioteca", "nota": "De «liburu» (libro) + «tegi» (lugar de).", "audio": "unidades/u9/liburutegia.mp3" },
-    { "eu": "ospitalea", "es": "el hospital", "nota": null, "audio": "unidades/u9/ospitalea.mp3" },
-    { "eu": "hiria", "es": "la ciudad", "nota": null, "audio": "unidades/u9/hiria.mp3" },
-    { "eu": "urrun", "es": "lejos", "nota": null, "audio": "unidades/u9/urrun.mp3" },
-    { "eu": "gertu", "es": "cerca", "nota": "También «hurbil».", "audio": "unidades/u9/gertu.mp3" },
-    { "eu": "zuzen", "es": "recto, derecho", "nota": null, "audio": "unidades/u9/zuzen.mp3" },
-    { "eu": "ezkerrera", "es": "a la izquierda", "nota": null, "audio": "unidades/u9/ezkerrera.mp3" },
-    { "eu": "eskuinera", "es": "a la derecha", "nota": null, "audio": "unidades/u9/eskuinera.mp3" },
-    { "eu": "hona", "es": "aquí (con movimiento)", "nota": null, "audio": "unidades/u9/hona.mp3" },
-    { "eu": "hara", "es": "allí (con movimiento)", "nota": null, "audio": "unidades/u9/hara.mp3" },
-    { "eu": "hemendik", "es": "desde aquí", "nota": null, "audio": "unidades/u9/hemendik.mp3" }
+    {
+      "eu": "joan",
+      "es": "ir",
+      "nota": null,
+      "audio": "unidades/u9/joan.mp3"
+    },
+    {
+      "eu": "noa",
+      "es": "(yo) voy",
+      "nota": null,
+      "audio": "unidades/u9/noa.mp3"
+    },
+    {
+      "eu": "zoaz",
+      "es": "(tú) vas",
+      "nota": null,
+      "audio": "unidades/u9/zoaz.mp3"
+    },
+    {
+      "eu": "doa",
+      "es": "(él/ella) va",
+      "nota": null,
+      "audio": "unidades/u9/doa.mp3"
+    },
+    {
+      "eu": "etorri",
+      "es": "venir",
+      "nota": null,
+      "audio": "unidades/u9/etorri.mp3"
+    },
+    {
+      "eu": "nator",
+      "es": "(yo) vengo",
+      "nota": null,
+      "audio": "unidades/u9/nator.mp3"
+    },
+    {
+      "eu": "zatoz",
+      "es": "(tú) vienes",
+      "nota": null,
+      "audio": "unidades/u9/zatoz.mp3"
+    },
+    {
+      "eu": "dator",
+      "es": "(él/ella) viene",
+      "nota": null,
+      "audio": "unidades/u9/dator.mp3"
+    },
+    {
+      "eu": "ibili",
+      "es": "andar, andar por ahí",
+      "nota": null,
+      "audio": "unidades/u9/ibili.mp3"
+    },
+    {
+      "eu": "nabil",
+      "es": "(yo) ando",
+      "nota": null,
+      "audio": "unidades/u9/nabil.mp3"
+    },
+    {
+      "eu": "dabil",
+      "es": "(él/ella) anda",
+      "nota": null,
+      "audio": "unidades/u9/dabil.mp3"
+    },
+    {
+      "eu": "irten",
+      "es": "salir",
+      "nota": "También «atera» en muchos sitios.",
+      "audio": "unidades/u9/irten.mp3"
+    },
+    {
+      "eu": "sartu",
+      "es": "entrar",
+      "nota": null,
+      "audio": "unidades/u9/sartu.mp3"
+    },
+    {
+      "eu": "iritsi",
+      "es": "llegar",
+      "nota": null,
+      "audio": "unidades/u9/iritsi.mp3"
+    },
+    {
+      "eu": "geltokia",
+      "es": "la estación, la parada",
+      "nota": null,
+      "audio": "unidades/u9/geltokia.mp3"
+    },
+    {
+      "eu": "autobusa",
+      "es": "el autobús",
+      "nota": null,
+      "audio": "unidades/u9/autobusa.mp3"
+    },
+    {
+      "eu": "trena",
+      "es": "el tren",
+      "nota": null,
+      "audio": "unidades/u9/trena.mp3"
+    },
+    {
+      "eu": "kotxea",
+      "es": "el coche",
+      "nota": "También «autoa».",
+      "audio": "unidades/u9/kotxea.mp3"
+    },
+    {
+      "eu": "bizikleta",
+      "es": "la bicicleta",
+      "nota": null,
+      "audio": "unidades/u9/bizikleta.mp3"
+    },
+    {
+      "eu": "oinez",
+      "es": "a pie",
+      "nota": "De «oin» (pie) + la -z de «por medio de».",
+      "audio": "unidades/u9/oinez.mp3"
+    },
+    {
+      "eu": "hondartza",
+      "es": "la playa",
+      "nota": null,
+      "audio": "unidades/u9/hondartza.mp3"
+    },
+    {
+      "eu": "mendia",
+      "es": "el monte",
+      "nota": null,
+      "audio": "unidades/u9/mendia.mp3"
+    },
+    {
+      "eu": "merkatua",
+      "es": "el mercado",
+      "nota": null,
+      "audio": "unidades/u9/merkatua.mp3"
+    },
+    {
+      "eu": "azoka",
+      "es": "la feria, el mercado",
+      "nota": "La de Gernika, los lunes, es la más conocida.",
+      "audio": "unidades/u9/azoka.mp3"
+    },
+    {
+      "eu": "denda",
+      "es": "la tienda",
+      "nota": null,
+      "audio": "unidades/u9/denda.mp3"
+    },
+    {
+      "eu": "liburutegia",
+      "es": "la biblioteca",
+      "nota": "De «liburu» (libro) + «tegi» (lugar de).",
+      "audio": "unidades/u9/liburutegia.mp3"
+    },
+    {
+      "eu": "ospitalea",
+      "es": "el hospital",
+      "nota": null,
+      "audio": "unidades/u9/ospitalea.mp3"
+    },
+    {
+      "eu": "hiria",
+      "es": "la ciudad",
+      "nota": null,
+      "audio": "unidades/u9/hiria.mp3"
+    },
+    {
+      "eu": "urrun",
+      "es": "lejos",
+      "nota": null,
+      "audio": "unidades/u9/urrun.mp3"
+    },
+    {
+      "eu": "gertu",
+      "es": "cerca",
+      "nota": "También «hurbil».",
+      "audio": "unidades/u9/gertu.mp3"
+    },
+    {
+      "eu": "zuzen",
+      "es": "recto, derecho",
+      "nota": null,
+      "audio": "unidades/u9/zuzen.mp3"
+    },
+    {
+      "eu": "ezkerrera",
+      "es": "a la izquierda",
+      "nota": null,
+      "audio": "unidades/u9/ezkerrera.mp3"
+    },
+    {
+      "eu": "eskuinera",
+      "es": "a la derecha",
+      "nota": null,
+      "audio": "unidades/u9/eskuinera.mp3"
+    },
+    {
+      "eu": "hona",
+      "es": "aquí (con movimiento)",
+      "nota": null,
+      "audio": "unidades/u9/hona.mp3"
+    },
+    {
+      "eu": "hara",
+      "es": "allí (con movimiento)",
+      "nota": null,
+      "audio": "unidades/u9/hara.mp3"
+    },
+    {
+      "eu": "hemendik",
+      "es": "desde aquí",
+      "nota": null,
+      "audio": "unidades/u9/hemendik.mp3"
+    }
   ],
   "gramatica": [
     {
@@ -50,15 +230,18 @@
       "ejemplos": [
         {
           "eu": "Bilbora noa.",
-          "es": "Voy a Bilbao."
+          "es": "Voy a Bilbao.",
+          "audio": "unidades/u9/bilbora-noa.mp3"
         },
         {
           "eu": "Nora zoaz?",
-          "es": "¿Adónde vas?"
+          "es": "¿Adónde vas?",
+          "audio": "unidades/u9/nora-zoaz.mp3"
         },
         {
           "eu": "Astelehenero azokara joaten naiz.",
-          "es": "Todos los lunes voy a la feria."
+          "es": "Todos los lunes voy a la feria.",
+          "audio": "unidades/u9/astelehenero-azokara-joaten-naiz.mp3"
         }
       ]
     },
@@ -68,15 +251,18 @@
       "ejemplos": [
         {
           "eu": "Bihar nator.",
-          "es": "Mañana vengo."
+          "es": "Mañana vengo.",
+          "audio": "unidades/u9/bihar-nator.mp3"
         },
         {
           "eu": "Nondik zatoz?",
-          "es": "¿De dónde vienes?"
+          "es": "¿De dónde vienes?",
+          "audio": "unidades/u9/nondik-zatoz.mp3"
         },
         {
           "eu": "Zer moduz zabiltza?",
-          "es": "¿Qué tal andas?"
+          "es": "¿Qué tal andas?",
+          "audio": "unidades/u9/zer-moduz-zabiltza.mp3"
         }
       ]
     },
@@ -86,15 +272,18 @@
       "ejemplos": [
         {
           "eu": "Hondartzara noa.",
-          "es": "Voy a la playa."
+          "es": "Voy a la playa.",
+          "audio": "unidades/u9/hondartzara-noa.mp3"
         },
         {
           "eu": "Bilbotik nator.",
-          "es": "Vengo de Bilbao."
+          "es": "Vengo de Bilbao.",
+          "audio": "unidades/u9/bilbotik-nator.mp3"
         },
         {
           "eu": "Hona zatoz?",
-          "es": "¿Vienes aquí?"
+          "es": "¿Vienes aquí?",
+          "audio": "unidades/u9/hona-zatoz.mp3"
         }
       ]
     },
@@ -104,15 +293,18 @@
       "ejemplos": [
         {
           "eu": "Trenez noa Bilbora.",
-          "es": "Voy a Bilbao en tren."
+          "es": "Voy a Bilbao en tren.",
+          "audio": "unidades/u9/trenez-noa-bilbora.mp3"
         },
         {
           "eu": "Oinez nator.",
-          "es": "Vengo a pie."
+          "es": "Vengo a pie.",
+          "audio": "unidades/u9/oinez-nator.mp3"
         },
         {
           "eu": "Euskaraz hitz egiten dugu.",
-          "es": "Hablamos en euskera."
+          "es": "Hablamos en euskera.",
+          "audio": "unidades/u9/euskaraz-hitz-egiten-dugu.mp3"
         }
       ]
     },
@@ -122,15 +314,18 @@
       "ejemplos": [
         {
           "eu": "Non dago hondartza?",
-          "es": "¿Dónde está la playa?"
+          "es": "¿Dónde está la playa?",
+          "audio": "unidades/u9/non-dago-hondartza.mp3"
         },
         {
           "eu": "Hemendik urrun dago.",
-          "es": "Está lejos de aquí."
+          "es": "Está lejos de aquí.",
+          "audio": "unidades/u9/hemendik-urrun-dago.mp3"
         },
         {
           "eu": "Zuzen joan, mesedez.",
-          "es": "Vaya recto, por favor."
+          "es": "Vaya recto, por favor.",
+          "audio": "unidades/u9/zuzen-joan-mesedez.mp3"
         }
       ]
     },
@@ -140,15 +335,18 @@
       "ejemplos": [
         {
           "eu": "Gernikati nator.",
-          "es": "Vengo de Gernika. — batua: Gernikatik."
+          "es": "Vengo de Gernika. — batua: Gernikatik.",
+          "audio": "unidades/u9/gernikati-nator.mp3"
         },
         {
           "eu": "Etxeti urten dot.",
-          "es": "He salido de casa. — batua: Etxetik irten dut."
+          "es": "He salido de casa. — batua: Etxetik irten dut.",
+          "audio": "unidades/u9/etxeti-urten-dot.mp3"
         },
         {
           "eu": "Astelehenean azokara joaten naz.",
-          "es": "Los lunes voy a la feria. — batua: joaten naiz."
+          "es": "Los lunes voy a la feria. — batua: joaten naiz.",
+          "audio": "unidades/u9/astelehenean-azokara-joaten-naz.mp3"
         }
       ]
     }

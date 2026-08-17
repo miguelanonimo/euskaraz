@@ -6,40 +6,210 @@
   "objetivo": "Decir lo que te gusta y lo que no, y aprender a marcar «a quién».",
   "color": "morado",
   "vocabulario": [
-    { "eu": "gustatu", "es": "gustar", "nota": null, "audio": "unidades/u10/gustatu.mp3" },
-    { "eu": "gustatzen zait", "es": "me gusta", "nota": null, "audio": "unidades/u10/gustatzen-zait.mp3" },
-    { "eu": "niri", "es": "a mí", "nota": null, "audio": "unidades/u10/niri.mp3" },
-    { "eu": "zuri", "es": "a ti", "nota": null, "audio": "unidades/u10/zuri.mp3" },
-    { "eu": "hari", "es": "a él, a ella", "nota": null, "audio": "unidades/u10/hari.mp3" },
-    { "eu": "guri", "es": "a nosotros", "nota": null, "audio": "unidades/u10/guri.mp3" },
-    { "eu": "zuei", "es": "a vosotros", "nota": null, "audio": "unidades/u10/zuei.mp3" },
-    { "eu": "haiei", "es": "a ellos", "nota": null, "audio": "unidades/u10/haiei.mp3" },
-    { "eu": "asko", "es": "mucho", "nota": null, "audio": "unidades/u10/asko.mp3" },
-    { "eu": "gutxi", "es": "poco", "nota": null, "audio": "unidades/u10/gutxi.mp3" },
-    { "eu": "pixka bat", "es": "un poco", "nota": null, "audio": "unidades/u10/pixka-bat.mp3" },
-    { "eu": "batere ez", "es": "nada en absoluto", "nota": "Se usa en frases negativas: «ez zait batere gustatzen».", "audio": "unidades/u10/batere-ez.mp3" },
-    { "eu": "eman", "es": "dar", "nota": null, "audio": "unidades/u10/eman.mp3" },
-    { "eu": "esan", "es": "decir", "nota": null, "audio": "unidades/u10/esan.mp3" },
-    { "eu": "galdetu", "es": "preguntar", "nota": null, "audio": "unidades/u10/galdetu.mp3" },
-    { "eu": "erantzun", "es": "responder", "nota": null, "audio": "unidades/u10/erantzun.mp3" },
-    { "eu": "lagundu", "es": "ayudar", "nota": "Se construye con dativo: «lagundu diot».", "audio": "unidades/u10/lagundu.mp3" },
-    { "eu": "iruditzen zait", "es": "me parece", "nota": null, "audio": "unidades/u10/iruditzen-zait.mp3" },
-    { "eu": "interesatzen zait", "es": "me interesa", "nota": null, "audio": "unidades/u10/interesatzen-zait.mp3" },
-    { "eu": "axola zait", "es": "me importa", "nota": null, "audio": "unidades/u10/axola-zait.mp3" },
-    { "eu": "kirola", "es": "el deporte", "nota": null, "audio": "unidades/u10/kirola.mp3" },
-    { "eu": "futbola", "es": "el fútbol", "nota": null, "audio": "unidades/u10/futbola.mp3" },
-    { "eu": "pilota", "es": "la pelota", "nota": "El deporte y el objeto, las dos cosas.", "audio": "unidades/u10/pilota.mp3" },
-    { "eu": "dantza", "es": "la danza, el baile", "nota": null, "audio": "unidades/u10/dantza.mp3" },
-    { "eu": "zinema", "es": "el cine", "nota": null, "audio": "unidades/u10/zinema.mp3" },
-    { "eu": "antzerkia", "es": "el teatro", "nota": null, "audio": "unidades/u10/antzerkia.mp3" },
-    { "eu": "janaria", "es": "la comida (en general)", "nota": "«bazkaria» es la del mediodía; «janaria», la comida como sustancia.", "audio": "unidades/u10/janaria.mp3" },
-    { "eu": "edaria", "es": "la bebida", "nota": null, "audio": "unidades/u10/edaria.mp3" },
-    { "eu": "euria", "es": "la lluvia", "nota": null, "audio": "unidades/u10/euria.mp3" },
-    { "eu": "eguzkia", "es": "el sol", "nota": null, "audio": "unidades/u10/eguzkia.mp3" },
-    { "eu": "negua", "es": "el invierno", "nota": null, "audio": "unidades/u10/negua.mp3" },
-    { "eu": "uda", "es": "el verano", "nota": null, "audio": "unidades/u10/uda.mp3" },
-    { "eu": "gauza", "es": "la cosa", "nota": null, "audio": "unidades/u10/gauza.mp3" },
-    { "eu": "guztia", "es": "todo", "nota": null, "audio": "unidades/u10/guztia.mp3" }
+    {
+      "eu": "gustatu",
+      "es": "gustar",
+      "nota": null,
+      "audio": "unidades/u10/gustatu.mp3"
+    },
+    {
+      "eu": "gustatzen zait",
+      "es": "me gusta",
+      "nota": null,
+      "audio": "unidades/u10/gustatzen-zait.mp3"
+    },
+    {
+      "eu": "niri",
+      "es": "a mí",
+      "nota": null,
+      "audio": "unidades/u10/niri.mp3"
+    },
+    {
+      "eu": "zuri",
+      "es": "a ti",
+      "nota": null,
+      "audio": "unidades/u10/zuri.mp3"
+    },
+    {
+      "eu": "hari",
+      "es": "a él, a ella",
+      "nota": null,
+      "audio": "unidades/u10/hari.mp3"
+    },
+    {
+      "eu": "guri",
+      "es": "a nosotros",
+      "nota": null,
+      "audio": "unidades/u10/guri.mp3"
+    },
+    {
+      "eu": "zuei",
+      "es": "a vosotros",
+      "nota": null,
+      "audio": "unidades/u10/zuei.mp3"
+    },
+    {
+      "eu": "haiei",
+      "es": "a ellos",
+      "nota": null,
+      "audio": "unidades/u10/haiei.mp3"
+    },
+    {
+      "eu": "asko",
+      "es": "mucho",
+      "nota": null,
+      "audio": "unidades/u10/asko.mp3"
+    },
+    {
+      "eu": "gutxi",
+      "es": "poco",
+      "nota": null,
+      "audio": "unidades/u10/gutxi.mp3"
+    },
+    {
+      "eu": "pixka bat",
+      "es": "un poco",
+      "nota": null,
+      "audio": "unidades/u10/pixka-bat.mp3"
+    },
+    {
+      "eu": "batere ez",
+      "es": "nada en absoluto",
+      "nota": "Se usa en frases negativas: «ez zait batere gustatzen».",
+      "audio": "unidades/u10/batere-ez.mp3"
+    },
+    {
+      "eu": "eman",
+      "es": "dar",
+      "nota": null,
+      "audio": "unidades/u10/eman.mp3"
+    },
+    {
+      "eu": "esan",
+      "es": "decir",
+      "nota": null,
+      "audio": "unidades/u10/esan.mp3"
+    },
+    {
+      "eu": "galdetu",
+      "es": "preguntar",
+      "nota": null,
+      "audio": "unidades/u10/galdetu.mp3"
+    },
+    {
+      "eu": "erantzun",
+      "es": "responder",
+      "nota": null,
+      "audio": "unidades/u10/erantzun.mp3"
+    },
+    {
+      "eu": "lagundu",
+      "es": "ayudar",
+      "nota": "Se construye con dativo: «lagundu diot».",
+      "audio": "unidades/u10/lagundu.mp3"
+    },
+    {
+      "eu": "iruditzen zait",
+      "es": "me parece",
+      "nota": null,
+      "audio": "unidades/u10/iruditzen-zait.mp3"
+    },
+    {
+      "eu": "interesatzen zait",
+      "es": "me interesa",
+      "nota": null,
+      "audio": "unidades/u10/interesatzen-zait.mp3"
+    },
+    {
+      "eu": "axola zait",
+      "es": "me importa",
+      "nota": null,
+      "audio": "unidades/u10/axola-zait.mp3"
+    },
+    {
+      "eu": "kirola",
+      "es": "el deporte",
+      "nota": null,
+      "audio": "unidades/u10/kirola.mp3"
+    },
+    {
+      "eu": "futbola",
+      "es": "el fútbol",
+      "nota": null,
+      "audio": "unidades/u10/futbola.mp3"
+    },
+    {
+      "eu": "pilota",
+      "es": "la pelota",
+      "nota": "El deporte y el objeto, las dos cosas.",
+      "audio": "unidades/u10/pilota.mp3"
+    },
+    {
+      "eu": "dantza",
+      "es": "la danza, el baile",
+      "nota": null,
+      "audio": "unidades/u10/dantza.mp3"
+    },
+    {
+      "eu": "zinema",
+      "es": "el cine",
+      "nota": null,
+      "audio": "unidades/u10/zinema.mp3"
+    },
+    {
+      "eu": "antzerkia",
+      "es": "el teatro",
+      "nota": null,
+      "audio": "unidades/u10/antzerkia.mp3"
+    },
+    {
+      "eu": "janaria",
+      "es": "la comida (en general)",
+      "nota": "«bazkaria» es la del mediodía; «janaria», la comida como sustancia.",
+      "audio": "unidades/u10/janaria.mp3"
+    },
+    {
+      "eu": "edaria",
+      "es": "la bebida",
+      "nota": null,
+      "audio": "unidades/u10/edaria.mp3"
+    },
+    {
+      "eu": "euria",
+      "es": "la lluvia",
+      "nota": null,
+      "audio": "unidades/u10/euria.mp3"
+    },
+    {
+      "eu": "eguzkia",
+      "es": "el sol",
+      "nota": null,
+      "audio": "unidades/u10/eguzkia.mp3"
+    },
+    {
+      "eu": "negua",
+      "es": "el invierno",
+      "nota": null,
+      "audio": "unidades/u10/negua.mp3"
+    },
+    {
+      "eu": "uda",
+      "es": "el verano",
+      "nota": null,
+      "audio": "unidades/u10/uda.mp3"
+    },
+    {
+      "eu": "gauza",
+      "es": "la cosa",
+      "nota": null,
+      "audio": "unidades/u10/gauza.mp3"
+    },
+    {
+      "eu": "guztia",
+      "es": "todo",
+      "nota": null,
+      "audio": "unidades/u10/guztia.mp3"
+    }
   ],
   "gramatica": [
     {
@@ -48,15 +218,18 @@
       "ejemplos": [
         {
           "eu": "Niri kirola gustatzen zait.",
-          "es": "A mí me gusta el deporte."
+          "es": "A mí me gusta el deporte.",
+          "audio": "unidades/u10/niri-kirola-gustatzen-zait.mp3"
         },
         {
           "eu": "Zer gustatzen zaizu?",
-          "es": "¿Qué te gusta?"
+          "es": "¿Qué te gusta?",
+          "audio": "unidades/u10/zer-gustatzen-zaizu.mp3"
         },
         {
           "eu": "Hari zinema gustatzen zaio.",
-          "es": "A él le gusta el cine."
+          "es": "A él le gusta el cine.",
+          "audio": "unidades/u10/hari-zinema-gustatzen-zaio.mp3"
         }
       ]
     },
@@ -66,15 +239,18 @@
       "ejemplos": [
         {
           "eu": "Liburuak gustatzen zaizkit.",
-          "es": "Me gustan los libros."
+          "es": "Me gustan los libros.",
+          "audio": "unidades/u10/liburuak-gustatzen-zaizkit.mp3"
         },
         {
           "eu": "Barazkiak ez zaizkio gustatzen.",
-          "es": "A él no le gustan las verduras."
+          "es": "A él no le gustan las verduras.",
+          "audio": "unidades/u10/barazkiak-ez-zaizkio-gustatzen.mp3"
         },
         {
           "eu": "Zer gustatzen zaizkizu?",
-          "es": "¿Qué cosas te gustan?"
+          "es": "¿Qué cosas te gustan?",
+          "audio": "unidades/u10/zer-gustatzen-zaizkizu.mp3"
         }
       ]
     },
@@ -84,15 +260,18 @@
       "ejemplos": [
         {
           "eu": "Ez zait euria gustatzen.",
-          "es": "No me gusta la lluvia."
+          "es": "No me gusta la lluvia.",
+          "audio": "unidades/u10/ez-zait-euria-gustatzen.mp3"
         },
         {
           "eu": "Eguzkia asko gustatzen zait.",
-          "es": "Me gusta mucho el sol."
+          "es": "Me gusta mucho el sol.",
+          "audio": "unidades/u10/eguzkia-asko-gustatzen-zait.mp3"
         },
         {
           "eu": "Niri ere bai.",
-          "es": "A mí también."
+          "es": "A mí también.",
+          "audio": "unidades/u10/niri-ere-bai.mp3"
         }
       ]
     },
@@ -102,15 +281,18 @@
       "ejemplos": [
         {
           "eu": "Ondo iruditzen zait.",
-          "es": "Me parece bien."
+          "es": "Me parece bien.",
+          "audio": "unidades/u10/ondo-iruditzen-zait.mp3"
         },
         {
           "eu": "Euskara asko interesatzen zait.",
-          "es": "Me interesa mucho el euskera."
+          "es": "Me interesa mucho el euskera.",
+          "audio": "unidades/u10/euskara-asko-interesatzen-zait.mp3"
         },
         {
           "eu": "Ez zait axola.",
-          "es": "No me importa."
+          "es": "No me importa.",
+          "audio": "unidades/u10/ez-zait-axola.mp3"
         }
       ]
     },
@@ -120,15 +302,18 @@
       "ejemplos": [
         {
           "eu": "Aneri esan diot.",
-          "es": "Se lo he dicho a Ane."
+          "es": "Se lo he dicho a Ane.",
+          "audio": "unidades/u10/aneri-esan-diot.mp3"
         },
         {
           "eu": "Lagunari lagundu diot.",
-          "es": "He ayudado al amigo."
+          "es": "He ayudado al amigo.",
+          "audio": "unidades/u10/lagunari-lagundu-diot.mp3"
         },
         {
           "eu": "Zer esan dizu?",
-          "es": "¿Qué te ha dicho?"
+          "es": "¿Qué te ha dicho?",
+          "audio": "unidades/u10/zer-esan-dizu.mp3"
         }
       ]
     },
@@ -138,15 +323,18 @@
       "ejemplos": [
         {
           "eu": "Gustetan jat.",
-          "es": "Me gusta. — batua: gustatzen zait."
+          "es": "Me gusta. — batua: gustatzen zait.",
+          "audio": "unidades/u10/gustetan-jat.mp3"
         },
         {
           "eu": "Ez jat gustetan.",
-          "es": "No me gusta. — batua: ez zait gustatzen."
+          "es": "No me gusta. — batua: ez zait gustatzen.",
+          "audio": "unidades/u10/ez-jat-gustetan.mp3"
         },
         {
           "eu": "Emon deust liburua.",
-          "es": "Me ha dado el libro. — batua: eman dit."
+          "es": "Me ha dado el libro. — batua: eman dit.",
+          "audio": "unidades/u10/emon-deust-liburua.mp3"
         }
       ]
     }

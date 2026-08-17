@@ -34,8 +34,16 @@ function normalizar(s) {
     .replace(/\s+/g, ' ')
     .trim();
 }
+// Además de normalizar(), quita separadores que no valen en una clave de
+// Storage: '/' (formas alternas tipo "hura / bera"), y '·'/'—'/'–' que
+// aparecen en algún ejemplo (listas de flexión, diálogos pregunta-respuesta).
 function claveArchivo(eu) {
-  return normalizar(eu).replace(/\s+/g, '-');
+  return normalizar(eu)
+    .replace(/\s*\/\s*/g, ' o ')
+    .replace(/[·—–]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\s+/g, '-');
 }
 
 async function existe(ruta) {
@@ -60,7 +68,13 @@ async function main() {
 
   // Aplana entradas + variantes de registro (sección 5.1 del brief): cada
   // variante bizkaina lleva su propio mp3, igual que la forma normativa.
-  const palabras = unidad.vocabulario.flatMap((v) => [v, ...(v.variantes || [])]);
+  // Se suman también las frases de ejemplo de gramática (sección 6: "y
+  // frases relevantes de ejercicios"). Si un ejemplo coincide en texto
+  // con una palabra de vocabulario, comparten el mismo mp3 (misma clave).
+  var palabras = unidad.vocabulario.flatMap((v) => [v, ...(v.variantes || [])]);
+  (unidad.gramatica || []).forEach((g) => {
+    (g.ejemplos || []).forEach((e) => palabras.push(e));
+  });
 
   console.log(`Unidad ${unidad.id} — ${palabras.length} palabras`);
 

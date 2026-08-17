@@ -552,7 +552,7 @@
       var ejemplos = '';
       if (g.ejemplos && g.ejemplos.length) {
         ejemplos = '<ul class="exlist">' + g.ejemplos.map(function (e) {
-          return '<li><span class="eu">' + esc(e.eu) + '</span>' +
+          return '<li><span class="eu">' + esc(e.eu) + botonAudio(e) + '</span>' +
                  '<span class="es">' + esc(e.es) + '</span></li>';
         }).join('') + '</ul>';
       }
@@ -1229,6 +1229,7 @@
   });
   activarAudioEnLista(el.vocabContent);
   activarAudioEnLista(el.dictContent);
+  activarAudioEnLista(el.gramContent);
 
   $('goGramatica').addEventListener('click', pantallaGramatica);
   $('goVocab').addEventListener('click', pantallaVocabulario);

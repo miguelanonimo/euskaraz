@@ -6,45 +6,240 @@
   "objetivo": "Contar lo que haces cada día, negarlo y hablar de comida.",
   "color": "verde",
   "vocabulario": [
-    { "eu": "jan", "es": "comer", "nota": "Forma de diccionario. Para «como» hace falta «jaten dut».", "audio": "unidades/u8/jan.mp3" },
-    { "eu": "jaten dut", "es": "(yo) como", "nota": null, "audio": "unidades/u8/jaten-dut.mp3" },
-    { "eu": "edan", "es": "beber", "nota": null, "audio": "unidades/u8/edan.mp3" },
-    { "eu": "edaten dut", "es": "(yo) bebo", "nota": null, "audio": "unidades/u8/edaten-dut.mp3" },
-    { "eu": "egin", "es": "hacer", "nota": null, "audio": "unidades/u8/egin.mp3" },
-    { "eu": "egiten dut", "es": "(yo) hago", "nota": null, "audio": "unidades/u8/egiten-dut.mp3" },
-    { "eu": "lan egin", "es": "trabajar", "nota": "Literalmente «hacer trabajo».", "audio": "unidades/u8/lan-egin.mp3" },
-    { "eu": "hitz egin", "es": "hablar", "nota": "Literalmente «hacer palabra».", "audio": "unidades/u8/hitz-egin.mp3" },
-    { "eu": "ikasi", "es": "estudiar, aprender", "nota": "Una sola palabra para las dos cosas.", "audio": "unidades/u8/ikasi.mp3" },
-    { "eu": "irakurri", "es": "leer", "nota": null, "audio": "unidades/u8/irakurri.mp3" },
-    { "eu": "idatzi", "es": "escribir", "nota": null, "audio": "unidades/u8/idatzi.mp3" },
-    { "eu": "entzun", "es": "escuchar, oír", "nota": null, "audio": "unidades/u8/entzun.mp3" },
-    { "eu": "ikusi", "es": "ver", "nota": null, "audio": "unidades/u8/ikusi.mp3" },
-    { "eu": "erosi", "es": "comprar", "nota": null, "audio": "unidades/u8/erosi.mp3" },
-    { "eu": "hartu", "es": "coger, tomar", "nota": null, "audio": "unidades/u8/hartu.mp3" },
-    { "eu": "saldu", "es": "vender", "nota": "Sale en la regla del -t(z)en: saldu → saltzen.", "audio": "unidades/u8/saldu.mp3" },
-    { "eu": "jarri", "es": "poner", "nota": "Irregular en -t(z)en: jarri → jartzen.", "audio": "unidades/u8/jarri.mp3" },
-    { "eu": "dirua", "es": "el dinero", "nota": null, "audio": "unidades/u8/dirua.mp3" },
-    { "eu": "arazoa", "es": "el problema", "nota": "«Ez dago arazorik» — no hay problema.", "audio": "unidades/u8/arazoa.mp3" },
-    { "eu": "berandu", "es": "tarde", "nota": "Lo contrario es «goiz» (temprano).", "audio": "unidades/u8/berandu.mp3" },
-    { "eu": "nahi dut", "es": "quiero", "nota": "Se usa con la forma de diccionario: «ura nahi dut».", "audio": "unidades/u8/nahi-dut.mp3" },
-    { "eu": "ogia", "es": "el pan", "nota": null, "audio": "unidades/u8/ogia.mp3" },
-    { "eu": "ura", "es": "el agua", "nota": null, "audio": "unidades/u8/ura.mp3" },
-    { "eu": "kafea", "es": "el café", "nota": null, "audio": "unidades/u8/kafea.mp3" },
-    { "eu": "esnea", "es": "la leche", "nota": null, "audio": "unidades/u8/esnea.mp3" },
-    { "eu": "ardoa", "es": "el vino", "nota": null, "audio": "unidades/u8/ardoa.mp3" },
-    { "eu": "garagardoa", "es": "la cerveza", "nota": "De «garagar» (cebada) + «ardo» (vino).", "audio": "unidades/u8/garagardoa.mp3" },
-    { "eu": "arraina", "es": "el pescado", "nota": null, "audio": "unidades/u8/arraina.mp3" },
-    { "eu": "haragia", "es": "la carne", "nota": null, "audio": "unidades/u8/haragia.mp3" },
-    { "eu": "barazkiak", "es": "las verduras", "nota": null, "audio": "unidades/u8/barazkiak.mp3" },
-    { "eu": "sagarra", "es": "la manzana", "nota": "De ahí «sagardoa», la sidra: sagar + ardo.", "audio": "unidades/u8/sagarra.mp3" },
-    { "eu": "gosaria", "es": "el desayuno", "nota": null, "audio": "unidades/u8/gosaria.mp3" },
-    { "eu": "bazkaria", "es": "la comida (del mediodía)", "nota": null, "audio": "unidades/u8/bazkaria.mp3" },
-    { "eu": "afaria", "es": "la cena", "nota": null, "audio": "unidades/u8/afaria.mp3" },
-    { "eu": "liburua", "es": "el libro", "nota": null, "audio": "unidades/u8/liburua.mp3" },
-    { "eu": "musika", "es": "la música", "nota": null, "audio": "unidades/u8/musika.mp3" },
-    { "eu": "euskara", "es": "el euskera", "nota": "Sin artículo cuando es objeto genérico: «euskara ikasten dut».", "audio": "unidades/u8/euskara.mp3" },
-    { "eu": "ez", "es": "no", "nota": null, "audio": "unidades/u8/ez.mp3" },
-    { "eu": "ezer ez", "es": "nada", "nota": null, "audio": "unidades/u8/ezer-ez.mp3" }
+    {
+      "eu": "jan",
+      "es": "comer",
+      "nota": "Forma de diccionario. Para «como» hace falta «jaten dut».",
+      "audio": "unidades/u8/jan.mp3"
+    },
+    {
+      "eu": "jaten dut",
+      "es": "(yo) como",
+      "nota": null,
+      "audio": "unidades/u8/jaten-dut.mp3"
+    },
+    {
+      "eu": "edan",
+      "es": "beber",
+      "nota": null,
+      "audio": "unidades/u8/edan.mp3"
+    },
+    {
+      "eu": "edaten dut",
+      "es": "(yo) bebo",
+      "nota": null,
+      "audio": "unidades/u8/edaten-dut.mp3"
+    },
+    {
+      "eu": "egin",
+      "es": "hacer",
+      "nota": null,
+      "audio": "unidades/u8/egin.mp3"
+    },
+    {
+      "eu": "egiten dut",
+      "es": "(yo) hago",
+      "nota": null,
+      "audio": "unidades/u8/egiten-dut.mp3"
+    },
+    {
+      "eu": "lan egin",
+      "es": "trabajar",
+      "nota": "Literalmente «hacer trabajo».",
+      "audio": "unidades/u8/lan-egin.mp3"
+    },
+    {
+      "eu": "hitz egin",
+      "es": "hablar",
+      "nota": "Literalmente «hacer palabra».",
+      "audio": "unidades/u8/hitz-egin.mp3"
+    },
+    {
+      "eu": "ikasi",
+      "es": "estudiar, aprender",
+      "nota": "Una sola palabra para las dos cosas.",
+      "audio": "unidades/u8/ikasi.mp3"
+    },
+    {
+      "eu": "irakurri",
+      "es": "leer",
+      "nota": null,
+      "audio": "unidades/u8/irakurri.mp3"
+    },
+    {
+      "eu": "idatzi",
+      "es": "escribir",
+      "nota": null,
+      "audio": "unidades/u8/idatzi.mp3"
+    },
+    {
+      "eu": "entzun",
+      "es": "escuchar, oír",
+      "nota": null,
+      "audio": "unidades/u8/entzun.mp3"
+    },
+    {
+      "eu": "ikusi",
+      "es": "ver",
+      "nota": null,
+      "audio": "unidades/u8/ikusi.mp3"
+    },
+    {
+      "eu": "erosi",
+      "es": "comprar",
+      "nota": null,
+      "audio": "unidades/u8/erosi.mp3"
+    },
+    {
+      "eu": "hartu",
+      "es": "coger, tomar",
+      "nota": null,
+      "audio": "unidades/u8/hartu.mp3"
+    },
+    {
+      "eu": "saldu",
+      "es": "vender",
+      "nota": "Sale en la regla del -t(z)en: saldu → saltzen.",
+      "audio": "unidades/u8/saldu.mp3"
+    },
+    {
+      "eu": "jarri",
+      "es": "poner",
+      "nota": "Irregular en -t(z)en: jarri → jartzen.",
+      "audio": "unidades/u8/jarri.mp3"
+    },
+    {
+      "eu": "dirua",
+      "es": "el dinero",
+      "nota": null,
+      "audio": "unidades/u8/dirua.mp3"
+    },
+    {
+      "eu": "arazoa",
+      "es": "el problema",
+      "nota": "«Ez dago arazorik» — no hay problema.",
+      "audio": "unidades/u8/arazoa.mp3"
+    },
+    {
+      "eu": "berandu",
+      "es": "tarde",
+      "nota": "Lo contrario es «goiz» (temprano).",
+      "audio": "unidades/u8/berandu.mp3"
+    },
+    {
+      "eu": "nahi dut",
+      "es": "quiero",
+      "nota": "Se usa con la forma de diccionario: «ura nahi dut».",
+      "audio": "unidades/u8/nahi-dut.mp3"
+    },
+    {
+      "eu": "ogia",
+      "es": "el pan",
+      "nota": null,
+      "audio": "unidades/u8/ogia.mp3"
+    },
+    {
+      "eu": "ura",
+      "es": "el agua",
+      "nota": null,
+      "audio": "unidades/u8/ura.mp3"
+    },
+    {
+      "eu": "kafea",
+      "es": "el café",
+      "nota": null,
+      "audio": "unidades/u8/kafea.mp3"
+    },
+    {
+      "eu": "esnea",
+      "es": "la leche",
+      "nota": null,
+      "audio": "unidades/u8/esnea.mp3"
+    },
+    {
+      "eu": "ardoa",
+      "es": "el vino",
+      "nota": null,
+      "audio": "unidades/u8/ardoa.mp3"
+    },
+    {
+      "eu": "garagardoa",
+      "es": "la cerveza",
+      "nota": "De «garagar» (cebada) + «ardo» (vino).",
+      "audio": "unidades/u8/garagardoa.mp3"
+    },
+    {
+      "eu": "arraina",
+      "es": "el pescado",
+      "nota": null,
+      "audio": "unidades/u8/arraina.mp3"
+    },
+    {
+      "eu": "haragia",
+      "es": "la carne",
+      "nota": null,
+      "audio": "unidades/u8/haragia.mp3"
+    },
+    {
+      "eu": "barazkiak",
+      "es": "las verduras",
+      "nota": null,
+      "audio": "unidades/u8/barazkiak.mp3"
+    },
+    {
+      "eu": "sagarra",
+      "es": "la manzana",
+      "nota": "De ahí «sagardoa», la sidra: sagar + ardo.",
+      "audio": "unidades/u8/sagarra.mp3"
+    },
+    {
+      "eu": "gosaria",
+      "es": "el desayuno",
+      "nota": null,
+      "audio": "unidades/u8/gosaria.mp3"
+    },
+    {
+      "eu": "bazkaria",
+      "es": "la comida (del mediodía)",
+      "nota": null,
+      "audio": "unidades/u8/bazkaria.mp3"
+    },
+    {
+      "eu": "afaria",
+      "es": "la cena",
+      "nota": null,
+      "audio": "unidades/u8/afaria.mp3"
+    },
+    {
+      "eu": "liburua",
+      "es": "el libro",
+      "nota": null,
+      "audio": "unidades/u8/liburua.mp3"
+    },
+    {
+      "eu": "musika",
+      "es": "la música",
+      "nota": null,
+      "audio": "unidades/u8/musika.mp3"
+    },
+    {
+      "eu": "euskara",
+      "es": "el euskera",
+      "nota": "Sin artículo cuando es objeto genérico: «euskara ikasten dut».",
+      "audio": "unidades/u8/euskara.mp3"
+    },
+    {
+      "eu": "ez",
+      "es": "no",
+      "nota": null,
+      "audio": "unidades/u8/ez.mp3"
+    },
+    {
+      "eu": "ezer ez",
+      "es": "nada",
+      "nota": null,
+      "audio": "unidades/u8/ezer-ez.mp3"
+    }
   ],
   "gramatica": [
     {
@@ -53,15 +248,18 @@
       "ejemplos": [
         {
           "eu": "Nik ogia jaten dut.",
-          "es": "Yo como pan."
+          "es": "Yo como pan.",
+          "audio": "unidades/u8/nik-ogia-jaten-dut.mp3"
         },
         {
           "eu": "Zuk kafea edaten duzu.",
-          "es": "Tú bebes café."
+          "es": "Tú bebes café.",
+          "audio": "unidades/u8/zuk-kafea-edaten-duzu.mp3"
         },
         {
           "eu": "Haiek euskara ikasten dute.",
-          "es": "Ellos aprenden euskera."
+          "es": "Ellos aprenden euskera.",
+          "audio": "unidades/u8/haiek-euskara-ikasten-dute.mp3"
         }
       ]
     },
@@ -71,15 +269,18 @@
       "ejemplos": [
         {
           "eu": "Liburua irakurtzen dut.",
-          "es": "Leo el libro."
+          "es": "Leo el libro.",
+          "audio": "unidades/u8/liburua-irakurtzen-dut.mp3"
         },
         {
           "eu": "Musika entzuten dugu.",
-          "es": "Escuchamos música."
+          "es": "Escuchamos música.",
+          "audio": "unidades/u8/musika-entzuten-dugu.mp3"
         },
         {
           "eu": "Ogia erosten duzu.",
-          "es": "Compras pan."
+          "es": "Compras pan.",
+          "audio": "unidades/u8/ogia-erosten-duzu.mp3"
         }
       ]
     },
@@ -89,15 +290,18 @@
       "ejemplos": [
         {
           "eu": "Ni goizean etxetik joaten naiz.",
-          "es": "Por la mañana salgo de casa. (etxe-tik = desde casa; el -tik llega en la unidad 9)"
+          "es": "Por la mañana salgo de casa. (etxe-tik = desde casa; el -tik llega en la unidad 9)",
+          "audio": "unidades/u8/ni-goizean-etxetik-joaten-naiz.mp3"
         },
         {
           "eu": "Nik gosaria etxean hartzen dut.",
-          "es": "Desayuno en casa."
+          "es": "Desayuno en casa.",
+          "audio": "unidades/u8/nik-gosaria-etxean-hartzen-dut.mp3"
         },
         {
           "eu": "Gu berandu etortzen gara.",
-          "es": "Nosotros venimos tarde."
+          "es": "Nosotros venimos tarde.",
+          "audio": "unidades/u8/gu-berandu-etortzen-gara.mp3"
         }
       ]
     },
@@ -107,15 +311,18 @@
       "ejemplos": [
         {
           "eu": "Ez dut kafea edaten.",
-          "es": "No bebo café."
+          "es": "No bebo café.",
+          "audio": "unidades/u8/ez-dut-kafea-edaten.mp3"
         },
         {
           "eu": "Ez naiz Bilbokoa.",
-          "es": "No soy de Bilbao."
+          "es": "No soy de Bilbao.",
+          "audio": "unidades/u8/ez-naiz-bilbokoa.mp3"
         },
         {
           "eu": "Zuk ez duzu haragia jaten.",
-          "es": "Tú no comes carne."
+          "es": "Tú no comes carne.",
+          "audio": "unidades/u8/zuk-ez-duzu-haragia-jaten.mp3"
         }
       ]
     },
@@ -125,15 +332,18 @@
       "ejemplos": [
         {
           "eu": "Ez dut dirurik.",
-          "es": "No tengo dinero."
+          "es": "No tengo dinero.",
+          "audio": "unidades/u8/ez-dut-dirurik.mp3"
         },
         {
           "eu": "Ez dago urik.",
-          "es": "No hay agua."
+          "es": "No hay agua.",
+          "audio": "unidades/u8/ez-dago-urik.mp3"
         },
         {
           "eu": "Ez dut ezer nahi.",
-          "es": "No quiero nada."
+          "es": "No quiero nada.",
+          "audio": "unidades/u8/ez-dut-ezer-nahi.mp3"
         }
       ]
     },
@@ -143,15 +353,18 @@
       "ejemplos": [
         {
           "eu": "Barazkiak erosten ditut.",
-          "es": "Compro las verduras."
+          "es": "Compro las verduras.",
+          "audio": "unidades/u8/barazkiak-erosten-ditut.mp3"
         },
         {
           "eu": "Liburuak irakurtzen ditugu.",
-          "es": "Leemos los libros."
+          "es": "Leemos los libros.",
+          "audio": "unidades/u8/liburuak-irakurtzen-ditugu.mp3"
         },
         {
           "eu": "Ez ditut haragia eta arraina jaten.",
-          "es": "No como carne ni pescado."
+          "es": "No como carne ni pescado.",
+          "audio": "unidades/u8/ez-ditut-haragia-eta-arraina-jaten.mp3"
         }
       ]
     },
@@ -161,15 +374,18 @@
       "ejemplos": [
         {
           "eu": "Nik ez dot kafea edaten.",
-          "es": "Yo no bebo café. — batua: ez dut."
+          "es": "Yo no bebo café. — batua: ez dut.",
+          "audio": "unidades/u8/nik-ez-dot-kafea-edaten.mp3"
         },
         {
           "eu": "Zer egiten dozu?",
-          "es": "¿Qué haces? — batua: Zer egiten duzu?"
+          "es": "¿Qué haces? — batua: Zer egiten duzu?",
+          "audio": "unidades/u8/zer-egiten-dozu.mp3"
         },
         {
           "eu": "Berandu etorten naz.",
-          "es": "Vengo tarde. — batua: berandu etortzen naiz."
+          "es": "Vengo tarde. — batua: berandu etortzen naiz.",
+          "audio": "unidades/u8/berandu-etorten-naz.mp3"
         }
       ]
     }

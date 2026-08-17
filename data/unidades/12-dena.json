@@ -6,40 +6,210 @@
   "objetivo": "Rematar el nivel: preguntas de sí o no, comparaciones, conectores y un repaso de todo.",
   "color": "bezier",
   "vocabulario": [
-    { "eu": "al", "es": "(partícula de pregunta)", "nota": "No significa nada por sí sola: solo marca que la frase es una pregunta de sí o no.", "audio": "unidades/u12/al.mp3" },
-    { "eu": "baino", "es": "que (en comparaciones)", "nota": null, "audio": "unidades/u12/baino.mp3" },
-    { "eu": "-ago", "es": "más", "nota": "Se pega al adjetivo: handi → handiago.", "audio": "unidades/u12/-ago.mp3" },
-    { "eu": "-ena", "es": "el más", "nota": "handi → handiena.", "audio": "unidades/u12/-ena.mp3" },
-    { "eu": "gehiago", "es": "más (cantidad)", "nota": null, "audio": "unidades/u12/gehiago.mp3" },
-    { "eu": "gutxiago", "es": "menos", "nota": null, "audio": "unidades/u12/gutxiago.mp3" },
-    { "eu": "hobea", "es": "mejor", "nota": "Irregular: de «ona» (bueno).", "audio": "unidades/u12/hobea.mp3" },
-    { "eu": "txarragoa", "es": "peor", "nota": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio.", "audio": "unidades/u12/txarragoa.mp3" },
-    { "eu": "hobeto", "es": "mejor (adverbio)", "nota": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio.", "audio": "unidades/u12/hobeto.mp3" },
-    { "eu": "bezain", "es": "tan… como", "nota": null, "audio": "unidades/u12/bezain.mp3" },
-    { "eu": "berdin", "es": "igual", "nota": null, "audio": "unidades/u12/berdin.mp3" },
-    { "eu": "beraz", "es": "así que, por tanto", "nota": null, "audio": "unidades/u12/beraz.mp3" },
-    { "eu": "hala ere", "es": "aun así", "nota": null, "audio": "unidades/u12/hala-ere.mp3" },
-    { "eu": "gainera", "es": "además", "nota": null, "audio": "unidades/u12/gainera.mp3" },
-    { "eu": "adibidez", "es": "por ejemplo", "nota": null, "audio": "unidades/u12/adibidez.mp3" },
-    { "eu": "bakarrik", "es": "solo, únicamente", "nota": null, "audio": "unidades/u12/bakarrik.mp3" },
-    { "eu": "denak", "es": "todos", "nota": null, "audio": "unidades/u12/denak.mp3" },
-    { "eu": "norbait", "es": "alguien", "nota": null, "audio": "unidades/u12/norbait.mp3" },
-    { "eu": "inor ez", "es": "nadie", "nota": null, "audio": "unidades/u12/inor-ez.mp3" },
-    { "eu": "zerbait", "es": "algo", "nota": null, "audio": "unidades/u12/zerbait.mp3" },
-    { "eu": "nonbait", "es": "en algún sitio", "nota": null, "audio": "unidades/u12/nonbait.mp3" },
-    { "eu": "noski", "es": "claro, por supuesto", "nota": null, "audio": "unidades/u12/noski.mp3" },
-    { "eu": "benetan", "es": "de verdad", "nota": null, "audio": "unidades/u12/benetan.mp3" },
-    { "eu": "azkar", "es": "rápido", "nota": null, "audio": "unidades/u12/azkar.mp3" },
-    { "eu": "poliki", "es": "despacio", "nota": null, "audio": "unidades/u12/poliki.mp3" },
-    { "eu": "zaila", "es": "difícil", "nota": null, "audio": "unidades/u12/zaila.mp3" },
-    { "eu": "erraza", "es": "fácil", "nota": null, "audio": "unidades/u12/erraza.mp3" },
-    { "eu": "garrantzitsua", "es": "importante", "nota": null, "audio": "unidades/u12/garrantzitsua.mp3" },
-    { "eu": "-lako", "es": "porque", "nota": "Se pega al verbo: «euskalduna naizelako».", "audio": "unidades/u12/-lako.mp3" },
-    { "eu": "hitza", "es": "la palabra", "nota": null, "audio": "unidades/u12/hitza.mp3" },
-    { "eu": "aditza", "es": "el verbo", "nota": null, "audio": "unidades/u12/aditza.mp3" },
-    { "eu": "esaldia", "es": "la frase", "nota": null, "audio": "unidades/u12/esaldia.mp3" },
-    { "eu": "hurrengoa", "es": "el siguiente", "nota": null, "audio": "unidades/u12/hurrengoa.mp3" },
-    { "eu": "zorionak", "es": "felicidades", "nota": "Literalmente «suertes buenas».", "audio": "unidades/u12/zorionak.mp3" }
+    {
+      "eu": "al",
+      "es": "(partícula de pregunta)",
+      "nota": "No significa nada por sí sola: solo marca que la frase es una pregunta de sí o no.",
+      "audio": "unidades/u12/al.mp3"
+    },
+    {
+      "eu": "baino",
+      "es": "que (en comparaciones)",
+      "nota": null,
+      "audio": "unidades/u12/baino.mp3"
+    },
+    {
+      "eu": "-ago",
+      "es": "más",
+      "nota": "Se pega al adjetivo: handi → handiago.",
+      "audio": "unidades/u12/-ago.mp3"
+    },
+    {
+      "eu": "-ena",
+      "es": "el más",
+      "nota": "handi → handiena.",
+      "audio": "unidades/u12/-ena.mp3"
+    },
+    {
+      "eu": "gehiago",
+      "es": "más (cantidad)",
+      "nota": null,
+      "audio": "unidades/u12/gehiago.mp3"
+    },
+    {
+      "eu": "gutxiago",
+      "es": "menos",
+      "nota": null,
+      "audio": "unidades/u12/gutxiago.mp3"
+    },
+    {
+      "eu": "hobea",
+      "es": "mejor",
+      "nota": "Irregular: de «ona» (bueno).",
+      "audio": "unidades/u12/hobea.mp3"
+    },
+    {
+      "eu": "txarragoa",
+      "es": "peor",
+      "nota": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio.",
+      "audio": "unidades/u12/txarragoa.mp3"
+    },
+    {
+      "eu": "hobeto",
+      "es": "mejor (adverbio)",
+      "nota": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio.",
+      "audio": "unidades/u12/hobeto.mp3"
+    },
+    {
+      "eu": "bezain",
+      "es": "tan… como",
+      "nota": null,
+      "audio": "unidades/u12/bezain.mp3"
+    },
+    {
+      "eu": "berdin",
+      "es": "igual",
+      "nota": null,
+      "audio": "unidades/u12/berdin.mp3"
+    },
+    {
+      "eu": "beraz",
+      "es": "así que, por tanto",
+      "nota": null,
+      "audio": "unidades/u12/beraz.mp3"
+    },
+    {
+      "eu": "hala ere",
+      "es": "aun así",
+      "nota": null,
+      "audio": "unidades/u12/hala-ere.mp3"
+    },
+    {
+      "eu": "gainera",
+      "es": "además",
+      "nota": null,
+      "audio": "unidades/u12/gainera.mp3"
+    },
+    {
+      "eu": "adibidez",
+      "es": "por ejemplo",
+      "nota": null,
+      "audio": "unidades/u12/adibidez.mp3"
+    },
+    {
+      "eu": "bakarrik",
+      "es": "solo, únicamente",
+      "nota": null,
+      "audio": "unidades/u12/bakarrik.mp3"
+    },
+    {
+      "eu": "denak",
+      "es": "todos",
+      "nota": null,
+      "audio": "unidades/u12/denak.mp3"
+    },
+    {
+      "eu": "norbait",
+      "es": "alguien",
+      "nota": null,
+      "audio": "unidades/u12/norbait.mp3"
+    },
+    {
+      "eu": "inor ez",
+      "es": "nadie",
+      "nota": null,
+      "audio": "unidades/u12/inor-ez.mp3"
+    },
+    {
+      "eu": "zerbait",
+      "es": "algo",
+      "nota": null,
+      "audio": "unidades/u12/zerbait.mp3"
+    },
+    {
+      "eu": "nonbait",
+      "es": "en algún sitio",
+      "nota": null,
+      "audio": "unidades/u12/nonbait.mp3"
+    },
+    {
+      "eu": "noski",
+      "es": "claro, por supuesto",
+      "nota": null,
+      "audio": "unidades/u12/noski.mp3"
+    },
+    {
+      "eu": "benetan",
+      "es": "de verdad",
+      "nota": null,
+      "audio": "unidades/u12/benetan.mp3"
+    },
+    {
+      "eu": "azkar",
+      "es": "rápido",
+      "nota": null,
+      "audio": "unidades/u12/azkar.mp3"
+    },
+    {
+      "eu": "poliki",
+      "es": "despacio",
+      "nota": null,
+      "audio": "unidades/u12/poliki.mp3"
+    },
+    {
+      "eu": "zaila",
+      "es": "difícil",
+      "nota": null,
+      "audio": "unidades/u12/zaila.mp3"
+    },
+    {
+      "eu": "erraza",
+      "es": "fácil",
+      "nota": null,
+      "audio": "unidades/u12/erraza.mp3"
+    },
+    {
+      "eu": "garrantzitsua",
+      "es": "importante",
+      "nota": null,
+      "audio": "unidades/u12/garrantzitsua.mp3"
+    },
+    {
+      "eu": "-lako",
+      "es": "porque",
+      "nota": "Se pega al verbo: «euskalduna naizelako».",
+      "audio": "unidades/u12/-lako.mp3"
+    },
+    {
+      "eu": "hitza",
+      "es": "la palabra",
+      "nota": null,
+      "audio": "unidades/u12/hitza.mp3"
+    },
+    {
+      "eu": "aditza",
+      "es": "el verbo",
+      "nota": null,
+      "audio": "unidades/u12/aditza.mp3"
+    },
+    {
+      "eu": "esaldia",
+      "es": "la frase",
+      "nota": null,
+      "audio": "unidades/u12/esaldia.mp3"
+    },
+    {
+      "eu": "hurrengoa",
+      "es": "el siguiente",
+      "nota": null,
+      "audio": "unidades/u12/hurrengoa.mp3"
+    },
+    {
+      "eu": "zorionak",
+      "es": "felicidades",
+      "nota": "Literalmente «suertes buenas».",
+      "audio": "unidades/u12/zorionak.mp3"
+    }
   ],
   "gramatica": [
     {
@@ -48,15 +218,18 @@
       "ejemplos": [
         {
           "eu": "Euskalduna al zara?",
-          "es": "¿Hablas euskera?"
+          "es": "¿Hablas euskera?",
+          "audio": "unidades/u12/euskalduna-al-zara.mp3"
         },
         {
           "eu": "Kafea nahi al duzu?",
-          "es": "¿Quieres café?"
+          "es": "¿Quieres café?",
+          "audio": "unidades/u12/kafea-nahi-al-duzu.mp3"
         },
         {
           "eu": "Bai, nahi dut.",
-          "es": "Sí, quiero."
+          "es": "Sí, quiero.",
+          "audio": "unidades/u12/bai-nahi-dut.mp3"
         }
       ]
     },
@@ -66,15 +239,18 @@
       "ejemplos": [
         {
           "eu": "Bilbo Gernika baino handiagoa da.",
-          "es": "Bilbao es más grande que Gernika."
+          "es": "Bilbao es más grande que Gernika.",
+          "audio": "unidades/u12/bilbo-gernika-baino-handiagoa-da.mp3"
         },
         {
           "eu": "Gaur hobeto nago.",
-          "es": "Hoy estoy mejor."
+          "es": "Hoy estoy mejor.",
+          "audio": "unidades/u12/gaur-hobeto-nago.mp3"
         },
         {
           "eu": "Zu bezain azkar.",
-          "es": "Tan rápido como tú."
+          "es": "Tan rápido como tú.",
+          "audio": "unidades/u12/zu-bezain-azkar.mp3"
         }
       ]
     },
@@ -84,15 +260,18 @@
       "ejemplos": [
         {
           "eu": "Nekatuta nago, beraz etxean geratzen naiz.",
-          "es": "Estoy cansado, así que me quedo en casa."
+          "es": "Estoy cansado, así que me quedo en casa.",
+          "audio": "unidades/u12/nekatuta-nago-beraz-etxean-geratzen-naiz.mp3"
         },
         {
           "eu": "Ni ere Gernikakoa naiz.",
-          "es": "Yo también soy de Gernika."
+          "es": "Yo también soy de Gernika.",
+          "audio": "unidades/u12/ni-ere-gernikakoa-naiz.mp3"
         },
         {
           "eu": "Gustatzen zaidalako.",
-          "es": "Porque me gusta."
+          "es": "Porque me gusta.",
+          "audio": "unidades/u12/gustatzen-zaidalako.mp3"
         }
       ]
     },
@@ -102,15 +281,18 @@
       "ejemplos": [
         {
           "eu": "Etxetik etxera.",
-          "es": "De casa a casa."
+          "es": "De casa a casa.",
+          "audio": "unidades/u12/etxetik-etxera.mp3"
         },
         {
           "eu": "Nirekin zatoz?",
-          "es": "¿Vienes conmigo?"
+          "es": "¿Vienes conmigo?",
+          "audio": "unidades/u12/nirekin-zatoz.mp3"
         },
         {
           "eu": "Jaten dut, jan dut, jan nuen.",
-          "es": "Como, he comido, comí."
+          "es": "Como, he comido, comí.",
+          "audio": "unidades/u12/jaten-dut-jan-dut-jan-nuen.mp3"
         }
       ]
     },
@@ -120,15 +302,18 @@
       "ejemplos": [
         {
           "eu": "Bihar Bilbora joango naiz.",
-          "es": "Mañana iré a Bilbao."
+          "es": "Mañana iré a Bilbao.",
+          "audio": "unidades/u12/bihar-bilbora-joango-naiz.mp3"
         },
         {
           "eu": "Ez dakit.",
-          "es": "No sé."
+          "es": "No sé.",
+          "audio": "unidades/u12/ez-dakit.mp3"
         },
         {
           "eu": "Zorionak!",
-          "es": "¡Felicidades!"
+          "es": "¡Felicidades!",
+          "audio": "unidades/u12/zorionak.mp3"
         }
       ]
     },
@@ -138,15 +323,18 @@
       "ejemplos": [
         {
           "eu": "Ni be bai.",
-          "es": "Yo también. — batua: Ni ere bai."
+          "es": "Yo también. — batua: Ni ere bai.",
+          "audio": "unidades/u12/ni-be-bai.mp3"
         },
         {
           "eu": "Etorriko ete da?",
-          "es": "¿Vendrá? — matiz de duda."
+          "es": "¿Vendrá? — matiz de duda.",
+          "audio": "unidades/u12/etorriko-ete-da.mp3"
         },
         {
           "eu": "Zegaitik?",
-          "es": "¿Por qué? — batua: Zergatik?"
+          "es": "¿Por qué? — batua: Zergatik?",
+          "audio": "unidades/u12/zegaitik.mp3"
         }
       ]
     }
