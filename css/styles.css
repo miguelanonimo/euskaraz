@@ -404,7 +404,7 @@ svg{
   color: var(--tinta-70);
 }
 
-.cardstack{ border-top: 1px solid var(--filete); }
+.cardstack .navcard:has(+ .navcard--accent){ border-bottom: 0; }
 
 /* Tres columnas: cuerpo, cifra de pendientes y flecha. La cifra falta en
    la mayoría de tarjetas, así que la separación va en márgenes y no en
