@@ -58,9 +58,13 @@ async function main() {
 
   const client = new textToSpeech.TextToSpeechClient({ projectId: PROJECT_ID });
 
-  console.log(`Unidad ${unidad.id} — ${unidad.vocabulario.length} palabras`);
+  // Aplana entradas + variantes de registro (sección 5.1 del brief): cada
+  // variante bizkaina lleva su propio mp3, igual que la forma normativa.
+  const palabras = unidad.vocabulario.flatMap((v) => [v, ...(v.variantes || [])]);
 
-  for (const v of unidad.vocabulario) {
+  console.log(`Unidad ${unidad.id} — ${palabras.length} palabras`);
+
+  for (const v of palabras) {
     const clave = claveArchivo(v.eu);
     const destino = path.join(destDir, `${clave}.mp3`);
 

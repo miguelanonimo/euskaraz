@@ -28,11 +28,21 @@ curso.
 
 ## Fase actual
 
-**Fase 1 — Fontanería, sin tocar contenido.** Portar
-`cargarProgreso`/`guardarProgreso` a Supabase manteniendo exactamente el
-mismo objeto de datos. Validar con el contenido original tal cual (sin
-reescribir todavía) que sincroniza entre dispositivos. No avanzar a Fase 2
-(audio) ni Fase 3 (contenido) hasta que esto esté validado.
+**Fase 3 — Contenido, en curso (piloto Unidad 1 hecho).**
+
+- **Fase 1 (fontanería): cerrada y validada.** Progreso en Supabase
+  (`euskaraz_progreso`, proyecto Ippo compartido), login con magic link,
+  sincroniza entre dispositivos.
+- **Fase 2 (audio): cerrada.** Pipeline de Cloud TTS en
+  `scripts/generar-audio/` (ADC, sin claves que gestionar). Las 12
+  unidades tienen mp3 generado y subido a `euskaraz-audio` en Supabase
+  Storage; botón de altavoz en Vocabulario y Diccionario.
+- **Fase 3 (contenido): piloto de la Unidad 1 hecho**, ver
+  `docs/notas-contenido-u1.md` para el detalle de qué se cambió y por
+  qué. Esquema `registro`/`variantes` aplicado a las dos parejas
+  batua/bizkaiera verificadas (kaixo↔aupa, zer moduz↔zelan zagoz).
+  Pendiente: que Miguel valide el piloto antes de replicar la
+  metodología a las 11 unidades restantes.
 
 ## Al terminar cada fase
 

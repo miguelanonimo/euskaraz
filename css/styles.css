@@ -551,6 +551,7 @@ svg{
 }
 .vitem__eu{
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 6px;
   font-size: var(--t-m);
@@ -577,6 +578,28 @@ svg{
   font-size: var(--t-s);
   line-height: 1.45;
   color: var(--tinta-45);
+}
+
+/* Registro (batua/bizkaiera, sección 5.1): ninguna forma se oculta,
+   solo se etiqueta para no mezclarlas sin querer. */
+.vitem__registro{
+  flex: 0 0 auto;
+  padding: 2px 7px;
+  border: 1px solid var(--filete-alto);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--tinta-45);
+}
+.vitem__registro--bizkaiera{ border-color: var(--acento); color: var(--acento); }
+
+.vitem--variante{
+  margin-top: calc(var(--u) * 1.5);
+  padding-top: calc(var(--u) * 1.5);
+  padding-left: calc(var(--u) * 2);
+  border-top: 1px solid var(--filete);
+  border-left: 2px solid var(--filete-alto);
 }
 
 .reader-foot{

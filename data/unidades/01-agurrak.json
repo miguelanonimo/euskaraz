@@ -6,16 +6,21 @@
   "objetivo": "Saludar según el momento del día, preguntar cómo está alguien y despedirte. Y un primer contacto con cómo suena el euskera.",
   "color": "rojo",
   "vocabulario": [
-    { "eu": "kaixo", "es": "hola", "nota": "Vale a cualquier hora. Informal pero muy común.", "audio": "unidades/u1/kaixo.mp3" },
-    { "eu": "aupa", "es": "hola (informal)", "nota": "Muy usado en Bizkaia entre conocidos.", "audio": "unidades/u1/aupa.mp3" },
+    { "eu": "kaixo", "es": "hola", "registro": "batua", "nota": "Vale a cualquier hora. Informal pero muy común.", "audio": "unidades/u1/kaixo.mp3",
+      "variantes": [
+        { "eu": "aupa", "registro": "bizkaiera", "nota": "Forma informal muy extendida en Bizkaia, sobre todo en Bilbao. En el resto de Euskal Herria se oyen variantes como epa o iepa.", "audio": "unidades/u1/aupa.mp3" }
+      ] },
     { "eu": "egun on", "es": "buenos días", "nota": "Literalmente «día bueno». Hasta el mediodía.", "audio": "unidades/u1/egun-on.mp3" },
     { "eu": "arratsalde on", "es": "buenas tardes", "nota": "Desde el mediodía hasta el anochecer.", "audio": "unidades/u1/arratsalde-on.mp3" },
     { "eu": "gabon", "es": "buenas noches", "nota": "De «gau» (noche) + «on» (bueno).", "audio": "unidades/u1/gabon.mp3" },
     { "eu": "agur", "es": "adiós", "nota": "Despedida general.", "audio": "unidades/u1/agur.mp3" },
-    { "eu": "ikusi arte", "es": "hasta luego", "nota": "Literalmente «hasta ver».", "audio": "unidades/u1/ikusi-arte.mp3" },
-    { "eu": "gero arte", "es": "hasta luego", "nota": "«gero» = después. Muy usado en Bizkaia.", "audio": "unidades/u1/gero-arte.mp3" },
+    { "eu": "ikusi arte", "es": "hasta luego", "nota": "Literalmente «hasta ver». Despedida neutra, sin matiz de cuándo.", "audio": "unidades/u1/ikusi-arte.mp3" },
+    { "eu": "gero arte", "es": "hasta luego", "nota": "«gero» = después. Matiz de «hasta pronto», no una forma bizkaina de ikusi arte — las dos son batua estándar.", "audio": "unidades/u1/gero-arte.mp3" },
     { "eu": "bihar arte", "es": "hasta mañana", "nota": "«bihar» = mañana (el día siguiente).", "audio": "unidades/u1/bihar-arte.mp3" },
-    { "eu": "zer moduz?", "es": "¿qué tal?", "nota": "La pregunta cotidiana por excelencia.", "audio": "unidades/u1/zer-moduz.mp3" },
+    { "eu": "zer moduz?", "es": "¿qué tal?", "registro": "batua", "nota": "La pregunta cotidiana por excelencia.", "audio": "unidades/u1/zer-moduz.mp3",
+      "variantes": [
+        { "eu": "zelan zagoz?", "registro": "bizkaiera", "nota": "«zelan» es el «nola» (cómo) bizkaino. Muy oído en Bilbao para preguntar qué tal está alguien.", "audio": "unidades/u1/zelan-zagoz.mp3" }
+      ] },
     { "eu": "ondo", "es": "bien", "nota": "Respuesta estándar.", "audio": "unidades/u1/ondo.mp3" },
     { "eu": "oso ondo", "es": "muy bien", "nota": "«oso» = muy.", "audio": "unidades/u1/oso-ondo.mp3" },
     { "eu": "hala-hola", "es": "así así, regular", "nota": null, "audio": "unidades/u1/hala-hola.mp3" },

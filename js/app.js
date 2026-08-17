@@ -568,21 +568,40 @@
 
   // ─────────── Pantalla: vocabulario ───────────
 
+  /* Etiqueta de registro (sección 5.1 del brief): ninguna forma se oculta,
+     batua y bizkaiera se enseñan juntas, marcadas para no mezclarlas sin
+     querer. Solo se pinta si el ítem trae `registro` explícito. */
+  function etiquetaRegistro(v) {
+    return v.registro ? '<span class="vitem__registro vitem__registro--' + esc(v.registro) + '">' + esc(v.registro) + '</span>' : '';
+  }
+
+  function filaVariante(v) {
+    var nota = v.nota ? '<span class="vitem__nota">' + esc(v.nota) + '</span>' : '';
+    return '<div class="vitem vitem--variante">' +
+      '<span class="vitem__row">' +
+        '<span class="vitem__eu">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
+      '</span>' + nota +
+    '</div>';
+  }
+
+  function fichaVocabulario(v) {
+    var nota = v.nota ? '<span class="vitem__nota">' + esc(v.nota) + '</span>' : '';
+    var variantes = (v.variantes || []).map(filaVariante).join('');
+    return '<div class="vitem">' +
+      '<span class="vitem__row">' +
+        '<span class="vitem__eu">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
+        '<span class="vitem__es">' + esc(v.es) + '</span>' +
+      '</span>' + nota + variantes +
+    '</div>';
+  }
+
   function pantallaVocabulario() {
     var u = estado.unidad;
     progUnidad(u.id).vocab = true;
     guardarProgreso();
     el.topbarTitle.textContent = 'Vocabulario · ' + u.titulo;
 
-    el.vocabContent.innerHTML = '<div class="vocabgroup">' + u.vocabulario.map(function (v) {
-      var nota = v.nota ? '<span class="vitem__nota">' + esc(v.nota) + '</span>' : '';
-      return '<div class="vitem">' +
-        '<span class="vitem__row">' +
-          '<span class="vitem__eu">' + esc(v.eu) + botonAudio(v) + '</span>' +
-          '<span class="vitem__es">' + esc(v.es) + '</span>' +
-        '</span>' + nota +
-      '</div>';
-    }).join('') + '</div>';
+    el.vocabContent.innerHTML = '<div class="vocabgroup">' + u.vocabulario.map(fichaVocabulario).join('') + '</div>';
 
     mostrar('vocab');
   }
@@ -740,16 +759,20 @@
     if (DICC) return DICC;
     var vistas = {};
     DICC = [];
+    function anadir(v, es, unidad) {
+      var clave = normalizar(v.eu);
+      if (vistas[clave]) return;
+      vistas[clave] = true;
+      DICC.push({
+        eu: v.eu, es: es, nota: v.nota, audio: v.audio, registro: v.registro,
+        unidad: unidad,
+        busca: plegar(v.eu) + ' ' + plegar(es) + ' ' + plegar(v.nota || '')
+      });
+    }
     CURSO.unidades.forEach(function (u) {
       u.vocabulario.forEach(function (v) {
-        var clave = normalizar(v.eu);
-        if (vistas[clave]) return;
-        vistas[clave] = true;
-        DICC.push({
-          eu: v.eu, es: v.es, nota: v.nota, audio: v.audio,
-          unidad: u.numero,
-          busca: plegar(v.eu) + ' ' + plegar(v.es) + ' ' + plegar(v.nota || '')
-        });
+        anadir(v, v.es, u.numero);
+        (v.variantes || []).forEach(function (variante) { anadir(variante, v.es, u.numero); });
       });
     });
     DICC.sort(function (a, b) {
@@ -777,7 +800,7 @@
       var nota = v.nota ? '<span class="vitem__nota">' + esc(v.nota) + '</span>' : '';
       return '<div class="vitem">' +
         '<span class="vitem__row">' +
-          '<span class="vitem__eu">' + esc(v.eu) + botonAudio(v) + '</span>' +
+          '<span class="vitem__eu">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
           '<span class="vitem__es">' + esc(v.es) + '</span>' +
         '</span>' +
         '<span class="vitem__unidad">unidad ' + esc(v.unidad) + '</span>' +
