@@ -49,6 +49,11 @@
   --mal:        #d8321b;
   --mal-fondo:  #fbeae7;
 
+  /* Progreso de unidad en la lista de inicio: gris sin empezar,
+     ámbar empezada, rojo (--acento) completada. No es un segundo
+     acento cromático de marca, es señal de estado.               */
+  --progreso-empezada: #b8601a;
+
   /* ── Tipografía ─────────────────────────────────────────
      Misma pareja tipográfica que Ippo. Lastik para títulos
      (__title), PP Neue Montreal para todo lo demás — cuerpo,
@@ -312,7 +317,8 @@ svg{
   font-variant-numeric: tabular-nums;
 }
 .unitcard__badge svg{ width: 15px; height: 15px; stroke-width: 2.4; color: var(--acento); }
-.c-rojo  .unitcard__badge{ color: var(--acento); }
+.unitcard__badge--activa{ color: var(--progreso-empezada); }
+.unitcard__badge--ok{ color: var(--acento); }
 
 .unitcard__body{ min-width: 0; }
 .unitcard__title{

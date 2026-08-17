@@ -436,15 +436,18 @@
     el.unitList.innerHTML = CURSO.unidades.map(function (u) {
       var p = progUnidad(u.id);
       var badge = p.completada ? tickSvg : esc(u.numero);
+      /* El número de la unidad marca su progreso, no un color de
+         contenido: gris sin empezar, ámbar empezada, rojo completada. */
+      var badgeClase = p.completada ? ' unitcard__badge--ok' : (p.visitada ? ' unitcard__badge--activa' : '');
       var meta = p.completada
         ? '<span class="unitcard__meta">' + tickSvg + 'Completada · ' + Math.round(p.mejor * 100) + '%</span>'
         : (p.visitada
             ? '<span class="unitcard__meta unitcard__meta--pend">Empezada</span>'
             : '<span class="unitcard__meta unitcard__meta--pend">' + u.ejercicios.length + ' ejercicios</span>');
 
-      return '<li class="c-' + esc(u.color) + '">' +
+      return '<li>' +
         '<button class="unitcard" data-unidad="' + esc(u.id) + '">' +
-          '<span class="unitcard__badge">' + badge + '</span>' +
+          '<span class="unitcard__badge' + badgeClase + '">' + badge + '</span>' +
           '<span class="unitcard__body">' +
             '<span class="unitcard__title">' + esc(u.titulo) + '</span>' +
             '<span class="unitcard__sub">' + esc(u.subtitulo) + '</span>' +
