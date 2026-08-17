@@ -290,7 +290,7 @@ svg{
 }
 
 /* Lista de unidades: filas separadas por filete, sin cajas */
-.unitlist{ list-style: none; margin: 0 0 calc(var(--u) * 5); padding: 0; border-top: 1px solid var(--filete-alto); }
+.unitlist{ list-style: none; margin: 0 0 calc(var(--u) * 8); padding: 0; border-top: 1px solid var(--filete-alto); }
 .unitlist li{ border-bottom: 1px solid var(--filete); }
 
 .unitcard{
