@@ -202,9 +202,9 @@
       "cuerpo": "Lo anticipamos en la unidad de preguntas: <b>Non?</b> se responde con <b>-n</b>. Aquí van los detalles.\n\nEl euskera no tiene preposiciones delante: pone sufijos detrás. El <b>-n</b> va después del artículo:\n\n<b>etxea</b> (la casa) → <b>etxean</b> (en la casa)\n<b>eskola</b> (la escuela) → <b>eskolan</b>\n<b>kalea</b> (la calle) → <b>kalean</b>\n\nCon nombres de lugar, se añade <b>-n</b> directamente si acaba en vocal:\n\n<b>Bilbo</b> → <b>Bilbon</b>\n<b>Gernika</b> → <b>Gernikan</b>\n\nSi acaba en consonante, se intercala una -e-: <b>Gasteiz</b> → <b>Gasteizen</b>.",
       "ejemplos": [
         {
-          "eu": "Gernikan bizi naiz.",
-          "es": "Vivo en Gernika.",
-          "audio": "unidades/u6/gernikan-bizi-naiz.mp3"
+          "eu": "Bilbon bizi naiz.",
+          "es": "Vivo en Bilbao.",
+          "audio": "unidades/u6/bilbon-bizi-naiz.mp3"
         },
         {
           "eu": "Lanean nago.",
@@ -228,9 +228,9 @@
           "audio": "unidades/u6/non-zaude-etxean-nago.mp3"
         },
         {
-          "eu": "Nongoa zara? — Gernikakoa naiz.",
-          "es": "¿De dónde eres? — Soy de Gernika.",
-          "audio": "unidades/u6/nongoa-zara-gernikakoa-naiz.mp3"
+          "eu": "Nongoa zara? — Bilbokoa naiz.",
+          "es": "¿De dónde eres? — Soy de Bilbao.",
+          "audio": "unidades/u6/nongoa-zara-bilbokoa-naiz.mp3"
         },
         {
           "eu": "Nora zoaz? — Bilbora.",
@@ -261,8 +261,8 @@
       ]
     },
     {
-      "titulo": "Cómo suena esto en Gernika",
-      "cuerpo": "<b>egon en bizkaiera</b>\n\n<b>ni nago</b> — igual que en batua\n<b>zu zagoz</b> — batua: zaude\n<b>hura dago</b> — igual\n<b>gu gagoz</b> — gaude\n<b>zuek zagoze</b> — zaudete\n<b>haiek dagoz</b> — daude\n\nOtra vez esa <b>-z</b> del plural que ya viste en <i>doguz</i>. Es un rasgo sistemático del bizkaiera, no un capricho suelto.\n\nAsí que «¿dónde estás?» en Gernika es <b>Non zagoz?</b>\n\n<b>El locativo con la vocal cambiada</b>\nSi el artículo <i>-ea</i> se convierte en <i>-ie</i>, el locativo arrastra el cambio: <i>etxean</i> pasa a <b>etxien</b>. Por eso «estoy en casa» suena por allí algo así como <i>etxien nago</i>.\n\n<b>Zelan y zelango</b>\nAl <i>zelan</i> (cómo) se le añade el mismo <i>-ko</i> que a los lugares: <b>zelango</b> = «de qué tipo». Donde el batua dice <i>nolako etxea?</i>, el bizkaiera dice <b>zelango etxie?</b>",
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "<b>egon en bizkaiera</b>\n\n<b>ni nago</b> — igual que en batua\n<b>zu zagoz</b> — batua: zaude\n<b>hura dago</b> — igual\n<b>gu gagoz</b> — gaude\n<b>zuek zagoze</b> — zaudete\n<b>haiek dagoz</b> — daude\n\nOtra vez esa <b>-z</b> del plural que ya viste en <i>doguz</i>. Es un rasgo sistemático del bizkaiera, no un capricho suelto.\n\nAsí que «¿dónde estás?» en Bilbao es <b>Non zagoz?</b>\n\n<b>El locativo con la vocal cambiada</b>\nSi el artículo <i>-ea</i> se convierte en <i>-ie</i>, el locativo arrastra el cambio: <i>etxean</i> pasa a <b>etxien</b>. Por eso «estoy en casa» suena por allí algo así como <i>etxien nago</i>.\n\n<b>Zelan y zelango</b>\nAl <i>zelan</i> (cómo) se le añade el mismo <i>-ko</i> que a los lugares: <b>zelango</b> = «de qué tipo». Donde el batua dice <i>nolako etxea?</i>, el bizkaiera dice <b>zelango etxie?</b>",
       "ejemplos": [
         {
           "eu": "Non zagoz?",
@@ -283,7 +283,7 @@
     },
     {
       "titulo": "Un aviso sobre los dialectos",
-      "cuerpo": "El habla cambia de pueblo a pueblo, y a veces de barrio a barrio. Lo que te cuento como «de Gernika» es bizkaiera de Busturialdea en general, y no todo el mundo de allí lo dice igual: quien se ha escolarizado en batua mezcla las dos cosas constantemente.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para captar lo que oyes en una taberna de Gernika, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
+      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
       "ejemplos": []
     }
   ],
@@ -492,12 +492,12 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cómo se dice «en Gernika»?",
+          "pregunta": "¿Cómo se dice «en Bilbao»?",
           "opciones": [
-            "Gernikara",
-            "Gernikakoa",
-            "Gernikan",
-            "Gernika"
+            "Bilbora",
+            "Bilbokoa",
+            "Bilbon",
+            "Bilbao"
           ],
           "correcta": 2,
           "explicacion": "Acaba en vocal, así que se añade la -n directamente."
@@ -531,12 +531,12 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál de estas frases significa «vivo en Gernika»?",
+          "pregunta": "¿Cuál de estas frases significa «vivo en Bilbao»?",
           "opciones": [
-            "Gernikakoa naiz.",
-            "Gernikan bizi naiz.",
-            "Gernikara noa.",
-            "Gernikatik nator."
+            "Bilbokoa naiz.",
+            "Bilbon bizi naiz.",
+            "Bilbora noa.",
+            "Bilbotik nator."
           ],
           "correcta": 1,
           "explicacion": "«Bizi naiz» es «vivo», y el lugar lleva el sufijo -n."
@@ -652,10 +652,10 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Vivo en Gernika.",
-          "eu": "Gernikan bizi naiz.",
+          "es": "Vivo en Bilbao.",
+          "eu": "Bilbon bizi naiz.",
           "palabras": [
-            "Gernikan",
+            "Bilbon",
             "bizi",
             "naiz."
           ]
@@ -884,7 +884,7 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Vivo en Gernika.",
+          "es": "Vivo en Bilbao.",
           "respuestas": [
             "gernikan bizi naiz",
             "ni gernikan bizi naiz"
@@ -1091,7 +1091,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál es la pregunta para «Gernikakoa naiz»?",
+          "pregunta": "¿Cuál es la pregunta para «Bilbokoa naiz»?",
           "opciones": [
             "Non zaude?",
             "Nongoa zara?",
@@ -1148,7 +1148,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En Gernika oyes «Non zagoz?». ¿Qué forma del batua es «zagoz»?",
+          "pregunta": "En Bilbao oyes «Non zagoz?». ¿Qué forma del batua es «zagoz»?",
           "opciones": [
             "zara",
             "zaude",

@@ -217,9 +217,9 @@
       "cuerpo": "El presente lo tienes desde la cuarta unidad. El pasado se parece bastante:\n\n<b>ni nintzen</b> — yo era, yo fui\n<b>zu zinen</b> — tú eras\n<b>hura zen</b> — él/ella era\n<b>gu ginen</b> — nosotros éramos\n<b>zuek zineten</b> — vosotros erais\n<b>haiek ziren</b> — ellos eran\n\nMira la lógica: donde el presente pone <i>n-</i> para «yo» (<i>naiz</i>), el pasado también (<i>nintzen</i>); donde pone <i>z-</i> para «tú» (<i>zara</i>), el pasado también (<i>zinen</i>). Y todas las formas de pasado acaban en <b>-n</b>.\n\nEsa <b>-n</b> final es la marca del pasado en euskera. Una vez la ves, la reconoces en todas partes.",
       "ejemplos": [
         {
-          "eu": "Ni Gernikan jaio nintzen.",
-          "es": "Nací en Gernika.",
-          "audio": "unidades/u11/ni-gernikan-jaio-nintzen.mp3"
+          "eu": "Ni Bilbon jaio nintzen.",
+          "es": "Nací en Bilbao.",
+          "audio": "unidades/u11/ni-bilbon-jaio-nintzen.mp3"
         },
         {
           "eu": "Atzo Bilbon zen.",
@@ -285,9 +285,9 @@
           "audio": "unidades/u11/atzo-bilbora-joan-nintzen.mp3"
         },
         {
-          "eu": "Txikitan Gernikan bizi nintzen.",
-          "es": "De pequeño vivía en Gernika.",
-          "audio": "unidades/u11/txikitan-gernikan-bizi-nintzen.mp3"
+          "eu": "Txikitan Bilbon bizi nintzen.",
+          "es": "De pequeño vivía en Bilbao.",
+          "audio": "unidades/u11/txikitan-bilbon-bizi-nintzen.mp3"
         },
         {
           "eu": "Gaur ez naiz joan.",
@@ -318,13 +318,13 @@
       ]
     },
     {
-      "titulo": "Cómo suena esto en Gernika",
-      "cuerpo": "El pasado es uno de los sitios donde más se separan las dos variedades. Si el batua acaba en <b>-en</b>, el bizkaiera tiende a <b>-an</b>:\n\n<b>ni nintzan</b> — batua: nintzen\n<b>zu zinan</b> — zinen\n<b>hura zan</b> — zen\n<b>gu ginan</b> — ginen\n<b>haiek ziran</b> — ziren\n\nAsí que «era de Gernika» por allí es <b>Gernikakoa zan</b>.\n\n<b>El pasado de tener</b>\nAquí el cambio es mayor todavía:\n\n<b>neban</b> — batua: nuen\n<b>zenduan</b> — zenuen\n<b>eban</b> — zuen\n<b>genduan</b> — genuen\n<b>eben</b> — zuten\n\n<b>Ikusi neban.</b> — Lo vi. (batua: ikusi nuen)\n<b>Esan eban.</b> — Lo dijo. (batua: esan zuen)\n\n<b>Estar</b>\nY <i>zegoen</i> es <b>egoan</b>: <b>Etxean egoan.</b> — Estaba en casa.\n\nEste es el bloque que más cuesta de oído al principio, porque <i>eban</i> y <i>zuen</i> no se parecen en nada. Pero son media docena de formas, y salen constantemente.",
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "El pasado es uno de los sitios donde más se separan las dos variedades. Si el batua acaba en <b>-en</b>, el bizkaiera tiende a <b>-an</b>:\n\n<b>ni nintzan</b> — batua: nintzen\n<b>zu zinan</b> — zinen\n<b>hura zan</b> — zen\n<b>gu ginan</b> — ginen\n<b>haiek ziran</b> — ziren\n\nAsí que «era de Bilbao» por allí es <b>Bilbokoa zan</b>.\n\n<b>El pasado de tener</b>\nAquí el cambio es mayor todavía:\n\n<b>neban</b> — batua: nuen\n<b>zenduan</b> — zenuen\n<b>eban</b> — zuen\n<b>genduan</b> — genuen\n<b>eben</b> — zuten\n\n<b>Ikusi neban.</b> — Lo vi. (batua: ikusi nuen)\n<b>Esan eban.</b> — Lo dijo. (batua: esan zuen)\n\n<b>Estar</b>\nY <i>zegoen</i> es <b>egoan</b>: <b>Etxean egoan.</b> — Estaba en casa.\n\nEste es el bloque que más cuesta de oído al principio, porque <i>eban</i> y <i>zuen</i> no se parecen en nada. Pero son media docena de formas, y salen constantemente.",
       "ejemplos": [
         {
-          "eu": "Ni Gernikan jaio nintzan.",
-          "es": "Nací en Gernika. — batua: nintzen.",
-          "audio": "unidades/u11/ni-gernikan-jaio-nintzan.mp3"
+          "eu": "Ni Bilbon jaio nintzan.",
+          "es": "Nací en Bilbao. — batua: nintzen.",
+          "audio": "unidades/u11/ni-bilbon-jaio-nintzan.mp3"
         },
         {
           "eu": "Ikusi neban.",
@@ -346,7 +346,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Ni Gernikan jaio ____.",
+          "pregunta": "Ni Bilbon jaio ____.",
           "opciones": [
             "naiz",
             "nintzen",
@@ -683,11 +683,11 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "De pequeño vivía en Gernika.",
-          "eu": "Txikitan Gernikan bizi nintzen.",
+          "es": "De pequeño vivía en Bilbao.",
+          "eu": "Txikitan Bilbon bizi nintzen.",
           "palabras": [
             "Txikitan",
-            "Gernikan",
+            "Bilbon",
             "bizi",
             "nintzen."
           ]
@@ -878,7 +878,7 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Nací en Gernika.",
+          "es": "Nací en Bilbao.",
           "respuestas": [
             "gernikan jaio nintzen",
             "ni gernikan jaio nintzen"
@@ -1069,7 +1069,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«Nací en Gernika» en bizkaiera: Gernikan jaio ____.",
+          "pregunta": "«Nací en Bilbao» en bizkaiera: Bilbon jaio ____.",
           "opciones": [
             "nintzen",
             "nintzan",
@@ -1152,7 +1152,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Lehen Bilbon bizi ____, orain Gernikan.",
+          "pregunta": "Lehen Gernikan bizi ____, orain Bilbon.",
           "opciones": [
             "naiz",
             "nintzen",
@@ -1191,7 +1191,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Duela bi urte Gernikan ____.",
+          "pregunta": "Duela bi urte Bilbon ____.",
           "opciones": [
             "nago",
             "nengoen",

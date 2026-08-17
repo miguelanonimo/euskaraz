@@ -207,7 +207,7 @@
     },
     {
       "titulo": "«nondik» y «nongoa» no son lo mismo",
-      "cuerpo": "Las dos se traducen al castellano por «de dónde», y ahí está la trampa.\n\n<b>Nondik?</b> pregunta por un <b>movimiento</b>: de dónde vienes, por dónde has pasado.\n<i>Bilbotik nator</i> — vengo desde Bilbao.\n\n<b>Nongoa?</b> pregunta por el <b>origen</b>: de dónde eres, dónde están tus raíces.\n<i>Bilbokoa naiz</i> — soy de Bilbao.\n\nPuedes ser <i>Gernikakoa</i> (de Gernika) y venir hoy <i>Bilbotik</i> (desde Bilbao). Son dos cosas distintas y el euskera las separa.",
+      "cuerpo": "Las dos se traducen al castellano por «de dónde», y ahí está la trampa.\n\n<b>Nondik?</b> pregunta por un <b>movimiento</b>: de dónde vienes, por dónde has pasado.\n<i>Bilbotik nator</i> — vengo desde Bilbao.\n\n<b>Nongoa?</b> pregunta por el <b>origen</b>: de dónde eres, dónde están tus raíces.\n<i>Bilbokoa naiz</i> — soy de Bilbao.\n\nPuedes ser <i>Bilbokoa</i> (de Bilbao) y venir hoy <i>Gernikatik</i> (desde Gernika). Son dos cosas distintas y el euskera las separa.",
       "ejemplos": [
         {
           "eu": "Nongoa zara?",
@@ -280,7 +280,7 @@
       ]
     },
     {
-      "titulo": "Cómo suena esto en Gernika",
+      "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "<b>zelan en lugar de nola</b>\nYa lo viste en la primera unidad, pero aquí es donde encaja del todo. El «¿cómo?» del bizkaiera es <b>zelan</b>. Y de ahí sale toda una familia:\n\n<b>zelan?</b> — cómo (batua: nola)\n<b>zelango?</b> — de qué tipo (batua: nolako)\n<b>holan, halan, honan</b> — así, de esa manera (batua: horrela, hala, honela)\n\n<b>nogaz en lugar de norekin</b>\nPara «¿con quién?», el bizkaiera usa el sufijo <b>-gaz</b>: <b>nogaz?</b>\n\n<b>La serie de «edo-» y «zeo-»</b>\nA cada interrogativa se le puede poner <b>edo-</b> delante para hacer el indefinido «cualquiera». Ojo: <b>edonor, edonon, edonora, edozein</b> son batua normal, no bizkaiera — te sirven en todas partes:\n\n<b>edonor</b> — cualquiera\n<b>edonon</b> — en cualquier sitio\n<b>edonora</b> — a cualquier sitio\n\nLo propiamente bizkaino es aplicárselo a <b>zelan</b>: <b>edozelan</b> (de cualquier manera), donde el batua dice <i>edonola</i>.\n\nY el <b>zeo-</b> del «alguno» sí es de allí: <b>zeozer</b> (algo), <b>zeozelan</b> (de alguna manera), donde el batua pone <i>zerbait</i> y <i>nolabait</i>. Es un sistema muy regular: aprendes la interrogativa y te salen tres palabras más.",
       "ejemplos": [
         {
@@ -302,7 +302,7 @@
     },
     {
       "titulo": "Un aviso sobre los dialectos",
-      "cuerpo": "El habla cambia de pueblo a pueblo, y a veces de barrio a barrio. Lo que te cuento como «de Gernika» es bizkaiera de Busturialdea en general, y no todo el mundo de allí lo dice igual: quien se ha escolarizado en batua mezcla las dos cosas constantemente.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para captar lo que oyes en una taberna de Gernika, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
+      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
       "ejemplos": []
     }
   ],
@@ -506,7 +506,7 @@
             "«nongoa» es plural"
           ],
           "correcta": 1,
-          "explicacion": "Puedes ser «Gernikakoa» y venir hoy «Bilbotik»."
+          "explicacion": "Puedes ser «Bilbokoa» y venir hoy «Bilbotik»."
         },
         {
           "tipo": "opcion",
@@ -550,12 +550,12 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Eres de Gernika pero hoy vienes de Bilbao. ¿Qué es correcto?",
+          "pregunta": "Eres de Bilbao pero hoy vienes de Gernika. ¿Qué es correcto?",
           "opciones": [
-            "Gernikatik naiz",
-            "Gernikakoa naiz eta Bilbotik nator",
+            "Bilbotik naiz",
+            "Bilbokoa naiz eta Gernikatik nator",
             "Bilbokoa naiz",
-            "Gernikara naiz"
+            "Bilbora naiz"
           ],
           "correcta": 1,
           "explicacion": "«-koa» para el origen, «-tik» para el movimiento. El euskera las separa."
@@ -1008,7 +1008,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En Gernika oyes «Zelan zagoz?». ¿Qué palabra del batua es «zelan»?",
+          "pregunta": "En Bilbao oyes «Zelan zagoz?». ¿Qué palabra del batua es «zelan»?",
           "opciones": [
             "non",
             "nola",

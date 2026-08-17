@@ -196,9 +196,9 @@
           "audio": "unidades/u4/nongoa-zara.mp3"
         },
         {
-          "eu": "Gernikakoa naiz.",
-          "es": "Soy de Gernika.",
-          "audio": "unidades/u4/gernikakoa-naiz.mp3"
+          "eu": "Bilbokoa naiz.",
+          "es": "Soy de Bilbao.",
+          "audio": "unidades/u4/bilbokoa-naiz.mp3"
         },
         {
           "eu": "Madrilgoa naiz.",
@@ -225,7 +225,7 @@
     },
     {
       "titulo": "«ere» significa también, y va detrás",
-      "cuerpo": "Una palabra pequeña muy útil. <b>ere</b> es «también», y como casi todo en euskera, va <b>detrás</b> de la palabra a la que acompaña:\n\n<b>Ni ere ikaslea naiz.</b> — Yo también soy estudiante.\n<b>Hura ere Gernikakoa da.</b> — Él también es de Gernika.\n\nFíjate en que <i>ere</i> se coloca justo después de lo que quieres subrayar. Si lo mueves, cambia el sentido, igual que en castellano con «también».",
+      "cuerpo": "Una palabra pequeña muy útil. <b>ere</b> es «también», y como casi todo en euskera, va <b>detrás</b> de la palabra a la que acompaña:\n\n<b>Ni ere ikaslea naiz.</b> — Yo también soy estudiante.\n<b>Hura ere Bilbokoa da.</b> — Él también es de Bilbao.\n\nFíjate en que <i>ere</i> se coloca justo después de lo que quieres subrayar. Si lo mueves, cambia el sentido, igual que en castellano con «también».",
       "ejemplos": [
         {
           "eu": "Ni ere euskalduna naiz.",
@@ -240,18 +240,13 @@
       ]
     },
     {
-      "titulo": "Cómo suena esto en Gernika",
-      "cuerpo": "Aquí es donde el bizkaiera de Busturialdea se aleja más del batua, y es lo que hace que el euskera de Gernika suene tan reconocible.\n\n<b>naiz → naz</b>\nEl verbo «izan» cambia poco, pero lo que cambia se nota: <i>ni naz</i> en lugar de <i>ni naiz</i>, y <i>zuek zarie</i> en lugar de <i>zuek zarete</i>. Las demás formas (zara, da, gara, dira) son iguales.\n\n<b>La vocal del artículo se transforma</b>\nEste es el rasgo estrella. Cuando el artículo <b>-a</b> se pega a una palabra, las vocales se funden:\n\n<i>etxe + a</i> → batua <b>etxea</b>, Gernika <b>etxie</b>\n<i>neska + a</i> → batua <b>neska</b>, Gernika <b>neskie</b>\n<i>beso + a</i> → batua <b>besoa</b>, Gernika <b>besue</b>\n\nPor eso oyes tanta terminación en <b>-ie</b> y <b>-ue</b> por allí. Una vez sabes que es solo el artículo, dejas de perderte.\n\n<b>Las palabras en -ción</b>\nEl castellano <i>-ción</i> da <b>-ziño</b>: <i>erlijiño</i> (religión), <i>estaziño</i> (estación). En batua serían <i>erlijio</i> y <i>estazio</i>.",
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "El bizkaiera se aleja bastante del batua en el verbo «izan», y esto es justo lo que vas a reconocer en Bilbao.\n\n<b>naiz → naz</b>\nEl verbo «izan» cambia poco, pero lo que cambia se nota: <i>ni naz</i> en lugar de <i>ni naiz</i>, y <i>zuek zarie</i> en lugar de <i>zuek zarete</i>. Las demás formas (zara, da, gara, dira) son iguales.\n\n<b>Las palabras en -ción</b>\nEl castellano <i>-ción</i> da <b>-ziño</b>: <i>erlijiño</i> (religión), <i>estaziño</i> (estación). En batua serían <i>erlijio</i> y <i>estazio</i>.",
       "ejemplos": [
         {
-          "eu": "Ni Gernikakoa naz.",
-          "es": "Soy de Gernika. (bizkaiera) — batua: naiz",
-          "audio": "unidades/u4/ni-gernikakoa-naz.mp3"
-        },
-        {
-          "eu": "etxie",
-          "es": "la casa (Gernika) — batua: etxea",
-          "audio": "unidades/u4/etxie.mp3"
+          "eu": "Ni Bilbokoa naz.",
+          "es": "Soy de Bilbao. (bizkaiera) — batua: naiz",
+          "audio": "unidades/u4/ni-bilbokoa-naz.mp3"
         },
         {
           "eu": "Zuek ikasleak zarie.",
@@ -262,7 +257,7 @@
     },
     {
       "titulo": "Un aviso sobre los dialectos",
-      "cuerpo": "El habla cambia de pueblo a pueblo, y a veces de barrio a barrio. Lo que te cuento como «de Gernika» es bizkaiera de Busturialdea en general, y no todo el mundo de allí lo dice igual: quien se ha escolarizado en batua mezcla las dos cosas constantemente.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para captar lo que oyes en una taberna de Gernika, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
+      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
       "ejemplos": []
     }
   ],
@@ -401,7 +396,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Ni Gernikakoa ____.",
+          "pregunta": "Ni Bilbokoa ____.",
           "opciones": [
             "zara",
             "da",
@@ -620,7 +615,7 @@
             "Gu lagunak gara.",
             "Zu zara irakaslea.",
             "Hura ikaslea da.",
-            "Ni Gernikakoa naiz."
+            "Ni Bilbokoa naiz."
           ],
           "correcta": 1,
           "explicacion": "«Zu zara irakaslea» pone el verbo en medio. Sería «Zu irakaslea zara»."
@@ -787,15 +782,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cómo se dice «soy de Gernika»?",
+          "pregunta": "¿Cómo se dice «soy de Bilbao»?",
           "opciones": [
-            "Gernikan naiz.",
-            "Gernika naiz.",
-            "Gernikakoa naiz.",
-            "Gernikara naiz."
+            "Bilbon naiz.",
+            "Bilbao naiz.",
+            "Bilbokoa naiz.",
+            "Bilbora naiz."
           ],
           "correcta": 2,
-          "explicacion": "Gernika + ko + a. «Gernikan» sería «en Gernika»."
+          "explicacion": "Bilbo + ko + a. «Bilbon» sería «en Bilbao»."
         },
         {
           "tipo": "opcion",
@@ -813,7 +808,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué pregunta responde «Gernikakoa naiz»?",
+          "pregunta": "¿Qué pregunta responde «Bilbokoa naiz»?",
           "opciones": [
             "Non zaude?",
             "Nongoa zara?",
@@ -826,12 +821,12 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cómo dirías «somos de Gernika»?",
+          "pregunta": "¿Cómo dirías «somos de Bilbao»?",
           "opciones": [
-            "Gu Gernikakoa gara.",
-            "Gu Gernikakoak gara.",
-            "Gu Gernikan gara.",
-            "Gu Gernika gara."
+            "Gu Bilbokoa gara.",
+            "Gu Bilbokoak gara.",
+            "Gu Bilbon gara.",
+            "Gu Bilbao gara."
           ],
           "correcta": 1,
           "explicacion": "Sujeto plural, así que el atributo también va en plural: «-koak»."
@@ -925,11 +920,11 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Yo soy de Gernika.",
-          "eu": "Ni Gernikakoa naiz.",
+          "es": "Yo soy de Bilbao.",
+          "eu": "Ni Bilbokoa naiz.",
           "palabras": [
             "Ni",
-            "Gernikakoa",
+            "Bilbokoa",
             "naiz."
           ]
         },
@@ -1005,13 +1000,13 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Soy de Gernika.",
+          "es": "Soy de Bilbao.",
           "respuestas": [
             "ni gernikakoa naiz",
             "gernikakoa naiz",
             "gernikakoa naiz ni"
           ],
-          "pista": "Gernika + ko + a, y el verbo cerrando."
+          "pista": "Bilbo + ko + a, y el verbo cerrando."
         },
         {
           "tipo": "traducir",
@@ -1128,7 +1123,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En Gernika oirás «Ni Gernikakoa naz». ¿Qué forma del batua sustituye «naz»?",
+          "pregunta": "En Bilbao oirás «Ni Bilbokoa naz». ¿Qué forma del batua sustituye «naz»?",
           "opciones": [
             "da",
             "naiz",

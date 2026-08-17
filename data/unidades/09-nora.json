@@ -147,7 +147,7 @@
     {
       "eu": "azoka",
       "es": "la feria, el mercado",
-      "nota": "La de Gernika, los lunes, es la más conocida.",
+      "nota": "La de Bilbao, los lunes, es la más conocida.",
       "audio": "unidades/u9/azoka.mp3"
     },
     {
@@ -330,13 +330,13 @@
       ]
     },
     {
-      "titulo": "Cómo suena esto en Gernika",
-      "cuerpo": "<b>El «de dónde» pierde la k</b>\nDonde el batua dice <b>-tik</b>, el bizkaiera dice <b>-ti</b>:\n\n<b>Bilboti nator.</b> — batua: Bilbotik.\n<b>Etxeti urten dot.</b> — He salido de casa.\n\nEs de los rasgos más fáciles de pillar de oído, porque aparece en cuanto alguien cuenta de dónde viene.\n\n<b>Salir se dice «urten»</b>\nEl <i>irten</i> del batua por allí es <b>urten</b>, y se conjuga con <i>dut</i>: <b>urten dot</b>.\n\n<b>Joan y etorri</b>\nLas formas de una pieza aguantan bastante parecidas: <b>noa, zoaz, doa</b> se oyen igual; en plural asoma otra vez la <b>-z</b>, <b>doiaz</b> por <i>doaz</i>. Y para lo habitual el bizkaiera prefiere <b>joaten naz</b> y <b>etorten naz</b>.\n\n<b>Un apunte de geografía</b>\nLa <b>azoka</b> de Gernika es el mercado del lunes, y es lo bastante conocida como para que «astelehenean azokara» se entienda sin más contexto en toda Busturialdea.",
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "<b>El «de dónde» pierde la k</b>\nDonde el batua dice <b>-tik</b>, el bizkaiera dice <b>-ti</b>:\n\n<b>Bilboti nator.</b> — batua: Bilbotik.\n<b>Etxeti urten dot.</b> — He salido de casa.\n\nEs de los rasgos más fáciles de pillar de oído, porque aparece en cuanto alguien cuenta de dónde viene.\n\n<b>Salir se dice «urten»</b>\nEl <i>irten</i> del batua por allí es <b>urten</b>, y se conjuga con <i>dut</i>: <b>urten dot</b>.\n\n<b>Joan y etorri</b>\nLas formas de una pieza aguantan bastante parecidas: <b>noa, zoaz, doa</b> se oyen igual; en plural asoma otra vez la <b>-z</b>, <b>doiaz</b> por <i>doaz</i>. Y para lo habitual el bizkaiera prefiere <b>joaten naz</b> y <b>etorten naz</b>.\n\n<b>Un apunte de geografía</b>\nLa <b>azoka</b> más conocida para un bilbaíno es el Mercado de la Ribera, uno de los mercados cubiertos más grandes de Europa. Y si sales de Bilbao hacia Busturialdea, el mercado semanal de los lunes en Gernika es toda una institución.",
       "ejemplos": [
         {
-          "eu": "Gernikati nator.",
-          "es": "Vengo de Gernika. — batua: Gernikatik.",
-          "audio": "unidades/u9/gernikati-nator.mp3"
+          "eu": "Bilboti nator.",
+          "es": "Vengo de Bilbao. — batua: Bilbotik.",
+          "audio": "unidades/u9/bilboti-nator.mp3"
         },
         {
           "eu": "Etxeti urten dot.",
@@ -410,7 +410,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Haiek Gernikara ____.",
+          "pregunta": "Haiek Bilbora ____.",
           "opciones": [
             "goaz",
             "zoazte",
@@ -840,7 +840,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Hura Gernikan ____.",
+          "pregunta": "Hura Bilbon ____.",
           "opciones": [
             "nabil",
             "dabil",
@@ -905,7 +905,7 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Vengo de Gernika.",
+          "es": "Vengo de Bilbao.",
           "respuestas": [
             "gernikatik nator",
             "ni gernikatik nator"

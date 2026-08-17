@@ -312,13 +312,13 @@
       ]
     },
     {
-      "titulo": "Cómo suena esto en Gernika",
+      "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "Aquí el bizkaiera no cambia un detalle: cambia <b>los nombres de los días</b>. Y es de lo primero que descoloca a quien llega con batua aprendido.\n\n<b>astelehena</b> — igual (a veces <i>astelena</i>)\n<b>martitzena</b> — batua: asteartea\n<b>eguaztena</b> — batua: asteazkena\n<b>eguena</b> — batua: osteguna\n<b>barikua</b> — batua: ostirala\n<b>zapatua</b> — batua: larunbata\n<b>domeka</b> — batua: igandea\n\nAsí que «el viernes por la noche» por allí es <b>barikuan gabean</b>, no <i>ostiralean gauean</i>. Los carteles y la prensa usan batua; la gente, en casa, sigue con estos.\n\n<b>gaua → gaba</b>\nLa noche es <b>gaba</b> en bizkaiera, de donde sale el <i>gabon</i> de «buenas noches» (gau on). En batua, <i>gaua</i>.\n\n<b>Ze ordu da?</b>\nEl <i>zer</i> del batua se acorta en <b>ze</b> delante de un nombre: <b>Ze ordu da?</b>, <b>Ze egun da gaur?</b>",
       "ejemplos": [
         {
-          "eu": "Zapatuan Gernikan nago.",
-          "es": "El sábado estoy en Gernika. — batua: Larunbatean.",
-          "audio": "unidades/u7/zapatuan-gernikan-nago.mp3"
+          "eu": "Zapatuan Bilbon nago.",
+          "es": "El sábado estoy en Bilbao. — batua: Larunbatean.",
+          "audio": "unidades/u7/zapatuan-bilbon-nago.mp3"
         },
         {
           "eu": "Ze ordu da?",
@@ -699,11 +699,11 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "El sábado estoy en Gernika.",
-          "eu": "Larunbatean Gernikan nago.",
+          "es": "El sábado estoy en Bilbao.",
+          "eu": "Larunbatean Bilbon nago.",
           "palabras": [
             "Larunbatean",
-            "Gernikan",
+            "Bilbon",
             "nago."
           ]
         },
@@ -1054,7 +1054,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«El sábado» en bizkaiera de Gernika: ____",
+          "pregunta": "«El sábado» en bizkaiera de Bilbao: ____",
           "opciones": [
             "larunbatean",
             "zapatuan",
