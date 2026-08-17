@@ -6,181 +6,41 @@
   "objetivo": "Contar hasta veinte, decir tu edad y usar el verbo «ukan» (tener). Aquí llega el ergativo.",
   "color": "azul",
   "vocabulario": [
-    {
-      "eu": "bat",
-      "es": "uno",
-      "nota": null
-    },
-    {
-      "eu": "bi",
-      "es": "dos",
-      "nota": null
-    },
-    {
-      "eu": "hiru",
-      "es": "tres",
-      "nota": null
-    },
-    {
-      "eu": "lau",
-      "es": "cuatro",
-      "nota": null
-    },
-    {
-      "eu": "bost",
-      "es": "cinco",
-      "nota": null
-    },
-    {
-      "eu": "sei",
-      "es": "seis",
-      "nota": null
-    },
-    {
-      "eu": "zazpi",
-      "es": "siete",
-      "nota": null
-    },
-    {
-      "eu": "zortzi",
-      "es": "ocho",
-      "nota": null
-    },
-    {
-      "eu": "bederatzi",
-      "es": "nueve",
-      "nota": null
-    },
-    {
-      "eu": "hamar",
-      "es": "diez",
-      "nota": null
-    },
-    {
-      "eu": "hamaika",
-      "es": "once",
-      "nota": "También significa «un montón», coloquialmente."
-    },
-    {
-      "eu": "hamabi",
-      "es": "doce",
-      "nota": "hamar + bi"
-    },
-    {
-      "eu": "hamahiru",
-      "es": "trece",
-      "nota": null
-    },
-    {
-      "eu": "hamalau",
-      "es": "catorce",
-      "nota": null
-    },
-    {
-      "eu": "hamabost",
-      "es": "quince",
-      "nota": null
-    },
-    {
-      "eu": "hamasei",
-      "es": "dieciséis",
-      "nota": null
-    },
-    {
-      "eu": "hamazazpi",
-      "es": "diecisiete",
-      "nota": null
-    },
-    {
-      "eu": "hemezortzi",
-      "es": "dieciocho",
-      "nota": "El prefijo cambia a «heme-». También se oye «hamazortzi»."
-    },
-    {
-      "eu": "hemeretzi",
-      "es": "diecinueve",
-      "nota": "heme- + bederatzi, contraído."
-    },
-    {
-      "eu": "hogei",
-      "es": "veinte",
-      "nota": null
-    },
-    {
-      "eu": "dut",
-      "es": "(yo) tengo",
-      "nota": null
-    },
-    {
-      "eu": "duzu",
-      "es": "(tú) tienes",
-      "nota": null
-    },
-    {
-      "eu": "du",
-      "es": "(él/ella) tiene",
-      "nota": null
-    },
-    {
-      "eu": "ditut",
-      "es": "(yo) tengo (varias cosas)",
-      "nota": null
-    },
-    {
-      "eu": "urtea",
-      "es": "el año",
-      "nota": null
-    },
-    {
-      "eu": "anaia",
-      "es": "hermano (de un chico)",
-      "nota": null
-    },
-    {
-      "eu": "arreba",
-      "es": "hermana (de un chico)",
-      "nota": null
-    },
-    {
-      "eu": "neba",
-      "es": "hermano (de una chica)",
-      "nota": "Palabra especialmente viva en Bizkaia."
-    },
-    {
-      "eu": "ahizpa",
-      "es": "hermana (de una chica)",
-      "nota": null
-    },
-    {
-      "eu": "aita",
-      "es": "padre",
-      "nota": null
-    },
-    {
-      "eu": "ama",
-      "es": "madre",
-      "nota": null
-    },
-    {
-      "eu": "semea",
-      "es": "el hijo",
-      "nota": null
-    },
-    {
-      "eu": "alaba",
-      "es": "la hija",
-      "nota": null
-    },
-    {
-      "eu": "txakurra",
-      "es": "el perro",
-      "nota": null
-    },
-    {
-      "eu": "katua",
-      "es": "el gato",
-      "nota": null
-    }
+    { "eu": "bat", "es": "uno", "nota": null, "audio": "unidades/u5/bat.mp3" },
+    { "eu": "bi", "es": "dos", "nota": null, "audio": "unidades/u5/bi.mp3" },
+    { "eu": "hiru", "es": "tres", "nota": null, "audio": "unidades/u5/hiru.mp3" },
+    { "eu": "lau", "es": "cuatro", "nota": null, "audio": "unidades/u5/lau.mp3" },
+    { "eu": "bost", "es": "cinco", "nota": null, "audio": "unidades/u5/bost.mp3" },
+    { "eu": "sei", "es": "seis", "nota": null, "audio": "unidades/u5/sei.mp3" },
+    { "eu": "zazpi", "es": "siete", "nota": null, "audio": "unidades/u5/zazpi.mp3" },
+    { "eu": "zortzi", "es": "ocho", "nota": null, "audio": "unidades/u5/zortzi.mp3" },
+    { "eu": "bederatzi", "es": "nueve", "nota": null, "audio": "unidades/u5/bederatzi.mp3" },
+    { "eu": "hamar", "es": "diez", "nota": null, "audio": "unidades/u5/hamar.mp3" },
+    { "eu": "hamaika", "es": "once", "nota": "También significa «un montón», coloquialmente.", "audio": "unidades/u5/hamaika.mp3" },
+    { "eu": "hamabi", "es": "doce", "nota": "hamar + bi", "audio": "unidades/u5/hamabi.mp3" },
+    { "eu": "hamahiru", "es": "trece", "nota": null, "audio": "unidades/u5/hamahiru.mp3" },
+    { "eu": "hamalau", "es": "catorce", "nota": null, "audio": "unidades/u5/hamalau.mp3" },
+    { "eu": "hamabost", "es": "quince", "nota": null, "audio": "unidades/u5/hamabost.mp3" },
+    { "eu": "hamasei", "es": "dieciséis", "nota": null, "audio": "unidades/u5/hamasei.mp3" },
+    { "eu": "hamazazpi", "es": "diecisiete", "nota": null, "audio": "unidades/u5/hamazazpi.mp3" },
+    { "eu": "hemezortzi", "es": "dieciocho", "nota": "El prefijo cambia a «heme-». También se oye «hamazortzi».", "audio": "unidades/u5/hemezortzi.mp3" },
+    { "eu": "hemeretzi", "es": "diecinueve", "nota": "heme- + bederatzi, contraído.", "audio": "unidades/u5/hemeretzi.mp3" },
+    { "eu": "hogei", "es": "veinte", "nota": null, "audio": "unidades/u5/hogei.mp3" },
+    { "eu": "dut", "es": "(yo) tengo", "nota": null, "audio": "unidades/u5/dut.mp3" },
+    { "eu": "duzu", "es": "(tú) tienes", "nota": null, "audio": "unidades/u5/duzu.mp3" },
+    { "eu": "du", "es": "(él/ella) tiene", "nota": null, "audio": "unidades/u5/du.mp3" },
+    { "eu": "ditut", "es": "(yo) tengo (varias cosas)", "nota": null, "audio": "unidades/u5/ditut.mp3" },
+    { "eu": "urtea", "es": "el año", "nota": null, "audio": "unidades/u5/urtea.mp3" },
+    { "eu": "anaia", "es": "hermano (de un chico)", "nota": null, "audio": "unidades/u5/anaia.mp3" },
+    { "eu": "arreba", "es": "hermana (de un chico)", "nota": null, "audio": "unidades/u5/arreba.mp3" },
+    { "eu": "neba", "es": "hermano (de una chica)", "nota": "Palabra especialmente viva en Bizkaia.", "audio": "unidades/u5/neba.mp3" },
+    { "eu": "ahizpa", "es": "hermana (de una chica)", "nota": null, "audio": "unidades/u5/ahizpa.mp3" },
+    { "eu": "aita", "es": "padre", "nota": null, "audio": "unidades/u5/aita.mp3" },
+    { "eu": "ama", "es": "madre", "nota": null, "audio": "unidades/u5/ama.mp3" },
+    { "eu": "semea", "es": "el hijo", "nota": null, "audio": "unidades/u5/semea.mp3" },
+    { "eu": "alaba", "es": "la hija", "nota": null, "audio": "unidades/u5/alaba.mp3" },
+    { "eu": "txakurra", "es": "el perro", "nota": null, "audio": "unidades/u5/txakurra.mp3" },
+    { "eu": "katua", "es": "el gato", "nota": null, "audio": "unidades/u5/katua.mp3" }
   ],
   "gramatica": [
     {

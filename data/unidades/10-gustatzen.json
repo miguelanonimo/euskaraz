@@ -6,176 +6,40 @@
   "objetivo": "Decir lo que te gusta y lo que no, y aprender a marcar «a quién».",
   "color": "morado",
   "vocabulario": [
-    {
-      "eu": "gustatu",
-      "es": "gustar",
-      "nota": null
-    },
-    {
-      "eu": "gustatzen zait",
-      "es": "me gusta",
-      "nota": null
-    },
-    {
-      "eu": "niri",
-      "es": "a mí",
-      "nota": null
-    },
-    {
-      "eu": "zuri",
-      "es": "a ti",
-      "nota": null
-    },
-    {
-      "eu": "hari",
-      "es": "a él, a ella",
-      "nota": null
-    },
-    {
-      "eu": "guri",
-      "es": "a nosotros",
-      "nota": null
-    },
-    {
-      "eu": "zuei",
-      "es": "a vosotros",
-      "nota": null
-    },
-    {
-      "eu": "haiei",
-      "es": "a ellos",
-      "nota": null
-    },
-    {
-      "eu": "asko",
-      "es": "mucho",
-      "nota": null
-    },
-    {
-      "eu": "gutxi",
-      "es": "poco",
-      "nota": null
-    },
-    {
-      "eu": "pixka bat",
-      "es": "un poco",
-      "nota": null
-    },
-    {
-      "eu": "batere ez",
-      "es": "nada en absoluto",
-      "nota": "Se usa en frases negativas: «ez zait batere gustatzen»."
-    },
-    {
-      "eu": "eman",
-      "es": "dar",
-      "nota": null
-    },
-    {
-      "eu": "esan",
-      "es": "decir",
-      "nota": null
-    },
-    {
-      "eu": "galdetu",
-      "es": "preguntar",
-      "nota": null
-    },
-    {
-      "eu": "erantzun",
-      "es": "responder",
-      "nota": null
-    },
-    {
-      "eu": "lagundu",
-      "es": "ayudar",
-      "nota": "Se construye con dativo: «lagundu diot»."
-    },
-    {
-      "eu": "iruditzen zait",
-      "es": "me parece",
-      "nota": null
-    },
-    {
-      "eu": "interesatzen zait",
-      "es": "me interesa",
-      "nota": null
-    },
-    {
-      "eu": "axola zait",
-      "es": "me importa",
-      "nota": null
-    },
-    {
-      "eu": "kirola",
-      "es": "el deporte",
-      "nota": null
-    },
-    {
-      "eu": "futbola",
-      "es": "el fútbol",
-      "nota": null
-    },
-    {
-      "eu": "pilota",
-      "es": "la pelota",
-      "nota": "El deporte y el objeto, las dos cosas."
-    },
-    {
-      "eu": "dantza",
-      "es": "la danza, el baile",
-      "nota": null
-    },
-    {
-      "eu": "zinema",
-      "es": "el cine",
-      "nota": null
-    },
-    {
-      "eu": "antzerkia",
-      "es": "el teatro",
-      "nota": null
-    },
-    {
-      "eu": "janaria",
-      "es": "la comida (en general)",
-      "nota": "«bazkaria» es la del mediodía; «janaria», la comida como sustancia."
-    },
-    {
-      "eu": "edaria",
-      "es": "la bebida",
-      "nota": null
-    },
-    {
-      "eu": "euria",
-      "es": "la lluvia",
-      "nota": null
-    },
-    {
-      "eu": "eguzkia",
-      "es": "el sol",
-      "nota": null
-    },
-    {
-      "eu": "negua",
-      "es": "el invierno",
-      "nota": null
-    },
-    {
-      "eu": "uda",
-      "es": "el verano",
-      "nota": null
-    },
-    {
-      "eu": "gauza",
-      "es": "la cosa",
-      "nota": null
-    },
-    {
-      "eu": "guztia",
-      "es": "todo",
-      "nota": null
-    }
+    { "eu": "gustatu", "es": "gustar", "nota": null, "audio": "unidades/u10/gustatu.mp3" },
+    { "eu": "gustatzen zait", "es": "me gusta", "nota": null, "audio": "unidades/u10/gustatzen-zait.mp3" },
+    { "eu": "niri", "es": "a mí", "nota": null, "audio": "unidades/u10/niri.mp3" },
+    { "eu": "zuri", "es": "a ti", "nota": null, "audio": "unidades/u10/zuri.mp3" },
+    { "eu": "hari", "es": "a él, a ella", "nota": null, "audio": "unidades/u10/hari.mp3" },
+    { "eu": "guri", "es": "a nosotros", "nota": null, "audio": "unidades/u10/guri.mp3" },
+    { "eu": "zuei", "es": "a vosotros", "nota": null, "audio": "unidades/u10/zuei.mp3" },
+    { "eu": "haiei", "es": "a ellos", "nota": null, "audio": "unidades/u10/haiei.mp3" },
+    { "eu": "asko", "es": "mucho", "nota": null, "audio": "unidades/u10/asko.mp3" },
+    { "eu": "gutxi", "es": "poco", "nota": null, "audio": "unidades/u10/gutxi.mp3" },
+    { "eu": "pixka bat", "es": "un poco", "nota": null, "audio": "unidades/u10/pixka-bat.mp3" },
+    { "eu": "batere ez", "es": "nada en absoluto", "nota": "Se usa en frases negativas: «ez zait batere gustatzen».", "audio": "unidades/u10/batere-ez.mp3" },
+    { "eu": "eman", "es": "dar", "nota": null, "audio": "unidades/u10/eman.mp3" },
+    { "eu": "esan", "es": "decir", "nota": null, "audio": "unidades/u10/esan.mp3" },
+    { "eu": "galdetu", "es": "preguntar", "nota": null, "audio": "unidades/u10/galdetu.mp3" },
+    { "eu": "erantzun", "es": "responder", "nota": null, "audio": "unidades/u10/erantzun.mp3" },
+    { "eu": "lagundu", "es": "ayudar", "nota": "Se construye con dativo: «lagundu diot».", "audio": "unidades/u10/lagundu.mp3" },
+    { "eu": "iruditzen zait", "es": "me parece", "nota": null, "audio": "unidades/u10/iruditzen-zait.mp3" },
+    { "eu": "interesatzen zait", "es": "me interesa", "nota": null, "audio": "unidades/u10/interesatzen-zait.mp3" },
+    { "eu": "axola zait", "es": "me importa", "nota": null, "audio": "unidades/u10/axola-zait.mp3" },
+    { "eu": "kirola", "es": "el deporte", "nota": null, "audio": "unidades/u10/kirola.mp3" },
+    { "eu": "futbola", "es": "el fútbol", "nota": null, "audio": "unidades/u10/futbola.mp3" },
+    { "eu": "pilota", "es": "la pelota", "nota": "El deporte y el objeto, las dos cosas.", "audio": "unidades/u10/pilota.mp3" },
+    { "eu": "dantza", "es": "la danza, el baile", "nota": null, "audio": "unidades/u10/dantza.mp3" },
+    { "eu": "zinema", "es": "el cine", "nota": null, "audio": "unidades/u10/zinema.mp3" },
+    { "eu": "antzerkia", "es": "el teatro", "nota": null, "audio": "unidades/u10/antzerkia.mp3" },
+    { "eu": "janaria", "es": "la comida (en general)", "nota": "«bazkaria» es la del mediodía; «janaria», la comida como sustancia.", "audio": "unidades/u10/janaria.mp3" },
+    { "eu": "edaria", "es": "la bebida", "nota": null, "audio": "unidades/u10/edaria.mp3" },
+    { "eu": "euria", "es": "la lluvia", "nota": null, "audio": "unidades/u10/euria.mp3" },
+    { "eu": "eguzkia", "es": "el sol", "nota": null, "audio": "unidades/u10/eguzkia.mp3" },
+    { "eu": "negua", "es": "el invierno", "nota": null, "audio": "unidades/u10/negua.mp3" },
+    { "eu": "uda", "es": "el verano", "nota": null, "audio": "unidades/u10/uda.mp3" },
+    { "eu": "gauza", "es": "la cosa", "nota": null, "audio": "unidades/u10/gauza.mp3" },
+    { "eu": "guztia", "es": "todo", "nota": null, "audio": "unidades/u10/guztia.mp3" }
   ],
   "gramatica": [
     {

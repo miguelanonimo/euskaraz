@@ -6,176 +6,40 @@
   "objetivo": "Contar lo que pasó ayer, el año pasado o cuando eras pequeño.",
   "color": "ocre",
   "vocabulario": [
-    {
-      "eu": "nintzen",
-      "es": "(yo) era, fui",
-      "nota": null
-    },
-    {
-      "eu": "zinen",
-      "es": "(tú) eras, fuiste",
-      "nota": null
-    },
-    {
-      "eu": "zen",
-      "es": "(él/ella) era, fue",
-      "nota": null
-    },
-    {
-      "eu": "ginen",
-      "es": "(nosotros) éramos",
-      "nota": null
-    },
-    {
-      "eu": "zineten",
-      "es": "(vosotros) erais",
-      "nota": null
-    },
-    {
-      "eu": "ziren",
-      "es": "(ellos) eran",
-      "nota": null
-    },
-    {
-      "eu": "nuen",
-      "es": "(yo) tenía, tuve",
-      "nota": null
-    },
-    {
-      "eu": "zenuen",
-      "es": "(tú) tenías",
-      "nota": null
-    },
-    {
-      "eu": "zuen",
-      "es": "(él/ella) tenía",
-      "nota": null
-    },
-    {
-      "eu": "genuen",
-      "es": "(nosotros) teníamos",
-      "nota": null
-    },
-    {
-      "eu": "zuten",
-      "es": "(ellos) tenían",
-      "nota": null
-    },
-    {
-      "eu": "nengoen",
-      "es": "(yo) estaba",
-      "nota": null
-    },
-    {
-      "eu": "zegoen",
-      "es": "(él/ella) estaba",
-      "nota": null
-    },
-    {
-      "eu": "lehen",
-      "es": "antes",
-      "nota": null
-    },
-    {
-      "eu": "orduan",
-      "es": "entonces",
-      "nota": null
-    },
-    {
-      "eu": "gero",
-      "es": "luego",
-      "nota": "Ya lo viste como «después»; aquí encadena hechos pasados."
-    },
-    {
-      "eu": "herenegun",
-      "es": "anteayer",
-      "nota": null
-    },
-    {
-      "eu": "iaz",
-      "es": "el año pasado",
-      "nota": null
-    },
-    {
-      "eu": "aurten",
-      "es": "este año",
-      "nota": null
-    },
-    {
-      "eu": "joan den astean",
-      "es": "la semana pasada",
-      "nota": "«joan den» es «la que se ha ido»."
-    },
-    {
-      "eu": "duela bi urte",
-      "es": "hace dos años",
-      "nota": "«duela» + el tiempo: duela hilabete, duela urtebete."
-    },
-    {
-      "eu": "txikitan",
-      "es": "de pequeño",
-      "nota": "De «txiki» + esa -tan de plural que ya conoces."
-    },
-    {
-      "eu": "garai hartan",
-      "es": "en aquella época",
-      "nota": null
-    },
-    {
-      "eu": "jaio",
-      "es": "nacer",
-      "nota": null
-    },
-    {
-      "eu": "ezagutu",
-      "es": "conocer",
-      "nota": null
-    },
-    {
-      "eu": "gogoratu",
-      "es": "recordar",
-      "nota": null
-    },
-    {
-      "eu": "ahaztu",
-      "es": "olvidar",
-      "nota": null
-    },
-    {
-      "eu": "hasi",
-      "es": "empezar",
-      "nota": null
-    },
-    {
-      "eu": "bukatu",
-      "es": "terminar",
-      "nota": "También «amaitu»."
-    },
-    {
-      "eu": "gertatu",
-      "es": "ocurrir, pasar",
-      "nota": null
-    },
-    {
-      "eu": "oporrak",
-      "es": "las vacaciones",
-      "nota": "Siempre en plural."
-    },
-    {
-      "eu": "jaiak",
-      "es": "las fiestas",
-      "nota": "Las de un pueblo. En singular, «jaia» es la fiesta suelta."
-    },
-    {
-      "eu": "aspaldi",
-      "es": "hace mucho tiempo",
-      "nota": null
-    },
-    {
-      "eu": "berriro",
-      "es": "otra vez",
-      "nota": null
-    }
+    { "eu": "nintzen", "es": "(yo) era, fui", "nota": null, "audio": "unidades/u11/nintzen.mp3" },
+    { "eu": "zinen", "es": "(tú) eras, fuiste", "nota": null, "audio": "unidades/u11/zinen.mp3" },
+    { "eu": "zen", "es": "(él/ella) era, fue", "nota": null, "audio": "unidades/u11/zen.mp3" },
+    { "eu": "ginen", "es": "(nosotros) éramos", "nota": null, "audio": "unidades/u11/ginen.mp3" },
+    { "eu": "zineten", "es": "(vosotros) erais", "nota": null, "audio": "unidades/u11/zineten.mp3" },
+    { "eu": "ziren", "es": "(ellos) eran", "nota": null, "audio": "unidades/u11/ziren.mp3" },
+    { "eu": "nuen", "es": "(yo) tenía, tuve", "nota": null, "audio": "unidades/u11/nuen.mp3" },
+    { "eu": "zenuen", "es": "(tú) tenías", "nota": null, "audio": "unidades/u11/zenuen.mp3" },
+    { "eu": "zuen", "es": "(él/ella) tenía", "nota": null, "audio": "unidades/u11/zuen.mp3" },
+    { "eu": "genuen", "es": "(nosotros) teníamos", "nota": null, "audio": "unidades/u11/genuen.mp3" },
+    { "eu": "zuten", "es": "(ellos) tenían", "nota": null, "audio": "unidades/u11/zuten.mp3" },
+    { "eu": "nengoen", "es": "(yo) estaba", "nota": null, "audio": "unidades/u11/nengoen.mp3" },
+    { "eu": "zegoen", "es": "(él/ella) estaba", "nota": null, "audio": "unidades/u11/zegoen.mp3" },
+    { "eu": "lehen", "es": "antes", "nota": null, "audio": "unidades/u11/lehen.mp3" },
+    { "eu": "orduan", "es": "entonces", "nota": null, "audio": "unidades/u11/orduan.mp3" },
+    { "eu": "gero", "es": "luego", "nota": "Ya lo viste como «después»; aquí encadena hechos pasados.", "audio": "unidades/u11/gero.mp3" },
+    { "eu": "herenegun", "es": "anteayer", "nota": null, "audio": "unidades/u11/herenegun.mp3" },
+    { "eu": "iaz", "es": "el año pasado", "nota": null, "audio": "unidades/u11/iaz.mp3" },
+    { "eu": "aurten", "es": "este año", "nota": null, "audio": "unidades/u11/aurten.mp3" },
+    { "eu": "joan den astean", "es": "la semana pasada", "nota": "«joan den» es «la que se ha ido».", "audio": "unidades/u11/joan-den-astean.mp3" },
+    { "eu": "duela bi urte", "es": "hace dos años", "nota": "«duela» + el tiempo: duela hilabete, duela urtebete.", "audio": "unidades/u11/duela-bi-urte.mp3" },
+    { "eu": "txikitan", "es": "de pequeño", "nota": "De «txiki» + esa -tan de plural que ya conoces.", "audio": "unidades/u11/txikitan.mp3" },
+    { "eu": "garai hartan", "es": "en aquella época", "nota": null, "audio": "unidades/u11/garai-hartan.mp3" },
+    { "eu": "jaio", "es": "nacer", "nota": null, "audio": "unidades/u11/jaio.mp3" },
+    { "eu": "ezagutu", "es": "conocer", "nota": null, "audio": "unidades/u11/ezagutu.mp3" },
+    { "eu": "gogoratu", "es": "recordar", "nota": null, "audio": "unidades/u11/gogoratu.mp3" },
+    { "eu": "ahaztu", "es": "olvidar", "nota": null, "audio": "unidades/u11/ahaztu.mp3" },
+    { "eu": "hasi", "es": "empezar", "nota": null, "audio": "unidades/u11/hasi.mp3" },
+    { "eu": "bukatu", "es": "terminar", "nota": "También «amaitu».", "audio": "unidades/u11/bukatu.mp3" },
+    { "eu": "gertatu", "es": "ocurrir, pasar", "nota": null, "audio": "unidades/u11/gertatu.mp3" },
+    { "eu": "oporrak", "es": "las vacaciones", "nota": "Siempre en plural.", "audio": "unidades/u11/oporrak.mp3" },
+    { "eu": "jaiak", "es": "las fiestas", "nota": "Las de un pueblo. En singular, «jaia» es la fiesta suelta.", "audio": "unidades/u11/jaiak.mp3" },
+    { "eu": "aspaldi", "es": "hace mucho tiempo", "nota": null, "audio": "unidades/u11/aspaldi.mp3" },
+    { "eu": "berriro", "es": "otra vez", "nota": null, "audio": "unidades/u11/berriro.mp3" }
   ],
   "gramatica": [
     {
