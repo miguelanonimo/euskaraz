@@ -1,0 +1,12 @@
+{
+  "name": "generar-audio",
+  "private": true,
+  "type": "module",
+  "description": "Script de autoría (se ejecuta una vez por unidad, nunca en producción): genera los mp3 de vocabulario con Google Cloud Text-to-Speech. Ver docs/brief.md sección 6.",
+  "scripts": {
+    "generar": "node generar.mjs"
+  },
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^5.3.0"
+  }
+}

@@ -19,6 +19,9 @@
   var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRlb3lrZXR3Znl4amhrb3ltcGNqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkwMzU1NTksImV4cCI6MjA5NDYxMTU1OX0._ilcBB8IakFz4-iDwWXdXArL2h2Nz00OSMnc6a1jBjg';
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   var usuarioId = null;
+
+  // Bucket público de pronunciaciones (Cloud TTS, ver docs/brief.md sección 6).
+  var AUDIO_BASE = SUPABASE_URL + '/storage/v1/object/public/euskaraz-audio/';
   var GUARDAR_ESPERA_MS = 1500;
   var guardarTimer = null;
 
@@ -185,6 +188,32 @@
 
   function vibrar(ms) {
     if (navigator.vibrate) { try { navigator.vibrate(ms); } catch (e) {} }
+  }
+
+  // ─────────── Audio (pronunciación) ───────────
+
+  var reproductor = new Audio();
+
+  function botonAudio(v) {
+    if (!v.audio) return '';
+    return '<button class="vitem__play" type="button" data-audio="' + esc(v.audio) + '" aria-label="Escuchar «' + esc(v.eu) + '»">' +
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg>' +
+      '</button>';
+  }
+
+  function reproducir(ruta) {
+    reproductor.src = AUDIO_BASE + ruta;
+    reproductor.currentTime = 0;
+    reproductor.play().catch(function () {});
+  }
+
+  // Un solo listener delegado sirve a vocabulario y diccionario, que
+  // comparten la misma estructura .vitem.
+  function activarAudioEnLista(nodo) {
+    nodo.addEventListener('click', function (e) {
+      var btn = e.target.closest('.vitem__play');
+      if (btn) reproducir(btn.dataset.audio);
+    });
   }
 
   // ─────────── Persistencia ───────────
@@ -549,7 +578,7 @@
       var nota = v.nota ? '<span class="vitem__nota">' + esc(v.nota) + '</span>' : '';
       return '<div class="vitem">' +
         '<span class="vitem__row">' +
-          '<span class="vitem__eu">' + esc(v.eu) + '</span>' +
+          '<span class="vitem__eu">' + esc(v.eu) + botonAudio(v) + '</span>' +
           '<span class="vitem__es">' + esc(v.es) + '</span>' +
         '</span>' + nota +
       '</div>';
@@ -717,7 +746,7 @@
         if (vistas[clave]) return;
         vistas[clave] = true;
         DICC.push({
-          eu: v.eu, es: v.es, nota: v.nota,
+          eu: v.eu, es: v.es, nota: v.nota, audio: v.audio,
           unidad: u.numero,
           busca: plegar(v.eu) + ' ' + plegar(v.es) + ' ' + plegar(v.nota || '')
         });
@@ -748,7 +777,7 @@
       var nota = v.nota ? '<span class="vitem__nota">' + esc(v.nota) + '</span>' : '';
       return '<div class="vitem">' +
         '<span class="vitem__row">' +
-          '<span class="vitem__eu">' + esc(v.eu) + '</span>' +
+          '<span class="vitem__eu">' + esc(v.eu) + botonAudio(v) + '</span>' +
           '<span class="vitem__es">' + esc(v.es) + '</span>' +
         '</span>' +
         '<span class="vitem__unidad">unidad ' + esc(v.unidad) + '</span>' +
@@ -1175,6 +1204,8 @@
   el.dictInput.addEventListener('input', function () {
     pintarDiccionario(this.value);
   });
+  activarAudioEnLista(el.vocabContent);
+  activarAudioEnLista(el.dictContent);
 
   $('goGramatica').addEventListener('click', pantallaGramatica);
   $('goVocab').addEventListener('click', pantallaVocabulario);

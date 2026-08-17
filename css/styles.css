@@ -549,11 +549,27 @@ svg{
   align-items: baseline;
 }
 .vitem__eu{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: var(--t-m);
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 .vitem__es{ font-size: var(--t-m); color: var(--tinta-70); }
+
+.vitem__play{
+  flex: 0 0 auto;
+  width: 22px; height: 22px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--tinta-45);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.vitem__play:active{ color: var(--acento); }
+.vitem__play svg{ stroke-width: 2; }
 .vitem__nota{
   display: block;
   margin-top: var(--u);
