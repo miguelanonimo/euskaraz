@@ -265,7 +265,7 @@
 
   function progUnidad(id) {
     if (!progreso.unidades[id]) {
-      progreso.unidades[id] = { visitada: false, completada: false, mejor: 0, intentos: 0 };
+      progreso.unidades[id] = { visitada: false, vocab: false, completada: false, mejor: 0, intentos: 0 };
     }
     return progreso.unidades[id];
   }
@@ -424,7 +424,7 @@
     CURSO.unidades.forEach(function (u) {
       var p = progUnidad(u.id);
       if (p.completada) hechas++;
-      if (p.visitada) palabras += u.vocabulario.length;
+      if (p.vocab) palabras += u.vocabulario.length;
     });
     el.statUnidades.textContent = hechas;
     el.statPalabras.textContent = palabras;
@@ -541,6 +541,8 @@
 
   function pantallaVocabulario() {
     var u = estado.unidad;
+    progUnidad(u.id).vocab = true;
+    guardarProgreso();
     el.topbarTitle.textContent = 'Vocabulario · ' + u.titulo;
 
     el.vocabContent.innerHTML = '<div class="vocabgroup">' + u.vocabulario.map(function (v) {
@@ -599,13 +601,14 @@
 
   // ─────────── Repaso de vocabulario ───────────
 
-  /* Solo palabras de unidades que ya has abierto, sin repetir la misma
-     palabra en euskera aunque salga en dos unidades. Se guarda la unidad
-     de origen para poder sacar distractores de la misma lección. */
+  /* Solo palabras de unidades cuyo vocabulario ya has abierto (no basta
+     con haber entrado a la portada), sin repetir la misma palabra en
+     euskera aunque salga en dos unidades. Se guarda la unidad de origen
+     para poder sacar distractores de la misma lección. */
   function fondoVocabulario() {
     var vistas = {}, fondo = [];
     CURSO.unidades.forEach(function (u) {
-      if (!progUnidad(u.id).visitada) return;
+      if (!progUnidad(u.id).vocab) return;
       u.vocabulario.forEach(function (v) {
         var k = normalizar(v.eu);
         if (vistas[k]) return;

@@ -262,9 +262,10 @@ svg{
 .stat:first-child{ border-left: 0; padding-left: 0; }
 .stat__num{
   display: block;
+  font-family: var(--f-display);
   font-size: var(--t-xl);
-  font-weight: 600;
-  letter-spacing: -0.035em;
+  font-weight: 400;
+  letter-spacing: -1%;
   line-height: 1;
 }
 .stat__num small{ font-size: 0.55em; font-weight: 500; letter-spacing: -0.01em; }
