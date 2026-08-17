@@ -282,6 +282,8 @@ svg{
 
 .section-head{
   margin: 0 0 calc(var(--u) * 2);
+  padding-bottom: calc(var(--u) * 2);
+  border-bottom: 1px solid var(--filete-alto);
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
@@ -290,7 +292,7 @@ svg{
 }
 
 /* Lista de unidades: filas separadas por filete, sin cajas */
-.unitlist{ list-style: none; margin: 0 0 calc(var(--u) * 8); padding: 0; border-top: 1px solid var(--filete-alto); }
+.unitlist{ list-style: none; margin: 0 0 calc(var(--u) * 8); padding: 0; }
 .unitlist li{ border-bottom: 1px solid var(--filete); }
 .unitlist li:last-child{ border-bottom: 0; }
 
