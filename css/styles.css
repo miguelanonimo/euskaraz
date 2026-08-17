@@ -263,7 +263,7 @@ svg{
 .stat__num{
   display: block;
   font-family: var(--f-display);
-  font-size: var(--t-xl);
+  font-size: var(--t-2xl);
   font-weight: 400;
   letter-spacing: -1%;
   line-height: 1;
