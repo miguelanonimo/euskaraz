@@ -133,3 +133,25 @@ comparten exactamente la misma forma en euskera con una palabra ya
 narrada del dataset bizkaiera (ninguna necesitaba locución nueva), así
 que se les asignó la misma ruta de mp3 ya subida a `euskaraz-audio` en
 vez de generar audio nuevo con Cloud TTS.
+
+## 2026-08-18 — Kaixo/aupa en gernikés, con el mismo esquema batua/variante
+
+El dataset de Ric tenía «kaixo» y «aupa» como dos entradas de
+vocabulario sueltas, así que en el diccionario se veían como dos
+palabras normales, sin la indentación ni la etiqueta BATUA/BIZKAIERA
+que sí tiene el par en bizkaiera. Anidado «aupa» como `variantes` de
+«kaixo» también en `unidades-gernikes/01-agurrak.json`, igual que en
+bizkaiera — el único par de este tipo que existía suelto en gernikés
+(«zelan zagoz?» no tiene entrada de vocabulario propia ahí, solo
+aparece mencionado dentro de una nota).
+
+## 2026-08-18 — Audio al acertar en los ejercicios de opción
+
+Al elegir la opción correcta en un ejercicio de tipo «opción» (incluido
+«¿cuál está bien escrita?» del repaso de vocabulario), suena la
+pronunciación de la palabra en el momento de tocarla, no hace falta
+esperar a comprobar. Busca el audio por el texto exacto de la opción
+contra todo el vocabulario del curso (`audioDePalabra`), así que
+funciona igual para las frases de los ejercicios de unidad que para las
+palabras del repaso — si el texto no tiene audio narrado (por ejemplo,
+una opción en castellano), simplemente no suena nada.

@@ -11,14 +11,17 @@
       "es": "hola",
       "nota": "Vale a cualquier hora. Informal pero muy común.",
       "categoria": "otros",
-      "audio": "unidades/u1/kaixo.mp3"
-    },
-    {
-      "eu": "aupa",
-      "es": "hola (informal)",
-      "nota": "Muy usado en Bizkaia entre conocidos.",
-      "categoria": "otros",
-      "audio": "unidades/u1/aupa.mp3"
+      "audio": "unidades/u1/kaixo.mp3",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "aupa",
+          "nota": "Muy usado en Bizkaia entre conocidos.",
+          "categoria": "otros",
+          "audio": "unidades/u1/aupa.mp3",
+          "registro": "bizkaiera"
+        }
+      ]
     },
     {
       "eu": "egun on",

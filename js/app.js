@@ -1023,6 +1023,21 @@
   // ─────────── Pantalla: diccionario ───────────
 
   var DICC = null;
+  var AUDIO_POR_PALABRA = null;
+
+  /* Ruta de audio de una palabra o frase en euskera ya narrada,
+     buscando por texto exacto (normalizado) en el vocabulario del
+     curso. Se usa para poner voz a la opción correcta al elegirla en
+     un ejercicio, sin duplicar la ruta en cada sitio que la necesita. */
+  function audioDePalabra(texto) {
+    if (!AUDIO_POR_PALABRA) {
+      AUDIO_POR_PALABRA = {};
+      diccionario().forEach(function (v) {
+        if (v.audio) AUDIO_POR_PALABRA[normalizar(v.eu)] = v.audio;
+      });
+    }
+    return AUDIO_POR_PALABRA[normalizar(texto)];
+  }
 
   /* Todo el vocabulario del curso en una sola lista, ordenada
      alfabéticamente por la palabra en euskera. Si la misma palabra
@@ -1220,6 +1235,10 @@
       btn.setAttribute('aria-pressed', 'true');
       estado.sel = parseInt(btn.dataset.i, 10);
       el.btnCheck.disabled = false;
+      if (estado.sel === ej.correcta) {
+        var audio = audioDePalabra(ej.opciones[ej.correcta]);
+        if (audio) reproducir(audio);
+      }
     });
   }
 
@@ -1782,8 +1801,9 @@
     MODO_DIALECTO = modo;
     try { localStorage.setItem(CLAVE_DIALECTO, modo); } catch (e) {}
     pintarDialecto();
-    DICC = null;    // el diccionario se reconstruye del CURSO nuevo
-    GRAFIAS = null; // y con él, las grafías conocidas para las erratas de ortografía
+    DICC = null;             // el diccionario se reconstruye del CURSO nuevo
+    GRAFIAS = null;          // y con él, las grafías conocidas para las erratas de ortografía
+    AUDIO_POR_PALABRA = null; // y el mapa de audio por palabra, para no arrastrar rutas viejas
     cargarCurso().then(function (curso) {
       CURSO = curso;
       var pantallaActual = estado.pantalla;
