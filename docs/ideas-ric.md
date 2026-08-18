@@ -36,6 +36,23 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
     Vocabulario/Diccionario (`vitem__play`, `js/app.js` ~línea 216):
     se trataría de reutilizarlo en los ejercicios.
 
+### Vocabulario general más rico que el de las unidades
+
+- **2026-08-18 · Propuesta de Ric.** Que el Vocabulario no se limite a las
+  palabras que aparecen en las unidades: al estudiar y repasar, ir
+  descubriendo palabras nuevas. Cuestiones a decidir con Miguel:
+  - **Dónde viven esas palabras extra.** Hoy todo el vocabulario sale de
+    `data/unidades/*.json`; haría falta una fuente aparte (p. ej. un
+    `data/vocabulario-extra.json` por temas o niveles) que el motor mezcle
+    en el repaso y el diccionario.
+  - **Cómo entran al repaso.** ¿Aparecen solas poco a poco (el sistema de
+    repaso ya sabe dosificar lo nuevo), o hay que "desbloquearlas" por
+    unidad/tema para no soltar palabras sin contexto?
+  - **Nivel y criterio.** Mantener el criterio A1/HABE del brief y el
+    esquema batua+bizkaiera (`registro`/`variantes`); cada palabra nueva
+    necesita también su mp3 (el pipeline de TTS ya existe, así que es
+    asumible).
+
 ## Acordadas y en marcha
 
 ## Implementadas
