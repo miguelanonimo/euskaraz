@@ -1172,6 +1172,11 @@
     else if (ratio >= 0.7)  { titulo = 'Ondo!';     sub = 'Bien. Unidad superada.'; }
     else                    { titulo = 'Ia-ia…';    sub = 'Casi. Repasa la gramática y vuelve a intentarlo.'; }
 
+    // Verde para las tres cabeceras positivas; la de "casi" se queda
+    // neutra — no es un fallo, es ánimo para seguir, no toca marcarla
+    // en rojo como si algo hubiera ido mal.
+    var tituloBien = titulo !== 'Ia-ia…';
+
     // Tras el vocabulario, la lista de lo fallado: es lo único que hay
     // que mirar antes de cerrar, y evita ir a buscarlo al diccionario.
     var repaso = '';
@@ -1203,11 +1208,11 @@
     el.topbarTitle.textContent = 'Resultado';
     el.resultContent.innerHTML =
       '<div class="result__mark"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>' +
-      '<h1 class="result__title">' + esc(titulo) + '</h1>' +
+      '<h1 class="result__title' + (tituloBien ? ' es-bien' : '') + '">' + esc(titulo) + '</h1>' +
       '<p class="result__sub">' + esc(sub) + '</p>' +
       '<div class="result__score">' +
-        '<div class="scorebox scorebox--ok"><span class="scorebox__num">' + estado.aciertos + '</span><span class="scorebox__lbl">aciertos</span></div>' +
-        '<div class="scorebox scorebox--mal"><span class="scorebox__num">' + estado.fallos + '</span><span class="scorebox__lbl">fallos</span></div>' +
+        '<div class="scorebox' + (estado.aciertos > 0 ? ' scorebox--ok' : '') + '"><span class="scorebox__num">' + estado.aciertos + '</span><span class="scorebox__lbl">aciertos</span></div>' +
+        '<div class="scorebox' + (estado.fallos > 0 ? ' scorebox--mal' : '') + '"><span class="scorebox__num">' + estado.fallos + '</span><span class="scorebox__lbl">fallos</span></div>' +
         '<div class="scorebox"><span class="scorebox__num">' + Math.round(ratio * 100) + '</span><span class="scorebox__lbl">por ciento</span></div>' +
       '</div>' +
       repaso +

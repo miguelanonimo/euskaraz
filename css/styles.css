@@ -30,7 +30,7 @@
 
 :root{
   /* ── Color ──────────────────────────────────────────────
-     Papel, tinta y un rojo. Nada más. Los grises son la
+     Papel, tinta, un rojo y un verde. Los grises son la
      misma tinta rebajada, para que todo case.               */
   --papel:      #f2f0ec;
   --papel-alto: #ffffff;
@@ -44,8 +44,15 @@
   --acento:     #d8321b;
   --acento-10:  #fbeae7;
 
-  --ok:         #161513;
-  --ok-fondo:   #e8e6e0;
+  /* Acierto: dos tonos del mismo verde, no uno — #0caa39 contrasta 2.7
+     sobre --papel (justo para texto grande, tamaño 30px+ o filetes/
+     barras donde el tamaño ya hace de contraste); #09852d contrasta
+     4.2, igual que el rojo, para texto pequeño (el ✓, "Oso ondo!",
+     cifras, botones). Aportado por Ric — ver docs/brief.md. */
+  --bien:       #0caa39;
+  --bien-txt:   #09852d;
+  --bien-10:    #e6f4ea;
+
   --mal:        #d8321b;
   --mal-fondo:  #fbeae7;
 
@@ -338,9 +345,9 @@ svg{
   color: var(--tinta-45);
   font-variant-numeric: tabular-nums;
 }
-.unitcard__badge svg{ width: 15px; height: 15px; stroke-width: 2.4; color: var(--acento); }
+.unitcard__badge svg{ width: 15px; height: 15px; stroke-width: 2.4; color: var(--bien-txt); }
 .unitcard__badge--activa{ color: var(--progreso-empezada); }
-.unitcard__badge--ok{ color: var(--acento); }
+.unitcard__badge--ok{ color: var(--bien-txt); }
 
 .unitcard__body{ min-width: 0; }
 .unitcard__title{
@@ -365,7 +372,7 @@ svg{
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--acento);
+  color: var(--bien-txt);
 }
 .unitcard__meta--pend{ color: var(--tinta-45); }
 .unitcard__meta svg{ display: none; }
@@ -711,9 +718,11 @@ svg{
 .opt[aria-pressed="true"] .opt__key{ color: rgba(242,240,236,.55); }
 .opt.is-ok{
   background: var(--tinta); color: var(--papel); padding-left: var(--u);
-  box-shadow: inset 3px 0 0 var(--acento);
+  box-shadow: inset 3px 0 0 var(--bien);
 }
-.opt.is-ok .opt__key{ color: var(--acento); }
+/* Sobre fondo --tinta (oscuro), no sobre --papel: aquí toca --bien
+   (el tono claro), --bien-txt se apagaría contra un fondo oscuro. */
+.opt.is-ok .opt__key{ color: var(--bien); }
 .opt.is-mal{
   background: transparent; color: var(--tinta-45);
   text-decoration: line-through;
@@ -750,8 +759,8 @@ svg{
 .pair--es{ color: var(--tinta-70); }
 .pair[aria-pressed="true"]{ background: var(--tinta); color: var(--papel); }
 .pair.is-ok{
-  background: var(--ok-fondo);
-  color: var(--tinta-45);
+  background: var(--bien-10);
+  color: var(--bien-txt);
   opacity: .5;
   pointer-events: none;
 }
@@ -866,6 +875,7 @@ svg{
 }
 
 .btn--feedback{ background: var(--tinta); color: var(--papel); border-color: var(--tinta); }
+.is-ok-fb .btn--feedback{ background: var(--bien-txt); border-color: var(--bien-txt); }
 .is-mal-fb .btn--feedback{ background: var(--acento); border-color: var(--acento); }
 
 /* ═══════════ FEEDBACK ═══════════ */
@@ -878,6 +888,7 @@ svg{
   animation: sube .22s cubic-bezier(.2,.8,.3,1) both;
 }
 .feedback[hidden]{ display: none; }
+.feedback.is-ok-fb{ border-top-color: var(--bien); }
 .feedback.is-mal-fb{ border-top-color: var(--acento); }
 
 @keyframes sube{ from{ transform: translateY(100%); } to{ transform: none; } }
@@ -892,6 +903,7 @@ svg{
   line-height: 1;
   color: var(--tinta);
 }
+.is-ok-fb .feedback__icon{ color: var(--bien-txt); }
 .is-mal-fb .feedback__icon{ color: var(--acento); }
 
 .feedback__title{
@@ -900,6 +912,7 @@ svg{
   font-weight: 600;
   letter-spacing: -1%;
 }
+.is-ok-fb .feedback__title{ color: var(--bien-txt); }
 .is-mal-fb .feedback__title{ color: var(--acento); }
 
 .feedback__body{
@@ -936,8 +949,9 @@ svg{
   font-weight: 700;
   letter-spacing: -1%;
   line-height: 0.98;
-  color: var(--acento);
+  color: var(--tinta);
 }
+.result__title.es-bien{ color: var(--bien); }
 .result__sub{
   margin: calc(var(--u) * 2) 0 calc(var(--u) * 5);
   max-width: 22em;
@@ -965,6 +979,7 @@ svg{
   letter-spacing: -0.04em;
   line-height: 1;
 }
+.scorebox--ok .scorebox__num{ color: var(--bien-txt); }
 .scorebox--mal .scorebox__num{ color: var(--acento); }
 .scorebox__lbl{
   display: block;
