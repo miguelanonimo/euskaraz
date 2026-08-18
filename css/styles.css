@@ -1104,6 +1104,58 @@ svg{
   color: var(--tinta-45);
 }
 
+.dictfiltros{
+  display: flex;
+  align-items: center;
+  gap: var(--u);
+  margin-top: var(--u);
+}
+
+.dictletras{
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  flex: 1;
+  min-width: 0;
+  scrollbar-width: none;
+}
+.dictletras::-webkit-scrollbar{ display: none; }
+
+.dictletra{
+  flex: none;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  font: inherit;
+  font-size: var(--t-xs);
+  font-weight: 500;
+  color: var(--tinta-45);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.dictletra.is-activo{
+  border-color: var(--filete-alto);
+  color: var(--tinta);
+}
+.dictletra:disabled{ color: var(--tinta-20); cursor: default; }
+
+.dictcat{
+  flex: none;
+  font: inherit;
+  font-size: var(--t-xs);
+  font-weight: 500;
+  color: var(--tinta);
+  background: var(--papel-alto);
+  border: 1px solid var(--filete);
+  border-radius: 0;
+  padding: 6px 8px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.dictcat:focus{ outline: none; border-color: var(--filete-alto); }
+
 .vitem__unidad{
   display: block;
   margin-top: 3px;

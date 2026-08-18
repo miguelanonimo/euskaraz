@@ -10,151 +10,176 @@
       "eu": "nor?",
       "es": "¿quién?",
       "nota": null,
-      "audio": "unidades/u3/nor.mp3"
+      "audio": "unidades/u3/nor.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "zer?",
       "es": "¿qué?",
       "nota": null,
-      "audio": "unidades/u3/zer.mp3"
+      "audio": "unidades/u3/zer.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "zein?",
       "es": "¿cuál? ¿qué (de varios)?",
       "nota": null,
-      "audio": "unidades/u3/zein.mp3"
+      "audio": "unidades/u3/zein.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "non?",
       "es": "¿dónde?",
       "nota": null,
-      "audio": "unidades/u3/non.mp3"
+      "audio": "unidades/u3/non.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "nora?",
       "es": "¿adónde?",
       "nota": null,
-      "audio": "unidades/u3/nora.mp3"
+      "audio": "unidades/u3/nora.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "nondik?",
       "es": "¿de dónde? ¿por dónde?",
       "nota": "Movimiento desde un sitio.",
-      "audio": "unidades/u3/nondik.mp3"
+      "audio": "unidades/u3/nondik.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "nongoa?",
       "es": "¿de dónde (eres)?",
       "nota": "Origen, no movimiento.",
-      "audio": "unidades/u3/nongoa.mp3"
+      "audio": "unidades/u3/nongoa.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "noiz?",
       "es": "¿cuándo?",
       "nota": null,
-      "audio": "unidades/u3/noiz.mp3"
+      "audio": "unidades/u3/noiz.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "nola?",
       "es": "¿cómo?",
       "nota": null,
-      "audio": "unidades/u3/nola.mp3"
+      "audio": "unidades/u3/nola.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "zergatik?",
       "es": "¿por qué?",
       "nota": null,
-      "audio": "unidades/u3/zergatik.mp3"
+      "audio": "unidades/u3/zergatik.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "zenbat?",
       "es": "¿cuánto? ¿cuántos?",
       "nota": null,
-      "audio": "unidades/u3/zenbat.mp3"
+      "audio": "unidades/u3/zenbat.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "norekin?",
       "es": "¿con quién?",
       "nota": null,
-      "audio": "unidades/u3/norekin.mp3"
+      "audio": "unidades/u3/norekin.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "noren?",
       "es": "¿de quién?",
       "nota": "El genitivo de «nor». Para cosas es «zeren?» (¿de qué?).",
-      "audio": "unidades/u3/noren.mp3"
+      "audio": "unidades/u3/noren.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "galdera",
       "es": "la pregunta",
       "nota": null,
-      "audio": "unidades/u3/galdera.mp3"
+      "audio": "unidades/u3/galdera.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "erantzuna",
       "es": "la respuesta",
       "nota": null,
-      "audio": "unidades/u3/erantzuna.mp3"
+      "audio": "unidades/u3/erantzuna.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "bai",
       "es": "sí",
       "nota": null,
-      "audio": "unidades/u3/bai.mp3"
+      "audio": "unidades/u3/bai.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "ez",
       "es": "no",
       "nota": null,
-      "audio": "unidades/u3/ez.mp3"
+      "audio": "unidades/u3/ez.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "ez dakit",
       "es": "no sé",
       "nota": "Frase hecha. Muy útil desde el primer día.",
-      "audio": "unidades/u3/ez-dakit.mp3"
+      "audio": "unidades/u3/ez-dakit.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "agian",
       "es": "quizás",
       "nota": null,
-      "audio": "unidades/u3/agian.mp3"
+      "audio": "unidades/u3/agian.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "beti",
       "es": "siempre",
       "nota": null,
-      "audio": "unidades/u3/beti.mp3"
+      "audio": "unidades/u3/beti.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "inoiz ez",
       "es": "nunca",
       "nota": null,
-      "audio": "unidades/u3/inoiz-ez.mp3"
+      "audio": "unidades/u3/inoiz-ez.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gaur",
       "es": "hoy",
       "nota": null,
-      "audio": "unidades/u3/gaur.mp3"
+      "audio": "unidades/u3/gaur.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "bihar",
       "es": "mañana",
       "nota": null,
-      "audio": "unidades/u3/bihar.mp3"
+      "audio": "unidades/u3/bihar.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "atzo",
       "es": "ayer",
       "nota": null,
-      "audio": "unidades/u3/atzo.mp3"
+      "audio": "unidades/u3/atzo.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "orain",
       "es": "ahora",
       "nota": null,
-      "audio": "unidades/u3/orain.mp3"
+      "audio": "unidades/u3/orain.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

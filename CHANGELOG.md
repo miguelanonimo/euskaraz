@@ -103,8 +103,20 @@ cuántas necesitaron vuelta, y el total de respuestas dadas.
 bizkainas (aupa, zelan zagoz...) no entran todavía en este repaso —
 sigue siendo un hueco conocido, ya anotado antes de esta fusión.
 
-## Pendiente
+## 2026-08-18 — Diccionario: filtro por letra y por tipo de palabra
 
-- Diccionario: filtro por letra y por tipo de palabra (verbo/
-  sustantivo/adjetivo). Ninguno de los dos datasets tiene categoría
-  gramatical por palabra — hay que clasificar las ~360 entradas.
+Clasificadas a mano (con heurísticas por prefijo de la glosa castellana
+— "el/la…" → sustantivo, "(yo)/(tú)…" → verbo conjugado, listas
+cerradas de excepciones para posesivos de parentesco y sufijos
+gramaticales) las 345 palabras únicas del vocabulario en `verbo` /
+`sustantivo` / `adjetivo` / `otros`. Campo `categoria` añadido a las
+729 entradas de vocabulario (palabra + variantes) de los dos datasets,
+`data/unidades/*.json` y `data/unidades-gernikes/*.json`, casando por
+la forma en euskera normalizada — sin ninguna sin clasificar.
+
+En el diccionario, debajo del buscador: fila de letras (solo se activan
+las que tienen alguna palabra con el filtro de tipo ya aplicado) y un
+desplegable de tipo de palabra. Los dos filtros se combinan entre sí y
+con el texto de búsqueda.
+
+Hecho en la rama `desarrollo/diccionario-filtros`, sin tocar `main`.

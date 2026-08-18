@@ -9,172 +9,206 @@
     {
       "eu": "gustatu",
       "es": "gustar",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "gustatzen zait",
       "es": "me gusta",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "niri",
       "es": "a mí",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "zuri",
       "es": "a ti",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hari",
       "es": "a él, a ella",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "guri",
       "es": "a nosotros",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "zuei",
       "es": "a vosotros",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "haiei",
       "es": "a ellos",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "asko",
       "es": "mucho",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "gutxi",
       "es": "poco",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "pixka bat",
       "es": "un poco",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "batere ez",
       "es": "nada en absoluto",
-      "nota": "Se usa en frases negativas: «ez zait batere gustatzen»."
+      "nota": "Se usa en frases negativas: «ez zait batere gustatzen».",
+      "categoria": "otros"
     },
     {
       "eu": "eman",
       "es": "dar",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "esan",
       "es": "decir",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "galdetu",
       "es": "preguntar",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "erantzun",
       "es": "responder",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "lagundu",
       "es": "ayudar",
-      "nota": "Se construye con dativo: «lagundu diot»."
+      "nota": "Se construye con dativo: «lagundu diot».",
+      "categoria": "verbo"
     },
     {
       "eu": "iruditzen zait",
       "es": "me parece",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "interesatzen zait",
       "es": "me interesa",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "axola zait",
       "es": "me importa",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "kirola",
       "es": "el deporte",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "futbola",
       "es": "el fútbol",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "pilota",
       "es": "la pelota",
-      "nota": "El deporte y el objeto, las dos cosas."
+      "nota": "El deporte y el objeto, las dos cosas.",
+      "categoria": "sustantivo"
     },
     {
       "eu": "dantza",
       "es": "la danza, el baile",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "zinema",
       "es": "el cine",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "antzerkia",
       "es": "el teatro",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "janaria",
       "es": "la comida (en general)",
-      "nota": "«bazkaria» es la del mediodía; «janaria», la comida como sustancia."
+      "nota": "«bazkaria» es la del mediodía; «janaria», la comida como sustancia.",
+      "categoria": "sustantivo"
     },
     {
       "eu": "edaria",
       "es": "la bebida",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "euria",
       "es": "la lluvia",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "eguzkia",
       "es": "el sol",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "negua",
       "es": "el invierno",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "uda",
       "es": "el verano",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "gauza",
       "es": "la cosa",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "guztia",
       "es": "todo",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     }
   ],
   "gramatica": [

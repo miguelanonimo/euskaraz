@@ -10,205 +10,239 @@
       "eu": "al",
       "es": "(partícula de pregunta)",
       "nota": "No significa nada por sí sola: solo marca que la frase es una pregunta de sí o no.",
-      "audio": "unidades/u12/al.mp3"
+      "audio": "unidades/u12/al.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "baino",
       "es": "que (en comparaciones)",
       "nota": null,
-      "audio": "unidades/u12/baino.mp3"
+      "audio": "unidades/u12/baino.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "-ago",
       "es": "más",
       "nota": "Se pega al adjetivo: handi → handiago.",
-      "audio": "unidades/u12/-ago.mp3"
+      "audio": "unidades/u12/-ago.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "-ena",
       "es": "el más",
       "nota": "handi → handiena.",
-      "audio": "unidades/u12/-ena.mp3"
+      "audio": "unidades/u12/-ena.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gehiago",
       "es": "más (cantidad)",
       "nota": null,
-      "audio": "unidades/u12/gehiago.mp3"
+      "audio": "unidades/u12/gehiago.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gutxiago",
       "es": "menos",
       "nota": null,
-      "audio": "unidades/u12/gutxiago.mp3"
+      "audio": "unidades/u12/gutxiago.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "hobea",
       "es": "mejor",
       "nota": "Irregular: de «ona» (bueno).",
-      "audio": "unidades/u12/hobea.mp3"
+      "audio": "unidades/u12/hobea.mp3",
+      "categoria": "adjetivo"
     },
     {
       "eu": "txarragoa",
       "es": "peor",
       "nota": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio.",
-      "audio": "unidades/u12/txarragoa.mp3"
+      "audio": "unidades/u12/txarragoa.mp3",
+      "categoria": "adjetivo"
     },
     {
       "eu": "hobeto",
       "es": "mejor (adverbio)",
       "nota": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio.",
-      "audio": "unidades/u12/hobeto.mp3"
+      "audio": "unidades/u12/hobeto.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "bezain",
       "es": "tan… como",
       "nota": null,
-      "audio": "unidades/u12/bezain.mp3"
+      "audio": "unidades/u12/bezain.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "berdin",
       "es": "igual",
       "nota": null,
-      "audio": "unidades/u12/berdin.mp3"
+      "audio": "unidades/u12/berdin.mp3",
+      "categoria": "adjetivo"
     },
     {
       "eu": "beraz",
       "es": "así que, por tanto",
       "nota": null,
-      "audio": "unidades/u12/beraz.mp3"
+      "audio": "unidades/u12/beraz.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "hala ere",
       "es": "aun así",
       "nota": null,
-      "audio": "unidades/u12/hala-ere.mp3"
+      "audio": "unidades/u12/hala-ere.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gainera",
       "es": "además",
       "nota": null,
-      "audio": "unidades/u12/gainera.mp3"
+      "audio": "unidades/u12/gainera.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "adibidez",
       "es": "por ejemplo",
       "nota": null,
-      "audio": "unidades/u12/adibidez.mp3"
+      "audio": "unidades/u12/adibidez.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "bakarrik",
       "es": "solo, únicamente",
       "nota": null,
-      "audio": "unidades/u12/bakarrik.mp3"
+      "audio": "unidades/u12/bakarrik.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "denak",
       "es": "todos",
       "nota": null,
-      "audio": "unidades/u12/denak.mp3"
+      "audio": "unidades/u12/denak.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "norbait",
       "es": "alguien",
       "nota": null,
-      "audio": "unidades/u12/norbait.mp3"
+      "audio": "unidades/u12/norbait.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "inor ez",
       "es": "nadie",
       "nota": null,
-      "audio": "unidades/u12/inor-ez.mp3"
+      "audio": "unidades/u12/inor-ez.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "zerbait",
       "es": "algo",
       "nota": null,
-      "audio": "unidades/u12/zerbait.mp3"
+      "audio": "unidades/u12/zerbait.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "nonbait",
       "es": "en algún sitio",
       "nota": null,
-      "audio": "unidades/u12/nonbait.mp3"
+      "audio": "unidades/u12/nonbait.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "noski",
       "es": "claro, por supuesto",
       "nota": null,
-      "audio": "unidades/u12/noski.mp3"
+      "audio": "unidades/u12/noski.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "benetan",
       "es": "de verdad",
       "nota": null,
-      "audio": "unidades/u12/benetan.mp3"
+      "audio": "unidades/u12/benetan.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "azkar",
       "es": "rápido",
       "nota": null,
-      "audio": "unidades/u12/azkar.mp3"
+      "audio": "unidades/u12/azkar.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "poliki",
       "es": "despacio",
       "nota": null,
-      "audio": "unidades/u12/poliki.mp3"
+      "audio": "unidades/u12/poliki.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "zaila",
       "es": "difícil",
       "nota": null,
-      "audio": "unidades/u12/zaila.mp3"
+      "audio": "unidades/u12/zaila.mp3",
+      "categoria": "adjetivo"
     },
     {
       "eu": "erraza",
       "es": "fácil",
       "nota": null,
-      "audio": "unidades/u12/erraza.mp3"
+      "audio": "unidades/u12/erraza.mp3",
+      "categoria": "adjetivo"
     },
     {
       "eu": "garrantzitsua",
       "es": "importante",
       "nota": null,
-      "audio": "unidades/u12/garrantzitsua.mp3"
+      "audio": "unidades/u12/garrantzitsua.mp3",
+      "categoria": "adjetivo"
     },
     {
       "eu": "-lako",
       "es": "porque",
       "nota": "Se pega al verbo: «euskalduna naizelako».",
-      "audio": "unidades/u12/-lako.mp3"
+      "audio": "unidades/u12/-lako.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "hitza",
       "es": "la palabra",
       "nota": null,
-      "audio": "unidades/u12/hitza.mp3"
+      "audio": "unidades/u12/hitza.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "aditza",
       "es": "el verbo",
       "nota": null,
-      "audio": "unidades/u12/aditza.mp3"
+      "audio": "unidades/u12/aditza.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "esaldia",
       "es": "la frase",
       "nota": null,
-      "audio": "unidades/u12/esaldia.mp3"
+      "audio": "unidades/u12/esaldia.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "hurrengoa",
       "es": "el siguiente",
       "nota": null,
-      "audio": "unidades/u12/hurrengoa.mp3"
+      "audio": "unidades/u12/hurrengoa.mp3",
+      "categoria": "adjetivo"
     },
     {
       "eu": "zorionak",
       "es": "felicidades",
       "nota": "Literalmente «suertes buenas».",
-      "audio": "unidades/u12/zorionak.mp3"
+      "audio": "unidades/u12/zorionak.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

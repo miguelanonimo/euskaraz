@@ -10,205 +10,239 @@
       "eu": "gustatu",
       "es": "gustar",
       "nota": null,
-      "audio": "unidades/u10/gustatu.mp3"
+      "audio": "unidades/u10/gustatu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "gustatzen zait",
       "es": "me gusta",
       "nota": null,
-      "audio": "unidades/u10/gustatzen-zait.mp3"
+      "audio": "unidades/u10/gustatzen-zait.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "niri",
       "es": "a mí",
       "nota": null,
-      "audio": "unidades/u10/niri.mp3"
+      "audio": "unidades/u10/niri.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "zuri",
       "es": "a ti",
       "nota": null,
-      "audio": "unidades/u10/zuri.mp3"
+      "audio": "unidades/u10/zuri.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "hari",
       "es": "a él, a ella",
       "nota": null,
-      "audio": "unidades/u10/hari.mp3"
+      "audio": "unidades/u10/hari.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "guri",
       "es": "a nosotros",
       "nota": null,
-      "audio": "unidades/u10/guri.mp3"
+      "audio": "unidades/u10/guri.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "zuei",
       "es": "a vosotros",
       "nota": null,
-      "audio": "unidades/u10/zuei.mp3"
+      "audio": "unidades/u10/zuei.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "haiei",
       "es": "a ellos",
       "nota": null,
-      "audio": "unidades/u10/haiei.mp3"
+      "audio": "unidades/u10/haiei.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "asko",
       "es": "mucho",
       "nota": null,
-      "audio": "unidades/u10/asko.mp3"
+      "audio": "unidades/u10/asko.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gutxi",
       "es": "poco",
       "nota": null,
-      "audio": "unidades/u10/gutxi.mp3"
+      "audio": "unidades/u10/gutxi.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "pixka bat",
       "es": "un poco",
       "nota": null,
-      "audio": "unidades/u10/pixka-bat.mp3"
+      "audio": "unidades/u10/pixka-bat.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "batere ez",
       "es": "nada en absoluto",
       "nota": "Se usa en frases negativas: «ez zait batere gustatzen».",
-      "audio": "unidades/u10/batere-ez.mp3"
+      "audio": "unidades/u10/batere-ez.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "eman",
       "es": "dar",
       "nota": null,
-      "audio": "unidades/u10/eman.mp3"
+      "audio": "unidades/u10/eman.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "esan",
       "es": "decir",
       "nota": null,
-      "audio": "unidades/u10/esan.mp3"
+      "audio": "unidades/u10/esan.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "galdetu",
       "es": "preguntar",
       "nota": null,
-      "audio": "unidades/u10/galdetu.mp3"
+      "audio": "unidades/u10/galdetu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "erantzun",
       "es": "responder",
       "nota": null,
-      "audio": "unidades/u10/erantzun.mp3"
+      "audio": "unidades/u10/erantzun.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "lagundu",
       "es": "ayudar",
       "nota": "Se construye con dativo: «lagundu diot».",
-      "audio": "unidades/u10/lagundu.mp3"
+      "audio": "unidades/u10/lagundu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "iruditzen zait",
       "es": "me parece",
       "nota": null,
-      "audio": "unidades/u10/iruditzen-zait.mp3"
+      "audio": "unidades/u10/iruditzen-zait.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "interesatzen zait",
       "es": "me interesa",
       "nota": null,
-      "audio": "unidades/u10/interesatzen-zait.mp3"
+      "audio": "unidades/u10/interesatzen-zait.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "axola zait",
       "es": "me importa",
       "nota": null,
-      "audio": "unidades/u10/axola-zait.mp3"
+      "audio": "unidades/u10/axola-zait.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "kirola",
       "es": "el deporte",
       "nota": null,
-      "audio": "unidades/u10/kirola.mp3"
+      "audio": "unidades/u10/kirola.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "futbola",
       "es": "el fútbol",
       "nota": null,
-      "audio": "unidades/u10/futbola.mp3"
+      "audio": "unidades/u10/futbola.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "pilota",
       "es": "la pelota",
       "nota": "El deporte y el objeto, las dos cosas.",
-      "audio": "unidades/u10/pilota.mp3"
+      "audio": "unidades/u10/pilota.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "dantza",
       "es": "la danza, el baile",
       "nota": null,
-      "audio": "unidades/u10/dantza.mp3"
+      "audio": "unidades/u10/dantza.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "zinema",
       "es": "el cine",
       "nota": null,
-      "audio": "unidades/u10/zinema.mp3"
+      "audio": "unidades/u10/zinema.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "antzerkia",
       "es": "el teatro",
       "nota": null,
-      "audio": "unidades/u10/antzerkia.mp3"
+      "audio": "unidades/u10/antzerkia.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "janaria",
       "es": "la comida (en general)",
       "nota": "«bazkaria» es la del mediodía; «janaria», la comida como sustancia.",
-      "audio": "unidades/u10/janaria.mp3"
+      "audio": "unidades/u10/janaria.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "edaria",
       "es": "la bebida",
       "nota": null,
-      "audio": "unidades/u10/edaria.mp3"
+      "audio": "unidades/u10/edaria.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "euria",
       "es": "la lluvia",
       "nota": null,
-      "audio": "unidades/u10/euria.mp3"
+      "audio": "unidades/u10/euria.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "eguzkia",
       "es": "el sol",
       "nota": null,
-      "audio": "unidades/u10/eguzkia.mp3"
+      "audio": "unidades/u10/eguzkia.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "negua",
       "es": "el invierno",
       "nota": null,
-      "audio": "unidades/u10/negua.mp3"
+      "audio": "unidades/u10/negua.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "uda",
       "es": "el verano",
       "nota": null,
-      "audio": "unidades/u10/uda.mp3"
+      "audio": "unidades/u10/uda.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "gauza",
       "es": "la cosa",
       "nota": null,
-      "audio": "unidades/u10/gauza.mp3"
+      "audio": "unidades/u10/gauza.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "guztia",
       "es": "todo",
       "nota": null,
-      "audio": "unidades/u10/guztia.mp3"
+      "audio": "unidades/u10/guztia.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [
