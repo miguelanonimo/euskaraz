@@ -66,6 +66,26 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
     necesita también su mp3 (el pipeline de TTS ya existe, así que es
     asumible).
 
+### Home: colorear el porcentaje de cada unidad por tramos
+
+- **2026-08-18 · Propuesta de Ric.** En las tarjetas de la home, colorear
+  el texto de progreso («Completada · XX%») según la mejor puntuación:
+  **rojo** hasta el 30%, **naranja** del 31% al 75%, **verde** del 76% al
+  100%. Así se ve de un vistazo qué unidades van flojas.
+  - **Matiz que destapa la idea:** hoy ese texto solo aparece cuando la
+    unidad está completada (≥70% de aciertos, `js/app.js` ~líneas
+    489-494 y 1593-1594); por debajo no se muestra porcentaje. Para que
+    existan los tramos rojo/naranja habría que mostrar la mejor puntuación
+    también en unidades intentadas pero no superadas (p. ej. «Mejor
+    intento · 40%»), manteniendo «Completada» solo desde el umbral del 70%.
+  - **Nota de diseño para Miguel:** la paleta actual es deliberadamente
+    mínima (papel/tinta/rojo/verde, ver PROYECTO.md del original); el
+    naranja sería color nuevo — aunque el badge de las tarjetas ya usa un
+    ámbar para "empezada", que quizá sirva sin inventar otro tono.
+  - Ojo con el tramo verde: la propuesta (76-100) no coincide con el
+    umbral de completada (70). Decidir si se alinean (70) o se dejan
+    distintos a propósito.
+
 ## Acordadas y en marcha
 
 ## Implementadas
