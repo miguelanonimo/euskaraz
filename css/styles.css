@@ -1161,21 +1161,6 @@ svg{
 }
 .dictcat:focus{ outline: none; border-color: var(--filete-alto); }
 
-.dicttipo__borrar{
-  flex: none;
-  font: inherit;
-  font-size: var(--t-xs);
-  font-weight: 500;
-  color: var(--tinta-45);
-  background: transparent;
-  border: 0;
-  text-decoration: underline;
-  cursor: pointer;
-  padding: 6px 0;
-  -webkit-tap-highlight-color: transparent;
-}
-.dicttipo__borrar[hidden]{ display: none; }
-
 .vitem__unidad{
   display: block;
   margin-top: 3px;

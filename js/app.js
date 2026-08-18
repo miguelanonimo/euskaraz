@@ -98,7 +98,6 @@
     dictInput:     $('dictInput'),
     dictLetras:    $('dictLetras'),
     dictCat:       $('dictCat'),
-    dictCatBorrar: $('dictCatBorrar'),
     dictCount:     $('dictCount'),
     dictContent:   $('dictContent'),
     heroSub:       $('heroSub'),
@@ -1084,7 +1083,6 @@
     });
 
     pintarLetrasDicc();
-    el.dictCatBorrar.hidden = !dictCatActiva;
 
     el.dictCount.textContent = lista.length === 0
       ? 'Ninguna palabra coincide'
@@ -1686,11 +1684,6 @@
   });
   el.dictCat.addEventListener('change', function () {
     dictCatActiva = this.value;
-    pintarDiccionario(el.dictInput.value);
-  });
-  el.dictCatBorrar.addEventListener('click', function () {
-    dictCatActiva = '';
-    el.dictCat.value = '';
     pintarDiccionario(el.dictInput.value);
   });
   activarAudioEnLista(el.vocabContent);
