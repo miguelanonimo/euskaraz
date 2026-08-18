@@ -21,6 +21,21 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
   `euskaraz-audio` de Supabase Storage); el generador está en
   `scripts/generar-audio/generar.mjs`.
 
+### Audio en ejercicios: altavoz explícito en vez de auto-reproducir
+
+- **2026-08-18 · Propuesta de Ric.** Que las palabras de los ejercicios NO
+  reproduzcan audio automáticamente al tocarlas; en su lugar, que cada
+  palabra lleve un iconito de altavoz para escucharla cuando uno quiera.
+  **Ojo: esto revisa el último cambio de Miguel** (commit `39e5531`, «Audio
+  también al tocar una palabra en "toca las parejas"») — comentarlo con él
+  antes de tocarlo.
+  - Dónde salta el audio solo hoy: `js/app.js` ~línea 1239 (al acertar en
+    ejercicios de opción suena la respuesta) y ~línea 1330 (al tocar una
+    carta en "toca las parejas").
+  - El botón de altavoz que propone Ric ya existe como patrón en
+    Vocabulario/Diccionario (`vitem__play`, `js/app.js` ~línea 216):
+    se trataría de reutilizarlo en los ejercicios.
+
 ## Acordadas y en marcha
 
 ## Implementadas
