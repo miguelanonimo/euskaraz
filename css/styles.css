@@ -1104,22 +1104,12 @@ svg{
   color: var(--tinta-45);
 }
 
-.dictfiltros{
-  display: flex;
-  align-items: center;
-  gap: var(--u);
-  margin-top: var(--u);
-}
-
 .dictletras{
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
-  overflow-x: auto;
-  flex: 1;
-  min-width: 0;
-  scrollbar-width: none;
+  margin-top: var(--u);
 }
-.dictletras::-webkit-scrollbar{ display: none; }
 
 .dictletra{
   flex: none;
@@ -1141,6 +1131,21 @@ svg{
 }
 .dictletra:disabled{ color: var(--tinta-20); cursor: default; }
 
+.dicttipo{
+  display: flex;
+  align-items: center;
+  gap: calc(var(--u) * .75);
+  margin-top: calc(var(--u) * 1.5);
+}
+
+.dicttipo__label{
+  font-size: var(--t-xs);
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--tinta-45);
+}
+
 .dictcat{
   flex: none;
   font: inherit;
@@ -1155,6 +1160,21 @@ svg{
   appearance: none;
 }
 .dictcat:focus{ outline: none; border-color: var(--filete-alto); }
+
+.dicttipo__borrar{
+  flex: none;
+  font: inherit;
+  font-size: var(--t-xs);
+  font-weight: 500;
+  color: var(--tinta-45);
+  background: transparent;
+  border: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 6px 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.dicttipo__borrar[hidden]{ display: none; }
 
 .vitem__unidad{
   display: block;
