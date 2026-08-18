@@ -159,3 +159,8 @@ contra todo el vocabulario del curso (`audioDePalabra`), así que
 funciona igual para las frases de los ejercicios de unidad que para las
 palabras del repaso — si el texto no tiene audio narrado (por ejemplo,
 una opción en castellano), simplemente no suena nada.
+
+Extendido también a «toca las parejas»: al tocar una palabra de la
+columna en euskera suena su pronunciación, antes incluso de saber si
+el emparejamiento saldrá bien — aquí no hay «opción incorrecta» posible
+en ese primer toque, así que suena siempre que la palabra tenga audio.

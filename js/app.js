@@ -1325,7 +1325,13 @@
         if (actual === btn) { btn.setAttribute('aria-pressed', 'false'); if (esEu) selEu = null; else selEs = null; return; }
         if (actual) actual.setAttribute('aria-pressed', 'false');
         btn.setAttribute('aria-pressed', 'true');
-        if (esEu) selEu = btn; else selEs = btn;
+        if (esEu) {
+          selEu = btn;
+          var audio = audioDePalabra(ej.pares[parseInt(btn.dataset.i, 10)].eu);
+          if (audio) reproducir(audio);
+        } else {
+          selEs = btn;
+        }
         intentar();
       };
     }
