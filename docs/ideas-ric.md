@@ -21,6 +21,19 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
   `euskaraz-audio` de Supabase Storage); el generador está en
   `scripts/generar-audio/generar.mjs`.
 
+- **2026-08-18 · `ahaztu` (unidad 11, "olvidar").** El audio la lee
+  "aJaztu", con la H como jota castellana; la H es muda y debería sonar
+  aproximadamente "aastu". Archivo: `unidades/u11/ahaztu.mp3` (compartido
+  por las variantes batua y gernikés).
+
+- **Posible patrón: la H entre vocales leída como jota.** Si la voz falla
+  en `ahaztu`, conviene escuchar de una pasada todas las palabras del curso
+  con H entre vocales antes de re-generar, y arreglarlas juntas. Candidatas
+  encontradas en los datos: `ahizpa`, `astelehena`, `bihar`, `gehiago`,
+  `hamahiru`, `lehen`, `leihoa`, `mahaia`, `nahi`, `ohea`, `zaharra` — y
+  las frases narradas que las contienen (p. ej. «Anek ahizpa bat du»,
+  «Bihar Bilbora joango naiz», «Kafea nahi al duzu?»).
+
 ### Audio en ejercicios: altavoz explícito en vez de auto-reproducir
 
 - **2026-08-18 · Propuesta de Ric.** Que las palabras de los ejercicios NO
