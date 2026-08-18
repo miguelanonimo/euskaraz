@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "titulo": "Euskaraz",
+    "subtitulo": "Euskera batua · Nivel A1 completo",
+    "version": "4.0",
+    "idiomaInterfaz": "es",
+    "nota": "Cada ejercicio tiene cinco variantes. La app elige una al azar en cada ronda y evita repetir la de la ronda anterior."
+  },
+  "unidades": [
+    "unidades-gernikes/01-agurrak.json",
+    "unidades-gernikes/02-izenordainak.json",
+    "unidades-gernikes/03-galderak.json",
+    "unidades-gernikes/04-izan.json",
+    "unidades-gernikes/05-zenbat.json",
+    "unidades-gernikes/06-non.json",
+    "unidades-gernikes/07-ordua.json",
+    "unidades-gernikes/08-egiten.json",
+    "unidades-gernikes/09-nora.json",
+    "unidades-gernikes/10-gustatzen.json",
+    "unidades-gernikes/11-atzo.json",
+    "unidades-gernikes/12-dena.json"
+  ]
+}

@@ -9,6 +9,13 @@
   // ─────────── Estado ───────────
 
   var CURSO = null;
+
+  // Variante dialectal: 'bizkaiera' (Bilbao, revisado y con audio) o
+  // 'gernikes' (contenido original de Ric, Busturialdea/Gernika, sin
+  // audio todavía). Es preferencia de aparato, no de progreso — vive en
+  // localStorage, no en Supabase.
+  var CLAVE_DIALECTO = 'euskaraz.dialecto';
+  var MODO_DIALECTO = localStorage.getItem(CLAVE_DIALECTO) === 'gernikes' ? 'gernikes' : 'bizkaiera';
   var CLAVE = 'euskaraz.progreso.v2';
   var CLAVE_VIEJA = 'euskaraz.progreso.v1';
 
@@ -60,6 +67,7 @@
     progressbar: $('progressbar'),
     progressbarFill: $('progressbarFill'),
     hearts: $('hearts'),
+    btnDialecto: $('btnDialecto'),
     screenAuth: $('screenAuth'),
     authForm:   $('authForm'),
     authEmail:  $('authEmail'),
@@ -407,6 +415,7 @@
     el.actionbar.hidden = (nombre !== 'quiz');
     el.progressbar.hidden = (nombre !== 'quiz');
     el.hearts.hidden = (nombre !== 'quiz');
+    el.btnDialecto.hidden = (nombre !== 'home');
     ocultarFeedback();
     window.scrollTo(0, 0);
   }
@@ -1298,12 +1307,15 @@
 
   /* El índice (data/curso.json) lista los archivos de cada unidad, que
      viven en data/unidades/. Así se puede añadir o reordenar temario sin
-     tocar un archivo gigante.
+     tocar un archivo gigante. En modo gernikes se lee data/curso-gernikes.json,
+     que apunta a data/unidades-gernikes/ — el contenido original de Ric.
      La versión de un solo archivo deja el curso ya montado en
-     window.__CURSO__, y entonces no hace falta pedir nada. */
+     window.__CURSO__, y entonces no hace falta pedir nada (no se usa en
+     modo gernikes). */
   function cargarCurso() {
-    if (window.__CURSO__) return Promise.resolve(window.__CURSO__);
-    return traer('data/curso.json').then(function (indice) {
+    if (window.__CURSO__ && MODO_DIALECTO === 'bizkaiera') return Promise.resolve(window.__CURSO__);
+    var indicePath = MODO_DIALECTO === 'gernikes' ? 'data/curso-gernikes.json' : 'data/curso.json';
+    return traer(indicePath).then(function (indice) {
       return Promise.all(indice.unidades.map(function (ruta) {
         return traer('data/' + ruta);
       })).then(function (unidades) {
@@ -1311,6 +1323,38 @@
       });
     });
   }
+
+  /* Cambia de variante dialectal, recarga el curso entero y refresca la
+     pantalla actual (con progreso intacto: la variante no toca `progreso`,
+     solo qué vocabulario/gramática se muestra). */
+  function cambiarDialecto(modo) {
+    if (modo === MODO_DIALECTO) return;
+    MODO_DIALECTO = modo;
+    try { localStorage.setItem(CLAVE_DIALECTO, modo); } catch (e) {}
+    pintarDialecto();
+    DICC = null; // el diccionario se reconstruye del CURSO nuevo
+    cargarCurso().then(function (curso) {
+      CURSO = curso;
+      var pantallaActual = estado.pantalla;
+      if (pantallaActual === 'unit' && estado.unidad) {
+        var u = CURSO.unidades.filter(function (x) { return x.id === estado.unidad.id; })[0];
+        if (u) { pantallaUnidad(u); return; }
+      }
+      pantallaHome();
+    });
+  }
+
+  function pintarDialecto() {
+    var spans = el.btnDialecto.querySelectorAll('.dialecto__opt');
+    for (var i = 0; i < spans.length; i++) {
+      spans[i].classList.toggle('is-activo', spans[i].dataset.modo === MODO_DIALECTO);
+    }
+  }
+
+  el.btnDialecto.addEventListener('click', function () {
+    cambiarDialecto(MODO_DIALECTO === 'bizkaiera' ? 'gernikes' : 'bizkaiera');
+  });
+  pintarDialecto();
 
   // ─────────── Acceso (magic link) ───────────
 

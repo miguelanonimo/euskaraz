@@ -147,7 +147,25 @@ svg{
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
-.topbar__right{ flex: 0 0 auto; display: flex; align-items: center; }
+.topbar__right{ flex: 0 0 auto; display: flex; align-items: center; gap: var(--u); }
+
+.dialecto{
+  display: flex; align-items: center;
+  gap: 4px;
+  padding: 5px 9px;
+  border: 1px solid var(--filete-alto);
+  background: transparent;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.dialecto__opt{ color: var(--tinta-20); transition: color .12s ease; }
+.dialecto__opt.is-activo{ color: var(--tinta); }
+.dialecto__sep{ color: var(--tinta-20); }
+.dialecto:active{ background: var(--filete); }
+.dialecto[hidden]{ display: none; }
 
 .hearts{
   font-size: var(--t-s);
