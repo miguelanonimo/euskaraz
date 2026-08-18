@@ -214,3 +214,15 @@ abierto a escritura con una política RLS creada y borrada al momento
 para cada tanda) para escuchar antes de publicar — los 4 aprobados
 sustituyeron el mp3 real en su misma ruta (`unidades/u1/*.mp3`), sin
 tocar los JSON de contenido.
+
+## 2026-08-18 — Recortado el silencio inicial de toda la librería de audio
+
+Los 567 mp3 del bucket `euskaraz-audio` (12 unidades) llevaban de
+fábrica ~300ms de silencio al principio del archivo — la causa real del
+retraso al pulsar reproducir que se reportó antes. Descargados,
+recortados con `ffmpeg -af silenceremove` y resubidos a su misma ruta
+uno por uno, sin tocar ningún JSON de contenido. 567/567 sin fallos.
+
+Primer intento fallido: la URL de subida del script de lote no incluía
+el nombre del bucket, así que las 567 subidas fallaban en silencio con
+«Bucket not found» — corregido antes de relanzar en segundo plano.
