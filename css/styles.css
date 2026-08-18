@@ -826,6 +826,53 @@ svg{
 .typebox:focus{ outline: none; border-bottom-color: var(--acento); }
 .typebox::placeholder{ color: var(--tinta-20); font-weight: 400; letter-spacing: -0.01em; }
 
+/* Una palabra suelta (vocabulario: teclear) no necesita dos renglones
+   ni la caja alta de traducir una frase. */
+.typebox--corta{
+  min-height: 56px;
+  font-size: var(--t-xl);
+  letter-spacing: -0.035em;
+}
+
+/* — Enseñar el error (aportado por Ric) — */
+.dif__par{
+  display: grid;
+  grid-template-columns: 7em 1fr;
+  align-items: baseline;
+  gap: var(--u);
+  margin-top: var(--u);
+  padding-top: var(--u);
+  border-top: 1px solid var(--filete);
+}
+.dif__lbl{
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--tinta-45);
+}
+.dif__mal, .dif__ok{
+  font-size: var(--t-l);
+  font-weight: 600;
+  letter-spacing: -0.028em;
+  overflow-wrap: anywhere;
+}
+.dif__mal{ color: var(--tinta-45); }
+.dif__ok{ color: var(--bien-txt); }
+.dif{
+  text-decoration: none;
+  background: var(--bien-txt);   /* texto pequeño: hace falta el tono fuerte */
+  color: var(--papel);
+  padding: 0 1px;
+}
+.dif__mal .dif{ background: transparent; color: var(--acento); text-decoration: line-through; }
+.dif__nota{
+  margin: calc(var(--u) * 2) 0 0;
+  font-size: var(--t-s);
+  line-height: 1.45;
+  color: var(--tinta-45);
+}
+
 /* ═══════════ BARRA DE ACCIÓN ═══════════ */
 
 .actionbar{

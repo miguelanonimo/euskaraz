@@ -62,12 +62,49 @@ Incorporado también el color verde de acierto (`--bien` #0caa39 /
 `--bien-txt` #09852d) que traía el proyecto de Ric, para dejar de usar
 el mismo rojo para acierto y para fallo.
 
-## Pendiente de esta misma fusión
+## 2026-08-18 — Motor de repaso de vocabulario nuevo (de Ric)
 
-- Motor de repaso de vocabulario nuevo de Ric (cola que no se vacía
-  hasta acertar dos veces, 3 formatos — opción/ortografía/teclear—,
-  erratas generadas por reglas fonéticas, diff letra a letra al
-  fallar). Es la pieza más grande, sin portar todavía.
+Portado el motor completo de la tercera tarjeta de la portada. Antes
+eran veinte preguntas de opción múltiple, una pasada, una oportunidad
+por palabra; ahora son catorce palabras en una cola que no se vacía
+hasta que cada una se acierta dos veces (la segunda, a distancia —seis
+u ocho ejercicios después—, porque acertar treinta segundos después de
+ver la solución no prueba nada). Un fallo la devuelve dos o tres
+ejercicios más tarde, en un formato más fácil; hay un tope de piedad
+de seis fallos.
+
+Tres formatos desde el primer día — opción múltiple, ortografía (la
+misma palabra escrita de tres maneras, una buena) y teclear (escribirla
+en euskera) —, con el calendario de repaso espaciado inclinando la
+balanza hacia el formato más exigente según lo asentada que esté cada
+palabra, no eligiéndolo de forma rígida.
+
+Las erratas de ortografía se generan con reglas de los tropiezos reales
+de quien escribe euskera desde el castellano (la hache muda, tx/tz/ts,
+z/s/x, sonoras/sordas entre vocales, interferencias del castellano...),
+cambiando una sola letra por vez, y siempre contrastadas contra el
+diccionario completo para no ofrecer nunca una palabra real como
+errata. Verificado con una prueba aislada de 200 tiradas: 0 coincidencias
+con palabras reales, 0 erratas iguales a la original.
+
+Al fallar, ya no se ve solo la solución: se alinean la respuesta dada y
+la correcta y se marca letra a letra (o palabra a palabra en frases)
+qué sobra y qué falta — mismo mecanismo aplicado también a los
+ejercicios de "traducir" de las unidades, no solo al repaso de
+vocabulario.
+
+El marcador de resultado cambia de sentido en el repaso de vocabulario:
+ya no cuenta aciertos/fallos brutos (todas las palabras acaban puestas,
+así que ese número no diría nada), sino cuántas salieron a la primera,
+cuántas necesitaron vuelta, y el total de respuestas dadas.
+
+**Alcance:** el motor se aplica al fondo de vocabulario ya existente
+(`fondoVocabulario`, solo palabras de nivel superior). Las variantes
+bizkainas (aupa, zelan zagoz...) no entran todavía en este repaso —
+sigue siendo un hueco conocido, ya anotado antes de esta fusión.
+
+## Pendiente
+
 - Diccionario: filtro por letra y por tipo de palabra (verbo/
   sustantivo/adjetivo). Ninguno de los dos datasets tiene categoría
   gramatical por palabra — hay que clasificar las ~360 entradas.

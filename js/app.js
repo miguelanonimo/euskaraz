@@ -33,7 +33,14 @@
   var guardarTimer = null;
 
   var LARGO_REPASO = 15;   // ejercicios por sesión de repaso mezclado
-  var LARGO_VOCAB  = 20;   // palabras por sesión de repaso de vocabulario
+  var LARGO_VOCAB  = 14;   // palabras por sesión de repaso de vocabulario
+
+  // Motor de repaso de vocabulario (aportado por Ric): la sesión es una
+  // cola que no se vacía hasta que cada palabra se acierta dos veces, la
+  // segunda a distancia — ver empezarVocab/resolverVocab/avanzarVocab.
+  var DIST_CERCA = [2, 3, 4];  // tras fallar, a cuántos ejercicios vuelve
+  var DIST_LEJOS = [6, 7, 8];  // tras acertar una vez, la comprobación final
+  var MAX_FALLOS = 6;          // tope de piedad: a la séptima, la palabra sale igual
 
   /* Repaso espaciado. Cada ítem —un grupo de ejercicios o una palabra—
      lleva un paso dentro de esta escala, en días. Aciertas: subes un
@@ -678,6 +685,144 @@
 
   function claveDeVocab(v) { return clavePalabra(v.eu); }
 
+  /* ── Los tres formatos (aportado por Ric) ──
+
+     0 · opción múltiple — reconocer la palabra entre cuatro.
+     1 · ortografía      — la misma palabra escrita de tres maneras, una
+                           buena; hay que ver cuál.
+     2 · teclear         — escribirla en euskera desde el castellano.
+
+     Lo asentada que esté la palabra en el calendario no elige el
+     formato: inclina la balanza. Los tres salen desde el primer día
+     —una sesión de un solo formato aburre—, pero una palabra recién
+     vista se pregunta sobre todo reconociéndola, y una que ya llevas
+     semanas acertando se pregunta sobre todo escribiéndola.
+
+     Cada fila son los pesos de [opción, ortografía, teclear]. La
+     ortografía va sobreponderada a propósito: cerca de la mitad de las
+     palabras del curso no la admiten —«ni», «zu», «bai» no tienen
+     dónde equivocarse— y esas tiradas se pierden. */
+  var MEZCLA = [
+    [50, 35, 15],   // nivel 0 · paso 0-1, recién vista
+    [25, 45, 30],   // nivel 1 · paso 2-3, en camino
+    [10, 35, 55]    // nivel 2 · paso 4 o más, asentada
+  ];
+
+  function nivelBase(clave) {
+    var f = ficha(clave);
+    if (!f) return 0;
+    if (f.paso <= 1) return 0;
+    if (f.paso <= 3) return 1;
+    return 2;
+  }
+
+  /* Se evita repetir el formato con el que acabas de fallar: si la
+     palabra vuelve, que vuelva preguntada de otra manera. Solo se
+     insiste si el sorteo la devuelve dos veces seguidas. */
+  function sortearFormato(nivel, evitar) {
+    var pesos = MEZCLA[nivel] || MEZCLA[0];
+    var f = tirada(pesos);
+    if (f === evitar) f = tirada(pesos);
+    return f;
+  }
+
+  function tirada(pesos) {
+    var suma = pesos[0] + pesos[1] + pesos[2];
+    var r = Math.random() * suma;
+    if (r < pesos[0]) return 0;
+    if (r < pesos[0] + pesos[1]) return 1;
+    return 2;
+  }
+
+  /* ── Erratas ──
+
+     Reglas de errata: los tropiezos reales de quien escribe euskera
+     desde el castellano. La hache que no suena y por eso se cae, las
+     tres africadas que se confunden entre sí (tx/tz/ts), z/s/x, la erre
+     doble, las sonoras y sordas entre vocales, y la tanda de
+     interferencias del castellano —c y qu por k, v por b, ñ por in—.
+     El peso es cuántas papeletas mete cada regla en el sorteo.
+
+     Sin lookbehind a propósito: no todos los Safari en uso lo entienden.
+     El contexto va en grupos y vuelve por $1/$2. */
+  var ERRATAS = [
+    [4, /^h/g, ''],                        // hemen → emen
+    [4, /([aeiou])h([aeiou])/g, '$1$2'],   // bihar → biar
+    [2, /^([aeiou])/g, 'h$1'],             // etorri → hetorri
+    [4, /tx/g, 'ts'], [4, /tx/g, 'tz'],
+    [4, /tz/g, 'ts'], [4, /tz/g, 'tx'],
+    [4, /ts/g, 'tz'], [4, /ts/g, 'tx'],
+    [4, /z/g, 's'],
+    [4, /s([^t]|$)/g, 'z$1'],
+    [2, /x/g, 's'],
+    [4, /rr/g, 'r'],                       // ederra → edera
+    [3, /([aeiou])r([aeiou])/g, '$1rr$2'], // bera → berra
+    [2, /([aeiou])in([aeiou])/g, '$1iñ$2'],
+    [1, /([aeiou])il([aeiou])/g, '$1ill$2'],
+    [2, /([aeiou])t([aeiou])/g, '$1d$2'],
+    [2, /([aeiou])d([aeiou])/g, '$1t$2'],
+    [2, /nt/g, 'nd'], [2, /ld/g, 'lt'],
+    [2, /([aeiou])g([aeiou])/g, '$1k$2'],
+    [2, /([aeiou])k([aeiou])/g, '$1g$2'],
+    [2, /([aeiou])p([aeiou])/g, '$1b$2'],
+    [2, /([aeiou])b([aeiou])/g, '$1p$2'],
+    [2, /([aeiou])l([aeiou])/g, '$1ll$2'],
+    [2, /([aeiou])n([aeiou])/g, '$1ñ$2'],
+    [1, /k([aou])/g, 'c$1'], [1, /k([ei])/g, 'qu$1'],
+    [1, /b/g, 'v']
+  ];
+
+  var POOL_ERRATAS = (function () {
+    var p = [];
+    ERRATAS.forEach(function (r) {
+      for (var i = 0; i < r[0]; i++) p.push(r);
+    });
+    return p;
+  })();
+
+  /* La regla se aplica en UNA sola posición, elegida al azar entre las
+     que encajan. Cambiar todas las zetas de una palabra a la vez daría
+     un adefesio que se descarta de un vistazo; cambiar una sola obliga
+     a mirar. */
+  function aplicarErrata(w, rx, rep) {
+    var ms = [], m;
+    rx.lastIndex = 0;
+    while ((m = rx.exec(w)) !== null) {
+      ms.push(m);
+      if (m.index === rx.lastIndex) rx.lastIndex++;
+    }
+    if (!ms.length) return null;
+    var el = ms[Math.floor(Math.random() * ms.length)];
+    var sust = rep.replace(/\$(\d)/g, function (_, n) { return el[+n] || ''; });
+    return w.slice(0, el.index) + sust + w.slice(el.index + el[0].length);
+  }
+
+  /* Todas las grafías buenas del curso, para no ofrecer nunca como
+     errata una palabra que existe: «hitz» → «hits» sería una trampa,
+     no un error. */
+  var GRAFIAS = null;
+  function grafiasConocidas() {
+    if (GRAFIAS) return GRAFIAS;
+    GRAFIAS = {};
+    diccionario().forEach(function (v) { GRAFIAS[normalizar(v.eu)] = true; });
+    return GRAFIAS;
+  }
+
+  function erratasDe(eu, cuantas) {
+    var conocidas = grafiasConocidas(), fuera = {}, out = [];
+    fuera[normalizar(eu)] = true;
+    for (var i = 0; i < 400 && out.length < cuantas; i++) {
+      var r = alAzar(POOL_ERRATAS);
+      var v = aplicarErrata(eu, r[1], r[2]);
+      if (!v || v === eu) continue;
+      var k = normalizar(v);
+      if (fuera[k] || conocidas[k]) continue;
+      fuera[k] = true;
+      out.push(v);
+    }
+    return out;
+  }
+
   /* Monta una pregunta de opción múltiple a partir de una palabra.
 
      La dirección se sortea: unas veces se da el euskera y se pide el
@@ -691,15 +836,15 @@
      donde el parecido hace daño y por tanto donde se aprende algo. Se
      descartan los que coinciden con la respuesta una vez normalizados,
      para no ofrecer dos opciones que dicen lo mismo. */
-  function preguntaVocab(entrada, fondo, ambiguas) {
-    var aEuskera = Math.random() < 0.5 && !ambiguas[normalizar(entrada.es)];
+  function preguntaOpcion(entrada, ctx) {
+    var aEuskera = Math.random() < 0.5 && !ctx.ambiguas[normalizar(entrada.es)];
     var campo    = aEuskera ? 'eu' : 'es';
     var correcta = entrada[campo];
     var yaPuesto = {};
     yaPuesto[normalizar(correcta)] = true;
 
     var mismos = [], otros = [];
-    fondo.forEach(function (v) {
+    ctx.fondo.forEach(function (v) {
       if (v === entrada) return;
       var txt = normalizar(v[campo]);
       if (yaPuesto[txt]) return;
@@ -715,17 +860,79 @@
       return opciones.length === 4;
     });
 
-    return {
+    return marcarVocab({
       tipo: 'opcion',
       instruccion: aEuskera ? 'Vocabulario · ¿cómo se dice?' : 'Vocabulario · ¿qué significa?',
       pregunta: aEuskera ? entrada.es : entrada.eu,
       opciones: opciones,
       correcta: 0,
-      explicacion: entrada.nota || '',
-      __clave: clavePalabra(entrada.eu),
-      __unidad: entrada.unidad + '. ' + entrada.titulo,
-      __palabra: entrada
-    };
+      explicacion: entrada.nota || ''
+    }, entrada);
+  }
+
+  /* Misma palabra, tres grafías. Solo tiene sentido si las reglas dan al
+     menos dos erratas distintas y creíbles; si no —palabras cortas, o
+     sin ninguna letra conflictiva— devuelve null y quien llama busca
+     otro formato. Tres opciones y no cuatro: preferimos una menos a
+     rellenar con un disparate. */
+  function preguntaOrtografia(entrada) {
+    if (entrada.eu.replace(/\s/g, '').length < 5) return null;
+    var mal = erratasDe(entrada.eu, 2);
+    if (mal.length < 2) return null;
+    var q = marcarVocab({
+      tipo: 'opcion',
+      instruccion: 'Vocabulario · ¿cuál está bien escrita?',
+      pregunta: entrada.es,
+      opciones: [entrada.eu].concat(mal),
+      correcta: 0,
+      explicacion: entrada.nota || ''
+    }, entrada);
+    q.__grafia = true;   // al fallar no basta con la solución: hay que ver la letra
+    return q;
+  }
+
+  /* Escribirla. Si el castellano vale para más de una palabra en
+     euskera se aceptan todas: la pregunta es ambigua, no la respuesta. */
+  function preguntaTeclear(entrada, ctx) {
+    var k = normalizar(entrada.es);
+    return marcarVocab({
+      tipo: 'teclear',
+      instruccion: 'Vocabulario · escríbelo en euskera',
+      pregunta: entrada.es,
+      respuestas: (ctx.porEs[k] && ctx.porEs[k].length) ? ctx.porEs[k] : [entrada.eu],
+      solucion: entrada.eu,
+      explicacion: entrada.nota || ''
+    }, entrada);
+  }
+
+  function marcarVocab(q, entrada) {
+    q.__clave   = clavePalabra(entrada.eu);
+    q.__unidad  = entrada.unidad + '. ' + entrada.titulo;
+    q.__palabra = entrada;
+    return q;
+  }
+
+  /* La pregunta se monta cada vez que la palabra sale, no al principio:
+     así la misma palabra vuelve preguntada de otra manera.
+
+     Muchas palabras no admiten ortografía: las cortas —«ni», «zu»— y
+     las que no tienen ninguna letra conflictiva. Cuando toca y no se
+     puede, adónde se cae depende del nivel: una palabra asentada se va
+     a teclear, que es el otro formato que exige la grafía exacta; una
+     recién vista se va a opción múltiple, porque pedirle que la escriba
+     de memoria la primera vez no es exigencia, es una encerrona. */
+  function construirVocab(it) {
+    var ctx = estado.ctxVocab, q = null;
+    var f = sortearFormato(it.nivel, it.ultimoFormato);
+    if (f === 1) {
+      q = preguntaOrtografia(it.p);
+      if (!q) f = (it.nivel === 0) ? 0 : 2;
+    }
+    if (!q && f === 2) q = preguntaTeclear(it.p, ctx);
+    if (!q) { f = 0; q = preguntaOpcion(it.p, ctx); }
+    it.ultimoFormato = f;
+    q.__item = it;
+    return q;
   }
 
   function empezarVocab() {
@@ -736,25 +943,79 @@
     }
 
     // Traducciones que sirven para más de una palabra: no se pueden
-    // preguntar del castellano al euskera. Se calcula una vez por sesión.
-    var cuantas = {}, ambiguas = {};
+    // preguntar del castellano al euskera con una sola respuesta buena.
+    // Se calcula una vez por sesión, y de paso deja la lista de
+    // sinónimos que el ejercicio de teclear acepta.
+    var cuantas = {}, ambiguas = {}, porEs = {};
     fondo.forEach(function (v) {
       var k = normalizar(v.es);
       cuantas[k] = (cuantas[k] || 0) + 1;
       if (cuantas[k] > 1) ambiguas[k] = true;
+      (porEs[k] || (porEs[k] = [])).push(v.eu);
     });
 
     estado.unidad = null;
     estado.modo = 'vocab';
+    estado.ctxVocab = { fondo: fondo, ambiguas: ambiguas, porEs: porEs };
     estado.ejercicios = elegirSesion(fondo, Math.min(LARGO_VOCAB, fondo.length), claveDeVocab)
-      .map(function (v) { return preguntaVocab(v, fondo, ambiguas); });
+      .map(function (v) {
+        var base = nivelBase(clavePalabra(v.eu));
+        // faltan: cuántos aciertos le quedan para salir de la cola.
+        return { p: v, base: base, nivel: base, faltan: 1, fallos: 0, primera: null, ultimoFormato: -1 };
+      });
     estado.indice = 0;
+    estado.total = estado.ejercicios.length;
+    estado.aprendidas = 0;
+    estado.primeras = 0;
+    estado.respuestas = 0;
     estado.aciertos = 0;
     estado.fallos = 0;
     estado.falladas = [];
     el.topbarTitle.textContent = 'Vocabulario';
     mostrar('quiz');
     pintarEjercicio();
+  }
+
+  /* El calendario solo escucha la PRIMERA respuesta de cada palabra en
+     la sesión. Las vueltas siguientes entrenan, pero no puntúan: has
+     visto la solución hace medio minuto, acertar ahora no dice nada de
+     si te la sabes dentro de tres días, que es lo que el calendario
+     intenta averiguar. */
+  function resolverVocab(ej, ok) {
+    var it = ej.__item;
+    estado.respuestas++;
+
+    if (it.primera === null) {
+      it.primera = ok;
+      anotar(clavePalabra(it.p.eu), ok);
+      if (ok) estado.primeras++;
+    }
+
+    if (!ok) {
+      it.fallos++;
+      it.faltan = (it.fallos >= MAX_FALLOS) ? 0 : 2;
+      it.nivel  = Math.max(0, it.base - 1);   // vuelve un peldaño más fácil
+      var repe = estado.falladas.some(function (v) { return v.eu === it.p.eu; });
+      if (!repe) estado.falladas.push(it.p);
+    } else {
+      it.faltan--;
+      if (it.faltan === 1) it.nivel = Math.min(2, it.base + 1);  // y la última, más dura
+    }
+  }
+
+  /* Sacar la palabra de la cabeza de la cola y decidir si sale de la
+     sesión o vuelve a entrar, y a qué distancia. El `Math.min` es el que
+     hace que la última palabra que queda se repita en el acto. */
+  function avanzarVocab() {
+    var it = estado.ejercicios.shift();
+    if (it && it.faltan > 0) {
+      var d = alAzar(it.faltan === 2 ? DIST_CERCA : DIST_LEJOS);
+      estado.ejercicios.splice(Math.min(d, estado.ejercicios.length), 0, it);
+    } else if (it) {
+      estado.aprendidas++;
+    }
+    if (!estado.ejercicios.length) pantallaResultado();
+    else pintarEjercicio();
   }
 
   // ─────────── Pantalla: diccionario ───────────
@@ -846,7 +1107,22 @@
     pintarEjercicio();
   }
 
+  /* La pregunta que se está viendo. En vocabulario no vale mirar la
+     cola por índice: ahí lo que hay son fichas de palabra, y la
+     pregunta se monta al pintarla (construirVocab). */
+  function ejActual() { return estado.pregunta; }
+
+  /* En vocabulario la barra no mide cuánto llevas recorrido —la cola se
+     alarga cada vez que fallas, y una barra que retrocede desanima—,
+     mide cuántas palabras has dejado puestas. Solo avanza cuando una
+     sale de la cola para no volver. */
   function actualizarBarra() {
+    if (estado.modo === 'vocab') {
+      var t = estado.total || 1;
+      el.progressbarFill.style.width = (estado.aprendidas / t) * 100 + '%';
+      el.hearts.innerHTML = '<b>' + estado.aprendidas + '</b>/' + t;
+      return;
+    }
     var total = estado.ejercicios.length;
     var pct = (estado.indice / total) * 100;
     el.progressbarFill.style.width = pct + '%';
@@ -861,14 +1137,23 @@
     ocultarFeedback();
     actualizarBarra();
 
-    var ej = estado.ejercicios[estado.indice];
-    if (!ej) { return pantallaResultado(); }
+    var ej;
+    if (estado.modo === 'vocab') {
+      var it = estado.ejercicios[0];
+      if (!it) { return pantallaResultado(); }
+      ej = construirVocab(it);
+    } else {
+      ej = estado.ejercicios[estado.indice];
+      if (!ej) { estado.pregunta = null; return pantallaResultado(); }
+    }
+    estado.pregunta = ej;
 
     switch (ej.tipo) {
       case 'opcion':   pintarOpcion(ej); break;
       case 'pares':    pintarPares(ej); break;
       case 'orden':    pintarOrden(ej); break;
       case 'traducir': pintarTraducir(ej); break;
+      case 'teclear':  pintarTeclear(ej); break;
       default:         siguiente();
     }
 
@@ -921,8 +1206,16 @@
     });
     var cuerpo = ej.explicacion ? ej.explicacion : '';
     if (!ok) {
-      cuerpo = '<span class="sol">' + esc(ej.opciones[ej.correcta]) + '</span>' +
-               (ej.explicacion ? '<br>' + ej.explicacion : '');
+      /* En ortografía las tres opciones se parecen tanto que señalar la
+         buena no enseña nada: hay que ver qué letra bailaba. */
+      if (ej.__grafia) {
+        cuerpo = comparacion(normalizar(ej.opciones[estado.sel]),
+                             normalizar(ej.opciones[ej.correcta]), false, 'elegiste') +
+                 (ej.explicacion ? '<p class="dif__nota">' + esc(ej.explicacion) + '</p>' : '');
+      } else {
+        cuerpo = '<span class="sol">' + esc(ej.opciones[ej.correcta]) + '</span>' +
+                 (ej.explicacion ? '<br>' + ej.explicacion : '');
+      }
     }
     return { ok: ok, cuerpo: cuerpo };
   }
@@ -1068,25 +1361,103 @@
   }
 
   function corregirTraducir(ej) {
+    var crudo = $('typebox').value;
+    var dado  = normalizar(crudo);
+    var ok = ej.respuestas.some(function (r) { return normalizar(r) === dado; });
+    $('typebox').blur();
+    return { ok: ok, cuerpo: ok ? '' : comparacion(dado, normalizar(ej.respuestas[0]), true) };
+  }
+
+  // — Teclear una palabra suelta (vocabulario) —
+
+  /* Igual que traducir una frase, pero de una sola palabra: una línea,
+     no dos, y la comparación letra a letra en vez de palabra a palabra. */
+  function pintarTeclear(ej) {
+    el.quizContent.innerHTML =
+      '<p class="q__inst">' + esc(ej.instruccion) + '</p>' +
+      '<h2 class="q__prompt q__prompt--es">' + esc(ej.pregunta) + '</h2>' +
+      '<textarea class="typebox typebox--corta" id="typebox" rows="1" autocomplete="off" ' +
+      'autocorrect="off" autocapitalize="off" spellcheck="false" ' +
+      'placeholder="Escríbelo en euskera…"></textarea>';
+
+    var ta = $('typebox');
+    ta.addEventListener('input', function () {
+      el.btnCheck.disabled = ta.value.trim().length === 0;
+    });
+    ta.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); if (!el.btnCheck.disabled) el.btnCheck.click(); }
+    });
+  }
+
+  function corregirTeclear(ej) {
     var dado = normalizar($('typebox').value);
     var ok = ej.respuestas.some(function (r) { return normalizar(r) === dado; });
     $('typebox').blur();
+    if (ok) return { ok: true, cuerpo: ej.explicacion ? esc(ej.explicacion) : '' };
     return {
-      ok: ok,
-      cuerpo: ok ? '' : 'La respuesta correcta era:<span class="sol">' + esc(ej.respuestas[0]) + '</span>'
+      ok: false,
+      cuerpo: comparacion(dado, normalizar(ej.solucion), false) +
+              (ej.explicacion ? '<p class="dif__nota">' + esc(ej.explicacion) + '</p>' : '')
     };
+  }
+
+  // — Enseñar el error (aportado por Ric) —
+
+  /* No basta con decir cuál era la buena: hay que poder ver en qué se
+     falló. Se alinean las dos respuestas por su parte común y se marca
+     lo que sobra en la tuya y lo que falta respecto a la correcta. Por
+     letras cuando es una palabra; por palabras cuando es una frase,
+     donde el detalle de cada letra sería ruido. */
+  function alinear(a, b) {
+    var n = a.length, m = b.length, i, j;
+    var t = new Array(n + 1);
+    for (i = 0; i <= n; i++) { t[i] = new Array(m + 1); for (j = 0; j <= m; j++) t[i][j] = 0; }
+    for (i = n - 1; i >= 0; i--) {
+      for (j = m - 1; j >= 0; j--) {
+        t[i][j] = (a[i] === b[j]) ? t[i + 1][j + 1] + 1 : Math.max(t[i + 1][j], t[i][j + 1]);
+      }
+    }
+    var izq = [], der = [];
+    i = 0; j = 0;
+    while (i < n && j < m) {
+      if (a[i] === b[j])                    { izq.push([a[i], 0]); der.push([b[j], 0]); i++; j++; }
+      else if (t[i + 1][j] >= t[i][j + 1])  { izq.push([a[i], 1]); i++; }
+      else                                  { der.push([b[j], 1]); j++; }
+    }
+    while (i < n) { izq.push([a[i], 1]); i++; }
+    while (j < m) { der.push([b[j], 1]); j++; }
+    return { izq: izq, der: der };
+  }
+
+  function pintarTrozos(trozos, junta) {
+    return trozos.map(function (p) {
+      return p[1] ? '<u class="dif">' + esc(p[0]) + '</u>' : esc(p[0]);
+    }).join(junta);
+  }
+
+  function comparacion(dado, bueno, porPalabras, verbo) {
+    var a = porPalabras ? dado.split(' ')  : dado.split('');
+    var b = porPalabras ? bueno.split(' ') : bueno.split('');
+    var junta = porPalabras ? ' ' : '';
+    var al = alinear(a, b);
+    return '<span class="dif__par"><span class="dif__lbl">' + (verbo || 'escribiste') + '</span>' +
+             '<span class="dif__mal">' + (dado ? pintarTrozos(al.izq, junta) : '—') + '</span></span>' +
+           '<span class="dif__par"><span class="dif__lbl">se escribe</span>' +
+             '<span class="dif__ok">' + pintarTrozos(al.der, junta) + '</span></span>';
   }
 
   // — Comprobar —
 
   function comprobar() {
-    var ej = estado.ejercicios[estado.indice];
+    var ej = ejActual();
     if (estado.resuelto) return siguiente();
+    if (!ej) return;
 
     var r;
     if (ej.tipo === 'opcion')        r = corregirOpcion(ej);
     else if (ej.tipo === 'orden')    r = corregirOrden(ej);
     else if (ej.tipo === 'traducir') r = corregirTraducir(ej);
+    else if (ej.tipo === 'teclear')  r = corregirTeclear(ej);
     else return;
 
     resolver(r.ok, r.ok ? 'Oso ondo!' : 'No exactamente', r.cuerpo);
@@ -1096,10 +1467,14 @@
      comprobar o del emparejado, que se autocorrige. Es aquí donde el
      calendario se entera de si se ha acertado. */
   function resolver(ok, titulo, cuerpo) {
-    var ej = estado.ejercicios[estado.indice];
+    var ej = ejActual();
     estado.resuelto = true;
-    if (ej && ej.__clave) anotar(ej.__clave, ok);
-    if (!ok && ej && ej.__palabra) estado.falladas.push(ej.__palabra);
+    if (estado.modo === 'vocab') {
+      if (ej) resolverVocab(ej, ok);
+    } else {
+      if (ej && ej.__clave) anotar(ej.__clave, ok);
+      if (!ok && ej && ej.__palabra) estado.falladas.push(ej.__palabra);
+    }
     registrar(ok);
     feedback(ok, titulo, cuerpo);
   }
@@ -1110,6 +1485,7 @@
   }
 
   function siguiente() {
+    if (estado.modo === 'vocab') return avanzarVocab();
     estado.indice++;
     if (estado.indice >= estado.ejercicios.length) {
       pantallaResultado();
@@ -1127,8 +1503,12 @@
     el.feedbackTitle.textContent = titulo;
     el.feedbackBody.innerHTML = cuerpo || '';
     el.actionbar.hidden = true;
-    el.feedbackNext.textContent =
-      (estado.indice === estado.ejercicios.length - 1) ? 'Ver resultado' : 'Continuar';
+    // En vocabulario la sesión no acaba en la última pregunta, acaba
+    // cuando la cola se vacía: solo es la última si esta palabra ya sale.
+    var ultimo = (estado.modo === 'vocab')
+      ? (estado.ejercicios.length === 1 && estado.ejercicios[0].faltan === 0)
+      : (estado.indice === estado.ejercicios.length - 1);
+    el.feedbackNext.textContent = ultimo ? 'Ver resultado' : 'Continuar';
   }
 
   function ocultarFeedback() {
@@ -1142,6 +1522,15 @@
     var u = estado.unidad;
     var total = estado.ejercicios.length;
     var ratio = total ? estado.aciertos / total : 0;
+
+    /* En vocabulario todas las palabras acaban puestas —para eso está
+       la cola—, así que contar aciertos no diría nada: siempre saldría
+       casi el cien por cien. Lo que se puntúa es cuántas salieron a la
+       primera, sin necesitar ninguna vuelta. */
+    if (estado.modo === 'vocab') {
+      total = estado.total;
+      ratio = total ? estado.primeras / total : 0;
+    }
 
     // Los repasos no pertenecen a ninguna unidad, así que no marcan nada
     // como completado: solo te dicen cómo ha ido. Lo que sí han hecho,
@@ -1162,10 +1551,10 @@
       else                   { titulo = 'Ia-ia…';    sub = 'Vuelve a las unidades que más se te han atragantado.'; }
     }
     else if (estado.modo === 'vocab') {
-      if (ratio === 1)       { titulo = 'Bikain!';   sub = 'Perfecto. Te las sabes todas.'; }
-      else if (ratio >= 0.8) { titulo = 'Oso ondo!'; sub = 'Muy bien. Las falladas volverán pronto.'; }
-      else if (ratio >= 0.5) { titulo = 'Ondo!';     sub = 'Bien. Date una vuelta por el diccionario.'; }
-      else                   { titulo = 'Ia-ia…';    sub = 'Estas palabras piden otra lectura del vocabulario.'; }
+      if (ratio === 1)       { titulo = 'Bikain!';   sub = 'Perfecto. Todas a la primera.'; }
+      else if (ratio >= 0.8) { titulo = 'Oso ondo!'; sub = 'Muy bien. Las de abajo costaron una vuelta.'; }
+      else if (ratio >= 0.5) { titulo = 'Ondo!';     sub = 'Bien. Al final las has puesto todas.'; }
+      else                   { titulo = 'Ia-ia…';    sub = 'Han costado, pero han salido. Vuelven pronto.'; }
     }
     else if (ratio === 1)   { titulo = 'Bikain!';   sub = 'Perfecto. Todas correctas.'; }
     else if (ratio >= 0.8)  { titulo = 'Oso ondo!'; sub = 'Muy bien. Dominas esta unidad.'; }
@@ -1182,7 +1571,7 @@
     var repaso = '';
     if (estado.modo === 'vocab' && estado.falladas.length) {
       repaso = '<div class="result__miss">' +
-        '<p class="footnav__head">Se te han escapado</p>' +
+        '<p class="footnav__head">Las que costaron</p>' +
         '<div class="vocabgroup">' + estado.falladas.map(function (v) {
           return '<div class="vitem"><span class="vitem__row">' +
             '<span class="vitem__eu">' + esc(v.eu) + '</span>' +
@@ -1205,16 +1594,34 @@
                  '<button class="btn btn--ghost" id="rHome">Volver al inicio</button>';
     }
 
+    /* El marcador del vocabulario cuenta otra historia: no aciertos y
+       fallos, sino cuántas salieron limpias, cuántas necesitaron vuelta
+       y cuánto trabajo costó en total. Un cero no se pinta de color: el
+       tono solo entra cuando hay algo que mirar. */
+    function casilla(n, etiqueta, tono) {
+      var clase = 'scorebox';
+      if (tono && n > 0) clase += ' scorebox--' + tono;
+      return '<div class="' + clase + '"><span class="scorebox__num">' + n + '</span>' +
+             '<span class="scorebox__lbl">' + etiqueta + '</span></div>';
+    }
+
+    var marcador;
+    if (estado.modo === 'vocab') {
+      marcador = casilla(estado.primeras, 'a la primera', 'ok') +
+                 casilla(estado.total - estado.primeras, 'con vuelta', 'mal') +
+                 casilla(estado.respuestas, 'respuestas', null);
+    } else {
+      marcador = casilla(estado.aciertos, 'aciertos', 'ok') +
+                 casilla(estado.fallos, 'fallos', 'mal') +
+                 casilla(Math.round(ratio * 100), 'por ciento', null);
+    }
+
     el.topbarTitle.textContent = 'Resultado';
     el.resultContent.innerHTML =
       '<div class="result__mark"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>' +
       '<h1 class="result__title' + (tituloBien ? ' es-bien' : '') + '">' + esc(titulo) + '</h1>' +
       '<p class="result__sub">' + esc(sub) + '</p>' +
-      '<div class="result__score">' +
-        '<div class="scorebox' + (estado.aciertos > 0 ? ' scorebox--ok' : '') + '"><span class="scorebox__num">' + estado.aciertos + '</span><span class="scorebox__lbl">aciertos</span></div>' +
-        '<div class="scorebox' + (estado.fallos > 0 ? ' scorebox--mal' : '') + '"><span class="scorebox__num">' + estado.fallos + '</span><span class="scorebox__lbl">fallos</span></div>' +
-        '<div class="scorebox"><span class="scorebox__num">' + Math.round(ratio * 100) + '</span><span class="scorebox__lbl">por ciento</span></div>' +
-      '</div>' +
+      '<div class="result__score">' + marcador + '</div>' +
       repaso +
       '<div class="result__actions">' + acciones + '</div>';
 
@@ -1337,7 +1744,8 @@
     MODO_DIALECTO = modo;
     try { localStorage.setItem(CLAVE_DIALECTO, modo); } catch (e) {}
     pintarDialecto();
-    DICC = null; // el diccionario se reconstruye del CURSO nuevo
+    DICC = null;    // el diccionario se reconstruye del CURSO nuevo
+    GRAFIAS = null; // y con él, las grafías conocidas para las erratas de ortografía
     cargarCurso().then(function (curso) {
       CURSO = curso;
       var pantallaActual = estado.pantalla;
