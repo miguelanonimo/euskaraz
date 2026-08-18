@@ -141,9 +141,13 @@ vocabulario sueltas, así que en el diccionario se veían como dos
 palabras normales, sin la indentación ni la etiqueta BATUA/BIZKAIERA
 que sí tiene el par en bizkaiera. Anidado «aupa» como `variantes` de
 «kaixo» también en `unidades-gernikes/01-agurrak.json`, igual que en
-bizkaiera — el único par de este tipo que existía suelto en gernikés
-(«zelan zagoz?» no tiene entrada de vocabulario propia ahí, solo
-aparece mencionado dentro de una nota).
+bizkaiera. Comprobados los dos datasets enteros por si había más
+desdoblamientos batua/bizkaiera sin anidar: solo aparece uno más,
+«zer moduz?»/«zelan zagoz?», que en gernikés no tenía ni entrada de
+vocabulario propia (solo se mencionaba dentro de una nota) — añadida
+como variante de «zer moduz?» ahí también, con su mismo audio. Con
+esto los dos pares (kaixo/aupa, zer moduz/zelan zagoz) quedan
+representados igual en los dos modos de diccionario.
 
 ## 2026-08-18 — Audio al acertar en los ejercicios de opción
 
