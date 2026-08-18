@@ -183,3 +183,34 @@ Los números grandes del marcador final del repaso (`.scorebox__num`) se
 quedaban con la tipografía de texto en vez de Lastik, por una regla CSS
 a la que le faltaba el `font-family` que sí tienen el resto de números
 grandes de la app (`.stat__num`). Añadido.
+
+## 2026-08-18 — Regenerados 4 audios de la Unidad 1
+
+Revisión de oído sobre el audio ya subido detectó varios fallos de la
+síntesis (`gemini-2.5-flash-tts`, voz Kore):
+
+- **jaso** — la «j» sonaba a jota castellana en vez de «y», contradiciendo
+  la regla de pronunciación que la propia app enseña. Arreglado enviando
+  el texto respelado («yaso») al sintetizador en vez del texto original.
+- **zelan zagoz?** — la «g» de «zagoz» sonaba gutural, casi como jota, en
+  vez de una g suave. Regenerado con instrucción explícita de
+  pronunciación en el prompt.
+- **oso ondo** — sonaba «ontro» (r espuria entre n y d). Dos intentos:
+  el primero corrigió la r pero se comía la palabra «oso» por completo;
+  el segundo (definitivo) pide expresamente las dos palabras completas,
+  sin pausa larga entre ellas.
+- **barkatu** — sonaba «barkastu» (s espuria antes de la t). Regenerado
+  con instrucción explícita de no insertar esa s.
+
+De paso, confirmado con `ffprobe`/`silencedetect` que todos los mp3
+generados llevan ~300ms de silencio real al principio del archivo (no es
+delay de red ni de llamada): los 4 regenerados se subieron ya recortados
+(`ffmpeg -af silenceremove`). El resto de la librería (~550 mp3) sigue
+con ese silencio de fábrica — recortarla entera queda pendiente, es un
+cambio mecánico (descargar, recortar, resubir) que no necesita TTS nuevo.
+
+Cada candidata se subió primero a una ruta `test/` temporal (bucket
+abierto a escritura con una política RLS creada y borrada al momento
+para cada tanda) para escuchar antes de publicar — los 4 aprobados
+sustituyeron el mp3 real en su misma ruta (`unidades/u1/*.mp3`), sin
+tocar los JSON de contenido.
