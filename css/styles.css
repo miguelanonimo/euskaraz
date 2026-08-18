@@ -1021,6 +1021,7 @@ svg{
 .scorebox:first-child{ border-left: 0; padding-left: 0; }
 .scorebox__num{
   display: block;
+  font-family: var(--f-display);
   font-size: var(--t-2xl);
   font-weight: 600;
   letter-spacing: -0.04em;

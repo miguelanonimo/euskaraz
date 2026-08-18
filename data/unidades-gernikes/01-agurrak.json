@@ -182,7 +182,7 @@
     },
     {
       "titulo": "Pronunciación: lo que necesitas hoy",
-      "cuerpo": "Las cinco vocales suenan como en castellano: <b>a, e, i, o, u</b>. Sin diptongos raros, sin vocales mudas.\n\nLas consonantes que cambian:\n\n<b>z</b> — s silbante, como la «s» del inglés <i>see</i>. Nunca como la «z» castellana.\n<b>s</b> — una s más apagada, con la punta de la lengua algo retraída. Al principio pronúnciala como una s normal.\n<b>x</b> — «sh», como en <i>show</i>.\n<b>tx</b> — «ch», como en <i>chico</i>.\n<b>ts</b> y <b>tz</b> — «ts», como en <i>pizza</i>.\n<b>j</b> — normalmente «y», como en <i>yo</i>. En Gipuzkoa suena como la jota castellana.\n<b>h</b> — muda en casi todo el País Vasco.\n<b>ñ</b> y <b>ll</b> — como en castellano.",
+      "cuerpo": "Las cinco vocales suenan como en castellano: <b>a, e, i, o, u</b>. Sin diptongos raros, sin vocales mudas.\n\nLas consonantes que cambian:\n\n<b>z</b> — s silbante, como la «s» del inglés <i>see</i>. Nunca como la «z» castellana.\n<b>s</b> — una s más apagada, con la punta de la lengua algo retraída. Al principio pronúnciala como una s normal.\n<b>x</b> — «sh», como en <i>show</i>.\n<b>tx</b> — «ch», como en <i>chico</i>.\n<b>ts</b> y <b>tz</b> — «ts», como en <i>pizza</i>.\n<b>j</b> — normalmente «y», como en <i>yo</i>. En Gipuzkoa suena como la jota castellana.\n<b>h</b> — muda en casi todo el País Vasco.\n<b>g</b> — antes de e/i siempre suena fuerte, como en «guerra». No hace falta escribir «gu» con u muda: «ge»/«gi» ya suenan así solos.\n<b>ñ</b> y <b>ll</b> — como en castellano.\n\n<b>c, qu, v, w, y</b> no son letras propias del euskera (salvo en préstamos): el sonido /k/ siempre es <b>k</b> («kaixo», no «caixo»), y no hay distinción entre b/v — todo se escribe con <b>b</b>. Otra cosa que notarás enseguida: el euskera no lleva tildes.",
       "ejemplos": [
         {
           "eu": "zu",
@@ -199,6 +199,10 @@
         {
           "eu": "jaso",
           "es": "recoger → suena «yaso»"
+        },
+        {
+          "eu": "gela",
+          "es": "habitación → suena «guela»"
         }
       ]
     },
@@ -747,6 +751,19 @@
           ],
           "correcta": 1,
           "explicacion": "«ts» y «tz» suenan las dos como la doble z de pizza."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se pronuncia «gela» (la habitación)?",
+          "opciones": [
+            "je-la, con jota",
+            "gue-la, con g fuerte",
+            "khe-la",
+            "ye-la"
+          ],
+          "correcta": 1,
+          "explicacion": "La «g» en euskera siempre suena fuerte antes de e/i, sin falta de u muda: «ge/gi» ya son «gue/gui»."
         }
       ]
     },

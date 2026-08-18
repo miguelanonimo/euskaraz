@@ -164,3 +164,22 @@ Extendido también a «toca las parejas»: al tocar una palabra de la
 columna en euskera suena su pronunciación, antes incluso de saber si
 el emparejamiento saldrá bien — aquí no hay «opción incorrecta» posible
 en ese primer toque, así que suena siempre que la palabra tenga audio.
+
+## 2026-08-18 — Fonemas que faltaban en el bloque de pronunciación (U1)
+
+El bloque «Pronunciación: lo que necesitas hoy» cubría z, s, x, tx, ts/tz,
+j, h y ñ/ll, pero se dejaba la «g»: en castellano «ge/gi» suena a jota y
+hace falta «gue/gui» con u muda para el sonido fuerte; en euskera «ge/gi»
+suena siempre fuerte, sin esa complicación. Añadida esa línea al bloque,
+más un párrafo sobre las letras que no son propias del alfabeto vasco
+(c, qu, v, w, y — no hay distinción b/v, el sonido /k/ siempre es «k») y
+la ausencia de tildes escritas. Nuevo ejemplo «gela» (reutilizando el
+audio ya subido de la Unidad 6) y una pregunta más en el quiz de refuerzo
+de la unidad. Aplicado igual en los dos datasets, bizkaiera y gernikés.
+
+## 2026-08-18 — Tipografía en la pantalla de resultado
+
+Los números grandes del marcador final del repaso (`.scorebox__num`) se
+quedaban con la tipografía de texto en vez de Lastik, por una regla CSS
+a la que le faltaba el `font-family` que sí tienen el resto de números
+grandes de la app (`.stat__num`). Añadido.
