@@ -10,217 +10,253 @@
       "eu": "joan",
       "es": "ir",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/joan.mp3"
     },
     {
       "eu": "noa",
       "es": "(yo) voy",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/noa.mp3"
     },
     {
       "eu": "zoaz",
       "es": "(tú) vas",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/zoaz.mp3"
     },
     {
       "eu": "doa",
       "es": "(él/ella) va",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/doa.mp3"
     },
     {
       "eu": "etorri",
       "es": "venir",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/etorri.mp3"
     },
     {
       "eu": "nator",
       "es": "(yo) vengo",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/nator.mp3"
     },
     {
       "eu": "zatoz",
       "es": "(tú) vienes",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/zatoz.mp3"
     },
     {
       "eu": "dator",
       "es": "(él/ella) viene",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/dator.mp3"
     },
     {
       "eu": "ibili",
       "es": "andar, andar por ahí",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/ibili.mp3"
     },
     {
       "eu": "nabil",
       "es": "(yo) ando",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/nabil.mp3"
     },
     {
       "eu": "dabil",
       "es": "(él/ella) anda",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/dabil.mp3"
     },
     {
       "eu": "irten",
       "es": "salir",
       "nota": "También «atera» en muchos sitios.",
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/irten.mp3"
     },
     {
       "eu": "sartu",
       "es": "entrar",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/sartu.mp3"
     },
     {
       "eu": "iritsi",
       "es": "llegar",
       "nota": null,
-      "categoria": "verbo"
+      "categoria": "verbo",
+      "audio": "unidades/u9/iritsi.mp3"
     },
     {
       "eu": "geltokia",
       "es": "la estación, la parada",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/geltokia.mp3"
     },
     {
       "eu": "autobusa",
       "es": "el autobús",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/autobusa.mp3"
     },
     {
       "eu": "trena",
       "es": "el tren",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/trena.mp3"
     },
     {
       "eu": "kotxea",
       "es": "el coche",
       "nota": "También «autoa».",
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/kotxea.mp3"
     },
     {
       "eu": "bizikleta",
       "es": "la bicicleta",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/bizikleta.mp3"
     },
     {
       "eu": "oinez",
       "es": "a pie",
       "nota": "De «oin» (pie) + la -z de «por medio de».",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u9/oinez.mp3"
     },
     {
       "eu": "hondartza",
       "es": "la playa",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/hondartza.mp3"
     },
     {
       "eu": "mendia",
       "es": "el monte",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/mendia.mp3"
     },
     {
       "eu": "merkatua",
       "es": "el mercado",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/merkatua.mp3"
     },
     {
       "eu": "azoka",
       "es": "la feria, el mercado",
       "nota": "La de Gernika, los lunes, es la más conocida.",
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/azoka.mp3"
     },
     {
       "eu": "denda",
       "es": "la tienda",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/denda.mp3"
     },
     {
       "eu": "liburutegia",
       "es": "la biblioteca",
       "nota": "De «liburu» (libro) + «tegi» (lugar de).",
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/liburutegia.mp3"
     },
     {
       "eu": "ospitalea",
       "es": "el hospital",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/ospitalea.mp3"
     },
     {
       "eu": "hiria",
       "es": "la ciudad",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u9/hiria.mp3"
     },
     {
       "eu": "urrun",
       "es": "lejos",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u9/urrun.mp3"
     },
     {
       "eu": "gertu",
       "es": "cerca",
       "nota": "También «hurbil».",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u9/gertu.mp3"
     },
     {
       "eu": "zuzen",
       "es": "recto, derecho",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u9/zuzen.mp3"
     },
     {
       "eu": "ezkerrera",
       "es": "a la izquierda",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u9/ezkerrera.mp3"
     },
     {
       "eu": "eskuinera",
       "es": "a la derecha",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u9/eskuinera.mp3"
     },
     {
       "eu": "hona",
       "es": "aquí (con movimiento)",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u9/hona.mp3"
     },
     {
       "eu": "hara",
       "es": "allí (con movimiento)",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u9/hara.mp3"
     },
     {
       "eu": "hemendik",
       "es": "desde aquí",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u9/hemendik.mp3"
     }
   ],
   "gramatica": [

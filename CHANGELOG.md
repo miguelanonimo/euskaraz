@@ -114,9 +114,22 @@ gramaticales) las 345 palabras únicas del vocabulario en `verbo` /
 `data/unidades/*.json` y `data/unidades-gernikes/*.json`, casando por
 la forma en euskera normalizada — sin ninguna sin clasificar.
 
-En el diccionario, debajo del buscador: fila de letras (solo se activan
-las que tienen alguna palabra con el filtro de tipo ya aplicado) y un
-desplegable de tipo de palabra. Los dos filtros se combinan entre sí y
-con el texto de búsqueda.
+En el diccionario, debajo del buscador: fila de letras, que ahora ocupa
+las líneas que haga falta en vez de recortarse (solo se activan las que
+tienen alguna palabra con el filtro de tipo ya aplicado), y un
+desplegable de tipo de palabra en su propia línea, con "Todos" como
+opción por defecto — cambiar el desplegable basta para volver a ver
+todo, sin necesitar un botón de borrar aparte. Los dos filtros se
+combinan entre sí y con el texto de búsqueda. Contador de resultados
+oculto, no aportaba nada.
 
-Hecho en la rama `desarrollo/diccionario-filtros`, sin tocar `main`.
+Fusionado a `main` y desplegado a producción.
+
+## 2026-08-18 — Audio del gernikés, reutilizando los mp3 del bizkaiera
+
+Las 364 entradas de vocabulario del dataset de Ric (`data/unidades-gernikes/`)
+seguían sin audio propio desde la fusión. Comprobado que las 364
+comparten exactamente la misma forma en euskera con una palabra ya
+narrada del dataset bizkaiera (ninguna necesitaba locución nueva), así
+que se les asignó la misma ruta de mp3 ya subida a `euskaraz-audio` en
+vez de generar audio nuevo con Cloud TTS.

@@ -10,145 +10,169 @@
       "eu": "ni",
       "es": "yo",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/ni.mp3"
     },
     {
       "eu": "zu",
       "es": "tú / usted",
       "nota": "Una sola palabra para las dos cosas.",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u1/zu.mp3"
     },
     {
       "eu": "hura",
       "es": "él / ella",
       "nota": "Sin género. Vale para los dos.",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/hura.mp3"
     },
     {
       "eu": "gu",
       "es": "nosotros / nosotras",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/gu.mp3"
     },
     {
       "eu": "zuek",
       "es": "vosotros / vosotras",
       "nota": "«zu» + la marca de plural.",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/zuek.mp3"
     },
     {
       "eu": "haiek",
       "es": "ellos / ellas",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/haiek.mp3"
     },
     {
       "eu": "bera",
       "es": "él / ella",
       "nota": "Alternativa a «hura», muy usada al hablar.",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/bera.mp3"
     },
     {
       "eu": "hi",
       "es": "tú (muy familiar)",
       "nota": "Trato de confianza. Solo para reconocerlo, de momento.",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/hi.mp3"
     },
     {
       "eu": "nire",
       "es": "mi",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/nire.mp3"
     },
     {
       "eu": "zure",
       "es": "tu / su (de usted)",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/zure.mp3"
     },
     {
       "eu": "haren",
       "es": "su (de él / de ella)",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/haren.mp3"
     },
     {
       "eu": "gure",
       "es": "nuestro/a",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/gure.mp3"
     },
     {
       "eu": "zuen",
       "es": "vuestro/a",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/zuen.mp3"
     },
     {
       "eu": "haien",
       "es": "su (de ellos / de ellas)",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/haien.mp3"
     },
     {
       "eu": "neu",
       "es": "yo mismo/a",
       "nota": "Forma reforzada, para enfatizar.",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/neu.mp3"
     },
     {
       "eu": "zeu",
       "es": "tú mismo/a",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/zeu.mp3"
     },
     {
       "eu": "geu",
       "es": "nosotros mismos",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u2/geu.mp3"
     },
     {
       "eu": "laguna",
       "es": "el/la amigo/a",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u2/laguna.mp3"
     },
     {
       "eu": "etxea",
       "es": "la casa",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u2/etxea.mp3"
     },
     {
       "eu": "herria",
       "es": "el pueblo",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u2/herria.mp3"
     },
     {
       "eu": "izena",
       "es": "el nombre",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u2/izena.mp3"
     },
     {
       "eu": "handia",
       "es": "grande",
       "nota": null,
-      "categoria": "adjetivo"
+      "categoria": "adjetivo",
+      "audio": "unidades/u2/handia.mp3"
     },
     {
       "eu": "txikia",
       "es": "pequeño/a",
       "nota": null,
-      "categoria": "adjetivo"
+      "categoria": "adjetivo",
+      "audio": "unidades/u2/txikia.mp3"
     },
     {
       "eu": "polita",
       "es": "bonito/a",
       "nota": null,
-      "categoria": "adjetivo"
+      "categoria": "adjetivo",
+      "audio": "unidades/u2/polita.mp3"
     }
   ],
   "gramatica": [

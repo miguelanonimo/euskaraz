@@ -10,151 +10,176 @@
       "eu": "nor?",
       "es": "¿quién?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/nor.mp3"
     },
     {
       "eu": "zer?",
       "es": "¿qué?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/zer.mp3"
     },
     {
       "eu": "zein?",
       "es": "¿cuál? ¿qué (de varios)?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/zein.mp3"
     },
     {
       "eu": "non?",
       "es": "¿dónde?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/non.mp3"
     },
     {
       "eu": "nora?",
       "es": "¿adónde?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/nora.mp3"
     },
     {
       "eu": "nondik?",
       "es": "¿de dónde? ¿por dónde?",
       "nota": "Movimiento desde un sitio.",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/nondik.mp3"
     },
     {
       "eu": "nongoa?",
       "es": "¿de dónde (eres)?",
       "nota": "Origen, no movimiento.",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/nongoa.mp3"
     },
     {
       "eu": "noiz?",
       "es": "¿cuándo?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/noiz.mp3"
     },
     {
       "eu": "nola?",
       "es": "¿cómo?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/nola.mp3"
     },
     {
       "eu": "zergatik?",
       "es": "¿por qué?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/zergatik.mp3"
     },
     {
       "eu": "zenbat?",
       "es": "¿cuánto? ¿cuántos?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/zenbat.mp3"
     },
     {
       "eu": "norekin?",
       "es": "¿con quién?",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/norekin.mp3"
     },
     {
       "eu": "noren?",
       "es": "¿de quién?",
       "nota": "El genitivo de «nor». Para cosas es «zeren?» (¿de qué?).",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/noren.mp3"
     },
     {
       "eu": "galdera",
       "es": "la pregunta",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u3/galdera.mp3"
     },
     {
       "eu": "erantzuna",
       "es": "la respuesta",
       "nota": null,
-      "categoria": "sustantivo"
+      "categoria": "sustantivo",
+      "audio": "unidades/u3/erantzuna.mp3"
     },
     {
       "eu": "bai",
       "es": "sí",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u1/bai.mp3"
     },
     {
       "eu": "ez",
       "es": "no",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u1/ez.mp3"
     },
     {
       "eu": "ez dakit",
       "es": "no sé",
       "nota": "Frase hecha. Muy útil desde el primer día.",
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/ez-dakit.mp3"
     },
     {
       "eu": "agian",
       "es": "quizás",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/agian.mp3"
     },
     {
       "eu": "beti",
       "es": "siempre",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/beti.mp3"
     },
     {
       "eu": "inoiz ez",
       "es": "nunca",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/inoiz-ez.mp3"
     },
     {
       "eu": "gaur",
       "es": "hoy",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/gaur.mp3"
     },
     {
       "eu": "bihar",
       "es": "mañana",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/bihar.mp3"
     },
     {
       "eu": "atzo",
       "es": "ayer",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/atzo.mp3"
     },
     {
       "eu": "orain",
       "es": "ahora",
       "nota": null,
-      "categoria": "otros"
+      "categoria": "otros",
+      "audio": "unidades/u3/orain.mp3"
     }
   ],
   "gramatica": [
