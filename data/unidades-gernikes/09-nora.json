@@ -9,182 +9,218 @@
     {
       "eu": "joan",
       "es": "ir",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "noa",
       "es": "(yo) voy",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "zoaz",
       "es": "(tú) vas",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "doa",
       "es": "(él/ella) va",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "etorri",
       "es": "venir",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "nator",
       "es": "(yo) vengo",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "zatoz",
       "es": "(tú) vienes",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "dator",
       "es": "(él/ella) viene",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "ibili",
       "es": "andar, andar por ahí",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "nabil",
       "es": "(yo) ando",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "dabil",
       "es": "(él/ella) anda",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "irten",
       "es": "salir",
-      "nota": "También «atera» en muchos sitios."
+      "nota": "También «atera» en muchos sitios.",
+      "categoria": "verbo"
     },
     {
       "eu": "sartu",
       "es": "entrar",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "iritsi",
       "es": "llegar",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "geltokia",
       "es": "la estación, la parada",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "autobusa",
       "es": "el autobús",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "trena",
       "es": "el tren",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "kotxea",
       "es": "el coche",
-      "nota": "También «autoa»."
+      "nota": "También «autoa».",
+      "categoria": "sustantivo"
     },
     {
       "eu": "bizikleta",
       "es": "la bicicleta",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "oinez",
       "es": "a pie",
-      "nota": "De «oin» (pie) + la -z de «por medio de»."
+      "nota": "De «oin» (pie) + la -z de «por medio de».",
+      "categoria": "otros"
     },
     {
       "eu": "hondartza",
       "es": "la playa",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "mendia",
       "es": "el monte",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "merkatua",
       "es": "el mercado",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "azoka",
       "es": "la feria, el mercado",
-      "nota": "La de Gernika, los lunes, es la más conocida."
+      "nota": "La de Gernika, los lunes, es la más conocida.",
+      "categoria": "sustantivo"
     },
     {
       "eu": "denda",
       "es": "la tienda",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "liburutegia",
       "es": "la biblioteca",
-      "nota": "De «liburu» (libro) + «tegi» (lugar de)."
+      "nota": "De «liburu» (libro) + «tegi» (lugar de).",
+      "categoria": "sustantivo"
     },
     {
       "eu": "ospitalea",
       "es": "el hospital",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "hiria",
       "es": "la ciudad",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "urrun",
       "es": "lejos",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "gertu",
       "es": "cerca",
-      "nota": "También «hurbil»."
+      "nota": "También «hurbil».",
+      "categoria": "otros"
     },
     {
       "eu": "zuzen",
       "es": "recto, derecho",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "ezkerrera",
       "es": "a la izquierda",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "eskuinera",
       "es": "a la derecha",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hona",
       "es": "aquí (con movimiento)",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hara",
       "es": "allí (con movimiento)",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hemendik",
       "es": "desde aquí",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     }
   ],
   "gramatica": [

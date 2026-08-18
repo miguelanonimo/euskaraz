@@ -10,121 +10,141 @@
       "eu": "naiz",
       "es": "(yo) soy",
       "nota": null,
-      "audio": "unidades/u4/naiz.mp3"
+      "audio": "unidades/u4/naiz.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "zara",
       "es": "(tú) eres",
       "nota": null,
-      "audio": "unidades/u4/zara.mp3"
+      "audio": "unidades/u4/zara.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "da",
       "es": "(él/ella) es",
       "nota": null,
-      "audio": "unidades/u4/da.mp3"
+      "audio": "unidades/u4/da.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "gara",
       "es": "(nosotros) somos",
       "nota": null,
-      "audio": "unidades/u4/gara.mp3"
+      "audio": "unidades/u4/gara.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "zarete",
       "es": "(vosotros) sois",
       "nota": null,
-      "audio": "unidades/u4/zarete.mp3"
+      "audio": "unidades/u4/zarete.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "dira",
       "es": "(ellos) son",
       "nota": null,
-      "audio": "unidades/u4/dira.mp3"
+      "audio": "unidades/u4/dira.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "irakaslea",
       "es": "el/la profesor/a",
       "nota": "De «irakatsi» (enseñar).",
-      "audio": "unidades/u4/irakaslea.mp3"
+      "audio": "unidades/u4/irakaslea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "ikaslea",
       "es": "el/la estudiante",
       "nota": "De «ikasi» (aprender).",
-      "audio": "unidades/u4/ikaslea.mp3"
+      "audio": "unidades/u4/ikaslea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "medikua",
       "es": "el/la médico/a",
       "nota": null,
-      "audio": "unidades/u4/medikua.mp3"
+      "audio": "unidades/u4/medikua.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "sukaldaria",
       "es": "el/la cocinero/a",
       "nota": "De «sukalde» (cocina).",
-      "audio": "unidades/u4/sukaldaria.mp3"
+      "audio": "unidades/u4/sukaldaria.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "langilea",
       "es": "el/la trabajador/a",
       "nota": "De «lan» (trabajo).",
-      "audio": "unidades/u4/langilea.mp3"
+      "audio": "unidades/u4/langilea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "idazlea",
       "es": "el/la escritor/a",
       "nota": "De «idatzi» (escribir).",
-      "audio": "unidades/u4/idazlea.mp3"
+      "audio": "unidades/u4/idazlea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "euskalduna",
       "es": "vascoparlante",
       "nota": "Su sentido básico es «que tiene el euskera», no el origen. También se usa como «del País Vasco», pero el primero es el que cuenta aquí.",
-      "audio": "unidades/u4/euskalduna.mp3"
+      "audio": "unidades/u4/euskalduna.mp3",
+      "categoria": "adjetivo"
     },
     {
       "eu": "erdalduna",
       "es": "que no habla euskera",
       "nota": "«erdara» es cualquier lengua que no sea el euskera.",
-      "audio": "unidades/u4/erdalduna.mp3"
+      "audio": "unidades/u4/erdalduna.mp3",
+      "categoria": "adjetivo"
     },
     {
       "eu": "laguna",
       "es": "el/la amigo/a",
       "nota": null,
-      "audio": "unidades/u4/laguna.mp3"
+      "audio": "unidades/u4/laguna.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "izena",
       "es": "el nombre",
       "nota": null,
-      "audio": "unidades/u4/izena.mp3"
+      "audio": "unidades/u4/izena.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "baina",
       "es": "pero",
       "nota": null,
-      "audio": "unidades/u4/baina.mp3"
+      "audio": "unidades/u4/baina.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "ere",
       "es": "también",
       "nota": "Va detrás de la palabra a la que acompaña.",
-      "audio": "unidades/u4/ere.mp3"
+      "audio": "unidades/u4/ere.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "hau",
       "es": "esto, este",
       "nota": null,
-      "audio": "unidades/u4/hau.mp3"
+      "audio": "unidades/u4/hau.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "bai",
       "es": "sí",
       "nota": null,
-      "audio": "unidades/u4/bai.mp3"
+      "audio": "unidades/u4/bai.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

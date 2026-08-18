@@ -17,51 +17,60 @@
           "eu": "aupa",
           "registro": "bizkaiera",
           "nota": "Forma informal muy extendida en Bizkaia, sobre todo en Bilbao. En el resto de Euskal Herria se oyen variantes como epa o iepa.",
-          "audio": "unidades/u1/aupa.mp3"
+          "audio": "unidades/u1/aupa.mp3",
+          "categoria": "otros"
         }
-      ]
+      ],
+      "categoria": "otros"
     },
     {
       "eu": "egun on",
       "es": "buenos días",
       "nota": "Literalmente «día bueno». Hasta el mediodía.",
-      "audio": "unidades/u1/egun-on.mp3"
+      "audio": "unidades/u1/egun-on.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "arratsalde on",
       "es": "buenas tardes",
       "nota": "Desde el mediodía hasta el anochecer.",
-      "audio": "unidades/u1/arratsalde-on.mp3"
+      "audio": "unidades/u1/arratsalde-on.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gabon",
       "es": "buenas noches",
       "nota": "De «gau» (noche) + «on» (bueno).",
-      "audio": "unidades/u1/gabon.mp3"
+      "audio": "unidades/u1/gabon.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "agur",
       "es": "adiós",
       "nota": "Despedida general.",
-      "audio": "unidades/u1/agur.mp3"
+      "audio": "unidades/u1/agur.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "ikusi arte",
       "es": "hasta luego",
       "nota": "Literalmente «hasta ver». Despedida neutra, sin matiz de cuándo.",
-      "audio": "unidades/u1/ikusi-arte.mp3"
+      "audio": "unidades/u1/ikusi-arte.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gero arte",
       "es": "hasta luego",
       "nota": "«gero» = después. Matiz de «hasta pronto», no una forma bizkaina de ikusi arte — las dos son batua estándar.",
-      "audio": "unidades/u1/gero-arte.mp3"
+      "audio": "unidades/u1/gero-arte.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "bihar arte",
       "es": "hasta mañana",
       "nota": "«bihar» = mañana (el día siguiente).",
-      "audio": "unidades/u1/bihar-arte.mp3"
+      "audio": "unidades/u1/bihar-arte.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "zer moduz?",
@@ -74,81 +83,95 @@
           "eu": "zelan zagoz?",
           "registro": "bizkaiera",
           "nota": "«zelan» es el «nola» (cómo) bizkaino. Muy oído en Bilbao para preguntar qué tal está alguien.",
-          "audio": "unidades/u1/zelan-zagoz.mp3"
+          "audio": "unidades/u1/zelan-zagoz.mp3",
+          "categoria": "otros"
         }
-      ]
+      ],
+      "categoria": "otros"
     },
     {
       "eu": "ondo",
       "es": "bien",
       "nota": "Respuesta estándar.",
-      "audio": "unidades/u1/ondo.mp3"
+      "audio": "unidades/u1/ondo.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "oso ondo",
       "es": "muy bien",
       "nota": "«oso» = muy.",
-      "audio": "unidades/u1/oso-ondo.mp3"
+      "audio": "unidades/u1/oso-ondo.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "hala-hola",
       "es": "así así, regular",
       "nota": null,
-      "audio": "unidades/u1/hala-hola.mp3"
+      "audio": "unidades/u1/hala-hola.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gaizki",
       "es": "mal",
       "nota": null,
-      "audio": "unidades/u1/gaizki.mp3"
+      "audio": "unidades/u1/gaizki.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "eskerrik asko",
       "es": "muchas gracias",
       "nota": "También vale «mila esker» (mil gracias).",
-      "audio": "unidades/u1/eskerrik-asko.mp3"
+      "audio": "unidades/u1/eskerrik-asko.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "ez horregatik",
       "es": "de nada",
       "nota": null,
-      "audio": "unidades/u1/ez-horregatik.mp3"
+      "audio": "unidades/u1/ez-horregatik.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "mesedez",
       "es": "por favor",
       "nota": null,
-      "audio": "unidades/u1/mesedez.mp3"
+      "audio": "unidades/u1/mesedez.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "barkatu",
       "es": "perdón / disculpa",
       "nota": null,
-      "audio": "unidades/u1/barkatu.mp3"
+      "audio": "unidades/u1/barkatu.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "bai",
       "es": "sí",
       "nota": null,
-      "audio": "unidades/u1/bai.mp3"
+      "audio": "unidades/u1/bai.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "ez",
       "es": "no",
       "nota": null,
-      "audio": "unidades/u1/ez.mp3"
+      "audio": "unidades/u1/ez.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "eta zu?",
       "es": "¿y tú?",
       "nota": "«eta» = y.",
-      "audio": "unidades/u1/eta-zu.mp3"
+      "audio": "unidades/u1/eta-zu.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "oso",
       "es": "muy",
       "nota": null,
-      "audio": "unidades/u1/oso.mp3"
+      "audio": "unidades/u1/oso.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

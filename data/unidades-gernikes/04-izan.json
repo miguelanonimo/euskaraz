@@ -6,86 +6,240 @@
   "objetivo": "Tu primer verbo. Decir quién eres, a qué te dedicas y de dónde vienes.",
   "color": "negro",
   "vocabulario": [
-    { "eu": "naiz", "es": "(yo) soy", "nota": null },
-    { "eu": "zara", "es": "(tú) eres", "nota": null },
-    { "eu": "da", "es": "(él/ella) es", "nota": null },
-    { "eu": "gara", "es": "(nosotros) somos", "nota": null },
-    { "eu": "zarete", "es": "(vosotros) sois", "nota": null },
-    { "eu": "dira", "es": "(ellos) son", "nota": null },
-    { "eu": "irakaslea", "es": "el/la profesor/a", "nota": "De «irakatsi» (enseñar)." },
-    { "eu": "ikaslea", "es": "el/la estudiante", "nota": "De «ikasi» (aprender)." },
-    { "eu": "medikua", "es": "el/la médico/a", "nota": null },
-    { "eu": "sukaldaria", "es": "el/la cocinero/a", "nota": "De «sukalde» (cocina)." },
-    { "eu": "langilea", "es": "el/la trabajador/a", "nota": "De «lan» (trabajo)." },
-    { "eu": "idazlea", "es": "el/la escritor/a", "nota": "De «idatzi» (escribir)." },
-    { "eu": "euskalduna", "es": "vascoparlante", "nota": "Su sentido básico es «que tiene el euskera», no el origen. También se usa como «del País Vasco», pero el primero es el que cuenta aquí." },
-    { "eu": "erdalduna", "es": "que no habla euskera", "nota": "«erdara» es cualquier lengua que no sea el euskera." },
-    { "eu": "laguna", "es": "el/la amigo/a", "nota": null },
-    { "eu": "izena", "es": "el nombre", "nota": null },
-    { "eu": "baina", "es": "pero", "nota": null },
-    { "eu": "ere", "es": "también", "nota": "Va detrás de la palabra a la que acompaña." },
-    { "eu": "hau", "es": "esto, este", "nota": null },
-    { "eu": "bai", "es": "sí", "nota": null }
+    {
+      "eu": "naiz",
+      "es": "(yo) soy",
+      "nota": null,
+      "categoria": "verbo"
+    },
+    {
+      "eu": "zara",
+      "es": "(tú) eres",
+      "nota": null,
+      "categoria": "verbo"
+    },
+    {
+      "eu": "da",
+      "es": "(él/ella) es",
+      "nota": null,
+      "categoria": "verbo"
+    },
+    {
+      "eu": "gara",
+      "es": "(nosotros) somos",
+      "nota": null,
+      "categoria": "verbo"
+    },
+    {
+      "eu": "zarete",
+      "es": "(vosotros) sois",
+      "nota": null,
+      "categoria": "verbo"
+    },
+    {
+      "eu": "dira",
+      "es": "(ellos) son",
+      "nota": null,
+      "categoria": "verbo"
+    },
+    {
+      "eu": "irakaslea",
+      "es": "el/la profesor/a",
+      "nota": "De «irakatsi» (enseñar).",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "ikaslea",
+      "es": "el/la estudiante",
+      "nota": "De «ikasi» (aprender).",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "medikua",
+      "es": "el/la médico/a",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "sukaldaria",
+      "es": "el/la cocinero/a",
+      "nota": "De «sukalde» (cocina).",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "langilea",
+      "es": "el/la trabajador/a",
+      "nota": "De «lan» (trabajo).",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "idazlea",
+      "es": "el/la escritor/a",
+      "nota": "De «idatzi» (escribir).",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "euskalduna",
+      "es": "vascoparlante",
+      "nota": "Su sentido básico es «que tiene el euskera», no el origen. También se usa como «del País Vasco», pero el primero es el que cuenta aquí.",
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "erdalduna",
+      "es": "que no habla euskera",
+      "nota": "«erdara» es cualquier lengua que no sea el euskera.",
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "laguna",
+      "es": "el/la amigo/a",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "izena",
+      "es": "el nombre",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "baina",
+      "es": "pero",
+      "nota": null,
+      "categoria": "otros"
+    },
+    {
+      "eu": "ere",
+      "es": "también",
+      "nota": "Va detrás de la palabra a la que acompaña.",
+      "categoria": "otros"
+    },
+    {
+      "eu": "hau",
+      "es": "esto, este",
+      "nota": null,
+      "categoria": "otros"
+    },
+    {
+      "eu": "bai",
+      "es": "sí",
+      "nota": null,
+      "categoria": "otros"
+    }
   ],
   "gramatica": [
     {
       "titulo": "El verbo «izan» (ser) en presente",
       "cuerpo": "Ya conoces los pronombres, así que este verbo va a costarte mucho menos. Es el que más vas a usar en toda tu vida en euskera:\n\n<b>ni naiz</b> — yo soy\n<b>zu zara</b> — tú eres\n<b>hura da</b> — él/ella es\n<b>gu gara</b> — nosotros somos\n<b>zuek zarete</b> — vosotros sois\n<b>haiek dira</b> — ellos son\n\nFíjate en el patrón: las formas de <i>ni</i> y <i>gu</i> empiezan por <b>n-</b> y <b>g-</b>, igual que los pronombres. Las de <i>zu</i> y <i>zuek</i> por <b>z-</b>. Las de tercera persona por <b>d-</b>. No es casualidad: el verbo lleva dentro la marca de la persona.\n\nY como ya sabes, el pronombre suele omitirse: <i>Ane naiz</i> ya significa «soy Ane».",
       "ejemplos": [
-        { "eu": "Ni Ane naiz.", "es": "Yo soy Ane." },
-        { "eu": "Zu irakaslea zara.", "es": "Tú eres profesor." },
-        { "eu": "Hura medikua da.", "es": "Él/ella es médico." }
+        {
+          "eu": "Ni Ane naiz.",
+          "es": "Yo soy Ane."
+        },
+        {
+          "eu": "Zu irakaslea zara.",
+          "es": "Tú eres profesor."
+        },
+        {
+          "eu": "Hura medikua da.",
+          "es": "Él/ella es médico."
+        }
       ]
     },
     {
       "titulo": "El verbo va al final",
       "cuerpo": "En euskera el orden básico es <b>Sujeto – Objeto – Verbo</b>. El verbo cierra la frase casi siempre.\n\nCastellano: <i>Yo <b>soy</b> profesor.</i>\nEuskera: <i>Ni irakaslea <b>naiz</b>.</i>\n\nEs el cambio mental más grande al empezar. Piensa la frase entera antes de hablar y coloca el verbo al final.\n\nLa excepción que ya conoces: en las preguntas, la palabra interrogativa se pega delante del verbo. Y el verbo sigue estando al final. <i>Nongoa <b>zara</b>?</i>",
       "ejemplos": [
-        { "eu": "Ni Bilbokoa naiz.", "es": "Yo soy de Bilbao." },
-        { "eu": "Gu ikasleak gara.", "es": "Nosotros somos estudiantes." }
+        {
+          "eu": "Ni Bilbokoa naiz.",
+          "es": "Yo soy de Bilbao."
+        },
+        {
+          "eu": "Gu ikasleak gara.",
+          "es": "Nosotros somos estudiantes."
+        }
       ]
     },
     {
       "titulo": "El artículo va pegado al final: -a",
       "cuerpo": "Ya lo has visto en los posesivos, pero ahora toca decirlo del todo. El euskera no tiene «el» ni «la» delante. Añade <b>-a</b> al final de la palabra:\n\n<b>irakasle</b> (profesor) → <b>irakaslea</b> (el profesor)\n<b>etxe</b> (casa) → <b>etxea</b> (la casa)\n<b>mediku</b> (médico) → <b>medikua</b> (el médico)\n\nEl plural es <b>-ak</b>: <i>irakasleak</i>, <i>etxeak</i>.\n\nSi la palabra ya termina en -a, no se dobla: <i>neska</i> (chica) → <i>neska</i> (la chica).\n\nOjo con esto: a diferencia del castellano, en euskera las profesiones <b>sí</b> llevan artículo. Se dice <i>Ni irakasle<b>a</b> naiz</i>, no «Ni irakasle naiz».",
       "ejemplos": [
-        { "eu": "ikaslea", "es": "el/la estudiante" },
-        { "eu": "ikasleak", "es": "los/las estudiantes" },
-        { "eu": "Ni sukaldaria naiz.", "es": "Soy cocinero." }
+        {
+          "eu": "ikaslea",
+          "es": "el/la estudiante"
+        },
+        {
+          "eu": "ikasleak",
+          "es": "los/las estudiantes"
+        },
+        {
+          "eu": "Ni sukaldaria naiz.",
+          "es": "Soy cocinero."
+        }
       ]
     },
     {
       "titulo": "Decir de dónde eres: -ko / -go",
       "cuerpo": "En la unidad de preguntas viste que <i>Nongoa?</i> se responde con <b>-koa</b>. Aquí está el detalle.\n\nSe añade <b>-ko</b> al nombre del sitio, y luego el artículo <b>-a</b>:\n\n<b>Bilbo</b> → Bilbo<b>koa</b> naiz (soy de Bilbao)\n<b>Donostia</b> → Donostia<b>koa</b> naiz\n<b>Gernika</b> → Gernika<b>koa</b> naiz\n\nSi el nombre acaba en <b>-n</b> o <b>-l</b>, el sufijo se convierte en <b>-go</b>:\n\n<b>Madril</b> → Madril<b>goa</b> naiz\n<b>Jaen</b> → Jaen<b>goa</b> naiz\n\nEs solo un ajuste de pronunciación: «Madrilkoa» sería incómodo de decir.",
       "ejemplos": [
-        { "eu": "Nongoa zara?", "es": "¿De dónde eres?" },
-        { "eu": "Gernikakoa naiz.", "es": "Soy de Gernika." },
-        { "eu": "Madrilgoa naiz.", "es": "Soy de Madrid." }
+        {
+          "eu": "Nongoa zara?",
+          "es": "¿De dónde eres?"
+        },
+        {
+          "eu": "Gernikakoa naiz.",
+          "es": "Soy de Gernika."
+        },
+        {
+          "eu": "Madrilgoa naiz.",
+          "es": "Soy de Madrid."
+        }
       ]
     },
     {
       "titulo": "Preguntar el nombre",
       "cuerpo": "Hay dos formas habituales, las dos correctas:\n\n<b>Nola duzu izena?</b> — literalmente «¿cómo tienes nombre?»\nRespuesta: <b>Ane dut izena.</b>\n\n<b>Nor zara zu?</b> — «¿quién eres tú?»\nRespuesta: <b>Ni Ane naiz.</b>\n\nLa primera es la más natural al presentarse. Lleva el verbo <i>ukan</i> (tener), que es el de la próxima unidad; de momento apréndetela entera.",
       "ejemplos": [
-        { "eu": "Nola duzu izena?", "es": "¿Cómo te llamas?" },
-        { "eu": "Mikel dut izena.", "es": "Me llamo Mikel." }
+        {
+          "eu": "Nola duzu izena?",
+          "es": "¿Cómo te llamas?"
+        },
+        {
+          "eu": "Mikel dut izena.",
+          "es": "Me llamo Mikel."
+        }
       ]
     },
     {
       "titulo": "«ere» significa también, y va detrás",
       "cuerpo": "Una palabra pequeña muy útil. <b>ere</b> es «también», y como casi todo en euskera, va <b>detrás</b> de la palabra a la que acompaña:\n\n<b>Ni ere ikaslea naiz.</b> — Yo también soy estudiante.\n<b>Hura ere Gernikakoa da.</b> — Él también es de Gernika.\n\nFíjate en que <i>ere</i> se coloca justo después de lo que quieres subrayar. Si lo mueves, cambia el sentido, igual que en castellano con «también».",
       "ejemplos": [
-        { "eu": "Ni ere euskalduna naiz.", "es": "Yo también hablo euskera." },
-        { "eu": "Gu ere lagunak gara.", "es": "Nosotros también somos amigos." }
+        {
+          "eu": "Ni ere euskalduna naiz.",
+          "es": "Yo también hablo euskera."
+        },
+        {
+          "eu": "Gu ere lagunak gara.",
+          "es": "Nosotros también somos amigos."
+        }
       ]
     },
     {
       "titulo": "Cómo suena esto en Gernika",
       "cuerpo": "Aquí es donde el bizkaiera de Busturialdea se aleja más del batua, y es lo que hace que el euskera de Gernika suene tan reconocible.\n\n<b>naiz → naz</b>\nEl verbo «izan» cambia poco, pero lo que cambia se nota: <i>ni naz</i> en lugar de <i>ni naiz</i>, y <i>zuek zarie</i> en lugar de <i>zuek zarete</i>. Las demás formas (zara, da, gara, dira) son iguales.\n\n<b>La vocal del artículo se transforma</b>\nEste es el rasgo estrella. Cuando el artículo <b>-a</b> se pega a una palabra, las vocales se funden:\n\n<i>etxe + a</i> → batua <b>etxea</b>, Gernika <b>etxie</b>\n<i>neska + a</i> → batua <b>neska</b>, Gernika <b>neskie</b>\n<i>beso + a</i> → batua <b>besoa</b>, Gernika <b>besue</b>\n\nPor eso oyes tanta terminación en <b>-ie</b> y <b>-ue</b> por allí. Una vez sabes que es solo el artículo, dejas de perderte.\n\n<b>Las palabras en -ción</b>\nEl castellano <i>-ción</i> da <b>-ziño</b>: <i>erlijiño</i> (religión), <i>estaziño</i> (estación). En batua serían <i>erlijio</i> y <i>estazio</i>.",
       "ejemplos": [
-        { "eu": "Ni Gernikakoa naz.", "es": "Soy de Gernika. (bizkaiera) — batua: naiz" },
-        { "eu": "etxie", "es": "la casa (Gernika) — batua: etxea" },
-        { "eu": "Zuek ikasleak zarie.", "es": "Vosotros sois estudiantes. — batua: zarete" }
+        {
+          "eu": "Ni Gernikakoa naz.",
+          "es": "Soy de Gernika. (bizkaiera) — batua: naiz"
+        },
+        {
+          "eu": "etxie",
+          "es": "la casa (Gernika) — batua: etxea"
+        },
+        {
+          "eu": "Zuek ikasleak zarie.",
+          "es": "Vosotros sois estudiantes. — batua: zarete"
+        }
       ]
     },
     {
@@ -95,89 +249,891 @@
     }
   ],
   "ejercicios": [
-    { "id": "u4-g01", "variantes": [
-      { "tipo": "pares", "instruccion": "Empareja cada pronombre con su verbo", "pares": [{ "eu": "naiz", "es": "ni" }, { "eu": "zara", "es": "zu" }, { "eu": "gara", "es": "gu" }, { "eu": "dira", "es": "haiek" }] },
-      { "tipo": "pares", "instruccion": "Empareja cada pronombre con su verbo", "pares": [{ "eu": "da", "es": "hura" }, { "eu": "zarete", "es": "zuek" }, { "eu": "naiz", "es": "ni" }, { "eu": "gara", "es": "gu" }] },
-      { "tipo": "pares", "instruccion": "Empareja con la traducción", "pares": [{ "eu": "naiz", "es": "soy" }, { "eu": "zara", "es": "eres" }, { "eu": "da", "es": "es" }, { "eu": "dira", "es": "son" }] },
-      { "tipo": "pares", "instruccion": "Empareja con la traducción", "pares": [{ "eu": "gara", "es": "somos" }, { "eu": "zarete", "es": "sois" }, { "eu": "dira", "es": "son" }, { "eu": "da", "es": "es" }] },
-      { "tipo": "pares", "instruccion": "Empareja las frases", "pares": [{ "eu": "Ni ikaslea naiz.", "es": "Soy estudiante." }, { "eu": "Zu medikua zara.", "es": "Eres médico." }, { "eu": "Gu lagunak gara.", "es": "Somos amigos." }, { "eu": "Haiek irakasleak dira.", "es": "Son profesores." }] }
-    ]},
-    { "id": "u4-g02", "variantes": [
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Ni Mikel ____.", "opciones": ["da", "naiz", "zara", "gara"], "correcta": 1, "explicacion": "Con «ni» (yo) siempre va «naiz»." },
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Ni Gernikakoa ____.", "opciones": ["zara", "da", "naiz", "dira"], "correcta": 2, "explicacion": "Sujeto «ni» → «naiz», y el verbo cierra la frase." },
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Ni idazlea ____.", "opciones": ["naiz", "gara", "da", "zarete"], "correcta": 0, "explicacion": "«Idazle» es escritor; con «ni» el verbo es «naiz»." },
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Ni ere euskalduna ____.", "opciones": ["da", "naiz", "gara", "zara"], "correcta": 1, "explicacion": "«ere» no cambia el verbo: el sujeto sigue siendo «ni»." },
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Ni langilea ____.", "opciones": ["zara", "naiz", "dira", "da"], "correcta": 1, "explicacion": "Primera persona del singular: «naiz»." }
-    ]},
-    { "id": "u4-g03", "variantes": [
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Zu irakaslea ____.", "opciones": ["naiz", "da", "zara", "dira"], "correcta": 2, "explicacion": "Con «zu» (tú) va «zara»." },
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Hura sukaldaria ____.", "opciones": ["da", "naiz", "zara", "gara"], "correcta": 0, "explicacion": "Con «hura» (él/ella) va «da»." },
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Zuek ikasleak ____.", "opciones": ["gara", "dira", "zarete", "zara"], "correcta": 2, "explicacion": "Con «zuek» (vosotros) va «zarete»." },
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Gu euskaldunak ____.", "opciones": ["gara", "dira", "zarete", "naiz"], "correcta": 0, "explicacion": "Con «gu» (nosotros) va «gara»." },
-      { "tipo": "opcion", "instruccion": "Completa la frase", "pregunta": "Bera medikua ____.", "opciones": ["naiz", "da", "dira", "zara"], "correcta": 1, "explicacion": "«Bera» equivale a «hura», así que el verbo es «da»." }
-    ]},
-    { "id": "u4-g04", "variantes": [
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "Yo soy estudiante.", "eu": "Ni ikaslea naiz.", "palabras": ["Ni", "ikaslea", "naiz."] },
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "Tú eres médico.", "eu": "Zu medikua zara.", "palabras": ["Zu", "medikua", "zara."] },
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "Ella es cocinera.", "eu": "Hura sukaldaria da.", "palabras": ["Hura", "sukaldaria", "da."] },
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "Yo también soy estudiante.", "eu": "Ni ere ikaslea naiz.", "palabras": ["Ni", "ere", "ikaslea", "naiz."] },
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "Él es escritor.", "eu": "Hura idazlea da.", "palabras": ["Hura", "idazlea", "da."] }
-    ]},
-    { "id": "u4-g05", "variantes": [
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Cuál es el orden correcto en euskera?", "opciones": ["Ni naiz medikua.", "Naiz ni medikua.", "Ni medikua naiz.", "Medikua naiz ni."], "correcta": 2, "explicacion": "El verbo cierra la frase: Sujeto – Objeto – Verbo." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Dónde va el verbo en una frase normal en euskera?", "opciones": ["Al principio", "Después del sujeto", "Al final", "Da igual"], "correcta": 2, "explicacion": "El orden básico es Sujeto – Objeto – Verbo. El verbo cierra." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Cuál de estas frases está mal construida?", "opciones": ["Gu lagunak gara.", "Zu zara irakaslea.", "Hura ikaslea da.", "Ni Gernikakoa naiz."], "correcta": 1, "explicacion": "«Zu zara irakaslea» pone el verbo en medio. Sería «Zu irakaslea zara»." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "En una pregunta, ¿qué va justo antes del verbo?", "opciones": ["El sujeto", "La palabra interrogativa", "El adjetivo", "Nada"], "correcta": 1, "explicacion": "Interrogativa y verbo van pegados: «Nongoa zara?»." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Dónde se coloca «ere» (también)?", "opciones": ["Al principio de la frase", "Detrás de la palabra a la que acompaña", "Delante del verbo siempre", "Al final"], "correcta": 1, "explicacion": "«Ni ere ikaslea naiz»: «ere» va justo después de «ni»." }
-    ]},
-    { "id": "u4-g06", "variantes": [
-      { "tipo": "pares", "instruccion": "Empareja las profesiones", "pares": [{ "eu": "irakaslea", "es": "profesor/a" }, { "eu": "ikaslea", "es": "estudiante" }, { "eu": "medikua", "es": "médico/a" }, { "eu": "sukaldaria", "es": "cocinero/a" }] },
-      { "tipo": "pares", "instruccion": "Empareja las profesiones", "pares": [{ "eu": "langilea", "es": "trabajador/a" }, { "eu": "idazlea", "es": "escritor/a" }, { "eu": "medikua", "es": "médico/a" }, { "eu": "laguna", "es": "amigo/a" }] },
-      { "tipo": "pares", "instruccion": "Empareja cada oficio con el verbo del que viene", "pares": [{ "eu": "irakaslea", "es": "irakatsi (enseñar)" }, { "eu": "ikaslea", "es": "ikasi (aprender)" }, { "eu": "idazlea", "es": "idatzi (escribir)" }, { "eu": "langilea", "es": "lan (trabajo)" }] },
-      { "tipo": "pares", "instruccion": "Empareja singular y plural", "pares": [{ "eu": "ikaslea", "es": "ikasleak" }, { "eu": "laguna", "es": "lagunak" }, { "eu": "medikua", "es": "medikuak" }, { "eu": "etxea", "es": "etxeak" }] },
-      { "tipo": "pares", "instruccion": "Empareja las palabras", "pares": [{ "eu": "euskalduna", "es": "que habla euskera" }, { "eu": "erdalduna", "es": "que no habla euskera" }, { "eu": "laguna", "es": "el amigo" }, { "eu": "izena", "es": "el nombre" }] }
-    ]},
-    { "id": "u4-g07", "variantes": [
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Cómo se dice «soy de Bilbao»?", "opciones": ["Bilbo naiz.", "Bilbokoa naiz.", "Bilboan naiz.", "Bilbotik naiz."], "correcta": 1, "explicacion": "«-ko» indica procedencia y «-a» es el artículo: Bilbo + ko + a." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Cómo se dice «soy de Gernika»?", "opciones": ["Gernikan naiz.", "Gernika naiz.", "Gernikakoa naiz.", "Gernikara naiz."], "correcta": 2, "explicacion": "Gernika + ko + a. «Gernikan» sería «en Gernika»." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "«Donostiakoa naiz» significa…", "opciones": ["Estoy en San Sebastián", "Soy de San Sebastián", "Voy a San Sebastián", "Vengo de San Sebastián"], "correcta": 1, "explicacion": "El sufijo «-ko» marca origen o pertenencia a un lugar." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Qué pregunta responde «Gernikakoa naiz»?", "opciones": ["Non zaude?", "Nongoa zara?", "Nora zoaz?", "Nor zara?"], "correcta": 1, "explicacion": "Respuesta en «-koa» → pregunta con «Nongoa?»." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Cómo dirías «somos de Gernika»?", "opciones": ["Gu Gernikakoa gara.", "Gu Gernikakoak gara.", "Gu Gernikan gara.", "Gu Gernika gara."], "correcta": 1, "explicacion": "Sujeto plural, así que el atributo también va en plural: «-koak»." }
-    ]},
-    { "id": "u4-g08", "variantes": [
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "«Madril» termina en -l. ¿Cómo se dice «soy de Madrid»?", "opciones": ["Madrilkoa naiz.", "Madrilgoa naiz.", "Madrila naiz.", "Madrilekoa naiz."], "correcta": 1, "explicacion": "Tras -n y -l, el sufijo -ko se convierte en -go." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "«Jaen» acaba en -n. ¿Cómo se dice «soy de Jaén»?", "opciones": ["Jaengoa naiz.", "Jaenkoa naiz.", "Jaena naiz.", "Jaenean naiz."], "correcta": 0, "explicacion": "Misma regla: tras -n y -l, el -ko pasa a -go." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Tras qué letras el sufijo «-ko» se convierte en «-go»?", "opciones": ["Tras vocal", "Tras -n y -l", "Tras -s y -z", "Tras -k y -t"], "correcta": 1, "explicacion": "Solo tras -n y -l: Madrilgoa, Jaengoa." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Por qué existe la variante «-go»?", "opciones": ["Por tradición literaria", "Porque «-lko» y «-nko» serían incómodos de pronunciar", "Para marcar el plural", "Para distinguir países de ciudades"], "correcta": 1, "explicacion": "Es un ajuste fonético, no una regla gramatical de fondo." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Cuál de estas está bien escrita?", "opciones": ["Irungoa naiz.", "Irunkoa naiz.", "Irunekoa naiz.", "Iruna naiz."], "correcta": 0, "explicacion": "«Irun» acaba en -n, así que toca «-go»." }
-    ]},
-    { "id": "u4-g09", "variantes": [
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "¿De dónde eres tú?", "eu": "Nongoa zara zu?", "palabras": ["Nongoa", "zara", "zu?"] },
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "Yo soy de Gernika.", "eu": "Ni Gernikakoa naiz.", "palabras": ["Ni", "Gernikakoa", "naiz."] },
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "¿Quién eres tú?", "eu": "Nor zara zu?", "palabras": ["Nor", "zara", "zu?"] },
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "Ella también es de Bilbao.", "eu": "Hura ere Bilbokoa da.", "palabras": ["Hura", "ere", "Bilbokoa", "da."] },
-      { "tipo": "orden", "instruccion": "Ordena las palabras", "es": "Nosotros somos de Madrid.", "eu": "Gu Madrilgoak gara.", "palabras": ["Gu", "Madrilgoak", "gara."] }
-    ]},
-    { "id": "u4-g10", "variantes": [
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "Soy estudiante.", "respuestas": ["ni ikaslea naiz", "ikaslea naiz"], "pista": "No olvides el artículo -a al final de «ikasle»." },
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "Soy médico.", "respuestas": ["ni medikua naiz", "medikua naiz"], "pista": "«mediku» + artículo, y el verbo al final." },
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "Somos amigos.", "respuestas": ["gu lagunak gara", "lagunak gara"], "pista": "Plural: «-ak». Con «gu» el verbo es «gara»." },
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "Soy de Gernika.", "respuestas": ["ni gernikakoa naiz", "gernikakoa naiz", "gernikakoa naiz ni"], "pista": "Gernika + ko + a, y el verbo cerrando." },
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "Yo también soy profesor.", "respuestas": ["ni ere irakaslea naiz"], "pista": "«ere» va justo detrás de «ni»." }
-    ]},
-    { "id": "u4-g11", "variantes": [
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "¿Cómo te llamas?", "respuestas": ["nola duzu izena", "nola duzu izena?"], "pista": "Literalmente: «¿cómo tienes nombre?»" },
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "¿De dónde eres?", "respuestas": ["nongoa zara", "nongoa zara zu", "nongoa zara?"], "pista": "Empieza por la palabra interrogativa." },
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "Me llamo Ane.", "respuestas": ["ane dut izena", "ni ane naiz", "ane naiz"], "pista": "Vale «Ane dut izena» o simplemente «Ane naiz»." },
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "¿Quién eres tú?", "respuestas": ["nor zara zu", "nor zara", "nor zara zu?"], "pista": "«nor» pegado al verbo." },
-      { "tipo": "traducir", "instruccion": "Escríbelo en euskera", "es": "Ellos son estudiantes.", "respuestas": ["haiek ikasleak dira", "ikasleak dira", "beraiek ikasleak dira"], "pista": "Plural en el sustantivo y en el verbo." }
-    ]},
-    { "id": "u4-g12", "variantes": [
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Qué significa «euskalduna»?", "opciones": ["Nacido en el País Vasco", "Que habla euskera", "Profesor de euskera", "Del País Vasco francés"], "correcta": 1, "explicacion": "«Euskaldun» = «el que tiene euskera». En su sentido básico es cuestión de lengua, no de origen (aunque también se oiga como «del País Vasco»)." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "¿Y «erdalduna»?", "opciones": ["Extranjero", "Que no habla euskera", "Bilingüe", "Del sur"], "correcta": 1, "explicacion": "«Erdara» es cualquier lengua que no sea el euskera; «erdaldun» quien solo habla esas." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "Alguien nacido en Sevilla que habla euskera perfectamente es…", "opciones": ["erdalduna", "euskalduna", "ninguna de las dos", "las dos a la vez"], "correcta": 1, "explicacion": "«Euskaldun» se define por la lengua, no por el lugar de nacimiento." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "En Gernika oirás «Ni Gernikakoa naz». ¿Qué forma del batua sustituye «naz»?", "opciones": ["da", "naiz", "gara", "zara"], "correcta": 1, "explicacion": "En bizkaiera «naiz» se dice «naz». Las demás formas de «izan» apenas cambian." },
-      { "tipo": "opcion", "instruccion": "Elige la opción correcta", "pregunta": "En bizkaiera, «zuek zarete» se dice…", "opciones": ["zuek zarie", "zuek zaraz", "zuek dozue", "zuek gara"], "correcta": 0, "explicacion": "«Zarete» pasa a «zarie». Junto con «naz», son los dos cambios de «izan»." }
-    ]}
+    {
+      "id": "u4-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada pronombre con su verbo",
+          "pares": [
+            {
+              "eu": "naiz",
+              "es": "ni"
+            },
+            {
+              "eu": "zara",
+              "es": "zu"
+            },
+            {
+              "eu": "gara",
+              "es": "gu"
+            },
+            {
+              "eu": "dira",
+              "es": "haiek"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada pronombre con su verbo",
+          "pares": [
+            {
+              "eu": "da",
+              "es": "hura"
+            },
+            {
+              "eu": "zarete",
+              "es": "zuek"
+            },
+            {
+              "eu": "naiz",
+              "es": "ni"
+            },
+            {
+              "eu": "gara",
+              "es": "gu"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja con la traducción",
+          "pares": [
+            {
+              "eu": "naiz",
+              "es": "soy"
+            },
+            {
+              "eu": "zara",
+              "es": "eres"
+            },
+            {
+              "eu": "da",
+              "es": "es"
+            },
+            {
+              "eu": "dira",
+              "es": "son"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja con la traducción",
+          "pares": [
+            {
+              "eu": "gara",
+              "es": "somos"
+            },
+            {
+              "eu": "zarete",
+              "es": "sois"
+            },
+            {
+              "eu": "dira",
+              "es": "son"
+            },
+            {
+              "eu": "da",
+              "es": "es"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las frases",
+          "pares": [
+            {
+              "eu": "Ni ikaslea naiz.",
+              "es": "Soy estudiante."
+            },
+            {
+              "eu": "Zu medikua zara.",
+              "es": "Eres médico."
+            },
+            {
+              "eu": "Gu lagunak gara.",
+              "es": "Somos amigos."
+            },
+            {
+              "eu": "Haiek irakasleak dira.",
+              "es": "Son profesores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni Mikel ____.",
+          "opciones": [
+            "da",
+            "naiz",
+            "zara",
+            "gara"
+          ],
+          "correcta": 1,
+          "explicacion": "Con «ni» (yo) siempre va «naiz»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni Gernikakoa ____.",
+          "opciones": [
+            "zara",
+            "da",
+            "naiz",
+            "dira"
+          ],
+          "correcta": 2,
+          "explicacion": "Sujeto «ni» → «naiz», y el verbo cierra la frase."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni idazlea ____.",
+          "opciones": [
+            "naiz",
+            "gara",
+            "da",
+            "zarete"
+          ],
+          "correcta": 0,
+          "explicacion": "«Idazle» es escritor; con «ni» el verbo es «naiz»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni ere euskalduna ____.",
+          "opciones": [
+            "da",
+            "naiz",
+            "gara",
+            "zara"
+          ],
+          "correcta": 1,
+          "explicacion": "«ere» no cambia el verbo: el sujeto sigue siendo «ni»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni langilea ____.",
+          "opciones": [
+            "zara",
+            "naiz",
+            "dira",
+            "da"
+          ],
+          "correcta": 1,
+          "explicacion": "Primera persona del singular: «naiz»."
+        }
+      ]
+    },
+    {
+      "id": "u4-g03",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zu irakaslea ____.",
+          "opciones": [
+            "naiz",
+            "da",
+            "zara",
+            "dira"
+          ],
+          "correcta": 2,
+          "explicacion": "Con «zu» (tú) va «zara»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hura sukaldaria ____.",
+          "opciones": [
+            "da",
+            "naiz",
+            "zara",
+            "gara"
+          ],
+          "correcta": 0,
+          "explicacion": "Con «hura» (él/ella) va «da»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zuek ikasleak ____.",
+          "opciones": [
+            "gara",
+            "dira",
+            "zarete",
+            "zara"
+          ],
+          "correcta": 2,
+          "explicacion": "Con «zuek» (vosotros) va «zarete»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Gu euskaldunak ____.",
+          "opciones": [
+            "gara",
+            "dira",
+            "zarete",
+            "naiz"
+          ],
+          "correcta": 0,
+          "explicacion": "Con «gu» (nosotros) va «gara»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Bera medikua ____.",
+          "opciones": [
+            "naiz",
+            "da",
+            "dira",
+            "zara"
+          ],
+          "correcta": 1,
+          "explicacion": "«Bera» equivale a «hura», así que el verbo es «da»."
+        }
+      ]
+    },
+    {
+      "id": "u4-g04",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Yo soy estudiante.",
+          "eu": "Ni ikaslea naiz.",
+          "palabras": [
+            "Ni",
+            "ikaslea",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Tú eres médico.",
+          "eu": "Zu medikua zara.",
+          "palabras": [
+            "Zu",
+            "medikua",
+            "zara."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ella es cocinera.",
+          "eu": "Hura sukaldaria da.",
+          "palabras": [
+            "Hura",
+            "sukaldaria",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Yo también soy estudiante.",
+          "eu": "Ni ere ikaslea naiz.",
+          "palabras": [
+            "Ni",
+            "ere",
+            "ikaslea",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Él es escritor.",
+          "eu": "Hura idazlea da.",
+          "palabras": [
+            "Hura",
+            "idazlea",
+            "da."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4-g05",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál es el orden correcto en euskera?",
+          "opciones": [
+            "Ni naiz medikua.",
+            "Naiz ni medikua.",
+            "Ni medikua naiz.",
+            "Medikua naiz ni."
+          ],
+          "correcta": 2,
+          "explicacion": "El verbo cierra la frase: Sujeto – Objeto – Verbo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde va el verbo en una frase normal en euskera?",
+          "opciones": [
+            "Al principio",
+            "Después del sujeto",
+            "Al final",
+            "Da igual"
+          ],
+          "correcta": 2,
+          "explicacion": "El orden básico es Sujeto – Objeto – Verbo. El verbo cierra."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas frases está mal construida?",
+          "opciones": [
+            "Gu lagunak gara.",
+            "Zu zara irakaslea.",
+            "Hura ikaslea da.",
+            "Ni Gernikakoa naiz."
+          ],
+          "correcta": 1,
+          "explicacion": "«Zu zara irakaslea» pone el verbo en medio. Sería «Zu irakaslea zara»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En una pregunta, ¿qué va justo antes del verbo?",
+          "opciones": [
+            "El sujeto",
+            "La palabra interrogativa",
+            "El adjetivo",
+            "Nada"
+          ],
+          "correcta": 1,
+          "explicacion": "Interrogativa y verbo van pegados: «Nongoa zara?»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde se coloca «ere» (también)?",
+          "opciones": [
+            "Al principio de la frase",
+            "Detrás de la palabra a la que acompaña",
+            "Delante del verbo siempre",
+            "Al final"
+          ],
+          "correcta": 1,
+          "explicacion": "«Ni ere ikaslea naiz»: «ere» va justo después de «ni»."
+        }
+      ]
+    },
+    {
+      "id": "u4-g06",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las profesiones",
+          "pares": [
+            {
+              "eu": "irakaslea",
+              "es": "profesor/a"
+            },
+            {
+              "eu": "ikaslea",
+              "es": "estudiante"
+            },
+            {
+              "eu": "medikua",
+              "es": "médico/a"
+            },
+            {
+              "eu": "sukaldaria",
+              "es": "cocinero/a"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las profesiones",
+          "pares": [
+            {
+              "eu": "langilea",
+              "es": "trabajador/a"
+            },
+            {
+              "eu": "idazlea",
+              "es": "escritor/a"
+            },
+            {
+              "eu": "medikua",
+              "es": "médico/a"
+            },
+            {
+              "eu": "laguna",
+              "es": "amigo/a"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada oficio con el verbo del que viene",
+          "pares": [
+            {
+              "eu": "irakaslea",
+              "es": "irakatsi (enseñar)"
+            },
+            {
+              "eu": "ikaslea",
+              "es": "ikasi (aprender)"
+            },
+            {
+              "eu": "idazlea",
+              "es": "idatzi (escribir)"
+            },
+            {
+              "eu": "langilea",
+              "es": "lan (trabajo)"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja singular y plural",
+          "pares": [
+            {
+              "eu": "ikaslea",
+              "es": "ikasleak"
+            },
+            {
+              "eu": "laguna",
+              "es": "lagunak"
+            },
+            {
+              "eu": "medikua",
+              "es": "medikuak"
+            },
+            {
+              "eu": "etxea",
+              "es": "etxeak"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las palabras",
+          "pares": [
+            {
+              "eu": "euskalduna",
+              "es": "que habla euskera"
+            },
+            {
+              "eu": "erdalduna",
+              "es": "que no habla euskera"
+            },
+            {
+              "eu": "laguna",
+              "es": "el amigo"
+            },
+            {
+              "eu": "izena",
+              "es": "el nombre"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4-g07",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice «soy de Bilbao»?",
+          "opciones": [
+            "Bilbo naiz.",
+            "Bilbokoa naiz.",
+            "Bilboan naiz.",
+            "Bilbotik naiz."
+          ],
+          "correcta": 1,
+          "explicacion": "«-ko» indica procedencia y «-a» es el artículo: Bilbo + ko + a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice «soy de Gernika»?",
+          "opciones": [
+            "Gernikan naiz.",
+            "Gernika naiz.",
+            "Gernikakoa naiz.",
+            "Gernikara naiz."
+          ],
+          "correcta": 2,
+          "explicacion": "Gernika + ko + a. «Gernikan» sería «en Gernika»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Donostiakoa naiz» significa…",
+          "opciones": [
+            "Estoy en San Sebastián",
+            "Soy de San Sebastián",
+            "Voy a San Sebastián",
+            "Vengo de San Sebastián"
+          ],
+          "correcta": 1,
+          "explicacion": "El sufijo «-ko» marca origen o pertenencia a un lugar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué pregunta responde «Gernikakoa naiz»?",
+          "opciones": [
+            "Non zaude?",
+            "Nongoa zara?",
+            "Nora zoaz?",
+            "Nor zara?"
+          ],
+          "correcta": 1,
+          "explicacion": "Respuesta en «-koa» → pregunta con «Nongoa?»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo dirías «somos de Gernika»?",
+          "opciones": [
+            "Gu Gernikakoa gara.",
+            "Gu Gernikakoak gara.",
+            "Gu Gernikan gara.",
+            "Gu Gernika gara."
+          ],
+          "correcta": 1,
+          "explicacion": "Sujeto plural, así que el atributo también va en plural: «-koak»."
+        }
+      ]
+    },
+    {
+      "id": "u4-g08",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Madril» termina en -l. ¿Cómo se dice «soy de Madrid»?",
+          "opciones": [
+            "Madrilkoa naiz.",
+            "Madrilgoa naiz.",
+            "Madrila naiz.",
+            "Madrilekoa naiz."
+          ],
+          "correcta": 1,
+          "explicacion": "Tras -n y -l, el sufijo -ko se convierte en -go."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Jaen» acaba en -n. ¿Cómo se dice «soy de Jaén»?",
+          "opciones": [
+            "Jaengoa naiz.",
+            "Jaenkoa naiz.",
+            "Jaena naiz.",
+            "Jaenean naiz."
+          ],
+          "correcta": 0,
+          "explicacion": "Misma regla: tras -n y -l, el -ko pasa a -go."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Tras qué letras el sufijo «-ko» se convierte en «-go»?",
+          "opciones": [
+            "Tras vocal",
+            "Tras -n y -l",
+            "Tras -s y -z",
+            "Tras -k y -t"
+          ],
+          "correcta": 1,
+          "explicacion": "Solo tras -n y -l: Madrilgoa, Jaengoa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Por qué existe la variante «-go»?",
+          "opciones": [
+            "Por tradición literaria",
+            "Porque «-lko» y «-nko» serían incómodos de pronunciar",
+            "Para marcar el plural",
+            "Para distinguir países de ciudades"
+          ],
+          "correcta": 1,
+          "explicacion": "Es un ajuste fonético, no una regla gramatical de fondo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas está bien escrita?",
+          "opciones": [
+            "Irungoa naiz.",
+            "Irunkoa naiz.",
+            "Irunekoa naiz.",
+            "Iruna naiz."
+          ],
+          "correcta": 0,
+          "explicacion": "«Irun» acaba en -n, así que toca «-go»."
+        }
+      ]
+    },
+    {
+      "id": "u4-g09",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿De dónde eres tú?",
+          "eu": "Nongoa zara zu?",
+          "palabras": [
+            "Nongoa",
+            "zara",
+            "zu?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Yo soy de Gernika.",
+          "eu": "Ni Gernikakoa naiz.",
+          "palabras": [
+            "Ni",
+            "Gernikakoa",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Quién eres tú?",
+          "eu": "Nor zara zu?",
+          "palabras": [
+            "Nor",
+            "zara",
+            "zu?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ella también es de Bilbao.",
+          "eu": "Hura ere Bilbokoa da.",
+          "palabras": [
+            "Hura",
+            "ere",
+            "Bilbokoa",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Nosotros somos de Madrid.",
+          "eu": "Gu Madrilgoak gara.",
+          "palabras": [
+            "Gu",
+            "Madrilgoak",
+            "gara."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u4-g10",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Soy estudiante.",
+          "respuestas": [
+            "ni ikaslea naiz",
+            "ikaslea naiz"
+          ],
+          "pista": "No olvides el artículo -a al final de «ikasle»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Soy médico.",
+          "respuestas": [
+            "ni medikua naiz",
+            "medikua naiz"
+          ],
+          "pista": "«mediku» + artículo, y el verbo al final."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Somos amigos.",
+          "respuestas": [
+            "gu lagunak gara",
+            "lagunak gara"
+          ],
+          "pista": "Plural: «-ak». Con «gu» el verbo es «gara»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Soy de Gernika.",
+          "respuestas": [
+            "ni gernikakoa naiz",
+            "gernikakoa naiz",
+            "gernikakoa naiz ni"
+          ],
+          "pista": "Gernika + ko + a, y el verbo cerrando."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Yo también soy profesor.",
+          "respuestas": [
+            "ni ere irakaslea naiz"
+          ],
+          "pista": "«ere» va justo detrás de «ni»."
+        }
+      ]
+    },
+    {
+      "id": "u4-g11",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Cómo te llamas?",
+          "respuestas": [
+            "nola duzu izena",
+            "nola duzu izena?"
+          ],
+          "pista": "Literalmente: «¿cómo tienes nombre?»"
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿De dónde eres?",
+          "respuestas": [
+            "nongoa zara",
+            "nongoa zara zu",
+            "nongoa zara?"
+          ],
+          "pista": "Empieza por la palabra interrogativa."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Me llamo Ane.",
+          "respuestas": [
+            "ane dut izena",
+            "ni ane naiz",
+            "ane naiz"
+          ],
+          "pista": "Vale «Ane dut izena» o simplemente «Ane naiz»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Quién eres tú?",
+          "respuestas": [
+            "nor zara zu",
+            "nor zara",
+            "nor zara zu?"
+          ],
+          "pista": "«nor» pegado al verbo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ellos son estudiantes.",
+          "respuestas": [
+            "haiek ikasleak dira",
+            "ikasleak dira",
+            "beraiek ikasleak dira"
+          ],
+          "pista": "Plural en el sustantivo y en el verbo."
+        }
+      ]
+    },
+    {
+      "id": "u4-g12",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «euskalduna»?",
+          "opciones": [
+            "Nacido en el País Vasco",
+            "Que habla euskera",
+            "Profesor de euskera",
+            "Del País Vasco francés"
+          ],
+          "correcta": 1,
+          "explicacion": "«Euskaldun» = «el que tiene euskera». En su sentido básico es cuestión de lengua, no de origen (aunque también se oiga como «del País Vasco»)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Y «erdalduna»?",
+          "opciones": [
+            "Extranjero",
+            "Que no habla euskera",
+            "Bilingüe",
+            "Del sur"
+          ],
+          "correcta": 1,
+          "explicacion": "«Erdara» es cualquier lengua que no sea el euskera; «erdaldun» quien solo habla esas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Alguien nacido en Sevilla que habla euskera perfectamente es…",
+          "opciones": [
+            "erdalduna",
+            "euskalduna",
+            "ninguna de las dos",
+            "las dos a la vez"
+          ],
+          "correcta": 1,
+          "explicacion": "«Euskaldun» se define por la lengua, no por el lugar de nacimiento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En Gernika oirás «Ni Gernikakoa naz». ¿Qué forma del batua sustituye «naz»?",
+          "opciones": [
+            "da",
+            "naiz",
+            "gara",
+            "zara"
+          ],
+          "correcta": 1,
+          "explicacion": "En bizkaiera «naiz» se dice «naz». Las demás formas de «izan» apenas cambian."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En bizkaiera, «zuek zarete» se dice…",
+          "opciones": [
+            "zuek zarie",
+            "zuek zaraz",
+            "zuek dozue",
+            "zuek gara"
+          ],
+          "correcta": 0,
+          "explicacion": "«Zarete» pasa a «zarie». Junto con «naz», son los dos cambios de «izan»."
+        }
+      ]
+    }
   ]
 }

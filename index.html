@@ -207,7 +207,18 @@
                placeholder="Buscar en euskera o en castellano…"
                autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
                aria-label="Buscar en el diccionario">
-        <p class="dictcount" id="dictCount" aria-live="polite"></p>
+        <div class="dictletras" id="dictLetras" aria-label="Filtrar por letra"></div>
+        <div class="dicttipo">
+          <label class="dicttipo__label" for="dictCat">Filtrar por:</label>
+          <select class="dictcat" id="dictCat" aria-label="Filtrar por tipo de palabra">
+            <option value="">Todos</option>
+            <option value="sustantivo">Sustantivos</option>
+            <option value="verbo">Verbos</option>
+            <option value="adjetivo">Adjetivos</option>
+            <option value="otros">Otros</option>
+          </select>
+        </div>
+        <p class="dictcount" id="dictCount" aria-live="polite" hidden></p>
       </div>
       <div id="dictContent"></div>
     </div>

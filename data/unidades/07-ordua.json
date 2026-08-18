@@ -10,199 +10,232 @@
       "eu": "ordua",
       "es": "la hora",
       "nota": null,
-      "audio": "unidades/u7/ordua.mp3"
+      "audio": "unidades/u7/ordua.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "Zer ordu da?",
       "es": "¿Qué hora es?",
       "nota": null,
-      "audio": "unidades/u7/zer-ordu-da.mp3"
+      "audio": "unidades/u7/zer-ordu-da.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "eta erdiak",
       "es": "y media",
       "nota": "Aquí la hora NO lleva -ak: «hiru eta erdiak» (las tres y media). El plural lo lleva solo «erdiak».",
-      "audio": "unidades/u7/eta-erdiak.mp3"
+      "audio": "unidades/u7/eta-erdiak.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "eta laurden",
       "es": "y cuarto",
       "nota": null,
-      "audio": "unidades/u7/eta-laurden.mp3"
+      "audio": "unidades/u7/eta-laurden.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "laurden gutxi",
       "es": "menos cuarto",
       "nota": "«gutxi» es «poco»: «cuarto de menos».",
-      "audio": "unidades/u7/laurden-gutxi.mp3"
+      "audio": "unidades/u7/laurden-gutxi.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "eguna",
       "es": "el día",
       "nota": null,
-      "audio": "unidades/u7/eguna.mp3"
+      "audio": "unidades/u7/eguna.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "astea",
       "es": "la semana",
       "nota": null,
-      "audio": "unidades/u7/astea.mp3"
+      "audio": "unidades/u7/astea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "asteburua",
       "es": "el fin de semana",
       "nota": "De «aste» (semana) + «buru» (cabeza).",
-      "audio": "unidades/u7/asteburua.mp3"
+      "audio": "unidades/u7/asteburua.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "astelehena",
       "es": "el lunes",
       "nota": null,
-      "audio": "unidades/u7/astelehena.mp3"
+      "audio": "unidades/u7/astelehena.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "asteartea",
       "es": "el martes",
       "nota": null,
-      "audio": "unidades/u7/asteartea.mp3"
+      "audio": "unidades/u7/asteartea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "asteazkena",
       "es": "el miércoles",
       "nota": null,
-      "audio": "unidades/u7/asteazkena.mp3"
+      "audio": "unidades/u7/asteazkena.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "osteguna",
       "es": "el jueves",
       "nota": null,
-      "audio": "unidades/u7/osteguna.mp3"
+      "audio": "unidades/u7/osteguna.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "ostirala",
       "es": "el viernes",
       "nota": null,
-      "audio": "unidades/u7/ostirala.mp3"
+      "audio": "unidades/u7/ostirala.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "larunbata",
       "es": "el sábado",
       "nota": null,
-      "audio": "unidades/u7/larunbata.mp3"
+      "audio": "unidades/u7/larunbata.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "igandea",
       "es": "el domingo",
       "nota": null,
-      "audio": "unidades/u7/igandea.mp3"
+      "audio": "unidades/u7/igandea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "goiza",
       "es": "la mañana",
       "nota": null,
-      "audio": "unidades/u7/goiza.mp3"
+      "audio": "unidades/u7/goiza.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "eguerdia",
       "es": "el mediodía",
       "nota": "De «egu-» (día) + «erdi» (mitad).",
-      "audio": "unidades/u7/eguerdia.mp3"
+      "audio": "unidades/u7/eguerdia.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "arratsaldea",
       "es": "la tarde",
       "nota": null,
-      "audio": "unidades/u7/arratsaldea.mp3"
+      "audio": "unidades/u7/arratsaldea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "iluntzea",
       "es": "el anochecer",
       "nota": "De «ilun» (oscuro).",
-      "audio": "unidades/u7/iluntzea.mp3"
+      "audio": "unidades/u7/iluntzea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "gaua",
       "es": "la noche",
       "nota": null,
-      "audio": "unidades/u7/gaua.mp3"
+      "audio": "unidades/u7/gaua.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "gaur",
       "es": "hoy",
       "nota": null,
-      "audio": "unidades/u7/gaur.mp3"
+      "audio": "unidades/u7/gaur.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "bihar",
       "es": "mañana",
       "nota": null,
-      "audio": "unidades/u7/bihar.mp3"
+      "audio": "unidades/u7/bihar.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "atzo",
       "es": "ayer",
       "nota": null,
-      "audio": "unidades/u7/atzo.mp3"
+      "audio": "unidades/u7/atzo.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "etzi",
       "es": "pasado mañana",
       "nota": null,
-      "audio": "unidades/u7/etzi.mp3"
+      "audio": "unidades/u7/etzi.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "bart",
       "es": "anoche",
       "nota": null,
-      "audio": "unidades/u7/bart.mp3"
+      "audio": "unidades/u7/bart.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "orain",
       "es": "ahora",
       "nota": null,
-      "audio": "unidades/u7/orain.mp3"
+      "audio": "unidades/u7/orain.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gero",
       "es": "luego, después",
       "nota": null,
-      "audio": "unidades/u7/gero.mp3"
+      "audio": "unidades/u7/gero.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "beti",
       "es": "siempre",
       "nota": null,
-      "audio": "unidades/u7/beti.mp3"
+      "audio": "unidades/u7/beti.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "askotan",
       "es": "a menudo",
       "nota": null,
-      "audio": "unidades/u7/askotan.mp3"
+      "audio": "unidades/u7/askotan.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "batzuetan",
       "es": "a veces",
       "nota": null,
-      "audio": "unidades/u7/batzuetan.mp3"
+      "audio": "unidades/u7/batzuetan.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "inoiz ez",
       "es": "nunca",
       "nota": "«inoiz» solo significa «alguna vez»; el «ez» es lo que lo niega.",
-      "audio": "unidades/u7/inoiz-ez.mp3"
+      "audio": "unidades/u7/inoiz-ez.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "goiz",
       "es": "temprano",
       "nota": "Sin artículo es «temprano»; con él, «la mañana».",
-      "audio": "unidades/u7/goiz.mp3"
+      "audio": "unidades/u7/goiz.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "berandu",
       "es": "tarde",
       "nota": "Adverbio. No confundir con «arratsaldea», que es el rato de la tarde.",
-      "audio": "unidades/u7/berandu.mp3"
+      "audio": "unidades/u7/berandu.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

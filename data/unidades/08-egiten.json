@@ -10,235 +10,274 @@
       "eu": "jan",
       "es": "comer",
       "nota": "Forma de diccionario. Para «como» hace falta «jaten dut».",
-      "audio": "unidades/u8/jan.mp3"
+      "audio": "unidades/u8/jan.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "jaten dut",
       "es": "(yo) como",
       "nota": null,
-      "audio": "unidades/u8/jaten-dut.mp3"
+      "audio": "unidades/u8/jaten-dut.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "edan",
       "es": "beber",
       "nota": null,
-      "audio": "unidades/u8/edan.mp3"
+      "audio": "unidades/u8/edan.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "edaten dut",
       "es": "(yo) bebo",
       "nota": null,
-      "audio": "unidades/u8/edaten-dut.mp3"
+      "audio": "unidades/u8/edaten-dut.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "egin",
       "es": "hacer",
       "nota": null,
-      "audio": "unidades/u8/egin.mp3"
+      "audio": "unidades/u8/egin.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "egiten dut",
       "es": "(yo) hago",
       "nota": null,
-      "audio": "unidades/u8/egiten-dut.mp3"
+      "audio": "unidades/u8/egiten-dut.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "lan egin",
       "es": "trabajar",
       "nota": "Literalmente «hacer trabajo».",
-      "audio": "unidades/u8/lan-egin.mp3"
+      "audio": "unidades/u8/lan-egin.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "hitz egin",
       "es": "hablar",
       "nota": "Literalmente «hacer palabra».",
-      "audio": "unidades/u8/hitz-egin.mp3"
+      "audio": "unidades/u8/hitz-egin.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "ikasi",
       "es": "estudiar, aprender",
       "nota": "Una sola palabra para las dos cosas.",
-      "audio": "unidades/u8/ikasi.mp3"
+      "audio": "unidades/u8/ikasi.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "irakurri",
       "es": "leer",
       "nota": null,
-      "audio": "unidades/u8/irakurri.mp3"
+      "audio": "unidades/u8/irakurri.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "idatzi",
       "es": "escribir",
       "nota": null,
-      "audio": "unidades/u8/idatzi.mp3"
+      "audio": "unidades/u8/idatzi.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "entzun",
       "es": "escuchar, oír",
       "nota": null,
-      "audio": "unidades/u8/entzun.mp3"
+      "audio": "unidades/u8/entzun.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "ikusi",
       "es": "ver",
       "nota": null,
-      "audio": "unidades/u8/ikusi.mp3"
+      "audio": "unidades/u8/ikusi.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "erosi",
       "es": "comprar",
       "nota": null,
-      "audio": "unidades/u8/erosi.mp3"
+      "audio": "unidades/u8/erosi.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "hartu",
       "es": "coger, tomar",
       "nota": null,
-      "audio": "unidades/u8/hartu.mp3"
+      "audio": "unidades/u8/hartu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "saldu",
       "es": "vender",
       "nota": "Sale en la regla del -t(z)en: saldu → saltzen.",
-      "audio": "unidades/u8/saldu.mp3"
+      "audio": "unidades/u8/saldu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "jarri",
       "es": "poner",
       "nota": "Irregular en -t(z)en: jarri → jartzen.",
-      "audio": "unidades/u8/jarri.mp3"
+      "audio": "unidades/u8/jarri.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "dirua",
       "es": "el dinero",
       "nota": null,
-      "audio": "unidades/u8/dirua.mp3"
+      "audio": "unidades/u8/dirua.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "arazoa",
       "es": "el problema",
       "nota": "«Ez dago arazorik» — no hay problema.",
-      "audio": "unidades/u8/arazoa.mp3"
+      "audio": "unidades/u8/arazoa.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "berandu",
       "es": "tarde",
       "nota": "Lo contrario es «goiz» (temprano).",
-      "audio": "unidades/u8/berandu.mp3"
+      "audio": "unidades/u8/berandu.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "nahi dut",
       "es": "quiero",
       "nota": "Se usa con la forma de diccionario: «ura nahi dut».",
-      "audio": "unidades/u8/nahi-dut.mp3"
+      "audio": "unidades/u8/nahi-dut.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "ogia",
       "es": "el pan",
       "nota": null,
-      "audio": "unidades/u8/ogia.mp3"
+      "audio": "unidades/u8/ogia.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "ura",
       "es": "el agua",
       "nota": null,
-      "audio": "unidades/u8/ura.mp3"
+      "audio": "unidades/u8/ura.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "kafea",
       "es": "el café",
       "nota": null,
-      "audio": "unidades/u8/kafea.mp3"
+      "audio": "unidades/u8/kafea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "esnea",
       "es": "la leche",
       "nota": null,
-      "audio": "unidades/u8/esnea.mp3"
+      "audio": "unidades/u8/esnea.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "ardoa",
       "es": "el vino",
       "nota": null,
-      "audio": "unidades/u8/ardoa.mp3"
+      "audio": "unidades/u8/ardoa.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "garagardoa",
       "es": "la cerveza",
       "nota": "De «garagar» (cebada) + «ardo» (vino).",
-      "audio": "unidades/u8/garagardoa.mp3"
+      "audio": "unidades/u8/garagardoa.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "arraina",
       "es": "el pescado",
       "nota": null,
-      "audio": "unidades/u8/arraina.mp3"
+      "audio": "unidades/u8/arraina.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "haragia",
       "es": "la carne",
       "nota": null,
-      "audio": "unidades/u8/haragia.mp3"
+      "audio": "unidades/u8/haragia.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "barazkiak",
       "es": "las verduras",
       "nota": null,
-      "audio": "unidades/u8/barazkiak.mp3"
+      "audio": "unidades/u8/barazkiak.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "sagarra",
       "es": "la manzana",
       "nota": "De ahí «sagardoa», la sidra: sagar + ardo.",
-      "audio": "unidades/u8/sagarra.mp3"
+      "audio": "unidades/u8/sagarra.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "gosaria",
       "es": "el desayuno",
       "nota": null,
-      "audio": "unidades/u8/gosaria.mp3"
+      "audio": "unidades/u8/gosaria.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "bazkaria",
       "es": "la comida (del mediodía)",
       "nota": null,
-      "audio": "unidades/u8/bazkaria.mp3"
+      "audio": "unidades/u8/bazkaria.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "afaria",
       "es": "la cena",
       "nota": null,
-      "audio": "unidades/u8/afaria.mp3"
+      "audio": "unidades/u8/afaria.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "liburua",
       "es": "el libro",
       "nota": null,
-      "audio": "unidades/u8/liburua.mp3"
+      "audio": "unidades/u8/liburua.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "musika",
       "es": "la música",
       "nota": null,
-      "audio": "unidades/u8/musika.mp3"
+      "audio": "unidades/u8/musika.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "euskara",
       "es": "el euskera",
       "nota": "Sin artículo cuando es objeto genérico: «euskara ikasten dut».",
-      "audio": "unidades/u8/euskara.mp3"
+      "audio": "unidades/u8/euskara.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "ez",
       "es": "no",
       "nota": null,
-      "audio": "unidades/u8/ez.mp3"
+      "audio": "unidades/u8/ez.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "ezer ez",
       "es": "nada",
       "nota": null,
-      "audio": "unidades/u8/ezer-ez.mp3"
+      "audio": "unidades/u8/ezer-ez.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

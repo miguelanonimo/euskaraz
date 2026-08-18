@@ -9,177 +9,212 @@
     {
       "eu": "bat",
       "es": "uno",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "bi",
       "es": "dos",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hiru",
       "es": "tres",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "lau",
       "es": "cuatro",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "bost",
       "es": "cinco",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "sei",
       "es": "seis",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "zazpi",
       "es": "siete",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "zortzi",
       "es": "ocho",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "bederatzi",
       "es": "nueve",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hamar",
       "es": "diez",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hamaika",
       "es": "once",
-      "nota": "También significa «un montón», coloquialmente."
+      "nota": "También significa «un montón», coloquialmente.",
+      "categoria": "otros"
     },
     {
       "eu": "hamabi",
       "es": "doce",
-      "nota": "hamar + bi"
+      "nota": "hamar + bi",
+      "categoria": "otros"
     },
     {
       "eu": "hamahiru",
       "es": "trece",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hamalau",
       "es": "catorce",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hamabost",
       "es": "quince",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hamasei",
       "es": "dieciséis",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hamazazpi",
       "es": "diecisiete",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "hemezortzi",
       "es": "dieciocho",
-      "nota": "El prefijo cambia a «heme-». También se oye «hamazortzi»."
+      "nota": "El prefijo cambia a «heme-». También se oye «hamazortzi».",
+      "categoria": "otros"
     },
     {
       "eu": "hemeretzi",
       "es": "diecinueve",
-      "nota": "heme- + bederatzi, contraído."
+      "nota": "heme- + bederatzi, contraído.",
+      "categoria": "otros"
     },
     {
       "eu": "hogei",
       "es": "veinte",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "dut",
       "es": "(yo) tengo",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "duzu",
       "es": "(tú) tienes",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "du",
       "es": "(él/ella) tiene",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "ditut",
       "es": "(yo) tengo (varias cosas)",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "urtea",
       "es": "el año",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "anaia",
       "es": "hermano (de un chico)",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "arreba",
       "es": "hermana (de un chico)",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "neba",
       "es": "hermano (de una chica)",
-      "nota": "Palabra especialmente viva en Bizkaia."
+      "nota": "Palabra especialmente viva en Bizkaia.",
+      "categoria": "sustantivo"
     },
     {
       "eu": "ahizpa",
       "es": "hermana (de una chica)",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "aita",
       "es": "padre",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "ama",
       "es": "madre",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "semea",
       "es": "el hijo",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "alaba",
       "es": "la hija",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "txakurra",
       "es": "el perro",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "katua",
       "es": "el gato",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     }
   ],
   "gramatica": [

@@ -10,205 +10,239 @@
       "eu": "nintzen",
       "es": "(yo) era, fui",
       "nota": null,
-      "audio": "unidades/u11/nintzen.mp3"
+      "audio": "unidades/u11/nintzen.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "zinen",
       "es": "(tú) eras, fuiste",
       "nota": null,
-      "audio": "unidades/u11/zinen.mp3"
+      "audio": "unidades/u11/zinen.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "zen",
       "es": "(él/ella) era, fue",
       "nota": null,
-      "audio": "unidades/u11/zen.mp3"
+      "audio": "unidades/u11/zen.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "ginen",
       "es": "(nosotros) éramos",
       "nota": null,
-      "audio": "unidades/u11/ginen.mp3"
+      "audio": "unidades/u11/ginen.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "zineten",
       "es": "(vosotros) erais",
       "nota": null,
-      "audio": "unidades/u11/zineten.mp3"
+      "audio": "unidades/u11/zineten.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "ziren",
       "es": "(ellos) eran",
       "nota": null,
-      "audio": "unidades/u11/ziren.mp3"
+      "audio": "unidades/u11/ziren.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "nuen",
       "es": "(yo) tenía, tuve",
       "nota": null,
-      "audio": "unidades/u11/nuen.mp3"
+      "audio": "unidades/u11/nuen.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "zenuen",
       "es": "(tú) tenías",
       "nota": null,
-      "audio": "unidades/u11/zenuen.mp3"
+      "audio": "unidades/u11/zenuen.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "zuen",
       "es": "(él/ella) tenía",
       "nota": null,
-      "audio": "unidades/u11/zuen.mp3"
+      "audio": "unidades/u11/zuen.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "genuen",
       "es": "(nosotros) teníamos",
       "nota": null,
-      "audio": "unidades/u11/genuen.mp3"
+      "audio": "unidades/u11/genuen.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "zuten",
       "es": "(ellos) tenían",
       "nota": null,
-      "audio": "unidades/u11/zuten.mp3"
+      "audio": "unidades/u11/zuten.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "nengoen",
       "es": "(yo) estaba",
       "nota": null,
-      "audio": "unidades/u11/nengoen.mp3"
+      "audio": "unidades/u11/nengoen.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "zegoen",
       "es": "(él/ella) estaba",
       "nota": null,
-      "audio": "unidades/u11/zegoen.mp3"
+      "audio": "unidades/u11/zegoen.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "lehen",
       "es": "antes",
       "nota": null,
-      "audio": "unidades/u11/lehen.mp3"
+      "audio": "unidades/u11/lehen.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "orduan",
       "es": "entonces",
       "nota": null,
-      "audio": "unidades/u11/orduan.mp3"
+      "audio": "unidades/u11/orduan.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "gero",
       "es": "luego",
       "nota": "Ya lo viste como «después»; aquí encadena hechos pasados.",
-      "audio": "unidades/u11/gero.mp3"
+      "audio": "unidades/u11/gero.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "herenegun",
       "es": "anteayer",
       "nota": null,
-      "audio": "unidades/u11/herenegun.mp3"
+      "audio": "unidades/u11/herenegun.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "iaz",
       "es": "el año pasado",
       "nota": null,
-      "audio": "unidades/u11/iaz.mp3"
+      "audio": "unidades/u11/iaz.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "aurten",
       "es": "este año",
       "nota": null,
-      "audio": "unidades/u11/aurten.mp3"
+      "audio": "unidades/u11/aurten.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "joan den astean",
       "es": "la semana pasada",
       "nota": "«joan den» es «la que se ha ido».",
-      "audio": "unidades/u11/joan-den-astean.mp3"
+      "audio": "unidades/u11/joan-den-astean.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "duela bi urte",
       "es": "hace dos años",
       "nota": "«duela» + el tiempo: duela hilabete, duela urtebete.",
-      "audio": "unidades/u11/duela-bi-urte.mp3"
+      "audio": "unidades/u11/duela-bi-urte.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "txikitan",
       "es": "de pequeño",
       "nota": "De «txiki» + esa -tan de plural que ya conoces.",
-      "audio": "unidades/u11/txikitan.mp3"
+      "audio": "unidades/u11/txikitan.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "garai hartan",
       "es": "en aquella época",
       "nota": null,
-      "audio": "unidades/u11/garai-hartan.mp3"
+      "audio": "unidades/u11/garai-hartan.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "jaio",
       "es": "nacer",
       "nota": null,
-      "audio": "unidades/u11/jaio.mp3"
+      "audio": "unidades/u11/jaio.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "ezagutu",
       "es": "conocer",
       "nota": null,
-      "audio": "unidades/u11/ezagutu.mp3"
+      "audio": "unidades/u11/ezagutu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "gogoratu",
       "es": "recordar",
       "nota": null,
-      "audio": "unidades/u11/gogoratu.mp3"
+      "audio": "unidades/u11/gogoratu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "ahaztu",
       "es": "olvidar",
       "nota": null,
-      "audio": "unidades/u11/ahaztu.mp3"
+      "audio": "unidades/u11/ahaztu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "hasi",
       "es": "empezar",
       "nota": null,
-      "audio": "unidades/u11/hasi.mp3"
+      "audio": "unidades/u11/hasi.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "bukatu",
       "es": "terminar",
       "nota": "También «amaitu».",
-      "audio": "unidades/u11/bukatu.mp3"
+      "audio": "unidades/u11/bukatu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "gertatu",
       "es": "ocurrir, pasar",
       "nota": null,
-      "audio": "unidades/u11/gertatu.mp3"
+      "audio": "unidades/u11/gertatu.mp3",
+      "categoria": "verbo"
     },
     {
       "eu": "oporrak",
       "es": "las vacaciones",
       "nota": "Siempre en plural.",
-      "audio": "unidades/u11/oporrak.mp3"
+      "audio": "unidades/u11/oporrak.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "jaiak",
       "es": "las fiestas",
       "nota": "Las de un pueblo. En singular, «jaia» es la fiesta suelta.",
-      "audio": "unidades/u11/jaiak.mp3"
+      "audio": "unidades/u11/jaiak.mp3",
+      "categoria": "sustantivo"
     },
     {
       "eu": "aspaldi",
       "es": "hace mucho tiempo",
       "nota": null,
-      "audio": "unidades/u11/aspaldi.mp3"
+      "audio": "unidades/u11/aspaldi.mp3",
+      "categoria": "otros"
     },
     {
       "eu": "berriro",
       "es": "otra vez",
       "nota": null,
-      "audio": "unidades/u11/berriro.mp3"
+      "audio": "unidades/u11/berriro.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

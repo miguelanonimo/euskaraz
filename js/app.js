@@ -96,6 +96,8 @@
     vocabRepasoDue:  $('vocabRepasoDue'),
     diccCount:       $('diccCount'),
     dictInput:     $('dictInput'),
+    dictLetras:    $('dictLetras'),
+    dictCat:       $('dictCat'),
     dictCount:     $('dictCount'),
     dictContent:   $('dictContent'),
     heroSub:       $('heroSub'),
@@ -1035,7 +1037,9 @@
       vistas[clave] = true;
       DICC.push({
         eu: v.eu, es: es, nota: v.nota, audio: v.audio, registro: v.registro,
+        categoria: v.categoria || 'otros',
         unidad: unidad,
+        letra: (plegar(v.eu).charAt(0) || '').toUpperCase(),
         busca: plegar(v.eu) + ' ' + plegar(es) + ' ' + plegar(v.nota || '')
       });
     }
@@ -1051,11 +1055,34 @@
     return DICC;
   }
 
+  var dictLetraActiva = '';
+  var dictCatActiva = '';
+
+  /* Pinta la fila de letras, activas solo las que tienen alguna palabra
+     con el filtro de tipo actual ya aplicado — para no ofrecer letras
+     vacías. */
+  function pintarLetrasDicc() {
+    var disponibles = {};
+    diccionario().forEach(function (v) {
+      if (!dictCatActiva || v.categoria === dictCatActiva) disponibles[v.letra] = true;
+    });
+    if (dictLetraActiva && !disponibles[dictLetraActiva]) dictLetraActiva = '';
+    var letras = Object.keys(disponibles).sort();
+    el.dictLetras.innerHTML = letras.map(function (l) {
+      return '<button type="button" class="dictletra' +
+        (l === dictLetraActiva ? ' is-activo' : '') + '" data-letra="' + l + '">' + l + '</button>';
+    }).join('');
+  }
+
   function pintarDiccionario(filtro) {
     var q = plegar(filtro || '');
     var lista = diccionario().filter(function (v) {
+      if (dictLetraActiva && v.letra !== dictLetraActiva) return false;
+      if (dictCatActiva && v.categoria !== dictCatActiva) return false;
       return !q || v.busca.indexOf(q) !== -1;
     });
+
+    pintarLetrasDicc();
 
     el.dictCount.textContent = lista.length === 0
       ? 'Ninguna palabra coincide'
@@ -1647,6 +1674,17 @@
   $('goDicc').addEventListener('click', pantallaDiccionario);
   el.dictInput.addEventListener('input', function () {
     pintarDiccionario(this.value);
+  });
+  el.dictLetras.addEventListener('click', function (e) {
+    var btn = e.target.closest('.dictletra');
+    if (!btn) return;
+    var letra = btn.getAttribute('data-letra');
+    dictLetraActiva = (letra === dictLetraActiva) ? '' : letra;
+    pintarDiccionario(el.dictInput.value);
+  });
+  el.dictCat.addEventListener('change', function () {
+    dictCatActiva = this.value;
+    pintarDiccionario(el.dictInput.value);
   });
   activarAudioEnLista(el.vocabContent);
   activarAudioEnLista(el.dictContent);

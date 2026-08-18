@@ -9,167 +9,200 @@
     {
       "eu": "ordua",
       "es": "la hora",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "Zer ordu da?",
       "es": "¿Qué hora es?",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "eta erdiak",
       "es": "y media",
-      "nota": "Aquí la hora NO lleva -ak: «hiru eta erdiak» (las tres y media). El plural lo lleva solo «erdiak»."
+      "nota": "Aquí la hora NO lleva -ak: «hiru eta erdiak» (las tres y media). El plural lo lleva solo «erdiak».",
+      "categoria": "otros"
     },
     {
       "eu": "eta laurden",
       "es": "y cuarto",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "laurden gutxi",
       "es": "menos cuarto",
-      "nota": "«gutxi» es «poco»: «cuarto de menos»."
+      "nota": "«gutxi» es «poco»: «cuarto de menos».",
+      "categoria": "otros"
     },
     {
       "eu": "eguna",
       "es": "el día",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "astea",
       "es": "la semana",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "asteburua",
       "es": "el fin de semana",
-      "nota": "De «aste» (semana) + «buru» (cabeza)."
+      "nota": "De «aste» (semana) + «buru» (cabeza).",
+      "categoria": "sustantivo"
     },
     {
       "eu": "astelehena",
       "es": "el lunes",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "asteartea",
       "es": "el martes",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "asteazkena",
       "es": "el miércoles",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "osteguna",
       "es": "el jueves",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "ostirala",
       "es": "el viernes",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "larunbata",
       "es": "el sábado",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "igandea",
       "es": "el domingo",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "goiza",
       "es": "la mañana",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "eguerdia",
       "es": "el mediodía",
-      "nota": "De «egu-» (día) + «erdi» (mitad)."
+      "nota": "De «egu-» (día) + «erdi» (mitad).",
+      "categoria": "sustantivo"
     },
     {
       "eu": "arratsaldea",
       "es": "la tarde",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "iluntzea",
       "es": "el anochecer",
-      "nota": "De «ilun» (oscuro)."
+      "nota": "De «ilun» (oscuro).",
+      "categoria": "sustantivo"
     },
     {
       "eu": "gaua",
       "es": "la noche",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "gaur",
       "es": "hoy",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "bihar",
       "es": "mañana",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "atzo",
       "es": "ayer",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "etzi",
       "es": "pasado mañana",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "bart",
       "es": "anoche",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "orain",
       "es": "ahora",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "gero",
       "es": "luego, después",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "beti",
       "es": "siempre",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "askotan",
       "es": "a menudo",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "batzuetan",
       "es": "a veces",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "inoiz ez",
       "es": "nunca",
-      "nota": "«inoiz» solo significa «alguna vez»; el «ez» es lo que lo niega."
+      "nota": "«inoiz» solo significa «alguna vez»; el «ez» es lo que lo niega.",
+      "categoria": "otros"
     },
     {
       "eu": "goiz",
       "es": "temprano",
-      "nota": "Sin artículo es «temprano»; con él, «la mañana»."
+      "nota": "Sin artículo es «temprano»; con él, «la mañana».",
+      "categoria": "otros"
     },
     {
       "eu": "berandu",
       "es": "tarde",
-      "nota": "Adverbio. No confundir con «arratsaldea», que es el rato de la tarde."
+      "nota": "Adverbio. No confundir con «arratsaldea», que es el rato de la tarde.",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

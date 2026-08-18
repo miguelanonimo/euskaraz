@@ -9,197 +9,236 @@
     {
       "eu": "jan",
       "es": "comer",
-      "nota": "Forma de diccionario. Para «como» hace falta «jaten dut»."
+      "nota": "Forma de diccionario. Para «como» hace falta «jaten dut».",
+      "categoria": "verbo"
     },
     {
       "eu": "jaten dut",
       "es": "(yo) como",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "edan",
       "es": "beber",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "edaten dut",
       "es": "(yo) bebo",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "egin",
       "es": "hacer",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "egiten dut",
       "es": "(yo) hago",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "lan egin",
       "es": "trabajar",
-      "nota": "Literalmente «hacer trabajo»."
+      "nota": "Literalmente «hacer trabajo».",
+      "categoria": "verbo"
     },
     {
       "eu": "hitz egin",
       "es": "hablar",
-      "nota": "Literalmente «hacer palabra»."
+      "nota": "Literalmente «hacer palabra».",
+      "categoria": "verbo"
     },
     {
       "eu": "ikasi",
       "es": "estudiar, aprender",
-      "nota": "Una sola palabra para las dos cosas."
+      "nota": "Una sola palabra para las dos cosas.",
+      "categoria": "verbo"
     },
     {
       "eu": "irakurri",
       "es": "leer",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "idatzi",
       "es": "escribir",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "entzun",
       "es": "escuchar, oír",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "ikusi",
       "es": "ver",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "erosi",
       "es": "comprar",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "hartu",
       "es": "coger, tomar",
-      "nota": null
+      "nota": null,
+      "categoria": "verbo"
     },
     {
       "eu": "saldu",
       "es": "vender",
-      "nota": "Sale en la regla del -t(z)en: saldu \u2192 saltzen."
+      "nota": "Sale en la regla del -t(z)en: saldu → saltzen.",
+      "categoria": "verbo"
     },
     {
       "eu": "jarri",
       "es": "poner",
-      "nota": "Irregular en -t(z)en: jarri \u2192 jartzen."
+      "nota": "Irregular en -t(z)en: jarri → jartzen.",
+      "categoria": "verbo"
     },
     {
       "eu": "dirua",
       "es": "el dinero",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "arazoa",
       "es": "el problema",
-      "nota": "\u00abEz dago arazorik\u00bb \u2014 no hay problema."
+      "nota": "«Ez dago arazorik» — no hay problema.",
+      "categoria": "sustantivo"
     },
     {
       "eu": "berandu",
       "es": "tarde",
-      "nota": "Lo contrario es \u00abgoiz\u00bb (temprano)."
+      "nota": "Lo contrario es «goiz» (temprano).",
+      "categoria": "otros"
     },
     {
       "eu": "nahi dut",
       "es": "quiero",
-      "nota": "Se usa con la forma de diccionario: «ura nahi dut»."
+      "nota": "Se usa con la forma de diccionario: «ura nahi dut».",
+      "categoria": "verbo"
     },
     {
       "eu": "ogia",
       "es": "el pan",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "ura",
       "es": "el agua",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "kafea",
       "es": "el café",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "esnea",
       "es": "la leche",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "ardoa",
       "es": "el vino",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "garagardoa",
       "es": "la cerveza",
-      "nota": "De «garagar» (cebada) + «ardo» (vino)."
+      "nota": "De «garagar» (cebada) + «ardo» (vino).",
+      "categoria": "sustantivo"
     },
     {
       "eu": "arraina",
       "es": "el pescado",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "haragia",
       "es": "la carne",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "barazkiak",
       "es": "las verduras",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "sagarra",
       "es": "la manzana",
-      "nota": "De ahí «sagardoa», la sidra: sagar + ardo."
+      "nota": "De ahí «sagardoa», la sidra: sagar + ardo.",
+      "categoria": "sustantivo"
     },
     {
       "eu": "gosaria",
       "es": "el desayuno",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "bazkaria",
       "es": "la comida (del mediodía)",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "afaria",
       "es": "la cena",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "liburua",
       "es": "el libro",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "musika",
       "es": "la música",
-      "nota": null
+      "nota": null,
+      "categoria": "sustantivo"
     },
     {
       "eu": "euskara",
       "es": "el euskera",
-      "nota": "Sin artículo cuando es objeto genérico: «euskara ikasten dut»."
+      "nota": "Sin artículo cuando es objeto genérico: «euskara ikasten dut».",
+      "categoria": "sustantivo"
     },
     {
       "eu": "ez",
       "es": "no",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     },
     {
       "eu": "ezer ez",
       "es": "nada",
-      "nota": null
+      "nota": null,
+      "categoria": "otros"
     }
   ],
   "gramatica": [
