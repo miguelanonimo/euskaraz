@@ -226,3 +226,11 @@ uno por uno, sin tocar ningún JSON de contenido. 567/567 sin fallos.
 Primer intento fallido: la URL de subida del script de lote no incluía
 el nombre del bucket, así que las 567 subidas fallaban en silencio con
 «Bucket not found» — corregido antes de relanzar en segundo plano.
+
+## 2026-08-18 — Dos audios más corregidos: «ni» y «hura»
+
+**ni** sonaba «nik» (k espuria al final) y **hura** sonaba «hiura» (i
+espuria de más). Regenerados con instrucción explícita contra cada
+sonido de más, mismo flujo de revisión que el resto de audios de esta
+sesión (candidata en `test/`, escuchada y aprobada, luego publicada en
+su ruta real).
