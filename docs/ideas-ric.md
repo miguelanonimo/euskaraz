@@ -27,6 +27,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 8 | `liburua` ("el libro") | `unidades/u8/liburua.mp3` | "libulua", la R como L | "liburua": la R suave debe sonar |
 | 9 | `hondartza` ("playa") | `unidades/u9/hondartza.mp3` | "hondErtza", con E | "hondartza", con A |
 | 11 | `ahaztu` ("olvidar") | `unidades/u11/ahaztu.mp3` | "aJaztu", H como jota | H muda: "aastu" |
+| 11 | `zenuen` ("tenías/tuviste") | `unidades/u11/zenuen.mp3` | la Z como en español | la z como s sibilante |
 
 Frases narradas a revisar por arrastre (contienen palabras de la tabla):
 `unidades/u9/hondartzara-noa.mp3` («Hondartzara noa»),
@@ -58,11 +59,15 @@ comparten este error (confirmado de oído en `jaten dut`).
   las frases narradas que las contienen (p. ej. «Anek ahizpa bat du»,
   «Bihar Bilbora joango naiz», «Kafea nahi al duzu?»).
 
-- **Posible patrón: la Z leída como "tx" (africada) en vez de s sibilante.**
-  Si pasa en `arazoa`, escuchar de una pasada las demás palabras del curso
-  con Z entre vocales: `azoka`, `bezain`, `bizikleta`, `duzu`, `erraza`,
+- **Patrón CONFIRMADO (2 palabras): la Z mal pronunciada** — como "tx" en
+  `arazoa`, como la Z española en `zenuen`; en ambas debería ser s
+  sibilante. Escuchar de una pasada las demás palabras del curso con Z
+  entre vocales: `azoka`, `bezain`, `bizikleta`, `duzu`, `erraza`,
   `ezagutu`, `gauza`, `goiza`, `hamazazpi`, `hemezortzi`, `izena`, `zaizu`,
-  `zuzen` — y las frases narradas que las contienen.
+  `zuzen` — y las frases narradas que las contienen. La unidad 11 entera es
+  candidata (el pasado se conjuga con `zen-/zenuen/zegoen`): revisar p. ej.
+  `unidades/u11/zer-egin-zenuen.mp3` («Zer egin zenuen?», arrastre directo)
+  y `unidades/u11/non-zegoen-liburua.mp3` (ya listada por `liburua`).
 
 ### Audio en ejercicios: altavoz explícito en vez de auto-reproducir
 
