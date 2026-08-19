@@ -41,6 +41,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 11 | `duela bi urte` ("hace dos años") | `unidades/u11/duela-bi-urte.mp3` | la R de `urte` suena rara, como una R inglesa (aproximante), ni castellana ni euskaldun | una R vibrante simple, breve |
 | 12 | `erraza` ("fácil") | `unidades/u12/erraza.mp3` | "erratza", con africada | s sibilante: "errassa" |
 | 12 | `hala ere` ("aun así") | `unidades/u12/hala-ere.mp3` | "hala ebe", la R como B | "hala ere", con R suave clara |
+| 12 | `hobea` ("mejor") | `unidades/u12/hobea.mp3` | "hogea", B como G | B clara: "hobea" |
 | 11 | `zenuen` ("tenías/tuviste") | `unidades/u11/zenuen.mp3` | la Z como en español | la z como s sibilante |
 
 `duela bi urte` arrastra también `unidades/u11/duela-bi-urte-ezagutu-nuen.mp3`
