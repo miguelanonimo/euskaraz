@@ -21,12 +21,23 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 |---|---|---|---|---|
 | 8 | `arazoa` ("el problema") | `unidades/u8/arazoa.mp3` | "aratxoa" | la z como s sibilante: "arasoa" |
 | 8 | `hartu` ("coger/tomar") | `unidades/u8/hartu.mp3` | "harto", con O final | "hartu", con U |
+| 8 | `jan` ("comer") | `unidades/u8/jan.mp3` | "Yan", con Y | con jota castellana: "Jan" |
 | 9 | `hondartza` ("playa") | `unidades/u9/hondartza.mp3` | "hondErtza", con E | "hondartza", con A |
 | 11 | `ahaztu` ("olvidar") | `unidades/u11/ahaztu.mp3` | "aJaztu", H como jota | H muda: "aastu" |
 
 Frases narradas a revisar por arrastre (contienen palabras de la tabla):
-`unidades/u9/hondartzara-noa.mp3` («Hondartzara noa») y
-`unidades/u9/non-dago-hondartza.mp3` («Non dago hondartza?»).
+`unidades/u9/hondartzara-noa.mp3` («Hondartzara noa»),
+`unidades/u9/non-dago-hondartza.mp3` («Non dago hondartza?»), y todas las
+que llevan `jan/jaten`: `unidades/u8/jaten-dut.mp3`,
+`unidades/u8/nik-ogia-jaten-dut.mp3`,
+`unidades/u8/zuk-ez-duzu-haragia-jaten.mp3`,
+`unidades/u8/ez-ditut-haragia-eta-arraina-jaten.mp3` y
+`unidades/u12/jaten-dut-jan-dut-jan-nuen.mp3`.
+
+Nota sobre `jan`: la pronunciación de la J varía según la zona (la "y" no
+es incorrecta en todos los dialectos), pero el criterio del curso es el
+habla de Bilbao, donde es la jota. Es decisión de registro, no errata:
+así explicárselo a Miguel si pregunta.
 
 - **Posible patrón: la H entre vocales leída como jota.** Si la voz falla
   en `ahaztu`, conviene escuchar de una pasada todas las palabras del curso
