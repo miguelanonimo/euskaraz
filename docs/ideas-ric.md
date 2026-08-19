@@ -37,6 +37,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 9 | `denda` ("tienda") | `unidades/u9/denda.mp3` | la segunda D suavizada | las dos D claras |
 | 9 | `ibili` ("andar/caminar") | `unidades/u9/ibili.mp3` | "ibii", la L no se oye | L audible: "ibili" |
 | 10 | `guri` ("a nosotros") | `unidades/u10/guri.mp3` | suena "buri", G como B | "guri", con G clara |
+| 10 | `iruditzen zait` ("me parece") | `unidades/u10/iruditzen-zait.mp3` | la T final de `zait` suena como K | T clara al final |
 | 9 | `hondartza` ("playa") | `unidades/u9/hondartza.mp3` | "hondErtza", con E | "hondartza", con A |
 | 11 | `ahaztu` ("olvidar") | `unidades/u11/ahaztu.mp3` | "aJaztu", H como jota | H muda: "aastu" |
 | 11 | `berriro` ("de nuevo/otra vez") | `unidades/u11/berriro.mp3` | "berriDo", la R final como D | una R clara |
@@ -49,7 +50,8 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 
 `duela bi urte` arrastra también `unidades/u11/duela-bi-urte-ezagutu-nuen.mp3`
 («Duela bi urte ezagutu nuen»). `gure` arrastra
-`unidades/u2/gure-etxe-txikia.mp3` («gure etxe txikia»).
+`unidades/u2/gure-etxe-txikia.mp3` («gure etxe txikia»). `iruditzen zait`
+arrastra `unidades/u10/ondo-iruditzen-zait.mp3` («Ondo iruditzen zait»).
 
 Ojo con `bihar`: hay **dos entradas de vocabulario duplicadas** con su
 propio audio, una en la unidad 3 (`unidades/u3/bihar.mp3`) y otra en la 7
