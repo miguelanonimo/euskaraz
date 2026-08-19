@@ -28,6 +28,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 3 | `bihar` ("mañana") | `unidades/u3/bihar.mp3` | "bihan", la R final como N | una R clara |
 | 3 | `galdera` ("pregunta") | `unidades/u3/galdera.mp3` | la D rara, casi como una Y | una D clara |
 | 5 | `hemeretzi` ("diecinueve") | `unidades/u5/hemeretzi.mp3` | "hemeletzi", la R como L | R simple clara |
+| 5 | `katua` ("el gato") | `unidades/u5/katua.mp3` | "kaduar", T como D, y un ruido extraño al final que no debería estar | T clara, sin ruido añadido |
 | 6 | `han` ("allí") | `unidades/u6/han.mp3` | suena "en", la A no se oye | A clara: "han" |
 | 8 | `arazoa` ("el problema") | `unidades/u8/arazoa.mp3` | "aratxoa" | la z como s sibilante: "arasoa" |
 | 8 | `arraina` ("el pescado") | `unidades/u8/arraina.mp3` | "araña", con R simple | "arraña": la RR fuerte, vibrante (el -in- palatalizado a ñ sí está bien) |
@@ -190,6 +191,17 @@ comparten este error (confirmado de oído en `jaten dut`).
   API de Text-to-Speech, o que le pase temporalmente las credenciales.
   Sin esto, ninguna de las tres opciones se puede probar de forma
   independiente.
+
+- **`katua` tiene un tipo de fallo distinto a los demás: un ruido/artefacto
+  al final del audio**, no solo una letra mal dicha. Esto puede ser un
+  glitch de generación (más probable con un modelo generativo como
+  Gemini TTS) más que un problema de pronunciación — quizá se arregla
+  solo con re-generar (opción 3 de la investigación de más abajo), sin
+  necesidad de "corregir" nada. Vigilar si aparece en más audios: si es
+  puntual, no hace falta tratarlo como los demás.
+
+- Palabra emparentada a revisar (misma raíz, no confirmada):
+  `merkatua` ("el mercado", unidad 9, `unidades/u9/merkatua.mp3`).
 
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
