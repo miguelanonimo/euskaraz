@@ -60,15 +60,15 @@ comparten este error (confirmado de oído en `jaten dut`).
   las frases narradas que las contienen (p. ej. «Anek ahizpa bat du»,
   «Bihar Bilbora joango naiz», «Kafea nahi al duzu?»).
 
-- **Patrón CONFIRMADO (2 palabras): la Z mal pronunciada** — como "tx" en
-  `arazoa`, como la Z española en `zenuen`; en ambas debería ser s
-  sibilante. Escuchar de una pasada las demás palabras del curso con Z
-  entre vocales: `azoka`, `bezain`, `bizikleta`, `duzu`, `erraza`,
+- **La Z falla en algunas palabras, no en todas — no es un patrón fijo.**
+  Confirmado con dos ejemplos (`arazoa` mal, `zenuen` mal), pero la
+  pronunciación de la Z en el resto del curso es inconsistente: hay que
+  escuchar palabra por palabra, no dar por mal todo lo que lleve Z.
+  Pendientes de comprobar de oído (marcar aquí OK / MAL según se
+  verifiquen): `azoka`, `bezain`, `bizikleta`, `duzu`, `erraza`,
   `ezagutu`, `gauza`, `goiza`, `hamazazpi`, `hemezortzi`, `izena`, `zaizu`,
-  `zuzen` — y las frases narradas que las contienen. La unidad 11 entera es
-  candidata (el pasado se conjuga con `zen-/zenuen/zegoen`): revisar p. ej.
-  `unidades/u11/zer-egin-zenuen.mp3` («Zer egin zenuen?», arrastre directo)
-  y `unidades/u11/non-zegoen-liburua.mp3` (ya listada por `liburua`).
+  `zuzen`. La unidad 11 tiene más candidatas por el pasado (`zen-`, p. ej.
+  `unidades/u11/zer-egin-zenuen.mp3`), pero también palabra por palabra.
 
 ### Audio en ejercicios: altavoz explícito en vez de auto-reproducir
 
