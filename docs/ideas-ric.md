@@ -63,6 +63,7 @@ escuchar.)
 | 12 | `hala ere` ("aun así") | `unidades/u12/hala-ere.mp3` | "hala ebe", la R como B | "hala ere", con R suave clara |
 | 12 | `hobea` ("mejor") | `unidades/u12/hobea.mp3` | "hogea", B como G | B clara: "hobea" |
 | 12 | `inor ez` ("nadie") | `unidades/u12/inor-ez.mp3` | la R de `inor` como L | R simple clara |
+| 11 | `nintzen` ("yo era/estaba") | `unidades/u11/nintzen.mp3` | "niizen", desaparece el sonido `ntz` entero | `ntz` audible: "nintzen" |
 | 11 | `zenuen` ("tenías/tuviste") | `unidades/u11/zenuen.mp3` | la Z como en español | la z como s sibilante |
 
 `duela bi urte` arrastra también `unidades/u11/duela-bi-urte-ezagutu-nuen.mp3`
@@ -97,6 +98,12 @@ las que llevan `liburu`: `unidades/u8/liburua-irakurtzen-dut.mp3`,
 `unidades/u10/liburuak-gustatzen-zaizkit.mp3` y
 `unidades/u11/non-zegoen-liburua.mp3`. Escuchar también
 `unidades/u9/liburutegia.mp3` («biblioteca», misma raíz).
+
+`nintzen` arrastra tres frases: `unidades/u11/ni-bilbon-jaio-nintzen.mp3`
+(«Ni Bilbon jaio nintzen»),
+`unidades/u11/atzo-bilbora-joan-nintzen.mp3` («Atzo Bilbora joan nintzen»)
+y `unidades/u11/txikitan-bilbon-bizi-nintzen.mp3`
+(«Txikitan Bilbon bizi nintzen»).
 
 Nota sobre `jan`/`jaten dut`: la pronunciación de la J varía según la zona
 (la "y" no es incorrecta en todos los dialectos), pero el criterio del
