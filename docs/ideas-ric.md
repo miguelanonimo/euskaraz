@@ -70,6 +70,30 @@ comparten este error (confirmado de oído en `jaten dut`).
   `zuzen`. La unidad 11 tiene más candidatas por el pasado (`zen-`, p. ej.
   `unidades/u11/zer-egin-zenuen.mp3`), pero también palabra por palabra.
 
+### Errores de contenido en ejercicios (para el próximo lote de cambios)
+
+- **2026-08-18 · Unidad 2, ejercicio de ordenar: falta "bonito/a" en el
+  enunciado castellano.** `data/unidades/02-izenordainak.json:917`. El
+  enunciado (`es`) dice «su amigo (de ella)», pero la frase en euskera a
+  reconstruir (`eu`) es «haren lagun polita» — con `polita` (bonito/a), que
+  no aparece por ningún lado en el castellano. Quien hace el ejercicio no
+  tiene forma de saber que hay que colocar esa palabra. Comparar con el
+  ejercicio hermano dos líneas antes (mismo archivo), que sí está bien:
+  «nuestro pueblo bonito» → «gure herri polita». Corrección: el `es` de la
+  917 debería decir algo como «su amigo bonito (de ella)» o similar.
+
+- **2026-08-18 · Unidad 4, ejercicio "Me llamo Ane": la pista da la
+  respuesta literal.** `data/unidades/04-izan.json:1069` (ejercicio de
+  tipo `traducir`, «Me llamo Ane.» → escribirlo en euskera). El campo
+  `pista` dice «Vale «Ane dut izena» o simplemente «Ane naiz»» — es decir,
+  entrega las dos respuestas completas y correctas tal cual, no una ayuda.
+  Contradice el propio criterio del proyecto (PROYECTO.md del original:
+  las pistas están para dar una entrada, no la solución) y sobre todo el
+  objetivo del ejercicio, que es de producción activa. Corrección: cambiar
+  la pista por algo que oriente sin resolver — p. ej. avisar de que hay dos
+  formas válidas y en qué se apoya cada una («izena» = sustantivo + "dut";
+  o el verbo "izan"), sin escribir la frase entera.
+
 ### Audio en ejercicios: altavoz explícito en vez de auto-reproducir
 
 - **2026-08-18 · Propuesta de Ric.** Que las palabras de los ejercicios NO
