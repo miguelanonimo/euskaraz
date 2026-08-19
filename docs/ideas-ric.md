@@ -31,6 +31,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 5 | `katua` ("el gato") | `unidades/u5/katua.mp3` | "kaduar", T como D, y una R añadida al final que no existe en la palabra | T clara; termina en "-tua", sin R |
 | 6 | `han` ("allí") | `unidades/u6/han.mp3` | suena "en", la A no se oye | A clara: "han" |
 | 6 | `logela` ("habitación/dormitorio") | `unidades/u6/logela.mp3` | G suave, se pierde | G fuerte, marcada: "loguela" |
+| 6 | `mahaia` ("mesa") | `unidades/u6/mahaia.mp3` | la H suena | H muda: "maaia" |
 | 8 | `arazoa` ("el problema") | `unidades/u8/arazoa.mp3` | "aratxoa" | la z como s sibilante: "arasoa" |
 | 8 | `arraina` ("el pescado") | `unidades/u8/arraina.mp3` | "araña", con R simple | "arraña": la RR fuerte, vibrante (el -in- palatalizado a ñ sí está bien) |
 | 8 | `haragia` ("la carne") | `unidades/u8/haragia.mp3` | "arayia", la G como Y | "araguia": la G marcada (como en "agua") |
@@ -107,7 +108,7 @@ comparten este error (confirmado de oído en `jaten dut`).
   en `ahaztu`, conviene escuchar de una pasada todas las palabras del curso
   con H entre vocales antes de re-generar, y arreglarlas juntas. Candidatas
   encontradas en los datos: `ahizpa`, `astelehena`, `gehiago`,
-  `hamahiru`, `lehen`, `leihoa`, `mahaia`, `nahi`, `ohea`, `zaharra` — y
+  `hamahiru`, `lehen`, `leihoa`, `nahi`, `ohea`, `zaharra` — y
   las frases narradas que las contienen (p. ej. «Anek ahizpa bat du»,
   «Bihar Bilbora joango naiz», «Kafea nahi al duzu?»).
 
