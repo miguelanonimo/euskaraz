@@ -29,6 +29,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 3 | `galdera` ("pregunta") | `unidades/u3/galdera.mp3` | la D rara, casi como una Y | una D clara |
 | 5 | `hemeretzi` ("diecinueve") | `unidades/u5/hemeretzi.mp3` | "hemeletzi", la R como L | R simple clara |
 | 5 | `katua` ("el gato") | `unidades/u5/katua.mp3` | "kaduar", T como D, y una R añadida al final que no existe en la palabra | T clara; termina en "-tua", sin R |
+| 9 | `merkatua` ("el mercado") | `unidades/u9/merkatua.mp3` | por lo demás bien, pero R añadida al final (más suave que en `katua`, mismo fallo) | termina en "-tua", sin R |
 | 6 | `han` ("allí") | `unidades/u6/han.mp3` | suena "en", la A no se oye | A clara: "han" |
 | 6 | `logela` ("habitación/dormitorio") | `unidades/u6/logela.mp3` | G suave, se pierde | G fuerte, marcada: "loguela" |
 | 6 | `mahaia` ("mesa") | `unidades/u6/mahaia.mp3` | la H suena | H muda: "maaia" |
@@ -202,8 +203,11 @@ comparten este error (confirmado de oído en `jaten dut`).
   este mismo tipo de fallo (sonido extra al final, no solo cambiado)
   aparece en otras palabras.
 
-- Palabra emparentada a revisar (misma raíz, no confirmada):
-  `merkatua` ("el mercado", unidad 9, `unidades/u9/merkatua.mp3`).
+- **Confirmado el mismo fallo en `merkatua`**, la palabra emparentada de
+  `katua` que quedó pendiente: R añadida al final en ambas (más suave en
+  `merkatua`). Parece un patrón real ligado a la terminación `-tua`, no
+  una casualidad — si aparecen más palabras con esa terminación al
+  revisar, comprobarlas también.
 
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
