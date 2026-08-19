@@ -24,6 +24,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 8 | `haragia` ("la carne") | `unidades/u8/haragia.mp3` | "arayia", la G como Y | "araguia": la G marcada (como en "agua") |
 | 8 | `hartu` ("coger/tomar") | `unidades/u8/hartu.mp3` | "harto", con O final | "hartu", con U |
 | 8 | `jan` ("comer") | `unidades/u8/jan.mp3` | "Yan", con Y | J suave, como la H inglesa de "hat" |
+| 8 | `liburua` ("el libro") | `unidades/u8/liburua.mp3` | "libulua", la R como L | "liburua": la R suave debe sonar |
 | 9 | `hondartza` ("playa") | `unidades/u9/hondartza.mp3` | "hondErtza", con E | "hondartza", con A |
 | 11 | `ahaztu` ("olvidar") | `unidades/u11/ahaztu.mp3` | "aJaztu", H como jota | H muda: "aastu" |
 
@@ -34,7 +35,12 @@ que llevan `jan/jaten`: `unidades/u8/jaten-dut.mp3`,
 `unidades/u8/nik-ogia-jaten-dut.mp3`,
 `unidades/u8/zuk-ez-duzu-haragia-jaten.mp3` (motivos: `jaten` y `haragia`),
 `unidades/u8/ez-ditut-haragia-eta-arraina-jaten.mp3` (motivos: `jaten`,
-`haragia` y `arraina`) y `unidades/u12/jaten-dut-jan-dut-jan-nuen.mp3`.
+`haragia` y `arraina`), `unidades/u12/jaten-dut-jan-dut-jan-nuen.mp3`, y
+las que llevan `liburu`: `unidades/u8/liburua-irakurtzen-dut.mp3`,
+`unidades/u8/liburuak-irakurtzen-ditugu.mp3`,
+`unidades/u10/liburuak-gustatzen-zaizkit.mp3` y
+`unidades/u11/non-zegoen-liburua.mp3`. Escuchar también
+`unidades/u9/liburutegia.mp3` («biblioteca», misma raíz).
 
 Nota sobre `jan`/`jaten dut`: la pronunciación de la J varía según la zona
 (la "y" no es incorrecta en todos los dialectos), pero el criterio del
