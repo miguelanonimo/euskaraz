@@ -20,6 +20,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | Unidad | Palabra | Archivo | Qué se oye | Qué debería oírse |
 |---|---|---|---|---|
 | 1 | `ez horregatik` ("de nada") | `unidades/u1/ez-horregatik.mp3` | la RR no suena rodada/fuerte | RR vibrante múltiple, fuerte |
+| 2 | `gure` ("nuestro/a") | `unidades/u2/gure.mp3` | suena fatal, casi "bule" | "gure", con G y R claras |
 | 3 | `bihar` ("mañana") | `unidades/u3/bihar.mp3` | "bihan", la R final como N | una R clara |
 | 3 | `galdera` ("pregunta") | `unidades/u3/galdera.mp3` | la D rara, casi como una Y | una D clara |
 | 8 | `arazoa` ("el problema") | `unidades/u8/arazoa.mp3` | "aratxoa" | la z como s sibilante: "arasoa" |
@@ -37,7 +38,8 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 11 | `zenuen` ("tenías/tuviste") | `unidades/u11/zenuen.mp3` | la Z como en español | la z como s sibilante |
 
 `duela bi urte` arrastra también `unidades/u11/duela-bi-urte-ezagutu-nuen.mp3`
-(«Duela bi urte ezagutu nuen»).
+(«Duela bi urte ezagutu nuen»). `gure` arrastra
+`unidades/u2/gure-etxe-txikia.mp3` («gure etxe txikia»).
 
 Ojo con `bihar`: hay **dos entradas de vocabulario duplicadas** con su
 propio audio, una en la unidad 3 (`unidades/u3/bihar.mp3`) y otra en la 7
