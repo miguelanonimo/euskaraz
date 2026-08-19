@@ -121,7 +121,22 @@ comparten este error (confirmado de oído en `jaten dut`).
   - Para el naranja quizá sirva el ámbar que ya usa el badge de
     "empezada", sin inventar un color nuevo. Decidir tonos con Miguel.
 
-## Acordadas y en marcha
+### Filtro de vocabulario también en los repasos
+
+- **2026-08-18 · Propuesta de Ric.** Poder filtrar el vocabulario en los
+  repasos (como Miguel ya hizo en el Diccionario): elegir una categoría
+  («Filtrar por:») y repasar solo esas palabras — p. ej. solo comida, solo
+  verbos.
+  - Lo que ya existe y se reutilizaría: cada palabra lleva `categoria`, y
+    el Diccionario filtra con un desplegable (`js/app.js` ~líneas
+    1055-1096, `index.html` ~líneas 210-213). Miguel además tiene una rama
+    en curso sobre esto (`desarrollo/diccionario-filtros`) — coordinarse
+    para no pisarse.
+  - **Pregunta de diseño para Miguel:** el repaso actual no baraja todo el
+    vocabulario, sino que pide al calendario de repaso espaciado qué toca
+    hoy. ¿Un repaso filtrado respeta el calendario (solo lo vencido de esa
+    categoría) o es práctica libre? Y ¿debe puntuar para el calendario o
+    ser como los repasos actuales, que entrenan sin marcar unidades?
 
 ## Implementadas
 
