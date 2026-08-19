@@ -30,6 +30,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 5 | `hemeretzi` ("diecinueve") | `unidades/u5/hemeretzi.mp3` | "hemeletzi", la R como L | R simple clara |
 | 5 | `katua` ("el gato") | `unidades/u5/katua.mp3` | "kaduar", T como D, y una R añadida al final que no existe en la palabra | T clara; termina en "-tua", sin R |
 | 6 | `han` ("allí") | `unidades/u6/han.mp3` | suena "en", la A no se oye | A clara: "han" |
+| 6 | `logela` ("habitación/dormitorio") | `unidades/u6/logela.mp3` | G suave, se pierde | G fuerte, marcada: "loguela" |
 | 8 | `arazoa` ("el problema") | `unidades/u8/arazoa.mp3` | "aratxoa" | la z como s sibilante: "arasoa" |
 | 8 | `arraina` ("el pescado") | `unidades/u8/arraina.mp3` | "araña", con R simple | "arraña": la RR fuerte, vibrante (el -in- palatalizado a ñ sí está bien) |
 | 8 | `haragia` ("la carne") | `unidades/u8/haragia.mp3` | "arayia", la G como Y | "araguia": la G marcada (como en "agua") |
@@ -68,7 +69,8 @@ arrastra `unidades/u10/ondo-iruditzen-zait.mp3` («Ondo iruditzen zait»).
 `izena` arrastra `unidades/u2/nire-izena.mp3` («nire izena»),
 `unidades/u3/nola-duzu-izena.mp3` y `unidades/u4/nola-duzu-izena.mp3`
 («Nola duzu izena?», duplicada en dos unidades) y
-`unidades/u4/mikel-dut-izena.mp3` («Mikel dut izena»).
+`unidades/u4/mikel-dut-izena.mp3` («Mikel dut izena»). `logela` arrastra
+`unidades/u6/logela-txikia.mp3` («logela txikia»).
 
 Ojo con `bihar`: hay **dos entradas de vocabulario duplicadas** con su
 propio audio, una en la unidad 3 (`unidades/u3/bihar.mp3`) y otra en la 7
