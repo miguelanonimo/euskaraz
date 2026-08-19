@@ -27,6 +27,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 2 y 4 | `izena` ("nombre") | `unidades/u2/izena.mp3` y `unidades/u4/izena.mp3` (duplicado, ver nota `bihar`) | la Z rara, no s sibilante | s sibilante clara |
 | 3 | `bihar` ("mañana") | `unidades/u3/bihar.mp3` | "bihan", la R final como N | una R clara |
 | 3 | `galdera` ("pregunta") | `unidades/u3/galdera.mp3` | la D rara, casi como una Y | una D clara |
+| 3 | `noren?` ("¿de quién?") | `unidades/u3/noren.mp3` | "nonen", la R como N | R clara: "noren" |
 | 5 | `hemeretzi` ("diecinueve") | `unidades/u5/hemeretzi.mp3` | "hemeletzi", la R como L | R simple clara |
 | 5 | `katua` ("el gato") | `unidades/u5/katua.mp3` | "kaduar", T como D, y una R añadida al final que no existe en la palabra | T clara; termina en "-tua", sin R |
 | 9 | `merkatua` ("el mercado") | `unidades/u9/merkatua.mp3` | por lo demás bien, pero R añadida al final (más suave que en `katua`, mismo fallo) | termina en "-tua", sin R |
