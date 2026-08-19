@@ -20,6 +20,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | Unidad | Palabra | Archivo | Qué se oye | Qué debería oírse |
 |---|---|---|---|---|
 | 8 | `arazoa` ("el problema") | `unidades/u8/arazoa.mp3` | "aratxoa" | la z como s sibilante: "arasoa" |
+| 8 | `arraina` ("el pescado") | `unidades/u8/arraina.mp3` | "araña", con R simple | "arraña": la RR fuerte, vibrante (el -in- palatalizado a ñ sí está bien) |
 | 8 | `hartu` ("coger/tomar") | `unidades/u8/hartu.mp3` | "harto", con O final | "hartu", con U |
 | 8 | `jan` ("comer") | `unidades/u8/jan.mp3` | "Yan", con Y | J suave, como la H inglesa de "hat" |
 | 9 | `hondartza` ("playa") | `unidades/u9/hondartza.mp3` | "hondErtza", con E | "hondartza", con A |
@@ -31,8 +32,8 @@ Frases narradas a revisar por arrastre (contienen palabras de la tabla):
 que llevan `jan/jaten`: `unidades/u8/jaten-dut.mp3`,
 `unidades/u8/nik-ogia-jaten-dut.mp3`,
 `unidades/u8/zuk-ez-duzu-haragia-jaten.mp3`,
-`unidades/u8/ez-ditut-haragia-eta-arraina-jaten.mp3` y
-`unidades/u12/jaten-dut-jan-dut-jan-nuen.mp3`.
+`unidades/u8/ez-ditut-haragia-eta-arraina-jaten.mp3` (doble motivo: `jaten`
+y `arraina`) y `unidades/u12/jaten-dut-jan-dut-jan-nuen.mp3`.
 
 Nota sobre `jan`/`jaten dut`: la pronunciación de la J varía según la zona
 (la "y" no es incorrecta en todos los dialectos), pero el criterio del
