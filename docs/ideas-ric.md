@@ -19,6 +19,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 
 | Unidad | Palabra | Archivo | Qué se oye | Qué debería oírse |
 |---|---|---|---|---|
+| 3 | `bihar` ("mañana") | `unidades/u3/bihar.mp3` | "bihan", la R final como N | una R clara |
 | 3 | `galdera` ("pregunta") | `unidades/u3/galdera.mp3` | la D rara, casi como una Y | una D clara |
 | 8 | `arazoa` ("el problema") | `unidades/u8/arazoa.mp3` | "aratxoa" | la z como s sibilante: "arasoa" |
 | 8 | `arraina` ("el pescado") | `unidades/u8/arraina.mp3` | "araña", con R simple | "arraña": la RR fuerte, vibrante (el -in- palatalizado a ñ sí está bien) |
@@ -30,6 +31,15 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 11 | `ahaztu` ("olvidar") | `unidades/u11/ahaztu.mp3` | "aJaztu", H como jota | H muda: "aastu" |
 | 11 | `berriro` ("de nuevo/otra vez") | `unidades/u11/berriro.mp3` | "berriDo", la R final como D | una R clara |
 | 11 | `zenuen` ("tenías/tuviste") | `unidades/u11/zenuen.mp3` | la Z como en español | la z como s sibilante |
+
+Ojo con `bihar`: hay **dos entradas de vocabulario duplicadas** con su
+propio audio, una en la unidad 3 (`unidades/u3/bihar.mp3`) y otra en la 7
+(`unidades/u7/bihar.mp3`) — comprobar si las dos fallan igual o si hace
+falta corregir las dos por separado. Frases narradas afectadas:
+`unidades/u1/bihar-arte.mp3` («bihar arte», hasta mañana),
+`unidades/u7/bihar-bilbon-nago.mp3` («Bihar Bilbon nago»),
+`unidades/u9/bihar-nator.mp3` («Bihar nator») y
+`unidades/u12/bihar-bilbora-joango-naiz.mp3` («Bihar Bilbora joango naiz»).
 
 Frases narradas a revisar por arrastre (contienen palabras de la tabla):
 `unidades/u9/hondartzara-noa.mp3` («Hondartzara noa»),
@@ -56,7 +66,7 @@ comparten este error (confirmado de oído en `jaten dut`).
 - **Posible patrón: la H entre vocales leída como jota.** Si la voz falla
   en `ahaztu`, conviene escuchar de una pasada todas las palabras del curso
   con H entre vocales antes de re-generar, y arreglarlas juntas. Candidatas
-  encontradas en los datos: `ahizpa`, `astelehena`, `bihar`, `gehiago`,
+  encontradas en los datos: `ahizpa`, `astelehena`, `gehiago`,
   `hamahiru`, `lehen`, `leihoa`, `mahaia`, `nahi`, `ohea`, `zaharra` — y
   las frases narradas que las contienen (p. ej. «Anek ahizpa bat du»,
   «Bihar Bilbora joango naiz», «Kafea nahi al duzu?»).
