@@ -143,12 +143,23 @@ comparten este error (confirmado de oído en `jaten dut`).
      mismo, sin cambiar nada del código.
 
   **Recomendación para plantear a Miguel:** empezar por la opción 3
-  (gratis, sin decisiones de arquitectura) en las ~15 palabras de esta
+  (gratis, sin decisiones de arquitectura) en las ~16 palabras de esta
   lista; si algunas siguen fallando tras varios intentos, pasar a la 2
   (respelling) antes que a la 1, porque cambiar de voz afecta a *todo* el
   curso (720 variantes, no solo las palabras sueltas) y hoy no hay
   garantía de que la voz Standard suene mejor en conjunto, solo de que
   tiene un mecanismo de control más preciso.
+
+  **Bloqueado para probar: falta acceso al proyecto de Google Cloud.**
+  Ric quiso probar la opción 3 (regenerar `hartu.mp3` varias veces y
+  comparar) el 18/08/2026, pero el script (`generar.mjs`) usa credenciales
+  de Google Cloud (Application Default Credentials) contra un proyecto que
+  es de Miguel (`PROJECT_ID` fijo en el script, factura a su cuenta según
+  `docs/brief.md`). **Pendiente de pedir a Miguel:** o bien que añada a
+  Ric como colaborador (IAM) en ese proyecto de GCP con permiso para la
+  API de Text-to-Speech, o que le pase temporalmente las credenciales.
+  Sin esto, ninguna de las tres opciones se puede probar de forma
+  independiente.
 
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
