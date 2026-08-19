@@ -38,6 +38,16 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 9 | `denda` ("tienda") | `unidades/u9/denda.mp3` | la segunda D suavizada | las dos D claras |
 | 9 | `ibili` ("andar/caminar") | `unidades/u9/ibili.mp3` | "ibii", la L no se oye | L audible: "ibili" |
 | 9 | `joan` ("ir") | `unidades/u9/joan.mp3` | "Yoan", como en catalán | J suave, como la H inglesa de "hat" (mismo caso que `jan`) |
+
+**Corrección importante:** la J de `joan` NO falla siempre — la palabra
+suelta (`unidades/u9/joan.mp3`) suena mal, pero la frase «joan den astean»
+("la semana pasada", vocabulario de la unidad 11,
+`unidades/u11/joan-den-astean.mp3`) SÍ suena bien. Mismo caso que la Z:
+cada archivo se genera por separado y el resultado varía, aunque sea la
+misma palabra — **no generalizar "toda J/Z falla", verificar cada audio
+uno por uno.** (Ojo también con su frase hermana
+`unidades/u11/joan-den-astean-bilbon-nengoen.mp3` — pendiente de
+escuchar.)
 | 10 | `guri` ("a nosotros") | `unidades/u10/guri.mp3` | suena "buri", G como B | "guri", con G clara |
 | 10 | `iruditzen zait` ("me parece") | `unidades/u10/iruditzen-zait.mp3` | la T final de `zait` suena como K | T clara al final |
 | 9 | `hondartza` ("playa") | `unidades/u9/hondartza.mp3` | "hondErtza", con E | "hondartza", con A |
