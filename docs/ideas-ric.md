@@ -24,6 +24,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 2 | `gure` ("nuestro/a") | `unidades/u2/gure.mp3` | suena fatal, casi "bule" | "gure", con G y R claras |
 | 2 | `haren` ("su/de él-ella") | `unidades/u2/haren.mp3` | suena "aen", se pierde la R simple | R clara: "haren" |
 | 2 | `hi` ("tú", hitano) | `unidades/u2/hi.mp3` | "yi", la H como Y | H aspirada suave, no Y |
+| 2 y 4 | `izena` ("nombre") | `unidades/u2/izena.mp3` y `unidades/u4/izena.mp3` (duplicado, ver nota `bihar`) | la Z rara, no s sibilante | s sibilante clara |
 | 3 | `bihar` ("mañana") | `unidades/u3/bihar.mp3` | "bihan", la R final como N | una R clara |
 | 3 | `galdera` ("pregunta") | `unidades/u3/galdera.mp3` | la D rara, casi como una Y | una D clara |
 | 5 | `hemeretzi` ("diecinueve") | `unidades/u5/hemeretzi.mp3` | "hemeletzi", la R como L | R simple clara |
@@ -52,6 +53,10 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 («Duela bi urte ezagutu nuen»). `gure` arrastra
 `unidades/u2/gure-etxe-txikia.mp3` («gure etxe txikia»). `iruditzen zait`
 arrastra `unidades/u10/ondo-iruditzen-zait.mp3` («Ondo iruditzen zait»).
+`izena` arrastra `unidades/u2/nire-izena.mp3` («nire izena»),
+`unidades/u3/nola-duzu-izena.mp3` y `unidades/u4/nola-duzu-izena.mp3`
+(«Nola duzu izena?», duplicada en dos unidades) y
+`unidades/u4/mikel-dut-izena.mp3` («Mikel dut izena»).
 
 Ojo con `bihar`: hay **dos entradas de vocabulario duplicadas** con su
 propio audio, una en la unidad 3 (`unidades/u3/bihar.mp3`) y otra en la 7
@@ -98,7 +103,7 @@ comparten este error (confirmado de oído en `jaten dut`).
   escuchar palabra por palabra, no dar por mal todo lo que lleve Z.
   Pendientes de comprobar de oído (marcar aquí OK / MAL según se
   verifiquen): `azoka`, `bezain`, `bizikleta`, `duzu`,
-  `ezagutu`, `gauza`, `goiza`, `hamazazpi`, `hemezortzi`, `izena`, `zaizu`,
+  `ezagutu`, `gauza`, `goiza`, `hamazazpi`, `hemezortzi`, `zaizu`,
   `zuzen`. La unidad 11 tiene más candidatas por el pasado (`zen-`, p. ej.
   `unidades/u11/zer-egin-zenuen.mp3`), pero también palabra por palabra.
 
