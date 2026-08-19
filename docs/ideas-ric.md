@@ -12,23 +12,21 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ### Audios con pronunciación mal generada (para re-generarlos en tanda)
 
-- **2026-08-18 · `hondartza` (unidad 9, "playa").** En el Diccionario, el
-  audio la pronuncia "hondErtza", con E. Revisar también los otros dos
-  audios de la unidad 9 que contienen la palabra, por si arrastran el
-  mismo error: `unidades/u9/hondartzara-noa.mp3` («Hondartzara noa») y
-  `unidades/u9/non-dago-hondartza.mp3` («Non dago hondartza?»).
-  El archivo afectado principal es `unidades/u9/hondartza.mp3` (bucket
-  `euskaraz-audio` de Supabase Storage); el generador está en
-  `scripts/generar-audio/generar.mjs`.
+Inventario ordenado por unidad. Todos los mp3 viven en el bucket
+`euskaraz-audio` de Supabase Storage; el generador está en
+`scripts/generar-audio/generar.mjs`. Los archivos son compartidos por las
+variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 
-- **2026-08-18 · `ahaztu` (unidad 11, "olvidar").** El audio la lee
-  "aJaztu", con la H como jota castellana; la H es muda y debería sonar
-  aproximadamente "aastu". Archivo: `unidades/u11/ahaztu.mp3` (compartido
-  por las variantes batua y gernikés).
+| Unidad | Palabra | Archivo | Qué se oye | Qué debería oírse |
+|---|---|---|---|---|
+| 8 | `arazoa` ("el problema") | `unidades/u8/arazoa.mp3` | "aratxoa" | la z como s sibilante: "arasoa" |
+| 8 | `hartu` ("coger/tomar") | `unidades/u8/hartu.mp3` | "harto", con O final | "hartu", con U |
+| 9 | `hondartza` ("playa") | `unidades/u9/hondartza.mp3` | "hondErtza", con E | "hondartza", con A |
+| 11 | `ahaztu` ("olvidar") | `unidades/u11/ahaztu.mp3` | "aJaztu", H como jota | H muda: "aastu" |
 
-- **2026-08-18 · `hartu` (unidad 8, "coger/tomar").** El audio suena
-  "harto", con O final en vez de U. Archivo: `unidades/u8/hartu.mp3`
-  (compartido por batua y gernikés).
+Frases narradas a revisar por arrastre (contienen palabras de la tabla):
+`unidades/u9/hondartzara-noa.mp3` («Hondartzara noa») y
+`unidades/u9/non-dago-hondartza.mp3` («Non dago hondartza?»).
 
 - **Posible patrón: la H entre vocales leída como jota.** Si la voz falla
   en `ahaztu`, conviene escuchar de una pasada todas las palabras del curso
@@ -37,6 +35,12 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
   `hamahiru`, `lehen`, `leihoa`, `mahaia`, `nahi`, `ohea`, `zaharra` — y
   las frases narradas que las contienen (p. ej. «Anek ahizpa bat du»,
   «Bihar Bilbora joango naiz», «Kafea nahi al duzu?»).
+
+- **Posible patrón: la Z leída como "tx" (africada) en vez de s sibilante.**
+  Si pasa en `arazoa`, escuchar de una pasada las demás palabras del curso
+  con Z entre vocales: `azoka`, `bezain`, `bizikleta`, `duzu`, `erraza`,
+  `ezagutu`, `gauza`, `goiza`, `hamazazpi`, `hemezortzi`, `izena`, `zaizu`,
+  `zuzen` — y las frases narradas que las contienen.
 
 ### Audio en ejercicios: altavoz explícito en vez de auto-reproducir
 
