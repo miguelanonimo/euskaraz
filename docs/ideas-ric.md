@@ -26,6 +26,10 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
   aproximadamente "aastu". Archivo: `unidades/u11/ahaztu.mp3` (compartido
   por las variantes batua y gernikés).
 
+- **2026-08-18 · `hartu` (unidad 8, "coger/tomar").** El audio suena
+  "harto", con O final en vez de U. Archivo: `unidades/u8/hartu.mp3`
+  (compartido por batua y gernikés).
+
 - **Posible patrón: la H entre vocales leída como jota.** Si la voz falla
   en `ahaztu`, conviene escuchar de una pasada todas las palabras del curso
   con H entre vocales antes de re-generar, y arreglarlas juntas. Candidatas
