@@ -20,6 +20,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | Unidad | Palabra | Archivo | Qué se oye | Qué debería oírse |
 |---|---|---|---|---|
 | 1 | `ez horregatik` ("de nada") | `unidades/u1/ez-horregatik.mp3` | la RR no suena rodada/fuerte | RR vibrante múltiple, fuerte |
+| 1 | `ikusi arte` ("hasta la vista") | `unidades/u1/ikusi-arte.mp3` | "ikusi alte", la R de `arte` como L | R simple clara |
 | 2 | `gure` ("nuestro/a") | `unidades/u2/gure.mp3` | suena fatal, casi "bule" | "gure", con G y R claras |
 | 2 | `haren` ("su/de él-ella") | `unidades/u2/haren.mp3` | suena "aen", se pierde la R simple | R clara: "haren" |
 | 2 | `hi` ("tú", hitano) | `unidades/u2/hi.mp3` | "yi", la H como Y | H aspirada suave, no Y |
