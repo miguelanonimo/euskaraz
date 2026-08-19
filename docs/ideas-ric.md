@@ -86,6 +86,68 @@ comparten este error (confirmado de oído en `jaten dut`).
   `zuzen`. La unidad 11 tiene más candidatas por el pasado (`zen-`, p. ej.
   `unidades/u11/zer-egin-zenuen.mp3`), pero también palabra por palabra.
 
+### Investigación: por qué falla la pronunciación, y qué opciones hay para arreglarla
+
+- **2026-08-18 · Investigado por Claude a petición de Ric**, mientras Ric
+  seguía escuchando audios. Fuentes oficiales de Google, consultadas hoy:
+  [Gemini TTS — Cloud docs](https://docs.cloud.google.com/text-to-speech/docs/gemini-tts),
+  [Voces disponibles](https://docs.cloud.google.com/text-to-speech/docs/list-voices-and-types),
+  [SSML — Cloud docs](https://docs.cloud.google.com/text-to-speech/docs/ssml).
+
+  **Diagnóstico — por qué falla:** el proyecto NO usa el "Cloud TTS
+  clásico" (voces WaveNet/Neural2 con SSML) que describe `docs/brief.md`
+  secciones 2 y 6. `scripts/generar-audio/generar.mjs` usa en realidad
+  **Gemini TTS** (`gemini-2.5-flash-tts`, voz "Kore"), un modelo generativo
+  más nuevo, controlado por un *prompt* en lenguaje natural (hoy: "Say
+  this Basque phrase at a natural, normal conversational pace..."), no por
+  marcado fonético. Y el dato clave: **el euskera (`eu-ES`) está listado
+  oficialmente en fase "Preview" dentro de Gemini TTS**, no en
+  disponibilidad general — de los 66 idiomas que soporta, es de los 42
+  todavía en rodaje. Eso cuadra con lo que Ric está encontrando: falla
+  bastante y de forma inconsistente (la propia Z, por ejemplo, no falla
+  siempre igual), típico de un idioma con soporte inmaduro en un modelo
+  generativo, no de una regla mal aplicada.
+
+  **Documentado — el marcado fonético SSML no existe en Gemini TTS.** Los
+  controles de Gemini TTS son solo de estilo/ritmo, sin evidencia de
+  soporte para SSML de precisión ni etiquetas fonéticas. El Cloud TTS
+  clásico sí tiene la etiqueta `<phoneme>` (con alfabeto IPA o X-SAMPA,
+  para forzar la pronunciación exacta de una palabra) y `<sub alias="...">`
+  (sustituir el texto por otro que se lea mejor) — pero **para euskera
+  clásico solo existe una voz, `eu-ES-Standard-B`**, de nivel básico (sin
+  WaveNet ni Neural2), y no hay confirmación de que el `<phoneme>` esté
+  soportado específicamente para euskera (la documentación dice que varía
+  por idioma, sin listar cuáles).
+
+  **Tres caminos posibles, para elegir con Miguel:**
+
+  1. **Probar la voz clásica `eu-ES-Standard-B` con `<phoneme>`/`<sub>`
+     solo en las palabras de esta lista.** Control fonético preciso y
+     barato de aplicar si funciona, pero es una voz más robótica (nivel
+     "Standard", el más básico de Google) y no está confirmado que el
+     `<phoneme>` funcione bien para euskera — habría que probarlo con 2-3
+     palabras de la lista antes de comprometerse.
+  2. **Seguir con Gemini TTS pero "trucar" el texto que se envía a
+     sintetizar**, sin tocar lo que ve el usuario: escribir la palabra de
+     forma distinta solo para el audio (p. ej. una respelling que fuerce
+     la RR, o repetir la consonante) hasta que suene bien, y quedarse con
+     esa versión. Barato de iterar con el pipeline que ya existe
+     (`generar.mjs`), sin aprender una tecnología nueva — pero es prueba y
+     error, no una garantía.
+  3. **Regenerar varias veces y quedarse con la mejor toma.** Un modelo
+     generativo no da siempre el mismo resultado con el mismo texto; puede
+     que simplemente generando `hartu.mp3` tres o cuatro veces salga una
+     tirada donde la U final se oiga bien. El más barato de probar ya
+     mismo, sin cambiar nada del código.
+
+  **Recomendación para plantear a Miguel:** empezar por la opción 3
+  (gratis, sin decisiones de arquitectura) en las ~15 palabras de esta
+  lista; si algunas siguen fallando tras varios intentos, pasar a la 2
+  (respelling) antes que a la 1, porque cambiar de voz afecta a *todo* el
+  curso (720 variantes, no solo las palabras sueltas) y hoy no hay
+  garantía de que la voz Standard suene mejor en conjunto, solo de que
+  tiene un mecanismo de control más preciso.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-18 · Unidad 2, ejercicio de ordenar: falta "bonito/a" en el
