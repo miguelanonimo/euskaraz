@@ -32,6 +32,7 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 11 | `ahaztu` ("olvidar") | `unidades/u11/ahaztu.mp3` | "aJaztu", H como jota | H muda: "aastu" |
 | 11 | `berriro` ("de nuevo/otra vez") | `unidades/u11/berriro.mp3` | "berriDo", la R final como D | una R clara |
 | 11 | `duela bi urte` ("hace dos años") | `unidades/u11/duela-bi-urte.mp3` | la R de `urte` suena rara, como una R inglesa (aproximante), ni castellana ni euskaldun | una R vibrante simple, breve |
+| 12 | `erraza` ("fácil") | `unidades/u12/erraza.mp3` | "erratza", con africada | s sibilante: "errassa" |
 | 11 | `zenuen` ("tenías/tuviste") | `unidades/u11/zenuen.mp3` | la Z como en español | la z como s sibilante |
 
 `duela bi urte` arrastra también `unidades/u11/duela-bi-urte-ezagutu-nuen.mp3`
@@ -81,7 +82,7 @@ comparten este error (confirmado de oído en `jaten dut`).
   pronunciación de la Z en el resto del curso es inconsistente: hay que
   escuchar palabra por palabra, no dar por mal todo lo que lleve Z.
   Pendientes de comprobar de oído (marcar aquí OK / MAL según se
-  verifiquen): `azoka`, `bezain`, `bizikleta`, `duzu`, `erraza`,
+  verifiquen): `azoka`, `bezain`, `bizikleta`, `duzu`,
   `ezagutu`, `gauza`, `goiza`, `hamazazpi`, `hemezortzi`, `izena`, `zaizu`,
   `zuzen`. La unidad 11 tiene más candidatas por el pasado (`zen-`, p. ej.
   `unidades/u11/zer-egin-zenuen.mp3`), pero también palabra por palabra.
