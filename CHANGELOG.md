@@ -342,3 +342,19 @@ De paso, `pantallaUnidad()` ahora precarga en segundo plano (sin
 esperar ni bloquear nada) todo el audio de esa unidad —vocabulario,
 variantes y ejemplos de gramática— en cuanto se abre, para que la
 primera reproducción real ya la tenga la caché del navegador templada.
+
+## 2026-08-20 — Corregido «hi»: la H, muda del todo
+
+Tres intentos hasta dar con ello: sonaba «yi» (H como Y), luego «gui»
+(H como G) al pedir una H aspirada suave, luego un suspiro suelto sin
+palabra reconocible al insistir en el soplo de aire. La solución no era
+pulir la aspiración, sino quitarla del todo — la H es muda en la
+inmensa mayoría de dialectos, tal como ya dice el propio bloque de
+pronunciación de la Unidad 1. Pedido explícitamente cero aspiración: el
+resultado suena igual que la vocal «i» sola.
+
+De paso, primera vez que se resuelve un audio con el CLI de Supabase en
+vez del conector MCP (que llevaba toda la sesión cayéndose): `supabase
+login --token` con un token de acceso personal de Miguel, proyecto
+enlazado, y `supabase db query --linked` para abrir/cerrar la política
+RLS temporal — mismo patrón de siempre, vía más estable.
