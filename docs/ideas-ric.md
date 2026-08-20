@@ -359,6 +359,25 @@ comparten este error (confirmado de oído en `jaten dut`).
     categoría) o es práctica libre? Y ¿debe puntuar para el calendario o
     ser como los repasos actuales, que entrenan sin marcar unidades?
 
+### Selector de dialecto: renombrar "Gernikés" a "Gernikera"
+
+- **2026-08-20 · Propuesta de Ric.** La etiqueta "Gernikés" del selector
+  (`index.html:37`, `data-modo="gernikes"`) no es una palabra estándar ni
+  en español ni en euskera — no sigue el patrón real de gentilicios en
+  español (que sería *guernicarra* o *gernikarra*, como *bilbaíno* de
+  Bilbao o *donostiarra* de San Sebastián).
+  - El problema de fondo: el selector empareja "Bizkaiera" (término vasco
+    real, "el habla/dialecto vizcaíno") con "Gernikés", que mezcla un
+    término inventado en español con uno vasco — no son de la misma
+    familia.
+  - **Propuesta:** cambiar la etiqueta a **"Gernikera"**, que sigue el
+    mismo patrón que *Bizkaiera* y *Gipuzkera* (dialecto guipuzcoano): el
+    sufijo *-era* para nombrar el habla local de un sitio. Sería "el habla
+    de Gernika", igual que Bizkaiera es "el habla de Bizkaia".
+  - Solo afecta al texto visible (`index.html:37`); la clave interna
+    `data-modo="gernikes"` / `MODO_DIALECTO` puede quedarse igual, es un
+    identificador técnico, no el nombre que ve el usuario.
+
 ## Implementadas
 
 ## Descartadas (y por qué)
