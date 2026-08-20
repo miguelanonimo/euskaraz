@@ -283,3 +283,19 @@ repasos).
   reutilizando el campo `categoria` y el patrón visual del filtro del
   Diccionario. Selector "Repasar solo:" junto a la tarjeta de repaso;
   filtra `fondoVocabulario()` antes de montar la sesión.
+
+## 2026-08-20 — Regeneradas las 45 palabras del inventario de Ric
+
+Las 45 palabras que Ric fue anotando de oído en `docs/ideas-ric.md`
+(rr floja, r/l/n confundidas, h que suena o que no debería, g/b
+intercambiadas, z como zeta española en vez de s sibilante, la "-tua"
+con r añadida de `katua`/`merkatua`, la j como catalana de `jan`/`joan`,
+entre otras) — regeneradas con una nota de pronunciación específica por
+palabra en el prompt de síntesis (`scripts/generar-audio/lote-ric.mjs`,
+nuevo, sumado al repo), recortado el silencio inicial igual que el resto
+de la librería, y publicadas en su misma ruta. 45/45 sin fallos.
+
+Un aviso de la propia lista de Ric que sigue siendo cierto: la misma
+palabra puede sonar bien en un sitio y mal en otro según la frase que la
+contenga (p. ej. `joan` solo fallaba, no `joan den astean`) — el criterio
+sigue siendo revisar de oído, no dar por generalizable un patrón.

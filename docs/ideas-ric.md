@@ -361,4 +361,20 @@ comparten este error (confirmado de oído en `jaten dut`).
 
 ## Implementadas
 
+- **2026-08-20 · Las 45 palabras de la tabla de "audios con pronunciación
+  mal generada"** regeneradas con nota de pronunciación específica por
+  palabra, silencio inicial recortado, publicadas. Sigue en pie el aviso
+  de que un mismo patrón (H, Z, "-tua"...) no falla igual en todas las
+  palabras — cualquier audio nuevo que suene mal se trata como caso
+  suelto, no como confirmación del patrón entero.
+- **2026-08-19 · Audio automático quitado de práctica/repaso**, con la
+  excepción acordada del icono de altavoz explícito en la caja de "toca
+  las parejas".
+- **2026-08-19 · Porcentaje de unidad coloreado por tramos en la home**
+  (oculto <50%, ámbar 50-69%, verde ≥70%).
+- **2026-08-19 · Filtro por categoría en el repaso de vocabulario.**
+- **2026-08-19 · Correcciones de contenido objetivas**: regla falsa
+  "-tik pierde la k" en U9, "polita" que faltaba en el enunciado de U2,
+  pista que resolvía el ejercicio en U4.
+
 ## Descartadas (y por qué)
