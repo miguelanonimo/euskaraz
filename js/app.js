@@ -230,9 +230,19 @@
       '</button>';
   }
 
+  /* Solo se rebobina si es la MISMA pista que ya estaba puesta —para
+     que tocar dos veces seguidas la misma palabra la reinicie—. Con una
+     pista nueva no hace falta: ya empieza en 0. Ponerlo siempre, sin
+     esta condición, provocaba un recorte audible al principio la
+     primera vez que sonaba cada palabra (el audio aún no tiene
+     metadata cargada — readyState 0— cuando se le pide el seek a 0, así
+     que el navegador lo deja pendiente y lo aplica de golpe justo
+     cuando arranca a sonar). A partir de la segunda vez el archivo ya
+     está en caché y el fallo no se nota, lo que despistaba. */
   function reproducir(ruta) {
-    reproductor.src = AUDIO_BASE + ruta;
-    reproductor.currentTime = 0;
+    var url = AUDIO_BASE + ruta;
+    if (reproductor.src === url) reproductor.currentTime = 0;
+    else reproductor.src = url;
     reproductor.play().catch(function () {});
   }
 

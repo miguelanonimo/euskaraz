@@ -325,3 +325,15 @@ espaciado): este filtra la lista de vocabulario de UNA unidad, la
 pantalla a la que se llega desde "Estudiar el vocabulario" en cada
 lección — mismo patrón visual que el del diccionario. No toca progreso
 ni calendario, solo qué se ve en la lista.
+
+## 2026-08-20 — Corta el recorte al principio del audio la primera vez
+
+`reproducir()` cambiaba `.src` y forzaba `currentTime = 0` en el mismo
+tick, pero el navegador todavía no tenía la metadata del archivo nuevo
+(readyState 0) — el seek a 0 quedaba pendiente y se aplicaba de golpe
+justo cuando arrancaba a sonar, recortando el principio. Solo la
+primera vez: a partir de ahí el archivo ya está en caché del navegador
+y el fallo no se nota, lo que despistaba. Arreglado rebobinando solo
+cuando se repite la MISMA pista (para que tocar dos veces la misma
+palabra la reinicie); con una pista nueva no hace falta, ya empieza en
+0 sola.
