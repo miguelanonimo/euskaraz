@@ -234,3 +234,34 @@ espuria de más). Regenerados con instrucción explícita contra cada
 sonido de más, mismo flujo de revisión que el resto de audios de esta
 sesión (candidata en `test/`, escuchada y aprobada, luego publicada en
 su ruta real).
+
+## 2026-08-19 — Incorporado el trabajo de Ric (rama `ric/trabajo`)
+
+Revisada su rama, que llevaba desde el 18/08 sin fusionar. Traído lo
+objetivo y sin ambigüedad:
+
+- **Corrección lingüística real**: «-tik no pierde la k en bizkaiera»
+  (Unidad 9) era una regla falsa — Ric la comprobó, la quitó del bloque
+  dialectal y corrigió la pregunta de quiz que la daba por cierta.
+  Formateada también la conjugación de «ibili» en líneas, igual que
+  «joan» y «etorri» (los dos datasets).
+- **Dos bugs de contenido en ejercicios**: Unidad 2, un ejercicio de
+  ordenar pedía colocar «polita» (bonito/a) sin que la palabra apareciera
+  en el enunciado en castellano — añadida. Unidad 4, la pista de «Me
+  llamo Ane» daba las dos respuestas completas en vez de orientar —
+  reescrita para no resolver el ejercicio.
+- Añadido `docs/ideas-ric.md`, su cuaderno de revisión: una lista mucho
+  más larga de audios mal pronunciados que los que ya arreglamos por
+  nuestra cuenta (sin solape con jaso/zelan-zagoz/oso-ondo/barkatu/ni/
+  hura), una investigación de por qué falla el TTS (el euskera está en
+  fase Preview dentro de Gemini TTS, de ahí lo errático), y varias
+  propuestas de producto pendientes de decidir con Miguel — ver el
+  documento para el detalle completo.
+
+No traído (pendiente de decisión, no de ejecución automática): a quién
+dar acceso al proyecto de Google Cloud para que Ric pueda probar
+regeneración de audio por su cuenta; la propuesta de Ric de quitar el
+audio automático al acertar/tocar en ejercicios (revisa un cambio de
+esta misma sesión); el resto de propuestas de producto del cuaderno
+(vocabulario general, colorear porcentaje en la home, filtro también en
+repasos).
