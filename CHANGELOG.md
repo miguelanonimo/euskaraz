@@ -337,3 +337,8 @@ y el fallo no se nota, lo que despistaba. Arreglado rebobinando solo
 cuando se repite la MISMA pista (para que tocar dos veces la misma
 palabra la reinicie); con una pista nueva no hace falta, ya empieza en
 0 sola.
+
+De paso, `pantallaUnidad()` ahora precarga en segundo plano (sin
+esperar ni bloquear nada) todo el audio de esa unidad —vocabulario,
+variantes y ejemplos de gramática— en cuanto se abre, para que la
+primera reproducción real ya la tenga la caché del navegador templada.
