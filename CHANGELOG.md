@@ -299,3 +299,21 @@ Un aviso de la propia lista de Ric que sigue siendo cierto: la misma
 palabra puede sonar bien en un sitio y mal en otro según la frase que la
 contenga (p. ej. `joan` solo fallaba, no `joan den astean`) — el criterio
 sigue siendo revisar de oído, no dar por generalizable un patrón.
+
+## 2026-08-20 — Login: de magic link a usuario y contraseña
+
+Motivo: probando el ejercicio de listening en un dominio de preview de
+Vercel, tocaba pedir un magic link nuevo por ser un origen distinto al
+de producción — molesto, aunque la sesión ya se recuerda sola en el
+mismo dominio (comportamiento por defecto del SDK de Supabase, sin
+tocar). Se sustituye el acceso por correo + contraseña:
+
+- Pantalla de acceso con los dos campos y un botón para alternar entre
+  "Entrar" (`signInWithPassword`) y "Crear cuenta" (`signUp`) — un solo
+  formulario, sin duplicar HTML.
+- Pantalla nueva "Tu cuenta" (icono en la cabecera, solo en inicio):
+  cambiar la contraseña (`updateUser`) y cerrar sesión (`signOut`).
+- Sin cambios en Supabase: mismas tablas, mismo `user_id`, mismo
+  usuario existente de Miguel — solo hace falta que le ponga contraseña
+  la primera vez desde "Tu cuenta" (su sesión de magic link seguía
+  activa en producción).

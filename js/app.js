@@ -75,11 +75,20 @@
     progressbarFill: $('progressbarFill'),
     hearts: $('hearts'),
     btnDialecto: $('btnDialecto'),
+    btnCuenta:  $('btnCuenta'),
     screenAuth: $('screenAuth'),
     authForm:   $('authForm'),
     authEmail:  $('authEmail'),
+    authPassword: $('authPassword'),
     authSubmit: $('authSubmit'),
+    authToggle: $('authToggle'),
+    authSub:    $('authSub'),
     authMsg:    $('authMsg'),
+    cuentaEmail:  $('cuentaEmail'),
+    formPassword: $('formPassword'),
+    nuevaPassword: $('nuevaPassword'),
+    cuentaMsg:    $('cuentaMsg'),
+    btnCerrarSesion: $('btnCerrarSesion'),
     screens: {
       home:   $('screenHome'),
       unit:   $('screenUnit'),
@@ -87,7 +96,8 @@
       vocab:  $('screenVocab'),
       dict:   $('screenDict'),
       quiz:   $('screenQuiz'),
-      result: $('screenResult')
+      result: $('screenResult'),
+      cuenta: $('screenCuenta')
     },
     unitList:        $('unitList'),
     repasoCount:     $('repasoCount'),
@@ -426,6 +436,7 @@
     el.progressbar.hidden = (nombre !== 'quiz');
     el.hearts.hidden = (nombre !== 'quiz');
     el.btnDialecto.hidden = (nombre !== 'home');
+    el.btnCuenta.hidden = (nombre !== 'home');
     ocultarFeedback();
     window.scrollTo(0, 0);
   }
@@ -440,6 +451,7 @@
         pantallaUnidad(estado.unidad);
         break;
       case 'dict':
+      case 'cuenta':
         pantallaHome();
         break;
       case 'result':
@@ -1136,6 +1148,25 @@
     el.topbarTitle.textContent = 'Diccionario';
     pintarDiccionario(el.dictInput.value);
     mostrar('dict');
+  }
+
+  // ─────────── Cuenta ───────────
+
+  function pantallaCuenta() {
+    el.topbarTitle.textContent = 'Tu cuenta';
+    sb.auth.getSession().then(function (r) {
+      var email = r.data && r.data.session ? r.data.session.user.email : '';
+      el.cuentaEmail.textContent = email;
+    });
+    mensajeCuenta('', false);
+    el.nuevaPassword.value = '';
+    mostrar('cuenta');
+  }
+
+  function mensajeCuenta(texto, esError) {
+    el.cuentaMsg.textContent = texto;
+    el.cuentaMsg.hidden = !texto;
+    el.cuentaMsg.classList.toggle('is-mal', !!esError);
   }
 
   // ─────────── Práctica ───────────
@@ -1844,11 +1875,12 @@
   });
   pintarDialecto();
 
-  // ─────────── Acceso (magic link) ───────────
+  // ─────────── Acceso (usuario + contraseña) ───────────
 
   function mostrarAuth() {
     el.screenAuth.hidden = false;
     for (var k in el.screens) el.screens[k].hidden = true;
+    el.authPassword.value = '';
   }
 
   function mensajeAuth(texto, esError) {
@@ -1857,20 +1889,74 @@
     el.authMsg.classList.toggle('is-mal', !!esError);
   }
 
+  /* Un solo formulario sirve para entrar y para crear cuenta; el botón
+     "¿Primera vez?" cambia qué hace el submit, sin duplicar el HTML. */
+  var modoCrearCuenta = false;
+
+  function pintarModoAuth() {
+    if (modoCrearCuenta) {
+      el.authSub.textContent = 'Crea tu cuenta con correo y contraseña. Así tu progreso se guarda y sincroniza entre dispositivos.';
+      el.authSubmit.textContent = 'Crear cuenta';
+      el.authToggle.textContent = '¿Ya tienes cuenta? Entrar';
+      el.authPassword.autocomplete = 'new-password';
+    } else {
+      el.authSub.textContent = 'Inicia sesión con tu correo y tu contraseña. Así tu progreso se guarda y sincroniza entre dispositivos.';
+      el.authSubmit.textContent = 'Entrar';
+      el.authToggle.textContent = '¿Primera vez? Crear cuenta';
+      el.authPassword.autocomplete = 'current-password';
+    }
+    mensajeAuth('', false);
+  }
+
+  el.authToggle.addEventListener('click', function () {
+    modoCrearCuenta = !modoCrearCuenta;
+    pintarModoAuth();
+  });
+  pintarModoAuth();
+
   el.authForm.addEventListener('submit', function (e) {
     e.preventDefault();
     var email = el.authEmail.value.trim();
-    if (!email) return;
+    var password = el.authPassword.value;
+    if (!email || !password) return;
     el.authSubmit.disabled = true;
-    mensajeAuth('Enviando…', false);
-    sb.auth.signInWithOtp({
-      email: email,
-      options: { emailRedirectTo: window.location.origin + window.location.pathname }
-    }).then(function (r) {
+    mensajeAuth(modoCrearCuenta ? 'Creando cuenta…' : 'Entrando…', false);
+    var accion = modoCrearCuenta
+      ? sb.auth.signUp({ email: email, password: password })
+      : sb.auth.signInWithPassword({ email: email, password: password });
+    accion.then(function (r) {
       el.authSubmit.disabled = false;
       if (r.error) { mensajeAuth(r.error.message, true); return; }
-      mensajeAuth('Enlace enviado a ' + email + '. Revisa tu correo.', false);
+      if (modoCrearCuenta && !r.data.session) {
+        // Confirmación de correo activada en el proyecto: no hay sesión
+        // todavía, hace falta que confirmes antes de poder entrar.
+        mensajeAuth('Cuenta creada. Revisa tu correo para confirmarla y luego entra con tu contraseña.', false);
+        modoCrearCuenta = false;
+        pintarModoAuth();
+      }
+      // Si hay sesión (login normal, o alta sin confirmación de correo
+      // activada), onAuthStateChange se dispara solo y arranca la app.
     });
+  });
+
+  // ─────────── Cuenta ───────────
+
+  el.btnCuenta.addEventListener('click', pantallaCuenta);
+
+  el.formPassword.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var password = el.nuevaPassword.value;
+    if (!password) return;
+    mensajeCuenta('Guardando…', false);
+    sb.auth.updateUser({ password: password }).then(function (r) {
+      if (r.error) { mensajeCuenta(r.error.message, true); return; }
+      el.nuevaPassword.value = '';
+      mensajeCuenta('Contraseña guardada.', false);
+    });
+  });
+
+  el.btnCerrarSesion.addEventListener('click', function () {
+    sb.auth.signOut();
   });
 
   var arrancado = false;

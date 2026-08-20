@@ -16,7 +16,12 @@ curso.
   `localStorage` (`cargarProgreso`/`guardarProgreso`/`anotar` en
   `js/app.js`), guardado como una columna JSONB. `user_id` desde el
   principio aunque hoy solo haya un usuario.
-- **Auth:** Supabase Auth con magic link, sin contraseña.
+- **Auth:** Supabase Auth con email + contraseña (usuario propio, "recordar
+  sesión" con `persistSession` por defecto del SDK). Cambiado desde magic
+  link el 20/08/2026 a petición de Miguel — la sesión persiste sola en el
+  mismo dominio, pero un correo nuevo cada vez resultaba incómodo, sobre
+  todo al probar en dominios de preview de Vercel. Pantalla de cuenta
+  (`screenCuenta`) para poner/cambiar contraseña y cerrar sesión.
 - **Audio:** Google Cloud TTS (`eu-ES`), generado una sola vez por
   palabra/frase en tiempo de autoría, cacheado como mp3 en Supabase
   Storage. Nunca generar en vivo en cada reproducción.
