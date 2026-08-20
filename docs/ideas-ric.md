@@ -278,16 +278,38 @@ comparten este error (confirmado de oído en `jaten dut`).
     que no tiene sentido ocultarlas — están ahí para consulta libre igual
     que el resto.
   - **Repaso de vocabulario: entran poco a poco, ligadas al avance por
-    las unidades** (no a que la palabra "pertenezca" a la unidad que se
-    acaba de superar). Según se van completando ejercicios/unidades, se
-    van sumando palabras del banco extra a la cola que dosifica el
-    sistema de repaso espaciado ya existente — el mismo mecanismo que ya
-    dosifica el vocabulario normal, solo que alimentado también por este
-    banco aparte.
+    las unidades.** Según se van completando ejercicios/unidades, se van
+    sumando palabras del banco extra a la cola que dosifica el sistema de
+    repaso espaciado ya existente — el mismo mecanismo que ya dosifica el
+    vocabulario normal, solo que alimentado también por este banco
+    aparte. (Concretado el 20/08: si cada palabra extra queda ligada a un
+    tema/unidad —ver más abajo—, lo natural es que entre al repaso cuando
+    se completa esa unidad en concreto, no por avance genérico del curso.)
   - Implica que el motor necesita distinguir "visible en diccionario" de
     "activo para repaso": hoy esas dos cosas van siempre juntas (una
     palabra en `data/unidades/*.json` es ambas a la vez). Es el cambio de
     diseño real que pide esta idea.
+
+  **2026-08-20 · Criterio de qué palabras añadir, propuesto por Ric:
+  completar los campos temáticos que cada unidad ya abre, no meter
+  vocabulario suelto.** Cada unidad toca un tema pero con el vocabulario
+  justo para sus ejercicios, y se queda corto frente al uso real. Ejemplo
+  del propio Ric: la familia trae hermano/a, padres, hijos... pero no
+  novio/a, esposo/a, abuelos. Lo mismo con animales o con comida/bebida:
+  aprovechar el tema ya abierto para sumar el vocabulario común que falta,
+  no palabras nuevas sin relación.
+  - **Dato al revisar el curso:** la `categoria` que ya usa el filtro del
+    Diccionario de Miguel es gramatical (`sustantivo`/`verbo`/`adjetivo`/
+    `otros`), no temática — no existe hoy ningún campo tipo "familia" o
+    "comida" que agrupe por tema. Para que esta idea funcione hace falta
+    un campo nuevo (`tema`, o reutilizar/cruzar con el filtro que Miguel
+    tiene en marcha en `desarrollo/diccionario-filtros`, a comprobar con
+    él qué tiene pensado ahí antes de duplicar trabajo).
+  - Con esto, el vocabulario extra no es una lista suelta: cada palabra
+    extra queda ligada al tema (y por tanto a la unidad) del que amplía,
+    lo que también responde a la pregunta pendiente de cómo dosificarla
+    en el repaso (entra cuando se supera esa unidad/tema, no de forma
+    genérica por avance total).
 
 ### Home: colorear el porcentaje de cada unidad por tramos
 
