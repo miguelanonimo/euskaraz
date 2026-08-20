@@ -266,13 +266,28 @@ comparten este error (confirmado de oído en `jaten dut`).
     `data/unidades/*.json`; haría falta una fuente aparte (p. ej. un
     `data/vocabulario-extra.json` por temas o niveles) que el motor mezcle
     en el repaso y el diccionario.
-  - **Cómo entran al repaso.** ¿Aparecen solas poco a poco (el sistema de
-    repaso ya sabe dosificar lo nuevo), o hay que "desbloquearlas" por
-    unidad/tema para no soltar palabras sin contexto?
   - **Nivel y criterio.** Mantener el criterio A1/HABE del brief y el
     esquema batua+bizkaiera (`registro`/`variantes`); cada palabra nueva
     necesita también su mp3 (el pipeline de TTS ya existe, así que es
     asumible).
+
+  **2026-08-20 · Diseño concretado por Ric — dos vías separadas para la
+  misma palabra:**
+  - **Diccionario general: siempre visible desde el primer día**, sin
+    desbloqueo. Estas palabras extra no pertenecen a ninguna unidad, así
+    que no tiene sentido ocultarlas — están ahí para consulta libre igual
+    que el resto.
+  - **Repaso de vocabulario: entran poco a poco, ligadas al avance por
+    las unidades** (no a que la palabra "pertenezca" a la unidad que se
+    acaba de superar). Según se van completando ejercicios/unidades, se
+    van sumando palabras del banco extra a la cola que dosifica el
+    sistema de repaso espaciado ya existente — el mismo mecanismo que ya
+    dosifica el vocabulario normal, solo que alimentado también por este
+    banco aparte.
+  - Implica que el motor necesita distinguir "visible en diccionario" de
+    "activo para repaso": hoy esas dos cosas van siempre juntas (una
+    palabra en `data/unidades/*.json` es ambas a la vez). Es el cambio de
+    diseño real que pide esta idea.
 
 ### Home: colorear el porcentaje de cada unidad por tramos
 
