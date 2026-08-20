@@ -701,21 +701,30 @@
      1 · ortografía      — la misma palabra escrita de tres maneras, una
                            buena; hay que ver cuál.
      2 · teclear         — escribirla en euskera desde el castellano.
+     3 · escuchar+opción — oír la palabra y elegir qué significa entre
+                           cuatro, sin ver el euskera escrito.
+     4 · escuchar+teclear— oír la palabra y escribir su traducción al
+                           castellano.
 
      Lo asentada que esté la palabra en el calendario no elige el
-     formato: inclina la balanza. Los tres salen desde el primer día
+     formato: inclina la balanza. Los cinco salen desde el primer día
      —una sesión de un solo formato aburre—, pero una palabra recién
      vista se pregunta sobre todo reconociéndola, y una que ya llevas
      semanas acertando se pregunta sobre todo escribiéndola.
 
-     Cada fila son los pesos de [opción, ortografía, teclear]. La
-     ortografía va sobreponderada a propósito: cerca de la mitad de las
-     palabras del curso no la admiten —«ni», «zu», «bai» no tienen
-     dónde equivocarse— y esas tiradas se pierden. */
+     Cada fila son los pesos de [opción, ortografía, teclear, escuchar
+     +opción, escuchar+teclear]. La ortografía va sobreponderada a
+     propósito: cerca de la mitad de las palabras del curso no la
+     admiten —«ni», «zu», «bai» no tienen dónde equivocarse— y esas
+     tiradas se pierden. Los dos formatos de escucha solo se ofrecen a
+     palabras con audio narrado (si no lo tienen, caen a opción como el
+     resto de formatos sin cumplir requisitos) — EXPERIMENTAL: en
+     prueba en la rama experimento/ejercicio-listening, sin fusionar a
+     main todavía. */
   var MEZCLA = [
-    [50, 35, 15],   // nivel 0 · paso 0-1, recién vista
-    [25, 45, 30],   // nivel 1 · paso 2-3, en camino
-    [10, 35, 55]    // nivel 2 · paso 4 o más, asentada
+    [40, 25, 10, 15, 10],   // nivel 0 · paso 0-1, recién vista
+    [20, 35, 15, 15, 15],   // nivel 1 · paso 2-3, en camino
+    [10, 25, 35, 15, 15]    // nivel 2 · paso 4 o más, asentada
   ];
 
   function nivelBase(clave) {
@@ -737,11 +746,14 @@
   }
 
   function tirada(pesos) {
-    var suma = pesos[0] + pesos[1] + pesos[2];
+    var suma = 0, i;
+    for (i = 0; i < pesos.length; i++) suma += pesos[i];
     var r = Math.random() * suma;
-    if (r < pesos[0]) return 0;
-    if (r < pesos[0] + pesos[1]) return 1;
-    return 2;
+    for (i = 0; i < pesos.length; i++) {
+      if (r < pesos[i]) return i;
+      r -= pesos[i];
+    }
+    return pesos.length - 1;
   }
 
   /* ── Erratas ──
@@ -915,6 +927,68 @@
     }, entrada);
   }
 
+  /* Escuchar + opción: la pregunta ya no se lee, se oye. Solo tiene
+     sentido si la palabra tiene audio narrado; si no, el llamante cae a
+     otro formato. Los distractores en castellano se sortean igual que
+     en preguntaOpcion (mismos/otros de la unidad), pero aquí siempre se
+     pregunta el significado — no tiene sentido "escuchar y elegir la
+     misma palabra escrita", eso no prueba comprensión. */
+  function preguntaEscucharOpcion(entrada, ctx) {
+    if (!entrada.audio) return null;
+    var correcta = entrada.es;
+    var yaPuesto = {};
+    yaPuesto[normalizar(correcta)] = true;
+
+    var mismos = [], otros = [];
+    ctx.fondo.forEach(function (v) {
+      if (v === entrada) return;
+      var txt = normalizar(v.es);
+      if (yaPuesto[txt]) return;
+      (v.unidad === entrada.unidad ? mismos : otros).push(v);
+    });
+
+    var opciones = [correcta];
+    barajar(mismos).concat(barajar(otros)).some(function (v) {
+      var txt = normalizar(v.es);
+      if (yaPuesto[txt]) return false;
+      yaPuesto[txt] = true;
+      opciones.push(v.es);
+      return opciones.length === 4;
+    });
+
+    var q = marcarVocab({
+      tipo: 'opcion',
+      instruccion: 'Vocabulario · escucha y elige qué significa',
+      pregunta: '',
+      opciones: opciones,
+      correcta: 0,
+      explicacion: entrada.nota || ''
+    }, entrada);
+    q.__escuchar = true;
+    return q;
+  }
+
+  /* Escuchar + teclear: oír la palabra y escribir su traducción al
+     castellano — el sentido contrario de preguntaTeclear (que escribe
+     en euskera desde el castellano). Como aquí la respuesta es
+     castellano de un único gloss por entrada, no hace falta la lista de
+     sinónimos que sí usa preguntaTeclear (`ctx.porEs`): no hay
+     ambigüedad al escribir en castellano. */
+  function preguntaEscucharTeclear(entrada) {
+    if (!entrada.audio) return null;
+    var q = marcarVocab({
+      tipo: 'teclear',
+      instruccion: 'Vocabulario · escucha y tradúcelo',
+      pregunta: '',
+      respuestas: [entrada.es],
+      solucion: entrada.es,
+      explicacion: entrada.nota || ''
+    }, entrada);
+    q.__escuchar = true;
+    q.__objetivo = 'es';
+    return q;
+  }
+
   function marcarVocab(q, entrada) {
     q.__clave   = clavePalabra(entrada.eu);
     q.__unidad  = entrada.unidad + '. ' + entrada.titulo;
@@ -939,6 +1013,8 @@
       if (!q) f = (it.nivel === 0) ? 0 : 2;
     }
     if (!q && f === 2) q = preguntaTeclear(it.p, ctx);
+    if (!q && f === 3) q = preguntaEscucharOpcion(it.p, ctx);
+    if (!q && f === 4) q = preguntaEscucharTeclear(it.p);
     if (!q) { f = 0; q = preguntaOpcion(it.p, ctx); }
     it.ultimoFormato = f;
     q.__item = it;
@@ -1223,19 +1299,46 @@
 
   // — Opción múltiple —
 
+  /* Cabecera de un ejercicio de opción/teclear: normalmente el texto de
+     la pregunta, pero en los formatos "escuchar" (EXPERIMENTAL, ver
+     MEZCLA) la pregunta ES el audio — no hay texto en euskera que
+     mostrar, solo un botón grande para reproducirlo. */
+  function pintarPrompt(ej) {
+    if (!ej.__escuchar) {
+      return '<h2 class="q__prompt q__prompt--es">' + esc(ej.pregunta) + '</h2>';
+    }
+    return '<button class="escuchar" type="button" id="btnEscuchar" aria-label="Escuchar la palabra">' +
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg>' +
+    '</button>';
+  }
+
+  /* Cablea el botón de la cabecera "escuchar" y reproduce en cuanto se
+     pinta el ejercicio — aquí el audio no es un premio ni una
+     confirmación (eso se quitó de práctica/repaso), es la pregunta en
+     sí: sin oírla no hay nada que responder. */
+  function activarEscuchar(ej) {
+    if (!ej.__escuchar) return;
+    var audio = ej.__palabra.audio;
+    var btn = $('btnEscuchar');
+    btn.addEventListener('click', function () { if (audio) reproducir(audio); });
+    if (audio) reproducir(audio);
+  }
+
   function pintarOpcion(ej) {
     var letras = ['A', 'B', 'C', 'D', 'E', 'F'];
     var orden = barajar(ej.opciones.map(function (txt, i) { return { txt: txt, i: i }; }));
 
     el.quizContent.innerHTML =
       '<p class="q__inst">' + esc(ej.instruccion) + '</p>' +
-      '<h2 class="q__prompt q__prompt--es">' + esc(ej.pregunta) + '</h2>' +
+      pintarPrompt(ej) +
       '<div class="opts" id="opts">' + orden.map(function (o, n) {
         return '<button class="opt" type="button" aria-pressed="false" data-i="' + o.i + '">' +
           '<span class="opt__key">' + letras[n] + '</span>' +
           '<span>' + esc(o.txt) + '</span>' +
         '</button>';
       }).join('') + '</div>';
+
+    activarEscuchar(ej);
 
     $('opts').addEventListener('click', function (e) {
       var btn = e.target.closest('.opt');
@@ -1436,12 +1539,15 @@
   /* Igual que traducir una frase, pero de una sola palabra: una línea,
      no dos, y la comparación letra a letra en vez de palabra a palabra. */
   function pintarTeclear(ej) {
+    var placeholder = ej.__objetivo === 'es' ? 'Escríbelo en castellano…' : 'Escríbelo en euskera…';
     el.quizContent.innerHTML =
       '<p class="q__inst">' + esc(ej.instruccion) + '</p>' +
-      '<h2 class="q__prompt q__prompt--es">' + esc(ej.pregunta) + '</h2>' +
+      pintarPrompt(ej) +
       '<textarea class="typebox typebox--corta" id="typebox" rows="1" autocomplete="off" ' +
       'autocorrect="off" autocapitalize="off" spellcheck="false" ' +
-      'placeholder="Escríbelo en euskera…"></textarea>';
+      'placeholder="' + placeholder + '"></textarea>';
+
+    activarEscuchar(ej);
 
     var ta = $('typebox');
     ta.addEventListener('input', function () {

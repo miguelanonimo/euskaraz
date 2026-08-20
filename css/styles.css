@@ -689,6 +689,24 @@ svg{
   color: var(--tinta-45);
 }
 
+/* — Escuchar (EXPERIMENTAL, rama experimento/ejercicio-listening) — */
+.escuchar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto calc(var(--u) * 4);
+  border: 1px solid var(--filete-alto);
+  background: var(--papel-alto);
+  color: var(--tinta);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background .1s ease, color .1s ease;
+}
+.escuchar:active{ background: var(--tinta); color: var(--papel); }
+.escuchar svg{ width: 36px; height: 36px; stroke-width: 1.5; }
+
 /* — Opción múltiple — */
 .opts{ border-top: 1px solid var(--filete-alto); }
 .opt{
