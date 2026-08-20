@@ -124,6 +124,7 @@
     practiceCount: $('practiceCount'),
     gramContent:   $('gramContent'),
     vocabContent:  $('vocabContent'),
+    vocabUnitCat:  $('vocabUnitCat'),
     quizContent:   $('quizContent'),
     resultContent: $('resultContent'),
     feedback:      $('feedback'),
@@ -632,14 +633,26 @@
     '</div>';
   }
 
+  /* Filtro por categoría gramatical del vocabulario de LA unidad
+     actual — distinto del "Repasar solo" de la home, que filtra el
+     fondo entero del repaso espaciado. Aquí solo cambia qué se ve en
+     la lista, no toca el progreso ni el calendario. */
+  function pintarVocabulario() {
+    var u = estado.unidad;
+    var cat = el.vocabUnitCat.value;
+    var lista = u.vocabulario.filter(function (v) { return !cat || v.categoria === cat; });
+    el.vocabContent.innerHTML = lista.length
+      ? '<div class="vocabgroup">' + lista.map(fichaVocabulario).join('') + '</div>'
+      : '<p class="q__hint">Ninguna palabra de esta unidad es de ese tipo.</p>';
+  }
+
   function pantallaVocabulario() {
     var u = estado.unidad;
     progUnidad(u.id).vocab = true;
     guardarProgreso();
     el.topbarTitle.textContent = 'Vocabulario · ' + u.titulo;
-
-    el.vocabContent.innerHTML = '<div class="vocabgroup">' + u.vocabulario.map(fichaVocabulario).join('') + '</div>';
-
+    el.vocabUnitCat.value = '';
+    pintarVocabulario();
     mostrar('vocab');
   }
 
@@ -1766,6 +1779,7 @@
   $('gramVocab').addEventListener('click', pantallaVocabulario);
   $('vocabPractica').addEventListener('click', empezarPractica);
   $('vocabGram').addEventListener('click', pantallaGramatica);
+  el.vocabUnitCat.addEventListener('change', pintarVocabulario);
 
   $('btnReset').addEventListener('click', function () {
     if (confirm('¿Borrar todo tu progreso? Se pierden también las fechas de repaso. No se puede deshacer.')) {

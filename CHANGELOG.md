@@ -317,3 +317,11 @@ tocar). Se sustituye el acceso por correo + contraseña:
   usuario existente de Miguel — solo hace falta que le ponga contraseña
   la primera vez desde "Tu cuenta" (su sesión de magic link seguía
   activa en producción).
+
+## 2026-08-20 — Filtro por categoría en el Vocabulario de cada unidad
+
+Distinto del "Repasar solo" de la home (que filtra el fondo del repaso
+espaciado): este filtra la lista de vocabulario de UNA unidad, la
+pantalla a la que se llega desde "Estudiar el vocabulario" en cada
+lección — mismo patrón visual que el del diccionario. No toca progreso
+ni calendario, solo qué se ve en la lista.
