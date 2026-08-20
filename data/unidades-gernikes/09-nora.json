@@ -352,16 +352,8 @@
     },
     {
       "titulo": "Cómo suena esto en Gernika",
-      "cuerpo": "<b>El «de dónde» pierde la k</b>\nDonde el batua dice <b>-tik</b>, el bizkaiera dice <b>-ti</b>:\n\n<b>Bilboti nator.</b> — batua: Bilbotik.\n<b>Etxeti urten dot.</b> — He salido de casa.\n\nEs de los rasgos más fáciles de pillar de oído, porque aparece en cuanto alguien cuenta de dónde viene.\n\n<b>Salir se dice «urten»</b>\nEl <i>irten</i> del batua por allí es <b>urten</b>, y se conjuga con <i>dut</i>: <b>urten dot</b>.\n\n<b>Joan y etorri</b>\nLas formas de una pieza aguantan bastante parecidas: <b>noa, zoaz, doa</b> se oyen igual; en plural asoma otra vez la <b>-z</b>, <b>doiaz</b> por <i>doaz</i>. Y para lo habitual el bizkaiera prefiere <b>joaten naz</b> y <b>etorten naz</b>.\n\n<b>Un apunte de geografía</b>\nLa <b>azoka</b> de Gernika es el mercado del lunes, y es lo bastante conocida como para que «astelehenean azokara» se entienda sin más contexto en toda Busturialdea.",
+      "cuerpo": "<b>Salir se dice «urten»</b>\nEl <i>irten</i> del batua por allí es <b>urten</b>, y se conjuga con <i>dut</i>: <b>urten dot</b>.\n\n<b>Joan y etorri</b>\nLas formas de una pieza aguantan bastante parecidas: <b>noa, zoaz, doa</b> se oyen igual; en plural asoma otra vez la <b>-z</b>, <b>doiaz</b> por <i>doaz</i>. Y para lo habitual el bizkaiera prefiere <b>joaten naz</b> y <b>etorten naz</b>.\n\n<b>Un apunte de geografía</b>\nLa <b>azoka</b> de Gernika es el mercado del lunes, y es lo bastante conocida como para que «astelehenean azokara» se entienda sin más contexto en toda Busturialdea.",
       "ejemplos": [
-        {
-          "eu": "Gernikati nator.",
-          "es": "Vengo de Gernika. — batua: Gernikatik."
-        },
-        {
-          "eu": "Etxeti urten dot.",
-          "es": "He salido de casa. — batua: Etxetik irten dut."
-        },
         {
           "eu": "Astelehenean azokara joaten naz.",
           "es": "Los lunes voy a la feria. — batua: joaten naiz."
@@ -1137,8 +1129,8 @@
             "Etxean",
             "Etxera"
           ],
-          "correcta": 1,
-          "explicacion": "Otra vez el -ti sin k."
+          "correcta": 0,
+          "explicacion": "El -tik se mantiene igual que en batua: Etxetik."
         },
         {
           "tipo": "opcion",

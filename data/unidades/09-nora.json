@@ -1155,8 +1155,8 @@
             "Etxean",
             "Etxera"
           ],
-          "correcta": 1,
-          "explicacion": "Otra vez el -ti sin k."
+          "correcta": 0,
+          "explicacion": "El -tik se mantiene igual que en batua: Etxetik."
         },
         {
           "tipo": "opcion",
