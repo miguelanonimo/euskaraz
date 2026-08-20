@@ -28,10 +28,14 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 3 | `bihar` ("mañana") | `unidades/u3/bihar.mp3` | "bihan", la R final como N | una R clara |
 | 3 | `galdera` ("pregunta") | `unidades/u3/galdera.mp3` | la D rara, casi como una Y | una D clara |
 | 3 | `noren?` ("¿de quién?") | `unidades/u3/noren.mp3` | "nonen", la R como N | R clara: "noren" |
+| 3 | `zergatik?` ("¿por qué?") | `unidades/u3/zergatik.mp3` | mal en general, suena "serbetic" | "zergatik" claro |
 | 5 | `hemeretzi` ("diecinueve") | `unidades/u5/hemeretzi.mp3` | "hemeletzi", la R como L | R simple clara |
 | 5 | `katua` ("el gato") | `unidades/u5/katua.mp3` | "kaduar", T como D, y una R añadida al final que no existe en la palabra | T clara; termina en "-tua", sin R |
+| 5 | `sei` ("seis") | `unidades/u5/sei.mp3` | "xei", con X | S sibilante clara: "sei" |
+| 5 | `txakurra` ("el perro") | `unidades/u5/txakurra.mp3` | RR suave, como en inglés | RR rodada, vibrante múltiple |
 | 9 | `merkatua` ("el mercado") | `unidades/u9/merkatua.mp3` | por lo demás bien, pero R añadida al final (más suave que en `katua`, mismo fallo) | termina en "-tua", sin R |
 | 6 | `han` ("allí") | `unidades/u6/han.mp3` | suena "en", la A no se oye | A clara: "han" |
+| 7 | `Zer ordu da?` ("¿qué hora es?") | `unidades/u7/zer-ordu-da.mp3` | "ordo", la U no se oye | U clara: "ordu" |
 | 6 | `logela` ("habitación/dormitorio") | `unidades/u6/logela.mp3` | G suave, se pierde | G fuerte, marcada: "loguela" |
 | 6 | `mahaia` ("mesa") | `unidades/u6/mahaia.mp3` | la H suena | H muda: "maaia" |
 | 8 | `arazoa` ("el problema") | `unidades/u8/arazoa.mp3` | "aratxoa" | la z como s sibilante: "arasoa" |
@@ -40,8 +44,10 @@ variantes batua y gernikés. Detectados de oído por Ric el 18/08/2026.
 | 8 | `hartu` ("coger/tomar") | `unidades/u8/hartu.mp3` | "harto", con O final | "hartu", con U |
 | 8 | `jan` ("comer") | `unidades/u8/jan.mp3` | "Yan", con Y | J suave, como la H inglesa de "hat" |
 | 8 | `liburua` ("el libro") | `unidades/u8/liburua.mp3` | "libulua", la R como L | "liburua": la R suave debe sonar |
+| 8 | `saldu` ("vender") | `unidades/u8/saldu.mp3` | "salbo" | terminado claramente en "-du" |
 | 9 | `denda` ("tienda") | `unidades/u9/denda.mp3` | la segunda D suavizada | las dos D claras |
 | 9 | `ibili` ("andar/caminar") | `unidades/u9/ibili.mp3` | "ibii", la L no se oye | L audible: "ibili" |
+| 9 | `zatoz` ("tú vienes") | `unidades/u9/zatoz.mp3` | las dos Z como Z española | ambas s sibilantes |
 | 9 | `joan` ("ir") | `unidades/u9/joan.mp3` | "Yoan", como en catalán | J suave, como la H inglesa de "hat" (mismo caso que `jan`) |
 
 **Corrección importante:** la J de `joan` NO falla siempre — la palabra
@@ -66,6 +72,11 @@ escuchar.)
 | 12 | `inor ez` ("nadie") | `unidades/u12/inor-ez.mp3` | la R de `inor` como L | R simple clara |
 | 11 | `nintzen` ("yo era/estaba") | `unidades/u11/nintzen.mp3` | "niizen", desaparece el sonido `ntz` entero | `ntz` audible: "nintzen" |
 | 11 | `zenuen` ("tenías/tuviste") | `unidades/u11/zenuen.mp3` | la Z como en español | la z como s sibilante |
+
+`zatoz` arrastra `unidades/u9/nondik-zatoz.mp3` («Nondik zatoz?») y
+`unidades/u9/hona-zatoz.mp3` («Hona zatoz?»).
+
+`zergatik?` arrastra `unidades/u3/zergatik-ez.mp3` («Zergatik ez?»).
 
 `duela bi urte` arrastra también `unidades/u11/duela-bi-urte-ezagutu-nuen.mp3`
 («Duela bi urte ezagutu nuen»). `gure` arrastra
