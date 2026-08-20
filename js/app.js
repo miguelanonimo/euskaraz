@@ -95,6 +95,7 @@
     vocabRepasoCount:$('vocabRepasoCount'),
     vocabRepasoDue:  $('vocabRepasoDue'),
     diccCount:       $('diccCount'),
+    vocabCat:      $('vocabCat'),
     dictInput:     $('dictInput'),
     dictLetras:    $('dictLetras'),
     dictCat:       $('dictCat'),
@@ -486,11 +487,17 @@
       /* El número de la unidad marca su progreso, no un color de
          contenido: gris sin empezar, ámbar empezada, rojo completada. */
       var badgeClase = p.completada ? ' unitcard__badge--ok' : (p.visitada ? ' unitcard__badge--activa' : '');
+      /* Tramos del porcentaje (acordado con Ric): por debajo del 50% no
+         se enseña número —el tanteo inicial no se castiga—, del 50 al
+         69% se enseña en ámbar como "casi lo tienes", y de ahí para
+         arriba ya es la completada de siempre en verde. */
       var meta = p.completada
         ? '<span class="unitcard__meta">' + tickSvg + 'Completada · ' + Math.round(p.mejor * 100) + '%</span>'
-        : (p.visitada
-            ? '<span class="unitcard__meta unitcard__meta--pend">Empezada</span>'
-            : '<span class="unitcard__meta unitcard__meta--pend">' + u.ejercicios.length + ' ejercicios</span>');
+        : (p.mejor >= 0.5
+            ? '<span class="unitcard__meta unitcard__meta--medio">Mejor intento · ' + Math.round(p.mejor * 100) + '%</span>'
+            : (p.visitada
+                ? '<span class="unitcard__meta unitcard__meta--pend">Empezada</span>'
+                : '<span class="unitcard__meta unitcard__meta--pend">' + u.ejercicios.length + ' ejercicios</span>'));
 
       return '<li>' +
         '<button class="unitcard" data-unidad="' + esc(u.id) + '">' +
@@ -671,7 +678,7 @@
      con haber entrado a la portada), sin repetir la misma palabra en
      euskera aunque salga en dos unidades. Se guarda la unidad de origen
      para poder sacar distractores de la misma lección. */
-  function fondoVocabulario() {
+  function fondoVocabulario(categoria) {
     var vistas = {}, fondo = [];
     CURSO.unidades.forEach(function (u) {
       if (!progUnidad(u.id).vocab) return;
@@ -679,6 +686,7 @@
         var k = normalizar(v.eu);
         if (vistas[k]) return;
         vistas[k] = true;
+        if (categoria && (v.categoria || 'otros') !== categoria) return;
         fondo.push({ eu: v.eu, es: v.es, nota: v.nota, unidad: u.numero, titulo: u.titulo });
       });
     });
@@ -938,9 +946,12 @@
   }
 
   function empezarVocab() {
-    var fondo = fondoVocabulario();
+    var categoria = el.vocabCat ? el.vocabCat.value : '';
+    var fondo = fondoVocabulario(categoria);
     if (fondo.length < 4) {
-      alert('Todavía no hay vocabulario suficiente. Abre alguna unidad y luego vuelve aquí.');
+      alert(categoria
+        ? 'Todavía no hay suficiente vocabulario de este tipo. Prueba con "Todos" o abre más unidades.'
+        : 'Todavía no hay vocabulario suficiente. Abre alguna unidad y luego vuelve aquí.');
       return;
     }
 
@@ -1235,10 +1246,6 @@
       btn.setAttribute('aria-pressed', 'true');
       estado.sel = parseInt(btn.dataset.i, 10);
       el.btnCheck.disabled = false;
-      if (estado.sel === ej.correcta) {
-        var audio = audioDePalabra(ej.opciones[ej.correcta]);
-        if (audio) reproducir(audio);
-      }
     });
   }
 
@@ -1277,7 +1284,12 @@
       '<h2 class="q__prompt q__prompt--es">Toca las parejas</h2>' +
       '<div class="pairs">' +
         '<div class="paircol" id="colEu">' + eus.map(function (o) {
-          return '<button class="pair pair--eu" type="button" aria-pressed="false" data-i="' + o.i + '">' + esc(o.txt) + '</button>';
+          return '<button class="pair pair--eu" type="button" aria-pressed="false" data-i="' + o.i + '">' +
+            '<span class="pair__txt">' + esc(o.txt) + '</span>' +
+            '<span class="pair__play" data-play="1" aria-label="Escuchar «' + esc(o.txt) + '»">' +
+              '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg>' +
+            '</span>' +
+          '</button>';
         }).join('') + '</div>' +
         '<div class="paircol" id="colEs">' + ess.map(function (o) {
           return '<button class="pair pair--es" type="button" aria-pressed="false" data-i="' + o.i + '">' + esc(o.txt) + '</button>';
@@ -1321,17 +1333,16 @@
       return function (e) {
         var btn = e.target.closest('.pair');
         if (!btn || btn.classList.contains('is-ok') || estado.resuelto) return;
+        if (e.target.closest('.pair__play')) {
+          var audio = audioDePalabra(ej.pares[parseInt(btn.dataset.i, 10)].eu);
+          if (audio) reproducir(audio);
+          return;
+        }
         var actual = esEu ? selEu : selEs;
         if (actual === btn) { btn.setAttribute('aria-pressed', 'false'); if (esEu) selEu = null; else selEs = null; return; }
         if (actual) actual.setAttribute('aria-pressed', 'false');
         btn.setAttribute('aria-pressed', 'true');
-        if (esEu) {
-          selEu = btn;
-          var audio = audioDePalabra(ej.pares[parseInt(btn.dataset.i, 10)].eu);
-          if (audio) reproducir(audio);
-        } else {
-          selEs = btn;
-        }
+        if (esEu) selEu = btn; else selEs = btn;
         intentar();
       };
     }

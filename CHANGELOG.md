@@ -265,3 +265,21 @@ audio automático al acertar/tocar en ejercicios (revisa un cambio de
 esta misma sesión); el resto de propuestas de producto del cuaderno
 (vocabulario general, colorear porcentaje en la home, filtro también en
 repasos).
+
+## 2026-08-19 — Decisiones sobre el cuaderno de Ric: audio, home y filtro
+
+- **Audio automático quitado de práctica y repaso**, tal como propuso
+  Ric. Única excepción acordada: en "toca las parejas", cada palabra en
+  euskera lleva ahora un icono de altavoz explícito en el lado derecho
+  de su caja (un tercio del ancho; los otros dos tercios siguen siendo
+  para seleccionar la palabra) — sigue pudiéndose escuchar, pero ya no
+  sin pedirlo.
+- **Home: porcentaje de la unidad coloreado por tramos.** Por debajo del
+  50% no se enseña número (se queda como "Empezada"); del 50 al 69% se
+  enseña en ámbar ("Mejor intento · 62%"); del 70% para arriba sigue
+  igual que hoy, en verde ("Completada · XX%"). El rojo no se usa en la
+  home, queda solo para marcar fallos.
+- **Filtro por categoría también en el repaso de vocabulario**,
+  reutilizando el campo `categoria` y el patrón visual del filtro del
+  Diccionario. Selector "Repasar solo:" junto a la tarjeta de repaso;
+  filtra `fondoVocabulario()` antes de montar la sesión.
