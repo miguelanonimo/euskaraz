@@ -10,6 +10,26 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ## Pendientes de comentar con Miguel
 
+### Segunda ronda: audios regenerados por Miguel que siguen fallando
+
+Miguel regeneró las 45 palabras del inventario original (commit
+`eefafb4`, 20/08/2026) más el audio de `hi` por separado. Ric las está
+revisando una por una en el Diccionario general de la app y verificando
+las fechas de subida contra el bucket. Estas ya se comprobaron regeneradas
+pero **siguen sonando mal, con un fallo distinto al original** —
+necesitan otra vuelta. Revisado por Ric el 21/08/2026.
+
+| Palabra | Qué se oye ahora | Qué debería oírse |
+|---|---|---|
+| `ez horregatik` | la RR ya suena bien, pero ahora "Ez horregadit": la T y la K finales no se oyen claras | T y K finales claras |
+| `inor ez` | "inon es" | la I y la N se funden en Ñ ("iñor"), y la R clara: "iñor ez" |
+| `iruditzen zait` | el `zait` suena como "set" | `zait` claro: "zaid" (za-it) |
+| `joan` | sigue sonando "Yoan" (no mejoró) | J suave, como la H inglesa de "hat" — ojo, en «joan den astean» sí está bien pronunciado, es solo la palabra suelta la que falla |
+| `logela` | "lojela", como en castellano | G fuerte, marcada (como "logue" en "LoGUEla") |
+| `mahaia` | ahora suena "mayayaia" (se pasó al otro extremo) | H muda y dos A seguidas: "maaia" |
+| `noren?` | "nolen" | R clara: "noren" |
+| `zatoz` | la primera Z aún no es s sibilante clara | s sibilante clara, como "Satós" en castellano |
+
 ### Audios con pronunciación mal generada (para re-generarlos en tanda)
 
 Inventario ordenado por unidad. Todos los mp3 viven en el bucket
