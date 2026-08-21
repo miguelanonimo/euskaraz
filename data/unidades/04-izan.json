@@ -1022,9 +1022,9 @@
           "instruccion": "Escríbelo en euskera",
           "es": "Soy de Bilbao.",
           "respuestas": [
-            "ni gernikakoa naiz",
-            "gernikakoa naiz",
-            "gernikakoa naiz ni"
+            "ni bilbokoa naiz",
+            "bilbokoa naiz",
+            "bilbokoa naiz ni"
           ],
           "pista": "Bilbo + ko + a, y el verbo cerrando."
         },
