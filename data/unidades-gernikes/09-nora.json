@@ -1090,8 +1090,8 @@
             "tan",
             "ra"
           ],
-          "correcta": 1,
-          "explicacion": "El bizkaiera deja el ablativo en -ti, sin la k."
+          "correcta": 0,
+          "explicacion": "El bizkaiera mantiene el ablativo -tik, igual que en batua: Bilbotik."
         },
         {
           "tipo": "opcion",

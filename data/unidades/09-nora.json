@@ -367,18 +367,8 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "<b>El «de dónde» pierde la k</b>\nDonde el batua dice <b>-tik</b>, el bizkaiera dice <b>-ti</b>:\n\n<b>Bilboti nator.</b> — batua: Bilbotik.\n<b>Etxeti urten dot.</b> — He salido de casa.\n\nEs de los rasgos más fáciles de pillar de oído, porque aparece en cuanto alguien cuenta de dónde viene.\n\n<b>Salir se dice «urten»</b>\nEl <i>irten</i> del batua por allí es <b>urten</b>, y se conjuga con <i>dut</i>: <b>urten dot</b>.\n\n<b>Joan y etorri</b>\nLas formas de una pieza aguantan bastante parecidas: <b>noa, zoaz, doa</b> se oyen igual; en plural asoma otra vez la <b>-z</b>, <b>doiaz</b> por <i>doaz</i>. Y para lo habitual el bizkaiera prefiere <b>joaten naz</b> y <b>etorten naz</b>.\n\n<b>Un apunte de geografía</b>\nLa <b>azoka</b> más conocida para un bilbaíno es el Mercado de la Ribera, uno de los mercados cubiertos más grandes de Europa. Y si sales de Bilbao hacia Busturialdea, el mercado semanal de los lunes en Gernika es toda una institución.",
+      "cuerpo": "<b>Salir se dice «urten»</b>\nEl <i>irten</i> del batua por allí es <b>urten</b>, y se conjuga con <i>dut</i>: <b>urten dot</b>.\n\n<b>Joan y etorri</b>\nLas formas de una pieza aguantan bastante parecidas: <b>noa, zoaz, doa</b> se oyen igual; en plural asoma otra vez la <b>-z</b>, <b>doiaz</b> por <i>doaz</i>. Y para lo habitual el bizkaiera prefiere <b>joaten naz</b> y <b>etorten naz</b>.\n\n<b>Un apunte de geografía</b>\nLa <b>azoka</b> más conocida para un bilbaíno es el Mercado de la Ribera, uno de los mercados cubiertos más grandes de Europa. Y si sales de Bilbao hacia Busturialdea, el mercado semanal de los lunes en Gernika es toda una institución.",
       "ejemplos": [
-        {
-          "eu": "Bilboti nator.",
-          "es": "Vengo de Bilbao. — batua: Bilbotik.",
-          "audio": "unidades/u9/bilboti-nator.mp3"
-        },
-        {
-          "eu": "Etxeti urten dot.",
-          "es": "He salido de casa. — batua: Etxetik irten dut.",
-          "audio": "unidades/u9/etxeti-urten-dot.mp3"
-        },
         {
           "eu": "Astelehenean azokara joaten naz.",
           "es": "Los lunes voy a la feria. — batua: joaten naiz.",
@@ -1116,8 +1106,8 @@
             "tan",
             "ra"
           ],
-          "correcta": 1,
-          "explicacion": "El bizkaiera deja el ablativo en -ti, sin la k."
+          "correcta": 0,
+          "explicacion": "El bizkaiera mantiene el ablativo -tik, igual que en batua: Bilbotik."
         },
         {
           "tipo": "opcion",
