@@ -941,10 +941,10 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Vengo de Bilbao.",
+          "es": "Vengo del País Vasco.",
           "respuestas": [
-            "gernikatik nator",
-            "ni gernikatik nator"
+            "euskal herritik nator",
+            "ni euskal herritik nator"
           ],
           "pista": "Procedencia con -tik."
         },

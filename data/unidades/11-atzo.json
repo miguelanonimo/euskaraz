@@ -912,12 +912,12 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Nací en Bilbao.",
+          "es": "Nací en el País Vasco.",
           "respuestas": [
-            "gernikan jaio nintzen",
-            "ni gernikan jaio nintzen"
+            "euskal herrian jaio nintzen",
+            "ni euskal herrian jaio nintzen"
           ],
-          "pista": "Tres palabras."
+          "pista": "«jaio nintzen» es «nací». El lugar va delante, con -n."
         },
         {
           "tipo": "traducir",

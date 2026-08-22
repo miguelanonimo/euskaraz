@@ -63,6 +63,7 @@
   };
 
   var progreso = progresoVacio();  // placeholder hasta que arrancarApp() lo sustituye con lo cargado de Supabase
+  var progresoActualizadoEn = null;  // updated_at de la fila tal como la leímos, para no pisar un guardado más reciente de otro aparato
 
   // ─────────── Atajos al DOM ───────────
 
@@ -82,6 +83,7 @@
     authPassword: $('authPassword'),
     authSubmit: $('authSubmit'),
     authToggle: $('authToggle'),
+    authOlvido: $('authOlvido'),
     authSub:    $('authSub'),
     authMsg:    $('authMsg'),
     cuentaEmail:  $('cuentaEmail'),
@@ -105,7 +107,6 @@
     vocabRepasoCount:$('vocabRepasoCount'),
     vocabRepasoDue:  $('vocabRepasoDue'),
     diccCount:       $('diccCount'),
-    vocabCat:      $('vocabCat'),
     dictInput:     $('dictInput'),
     dictLetras:    $('dictLetras'),
     dictCat:       $('dictCat'),
@@ -289,18 +290,23 @@
 
   function crearFilaProgreso(datos) {
     return sb.from('euskaraz_progreso').insert({ user_id: usuarioId, data: datos })
+      .select('data, updated_at').single()
       .then(function (r) {
         if (r.error) throw r.error;
+        progresoActualizadoEn = r.data.updated_at;
         return datos;
       });
   }
 
   /* Requiere que usuarioId ya esté fijado (ver onAuthStateChange). */
   function cargarProgreso() {
-    return sb.from('euskaraz_progreso').select('data').eq('user_id', usuarioId).maybeSingle()
+    return sb.from('euskaraz_progreso').select('data, updated_at').eq('user_id', usuarioId).maybeSingle()
       .then(function (r) {
         if (r.error) throw r.error;
-        if (r.data) return normalizarProgreso(r.data.data);
+        if (r.data) {
+          progresoActualizadoEn = r.data.updated_at;
+          return normalizarProgreso(r.data.data);
+        }
         return crearFilaProgreso(normalizarProgreso(progresoLocalPrevio()));
       });
   }
@@ -314,13 +320,24 @@
     guardarTimer = setTimeout(guardarProgresoAhora, GUARDAR_ESPERA_MS);
   }
 
+  /* Escritura optimista: solo pisa la fila si sigue teniendo el
+     updated_at que leímos por última vez. Si otro aparato/pestaña guardó
+     entretanto (nunca a la vez, pero sí una detrás de otra dejando algo
+     abierto de fondo), la condición del WHERE no encuentra fila que
+     actualizar — en vez de pisarlo a ciegas, recargamos lo que de verdad
+     hay en el servidor y adoptamos eso como bueno. */
   function guardarProgresoAhora() {
     guardarTimer = null;
     if (!usuarioId) return;
-    sb.from('euskaraz_progreso')
-      .update({ data: progreso, updated_at: new Date().toISOString() })
-      .eq('user_id', usuarioId)
-      .then(function (r) { if (r.error) console.error('Error guardando progreso', r.error); });
+    var ahora = new Date().toISOString();
+    var query = sb.from('euskaraz_progreso').update({ data: progreso, updated_at: ahora }).eq('user_id', usuarioId);
+    if (progresoActualizadoEn) query = query.eq('updated_at', progresoActualizadoEn);
+    query.select('updated_at').then(function (r) {
+      if (r.error) { console.error('Error guardando progreso', r.error); return; }
+      if (r.data && r.data.length) { progresoActualizadoEn = ahora; return; }
+      // No se actualizó ninguna fila: alguien más guardó primero. Adoptamos su versión.
+      cargarProgreso().then(function (p) { progreso = p; });
+    });
   }
 
   // Al cambiar de pantalla o salir, no dejar una escritura pendiente sin mandar.
@@ -328,6 +345,13 @@
     if (document.visibilityState === 'hidden' && guardarTimer) {
       clearTimeout(guardarTimer);
       guardarProgresoAhora();
+    }
+    // Al volver a una pestaña que llevaba un rato en segundo plano, puede
+    // que en otro aparato se haya avanzado desde entonces — adoptamos lo
+    // último del servidor antes de que esta pestaña, con datos viejos,
+    // pueda llegar a guardar y perder ese avance.
+    if (document.visibilityState === 'visible' && usuarioId && !guardarTimer) {
+      cargarProgreso().then(function (p) { progreso = p; });
     }
   });
 
@@ -1001,12 +1025,9 @@
   }
 
   function empezarVocab() {
-    var categoria = el.vocabCat ? el.vocabCat.value : '';
-    var fondo = fondoVocabulario(categoria);
+    var fondo = fondoVocabulario();
     if (fondo.length < 4) {
-      alert(categoria
-        ? 'Todavía no hay suficiente vocabulario de este tipo. Prueba con "Todos" o abre más unidades.'
-        : 'Todavía no hay vocabulario suficiente. Abre alguna unidad y luego vuelve aquí.');
+      alert('Todavía no hay vocabulario suficiente. Abre alguna unidad y luego vuelve aquí.');
       return;
     }
 
@@ -1195,13 +1216,13 @@
 
   // ─────────── Cuenta ───────────
 
-  function pantallaCuenta() {
+  function pantallaCuenta(mensajeInicial) {
     el.topbarTitle.textContent = 'Tu cuenta';
     sb.auth.getSession().then(function (r) {
       var email = r.data && r.data.session ? r.data.session.user.email : '';
       el.cuentaEmail.textContent = email;
     });
-    mensajeCuenta('', false);
+    mensajeCuenta(mensajeInicial || '', false);
     el.nuevaPassword.value = '';
     mostrar('cuenta');
   }
@@ -1943,11 +1964,13 @@
       el.authSubmit.textContent = 'Crear cuenta';
       el.authToggle.textContent = '¿Ya tienes cuenta? Entrar';
       el.authPassword.autocomplete = 'new-password';
+      el.authOlvido.hidden = true;
     } else {
       el.authSub.textContent = 'Inicia sesión con tu correo y tu contraseña. Así tu progreso se guarda y sincroniza entre dispositivos.';
       el.authSubmit.textContent = 'Entrar';
       el.authToggle.textContent = '¿Primera vez? Crear cuenta';
       el.authPassword.autocomplete = 'current-password';
+      el.authOlvido.hidden = false;
     }
     mensajeAuth('', false);
   }
@@ -1972,14 +1995,40 @@
       el.authSubmit.disabled = false;
       if (r.error) { mensajeAuth(r.error.message, true); return; }
       if (modoCrearCuenta && !r.data.session) {
-        // Confirmación de correo activada en el proyecto: no hay sesión
-        // todavía, hace falta que confirmes antes de poder entrar.
-        mensajeAuth('Cuenta creada. Revisa tu correo para confirmarla y luego entra con tu contraseña.', false);
-        modoCrearCuenta = false;
-        pintarModoAuth();
+        // Supabase no distingue "alta nueva pendiente de confirmar" de
+        // "el correo ya tenía cuenta" en el resultado de signUp (por
+        // diseño, para no filtrar qué emails existen) — salvo por este
+        // detalle: en una cuenta que ya existía, `identities` viene
+        // vacío; en una alta genuinamente nueva, trae al menos uno.
+        var yaExistia = r.data.user && Array.isArray(r.data.user.identities) && r.data.user.identities.length === 0;
+        if (yaExistia) {
+          mensajeAuth('Ya existe una cuenta con ese correo. Inicia sesión.', true);
+          modoCrearCuenta = false;
+          pintarModoAuth();
+        } else {
+          // Confirmación de correo activada en el proyecto: no hay sesión
+          // todavía, hace falta que confirmes antes de poder entrar.
+          mensajeAuth('Cuenta creada. Revisa tu correo para confirmarla y luego entra con tu contraseña.', false);
+          modoCrearCuenta = false;
+          pintarModoAuth();
+        }
       }
       // Si hay sesión (login normal, o alta sin confirmación de correo
       // activada), onAuthStateChange se dispara solo y arranca la app.
+    });
+  });
+
+  el.authOlvido.addEventListener('click', function () {
+    var email = el.authEmail.value.trim();
+    if (!email) { mensajeAuth('Escribe primero tu correo arriba.', true); return; }
+    el.authOlvido.disabled = true;
+    mensajeAuth('Enviando…', false);
+    sb.auth.resetPasswordForEmail(email, {
+      redirectTo: window.location.origin + window.location.pathname
+    }).then(function (r) {
+      el.authOlvido.disabled = false;
+      if (r.error) { mensajeAuth(r.error.message, true); return; }
+      mensajeAuth('Te hemos enviado un enlace a ' + email + ' para elegir una contraseña nueva.', false);
     });
   });
 
@@ -2004,6 +2053,7 @@
   });
 
   var arrancado = false;
+  var enRecuperacion = false;  // true si venimos del enlace de "olvidé mi contraseña"
 
   function arrancarApp() {
     if (arrancado) return;
@@ -2014,7 +2064,12 @@
         CURSO = r[0];
         progreso = r[1];
         document.title = CURSO.meta.titulo + ' · Aprende euskera desde cero';
-        pantallaHome();
+        if (enRecuperacion) {
+          enRecuperacion = false;
+          pantallaCuenta('Elige tu contraseña nueva para terminar de recuperar el acceso.');
+        } else {
+          pantallaHome();
+        }
       })
       .catch(function (err) {
         errorDeCarga(String(err.message || err));
@@ -2023,7 +2078,11 @@
 
   // onAuthStateChange dispara una vez con la sesión inicial (o null) al
   // registrar el listener, y luego en cada login/logout/refresco de token.
+  // PASSWORD_RECOVERY llega con sesión (temporal) al volver del enlace de
+  // "olvidé mi contraseña" — en vez de la home, hay que llevar directo a
+  // poner la contraseña nueva.
   sb.auth.onAuthStateChange(function (event, session) {
+    if (event === 'PASSWORD_RECOVERY') enRecuperacion = true;
     if (session) {
       usuarioId = session.user.id;
       arrancarApp();

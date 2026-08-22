@@ -1020,13 +1020,13 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Soy de Bilbao.",
+          "es": "Soy del País Vasco.",
           "respuestas": [
-            "ni gernikakoa naiz",
-            "gernikakoa naiz",
-            "gernikakoa naiz ni"
+            "ni euskal herrikoa naiz",
+            "euskal herrikoa naiz",
+            "euskal herrikoa naiz ni"
           ],
-          "pista": "Bilbo + ko + a, y el verbo cerrando."
+          "pista": "Euskal Herria + ko + a, y el verbo cerrando."
         },
         {
           "tipo": "traducir",

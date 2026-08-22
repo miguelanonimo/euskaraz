@@ -370,3 +370,63 @@ es esa terminación -a que ya se veía pegada al sustantivo (etxea,
 laguna, herria…) desde el vocabulario, y que no desaparece al añadir un
 posesivo aunque en castellano no lleve artículo ("mi casa", no "mi la
 casa"). Aplicado igual en los dos datasets.
+
+## 2026-08-20 — Auditoría extensiva: contenido, metodología, usabilidad y funciones
+
+Cuatro revisiones independientes en paralelo (contenido lingüístico,
+diseño pedagógico, usabilidad/accesibilidad, robustez técnica), sin que
+se vieran entre sí, compiladas en un informe único. De ahí salen los
+siguientes cambios de esta misma tanda:
+
+**Contenido — 4 ejercicios irresolubles corregidos.** Resto del cambio
+de Gernika a Bilbao de la Fase 3: el enunciado en castellano pedía
+Bilbao pero la respuesta en euskera solo aceptaba Gernika (u4-g10,
+u6-g08, u9-g08, u11-g08). En vez de fijar otra ciudad concreta, se
+generalizó a «Euskal Herria» (el País Vasco) — más neutro que forzar
+siempre la misma ciudad. Los ejercicios donde Bilbao ya estaba bien
+(pregunta y respuesta coincidían) se dejan como están: practicar con un
+nombre real es útil, no era un bug.
+
+**Contenido — corregida la etimología de «gabon» (U7).** Afirmaba que
+«gabon» viene de «gaba» (la noche en bizkaiera), contradiciendo a la U1,
+que ya explica «gabon» = gau + on, común a cualquier registro.
+Verificado con Euskaltzaindia y Wiktionary: «gabon» viene de «gau», no
+de «gaba» — es un error de etimología popular. Corregido el bloque de
+gramática y la pregunta de quiz que repetía el mismo error.
+
+**Funciones — condición de carrera entre pestañas/dispositivos.**
+`guardarProgresoAhora()` pisaba la fila entera de progreso sin ningún
+control de versión. Ahora la escritura es optimista: solo se aplica si
+`updated_at` sigue siendo el que se leyó por última vez; si otro
+aparato guardó primero, se descarta la escritura y se adopta esa
+versión más reciente en vez de pisarla. También se refresca el
+progreso desde el servidor al volver a una pestaña que llevaba un rato
+en segundo plano, antes de que pueda llegar a guardar con datos viejos.
+
+**Funciones — recuperación de contraseña.** Añadido «¿Olvidaste tu
+contraseña?» en la pantalla de acceso (`resetPasswordForEmail`). Al
+volver del enlace del correo, la app detecta el evento
+`PASSWORD_RECOVERY` y lleva directo a poner la contraseña nueva, en
+vez de a la home.
+
+**Funciones — aviso correcto al crear cuenta con un correo ya
+registrado.** Antes decía siempre "revisa tu correo", incluso si la
+cuenta ya existía. Ahora se distingue mirando `user.identities` en la
+respuesta de `signUp` (vacío si el correo ya tenía cuenta confirmada) y
+avisa de que inicie sesión en vez de esperar un email que no llegará.
+
+**Usabilidad — espaciado del filtro en Vocabulario de unidad**,
+alineado con el que ya usa el Diccionario. **Quitado el filtro de
+categoría de la tarjeta de repaso de la home** (redundante ahora que el
+Vocabulario de cada unidad tiene el suyo propio).
+
+**Para decidir con Ric** (anotado en `docs/ideas-ric.md`, no aplicado
+todavía): tope de 80/20 antiguo/nuevo en el repaso cuando hay mucho
+backlog acumulado; si hacen falta ejercicios de flexión gramatical
+dedicados en las unidades con casos nuevos (u5/u6/u10); y el enlace de
+prueba del ejercicio de escucha, pendiente de fusionar.
+
+De paso, sincronizado `docs/brief.md`: la comparación letra a letra
+(9.1) y los ejercicios de escritura libre (9.2) ya están implementados,
+no son funcionalidad futura; y la fila de autenticación ya no dice
+magic link.

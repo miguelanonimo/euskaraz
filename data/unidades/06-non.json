@@ -912,10 +912,10 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Vivo en Bilbao.",
+          "es": "Vivo en el País Vasco.",
           "respuestas": [
-            "gernikan bizi naiz",
-            "ni gernikan bizi naiz"
+            "euskal herrian bizi naiz",
+            "ni euskal herrian bizi naiz"
           ],
           "pista": "«bizi naiz» es «vivo». El lugar va delante."
         },
