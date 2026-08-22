@@ -439,3 +439,30 @@ exacta, así que tómalo como orientación, no como dato cerrado" — que
 es una nota de trabajo nuestra, no algo que deba hacer dudar a quien
 está aprendiendo. Quitada; el resto de la frase se queda tal cual,
 afirmando el hecho sin matizarlo de puertas afuera.
+
+## 2026-08-22 — "Un aviso sobre los dialectos" solo en la Unidad 1
+
+El mismo bloque, palabra por palabra, se repetía en las unidades 1 a 6
+de los dos datasets — un aviso general que no necesita repetirse cada
+vez. Se queda solo en la Unidad 1; quitado de la 2 a la 6.
+
+## 2026-08-22 — Más audios corregidos y un hueco de "toca las parejas" cerrado
+
+- **geu** sonaba «deu» (la g no se oía) — regenerado.
+- **zu · zuk · zuri · zurekin** decía «zuk zuk zurekin» (saltaba y repetía
+  palabras) y, ya corregido el orden, seguía sonando la z como en
+  castellano en vez de s sibilante. Resuelto respelando el texto que se
+  manda a sintetizar («su, suk, suri, surekin» en vez de «zu, zuk, zuri,
+  zurekin») — el resultado es el correcto, sin tocar lo que se ve en la
+  app.
+- **nirekin y zurekin** no tenían ficha de vocabulario propia — solo
+  aparecían sueltos dentro de un ejercicio de "toca las parejas" (U2),
+  así que el botón de audio no encontraba nada que reproducir. Añadidas
+  como vocabulario con su propio mp3, en los dos datasets.
+
+**Contenido — pregunta sin respuesta defendible corregida (U1).** "En
+Bilbao, ¿qué despedida oirás con más frecuencia?" daba «gero arte» por
+correcta frente a «bihar arte» sin ninguna fuente que respalde que una
+suena más que la otra — las dos son despedidas válidas y habituales.
+Reformulada a algo verificable: "¿Cuál de estas NO es una despedida?",
+con «Barkatu» (perdón) como intrusa. Aplicado en los dos datasets.

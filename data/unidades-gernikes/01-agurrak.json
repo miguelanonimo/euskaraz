@@ -902,15 +902,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En Gernika, ¿qué despedida oirás con más frecuencia?",
+          "pregunta": "¿Cuál de estas NO es una despedida?",
           "opciones": [
+            "Barkatu",
             "Gero arte",
             "Bihar arte",
-            "Egun on",
-            "Barkatu"
+            "Ikusi arte"
           ],
           "correcta": 0,
-          "explicacion": "«Gero arte» («hasta después») es la despedida más habitual en Bizkaia."
+          "explicacion": "«Barkatu» es «perdón», no una despedida. Las otras tres sí lo son y las tres son igual de válidas y habituales en Bilbao."
         },
         {
           "tipo": "opcion",

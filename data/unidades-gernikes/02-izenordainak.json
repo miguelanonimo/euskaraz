@@ -173,6 +173,20 @@
       "nota": null,
       "categoria": "adjetivo",
       "audio": "unidades/u2/polita.mp3"
+    },
+    {
+      "eu": "nirekin",
+      "es": "conmigo",
+      "nota": "«nire» + «-kin». Bizkaiera: «nigaz».",
+      "audio": "unidades/u2/nirekin.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zurekin",
+      "es": "contigo",
+      "nota": "«zure» + «-kin». Bizkaiera: «zugaz».",
+      "audio": "unidades/u2/zurekin.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [
@@ -290,11 +304,6 @@
           "es": "¿Con quién estás? — batua: Norekin zaude?"
         }
       ]
-    },
-    {
-      "titulo": "Un aviso sobre los dialectos",
-      "cuerpo": "El habla cambia de pueblo a pueblo, y a veces de barrio a barrio. Lo que te cuento como «de Gernika» es bizkaiera de Busturialdea en general, y no todo el mundo de allí lo dice igual: quien se ha escolarizado en batua mezcla las dos cosas constantemente.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para captar lo que oyes en una taberna de Gernika, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
-      "ejemplos": []
     }
   ],
   "ejercicios": [
