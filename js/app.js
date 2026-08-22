@@ -1800,6 +1800,25 @@
   el.btnCheck.addEventListener('click', comprobar);
   el.feedbackNext.addEventListener('click', siguiente);
 
+  /* Atajo de teclado para ordenador: en un ejercicio de opción, la letra
+     (A, B, C…) elige esa opción, igual que tocarla — no la comprueba
+     sola, para eso sigue haciendo falta el botón. Un único listener aquí
+     en vez de uno por pregunta: #opts se recrea en cada pregunta, así
+     que hay que consultar el DOM en el momento de la tecla, no guardar
+     una referencia vieja. */
+  document.addEventListener('keydown', function (e) {
+    if (estado.pantalla !== 'quiz' || estado.resuelto) return;
+    var ej = ejActual();
+    if (!ej || ej.tipo !== 'opcion') return;
+    var letras = ['a', 'b', 'c', 'd', 'e', 'f'];
+    var i = letras.indexOf(e.key.toLowerCase());
+    if (i === -1) return;
+    var opts = document.querySelectorAll('#opts .opt');
+    if (i >= opts.length) return;
+    e.preventDefault();
+    opts[i].click();
+  });
+
   $('goRepaso').addEventListener('click', empezarRepaso);
   $('goVocabRepaso').addEventListener('click', empezarVocab);
   $('goDicc').addEventListener('click', pantallaDiccionario);

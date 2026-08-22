@@ -466,3 +466,10 @@ correcta frente a «bihar arte» sin ninguna fuente que respalde que una
 suena más que la otra — las dos son despedidas válidas y habituales.
 Reformulada a algo verificable: "¿Cuál de estas NO es una despedida?",
 con «Barkatu» (perdón) como intrusa. Aplicado en los dos datasets.
+
+## 2026-08-22 — Atajo de teclado en los ejercicios de opción
+
+En ordenador, pulsar la letra (A, B, C…) selecciona esa opción, igual
+que tocarla — sigue haciendo falta el botón para comprobar. Un único
+listener global en vez de uno por pregunta, porque `#opts` se recrea
+en cada pregunta nueva.
