@@ -430,3 +430,12 @@ De paso, sincronizado `docs/brief.md`: la comparación letra a letra
 (9.1) y los ejercicios de escritura libre (9.2) ya están implementados,
 no son funcionalidad futura; y la fila de autenticación ya no dice
 magic link.
+
+## 2026-08-22 — Quita una valoración interna que se había colado en el contenido
+
+El bloque del hika (U2) traía una coletilla de cuando se fusionó el
+trabajo de Ric — "no tenemos una fuente que precise con qué frecuencia
+exacta, así que tómalo como orientación, no como dato cerrado" — que
+es una nota de trabajo nuestra, no algo que deba hacer dudar a quien
+está aprendiendo. Quitada; el resto de la frase se queda tal cual,
+afirmando el hecho sin matizarlo de puertas afuera.
