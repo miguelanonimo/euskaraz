@@ -358,3 +358,15 @@ vez del conector MCP (que llevaba toda la sesión cayéndose): `supabase
 login --token` con un token de acceso personal de Miguel, proyecto
 enlazado, y `supabase db query --linked` para abrir/cerrar la política
 RLS temporal — mismo patrón de siempre, vía más estable.
+
+## 2026-08-20 — Introducción al artículo -a antes de los posesivos (U2)
+
+El bloque de posesivos («Los posesivos: nire, zure, gure…») decía "Y el
+sustantivo mantiene su artículo -a" sin haber explicado antes en ningún
+sitio del curso que ese -a ES el artículo — primera vez que aparece el
+concepto, y sonaba a que diera algo por sabido que no lo era. Añadida
+una frase que lo presenta: en euskera «el/la» no es una palabra suelta,
+es esa terminación -a que ya se veía pegada al sustantivo (etxea,
+laguna, herria…) desde el vocabulario, y que no desaparece al añadir un
+posesivo aunque en castellano no lleve artículo ("mi casa", no "mi la
+casa"). Aplicado igual en los dos datasets.
