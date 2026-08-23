@@ -121,7 +121,7 @@
     {
       "eu": "lagundu",
       "es": "ayudar",
-      "nota": "Se construye con dativo: «lagundu diot».",
+      "nota": "Se construye con dativo: «lagundu dio».",
       "categoria": "verbo",
       "audio": "unidades/u10/lagundu.mp3"
     },
@@ -320,15 +320,15 @@
     },
     {
       "titulo": "A quién: la -(r)i de los nombres",
-      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién):\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>Liburua eman dit.</b> — Me ha dado el libro.\n<b>Aneri liburua eman diot.</b> — Le he dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
+      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién):\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>Liburua eman dit.</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio.</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
       "ejemplos": [
         {
-          "eu": "Aneri esan diot.",
-          "es": "Se lo he dicho a Ane."
+          "eu": "Aneri esan dio.",
+          "es": "Se lo ha dicho a Ane."
         },
         {
-          "eu": "Lagunari lagundu diot.",
-          "es": "He ayudado al amigo."
+          "eu": "Lagunari lagundu dio.",
+          "es": "Ha ayudado al amigo."
         },
         {
           "eu": "Zer esan dizu?",
@@ -972,13 +972,13 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Se lo he dicho a Ane.",
-          "eu": "Nik Aneri esan diot.",
+          "es": "Se lo ha dicho a Ane.",
+          "eu": "Hark Aneri esan dio.",
           "palabras": [
-            "Nik",
+            "Hark",
             "Aneri",
             "esan",
-            "diot."
+            "dio."
           ]
         },
         {
@@ -1026,15 +1026,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Se lo he dicho a Ane. → Aneri esan ____.",
+          "pregunta": "Se lo ha dicho a Ane. → Aneri esan ____.",
           "opciones": [
             "dut",
             "dit",
-            "diot",
+            "dio",
             "zaio"
           ],
           "correcta": 2,
-          "explicacion": "Yo, a ella → diot."
+          "explicacion": "Él, a ella → dio."
         },
         {
           "tipo": "opcion",
@@ -1065,15 +1065,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Le he dado el libro. → Liburua eman ____.",
+          "pregunta": "Le ha dado el libro. → Liburua eman ____.",
           "opciones": [
             "dut",
             "dit",
-            "diot",
+            "dio",
             "zaio"
           ],
           "correcta": 2,
-          "explicacion": "Yo, a él → diot."
+          "explicacion": "Él, a él → dio."
         }
       ]
     },

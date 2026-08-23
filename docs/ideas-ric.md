@@ -10,6 +10,18 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ## Pendientes de comentar con Miguel
 
+### Audios nuevos que hay que generar (no son fallos, son frases que cambiaron)
+
+- **2026-08-23 · Unidad 10, dos frases de ejemplo corregidas de `diot` a
+  `dio`** (ver más abajo el porqué). Como el nombre del mp3 es el slug de
+  la frase, cambian de archivo y hacen falta dos audios nuevos:
+  - `unidades/u10/aneri-esan-dio.mp3` — «Aneri esan dio.»
+  - `unidades/u10/lagunari-lagundu-dio.mp3` — «Lagunari lagundu dio.»
+
+  Los antiguos (`aneri-esan-diot.mp3`, `lagunari-lagundu-diot.mp3`) quedan
+  sin usar y se pueden borrar del bucket. Hasta que se generen, esos dos
+  ejemplos se quedan sin audio.
+
 ### Segunda ronda: audios regenerados por Miguel que siguen fallando
 
 Miguel regeneró las 45 palabras del inventario original (commit
@@ -272,6 +284,110 @@ comparten este error (confirmado de oído en `jaten dut`).
   la pista por algo que oriente sin resolver — p. ej. avisar de que hay dos
   formas válidas y en qué se apoya cada una («izena» = sustantivo + "dut";
   o el verbo "izan"), sin escribir la frase entera.
+
+- **2026-08-22 · Repaso de vocabulario: pregunta "tarde" ambigua entre
+  adverbio y sustantivo.** `data/unidades/07-ordua.json:235` (`berandu` →
+  `es: "tarde"`, adverbio de llegar tarde) y `data/unidades/07-ordua.json:129`
+  (`arratsaldea` → `es: "la tarde"`, sustantivo del momento del día).
+  Duplicado también en `data/unidades-gernikes/07-ordua.json` (mismas
+  líneas) y `berandu` reaparece en `data/unidades/08-egiten.json:144` /
+  `data/unidades-gernikes/08-egiten.json:144`. En castellano las dos
+  palabras coinciden («tarde»), y en el repaso de vocabulario la pregunta
+  se muestra sin más contexto, así que no hay forma de saber cuál de las
+  dos se pide. `berandu` ya lleva una `nota` que distingue de
+  `arratsaldea` (en la versión de u7, no en la de u8), pero no está claro
+  que el repaso la muestre. **Criterio general a aplicar:** cuando una
+  palabra en castellano tiene un sinónimo/homónimo entre las palabras del
+  curso, aclarar debajo de la pregunta a qué acepción se refiere (p. ej.
+  «tarde (llegar tarde)» vs. «tarde (momento del día)»), no dejar la
+  palabra sola. Revisar si hay más pares así en el resto del vocabulario.
+
+- **2026-08-23 · Unidad 10: se enseñaba `dio` pero se pedía `diot`, una
+  forma nunca explicada. CORREGIDO en esta rama.** La tabla de gramática
+  («A quién: la -(r)i de los nombres») enseña seis formas del auxiliar de
+  dar/decir — `dit, dizu, dio, digu, dizue, die` — todas con **sujeto de
+  tercera persona** (es él/ella quien da): lo único que varía en la tabla
+  es el destinatario. Pero la unidad usaba `diot` («yo se lo a él/ella»,
+  con la `-t` de sujeto «yo»), que combina un cambio de sujeto que no se
+  explica en ningún sitio: lo comprobé en las 12 unidades y no aparece
+  antes ni después. Y no era un desliz aislado: estaba en la nota de
+  vocabulario de `lagundu`, en el ejemplo del cuerpo, en dos frases de
+  ejemplo con audio, en un ejercicio de ordenar y **en dos ejercicios de
+  opción múltiple que lo daban como respuesta correcta** («Yo, a ella →
+  diot»), o sea que acumulabas fallos por una forma que el curso nunca
+  te había enseñado.
+  - **Por qué no se añade al temario:** el paradigma completo
+    NOR-NORI-NORK (auxiliar variando a la vez por sujeto, objeto y
+    destinatario) es contenido de A2/B1, muy por encima del A1/HABE que
+    fija `docs/brief.md`. La propia sección ya lo trataba como
+    reconocimiento pasivo («No hace falta que lo domines hoy. Basta con
+    reconocerlo cuando lo oigas»), así que meter el eje del sujeto sería
+    justo la sobrecarga que esa frase intenta evitar.
+  - **Qué se hizo:** pasar todo a `dio`, la forma que sí está en la tabla,
+    ajustando el castellano («Se lo he dicho» → «Se lo ha dicho») y el
+    sujeto del ejercicio de ordenar (`Nik` → `Hark`, que sí se enseña en
+    la unidad 5). Los ejemplos siguen cumpliendo su función original, que
+    era mostrar `-ri` con nombres propios (*Aneri*), sin introducir nada
+    nuevo.
+  - **Dato que confirma que `dio` era lo correcto:** la sección dialectal
+    de esa misma unidad ya decía «<b>Esan deutso.</b> — Se lo ha dicho.
+    (batua: esan dio)» — la parte de bizkaiera ya usaba la forma de
+    tercera persona, y era el batua el que se desviaba.
+  - Pendiente para Miguel: generar los dos audios nuevos (ver la sección
+    «Audios nuevos que hay que generar» al principio del documento).
+
+### La forma de la respuesta no debe delatarla en las opciones múltiples
+
+- **2026-08-23 · Detectado por Ric repasando vocabulario. CORREGIDO el
+  generador; los ejercicios escritos a mano, a medias.** Cuando la
+  respuesta correcta es una pregunta o una frase y las otras tres son
+  sustantivos sueltos, se acierta sin saber la palabra, solo por la
+  silueta.
+  - **El repaso de vocabulario (generado por código): arreglado.**
+    `preguntaOpcion` en `js/app.js` rellenaba con palabras al azar del
+    fondo y su único filtro era «que no signifiquen lo mismo que la
+    respuesta»; no miraba la forma. Ejemplo real: «Zer ordu da?» salía
+    contra «el mediodía», «el día» y «temprano» — la única con signo de
+    interrogación era la buena. Ahora los candidatos se agrupan por forma
+    (pregunta / frase de varias palabras / palabra suelta) y se prefieren
+    los de la misma, sin perder dentro de cada grupo la preferencia por
+    la misma unidad. Medido sobre el vocabulario real del curso (686
+    preguntas posibles, las 12 unidades abiertas): **antes la forma
+    delataba la respuesta en 73 casos (10,6%), ahora en 0**. Si el fondo
+    abierto no da ninguno de la misma forma —al principio del curso, o en
+    unidades como la 7 que tiene una sola pregunta entre 33 palabras— se
+    rellena como antes: mejor una opción de otra forma que quedarse sin
+    pregunta.
+  - **Ejercicios escritos a mano: corregidos 6 de 40.** Los arreglados
+    son los de vocabulario, donde bastaba cambiar un distractor por otro
+    del mismo curso: u1 «Son las 11 de la noche» (`Eskerrik asko` →
+    `Mesedez`, para que `Gabon` no fuera la única de una palabra; se
+    descartó `Agur` porque «adiós» al cruzarte con alguien es defendible
+    y un distractor no debe poder discutirse), u1 «¿Cómo
+    devuelves la pregunta?» (`Zer moduz` → `Zer moduz?`, que además es
+    como está en el vocabulario), u2 «¿Qué significa nirekin?» (`Para mí`
+    → `Mío`, que encima se confunde de verdad con `nire`), u3 «Quieres
+    que te repitan algo» (`Bai` → `Noiz?`), u3 «Eres de Bilbao pero hoy
+    vienes de Gernika» (`Bilbora naiz`, que era agramatical, → la frase
+    inversa `Gernikakoa naiz eta Bilbotik nator`: misma longitud y obliga
+    a entenderla de verdad) y u11 «La semana pasada» (el hueco partía la
+    respuesta en `____ astean`; ahora el hueco es entero y las opciones
+    son las expresiones completas de la unidad).
+
+- **PENDIENTE DE DECIDIR: quedan 34 ejercicios donde la correcta es la
+  más larga.** De ellos **30 son preguntas de concepto**, en las que la
+  respuesta buena es larga porque *explica* algo y los distractores son
+  cortos y a menudo de broma. Ejemplo (u2): «¿Por qué en euskera se omite
+  el pronombre sujeto a menudo?» → ✔ «Porque el verbo ya dice quién es»
+  frente a «Por pereza», «Porque está prohibido», «Solo se omite por
+  escrito». Se acierta eligiendo la larga.
+  - Están repartidos así (en batua; se duplican en gernikés): u2 con 13,
+    u6 con 6, u3 con 5, u4 con 4, u1 y u5 con 2, u7 y u12 con 1.
+  - **No los he tocado** porque arreglarlos no es cambiar un distractor:
+    hay que reescribir los tres falsos para que sean explicaciones igual
+    de largas y creíbles. Son 30 × 2 archivos, es trabajo de contenido y
+    con riesgo de meter errores. Decidir con Miguel si merece la pena, y
+    si se hace, en qué unidades primero (la 2 sola se lleva un tercio).
 
 ### Audio en ejercicios: altavoz explícito en vez de auto-reproducir
 

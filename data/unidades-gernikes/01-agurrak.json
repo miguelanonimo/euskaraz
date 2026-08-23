@@ -397,7 +397,7 @@
             "Gabon",
             "Egun on",
             "Arratsalde on",
-            "Eskerrik asko"
+            "Mesedez"
           ],
           "correcta": 0,
           "explicacion": "«Gabon» viene de «gau» (noche) + «on» (bueno)."
@@ -478,7 +478,7 @@
           "pregunta": "¿Cómo devuelves la pregunta después de contestar?",
           "opciones": [
             "Eta zu?",
-            "Zer moduz",
+            "Zer moduz?",
             "Bai",
             "Oso"
           ],

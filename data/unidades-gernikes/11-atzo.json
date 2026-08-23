@@ -837,11 +837,11 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "La semana pasada. → ____ astean.",
+          "pregunta": "La semana pasada. → ____",
           "opciones": [
-            "Duela",
-            "Joan den",
-            "Garai",
+            "Duela bi urte",
+            "Joan den astean",
+            "Garai hartan",
             "Aurten"
           ],
           "correcta": 1,

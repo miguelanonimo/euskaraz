@@ -837,24 +837,49 @@
      Los distractores salen preferentemente de la misma unidad, que es
      donde el parecido hace daño y por tanto donde se aprende algo. Se
      descartan los que coinciden con la respuesta una vez normalizados,
-     para no ofrecer dos opciones que dicen lo mismo. */
+     para no ofrecer dos opciones que dicen lo mismo.
+
+     Y sobre todo: la forma de la respuesta no debe delatarla. Si la
+     correcta es «Zer ordu da?» y las otras tres son «el lunes», «la
+     semana» y «el jueves», se acierta sin saber la palabra, solo por la
+     silueta —la única con signo de interrogación—. Así que los
+     candidatos se agrupan por forma (pregunta / frase de varias palabras
+     / palabra suelta) y se prefieren los de la misma que la respuesta,
+     sin perder dentro de cada grupo la preferencia por la misma unidad.
+     Cuando el fondo abierto no da ninguno igual —al principio del curso
+     hay pocas palabras, y hay unidades con una sola pregunta— se rellena
+     como antes: mejor una opción de otra forma que quedarse sin
+     pregunta. */
+  function formaDe(txt) {
+    var t = String(txt).trim();
+    if (t.slice(-1) === '?') return 'pregunta';
+    return /\s/.test(t) ? 'frase' : 'palabra';
+  }
+
   function preguntaOpcion(entrada, ctx) {
     var aEuskera = Math.random() < 0.5 && !ctx.ambiguas[normalizar(entrada.es)];
     var campo    = aEuskera ? 'eu' : 'es';
     var correcta = entrada[campo];
+    var forma    = formaDe(correcta);
     var yaPuesto = {};
     yaPuesto[normalizar(correcta)] = true;
 
-    var mismos = [], otros = [];
+    // 0: misma forma y unidad · 1: misma forma · 2: misma unidad · 3: resto
+    var grupos = [[], [], [], []];
     ctx.fondo.forEach(function (v) {
       if (v === entrada) return;
       var txt = normalizar(v[campo]);
       if (yaPuesto[txt]) return;
-      (v.unidad === entrada.unidad ? mismos : otros).push(v);
+      var mismaForma  = formaDe(v[campo]) === forma;
+      var mismaUnidad = v.unidad === entrada.unidad;
+      grupos[(mismaForma ? 0 : 2) + (mismaUnidad ? 0 : 1)].push(v);
     });
 
+    var candidatos = [];
+    grupos.forEach(function (g) { candidatos = candidatos.concat(barajar(g)); });
+
     var opciones = [correcta];
-    barajar(mismos).concat(barajar(otros)).some(function (v) {
+    candidatos.some(function (v) {
       var txt = normalizar(v[campo]);
       if (yaPuesto[txt]) return false;
       yaPuesto[txt] = true;
