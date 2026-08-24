@@ -842,11 +842,12 @@ mencionaron.
     de desambiguar — **`biloba` para nieto/a**, y `iloba` cuando el
     contexto basta o cuando se habla de sobrinos. Merece una ficha en la
     5.1 explicando las tres (`iloba`, `loba`, `biloba`).
-  - ⚠️ Lo que el Hiztegi Batua **no** aclara: si `loba` en Bizkaia cubre
-    también el sentido de nieto/a o solo el de sobrino/a (sus dos
-    ejemplos son de sobrino). El propio diccionario remite al OEH y al
-    atlas dialectal EHHA para eso. **Pregunta pendiente para los
-    nativos.**
+  - ✅ **Resuelto por los nativos (25/08):** `loba` / `lobak` en bizkaino
+    vale **indistintamente para sobrino/a y para nieto/a**. Es decir,
+    hereda la ambigüedad completa de `iloba`, no solo el sentido de
+    sobrino que sugerían los dos ejemplos del diccionario. Con esto la
+    ficha de la 5.1 queda clara: `iloba` (batua) y `loba` (bizkaiera) son
+    ambiguas las dos, y `biloba` es la que desambigua hacia nieto/a.
 
 - **E. `Gabonak` va más adelante, no junto a `gabon`.** Los nativos
   avisan de que enseñarlas cerca confunde. Debe aparecer **cuando se
@@ -897,8 +898,23 @@ mencionaron.
 #### Sigue pendiente
 
 - Confirmación de las **24 frases restantes** (las no corregidas aquí).
-- La pregunta abierta de la D: ¿`loba` en Bizkaia vale también para
-  nieto/a, o solo para sobrino/a?
+  Es lo único que falta: las seis dudas de vocabulario están todas
+  cerradas, incluida la de `loba` (resuelta el 25/08).
+
+#### Resumen para la ficha de parentesco de la 5.1
+
+Queda material para una ficha bonita, con todo verificado:
+
+| Palabra | Registro | Significa |
+|---|---|---|
+| `iloba` | batua | sobrino/a **y** nieto/a — ambigua |
+| `loba` | bizkaiera | lo mismo, igual de ambigua (confirmado por nativos) |
+| `biloba` | batua | nieto/a, sin ambigüedad |
+
+La gracia pedagógica: el castellano necesita dos palabras donde el
+euskera usa una, pero el euskera **sí tiene** manera de desambiguar
+cuando hace falta (`biloba`). No es una carencia del idioma, es que la
+distinción no le resulta necesaria por defecto.
 
 ### Home: colorear el porcentaje de cada unidad por tramos
 
