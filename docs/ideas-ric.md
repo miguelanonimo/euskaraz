@@ -263,6 +263,23 @@ comparten este error (confirmado de oído en `jaten dut`).
 
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
+- **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
+  ambiguo: "a la izquierda" / "a la derecha".**
+  `data/unidades/09-nora.json:1071` («a la derecha») y
+  `:1084` («a la izquierda»). Cada uno da por única respuesta correcta la
+  forma de movimiento (`eskuinera`/`ezkerrera`, "hacia la derecha/hacia la
+  izquierda"), pero entre las opciones también está la forma de ubicación
+  (`eskuinean`/`ezkerrean`, "en la derecha/en la izquierda") — y las dos
+  se traducen al castellano exactamente igual, "a la derecha"/"a la
+  izquierda", así que con el enunciado tal cual las dos son defendibles.
+  La propia ficha de gramática de la unidad (línea 349) ya explica la
+  diferencia (el sufijo `-ra` es el que marca movimiento) pero el
+  ejercicio no la aprovecha. Corrección propuesta por Ric: reescribir el
+  enunciado para que quede claro que se pide la forma de movimiento —
+  algo como «Cuando das una indicación y dices que hay que girar a la
+  izquierda, se dice ____» (y su pareja con "derecha"/"girar a la
+  derecha").
+
 - **2026-08-18 · Unidad 2, ejercicio de ordenar: falta "bonito/a" en el
   enunciado castellano.** `data/unidades/02-izenordainak.json:917`. El
   enunciado (`es`) dice «su amigo (de ella)», pero la frase en euskera a
