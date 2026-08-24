@@ -643,3 +643,25 @@ Arreglado también un bug previo (no de esta sesión): el botón de la
 cuenta pasaba el propio evento de click a `pantallaCuenta()`, que lo
 mostraba tal cual como mensaje — se veía "[object PointerEvent]" en la
 pantalla de Tu cuenta.
+
+## 2026-08-24 — Rediseño del selector de dialecto: dos controles separados
+
+Hasta ahora un solo botón de la topbar hacía dos cosas a la vez:
+elegir qué dataset cargar (Bizkaiera/Gernikera, el fork paralelo de
+Ric) Y decidir si los ejercicios preguntaban también por la variante.
+Se separan:
+
+- **Ajustes → "Tu variante dialectal"**: nuevo desplegable
+  (Bizkaiera/Gernikera) que decide qué contenido de gramática y
+  vocabulario carga todo el curso — la misma `cambiarDialecto()` de
+  siempre, movida de un click en la topbar a un `<select>` en Tu
+  cuenta.
+- **Botón de la topbar**: ya no cambia de dataset — ahora es el switch
+  "Batua / [tu variante elegida en Ajustes]" que decide si esos
+  ejercicios entran también en el repaso (lo que antes era el checkbox
+  "Incluir variantes dialectales", ahora con el nombre real de la
+  variante en vez de una etiqueta genérica). El nombre se actualiza
+  solo si cambias de variante en Ajustes.
+
+También se movió "Reiniciar mi progreso" de la Home a Tu cuenta, junto
+al resto de ajustes de la cuenta.
