@@ -1,0 +1,805 @@
+{
+  "id": "u5.1",
+  "numero": 5.1,
+  "titulo": "Familia eta animaliak",
+  "subtitulo": "Ampliación: parentesco, animales y seguir contando",
+  "objetivo": "Completar el vocabulario de familia y animales de la unidad 5, y seguir la escalera de los números más allá de veinte.",
+  "color": "verde",
+  "vocabulario": [
+    {
+      "eu": "senarra",
+      "es": "el marido",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "emaztea",
+      "es": "la mujer, la esposa",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "aitona",
+      "es": "el abuelo",
+      "nota": "En Bizkaia se oye «aitite» o «aitxitxe».",
+      "categoria": "sustantivo",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "aitite",
+          "registro": "bizkaiera",
+          "nota": "Muy usado en Bizkaia."
+        },
+        {
+          "eu": "aitxitxe",
+          "registro": "bizkaiera",
+          "nota": "La otra forma vizcaína, igual de viva."
+        }
+      ]
+    },
+    {
+      "eu": "amona",
+      "es": "la abuela",
+      "nota": "En Bizkaia se oye «amama» o «amuma».",
+      "categoria": "sustantivo",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "amama",
+          "registro": "bizkaiera",
+          "nota": "Recogida en el diccionario de Euskaltzaindia."
+        },
+        {
+          "eu": "amuma",
+          "registro": "bizkaiera",
+          "nota": "La otra forma vizcaína, igual de viva."
+        }
+      ]
+    },
+    {
+      "eu": "osaba",
+      "es": "el tío",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "izeba",
+      "es": "la tía",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "lehengusua",
+      "es": "el primo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "lehengusina",
+      "es": "la prima",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "iloba",
+      "es": "el sobrino / el nieto",
+      "nota": "Vale para las dos cosas. Ver la ficha de esta unidad.",
+      "categoria": "sustantivo",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "loba",
+          "registro": "bizkaiera",
+          "nota": "En Bizkaia, y también para sobrino y nieto indistintamente."
+        }
+      ]
+    },
+    {
+      "eu": "biloba",
+      "es": "el nieto",
+      "nota": "Esta sí es solo nieto: sirve para desambiguar cuando «iloba» no basta.",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "mutil-laguna",
+      "es": "el novio",
+      "nota": "También «amigo» acentuando que es chico. Ver la ficha.",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "neska-laguna",
+      "es": "la novia",
+      "nota": "También «amiga» acentuando que es chica. Ver la ficha.",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "txoria",
+      "es": "el pájaro",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "zaldia",
+      "es": "el caballo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "behia",
+      "es": "la vaca",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "ardia",
+      "es": "la oveja",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "txerria",
+      "es": "el cerdo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "oiloa",
+      "es": "la gallina",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "untxia",
+      "es": "el conejo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "sagua",
+      "es": "el ratón",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "hogeita hamar",
+      "es": "treinta",
+      "nota": "Veinte y diez.",
+      "categoria": "otros"
+    },
+    {
+      "eu": "berrogei",
+      "es": "cuarenta",
+      "nota": "Dos veintes.",
+      "categoria": "otros"
+    },
+    {
+      "eu": "berrogeita hamar",
+      "es": "cincuenta",
+      "nota": "Dos veintes y diez.",
+      "categoria": "otros"
+    },
+    {
+      "eu": "hirurogei",
+      "es": "sesenta",
+      "nota": "Tres veintes.",
+      "categoria": "otros"
+    },
+    {
+      "eu": "hirurogeita hamar",
+      "es": "setenta",
+      "nota": "Tres veintes y diez.",
+      "categoria": "otros"
+    },
+    {
+      "eu": "laurogei",
+      "es": "ochenta",
+      "nota": "Cuatro veintes.",
+      "categoria": "otros"
+    },
+    {
+      "eu": "laurogeita hamar",
+      "es": "noventa",
+      "nota": "Cuatro veintes y diez.",
+      "categoria": "otros"
+    },
+    {
+      "eu": "ehun",
+      "es": "cien",
+      "nota": null,
+      "categoria": "otros"
+    },
+    {
+      "eu": "mila",
+      "es": "mil",
+      "nota": null,
+      "categoria": "otros"
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "«Iloba» es sobrino y nieto a la vez",
+      "cuerpo": "Aquí el euskera no distingue lo que el castellano separa. <b>Iloba</b> vale para el hijo de tu hermano <i>y</i> para el hijo de tu hijo.\n\nNo es que al idioma le falte algo: es que esa distinción no le hace falta casi nunca, porque el contexto la resuelve. Si estás hablando de tus hermanos, <b>iloba</b> es sobrino; si estás hablando de tus hijos, es nieto.\n\nY cuando sí hace falta precisar, existe la palabra:\n\n<b>biloba</b> — nieto, solo nieto\n\nEn Bizkaia oirás <b>loba</b>, sin la i- del principio. Significa exactamente lo mismo que <i>iloba</i>, con la misma doble lectura.",
+      "ejemplos": [
+        {
+          "eu": "iloba",
+          "es": "el sobrino / el nieto"
+        },
+        {
+          "eu": "loba",
+          "es": "lo mismo, en bizkaiera"
+        },
+        {
+          "eu": "biloba",
+          "es": "el nieto (sin ambigüedad)"
+        }
+      ]
+    },
+    {
+      "titulo": "«Mutil-laguna»: novio, o amigo chico",
+      "cuerpo": "Otra que sirve para dos cosas, y conviene saberlo antes de meter la pata.\n\n<b>mutil-laguna</b> — novio, pero también «amigo» cuando quieres dejar claro que es chico\n<b>neska-laguna</b> — novia, o «amiga» chica\n\nFunciona parecido al <i>boyfriend / girlfriend</i> del inglés: la palabra sola es ambigua y es el contexto —o el tono— el que decide. Si quieres dejar claro que hay pareja, lo normal es decirlo con más palabras alrededor.",
+      "ejemplos": [
+        {
+          "eu": "mutil-laguna",
+          "es": "el novio / el amigo"
+        },
+        {
+          "eu": "neska-laguna",
+          "es": "la novia / la amiga"
+        }
+      ]
+    },
+    {
+      "titulo": "Los abuelos tienen dos nombres en Bizkaia",
+      "cuerpo": "El batua dice <b>aitona</b> y <b>amona</b>, y con eso te entiendes en todas partes.\n\nPero en Bizkaia se oye otra cosa, y se oye mucho:\n\n<b>aitite</b> y <b>aitxitxe</b> — abuelo\n<b>amama</b> y <b>amuma</b> — abuela\n\nLas cuatro conviven. No son incorrectas ni «peor euskera»: son las formas de aquí, y en una conversación en Bilbao te van a salir antes que las normativas.",
+      "ejemplos": [
+        {
+          "eu": "aitona",
+          "es": "el abuelo (batua)"
+        },
+        {
+          "eu": "aitite",
+          "es": "el abuelo (bizkaiera)"
+        },
+        {
+          "eu": "amona",
+          "es": "la abuela (batua)"
+        },
+        {
+          "eu": "amama",
+          "es": "la abuela (bizkaiera)"
+        }
+      ]
+    },
+    {
+      "titulo": "Seguir contando: de veinte en veinte",
+      "cuerpo": "En la unidad 5 viste que el euskera cuenta en base veinte. Aquí está el resto de la escalera, y una vez ves el patrón ya no hay que memorizar nada:\n\n<b>hogei</b> (20) · <b>berrogei</b> (40) · <b>hirurogei</b> (60) · <b>laurogei</b> (80)\n\nSon «un veinte, dos veintes, tres veintes, cuatro veintes». Y las decenas intermedias son ese número más diez:\n\n<b>hogeita hamar</b> (30) — veinte y diez\n<b>berrogeita hamar</b> (50) — cuarenta y diez\n<b>hirurogeita hamar</b> (70) · <b>laurogeita hamar</b> (90)\n\nY para salir de ahí: <b>ehun</b> (100) y <b>mila</b> (1000).",
+      "ejemplos": [
+        {
+          "eu": "berrogei",
+          "es": "cuarenta"
+        },
+        {
+          "eu": "hogeita hamar",
+          "es": "treinta"
+        },
+        {
+          "eu": "ehun",
+          "es": "cien"
+        }
+      ]
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "Además de los abuelos y de <i>loba</i>, hay un detalle de la unidad 5 que vuelve aquí: en bizkaiera, <b>ditut</b> (tengo varias cosas) suena <b>dodaz</b>, y <b>dut</b> suena <b>dot</b>.\n\nAsí que «tengo dos primos» puede llegarte de dos maneras:\n\n<b>Bi lehengusu ditut.</b> — batua\n<b>Bi lehengusu dodaz.</b> — bizkaiera\n\nComo siempre: esto es para reconocerlo de oído, no para que lo produzcas tú.",
+      "ejemplos": [
+        {
+          "eu": "Bi lehengusu ditut.",
+          "es": "Tengo dos primos."
+        }
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u5.1-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "aitona",
+              "es": "el abuelo"
+            },
+            {
+              "eu": "amona",
+              "es": "la abuela"
+            },
+            {
+              "eu": "osaba",
+              "es": "el tío"
+            },
+            {
+              "eu": "izeba",
+              "es": "la tía"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "senarra",
+              "es": "el marido"
+            },
+            {
+              "eu": "emaztea",
+              "es": "la mujer"
+            },
+            {
+              "eu": "lehengusua",
+              "es": "el primo"
+            },
+            {
+              "eu": "lehengusina",
+              "es": "la prima"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "aitite",
+              "es": "el abuelo (bizkaiera)"
+            },
+            {
+              "eu": "amama",
+              "es": "la abuela (bizkaiera)"
+            },
+            {
+              "eu": "mutil-laguna",
+              "es": "el novio"
+            },
+            {
+              "eu": "neska-laguna",
+              "es": "la novia"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "iloba",
+              "es": "el sobrino / el nieto"
+            },
+            {
+              "eu": "biloba",
+              "es": "el nieto"
+            },
+            {
+              "eu": "semea",
+              "es": "el hijo"
+            },
+            {
+              "eu": "alaba",
+              "es": "la hija"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "anaia",
+              "es": "hermano (de un chico)"
+            },
+            {
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
+            },
+            {
+              "eu": "osaba",
+              "es": "el tío"
+            },
+            {
+              "eu": "izeba",
+              "es": "la tía"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5.1-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «iloba»?",
+          "opciones": [
+            "solo el sobrino",
+            "el sobrino o el nieto",
+            "solo el nieto",
+            "el primo"
+          ],
+          "correcta": 1,
+          "explicacion": "Vale para las dos cosas: el contexto decide."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si quieres decir «nieto» sin que haya duda, ¿qué palabra usas?",
+          "opciones": [
+            "iloba",
+            "biloba",
+            "loba",
+            "lehengusua"
+          ],
+          "correcta": 1,
+          "explicacion": "«Biloba» es solo nieto. «Iloba» y «loba» son las ambiguas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Loba» es…",
+          "opciones": [
+            "un animal",
+            "lo mismo que «iloba», en bizkaiera",
+            "el primo",
+            "el abuelo"
+          ],
+          "correcta": 1,
+          "explicacion": "Misma palabra sin la i- inicial, y con la misma doble lectura."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «mutil-laguna»?",
+          "opciones": [
+            "solo el novio",
+            "el novio, o un amigo chico",
+            "el hermano",
+            "el hijo"
+          ],
+          "correcta": 1,
+          "explicacion": "Ambigua, como el «boyfriend» del inglés."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Aitite» y «aitxitxe» significan…",
+          "opciones": [
+            "el abuelo",
+            "la abuela",
+            "el tío",
+            "el padre"
+          ],
+          "correcta": 0,
+          "explicacion": "Las dos formas vizcaínas de «aitona»."
+        }
+      ]
+    },
+    {
+      "id": "u5.1-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            },
+            {
+              "eu": "untxia",
+              "es": "el conejo"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "untxia",
+              "es": "el conejo"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            },
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5.1-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «behia»?",
+          "opciones": [
+            "la oveja",
+            "la vaca",
+            "la gallina",
+            "el caballo"
+          ],
+          "correcta": 1,
+          "explicacion": "Behia es la vaca."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «ardia»?",
+          "opciones": [
+            "la vaca",
+            "la oveja",
+            "el cerdo",
+            "el conejo"
+          ],
+          "correcta": 1,
+          "explicacion": "Ardia es la oveja."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «sagua»?",
+          "opciones": [
+            "el ratón",
+            "el pájaro",
+            "el gato",
+            "el conejo"
+          ],
+          "correcta": 0,
+          "explicacion": "Sagua es el ratón. Ojo con «katua», que es el gato."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «oiloa»?",
+          "opciones": [
+            "el pájaro",
+            "la gallina",
+            "la oveja",
+            "el cerdo"
+          ],
+          "correcta": 1,
+          "explicacion": "Oiloa es la gallina. «Txoria» es el pájaro en general."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «untxia»?",
+          "opciones": [
+            "el conejo",
+            "el ratón",
+            "el cerdo",
+            "la vaca"
+          ],
+          "correcta": 0,
+          "explicacion": "Untxia es el conejo."
+        }
+      ]
+    },
+    {
+      "id": "u5.1-g05",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «berrogei»?",
+          "opciones": [
+            "veinte",
+            "cuarenta",
+            "sesenta",
+            "ochenta"
+          ],
+          "correcta": 1,
+          "explicacion": "Dos veintes: berrogei."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «hirurogei»?",
+          "opciones": [
+            "treinta",
+            "cuarenta",
+            "sesenta",
+            "setenta"
+          ],
+          "correcta": 2,
+          "explicacion": "Tres veintes: hirurogei."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «hogeita hamar»?",
+          "opciones": [
+            "treinta",
+            "veinte",
+            "cincuenta",
+            "cien"
+          ],
+          "correcta": 0,
+          "explicacion": "Veinte y diez: treinta."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «laurogei»?",
+          "opciones": [
+            "cuarenta",
+            "sesenta",
+            "ochenta",
+            "cien"
+          ],
+          "correcta": 2,
+          "explicacion": "Cuatro veintes: laurogei."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «ehun»?",
+          "opciones": [
+            "diez",
+            "cien",
+            "mil",
+            "noventa"
+          ],
+          "correcta": 1,
+          "explicacion": "Ehun es cien. «Mila» es mil."
+        }
+      ]
+    },
+    {
+      "id": "u5.1-g06",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo cuarenta años.",
+          "respuestas": [
+            "berrogei urte ditut",
+            "nik berrogei urte ditut"
+          ],
+          "pista": "Empieza por el número."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo dos primos.",
+          "respuestas": [
+            "bi lehengusu ditut",
+            "nik bi lehengusu ditut"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mi abuelo vive en Bilbao.",
+          "eu": "Nire aitona Bilbon bizi da.",
+          "palabras": [
+            "Nire",
+            "aitona",
+            "Bilbon",
+            "bizi",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Las vacas están en el monte.",
+          "eu": "Behiak mendian daude.",
+          "palabras": [
+            "Behiak",
+            "mendian",
+            "daude."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Su mujer es profesora.",
+          "eu": "Haren emaztea irakaslea da.",
+          "palabras": [
+            "Haren",
+            "emaztea",
+            "irakaslea",
+            "da."
+          ]
+        }
+      ]
+    }
+  ]
+}
