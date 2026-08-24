@@ -243,6 +243,34 @@
       "nota": null,
       "audio": "unidades/u10/guztia.mp3",
       "categoria": "otros"
+    },
+    {
+      "eu": "zait",
+      "es": "me (gusta)",
+      "nota": null,
+      "audio": "unidades/u10/zait.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zaizu",
+      "es": "te (gusta)",
+      "nota": null,
+      "audio": "unidades/u10/zaizu.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zaio",
+      "es": "le (gusta)",
+      "nota": null,
+      "audio": "unidades/u10/zaio.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zaie",
+      "es": "les (gusta)",
+      "nota": null,
+      "audio": "unidades/u10/zaie.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

@@ -1112,15 +1112,27 @@
   var DICC = null;
   var AUDIO_POR_PALABRA = null;
 
-  /* Ruta de audio de una palabra o frase en euskera ya narrada,
-     buscando por texto exacto (normalizado) en el vocabulario del
-     curso. Se usa para poner voz a la opción correcta al elegirla en
-     un ejercicio, sin duplicar la ruta en cada sitio que la necesita. */
+  /* Ruta de audio de una palabra o frase en euskera ya narrada, buscando
+     por texto exacto (normalizado) contra TODO el audio del curso — no
+     solo el vocabulario (como diccionario()), también los ejemplos de
+     los bloques de gramática, que llevan su propio audio y muchas veces
+     son justo las frases que se reciclan en "toca las parejas" o en
+     ejercicios de opción. Sin esto, esas frases no sonaban aunque el
+     mp3 ya existiera, solo por no mirar en el sitio correcto. */
   function audioDePalabra(texto) {
     if (!AUDIO_POR_PALABRA) {
       AUDIO_POR_PALABRA = {};
-      diccionario().forEach(function (v) {
-        if (v.audio) AUDIO_POR_PALABRA[normalizar(v.eu)] = v.audio;
+      function anadir(v) {
+        if (v && v.eu && v.audio) AUDIO_POR_PALABRA[normalizar(v.eu)] = v.audio;
+      }
+      CURSO.unidades.forEach(function (u) {
+        u.vocabulario.forEach(function (v) {
+          anadir(v);
+          (v.variantes || []).forEach(anadir);
+        });
+        (u.gramatica || []).forEach(function (g) {
+          (g.ejemplos || []).forEach(anadir);
+        });
       });
     }
     return AUDIO_POR_PALABRA[normalizar(texto)];

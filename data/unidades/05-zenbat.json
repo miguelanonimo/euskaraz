@@ -250,6 +250,48 @@
       "nota": null,
       "audio": "unidades/u5/katua.mp3",
       "categoria": "sustantivo"
+    },
+    {
+      "eu": "dugu",
+      "es": "(nosotros) tenemos",
+      "nota": null,
+      "audio": "unidades/u5/dugu.mp3",
+      "categoria": "verbo"
+    },
+    {
+      "eu": "dute",
+      "es": "(ellos) tienen",
+      "nota": null,
+      "audio": "unidades/u5/dute.mp3",
+      "categoria": "verbo"
+    },
+    {
+      "eu": "nik",
+      "es": "yo (ergativo)",
+      "nota": null,
+      "audio": "unidades/u5/nik.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zuk",
+      "es": "tú (ergativo)",
+      "nota": null,
+      "audio": "unidades/u5/zuk.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "hark",
+      "es": "él/ella (ergativo)",
+      "nota": null,
+      "audio": "unidades/u5/hark.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "guk",
+      "es": "nosotros (ergativo)",
+      "nota": null,
+      "audio": "unidades/u5/guk.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

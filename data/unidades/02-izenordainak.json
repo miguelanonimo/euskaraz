@@ -187,6 +187,111 @@
       "nota": "«zure» + «-kin». Bizkaiera: «zugaz».",
       "audio": "unidades/u2/zurekin.mp3",
       "categoria": "otros"
+    },
+    {
+      "eu": "neure",
+      "es": "mi propio",
+      "nota": null,
+      "audio": "unidades/u2/neure.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zeure",
+      "es": "tu propio",
+      "nota": null,
+      "audio": "unidades/u2/zeure.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "geure",
+      "es": "nuestro propio",
+      "nota": null,
+      "audio": "unidades/u2/geure.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zeuek",
+      "es": "vosotros mismos/as",
+      "nota": null,
+      "audio": "unidades/u2/zeuek.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "nire etxea",
+      "es": "mi casa",
+      "nota": null,
+      "audio": "unidades/u2/nire-etxea.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zure laguna",
+      "es": "tu amigo/a",
+      "nota": null,
+      "audio": "unidades/u2/zure-laguna.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "gure herria",
+      "es": "nuestro pueblo",
+      "nota": null,
+      "audio": "unidades/u2/gure-herria.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "haren izena",
+      "es": "su nombre",
+      "nota": null,
+      "audio": "unidades/u2/haren-izena.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "nire herria",
+      "es": "mi pueblo",
+      "nota": null,
+      "audio": "unidades/u2/nire-herria.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zure etxea",
+      "es": "tu casa",
+      "nota": null,
+      "audio": "unidades/u2/zure-etxea.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "gure laguna",
+      "es": "nuestro amigo/a",
+      "nota": null,
+      "audio": "unidades/u2/gure-laguna.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "haien izena",
+      "es": "su nombre (de ellos)",
+      "nota": null,
+      "audio": "unidades/u2/haien-izena.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "nire etxe handia",
+      "es": "mi casa grande",
+      "nota": null,
+      "audio": "unidades/u2/nire-etxe-handia.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zure herri txikia",
+      "es": "tu pueblo pequeño",
+      "nota": null,
+      "audio": "unidades/u2/zure-herri-txikia.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "gure lagun polita",
+      "es": "nuestro amigo/a guapo/a",
+      "nota": null,
+      "audio": "unidades/u2/gure-lagun-polita.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

@@ -172,6 +172,13 @@
       "nota": null,
       "audio": "unidades/u1/oso.mp3",
       "categoria": "otros"
+    },
+    {
+      "eu": "eta",
+      "es": "y",
+      "nota": null,
+      "audio": "unidades/u1/eta.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

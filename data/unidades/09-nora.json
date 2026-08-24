@@ -257,6 +257,13 @@
       "nota": null,
       "audio": "unidades/u9/hemendik.mp3",
       "categoria": "otros"
+    },
+    {
+      "eu": "handik",
+      "es": "desde allí",
+      "nota": null,
+      "audio": "unidades/u9/handik.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [

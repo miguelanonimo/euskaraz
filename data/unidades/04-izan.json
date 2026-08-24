@@ -145,6 +145,34 @@
       "nota": null,
       "audio": "unidades/u4/bai.mp3",
       "categoria": "otros"
+    },
+    {
+      "eu": "Ni ikaslea naiz.",
+      "es": "Soy estudiante.",
+      "nota": null,
+      "audio": "unidades/u4/ni-ikaslea-naiz.mp3",
+      "categoria": "verbo"
+    },
+    {
+      "eu": "Zu medikua zara.",
+      "es": "Eres médico.",
+      "nota": null,
+      "audio": "unidades/u4/zu-medikua-zara.mp3",
+      "categoria": "verbo"
+    },
+    {
+      "eu": "Gu lagunak gara.",
+      "es": "Somos amigos.",
+      "nota": null,
+      "audio": "unidades/u4/gu-lagunak-gara.mp3",
+      "categoria": "verbo"
+    },
+    {
+      "eu": "Haiek irakasleak dira.",
+      "es": "Son profesores.",
+      "nota": null,
+      "audio": "unidades/u4/haiek-irakasleak-dira.mp3",
+      "categoria": "verbo"
     }
   ],
   "gramatica": [

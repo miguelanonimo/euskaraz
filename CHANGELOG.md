@@ -473,3 +473,21 @@ En ordenador, pulsar la letra (A, B, C…) selecciona esa opción, igual
 que tocarla — sigue haciendo falta el botón para comprobar. Un único
 listener global en vez de uno por pregunta, porque `#opts` se recrea
 en cada pregunta nueva.
+
+## 2026-08-24 — Cierra 40 huecos de audio en "toca las parejas"
+
+Barrido sistemático de las 12 unidades: 40 parejas en ejercicios de
+"toca las parejas" cuyo botón de audio no reproducía nada.
+
+- **6 de las 40 ya tenían mp3 grabado** (como ejemplo de un bloque de
+  gramática), pero `audioDePalabra()` solo buscaba en el vocabulario,
+  nunca en los ejemplos de gramática — arreglado ahí, sin generar nada
+  nuevo (`js/app.js`).
+- **Las 33 restantes no tenían audio en ningún sitio** — generadas y
+  añadidas como vocabulario propio (con su categoría y traducción) en
+  las unidades 1, 2, 4, 5, 6, 9 y 10: posesivos reforzados (neure,
+  zeure, geure, zeuek), frases posesivo+sustantivo (nire etxea, zure
+  herri txikia...), las 4 frases de "izan" en presente (Ni ikaslea
+  naiz...), ergativos (nik, zuk, hark, guk, dugu, dute), dativo de
+  "gustatzen" (zait, zaizu, zaio, zaie), y sueltas (eta, handik, gela
+  txikia, herri polita). 33/33 generados y subidos sin fallos.

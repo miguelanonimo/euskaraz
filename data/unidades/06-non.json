@@ -201,6 +201,20 @@
       "nota": "Frase hecha: «bizi» + el verbo «izan».",
       "audio": "unidades/u6/bizi-naiz.mp3",
       "categoria": "verbo"
+    },
+    {
+      "eu": "gela txikia",
+      "es": "la habitación pequeña",
+      "nota": null,
+      "audio": "unidades/u6/gela-txikia.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "herri polita",
+      "es": "el pueblo bonito",
+      "nota": null,
+      "audio": "unidades/u6/herri-polita.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [
