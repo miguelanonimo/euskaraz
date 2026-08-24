@@ -719,22 +719,33 @@ svg{
 }
 
 /* — Escuchar — */
+/* Mismo tamaño y forma que el botón de Comprobar (.btn/.btn--primary):
+   ancho completo, esquinas rectas, relleno oscuro con el texto e
+   icono en color papel (crema). Se distingue de Comprobar solo por
+   estar arriba, antes de las opciones, no por otra jerarquía visual. */
 .escuchar{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 96px;
-  height: 96px;
-  margin: 0 auto calc(var(--u) * 4);
-  border: 1px solid var(--filete-alto);
-  background: var(--papel-alto);
-  color: var(--tinta);
+  gap: calc(var(--u) * 1.5);
+  width: 100%;
+  min-height: 56px;
+  margin: 0 0 calc(var(--u) * 4);
+  padding: 16px 20px;
+  border: 1px solid var(--tinta);
+  border-radius: 0;
+  background: var(--tinta);
+  color: var(--papel);
+  font-size: var(--t-m);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  transition: background .1s ease, color .1s ease;
+  transition: background .12s ease, color .12s ease;
 }
-.escuchar:active{ background: var(--tinta); color: var(--papel); }
-.escuchar svg{ width: 36px; height: 36px; stroke-width: 1.5; }
+.escuchar:active{ background: var(--acento); border-color: var(--acento); }
+.escuchar svg{ width: 22px; height: 22px; stroke-width: 1.75; flex: 0 0 auto; }
 
 /* — Opción múltiple — */
 .opts{ border-top: 1px solid var(--filete-alto); }

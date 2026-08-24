@@ -1507,6 +1507,7 @@
     }
     return '<button class="escuchar" type="button" id="btnEscuchar" aria-label="Escuchar la palabra">' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg>' +
+      '<span>Escuchar</span>' +
     '</button>';
   }
 

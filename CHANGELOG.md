@@ -579,3 +579,14 @@ para que incluya, además del vocabulario suelto, las frases de ejemplo
 de gramática que llevan audio propio (`ejemplosConAudio()`/
 `fondoEjemplos()`) — "nire etxe handia" o una frase completa de un
 bloque de gramática entran en juego igual que una palabra suelta.
+
+## 2026-08-24 — Rediseño del botón "Escuchar"
+
+El botón que reproduce el audio de las preguntas de escuchar era un
+cuadrado 96×96 solo con icono, sin texto. Revisado con mockups locales
+(`mockups/`, sin trackear) contra el CSS real de la app antes de tocar
+producción. Primer intento —pastilla redondeada— se descartó por no
+encajar con el resto del sistema, que usa `border-radius: 0` en todas
+partes a propósito. Versión final: mismo tamaño y forma que el botón
+de Comprobar (ancho completo, 56px de alto, esquinas rectas), relleno
+oscuro con el texto "Escuchar" + icono en color papel (crema).
