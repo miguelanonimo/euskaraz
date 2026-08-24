@@ -63,6 +63,7 @@
   };
 
   var progreso = progresoVacio();  // placeholder hasta que arrancarApp() lo sustituye con lo cargado de Supabase
+  var progresoActualizadoEn = null;  // updated_at de la fila tal como la leímos, para no pisar un guardado más reciente de otro aparato
 
   // ─────────── Atajos al DOM ───────────
 
@@ -75,11 +76,21 @@
     progressbarFill: $('progressbarFill'),
     hearts: $('hearts'),
     btnDialecto: $('btnDialecto'),
+    btnCuenta:  $('btnCuenta'),
     screenAuth: $('screenAuth'),
     authForm:   $('authForm'),
     authEmail:  $('authEmail'),
+    authPassword: $('authPassword'),
     authSubmit: $('authSubmit'),
+    authToggle: $('authToggle'),
+    authOlvido: $('authOlvido'),
+    authSub:    $('authSub'),
     authMsg:    $('authMsg'),
+    cuentaEmail:  $('cuentaEmail'),
+    formPassword: $('formPassword'),
+    nuevaPassword: $('nuevaPassword'),
+    cuentaMsg:    $('cuentaMsg'),
+    btnCerrarSesion: $('btnCerrarSesion'),
     screens: {
       home:   $('screenHome'),
       unit:   $('screenUnit'),
@@ -87,7 +98,8 @@
       vocab:  $('screenVocab'),
       dict:   $('screenDict'),
       quiz:   $('screenQuiz'),
-      result: $('screenResult')
+      result: $('screenResult'),
+      cuenta: $('screenCuenta')
     },
     unitList:        $('unitList'),
     repasoCount:     $('repasoCount'),
@@ -95,7 +107,6 @@
     vocabRepasoCount:$('vocabRepasoCount'),
     vocabRepasoDue:  $('vocabRepasoDue'),
     diccCount:       $('diccCount'),
-    vocabCat:      $('vocabCat'),
     dictInput:     $('dictInput'),
     dictLetras:    $('dictLetras'),
     dictCat:       $('dictCat'),
@@ -114,6 +125,7 @@
     practiceCount: $('practiceCount'),
     gramContent:   $('gramContent'),
     vocabContent:  $('vocabContent'),
+    vocabUnitCat:  $('vocabUnitCat'),
     quizContent:   $('quizContent'),
     resultContent: $('resultContent'),
     feedback:      $('feedback'),
@@ -219,9 +231,19 @@
       '</button>';
   }
 
+  /* Solo se rebobina si es la MISMA pista que ya estaba puesta —para
+     que tocar dos veces seguidas la misma palabra la reinicie—. Con una
+     pista nueva no hace falta: ya empieza en 0. Ponerlo siempre, sin
+     esta condición, provocaba un recorte audible al principio la
+     primera vez que sonaba cada palabra (el audio aún no tiene
+     metadata cargada — readyState 0— cuando se le pide el seek a 0, así
+     que el navegador lo deja pendiente y lo aplica de golpe justo
+     cuando arranca a sonar). A partir de la segunda vez el archivo ya
+     está en caché y el fallo no se nota, lo que despistaba. */
   function reproducir(ruta) {
-    reproductor.src = AUDIO_BASE + ruta;
-    reproductor.currentTime = 0;
+    var url = AUDIO_BASE + ruta;
+    if (reproductor.src === url) reproductor.currentTime = 0;
+    else reproductor.src = url;
     reproductor.play().catch(function () {});
   }
 
@@ -268,18 +290,23 @@
 
   function crearFilaProgreso(datos) {
     return sb.from('euskaraz_progreso').insert({ user_id: usuarioId, data: datos })
+      .select('data, updated_at').single()
       .then(function (r) {
         if (r.error) throw r.error;
+        progresoActualizadoEn = r.data.updated_at;
         return datos;
       });
   }
 
   /* Requiere que usuarioId ya esté fijado (ver onAuthStateChange). */
   function cargarProgreso() {
-    return sb.from('euskaraz_progreso').select('data').eq('user_id', usuarioId).maybeSingle()
+    return sb.from('euskaraz_progreso').select('data, updated_at').eq('user_id', usuarioId).maybeSingle()
       .then(function (r) {
         if (r.error) throw r.error;
-        if (r.data) return normalizarProgreso(r.data.data);
+        if (r.data) {
+          progresoActualizadoEn = r.data.updated_at;
+          return normalizarProgreso(r.data.data);
+        }
         return crearFilaProgreso(normalizarProgreso(progresoLocalPrevio()));
       });
   }
@@ -293,13 +320,24 @@
     guardarTimer = setTimeout(guardarProgresoAhora, GUARDAR_ESPERA_MS);
   }
 
+  /* Escritura optimista: solo pisa la fila si sigue teniendo el
+     updated_at que leímos por última vez. Si otro aparato/pestaña guardó
+     entretanto (nunca a la vez, pero sí una detrás de otra dejando algo
+     abierto de fondo), la condición del WHERE no encuentra fila que
+     actualizar — en vez de pisarlo a ciegas, recargamos lo que de verdad
+     hay en el servidor y adoptamos eso como bueno. */
   function guardarProgresoAhora() {
     guardarTimer = null;
     if (!usuarioId) return;
-    sb.from('euskaraz_progreso')
-      .update({ data: progreso, updated_at: new Date().toISOString() })
-      .eq('user_id', usuarioId)
-      .then(function (r) { if (r.error) console.error('Error guardando progreso', r.error); });
+    var ahora = new Date().toISOString();
+    var query = sb.from('euskaraz_progreso').update({ data: progreso, updated_at: ahora }).eq('user_id', usuarioId);
+    if (progresoActualizadoEn) query = query.eq('updated_at', progresoActualizadoEn);
+    query.select('updated_at').then(function (r) {
+      if (r.error) { console.error('Error guardando progreso', r.error); return; }
+      if (r.data && r.data.length) { progresoActualizadoEn = ahora; return; }
+      // No se actualizó ninguna fila: alguien más guardó primero. Adoptamos su versión.
+      cargarProgreso().then(function (p) { progreso = p; });
+    });
   }
 
   // Al cambiar de pantalla o salir, no dejar una escritura pendiente sin mandar.
@@ -307,6 +345,13 @@
     if (document.visibilityState === 'hidden' && guardarTimer) {
       clearTimeout(guardarTimer);
       guardarProgresoAhora();
+    }
+    // Al volver a una pestaña que llevaba un rato en segundo plano, puede
+    // que en otro aparato se haya avanzado desde entonces — adoptamos lo
+    // último del servidor antes de que esta pestaña, con datos viejos,
+    // pueda llegar a guardar y perder ese avance.
+    if (document.visibilityState === 'visible' && usuarioId && !guardarTimer) {
+      cargarProgreso().then(function (p) { progreso = p; });
     }
   });
 
@@ -426,6 +471,7 @@
     el.progressbar.hidden = (nombre !== 'quiz');
     el.hearts.hidden = (nombre !== 'quiz');
     el.btnDialecto.hidden = (nombre !== 'home');
+    el.btnCuenta.hidden = (nombre !== 'home');
     ocultarFeedback();
     window.scrollTo(0, 0);
   }
@@ -440,6 +486,7 @@
         pantallaUnidad(estado.unidad);
         break;
       case 'dict':
+      case 'cuenta':
         pantallaHome();
         break;
       case 'result':
@@ -546,10 +593,30 @@
 
   // ─────────── Pantalla: portada de unidad ───────────
 
+  /* Calienta la caché del navegador con todo el audio de la unidad en
+     cuanto se abre, para que la primera reproducción real (en
+     Gramática, Vocabulario o el repaso) no cargue en frío. Sin esperar
+     a que termine ni bloquear nada: si una petición falla, no pasa
+     nada, simplemente esa palabra tardará como antes la primera vez. */
+  function precargarAudioDeUnidad(u) {
+    var rutas = {};
+    u.vocabulario.forEach(function (v) {
+      if (v.audio) rutas[v.audio] = true;
+      (v.variantes || []).forEach(function (variante) { if (variante.audio) rutas[variante.audio] = true; });
+    });
+    (u.gramatica || []).forEach(function (g) {
+      (g.ejemplos || []).forEach(function (e) { if (e.audio) rutas[e.audio] = true; });
+    });
+    Object.keys(rutas).forEach(function (ruta) {
+      fetch(AUDIO_BASE + ruta, { cache: 'force-cache' }).catch(function () {});
+    });
+  }
+
   function pantallaUnidad(u) {
     estado.unidad = u;
     progUnidad(u.id).visitada = true;
     guardarProgreso();
+    precargarAudioDeUnidad(u);
 
     el.topbarTitle.textContent = u.titulo;
     el.unitHeroNum.textContent = u.numero + '. unitatea';
@@ -620,14 +687,26 @@
     '</div>';
   }
 
+  /* Filtro por categoría gramatical del vocabulario de LA unidad
+     actual — distinto del "Repasar solo" de la home, que filtra el
+     fondo entero del repaso espaciado. Aquí solo cambia qué se ve en
+     la lista, no toca el progreso ni el calendario. */
+  function pintarVocabulario() {
+    var u = estado.unidad;
+    var cat = el.vocabUnitCat.value;
+    var lista = u.vocabulario.filter(function (v) { return !cat || v.categoria === cat; });
+    el.vocabContent.innerHTML = lista.length
+      ? '<div class="vocabgroup">' + lista.map(fichaVocabulario).join('') + '</div>'
+      : '<p class="q__hint">Ninguna palabra de esta unidad es de ese tipo.</p>';
+  }
+
   function pantallaVocabulario() {
     var u = estado.unidad;
     progUnidad(u.id).vocab = true;
     guardarProgreso();
     el.topbarTitle.textContent = 'Vocabulario · ' + u.titulo;
-
-    el.vocabContent.innerHTML = '<div class="vocabgroup">' + u.vocabulario.map(fichaVocabulario).join('') + '</div>';
-
+    el.vocabUnitCat.value = '';
+    pintarVocabulario();
     mostrar('vocab');
   }
 
@@ -1022,12 +1101,9 @@
   }
 
   function empezarVocab() {
-    var categoria = el.vocabCat ? el.vocabCat.value : '';
-    var fondo = fondoVocabulario(categoria);
+    var fondo = fondoVocabulario();
     if (fondo.length < 4) {
-      alert(categoria
-        ? 'Todavía no hay suficiente vocabulario de este tipo. Prueba con "Todos" o abre más unidades.'
-        : 'Todavía no hay vocabulario suficiente. Abre alguna unidad y luego vuelve aquí.');
+      alert('Todavía no hay vocabulario suficiente. Abre alguna unidad y luego vuelve aquí.');
       return;
     }
 
@@ -1212,6 +1288,25 @@
     el.topbarTitle.textContent = 'Diccionario';
     pintarDiccionario(el.dictInput.value);
     mostrar('dict');
+  }
+
+  // ─────────── Cuenta ───────────
+
+  function pantallaCuenta(mensajeInicial) {
+    el.topbarTitle.textContent = 'Tu cuenta';
+    sb.auth.getSession().then(function (r) {
+      var email = r.data && r.data.session ? r.data.session.user.email : '';
+      el.cuentaEmail.textContent = email;
+    });
+    mensajeCuenta(mensajeInicial || '', false);
+    el.nuevaPassword.value = '';
+    mostrar('cuenta');
+  }
+
+  function mensajeCuenta(texto, esError) {
+    el.cuentaMsg.textContent = texto;
+    el.cuentaMsg.hidden = !texto;
+    el.cuentaMsg.classList.toggle('is-mal', !!esError);
   }
 
   // ─────────── Práctica ───────────
@@ -1811,6 +1906,25 @@
   el.btnCheck.addEventListener('click', comprobar);
   el.feedbackNext.addEventListener('click', siguiente);
 
+  /* Atajo de teclado para ordenador: en un ejercicio de opción, la letra
+     (A, B, C…) elige esa opción, igual que tocarla — no la comprueba
+     sola, para eso sigue haciendo falta el botón. Un único listener aquí
+     en vez de uno por pregunta: #opts se recrea en cada pregunta, así
+     que hay que consultar el DOM en el momento de la tecla, no guardar
+     una referencia vieja. */
+  document.addEventListener('keydown', function (e) {
+    if (estado.pantalla !== 'quiz' || estado.resuelto) return;
+    var ej = ejActual();
+    if (!ej || ej.tipo !== 'opcion') return;
+    var letras = ['a', 'b', 'c', 'd', 'e', 'f'];
+    var i = letras.indexOf(e.key.toLowerCase());
+    if (i === -1) return;
+    var opts = document.querySelectorAll('#opts .opt');
+    if (i >= opts.length) return;
+    e.preventDefault();
+    opts[i].click();
+  });
+
   $('goRepaso').addEventListener('click', empezarRepaso);
   $('goVocabRepaso').addEventListener('click', empezarVocab);
   $('goDicc').addEventListener('click', pantallaDiccionario);
@@ -1841,6 +1955,7 @@
   $('gramVocab').addEventListener('click', pantallaVocabulario);
   $('vocabPractica').addEventListener('click', empezarPractica);
   $('vocabGram').addEventListener('click', pantallaGramatica);
+  el.vocabUnitCat.addEventListener('change', pintarVocabulario);
 
   $('btnReset').addEventListener('click', function () {
     if (confirm('¿Borrar todo tu progreso? Se pierden también las fechas de repaso. No se puede deshacer.')) {
@@ -1950,11 +2065,12 @@
   });
   pintarDialecto();
 
-  // ─────────── Acceso (magic link) ───────────
+  // ─────────── Acceso (usuario + contraseña) ───────────
 
   function mostrarAuth() {
     el.screenAuth.hidden = false;
     for (var k in el.screens) el.screens[k].hidden = true;
+    el.authPassword.value = '';
   }
 
   function mensajeAuth(texto, esError) {
@@ -1963,23 +2079,106 @@
     el.authMsg.classList.toggle('is-mal', !!esError);
   }
 
+  /* Un solo formulario sirve para entrar y para crear cuenta; el botón
+     "¿Primera vez?" cambia qué hace el submit, sin duplicar el HTML. */
+  var modoCrearCuenta = false;
+
+  function pintarModoAuth() {
+    if (modoCrearCuenta) {
+      el.authSub.textContent = 'Crea tu cuenta con correo y contraseña. Así tu progreso se guarda y sincroniza entre dispositivos.';
+      el.authSubmit.textContent = 'Crear cuenta';
+      el.authToggle.textContent = '¿Ya tienes cuenta? Entrar';
+      el.authPassword.autocomplete = 'new-password';
+      el.authOlvido.hidden = true;
+    } else {
+      el.authSub.textContent = 'Inicia sesión con tu correo y tu contraseña. Así tu progreso se guarda y sincroniza entre dispositivos.';
+      el.authSubmit.textContent = 'Entrar';
+      el.authToggle.textContent = '¿Primera vez? Crear cuenta';
+      el.authPassword.autocomplete = 'current-password';
+      el.authOlvido.hidden = false;
+    }
+    mensajeAuth('', false);
+  }
+
+  el.authToggle.addEventListener('click', function () {
+    modoCrearCuenta = !modoCrearCuenta;
+    pintarModoAuth();
+  });
+  pintarModoAuth();
+
   el.authForm.addEventListener('submit', function (e) {
     e.preventDefault();
     var email = el.authEmail.value.trim();
-    if (!email) return;
+    var password = el.authPassword.value;
+    if (!email || !password) return;
     el.authSubmit.disabled = true;
-    mensajeAuth('Enviando…', false);
-    sb.auth.signInWithOtp({
-      email: email,
-      options: { emailRedirectTo: window.location.origin + window.location.pathname }
-    }).then(function (r) {
+    mensajeAuth(modoCrearCuenta ? 'Creando cuenta…' : 'Entrando…', false);
+    var accion = modoCrearCuenta
+      ? sb.auth.signUp({ email: email, password: password })
+      : sb.auth.signInWithPassword({ email: email, password: password });
+    accion.then(function (r) {
       el.authSubmit.disabled = false;
       if (r.error) { mensajeAuth(r.error.message, true); return; }
-      mensajeAuth('Enlace enviado a ' + email + '. Revisa tu correo.', false);
+      if (modoCrearCuenta && !r.data.session) {
+        // Supabase no distingue "alta nueva pendiente de confirmar" de
+        // "el correo ya tenía cuenta" en el resultado de signUp (por
+        // diseño, para no filtrar qué emails existen) — salvo por este
+        // detalle: en una cuenta que ya existía, `identities` viene
+        // vacío; en una alta genuinamente nueva, trae al menos uno.
+        var yaExistia = r.data.user && Array.isArray(r.data.user.identities) && r.data.user.identities.length === 0;
+        if (yaExistia) {
+          mensajeAuth('Ya existe una cuenta con ese correo. Inicia sesión.', true);
+          modoCrearCuenta = false;
+          pintarModoAuth();
+        } else {
+          // Confirmación de correo activada en el proyecto: no hay sesión
+          // todavía, hace falta que confirmes antes de poder entrar.
+          mensajeAuth('Cuenta creada. Revisa tu correo para confirmarla y luego entra con tu contraseña.', false);
+          modoCrearCuenta = false;
+          pintarModoAuth();
+        }
+      }
+      // Si hay sesión (login normal, o alta sin confirmación de correo
+      // activada), onAuthStateChange se dispara solo y arranca la app.
     });
   });
 
+  el.authOlvido.addEventListener('click', function () {
+    var email = el.authEmail.value.trim();
+    if (!email) { mensajeAuth('Escribe primero tu correo arriba.', true); return; }
+    el.authOlvido.disabled = true;
+    mensajeAuth('Enviando…', false);
+    sb.auth.resetPasswordForEmail(email, {
+      redirectTo: window.location.origin + window.location.pathname
+    }).then(function (r) {
+      el.authOlvido.disabled = false;
+      if (r.error) { mensajeAuth(r.error.message, true); return; }
+      mensajeAuth('Te hemos enviado un enlace a ' + email + ' para elegir una contraseña nueva.', false);
+    });
+  });
+
+  // ─────────── Cuenta ───────────
+
+  el.btnCuenta.addEventListener('click', pantallaCuenta);
+
+  el.formPassword.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var password = el.nuevaPassword.value;
+    if (!password) return;
+    mensajeCuenta('Guardando…', false);
+    sb.auth.updateUser({ password: password }).then(function (r) {
+      if (r.error) { mensajeCuenta(r.error.message, true); return; }
+      el.nuevaPassword.value = '';
+      mensajeCuenta('Contraseña guardada.', false);
+    });
+  });
+
+  el.btnCerrarSesion.addEventListener('click', function () {
+    sb.auth.signOut();
+  });
+
   var arrancado = false;
+  var enRecuperacion = false;  // true si venimos del enlace de "olvidé mi contraseña"
 
   function arrancarApp() {
     if (arrancado) return;
@@ -1990,7 +2189,12 @@
         CURSO = r[0];
         progreso = r[1];
         document.title = CURSO.meta.titulo + ' · Aprende euskera desde cero';
-        pantallaHome();
+        if (enRecuperacion) {
+          enRecuperacion = false;
+          pantallaCuenta('Elige tu contraseña nueva para terminar de recuperar el acceso.');
+        } else {
+          pantallaHome();
+        }
       })
       .catch(function (err) {
         errorDeCarga(String(err.message || err));
@@ -1999,7 +2203,11 @@
 
   // onAuthStateChange dispara una vez con la sesión inicial (o null) al
   // registrar el listener, y luego en cada login/logout/refresco de token.
+  // PASSWORD_RECOVERY llega con sesión (temporal) al volver del enlace de
+  // "olvidé mi contraseña" — en vez de la home, hay que llevar directo a
+  // poner la contraseña nueva.
   sb.auth.onAuthStateChange(function (event, session) {
+    if (event === 'PASSWORD_RECOVERY') enRecuperacion = true;
     if (session) {
       usuarioId = session.user.id;
       arrancarApp();

@@ -359,6 +359,46 @@ comparten este error (confirmado de oído en `jaten dut`).
     categoría) o es práctica libre? Y ¿debe puntuar para el calendario o
     ser como los repasos actuales, que entrenan sin marcar unidades?
 
+## Pendientes de comentar con Ric
+
+Notas de Miguel/Claude tras una auditoría del curso, en el mismo formato:
+fecha · qué se vio · qué se propone. Para decidir con Ric antes de tocar
+código.
+
+### Tope al backlog de repaso: no bloquear el avance a unidades nuevas
+
+- **2026-08-20 · Detectado en auditoría.** `elegirSesion` prioriza siempre
+  lo vencido sobre lo nuevo, sin ningún tope — si el usuario vuelve tras
+  semanas de ausencia, el backlog puede llenar la sesión entera y no
+  dejar hueco a contenido nuevo hasta vaciarlo del todo. Puede ser la
+  compensación correcta (no olvidar antes que avanzar), pero **propuesta
+  de Miguel: dejar una proporción fija, por ejemplo 80% repaso antiguo /
+  20% contenido nuevo**, en vez de que lo vencido pueda ocupar el 100% de
+  la sesión. Afecta a `js/app.js` (`elegirSesion`, usado tanto por el
+  repaso mezclado como por el de vocabulario).
+
+### Ejercicios de flexión gramatical (conjugar, declinar) en unidades con casos nuevos
+
+- **2026-08-20 · Detectado en auditoría.** Las unidades que introducen un
+  caso gramatical nuevo (u5 ergativo, u6 locativo, u10 dativo) lo explican
+  en prosa y lo prueban con frases concretas ya resueltas, no con un
+  ejercicio de "conjuga/declina esto en los casos vistos" — todo pasa por
+  los mismos 5 tipos de ejercicio, pensados para vocabulario y frase
+  suelta. **Apunte de Miguel:** puede que ya baste con lo que hay —
+  "traduce esta frase" y "¿cuál es el pasado de este verbo? (elige entre
+  cuatro)" ya ejercitan la flexión indirectamente. Decidir con Ric si hace
+  falta algo más explícito o si el tipo `opcion`/`traducir` ya cubre el
+  hueco.
+
+### Fusionar el ejercicio de escucha
+
+- **2026-08-20 · Ya construido, pendiente de decisión.** Los dos formatos
+  de escucha (elegir qué significa lo que oyes / escribir su traducción,
+  sin ver el euskera escrito) están terminados y probados en la rama
+  `experimento/ejercicio-listening`, sin fusionar a `main` todavía.
+  **Link de prueba:**
+  https://euskaraz-git-experimento-ejercicio-listening-anonimostudio.vercel.app
+
 ## Implementadas
 
 - **2026-08-20 · Las 45 palabras de la tabla de "audios con pronunciación

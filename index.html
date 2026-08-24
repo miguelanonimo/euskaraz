@@ -36,6 +36,9 @@
         <span class="dialecto__sep">/</span>
         <span class="dialecto__opt" data-modo="gernikes">Gernikés</span>
       </button>
+      <button class="cuenta" id="btnCuenta" type="button" title="Tu cuenta" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+      </button>
       <span class="hearts" id="hearts" hidden></span>
     </div>
   </header>
@@ -45,13 +48,32 @@
     <div class="authbox">
       <div class="hero__mark" aria-hidden="true"><span>E</span></div>
       <h1 class="hero__title">Euskaraz</h1>
-      <p class="authbox__sub" id="authSub">Escribe tu correo y te mandamos un enlace para entrar. Así tu progreso se guarda y sincroniza entre dispositivos.</p>
+      <p class="authbox__sub" id="authSub">Inicia sesión con tu correo y tu contraseña. Así tu progreso se guarda y sincroniza entre dispositivos.</p>
       <form class="authform" id="authForm">
         <input type="email" class="dictinput" id="authEmail" placeholder="tú@correo.com"
                autocomplete="email" inputmode="email" required>
-        <button class="btn btn--primary" type="submit" id="authSubmit">Enviar enlace</button>
+        <input type="password" class="dictinput" id="authPassword" placeholder="Contraseña"
+               autocomplete="current-password" required minlength="6">
+        <button class="btn btn--primary" type="submit" id="authSubmit">Entrar</button>
       </form>
+      <button class="btn btn--ghost" type="button" id="authToggle">¿Primera vez? Crear cuenta</button>
+      <button class="authbox__olvido" type="button" id="authOlvido">¿Olvidaste tu contraseña?</button>
       <p class="authbox__msg" id="authMsg" hidden aria-live="polite"></p>
+    </div>
+  </main>
+
+  <!-- ══════════ PANTALLA: CUENTA ══════════ -->
+  <main class="screen" id="screenCuenta" hidden>
+    <div class="authbox">
+      <h1 class="q__prompt">Tu cuenta</h1>
+      <p class="authbox__sub" id="cuentaEmail"></p>
+      <form class="authform" id="formPassword">
+        <input type="password" class="dictinput" id="nuevaPassword" placeholder="Nueva contraseña"
+               autocomplete="new-password" required minlength="6">
+        <button class="btn btn--primary" type="submit">Guardar contraseña</button>
+      </form>
+      <p class="authbox__msg" id="cuentaMsg" hidden aria-live="polite"></p>
+      <button class="btn btn--ghost" type="button" id="btnCerrarSesion">Cerrar sesión</button>
     </div>
   </main>
 
@@ -106,17 +128,6 @@
           <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
         </span>
       </button>
-      <div class="navcard__filtro">
-        <label for="vocabCat">Repasar solo:</label>
-        <select id="vocabCat">
-          <option value="">Todos</option>
-          <option value="sustantivo">Sustantivos</option>
-          <option value="verbo">Verbos</option>
-          <option value="adjetivo">Adjetivos</option>
-          <option value="otros">Otros</option>
-        </select>
-      </div>
-
       <button class="navcard" id="goDicc">
         <span class="navcard__body">
           <span class="navcard__title">Diccionario</span>
@@ -199,7 +210,19 @@
 
   <!-- ══════════ PANTALLA: VOCABULARIO ══════════ -->
   <main class="screen" id="screenVocab" hidden>
-    <div class="reader" id="vocabContent"></div>
+    <div class="reader">
+      <div class="dicttipo">
+        <label class="dicttipo__label" for="vocabUnitCat">Filtrar por:</label>
+        <select class="dictcat" id="vocabUnitCat">
+          <option value="">Todos</option>
+          <option value="sustantivo">Sustantivos</option>
+          <option value="verbo">Verbos</option>
+          <option value="adjetivo">Adjetivos</option>
+          <option value="otros">Otros</option>
+        </select>
+      </div>
+      <div id="vocabContent"></div>
+    </div>
     <div class="reader-foot">
       <p class="footnav__head">¿Y ahora?</p>
       <div class="footnav">

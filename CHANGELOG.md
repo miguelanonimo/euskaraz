@@ -299,3 +299,177 @@ Un aviso de la propia lista de Ric que sigue siendo cierto: la misma
 palabra puede sonar bien en un sitio y mal en otro según la frase que la
 contenga (p. ej. `joan` solo fallaba, no `joan den astean`) — el criterio
 sigue siendo revisar de oído, no dar por generalizable un patrón.
+
+## 2026-08-20 — Login: de magic link a usuario y contraseña
+
+Motivo: probando el ejercicio de listening en un dominio de preview de
+Vercel, tocaba pedir un magic link nuevo por ser un origen distinto al
+de producción — molesto, aunque la sesión ya se recuerda sola en el
+mismo dominio (comportamiento por defecto del SDK de Supabase, sin
+tocar). Se sustituye el acceso por correo + contraseña:
+
+- Pantalla de acceso con los dos campos y un botón para alternar entre
+  "Entrar" (`signInWithPassword`) y "Crear cuenta" (`signUp`) — un solo
+  formulario, sin duplicar HTML.
+- Pantalla nueva "Tu cuenta" (icono en la cabecera, solo en inicio):
+  cambiar la contraseña (`updateUser`) y cerrar sesión (`signOut`).
+- Sin cambios en Supabase: mismas tablas, mismo `user_id`, mismo
+  usuario existente de Miguel — solo hace falta que le ponga contraseña
+  la primera vez desde "Tu cuenta" (su sesión de magic link seguía
+  activa en producción).
+
+## 2026-08-20 — Filtro por categoría en el Vocabulario de cada unidad
+
+Distinto del "Repasar solo" de la home (que filtra el fondo del repaso
+espaciado): este filtra la lista de vocabulario de UNA unidad, la
+pantalla a la que se llega desde "Estudiar el vocabulario" en cada
+lección — mismo patrón visual que el del diccionario. No toca progreso
+ni calendario, solo qué se ve en la lista.
+
+## 2026-08-20 — Corta el recorte al principio del audio la primera vez
+
+`reproducir()` cambiaba `.src` y forzaba `currentTime = 0` en el mismo
+tick, pero el navegador todavía no tenía la metadata del archivo nuevo
+(readyState 0) — el seek a 0 quedaba pendiente y se aplicaba de golpe
+justo cuando arrancaba a sonar, recortando el principio. Solo la
+primera vez: a partir de ahí el archivo ya está en caché del navegador
+y el fallo no se nota, lo que despistaba. Arreglado rebobinando solo
+cuando se repite la MISMA pista (para que tocar dos veces la misma
+palabra la reinicie); con una pista nueva no hace falta, ya empieza en
+0 sola.
+
+De paso, `pantallaUnidad()` ahora precarga en segundo plano (sin
+esperar ni bloquear nada) todo el audio de esa unidad —vocabulario,
+variantes y ejemplos de gramática— en cuanto se abre, para que la
+primera reproducción real ya la tenga la caché del navegador templada.
+
+## 2026-08-20 — Corregido «hi»: la H, muda del todo
+
+Tres intentos hasta dar con ello: sonaba «yi» (H como Y), luego «gui»
+(H como G) al pedir una H aspirada suave, luego un suspiro suelto sin
+palabra reconocible al insistir en el soplo de aire. La solución no era
+pulir la aspiración, sino quitarla del todo — la H es muda en la
+inmensa mayoría de dialectos, tal como ya dice el propio bloque de
+pronunciación de la Unidad 1. Pedido explícitamente cero aspiración: el
+resultado suena igual que la vocal «i» sola.
+
+De paso, primera vez que se resuelve un audio con el CLI de Supabase en
+vez del conector MCP (que llevaba toda la sesión cayéndose): `supabase
+login --token` con un token de acceso personal de Miguel, proyecto
+enlazado, y `supabase db query --linked` para abrir/cerrar la política
+RLS temporal — mismo patrón de siempre, vía más estable.
+
+## 2026-08-20 — Introducción al artículo -a antes de los posesivos (U2)
+
+El bloque de posesivos («Los posesivos: nire, zure, gure…») decía "Y el
+sustantivo mantiene su artículo -a" sin haber explicado antes en ningún
+sitio del curso que ese -a ES el artículo — primera vez que aparece el
+concepto, y sonaba a que diera algo por sabido que no lo era. Añadida
+una frase que lo presenta: en euskera «el/la» no es una palabra suelta,
+es esa terminación -a que ya se veía pegada al sustantivo (etxea,
+laguna, herria…) desde el vocabulario, y que no desaparece al añadir un
+posesivo aunque en castellano no lleve artículo ("mi casa", no "mi la
+casa"). Aplicado igual en los dos datasets.
+
+## 2026-08-20 — Auditoría extensiva: contenido, metodología, usabilidad y funciones
+
+Cuatro revisiones independientes en paralelo (contenido lingüístico,
+diseño pedagógico, usabilidad/accesibilidad, robustez técnica), sin que
+se vieran entre sí, compiladas en un informe único. De ahí salen los
+siguientes cambios de esta misma tanda:
+
+**Contenido — 4 ejercicios irresolubles corregidos.** Resto del cambio
+de Gernika a Bilbao de la Fase 3: el enunciado en castellano pedía
+Bilbao pero la respuesta en euskera solo aceptaba Gernika (u4-g10,
+u6-g08, u9-g08, u11-g08). En vez de fijar otra ciudad concreta, se
+generalizó a «Euskal Herria» (el País Vasco) — más neutro que forzar
+siempre la misma ciudad. Los ejercicios donde Bilbao ya estaba bien
+(pregunta y respuesta coincidían) se dejan como están: practicar con un
+nombre real es útil, no era un bug.
+
+**Contenido — corregida la etimología de «gabon» (U7).** Afirmaba que
+«gabon» viene de «gaba» (la noche en bizkaiera), contradiciendo a la U1,
+que ya explica «gabon» = gau + on, común a cualquier registro.
+Verificado con Euskaltzaindia y Wiktionary: «gabon» viene de «gau», no
+de «gaba» — es un error de etimología popular. Corregido el bloque de
+gramática y la pregunta de quiz que repetía el mismo error.
+
+**Funciones — condición de carrera entre pestañas/dispositivos.**
+`guardarProgresoAhora()` pisaba la fila entera de progreso sin ningún
+control de versión. Ahora la escritura es optimista: solo se aplica si
+`updated_at` sigue siendo el que se leyó por última vez; si otro
+aparato guardó primero, se descarta la escritura y se adopta esa
+versión más reciente en vez de pisarla. También se refresca el
+progreso desde el servidor al volver a una pestaña que llevaba un rato
+en segundo plano, antes de que pueda llegar a guardar con datos viejos.
+
+**Funciones — recuperación de contraseña.** Añadido «¿Olvidaste tu
+contraseña?» en la pantalla de acceso (`resetPasswordForEmail`). Al
+volver del enlace del correo, la app detecta el evento
+`PASSWORD_RECOVERY` y lleva directo a poner la contraseña nueva, en
+vez de a la home.
+
+**Funciones — aviso correcto al crear cuenta con un correo ya
+registrado.** Antes decía siempre "revisa tu correo", incluso si la
+cuenta ya existía. Ahora se distingue mirando `user.identities` en la
+respuesta de `signUp` (vacío si el correo ya tenía cuenta confirmada) y
+avisa de que inicie sesión en vez de esperar un email que no llegará.
+
+**Usabilidad — espaciado del filtro en Vocabulario de unidad**,
+alineado con el que ya usa el Diccionario. **Quitado el filtro de
+categoría de la tarjeta de repaso de la home** (redundante ahora que el
+Vocabulario de cada unidad tiene el suyo propio).
+
+**Para decidir con Ric** (anotado en `docs/ideas-ric.md`, no aplicado
+todavía): tope de 80/20 antiguo/nuevo en el repaso cuando hay mucho
+backlog acumulado; si hacen falta ejercicios de flexión gramatical
+dedicados en las unidades con casos nuevos (u5/u6/u10); y el enlace de
+prueba del ejercicio de escucha, pendiente de fusionar.
+
+De paso, sincronizado `docs/brief.md`: la comparación letra a letra
+(9.1) y los ejercicios de escritura libre (9.2) ya están implementados,
+no son funcionalidad futura; y la fila de autenticación ya no dice
+magic link.
+
+## 2026-08-22 — Quita una valoración interna que se había colado en el contenido
+
+El bloque del hika (U2) traía una coletilla de cuando se fusionó el
+trabajo de Ric — "no tenemos una fuente que precise con qué frecuencia
+exacta, así que tómalo como orientación, no como dato cerrado" — que
+es una nota de trabajo nuestra, no algo que deba hacer dudar a quien
+está aprendiendo. Quitada; el resto de la frase se queda tal cual,
+afirmando el hecho sin matizarlo de puertas afuera.
+
+## 2026-08-22 — "Un aviso sobre los dialectos" solo en la Unidad 1
+
+El mismo bloque, palabra por palabra, se repetía en las unidades 1 a 6
+de los dos datasets — un aviso general que no necesita repetirse cada
+vez. Se queda solo en la Unidad 1; quitado de la 2 a la 6.
+
+## 2026-08-22 — Más audios corregidos y un hueco de "toca las parejas" cerrado
+
+- **geu** sonaba «deu» (la g no se oía) — regenerado.
+- **zu · zuk · zuri · zurekin** decía «zuk zuk zurekin» (saltaba y repetía
+  palabras) y, ya corregido el orden, seguía sonando la z como en
+  castellano en vez de s sibilante. Resuelto respelando el texto que se
+  manda a sintetizar («su, suk, suri, surekin» en vez de «zu, zuk, zuri,
+  zurekin») — el resultado es el correcto, sin tocar lo que se ve en la
+  app.
+- **nirekin y zurekin** no tenían ficha de vocabulario propia — solo
+  aparecían sueltos dentro de un ejercicio de "toca las parejas" (U2),
+  así que el botón de audio no encontraba nada que reproducir. Añadidas
+  como vocabulario con su propio mp3, en los dos datasets.
+
+**Contenido — pregunta sin respuesta defendible corregida (U1).** "En
+Bilbao, ¿qué despedida oirás con más frecuencia?" daba «gero arte» por
+correcta frente a «bihar arte» sin ninguna fuente que respalde que una
+suena más que la otra — las dos son despedidas válidas y habituales.
+Reformulada a algo verificable: "¿Cuál de estas NO es una despedida?",
+con «Barkatu» (perdón) como intrusa. Aplicado en los dos datasets.
+
+## 2026-08-22 — Atajo de teclado en los ejercicios de opción
+
+En ordenador, pulsar la letra (A, B, C…) selecciona esa opción, igual
+que tocarla — sigue haciendo falta el botón para comprobar. Un único
+listener global en vez de uno por pregunta, porque `#opts` se recrea
+en cada pregunta nueva.

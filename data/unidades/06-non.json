@@ -308,11 +308,6 @@
           "audio": "unidades/u6/haiek-tabernan-dagoz.mp3"
         }
       ]
-    },
-    {
-      "titulo": "Un aviso sobre los dialectos",
-      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
-      "ejemplos": []
     }
   ],
   "ejercicios": [
@@ -912,10 +907,10 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Vivo en Bilbao.",
+          "es": "Vivo en el País Vasco.",
           "respuestas": [
-            "gernikan bizi naiz",
-            "ni gernikan bizi naiz"
+            "euskal herrian bizi naiz",
+            "ni euskal herrian bizi naiz"
           ],
           "pista": "«bizi naiz» es «vivo». El lugar va delante."
         },

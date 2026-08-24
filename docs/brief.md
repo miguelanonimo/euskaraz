@@ -27,7 +27,7 @@ requisito de las primeras fases.
 |---|---|---|
 | Motor de la app | **Mantener vanilla JS/HTML/CSS del original**, sin migrar a React | El algoritmo de repetición espaciada ya funciona y está bien escrito. Migrar ahora sería sobre-ingeniería para un caso de uso de un solo usuario. Revisar esta decisión solo si se decide comercializar. |
 | Persistencia | **Supabase**, mismo shape de datos que ya usa `localStorage`, guardado como JSONB | Cero rediseño del algoritmo de repaso. `user_id` desde el día uno para que sea multiusuario sin remigrar si se comercializa. |
-| Autenticación | Supabase Auth, **magic link** (sin contraseña) | Un solo usuario por ahora; magic link es lo más simple de mantener. |
+| Autenticación | Supabase Auth, **email + contraseña** | Empezó como magic link; cambiado el 20/08/2026 porque un correo nuevo por cada dominio (p. ej. previews de Vercel) resultaba incómodo, y la sesión ya se recuerda sola en el mismo dominio. Pantalla de cuenta para poner/cambiar contraseña. |
 | Audio | **Google Cloud Text-to-Speech (voz `eu-ES`)**, generado una vez por palabra/frase en tiempo de autoría, cacheado como mp3 en Supabase Storage | Confirmado soporte de euskera en Cloud TTS. Verificado (agosto 2026): la capa gratuita mensual es de 1M de caracteres/mes para voces WaveNet/Neural2 y 4M/mes para voces Standard — recurrente, no de un solo uso. Todo el vocabulario de las 12 unidades (unas pocas decenas de miles de caracteres, generados **una sola vez**) cabe muy por debajo de eso. **Coste real: 0€.** Requiere activar billing en la cuenta de Google Cloud (tarjeta en el sistema) aunque no se llegue a cobrar nada. Web Speech API del navegador descartado: soporte de voz en euskera no garantizado según el SO. |
 | Alcance del audio | **Solo escuchar (TTS)**, sin grabación ni corrección de pronunciación por ahora | Decisión explícita de Miguel. Revisar más adelante si se quiere añadir grabación + comparación (STT en euskera es bastante menos maduro que TTS). |
 | Contenido | Reescribir manteniendo la **misma estructura de 12 unidades** (el orden temático ya coincide con progresiones A1 batua estándar) | Ver metodología en sección 5. |
@@ -252,6 +252,11 @@ bloquee sin querer, pero no se construyen hasta que se llegue a esa fase.
 
 ### 9.1 — Principio de corrección: errores grandes vs. pequeños
 
+**Estado: implementado.** La comparación carácter a carácter (y palabra a
+palabra en frases) está en `js/app.js` (`alinear`/`comparacion`), usada en
+los tipos `traducir` y `teclear`. Queda el diseño original tal cual para
+referencia:
+
 Diseño para no desincentivar (pedido explícito de Miguel), aplicable tanto a
 "escribir" como al futuro chat con IA:
 
@@ -287,6 +292,10 @@ hacia atrás el calendario de repaso de una palabra que en realidad ya
 dominas.
 
 ### 9.2 — Ejercicios de tipo "escribir"
+
+**Estado: implementado**, como tipo `teclear` (y el propio `traducir`
+también acepta escritura libre con una lista de `respuestas` válidas, no
+solo elección). Queda el diseño original tal cual para referencia:
 
 El original ya tiene un tipo `traducir`, pero es de elección/verificación,
 no de escritura libre. Añadir un tipo nuevo:

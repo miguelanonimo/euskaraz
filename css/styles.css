@@ -174,6 +174,18 @@ svg{
 .dialecto:active{ background: var(--filete); }
 .dialecto[hidden]{ display: none; }
 
+.cuenta{
+  flex: 0 0 auto;
+  width: 32px; height: 32px;
+  padding: 6px;
+  border: 0; background: transparent;
+  color: var(--tinta-45);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.cuenta:active{ color: var(--tinta); }
+.cuenta[hidden]{ display: none; }
+
 .hearts{
   font-size: var(--t-s);
   font-weight: 600;
@@ -262,6 +274,22 @@ svg{
   display: grid;
   gap: var(--u);
 }
+
+.authbox__olvido{
+  display: block;
+  margin: calc(var(--u) * 1.5) 0 0;
+  padding: 4px 0;
+  border: 0;
+  background: transparent;
+  font-size: var(--t-s);
+  color: var(--tinta-45);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.authbox__olvido:active{ color: var(--tinta); }
+.authbox__olvido[hidden]{ display: none; }
 
 .authbox__msg{
   margin: calc(var(--u) * 2) 0 0;
@@ -1198,34 +1226,9 @@ svg{
 }
 .dictcat:focus{ outline: none; border-color: var(--filete-alto); }
 
-.navcard__filtro{
-  display: flex;
-  align-items: center;
-  gap: calc(var(--u) * .75);
-  margin: calc(var(--u) * -.5) 0 calc(var(--u) * 1.5);
+#screenVocab .dicttipo{
+  margin: calc(var(--u) * 2) 0 calc(var(--u) * 3);
 }
-.navcard__filtro label{
-  font-size: var(--t-xs);
-  font-weight: 500;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--tinta-45);
-}
-.navcard__filtro select{
-  flex: none;
-  font: inherit;
-  font-size: var(--t-xs);
-  font-weight: 500;
-  color: var(--tinta);
-  background: var(--papel-alto);
-  border: 1px solid var(--filete);
-  border-radius: 0;
-  padding: 6px 8px;
-  -webkit-appearance: none;
-  appearance: none;
-}
-.navcard__filtro select:focus{ outline: none; border-color: var(--filete-alto); }
-
 .vitem__unidad{
   display: block;
   margin-top: 3px;
