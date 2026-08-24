@@ -475,6 +475,184 @@ comparten este error (confirmado de oído en `jaten dut`).
     en el repaso (entra cuando se supera esa unidad/tema, no de forma
     genérica por avance total).
 
+### Lista concreta de vocabulario a añadir (2026-08-20, revisada con Ric)
+
+> ⚠️ **AVISO IMPORTANTE PARA MIGUEL — verificar antes de generar audio.**
+> Esta lista la propuso Claude y la revisó Ric, pero **ninguno de los dos
+> es fuente autorizada de euskera**. Es exactamente el riesgo que ya
+> documenta el `PROYECTO.md` del original ("el euskera no lo ha revisado
+> un hablante nativo"). **Contrastar contra el Hiztegi Batua de
+> Euskaltzaindia antes de generar los mp3**, porque una palabra mal
+> validada se convierte en trabajo tirado dos veces (contenido + audio).
+> Las marcadas con ⚠️ son las de mayor duda (variantes regionales o
+> vocabulario cultural).
+
+**Huecos estructurales encontrados al revisar (no estaban en la lista
+original de Ric, salieron al comparar fichas contra vocabulario):**
+
+1. **No hay meses en todo el curso.** La unidad 7 enseña días de la
+   semana, partes del día y ayer/hoy/mañana, pero ningún mes. Es
+   vocabulario A1 básico.
+2. **Los números se cortan en 20, pero la ficha explica más.** La ficha
+   "El sistema es de base veinte" (u5) ya menciona `berrogei`,
+   `hirurogei`, `laurogei` — pero esas palabras **no están en el
+   vocabulario**, así que no tienen audio ni salen en diccionario ni en
+   repaso. Se explica algo que luego no se puede practicar.
+3. **Faltan `eta` (y) y `edo` (o) como vocabulario** — detectado por Ric.
+   Peor aún: la ficha "Enlazar frases" (u12) dice literalmente *"Los que
+   ya tienes: eta (y), baina (pero), edo (o), ere (también)"*, dando por
+   enseñadas dos palabras que nunca se añadieron al vocabulario. Mismo
+   fallo estructural que el punto 2.
+4. **No hay ropa en todo el curso.** Encaja en la u8, que ya tiene
+   `erosi` (comprar) y `denda` (tienda).
+
+*Nota metodológica: se intentó buscar más casos de este tipo con un
+script (palabras en `<b>` de fichas que no están en vocabulario), pero da
+demasiados falsos positivos —tablas de conjugación, contrastes de
+bizkaiera, sufijos, formas declinadas de demostración— para ser fiable.
+Los cuatro casos de arriba salieron de leer con criterio, no del script.*
+
+#### Unidad 2 — conectores básicos
+
+`eta` (y) · `edo` (o)
+
+#### Unidad 5 — familia, animales y números
+
+**Familia** (hoy solo hay hermanos, padres e hijos):
+`mutil-laguna` novio · `neska-laguna` novia · `senarra` marido/esposo ·
+`emaztea` mujer/esposa · `aitona` abuelo ⚠️(en Bizkaia se usa mucho
+`aitite`) · `amona` abuela ⚠️(`amama`) · `osaba` tío · `izeba` tía ·
+`lehengusua` primo · `lehengusina` prima · `iloba` sobrino/a **y también**
+nieto/a (el euskera no distingue: merece nota explicativa, no ocultarlo)
+
+**Animales** (hoy solo perro y gato):
+`txoria` pájaro · `zaldia` caballo · `behia` vaca · `ardia` oveja ·
+`txerria` cerdo · `oiloa` gallina · `untxia` conejo · `sagua` ratón
+
+**Números por encima de 20** (ver hueco 2):
+`hogeita hamar` 30 · `berrogei` 40 · `berrogeita hamar` 50 ·
+`hirurogei` 60 · `hirurogeita hamar` 70 · `laurogei` 80 ·
+`laurogeita hamar` 90 · `ehun` 100 · `mila` 1000
+
+#### Unidad 6 — colores y casa
+
+**Colores** — *decidido con Ric el 20/08: van a la u6, no a la u2, porque
+es donde vive la ficha "Adjetivos: detrás, y con el artículo al final".
+Hay que retocar esa ficha y añadir ejercicios con colores.*
+`gorria` rojo · `urdina` azul · `horia` amarillo · `berdea` verde ·
+`zuria` blanco · `beltza` negro · `grisa` gris · `marroia` marrón ·
+`arrosa` rosa · `morea` morado
+⚠️ `laranja` sirve para la fruta y para el color naranja — no es error,
+es así en euskera, pero conviene decirlo en la ficha.
+Frases de ejemplo del estilo que pedía Ric (⚠️ verificar): «etxe gorria»
+(la casa roja), «gure herri zuria» (nuestro pueblo blanco). **Ojo:
+`nire` = mi, `gure` = nuestro** — en el ejemplo original de Ric se
+tradujo `nire herri zuria` como "nuestro pueblo blanco" y es "mi".
+
+**Casa** (hoy hay dormitorio, cocina, baño, puerta, ventana, mesa, silla,
+cama — faltan habitaciones y muebles comunes):
+`egongela` salón · `jangela` comedor · `bainugela` cuarto de baño ·
+`sarrera` entrada · `eskailerak` escaleras · `igogailua` ascensor ·
+`balkoia` balcón · `lorategia` jardín · `garajea` garaje ·
+`armairua` armario · `sofa` sofá · `telebista` televisión ·
+`hozkailua` nevera · `dutxa` ducha · `ispilua` espejo · `argia` luz ·
+`horma` pared · `teilatua` tejado
+
+#### Unidad 7 — meses (ver hueco 1)
+
+`urtarrila` enero · `otsaila` febrero · `martxoa` marzo · `apirila` abril ·
+`maiatza` mayo · `ekaina` junio · `uztaila` julio · `abuztua` agosto ·
+`iraila` septiembre · `urria` octubre · `azaroa` noviembre ·
+`abendua` diciembre · `hilabetea` el mes
+
+#### Unidad 8 — comida y ropa
+
+**Comida y bebida:**
+`laranja` naranja · `platanoa` plátano · `mahatsa` uva · `madaria` pera ·
+`marrubia` fresa · `patata` patata · `tomatea` tomate · `tipula` cebolla ·
+`letxuga` lechuga · `gazta` queso · `oilaskoa` pollo · `arroza` arroz ·
+`zukua` zumo · `gatza` sal · `azukrea` azúcar
+
+**Ropa** (ver hueco 4):
+`arropa` ropa · `alkandora` camisa · `prakak` pantalones ·
+`zapatak` zapatos · `jertsea` jersey · `jaka` chaqueta · `gona` falda ·
+`soinekoa` vestido · `txapela` boina ⚠️(muy cultural) ·
+`betaurrekoak` gafas
+
+#### Unidad 10 — cuerpo, estaciones, tiempo y fiestas
+
+**Partes del cuerpo** — *idea de Ric: entran de forma natural con los
+gustos, que la unidad ya enseña en plural (`gustatzen zaizkit`): «zure
+begiak gustatzen zaizkit» (⚠️ verificar la frase).*
+`burua` cabeza · `begia`/`begiak` ojo/ojos · `sudurra` nariz ·
+`ahoa` boca · `belarria` oreja · `eskua` mano · `besoa` brazo ·
+`hanka` pierna · `oina` pie · `ilea` pelo · `bihotza` corazón
+
+**Estaciones** (la unidad ya tiene `negua` y `uda`):
+`udaberria` primavera · `udazkena` otoño
+
+**Tiempo atmosférico** (ya hay `euria` y `eguzkia`):
+`eguraldia` el tiempo · `elurra` nieve · `haizea` viento · `hotza` frío ·
+`beroa` calor · `hodeia` nube
+
+**Fiestas y celebraciones:**
+`Gabonak` Navidad · `Urte Berri` Año Nuevo · `Olentzero` ⚠️(personaje
+navideño vasco, muy cultural — decidir si entra como vocabulario o como
+nota cultural) · `Aste Santua` Semana Santa · `Inauteriak` carnaval ·
+`urtebetetzea` cumpleaños · `jaieguna` día festivo
+⚠️ **Detalle a explicar:** `Gabonak` (Navidad) es el plural de `gabon`,
+que la u1 ya enseña como "buenas noches". Sin nota, confunde.
+
+**Volumen total: ~115 palabras nuevas**, casi un tercio más de las 340
+que tiene hoy el curso. Conviene decidir con Miguel si entran todas de
+golpe o por tandas (p. ej. primero los huecos estructurales —meses,
+números, eta/edo— que son los más sangrantes, y luego los temáticos).
+
+### Pantalla de "vocabulario nuevo" antes del repaso
+
+- **2026-08-20 · Propuesta de Ric.** Al entrar en una sesión de repaso de
+  vocabulario, si entre las preguntas hay palabras que nunca se han
+  visto, mostrar **una pantalla previa** al primer ejercicio: "Vocabulario
+  nuevo", con esas palabras y sus traducciones, como presentación.
+  - **Por qué importa ahora más que nunca:** con ~115 palabras nuevas
+    entrando al curso, sin esta pantalla la primera vez que ves una
+    palabra es **fallando** una pregunta sobre ella. Es justo la
+    frustración que se quiere evitar. Es además el patrón estándar en
+    sistemas de repetición espaciada (Anki y similares "presentan" la
+    tarjeta antes de examinarla).
+  - **⚠️ Consecuencia a decidir — choca con una decisión ya tomada.** El
+    `PROYECTO.md` establece que el calendario solo mira **la primera
+    respuesta** de cada palabra en la sesión, y que el acierto que cuenta
+    debe ser "en frío" porque *"acertar treinta segundos después de haber
+    visto la solución no prueba nada"*. Si la palabra se enseña justo
+    antes, esa primera respuesta ya **no es en frío** y el calendario la
+    ascendería como si se dominara.
+    **Recomendación:** que las palabras presentadas en esa pantalla **no
+    puntúen para el calendario en esa primera vuelta** — se practican,
+    pero el calendario empieza a medirlas en la sesión siguiente, ya en
+    frío. Es coherente con lo que la app ya hace con los repasos ("son
+    práctica, no examen").
+  - **Detalles menores:** que sea saltable (si ya conoces la palabra es
+    fricción), y poner un tope de palabras por pantalla (5-6): si un día
+    caen 14 nuevas de golpe, una pantalla con 14 es un muro.
+
+### Petición concreta para Miguel: generar los audios
+
+Cuando el vocabulario de arriba esté **verificado** (ver aviso), hay que
+generar un mp3 por palabra nueva con `scripts/generar-audio/generar.mjs`
+y subirlos al bucket `euskaraz-audio` de Supabase Storage.
+
+- Son ~115 mp3 nuevos. El script ya hace el trabajo (`node generar.mjs u5`
+  por unidad, con `--forzar` si hace falta rehacer).
+- **Ojo al coste de revisión:** dado el estado de la voz en euskera
+  (ver más arriba: `eu-ES` está en fase *Preview* en Gemini TTS, y Ric ha
+  encontrado ~41 audios mal pronunciados de los existentes), es de
+  esperar que **una parte de estos 115 salga mal a la primera**. Conviene
+  escucharlos antes de darlos por buenos, igual que se está haciendo con
+  los actuales.
+- Sigue pendiente el acceso de Ric al proyecto de Google Cloud para poder
+  ayudar con esto (ver bloqueo anotado más arriba).
+
 ### Home: colorear el porcentaje de cada unidad por tramos
 
 - **2026-08-18 · Propuesta de Ric, refinada en conversación.** En las
