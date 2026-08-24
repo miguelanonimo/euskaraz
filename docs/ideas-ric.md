@@ -547,7 +547,13 @@ Los cuatro casos de arriba salieron de leer con criterio, no del script.*
 `emaztea` mujer/esposa · `aitona` abuelo ⚠️(en Bizkaia se usa mucho
 `aitite`) · `amona` abuela ⚠️(`amama`) · `osaba` tío · `izeba` tía ·
 `lehengusua` primo · `lehengusina` prima · `iloba` sobrino/a **y también**
-nieto/a (el euskera no distingue: merece nota explicativa, no ocultarlo)
+nieto/a · `biloba` nieto/a (esta sí inequívoca)
+⚠️ *Ampliado tras la consulta nativa del 20/08 — ver sección de revisión:*
+formas de bizkaiera a incluir con `registro: bizkaiera` →
+`loba` (= `iloba`, recogida en el diccionario como bizkaiera),
+`aitite` y `aitxitxe` (abuelo), `amuma` y `amama` (abuela).
+De esas cinco solo `loba` y `amama` tienen respaldo normativo; las otras
+tres son habla real sin entrada en el Hiztegi Batua.
 
 **Animales** (hoy solo perro y gato):
 `txoria` pájaro · `zaldia` caballo · `behia` vaca · `ardia` oveja ·
@@ -600,8 +606,11 @@ cama — faltan habitaciones y muebles comunes):
 **Ropa** (ver hueco 4):
 `arropa` ropa · `alkandora` camisa · `prakak` pantalones ·
 `zapatak` zapatos · `jertsea` jersey · `jaka` chaqueta · `gona` falda ·
-`soinekoa` vestido · `txapela` boina ⚠️(muy cultural) ·
-`betaurrekoak` gafas
+`soinekoa` vestido · `txapela` boina · `betaurrekoak` gafas
+✅ *Confirmada como vigente por los nativos (20/08), y con familia
+léxica que merece ficha propia:* `txapelduna` campeón/a ·
+`txapelketa` campeonato — los dos salen de `txapela`, porque al ganador
+se le entrega una.
 
 #### Unidad 10 — cuerpo, estaciones, tiempo y fiestas
 
@@ -784,29 +793,112 @@ de forma (`aitite` es la más probable).
 - Sigue pendiente el acceso de Ric al proyecto de Google Cloud para poder
   ayudar con esto (ver bloqueo anotado más arriba).
 
-### Revisión nativa en marcha (20/08/2026)
+### Revisión nativa: PRIMERA RONDA RESUELTA (20/08/2026)
 
-Ric va a pasarle a un hablante nativo de Euskadi un documento con **las
-28 frases de ejemplo** (numeradas, para que baste con señalar el número)
-y **seis dudas que el diccionario no resuelve**. Documento preparado como
-artifact el 20/08. Las seis preguntas, para que quede constancia aquí:
+Ric consultó a hablantes nativos. **Las seis dudas están contestadas** y
+cuatro frases corregidas. Lo que sigue es la respuesta de los nativos más
+la comprobación posterior contra Euskaltzaindia de las formas nuevas que
+mencionaron.
 
-- **A.** ¿Valen `mutil-lagun` / `neska-lagun` para «novio/novia»? La
-  definición normativa («Jolasean, lanean edo kidekoetan aritzen den
-  pertsona») es más «compañero» que «pareja».
-- **B.** `aitite` no está en el diccionario pero `amama` sí. ¿Se dice
-  `aitite` en Bilbao? ¿O es `aitita` / `aitxitxe`?
-- **C.** `Olentzero`: el diccionario lo define como «Gabon eguna» (el
-  día), no como el personaje. ¿Entra como vocabulario o como nota
-  cultural?
-- **D.** `iloba` es sobrino y nieto a la vez. ¿Es ambiguo en el habla
-  real? ¿Merece la pena en A1?
-- **E.** `gabon` marcada «Heg.». ¿Importa para un curso pensado en
-  Bilbao? ¿Confunde con `Gabonak` (Navidad)?
-- **F.** `txapel`: ¿sigue siendo vocabulario útil o es de postal?
+#### Respuestas a las seis dudas
 
-Cuando vuelvan las respuestas, actualizar este documento y solo entonces
-dar por cerradas las frases de ejemplo.
+- **A. `mutil-lagun` / `neska-lagun`: correcto, y la ambigüedad es real.**
+  Los nativos confirman que se usa **tanto para novio/a como para amigo
+  chico / amiga chica** acentuando el género — «casi como
+  girlfriend/boyfriend en inglés». No hay que buscar otra palabra: hay que
+  **enseñar la ambigüedad**, que es parte del idioma.
+
+- **B. En Bizkaia se usan cuatro formas, no una.** Los nativos: se dice
+  **`aitite` y `aitxitxe`** para abuelo, **`amuma` y `amama`** para
+  abuela, y merece la pena explicarlo. Comprobado después contra
+  Euskaltzaindia: de las cuatro, **solo `amama` está recogida** (definida
+  como «Amona»); `aitite`, `aitxitxe` y `amuma` dan cero resultados. No
+  las invalida —son habla real y el curso quiere precisamente ese
+  registro— pero conviene saber que van sin respaldo normativo, así que
+  el campo `registro: bizkaiera` del esquema es exactamente su sitio.
+
+- **C. `Olentzero` es el personaje, sin duda.** Los nativos corrigen al
+  diccionario en cuanto a uso: la definición «Gabon eguna» es el sentido
+  estrecho, pero en el habla es el personaje. Y añaden que es **una nota
+  cultural muy bonita**, que encaja al hablar de la Navidad y las
+  estaciones (o sea, en la 10.1).
+
+- **D. `iloba` sí es ambiguo en la lengua** — puede ser las dos cosas, lo
+  confirman. **Y aportan un dato nuevo: en Bizkaia se usa `loba`, sin la
+  i- inicial** (lo oyen sobre todo en plural, `lobak`).
+  **Investigado a fondo en Euskaltzaindia, y hay un hallazgo que resuelve
+  la ambigüedad para el curso:**
+  - **`loba`** está recogida, marcada **`iz. bizk.`** (sustantivo,
+    bizkaiera) y definida simplemente como «Iloba». Ejemplos del propio
+    diccionario: «Osaba eta loba», «Beren loba Kepari». Es decir: el
+    dato de los nativos está respaldado, y encaja perfecto como
+    `registro: bizkaiera` de `iloba`.
+  - **`biloba`** existe y **sí es inequívoca**: «Semearen edo alabaren
+    semea edo alaba» — el hijo o hija de tu hijo o hija, o sea nieto/a a
+    secas. Remite explícitamente a «Ik. iloba 2» (véase iloba, acepción
+    2). En bizkaiera tiene además un segundo sentido: bisnieto
+    (`birbiloba`).
+  - **Conclusión práctica para el curso:** el euskera *sí* tiene manera
+    de desambiguar — **`biloba` para nieto/a**, y `iloba` cuando el
+    contexto basta o cuando se habla de sobrinos. Merece una ficha en la
+    5.1 explicando las tres (`iloba`, `loba`, `biloba`).
+  - ⚠️ Lo que el Hiztegi Batua **no** aclara: si `loba` en Bizkaia cubre
+    también el sentido de nieto/a o solo el de sobrino/a (sus dos
+    ejemplos son de sobrino). El propio diccionario remite al OEH y al
+    atlas dialectal EHHA para eso. **Pregunta pendiente para los
+    nativos.**
+
+- **E. `Gabonak` va más adelante, no junto a `gabon`.** Los nativos
+  avisan de que enseñarlas cerca confunde. Debe aparecer **cuando se
+  hable de momentos del año y estaciones** — que es justo donde estaba
+  planificada (unidad 10 / sub-unidad 10.1). Decisión confirmada.
+
+- **F. `txapel` es palabra vigente, y su explicación es una inmersión
+  cultural.** Los nativos: campeón es **`txapeldun`** (literalmente «el
+  que tiene txapela») y campeonato también sale de ahí. Comprobado en
+  Euskaltzaindia, y la etimología es aún más bonita de lo que parecía:
+  - `txapeldun` = «Txapelketa edo lehiaketa baten irabazlea» (el ganador
+    de un campeonato o competición).
+  - `txapelketa` = «Irabazleari saritzat, besteak beste, **txapela**
+    ematen zaion lehiaketa» — la competición en la que al ganador se le
+    da, entre otras cosas, **una txapela**. O sea: el campeonato se llama
+    así literalmente por la boina que se le entrega al que gana.
+  - **Añadir `txapeldun` y `txapelketa` al vocabulario**, no solo
+    `txapel`, y una ficha con esta explicación.
+
+#### Correcciones a las frases de ejemplo
+
+- **Frase 13** — `Mahai zuria eta aulki beltza.` La frase está bien; el
+  fallo era **mi traducción**: es «mesa blanca y silla negra», no «*una*
+  mesa blanca y *una* silla negra». Para decir «una» habría que añadir
+  **`bat`** al final de cada sintagma: `mahai zuri bat eta aulki beltz
+  bat`. **Es un buen punto pedagógico**: merece nota o ejercicio propio en
+  la 6.1, porque es un error natural del castellanohablante.
+
+- **Frase 16** — `Nire urtebetetzea maiatzean da.` Correcta. Los nativos
+  sugieren aprovechar palabras así para **explicar sus piezas como
+  curiosidad**: `urtebetetze` sale de **`urte`** (año) + **`bete`**
+  (llenar, completar — confirmado en Euskaltzaindia como verbo:
+  «Zerbaitek hutsune edo tarte bat zeharo hartu»). Literalmente, «el
+  completarse del año». Ficha para la 7.1.
+
+- **Frase 23** — `Zure ahoa gustatzen zait` («me gusta tu boca»):
+  gramaticalmente correcta, pero **puede resultar incómoda**. Cambiada a
+  **`Zure ilea gustatzen zait`** («me gusta tu pelo»). Sigue sirviendo
+  igual para enseñar el singular `zait` frente al plural `zaizkit` de la
+  frase 22. `ile` verificado en Euskaltzaindia.
+
+- **Frase 27** — `Urtebetetze zoriontsua!` **Descartada.** Los nativos la
+  entienden pero no les resulta natural: nadie lo dice así. Lo normal es
+  **`Zorionak!`** o **`Zorionak zuri!`**. Ventaja añadida: `zorionak` ya
+  está en el vocabulario del curso (unidad 12), así que no hay que
+  introducir nada nuevo.
+
+#### Sigue pendiente
+
+- Confirmación de las **24 frases restantes** (las no corregidas aquí).
+- La pregunta abierta de la D: ¿`loba` en Bizkaia vale también para
+  nieto/a, o solo para sobrino/a?
 
 ### Home: colorear el porcentaje de cada unidad por tramos
 
