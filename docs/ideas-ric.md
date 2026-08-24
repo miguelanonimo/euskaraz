@@ -632,7 +632,107 @@ que tiene hoy el curso. Conviene decidir con Miguel si entran todas de
 golpe o por tandas (p. ej. primero los huecos estructurales —meses,
 números, eta/edo— que son los más sangrantes, y luego los temáticos).
 
+### Cómo introducir el vocabulario nuevo: sub-unidades (decidido 20/08)
+
+- **2026-08-20 · Propuesta de Ric, con recomendación de Claude.** En vez
+  de que las palabras nuevas aparezcan flotando en el repaso, crear
+  **sub-unidades**: después de la unidad 5 viene la 5.1, que es su
+  ampliación de vocabulario — con sus palabras, sus explicaciones tipo
+  ficha de gramática, y sus propios ejercicios. **Las palabras solo entran
+  al repaso general al aprobar la sub-unidad.**
+
+  **Por qué esta opción y no el repaso dosificado:** hay palabras que
+  necesitan explicación, y una tarjeta de repaso no tiene dónde ponerla.
+  Casos concretos salidos de la verificación con Euskaltzaindia:
+  `iloba` (sobrino **y** nieto), `Gabonak` (Navidad) contra el `gabon`
+  (buenas noches) que ya enseña la u1, `laranja` (la fruta y el color),
+  los números vigesimales (`berrogei` = «dos veintes»), y las formas
+  vizcaínas `aitite`/`amama`. Todo eso cabe en una ficha, no en una
+  tarjeta.
+
+  Además encaja con la decisión de diseño ya tomada («el contenido vive
+  en JSON y el código no se toca para añadir temario»): una sub-unidad es
+  estructuralmente una unidad más, y el motor ya sabe hacer
+  gramática → vocabulario → ejercicios → 70% → completada → alimenta el
+  calendario.
+
+  **Coste real, medido:** cada unidad de hoy tiene exactamente **12
+  grupos × 5 variantes = 60 variantes**, sin excepción (144 grupos y 720
+  variantes en total). Si las sub-unidades copiaran esa convención serían
+  300 variantes nuevas. **Recomendación: hacerlas más ligeras, 5-6 grupos
+  en vez de 12.** Los 5 variantes por grupo hay que mantenerlos (el motor
+  los usa para no repetir la ronda anterior, vía `progreso.ultimas`), pero
+  el número de grupos no tiene por qué igualar al de una unidad completa.
+  Una sub-unidad es un apéndice, no un capítulo.
+
+  **Serían 5 sub-unidades, no 12** — solo cinco unidades reciben
+  suficiente vocabulario nuevo:
+  `5.1` familia, animales y números · `6.1` colores y casa ·
+  `7.1` los meses · `8.1` comida y ropa · `10.1` cuerpo, tiempo y fiestas.
+  La unidad 2 solo recibe `eta` y `edo`, dos palabras que no necesitan
+  explicación: van directas a su vocabulario, sin sub-unidad.
+
+  **Consecuencia que simplifica:** esta opción **hace innecesaria la
+  pantalla de "vocabulario nuevo"** de la sección siguiente. No son
+  complementarias, son dos soluciones al mismo problema — si la palabra
+  se presenta en el vocabulario de su sub-unidad, ya no llega fría al
+  repaso. Se elige una de las dos.
+
+  **A comprobar con Miguel:** cómo se ve la portada con 17 entradas en
+  vez de 12, y cómo se numeran/muestran las sub-unidades.
+
+### Recuperar `verificar.py`, el control de calidad del original
+
+- **2026-08-20 · Detectado por Claude, aprobado por Ric.** El repositorio
+  de Miguel **no tiene `verificar.py`** — y no es que se borrara: nunca
+  estuvo (comprobado en el historial de git). Es el script de control de
+  calidad del proyecto original de Ric.
+
+  **Probado contra los datos actuales de Miguel: funciona tal cual, sin
+  adaptar nada.** Resultado: `Unidades: 12 · ejercicios: 144 · variantes:
+  720 · Vocabulario: 364 entradas` → **sin errores**, 15 avisos menores
+  (13 respuestas de `traducir` sin normalizar —inofensivo, la comparación
+  ya ignora mayúsculas y puntuación— y 2 traducciones compartidas que la
+  app ya resuelve sola forzando la dirección de la pregunta).
+
+  **Qué comprueba** (relevante con 115 palabras y 5 sub-unidades nuevas):
+  ids de grupo únicos en todo el curso y con el prefijo de su unidad,
+  cinco variantes por grupo, tipos de ejercicio conocidos, índice de
+  `correcta` dentro de rango, que las fichas de `orden` reconstruyan
+  exactamente su frase, cuatro parejas en los de emparejar, enunciados sin
+  repetir entre unidades, claves raras en vocabulario o gramática,
+  palabras repetidas dentro de una unidad, unidades sin ficha de Gernika,
+  y **pistas que mienten** al contar letras/palabras o al decir por dónde
+  empieza la solución.
+
+  ⚠️ **Corrección a lo que dijo Claude antes en la conversación:** afirmé
+  que este script habría cazado los dos errores de contenido que encontró
+  Ric (el enunciado sin «bonito» de la u2 y la pista que da la respuesta
+  de la u4). **Es falso.** No los caza ninguno: el primero exigiría
+  comparar el sentido del `es` contra el `eu`, y el segundo es una pista
+  que no miente sobre letras ni sobre el comienzo, simplemente entrega la
+  solución. El propio `PROYECTO.md` del original ya lo dice: *«el
+  verificador cubre lo mecánico, no lo pedagógico. Una explicación puede
+  estar bien formada y ser falsa.»* Sigue mereciendo la pena recuperarlo,
+  pero por lo mecánico, no como red contra errores de criterio.
+
+  **Hueco a resolver al recuperarlo:** el script lee las unidades desde
+  `data/curso.json`, que solo lista `unidades/`. La variante
+  **`data/unidades-gernikes/` (12 archivos) se queda sin revisar**. Es
+  contenido que Miguel añadió después del original, así que el script no
+  lo contemplaba. Convendría ampliarlo para que cubra las dos variantes.
+
+  El archivo original está en la copia de Ric:
+  `Dropbox/Ric/Tests Claude/euskaraz/verificar.py` (8 KB).
+
 ### Pantalla de "vocabulario nuevo" antes del repaso
+
+> **Nota del 20/08, posterior:** si se adopta la propuesta de
+> **sub-unidades** (sección anterior), esta pantalla deja de hacer falta —
+> las palabras ya se presentan en el vocabulario de su sub-unidad y nunca
+> llegan frías al repaso. Son dos soluciones alternativas al mismo
+> problema, no complementarias. Se mantiene anotada por si se descarta la
+> vía de sub-unidades.
 
 - **2026-08-20 · Propuesta de Ric.** Al entrar en una sesión de repaso de
   vocabulario, si entre las preguntas hay palabras que nunca se han
