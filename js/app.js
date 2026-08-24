@@ -94,7 +94,7 @@
     cuentaMsg:    $('cuentaMsg'),
     btnCerrarSesion: $('btnCerrarSesion'),
     modoSilencioso: $('modoSilencioso'),
-    incluirDialectales: $('incluirDialectales'),
+    dialectoSelect: $('dialectoSelect'),
     screens: {
       home:   $('screenHome'),
       unit:   $('screenUnit'),
@@ -1568,6 +1568,7 @@
     mensajeCuenta(mensajeInicial || '', false);
     el.nuevaPassword.value = '';
     el.modoSilencioso.checked = modoSilencioso;
+    el.dialectoSelect.value = MODO_DIALECTO;
     mostrar('cuenta');
   }
 
@@ -2359,15 +2360,27 @@
     });
   }
 
+  function nombreDialecto(modo) {
+    return modo === 'gernikes' ? 'Gernikera' : 'Bizkaiera';
+  }
+
+  /* El botón de la topbar ya no elige QUÉ dataset cargar —eso ahora es
+     el desplegable de Ajustes—, sino si los ejercicios también
+     preguntan por esa variante (incluirDialectales) o se quedan en
+     batua. El nombre de la segunda opción sigue la variante elegida en
+     Ajustes, así que hay que repintarlo también cuando cambia esa
+     (ver cambiarDialecto). */
   function pintarDialecto() {
+    $('dialectoVarianteOpt').textContent = nombreDialecto(MODO_DIALECTO);
     var spans = el.btnDialecto.querySelectorAll('.dialecto__opt');
-    for (var i = 0; i < spans.length; i++) {
-      spans[i].classList.toggle('is-activo', spans[i].dataset.modo === MODO_DIALECTO);
-    }
+    spans[0].classList.toggle('is-activo', !incluirDialectales);
+    spans[1].classList.toggle('is-activo', incluirDialectales);
   }
 
   el.btnDialecto.addEventListener('click', function () {
-    cambiarDialecto(MODO_DIALECTO === 'bizkaiera' ? 'gernikes' : 'bizkaiera');
+    setIncluirDialectales(!incluirDialectales);
+    pintarDialecto();
+    if (estado.pantalla === 'home') pantallaHome();
   });
   pintarDialecto();
 
@@ -2487,9 +2500,9 @@
     setModoSilencioso(el.modoSilencioso.checked);
   });
 
-  el.incluirDialectales.checked = incluirDialectales;
-  el.incluirDialectales.addEventListener('change', function () {
-    setIncluirDialectales(el.incluirDialectales.checked);
+  el.dialectoSelect.value = MODO_DIALECTO;
+  el.dialectoSelect.addEventListener('change', function () {
+    cambiarDialecto(el.dialectoSelect.value);
   });
 
   aplicarModoSilencioso();

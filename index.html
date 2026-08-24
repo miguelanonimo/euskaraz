@@ -31,10 +31,10 @@
       </div>
     </div>
     <div class="topbar__right" id="topbarRight">
-      <button class="dialecto" id="btnDialecto" type="button" title="Cambiar variante dialectal" hidden>
-        <span class="dialecto__opt" data-modo="bizkaiera">Bizkaiera</span>
+      <button class="dialecto" id="btnDialecto" type="button" title="Incluir tu variante dialectal en los ejercicios" hidden>
+        <span class="dialecto__opt" data-modo="batua">Batua</span>
         <span class="dialecto__sep">/</span>
-        <span class="dialecto__opt" data-modo="gernikes">Gernikera</span>
+        <span class="dialecto__opt" data-modo="variante" id="dialectoVarianteOpt">Bizkaiera</span>
       </button>
       <button class="cuenta" id="btnCuenta" type="button" title="Tu cuenta" hidden>
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
@@ -80,6 +80,20 @@
           <small>Ideal para momentos donde no puedas reproducir audio (sin audio en ningún sitio de la app)</small>
         </span>
       </label>
+      <div class="cuenta__opcion cuenta__opcion--select">
+        <span>
+          <b>Tu variante dialectal</b>
+          <small>Cambia el contenido de gramática y vocabulario de todo el curso a esta variante. El switch de la cabecera (Batua / esta variante) decide si también te la preguntan en los ejercicios.</small>
+        </span>
+        <select class="cuenta__select" id="dialectoSelect">
+          <option value="bizkaiera">Bizkaiera</option>
+          <option value="gernikes">Gernikera</option>
+        </select>
+      </div>
+      <div class="home-foot">
+        <button class="btn btn--ghost btn--sm" id="btnReset">Reiniciar mi progreso</button>
+        <p class="home-foot__note">Se pierden también las fechas de repaso. No se puede deshacer.</p>
+      </div>
       <button class="btn btn--ghost" type="button" id="btnCerrarSesion">Cerrar sesión</button>
     </div>
   </main>
@@ -113,10 +127,6 @@
       <span>Qué toca hoy</span>
       <span class="today__count" id="todayCount"></span>
     </h2>
-    <label class="dialectswitch dialectswitch--hoy">
-      <input type="checkbox" id="incluirDialectales">
-      <span>¿Incluir variantes dialectales?</span>
-    </label>
     <div class="cardstack">
       <button class="navcard" id="goLeccion" hidden>
         <span class="navcard__body">
@@ -165,11 +175,6 @@
           <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
         </span>
       </button>
-    </div>
-
-    <div class="home-foot">
-      <button class="btn btn--ghost btn--sm" id="btnReset">Reiniciar mi progreso</button>
-      <p class="home-foot__note">Tu progreso se guarda en tu cuenta y sincroniza entre dispositivos.</p>
     </div>
   </main>
 

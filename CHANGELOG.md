@@ -643,3 +643,13 @@ Arreglado también un bug previo (no de esta sesión): el botón de la
 cuenta pasaba el propio evento de click a `pantallaCuenta()`, que lo
 mostraba tal cual como mensaje — se veía "[object PointerEvent]" en la
 pantalla de Tu cuenta.
+
+## 2026-08-24 — Rediseño del selector de dialecto: dos controles separados
+
+Mismo cambio que en `main`, portado a esta rama: el botón de la topbar
+que antes mezclaba "qué dataset cargar" y "si el repaso pregunta por
+la variante" se separa en dos. Ajustes → "Tu variante dialectal" (un
+`<select>` que decide el dataset, misma `cambiarDialecto()` de
+siempre); la topbar pasa a ser el switch "Batua / [tu variante]" que
+activa/desactiva `incluirDialectales`. También se mueve "Reiniciar mi
+progreso" de la Home a Tu cuenta.
