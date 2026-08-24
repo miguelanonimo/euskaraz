@@ -555,3 +555,27 @@ se escriben a mano en la prosa de gramática (`<b>palabra</b> — significado`,
 como el bloque de pronombres de U2): se detecta cada `<b>` cuyo texto
 coincide con una palabra narrada y se le cuelga el mismo botón que ya
 usan Vocabulario y Diccionario, sin tocar los 12 JSON a mano.
+
+## 2026-08-24 — La selección de escuchar pasa por el calendario, y suma frases
+
+Revisado con el propio Miguel cómo se elegían las palabras de escuchar
+en práctica y repaso mezclado (ver `candidatosEscuchar()`): antes era
+azar puro sobre el fondo disponible, distinto de cómo el resto del
+curso decide qué toca. Ahora tira del mismo `elegirSesion()` que usa
+todo lo demás, así que prioriza lo vencido y lo nunca visto, igual que
+sortearFormato() ya prioriza por nivel en el repaso de vocabulario.
+
+Se probó primero unificar del todo — escuchar y gramática compitiendo
+por los mismos huecos de la sesión — pero una simulación con datos
+reales mostró que eso rompía la cobertura completa de práctica: al
+repetir una unidad ya practicada, alguna pregunta de escuchar (siempre
+"nueva") le ganaba el hueco a un grupo de gramática que aún no tocaba.
+Se descartó: en práctica, escuchar sigue añadiéndose aparte, sin
+competir nunca por los grupos de la unidad. En repaso mezclado no hay
+ese riesgo (ya truncaba por calendario antes de este cambio).
+
+También se amplió el fondo de escuchar en práctica y repaso mezclado
+para que incluya, además del vocabulario suelto, las frases de ejemplo
+de gramática que llevan audio propio (`ejemplosConAudio()`/
+`fondoEjemplos()`) — "nire etxe handia" o una frase completa de un
+bloque de gramática entran en juego igual que una palabra suelta.

@@ -748,23 +748,46 @@
 
   function claveDeFondo(x) { return claveGrupo(x.grupo.id); }
 
-  /* Ya no se baraja el fondo entero: el calendario decide qué entra en la
-     sesión —primero lo vencido, luego lo nuevo— y el azar solo decide en
-     qué orden sale. */
-  /* Cuela unas pocas preguntas de escuchar (ver más abajo, sección de
-     vocabulario) dentro de una cola de ejercicios ya preparada, tirando
-     de un fondo de palabras con audio. Así prácticas y repaso mezclado
-     entrenan también el oído, no solo lectura/gramática — y como
-     reusan preguntaEscucharOpcion/Teclear tal cual, comparten el mismo
-     requisito (solo palabras narradas) y los mismos distractores. */
-  function mezclarEscuchar(ejercicios, fondo, cuantas) {
-    var candidatos = fondo.filter(function (v) { return v.audio; });
-    if (candidatos.length < 4) return ejercicios;
-    var ctx = { fondo: fondo };
-    var extra = barajar(candidatos).slice(0, cuantas).map(function (v) {
+  /* Las frases de ejemplo de gramática que llevan audio propio también
+     entran en el fondo de escuchar — no todo lo que se aprende es una
+     palabra suelta, "nire etxe handia" es tan de escuchar como "etxea".
+     Mismo shape que fondoVocabulario(), para que candidatosEscuchar()
+     no tenga que distinguir de dónde viene cada candidato. */
+  function ejemplosConAudio(u) {
+    var r = [];
+    (u.gramatica || []).forEach(function (g) {
+      (g.ejemplos || []).forEach(function (e) {
+        if (e.audio) r.push({ eu: e.eu, es: e.es, audio: e.audio, unidad: u.numero, titulo: u.titulo });
+      });
+    });
+    return r;
+  }
+
+  function fondoEjemplos() {
+    var r = [];
+    CURSO.unidades.forEach(function (u) {
+      if (!progUnidad(u.id).visitada) return;
+      r = r.concat(ejemplosConAudio(u));
+    });
+    return r;
+  }
+
+  /* Qué palabras se convierten en pregunta de escuchar no es azar puro:
+     pasa por el mismo elegirSesion() que decide el resto del curso, así
+     que prioriza lo vencido y lo nuevo del fondo de vocabulario con
+     audio — igual que sortearFormato() ya prioriza por nivel en el
+     repaso de vocabulario. Eso sí, nunca compiten por hueco con los
+     ejercicios de gramática de la sesión: se añaden aparte, para no
+     arriesgar dejar fuera un grupo que tocaría salir igualmente (ver
+     discusión: en práctica, unificarlas de verdad podía dejar unidades
+     sin cubrir del todo al repetirlas). */
+  function candidatosEscuchar(fondo, cuantos) {
+    var conAudio = fondo.filter(function (v) { return v.audio; });
+    if (conAudio.length < 4) return [];
+    var ctx = { fondo: conAudio };
+    return elegirSesion(conAudio, cuantos, claveDeVocab).map(function (v) {
       return Math.random() < 0.5 ? preguntaEscucharOpcion(v, ctx) : preguntaEscucharTeclear(v);
-    }).filter(Boolean);
-    return barajar(ejercicios.concat(extra));
+    });
   }
 
   function empezarRepaso() {
@@ -777,7 +800,8 @@
     estado.modo = 'repaso';
     var base = elegirSesion(fondo, LARGO_REPASO, claveDeFondo)
       .map(function (x) { return prepararVariante(x.grupo, x.unidad); });
-    estado.ejercicios = mezclarEscuchar(base, fondoVocabulario(), ESCUCHAR_REPASO);
+    var extra = candidatosEscuchar(fondoVocabulario().concat(fondoEjemplos()), ESCUCHAR_REPASO);
+    estado.ejercicios = barajar(base.concat(extra));
     guardarProgreso();
     estado.indice = 0;
     estado.aciertos = 0;
@@ -1393,12 +1417,13 @@
     var base = barajar(u.ejercicios).map(function (g) {
       return prepararVariante(g, null);
     });
-    var fondoAudio = u.vocabulario.filter(function (v) { return v.audio; }).map(function (v) {
+    var fondoUnidad = u.vocabulario.map(function (v) {
       var c = {}; for (var k in v) c[k] = v[k];
       c.unidad = u.numero; c.titulo = u.titulo;
       return c;
-    });
-    estado.ejercicios = mezclarEscuchar(base, fondoAudio, ESCUCHAR_PRACTICA);
+    }).concat(ejemplosConAudio(u));
+    var extra = candidatosEscuchar(fondoUnidad, ESCUCHAR_PRACTICA);
+    estado.ejercicios = barajar(base.concat(extra));
     guardarProgreso();
     estado.indice = 0;
     estado.aciertos = 0;
