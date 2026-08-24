@@ -717,7 +717,7 @@ svg{
   color: var(--tinta-45);
 }
 
-/* — Escuchar (EXPERIMENTAL, rama experimento/ejercicio-listening) — */
+/* — Escuchar — */
 .escuchar{
   display: flex;
   align-items: center;

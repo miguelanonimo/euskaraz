@@ -523,3 +523,12 @@ Barrido sistemático de las 12 unidades: 40 parejas en ejercicios de
 No se trajo de esa rama la corrección de los 4 ejercicios Gernika/
 Bilbao: ya están arreglados en `main` con "Euskal Herria" en vez de
 Bilbao, por petición explícita de que fuera más neutro.
+
+## 2026-08-24 — Ejercicio de listening, en producción
+
+Fusionada `experimento/ejercicio-listening` a `main`: los dos formatos
+de escucha (escuchar y elegir qué significa / escuchar y escribir la
+traducción) ya se mezclan con opción/ortografía/teclear en el repaso de
+vocabulario, con el mismo peso moderado con el que se probaron en la
+rama. Quitados los comentarios que la marcaban como experimental — ya
+es parte normal del motor.

@@ -797,9 +797,7 @@
      admiten —«ni», «zu», «bai» no tienen dónde equivocarse— y esas
      tiradas se pierden. Los dos formatos de escucha solo se ofrecen a
      palabras con audio narrado (si no lo tienen, caen a opción como el
-     resto de formatos sin cumplir requisitos) — EXPERIMENTAL: en
-     prueba en la rama experimento/ejercicio-listening, sin fusionar a
-     main todavía. */
+     resto de formatos sin cumplir requisitos). */
   var MEZCLA = [
     [40, 25, 10, 15, 10],   // nivel 0 · paso 0-1, recién vista
     [20, 35, 15, 15, 15],   // nivel 1 · paso 2-3, en camino
@@ -1432,9 +1430,9 @@
   // — Opción múltiple —
 
   /* Cabecera de un ejercicio de opción/teclear: normalmente el texto de
-     la pregunta, pero en los formatos "escuchar" (EXPERIMENTAL, ver
-     MEZCLA) la pregunta ES el audio — no hay texto en euskera que
-     mostrar, solo un botón grande para reproducirlo. */
+     la pregunta, pero en los formatos "escuchar" (ver MEZCLA) la
+     pregunta ES el audio — no hay texto en euskera que mostrar, solo un
+     botón grande para reproducirlo. */
   function pintarPrompt(ej) {
     if (!ej.__escuchar) {
       return '<h2 class="q__prompt q__prompt--es">' + esc(ej.pregunta) + '</h2>';
