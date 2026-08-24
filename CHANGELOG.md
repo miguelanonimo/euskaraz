@@ -590,3 +590,25 @@ encajar con el resto del sistema, que usa `border-radius: 0` en todas
 partes a propósito. Versión final: mismo tamaño y forma que el botón
 de Comprobar (ancho completo, 56px de alto, esquinas rectas), relleno
 oscuro con el texto "Escuchar" + icono en color papel (crema).
+
+## 2026-08-24 — Audio al acertar (con precarga) y Modo silencioso
+
+Cuando aciertas un ejercicio cuya respuesta correcta está en euskera
+(opción, ortografía, ordenar, traducir, teclear-en-euskera), su audio
+suena a la vez que aparece "Oso ondo!" — `audioDeRespuesta()` busca si
+el texto de la respuesta correcta tiene locución narrada, sin
+necesidad de distinguir por tipo de ejercicio a mano; si no la tiene,
+no suena nada, como hasta ahora. Se precarga con `precargarAudio()` en
+cuanto se pinta la pregunta (antes de responder), para que al sonar
+—una sola vez, al acertar— ya esté en caché y no arrastre el retraso
+de red de una carga en frío.
+
+Añadido también un checkbox "Modo silencioso" en Tu cuenta, guardado
+en `localStorage` de este aparato (no viaja con la cuenta a otros
+dispositivos). Corta `reproducir()`, el único punto por el que pasa
+todo el audio de la app, así que silencia de una vez botones de
+Vocabulario/Diccionario/Gramática, toca las parejas, el prompt de
+escuchar y el audio al acertar nuevo. Los ejercicios de listening se
+excluyen de la selección (`sortearFormato()`/`candidatosEscuchar()`) en
+vez de aparecer mudos, y los iconos de play desaparecen en toda la app
+por CSS (clase `silencioso` en `<body>`).

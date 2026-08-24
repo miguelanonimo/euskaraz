@@ -299,6 +299,34 @@ svg{
 }
 .authbox__msg.is-mal{ color: var(--acento); }
 
+.cuenta__opcion{
+  display: flex;
+  align-items: flex-start;
+  gap: calc(var(--u) * 1.5);
+  margin: calc(var(--u) * 4) 0 0;
+  padding-top: calc(var(--u) * 3);
+  border-top: 1px solid var(--filete);
+  font-size: var(--t-s);
+  line-height: 1.45;
+  color: var(--tinta-70);
+  cursor: pointer;
+}
+.cuenta__opcion input{
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  accent-color: var(--tinta);
+  cursor: pointer;
+}
+
+/* Modo silencioso: ningún icono de play visible en ningún sitio,
+   activado o no el audio que va detrás (reproducir() ya está mudo,
+   ver js/app.js — esto solo esconde el rastro visual). */
+body.silencioso .vitem__play,
+body.silencioso .escuchar,
+body.silencioso .pair__play{ display: none; }
+
 /* Estadísticas: tres columnas de retícula con filetes verticales */
 .stats{
   display: grid;

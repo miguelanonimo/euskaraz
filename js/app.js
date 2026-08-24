@@ -93,6 +93,7 @@
     nuevaPassword: $('nuevaPassword'),
     cuentaMsg:    $('cuentaMsg'),
     btnCerrarSesion: $('btnCerrarSesion'),
+    modoSilencioso: $('modoSilencioso'),
     screens: {
       home:   $('screenHome'),
       unit:   $('screenUnit'),
@@ -226,6 +227,28 @@
 
   var reproductor = new Audio();
 
+  /* Modo silencioso: preferencia de este aparato, no de la cuenta (no
+     viaja con progreso a Supabase) — se puede querer sonido en el
+     ordenador y silencio en el móvil. reproducir() es el único sitio
+     por el que pasa TODO el audio de la app (botones de Vocabulario/
+     Diccionario/Gramática, toca las parejas, el prompt de escuchar, el
+     audio al acertar) — cortarlo aquí basta para silenciar de verdad,
+     sin tener que acordarse de cada llamante. Los iconos de play se
+     esconden aparte, por CSS (clase `silencioso` en <body>). */
+  var MODO_SILENCIOSO_KEY = 'euskaraz_modo_silencioso';
+  var modoSilencioso = false;
+  try { modoSilencioso = localStorage.getItem(MODO_SILENCIOSO_KEY) === '1'; } catch (e) {}
+
+  function aplicarModoSilencioso() {
+    document.body.classList.toggle('silencioso', modoSilencioso);
+  }
+
+  function setModoSilencioso(on) {
+    modoSilencioso = !!on;
+    try { localStorage.setItem(MODO_SILENCIOSO_KEY, modoSilencioso ? '1' : '0'); } catch (e) {}
+    aplicarModoSilencioso();
+  }
+
   function botonAudio(v) {
     if (!v.audio) return '';
     return botonAudioTexto(v.eu, v.audio);
@@ -261,6 +284,7 @@
      cuando arranca a sonar). A partir de la segunda vez el archivo ya
      está en caché y el fallo no se nota, lo que despistaba. */
   function reproducir(ruta) {
+    if (modoSilencioso) return;
     var url = AUDIO_BASE + ruta;
     if (reproductor.src === url) reproductor.currentTime = 0;
     else reproductor.src = url;
@@ -618,6 +642,10 @@
      Gramática, Vocabulario o el repaso) no cargue en frío. Sin esperar
      a que termine ni bloquear nada: si una petición falla, no pasa
      nada, simplemente esa palabra tardará como antes la primera vez. */
+  function precargarAudio(ruta) {
+    if (ruta && !modoSilencioso) fetch(AUDIO_BASE + ruta, { cache: 'force-cache' }).catch(function () {});
+  }
+
   function precargarAudioDeUnidad(u) {
     var rutas = {};
     u.vocabulario.forEach(function (v) {
@@ -627,9 +655,7 @@
     (u.gramatica || []).forEach(function (g) {
       (g.ejemplos || []).forEach(function (e) { if (e.audio) rutas[e.audio] = true; });
     });
-    Object.keys(rutas).forEach(function (ruta) {
-      fetch(AUDIO_BASE + ruta, { cache: 'force-cache' }).catch(function () {});
-    });
+    Object.keys(rutas).forEach(precargarAudio);
   }
 
   function pantallaUnidad(u) {
@@ -782,6 +808,7 @@
      discusión: en práctica, unificarlas de verdad podía dejar unidades
      sin cubrir del todo al repetirlas). */
   function candidatosEscuchar(fondo, cuantos) {
+    if (modoSilencioso) return [];
     var conAudio = fondo.filter(function (v) { return v.audio; });
     if (conAudio.length < 4) return [];
     var ctx = { fondo: conAudio };
@@ -878,6 +905,7 @@
      insiste si el sorteo la devuelve dos veces seguidas. */
   function sortearFormato(nivel, evitar) {
     var pesos = MEZCLA[nivel] || MEZCLA[0];
+    if (modoSilencioso) pesos = pesos.slice(0, 3);
     var f = tirada(pesos);
     if (f === evitar) f = tirada(pesos);
     return f;
@@ -1097,7 +1125,7 @@
      pregunta el significado — no tiene sentido "escuchar y elegir la
      misma palabra escrita", eso no prueba comprensión. */
   function preguntaEscucharOpcion(entrada, ctx) {
-    if (!entrada.audio) return null;
+    if (!entrada.audio || modoSilencioso) return null;
     var correcta = entrada.es;
     var yaPuesto = {};
     yaPuesto[normalizar(correcta)] = true;
@@ -1138,7 +1166,7 @@
      sinónimos que sí usa preguntaTeclear (`ctx.porEs`): no hay
      ambigüedad al escribir en castellano. */
   function preguntaEscucharTeclear(entrada) {
-    if (!entrada.audio) return null;
+    if (!entrada.audio || modoSilencioso) return null;
     var q = marcarVocab({
       tipo: 'teclear',
       instruccion: 'Vocabulario · escucha y tradúcelo',
@@ -1298,6 +1326,24 @@
     return AUDIO_POR_PALABRA[normalizar(texto)];
   }
 
+  /* Ruta de audio de la respuesta correcta de un ejercicio, si la hay
+     narrada — para poder precargarla en cuanto se pinta la pregunta y
+     reproducirla en cuanto se acierta (ver pintarEjercicio/resolver).
+     Solo tiene sentido cuando la respuesta correcta está en euskera:
+     opción, ortografía, orden múltiple, traducir y teclear-en-euskera.
+     En escuchar la respuesta es un significado en castellano —
+     audioDePalabra() no encuentra nada ahí y sencillamente no suena
+     nada, sin necesidad de filtrar por tipo aparte. */
+  function audioDeRespuesta(ej) {
+    if (!ej) return null;
+    var texto;
+    if (ej.tipo === 'opcion')                                  texto = ej.opciones[ej.correcta];
+    else if (ej.tipo === 'orden')                               texto = ej.eu;
+    else if (ej.tipo === 'traducir')                            texto = ej.respuestas && ej.respuestas[0];
+    else if (ej.tipo === 'teclear' && ej.__objetivo !== 'es')   texto = ej.solucion || (ej.respuestas && ej.respuestas[0]);
+    return texto ? audioDePalabra(texto) : null;
+  }
+
   /* Todo el vocabulario del curso en una sola lista, ordenada
      alfabéticamente por la palabra en euskera. Si la misma palabra
      aparece en dos unidades, se queda la primera vez que salió. */
@@ -1396,6 +1442,7 @@
     });
     mensajeCuenta(mensajeInicial || '', false);
     el.nuevaPassword.value = '';
+    el.modoSilencioso.checked = modoSilencioso;
     mostrar('cuenta');
   }
 
@@ -1474,6 +1521,7 @@
       if (!ej) { estado.pregunta = null; return pantallaResultado(); }
     }
     estado.pregunta = ej;
+    precargarAudio(audioDeRespuesta(ej));
 
     switch (ej.tipo) {
       case 'opcion':   pintarOpcion(ej); break;
@@ -1844,6 +1892,10 @@
       if (!ok && ej && ej.__palabra) estado.falladas.push(ej.__palabra);
     }
     registrar(ok);
+    if (ok && ej && !ej.__escuchar) {
+      var audio = audioDeRespuesta(ej);
+      if (audio) reproducir(audio);
+    }
     feedback(ok, titulo, cuerpo);
   }
 
@@ -2280,6 +2332,12 @@
   el.btnCerrarSesion.addEventListener('click', function () {
     sb.auth.signOut();
   });
+
+  el.modoSilencioso.addEventListener('change', function () {
+    setModoSilencioso(el.modoSilencioso.checked);
+  });
+
+  aplicarModoSilencioso();
 
   var arrancado = false;
   var enRecuperacion = false;  // true si venimos del enlace de "olvidé mi contraseña"
