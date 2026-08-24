@@ -1,0 +1,187 @@
+# -*- coding: utf-8 -*-
+import json, io, os, re, sys, unicodedata
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+idx = json.load(io.open(os.path.join(BASE, "data/curso.json"), encoding="utf-8"))
+errores, avisos = [], []
+ids, enunciados = {}, {}
+total_v = 0
+
+TIPOS = {"opcion", "pares", "orden", "traducir"}
+
+# Claves admitidas en una entrada de vocabulario (o en una variante).
+# {eu,es,nota} son las del original y siguen siendo obligatorias en la
+# entrada principal; el resto las añadió Miguel y son opcionales.
+VOC_CLAVES = {"eu", "es", "nota", "audio", "categoria", "registro", "variantes"}
+
+# Las pistas y explicaciones a veces cuentan letras o palabras, o dicen por
+# dónde empieza la solución. Es fácil escribirlas mal y no enterarse nunca,
+# porque la app no las comprueba: solo las enseña.
+PALABRAS = {u"un":1, u"una":1, u"dos":2, u"tres":3, u"cuatro":4, u"cinco":5,
+            u"seis":6, u"siete":7, u"ocho":8, u"nueve":9, u"diez":10}
+RE_CUENTA = re.compile(u"(\\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez)"
+                       u"\\s+(palabras?|letras?|fichas?)", re.I)
+# Solo se acepta la forma con comillas o una letra suelta: «empieza por la
+# palabra interrogativa» no es una afirmación comprobable.
+RE_EMPIEZA = re.compile(u"[Ee]mpieza por (?:\u00ab([^\u00bb]+)\u00bb|(\\w)\\b)")
+
+def cifra(t):
+    t = t.lower()
+    return int(t) if t.isdigit() else PALABRAS.get(t)
+
+def revisar_pistas(eid, v, sol):
+    """Contrasta lo que promete el texto de ayuda con la solución real."""
+    fallos = []
+    r = norm(sol)
+    for campo in ("pista", "explicacion", "instruccion"):
+        txt = v.get(campo)
+        if not txt:
+            continue
+        for m in RE_CUENTA.finditer(txt):
+            n = cifra(m.group(1))
+            tipo = m.group(2).lower()
+            if n is None:
+                continue
+            if tipo[0] in "pf":   # palabras o fichas
+                real = len(r.replace("-", " ").split())
+            else:                 # letras
+                real = len(r.replace(" ", ""))
+            if real != n:
+                fallos.append(u"%s: la %s dice %d %s, pero «%s» tiene %d"
+                              % (eid, campo, n, tipo, sol, real))
+        for m in RE_EMPIEZA.finditer(txt):
+            ini = (m.group(1) or m.group(2)).lower()
+            if not r.startswith(ini):
+                fallos.append(u"%s: la %s dice que empieza por «%s», pero es «%s»"
+                              % (eid, campo, ini, sol))
+    return fallos
+
+def norm(s):
+    s = s.lower()
+    for ch in u"¿?¡!.,;:«»\"'()":
+        s = s.replace(ch, "")
+    return " ".join(s.split())
+
+CASTELLANO = {}   # traducción normalizada -> palabras en euskera que la usan
+
+unidades = []
+for ruta in idx["unidades"]:
+    f = os.path.join(BASE, "data", ruta)
+    if not os.path.exists(f):
+        errores.append("falta el archivo %s" % ruta); continue
+    unidades.append((ruta, json.load(io.open(f, encoding="utf-8"))))
+
+nums = [u["numero"] for _, u in unidades]
+if nums != sorted(nums):
+    avisos.append("las unidades no están en orden numérico: %s" % nums)
+
+for ruta, u in unidades:
+    for k in ("id","numero","titulo","subtitulo","objetivo","color","vocabulario","gramatica","ejercicios"):
+        if k not in u: errores.append("%s: falta la clave %s" % (ruta, k))
+    vistos = set()
+    for v in u["vocabulario"]:
+        # Esquema ampliado por Miguel: al original {eu,es,nota} se le
+        # sumaron `audio` (ruta del mp3 en Supabase Storage), y
+        # `registro`/`variantes` para enseñar batua y bizkaiera a la vez
+        # (docs/brief.md 5.1). `categoria` alimenta el filtro del
+        # diccionario. Ninguna es obligatoria.
+        if not {"eu","es","nota"} <= set(v) or not set(v) <= VOC_CLAVES:
+            errores.append("%s: entrada de vocabulario con claves raras %s" % (ruta, list(v)))
+        for var in v.get("variantes") or []:
+            if not {"eu"} <= set(var) or not set(var) <= VOC_CLAVES:
+                errores.append("%s: variante de «%s» con claves raras %s"
+                               % (ruta, v["eu"], list(var)))
+        if norm(v["eu"]) in vistos:
+            avisos.append("%s: «%s» repetida dentro de la unidad" % (ruta, v["eu"]))
+        vistos.add(norm(v["eu"]))
+        CASTELLANO.setdefault(norm(v["es"]), set()).add(v["eu"])
+    for gr in u["gramatica"]:
+        if set(gr) != {"titulo","cuerpo","ejemplos"}:
+            errores.append("%s: ficha de gramática con claves raras" % ruta)
+        for tag in re.findall(r"</?(\w+)>", gr["cuerpo"]):
+            if tag not in ("b","i","u"):
+                avisos.append("%s: etiqueta <%s> en «%s»" % (ruta, tag, gr["titulo"]))
+    # El original pedía una ficha de Gernika por unidad. Esta adaptación
+    # mira a Bilbao, y Miguel las tituló «Cómo suena esto en Bizkaia»;
+    # se acepta cualquiera de las dos.
+    if not any(u"Gernika" in gr["titulo"] or u"Bizkaia" in gr["titulo"]
+               for gr in u["gramatica"]):
+        avisos.append("%s: no tiene ficha de dialecto" % ruta)
+
+    for gexp in u["ejercicios"]:
+        if gexp["id"] in ids:
+            errores.append("id duplicado %s (%s y %s)" % (gexp["id"], ids[gexp["id"]], ruta))
+        ids[gexp["id"]] = ruta
+        if not gexp["id"].startswith(u["id"] + "-"):
+            errores.append("%s: el id %s no empieza por %s-" % (ruta, gexp["id"], u["id"]))
+        vs = gexp["variantes"]
+        if len(vs) != 5:
+            errores.append("%s: %s tiene %d variantes" % (ruta, gexp["id"], len(vs)))
+        total_v += len(vs)
+        for n, v in enumerate(vs):
+            eid = "%s v%d" % (gexp["id"], n+1)
+            t = v.get("tipo")
+            if t not in TIPOS:
+                errores.append("%s: tipo desconocido %r" % (eid, t)); continue
+            if not v.get("instruccion"):
+                errores.append("%s: sin instrucción" % eid)
+            if t == "opcion":
+                ops = v["opciones"]
+                if len(ops) < 2: errores.append("%s: menos de dos opciones" % eid)
+                if len(set(ops)) != len(ops): errores.append("%s: opciones repetidas %s" % (eid, ops))
+                c = v["correcta"]
+                if not isinstance(c, int) or not (0 <= c < len(ops)):
+                    errores.append("%s: índice correcta fuera de rango (%r)" % (eid, c))
+                if not v.get("pregunta"): errores.append("%s: sin pregunta" % eid)
+                if isinstance(c, int) and 0 <= c < len(ops):
+                    errores.extend(revisar_pistas(eid, v, ops[c]))
+                clave = norm(v["pregunta"])
+            elif t == "pares":
+                ps = v["pares"]
+                if len(ps) != 4: avisos.append("%s: %d parejas (lo normal son 4)" % (eid, len(ps)))
+                if len(set(p["eu"] for p in ps)) != len(ps): errores.append("%s: euskera repetido en las parejas" % eid)
+                if len(set(p["es"] for p in ps)) != len(ps): errores.append("%s: castellano repetido en las parejas" % eid)
+                clave = norm(" ".join(p["eu"] for p in ps))
+            elif t == "orden":
+                if norm(" ".join(v["palabras"])) != norm(v["eu"]):
+                    errores.append("%s: las palabras no reconstruyen «%s» → %s" % (eid, v["eu"], v["palabras"]))
+                if len(v["palabras"]) < 3:
+                    avisos.append("%s: solo %d fichas, demasiado fácil" % (eid, len(v["palabras"])))
+                errores.extend(revisar_pistas(eid, v, v["eu"]))
+                clave = norm(v["eu"])
+            else:
+                if not v.get("respuestas"): errores.append("%s: sin respuestas" % eid)
+                if v.get("respuestas"): errores.extend(revisar_pistas(eid, v, v["respuestas"][0]))
+                for r in v["respuestas"]:
+                    if r != norm(r):
+                        avisos.append("%s: la respuesta «%s» no está normalizada (se compara en minúsculas y sin puntuación, así que da igual, pero conviene)" % (eid, r))
+                clave = norm(v["es"])
+            if clave in enunciados and enunciados[clave] != gexp["id"]:
+                avisos.append("enunciado repetido en %s y %s: «%s»" % (enunciados[clave], gexp["id"], clave[:50]))
+            enunciados.setdefault(clave, gexp["id"])
+
+# El repaso de vocabulario pregunta en las dos direcciones. Cuando varias
+# palabras en euskera comparten traducción, del castellano al euskera hay
+# más de una respuesta buena. La app lo detecta y fuerza la otra dirección,
+# así que esto no rompe nada: se lista para poder revisar si son sinónimos
+# de verdad o una traducción perezosa que conviene afinar.
+sinonimos = sorted((k, sorted(v)) for k, v in CASTELLANO.items() if len(v) > 1)
+if sinonimos:
+    for es, eus in sinonimos:
+        avisos.append(u"«%s» traduce a %s: en el repaso solo se preguntará "
+                      u"de euskera a castellano" % (es, u" y ".join(eus)))
+
+print("Unidades: %d   ejercicios: %d   variantes: %d" % (len(unidades), len(ids), total_v))
+print("Vocabulario total: %d entradas" % sum(len(u["vocabulario"]) for _, u in unidades))
+print()
+if errores:
+    print("ERRORES (%d):" % len(errores))
+    for e in errores: print("  ✕", e)
+else:
+    print("Sin errores.")
+print()
+if avisos:
+    print("Avisos (%d):" % len(avisos))
+    for a in avisos[:40]: print("  ·", a)
+    if len(avisos) > 40: print("  … y %d más" % (len(avisos)-40))
+sys.exit(1 if errores else 0)
