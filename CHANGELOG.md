@@ -491,3 +491,35 @@ Barrido sistemático de las 12 unidades: 40 parejas en ejercicios de
   naiz...), ergativos (nik, zuk, hark, guk, dugu, dute), dativo de
   "gustatzen" (zait, zaizu, zaio, zaie), y sueltas (eta, handik, gela
   txikia, herri polita). 33/33 generados y subidos sin fallos.
+
+## 2026-08-24 — Seis correcciones más de la rama de Ric (`ric/trabajo`)
+
+- **Iconos y `site.webmanifest`**: nunca llegaron a añadirse al repo
+  aunque `index.html` ya los enlazaba — de ahí los 404 de favicon/
+  manifest en consola. Añadidos.
+- **`preguntaOpcion` ya no delata la respuesta por la forma**: si la
+  correcta es una pregunta y las otras tres opciones son frases o
+  palabras sueltas, se acertaba por la silueta sin saber euskera. Ahora
+  los distractores se agrupan primero por forma (pregunta/frase/
+  palabra) y solo después por unidad.
+- **Restos de la regla falsa "-tik pierde la k"** en el bloque de
+  gramática y un ejercicio de U9, y en el repaso de dialecto de U12 —
+  quedaban sueltos en ambos datasets pese a que la regla general ya se
+  había corregido antes.
+- **"diot" corregido a "dio" en U10**: esa forma (yo→él/ella) nunca se
+  enseñó en la gramática de la unidad (solo están las de tercera
+  persona: dit/dizu/dio/digu/dizue/die), así que se colaba en
+  ejercicios sin que hubiera forma de saberla. 2 audios nuevos
+  (`aneri-esan-dio.mp3`, `lagunari-lagundu-dio.mp3`).
+- **"Gernikés" → "Gernikera"** en el selector de dialecto — Gernikés no
+  es palabra real en español ni en euskera; Gernikera sigue el mismo
+  patrón que Bizkaiera/Gipuzkera (el habla de un sitio).
+- **Ambigüedad en "a la izquierda/derecha" (U9, los dos datasets)**: el
+  enunciado aceptaba solo la forma de movimiento (eskuinera/ezkerrera)
+  como correcta, pero la de ubicación (eskuinean/ezkerrean) se traduce
+  igual al castellano — reformulado el enunciado como "gira a la
+  derecha/izquierda" para que quede claro qué se pide.
+
+No se trajo de esa rama la corrección de los 4 ejercicios Gernika/
+Bilbao: ya están arreglados en `main` con "Euskal Herria" en vez de
+Bilbao, por petición explícita de que fuera más neutro.

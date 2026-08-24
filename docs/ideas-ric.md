@@ -401,6 +401,17 @@ código.
 
 ## Implementadas
 
+- **2026-08-24 · Seis piezas de `ric/trabajo` traídas a `main`**: iconos
+  y `site.webmanifest` (nunca llegaron al repo aunque index.html ya los
+  enlazaba), `preguntaOpcion` agrupando distractores por forma (para que
+  la silueta de la respuesta no la delate), restos de la regla falsa
+  "-tik pierde la k" en U9/U12 de los dos datasets, "diot" corregido a
+  "dio" en U10 (nunca se enseñó, se colaba sin que hubiera forma de
+  saberlo), "Gernikés" renombrado a "Gernikera", y la ambigüedad
+  izquierda/derecha de U9 reformulada. La corrección de los 4 ejercicios
+  Gernika/Bilbao de esa misma rama NO se trajo — ya arreglados en `main`
+  con "Euskal Herria" en vez de Bilbao, por petición explícita de que
+  fuera más neutro.
 - **2026-08-20 · Las 45 palabras de la tabla de "audios con pronunciación
   mal generada"** regeneradas con nota de pronunciación específica por
   palabra, silencio inicial recortado, publicadas. Sigue en pie el aviso

@@ -1052,7 +1052,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«a la derecha» se dice ____",
+          "pregunta": "Le estás dando indicaciones a alguien: «gira a la derecha» se dice ____",
           "opciones": [
             "eskuina",
             "eskuinera",
@@ -1060,12 +1060,12 @@
             "eskuinetik"
           ],
           "correcta": 1,
-          "explicacion": "Ya lleva dentro el -ra de movimiento."
+          "explicacion": "Es movimiento hacia allí, no ubicación: lleva el -ra. «Eskuinean» sería «está a la derecha», sin moverse."
         },
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«a la izquierda» se dice ____",
+          "pregunta": "Le estás dando indicaciones a alguien: «gira a la izquierda» se dice ____",
           "opciones": [
             "ezkerra",
             "ezkerrean",
@@ -1073,7 +1073,7 @@
             "ezkerretik"
           ],
           "correcta": 2,
-          "explicacion": "Igual que la derecha: ezkerrera."
+          "explicacion": "Es movimiento hacia allí, no ubicación: lleva el -ra, igual que la derecha. «Ezkerrean» sería «está a la izquierda», sin moverse."
         }
       ]
     },
@@ -1090,8 +1090,8 @@
             "tan",
             "ra"
           ],
-          "correcta": 1,
-          "explicacion": "El bizkaiera deja el ablativo en -ti, sin la k."
+          "correcta": 0,
+          "explicacion": "El bizkaiera mantiene el ablativo -tik, igual que en batua: Bilbotik."
         },
         {
           "tipo": "opcion",
