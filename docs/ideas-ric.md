@@ -477,15 +477,39 @@ comparten este error (confirmado de oído en `jaten dut`).
 
 ### Lista concreta de vocabulario a añadir (2026-08-20, revisada con Ric)
 
-> ⚠️ **AVISO IMPORTANTE PARA MIGUEL — verificar antes de generar audio.**
-> Esta lista la propuso Claude y la revisó Ric, pero **ninguno de los dos
-> es fuente autorizada de euskera**. Es exactamente el riesgo que ya
-> documenta el `PROYECTO.md` del original ("el euskera no lo ha revisado
-> un hablante nativo"). **Contrastar contra el Hiztegi Batua de
-> Euskaltzaindia antes de generar los mp3**, porque una palabra mal
-> validada se convierte en trabajo tirado dos veces (contenido + audio).
-> Las marcadas con ⚠️ son las de mayor duda (variantes regionales o
-> vocabulario cultural).
+> ✅ **VERIFICADO CONTRA EUSKALTZAINDIA (20/08/2026).** Las palabras de
+> esta lista se han contrastado **una a una** contra el Hiztegi Batua de
+> Euskaltzaindia (consulta automatizada al buscador oficial,
+> `euskaltzaindia.eus/hiztegibatua`). Resultado: **114 de 118
+> confirmadas** como lema con su categoría gramatical y definición.
+> Miguel no necesita repetir esta verificación.
+>
+> **Las 4 que no salieron limpias, revisadas a mano:**
+> - `eta` — falso negativo del script (la búsqueda la sepultaba bajo
+>   decenas de compuestos). **Existe** como `eta1`, categoría
+>   *juntagailua*. ✓
+> - `iloba` — **confirmadas las dos acepciones**: «Senide baten semea edo
+>   alaba» (sobrino/a) y «Biloba, seme-alaben semea edo alaba»
+>   (nieto/a). ✓
+> - `mutil-lagun` / `neska-lagun` — existen, pero como **azpisarrera**
+>   (subentrada) de `lagun`, y con una definición más amplia que
+>   «novio/a»: «Jolasean, lanean edo kidekoetan aritzen den pertsona».
+>   Pendiente de criterio nativo (pregunta A abajo).
+> - `aitite` — **0 resultados**, no está en el diccionario normativo. En
+>   cambio **`amama` sí está** (definida como «Amona»). Asimetría rara,
+>   pendiente de criterio nativo (pregunta B abajo).
+>
+> **Dos sorpresas del diccionario:**
+> - `olentzero` no se define como el personaje, sino como **«Gabon
+>   eguna»** (el día de Nochebuena).
+> - `gabon` viene marcada **«Heg.»** (uso de Hegoaldea, la parte
+>   peninsular).
+>
+> ⚠️ **Lo que esta verificación NO cubre: las frases de ejemplo.** El
+> diccionario valida palabras, no gramática de frases. Las 28 frases de
+> ejemplo escritas para el vocabulario nuevo siguen **sin verificar** y
+> las está revisando un hablante nativo (documento de revisión preparado
+> el 20/08). Hasta que vuelvan, no darlas por buenas.
 
 **Huecos estructurales encontrados al revisar (no estaban en la lista
 original de Ric, salieron al comparar fichas contra vocabulario):**
@@ -638,9 +662,16 @@ números, eta/edo— que son los más sangrantes, y luego los temáticos).
 
 ### Petición concreta para Miguel: generar los audios
 
-Cuando el vocabulario de arriba esté **verificado** (ver aviso), hay que
-generar un mp3 por palabra nueva con `scripts/generar-audio/generar.mjs`
+El vocabulario de arriba **ya está verificado** contra Euskaltzaindia
+(ver el bloque ✅), así que las palabras se pueden dar por buenas salvo
+las seis que están pendientes de criterio nativo (lista más abajo). Hay
+que generar un mp3 por palabra nueva con `scripts/generar-audio/generar.mjs`
 y subirlos al bucket `euskaraz-audio` de Supabase Storage.
+
+**Orden recomendado:** generar primero los audios de las palabras
+confirmadas, y dejar fuera las seis dudosas hasta que vuelva la revisión
+nativa — así no se generan mp3 de palabras que quizá se caigan o cambien
+de forma (`aitite` es la más probable).
 
 - Son ~115 mp3 nuevos. El script ya hace el trabajo (`node generar.mjs u5`
   por unidad, con `--forzar` si hace falta rehacer).
@@ -652,6 +683,30 @@ y subirlos al bucket `euskaraz-audio` de Supabase Storage.
   los actuales.
 - Sigue pendiente el acceso de Ric al proyecto de Google Cloud para poder
   ayudar con esto (ver bloqueo anotado más arriba).
+
+### Revisión nativa en marcha (20/08/2026)
+
+Ric va a pasarle a un hablante nativo de Euskadi un documento con **las
+28 frases de ejemplo** (numeradas, para que baste con señalar el número)
+y **seis dudas que el diccionario no resuelve**. Documento preparado como
+artifact el 20/08. Las seis preguntas, para que quede constancia aquí:
+
+- **A.** ¿Valen `mutil-lagun` / `neska-lagun` para «novio/novia»? La
+  definición normativa («Jolasean, lanean edo kidekoetan aritzen den
+  pertsona») es más «compañero» que «pareja».
+- **B.** `aitite` no está en el diccionario pero `amama` sí. ¿Se dice
+  `aitite` en Bilbao? ¿O es `aitita` / `aitxitxe`?
+- **C.** `Olentzero`: el diccionario lo define como «Gabon eguna» (el
+  día), no como el personaje. ¿Entra como vocabulario o como nota
+  cultural?
+- **D.** `iloba` es sobrino y nieto a la vez. ¿Es ambiguo en el habla
+  real? ¿Merece la pena en A1?
+- **E.** `gabon` marcada «Heg.». ¿Importa para un curso pensado en
+  Bilbao? ¿Confunde con `Gabonak` (Navidad)?
+- **F.** `txapel`: ¿sigue siendo vocabulario útil o es de postal?
+
+Cuando vuelvan las respuestas, actualizar este documento y solo entonces
+dar por cerradas las frases de ejemplo.
 
 ### Home: colorear el porcentaje de cada unidad por tramos
 
