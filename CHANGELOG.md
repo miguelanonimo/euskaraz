@@ -532,3 +532,26 @@ traducción) ya se mezclan con opción/ortografía/teclear en el repaso de
 vocabulario, con el mismo peso moderado con el que se probaron en la
 rama. Quitados los comentarios que la marcaban como experimental — ya
 es parte normal del motor.
+
+## 2026-08-24 — Listening también en prácticas y repaso mezclado, y bug de fondo arreglado
+
+Al revisar cómo llevar el listening a las otras dos pantallas apareció
+un bug real: `fondoVocabulario()` nunca copiaba el campo `audio`, así
+que en el repaso de vocabulario `preguntaEscucharOpcion`/
+`preguntaEscucharTeclear` devolvían `null` siempre y el sorteo caía en
+silencio a opción múltiple — el listening llevaba viviendo en el
+código desde que se fusionó sin que llegara a aparecer nunca. Arreglado
+copiando también `audio` al fondo.
+
+Con eso corregido, se añadió `mezclarEscuchar()`: cuela unas pocas
+preguntas de escucha (2 en la práctica de una unidad, 3 en el repaso
+mezclado) tirando del vocabulario con audio de la unidad o de todo lo
+abierto, reusando tal cual `preguntaEscucharOpcion`/`Teclear` — mismos
+requisitos, mismos distractores. Práctica, repaso mezclado y repaso de
+vocabulario entrenan ya el oído los tres.
+
+De paso, botón de audio también en las listas de vocabulario nuevo que
+se escriben a mano en la prosa de gramática (`<b>palabra</b> — significado`,
+como el bloque de pronombres de U2): se detecta cada `<b>` cuyo texto
+coincide con una palabra narrada y se le cuelga el mismo botón que ya
+usan Vocabulario y Diccionario, sin tocar los 12 JSON a mano.

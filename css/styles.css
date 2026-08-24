@@ -566,6 +566,7 @@ svg{
 .gcard__body p:last-child{ margin-bottom: 0; }
 .gcard__body b{ font-weight: 600; color: var(--tinta); }
 .gcard__body i{ font-style: normal; color: var(--acento); }
+.gcard__body .vitem__play{ vertical-align: -5px; margin-left: 1px; }
 
 /* Ejemplos: retícula de dos columnas con filete separador */
 .exlist{

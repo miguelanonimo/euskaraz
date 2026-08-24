@@ -34,6 +34,8 @@
 
   var LARGO_REPASO = 15;   // ejercicios por sesión de repaso mezclado
   var LARGO_VOCAB  = 14;   // palabras por sesión de repaso de vocabulario
+  var ESCUCHAR_PRACTICA = 2;  // preguntas de escuchar que se cuelan en la práctica de una unidad
+  var ESCUCHAR_REPASO   = 3;  // preguntas de escuchar que se cuelan en el repaso mezclado
 
   // Motor de repaso de vocabulario (aportado por Ric): la sesión es una
   // cola que no se vacía hasta que cada palabra se acierta dos veces, la
@@ -226,9 +228,27 @@
 
   function botonAudio(v) {
     if (!v.audio) return '';
-    return '<button class="vitem__play" type="button" data-audio="' + esc(v.audio) + '" aria-label="Escuchar «' + esc(v.eu) + '»">' +
+    return botonAudioTexto(v.eu, v.audio);
+  }
+
+  function botonAudioTexto(texto, audio) {
+    return '<button class="vitem__play" type="button" data-audio="' + esc(audio) + '" aria-label="Escuchar «' + esc(texto) + '»">' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg>' +
       '</button>';
+  }
+
+  /* En la gramática, las listas de vocabulario nuevo se escriben a mano
+     como prosa con <b>palabra</b> — no como `ejemplos` estructurados,
+     que llevan otro layout. En vez de tocar los 12 JSON a mano, se
+     detecta cada <b> cuyo texto coincide con una palabra narrada
+     (audioDePalabra) y se le cuelga el mismo botón de audio que ya usa
+     vocabulario/diccionario. Si el <b> es énfasis de una regla, no de
+     una palabra, no hay match y no se toca nada. */
+  function enriquecerCuerpoConAudio(html) {
+    return html.replace(/<b>([^<]+)<\/b>/g, function (m, texto) {
+      var audio = audioDePalabra(texto);
+      return audio ? m + botonAudioTexto(texto, audio) : m;
+    });
   }
 
   /* Solo se rebobina si es la MISMA pista que ya estaba puesta —para
@@ -650,7 +670,7 @@
       }
       return '<article class="gcard">' +
         '<h2 class="gcard__title">' + esc(g.titulo) + '</h2>' +
-        '<div class="gcard__body">' + richText(g.cuerpo) + '</div>' +
+        '<div class="gcard__body">' + enriquecerCuerpoConAudio(richText(g.cuerpo)) + '</div>' +
         ejemplos +
       '</article>';
     }).join('');
@@ -731,6 +751,22 @@
   /* Ya no se baraja el fondo entero: el calendario decide qué entra en la
      sesión —primero lo vencido, luego lo nuevo— y el azar solo decide en
      qué orden sale. */
+  /* Cuela unas pocas preguntas de escuchar (ver más abajo, sección de
+     vocabulario) dentro de una cola de ejercicios ya preparada, tirando
+     de un fondo de palabras con audio. Así prácticas y repaso mezclado
+     entrenan también el oído, no solo lectura/gramática — y como
+     reusan preguntaEscucharOpcion/Teclear tal cual, comparten el mismo
+     requisito (solo palabras narradas) y los mismos distractores. */
+  function mezclarEscuchar(ejercicios, fondo, cuantas) {
+    var candidatos = fondo.filter(function (v) { return v.audio; });
+    if (candidatos.length < 4) return ejercicios;
+    var ctx = { fondo: fondo };
+    var extra = barajar(candidatos).slice(0, cuantas).map(function (v) {
+      return Math.random() < 0.5 ? preguntaEscucharOpcion(v, ctx) : preguntaEscucharTeclear(v);
+    }).filter(Boolean);
+    return barajar(ejercicios.concat(extra));
+  }
+
   function empezarRepaso() {
     var fondo = fondoRepaso();
     if (!fondo.length) {
@@ -739,8 +775,9 @@
     }
     estado.unidad = null;
     estado.modo = 'repaso';
-    estado.ejercicios = elegirSesion(fondo, LARGO_REPASO, claveDeFondo)
+    var base = elegirSesion(fondo, LARGO_REPASO, claveDeFondo)
       .map(function (x) { return prepararVariante(x.grupo, x.unidad); });
+    estado.ejercicios = mezclarEscuchar(base, fondoVocabulario(), ESCUCHAR_REPASO);
     guardarProgreso();
     estado.indice = 0;
     estado.aciertos = 0;
@@ -766,7 +803,7 @@
         if (vistas[k]) return;
         vistas[k] = true;
         if (categoria && (v.categoria || 'otros') !== categoria) return;
-        fondo.push({ eu: v.eu, es: v.es, nota: v.nota, unidad: u.numero, titulo: u.titulo });
+        fondo.push({ eu: v.eu, es: v.es, nota: v.nota, audio: v.audio, unidad: u.numero, titulo: u.titulo });
       });
     });
     return fondo;
@@ -1353,9 +1390,15 @@
   function empezarPractica() {
     var u = estado.unidad;
     estado.modo = 'unidad';
-    estado.ejercicios = barajar(u.ejercicios).map(function (g) {
+    var base = barajar(u.ejercicios).map(function (g) {
       return prepararVariante(g, null);
     });
+    var fondoAudio = u.vocabulario.filter(function (v) { return v.audio; }).map(function (v) {
+      var c = {}; for (var k in v) c[k] = v[k];
+      c.unidad = u.numero; c.titulo = u.titulo;
+      return c;
+    });
+    estado.ejercicios = mezclarEscuchar(base, fondoAudio, ESCUCHAR_PRACTICA);
     guardarProgreso();
     estado.indice = 0;
     estado.aciertos = 0;
