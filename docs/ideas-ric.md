@@ -777,10 +777,11 @@ las seis que están pendientes de criterio nativo (lista más abajo). Hay
 que generar un mp3 por palabra nueva con `scripts/generar-audio/generar.mjs`
 y subirlos al bucket `euskaraz-audio` de Supabase Storage.
 
-**Orden recomendado:** generar primero los audios de las palabras
-confirmadas, y dejar fuera las seis dudosas hasta que vuelva la revisión
-nativa — así no se generan mp3 de palabras que quizá se caigan o cambien
-de forma (`aitite` es la más probable).
+**Ya no hay nada que esperar** (actualizado 25/08): la revisión nativa
+está cerrada, así que se pueden generar todos los audios de una tanda.
+Ojo con estas, que se añadieron o cambiaron después de la lista inicial
+y es fácil que se queden fuera: `loba`, `biloba`, `aitite`, `aitxitxe`,
+`amuma`, `amama`, `txapelduna`, `txapelketa`, `zorionak zuri`.
 
 - Son ~115 mp3 nuevos. El script ya hace el trabajo (`node generar.mjs u5`
   por unidad, con `--forzar` si hace falta rehacer).
@@ -793,12 +794,25 @@ de forma (`aitite` es la más probable).
 - Sigue pendiente el acceso de Ric al proyecto de Google Cloud para poder
   ayudar con esto (ver bloqueo anotado más arriba).
 
-### Revisión nativa: PRIMERA RONDA RESUELTA (20/08/2026)
+### Revisión nativa: COMPLETA Y CERRADA (25/08/2026)
 
-Ric consultó a hablantes nativos. **Las seis dudas están contestadas** y
-cuatro frases corregidas. Lo que sigue es la respuesta de los nativos más
-la comprobación posterior contra Euskaltzaindia de las formas nuevas que
-mencionaron.
+✅ **Todo el vocabulario nuevo y sus frases están verificados.** Nada
+pendiente en este bloque.
+
+- **Las palabras** (115): contrastadas una a una contra el Hiztegi Batua
+  de Euskaltzaindia. 114 confirmadas directamente, 4 resueltas a mano.
+- **Las seis dudas de criterio**: contestadas por hablantes nativos, y
+  las formas nuevas que aportaron, re-verificadas contra el diccionario.
+- **Las 28 frases de ejemplo**: 4 corregidas en la primera ronda; **las
+  24 restantes revisadas y dadas por buenas por la pareja de Ric (de
+  Gernika)**, que es quien ya venía revisando el contenido del curso
+  según el `PROYECTO.md` original.
+
+**Esto desbloquea:** escribir el contenido de las sub-unidades y generar
+los audios. Ya no hay nada que esperar por el lado lingüístico.
+
+Lo que sigue es el detalle de las respuestas, para que quede el rastro
+del porqué de cada decisión.
 
 #### Respuestas a las seis dudas
 
@@ -895,11 +909,11 @@ mencionaron.
   está en el vocabulario del curso (unidad 12), así que no hay que
   introducir nada nuevo.
 
-#### Sigue pendiente
+#### Las 24 frases restantes: confirmadas (25/08)
 
-- Confirmación de las **24 frases restantes** (las no corregidas aquí).
-  Es lo único que falta: las seis dudas de vocabulario están todas
-  cerradas, incluida la de `loba` (resuelta el 25/08).
+Revisadas por la pareja de Ric, de Gernika. **Todas correctas**, sin
+cambios. Junto con las cuatro corregidas arriba, las 28 frases de
+ejemplo quedan listas para entrar al curso.
 
 #### Resumen para la ficha de parentesco de la 5.1
 
