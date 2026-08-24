@@ -27,6 +27,17 @@
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   var usuarioId = null;
 
+  /* Entrar sin cuenta, SOLO en local, para poder revisar contenido nuevo
+     sin pasar por el magic link. El progreso no se guarda (guardarProgreso
+     y guardarProgresoAhora ya salen si no hay usuarioId), así que cada
+     recarga empieza limpia: es para mirar, no para estudiar.
+
+     La condición es el nombre del host, no una variable ni una bandera:
+     en el dominio real esto es false siempre y el acceso funciona igual
+     que ahora. No hay forma de activarlo en producción sin cambiar esta
+     línea. */
+  var MODO_LOCAL = ['localhost', '127.0.0.1', '::1', ''].indexOf(location.hostname) !== -1;
+
   // Bucket público de pronunciaciones (Cloud TTS, ver docs/brief.md sección 6).
   var AUDIO_BASE = SUPABASE_URL + '/storage/v1/object/public/euskaraz-audio/';
   var GUARDAR_ESPERA_MS = 1500;
@@ -273,8 +284,11 @@
       });
   }
 
-  /* Requiere que usuarioId ya esté fijado (ver onAuthStateChange). */
+  /* Requiere que usuarioId ya esté fijado (ver onAuthStateChange), salvo
+     en MODO_LOCAL sin sesión: ahí se trabaja con un progreso en memoria
+     que no se persiste en ningún sitio. */
   function cargarProgreso() {
+    if (!usuarioId) return Promise.resolve(normalizarProgreso(null));
     return sb.from('euskaraz_progreso').select('data').eq('user_id', usuarioId).maybeSingle()
       .then(function (r) {
         if (r.error) throw r.error;
@@ -1910,6 +1924,10 @@
   sb.auth.onAuthStateChange(function (event, session) {
     if (session) {
       usuarioId = session.user.id;
+      arrancarApp();
+    } else if (MODO_LOCAL) {
+      // En local se entra directamente, sin cuenta y sin guardar nada.
+      usuarioId = null;
       arrancarApp();
     } else if (event !== 'INITIAL_SESSION' || !arrancado) {
       arrancado = false;

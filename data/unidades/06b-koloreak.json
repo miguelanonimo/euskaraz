@@ -1,0 +1,697 @@
+{
+  "id": "u6.1",
+  "numero": 6.1,
+  "titulo": "Koloreak eta etxea",
+  "subtitulo": "Ampliación: los colores y el resto de la casa",
+  "objetivo": "Poner color a lo que ya sabes describir, y completar el vocabulario de la casa de la unidad 6.",
+  "color": "azul",
+  "vocabulario": [
+    {
+      "eu": "gorria",
+      "es": "rojo",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "urdina",
+      "es": "azul",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "horia",
+      "es": "amarillo",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "berdea",
+      "es": "verde",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "zuria",
+      "es": "blanco",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "beltza",
+      "es": "negro",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "grisa",
+      "es": "gris",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "marroia",
+      "es": "marrón",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "arrosa",
+      "es": "rosa",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "morea",
+      "es": "morado",
+      "nota": null,
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "laranja",
+      "es": "naranja",
+      "nota": "La misma palabra sirve para la fruta y para el color.",
+      "categoria": "adjetivo"
+    },
+    {
+      "eu": "egongela",
+      "es": "el salón",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "jangela",
+      "es": "el comedor",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "bainugela",
+      "es": "el cuarto de baño",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "sarrera",
+      "es": "la entrada",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "eskailerak",
+      "es": "las escaleras",
+      "nota": "Se usa en plural.",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "igogailua",
+      "es": "el ascensor",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "balkoia",
+      "es": "el balcón",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "lorategia",
+      "es": "el jardín",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "garajea",
+      "es": "el garaje",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "armairua",
+      "es": "el armario",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "sofa",
+      "es": "el sofá",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "telebista",
+      "es": "la televisión",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "hozkailua",
+      "es": "la nevera",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "dutxa",
+      "es": "la ducha",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "ispilua",
+      "es": "el espejo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "argia",
+      "es": "la luz",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "horma",
+      "es": "la pared",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "teilatua",
+      "es": "el tejado",
+      "nota": null,
+      "categoria": "sustantivo"
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "Los colores van donde van los adjetivos",
+      "cuerpo": "Nada nuevo, en realidad: los colores son adjetivos y se colocan igual que <i>handi</i> o <i>txiki</i>, que ya viste en esta unidad. Detrás del sustantivo, y con el artículo al final del grupo:\n\n<b>etxe</b> + <b>gorri</b> + <b>-a</b> → <b>etxe gorria</b> (la casa roja)\n<b>mahai</b> + <b>zuri</b> + <b>-a</b> → <b>mahai zuria</b> (la mesa blanca)\n\nFíjate en que el color pierde su <i>-a</i> de diccionario cuando va acompañando: no es «etxe gorriaa», el artículo se pone una vez y punto.\n\nY con posesivo delante, como siempre:\n\n<b>Nire logela urdina da.</b> — Mi habitación es azul.",
+      "ejemplos": [
+        {
+          "eu": "etxe gorria",
+          "es": "la casa roja"
+        },
+        {
+          "eu": "mahai zuria",
+          "es": "la mesa blanca"
+        },
+        {
+          "eu": "Nire logela urdina da.",
+          "es": "Mi habitación es azul."
+        }
+      ]
+    },
+    {
+      "titulo": "Para decir «una» hace falta «bat»",
+      "cuerpo": "Este es un tropiezo clásico viniendo del castellano. Mira las dos:\n\n<b>mahai zuria</b> — <i>la</i> mesa blanca\n<b>mahai zuri bat</b> — <i>una</i> mesa blanca\n\nEl <b>-a</b> del final es «el/la». Si quieres decir «un» o «una», se quita ese artículo y se pone <b>bat</b> detrás de todo.\n\nY ojo cuando hay dos cosas: cada una lleva su <i>bat</i>.\n\n<b>Mahai zuria eta aulki beltza.</b> — La mesa blanca y la silla negra.\n<b>Mahai zuri bat eta aulki beltz bat.</b> — Una mesa blanca y una silla negra.",
+      "ejemplos": [
+        {
+          "eu": "mahai zuria",
+          "es": "la mesa blanca"
+        },
+        {
+          "eu": "mahai zuri bat",
+          "es": "una mesa blanca"
+        },
+        {
+          "eu": "Mahai zuria eta aulki beltza.",
+          "es": "La mesa blanca y la silla negra."
+        }
+      ]
+    },
+    {
+      "titulo": "«Laranja» es la fruta y el color",
+      "cuerpo": "Como en castellano, que también usamos «naranja» para las dos cosas.\n\n<b>laranja</b> — la naranja (la fruta), y también naranja (el color)\n\nNo hay truco ni palabra aparte que aprender: el contexto lo resuelve solo, igual que en castellano nadie confunde «me como una naranja» con «una camisa naranja».",
+      "ejemplos": [
+        {
+          "eu": "laranja",
+          "es": "la naranja / naranja"
+        }
+      ]
+    },
+    {
+      "titulo": "Las habitaciones acaban casi todas en -gela",
+      "cuerpo": "Ya conoces <b>gela</b> (la habitación, el aula) y <b>logela</b> (el dormitorio). Pues el patrón sigue, y una vez lo ves te ahorras memorizar:\n\n<b>lo</b> (dormir) + gela → <b>logela</b>, el dormitorio\n<b>jan</b> (comer) + gela → <b>jangela</b>, el comedor\n<b>egon</b> (estar) + gela → <b>egongela</b>, el salón — literalmente «la habitación de estar»\n<b>bainu</b> (baño) + gela → <b>bainugela</b>, el cuarto de baño\n\nTres de esas cuatro piezas ya las tenías de antes: <i>jan</i> y <i>egon</i> son verbos que llevas usando desde las unidades 6 y 8.",
+      "ejemplos": [
+        {
+          "eu": "logela",
+          "es": "el dormitorio"
+        },
+        {
+          "eu": "jangela",
+          "es": "el comedor"
+        },
+        {
+          "eu": "egongela",
+          "es": "el salón"
+        }
+      ]
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "Dos detalles que se oyen mucho por aquí.\n\nEl color rojo, <b>gorria</b>, no cambia. Pero <b>urdina</b> (azul) cubre en euskera un rango más amplio que el «azul» castellano: tradicionalmente sirve también para lo que llamaríamos gris o verde grisáceo, sobre todo hablando del mar o del cielo.\n\nY sobre la casa: para el salón oirás también <b>sala</b>, tomado del castellano y muy usado en el habla de todos los días, aunque <i>egongela</i> es lo normativo.",
+      "ejemplos": [
+        {
+          "eu": "etxe gorria",
+          "es": "la casa roja"
+        },
+        {
+          "eu": "egongela",
+          "es": "el salón"
+        }
+      ]
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u6.1-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "gorria",
+              "es": "rojo"
+            },
+            {
+              "eu": "urdina",
+              "es": "azul"
+            },
+            {
+              "eu": "horia",
+              "es": "amarillo"
+            },
+            {
+              "eu": "berdea",
+              "es": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "zuria",
+              "es": "blanco"
+            },
+            {
+              "eu": "beltza",
+              "es": "negro"
+            },
+            {
+              "eu": "grisa",
+              "es": "gris"
+            },
+            {
+              "eu": "marroia",
+              "es": "marrón"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "arrosa",
+              "es": "rosa"
+            },
+            {
+              "eu": "morea",
+              "es": "morado"
+            },
+            {
+              "eu": "laranja",
+              "es": "naranja"
+            },
+            {
+              "eu": "berdea",
+              "es": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "gorria",
+              "es": "rojo"
+            },
+            {
+              "eu": "zuria",
+              "es": "blanco"
+            },
+            {
+              "eu": "beltza",
+              "es": "negro"
+            },
+            {
+              "eu": "urdina",
+              "es": "azul"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "horia",
+              "es": "amarillo"
+            },
+            {
+              "eu": "morea",
+              "es": "morado"
+            },
+            {
+              "eu": "grisa",
+              "es": "gris"
+            },
+            {
+              "eu": "arrosa",
+              "es": "rosa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6.1-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«La casa roja» se dice…",
+          "opciones": [
+            "etxea gorria",
+            "etxe gorria",
+            "gorri etxea",
+            "etxe gorriak"
+          ],
+          "correcta": 1,
+          "explicacion": "El adjetivo detrás, y el artículo una sola vez, al final."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«La mesa blanca» se dice…",
+          "opciones": [
+            "zuri mahaia",
+            "mahaia zuria",
+            "mahai zuria",
+            "mahai zuriak"
+          ],
+          "correcta": 2,
+          "explicacion": "Mahai + zuri + -a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice «UNA mesa blanca»?",
+          "opciones": [
+            "mahai zuria",
+            "mahai zuri bat",
+            "bat mahai zuria",
+            "mahaia zuri"
+          ],
+          "correcta": 1,
+          "explicacion": "Se quita el artículo -a y se añade «bat» al final."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Mi habitación es azul» se dice…",
+          "opciones": [
+            "Nire logela urdina da.",
+            "Nire logela urdin da.",
+            "Urdina nire logela da.",
+            "Nire urdin logela da."
+          ],
+          "correcta": 0,
+          "explicacion": "El color va detrás, con el artículo, y «da» cierra la frase."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «etxe gorria», ¿dónde está el artículo «la»?",
+          "opciones": [
+            "en «etxe»",
+            "en la -a final de «gorria»",
+            "no hay artículo",
+            "en las dos palabras"
+          ],
+          "correcta": 1,
+          "explicacion": "Aparece una sola vez, al final del grupo."
+        }
+      ]
+    },
+    {
+      "id": "u6.1-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes de la casa",
+          "pares": [
+            {
+              "eu": "egongela",
+              "es": "el salón"
+            },
+            {
+              "eu": "jangela",
+              "es": "el comedor"
+            },
+            {
+              "eu": "bainugela",
+              "es": "el cuarto de baño"
+            },
+            {
+              "eu": "sarrera",
+              "es": "la entrada"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes de la casa",
+          "pares": [
+            {
+              "eu": "eskailerak",
+              "es": "las escaleras"
+            },
+            {
+              "eu": "igogailua",
+              "es": "el ascensor"
+            },
+            {
+              "eu": "balkoia",
+              "es": "el balcón"
+            },
+            {
+              "eu": "lorategia",
+              "es": "el jardín"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los muebles",
+          "pares": [
+            {
+              "eu": "armairua",
+              "es": "el armario"
+            },
+            {
+              "eu": "sofa",
+              "es": "el sofá"
+            },
+            {
+              "eu": "hozkailua",
+              "es": "la nevera"
+            },
+            {
+              "eu": "ispilua",
+              "es": "el espejo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la casa",
+          "pares": [
+            {
+              "eu": "teilatua",
+              "es": "el tejado"
+            },
+            {
+              "eu": "horma",
+              "es": "la pared"
+            },
+            {
+              "eu": "argia",
+              "es": "la luz"
+            },
+            {
+              "eu": "dutxa",
+              "es": "la ducha"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la casa",
+          "pares": [
+            {
+              "eu": "logela",
+              "es": "el dormitorio"
+            },
+            {
+              "eu": "sukaldea",
+              "es": "la cocina"
+            },
+            {
+              "eu": "egongela",
+              "es": "el salón"
+            },
+            {
+              "eu": "garajea",
+              "es": "el garaje"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u6.1-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «egongela»?",
+          "opciones": [
+            "el comedor",
+            "el salón",
+            "el dormitorio",
+            "la cocina"
+          ],
+          "correcta": 1,
+          "explicacion": "«La habitación de estar»: egon + gela."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «jangela»?",
+          "opciones": [
+            "el comedor",
+            "el salón",
+            "la cocina",
+            "el baño"
+          ],
+          "correcta": 0,
+          "explicacion": "Jan (comer) + gela: el comedor."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «hozkailua»?",
+          "opciones": [
+            "el horno",
+            "la nevera",
+            "el armario",
+            "el espejo"
+          ],
+          "correcta": 1,
+          "explicacion": "Hozkailua es la nevera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «igogailua»?",
+          "opciones": [
+            "las escaleras",
+            "el ascensor",
+            "el balcón",
+            "la entrada"
+          ],
+          "correcta": 1,
+          "explicacion": "Igogailua es el ascensor. Las escaleras son «eskailerak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «teilatua»?",
+          "opciones": [
+            "la pared",
+            "el suelo",
+            "el tejado",
+            "la puerta"
+          ],
+          "correcta": 2,
+          "explicacion": "Teilatua es el tejado. La pared es «horma»."
+        }
+      ]
+    },
+    {
+      "id": "u6.1-g05",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "En el salón hay una televisión.",
+          "eu": "Egongelan telebista dago.",
+          "palabras": [
+            "Egongelan",
+            "telebista",
+            "dago."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "En la cocina está la nevera.",
+          "eu": "Sukaldean hozkailua dago.",
+          "palabras": [
+            "Sukaldean",
+            "hozkailua",
+            "dago."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "La mesa blanca y la silla negra.",
+          "eu": "Mahai zuria eta aulki beltza.",
+          "palabras": [
+            "Mahai",
+            "zuria",
+            "eta",
+            "aulki",
+            "beltza."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mi habitación es azul.",
+          "eu": "Nire logela urdina da.",
+          "palabras": [
+            "Nire",
+            "logela",
+            "urdina",
+            "da."
+          ]
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "la casa roja",
+          "respuestas": [
+            "etxe gorria"
+          ],
+          "pista": "Dos palabras."
+        }
+      ]
+    }
+  ]
+}
