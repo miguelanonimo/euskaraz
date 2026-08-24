@@ -303,7 +303,7 @@ svg{
   display: flex;
   align-items: flex-start;
   gap: calc(var(--u) * 1.5);
-  margin: calc(var(--u) * 4) 0 0;
+  margin: calc(var(--u) * 4) 0 calc(var(--u) * 6);
   padding-top: calc(var(--u) * 3);
   border-top: 1px solid var(--filete);
   font-size: var(--t-s);
@@ -318,6 +318,19 @@ svg{
   margin-top: 1px;
   accent-color: var(--tinta);
   cursor: pointer;
+}
+.cuenta__opcion span{
+  display: block;
+}
+.cuenta__opcion b{
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 600;
+  color: var(--tinta);
+}
+.cuenta__opcion small{
+  display: block;
+  font-size: inherit;
 }
 
 /* Modo silencioso: ningún icono de play visible en ningún sitio,
@@ -370,6 +383,32 @@ body.silencioso .pair__play{ display: none; }
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--tinta-45);
+}
+
+.section-head--repasar{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: calc(var(--u) * 1.5) calc(var(--u) * 2.5);
+  justify-content: space-between;
+}
+.dialectswitch{
+  display: flex;
+  align-items: center;
+  gap: var(--u);
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: var(--t-s);
+  color: var(--tinta-70);
+  cursor: pointer;
+}
+.dialectswitch input{
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--tinta);
+  cursor: pointer;
 }
 
 /* Lista de unidades: filas separadas por filete, sin cajas */
@@ -728,6 +767,8 @@ body.silencioso .pair__play{ display: none; }
   letter-spacing: 0.12em;
   color: var(--tinta-45);
 }
+
+.q__registro{ margin: 0 0 calc(var(--u) * 2); }
 
 .q__prompt{
   margin: 0 0 calc(var(--u) * 4);

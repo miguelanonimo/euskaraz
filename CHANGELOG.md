@@ -612,3 +612,34 @@ escuchar y el audio al acertar nuevo. Los ejercicios de listening se
 excluyen de la selección (`sortearFormato()`/`candidatosEscuchar()`) en
 vez de aparecer mudos, y los iconos de play desaparecen en toda la app
 por CSS (clase `silencioso` en `<body>`).
+
+## 2026-08-24 — Botones de escuchar más descriptivos, diff por palabras, e "Incluir variantes dialectales"
+
+El botón de escuchar decía siempre "Escuchar", sin distinguir si tocaba
+elegir el significado o traducirlo escribiendo — bastaba para
+confundir el impulso (escribir en euskera lo que se oye en vez de
+traducirlo). Ahora dice "Escucha y elige" o "Escucha y tradúcelo"
+según el formato (`__labelEscuchar`). De paso, `corregirTeclear()`
+comparaba siempre letra a letra, incluso para una solución de varias
+palabras en castellano (el "objetivo: es" de escuchar+teclear) — daba
+un diff sin sentido tipo "tu" + "pr" + "opio" resaltados sueltos. Ahora
+compara por palabras cuando la solución tiene más de una, igual que ya
+hace `corregirTraducir()`.
+
+Nuevo switch "¿Incluir variantes dialectales?" en la cabecera de
+Repasar (localStorage, por aparato, igual que Modo silencioso): apagado
+por defecto, el repaso solo prueba la forma batua de cada palabra;
+activado, las variantes (aupa, zelan zagoz…) entran también como
+preguntas propias, con su misma traducción castellana heredada del
+padre (`formasDe()`). Cuando la palabra en juego es una variante, la
+pregunta lleva una etiqueta "BIZKAIERA" (reusa el estilo de
+`.vitem__registro` de Vocabulario/Diccionario) para no confundirla con
+un error de tecleo si se responde rápido. Hoy solo afecta a las dos
+parejas del piloto de la Unidad 1 (kaixo/aupa, zer moduz/zelan zagoz) —
+el resto de unidades aún no tiene `variantes` cargadas, ver
+`docs/notas-contenido-u1.md`.
+
+Arreglado también un bug previo (no de esta sesión): el botón de la
+cuenta pasaba el propio evento de click a `pantallaCuenta()`, que lo
+mostraba tal cual como mensaje — se veía "[object PointerEvent]" en la
+pantalla de Tu cuenta.

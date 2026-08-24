@@ -75,7 +75,10 @@
       <p class="authbox__msg" id="cuentaMsg" hidden aria-live="polite"></p>
       <label class="cuenta__opcion">
         <input type="checkbox" id="modoSilencioso">
-        <span>Modo silencioso — sin audio en ningún sitio de la app (ni botones de escuchar, ni ejercicios de listening)</span>
+        <span>
+          <b>Modo silencioso</b>
+          <small>Ideal para momentos donde no puedas reproducir audio (sin audio en ningún sitio de la app)</small>
+        </span>
       </label>
       <button class="btn btn--ghost" type="button" id="btnCerrarSesion">Cerrar sesión</button>
     </div>
@@ -109,7 +112,13 @@
     <h2 class="section-head">Unidades</h2>
     <ul class="unitlist" id="unitList"></ul>
 
-    <h2 class="section-head">Repasar</h2>
+    <h2 class="section-head section-head--repasar">
+      <span>Repasar</span>
+      <label class="dialectswitch">
+        <input type="checkbox" id="incluirDialectales">
+        <span>¿Incluir variantes dialectales?</span>
+      </label>
+    </h2>
     <div class="cardstack">
       <button class="navcard" id="goRepaso">
         <span class="navcard__body">

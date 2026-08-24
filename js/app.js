@@ -94,6 +94,7 @@
     cuentaMsg:    $('cuentaMsg'),
     btnCerrarSesion: $('btnCerrarSesion'),
     modoSilencioso: $('modoSilencioso'),
+    incluirDialectales: $('incluirDialectales'),
     screens: {
       home:   $('screenHome'),
       unit:   $('screenUnit'),
@@ -247,6 +248,39 @@
     modoSilencioso = !!on;
     try { localStorage.setItem(MODO_SILENCIOSO_KEY, modoSilencioso ? '1' : '0'); } catch (e) {}
     aplicarModoSilencioso();
+  }
+
+  /* Incluir variantes dialectales en el repaso: preferencia de este
+     aparato, igual que el modo silencioso. Por defecto apagado —el
+     repaso solo prueba la forma batua de cada palabra, y las variantes
+     (aupa, zelan zagoz…) se quedan como lo que son en Vocabulario/
+     Diccionario, formas para leer, no para que te examinen de ellas—
+     hasta que el usuario decide activamente que también quiere que le
+     pregunten en bizkaiera. */
+  var INCLUIR_DIALECTALES_KEY = 'euskaraz_incluir_dialectales';
+  var incluirDialectales = false;
+  try { incluirDialectales = localStorage.getItem(INCLUIR_DIALECTALES_KEY) === '1'; } catch (e) {}
+
+  function setIncluirDialectales(on) {
+    incluirDialectales = !!on;
+    try { localStorage.setItem(INCLUIR_DIALECTALES_KEY, incluirDialectales ? '1' : '0'); } catch (e) {}
+  }
+
+  /* Todas las formas de una entrada de vocabulario que entran en juego
+     para el repaso: solo la batua, o la batua más sus variantes cuando
+     el switch está activado. La variante hereda `es`/`unidad`/`titulo`
+     del padre —significa lo mismo, solo cambia la forma euskera—, y se
+     le añade `categoria` por si falta, para no romper el filtro de
+     Vocabulario. */
+  function formasDe(v, unidad, titulo) {
+    var base = { eu: v.eu, es: v.es, nota: v.nota, audio: v.audio, registro: v.registro,
+                 categoria: v.categoria || 'otros', unidad: unidad, titulo: titulo };
+    if (!incluirDialectales || !v.variantes || !v.variantes.length) return [base];
+    return [base].concat(v.variantes.map(function (variante) {
+      return { eu: variante.eu, es: v.es, nota: variante.nota, audio: variante.audio,
+               registro: variante.registro, categoria: variante.categoria || base.categoria,
+               unidad: unidad, titulo: titulo };
+    }));
   }
 
   function botonAudio(v) {
@@ -850,11 +884,13 @@
     CURSO.unidades.forEach(function (u) {
       if (!progUnidad(u.id).vocab) return;
       u.vocabulario.forEach(function (v) {
-        var k = normalizar(v.eu);
-        if (vistas[k]) return;
-        vistas[k] = true;
         if (categoria && (v.categoria || 'otros') !== categoria) return;
-        fondo.push({ eu: v.eu, es: v.es, nota: v.nota, audio: v.audio, unidad: u.numero, titulo: u.titulo });
+        formasDe(v, u.numero, u.titulo).forEach(function (forma) {
+          var k = normalizar(forma.eu);
+          if (vistas[k]) return;
+          vistas[k] = true;
+          fondo.push(forma);
+        });
       });
     });
     return fondo;
@@ -1156,6 +1192,7 @@
       explicacion: entrada.nota || ''
     }, entrada);
     q.__escuchar = true;
+    q.__labelEscuchar = 'Escucha y elige';
     return q;
   }
 
@@ -1177,6 +1214,7 @@
     }, entrada);
     q.__escuchar = true;
     q.__objetivo = 'es';
+    q.__labelEscuchar = 'Escucha y tradúcelo';
     return q;
   }
 
@@ -1184,6 +1222,7 @@
     q.__clave   = clavePalabra(entrada.eu);
     q.__unidad  = entrada.unidad + '. ' + entrada.titulo;
     q.__palabra = entrada;
+    q.__registro = entrada.registro;
     return q;
   }
 
@@ -1336,12 +1375,22 @@
      nada, sin necesidad de filtrar por tipo aparte. */
   function audioDeRespuesta(ej) {
     if (!ej) return null;
-    var texto;
-    if (ej.tipo === 'opcion')                                  texto = ej.opciones[ej.correcta];
-    else if (ej.tipo === 'orden')                               texto = ej.eu;
-    else if (ej.tipo === 'traducir')                            texto = ej.respuestas && ej.respuestas[0];
-    else if (ej.tipo === 'teclear' && ej.__objetivo !== 'es')   texto = ej.solucion || (ej.respuestas && ej.respuestas[0]);
-    return texto ? audioDePalabra(texto) : null;
+    var audio;
+    /* En "opción" el euskera puede estar en la opción correcta
+       («¿cómo se dice X?», se elige en euskera) o en el propio
+       enunciado («¿qué significa gure?», se elige en castellano) —
+       preguntaOpcion() alterna las dos. Se prueban las dos búsquedas;
+       la que no aplique simplemente no encuentra nada. */
+    if (ej.tipo === 'opcion') {
+      audio = audioDePalabra(ej.opciones[ej.correcta]) || audioDePalabra(ej.pregunta);
+    } else if (ej.tipo === 'orden') {
+      audio = audioDePalabra(ej.eu);
+    } else if (ej.tipo === 'traducir') {
+      audio = ej.respuestas && audioDePalabra(ej.respuestas[0]);
+    } else if (ej.tipo === 'teclear' && ej.__objetivo !== 'es') {
+      audio = audioDePalabra(ej.solucion || (ej.respuestas && ej.respuestas[0]));
+    }
+    return audio || null;
   }
 
   /* Todo el vocabulario del curso en una sola lista, ordenada
@@ -1464,11 +1513,11 @@
     var base = barajar(u.ejercicios).map(function (g) {
       return prepararVariante(g, null);
     });
-    var fondoUnidad = u.vocabulario.map(function (v) {
-      var c = {}; for (var k in v) c[k] = v[k];
-      c.unidad = u.numero; c.titulo = u.titulo;
-      return c;
-    }).concat(ejemplosConAudio(u));
+    var fondoUnidad = [];
+    u.vocabulario.forEach(function (v) {
+      fondoUnidad = fondoUnidad.concat(formasDe(v, u.numero, u.titulo));
+    });
+    fondoUnidad = fondoUnidad.concat(ejemplosConAudio(u));
     var extra = candidatosEscuchar(fondoUnidad, ESCUCHAR_PRACTICA);
     estado.ejercicios = barajar(base.concat(extra));
     guardarProgreso();
@@ -1543,6 +1592,19 @@
     window.scrollTo(0, 0);
   }
 
+  /* Aviso de "esto es bizkaiera" en las preguntas de vocabulario que
+     salen de una variante dialectal (ver `variantes` en el esquema de
+     vocabulario, y el switch "Incluir variantes dialectales" de la
+     home) — para no confundirlo con un error de tecleo si se responde
+     rápido. Solo se marca cuando la palabra en juego no es la forma
+     batua por defecto; reusa el mismo estilo de etiqueta que ya llevan
+     las variantes en Vocabulario/Diccionario. */
+  function etiquetaRegistroEj(ej) {
+    if (!ej.__registro || ej.__registro === 'batua') return '';
+    return '<p class="vitem__registro vitem__registro--' + esc(ej.__registro) + ' q__registro">' +
+      esc(ej.__registro) + '</p>';
+  }
+
   // — Opción múltiple —
 
   /* Cabecera de un ejercicio de opción/teclear: normalmente el texto de
@@ -1555,7 +1617,7 @@
     }
     return '<button class="escuchar" type="button" id="btnEscuchar" aria-label="Escuchar la palabra">' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg>' +
-      '<span>Escuchar</span>' +
+      '<span>' + esc(ej.__labelEscuchar || 'Escuchar') + '</span>' +
     '</button>';
   }
 
@@ -1577,6 +1639,7 @@
 
     el.quizContent.innerHTML =
       '<p class="q__inst">' + esc(ej.instruccion) + '</p>' +
+      etiquetaRegistroEj(ej) +
       pintarPrompt(ej) +
       '<div class="opts" id="opts">' + orden.map(function (o, n) {
         return '<button class="opt" type="button" aria-pressed="false" data-i="' + o.i + '">' +
@@ -1789,6 +1852,7 @@
     var placeholder = ej.__objetivo === 'es' ? 'Escríbelo en castellano…' : 'Escríbelo en euskera…';
     el.quizContent.innerHTML =
       '<p class="q__inst">' + esc(ej.instruccion) + '</p>' +
+      etiquetaRegistroEj(ej) +
       pintarPrompt(ej) +
       '<textarea class="typebox typebox--corta" id="typebox" rows="1" autocomplete="off" ' +
       'autocorrect="off" autocapitalize="off" spellcheck="false" ' +
@@ -1810,9 +1874,13 @@
     var ok = ej.respuestas.some(function (r) { return normalizar(r) === dado; });
     $('typebox').blur();
     if (ok) return { ok: true, cuerpo: ej.explicacion ? esc(ej.explicacion) : '' };
+    // Letra a letra para una palabra suelta, por palabras si la solución
+    // tiene más de una — comparar "tu propio" contra lo escrito letra a
+    // letra mezclaba coincidencias sueltas sin sentido (ver comparacion()).
+    var porPalabras = normalizar(ej.solucion).indexOf(' ') !== -1;
     return {
       ok: false,
-      cuerpo: comparacion(dado, normalizar(ej.solucion), false) +
+      cuerpo: comparacion(dado, normalizar(ej.solucion), porPalabras) +
               (ej.explicacion ? '<p class="dif__nota">' + esc(ej.explicacion) + '</p>' : '')
     };
   }
@@ -2315,7 +2383,7 @@
 
   // ─────────── Cuenta ───────────
 
-  el.btnCuenta.addEventListener('click', pantallaCuenta);
+  el.btnCuenta.addEventListener('click', function () { pantallaCuenta(); });
 
   el.formPassword.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -2335,6 +2403,11 @@
 
   el.modoSilencioso.addEventListener('change', function () {
     setModoSilencioso(el.modoSilencioso.checked);
+  });
+
+  el.incluirDialectales.checked = incluirDialectales;
+  el.incluirDialectales.addEventListener('change', function () {
+    setIncluirDialectales(el.incluirDialectales.checked);
   });
 
   aplicarModoSilencioso();
