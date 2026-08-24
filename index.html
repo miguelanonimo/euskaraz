@@ -109,23 +109,20 @@
       </div>
     </section>
 
-    <h2 class="section-head">Unidades</h2>
-    <ul class="unitlist" id="unitList"></ul>
-
-    <h2 class="section-head section-head--repasar">
-      <span>Repasar</span>
-      <label class="dialectswitch">
-        <input type="checkbox" id="incluirDialectales">
-        <span>¿Incluir variantes dialectales?</span>
-      </label>
+    <h2 class="section-head section-head--hoy">
+      <span>Qué toca hoy</span>
+      <span class="today__count" id="todayCount"></span>
     </h2>
+    <label class="dialectswitch dialectswitch--hoy">
+      <input type="checkbox" id="incluirDialectales">
+      <span>¿Incluir variantes dialectales?</span>
+    </label>
     <div class="cardstack">
-      <button class="navcard" id="goRepaso">
+      <button class="navcard" id="goLeccion" hidden>
         <span class="navcard__body">
-          <span class="navcard__title">Repaso mezclado</span>
-          <span class="navcard__sub" id="repasoCount"></span>
+          <span class="navcard__title" id="leccionTitulo"></span>
+          <span class="navcard__sub" id="leccionSub"></span>
         </span>
-        <span class="navcard__due" id="repasoDue" hidden></span>
         <span class="navcard__chev" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
         </span>
@@ -141,6 +138,24 @@
           <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
         </span>
       </button>
+
+      <button class="navcard" id="goRepaso">
+        <span class="navcard__body">
+          <span class="navcard__title">Repaso mezclado</span>
+          <span class="navcard__sub" id="repasoCount"></span>
+        </span>
+        <span class="navcard__due" id="repasoDue" hidden></span>
+        <span class="navcard__chev" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </span>
+      </button>
+    </div>
+
+    <h2 class="section-head">Unidades</h2>
+    <ul class="unitlist" id="unitList"></ul>
+
+    <h2 class="section-head">Diccionario</h2>
+    <div class="cardstack">
       <button class="navcard" id="goDicc">
         <span class="navcard__body">
           <span class="navcard__title">Diccionario</span>
