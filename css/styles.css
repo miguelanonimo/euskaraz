@@ -581,6 +581,7 @@ body.silencioso .pair__play{ display: none; }
   font-weight: 600;
 }
 .navcard__sub--ok svg{ width: 13px; height: 13px; flex: 0 0 auto; }
+.navcard__sub--progreso{ color: var(--progreso-empezada); font-weight: 600; }
 /* Siempre en la última columna, lleve o no la tarjeta cifra de pendientes. */
 .navcard__chev{
   grid-column: -1;

@@ -681,8 +681,11 @@
       if (leccionHecha) {
         el.leccionSub.innerHTML = checkSvg + '<span>¡Completado!</span>';
         el.leccionSub.className = 'navcard__sub navcard__sub--ok';
+      } else if (progUnidad(siguienteUnidad.id).visitada) {
+        el.leccionSub.textContent = 'Sigue por donde lo dejaste';
+        el.leccionSub.className = 'navcard__sub navcard__sub--progreso';
       } else {
-        el.leccionSub.textContent = progUnidad(siguienteUnidad.id).visitada ? 'Sigue por donde lo dejaste' : 'Unidad nueva';
+        el.leccionSub.textContent = 'Empieza la lección';
         el.leccionSub.className = 'navcard__sub';
       }
     } else {
