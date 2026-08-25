@@ -261,6 +261,55 @@ comparten este error (confirmado de oído en `jaten dut`).
   una casualidad — si aparecen más palabras con esa terminación al
   revisar, comprobarlas también.
 
+### Respuestas en castellano demasiado rígidas: «pequeño» no vale para «pequeño/a»
+
+- **2026-08-25 · Detectado por Ric usando la app publicada.** En el
+  ejercicio nuevo de escuchar (audio dice «txikia», hay que teclear la
+  traducción), respondió «pequeño» y se marcó como fallo, porque la
+  respuesta guardada es literalmente «pequeño/a». Debería aceptar
+  «pequeño» y «pequeña», y decir de paso que la palabra vale para los
+  dos géneros — en euskera pasa constantemente, porque el adjetivo no
+  tiene género.
+
+- **Diagnóstico (código de Miguel en `main`, que nuestra rama aún no
+  tiene):** `preguntaEscucharTeclear` pasa `respuestas: [entrada.es]`
+  tal cual, y `normalizar()` quita `¿?¡!.,;:«»"'()` pero **no** la
+  barra `/` ni expande alternativas. Así que la única respuesta
+  aceptada es la cadena entera del campo `es`. Tres familias de fallo:
+  - **Barra** (43 entradas): «pequeño/a», «tú / usted», «él / ella» —
+    teclear una de las dos alternativas falla.
+  - **Coma** (19): «coger, tomar», «escuchar, oír» — la coma se borra
+    al normalizar y queda «coger tomar»; teclear solo «coger» falla.
+  - **Paréntesis** (54): «(yo) soy», «hermano (de un chico)» — se
+    borran los signos pero queda el contenido («yo soy»); teclear
+    «soy» a secas falla.
+  **Total: 116 entradas afectadas, un tercio del vocabulario.** El
+  «casi correcto» que Miguel acaba de añadir amortigua algún caso, pero
+  no es la solución: «pequeño» no es *casi* correcto, es correcto.
+
+- **Arreglo propuesto — en código, no tocando los datos:** una función
+  `variantesEs(es)` que expanda el campo en todas las respuestas
+  aceptables, aplicada donde se corrige una respuesta en castellano:
+  1. Alternativas por barra o coma → todas valen («tú / usted» acepta
+     las dos).
+  2. Contracción de género «-o/a» → las dos formas («pequeño»,
+     «pequeña»). También «el/la amigo/a» → amigo, amiga, con o sin
+     artículo.
+  3. Paréntesis aclaratorios → se acepta con y sin ellos («(yo) soy»
+     acepta «soy» y «yo soy»; «hermano (de un chico)» acepta
+     «hermano»).
+  Y en la pantalla de acierto, cuando la palabra vale para ambos
+  géneros, decirlo: es enseñanza, no solo corrección.
+
+- **Coordinación:** el ejercicio de escuchar es trabajo reciente de
+  Miguel en `main` y está desplegando estos días — este arreglo es de
+  su terreno ahora mismo. Comentárselo antes de tocar nada; si prefiere
+  que lo hagamos nosotros, entra cuando fusionemos `main` en
+  `ric/trabajo` (pendiente de todas formas para la reestructuración).
+  Para el contenido nuevo de las 10 unidades no hace falta cambiar
+  ninguna convención: el campo `es` se queda legible para humanos y la
+  expansión la hace el código.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
