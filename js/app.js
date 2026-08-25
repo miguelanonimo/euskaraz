@@ -593,8 +593,6 @@
     el.statPalabras.textContent = palabras;
     el.statRacha.innerHTML = Math.round(hechas / CURSO.unidades.length * 100) + '<small>%</small>';
 
-    var tickSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
-    var chevSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>';
 
     el.unitList.innerHTML = CURSO.unidades.map(function (u) {
       var p = progUnidad(u.id);
@@ -761,6 +759,14 @@
       completada: !!p.completada
     };
   }
+
+  /* Los dos iconos que se repiten por toda la app. Estaban dentro de
+     pantallaHome(), así que la lista de subniveles —que también los
+     usa— reventaba con ReferenceError en cuanto un subnivel superaba el
+     70% y había que pintarle el tick. Detectado por Ric: la unidad ya
+     no se abría. */
+  var tickSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
+  var chevSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>';
 
   function plural(n, uno, varios) { return n + ' ' + (n === 1 ? uno : varios); }
 
