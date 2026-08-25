@@ -401,6 +401,14 @@ código.
 
 ## Implementadas
 
+- **2026-08-25 · Respuestas flexibles en castellano**, portado de
+  `ric/trabajo` (commit `01ec749`, con Claude Fable). El campo `es`
+  está escrito para leerse, no para compararse — «pequeño/a» marcaba
+  como fallo teclear «pequeño». `variantesRespuesta()` expande
+  barra/coma/paréntesis/artículo; afectaba a un tercio del
+  vocabulario. Integrado con el "casi correcto" del mismo día:
+  `respuestaMasCercana()` ahora compara contra todas las variantes
+  aceptadas.
 - **2026-08-24 · Seis piezas de `ric/trabajo` traídas a `main`**: iconos
   y `site.webmanifest` (nunca llegaron al repo aunque index.html ya los
   enlazaba), `preguntaOpcion` agrupando distractores por forma (para que

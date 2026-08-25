@@ -723,3 +723,24 @@ menos no dan margen (en euskera ahí una letra puede ser otra palabra
 entera, "ni"/"hi"), así que no hay "casi" que valga. Verificado con una
 tabla de casos: `etxe`/`etxea` y `kaiso`/`kaixo` sí perdonan,
 `ni`/`hi` y `zu`/`ni` no.
+
+## 2026-08-25 — Respuestas flexibles en castellano (portado de `ric/trabajo`)
+
+Detectado por Ric: el campo `es` está escrito para leerse, no para
+compararse — «pequeño/a», «coger, tomar», «(yo) soy». Comparando la
+cadena entera, teclear «pequeño» (correcto) se marcaba como fallo.
+Afectaba a un tercio del vocabulario del curso: 43 entradas con barra,
+~20 con coma, ~70 con paréntesis.
+
+`variantesRespuesta()` expande una respuesta en todas sus formas
+aceptables (alternativas por barra o coma, contracción de género
+pequeño/a → pequeño + pequeña, paréntesis con y sin la aclaración, con
+o sin artículo delante) y `aciertaTecleado()`/`todasLasVariantes()` lo
+usan al corregir, no al construir la pregunta — vale para
+`traducir`/`teclear` tal cual, sin tocar los datos. Integrado con el
+"casi correcto" de ayer: la búsqueda de la respuesta más parecida
+(`respuestaMasCercana()`) ahora compara contra todas las variantes
+aceptadas, no solo la primera. Al acertar una palabra de doble género
+se avisa de que el adjetivo en euskera no tiene género — idea de Ric.
+Inocuo sobre respuestas en euskera (ningún campo `eu` del curso lleva
+barra, coma ni paréntesis).
