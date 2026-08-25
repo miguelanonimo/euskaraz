@@ -918,6 +918,27 @@
     };
   }
 
+  /* Calienta la caché del navegador con todo el audio de la unidad en
+     cuanto se abre, para que la primera reproducción real (en
+     Gramática, Vocabulario o el repaso) no cargue en frío. Sin esperar
+     a que termine ni bloquear nada: si una petición falla, no pasa
+     nada, simplemente esa palabra tardará como antes la primera vez. */
+  function precargarAudio(ruta) {
+    if (ruta && !modoSilencioso) fetch(AUDIO_BASE + ruta, { cache: 'force-cache' }).catch(function () {});
+  }
+
+  function precargarAudioDeUnidad(u) {
+    var rutas = {};
+    u.vocabulario.forEach(function (v) {
+      if (v.audio) rutas[v.audio] = true;
+      (v.variantes || []).forEach(function (variante) { if (variante.audio) rutas[variante.audio] = true; });
+    });
+    (u.gramatica || []).forEach(function (g) {
+      (g.ejemplos || []).forEach(function (e) { if (e.audio) rutas[e.audio] = true; });
+    });
+    Object.keys(rutas).forEach(precargarAudio);
+  }
+
   function pantallaUnidad(u) {
     estado.unidad = u;
     estado.subnivel = null;
@@ -1170,7 +1191,10 @@
   function pintarVocabulario() {
     var u = estado.unidad;
     var cat = el.vocabUnitCat.value;
-    var lista = u.vocabulario.filter(function (v) { return !cat || v.categoria === cat; });
+    // Dentro de un subnivel se enseña solo su vocabulario; el filtro de
+    // tipo de Miguel se aplica encima de esa selección.
+    var lista = delSubnivel(u.vocabulario, estado.subnivel)
+      .filter(function (v) { return !cat || v.categoria === cat; });
     el.vocabContent.innerHTML = lista.length
       ? '<div class="vocabgroup">' + lista.map(fichaVocabulario).join('') + '</div>'
       : '<p class="q__hint">Ninguna palabra de esta unidad es de ese tipo.</p>';
