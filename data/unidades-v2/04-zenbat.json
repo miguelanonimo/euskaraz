@@ -1,0 +1,2253 @@
+{
+  "id": "u4",
+  "numero": 4,
+  "titulo": "Zenbat eta familia",
+  "subtitulo": "Números, tener y la familia",
+  "objetivo": "Contar, decir tu edad y hablar de los tuyos.",
+  "color": "verde",
+  "subniveles": [
+    {
+      "id": "4.1",
+      "titulo": "Números del 1 al 20",
+      "resumen": "Y por qué el euskera cuenta de veinte en veinte."
+    },
+    {
+      "id": "4.2",
+      "titulo": "Seguir contando",
+      "resumen": "Berrogei, hirurogei, ehun: el resto de la escalera."
+    },
+    {
+      "id": "4.3",
+      "titulo": "Ordinales",
+      "resumen": "Lehena, bigarrena, hirugarrena…"
+    },
+    {
+      "id": "4.4",
+      "titulo": "Tener, y decir tu edad",
+      "resumen": "El verbo «ukan» y la -k del ergativo."
+    },
+    {
+      "id": "4.5",
+      "titulo": "El otro tener: «eduki»",
+      "resumen": "Daukat, dauka: cuándo se oye cada uno."
+    },
+    {
+      "id": "4.6",
+      "titulo": "La familia cercana",
+      "resumen": "Los hermanos cambian según quién los tiene."
+    },
+    {
+      "id": "4.7",
+      "titulo": "La familia extendida",
+      "resumen": "Abuelos, tíos, primos — y las formas de Bizkaia."
+    },
+    {
+      "id": "4.8",
+      "titulo": "Animales",
+      "resumen": "Los de casa y los de fuera."
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "Del once al diecinueve",
+      "cuerpo": "De 12 a 17 se construye con <b>hama-</b> (de «hamar», diez) más el número:\n\nhama + bi → <b>hamabi</b> (12)\nhama + hiru → <b>hamahiru</b> (13)\nhama + lau → <b>hamalau</b> (14)\nhama + bost → <b>hamabost</b> (15)\nhama + sei → <b>hamasei</b> (16)\nhama + zazpi → <b>hamazazpi</b> (17)\n\nEl 11 se sale del todo:\n\n<b>hamaika</b> (11) — aquí no hay «bat» por ninguna parte. Hay que memorizarlo.\n\nEl 18 y el 19 siguen el mismo patrón que los demás, pero con la vocal cambiada:\n\nhama + zortzi → <b>hemezortzi</b> (18)\nhama + bederatzi → <b>hemeretzi</b> (19)\n\nSiguen siendo diez y ocho, y diez y nueve, igual que <i>hamasei</i> es diez y seis. Lo único que pasa es que el prefijo suena <b>heme-</b> en vez de <b>hama-</b>, y que en el 19 el «bederatzi» se queda en <b>-retzi</b>. No es otra lógica: es la misma con desgaste.",
+      "ejemplos": [],
+      "subnivel": "4.1"
+    },
+    {
+      "titulo": "El sistema es de base veinte",
+      "cuerpo": "El euskera cuenta de veinte en veinte, como el francés con <i>quatre-vingts</i> pero llevado hasta el final:\n\n<b>hogei</b> (20)\n<b>berrogei</b> (40) = dos veintes\n<b>hirurogei</b> (60) = tres veintes\n<b>laurogei</b> (80) = cuatro veintes\n\nY 35 es <i>hogeita hamabost</i>: «veinte y quince». No hace falta que lo domines ahora, pero conviene saber por qué los números altos suenan tan largos.",
+      "ejemplos": [],
+      "subnivel": "4.1"
+    },
+    {
+      "titulo": "El verbo «ukan» (tener) en presente",
+      "cuerpo": "Cuando lo que tienes es <b>una sola cosa</b>:\n\n<b>nik dut</b> — yo tengo\n<b>zuk duzu</b> — tú tienes\n<b>hark du</b> — él/ella tiene\n<b>guk dugu</b> — nosotros tenemos\n<b>zuek duzue</b> — vosotros tenéis\n<b>haiek dute</b> — ellos tienen\n\n¿Te acuerdas del aviso de la unidad de pronombres? Aquí está. Ya no es <i>ni</i> sino <b>nik</b>, ni <i>zu</i> sino <b>zuk</b>. Es la misma raíz con una <b>-k</b> pegada, y esa -k tiene nombre: <b>ergativo</b>.\n\n(Existe otro verbo, <b>eduki</b>, para posesión física: <i>nik daukat</i>. Los dos se usan; por ahora quédate con «ukan».)",
+      "ejemplos": [
+        {
+          "eu": "Nik txakurra dut.",
+          "es": "Yo tengo un perro.",
+          "audio": "unidades/u5/nik-txakurra-dut.mp3"
+        },
+        {
+          "eu": "Zuk katua duzu.",
+          "es": "Tú tienes un gato.",
+          "audio": "unidades/u5/zuk-katua-duzu.mp3"
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "titulo": "La -k del ergativo",
+      "cuerpo": "Esta es la idea más rara del euskera para un hispanohablante, y la más importante. Merece la pena entenderla despacio.\n\nEl sujeto lleva la marca <b>-k</b> solo cuando el verbo tiene complemento directo:\n\n<i>Ni ikaslea <b>naiz</b>.</i> → sin -k, porque «ser» no lleva objeto\n<i><b>Nik</b> txakurra <b>dut</b>.</i> → con -k, porque tengo <i>algo</i>\n\nDicho de otra forma: quien <b>hace</b> algo a algo lleva -k. Quien simplemente <b>es</b> o <b>está</b>, no.\n\nEn castellano el sujeto es siempre igual y no marcas nada. En euskera tienes que decidir cada vez. Al principio se falla mucho, y es completamente normal: es una categoría que tu lengua materna no tiene.",
+      "ejemplos": [
+        {
+          "eu": "Ni Bilbokoa naiz.",
+          "es": "Soy de Bilbao. (sin -k)",
+          "audio": "unidades/u5/ni-bilbokoa-naiz.mp3"
+        },
+        {
+          "eu": "Nik anaia bat dut.",
+          "es": "Tengo un hermano. (con -k)",
+          "audio": "unidades/u5/nik-anaia-bat-dut.mp3"
+        },
+        {
+          "eu": "Hura irakaslea da.",
+          "es": "Ella es profesora. (sin -k)",
+          "audio": "unidades/u5/hura-irakaslea-da.mp3"
+        },
+        {
+          "eu": "Hark bi katu ditu.",
+          "es": "Ella tiene dos gatos. (con -k)",
+          "audio": "unidades/u5/hark-bi-katu-ditu.mp3"
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "titulo": "Cuando tienes varias cosas: dut → ditut",
+      "cuerpo": "El verbo también cambia según <b>cuántas</b> cosas tienes. Si son varias, entra una <b>-it-</b>:\n\n<b>nik ditut</b> — yo tengo (varios)\n<b>zuk dituzu</b> — tú tienes\n<b>hark ditu</b> — él/ella tiene\n<b>guk ditugu</b> — nosotros tenemos\n<b>zuek dituzue</b> — vosotros tenéis\n<b>haiek dituzte</b> — ellos tienen\n\nCompara: <i>katu bat <b>dut</b></i> (tengo un gato) frente a <i>bi katu <b>ditut</b></i> (tengo dos gatos). Lo que cambia es el verbo, no el nombre: <i>katu</i> se queda igual.\n\nEsto es lo que hace que el verbo vasco parezca complicado, y también lo que lo hace potente: lleva dentro la información de quién hace, a quién y cuántos.",
+      "ejemplos": [
+        {
+          "eu": "Nik katu bat dut.",
+          "es": "Tengo un gato.",
+          "audio": "unidades/u5/nik-katu-bat-dut.mp3"
+        },
+        {
+          "eu": "Nik hiru katu ditut.",
+          "es": "Tengo tres gatos.",
+          "audio": "unidades/u5/nik-hiru-katu-ditut.mp3"
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "titulo": "Decir tu edad",
+      "cuerpo": "La edad se «tiene», como en castellano, pero en plural porque son varios años:\n\n<b>Zenbat urte dituzu?</b> — ¿Cuántos años tienes?\n<b>Hogei urte ditut.</b> — Tengo veinte años.\n\nY fíjate: <i>urte</i> va sin artículo y en singular detrás del número. Se dice <i>hogei urte</i>, nunca «hogei urteak». Es una regla general: <b>detrás de un número, el sustantivo no lleva artículo ni plural</b>.",
+      "ejemplos": [
+        {
+          "eu": "Zenbat urte dituzu?",
+          "es": "¿Cuántos años tienes?",
+          "audio": "unidades/u5/zenbat-urte-dituzu.mp3"
+        },
+        {
+          "eu": "Hamabost urte ditut.",
+          "es": "Tengo quince años.",
+          "audio": "unidades/u5/hamabost-urte-ditut.mp3"
+        },
+        {
+          "eu": "bi katu",
+          "es": "dos gatos — sin artículo, sin -ak",
+          "audio": "unidades/u5/bi-katu.mp3"
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "titulo": "Hermano y hermana dependen de quién los tiene",
+      "cuerpo": "Aquí el euskera es más preciso que el castellano. La palabra cambia según el sexo de <b>quien tiene ese hermano</b>, no del hermano:\n\nSi es un chico quien lo tiene: <b>anaia</b> (hermano), <b>arreba</b> (hermana)\nSi es una chica: <b>neba</b> (hermano), <b>ahizpa</b> (hermana)\n\nNormalmente coincide con quien habla, pero no siempre: en <i>Anek ahizpa bat du</i> manda Ane, no el hablante.\n\nDos hermanos, chico y chica, usan palabras distintas para referirse el uno al otro. Curiosamente, en una lengua sin género gramatical.",
+      "ejemplos": [
+        {
+          "eu": "Mikelek arreba bat du.",
+          "es": "Mikel tiene una hermana.",
+          "audio": "unidades/u5/mikelek-arreba-bat-du.mp3"
+        },
+        {
+          "eu": "Anek ahizpa bat du.",
+          "es": "Ane tiene una hermana.",
+          "audio": "unidades/u5/anek-ahizpa-bat-du.mp3"
+        }
+      ],
+      "subnivel": "4.6"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "El verbo «tener» es donde el bizkaiera se separa del batua de forma más llamativa. Si oyes <i>dot</i> en vez de <i>dut</i>, estás en Bizkaia sin ninguna duda.\n\n<b>ukan en bizkaiera</b>\n\n<b>nik dot</b> — batua: dut\n<b>zuk dozu</b> — duzu\n<b>hark dau</b> — du\n<b>guk dogu</b> — dugu\n<b>zuek dozue</b> — duzue\n<b>haiek dabe</b> — dute\n\n<b>El plural se hace con -z</b>\nDonde el batua mete una <i>-it-</i>, el bizkaiera añade una <b>-z</b> al final:\n\n<i>ditugu</i> → <b>doguz</b>\n<i>ditut</i> → <b>dodaz</b>\n<i>daude</i> → <b>dagoz</b>\n\nAsí que «¿cuántos años tienes?» en Bilbao es <b>Zenbat urte dozuz?</b>\n\n<b>neba y ahizpa</b>\nEl sistema de cuatro palabras para hermanos está vivo en toda Euskal Herria, pero <i>neba</i> se conserva con especial fuerza en Bizkaia. En zonas de Gipuzkoa se ha ido perdiendo a favor de <i>anaia</i> para todo.",
+      "ejemplos": [
+        {
+          "eu": "Nik txakurra dot.",
+          "es": "Tengo un perro. (bizkaiera) — batua: dut",
+          "audio": "unidades/u5/nik-txakurra-dot.mp3"
+        },
+        {
+          "eu": "Zenbat urte dozuz?",
+          "es": "¿Cuántos años tienes? — batua: dituzu",
+          "audio": "unidades/u5/zenbat-urte-dozuz.mp3"
+        },
+        {
+          "eu": "Haiek etxe bat dabe.",
+          "es": "Ellos tienen una casa. — batua: dute",
+          "audio": "unidades/u5/haiek-etxe-bat-dabe.mp3"
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "titulo": "«Iloba» es sobrino y nieto a la vez",
+      "cuerpo": "Aquí el euskera no distingue lo que el castellano separa. <b>Iloba</b> vale para el hijo de tu hermano <i>y</i> para el hijo de tu hijo.\n\nNo es que al idioma le falte algo: es que esa distinción no le hace falta casi nunca, porque el contexto la resuelve. Si estás hablando de tus hermanos, <b>iloba</b> es sobrino; si estás hablando de tus hijos, es nieto.\n\nY cuando sí hace falta precisar, existe la palabra:\n\n<b>biloba</b> — nieto, solo nieto\n\nEn Bizkaia oirás <b>loba</b>, sin la i- del principio. Significa exactamente lo mismo que <i>iloba</i>, con la misma doble lectura.",
+      "ejemplos": [
+        {
+          "eu": "iloba",
+          "es": "el sobrino / el nieto"
+        },
+        {
+          "eu": "loba",
+          "es": "lo mismo, en bizkaiera"
+        },
+        {
+          "eu": "biloba",
+          "es": "el nieto (sin ambigüedad)"
+        }
+      ],
+      "subnivel": "4.7"
+    },
+    {
+      "titulo": "«Mutil-laguna»: novio, o amigo chico",
+      "cuerpo": "Otra que sirve para dos cosas, y conviene saberlo antes de meter la pata.\n\n<b>mutil-laguna</b> — novio, pero también «amigo» cuando quieres dejar claro que es chico\n<b>neska-laguna</b> — novia, o «amiga» chica\n\nFunciona parecido al <i>boyfriend / girlfriend</i> del inglés: la palabra sola es ambigua y es el contexto —o el tono— el que decide. Si quieres dejar claro que hay pareja, lo normal es decirlo con más palabras alrededor.",
+      "ejemplos": [
+        {
+          "eu": "mutil-laguna",
+          "es": "el novio / el amigo"
+        },
+        {
+          "eu": "neska-laguna",
+          "es": "la novia / la amiga"
+        }
+      ],
+      "subnivel": "4.7"
+    },
+    {
+      "titulo": "Los abuelos tienen dos nombres en Bizkaia",
+      "cuerpo": "El batua dice <b>aitona</b> y <b>amona</b>, y con eso te entiendes en todas partes.\n\nPero en Bizkaia se oye otra cosa, y se oye mucho:\n\n<b>aitite</b> y <b>aitxitxe</b> — abuelo\n<b>amama</b> y <b>amuma</b> — abuela\n\nLas cuatro conviven. No son incorrectas ni «peor euskera»: son las formas de aquí, y en una conversación en Bilbao te van a salir antes que las normativas.",
+      "ejemplos": [
+        {
+          "eu": "aitona",
+          "es": "el abuelo (batua)"
+        },
+        {
+          "eu": "aitite",
+          "es": "el abuelo (bizkaiera)"
+        },
+        {
+          "eu": "amona",
+          "es": "la abuela (batua)"
+        },
+        {
+          "eu": "amama",
+          "es": "la abuela (bizkaiera)"
+        }
+      ],
+      "subnivel": "4.7"
+    },
+    {
+      "titulo": "Seguir contando: de veinte en veinte",
+      "cuerpo": "En la unidad 5 viste que el euskera cuenta en base veinte. Aquí está el resto de la escalera, y una vez ves el patrón ya no hay que memorizar nada:\n\n<b>hogei</b> (20) · <b>berrogei</b> (40) · <b>hirurogei</b> (60) · <b>laurogei</b> (80)\n\nSon «un veinte, dos veintes, tres veintes, cuatro veintes». Y las decenas intermedias son ese número más diez:\n\n<b>hogeita hamar</b> (30) — veinte y diez\n<b>berrogeita hamar</b> (50) — cuarenta y diez\n<b>hirurogeita hamar</b> (70) · <b>laurogeita hamar</b> (90)\n\nY para salir de ahí: <b>ehun</b> (100) y <b>mila</b> (1000).",
+      "ejemplos": [
+        {
+          "eu": "berrogei",
+          "es": "cuarenta"
+        },
+        {
+          "eu": "hogeita hamar",
+          "es": "treinta"
+        },
+        {
+          "eu": "ehun",
+          "es": "cien"
+        }
+      ],
+      "subnivel": "4.2"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "Además de los abuelos y de <i>loba</i>, hay un detalle de la unidad 5 que vuelve aquí: en bizkaiera, <b>ditut</b> (tengo varias cosas) suena <b>dodaz</b>, y <b>dut</b> suena <b>dot</b>.\n\nAsí que «tengo dos primos» puede llegarte de dos maneras:\n\n<b>Bi lehengusu ditut.</b> — batua\n<b>Bi lehengusu dodaz.</b> — bizkaiera\n\nComo siempre: esto es para reconocerlo de oído, no para que lo produzcas tú.",
+      "ejemplos": [
+        {
+          "eu": "Bi lehengusu ditut.",
+          "es": "Tengo dos primos."
+        }
+      ],
+      "subnivel": "4.7"
+    }
+  ],
+  "vocabulario": [
+    {
+      "eu": "bat",
+      "es": "uno",
+      "nota": null,
+      "audio": "unidades/u5/bat.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "bi",
+      "es": "dos",
+      "nota": null,
+      "audio": "unidades/u5/bi.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hiru",
+      "es": "tres",
+      "nota": null,
+      "audio": "unidades/u5/hiru.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "lau",
+      "es": "cuatro",
+      "nota": null,
+      "audio": "unidades/u5/lau.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "bost",
+      "es": "cinco",
+      "nota": null,
+      "audio": "unidades/u5/bost.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "sei",
+      "es": "seis",
+      "nota": null,
+      "audio": "unidades/u5/sei.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "zazpi",
+      "es": "siete",
+      "nota": null,
+      "audio": "unidades/u5/zazpi.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "zortzi",
+      "es": "ocho",
+      "nota": null,
+      "audio": "unidades/u5/zortzi.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "bederatzi",
+      "es": "nueve",
+      "nota": null,
+      "audio": "unidades/u5/bederatzi.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hamar",
+      "es": "diez",
+      "nota": null,
+      "audio": "unidades/u5/hamar.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hamaika",
+      "es": "once",
+      "nota": "También significa «un montón», coloquialmente.",
+      "audio": "unidades/u5/hamaika.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hamabi",
+      "es": "doce",
+      "nota": "hamar + bi",
+      "audio": "unidades/u5/hamabi.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hamahiru",
+      "es": "trece",
+      "nota": null,
+      "audio": "unidades/u5/hamahiru.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hamalau",
+      "es": "catorce",
+      "nota": null,
+      "audio": "unidades/u5/hamalau.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hamabost",
+      "es": "quince",
+      "nota": null,
+      "audio": "unidades/u5/hamabost.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hamasei",
+      "es": "dieciséis",
+      "nota": null,
+      "audio": "unidades/u5/hamasei.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hamazazpi",
+      "es": "diecisiete",
+      "nota": null,
+      "audio": "unidades/u5/hamazazpi.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hemezortzi",
+      "es": "dieciocho",
+      "nota": "El prefijo cambia a «heme-». También se oye «hamazortzi».",
+      "audio": "unidades/u5/hemezortzi.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hemeretzi",
+      "es": "diecinueve",
+      "nota": "heme- + bederatzi, contraído.",
+      "audio": "unidades/u5/hemeretzi.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hogei",
+      "es": "veinte",
+      "nota": null,
+      "audio": "unidades/u5/hogei.mp3",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "dut",
+      "es": "(yo) tengo",
+      "nota": null,
+      "audio": "unidades/u5/dut.mp3",
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "duzu",
+      "es": "(tú) tienes",
+      "nota": null,
+      "audio": "unidades/u5/duzu.mp3",
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "du",
+      "es": "(él/ella) tiene",
+      "nota": null,
+      "audio": "unidades/u5/du.mp3",
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "ditut",
+      "es": "(yo) tengo (varias cosas)",
+      "nota": null,
+      "audio": "unidades/u5/ditut.mp3",
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "urtea",
+      "es": "el año",
+      "nota": null,
+      "audio": "unidades/u5/urtea.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "anaia",
+      "es": "hermano (de un chico)",
+      "nota": null,
+      "audio": "unidades/u5/anaia.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "arreba",
+      "es": "hermana (de un chico)",
+      "nota": null,
+      "audio": "unidades/u5/arreba.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "neba",
+      "es": "hermano (de una chica)",
+      "nota": "Palabra especialmente viva en Bizkaia.",
+      "audio": "unidades/u5/neba.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "ahizpa",
+      "es": "hermana (de una chica)",
+      "nota": null,
+      "audio": "unidades/u5/ahizpa.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "aita",
+      "es": "padre",
+      "nota": null,
+      "audio": "unidades/u5/aita.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "ama",
+      "es": "madre",
+      "nota": null,
+      "audio": "unidades/u5/ama.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "semea",
+      "es": "el hijo",
+      "nota": null,
+      "audio": "unidades/u5/semea.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "alaba",
+      "es": "la hija",
+      "nota": null,
+      "audio": "unidades/u5/alaba.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "txakurra",
+      "es": "el perro",
+      "nota": null,
+      "audio": "unidades/u5/txakurra.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.8"
+    },
+    {
+      "eu": "katua",
+      "es": "el gato",
+      "nota": null,
+      "audio": "unidades/u5/katua.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "4.8"
+    },
+    {
+      "eu": "senarra",
+      "es": "el marido",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "emaztea",
+      "es": "la mujer, la esposa",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "aitona",
+      "es": "el abuelo",
+      "nota": "En Bizkaia se oye «aitite» o «aitxitxe».",
+      "categoria": "sustantivo",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "aitite",
+          "registro": "bizkaiera",
+          "nota": "Muy usado en Bizkaia."
+        },
+        {
+          "eu": "aitxitxe",
+          "registro": "bizkaiera",
+          "nota": "La otra forma vizcaína, igual de viva."
+        }
+      ],
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "amona",
+      "es": "la abuela",
+      "nota": "En Bizkaia se oye «amama» o «amuma».",
+      "categoria": "sustantivo",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "amama",
+          "registro": "bizkaiera",
+          "nota": "Recogida en el diccionario de Euskaltzaindia."
+        },
+        {
+          "eu": "amuma",
+          "registro": "bizkaiera",
+          "nota": "La otra forma vizcaína, igual de viva."
+        }
+      ],
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "osaba",
+      "es": "el tío",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "izeba",
+      "es": "la tía",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "lehengusua",
+      "es": "el primo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "lehengusina",
+      "es": "la prima",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "iloba",
+      "es": "el sobrino / el nieto",
+      "nota": "Vale para las dos cosas. Ver la ficha de esta unidad.",
+      "categoria": "sustantivo",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "loba",
+          "registro": "bizkaiera",
+          "nota": "En Bizkaia, y también para sobrino y nieto indistintamente."
+        }
+      ],
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "biloba",
+      "es": "el nieto",
+      "nota": "Esta sí es solo nieto: sirve para desambiguar cuando «iloba» no basta.",
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "mutil-laguna",
+      "es": "el novio",
+      "nota": "También «amigo» acentuando que es chico. Ver la ficha.",
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "neska-laguna",
+      "es": "la novia",
+      "nota": "También «amiga» acentuando que es chica. Ver la ficha.",
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "txoria",
+      "es": "el pájaro",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "zaldia",
+      "es": "el caballo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "behia",
+      "es": "la vaca",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "ardia",
+      "es": "la oveja",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "txerria",
+      "es": "el cerdo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "oiloa",
+      "es": "la gallina",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "untxia",
+      "es": "el conejo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "sagua",
+      "es": "el ratón",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "hogeita hamar",
+      "es": "treinta",
+      "nota": "Veinte y diez.",
+      "categoria": "otros",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "berrogei",
+      "es": "cuarenta",
+      "nota": "Dos veintes.",
+      "categoria": "otros",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "berrogeita hamar",
+      "es": "cincuenta",
+      "nota": "Dos veintes y diez.",
+      "categoria": "otros",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "hirurogei",
+      "es": "sesenta",
+      "nota": "Tres veintes.",
+      "categoria": "otros",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "hirurogeita hamar",
+      "es": "setenta",
+      "nota": "Tres veintes y diez.",
+      "categoria": "otros",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "laurogei",
+      "es": "ochenta",
+      "nota": "Cuatro veintes.",
+      "categoria": "otros",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "laurogeita hamar",
+      "es": "noventa",
+      "nota": "Cuatro veintes y diez.",
+      "categoria": "otros",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "ehun",
+      "es": "cien",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.7"
+    },
+    {
+      "eu": "mila",
+      "es": "mil",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.7"
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u5-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "hiru",
+              "es": "3"
+            },
+            {
+              "eu": "bost",
+              "es": "5"
+            },
+            {
+              "eu": "zazpi",
+              "es": "7"
+            },
+            {
+              "eu": "hamar",
+              "es": "10"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "bi",
+              "es": "2"
+            },
+            {
+              "eu": "lau",
+              "es": "4"
+            },
+            {
+              "eu": "sei",
+              "es": "6"
+            },
+            {
+              "eu": "zortzi",
+              "es": "8"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "bat",
+              "es": "1"
+            },
+            {
+              "eu": "bederatzi",
+              "es": "9"
+            },
+            {
+              "eu": "hiru",
+              "es": "3"
+            },
+            {
+              "eu": "hamar",
+              "es": "10"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "lau",
+              "es": "4"
+            },
+            {
+              "eu": "zazpi",
+              "es": "7"
+            },
+            {
+              "eu": "bederatzi",
+              "es": "9"
+            },
+            {
+              "eu": "bost",
+              "es": "5"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "bat",
+              "es": "1"
+            },
+            {
+              "eu": "bi",
+              "es": "2"
+            },
+            {
+              "eu": "sei",
+              "es": "6"
+            },
+            {
+              "eu": "zortzi",
+              "es": "8"
+            }
+          ]
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u5-g02",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "hamabi",
+              "es": "12"
+            },
+            {
+              "eu": "hamabost",
+              "es": "15"
+            },
+            {
+              "eu": "hemezortzi",
+              "es": "18"
+            },
+            {
+              "eu": "hogei",
+              "es": "20"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "hamaika",
+              "es": "11"
+            },
+            {
+              "eu": "hamahiru",
+              "es": "13"
+            },
+            {
+              "eu": "hamasei",
+              "es": "16"
+            },
+            {
+              "eu": "hemeretzi",
+              "es": "19"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "hamalau",
+              "es": "14"
+            },
+            {
+              "eu": "hamazazpi",
+              "es": "17"
+            },
+            {
+              "eu": "hemezortzi",
+              "es": "18"
+            },
+            {
+              "eu": "hamaika",
+              "es": "11"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "hamahiru",
+              "es": "13"
+            },
+            {
+              "eu": "hamabost",
+              "es": "15"
+            },
+            {
+              "eu": "hemeretzi",
+              "es": "19"
+            },
+            {
+              "eu": "hogei",
+              "es": "20"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los números",
+          "pares": [
+            {
+              "eu": "hamabi",
+              "es": "12"
+            },
+            {
+              "eu": "hamalau",
+              "es": "14"
+            },
+            {
+              "eu": "hamasei",
+              "es": "16"
+            },
+            {
+              "eu": "hamazazpi",
+              "es": "17"
+            }
+          ]
+        }
+      ],
+      "subnivel": "4.1"
+    },
+    {
+      "id": "u5-g03",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice «11»?",
+          "opciones": [
+            "hamabat",
+            "hamaika",
+            "hamar bat",
+            "hamabi"
+          ],
+          "correcta": 1,
+          "explicacion": "«Hamaika» es irregular: no sigue el patrón hama- + número."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En cuál de estos cambia la vocal del prefijo?",
+          "opciones": [
+            "hamabi",
+            "hamalau",
+            "hemeretzi",
+            "hamasei"
+          ],
+          "correcta": 2,
+          "explicacion": "En 18 y 19 el «hama-» suena «heme-»: hemezortzi, hemeretzi. Los números que hay debajo son los de siempre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si «hamar» es 10 y «lau» es 4, ¿cómo se dice 14?",
+          "opciones": [
+            "hamarlau",
+            "hamalau",
+            "lauhamar",
+            "hemelau"
+          ],
+          "correcta": 1,
+          "explicacion": "El «hamar» pierde la -r: hama + lau."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«hemezortzi» (18) se compone de «hamar» (10) y «zortzi» (8). ¿Qué le pasa al «hama-»?",
+          "opciones": [
+            "Se queda igual",
+            "Suena «heme-»",
+            "Desaparece",
+            "Se pone detrás"
+          ],
+          "correcta": 1,
+          "explicacion": "Los números son los mismos que en el resto de la serie. Lo único distinto es la vocal del prefijo: «heme-» en lugar de «hama-»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El euskera cuenta en base…",
+          "opciones": [
+            "diez",
+            "doce",
+            "veinte",
+            "cinco"
+          ],
+          "correcta": 2,
+          "explicacion": "Base veinte: berrogei (40) es «dos veintes», laurogei (80) «cuatro veintes»."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u5-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nik txakurra ____.",
+          "opciones": [
+            "naiz",
+            "dut",
+            "da",
+            "ditut"
+          ],
+          "correcta": 1,
+          "explicacion": "«Nik» + un objeto en singular («txakurra») → «dut»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hark etxe bat ____.",
+          "opciones": [
+            "du",
+            "dut",
+            "da",
+            "ditu"
+          ],
+          "correcta": 0,
+          "explicacion": "«Hark» + objeto singular → «du»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Guk katu bat ____.",
+          "opciones": [
+            "dugu",
+            "ditugu",
+            "gara",
+            "dute"
+          ],
+          "correcta": 0,
+          "explicacion": "«Guk» + objeto singular → «dugu»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zuk laguna ____.",
+          "opciones": [
+            "zara",
+            "duzu",
+            "dituzu",
+            "du"
+          ],
+          "correcta": 1,
+          "explicacion": "«Zuk» + objeto singular → «duzu»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek etxe bat ____.",
+          "opciones": [
+            "dira",
+            "dute",
+            "dituzte",
+            "du"
+          ],
+          "correcta": 1,
+          "explicacion": "«Haiek» + objeto singular → «dute»."
+        }
+      ],
+      "subnivel": "4.8"
+    },
+    {
+      "id": "u5-g05",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nik hiru katu ____.",
+          "opciones": [
+            "dut",
+            "ditut",
+            "naiz",
+            "dira"
+          ],
+          "correcta": 1,
+          "explicacion": "Son tres gatos, objeto plural: entra la -it- de «ditut»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek bi etxe ____.",
+          "opciones": [
+            "dute",
+            "dituzte",
+            "dira",
+            "ditugu"
+          ],
+          "correcta": 1,
+          "explicacion": "«Haiek» + objeto plural («bi etxe») → «dituzte»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué cambia entre «katu bat dut» y «bi katu ditut»?",
+          "opciones": [
+            "El nombre",
+            "El verbo",
+            "Los dos",
+            "Ninguno"
+          ],
+          "correcta": 1,
+          "explicacion": "El nombre «katu» no se pluraliza; lo que marca el plural es el verbo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Guk lau lagun ____.",
+          "opciones": [
+            "dugu",
+            "ditugu",
+            "gara",
+            "dituzue"
+          ],
+          "correcta": 1,
+          "explicacion": "«Guk» + objeto plural → «ditugu»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué sílaba marca el objeto plural en el verbo?",
+          "opciones": [
+            "-te-",
+            "-it-",
+            "-zu-",
+            "-gu-"
+          ],
+          "correcta": 1,
+          "explicacion": "dut → ditut, dugu → ditugu, du → ditu."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u5-g06",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En cuál de estas frases el sujeto lleva -k?",
+          "opciones": [
+            "___ ikaslea naiz.",
+            "___ Bilbokoa naiz.",
+            "___ bi anaia ditut.",
+            "___ oso ondo nago."
+          ],
+          "correcta": 2,
+          "explicacion": "Solo cuando el verbo tiene complemento directo el sujeto lleva -k: «Nik bi anaia ditut»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Por qué se dice «Nik txakurra dut» pero «Ni ikaslea naiz»?",
+          "opciones": [
+            "Por costumbre",
+            "Porque «tener» lleva complemento directo y «ser» no",
+            "Porque «txakurra» es masculino",
+            "Porque son frases de distinta longitud"
+          ],
+          "correcta": 1,
+          "explicacion": "El ergativo -k aparece cuando el verbo tiene objeto directo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas frases tiene el sujeto mal marcado?",
+          "opciones": [
+            "Nik bi katu ditut.",
+            "Ni medikua naiz.",
+            "Ni hiru anaia ditut.",
+            "Hark etxea du."
+          ],
+          "correcta": 2,
+          "explicacion": "Debería ser «Nik hiru anaia ditut»: hay complemento directo, así que toca ergativo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se llama esa marca «-k» del sujeto?",
+          "opciones": [
+            "Genitivo",
+            "Ergativo",
+            "Locativo",
+            "Dativo"
+          ],
+          "correcta": 1,
+          "explicacion": "El caso ergativo. Es la seña de identidad gramatical del euskera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hark» es la forma ergativa de…",
+          "opciones": [
+            "haiek",
+            "hura",
+            "gu",
+            "zu"
+          ],
+          "correcta": 1,
+          "explicacion": "hura → hark, igual que ni → nik y zu → zuk."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u5-g07",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Tengo veinte años.",
+          "eu": "Hogei urte ditut.",
+          "palabras": [
+            "Hogei",
+            "urte",
+            "ditut."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Tengo dieciocho años.",
+          "eu": "Hemezortzi urte ditut.",
+          "palabras": [
+            "Hemezortzi",
+            "urte",
+            "ditut."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ella tiene doce años.",
+          "eu": "Hark hamabi urte ditu.",
+          "palabras": [
+            "Hark",
+            "hamabi",
+            "urte",
+            "ditu."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Tengo quince años.",
+          "eu": "Hamabost urte ditut.",
+          "palabras": [
+            "Hamabost",
+            "urte",
+            "ditut."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Tú tienes diez años.",
+          "eu": "Zuk hamar urte dituzu.",
+          "palabras": [
+            "Zuk",
+            "hamar",
+            "urte",
+            "dituzu."
+          ]
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u5-g08",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Cuántos años tienes?",
+          "eu": "Zenbat urte dituzu?",
+          "palabras": [
+            "Zenbat",
+            "urte",
+            "dituzu?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Yo tengo dos hermanas.",
+          "eu": "Nik bi ahizpa ditut.",
+          "palabras": [
+            "Nik",
+            "bi",
+            "ahizpa",
+            "ditut."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Nosotros tenemos un gato.",
+          "eu": "Guk katu bat dugu.",
+          "palabras": [
+            "Guk",
+            "katu",
+            "bat",
+            "dugu."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Yo tengo un perro.",
+          "eu": "Nik txakur bat dut.",
+          "palabras": [
+            "Nik",
+            "txakur",
+            "bat",
+            "dut."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ellos tienen tres hijos.",
+          "eu": "Haiek hiru seme dituzte.",
+          "palabras": [
+            "Haiek",
+            "hiru",
+            "seme",
+            "dituzte."
+          ]
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u5-g09",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo un perro.",
+          "respuestas": [
+            "nik txakur bat dut",
+            "txakur bat dut",
+            "nik txakurra dut",
+            "txakurra dut"
+          ],
+          "pista": "«un perro» es «txakur bat»: el número va detrás y el nombre pierde el artículo. También vale «txakurra dut» (tengo perro)."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo dos gatos.",
+          "respuestas": [
+            "nik bi katu ditut",
+            "bi katu ditut"
+          ],
+          "pista": "Objeto plural → «ditut». El nombre no se pluraliza."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ella tiene un hermano.",
+          "respuestas": [
+            "hark neba bat du",
+            "hark anaia bat du",
+            "neba bat du",
+            "anaia bat du",
+            "berak neba bat du",
+            "berak anaia bat du"
+          ],
+          "pista": "El hermano de una chica es «neba»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tenemos una casa.",
+          "respuestas": [
+            "guk etxe bat dugu",
+            "etxe bat dugu",
+            "guk etxea dugu",
+            "etxea dugu"
+          ],
+          "pista": "«una casa» = «etxe bat». «Guk» con -k, y objeto singular → «dugu»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo tres amigos.",
+          "respuestas": [
+            "nik hiru lagun ditut",
+            "hiru lagun ditut"
+          ],
+          "pista": "Detrás de un número, el sustantivo va sin artículo."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u5-g10",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo quince años.",
+          "respuestas": [
+            "hamabost urte ditut",
+            "nik hamabost urte ditut"
+          ],
+          "pista": "Los años van en plural: «ditut»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo veinte años.",
+          "respuestas": [
+            "hogei urte ditut",
+            "nik hogei urte ditut"
+          ],
+          "pista": "«urte» va en singular detrás del número."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Cuántos años tienes?",
+          "respuestas": [
+            "zenbat urte dituzu",
+            "zenbat urte dituzu?"
+          ],
+          "pista": "Empieza por «zenbat»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo doce años.",
+          "respuestas": [
+            "hamabi urte ditut",
+            "nik hamabi urte ditut"
+          ],
+          "pista": "hamar + bi."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ella tiene dieciocho años.",
+          "respuestas": [
+            "hark hemezortzi urte ditu",
+            "hemezortzi urte ditu",
+            "berak hemezortzi urte ditu"
+          ],
+          "pista": "Diez y ocho, pero con el prefijo en «heme-»."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u5-g11",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ane es una chica y habla de su hermana. ¿Qué palabra usa?",
+          "opciones": [
+            "arreba",
+            "ahizpa",
+            "anaia",
+            "neba"
+          ],
+          "correcta": 1,
+          "explicacion": "Una chica dice «ahizpa» para su hermana. Un chico diría «arreba»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ane es una chica y habla de su hermano. ¿Qué palabra usa?",
+          "opciones": [
+            "anaia",
+            "neba",
+            "arreba",
+            "ahizpa"
+          ],
+          "correcta": 1,
+          "explicacion": "Una chica dice «neba». Un chico diría «anaia»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿De qué depende que se diga «anaia» o «neba»?",
+          "opciones": [
+            "De la edad del hermano",
+            "Del sexo de quien tiene ese hermano",
+            "Del dialecto",
+            "De si es mayor o menor"
+          ],
+          "correcta": 1,
+          "explicacion": "Depende del sexo de quien tiene el hermano: «anaia» si es un chico, «neba» si es una chica."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Mikel es un chico y habla de su hermana. ¿Qué palabra usa?",
+          "opciones": [
+            "arreba",
+            "ahizpa",
+            "neba",
+            "alaba"
+          ],
+          "correcta": 0,
+          "explicacion": "Un chico dice «arreba». Una chica diría «ahizpa»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Mikel es un chico y habla de su hermano. ¿Qué palabra usa?",
+          "opciones": [
+            "neba",
+            "ahizpa",
+            "anaia",
+            "arreba"
+          ],
+          "correcta": 2,
+          "explicacion": "Un chico dice «anaia». Una chica diría «neba»."
+        }
+      ],
+      "subnivel": "4.6"
+    },
+    {
+      "id": "u5-g12",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "aita",
+              "es": "padre"
+            },
+            {
+              "eu": "ama",
+              "es": "madre"
+            },
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "semea",
+              "es": "el hijo"
+            },
+            {
+              "eu": "alaba",
+              "es": "la hija"
+            },
+            {
+              "eu": "aita",
+              "es": "padre"
+            },
+            {
+              "eu": "ama",
+              "es": "madre"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los hermanos",
+          "pares": [
+            {
+              "eu": "anaia",
+              "es": "hermano (de un chico)"
+            },
+            {
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
+            },
+            {
+              "eu": "neba",
+              "es": "hermano (de una chica)"
+            },
+            {
+              "eu": "ahizpa",
+              "es": "hermana (de una chica)"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el batua con el bizkaiera",
+          "pares": [
+            {
+              "eu": "dut",
+              "es": "dot"
+            },
+            {
+              "eu": "du",
+              "es": "dau"
+            },
+            {
+              "eu": "dugu",
+              "es": "dogu"
+            },
+            {
+              "eu": "dute",
+              "es": "dabe"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada forma ergativa con su pronombre",
+          "pares": [
+            {
+              "eu": "nik",
+              "es": "ni"
+            },
+            {
+              "eu": "zuk",
+              "es": "zu"
+            },
+            {
+              "eu": "hark",
+              "es": "hura"
+            },
+            {
+              "eu": "guk",
+              "es": "gu"
+            }
+          ]
+        }
+      ],
+      "subnivel": "4.6"
+    },
+    {
+      "id": "u5.1-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "aitona",
+              "es": "el abuelo"
+            },
+            {
+              "eu": "amona",
+              "es": "la abuela"
+            },
+            {
+              "eu": "osaba",
+              "es": "el tío"
+            },
+            {
+              "eu": "izeba",
+              "es": "la tía"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "senarra",
+              "es": "el marido"
+            },
+            {
+              "eu": "emaztea",
+              "es": "la mujer"
+            },
+            {
+              "eu": "lehengusua",
+              "es": "el primo"
+            },
+            {
+              "eu": "lehengusina",
+              "es": "la prima"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "aitite",
+              "es": "el abuelo (bizkaiera)"
+            },
+            {
+              "eu": "amama",
+              "es": "la abuela (bizkaiera)"
+            },
+            {
+              "eu": "mutil-laguna",
+              "es": "el novio"
+            },
+            {
+              "eu": "neska-laguna",
+              "es": "la novia"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "iloba",
+              "es": "el sobrino / el nieto"
+            },
+            {
+              "eu": "biloba",
+              "es": "el nieto"
+            },
+            {
+              "eu": "semea",
+              "es": "el hijo"
+            },
+            {
+              "eu": "alaba",
+              "es": "la hija"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia",
+          "pares": [
+            {
+              "eu": "anaia",
+              "es": "hermano (de un chico)"
+            },
+            {
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
+            },
+            {
+              "eu": "osaba",
+              "es": "el tío"
+            },
+            {
+              "eu": "izeba",
+              "es": "la tía"
+            }
+          ]
+        }
+      ],
+      "subnivel": "4.7"
+    },
+    {
+      "id": "u5.1-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «iloba»?",
+          "opciones": [
+            "solo el sobrino",
+            "el sobrino o el nieto",
+            "solo el nieto",
+            "el primo"
+          ],
+          "correcta": 1,
+          "explicacion": "Vale para las dos cosas: el contexto decide."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si quieres decir «nieto» sin que haya duda, ¿qué palabra usas?",
+          "opciones": [
+            "iloba",
+            "biloba",
+            "loba",
+            "lehengusua"
+          ],
+          "correcta": 1,
+          "explicacion": "«Biloba» es solo nieto. «Iloba» y «loba» son las ambiguas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Loba» es…",
+          "opciones": [
+            "un animal",
+            "lo mismo que «iloba», en bizkaiera",
+            "el primo",
+            "el abuelo"
+          ],
+          "correcta": 1,
+          "explicacion": "Misma palabra sin la i- inicial, y con la misma doble lectura."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «mutil-laguna»?",
+          "opciones": [
+            "solo el novio",
+            "el novio, o un amigo chico",
+            "el hermano",
+            "el hijo"
+          ],
+          "correcta": 1,
+          "explicacion": "Ambigua, como el «boyfriend» del inglés."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Aitite» y «aitxitxe» significan…",
+          "opciones": [
+            "el abuelo",
+            "la abuela",
+            "el tío",
+            "el padre"
+          ],
+          "correcta": 0,
+          "explicacion": "Las dos formas vizcaínas de «aitona»."
+        }
+      ],
+      "subnivel": "4.7"
+    },
+    {
+      "id": "u5.1-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            },
+            {
+              "eu": "untxia",
+              "es": "el conejo"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "untxia",
+              "es": "el conejo"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            },
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            }
+          ]
+        }
+      ],
+      "subnivel": "4.7"
+    },
+    {
+      "id": "u5.1-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «behia»?",
+          "opciones": [
+            "la oveja",
+            "la vaca",
+            "la gallina",
+            "el caballo"
+          ],
+          "correcta": 1,
+          "explicacion": "Behia es la vaca."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «ardia»?",
+          "opciones": [
+            "la vaca",
+            "la oveja",
+            "el cerdo",
+            "el conejo"
+          ],
+          "correcta": 1,
+          "explicacion": "Ardia es la oveja."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «sagua»?",
+          "opciones": [
+            "el ratón",
+            "el pájaro",
+            "el gato",
+            "el conejo"
+          ],
+          "correcta": 0,
+          "explicacion": "Sagua es el ratón. Ojo con «katua», que es el gato."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «oiloa»?",
+          "opciones": [
+            "el pájaro",
+            "la gallina",
+            "la oveja",
+            "el cerdo"
+          ],
+          "correcta": 1,
+          "explicacion": "Oiloa es la gallina. «Txoria» es el pájaro en general."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué animal es «untxia»?",
+          "opciones": [
+            "el conejo",
+            "el ratón",
+            "el cerdo",
+            "la vaca"
+          ],
+          "correcta": 0,
+          "explicacion": "Untxia es el conejo."
+        }
+      ],
+      "subnivel": "test"
+    },
+    {
+      "id": "u5.1-g05",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «berrogei»?",
+          "opciones": [
+            "veinte",
+            "cuarenta",
+            "sesenta",
+            "ochenta"
+          ],
+          "correcta": 1,
+          "explicacion": "Dos veintes: berrogei."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «hirurogei»?",
+          "opciones": [
+            "treinta",
+            "cuarenta",
+            "sesenta",
+            "setenta"
+          ],
+          "correcta": 2,
+          "explicacion": "Tres veintes: hirurogei."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «hogeita hamar»?",
+          "opciones": [
+            "treinta",
+            "veinte",
+            "cincuenta",
+            "cien"
+          ],
+          "correcta": 0,
+          "explicacion": "Veinte y diez: treinta."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «laurogei»?",
+          "opciones": [
+            "cuarenta",
+            "sesenta",
+            "ochenta",
+            "cien"
+          ],
+          "correcta": 2,
+          "explicacion": "Cuatro veintes: laurogei."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuánto es «ehun»?",
+          "opciones": [
+            "diez",
+            "cien",
+            "mil",
+            "noventa"
+          ],
+          "correcta": 1,
+          "explicacion": "Ehun es cien. «Mila» es mil."
+        }
+      ],
+      "subnivel": "4.2"
+    },
+    {
+      "id": "u5.1-g06",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo cuarenta años.",
+          "respuestas": [
+            "berrogei urte ditut",
+            "nik berrogei urte ditut"
+          ],
+          "pista": "Empieza por el número."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo dos primos.",
+          "respuestas": [
+            "bi lehengusu ditut",
+            "nik bi lehengusu ditut"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mi abuelo vive en Bilbao.",
+          "eu": "Nire aitona Bilbon bizi da.",
+          "palabras": [
+            "Nire",
+            "aitona",
+            "Bilbon",
+            "bizi",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Las vacas están en el monte.",
+          "eu": "Behiak mendian daude.",
+          "palabras": [
+            "Behiak",
+            "mendian",
+            "daude."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Su mujer es profesora.",
+          "eu": "Haren emaztea irakaslea da.",
+          "palabras": [
+            "Haren",
+            "emaztea",
+            "irakaslea",
+            "da."
+          ]
+        }
+      ],
+      "subnivel": "test"
+    }
+  ]
+}

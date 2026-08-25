@@ -1,0 +1,1962 @@
+{
+  "id": "u5",
+  "numero": 5,
+  "titulo": "Etxea",
+  "subtitulo": "Estar, la casa y describirla",
+  "objetivo": "Decir dónde estás y describir tu casa con colores y adjetivos.",
+  "color": "ocre",
+  "subniveles": [
+    {
+      "id": "5.1",
+      "titulo": "El verbo «egon» y el sitio",
+      "resumen": "Estar, y el -n de «en»."
+    },
+    {
+      "id": "5.2",
+      "titulo": "La casa por dentro",
+      "resumen": "Habitaciones y muebles. Y el patrón -gela."
+    },
+    {
+      "id": "5.3",
+      "titulo": "Los colores",
+      "resumen": "Adjetivos, y van donde van los adjetivos."
+    },
+    {
+      "id": "5.4",
+      "titulo": "«Una» se dice con «bat»",
+      "resumen": "Etxe gorria frente a etxe gorri bat."
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "El verbo «egon» (estar) en presente",
+      "cuerpo": "El euskera distingue <b>ser</b> (izan) de <b>estar</b> (egon), igual que el castellano:\n\n<b>ni nago</b> — yo estoy\n<b>zu zaude</b> — tú estás\n<b>hura dago</b> — él/ella está\n<b>gu gaude</b> — nosotros estamos\n<b>zuek zaudete</b> — vosotros estáis\n<b>haiek daude</b> — ellos están\n\nFíjate en que el sujeto <b>no lleva -k</b>. «Estar» no tiene complemento directo, así que se comporta como «ser»: <i>ni nago</i>, no «nik nago».\n\nSe usa para ubicación y para estados pasajeros, más o menos como en castellano.",
+      "ejemplos": [
+        {
+          "eu": "Ni etxean nago.",
+          "es": "Estoy en casa.",
+          "audio": "unidades/u6/ni-etxean-nago.mp3"
+        },
+        {
+          "eu": "Non zaude?",
+          "es": "¿Dónde estás?",
+          "audio": "unidades/u6/non-zaude.mp3"
+        },
+        {
+          "eu": "Oso ondo nago.",
+          "es": "Estoy muy bien.",
+          "audio": "unidades/u6/oso-ondo-nago.mp3"
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "titulo": "«En» se dice con -n al final",
+      "cuerpo": "Lo anticipamos en la unidad de preguntas: <b>Non?</b> se responde con <b>-n</b>. Aquí van los detalles.\n\nEl euskera no tiene preposiciones delante: pone sufijos detrás. El <b>-n</b> va después del artículo:\n\n<b>etxea</b> (la casa) → <b>etxean</b> (en la casa)\n<b>eskola</b> (la escuela) → <b>eskolan</b>\n<b>kalea</b> (la calle) → <b>kalean</b>\n\nCon nombres de lugar, se añade <b>-n</b> directamente si acaba en vocal:\n\n<b>Bilbo</b> → <b>Bilbon</b>\n<b>Gernika</b> → <b>Gernikan</b>\n\nSi acaba en consonante, se intercala una -e-: <b>Gasteiz</b> → <b>Gasteizen</b>.",
+      "ejemplos": [
+        {
+          "eu": "Bilbon bizi naiz.",
+          "es": "Vivo en Bilbao.",
+          "audio": "unidades/u6/bilbon-bizi-naiz.mp3"
+        },
+        {
+          "eu": "Lanean nago.",
+          "es": "Estoy en el trabajo.",
+          "audio": "unidades/u6/lanean-nago.mp3"
+        },
+        {
+          "eu": "Sukaldean dago.",
+          "es": "Está en la cocina.",
+          "audio": "unidades/u6/sukaldean-dago.mp3"
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "titulo": "Las cuatro preguntas de lugar, completas",
+      "cuerpo": "Ahora ya puedes cerrar el cuadro que empezaste en la tercera unidad:\n\n<b>Non?</b> (¿dónde?) → <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\nCuatro preguntas, cuatro sufijos, y la respuesta lleva siempre la misma cola que la pregunta.\n\nEste sistema de sufijos que encajan unos con otros es el corazón del euskera. Cuando llegues a los casos que faltan (a quién, con quién, para quién), ya sabrás cómo funciona el mecanismo.",
+      "ejemplos": [
+        {
+          "eu": "Non zaude? — Etxean nago.",
+          "es": "¿Dónde estás? — Estoy en casa.",
+          "audio": "unidades/u6/non-zaude-etxean-nago.mp3"
+        },
+        {
+          "eu": "Nongoa zara? — Bilbokoa naiz.",
+          "es": "¿De dónde eres? — Soy de Bilbao.",
+          "audio": "unidades/u6/nongoa-zara-bilbokoa-naiz.mp3"
+        },
+        {
+          "eu": "Nora zoaz? — Bilbora.",
+          "es": "¿Adónde vas? — A Bilbao.",
+          "audio": "unidades/u6/nora-zoaz-bilbora.mp3"
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "titulo": "Adjetivos: detrás, y con el artículo al final",
+      "cuerpo": "Ya lo viste en la primera unidad y con los posesivos. Aquí queda del todo:\n\n<b>etxe</b> + <b>handi</b> + <b>-a</b> → <b>etxe handia</b> (la casa grande)\n<b>gela</b> + <b>txiki</b> + <b>-a</b> → <b>gela txikia</b>\n\nNo se dice «etxea handia». <b>El artículo aparece una sola vez, al final del grupo.</b>\n\nY si además hay posesivo, va delante de todo:\n\n<b>nire etxe handia</b> — mi casa grande",
+      "ejemplos": [
+        {
+          "eu": "etxe handia",
+          "es": "la casa grande",
+          "audio": "unidades/u6/etxe-handia.mp3"
+        },
+        {
+          "eu": "logela txikia",
+          "es": "el dormitorio pequeño",
+          "audio": "unidades/u6/logela-txikia.mp3"
+        },
+        {
+          "eu": "nire herri polita",
+          "es": "mi pueblo bonito",
+          "audio": "unidades/u6/nire-herri-polita.mp3"
+        }
+      ],
+      "subnivel": "5.3"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "<b>egon en bizkaiera</b>\n\n<b>ni nago</b> — igual que en batua\n<b>zu zagoz</b> — batua: zaude\n<b>hura dago</b> — igual\n<b>gu gagoz</b> — gaude\n<b>zuek zagoze</b> — zaudete\n<b>haiek dagoz</b> — daude\n\nOtra vez esa <b>-z</b> del plural que ya viste en <i>doguz</i>. Es un rasgo sistemático del bizkaiera, no un capricho suelto.\n\nAsí que «¿dónde estás?» en Bilbao es <b>Non zagoz?</b>\n\n<b>Zelan y zelango</b>\nAl <i>zelan</i> (cómo) se le añade el mismo <i>-ko</i> que a los lugares: <b>zelango</b> = «de qué tipo». Donde el batua dice <i>nolako etxea?</i>, el bizkaiera dice <b>zelango etxea?</b>",
+      "ejemplos": [
+        {
+          "eu": "Non zagoz?",
+          "es": "¿Dónde estás? (bizkaiera) — batua: Non zaude?",
+          "audio": "unidades/u6/non-zagoz.mp3"
+        },
+        {
+          "eu": "Zelango etxea da?",
+          "es": "¿De qué tipo de casa es? — batua cambia «zelango» por «nolako».",
+          "audio": "unidades/u6/zelango-etxea-da.mp3"
+        },
+        {
+          "eu": "Haiek tabernan dagoz.",
+          "es": "Ellos están en el bar. — batua: daude.",
+          "audio": "unidades/u6/haiek-tabernan-dagoz.mp3"
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
+      "titulo": "Los colores van donde van los adjetivos",
+      "cuerpo": "Nada nuevo, en realidad: los colores son adjetivos y se colocan igual que <i>handi</i> o <i>txiki</i>, que ya viste en esta unidad. Detrás del sustantivo, y con el artículo al final del grupo:\n\n<b>etxe</b> + <b>gorri</b> + <b>-a</b> → <b>etxe gorria</b> (la casa roja)\n<b>mahai</b> + <b>zuri</b> + <b>-a</b> → <b>mahai zuria</b> (la mesa blanca)\n\nFíjate en que el color pierde su <i>-a</i> de diccionario cuando va acompañando: no es «etxe gorriaa», el artículo se pone una vez y punto.\n\nY con posesivo delante, como siempre:\n\n<b>Nire logela urdina da.</b> — Mi habitación es azul.",
+      "ejemplos": [
+        {
+          "eu": "etxe gorria",
+          "es": "la casa roja"
+        },
+        {
+          "eu": "mahai zuria",
+          "es": "la mesa blanca"
+        },
+        {
+          "eu": "Nire logela urdina da.",
+          "es": "Mi habitación es azul."
+        }
+      ],
+      "subnivel": "5.3"
+    },
+    {
+      "titulo": "Para decir «una» hace falta «bat»",
+      "cuerpo": "Este es un tropiezo clásico viniendo del castellano. Mira las dos:\n\n<b>mahai zuria</b> — <i>la</i> mesa blanca\n<b>mahai zuri bat</b> — <i>una</i> mesa blanca\n\nEl <b>-a</b> del final es «el/la». Si quieres decir «un» o «una», se quita ese artículo y se pone <b>bat</b> detrás de todo.\n\nY ojo cuando hay dos cosas: cada una lleva su <i>bat</i>.\n\n<b>Mahai zuria eta aulki beltza.</b> — La mesa blanca y la silla negra.\n<b>Mahai zuri bat eta aulki beltz bat.</b> — Una mesa blanca y una silla negra.",
+      "ejemplos": [
+        {
+          "eu": "mahai zuria",
+          "es": "la mesa blanca"
+        },
+        {
+          "eu": "mahai zuri bat",
+          "es": "una mesa blanca"
+        },
+        {
+          "eu": "Mahai zuria eta aulki beltza.",
+          "es": "La mesa blanca y la silla negra."
+        }
+      ],
+      "subnivel": "5.4"
+    },
+    {
+      "titulo": "«Laranja» es la fruta y el color",
+      "cuerpo": "Como en castellano, que también usamos «naranja» para las dos cosas.\n\n<b>laranja</b> — la naranja (la fruta), y también naranja (el color)\n\nNo hay truco ni palabra aparte que aprender: el contexto lo resuelve solo, igual que en castellano nadie confunde «me como una naranja» con «una camisa naranja».",
+      "ejemplos": [
+        {
+          "eu": "laranja",
+          "es": "la naranja / naranja"
+        }
+      ],
+      "subnivel": "5.3"
+    },
+    {
+      "titulo": "Las habitaciones acaban casi todas en -gela",
+      "cuerpo": "Ya conoces <b>gela</b> (la habitación, el aula) y <b>logela</b> (el dormitorio). Pues el patrón sigue, y una vez lo ves te ahorras memorizar:\n\n<b>lo</b> (dormir) + gela → <b>logela</b>, el dormitorio\n<b>jan</b> (comer) + gela → <b>jangela</b>, el comedor\n<b>egon</b> (estar) + gela → <b>egongela</b>, el salón — literalmente «la habitación de estar»\n<b>bainu</b> (baño) + gela → <b>bainugela</b>, el cuarto de baño\n\nTres de esas cuatro piezas ya las tenías de antes: <i>jan</i> y <i>egon</i> son verbos que llevas usando desde las unidades 6 y 8.",
+      "ejemplos": [
+        {
+          "eu": "logela",
+          "es": "el dormitorio"
+        },
+        {
+          "eu": "jangela",
+          "es": "el comedor"
+        },
+        {
+          "eu": "egongela",
+          "es": "el salón"
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "Dos detalles que se oyen mucho por aquí.\n\nEl color rojo, <b>gorria</b>, no cambia. Pero <b>urdina</b> (azul) cubre en euskera un rango más amplio que el «azul» castellano: tradicionalmente sirve también para lo que llamaríamos gris o verde grisáceo, sobre todo hablando del mar o del cielo.\n\nY sobre la casa: para el salón oirás también <b>sala</b>, tomado del castellano y muy usado en el habla de todos los días, aunque <i>egongela</i> es lo normativo.",
+      "ejemplos": [
+        {
+          "eu": "etxe gorria",
+          "es": "la casa roja"
+        },
+        {
+          "eu": "egongela",
+          "es": "el salón"
+        }
+      ],
+      "subnivel": "5.2"
+    }
+  ],
+  "vocabulario": [
+    {
+      "eu": "etxea",
+      "es": "la casa",
+      "nota": null,
+      "audio": "unidades/u2/etxea.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "handia",
+      "es": "grande",
+      "nota": null,
+      "audio": "unidades/u2/handia.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "5.3"
+    },
+    {
+      "eu": "txikia",
+      "es": "pequeño/a",
+      "nota": null,
+      "audio": "unidades/u2/txikia.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "5.3"
+    },
+    {
+      "eu": "polita",
+      "es": "bonito/a",
+      "nota": null,
+      "audio": "unidades/u2/polita.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "5.3"
+    },
+    {
+      "eu": "nago",
+      "es": "(yo) estoy",
+      "nota": null,
+      "audio": "unidades/u6/nago.mp3",
+      "categoria": "verbo",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "zaude",
+      "es": "(tú) estás",
+      "nota": null,
+      "audio": "unidades/u6/zaude.mp3",
+      "categoria": "verbo",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "dago",
+      "es": "(él/ella) está",
+      "nota": null,
+      "audio": "unidades/u6/dago.mp3",
+      "categoria": "verbo",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "daude",
+      "es": "(ellos) están",
+      "nota": null,
+      "audio": "unidades/u6/daude.mp3",
+      "categoria": "verbo",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "gela",
+      "es": "la habitación / el aula",
+      "nota": null,
+      "audio": "unidades/u6/gela.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "logela",
+      "es": "el dormitorio",
+      "nota": "De «lo» (sueño) + «gela» (habitación).",
+      "audio": "unidades/u6/logela.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "sukaldea",
+      "es": "la cocina",
+      "nota": "De «su» (fuego) + «alde» (zona).",
+      "audio": "unidades/u6/sukaldea.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "komuna",
+      "es": "el baño",
+      "nota": null,
+      "audio": "unidades/u6/komuna.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "atea",
+      "es": "la puerta",
+      "nota": null,
+      "audio": "unidades/u6/atea.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "leihoa",
+      "es": "la ventana",
+      "nota": null,
+      "audio": "unidades/u6/leihoa.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "mahaia",
+      "es": "la mesa",
+      "nota": null,
+      "audio": "unidades/u6/mahaia.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "aulkia",
+      "es": "la silla",
+      "nota": null,
+      "audio": "unidades/u6/aulkia.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "ohea",
+      "es": "la cama",
+      "nota": null,
+      "audio": "unidades/u6/ohea.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "hemen",
+      "es": "aquí",
+      "nota": null,
+      "audio": "unidades/u6/hemen.mp3",
+      "categoria": "otros",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "hor",
+      "es": "ahí",
+      "nota": null,
+      "audio": "unidades/u6/hor.mp3",
+      "categoria": "otros",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "han",
+      "es": "allí",
+      "nota": null,
+      "audio": "unidades/u6/han.mp3",
+      "categoria": "otros",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "berria",
+      "es": "nuevo/a",
+      "nota": "Como en «Bilbo Berria».",
+      "audio": "unidades/u6/berria.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "5.3"
+    },
+    {
+      "eu": "zaharra",
+      "es": "viejo/a",
+      "nota": "Como en «Parte Zaharra».",
+      "audio": "unidades/u6/zaharra.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "5.3"
+    },
+    {
+      "eu": "bizi naiz",
+      "es": "vivo",
+      "nota": "Frase hecha: «bizi» + el verbo «izan».",
+      "audio": "unidades/u6/bizi-naiz.mp3",
+      "categoria": "verbo",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "gorria",
+      "es": "rojo",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "urdina",
+      "es": "azul",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "horia",
+      "es": "amarillo",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "berdea",
+      "es": "verde",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "zuria",
+      "es": "blanco",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "beltza",
+      "es": "negro",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "grisa",
+      "es": "gris",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "marroia",
+      "es": "marrón",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "arrosa",
+      "es": "rosa",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "morea",
+      "es": "morado",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "laranja",
+      "es": "naranja",
+      "nota": "La misma palabra sirve para la fruta y para el color.",
+      "categoria": "adjetivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "egongela",
+      "es": "el salón",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "jangela",
+      "es": "el comedor",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "bainugela",
+      "es": "el cuarto de baño",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "sarrera",
+      "es": "la entrada",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "eskailerak",
+      "es": "las escaleras",
+      "nota": "Se usa en plural.",
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "igogailua",
+      "es": "el ascensor",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "balkoia",
+      "es": "el balcón",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "lorategia",
+      "es": "el jardín",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "garajea",
+      "es": "el garaje",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "armairua",
+      "es": "el armario",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "sofa",
+      "es": "el sofá",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "telebista",
+      "es": "la televisión",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "hozkailua",
+      "es": "la nevera",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "dutxa",
+      "es": "la ducha",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "ispilua",
+      "es": "el espejo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "argia",
+      "es": "la luz",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "horma",
+      "es": "la pared",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "teilatua",
+      "es": "el tejado",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.2"
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u6-g01",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni etxean ____.",
+          "opciones": [
+            "naiz",
+            "nago",
+            "dut",
+            "dago"
+          ],
+          "correcta": 1,
+          "explicacion": "Ubicación → «egon». Con «ni» va «nago»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zu tabernan ____.",
+          "opciones": [
+            "zara",
+            "zaude",
+            "dago",
+            "gaude"
+          ],
+          "correcta": 1,
+          "explicacion": "Con «zu» + «egon» va «zaude»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hura eskolan ____.",
+          "opciones": [
+            "da",
+            "dago",
+            "dut",
+            "daude"
+          ],
+          "correcta": 1,
+          "explicacion": "Ubicación → «egon». Con «hura» va «dago»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni oso ondo ____.",
+          "opciones": [
+            "naiz",
+            "nago",
+            "dut",
+            "gara"
+          ],
+          "correcta": 1,
+          "explicacion": "«Egon» también sirve para estados pasajeros, como en castellano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Bera kalean ____.",
+          "opciones": [
+            "da",
+            "dago",
+            "daude",
+            "nago"
+          ],
+          "correcta": 1,
+          "explicacion": "«Bera» equivale a «hura», así que el verbo es «dago»."
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "id": "u6-g02",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes de la casa",
+          "pares": [
+            {
+              "eu": "sukaldea",
+              "es": "la cocina"
+            },
+            {
+              "eu": "logela",
+              "es": "el dormitorio"
+            },
+            {
+              "eu": "komuna",
+              "es": "el baño"
+            },
+            {
+              "eu": "atea",
+              "es": "la puerta"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los muebles",
+          "pares": [
+            {
+              "eu": "mahaia",
+              "es": "la mesa"
+            },
+            {
+              "eu": "aulkia",
+              "es": "la silla"
+            },
+            {
+              "eu": "ohea",
+              "es": "la cama"
+            },
+            {
+              "eu": "leihoa",
+              "es": "la ventana"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada palabra con sus piezas",
+          "pares": [
+            {
+              "eu": "logela",
+              "es": "lo (sueño) + gela"
+            },
+            {
+              "eu": "sukaldea",
+              "es": "su (fuego) + alde"
+            },
+            {
+              "eu": "etxea",
+              "es": "etxe + artículo -a"
+            },
+            {
+              "eu": "atea",
+              "es": "ate + artículo -a"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las palabras de la casa",
+          "pares": [
+            {
+              "eu": "gela",
+              "es": "la habitación"
+            },
+            {
+              "eu": "ohea",
+              "es": "la cama"
+            },
+            {
+              "eu": "komuna",
+              "es": "el baño"
+            },
+            {
+              "eu": "leihoa",
+              "es": "la ventana"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los muebles y aperturas",
+          "pares": [
+            {
+              "eu": "atea",
+              "es": "la puerta"
+            },
+            {
+              "eu": "leihoa",
+              "es": "la ventana"
+            },
+            {
+              "eu": "mahaia",
+              "es": "la mesa"
+            },
+            {
+              "eu": "aulkia",
+              "es": "la silla"
+            }
+          ]
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
+      "id": "u6-g03",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice «en Bilbao»?",
+          "opciones": [
+            "Bilbokoa",
+            "Bilbon",
+            "Bilbora",
+            "Bilbotik"
+          ],
+          "correcta": 1,
+          "explicacion": "«-n» indica ubicación. «-koa» sería procedencia y «-ra» destino."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice «en Bilbao»?",
+          "opciones": [
+            "Bilbora",
+            "Bilbokoa",
+            "Bilbon",
+            "Bilbao"
+          ],
+          "correcta": 2,
+          "explicacion": "Acaba en vocal, así que se añade la -n directamente."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Gasteiz» acaba en consonante. ¿Cómo se dice «en Vitoria»?",
+          "opciones": [
+            "Gasteizn",
+            "Gasteizen",
+            "Gasteiza",
+            "Gasteizko"
+          ],
+          "correcta": 1,
+          "explicacion": "Tras consonante se intercala una -e-: Gasteiz + e + n."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Donostian» significa…",
+          "opciones": [
+            "De San Sebastián",
+            "En San Sebastián",
+            "A San Sebastián",
+            "Desde San Sebastián"
+          ],
+          "correcta": 1,
+          "explicacion": "Termina en -n: ubicación."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas frases significa «vivo en Bilbao»?",
+          "opciones": [
+            "Bilbokoa naiz.",
+            "Bilbon bizi naiz.",
+            "Bilbora noa.",
+            "Bilbotik nator."
+          ],
+          "correcta": 1,
+          "explicacion": "«Bizi naiz» es «vivo», y el lugar lleva el sufijo -n."
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "id": "u6-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Estoy en la cocina» se dice…",
+          "opciones": [
+            "Sukalde nago.",
+            "Sukaldean nago.",
+            "Sukaldekoa naiz.",
+            "Sukaldea nago."
+          ],
+          "correcta": 1,
+          "explicacion": "sukalde + a (artículo) + n (en) → sukaldean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Está en la calle» se dice…",
+          "opciones": [
+            "Kalean dago.",
+            "Kalea dago.",
+            "Kalekoa da.",
+            "Kalera dago."
+          ],
+          "correcta": 0,
+          "explicacion": "kale + a + n → kalean, y con «hura» el verbo es «dago»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En qué orden se montan los sufijos en «etxean»?",
+          "opciones": [
+            "raíz + n + a",
+            "raíz + a + n",
+            "raíz + ko + n",
+            "raíz + n solo"
+          ],
+          "correcta": 1,
+          "explicacion": "Primero el artículo, después el caso: etxe + a + n."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Estoy en el trabajo» se dice…",
+          "opciones": [
+            "Lan nago.",
+            "Lanean nago.",
+            "Lanekoa naiz.",
+            "Lanera nago."
+          ],
+          "correcta": 1,
+          "explicacion": "lan + a + n → lanean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Están en la escuela» se dice…",
+          "opciones": [
+            "Eskolan daude.",
+            "Eskola daude.",
+            "Eskolakoak dira.",
+            "Eskolara daude."
+          ],
+          "correcta": 0,
+          "explicacion": "Ubicación con -n, y «haiek» pide «daude»."
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "id": "u6-g05",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Dónde estás tú?",
+          "eu": "Non zaude zu?",
+          "palabras": [
+            "Non",
+            "zaude",
+            "zu?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Yo estoy en casa.",
+          "eu": "Ni etxean nago.",
+          "palabras": [
+            "Ni",
+            "etxean",
+            "nago."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ellos están en el bar.",
+          "eu": "Haiek tabernan daude.",
+          "palabras": [
+            "Haiek",
+            "tabernan",
+            "daude."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Vivo en Bilbao.",
+          "eu": "Bilbon bizi naiz.",
+          "palabras": [
+            "Bilbon",
+            "bizi",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ella está en la cocina.",
+          "eu": "Hura sukaldean dago.",
+          "palabras": [
+            "Hura",
+            "sukaldean",
+            "dago."
+          ]
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "id": "u6-g06",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«La casa grande» se dice…",
+          "opciones": [
+            "handia etxea",
+            "etxea handia",
+            "etxe handia",
+            "handi etxea"
+          ],
+          "correcta": 2,
+          "explicacion": "El adjetivo va detrás y el artículo -a se pega solo al adjetivo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El dormitorio pequeño» se dice…",
+          "opciones": [
+            "logela txikia",
+            "txiki logela",
+            "logelea txiki",
+            "txikia logela"
+          ],
+          "correcta": 0,
+          "explicacion": "Sustantivo, adjetivo, y el artículo al final del grupo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Por qué está mal «etxea handia»?",
+          "opciones": [
+            "El adjetivo va delante",
+            "El artículo aparece dos veces",
+            "«handia» no existe",
+            "Falta el verbo"
+          ],
+          "correcta": 1,
+          "explicacion": "El artículo -a se pone una sola vez, al final: «etxe handia»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«La ventana nueva» se dice…",
+          "opciones": [
+            "leiho berria",
+            "leihoa berria",
+            "berria leihoa",
+            "berri leihoa"
+          ],
+          "correcta": 0,
+          "explicacion": "El artículo -a se pega al adjetivo, no al sustantivo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuántas veces aparece el artículo -a en «etxe handia»?",
+          "opciones": [
+            "Ninguna",
+            "Una, al final del grupo",
+            "Dos, en cada palabra",
+            "Depende del adjetivo"
+          ],
+          "correcta": 1,
+          "explicacion": "Una sola vez, pegada al adjetivo. Por eso «etxe» va sin -a."
+        }
+      ],
+      "subnivel": "5.3"
+    },
+    {
+      "id": "u6-g07",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adjetivos",
+          "pares": [
+            {
+              "eu": "handia",
+              "es": "grande"
+            },
+            {
+              "eu": "txikia",
+              "es": "pequeño"
+            },
+            {
+              "eu": "berria",
+              "es": "nuevo"
+            },
+            {
+              "eu": "zaharra",
+              "es": "viejo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adverbios de lugar",
+          "pares": [
+            {
+              "eu": "hemen",
+              "es": "aquí"
+            },
+            {
+              "eu": "hor",
+              "es": "ahí"
+            },
+            {
+              "eu": "han",
+              "es": "allí"
+            },
+            {
+              "eu": "non",
+              "es": "dónde"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las palabras",
+          "pares": [
+            {
+              "eu": "polita",
+              "es": "bonito"
+            },
+            {
+              "eu": "zaharra",
+              "es": "viejo"
+            },
+            {
+              "eu": "herria",
+              "es": "el pueblo"
+            },
+            {
+              "eu": "kalea",
+              "es": "la calle"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los contrarios",
+          "pares": [
+            {
+              "eu": "handia",
+              "es": "≠ txikia"
+            },
+            {
+              "eu": "berria",
+              "es": "≠ zaharra"
+            },
+            {
+              "eu": "hemen",
+              "es": "≠ han"
+            },
+            {
+              "eu": "bai",
+              "es": "≠ ez"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las expresiones",
+          "pares": [
+            {
+              "eu": "etxe handia",
+              "es": "la casa grande"
+            },
+            {
+              "eu": "gela txikia",
+              "es": "la habitación pequeña"
+            },
+            {
+              "eu": "kale zaharra",
+              "es": "la calle vieja"
+            },
+            {
+              "eu": "herri polita",
+              "es": "el pueblo bonito"
+            }
+          ]
+        }
+      ],
+      "subnivel": "5.3"
+    },
+    {
+      "id": "u6-g08",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estoy en casa.",
+          "respuestas": [
+            "etxean nago",
+            "ni etxean nago"
+          ],
+          "pista": "etxe + a + n, y el verbo al final."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estoy en el trabajo.",
+          "respuestas": [
+            "lanean nago",
+            "ni lanean nago"
+          ],
+          "pista": "«lan» + a + n."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Vivo en Bilbao.",
+          "respuestas": [
+            "bilbon bizi naiz",
+            "ni bilbon bizi naiz"
+          ],
+          "pista": "«bizi naiz» es «vivo». El lugar va delante."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estoy en la cocina.",
+          "respuestas": [
+            "sukaldean nago",
+            "ni sukaldean nago"
+          ],
+          "pista": "sukalde + a + n."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estoy muy bien.",
+          "respuestas": [
+            "oso ondo nago",
+            "ni oso ondo nago"
+          ],
+          "pista": "Estado pasajero, así que «egon»."
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "id": "u6-g09",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek tabernan ____.",
+          "opciones": [
+            "dago",
+            "daude",
+            "dira",
+            "dute"
+          ],
+          "correcta": 1,
+          "explicacion": "Con «haiek» + egon → «daude»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Gu eskolan ____.",
+          "opciones": [
+            "gara",
+            "gaude",
+            "daude",
+            "nago"
+          ],
+          "correcta": 1,
+          "explicacion": "Ubicación → «egon». Con «gu» va «gaude»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zuek kalean ____.",
+          "opciones": [
+            "zarete",
+            "zaudete",
+            "daude",
+            "zaude"
+          ],
+          "correcta": 1,
+          "explicacion": "Con «zuek» + egon → «zaudete»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Lleva -k el sujeto con el verbo «egon»?",
+          "opciones": [
+            "Sí, siempre",
+            "No, porque no hay complemento directo",
+            "Solo en plural",
+            "Solo en preguntas"
+          ],
+          "correcta": 1,
+          "explicacion": "«Ni nago», no «nik nago». El ergativo solo aparece con objeto directo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas frases está mal?",
+          "opciones": [
+            "Ni etxean nago.",
+            "Nik etxean nago.",
+            "Hura kalean dago.",
+            "Gu lanean gaude."
+          ],
+          "correcta": 1,
+          "explicacion": "«Egon» no lleva objeto directo, así que el sujeto va sin -k."
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "id": "u6-g10",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mi casa es pequeña.",
+          "eu": "Nire etxea txikia da.",
+          "palabras": [
+            "Nire",
+            "etxea",
+            "txikia",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "La calle es vieja.",
+          "eu": "Kalea zaharra da.",
+          "palabras": [
+            "Kalea",
+            "zaharra",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mi pueblo es bonito.",
+          "eu": "Nire herria polita da.",
+          "palabras": [
+            "Nire",
+            "herria",
+            "polita",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Nuestra casa es grande.",
+          "eu": "Gure etxea handia da.",
+          "palabras": [
+            "Gure",
+            "etxea",
+            "handia",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "La cocina es nueva.",
+          "eu": "Sukaldea berria da.",
+          "palabras": [
+            "Sukaldea",
+            "berria",
+            "da."
+          ]
+        }
+      ],
+      "subnivel": "test"
+    },
+    {
+      "id": "u6-g11",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Alguien te pregunta «Nongoa zara?». ¿Qué te está preguntando?",
+          "opciones": [
+            "Dónde estás",
+            "De dónde eres",
+            "Adónde vas",
+            "Cómo te llamas"
+          ],
+          "correcta": 1,
+          "explicacion": "«Non» es dónde; «Nongoa» es de dónde. La diferencia está en el -ko."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Y si te preguntan «Nora zoaz?»",
+          "opciones": [
+            "De dónde eres",
+            "Dónde estás",
+            "Adónde vas",
+            "Con quién vas"
+          ],
+          "correcta": 2,
+          "explicacion": "«Nora» es «adónde», y se responde con el sufijo -ra: «Bilbora»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál es la pregunta para «Etxean nago»?",
+          "opciones": [
+            "Nongoa zara?",
+            "Nora zoaz?",
+            "Non zaude?",
+            "Nor zara?"
+          ],
+          "correcta": 2,
+          "explicacion": "Respuesta con -n → pregunta con «Non»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál es la pregunta para «Bilbokoa naiz»?",
+          "opciones": [
+            "Non zaude?",
+            "Nongoa zara?",
+            "Nondik zatoz?",
+            "Nora zoaz?"
+          ],
+          "correcta": 1,
+          "explicacion": "Respuesta con -koa → pregunta con «Nongoa»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué tienen en común la pregunta y su respuesta?",
+          "opciones": [
+            "El verbo",
+            "La misma terminación",
+            "La longitud",
+            "Nada"
+          ],
+          "correcta": 1,
+          "explicacion": "Non/-n, Nora/-ra, Nondik/-tik, Nongoa/-koa. El sistema encaja."
+        }
+      ],
+      "subnivel": "test"
+    },
+    {
+      "id": "u6-g12",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estos sufijos significa «hacia / adónde»?",
+          "opciones": [
+            "-n",
+            "-ko",
+            "-ra",
+            "-a"
+          ],
+          "correcta": 2,
+          "explicacion": "«-ra» es destino: Bilbora = a Bilbao. Responde a «Nora?»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «Bilbora»?",
+          "opciones": [
+            "En Bilbao",
+            "De Bilbao",
+            "A Bilbao",
+            "Desde Bilbao"
+          ],
+          "correcta": 2,
+          "explicacion": "El sufijo -ra marca destino."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En Bilbao oyes «Non zagoz?». ¿Qué forma del batua es «zagoz»?",
+          "opciones": [
+            "zara",
+            "zaude",
+            "zaudete",
+            "dago"
+          ],
+          "correcta": 1,
+          "explicacion": "«Zagoz» es el «zaude» del bizkaiera. También cambian gaude→gagoz y daude→dagoz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zelango etxea da?» es el bizkaiera de…",
+          "opciones": [
+            "Nongoa etxea da?",
+            "Nolako etxea da?",
+            "Zenbat etxe da?",
+            "Non dago etxea?"
+          ],
+          "correcta": 1,
+          "explicacion": "«Zelango» lleva el mismo «-ko» que «zelan», igual que «nolako» lo lleva de «nola»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué tienen en común «doguz», «dagoz» y «dodaz» en bizkaiera?",
+          "opciones": [
+            "Son del pasado",
+            "Llevan la -z del plural",
+            "Son preguntas",
+            "Son de tercera persona"
+          ],
+          "correcta": 1,
+          "explicacion": "El bizkaiera marca el plural con -z donde el batua usa -it-."
+        }
+      ],
+      "subnivel": "5.4"
+    },
+    {
+      "id": "u6.1-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "gorria",
+              "es": "rojo"
+            },
+            {
+              "eu": "urdina",
+              "es": "azul"
+            },
+            {
+              "eu": "horia",
+              "es": "amarillo"
+            },
+            {
+              "eu": "berdea",
+              "es": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "zuria",
+              "es": "blanco"
+            },
+            {
+              "eu": "beltza",
+              "es": "negro"
+            },
+            {
+              "eu": "grisa",
+              "es": "gris"
+            },
+            {
+              "eu": "marroia",
+              "es": "marrón"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "arrosa",
+              "es": "rosa"
+            },
+            {
+              "eu": "morea",
+              "es": "morado"
+            },
+            {
+              "eu": "laranja",
+              "es": "naranja"
+            },
+            {
+              "eu": "berdea",
+              "es": "verde"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "gorria",
+              "es": "rojo"
+            },
+            {
+              "eu": "zuria",
+              "es": "blanco"
+            },
+            {
+              "eu": "beltza",
+              "es": "negro"
+            },
+            {
+              "eu": "urdina",
+              "es": "azul"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "horia",
+              "es": "amarillo"
+            },
+            {
+              "eu": "morea",
+              "es": "morado"
+            },
+            {
+              "eu": "grisa",
+              "es": "gris"
+            },
+            {
+              "eu": "arrosa",
+              "es": "rosa"
+            }
+          ]
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
+      "id": "u6.1-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«La casa roja» se dice…",
+          "opciones": [
+            "etxea gorria",
+            "etxe gorria",
+            "gorri etxea",
+            "etxe gorriak"
+          ],
+          "correcta": 1,
+          "explicacion": "El adjetivo detrás, y el artículo una sola vez, al final."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«La mesa blanca» se dice…",
+          "opciones": [
+            "zuri mahaia",
+            "mahaia zuria",
+            "mahai zuria",
+            "mahai zuriak"
+          ],
+          "correcta": 2,
+          "explicacion": "Mahai + zuri + -a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice «UNA mesa blanca»?",
+          "opciones": [
+            "mahai zuria",
+            "mahai zuri bat",
+            "bat mahai zuria",
+            "mahaia zuri"
+          ],
+          "correcta": 1,
+          "explicacion": "Se quita el artículo -a y se añade «bat» al final."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Mi habitación es azul» se dice…",
+          "opciones": [
+            "Nire logela urdina da.",
+            "Nire logela urdin da.",
+            "Urdina nire logela da.",
+            "Nire urdin logela da."
+          ],
+          "correcta": 0,
+          "explicacion": "El color va detrás, con el artículo, y «da» cierra la frase."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «etxe gorria», ¿dónde está el artículo «la»?",
+          "opciones": [
+            "en «etxe»",
+            "en la -a final de «gorria»",
+            "no hay artículo",
+            "en las dos palabras"
+          ],
+          "correcta": 1,
+          "explicacion": "Aparece una sola vez, al final del grupo."
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
+      "id": "u6.1-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes de la casa",
+          "pares": [
+            {
+              "eu": "egongela",
+              "es": "el salón"
+            },
+            {
+              "eu": "jangela",
+              "es": "el comedor"
+            },
+            {
+              "eu": "bainugela",
+              "es": "el cuarto de baño"
+            },
+            {
+              "eu": "sarrera",
+              "es": "la entrada"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes de la casa",
+          "pares": [
+            {
+              "eu": "eskailerak",
+              "es": "las escaleras"
+            },
+            {
+              "eu": "igogailua",
+              "es": "el ascensor"
+            },
+            {
+              "eu": "balkoia",
+              "es": "el balcón"
+            },
+            {
+              "eu": "lorategia",
+              "es": "el jardín"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los muebles",
+          "pares": [
+            {
+              "eu": "armairua",
+              "es": "el armario"
+            },
+            {
+              "eu": "sofa",
+              "es": "el sofá"
+            },
+            {
+              "eu": "hozkailua",
+              "es": "la nevera"
+            },
+            {
+              "eu": "ispilua",
+              "es": "el espejo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la casa",
+          "pares": [
+            {
+              "eu": "teilatua",
+              "es": "el tejado"
+            },
+            {
+              "eu": "horma",
+              "es": "la pared"
+            },
+            {
+              "eu": "argia",
+              "es": "la luz"
+            },
+            {
+              "eu": "dutxa",
+              "es": "la ducha"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la casa",
+          "pares": [
+            {
+              "eu": "logela",
+              "es": "el dormitorio"
+            },
+            {
+              "eu": "sukaldea",
+              "es": "la cocina"
+            },
+            {
+              "eu": "egongela",
+              "es": "el salón"
+            },
+            {
+              "eu": "garajea",
+              "es": "el garaje"
+            }
+          ]
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
+      "id": "u6.1-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «egongela»?",
+          "opciones": [
+            "el comedor",
+            "el salón",
+            "el dormitorio",
+            "la cocina"
+          ],
+          "correcta": 1,
+          "explicacion": "«La habitación de estar»: egon + gela."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «jangela»?",
+          "opciones": [
+            "el comedor",
+            "el salón",
+            "la cocina",
+            "el baño"
+          ],
+          "correcta": 0,
+          "explicacion": "Jan (comer) + gela: el comedor."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «hozkailua»?",
+          "opciones": [
+            "el horno",
+            "la nevera",
+            "el armario",
+            "el espejo"
+          ],
+          "correcta": 1,
+          "explicacion": "Hozkailua es la nevera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «igogailua»?",
+          "opciones": [
+            "las escaleras",
+            "el ascensor",
+            "el balcón",
+            "la entrada"
+          ],
+          "correcta": 1,
+          "explicacion": "Igogailua es el ascensor. Las escaleras son «eskailerak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «teilatua»?",
+          "opciones": [
+            "la pared",
+            "el suelo",
+            "el tejado",
+            "la puerta"
+          ],
+          "correcta": 2,
+          "explicacion": "Teilatua es el tejado. La pared es «horma»."
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
+      "id": "u6.1-g05",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "En el salón hay una televisión.",
+          "eu": "Egongelan telebista dago.",
+          "palabras": [
+            "Egongelan",
+            "telebista",
+            "dago."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "En la cocina está la nevera.",
+          "eu": "Sukaldean hozkailua dago.",
+          "palabras": [
+            "Sukaldean",
+            "hozkailua",
+            "dago."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "La mesa blanca y la silla negra.",
+          "eu": "Mahai zuria eta aulki beltza.",
+          "palabras": [
+            "Mahai",
+            "zuria",
+            "eta",
+            "aulki",
+            "beltza."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mi habitación es azul.",
+          "eu": "Nire logela urdina da.",
+          "palabras": [
+            "Nire",
+            "logela",
+            "urdina",
+            "da."
+          ]
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "la casa roja",
+          "respuestas": [
+            "etxe gorria"
+          ],
+          "pista": "Dos palabras."
+        }
+      ],
+      "subnivel": "test"
+    }
+  ]
+}

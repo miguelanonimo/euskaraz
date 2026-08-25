@@ -1,0 +1,2580 @@
+{
+  "id": "u10",
+  "numero": 10,
+  "titulo": "Atzo eta bihar",
+  "subtitulo": "El pasado, el futuro y cerrar el nivel",
+  "objetivo": "Contar lo que hiciste y lo que vas a hacer, comparar, y repasar todo el A1.",
+  "color": "negro",
+  "subniveles": [
+    {
+      "id": "10.1",
+      "titulo": "El pasado",
+      "resumen": "Izan y ukan en pasado: nintzen, nuen."
+    },
+    {
+      "id": "10.2",
+      "titulo": "Cuándo pasó",
+      "resumen": "Atzo, iaz, duela bi urte, txikitan."
+    },
+    {
+      "id": "10.3",
+      "titulo": "El futuro",
+      "resumen": "-ko / -go: planes y quedadas."
+    },
+    {
+      "id": "10.4",
+      "titulo": "Comparar",
+      "resumen": "Baino, -ago, -ena: más, menos, el que más."
+    },
+    {
+      "id": "10.5",
+      "titulo": "Redondear la frase",
+      "resumen": "La partícula «al» y los conectores."
+    },
+    {
+      "id": "10.6",
+      "titulo": "Dena batera",
+      "resumen": "Repaso general y el cuadro completo del A1."
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "El pasado de «izan»",
+      "cuerpo": "El presente lo tienes desde la cuarta unidad. El pasado se parece bastante:\n\n<b>ni nintzen</b> — yo era, yo fui\n<b>zu zinen</b> — tú eras\n<b>hura zen</b> — él/ella era\n<b>gu ginen</b> — nosotros éramos\n<b>zuek zineten</b> — vosotros erais\n<b>haiek ziren</b> — ellos eran\n\nMira la lógica: donde el presente pone <i>n-</i> para «yo» (<i>naiz</i>), el pasado también (<i>nintzen</i>); donde pone <i>z-</i> para «tú» (<i>zara</i>), el pasado también (<i>zinen</i>). Y todas las formas de pasado acaban en <b>-n</b>.\n\nEsa <b>-n</b> final es la marca del pasado en euskera. Una vez la ves, la reconoces en todas partes.",
+      "ejemplos": [
+        {
+          "eu": "Ni Bilbon jaio nintzen.",
+          "es": "Nací en Bilbao.",
+          "audio": "unidades/u11/ni-bilbon-jaio-nintzen.mp3"
+        },
+        {
+          "eu": "Atzo Bilbon zen.",
+          "es": "Ayer estuvo en Bilbao.",
+          "audio": "unidades/u11/atzo-bilbon-zen.mp3"
+        },
+        {
+          "eu": "Gu lagunak ginen.",
+          "es": "Éramos amigos.",
+          "audio": "unidades/u11/gu-lagunak-ginen.mp3"
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "titulo": "El pasado de «ukan» (tener)",
+      "cuerpo": "Y el otro auxiliar, el de los verbos con objeto:\n\n<b>nik nuen</b> — yo tenía / lo hice\n<b>zuk zenuen</b>\n<b>hark zuen</b>\n<b>guk genuen</b>\n<b>zuek zenuten</b>\n<b>haiek zuten</b>\n\nOtra vez la <b>-n</b> del final, y el sujeto con <b>-k</b> como siempre que hay objeto.\n\nSi el objeto es plural, se cuela el <b>-it-</b> de la octava unidad:\n\n<b>nik nituen</b> — yo los/las…\n<b>zuk zenituen</b> — tú\n<b>hark zituen</b> — él/ella\n<b>guk genituen</b> — nosotros\n<b>zuek zenituzten</b> — vosotros\n<b>haiek zituzten</b> — ellos\n\n<b>Liburua irakurri nuen.</b> — Leí el libro.\n<b>Liburuak irakurri nituen.</b> — Leí los libros.",
+      "ejemplos": [
+        {
+          "eu": "Atzo film bat ikusi nuen.",
+          "es": "Ayer vi una película.",
+          "audio": "unidades/u11/atzo-film-bat-ikusi-nuen.mp3"
+        },
+        {
+          "eu": "Zer egin zenuen?",
+          "es": "¿Qué hiciste?",
+          "audio": "unidades/u11/zer-egin-zenuen.mp3"
+        },
+        {
+          "eu": "Haiek etxe bat zuten.",
+          "es": "Ellos tenían una casa.",
+          "audio": "unidades/u11/haiek-etxe-bat-zuten.mp3"
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "titulo": "El pasado de «egon»",
+      "cuerpo": "<b>ni nengoen</b> — yo estaba\n<b>zu zeunden</b>\n<b>hura zegoen</b>\n<b>gu geunden</b>\n<b>zuek zeundeten</b>\n<b>haiek zeuden</b>\n\nSirve igual que en presente: para dónde estaba algo y para cómo estaba alguien.\n\n<b>Etxean nengoen.</b> — Estaba en casa.\n<b>Non zegoen?</b> — ¿Dónde estaba?\n<b>Nekatuta geunden.</b> — Estábamos cansados.",
+      "ejemplos": [
+        {
+          "eu": "Atzo etxean nengoen.",
+          "es": "Ayer estaba en casa.",
+          "audio": "unidades/u11/atzo-etxean-nengoen.mp3"
+        },
+        {
+          "eu": "Non zegoen liburua?",
+          "es": "¿Dónde estaba el libro?",
+          "audio": "unidades/u11/non-zegoen-liburua.mp3"
+        },
+        {
+          "eu": "Haiek tabernan zeuden.",
+          "es": "Ellos estaban en el bar.",
+          "audio": "unidades/u11/haiek-tabernan-zeuden.mp3"
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "titulo": "«Comí», «he comido» y «comía»",
+      "cuerpo": "El euskera separa las tres con mucha limpieza. La pieza del verbo dice el aspecto, y el auxiliar dice el tiempo:\n\n<b>jan dut</b> — he comido (participio + presente)\n<b>jan nuen</b> — comí (participio + pasado)\n<b>jaten nuen</b> — comía, solía comer (forma en -t(z)en + pasado)\n\nY con los verbos sin objeto, igual:\n<b>etorri naiz</b> — he venido\n<b>etorri nintzen</b> — vine\n<b>etortzen nintzen</b> — venía, solía venir\n\nEs el mismo mecanismo de dos piezas de la octava unidad. Lo único nuevo es el auxiliar.",
+      "ejemplos": [
+        {
+          "eu": "Atzo Bilbora joan nintzen.",
+          "es": "Ayer fui a Bilbao.",
+          "audio": "unidades/u11/atzo-bilbora-joan-nintzen.mp3"
+        },
+        {
+          "eu": "Txikitan Bilbon bizi nintzen.",
+          "es": "De pequeño vivía en Bilbao.",
+          "audio": "unidades/u11/txikitan-bilbon-bizi-nintzen.mp3"
+        },
+        {
+          "eu": "Gaur ez naiz joan.",
+          "es": "Hoy no he ido.",
+          "audio": "unidades/u11/gaur-ez-naiz-joan.mp3"
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "titulo": "Cuándo pasó",
+      "cuerpo": "Los que ya conoces: <b>atzo</b> (ayer), <b>bart</b> (anoche), <b>herenegun</b> (anteayer).\n\nY los nuevos:\n\n<b>lehen</b> — antes\n<b>orduan</b> — entonces\n<b>aspaldi</b> — hace mucho\n<b>iaz</b> — el año pasado\n<b>joan den astean</b> — la semana pasada\n<b>joan den hilean</b> — el mes pasado\n<b>duela bi urte</b> — hace dos años\n<b>txikitan</b> — de pequeño\n<b>garai hartan</b> — en aquella época\n\n<b>duela</b> se usa con cualquier medida de tiempo: <i>duela ordubete</i> (hace una hora), <i>duela hilabete</i> (hace un mes), <i>duela urtebete</i> (hace un año).\n\nY como con las horas, lo normal es que el «cuándo» abra la frase.",
+      "ejemplos": [
+        {
+          "eu": "Joan den astean Bilbon nengoen.",
+          "es": "La semana pasada estaba en Bilbao.",
+          "audio": "unidades/u11/joan-den-astean-bilbon-nengoen.mp3"
+        },
+        {
+          "eu": "Duela bi urte ezagutu nuen.",
+          "es": "La conocí hace dos años.",
+          "audio": "unidades/u11/duela-bi-urte-ezagutu-nuen.mp3"
+        },
+        {
+          "eu": "Txikitan euskaraz hitz egiten nuen.",
+          "es": "De pequeño hablaba en euskera.",
+          "audio": "unidades/u11/txikitan-euskaraz-hitz-egiten-nuen.mp3"
+        }
+      ],
+      "subnivel": "10.2"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "El pasado es uno de los sitios donde más se separan las dos variedades. Si el batua acaba en <b>-en</b>, el bizkaiera tiende a <b>-an</b>:\n\n<b>ni nintzan</b> — batua: nintzen\n<b>zu zinan</b> — zinen\n<b>hura zan</b> — zen\n<b>gu ginan</b> — ginen\n<b>haiek ziran</b> — ziren\n\nAsí que «era de Bilbao» por allí es <b>Bilbokoa zan</b>.\n\n<b>El pasado de tener</b>\nAquí el cambio es mayor todavía:\n\n<b>neban</b> — batua: nuen\n<b>zenduan</b> — zenuen\n<b>eban</b> — zuen\n<b>genduan</b> — genuen\n<b>eben</b> — zuten\n\n<b>Ikusi neban.</b> — Lo vi. (batua: ikusi nuen)\n<b>Esan eban.</b> — Lo dijo. (batua: esan zuen)\n\n<b>Estar</b>\nY <i>zegoen</i> es <b>egoan</b>: <b>Etxean egoan.</b> — Estaba en casa.\n\nEste es el bloque que más cuesta de oído al principio, porque <i>eban</i> y <i>zuen</i> no se parecen en nada. Pero son media docena de formas, y salen constantemente.",
+      "ejemplos": [
+        {
+          "eu": "Ni Bilbon jaio nintzan.",
+          "es": "Nací en Bilbao. — batua: nintzen.",
+          "audio": "unidades/u11/ni-bilbon-jaio-nintzan.mp3"
+        },
+        {
+          "eu": "Ikusi neban.",
+          "es": "Lo vi. — batua: ikusi nuen.",
+          "audio": "unidades/u11/ikusi-neban.mp3"
+        },
+        {
+          "eu": "Etxean egoan.",
+          "es": "Estaba en casa. — batua: etxean zegoen.",
+          "audio": "unidades/u11/etxean-egoan.mp3"
+        }
+      ],
+      "subnivel": "10.2"
+    },
+    {
+      "titulo": "Preguntas de sí o no: la partícula «al»",
+      "cuerpo": "Hasta ahora has preguntado con <i>nor, zer, non, noiz…</i>. Para las preguntas que se responden con <b>bai</b> o <b>ez</b> hay una palabrita que se cuela justo antes del verbo: <b>al</b>.\n\n<b>Euskalduna zara.</b> — Hablas euskera.\n<b>Euskalduna <u>al</u> zara?</b> — ¿Hablas euskera?\n\n<b>Kafea nahi <u>al</u> duzu?</b> — ¿Quieres café?\n<b>Etxean <u>al</u> zaude?</b> — ¿Estás en casa?\n<b>Euskara ikasten <u>al</u> duzu?</b> — ¿Estudias euskera? (con <i>euskaraz</i> sería «¿estudias <b>en</b> euskera?»)\n\nNo significa nada: solo avisa de que viene una pregunta. Se puede omitir y la frase sigue entendiéndose por la entonación, igual que en castellano, pero con <b>al</b> queda mucho más natural.\n\nY las respuestas cortas repiten el verbo: <b>Bai, naiz.</b> / <b>Ez, ez naiz.</b>",
+      "ejemplos": [
+        {
+          "eu": "Euskalduna al zara?",
+          "es": "¿Hablas euskera?",
+          "audio": "unidades/u12/euskalduna-al-zara.mp3"
+        },
+        {
+          "eu": "Kafea nahi al duzu?",
+          "es": "¿Quieres café?",
+          "audio": "unidades/u12/kafea-nahi-al-duzu.mp3"
+        },
+        {
+          "eu": "Bai, nahi dut.",
+          "es": "Sí, quiero.",
+          "audio": "unidades/u12/bai-nahi-dut.mp3"
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "titulo": "Más, menos, el que más",
+      "cuerpo": "El comparativo se pega detrás del adjetivo:\n\n<b>handi</b> (grande) → <b>handiago</b> — más grande\n<b>txiki</b> (pequeño) → <b>txikiago</b> — más pequeño\n<b>polit</b> (bonito) → <b>politago</b> — más bonito\n\nOjo: el adjetivo va aquí <b>sin el artículo -a</b>. <i>handia</i> es «grande», pero para comparar se parte de <i>handi</i>.\n\nY el «que» de la comparación es <b>baino</b>, que va <b>delante</b>:\n\n<b>Bilbo Gernika <u>baino</u> handiagoa da.</b> — Bilbao es más grande que Gernika.\n\nEl superlativo es <b>-ena</b>:\n<b>handiena</b> — el más grande\n<b>Bilbo Bizkaiko hiri handiena da.</b> — Bilbao es la ciudad más grande de Bizkaia.\n\nPara «tan… como», <b>bezain</b>:\n<b>Ni zu bezain altua naiz.</b> — Soy tan alto como tú.\n\nY tres irregulares que salen a diario:\n<b>ona</b> (bueno) → <b>hobea</b> (mejor) → <b>onena</b> (el mejor)\n<b>asko</b> (mucho) → <b>gehiago</b> (más) → <b>gehien</b> (el que más)\n<b>ondo</b> (bien) → <b>hobeto</b> (mejor)",
+      "ejemplos": [
+        {
+          "eu": "Bilbo Gernika baino handiagoa da.",
+          "es": "Bilbao es más grande que Gernika.",
+          "audio": "unidades/u12/bilbo-gernika-baino-handiagoa-da.mp3"
+        },
+        {
+          "eu": "Gaur hobeto nago.",
+          "es": "Hoy estoy mejor.",
+          "audio": "unidades/u12/gaur-hobeto-nago.mp3"
+        },
+        {
+          "eu": "Zu bezain azkar.",
+          "es": "Tan rápido como tú.",
+          "audio": "unidades/u12/zu-bezain-azkar.mp3"
+        }
+      ],
+      "subnivel": "10.4"
+    },
+    {
+      "titulo": "Enlazar frases",
+      "cuerpo": "Los que ya tienes: <b>eta</b> (y), <b>baina</b> (pero), <b>edo</b> (o), <b>ere</b> (también).\n\nCuidado con <b>ere</b>: va <b>detrás</b> de lo que acompaña, no delante.\n<b>Ni ere euskalduna naiz.</b> — Yo también hablo euskera.\n\nY unos cuantos más:\n<b>beraz</b> — así que\n<b>gainera</b> — además\n<b>hala ere</b> — aun así\n<b>adibidez</b> — por ejemplo\n\nPara «porque» el euskera no usa una palabra suelta, sino un sufijo pegado al verbo: <b>-lako</b>.\n\n<b>Zergatik ikasten duzu euskara?</b>\n<b>Gustatzen zaidalako.</b> — Porque me gusta.\n<b>Euskalduna naizelako.</b> — Porque hablo euskera.\n\nNo hace falta que lo produzcas todavía. Reconocerlo ya es bastante: cuando oigas un verbo acabado en <b>-lako</b>, alguien te está dando una razón.",
+      "ejemplos": [
+        {
+          "eu": "Nekatuta nago, beraz etxean geratzen naiz.",
+          "es": "Estoy cansado, así que me quedo en casa.",
+          "audio": "unidades/u12/nekatuta-nago-beraz-etxean-geratzen-naiz.mp3"
+        },
+        {
+          "eu": "Ni ere Bilbokoa naiz.",
+          "es": "Yo también soy de Bilbao.",
+          "audio": "unidades/u12/ni-ere-bilbokoa-naiz.mp3"
+        },
+        {
+          "eu": "Gustatzen zaidalako.",
+          "es": "Porque me gusta.",
+          "audio": "unidades/u12/gustatzen-zaidalako.mp3"
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "titulo": "Todo el A1 en un cuadro",
+      "cuerpo": "Los sufijos que has visto, sobre <i>etxe</i> (casa):\n\n<b>etxea</b> — la casa\n<b>etxeak</b> — las casas\n<b>etxean</b> — en la casa (non?)\n<b>etxera</b> — a la casa (nora?)\n<b>etxetik</b> — desde la casa (nondik?)\n<b>etxeko</b> — de la casa (nongoa?)\n<b>etxeetan / etxeetara / etxeetatik</b> — los mismos, en plural\n<b>etxerik</b> — casa (en negativas)\n\nY sobre personas: <b>-k</b> para el sujeto de un verbo con objeto (<i>nik</i>), <b>-ri</b> para «a quien» (<i>niri</i>), <b>-ren</b> para «de quien» (<i>nire</i>), <b>-rekin</b> para «con quien» (<i>nirekin</i>).\n\nLos verbos:\n<b>izan</b> — naiz, zara, da… / nintzen, zinen, zen…\n<b>ukan</b> — dut, duzu, du… / nuen, zenuen, zuen…\n<b>egon</b> — nago, zaude, dago… / nengoen, zeunden, zegoen…\n<b>joan</b> — noa, zoaz, doa… <b>etorri</b> — nator, zatoz, dator…\n<b>zait</b> y su serie, para los gustos.\n\nY las dos piezas: <b>jan dut</b> (he comido), <b>jaten dut</b> (como), <b>jan nuen</b> (comí), <b>jaten nuen</b> (comía).",
+      "ejemplos": [
+        {
+          "eu": "Etxetik etxera.",
+          "es": "De casa a casa.",
+          "audio": "unidades/u12/etxetik-etxera.mp3"
+        },
+        {
+          "eu": "Nirekin zatoz?",
+          "es": "¿Vienes conmigo?",
+          "audio": "unidades/u12/nirekin-zatoz.mp3"
+        },
+        {
+          "eu": "Jaten dut, jan dut, jan nuen.",
+          "es": "Como, he comido, comí.",
+          "audio": "unidades/u12/jaten-dut-jan-dut-jan-nuen.mp3"
+        }
+      ],
+      "subnivel": "10.6"
+    },
+    {
+      "titulo": "Qué viene después",
+      "cuerpo": "Con esto tienes un A1 completo: te presentas, preguntas, cuentas tu día, dices lo que te gusta y hablas del pasado. Es suficiente para sostener una conversación corta y para entender bastante más de lo que puedes decir.\n\nLo que falta, por orden de utilidad:\n\n<b>El futuro</b>: <i>jango dut</i> (comeré). Es el participio con <b>-ko</b> y el mismo auxiliar. Se aprende en una tarde.\n\n<b>El imperativo</b>: <i>etorri!</i>, <i>esan!</i>. Casi siempre es el participio a secas.\n\n<b>Las subordinadas</b>: el <b>-la</b> de «dice que…», el <b>-n</b> de «cuando…», el <b>-lako</b> que ya has visto. Aquí es donde el euskera se pone realmente distinto del castellano.\n\n<b>El hitano</b>: la forma de tuteo con <i>hi</i>, con verbo propio según hables a un hombre o a una mujer. En Bizkaia se usa, y mucho, entre gente de confianza.\n\n<b>Los verbos sintéticos</b> que faltan: <i>jakin</i> (saber: dakit, dakizu…), <i>eduki</i> (tener: daukat), <i>ekarri</i>, <i>eraman</i>.\n\nPero antes de nada: habla. Con lo de estas doce unidades ya puedes.",
+      "ejemplos": [
+        {
+          "eu": "Bihar Bilbora joango naiz.",
+          "es": "Mañana iré a Bilbao.",
+          "audio": "unidades/u12/bihar-bilbora-joango-naiz.mp3"
+        },
+        {
+          "eu": "Ez dakit.",
+          "es": "No sé.",
+          "audio": "unidades/u12/ez-dakit.mp3"
+        },
+        {
+          "eu": "Zorionak!",
+          "es": "¡Felicidades!",
+          "audio": "unidades/u12/zorionak.mp3"
+        }
+      ],
+      "subnivel": "10.6"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "El repaso del dialecto, que ha ido saliendo unidad a unidad:\n\n<b>naiz → naz</b> · <b>dut → dot</b> · <b>zaude → zagoz</b> · <b>zait → jat</b>\n<b>nintzen → nintzan</b> · <b>nuen → neban</b> · <b>zegoen → egoan</b>\n<b>eman → emon</b> · <b>irten → urten</b>\n<b>nola → zelan</b> · <b>-rekin → -gaz</b> · <b>zer → ze</b>\nLos días: <b>martitzena, eguaztena, eguena, barikua, zapatua, domeka</b>\n\nY lo que faltaba:\n\n<b>ere → be</b>\n«También» es <b>be</b> en bizkaiera: <b>Ni be bai.</b> — Yo también. Es de las palabras que más se oyen.\n\n<b>zergatik → zegaitik</b>\nY «porque» es <b>-lako</b> en los dos.\n\n<b>ete</b>\nUna partícula preciosa que el batua casi no usa: marca la duda. <b>Etorriko ete da?</b> — ¿Vendrá?, me pregunto si vendrá.\n\n<b>-txu</b>\nEl diminutivo cariñoso. Donde el batua pone <i>-txo</i>, el bizkaiera pone <b>-txu</b>: <i>etxetxu</i>, <i>polittxu</i>.\n\nY el aviso de siempre: esto es bizkaiera de uso general, con Bilbao como referencia, no una norma calle por calle — y quien tenga menos de cuarenta años mezclará con batua sin darse cuenta, también en Bilbao. Úsalo para entender, no para corregir a nadie.",
+      "ejemplos": [
+        {
+          "eu": "Ni be bai.",
+          "es": "Yo también. — batua: Ni ere bai.",
+          "audio": "unidades/u12/ni-be-bai.mp3"
+        },
+        {
+          "eu": "Etorriko ete da?",
+          "es": "¿Vendrá? — matiz de duda.",
+          "audio": "unidades/u12/etorriko-ete-da.mp3"
+        },
+        {
+          "eu": "Zegaitik?",
+          "es": "¿Por qué? — batua: Zergatik?",
+          "audio": "unidades/u12/zegaitik.mp3"
+        }
+      ],
+      "subnivel": "10.6"
+    }
+  ],
+  "vocabulario": [
+    {
+      "eu": "nintzen",
+      "es": "(yo) era, fui",
+      "nota": null,
+      "audio": "unidades/u11/nintzen.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "zinen",
+      "es": "(tú) eras, fuiste",
+      "nota": null,
+      "audio": "unidades/u11/zinen.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "zen",
+      "es": "(él/ella) era, fue",
+      "nota": null,
+      "audio": "unidades/u11/zen.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "ginen",
+      "es": "(nosotros) éramos",
+      "nota": null,
+      "audio": "unidades/u11/ginen.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "zineten",
+      "es": "(vosotros) erais",
+      "nota": null,
+      "audio": "unidades/u11/zineten.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "ziren",
+      "es": "(ellos) eran",
+      "nota": null,
+      "audio": "unidades/u11/ziren.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "nuen",
+      "es": "(yo) tenía, tuve",
+      "nota": null,
+      "audio": "unidades/u11/nuen.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "zenuen",
+      "es": "(tú) tenías",
+      "nota": null,
+      "audio": "unidades/u11/zenuen.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "genuen",
+      "es": "(nosotros) teníamos",
+      "nota": null,
+      "audio": "unidades/u11/genuen.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "zuten",
+      "es": "(ellos) tenían",
+      "nota": null,
+      "audio": "unidades/u11/zuten.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "nengoen",
+      "es": "(yo) estaba",
+      "nota": null,
+      "audio": "unidades/u11/nengoen.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "zegoen",
+      "es": "(él/ella) estaba",
+      "nota": null,
+      "audio": "unidades/u11/zegoen.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "lehen",
+      "es": "antes",
+      "nota": null,
+      "audio": "unidades/u11/lehen.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "orduan",
+      "es": "entonces",
+      "nota": null,
+      "audio": "unidades/u11/orduan.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "herenegun",
+      "es": "anteayer",
+      "nota": null,
+      "audio": "unidades/u11/herenegun.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "iaz",
+      "es": "el año pasado",
+      "nota": null,
+      "audio": "unidades/u11/iaz.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "aurten",
+      "es": "este año",
+      "nota": null,
+      "audio": "unidades/u11/aurten.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "joan den astean",
+      "es": "la semana pasada",
+      "nota": "«joan den» es «la que se ha ido».",
+      "audio": "unidades/u11/joan-den-astean.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "duela bi urte",
+      "es": "hace dos años",
+      "nota": "«duela» + el tiempo: duela hilabete, duela urtebete.",
+      "audio": "unidades/u11/duela-bi-urte.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "txikitan",
+      "es": "de pequeño",
+      "nota": "De «txiki» + esa -tan de plural que ya conoces.",
+      "audio": "unidades/u11/txikitan.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "garai hartan",
+      "es": "en aquella época",
+      "nota": null,
+      "audio": "unidades/u11/garai-hartan.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "jaio",
+      "es": "nacer",
+      "nota": null,
+      "audio": "unidades/u11/jaio.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "ezagutu",
+      "es": "conocer",
+      "nota": null,
+      "audio": "unidades/u11/ezagutu.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "gogoratu",
+      "es": "recordar",
+      "nota": null,
+      "audio": "unidades/u11/gogoratu.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "ahaztu",
+      "es": "olvidar",
+      "nota": null,
+      "audio": "unidades/u11/ahaztu.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "hasi",
+      "es": "empezar",
+      "nota": null,
+      "audio": "unidades/u11/hasi.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "bukatu",
+      "es": "terminar",
+      "nota": "También «amaitu».",
+      "audio": "unidades/u11/bukatu.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "gertatu",
+      "es": "ocurrir, pasar",
+      "nota": null,
+      "audio": "unidades/u11/gertatu.mp3",
+      "categoria": "verbo",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "oporrak",
+      "es": "las vacaciones",
+      "nota": "Siempre en plural.",
+      "audio": "unidades/u11/oporrak.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "10.2"
+    },
+    {
+      "eu": "aspaldi",
+      "es": "hace mucho tiempo",
+      "nota": null,
+      "audio": "unidades/u11/aspaldi.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "berriro",
+      "es": "otra vez",
+      "nota": null,
+      "audio": "unidades/u11/berriro.mp3",
+      "categoria": "otros",
+      "subnivel": "10.1"
+    },
+    {
+      "eu": "al",
+      "es": "(partícula de pregunta)",
+      "nota": "No significa nada por sí sola: solo marca que la frase es una pregunta de sí o no.",
+      "audio": "unidades/u12/al.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "baino",
+      "es": "que (en comparaciones)",
+      "nota": null,
+      "audio": "unidades/u12/baino.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "-ago",
+      "es": "más",
+      "nota": "Se pega al adjetivo: handi → handiago.",
+      "audio": "unidades/u12/-ago.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "-ena",
+      "es": "el más",
+      "nota": "handi → handiena.",
+      "audio": "unidades/u12/-ena.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "gehiago",
+      "es": "más (cantidad)",
+      "nota": null,
+      "audio": "unidades/u12/gehiago.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "gutxiago",
+      "es": "menos",
+      "nota": null,
+      "audio": "unidades/u12/gutxiago.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "hobea",
+      "es": "mejor",
+      "nota": "Irregular: de «ona» (bueno).",
+      "audio": "unidades/u12/hobea.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "txarragoa",
+      "es": "peor",
+      "nota": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio.",
+      "audio": "unidades/u12/txarragoa.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "hobeto",
+      "es": "mejor (adverbio)",
+      "nota": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio.",
+      "audio": "unidades/u12/hobeto.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "bezain",
+      "es": "tan… como",
+      "nota": null,
+      "audio": "unidades/u12/bezain.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "berdin",
+      "es": "igual",
+      "nota": null,
+      "audio": "unidades/u12/berdin.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "beraz",
+      "es": "así que, por tanto",
+      "nota": null,
+      "audio": "unidades/u12/beraz.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "hala ere",
+      "es": "aun así",
+      "nota": null,
+      "audio": "unidades/u12/hala-ere.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "gainera",
+      "es": "además",
+      "nota": null,
+      "audio": "unidades/u12/gainera.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "adibidez",
+      "es": "por ejemplo",
+      "nota": null,
+      "audio": "unidades/u12/adibidez.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "bakarrik",
+      "es": "solo, únicamente",
+      "nota": null,
+      "audio": "unidades/u12/bakarrik.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "denak",
+      "es": "todos",
+      "nota": null,
+      "audio": "unidades/u12/denak.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "norbait",
+      "es": "alguien",
+      "nota": null,
+      "audio": "unidades/u12/norbait.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "inor ez",
+      "es": "nadie",
+      "nota": null,
+      "audio": "unidades/u12/inor-ez.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "zerbait",
+      "es": "algo",
+      "nota": null,
+      "audio": "unidades/u12/zerbait.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "nonbait",
+      "es": "en algún sitio",
+      "nota": null,
+      "audio": "unidades/u12/nonbait.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "noski",
+      "es": "claro, por supuesto",
+      "nota": null,
+      "audio": "unidades/u12/noski.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "benetan",
+      "es": "de verdad",
+      "nota": null,
+      "audio": "unidades/u12/benetan.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "azkar",
+      "es": "rápido",
+      "nota": null,
+      "audio": "unidades/u12/azkar.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "poliki",
+      "es": "despacio",
+      "nota": null,
+      "audio": "unidades/u12/poliki.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "zaila",
+      "es": "difícil",
+      "nota": null,
+      "audio": "unidades/u12/zaila.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "erraza",
+      "es": "fácil",
+      "nota": null,
+      "audio": "unidades/u12/erraza.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "garrantzitsua",
+      "es": "importante",
+      "nota": null,
+      "audio": "unidades/u12/garrantzitsua.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "-lako",
+      "es": "porque",
+      "nota": "Se pega al verbo: «euskalduna naizelako».",
+      "audio": "unidades/u12/-lako.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "hitza",
+      "es": "la palabra",
+      "nota": null,
+      "audio": "unidades/u12/hitza.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "aditza",
+      "es": "el verbo",
+      "nota": null,
+      "audio": "unidades/u12/aditza.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "esaldia",
+      "es": "la frase",
+      "nota": null,
+      "audio": "unidades/u12/esaldia.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "hurrengoa",
+      "es": "el siguiente",
+      "nota": null,
+      "audio": "unidades/u12/hurrengoa.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "10.5"
+    },
+    {
+      "eu": "zorionak",
+      "es": "felicidades",
+      "nota": "Literalmente «suertes buenas».",
+      "audio": "unidades/u12/zorionak.mp3",
+      "categoria": "otros",
+      "subnivel": "10.5"
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u11-g01",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni Bilbon jaio ____.",
+          "opciones": [
+            "naiz",
+            "nintzen",
+            "nengoen",
+            "nuen"
+          ],
+          "correcta": 1,
+          "explicacion": "«nacer» no lleva objeto: el pasado de «izan» con «ni» es «nintzen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zu atzo Bilbon ____.",
+          "opciones": [
+            "zara",
+            "zinen",
+            "zenuen",
+            "zeunden"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «izan» con «zu»: zinen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hura nire laguna ____.",
+          "opciones": [
+            "da",
+            "zen",
+            "zuen",
+            "zegoen"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «izan» con «hura»: zen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Gu lagunak ____.",
+          "opciones": [
+            "gara",
+            "ginen",
+            "genuen",
+            "geunden"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «izan» con «gu»: ginen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek ikasleak ____.",
+          "opciones": [
+            "dira",
+            "ziren",
+            "zuten",
+            "zeuden"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «izan» con «haiek»: ziren."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nik atzo film bat ikusi ____.",
+          "opciones": [
+            "dut",
+            "nuen",
+            "nintzen",
+            "nengoen"
+          ],
+          "correcta": 1,
+          "explicacion": "Hay objeto (una película) y es pasado: nuen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zer egin ____? (tú)",
+          "opciones": [
+            "duzu",
+            "zenuen",
+            "zinen",
+            "zeunden"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «ukan» con «zuk»: zenuen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hark liburua irakurri ____.",
+          "opciones": [
+            "du",
+            "zuen",
+            "zen",
+            "zegoen"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «ukan» con «hark»: zuen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Guk etxe bat ____.",
+          "opciones": [
+            "dugu",
+            "genuen",
+            "ginen",
+            "geunden"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «ukan» con «guk»: genuen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek euskara ikasi ____.",
+          "opciones": [
+            "dute",
+            "zuten",
+            "ziren",
+            "zeuden"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «ukan» con «haiek»: zuten."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el pasado de «izan»",
+          "pares": [
+            {
+              "eu": "nintzen",
+              "es": "yo era"
+            },
+            {
+              "eu": "zinen",
+              "es": "tú eras"
+            },
+            {
+              "eu": "zen",
+              "es": "él era"
+            },
+            {
+              "eu": "ziren",
+              "es": "ellos eran"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el pasado de «ukan»",
+          "pares": [
+            {
+              "eu": "nuen",
+              "es": "yo tenía"
+            },
+            {
+              "eu": "zenuen",
+              "es": "tú tenías"
+            },
+            {
+              "eu": "zuen",
+              "es": "él tenía"
+            },
+            {
+              "eu": "zuten",
+              "es": "ellos tenían"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los marcadores de pasado",
+          "pares": [
+            {
+              "eu": "atzo",
+              "es": "ayer"
+            },
+            {
+              "eu": "herenegun",
+              "es": "anteayer"
+            },
+            {
+              "eu": "bart",
+              "es": "anoche"
+            },
+            {
+              "eu": "iaz",
+              "es": "el año pasado"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "jaio",
+              "es": "nacer"
+            },
+            {
+              "eu": "ezagutu",
+              "es": "conocer"
+            },
+            {
+              "eu": "hasi",
+              "es": "empezar"
+            },
+            {
+              "eu": "bukatu",
+              "es": "terminar"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las expresiones de tiempo",
+          "pares": [
+            {
+              "eu": "lehen",
+              "es": "antes"
+            },
+            {
+              "eu": "orduan",
+              "es": "entonces"
+            },
+            {
+              "eu": "aspaldi",
+              "es": "hace mucho"
+            },
+            {
+              "eu": "txikitan",
+              "es": "de pequeño"
+            }
+          ]
+        }
+      ],
+      "subnivel": "10.4"
+    },
+    {
+      "id": "u11-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ayer estaba en casa. → Atzo etxean ____.",
+          "opciones": [
+            "nago",
+            "nengoen",
+            "nintzen",
+            "nuen"
+          ],
+          "correcta": 1,
+          "explicacion": "Ubicación y pasado → «egon» en pasado: nengoen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Dónde estaba el libro? → Non ____ liburua?",
+          "opciones": [
+            "dago",
+            "zegoen",
+            "zen",
+            "zuen"
+          ],
+          "correcta": 1,
+          "explicacion": "«egon» en pasado con «hura»: zegoen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ellos estaban en el bar. → Haiek tabernan ____.",
+          "opciones": [
+            "daude",
+            "zeuden",
+            "ziren",
+            "zuten"
+          ],
+          "correcta": 1,
+          "explicacion": "«egon» en pasado con «haiek»: zeuden."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Estábamos cansados. → Nekatuta ____.",
+          "opciones": [
+            "gaude",
+            "geunden",
+            "ginen",
+            "genuen"
+          ],
+          "correcta": 1,
+          "explicacion": "Estado pasajero → «egon»: geunden."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Dónde estabas? → Non ____?",
+          "opciones": [
+            "zaude",
+            "zeunden",
+            "zinen",
+            "zenuen"
+          ],
+          "correcta": 1,
+          "explicacion": "«egon» en pasado con «zu»: zeunden."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g05",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ayer fui a Bilbao.",
+          "eu": "Atzo Bilbora joan nintzen.",
+          "palabras": [
+            "Atzo",
+            "Bilbora",
+            "joan",
+            "nintzen."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "De pequeño vivía en Bilbao.",
+          "eu": "Txikitan Bilbon bizi nintzen.",
+          "palabras": [
+            "Txikitan",
+            "Bilbon",
+            "bizi",
+            "nintzen."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ayer vi una película.",
+          "eu": "Atzo film bat ikusi nuen.",
+          "palabras": [
+            "Atzo",
+            "film",
+            "bat",
+            "ikusi",
+            "nuen."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "La semana pasada estaba en casa.",
+          "eu": "Joan den astean etxean nengoen.",
+          "palabras": [
+            "Joan",
+            "den",
+            "astean",
+            "etxean",
+            "nengoen."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ellos eran mis amigos.",
+          "eu": "Haiek nire lagunak ziren.",
+          "palabras": [
+            "Haiek",
+            "nire",
+            "lagunak",
+            "ziren."
+          ]
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g06",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "He comido. → Jan ____.",
+          "opciones": [
+            "dut",
+            "nuen",
+            "naiz",
+            "nintzen"
+          ],
+          "correcta": 0,
+          "explicacion": "Participio + presente = «he comido»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Comí. → Jan ____.",
+          "opciones": [
+            "dut",
+            "nuen",
+            "naiz",
+            "nintzen"
+          ],
+          "correcta": 1,
+          "explicacion": "Participio + pasado = «comí»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Comía, solía comer. → ____ nuen.",
+          "opciones": [
+            "Jan",
+            "Jaten",
+            "Jango",
+            "Jatea"
+          ],
+          "correcta": 1,
+          "explicacion": "La forma en -t(z)en + pasado = lo habitual en el pasado."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "He venido. → Etorri ____.",
+          "opciones": [
+            "naiz",
+            "nintzen",
+            "dut",
+            "nuen"
+          ],
+          "correcta": 0,
+          "explicacion": "Sin objeto y presente: naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Vine. → Etorri ____.",
+          "opciones": [
+            "naiz",
+            "nintzen",
+            "dut",
+            "nuen"
+          ],
+          "correcta": 1,
+          "explicacion": "Sin objeto y pasado: nintzen."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g07",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hace dos años. → ____ bi urte.",
+          "opciones": [
+            "Joan den",
+            "Duela",
+            "Orduan",
+            "Aspaldi"
+          ],
+          "correcta": 1,
+          "explicacion": "«duela» + la medida de tiempo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "La semana pasada. → ____",
+          "opciones": [
+            "Duela bi urte",
+            "Joan den astean",
+            "Garai hartan",
+            "Aurten"
+          ],
+          "correcta": 1,
+          "explicacion": "«joan den astean», la semana que se ha ido."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "El año pasado. → ____",
+          "opciones": [
+            "aurten",
+            "iaz",
+            "aspaldi",
+            "orduan"
+          ],
+          "correcta": 1,
+          "explicacion": "«iaz» es el año pasado; «aurten», este año."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "De pequeño. → ____",
+          "opciones": [
+            "txikia",
+            "txikitan",
+            "txikira",
+            "txikiz"
+          ],
+          "correcta": 1,
+          "explicacion": "«txikitan», con esa -tan de plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Anteayer. → ____",
+          "opciones": [
+            "atzo",
+            "bart",
+            "herenegun",
+            "etzi"
+          ],
+          "correcta": 2,
+          "explicacion": "«herenegun». «etzi» es pasado mañana, hacia el otro lado."
+        }
+      ],
+      "subnivel": "10.2"
+    },
+    {
+      "id": "u11-g08",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Nací en Bilbao.",
+          "respuestas": [
+            "bilbon jaio nintzen",
+            "ni bilbon jaio nintzen"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ayer fui a Bilbao.",
+          "respuestas": [
+            "atzo bilbora joan nintzen",
+            "ni atzo bilbora joan nintzen",
+            "atzo ni bilbora joan nintzen"
+          ],
+          "pista": "Empieza por «atzo»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Qué hiciste?",
+          "respuestas": [
+            "zer egin zenuen",
+            "ze egin zenuen"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estaba en casa.",
+          "respuestas": [
+            "etxean nengoen",
+            "ni etxean nengoen"
+          ],
+          "pista": "Con «egon» en pasado."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "La conocí hace dos años.",
+          "respuestas": [
+            "duela bi urte ezagutu nuen",
+            "nik duela bi urte ezagutu nuen"
+          ],
+          "pista": "Empieza por «duela»."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g09",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Dónde estabas ayer?",
+          "eu": "Non zeunden zu atzo?",
+          "palabras": [
+            "Non",
+            "zeunden",
+            "zu",
+            "atzo?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Leí los libros.",
+          "eu": "Nik liburuak irakurri nituen.",
+          "palabras": [
+            "Nik",
+            "liburuak",
+            "irakurri",
+            "nituen."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Entonces éramos amigos.",
+          "eu": "Orduan lagunak ginen.",
+          "palabras": [
+            "Orduan",
+            "lagunak",
+            "ginen."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Hace mucho no hablaba en euskera.",
+          "eu": "Aspaldi ez nuen euskaraz hitz egiten.",
+          "palabras": [
+            "Aspaldi",
+            "ez",
+            "nuen",
+            "euskaraz",
+            "hitz",
+            "egiten."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Anoche estuve en el bar.",
+          "eu": "Bart tabernan nengoen.",
+          "palabras": [
+            "Bart",
+            "tabernan",
+            "nengoen."
+          ]
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g10",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Leí los libros. → Liburuak irakurri ____.",
+          "opciones": [
+            "nuen",
+            "nituen",
+            "dut",
+            "ditut"
+          ],
+          "correcta": 1,
+          "explicacion": "Objeto plural en pasado: nituen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Leí el libro. → Liburua irakurri ____.",
+          "opciones": [
+            "nituen",
+            "nuen",
+            "dut",
+            "ditut"
+          ],
+          "correcta": 1,
+          "explicacion": "Objeto singular en pasado: nuen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Compraste las manzanas. → Sagarrak erosi ____.",
+          "opciones": [
+            "zenuen",
+            "zenituen",
+            "duzu",
+            "dituzu"
+          ],
+          "correcta": 1,
+          "explicacion": "Objeto plural, pasado, «zuk»: zenituen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ellos vieron las casas. → Etxeak ikusi ____.",
+          "opciones": [
+            "zuten",
+            "zituzten",
+            "dute",
+            "dituzte"
+          ],
+          "correcta": 1,
+          "explicacion": "Objeto plural, pasado, «haiek»: zituzten."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Vimos la película. → Filma ikusi ____.",
+          "opciones": [
+            "genituen",
+            "genuen",
+            "dugu",
+            "ditugu"
+          ],
+          "correcta": 1,
+          "explicacion": "Objeto singular, pasado, «guk»: genuen."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g11",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Nací en Bilbao» en bizkaiera: Bilbon jaio ____.",
+          "opciones": [
+            "nintzen",
+            "nintzan",
+            "neban",
+            "naz"
+          ],
+          "correcta": 1,
+          "explicacion": "El «-en» del batua se vuelve «-an»: nintzan."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Lo vi» en bizkaiera: Ikusi ____.",
+          "opciones": [
+            "nuen",
+            "neban",
+            "nintzan",
+            "dot"
+          ],
+          "correcta": 1,
+          "explicacion": "El «nuen» del batua es «neban»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Lo dijo» en bizkaiera: Esan ____.",
+          "opciones": [
+            "zuen",
+            "eban",
+            "zan",
+            "dau"
+          ],
+          "correcta": 1,
+          "explicacion": "«eban», donde el batua pone «zuen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Estaba en casa» en bizkaiera: Etxean ____.",
+          "opciones": [
+            "zegoen",
+            "egoan",
+            "zan",
+            "dago"
+          ],
+          "correcta": 1,
+          "explicacion": "«egoan», donde el batua pone «zegoen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Ellos eran» en bizkaiera: ____",
+          "opciones": [
+            "ziren",
+            "ziran",
+            "eben",
+            "dira"
+          ],
+          "correcta": 1,
+          "explicacion": "ziren → ziran."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g12",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Gaur ez naiz joan, baina atzo ____.",
+          "opciones": [
+            "joan naiz",
+            "joan nintzen",
+            "joaten naiz",
+            "joango naiz"
+          ],
+          "correcta": 1,
+          "explicacion": "Ayer es pasado y el verbo no lleva objeto: joan nintzen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Lehen Gernikan bizi ____, orain Bilbon.",
+          "opciones": [
+            "naiz",
+            "nintzen",
+            "nuen",
+            "nago"
+          ],
+          "correcta": 1,
+          "explicacion": "«lehen» pide pasado, y «bizi izan» va con «izan»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Atzo ____ nuen, gaur ez.",
+          "opciones": [
+            "lan egiten",
+            "lan egin",
+            "lana",
+            "lanean"
+          ],
+          "correcta": 1,
+          "explicacion": "«ayer trabajé»: participio + pasado."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Txikitan euskaraz ____ nuen.",
+          "opciones": [
+            "hitz egin",
+            "hitz egiten",
+            "hitz",
+            "hitza"
+          ],
+          "correcta": 1,
+          "explicacion": "«de pequeño hablaba»: es habitual, así que -t(z)en."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Duela bi urte Bilbon ____.",
+          "opciones": [
+            "nago",
+            "nengoen",
+            "naiz",
+            "nuen"
+          ],
+          "correcta": 1,
+          "explicacion": "«hace dos años» es pasado, y «estar» → nengoen."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u12-g01",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Hablas euskera? → Euskalduna ____ zara?",
+          "opciones": [
+            "al",
+            "ala",
+            "ere",
+            "bai"
+          ],
+          "correcta": 0,
+          "explicacion": "La partícula «al» va justo antes del verbo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Quieres café? → Kafea nahi ____ duzu?",
+          "opciones": [
+            "ere",
+            "al",
+            "edo",
+            "bai"
+          ],
+          "correcta": 1,
+          "explicacion": "«al» delante del auxiliar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Estás en casa? → Etxean ____ zaude?",
+          "opciones": [
+            "ere",
+            "bai",
+            "al",
+            "baina"
+          ],
+          "correcta": 2,
+          "explicacion": "Etxean al zaude?"
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Te gusta el euskera? → Euskara gustatzen ____ zaizu?",
+          "opciones": [
+            "al",
+            "ere",
+            "bai",
+            "edo"
+          ],
+          "correcta": 0,
+          "explicacion": "También aquí «al» va antes del auxiliar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Vienes mañana? → Bihar ____ zatoz?",
+          "opciones": [
+            "ere",
+            "al",
+            "bai",
+            "edo"
+          ],
+          "correcta": 1,
+          "explicacion": "Bihar al zatoz?"
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "id": "u12-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "más grande → ____",
+          "opciones": [
+            "handia",
+            "handiago",
+            "handiena",
+            "handirik"
+          ],
+          "correcta": 1,
+          "explicacion": "El comparativo se pega detrás: -ago."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "el más grande → ____",
+          "opciones": [
+            "handiago",
+            "handiena",
+            "handia",
+            "handiz"
+          ],
+          "correcta": 1,
+          "explicacion": "El superlativo es -ena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Bilbao es más grande que Gernika. → Bilbo Gernika ____ handiagoa da.",
+          "opciones": [
+            "eta",
+            "baino",
+            "bezain",
+            "ere"
+          ],
+          "correcta": 1,
+          "explicacion": "«baino» es el «que» de la comparación."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "tan rápido como tú → zu ____ azkar",
+          "opciones": [
+            "baino",
+            "bezain",
+            "eta",
+            "ere"
+          ],
+          "correcta": 1,
+          "explicacion": "«bezain» es «tan… como»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "mejor (adjetivo) → ____",
+          "opciones": [
+            "onago",
+            "hobea",
+            "onena",
+            "hobeto"
+          ],
+          "correcta": 1,
+          "explicacion": "«ona» hace «hobea», irregular."
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "id": "u12-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las comparaciones",
+          "pares": [
+            {
+              "eu": "baino",
+              "es": "que (comparando)"
+            },
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los conectores",
+          "pares": [
+            {
+              "eu": "beraz",
+              "es": "así que"
+            },
+            {
+              "eu": "gainera",
+              "es": "además"
+            },
+            {
+              "eu": "hala ere",
+              "es": "aun así"
+            },
+            {
+              "eu": "adibidez",
+              "es": "por ejemplo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adverbios",
+          "pares": [
+            {
+              "eu": "noski",
+              "es": "claro"
+            },
+            {
+              "eu": "benetan",
+              "es": "de verdad"
+            },
+            {
+              "eu": "bakarrik",
+              "es": "solo"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adjetivos y adverbios",
+          "pares": [
+            {
+              "eu": "zaila",
+              "es": "difícil"
+            },
+            {
+              "eu": "erraza",
+              "es": "fácil"
+            },
+            {
+              "eu": "azkar",
+              "es": "rápido"
+            },
+            {
+              "eu": "poliki",
+              "es": "despacio"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los indefinidos",
+          "pares": [
+            {
+              "eu": "norbait",
+              "es": "alguien"
+            },
+            {
+              "eu": "zerbait",
+              "es": "algo"
+            },
+            {
+              "eu": "nonbait",
+              "es": "en algún sitio"
+            },
+            {
+              "eu": "denak",
+              "es": "todos"
+            }
+          ]
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "id": "u12-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Yo también hablo euskera. → Ni ____ euskalduna naiz.",
+          "opciones": [
+            "ere",
+            "bai",
+            "al",
+            "baina"
+          ],
+          "correcta": 0,
+          "explicacion": "«ere» va detrás de lo que acompaña: «ni ere»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Estoy cansado, así que me quedo. → Nekatuta nago, ____ etxean geratzen naiz.",
+          "opciones": [
+            "baina",
+            "beraz",
+            "edo",
+            "ere"
+          ],
+          "correcta": 1,
+          "explicacion": "«beraz» introduce la consecuencia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Además, es difícil. → ____, zaila da.",
+          "opciones": [
+            "Baina",
+            "Gainera",
+            "Edo",
+            "Beraz"
+          ],
+          "correcta": 1,
+          "explicacion": "«gainera» añade: además."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Aun así, me gusta. → ____, gustatzen zait.",
+          "opciones": [
+            "Beraz",
+            "Hala ere",
+            "Gainera",
+            "Adibidez"
+          ],
+          "correcta": 1,
+          "explicacion": "«hala ere» es «aun así»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Café o té? → Kafea ____ tea?",
+          "opciones": [
+            "eta",
+            "baina",
+            "edo",
+            "ere"
+          ],
+          "correcta": 2,
+          "explicacion": "«edo» es «o»."
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "id": "u12-g05",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Hablas euskera?",
+          "eu": "Euskalduna al zara?",
+          "palabras": [
+            "Euskalduna",
+            "al",
+            "zara?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Bilbao es más grande que Gernika.",
+          "eu": "Bilbo Gernika baino handiagoa da.",
+          "palabras": [
+            "Bilbo",
+            "Gernika",
+            "baino",
+            "handiagoa",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Yo también soy de Bilbao.",
+          "eu": "Ni ere Bilbokoa naiz.",
+          "palabras": [
+            "Ni",
+            "ere",
+            "Bilbokoa",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Hoy estoy mejor.",
+          "eu": "Gaur hobeto nago.",
+          "palabras": [
+            "Gaur",
+            "hobeto",
+            "nago."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Quieres café o té?",
+          "eu": "Kafea edo tea nahi duzu?",
+          "palabras": [
+            "Kafea",
+            "edo",
+            "tea",
+            "nahi",
+            "duzu?"
+          ]
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "id": "u12-g06",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Por qué estudias euskera? — Porque me gusta. → Gustatzen ____.",
+          "opciones": [
+            "zait",
+            "zaidalako",
+            "zaizu",
+            "zaidala"
+          ],
+          "correcta": 1,
+          "explicacion": "«porque» es el sufijo -lako pegado al verbo: zaidalako."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Porque hablo euskera. → Euskalduna ____.",
+          "opciones": [
+            "naiz",
+            "naizelako",
+            "nintzen",
+            "naizela"
+          ],
+          "correcta": 1,
+          "explicacion": "naiz + -lako = naizelako."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Por qué? → ____",
+          "opciones": [
+            "Nola?",
+            "Zergatik?",
+            "Noiz?",
+            "Zenbat?"
+          ],
+          "correcta": 1,
+          "explicacion": "«zergatik» es por qué."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Un verbo acabado en -lako te está dando…",
+          "opciones": [
+            "una hora",
+            "una razón",
+            "un lugar",
+            "una cantidad"
+          ],
+          "correcta": 1,
+          "explicacion": "«-lako» es «porque»: siempre introduce una causa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Zegaitik?» es la forma de Bilbao de decir…",
+          "opciones": [
+            "Zenbat?",
+            "Zergatik?",
+            "Zelan?",
+            "Noiz?"
+          ],
+          "correcta": 1,
+          "explicacion": "«zegaitik» es el «zergatik» del batua."
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "id": "u12-g07",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nire etxea zurea ____ txikiagoa da.",
+          "opciones": [
+            "bezain",
+            "baino",
+            "ere",
+            "eta"
+          ],
+          "correcta": 1,
+          "explicacion": "Con -ago hace falta «baino»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni zu ____ altua naiz: berdinak gara.",
+          "opciones": [
+            "baino",
+            "bezain",
+            "ere",
+            "gehiago"
+          ],
+          "correcta": 1,
+          "explicacion": "«iguales» pide «bezain», no «baino»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Euskara zaila da, baina ____ da polita.",
+          "opciones": [
+            "baino",
+            "ere",
+            "bezain",
+            "beraz"
+          ],
+          "correcta": 1,
+          "explicacion": "«ere» es «también» y va detrás del elemento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Kafe ____ nahi dut, mesedez.",
+          "opciones": [
+            "gehiago",
+            "handiena",
+            "bezain",
+            "baino"
+          ],
+          "correcta": 0,
+          "explicacion": "«más» de cantidad es «gehiago»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hau da hiri ____ Bizkaian.",
+          "opciones": [
+            "handiago",
+            "handiena",
+            "handia",
+            "handirik"
+          ],
+          "correcta": 1,
+          "explicacion": "«la más grande» pide el superlativo -ena."
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "id": "u12-g08",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Hablas euskera?",
+          "respuestas": [
+            "euskalduna al zara",
+            "euskalduna zara"
+          ],
+          "pista": "Con la partícula de pregunta."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Quieres café?",
+          "respuestas": [
+            "kafea nahi al duzu",
+            "kafea nahi duzu"
+          ],
+          "pista": "Cuatro palabras con «al»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Yo también.",
+          "respuestas": [
+            "ni ere bai",
+            "ni ere"
+          ],
+          "pista": "«ere» va detrás."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Hoy estoy mejor.",
+          "respuestas": [
+            "gaur hobeto nago",
+            "ni gaur hobeto nago",
+            "gaur ni hobeto nago"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Es difícil, pero me gusta.",
+          "respuestas": [
+            "zaila da baina gustatzen zait"
+          ],
+          "pista": "Cinco palabras, con «baina» en medio."
+        }
+      ],
+      "subnivel": "10.5"
+    },
+    {
+      "id": "u12-g09",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Estoy cansado, así que me quedo en casa.",
+          "eu": "Nekatuta nago, beraz etxean geratzen naiz.",
+          "palabras": [
+            "Nekatuta",
+            "nago,",
+            "beraz",
+            "etxean",
+            "geratzen",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Es difícil, pero me gusta.",
+          "eu": "Zaila da, baina gustatzen zait.",
+          "palabras": [
+            "Zaila",
+            "da,",
+            "baina",
+            "gustatzen",
+            "zait."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mañana iré a Bilbao.",
+          "eu": "Bihar Bilbora joango naiz.",
+          "palabras": [
+            "Bihar",
+            "Bilbora",
+            "joango",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Vienes conmigo?",
+          "eu": "Zu nirekin zatoz?",
+          "palabras": [
+            "Zu",
+            "nirekin",
+            "zatoz?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Aprendo euskera porque me gusta.",
+          "eu": "Euskara ikasten dut gustatzen zaidalako.",
+          "palabras": [
+            "Euskara",
+            "ikasten",
+            "dut",
+            "gustatzen",
+            "zaidalako."
+          ]
+        }
+      ],
+      "subnivel": "test"
+    },
+    {
+      "id": "u12-g10",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «Vengo de casa» → ____ nator.",
+          "opciones": [
+            "Etxean",
+            "Etxera",
+            "Etxetik",
+            "Etxeko"
+          ],
+          "correcta": 2,
+          "explicacion": "Procedencia: -tik."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «Me gustan los libros» → Liburuak gustatzen ____.",
+          "opciones": [
+            "zait",
+            "zaizkit",
+            "ditut",
+            "zaizu"
+          ],
+          "correcta": 1,
+          "explicacion": "Plural: zaizkit."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «Ayer vi una película» → Atzo film bat ikusi ____.",
+          "opciones": [
+            "dut",
+            "nuen",
+            "nintzen",
+            "nengoen"
+          ],
+          "correcta": 1,
+          "explicacion": "Objeto y pasado: nuen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «No como pan» → Ez dut ____ jaten.",
+          "opciones": [
+            "ogia",
+            "ogirik",
+            "ogiak",
+            "ogian"
+          ],
+          "correcta": 1,
+          "explicacion": "En negativa, partitivo: ogirik."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «A las ocho» → ____",
+          "opciones": [
+            "zortziak",
+            "zortzian",
+            "zortzietan",
+            "zortzira"
+          ],
+          "correcta": 2,
+          "explicacion": "Las horas llevan -etan."
+        }
+      ],
+      "subnivel": "10.6"
+    },
+    {
+      "id": "u12-g11",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«También» en bizkaiera de Bilbao: ____",
+          "opciones": [
+            "ere",
+            "be",
+            "bai",
+            "baie"
+          ],
+          "correcta": 1,
+          "explicacion": "«be». «Ni be bai» es «yo también»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«¿Por qué?» en bizkaiera: ____",
+          "opciones": [
+            "Zergatik?",
+            "Zegaitik?",
+            "Zelan?",
+            "Zenbat?"
+          ],
+          "correcta": 1,
+          "explicacion": "«Zegaitik?»"
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Etorriko ete da?» expresa…",
+          "opciones": [
+            "una orden",
+            "una duda",
+            "una negación",
+            "una cantidad"
+          ],
+          "correcta": 1,
+          "explicacion": "«ete» marca la duda: «¿vendrá, me pregunto?»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "El diminutivo bizkaino es ____",
+          "opciones": [
+            "-txo",
+            "-txu",
+            "-ño",
+            "-ko"
+          ],
+          "correcta": 1,
+          "explicacion": "«-txu»: etxetxu, polittxu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«¿Cómo estás?» en bizkaiera: ____ zagoz?",
+          "opciones": [
+            "Nola",
+            "Zelan",
+            "Zergatik",
+            "Non"
+          ],
+          "correcta": 1,
+          "explicacion": "«zelan» es el «nola» del batua, y «zagoz» el «zaude»."
+        }
+      ],
+      "subnivel": "10.6"
+    },
+    {
+      "id": "u12-g12",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «¿Qué hora es?» → ____",
+          "opciones": [
+            "Zer ordu da?",
+            "Zenbat ordu da?",
+            "Non ordu da?",
+            "Nola ordu da?"
+          ],
+          "correcta": 0,
+          "explicacion": "«Zer ordu da?»"
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «Voy a la playa» → Hondartza____ noa.",
+          "opciones": [
+            "n",
+            "ra",
+            "tik",
+            "ko"
+          ],
+          "correcta": 1,
+          "explicacion": "Movimiento hacia: -ra."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «Estoy en casa» → Etxean ____.",
+          "opciones": [
+            "naiz",
+            "nago",
+            "dut",
+            "noa"
+          ],
+          "correcta": 1,
+          "explicacion": "Ubicación: «egon»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «Soy de Bilbao» → Bilbo____ naiz.",
+          "opciones": [
+            "n",
+            "ra",
+            "tik",
+            "koa"
+          ],
+          "correcta": 3,
+          "explicacion": "Origen: -koa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Repaso: «De pequeño hablaba euskera» → Txikitan euskaraz hitz ____ nuen.",
+          "opciones": [
+            "egin",
+            "egiten",
+            "egingo",
+            "egite"
+          ],
+          "correcta": 1,
+          "explicacion": "Costumbre en el pasado: -t(z)en + nuen."
+        }
+      ],
+      "subnivel": "test"
+    }
+  ]
+}

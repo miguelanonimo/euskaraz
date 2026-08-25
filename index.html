@@ -133,7 +133,7 @@
       <p class="unithero__goal" id="unitHeroGoal"></p>
     </div>
 
-    <div class="cardstack">
+    <div class="cardstack" id="cardstackUnidad">
       <button class="navcard" id="goGramatica">
         <span class="navcard__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h9"/></svg>
@@ -173,6 +173,20 @@
         </span>
       </button>
     </div>
+
+    <!-- Lista de subniveles. Sustituye a las tres tarjetas de arriba en
+         las unidades que traen `subniveles`; las que no, siguen igual. -->
+    <div class="sublist" id="subList" hidden></div>
+  </main>
+
+  <!-- ══════════ PANTALLA: SUBNIVEL ══════════ -->
+  <main class="screen" id="screenSub" hidden>
+    <div class="unithero unithero--sub">
+      <span class="unithero__num" id="subHeroNum"></span>
+      <h1 class="unithero__title" id="subHeroTitle"></h1>
+      <p class="unithero__goal" id="subHeroGoal"></p>
+    </div>
+    <div class="cardstack" id="subCards"></div>
   </main>
 
   <!-- ══════════ PANTALLA: GRAMÁTICA ══════════ -->

@@ -94,6 +94,7 @@
     screens: {
       home:   $('screenHome'),
       unit:   $('screenUnit'),
+      sub:    $('screenSub'),
       gram:   $('screenGram'),
       vocab:  $('screenVocab'),
       dict:   $('screenDict'),
@@ -115,6 +116,12 @@
     statUnidades:  $('statUnidades'),
     statPalabras:  $('statPalabras'),
     statRacha:     $('statRacha'),
+    cardstackUnidad: $('cardstackUnidad'),
+    subList:       $('subList'),
+    subCards:      $('subCards'),
+    subHeroNum:    $('subHeroNum'),
+    subHeroTitle:  $('subHeroTitle'),
+    subHeroGoal:   $('subHeroGoal'),
     unitHeroNum:   $('unitHeroNum'),
     unitHeroTitle: $('unitHeroTitle'),
     unitHeroSub:   $('unitHeroSub'),
@@ -535,9 +542,14 @@
       case 'unit':
         pantallaHome();
         break;
+      case 'sub':
+        pantallaUnidad(estado.unidad);
+        break;
       case 'gram':
       case 'vocab':
-        pantallaUnidad(estado.unidad);
+        // Dentro de un subnivel se vuelve al subnivel, no a la unidad.
+        if (estado.subnivel && estado.subnivel !== 'test') pantallaSubnivel(estado.subnivel);
+        else pantallaUnidad(estado.unidad);
         break;
       case 'dict':
         pantallaHome();
@@ -640,8 +652,39 @@
 
   // ─────────── Pantalla: portada de unidad ───────────
 
+  /* ── Subniveles ──
+
+     Una unidad puede venir partida en subniveles: porciones pequeñas con
+     su explicación, su vocabulario y sus ejercicios, y un test al final
+     que mezcla toda la unidad.
+
+     El reparto es por etiqueta: cada ficha, palabra y grupo lleva un
+     campo `subnivel` con el id de su porción ("4.3"), y los grupos del
+     test final lo llevan a "test". Es aditivo: una unidad sin
+     `subniveles` se pinta como siempre, con sus tres tarjetas. */
+
+  function tieneSubniveles(u) {
+    return !!(u && u.subniveles && u.subniveles.length);
+  }
+
+  /* Filtra por subnivel. Sin filtro activo devuelve todo, que es lo que
+     necesitan el repaso y las unidades sin partir. */
+  function delSubnivel(lista, sub) {
+    if (!sub) return lista || [];
+    return (lista || []).filter(function (x) { return x.subnivel === sub; });
+  }
+
+  function contenidoSub(u, sub) {
+    return {
+      gramatica:  delSubnivel(u.gramatica, sub),
+      vocabulario:delSubnivel(u.vocabulario, sub),
+      ejercicios: delSubnivel(u.ejercicios, sub)
+    };
+  }
+
   function pantallaUnidad(u) {
     estado.unidad = u;
+    estado.subnivel = null;
     progUnidad(u.id).visitada = true;
     guardarProgreso();
 
@@ -651,14 +694,147 @@
     el.unitHeroSub.textContent = u.subtitulo;
     el.unitHeroGoal.textContent = u.objetivo;
 
-    el.gramCount.textContent = u.gramatica.length + ' explicaciones';
-    el.vocabCount.textContent = u.vocabulario.length + ' palabras';
-    var variantes = u.ejercicios.reduce(function (n, g) {
-      return n + ((g.variantes && g.variantes.length) || 1);
-    }, 0);
-    el.practiceCount.textContent = u.ejercicios.length + ' ejercicios · ' + variantes + ' variantes';
+    if (tieneSubniveles(u)) {
+      el.cardstackUnidad.hidden = true;
+      el.subList.hidden = false;
+      pintarListaSubniveles(u);
+    } else {
+      el.cardstackUnidad.hidden = false;
+      el.subList.hidden = true;
+      el.gramCount.textContent = u.gramatica.length + ' explicaciones';
+      el.vocabCount.textContent = u.vocabulario.length + ' palabras';
+      var variantes = u.ejercicios.reduce(function (n, g) {
+        return n + ((g.variantes && g.variantes.length) || 1);
+      }, 0);
+      el.practiceCount.textContent = u.ejercicios.length + ' ejercicios · ' + variantes + ' variantes';
+    }
 
     mostrar('unit');
+  }
+
+  /* Qué se ha hecho ya de cada subnivel. Se guarda dentro del progreso de
+     la unidad, en un mapa aparte, para no tocar el shape del calendario
+     de repaso (que va por id de grupo, no por subnivel). */
+  function progSub(unidadId, subId) {
+    var p = progUnidad(unidadId);
+    if (!p.subs) p.subs = {};
+    if (!p.subs[subId]) p.subs[subId] = { visitado: false, mejor: 0 };
+    return p.subs[subId];
+  }
+
+  function pintarListaSubniveles(u) {
+    var partes = u.subniveles.map(function (s) {
+      var c = contenidoSub(u, s.id);
+      var ps = progSub(u.id, s.id);
+      var trozos = [];
+      if (c.gramatica.length)   trozos.push(c.gramatica.length + (c.gramatica.length === 1 ? ' explicación' : ' explicaciones'));
+      if (c.vocabulario.length) trozos.push(c.vocabulario.length + ' palabras');
+      if (c.ejercicios.length)  trozos.push(c.ejercicios.length + ' ejercicios');
+
+      // Subnivel todavía sin escribir: se enseña, para que se vea el plan,
+      // pero no se puede abrir a una pantalla vacía.
+      var vacio = !(c.gramatica.length || c.vocabulario.length || c.ejercicios.length);
+      if (vacio) {
+        return '<span class="subcard subcard--pendiente">' +
+          '<span class="subcard__id">' + esc(s.id) + '</span>' +
+          '<span class="subcard__body">' +
+            '<span class="subcard__title">' + esc(s.titulo) + '</span>' +
+            '<span class="subcard__sub">' + esc(s.resumen || '') + '</span>' +
+          '</span><span class="subcard__visto">en preparación</span></span>';
+      }
+
+      var estadoTxt = ps.mejor >= 0.7
+        ? '<span class="subcard__hecho">' + tickSvg + Math.round(ps.mejor * 100) + '%</span>'
+        : (ps.visitado ? '<span class="subcard__visto">empezado</span>' : '');
+
+      return '<button class="subcard' + (ps.mejor >= 0.7 ? ' subcard--ok' : '') + '" data-sub="' + esc(s.id) + '">' +
+        '<span class="subcard__id">' + esc(s.id) + '</span>' +
+        '<span class="subcard__body">' +
+          '<span class="subcard__title">' + esc(s.titulo) + '</span>' +
+          '<span class="subcard__sub">' + esc(trozos.join(' · ')) + '</span>' +
+        '</span>' + estadoTxt +
+        '<span class="subcard__chev" aria-hidden="true">' +
+          '<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>' +
+      '</button>';
+    });
+
+    // El test final: todos los grupos marcados como "test".
+    var test = delSubnivel(u.ejercicios, 'test');
+    if (test.length) {
+      var pu = progUnidad(u.id);
+      partes.push(
+        '<button class="subcard subcard--test' + (pu.completada ? ' subcard--ok' : '') + '" data-sub="test">' +
+          '<span class="subcard__id">✓</span>' +
+          '<span class="subcard__body">' +
+            '<span class="subcard__title">Test de la unidad</span>' +
+            '<span class="subcard__sub">Gramática y vocabulario de todo lo anterior · ' + test.length + ' ejercicios</span>' +
+          '</span>' +
+          (pu.completada ? '<span class="subcard__hecho">' + tickSvg + Math.round(pu.mejor * 100) + '%</span>' : '') +
+          '<span class="subcard__chev" aria-hidden="true">' +
+            '<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>' +
+        '</button>');
+    }
+
+    el.subList.innerHTML = partes.join('');
+    el.subList.querySelectorAll('.subcard').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var id = b.dataset.sub;
+        if (id === 'test') { estado.subnivel = 'test'; empezarPractica(); }
+        else pantallaSubnivel(id);
+      });
+    });
+  }
+
+  function pantallaSubnivel(subId) {
+    var u = estado.unidad;
+    var s = u.subniveles.filter(function (x) { return x.id === subId; })[0];
+    if (!s) return;
+
+    estado.subnivel = subId;
+    progSub(u.id, subId).visitado = true;
+    guardarProgreso();
+
+    var c = contenidoSub(u, subId);
+    el.topbarTitle.textContent = subId + ' · ' + s.titulo;
+    el.subHeroNum.textContent = 'Subnivel ' + subId;
+    el.subHeroTitle.textContent = s.titulo;
+    el.subHeroGoal.textContent = s.resumen || '';
+
+    var tarjetas = [];
+    if (c.gramatica.length) {
+      tarjetas.push(tarjetaNav('goGram', 'M4 5h16M4 12h16M4 19h9', 'Explicación',
+        c.gramatica.length + (c.gramatica.length === 1 ? ' ficha' : ' fichas'), ''));
+    }
+    if (c.vocabulario.length) {
+      tarjetas.push(tarjetaNav('goVoc', 'M4 5.5A2.5 2.5 0 016.5 3H19v15H6.5A2.5 2.5 0 004 20.5z',
+        'Vocabulario', c.vocabulario.length + ' palabras', ''));
+    }
+    if (c.ejercicios.length) {
+      var v = c.ejercicios.reduce(function (n, g) { return n + ((g.variantes && g.variantes.length) || 1); }, 0);
+      tarjetas.push(tarjetaNav('goPrac', 'M13 2L4.5 13.5H11L10 22l8.5-11.5H12z',
+        'Practicar', c.ejercicios.length + ' ejercicios · ' + v + ' variantes', ' navcard--accent'));
+    }
+    el.subCards.innerHTML = tarjetas.join('');
+
+    var g = $('goGram'), vo = $('goVoc'), pr = $('goPrac');
+    if (g)  g.addEventListener('click', pantallaGramatica);
+    if (vo) vo.addEventListener('click', pantallaVocabulario);
+    if (pr) pr.addEventListener('click', empezarPractica);
+
+    mostrar('sub');
+  }
+
+  function tarjetaNav(id, path, titulo, sub, extra) {
+    return '<button class="navcard' + extra + '" id="' + id + '">' +
+      '<span class="navcard__icon" aria-hidden="true">' +
+        '<svg viewBox="0 0 24 24"><path d="' + path + '"/></svg></span>' +
+      '<span class="navcard__body">' +
+        '<span class="navcard__title">' + esc(titulo) + '</span>' +
+        '<span class="navcard__sub">' + esc(sub) + '</span>' +
+      '</span>' +
+      '<span class="navcard__chev" aria-hidden="true">' +
+        '<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>' +
+    '</button>';
   }
 
   // ─────────── Pantalla: gramática ───────────
@@ -667,7 +843,7 @@
     var u = estado.unidad;
     el.topbarTitle.textContent = 'Gramática · ' + u.titulo;
 
-    el.gramContent.innerHTML = u.gramatica.map(function (g) {
+    el.gramContent.innerHTML = delSubnivel(u.gramatica, estado.subnivel).map(function (g) {
       var ejemplos = '';
       if (g.ejemplos && g.ejemplos.length) {
         ejemplos = '<ul class="exlist">' + g.ejemplos.map(function (e) {
@@ -720,7 +896,8 @@
     guardarProgreso();
     el.topbarTitle.textContent = 'Vocabulario · ' + u.titulo;
 
-    el.vocabContent.innerHTML = '<div class="vocabgroup">' + u.vocabulario.map(fichaVocabulario).join('') + '</div>';
+    el.vocabContent.innerHTML = '<div class="vocabgroup">' +
+      delSubnivel(u.vocabulario, estado.subnivel).map(fichaVocabulario).join('') + '</div>';
 
     mostrar('vocab');
   }
@@ -1262,7 +1439,11 @@
   function empezarPractica() {
     var u = estado.unidad;
     estado.modo = 'unidad';
-    estado.ejercicios = barajar(u.ejercicios).map(function (g) {
+    // En una unidad con subniveles se practica solo el subnivel abierto;
+    // el test final ('test') mezcla los grupos marcados como tales.
+    var grupos = tieneSubniveles(u) ? delSubnivel(u.ejercicios, estado.subnivel) : u.ejercicios;
+    if (!grupos.length) grupos = u.ejercicios;
+    estado.ejercicios = barajar(grupos).map(function (g) {
       return prepararVariante(g, null);
     });
     guardarProgreso();
@@ -1924,7 +2105,13 @@
      modo gernikes). */
   function cargarCurso() {
     if (window.__CURSO__ && MODO_DIALECTO === 'bizkaiera') return Promise.resolve(window.__CURSO__);
-    var indicePath = MODO_DIALECTO === 'gernikes' ? 'data/curso-gernikes.json' : 'data/curso.json';
+    /* Reestructuración en 10 unidades con subniveles: se prueba en local
+       con ?v2 en la dirección, sin tocar el curso actual. Cuando esté
+       decidida, esto desaparece y curso-v2 pasa a ser curso.
+       Ver docs/propuesta-10-unidades.md. */
+    var V2 = MODO_LOCAL && /[?&]v2\b/.test(location.search);
+    var indicePath = V2 ? 'data/curso-v2.json'
+                        : (MODO_DIALECTO === 'gernikes' ? 'data/curso-gernikes.json' : 'data/curso.json');
     return traer(indicePath).then(function (indice) {
       return Promise.all(indice.unidades.map(function (ruta) {
         return traer('data/' + ruta);
