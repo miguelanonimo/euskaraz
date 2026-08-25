@@ -1112,13 +1112,12 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Muy bien, gracias.",
-          "eu": "Oso ondo, eskerrik asko.",
+          "es": "¡Hola! ¿Qué tal?",
+          "eu": "Kaixo! Zer moduz?",
           "palabras": [
-            "Oso",
-            "ondo,",
-            "eskerrik",
-            "asko."
+            "Kaixo!",
+            "Zer",
+            "moduz?"
           ]
         },
         {

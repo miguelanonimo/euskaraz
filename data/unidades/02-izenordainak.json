@@ -173,6 +173,125 @@
       "nota": null,
       "audio": "unidades/u2/polita.mp3",
       "categoria": "adjetivo"
+    },
+    {
+      "eu": "nirekin",
+      "es": "conmigo",
+      "nota": "«nire» + «-kin». Bizkaiera: «nigaz».",
+      "audio": "unidades/u2/nirekin.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zurekin",
+      "es": "contigo",
+      "nota": "«zure» + «-kin». Bizkaiera: «zugaz».",
+      "audio": "unidades/u2/zurekin.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "neure",
+      "es": "mi propio",
+      "nota": null,
+      "audio": "unidades/u2/neure.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zeure",
+      "es": "tu propio",
+      "nota": null,
+      "audio": "unidades/u2/zeure.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "geure",
+      "es": "nuestro propio",
+      "nota": null,
+      "audio": "unidades/u2/geure.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zeuek",
+      "es": "vosotros mismos/as",
+      "nota": null,
+      "audio": "unidades/u2/zeuek.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "nire etxea",
+      "es": "mi casa",
+      "nota": null,
+      "audio": "unidades/u2/nire-etxea.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zure laguna",
+      "es": "tu amigo/a",
+      "nota": null,
+      "audio": "unidades/u2/zure-laguna.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "gure herria",
+      "es": "nuestro pueblo",
+      "nota": null,
+      "audio": "unidades/u2/gure-herria.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "haren izena",
+      "es": "su nombre",
+      "nota": null,
+      "audio": "unidades/u2/haren-izena.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "nire herria",
+      "es": "mi pueblo",
+      "nota": null,
+      "audio": "unidades/u2/nire-herria.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zure etxea",
+      "es": "tu casa",
+      "nota": null,
+      "audio": "unidades/u2/zure-etxea.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "gure laguna",
+      "es": "nuestro amigo/a",
+      "nota": null,
+      "audio": "unidades/u2/gure-laguna.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "haien izena",
+      "es": "su nombre (de ellos)",
+      "nota": null,
+      "audio": "unidades/u2/haien-izena.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "nire etxe handia",
+      "es": "mi casa grande",
+      "nota": null,
+      "audio": "unidades/u2/nire-etxe-handia.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "zure herri txikia",
+      "es": "tu pueblo pequeño",
+      "nota": null,
+      "audio": "unidades/u2/zure-herri-txikia.mp3",
+      "categoria": "otros"
+    },
+    {
+      "eu": "gure lagun polita",
+      "es": "nuestro amigo/a guapo/a",
+      "nota": null,
+      "audio": "unidades/u2/gure-lagun-polita.mp3",
+      "categoria": "otros"
     }
   ],
   "gramatica": [
@@ -231,7 +350,7 @@
     },
     {
       "titulo": "Los posesivos: nire, zure, gure…",
-      "cuerpo": "Los posesivos salen de los pronombres, y se parecen bastante. Van <b>delante</b> del sustantivo, como en castellano:\n\n<b>nire</b> — mi\n<b>zure</b> — tu, su (de usted)\n<b>haren</b> — su (de él, de ella)\n<b>gure</b> — nuestro\n<b>zuen</b> — vuestro\n<b>haien</b> — su (de ellos)\n\nY el sustantivo mantiene su artículo <b>-a</b>:\n\n<b>nire etxea</b> — mi casa\n<b>zure laguna</b> — tu amigo\n<b>gure herria</b> — nuestro pueblo\n\nSi además metes un adjetivo, va al final del grupo, con el artículo pegado a él:\n\n<b>nire etxe handia</b> — mi casa grande",
+      "cuerpo": "Los posesivos salen de los pronombres, y se parecen bastante. Van <b>delante</b> del sustantivo, como en castellano:\n\n<b>nire</b> — mi\n<b>zure</b> — tu, su (de usted)\n<b>haren</b> — su (de él, de ella)\n<b>gure</b> — nuestro\n<b>zuen</b> — vuestro\n<b>haien</b> — su (de ellos)\n\nAquí hay algo sin equivalente en castellano: en euskera «el/la» no es una palabra suelta, es esa terminación <b>-a</b> que ya venías viendo pegada al sustantivo (<i>etxea</i>, <i>laguna</i>, <i>herria</i>…). Cuando pones un posesivo delante, esa <b>-a</b> no se cae, aunque en castellano «mi casa» no lleve «la»:\n\n<b>nire etxea</b> — mi casa (literalmente, «mi casa-la»)\n<b>zure laguna</b> — tu amigo\n<b>gure herria</b> — nuestro pueblo\n\nSi además metes un adjetivo, va al final del grupo, con el artículo pegado a él:\n\n<b>nire etxe handia</b> — mi casa grande",
       "ejemplos": [
         {
           "eu": "nire izena",
@@ -289,7 +408,7 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Los pronombres son terreno muy dialectal, y en Bizkaia hay dos cosas que notarás enseguida.\n\n<b>Las formas reforzadas son las normales</b>\nDonde el batua dice <i>ni</i>, en Bizkaia se oye <b>neu</b> con muchísima frecuencia, sin necesidad de énfasis especial. Lo mismo con <b>zeu, geu, zeuek</b>. Y los posesivos <b>neure, zeure, geure</b> compiten de tú a tú con <i>nire, zure, gure</i>.\n\n<b>El «hika» está vivo</b>\nEse <i>hi</i> que en batua parece una curiosidad de manual, en muchos pueblos de Bizkaia se usa a diario entre amigos y en familia. Si oyes formas verbales que no reconoces de nada, con <i>-k</i> o <i>-n</i> al final, probablemente sea hika.\n\n<b>«-gaz» en lugar de «-rekin»</b>\nPara decir «conmigo, contigo», el batua usa <i>-rekin</i>: <i>nirekin, zurekin</i>. El bizkaiera usa <b>-gaz</b>: <b>nigaz, zugaz</b>. Y para «con quién», donde el batua pregunta <i>norekin?</i>, en Bilbao se dice <b>nogaz?</b>",
+      "cuerpo": "Los pronombres son terreno muy dialectal, y en Bizkaia hay dos cosas que notarás enseguida.\n\n<b>Las formas reforzadas son las normales</b>\nDonde el batua dice <i>ni</i>, en Bizkaia se oye <b>neu</b> con muchísima frecuencia, sin necesidad de énfasis especial. Lo mismo con <b>zeu, geu, zeuek</b>. Y los posesivos <b>neure, zeure, geure</b> compiten de tú a tú con <i>nire, zure, gure</i>.\n\n<b>El «hika» está vivo</b>\nEse <i>hi</i> que en batua parece una curiosidad de manual sigue vivo en muchos pueblos de Bizkaia, sobre todo entre amigos y en familia. Si oyes formas verbales que no reconoces de nada, con <i>-k</i> o <i>-n</i> al final, probablemente sea hika.\n\n<b>«-gaz» en lugar de «-rekin»</b>\nPara decir «conmigo, contigo», el batua usa <i>-rekin</i>: <i>nirekin, zurekin</i>. El bizkaiera usa <b>-gaz</b>: <b>nigaz, zugaz</b>. Y para «con quién», donde el batua pregunta <i>norekin?</i>, en Bilbao se dice <b>nogaz?</b>",
       "ejemplos": [
         {
           "eu": "Neu naz.",
@@ -307,11 +426,6 @@
           "audio": "unidades/u2/nogaz-zagoz.mp3"
         }
       ]
-    },
-    {
-      "titulo": "Un aviso sobre los dialectos",
-      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
-      "ejemplos": []
     }
   ],
   "ejercicios": [
@@ -914,7 +1028,7 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "su amigo (de ella)",
+          "es": "su amigo bonito (de ella)",
           "eu": "haren lagun polita",
           "palabras": [
             "haren",

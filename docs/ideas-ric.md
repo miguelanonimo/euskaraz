@@ -362,6 +362,8 @@ comparten este error (confirmado de oído en `jaten dut`).
   izquierda, se dice ____» (y su pareja con "derecha"/"girar a la
   derecha").
 
+### Errores de contenido en ejercicios (para el próximo lote de cambios)
+
 - **2026-08-18 · Unidad 2, ejercicio de ordenar: falta "bonito/a" en el
   enunciado castellano.** `data/unidades/02-izenordainak.json:917`. El
   enunciado (`es`) dice «su amigo (de ella)», pero la frase en euskera a
@@ -1122,5 +1124,82 @@ y la ropa no figura como tema explícito de A1.
   lo que falta como sub-unidades, que es un formato ya montado y probado.
 
 ## Implementadas
+
+## Pendientes de comentar con Ric
+
+Notas de Miguel/Claude tras una auditoría del curso, en el mismo formato:
+fecha · qué se vio · qué se propone. Para decidir con Ric antes de tocar
+código.
+
+### Tope al backlog de repaso: no bloquear el avance a unidades nuevas
+
+- **2026-08-20 · Detectado en auditoría.** `elegirSesion` prioriza siempre
+  lo vencido sobre lo nuevo, sin ningún tope — si el usuario vuelve tras
+  semanas de ausencia, el backlog puede llenar la sesión entera y no
+  dejar hueco a contenido nuevo hasta vaciarlo del todo. Puede ser la
+  compensación correcta (no olvidar antes que avanzar), pero **propuesta
+  de Miguel: dejar una proporción fija, por ejemplo 80% repaso antiguo /
+  20% contenido nuevo**, en vez de que lo vencido pueda ocupar el 100% de
+  la sesión. Afecta a `js/app.js` (`elegirSesion`, usado tanto por el
+  repaso mezclado como por el de vocabulario).
+
+### Ejercicios de flexión gramatical (conjugar, declinar) en unidades con casos nuevos
+
+- **2026-08-20 · Detectado en auditoría.** Las unidades que introducen un
+  caso gramatical nuevo (u5 ergativo, u6 locativo, u10 dativo) lo explican
+  en prosa y lo prueban con frases concretas ya resueltas, no con un
+  ejercicio de "conjuga/declina esto en los casos vistos" — todo pasa por
+  los mismos 5 tipos de ejercicio, pensados para vocabulario y frase
+  suelta. **Apunte de Miguel:** puede que ya baste con lo que hay —
+  "traduce esta frase" y "¿cuál es el pasado de este verbo? (elige entre
+  cuatro)" ya ejercitan la flexión indirectamente. Decidir con Ric si hace
+  falta algo más explícito o si el tipo `opcion`/`traducir` ya cubre el
+  hueco.
+
+### Fusionar el ejercicio de escucha
+
+- **2026-08-20 · Ya construido, pendiente de decisión.** Los dos formatos
+  de escucha (elegir qué significa lo que oyes / escribir su traducción,
+  sin ver el euskera escrito) están terminados y probados en la rama
+  `experimento/ejercicio-listening`, sin fusionar a `main` todavía.
+  **Link de prueba:**
+  https://euskaraz-git-experimento-ejercicio-listening-anonimostudio.vercel.app
+
+## Implementadas
+
+- **2026-08-25 · Respuestas flexibles en castellano**, portado de
+  `ric/trabajo` (commit `01ec749`, con Claude Fable). El campo `es`
+  está escrito para leerse, no para compararse — «pequeño/a» marcaba
+  como fallo teclear «pequeño». `variantesRespuesta()` expande
+  barra/coma/paréntesis/artículo; afectaba a un tercio del
+  vocabulario. Integrado con el "casi correcto" del mismo día:
+  `respuestaMasCercana()` ahora compara contra todas las variantes
+  aceptadas.
+- **2026-08-24 · Seis piezas de `ric/trabajo` traídas a `main`**: iconos
+  y `site.webmanifest` (nunca llegaron al repo aunque index.html ya los
+  enlazaba), `preguntaOpcion` agrupando distractores por forma (para que
+  la silueta de la respuesta no la delate), restos de la regla falsa
+  "-tik pierde la k" en U9/U12 de los dos datasets, "diot" corregido a
+  "dio" en U10 (nunca se enseñó, se colaba sin que hubiera forma de
+  saberlo), "Gernikés" renombrado a "Gernikera", y la ambigüedad
+  izquierda/derecha de U9 reformulada. La corrección de los 4 ejercicios
+  Gernika/Bilbao de esa misma rama NO se trajo — ya arreglados en `main`
+  con "Euskal Herria" en vez de Bilbao, por petición explícita de que
+  fuera más neutro.
+- **2026-08-20 · Las 45 palabras de la tabla de "audios con pronunciación
+  mal generada"** regeneradas con nota de pronunciación específica por
+  palabra, silencio inicial recortado, publicadas. Sigue en pie el aviso
+  de que un mismo patrón (H, Z, "-tua"...) no falla igual en todas las
+  palabras — cualquier audio nuevo que suene mal se trata como caso
+  suelto, no como confirmación del patrón entero.
+- **2026-08-19 · Audio automático quitado de práctica/repaso**, con la
+  excepción acordada del icono de altavoz explícito en la caja de "toca
+  las parejas".
+- **2026-08-19 · Porcentaje de unidad coloreado por tramos en la home**
+  (oculto <50%, ámbar 50-69%, verde ≥70%).
+- **2026-08-19 · Filtro por categoría en el repaso de vocabulario.**
+- **2026-08-19 · Correcciones de contenido objetivas**: regla falsa
+  "-tik pierde la k" en U9, "polita" que faltaba en el enunciado de U2,
+  pista que resolvía el ejercicio en U4.
 
 ## Descartadas (y por qué)

@@ -127,7 +127,7 @@
     },
     {
       "eu": "arratsaldea",
-      "es": "la tarde",
+      "es": "la tarde (el momento del día)",
       "nota": null,
       "categoria": "sustantivo",
       "audio": "unidades/u7/arratsaldea.mp3"
@@ -232,7 +232,7 @@
     },
     {
       "eu": "berandu",
-      "es": "tarde",
+      "es": "tarde (llegar tarde)",
       "nota": "Adverbio. No confundir con «arratsaldea», que es el rato de la tarde.",
       "categoria": "otros",
       "audio": "unidades/u7/berandu.mp3"
@@ -331,7 +331,7 @@
     },
     {
       "titulo": "Cómo suena esto en Gernika",
-      "cuerpo": "Aquí el bizkaiera no cambia un detalle: cambia <b>los nombres de los días</b>. Y es de lo primero que descoloca a quien llega con batua aprendido.\n\n<b>astelehena</b> — igual (a veces <i>astelena</i>)\n<b>martitzena</b> — batua: asteartea\n<b>eguaztena</b> — batua: asteazkena\n<b>eguena</b> — batua: osteguna\n<b>barikua</b> — batua: ostirala\n<b>zapatua</b> — batua: larunbata\n<b>domeka</b> — batua: igandea\n\nAsí que «el viernes por la noche» por allí es <b>barikuan gabean</b>, no <i>ostiralean gauean</i>. Los carteles y la prensa usan batua; la gente, en casa, sigue con estos.\n\n<b>gaua → gaba</b>\nLa noche es <b>gaba</b> en bizkaiera, de donde sale el <i>gabon</i> de «buenas noches» (gau on). En batua, <i>gaua</i>.\n\n<b>Ze ordu da?</b>\nEl <i>zer</i> del batua se acorta en <b>ze</b> delante de un nombre: <b>Ze ordu da?</b>, <b>Ze egun da gaur?</b>",
+      "cuerpo": "Aquí el bizkaiera no cambia un detalle: cambia <b>los nombres de los días</b>. Y es de lo primero que descoloca a quien llega con batua aprendido.\n\n<b>astelehena</b> — igual (a veces <i>astelena</i>)\n<b>martitzena</b> — batua: asteartea\n<b>eguaztena</b> — batua: asteazkena\n<b>eguena</b> — batua: osteguna\n<b>barikua</b> — batua: ostirala\n<b>zapatua</b> — batua: larunbata\n<b>domeka</b> — batua: igandea\n\nAsí que «el viernes por la noche» por allí es <b>barikuan gabean</b>, no <i>ostiralean gauean</i>. Los carteles y la prensa usan batua; la gente, en casa, sigue con estos.\n\n<b>gaua → gaba</b>\nLa noche es <b>gaba</b> en bizkaiera; en batua, <i>gaua</i>. Ojo: no confundir con «gabon» (buenas noches), que viene de <i>gau</i> + <i>on</i> y se dice igual en los dos registros — no es una forma bizkaina.\n\n<b>Ze ordu da?</b>\nEl <i>zer</i> del batua se acorta en <b>ze</b> delante de un nombre: <b>Ze ordu da?</b>, <b>Ze egun da gaur?</b>",
       "ejemplos": [
         {
           "eu": "Zapatuan Gernikan nago.",
@@ -1116,7 +1116,7 @@
             "gaur"
           ],
           "correcta": 0,
-          "explicacion": "«gaba», de donde sale el «gabon» de buenas noches."
+          "explicacion": "«gaba» es la noche en bizkaiera. «Gabon» no viene de aquí: es «gau» + «on», igual en los dos registros."
         },
         {
           "tipo": "opcion",
