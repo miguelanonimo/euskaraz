@@ -1085,6 +1085,7 @@ body.silencioso .pair__play{ display: none; }
 .btn--feedback{ background: var(--tinta); color: var(--papel); border-color: var(--tinta); }
 .is-ok-fb .btn--feedback{ background: var(--bien-txt); border-color: var(--bien-txt); }
 .is-mal-fb .btn--feedback{ background: var(--acento); border-color: var(--acento); }
+.is-leve-fb .btn--feedback{ background: var(--progreso-empezada); border-color: var(--progreso-empezada); }
 
 /* ═══════════ FEEDBACK ═══════════ */
 
@@ -1098,6 +1099,7 @@ body.silencioso .pair__play{ display: none; }
 .feedback[hidden]{ display: none; }
 .feedback.is-ok-fb{ border-top-color: var(--bien); }
 .feedback.is-mal-fb{ border-top-color: var(--acento); }
+.feedback.is-leve-fb{ border-top-color: var(--progreso-empezada); }
 
 @keyframes sube{ from{ transform: translateY(100%); } to{ transform: none; } }
 
@@ -1113,6 +1115,7 @@ body.silencioso .pair__play{ display: none; }
 }
 .is-ok-fb .feedback__icon{ color: var(--bien-txt); }
 .is-mal-fb .feedback__icon{ color: var(--acento); }
+.is-leve-fb .feedback__icon{ color: var(--progreso-empezada); }
 
 .feedback__title{
   font-family: var(--f-display);
@@ -1122,6 +1125,7 @@ body.silencioso .pair__play{ display: none; }
 }
 .is-ok-fb .feedback__title{ color: var(--bien-txt); }
 .is-mal-fb .feedback__title{ color: var(--acento); }
+.is-leve-fb .feedback__title{ color: var(--progreso-empezada); }
 
 .feedback__body{
   margin: calc(var(--u) * 1.5) 0 calc(var(--u) * 3);

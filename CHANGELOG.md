@@ -690,3 +690,36 @@ al resto de ajustes de la cuenta.
 `.home-foot` no tenía margen debajo — la nota de "reiniciar progreso"
 quedaba pegada al botón de Cerrar sesión. Mismo espacio ahora arriba y
 abajo del bloque (el que ya había antes del divider).
+
+## 2026-08-25 — Desambigua "tarde" en el vocabulario de U7/U8
+
+`berandu` (adverbio, "llegar tarde") y `arratsaldea` (sustantivo, "el
+rato de la tarde") traducían las dos como «tarde» a secas — en el
+repaso de vocabulario, sin más contexto que esa palabra suelta, no
+había forma de saber cuál de las dos se pedía. `berandu` ya llevaba una
+`nota` que lo aclaraba, pero la nota no siempre está a la vista (solo
+al fallar). Corregido en el propio campo `es`, que se ve siempre:
+"tarde (llegar tarde)" / "la tarde (el momento del día)", en los dos
+datasets (`data/unidades/07-ordua.json`, `08-egiten.json` y sus
+equivalentes en `unidades-gernikes/`).
+
+## 2026-08-25 — Un tercer nivel de acierto: "casi correcto"
+
+En los ejercicios de escribir (`traducir`/`teclear`), antes solo había
+bien o mal. Ahora un fallo pequeño —falta un sufijo, una letra cambiada
+en una palabra larga, una palabra suelta distinta en una frase— se
+trata como acierto (cuenta para el calendario y el marcador, "se da por
+resuelto") pero avisa distinto: título "Casi correcto" en vez de "Oso
+ondo!", color ámbar en vez de verde (mismo tono que "sigue por donde lo
+dejaste" en la Home), sin mostrar el diff de fallo.
+
+`esCasiCorrecto()` reutiliza el mismo alineado que ya monta el diff
+visual (`alinear()`), sin necesitar una distancia de edición aparte:
+cuenta cuántas letras (o palabras, en una frase) no coinciden entre lo
+escrito y la respuesta correcta más parecida de las válidas
+(`respuestaMasCercana()`, por si hay sinónimos). Se admite como mucho 1
+de diferencia — y con un límite a propósito: palabras de tres letras o
+menos no dan margen (en euskera ahí una letra puede ser otra palabra
+entera, "ni"/"hi"), así que no hay "casi" que valga. Verificado con una
+tabla de casos: `etxe`/`etxea` y `kaiso`/`kaixo` sí perdonan,
+`ni`/`hi` y `zu`/`ni` no.

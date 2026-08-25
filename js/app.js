@@ -1916,9 +1916,15 @@
   function corregirTraducir(ej) {
     var crudo = $('typebox').value;
     var dado  = normalizar(crudo);
-    var ok = ej.respuestas.some(function (r) { return normalizar(r) === dado; });
+    var exacto = ej.respuestas.some(function (r) { return normalizar(r) === dado; });
     $('typebox').blur();
-    return { ok: ok, cuerpo: ok ? '' : comparacion(dado, normalizar(ej.respuestas[0]), true) };
+    if (exacto) return { ok: true, leve: false, cuerpo: '' };
+    var cercana = respuestaMasCercana(dado, ej.respuestas);
+    var leve = esCasiCorrecto(dado, cercana);
+    return {
+      ok: leve, leve: leve,
+      cuerpo: leve ? '' : comparacion(dado, normalizar(ej.respuestas[0]), true)
+    };
   }
 
   // — Teclear una palabra suelta (vocabulario) —
@@ -1948,15 +1954,19 @@
 
   function corregirTeclear(ej) {
     var dado = normalizar($('typebox').value);
-    var ok = ej.respuestas.some(function (r) { return normalizar(r) === dado; });
+    var exacto = ej.respuestas.some(function (r) { return normalizar(r) === dado; });
     $('typebox').blur();
-    if (ok) return { ok: true, cuerpo: ej.explicacion ? esc(ej.explicacion) : '' };
+    if (exacto) return { ok: true, leve: false, cuerpo: ej.explicacion ? esc(ej.explicacion) : '' };
+    var cercana = respuestaMasCercana(dado, ej.respuestas);
+    if (esCasiCorrecto(dado, cercana)) {
+      return { ok: true, leve: true, cuerpo: ej.explicacion ? esc(ej.explicacion) : '' };
+    }
     // Letra a letra para una palabra suelta, por palabras si la solución
     // tiene más de una — comparar "tu propio" contra lo escrito letra a
     // letra mezclaba coincidencias sueltas sin sentido (ver comparacion()).
     var porPalabras = normalizar(ej.solucion).indexOf(' ') !== -1;
     return {
-      ok: false,
+      ok: false, leve: false,
       cuerpo: comparacion(dado, normalizar(ej.solucion), porPalabras) +
               (ej.explicacion ? '<p class="dif__nota">' + esc(ej.explicacion) + '</p>' : '')
     };
@@ -1990,6 +2000,46 @@
     return { izq: izq, der: der };
   }
 
+  /* Cuántas unidades (letras o palabras) no coinciden entre lo escrito
+     y la respuesta correcta, reusando el mismo alineado que ya monta el
+     diff visual — no hace falta una distancia de edición aparte. Cuenta
+     el lado más largo de sobras/faltas, así que una letra cambiada por
+     otra (una sustitución) cuenta una vez, no dos. */
+  function distanciaAlineada(dado, bueno, porPalabras) {
+    var a = porPalabras ? dado.split(' ') : dado.split('');
+    var b = porPalabras ? bueno.split(' ') : bueno.split('');
+    var al = alinear(a, b);
+    var malIzq = al.izq.filter(function (p) { return p[1]; }).length;
+    var malDer = al.der.filter(function (p) { return p[1]; }).length;
+    return Math.max(malIzq, malDer);
+  }
+
+  /* De las respuestas válidas (puede haber sinónimos), la que menos se
+     aleja de lo escrito — para juzgar "casi correcto" contra la más
+     parecida, no contra la primera de la lista al azar. */
+  function respuestaMasCercana(dado, respuestas) {
+    var mejorTexto = normalizar(respuestas[0]), mejorDistancia = Infinity;
+    respuestas.forEach(function (r) {
+      var texto = normalizar(r);
+      var d = distanciaAlineada(dado, texto, texto.indexOf(' ') !== -1);
+      if (d < mejorDistancia) { mejorDistancia = d; mejorTexto = texto; }
+    });
+    return { texto: mejorTexto, distancia: mejorDistancia };
+  }
+
+  /* Segundo nivel de acierto: un fallo tan pequeño que no vale la pena
+     tratarlo como un fallo de verdad —falta un sufijo/artículo, una
+     letra cambiada en una palabra larga—, frente a uno que sí lo es
+     —la palabra está irreconocible, o falta más de una pieza en una
+     frase—. Palabras de tres letras o menos no dan margen: en euskera
+     ahí una sola letra puede ser otra palabra entera ("ni"/"hi"), así
+     que no hay "casi" que valga. */
+  function esCasiCorrecto(dado, cercana) {
+    if (!dado) return false;
+    if (cercana.texto.indexOf(' ') !== -1) return cercana.distancia === 1;
+    return cercana.texto.length > 3 && cercana.distancia === 1;
+  }
+
   function pintarTrozos(trozos, junta) {
     return trozos.map(function (p) {
       return p[1] ? '<u class="dif">' + esc(p[0]) + '</u>' : esc(p[0]);
@@ -2021,13 +2071,22 @@
     else if (ej.tipo === 'teclear')  r = corregirTeclear(ej);
     else return;
 
-    resolver(r.ok, r.ok ? 'Oso ondo!' : 'No exactamente', r.cuerpo);
+    var titulo = r.leve ? 'Casi correcto' : (r.ok ? 'Oso ondo!' : 'No exactamente');
+    resolver(r.ok, titulo, r.cuerpo, r.leve);
   }
 
   /* Único punto por el que pasa toda respuesta, venga del botón de
      comprobar o del emparejado, que se autocorrige. Es aquí donde el
-     calendario se entera de si se ha acertado. */
-  function resolver(ok, titulo, cuerpo) {
+     calendario se entera de si se ha acertado.
+
+     `leve` distingue un acierto limpio de uno con un fallo pequeño
+     (falta un sufijo, una letra cambiada en una palabra larga — ver
+     esCasiCorrecto) que se da por resuelto igual —cuenta como acierto
+     para el calendario y el marcador— pero se avisa con otro color y
+     otro título, en vez de fingir que no ha pasado nada. Solo lo
+     producen corregirTraducir/corregirTeclear; el resto de tipos
+     siempre llega con leve=false. */
+  function resolver(ok, titulo, cuerpo, leve) {
     var ej = ejActual();
     estado.resuelto = true;
     if (estado.modo === 'vocab') {
@@ -2041,7 +2100,7 @@
       var audio = audioDeRespuesta(ej);
       if (audio) reproducir(audio);
     }
-    feedback(ok, titulo, cuerpo);
+    feedback(ok, titulo, cuerpo, leve);
   }
 
   function registrar(ok) {
@@ -2061,10 +2120,10 @@
 
   // ─────────── Feedback ───────────
 
-  function feedback(ok, titulo, cuerpo) {
-    el.feedback.className = 'feedback ' + (ok ? 'is-ok-fb' : 'is-mal-fb');
+  function feedback(ok, titulo, cuerpo, leve) {
+    el.feedback.className = 'feedback ' + (leve ? 'is-leve-fb' : (ok ? 'is-ok-fb' : 'is-mal-fb'));
     el.feedback.hidden = false;
-    el.feedbackIcon.textContent = ok ? '✓' : '✕';
+    el.feedbackIcon.textContent = leve ? '~' : (ok ? '✓' : '✕');
     el.feedbackTitle.textContent = titulo;
     el.feedbackBody.innerHTML = cuerpo || '';
     el.actionbar.hidden = true;

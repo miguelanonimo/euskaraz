@@ -127,7 +127,7 @@
     },
     {
       "eu": "arratsaldea",
-      "es": "la tarde",
+      "es": "la tarde (el momento del día)",
       "nota": null,
       "audio": "unidades/u7/arratsaldea.mp3",
       "categoria": "sustantivo"
@@ -232,7 +232,7 @@
     },
     {
       "eu": "berandu",
-      "es": "tarde",
+      "es": "tarde (llegar tarde)",
       "nota": "Adverbio. No confundir con «arratsaldea», que es el rato de la tarde.",
       "audio": "unidades/u7/berandu.mp3",
       "categoria": "otros"
