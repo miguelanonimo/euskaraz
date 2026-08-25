@@ -163,6 +163,93 @@
       .trim();
   }
 
+  /* ── Respuestas flexibles (detectado por Ric) ──
+
+     El campo `es` está escrito para leerse, no para compararse: «pequeño/a»,
+     «coger, tomar», «(yo) soy». Comparando la cadena entera, teclear
+     «pequeño» —que es correcto— se marcaba como fallo. Afectaba a 116 de
+     las 487 entradas del curso.
+
+     Esto expande una respuesta en todas las formas aceptables. Se aplica
+     al corregir, no al construir la pregunta, para que valga en cualquier
+     formato que compare texto tecleado, incluidos los que aún no existen.
+
+     Sobre las respuestas en euskera no hace nada: ningún campo `eu` del
+     curso lleva barra, coma ni paréntesis (comprobado). */
+
+  var ARTICULO_ES = /^(el|la|los|las|un|una|unos|unas)\s+/;
+
+  /* Barra dentro de una palabra. Si lo que sigue es una sola letra es una
+     contracción de género (pequeño/a → pequeña); si son más, dos formas
+     cortas alternativas (el/la → el, la). */
+  function expandirBarra(tok) {
+    if (tok.indexOf('/') === -1) return [tok];
+    var p = tok.split('/');
+    if (p.length !== 2 || !p[0]) return [tok];
+    if (p[1].length === 1) return [p[0], p[0].slice(0, -1) + p[1]];
+    return [p[0], p[1]];
+  }
+
+  /* Combina las alternativas de cada palabra. Con tope, para que una
+     entrada con varias barras no dispare la lista. */
+  function combinar(listas, tope) {
+    var out = [''];
+    for (var i = 0; i < listas.length; i++) {
+      var sig = [];
+      for (var j = 0; j < out.length; j++) {
+        for (var k = 0; k < listas[i].length; k++) {
+          sig.push(out[j] ? out[j] + ' ' + listas[i][k] : listas[i][k]);
+          if (sig.length >= tope) return sig;
+        }
+      }
+      out = sig;
+    }
+    return out;
+  }
+
+  function variantesRespuesta(texto) {
+    var vistas = {}, salida = [];
+    function meter(t) {
+      var n = normalizar(t);
+      if (n && !vistas[n]) { vistas[n] = true; salida.push(n); }
+    }
+
+    // Comas y barras con espacio separan alternativas completas.
+    String(texto).split(/\s*,\s*|\s+\/\s+/).forEach(function (alt) {
+      if (!alt.trim()) return;
+      // Lo que va entre paréntesis es aclaración: vale con y sin ello.
+      var formas = [alt];
+      if (alt.indexOf('(') !== -1) formas.push(alt.replace(/\([^)]*\)/g, ' '));
+      formas.forEach(function (txt) {
+        var toks = txt.trim().split(/\s+/).filter(Boolean);
+        combinar(toks.map(expandirBarra), 12).forEach(function (v) {
+          meter(v);
+          var sinArt = normalizar(v).replace(ARTICULO_ES, '');
+          if (sinArt) meter(sinArt);   // «el amigo» o «amigo», las dos
+        });
+      });
+    });
+
+    meter(texto);
+    return salida;
+  }
+
+  /* ¿Acierta lo tecleado contra alguna de las respuestas buenas? */
+  function aciertaTecleado(dado, respuestas) {
+    return (respuestas || []).some(function (r) {
+      return variantesRespuesta(r).indexOf(dado) !== -1;
+    });
+  }
+
+  /* Cuando la palabra sirve para los dos géneros, decirlo: es una de las
+     cosas buenas del euskera y este es el sitio donde se aprende sola. */
+  function notaDeGenero(respuestas) {
+    var hay = (respuestas || []).some(function (r) {
+      return /\S\/[a-záéíóú]\b/.test(String(r));
+    });
+    return hay ? 'Vale para masculino y femenino: el adjetivo en euskera no tiene género.' : '';
+  }
+
   /* Para el buscador: además quita tildes, para que «musica»
      encuentre «música» y «que» encuentre «qué». La eñe se
      conserva, porque en euskera distingue palabras. */
@@ -1454,9 +1541,13 @@
   function corregirTraducir(ej) {
     var crudo = $('typebox').value;
     var dado  = normalizar(crudo);
-    var ok = ej.respuestas.some(function (r) { return normalizar(r) === dado; });
+    var ok = aciertaTecleado(dado, ej.respuestas);
     $('typebox').blur();
-    return { ok: ok, cuerpo: ok ? '' : comparacion(dado, normalizar(ej.respuestas[0]), true) };
+    if (ok) {
+      var nota = notaDeGenero(ej.respuestas);
+      return { ok: true, cuerpo: nota ? '<p class="dif__nota">' + esc(nota) + '</p>' : '' };
+    }
+    return { ok: false, cuerpo: comparacion(dado, normalizar(ej.respuestas[0]), true) };
   }
 
   // — Teclear una palabra suelta (vocabulario) —
@@ -1482,9 +1573,14 @@
 
   function corregirTeclear(ej) {
     var dado = normalizar($('typebox').value);
-    var ok = ej.respuestas.some(function (r) { return normalizar(r) === dado; });
+    var ok = aciertaTecleado(dado, ej.respuestas);
     $('typebox').blur();
-    if (ok) return { ok: true, cuerpo: ej.explicacion ? esc(ej.explicacion) : '' };
+    if (ok) {
+      var extra = notaDeGenero(ej.respuestas);
+      var base  = ej.explicacion ? esc(ej.explicacion) : '';
+      if (extra) base += '<p class="dif__nota">' + esc(extra) + '</p>';
+      return { ok: true, cuerpo: base };
+    }
     return {
       ok: false,
       cuerpo: comparacion(dado, normalizar(ej.solucion), false) +
