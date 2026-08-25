@@ -1,8 +1,25 @@
 # -*- coding: utf-8 -*-
 import json, io, os, re, sys, unicodedata
 
+# OJO: BASE se calcula desde la ubicación de ESTE archivo, no desde el
+# directorio en que lo lances. Si tienes una copia del proyecto en otro
+# sitio, cada copia se verifica a sí misma (ya nos costó un rato).
 BASE = os.path.dirname(os.path.abspath(__file__))
-idx = json.load(io.open(os.path.join(BASE, "data/curso.json"), encoding="utf-8"))
+
+# Sin argumentos verifica el curso publicado; `v2`, el reestructurado en
+# 10 unidades. Antes solo miraba el primero, así que el contenido nuevo
+# no lo revisaba nadie — y ahí es donde apareció el fallo de la pista de
+# «Me llamo Ane».
+CURSOS = {"": "data/curso.json",
+          "v1": "data/curso.json",
+          "v2": "data/curso-v2.json",
+          "gernikes": "data/curso-gernikes.json"}
+CURSO = sys.argv[1] if len(sys.argv) > 1 else ""
+if CURSO not in CURSOS:
+    sys.exit("Cursos: %s" % ", ".join(k for k in CURSOS if k))
+INDICE = CURSOS[CURSO]
+print("Verificando %s" % INDICE)
+idx = json.load(io.open(os.path.join(BASE, INDICE), encoding="utf-8"))
 errores, avisos = [], []
 ids, enunciados = {}, {}
 total_v = 0
@@ -29,6 +46,30 @@ RE_EMPIEZA = re.compile(u"[Ee]mpieza por (?:\u00ab([^\u00bb]+)\u00bb|(\\w)\\b)")
 def cifra(t):
     t = t.lower()
     return int(t) if t.isdigit() else PALABRAS.get(t)
+
+# Palabras tan comunes que aparecer en la pista no delata nada.
+MENUDAS = {u"eta", u"bat", u"ez", u"da", u"el", u"la", u"de", u"y", u"o",
+           u"a", u"en", u"es", u"que", u"un", u"una", u"se", u"no"}
+
+
+def pista_delata(eid, v, soluciones):
+    """¿La pista trae ya hechas todas las piezas de alguna solución?
+
+    Una pista debe estrechar el camino, no recorrerlo: si están todas las
+    palabras, el ejercicio se resuelve copiando de la ayuda y no se aprende
+    nada. Lo detectó Ric en «Me llamo Ane», cuya pista decía literalmente
+    las dos respuestas buenas.
+    """
+    pista = set(norm(v.get("pista") or "").split())
+    if not pista:
+        return []
+    for sol in soluciones:
+        piezas = [w for w in norm(sol).split() if w not in MENUDAS]
+        if len(piezas) >= 2 and all(w in pista for w in piezas):
+            return [u"%s: la pista ya trae la solución entera («%s»); "
+                    u"deja la regla y quita las palabras" % (eid, sol)]
+    return []
+
 
 def revisar_pistas(eid, v, sol):
     """Contrasta lo que promete el texto de ayuda con la solución real."""
@@ -97,8 +138,12 @@ for ruta, u in unidades:
         vistos.add(norm(v["eu"]))
         CASTELLANO.setdefault(norm(v["es"]), set()).add(v["eu"])
     for gr in u["gramatica"]:
-        if set(gr) != {"titulo","cuerpo","ejemplos"}:
-            errores.append("%s: ficha de gramática con claves raras" % ruta)
+        # `subnivel` es nuestro: reparte la unidad en tramos internos.
+        # Es opcional; las unidades sin él se pintan como siempre.
+        if not {"titulo","cuerpo","ejemplos"} <= set(gr) or \
+           not set(gr) <= {"titulo","cuerpo","ejemplos","subnivel"}:
+            errores.append("%s: ficha de gramática con claves raras en «%s»: %s"
+                           % (ruta, gr.get("titulo","?"), sorted(gr)))
         for tag in re.findall(r"</?(\w+)>", gr["cuerpo"]):
             if tag not in ("b","i","u"):
                 avisos.append("%s: etiqueta <%s> en «%s»" % (ruta, tag, gr["titulo"]))
@@ -113,8 +158,15 @@ for ruta, u in unidades:
         if gexp["id"] in ids:
             errores.append("id duplicado %s (%s y %s)" % (gexp["id"], ids[gexp["id"]], ruta))
         ids[gexp["id"]] = ruta
+        # En el curso original el id decía en qué unidad vivía el grupo. Al
+        # reestructurar en 10 unidades, los grupos se mudaron conservando su
+        # id, y eso es a propósito: así se sabe de dónde salió cada cosa. El
+        # código nunca lee el prefijo, solo usa el id como llave. Se avisa
+        # para no perderlo de vista, pero no es un fallo.
         if not gexp["id"].startswith(u["id"] + "-"):
-            errores.append("%s: el id %s no empieza por %s-" % (ruta, gexp["id"], u["id"]))
+            (avisos if u.get("subniveles") else errores).append(
+                "%s: el id %s no empieza por %s- (grupo mudado de unidad)"
+                % (ruta, gexp["id"], u["id"]))
         vs = gexp["variantes"]
         if len(vs) != 5:
             errores.append("%s: %s tiene %d variantes" % (ruta, gexp["id"], len(vs)))
@@ -136,6 +188,7 @@ for ruta, u in unidades:
                 if not v.get("pregunta"): errores.append("%s: sin pregunta" % eid)
                 if isinstance(c, int) and 0 <= c < len(ops):
                     errores.extend(revisar_pistas(eid, v, ops[c]))
+                    errores.extend(pista_delata(eid, v, [ops[c]]))
                 clave = norm(v["pregunta"])
             elif t == "pares":
                 ps = v["pares"]
@@ -149,10 +202,15 @@ for ruta, u in unidades:
                 if len(v["palabras"]) < 3:
                     avisos.append("%s: solo %d fichas, demasiado fácil" % (eid, len(v["palabras"])))
                 errores.extend(revisar_pistas(eid, v, v["eu"]))
+                errores.extend(pista_delata(eid, v, [v["eu"]]))
                 clave = norm(v["eu"])
             else:
                 if not v.get("respuestas"): errores.append("%s: sin respuestas" % eid)
-                if v.get("respuestas"): errores.extend(revisar_pistas(eid, v, v["respuestas"][0]))
+                if v.get("respuestas"):
+                    errores.extend(revisar_pistas(eid, v, v["respuestas"][0]))
+                    # Todas, no solo la primera: delatar una alternativa
+                    # es igual de gratis que delatar la principal.
+                    errores.extend(pista_delata(eid, v, v["respuestas"]))
                 for r in v["respuestas"]:
                     if r != norm(r):
                         avisos.append("%s: la respuesta «%s» no está normalizada (se compara en minúsculas y sin puntuación, así que da igual, pero conviene)" % (eid, r))

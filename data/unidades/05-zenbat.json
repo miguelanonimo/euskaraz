@@ -1072,7 +1072,7 @@
             "nik txakurra dut",
             "txakurra dut"
           ],
-          "pista": "«un perro» es «txakur bat»: el número va detrás y el nombre pierde el artículo. También vale «txakurra dut» (tengo perro)."
+          "pista": "El número va detrás del nombre, y delante de un número el sustantivo pierde el artículo: «perro uno», no «el perro uno»."
         },
         {
           "tipo": "traducir",
@@ -1108,7 +1108,7 @@
             "guk etxea dugu",
             "etxea dugu"
           ],
-          "pista": "«una casa» = «etxe bat». «Guk» con -k, y objeto singular → «dugu»."
+          "pista": "El sujeto de «tener» lleva -k al final. El objeto es singular, así que el auxiliar va en la forma de «nosotros»."
         },
         {
           "tipo": "traducir",

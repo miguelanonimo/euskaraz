@@ -432,6 +432,54 @@ igual.
 python3 scripts/servidor-local.py 8321
 ```
 
+### Pistas que entregan la solución en vez de estrecharla (2026-08-25)
+
+Ric, en «Me llamo Ane.» (u4-g11 v3, unidad 2 del curso nuevo): la pista
+decía **«Vale «Ane dut izena» o simplemente «Ane naiz»»**. Es decir, las dos
+respuestas buenas, escritas enteras. *«Es demasiado literal.»* El ejercicio
+se resolvía copiando de la ayuda.
+
+Buscadas todas las iguales por los tres cursos. **Tres ejercicios**, cada uno
+repetido en las tres versiones:
+
+| Ejercicio | Antes | Ahora |
+|---|---|---|
+| «Me llamo Ane.» | *Vale «Ane dut izena» o simplemente «Ane naiz».* | *En euskera no existe «llamarse»: se dice, literalmente, «tengo Ane por nombre».* |
+| «Tengo un perro.» | *…es «txakur bat»… También vale «txakurra dut».* | *El número va detrás del nombre, y delante de un número el sustantivo pierde el artículo: «perro uno», no «el perro uno».* |
+| «Tenemos una casa.» | *«una casa» = «etxe bat». «Guk» con -k … → «dugu».* | *El sujeto de «tener» lleva -k al final. El objeto es singular, así que el auxiliar va en la forma de «nosotros».* |
+
+El criterio: **la pista da la regla, el alumno pone las palabras.** Lo de la
+`-k` de `guk` se queda porque es gramática de verdad; lo que sobraba eran
+las palabras servidas.
+
+**Para que no vuelva:** `verificar.py` tiene ahora `pista_delata()`, que falla
+si todas las piezas de alguna respuesta aparecen sueltas por la pista.
+Probado a la inversa (volviendo a poner la pista vieja) para confirmar que
+salta de verdad.
+
+#### De paso: el verificador no miraba el curso nuevo
+
+Al ir a blindarlo salió que `verificar.py` solo leía `data/curso.json` — las
+17 unidades publicadas. **El curso reestructurado de 10 unidades, donde está
+justo el fallo que encontró Ric, no lo revisaba nadie.** Ahora:
+
+```
+python3 verificar.py            # el publicado
+python3 verificar.py v2         # el de 10 unidades
+python3 verificar.py gernikes   # el de Gernika
+```
+
+Al abrirlo a los tres aparecieron dos cosas más:
+
+- **Las fichas de gramática del v2 llevan `subnivel`** y el verificador lo
+  daba por clave rara: 120 errores falsos. Ya lo conoce.
+- **134 grupos con el id de su unidad de origen** (el de Ric se llama
+  `u4-g11` y vive en la unidad 2). No es un fallo: al mudarlos conservaron
+  el id a propósito, y el código nunca lee el prefijo, solo usa el id como
+  llave. Queda como aviso.
+- **`u1-g06` del gernikés tiene 6 variantes en vez de 5.** Es anterior a
+  todo esto y sigue sin arreglar — pendiente de decidir qué variante sobra.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
