@@ -686,6 +686,48 @@
       "audio": "unidades/u11/jaiak.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.5"
+    },
+    {
+      "eu": "Gabonak",
+      "es": "la Navidad",
+      "nota": "Plural de «gabon». Ver la ficha.",
+      "categoria": "sustantivo",
+      "subnivel": "6.5"
+    },
+    {
+      "eu": "Urte Berri",
+      "es": "el Año Nuevo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.5"
+    },
+    {
+      "eu": "Olentzero",
+      "es": "Olentzero",
+      "nota": "El carbonero que trae los regalos en Navidad.",
+      "categoria": "sustantivo",
+      "subnivel": "6.5"
+    },
+    {
+      "eu": "Aste Santua",
+      "es": "la Semana Santa",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.5"
+    },
+    {
+      "eu": "Inauteriak",
+      "es": "los carnavales",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.5"
+    },
+    {
+      "eu": "jaieguna",
+      "es": "el día festivo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.5"
     }
   ],
   "ejercicios": [

@@ -3055,15 +3055,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«la patata» se dice…",
+          "pregunta": "¿Cuál de estas es una verdura?",
           "opciones": [
+            "sagarra",
             "patata",
-            "ura",
-            "txapelketa",
-            "zukua"
+            "gazta",
+            "ardoa"
           ],
-          "correcta": 0,
-          "explicacion": "la patata = patata."
+          "correcta": 1,
+          "explicacion": "Sagarra es la manzana, gazta el queso y ardoa el vino."
         },
         {
           "tipo": "opcion",

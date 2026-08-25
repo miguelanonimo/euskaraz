@@ -1599,28 +1599,28 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «Euskal Herria»?",
+          "pregunta": "¿Qué es Euskal Herria?",
           "opciones": [
-            "Euskal Herria, el País Vasco",
-            "muchas gracias",
-            "buenas tardes",
-            "bien"
+            "Una ciudad",
+            "El territorio donde se habla euskera",
+            "Un dialecto",
+            "La academia de la lengua"
           ],
-          "correcta": 0,
-          "explicacion": "Siempre en dos palabras y las dos con mayúscula."
+          "correcta": 1,
+          "explicacion": "Siete zonas repartidas entre España y Francia."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«el batua» se dice…",
+          "pregunta": "¿Qué es el batua?",
           "opciones": [
-            "batua",
-            "euskara",
-            "zer moduz?",
-            "oso"
+            "Un dialecto más",
+            "El euskera unificado, el estándar",
+            "El euskera antiguo",
+            "El euskera de Francia"
           ],
-          "correcta": 0,
-          "explicacion": "El euskera unificado, el estándar. Es lo que enseña esta app."
+          "correcta": 1,
+          "explicacion": "Fijado en 1968 para que todos se entendieran por escrito."
         },
         {
           "tipo": "opcion",
@@ -1701,15 +1701,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«el batua» se dice…",
+          "pregunta": "¿Para qué se creó el batua?",
           "opciones": [
-            "batua",
-            "ez horregatik",
-            "egun on",
-            "ondo"
+            "Para sustituir a los dialectos",
+            "Para poder enseñar y escribir en una forma común",
+            "Para hablar en casa",
+            "Para los turistas"
           ],
-          "correcta": 0,
-          "explicacion": "El euskera unificado, el estándar. Es lo que enseña esta app."
+          "correcta": 1,
+          "explicacion": "Convive con los dialectos, no los sustituye."
         },
         {
           "tipo": "opcion",
@@ -1777,41 +1777,41 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «batua»?",
+          "pregunta": "¿Qué enseña esta app?",
           "opciones": [
-            "el batua",
-            "muchas gracias",
-            "buenas tardes",
-            "bien"
+            "bizkaiera puro",
+            "batua",
+            "gipuzkera",
+            "una mezcla al azar"
           ],
-          "correcta": 0,
-          "explicacion": "El euskera unificado, el estándar. Es lo que enseña esta app."
+          "correcta": 1,
+          "explicacion": "Batua, con notas del habla de Bilbao."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Bizkaia» se dice…",
+          "pregunta": "¿Cuál es la capital de Bizkaia?",
           "opciones": [
-            "Bizkaia",
-            "hala-hola",
-            "euskara",
-            "egun on"
+            "Donostia",
+            "Bilbo",
+            "Gasteiz",
+            "Iruñea"
           ],
-          "correcta": 0,
-          "explicacion": "Su capital es Bilbo (Bilbao)."
+          "correcta": 1,
+          "explicacion": "Bilbo es Bilbao."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «Euskal Herria»?",
+          "pregunta": "¿Cuántas zonas forman Euskal Herria?",
           "opciones": [
-            "Euskal Herria, el País Vasco",
-            "Gipuzkoa",
-            "muchas gracias",
-            "muy bien"
+            "Tres",
+            "Cinco",
+            "Siete",
+            "Diez"
           ],
-          "correcta": 0,
-          "explicacion": "Siempre en dos palabras y las dos con mayúscula."
+          "correcta": 2,
+          "explicacion": "Cuatro al sur y tres al norte."
         }
       ]
     },
@@ -1955,15 +1955,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «batua»?",
+          "pregunta": "¿En qué año se fijó el batua?",
           "opciones": [
-            "el batua",
-            "hola",
-            "hasta luego",
-            "bien"
+            "1968",
+            "1868",
+            "2001",
+            "1936"
           ],
           "correcta": 0,
-          "explicacion": "El euskera unificado, el estándar. Es lo que enseña esta app."
+          "explicacion": "Euskaltzaindia reunió las formas comunes y fijó el estándar."
         },
         {
           "tipo": "opcion",
@@ -2044,15 +2044,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «Bizkaia»?",
+          "pregunta": "El dialecto de Bizkaia se llama…",
           "opciones": [
-            "Bizkaia",
-            "perdón / disculpa",
-            "por favor",
-            "muchas gracias"
+            "bizkaiera",
+            "gipuzkera",
+            "lapurtera",
+            "zuberera"
           ],
           "correcta": 0,
-          "explicacion": "Su capital es Bilbo (Bilbao)."
+          "explicacion": "Cada zona da nombre a su euskalki."
         },
         {
           "tipo": "opcion",

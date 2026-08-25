@@ -2098,15 +2098,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «sofa»?",
+          "pregunta": "¿Dónde suele estar el sofá?",
           "opciones": [
-            "el sofá",
-            "(él/ella) está",
-            "morado",
-            "la luz"
+            "egongelan (en el salón)",
+            "sukaldean (en la cocina)",
+            "komunean (en el baño)",
+            "lorategian (en el jardín)"
           ],
           "correcta": 0,
-          "explicacion": "sofa = el sofá."
+          "explicacion": "Egongela: la habitación de estar."
         },
         {
           "tipo": "opcion",

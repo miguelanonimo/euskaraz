@@ -25,11 +25,21 @@ def norm(s):
 
 
 def limpio(v):
-    """Palabras que sirven para preguntar por su significado. Se dejan
-    fuera las que son sufijos o partículas sueltas: preguntar «¿qué
-    significa -ago?» no enseña nada."""
+    """Palabras que sirven para preguntar por su significado.
+
+    Fuera los sufijos y partículas sueltas (preguntar «¿qué significa
+    -ago?» no enseña nada), y fuera las que se traducen a sí mismas:
+    «batua» → «el batua», «Bizkaia» → «Bizkaia». Preguntar por esas es
+    circular y no enseña nada — detectado por Ric probando la app. Para
+    ellas hay que escribir preguntas de contexto a mano."""
     eu = v["eu"]
-    return not eu.startswith("-") and len(eu) > 1
+    if eu.startswith("-") or len(eu) <= 1:
+        return False
+    a, b = norm(eu), norm(v["es"])
+    import re as _re
+    if _re.search(r"\b" + _re.escape(a) + r"\b", b):
+        return False
+    return True
 
 
 def distractores(correcta, fondo, cuantos=3):
