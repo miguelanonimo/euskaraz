@@ -644,6 +644,25 @@ cuenta pasaba el propio evento de click a `pantallaCuenta()`, que lo
 mostraba tal cual como mensaje — se veía "[object PointerEvent]" en la
 pantalla de Tu cuenta.
 
+## 2026-08-24 — "Qué toca hoy" en la Home
+
+Nuevo bloque arriba de Unidades: acceso directo a la lección de turno
+(la primera unidad sin `completada`, la que tienes abierta o la
+siguiente por hacer), repaso de vocabulario y repaso mezclado, con un
+contador "pendientes/total" a la derecha del título que baja según se
+van completando. Cada tarjeta pasa a "¡Completado!" en cuanto no queda
+nada por hacer hoy en ese frente — la lección cuenta como hecha si se
+terminó una sesión de práctica hoy (`marcarLeccionHoy()`, en
+`localStorage`, independiente de la nota); los repasos cuentan como
+hechos cuando no hay nada vencido (`recuento().vencidos === 0`, sin
+necesitar seguimiento propio por día). Al completar la unidad de turno,
+la tarjeta apunta sola a la siguiente. La lista completa de Unidades se
+queda debajo, sin tocar; Diccionario pasa a su propia sección al final.
+
+De paso, "Sigue por donde lo dejaste" se pinta en ámbar (mismo tono que
+"casi lo tienes" en la lista de Unidades) para distinguirlo del gris
+neutro de "Empieza la lección" (antes decía "Unidad nueva").
+
 ## 2026-08-24 — Rediseño del selector de dialecto: dos controles separados
 
 Hasta ahora un solo botón de la topbar hacía dos cosas a la vez:
@@ -665,3 +684,9 @@ Se separan:
 
 También se movió "Reiniciar mi progreso" de la Home a Tu cuenta, junto
 al resto de ajustes de la cuenta.
+
+## 2026-08-25 — Espacio simétrico antes de Cerrar sesión
+
+`.home-foot` no tenía margen debajo — la nota de "reiniciar progreso"
+quedaba pegada al botón de Cerrar sesión. Mismo espacio ahora arriba y
+abajo del bloque (el que ya había antes del divider).

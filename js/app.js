@@ -106,6 +106,10 @@
       cuenta: $('screenCuenta')
     },
     unitList:        $('unitList'),
+    todayCount:      $('todayCount'),
+    goLeccion:       $('goLeccion'),
+    leccionTitulo:   $('leccionTitulo'),
+    leccionSub:      $('leccionSub'),
     repasoCount:     $('repasoCount'),
     repasoDue:       $('repasoDue'),
     vocabRepasoCount:$('vocabRepasoCount'),
@@ -281,6 +285,25 @@
                registro: variante.registro, categoria: variante.categoria || base.categoria,
                unidad: unidad, titulo: titulo };
     }));
+  }
+
+  /* "Qué toca hoy" (home) necesita saber si ya se practicó la lección
+     de turno HOY — algo que el progreso por unidad no guarda (solo
+     sabe cuántos intentos y la mejor nota, nunca cuándo). Un aparato,
+     una sola fecha guardada: basta con comparar contra `hoy()`, así
+     que no hace falta limpiar nada al cambiar de día, simplemente deja
+     de coincidir. No cuenta la nota — practicar hoy vale, acierte lo
+     que acierte; para eso ya está `completada` aparte. */
+  var HOY_LECCION_KEY = 'euskaraz_hoy_leccion';
+
+  function marcarLeccionHoy(unidadId) {
+    try { localStorage.setItem(HOY_LECCION_KEY, hoy() + ':' + unidadId); } catch (e) {}
+  }
+
+  function leccionHechaHoy(unidadId) {
+    var v;
+    try { v = localStorage.getItem(HOY_LECCION_KEY); } catch (e) { return false; }
+    return v === (hoy() + ':' + unidadId);
   }
 
   function botonAudio(v) {
@@ -636,25 +659,78 @@
         '</button></li>';
     }).join('');
 
-    var fondo = fondoRepaso();
-    if (fondo.length) {
-      var rEj = recuento(fondo, claveDeFondo);
-      el.repasoCount.textContent = frasePendientes(rEj, 'ejercicio', 'ejercicios');
-      pintarPendiente(el.repasoDue, rEj.vencidos);
+    // ── Qué toca hoy ──
+    var checkSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
+    var pendientesHoy = 0, totalHoy = 0;
+
+    /* La lección de turno es la primera unidad sin completar (nota
+       ≥70% en algún intento) — la que tienes abierta, o si ninguna
+       está a medias, la siguiente por hacer. Se acaba el curso cuando
+       no queda ninguna: la tarjeta simplemente se oculta. */
+    var siguienteUnidad = null;
+    for (var iu = 0; iu < CURSO.unidades.length; iu++) {
+      if (!progUnidad(CURSO.unidades[iu].id).completada) { siguienteUnidad = CURSO.unidades[iu]; break; }
+    }
+    if (siguienteUnidad) {
+      totalHoy++;
+      var leccionHecha = leccionHechaHoy(siguienteUnidad.id);
+      if (!leccionHecha) pendientesHoy++;
+      el.goLeccion.hidden = false;
+      el.goLeccion.dataset.unidad = siguienteUnidad.id;
+      el.leccionTitulo.textContent = siguienteUnidad.numero + '. ' + siguienteUnidad.titulo;
+      if (leccionHecha) {
+        el.leccionSub.innerHTML = checkSvg + '<span>¡Completado!</span>';
+        el.leccionSub.className = 'navcard__sub navcard__sub--ok';
+      } else if (progUnidad(siguienteUnidad.id).visitada) {
+        el.leccionSub.textContent = 'Sigue por donde lo dejaste';
+        el.leccionSub.className = 'navcard__sub navcard__sub--progreso';
+      } else {
+        el.leccionSub.textContent = 'Empieza la lección';
+        el.leccionSub.className = 'navcard__sub';
+      }
     } else {
-      el.repasoCount.textContent = 'Abre una unidad y aquí tendrás repaso';
-      pintarPendiente(el.repasoDue, 0);
+      el.goLeccion.hidden = true;
     }
 
     var vocab = fondoVocabulario();
     if (vocab.length >= 4) {
+      totalHoy++;
       var rVo = recuento(vocab, claveDeVocab);
-      el.vocabRepasoCount.textContent = frasePendientes(rVo, 'palabra', 'palabras');
       pintarPendiente(el.vocabRepasoDue, rVo.vencidos);
+      if (rVo.vencidos === 0) {
+        el.vocabRepasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
+        el.vocabRepasoCount.className = 'navcard__sub navcard__sub--ok';
+      } else {
+        pendientesHoy++;
+        el.vocabRepasoCount.textContent = frasePendientes(rVo, 'palabra', 'palabras');
+        el.vocabRepasoCount.className = 'navcard__sub';
+      }
     } else {
       el.vocabRepasoCount.textContent = 'Abre una unidad y aquí tendrás palabras';
+      el.vocabRepasoCount.className = 'navcard__sub';
       pintarPendiente(el.vocabRepasoDue, 0);
     }
+
+    var fondo = fondoRepaso();
+    if (fondo.length) {
+      totalHoy++;
+      var rEj = recuento(fondo, claveDeFondo);
+      pintarPendiente(el.repasoDue, rEj.vencidos);
+      if (rEj.vencidos === 0) {
+        el.repasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
+        el.repasoCount.className = 'navcard__sub navcard__sub--ok';
+      } else {
+        pendientesHoy++;
+        el.repasoCount.textContent = frasePendientes(rEj, 'ejercicio', 'ejercicios');
+        el.repasoCount.className = 'navcard__sub';
+      }
+    } else {
+      el.repasoCount.textContent = 'Abre una unidad y aquí tendrás repaso';
+      el.repasoCount.className = 'navcard__sub';
+      pintarPendiente(el.repasoDue, 0);
+    }
+
+    el.todayCount.textContent = totalHoy ? (pendientesHoy + '/' + totalHoy) : '';
 
     el.diccCount.textContent = diccionario().length + ' palabras de todo el curso';
 
@@ -2030,6 +2106,7 @@
       p.mejor = Math.max(p.mejor, ratio);
       if (ratio >= 0.7) p.completada = true;
       guardarProgreso();
+      marcarLeccionHoy(u.id);
     }
 
     var titulo, sub;
@@ -2196,6 +2273,11 @@
     var btn = e.target.closest('.unitcard');
     if (!btn) return;
     var u = CURSO.unidades.filter(function (x) { return x.id === btn.dataset.unidad; })[0];
+    if (u) pantallaUnidad(u);
+  });
+
+  el.goLeccion.addEventListener('click', function () {
+    var u = CURSO.unidades.filter(function (x) { return x.id === el.goLeccion.dataset.unidad; })[0];
     if (u) pantallaUnidad(u);
   });
 

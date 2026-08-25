@@ -405,6 +405,17 @@ body.silencioso .pair__play{ display: none; }
   color: var(--tinta-45);
 }
 
+.section-head--hoy{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: calc(var(--u) * 2);
+}
+.today__count{
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+  color: var(--tinta-45);
+}
 
 /* Lista de unidades: filas separadas por filete, sin cajas */
 .unitlist{ list-style: none; margin: 0 0 calc(var(--u) * 8); padding: 0; }
@@ -522,6 +533,7 @@ body.silencioso .pair__play{ display: none; }
   color: var(--tinta-70);
 }
 
+.cardstack{ margin-bottom: calc(var(--u) * 8); }
 .cardstack .navcard:has(+ .navcard--accent){ border-bottom: 0; }
 
 /* Tres columnas: cuerpo, cifra de pendientes y flecha. La cifra falta en
@@ -561,6 +573,15 @@ body.silencioso .pair__play{ display: none; }
   font-size: var(--t-s);
   color: var(--tinta-45);
 }
+.navcard__sub--ok{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--bien-txt);
+  font-weight: 600;
+}
+.navcard__sub--ok svg{ width: 13px; height: 13px; flex: 0 0 auto; }
+.navcard__sub--progreso{ color: var(--progreso-empezada); font-weight: 600; }
 /* Siempre en la última columna, lleve o no la tarjeta cifra de pendientes. */
 .navcard__chev{
   grid-column: -1;
