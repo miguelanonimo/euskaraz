@@ -114,7 +114,7 @@
     {
       "subnivel": "1.4",
       "titulo": "Dónde se habla el euskera",
-      "cuerpo": "El euskera no es de un país: es de un territorio repartido entre dos estados, y que en euskera se llama <b>Euskal Herria</b>.\n\nSon siete zonas. Cuatro al sur, en España:\n\n<b>Bizkaia</b> — la de Bilbo (Bilbao)\n<b>Gipuzkoa</b> — la de Donostia (San Sebastián)\n<b>Araba</b> — la de Gasteiz (Vitoria)\n<b>Nafarroa</b> — la de Iruñea (Pamplona)\n\nY tres al norte, en Francia, más pequeñas y con menos hablantes:\n\n<b>Lapurdi</b> · <b>Nafarroa Beherea</b> · <b>Zuberoa</b>\n\nUn detalle de escritura: <i>Euskal Herria</i> va siempre en dos palabras y las dos con mayúscula. Así lo fijó la Academia de la Lengua Vasca.",
+      "cuerpo": "El euskera no es de un país: es de un territorio repartido entre dos estados, y que en euskera se llama <b>Euskal Herria</b>.\n\nSon siete zonas. Cuatro al sur, en España:\n\n<b>Bizkaia</b> (Vizcaya) — su capital es Bilbo, Bilbao\n<b>Gipuzkoa</b> (Guipúzcoa) — Donostia, San Sebastián\n<b>Araba</b> (Álava) — Gasteiz, Vitoria\n<b>Nafarroa</b> (Navarra) — Iruñea, Pamplona\n\nFíjate en que casi todo tiene dos nombres, uno en cada lengua. Los dos\nson correctos; aquí verás el vasco, porque es el que vas a leer en los\ncarteles.\n\nY tres al norte, en Francia, más pequeñas y con menos hablantes:\n\n<b>Lapurdi</b> · <b>Nafarroa Beherea</b> · <b>Zuberoa</b>\n\nUn detalle de escritura: <i>Euskal Herria</i> va siempre en dos palabras y las dos con mayúscula. Así lo fijó la Academia de la Lengua Vasca.",
       "ejemplos": [
         {
           "eu": "Euskal Herria",
@@ -122,7 +122,7 @@
         },
         {
           "eu": "Bizkaia",
-          "es": "Bizkaia, la de Bilbao"
+          "es": "Vizcaya, la de Bilbao"
         }
       ]
     },
@@ -391,15 +391,15 @@
     },
     {
       "eu": "Bizkaia",
-      "es": "Bizkaia",
-      "nota": "Su capital es Bilbo (Bilbao).",
+      "es": "Vizcaya",
+      "nota": "Su capital es Bilbo (Bilbao). En castellano oficial también se escribe «Bizkaia».",
       "categoria": "sustantivo",
       "subnivel": "1.4"
     },
     {
       "eu": "Gipuzkoa",
-      "es": "Gipuzkoa",
-      "nota": "Su capital es Donostia (San Sebastián).",
+      "es": "Guipúzcoa",
+      "nota": "Su capital es Donostia (San Sebastián). En castellano oficial también se escribe «Gipuzkoa».",
       "categoria": "sustantivo",
       "subnivel": "1.4"
     },
@@ -1558,7 +1558,7 @@
           "pares": [
             {
               "eu": "Gipuzkoa",
-              "es": "Gipuzkoa"
+              "es": "Guipúzcoa"
             },
             {
               "eu": "euskalkia",
@@ -1647,7 +1647,7 @@
           "pares": [
             {
               "eu": "Bizkaia",
-              "es": "Bizkaia"
+              "es": "Vizcaya"
             },
             {
               "eu": "Araba",
@@ -1655,7 +1655,7 @@
             },
             {
               "eu": "Gipuzkoa",
-              "es": "Gipuzkoa"
+              "es": "Guipúzcoa"
             },
             {
               "eu": "euskalkia",
@@ -1673,7 +1673,7 @@
             },
             {
               "eu": "Gipuzkoa",
-              "es": "Gipuzkoa"
+              "es": "Guipúzcoa"
             },
             {
               "eu": "Araba",
@@ -1736,7 +1736,7 @@
           "pares": [
             {
               "eu": "Bizkaia",
-              "es": "Bizkaia"
+              "es": "Vizcaya"
             },
             {
               "eu": "batua",
@@ -1744,7 +1744,7 @@
             },
             {
               "eu": "Gipuzkoa",
-              "es": "Gipuzkoa"
+              "es": "Guipúzcoa"
             },
             {
               "eu": "Araba",
