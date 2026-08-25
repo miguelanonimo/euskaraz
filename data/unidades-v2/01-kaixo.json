@@ -823,12 +823,12 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Perdón, muchas gracias.",
-          "eu": "Barkatu, eskerrik asko.",
+          "es": "Muchas gracias. ¡Adiós!",
+          "eu": "Eskerrik asko. Agur!",
           "palabras": [
-            "Barkatu,",
-            "eskerrik",
-            "asko."
+            "Eskerrik",
+            "asko.",
+            "Agur!"
           ]
         },
         {
@@ -1156,12 +1156,12 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Perdón, ¿qué tal?",
-          "eu": "Barkatu, zer moduz?",
+          "es": "Buenas noches, hasta la vista.",
+          "eu": "Gabon, ikusi arte.",
           "palabras": [
-            "Barkatu,",
-            "zer",
-            "moduz?"
+            "Gabon,",
+            "ikusi",
+            "arte."
           ]
         }
       ],

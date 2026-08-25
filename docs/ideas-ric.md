@@ -42,6 +42,21 @@ vez de seguir mandando `mahaia` y esperar suerte.
 
 **Contenido · ejercicios que suenan forzados**
 
+- **26/08 · u1-g10 v5 y u1-g05 v3: «barkatu» pegado donde no toca.**
+  Detectado por Ric. Eran «Barkatu, zer moduz?» (perdón, ¿qué tal?) y
+  «Barkatu, eskerrik asko» (perdón, muchas gracias). El fallo es el
+  mismo en las dos: `barkatu` sirve para **interrumpir o disculparse**,
+  y pegado a un saludo o a un agradecimiento no tiene situación real.
+  **Sustituidas** por «Gabon, ikusi arte.» y «Eskerrik asko. Agur!»,
+  elegidas por Ric. Comprobado que `barkatu` sigue practicándose en
+  otras 14 variantes, así que la palabra no se pierde.
+  - *Barrido posterior:* se revisaron las 241 frases completas del curso
+    buscando más casos de cortesía pegada a saludo. **No hay más.**
+  - ⚠️ Queda una repetición menor: `u1-g10` tiene ahora dos variantes
+    que empiezan por «Gabon» (v4 «Gabon, bihar arte» y v5 «Gabon, ikusi
+    arte»). La app solo enseña una por ronda, pero si salen seguidas
+    puede cansar. Revisar al probarlo.
+
 - **25/08 · u1-g10 v1: «Zer moduz? Eta zu?» no la dice nadie.**
   Detectado por Ric probando la app. El ejercicio de ordenar encadenaba
   «¿Qué tal?» con «¿Y tú?», pero `eta zu?` es lo que devuelves **después
