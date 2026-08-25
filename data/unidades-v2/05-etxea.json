@@ -1957,6 +1957,748 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u5-g13",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "laranja",
+              "es": "naranja"
+            },
+            {
+              "eu": "leihoa",
+              "es": "la ventana"
+            },
+            {
+              "eu": "argia",
+              "es": "la luz"
+            },
+            {
+              "eu": "gorria",
+              "es": "rojo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "sarrera",
+              "es": "la entrada"
+            },
+            {
+              "eu": "mahaia",
+              "es": "la mesa"
+            },
+            {
+              "eu": "armairua",
+              "es": "el armario"
+            },
+            {
+              "eu": "zaharra",
+              "es": "viejo/a"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nago»?",
+          "opciones": [
+            "(yo) estoy",
+            "bonito/a",
+            "la cocina",
+            "el tejado"
+          ],
+          "correcta": 0,
+          "explicacion": "nago = (yo) estoy."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«(él/ella) está» se dice…",
+          "opciones": [
+            "dago",
+            "komuna",
+            "leihoa",
+            "polita"
+          ],
+          "correcta": 0,
+          "explicacion": "(él/ella) está = dago."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «logela»?",
+          "opciones": [
+            "el dormitorio",
+            "vivo",
+            "el jardín",
+            "el sofá"
+          ],
+          "correcta": 0,
+          "explicacion": "De «lo» (sueño) + «gela» (habitación)."
+        }
+      ]
+    },
+    {
+      "id": "u5-g14",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "etxea",
+              "es": "la casa"
+            },
+            {
+              "eu": "armairua",
+              "es": "el armario"
+            },
+            {
+              "eu": "marroia",
+              "es": "marrón"
+            },
+            {
+              "eu": "daude",
+              "es": "(ellos) están"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "zuria",
+              "es": "blanco"
+            },
+            {
+              "eu": "teilatua",
+              "es": "el tejado"
+            },
+            {
+              "eu": "lorategia",
+              "es": "el jardín"
+            },
+            {
+              "eu": "hemen",
+              "es": "aquí"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «sofa»?",
+          "opciones": [
+            "el sofá",
+            "(él/ella) está",
+            "morado",
+            "la luz"
+          ],
+          "correcta": 0,
+          "explicacion": "sofa = el sofá."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la cama» se dice…",
+          "opciones": [
+            "ohea",
+            "horia",
+            "grisa",
+            "zaharra"
+          ],
+          "correcta": 0,
+          "explicacion": "la cama = ohea."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «armairua»?",
+          "opciones": [
+            "el armario",
+            "el sofá",
+            "pequeño/a",
+            "naranja"
+          ],
+          "correcta": 0,
+          "explicacion": "armairua = el armario."
+        }
+      ]
+    },
+    {
+      "id": "u5-g15",
+      "subnivel": "5.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "txikia",
+              "es": "pequeño/a"
+            },
+            {
+              "eu": "berria",
+              "es": "nuevo/a"
+            },
+            {
+              "eu": "polita",
+              "es": "bonito/a"
+            },
+            {
+              "eu": "zaharra",
+              "es": "viejo/a"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "polita",
+              "es": "bonito/a"
+            },
+            {
+              "eu": "txikia",
+              "es": "pequeño/a"
+            },
+            {
+              "eu": "handia",
+              "es": "grande"
+            },
+            {
+              "eu": "berria",
+              "es": "nuevo/a"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «handia»?",
+          "opciones": [
+            "grande",
+            "la casa",
+            "la cama",
+            "rojo"
+          ],
+          "correcta": 0,
+          "explicacion": "handia = grande."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«bonito/a» se dice…",
+          "opciones": [
+            "polita",
+            "bainugela",
+            "arrosa",
+            "sofa"
+          ],
+          "correcta": 0,
+          "explicacion": "bonito/a = polita."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berria»?",
+          "opciones": [
+            "nuevo/a",
+            "la puerta",
+            "el balcón",
+            "el cuarto de baño"
+          ],
+          "correcta": 0,
+          "explicacion": "Como en «Bilbo Berria»."
+        }
+      ]
+    },
+    {
+      "id": "u5-g16",
+      "subnivel": "5.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "zaharra",
+              "es": "viejo/a"
+            },
+            {
+              "eu": "handia",
+              "es": "grande"
+            },
+            {
+              "eu": "polita",
+              "es": "bonito/a"
+            },
+            {
+              "eu": "berria",
+              "es": "nuevo/a"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "txikia",
+              "es": "pequeño/a"
+            },
+            {
+              "eu": "polita",
+              "es": "bonito/a"
+            },
+            {
+              "eu": "berria",
+              "es": "nuevo/a"
+            },
+            {
+              "eu": "zaharra",
+              "es": "viejo/a"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «polita»?",
+          "opciones": [
+            "bonito/a",
+            "el salón",
+            "aquí",
+            "(tú) estás"
+          ],
+          "correcta": 0,
+          "explicacion": "polita = bonito/a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«viejo/a» se dice…",
+          "opciones": [
+            "zaharra",
+            "marroia",
+            "hemen",
+            "urdina"
+          ],
+          "correcta": 0,
+          "explicacion": "Como en «Parte Zaharra»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txikia»?",
+          "opciones": [
+            "pequeño/a",
+            "la casa",
+            "la luz",
+            "grande"
+          ],
+          "correcta": 0,
+          "explicacion": "txikia = pequeño/a."
+        }
+      ]
+    },
+    {
+      "id": "u5-g17",
+      "subnivel": "5.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "handia",
+              "es": "grande"
+            },
+            {
+              "eu": "polita",
+              "es": "bonito/a"
+            },
+            {
+              "eu": "txikia",
+              "es": "pequeño/a"
+            },
+            {
+              "eu": "berria",
+              "es": "nuevo/a"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los colores",
+          "pares": [
+            {
+              "eu": "polita",
+              "es": "bonito/a"
+            },
+            {
+              "eu": "zaharra",
+              "es": "viejo/a"
+            },
+            {
+              "eu": "txikia",
+              "es": "pequeño/a"
+            },
+            {
+              "eu": "berria",
+              "es": "nuevo/a"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «polita»?",
+          "opciones": [
+            "bonito/a",
+            "ahí",
+            "la mesa",
+            "la entrada"
+          ],
+          "correcta": 0,
+          "explicacion": "polita = bonito/a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«pequeño/a» se dice…",
+          "opciones": [
+            "txikia",
+            "zuria",
+            "ispilua",
+            "telebista"
+          ],
+          "correcta": 0,
+          "explicacion": "pequeño/a = txikia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berria»?",
+          "opciones": [
+            "nuevo/a",
+            "verde",
+            "bonito/a",
+            "la pared"
+          ],
+          "correcta": 0,
+          "explicacion": "Como en «Bilbo Berria»."
+        }
+      ]
+    },
+    {
+      "id": "u5-g18",
+      "subnivel": "5.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«La mesa blanca» se dice…",
+          "opciones": [
+            "mahai zuria",
+            "mahai zuri bat",
+            "mahaia zuria",
+            "bat mahai zuria"
+          ],
+          "correcta": 0,
+          "explicacion": "El -a final es «la»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Una mesa blanca» se dice…",
+          "opciones": [
+            "mahai zuria",
+            "mahai zuri bat",
+            "bat mahai zuri",
+            "mahaia bat"
+          ],
+          "correcta": 1,
+          "explicacion": "Se quita el artículo y se pone «bat» al final."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde va «bat»?",
+          "opciones": [
+            "delante de todo",
+            "entre el nombre y el adjetivo",
+            "al final del grupo",
+            "da igual"
+          ],
+          "correcta": 2,
+          "explicacion": "Mahai zuri bat."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Al poner «bat», el artículo -a…",
+          "opciones": [
+            "se queda",
+            "desaparece",
+            "se dobla",
+            "cambia a -ak"
+          ],
+          "correcta": 1,
+          "explicacion": "No conviven: o «-a» o «bat»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etxe bat» significa…",
+          "opciones": [
+            "la casa",
+            "una casa",
+            "esta casa",
+            "casas"
+          ],
+          "correcta": 1,
+          "explicacion": "Bat = uno, una."
+        }
+      ]
+    },
+    {
+      "id": "u5-g19",
+      "subnivel": "5.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si hay dos cosas, cada una lleva…",
+          "opciones": [
+            "un solo bat al final",
+            "su propio bat",
+            "ningún bat",
+            "bat al principio"
+          ],
+          "correcta": 1,
+          "explicacion": "Mahai zuri bat eta aulki beltz bat."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Una casa roja» se dice…",
+          "opciones": [
+            "etxe gorria",
+            "etxe gorri bat",
+            "bat etxe gorria",
+            "etxea gorri bat"
+          ],
+          "correcta": 1,
+          "explicacion": "Adjetivo, luego bat."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué número es «bat»?",
+          "opciones": [
+            "uno",
+            "dos",
+            "tres",
+            "cero"
+          ],
+          "correcta": 0,
+          "explicacion": "Es el mismo «uno» que ya sabes contar."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "distinguir el artículo",
+          "pares": [
+            {
+              "eu": "etxea",
+              "es": "la casa"
+            },
+            {
+              "eu": "etxe bat",
+              "es": "una casa"
+            },
+            {
+              "eu": "mahaia",
+              "es": "la mesa"
+            },
+            {
+              "eu": "mahai bat",
+              "es": "una mesa"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Gela handi bat» significa…",
+          "opciones": [
+            "la habitación grande",
+            "una habitación grande",
+            "las habitaciones grandes",
+            "habitación grande"
+          ],
+          "correcta": 1,
+          "explicacion": "Nombre + adjetivo + bat."
+        }
+      ]
+    },
+    {
+      "id": "u5-g20",
+      "subnivel": "5.4",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "una mesa blanca",
+          "eu": "mahai zuri bat",
+          "palabras": [
+            "mahai",
+            "zuri",
+            "bat"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "la mesa blanca",
+          "eu": "mahai zuria",
+          "palabras": [
+            "mahai",
+            "zuria"
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El error típico del castellanohablante aquí es…",
+          "opciones": [
+            "poner bat delante",
+            "olvidarse de quitar el -a",
+            "no poner adjetivo",
+            "usar plural"
+          ],
+          "correcta": 1,
+          "explicacion": "«Mahaia zuri bat» no existe."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Aulki beltz bat» es…",
+          "opciones": [
+            "la silla negra",
+            "una silla negra",
+            "sillas negras",
+            "esta silla negra"
+          ],
+          "correcta": 1,
+          "explicacion": "Silla + negra + una."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Y para decir «unas» o «algunas»?",
+          "opciones": [
+            "bat",
+            "batzuk",
+            "bata",
+            "batak"
+          ],
+          "correcta": 1,
+          "explicacion": "Batzuk es el plural indefinido."
+        }
+      ]
+    },
+    {
+      "id": "u5-g21",
+      "subnivel": "5.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Liburu bat» significa…",
+          "opciones": [
+            "el libro",
+            "un libro",
+            "los libros",
+            "este libro"
+          ],
+          "correcta": 1,
+          "explicacion": "Bat detrás del nombre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «etxe gorri bat», ¿qué hace «bat»?",
+          "opciones": [
+            "cuenta cuántas casas hay",
+            "hace de «una»",
+            "señala cuál es",
+            "no hace nada"
+          ],
+          "correcta": 1,
+          "explicacion": "Es el artículo indefinido."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "emparejar",
+          "pares": [
+            {
+              "eu": "etxe bat",
+              "es": "una casa"
+            },
+            {
+              "eu": "etxea",
+              "es": "la casa"
+            },
+            {
+              "eu": "gela bat",
+              "es": "una habitación"
+            },
+            {
+              "eu": "gela",
+              "es": "habitación"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Batzuk» significa…",
+          "opciones": [
+            "uno",
+            "unos, algunos",
+            "todos",
+            "ninguno"
+          ],
+          "correcta": 1,
+          "explicacion": "El plural de bat."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Se puede decir «bat etxe»?",
+          "opciones": [
+            "Sí",
+            "No: bat va detrás",
+            "Solo en plural",
+            "Solo en Bizkaia"
+          ],
+          "correcta": 1,
+          "explicacion": "En euskera casi todo va detrás."
+        }
+      ]
     }
   ]
 }

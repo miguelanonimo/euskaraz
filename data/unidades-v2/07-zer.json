@@ -2456,6 +2456,1236 @@
           "explicacion": "Es lo habitual, no lo de ahora mismo."
         }
       ]
+    },
+    {
+      "id": "u7-g22",
+      "subnivel": "7.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la rutina diaria",
+          "pares": [
+            {
+              "eu": "jantzi",
+              "es": "vestirse"
+            },
+            {
+              "eu": "garbitu",
+              "es": "limpiar"
+            },
+            {
+              "eu": "bazkaldu",
+              "es": "comer (al mediodía)"
+            },
+            {
+              "eu": "dutxatu",
+              "es": "ducharse"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la rutina diaria",
+          "pares": [
+            {
+              "eu": "etxeko lanak",
+              "es": "las tareas de casa"
+            },
+            {
+              "eu": "dutxatu",
+              "es": "ducharse"
+            },
+            {
+              "eu": "esnatu",
+              "es": "despertarse"
+            },
+            {
+              "eu": "jantzi",
+              "es": "vestirse"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gosaldu»?",
+          "opciones": [
+            "desayunar",
+            "(yo) hago",
+            "limpiar",
+            "las verduras"
+          ],
+          "correcta": 0,
+          "explicacion": "gosaldu = desayunar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«las tareas de casa» se dice…",
+          "opciones": [
+            "etxeko lanak",
+            "barazkiak",
+            "jan",
+            "lo egin"
+          ],
+          "correcta": 0,
+          "explicacion": "las tareas de casa = etxeko lanak."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «esnatu»?",
+          "opciones": [
+            "despertarse",
+            "comer (al mediodía)",
+            "(yo) bebo",
+            "estoy (haciendo algo)"
+          ],
+          "correcta": 0,
+          "explicacion": "esnatu = despertarse."
+        }
+      ]
+    },
+    {
+      "id": "u7-g23",
+      "subnivel": "7.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la rutina diaria",
+          "pares": [
+            {
+              "eu": "etxeko lanak",
+              "es": "las tareas de casa"
+            },
+            {
+              "eu": "gosaldu",
+              "es": "desayunar"
+            },
+            {
+              "eu": "jantzi",
+              "es": "vestirse"
+            },
+            {
+              "eu": "lo egin",
+              "es": "dormir"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la rutina diaria",
+          "pares": [
+            {
+              "eu": "afaldu",
+              "es": "cenar"
+            },
+            {
+              "eu": "etxeko lanak",
+              "es": "las tareas de casa"
+            },
+            {
+              "eu": "esnatu",
+              "es": "despertarse"
+            },
+            {
+              "eu": "jaiki",
+              "es": "levantarse"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «dutxatu»?",
+          "opciones": [
+            "ducharse",
+            "la ropa",
+            "estás (haciendo algo)",
+            "el desayuno"
+          ],
+          "correcta": 0,
+          "explicacion": "dutxatu = ducharse."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«desayunar» se dice…",
+          "opciones": [
+            "gosaldu",
+            "txapelketa",
+            "edaten dut",
+            "jaten dut"
+          ],
+          "correcta": 0,
+          "explicacion": "desayunar = gosaldu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «lo egin»?",
+          "opciones": [
+            "dormir",
+            "trabajar",
+            "el desayuno",
+            "la boina"
+          ],
+          "correcta": 0,
+          "explicacion": "Literalmente «hacer sueño»."
+        }
+      ]
+    },
+    {
+      "id": "u7-g24",
+      "subnivel": "7.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la rutina diaria",
+          "pares": [
+            {
+              "eu": "lo egin",
+              "es": "dormir"
+            },
+            {
+              "eu": "garbitu",
+              "es": "limpiar"
+            },
+            {
+              "eu": "afaldu",
+              "es": "cenar"
+            },
+            {
+              "eu": "jaiki",
+              "es": "levantarse"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la rutina diaria",
+          "pares": [
+            {
+              "eu": "jaiki",
+              "es": "levantarse"
+            },
+            {
+              "eu": "esnatu",
+              "es": "despertarse"
+            },
+            {
+              "eu": "jantzi",
+              "es": "vestirse"
+            },
+            {
+              "eu": "gosaldu",
+              "es": "desayunar"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «garbitu»?",
+          "opciones": [
+            "limpiar",
+            "el campeonato",
+            "el desayuno",
+            "la carne"
+          ],
+          "correcta": 0,
+          "explicacion": "garbitu = limpiar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«vestirse» se dice…",
+          "opciones": [
+            "jantzi",
+            "entzun",
+            "gosaldu",
+            "tipula"
+          ],
+          "correcta": 0,
+          "explicacion": "vestirse = jantzi."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gosaldu»?",
+          "opciones": [
+            "desayunar",
+            "comer (al mediodía)",
+            "las tareas de casa",
+            "(yo) bebo"
+          ],
+          "correcta": 0,
+          "explicacion": "gosaldu = desayunar."
+        }
+      ]
+    },
+    {
+      "id": "u7-g25",
+      "subnivel": "7.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comer y beber",
+          "pares": [
+            {
+              "eu": "tipula",
+              "es": "la cebolla"
+            },
+            {
+              "eu": "bazkaria",
+              "es": "la comida (del mediodía)"
+            },
+            {
+              "eu": "oilaskoa",
+              "es": "el pollo"
+            },
+            {
+              "eu": "gatza",
+              "es": "la sal"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comer y beber",
+          "pares": [
+            {
+              "eu": "jaka",
+              "es": "la chaqueta"
+            },
+            {
+              "eu": "oilaskoa",
+              "es": "el pollo"
+            },
+            {
+              "eu": "bazkaria",
+              "es": "la comida (del mediodía)"
+            },
+            {
+              "eu": "soinekoa",
+              "es": "el vestido"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «prakak»?",
+          "opciones": [
+            "los pantalones",
+            "escribir",
+            "el campeón / la campeona",
+            "la chaqueta"
+          ],
+          "correcta": 0,
+          "explicacion": "Se usa en plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la ropa» se dice…",
+          "opciones": [
+            "arropa",
+            "zapatak",
+            "hartu",
+            "ura"
+          ],
+          "correcta": 0,
+          "explicacion": "la ropa = arropa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «jertsea»?",
+          "opciones": [
+            "el jersey",
+            "comer",
+            "estoy (haciendo algo)",
+            "(yo) como"
+          ],
+          "correcta": 0,
+          "explicacion": "jertsea = el jersey."
+        }
+      ]
+    },
+    {
+      "id": "u7-g26",
+      "subnivel": "7.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comer y beber",
+          "pares": [
+            {
+              "eu": "prakak",
+              "es": "los pantalones"
+            },
+            {
+              "eu": "betaurrekoak",
+              "es": "las gafas"
+            },
+            {
+              "eu": "afaria",
+              "es": "la cena"
+            },
+            {
+              "eu": "txapelketa",
+              "es": "el campeonato"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comer y beber",
+          "pares": [
+            {
+              "eu": "txapela",
+              "es": "la boina"
+            },
+            {
+              "eu": "tipula",
+              "es": "la cebolla"
+            },
+            {
+              "eu": "esnea",
+              "es": "la leche"
+            },
+            {
+              "eu": "txapelduna",
+              "es": "el campeón / la campeona"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «alkandora»?",
+          "opciones": [
+            "la camisa",
+            "el jersey",
+            "la manzana",
+            "el problema"
+          ],
+          "correcta": 0,
+          "explicacion": "alkandora = la camisa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la cena» se dice…",
+          "opciones": [
+            "afaria",
+            "patata",
+            "ikusi",
+            "hartu"
+          ],
+          "correcta": 0,
+          "explicacion": "la cena = afaria."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «arroza»?",
+          "opciones": [
+            "el arroz",
+            "las tareas de casa",
+            "el tomate",
+            "hablar"
+          ],
+          "correcta": 0,
+          "explicacion": "arroza = el arroz."
+        }
+      ]
+    },
+    {
+      "id": "u7-g27",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "ura",
+              "es": "el agua"
+            },
+            {
+              "eu": "gatza",
+              "es": "la sal"
+            },
+            {
+              "eu": "arraina",
+              "es": "el pescado"
+            },
+            {
+              "eu": "txapela",
+              "es": "la boina"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "alkandora",
+              "es": "la camisa"
+            },
+            {
+              "eu": "letxuga",
+              "es": "la lechuga"
+            },
+            {
+              "eu": "soinekoa",
+              "es": "el vestido"
+            },
+            {
+              "eu": "txapelduna",
+              "es": "el campeón / la campeona"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «madaria»?",
+          "opciones": [
+            "la pera",
+            "hablar",
+            "el pan",
+            "la fresa"
+          ],
+          "correcta": 0,
+          "explicacion": "madaria = la pera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el jersey» se dice…",
+          "opciones": [
+            "jertsea",
+            "egin",
+            "dutxatu",
+            "idatzi"
+          ],
+          "correcta": 0,
+          "explicacion": "el jersey = jertsea."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «etxeko lanak»?",
+          "opciones": [
+            "las tareas de casa",
+            "poner",
+            "la carne",
+            "el café"
+          ],
+          "correcta": 0,
+          "explicacion": "etxeko lanak = las tareas de casa."
+        }
+      ]
+    },
+    {
+      "id": "u7-g28",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "ari zara",
+              "es": "estás (haciendo algo)"
+            },
+            {
+              "eu": "jaiki",
+              "es": "levantarse"
+            },
+            {
+              "eu": "afaldu",
+              "es": "cenar"
+            },
+            {
+              "eu": "soinekoa",
+              "es": "el vestido"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "dutxatu",
+              "es": "ducharse"
+            },
+            {
+              "eu": "ari zara",
+              "es": "estás (haciendo algo)"
+            },
+            {
+              "eu": "barazkiak",
+              "es": "las verduras"
+            },
+            {
+              "eu": "madaria",
+              "es": "la pera"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gona»?",
+          "opciones": [
+            "la falda",
+            "estoy (haciendo algo)",
+            "los zapatos",
+            "el pescado"
+          ],
+          "correcta": 0,
+          "explicacion": "gona = la falda."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la patata» se dice…",
+          "opciones": [
+            "patata",
+            "ura",
+            "txapelketa",
+            "zukua"
+          ],
+          "correcta": 0,
+          "explicacion": "la patata = patata."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gatza»?",
+          "opciones": [
+            "la sal",
+            "la fresa",
+            "vestirse",
+            "está (haciendo algo)"
+          ],
+          "correcta": 0,
+          "explicacion": "gatza = la sal."
+        }
+      ]
+    },
+    {
+      "id": "u7-g29",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "jertsea",
+              "es": "el jersey"
+            },
+            {
+              "eu": "garbitu",
+              "es": "limpiar"
+            },
+            {
+              "eu": "ikusi",
+              "es": "ver"
+            },
+            {
+              "eu": "esnatu",
+              "es": "despertarse"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "garbitu",
+              "es": "limpiar"
+            },
+            {
+              "eu": "esnea",
+              "es": "la leche"
+            },
+            {
+              "eu": "gona",
+              "es": "la falda"
+            },
+            {
+              "eu": "sagarra",
+              "es": "la manzana"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «irakurri»?",
+          "opciones": [
+            "leer",
+            "el jersey",
+            "levantarse",
+            "la ropa"
+          ],
+          "correcta": 0,
+          "explicacion": "irakurri = leer."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«estudiar, aprender» se dice…",
+          "opciones": [
+            "ikasi",
+            "lo egin",
+            "gosaria",
+            "etxeko lanak"
+          ],
+          "correcta": 0,
+          "explicacion": "Una sola palabra para las dos cosas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ardoa»?",
+          "opciones": [
+            "el vino",
+            "el zumo",
+            "la falda",
+            "el pescado"
+          ],
+          "correcta": 0,
+          "explicacion": "ardoa = el vino."
+        }
+      ]
+    },
+    {
+      "id": "u7-g30",
+      "subnivel": "7.2",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«No como pan» se dice…",
+          "opciones": [
+            "Ez ogia jaten dut",
+            "Ez dut ogia jaten",
+            "Ogia ez jaten dut",
+            "Ogia jaten ez dut"
+          ],
+          "correcta": 1,
+          "explicacion": "El «ez» va delante y el auxiliar salta detrás de él."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Al negar, el auxiliar…",
+          "opciones": [
+            "se queda donde estaba",
+            "salta justo detrás de «ez»",
+            "desaparece",
+            "va al final"
+          ],
+          "correcta": 1,
+          "explicacion": "Es el cambio que más cuesta al principio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dut» significa…",
+          "opciones": [
+            "tengo",
+            "no tengo",
+            "no soy",
+            "no hay"
+          ],
+          "correcta": 1,
+          "explicacion": "Ez + dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez naiz» significa…",
+          "opciones": [
+            "no tengo",
+            "no soy / no estoy",
+            "no quiero",
+            "no voy"
+          ],
+          "correcta": 1,
+          "explicacion": "La negación de «naiz»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué se pone para negar?",
+          "opciones": [
+            "ez",
+            "ezer",
+            "inor",
+            "batere"
+          ],
+          "correcta": 0,
+          "explicacion": "«Ez» delante del auxiliar."
+        }
+      ]
+    },
+    {
+      "id": "u7-g31",
+      "subnivel": "7.2",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dut ezer nahi» significa…",
+          "opciones": [
+            "Quiero algo",
+            "No quiero nada",
+            "No quiero",
+            "Quiero todo"
+          ],
+          "correcta": 1,
+          "explicacion": "Ezer = nada, en frase negativa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En negativo, «algo de pan» se convierte en…",
+          "opciones": [
+            "ogia",
+            "ogirik",
+            "ogiak",
+            "ogiaren"
+          ],
+          "correcta": 1,
+          "explicacion": "El partitivo -(r)ik aparece al negar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dut dirurik» significa…",
+          "opciones": [
+            "Tengo dinero",
+            "No tengo (nada de) dinero",
+            "Quiero dinero",
+            "El dinero no"
+          ],
+          "correcta": 1,
+          "explicacion": "Dirua → dirurik en negativo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El partitivo -(r)ik sale sobre todo en frases…",
+          "opciones": [
+            "afirmativas",
+            "negativas",
+            "interrogativas",
+            "de pasado"
+          ],
+          "correcta": 1,
+          "explicacion": "Y en preguntas: «ba al duzu dirurik?»"
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ezer ez» significa…",
+          "opciones": [
+            "algo",
+            "nada",
+            "todo",
+            "alguien"
+          ],
+          "correcta": 1,
+          "explicacion": "Nada de nada."
+        }
+      ]
+    },
+    {
+      "id": "u7-g32",
+      "subnivel": "7.2",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "No como pan.",
+          "eu": "Ez dut ogia jaten.",
+          "palabras": [
+            "Ez",
+            "dut",
+            "ogia",
+            "jaten."
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde va «ez» en la frase?",
+          "opciones": [
+            "al final",
+            "delante del auxiliar",
+            "detrás del verbo",
+            "donde quieras"
+          ],
+          "correcta": 1,
+          "explicacion": "Y arrastra el auxiliar con él."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dakit» es la negación de…",
+          "opciones": [
+            "dut",
+            "dakit (sé)",
+            "naiz",
+            "dago"
+          ],
+          "correcta": 1,
+          "explicacion": "No sé."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "afirmar y negar",
+          "pares": [
+            {
+              "eu": "dut",
+              "es": "tengo"
+            },
+            {
+              "eu": "ez dut",
+              "es": "no tengo"
+            },
+            {
+              "eu": "naiz",
+              "es": "soy"
+            },
+            {
+              "eu": "ez naiz",
+              "es": "no soy"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si el objeto es plural, «no los como» sería…",
+          "opciones": [
+            "ez dut jaten",
+            "ez ditut jaten",
+            "ez naiz jaten",
+            "ez dago jaten"
+          ],
+          "correcta": 1,
+          "explicacion": "Ditut para plural, también al negar."
+        }
+      ]
+    },
+    {
+      "id": "u7-g33",
+      "subnivel": "7.2",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zuk ez duzu haragia jaten» significa…",
+          "opciones": [
+            "Tú comes carne",
+            "Tú no comes carne",
+            "No hay carne",
+            "Quieres carne"
+          ],
+          "correcta": 1,
+          "explicacion": "Negación en segunda persona."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien escrita?",
+          "opciones": [
+            "Ez dut nahi ezer",
+            "Ez dut ezer nahi",
+            "Ezer ez dut nahi bat",
+            "Nahi ez dut ezer"
+          ],
+          "correcta": 1,
+          "explicacion": "El orden habitual."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El partitivo se pone…",
+          "opciones": [
+            "delante de la palabra",
+            "como terminación -(r)ik",
+            "con un guion",
+            "no se pone"
+          ],
+          "correcta": 1,
+          "explicacion": "Ogia → ogirik."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez» se puede usar solo, como respuesta?",
+          "opciones": [
+            "No",
+            "Sí: significa «no»",
+            "Solo con verbo",
+            "Solo en preguntas"
+          ],
+          "correcta": 1,
+          "explicacion": "Es el «no» de toda la vida, que ya conoces de la unidad 1."
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "No tengo dinero.",
+          "eu": "Ez dut dirurik.",
+          "palabras": [
+            "Ez",
+            "dut",
+            "dirurik."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u7-g34",
+      "subnivel": "7.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Estoy comiendo» se dice…",
+          "opciones": [
+            "jaten dut",
+            "jaten ari naiz",
+            "jaten naiz",
+            "jaten ari dut"
+          ],
+          "correcta": 1,
+          "explicacion": "Verbo en -t(z)en + ari + izan."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Con «ari», el auxiliar siempre es…",
+          "opciones": [
+            "dut",
+            "izan (naiz/zara/da)",
+            "dago",
+            "daukat"
+          ],
+          "correcta": 1,
+          "explicacion": "Aunque haya objeto."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ikasten ari da» significa…",
+          "opciones": [
+            "estudia",
+            "está estudiando",
+            "estudió",
+            "estudiará"
+          ],
+          "correcta": 1,
+          "explicacion": "Tercera persona, ahora mismo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zer egiten ari zara?» pregunta por…",
+          "opciones": [
+            "tu trabajo",
+            "lo que haces ahora",
+            "tus planes",
+            "tu rutina"
+          ],
+          "correcta": 1,
+          "explicacion": "Este momento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La diferencia entre «jaten dut» y «jaten ari naiz» es…",
+          "opciones": [
+            "ninguna",
+            "lo habitual frente a lo de ahora mismo",
+            "singular y plural",
+            "presente y pasado"
+          ],
+          "correcta": 1,
+          "explicacion": "Como «como» y «estoy comiendo»."
+        }
+      ]
+    },
+    {
+      "id": "u7-g35",
+      "subnivel": "7.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "el presente continuo",
+          "pares": [
+            {
+              "eu": "ari naiz",
+              "es": "estoy"
+            },
+            {
+              "eu": "ari zara",
+              "es": "estás"
+            },
+            {
+              "eu": "ari da",
+              "es": "está"
+            },
+            {
+              "eu": "ari gara",
+              "es": "estamos"
+            }
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Estoy estudiando.",
+          "eu": "Ikasten ari naiz.",
+          "palabras": [
+            "Ikasten",
+            "ari",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para decir «trabajo en Bilbao» (tu empleo) usarías…",
+          "opciones": [
+            "Bilbon lan egiten dut",
+            "Bilbon lan egiten ari naiz",
+            "Bilbon lan ari naiz",
+            "Bilbon lan naiz"
+          ],
+          "correcta": 0,
+          "explicacion": "Es lo habitual, no lo de ahora."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Euria ari du» significa…",
+          "opciones": [
+            "Llueve mucho",
+            "Está lloviendo",
+            "Llovió",
+            "Va a llover"
+          ],
+          "correcta": 1,
+          "explicacion": "Con el tiempo atmosférico también se usa «ari»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde va «ari»?",
+          "opciones": [
+            "al principio",
+            "entre el verbo y el auxiliar",
+            "al final",
+            "delante del verbo"
+          ],
+          "correcta": 1,
+          "explicacion": "Jaten ari naiz."
+        }
+      ]
+    },
+    {
+      "id": "u7-g36",
+      "subnivel": "7.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zer ari zara egiten?» y «Zer egiten ari zara?»…",
+          "opciones": [
+            "significan cosas distintas",
+            "las dos valen y significan lo mismo",
+            "una está mal",
+            "son de dialectos distintos"
+          ],
+          "correcta": 1,
+          "explicacion": "El orden admite las dos."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ari naiz» sin verbo delante significa…",
+          "opciones": [
+            "estoy",
+            "estoy en ello",
+            "soy",
+            "voy"
+          ],
+          "correcta": 1,
+          "explicacion": "Se sobreentiende lo que estás haciendo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál describe una costumbre?",
+          "opciones": [
+            "Kafea edaten ari naiz",
+            "Kafea edaten dut",
+            "Kafea ari naiz",
+            "Kafea naiz"
+          ],
+          "correcta": 1,
+          "explicacion": "Sin «ari»: lo que haces normalmente."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "distinguir",
+          "pares": [
+            {
+              "eu": "jaten dut",
+              "es": "como (normalmente)"
+            },
+            {
+              "eu": "jaten ari naiz",
+              "es": "estoy comiendo"
+            },
+            {
+              "eu": "ikasten dut",
+              "es": "estudio"
+            },
+            {
+              "eu": "ikasten ari naiz",
+              "es": "estoy estudiando"
+            }
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Estoy aprendiendo euskera.",
+          "eu": "Euskara ikasten ari naiz.",
+          "palabras": [
+            "Euskara",
+            "ikasten",
+            "ari",
+            "naiz."
+          ]
+        }
+      ]
     }
   ]
 }

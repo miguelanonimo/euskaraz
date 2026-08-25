@@ -1559,6 +1559,1375 @@
           "explicacion": "Joan nahi dut: primero el verbo."
         }
       ]
+    },
+    {
+      "id": "u8-g15",
+      "subnivel": "8.1",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ir y venir",
+          "pares": [
+            {
+              "eu": "sartu",
+              "es": "entrar"
+            },
+            {
+              "eu": "hemendik",
+              "es": "desde aquí"
+            },
+            {
+              "eu": "irten",
+              "es": "salir"
+            },
+            {
+              "eu": "etorri",
+              "es": "venir"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ir y venir",
+          "pares": [
+            {
+              "eu": "hemendik",
+              "es": "desde aquí"
+            },
+            {
+              "eu": "dator",
+              "es": "(él/ella) viene"
+            },
+            {
+              "eu": "doa",
+              "es": "(él/ella) va"
+            },
+            {
+              "eu": "urrun",
+              "es": "lejos"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «etorri»?",
+          "opciones": [
+            "venir",
+            "la ciudad",
+            "puedo",
+            "el coche"
+          ],
+          "correcta": 0,
+          "explicacion": "etorri = venir."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«ir» se dice…",
+          "opciones": [
+            "joan",
+            "hiria",
+            "iritsi",
+            "ezin dut"
+          ],
+          "correcta": 0,
+          "explicacion": "ir = joan."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «urrun»?",
+          "opciones": [
+            "lejos",
+            "recto, derecho",
+            "andar, andar por ahí",
+            "el hospital"
+          ],
+          "correcta": 0,
+          "explicacion": "urrun = lejos."
+        }
+      ]
+    },
+    {
+      "id": "u8-g16",
+      "subnivel": "8.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ciudad y sus servicios",
+          "pares": [
+            {
+              "eu": "kalea",
+              "es": "la calle"
+            },
+            {
+              "eu": "hiria",
+              "es": "la ciudad"
+            },
+            {
+              "eu": "azoka",
+              "es": "la feria, el mercado"
+            },
+            {
+              "eu": "eskola",
+              "es": "la escuela"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ciudad y sus servicios",
+          "pares": [
+            {
+              "eu": "taberna",
+              "es": "el bar"
+            },
+            {
+              "eu": "azoka",
+              "es": "la feria, el mercado"
+            },
+            {
+              "eu": "kalea",
+              "es": "la calle"
+            },
+            {
+              "eu": "liburutegia",
+              "es": "la biblioteca"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «kalea»?",
+          "opciones": [
+            "la calle",
+            "(tú) vienes",
+            "(él/ella) va",
+            "cerca"
+          ],
+          "correcta": 0,
+          "explicacion": "kalea = la calle."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la tienda» se dice…",
+          "opciones": [
+            "denda",
+            "liburutegia",
+            "ezkerrera",
+            "gertu"
+          ],
+          "correcta": 0,
+          "explicacion": "la tienda = denda."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ospitalea»?",
+          "opciones": [
+            "el hospital",
+            "(él/ella) va",
+            "cerca",
+            "(yo) voy"
+          ],
+          "correcta": 0,
+          "explicacion": "ospitalea = el hospital."
+        }
+      ]
+    },
+    {
+      "id": "u8-g17",
+      "subnivel": "8.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ciudad y sus servicios",
+          "pares": [
+            {
+              "eu": "lana",
+              "es": "el trabajo"
+            },
+            {
+              "eu": "taberna",
+              "es": "el bar"
+            },
+            {
+              "eu": "azoka",
+              "es": "la feria, el mercado"
+            },
+            {
+              "eu": "eskola",
+              "es": "la escuela"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ciudad y sus servicios",
+          "pares": [
+            {
+              "eu": "taberna",
+              "es": "el bar"
+            },
+            {
+              "eu": "eskola",
+              "es": "la escuela"
+            },
+            {
+              "eu": "lana",
+              "es": "el trabajo"
+            },
+            {
+              "eu": "ospitalea",
+              "es": "el hospital"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «merkatua»?",
+          "opciones": [
+            "el mercado",
+            "lejos",
+            "(él/ella) anda",
+            "la estación, la parada"
+          ],
+          "correcta": 0,
+          "explicacion": "merkatua = el mercado."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la feria, el mercado» se dice…",
+          "opciones": [
+            "azoka",
+            "zoaz",
+            "hemendik",
+            "dator"
+          ],
+          "correcta": 0,
+          "explicacion": "La más conocida en Bilbao es el Mercado de la Ribera. Si sales hacia Gernika, la suya es la del lunes."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «denda»?",
+          "opciones": [
+            "la tienda",
+            "el trabajo",
+            "el monte",
+            "(tú) vas"
+          ],
+          "correcta": 0,
+          "explicacion": "denda = la tienda."
+        }
+      ]
+    },
+    {
+      "id": "u8-g18",
+      "subnivel": "8.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ciudad y sus servicios",
+          "pares": [
+            {
+              "eu": "denda",
+              "es": "la tienda"
+            },
+            {
+              "eu": "merkatua",
+              "es": "el mercado"
+            },
+            {
+              "eu": "hiria",
+              "es": "la ciudad"
+            },
+            {
+              "eu": "kalea",
+              "es": "la calle"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ciudad y sus servicios",
+          "pares": [
+            {
+              "eu": "ospitalea",
+              "es": "el hospital"
+            },
+            {
+              "eu": "merkatua",
+              "es": "el mercado"
+            },
+            {
+              "eu": "hiria",
+              "es": "la ciudad"
+            },
+            {
+              "eu": "lana",
+              "es": "el trabajo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «taberna»?",
+          "opciones": [
+            "el bar",
+            "la calle",
+            "a la derecha",
+            "ir"
+          ],
+          "correcta": 0,
+          "explicacion": "taberna = el bar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la calle» se dice…",
+          "opciones": [
+            "kalea",
+            "doa",
+            "eskola",
+            "dator"
+          ],
+          "correcta": 0,
+          "explicacion": "la calle = kalea."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ospitalea»?",
+          "opciones": [
+            "el hospital",
+            "el tren",
+            "ir",
+            "quiero"
+          ],
+          "correcta": 0,
+          "explicacion": "ospitalea = el hospital."
+        }
+      ]
+    },
+    {
+      "id": "u8-g19",
+      "subnivel": "8.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ciudad y sus servicios",
+          "pares": [
+            {
+              "eu": "denda",
+              "es": "la tienda"
+            },
+            {
+              "eu": "hiria",
+              "es": "la ciudad"
+            },
+            {
+              "eu": "merkatua",
+              "es": "el mercado"
+            },
+            {
+              "eu": "liburutegia",
+              "es": "la biblioteca"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ciudad y sus servicios",
+          "pares": [
+            {
+              "eu": "merkatua",
+              "es": "el mercado"
+            },
+            {
+              "eu": "liburutegia",
+              "es": "la biblioteca"
+            },
+            {
+              "eu": "hiria",
+              "es": "la ciudad"
+            },
+            {
+              "eu": "taberna",
+              "es": "el bar"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hiria»?",
+          "opciones": [
+            "la ciudad",
+            "el tren",
+            "(yo) ando",
+            "llegar"
+          ],
+          "correcta": 0,
+          "explicacion": "hiria = la ciudad."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la biblioteca» se dice…",
+          "opciones": [
+            "liburutegia",
+            "oinez",
+            "iritsi",
+            "taberna"
+          ],
+          "correcta": 0,
+          "explicacion": "De «liburu» (libro) + «tegi» (lugar de)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eskola»?",
+          "opciones": [
+            "la escuela",
+            "la calle",
+            "el monte",
+            "el bar"
+          ],
+          "correcta": 0,
+          "explicacion": "eskola = la escuela."
+        }
+      ]
+    },
+    {
+      "id": "u8-g20",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "ospitalea",
+              "es": "el hospital"
+            },
+            {
+              "eu": "nator",
+              "es": "(yo) vengo"
+            },
+            {
+              "eu": "denda",
+              "es": "la tienda"
+            },
+            {
+              "eu": "hemendik",
+              "es": "desde aquí"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "hemendik",
+              "es": "desde aquí"
+            },
+            {
+              "eu": "hona",
+              "es": "aquí (con movimiento)"
+            },
+            {
+              "eu": "ahal dut",
+              "es": "puedo"
+            },
+            {
+              "eu": "mendia",
+              "es": "el monte"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eskuinera»?",
+          "opciones": [
+            "a la derecha",
+            "(yo) voy",
+            "desde aquí",
+            "aquí (con movimiento)"
+          ],
+          "correcta": 0,
+          "explicacion": "eskuinera = a la derecha."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la bicicleta» se dice…",
+          "opciones": [
+            "bizikleta",
+            "hemendik",
+            "oinez",
+            "hara"
+          ],
+          "correcta": 0,
+          "explicacion": "la bicicleta = bizikleta."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «taberna»?",
+          "opciones": [
+            "el bar",
+            "(tú) vas",
+            "el autobús",
+            "el trabajo"
+          ],
+          "correcta": 0,
+          "explicacion": "taberna = el bar."
+        }
+      ]
+    },
+    {
+      "id": "u8-g21",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "ezin dut",
+              "es": "no puedo"
+            },
+            {
+              "eu": "taberna",
+              "es": "el bar"
+            },
+            {
+              "eu": "ospitalea",
+              "es": "el hospital"
+            },
+            {
+              "eu": "iritsi",
+              "es": "llegar"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "ospitalea",
+              "es": "el hospital"
+            },
+            {
+              "eu": "hondartza",
+              "es": "la playa"
+            },
+            {
+              "eu": "hona",
+              "es": "aquí (con movimiento)"
+            },
+            {
+              "eu": "irten",
+              "es": "salir"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «zuzen»?",
+          "opciones": [
+            "recto, derecho",
+            "aquí (con movimiento)",
+            "(tú) vas",
+            "a la derecha"
+          ],
+          "correcta": 0,
+          "explicacion": "zuzen = recto, derecho."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«venir» se dice…",
+          "opciones": [
+            "etorri",
+            "hiria",
+            "mendia",
+            "nahi dut"
+          ],
+          "correcta": 0,
+          "explicacion": "venir = etorri."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «sartu»?",
+          "opciones": [
+            "entrar",
+            "quiero",
+            "la ciudad",
+            "lejos"
+          ],
+          "correcta": 0,
+          "explicacion": "sartu = entrar."
+        }
+      ]
+    },
+    {
+      "id": "u8-g22",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "noa",
+              "es": "(yo) voy"
+            },
+            {
+              "eu": "autobusa",
+              "es": "el autobús"
+            },
+            {
+              "eu": "urrun",
+              "es": "lejos"
+            },
+            {
+              "eu": "etorri",
+              "es": "venir"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "etorri",
+              "es": "venir"
+            },
+            {
+              "eu": "autobusa",
+              "es": "el autobús"
+            },
+            {
+              "eu": "zuzen",
+              "es": "recto, derecho"
+            },
+            {
+              "eu": "kotxea",
+              "es": "el coche"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ibili»?",
+          "opciones": [
+            "andar, andar por ahí",
+            "la feria, el mercado",
+            "quiero",
+            "(él/ella) viene"
+          ],
+          "correcta": 0,
+          "explicacion": "ibili = andar, andar por ahí."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«(tú) vienes» se dice…",
+          "opciones": [
+            "zatoz",
+            "hemendik",
+            "kotxea",
+            "noa"
+          ],
+          "correcta": 0,
+          "explicacion": "(tú) vienes = zatoz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nahi dut»?",
+          "opciones": [
+            "quiero",
+            "la feria, el mercado",
+            "(tú) vienes",
+            "el mercado"
+          ],
+          "correcta": 0,
+          "explicacion": "Ya la tenías; aquí se ve en familia."
+        }
+      ]
+    },
+    {
+      "id": "u8-g23",
+      "subnivel": "8.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja en qué vas, y por dónde",
+          "pares": [
+            {
+              "eu": "bizikleta",
+              "es": "la bicicleta"
+            },
+            {
+              "eu": "geltokia",
+              "es": "la estación, la parada"
+            },
+            {
+              "eu": "trena",
+              "es": "el tren"
+            },
+            {
+              "eu": "oinez",
+              "es": "a pie"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja en qué vas, y por dónde",
+          "pares": [
+            {
+              "eu": "bizikleta",
+              "es": "la bicicleta"
+            },
+            {
+              "eu": "geltokia",
+              "es": "la estación, la parada"
+            },
+            {
+              "eu": "trena",
+              "es": "el tren"
+            },
+            {
+              "eu": "autobusa",
+              "es": "el autobús"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «bizikleta»?",
+          "opciones": [
+            "la bicicleta",
+            "(yo) vengo",
+            "(él/ella) anda",
+            "puedo"
+          ],
+          "correcta": 0,
+          "explicacion": "bizikleta = la bicicleta."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«a pie» se dice…",
+          "opciones": [
+            "oinez",
+            "eskola",
+            "hiria",
+            "ezkerrera"
+          ],
+          "correcta": 0,
+          "explicacion": "De «oin» (pie) + la -z de «por medio de»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «autobusa»?",
+          "opciones": [
+            "el autobús",
+            "(él/ella) va",
+            "lejos",
+            "la calle"
+          ],
+          "correcta": 0,
+          "explicacion": "autobusa = el autobús."
+        }
+      ]
+    },
+    {
+      "id": "u8-g24",
+      "subnivel": "8.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja poder y deber",
+          "pares": [
+            {
+              "eu": "ezin dut",
+              "es": "no puedo"
+            },
+            {
+              "eu": "ahal dut",
+              "es": "puedo"
+            },
+            {
+              "eu": "behar dut",
+              "es": "tengo que, necesito"
+            },
+            {
+              "eu": "nahi dut",
+              "es": "quiero"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja poder y deber",
+          "pares": [
+            {
+              "eu": "ahal dut",
+              "es": "puedo"
+            },
+            {
+              "eu": "nahi dut",
+              "es": "quiero"
+            },
+            {
+              "eu": "behar dut",
+              "es": "tengo que, necesito"
+            },
+            {
+              "eu": "ezin dut",
+              "es": "no puedo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «behar dut»?",
+          "opciones": [
+            "tengo que, necesito",
+            "el trabajo",
+            "el bar",
+            "el hospital"
+          ],
+          "correcta": 0,
+          "explicacion": "behar dut = tengo que, necesito."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«puedo» se dice…",
+          "opciones": [
+            "ahal dut",
+            "azoka",
+            "ezin dut",
+            "trena"
+          ],
+          "correcta": 0,
+          "explicacion": "Tener la posibilidad de hacer algo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ezin dut»?",
+          "opciones": [
+            "no puedo",
+            "ir",
+            "la ciudad",
+            "(yo) ando"
+          ],
+          "correcta": 0,
+          "explicacion": "Fíjate: no lleva «ez» delante, ya va dentro."
+        }
+      ]
+    },
+    {
+      "id": "u8-g25",
+      "subnivel": "8.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja poder y deber",
+          "pares": [
+            {
+              "eu": "behar dut",
+              "es": "tengo que, necesito"
+            },
+            {
+              "eu": "ezin dut",
+              "es": "no puedo"
+            },
+            {
+              "eu": "ahal dut",
+              "es": "puedo"
+            },
+            {
+              "eu": "nahi dut",
+              "es": "quiero"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja poder y deber",
+          "pares": [
+            {
+              "eu": "nahi dut",
+              "es": "quiero"
+            },
+            {
+              "eu": "behar dut",
+              "es": "tengo que, necesito"
+            },
+            {
+              "eu": "ezin dut",
+              "es": "no puedo"
+            },
+            {
+              "eu": "ahal dut",
+              "es": "puedo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «behar dut»?",
+          "opciones": [
+            "tengo que, necesito",
+            "la ciudad",
+            "la feria, el mercado",
+            "la calle"
+          ],
+          "correcta": 0,
+          "explicacion": "behar dut = tengo que, necesito."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«puedo» se dice…",
+          "opciones": [
+            "ahal dut",
+            "lana",
+            "azoka",
+            "dabil"
+          ],
+          "correcta": 0,
+          "explicacion": "Tener la posibilidad de hacer algo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ezin dut»?",
+          "opciones": [
+            "no puedo",
+            "el autobús",
+            "a la derecha",
+            "(yo) voy"
+          ],
+          "correcta": 0,
+          "explicacion": "Fíjate: no lleva «ez» delante, ya va dentro."
+        }
+      ]
+    },
+    {
+      "id": "u8-g26",
+      "subnivel": "8.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja poder y deber",
+          "pares": [
+            {
+              "eu": "ezin dut",
+              "es": "no puedo"
+            },
+            {
+              "eu": "nahi dut",
+              "es": "quiero"
+            },
+            {
+              "eu": "ahal dut",
+              "es": "puedo"
+            },
+            {
+              "eu": "behar dut",
+              "es": "tengo que, necesito"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja poder y deber",
+          "pares": [
+            {
+              "eu": "nahi dut",
+              "es": "quiero"
+            },
+            {
+              "eu": "ahal dut",
+              "es": "puedo"
+            },
+            {
+              "eu": "behar dut",
+              "es": "tengo que, necesito"
+            },
+            {
+              "eu": "ezin dut",
+              "es": "no puedo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ezin dut»?",
+          "opciones": [
+            "no puedo",
+            "la escuela",
+            "(tú) vas",
+            "(él/ella) va"
+          ],
+          "correcta": 0,
+          "explicacion": "Fíjate: no lleva «ez» delante, ya va dentro."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«tengo que, necesito» se dice…",
+          "opciones": [
+            "behar dut",
+            "ahal dut",
+            "noa",
+            "hiria"
+          ],
+          "correcta": 0,
+          "explicacion": "tengo que, necesito = behar dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nahi dut»?",
+          "opciones": [
+            "quiero",
+            "(tú) vas",
+            "la biblioteca",
+            "puedo"
+          ],
+          "correcta": 0,
+          "explicacion": "Ya la tenías; aquí se ve en familia."
+        }
+      ]
+    },
+    {
+      "id": "u8-g27",
+      "subnivel": "8.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hartu ezkerra» significa…",
+          "opciones": [
+            "Ve a la izquierda",
+            "Coge la izquierda",
+            "La izquierda",
+            "¿Dónde está la izquierda?"
+          ],
+          "correcta": 1,
+          "explicacion": "Hartu: coger, tomar. Es una orden."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para dar una orden, la forma más simple del verbo es…",
+          "opciones": [
+            "el verbo tal cual, en su forma de diccionario",
+            "el verbo en -t(z)en",
+            "el verbo con -ko",
+            "el verbo con ez"
+          ],
+          "correcta": 0,
+          "explicacion": "«Etorri!» = ¡ven! «Hartu!» = ¡coge!"
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ezkerrera» significa…",
+          "opciones": [
+            "a la derecha",
+            "a la izquierda",
+            "recto",
+            "atrás"
+          ],
+          "correcta": 1,
+          "explicacion": "Lleva dentro el -ra de movimiento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Eskuinera» significa…",
+          "opciones": [
+            "a la izquierda",
+            "a la derecha",
+            "arriba",
+            "cerca"
+          ],
+          "correcta": 1,
+          "explicacion": "La otra mano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zuzen» significa…",
+          "opciones": [
+            "torcido",
+            "recto",
+            "lejos",
+            "despacio"
+          ],
+          "correcta": 1,
+          "explicacion": "Sigue recto."
+        }
+      ]
+    },
+    {
+      "id": "u8-g28",
+      "subnivel": "8.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué diferencia hay entre «ezkerrean» y «ezkerrera»?",
+          "opciones": [
+            "Ninguna",
+            "«-an» es estar a la izquierda; «-ra» es ir hacia la izquierda",
+            "Una es de Bizkaia",
+            "«-ra» está mal"
+          ],
+          "correcta": 1,
+          "explicacion": "El -ra siempre marca movimiento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Non dago geltokia?» significa…",
+          "opciones": [
+            "¿Adónde va la estación?",
+            "¿Dónde está la estación?",
+            "¿Hay estación?",
+            "La estación está"
+          ],
+          "correcta": 1,
+          "explicacion": "Non = dónde."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hemendik gertu dago» significa…",
+          "opciones": [
+            "Está lejos de aquí",
+            "Está cerca de aquí",
+            "Viene de aquí",
+            "Va hacia aquí"
+          ],
+          "correcta": 1,
+          "explicacion": "Gertu = cerca."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Urrun dago?» pregunta…",
+          "opciones": [
+            "¿está cerca?",
+            "¿está lejos?",
+            "¿dónde está?",
+            "¿cuándo?"
+          ],
+          "correcta": 1,
+          "explicacion": "Urrun = lejos."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "las indicaciones",
+          "pares": [
+            {
+              "eu": "zuzen",
+              "es": "recto"
+            },
+            {
+              "eu": "ezkerrera",
+              "es": "a la izquierda"
+            },
+            {
+              "eu": "eskuinera",
+              "es": "a la derecha"
+            },
+            {
+              "eu": "gertu",
+              "es": "cerca"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u8-g29",
+      "subnivel": "8.3",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Recto, y luego a la izquierda.",
+          "eu": "Zuzen, eta gero ezkerrera.",
+          "palabras": [
+            "Zuzen,",
+            "eta",
+            "gero",
+            "ezkerrera."
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para pedir una dirección empiezas por…",
+          "opciones": [
+            "Barkatu, non dago…?",
+            "Agur",
+            "Eskerrik asko",
+            "Bai"
+          ],
+          "correcta": 0,
+          "explicacion": "«Perdona, ¿dónde está…?»"
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etorri!» es…",
+          "opciones": [
+            "venir",
+            "¡ven!",
+            "vengo",
+            "vendré"
+          ],
+          "correcta": 1,
+          "explicacion": "El verbo solo, como orden."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Segi zuzen» significa…",
+          "opciones": [
+            "Para aquí",
+            "Sigue recto",
+            "Gira",
+            "Vuelve"
+          ],
+          "correcta": 1,
+          "explicacion": "Segi: seguir."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuándo se usa la forma de orden?",
+          "opciones": [
+            "para preguntar",
+            "para dar instrucciones",
+            "para negar",
+            "para el pasado"
+          ],
+          "correcta": 1,
+          "explicacion": "Indicaciones, recetas, avisos."
+        }
+      ]
+    },
+    {
+      "id": "u8-g30",
+      "subnivel": "8.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Noraino?» pregunta…",
+          "opciones": [
+            "¿de dónde?",
+            "¿hasta dónde?",
+            "¿por dónde?",
+            "¿adónde?"
+          ],
+          "correcta": 1,
+          "explicacion": "Nora + raino: el límite del recorrido."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bilbora arte» significa…",
+          "opciones": [
+            "desde Bilbao",
+            "hasta Bilbao",
+            "en Bilbao",
+            "por Bilbao"
+          ],
+          "correcta": 1,
+          "explicacion": "El final del trayecto."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "las preguntas de camino",
+          "pares": [
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            },
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿por dónde?"
+            },
+            {
+              "eu": "noraino?",
+              "es": "¿hasta dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si te dicen «ezkerrera» tienes que…",
+          "opciones": [
+            "girar a la izquierda",
+            "quedarte a la izquierda",
+            "venir de la izquierda",
+            "mirar a la izquierda"
+          ],
+          "correcta": 0,
+          "explicacion": "El -ra es movimiento: hacia allá."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hartu bigarren kalea» significa…",
+          "opciones": [
+            "La segunda calle",
+            "Coge la segunda calle",
+            "¿Dónde está la segunda calle?",
+            "Dos calles"
+          ],
+          "correcta": 1,
+          "explicacion": "Orden + ordinal: aquí se juntan dos cosas que ya sabes."
+        }
+      ]
     }
   ]
 }

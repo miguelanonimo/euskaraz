@@ -569,6 +569,9 @@
 
   /* Los dos repasos salen al inicio; la práctica de una unidad, a su
      portada, que es de donde se entró. */
+  /* Al terminar se vuelve a la portada de la unidad —no al subnivel—
+     para ver de un vistazo qué queda por hacer. La unidad siempre se
+     puede volver a abrir: reforzar lo de atrás es parte del método. */
   function salirDeSesion() {
     if (estado.modo === 'unidad' && estado.unidad) pantallaUnidad(estado.unidad);
     else pantallaHome();
@@ -596,14 +599,35 @@
     el.unitList.innerHTML = CURSO.unidades.map(function (u) {
       var p = progUnidad(u.id);
       var badge = p.completada ? tickSvg : esc(u.numero);
+      // (el estado real se calcula abajo, en progresoUnidad)
       /* El número de la unidad marca su progreso, no un color de
          contenido: gris sin empezar, ámbar empezada, rojo completada. */
       var badgeClase = p.completada ? ' unitcard__badge--ok' : (p.visitada ? ' unitcard__badge--activa' : '');
-      var meta = p.completada
-        ? '<span class="unitcard__meta">' + tickSvg + 'Completada · ' + Math.round(p.mejor * 100) + '%</span>'
-        : (p.visitada
-            ? '<span class="unitcard__meta unitcard__meta--pend">Empezada</span>'
-            : '<span class="unitcard__meta unitcard__meta--pend">' + u.ejercicios.length + ' ejercicios</span>');
+      /* Qué se enseña debajo del título. En una unidad partida, cuántas
+         de sus porciones llevas — que es lo que de verdad has avanzado.
+         Una unidad completada sigue siendo accesible y sigue diciendo lo
+         que llevas: nada se cierra, volver a reforzar es parte del
+         método (pedido por Ric). */
+      var pu = progresoUnidad(u);
+      var meta;
+      if (tieneSubniveles(u)) {
+        if (pu.completada) {
+          meta = '<span class="unitcard__meta">' + tickSvg + 'Completada · ' +
+                 pu.hechos + ' de ' + pu.total + '</span>';
+        } else if (pu.hechos) {
+          meta = '<span class="unitcard__meta unitcard__meta--pend">' +
+                 pu.hechos + ' de ' + pu.total + ' hechos</span>';
+        } else {
+          meta = '<span class="unitcard__meta unitcard__meta--pend">' +
+                 plural(u.subniveles.length, 'subnivel', 'subniveles') + '</span>';
+        }
+      } else {
+        meta = p.completada
+          ? '<span class="unitcard__meta">' + tickSvg + 'Completada · ' + Math.round(p.mejor * 100) + '%</span>'
+          : (p.visitada
+              ? '<span class="unitcard__meta unitcard__meta--pend">Empezada</span>'
+              : '<span class="unitcard__meta unitcard__meta--pend">' + u.ejercicios.length + ' ejercicios</span>');
+      }
 
       return '<li>' +
         '<button class="unitcard" data-unidad="' + esc(u.id) + '">' +
@@ -715,6 +739,31 @@
   /* Qué se ha hecho ya de cada subnivel. Se guarda dentro del progreso de
      la unidad, en un mapa aparte, para no tocar el shape del calendario
      de repaso (que va por id de grupo, no por subnivel). */
+  /* Cuánto llevas de una unidad partida en subniveles: la media de sus
+     porciones, contando el test como una más. Una unidad sin subniveles
+     sigue funcionando como siempre, con su propia nota. */
+  function progresoUnidad(u) {
+    var p = progUnidad(u.id);
+    if (!tieneSubniveles(u)) {
+      return { ratio: p.mejor || 0, hechos: p.completada ? 1 : 0, total: 1,
+               completada: !!p.completada };
+    }
+    var partes = u.subniveles.map(function (s) {
+      return (progSub(u.id, s.id).mejor) || 0;
+    });
+    if (delSubnivel(u.ejercicios, 'test').length) partes.push(p.mejor || 0);
+    var hechos = partes.filter(function (r) { return r >= 0.7; }).length;
+    var suma = partes.reduce(function (a, b) { return a + b; }, 0);
+    return {
+      ratio: partes.length ? suma / partes.length : 0,
+      hechos: hechos, total: partes.length,
+      // La unidad se da por hecha cuando se ha superado su test.
+      completada: !!p.completada
+    };
+  }
+
+  function plural(n, uno, varios) { return n + ' ' + (n === 1 ? uno : varios); }
+
   function progSub(unidadId, subId) {
     var p = progUnidad(unidadId);
     if (!p.subs) p.subs = {};
@@ -727,9 +776,9 @@
       var c = contenidoSub(u, s.id);
       var ps = progSub(u.id, s.id);
       var trozos = [];
-      if (c.gramatica.length)   trozos.push(c.gramatica.length + (c.gramatica.length === 1 ? ' explicación' : ' explicaciones'));
-      if (c.vocabulario.length) trozos.push(c.vocabulario.length + ' palabras');
-      if (c.ejercicios.length)  trozos.push(c.ejercicios.length + ' ejercicios');
+      if (c.gramatica.length)   trozos.push(plural(c.gramatica.length, 'explicación', 'explicaciones'));
+      if (c.vocabulario.length) trozos.push(plural(c.vocabulario.length, 'palabra', 'palabras'));
+      if (c.ejercicios.length)  trozos.push(plural(c.ejercicios.length, 'ejercicio', 'ejercicios'));
 
       // Subnivel todavía sin escribir: se enseña, para que se vea el plan,
       // pero no se puede abrir a una pantalla vacía.
@@ -754,7 +803,7 @@
           '<span class="subcard__sub">' + esc(trozos.join(' · ')) + '</span>' +
         '</span>' + estadoTxt +
         '<span class="subcard__chev" aria-hidden="true">' +
-          '<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>' +
+          '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 5l7 7-7 7"/></svg></span>' +
       '</button>';
     });
 
@@ -764,14 +813,15 @@
       var pu = progUnidad(u.id);
       partes.push(
         '<button class="subcard subcard--test' + (pu.completada ? ' subcard--ok' : '') + '" data-sub="test">' +
-          '<span class="subcard__id">✓</span>' +
+          '<span class="subcard__id">' + (pu.completada ? tickSvg : '') + '</span>' +
           '<span class="subcard__body">' +
             '<span class="subcard__title">Test de la unidad</span>' +
-            '<span class="subcard__sub">Gramática y vocabulario de todo lo anterior · ' + test.length + ' ejercicios</span>' +
+            '<span class="subcard__sub">Todo lo anterior mezclado · ' +
+              plural(test.length, 'ejercicio', 'ejercicios') + '</span>' +
           '</span>' +
           (pu.completada ? '<span class="subcard__hecho">' + tickSvg + Math.round(pu.mejor * 100) + '%</span>' : '') +
           '<span class="subcard__chev" aria-hidden="true">' +
-            '<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>' +
+            '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 5l7 7-7 7"/></svg></span>' +
         '</button>');
     }
 
@@ -802,17 +852,18 @@
 
     var tarjetas = [];
     if (c.gramatica.length) {
-      tarjetas.push(tarjetaNav('goGram', 'M4 5h16M4 12h16M4 19h9', 'Explicación',
-        c.gramatica.length + (c.gramatica.length === 1 ? ' ficha' : ' fichas'), ''));
+      tarjetas.push(tarjetaNav('goGram', 'Explicación',
+        plural(c.gramatica.length, 'ficha', 'fichas'), ''));
     }
     if (c.vocabulario.length) {
-      tarjetas.push(tarjetaNav('goVoc', 'M4 5.5A2.5 2.5 0 016.5 3H19v15H6.5A2.5 2.5 0 004 20.5z',
-        'Vocabulario', c.vocabulario.length + ' palabras', ''));
+      tarjetas.push(tarjetaNav('goVoc', 'Vocabulario',
+        plural(c.vocabulario.length, 'palabra', 'palabras'), ''));
     }
     if (c.ejercicios.length) {
       var v = c.ejercicios.reduce(function (n, g) { return n + ((g.variantes && g.variantes.length) || 1); }, 0);
-      tarjetas.push(tarjetaNav('goPrac', 'M13 2L4.5 13.5H11L10 22l8.5-11.5H12z',
-        'Practicar', c.ejercicios.length + ' ejercicios · ' + v + ' variantes', ' navcard--accent'));
+      tarjetas.push(tarjetaNav('goPrac', 'Practicar',
+        plural(c.ejercicios.length, 'ejercicio', 'ejercicios') + ' · ' + v + ' variantes',
+        ' navcard--accent'));
     }
     el.subCards.innerHTML = tarjetas.join('');
 
@@ -824,16 +875,17 @@
     mostrar('sub');
   }
 
-  function tarjetaNav(id, path, titulo, sub, extra) {
+  /* Sin icono: el CSS los oculta (.navcard__icon{display:none}) y
+     generarlos solo servía para que, si la hoja no ha cargado todavía,
+     apareciera un SVG a tamaño completo. */
+  function tarjetaNav(id, titulo, sub, extra) {
     return '<button class="navcard' + extra + '" id="' + id + '">' +
-      '<span class="navcard__icon" aria-hidden="true">' +
-        '<svg viewBox="0 0 24 24"><path d="' + path + '"/></svg></span>' +
       '<span class="navcard__body">' +
         '<span class="navcard__title">' + esc(titulo) + '</span>' +
         '<span class="navcard__sub">' + esc(sub) + '</span>' +
       '</span>' +
       '<span class="navcard__chev" aria-hidden="true">' +
-        '<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></span>' +
+        '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 5l7 7-7 7"/></svg></span>' +
     '</button>';
   }
 
@@ -1903,11 +1955,22 @@
     // Los repasos no pertenecen a ninguna unidad, así que no marcan nada
     // como completado: solo te dicen cómo ha ido. Lo que sí han hecho,
     // pregunta a pregunta, es mover el calendario.
+    /* Un subnivel puntúa el subnivel; el test de la unidad puntúa la
+       unidad. Antes todo iba a la unidad, así que hacer bien una porción
+       la dejaba «Completada · 100%» sin haber visto el resto (detectado
+       por Ric). El progreso de la unidad se calcula ahora sumando sus
+       partes, en progresoUnidad(). */
     if (estado.modo === 'unidad') {
-      var p = progUnidad(u.id);
-      p.intentos++;
-      p.mejor = Math.max(p.mejor, ratio);
-      if (ratio >= 0.7) p.completada = true;
+      if (estado.subnivel && estado.subnivel !== 'test') {
+        var ps = progSub(u.id, estado.subnivel);
+        ps.visitado = true;
+        ps.mejor = Math.max(ps.mejor || 0, ratio);
+      } else {
+        var p = progUnidad(u.id);
+        p.intentos++;
+        p.mejor = Math.max(p.mejor, ratio);
+        if (ratio >= 0.7) p.completada = true;
+      }
       guardarProgreso();
     }
 
@@ -1924,10 +1987,25 @@
       else if (ratio >= 0.5) { titulo = 'Ondo!';     sub = 'Bien. Al final las has puesto todas.'; }
       else                   { titulo = 'Ia-ia…';    sub = 'Han costado, pero han salido. Vuelven pronto.'; }
     }
-    else if (ratio === 1)   { titulo = 'Bikain!';   sub = 'Perfecto. Todas correctas.'; }
-    else if (ratio >= 0.8)  { titulo = 'Oso ondo!'; sub = 'Muy bien. Dominas esta unidad.'; }
-    else if (ratio >= 0.7)  { titulo = 'Ondo!';     sub = 'Bien. Unidad superada.'; }
-    else                    { titulo = 'Ia-ia…';    sub = 'Casi. Repasa la gramática y vuelve a intentarlo.'; }
+    else {
+      /* Un subnivel no es la unidad: decirle «unidad superada» por hacer
+         una porción confundía y daba la sensación de que ya no quedaba
+         nada (detectado por Ric). */
+      var esParte = !!(estado.subnivel && estado.subnivel !== 'test');
+      var queEs = esParte ? 'este subnivel' : 'esta unidad';
+      var restantes = 0;
+      if (esParte && tieneSubniveles(u)) {
+        var pr = progresoUnidad(u);
+        restantes = pr.total - pr.hechos;
+      }
+      var cola = restantes > 0
+        ? ' Te quedan ' + plural(restantes, 'parte', 'partes') + ' de la unidad.'
+        : '';
+      if (ratio === 1)      { titulo = 'Bikain!';   sub = 'Perfecto. Todas correctas.' + cola; }
+      else if (ratio >= 0.8){ titulo = 'Oso ondo!'; sub = 'Muy bien. Dominas ' + queEs + '.' + cola; }
+      else if (ratio >= 0.7){ titulo = 'Ondo!';     sub = 'Bien. ' + (esParte ? 'Subnivel superado.' : 'Unidad superada.') + cola; }
+      else                  { titulo = 'Ia-ia…';    sub = 'Casi. Repasa la explicación y vuelve a intentarlo.'; }
+    }
 
     // Verde para las tres cabeceras positivas; la de "casi" se queda
     // neutra — no es un fallo, es ánimo para seguir, no toca marcarla

@@ -349,7 +349,7 @@
       "nota": null,
       "audio": "unidades/u5/bat.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "bi",
@@ -357,7 +357,7 @@
       "nota": null,
       "audio": "unidades/u5/bi.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hiru",
@@ -365,7 +365,7 @@
       "nota": null,
       "audio": "unidades/u5/hiru.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "lau",
@@ -373,7 +373,7 @@
       "nota": null,
       "audio": "unidades/u5/lau.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "bost",
@@ -381,7 +381,7 @@
       "nota": null,
       "audio": "unidades/u5/bost.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "sei",
@@ -389,7 +389,7 @@
       "nota": null,
       "audio": "unidades/u5/sei.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "zazpi",
@@ -397,7 +397,7 @@
       "nota": null,
       "audio": "unidades/u5/zazpi.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "zortzi",
@@ -405,7 +405,7 @@
       "nota": null,
       "audio": "unidades/u5/zortzi.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "bederatzi",
@@ -413,7 +413,7 @@
       "nota": null,
       "audio": "unidades/u5/bederatzi.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hamar",
@@ -421,7 +421,7 @@
       "nota": null,
       "audio": "unidades/u5/hamar.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hamaika",
@@ -429,7 +429,7 @@
       "nota": "También significa «un montón», coloquialmente.",
       "audio": "unidades/u5/hamaika.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hamabi",
@@ -437,7 +437,7 @@
       "nota": "hamar + bi",
       "audio": "unidades/u5/hamabi.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hamahiru",
@@ -445,7 +445,7 @@
       "nota": null,
       "audio": "unidades/u5/hamahiru.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hamalau",
@@ -453,7 +453,7 @@
       "nota": null,
       "audio": "unidades/u5/hamalau.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hamabost",
@@ -461,7 +461,7 @@
       "nota": null,
       "audio": "unidades/u5/hamabost.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hamasei",
@@ -469,7 +469,7 @@
       "nota": null,
       "audio": "unidades/u5/hamasei.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hamazazpi",
@@ -477,7 +477,7 @@
       "nota": null,
       "audio": "unidades/u5/hamazazpi.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hemezortzi",
@@ -485,7 +485,7 @@
       "nota": "El prefijo cambia a «heme-». También se oye «hamazortzi».",
       "audio": "unidades/u5/hemezortzi.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hemeretzi",
@@ -493,7 +493,7 @@
       "nota": "heme- + bederatzi, contraído.",
       "audio": "unidades/u5/hemeretzi.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "hogei",
@@ -501,7 +501,7 @@
       "nota": null,
       "audio": "unidades/u5/hogei.mp3",
       "categoria": "otros",
-      "subnivel": "4.4"
+      "subnivel": "4.1"
     },
     {
       "eu": "dut",
@@ -746,119 +746,119 @@
       "es": "el pájaro",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "4.7"
+      "subnivel": "4.8"
     },
     {
       "eu": "zaldia",
       "es": "el caballo",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "4.7"
+      "subnivel": "4.8"
     },
     {
       "eu": "behia",
       "es": "la vaca",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "4.7"
+      "subnivel": "4.8"
     },
     {
       "eu": "ardia",
       "es": "la oveja",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "4.7"
+      "subnivel": "4.8"
     },
     {
       "eu": "txerria",
       "es": "el cerdo",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "4.7"
+      "subnivel": "4.8"
     },
     {
       "eu": "oiloa",
       "es": "la gallina",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "4.7"
+      "subnivel": "4.8"
     },
     {
       "eu": "untxia",
       "es": "el conejo",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "4.7"
+      "subnivel": "4.8"
     },
     {
       "eu": "sagua",
       "es": "el ratón",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "4.7"
+      "subnivel": "4.8"
     },
     {
       "eu": "hogeita hamar",
       "es": "treinta",
       "nota": "Veinte y diez.",
       "categoria": "otros",
-      "subnivel": "4.7"
+      "subnivel": "4.2"
     },
     {
       "eu": "berrogei",
       "es": "cuarenta",
       "nota": "Dos veintes.",
       "categoria": "otros",
-      "subnivel": "4.7"
+      "subnivel": "4.2"
     },
     {
       "eu": "berrogeita hamar",
       "es": "cincuenta",
       "nota": "Dos veintes y diez.",
       "categoria": "otros",
-      "subnivel": "4.7"
+      "subnivel": "4.2"
     },
     {
       "eu": "hirurogei",
       "es": "sesenta",
       "nota": "Tres veintes.",
       "categoria": "otros",
-      "subnivel": "4.7"
+      "subnivel": "4.2"
     },
     {
       "eu": "hirurogeita hamar",
       "es": "setenta",
       "nota": "Tres veintes y diez.",
       "categoria": "otros",
-      "subnivel": "4.7"
+      "subnivel": "4.2"
     },
     {
       "eu": "laurogei",
       "es": "ochenta",
       "nota": "Cuatro veintes.",
       "categoria": "otros",
-      "subnivel": "4.7"
+      "subnivel": "4.2"
     },
     {
       "eu": "laurogeita hamar",
       "es": "noventa",
       "nota": "Cuatro veintes y diez.",
       "categoria": "otros",
-      "subnivel": "4.7"
+      "subnivel": "4.2"
     },
     {
       "eu": "ehun",
       "es": "cien",
       "nota": null,
       "categoria": "otros",
-      "subnivel": "4.7"
+      "subnivel": "4.2"
     },
     {
       "eu": "mila",
       "es": "mil",
       "nota": null,
       "categoria": "otros",
-      "subnivel": "4.7"
+      "subnivel": "4.2"
     },
     {
       "eu": "lehena",
@@ -2705,6 +2705,2320 @@
           ],
           "correcta": 0,
           "explicacion": "Un coche, un perro, dinero, tiempo."
+        }
+      ]
+    },
+    {
+      "id": "u4-g23",
+      "subnivel": "4.6",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia cercana",
+          "pares": [
+            {
+              "eu": "anaia",
+              "es": "hermano (de un chico)"
+            },
+            {
+              "eu": "semea",
+              "es": "el hijo"
+            },
+            {
+              "eu": "alaba",
+              "es": "la hija"
+            },
+            {
+              "eu": "aita",
+              "es": "padre"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia cercana",
+          "pares": [
+            {
+              "eu": "anaia",
+              "es": "hermano (de un chico)"
+            },
+            {
+              "eu": "semea",
+              "es": "el hijo"
+            },
+            {
+              "eu": "ama",
+              "es": "madre"
+            },
+            {
+              "eu": "aita",
+              "es": "padre"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ahizpa»?",
+          "opciones": [
+            "hermana (de una chica)",
+            "el último",
+            "la prima",
+            "dieciséis"
+          ],
+          "correcta": 0,
+          "explicacion": "ahizpa = hermana (de una chica)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«hermana (de un chico)» se dice…",
+          "opciones": [
+            "arreba",
+            "bat",
+            "hamaika",
+            "katua"
+          ],
+          "correcta": 0,
+          "explicacion": "hermana (de un chico) = arreba."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «anaia»?",
+          "opciones": [
+            "hermano (de un chico)",
+            "el abuelo",
+            "seis",
+            "el hijo"
+          ],
+          "correcta": 0,
+          "explicacion": "anaia = hermano (de un chico)."
+        }
+      ]
+    },
+    {
+      "id": "u4-g24",
+      "subnivel": "4.6",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia cercana",
+          "pares": [
+            {
+              "eu": "aita",
+              "es": "padre"
+            },
+            {
+              "eu": "alaba",
+              "es": "la hija"
+            },
+            {
+              "eu": "ahizpa",
+              "es": "hermana (de una chica)"
+            },
+            {
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia cercana",
+          "pares": [
+            {
+              "eu": "alaba",
+              "es": "la hija"
+            },
+            {
+              "eu": "anaia",
+              "es": "hermano (de un chico)"
+            },
+            {
+              "eu": "semea",
+              "es": "el hijo"
+            },
+            {
+              "eu": "ama",
+              "es": "madre"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «neba»?",
+          "opciones": [
+            "hermano (de una chica)",
+            "hermano (de un chico)",
+            "el pájaro",
+            "el cuarto"
+          ],
+          "correcta": 0,
+          "explicacion": "Palabra especialmente viva en Bizkaia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el hijo» se dice…",
+          "opciones": [
+            "semea",
+            "hamar",
+            "hirugarrena",
+            "bosgarrena"
+          ],
+          "correcta": 0,
+          "explicacion": "el hijo = semea."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ama»?",
+          "opciones": [
+            "madre",
+            "el pájaro",
+            "cuatro",
+            "diez"
+          ],
+          "correcta": 0,
+          "explicacion": "ama = madre."
+        }
+      ]
+    },
+    {
+      "id": "u4-g25",
+      "subnivel": "4.6",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia cercana",
+          "pares": [
+            {
+              "eu": "aita",
+              "es": "padre"
+            },
+            {
+              "eu": "anaia",
+              "es": "hermano (de un chico)"
+            },
+            {
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
+            },
+            {
+              "eu": "alaba",
+              "es": "la hija"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia cercana",
+          "pares": [
+            {
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
+            },
+            {
+              "eu": "neba",
+              "es": "hermano (de una chica)"
+            },
+            {
+              "eu": "ahizpa",
+              "es": "hermana (de una chica)"
+            },
+            {
+              "eu": "aita",
+              "es": "padre"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ahizpa»?",
+          "opciones": [
+            "hermana (de una chica)",
+            "la hija",
+            "cuarenta",
+            "el perro"
+          ],
+          "correcta": 0,
+          "explicacion": "ahizpa = hermana (de una chica)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«madre» se dice…",
+          "opciones": [
+            "ama",
+            "hamar",
+            "iloba",
+            "bat"
+          ],
+          "correcta": 0,
+          "explicacion": "madre = ama."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «arreba»?",
+          "opciones": [
+            "hermana (de un chico)",
+            "el último",
+            "(yo) tengo (varias cosas)",
+            "el ratón"
+          ],
+          "correcta": 0,
+          "explicacion": "arreba = hermana (de un chico)."
+        }
+      ]
+    },
+    {
+      "id": "u4-g26",
+      "subnivel": "4.7",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia extendida",
+          "pares": [
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "hirurogeita hamar",
+              "es": "setenta"
+            },
+            {
+              "eu": "amona",
+              "es": "la abuela"
+            },
+            {
+              "eu": "izeba",
+              "es": "la tía"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia extendida",
+          "pares": [
+            {
+              "eu": "mutil-laguna",
+              "es": "el novio"
+            },
+            {
+              "eu": "osaba",
+              "es": "el tío"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "laurogei",
+              "es": "ochenta"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «emaztea»?",
+          "opciones": [
+            "la mujer, la esposa",
+            "(él/ella) tiene",
+            "el último",
+            "setenta"
+          ],
+          "correcta": 0,
+          "explicacion": "emaztea = la mujer, la esposa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el nieto» se dice…",
+          "opciones": [
+            "biloba",
+            "sagua",
+            "untxia",
+            "amona"
+          ],
+          "correcta": 0,
+          "explicacion": "Esta sí es solo nieto: sirve para desambiguar cuando «iloba» no basta."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «zaldia»?",
+          "opciones": [
+            "el caballo",
+            "(yo) tengo",
+            "ochenta",
+            "el año"
+          ],
+          "correcta": 0,
+          "explicacion": "zaldia = el caballo."
+        }
+      ]
+    },
+    {
+      "id": "u4-g27",
+      "subnivel": "4.7",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia extendida",
+          "pares": [
+            {
+              "eu": "neska-laguna",
+              "es": "la novia"
+            },
+            {
+              "eu": "biloba",
+              "es": "el nieto"
+            },
+            {
+              "eu": "hirurogei",
+              "es": "sesenta"
+            },
+            {
+              "eu": "berrogeita hamar",
+              "es": "cincuenta"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia extendida",
+          "pares": [
+            {
+              "eu": "laurogeita hamar",
+              "es": "noventa"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "emaztea",
+              "es": "la mujer, la esposa"
+            },
+            {
+              "eu": "berrogei",
+              "es": "cuarenta"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «osaba»?",
+          "opciones": [
+            "el tío",
+            "cinco",
+            "el hijo",
+            "catorce"
+          ],
+          "correcta": 0,
+          "explicacion": "osaba = el tío."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la oveja» se dice…",
+          "opciones": [
+            "ardia",
+            "bigarrena",
+            "mila",
+            "lehena"
+          ],
+          "correcta": 0,
+          "explicacion": "la oveja = ardia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «oiloa»?",
+          "opciones": [
+            "la gallina",
+            "el cerdo",
+            "el quinto",
+            "el gato"
+          ],
+          "correcta": 0,
+          "explicacion": "oiloa = la gallina."
+        }
+      ]
+    },
+    {
+      "id": "u4-g28",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "alaba",
+              "es": "la hija"
+            },
+            {
+              "eu": "semea",
+              "es": "el hijo"
+            },
+            {
+              "eu": "aita",
+              "es": "padre"
+            },
+            {
+              "eu": "izeba",
+              "es": "la tía"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "laurogeita hamar",
+              "es": "noventa"
+            },
+            {
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "lehengusua",
+              "es": "el primo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «laugarrena»?",
+          "opciones": [
+            "el cuarto",
+            "cuatro",
+            "el ratón",
+            "doce"
+          ],
+          "correcta": 0,
+          "explicacion": "laugarrena = el cuarto."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el sobrino / el nieto» se dice…",
+          "opciones": [
+            "iloba",
+            "senarra",
+            "amona",
+            "hamalau"
+          ],
+          "correcta": 0,
+          "explicacion": "Vale para las dos cosas. Ver la ficha de esta unidad."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berrogeita hamar»?",
+          "opciones": [
+            "cincuenta",
+            "el último",
+            "la gallina",
+            "(tú) tienes"
+          ],
+          "correcta": 0,
+          "explicacion": "Dos veintes y diez."
+        }
+      ]
+    },
+    {
+      "id": "u4-g29",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "hamalau",
+              "es": "catorce"
+            },
+            {
+              "eu": "zazpi",
+              "es": "siete"
+            },
+            {
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
+            },
+            {
+              "eu": "bosgarrena",
+              "es": "el quinto"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "iloba",
+              "es": "el sobrino / el nieto"
+            },
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "du",
+              "es": "(él/ella) tiene"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «du»?",
+          "opciones": [
+            "(él/ella) tiene",
+            "ochenta",
+            "la gallina",
+            "sesenta"
+          ],
+          "correcta": 0,
+          "explicacion": "du = (él/ella) tiene."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la mujer, la esposa» se dice…",
+          "opciones": [
+            "emaztea",
+            "hamalau",
+            "hamabi",
+            "azkena"
+          ],
+          "correcta": 0,
+          "explicacion": "la mujer, la esposa = emaztea."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hirurogeita hamar»?",
+          "opciones": [
+            "setenta",
+            "(yo) tengo (varias cosas)",
+            "el ratón",
+            "la tía"
+          ],
+          "correcta": 0,
+          "explicacion": "Tres veintes y diez."
+        }
+      ]
+    },
+    {
+      "id": "u4-g30",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "laurogei",
+              "es": "ochenta"
+            },
+            {
+              "eu": "urtea",
+              "es": "el año"
+            },
+            {
+              "eu": "biloba",
+              "es": "el nieto"
+            },
+            {
+              "eu": "hamahiru",
+              "es": "trece"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "bost",
+              "es": "cinco"
+            },
+            {
+              "eu": "semea",
+              "es": "el hijo"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            },
+            {
+              "eu": "daukazu",
+              "es": "(tú) tienes"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ditut»?",
+          "opciones": [
+            "(yo) tengo (varias cosas)",
+            "la abuela",
+            "el segundo",
+            "padre"
+          ],
+          "correcta": 0,
+          "explicacion": "ditut = (yo) tengo (varias cosas)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el conejo» se dice…",
+          "opciones": [
+            "untxia",
+            "hirurogeita hamar",
+            "aitona",
+            "hamasei"
+          ],
+          "correcta": 0,
+          "explicacion": "el conejo = untxia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «mila»?",
+          "opciones": [
+            "mil",
+            "catorce",
+            "ocho",
+            "el tercero"
+          ],
+          "correcta": 0,
+          "explicacion": "mila = mil."
+        }
+      ]
+    },
+    {
+      "id": "u4-g31",
+      "subnivel": "4.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ordinales",
+          "pares": [
+            {
+              "eu": "azkena",
+              "es": "el último"
+            },
+            {
+              "eu": "lehena",
+              "es": "el primero"
+            },
+            {
+              "eu": "bosgarrena",
+              "es": "el quinto"
+            },
+            {
+              "eu": "bigarrena",
+              "es": "el segundo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ordinales",
+          "pares": [
+            {
+              "eu": "lehena",
+              "es": "el primero"
+            },
+            {
+              "eu": "laugarrena",
+              "es": "el cuarto"
+            },
+            {
+              "eu": "azkena",
+              "es": "el último"
+            },
+            {
+              "eu": "bigarrena",
+              "es": "el segundo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «bosgarrena»?",
+          "opciones": [
+            "el quinto",
+            "seis",
+            "quince",
+            "la prima"
+          ],
+          "correcta": 0,
+          "explicacion": "bosgarrena = el quinto."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el cuarto» se dice…",
+          "opciones": [
+            "laugarrena",
+            "amona",
+            "bost",
+            "daukazu"
+          ],
+          "correcta": 0,
+          "explicacion": "el cuarto = laugarrena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «bigarrena»?",
+          "opciones": [
+            "el segundo",
+            "cinco",
+            "tener",
+            "el año"
+          ],
+          "correcta": 0,
+          "explicacion": "bigarrena = el segundo."
+        }
+      ]
+    },
+    {
+      "id": "u4-g32",
+      "subnivel": "4.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ordinales",
+          "pares": [
+            {
+              "eu": "bosgarrena",
+              "es": "el quinto"
+            },
+            {
+              "eu": "hirugarrena",
+              "es": "el tercero"
+            },
+            {
+              "eu": "lehena",
+              "es": "el primero"
+            },
+            {
+              "eu": "laugarrena",
+              "es": "el cuarto"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ordinales",
+          "pares": [
+            {
+              "eu": "lehena",
+              "es": "el primero"
+            },
+            {
+              "eu": "azkena",
+              "es": "el último"
+            },
+            {
+              "eu": "hirugarrena",
+              "es": "el tercero"
+            },
+            {
+              "eu": "bosgarrena",
+              "es": "el quinto"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «laugarrena»?",
+          "opciones": [
+            "el cuarto",
+            "once",
+            "dieciocho",
+            "tener"
+          ],
+          "correcta": 0,
+          "explicacion": "laugarrena = el cuarto."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el quinto» se dice…",
+          "opciones": [
+            "bosgarrena",
+            "ama",
+            "txerria",
+            "lau"
+          ],
+          "correcta": 0,
+          "explicacion": "el quinto = bosgarrena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «lehena»?",
+          "opciones": [
+            "el primero",
+            "la tía",
+            "tres",
+            "diecisiete"
+          ],
+          "correcta": 0,
+          "explicacion": "También «lehenengoa»."
+        }
+      ]
+    },
+    {
+      "id": "u4-g33",
+      "subnivel": "4.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ordinales",
+          "pares": [
+            {
+              "eu": "azkena",
+              "es": "el último"
+            },
+            {
+              "eu": "laugarrena",
+              "es": "el cuarto"
+            },
+            {
+              "eu": "lehena",
+              "es": "el primero"
+            },
+            {
+              "eu": "hirugarrena",
+              "es": "el tercero"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ordinales",
+          "pares": [
+            {
+              "eu": "laugarrena",
+              "es": "el cuarto"
+            },
+            {
+              "eu": "bosgarrena",
+              "es": "el quinto"
+            },
+            {
+              "eu": "bigarrena",
+              "es": "el segundo"
+            },
+            {
+              "eu": "lehena",
+              "es": "el primero"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «azkena»?",
+          "opciones": [
+            "el último",
+            "(yo) tengo",
+            "veinte",
+            "el marido"
+          ],
+          "correcta": 0,
+          "explicacion": "azkena = el último."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el segundo» se dice…",
+          "opciones": [
+            "bigarrena",
+            "laurogei",
+            "daukazu",
+            "bosgarrena"
+          ],
+          "correcta": 0,
+          "explicacion": "el segundo = bigarrena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «laugarrena»?",
+          "opciones": [
+            "el cuarto",
+            "el conejo",
+            "el sobrino / el nieto",
+            "el segundo"
+          ],
+          "correcta": 0,
+          "explicacion": "laugarrena = el cuarto."
+        }
+      ]
+    },
+    {
+      "id": "u4-g34",
+      "subnivel": "4.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el otro tener: «eduki»",
+          "pares": [
+            {
+              "eu": "daukat",
+              "es": "(yo) tengo"
+            },
+            {
+              "eu": "daukazu",
+              "es": "(tú) tienes"
+            },
+            {
+              "eu": "eduki",
+              "es": "tener"
+            },
+            {
+              "eu": "dauka",
+              "es": "(él/ella) tiene"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el otro tener: «eduki»",
+          "pares": [
+            {
+              "eu": "dauka",
+              "es": "(él/ella) tiene"
+            },
+            {
+              "eu": "daukazu",
+              "es": "(tú) tienes"
+            },
+            {
+              "eu": "eduki",
+              "es": "tener"
+            },
+            {
+              "eu": "daukat",
+              "es": "(yo) tengo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «daukat»?",
+          "opciones": [
+            "(yo) tengo",
+            "cien",
+            "el gato",
+            "el caballo"
+          ],
+          "correcta": 0,
+          "explicacion": "Del verbo «eduki». Se oye muchísimo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«(tú) tienes» se dice…",
+          "opciones": [
+            "daukazu",
+            "bost",
+            "lehengusua",
+            "hamasei"
+          ],
+          "correcta": 0,
+          "explicacion": "(tú) tienes = daukazu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eduki»?",
+          "opciones": [
+            "tener",
+            "trece",
+            "el ratón",
+            "el nieto"
+          ],
+          "correcta": 0,
+          "explicacion": "El otro «tener», junto a «ukan»."
+        }
+      ]
+    },
+    {
+      "id": "u4-g35",
+      "subnivel": "4.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el otro tener: «eduki»",
+          "pares": [
+            {
+              "eu": "dauka",
+              "es": "(él/ella) tiene"
+            },
+            {
+              "eu": "daukazu",
+              "es": "(tú) tienes"
+            },
+            {
+              "eu": "eduki",
+              "es": "tener"
+            },
+            {
+              "eu": "daukat",
+              "es": "(yo) tengo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el otro tener: «eduki»",
+          "pares": [
+            {
+              "eu": "daukazu",
+              "es": "(tú) tienes"
+            },
+            {
+              "eu": "eduki",
+              "es": "tener"
+            },
+            {
+              "eu": "dauka",
+              "es": "(él/ella) tiene"
+            },
+            {
+              "eu": "daukat",
+              "es": "(yo) tengo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eduki»?",
+          "opciones": [
+            "tener",
+            "hermano (de un chico)",
+            "la novia",
+            "dieciocho"
+          ],
+          "correcta": 0,
+          "explicacion": "El otro «tener», junto a «ukan»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«(tú) tienes» se dice…",
+          "opciones": [
+            "daukazu",
+            "sei",
+            "hamaika",
+            "behia"
+          ],
+          "correcta": 0,
+          "explicacion": "(tú) tienes = daukazu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «dauka»?",
+          "opciones": [
+            "(él/ella) tiene",
+            "el pájaro",
+            "noventa",
+            "el conejo"
+          ],
+          "correcta": 0,
+          "explicacion": "dauka = (él/ella) tiene."
+        }
+      ]
+    },
+    {
+      "id": "u4-g36",
+      "subnivel": "4.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el otro tener: «eduki»",
+          "pares": [
+            {
+              "eu": "dauka",
+              "es": "(él/ella) tiene"
+            },
+            {
+              "eu": "eduki",
+              "es": "tener"
+            },
+            {
+              "eu": "daukazu",
+              "es": "(tú) tienes"
+            },
+            {
+              "eu": "daukat",
+              "es": "(yo) tengo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el otro tener: «eduki»",
+          "pares": [
+            {
+              "eu": "eduki",
+              "es": "tener"
+            },
+            {
+              "eu": "daukazu",
+              "es": "(tú) tienes"
+            },
+            {
+              "eu": "daukat",
+              "es": "(yo) tengo"
+            },
+            {
+              "eu": "dauka",
+              "es": "(él/ella) tiene"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eduki»?",
+          "opciones": [
+            "tener",
+            "catorce",
+            "trece",
+            "dos"
+          ],
+          "correcta": 0,
+          "explicacion": "El otro «tener», junto a «ukan»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«(tú) tienes» se dice…",
+          "opciones": [
+            "daukazu",
+            "ehun",
+            "sagua",
+            "ama"
+          ],
+          "correcta": 0,
+          "explicacion": "(tú) tienes = daukazu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «dauka»?",
+          "opciones": [
+            "(él/ella) tiene",
+            "quince",
+            "el cuarto",
+            "el pájaro"
+          ],
+          "correcta": 0,
+          "explicacion": "dauka = (él/ella) tiene."
+        }
+      ]
+    },
+    {
+      "id": "u4-g37",
+      "subnivel": "4.1",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja números del 1 al 20",
+          "pares": [
+            {
+              "eu": "hamasei",
+              "es": "dieciséis"
+            },
+            {
+              "eu": "hamabost",
+              "es": "quince"
+            },
+            {
+              "eu": "bat",
+              "es": "uno"
+            },
+            {
+              "eu": "hemezortzi",
+              "es": "dieciocho"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja números del 1 al 20",
+          "pares": [
+            {
+              "eu": "hamabi",
+              "es": "doce"
+            },
+            {
+              "eu": "hamaika",
+              "es": "once"
+            },
+            {
+              "eu": "zazpi",
+              "es": "siete"
+            },
+            {
+              "eu": "lau",
+              "es": "cuatro"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hemeretzi»?",
+          "opciones": [
+            "diecinueve",
+            "mil",
+            "el pájaro",
+            "la prima"
+          ],
+          "correcta": 0,
+          "explicacion": "heme- + bederatzi, contraído."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«dieciocho» se dice…",
+          "opciones": [
+            "hemezortzi",
+            "biloba",
+            "dut",
+            "mutil-laguna"
+          ],
+          "correcta": 0,
+          "explicacion": "El prefijo cambia a «heme-». También se oye «hamazortzi»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «sei»?",
+          "opciones": [
+            "seis",
+            "el pájaro",
+            "(yo) tengo",
+            "(él/ella) tiene"
+          ],
+          "correcta": 0,
+          "explicacion": "sei = seis."
+        }
+      ]
+    },
+    {
+      "id": "u4-g38",
+      "subnivel": "4.1",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja números del 1 al 20",
+          "pares": [
+            {
+              "eu": "zortzi",
+              "es": "ocho"
+            },
+            {
+              "eu": "bost",
+              "es": "cinco"
+            },
+            {
+              "eu": "hamabost",
+              "es": "quince"
+            },
+            {
+              "eu": "hemeretzi",
+              "es": "diecinueve"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja números del 1 al 20",
+          "pares": [
+            {
+              "eu": "lau",
+              "es": "cuatro"
+            },
+            {
+              "eu": "hogei",
+              "es": "veinte"
+            },
+            {
+              "eu": "hamazazpi",
+              "es": "diecisiete"
+            },
+            {
+              "eu": "bi",
+              "es": "dos"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «zortzi»?",
+          "opciones": [
+            "ocho",
+            "dos",
+            "doce",
+            "el año"
+          ],
+          "correcta": 0,
+          "explicacion": "zortzi = ocho."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«veinte» se dice…",
+          "opciones": [
+            "hogei",
+            "lehengusua",
+            "hamahiru",
+            "zortzi"
+          ],
+          "correcta": 0,
+          "explicacion": "veinte = hogei."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «bi»?",
+          "opciones": [
+            "dos",
+            "el año",
+            "(tú) tienes",
+            "la oveja"
+          ],
+          "correcta": 0,
+          "explicacion": "bi = dos."
+        }
+      ]
+    },
+    {
+      "id": "u4-g39",
+      "subnivel": "4.1",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja números del 1 al 20",
+          "pares": [
+            {
+              "eu": "hamaika",
+              "es": "once"
+            },
+            {
+              "eu": "hamasei",
+              "es": "dieciséis"
+            },
+            {
+              "eu": "hiru",
+              "es": "tres"
+            },
+            {
+              "eu": "hemezortzi",
+              "es": "dieciocho"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja números del 1 al 20",
+          "pares": [
+            {
+              "eu": "hamabi",
+              "es": "doce"
+            },
+            {
+              "eu": "hamahiru",
+              "es": "trece"
+            },
+            {
+              "eu": "bat",
+              "es": "uno"
+            },
+            {
+              "eu": "zortzi",
+              "es": "ocho"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «sei»?",
+          "opciones": [
+            "seis",
+            "el cerdo",
+            "la vaca",
+            "setenta"
+          ],
+          "correcta": 0,
+          "explicacion": "sei = seis."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«once» se dice…",
+          "opciones": [
+            "hamaika",
+            "hamahiru",
+            "laurogeita hamar",
+            "dut"
+          ],
+          "correcta": 0,
+          "explicacion": "También significa «un montón», coloquialmente."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hamahiru»?",
+          "opciones": [
+            "trece",
+            "(tú) tienes",
+            "uno",
+            "setenta"
+          ],
+          "correcta": 0,
+          "explicacion": "hamahiru = trece."
+        }
+      ]
+    },
+    {
+      "id": "u4-g40",
+      "subnivel": "4.1",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja números del 1 al 20",
+          "pares": [
+            {
+              "eu": "hemeretzi",
+              "es": "diecinueve"
+            },
+            {
+              "eu": "bost",
+              "es": "cinco"
+            },
+            {
+              "eu": "hamasei",
+              "es": "dieciséis"
+            },
+            {
+              "eu": "hamalau",
+              "es": "catorce"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja números del 1 al 20",
+          "pares": [
+            {
+              "eu": "bat",
+              "es": "uno"
+            },
+            {
+              "eu": "bederatzi",
+              "es": "nueve"
+            },
+            {
+              "eu": "hemezortzi",
+              "es": "dieciocho"
+            },
+            {
+              "eu": "hamasei",
+              "es": "dieciséis"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hamaika»?",
+          "opciones": [
+            "once",
+            "noventa",
+            "nueve",
+            "seis"
+          ],
+          "correcta": 0,
+          "explicacion": "También significa «un montón», coloquialmente."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«quince» se dice…",
+          "opciones": [
+            "hamabost",
+            "izeba",
+            "neska-laguna",
+            "ama"
+          ],
+          "correcta": 0,
+          "explicacion": "quince = hamabost."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «sei»?",
+          "opciones": [
+            "seis",
+            "(yo) tengo",
+            "sesenta",
+            "cincuenta"
+          ],
+          "correcta": 0,
+          "explicacion": "sei = seis."
+        }
+      ]
+    },
+    {
+      "id": "u4-g41",
+      "subnivel": "4.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja seguir contando",
+          "pares": [
+            {
+              "eu": "berrogei",
+              "es": "cuarenta"
+            },
+            {
+              "eu": "ehun",
+              "es": "cien"
+            },
+            {
+              "eu": "hirurogeita hamar",
+              "es": "setenta"
+            },
+            {
+              "eu": "laurogeita hamar",
+              "es": "noventa"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja seguir contando",
+          "pares": [
+            {
+              "eu": "ehun",
+              "es": "cien"
+            },
+            {
+              "eu": "mila",
+              "es": "mil"
+            },
+            {
+              "eu": "berrogeita hamar",
+              "es": "cincuenta"
+            },
+            {
+              "eu": "laurogei",
+              "es": "ochenta"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hirurogeita hamar»?",
+          "opciones": [
+            "setenta",
+            "el último",
+            "mil",
+            "ochenta"
+          ],
+          "correcta": 0,
+          "explicacion": "Tres veintes y diez."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«treinta» se dice…",
+          "opciones": [
+            "hogeita hamar",
+            "emaztea",
+            "hamaika",
+            "neska-laguna"
+          ],
+          "correcta": 0,
+          "explicacion": "Veinte y diez."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berrogeita hamar»?",
+          "opciones": [
+            "cincuenta",
+            "la mujer, la esposa",
+            "noventa",
+            "el hijo"
+          ],
+          "correcta": 0,
+          "explicacion": "Dos veintes y diez."
+        }
+      ]
+    },
+    {
+      "id": "u4-g42",
+      "subnivel": "4.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja seguir contando",
+          "pares": [
+            {
+              "eu": "berrogei",
+              "es": "cuarenta"
+            },
+            {
+              "eu": "hirurogeita hamar",
+              "es": "setenta"
+            },
+            {
+              "eu": "laurogei",
+              "es": "ochenta"
+            },
+            {
+              "eu": "laurogeita hamar",
+              "es": "noventa"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja seguir contando",
+          "pares": [
+            {
+              "eu": "hirurogei",
+              "es": "sesenta"
+            },
+            {
+              "eu": "laurogeita hamar",
+              "es": "noventa"
+            },
+            {
+              "eu": "hogeita hamar",
+              "es": "treinta"
+            },
+            {
+              "eu": "mila",
+              "es": "mil"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «mila»?",
+          "opciones": [
+            "mil",
+            "el sobrino / el nieto",
+            "la novia",
+            "el primo"
+          ],
+          "correcta": 0,
+          "explicacion": "mila = mil."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«cuarenta» se dice…",
+          "opciones": [
+            "berrogei",
+            "amona",
+            "bi",
+            "lehena"
+          ],
+          "correcta": 0,
+          "explicacion": "Dos veintes."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berrogeita hamar»?",
+          "opciones": [
+            "cincuenta",
+            "diez",
+            "el sobrino / el nieto",
+            "ocho"
+          ],
+          "correcta": 0,
+          "explicacion": "Dos veintes y diez."
+        }
+      ]
+    },
+    {
+      "id": "u4-g43",
+      "subnivel": "4.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja seguir contando",
+          "pares": [
+            {
+              "eu": "laurogeita hamar",
+              "es": "noventa"
+            },
+            {
+              "eu": "hirurogei",
+              "es": "sesenta"
+            },
+            {
+              "eu": "hirurogeita hamar",
+              "es": "setenta"
+            },
+            {
+              "eu": "mila",
+              "es": "mil"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja seguir contando",
+          "pares": [
+            {
+              "eu": "ehun",
+              "es": "cien"
+            },
+            {
+              "eu": "laurogei",
+              "es": "ochenta"
+            },
+            {
+              "eu": "hirurogeita hamar",
+              "es": "setenta"
+            },
+            {
+              "eu": "laurogeita hamar",
+              "es": "noventa"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berrogei»?",
+          "opciones": [
+            "cuarenta",
+            "la oveja",
+            "la mujer, la esposa",
+            "setenta"
+          ],
+          "correcta": 0,
+          "explicacion": "Dos veintes."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«ochenta» se dice…",
+          "opciones": [
+            "laurogei",
+            "neska-laguna",
+            "aitona",
+            "ahizpa"
+          ],
+          "correcta": 0,
+          "explicacion": "Cuatro veintes."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «mila»?",
+          "opciones": [
+            "mil",
+            "dieciséis",
+            "siete",
+            "noventa"
+          ],
+          "correcta": 0,
+          "explicacion": "mila = mil."
+        }
+      ]
+    },
+    {
+      "id": "u4-g44",
+      "subnivel": "4.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja seguir contando",
+          "pares": [
+            {
+              "eu": "berrogeita hamar",
+              "es": "cincuenta"
+            },
+            {
+              "eu": "ehun",
+              "es": "cien"
+            },
+            {
+              "eu": "laurogei",
+              "es": "ochenta"
+            },
+            {
+              "eu": "hirurogeita hamar",
+              "es": "setenta"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja seguir contando",
+          "pares": [
+            {
+              "eu": "hogeita hamar",
+              "es": "treinta"
+            },
+            {
+              "eu": "hirurogeita hamar",
+              "es": "setenta"
+            },
+            {
+              "eu": "laurogeita hamar",
+              "es": "noventa"
+            },
+            {
+              "eu": "hirurogei",
+              "es": "sesenta"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hogeita hamar»?",
+          "opciones": [
+            "treinta",
+            "(él/ella) tiene",
+            "el marido",
+            "el primero"
+          ],
+          "correcta": 0,
+          "explicacion": "Veinte y diez."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«cien» se dice…",
+          "opciones": [
+            "ehun",
+            "biloba",
+            "hamar",
+            "txerria"
+          ],
+          "correcta": 0,
+          "explicacion": "cien = ehun."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berrogei»?",
+          "opciones": [
+            "cuarenta",
+            "ochenta",
+            "quince",
+            "(tú) tienes"
+          ],
+          "correcta": 0,
+          "explicacion": "Dos veintes."
+        }
+      ]
+    },
+    {
+      "id": "u4-g45",
+      "subnivel": "4.8",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «sagua»?",
+          "opciones": [
+            "el ratón",
+            "ocho",
+            "el tío",
+            "el segundo"
+          ],
+          "correcta": 0,
+          "explicacion": "sagua = el ratón."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la vaca» se dice…",
+          "opciones": [
+            "behia",
+            "dauka",
+            "sagua",
+            "txerria"
+          ],
+          "correcta": 0,
+          "explicacion": "la vaca = behia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «untxia»?",
+          "opciones": [
+            "el conejo",
+            "uno",
+            "la prima",
+            "el hijo"
+          ],
+          "correcta": 0,
+          "explicacion": "untxia = el conejo."
+        }
+      ]
+    },
+    {
+      "id": "u4-g46",
+      "subnivel": "4.8",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «katua»?",
+          "opciones": [
+            "el gato",
+            "el cerdo",
+            "doce",
+            "el cuarto"
+          ],
+          "correcta": 0,
+          "explicacion": "katua = el gato."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el conejo» se dice…",
+          "opciones": [
+            "untxia",
+            "azkena",
+            "hemezortzi",
+            "laurogeita hamar"
+          ],
+          "correcta": 0,
+          "explicacion": "el conejo = untxia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ardia»?",
+          "opciones": [
+            "la oveja",
+            "la tía",
+            "el quinto",
+            "la abuela"
+          ],
+          "correcta": 0,
+          "explicacion": "ardia = la oveja."
+        }
+      ]
+    },
+    {
+      "id": "u4-g47",
+      "subnivel": "4.8",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "untxia",
+              "es": "el conejo"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «sagua»?",
+          "opciones": [
+            "el ratón",
+            "once",
+            "veinte",
+            "la vaca"
+          ],
+          "correcta": 0,
+          "explicacion": "sagua = el ratón."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el pájaro» se dice…",
+          "opciones": [
+            "txoria",
+            "dut",
+            "hirurogeita hamar",
+            "hirurogei"
+          ],
+          "correcta": 0,
+          "explicacion": "el pájaro = txoria."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «behia»?",
+          "opciones": [
+            "la vaca",
+            "once",
+            "la hija",
+            "(yo) tengo"
+          ],
+          "correcta": 0,
+          "explicacion": "behia = la vaca."
+        }
+      ]
+    },
+    {
+      "id": "u4-g48",
+      "subnivel": "4.8",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «oiloa»?",
+          "opciones": [
+            "la gallina",
+            "siete",
+            "el último",
+            "treinta"
+          ],
+          "correcta": 0,
+          "explicacion": "oiloa = la gallina."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el caballo» se dice…",
+          "opciones": [
+            "zaldia",
+            "urtea",
+            "aita",
+            "duzu"
+          ],
+          "correcta": 0,
+          "explicacion": "el caballo = zaldia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txoria»?",
+          "opciones": [
+            "el pájaro",
+            "el tío",
+            "el novio",
+            "la mujer, la esposa"
+          ],
+          "correcta": 0,
+          "explicacion": "txoria = el pájaro."
         }
       ]
     }

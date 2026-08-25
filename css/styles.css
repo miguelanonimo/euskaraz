@@ -1193,21 +1193,17 @@ svg{
 }
 
 /* ── Subniveles ───────────────────────────────────────────
-   Una unidad partida en porciones. Misma familia visual que
-   .unitcard de la portada, pero un escalón más abajo: el id
-   («4.3») ocupa el sitio del número de unidad, y la tarjeta
-   marca su estado sin usar rojo, que aquí significaría error.
-   Ver docs/propuesta-10-unidades.md.                       */
+   Las porciones dentro de una unidad. Hereda de .unitcard —
+   misma rejilla, mismo ritmo— pero un escalón por debajo:
+   el título es --t-m en vez de --t-l, porque una unidad pesa
+   más que una de sus partes. Ver docs/propuesta-10-unidades.md */
 
-.sublist{
-  display: flex;
-  flex-direction: column;
-}
+.sublist{ display: block; }
 
 .subcard{
   display: grid;
-  grid-template-columns: 40px 1fr auto 16px;
-  align-items: center;
+  grid-template-columns: 34px 1fr auto 16px;
+  align-items: start;
   gap: calc(var(--u) * 2);
   width: 100%;
   padding: calc(var(--u) * 2.5) 0;
@@ -1219,82 +1215,74 @@ svg{
   -webkit-tap-highlight-color: transparent;
   transition: opacity .12s ease;
 }
-
+.subcard:active{ opacity: .5; }
 .subcard:last-child{ border-bottom: 0; }
-.subcard:active{ opacity: .55; }
 
 .subcard__id{
   font-size: var(--t-s);
   font-weight: 600;
-  letter-spacing: 0.02em;
+  line-height: 1.45;
   color: var(--tinta-45);
   font-variant-numeric: tabular-nums;
 }
-
 .subcard--ok .subcard__id{ color: var(--bien-txt); }
 
-.subcard__body{ display: block; min-width: 0; }
+.subcard__body{ min-width: 0; }
 
 .subcard__title{
   display: block;
-  font-family: var(--serif, Georgia, serif);
+  font-family: var(--f-display);
   font-size: var(--t-m);
+  font-weight: 600;
+  letter-spacing: -1%;
   line-height: 1.25;
-  color: var(--tinta);
 }
 
 .subcard__sub{
   display: block;
   margin-top: 2px;
-  font-size: var(--t-xs);
+  font-size: var(--t-s);
+  line-height: 1.4;
   color: var(--tinta-45);
 }
 
-.subcard__hecho{
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: var(--t-xs);
-  font-weight: 600;
-  color: var(--bien-txt);
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-.subcard__hecho svg{ width: 13px; height: 13px; stroke-width: 2.6; }
-
+/* Estado, alineado con la primera línea del título. */
+.subcard__hecho,
 .subcard__visto{
-  font-size: var(--t-xs);
-  color: var(--tinta-45);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.5;
   white-space: nowrap;
 }
+.subcard__hecho{ color: var(--bien-txt); font-variant-numeric: tabular-nums; }
+.subcard__hecho svg{ display: none; }
+.subcard__visto{ color: var(--tinta-45); }
 
-.subcard__chev{ color: var(--tinta-20); }
-.subcard__chev svg{
-  width: 16px; height: 16px;
-  fill: none; stroke: currentColor; stroke-width: 2;
-  stroke-linecap: round; stroke-linejoin: round;
-}
+.subcard__chev{ width: 16px; height: 16px; margin-top: 5px; color: var(--tinta-20); }
 
-/* El test cierra la unidad: se separa del resto y pesa más. */
+/* El test cierra la unidad: se separa y pesa como una unidad. */
 .subcard--test{
   margin-top: calc(var(--u) * 2);
   border-top: 1px solid var(--filete);
+  border-bottom: 0;
   padding-top: calc(var(--u) * 3);
 }
-.subcard--test .subcard__title{ font-weight: 600; }
-.subcard--test .subcard__id{ color: var(--acento); }
+.subcard--test .subcard__title{ font-size: var(--t-l); }
+/* En verde, no en rojo: aquí el rojo significaría fallo. */
+.subcard--test .subcard__id{ color: var(--tinta-45); }
 .subcard--test.subcard--ok .subcard__id{ color: var(--bien-txt); }
 
-/* Cabecera de la pantalla de subnivel: como la de unidad pero
-   sin tanto aire, porque es un nivel interior. */
-.unithero--sub{ padding-bottom: calc(var(--u) * 3); }
-.unithero--sub .unithero__title{ font-size: var(--t-xl, 1.6rem); }
-
-/* Subnivel aún sin contenido: se lista para que se vea el plan
-   completo, pero apagado y sin ser un botón. */
+/* Subnivel aún sin escribir: se lista para que se vea el plan,
+   pero apagado y sin ser un botón. */
 .subcard--pendiente{
-  opacity: .45;
+  opacity: .4;
   cursor: default;
-  grid-template-columns: 40px 1fr auto;
+  grid-template-columns: 34px 1fr auto;
 }
 .subcard--pendiente .subcard__title{ font-style: italic; }
+
+/* Cabecera de subnivel: la de unidad, un punto más contenida. */
+.unithero--sub{ padding-bottom: calc(var(--u) * 3); }
+.unithero--sub .unithero__title{ font-size: var(--t-xl); }

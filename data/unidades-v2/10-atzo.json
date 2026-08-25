@@ -444,7 +444,7 @@
       "nota": null,
       "audio": "unidades/u11/lehen.mp3",
       "categoria": "otros",
-      "subnivel": "10.1"
+      "subnivel": "10.2"
     },
     {
       "eu": "orduan",
@@ -452,7 +452,7 @@
       "nota": null,
       "audio": "unidades/u11/orduan.mp3",
       "categoria": "otros",
-      "subnivel": "10.1"
+      "subnivel": "10.2"
     },
     {
       "eu": "herenegun",
@@ -460,7 +460,7 @@
       "nota": null,
       "audio": "unidades/u11/herenegun.mp3",
       "categoria": "otros",
-      "subnivel": "10.1"
+      "subnivel": "10.2"
     },
     {
       "eu": "iaz",
@@ -468,7 +468,7 @@
       "nota": null,
       "audio": "unidades/u11/iaz.mp3",
       "categoria": "otros",
-      "subnivel": "10.1"
+      "subnivel": "10.2"
     },
     {
       "eu": "aurten",
@@ -476,7 +476,7 @@
       "nota": null,
       "audio": "unidades/u11/aurten.mp3",
       "categoria": "otros",
-      "subnivel": "10.1"
+      "subnivel": "10.2"
     },
     {
       "eu": "joan den astean",
@@ -484,7 +484,7 @@
       "nota": "«joan den» es «la que se ha ido».",
       "audio": "unidades/u11/joan-den-astean.mp3",
       "categoria": "otros",
-      "subnivel": "10.1"
+      "subnivel": "10.2"
     },
     {
       "eu": "duela bi urte",
@@ -492,7 +492,7 @@
       "nota": "«duela» + el tiempo: duela hilabete, duela urtebete.",
       "audio": "unidades/u11/duela-bi-urte.mp3",
       "categoria": "otros",
-      "subnivel": "10.1"
+      "subnivel": "10.2"
     },
     {
       "eu": "txikitan",
@@ -500,7 +500,7 @@
       "nota": "De «txiki» + esa -tan de plural que ya conoces.",
       "audio": "unidades/u11/txikitan.mp3",
       "categoria": "otros",
-      "subnivel": "10.1"
+      "subnivel": "10.2"
     },
     {
       "eu": "garai hartan",
@@ -508,7 +508,7 @@
       "nota": null,
       "audio": "unidades/u11/garai-hartan.mp3",
       "categoria": "otros",
-      "subnivel": "10.1"
+      "subnivel": "10.2"
     },
     {
       "eu": "jaio",
@@ -628,7 +628,7 @@
       "nota": null,
       "audio": "unidades/u12/gehiago.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.4"
     },
     {
       "eu": "gutxiago",
@@ -636,7 +636,7 @@
       "nota": null,
       "audio": "unidades/u12/gutxiago.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.4"
     },
     {
       "eu": "hobea",
@@ -644,7 +644,7 @@
       "nota": "Irregular: de «ona» (bueno).",
       "audio": "unidades/u12/hobea.mp3",
       "categoria": "adjetivo",
-      "subnivel": "10.5"
+      "subnivel": "10.4"
     },
     {
       "eu": "txarragoa",
@@ -652,7 +652,7 @@
       "nota": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio.",
       "audio": "unidades/u12/txarragoa.mp3",
       "categoria": "adjetivo",
-      "subnivel": "10.5"
+      "subnivel": "10.4"
     },
     {
       "eu": "hobeto",
@@ -660,7 +660,7 @@
       "nota": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio.",
       "audio": "unidades/u12/hobeto.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.4"
     },
     {
       "eu": "bezain",
@@ -668,7 +668,7 @@
       "nota": null,
       "audio": "unidades/u12/bezain.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.4"
     },
     {
       "eu": "berdin",
@@ -676,7 +676,7 @@
       "nota": null,
       "audio": "unidades/u12/berdin.mp3",
       "categoria": "adjetivo",
-      "subnivel": "10.5"
+      "subnivel": "10.4"
     },
     {
       "eu": "beraz",
@@ -828,7 +828,7 @@
       "nota": null,
       "audio": "unidades/u12/hitza.mp3",
       "categoria": "sustantivo",
-      "subnivel": "10.5"
+      "subnivel": "10.6"
     },
     {
       "eu": "aditza",
@@ -836,7 +836,7 @@
       "nota": null,
       "audio": "unidades/u12/aditza.mp3",
       "categoria": "sustantivo",
-      "subnivel": "10.5"
+      "subnivel": "10.6"
     },
     {
       "eu": "esaldia",
@@ -844,7 +844,7 @@
       "nota": null,
       "audio": "unidades/u12/esaldia.mp3",
       "categoria": "sustantivo",
-      "subnivel": "10.5"
+      "subnivel": "10.6"
     },
     {
       "eu": "hurrengoa",
@@ -852,7 +852,7 @@
       "nota": null,
       "audio": "unidades/u12/hurrengoa.mp3",
       "categoria": "adjetivo",
-      "subnivel": "10.5"
+      "subnivel": "10.6"
     },
     {
       "eu": "zorionak",
@@ -860,7 +860,7 @@
       "nota": "Literalmente «suertes buenas».",
       "audio": "unidades/u12/zorionak.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.6"
     },
     {
       "eu": "etorkizuna",
@@ -2780,6 +2780,1482 @@
           ],
           "correcta": 1,
           "explicacion": "De «etorri», venir: lo que está por venir."
+        }
+      ]
+    },
+    {
+      "id": "u10-g27",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "inor ez",
+              "es": "nadie"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "poliki",
+              "es": "despacio"
+            },
+            {
+              "eu": "gertatu",
+              "es": "ocurrir, pasar"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "genuen",
+              "es": "(nosotros) teníamos"
+            },
+            {
+              "eu": "txarragoa",
+              "es": "peor"
+            },
+            {
+              "eu": "zorionak",
+              "es": "felicidades"
+            },
+            {
+              "eu": "duela bi urte",
+              "es": "hace dos años"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «bukatu»?",
+          "opciones": [
+            "terminar",
+            "(ellos) tenían",
+            "la frase",
+            "(yo) era, fui"
+          ],
+          "correcta": 0,
+          "explicacion": "También «amaitu»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«nadie» se dice…",
+          "opciones": [
+            "inor ez",
+            "poliki",
+            "nuen",
+            "etorkizuna"
+          ],
+          "correcta": 0,
+          "explicacion": "nadie = inor ez."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «zen»?",
+          "opciones": [
+            "(él/ella) era, fue",
+            "recordar",
+            "en algún sitio",
+            "la semana pasada"
+          ],
+          "correcta": 0,
+          "explicacion": "zen = (él/ella) era, fue."
+        }
+      ]
+    },
+    {
+      "id": "u10-g28",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "baino",
+              "es": "que (en comparaciones)"
+            },
+            {
+              "eu": "zorionak",
+              "es": "felicidades"
+            },
+            {
+              "eu": "bakarrik",
+              "es": "solo, únicamente"
+            },
+            {
+              "eu": "oporrak",
+              "es": "las vacaciones"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "azkar",
+              "es": "rápido"
+            },
+            {
+              "eu": "gertatu",
+              "es": "ocurrir, pasar"
+            },
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            },
+            {
+              "eu": "iaz",
+              "es": "el año pasado"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «oporrak»?",
+          "opciones": [
+            "las vacaciones",
+            "así que, por tanto",
+            "(yo) estaba",
+            "más (cantidad)"
+          ],
+          "correcta": 0,
+          "explicacion": "Siempre en plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«menos» se dice…",
+          "opciones": [
+            "gutxiago",
+            "norbait",
+            "oporrak",
+            "nengoen"
+          ],
+          "correcta": 0,
+          "explicacion": "menos = gutxiago."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «beraz»?",
+          "opciones": [
+            "así que, por tanto",
+            "(tú) eras, fuiste",
+            "terminar",
+            "olvidar"
+          ],
+          "correcta": 0,
+          "explicacion": "beraz = así que, por tanto."
+        }
+      ]
+    },
+    {
+      "id": "u10-g29",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "norbait",
+              "es": "alguien"
+            },
+            {
+              "eu": "hala ere",
+              "es": "aun así"
+            },
+            {
+              "eu": "iaz",
+              "es": "el año pasado"
+            },
+            {
+              "eu": "etorkizuna",
+              "es": "el futuro"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "txikitan",
+              "es": "de pequeño"
+            },
+            {
+              "eu": "asmoa",
+              "es": "la intención, el plan"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "joan den astean",
+              "es": "la semana pasada"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «etorkizuna»?",
+          "opciones": [
+            "el futuro",
+            "el año pasado",
+            "mañana",
+            "(ellos) eran"
+          ],
+          "correcta": 0,
+          "explicacion": "etorkizuna = el futuro."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«importante» se dice…",
+          "opciones": [
+            "garrantzitsua",
+            "berdin",
+            "baino",
+            "nintzen"
+          ],
+          "correcta": 0,
+          "explicacion": "importante = garrantzitsua."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hurrengoa»?",
+          "opciones": [
+            "el siguiente",
+            "hace dos años",
+            "felicidades",
+            "las vacaciones"
+          ],
+          "correcta": 0,
+          "explicacion": "hurrengoa = el siguiente."
+        }
+      ]
+    },
+    {
+      "id": "u10-g30",
+      "subnivel": "10.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cuándo pasó",
+          "pares": [
+            {
+              "eu": "joan den astean",
+              "es": "la semana pasada"
+            },
+            {
+              "eu": "garai hartan",
+              "es": "en aquella época"
+            },
+            {
+              "eu": "duela bi urte",
+              "es": "hace dos años"
+            },
+            {
+              "eu": "aurten",
+              "es": "este año"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cuándo pasó",
+          "pares": [
+            {
+              "eu": "aurten",
+              "es": "este año"
+            },
+            {
+              "eu": "oporrak",
+              "es": "las vacaciones"
+            },
+            {
+              "eu": "txikitan",
+              "es": "de pequeño"
+            },
+            {
+              "eu": "duela bi urte",
+              "es": "hace dos años"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «joan den astean»?",
+          "opciones": [
+            "la semana pasada",
+            "ocurrir, pasar",
+            "(nosotros) teníamos",
+            "fácil"
+          ],
+          "correcta": 0,
+          "explicacion": "«joan den» es «la que se ha ido»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«antes» se dice…",
+          "opciones": [
+            "lehen",
+            "iaz",
+            "aspaldi",
+            "nintzen"
+          ],
+          "correcta": 0,
+          "explicacion": "antes = lehen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «herenegun»?",
+          "opciones": [
+            "anteayer",
+            "(tú) tenías",
+            "la palabra",
+            "la intención, el plan"
+          ],
+          "correcta": 0,
+          "explicacion": "herenegun = anteayer."
+        }
+      ]
+    },
+    {
+      "id": "u10-g31",
+      "subnivel": "10.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cuándo pasó",
+          "pares": [
+            {
+              "eu": "orduan",
+              "es": "entonces"
+            },
+            {
+              "eu": "herenegun",
+              "es": "anteayer"
+            },
+            {
+              "eu": "garai hartan",
+              "es": "en aquella época"
+            },
+            {
+              "eu": "iaz",
+              "es": "el año pasado"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cuándo pasó",
+          "pares": [
+            {
+              "eu": "herenegun",
+              "es": "anteayer"
+            },
+            {
+              "eu": "duela bi urte",
+              "es": "hace dos años"
+            },
+            {
+              "eu": "joan den astean",
+              "es": "la semana pasada"
+            },
+            {
+              "eu": "txikitan",
+              "es": "de pequeño"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «duela bi urte»?",
+          "opciones": [
+            "hace dos años",
+            "mañana",
+            "(ellos) eran",
+            "igual"
+          ],
+          "correcta": 0,
+          "explicacion": "«duela» + el tiempo: duela hilabete, duela urtebete."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«en aquella época» se dice…",
+          "opciones": [
+            "garai hartan",
+            "norbait",
+            "iaz",
+            "jaio"
+          ],
+          "correcta": 0,
+          "explicacion": "en aquella época = garai hartan."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «iaz»?",
+          "opciones": [
+            "el año pasado",
+            "(nosotros) éramos",
+            "despacio",
+            "terminar"
+          ],
+          "correcta": 0,
+          "explicacion": "iaz = el año pasado."
+        }
+      ]
+    },
+    {
+      "id": "u10-g32",
+      "subnivel": "10.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cuándo pasó",
+          "pares": [
+            {
+              "eu": "oporrak",
+              "es": "las vacaciones"
+            },
+            {
+              "eu": "iaz",
+              "es": "el año pasado"
+            },
+            {
+              "eu": "lehen",
+              "es": "antes"
+            },
+            {
+              "eu": "orduan",
+              "es": "entonces"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cuándo pasó",
+          "pares": [
+            {
+              "eu": "garai hartan",
+              "es": "en aquella época"
+            },
+            {
+              "eu": "oporrak",
+              "es": "las vacaciones"
+            },
+            {
+              "eu": "lehen",
+              "es": "antes"
+            },
+            {
+              "eu": "herenegun",
+              "es": "anteayer"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «iaz»?",
+          "opciones": [
+            "el año pasado",
+            "el verbo",
+            "(él/ella) era, fue",
+            "mejor"
+          ],
+          "correcta": 0,
+          "explicacion": "iaz = el año pasado."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«hace dos años» se dice…",
+          "opciones": [
+            "duela bi urte",
+            "hala ere",
+            "hurrengoa",
+            "genuen"
+          ],
+          "correcta": 0,
+          "explicacion": "«duela» + el tiempo: duela hilabete, duela urtebete."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «lehen»?",
+          "opciones": [
+            "antes",
+            "la intención, el plan",
+            "de verdad",
+            "(ellos) eran"
+          ],
+          "correcta": 0,
+          "explicacion": "lehen = antes."
+        }
+      ]
+    },
+    {
+      "id": "u10-g33",
+      "subnivel": "10.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cuándo pasó",
+          "pares": [
+            {
+              "eu": "lehen",
+              "es": "antes"
+            },
+            {
+              "eu": "herenegun",
+              "es": "anteayer"
+            },
+            {
+              "eu": "aurten",
+              "es": "este año"
+            },
+            {
+              "eu": "txikitan",
+              "es": "de pequeño"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cuándo pasó",
+          "pares": [
+            {
+              "eu": "iaz",
+              "es": "el año pasado"
+            },
+            {
+              "eu": "herenegun",
+              "es": "anteayer"
+            },
+            {
+              "eu": "lehen",
+              "es": "antes"
+            },
+            {
+              "eu": "aurten",
+              "es": "este año"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «iaz»?",
+          "opciones": [
+            "el año pasado",
+            "(yo) estaba",
+            "antes",
+            "(partícula de pregunta)"
+          ],
+          "correcta": 0,
+          "explicacion": "iaz = el año pasado."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«en aquella época» se dice…",
+          "opciones": [
+            "garai hartan",
+            "garrantzitsua",
+            "ziren",
+            "herenegun"
+          ],
+          "correcta": 0,
+          "explicacion": "en aquella época = garai hartan."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «herenegun»?",
+          "opciones": [
+            "anteayer",
+            "el verbo",
+            "algo",
+            "felicidades"
+          ],
+          "correcta": 0,
+          "explicacion": "herenegun = anteayer."
+        }
+      ]
+    },
+    {
+      "id": "u10-g34",
+      "subnivel": "10.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "txarragoa",
+              "es": "peor"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "txarragoa",
+              "es": "peor"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hobea»?",
+          "opciones": [
+            "mejor",
+            "(yo) tenía, tuve",
+            "hace mucho tiempo",
+            "(nosotros) éramos"
+          ],
+          "correcta": 0,
+          "explicacion": "Irregular: de «ona» (bueno)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«más (cantidad)» se dice…",
+          "opciones": [
+            "gehiago",
+            "genuen",
+            "berdin",
+            "beraz"
+          ],
+          "correcta": 0,
+          "explicacion": "más (cantidad) = gehiago."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berdin»?",
+          "opciones": [
+            "igual",
+            "entonces",
+            "(tú) tenías",
+            "(yo) era, fui"
+          ],
+          "correcta": 0,
+          "explicacion": "berdin = igual."
+        }
+      ]
+    },
+    {
+      "id": "u10-g35",
+      "subnivel": "10.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "berdin",
+              "es": "igual"
+            },
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            },
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hobeto»?",
+          "opciones": [
+            "mejor (adverbio)",
+            "(nosotros) éramos",
+            "la palabra",
+            "que (en comparaciones)"
+          ],
+          "correcta": 0,
+          "explicacion": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«peor» se dice…",
+          "opciones": [
+            "txarragoa",
+            "nuen",
+            "lehen",
+            "jaio"
+          ],
+          "correcta": 0,
+          "explicacion": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hobea»?",
+          "opciones": [
+            "mejor",
+            "(ellos) eran",
+            "en algún sitio",
+            "algo"
+          ],
+          "correcta": 0,
+          "explicacion": "Irregular: de «ona» (bueno)."
+        }
+      ]
+    },
+    {
+      "id": "u10-g36",
+      "subnivel": "10.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            },
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            },
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txarragoa»?",
+          "opciones": [
+            "peor",
+            "(vosotros) erais",
+            "(nosotros) éramos",
+            "felicidades"
+          ],
+          "correcta": 0,
+          "explicacion": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«mejor» se dice…",
+          "opciones": [
+            "hobea",
+            "herenegun",
+            "ezagutu",
+            "bihar"
+          ],
+          "correcta": 0,
+          "explicacion": "Irregular: de «ona» (bueno)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gutxiago»?",
+          "opciones": [
+            "menos",
+            "(tú) eras, fuiste",
+            "ocurrir, pasar",
+            "anteayer"
+          ],
+          "correcta": 0,
+          "explicacion": "gutxiago = menos."
+        }
+      ]
+    },
+    {
+      "id": "u10-g37",
+      "subnivel": "10.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "txarragoa",
+              "es": "peor"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            },
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hobeto»?",
+          "opciones": [
+            "mejor (adverbio)",
+            "anteayer",
+            "por ejemplo",
+            "solo, únicamente"
+          ],
+          "correcta": 0,
+          "explicacion": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«tan… como» se dice…",
+          "opciones": [
+            "bezain",
+            "garrantzitsua",
+            "zaila",
+            "ezagutu"
+          ],
+          "correcta": 0,
+          "explicacion": "tan… como = bezain."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txarragoa»?",
+          "opciones": [
+            "peor",
+            "fácil",
+            "la semana pasada",
+            "solo, únicamente"
+          ],
+          "correcta": 0,
+          "explicacion": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio."
+        }
+      ]
+    },
+    {
+      "id": "u10-g38",
+      "subnivel": "10.6",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dena batera",
+          "pares": [
+            {
+              "eu": "hitza",
+              "es": "la palabra"
+            },
+            {
+              "eu": "hurrengoa",
+              "es": "el siguiente"
+            },
+            {
+              "eu": "zorionak",
+              "es": "felicidades"
+            },
+            {
+              "eu": "esaldia",
+              "es": "la frase"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dena batera",
+          "pares": [
+            {
+              "eu": "zorionak",
+              "es": "felicidades"
+            },
+            {
+              "eu": "hurrengoa",
+              "es": "el siguiente"
+            },
+            {
+              "eu": "aditza",
+              "es": "el verbo"
+            },
+            {
+              "eu": "esaldia",
+              "es": "la frase"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hurrengoa»?",
+          "opciones": [
+            "el siguiente",
+            "de verdad",
+            "nadie",
+            "mañana"
+          ],
+          "correcta": 0,
+          "explicacion": "hurrengoa = el siguiente."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el verbo» se dice…",
+          "opciones": [
+            "aditza",
+            "norbait",
+            "gehiago",
+            "adibidez"
+          ],
+          "correcta": 0,
+          "explicacion": "el verbo = aditza."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «esaldia»?",
+          "opciones": [
+            "la frase",
+            "(yo) estaba",
+            "solo, únicamente",
+            "de pequeño"
+          ],
+          "correcta": 0,
+          "explicacion": "esaldia = la frase."
+        }
+      ]
+    },
+    {
+      "id": "u10-g39",
+      "subnivel": "10.6",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dena batera",
+          "pares": [
+            {
+              "eu": "aditza",
+              "es": "el verbo"
+            },
+            {
+              "eu": "esaldia",
+              "es": "la frase"
+            },
+            {
+              "eu": "hurrengoa",
+              "es": "el siguiente"
+            },
+            {
+              "eu": "hitza",
+              "es": "la palabra"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dena batera",
+          "pares": [
+            {
+              "eu": "zorionak",
+              "es": "felicidades"
+            },
+            {
+              "eu": "esaldia",
+              "es": "la frase"
+            },
+            {
+              "eu": "hurrengoa",
+              "es": "el siguiente"
+            },
+            {
+              "eu": "hitza",
+              "es": "la palabra"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hitza»?",
+          "opciones": [
+            "la palabra",
+            "todos",
+            "el verbo",
+            "la frase"
+          ],
+          "correcta": 0,
+          "explicacion": "hitza = la palabra."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«felicidades» se dice…",
+          "opciones": [
+            "zorionak",
+            "denak",
+            "gainera",
+            "zinen"
+          ],
+          "correcta": 0,
+          "explicacion": "Literalmente «suertes buenas»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «esaldia»?",
+          "opciones": [
+            "la frase",
+            "(partícula de pregunta)",
+            "menos",
+            "(yo) tenía, tuve"
+          ],
+          "correcta": 0,
+          "explicacion": "esaldia = la frase."
+        }
+      ]
+    },
+    {
+      "id": "u10-g40",
+      "subnivel": "10.6",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dena batera",
+          "pares": [
+            {
+              "eu": "esaldia",
+              "es": "la frase"
+            },
+            {
+              "eu": "zorionak",
+              "es": "felicidades"
+            },
+            {
+              "eu": "hurrengoa",
+              "es": "el siguiente"
+            },
+            {
+              "eu": "aditza",
+              "es": "el verbo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dena batera",
+          "pares": [
+            {
+              "eu": "hurrengoa",
+              "es": "el siguiente"
+            },
+            {
+              "eu": "hitza",
+              "es": "la palabra"
+            },
+            {
+              "eu": "zorionak",
+              "es": "felicidades"
+            },
+            {
+              "eu": "aditza",
+              "es": "el verbo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «aditza»?",
+          "opciones": [
+            "el verbo",
+            "de verdad",
+            "terminar",
+            "(yo) tenía, tuve"
+          ],
+          "correcta": 0,
+          "explicacion": "aditza = el verbo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la frase» se dice…",
+          "opciones": [
+            "esaldia",
+            "gainera",
+            "denak",
+            "noski"
+          ],
+          "correcta": 0,
+          "explicacion": "la frase = esaldia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hitza»?",
+          "opciones": [
+            "la palabra",
+            "aun así",
+            "terminar",
+            "mejor (adverbio)"
+          ],
+          "correcta": 0,
+          "explicacion": "hitza = la palabra."
+        }
+      ]
+    },
+    {
+      "id": "u10-g41",
+      "subnivel": "10.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Mañana iré» se dice…",
+          "opciones": [
+            "Bihar joan naiz",
+            "Bihar joango naiz",
+            "Bihar joaten naiz",
+            "Bihar joan nintzen"
+          ],
+          "correcta": 1,
+          "explicacion": "Joan + go + naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para el futuro, al verbo se le añade…",
+          "opciones": [
+            "-ten",
+            "-ko o -go",
+            "-tu",
+            "nada"
+          ],
+          "correcta": 1,
+          "explicacion": "Y el auxiliar no cambia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Egingo dut» significa…",
+          "opciones": [
+            "hago",
+            "hice",
+            "haré",
+            "estoy haciendo"
+          ],
+          "correcta": 2,
+          "explicacion": "Egin + go + dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuándo se usa «-go» en vez de «-ko»?",
+          "opciones": [
+            "siempre",
+            "detrás de n o l",
+            "en preguntas",
+            "en negativo"
+          ],
+          "correcta": 1,
+          "explicacion": "Joango, egingo: suena mejor."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ikasiko dut» significa…",
+          "opciones": [
+            "estudio",
+            "estudié",
+            "estudiaré",
+            "estudiando"
+          ],
+          "correcta": 2,
+          "explicacion": "Ikasi + ko + dut."
+        }
+      ]
+    },
+    {
+      "id": "u10-g42",
+      "subnivel": "10.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "los tres tiempos",
+          "pares": [
+            {
+              "eu": "joan nintzen",
+              "es": "fui"
+            },
+            {
+              "eu": "joaten naiz",
+              "es": "voy"
+            },
+            {
+              "eu": "joango naiz",
+              "es": "iré"
+            },
+            {
+              "eu": "joaten ari naiz",
+              "es": "estoy yendo"
+            }
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Qué vas a hacer mañana?",
+          "eu": "Zer egingo duzu bihar?",
+          "palabras": [
+            "Zer",
+            "egingo",
+            "duzu",
+            "bihar?"
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Entre «joaten naiz» y «joango naiz» cambia…",
+          "opciones": [
+            "el auxiliar",
+            "la terminación del verbo",
+            "el orden",
+            "nada"
+          ],
+          "correcta": 1,
+          "explicacion": "El auxiliar se queda igual."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etorriko da» significa…",
+          "opciones": [
+            "viene",
+            "vino",
+            "vendrá",
+            "está viniendo"
+          ],
+          "correcta": 2,
+          "explicacion": "Etorri + ko + da."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etorkizuna» significa…",
+          "opciones": [
+            "el pasado",
+            "el futuro",
+            "la costumbre",
+            "el plan"
+          ],
+          "correcta": 1,
+          "explicacion": "De «etorri»: lo que está por venir."
+        }
+      ]
+    },
+    {
+      "id": "u10-g43",
+      "subnivel": "10.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bihar Bilbora joango naiz» significa…",
+          "opciones": [
+            "Ayer fui a Bilbao",
+            "Mañana iré a Bilbao",
+            "Voy a Bilbao",
+            "Estoy yendo a Bilbao"
+          ],
+          "correcta": 1,
+          "explicacion": "Bihar + futuro."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para hacer planes con alguien usarías…",
+          "opciones": [
+            "el pasado",
+            "el futuro",
+            "el presente continuo",
+            "el imperativo"
+          ],
+          "correcta": 1,
+          "explicacion": "«¿Qué haremos?», «iré»…"
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dut egingo» significa…",
+          "opciones": [
+            "no lo hago",
+            "no lo hice",
+            "no lo haré",
+            "no lo hago ahora"
+          ],
+          "correcta": 2,
+          "explicacion": "La negación funciona igual, con el futuro detrás."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "emparejar",
+          "pares": [
+            {
+              "eu": "joango naiz",
+              "es": "iré"
+            },
+            {
+              "eu": "egingo dut",
+              "es": "haré"
+            },
+            {
+              "eu": "etorriko da",
+              "es": "vendrá"
+            },
+            {
+              "eu": "ikasiko dut",
+              "es": "estudiaré"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué parte de la frase carga con la persona?",
+          "opciones": [
+            "el verbo",
+            "el auxiliar",
+            "el sujeto",
+            "la terminación -ko"
+          ],
+          "correcta": 1,
+          "explicacion": "Naiz, dut, da… El verbo solo cambia de terminación."
         }
       ]
     }

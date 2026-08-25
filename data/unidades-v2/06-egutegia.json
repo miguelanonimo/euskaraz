@@ -2332,6 +2332,860 @@
         }
       ],
       "subnivel": "6.4"
+    },
+    {
+      "id": "u6-g13",
+      "subnivel": "6.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los meses",
+          "pares": [
+            {
+              "eu": "abuztua",
+              "es": "agosto"
+            },
+            {
+              "eu": "otsaila",
+              "es": "febrero"
+            },
+            {
+              "eu": "urria",
+              "es": "octubre"
+            },
+            {
+              "eu": "apirila",
+              "es": "abril"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los meses",
+          "pares": [
+            {
+              "eu": "iraila",
+              "es": "septiembre"
+            },
+            {
+              "eu": "urtebetetzea",
+              "es": "el cumpleaños"
+            },
+            {
+              "eu": "abendua",
+              "es": "diciembre"
+            },
+            {
+              "eu": "urtarrila",
+              "es": "enero"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «urtebetetzea»?",
+          "opciones": [
+            "el cumpleaños",
+            "luego, después",
+            "el jueves",
+            "a menudo"
+          ],
+          "correcta": 0,
+          "explicacion": "De «urte» (año) + «bete» (llenar): el completarse del año."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«agosto» se dice…",
+          "opciones": [
+            "abuztua",
+            "ordua",
+            "negua",
+            "asteburua"
+          ],
+          "correcta": 0,
+          "explicacion": "agosto = abuztua."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «azaroa»?",
+          "opciones": [
+            "noviembre",
+            "la hora",
+            "julio",
+            "menos cuarto"
+          ],
+          "correcta": 0,
+          "explicacion": "azaroa = noviembre."
+        }
+      ]
+    },
+    {
+      "id": "u6-g14",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "astea",
+              "es": "la semana"
+            },
+            {
+              "eu": "hilabetea",
+              "es": "el mes"
+            },
+            {
+              "eu": "astelehena",
+              "es": "el lunes"
+            },
+            {
+              "eu": "larunbata",
+              "es": "el sábado"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "asteburua",
+              "es": "el fin de semana"
+            },
+            {
+              "eu": "ekaina",
+              "es": "junio"
+            },
+            {
+              "eu": "bart",
+              "es": "anoche"
+            },
+            {
+              "eu": "otsaila",
+              "es": "febrero"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eguerdia»?",
+          "opciones": [
+            "el mediodía",
+            "el anochecer",
+            "julio",
+            "el martes"
+          ],
+          "correcta": 0,
+          "explicacion": "De «egu-» (día) + «erdi» (mitad)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«pasado mañana» se dice…",
+          "opciones": [
+            "etzi",
+            "eta laurden",
+            "maiatza",
+            "arratsaldea"
+          ],
+          "correcta": 0,
+          "explicacion": "pasado mañana = etzi."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «apirila»?",
+          "opciones": [
+            "abril",
+            "enero",
+            "tarde",
+            "noviembre"
+          ],
+          "correcta": 0,
+          "explicacion": "apirila = abril."
+        }
+      ]
+    },
+    {
+      "id": "u6-g15",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "abendua",
+              "es": "diciembre"
+            },
+            {
+              "eu": "goiza",
+              "es": "la mañana"
+            },
+            {
+              "eu": "goiz",
+              "es": "temprano"
+            },
+            {
+              "eu": "apirila",
+              "es": "abril"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "etzi",
+              "es": "pasado mañana"
+            },
+            {
+              "eu": "asteazkena",
+              "es": "el miércoles"
+            },
+            {
+              "eu": "iluntzea",
+              "es": "el anochecer"
+            },
+            {
+              "eu": "bart",
+              "es": "anoche"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gero»?",
+          "opciones": [
+            "luego, después",
+            "la mañana",
+            "la tarde",
+            "el jueves"
+          ],
+          "correcta": 0,
+          "explicacion": "gero = luego, después."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el viernes» se dice…",
+          "opciones": [
+            "ostirala",
+            "iluntzea",
+            "urtarrila",
+            "hilabetea"
+          ],
+          "correcta": 0,
+          "explicacion": "el viernes = ostirala."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «iraila»?",
+          "opciones": [
+            "septiembre",
+            "agosto",
+            "y media",
+            "el domingo"
+          ],
+          "correcta": 0,
+          "explicacion": "iraila = septiembre."
+        }
+      ]
+    },
+    {
+      "id": "u6-g16",
+      "subnivel": "6.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja estaciones y tiempo",
+          "pares": [
+            {
+              "eu": "eguzkia",
+              "es": "el sol"
+            },
+            {
+              "eu": "uda",
+              "es": "el verano"
+            },
+            {
+              "eu": "euria",
+              "es": "la lluvia"
+            },
+            {
+              "eu": "negua",
+              "es": "el invierno"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja estaciones y tiempo",
+          "pares": [
+            {
+              "eu": "euria",
+              "es": "la lluvia"
+            },
+            {
+              "eu": "negua",
+              "es": "el invierno"
+            },
+            {
+              "eu": "eguzkia",
+              "es": "el sol"
+            },
+            {
+              "eu": "uda",
+              "es": "el verano"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eguzkia»?",
+          "opciones": [
+            "el sol",
+            "marzo",
+            "el cumpleaños",
+            "tarde"
+          ],
+          "correcta": 0,
+          "explicacion": "eguzkia = el sol."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el invierno» se dice…",
+          "opciones": [
+            "negua",
+            "ostirala",
+            "abuztua",
+            "astelehena"
+          ],
+          "correcta": 0,
+          "explicacion": "el invierno = negua."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «euria»?",
+          "opciones": [
+            "la lluvia",
+            "tarde",
+            "a menudo",
+            "abril"
+          ],
+          "correcta": 0,
+          "explicacion": "euria = la lluvia."
+        }
+      ]
+    },
+    {
+      "id": "u6-g17",
+      "subnivel": "6.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja estaciones y tiempo",
+          "pares": [
+            {
+              "eu": "euria",
+              "es": "la lluvia"
+            },
+            {
+              "eu": "uda",
+              "es": "el verano"
+            },
+            {
+              "eu": "negua",
+              "es": "el invierno"
+            },
+            {
+              "eu": "eguzkia",
+              "es": "el sol"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja estaciones y tiempo",
+          "pares": [
+            {
+              "eu": "uda",
+              "es": "el verano"
+            },
+            {
+              "eu": "euria",
+              "es": "la lluvia"
+            },
+            {
+              "eu": "eguzkia",
+              "es": "el sol"
+            },
+            {
+              "eu": "negua",
+              "es": "el invierno"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «negua»?",
+          "opciones": [
+            "el invierno",
+            "el viernes",
+            "el cumpleaños",
+            "febrero"
+          ],
+          "correcta": 0,
+          "explicacion": "negua = el invierno."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el verano» se dice…",
+          "opciones": [
+            "uda",
+            "asteartea",
+            "gaua",
+            "osteguna"
+          ],
+          "correcta": 0,
+          "explicacion": "el verano = uda."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eguzkia»?",
+          "opciones": [
+            "el sol",
+            "la semana",
+            "noviembre",
+            "junio"
+          ],
+          "correcta": 0,
+          "explicacion": "eguzkia = el sol."
+        }
+      ]
+    },
+    {
+      "id": "u6-g18",
+      "subnivel": "6.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja estaciones y tiempo",
+          "pares": [
+            {
+              "eu": "uda",
+              "es": "el verano"
+            },
+            {
+              "eu": "euria",
+              "es": "la lluvia"
+            },
+            {
+              "eu": "eguzkia",
+              "es": "el sol"
+            },
+            {
+              "eu": "negua",
+              "es": "el invierno"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja estaciones y tiempo",
+          "pares": [
+            {
+              "eu": "negua",
+              "es": "el invierno"
+            },
+            {
+              "eu": "euria",
+              "es": "la lluvia"
+            },
+            {
+              "eu": "uda",
+              "es": "el verano"
+            },
+            {
+              "eu": "eguzkia",
+              "es": "el sol"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «euria»?",
+          "opciones": [
+            "la lluvia",
+            "septiembre",
+            "y media",
+            "a menudo"
+          ],
+          "correcta": 0,
+          "explicacion": "euria = la lluvia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el verano» se dice…",
+          "opciones": [
+            "uda",
+            "ekaina",
+            "gaua",
+            "batzuetan"
+          ],
+          "correcta": 0,
+          "explicacion": "el verano = uda."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eguzkia»?",
+          "opciones": [
+            "el sol",
+            "el cumpleaños",
+            "pasado mañana",
+            "junio"
+          ],
+          "correcta": 0,
+          "explicacion": "eguzkia = el sol."
+        }
+      ]
+    },
+    {
+      "id": "u6-g19",
+      "subnivel": "6.5",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Gabonak» significa…",
+          "opciones": [
+            "buenas noches",
+            "la Navidad",
+            "el año nuevo",
+            "las vacaciones"
+          ],
+          "correcta": 1,
+          "explicacion": "Es el plural de «gabon»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si alguien te dice «Gabon» por la noche…",
+          "opciones": [
+            "te felicita la Navidad",
+            "te da las buenas noches",
+            "se despide para siempre",
+            "te invita"
+          ],
+          "correcta": 1,
+          "explicacion": "Singular: buenas noches. Plural: Navidad."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Quién trae los regalos en Navidad en Euskal Herria?",
+          "opciones": [
+            "Papá Noel",
+            "Olentzero",
+            "los Reyes",
+            "nadie"
+          ],
+          "correcta": 1,
+          "explicacion": "Un carbonero que baja del monte en Nochebuena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Inauteriak» son…",
+          "opciones": [
+            "la Navidad",
+            "los carnavales",
+            "la Semana Santa",
+            "las vacaciones"
+          ],
+          "correcta": 1,
+          "explicacion": "En Bizkaia se dice también «Aratusteak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Urte Berri» significa…",
+          "opciones": [
+            "Navidad",
+            "Año Nuevo",
+            "cumpleaños",
+            "verano"
+          ],
+          "correcta": 1,
+          "explicacion": "Urte (año) + berri (nuevo)."
+        }
+      ]
+    },
+    {
+      "id": "u6-g20",
+      "subnivel": "6.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "las fiestas",
+          "pares": [
+            {
+              "eu": "Gabonak",
+              "es": "la Navidad"
+            },
+            {
+              "eu": "Urte Berri",
+              "es": "el Año Nuevo"
+            },
+            {
+              "eu": "Inauteriak",
+              "es": "los carnavales"
+            },
+            {
+              "eu": "Aste Santua",
+              "es": "la Semana Santa"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "distinguir lo parecido",
+          "pares": [
+            {
+              "eu": "gabon",
+              "es": "buenas noches"
+            },
+            {
+              "eu": "Gabonak",
+              "es": "la Navidad"
+            },
+            {
+              "eu": "jaiak",
+              "es": "las fiestas"
+            },
+            {
+              "eu": "jaieguna",
+              "es": "el día festivo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Olentzero» en el diccionario aparece como…",
+          "opciones": [
+            "un personaje",
+            "el día de Nochebuena",
+            "una fiesta de verano",
+            "un monte"
+          ],
+          "correcta": 1,
+          "explicacion": "El nombre designaba primero el día; en el habla es el personaje."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué relación hay entre «gabon» y «Gabonak»?",
+          "opciones": [
+            "Ninguna",
+            "Gabonak es el plural de gabon",
+            "Son sinónimos",
+            "Una es de Bizkaia"
+          ],
+          "correcta": 1,
+          "explicacion": "Las noches buenas del año."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Jaiegun» significa…",
+          "opciones": [
+            "cumpleaños",
+            "día festivo",
+            "fin de semana",
+            "vacaciones"
+          ],
+          "correcta": 1,
+          "explicacion": "Jai (fiesta) + egun (día)."
+        }
+      ]
+    },
+    {
+      "id": "u6-g21",
+      "subnivel": "6.5",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En Bizkaia, a los carnavales se les llama…",
+          "opciones": [
+            "Inauteriak",
+            "Aratusteak",
+            "Gabonak",
+            "Jaiak"
+          ],
+          "correcta": 1,
+          "explicacion": "Aratusteak es la forma de aquí."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Aste Santua» es…",
+          "opciones": [
+            "la semana grande",
+            "la Semana Santa",
+            "la primera semana",
+            "la última semana"
+          ],
+          "correcta": 1,
+          "explicacion": "Aste (semana) + santu (santo)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La «Aste Nagusia» de Bilbao es…",
+          "opciones": [
+            "la Semana Santa",
+            "la Semana Grande, en agosto",
+            "la Navidad",
+            "el carnaval"
+          ],
+          "correcta": 1,
+          "explicacion": "Nagusi = principal, mayor."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "cada fiesta con su mes",
+          "pares": [
+            {
+              "eu": "Gabonak",
+              "es": "diciembre"
+            },
+            {
+              "eu": "Urte Berri",
+              "es": "enero"
+            },
+            {
+              "eu": "Inauteriak",
+              "es": "febrero"
+            },
+            {
+              "eu": "Aste Nagusia",
+              "es": "agosto"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas NO es una fiesta?",
+          "opciones": [
+            "Gabonak",
+            "Inauteriak",
+            "hilabetea",
+            "Urte Berri"
+          ],
+          "correcta": 2,
+          "explicacion": "«Hilabetea» es el mes."
+        }
+      ]
+    },
+    {
+      "id": "u6-g22",
+      "subnivel": "6.5",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para felicitar cualquier cosa se dice…",
+          "opciones": [
+            "Zorionak!",
+            "Gabon!",
+            "Agur!",
+            "Kaixo!"
+          ],
+          "correcta": 0,
+          "explicacion": "Vale para cumpleaños, Navidad y todo lo demás."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zorionak zuri!» se usa sobre todo para…",
+          "opciones": [
+            "despedirse",
+            "felicitar el cumpleaños",
+            "dar las gracias",
+            "brindar"
+          ],
+          "correcta": 1,
+          "explicacion": "Es la fórmula habitual."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Oporrak» significa…",
+          "opciones": [
+            "las fiestas",
+            "las vacaciones",
+            "los días",
+            "el verano"
+          ],
+          "correcta": 1,
+          "explicacion": "Va siempre en plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En qué se parecen «Gabonak», «Inauteriak» y «oporrak»?",
+          "opciones": [
+            "Son del mismo mes",
+            "Van todas en plural",
+            "Son verbos",
+            "Son de Bizkaia"
+          ],
+          "correcta": 1,
+          "explicacion": "La -ak final: en euskera muchas fiestas van en plural."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "emparejar",
+          "pares": [
+            {
+              "eu": "Olentzero",
+              "es": "el carbonero de Navidad"
+            },
+            {
+              "eu": "Gabonak",
+              "es": "la Navidad"
+            },
+            {
+              "eu": "oporrak",
+              "es": "las vacaciones"
+            },
+            {
+              "eu": "jaiak",
+              "es": "las fiestas"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

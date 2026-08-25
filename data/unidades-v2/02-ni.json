@@ -2430,6 +2430,273 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u2-g13",
+      "subnivel": "2.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja presentarse",
+          "pares": [
+            {
+              "eu": "idazlea",
+              "es": "el/la escritor/a"
+            },
+            {
+              "eu": "baina",
+              "es": "pero"
+            },
+            {
+              "eu": "sukaldaria",
+              "es": "el/la cocinero/a"
+            },
+            {
+              "eu": "izena",
+              "es": "el nombre"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja presentarse",
+          "pares": [
+            {
+              "eu": "erdalduna",
+              "es": "que no habla euskera"
+            },
+            {
+              "eu": "sukaldaria",
+              "es": "el/la cocinero/a"
+            },
+            {
+              "eu": "ere",
+              "es": "también"
+            },
+            {
+              "eu": "laguna",
+              "es": "el/la amigo/a"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «baina»?",
+          "opciones": [
+            "pero",
+            "el/la escritor/a",
+            "el/la cocinero/a",
+            "el pueblo"
+          ],
+          "correcta": 0,
+          "explicacion": "baina = pero."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«vascoparlante» se dice…",
+          "opciones": [
+            "euskalduna",
+            "laguna",
+            "gu",
+            "hi"
+          ],
+          "correcta": 0,
+          "explicacion": "Su sentido básico es «que tiene el euskera», no el origen. También se usa como «del País Vasco», pero el primero es el que cuenta aquí."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «medikua»?",
+          "opciones": [
+            "el/la médico/a",
+            "tu / su (de usted)",
+            "ellos / ellas",
+            "(yo) soy"
+          ],
+          "correcta": 0,
+          "explicacion": "medikua = el/la médico/a."
+        }
+      ]
+    },
+    {
+      "id": "u2-g14",
+      "subnivel": "2.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja presentarse",
+          "pares": [
+            {
+              "eu": "sukaldaria",
+              "es": "el/la cocinero/a"
+            },
+            {
+              "eu": "medikua",
+              "es": "el/la médico/a"
+            },
+            {
+              "eu": "idazlea",
+              "es": "el/la escritor/a"
+            },
+            {
+              "eu": "baina",
+              "es": "pero"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja presentarse",
+          "pares": [
+            {
+              "eu": "langilea",
+              "es": "el/la trabajador/a"
+            },
+            {
+              "eu": "euskalduna",
+              "es": "vascoparlante"
+            },
+            {
+              "eu": "ere",
+              "es": "también"
+            },
+            {
+              "eu": "izena",
+              "es": "el nombre"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «medikua»?",
+          "opciones": [
+            "el/la médico/a",
+            "nosotros mismos",
+            "tú / usted",
+            "(vosotros) sois"
+          ],
+          "correcta": 0,
+          "explicacion": "medikua = el/la médico/a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el pueblo» se dice…",
+          "opciones": [
+            "herria",
+            "dira",
+            "zu",
+            "neu"
+          ],
+          "correcta": 0,
+          "explicacion": "el pueblo = herria."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «erdalduna»?",
+          "opciones": [
+            "que no habla euskera",
+            "nuestro/a",
+            "(él/ella) es",
+            "el/la escritor/a"
+          ],
+          "correcta": 0,
+          "explicacion": "«erdara» es cualquier lengua que no sea el euskera."
+        }
+      ]
+    },
+    {
+      "id": "u2-g15",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "izena",
+              "es": "el nombre"
+            },
+            {
+              "eu": "haren",
+              "es": "su (de él / de ella)"
+            },
+            {
+              "eu": "ere",
+              "es": "también"
+            },
+            {
+              "eu": "zuek",
+              "es": "vosotros / vosotras"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "dira",
+              "es": "(ellos) son"
+            },
+            {
+              "eu": "zuek",
+              "es": "vosotros / vosotras"
+            },
+            {
+              "eu": "medikua",
+              "es": "el/la médico/a"
+            },
+            {
+              "eu": "ikaslea",
+              "es": "el/la estudiante"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «medikua»?",
+          "opciones": [
+            "el/la médico/a",
+            "(tú) eres",
+            "su (de él / de ella)",
+            "su (de ellos / de ellas)"
+          ],
+          "correcta": 0,
+          "explicacion": "medikua = el/la médico/a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«(nosotros) somos» se dice…",
+          "opciones": [
+            "gara",
+            "bera",
+            "ni",
+            "zu"
+          ],
+          "correcta": 0,
+          "explicacion": "(nosotros) somos = gara."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «naiz»?",
+          "opciones": [
+            "(yo) soy",
+            "el/la amigo/a",
+            "tu / su (de usted)",
+            "vuestro/a"
+          ],
+          "correcta": 0,
+          "explicacion": "naiz = (yo) soy."
+        }
+      ]
     }
   ]
 }

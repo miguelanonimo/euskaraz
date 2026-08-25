@@ -209,7 +209,7 @@
       "nota": null,
       "audio": "unidades/u3/non.mp3",
       "categoria": "otros",
-      "subnivel": "3.1"
+      "subnivel": "3.2"
     },
     {
       "eu": "nora?",
@@ -217,7 +217,7 @@
       "nota": null,
       "audio": "unidades/u3/nora.mp3",
       "categoria": "otros",
-      "subnivel": "3.1"
+      "subnivel": "3.2"
     },
     {
       "eu": "nondik?",
@@ -225,7 +225,7 @@
       "nota": "Movimiento desde un sitio.",
       "audio": "unidades/u3/nondik.mp3",
       "categoria": "otros",
-      "subnivel": "3.1"
+      "subnivel": "3.2"
     },
     {
       "eu": "nongoa?",
@@ -233,7 +233,7 @@
       "nota": "Origen, no movimiento.",
       "audio": "unidades/u3/nongoa.mp3",
       "categoria": "otros",
-      "subnivel": "3.1"
+      "subnivel": "3.2"
     },
     {
       "eu": "noiz?",
@@ -305,7 +305,7 @@
       "nota": "Frase hecha. Muy útil desde el primer día.",
       "audio": "unidades/u3/ez-dakit.mp3",
       "categoria": "otros",
-      "subnivel": "3.1"
+      "subnivel": "3.4"
     },
     {
       "eu": "agian",
@@ -313,7 +313,7 @@
       "nota": null,
       "audio": "unidades/u3/agian.mp3",
       "categoria": "otros",
-      "subnivel": "3.1"
+      "subnivel": "3.4"
     },
     {
       "eu": "beti",
@@ -1272,6 +1272,1331 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u3-g13",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "galdera",
+              "es": "la pregunta"
+            },
+            {
+              "eu": "inoiz ez",
+              "es": "nunca"
+            },
+            {
+              "eu": "zergatik?",
+              "es": "¿por qué?"
+            },
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "orain",
+              "es": "ahora"
+            },
+            {
+              "eu": "nor?",
+              "es": "¿quién?"
+            },
+            {
+              "eu": "noren?",
+              "es": "¿de quién?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «noren?»?",
+          "opciones": [
+            "¿de quién?",
+            "¿con quién?",
+            "mañana",
+            "¿cuál? ¿qué (de varios)?"
+          ],
+          "correcta": 0,
+          "explicacion": "El genitivo de «nor». Para cosas es «zeren?» (¿de qué?)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¿qué?» se dice…",
+          "opciones": [
+            "zer?",
+            "zergatik?",
+            "inoiz ez",
+            "galdera"
+          ],
+          "correcta": 0,
+          "explicacion": "¿qué? = zer?."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «atzo»?",
+          "opciones": [
+            "ayer",
+            "¿con quién?",
+            "siempre",
+            "¿cuándo?"
+          ],
+          "correcta": 0,
+          "explicacion": "atzo = ayer."
+        }
+      ]
+    },
+    {
+      "id": "u3-g14",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            },
+            {
+              "eu": "galdera",
+              "es": "la pregunta"
+            },
+            {
+              "eu": "agian",
+              "es": "quizás"
+            },
+            {
+              "eu": "noren?",
+              "es": "¿de quién?"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "nola?",
+              "es": "¿cómo?"
+            },
+            {
+              "eu": "zenbat?",
+              "es": "¿cuánto? ¿cuántos?"
+            },
+            {
+              "eu": "norekin?",
+              "es": "¿con quién?"
+            },
+            {
+              "eu": "zergatik?",
+              "es": "¿por qué?"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nola?»?",
+          "opciones": [
+            "¿cómo?",
+            "¿de dónde (eres)?",
+            "la pregunta",
+            "¿cuál? ¿qué (de varios)?"
+          ],
+          "correcta": 0,
+          "explicacion": "nola? = ¿cómo?."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¿de dónde? ¿por dónde?» se dice…",
+          "opciones": [
+            "nondik?",
+            "nora?",
+            "beti",
+            "nor?"
+          ],
+          "correcta": 0,
+          "explicacion": "Movimiento desde un sitio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «non?»?",
+          "opciones": [
+            "¿dónde?",
+            "no sé",
+            "nunca",
+            "siempre"
+          ],
+          "correcta": 0,
+          "explicacion": "non? = ¿dónde?."
+        }
+      ]
+    },
+    {
+      "id": "u3-g15",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "agian",
+              "es": "quizás"
+            },
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            },
+            {
+              "eu": "galdera",
+              "es": "la pregunta"
+            },
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "nongoa?",
+              "es": "¿de dónde (eres)?"
+            },
+            {
+              "eu": "nor?",
+              "es": "¿quién?"
+            },
+            {
+              "eu": "atzo",
+              "es": "ayer"
+            },
+            {
+              "eu": "zergatik?",
+              "es": "¿por qué?"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nondik?»?",
+          "opciones": [
+            "¿de dónde? ¿por dónde?",
+            "¿quién?",
+            "¿cuánto? ¿cuántos?",
+            "quizás"
+          ],
+          "correcta": 0,
+          "explicacion": "Movimiento desde un sitio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la respuesta» se dice…",
+          "opciones": [
+            "erantzuna",
+            "nor?",
+            "hau",
+            "nondik?"
+          ],
+          "correcta": 0,
+          "explicacion": "la respuesta = erantzuna."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «noiz?»?",
+          "opciones": [
+            "¿cuándo?",
+            "¿de dónde (eres)?",
+            "¿quién?",
+            "¿por qué?"
+          ],
+          "correcta": 0,
+          "explicacion": "noiz? = ¿cuándo?."
+        }
+      ]
+    },
+    {
+      "id": "u3-g16",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "hau",
+              "es": "esto, este"
+            },
+            {
+              "eu": "orain",
+              "es": "ahora"
+            },
+            {
+              "eu": "zer?",
+              "es": "¿qué?"
+            },
+            {
+              "eu": "norekin?",
+              "es": "¿con quién?"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "atzo",
+              "es": "ayer"
+            },
+            {
+              "eu": "zer?",
+              "es": "¿qué?"
+            },
+            {
+              "eu": "norekin?",
+              "es": "¿con quién?"
+            },
+            {
+              "eu": "erantzuna",
+              "es": "la respuesta"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nola?»?",
+          "opciones": [
+            "¿cómo?",
+            "¿dónde?",
+            "¿con quién?",
+            "¿quién?"
+          ],
+          "correcta": 0,
+          "explicacion": "nola? = ¿cómo?."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«ayer» se dice…",
+          "opciones": [
+            "atzo",
+            "nongoa?",
+            "orain",
+            "nor?"
+          ],
+          "correcta": 0,
+          "explicacion": "ayer = atzo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «zein?»?",
+          "opciones": [
+            "¿cuál? ¿qué (de varios)?",
+            "¿de dónde? ¿por dónde?",
+            "¿cómo?",
+            "nunca"
+          ],
+          "correcta": 0,
+          "explicacion": "zein? = ¿cuál? ¿qué (de varios)?."
+        }
+      ]
+    },
+    {
+      "id": "u3-g17",
+      "subnivel": "3.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia de «non»",
+          "pares": [
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            },
+            {
+              "eu": "nongoa?",
+              "es": "¿de dónde (eres)?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            },
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia de «non»",
+          "pares": [
+            {
+              "eu": "nongoa?",
+              "es": "¿de dónde (eres)?"
+            },
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            },
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nongoa?»?",
+          "opciones": [
+            "¿de dónde (eres)?",
+            "la respuesta",
+            "¿cuándo?",
+            "siempre"
+          ],
+          "correcta": 0,
+          "explicacion": "Origen, no movimiento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¿adónde?» se dice…",
+          "opciones": [
+            "nora?",
+            "zein?",
+            "norekin?",
+            "zer?"
+          ],
+          "correcta": 0,
+          "explicacion": "¿adónde? = nora?."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «non?»?",
+          "opciones": [
+            "¿dónde?",
+            "¿de dónde (eres)?",
+            "no sé",
+            "¿cuándo?"
+          ],
+          "correcta": 0,
+          "explicacion": "non? = ¿dónde?."
+        }
+      ]
+    },
+    {
+      "id": "u3-g18",
+      "subnivel": "3.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia de «non»",
+          "pares": [
+            {
+              "eu": "nongoa?",
+              "es": "¿de dónde (eres)?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            },
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            },
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia de «non»",
+          "pares": [
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            },
+            {
+              "eu": "nongoa?",
+              "es": "¿de dónde (eres)?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            },
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nora?»?",
+          "opciones": [
+            "¿adónde?",
+            "mañana",
+            "¿quién?",
+            "¿con quién?"
+          ],
+          "correcta": 0,
+          "explicacion": "nora? = ¿adónde?."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¿de dónde (eres)?» se dice…",
+          "opciones": [
+            "nongoa?",
+            "inoiz ez",
+            "atzo",
+            "zein?"
+          ],
+          "correcta": 0,
+          "explicacion": "Origen, no movimiento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nondik?»?",
+          "opciones": [
+            "¿de dónde? ¿por dónde?",
+            "¿cuál? ¿qué (de varios)?",
+            "no sé",
+            "nunca"
+          ],
+          "correcta": 0,
+          "explicacion": "Movimiento desde un sitio."
+        }
+      ]
+    },
+    {
+      "id": "u3-g19",
+      "subnivel": "3.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia de «non»",
+          "pares": [
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            },
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            },
+            {
+              "eu": "nongoa?",
+              "es": "¿de dónde (eres)?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia de «non»",
+          "pares": [
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            },
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            },
+            {
+              "eu": "nongoa?",
+              "es": "¿de dónde (eres)?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nongoa?»?",
+          "opciones": [
+            "¿de dónde (eres)?",
+            "esto, este",
+            "¿qué?",
+            "¿cuál? ¿qué (de varios)?"
+          ],
+          "correcta": 0,
+          "explicacion": "Origen, no movimiento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¿adónde?» se dice…",
+          "opciones": [
+            "nora?",
+            "nondik?",
+            "bihar",
+            "orain"
+          ],
+          "correcta": 0,
+          "explicacion": "¿adónde? = nora?."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nondik?»?",
+          "opciones": [
+            "¿de dónde? ¿por dónde?",
+            "quizás",
+            "¿adónde?",
+            "¿quién?"
+          ],
+          "correcta": 0,
+          "explicacion": "Movimiento desde un sitio."
+        }
+      ]
+    },
+    {
+      "id": "u3-g20",
+      "subnivel": "3.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia de «non»",
+          "pares": [
+            {
+              "eu": "nongoa?",
+              "es": "¿de dónde (eres)?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            },
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            },
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la familia de «non»",
+          "pares": [
+            {
+              "eu": "nongoa?",
+              "es": "¿de dónde (eres)?"
+            },
+            {
+              "eu": "nora?",
+              "es": "¿adónde?"
+            },
+            {
+              "eu": "non?",
+              "es": "¿dónde?"
+            },
+            {
+              "eu": "nondik?",
+              "es": "¿de dónde? ¿por dónde?"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «non?»?",
+          "opciones": [
+            "¿dónde?",
+            "siempre",
+            "la respuesta",
+            "¿cuánto? ¿cuántos?"
+          ],
+          "correcta": 0,
+          "explicacion": "non? = ¿dónde?."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¿de dónde (eres)?» se dice…",
+          "opciones": [
+            "nongoa?",
+            "zenbat?",
+            "beti",
+            "ez dakit"
+          ],
+          "correcta": 0,
+          "explicacion": "Origen, no movimiento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nondik?»?",
+          "opciones": [
+            "¿de dónde? ¿por dónde?",
+            "¿dónde?",
+            "¿de dónde (eres)?",
+            "la respuesta"
+          ],
+          "correcta": 0,
+          "explicacion": "Movimiento desde un sitio."
+        }
+      ]
+    },
+    {
+      "id": "u3-g21",
+      "subnivel": "3.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hau» señala algo…",
+          "opciones": [
+            "que está cerca de ti",
+            "que está lejos",
+            "que está con quien te escucha",
+            "que no se ve"
+          ],
+          "correcta": 0,
+          "explicacion": "Hau = esto, lo que tienes al lado."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hori» señala algo…",
+          "opciones": [
+            "cerca de ti",
+            "cerca de quien te escucha",
+            "lejos de los dos",
+            "que no existe"
+          ],
+          "correcta": 1,
+          "explicacion": "Como el «eso» castellano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hura» señala algo…",
+          "opciones": [
+            "cerca de ti",
+            "cerca del otro",
+            "lejos de los dos",
+            "detrás"
+          ],
+          "correcta": 2,
+          "explicacion": "Como «aquello»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El plural de «hau» es…",
+          "opciones": [
+            "hauek",
+            "hauak",
+            "hausak",
+            "hauk"
+          ],
+          "correcta": 0,
+          "explicacion": "Hau → hauek."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuántos grados de distancia distingue el euskera?",
+          "opciones": [
+            "Uno",
+            "Dos",
+            "Tres",
+            "Cuatro"
+          ],
+          "correcta": 2,
+          "explicacion": "Hau, hori, hura: aquí, ahí, allí. Igual que el castellano."
+        }
+      ]
+    },
+    {
+      "id": "u3-g22",
+      "subnivel": "3.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "los demostrativos en singular",
+          "pares": [
+            {
+              "eu": "hau",
+              "es": "esto, este"
+            },
+            {
+              "eu": "hori",
+              "es": "eso, ese"
+            },
+            {
+              "eu": "hura",
+              "es": "aquello, aquel"
+            },
+            {
+              "eu": "bera",
+              "es": "él, ella"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "los demostrativos en plural",
+          "pares": [
+            {
+              "eu": "hauek",
+              "es": "estos"
+            },
+            {
+              "eu": "horiek",
+              "es": "esos"
+            },
+            {
+              "eu": "haiek",
+              "es": "aquellos"
+            },
+            {
+              "eu": "hau",
+              "es": "esto"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El plural de «hori» es…",
+          "opciones": [
+            "horiak",
+            "horiek",
+            "horrek",
+            "horrak"
+          ],
+          "correcta": 1,
+          "explicacion": "Hori → horiek."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El plural de «hura» es…",
+          "opciones": [
+            "hurak",
+            "huraek",
+            "haiek",
+            "horiek"
+          ],
+          "correcta": 2,
+          "explicacion": "Hura → haiek. Ojo, cambia bastante."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Haiek» puede significar…",
+          "opciones": [
+            "solo aquellos",
+            "solo ellos",
+            "aquellos, y también ellos",
+            "esos"
+          ],
+          "correcta": 2,
+          "explicacion": "Sirve de demostrativo y de pronombre personal."
+        }
+      ]
+    },
+    {
+      "id": "u3-g23",
+      "subnivel": "3.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Señalando un libro que tienes en la mano dirías…",
+          "opciones": [
+            "hau",
+            "hori",
+            "hura",
+            "haiek"
+          ],
+          "correcta": 0,
+          "explicacion": "Lo que está contigo: hau."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Señalando algo que tiene tu amigo dirías…",
+          "opciones": [
+            "hau",
+            "hori",
+            "hura",
+            "hauek"
+          ],
+          "correcta": 1,
+          "explicacion": "Lo que está con quien te escucha: hori."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Señalando una montaña a lo lejos dirías…",
+          "opciones": [
+            "hau",
+            "hori",
+            "hura",
+            "hauek"
+          ],
+          "correcta": 2,
+          "explicacion": "Lo lejano para los dos: hura."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hauek» significa…",
+          "opciones": [
+            "esto",
+            "estos",
+            "esos",
+            "aquellos"
+          ],
+          "correcta": 1,
+          "explicacion": "Plural de hau."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué demostrativo ya conocías de la unidad 2?",
+          "opciones": [
+            "hori",
+            "hura",
+            "hau",
+            "haiek"
+          ],
+          "correcta": 2,
+          "explicacion": "«Hau» sale al presentar cosas: «hau nire laguna da»."
+        }
+      ]
+    },
+    {
+      "id": "u3-g24",
+      "subnivel": "3.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Horiek» significa…",
+          "opciones": [
+            "estos",
+            "esos",
+            "aquellos",
+            "ellos"
+          ],
+          "correcta": 1,
+          "explicacion": "Plural de hori."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ordena de más cerca a más lejos:",
+          "opciones": [
+            "hau, hori, hura",
+            "hura, hori, hau",
+            "hori, hau, hura",
+            "hau, hura, hori"
+          ],
+          "correcta": 0,
+          "explicacion": "Aquí, ahí, allí."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "cada singular con su plural",
+          "pares": [
+            {
+              "eu": "hau",
+              "es": "hauek"
+            },
+            {
+              "eu": "hori",
+              "es": "horiek"
+            },
+            {
+              "eu": "hura",
+              "es": "haiek"
+            },
+            {
+              "eu": "bera",
+              "es": "beraiek"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En euskera, los demostrativos van…",
+          "opciones": [
+            "delante del nombre",
+            "detrás del nombre",
+            "al final de la frase",
+            "no se usan"
+          ],
+          "correcta": 1,
+          "explicacion": "Como los adjetivos: «etxe hau», esta casa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etxe hau» significa…",
+          "opciones": [
+            "la casa",
+            "esta casa",
+            "esa casa",
+            "aquella casa"
+          ],
+          "correcta": 1,
+          "explicacion": "Nombre + demostrativo."
+        }
+      ]
+    },
+    {
+      "id": "u3-g25",
+      "subnivel": "3.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hau hotza!» significa…",
+          "opciones": [
+            "Hace frío",
+            "¡Qué frío!",
+            "¿Tienes frío?",
+            "El frío"
+          ],
+          "correcta": 1,
+          "explicacion": "El demostrativo delante hace la exclamación."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para exclamar, en euskera se usa…",
+          "opciones": [
+            "hau + adjetivo",
+            "muy + adjetivo",
+            "adjetivo solo",
+            "no hay exclamaciones"
+          ],
+          "correcta": 0,
+          "explicacion": "«Hau polita!», ¡qué bonito!"
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dakit» significa…",
+          "opciones": [
+            "no quiero",
+            "no sé",
+            "no puedo",
+            "no hay"
+          ],
+          "correcta": 1,
+          "explicacion": "La frase que más te va a salvar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Agian» significa…",
+          "opciones": [
+            "siempre",
+            "nunca",
+            "quizás",
+            "ahora"
+          ],
+          "correcta": 2,
+          "explicacion": "Para no comprometerte."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si no entiendes algo, ¿qué dices?",
+          "opciones": [
+            "Ez dakit",
+            "Bai",
+            "Agian",
+            "Oso ondo"
+          ],
+          "correcta": 0,
+          "explicacion": "«No sé» vale para casi todo."
+        }
+      ]
+    },
+    {
+      "id": "u3-g26",
+      "subnivel": "3.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hau polita!» significa…",
+          "opciones": [
+            "Es bonito",
+            "¡Qué bonito!",
+            "¿Es bonito?",
+            "Lo bonito"
+          ],
+          "correcta": 1,
+          "explicacion": "Exclamación con hau."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "las frases de apuro",
+          "pares": [
+            {
+              "eu": "ez dakit",
+              "es": "no sé"
+            },
+            {
+              "eu": "agian",
+              "es": "quizás"
+            },
+            {
+              "eu": "barkatu",
+              "es": "perdón"
+            },
+            {
+              "eu": "mesedez",
+              "es": "por favor"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál usarías para pedir que te repitan algo?",
+          "opciones": [
+            "Barkatu?",
+            "Bai",
+            "Agian",
+            "Ez"
+          ],
+          "correcta": 0,
+          "explicacion": "«Barkatu» sirve de perdón y de «¿cómo dices?»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zer polita den!» es…",
+          "opciones": [
+            "una pregunta",
+            "una exclamación",
+            "una negación",
+            "un saludo"
+          ],
+          "correcta": 1,
+          "explicacion": "Otra forma de exclamar, con «zer»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Las exclamativas se construyen con lo que aprendiste en…",
+          "opciones": [
+            "los saludos",
+            "los demostrativos",
+            "los números",
+            "los verbos"
+          ],
+          "correcta": 1,
+          "explicacion": "«Hau» es el mismo de «hau, hori, hura»."
+        }
+      ]
+    },
+    {
+      "id": "u3-g27",
+      "subnivel": "3.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si alguien te habla muy rápido, ¿qué le dices?",
+          "opciones": [
+            "Poliki, mesedez",
+            "Oso ondo",
+            "Bai, bai",
+            "Agur"
+          ],
+          "correcta": 0,
+          "explicacion": "«Despacio, por favor». Poliki = despacio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dakit» y «agian» sirven para…",
+          "opciones": [
+            "afirmar con seguridad",
+            "salir de un apuro sin mentir",
+            "despedirse",
+            "dar las gracias"
+          ],
+          "correcta": 1,
+          "explicacion": "No saber o no estar seguro también se dice."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hau beroa!» significa…",
+          "opciones": [
+            "Hace calor",
+            "¡Qué calor!",
+            "El calor",
+            "¿Calor?"
+          ],
+          "correcta": 1,
+          "explicacion": "Mismo patrón: hau + adjetivo."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "cada apuro con su salida",
+          "pares": [
+            {
+              "eu": "ez dakit",
+              "es": "no lo sé"
+            },
+            {
+              "eu": "barkatu",
+              "es": "perdona"
+            },
+            {
+              "eu": "mesedez",
+              "es": "por favor"
+            },
+            {
+              "eu": "eskerrik asko",
+              "es": "muchas gracias"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué diferencia hay entre «hau hotza» y «hau hotza!»?",
+          "opciones": [
+            "Ninguna",
+            "La exclamación: la primera describe, la segunda se admira",
+            "La segunda es una pregunta",
+            "La primera está mal"
+          ],
+          "correcta": 1,
+          "explicacion": "El tono lo cambia todo."
+        }
+      ]
+    },
+    {
+      "id": "u3-g28",
+      "subnivel": "3.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál NO es una frase de apuro útil?",
+          "opciones": [
+            "ez dakit",
+            "barkatu",
+            "agian",
+            "hamabi"
+          ],
+          "correcta": 3,
+          "explicacion": "«Hamabi» es el número doce."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Agian» te sirve cuando…",
+          "opciones": [
+            "estás seguro",
+            "no estás seguro",
+            "quieres negarte",
+            "te despides"
+          ],
+          "correcta": 1,
+          "explicacion": "Quizás, tal vez."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para exclamar «¡qué grande!» dirías…",
+          "opciones": [
+            "Hau handia!",
+            "Handia hau!",
+            "Handia da!",
+            "Hau da handia"
+          ],
+          "correcta": 0,
+          "explicacion": "Hau + adjetivo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Las exclamativas y los demostrativos…",
+          "opciones": [
+            "no tienen nada que ver",
+            "usan la misma palabra: hau",
+            "son lo mismo",
+            "se excluyen"
+          ],
+          "correcta": 1,
+          "explicacion": "Por eso van seguidos en esta unidad."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Poliki» significa…",
+          "opciones": [
+            "rápido",
+            "despacio",
+            "fuerte",
+            "bajo"
+          ],
+          "correcta": 1,
+          "explicacion": "Muy útil para pedir que te hablen más lento."
+        }
+      ]
     }
   ]
 }
