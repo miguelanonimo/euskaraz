@@ -323,10 +323,14 @@
     {
       "eu": "hura",
       "es": "él / ella",
-      "nota": "Sin género. Vale para los dos.",
+      "nota": "Sin género. Vale para los dos. Es también el demostrativo lejano: «aquel».",
       "audio": "unidades/u2/hura.mp3",
       "categoria": "otros",
-      "subnivel": "2.1"
+      "subnivel": "2.1",
+      "esAlt": [
+        "aquel",
+        "aquello"
+      ]
     },
     {
       "eu": "gu",
@@ -347,10 +351,14 @@
     {
       "eu": "haiek",
       "es": "ellos / ellas",
-      "nota": null,
+      "nota": "Es también el demostrativo lejano en plural: «aquellos».",
       "audio": "unidades/u2/haiek.mp3",
       "categoria": "otros",
-      "subnivel": "2.1"
+      "subnivel": "2.1",
+      "esAlt": [
+        "aquellos",
+        "aquellas"
+      ]
     },
     {
       "eu": "bera",

@@ -480,6 +480,50 @@ Al abrirlo a los tres aparecieron dos cosas más:
 - **`u1-g06` del gernikés tiene 6 variantes en vez de 5.** Es anterior a
   todo esto y sigue sin arreglar — pendiente de decidir qué variante sobra.
 
+### El subnivel 3.3 tenía ejercicios pero nada que estudiar (2026-08-25)
+
+Ric: *«el Subnivel 3.3: Demostrativos no tiene nada de gramática, así es
+imposible entrar a los ejercicios sabiendo».* Tenía razón: **0 fichas de
+gramática y 1 sola palabra** (`hau`), contra 5 grupos de ejercicios que
+preguntaban por `hori`, `hura`, `hauek`, `horiek` y `haiek` — ninguna
+presentada antes. Fallo nuestro al crear los subniveles que tapaban huecos
+del A1: se generaron los ejercicios y no se escribió la lección.
+
+Barridos los 50 subniveles buscando lo mismo. Salieron seis, pero **solo el
+3.3 estaba de verdad vacío**: los otros cuatro (1.2, 4.8, 8.5, 9.4) son de
+vocabulario y tienen 8-13 palabras que estudiar, y el 5.4 tiene su ficha.
+
+**Escrito lo que faltaba:**
+
+- Ficha *«Tres distancias, y lo que cuenta es de quién está cerca»* — el
+  sistema hau/hori/hura, con el matiz que piden los ejercicios: el criterio
+  no son los metros, es **de quién** está cerca la cosa. Más los plurales.
+- Ficha *«Van detrás del nombre, y el nombre pierde el artículo»* — el orden
+  al revés que en castellano (`etxe hau`, «casa esta»), la caída de la `-a`
+  (`etxea` → `etxe hau`), y por qué `hura`/`haiek` son las mismas palabras
+  que «él/ella» y «ellos/ellas» de la unidad 2.
+- Vocabulario: `hori`, `hauek`, `horiek`.
+
+**Dos cosas más que salieron al mirarlo:**
+
+1. **`u3-g05` no era de demostrativos.** Preguntaba dónde se coloca la
+   palabra interrogativa — es de 3.1, donde además está su ficha. Movido. Al
+   irse, 3.3 se quedó con 4 grupos, así que se escribió `u3-g29` sobre la
+   gramática nueva para mantener el mínimo de 5.
+2. **`u3-g23 v5` daba una respuesta falsa.** Preguntaba «¿qué demostrativo
+   ya conocías de la unidad 2?» y daba por buena `hau`, que se presenta
+   justo ahí. De la unidad 2 se conocen `hura` y `haiek`. Corregida a `hura`.
+
+**Sobre `hura` y `haiek`:** primero las añadí al diccionario de la unidad 3
+como «aquel/aquellos», y quedaban duplicadas con las de la unidad 2. Son la
+misma palabra, no dos, así que se quedan donde estaban y se les amplió el
+significado (`esAlt` + nota); la ficha de 3.3 explica el doble uso.
+
+**Pendiente:** las tres palabras nuevas y las seis frases de ejemplo no
+tienen audio. Los ejemplos sin audio ya son normales en el curso (107 de
+311), así que no rompe nada, pero entran en la lista de audios por generar.
+Las frases de ejemplo son nuestras y **no las ha revisado un nativo**.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
