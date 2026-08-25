@@ -397,6 +397,41 @@ comparten este error (confirmado de oído en `jaten dut`).
   ninguna convención: el campo `es` se queda legible para humanos y la
   expansión la hace el código.
 
+#### Continuación: las tildes y los espacios de la barra (2026-08-25)
+
+Ric, con el audio de `bera`/`hura` («él / ella»), tecleó **`el/ella`** y se
+marcó mal. Dos cosas distintas, las dos arregladas:
+
+1. **La tilde se comparaba.** El brief ya decía que una tilde de más o de
+   menos es cosmética y no cuenta como fallo, pero la comparación no lo
+   implementaba: `el` no casaba con `él`.
+2. **La barra solo separaba con espacios alrededor.** La respuesta guardada
+   es `él / ella`, y al partirla salían `él` y `ella` sueltas y la frase
+   entera con espacios — pero nunca `el/ella`, que es justo como lo escribe
+   cualquiera.
+
+Ahora se comparan por una clave que aplana las dos cosas (`claveRespuesta`).
+Lo que se **muestra** en pantalla no cambia: sigue apareciendo `él / ella`
+bien escrito, que es lo que hay que aprender.
+
+**La ñ se deja intacta a propósito.** En castellano y en euskera es otra
+letra, no una n con adorno: aceptar `manana` por `mañana` sería enseñar mal.
+Comprobado antes de aplicarlo que ninguna pareja de palabras del curso (522
+entradas) se confunde al aplanar tildes — cero colisiones.
+
+**Y una cosa que salió de aquí:** Ric estaba viendo arreglos anteriores como
+si no existieran, porque el navegador servía el `app.js` cacheado. El `?v=2`
+de `index.html` no sirve si no se sube el número en cada retoque, y es fácil
+pasarse un rato depurando código viejo sin saberlo. Añadido
+`scripts/servidor-local.py`, que es el servidor de siempre más una cabecera
+`Cache-Control: no-store`. Para probar en local, usar ese en vez de
+`python3 -m http.server`. No toca `index.html`, así que lo publicado sigue
+igual.
+
+```
+python3 scripts/servidor-local.py 8321
+```
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

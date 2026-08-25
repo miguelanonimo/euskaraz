@@ -284,9 +284,31 @@
     return out;
   }
 
+  /* Las tildes y los espacios alrededor de la barra son cosméticos: el
+     brief los da por no-fallo, pero la comparación sí los miraba, y «el/ella»
+     salía mal contra «él / ella» (detectado por Ric). Se comparan por esta
+     clave; lo que se muestra en pantalla no cambia.
+     La ñ se deja tal cual a propósito: en castellano y en euskera es otra
+     letra, no una n con adorno. Comprobado que ninguna pareja de palabras
+     del curso se confunde al aplanar así. */
+  var TILDES = { '\u00e1':'a','\u00e0':'a','\u00e4':'a','\u00e2':'a',
+                 '\u00e9':'e','\u00e8':'e','\u00eb':'e','\u00ea':'e',
+                 '\u00ed':'i','\u00ec':'i','\u00ef':'i','\u00ee':'i',
+                 '\u00f3':'o','\u00f2':'o','\u00f6':'o','\u00f4':'o',
+                 '\u00fa':'u','\u00f9':'u','\u00fc':'u','\u00fb':'u' };
+  function claveRespuesta(texto) {
+    return normalizar(texto)
+      .replace(/[\u00e1\u00e0\u00e4\u00e2\u00e9\u00e8\u00eb\u00ea\u00ed\u00ec\u00ef\u00ee\u00f3\u00f2\u00f6\u00f4\u00fa\u00f9\u00fc\u00fb]/g,
+               function (c) { return TILDES[c]; })
+      .replace(/\s*\/\s*/g, '/');
+  }
+
   /* ¿Acierta lo tecleado contra alguna de las respuestas buenas? */
   function aciertaTecleado(dado, respuestas) {
-    return todasLasVariantes(respuestas).indexOf(dado) !== -1;
+    var k = claveRespuesta(dado);
+    return todasLasVariantes(respuestas).some(function (v) {
+      return claveRespuesta(v) === k;
+    });
   }
 
   /* Cuando la palabra sirve para los dos géneros, decirlo: es una de las
@@ -2292,7 +2314,7 @@
     var crudo = $('typebox').value;
     var dado  = normalizar(crudo);
     var variantes = todasLasVariantes(ej.respuestas);
-    var exacto = variantes.indexOf(dado) !== -1;
+    var exacto = aciertaTecleado(dado, ej.respuestas);
     $('typebox').blur();
     if (exacto) {
       var nota = notaDeGenero(ej.respuestas);
@@ -2334,7 +2356,7 @@
   function corregirTeclear(ej) {
     var dado = normalizar($('typebox').value);
     var variantes = todasLasVariantes(ej.respuestas);
-    var exacto = variantes.indexOf(dado) !== -1;
+    var exacto = aciertaTecleado(dado, ej.respuestas);
     $('typebox').blur();
     if (exacto) {
       var extra = notaDeGenero(ej.respuestas);
