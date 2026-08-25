@@ -205,7 +205,7 @@ parte floja de A1 y puede esperar a una revisión posterior.
 4. **La variante gernikés** (`data/unidades-gernikes/`) tendría que
    reestructurarse igual, o quedarse en la estructura vieja como
    variante congelada. Decisión de Miguel.
-5. **Volumen estimado:** 50 subniveles. A 2-3 grupos de ejercicios por
+5. **Volumen real (ya montado):** 50 subniveles, 184 grupos. A 2-3 grupos de ejercicios por
    subnivel más 3-4 de test por unidad, salen ~130-175 grupos (hoy hay
    170). El volumen total no crece mucho: se redistribuye en porciones
    más pequeñas, que era el objetivo.
