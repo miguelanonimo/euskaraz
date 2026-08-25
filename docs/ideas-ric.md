@@ -986,6 +986,59 @@ distinción no le resulta necesaria por defecto.
     `data-modo="gernikes"` / `MODO_DIALECTO` puede quedarse igual, es un
     identificador técnico, no el nombre que ve el usuario.
 
+### Análisis de nivel: el curso frente al A1 oficial (25/08/2026)
+
+Investigación pedida por Ric. Fuente: **HEOC** (*Helduen Euskalduntzearen
+Oinarrizko Curriculuma*), currículo oficial establecido por Orden del
+Gobierno Vasco del 22/07/2015 (BOPV nº 144), marco de referencia para
+euskaltegis homologados y HABE. Se leyó íntegra la sección A1,
+**páginas 73-98** del PDF oficial. Informe compartible:
+https://claude.ai/code/artifact/2fca0736-c0ee-41a7-b19c-ee1e4f35fde7
+
+⚠️ **Trampa de la fuente:** las secciones A1 y A2 van seguidas y son casi
+idénticas en estructura. La de A2 empieza en la pág. 99 y se reconoce
+porque dice «A1 mailakoez gain» («además de los de A1»). En esta
+investigación se extrajo A2 creyendo que era A1 y hubo que rehacerlo.
+
+**Conclusión, y no es la esperada: el curso no se pasa de nivel, se
+queda corto de A1.**
+
+**Contenido de A1 que el curso NO cubre (10):** futuro (`joango naiz`) ·
+imperativo (`Etorri!`, `ezazu`) · `ahal izan`/`ezin izan` · `behar izan` ·
+progresivo (`ikasten ari naiz`) · verbo `eduki` (`dauka`) · ordinales ·
+demostrativos completos (solo está `hau`) · casos `norentzat` y
+`noraino` · exclamativas (`Hau hotza!`).
+
+Lo llamativo: la ficha final de la u12 lista el futuro y el imperativo
+como **«lo que falta para seguir hacia A2»**, y el currículo los pone en
+A1. Comprobado por script que ninguno se enseña como vocabulario; solo
+se mencionan en textos explicativos.
+
+**Contenido que SÍ se pasa de A1 (3, todos menores):** los verbos de
+movimiento sintéticos de la u9 (`noa`, `nator`, `nabil` — en presente A1
+solo pide `izan` y `egon`; `joan`/`ibili`/`etorri` vienen marcados como
+novedad de A2) · el pasado de `egon` de la u11 (`nengoen`, `zegoen` —
+A1 solo pide pasado de `izan`, `ukan`, `eduki`) · `mila` de la 5.1
+(A1 llega a 100).
+
+**Temas del catálogo oficial peor cubiertos:** Euskal Herria
+(territorios) 0/5 · tareas cotidianas 0/6 · datos personales
+(edad, dirección, estado civil) 0/5 · servicios (correos, banco) 0/4 ·
+medios de comunicación 1/4.
+
+**Las cinco sub-unidades nuevas apuntan bien:** sus seis campos
+temáticos están explícitamente en el catálogo A1, algunos con las mismas
+palabras («gelak, altzariak» para la casa). Dos matices: los animales de
+granja encajan regular (el catálogo dice «etxeko animaliak», domésticos)
+y la ropa no figura como tema explícito de A1.
+
+**Decisión pendiente entre Ric y Miguel** — es de producto, no técnica:
+- **A.** Completar el A1 con los diez contenidos que faltan.
+- **B.** Asumir que es A1 parcial y decirlo: hoy el subtítulo de la app
+  dice «Nivel A1 completo», y la ficha de la u12 llama A2 a cosas de A1.
+- **C.** Las dos por orden: corregir ya lo que promete la app, y añadir
+  lo que falta como sub-unidades, que es un formato ya montado y probado.
+
 ## Implementadas
 
 ## Descartadas (y por qué)
