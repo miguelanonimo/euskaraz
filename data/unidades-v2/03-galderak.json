@@ -133,6 +133,21 @@
       "subnivel": "3.3"
     },
     {
+      "titulo": "Cómo suena esto en Bizkaia: los demostrativos",
+      "cuerpo": "Los dos primeros no cambian: <b>hau</b> y <b>hori</b> son iguales en batua y en bizkaiera. El tercero sí:\n\n<b>ha</b> — donde el batua dice <i>hura</i>\n\nY como <i>hura</i>, vale para las dos cosas: «aquel» y «él/ella». Si oyes a alguien en Bilbao decir <i>ha</i>, está diciendo cualquiera de las dos.\n\nDonde de verdad se separan es en el plural, que no se parece en nada:\n\n<b>honeek</b> — estos (batua: <i>hauek</i>)\n<b>horreek</b> — esos (batua: <i>horiek</i>)\n<b>hareek</b> — aquellos (batua: <i>haiek</i>)\n\nNo intentes deducirlos del singular, porque no salen. Se aprenden aparte. También se oyen <i>honeik</i> y <i>horreik</i>, y la forma antigua <i>haek</i> por <i>hareek</i>.\n\nUna cosa más que se oye mucho en el este de Bizkaia: añadirles <b>-xe-</b> para señalar con énfasis, como nuestro «este mismo»: <b>hauxe</b>, <b>horixe</b>, <b>haxe</b>.",
+      "ejemplos": [
+        {
+          "eu": "Ha handia da.",
+          "es": "Aquel es grande. — en batua, «Hura handia da»."
+        },
+        {
+          "eu": "Liburu horreek txikiak dira.",
+          "es": "Esos libros son pequeños. — en batua, «Liburu horiek txikiak dira»."
+        }
+      ],
+      "subnivel": "3.3"
+    },
+    {
       "titulo": "La palabra interrogativa va justo antes del verbo",
       "cuerpo": "Esta regla es sencilla y muy útil, porque en euskera el orden de las palabras es bastante libre… salvo aquí.\n\nEn una pregunta, la palabra interrogativa se coloca <b>inmediatamente antes del verbo</b>. Pegada. Sin nada en medio.\n\n<i><b>Non</b> zaude?</i> — ¿Dónde estás?\n<i><b>Nor</b> zara zu?</i> — ¿Quién eres tú?\n<i>Zu <b>nongoa</b> zara?</i> — ¿De dónde eres tú?\n\nFíjate en la última: el sujeto <i>zu</i> puede irse al principio, pero <i>nongoa</i> sigue pegado a <i>zara</i>.\n\nSi alguna vez dudas de dónde colocar algo en una pregunta, empieza por esto: interrogativa + verbo, juntos.",
       "ejemplos": [
@@ -419,13 +434,29 @@
       "eu": "hauek",
       "es": "estos",
       "nota": "Plural de «hau».",
-      "subnivel": "3.3"
+      "subnivel": "3.3",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "honeek",
+          "registro": "bizkaiera",
+          "nota": "Plural bizkaino de «hau». También se oye «honeik»."
+        }
+      ]
     },
     {
       "eu": "horiek",
       "es": "esos",
       "nota": "Plural de «hori». No confundir con «horrek».",
-      "subnivel": "3.3"
+      "subnivel": "3.3",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "horreek",
+          "registro": "bizkaiera",
+          "nota": "Plural bizkaino de «hori». También se oye «horreik»."
+        }
+      ]
     }
   ],
   "ejercicios": [

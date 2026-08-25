@@ -524,6 +524,41 @@ tienen audio. Los ejemplos sin audio ya son normales en el curso (107 de
 311), así que no rompe nada, pero entran en la lista de audios por generar.
 Las frases de ejemplo son nuestras y **no las ha revisado un nativo**.
 
+### Demostrativos en bizkaiera: «ha» por «hura» (2026-08-25)
+
+Aportación de Ric al hilo del subnivel 3.3: **en bizkaino «hura» es «ha»**.
+No estaba en ninguna parte del curso — ni siquiera en la versión en gernikés.
+
+Verificado en [bizkaiera.eus](https://www.bizkaiera.eus/bizkaiera/morfologia-puntu-batzuk/)
+(Bizkaieraren ataria), que confirma el dato y añade lo que no se puede
+deducir: **los plurales no se parecen nada a los del batua.**
+
+| batua | bizkaiera |
+|---|---|
+| hau | hau (igual) |
+| hori | hori (igual) |
+| **hura** | **ha** ← dato de Ric |
+| hauek | **honeek** (var. *honeik*) |
+| horiek | **horreek** (var. *horreik*) |
+| haiek | **hareek** (forma antigua *haek*) |
+
+Metido por el mecanismo que ya existía (`variantes` con `registro:
+"bizkaiera"`), en los dos cursos: `hura` y `haiek` en la unidad 2, `hauek` y
+`horiek` en la 3. Más una ficha *«Cómo suena esto en Bizkaia: los
+demostrativos»* en el 3.3 — la que ya había está en el 3.1 y va de
+interrogativas, así que estudiando demostrativos no se veía.
+
+También recoge el intensivo con **-xe-** (*hauxe, horixe, haxe*), que según
+la fuente se oye sobre todo en el este de Bizkaia.
+
+**Detalle técnico que casi se cuela:** puse el contraste con el batua en un
+campo `nota` dentro de los ejemplos, y **la app solo pinta `eu` y `es`** —
+se habría perdido en silencio. Había 0 ejemplos con `nota` en todo el curso,
+que era la pista. Movido al texto visible.
+
+**Sin audio:** `ha`, `honeek`, `horreek`, `hareek` y las dos frases de
+ejemplo. A la lista de audios por generar.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

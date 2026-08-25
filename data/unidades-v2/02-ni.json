@@ -330,6 +330,14 @@
       "esAlt": [
         "aquel",
         "aquello"
+      ],
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "ha",
+          "registro": "bizkaiera",
+          "nota": "El demostrativo lejano del bizkaiera. Donde el batua dice «hura», en Bizkaia se dice «ha», y vale igual para «aquel» y para «él/ella»."
+        }
       ]
     },
     {
@@ -358,6 +366,14 @@
       "esAlt": [
         "aquellos",
         "aquellas"
+      ],
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "hareek",
+          "registro": "bizkaiera",
+          "nota": "Plural bizkaino de «ha». La forma antigua «haek» aún se oye."
+        }
       ]
     },
     {
