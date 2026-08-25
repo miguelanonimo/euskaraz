@@ -32,7 +32,46 @@ golpe cuando toque, para no llenar el historial de commits de una línea.
 
 | Palabra | Qué se oye | Qué debería oírse | Historial |
 |---|---|---|---|
+| `berdin` (u12, "igual") · `unidades/u12/berdin.mp3` | la I final queda cerrada y átona | I abierta y acentuada: «berd**í**n» | Salió al revisar la lista de vecinas de `benetan`. Segundo fallo de acento tras `agian`: en los dos, la sílaba final se come el peso. |
+| `daude` (u6, "están") · `unidades/u6/daude.mp3` | el acento cae mal | acentuada en la **e**: «daud**é**» | Tercer fallo de acento, tras `agian` y `berdin`. Y es de los auxiliares que arrastra `da`, así que probablemente se arreglen en la misma tanda. |
+| `du` (u5, "tiene") · `unidades/u5/du.mp3` | "dui": se le añade una I que no existe | «du» limpio, dos letras | Confirma lo avisado en `da`: **los auxiliares están tocados**. Van ya `da`, `du` y `daude`. |
+| `eguerdia` (u7, "el mediodía") · `unidades/u7/eguerdia.mp3` | el acento cae mal | acentuada en la **e**: «egü**é**rdia» | Cuarto fallo de acento |
+| `euria` (u10, "la lluvia") · `unidades/u10/euria.mp3` | el acento cae mal | acentuada en la **i**: «eur**í**a» | Quinto fallo de acento. Ojo: `euria` y `eguerdia` empiezan igual (eu-/egu-) pero el acento va en sílabas distintas. |
+| `ez horregatik` (u1, "de nada") · `unidades/u1/ez-horregatik.mp3` | "orregatit": la K final se pierde | K final clara: «horregati**k**» | **Segunda ronda para esta palabra.** El 20/08 fallaba la RR; Miguel la regeneró y el 21/08 ya sonaba bien la RR pero salía "Ez horregadit". Ahora sigue con la K mal: **tercer intento**. |
+| `gara` (u4, "somos") · `unidades/u4/gara.mp3` | "dara": la G inicial suena como D | G clara: «gara» | Otro auxiliar tocado, y encaja con la G inestable ya vista: `gure`/`guri` sonaban "bule"/"buri" (G→B) y `haragia` "arayia" (G→Y). Ahora G→D. |
+| `garai hartan` (u11, "en aquella época") · `unidades/u11/garai-hartan.mp3` | el acento de `hartan` cae mal | acentuada en la última a: «hart**á**n» | Sexto fallo de acento |
+| `geu` (u2, "nosotros mismos") · `unidades/u2/geu.mp3` | "guiu": la E se cierra | E abierta: «g**e**u» | Conviene escuchar sus hermanas `neu` y `zeu` (u2), que tienen la misma forma. |
+| `da` (u4, "es") · `unidades/u4/da.mp3` | la D suena a inglesa (alveolar, aspirada) | D dental clara, como en «dato» | ⚠️ **La más importante de la lista.** `da` es el verbo «ser» y sale en casi todas las frases del curso. Y arrastra a los auxiliares, que son las palabras más frecuentes del euskera: `dut`, `du`, `duzu`, `dugu`, `dute`, `ditut`, `dira`, `dago`, `daude`, `doa`, `dator`, `dabil` — todas con audio ya generado. Enlaza con `denda` (primera ronda: la segunda D suavizada) y `galdera` (la D casi como Y). |
+| `benetan` (u12, "de verdad") · `unidades/u12/benetan.mp3` | "denetan": la B inicial suena como D | B clara: «benetan» | ⚠️ Enlaza con fallos ya vistos en la primera ronda: `hobea` sonaba "hogea" (B→G) y `gure`/`guri` sonaban "bule"/"buri" (G→B). **La B es inestable en las dos direcciones.** Vecinas con audio ya generado que conviene escuchar: `bera`, `berandu`, `beraz`, `berdin`, `berria`, `berriro`, `bederatzi`, `bezain`, `beti`. |
+| `astea` (u7, "la semana") · `unidades/u7/astea.mp3` | "aspea": la T suena como P | T clara: «as-te-a» | Ric comprobó las demás con raíz «aste-» (`asteburua`, `astelehena`, `asteartea`, `asteazkena`) y **suenan bien**: no es la raíz. |
+| `axola zait` (u10, "me importa") · `unidades/u10/axola-zait.mp3` | "achola": la X suena como CH | X suave, como la «sh» inglesa: «ashola» | ⚠️ Solo hay otras dos palabras con X (sin contar «tx», que sí es CH): `kaixo` (u1) y `pixka bat` (u10). Conviene escucharlas. |
+| `atea` (u6, "la puerta") · `unidades/u6/atea.mp3` | "apea": la T suena como P | T clara: «a-te-a» | Mismo fallo que `astea` |
+| `agian` (u3, "quizás") · `unidades/u3/agian.mp3` | el acento cae mal | acentuada en la **i**: «aguían» | Primera vez que se anota |
 | `mahaia` | "maiaia" — sigue metiendo un sonido donde la H debería ser muda | "maaia": H muda y las dos A seguidas | **Tercer intento fallido.** Anotada el 20/08, regenerada por Miguel, y el 21/08 sonaba "mayayaia". Ahora "maiaia": cambia el ruido pero no se va. |
+
+**Patrón 1 · El acento se coloca mal.** Ya son seis (la sexta es
+`garai hartan`): `agian` (en la i),
+`berdin` (en la i), `daude` (en la e), `eguerdia` (en la e) y `euria`
+(en la i). No hay una regla simple que las una —`eguerdia` y `euria`
+empiezan casi igual y llevan el acento en sílabas distintas—, así que
+probablemente haya que darle a la voz la posición del acento palabra por
+palabra, no confiar en que lo deduzca.
+
+**Patrón 2 · Los auxiliares están tocados.** `da` suena a inglesa, `du`
+suena "dui", `daude` lleva mal el acento y `gara` suena "dara". Son las palabras más
+frecuentes del euskera y salen en casi todas las frases, así que arreglar
+esta familia (`dut`, `du`, `duzu`, `dugu`, `dute`, `ditut`, `dira`,
+`dago`, `daude`, `doa`, `dator`, `dabil`) rinde más que cualquier otra
+tanda.
+
+**Posible patrón: la T entre vocales convertida en P.** Confirmado en
+`astea` → "aspea" y `atea` → "apea". No es la raíz «aste-»: Ric verificó
+que `asteburua`, `astelehena`, `asteartea` y `asteazkena` suenan bien.
+Lo que comparten las dos que fallan es la **terminación `-tea` en
+palabra corta**. Queda por escuchar `urtea` (u5, el año), que es la
+única del curso con esa misma forma y que ya tiene audio generado.
+(`emaztea`, `hilabetea` y `tomatea` también acaban en -tea pero aún no
+tienen mp3: son vocabulario nuevo.)
 
 **Nota sobre `mahaia`:** tres regeneraciones y tres resultados malos
 distintos apuntan a que **regenerar no basta para esta palabra**. Es

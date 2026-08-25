@@ -370,7 +370,7 @@
     },
     {
       "eu": "Euskal Herria",
-      "es": "Euskal Herria, el País Vasco",
+      "es": "el País Vasco",
       "nota": "Siempre en dos palabras y las dos con mayúscula.",
       "categoria": "sustantivo",
       "subnivel": "1.4"
@@ -1570,7 +1570,7 @@
             },
             {
               "eu": "Euskal Herria",
-              "es": "Euskal Herria, el País Vasco"
+              "es": "el País Vasco"
             }
           ]
         },
@@ -1592,7 +1592,7 @@
             },
             {
               "eu": "Euskal Herria",
-              "es": "Euskal Herria, el País Vasco"
+              "es": "el País Vasco"
             }
           ]
         },
@@ -1770,7 +1770,7 @@
             },
             {
               "eu": "Euskal Herria",
-              "es": "Euskal Herria, el País Vasco"
+              "es": "el País Vasco"
             }
           ]
         },
@@ -1985,7 +1985,7 @@
           "opciones": [
             "¿y tú?",
             "el euskera",
-            "Euskal Herria, el País Vasco",
+            "el País Vasco",
             "mal"
           ],
           "correcta": 0,
