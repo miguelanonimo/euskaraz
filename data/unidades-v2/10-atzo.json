@@ -301,6 +301,44 @@
         }
       ],
       "subnivel": "10.6"
+    },
+    {
+      "subnivel": "10.3",
+      "titulo": "El futuro: una «-ko» y ya está",
+      "cuerpo": "De todas las cosas que has aprendido, esta es de las más baratas. Para hablar de lo que va a pasar, al verbo se le pega <b>-ko</b> (o <b>-go</b>) y el auxiliar se queda igual:\n\n<b>joan</b> → <b>joango naiz</b> — iré, voy a ir\n<b>egin</b> → <b>egingo dut</b> — haré, voy a hacer\n<b>ikasi</b> → <b>ikasiko dut</b> — estudiaré\n\n¿Cuándo <i>-ko</i> y cuándo <i>-go</i>? Por comodidad al hablar: detrás de <b>n</b> o <b>l</b> se pone <b>-go</b> (joan → joango, egin → egingo), y en los demás casos <b>-ko</b>.\n\nEs la misma lógica que hace que digamos «un» y no «uno» delante de nombre: la lengua busca lo que suena mejor.",
+      "ejemplos": [
+        {
+          "eu": "Bihar joango naiz.",
+          "es": "Mañana iré."
+        },
+        {
+          "eu": "Zer egingo duzu?",
+          "es": "¿Qué vas a hacer?"
+        },
+        {
+          "eu": "Euskara ikasiko dut.",
+          "es": "Aprenderé euskera."
+        }
+      ]
+    },
+    {
+      "subnivel": "10.3",
+      "titulo": "Los tres tiempos, uno al lado del otro",
+      "cuerpo": "Ahora ya los tienes todos. Mira el mismo verbo en los tres:\n\n<b>Atzo joan nintzen.</b> — Ayer fui.\n<b>Gaur joaten naiz.</b> — Hoy voy (habitualmente).\n<b>Bihar joango naiz.</b> — Mañana iré.\n\nFíjate en que el auxiliar es el que carga con casi todo el trabajo, y el verbo solo cambia de terminación: <i>joan</i>, <i>joaten</i>, <i>joango</i>.\n\nEse es, en una línea, el motor del euskera que llevas todo el curso montando.",
+      "ejemplos": [
+        {
+          "eu": "Atzo joan nintzen.",
+          "es": "Ayer fui."
+        },
+        {
+          "eu": "Gaur joaten naiz.",
+          "es": "Hoy voy."
+        },
+        {
+          "eu": "Bihar joango naiz.",
+          "es": "Mañana iré."
+        }
+      ]
     }
   ],
   "vocabulario": [
@@ -823,6 +861,27 @@
       "audio": "unidades/u12/zorionak.mp3",
       "categoria": "otros",
       "subnivel": "10.5"
+    },
+    {
+      "eu": "etorkizuna",
+      "es": "el futuro",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "10.3"
+    },
+    {
+      "eu": "asmoa",
+      "es": "la intención, el plan",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "10.3"
+    },
+    {
+      "eu": "bihar",
+      "es": "mañana",
+      "nota": "Ya la tenías; aquí se usa con el futuro.",
+      "categoria": "otros",
+      "subnivel": "10.3"
     }
   ],
   "ejercicios": [
@@ -2575,6 +2634,154 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u10-g25",
+      "subnivel": "10.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Mañana iré» se dice…",
+          "opciones": [
+            "Bihar joan naiz",
+            "Bihar joango naiz",
+            "Bihar joaten naiz",
+            "Bihar joan nintzen"
+          ],
+          "correcta": 1,
+          "explicacion": "Joan + go + naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Haré» se dice…",
+          "opciones": [
+            "egiten dut",
+            "egingo dut",
+            "egin dut",
+            "egin nuen"
+          ],
+          "correcta": 1,
+          "explicacion": "Egin acaba en n, así que -go."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuándo se usa «-go» en vez de «-ko»?",
+          "opciones": [
+            "Siempre",
+            "Detrás de n o l",
+            "Solo con verbos de movimiento",
+            "En pasado"
+          ],
+          "correcta": 1,
+          "explicacion": "Joango, egingo: por comodidad al hablar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ikasiko dut» significa…",
+          "opciones": [
+            "estudio",
+            "estudié",
+            "estudiaré",
+            "estoy estudiando"
+          ],
+          "correcta": 2,
+          "explicacion": "Ikasi + ko + dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué cambia entre «joaten naiz» y «joango naiz»?",
+          "opciones": [
+            "El auxiliar",
+            "La terminación del verbo",
+            "El orden",
+            "Nada"
+          ],
+          "correcta": 1,
+          "explicacion": "El auxiliar se queda igual; el verbo pasa de -ten a -go."
+        }
+      ]
+    },
+    {
+      "id": "u10-g26",
+      "subnivel": "10.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los tres tiempos",
+          "pares": [
+            {
+              "eu": "joan nintzen",
+              "es": "fui"
+            },
+            {
+              "eu": "joaten naiz",
+              "es": "voy"
+            },
+            {
+              "eu": "joango naiz",
+              "es": "iré"
+            },
+            {
+              "eu": "etorkizuna",
+              "es": "el futuro"
+            }
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mañana iré a Bilbao.",
+          "eu": "Bihar Bilbora joango naiz.",
+          "palabras": [
+            "Bihar",
+            "Bilbora",
+            "joango",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Qué vas a hacer?",
+          "eu": "Zer egingo duzu?",
+          "palabras": [
+            "Zer",
+            "egingo",
+            "duzu?"
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zer egingo duzu bihar?» pregunta por…",
+          "opciones": [
+            "lo que hiciste",
+            "lo que haces siempre",
+            "lo que vas a hacer",
+            "lo que estás haciendo"
+          ],
+          "correcta": 2,
+          "explicacion": "Bihar (mañana) + futuro."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etorkizuna» significa…",
+          "opciones": [
+            "el pasado",
+            "el futuro",
+            "la costumbre",
+            "el plan"
+          ],
+          "correcta": 1,
+          "explicacion": "De «etorri», venir: lo que está por venir."
+        }
+      ]
     }
   ]
 }

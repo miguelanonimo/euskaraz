@@ -268,6 +268,78 @@
         }
       ],
       "subnivel": "4.7"
+    },
+    {
+      "subnivel": "4.3",
+      "titulo": "Los ordinales: el número más «-garren»",
+      "cuerpo": "Ya sabes contar. Para decir «el primero, el segundo, el tercero» solo hace falta una pieza que se pega detrás del número: <b>-garren</b>.\n\n<b>bi</b> (dos) → <b>bigarren</b> → <b>bigarrena</b>, el segundo\n<b>hiru</b> (tres) → <b>hirugarren</b> → <b>hirugarrena</b>, el tercero\n<b>lau</b> (cuatro) → <b>laugarrena</b>\n<b>bost</b> (cinco) → <b>bosgarrena</b>\n\nFíjate en que <i>bost</i> pierde la t: <b>bosgarrena</b>, no «bostgarrena».\n\nY el primero es la excepción, como en casi todos los idiomas: no es «batgarrena» sino <b>lehena</b> (o <i>lehenengoa</i>).\n\nPara «el último» hay palabra propia: <b>azkena</b>.",
+      "ejemplos": [
+        {
+          "eu": "lehena",
+          "es": "el primero"
+        },
+        {
+          "eu": "bigarrena",
+          "es": "el segundo"
+        },
+        {
+          "eu": "bosgarrena",
+          "es": "el quinto"
+        },
+        {
+          "eu": "azkena",
+          "es": "el último"
+        }
+      ]
+    },
+    {
+      "subnivel": "4.3",
+      "titulo": "Escribirlos con cifra",
+      "cuerpo": "Igual que en castellano escribimos «1.º» o «3.ª», en euskera se escribe la cifra y un punto:\n\n<b>1.</b> = lehena · <b>2.</b> = bigarrena · <b>3.</b> = hirugarrena\n\nEse punto <i>sustituye</i> al «-garren». Así que si ves <b>3. solairua</b> en un ascensor, es «la tercera planta».\n\nLo verás mucho en portales, calles y horarios.",
+      "ejemplos": [
+        {
+          "eu": "hirugarrena",
+          "es": "el tercero"
+        },
+        {
+          "eu": "laugarrena",
+          "es": "el cuarto"
+        }
+      ]
+    },
+    {
+      "subnivel": "4.5",
+      "titulo": "Hay dos maneras de decir «tengo»",
+      "cuerpo": "Ya tienes <b>dut</b>, de <i>ukan</i>. Pues existe otra, y en la calle se oye tanto o más:\n\n<b>daukat</b> — tengo\n<b>daukazu</b> — tienes\n<b>dauka</b> — tiene\n\nVienen del verbo <b>eduki</b>. Y en la práctica, para las cosas del día a día, <i>dut</i> y <i>daukat</i> se usan casi indistintamente:\n\n<b>Kotxe bat dut.</b> = <b>Kotxe bat daukat.</b> — Tengo un coche.\n\nNo tienes que elegir: reconoce las dos y usa la que te salga.",
+      "ejemplos": [
+        {
+          "eu": "daukat",
+          "es": "tengo"
+        },
+        {
+          "eu": "dauka",
+          "es": "tiene"
+        },
+        {
+          "eu": "Kotxe bat daukat.",
+          "es": "Tengo un coche."
+        }
+      ]
+    },
+    {
+      "subnivel": "4.5",
+      "titulo": "Cuándo se prefiere cada una",
+      "cuerpo": "Si quieres afinar, hay una tendencia —no una regla— que ayuda:\n\n<b>eduki</b> (daukat) tira más hacia <i>tener algo en la mano, poseer algo concreto</i>: un coche, un perro, dinero, tiempo.\n\n<b>ukan</b> (dut) es más general y es el que aparece pegado a otros verbos, como ya viste en <i>jaten dut</i>. Ahí <b>no</b> se puede cambiar por <i>daukat</i>.\n\nO sea: para cosas, las dos. Para el mecanismo de dos piezas, solo <i>dut</i>.",
+      "ejemplos": [
+        {
+          "eu": "Dirua daukat.",
+          "es": "Tengo dinero."
+        },
+        {
+          "eu": "Ez daukat astirik.",
+          "es": "No tengo tiempo."
+        }
+      ]
     }
   ],
   "vocabulario": [
@@ -787,6 +859,76 @@
       "nota": null,
       "categoria": "otros",
       "subnivel": "4.7"
+    },
+    {
+      "eu": "lehena",
+      "es": "el primero",
+      "nota": "También «lehenengoa».",
+      "categoria": "otros",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "bigarrena",
+      "es": "el segundo",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "hirugarrena",
+      "es": "el tercero",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "laugarrena",
+      "es": "el cuarto",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "bosgarrena",
+      "es": "el quinto",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "azkena",
+      "es": "el último",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "daukat",
+      "es": "(yo) tengo",
+      "nota": "Del verbo «eduki». Se oye muchísimo.",
+      "categoria": "verbo",
+      "subnivel": "4.5"
+    },
+    {
+      "eu": "daukazu",
+      "es": "(tú) tienes",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.5"
+    },
+    {
+      "eu": "dauka",
+      "es": "(él/ella) tiene",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.5"
+    },
+    {
+      "eu": "eduki",
+      "es": "tener",
+      "nota": "El otro «tener», junto a «ukan».",
+      "categoria": "verbo",
+      "subnivel": "4.5"
     }
   ],
   "ejercicios": [
@@ -2248,6 +2390,323 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u4-g19",
+      "subnivel": "4.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El segundo» se dice…",
+          "opciones": [
+            "bata",
+            "bigarrena",
+            "bigarra",
+            "bimena"
+          ],
+          "correcta": 1,
+          "explicacion": "Bi + garren + a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El tercero» se dice…",
+          "opciones": [
+            "hirurgarrena",
+            "hirugarrena",
+            "hiruena",
+            "hirena"
+          ],
+          "correcta": 1,
+          "explicacion": "Hiru + garren + a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál es la excepción, la que no lleva «-garren»?",
+          "opciones": [
+            "el segundo",
+            "el primero",
+            "el cuarto",
+            "el quinto"
+          ],
+          "correcta": 1,
+          "explicacion": "El primero es «lehena», no «batgarrena»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bosgarrena» es…",
+          "opciones": [
+            "el cuarto",
+            "el quinto",
+            "el sexto",
+            "el último"
+          ],
+          "correcta": 1,
+          "explicacion": "Bost pierde la t: bosgarrena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «azkena»?",
+          "opciones": [
+            "el primero",
+            "el siguiente",
+            "el último",
+            "el mejor"
+          ],
+          "correcta": 2,
+          "explicacion": "Azkena es el último, con palabra propia."
+        }
+      ]
+    },
+    {
+      "id": "u4-g20",
+      "subnivel": "4.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los ordinales",
+          "pares": [
+            {
+              "eu": "lehena",
+              "es": "el primero"
+            },
+            {
+              "eu": "bigarrena",
+              "es": "el segundo"
+            },
+            {
+              "eu": "hirugarrena",
+              "es": "el tercero"
+            },
+            {
+              "eu": "laugarrena",
+              "es": "el cuarto"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los ordinales",
+          "pares": [
+            {
+              "eu": "bosgarrena",
+              "es": "el quinto"
+            },
+            {
+              "eu": "azkena",
+              "es": "el último"
+            },
+            {
+              "eu": "lehena",
+              "es": "el primero"
+            },
+            {
+              "eu": "hirugarrena",
+              "es": "el tercero"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En un ascensor, «3. solairua» es…",
+          "opciones": [
+            "la planta baja",
+            "la tercera planta",
+            "tres plantas",
+            "el tercer edificio"
+          ],
+          "correcta": 1,
+          "explicacion": "El punto detrás de la cifra hace de «-garren»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué le pasa a «bost» al añadirle «-garren»?",
+          "opciones": [
+            "No cambia",
+            "Pierde la t",
+            "Pierde la s",
+            "Se dobla la t"
+          ],
+          "correcta": 1,
+          "explicacion": "Bost → bosgarrena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Laugarrena» sale de…",
+          "opciones": [
+            "lau (cuatro)",
+            "lehen (antes)",
+            "lan (trabajo)",
+            "laster (pronto)"
+          ],
+          "correcta": 0,
+          "explicacion": "Lau + garren + a."
+        }
+      ]
+    },
+    {
+      "id": "u4-g21",
+      "subnivel": "4.5",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Daukat» significa…",
+          "opciones": [
+            "tengo",
+            "quiero",
+            "soy",
+            "estoy"
+          ],
+          "correcta": 0,
+          "explicacion": "Es «tengo», del verbo eduki."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál es el otro verbo para «tener», junto a «ukan»?",
+          "opciones": [
+            "egon",
+            "eduki",
+            "izan",
+            "joan"
+          ],
+          "correcta": 1,
+          "explicacion": "Eduki: daukat, daukazu, dauka."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Kotxe bat daukat» se puede decir también…",
+          "opciones": [
+            "Kotxe bat dut",
+            "Kotxe bat naiz",
+            "Kotxe bat nago",
+            "Kotxe bat da"
+          ],
+          "correcta": 0,
+          "explicacion": "Para cosas concretas, dut y daukat se usan casi igual."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «jaten dut», ¿se puede cambiar «dut» por «daukat»?",
+          "opciones": [
+            "Sí, siempre",
+            "No: ahí solo vale dut",
+            "Solo en Bizkaia",
+            "Solo en pasado"
+          ],
+          "correcta": 1,
+          "explicacion": "Pegado a otro verbo, el auxiliar es siempre «dut»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Dauka» es…",
+          "opciones": [
+            "tengo",
+            "tienes",
+            "tiene",
+            "tenemos"
+          ],
+          "correcta": 2,
+          "explicacion": "Tercera persona: él o ella tiene."
+        }
+      ]
+    },
+    {
+      "id": "u4-g22",
+      "subnivel": "4.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el verbo «eduki»",
+          "pares": [
+            {
+              "eu": "daukat",
+              "es": "tengo"
+            },
+            {
+              "eu": "daukazu",
+              "es": "tienes"
+            },
+            {
+              "eu": "dauka",
+              "es": "tiene"
+            },
+            {
+              "eu": "eduki",
+              "es": "tener"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las dos formas de tener",
+          "pares": [
+            {
+              "eu": "dut",
+              "es": "tengo (ukan)"
+            },
+            {
+              "eu": "daukat",
+              "es": "tengo (eduki)"
+            },
+            {
+              "eu": "duzu",
+              "es": "tienes (ukan)"
+            },
+            {
+              "eu": "daukazu",
+              "es": "tienes (eduki)"
+            }
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Tengo dinero.",
+          "eu": "Dirua daukat.",
+          "palabras": [
+            "Dirua",
+            "daukat."
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas suena más natural para «tengo un perro»?",
+          "opciones": [
+            "Txakur bat daukat",
+            "Txakur bat naiz",
+            "Txakur bat nago",
+            "Txakur bat dago"
+          ],
+          "correcta": 0,
+          "explicacion": "Una cosa concreta: daukat encaja perfecto."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Eduki» tira más hacia…",
+          "opciones": [
+            "poseer algo concreto",
+            "moverse",
+            "estar en un sitio",
+            "gustar"
+          ],
+          "correcta": 0,
+          "explicacion": "Un coche, un perro, dinero, tiempo."
+        }
+      ]
     }
   ]
 }

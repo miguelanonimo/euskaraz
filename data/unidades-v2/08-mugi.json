@@ -154,6 +154,44 @@
         }
       ],
       "subnivel": "8.1"
+    },
+    {
+      "subnivel": "8.4",
+      "titulo": "Poder, querer y tener que",
+      "cuerpo": "Tres piezas que se montan igual y que abren muchísimo lo que puedes decir. Todas van con el verbo en su forma de diccionario delante:\n\n<b>Joan nahi dut.</b> — Quiero ir.\n<b>Joan behar dut.</b> — Tengo que ir.\n<b>Joan ahal dut.</b> — Puedo ir.\n\nEl orden es siempre el mismo: <i>verbo + nahi/behar/ahal + auxiliar</i>. Y <b>nahi</b> ya lo conocías de la unidad de comer: es la misma pieza.",
+      "ejemplos": [
+        {
+          "eu": "Joan nahi dut.",
+          "es": "Quiero ir."
+        },
+        {
+          "eu": "Lan egin behar dut.",
+          "es": "Tengo que trabajar."
+        },
+        {
+          "eu": "Etorri ahal zara?",
+          "es": "¿Puedes venir?"
+        }
+      ]
+    },
+    {
+      "subnivel": "8.4",
+      "titulo": "«Ezin» es «no puedo», sin «ez»",
+      "cuerpo": "Aquí hay una rareza que conviene tener clara desde el principio.\n\nPara negar casi todo se pone <b>ez</b> delante, como ya sabes. Pero «no poder» tiene palabra propia:\n\n<b>ahal dut</b> — puedo\n<b>ezin dut</b> — no puedo\n\n<i>Ezin</i> ya lleva la negación dentro, así que <b>no</b> se dice «ez ezin dut». Y por eso tampoco hace saltar el auxiliar como hace la negación normal.\n\n<b>Ezin dut joan.</b> — No puedo ir.",
+      "ejemplos": [
+        {
+          "eu": "ahal dut",
+          "es": "puedo"
+        },
+        {
+          "eu": "ezin dut",
+          "es": "no puedo"
+        },
+        {
+          "eu": "Ezin dut joan.",
+          "es": "No puedo ir."
+        }
+      ]
     }
   ],
   "vocabulario": [
@@ -476,6 +514,34 @@
       "audio": "unidades/u9/hemendik.mp3",
       "categoria": "otros",
       "subnivel": "8.1"
+    },
+    {
+      "eu": "ahal dut",
+      "es": "puedo",
+      "nota": "Tener la posibilidad de hacer algo.",
+      "categoria": "verbo",
+      "subnivel": "8.4"
+    },
+    {
+      "eu": "ezin dut",
+      "es": "no puedo",
+      "nota": "Fíjate: no lleva «ez» delante, ya va dentro.",
+      "categoria": "verbo",
+      "subnivel": "8.4"
+    },
+    {
+      "eu": "behar dut",
+      "es": "tengo que, necesito",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.4"
+    },
+    {
+      "eu": "nahi dut",
+      "es": "quiero",
+      "nota": "Ya la tenías; aquí se ve en familia.",
+      "categoria": "verbo",
+      "subnivel": "8.4"
     }
   ],
   "ejercicios": [
@@ -1345,6 +1411,154 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u8-g13",
+      "subnivel": "8.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Quiero ir» se dice…",
+          "opciones": [
+            "Joan nahi dut",
+            "Nahi joan dut",
+            "Joan dut nahi",
+            "Nahi dut joan"
+          ],
+          "correcta": 0,
+          "explicacion": "Verbo + nahi + auxiliar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Tengo que trabajar» se dice…",
+          "opciones": [
+            "Lan egin behar dut",
+            "Behar lan egin dut",
+            "Lan behar egin dut",
+            "Lan egin dut behar"
+          ],
+          "correcta": 0,
+          "explicacion": "Mismo orden que con «nahi»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«No puedo» se dice…",
+          "opciones": [
+            "ez ahal dut",
+            "ezin dut",
+            "ez ezin dut",
+            "ahal ez dut"
+          ],
+          "correcta": 1,
+          "explicacion": "«Ezin» ya lleva la negación dentro."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué tiene de raro «ezin»?",
+          "opciones": [
+            "Va al final",
+            "Ya lleva la negación dentro",
+            "No lleva auxiliar",
+            "Solo vale en pasado"
+          ],
+          "correcta": 1,
+          "explicacion": "Por eso no se le pone «ez» delante."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Behar dut» significa…",
+          "opciones": [
+            "puedo",
+            "quiero",
+            "tengo que",
+            "voy a"
+          ],
+          "correcta": 2,
+          "explicacion": "Tener que, o necesitar."
+        }
+      ]
+    },
+    {
+      "id": "u8-g14",
+      "subnivel": "8.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "nahi dut",
+              "es": "quiero"
+            },
+            {
+              "eu": "behar dut",
+              "es": "tengo que"
+            },
+            {
+              "eu": "ahal dut",
+              "es": "puedo"
+            },
+            {
+              "eu": "ezin dut",
+              "es": "no puedo"
+            }
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "No puedo ir.",
+          "eu": "Ezin dut joan.",
+          "palabras": [
+            "Ezin",
+            "dut",
+            "joan."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Tengo que trabajar.",
+          "eu": "Lan egin behar dut.",
+          "palabras": [
+            "Lan",
+            "egin",
+            "behar",
+            "dut."
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etorri ahal zara?» significa…",
+          "opciones": [
+            "¿Quieres venir?",
+            "¿Puedes venir?",
+            "¿Vas a venir?",
+            "¿Has venido?"
+          ],
+          "correcta": 1,
+          "explicacion": "Ahal: tener la posibilidad."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde va el verbo principal en estas construcciones?",
+          "opciones": [
+            "Al final",
+            "Delante de nahi/behar/ahal",
+            "Detrás del auxiliar",
+            "Da igual"
+          ],
+          "correcta": 1,
+          "explicacion": "Joan nahi dut: primero el verbo."
+        }
+      ]
     }
   ]
 }

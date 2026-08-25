@@ -216,6 +216,93 @@
         }
       ],
       "subnivel": "7.5"
+    },
+    {
+      "subnivel": "7.3",
+      "titulo": "Un día entero, de la cama a la cama",
+      "cuerpo": "Con el mecanismo que acabas de aprender puedes contar tu día. Estos son los verbos que hacen falta, en el orden en que pasan:\n\n<b>esnatu</b> — despertarse\n<b>jaiki</b> — levantarse (salir de la cama)\n<b>dutxatu</b> — ducharse\n<b>jantzi</b> — vestirse\n<b>gosaldu</b> — desayunar\n<b>bazkaldu</b> — comer al mediodía\n<b>afaldu</b> — cenar\n<b>lo egin</b> — dormir\n\nCasi todos son de los que no llevan objeto, así que el auxiliar es <i>izan</i>, no <i>ukan</i>: <b>jaikitzen naiz</b>, no «jaikitzen dut».",
+      "ejemplos": [
+        {
+          "eu": "Goizean jaikitzen naiz.",
+          "es": "Por la mañana me levanto."
+        },
+        {
+          "eu": "Etxean afaltzen dut.",
+          "es": "Ceno en casa."
+        }
+      ]
+    },
+    {
+      "subnivel": "7.3",
+      "titulo": "Las tres comidas tienen su verbo propio",
+      "cuerpo": "Aquí el euskera es más económico que el castellano. Donde nosotros decimos «tomar el desayuno» o «hacer la cena», el euskera tiene un verbo para cada comida, sacado del nombre:\n\n<b>gosaria</b> (el desayuno) → <b>gosaldu</b>, desayunar\n<b>bazkaria</b> (la comida) → <b>bazkaldu</b>, comer\n<b>afaria</b> (la cena) → <b>afaldu</b>, cenar\n\nLos tres nombres ya los tienes de antes. Los verbos son gratis.",
+      "ejemplos": [
+        {
+          "eu": "gosaldu",
+          "es": "desayunar"
+        },
+        {
+          "eu": "bazkaldu",
+          "es": "comer"
+        },
+        {
+          "eu": "afaldu",
+          "es": "cenar"
+        }
+      ]
+    },
+    {
+      "subnivel": "7.3",
+      "titulo": "«Lo egin»: dormir es «hacer sueño»",
+      "cuerpo": "Algunas acciones no tienen un verbo propio, sino que se construyen con <b>egin</b> (hacer) más un nombre. Ya viste <i>lan egin</i> (trabajar) y <i>hitz egin</i> (hablar). Pues:\n\n<b>lo</b> (el sueño) + <b>egin</b> → <b>lo egin</b>, dormir\n\nY como lleva a <i>egin</i> dentro, el auxiliar sí es <i>ukan</i>: <b>lo egiten dut</b>.\n\nEs el mismo patrón de siempre, solo que ahora lo reconoces.",
+      "ejemplos": [
+        {
+          "eu": "lo egin",
+          "es": "dormir"
+        },
+        {
+          "eu": "Ondo lo egiten dut.",
+          "es": "Duermo bien."
+        }
+      ]
+    },
+    {
+      "subnivel": "7.4",
+      "titulo": "«Como» frente a «estoy comiendo»",
+      "cuerpo": "<b>Jaten dut</b> es lo que haces normalmente. Pero para lo que estás haciendo <i>ahora mismo</i>, el euskera tiene otra construcción:\n\n<b>jaten ari naiz</b> — estoy comiendo\n<b>ikasten ari naiz</b> — estoy estudiando\n\nLa receta es la misma de siempre —el verbo en <b>-t(z)en</b>— pero en vez de <i>dut</i> se pone <b>ari</b> más el verbo <i>izan</i>:\n\n<b>ari naiz</b> — yo estoy\n<b>ari zara</b> — tú estás\n<b>ari da</b> — él o ella está\n\nFíjate en un detalle que sorprende: aunque comas algo, aquí el auxiliar es <i>izan</i> (naiz), nunca <i>dut</i>.",
+      "ejemplos": [
+        {
+          "eu": "Jaten ari naiz.",
+          "es": "Estoy comiendo."
+        },
+        {
+          "eu": "Ikasten ari zara.",
+          "es": "Estás estudiando."
+        },
+        {
+          "eu": "Euskara ikasten ari naiz.",
+          "es": "Estoy aprendiendo euskera."
+        }
+      ]
+    },
+    {
+      "subnivel": "7.4",
+      "titulo": "Cuándo usar una y cuándo la otra",
+      "cuerpo": "La diferencia es la misma que en castellano, así que te va a salir sola:\n\n<b>Kafea edaten dut.</b> — Tomo café. (todos los días, es lo que hago)\n<b>Kafea edaten ari naiz.</b> — Estoy tomando café. (ahora, en este momento)\n\nSi alguien te pregunta <i>zer egiten ari zara?</i> —«¿qué estás haciendo?»— te está preguntando por ahora mismo, no por tu vida.",
+      "ejemplos": [
+        {
+          "eu": "Kafea edaten dut.",
+          "es": "Tomo café."
+        },
+        {
+          "eu": "Kafea edaten ari naiz.",
+          "es": "Estoy tomando café."
+        },
+        {
+          "eu": "Zer egiten ari zara?",
+          "es": "¿Qué estás haciendo?"
+        }
+      ]
     }
   ],
   "vocabulario": [
@@ -648,6 +735,97 @@
       "nota": null,
       "categoria": "sustantivo",
       "subnivel": "7.5"
+    },
+    {
+      "eu": "esnatu",
+      "es": "despertarse",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "jaiki",
+      "es": "levantarse",
+      "nota": "Salir de la cama.",
+      "categoria": "verbo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "dutxatu",
+      "es": "ducharse",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "jantzi",
+      "es": "vestirse",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "gosaldu",
+      "es": "desayunar",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "bazkaldu",
+      "es": "comer (al mediodía)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "afaldu",
+      "es": "cenar",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "garbitu",
+      "es": "limpiar",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "lo egin",
+      "es": "dormir",
+      "nota": "Literalmente «hacer sueño».",
+      "categoria": "verbo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "etxeko lanak",
+      "es": "las tareas de casa",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "7.3"
+    },
+    {
+      "eu": "ari naiz",
+      "es": "estoy (haciendo algo)",
+      "nota": "Para lo que pasa ahora mismo.",
+      "categoria": "verbo",
+      "subnivel": "7.4"
+    },
+    {
+      "eu": "ari zara",
+      "es": "estás (haciendo algo)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "7.4"
+    },
+    {
+      "eu": "ari da",
+      "es": "está (haciendo algo)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "7.4"
     }
   ],
   "ejercicios": [
@@ -1963,6 +2141,321 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u7-g18",
+      "subnivel": "7.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la rutina",
+          "pares": [
+            {
+              "eu": "esnatu",
+              "es": "despertarse"
+            },
+            {
+              "eu": "jaiki",
+              "es": "levantarse"
+            },
+            {
+              "eu": "dutxatu",
+              "es": "ducharse"
+            },
+            {
+              "eu": "jantzi",
+              "es": "vestirse"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las comidas",
+          "pares": [
+            {
+              "eu": "gosaldu",
+              "es": "desayunar"
+            },
+            {
+              "eu": "bazkaldu",
+              "es": "comer"
+            },
+            {
+              "eu": "afaldu",
+              "es": "cenar"
+            },
+            {
+              "eu": "lo egin",
+              "es": "dormir"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la casa",
+          "pares": [
+            {
+              "eu": "garbitu",
+              "es": "limpiar"
+            },
+            {
+              "eu": "etxeko lanak",
+              "es": "las tareas de casa"
+            },
+            {
+              "eu": "jaiki",
+              "es": "levantarse"
+            },
+            {
+              "eu": "afaldu",
+              "es": "cenar"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «jaiki»?",
+          "opciones": [
+            "dormir",
+            "levantarse",
+            "ducharse",
+            "limpiar"
+          ],
+          "correcta": 1,
+          "explicacion": "Salir de la cama."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gosaldu»?",
+          "opciones": [
+            "cenar",
+            "comer",
+            "desayunar",
+            "cocinar"
+          ],
+          "correcta": 2,
+          "explicacion": "De «gosaria», el desayuno."
+        }
+      ]
+    },
+    {
+      "id": "u7-g19",
+      "subnivel": "7.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Dormir» se dice…",
+          "opciones": [
+            "lo egin",
+            "lo izan",
+            "lo hartu",
+            "lo joan"
+          ],
+          "correcta": 0,
+          "explicacion": "Lo (sueño) + egin (hacer), como «lan egin»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿De qué palabra sale «afaldu»?",
+          "opciones": [
+            "afaria (la cena)",
+            "arratsaldea (la tarde)",
+            "afizioa",
+            "aparta"
+          ],
+          "correcta": 0,
+          "explicacion": "Cada comida da su verbo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Me levanto» se dice…",
+          "opciones": [
+            "jaikitzen dut",
+            "jaikitzen naiz",
+            "jaiki nago",
+            "jaikitzen da"
+          ],
+          "correcta": 1,
+          "explicacion": "No lleva objeto, así que el auxiliar es «izan»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «etxeko lanak»?",
+          "opciones": [
+            "los deberes del cole",
+            "las tareas de casa",
+            "el trabajo",
+            "la familia"
+          ],
+          "correcta": 1,
+          "explicacion": "Literalmente «los trabajos de casa». Ojo: también valen los deberes escolares."
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Por la mañana me levanto.",
+          "eu": "Goizean jaikitzen naiz.",
+          "palabras": [
+            "Goizean",
+            "jaikitzen",
+            "naiz."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u7-g20",
+      "subnivel": "7.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Estoy comiendo» se dice…",
+          "opciones": [
+            "jaten dut",
+            "jaten ari naiz",
+            "jaten naiz",
+            "jaten ari dut"
+          ],
+          "correcta": 1,
+          "explicacion": "El verbo en -t(z)en, más «ari» y el verbo izan."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Jaten dut» significa…",
+          "opciones": [
+            "estoy comiendo",
+            "como (normalmente)",
+            "comí",
+            "comeré"
+          ],
+          "correcta": 1,
+          "explicacion": "Es lo habitual. Para ahora mismo, «jaten ari naiz»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Con «ari», el auxiliar es siempre…",
+          "opciones": [
+            "dut",
+            "izan (naiz, zara, da)",
+            "dago",
+            "daukat"
+          ],
+          "correcta": 1,
+          "explicacion": "Aunque haya objeto, siempre «naiz»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ikasten ari zara» significa…",
+          "opciones": [
+            "estudias",
+            "estás estudiando",
+            "estudiaste",
+            "vas a estudiar"
+          ],
+          "correcta": 1,
+          "explicacion": "Ahora mismo, en este momento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zer egiten ari zara?» te pregunta por…",
+          "opciones": [
+            "tu trabajo",
+            "lo que estás haciendo ahora",
+            "tus planes",
+            "tu rutina"
+          ],
+          "correcta": 1,
+          "explicacion": "Por este momento, no por tu vida en general."
+        }
+      ]
+    },
+    {
+      "id": "u7-g21",
+      "subnivel": "7.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el presente continuo",
+          "pares": [
+            {
+              "eu": "ari naiz",
+              "es": "estoy"
+            },
+            {
+              "eu": "ari zara",
+              "es": "estás"
+            },
+            {
+              "eu": "ari da",
+              "es": "está"
+            },
+            {
+              "eu": "jaten ari naiz",
+              "es": "estoy comiendo"
+            }
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Estoy comiendo.",
+          "eu": "Jaten ari naiz.",
+          "palabras": [
+            "Jaten",
+            "ari",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Estoy aprendiendo euskera.",
+          "eu": "Euskara ikasten ari naiz.",
+          "palabras": [
+            "Euskara",
+            "ikasten",
+            "ari",
+            "naiz."
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Kafea edaten ari naiz» quiere decir…",
+          "opciones": [
+            "Tomo café todos los días",
+            "Estoy tomando café ahora",
+            "Tomé café",
+            "Quiero un café"
+          ],
+          "correcta": 1,
+          "explicacion": "Ahora mismo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál usarías para «trabajo en Bilbao» (tu empleo)?",
+          "opciones": [
+            "Bilbon lan egiten dut",
+            "Bilbon lan egiten ari naiz",
+            "Bilbon lan ari naiz",
+            "Bilbon lan naiz"
+          ],
+          "correcta": 0,
+          "explicacion": "Es lo habitual, no lo de ahora mismo."
+        }
+      ]
     }
   ]
 }
