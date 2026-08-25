@@ -1756,7 +1756,7 @@
           "opciones": [
             "la pierna",
             "la pelota",
-            "la Navidad",
+            "la bebida",
             "el deporte"
           ],
           "correcta": 0,
@@ -1768,8 +1768,8 @@
           "pregunta": "«el calor» se dice…",
           "opciones": [
             "beroa",
-            "Aste Santua",
-            "Olentzero",
+            "burua",
+            "eskua",
             "eman"
           ],
           "correcta": 0,
@@ -1821,12 +1821,12 @@
           "instruccion": "Empareja el cuerpo",
           "pares": [
             {
-              "eu": "Olentzero",
-              "es": "el carbonero de la Navidad"
+              "eu": "dirua",
+              "es": "el dinero"
             },
             {
-              "eu": "jaieguna",
-              "es": "el día festivo"
+              "eu": "gustatu",
+              "es": "gustar"
             },
             {
               "eu": "hodeia",
@@ -1856,7 +1856,7 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "«el Año Nuevo» se dice…",
           "opciones": [
-            "Urte Berri",
+            "besoa",
             "sudurra",
             "haizea",
             "elurra"
@@ -1918,8 +1918,8 @@
               "es": "el corazón"
             },
             {
-              "eu": "Inauteriak",
-              "es": "los carnavales"
+              "eu": "galdetu",
+              "es": "preguntar"
             },
             {
               "eu": "udazkena",
@@ -1935,7 +1935,7 @@
             "el corazón",
             "el libro",
             "gustar",
-            "la Navidad"
+            "a vosotros"
           ],
           "correcta": 0,
           "explicacion": "bihotza = el corazón."
@@ -2202,7 +2202,7 @@
             "el cine",
             "me gusta",
             "la mano",
-            "los carnavales"
+            "todo"
           ],
           "correcta": 0,
           "explicacion": "zinema = el cine."
@@ -2302,7 +2302,7 @@
           "pregunta": "«el cine» se dice…",
           "opciones": [
             "zinema",
-            "Olentzero",
+            "gutxi",
             "hari",
             "gauza"
           ],
@@ -2378,9 +2378,9 @@
           "pregunta": "¿Qué significa «guztia»?",
           "opciones": [
             "todo",
-            "Olentzero",
+            "a él, a ella",
             "a ti",
-            "el día festivo"
+            "a mí"
           ],
           "correcta": 0,
           "explicacion": "guztia = todo."
@@ -2403,7 +2403,7 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "¿Qué significa «jaieguna»?",
           "opciones": [
-            "el día festivo",
+            "el fútbol",
             "el pie",
             "dar",
             "la cabeza"
@@ -2481,7 +2481,7 @@
           "opciones": [
             "asko",
             "elurra",
-            "Urte Berri",
+            "gustatu",
             "liburua"
           ],
           "correcta": 0,
@@ -2537,12 +2537,12 @@
               "es": "el brazo"
             },
             {
-              "eu": "Olentzero",
-              "es": "el carbonero de la Navidad"
+              "eu": "zuei",
+              "es": "a vosotros"
             },
             {
-              "eu": "jaieguna",
-              "es": "el día festivo"
+              "eu": "gustatzen zait",
+              "es": "me gusta"
             },
             {
               "eu": "batere ez",
@@ -2735,7 +2735,7 @@
           "opciones": [
             "a mí",
             "el viento",
-            "el día festivo",
+            "las orejas",
             "el pie"
           ],
           "correcta": 0,

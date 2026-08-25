@@ -2275,13 +2275,13 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "¿Quién es Olentzero?",
           "opciones": [
-            "un santo",
-            "el carbonero que trae los regalos",
-            "un monte",
-            "un baile"
+            "El árbol de Navidad",
+            "El carbonero que baja del monte con los regalos",
+            "El hombre de las montañas de las leyendas",
+            "El primer día del año"
           ],
           "correcta": 1,
-          "explicacion": "El carbonero que baja del monte en Nochebuena."
+          "explicacion": "Ojo con el tercero: sí baja del monte, pero «el hombre de las montañas» es otra figura del folclore vasco (Basajaun)."
         },
         {
           "tipo": "opcion",
@@ -2946,11 +2946,11 @@
           "opciones": [
             "Papá Noel",
             "Olentzero",
-            "los Reyes",
-            "nadie"
+            "Los Reyes Magos",
+            "Basajaun"
           ],
           "correcta": 1,
-          "explicacion": "Un carbonero que baja del monte en Nochebuena."
+          "explicacion": "Un carbonero del monte. Basajaun es otro personaje, el señor del bosque."
         },
         {
           "tipo": "opcion",
@@ -3033,13 +3033,13 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "«Olentzero» en el diccionario aparece como…",
           "opciones": [
-            "un personaje",
-            "el día de Nochebuena",
-            "una fiesta de verano",
-            "un monte"
+            "El carbonero",
+            "El día de Nochebuena",
+            "El árbol de Navidad",
+            "La cena de Navidad"
           ],
           "correcta": 1,
-          "explicacion": "El nombre designaba primero el día; en el habla es el personaje."
+          "explicacion": "El nombre designaba primero el día; en el habla de hoy es el personaje."
         },
         {
           "tipo": "opcion",
