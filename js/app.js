@@ -1650,7 +1650,12 @@
       tipo: 'teclear',
       instruccion: 'Vocabulario · escucha y tradúcelo',
       pregunta: '',
-      respuestas: [entrada.es],
+      // `esAlt` recoge las otras formas castellanas que valen y que no
+      // se pueden deducir del texto: «muchas gracias» debe aceptar
+      // «gracias» (detectado por Ric). No se puede quitar el
+      // intensificador por regla general, porque «muy bien» → «bien»
+      // chocaría con `ondo`, que es otra palabra del curso.
+      respuestas: [entrada.es].concat(entrada.esAlt || []),
       solucion: entrada.es,
       explicacion: entrada.nota || ''
     }, entrada);
@@ -2345,10 +2350,17 @@
     // tiene más de una — comparar "tu propio" contra lo escrito letra a
     // letra mezclaba coincidencias sueltas sin sentido (ver comparacion()).
     var porPalabras = normalizar(ej.solucion).indexOf(' ') !== -1;
+    // Traduciendo al castellano la etiqueta «se escribe» no encaja: no
+    // has fallado la grafía, has fallado el significado. Y la nota de la
+    // palabra, que habla de otras formas en euskera, aquí despista más
+    // que ayuda (las dos cosas, detectadas por Ric).
+    var traduciendo = ej.__objetivo === 'es';
+    var nota = (ej.explicacion && !traduciendo)
+      ? '<p class="dif__nota">' + esc(ej.explicacion) + '</p>' : '';
     return {
       ok: false, leve: false,
-      cuerpo: comparacion(dado, normalizar(ej.solucion), porPalabras) +
-              (ej.explicacion ? '<p class="dif__nota">' + esc(ej.explicacion) + '</p>' : '')
+      cuerpo: comparacion(dado, normalizar(ej.solucion), porPalabras,
+                          traduciendo ? 'dijiste' : undefined) + nota
     };
   }
 
@@ -2433,7 +2445,8 @@
     var al = alinear(a, b);
     return '<span class="dif__par"><span class="dif__lbl">' + (verbo || 'escribiste') + '</span>' +
              '<span class="dif__mal">' + (dado ? pintarTrozos(al.izq, junta) : '—') + '</span></span>' +
-           '<span class="dif__par"><span class="dif__lbl">se escribe</span>' +
+           '<span class="dif__par"><span class="dif__lbl">' +
+             (verbo === 'dijiste' ? 'significa' : 'se escribe') + '</span>' +
              '<span class="dif__ok">' + pintarTrozos(al.der, junta) + '</span></span>';
   }
 

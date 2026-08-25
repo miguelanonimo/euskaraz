@@ -122,7 +122,10 @@
       "es": "muchas gracias",
       "nota": "También vale «mila esker» (mil gracias).",
       "audio": "unidades/u1/eskerrik-asko.mp3",
-      "categoria": "otros"
+      "categoria": "otros",
+      "esAlt": [
+        "gracias"
+      ]
     },
     {
       "eu": "ez horregatik",

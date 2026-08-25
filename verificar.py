@@ -12,7 +12,8 @@ TIPOS = {"opcion", "pares", "orden", "traducir"}
 # Claves admitidas en una entrada de vocabulario (o en una variante).
 # {eu,es,nota} son las del original y siguen siendo obligatorias en la
 # entrada principal; el resto las añadió Miguel y son opcionales.
-VOC_CLAVES = {"eu", "es", "nota", "audio", "categoria", "registro", "variantes"}
+VOC_CLAVES = {"eu", "es", "nota", "audio", "categoria", "registro", "variantes",
+              "esAlt", "subnivel"}
 
 # Las pistas y explicaciones a veces cuentan letras o palabras, o dicen por
 # dónde empieza la solución. Es fácil escribirlas mal y no enterarse nunca,
