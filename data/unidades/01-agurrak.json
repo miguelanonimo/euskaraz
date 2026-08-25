@@ -939,13 +939,13 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "¿Qué tal? ¿Y tú?",
-          "eu": "Zer moduz? Eta zu?",
+          "es": "Muy bien, gracias.",
+          "eu": "Oso ondo, eskerrik asko.",
           "palabras": [
-            "Zer",
-            "moduz?",
-            "Eta",
-            "zu?"
+            "Oso",
+            "ondo,",
+            "eskerrik",
+            "asko."
           ]
         },
         {

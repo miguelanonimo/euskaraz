@@ -460,14 +460,6 @@
       "subnivel": "7.5"
     },
     {
-      "eu": "euskara",
-      "es": "el euskera",
-      "nota": "Sin artículo cuando es objeto genérico: «euskara ikasten dut».",
-      "audio": "unidades/u8/euskara.mp3",
-      "categoria": "sustantivo",
-      "subnivel": "7.1"
-    },
-    {
       "eu": "ezer ez",
       "es": "nada",
       "nota": null,

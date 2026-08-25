@@ -22,6 +22,39 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
   sin usar y se pueden borrar del bucket. Hasta que se generen, esos dos
   ejemplos se quedan sin audio.
 
+### Correcciones en curso (pendientes de commitear en tanda)
+
+Ric está probando la app continuamente —la publicada y las locales— y va
+mandando lo que encuentra. Esto se va acumulando aquí y se commitea de
+golpe cuando toque, para no llenar el historial de commits de una línea.
+
+**Audios · tercera ronda (25/08/2026 en adelante)**
+
+| Palabra | Qué se oye | Qué debería oírse | Historial |
+|---|---|---|---|
+| `mahaia` | "maiaia" — sigue metiendo un sonido donde la H debería ser muda | "maaia": H muda y las dos A seguidas | **Tercer intento fallido.** Anotada el 20/08, regenerada por Miguel, y el 21/08 sonaba "mayayaia". Ahora "maiaia": cambia el ruido pero no se va. |
+
+**Nota sobre `mahaia`:** tres regeneraciones y tres resultados malos
+distintos apuntan a que **regenerar no basta para esta palabra**. Es
+candidata clara para la opción 2 de la investigación de TTS: trucar el
+texto que se manda a sintetizar (probar `maaia`, `ma-aia` o similar) en
+vez de seguir mandando `mahaia` y esperar suerte.
+
+**Contenido · ejercicios que suenan forzados**
+
+- **25/08 · u1-g10 v1: «Zer moduz? Eta zu?» no la dice nadie.**
+  Detectado por Ric probando la app. El ejercicio de ordenar encadenaba
+  «¿Qué tal?» con «¿Y tú?», pero `eta zu?` es lo que devuelves **después
+  de contestar**, no pegado a tu propia pregunta. El propio curso lo
+  tiene bien en otros sitios: `u1-g03 v4` pregunta literalmente «¿cómo
+  devuelves la pregunta después de contestar?», y `u1-g05 v4` construye
+  la secuencia correcta («Ondo, eskerrik asko. Eta zu?»). Solo esta
+  variante se saltaba ese orden.
+  **Sustituida** por «Oso ondo, eskerrik asko.» (muy bien, gracias) —
+  elegida por Ric entre tres opciones. Aplicada en las dos versiones del
+  curso (`data/unidades/` y `data/unidades-v2/`). No choca con
+  `u1-g05 v4`, que lleva «ondo» a secas y termina con la coletilla.
+
 ### Segunda ronda: audios regenerados por Miguel que siguen fallando
 
 Miguel regeneró las 45 palabras del inventario original (commit

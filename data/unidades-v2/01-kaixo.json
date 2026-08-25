@@ -3,7 +3,7 @@
   "numero": 1,
   "titulo": "Kaixo!",
   "subtitulo": "Saludos y primeros sonidos",
-  "objetivo": "Saludar, despedirte y dar las gracias, y hacerte al oído con los sonidos del euskera.",
+  "objetivo": "Saludar, despedirte y dar las gracias, y entender dónde se habla euskera y por qué hay más de una forma de hablarlo.",
   "color": "rojo",
   "subniveles": [
     {
@@ -20,6 +20,11 @@
       "id": "1.3",
       "titulo": "Pronunciación y dialectos",
       "resumen": "Los sonidos que hay que tener claros desde el primer día."
+    },
+    {
+      "id": "1.4",
+      "titulo": "Dónde se habla",
+      "resumen": "Euskal Herria, los dialectos y por qué existe el batua."
     }
   ],
   "gramatica": [
@@ -105,6 +110,66 @@
       "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
       "ejemplos": [],
       "subnivel": "1.3"
+    },
+    {
+      "subnivel": "1.4",
+      "titulo": "Dónde se habla el euskera",
+      "cuerpo": "El euskera no es de un país: es de un territorio repartido entre dos estados, y que en euskera se llama <b>Euskal Herria</b>.\n\nSon siete zonas. Cuatro al sur, en España:\n\n<b>Bizkaia</b> — la de Bilbo (Bilbao)\n<b>Gipuzkoa</b> — la de Donostia (San Sebastián)\n<b>Araba</b> — la de Gasteiz (Vitoria)\n<b>Nafarroa</b> — la de Iruñea (Pamplona)\n\nY tres al norte, en Francia, más pequeñas y con menos hablantes:\n\n<b>Lapurdi</b> · <b>Nafarroa Beherea</b> · <b>Zuberoa</b>\n\nUn detalle de escritura: <i>Euskal Herria</i> va siempre en dos palabras y las dos con mayúscula. Así lo fijó la Academia de la Lengua Vasca.",
+      "ejemplos": [
+        {
+          "eu": "Euskal Herria",
+          "es": "el País Vasco, las siete zonas"
+        },
+        {
+          "eu": "Bizkaia",
+          "es": "Bizkaia, la de Bilbao"
+        }
+      ]
+    },
+    {
+      "subnivel": "1.4",
+      "titulo": "Cada zona tiene su forma de hablar",
+      "cuerpo": "Con el territorio así de repartido, y montañas por medio, cada zona fue haciéndose su manera de hablar. A cada una se le llama <b>euskalki</b>: dialecto.\n\nY se nombran a partir de su zona:\n\nBizkaia → <b>bizkaiera</b>\nGipuzkoa → <b>gipuzkera</b>\nLapurdi → <b>lapurtera</b>\nZuberoa → <b>zuberera</b>\n\nNo son lenguas distintas: es la misma lengua con sus acentos y sus palabras propias, como el castellano de Valladolid y el de Cádiz. Alguien de Bilbao y alguien de Zuberoa se entienden, aunque al principio les cueste.",
+      "ejemplos": [
+        {
+          "eu": "euskalkia",
+          "es": "el dialecto"
+        },
+        {
+          "eu": "bizkaiera",
+          "es": "el dialecto de Bizkaia"
+        }
+      ]
+    },
+    {
+      "subnivel": "1.4",
+      "titulo": "Y por eso existe el batua",
+      "cuerpo": "Con tantas variantes, hacer un libro de texto o dar clase era un problema: ¿en cuál de todas?\n\nEn 1968 la Academia de la Lengua Vasca —<i>Euskaltzaindia</i>— reunió las formas comunes y fijó un estándar: el <b>euskara batua</b>. Literalmente, «el euskera unido».\n\nEl batua es lo que se enseña en la escuela, lo que sale en los periódicos y en la tele, y lo que te sirve para entenderte con cualquiera venga de donde venga.\n\nNo vino a sustituir a los dialectos: convive con ellos. La gente habla su euskalki en casa y batua en un examen, y mezcla las dos cosas sin pensarlo.\n\n<b>Lo que aprendes en esta app es batua.</b>",
+      "ejemplos": [
+        {
+          "eu": "batua",
+          "es": "el euskera unificado"
+        },
+        {
+          "eu": "euskara batua",
+          "es": "euskera batua, el estándar"
+        }
+      ]
+    },
+    {
+      "subnivel": "1.4",
+      "titulo": "El botón de arriba, explicado",
+      "cuerpo": "Habrás visto en la barra de arriba un botón que pone <b>Bizkaiera / Gernikera</b>. Ahora ya tiene sentido.\n\nEse botón no cambia el idioma que aprendes —siempre es batua—, sino <b>qué sabor local lo acompaña</b>:\n\n<b>Bizkaiera</b> — las formas que se oyen en Bilbao y alrededores. Es la opción por defecto.\n<b>Gernikera</b> — las de la zona de Gernika, en la costa de Bizkaia, algo más cerradas.\n\nElijas la que elijas, la gramática y el vocabulario base son los mismos. Lo que cambia son las notas de «cómo suena esto por aquí» y algunas palabras del día a día.\n\nSi estás empezando y no tienes preferencia, déjalo en bizkaiera.",
+      "ejemplos": [
+        {
+          "eu": "bizkaiera",
+          "es": "el habla de Bizkaia"
+        },
+        {
+          "eu": "batua",
+          "es": "el estándar, lo que enseña la app"
+        }
+      ]
     }
   ],
   "vocabulario": [
@@ -295,6 +360,62 @@
       "audio": "unidades/u1/oso.mp3",
       "categoria": "otros",
       "subnivel": "1.2"
+    },
+    {
+      "eu": "euskara",
+      "es": "el euskera",
+      "nota": "La lengua. Y «euskaraz» es «en euskera».",
+      "categoria": "sustantivo",
+      "subnivel": "1.4"
+    },
+    {
+      "eu": "Euskal Herria",
+      "es": "Euskal Herria, el País Vasco",
+      "nota": "Siempre en dos palabras y las dos con mayúscula.",
+      "categoria": "sustantivo",
+      "subnivel": "1.4"
+    },
+    {
+      "eu": "euskalkia",
+      "es": "el dialecto",
+      "nota": "Cada forma local de hablar euskera.",
+      "categoria": "sustantivo",
+      "subnivel": "1.4"
+    },
+    {
+      "eu": "batua",
+      "es": "el batua",
+      "nota": "El euskera unificado, el estándar. Es lo que enseña esta app.",
+      "categoria": "sustantivo",
+      "subnivel": "1.4"
+    },
+    {
+      "eu": "Bizkaia",
+      "es": "Bizkaia",
+      "nota": "Su capital es Bilbo (Bilbao).",
+      "categoria": "sustantivo",
+      "subnivel": "1.4"
+    },
+    {
+      "eu": "Gipuzkoa",
+      "es": "Gipuzkoa",
+      "nota": "Su capital es Donostia (San Sebastián).",
+      "categoria": "sustantivo",
+      "subnivel": "1.4"
+    },
+    {
+      "eu": "Araba",
+      "es": "Álava",
+      "nota": "Su capital es Gasteiz (Vitoria).",
+      "categoria": "sustantivo",
+      "subnivel": "1.4"
+    },
+    {
+      "eu": "Nafarroa",
+      "es": "Navarra",
+      "nota": "Su capital es Iruñea (Pamplona).",
+      "categoria": "sustantivo",
+      "subnivel": "1.4"
     }
   ],
   "ejercicios": [
@@ -991,13 +1112,13 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "¿Qué tal? ¿Y tú?",
-          "eu": "Zer moduz? Eta zu?",
+          "es": "Muy bien, gracias.",
+          "eu": "Oso ondo, eskerrik asko.",
           "palabras": [
-            "Zer",
-            "moduz?",
-            "Eta",
-            "zu?"
+            "Oso",
+            "ondo,",
+            "eskerrik",
+            "asko."
           ]
         },
         {
@@ -1169,6 +1290,175 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u1-g13",
+      "subnivel": "1.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «Euskal Herria»?",
+          "opciones": [
+            "Una ciudad",
+            "El territorio donde se habla euskera",
+            "Un dialecto",
+            "La academia de la lengua"
+          ],
+          "correcta": 1,
+          "explicacion": "Siete zonas repartidas entre España y Francia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuántas zonas forman Euskal Herria?",
+          "opciones": [
+            "Tres",
+            "Cuatro",
+            "Siete",
+            "Diez"
+          ],
+          "correcta": 2,
+          "explicacion": "Cuatro al sur y tres al norte."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En qué zona está Bilbao?",
+          "opciones": [
+            "Bizkaia",
+            "Gipuzkoa",
+            "Araba",
+            "Nafarroa"
+          ],
+          "correcta": 0,
+          "explicacion": "Bilbo es la capital de Bizkaia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «euskalki»?",
+          "opciones": [
+            "Lengua",
+            "Dialecto",
+            "Pueblo",
+            "Escuela"
+          ],
+          "correcta": 1,
+          "explicacion": "Cada forma local de hablar euskera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es el «batua»?",
+          "opciones": [
+            "Un dialecto más",
+            "El euskera unificado, el estándar",
+            "El euskera antiguo",
+            "El euskera de Francia"
+          ],
+          "correcta": 1,
+          "explicacion": "Fijado en 1968 para que todos se entendieran por escrito."
+        }
+      ]
+    },
+    {
+      "id": "u1-g14",
+      "subnivel": "1.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada zona con su capital",
+          "pares": [
+            {
+              "eu": "Bizkaia",
+              "es": "Bilbao"
+            },
+            {
+              "eu": "Gipuzkoa",
+              "es": "San Sebastián"
+            },
+            {
+              "eu": "Araba",
+              "es": "Vitoria"
+            },
+            {
+              "eu": "Nafarroa",
+              "es": "Pamplona"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada zona con su dialecto",
+          "pares": [
+            {
+              "eu": "Bizkaia",
+              "es": "bizkaiera"
+            },
+            {
+              "eu": "Gipuzkoa",
+              "es": "gipuzkera"
+            },
+            {
+              "eu": "Lapurdi",
+              "es": "lapurtera"
+            },
+            {
+              "eu": "Zuberoa",
+              "es": "zuberera"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las palabras de la lengua",
+          "pares": [
+            {
+              "eu": "euskara",
+              "es": "el euskera"
+            },
+            {
+              "eu": "euskalkia",
+              "es": "el dialecto"
+            },
+            {
+              "eu": "batua",
+              "es": "el estándar"
+            },
+            {
+              "eu": "Euskal Herria",
+              "es": "el País Vasco"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El botón «Bizkaiera / Gernikera» de la barra de arriba…",
+          "opciones": [
+            "Cambia el idioma de la app",
+            "Elige qué sabor local acompaña al batua",
+            "Cambia el nivel",
+            "Activa el audio"
+          ],
+          "correcta": 1,
+          "explicacion": "El batua es el mismo; cambian las notas locales."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué relación hay entre el batua y los dialectos?",
+          "opciones": [
+            "El batua los sustituyó",
+            "Conviven: batua para escribir, el dialecto en casa",
+            "Son lenguas distintas",
+            "Los dialectos ya no se usan"
+          ],
+          "correcta": 1,
+          "explicacion": "La gente mezcla las dos cosas sin pensarlo."
+        }
+      ]
     }
   ]
 }
