@@ -19,6 +19,14 @@
   var CLAVE = 'euskaraz.progreso.v2';
   var CLAVE_VIEJA = 'euskaraz.progreso.v1';
 
+  /* Progreso local, solo para MODO_LOCAL (probar sin cuenta). Se guarda
+     en el navegador para no empezar de cero en cada recarga. La clave
+     lleva el curso dentro porque la reestructuración cambia los ids de
+     unidad y de grupo: mezclarlos daría un progreso sin sentido. */
+  function claveLocal() {
+    return 'euskaraz.local.' + (window.__CURSO_V2__ ? 'v2' : 'v1');
+  }
+
   // ─────────── Supabase ───────────
   // Proyecto compartido con Ippo (mismo org); tabla propia euskaraz_progreso,
   // aislada por RLS (auth.uid() = user_id). Ver docs/brief.md sección 4.
@@ -520,7 +528,13 @@
      en MODO_LOCAL sin sesión: ahí se trabaja con un progreso en memoria
      que no se persiste en ningún sitio. */
   function cargarProgreso() {
-    if (!usuarioId) return Promise.resolve(normalizarProgreso(null));
+    if (!usuarioId) {
+      var guardado = null;
+      if (MODO_LOCAL) {
+        try { guardado = JSON.parse(localStorage.getItem(claveLocal()) || 'null'); } catch (e) {}
+      }
+      return Promise.resolve(normalizarProgreso(guardado));
+    }
     return sb.from('euskaraz_progreso').select('data, updated_at').eq('user_id', usuarioId).maybeSingle()
       .then(function (r) {
         if (r.error) throw r.error;
@@ -536,7 +550,10 @@
      upsert por cada respuesta y agrupamos en una sola escritura 1.5s
      después del último cambio (nota de implementación, brief sección 4). */
   function guardarProgreso() {
-    if (!usuarioId) return;
+    // Sin cuenta no hay nada que sincronizar… salvo en local, donde el
+    // progreso se guarda en el navegador para no empezar de cero en
+    // cada recarga (pedido por Ric mientras prueba la app).
+    if (!usuarioId && !MODO_LOCAL) return;
     if (guardarTimer) clearTimeout(guardarTimer);
     guardarTimer = setTimeout(guardarProgresoAhora, GUARDAR_ESPERA_MS);
   }
@@ -549,7 +566,12 @@
      hay en el servidor y adoptamos eso como bueno. */
   function guardarProgresoAhora() {
     guardarTimer = null;
-    if (!usuarioId) return;
+    if (!usuarioId) {
+      if (MODO_LOCAL) {
+        try { localStorage.setItem(claveLocal(), JSON.stringify(progreso)); } catch (e) {}
+      }
+      return;
+    }
     var ahora = new Date().toISOString();
     var query = sb.from('euskaraz_progreso').update({ data: progreso, updated_at: ahora }).eq('user_id', usuarioId);
     if (progresoActualizadoEn) query = query.eq('updated_at', progresoActualizadoEn);
@@ -2707,7 +2729,10 @@
       progreso = progresoVacio();
       if (guardarTimer) { clearTimeout(guardarTimer); guardarTimer = null; }
       guardarProgresoAhora();
-      try { localStorage.removeItem(CLAVE); localStorage.removeItem(CLAVE_VIEJA); } catch (e) {}
+      try {
+        localStorage.removeItem(CLAVE); localStorage.removeItem(CLAVE_VIEJA);
+        localStorage.removeItem(claveLocal());   // el de probar sin cuenta
+      } catch (e) {}
       pantallaHome();
     }
   });
@@ -2776,6 +2801,7 @@
        decidida, esto desaparece y curso-v2 pasa a ser curso.
        Ver docs/propuesta-10-unidades.md. */
     var V2 = MODO_LOCAL && /[?&]v2\b/.test(location.search);
+    window.__CURSO_V2__ = V2;
     var indicePath = V2 ? 'data/curso-v2.json'
                         : (MODO_DIALECTO === 'gernikes' ? 'data/curso-gernikes.json' : 'data/curso.json');
     return traer(indicePath).then(function (indice) {
