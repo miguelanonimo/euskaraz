@@ -186,7 +186,7 @@
     },
     {
       "titulo": "«En mayo»: el mismo -n de siempre",
-      "cuerpo": "Ya lo tienes de la unidad 6, con los lugares: <b>etxean</b> (en casa), <b>tabernan</b> (en el bar). Con los meses funciona igual, solo que el artículo <i>-a</i> se convierte en <i>-e-</i> al añadir la terminación:\n\n<b>maiatza</b> → <b>maiatzean</b> — en mayo\n<b>abendua</b> → <b>abenduan</b> — en diciembre\n<b>urtarrila</b> → <b>urtarrilean</b> — en enero\n\nNo hace falta que lo memorices ahora mismo: con reconocerlo cuando lo oigas es suficiente en este punto.",
+      "cuerpo": "Ya lo tienes de la unidad 5, con los lugares: <b>etxean</b> (en casa), <b>tabernan</b> (en el bar). Con los meses funciona igual, solo que el artículo <i>-a</i> se convierte en <i>-e-</i> al añadir la terminación:\n\n<b>maiatza</b> → <b>maiatzean</b> — en mayo\n<b>abendua</b> → <b>abenduan</b> — en diciembre\n<b>urtarrila</b> → <b>urtarrilean</b> — en enero\n\nNo hace falta que lo memorices ahora mismo: con reconocerlo cuando lo oigas es suficiente en este punto.",
       "ejemplos": [
         {
           "eu": "Nire urtebetetzea maiatzean da.",
@@ -269,7 +269,7 @@
     },
     {
       "titulo": "El tiempo se «hace», como en castellano",
-      "cuerpo": "Para hablar del tiempo, el euskera usa <b>egin</b> (hacer), que ya tienes de la unidad 8:\n\n<b>Udaberrian euria egiten du.</b> — En primavera llueve.\n<b>Neguan hotz egiten du.</b> — En invierno hace frío.\n\nFíjate en que <i>euria</i> (la lluvia) y <i>hotza</i> (el frío) son sustantivos, no verbos: literalmente es «hace lluvia», «hace frío». Igual que en castellano.\n\nY para preguntar u opinar sobre el tiempo en general se usa <b>eguraldia</b>:\n\n<b>Gaur eguraldi ona dago.</b> — Hoy hace buen tiempo.",
+      "cuerpo": "Para hablar del tiempo, el euskera usa <b>egin</b> (hacer). Todavía no lo hemos visto por dentro —eso es la unidad siguiente—, así que de momento apréndete estas dos enteras, como fórmulas:\n\n<b>Udaberrian euria egiten du.</b> — En primavera llueve.\n<b>Neguan hotz egiten du.</b> — En invierno hace frío.\n\nFíjate en que <i>euria</i> (la lluvia) y <i>hotza</i> (el frío) son sustantivos, no verbos: literalmente es «hace lluvia», «hace frío». Igual que en castellano.\n\nY para preguntar u opinar sobre el tiempo en general se usa <b>eguraldia</b>:\n\n<b>Gaur eguraldi ona dago.</b> — Hoy hace buen tiempo.",
       "ejemplos": [
         {
           "eu": "Udaberrian euria egiten du.",
@@ -726,6 +726,14 @@
       "eu": "jaieguna",
       "es": "el día festivo",
       "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.5"
+    },
+    {
+      "eu": "oporrak",
+      "es": "las vacaciones",
+      "nota": "Siempre en plural, como en castellano «las vacaciones».",
+      "audio": "unidades/u11/oporrak.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.5"
     }

@@ -569,6 +569,69 @@ que era la pista. Movido al texto visible.
 **Sin audio:** `ha`, `honeek`, `horreek`, `hareek` y las dos frases de
 ejemplo. A la lista de audios por generar.
 
+### Revisión general del curso nuevo · bloque 1 (2026-08-26)
+
+Ric pidió una lectura del curso reestructurado «como una persona que entra
+desde cero en una lengua sin lógicas parecidas al español». Primera pasada:
+dos barridos mecánicos antes de leer las 123 fichas.
+
+#### Referencias que apuntaban al mapa viejo — ARREGLADO
+
+Frases dentro de las explicaciones del tipo «como viste en la unidad N», con
+la numeración anterior a la reestructuración. Cinco. Tres eran solo el
+número mal:
+
+- 4.2 decía *«En la unidad 5 viste que el euskera cuenta en base veinte»* —
+  es 4.1, el subnivel anterior de la misma unidad.
+- 4.7 citaba *«un detalle de la unidad 5»* — `ditut` está en 4.4, misma unidad.
+- 6.3 decía *«Ya lo tienes de la unidad 6, con los lugares»* — se citaba a sí
+  misma; el `-n` de lugar es de la unidad 5.
+
+**Las otras dos eran el fallo del 3.3 otra vez**, escrito en prosa: le decían
+al alumno que ya sabe algo que se enseña después.
+
+- 6.4 daba `egin` por sabido *«de la unidad 8»*, pero se enseña en **7.1,
+  después**. Reescrito para presentarlo como fórmula cerrada («todavía no lo
+  hemos visto por dentro —eso es la unidad siguiente—, apréndete estas dos
+  enteras»), que es lo que ya hace el curso en 3.4 con las frases hechas.
+- 9.5 daba `oporrak` por conocido *«de la unidad 11»*, pero estaba en **10.2,
+  después**. Y además se usaba en un ejercicio de 6.5, cuatro unidades antes
+  de presentarse.
+
+**`oporrak` movida de 10.2 a 6.5.** Estaba en «Cuándo pasó» rodeada de
+expresiones de tiempo (`lehen`, `orduan`, `iaz`, `aurten`, `txikitan`,
+`garai hartan`) siendo la única que no lo es. Su sitio es «Las fiestas del
+año», con `jaiak`, `Gabonak` y `Aste Santua`. Se sigue practicando en la
+unidad 10 como repaso, que es justo el comportamiento que Ric quería.
+
+#### Ejercicios en el subnivel equivocado — PENDIENTE DE DECIDIR
+
+Siete grupos cuyo contenido es de otro sitio. Los flagrantes:
+
+| Grupo | Está en | Es de |
+|---|---|---|
+| Partes del cuerpo | 6.1 **La hora** | 9.3 El cuerpo |
+| Animales | 4.7 **La familia extendida** | 4.8 Animales |
+| Emparejar números | 4.4 Tener y decir tu edad | 4.1 Números |
+| «¿Cómo se dice 11 y 14?» | 4.4 Tener y decir tu edad | 4.2 Seguir contando |
+| «Non→-n, Nora→-ra…» | 3.1 Las interrogativas | 3.2 La familia de «non» |
+| `nator`/`zatoz`, `noa`/`zoaz` | 8.2 En qué vas y por dónde | 8.1 Ir y venir |
+
+Otros 38 saltaron en el barrido y **son falsos positivos sanos**: un
+ejercicio de «decir tu edad» usa números por definición. No tocar.
+
+**Por qué no se han movido aún:** 4.7 se quedaría en 4 ejercicios y 8.2 en 3,
+así que hacen falta 3 grupos nuevos; y el del cuerpo no es un cambio de
+subnivel sino **de unidad** (está en la 6, su sitio está en la 9).
+
+#### Cuñas culturales
+
+Ric: *«me encantan todas las cuñas sociales, históricas y contextuales».*
+Comprobada la más obvia —el sistema de base veinte, `berrogei` = «dos
+veintes», con el guiño al `quatre-vingts` francés— y **ya está puesta y bien
+escrita**. El listón está alto. Se irán anotando los huecos al leer las
+fichas.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
