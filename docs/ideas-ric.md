@@ -10,6 +10,54 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ## Pendientes de comentar con Miguel
 
+### 🔴 PENDIENTE · El repaso de vocabulario debe ser aditivo (26/08/2026)
+
+Petición de Ric, y es de comportamiento, no de contenido:
+
+> *El repaso de vocabulario general es aditivo, no es de cada unidad. Una vez
+> empiezas el programa, debes tener las palabras que vas «desbloqueando», ya
+> sea porque has leído la gramática del tema o porque hiciste los ejercicios.*
+
+**Cómo funciona hoy.** `fondoVocabulario()` recorre las unidades y se queda
+con las que tengan `progUnidad(u.id).vocab` a cierto. Dos problemas:
+
+1. **Es por unidad entera, no por tema.** Abrir la pantalla de Vocabulario de
+   la unidad 4 mete sus **74 palabras** en la bolsa, incluidos los temas que
+   no has tocado. Con la reestructuración eso es mucho más grave que antes:
+   las unidades pasaron de ~30 palabras a 50-74.
+2. **La señal es la equivocada.** `vocab` se pone al abrir la pantalla de
+   Vocabulario. Leer la explicación del tema o hacer sus ejercicios —que es
+   lo que Ric considera desbloquear— no cuenta.
+
+**Lo que casi está.** `progSub(unidadId, subId)` ya guarda por tema:
+
+```js
+{ visitado: false, mejor: 0 }
+```
+
+`visitado` se pone al abrir la portada del tema y `mejor` guarda la mejor nota
+de sus ejercicios. Con eso se puede decidir sin inventar estructura nueva.
+
+**Lo que hay que decidir antes de escribirlo:**
+
+- **Qué cuenta como desbloquear.** `visitado` hoy significa «abrí la portada
+  del tema», que es más laxo que «leí la gramática». ¿Basta, o hace falta una
+  marca aparte para la pantalla de gramática y otra para haber practicado?
+- **Qué pasa con el progreso ya guardado.** Quien tenga `vocab: true` en una
+  unidad pero ningún tema visitado se quedaría de golpe sin bolsa. ¿Se
+  convierte el progreso viejo (unidad con `vocab` → todos sus temas
+  desbloqueados) o se deja que se rellene sola?
+- **El curso viejo.** `data/unidades/` sigue en el repo aunque ya no se
+  carga; sus unidades no tienen temas, así que si alguna vez vuelve a usarse
+  necesitaría el comportamiento de antes como respaldo.
+
+**Dónde tocar:** `fondoVocabulario()` en `js/app.js`, que es el único sitio
+que construye la bolsa (lo usan el repaso de vocabulario y el diccionario).
+
+---
+
+
+
 ### 📄 Audios: la lista para Miguel está en `docs/audios-pendientes.md`
 
 Todo lo de audio —los 22 que suenan mal y los 194 que faltan— está
