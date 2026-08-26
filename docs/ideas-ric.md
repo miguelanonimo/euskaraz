@@ -1411,6 +1411,65 @@ salir de un número más `-garren`.
 Ejemplos ampliados con `Lehena eta azkena`, y comprobado que ninguno usa
 vocabulario posterior.
 
+### Los animales pasan al caserío (26/08/2026)
+
+Idea de Ric: un tema de solo vocabulario se hace raro, y los animales encajan
+mejor en la unidad de la casa. Le propuse partirlo —mascotas en la 4, granja
+en la 5— porque `txakurra` y `katua` sostienen seis fichas del verbo `ukan`.
+Ric decidió moverlo entero: *«no pasa nada que se hable de perros y gatos
+antes, y después introducirlos todos»*. Los ejemplos llevan la traducción al
+lado, así que se sostiene.
+
+**El tema 4.7 pasa a ser 5.5 «El caserío y sus animales»**: 10 palabras y 6
+grupos. Tamaños después: la unidad 4 baja de 7 temas a **6** (83 → 73
+palabras) y la 5 sube de 4 a **5** (52 → 63). Mucho más parejas.
+
+#### La ficha, con el `baserri` como hilo
+
+El enganche es mejor de lo que parecía: **`baserria` no es un edificio**. Es
+la casa más la tierra, los animales y quien vive allí, contado como una sola
+unidad de trabajo y de familia. Y muchísimos apellidos vascos **son el nombre
+del caserío**, no el del padre — Etxeberria, «la casa nueva». En castellano el
+apellido dice de quién eres hijo; en euskera, muchas veces, de qué casa.
+
+Con eso delante, la lista de animales deja de ser una lista suelta: los de
+dentro, los que dan de comer, los del monte y el corral.
+
+**Corrección de Ric, preguntando por allí:** escribí que `baso` es «el monte,
+la tierra». Es **el bosque** — yo había fundido las dos glosas de la fuente
+(`baso` bosque + `herri` en su sentido antiguo de tierra) en una sola.
+Corregido a `baso` (bosque) + `herri` (pueblo, que el alumno ya conoce de la
+unidad 2): literalmente, **el poblado del bosque**, la casa de fuera del
+pueblo.
+
+#### Lo que hubo que limpiar detrás
+
+El test de la unidad 4 preguntaba por animales que ya no son suyos: **9 celdas**
+cambiadas por vocabulario de la propia unidad (familia). Y al endurecer la
+comprobación aparecieron cuatro grupos más que miraban hacia adelante: el test
+de la unidad 2 usaba adjetivos de la 5 y `norekin?` de la 3; el de la 6,
+`bazkaria` (u7) y `zorionak` (u10).
+
+### 🔴 PENDIENTE · Vocabulario usado antes de estar catalogado
+
+Al afinar el comprobador para lo anterior salió un patrón de fondo que **no
+se ha tocado**, porque es grande y hay que decidirlo:
+
+**102 variantes en 54 grupos** usan palabras en unidades **anteriores** a
+donde están catalogadas. Las que más se repiten: `niri`, `etxea`, `al`,
+`polita`, `txikia`, `ikaslea`, `medikua`, `anaia`, `laguna`.
+
+**No todas son un fallo.** El curso enseña a propósito frases hechas como
+bloques —la ficha 3.4 lo dice literalmente: *«apréndetelas enteras por
+ahora»*— y ahí aparecen formas verbales sin explicar. Separar eso de lo que sí
+es un descuido es trabajo de criterio, no automático.
+
+*Nota sobre el comprobador, que costó afinar:* la regla buena es mirar
+primero **la expresión más larga** que esté en el vocabulario y solo juzgar lo
+que queda suelto. Sin eso, «Gabon, ikusi arte» marcaba `ikusi` como palabra de
+la unidad 7, cuando `ikusi arte` es de la 1.1. Y hay que normalizar los signos
+de interrogación de las claves, o `eta zu?` no casa con `eta zu`.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

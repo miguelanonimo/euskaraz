@@ -35,11 +35,6 @@
       "id": "4.6",
       "titulo": "La familia",
       "resumen": "Del padre al primo — y los hermanos, que cambian según quién los tiene."
-    },
-    {
-      "id": "4.7",
-      "titulo": "Animales",
-      "resumen": "Los de casa y los de fuera."
     }
   ],
   "gramatica": [
@@ -650,22 +645,6 @@
       "subnivel": "4.6"
     },
     {
-      "eu": "txakurra",
-      "es": "el perro",
-      "nota": null,
-      "audio": "unidades/u5/txakurra.mp3",
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
-    },
-    {
-      "eu": "katua",
-      "es": "el gato",
-      "nota": null,
-      "audio": "unidades/u5/katua.mp3",
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
-    },
-    {
       "eu": "senarra",
       "es": "el marido",
       "nota": null,
@@ -782,62 +761,6 @@
       "nota": "También «amiga» acentuando que es chica. Ver la ficha.",
       "categoria": "sustantivo",
       "subnivel": "4.6"
-    },
-    {
-      "eu": "txoria",
-      "es": "el pájaro",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
-    },
-    {
-      "eu": "zaldia",
-      "es": "el caballo",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
-    },
-    {
-      "eu": "behia",
-      "es": "la vaca",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
-    },
-    {
-      "eu": "ardia",
-      "es": "la oveja",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
-    },
-    {
-      "eu": "txerria",
-      "es": "el cerdo",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
-    },
-    {
-      "eu": "oiloa",
-      "es": "la gallina",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
-    },
-    {
-      "eu": "untxia",
-      "es": "el conejo",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
-    },
-    {
-      "eu": "sagua",
-      "es": "el ratón",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "4.7"
     },
     {
       "eu": "hogeita hamar",
@@ -1330,77 +1253,6 @@
         }
       ],
       "subnivel": "4.4"
-    },
-    {
-      "id": "u5-g04",
-      "variantes": [
-        {
-          "tipo": "opcion",
-          "instruccion": "Completa la frase",
-          "pregunta": "Nik txakurra ____.",
-          "opciones": [
-            "naiz",
-            "dut",
-            "da",
-            "ditut"
-          ],
-          "correcta": 1,
-          "explicacion": "«Nik» + un objeto en singular («txakurra») → «dut»."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Completa la frase",
-          "pregunta": "Hark etxe bat ____.",
-          "opciones": [
-            "du",
-            "dut",
-            "da",
-            "ditu"
-          ],
-          "correcta": 0,
-          "explicacion": "«Hark» + objeto singular → «du»."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Completa la frase",
-          "pregunta": "Guk katu bat ____.",
-          "opciones": [
-            "dugu",
-            "ditugu",
-            "gara",
-            "dute"
-          ],
-          "correcta": 0,
-          "explicacion": "«Guk» + objeto singular → «dugu»."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Completa la frase",
-          "pregunta": "Zuk laguna ____.",
-          "opciones": [
-            "zara",
-            "duzu",
-            "dituzu",
-            "du"
-          ],
-          "correcta": 1,
-          "explicacion": "«Zuk» + objeto singular → «duzu»."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Completa la frase",
-          "pregunta": "Haiek etxe bat ____.",
-          "opciones": [
-            "dira",
-            "dute",
-            "dituzte",
-            "du"
-          ],
-          "correcta": 1,
-          "explicacion": "«Haiek» + objeto singular → «dute»."
-        }
-      ],
-      "subnivel": "4.7"
     },
     {
       "id": "u5-g05",
@@ -2166,122 +2018,6 @@
         }
       ],
       "subnivel": "4.6"
-    },
-    {
-      "id": "u5.1-g03",
-      "variantes": [
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja los animales",
-          "pares": [
-            {
-              "eu": "txoria",
-              "es": "el pájaro"
-            },
-            {
-              "eu": "zaldia",
-              "es": "el caballo"
-            },
-            {
-              "eu": "behia",
-              "es": "la vaca"
-            },
-            {
-              "eu": "ardia",
-              "es": "la oveja"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja los animales",
-          "pares": [
-            {
-              "eu": "txerria",
-              "es": "el cerdo"
-            },
-            {
-              "eu": "oiloa",
-              "es": "la gallina"
-            },
-            {
-              "eu": "untxia",
-              "es": "el conejo"
-            },
-            {
-              "eu": "sagua",
-              "es": "el ratón"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja los animales",
-          "pares": [
-            {
-              "eu": "txakurra",
-              "es": "el perro"
-            },
-            {
-              "eu": "katua",
-              "es": "el gato"
-            },
-            {
-              "eu": "behia",
-              "es": "la vaca"
-            },
-            {
-              "eu": "zaldia",
-              "es": "el caballo"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja los animales",
-          "pares": [
-            {
-              "eu": "oiloa",
-              "es": "la gallina"
-            },
-            {
-              "eu": "txoria",
-              "es": "el pájaro"
-            },
-            {
-              "eu": "sagua",
-              "es": "el ratón"
-            },
-            {
-              "eu": "ardia",
-              "es": "la oveja"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja los animales",
-          "pares": [
-            {
-              "eu": "untxia",
-              "es": "el conejo"
-            },
-            {
-              "eu": "txerria",
-              "es": "el cerdo"
-            },
-            {
-              "eu": "katua",
-              "es": "el gato"
-            },
-            {
-              "eu": "txakurra",
-              "es": "el perro"
-            }
-          ]
-        }
-      ],
-      "subnivel": "4.7"
     },
     {
       "id": "u5.1-g04",
@@ -3080,8 +2816,8 @@
           "instruccion": "Empareja la familia extendida",
           "pares": [
             {
-              "eu": "behia",
-              "es": "la vaca"
+              "eu": "osaba",
+              "es": "el tío"
             },
             {
               "eu": "hirurogeita hamar",
@@ -3110,8 +2846,8 @@
               "es": "el tío"
             },
             {
-              "eu": "txerria",
-              "es": "el cerdo"
+              "eu": "izeba",
+              "es": "la tía"
             },
             {
               "eu": "laurogei",
@@ -3195,8 +2931,8 @@
               "es": "noventa"
             },
             {
-              "eu": "txoria",
-              "es": "el pájaro"
+              "eu": "biloba",
+              "es": "el nieto, la nieta"
             },
             {
               "eu": "emaztea",
@@ -3226,7 +2962,7 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "«la oveja» se dice…",
           "opciones": [
-            "ardia",
+            "alaba",
             "bigarrena",
             "mila",
             "lehena"
@@ -3288,8 +3024,8 @@
               "es": "hermana (de un chico)"
             },
             {
-              "eu": "txerria",
-              "es": "el cerdo"
+              "eu": "osaba",
+              "es": "el tío"
             },
             {
               "eu": "lehengusua",
@@ -3373,16 +3109,16 @@
               "es": "el sobrino / el nieto"
             },
             {
-              "eu": "txakurra",
-              "es": "el perro"
+              "eu": "semea",
+              "es": "el hijo"
             },
             {
               "eu": "du",
               "es": "(él/ella) tiene"
             },
             {
-              "eu": "sagua",
-              "es": "el ratón"
+              "eu": "amona",
+              "es": "la abuela"
             }
           ]
         },
@@ -3466,8 +3202,8 @@
               "es": "el hijo"
             },
             {
-              "eu": "sagua",
-              "es": "el ratón"
+              "eu": "amona",
+              "es": "la abuela"
             },
             {
               "eu": "daukazu",
@@ -3493,7 +3229,7 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "«el conejo» se dice…",
           "opciones": [
-            "untxia",
+            "izeba",
             "hirurogeita hamar",
             "aitona",
             "hamasei"
@@ -4750,362 +4486,6 @@
           ],
           "correcta": 0,
           "explicacion": "Porque al llegar a 20 empieza la veintena siguiente. Por eso hacen falta los números del once al diecinueve antes de contar alto."
-        }
-      ]
-    },
-    {
-      "id": "u4-g45",
-      "subnivel": "4.7",
-      "variantes": [
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja animales",
-          "pares": [
-            {
-              "eu": "behia",
-              "es": "la vaca"
-            },
-            {
-              "eu": "zaldia",
-              "es": "el caballo"
-            },
-            {
-              "eu": "txerria",
-              "es": "el cerdo"
-            },
-            {
-              "eu": "katua",
-              "es": "el gato"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja animales",
-          "pares": [
-            {
-              "eu": "txakurra",
-              "es": "el perro"
-            },
-            {
-              "eu": "txerria",
-              "es": "el cerdo"
-            },
-            {
-              "eu": "zaldia",
-              "es": "el caballo"
-            },
-            {
-              "eu": "oiloa",
-              "es": "la gallina"
-            }
-          ]
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «sagua»?",
-          "opciones": [
-            "el ratón",
-            "ocho",
-            "el tío",
-            "el segundo"
-          ],
-          "correcta": 0,
-          "explicacion": "sagua = el ratón."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«la vaca» se dice…",
-          "opciones": [
-            "behia",
-            "dauka",
-            "sagua",
-            "txerria"
-          ],
-          "correcta": 0,
-          "explicacion": "la vaca = behia."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «untxia»?",
-          "opciones": [
-            "el conejo",
-            "uno",
-            "la prima",
-            "el hijo"
-          ],
-          "correcta": 0,
-          "explicacion": "untxia = el conejo."
-        }
-      ]
-    },
-    {
-      "id": "u4-g46",
-      "subnivel": "4.7",
-      "variantes": [
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja animales",
-          "pares": [
-            {
-              "eu": "zaldia",
-              "es": "el caballo"
-            },
-            {
-              "eu": "txoria",
-              "es": "el pájaro"
-            },
-            {
-              "eu": "txakurra",
-              "es": "el perro"
-            },
-            {
-              "eu": "ardia",
-              "es": "la oveja"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja animales",
-          "pares": [
-            {
-              "eu": "txakurra",
-              "es": "el perro"
-            },
-            {
-              "eu": "oiloa",
-              "es": "la gallina"
-            },
-            {
-              "eu": "zaldia",
-              "es": "el caballo"
-            },
-            {
-              "eu": "sagua",
-              "es": "el ratón"
-            }
-          ]
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «katua»?",
-          "opciones": [
-            "el gato",
-            "el cerdo",
-            "doce",
-            "el cuarto"
-          ],
-          "correcta": 0,
-          "explicacion": "katua = el gato."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«el conejo» se dice…",
-          "opciones": [
-            "untxia",
-            "azkena",
-            "hemezortzi",
-            "laurogeita hamar"
-          ],
-          "correcta": 0,
-          "explicacion": "el conejo = untxia."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «ardia»?",
-          "opciones": [
-            "la oveja",
-            "la tía",
-            "el quinto",
-            "la abuela"
-          ],
-          "correcta": 0,
-          "explicacion": "ardia = la oveja."
-        }
-      ]
-    },
-    {
-      "id": "u4-g47",
-      "subnivel": "4.7",
-      "variantes": [
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja animales",
-          "pares": [
-            {
-              "eu": "txoria",
-              "es": "el pájaro"
-            },
-            {
-              "eu": "ardia",
-              "es": "la oveja"
-            },
-            {
-              "eu": "behia",
-              "es": "la vaca"
-            },
-            {
-              "eu": "oiloa",
-              "es": "la gallina"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja animales",
-          "pares": [
-            {
-              "eu": "txerria",
-              "es": "el cerdo"
-            },
-            {
-              "eu": "untxia",
-              "es": "el conejo"
-            },
-            {
-              "eu": "behia",
-              "es": "la vaca"
-            },
-            {
-              "eu": "oiloa",
-              "es": "la gallina"
-            }
-          ]
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «sagua»?",
-          "opciones": [
-            "el ratón",
-            "once",
-            "veinte",
-            "la vaca"
-          ],
-          "correcta": 0,
-          "explicacion": "sagua = el ratón."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«el pájaro» se dice…",
-          "opciones": [
-            "txoria",
-            "dut",
-            "hirurogeita hamar",
-            "hirurogei"
-          ],
-          "correcta": 0,
-          "explicacion": "el pájaro = txoria."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «behia»?",
-          "opciones": [
-            "la vaca",
-            "once",
-            "la hija",
-            "(yo) tengo"
-          ],
-          "correcta": 0,
-          "explicacion": "behia = la vaca."
-        }
-      ]
-    },
-    {
-      "id": "u4-g48",
-      "subnivel": "4.7",
-      "variantes": [
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja animales",
-          "pares": [
-            {
-              "eu": "ardia",
-              "es": "la oveja"
-            },
-            {
-              "eu": "behia",
-              "es": "la vaca"
-            },
-            {
-              "eu": "txoria",
-              "es": "el pájaro"
-            },
-            {
-              "eu": "txerria",
-              "es": "el cerdo"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja animales",
-          "pares": [
-            {
-              "eu": "ardia",
-              "es": "la oveja"
-            },
-            {
-              "eu": "txoria",
-              "es": "el pájaro"
-            },
-            {
-              "eu": "katua",
-              "es": "el gato"
-            },
-            {
-              "eu": "txerria",
-              "es": "el cerdo"
-            }
-          ]
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «oiloa»?",
-          "opciones": [
-            "la gallina",
-            "siete",
-            "el último",
-            "treinta"
-          ],
-          "correcta": 0,
-          "explicacion": "oiloa = la gallina."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«el caballo» se dice…",
-          "opciones": [
-            "zaldia",
-            "urtea",
-            "aita",
-            "duzu"
-          ],
-          "correcta": 0,
-          "explicacion": "el caballo = zaldia."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «txoria»?",
-          "opciones": [
-            "el pájaro",
-            "el tío",
-            "el novio",
-            "la mujer, la esposa"
-          ],
-          "correcta": 0,
-          "explicacion": "txoria = el pájaro."
         }
       ]
     }

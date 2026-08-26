@@ -1629,15 +1629,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Zortzietan gosaria, ordu bietan ____.",
+          "pregunta": "Zortzietan goizean; ordu bietan ____.",
           "opciones": [
-            "afaria",
-            "bazkaria",
-            "gosaria",
-            "gaua"
+            "arratsaldean",
+            "goizean",
+            "gauean",
+            "bihar"
           ],
-          "correcta": 1,
-          "explicacion": "A las dos toca la comida: «bazkaria»."
+          "correcta": 0,
+          "explicacion": "Las dos de la tarde ya son «arratsaldean»."
         },
         {
           "tipo": "opcion",
@@ -2071,9 +2071,9 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "¡Felicidades!",
+          "es": "el año",
           "respuestas": [
-            "zorionak"
+            "urtea"
           ],
           "pista": "Una palabra, la misma que ya conoces."
         }

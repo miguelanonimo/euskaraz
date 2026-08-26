@@ -1455,16 +1455,16 @@
               "es": "mi pueblo"
             },
             {
-              "eu": "zure etxea",
-              "es": "tu casa"
+              "eu": "zure izena",
+              "es": "tu nombre"
             },
             {
               "eu": "gure laguna",
               "es": "nuestro amigo"
             },
             {
-              "eu": "haien izena",
-              "es": "su nombre (de ellos)"
+              "eu": "haien irakaslea",
+              "es": "su profesor"
             }
           ]
         },
@@ -1473,20 +1473,20 @@
           "instruccion": "Empareja los adjetivos",
           "pares": [
             {
-              "eu": "handia",
-              "es": "grande"
+              "eu": "irakaslea",
+              "es": "el profesor, la profesora"
             },
             {
-              "eu": "txikia",
-              "es": "pequeño"
+              "eu": "ikaslea",
+              "es": "el estudiante, la estudiante"
             },
             {
-              "eu": "polita",
-              "es": "bonito"
+              "eu": "medikua",
+              "es": "el médico, la médica"
             },
             {
               "eu": "laguna",
-              "es": "el amigo"
+              "es": "el amigo, la amiga"
             }
           ]
         },
@@ -1495,20 +1495,20 @@
           "instruccion": "Empareja las expresiones",
           "pares": [
             {
-              "eu": "nire etxe handia",
-              "es": "mi casa grande"
+              "eu": "nire laguna",
+              "es": "mi amigo"
             },
             {
-              "eu": "zure herri txikia",
-              "es": "tu pueblo pequeño"
+              "eu": "zure herria",
+              "es": "tu pueblo"
             },
             {
-              "eu": "gure lagun polita",
-              "es": "nuestro amigo guapo"
+              "eu": "gure izena",
+              "es": "nuestro nombre"
             },
             {
-              "eu": "haren izena",
-              "es": "su nombre"
+              "eu": "haien ikaslea",
+              "es": "su estudiante"
             }
           ]
         },
@@ -1547,12 +1547,12 @@
               "es": "zugaz"
             },
             {
-              "eu": "norekin?",
-              "es": "nogaz?"
-            },
-            {
               "eu": "ni",
               "es": "neu"
+            },
+            {
+              "eu": "gu",
+              "es": "geu"
             }
           ]
         }
