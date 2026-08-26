@@ -53,6 +53,7 @@
   var LARGO_REPASO = 15;   // ejercicios por sesión de repaso mezclado
   var LARGO_VOCAB  = 14;   // palabras por sesión de repaso de vocabulario
   var ESCUCHAR_PRACTICA = 2;  // preguntas de escuchar que se cuelan en la práctica de una unidad
+  var LARGO_TEST = 12;     // preguntas del test de unidad (mínimo aceptable: 10)
   var ESCUCHAR_REPASO   = 3;  // preguntas de escuchar que se cuelan en el repaso mezclado
 
   // Motor de repaso de vocabulario (aportado por Ric): la sesión es una
@@ -2101,6 +2102,34 @@
      barajado: es la primera pasada, aquí no hay nada que dosificar.
      Lo que sí hace es alimentar el calendario, para que el repaso
      posterior sepa qué se falló. */
+  /* Grupos de los temas para completar el test, repartidos por turnos: uno
+     del primer tema, uno del segundo, y así hasta tener los que faltan. Si
+     se cogieran seguidos, los primeros temas se llevarían todas. */
+  function relleno(u, yaPuestos, cuantos) {
+    if (cuantos <= 0 || !tieneSubniveles(u)) return [];
+    var usados = {};
+    yaPuestos.forEach(function (g) { usados[g.id] = true; });
+    /* Se baraja también el orden de los temas, no solo los grupos dentro
+       de cada uno: si no, en las unidades que solo necesitan dos o tres de
+       relleno saldrían siempre de los primeros temas y los últimos no
+       entrarían nunca en el test. */
+    var porTema = barajar((u.subniveles || []).map(function (s) {
+      return barajar(delSubnivel(u.ejercicios, s.id).filter(function (g) {
+        return !usados[g.id];
+      }));
+    }));
+    var salida = [], vuelta = 0;
+    while (salida.length < cuantos) {
+      var metidoAlguno = false;
+      for (var i = 0; i < porTema.length && salida.length < cuantos; i++) {
+        if (porTema[i].length > vuelta) { salida.push(porTema[i][vuelta]); metidoAlguno = true; }
+      }
+      if (!metidoAlguno) break;      // no hay más grupos disponibles
+      vuelta++;
+    }
+    return salida;
+  }
+
   function empezarPractica() {
     var u = estado.unidad;
     estado.modo = 'unidad';
@@ -2108,6 +2137,13 @@
     // abierto; el test ('test') mezcla los grupos marcados como tales.
     var grupos = tieneSubniveles(u) ? delSubnivel(u.ejercicios, estado.subnivel) : u.ejercicios;
     if (!grupos.length) grupos = u.ejercicios;
+    /* El test de la unidad se queda corto con solo sus grupos: cinco en casi
+       todas, que con las dos de escuchar son siete preguntas. Como es «todo
+       lo anterior mezclado», se completa hasta doce tirando de los temas,
+       uno de cada por turnos, para que ningún tema quede fuera ni acapare
+       (pedido por Ric). */
+    if (estado.subnivel === 'test') grupos = grupos.concat(
+      relleno(u, grupos, LARGO_TEST - ESCUCHAR_PRACTICA - grupos.length));
     var base = barajar(grupos).map(function (g) {
       return prepararVariante(g, null);
     });

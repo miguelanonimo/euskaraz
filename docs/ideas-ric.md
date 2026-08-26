@@ -1336,6 +1336,33 @@ Todas las unidades conservan al menos una. **`verificar.py` comprueba ahora
 que ninguna burbuja tenga una ficha normal detrás**, así que la regla se
 mantiene sola.
 
+### El test de unidad, de 7 preguntas a 12 (26/08/2026)
+
+Ric: *«el test de unidad debería tener al menos 10 preguntas, ideal que sean
+12, porque recoge preguntas de todos los temas»*.
+
+**Lo que había.** El test cogía un ejercicio de cada grupo marcado como
+`test` —cinco en casi todas las unidades— más las dos de escuchar que se
+cuelan en cualquier práctica. **Siete preguntas.** La unidad 4, con siete
+grupos, llegaba a nueve.
+
+**Lo que hay.** Se completa hasta doce tirando de los grupos de los temas, que
+es lo coherente con lo que el test dice ser: todo lo anterior mezclado. No
+hizo falta escribir ni un ejercicio nuevo.
+
+**Se reparte por turnos**, uno de cada tema, para que ninguno acapare. Y se
+baraja también **el orden de los temas**, no solo los grupos dentro de cada
+uno: sin eso, en las unidades que solo necesitan dos o tres de relleno
+saldrían siempre de los primeros temas y los últimos no entrarían nunca en el
+test. Comprobado en la unidad 4, que solo necesita tres: en 60 tiradas
+aparecen sus **siete** temas.
+
+Las diez unidades llegan a 12. Verificado también en la app: el contador dice
+**0/12** y la barra, «Galderak · Test».
+
+`scripts/probar_test.js` comprueba las dos cosas —el tamaño y el reparto— y
+el mínimo de 10 por si algún día se toca el número.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
