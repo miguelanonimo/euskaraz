@@ -1571,6 +1571,31 @@ txapelketa como…»), que es otra cosa y funciona.
 Retirada. La ficha ya explicaba la regla; el paréntesis no añadía nada salvo
 un cambio de tono.
 
+### «El domingo» tenía dos respuestas buenas (26/08/2026)
+
+Detectado por Ric en 6.1. El ejercicio decía **«El domingo. → ____»** y entre
+las opciones estaban `igandea` e `igandean`. Las dos se traducen «el
+domingo» en castellano:
+
+- **`igandea`** — el día en sí. *Gaur igandea da*, hoy es domingo.
+- **`igandean`** — el cuándo. *Igandean etorriko naiz*, vendré el domingo.
+
+Ric propuso quitar `igandea` y poner otro distractor. **Hecho, y además
+desambiguada la pregunta**: quitar la opción arregla el marcador pero deja al
+alumno igual de perdido, y esa distinción es justo lo que enseña el tema.
+Ahora dice *«Nos vemos el domingo» — el domingo, ahí, es un cuándo*, y la
+explicación cuenta el porqué de la confusión.
+
+**Barrido de la misma trampa.** Saltaron 13 ejercicios con la forma con `-n` y
+sin ella entre las opciones, pero **doce son falsos positivos**: tener `ardoa`
+y `ardoan` de distractores está bien cuando la respuesta es `ardorik` y el
+castellano no admite dudas.
+
+Lo que distingue el caso real: **el castellano sin preposición**. «Por la
+mañana», «por la tarde», «a mediodía» fuerzan la lectura temporal; «el
+domingo», a pelo, no. De los cinco de ese mismo grupo, solo el de Ric la
+tenía.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

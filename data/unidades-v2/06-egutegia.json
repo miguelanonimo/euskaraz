@@ -1293,15 +1293,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "El domingo. → ____",
+          "pregunta": "«Nos vemos el domingo» — el domingo, ahí, es un cuándo: ____",
           "opciones": [
-            "igandea",
             "igandean",
             "igandera",
+            "igandetik",
             "igandeak"
           ],
-          "correcta": 1,
-          "explicacion": "Los días también llevan -n cuando dices «el domingo»."
+          "correcta": 0,
+          "explicacion": "La -n marca el cuándo. Sin ella, «igandea» es el día en sí: «Gaur igandea da», hoy es domingo. En castellano las dos se dicen «el domingo», y de ahí la confusión."
         }
       ],
       "subnivel": "6.1"
