@@ -1169,10 +1169,13 @@
           "es": "Yo como pan.",
           "eu": "Nik ogia jaten dut.",
           "palabras": [
-            "Nik",
+            "nik",
             "ogia",
             "jaten",
-            "dut."
+            "dut"
+          ],
+          "distractores": [
+            "letxuga"
           ]
         },
         {
@@ -1181,10 +1184,13 @@
           "es": "Tú bebes café.",
           "eu": "Zuk kafea edaten duzu.",
           "palabras": [
-            "Zuk",
+            "zuk",
             "kafea",
             "edaten",
-            "duzu."
+            "duzu"
+          ],
+          "distractores": [
+            "arroza"
           ]
         },
         {
@@ -1193,10 +1199,13 @@
           "es": "Nosotros aprendemos euskera.",
           "eu": "Guk euskara ikasten dugu.",
           "palabras": [
-            "Guk",
+            "guk",
             "euskara",
             "ikasten",
-            "dugu."
+            "dugu"
+          ],
+          "distractores": [
+            "edan"
           ]
         },
         {
@@ -1205,11 +1214,15 @@
           "es": "Escucho música en casa.",
           "eu": "Nik etxean musika entzuten dut.",
           "palabras": [
-            "Nik",
+            "nik",
             "etxean",
             "musika",
             "entzuten",
-            "dut."
+            "dut"
+          ],
+          "distractores": [
+            "madaria",
+            "gosaldu"
           ]
         },
         {
@@ -1218,10 +1231,13 @@
           "es": "Ella lee un libro.",
           "eu": "Hark liburua irakurtzen du.",
           "palabras": [
-            "Hark",
+            "hark",
             "liburua",
             "irakurtzen",
-            "du."
+            "du"
+          ],
+          "distractores": [
+            "gazta"
           ]
         }
       ],
@@ -1434,11 +1450,15 @@
           "es": "No bebo vino.",
           "eu": "Nik ez dut ardoa edaten.",
           "palabras": [
-            "Nik",
+            "nik",
             "ez",
             "dut",
             "ardoa",
-            "edaten."
+            "edaten"
+          ],
+          "distractores": [
+            "gazta",
+            "gosaria"
           ]
         },
         {
@@ -1447,11 +1467,15 @@
           "es": "Ella no come pescado.",
           "eu": "Hark ez du arraina jaten.",
           "palabras": [
-            "Hark",
+            "hark",
             "ez",
             "du",
             "arraina",
-            "jaten."
+            "jaten"
+          ],
+          "distractores": [
+            "prakak",
+            "jaiki"
           ]
         },
         {
@@ -1460,10 +1484,13 @@
           "es": "No estoy en el trabajo.",
           "eu": "Ni ez nago lanean.",
           "palabras": [
-            "Ni",
+            "ni",
             "ez",
             "nago",
-            "lanean."
+            "lanean"
+          ],
+          "distractores": [
+            "dutxatu"
           ]
         },
         {
@@ -1472,11 +1499,15 @@
           "es": "No compro carne.",
           "eu": "Nik ez dut haragia erosten.",
           "palabras": [
-            "Nik",
+            "nik",
             "ez",
             "dut",
             "haragia",
-            "erosten."
+            "erosten"
+          ],
+          "distractores": [
+            "gosaldu",
+            "jan"
           ]
         },
         {
@@ -1485,10 +1516,13 @@
           "es": "No hay leche en casa.",
           "eu": "Etxean ez dago esnerik.",
           "palabras": [
-            "Etxean",
+            "etxean",
             "ez",
             "dago",
-            "esnerik."
+            "esnerik"
+          ],
+          "distractores": [
+            "arazoa"
           ]
         }
       ],
@@ -2090,11 +2124,15 @@
           "es": "Como queso y pan.",
           "eu": "Gazta eta ogia jaten ditut.",
           "palabras": [
-            "Gazta",
+            "gazta",
             "eta",
             "ogia",
             "jaten",
-            "ditut."
+            "ditut"
+          ],
+          "distractores": [
+            "jan",
+            "azukrea"
           ]
         },
         {
@@ -2103,10 +2141,13 @@
           "es": "Quiero beber zumo.",
           "eu": "Zukua edan nahi dut.",
           "palabras": [
-            "Zukua",
+            "zukua",
             "edan",
             "nahi",
-            "dut."
+            "dut"
+          ],
+          "distractores": [
+            "ardoa"
           ]
         },
         {
@@ -2115,10 +2156,13 @@
           "es": "He comprado una camisa blanca.",
           "eu": "Alkandora zuria erosi dut.",
           "palabras": [
-            "Alkandora",
+            "alkandora",
             "zuria",
             "erosi",
-            "dut."
+            "dut"
+          ],
+          "distractores": [
+            "txapela"
           ]
         },
         {
@@ -2127,9 +2171,12 @@
           "es": "Tengo zapatos negros.",
           "eu": "Zapata beltzak ditut.",
           "palabras": [
-            "Zapata",
+            "zapata",
             "beltzak",
-            "ditut."
+            "ditut"
+          ],
+          "distractores": [
+            "tomatea"
           ]
         },
         {
@@ -2304,9 +2351,12 @@
           "es": "Por la mañana me levanto.",
           "eu": "Goizean jaikitzen naiz.",
           "palabras": [
-            "Goizean",
+            "goizean",
             "jaikitzen",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "afaria"
           ]
         }
       ]
@@ -2414,9 +2464,12 @@
           "es": "Estoy comiendo.",
           "eu": "Jaten ari naiz.",
           "palabras": [
-            "Jaten",
+            "jaten",
             "ari",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "afaldu"
           ]
         },
         {
@@ -2425,10 +2478,13 @@
           "es": "Estoy aprendiendo euskera.",
           "eu": "Euskara ikasten ari naiz.",
           "palabras": [
-            "Euskara",
+            "euskara",
             "ikasten",
             "ari",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "arazoa"
           ]
         },
         {
@@ -3323,10 +3379,13 @@
           "es": "No como pan.",
           "eu": "Ez dut ogia jaten.",
           "palabras": [
-            "Ez",
+            "ez",
             "dut",
             "ogia",
-            "jaten."
+            "jaten"
+          ],
+          "distractores": [
+            "jertsea"
           ]
         },
         {
@@ -3454,9 +3513,12 @@
           "es": "No tengo dinero.",
           "eu": "Ez dut dirurik.",
           "palabras": [
-            "Ez",
+            "ez",
             "dut",
-            "dirurik."
+            "dirurik"
+          ],
+          "distractores": [
+            "gatza"
           ]
         }
       ]
@@ -3564,9 +3626,12 @@
           "es": "Estoy estudiando.",
           "eu": "Ikasten ari naiz.",
           "palabras": [
-            "Ikasten",
+            "ikasten",
             "ari",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "afaldu"
           ]
         },
         {
@@ -3681,10 +3746,13 @@
           "es": "Estoy aprendiendo euskera.",
           "eu": "Euskara ikasten ari naiz.",
           "palabras": [
-            "Euskara",
+            "euskara",
             "ikasten",
             "ari",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "barazkiak"
           ]
         }
       ]

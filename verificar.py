@@ -246,6 +246,14 @@ for ruta, u in unidades:
                 if len(set(p["es"] for p in ps)) != len(ps): errores.append("%s: castellano repetido en las parejas" % eid)
                 clave = norm(" ".join(p["eu"] for p in ps))
             elif t == "orden":
+                # Los distractores son fichas que NO forman parte de la frase:
+                # si alguna se cuela en la solución, el ejercicio es irresoluble
+                # o tiene dos respuestas buenas.
+                dentro = set(norm(v["eu"]).split())
+                for dis in v.get("distractores") or []:
+                    if norm(dis) in dentro:
+                        errores.append(u"%s: el distractor «%s» está dentro de la "
+                                       u"solución" % (eid, dis))
                 if norm(" ".join(v["palabras"])) != norm(v["eu"]):
                     errores.append("%s: las palabras no reconstruyen «%s» → %s" % (eid, v["eu"], v["palabras"]))
                 if len(v["palabras"]) < 3:

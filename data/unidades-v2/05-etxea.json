@@ -1067,9 +1067,13 @@
           "es": "¿Dónde estás tú?",
           "eu": "Non zaude zu?",
           "palabras": [
-            "Non",
+            "non",
             "zaude",
-            "zu?"
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "horia"
           ]
         },
         {
@@ -1078,9 +1082,12 @@
           "es": "Yo estoy en casa.",
           "eu": "Ni etxean nago.",
           "palabras": [
-            "Ni",
+            "ni",
             "etxean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "zaldia"
           ]
         },
         {
@@ -1089,9 +1096,12 @@
           "es": "Ellos están en el bar.",
           "eu": "Haiek tabernan daude.",
           "palabras": [
-            "Haiek",
+            "haiek",
             "tabernan",
-            "daude."
+            "daude"
+          ],
+          "distractores": [
+            "logela"
           ]
         },
         {
@@ -1102,7 +1112,10 @@
           "palabras": [
             "Bilbon",
             "bizi",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "teilatua"
           ]
         },
         {
@@ -1111,9 +1124,12 @@
           "es": "Ella está en la cocina.",
           "eu": "Hura sukaldean dago.",
           "palabras": [
-            "Hura",
+            "hura",
             "sukaldean",
-            "dago."
+            "dago"
+          ],
+          "distractores": [
+            "aulkia"
           ]
         }
       ],
@@ -1442,10 +1458,13 @@
           "es": "Mi casa es pequeña.",
           "eu": "Nire etxea txikia da.",
           "palabras": [
-            "Nire",
+            "nire",
             "etxea",
             "txikia",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "mahaia"
           ]
         },
         {
@@ -1454,9 +1473,12 @@
           "es": "La calle es vieja.",
           "eu": "Kalea zaharra da.",
           "palabras": [
-            "Kalea",
+            "kalea",
             "zaharra",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "arrosa"
           ]
         },
         {
@@ -1465,10 +1487,13 @@
           "es": "Mi pueblo es bonito.",
           "eu": "Nire herria polita da.",
           "palabras": [
-            "Nire",
+            "nire",
             "herria",
             "polita",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "leihoa"
           ]
         },
         {
@@ -1477,10 +1502,13 @@
           "es": "Nuestra casa es grande.",
           "eu": "Gure etxea handia da.",
           "palabras": [
-            "Gure",
+            "gure",
             "etxea",
             "handia",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "txoria"
           ]
         },
         {
@@ -1489,9 +1517,12 @@
           "es": "La cocina es nueva.",
           "eu": "Sukaldea berria da.",
           "palabras": [
-            "Sukaldea",
+            "sukaldea",
             "berria",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "argia"
           ]
         }
       ],
@@ -2097,9 +2128,12 @@
           "es": "En el salón hay una televisión.",
           "eu": "Egongelan telebista dago.",
           "palabras": [
-            "Egongelan",
+            "egongelan",
             "telebista",
-            "dago."
+            "dago"
+          ],
+          "distractores": [
+            "hemen"
           ]
         },
         {
@@ -2108,9 +2142,12 @@
           "es": "En la cocina está la nevera.",
           "eu": "Sukaldean hozkailua dago.",
           "palabras": [
-            "Sukaldean",
+            "sukaldean",
             "hozkailua",
-            "dago."
+            "dago"
+          ],
+          "distractores": [
+            "arrosa"
           ]
         },
         {
@@ -2119,11 +2156,15 @@
           "es": "La mesa blanca y la silla negra.",
           "eu": "Mahai zuria eta aulki beltza.",
           "palabras": [
-            "Mahai",
+            "mahai",
             "zuria",
             "eta",
             "aulki",
-            "beltza."
+            "beltza"
+          ],
+          "distractores": [
+            "txerria",
+            "arrosa"
           ]
         },
         {
@@ -2132,10 +2173,13 @@
           "es": "Mi habitación es azul.",
           "eu": "Nire logela urdina da.",
           "palabras": [
-            "Nire",
+            "nire",
             "logela",
             "urdina",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "beltza"
           ]
         },
         {
@@ -2759,6 +2803,9 @@
             "mahai",
             "zuri",
             "bat"
+          ],
+          "distractores": [
+            "laranja"
           ]
         },
         {
@@ -2769,6 +2816,9 @@
           "palabras": [
             "mahai",
             "zuria"
+          ],
+          "distractores": [
+            "arrosa"
           ]
         },
         {

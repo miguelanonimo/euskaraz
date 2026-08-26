@@ -1516,6 +1516,61 @@ zuri bat» como vocabulario posterior. Es un **falso positivo por homógrafo**:
 `zuri` es a la vez la raíz de `zuria` (blanco, 5.3) y el dativo de `zu` («a
 ti», 9.2). El ejemplo está bien; lo que no distingue es el comprobador.
 
+### Los ejercicios de ordenar se resolvían sin saber euskera (26/08/2026)
+
+Ric: en las fichas de ordenar, **la mayúscula marca el principio y el punto o
+la interrogación marcan el final**, así que dan el orden sin necesidad de
+entender nada. Y propone lo que hace Duolingo: meter alguna palabra que no
+sea de la frase.
+
+Era sistemático: **136 de 144** tenían las dos pistas. En «Egun on. Zer
+moduz?» las fichas eran `Egun · on. · Zer · moduz?` — se resuelve a ojo.
+
+**Tres cambios, los tres suyos:**
+
+1. **Fichas despojadas** de mayúscula inicial y de signos: `egun · on · zer ·
+   moduz`.
+2. **El «?» como ficha suelta**, que era su idea. Deja de marcar cuál es la
+   última palabra, y de paso enseña que en euskera la pregunta no lleva
+   signo de apertura. No hace falta colocarlo para acertar —`normalizar()`
+   lo ignora al corregir— así que es honesto sin ser puntilloso.
+3. **Distractores**: una o dos fichas que no son de la frase, sacadas del
+   vocabulario del propio tema o de la unidad, así que son palabras conocidas
+   y creíbles. Las 144 tienen.
+
+**La corrección no hubo que tocarla**: `corregirOrden()` ya comparaba con
+`normalizar()`, que quita signos y mayúsculas. Y usar un distractor sale mal
+solo, porque se compara contra la frase entera.
+
+*Dónde se complicó:* la regla para quitar mayúsculas. La primera versión
+—«minúscula si la palabra está en minúscula en el diccionario»— dejó con
+mayúscula las **formas declinadas** (`Etxean`, `Nik`, `Goizean`), que no
+están así catalogadas. Invertida a una lista explícita de nombres propios. Y
+todavía se coló `Astelehenean`, porque «Aste Santua» me había dejado `aste`
+como raíz de nombre propio: los sitios y las personas se comparan por
+prefijo (se declinan: *Bilbon*, *Aneri*) y el resto por igualdad.
+
+Quedan con mayúscula solo `Aneri`, `Bilbo`, `Bilbokoa`, `Bilbon`, `Bilbora`,
+`Gernika` y `Madrilgoak`.
+
+`scripts/probar_ordenar.js` comprueba las cinco propiedades en los 144, y
+`verificar.py` avisa si un distractor está dentro de la solución.
+
+*No pude probarlo pinchando en la app:* los bucles para atravesar el examen
+hasta un ejercicio de ordenar atascaban el navegador. Verificado sobre los
+datos y la lógica.
+
+### La referencia académica de 6.1, fuera (26/08/2026)
+
+Ric: *«(Euskaltzaindia, araua 35)» se hace rara aquí y es la primera vez que
+vemos algo así»*. Cierto — **era la única cita en ese formato de todo el
+curso**. Las otras menciones a Euskaltzaindia van contadas dentro del texto
+(«reunió las formas comunes y fijó el estándar», «su diccionario define
+txapelketa como…»), que es otra cosa y funciona.
+
+Retirada. La ficha ya explicaba la regla; el paréntesis no añadía nada salvo
+un cambio de tono.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

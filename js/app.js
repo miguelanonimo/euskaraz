@@ -2409,7 +2409,13 @@
       '<p class="q__inst">' + esc(ej.instruccion) + '</p>' +
       '<h2 class="q__prompt q__prompt--es">' + esc(ej.es) + '</h2>' +
       '<div class="build" id="build"></div>' +
-      '<div class="bank" id="bank">' + barajar(ej.palabras).map(function (p, i) {
+      /* Al banco se le suman los distractores: fichas que NO son de la frase.
+         Sin ellos bastaba con colocar todas las que había, y con la mayúscula
+         y el punto puestos se resolvía sin saber euskera (detectado por Ric).
+         La corrección no cambia: compara lo construido contra `eu`, así que
+         usar un distractor sale mal solo. */
+      '<div class="bank" id="bank">' +
+      barajar(ej.palabras.concat(ej.distractores || [])).map(function (p, i) {
         return '<button class="chip" type="button" data-p="' + esc(p) + '" data-k="' + i + '">' + esc(p) + '</button>';
       }).join('') + '</div>';
 

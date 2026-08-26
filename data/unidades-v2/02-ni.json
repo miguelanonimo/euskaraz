@@ -1199,6 +1199,9 @@
             "nire",
             "etxe",
             "handia"
+          ],
+          "distractores": [
+            "haien"
           ]
         },
         {
@@ -1210,6 +1213,9 @@
             "gure",
             "herri",
             "polita"
+          ],
+          "distractores": [
+            "zuek"
           ]
         },
         {
@@ -1221,6 +1227,9 @@
             "zure",
             "etxe",
             "txikia"
+          ],
+          "distractores": [
+            "zeu"
           ]
         },
         {
@@ -1232,6 +1241,9 @@
             "haren",
             "lagun",
             "polita"
+          ],
+          "distractores": [
+            "gure"
           ]
         },
         {
@@ -1243,6 +1255,9 @@
             "zuen",
             "herri",
             "txikia"
+          ],
+          "distractores": [
+            "bera"
           ]
         }
       ],
@@ -1826,9 +1841,12 @@
           "es": "Yo soy estudiante.",
           "eu": "Ni ikaslea naiz.",
           "palabras": [
-            "Ni",
+            "ni",
             "ikaslea",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "gu"
           ]
         },
         {
@@ -1837,9 +1855,12 @@
           "es": "Tú eres médico.",
           "eu": "Zu medikua zara.",
           "palabras": [
-            "Zu",
+            "zu",
             "medikua",
-            "zara."
+            "zara"
+          ],
+          "distractores": [
+            "gara"
           ]
         },
         {
@@ -1848,9 +1869,12 @@
           "es": "Ella es cocinera.",
           "eu": "Hura sukaldaria da.",
           "palabras": [
-            "Hura",
+            "hura",
             "sukaldaria",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "dira"
           ]
         },
         {
@@ -1859,10 +1883,13 @@
           "es": "Yo también soy estudiante.",
           "eu": "Ni ere ikaslea naiz.",
           "palabras": [
-            "Ni",
+            "ni",
             "ere",
             "ikaslea",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "da"
           ]
         },
         {
@@ -1871,9 +1898,12 @@
           "es": "Él es escritor.",
           "eu": "Hura idazlea da.",
           "palabras": [
-            "Hura",
+            "hura",
             "idazlea",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "neu"
           ]
         }
       ],
@@ -2217,9 +2247,13 @@
           "es": "¿De dónde eres tú?",
           "eu": "Nongoa zara zu?",
           "palabras": [
-            "Nongoa",
+            "nongoa",
             "zara",
-            "zu?"
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "ere"
           ]
         },
         {
@@ -2228,9 +2262,12 @@
           "es": "Yo soy de Bilbao.",
           "eu": "Ni Bilbokoa naiz.",
           "palabras": [
-            "Ni",
+            "ni",
             "Bilbokoa",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "zarete"
           ]
         },
         {
@@ -2239,9 +2276,13 @@
           "es": "¿Quién eres tú?",
           "eu": "Nor zara zu?",
           "palabras": [
-            "Nor",
+            "nor",
             "zara",
-            "zu?"
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "langilea"
           ]
         },
         {
@@ -2250,10 +2291,13 @@
           "es": "Ella también es de Bilbao.",
           "eu": "Hura ere Bilbokoa da.",
           "palabras": [
-            "Hura",
+            "hura",
             "ere",
             "Bilbokoa",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "zara"
           ]
         },
         {
@@ -2262,9 +2306,12 @@
           "es": "Nosotros somos de Madrid.",
           "eu": "Gu Madrilgoak gara.",
           "palabras": [
-            "Gu",
+            "gu",
             "Madrilgoak",
-            "gara."
+            "gara"
+          ],
+          "distractores": [
+            "idazlea"
           ]
         }
       ],

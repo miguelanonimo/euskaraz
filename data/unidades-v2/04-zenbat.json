@@ -1405,9 +1405,12 @@
           "es": "Tengo veinte años.",
           "eu": "Hogei urte ditut.",
           "palabras": [
-            "Hogei",
+            "hogei",
             "urte",
-            "ditut."
+            "ditut"
+          ],
+          "distractores": [
+            "osaba"
           ]
         },
         {
@@ -1416,9 +1419,12 @@
           "es": "Tengo dieciocho años.",
           "eu": "Hemezortzi urte ditut.",
           "palabras": [
-            "Hemezortzi",
+            "hemezortzi",
             "urte",
-            "ditut."
+            "ditut"
+          ],
+          "distractores": [
+            "bost"
           ]
         },
         {
@@ -1427,10 +1433,13 @@
           "es": "Ella tiene doce años.",
           "eu": "Hark hamabi urte ditu.",
           "palabras": [
-            "Hark",
+            "hark",
             "hamabi",
             "urte",
-            "ditu."
+            "ditu"
+          ],
+          "distractores": [
+            "berrogei"
           ]
         },
         {
@@ -1439,9 +1448,12 @@
           "es": "Tengo quince años.",
           "eu": "Hamabost urte ditut.",
           "palabras": [
-            "Hamabost",
+            "hamabost",
             "urte",
-            "ditut."
+            "ditut"
+          ],
+          "distractores": [
+            "aitona"
           ]
         },
         {
@@ -1450,10 +1462,13 @@
           "es": "Tú tienes diez años.",
           "eu": "Zuk hamar urte dituzu.",
           "palabras": [
-            "Zuk",
+            "zuk",
             "hamar",
             "urte",
-            "dituzu."
+            "dituzu"
+          ],
+          "distractores": [
+            "aitona"
           ]
         }
       ],
@@ -1468,9 +1483,13 @@
           "es": "¿Cuántos años tienes?",
           "eu": "Zenbat urte dituzu?",
           "palabras": [
-            "Zenbat",
+            "zenbat",
             "urte",
-            "dituzu?"
+            "dituzu",
+            "?"
+          ],
+          "distractores": [
+            "hamaika"
           ]
         },
         {
@@ -1479,10 +1498,13 @@
           "es": "Yo tengo dos hermanas.",
           "eu": "Nik bi ahizpa ditut.",
           "palabras": [
-            "Nik",
+            "nik",
             "bi",
             "ahizpa",
-            "ditut."
+            "ditut"
+          ],
+          "distractores": [
+            "bosgarrena"
           ]
         },
         {
@@ -1491,10 +1513,13 @@
           "es": "Nosotros tenemos un gato.",
           "eu": "Guk katu bat dugu.",
           "palabras": [
-            "Guk",
+            "guk",
             "katu",
             "bat",
-            "dugu."
+            "dugu"
+          ],
+          "distractores": [
+            "izeba"
           ]
         },
         {
@@ -1503,10 +1528,13 @@
           "es": "Yo tengo un perro.",
           "eu": "Nik txakur bat dut.",
           "palabras": [
-            "Nik",
+            "nik",
             "txakur",
             "bat",
-            "dut."
+            "dut"
+          ],
+          "distractores": [
+            "hamahiru"
           ]
         },
         {
@@ -1515,10 +1543,13 @@
           "es": "Ellos tienen tres hijos.",
           "eu": "Haiek hiru seme dituzte.",
           "palabras": [
-            "Haiek",
+            "haiek",
             "hiru",
             "seme",
-            "dituzte."
+            "dituzte"
+          ],
+          "distractores": [
+            "hamasei"
           ]
         }
       ],
@@ -2190,11 +2221,15 @@
           "es": "Mi abuelo vive en Bilbao.",
           "eu": "Nire aitona Bilbon bizi da.",
           "palabras": [
-            "Nire",
+            "nire",
             "aitona",
             "Bilbon",
             "bizi",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "lehengusua",
+            "hirurogei"
           ]
         },
         {
@@ -2203,9 +2238,12 @@
           "es": "Las vacas están en el monte.",
           "eu": "Behiak mendian daude.",
           "palabras": [
-            "Behiak",
+            "behiak",
             "mendian",
-            "daude."
+            "daude"
+          ],
+          "distractores": [
+            "dirua"
           ]
         },
         {
@@ -2214,10 +2252,13 @@
           "es": "Su mujer es profesora.",
           "eu": "Haren emaztea irakaslea da.",
           "palabras": [
-            "Haren",
+            "haren",
             "emaztea",
             "irakaslea",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "dirua"
           ]
         }
       ],
@@ -2508,8 +2549,11 @@
           "es": "Tengo dinero.",
           "eu": "Dirua daukat.",
           "palabras": [
-            "Dirua",
-            "daukat."
+            "dirua",
+            "daukat"
+          ],
+          "distractores": [
+            "seigarrena"
           ]
         },
         {

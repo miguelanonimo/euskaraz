@@ -1129,9 +1129,13 @@
           "es": "¿Cómo te llamas?",
           "eu": "Nola duzu izena?",
           "palabras": [
-            "Nola",
+            "nola",
             "duzu",
-            "izena?"
+            "izena",
+            "?"
+          ],
+          "distractores": [
+            "hauek"
           ]
         },
         {
@@ -1140,9 +1144,13 @@
           "es": "¿Con quién estás tú?",
           "eu": "Norekin zaude zu?",
           "palabras": [
-            "Norekin",
+            "norekin",
             "zaude",
-            "zu?"
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "hori"
           ]
         },
         {
@@ -1151,9 +1159,13 @@
           "es": "¿Qué es esto?",
           "eu": "Zer da hau?",
           "palabras": [
-            "Zer",
+            "zer",
             "da",
-            "hau?"
+            "hau",
+            "?"
+          ],
+          "distractores": [
+            "agian"
           ]
         },
         {
@@ -1162,9 +1174,13 @@
           "es": "¿Cuándo es la fiesta?",
           "eu": "Noiz da festa?",
           "palabras": [
-            "Noiz",
+            "noiz",
             "da",
-            "festa?"
+            "festa",
+            "?"
+          ],
+          "distractores": [
+            "agian"
           ]
         },
         {
@@ -1173,9 +1189,13 @@
           "es": "¿Adónde vas tú?",
           "eu": "Nora zoaz zu?",
           "palabras": [
-            "Nora",
+            "nora",
             "zoaz",
-            "zu?"
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "horiek"
           ]
         }
       ],
@@ -2476,7 +2496,10 @@
             "irakaslea",
             "da"
           ],
-          "pista": "El demostrativo se pega al nombre, y el verbo cierra la frase."
+          "pista": "El demostrativo se pega al nombre, y el verbo cierra la frase.",
+          "distractores": [
+            "horiek"
+          ]
         }
       ]
     },

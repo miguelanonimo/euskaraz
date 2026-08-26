@@ -57,7 +57,7 @@
     },
     {
       "titulo": "Y media, y cuarto, menos cuarto",
-      "cuerpo": "Los minutos se cuelgan detrás con <b>eta</b> (y) o con <b>gutxi</b> (menos):\n\n<b>Hirurak eta bost.</b> — Las tres y cinco.\n<b>Hirurak eta laurden.</b> — Las tres y cuarto.\n<b>Hiru eta erdiak.</b> — Las tres y media.\n<b>Laurak bost gutxi.</b> — Las cuatro menos cinco.\n<b>Laurak laurden gutxi.</b> — Las cuatro menos cuarto.\n\nOjo con <b>eta erdiak</b>: es la única forma que rompe el patrón. Aquí la hora <b>pierde la -ak</b> y se queda desnuda — <i>hiru</i> eta erdiak, <i>bost</i> eta erdiak, <i>zortzi</i> eta erdiak. El plural lo lleva solo <b>erdiak</b>, y el verbo va en <b>dira</b>. Decir <i>*hirurak eta erdiak</i> es un error corriente, pero error (Euskaltzaindia, araua 35).\n\nCon <b>laurden</b> y con los minutos, en cambio, la hora sí conserva la -ak: <i>hirurak</i> eta laurden, <i>laurak</i> bost gutxi.\n\nFíjate en el orden de «menos»: primero los minutos y luego <b>gutxi</b>, al revés que en castellano.\n\nY dos horas que se dicen con nombre propio:\n<b>eguerdia</b> — el mediodía\n<b>gauerdia</b> — la medianoche",
+      "cuerpo": "Los minutos se cuelgan detrás con <b>eta</b> (y) o con <b>gutxi</b> (menos):\n\n<b>Hirurak eta bost.</b> — Las tres y cinco.\n<b>Hirurak eta laurden.</b> — Las tres y cuarto.\n<b>Hiru eta erdiak.</b> — Las tres y media.\n<b>Laurak bost gutxi.</b> — Las cuatro menos cinco.\n<b>Laurak laurden gutxi.</b> — Las cuatro menos cuarto.\n\nOjo con <b>eta erdiak</b>: es la única forma que rompe el patrón. Aquí la hora <b>pierde la -ak</b> y se queda desnuda — <i>hiru</i> eta erdiak, <i>bost</i> eta erdiak, <i>zortzi</i> eta erdiak. El plural lo lleva solo <b>erdiak</b>, y el verbo va en <b>dira</b>. Decir <i>*hirurak eta erdiak</i> es un error corriente, pero error.\n\nCon <b>laurden</b> y con los minutos, en cambio, la hora sí conserva la -ak: <i>hirurak</i> eta laurden, <i>laurak</i> bost gutxi.\n\nFíjate en el orden de «menos»: primero los minutos y luego <b>gutxi</b>, al revés que en castellano.\n\nY dos horas que se dicen con nombre propio:\n<b>eguerdia</b> — el mediodía\n<b>gauerdia</b> — la medianoche",
       "ejemplos": [
         {
           "eu": "Zortzi eta erdiak dira.",
@@ -1166,9 +1166,12 @@
           "es": "Hoy es lunes.",
           "eu": "Gaur astelehena da.",
           "palabras": [
-            "Gaur",
+            "gaur",
             "astelehena",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "larunbata"
           ]
         },
         {
@@ -1177,10 +1180,13 @@
           "es": "Esta mañana estoy en casa.",
           "eu": "Gaur goizean etxean nago.",
           "palabras": [
-            "Gaur",
+            "gaur",
             "goizean",
             "etxean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "beroa"
           ]
         },
         {
@@ -1189,9 +1195,12 @@
           "es": "Mañana estoy en Bilbao.",
           "eu": "Bihar Bilbon nago.",
           "palabras": [
-            "Bihar",
+            "bihar",
             "Bilbon",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "otsaila"
           ]
         },
         {
@@ -1200,9 +1209,12 @@
           "es": "El sábado estoy en Bilbao.",
           "eu": "Larunbatean Bilbon nago.",
           "palabras": [
-            "Larunbatean",
+            "larunbatean",
             "Bilbon",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "urtebetetzea"
           ]
         },
         {
@@ -1211,10 +1223,13 @@
           "es": "Por la noche siempre estoy en casa.",
           "eu": "Gauean beti etxean nago.",
           "palabras": [
-            "Gauean",
+            "gauean",
             "beti",
             "etxean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "jaieguna"
           ]
         }
       ],
@@ -1426,10 +1441,13 @@
           "es": "Son las siete y media.",
           "eu": "Zazpi eta erdiak dira.",
           "palabras": [
-            "Zazpi",
+            "zazpi",
             "eta",
             "erdiak",
-            "dira."
+            "dira"
+          ],
+          "distractores": [
+            "udaberria"
           ]
         },
         {
@@ -1438,9 +1456,12 @@
           "es": "A las diez estoy en el trabajo.",
           "eu": "Hamarretan lanean nago.",
           "palabras": [
-            "Hamarretan",
+            "hamarretan",
             "lanean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "gaua"
           ]
         },
         {
@@ -1449,10 +1470,13 @@
           "es": "El domingo por la mañana estoy en casa.",
           "eu": "Igande goizean etxean nago.",
           "palabras": [
-            "Igande",
+            "igande",
             "goizean",
             "etxean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "eguraldia"
           ]
         },
         {
@@ -1461,9 +1485,12 @@
           "es": "Ahora son las doce.",
           "eu": "Orain hamabiak dira.",
           "palabras": [
-            "Orain",
+            "orain",
             "hamabiak",
-            "dira."
+            "dira"
+          ],
+          "distractores": [
+            "asteburua"
           ]
         },
         {
@@ -1472,10 +1499,13 @@
           "es": "A las dos estoy en la escuela.",
           "eu": "Ordu bietan eskolan nago.",
           "palabras": [
-            "Ordu",
+            "ordu",
             "bietan",
             "eskolan",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "urtarrila"
           ]
         }
       ],
@@ -2032,10 +2062,13 @@
           "es": "Mi cumpleaños es en mayo.",
           "eu": "Nire urtebetetzea maiatzean da.",
           "palabras": [
-            "Nire",
+            "nire",
             "urtebetetzea",
             "maiatzean",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "hodeia"
           ]
         },
         {
@@ -2044,10 +2077,13 @@
           "es": "Diciembre es un mes frío.",
           "eu": "Abendua hilabete hotza da.",
           "palabras": [
-            "Abendua",
+            "abendua",
             "hilabete",
             "hotza",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "maiatza"
           ]
         },
         {
@@ -2302,10 +2338,13 @@
           "es": "En primavera llueve.",
           "eu": "Udaberrian euria egiten du.",
           "palabras": [
-            "Udaberrian",
+            "udaberrian",
             "euria",
             "egiten",
-            "du."
+            "du"
+          ],
+          "distractores": [
+            "asteazkena"
           ]
         },
         {
@@ -2314,10 +2353,13 @@
           "es": "En invierno hace frío.",
           "eu": "Neguan hotz egiten du.",
           "palabras": [
-            "Neguan",
+            "neguan",
             "hotz",
             "egiten",
-            "du."
+            "du"
+          ],
+          "distractores": [
+            "oporrak"
           ]
         },
         {
@@ -2326,10 +2368,13 @@
           "es": "Hoy hace buen tiempo.",
           "eu": "Gaur eguraldi ona dago.",
           "palabras": [
-            "Gaur",
+            "gaur",
             "eguraldi",
             "ona",
-            "dago."
+            "dago"
+          ],
+          "distractores": [
+            "azaroa"
           ]
         },
         {
@@ -2338,10 +2383,13 @@
           "es": "Me gustan tus ojos.",
           "eu": "Zure begiak gustatzen zaizkit.",
           "palabras": [
-            "Zure",
+            "zure",
             "begiak",
             "gustatzen",
-            "zaizkit."
+            "zaizkit"
+          ],
+          "distractores": [
+            "urtebetetzea"
           ]
         },
         {

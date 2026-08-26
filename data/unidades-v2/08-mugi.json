@@ -879,10 +879,13 @@
           "es": "Voy a Bilbao en tren.",
           "eu": "Ni trenez Bilbora noa.",
           "palabras": [
-            "Ni",
+            "ni",
             "trenez",
             "Bilbora",
-            "noa."
+            "noa"
+          ],
+          "distractores": [
+            "autobusa"
           ]
         },
         {
@@ -891,9 +894,13 @@
           "es": "¿De dónde vienes?",
           "eu": "Nondik zatoz zu?",
           "palabras": [
-            "Nondik",
+            "nondik",
             "zatoz",
-            "zu?"
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "mendia"
           ]
         },
         {
@@ -902,9 +909,12 @@
           "es": "Mañana vamos al monte.",
           "eu": "Bihar mendira goaz.",
           "palabras": [
-            "Bihar",
+            "bihar",
             "mendira",
-            "goaz."
+            "goaz"
+          ],
+          "distractores": [
+            "doa"
           ]
         },
         {
@@ -913,9 +923,12 @@
           "es": "Ellos vienen a pie.",
           "eu": "Haiek oinez datoz.",
           "palabras": [
-            "Haiek",
+            "haiek",
             "oinez",
-            "datoz."
+            "datoz"
+          ],
+          "distractores": [
+            "hemendik"
           ]
         },
         {
@@ -924,9 +937,13 @@
           "es": "¿Dónde está la estación?",
           "eu": "Non dago geltokia?",
           "palabras": [
-            "Non",
+            "non",
             "dago",
-            "geltokia?"
+            "geltokia",
+            "?"
+          ],
+          "distractores": [
+            "eskuinera"
           ]
         }
       ],
@@ -1140,10 +1157,13 @@
           "es": "Voy al mercado a pie.",
           "eu": "Ni oinez merkatura noa.",
           "palabras": [
-            "Ni",
+            "ni",
             "oinez",
             "merkatura",
-            "noa."
+            "noa"
+          ],
+          "distractores": [
+            "nator"
           ]
         },
         {
@@ -1152,9 +1172,12 @@
           "es": "Está lejos de aquí.",
           "eu": "Hemendik urrun dago.",
           "palabras": [
-            "Hemendik",
+            "hemendik",
             "urrun",
-            "dago."
+            "dago"
+          ],
+          "distractores": [
+            "ezkerrera"
           ]
         },
         {
@@ -1163,10 +1186,13 @@
           "es": "Los lunes voy a la feria.",
           "eu": "Astelehenean azokara joaten naiz.",
           "palabras": [
-            "Astelehenean",
+            "astelehenean",
             "azokara",
             "joaten",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "ospitalea"
           ]
         },
         {
@@ -1175,10 +1201,13 @@
           "es": "Recto y luego a la izquierda.",
           "eu": "Zuzen eta gero ezkerrera.",
           "palabras": [
-            "Zuzen",
+            "zuzen",
             "eta",
             "gero",
-            "ezkerrera."
+            "ezkerrera"
+          ],
+          "distractores": [
+            "noa"
           ]
         },
         {
@@ -1187,9 +1216,12 @@
           "es": "Nosotros venimos en coche.",
           "eu": "Gu kotxez gatoz.",
           "palabras": [
-            "Gu",
+            "gu",
             "kotxez",
-            "gatoz."
+            "gatoz"
+          ],
+          "distractores": [
+            "kotxea"
           ]
         }
       ],
@@ -1511,9 +1543,12 @@
           "es": "No puedo ir.",
           "eu": "Ezin dut joan.",
           "palabras": [
-            "Ezin",
+            "ezin",
             "dut",
-            "joan."
+            "joan"
+          ],
+          "distractores": [
+            "dator"
           ]
         },
         {
@@ -1522,10 +1557,13 @@
           "es": "Tengo que trabajar.",
           "eu": "Lan egin behar dut.",
           "palabras": [
-            "Lan",
+            "lan",
             "egin",
             "behar",
-            "dut."
+            "dut"
+          ],
+          "distractores": [
+            "trena"
           ]
         },
         {
@@ -2785,10 +2823,13 @@
           "es": "Recto, y luego a la izquierda.",
           "eu": "Zuzen, eta gero ezkerrera.",
           "palabras": [
-            "Zuzen,",
+            "zuzen",
             "eta",
             "gero",
-            "ezkerrera."
+            "ezkerrera"
+          ],
+          "distractores": [
+            "kotxea"
           ]
         },
         {
