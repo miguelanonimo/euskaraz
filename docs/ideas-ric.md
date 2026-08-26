@@ -803,6 +803,78 @@ la ficha lo enseña explícitamente («los minutos se cuelgan con *eta* o con
 *gutxi*»); está catalogado en 9.1 con su otro sentido, «poco». Se deja así
 en vez de forzar el número a cero.
 
+### Etiquetas literales en pantalla, y tres cuñas nuevas (2026-08-26)
+
+#### El `<u>` que se veía tal cual — ARREGLADO
+
+Ric: *«me iba encontrando con `<u></u>` o `<b></b>` y se me pasaba
+anotarlo»*. Nueve casos, todos `<u>`, en las **tres versiones del curso**,
+o sea que también estaba en lo publicado.
+
+**El fallo estaba en la app, no en los datos.** `richText()` convertía `<b>`
+e `<i>` pero no `<u>`, así que salía «`<u>ogirik</u>`» en crudo. Y
+`verificar.py` ya daba `<u>` por válida: el que iba por detrás era el
+renderizador.
+
+El uso además es legítimo y **no se podía sustituir por `<b>`**: marca la
+pieza clave *dentro* de un ejemplo que va entero en negrita —
+«Ez dut `<u>`ogirik`</u>` jaten», «Bilbo Gernika `<u>`baino`</u>` handiagoa
+da»—, un segundo nivel de énfasis que la negrita no puede dar.
+
+Añadido a `richText`, y estilado con el color de acento en vez de subrayado
+a secas, que se lee como enlace.
+
+**Comprobado de paso algo que habría sido peor:** `nota`, `explicacion`,
+`pista`, `pregunta` e `instruccion` **no pasan por `richText`** sino por
+`esc()`, así que cualquier etiqueta ahí saldría literal. No hay ninguna, y
+ahora hay una comprobación que lo vigila.
+
+#### Las cuñas: el curso estaba mejor surtido de lo que parecía
+
+Al barrer las 126 fichas, **58 ya tienen contexto histórico o cultural**, y
+las buenas son muy buenas: la base veinte con el guiño al `quatre-vingts`,
+`asteburua` = «la cabeza de la semana», `sukaldea` = «la zona del fuego»,
+el patrón `-gela`, `urdina` cubriendo un rango más amplio que el «azul»
+castellano, y el remate del cuadro de hermanos: *«curiosamente, en una
+lengua sin género gramatical»*.
+
+Así que en vez de rellenar, se buscaron **huecos reales**. Tres:
+
+**1 · «El año tenía dos estaciones, no cuatro» (6.4).** Salió de verificar
+una explicación que yo había escrito de memoria: estaba bien pero corta.
+Tradicionalmente el euskera solo tenía `uda` y `negu`; las otras dos se
+formaron sobre el verano (*udaberri* = verano nuevo, *udazken* = final del
+verano), mientras que «primavera» viene de *prima vera*, «el primer
+verdor», sin relación con «verano». Cada lengua cortó el año por donde le
+importaba.
+
+**2 · «El territorio se llama como la lengua, y no al revés» (1.3).**
+`Euskal Herria` = *euskal* (del euskera) + *herri* (pueblo, territorio).
+El sitio toma el nombre de la lengua, al contrario que el castellano
+(← Castilla) o el `français` (← Francia). Y el sistema es coherente hasta
+el final: `euskaldun` = *euskal* + *-dun* («que tiene»), **el que tiene el
+euskera** — no dice de dónde eres, dice qué hablas. Recogido por escrito
+desde el siglo XVI, y de origen cultural, no político.
+
+**3 · «El jueves y el viernes: los dos que no encajan» (6.2).** Tapa un
+hueco visible: la ficha de los días explicaba los tres `aste-` y dejaba
+`ostegun` y `ostiral` sin comentar, aunque saltan a la vista. El `ost-`
+tiene que ver con el cielo y el trueno, y es la raíz de `Ortzi`. Y el
+paralelo remata: *jueves* ← Júpiter, *Thursday* ← Thor, `ostegun` ← Ortzi.
+Tres familias de lenguas sin relación, y las tres dieron el jueves al mismo
+tipo de dios. **Lleva un aviso explícito de que es la explicación más
+aceptada y no un hecho cerrado**, porque los detalles se siguen discutiendo.
+
+Las tres verificadas antes de escribirlas, y comprobado que sus ejemplos
+solo usan vocabulario ya visto.
+
+#### Huecos que quedan y NO se han tapado
+
+Se miraron y se descartaron a propósito, porque ya estaban cubiertos: el
+patrón `egin` (*lo egin*, *hitz egin*), los meses (tienen cuatro fichas,
+incluida «El año que se llena»), los dobles nombres de las ciudades, y el
+sistema `neba`/`arreba`. Meter algo encima habría sido relleno.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

@@ -170,6 +170,21 @@
           "es": "el estándar, lo que enseña la app"
         }
       ]
+    },
+    {
+      "titulo": "El territorio se llama como la lengua, y no al revés",
+      "cuerpo": "Vuelve a mirar el nombre, despacio:\n\n<b>Euskal Herria</b> = <i>euskal</i> (del euskera) + <i>herri</i> (pueblo, territorio)\n\nEs decir: <b>«el territorio del euskera»</b>. El sitio toma el nombre de la lengua.\n\nFíjate en que en castellano y en francés funciona justo al contrario. El <i>castellano</i> se llama así por Castilla, y el <i>français</i> por Francia: primero está el sitio, y la lengua lleva su nombre. Aquí el orden es el inverso.\n\nY el sistema es coherente hasta el final. La palabra para quien habla euskera es <b>euskaldun</b>, que se descompone igual: <i>euskal</i> + <i>-dun</i>, un sufijo que significa «que tiene». <b>El que tiene el euskera.</b> No dice de dónde eres ni de quién desciendes: dice qué hablas. Y la llevas puesta desde hoy, porque estás aprendiéndolo.\n\nEl término está recogido por escrito desde el <b>siglo XVI</b>, en los primeros libros impresos en euskera, y nació como nombre cultural: señala hasta dónde llega la lengua.",
+      "ejemplos": [
+        {
+          "eu": "Euskal Herria.",
+          "es": "El País Vasco — «el territorio del euskera»."
+        },
+        {
+          "eu": "Euskara.",
+          "es": "La lengua vasca."
+        }
+      ],
+      "subnivel": "1.3"
     }
   ],
   "vocabulario": [
@@ -374,7 +389,7 @@
     {
       "eu": "Euskal Herria",
       "es": "el País Vasco",
-      "nota": "Siempre en dos palabras y las dos con mayúscula.",
+      "nota": "«El territorio del euskera». Siempre en dos palabras y las dos con mayúscula.",
       "categoria": "sustantivo",
       "subnivel": "1.3"
     },
