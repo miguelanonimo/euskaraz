@@ -145,7 +145,8 @@
           "es": "Esos estudiantes hablan euskera. — en batua, «Ikasle horiek…»."
         }
       ],
-      "subnivel": "3.3"
+      "subnivel": "3.3",
+      "registro": "bizkaiera"
     },
     {
       "titulo": "La palabra interrogativa va justo antes del verbo",
@@ -228,7 +229,8 @@
           "audio": "unidades/u3/edonor-etor-daiteke.mp3"
         }
       ],
-      "subnivel": "3.1"
+      "subnivel": "3.1",
+      "registro": "bizkaiera"
     }
   ],
   "vocabulario": [

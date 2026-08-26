@@ -136,7 +136,8 @@
           "audio": "unidades/u6/haiek-tabernan-dagoz.mp3"
         }
       ],
-      "subnivel": "5.2"
+      "subnivel": "5.2",
+      "registro": "bizkaiera"
     },
     {
       "titulo": "Los colores van donde van los adjetivos",
@@ -219,7 +220,8 @@
           "es": "el salón"
         }
       ],
-      "subnivel": "5.2"
+      "subnivel": "5.2",
+      "registro": "bizkaiera"
     }
   ],
   "vocabulario": [

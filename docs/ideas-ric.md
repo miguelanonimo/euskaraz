@@ -951,6 +951,72 @@ Dos salidas, y la elección es de Ric y Miguel:
 Mientras tanto, la ficha nueva no menciona Gernikera: habla de «tu variante»
 y dice que la montada y con audio es el bizkaiera.
 
+### Fuera el gernikés, y las fichas de dialecto siguen al switch (2026-08-26)
+
+Decisión de Ric: *«eliminaremos el Gernikera, era un capricho mío porque
+convivo más en Gernika, pero no es relevante»*.
+
+#### Lo que se ha quitado
+
+- La opción **Gernikera** del desplegable de «Tu cuenta».
+- La rama `gernikes` de `cargarCurso()`, `nombreDialecto()` y `MODO_DIALECTO`.
+- Los comentarios que la describían, que se habrían quedado mintiendo.
+
+**El mecanismo se conserva a propósito**, con una sola entrada
+(`var VARIANTES = { bizkaiera: 'Bizkaiera' }`), porque Ric dice que en el
+futuro podría enriquecerse con otras. Añadir una es una línea.
+
+**Los archivos NO se han borrado.** `data/unidades-gernikes/` y
+`data/curso-gernikes.json` siguen en el repo, desenganchados de la interfaz.
+Es contenido original de Ric y borrarlo es una decisión aparte; si se quiere,
+se hace en un commit propio y limpio. `verificar.py gernikes` los sigue
+revisando.
+
+#### Lo que queda de aquello, y es lo bueno
+
+En vez de una versión entera que mantener, el gernikés se queda como
+**curiosidad dentro de la ficha de los artículos** (u2, 2.3), que es donde
+encaja porque va justo de esa `-a`:
+
+> En **Gernika** y por zonas de Busturialdea, esa *-a* final se oye a menudo
+> como **-ie**: donde aquí escribimos *etxea*, allí suena **etxie**.
+
+Con el aviso de que no hay que aprenderlo —esto es batua— pero que si se oye,
+no es un error.
+
+#### Las fichas de dialecto ahora aparecen y desaparecen con el switch
+
+Petición de Ric: si has elegido que **no** te pregunten en bizkaiera, tampoco
+tiene sentido llenarte la lección de bizkaiera.
+
+Las 19 fichas «Cómo suena esto en Bizkaia» del curso v2 (49 contando los tres
+cursos) llevan ahora **`registro: "bizkaiera"`** en el JSON — igual que ya lo
+llevaba el vocabulario. El código las reconoce **por el dato, no por el
+título**, que sería frágil.
+
+| Switch | Fichas visibles |
+|---|---|
+| **Batua** | 107 de 126 |
+| **Bizkaiera** | las 126 |
+
+Filtrado en un solo sitio (`gramaticaVisible()`), aplicado en los tres que
+importan: la pantalla de gramática, el contador de la unidad y el de cada
+subnivel. Comprobado en la app: el rótulo del subnivel 3.3 pasa de
+«2 explicaciones» a «3» al darle al switch, así que **el contador no miente**.
+
+*Detalle que se simplificó al verlo:* el switch solo está visible en la Home
+(`mostrar()` lo esconde en las demás), y al entrar en una unidad se pinta de
+cero. Así que no hace falta repintar más pantallas — se quitaron esas ramas,
+que eran código muerto.
+
+#### ⚠ Para comentar con Miguel
+
+El brief, sección **5.1**, es un refinamiento que pidió él: *«ambas presentes,
+ninguna oculta»*. Esto **no lo contradice**, porque 5.1 habla del
+**vocabulario** (`kaixo` / `aupa`), y ahí las dos formas siguen visibles y
+etiquetadas como siempre — solo se ocultan las **fichas de explicación**.
+Pero está lo bastante cerca como para decírselo.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

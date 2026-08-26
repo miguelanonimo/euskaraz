@@ -166,7 +166,8 @@
           "audio": "unidades/u2/nogaz-zagoz.mp3"
         }
       ],
-      "subnivel": "2.1"
+      "subnivel": "2.1",
+      "registro": "bizkaiera"
     },
     {
       "titulo": "El verbo «izan» (ser) en presente",
@@ -209,7 +210,7 @@
     },
     {
       "titulo": "El artículo va pegado al final: -a",
-      "cuerpo": "Ya lo has visto en los posesivos, pero ahora toca decirlo del todo. El euskera no tiene «el» ni «la» delante. Añade <b>-a</b> al final de la palabra:\n\n<b>irakasle</b> (profesor) → <b>irakaslea</b> (el profesor)\n<b>etxe</b> (casa) → <b>etxea</b> (la casa)\n<b>mediku</b> (médico) → <b>medikua</b> (el médico)\n\nEl plural es <b>-ak</b>: <i>irakasleak</i>, <i>etxeak</i>.\n\nSi la palabra ya termina en -a, no se dobla: <i>neska</i> (chica) → <i>neska</i> (la chica).\n\nOjo con esto: a diferencia del castellano, en euskera las profesiones <b>sí</b> llevan artículo. Se dice <i>Ni irakasle<b>a</b> naiz</i>, no «Ni irakasle naiz».",
+      "cuerpo": "Ya lo has visto en los posesivos, pero ahora toca decirlo del todo. El euskera no tiene «el» ni «la» delante. Añade <b>-a</b> al final de la palabra:\n\n<b>irakasle</b> (profesor) → <b>irakaslea</b> (el profesor)\n<b>etxe</b> (casa) → <b>etxea</b> (la casa)\n<b>mediku</b> (médico) → <b>medikua</b> (el médico)\n\nEl plural es <b>-ak</b>: <i>irakasleak</i>, <i>etxeak</i>.\n\nSi la palabra ya termina en -a, no se dobla: <i>neska</i> (chica) → <i>neska</i> (la chica).\n\nOjo con esto: a diferencia del castellano, en euskera las profesiones <b>sí</b> llevan artículo. Se dice <i>Ni irakasle<b>a</b> naiz</i>, no «Ni irakasle naiz».\n\nY una curiosidad, ya que estamos con esa <b>-a</b>. El euskera tiene variantes muy locales, de pueblo a pueblo. En <b>Gernika</b> y por zonas de Busturialdea, esa <i>-a</i> final se oye a menudo como <b>-ie</b>: donde aquí escribimos <i>etxea</i>, allí suena <b>etxie</b>.\n\nNo hace falta que lo aprendas ni lo uses —esto es batua, y <i>etxea</i> es lo correcto—, pero si algún día lo oyes, ya sabes que no te estás equivocando de palabra.",
       "ejemplos": [
         {
           "eu": "ikaslea",
@@ -300,7 +301,8 @@
           "audio": "unidades/u4/zuek-ikasleak-zarie.mp3"
         }
       ],
-      "subnivel": "2.3"
+      "subnivel": "2.3",
+      "registro": "bizkaiera"
     }
   ],
   "vocabulario": [

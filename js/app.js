@@ -10,12 +10,17 @@
 
   var CURSO = null;
 
-  // Variante dialectal: 'bizkaiera' (Bilbao, revisado y con audio) o
-  // 'gernikes' (contenido original de Ric, Busturialdea/Gernika, sin
-  // audio todavía). Es preferencia de aparato, no de progreso — vive en
-  // localStorage, no en Supabase.
+  /* Variante dialectal. Hoy solo hay una, el bizkaiera (Bilbao, revisado y
+     con audio). La de Gernika se retiró: era una preferencia personal de Ric
+     y no aportaba al curso, así que se queda como una curiosidad dentro de
+     la ficha de los artículos (el «etxie» por «etxea») en vez de como una
+     versión entera que mantener.
+     El mecanismo se conserva a propósito, con una sola entrada, para poder
+     añadir otras variantes más adelante sin rehacer esto. Es preferencia de
+     aparato, no de progreso — vive en localStorage, no en Supabase. */
+  var VARIANTES = { bizkaiera: 'Bizkaiera' };
   var CLAVE_DIALECTO = 'euskaraz.dialecto';
-  var MODO_DIALECTO = localStorage.getItem(CLAVE_DIALECTO) === 'gernikes' ? 'gernikes' : 'bizkaiera';
+  var MODO_DIALECTO = VARIANTES[localStorage.getItem(CLAVE_DIALECTO)] ? localStorage.getItem(CLAVE_DIALECTO) : 'bizkaiera';
   var CLAVE = 'euskaraz.progreso.v2';
   var CLAVE_VIEJA = 'euskaraz.progreso.v1';
 
@@ -961,9 +966,21 @@
     return (lista || []).filter(function (x) { return x.subnivel === sub; });
   }
 
+  /* Las fichas de dialecto («Cómo suena esto en Bizkaia», marcadas con
+     registro: 'bizkaiera') solo salen cuando el switch de la cabecera está
+     en tu variante. En Batua se ve la explicación genérica y nada más
+     — petición de Ric: si has elegido no que te pregunten en bizkaiera,
+     tampoco tiene sentido llenarte la lección de bizkaiera.
+     Ojo: esto NO afecta al vocabulario. Ahí las dos formas siguen
+     visibles y etiquetadas, que es la decisión de Miguel en el brief 5.1. */
+  function gramaticaVisible(lista) {
+    if (incluirDialectales) return lista || [];
+    return (lista || []).filter(function (g) { return g.registro !== 'bizkaiera'; });
+  }
+
   function contenidoSub(u, sub) {
     return {
-      gramatica:  delSubnivel(u.gramatica, sub),
+      gramatica:  gramaticaVisible(delSubnivel(u.gramatica, sub)),
       vocabulario:delSubnivel(u.vocabulario, sub),
       ejercicios: delSubnivel(u.ejercicios, sub)
     };
@@ -1010,7 +1027,7 @@
     } else {
       el.cardstackUnidad.hidden = false;
       el.subList.hidden = true;
-      el.gramCount.textContent = u.gramatica.length + ' explicaciones';
+      el.gramCount.textContent = gramaticaVisible(u.gramatica).length + ' explicaciones';
       el.vocabCount.textContent = u.vocabulario.length + ' palabras';
       var variantes = u.ejercicios.reduce(function (n, g) {
         return n + ((g.variantes && g.variantes.length) || 1);
@@ -1188,7 +1205,7 @@
     var u = estado.unidad;
     el.topbarTitle.textContent = 'Gramática · ' + u.titulo;
 
-    el.gramContent.innerHTML = delSubnivel(u.gramatica, estado.subnivel).map(function (g) {
+    el.gramContent.innerHTML = gramaticaVisible(delSubnivel(u.gramatica, estado.subnivel)).map(function (g) {
       var ejemplos = '';
       if (g.ejemplos && g.ejemplos.length) {
         ejemplos = '<ul class="exlist">' + g.ejemplos.map(function (e) {
@@ -2831,21 +2848,17 @@
 
   /* El índice (data/curso.json) lista los archivos de cada unidad, que
      viven en data/unidades/. Así se puede añadir o reordenar temario sin
-     tocar un archivo gigante. En modo gernikes se lee data/curso-gernikes.json,
-     que apunta a data/unidades-gernikes/ — el contenido original de Ric.
-     La versión de un solo archivo deja el curso ya montado en
-     window.__CURSO__, y entonces no hace falta pedir nada (no se usa en
-     modo gernikes). */
+     tocar un archivo gigante. La versión de un solo archivo deja el curso
+     ya montado en window.__CURSO__, y entonces no hace falta pedir nada. */
   function cargarCurso() {
-    if (window.__CURSO__ && MODO_DIALECTO === 'bizkaiera') return Promise.resolve(window.__CURSO__);
+    if (window.__CURSO__) return Promise.resolve(window.__CURSO__);
     /* Reestructuración en 10 unidades con subniveles: se prueba en local
        con ?v2 en la dirección, sin tocar el curso actual. Cuando esté
        decidida, esto desaparece y curso-v2 pasa a ser curso.
        Ver docs/propuesta-10-unidades.md. */
     var V2 = MODO_LOCAL && /[?&]v2\b/.test(location.search);
     window.__CURSO_V2__ = V2;
-    var indicePath = V2 ? 'data/curso-v2.json'
-                        : (MODO_DIALECTO === 'gernikes' ? 'data/curso-gernikes.json' : 'data/curso.json');
+    var indicePath = V2 ? 'data/curso-v2.json' : 'data/curso.json';
     return traer(indicePath).then(function (indice) {
       return Promise.all(indice.unidades.map(function (ruta) {
         return traer('data/' + ruta);
@@ -2878,7 +2891,7 @@
   }
 
   function nombreDialecto(modo) {
-    return modo === 'gernikes' ? 'Gernikera' : 'Bizkaiera';
+    return VARIANTES[modo] || VARIANTES.bizkaiera;
   }
 
   /* El botón de la topbar ya no elige QUÉ dataset cargar —eso ahora es
@@ -2897,6 +2910,9 @@
   el.btnDialecto.addEventListener('click', function () {
     setIncluirDialectales(!incluirDialectales);
     pintarDialecto();
+    // El switch solo está visible en la Home (ver mostrar()), y al entrar en
+    // una unidad se pinta de cero, así que basta con refrescar aquí: no hay
+    // ninguna pantalla abierta que pueda quedarse con el recuento viejo.
     if (estado.pantalla === 'home') pantallaHome();
   });
   pintarDialecto();

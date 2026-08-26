@@ -168,7 +168,8 @@
           "audio": "unidades/u11/etxean-egoan.mp3"
         }
       ],
-      "subnivel": "10.2"
+      "subnivel": "10.2",
+      "registro": "bizkaiera"
     },
     {
       "titulo": "Preguntas de sí o no: la partícula «al»",
@@ -300,7 +301,8 @@
           "audio": "unidades/u12/zegaitik.mp3"
         }
       ],
-      "subnivel": "10.6"
+      "subnivel": "10.6",
+      "registro": "bizkaiera"
     },
     {
       "subnivel": "10.3",

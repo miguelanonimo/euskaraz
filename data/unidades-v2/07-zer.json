@@ -185,7 +185,8 @@
           "audio": "unidades/u8/berandu-etorten-naz.mp3"
         }
       ],
-      "subnivel": "7.1"
+      "subnivel": "7.1",
+      "registro": "bizkaiera"
     },
     {
       "titulo": "«Gatza» y «azukrea»: dos que se confunden",
@@ -215,7 +216,8 @@
           "es": "el queso"
         }
       ],
-      "subnivel": "7.5"
+      "subnivel": "7.5",
+      "registro": "bizkaiera"
     },
     {
       "subnivel": "7.3",

@@ -141,7 +141,7 @@ for ruta, u in unidades:
         # `subnivel` es nuestro: reparte la unidad en tramos internos.
         # Es opcional; las unidades sin él se pintan como siempre.
         if not {"titulo","cuerpo","ejemplos"} <= set(gr) or \
-           not set(gr) <= {"titulo","cuerpo","ejemplos","subnivel"}:
+           not set(gr) <= {"titulo","cuerpo","ejemplos","subnivel","registro"}:
             errores.append("%s: ficha de gramática con claves raras en «%s»: %s"
                            % (ruta, gr.get("titulo","?"), sorted(gr)))
         # La app convierte cada \n suelto en un <br>. En una lista eso es lo
@@ -170,8 +170,8 @@ for ruta, u in unidades:
     # El original pedía una ficha de Gernika por unidad. Esta adaptación
     # mira a Bilbao, y Miguel las tituló «Cómo suena esto en Bizkaia»;
     # se acepta cualquiera de las dos.
-    if not any(u"Gernika" in gr["titulo"] or u"Bizkaia" in gr["titulo"]
-               for gr in u["gramatica"]):
+    if not any(gr.get("registro") == "bizkaiera" or u"Gernika" in gr["titulo"]
+               or u"Bizkaia" in gr["titulo"] for gr in u["gramatica"]):
         avisos.append("%s: no tiene ficha de dialecto" % ruta)
 
     for gexp in u["ejercicios"]:

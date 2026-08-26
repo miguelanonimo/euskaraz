@@ -163,7 +163,8 @@
           "audio": "unidades/u7/barikuan-gabean.mp3"
         }
       ],
-      "subnivel": "6.2"
+      "subnivel": "6.2",
+      "registro": "bizkaiera"
     },
     {
       "titulo": "El jueves y el viernes: los dos que no encajan",
@@ -257,7 +258,8 @@
           "es": "¡Feliz cumpleaños!"
         }
       ],
-      "subnivel": "6.3"
+      "subnivel": "6.3",
+      "registro": "bizkaiera"
     },
     {
       "titulo": "Las cuatro estaciones salen de dos palabras",
@@ -359,7 +361,8 @@
           "es": "la Navidad"
         }
       ],
-      "subnivel": "6.5"
+      "subnivel": "6.5",
+      "registro": "bizkaiera"
     }
   ],
   "vocabulario": [
