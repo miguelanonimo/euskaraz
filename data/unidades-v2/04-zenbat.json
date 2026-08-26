@@ -4674,87 +4674,78 @@
       "subnivel": "4.2",
       "variantes": [
         {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Berrogeita bi» es…",
+          "opciones": [
+            "42",
+            "22",
+            "62",
+            "46"
+          ],
+          "correcta": 0,
+          "explicacion": "«Berrogei» son 40 (dos veintes) y «bi» es 2."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice 76?",
+          "opciones": [
+            "hirurogeita hamasei",
+            "hirurogeita sei",
+            "laurogeita hamasei",
+            "hirurogeita hamar"
+          ],
+          "correcta": 0,
+          "explicacion": "60 (tres veintes) + 16. «Hirurogeita sei» sería 66, y «hirurogeita hamar», 70."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hogeita hamabost» se desmonta en…",
+          "opciones": [
+            "20 + 15",
+            "30 + 5",
+            "25 + 10",
+            "20 + 35"
+          ],
+          "correcta": 0,
+          "explicacion": "Da 35. El segundo trozo es «hamabost», quince."
+        },
+        {
           "tipo": "pares",
-          "instruccion": "Empareja seguir contando",
+          "instruccion": "Empareja los números",
           "pares": [
             {
-              "eu": "berrogeita hamar",
-              "es": "cincuenta"
+              "eu": "berrogeita bi",
+              "es": "42"
             },
             {
-              "eu": "ehun",
-              "es": "cien"
+              "eu": "hogeita bi",
+              "es": "22"
             },
             {
-              "eu": "laurogei",
-              "es": "ochenta"
+              "eu": "hirurogeita hamasei",
+              "es": "76"
             },
             {
-              "eu": "hirurogeita hamar",
-              "es": "setenta"
+              "eu": "laurogeita hamaika",
+              "es": "91"
             }
           ]
         },
         {
-          "tipo": "pares",
-          "instruccion": "Empareja seguir contando",
-          "pares": [
-            {
-              "eu": "hogeita hamar",
-              "es": "treinta"
-            },
-            {
-              "eu": "hirurogeita hamar",
-              "es": "setenta"
-            },
-            {
-              "eu": "laurogeita hamar",
-              "es": "noventa"
-            },
-            {
-              "eu": "hirurogei",
-              "es": "sesenta"
-            }
-          ]
-        },
-        {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «hogeita hamar»?",
+          "pregunta": "En un número como «berrogeita hamalau», el segundo trozo nunca pasa de…",
           "opciones": [
-            "treinta",
-            "(él/ella) tiene",
-            "el marido",
-            "el primero"
+            "19",
+            "9",
+            "20",
+            "99"
           ],
           "correcta": 0,
-          "explicacion": "Veinte y diez."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«cien» se dice…",
-          "opciones": [
-            "ehun",
-            "biloba",
-            "hamar",
-            "txerria"
-          ],
-          "correcta": 0,
-          "explicacion": "cien = ehun."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «berrogei»?",
-          "opciones": [
-            "cuarenta",
-            "ochenta",
-            "quince",
-            "(tú) tienes"
-          ],
-          "correcta": 0,
-          "explicacion": "Dos veintes."
+          "explicacion": "Porque al llegar a 20 empieza la veintena siguiente. Por eso hacen falta los números del once al diecinueve antes de contar alto."
         }
       ]
     },

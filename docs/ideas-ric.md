@@ -1363,6 +1363,32 @@ Las diez unidades llegan a 12. Verificado también en la app: el contador dice
 `scripts/probar_test.js` comprueba las dos cosas —el tamaño y el reparto— y
 el mínimo de 10 por si algún día se toca el número.
 
+### Números compuestos en los ejercicios (26/08/2026)
+
+Ric: *«estaría bien que alguna de las preguntas preguntara algún número que
+no sea exacto 40, 60, 50… sino algo más complicado como 42 o 76»*.
+
+Tenía razón y era peor de lo que parecía: **los cinco grupos de 4.2
+preguntaban solo decenas redondas**, ni un compuesto — justo lo que la ficha
+enseña a construir. Y entre ellos eran casi el mismo ejercicio con las
+palabras barajadas.
+
+Reescrito `u4-g44`, uno de los cinco: ahora va de componer y descomponer
+(42, 76, 22, 91, 35), y remata con la idea que sostiene todo el sistema — el
+segundo trozo nunca pasa de 19, que es por lo que hacen falta el once al
+diecinueve antes de contar alto. De paso baja la repetición del tema.
+
+**Aviso sobre la verificación, que casi me la cuela.** Al buscar la
+construcción, el resumen del buscador afirmó que **42 es «hogeita bi»**. Es
+falso: `hogeita bi` es 20+2 = **22**. La fuente consultada después lo da bien
+(`berrogeita bi`). Y de 76 y 91 la extracción devolvía el redondo más
+cercano (70 y 90).
+
+Por eso las ocho formas del ejercicio —respuestas y distractores— se pasaron
+por un comprobador aritmético que las desmonta pieza a pieza. Los
+distractores además no coinciden por accidente con la respuesta:
+`hirurogeita sei` es 66, `laurogeita hamasei` 96 y `hirurogeita hamar` 70.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
