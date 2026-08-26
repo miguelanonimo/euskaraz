@@ -20,8 +20,22 @@ const nombres = ['esc','normalizar','variantesRespuesta','todasLasVariantes','cl
                  'esCasiCorrecto','alinear','pintarTrozos','comparacion','combinar',
                  'expandirBarra','corregirTeclear'];
 const cuerpo = nombres.map(sacar).join('\n\n');
+// Las tablas de módulo salen del propio app.js, para que la prueba use las
+// mismas que la app y no una copia que se quede vieja.
+function sacarVar(nombre) {
+  const i = src.indexOf('var ' + nombre + ' =');
+  if (i < 0) throw new Error('no está la variable ' + nombre);
+  let prof = 0, dentro = false;
+  for (let k = i; k < src.length; k++) {
+    if (src[k] === '{' || src[k] === '(') { prof++; dentro = true; }
+    else if (src[k] === '}' || src[k] === ')') prof--;
+    if (dentro && prof === 0) return src.slice(i, src.indexOf(';', k) + 1);
+    if (!dentro && src[k] === ';') return src.slice(i, k + 1);
+  }
+}
 const previo = `
   var ARTICULO_ES = /^(el|la|los|las|un|una|unos|unas)\s+/;
+  ${['TILDES','CIFRAS','LETRAS'].map(sacarVar).join('\n')}
   var typebox = { value: '', blur: function () {} };
   function $(){ return typebox; }
 `;
