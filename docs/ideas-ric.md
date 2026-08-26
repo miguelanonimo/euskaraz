@@ -1662,6 +1662,28 @@ Las otras dos cuñas de ese día (las estaciones y `Euskal Herria`) se apoyan en
 etimologías transparentes y verificadas; esta se apoyaba en una
 reconstrucción discutida.
 
+### Las listas largas, una por línea (26/08/2026)
+
+Ric, sobre los doce meses: iban de tres en tres separados por «·», y uno por
+línea **se lee y se memoriza mejor**. Hecho.
+
+Aplicado el mismo criterio a las otras listas apretadas del curso, pero solo
+donde es un **conjunto que hay que aprenderse**:
+
+- los números **del uno al diez**
+- los **ordinales del 4 al 12**
+- los **demostrativos en plural** (hauek / horiek / haiek)
+- las tres tablas de contraste del **repaso de bizkaiera** (naiz → naz…)
+
+**Tres se quedan en una línea, a propósito**, porque ahí la línea dice algo:
+
+- `hogei · berrogei · hirurogei · laurogei` — seguidas se ve la escalera de
+  veintes, que es justo lo que enseña esa ficha.
+- `Lapurdi · Nafarroa Beherea · Zuberoa` — es un apunte breve, no una lista
+  que memorizar; el detalle está en los cuatro del sur.
+- `1. = lehena · 2. = bigarrena · 3. = hirugarrena` — son el ejemplo de cómo
+  se escribe con cifra, no la lista de ordinales.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
