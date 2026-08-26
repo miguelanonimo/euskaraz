@@ -1470,6 +1470,29 @@ que queda suelto. Sin eso, «Gabon, ikusi arte» marcaba `ikusi` como palabra de
 la unidad 7, cuando `ikusi arte` es de la 1.1. Y hay que normalizar los signos
 de interrogación de las claves, o `eta zu?` no casa con `eta zu`.
 
+### «Komuna» explicada, y una referencia vieja que se había escapado (26/08/2026)
+
+Ric: `komuna` estaba en el vocabulario **sin explicar**, y es una oportunidad
+perdida porque **en público se pregunta por el komuna, no por el bainugela**.
+
+Añadido a la ficha de la casa, con la distinción práctica: en casa es
+<b>bainugela</b>; en un bar, un restaurante o un museo, lo que se pregunta y lo
+que pone en la puerta es <b>Komunak</b>, casi siempre en plural. Y la frase
+entera, <b>Non dago komuna?</b>, que se construye con `non` y `dago`, ya
+suyos. Las notas de las dos palabras se remiten la una a la otra.
+
+#### El fallo que salió de paso
+
+La misma ficha decía: *«jan y egon son verbos que llevas usando desde las
+unidades 6 y 8»*. Estamos en la **5**. `egon` es del tema anterior de esta
+misma unidad y `jan` es de la **7** — o sea que mandaba hacia adelante y hacia
+atrás a la vez, resto de la numeración vieja.
+
+**Se le había escapado al barrido de referencias**, que buscaba «(en/de) la
+unidad N» en singular y no cazaba las plurales. `verificar.py` coge ahora
+también «las unidades 6 y 8», y da error si una explicación remite a su propia
+unidad o a una posterior. Probado a la inversa con el texto viejo puesto.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

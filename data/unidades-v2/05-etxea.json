@@ -195,19 +195,19 @@
     },
     {
       "titulo": "Las habitaciones acaban casi todas en -gela",
-      "cuerpo": "Ya conoces <b>gela</b> (la habitación, el aula) y <b>logela</b> (el dormitorio). Pues el patrón sigue, y una vez lo ves te ahorras memorizar:\n\n<b>lo</b> (dormir) + gela → <b>logela</b>, el dormitorio\n<b>jan</b> (comer) + gela → <b>jangela</b>, el comedor\n<b>egon</b> (estar) + gela → <b>egongela</b>, el salón — literalmente «la habitación de estar»\n<b>bainu</b> (baño) + gela → <b>bainugela</b>, el cuarto de baño\n\nTres de esas cuatro piezas ya las tenías de antes: <i>jan</i> y <i>egon</i> son verbos que llevas usando desde las unidades 6 y 8.",
+      "cuerpo": "Ya conoces <b>gela</b> (la habitación, el aula) y <b>logela</b> (el dormitorio). Pues el patrón sigue, y una vez lo ves te ahorras memorizar:\n\n<b>lo</b> (dormir) + gela → <b>logela</b>, el dormitorio\n<b>jan</b> (comer) + gela → <b>jangela</b>, el comedor\n<b>egon</b> (estar) + gela → <b>egongela</b>, el salón — literalmente «la habitación de estar»\n<b>bainu</b> (baño) + gela → <b>bainugela</b>, el cuarto de baño\n\nDe esas cuatro piezas ya tienes dos: <b>gela</b>, de hace un momento, y <b>egon</b>, del tema anterior de esta misma unidad. <i>Jan</i> (comer) llega en la unidad 7; apúntatela de paso, que aquí ya la ves trabajando.\n\n<b>Y ahora la que más te va a hacer falta fuera de casa.</b>\n\nEn casa, el cuarto de baño es <b>bainugela</b>. Pero en un bar, en un restaurante o en un museo, lo que se pregunta y lo que verás escrito en la puerta es otra palabra:\n\n<b>komuna</b> — el baño, el servicio\n\nY casi siempre en plural, porque son varios: <b>Komunak</b>. Es lo que pone en los carteles.\n\nAsí que si te pierdes buscándolo, la frase es <b>Non dago komuna?</b> — ¿dónde está el baño? Con <i>non</i> y <i>dago</i>, que ya son tuyos. <i>Bainugela</i> ahí no sonaría mal, pero sonaría a que preguntas por el cuarto de baño de una casa.",
       "ejemplos": [
         {
-          "eu": "logela",
-          "es": "el dormitorio"
+          "eu": "Non dago komuna?",
+          "es": "¿Dónde está el baño?"
         },
         {
-          "eu": "jangela",
-          "es": "el comedor"
+          "eu": "Komunak",
+          "es": "Servicios — lo que pone en la puerta."
         },
         {
-          "eu": "egongela",
-          "es": "el salón"
+          "eu": "Bainugela handia da.",
+          "es": "El cuarto de baño es grande."
         }
       ],
       "subnivel": "5.2"
@@ -346,8 +346,8 @@
     },
     {
       "eu": "komuna",
-      "es": "el baño",
-      "nota": null,
+      "es": "el baño, el servicio",
+      "nota": "El de fuera de casa. En los carteles va en plural, «Komunak». El de casa es «bainugela».",
       "audio": "unidades/u6/komuna.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
@@ -534,7 +534,7 @@
     {
       "eu": "bainugela",
       "es": "el cuarto de baño",
-      "nota": null,
+      "nota": "El de casa. Para preguntar en un bar, «komuna».",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
