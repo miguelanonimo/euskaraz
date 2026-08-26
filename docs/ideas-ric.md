@@ -1389,6 +1389,28 @@ por un comprobador aritmético que las desmonta pieza a pieza. Los
 distractores además no coinciden por accidente con la respuesta:
 `hirurogeita sei` es 66, `laurogeita hamasei` 96 y `hirurogeita hamar` 70.
 
+### «Azkena» estaba de paso en la ficha de ordinales (26/08/2026)
+
+Ric: en los ordinales se explica `lehena` pero no `azkena`, y debería estar
+en el texto de gramática.
+
+Estaba — pero en **una línea suelta** entre la lista y las irregularidades,
+tan de paso que Ric la leyó y no se le quedó. Y es **el problema del 3.3 al
+revés**: `azkena` se practica en **siete variantes** y se explicaba en media
+frase.
+
+Reescrita esa parte con un encuadre que además es cierto y se recuerda: **los
+dos extremos de la serie son justo los que se escapan de la regla.** `lehena`
+no es «batgarrena», y `azkena` no se construye con ningún número.
+
+Y se le añade el porqué, que es lo que faltaba: «último» **no es un puesto
+fijo**, depende de cuántos haya. En una fila de tres, el tercero y el último
+son el mismo; en una de diez, no. Por eso necesita palabra propia y no puede
+salir de un número más `-garren`.
+
+Ejemplos ampliados con `Lehena eta azkena`, y comprobado que ninguno usa
+vocabulario posterior.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

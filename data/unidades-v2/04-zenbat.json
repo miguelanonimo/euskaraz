@@ -314,7 +314,7 @@
     {
       "subnivel": "4.3",
       "titulo": "Los ordinales: el número más «-garren»",
-      "cuerpo": "Ya sabes contar. Para decir «el primero, la segunda, el tercero» solo hace falta una pieza que se pega detrás del número: <b>-garren</b>. Y luego la <b>-a</b> del artículo, como en todo lo demás.\n\nAquí están los doce primeros, que es lo que se usa a diario — plantas, meses, turnos, capítulos:\n\n<b>1. lehena</b> — el primero, la primera\n<b>2. bigarrena</b> — el segundo, la segunda\n<b>3. hirugarrena</b> — el tercero, la tercera\n<b>4. laugarrena</b> · <b>5. bosgarrena</b> · <b>6. seigarrena</b>\n<b>7. zazpigarrena</b> · <b>8. zortzigarrena</b> · <b>9. bederatzigarrena</b>\n<b>10. hamargarrena</b> · <b>11. hamaikagarrena</b> · <b>12. hamabigarrena</b>\n\nY uno suelto que hace falta constantemente: <b>azkena</b>, el último o la última.\n\n<b>Dos irregularidades, y ya está:</b>\n\nEl primero no es «batgarrena» sino <b>lehena</b> (también <i>lehenengoa</i>). Es la excepción de siempre, la misma que en castellano hace «primero» y no «unoero».\n<i>bost</i> pierde la t: <b>bosgarrena</b>, no «bostgarrena».\n\n<b>Y una cosa que conviene tener presente desde ya.</b> Habrás notado que arriba pone «el segundo, la segunda» para una sola palabra. No es por escribir de más: <b>en euskera esa distinción no existe</b>. <i>Bigarrena</i> es las dos cosas, y solo el contexto —o nada— dice de quién hablas. Lo mismo pasa con <i>laguna</i> (el amigo o la amiga) y con <i>irakaslea</i> (el profesor o la profesora). No hay que elegir, y no se te va a olvidar el género de nada, porque no hay ninguno.",
+      "cuerpo": "Ya sabes contar. Para decir «el primero, la segunda, el tercero» solo hace falta una pieza que se pega detrás del número: <b>-garren</b>. Y luego la <b>-a</b> del artículo, como en todo lo demás.\n\nAquí están los doce primeros, que es lo que se usa a diario — plantas, meses, turnos, capítulos:\n\n<b>1. lehena</b> — el primero, la primera\n<b>2. bigarrena</b> — el segundo, la segunda\n<b>3. hirugarrena</b> — el tercero, la tercera\n<b>4. laugarrena</b> · <b>5. bosgarrena</b> · <b>6. seigarrena</b>\n<b>7. zazpigarrena</b> · <b>8. zortzigarrena</b> · <b>9. bederatzigarrena</b>\n<b>10. hamargarrena</b> · <b>11. hamaikagarrena</b> · <b>12. hamabigarrena</b>\n\nY ahora fíjate en una cosa: <b>los dos extremos de la serie son justo los que se escapan de la regla</b>.\n\n<b>El primero</b> no es «batgarrena» sino <b>lehena</b> (también <i>lehenengoa</i>). Es la excepción de siempre, la misma que en castellano hace «primero» y no «unoero».\n\n<b>El último</b> es <b>azkena</b>, y no se construye con ningún número. Tiene su lógica si lo piensas: «último» no es un puesto fijo, depende de cuántos haya. En una fila de tres, el tercero y el último son el mismo; en una de diez, no. Por eso necesita palabra propia.\n\nEntre esos dos, todo va con <i>-garren</i>. Con un solo detalle: <i>bost</i> pierde la t, <b>bosgarrena</b> y no «bostgarrena».\n\n<b>Y una cosa que conviene tener presente desde ya.</b> Habrás notado que arriba pone «el segundo, la segunda» para una sola palabra. No es por escribir de más: <b>en euskera esa distinción no existe</b>. <i>Bigarrena</i> es las dos cosas, y solo el contexto —o nada— dice de quién hablas. Lo mismo pasa con <i>laguna</i> (el amigo o la amiga) y con <i>irakaslea</i> (el profesor o la profesora). No hay que elegir, y no se te va a olvidar el género de nada, porque no hay ninguno.",
       "ejemplos": [
         {
           "eu": "Bigarrena naiz.",
@@ -327,6 +327,10 @@
         {
           "eu": "Azkena da.",
           "es": "Es el último. · Es la última."
+        },
+        {
+          "eu": "Lehena eta azkena.",
+          "es": "El primero y el último."
         }
       ]
     },
