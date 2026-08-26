@@ -1102,6 +1102,87 @@ Comprobado en `scripts/probar_navegacion.js`, que recorre **los 48 temas de
 las 10 unidades** verificando a dónde manda cada «Seguir», que el test no lo
 ofrezca, y qué botones salen en cada caso.
 
+### Quinta tanda: agujeros de explicación en las unidades 3 y 4 (26/08/2026)
+
+Todo detectado por Ric **haciendo el curso**, que es donde se ven.
+
+#### Respuestas
+
+**`zenbat?` daba «casi correcto» a «cuánto».** Su traducción es «¿cuánto?
+¿cuántos?» — dos alternativas separadas solo por el cierre de interrogación,
+y los separadores que el código entendía eran la coma y la barra. Las trataba
+como **una sola respuesta de dos palabras**. Arreglado en el motor, no palabra
+por palabra: ahora `? ¿` separa alternativas, patrón que no es ambiguo. Le
+pasaba también a `zein?` y a `nondik?`.
+
+**`zergatik?` y «porqué»: se queda como error, a propósito.** Ric preguntó si
+debería aceptarse. La respuesta salió al probarlo: como las tildes se aplanan,
+aceptar «porqué» acepta también **«porque»** — y «porque» ya es de `-lako`, el
+sufijo causal. Aceptarla enseñaría a confundir dos palabras del curso. Es el
+mismo motivo que impidió dar «bien» a `oso ondo`. En vez de eso, la nota de
+`zergatik?` explica ahora la diferencia.
+
+#### Explicaciones que faltaban
+
+**3.4 practicaba exclamativas sin explicarlas.** Siete variantes preguntaban
+por `Hau hotza!` y no había ninguna ficha. El agujero del 3.3 otra vez.
+Escrita **«Exclamar: la misma palabra que para señalar»**, que engancha con
+los demostrativos que se acaban de ver y avisa de que los adjetivos llegan en
+la unidad 5.
+
+**4.1 «Números del 1 al 20» empezaba por el once.** Los diez primeros estaban
+en el vocabulario y no los presentaba nadie. Escrita **«Del uno al diez»**,
+con los tres avisos que ahorran disgustos (`bat` es también «un/una» y va
+detrás; `bi` admite las dos posiciones; detrás de número el sustantivo va sin
+artículo).
+
+**4.6 «La familia» no presentaba la familia.** Efecto de la fusión: «La
+familia cercana» solo aportaba la ficha de los hermanos y «La familia
+extendida» hablaba de casos particulares. Veinte palabras y nada que las
+ordenara — y salían en las pruebas. Escrita **«La familia, de arriba abajo»**,
+con el mapa entero y dos observaciones: casi ninguna se empareja por género
+(*aita*/*ama*, *osaba*/*izeba* no se parecen), y la excepción que canta es
+`lehengusua`/`lehengusina`, que vino de fuera con el emparejamiento puesto.
+
+#### Explicaciones que se quedaban cortas
+
+**4.2** ahora **desmonta el 71 y el 54** paso a paso, señala que el segundo
+trozo nunca pasa de 19 (que es por lo que hacía falta el once-diecinueve
+antes), y amplía el paralelo con el francés: *soixante-dix*, *quatre-vingts*,
+y que el francés solo lo hace a partir del 60 mientras el euskera lo lleva de
+principio a fin.
+
+**4.3** lista **los doce primeros ordinales** en vez de cinco, con sus siete
+palabras nuevas al vocabulario (más distractores para los ejercicios).
+
+**4.5 `eduki`** se conjuga **entero** (nik, zuk, hark, guk, zuek, haiek),
+verificado en fuente, señalando que todas empiezan por `dauka-` y que quien
+tiene lleva la `-k` del ergativo. Y se quitó la referencia a `jaten dut`, que
+es de la unidad 7: ahora dice que ese mecanismo llega más adelante. El
+ejercicio `u4-g21 v4` lo citaba igual y también se reescribió.
+
+**Vocabulario que se usaba sin presentar:** `astia` (no estaba en ninguna
+unidad) y `dirua` (estaba en 9.5, cuatro unidades después de usarse) pasan a
+4.5. Quitada la duplicada de 9.5, que la sigue practicando como repaso.
+
+**4.6, ejemplos con «nik»** (pedido por Ric): las tres frases comparadas
+—`Nik arreba bat daukat` / `Nik ahizpa bat daukat` / `Mikelek arreba bat
+dauka`— dejan ver que la `-k` marca a quien tiene, y que las dos primeras son
+la misma frase en castellano y palabras distintas en euskera.
+
+#### El género en las explicaciones
+
+Ric: *«a veces me da la sensación de que las explicaciones son siempre en
+masculino»*. El vocabulario ya estaba bien («el/la amigo/a», «nosotros /
+nosotras»); donde se escoraba era en **las tablas de conjugación**.
+
+Decisión de estilo: **doblar todas las glosas dejaría el texto ilegible**. Así
+que la tabla de `izan` —la primera del curso— va doblada y rematada con el
+porqué («de aquí en adelante no lo repetiremos, pero da igual siempre»), y a
+partir de ahí se **alterna**: las formas reforzadas abren en femenino, y la
+ficha de ordinales explica que `bigarrena` es «el segundo» y «la segunda» sin
+que haya que elegir.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

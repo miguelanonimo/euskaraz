@@ -171,6 +171,21 @@
       "subnivel": "3.1"
     },
     {
+      "titulo": "Exclamar: la misma palabra que para señalar",
+      "cuerpo": "Acabas de ver <b>hau</b> como demostrativo, «esto». Pues sirve también para exclamar, y el molde no puede ser más simple:\n\n<b>hau</b> + adjetivo = <b>¡qué + adjetivo!</b>\n\n<b>Hau hotza!</b> — ¡Qué frío!\n<b>Hau beroa!</b> — ¡Qué calor!\n<b>Hau polita!</b> — ¡Qué bonito!\n<b>Hau handia!</b> — ¡Qué grande!\n\nSi lo piensas literalmente es «¡esto frío!», y de ahí sale el sentido. El castellano hace algo parecido con «¡esto sí que es frío!», solo que nosotros necesitamos más piezas.\n\nEl adjetivo va con su <b>-a</b> final, la misma que ya conoces del artículo: <i>hotz<b>a</b></i>, <i>polit<b>a</b></i>.\n\nLos adjetivos en sí llegan en la unidad 5, con calma. Aquí quédate con el molde, que es lo que se repite — y con que la palabra para señalar y la palabra para exclamar son <b>la misma</b>.",
+      "ejemplos": [
+        {
+          "eu": "Hau polita!",
+          "es": "¡Qué bonito! · ¡Qué bonita!"
+        },
+        {
+          "eu": "Hau handia!",
+          "es": "¡Qué grande!"
+        }
+      ],
+      "subnivel": "3.4"
+    },
+    {
       "titulo": "Frases hechas: apréndetelas enteras por ahora",
       "cuerpo": "En los ejemplos de esta unidad aparecen formas verbales que todavía no hemos explicado: <i>zara, zaude, da, dituzu</i>.\n\nNo pasa nada. Trátalas como bloques cerrados, igual que aprendiste <i>zer moduz?</i> sin desmontarlo.\n\n<b>Nor zara zu?</b> — ¿Quién eres tú?\n<b>Non zaude?</b> — ¿Dónde estás?\n<b>Nongoa zara?</b> — ¿De dónde eres?\n<b>Zer da hau?</b> — ¿Qué es esto?\n<b>Zenbat urte dituzu?</b> — ¿Cuántos años tienes?\n<b>Nola duzu izena?</b> — ¿Cómo te llamas?\n\nCon estas seis preguntas ya puedes sostener el principio de una conversación. En las próximas unidades desmontaremos los verbos pieza a pieza y entenderás por qué son así.",
       "ejemplos": [
@@ -309,7 +324,7 @@
     {
       "eu": "zergatik?",
       "es": "¿por qué?",
-      "nota": null,
+      "nota": "Ojo con el castellano: «por qué» en dos palabras es la pregunta. «Porque», junto, es la respuesta — y esa en euskera es otra cosa, el sufijo «-lako».",
       "audio": "unidades/u3/zergatik.mp3",
       "categoria": "otros",
       "subnivel": "3.1"

@@ -108,7 +108,7 @@
     },
     {
       "titulo": "Las formas reforzadas: neu, zeu, geu",
-      "cuerpo": "El euskera tiene una segunda serie de pronombres para cuando quieres subrayar quién:\n\n<b>neu</b> — yo mismo\n<b>zeu</b> — tú mismo\n<b>geu</b> — nosotros mismos\n<b>zeuek</b> — vosotros mismos\n\nEs la diferencia entre «yo lo hice» y «lo hice <i>yo</i>». Los posesivos correspondientes son <b>neure, zeure, geure</b>.\n\nSon muy frecuentes en el habla, sobre todo en Bizkaia. No hace falta que los uses todavía, pero conviene que no te suenen a chino cuando aparezcan.",
+      "cuerpo": "El euskera tiene una segunda serie de pronombres para cuando quieres subrayar quién:\n\n<b>neu</b> — yo mismo, yo misma\n<b>zeu</b> — tú misma, tú mismo\n<b>geu</b> — nosotras mismas, nosotros mismos\n<b>zeuek</b> — vosotros mismos, vosotras mismas\n\nEs la diferencia entre «yo lo hice» y «lo hice <i>yo</i>». Los posesivos correspondientes son <b>neure, zeure, geure</b>.\n\nSon muy frecuentes en el habla, sobre todo en Bizkaia. No hace falta que los uses todavía, pero conviene que no te suenen a chino cuando aparezcan.",
       "ejemplos": [
         {
           "eu": "Neu naiz.",
@@ -171,7 +171,7 @@
     },
     {
       "titulo": "El verbo «izan» (ser) en presente",
-      "cuerpo": "Ya conoces los pronombres, así que este verbo va a costarte mucho menos. Es el que más vas a usar en toda tu vida en euskera:\n\n<b>ni naiz</b> — yo soy\n<b>zu zara</b> — tú eres\n<b>hura da</b> — él/ella es\n<b>gu gara</b> — nosotros somos\n<b>zuek zarete</b> — vosotros sois\n<b>haiek dira</b> — ellos son\n\nFíjate en el patrón: las formas de <i>ni</i> y <i>gu</i> empiezan por <b>n-</b> y <b>g-</b>, igual que los pronombres. Las de <i>zu</i> y <i>zuek</i> por <b>z-</b>. Las de tercera persona por <b>d-</b>. No es casualidad: el verbo lleva dentro la marca de la persona.\n\nY como ya sabes, el pronombre suele omitirse: <i>Ane naiz</i> ya significa «soy Ane».",
+      "cuerpo": "Ya conoces los pronombres, así que este verbo va a costarte mucho menos. Es el que más vas a usar en toda tu vida en euskera:\n\n<b>ni naiz</b> — yo soy\n<b>zu zara</b> — tú eres\n<b>hura da</b> — él/ella es\n<b>gu gara</b> — nosotros somos · nosotras somos\n<b>zuek zarete</b> — vosotros sois · vosotras sois\n<b>haiek dira</b> — ellos son · ellas son\n\nSí, cada forma vale para los dos géneros, y por eso están escritas dos veces. Es lo que viste hace un momento: el euskera no lo marca en ningún sitio. De aquí en adelante no lo repetiremos cada vez —quedaría ilegible— pero <b>da igual siempre</b>.\n\nFíjate en el patrón: las formas de <i>ni</i> y <i>gu</i> empiezan por <b>n-</b> y <b>g-</b>, igual que los pronombres. Las de <i>zu</i> y <i>zuek</i> por <b>z-</b>. Las de tercera persona por <b>d-</b>. No es casualidad: el verbo lleva dentro la marca de la persona.\n\nY como ya sabes, el pronombre suele omitirse: <i>Ane naiz</i> ya significa «soy Ane».",
       "ejemplos": [
         {
           "eu": "Ni Ane naiz.",

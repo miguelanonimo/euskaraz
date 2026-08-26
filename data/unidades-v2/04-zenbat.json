@@ -44,6 +44,25 @@
   ],
   "gramatica": [
     {
+      "titulo": "Del uno al diez, que es lo que hay que saberse",
+      "cuerpo": "Estos diez no salen de ninguna regla: hay que aprendérselos, y con ellos se construye todo lo demás.\n\n<b>bat</b> (1) · <b>bi</b> (2) · <b>hiru</b> (3) · <b>lau</b> (4) · <b>bost</b> (5)\n<b>sei</b> (6) · <b>zazpi</b> (7) · <b>zortzi</b> (8) · <b>bederatzi</b> (9) · <b>hamar</b> (10)\n\nTres avisos que ahorran disgustos:\n\n<b>bat</b> no es solo «uno». Es también el artículo «un/una», y va <b>detrás</b> del nombre: <i>lagun bat</i>, un amigo o una amiga.\n<b>bi</b> es de las pocas palabras del euskera que se pueden poner delante o detrás: <i>bi lagun</i> y <i>lagun bi</i> valen las dos.\n<b>sei</b> se pronuncia con <b>s</b> clara, como en castellano «seis», no con «sh».\n\nY lo importante para lo que viene: <b>detrás de un número, el sustantivo va sin artículo y en singular</b>. Se dice <i>hiru lagun</i>, tres amigos — nunca «hiru lagunak».",
+      "ejemplos": [
+        {
+          "eu": "Lagun bat.",
+          "es": "Un amigo. · Una amiga."
+        },
+        {
+          "eu": "Hiru lagun.",
+          "es": "Tres amigos."
+        },
+        {
+          "eu": "Bost eta bost, hamar.",
+          "es": "Cinco y cinco, diez."
+        }
+      ],
+      "subnivel": "4.1"
+    },
+    {
       "titulo": "Del once al diecinueve",
       "cuerpo": "De 12 a 17 se construye con <b>hama-</b> (de «hamar», diez) más el número:\n\nhama + bi → <b>hamabi</b> (12)\nhama + hiru → <b>hamahiru</b> (13)\nhama + lau → <b>hamalau</b> (14)\nhama + bost → <b>hamabost</b> (15)\nhama + sei → <b>hamasei</b> (16)\nhama + zazpi → <b>hamazazpi</b> (17)\n\nEl 11 se sale del todo:\n\n<b>hamaika</b> (11) — aquí no hay «bat» por ninguna parte. Hay que memorizarlo.\n\nEl 18 y el 19 siguen el mismo patrón que los demás, pero con la vocal cambiada:\n\nhama + zortzi → <b>hemezortzi</b> (18)\nhama + bederatzi → <b>hemeretzi</b> (19)\n\nSiguen siendo diez y ocho, y diez y nueve, igual que <i>hamasei</i> es diez y seis. Lo único que pasa es que el prefijo suena <b>heme-</b> en vez de <b>hama-</b>, y que en el 19 el «bederatzi» se queda en <b>-retzi</b>. No es otra lógica: es la misma con desgaste.",
       "ejemplos": [],
@@ -139,18 +158,43 @@
       "subnivel": "4.4"
     },
     {
-      "titulo": "Hermano y hermana dependen de quién los tiene",
-      "cuerpo": "Aquí el euskera es más preciso que el castellano. La palabra cambia según el sexo de <b>quien tiene ese hermano</b>, no del hermano:\n\nSi es un chico quien lo tiene: <b>anaia</b> (hermano), <b>arreba</b> (hermana)\nSi es una chica: <b>neba</b> (hermano), <b>ahizpa</b> (hermana)\n\nNormalmente coincide con quien habla, pero no siempre: en <i>Anek ahizpa bat du</i> manda Ane, no el hablante.\n\nDos hermanos, chico y chica, usan palabras distintas para referirse el uno al otro. Curiosamente, en una lengua sin género gramatical.",
+      "titulo": "La familia, de arriba abajo",
+      "cuerpo": "Antes de los casos raros —que los hay— conviene tener el mapa entero delante.\n\n<b>Los de casa</b>\n<b>aita</b> — el padre\n<b>ama</b> — la madre\n<b>semea</b> — el hijo\n<b>alaba</b> — la hija\n\n<b>Los de arriba</b>\n<b>aitona</b> — el abuelo\n<b>amona</b> — la abuela\n\nFíjate en que empiezan por <i>aita</i> y <i>ama</i>: son «el padre» y «la madre» con una cola detrás. Una vez lo ves, no se olvidan.\n\n<b>Los de al lado</b>\n<b>osaba</b> — el tío\n<b>izeba</b> — la tía\n<b>lehengusua</b> — el primo\n<b>lehengusina</b> — la prima\n\n<b>Los de abajo</b>\n<b>iloba</b> — el sobrino o el nieto, la sobrina o la nieta\n<b>biloba</b> — el nieto, la nieta\n\n<b>Los que se eligen</b>\n<b>senarra</b> — el marido\n<b>emaztea</b> — la mujer, la esposa\n<b>mutil-laguna</b> — el novio\n<b>neska-laguna</b> — la novia\n\nY ahora lo que hace que esta lista no sea como la castellana.\n\n<b>Casi ninguna se empareja por género.</b> <i>Aita</i> y <i>ama</i> no se parecen entre sí, ni <i>osaba</i> e <i>izeba</i>, ni <i>semea</i> y <i>alaba</i>. Son palabras distintas, no la misma con otra terminación. En euskera no existe eso de cambiar la -o por la -a.\n\n<b>La excepción canta.</b> <i>Lehengusua</i> y <i>lehengusina</i> sí se parecen — y no es casualidad: la palabra vino de fuera, de las lenguas románicas, y se trajo el emparejamiento puesto.\n\n<b>Y falta la más rara de todas</b>, que es la de los hermanos y se merece su propia ficha. Va justo aquí debajo.",
       "ejemplos": [
         {
+          "eu": "Nire aita eta nire ama.",
+          "es": "Mi padre y mi madre."
+        },
+        {
+          "eu": "Bi alaba dauzkate.",
+          "es": "Tienen dos hijas."
+        },
+        {
+          "eu": "Amona Bilbokoa da.",
+          "es": "La abuela es de Bilbao."
+        }
+      ],
+      "subnivel": "4.6"
+    },
+    {
+      "titulo": "Hermano y hermana dependen de quién los tiene",
+      "cuerpo": "Aquí el euskera es más preciso que el castellano. La palabra cambia según el sexo de <b>quien tiene ese hermano</b>, no del hermano:\n\nSi es un chico quien lo tiene: <b>anaia</b> (hermano), <b>arreba</b> (hermana)\nSi es una chica: <b>neba</b> (hermano), <b>ahizpa</b> (hermana)\n\nNormalmente coincide con quien habla, pero no siempre: en <i>Anek ahizpa bat du</i> manda Ane, no el hablante.\n\nCompara las tres, que es donde se ve:\n\n<b>Nik arreba bat daukat.</b> — Tengo una hermana (lo dice un chico)\n<b>Nik ahizpa bat daukat.</b> — Tengo una hermana (lo dice una chica)\n<b>Mikelek arreba bat dauka.</b> — Mikel tiene una hermana\n\nLas dos primeras son la misma frase en castellano y palabras distintas en euskera. Lo único que cambia es quién la dice.\n\nDos hermanos, chico y chica, usan palabras distintas para referirse el uno al otro. Curiosamente, en una lengua sin género gramatical.",
+      "ejemplos": [
+        {
+          "eu": "Nik arreba bat daukat.",
+          "es": "Tengo una hermana. — dicho por un chico"
+        },
+        {
+          "eu": "Nik ahizpa bat daukat.",
+          "es": "Tengo una hermana. — dicho por una chica"
+        },
+        {
           "eu": "Mikelek arreba bat du.",
-          "es": "Mikel tiene una hermana.",
-          "audio": "unidades/u5/mikelek-arreba-bat-du.mp3"
+          "es": "Mikel tiene una hermana."
         },
         {
           "eu": "Anek ahizpa bat du.",
-          "es": "Ane tiene una hermana.",
-          "audio": "unidades/u5/anek-ahizpa-bat-du.mp3"
+          "es": "Ane tiene una hermana."
         }
       ],
       "subnivel": "4.6"
@@ -238,19 +282,19 @@
     },
     {
       "titulo": "Seguir contando: de veinte en veinte",
-      "cuerpo": "Al empezar la unidad viste que el euskera cuenta en base veinte. Aquí está el resto de la escalera, y una vez ves el patrón ya no hay que memorizar nada:\n\n<b>hogei</b> (20) · <b>berrogei</b> (40) · <b>hirurogei</b> (60) · <b>laurogei</b> (80)\n\nSon «un veinte, dos veintes, tres veintes, cuatro veintes». Y las decenas intermedias son ese número más diez:\n\n<b>hogeita hamar</b> (30) — veinte y diez\n<b>berrogeita hamar</b> (50) — cuarenta y diez\n<b>hirurogeita hamar</b> (70) · <b>laurogeita hamar</b> (90)\n\nY para salir de ahí: <b>ehun</b> (100) y <b>mila</b> (1000).",
+      "cuerpo": "Al empezar la unidad viste que el euskera cuenta en base veinte. Aquí está el resto de la escalera, y una vez ves el patrón ya no hay que memorizar nada:\n\n<b>hogei</b> (20) · <b>berrogei</b> (40) · <b>hirurogei</b> (60) · <b>laurogei</b> (80)\n\nSon «un veinte, dos veintes, tres veintes, cuatro veintes». Y las decenas intermedias son ese número más diez:\n\n<b>hogeita hamar</b> (30) — veinte y diez\n<b>berrogeita hamar</b> (50) — cuarenta y diez\n<b>hirurogeita hamar</b> (70) · <b>laurogeita hamar</b> (90)\n\nAhora lo importante: <b>desmontar uno de verdad</b>, despacio, porque es lo único que hace falta entender.\n\n<b>71 · hirurogeita hamaika</b>\n<i>hirurogei</i> (tres veintes = 60) + <i>ta</i> (y) + <i>hamaika</i> (11) → 60 + 11 = <b>71</b>\n\n<b>54 · berrogeita hamalau</b>\n<i>berrogei</i> (dos veintes = 40) + <i>ta</i> (y) + <i>hamalau</i> (14) → 40 + 14 = <b>54</b>\n\nFíjate en que el segundo trozo <b>nunca pasa de 19</b>. Por eso necesitabas el once al diecinueve antes de llegar aquí: son las piezas que rellenan el hueco entre veintena y veintena.\n\nY ese <b>-ta</b> es simplemente <i>eta</i> (y) pegada y acortada. «Sesenta y once». No hay más truco.\n\n<b>El francés hace lo mismo, a medias.</b> Dice <i>soixante-dix</i> (sesenta-diez) para 70 y <i>quatre-vingts</i> (cuatro veintes) para 80. Pero solo a partir de 60: hasta ahí cuenta de diez en diez como nosotros. El euskera lo lleva desde el principio y hasta el final. Nadie sabe con seguridad si el francés lo tomó de aquí, de otra lengua anterior al latín, o si salió por su cuenta — pero la coincidencia geográfica es difícil de ignorar.\n\nPara salir de la escalera: <b>ehun</b> (100) y <b>mila</b> (1000).",
       "ejemplos": [
         {
-          "eu": "berrogei",
-          "es": "cuarenta"
+          "eu": "Hirurogeita hamaika.",
+          "es": "Setenta y uno (60 + 11)."
         },
         {
-          "eu": "hogeita hamar",
-          "es": "treinta"
+          "eu": "Berrogeita hamalau.",
+          "es": "Cincuenta y cuatro (40 + 14)."
         },
         {
-          "eu": "ehun",
-          "es": "cien"
+          "eu": "Ehun eta bat.",
+          "es": "Ciento uno."
         }
       ],
       "subnivel": "4.2"
@@ -270,23 +314,19 @@
     {
       "subnivel": "4.3",
       "titulo": "Los ordinales: el número más «-garren»",
-      "cuerpo": "Ya sabes contar. Para decir «el primero, el segundo, el tercero» solo hace falta una pieza que se pega detrás del número: <b>-garren</b>.\n\n<b>bi</b> (dos) → <b>bigarren</b> → <b>bigarrena</b>, el segundo\n<b>hiru</b> (tres) → <b>hirugarren</b> → <b>hirugarrena</b>, el tercero\n<b>lau</b> (cuatro) → <b>laugarrena</b>\n<b>bost</b> (cinco) → <b>bosgarrena</b>\n\nFíjate en que <i>bost</i> pierde la t: <b>bosgarrena</b>, no «bostgarrena».\n\nY el primero es la excepción, como en casi todos los idiomas: no es «batgarrena» sino <b>lehena</b> (o <i>lehenengoa</i>).\n\nPara «el último» hay palabra propia: <b>azkena</b>.",
+      "cuerpo": "Ya sabes contar. Para decir «el primero, la segunda, el tercero» solo hace falta una pieza que se pega detrás del número: <b>-garren</b>. Y luego la <b>-a</b> del artículo, como en todo lo demás.\n\nAquí están los doce primeros, que es lo que se usa a diario — plantas, meses, turnos, capítulos:\n\n<b>1. lehena</b> — el primero, la primera\n<b>2. bigarrena</b> — el segundo, la segunda\n<b>3. hirugarrena</b> — el tercero, la tercera\n<b>4. laugarrena</b> · <b>5. bosgarrena</b> · <b>6. seigarrena</b>\n<b>7. zazpigarrena</b> · <b>8. zortzigarrena</b> · <b>9. bederatzigarrena</b>\n<b>10. hamargarrena</b> · <b>11. hamaikagarrena</b> · <b>12. hamabigarrena</b>\n\nY uno suelto que hace falta constantemente: <b>azkena</b>, el último o la última.\n\n<b>Dos irregularidades, y ya está:</b>\n\nEl primero no es «batgarrena» sino <b>lehena</b> (también <i>lehenengoa</i>). Es la excepción de siempre, la misma que en castellano hace «primero» y no «unoero».\n<i>bost</i> pierde la t: <b>bosgarrena</b>, no «bostgarrena».\n\n<b>Y una cosa que conviene tener presente desde ya.</b> Habrás notado que arriba pone «el segundo, la segunda» para una sola palabra. No es por escribir de más: <b>en euskera esa distinción no existe</b>. <i>Bigarrena</i> es las dos cosas, y solo el contexto —o nada— dice de quién hablas. Lo mismo pasa con <i>laguna</i> (el amigo o la amiga) y con <i>irakaslea</i> (el profesor o la profesora). No hay que elegir, y no se te va a olvidar el género de nada, porque no hay ninguno.",
       "ejemplos": [
         {
-          "eu": "lehena",
-          "es": "el primero"
+          "eu": "Bigarrena naiz.",
+          "es": "Soy el segundo. · Soy la segunda."
         },
         {
-          "eu": "bigarrena",
-          "es": "el segundo"
+          "eu": "Hirugarren solairua.",
+          "es": "La tercera planta."
         },
         {
-          "eu": "bosgarrena",
-          "es": "el quinto"
-        },
-        {
-          "eu": "azkena",
-          "es": "el último"
+          "eu": "Azkena da.",
+          "es": "Es el último. · Es la última."
         }
       ]
     },
@@ -308,26 +348,26 @@
     {
       "subnivel": "4.5",
       "titulo": "Hay dos maneras de decir «tengo»",
-      "cuerpo": "Ya tienes <b>dut</b>, de <i>ukan</i>. Pues existe otra, y en la calle se oye tanto o más:\n\n<b>daukat</b> — tengo\n<b>daukazu</b> — tienes\n<b>dauka</b> — tiene\n\nVienen del verbo <b>eduki</b>. Y en la práctica, para las cosas del día a día, <i>dut</i> y <i>daukat</i> se usan casi indistintamente:\n\n<b>Kotxe bat dut.</b> = <b>Kotxe bat daukat.</b> — Tengo un coche.\n\nNo tienes que elegir: reconoce las dos y usa la que te salga.",
+      "cuerpo": "Ya tienes <b>dut</b>, de <i>ukan</i>. Pues existe otra manera, y en la calle se oye tanto o más. Viene del verbo <b>eduki</b>, y este sí se conjuga entero y sin sorpresas:\n\n<b>nik daukat</b> — yo tengo\n<b>zuk daukazu</b> — tú tienes\n<b>hark dauka</b> — él tiene, ella tiene\n<b>guk daukagu</b> — nosotros tenemos, nosotras tenemos\n<b>zuek daukazue</b> — vosotros tenéis, vosotras tenéis\n<b>haiek daukate</b> — ellos tienen, ellas tienen\n\nFíjate en que todas empiezan por <b>dauka-</b> y solo cambia el final. Y en que quien tiene lleva la <b>-k</b> del ergativo que acabas de ver: <i>ni<b>k</b></i>, <i>zu<b>k</b></i>, <i>har<b>k</b></i>, <i>gu<b>k</b></i>. <i>Zuek</i> y <i>haiek</i> ya la llevan puesta de serie.\n\nPara las cosas del día a día, <i>dut</i> y <i>daukat</i> se usan casi indistintamente:\n\n<b>Kotxe bat dut.</b> = <b>Kotxe bat daukat.</b> — Tengo un coche.\n\nNo tienes que elegir: reconoce las dos y usa la que te salga.",
       "ejemplos": [
         {
-          "eu": "daukat",
-          "es": "tengo"
+          "eu": "Nik txakur bat daukat.",
+          "es": "Yo tengo un perro."
         },
         {
-          "eu": "dauka",
-          "es": "tiene"
+          "eu": "Guk etxe bat daukagu.",
+          "es": "Nosotros tenemos una casa. · Nosotras tenemos una casa."
         },
         {
-          "eu": "Kotxe bat daukat.",
-          "es": "Tengo un coche."
+          "eu": "Haiek bi katu dauzkate.",
+          "es": "Ellos tienen dos gatos. — con varias cosas se cuela una z: dauzkate."
         }
       ]
     },
     {
       "subnivel": "4.5",
       "titulo": "Cuándo se prefiere cada una",
-      "cuerpo": "Si quieres afinar, hay una tendencia —no una regla— que ayuda:\n\n<b>eduki</b> (daukat) tira más hacia <i>tener algo en la mano, poseer algo concreto</i>: un coche, un perro, dinero, tiempo.\n\n<b>ukan</b> (dut) es más general y es el que aparece pegado a otros verbos, como ya viste en <i>jaten dut</i>. Ahí <b>no</b> se puede cambiar por <i>daukat</i>.\n\nO sea: para cosas, las dos. Para el mecanismo de dos piezas, solo <i>dut</i>.",
+      "cuerpo": "Si quieres afinar, hay una tendencia —no una regla— que ayuda:\n\n<b>eduki</b> (daukat) tira más hacia <i>tener algo en la mano, poseer algo concreto</i>: un coche, un perro, una casa.\n\n<b>ukan</b> (dut) es más general. Y tiene un segundo trabajo que <i>eduki</i> no puede hacer: <b>engancharse detrás de otro verbo</b> para formar frases de dos piezas. Eso llega en la unidad 7, cuando aparezcan cosas como «lo estoy comiendo» o «lo suelo hacer»; de momento basta con saber que ahí <b>solo vale <i>dut</i></b>, y que cambiarlo por <i>daukat</i> no funcionaría.\n\nO sea: para cosas, las dos. Para el mecanismo de dos piezas —que ya verás—, solo <i>dut</i>.",
       "ejemplos": [
         {
           "eu": "Dirua daukat.",
@@ -901,6 +941,48 @@
       "subnivel": "4.3"
     },
     {
+      "eu": "seigarrena",
+      "es": "el sexto, la sexta",
+      "nota": "Sin género: vale para los dos.",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "zazpigarrena",
+      "es": "el séptimo, la séptima",
+      "nota": "Sin género: vale para los dos.",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "zortzigarrena",
+      "es": "el octavo, la octava",
+      "nota": "Sin género: vale para los dos.",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "bederatzigarrena",
+      "es": "el noveno, la novena",
+      "nota": "Sin género: vale para los dos.",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "hamargarrena",
+      "es": "el décimo, la décima",
+      "nota": "Sin género: vale para los dos.",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "hamaikagarrena",
+      "es": "el undécimo, la undécima",
+      "nota": "Sin género: vale para los dos.",
+      "subnivel": "4.3"
+    },
+    {
+      "eu": "hamabigarrena",
+      "es": "el duodécimo, la duodécima",
+      "nota": "Sin género: vale para los dos.",
+      "subnivel": "4.3"
+    },
+    {
       "eu": "daukat",
       "es": "(yo) tengo",
       "nota": "Del verbo «eduki». Se oye muchísimo.",
@@ -926,6 +1008,18 @@
       "es": "tener",
       "nota": "El otro «tener», junto a «ukan».",
       "categoria": "verbo",
+      "subnivel": "4.5"
+    },
+    {
+      "eu": "dirua",
+      "es": "el dinero",
+      "nota": "«Diru» a secas, sin la -a, en muchas frases hechas.",
+      "subnivel": "4.5"
+    },
+    {
+      "eu": "astia",
+      "es": "el tiempo (del que se dispone)",
+      "nota": "No es el tiempo del reloj ni el del cielo: es el rato libre que tienes.",
       "subnivel": "4.5"
     }
   ],
@@ -2595,15 +2689,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En «jaten dut», ¿se puede cambiar «dut» por «daukat»?",
+          "pregunta": "¿Cuál de los dos se puede enganchar detrás de otro verbo?",
           "opciones": [
-            "Sí, siempre",
-            "No: ahí solo vale dut",
-            "Solo en Bizkaia",
-            "Solo en pasado"
+            "solo «dut»",
+            "solo «daukat»",
+            "los dos",
+            "ninguno"
           ],
-          "correcta": 1,
-          "explicacion": "Pegado a otro verbo, el auxiliar es siempre «dut»."
+          "correcta": 0,
+          "explicacion": "Ese mecanismo de dos piezas llega en la unidad 7. Ahí solo vale «dut»."
         },
         {
           "tipo": "opcion",

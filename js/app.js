@@ -256,8 +256,13 @@
       if (n && !vistas[n]) { vistas[n] = true; salida.push(n); }
     }
 
-    // Comas y barras con espacio separan alternativas completas.
-    String(texto).split(/\s*,\s*|\s+\/\s+/).forEach(function (alt) {
+    /* Comas y barras con espacio separan alternativas completas. Y dos
+       preguntas seguidas también: «¿cuánto? ¿cuántos?» son dos respuestas
+       válidas, no una de dos palabras — así estaba, y responder «cuánto»
+       salía casi-correcto contra «cuánto cuántos» (detectado por Ric).
+       El patrón «? ¿» no es ambiguo: cierra una pregunta y abre otra. */
+    String(texto).replace(/\?\s+¿/g, '?, ¿')
+      .split(/\s*,\s*|\s+\/\s+/).forEach(function (alt) {
       if (!alt.trim()) return;
       // Lo que va entre paréntesis es aclaración: vale con y sin ello.
       var formas = [alt];
