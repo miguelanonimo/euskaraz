@@ -262,7 +262,7 @@
       "nota": null,
       "audio": "unidades/u3/non.mp3",
       "categoria": "otros",
-      "subnivel": "3.2"
+      "subnivel": "3.1"
     },
     {
       "eu": "nora?",
@@ -787,7 +787,7 @@
           "explicacion": "Es el mecanismo central del idioma: los sufijos encajan."
         }
       ],
-      "subnivel": "3.1"
+      "subnivel": "3.2"
     },
     {
       "id": "u3-g05",

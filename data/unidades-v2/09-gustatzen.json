@@ -591,62 +591,6 @@
       "nota": null,
       "categoria": "sustantivo",
       "subnivel": "9.3"
-    },
-    {
-      "eu": "udaberria",
-      "es": "la primavera",
-      "nota": "«Uda» (verano) + «berri» (nuevo): el verano nuevo.",
-      "categoria": "sustantivo",
-      "subnivel": "9.3"
-    },
-    {
-      "eu": "udazkena",
-      "es": "el otoño",
-      "nota": "También sale de «uda»: el final del verano.",
-      "categoria": "sustantivo",
-      "subnivel": "9.3"
-    },
-    {
-      "eu": "eguraldia",
-      "es": "el tiempo (meteorológico)",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "9.3"
-    },
-    {
-      "eu": "elurra",
-      "es": "la nieve",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "9.3"
-    },
-    {
-      "eu": "haizea",
-      "es": "el viento",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "9.3"
-    },
-    {
-      "eu": "hotza",
-      "es": "el frío",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "9.3"
-    },
-    {
-      "eu": "beroa",
-      "es": "el calor",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "9.3"
-    },
-    {
-      "eu": "hodeia",
-      "es": "la nube",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "9.3"
     }
   ],
   "ejercicios": [
@@ -1621,8 +1565,8 @@
           "instruccion": "Empareja el cuerpo",
           "pares": [
             {
-              "eu": "belarriak",
-              "es": "las orejas"
+              "eu": "hanka",
+              "es": "la pierna"
             },
             {
               "eu": "ilea",
@@ -1633,8 +1577,8 @@
               "es": "el brazo"
             },
             {
-              "eu": "oina",
-              "es": "el pie"
+              "eu": "bihotza",
+              "es": "el corazón"
             }
           ]
         },
@@ -1647,8 +1591,8 @@
               "es": "las orejas"
             },
             {
-              "eu": "hotza",
-              "es": "el frío"
+              "eu": "besoa",
+              "es": "el brazo"
             },
             {
               "eu": "ilea",
@@ -1663,41 +1607,38 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «haizea»?",
+          "pregunta": "¿Qué significa «besoa»?",
           "opciones": [
-            "el viento",
-            "todo",
+            "el brazo",
+            "la pierna",
+            "la mano",
+            "el pie"
+          ],
+          "correcta": 0
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la nariz» se dice…",
+          "opciones": [
+            "sudurra",
+            "ahoa",
+            "begiak",
+            "belarriak"
+          ],
+          "correcta": 0
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ilea»?",
+          "opciones": [
             "el pelo",
-            "las orejas"
+            "la oreja",
+            "el ojo",
+            "la cabeza"
           ],
-          "correcta": 0,
-          "explicacion": "haizea = el viento."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«la nube» se dice…",
-          "opciones": [
-            "hodeia",
-            "dantza",
-            "interesatzen zait",
-            "bihotza"
-          ],
-          "correcta": 0,
-          "explicacion": "la nube = hodeia."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «beroa»?",
-          "opciones": [
-            "el calor",
-            "el corazón",
-            "el cine",
-            "la boca"
-          ],
-          "correcta": 0,
-          "explicacion": "beroa = el calor."
+          "correcta": 0
         }
       ]
     },
@@ -1710,20 +1651,20 @@
           "instruccion": "Empareja el cuerpo",
           "pares": [
             {
-              "eu": "begiak",
-              "es": "los ojos"
+              "eu": "belarriak",
+              "es": "las orejas"
             },
             {
-              "eu": "hotza",
-              "es": "el frío"
+              "eu": "besoa",
+              "es": "el brazo"
             },
             {
-              "eu": "elurra",
-              "es": "la nieve"
+              "eu": "sudurra",
+              "es": "la nariz"
             },
             {
-              "eu": "udaberria",
-              "es": "la primavera"
+              "eu": "ahoa",
+              "es": "la boca"
             }
           ]
         },
@@ -1736,8 +1677,8 @@
               "es": "el pie"
             },
             {
-              "eu": "elurra",
-              "es": "la nieve"
+              "eu": "hanka",
+              "es": "la pierna"
             },
             {
               "eu": "eskua",
@@ -1765,15 +1706,14 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«el calor» se dice…",
+          "pregunta": "«la cabeza» se dice…",
           "opciones": [
-            "beroa",
             "burua",
-            "eskua",
-            "eman"
+            "bihotza",
+            "besoa",
+            "hanka"
           ],
-          "correcta": 0,
-          "explicacion": "el calor = beroa."
+          "correcta": 0
         },
         {
           "tipo": "opcion",
@@ -1807,12 +1747,12 @@
               "es": "la mano"
             },
             {
-              "eu": "hotza",
-              "es": "el frío"
+              "eu": "oina",
+              "es": "el pie"
             },
             {
-              "eu": "eguraldia",
-              "es": "el tiempo (meteorológico)"
+              "eu": "ilea",
+              "es": "el pelo"
             }
           ]
         },
@@ -1821,16 +1761,16 @@
           "instruccion": "Empareja el cuerpo",
           "pares": [
             {
-              "eu": "dirua",
-              "es": "el dinero"
+              "eu": "burua",
+              "es": "la cabeza"
             },
             {
-              "eu": "gustatu",
-              "es": "gustar"
+              "eu": "sudurra",
+              "es": "la nariz"
             },
             {
-              "eu": "hodeia",
-              "es": "la nube"
+              "eu": "ahoa",
+              "es": "la boca"
             },
             {
               "eu": "begiak",
@@ -1854,28 +1794,26 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«el Año Nuevo» se dice…",
+          "pregunta": "«el corazón» se dice…",
           "opciones": [
-            "besoa",
-            "sudurra",
-            "haizea",
-            "elurra"
+            "bihotza",
+            "burua",
+            "eskua",
+            "oina"
           ],
-          "correcta": 0,
-          "explicacion": "el Año Nuevo = Urte Berri."
+          "correcta": 0
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «hodeia»?",
+          "pregunta": "¿Qué significa «belarriak»?",
           "opciones": [
-            "la nube",
-            "el otoño",
-            "a vosotros",
-            "gustar"
+            "las orejas",
+            "los ojos",
+            "las manos",
+            "los pies"
           ],
-          "correcta": 0,
-          "explicacion": "hodeia = la nube."
+          "correcta": 0
         }
       ]
     },
@@ -1892,16 +1830,16 @@
               "es": "la nariz"
             },
             {
-              "eu": "beroa",
-              "es": "el calor"
+              "eu": "burua",
+              "es": "la cabeza"
             },
             {
               "eu": "ahoa",
               "es": "la boca"
             },
             {
-              "eu": "udaberria",
-              "es": "la primavera"
+              "eu": "begiak",
+              "es": "los ojos"
             }
           ]
         },
@@ -1918,12 +1856,12 @@
               "es": "el corazón"
             },
             {
-              "eu": "galdetu",
-              "es": "preguntar"
+              "eu": "burua",
+              "es": "la cabeza"
             },
             {
-              "eu": "udazkena",
-              "es": "el otoño"
+              "eu": "begiak",
+              "es": "los ojos"
             }
           ]
         },
@@ -1956,17 +1894,132 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «udazkena»?",
+          "pregunta": "¿Qué significa «hanka»?",
           "opciones": [
-            "el otoño",
-            "la comida (en general)",
-            "la danza, el baile",
-            "la pierna"
+            "la pierna",
+            "el brazo",
+            "el pie",
+            "la mano"
           ],
-          "correcta": 0,
-          "explicacion": "También sale de «uda»: el final del verano."
+          "correcta": 0
         }
       ]
+    },
+    {
+      "id": "u10.1-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            },
+            {
+              "eu": "begiak",
+              "es": "los ojos"
+            },
+            {
+              "eu": "sudurra",
+              "es": "la nariz"
+            },
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "belarriak",
+              "es": "las orejas"
+            },
+            {
+              "eu": "eskua",
+              "es": "la mano"
+            },
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "oina",
+              "es": "el pie"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "bihotza",
+              "es": "el corazón"
+            },
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "eskua",
+              "es": "la mano"
+            },
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "oina",
+              "es": "el pie"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            },
+            {
+              "eu": "sudurra",
+              "es": "la nariz"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "begiak",
+              "es": "los ojos"
+            }
+          ]
+        }
+      ],
+      "subnivel": "9.3"
     },
     {
       "id": "u9-g18",

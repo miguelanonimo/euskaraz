@@ -680,6 +680,62 @@
       "subnivel": "6.4"
     },
     {
+      "eu": "udaberria",
+      "es": "la primavera",
+      "nota": "«Uda» (verano) + «berri» (nuevo): el verano nuevo.",
+      "categoria": "sustantivo",
+      "subnivel": "6.4"
+    },
+    {
+      "eu": "udazkena",
+      "es": "el otoño",
+      "nota": "También sale de «uda»: el final del verano.",
+      "categoria": "sustantivo",
+      "subnivel": "6.4"
+    },
+    {
+      "eu": "eguraldia",
+      "es": "el tiempo (meteorológico)",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.4"
+    },
+    {
+      "eu": "elurra",
+      "es": "la nieve",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.4"
+    },
+    {
+      "eu": "haizea",
+      "es": "el viento",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.4"
+    },
+    {
+      "eu": "hotza",
+      "es": "el frío",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.4"
+    },
+    {
+      "eu": "beroa",
+      "es": "el calor",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.4"
+    },
+    {
+      "eu": "hodeia",
+      "es": "la nube",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.4"
+    },
+    {
       "eu": "jaiak",
       "es": "las fiestas",
       "nota": "Las de un pueblo. En singular, «jaia» es la fiesta suelta.",
@@ -1992,122 +2048,6 @@
       "subnivel": "test"
     },
     {
-      "id": "u10.1-g01",
-      "variantes": [
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja las partes del cuerpo",
-          "pares": [
-            {
-              "eu": "burua",
-              "es": "la cabeza"
-            },
-            {
-              "eu": "begiak",
-              "es": "los ojos"
-            },
-            {
-              "eu": "sudurra",
-              "es": "la nariz"
-            },
-            {
-              "eu": "ahoa",
-              "es": "la boca"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja las partes del cuerpo",
-          "pares": [
-            {
-              "eu": "belarriak",
-              "es": "las orejas"
-            },
-            {
-              "eu": "eskua",
-              "es": "la mano"
-            },
-            {
-              "eu": "besoa",
-              "es": "el brazo"
-            },
-            {
-              "eu": "hanka",
-              "es": "la pierna"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja las partes del cuerpo",
-          "pares": [
-            {
-              "eu": "oina",
-              "es": "el pie"
-            },
-            {
-              "eu": "ilea",
-              "es": "el pelo"
-            },
-            {
-              "eu": "bihotza",
-              "es": "el corazón"
-            },
-            {
-              "eu": "burua",
-              "es": "la cabeza"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja las partes del cuerpo",
-          "pares": [
-            {
-              "eu": "eskua",
-              "es": "la mano"
-            },
-            {
-              "eu": "besoa",
-              "es": "el brazo"
-            },
-            {
-              "eu": "oina",
-              "es": "el pie"
-            },
-            {
-              "eu": "hanka",
-              "es": "la pierna"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja las partes del cuerpo",
-          "pares": [
-            {
-              "eu": "ahoa",
-              "es": "la boca"
-            },
-            {
-              "eu": "sudurra",
-              "es": "la nariz"
-            },
-            {
-              "eu": "ilea",
-              "es": "el pelo"
-            },
-            {
-              "eu": "begiak",
-              "es": "los ojos"
-            }
-          ]
-        }
-      ],
-      "subnivel": "6.1"
-    },
-    {
       "id": "u10.1-g02",
       "variantes": [
         {
@@ -2834,86 +2774,84 @@
       "variantes": [
         {
           "tipo": "pares",
-          "instruccion": "Empareja estaciones y tiempo",
+          "instruccion": "Empareja el tiempo",
           "pares": [
             {
-              "eu": "uda",
-              "es": "el verano"
+              "eu": "elurra",
+              "es": "la nieve"
             },
             {
-              "eu": "euria",
-              "es": "la lluvia"
+              "eu": "haizea",
+              "es": "el viento"
             },
             {
-              "eu": "eguzkia",
-              "es": "el sol"
+              "eu": "hodeia",
+              "es": "la nube"
             },
             {
-              "eu": "negua",
-              "es": "el invierno"
+              "eu": "eguraldia",
+              "es": "el tiempo"
             }
           ]
         },
         {
           "tipo": "pares",
-          "instruccion": "Empareja estaciones y tiempo",
+          "instruccion": "Empareja las estaciones",
           "pares": [
             {
-              "eu": "negua",
-              "es": "el invierno"
-            },
-            {
-              "eu": "euria",
-              "es": "la lluvia"
+              "eu": "udaberria",
+              "es": "la primavera"
             },
             {
               "eu": "uda",
               "es": "el verano"
             },
             {
-              "eu": "eguzkia",
-              "es": "el sol"
+              "eu": "udazkena",
+              "es": "el otoño"
+            },
+            {
+              "eu": "negua",
+              "es": "el invierno"
             }
           ]
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «euria»?",
+          "pregunta": "¿Qué significa «hodeia»?",
           "opciones": [
-            "la lluvia",
-            "septiembre",
-            "y media",
-            "a menudo"
+            "la nube",
+            "la nieve",
+            "el viento",
+            "la lluvia"
           ],
-          "correcta": 0,
-          "explicacion": "euria = la lluvia."
+          "correcta": 0
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«el verano» se dice…",
+          "pregunta": "«el viento» se dice…",
           "opciones": [
-            "uda",
-            "ekaina",
-            "gaua",
-            "batzuetan"
+            "haizea",
+            "hodeia",
+            "elurra",
+            "eguzkia"
           ],
-          "correcta": 0,
-          "explicacion": "el verano = uda."
+          "correcta": 0
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «eguzkia»?",
+          "pregunta": "«Udaberria» y «udazkena» se construyen las dos sobre la misma palabra. ¿Cuál?",
           "opciones": [
-            "el sol",
-            "el cumpleaños",
-            "pasado mañana",
-            "junio"
+            "uda (verano)",
+            "negua (invierno)",
+            "eguraldia (el tiempo)",
+            "urtea (el año)"
           ],
           "correcta": 0,
-          "explicacion": "eguzkia = el sol."
+          "explicacion": "«Udaberria» es «el nuevo verano» y «udazkena» es «el final del verano». El euskera organiza el año alrededor del verano."
         }
       ]
     },

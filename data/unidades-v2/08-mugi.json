@@ -13,21 +13,16 @@
     },
     {
       "id": "8.2",
-      "titulo": "En qué vas, y por dónde",
-      "resumen": "El transporte y la -z de «por medio de»."
+      "titulo": "Cómo llegar",
+      "resumen": "En qué vas, por dónde, y cómo explicárselo a alguien."
     },
     {
       "id": "8.3",
-      "titulo": "Dar indicaciones",
-      "resumen": "El imperativo, con el camino en la mano."
-    },
-    {
-      "id": "8.4",
       "titulo": "Poder y deber",
       "resumen": "Ahal, ezin, behar: hacer planes."
     },
     {
-      "id": "8.5",
+      "id": "8.4",
       "titulo": "La ciudad y sus servicios",
       "resumen": "Correos, banco, ayuntamiento, bares."
     }
@@ -123,7 +118,7 @@
     },
     {
       "titulo": "Dar indicaciones",
-      "cuerpo": "Con lo que ya sabes se pide y se da una dirección entera:\n\n<b>Non dago geltokia?</b> — ¿Dónde está la estación?\n<b>Hemendik gertu dago.</b> — Está cerca de aquí.\n<b>Zuzen, eta gero ezkerrera.</b> — Recto, y luego a la izquierda.\n\nFíjate en que <b>ezkerrera</b> y <b>eskuinera</b> ya llevan dentro el <b>-ra</b> de movimiento: son «hacia la izquierda» y «hacia la derecha». Sin él serían <i>ezkerra</i> y <i>eskuina</i>, la izquierda y la derecha a secas.\n\nY dos palabras que salvan cualquier apuro:\n<b>Non dago…?</b> — ¿Dónde está…?\n<b>Urrun dago?</b> — ¿Está lejos?",
+      "cuerpo": "Ya tienes las dos piezas: <b>adónde</b> se va y <b>en qué</b> se va. Falta la tercera, que es explicárselo a otro.\n\nCon lo que ya sabes se pide y se da una dirección entera:\n\n<b>Non dago geltokia?</b> — ¿Dónde está la estación?\n<b>Hemendik gertu dago.</b> — Está cerca de aquí.\n<b>Zuzen, eta gero ezkerrera.</b> — Recto, y luego a la izquierda.\n\nFíjate en que <b>ezkerrera</b> y <b>eskuinera</b> ya llevan dentro el <b>-ra</b> de movimiento: son «hacia la izquierda» y «hacia la derecha». Sin él serían <i>ezkerra</i> y <i>eskuina</i>, la izquierda y la derecha a secas.\n\nY dos palabras que salvan cualquier apuro:\n<b>Non dago…?</b> — ¿Dónde está…?\n<b>Urrun dago?</b> — ¿Está lejos?",
       "ejemplos": [
         {
           "eu": "Non dago hondartza?",
@@ -141,7 +136,7 @@
           "audio": "unidades/u9/zuzen-joan-mesedez.mp3"
         }
       ],
-      "subnivel": "8.3"
+      "subnivel": "8.2"
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
@@ -156,7 +151,7 @@
       "subnivel": "8.1"
     },
     {
-      "subnivel": "8.4",
+      "subnivel": "8.3",
       "titulo": "Poder, querer y tener que",
       "cuerpo": "Tres piezas que se montan igual y que abren muchísimo lo que puedes decir. Todas van con el verbo en su forma de diccionario delante:\n\n<b>Joan nahi dut.</b> — Quiero ir.\n<b>Joan behar dut.</b> — Tengo que ir.\n<b>Joan ahal dut.</b> — Puedo ir.\n\nEl orden es siempre el mismo: <i>verbo + nahi/behar/ahal + auxiliar</i>. Y <b>nahi</b> ya lo conocías de la unidad de comer: es la misma pieza.",
       "ejemplos": [
@@ -175,7 +170,7 @@
       ]
     },
     {
-      "subnivel": "8.4",
+      "subnivel": "8.3",
       "titulo": "«Ezin» es «no puedo», sin «ez»",
       "cuerpo": "Aquí hay una rareza que conviene tener clara desde el principio.\n\nPara negar casi todo se pone <b>ez</b> delante, como ya sabes. Pero «no poder» tiene palabra propia:\n\n<b>ahal dut</b> — puedo\n<b>ezin dut</b> — no puedo\n\n<i>Ezin</i> ya lleva la negación dentro, así que <b>no</b> se dice «ez ezin dut». Y por eso tampoco hace saltar el auxiliar como hace la negación normal.\n\n<b>Ezin dut joan.</b> — No puedo ir.",
       "ejemplos": [
@@ -201,7 +196,7 @@
       "nota": null,
       "audio": "unidades/u6/kalea.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "eskola",
@@ -209,7 +204,7 @@
       "nota": null,
       "audio": "unidades/u6/eskola.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "lana",
@@ -217,7 +212,7 @@
       "nota": null,
       "audio": "unidades/u6/lana.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "taberna",
@@ -225,7 +220,7 @@
       "nota": null,
       "audio": "unidades/u6/taberna.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "joan",
@@ -409,7 +404,7 @@
       "nota": null,
       "audio": "unidades/u9/merkatua.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "azoka",
@@ -417,7 +412,7 @@
       "nota": "La más conocida en Bilbao es el Mercado de la Ribera. Si sales hacia Gernika, la suya es la del lunes.",
       "audio": "unidades/u9/azoka.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "denda",
@@ -425,7 +420,7 @@
       "nota": null,
       "audio": "unidades/u9/denda.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "liburutegia",
@@ -433,7 +428,7 @@
       "nota": "De «liburu» (libro) + «tegi» (lugar de).",
       "audio": "unidades/u9/liburutegia.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "ospitalea",
@@ -441,7 +436,7 @@
       "nota": null,
       "audio": "unidades/u9/ospitalea.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "hiria",
@@ -449,7 +444,7 @@
       "nota": null,
       "audio": "unidades/u9/hiria.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "eu": "urrun",
@@ -473,7 +468,7 @@
       "nota": null,
       "audio": "unidades/u9/zuzen.mp3",
       "categoria": "otros",
-      "subnivel": "8.3"
+      "subnivel": "8.2"
     },
     {
       "eu": "ezkerrera",
@@ -481,7 +476,7 @@
       "nota": null,
       "audio": "unidades/u9/ezkerrera.mp3",
       "categoria": "otros",
-      "subnivel": "8.3"
+      "subnivel": "8.2"
     },
     {
       "eu": "eskuinera",
@@ -489,7 +484,7 @@
       "nota": null,
       "audio": "unidades/u9/eskuinera.mp3",
       "categoria": "otros",
-      "subnivel": "8.3"
+      "subnivel": "8.2"
     },
     {
       "eu": "hona",
@@ -520,28 +515,28 @@
       "es": "puedo",
       "nota": "Tener la posibilidad de hacer algo.",
       "categoria": "verbo",
-      "subnivel": "8.4"
+      "subnivel": "8.3"
     },
     {
       "eu": "ezin dut",
       "es": "no puedo",
       "nota": "Fíjate: no lleva «ez» delante, ya va dentro.",
       "categoria": "verbo",
-      "subnivel": "8.4"
+      "subnivel": "8.3"
     },
     {
       "eu": "behar dut",
       "es": "tengo que, necesito",
       "nota": null,
       "categoria": "verbo",
-      "subnivel": "8.4"
+      "subnivel": "8.3"
     },
     {
       "eu": "nahi dut",
       "es": "quiero",
       "nota": "Ya la tenías; aquí se ve en familia.",
       "categoria": "verbo",
-      "subnivel": "8.4"
+      "subnivel": "8.3"
     }
   ],
   "ejercicios": [
@@ -685,7 +680,7 @@
           "explicacion": "Con «haiek» va «datoz»."
         }
       ],
-      "subnivel": "8.2"
+      "subnivel": "8.1"
     },
     {
       "id": "u9-g03",
@@ -801,7 +796,7 @@
           ]
         }
       ],
-      "subnivel": "8.5"
+      "subnivel": "8.4"
     },
     {
       "id": "u9-g04",
@@ -1133,7 +1128,7 @@
           "pista": "Tres palabras, con «egon»."
         }
       ],
-      "subnivel": "8.2"
+      "subnivel": "8.1"
     },
     {
       "id": "u9-g09",
@@ -1197,7 +1192,7 @@
           ]
         }
       ],
-      "subnivel": "8.3"
+      "subnivel": "8.2"
     },
     {
       "id": "u9-g10",
@@ -1414,7 +1409,7 @@
     },
     {
       "id": "u8-g13",
-      "subnivel": "8.4",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "opcion",
@@ -1485,7 +1480,7 @@
     },
     {
       "id": "u8-g14",
-      "subnivel": "8.4",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "pares",
@@ -1651,7 +1646,7 @@
     },
     {
       "id": "u8-g16",
-      "subnivel": "8.5",
+      "subnivel": "8.4",
       "variantes": [
         {
           "tipo": "pares",
@@ -1740,7 +1735,7 @@
     },
     {
       "id": "u8-g17",
-      "subnivel": "8.5",
+      "subnivel": "8.4",
       "variantes": [
         {
           "tipo": "pares",
@@ -1829,7 +1824,7 @@
     },
     {
       "id": "u8-g18",
-      "subnivel": "8.5",
+      "subnivel": "8.4",
       "variantes": [
         {
           "tipo": "pares",
@@ -1918,7 +1913,7 @@
     },
     {
       "id": "u8-g19",
-      "subnivel": "8.5",
+      "subnivel": "8.4",
       "variantes": [
         {
           "tipo": "pares",
@@ -2363,7 +2358,7 @@
     },
     {
       "id": "u8-g24",
-      "subnivel": "8.4",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "pares",
@@ -2452,7 +2447,7 @@
     },
     {
       "id": "u8-g25",
-      "subnivel": "8.4",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "pares",
@@ -2541,7 +2536,7 @@
     },
     {
       "id": "u8-g26",
-      "subnivel": "8.4",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "pares",
@@ -2630,7 +2625,7 @@
     },
     {
       "id": "u8-g27",
-      "subnivel": "8.3",
+      "subnivel": "8.2",
       "variantes": [
         {
           "tipo": "opcion",
@@ -2701,7 +2696,7 @@
     },
     {
       "id": "u8-g28",
-      "subnivel": "8.3",
+      "subnivel": "8.2",
       "variantes": [
         {
           "tipo": "opcion",
@@ -2781,7 +2776,7 @@
     },
     {
       "id": "u8-g29",
-      "subnivel": "8.3",
+      "subnivel": "8.2",
       "variantes": [
         {
           "tipo": "orden",
@@ -2851,7 +2846,7 @@
     },
     {
       "id": "u8-g30",
-      "subnivel": "8.3",
+      "subnivel": "8.2",
       "variantes": [
         {
           "tipo": "opcion",

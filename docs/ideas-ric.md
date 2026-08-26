@@ -632,6 +632,102 @@ veintes», con el guiño al `quatre-vingts` francés— y **ya está puesta y bi
 escrita**. El listón está alto. Se irán anotando los huecos al leer las
 fichas.
 
+### Barrido total de ejercicios «sucios» + dos fusiones (2026-08-26)
+
+Ric: *«es clave que en la barrida total encuentres estas cosas sucias de
+ejercicios que no son de la unidad»*. Hecho, con un criterio objetivo:
+**¿se puede acertar sabiendo solo lo anterior?**
+
+**De 47 variantes imposibles a 14.** Ningún subnivel por debajo de 5
+ejercicios, y la unidad 4 baja de 8 temáticas a 7.
+
+#### Cómo se midió, y por qué el primer número engañaba
+
+El barrido crudo daba 107 variantes usando vocabulario posterior. Pero **55
+eran la variante 4** de su grupo — artefacto del generador — y al separarlas
+salió lo importante: **97 eran distractores** (una palabra posterior como
+opción *falsa*, que no impide acertar) y solo **13 eran la respuesta
+correcta**. Sumando parejas y traducir, donde toda palabra cuenta: 47 reales.
+
+#### El hallazgo gordo: el tiempo escondido en «El cuerpo»
+
+El subnivel 9.3 era el vertedero de la vieja unidad 10.1 («Gorputza,
+urtaroak eta jaiak»). Las fiestas ya se habían sacado a 6.5, pero **las
+estaciones y el tiempo seguían dentro**: `udaberria`, `udazkena`, `elurra`,
+`haizea`, `hodeia`, `eguraldia`, `hotza`, `beroa`.
+
+Consecuencia para el alumno: **en la unidad 6 aprendía invierno y verano, y
+primavera y otoño no aparecían hasta tres unidades después, dentro de un
+subnivel de partes del cuerpo.** Y cuatro ejercicios titulados «Empareja el
+cuerpo» le sacaban `elurra` (nieve) o `hodeia` (nube) — más `dirua` (dinero)
+y `galdetu`, que tampoco pintaban nada.
+
+Movidas las ocho a 6.4. Limpiadas las 21 celdas contaminadas, repartiendo las
+once palabras del cuerpo de forma uniforme (tres apariciones cada una) en
+vez de repetir `burua` seis veces. Y reescrito `u6-g18`, que era **el tercero
+de tres emparejar casi idénticos** rotando las mismas cuatro palabras, para
+cubrir las recién llegadas.
+
+#### Fusión 1 · Unidad 4: «La familia cercana» + «La familia extendida»
+
+Idea de Ric: la línea entre cercana y extendida era arbitraria, se aprende
+como un solo campo, y **la unidad 4 era la única del curso con 8 temáticas**.
+
+Al mirarlo de cerca los dos subniveles estaban además sucios: `u4-g26` y
+`u4-g27` mezclaban familia + números + animales de granja en el mismo
+«empareja», y `u5-g12` metía `txakurra` y `katua` entre padre, madre e hijos.
+
+Esas bolsas no eran malas, **estaban en el sitio equivocado**: son ejercicios
+de repaso, y la unidad ya tiene un test que es literalmente «todo lo anterior
+mezclado». Movidas ahí. Resultado, **sin escribir ni un ejercicio nuevo**:
+
+| | antes | después |
+|---|---|---|
+| 4.6 «La familia» | 5 + 5 | **7 grupos** |
+| 4.7 «Animales» (era 4.8) | 5 | **6** |
+| Test | 5 | **7** |
+
+#### Fusión 2 · Unidad 8: «En qué vas» + «Dar indicaciones» → «Cómo llegar»
+
+También idea de Ric. Y hay un argumento que la respalda: la ficha de «Dar
+indicaciones» ya decía *«fíjate en que `ezkerrera` lleva dentro el `-ra` de
+movimiento»*, **y ese `-ra` se enseña en la primera ficha del otro
+subnivel**. La conexión existía pero cruzaba una frontera. Añadido un puente
+al principio. 8.2 queda con 3 fichas, 9 palabras y 8 grupos.
+
+#### Unidad 1: el orden estaba del revés
+
+«Pronunciación y dialectos» hablaba de `batua` y `euskalkia` **antes** de que
+«Dónde se habla» los presentara. O sea: te explicaba cómo suenan los
+dialectos antes de decirte qué es un dialecto. **Intercambiados 1.3 y 1.4.**
+
+Y limpiadas cuatro variantes de 1.1 «Saludos» que practicaban cortesía
+(`barkatu`, `eskerrik asko`, `mesedez`), que es 1.2.
+
+#### Otros movimientos
+
+- `u10.1-g01` (partes del cuerpo) estaba en **6.1 «La hora»** → 9.3.
+- `u8-g03` y `u8-g12` (comida) estaban en 7.1, que tenía **11 grupos**, el
+  doble de la mediana → 7.5 «Comer y beber».
+- `non?` estaba en 3.2 aunque 3.1 «Las interrogativas» tiene las otras
+  nueve → movida a 3.1. Y `u3-g04`, que enseña la familia Non/Nora/Nondik,
+  subió a 3.2, que es su ficha.
+- Solo **2 palabras duplicadas** en todo el curso (`bihar`, `nahi dut`), las
+  dos con la misma traducción.
+
+#### ⚠ Aviso sobre el progreso local
+
+Se han renumerado subniveles (4.8→4.7, 8.4→8.3, 8.5→8.4, 1.3↔1.4). El
+progreso guardado en el navegador va por id de subnivel, así que **lo hecho
+en esos aparecerá desplazado**. Se arregla borrando el progreso local.
+
+#### Quedan 14 variantes
+
+Contaminaciones de una sola palabra, casi todas del subnivel siguiente:
+`u2-g01` (geu/neu/zeu), `u3-g01` (la familia de non), `u9-g10`
+(eskuinera/ezkerrera), `u9-g13` (erantzun/guri), y siete más con una palabra
+cada una. Pendientes.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
