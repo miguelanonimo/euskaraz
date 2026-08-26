@@ -12,8 +12,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 # «Me llamo Ane».
 CURSOS = {"": "data/curso.json",
           "v1": "data/curso.json",
-          "v2": "data/curso-v2.json",
-          "gernikes": "data/curso-gernikes.json"}
+          "v2": "data/curso-v2.json"}
 CURSO = sys.argv[1] if len(sys.argv) > 1 else ""
 if CURSO not in CURSOS:
     sys.exit("Cursos: %s" % ", ".join(k for k in CURSOS if k))
@@ -167,9 +166,9 @@ for ruta, u in unidades:
         for tag in re.findall(r"</?(\w+)>", gr["cuerpo"]):
             if tag not in ("b","i","u"):
                 avisos.append("%s: etiqueta <%s> en «%s»" % (ruta, tag, gr["titulo"]))
-    # El original pedía una ficha de Gernika por unidad. Esta adaptación
-    # mira a Bilbao, y Miguel las tituló «Cómo suena esto en Bizkaia»;
-    # se acepta cualquiera de las dos.
+    # El original pedía una ficha de dialecto por unidad. Se reconocen por
+    # `registro: "bizkaiera"`; se aceptan también por el título, que es como
+    # estaban marcadas antes de que existiera el campo.
     if not any(gr.get("registro") == "bizkaiera" or u"Gernika" in gr["titulo"]
                or u"Bizkaia" in gr["titulo"] for gr in u["gramatica"]):
         avisos.append("%s: no tiene ficha de dialecto" % ruta)

@@ -1465,15 +1465,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "El botón «Bizkaiera / Gernikera» de la barra de arriba…",
+          "pregunta": "El botón «Batua / Bizkaiera» de la barra de arriba…",
           "opciones": [
+            "Decide si los ejercicios te preguntan también en bizkaiera",
             "Cambia el idioma de la app",
-            "Elige qué sabor local acompaña al batua",
             "Cambia el nivel",
             "Activa el audio"
           ],
-          "correcta": 1,
-          "explicacion": "El batua es el mismo; cambian las notas locales."
+          "correcta": 0,
+          "explicacion": "El idioma que aprendes es siempre el batua. Lo que decide es si además te examinan de las formas locales."
         },
         {
           "tipo": "opcion",

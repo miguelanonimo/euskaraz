@@ -2,6 +2,11 @@
 # -*- coding: utf-8 -*-
 """Añade el subnivel 1.4 «Dónde se habla» a la unidad 1, y quita el 8.6.
 
+YA SE EJECUTÓ, y no hay que volver a lanzarlo: la ficha del botón que
+escribe aquí describe el selector Bizkaiera/Gernikera, que se retiró en
+agosto de 2026. La versión buena está en data/unidades-v2/01-kaixo.json.
+Se conserva como registro de cómo se montó el subnivel.
+
 Idea de Ric y Miguel: la unidad 1 ya explica los dialectos («Cómo suena
 esto en Bizkaia», «Un aviso sobre los dialectos») pero da por sabida la
 geografía, y además la app tiene un selector Bizkaiera/Gernikera en la

@@ -1204,6 +1204,43 @@ Dos decisiones que conviene tener anotadas:
 Cubierto en `scripts/probar_respuestas.js`, que comprueba también que
 rechace el número equivocado y las palabras parecidas (`ochenta` por `ocho`).
 
+### El curso en gernikés, borrado (26/08/2026)
+
+Ric: *«el gernikés se puede borrar definitivamente»*. Estaba desenganchado de
+la interfaz desde hace unas horas; ahora se van también los archivos.
+
+**Lo que se ha ido:** `data/unidades-gernikes/` (12 unidades, 77 fichas, 365
+palabras, 721 variantes) y `data/curso-gernikes.json`. Unos 456 KB.
+Recuperables en el historial de git si algún día hicieran falta.
+
+**Y el cableado que quedaba**, que era más de lo que parecía: el registro de
+cursos de `verificar.py`, el bloque informativo de `probar-todo.sh`, y la
+opción del selector en `revisar.html` — una herramienta que no habíamos
+mirado y que también lo llevaba.
+
+#### Lo que NO se toca, porque no es lo mismo
+
+Ric lo precisó: *«cuando se usa Gernika en los textos y explicaciones está OK,
+es la variante y explicaciones localizadas»*. **Las once menciones a Gernika
+en las fichas se quedan**, incluida la curiosidad del `etxie` por `etxea` en la
+ficha del artículo. Lo que se borra es la versión paralela del curso, no el
+sitio ni sus rasgos.
+
+También se quedan las menciones en `docs/` y `CHANGELOG.md`: eso es histórico
+y borrarlo sería reescribir el pasado.
+
+#### Un fallo que salió del barrido
+
+`u1-g14 v4` **seguía preguntando por el botón «Bizkaiera / Gernikera»**. Al
+reescribir su ficha se me pasó el ejercicio, así que estaba doblemente mal: el
+botón ya no dice eso, y tampoco hace lo que la respuesta correcta afirmaba.
+Actualizado.
+
+`scripts/gen_14.py` se conserva —es el registro de cómo se montó el subnivel
+1.4— pero **con un aviso arriba de que ya corrió y no hay que relanzarlo**: la
+ficha que escribe describe el selector retirado, y volver a ejecutarlo
+pisaría la versión buena.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
