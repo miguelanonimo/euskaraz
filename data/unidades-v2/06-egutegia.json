@@ -57,7 +57,7 @@
     },
     {
       "titulo": "Y media, y cuarto, menos cuarto",
-      "cuerpo": "Los minutos se cuelgan detrás con <b>eta</b> (y) o con <b>gutxi</b> (menos):\n\n<b>Hirurak eta bost.</b> — Las tres y cinco.\n<b>Hirurak eta laurden.</b> — Las tres y cuarto.\n<b>Hiru eta erdiak.</b> — Las tres y media.\n<b>Laurak bost gutxi.</b> — Las cuatro menos cinco.\n<b>Laurak laurden gutxi.</b> — Las cuatro menos cuarto.\n\nOjo con <b>eta erdiak</b>: es la única forma que rompe el patrón. Aquí la hora <b>pierde la -ak</b> y se queda desnuda — <i>hiru</i> eta erdiak, <i>bost</i> eta erdiak, <i>zortzi</i> eta erdiak. El plural lo lleva solo <b>erdiak</b>, y el verbo va en <b>dira</b>. Decir <i>*hirurak eta erdiak</i> es un error corriente, pero error (Euskaltzaindia, araua 35).\n\nCon <b>laurden</b> y con los minutos, en cambio, la hora sí conserva la -ak: <i>hirurak</i> eta laurden, <i>laurak</i> bost gutxi.\n\nFíjate en el orden de «menos»: primero los minutos y luego <b>gutxi</b>, al revés que en castellano.\n\nY dos horas que se dicen con nombre propio:\n<b>eguerdia</b> — el mediodía\n<b>gauerdia</b> — la medianoche",
+      "cuerpo": "Los minutos se cuelgan detrás con <b>eta</b> (y) o con <b>gutxi</b> (menos):\n\n<b>Hirurak eta bost.</b> — Las tres y cinco.\n<b>Hirurak eta laurden.</b> — Las tres y cuarto.\n<b>Hiru eta erdiak.</b> — Las tres y media.\n<b>Laurak bost gutxi.</b> — Las cuatro menos cinco.\n<b>Laurak laurden gutxi.</b> — Las cuatro menos cuarto.\n\nOjo con <b>eta erdiak</b>: es la única forma que rompe el patrón. Aquí la hora <b>pierde la -ak</b> y se queda desnuda — <i>hiru</i> eta erdiak, <i>bost</i> eta erdiak, <i>zortzi</i> eta erdiak. El plural lo lleva solo <b>erdiak</b>, y el verbo va en <b>dira</b>. Decir <i>*hirurak eta erdiak</i> es un error corriente, pero error.\n\nCon <b>laurden</b> y con los minutos, en cambio, la hora sí conserva la -ak: <i>hirurak</i> eta laurden, <i>laurak</i> bost gutxi.\n\nFíjate en el orden de «menos»: primero los minutos y luego <b>gutxi</b>, al revés que en castellano.\n\nY dos horas que se dicen con nombre propio:\n<b>eguerdia</b> — el mediodía\n<b>gauerdia</b> — la medianoche",
       "ejemplos": [
         {
           "eu": "Zortzi eta erdiak dira.",
@@ -101,7 +101,7 @@
     },
     {
       "titulo": "Los días de la semana",
-      "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana): <i>aste-lehena</i> es «el primero de la semana», <i>aste-artea</i> «el de en medio», <i>aste-azkena</i> «el último»… aunque el miércoles no sea el último. El nombre viene de una semana antigua más corta.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».",
+      "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana): <i>aste-lehena</i> es «el primero de la semana», <i>aste-artea</i> «el de en medio», <i>aste-azkena</i> «el último»… aunque el miércoles no sea el último. El nombre viene de una semana antigua más corta.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».\n\n¿Y el jueves y el viernes, que no llevan <i>aste-</i>? Arrancan los dos por <b>ost-</b>, de una capa más antigua de la lengua. De dónde sale exactamente <b>se sigue discutiendo entre especialistas</b>, así que aquí no te vamos a contar una historia bonita: apréndetelos tal cual, que es lo que hace todo el mundo.",
       "ejemplos": [
         {
           "eu": "Larunbatean etxean nago.",
@@ -144,21 +144,6 @@
       "subnivel": "6.2"
     },
     {
-      "titulo": "El jueves y el viernes: los dos que no encajan",
-      "cuerpo": "Ya viste que lunes, martes y miércoles son «el primero, el de en medio y el último» de la semana. Pero <b>ostegun</b> (jueves) y <b>ostiral</b> (viernes) se salen del patrón — y arrancan los dos igual, por <b>ost-</b>.\n\nEse <i>ost-</i> (también <i>ortz-</i>) no tiene que ver con la semana: tiene que ver con <b>el cielo</b>. Aparece en palabras del firmamento y del trueno, y es la raíz del nombre <b>Ortzi</b> (o <i>Urtzi</i>), que se recoge como el del cielo y la tormenta. Así que <i>ostegun</i> se lee como <b>«el día del cielo»</b>.\n\nY ahora lo bonito. Mira a quién está dedicado el jueves en otras lenguas:\n\n<b>jueves</b> — de <i>Iovis dies</i>, el día de Júpiter, dios romano del rayo\n<b>Thursday</b> — el día de <i>Thor</i>, dios nórdico del trueno\n<b>ostegun</b> — el día de <i>Ortzi</i>\n\nTres familias de lenguas que no tienen nada que ver entre sí, y las tres le dieron el jueves al mismo tipo de dios. El euskera no copió el nombre: llegó por su cuenta a la misma idea.\n\nUn aviso de honestidad: esto es la explicación más aceptada, no un hecho cerrado. Los detalles —sobre todo los de <i>ostiral</i>— siguen discutiéndose entre especialistas.",
-      "ejemplos": [
-        {
-          "eu": "Ostegunean.",
-          "es": "El jueves."
-        },
-        {
-          "eu": "Ostirala eta larunbata.",
-          "es": "El viernes y el sábado."
-        }
-      ],
-      "subnivel": "6.2"
-    },
-    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "Aquí el bizkaiera no cambia un detalle: cambia <b>los nombres de los días</b>. Y es de lo primero que descoloca a quien llega con batua aprendido.\n\n<b>astelehena</b> — igual (a veces <i>astelena</i>)\n<b>martitzena</b> — batua: asteartea\n<b>eguaztena</b> — batua: asteazkena\n<b>eguena</b> — batua: osteguna\n<b>barikua</b> — batua: ostirala\n<b>zapatua</b> — batua: larunbata\n<b>domeka</b> — batua: igandea\n\nAsí que «el viernes por la noche» por allí es <b>barikuan gabean</b>, no <i>ostiralean gauean</i>. Los carteles y la prensa usan batua; la gente, en casa, sigue con estos.\n\n<b>gaua → gaba</b>\nLa noche es <b>gaba</b> en bizkaiera, de donde sale el <i>gabon</i> de «buenas noches» (gau on). En batua, <i>gaua</i>.\n\n<b>Ze ordu da?</b>\nEl <i>zer</i> del batua se acorta en <b>ze</b> delante de un nombre: <b>Ze ordu da?</b>, <b>Ze egun da gaur?</b>",
       "ejemplos": [
@@ -183,7 +168,7 @@
     },
     {
       "titulo": "Los doce meses",
-      "cuerpo": "Van siempre con su artículo <b>-a</b> al final, igual que <i>eguna</i> o <i>astea</i>. Así se dicen y así conviene aprenderlos:\n\n<b>urtarrila</b> enero · <b>otsaila</b> febrero · <b>martxoa</b> marzo\n<b>apirila</b> abril · <b>maiatza</b> mayo · <b>ekaina</b> junio\n<b>uztaila</b> julio · <b>abuztua</b> agosto · <b>iraila</b> septiembre\n<b>urria</b> octubre · <b>azaroa</b> noviembre · <b>abendua</b> diciembre\n\nA diferencia del castellano, en euskera los meses se escriben en minúscula, como los días de la semana que ya viste en esta unidad.",
+      "cuerpo": "Van siempre con su artículo <b>-a</b> al final, igual que <i>eguna</i> o <i>astea</i>. Así se dicen y así conviene aprenderlos:\n\n<b>urtarrila</b> — enero\n<b>otsaila</b> — febrero\n<b>martxoa</b> — marzo\n<b>apirila</b> — abril\n<b>maiatza</b> — mayo\n<b>ekaina</b> — junio\n<b>uztaila</b> — julio\n<b>abuztua</b> — agosto\n<b>iraila</b> — septiembre\n<b>urria</b> — octubre\n<b>azaroa</b> — noviembre\n<b>abendua</b> — diciembre\n\nA diferencia del castellano, en euskera los meses se escriben en minúscula, como los días de la semana que ya viste en esta unidad.",
       "ejemplos": [
         {
           "eu": "urtarrila",
@@ -1166,9 +1151,12 @@
           "es": "Hoy es lunes.",
           "eu": "Gaur astelehena da.",
           "palabras": [
-            "Gaur",
+            "gaur",
             "astelehena",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "larunbata"
           ]
         },
         {
@@ -1177,10 +1165,13 @@
           "es": "Esta mañana estoy en casa.",
           "eu": "Gaur goizean etxean nago.",
           "palabras": [
-            "Gaur",
+            "gaur",
             "goizean",
             "etxean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "beroa"
           ]
         },
         {
@@ -1189,9 +1180,12 @@
           "es": "Mañana estoy en Bilbao.",
           "eu": "Bihar Bilbon nago.",
           "palabras": [
-            "Bihar",
+            "bihar",
             "Bilbon",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "otsaila"
           ]
         },
         {
@@ -1200,9 +1194,12 @@
           "es": "El sábado estoy en Bilbao.",
           "eu": "Larunbatean Bilbon nago.",
           "palabras": [
-            "Larunbatean",
+            "larunbatean",
             "Bilbon",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "urtebetetzea"
           ]
         },
         {
@@ -1211,10 +1208,13 @@
           "es": "Por la noche siempre estoy en casa.",
           "eu": "Gauean beti etxean nago.",
           "palabras": [
-            "Gauean",
+            "gauean",
             "beti",
             "etxean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "jaieguna"
           ]
         }
       ],
@@ -1278,18 +1278,18 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "El domingo. → ____",
+          "pregunta": "«Nos vemos el domingo» — el domingo, ahí, es un cuándo: ____",
           "opciones": [
-            "igandea",
             "igandean",
             "igandera",
+            "igandetik",
             "igandeak"
           ],
-          "correcta": 1,
-          "explicacion": "Los días también llevan -n cuando dices «el domingo»."
+          "correcta": 0,
+          "explicacion": "La -n marca el cuándo. Sin ella, «igandea» es el día en sí: «Gaur igandea da», hoy es domingo. En castellano las dos se dicen «el domingo», y de ahí la confusión."
         }
       ],
-      "subnivel": "6.1"
+      "subnivel": "6.2"
     },
     {
       "id": "u7-g07",
@@ -1387,11 +1387,11 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Hoy es viernes.",
+          "es": "Son las once.",
           "respuestas": [
-            "gaur ostirala da"
+            "hamaikak dira"
           ],
-          "pista": "Empieza por «gaur»."
+          "pista": "La hora va en plural, y el verbo también."
         },
         {
           "tipo": "traducir",
@@ -1408,11 +1408,11 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Mañana por la tarde.",
+          "es": "A las tres y media.",
           "respuestas": [
-            "bihar arratsaldean"
+            "hiru eta erdietan"
           ],
-          "pista": "Dos palabras."
+          "pista": "Con «y media», el -etan se pega a «erdiak» y la hora se queda desnuda."
         }
       ],
       "subnivel": "6.1"
@@ -1426,10 +1426,13 @@
           "es": "Son las siete y media.",
           "eu": "Zazpi eta erdiak dira.",
           "palabras": [
-            "Zazpi",
+            "zazpi",
             "eta",
             "erdiak",
-            "dira."
+            "dira"
+          ],
+          "distractores": [
+            "udaberria"
           ]
         },
         {
@@ -1438,21 +1441,26 @@
           "es": "A las diez estoy en el trabajo.",
           "eu": "Hamarretan lanean nago.",
           "palabras": [
-            "Hamarretan",
+            "hamarretan",
             "lanean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "gaua"
           ]
         },
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "El domingo por la mañana estoy en casa.",
-          "eu": "Igande goizean etxean nago.",
+          "es": "A las cinco estoy en casa.",
+          "eu": "Bostetan etxean nago.",
           "palabras": [
-            "Igande",
-            "goizean",
+            "bostetan",
             "etxean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "ordua"
           ]
         },
         {
@@ -1461,9 +1469,12 @@
           "es": "Ahora son las doce.",
           "eu": "Orain hamabiak dira.",
           "palabras": [
-            "Orain",
+            "orain",
             "hamabiak",
-            "dira."
+            "dira"
+          ],
+          "distractores": [
+            "asteburua"
           ]
         },
         {
@@ -1472,10 +1483,13 @@
           "es": "A las dos estoy en la escuela.",
           "eu": "Ordu bietan eskolan nago.",
           "palabras": [
-            "Ordu",
+            "ordu",
             "bietan",
             "eskolan",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "urtarrila"
           ]
         }
       ],
@@ -1629,15 +1643,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Zortzietan gosaria, ordu bietan ____.",
+          "pregunta": "Zortzietan goizean; ordu bietan ____.",
           "opciones": [
-            "afaria",
-            "bazkaria",
-            "gosaria",
-            "gaua"
+            "arratsaldean",
+            "goizean",
+            "gauean",
+            "bihar"
           ],
-          "correcta": 1,
-          "explicacion": "A las dos toca la comida: «bazkaria»."
+          "correcta": 0,
+          "explicacion": "Las dos de la tarde ya son «arratsaldean»."
         },
         {
           "tipo": "opcion",
@@ -2032,10 +2046,13 @@
           "es": "Mi cumpleaños es en mayo.",
           "eu": "Nire urtebetetzea maiatzean da.",
           "palabras": [
-            "Nire",
+            "nire",
             "urtebetetzea",
             "maiatzean",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "hodeia"
           ]
         },
         {
@@ -2044,10 +2061,13 @@
           "es": "Diciembre es un mes frío.",
           "eu": "Abendua hilabete hotza da.",
           "palabras": [
-            "Abendua",
+            "abendua",
             "hilabete",
             "hotza",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "maiatza"
           ]
         },
         {
@@ -2071,9 +2091,9 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "¡Felicidades!",
+          "es": "el año",
           "respuestas": [
-            "zorionak"
+            "urtea"
           ],
           "pista": "Una palabra, la misma que ya conoces."
         }
@@ -2302,10 +2322,13 @@
           "es": "En primavera llueve.",
           "eu": "Udaberrian euria egiten du.",
           "palabras": [
-            "Udaberrian",
+            "udaberrian",
             "euria",
             "egiten",
-            "du."
+            "du"
+          ],
+          "distractores": [
+            "asteazkena"
           ]
         },
         {
@@ -2314,10 +2337,13 @@
           "es": "En invierno hace frío.",
           "eu": "Neguan hotz egiten du.",
           "palabras": [
-            "Neguan",
+            "neguan",
             "hotz",
             "egiten",
-            "du."
+            "du"
+          ],
+          "distractores": [
+            "oporrak"
           ]
         },
         {
@@ -2326,10 +2352,13 @@
           "es": "Hoy hace buen tiempo.",
           "eu": "Gaur eguraldi ona dago.",
           "palabras": [
-            "Gaur",
+            "gaur",
             "eguraldi",
             "ona",
-            "dago."
+            "dago"
+          ],
+          "distractores": [
+            "azaroa"
           ]
         },
         {
@@ -2338,10 +2367,13 @@
           "es": "Me gustan tus ojos.",
           "eu": "Zure begiak gustatzen zaizkit.",
           "palabras": [
-            "Zure",
+            "zure",
             "begiak",
             "gustatzen",
-            "zaizkit."
+            "zaizkit"
+          ],
+          "distractores": [
+            "urtebetetzea"
           ]
         },
         {

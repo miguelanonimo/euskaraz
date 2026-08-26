@@ -932,10 +932,13 @@
           "es": "Me gusta el euskera.",
           "eu": "Niri euskara gustatzen zait.",
           "palabras": [
-            "Niri",
+            "niri",
             "euskara",
             "gustatzen",
-            "zait."
+            "zait"
+          ],
+          "distractores": [
+            "sudurra"
           ]
         },
         {
@@ -944,9 +947,13 @@
           "es": "¿Qué te gusta?",
           "eu": "Zer gustatzen zaizu?",
           "palabras": [
-            "Zer",
+            "zer",
             "gustatzen",
-            "zaizu?"
+            "zaizu",
+            "?"
+          ],
+          "distractores": [
+            "guri"
           ]
         },
         {
@@ -955,10 +962,13 @@
           "es": "A él le gusta el cine.",
           "eu": "Hari zinema gustatzen zaio.",
           "palabras": [
-            "Hari",
+            "hari",
             "zinema",
             "gustatzen",
-            "zaio."
+            "zaio"
+          ],
+          "distractores": [
+            "sudurra"
           ]
         },
         {
@@ -967,10 +977,13 @@
           "es": "No me gusta la lluvia.",
           "eu": "Ez zait euria gustatzen.",
           "palabras": [
-            "Ez",
+            "ez",
             "zait",
             "euria",
-            "gustatzen."
+            "gustatzen"
+          ],
+          "distractores": [
+            "hanka"
           ]
         },
         {
@@ -979,10 +992,13 @@
           "es": "Me gustan mucho los libros.",
           "eu": "Liburuak asko gustatzen zaizkit.",
           "palabras": [
-            "Liburuak",
+            "liburuak",
             "asko",
             "gustatzen",
-            "zaizkit."
+            "zaizkit"
+          ],
+          "distractores": [
+            "erantzun"
           ]
         }
       ],
@@ -1197,10 +1213,13 @@
           "es": "A nosotros nos gusta el monte.",
           "eu": "Guri mendia gustatzen zaigu.",
           "palabras": [
-            "Guri",
+            "guri",
             "mendia",
             "gustatzen",
-            "zaigu."
+            "zaigu"
+          ],
+          "distractores": [
+            "saldu"
           ]
         },
         {
@@ -1209,11 +1228,15 @@
           "es": "A ella no le gusta el fútbol.",
           "eu": "Hari ez zaio futbola gustatzen.",
           "palabras": [
-            "Hari",
+            "hari",
             "ez",
             "zaio",
             "futbola",
-            "gustatzen."
+            "gustatzen"
+          ],
+          "distractores": [
+            "sudurra",
+            "ilea"
           ]
         },
         {
@@ -1222,10 +1245,13 @@
           "es": "Se lo ha dicho a Ane.",
           "eu": "Hark Aneri esan dio.",
           "palabras": [
-            "Hark",
+            "hark",
             "Aneri",
             "esan",
-            "dio."
+            "dio"
+          ],
+          "distractores": [
+            "asko"
           ]
         },
         {
@@ -1234,10 +1260,13 @@
           "es": "Me interesa mucho el euskera.",
           "eu": "Euskara asko interesatzen zait.",
           "palabras": [
-            "Euskara",
+            "euskara",
             "asko",
             "interesatzen",
-            "zait."
+            "zait"
+          ],
+          "distractores": [
+            "pilota"
           ]
         },
         {
@@ -1246,10 +1275,13 @@
           "es": "A ellos les gusta el verano.",
           "eu": "Haiei uda gustatzen zaie.",
           "palabras": [
-            "Haiei",
+            "haiei",
             "uda",
             "gustatzen",
-            "zaie."
+            "zaie"
+          ],
+          "distractores": [
+            "erosi"
           ]
         }
       ],

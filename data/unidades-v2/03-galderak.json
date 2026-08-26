@@ -96,7 +96,7 @@
     },
     {
       "titulo": "Tres distancias, y lo que cuenta es de quién está cerca",
-      "cuerpo": "El castellano tiene tres (<i>este, ese, aquel</i>) y el euskera también. La suerte es que se corresponden casi uno a uno:\n\n<b>hau</b> — esto, este: está cerca de <b>mí</b>\n<b>hori</b> — eso, ese: está cerca de <b>ti</b>\n<b>hura</b> — aquello, aquel: está <b>lejos de los dos</b>\n\nFíjate en que el criterio no es la distancia en metros, sino <b>de quién</b> está cerca la cosa. Un libro que tienes tú en la mano es <i>hori</i> para mí, aunque estemos sentados juntos.\n\nEn plural solo cambia la cola:\n\n<b>hauek</b> — estos · <b>horiek</b> — esos · <b>haiek</b> — aquellos\n\nOjo con <i>hori</i>: su plural es <b>horiek</b>, no «horrek». Y el de <i>hura</i> es <b>haiek</b>, que no se parece nada al singular — esa hay que aprendérsela tal cual.",
+      "cuerpo": "El castellano tiene tres (<i>este, ese, aquel</i>) y el euskera también. La suerte es que se corresponden casi uno a uno:\n\n<b>hau</b> — esto, este: está cerca de <b>mí</b>\n<b>hori</b> — eso, ese: está cerca de <b>ti</b>\n<b>hura</b> — aquello, aquel: está <b>lejos de los dos</b>\n\nFíjate en que el criterio no es la distancia en metros, sino <b>de quién</b> está cerca la cosa. Un libro que tienes tú en la mano es <i>hori</i> para mí, aunque estemos sentados juntos.\n\nEn plural solo cambia la cola:\n\n<b>hauek</b> — estos\n<b>horiek</b> — esos\n<b>haiek</b> — aquellos\n\nOjo con <i>hori</i>: su plural es <b>horiek</b>, no «horrek». Y el de <i>hura</i> es <b>haiek</b>, que no se parece nada al singular — esa hay que aprendérsela tal cual.",
       "ejemplos": [
         {
           "eu": "Lagun hau irakaslea da.",
@@ -1129,9 +1129,13 @@
           "es": "¿Cómo te llamas?",
           "eu": "Nola duzu izena?",
           "palabras": [
-            "Nola",
+            "nola",
             "duzu",
-            "izena?"
+            "izena",
+            "?"
+          ],
+          "distractores": [
+            "hauek"
           ]
         },
         {
@@ -1140,9 +1144,13 @@
           "es": "¿Con quién estás tú?",
           "eu": "Norekin zaude zu?",
           "palabras": [
-            "Norekin",
+            "norekin",
             "zaude",
-            "zu?"
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "hori"
           ]
         },
         {
@@ -1151,9 +1159,13 @@
           "es": "¿Qué es esto?",
           "eu": "Zer da hau?",
           "palabras": [
-            "Zer",
+            "zer",
             "da",
-            "hau?"
+            "hau",
+            "?"
+          ],
+          "distractores": [
+            "agian"
           ]
         },
         {
@@ -1162,9 +1174,13 @@
           "es": "¿Cuándo es la fiesta?",
           "eu": "Noiz da festa?",
           "palabras": [
-            "Noiz",
+            "noiz",
             "da",
-            "festa?"
+            "festa",
+            "?"
+          ],
+          "distractores": [
+            "agian"
           ]
         },
         {
@@ -1173,9 +1189,13 @@
           "es": "¿Adónde vas tú?",
           "eu": "Nora zoaz zu?",
           "palabras": [
-            "Nora",
+            "nora",
             "zoaz",
-            "zu?"
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "horiek"
           ]
         }
       ],
@@ -2476,7 +2496,10 @@
             "irakaslea",
             "da"
           ],
-          "pista": "El demostrativo se pega al nombre, y el verbo cierra la frase."
+          "pista": "El demostrativo se pega al nombre, y el verbo cierra la frase.",
+          "distractores": [
+            "horiek"
+          ]
         }
       ]
     },

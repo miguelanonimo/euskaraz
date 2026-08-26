@@ -10,6 +10,59 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ## Pendientes de comentar con Miguel
 
+### El repaso de vocabulario ya es aditivo (26/08/2026) — HECHO
+
+Petición de Ric, resuelta. La regla que fijó:
+
+> *Con abrir la pantalla de la gramática de un tema, o del vocabulario del
+> mismo, ya se pueden añadir al repaso. Y este incluye las abiertas hacia
+> atrás aunque sean de unidades anteriores.*
+
+**Lo que había.** `fondoVocabulario()` se quedaba con las unidades que
+tuvieran `progUnidad(u.id).vocab`. Era por unidad entera —abrir la pantalla
+de Vocabulario de la unidad 4 metía sus **74 palabras**, incluidos los temas
+sin tocar— y la señal era la equivocada: leer la explicación o practicar no
+contaba.
+
+**Lo que hay.** `progSub()` guarda ahora `desbloqueado` además de `visitado`.
+Son cosas distintas a propósito: `visitado` es haber abierto la portada del
+tema, `desbloqueado` es haber entrado a su gramática o a su vocabulario.
+Comprobado que asomarse a la portada **no** basta.
+
+**Dos vías de respaldo, para no dejar a nadie sin bolsa de golpe:**
+
+- Las unidades **sin temas** (el curso viejo de `data/unidades/`, que sigue en
+  el repo aunque ya no se carga) se desbloquean enteras como antes.
+- El **progreso guardado antes de este cambio** marcaba la unidad y no los
+  temas. Si esa marca está y no hay ningún tema abierto, se entiende que la
+  unidad se vio entera. En cuanto abres un tema, manda el tema.
+
+Y `pantallaVocabulario()` ya solo pone la marca de unidad donde no hay temas:
+si la dejara puesta, asomarse a un tema desbloquearía las 74 de la unidad y no
+habríamos arreglado nada.
+
+#### Un fallo que salió al probarlo
+
+Las tarjetas de la Home decían **«¡Completado!»** en cuanto no había nada
+vencido, **sin mirar las palabras sin estrenar**. Es de antes, pero la bolsa
+aditiva lo hacía cantar: desbloqueabas 32 palabras y la app te decía que
+habías terminado.
+
+`frasePendientes()` ya sabía decirlo bien —«Al día · 32 sin estrenar»— solo
+que nunca se llegaba a ella. Arreglado en las dos tarjetas, la de vocabulario
+y la de repaso mezclado.
+
+Comprobado en la app: la tarjeta pasa de 32 a 40 al abrir la explicación de
+otro tema, **sin recargar**.
+
+`scripts/probar_bolsa.js` cubre los ocho casos, incluido el que importa —un
+tema de la unidad 1 y otro de la 4 suman, no se pisan— y el del progreso
+viejo.
+
+---
+
+
+
 ### 📄 Audios: la lista para Miguel está en `docs/audios-pendientes.md`
 
 Todo lo de audio —los 22 que suenan mal y los 194 que faltan— está
@@ -1282,6 +1335,354 @@ estaban en el tema equivocado**:
 Todas las unidades conservan al menos una. **`verificar.py` comprueba ahora
 que ninguna burbuja tenga una ficha normal detrás**, así que la regla se
 mantiene sola.
+
+### El test de unidad, de 7 preguntas a 12 (26/08/2026)
+
+Ric: *«el test de unidad debería tener al menos 10 preguntas, ideal que sean
+12, porque recoge preguntas de todos los temas»*.
+
+**Lo que había.** El test cogía un ejercicio de cada grupo marcado como
+`test` —cinco en casi todas las unidades— más las dos de escuchar que se
+cuelan en cualquier práctica. **Siete preguntas.** La unidad 4, con siete
+grupos, llegaba a nueve.
+
+**Lo que hay.** Se completa hasta doce tirando de los grupos de los temas, que
+es lo coherente con lo que el test dice ser: todo lo anterior mezclado. No
+hizo falta escribir ni un ejercicio nuevo.
+
+**Se reparte por turnos**, uno de cada tema, para que ninguno acapare. Y se
+baraja también **el orden de los temas**, no solo los grupos dentro de cada
+uno: sin eso, en las unidades que solo necesitan dos o tres de relleno
+saldrían siempre de los primeros temas y los últimos no entrarían nunca en el
+test. Comprobado en la unidad 4, que solo necesita tres: en 60 tiradas
+aparecen sus **siete** temas.
+
+Las diez unidades llegan a 12. Verificado también en la app: el contador dice
+**0/12** y la barra, «Galderak · Test».
+
+`scripts/probar_test.js` comprueba las dos cosas —el tamaño y el reparto— y
+el mínimo de 10 por si algún día se toca el número.
+
+### Números compuestos en los ejercicios (26/08/2026)
+
+Ric: *«estaría bien que alguna de las preguntas preguntara algún número que
+no sea exacto 40, 60, 50… sino algo más complicado como 42 o 76»*.
+
+Tenía razón y era peor de lo que parecía: **los cinco grupos de 4.2
+preguntaban solo decenas redondas**, ni un compuesto — justo lo que la ficha
+enseña a construir. Y entre ellos eran casi el mismo ejercicio con las
+palabras barajadas.
+
+Reescrito `u4-g44`, uno de los cinco: ahora va de componer y descomponer
+(42, 76, 22, 91, 35), y remata con la idea que sostiene todo el sistema — el
+segundo trozo nunca pasa de 19, que es por lo que hacen falta el once al
+diecinueve antes de contar alto. De paso baja la repetición del tema.
+
+**Aviso sobre la verificación, que casi me la cuela.** Al buscar la
+construcción, el resumen del buscador afirmó que **42 es «hogeita bi»**. Es
+falso: `hogeita bi` es 20+2 = **22**. La fuente consultada después lo da bien
+(`berrogeita bi`). Y de 76 y 91 la extracción devolvía el redondo más
+cercano (70 y 90).
+
+Por eso las ocho formas del ejercicio —respuestas y distractores— se pasaron
+por un comprobador aritmético que las desmonta pieza a pieza. Los
+distractores además no coinciden por accidente con la respuesta:
+`hirurogeita sei` es 66, `laurogeita hamasei` 96 y `hirurogeita hamar` 70.
+
+### «Azkena» estaba de paso en la ficha de ordinales (26/08/2026)
+
+Ric: en los ordinales se explica `lehena` pero no `azkena`, y debería estar
+en el texto de gramática.
+
+Estaba — pero en **una línea suelta** entre la lista y las irregularidades,
+tan de paso que Ric la leyó y no se le quedó. Y es **el problema del 3.3 al
+revés**: `azkena` se practica en **siete variantes** y se explicaba en media
+frase.
+
+Reescrita esa parte con un encuadre que además es cierto y se recuerda: **los
+dos extremos de la serie son justo los que se escapan de la regla.** `lehena`
+no es «batgarrena», y `azkena` no se construye con ningún número.
+
+Y se le añade el porqué, que es lo que faltaba: «último» **no es un puesto
+fijo**, depende de cuántos haya. En una fila de tres, el tercero y el último
+son el mismo; en una de diez, no. Por eso necesita palabra propia y no puede
+salir de un número más `-garren`.
+
+Ejemplos ampliados con `Lehena eta azkena`, y comprobado que ninguno usa
+vocabulario posterior.
+
+### Los animales pasan al caserío (26/08/2026)
+
+Idea de Ric: un tema de solo vocabulario se hace raro, y los animales encajan
+mejor en la unidad de la casa. Le propuse partirlo —mascotas en la 4, granja
+en la 5— porque `txakurra` y `katua` sostienen seis fichas del verbo `ukan`.
+Ric decidió moverlo entero: *«no pasa nada que se hable de perros y gatos
+antes, y después introducirlos todos»*. Los ejemplos llevan la traducción al
+lado, así que se sostiene.
+
+**El tema 4.7 pasa a ser 5.5 «El caserío y sus animales»**: 10 palabras y 6
+grupos. Tamaños después: la unidad 4 baja de 7 temas a **6** (83 → 73
+palabras) y la 5 sube de 4 a **5** (52 → 63). Mucho más parejas.
+
+#### La ficha, con el `baserri` como hilo
+
+El enganche es mejor de lo que parecía: **`baserria` no es un edificio**. Es
+la casa más la tierra, los animales y quien vive allí, contado como una sola
+unidad de trabajo y de familia. Y muchísimos apellidos vascos **son el nombre
+del caserío**, no el del padre — Etxeberria, «la casa nueva». En castellano el
+apellido dice de quién eres hijo; en euskera, muchas veces, de qué casa.
+
+Con eso delante, la lista de animales deja de ser una lista suelta: los de
+dentro, los que dan de comer, los del monte y el corral.
+
+**Corrección de Ric, preguntando por allí:** escribí que `baso` es «el monte,
+la tierra». Es **el bosque** — yo había fundido las dos glosas de la fuente
+(`baso` bosque + `herri` en su sentido antiguo de tierra) en una sola.
+Corregido a `baso` (bosque) + `herri` (pueblo, que el alumno ya conoce de la
+unidad 2): literalmente, **el poblado del bosque**, la casa de fuera del
+pueblo.
+
+#### Lo que hubo que limpiar detrás
+
+El test de la unidad 4 preguntaba por animales que ya no son suyos: **9 celdas**
+cambiadas por vocabulario de la propia unidad (familia). Y al endurecer la
+comprobación aparecieron cuatro grupos más que miraban hacia adelante: el test
+de la unidad 2 usaba adjetivos de la 5 y `norekin?` de la 3; el de la 6,
+`bazkaria` (u7) y `zorionak` (u10).
+
+### 🔴 PENDIENTE · Vocabulario usado antes de estar catalogado
+
+Al afinar el comprobador para lo anterior salió un patrón de fondo que **no
+se ha tocado**, porque es grande y hay que decidirlo:
+
+**102 variantes en 54 grupos** usan palabras en unidades **anteriores** a
+donde están catalogadas. Las que más se repiten: `niri`, `etxea`, `al`,
+`polita`, `txikia`, `ikaslea`, `medikua`, `anaia`, `laguna`.
+
+**No todas son un fallo.** El curso enseña a propósito frases hechas como
+bloques —la ficha 3.4 lo dice literalmente: *«apréndetelas enteras por
+ahora»*— y ahí aparecen formas verbales sin explicar. Separar eso de lo que sí
+es un descuido es trabajo de criterio, no automático.
+
+*Nota sobre el comprobador, que costó afinar:* la regla buena es mirar
+primero **la expresión más larga** que esté en el vocabulario y solo juzgar lo
+que queda suelto. Sin eso, «Gabon, ikusi arte» marcaba `ikusi` como palabra de
+la unidad 7, cuando `ikusi arte` es de la 1.1. Y hay que normalizar los signos
+de interrogación de las claves, o `eta zu?` no casa con `eta zu`.
+
+### «Komuna» explicada, y una referencia vieja que se había escapado (26/08/2026)
+
+Ric: `komuna` estaba en el vocabulario **sin explicar**, y es una oportunidad
+perdida porque **en público se pregunta por el komuna, no por el bainugela**.
+
+Añadido a la ficha de la casa, con la distinción práctica: en casa es
+<b>bainugela</b>; en un bar, un restaurante o un museo, lo que se pregunta y lo
+que pone en la puerta es <b>Komunak</b>, casi siempre en plural. Y la frase
+entera, <b>Non dago komuna?</b>, que se construye con `non` y `dago`, ya
+suyos. Las notas de las dos palabras se remiten la una a la otra.
+
+#### El fallo que salió de paso
+
+La misma ficha decía: *«jan y egon son verbos que llevas usando desde las
+unidades 6 y 8»*. Estamos en la **5**. `egon` es del tema anterior de esta
+misma unidad y `jan` es de la **7** — o sea que mandaba hacia adelante y hacia
+atrás a la vez, resto de la numeración vieja.
+
+**Se le había escapado al barrido de referencias**, que buscaba «(en/de) la
+unidad N» en singular y no cazaba las plurales. `verificar.py` coge ahora
+también «las unidades 6 y 8», y da error si una explicación remite a su propia
+unidad o a una posterior. Probado a la inversa con el texto viejo puesto.
+
+### «Batzuk» se preguntaba sin explicarse (26/08/2026)
+
+Detectado por Ric: 5.4 explica `bat` pero no `batzuk`, y `batzuk` es **la
+respuesta correcta de dos variantes** de ese mismo tema. Encima el subnivel
+tenía el vocabulario vacío, así que la palabra no estaba en ninguna parte.
+
+Añadido a la ficha, enganchándolo con lo que el alumno ya tiene — el plural
+`-ak`, que es donde se ve la diferencia de verdad:
+
+> **mahaiak** — las mesas (esas, las que sabemos)
+> **mahai batzuk** — unas mesas (algunas, cualesquiera)
+>
+> Es la misma diferencia que en castellano entre «trae las sillas» y «trae
+> unas sillas».
+
+Con el aviso de que `batzuk` ya lleva el plural dentro: no se dice «mahaiak
+batzuk». Y la palabra al vocabulario del tema, que estaba a cero.
+
+*Curiosidad que salió del comprobador:* marcó `zuri` en el ejemplo «Mahai
+zuri bat» como vocabulario posterior. Es un **falso positivo por homógrafo**:
+`zuri` es a la vez la raíz de `zuria` (blanco, 5.3) y el dativo de `zu` («a
+ti», 9.2). El ejemplo está bien; lo que no distingue es el comprobador.
+
+### Los ejercicios de ordenar se resolvían sin saber euskera (26/08/2026)
+
+Ric: en las fichas de ordenar, **la mayúscula marca el principio y el punto o
+la interrogación marcan el final**, así que dan el orden sin necesidad de
+entender nada. Y propone lo que hace Duolingo: meter alguna palabra que no
+sea de la frase.
+
+Era sistemático: **136 de 144** tenían las dos pistas. En «Egun on. Zer
+moduz?» las fichas eran `Egun · on. · Zer · moduz?` — se resuelve a ojo.
+
+**Tres cambios, los tres suyos:**
+
+1. **Fichas despojadas** de mayúscula inicial y de signos: `egun · on · zer ·
+   moduz`.
+2. **El «?» como ficha suelta**, que era su idea. Deja de marcar cuál es la
+   última palabra, y de paso enseña que en euskera la pregunta no lleva
+   signo de apertura. No hace falta colocarlo para acertar —`normalizar()`
+   lo ignora al corregir— así que es honesto sin ser puntilloso.
+3. **Distractores**: una o dos fichas que no son de la frase, sacadas del
+   vocabulario del propio tema o de la unidad, así que son palabras conocidas
+   y creíbles. Las 144 tienen.
+
+**La corrección no hubo que tocarla**: `corregirOrden()` ya comparaba con
+`normalizar()`, que quita signos y mayúsculas. Y usar un distractor sale mal
+solo, porque se compara contra la frase entera.
+
+*Dónde se complicó:* la regla para quitar mayúsculas. La primera versión
+—«minúscula si la palabra está en minúscula en el diccionario»— dejó con
+mayúscula las **formas declinadas** (`Etxean`, `Nik`, `Goizean`), que no
+están así catalogadas. Invertida a una lista explícita de nombres propios. Y
+todavía se coló `Astelehenean`, porque «Aste Santua» me había dejado `aste`
+como raíz de nombre propio: los sitios y las personas se comparan por
+prefijo (se declinan: *Bilbon*, *Aneri*) y el resto por igualdad.
+
+Quedan con mayúscula solo `Aneri`, `Bilbo`, `Bilbokoa`, `Bilbon`, `Bilbora`,
+`Gernika` y `Madrilgoak`.
+
+`scripts/probar_ordenar.js` comprueba las cinco propiedades en los 144, y
+`verificar.py` avisa si un distractor está dentro de la solución.
+
+*No pude probarlo pinchando en la app:* los bucles para atravesar el examen
+hasta un ejercicio de ordenar atascaban el navegador. Verificado sobre los
+datos y la lógica.
+
+### La referencia académica de 6.1, fuera (26/08/2026)
+
+Ric: *«(Euskaltzaindia, araua 35)» se hace rara aquí y es la primera vez que
+vemos algo así»*. Cierto — **era la única cita en ese formato de todo el
+curso**. Las otras menciones a Euskaltzaindia van contadas dentro del texto
+(«reunió las formas comunes y fijó el estándar», «su diccionario define
+txapelketa como…»), que es otra cosa y funciona.
+
+Retirada. La ficha ya explicaba la regla; el paréntesis no añadía nada salvo
+un cambio de tono.
+
+### «El domingo» tenía dos respuestas buenas (26/08/2026)
+
+Detectado por Ric en 6.1. El ejercicio decía **«El domingo. → ____»** y entre
+las opciones estaban `igandea` e `igandean`. Las dos se traducen «el
+domingo» en castellano:
+
+- **`igandea`** — el día en sí. *Gaur igandea da*, hoy es domingo.
+- **`igandean`** — el cuándo. *Igandean etorriko naiz*, vendré el domingo.
+
+Ric propuso quitar `igandea` y poner otro distractor. **Hecho, y además
+desambiguada la pregunta**: quitar la opción arregla el marcador pero deja al
+alumno igual de perdido, y esa distinción es justo lo que enseña el tema.
+Ahora dice *«Nos vemos el domingo» — el domingo, ahí, es un cuándo*, y la
+explicación cuenta el porqué de la confusión.
+
+**Barrido de la misma trampa.** Saltaron 13 ejercicios con la forma con `-n` y
+sin ella entre las opciones, pero **doce son falsos positivos**: tener `ardoa`
+y `ardoan` de distractores está bien cuando la respuesta es `ardorik` y el
+castellano no admite dudas.
+
+Lo que distingue el caso real: **el castellano sin preposición**. «Por la
+mañana», «por la tarde», «a mediodía» fuerzan la lectura temporal; «el
+domingo», a pelo, no. De los cinco de ese mismo grupo, solo el de Ric la
+tenía.
+
+### 6.1 pedía cosas que enseña 6.2 (26/08/2026)
+
+Ric lo vio en un «bihar arratsaldean». El tema **6.1 «La hora»** tiene como
+vocabulario `goiza`, `arratsaldea`, `gaua`… pero **la forma con `-n`
+(`goizean`, `arratsaldean`) la explica 6.2**, junto con los días de la
+semana. Así que 6.1 pedía cosas de la ficha siguiente.
+
+No era un ejercicio suelto:
+
+- **`u7-g06` entero** —«Por la mañana», «Por la tarde», «A mediodía»…— son
+  los cinco la `-n` de tiempo. **Movido a 6.2.**
+- **`u7-g08 v3`** pedía «Hoy es viernes» (los días son 6.2) → ahora «Son las
+  once».
+- **`u7-g08 v5`** era el de Ric, «Mañana por la tarde» → ahora «A las tres y
+  media».
+- **`u7-g09 v3`** pedía «El domingo por la mañana estoy en casa» —días **y**
+  la `-n`— → ahora «A las cinco estoy en casa».
+
+Los tres reemplazos usan las formas de la propia ficha de 6.1
+(`hamaikak dira`, `hiru eta erdietan`, `bostetan`), que es de lo que va el
+tema. **No hizo falta crear ningún grupo**: 6.1 se queda con cinco, el
+mínimo, y 6.2 sube a seis.
+
+*Y el verificador me pilló a mí:* al cambiar las respuestas, las **pistas
+seguían describiendo las viejas** —«Empieza por gaur», «Dos palabras»—.
+Saltó la comprobación de pistas que se añadió esta misma mañana. Reescritas
+con la regla en vez de con la forma.
+
+### Retirada la ficha de Ortzi: el remate era falso (26/08/2026)
+
+Ric dudó de la ficha «El jueves y el viernes: los dos que no encajan»
+—a los hablantes que conoce no les sonaba el `ost-`— y pidió fuentes o
+retirarla. **Tenía razón, y el fallo era peor de lo que parecía.**
+
+La fuente buena es **M. Glonti, «Sobre los nombres vascos del jueves», en
+*Euskera* XXIX**, la revista de Euskaltzaindia. Lo que dice:
+
+- **`ortz` sí significa «cielo, dios, trueno»** — esa parte de la ficha estaba
+  bien.
+- **Pero `ortzegun` es un CALCO del latín *Iovis dies*.** Conclusión literal
+  del artículo: *«en el tiempo latino el vasco sí que produjo el calco
+  ortzegun»*. Y la semana de siete días llegó a Europa por el latín, así que
+  el jueves como concepto no es prelatino en euskera.
+- El artículo repasa **cuatro hipótesis enfrentadas** (Gorostiaga,
+  Barandiarán y otras). No hay consenso.
+
+**Mi remate decía justo lo contrario:** *«El euskera no copió el nombre: llegó
+por su cuenta a la misma idea»*. Es falso. Sí lo copió — lo tradujo. Y era
+precisamente la frase que hacía la ficha memorable.
+
+El aviso que le puse («esto es la explicación más aceptada, no un hecho
+cerrado») **no salva nada**: hedgear un dato no lo arregla si el dato está al
+revés.
+
+**Retirada la ficha.** En su lugar, una frase dentro de «Los días de la
+semana» que dice la verdad y no promete magia: el jueves y el viernes
+arrancan por `ost-`, de una capa más antigua, **su origen se sigue discutiendo
+entre especialistas**, y lo práctico es aprendérselos tal cual.
+
+**Lección para las cuñas culturales:** verificar antes de escribir no bastó —
+lo hice, y la primera búsqueda me dio un resumen que confirmaba lo que quería
+oír. Lo que faltó fue **ir a la fuente primaria** en vez de a los resúmenes.
+Las otras dos cuñas de ese día (las estaciones y `Euskal Herria`) se apoyan en
+etimologías transparentes y verificadas; esta se apoyaba en una
+reconstrucción discutida.
+
+### Las listas largas, una por línea (26/08/2026)
+
+Ric, sobre los doce meses: iban de tres en tres separados por «·», y uno por
+línea **se lee y se memoriza mejor**. Hecho.
+
+Aplicado el mismo criterio a las otras listas apretadas del curso, pero solo
+donde es un **conjunto que hay que aprenderse**:
+
+- los números **del uno al diez**
+- los **ordinales del 4 al 12**
+- los **demostrativos en plural** (hauek / horiek / haiek)
+- las tres tablas de contraste del **repaso de bizkaiera** (naiz → naz…)
+
+**Tres se quedan en una línea, a propósito**, porque ahí la línea dice algo:
+
+- `hogei · berrogei · hirurogei · laurogei` — seguidas se ve la escalera de
+  veintes, que es justo lo que enseña esa ficha.
+- `Lapurdi · Nafarroa Beherea · Zuberoa` — es un apunte breve, no una lista
+  que memorizar; el detalle está en los cuatro del sur.
+- `1. = lehena · 2. = bigarrena · 3. = hirugarrena` — son el ejemplo de cómo
+  se escribe con cifra, no la lista de ordinales.
 
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 

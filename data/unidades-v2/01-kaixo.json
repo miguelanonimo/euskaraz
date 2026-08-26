@@ -834,10 +834,13 @@
           "es": "Muy bien, muchas gracias.",
           "eu": "Oso ondo, eskerrik asko.",
           "palabras": [
-            "Oso",
-            "ondo,",
+            "oso",
+            "ondo",
             "eskerrik",
-            "asko."
+            "asko"
+          ],
+          "distractores": [
+            "gabon"
           ]
         },
         {
@@ -846,10 +849,15 @@
           "es": "Buenos días. ¿Qué tal?",
           "eu": "Egun on. Zer moduz?",
           "palabras": [
-            "Egun",
-            "on.",
-            "Zer",
-            "moduz?"
+            "egun",
+            "on",
+            "zer",
+            "moduz",
+            "?"
+          ],
+          "distractores": [
+            "agur",
+            "euskara"
           ]
         },
         {
@@ -858,9 +866,12 @@
           "es": "Muchas gracias. ¡Adiós!",
           "eu": "Eskerrik asko. Agur!",
           "palabras": [
-            "Eskerrik",
-            "asko.",
-            "Agur!"
+            "eskerrik",
+            "asko",
+            "agur"
+          ],
+          "distractores": [
+            "ondo"
           ]
         },
         {
@@ -869,11 +880,16 @@
           "es": "Bien, gracias. ¿Y tú?",
           "eu": "Ondo, eskerrik asko. Eta zu?",
           "palabras": [
-            "Ondo,",
+            "ondo",
             "eskerrik",
-            "asko.",
-            "Eta",
-            "zu?"
+            "asko",
+            "eta",
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "gaizki",
+            "euskara"
           ]
         },
         {
@@ -882,10 +898,15 @@
           "es": "Buenas tardes. ¿Qué tal?",
           "eu": "Arratsalde on. Zer moduz?",
           "palabras": [
-            "Arratsalde",
-            "on.",
-            "Zer",
-            "moduz?"
+            "arratsalde",
+            "on",
+            "zer",
+            "moduz",
+            "?"
+          ],
+          "distractores": [
+            "bai",
+            "mesedez"
           ]
         }
       ],
@@ -1146,9 +1167,13 @@
           "es": "¡Hola! ¿Qué tal?",
           "eu": "Kaixo! Zer moduz?",
           "palabras": [
-            "Kaixo!",
-            "Zer",
-            "moduz?"
+            "kaixo",
+            "zer",
+            "moduz",
+            "?"
+          ],
+          "distractores": [
+            "ez"
           ]
         },
         {
@@ -1157,9 +1182,12 @@
           "es": "Regular, gracias.",
           "eu": "Hala-hola, eskerrik asko.",
           "palabras": [
-            "Hala-hola,",
+            "hala-hola",
             "eskerrik",
-            "asko."
+            "asko"
+          ],
+          "distractores": [
+            "ondo"
           ]
         },
         {
@@ -1168,9 +1196,12 @@
           "es": "Adiós, hasta luego.",
           "eu": "Agur, gero arte.",
           "palabras": [
-            "Agur,",
+            "agur",
             "gero",
-            "arte."
+            "arte"
+          ],
+          "distractores": [
+            "ondo"
           ]
         },
         {
@@ -1179,9 +1210,12 @@
           "es": "Buenas noches, hasta mañana.",
           "eu": "Gabon, bihar arte.",
           "palabras": [
-            "Gabon,",
+            "gabon",
             "bihar",
-            "arte."
+            "arte"
+          ],
+          "distractores": [
+            "agur"
           ]
         },
         {
@@ -1190,9 +1224,12 @@
           "es": "Buenas noches, hasta la vista.",
           "eu": "Gabon, ikusi arte.",
           "palabras": [
-            "Gabon,",
+            "gabon",
             "ikusi",
-            "arte."
+            "arte"
+          ],
+          "distractores": [
+            "barkatu"
           ]
         }
       ],

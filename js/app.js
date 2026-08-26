@@ -53,6 +53,7 @@
   var LARGO_REPASO = 15;   // ejercicios por sesión de repaso mezclado
   var LARGO_VOCAB  = 14;   // palabras por sesión de repaso de vocabulario
   var ESCUCHAR_PRACTICA = 2;  // preguntas de escuchar que se cuelan en la práctica de una unidad
+  var LARGO_TEST = 12;     // preguntas del test de unidad (mínimo aceptable: 10)
   var ESCUCHAR_REPASO   = 3;  // preguntas de escuchar que se cuelan en el repaso mezclado
 
   // Motor de repaso de vocabulario (aportado por Ric): la sesión es una
@@ -920,7 +921,7 @@
       totalHoy++;
       var rVo = recuento(vocab, claveDeVocab);
       pintarPendiente(el.vocabRepasoDue, rVo.vencidos);
-      if (rVo.vencidos === 0) {
+      if (rVo.vencidos === 0 && !rVo.nuevos) {
         el.vocabRepasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
         el.vocabRepasoCount.className = 'navcard__sub navcard__sub--ok';
       } else {
@@ -939,7 +940,7 @@
       totalHoy++;
       var rEj = recuento(fondo, claveDeFondo);
       pintarPendiente(el.repasoDue, rEj.vencidos);
-      if (rEj.vencidos === 0) {
+      if (rEj.vencidos === 0 && !rEj.nuevos) {
         el.repasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
         el.repasoCount.className = 'navcard__sub navcard__sub--ok';
       } else {
@@ -1104,6 +1105,10 @@
     var p = progUnidad(unidadId);
     if (!p.subs) p.subs = {};
     if (!p.subs[subId]) p.subs[subId] = { visitado: false, mejor: 0 };
+    // `visitado` es haber abierto la portada del tema; `desbloqueado` es
+    // haber entrado a su gramática o a su vocabulario, que es lo que mete
+    // sus palabras en el repaso general (criterio de Ric).
+    if (p.subs[subId].desbloqueado === undefined) p.subs[subId].desbloqueado = false;
     return p.subs[subId];
   }
 
@@ -1258,8 +1263,19 @@
     else tituloBarra(seccion ? seccion + ' · ' + u.titulo : u.titulo);
   }
 
+  /* Abrir la explicación o el vocabulario de un tema desbloquea sus
+     palabras para el repaso general. Se acumulan: las de los temas que
+     abriste hace tres unidades siguen dentro. */
+  function desbloquearTema() {
+    var u = estado.unidad, id = estado.subnivel;
+    if (!u || !id || id === 'test' || !tieneSubniveles(u)) return;
+    progSub(u.id, id).desbloqueado = true;
+    guardarProgreso();
+  }
+
   function pantallaGramatica() {
     var u = estado.unidad;
+    desbloquearTema();
     barraDeUnidad(u, 'Gramática');
 
     el.gramContent.innerHTML = gramaticaVisible(delSubnivel(u.gramatica, estado.subnivel)).map(function (g) {
@@ -1327,8 +1343,11 @@
 
   function pantallaVocabulario() {
     var u = estado.unidad;
-    progUnidad(u.id).vocab = true;
-    guardarProgreso();
+    // La marca de unidad entera solo tiene sentido donde no hay temas: si
+    // los hay, dejarla puesta desbloquearía las 74 palabras de la unidad
+    // por haber asomado a un tema.
+    if (tieneSubniveles(u)) desbloquearTema();
+    else { progUnidad(u.id).vocab = true; guardarProgreso(); }
     barraDeUnidad(u, 'Vocabulario');
     el.vocabUnitCat.value = '';
     pintarVocabulario();
@@ -1424,12 +1443,37 @@
      con haber entrado a la portada), sin repetir la misma palabra en
      euskera aunque salga en dos unidades. Se guarda la unidad de origen
      para poder sacar distractores de la misma lección. */
+  /* Las palabras que ya se han desbloqueado, de todas las unidades. Es
+     aditivo: se van sumando conforme abres temas, y las de atrás no se
+     caen nunca (petición de Ric).
+
+     Antes esto iba por unidad entera y con la señal equivocada: bastaba
+     abrir la pantalla de Vocabulario para meter sus 74 palabras, incluidos
+     los temas sin tocar.
+
+     Se conservan dos vías de respaldo para no dejar a nadie sin bolsa:
+     las unidades sin temas (el curso viejo de data/unidades/), y el
+     progreso guardado de antes de este cambio, que marcaba la unidad y no
+     los temas — si esa marca está y no hay ningún tema abierto, se
+     entiende que la unidad se vio entera. */
+  function temaDesbloqueado(u, subId) {
+    var p = progUnidad(u.id);
+    return !!(p.subs && p.subs[subId] && p.subs[subId].desbloqueado);
+  }
+
   function fondoVocabulario(categoria) {
     var vistas = {}, fondo = [];
     CURSO.unidades.forEach(function (u) {
-      if (!progUnidad(u.id).vocab) return;
+      var conTemas = tieneSubniveles(u);
+      var p = progUnidad(u.id);
+      var algunTema = conTemas && (u.subniveles || []).some(function (s) {
+        return temaDesbloqueado(u, s.id);
+      });
+      var unidadEntera = !conTemas ? !!p.vocab : (!!p.vocab && !algunTema);
+      if (!unidadEntera && !algunTema) return;
       u.vocabulario.forEach(function (v) {
         if (categoria && (v.categoria || 'otros') !== categoria) return;
+        if (!unidadEntera && !temaDesbloqueado(u, v.subnivel)) return;
         formasDe(v, u.numero, u.titulo).forEach(function (forma) {
           var k = normalizar(forma.eu);
           if (vistas[k]) return;
@@ -2058,6 +2102,34 @@
      barajado: es la primera pasada, aquí no hay nada que dosificar.
      Lo que sí hace es alimentar el calendario, para que el repaso
      posterior sepa qué se falló. */
+  /* Grupos de los temas para completar el test, repartidos por turnos: uno
+     del primer tema, uno del segundo, y así hasta tener los que faltan. Si
+     se cogieran seguidos, los primeros temas se llevarían todas. */
+  function relleno(u, yaPuestos, cuantos) {
+    if (cuantos <= 0 || !tieneSubniveles(u)) return [];
+    var usados = {};
+    yaPuestos.forEach(function (g) { usados[g.id] = true; });
+    /* Se baraja también el orden de los temas, no solo los grupos dentro
+       de cada uno: si no, en las unidades que solo necesitan dos o tres de
+       relleno saldrían siempre de los primeros temas y los últimos no
+       entrarían nunca en el test. */
+    var porTema = barajar((u.subniveles || []).map(function (s) {
+      return barajar(delSubnivel(u.ejercicios, s.id).filter(function (g) {
+        return !usados[g.id];
+      }));
+    }));
+    var salida = [], vuelta = 0;
+    while (salida.length < cuantos) {
+      var metidoAlguno = false;
+      for (var i = 0; i < porTema.length && salida.length < cuantos; i++) {
+        if (porTema[i].length > vuelta) { salida.push(porTema[i][vuelta]); metidoAlguno = true; }
+      }
+      if (!metidoAlguno) break;      // no hay más grupos disponibles
+      vuelta++;
+    }
+    return salida;
+  }
+
   function empezarPractica() {
     var u = estado.unidad;
     estado.modo = 'unidad';
@@ -2065,6 +2137,13 @@
     // abierto; el test ('test') mezcla los grupos marcados como tales.
     var grupos = tieneSubniveles(u) ? delSubnivel(u.ejercicios, estado.subnivel) : u.ejercicios;
     if (!grupos.length) grupos = u.ejercicios;
+    /* El test de la unidad se queda corto con solo sus grupos: cinco en casi
+       todas, que con las dos de escuchar son siete preguntas. Como es «todo
+       lo anterior mezclado», se completa hasta doce tirando de los temas,
+       uno de cada por turnos, para que ningún tema quede fuera ni acapare
+       (pedido por Ric). */
+    if (estado.subnivel === 'test') grupos = grupos.concat(
+      relleno(u, grupos, LARGO_TEST - ESCUCHAR_PRACTICA - grupos.length));
     var base = barajar(grupos).map(function (g) {
       return prepararVariante(g, null);
     });
@@ -2330,7 +2409,13 @@
       '<p class="q__inst">' + esc(ej.instruccion) + '</p>' +
       '<h2 class="q__prompt q__prompt--es">' + esc(ej.es) + '</h2>' +
       '<div class="build" id="build"></div>' +
-      '<div class="bank" id="bank">' + barajar(ej.palabras).map(function (p, i) {
+      /* Al banco se le suman los distractores: fichas que NO son de la frase.
+         Sin ellos bastaba con colocar todas las que había, y con la mayúscula
+         y el punto puestos se resolvía sin saber euskera (detectado por Ric).
+         La corrección no cambia: compara lo construido contra `eu`, así que
+         usar un distractor sale mal solo. */
+      '<div class="bank" id="bank">' +
+      barajar(ej.palabras.concat(ej.distractores || [])).map(function (p, i) {
         return '<button class="chip" type="button" data-p="' + esc(p) + '" data-k="' + i + '">' + esc(p) + '</button>';
       }).join('') + '</div>';
 

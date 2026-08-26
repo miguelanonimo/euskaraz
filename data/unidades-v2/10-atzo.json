@@ -283,7 +283,7 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "El repaso del dialecto, que ha ido saliendo unidad a unidad:\n\n<b>naiz → naz</b> · <b>dut → dot</b> · <b>zaude → zagoz</b> · <b>zait → jat</b>\n<b>nintzen → nintzan</b> · <b>nuen → neban</b> · <b>zegoen → egoan</b>\n<b>eman → emon</b> · <b>irten → urten</b>\n<b>nola → zelan</b> · <b>-rekin → -gaz</b> · <b>zer → ze</b>\nLos días: <b>martitzena, eguaztena, eguena, barikua, zapatua, domeka</b>\n\nY lo que faltaba:\n\n<b>ere → be</b>\n«También» es <b>be</b> en bizkaiera: <b>Ni be bai.</b> — Yo también. Es de las palabras que más se oyen.\n\n<b>zergatik → zegaitik</b>\nY «porque» es <b>-lako</b> en los dos.\n\n<b>ete</b>\nUna partícula preciosa que el batua casi no usa: marca la duda. <b>Etorriko ete da?</b> — ¿Vendrá?, me pregunto si vendrá.\n\n<b>-txu</b>\nEl diminutivo cariñoso. Donde el batua pone <i>-txo</i>, el bizkaiera pone <b>-txu</b>: <i>etxetxu</i>, <i>polittxu</i>.\n\nY el aviso de siempre: esto es bizkaiera de uso general, con Bilbao como referencia, no una norma calle por calle — y quien tenga menos de cuarenta años mezclará con batua sin darse cuenta, también en Bilbao. Úsalo para entender, no para corregir a nadie.",
+      "cuerpo": "El repaso del dialecto, que ha ido saliendo unidad a unidad:\n\n<b>naiz → naz</b>\n<b>dut → dot</b>\n<b>zaude → zagoz</b>\n<b>zait → jat</b>\n<b>nintzen → nintzan</b>\n<b>nuen → neban</b>\n<b>zegoen → egoan</b>\n<b>eman → emon</b> · <b>irten → urten</b>\n<b>nola → zelan</b>\n<b>-rekin → -gaz</b>\n<b>zer → ze</b>\nLos días: <b>martitzena, eguaztena, eguena, barikua, zapatua, domeka</b>\n\nY lo que faltaba:\n\n<b>ere → be</b>\n«También» es <b>be</b> en bizkaiera: <b>Ni be bai.</b> — Yo también. Es de las palabras que más se oyen.\n\n<b>zergatik → zegaitik</b>\nY «porque» es <b>-lako</b> en los dos.\n\n<b>ete</b>\nUna partícula preciosa que el batua casi no usa: marca la duda. <b>Etorriko ete da?</b> — ¿Vendrá?, me pregunto si vendrá.\n\n<b>-txu</b>\nEl diminutivo cariñoso. Donde el batua pone <i>-txo</i>, el bizkaiera pone <b>-txu</b>: <i>etxetxu</i>, <i>polittxu</i>.\n\nY el aviso de siempre: esto es bizkaiera de uso general, con Bilbao como referencia, no una norma calle por calle — y quien tenga menos de cuarenta años mezclará con batua sin darse cuenta, también en Bilbao. Úsalo para entender, no para corregir a nadie.",
       "ejemplos": [
         {
           "eu": "Ni be bai.",
@@ -1217,10 +1217,13 @@
           "es": "Ayer fui a Bilbao.",
           "eu": "Atzo Bilbora joan nintzen.",
           "palabras": [
-            "Atzo",
+            "atzo",
             "Bilbora",
             "joan",
-            "nintzen."
+            "nintzen"
+          ],
+          "distractores": [
+            "gainera"
           ]
         },
         {
@@ -1229,10 +1232,13 @@
           "es": "De pequeño vivía en Bilbao.",
           "eu": "Txikitan Bilbon bizi nintzen.",
           "palabras": [
-            "Txikitan",
+            "txikitan",
             "Bilbon",
             "bizi",
-            "nintzen."
+            "nintzen"
+          ],
+          "distractores": [
+            "hobeto"
           ]
         },
         {
@@ -1241,11 +1247,15 @@
           "es": "Ayer vi una película.",
           "eu": "Atzo film bat ikusi nuen.",
           "palabras": [
-            "Atzo",
+            "atzo",
             "film",
             "bat",
             "ikusi",
-            "nuen."
+            "nuen"
+          ],
+          "distractores": [
+            "aurten",
+            "zinen"
           ]
         },
         {
@@ -1254,11 +1264,15 @@
           "es": "La semana pasada estaba en casa.",
           "eu": "Joan den astean etxean nengoen.",
           "palabras": [
-            "Joan",
+            "joan",
             "den",
             "astean",
             "etxean",
-            "nengoen."
+            "nengoen"
+          ],
+          "distractores": [
+            "erraza",
+            "bukatu"
           ]
         },
         {
@@ -1267,10 +1281,13 @@
           "es": "Ellos eran mis amigos.",
           "eu": "Haiek nire lagunak ziren.",
           "palabras": [
-            "Haiek",
+            "haiek",
             "nire",
             "lagunak",
-            "ziren."
+            "ziren"
+          ],
+          "distractores": [
+            "zenuen"
           ]
         }
       ],
@@ -1484,10 +1501,15 @@
           "es": "¿Dónde estabas ayer?",
           "eu": "Non zeunden zu atzo?",
           "palabras": [
-            "Non",
+            "non",
             "zeunden",
             "zu",
-            "atzo?"
+            "atzo",
+            "?"
+          ],
+          "distractores": [
+            "asmoa",
+            "azkar"
           ]
         },
         {
@@ -1496,10 +1518,13 @@
           "es": "Leí los libros.",
           "eu": "Nik liburuak irakurri nituen.",
           "palabras": [
-            "Nik",
+            "nik",
             "liburuak",
             "irakurri",
-            "nituen."
+            "nituen"
+          ],
+          "distractores": [
+            "norbait"
           ]
         },
         {
@@ -1508,9 +1533,12 @@
           "es": "Entonces éramos amigos.",
           "eu": "Orduan lagunak ginen.",
           "palabras": [
-            "Orduan",
+            "orduan",
             "lagunak",
-            "ginen."
+            "ginen"
+          ],
+          "distractores": [
+            "iaz"
           ]
         },
         {
@@ -1519,12 +1547,16 @@
           "es": "Hace mucho no hablaba en euskera.",
           "eu": "Aspaldi ez nuen euskaraz hitz egiten.",
           "palabras": [
-            "Aspaldi",
+            "aspaldi",
             "ez",
             "nuen",
             "euskaraz",
             "hitz",
-            "egiten."
+            "egiten"
+          ],
+          "distractores": [
+            "gehiago",
+            "gutxiago"
           ]
         },
         {
@@ -1533,9 +1565,12 @@
           "es": "Anoche estuve en el bar.",
           "eu": "Bart tabernan nengoen.",
           "palabras": [
-            "Bart",
+            "bart",
             "tabernan",
-            "nengoen."
+            "nengoen"
+          ],
+          "distractores": [
+            "txarragoa"
           ]
         }
       ],
@@ -2092,9 +2127,13 @@
           "es": "¿Hablas euskera?",
           "eu": "Euskalduna al zara?",
           "palabras": [
-            "Euskalduna",
+            "euskalduna",
             "al",
-            "zara?"
+            "zara",
+            "?"
+          ],
+          "distractores": [
+            "zen"
           ]
         },
         {
@@ -2107,7 +2146,11 @@
             "Gernika",
             "baino",
             "handiagoa",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "bezain",
+            "al"
           ]
         },
         {
@@ -2116,10 +2159,13 @@
           "es": "Yo también soy de Bilbao.",
           "eu": "Ni ere Bilbokoa naiz.",
           "palabras": [
-            "Ni",
+            "ni",
             "ere",
             "Bilbokoa",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "aspaldi"
           ]
         },
         {
@@ -2128,9 +2174,12 @@
           "es": "Hoy estoy mejor.",
           "eu": "Gaur hobeto nago.",
           "palabras": [
-            "Gaur",
+            "gaur",
             "hobeto",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "hurrengoa"
           ]
         },
         {
@@ -2139,11 +2188,16 @@
           "es": "¿Quieres café o té?",
           "eu": "Kafea edo tea nahi duzu?",
           "palabras": [
-            "Kafea",
+            "kafea",
             "edo",
             "tea",
             "nahi",
-            "duzu?"
+            "duzu",
+            "?"
+          ],
+          "distractores": [
+            "aditza",
+            "beraz"
           ]
         }
       ],
@@ -2356,12 +2410,16 @@
           "es": "Estoy cansado, así que me quedo en casa.",
           "eu": "Nekatuta nago, beraz etxean geratzen naiz.",
           "palabras": [
-            "Nekatuta",
-            "nago,",
+            "nekatuta",
+            "nago",
             "beraz",
             "etxean",
             "geratzen",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "benetan",
+            "lehen"
           ]
         },
         {
@@ -2370,11 +2428,15 @@
           "es": "Es difícil, pero me gusta.",
           "eu": "Zaila da, baina gustatzen zait.",
           "palabras": [
-            "Zaila",
-            "da,",
+            "zaila",
+            "da",
             "baina",
             "gustatzen",
-            "zait."
+            "zait"
+          ],
+          "distractores": [
+            "gutxiago",
+            "aurten"
           ]
         },
         {
@@ -2383,10 +2445,13 @@
           "es": "Mañana iré a Bilbao.",
           "eu": "Bihar Bilbora joango naiz.",
           "palabras": [
-            "Bihar",
+            "bihar",
             "Bilbora",
             "joango",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "iaz"
           ]
         },
         {
@@ -2395,9 +2460,13 @@
           "es": "¿Vienes conmigo?",
           "eu": "Zu nirekin zatoz?",
           "palabras": [
-            "Zu",
+            "zu",
             "nirekin",
-            "zatoz?"
+            "zatoz",
+            "?"
+          ],
+          "distractores": [
+            "hobeto"
           ]
         },
         {
@@ -2406,11 +2475,15 @@
           "es": "Aprendo euskera porque me gusta.",
           "eu": "Euskara ikasten dut gustatzen zaidalako.",
           "palabras": [
-            "Euskara",
+            "euskara",
             "ikasten",
             "dut",
             "gustatzen",
-            "zaidalako."
+            "zaidalako"
+          ],
+          "distractores": [
+            "zenuen",
+            "nonbait"
           ]
         }
       ],
@@ -2732,10 +2805,13 @@
           "es": "Mañana iré a Bilbao.",
           "eu": "Bihar Bilbora joango naiz.",
           "palabras": [
-            "Bihar",
+            "bihar",
             "Bilbora",
             "joango",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "gutxiago"
           ]
         },
         {
@@ -2744,9 +2820,13 @@
           "es": "¿Qué vas a hacer?",
           "eu": "Zer egingo duzu?",
           "palabras": [
-            "Zer",
+            "zer",
             "egingo",
-            "duzu?"
+            "duzu",
+            "?"
+          ],
+          "distractores": [
+            "zenuen"
           ]
         },
         {
@@ -4126,10 +4206,15 @@
           "es": "¿Qué vas a hacer mañana?",
           "eu": "Zer egingo duzu bihar?",
           "palabras": [
-            "Zer",
+            "zer",
             "egingo",
             "duzu",
-            "bihar?"
+            "bihar",
+            "?"
+          ],
+          "distractores": [
+            "norbait",
+            "txikitan"
           ]
         },
         {

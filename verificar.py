@@ -42,6 +42,13 @@ RE_CUENTA = re.compile(u"(\\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nuev
 # palabra interrogativa» no es una afirmación comprobable.
 RE_EMPIEZA = re.compile(u"[Ee]mpieza por (?:\u00ab([^\u00bb]+)\u00bb|(\\w)\\b)")
 
+# Referencias a otras unidades dentro de una explicación. Se comprueban
+# porque al reestructurar el curso se quedaron apuntando al mapa viejo, y
+# una que mande hacia adelante es peor que un número mal: le dice al alumno
+# que ya sabe algo que aún no ha visto. Coge también las plurales
+# («desde las unidades 6 y 8»), que a la primera versión se le escapaban.
+RE_UNIDAD = re.compile(u"unidades?\\s+(\\d+)((?:\\s*(?:,|y|o)\\s*\\d+)*)", re.I)
+
 def cifra(t):
     t = t.lower()
     return int(t) if t.isdigit() else PALABRAS.get(t)
@@ -163,6 +170,13 @@ for ruta, u in unidades:
                                   u"de la frase (…%s / %s…)"
                                   % (ruta, gr["titulo"], sa[-28:], sb[:28]))
                     break
+        for m in RE_UNIDAD.finditer(gr["cuerpo"]):
+            nums = [int(m.group(1))] + [int(x) for x in re.findall(r"\\d+", m.group(2) or "")]
+            futuras = [n for n in nums if n >= u["numero"]]
+            if futuras:
+                errores.append(u"%s: «%s» remite a la unidad %s, que es esta misma o "
+                               u"posterior" % (ruta, gr["titulo"], futuras[0]))
+
         for tag in re.findall(r"</?(\w+)>", gr["cuerpo"]):
             if tag not in ("b","i","u"):
                 avisos.append("%s: etiqueta <%s> en «%s»" % (ruta, tag, gr["titulo"]))
@@ -232,6 +246,14 @@ for ruta, u in unidades:
                 if len(set(p["es"] for p in ps)) != len(ps): errores.append("%s: castellano repetido en las parejas" % eid)
                 clave = norm(" ".join(p["eu"] for p in ps))
             elif t == "orden":
+                # Los distractores son fichas que NO forman parte de la frase:
+                # si alguna se cuela en la solución, el ejercicio es irresoluble
+                # o tiene dos respuestas buenas.
+                dentro = set(norm(v["eu"]).split())
+                for dis in v.get("distractores") or []:
+                    if norm(dis) in dentro:
+                        errores.append(u"%s: el distractor «%s» está dentro de la "
+                                       u"solución" % (eid, dis))
                 if norm(" ".join(v["palabras"])) != norm(v["eu"]):
                     errores.append("%s: las palabras no reconstruyen «%s» → %s" % (eid, v["eu"], v["palabras"]))
                 if len(v["palabras"]) < 3:

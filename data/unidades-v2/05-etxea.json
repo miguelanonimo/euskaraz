@@ -25,6 +25,11 @@
       "id": "5.4",
       "titulo": "«Una» se dice con «bat»",
       "resumen": "Etxe gorria frente a etxe gorri bat."
+    },
+    {
+      "id": "5.5",
+      "titulo": "El caserío y sus animales",
+      "resumen": "La casa que incluye la tierra, los bichos y a los que viven allí."
     }
   ],
   "gramatica": [
@@ -160,19 +165,19 @@
     },
     {
       "titulo": "Para decir «una» hace falta «bat»",
-      "cuerpo": "Este es un tropiezo clásico viniendo del castellano. Mira las dos:\n\n<b>mahai zuria</b> — <i>la</i> mesa blanca\n<b>mahai zuri bat</b> — <i>una</i> mesa blanca\n\nEl <b>-a</b> del final es «el/la». Si quieres decir «un» o «una», se quita ese artículo y se pone <b>bat</b> detrás de todo.\n\nY ojo cuando hay dos cosas: cada una lleva su <i>bat</i>.\n\n<b>Mahai zuria eta aulki beltza.</b> — La mesa blanca y la silla negra.\n<b>Mahai zuri bat eta aulki beltz bat.</b> — Una mesa blanca y una silla negra.",
+      "cuerpo": "Este es un tropiezo clásico viniendo del castellano. Mira las dos:\n\n<b>mahai zuria</b> — <i>la</i> mesa blanca\n<b>mahai zuri bat</b> — <i>una</i> mesa blanca\n\nEl <b>-a</b> del final es «el/la». Si quieres decir «un» o «una», se quita ese artículo y se pone <b>bat</b> detrás de todo.\n\nY ojo cuando hay dos cosas: cada una lleva su <i>bat</i>.\n\n<b>Mahai zuria eta aulki beltza.</b> — La mesa blanca y la silla negra.\n<b>Mahai zuri bat eta aulki beltz bat.</b> — Una mesa blanca y una silla negra.\n\n<b>¿Y si son varias?</b>\n\nPara «unos» o «unas» hay una palabra hermana: <b>batzuk</b>. Se coloca igual, detrás de todo, y el nombre sigue sin artículo:\n\n<b>mahai bat</b> — una mesa\n<b>mahai batzuk</b> — unas mesas\n\nCompáralo con lo que ya sabes y se ve solo. La <b>-ak</b> es «los/las», algo concreto; <b>batzuk</b> es «unos/unas», sin concretar:\n\n<b>mahaiak</b> — las mesas (esas, las que sabemos)\n<b>mahai batzuk</b> — unas mesas (algunas, cualesquiera)\n\nEs la misma diferencia que en castellano entre «trae las sillas» y «trae unas sillas». Y fíjate en que <i>batzuk</i> ya lleva el plural dentro: no se dice «mahaiak batzuk».",
       "ejemplos": [
         {
-          "eu": "mahai zuria",
-          "es": "la mesa blanca"
+          "eu": "Mahai zuri bat.",
+          "es": "Una mesa blanca."
         },
         {
-          "eu": "mahai zuri bat",
-          "es": "una mesa blanca"
+          "eu": "Mahai batzuk.",
+          "es": "Unas mesas."
         },
         {
-          "eu": "Mahai zuria eta aulki beltza.",
-          "es": "La mesa blanca y la silla negra."
+          "eu": "Aulki batzuk beltzak dira.",
+          "es": "Unas sillas son negras."
         }
       ],
       "subnivel": "5.4"
@@ -190,19 +195,19 @@
     },
     {
       "titulo": "Las habitaciones acaban casi todas en -gela",
-      "cuerpo": "Ya conoces <b>gela</b> (la habitación, el aula) y <b>logela</b> (el dormitorio). Pues el patrón sigue, y una vez lo ves te ahorras memorizar:\n\n<b>lo</b> (dormir) + gela → <b>logela</b>, el dormitorio\n<b>jan</b> (comer) + gela → <b>jangela</b>, el comedor\n<b>egon</b> (estar) + gela → <b>egongela</b>, el salón — literalmente «la habitación de estar»\n<b>bainu</b> (baño) + gela → <b>bainugela</b>, el cuarto de baño\n\nTres de esas cuatro piezas ya las tenías de antes: <i>jan</i> y <i>egon</i> son verbos que llevas usando desde las unidades 6 y 8.",
+      "cuerpo": "Ya conoces <b>gela</b> (la habitación, el aula) y <b>logela</b> (el dormitorio). Pues el patrón sigue, y una vez lo ves te ahorras memorizar:\n\n<b>lo</b> (dormir) + gela → <b>logela</b>, el dormitorio\n<b>jan</b> (comer) + gela → <b>jangela</b>, el comedor\n<b>egon</b> (estar) + gela → <b>egongela</b>, el salón — literalmente «la habitación de estar»\n<b>bainu</b> (baño) + gela → <b>bainugela</b>, el cuarto de baño\n\nDe esas cuatro piezas ya tienes dos: <b>gela</b>, de hace un momento, y <b>egon</b>, del tema anterior de esta misma unidad. <i>Jan</i> (comer) llega en la unidad 7; apúntatela de paso, que aquí ya la ves trabajando.\n\n<b>Y ahora la que más te va a hacer falta fuera de casa.</b>\n\nEn casa, el cuarto de baño es <b>bainugela</b>. Pero en un bar, en un restaurante o en un museo, lo que se pregunta y lo que verás escrito en la puerta es otra palabra:\n\n<b>komuna</b> — el baño, el servicio\n\nY casi siempre en plural, porque son varios: <b>Komunak</b>. Es lo que pone en los carteles.\n\nAsí que si te pierdes buscándolo, la frase es <b>Non dago komuna?</b> — ¿dónde está el baño? Con <i>non</i> y <i>dago</i>, que ya son tuyos. <i>Bainugela</i> ahí no sonaría mal, pero sonaría a que preguntas por el cuarto de baño de una casa.",
       "ejemplos": [
         {
-          "eu": "logela",
-          "es": "el dormitorio"
+          "eu": "Non dago komuna?",
+          "es": "¿Dónde está el baño?"
         },
         {
-          "eu": "jangela",
-          "es": "el comedor"
+          "eu": "Komunak",
+          "es": "Servicios — lo que pone en la puerta."
         },
         {
-          "eu": "egongela",
-          "es": "el salón"
+          "eu": "Bainugela handia da.",
+          "es": "El cuarto de baño es grande."
         }
       ],
       "subnivel": "5.2"
@@ -229,6 +234,25 @@
       "ejemplos": [],
       "subnivel": "5.3",
       "registro": "bizkaiera"
+    },
+    {
+      "titulo": "«Etxea» es la casa; «baserria» es la casa con todo lo vivo dentro",
+      "cuerpo": "Llevas toda la unidad con <b>etxea</b>, la casa. Pues hay otra palabra que conviene conocer antes de aprenderse los animales, porque explica por qué van juntos:\n\n<b>baserria</b> — el caserío\n\nPor dentro es <b>baso</b> (el bosque) + <b>herri</b>, la palabra para «pueblo» que ya conoces de la unidad 2. Literalmente, <b>el poblado del bosque</b>: la casa que está fuera del pueblo, monte adentro. Pero un baserri <b>no es un edificio</b>. Es la casa <b>y</b> la tierra <b>y</b> los animales <b>y</b> la gente que vive allí, todo contado como una sola cosa. Una unidad de trabajo y de familia, no una dirección.\n\nDe ahí sale algo que quizá ya hayas notado en los apellidos vascos. Muchísimos <b>son el nombre del caserío</b>, no el del padre: quien nacía en un caserío llamado Etxeberria se apellidaba Etxeberria — «la casa nueva». Etxebarria, Etxeandia, Elizalde, Mendizabal. En castellano el apellido dice de quién eres hijo; en euskera, muchas veces, dice <b>de qué casa</b>.\n\nCon eso en la cabeza, la lista de animales que viene ahora deja de ser una lista suelta:\n\n<b>Los de dentro</b> — <b>txakurra</b> (el perro), <b>katua</b> (el gato)\n<b>Los que dan de comer</b> — <b>behia</b> (la vaca), <b>ardia</b> (la oveja), <b>txerria</b> (el cerdo), <b>oiloa</b> (la gallina)\n<b>Los del monte y el corral</b> — <b>zaldia</b> (el caballo), <b>untxia</b> (el conejo), <b>txoria</b> (el pájaro), <b>sagua</b> (el ratón)\n\nY una que se lleva la palma: la oveja <b>latxa</b>, la raza de aquí, es la que da la leche del <i>Idiazabal</i>. Si alguna vez te preguntas por qué hay tantas ovejas en los montes vascos, la respuesta es esa.",
+      "ejemplos": [
+        {
+          "eu": "Baserri bat daukate.",
+          "es": "Tienen un caserío."
+        },
+        {
+          "eu": "Behiak eta ardiak.",
+          "es": "Vacas y ovejas."
+        },
+        {
+          "eu": "Txakurra etxean dago.",
+          "es": "El perro está en casa."
+        }
+      ],
+      "subnivel": "5.5"
     }
   ],
   "vocabulario": [
@@ -322,8 +346,8 @@
     },
     {
       "eu": "komuna",
-      "es": "el baño",
-      "nota": null,
+      "es": "el baño, el servicio",
+      "nota": "El de fuera de casa. En los carteles va en plural, «Komunak». El de casa es «bainugela».",
       "audio": "unidades/u6/komuna.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
@@ -510,7 +534,7 @@
     {
       "eu": "bainugela",
       "es": "el cuarto de baño",
-      "nota": null,
+      "nota": "El de casa. Para preguntar en un bar, «komuna».",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -618,6 +642,90 @@
       "nota": null,
       "categoria": "sustantivo",
       "subnivel": "5.2"
+    },
+    {
+      "eu": "txakurra",
+      "es": "el perro",
+      "nota": null,
+      "audio": "unidades/u5/txakurra.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "katua",
+      "es": "el gato",
+      "nota": null,
+      "audio": "unidades/u5/katua.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "txoria",
+      "es": "el pájaro",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "zaldia",
+      "es": "el caballo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "behia",
+      "es": "la vaca",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "ardia",
+      "es": "la oveja",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "txerria",
+      "es": "el cerdo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "oiloa",
+      "es": "la gallina",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "untxia",
+      "es": "el conejo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "sagua",
+      "es": "el ratón",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "baserria",
+      "es": "el caserío",
+      "nota": "De «baso» (bosque) + «herri» (pueblo): la casa de fuera del pueblo. No es solo el edificio: incluye la tierra y los animales.",
+      "subnivel": "5.5"
+    },
+    {
+      "eu": "batzuk",
+      "es": "unos, unas, algunos",
+      "nota": "El plural de «bat». Va detrás del nombre, que se queda sin artículo: «mahai batzuk».",
+      "subnivel": "5.4"
     }
   ],
   "ejercicios": [
@@ -959,9 +1067,13 @@
           "es": "¿Dónde estás tú?",
           "eu": "Non zaude zu?",
           "palabras": [
-            "Non",
+            "non",
             "zaude",
-            "zu?"
+            "zu",
+            "?"
+          ],
+          "distractores": [
+            "horia"
           ]
         },
         {
@@ -970,9 +1082,12 @@
           "es": "Yo estoy en casa.",
           "eu": "Ni etxean nago.",
           "palabras": [
-            "Ni",
+            "ni",
             "etxean",
-            "nago."
+            "nago"
+          ],
+          "distractores": [
+            "zaldia"
           ]
         },
         {
@@ -981,9 +1096,12 @@
           "es": "Ellos están en el bar.",
           "eu": "Haiek tabernan daude.",
           "palabras": [
-            "Haiek",
+            "haiek",
             "tabernan",
-            "daude."
+            "daude"
+          ],
+          "distractores": [
+            "logela"
           ]
         },
         {
@@ -994,7 +1112,10 @@
           "palabras": [
             "Bilbon",
             "bizi",
-            "naiz."
+            "naiz"
+          ],
+          "distractores": [
+            "teilatua"
           ]
         },
         {
@@ -1003,9 +1124,12 @@
           "es": "Ella está en la cocina.",
           "eu": "Hura sukaldean dago.",
           "palabras": [
-            "Hura",
+            "hura",
             "sukaldean",
-            "dago."
+            "dago"
+          ],
+          "distractores": [
+            "aulkia"
           ]
         }
       ],
@@ -1334,10 +1458,13 @@
           "es": "Mi casa es pequeña.",
           "eu": "Nire etxea txikia da.",
           "palabras": [
-            "Nire",
+            "nire",
             "etxea",
             "txikia",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "mahaia"
           ]
         },
         {
@@ -1346,9 +1473,12 @@
           "es": "La calle es vieja.",
           "eu": "Kalea zaharra da.",
           "palabras": [
-            "Kalea",
+            "kalea",
             "zaharra",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "arrosa"
           ]
         },
         {
@@ -1357,10 +1487,13 @@
           "es": "Mi pueblo es bonito.",
           "eu": "Nire herria polita da.",
           "palabras": [
-            "Nire",
+            "nire",
             "herria",
             "polita",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "leihoa"
           ]
         },
         {
@@ -1369,10 +1502,13 @@
           "es": "Nuestra casa es grande.",
           "eu": "Gure etxea handia da.",
           "palabras": [
-            "Gure",
+            "gure",
             "etxea",
             "handia",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "txoria"
           ]
         },
         {
@@ -1381,9 +1517,12 @@
           "es": "La cocina es nueva.",
           "eu": "Sukaldea berria da.",
           "palabras": [
-            "Sukaldea",
+            "sukaldea",
             "berria",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "argia"
           ]
         }
       ],
@@ -1989,9 +2128,12 @@
           "es": "En el salón hay una televisión.",
           "eu": "Egongelan telebista dago.",
           "palabras": [
-            "Egongelan",
+            "egongelan",
             "telebista",
-            "dago."
+            "dago"
+          ],
+          "distractores": [
+            "hemen"
           ]
         },
         {
@@ -2000,9 +2142,12 @@
           "es": "En la cocina está la nevera.",
           "eu": "Sukaldean hozkailua dago.",
           "palabras": [
-            "Sukaldean",
+            "sukaldean",
             "hozkailua",
-            "dago."
+            "dago"
+          ],
+          "distractores": [
+            "arrosa"
           ]
         },
         {
@@ -2011,11 +2156,15 @@
           "es": "La mesa blanca y la silla negra.",
           "eu": "Mahai zuria eta aulki beltza.",
           "palabras": [
-            "Mahai",
+            "mahai",
             "zuria",
             "eta",
             "aulki",
-            "beltza."
+            "beltza"
+          ],
+          "distractores": [
+            "txerria",
+            "arrosa"
           ]
         },
         {
@@ -2024,10 +2173,13 @@
           "es": "Mi habitación es azul.",
           "eu": "Nire logela urdina da.",
           "palabras": [
-            "Nire",
+            "nire",
             "logela",
             "urdina",
-            "da."
+            "da"
+          ],
+          "distractores": [
+            "beltza"
           ]
         },
         {
@@ -2651,6 +2803,9 @@
             "mahai",
             "zuri",
             "bat"
+          ],
+          "distractores": [
+            "laranja"
           ]
         },
         {
@@ -2661,6 +2816,9 @@
           "palabras": [
             "mahai",
             "zuria"
+          ],
+          "distractores": [
+            "arrosa"
           ]
         },
         {
@@ -2781,6 +2939,549 @@
           ],
           "correcta": 1,
           "explicacion": "En euskera casi todo va detrás."
+        }
+      ]
+    },
+    {
+      "id": "u5-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nik txakurra ____.",
+          "opciones": [
+            "naiz",
+            "dut",
+            "da",
+            "ditut"
+          ],
+          "correcta": 1,
+          "explicacion": "«Nik» + un objeto en singular («txakurra») → «dut»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hark etxe bat ____.",
+          "opciones": [
+            "du",
+            "dut",
+            "da",
+            "ditu"
+          ],
+          "correcta": 0,
+          "explicacion": "«Hark» + objeto singular → «du»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Guk katu bat ____.",
+          "opciones": [
+            "dugu",
+            "ditugu",
+            "gara",
+            "dute"
+          ],
+          "correcta": 0,
+          "explicacion": "«Guk» + objeto singular → «dugu»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zuk laguna ____.",
+          "opciones": [
+            "zara",
+            "duzu",
+            "dituzu",
+            "du"
+          ],
+          "correcta": 1,
+          "explicacion": "«Zuk» + objeto singular → «duzu»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek etxe bat ____.",
+          "opciones": [
+            "dira",
+            "dute",
+            "dituzte",
+            "du"
+          ],
+          "correcta": 1,
+          "explicacion": "«Haiek» + objeto singular → «dute»."
+        }
+      ],
+      "subnivel": "5.5"
+    },
+    {
+      "id": "u5.1-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            },
+            {
+              "eu": "untxia",
+              "es": "el conejo"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los animales",
+          "pares": [
+            {
+              "eu": "untxia",
+              "es": "el conejo"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            },
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            }
+          ]
+        }
+      ],
+      "subnivel": "5.5"
+    },
+    {
+      "id": "u4-g45",
+      "subnivel": "5.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «sagua»?",
+          "opciones": [
+            "el ratón",
+            "ocho",
+            "el tío",
+            "el segundo"
+          ],
+          "correcta": 0,
+          "explicacion": "sagua = el ratón."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la vaca» se dice…",
+          "opciones": [
+            "behia",
+            "dauka",
+            "sagua",
+            "txerria"
+          ],
+          "correcta": 0,
+          "explicacion": "la vaca = behia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «untxia»?",
+          "opciones": [
+            "el conejo",
+            "uno",
+            "la prima",
+            "el hijo"
+          ],
+          "correcta": 0,
+          "explicacion": "untxia = el conejo."
+        }
+      ]
+    },
+    {
+      "id": "u4-g46",
+      "subnivel": "5.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "txakurra",
+              "es": "el perro"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "sagua",
+              "es": "el ratón"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «katua»?",
+          "opciones": [
+            "el gato",
+            "el cerdo",
+            "doce",
+            "el cuarto"
+          ],
+          "correcta": 0,
+          "explicacion": "katua = el gato."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el conejo» se dice…",
+          "opciones": [
+            "untxia",
+            "azkena",
+            "hemezortzi",
+            "laurogeita hamar"
+          ],
+          "correcta": 0,
+          "explicacion": "el conejo = untxia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ardia»?",
+          "opciones": [
+            "la oveja",
+            "la tía",
+            "el quinto",
+            "la abuela"
+          ],
+          "correcta": 0,
+          "explicacion": "ardia = la oveja."
+        }
+      ]
+    },
+    {
+      "id": "u4-g47",
+      "subnivel": "5.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "untxia",
+              "es": "el conejo"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «sagua»?",
+          "opciones": [
+            "el ratón",
+            "once",
+            "veinte",
+            "la vaca"
+          ],
+          "correcta": 0,
+          "explicacion": "sagua = el ratón."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el pájaro» se dice…",
+          "opciones": [
+            "txoria",
+            "dut",
+            "hirurogeita hamar",
+            "hirurogei"
+          ],
+          "correcta": 0,
+          "explicacion": "el pájaro = txoria."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «behia»?",
+          "opciones": [
+            "la vaca",
+            "once",
+            "la hija",
+            "(yo) tengo"
+          ],
+          "correcta": 0,
+          "explicacion": "behia = la vaca."
+        }
+      ]
+    },
+    {
+      "id": "u4-g48",
+      "subnivel": "5.5",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja animales",
+          "pares": [
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            },
+            {
+              "eu": "txoria",
+              "es": "el pájaro"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «oiloa»?",
+          "opciones": [
+            "la gallina",
+            "siete",
+            "el último",
+            "treinta"
+          ],
+          "correcta": 0,
+          "explicacion": "oiloa = la gallina."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el caballo» se dice…",
+          "opciones": [
+            "zaldia",
+            "urtea",
+            "aita",
+            "duzu"
+          ],
+          "correcta": 0,
+          "explicacion": "el caballo = zaldia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txoria»?",
+          "opciones": [
+            "el pájaro",
+            "el tío",
+            "el novio",
+            "la mujer, la esposa"
+          ],
+          "correcta": 0,
+          "explicacion": "txoria = el pájaro."
         }
       ]
     }

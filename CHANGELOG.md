@@ -814,3 +814,33 @@ Pendiente, anotado en `docs/ideas-ric.md`: generar los audios nuevos
 del vocabulario añadido (lista en `docs/audios-pendientes.md`, lote
 listo en `scripts/generar-audio/lote-ric-3.mjs`) — no se ha corrido
 en esta sesión.
+
+## 2026-08-26 — Trece correcciones más sobre las 10 unidades
+
+Segunda tanda de `ric/trabajo` (`git merge`, limpio) sobre el curso
+que ya está en producción, sin tocar estructura ni v1:
+
+- **Repaso de vocabulario aditivo por tema, no por unidad entera.**
+  `progSub()` distingue "visitado" (abrir la portada del tema) de
+  "desbloqueado" (entrar a su gramática o vocabulario) — antes abrir
+  el Vocabulario de una unidad metía sus 50-74 palabras al repaso de
+  golpe, temas sin tocar incluidos.
+- **El test de unidad pasa de 7 a 12 preguntas**, completando con
+  grupos de los temas repartidos por turnos, para ajustarse a lo que
+  dice ser: "todo lo anterior mezclado".
+- **Los ejercicios de ordenar ya no se resolvían a ojo**: la mayúscula
+  y los signos de puntuación delataban el orden en 136 de 144
+  ejercicios. Fichas ya despojadas de mayúscula/signos; el "?" es una
+  ficha suelta.
+- Una decena de correcciones de contenido verificadas por Ric:
+  ambigüedad "el domingo" (igandea/igandean), la -n de tiempo
+  preguntada antes de explicarse, números compuestos de verdad en los
+  ejercicios (42/76/91), "batzuk"/"komuna"/"azkena" explicadas por fin,
+  los animales trasladados a la unidad 5 como "El caserío", una
+  etimología falsa de "ortzegun" retirada, listas largas una por
+  línea.
+
+Tres scripts de test nuevos (`probar_bolsa.js`, `probar_ordenar.js`,
+`probar_test.js`) con la misma ruta absoluta al Mac de Ric corregida a
+relativa. Verificado con `probar-todo.sh` entero en verde antes de
+subir.
