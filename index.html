@@ -13,7 +13,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="stylesheet" href="css/styles.css">
+<!-- El ?v= se sube al cambiar CSS o JS: sin él, el navegador sirve
+     la copia cacheada y se ven estilos viejos sobre marcado nuevo. -->
+<link rel="stylesheet" href="css/styles.css?v=2">
 </head>
 <body>
 
@@ -83,11 +85,10 @@
       <div class="cuenta__opcion cuenta__opcion--select">
         <span>
           <b>Tu variante dialectal</b>
-          <small>Cambia el contenido de gramática y vocabulario de todo el curso a esta variante. El switch de la cabecera (Batua / esta variante) decide si también te la preguntan en los ejercicios.</small>
+          <small>De momento solo está el bizkaiera. El switch de la cabecera (Batua / esta variante) decide si sus explicaciones y sus formas aparecen o no.</small>
         </span>
         <select class="cuenta__select" id="dialectoSelect">
           <option value="bizkaiera">Bizkaiera</option>
-          <option value="gernikes">Gernikera</option>
         </select>
       </div>
       <div class="home-foot">
@@ -187,7 +188,7 @@
       <p class="unithero__goal" id="unitHeroGoal"></p>
     </div>
 
-    <div class="cardstack">
+    <div class="cardstack" id="cardstackUnidad">
       <button class="navcard" id="goGramatica">
         <span class="navcard__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h9"/></svg>
@@ -227,6 +228,20 @@
         </span>
       </button>
     </div>
+
+    <!-- Lista de subniveles. Sustituye a las tres tarjetas de arriba en
+         las unidades que traen `subniveles`; las que no, siguen igual. -->
+    <div class="sublist" id="subList" hidden></div>
+  </main>
+
+  <!-- ══════════ PANTALLA: SUBNIVEL ══════════ -->
+  <main class="screen" id="screenSub" hidden>
+    <div class="unithero unithero--sub">
+      <span class="unithero__num" id="subHeroNum"></span>
+      <h1 class="unithero__title" id="subHeroTitle"></h1>
+      <p class="unithero__goal" id="subHeroGoal"></p>
+    </div>
+    <div class="cardstack" id="subCards"></div>
   </main>
 
   <!-- ══════════ PANTALLA: GRAMÁTICA ══════════ -->
@@ -320,6 +335,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.js?v=2"></script>
 </body>
 </html>

@@ -10,14 +10,27 @@
 
   var CURSO = null;
 
-  // Variante dialectal: 'bizkaiera' (Bilbao, revisado y con audio) o
-  // 'gernikes' (contenido original de Ric, Busturialdea/Gernika, sin
-  // audio todavía). Es preferencia de aparato, no de progreso — vive en
-  // localStorage, no en Supabase.
+  /* Variante dialectal. Hoy solo hay una, el bizkaiera (Bilbao, revisado y
+     con audio). La de Gernika se retiró: era una preferencia personal de Ric
+     y no aportaba al curso, así que se queda como una curiosidad dentro de
+     la ficha de los artículos (el «etxie» por «etxea») en vez de como una
+     versión entera que mantener.
+     El mecanismo se conserva a propósito, con una sola entrada, para poder
+     añadir otras variantes más adelante sin rehacer esto. Es preferencia de
+     aparato, no de progreso — vive en localStorage, no en Supabase. */
+  var VARIANTES = { bizkaiera: 'Bizkaiera' };
   var CLAVE_DIALECTO = 'euskaraz.dialecto';
-  var MODO_DIALECTO = localStorage.getItem(CLAVE_DIALECTO) === 'gernikes' ? 'gernikes' : 'bizkaiera';
+  var MODO_DIALECTO = VARIANTES[localStorage.getItem(CLAVE_DIALECTO)] ? localStorage.getItem(CLAVE_DIALECTO) : 'bizkaiera';
   var CLAVE = 'euskaraz.progreso.v2';
   var CLAVE_VIEJA = 'euskaraz.progreso.v1';
+
+  /* Progreso local, solo para MODO_LOCAL (probar sin cuenta). Se guarda
+     en el navegador para no empezar de cero en cada recarga. La clave
+     lleva el curso dentro porque la reestructuración cambia los ids de
+     unidad y de grupo: mezclarlos daría un progreso sin sentido. */
+  function claveLocal() {
+    return 'euskaraz.local.' + (window.__CURSO_V2__ ? 'v2' : 'v1');
+  }
 
   // ─────────── Supabase ───────────
   // Proyecto compartido con Ippo (mismo org); tabla propia euskaraz_progreso,
@@ -32,11 +45,6 @@
      del host, no una bandera: en el dominio real esto es false siempre,
      no hay forma de activarlo en producción sin cambiar esta línea. */
   var MODO_LOCAL = ['localhost', '127.0.0.1', '::1', ''].indexOf(location.hostname) !== -1;
-
-  /* Progreso local, solo para MODO_LOCAL — se guarda en el navegador
-     para no empezar de cero en cada recarga al probar sin cuenta. */
-  var CLAVE_LOCAL = 'euskaraz.local';
-
   // Bucket público de pronunciaciones (Cloud TTS, ver docs/brief.md sección 6).
   var AUDIO_BASE = SUPABASE_URL + '/storage/v1/object/public/euskaraz-audio/';
   var GUARDAR_ESPERA_MS = 1500;
@@ -108,6 +116,7 @@
     screens: {
       home:   $('screenHome'),
       unit:   $('screenUnit'),
+      sub:    $('screenSub'),
       gram:   $('screenGram'),
       vocab:  $('screenVocab'),
       dict:   $('screenDict'),
@@ -134,6 +143,12 @@
     statUnidades:  $('statUnidades'),
     statPalabras:  $('statPalabras'),
     statRacha:     $('statRacha'),
+    cardstackUnidad: $('cardstackUnidad'),
+    subList:       $('subList'),
+    subCards:      $('subCards'),
+    subHeroNum:    $('subHeroNum'),
+    subHeroTitle:  $('subHeroTitle'),
+    subHeroGoal:   $('subHeroGoal'),
     unitHeroNum:   $('unitHeroNum'),
     unitHeroTitle: $('unitHeroTitle'),
     unitHeroSub:   $('unitHeroSub'),
@@ -165,11 +180,18 @@
       .replace(/"/g, '&quot;');
   }
 
-  // La gramática admite <b> e <i> escritos a mano en el JSON.
+  /* La gramática admite <b>, <i> y <u> escritos a mano en el JSON.
+     El <u> no estaba y las fichas sí lo usaban: se veía «<u>ogirik</u>»
+     tal cual en pantalla (lo sufrió Ric un tiempo sin que lo anotáramos).
+     No es decorativo: marca la pieza clave DENTRO de un ejemplo que ya
+     va entero en negrita, que es un segundo nivel de énfasis que <b> no
+     puede dar. verificar.py ya lo daba por válido; el que iba por detrás
+     era esto. */
   function richText(s) {
     return esc(s)
       .replace(/&lt;b&gt;/g, '<b>').replace(/&lt;\/b&gt;/g, '</b>')
       .replace(/&lt;i&gt;/g, '<i>').replace(/&lt;\/i&gt;/g, '</i>')
+      .replace(/&lt;u&gt;/g, '<u>').replace(/&lt;\/u&gt;/g, '</u>')
       .split('\n\n').map(function (p) {
         return '<p>' + p.replace(/\n/g, '<br>') + '</p>';
       }).join('');
@@ -227,15 +249,47 @@
     return out;
   }
 
+  /* Escuchando un número, «8» vale tanto como «ocho»: lo que se practica es
+     reconocer `zortzi`, no escribir castellano (pedido por Ric). Va aquí y no
+     como `esAlt` palabra por palabra para que valga también para los números
+     que se añadan después.
+     Solo se convierte cuando la respuesta entera es el número, no dentro de
+     una frase: así el comportamiento es predecible y no hay sorpresas. */
+  var CIFRAS = {
+    'uno':1, 'dos':2, 'tres':3, 'cuatro':4, 'cinco':5, 'seis':6, 'siete':7,
+    'ocho':8, 'nueve':9, 'diez':10, 'once':11, 'doce':12, 'trece':13,
+    'catorce':14, 'quince':15, 'dieciseis':16, 'diecisiete':17, 'dieciocho':18,
+    'diecinueve':19, 'veinte':20, 'treinta':30, 'cuarenta':40, 'cincuenta':50,
+    'sesenta':60, 'setenta':70, 'ochenta':80, 'noventa':90, 'cien':100, 'mil':1000
+  };
+  var LETRAS = (function () {
+    var r = {};
+    for (var k in CIFRAS) r[String(CIFRAS[k])] = k;
+    return r;
+  })();
+
   function variantesRespuesta(texto) {
     var vistas = {}, salida = [];
     function meter(t) {
       var n = normalizar(t);
       if (n && !vistas[n]) { vistas[n] = true; salida.push(n); }
+      // el mismo número escrito de la otra manera
+      var sinTilde = claveRespuesta(t);
+      if (CIFRAS[sinTilde] !== undefined) meter2(String(CIFRAS[sinTilde]));
+      else if (LETRAS[sinTilde] !== undefined) meter2(LETRAS[sinTilde]);
+    }
+    function meter2(t) {
+      var n = normalizar(t);
+      if (n && !vistas[n]) { vistas[n] = true; salida.push(n); }
     }
 
-    // Comas y barras con espacio separan alternativas completas.
-    String(texto).split(/\s*,\s*|\s+\/\s+/).forEach(function (alt) {
+    /* Comas y barras con espacio separan alternativas completas. Y dos
+       preguntas seguidas también: «¿cuánto? ¿cuántos?» son dos respuestas
+       válidas, no una de dos palabras — así estaba, y responder «cuánto»
+       salía casi-correcto contra «cuánto cuántos» (detectado por Ric).
+       El patrón «? ¿» no es ambiguo: cierra una pregunta y abre otra. */
+    String(texto).replace(/\?\s+¿/g, '?, ¿')
+      .split(/\s*,\s*|\s+\/\s+/).forEach(function (alt) {
       if (!alt.trim()) return;
       // Lo que va entre paréntesis es aclaración: vale con y sin ello.
       var formas = [alt];
@@ -537,7 +591,7 @@
     if (!usuarioId) {
       var guardado = null;
       if (MODO_LOCAL) {
-        try { guardado = JSON.parse(localStorage.getItem(CLAVE_LOCAL) || 'null'); } catch (e) {}
+        try { guardado = JSON.parse(localStorage.getItem(claveLocal()) || 'null'); } catch (e) {}
       }
       return Promise.resolve(normalizarProgreso(guardado));
     }
@@ -556,6 +610,9 @@
      upsert por cada respuesta y agrupamos en una sola escritura 1.5s
      después del último cambio (nota de implementación, brief sección 4). */
   function guardarProgreso() {
+    // Sin cuenta no hay nada que sincronizar… salvo en local, donde el
+    // progreso se guarda en el navegador para no empezar de cero en
+    // cada recarga (pedido por Ric mientras prueba la app).
     if (!usuarioId && !MODO_LOCAL) return;
     if (guardarTimer) clearTimeout(guardarTimer);
     guardarTimer = setTimeout(guardarProgresoAhora, GUARDAR_ESPERA_MS);
@@ -571,7 +628,7 @@
     guardarTimer = null;
     if (!usuarioId) {
       if (MODO_LOCAL) {
-        try { localStorage.setItem(CLAVE_LOCAL, JSON.stringify(progreso)); } catch (e) {}
+        try { localStorage.setItem(claveLocal(), JSON.stringify(progreso)); } catch (e) {}
       }
       return;
     }
@@ -727,9 +784,14 @@
       case 'unit':
         pantallaHome();
         break;
+      case 'sub':
+        pantallaUnidad(estado.unidad);
+        break;
       case 'gram':
       case 'vocab':
-        pantallaUnidad(estado.unidad);
+        // Dentro de un subnivel se vuelve al subnivel, no a la unidad.
+        if (estado.subnivel && estado.subnivel !== 'test') pantallaSubnivel(estado.subnivel);
+        else pantallaUnidad(estado.unidad);
         break;
       case 'dict':
       case 'cuenta':
@@ -750,6 +812,9 @@
 
   /* Los dos repasos salen al inicio; la práctica de una unidad, a su
      portada, que es de donde se entró. */
+  /* Al terminar se vuelve a la portada de la unidad —no al subnivel—
+     para ver de un vistazo qué queda por hacer. La unidad siempre se
+     puede volver a abrir: reforzar lo de atrás es parte del método. */
   function salirDeSesion() {
     if (estado.modo === 'unidad' && estado.unidad) pantallaUnidad(estado.unidad);
     else pantallaHome();
@@ -771,26 +836,39 @@
     el.statPalabras.textContent = palabras;
     el.statRacha.innerHTML = Math.round(hechas / CURSO.unidades.length * 100) + '<small>%</small>';
 
-    var tickSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
-    var chevSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>';
 
     el.unitList.innerHTML = CURSO.unidades.map(function (u) {
       var p = progUnidad(u.id);
       var badge = p.completada ? tickSvg : esc(u.numero);
+      // (el estado real se calcula abajo, en progresoUnidad)
       /* El número de la unidad marca su progreso, no un color de
          contenido: gris sin empezar, ámbar empezada, rojo completada. */
       var badgeClase = p.completada ? ' unitcard__badge--ok' : (p.visitada ? ' unitcard__badge--activa' : '');
-      /* Tramos del porcentaje (acordado con Ric): por debajo del 50% no
-         se enseña número —el tanteo inicial no se castiga—, del 50 al
-         69% se enseña en ámbar como "casi lo tienes", y de ahí para
-         arriba ya es la completada de siempre en verde. */
-      var meta = p.completada
-        ? '<span class="unitcard__meta">' + tickSvg + 'Completada · ' + Math.round(p.mejor * 100) + '%</span>'
-        : (p.mejor >= 0.5
-            ? '<span class="unitcard__meta unitcard__meta--medio">Mejor intento · ' + Math.round(p.mejor * 100) + '%</span>'
-            : (p.visitada
-                ? '<span class="unitcard__meta unitcard__meta--pend">Empezada</span>'
-                : '<span class="unitcard__meta unitcard__meta--pend">' + u.ejercicios.length + ' ejercicios</span>'));
+      /* Qué se enseña debajo del título. En una unidad partida, cuántas
+         de sus porciones llevas — que es lo que de verdad has avanzado.
+         Una unidad completada sigue siendo accesible y sigue diciendo lo
+         que llevas: nada se cierra, volver a reforzar es parte del
+         método (pedido por Ric). */
+      var pu = progresoUnidad(u);
+      var meta;
+      if (tieneSubniveles(u)) {
+        if (pu.completada) {
+          meta = '<span class="unitcard__meta">' + tickSvg + 'Completada · ' +
+                 pu.hechos + ' de ' + pu.total + '</span>';
+        } else if (pu.hechos) {
+          meta = '<span class="unitcard__meta unitcard__meta--pend">' +
+                 pu.hechos + ' de ' + pu.total + ' hechos</span>';
+        } else {
+          meta = '<span class="unitcard__meta unitcard__meta--pend">' +
+                 plural(u.subniveles.length, 'tema', 'temas') + '</span>';
+        }
+      } else {
+        meta = p.completada
+          ? '<span class="unitcard__meta">' + tickSvg + 'Completada · ' + Math.round(p.mejor * 100) + '%</span>'
+          : (p.visitada
+              ? '<span class="unitcard__meta unitcard__meta--pend">Empezada</span>'
+              : '<span class="unitcard__meta unitcard__meta--pend">' + u.ejercicios.length + ' ejercicios</span>');
+      }
 
       return '<li>' +
         '<button class="unitcard" data-unidad="' + esc(u.id) + '">' +
@@ -892,6 +970,48 @@
 
   // ─────────── Pantalla: portada de unidad ───────────
 
+  /* ── Subniveles ──
+
+     Una unidad puede venir partida en subniveles: porciones pequeñas con
+     su explicación, su vocabulario y sus ejercicios, y un test al final
+     que mezcla toda la unidad.
+
+     El reparto es por etiqueta: cada ficha, palabra y grupo lleva un
+     campo `subnivel` con el id de su porción ("4.3"), y los grupos del
+     test final lo llevan a "test". Es aditivo: una unidad sin
+     `subniveles` se pinta como siempre, con sus tres tarjetas. */
+
+  function tieneSubniveles(u) {
+    return !!(u && u.subniveles && u.subniveles.length);
+  }
+
+  /* Filtra por subnivel. Sin filtro activo devuelve todo, que es lo que
+     necesitan el repaso y las unidades sin partir. */
+  function delSubnivel(lista, sub) {
+    if (!sub) return lista || [];
+    return (lista || []).filter(function (x) { return x.subnivel === sub; });
+  }
+
+  /* Las fichas de dialecto («Cómo suena esto en Bizkaia», marcadas con
+     registro: 'bizkaiera') solo salen cuando el switch de la cabecera está
+     en tu variante. En Batua se ve la explicación genérica y nada más
+     — petición de Ric: si has elegido no que te pregunten en bizkaiera,
+     tampoco tiene sentido llenarte la lección de bizkaiera.
+     Ojo: esto NO afecta al vocabulario. Ahí las dos formas siguen
+     visibles y etiquetadas, que es la decisión de Miguel en el brief 5.1. */
+  function gramaticaVisible(lista) {
+    if (incluirDialectales) return lista || [];
+    return (lista || []).filter(function (g) { return g.registro !== 'bizkaiera'; });
+  }
+
+  function contenidoSub(u, sub) {
+    return {
+      gramatica:  gramaticaVisible(delSubnivel(u.gramatica, sub)),
+      vocabulario:delSubnivel(u.vocabulario, sub),
+      ejercicios: delSubnivel(u.ejercicios, sub)
+    };
+  }
+
   /* Calienta la caché del navegador con todo el audio de la unidad en
      cuanto se abre, para que la primera reproducción real (en
      Gramática, Vocabulario o el repaso) no cargue en frío. Sin esperar
@@ -915,6 +1035,7 @@
 
   function pantallaUnidad(u) {
     estado.unidad = u;
+    estado.subnivel = null;
     progUnidad(u.id).visitada = true;
     guardarProgreso();
     precargarAudioDeUnidad(u);
@@ -925,23 +1046,223 @@
     el.unitHeroSub.textContent = u.subtitulo;
     el.unitHeroGoal.textContent = u.objetivo;
 
-    el.gramCount.textContent = u.gramatica.length + ' explicaciones';
-    el.vocabCount.textContent = u.vocabulario.length + ' palabras';
-    var variantes = u.ejercicios.reduce(function (n, g) {
-      return n + ((g.variantes && g.variantes.length) || 1);
-    }, 0);
-    el.practiceCount.textContent = u.ejercicios.length + ' ejercicios · ' + variantes + ' variantes';
+    if (tieneSubniveles(u)) {
+      el.cardstackUnidad.hidden = true;
+      el.subList.hidden = false;
+      pintarListaSubniveles(u);
+    } else {
+      el.cardstackUnidad.hidden = false;
+      el.subList.hidden = true;
+      el.gramCount.textContent = gramaticaVisible(u.gramatica).length + ' explicaciones';
+      el.vocabCount.textContent = u.vocabulario.length + ' palabras';
+      var variantes = u.ejercicios.reduce(function (n, g) {
+        return n + ((g.variantes && g.variantes.length) || 1);
+      }, 0);
+      el.practiceCount.textContent = u.ejercicios.length + ' ejercicios · ' + variantes + ' variantes';
+    }
 
     mostrar('unit');
   }
 
+  /* Qué se ha hecho ya de cada subnivel. Se guarda dentro del progreso de
+     la unidad, en un mapa aparte, para no tocar el shape del calendario
+     de repaso (que va por id de grupo, no por subnivel). */
+  /* Cuánto llevas de una unidad partida en subniveles: la media de sus
+     porciones, contando el test como una más. Una unidad sin subniveles
+     sigue funcionando como siempre, con su propia nota. */
+  function progresoUnidad(u) {
+    var p = progUnidad(u.id);
+    if (!tieneSubniveles(u)) {
+      return { ratio: p.mejor || 0, hechos: p.completada ? 1 : 0, total: 1,
+               completada: !!p.completada };
+    }
+    var partes = u.subniveles.map(function (s) {
+      return (progSub(u.id, s.id).mejor) || 0;
+    });
+    if (delSubnivel(u.ejercicios, 'test').length) partes.push(p.mejor || 0);
+    var hechos = partes.filter(function (r) { return r >= 0.7; }).length;
+    var suma = partes.reduce(function (a, b) { return a + b; }, 0);
+    return {
+      ratio: partes.length ? suma / partes.length : 0,
+      hechos: hechos, total: partes.length,
+      // La unidad se da por hecha cuando se ha superado su test.
+      completada: !!p.completada
+    };
+  }
+
+  /* Los dos iconos que se repiten por toda la app. Estaban dentro de
+     pantallaHome(), así que la lista de subniveles —que también los
+     usa— reventaba con ReferenceError en cuanto un subnivel superaba el
+     70% y había que pintarle el tick. Detectado por Ric: la unidad ya
+     no se abría. */
+  var tickSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
+  var chevSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>';
+
+  function plural(n, uno, varios) { return n + ' ' + (n === 1 ? uno : varios); }
+
+  function progSub(unidadId, subId) {
+    var p = progUnidad(unidadId);
+    if (!p.subs) p.subs = {};
+    if (!p.subs[subId]) p.subs[subId] = { visitado: false, mejor: 0 };
+    return p.subs[subId];
+  }
+
+  function pintarListaSubniveles(u) {
+    var partes = u.subniveles.map(function (s) {
+      var c = contenidoSub(u, s.id);
+      var ps = progSub(u.id, s.id);
+      var trozos = [];
+      if (c.gramatica.length)   trozos.push(plural(c.gramatica.length, 'explicación', 'explicaciones'));
+      if (c.vocabulario.length) trozos.push(plural(c.vocabulario.length, 'palabra', 'palabras'));
+      if (c.ejercicios.length)  trozos.push(plural(c.ejercicios.length, 'ejercicio', 'ejercicios'));
+
+      // Subnivel todavía sin escribir: se enseña, para que se vea el plan,
+      // pero no se puede abrir a una pantalla vacía.
+      var vacio = !(c.gramatica.length || c.vocabulario.length || c.ejercicios.length);
+      if (vacio) {
+        return '<span class="subcard subcard--pendiente">' +
+          '<span class="subcard__id">' + esc(s.id) + '</span>' +
+          '<span class="subcard__body">' +
+            '<span class="subcard__title">' + esc(s.titulo) + '</span>' +
+            '<span class="subcard__sub">' + esc(s.resumen || '') + '</span>' +
+          '</span><span class="subcard__visto">en preparación</span></span>';
+      }
+
+      var estadoTxt = ps.mejor >= 0.7
+        ? '<span class="subcard__hecho">' + tickSvg + Math.round(ps.mejor * 100) + '%</span>'
+        : (ps.visitado ? '<span class="subcard__visto">empezado</span>' : '');
+
+      return '<button class="subcard' + (ps.mejor >= 0.7 ? ' subcard--ok' : '') + '" data-sub="' + esc(s.id) + '">' +
+        '<span class="subcard__id">' + esc(s.id) + '</span>' +
+        '<span class="subcard__body">' +
+          '<span class="subcard__title">' + esc(s.titulo) + '</span>' +
+          '<span class="subcard__sub">' + esc(trozos.join(' · ')) + '</span>' +
+        '</span>' + estadoTxt +
+        '<span class="subcard__chev" aria-hidden="true">' +
+          '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 5l7 7-7 7"/></svg></span>' +
+      '</button>';
+    });
+
+    // El test final: todos los grupos marcados como "test".
+    var test = delSubnivel(u.ejercicios, 'test');
+    if (test.length) {
+      var pu = progUnidad(u.id);
+      partes.push(
+        '<button class="subcard subcard--test' + (pu.completada ? ' subcard--ok' : '') + '" data-sub="test">' +
+          '<span class="subcard__id">' + (pu.completada ? tickSvg : '') + '</span>' +
+          '<span class="subcard__body">' +
+            '<span class="subcard__title">Test de la unidad</span>' +
+            '<span class="subcard__sub">Todo lo anterior mezclado · ' +
+              plural(test.length, 'ejercicio', 'ejercicios') + '</span>' +
+          '</span>' +
+          (pu.completada ? '<span class="subcard__hecho">' + tickSvg + Math.round(pu.mejor * 100) + '%</span>' : '') +
+          '<span class="subcard__chev" aria-hidden="true">' +
+            '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 5l7 7-7 7"/></svg></span>' +
+        '</button>');
+    }
+
+    el.subList.innerHTML = partes.join('');
+    el.subList.querySelectorAll('.subcard').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var id = b.dataset.sub;
+        if (id === 'test') { estado.subnivel = 'test'; empezarPractica(); }
+        else pantallaSubnivel(id);
+      });
+    });
+  }
+
+  function pantallaSubnivel(subId) {
+    var u = estado.unidad;
+    var s = u.subniveles.filter(function (x) { return x.id === subId; })[0];
+    if (!s) return;
+
+    estado.subnivel = subId;
+    progSub(u.id, subId).visitado = true;
+    guardarProgreso();
+
+    var c = contenidoSub(u, subId);
+    tituloBarra(u.titulo, subId + ' ' + s.titulo);
+    el.subHeroNum.textContent = 'Tema ' + subId;
+    el.subHeroTitle.textContent = s.titulo;
+    el.subHeroGoal.textContent = s.resumen || '';
+
+    var tarjetas = [];
+    if (c.gramatica.length) {
+      tarjetas.push(tarjetaNav('goGram', 'Explicación',
+        plural(c.gramatica.length, 'ficha', 'fichas'), ''));
+    }
+    if (c.vocabulario.length) {
+      tarjetas.push(tarjetaNav('goVoc', 'Vocabulario',
+        plural(c.vocabulario.length, 'palabra', 'palabras'), ''));
+    }
+    if (c.ejercicios.length) {
+      var v = c.ejercicios.reduce(function (n, g) { return n + ((g.variantes && g.variantes.length) || 1); }, 0);
+      tarjetas.push(tarjetaNav('goPrac', 'Practicar',
+        plural(c.ejercicios.length, 'ejercicio', 'ejercicios') + ' · ' + v + ' variantes',
+        ' navcard--accent'));
+    }
+    el.subCards.innerHTML = tarjetas.join('');
+
+    var g = $('goGram'), vo = $('goVoc'), pr = $('goPrac');
+    if (g)  g.addEventListener('click', pantallaGramatica);
+    if (vo) vo.addEventListener('click', pantallaVocabulario);
+    if (pr) pr.addEventListener('click', empezarPractica);
+
+    mostrar('sub');
+  }
+
+  /* Sin icono: el CSS los oculta (.navcard__icon{display:none}) y
+     generarlos solo servía para que, si la hoja no ha cargado todavía,
+     apareciera un SVG a tamaño completo. */
+  function tarjetaNav(id, titulo, sub, extra) {
+    return '<button class="navcard' + extra + '" id="' + id + '">' +
+      '<span class="navcard__body">' +
+        '<span class="navcard__title">' + esc(titulo) + '</span>' +
+        '<span class="navcard__sub">' + esc(sub) + '</span>' +
+      '</span>' +
+      '<span class="navcard__chev" aria-hidden="true">' +
+        '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 5l7 7-7 7"/></svg></span>' +
+    '</button>';
+  }
+
   // ─────────── Pantalla: gramática ───────────
+
+  /* La barra dice dónde estás. Antes solo cabía una de las dos cosas —en
+     Gramática se veía la unidad, en el tema el tema— así que metido en un
+     ejercicio no sabías de qué tema era (pedido por Ric). Va en una sola
+     línea porque la barra tiene altura fija, con la unidad en gris para
+     que el tema siga leyéndose como el titular. */
+  function tituloBarra(unidad, tema) {
+    // La clase la pone el JS en vez de usar :has() en el CSS: :has() es
+    // reciente y esto tiene que verse igual en cualquier navegador.
+    el.topbarTitle.classList.toggle('topbar__title--doble', !!tema);
+    el.topbarTitle.innerHTML = tema
+      ? '<span class="topbar__ctx">' + esc(unidad) + '</span>' +
+        '<span class="topbar__tema">' + esc(tema) + '</span>'
+      : esc(unidad);
+  }
+
+  /* El tema en el que estás, o null si la unidad no los tiene. */
+  function temaActual() {
+    var u = estado.unidad, id = estado.subnivel;
+    if (!u || !id || id === 'test' || !tieneSubniveles(u)) return null;
+    return u.subniveles.filter(function (s) { return s.id === id; })[0] || null;
+  }
+
+  /* Lo que toca poner en la barra dentro de una unidad: si hay tema, la
+     unidad y el tema; si no, lo de siempre. */
+  function barraDeUnidad(u, seccion) {
+    var t = temaActual();
+    if (t) tituloBarra(u.titulo, t.id + ' ' + t.titulo);
+    else if (estado.subnivel === 'test') tituloBarra(u.titulo, 'Test');
+    else tituloBarra(seccion ? seccion + ' · ' + u.titulo : u.titulo);
+  }
 
   function pantallaGramatica() {
     var u = estado.unidad;
-    el.topbarTitle.textContent = 'Gramática · ' + u.titulo;
+    barraDeUnidad(u, 'Gramática');
 
-    el.gramContent.innerHTML = u.gramatica.map(function (g) {
+    el.gramContent.innerHTML = gramaticaVisible(delSubnivel(u.gramatica, estado.subnivel)).map(function (g) {
       var ejemplos = '';
       if (g.ejemplos && g.ejemplos.length) {
         ejemplos = '<ul class="exlist">' + g.ejemplos.map(function (e) {
@@ -995,7 +1316,10 @@
   function pintarVocabulario() {
     var u = estado.unidad;
     var cat = el.vocabUnitCat.value;
-    var lista = u.vocabulario.filter(function (v) { return !cat || v.categoria === cat; });
+    // Dentro de un subnivel se enseña solo su vocabulario; el filtro de
+    // tipo de Miguel se aplica encima de esa selección.
+    var lista = delSubnivel(u.vocabulario, estado.subnivel)
+      .filter(function (v) { return !cat || v.categoria === cat; });
     el.vocabContent.innerHTML = lista.length
       ? '<div class="vocabgroup">' + lista.map(fichaVocabulario).join('') + '</div>'
       : '<p class="q__hint">Ninguna palabra de esta unidad es de ese tipo.</p>';
@@ -1005,7 +1329,7 @@
     var u = estado.unidad;
     progUnidad(u.id).vocab = true;
     guardarProgreso();
-    el.topbarTitle.textContent = 'Vocabulario · ' + u.titulo;
+    barraDeUnidad(u, 'Vocabulario');
     el.vocabUnitCat.value = '';
     pintarVocabulario();
     mostrar('vocab');
@@ -1737,7 +2061,11 @@
   function empezarPractica() {
     var u = estado.unidad;
     estado.modo = 'unidad';
-    var base = barajar(u.ejercicios).map(function (g) {
+    // En una unidad con subniveles se practica solo el subnivel
+    // abierto; el test ('test') mezcla los grupos marcados como tales.
+    var grupos = tieneSubniveles(u) ? delSubnivel(u.ejercicios, estado.subnivel) : u.ejercicios;
+    if (!grupos.length) grupos = u.ejercicios;
+    var base = barajar(grupos).map(function (g) {
       return prepararVariante(g, null);
     });
     var fondoUnidad = [];
@@ -1752,7 +2080,7 @@
     estado.aciertos = 0;
     estado.fallos = 0;
     estado.falladas = [];
-    el.topbarTitle.textContent = u.titulo;
+    barraDeUnidad(u, null);
     mostrar('quiz');
     pintarEjercicio();
   }
@@ -2075,9 +2403,15 @@
     }
     var cercana = respuestaMasCercana(dado, variantes.length ? variantes : ej.respuestas);
     var leve = esCasiCorrecto(dado, cercana);
+    /* Un «casi correcto» se da por bueno, pero hay que enseñar la forma
+       buena igualmente o el fallo se repite (pedido por Ric). Se compara
+       contra la variante a la que te acercaste, no contra respuestas[0]:
+       si escribiste algo parecido a la segunda forma válida, corregirte
+       hacia la primera sería desconcertante. */
+    var objetivo = leve ? cercana.texto : normalizar(ej.respuestas[0]);
     return {
       ok: leve, leve: leve,
-      cuerpo: leve ? '' : comparacion(dado, normalizar(ej.respuestas[0]), true)
+      cuerpo: comparacion(dado, objetivo, true)
     };
   }
 
@@ -2118,9 +2452,7 @@
       return { ok: true, leve: false, cuerpo: base };
     }
     var cercana = respuestaMasCercana(dado, variantes.length ? variantes : ej.respuestas);
-    if (esCasiCorrecto(dado, cercana)) {
-      return { ok: true, leve: true, cuerpo: ej.explicacion ? esc(ej.explicacion) : '' };
-    }
+    var leve = esCasiCorrecto(dado, cercana);
     // Letra a letra para una palabra suelta, por palabras si la solución
     // tiene más de una — comparar "tu propio" contra lo escrito letra a
     // letra mezclaba coincidencias sueltas sin sentido (ver comparacion()).
@@ -2132,10 +2464,14 @@
     var traduciendo = ej.__objetivo === 'es';
     var nota2 = (ej.explicacion && !traduciendo)
       ? '<p class="dif__nota">' + esc(ej.explicacion) + '</p>' : '';
+    /* El «casi correcto» también enseña la forma buena: antes se daba por
+       válido y se pasaba de largo, así que la errata volvía a la siguiente
+       (pedido por Ric). Se compara contra la variante a la que te
+       acercaste, no contra la solución principal. */
     return {
-      ok: false, leve: false,
-      cuerpo: comparacion(dado, normalizar(ej.solucion), porPalabras,
-                          traduciendo ? 'dijiste' : undefined) + nota2
+      ok: leve, leve: leve,
+      cuerpo: comparacion(dado, leve ? cercana.texto : normalizar(ej.solucion),
+                          porPalabras, traduciendo ? 'dijiste' : undefined) + nota2
     };
   }
 
@@ -2310,6 +2646,34 @@
 
   // ─────────── Pantalla: resultado ───────────
 
+  /* El siguiente tema de la unidad que tenga algo dentro, o null si este
+     era el último. Al acabar los ejercicios de un tema, la pantalla solo
+     ofrecía repetir o volver al inicio: un callejón, justo cuando lo
+     natural es seguir (detectado por Ric haciendo el curso). */
+  function temaSiguiente(u, subId) {
+    if (!tieneSubniveles(u) || !subId || subId === 'test') return null;
+    var ids = u.subniveles.map(function (s) { return s.id; });
+    for (var k = ids.indexOf(subId) + 1; k > 0 && k < u.subniveles.length; k++) {
+      var c = contenidoSub(u, u.subniveles[k].id);
+      if (c.gramatica.length || c.vocabulario.length || c.ejercicios.length) {
+        return u.subniveles[k];
+      }
+    }
+    return null;
+  }
+
+  /* Entra en un tema por su explicación, que es por donde se empieza. Si
+     no tiene gramática (los hay que son solo vocabulario), se queda en la
+     portada del tema en vez de abrir una pantalla vacía. */
+  function seguirConTema(s) {
+    var u = estado.unidad;
+    estado.subnivel = s.id;
+    progSub(u.id, s.id).visitado = true;
+    guardarProgreso();
+    if (gramaticaVisible(delSubnivel(u.gramatica, s.id)).length) pantallaGramatica();
+    else pantallaSubnivel(s.id);
+  }
+
   function pantallaResultado() {
     var u = estado.unidad;
     var total = estado.ejercicios.length;
@@ -2327,11 +2691,22 @@
     // Los repasos no pertenecen a ninguna unidad, así que no marcan nada
     // como completado: solo te dicen cómo ha ido. Lo que sí han hecho,
     // pregunta a pregunta, es mover el calendario.
+    /* Un subnivel puntúa el subnivel; el test de la unidad puntúa la
+       unidad. Antes todo iba a la unidad, así que hacer bien una porción
+       la dejaba «Completada · 100%» sin haber visto el resto (detectado
+       por Ric). El progreso de la unidad se calcula ahora sumando sus
+       partes, en progresoUnidad(). */
     if (estado.modo === 'unidad') {
-      var p = progUnidad(u.id);
-      p.intentos++;
-      p.mejor = Math.max(p.mejor, ratio);
-      if (ratio >= 0.7) p.completada = true;
+      if (estado.subnivel && estado.subnivel !== 'test') {
+        var ps = progSub(u.id, estado.subnivel);
+        ps.visitado = true;
+        ps.mejor = Math.max(ps.mejor || 0, ratio);
+      } else {
+        var p = progUnidad(u.id);
+        p.intentos++;
+        p.mejor = Math.max(p.mejor, ratio);
+        if (ratio >= 0.7) p.completada = true;
+      }
       guardarProgreso();
       marcarLeccionHoy(u.id);
     }
@@ -2349,10 +2724,25 @@
       else if (ratio >= 0.5) { titulo = 'Ondo!';     sub = 'Bien. Al final las has puesto todas.'; }
       else                   { titulo = 'Ia-ia…';    sub = 'Han costado, pero han salido. Vuelven pronto.'; }
     }
-    else if (ratio === 1)   { titulo = 'Bikain!';   sub = 'Perfecto. Todas correctas.'; }
-    else if (ratio >= 0.8)  { titulo = 'Oso ondo!'; sub = 'Muy bien. Dominas esta unidad.'; }
-    else if (ratio >= 0.7)  { titulo = 'Ondo!';     sub = 'Bien. Unidad superada.'; }
-    else                    { titulo = 'Ia-ia…';    sub = 'Casi. Repasa la gramática y vuelve a intentarlo.'; }
+    else {
+      /* Un subnivel no es la unidad: decirle «unidad superada» por hacer
+         una porción confundía y daba la sensación de que ya no quedaba
+         nada (detectado por Ric). */
+      var esParte = !!(estado.subnivel && estado.subnivel !== 'test');
+      var queEs = esParte ? 'este tema' : 'esta unidad';
+      var restantes = 0;
+      if (esParte && tieneSubniveles(u)) {
+        var pr = progresoUnidad(u);
+        restantes = pr.total - pr.hechos;
+      }
+      var cola = restantes > 0
+        ? ' Te quedan ' + plural(restantes, 'tema', 'temas') + ' en la unidad.'
+        : '';
+      if (ratio === 1)      { titulo = 'Bikain!';   sub = 'Perfecto. Todas correctas.' + cola; }
+      else if (ratio >= 0.8){ titulo = 'Oso ondo!'; sub = 'Muy bien. Dominas ' + queEs + '.' + cola; }
+      else if (ratio >= 0.7){ titulo = 'Ondo!';     sub = 'Bien. ' + (esParte ? 'Tema superado.' : 'Unidad superada.') + cola; }
+      else                  { titulo = 'Ia-ia…';    sub = 'Casi. Repasa la explicación y vuelve a intentarlo.'; }
+    }
 
     // Verde para las tres cabeceras positivas; la de "casi" se queda
     // neutra — no es un fallo, es ánimo para seguir, no toca marcarla
@@ -2381,6 +2771,14 @@
       acciones = '<button class="btn btn--primary" id="rRepetir">Otras palabras</button>' +
                  '<button class="btn btn--ghost" id="rDicc">Abrir el diccionario</button>' +
                  '<button class="btn btn--ghost" id="rHome">Volver al inicio</button>';
+    } else if (estado.subnivel && estado.subnivel !== 'test') {
+      // Acabas de terminar un tema: lo primero que ofrecemos es continuar.
+      var sig = temaSiguiente(u, estado.subnivel);
+      acciones = (sig
+          ? '<button class="btn btn--primary" id="rSeguir">Seguir: ' + esc(sig.titulo) + '</button>'
+          : '<button class="btn btn--primary" id="rUnidad">Volver a la unidad</button>') +
+        (sig ? '<button class="btn btn--ghost" id="rUnidad">Volver a la unidad</button>' : '') +
+        '<button class="btn btn--ghost" id="rRepetir">Repetir este tema</button>';
     } else {
       acciones = '<button class="btn btn--primary" id="rRepetir">Repetir la unidad</button>' +
                  '<button class="btn btn--ghost" id="rGram">Repasar la gramática</button>' +
@@ -2423,10 +2821,17 @@
     var otra = estado.modo === 'repaso' ? empezarRepaso
              : estado.modo === 'vocab'  ? empezarVocab
              : empezarPractica;
-    $('rRepetir').addEventListener('click', otra);
-    if ($('rGram')) $('rGram').addEventListener('click', pantallaGramatica);
-    if ($('rDicc')) $('rDicc').addEventListener('click', pantallaDiccionario);
-    $('rHome').addEventListener('click', pantallaHome);
+    if ($('rRepetir')) $('rRepetir').addEventListener('click', otra);
+    if ($('rGram'))    $('rGram').addEventListener('click', pantallaGramatica);
+    if ($('rDicc'))    $('rDicc').addEventListener('click', pantallaDiccionario);
+    if ($('rHome'))    $('rHome').addEventListener('click', pantallaHome);
+    if ($('rUnidad'))  $('rUnidad').addEventListener('click', function () {
+      estado.subnivel = null;
+      pantallaUnidad(estado.unidad);
+    });
+    if ($('rSeguir'))  $('rSeguir').addEventListener('click', function () {
+      seguirConTema(temaSiguiente(estado.unidad, estado.subnivel));
+    });
   }
 
   // ─────────── Eventos globales ───────────
@@ -2493,7 +2898,7 @@
       guardarProgresoAhora();
       try {
         localStorage.removeItem(CLAVE); localStorage.removeItem(CLAVE_VIEJA);
-        localStorage.removeItem(CLAVE_LOCAL);   // el de probar sin cuenta
+        localStorage.removeItem(claveLocal());   // el de probar sin cuenta
       } catch (e) {}
       pantallaHome();
     }
@@ -2551,14 +2956,16 @@
 
   /* El índice (data/curso.json) lista los archivos de cada unidad, que
      viven en data/unidades/. Así se puede añadir o reordenar temario sin
-     tocar un archivo gigante. En modo gernikes se lee data/curso-gernikes.json,
-     que apunta a data/unidades-gernikes/ — el contenido original de Ric.
-     La versión de un solo archivo deja el curso ya montado en
-     window.__CURSO__, y entonces no hace falta pedir nada (no se usa en
-     modo gernikes). */
+     tocar un archivo gigante. La versión de un solo archivo deja el curso
+     ya montado en window.__CURSO__, y entonces no hace falta pedir nada. */
   function cargarCurso() {
-    if (window.__CURSO__ && MODO_DIALECTO === 'bizkaiera') return Promise.resolve(window.__CURSO__);
-    var indicePath = MODO_DIALECTO === 'gernikes' ? 'data/curso-gernikes.json' : 'data/curso.json';
+    if (window.__CURSO__) return Promise.resolve(window.__CURSO__);
+    /* Reestructuración en 10 unidades con subniveles: decidida — es el
+       curso, ya no hace falta el flag ?v2 ni la comparación con el
+       antiguo data/curso.json (que se deja en el repo sin usar por si
+       hiciera falta volver atrás). Ver docs/propuesta-10-unidades.md. */
+    window.__CURSO_V2__ = true;
+    var indicePath = 'data/curso-v2.json';
     return traer(indicePath).then(function (indice) {
       return Promise.all(indice.unidades.map(function (ruta) {
         return traer('data/' + ruta);
@@ -2591,7 +2998,7 @@
   }
 
   function nombreDialecto(modo) {
-    return modo === 'gernikes' ? 'Gernikera' : 'Bizkaiera';
+    return VARIANTES[modo] || VARIANTES.bizkaiera;
   }
 
   /* El botón de la topbar ya no elige QUÉ dataset cargar —eso ahora es
@@ -2610,6 +3017,9 @@
   el.btnDialecto.addEventListener('click', function () {
     setIncluirDialectales(!incluirDialectales);
     pintarDialecto();
+    // El switch solo está visible en la Home (ver mostrar()), y al entrar en
+    // una unidad se pinta de cero, así que basta con refrescar aquí: no hay
+    // ninguna pantalla abierta que pueda quedarse con el recuento viejo.
     if (estado.pantalla === 'home') pantallaHome();
   });
   pintarDialecto();

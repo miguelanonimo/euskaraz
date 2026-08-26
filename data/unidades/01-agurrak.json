@@ -146,7 +146,12 @@
       "es": "perdón / disculpa",
       "nota": null,
       "audio": "unidades/u1/barkatu.mp3",
-      "categoria": "otros"
+      "categoria": "otros",
+      "esAlt": [
+        "perdona",
+        "perdone",
+        "disculpe"
+      ]
     },
     {
       "eu": "bai",
@@ -243,6 +248,11 @@
       ]
     },
     {
+      "titulo": "Un aviso sobre los dialectos",
+      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
+      "ejemplos": []
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "Bizkaia tiene su propio acento dentro del euskera: el <b>bizkaiera</b> (euskera occidental). Lo que aprendes aquí es batua, el estándar, y con eso te entiendes en todas partes. Pero en Bilbao y en el resto de Bizkaia estos rasgos te van a saltar a la oreja desde el primer día.\n\n<b>Zelan?</b> en vez de <b>nola?</b>\nEl «¿cómo?» del bizkaiera es <i>zelan</i>. Así que el «¿qué tal?» más habitual no es <i>zer moduz?</i> sino <b>Zelan zagoz?</b> Y verás <i>holan, halan, honan</i> donde el batua pone <i>horrela, hala, honela</i>.\n\n<b>La j suena «y»</b>\nEn Bizkaia <i>jan</i> (comer) suena «yan», no «jan» con jota castellana. La jota fuerte es cosa guipuzcoana. La <b>h</b> es muda en todo Bizkaia.\n\n<b>Aupa! Epa!</b>\nMuy usados como saludo informal, más que <i>kaixo</i> entre conocidos.\n\n<b>Gero arte</b>\nPara despedirse se oye más que <i>ikusi arte</i>.",
       "ejemplos": [
@@ -261,12 +271,8 @@
           "es": "¡Hasta luego!",
           "audio": "unidades/u1/gero-arte.mp3"
         }
-      ]
-    },
-    {
-      "titulo": "Un aviso sobre los dialectos",
-      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
-      "ejemplos": []
+      ],
+      "registro": "bizkaiera"
     }
   ],
   "ejercicios": [
@@ -422,7 +428,7 @@
             "Gabon",
             "Egun on",
             "Arratsalde on",
-            "Eskerrik asko"
+            "Mesedez"
           ],
           "correcta": 0,
           "explicacion": "«Gabon» viene de «gau» (noche) + «on» (bueno)."
@@ -503,7 +509,7 @@
           "pregunta": "¿Cómo devuelves la pregunta después de contestar?",
           "opciones": [
             "Eta zu?",
-            "Zer moduz",
+            "Zer moduz?",
             "Bai",
             "Oso"
           ],
@@ -772,19 +778,6 @@
           ],
           "correcta": 1,
           "explicacion": "«ts» y «tz» suenan las dos como la doble z de pizza."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cómo se pronuncia «gela» (la habitación)?",
-          "opciones": [
-            "je-la, con jota",
-            "gue-la, como en «guerra»",
-            "khe-la",
-            "ye-la"
-          ],
-          "correcta": 1,
-          "explicacion": "La «g» en euskera antes de e/i suena siempre como en «guerra», nunca como la jota: «ge/gi» ya son «gue/gui», sin falta de u muda."
         }
       ]
     },
@@ -967,13 +960,12 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "¿Qué tal? ¿Y tú?",
-          "eu": "Zer moduz? Eta zu?",
+          "es": "¡Hola! ¿Qué tal?",
+          "eu": "Kaixo! Zer moduz?",
           "palabras": [
+            "Kaixo!",
             "Zer",
-            "moduz?",
-            "Eta",
-            "zu?"
+            "moduz?"
           ]
         },
         {

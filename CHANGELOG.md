@@ -774,3 +774,43 @@ sigue sin tocar):
 - **Progreso en `localStorage` al probar sin cuenta en local**
   (`MODO_LOCAL`, gated por `location.hostname`) — antes se perdía en
   cada recarga. No cambia nada en producción.
+
+## 2026-08-26 — Reestructuración a 10 unidades con subniveles, en producción
+
+Fusionada `ric/trabajo` entera (`git merge`, limpio, sin conflictos) y
+activado el cambio de estructura que llevaba días detrás de un flag de
+pruebas: **el curso pasa de 12 unidades a 10 con subniveles**
+(`data/curso-v2.json` → `data/unidades-v2/*.json` — 10 unidades, 327
+ejercicios, 1635 variantes, 514 palabras de vocabulario).
+`cargarCurso()` ya no mira `MODO_LOCAL && ?v2`, es directamente el
+curso. El antiguo `data/curso.json`/`data/unidades/*.json` se queda en
+el repo sin usar, por si hiciera falta volver atrás — hay además una
+copia de seguridad completa fuera del repo y una etiqueta de git
+(`respaldo-2026-08-26`) sobre el commit anterior a este cambio.
+
+Se borra también la variante en gernikés (`data/unidades-gernikes/`,
+`data/curso-gernikes.json` y el cableado que le quedaba en topbar/
+Ajustes) — decisión de Ric, recuperable en el historial de git. El
+selector de "Tu variante dialectal" en Ajustes se queda con una sola
+opción (Bizkaiera); el switch "Batua / Bizkaiera" de la topbar sigue
+igual.
+
+De paso llegan media docena de piezas más: `verificar.py` en la raíz
+(control de calidad del contenido, recuperado del proyecto original),
+`scripts/probar-todo.sh` (verifica contenido + sintaxis + una batería
+de tests de Node de una sola vez — los cuatro `scripts/probar_*.js`
+tenían una ruta absoluta al `~/Proyectos/euskaraz` de Ric, corregida a
+relativa para que corran en cualquier máquina), y los generadores de
+contenido de la reestructuración (`scripts/gen_*.py`,
+`scripts/reestructurar.py`) por si hace falta retocar el curso nuevo
+más adelante.
+
+Verificado antes de subir: `verificar.py` sin errores en las dos
+versiones del curso (la nueva y la vieja, que se queda de referencia),
+sintaxis de `js/app.js` correcta, y los cuatro tests de Node en verde
+— incluido `probar_casi.js`, que cubre el "casi correcto" de ayer.
+
+Pendiente, anotado en `docs/ideas-ric.md`: generar los audios nuevos
+del vocabulario añadido (lista en `docs/audios-pendientes.md`, lote
+listo en `scripts/generar-audio/lote-ric-3.mjs`) — no se ha corrido
+en esta sesión.

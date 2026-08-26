@@ -1,0 +1,3138 @@
+{
+  "id": "u9",
+  "numero": 9,
+  "titulo": "Gustatzen zait",
+  "subtitulo": "Gustos, el cuerpo y regalos",
+  "objetivo": "Decir qué te gusta y qué no, hablar del cuerpo y comprar un regalo.",
+  "color": "morado",
+  "subniveles": [
+    {
+      "id": "9.1",
+      "titulo": "Me gusta",
+      "resumen": "Zait y zaizkit: singular y plural."
+    },
+    {
+      "id": "9.2",
+      "titulo": "A quién le gusta",
+      "resumen": "El dativo, y los verbos que funcionan igual."
+    },
+    {
+      "id": "9.3",
+      "titulo": "El cuerpo",
+      "resumen": "Aprovechando los gustos, que es donde se ve mejor."
+    },
+    {
+      "id": "9.4",
+      "titulo": "Ocio y medios",
+      "resumen": "Deporte, música, cine, periódicos y televisión."
+    },
+    {
+      "id": "9.5",
+      "titulo": "De compras",
+      "resumen": "La ropa, los regalos y para quién son."
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "La txapela, el campeón y el campeonato",
+      "cuerpo": "Esta es de las que explican media cultura de golpe.\n\n<b>txapela</b> es la boina. Y de ahí salen dos palabras que oirás constantemente:\n\n<b>txapelduna</b> — el campeón. Literalmente, <i>el que tiene txapela</i> (<b>-dun</b> es «el que tiene»).\n<b>txapelketa</b> — el campeonato.\n\nY el porqué está en el diccionario de Euskaltzaindia, que define <i>txapelketa</i> como «la competición en la que al ganador se le entrega, entre otras cosas, <b>una txapela</b>».\n\nO sea: no es que al campeón se le llame así por casualidad. En las competiciones vascas —pelota, bertsolaris, levantamiento de piedra— al que gana se le pone literalmente la boina. La palabra viene del gesto.",
+      "ejemplos": [
+        {
+          "eu": "txapela",
+          "es": "la boina"
+        },
+        {
+          "eu": "txapelduna",
+          "es": "el campeón"
+        },
+        {
+          "eu": "txapelketa",
+          "es": "el campeonato"
+        }
+      ],
+      "subnivel": "9.5"
+    },
+    {
+      "titulo": "Ropa que va siempre en plural",
+      "cuerpo": "Igual que en castellano decimos «los pantalones» y no «el pantalón» para la prenda entera, el euskera tiene su propia lista de cosas que van en plural. La marca es <b>-ak</b> al final:\n\n<b>prakak</b> — los pantalones\n<b>zapatak</b> — los zapatos\n<b>betaurrekoak</b> — las gafas\n\n<i>Betaurrekoak</i> además tiene una construcción bonita por dentro: <b>begi</b> (ojo) + <b>aurre</b> (delante) + <b>-ko</b> — «los de delante de los ojos».\n\nY ya conoces otra de la unidad 6: <b>oporrak</b>, las vacaciones.",
+      "ejemplos": [
+        {
+          "eu": "prakak",
+          "es": "los pantalones"
+        },
+        {
+          "eu": "zapatak",
+          "es": "los zapatos"
+        },
+        {
+          "eu": "betaurrekoak",
+          "es": "las gafas"
+        }
+      ],
+      "subnivel": "9.5"
+    },
+    {
+      "titulo": "Comprar y vender, que ya los tienes",
+      "cuerpo": "Los verbos de esta unidad se estrenan de verdad con este vocabulario. <b>erosi</b> (comprar), <b>saldu</b> (vender) y <b>nahi dut</b> (quiero) son justo lo que hace falta en una tienda o en un mercado.\n\n<b>Alkandora zuria erosi dut.</b> — He comprado una camisa blanca.\n<b>Zukua edan nahi dut.</b> — Quiero beber zumo.\n\nFíjate en que el color va detrás y con el artículo, exactamente como viste en la 6.1: <i>alkandora zuria</i>, no «zuri alkandora».",
+      "ejemplos": [
+        {
+          "eu": "Alkandora zuria erosi dut.",
+          "es": "He comprado una camisa blanca."
+        },
+        {
+          "eu": "Zukua edan nahi dut.",
+          "es": "Quiero beber zumo."
+        }
+      ],
+      "subnivel": "9.5"
+    },
+    {
+      "titulo": "«Me gusta» no funciona como en castellano… o sí",
+      "cuerpo": "En castellano no dices «yo gusto el euskera»: dices <b>me gusta el euskera</b>. El que gusta es el euskera, y tú eres el «me».\n\nEl euskera hace exactamente lo mismo:\n\n<b>Niri euskara gustatzen zait.</b>\n\n<i>euskara</i> es el sujeto, <i>niri</i> es «a mí», y <b>zait</b> es un auxiliar nuevo que junta las dos cosas: «(él) a mí».\n\nLa serie entera:\n\n<b>niri … zait</b> — me\n<b>zuri … zaizu</b> — te\n<b>hari … zaio</b> — le\n<b>guri … zaigu</b> — nos\n<b>zuei … zaizue</b> — os\n<b>haiei … zaie</b> — les\n\nY como en castellano, el <i>niri</i> se puede callar cuando está claro: <b>Euskara gustatzen zait.</b>",
+      "ejemplos": [
+        {
+          "eu": "Niri kirola gustatzen zait.",
+          "es": "A mí me gusta el deporte.",
+          "audio": "unidades/u10/niri-kirola-gustatzen-zait.mp3"
+        },
+        {
+          "eu": "Zer gustatzen zaizu?",
+          "es": "¿Qué te gusta?",
+          "audio": "unidades/u10/zer-gustatzen-zaizu.mp3"
+        },
+        {
+          "eu": "Hari zinema gustatzen zaio.",
+          "es": "A él le gusta el cine.",
+          "audio": "unidades/u10/hari-zinema-gustatzen-zaio.mp3"
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "titulo": "Si lo que gusta va en plural: zaizkit",
+      "cuerpo": "Igual que <i>dut</i> se convertía en <i>ditut</i>, aquí <b>zait</b> se convierte en <b>zaizkit</b>:\n\n<b>Sagarra gustatzen zait.</b> — Me gusta la manzana.\n<b>Sagarrak gustatzen zaizkit.</b> — Me gustan las manzanas.\n\nLa serie:\n\n<b>zaizkit</b> — me gustan\n<b>zaizkizu</b> — te gustan\n<b>zaizkio</b> — le gustan\n<b>zaizkigu</b> — nos gustan\n<b>zaizkizue</b> — os gustan\n<b>zaizkie</b> — les gustan\n\nEs el mismo <b>-zki-</b> que verás en muchos otros sitios: la marca de que hay varios.",
+      "ejemplos": [
+        {
+          "eu": "Liburuak gustatzen zaizkit.",
+          "es": "Me gustan los libros.",
+          "audio": "unidades/u10/liburuak-gustatzen-zaizkit.mp3"
+        },
+        {
+          "eu": "Barazkiak ez zaizkio gustatzen.",
+          "es": "A él no le gustan las verduras.",
+          "audio": "unidades/u10/barazkiak-ez-zaizkio-gustatzen.mp3"
+        },
+        {
+          "eu": "Zer gustatzen zaizkizu?",
+          "es": "¿Qué cosas te gustan?",
+          "audio": "unidades/u10/zer-gustatzen-zaizkizu.mp3"
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "titulo": "Cuánto, y cómo negarlo",
+      "cuerpo": "La cantidad va detrás del sujeto:\n\n<b>Kirola asko gustatzen zait.</b> — Me gusta mucho el deporte.\n<b>Zinema pixka bat gustatzen zait.</b> — Me gusta un poco el cine.\n\nY para negar, el <b>ez</b> con su salto de siempre. El auxiliar se coloca justo detrás:\n\n<b>Ez zait futbola gustatzen.</b> — No me gusta el fútbol.\n<b>Ez zaizkit barazkiak gustatzen.</b> — No me gustan las verduras.\n\nPara «nada en absoluto»:\n<b>Ez zait batere gustatzen.</b>\n\nY una respuesta corta que oirás mucho: <b>Niri ere bai.</b> (a mí también) y <b>Niri ez.</b> (a mí no).",
+      "ejemplos": [
+        {
+          "eu": "Ez zait euria gustatzen.",
+          "es": "No me gusta la lluvia.",
+          "audio": "unidades/u10/ez-zait-euria-gustatzen.mp3"
+        },
+        {
+          "eu": "Eguzkia asko gustatzen zait.",
+          "es": "Me gusta mucho el sol.",
+          "audio": "unidades/u10/eguzkia-asko-gustatzen-zait.mp3"
+        },
+        {
+          "eu": "Niri ere bai.",
+          "es": "A mí también.",
+          "audio": "unidades/u10/niri-ere-bai.mp3"
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "titulo": "Otros verbos que funcionan igual",
+      "cuerpo": "Una vez tienes <i>zait</i>, se te abren unos cuantos más. Todos siguen el patrón «algo … a mí»:\n\n<b>iruditzen zait</b> — me parece\n<b>interesatzen zait</b> — me interesa\n<b>axola zait</b> — me importa\n<b>ahaztu zait</b> — se me ha olvidado\n<b>gertatzen zait</b> — me pasa\n\nY un aviso, porque es la confusión típica: la fórmula para presentarse <b>no</b> es de esta familia.\n\n<b>Ane dut izena.</b> — Me llamo Ane. (literalmente: «tengo Ane por nombre»)\n\nVa con <i>dut</i>, no con <i>zait</i>. La dejo aquí al lado solo porque se aprenden juntas y es fácil mezclarlas.",
+      "ejemplos": [
+        {
+          "eu": "Ondo iruditzen zait.",
+          "es": "Me parece bien.",
+          "audio": "unidades/u10/ondo-iruditzen-zait.mp3"
+        },
+        {
+          "eu": "Euskara asko interesatzen zait.",
+          "es": "Me interesa mucho el euskera.",
+          "audio": "unidades/u10/euskara-asko-interesatzen-zait.mp3"
+        },
+        {
+          "eu": "Ez zait axola.",
+          "es": "No me importa.",
+          "audio": "unidades/u10/ez-zait-axola.mp3"
+        }
+      ],
+      "subnivel": "9.2"
+    },
+    {
+      "titulo": "A quién: la -(r)i de los nombres",
+      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién):\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>Liburua eman dit.</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio.</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
+      "ejemplos": [
+        {
+          "eu": "Aneri esan dio.",
+          "es": "Se lo ha dicho a Ane.",
+          "audio": "unidades/u10/aneri-esan-dio.mp3"
+        },
+        {
+          "eu": "Lagunari lagundu dio.",
+          "es": "Ha ayudado al amigo.",
+          "audio": "unidades/u10/lagunari-lagundu-dio.mp3"
+        },
+        {
+          "eu": "Zer esan dizu?",
+          "es": "¿Qué te ha dicho?",
+          "audio": "unidades/u10/zer-esan-dizu.mp3"
+        }
+      ],
+      "subnivel": "9.2"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "<b>La z se vuelve j</b>\nToda la serie de <i>zait</i> cambia de inicial en bizkaiera:\n\n<b>jat</b> — batua: zait\n<b>jatzu</b> — zaizu\n<b>jako</b> — zaio\n<b>jaku</b> — zaigu\n<b>jatzue</b> — zaizue\n<b>jake</b> — zaie\n\nAsí que «me gusta» por allí es <b>gustetan jat</b>, con el verbo también cambiado: donde el batua dice <i>gustatzen</i>, el bizkaiera dice <b>gustetan</b>.\n\n<b>Gustetan jat euskerea.</b> — Me gusta el euskera.\n\nY en plural, la <b>-z</b> de siempre: <b>jataz</b> donde el batua pone <i>zaizkit</i>.\n\n<b>Dar y decir</b>\nEl <i>dit</i> del batua es <b>deust</b> o <b>dost</b> en bizkaiera, y <i>dio</i> es <b>deutso</b>:\n\n<b>Emon deust.</b> — Me lo ha dado. (batua: eman dit)\n<b>Esan deutso.</b> — Se lo ha dicho. (batua: esan dio)\n\nY «dar» es <b>emon</b>, no <i>eman</i>.",
+      "ejemplos": [
+        {
+          "eu": "Gustetan jat.",
+          "es": "Me gusta. — batua: gustatzen zait.",
+          "audio": "unidades/u10/gustetan-jat.mp3"
+        },
+        {
+          "eu": "Ez jat gustetan.",
+          "es": "No me gusta. — batua: ez zait gustatzen.",
+          "audio": "unidades/u10/ez-jat-gustetan.mp3"
+        },
+        {
+          "eu": "Emon deust liburua.",
+          "es": "Me ha dado el libro. — batua: eman dit.",
+          "audio": "unidades/u10/emon-deust-liburua.mp3"
+        }
+      ],
+      "subnivel": "9.2",
+      "registro": "bizkaiera"
+    },
+    {
+      "titulo": "El cuerpo con «gustatzen»: singular y plural de golpe",
+      "cuerpo": "Las partes del cuerpo son la mejor manera de fijar lo que esta unidad enseña, porque unas van solas y otras en pareja. Y el verbo cambia según eso:\n\n<b>Zure ilea gustatzen zait.</b> — Me gusta tu pelo. <i>(una cosa → zait)</i>\n<b>Zure begiak gustatzen zaizkit.</b> — Me gustan tus ojos. <i>(varias → zaizkit)</i>\n\nEs el mismo mecanismo de la ficha del plural, pero aquí lo tienes con algo que no falla: <i>burua</i>, <i>sudurra</i>, <i>ahoa</i> y <i>bihotza</i> van en singular; <i>begiak</i>, <i>belarriak</i> y <i>eskuak</i> suelen ir en plural, porque son dos.\n\nTruco: si en castellano dirías «me gustaN», en euskera toca <b>zaizkit</b>.",
+      "ejemplos": [
+        {
+          "eu": "Zure ilea gustatzen zait.",
+          "es": "Me gusta tu pelo."
+        },
+        {
+          "eu": "Zure begiak gustatzen zaizkit.",
+          "es": "Me gustan tus ojos."
+        }
+      ],
+      "subnivel": "9.3"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "Un detalle de pronunciación que ya conoces: <b>belarria</b> (oreja) lleva esa <i>rr</i> fuerte que en Bizkaia se marca bien, y no hay que confundirla con <i>belarra</i>, que es la hierba.",
+      "ejemplos": [],
+      "subnivel": "9.3",
+      "registro": "bizkaiera"
+    }
+  ],
+  "vocabulario": [
+    {
+      "eu": "erosi",
+      "es": "comprar",
+      "nota": null,
+      "audio": "unidades/u8/erosi.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "saldu",
+      "es": "vender",
+      "nota": "Sale en la regla del -t(z)en: saldu → saltzen.",
+      "audio": "unidades/u8/saldu.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "liburua",
+      "es": "el libro",
+      "nota": null,
+      "audio": "unidades/u8/liburua.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
+      "eu": "musika",
+      "es": "la música",
+      "nota": null,
+      "audio": "unidades/u8/musika.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
+      "eu": "gustatu",
+      "es": "gustar",
+      "nota": null,
+      "audio": "unidades/u10/gustatu.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "gustatzen zait",
+      "es": "me gusta",
+      "nota": null,
+      "audio": "unidades/u10/gustatzen-zait.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "niri",
+      "es": "a mí",
+      "nota": null,
+      "audio": "unidades/u10/niri.mp3",
+      "categoria": "otros",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "zuri",
+      "es": "a ti",
+      "nota": null,
+      "audio": "unidades/u10/zuri.mp3",
+      "categoria": "otros",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "hari",
+      "es": "a él, a ella",
+      "nota": null,
+      "audio": "unidades/u10/hari.mp3",
+      "categoria": "otros",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "guri",
+      "es": "a nosotros",
+      "nota": null,
+      "audio": "unidades/u10/guri.mp3",
+      "categoria": "otros",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "zuei",
+      "es": "a vosotros",
+      "nota": null,
+      "audio": "unidades/u10/zuei.mp3",
+      "categoria": "otros",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "haiei",
+      "es": "a ellos",
+      "nota": null,
+      "audio": "unidades/u10/haiei.mp3",
+      "categoria": "otros",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "asko",
+      "es": "mucho",
+      "nota": null,
+      "audio": "unidades/u10/asko.mp3",
+      "categoria": "otros",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "gutxi",
+      "es": "poco",
+      "nota": null,
+      "audio": "unidades/u10/gutxi.mp3",
+      "categoria": "otros",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "pixka bat",
+      "es": "un poco",
+      "nota": null,
+      "audio": "unidades/u10/pixka-bat.mp3",
+      "categoria": "otros",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "batere ez",
+      "es": "nada en absoluto",
+      "nota": "Se usa en frases negativas: «ez zait batere gustatzen».",
+      "audio": "unidades/u10/batere-ez.mp3",
+      "categoria": "otros",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "eman",
+      "es": "dar",
+      "nota": null,
+      "audio": "unidades/u10/eman.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "esan",
+      "es": "decir",
+      "nota": null,
+      "audio": "unidades/u10/esan.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "galdetu",
+      "es": "preguntar",
+      "nota": null,
+      "audio": "unidades/u10/galdetu.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "erantzun",
+      "es": "responder",
+      "nota": null,
+      "audio": "unidades/u10/erantzun.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "lagundu",
+      "es": "ayudar",
+      "nota": "Se construye con dativo: «lagundu dio».",
+      "audio": "unidades/u10/lagundu.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "iruditzen zait",
+      "es": "me parece",
+      "nota": null,
+      "audio": "unidades/u10/iruditzen-zait.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "interesatzen zait",
+      "es": "me interesa",
+      "nota": null,
+      "audio": "unidades/u10/interesatzen-zait.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "axola zait",
+      "es": "me importa",
+      "nota": null,
+      "audio": "unidades/u10/axola-zait.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "kirola",
+      "es": "el deporte",
+      "nota": null,
+      "audio": "unidades/u10/kirola.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
+      "eu": "futbola",
+      "es": "el fútbol",
+      "nota": null,
+      "audio": "unidades/u10/futbola.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
+      "eu": "pilota",
+      "es": "la pelota",
+      "nota": "El deporte y el objeto, las dos cosas.",
+      "audio": "unidades/u10/pilota.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
+      "eu": "dantza",
+      "es": "la danza, el baile",
+      "nota": null,
+      "audio": "unidades/u10/dantza.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
+      "eu": "zinema",
+      "es": "el cine",
+      "nota": null,
+      "audio": "unidades/u10/zinema.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
+      "eu": "antzerkia",
+      "es": "el teatro",
+      "nota": null,
+      "audio": "unidades/u10/antzerkia.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
+      "eu": "janaria",
+      "es": "la comida (en general)",
+      "nota": "«bazkaria» es la del mediodía; «janaria», la comida como sustancia.",
+      "audio": "unidades/u10/janaria.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "edaria",
+      "es": "la bebida",
+      "nota": null,
+      "audio": "unidades/u10/edaria.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "gauza",
+      "es": "la cosa",
+      "nota": null,
+      "audio": "unidades/u10/gauza.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "guztia",
+      "es": "todo",
+      "nota": null,
+      "audio": "unidades/u10/guztia.mp3",
+      "categoria": "otros",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "burua",
+      "es": "la cabeza",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "begiak",
+      "es": "los ojos",
+      "nota": "En singular, «begia».",
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "sudurra",
+      "es": "la nariz",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "ahoa",
+      "es": "la boca",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "belarriak",
+      "es": "las orejas",
+      "nota": "En singular, «belarria».",
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "eskua",
+      "es": "la mano",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "besoa",
+      "es": "el brazo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "hanka",
+      "es": "la pierna",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "oina",
+      "es": "el pie",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "ilea",
+      "es": "el pelo",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "bihotza",
+      "es": "el corazón",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u10-g01",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "A mí me gusta el deporte. → Niri kirola gustatzen ____.",
+          "opciones": [
+            "zait",
+            "zaizu",
+            "zaio",
+            "zaigu"
+          ],
+          "correcta": 0,
+          "explicacion": "«a mí» → zait."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Qué te gusta? → Zer gustatzen ____?",
+          "opciones": [
+            "zait",
+            "zaizu",
+            "zaio",
+            "zaie"
+          ],
+          "correcta": 1,
+          "explicacion": "«a ti» → zaizu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "A él le gusta el cine. → Hari zinema gustatzen ____.",
+          "opciones": [
+            "zait",
+            "zaizu",
+            "zaio",
+            "zaigu"
+          ],
+          "correcta": 2,
+          "explicacion": "«a él» → zaio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "A nosotros nos gusta el euskera. → Guri euskara gustatzen ____.",
+          "opciones": [
+            "zait",
+            "zaigu",
+            "zaizue",
+            "zaie"
+          ],
+          "correcta": 1,
+          "explicacion": "«a nosotros» → zaigu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "A ellos les gusta el fútbol. → Haiei futbola gustatzen ____.",
+          "opciones": [
+            "zaizue",
+            "zaigu",
+            "zaie",
+            "zaio"
+          ],
+          "correcta": 2,
+          "explicacion": "«a ellos» → zaie."
+        }
+      ],
+      "subnivel": "9.5"
+    },
+    {
+      "id": "u10-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Me gustan los libros. → Liburuak gustatzen ____.",
+          "opciones": [
+            "zait",
+            "zaizkit",
+            "zaizu",
+            "ditut"
+          ],
+          "correcta": 1,
+          "explicacion": "Lo que gusta va en plural → zaizkit."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Me gusta el libro. → Liburua gustatzen ____.",
+          "opciones": [
+            "zaizkit",
+            "zait",
+            "zaizu",
+            "zaie"
+          ],
+          "correcta": 1,
+          "explicacion": "Singular → zait."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Te gustan las manzanas. → Sagarrak gustatzen ____.",
+          "opciones": [
+            "zaizu",
+            "zaizkizu",
+            "zaizkit",
+            "zaizkie"
+          ],
+          "correcta": 1,
+          "explicacion": "«a ti» + plural = zaizkizu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "A él le gustan las verduras. → Barazkiak gustatzen ____.",
+          "opciones": [
+            "zaio",
+            "zaizkio",
+            "zaizkit",
+            "zaie"
+          ],
+          "correcta": 1,
+          "explicacion": "«a él» + plural = zaizkio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nos gustan los montes. → Mendiak gustatzen ____.",
+          "opciones": [
+            "zaigu",
+            "zaizkigu",
+            "zaizkie",
+            "zaizkizue"
+          ],
+          "correcta": 1,
+          "explicacion": "«a nosotros» + plural = zaizkigu."
+        }
+      ],
+      "subnivel": "9.3"
+    },
+    {
+      "id": "u10-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los pronombres de dativo",
+          "pares": [
+            {
+              "eu": "niri",
+              "es": "a mí"
+            },
+            {
+              "eu": "zuri",
+              "es": "a ti"
+            },
+            {
+              "eu": "hari",
+              "es": "a él"
+            },
+            {
+              "eu": "guri",
+              "es": "a nosotros"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los auxiliares",
+          "pares": [
+            {
+              "eu": "zait",
+              "es": "me (gusta)"
+            },
+            {
+              "eu": "zaizu",
+              "es": "te (gusta)"
+            },
+            {
+              "eu": "zaio",
+              "es": "le (gusta)"
+            },
+            {
+              "eu": "zaie",
+              "es": "les (gusta)"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las aficiones",
+          "pares": [
+            {
+              "eu": "kirola",
+              "es": "el deporte"
+            },
+            {
+              "eu": "zinema",
+              "es": "el cine"
+            },
+            {
+              "eu": "dantza",
+              "es": "el baile"
+            },
+            {
+              "eu": "antzerkia",
+              "es": "el teatro"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el tiempo y las estaciones",
+          "pares": [
+            {
+              "eu": "euria",
+              "es": "la lluvia"
+            },
+            {
+              "eu": "eguzkia",
+              "es": "el sol"
+            },
+            {
+              "eu": "negua",
+              "es": "el invierno"
+            },
+            {
+              "eu": "uda",
+              "es": "el verano"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "eman",
+              "es": "dar"
+            },
+            {
+              "eu": "esan",
+              "es": "decir"
+            },
+            {
+              "eu": "galdetu",
+              "es": "preguntar"
+            },
+            {
+              "eu": "lagundu",
+              "es": "ayudar"
+            }
+          ]
+        }
+      ],
+      "subnivel": "9.4"
+    },
+    {
+      "id": "u10-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "No me gusta el fútbol. → ____ futbola gustatzen.",
+          "opciones": [
+            "Ez zait",
+            "Zait ez",
+            "Ez gustatzen",
+            "Gustatzen ez"
+          ],
+          "correcta": 0,
+          "explicacion": "El auxiliar salta detrás del «ez»: «Ez zait futbola gustatzen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "No me gustan las verduras. → ____ barazkiak gustatzen.",
+          "opciones": [
+            "Ez zait",
+            "Ez zaizkit",
+            "Zaizkit ez",
+            "Ez zaizu"
+          ],
+          "correcta": 1,
+          "explicacion": "Plural y negativa: «Ez zaizkit … gustatzen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "No me gusta nada. → Ez zait ____ gustatzen.",
+          "opciones": [
+            "asko",
+            "batere",
+            "pixka bat",
+            "gutxi"
+          ],
+          "correcta": 1,
+          "explicacion": "«batere» en negativa es «nada en absoluto»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Me gusta mucho. → ____ gustatzen zait.",
+          "opciones": [
+            "Asko",
+            "Batere",
+            "Ez",
+            "Gutxi"
+          ],
+          "correcta": 0,
+          "explicacion": "«asko» es mucho."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "A mí también. → ____",
+          "opciones": [
+            "Niri ez.",
+            "Niri ere bai.",
+            "Niri bai ez.",
+            "Ni ere."
+          ],
+          "correcta": 1,
+          "explicacion": "«ere» es «también», y el «bai» remata la respuesta corta."
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "id": "u10-g05",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Me gusta el euskera.",
+          "eu": "Niri euskara gustatzen zait.",
+          "palabras": [
+            "Niri",
+            "euskara",
+            "gustatzen",
+            "zait."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Qué te gusta?",
+          "eu": "Zer gustatzen zaizu?",
+          "palabras": [
+            "Zer",
+            "gustatzen",
+            "zaizu?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "A él le gusta el cine.",
+          "eu": "Hari zinema gustatzen zaio.",
+          "palabras": [
+            "Hari",
+            "zinema",
+            "gustatzen",
+            "zaio."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "No me gusta la lluvia.",
+          "eu": "Ez zait euria gustatzen.",
+          "palabras": [
+            "Ez",
+            "zait",
+            "euria",
+            "gustatzen."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Me gustan mucho los libros.",
+          "eu": "Liburuak asko gustatzen zaizkit.",
+          "palabras": [
+            "Liburuak",
+            "asko",
+            "gustatzen",
+            "zaizkit."
+          ]
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "id": "u10-g06",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Me parece bien. → Ondo ____ zait.",
+          "opciones": [
+            "gustatzen",
+            "iruditzen",
+            "interesatzen",
+            "axola"
+          ],
+          "correcta": 1,
+          "explicacion": "«iruditzen zait» es «me parece»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Me interesa el euskera. → Euskara ____ zait.",
+          "opciones": [
+            "gustatzen",
+            "iruditzen",
+            "interesatzen",
+            "ahaztu"
+          ],
+          "correcta": 2,
+          "explicacion": "«interesatzen zait»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "No me importa. → Ez zait ____.",
+          "opciones": [
+            "gustatzen",
+            "axola",
+            "iruditzen",
+            "eman"
+          ],
+          "correcta": 1,
+          "explicacion": "«axola zait» es «me importa»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Me gusta el euskera. → Euskara ____ zait.",
+          "opciones": [
+            "gustatzen",
+            "iruditzen",
+            "interesatzen",
+            "axola"
+          ],
+          "correcta": 0,
+          "explicacion": "«ahaztu zait».",
+          "es": "Me gusta el euskera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Me llamo Ane. → Ane ____ izena.",
+          "opciones": [
+            "zait",
+            "dut",
+            "naiz",
+            "zaio"
+          ],
+          "correcta": 1,
+          "explicacion": "Este va con «dut»: «Ane dut izena»."
+        }
+      ],
+      "subnivel": "9.2"
+    },
+    {
+      "id": "u10-g07",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "a Ane → ____",
+          "opciones": [
+            "Ane",
+            "Anera",
+            "Aneri",
+            "Anetik"
+          ],
+          "correcta": 2,
+          "explicacion": "«a alguien» se dice con -ri tras vocal."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "al amigo → ____",
+          "opciones": [
+            "laguna",
+            "lagunari",
+            "lagunera",
+            "lagunik"
+          ],
+          "correcta": 1,
+          "explicacion": "laguna → lagunari."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "a la madre → ____",
+          "opciones": [
+            "ama",
+            "amari",
+            "amara",
+            "amatik"
+          ],
+          "correcta": 1,
+          "explicacion": "ama → amari."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "a los amigos → ____",
+          "opciones": [
+            "lagunak",
+            "lagunei",
+            "lagunari",
+            "lagunetan"
+          ],
+          "correcta": 1,
+          "explicacion": "El plural del dativo es -ei: lagunei."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "a mí → ____",
+          "opciones": [
+            "ni",
+            "nik",
+            "niri",
+            "nire"
+          ],
+          "correcta": 2,
+          "explicacion": "«niri». Con -k sería el sujeto de un verbo con objeto; con -re, «mi»."
+        }
+      ],
+      "subnivel": "9.2"
+    },
+    {
+      "id": "u10-g08",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Me gusta el euskera.",
+          "respuestas": [
+            "euskara gustatzen zait",
+            "niri euskara gustatzen zait"
+          ],
+          "pista": "El auxiliar es «zait»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Qué te gusta?",
+          "respuestas": [
+            "zer gustatzen zaizu",
+            "ze gustatzen zaizu",
+            "zuri zer gustatzen zaizu"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "No me gusta el café.",
+          "respuestas": [
+            "ez zait kafea gustatzen",
+            "niri ez zait kafea gustatzen"
+          ],
+          "pista": "El auxiliar salta detrás del «ez»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Me gustan los libros.",
+          "respuestas": [
+            "liburuak gustatzen zaizkit",
+            "niri liburuak gustatzen zaizkit"
+          ],
+          "pista": "Plural: zaizkit."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Me parece bien.",
+          "respuestas": [
+            "ondo iruditzen zait",
+            "niri ondo iruditzen zait"
+          ],
+          "pista": "Tres palabras."
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "id": "u10-g09",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "A nosotros nos gusta el monte.",
+          "eu": "Guri mendia gustatzen zaigu.",
+          "palabras": [
+            "Guri",
+            "mendia",
+            "gustatzen",
+            "zaigu."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "A ella no le gusta el fútbol.",
+          "eu": "Hari ez zaio futbola gustatzen.",
+          "palabras": [
+            "Hari",
+            "ez",
+            "zaio",
+            "futbola",
+            "gustatzen."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Se lo ha dicho a Ane.",
+          "eu": "Hark Aneri esan dio.",
+          "palabras": [
+            "Hark",
+            "Aneri",
+            "esan",
+            "dio."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Me interesa mucho el euskera.",
+          "eu": "Euskara asko interesatzen zait.",
+          "palabras": [
+            "Euskara",
+            "asko",
+            "interesatzen",
+            "zait."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "A ellos les gusta el verano.",
+          "eu": "Haiei uda gustatzen zaie.",
+          "palabras": [
+            "Haiei",
+            "uda",
+            "gustatzen",
+            "zaie."
+          ]
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "id": "u10-g10",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Me ha dado el libro. → Liburua eman ____.",
+          "opciones": [
+            "dut",
+            "dit",
+            "dio",
+            "zait"
+          ],
+          "correcta": 1,
+          "explicacion": "«a mí» con objeto → dit."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Se lo ha dicho a Ane. → Aneri esan ____.",
+          "opciones": [
+            "dut",
+            "dit",
+            "dio",
+            "zaio"
+          ],
+          "correcta": 2,
+          "explicacion": "Él, a ella → dio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "¿Qué te ha dicho? → Zer esan ____?",
+          "opciones": [
+            "duzu",
+            "dizu",
+            "diozu",
+            "zaizu"
+          ],
+          "correcta": 1,
+          "explicacion": "Él, a ti → dizu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nos ha ayudado. → Lagundu ____.",
+          "opciones": [
+            "du",
+            "digu",
+            "dugu",
+            "zaigu"
+          ],
+          "correcta": 1,
+          "explicacion": "Él, a nosotros → digu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Le ha dado el libro. → Liburua eman ____.",
+          "opciones": [
+            "dut",
+            "dit",
+            "dio",
+            "zaio"
+          ],
+          "correcta": 2,
+          "explicacion": "Él, a él → dio."
+        }
+      ],
+      "subnivel": "9.2"
+    },
+    {
+      "id": "u10-g11",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Me gusta» en bizkaiera: Gustetan ____.",
+          "opciones": [
+            "zait",
+            "jat",
+            "jako",
+            "dot"
+          ],
+          "correcta": 1,
+          "explicacion": "El «zait» del batua es «jat» en bizkaiera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Te gusta» en bizkaiera: Gustetan ____.",
+          "opciones": [
+            "zaizu",
+            "jatzu",
+            "jako",
+            "jaku"
+          ],
+          "correcta": 1,
+          "explicacion": "zaizu → jatzu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«No me gusta» en bizkaiera: Ez ____ gustetan.",
+          "opciones": [
+            "zait",
+            "jat",
+            "jako",
+            "dot"
+          ],
+          "correcta": 1,
+          "explicacion": "«Ez jat gustetan»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Me lo ha dado» en bizkaiera: Emon ____.",
+          "opciones": [
+            "dit",
+            "deust",
+            "dio",
+            "dut"
+          ],
+          "correcta": 1,
+          "explicacion": "dit → deust (o dost)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«dar» en bizkaiera es ____",
+          "opciones": [
+            "eman",
+            "emon",
+            "esan",
+            "hartu"
+          ],
+          "correcta": 1,
+          "explicacion": "«emon». En batua, «eman»."
+        }
+      ],
+      "subnivel": "test"
+    },
+    {
+      "id": "u10-g12",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Niri euria ez zait gustatzen. Niri ____ gustatzen zait.",
+          "opciones": [
+            "euria",
+            "eguzkia",
+            "negua",
+            "batere"
+          ],
+          "correcta": 1,
+          "explicacion": "Si no le gusta la lluvia, encaja el sol: eguzkia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zer gustatzen zaizu? — ____ gustatzen zait.",
+          "opciones": [
+            "Kirolak",
+            "Kirola",
+            "Kirolari",
+            "Kirolez"
+          ],
+          "correcta": 1,
+          "explicacion": "La pregunta es en singular, así que «kirola» con «zait»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Barazkiak ____ gustatzen.",
+          "opciones": [
+            "ez zait",
+            "ez zaizkit",
+            "ez zaizu",
+            "zait ez"
+          ],
+          "correcta": 1,
+          "explicacion": "«barazkiak» es plural y la frase es negativa: «ez zaizkit»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hari ____ gustatzen zaio, eta niri ere bai.",
+          "opciones": [
+            "dantza",
+            "dantzak",
+            "dantzari",
+            "dantzaz"
+          ],
+          "correcta": 0,
+          "explicacion": "Singular con «zaio»: dantza."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ez zait ____ gustatzen: ura edaten dut.",
+          "opciones": [
+            "ardoa",
+            "ardorik",
+            "ardoak",
+            "ardoz"
+          ],
+          "correcta": 0,
+          "explicacion": "Con «gustatu» el sujeto no lleva partitivo: «ardoa»."
+        }
+      ],
+      "subnivel": "test"
+    },
+    {
+      "id": "u9-g13",
+      "subnivel": "9.1",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja me gusta",
+          "pares": [
+            {
+              "eu": "axola zait",
+              "es": "me importa"
+            },
+            {
+              "eu": "asko",
+              "es": "mucho"
+            },
+            {
+              "eu": "guztia",
+              "es": "todo"
+            },
+            {
+              "eu": "pixka bat",
+              "es": "un poco"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja me gusta",
+          "pares": [
+            {
+              "eu": "asko",
+              "es": "mucho"
+            },
+            {
+              "eu": "iruditzen zait",
+              "es": "me parece"
+            },
+            {
+              "eu": "pixka bat",
+              "es": "un poco"
+            },
+            {
+              "eu": "gutxi",
+              "es": "poco"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «zuri»?",
+          "opciones": [
+            "a ti",
+            "el deporte",
+            "el viento",
+            "ayudar"
+          ],
+          "correcta": 0,
+          "explicacion": "zuri = a ti."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«todo» se dice…",
+          "opciones": [
+            "guztia",
+            "asko",
+            "gutxi",
+            "pixka bat"
+          ],
+          "correcta": 0,
+          "explicacion": "responder = erantzun."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «pixka bat»?",
+          "opciones": [
+            "un poco",
+            "el otoño",
+            "la cosa",
+            "la pelota"
+          ],
+          "correcta": 0,
+          "explicacion": "pixka bat = un poco."
+        }
+      ]
+    },
+    {
+      "id": "u9-g14",
+      "subnivel": "9.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el cuerpo",
+          "pares": [
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "bihotza",
+              "es": "el corazón"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el cuerpo",
+          "pares": [
+            {
+              "eu": "belarriak",
+              "es": "las orejas"
+            },
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "oina",
+              "es": "el pie"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «besoa»?",
+          "opciones": [
+            "el brazo",
+            "la pierna",
+            "la mano",
+            "el pie"
+          ],
+          "correcta": 0
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la nariz» se dice…",
+          "opciones": [
+            "sudurra",
+            "ahoa",
+            "begiak",
+            "belarriak"
+          ],
+          "correcta": 0
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ilea»?",
+          "opciones": [
+            "el pelo",
+            "la oreja",
+            "el ojo",
+            "la cabeza"
+          ],
+          "correcta": 0
+        }
+      ]
+    },
+    {
+      "id": "u9-g15",
+      "subnivel": "9.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el cuerpo",
+          "pares": [
+            {
+              "eu": "belarriak",
+              "es": "las orejas"
+            },
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "sudurra",
+              "es": "la nariz"
+            },
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el cuerpo",
+          "pares": [
+            {
+              "eu": "oina",
+              "es": "el pie"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            },
+            {
+              "eu": "eskua",
+              "es": "la mano"
+            },
+            {
+              "eu": "belarriak",
+              "es": "las orejas"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hanka»?",
+          "opciones": [
+            "la pierna",
+            "la pelota",
+            "la bebida",
+            "el deporte"
+          ],
+          "correcta": 0,
+          "explicacion": "hanka = la pierna."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la cabeza» se dice…",
+          "opciones": [
+            "burua",
+            "bihotza",
+            "besoa",
+            "hanka"
+          ],
+          "correcta": 0
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ilea»?",
+          "opciones": [
+            "el pelo",
+            "la mano",
+            "la bebida",
+            "el viento"
+          ],
+          "correcta": 0,
+          "explicacion": "ilea = el pelo."
+        }
+      ]
+    },
+    {
+      "id": "u9-g16",
+      "subnivel": "9.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el cuerpo",
+          "pares": [
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            },
+            {
+              "eu": "eskua",
+              "es": "la mano"
+            },
+            {
+              "eu": "oina",
+              "es": "el pie"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el cuerpo",
+          "pares": [
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            },
+            {
+              "eu": "sudurra",
+              "es": "la nariz"
+            },
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            },
+            {
+              "eu": "begiak",
+              "es": "los ojos"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «oina»?",
+          "opciones": [
+            "el pie",
+            "ayudar",
+            "la nariz",
+            "la nieve"
+          ],
+          "correcta": 0,
+          "explicacion": "oina = el pie."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el corazón» se dice…",
+          "opciones": [
+            "bihotza",
+            "burua",
+            "eskua",
+            "oina"
+          ],
+          "correcta": 0
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «belarriak»?",
+          "opciones": [
+            "las orejas",
+            "los ojos",
+            "las manos",
+            "los pies"
+          ],
+          "correcta": 0
+        }
+      ]
+    },
+    {
+      "id": "u9-g17",
+      "subnivel": "9.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el cuerpo",
+          "pares": [
+            {
+              "eu": "sudurra",
+              "es": "la nariz"
+            },
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            },
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            },
+            {
+              "eu": "begiak",
+              "es": "los ojos"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja el cuerpo",
+          "pares": [
+            {
+              "eu": "eskua",
+              "es": "la mano"
+            },
+            {
+              "eu": "bihotza",
+              "es": "el corazón"
+            },
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            },
+            {
+              "eu": "begiak",
+              "es": "los ojos"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «bihotza»?",
+          "opciones": [
+            "el corazón",
+            "el libro",
+            "gustar",
+            "a vosotros"
+          ],
+          "correcta": 0,
+          "explicacion": "bihotza = el corazón."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la boca» se dice…",
+          "opciones": [
+            "ahoa",
+            "haiei",
+            "hari",
+            "gutxi"
+          ],
+          "correcta": 0,
+          "explicacion": "la boca = ahoa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hanka»?",
+          "opciones": [
+            "la pierna",
+            "el brazo",
+            "el pie",
+            "la mano"
+          ],
+          "correcta": 0
+        }
+      ]
+    },
+    {
+      "id": "u10.1-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            },
+            {
+              "eu": "begiak",
+              "es": "los ojos"
+            },
+            {
+              "eu": "sudurra",
+              "es": "la nariz"
+            },
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "belarriak",
+              "es": "las orejas"
+            },
+            {
+              "eu": "eskua",
+              "es": "la mano"
+            },
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "oina",
+              "es": "el pie"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "bihotza",
+              "es": "el corazón"
+            },
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "eskua",
+              "es": "la mano"
+            },
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "oina",
+              "es": "el pie"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            },
+            {
+              "eu": "sudurra",
+              "es": "la nariz"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "begiak",
+              "es": "los ojos"
+            }
+          ]
+        }
+      ],
+      "subnivel": "9.3"
+    },
+    {
+      "id": "u9-g18",
+      "subnivel": "9.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ocio y medios",
+          "pares": [
+            {
+              "eu": "antzerkia",
+              "es": "el teatro"
+            },
+            {
+              "eu": "futbola",
+              "es": "el fútbol"
+            },
+            {
+              "eu": "pilota",
+              "es": "la pelota"
+            },
+            {
+              "eu": "musika",
+              "es": "la música"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ocio y medios",
+          "pares": [
+            {
+              "eu": "kirola",
+              "es": "el deporte"
+            },
+            {
+              "eu": "pilota",
+              "es": "la pelota"
+            },
+            {
+              "eu": "antzerkia",
+              "es": "el teatro"
+            },
+            {
+              "eu": "dantza",
+              "es": "la danza, el baile"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «pilota»?",
+          "opciones": [
+            "la pelota",
+            "el teatro",
+            "el deporte",
+            "la música"
+          ],
+          "correcta": 0,
+          "explicacion": "El deporte y el objeto, las dos cosas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el teatro» se dice…",
+          "opciones": [
+            "antzerkia",
+            "gauza",
+            "besoa",
+            "udazkena"
+          ],
+          "correcta": 0,
+          "explicacion": "el teatro = antzerkia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «liburua»?",
+          "opciones": [
+            "el libro",
+            "responder",
+            "el fútbol",
+            "la cabeza"
+          ],
+          "correcta": 0,
+          "explicacion": "liburua = el libro."
+        }
+      ]
+    },
+    {
+      "id": "u9-g19",
+      "subnivel": "9.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ocio y medios",
+          "pares": [
+            {
+              "eu": "antzerkia",
+              "es": "el teatro"
+            },
+            {
+              "eu": "dantza",
+              "es": "la danza, el baile"
+            },
+            {
+              "eu": "pilota",
+              "es": "la pelota"
+            },
+            {
+              "eu": "musika",
+              "es": "la música"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ocio y medios",
+          "pares": [
+            {
+              "eu": "musika",
+              "es": "la música"
+            },
+            {
+              "eu": "zinema",
+              "es": "el cine"
+            },
+            {
+              "eu": "liburua",
+              "es": "el libro"
+            },
+            {
+              "eu": "dantza",
+              "es": "la danza, el baile"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «pilota»?",
+          "opciones": [
+            "la pelota",
+            "el frío",
+            "el pie",
+            "el brazo"
+          ],
+          "correcta": 0,
+          "explicacion": "El deporte y el objeto, las dos cosas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el cine» se dice…",
+          "opciones": [
+            "zinema",
+            "gutxi",
+            "niri",
+            "gustatzen zait"
+          ],
+          "correcta": 0,
+          "explicacion": "el cine = zinema."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «musika»?",
+          "opciones": [
+            "la música",
+            "comprar",
+            "el teatro",
+            "a vosotros"
+          ],
+          "correcta": 0,
+          "explicacion": "musika = la música."
+        }
+      ]
+    },
+    {
+      "id": "u9-g20",
+      "subnivel": "9.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ocio y medios",
+          "pares": [
+            {
+              "eu": "antzerkia",
+              "es": "el teatro"
+            },
+            {
+              "eu": "pilota",
+              "es": "la pelota"
+            },
+            {
+              "eu": "liburua",
+              "es": "el libro"
+            },
+            {
+              "eu": "futbola",
+              "es": "el fútbol"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ocio y medios",
+          "pares": [
+            {
+              "eu": "liburua",
+              "es": "el libro"
+            },
+            {
+              "eu": "dantza",
+              "es": "la danza, el baile"
+            },
+            {
+              "eu": "pilota",
+              "es": "la pelota"
+            },
+            {
+              "eu": "musika",
+              "es": "la música"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «zinema»?",
+          "opciones": [
+            "el cine",
+            "me gusta",
+            "la mano",
+            "todo"
+          ],
+          "correcta": 0,
+          "explicacion": "zinema = el cine."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el deporte» se dice…",
+          "opciones": [
+            "kirola",
+            "besoa",
+            "batere ez",
+            "beroa"
+          ],
+          "correcta": 0,
+          "explicacion": "el deporte = kirola."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «antzerkia»?",
+          "opciones": [
+            "el teatro",
+            "decir",
+            "me parece",
+            "todo"
+          ],
+          "correcta": 0,
+          "explicacion": "antzerkia = el teatro."
+        }
+      ]
+    },
+    {
+      "id": "u9-g21",
+      "subnivel": "9.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ocio y medios",
+          "pares": [
+            {
+              "eu": "musika",
+              "es": "la música"
+            },
+            {
+              "eu": "antzerkia",
+              "es": "el teatro"
+            },
+            {
+              "eu": "zinema",
+              "es": "el cine"
+            },
+            {
+              "eu": "futbola",
+              "es": "el fútbol"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja ocio y medios",
+          "pares": [
+            {
+              "eu": "dantza",
+              "es": "la danza, el baile"
+            },
+            {
+              "eu": "kirola",
+              "es": "el deporte"
+            },
+            {
+              "eu": "musika",
+              "es": "la música"
+            },
+            {
+              "eu": "futbola",
+              "es": "el fútbol"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «futbola»?",
+          "opciones": [
+            "el fútbol",
+            "el otoño",
+            "responder",
+            "preguntar"
+          ],
+          "correcta": 0,
+          "explicacion": "futbola = el fútbol."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«el cine» se dice…",
+          "opciones": [
+            "zinema",
+            "gutxi",
+            "hari",
+            "gauza"
+          ],
+          "correcta": 0,
+          "explicacion": "el cine = zinema."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «pilota»?",
+          "opciones": [
+            "la pelota",
+            "a él, a ella",
+            "la nieve",
+            "el tiempo (meteorológico)"
+          ],
+          "correcta": 0,
+          "explicacion": "El deporte y el objeto, las dos cosas."
+        }
+      ]
+    },
+    {
+      "id": "u9-g22",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "oina",
+              "es": "el pie"
+            },
+            {
+              "eu": "gutxi",
+              "es": "poco"
+            },
+            {
+              "eu": "hari",
+              "es": "a él, a ella"
+            },
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "elurra",
+              "es": "la nieve"
+            },
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            },
+            {
+              "eu": "liburua",
+              "es": "el libro"
+            },
+            {
+              "eu": "hotza",
+              "es": "el frío"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «guztia»?",
+          "opciones": [
+            "todo",
+            "a él, a ella",
+            "a ti",
+            "a mí"
+          ],
+          "correcta": 0,
+          "explicacion": "guztia = todo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«la cosa» se dice…",
+          "opciones": [
+            "gauza",
+            "ahoa",
+            "interesatzen zait",
+            "janaria"
+          ],
+          "correcta": 0,
+          "explicacion": "la cosa = gauza."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «jaieguna»?",
+          "opciones": [
+            "el fútbol",
+            "el pie",
+            "dar",
+            "la cabeza"
+          ],
+          "correcta": 0,
+          "explicacion": "jaieguna = el día festivo."
+        }
+      ]
+    },
+    {
+      "id": "u9-g23",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "dantza",
+              "es": "la danza, el baile"
+            },
+            {
+              "eu": "esan",
+              "es": "decir"
+            },
+            {
+              "eu": "beroa",
+              "es": "el calor"
+            },
+            {
+              "eu": "interesatzen zait",
+              "es": "me interesa"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "dantza",
+              "es": "la danza, el baile"
+            },
+            {
+              "eu": "erosi",
+              "es": "comprar"
+            },
+            {
+              "eu": "belarriak",
+              "es": "las orejas"
+            },
+            {
+              "eu": "interesatzen zait",
+              "es": "me interesa"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «besoa»?",
+          "opciones": [
+            "el brazo",
+            "ayudar",
+            "el libro",
+            "la pelota"
+          ],
+          "correcta": 0,
+          "explicacion": "besoa = el brazo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«mucho» se dice…",
+          "opciones": [
+            "asko",
+            "elurra",
+            "gustatu",
+            "liburua"
+          ],
+          "correcta": 0,
+          "explicacion": "mucho = asko."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «futbola»?",
+          "opciones": [
+            "el fútbol",
+            "el otoño",
+            "la danza, el baile",
+            "el calor"
+          ],
+          "correcta": 0,
+          "explicacion": "futbola = el fútbol."
+        }
+      ]
+    },
+    {
+      "id": "u9-g24",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "haizea",
+              "es": "el viento"
+            },
+            {
+              "eu": "saldu",
+              "es": "vender"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "zuei",
+              "es": "a vosotros"
+            },
+            {
+              "eu": "gustatzen zait",
+              "es": "me gusta"
+            },
+            {
+              "eu": "batere ez",
+              "es": "nada en absoluto"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «ilea»?",
+          "opciones": [
+            "el pelo",
+            "nada en absoluto",
+            "la nube",
+            "preguntar"
+          ],
+          "correcta": 0,
+          "explicacion": "ilea = el pelo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«a mí» se dice…",
+          "opciones": [
+            "niri",
+            "erantzun",
+            "burua",
+            "begiak"
+          ],
+          "correcta": 0,
+          "explicacion": "a mí = niri."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «pixka bat»?",
+          "opciones": [
+            "un poco",
+            "me importa",
+            "la comida (en general)",
+            "el pie"
+          ],
+          "correcta": 0,
+          "explicacion": "pixka bat = un poco."
+        }
+      ]
+    },
+    {
+      "id": "u9-g25",
+      "subnivel": "9.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja a quién le gusta",
+          "pares": [
+            {
+              "eu": "hari",
+              "es": "a él, a ella"
+            },
+            {
+              "eu": "esan",
+              "es": "decir"
+            },
+            {
+              "eu": "guri",
+              "es": "a nosotros"
+            },
+            {
+              "eu": "haiei",
+              "es": "a ellos"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja a quién le gusta",
+          "pares": [
+            {
+              "eu": "haiei",
+              "es": "a ellos"
+            },
+            {
+              "eu": "niri",
+              "es": "a mí"
+            },
+            {
+              "eu": "galdetu",
+              "es": "preguntar"
+            },
+            {
+              "eu": "guri",
+              "es": "a nosotros"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «lagundu»?",
+          "opciones": [
+            "ayudar",
+            "mucho",
+            "a vosotros",
+            "el calor"
+          ],
+          "correcta": 0,
+          "explicacion": "Se construye con dativo: «lagundu dio»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«a vosotros» se dice…",
+          "opciones": [
+            "zuei",
+            "gauza",
+            "hotza",
+            "udaberria"
+          ],
+          "correcta": 0,
+          "explicacion": "a vosotros = zuei."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eman»?",
+          "opciones": [
+            "dar",
+            "el cine",
+            "la primavera",
+            "a nosotros"
+          ],
+          "correcta": 0,
+          "explicacion": "eman = dar."
+        }
+      ]
+    },
+    {
+      "id": "u9-g26",
+      "subnivel": "9.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja a quién le gusta",
+          "pares": [
+            {
+              "eu": "hari",
+              "es": "a él, a ella"
+            },
+            {
+              "eu": "eman",
+              "es": "dar"
+            },
+            {
+              "eu": "esan",
+              "es": "decir"
+            },
+            {
+              "eu": "galdetu",
+              "es": "preguntar"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja a quién le gusta",
+          "pares": [
+            {
+              "eu": "erantzun",
+              "es": "responder"
+            },
+            {
+              "eu": "niri",
+              "es": "a mí"
+            },
+            {
+              "eu": "zuri",
+              "es": "a ti"
+            },
+            {
+              "eu": "galdetu",
+              "es": "preguntar"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «niri»?",
+          "opciones": [
+            "a mí",
+            "el viento",
+            "las orejas",
+            "el pie"
+          ],
+          "correcta": 0,
+          "explicacion": "niri = a mí."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«a él, a ella» se dice…",
+          "opciones": [
+            "hari",
+            "gutxi",
+            "begiak",
+            "lagundu"
+          ],
+          "correcta": 0,
+          "explicacion": "a él, a ella = hari."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «galdetu»?",
+          "opciones": [
+            "preguntar",
+            "el libro",
+            "poco",
+            "el pie"
+          ],
+          "correcta": 0,
+          "explicacion": "galdetu = preguntar."
+        }
+      ]
+    },
+    {
+      "id": "u9-g27",
+      "subnivel": "9.5",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Txapeldun» significa…",
+          "opciones": [
+            "el que vende boinas",
+            "el campeón",
+            "el árbitro",
+            "el jugador"
+          ],
+          "correcta": 1,
+          "explicacion": "Literalmente, «el que tiene txapela»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Txapelketa» significa…",
+          "opciones": [
+            "la boina",
+            "el campeonato",
+            "el equipo",
+            "el premio"
+          ],
+          "correcta": 1,
+          "explicacion": "La competición donde se gana la txapela."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿De qué palabra salen «txapeldun» y «txapelketa»?",
+          "opciones": [
+            "txapela (la boina)",
+            "txapa",
+            "txalo",
+            "txartela"
+          ],
+          "correcta": 0,
+          "explicacion": "Al ganador se le entrega una boina."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La terminación «-dun» significa…",
+          "opciones": [
+            "sin",
+            "el que tiene",
+            "el que hace",
+            "pequeño"
+          ],
+          "correcta": 1,
+          "explicacion": "Euskalduna: el que tiene el euskera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Euskalduna» y «txapelduna» comparten…",
+          "opciones": [
+            "la raíz",
+            "la terminación -dun",
+            "el significado",
+            "nada"
+          ],
+          "correcta": 1,
+          "explicacion": "«El que tiene» algo."
+        }
+      ]
+    },
+    {
+      "id": "u9-g28",
+      "subnivel": "9.5",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál va siempre en plural?",
+          "opciones": [
+            "alkandora",
+            "prakak",
+            "gona",
+            "jaka"
+          ],
+          "correcta": 1,
+          "explicacion": "Los pantalones, como en castellano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Betaurrekoak» se construye con…",
+          "opciones": [
+            "begi (ojo) + aurre (delante)",
+            "bete + urre",
+            "beti + arreta",
+            "beso + aurre"
+          ],
+          "correcta": 0,
+          "explicacion": "«Los de delante de los ojos»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zapatak» significa…",
+          "opciones": [
+            "camisa",
+            "zapatos",
+            "falda",
+            "chaqueta"
+          ],
+          "correcta": 1,
+          "explicacion": "En plural."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "la ropa",
+          "pares": [
+            {
+              "eu": "alkandora",
+              "es": "la camisa"
+            },
+            {
+              "eu": "prakak",
+              "es": "los pantalones"
+            },
+            {
+              "eu": "jertsea",
+              "es": "el jersey"
+            },
+            {
+              "eu": "gona",
+              "es": "la falda"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Erosi» significa…",
+          "opciones": [
+            "vender",
+            "comprar",
+            "pagar",
+            "mirar"
+          ],
+          "correcta": 1,
+          "explicacion": "Ya lo tenías de la unidad de la rutina."
+        }
+      ]
+    },
+    {
+      "id": "u9-g29",
+      "subnivel": "9.5",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Norentzat da?» pregunta…",
+          "opciones": [
+            "¿de quién es?",
+            "¿para quién es?",
+            "¿cuánto es?",
+            "¿dónde está?"
+          ],
+          "correcta": 1,
+          "explicacion": "Norentzat: para quién."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Nire amarentzat» significa…",
+          "opciones": [
+            "de mi madre",
+            "para mi madre",
+            "con mi madre",
+            "a mi madre"
+          ],
+          "correcta": 1,
+          "explicacion": "La terminación -entzat."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Al comprar un regalo, la pregunta clave es…",
+          "opciones": [
+            "Zenbat da?",
+            "Norentzat da?",
+            "Non dago?",
+            "Zer da?"
+          ],
+          "correcta": 1,
+          "explicacion": "Para quién es."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "las preguntas de la tienda",
+          "pares": [
+            {
+              "eu": "zenbat da?",
+              "es": "¿cuánto es?"
+            },
+            {
+              "eu": "norentzat?",
+              "es": "¿para quién?"
+            },
+            {
+              "eu": "non dago?",
+              "es": "¿dónde está?"
+            },
+            {
+              "eu": "erosi",
+              "es": "comprar"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Opari» significa…",
+          "opciones": [
+            "tienda",
+            "regalo",
+            "precio",
+            "bolsa"
+          ],
+          "correcta": 1,
+          "explicacion": "Lo que compras para otro."
+        }
+      ]
+    },
+    {
+      "id": "u9-g30",
+      "subnivel": "9.5",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Alkandora zuria erosi dut» significa…",
+          "opciones": [
+            "Compro una camisa blanca",
+            "He comprado una camisa blanca",
+            "Quiero una camisa blanca",
+            "Vendo una camisa blanca"
+          ],
+          "correcta": 1,
+          "explicacion": "Erosi + dut: pasado reciente."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «alkandora zuria», el color va…",
+          "opciones": [
+            "delante",
+            "detrás",
+            "al final de la frase",
+            "aparte"
+          ],
+          "correcta": 1,
+          "explicacion": "Como todos los adjetivos, y con el artículo al final."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Saldu» significa…",
+          "opciones": [
+            "comprar",
+            "vender",
+            "pagar",
+            "guardar"
+          ],
+          "correcta": 1,
+          "explicacion": "El contrario de erosi."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Txapela» es…",
+          "opciones": [
+            "una camisa",
+            "una boina",
+            "un abrigo",
+            "un zapato"
+          ],
+          "correcta": 1,
+          "explicacion": "La prenda de la que salen campeón y campeonato."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "comprar y vender",
+          "pares": [
+            {
+              "eu": "erosi",
+              "es": "comprar"
+            },
+            {
+              "eu": "saldu",
+              "es": "vender"
+            },
+            {
+              "eu": "dirua",
+              "es": "el dinero"
+            },
+            {
+              "eu": "oparia",
+              "es": "el regalo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

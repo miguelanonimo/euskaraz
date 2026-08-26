@@ -1,0 +1,648 @@
+{
+  "id": "u10.1",
+  "numero": 10.1,
+  "titulo": "Gorputza, urtaroak eta jaiak",
+  "subtitulo": "Ampliación: el cuerpo, el tiempo y las fiestas",
+  "objetivo": "Aprovechar los gustos para aprender el cuerpo, cerrar las cuatro estaciones y conocer las fiestas del año.",
+  "color": "morado",
+  "vocabulario": [
+    {
+      "eu": "burua",
+      "es": "la cabeza",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "begiak",
+      "es": "los ojos",
+      "nota": "En singular, «begia».",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "sudurra",
+      "es": "la nariz",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "ahoa",
+      "es": "la boca",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "belarriak",
+      "es": "las orejas",
+      "nota": "En singular, «belarria».",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "eskua",
+      "es": "la mano",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "besoa",
+      "es": "el brazo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "hanka",
+      "es": "la pierna",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "oina",
+      "es": "el pie",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "ilea",
+      "es": "el pelo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "bihotza",
+      "es": "el corazón",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "udaberria",
+      "es": "la primavera",
+      "nota": "«Uda» (verano) + «berri» (nuevo): el verano nuevo.",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "udazkena",
+      "es": "el otoño",
+      "nota": "También sale de «uda»: el final del verano.",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "eguraldia",
+      "es": "el tiempo (meteorológico)",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "elurra",
+      "es": "la nieve",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "haizea",
+      "es": "el viento",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "hotza",
+      "es": "el frío",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "beroa",
+      "es": "el calor",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "hodeia",
+      "es": "la nube",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "Gabonak",
+      "es": "la Navidad",
+      "nota": "Plural de «gabon». Ver la ficha.",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "Urte Berri",
+      "es": "el Año Nuevo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "Olentzero",
+      "es": "el carbonero de la Navidad",
+      "nota": "Baja del monte la noche del 24 y trae los regalos.",
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "Aste Santua",
+      "es": "la Semana Santa",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "Inauteriak",
+      "es": "los carnavales",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "jaieguna",
+      "es": "el día festivo",
+      "nota": null,
+      "categoria": "sustantivo"
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "El cuerpo con «gustatzen»: singular y plural de golpe",
+      "cuerpo": "Las partes del cuerpo son la mejor manera de fijar lo que esta unidad enseña, porque unas van solas y otras en pareja. Y el verbo cambia según eso:\n\n<b>Zure ilea gustatzen zait.</b> — Me gusta tu pelo. <i>(una cosa → zait)</i>\n<b>Zure begiak gustatzen zaizkit.</b> — Me gustan tus ojos. <i>(varias → zaizkit)</i>\n\nEs el mismo mecanismo de la ficha del plural, pero aquí lo tienes con algo que no falla: <i>burua</i>, <i>sudurra</i>, <i>ahoa</i> y <i>bihotza</i> van en singular; <i>begiak</i>, <i>belarriak</i> y <i>eskuak</i> suelen ir en plural, porque son dos.\n\nTruco: si en castellano dirías «me gustaN», en euskera toca <b>zaizkit</b>.",
+      "ejemplos": [
+        {
+          "eu": "Zure ilea gustatzen zait.",
+          "es": "Me gusta tu pelo."
+        },
+        {
+          "eu": "Zure begiak gustatzen zaizkit.",
+          "es": "Me gustan tus ojos."
+        }
+      ]
+    },
+    {
+      "titulo": "Las cuatro estaciones salen de dos palabras",
+      "cuerpo": "Ya tienes <b>negua</b> (invierno) y <b>uda</b> (verano) de esta unidad. Las otras dos se construyen sobre el verano, y tiene su lógica:\n\n<b>uda</b> + <b>berri</b> (nuevo) → <b>udaberria</b>, la primavera. El verano nuevo, el que está por venir.\n<b>uda</b> + <b>azken</b> (último, final) → <b>udazkena</b>, el otoño. El final del verano.\n\nAsí que en euskera las estaciones se ordenan alrededor del verano, no del invierno. Una vez lo ves, no se olvidan.",
+      "ejemplos": [
+        {
+          "eu": "udaberria",
+          "es": "la primavera"
+        },
+        {
+          "eu": "uda",
+          "es": "el verano"
+        },
+        {
+          "eu": "udazkena",
+          "es": "el otoño"
+        },
+        {
+          "eu": "negua",
+          "es": "el invierno"
+        }
+      ]
+    },
+    {
+      "titulo": "El tiempo se «hace», como en castellano",
+      "cuerpo": "Para hablar del tiempo, el euskera usa <b>egin</b> (hacer), que ya tienes de la unidad 8:\n\n<b>Udaberrian euria egiten du.</b> — En primavera llueve.\n<b>Neguan hotz egiten du.</b> — En invierno hace frío.\n\nFíjate en que <i>euria</i> (la lluvia) y <i>hotza</i> (el frío) son sustantivos, no verbos: literalmente es «hace lluvia», «hace frío». Igual que en castellano.\n\nY para preguntar u opinar sobre el tiempo en general se usa <b>eguraldia</b>:\n\n<b>Gaur eguraldi ona dago.</b> — Hoy hace buen tiempo.",
+      "ejemplos": [
+        {
+          "eu": "Udaberrian euria egiten du.",
+          "es": "En primavera llueve."
+        },
+        {
+          "eu": "Neguan hotz egiten du.",
+          "es": "En invierno hace frío."
+        },
+        {
+          "eu": "Gaur eguraldi ona dago.",
+          "es": "Hoy hace buen tiempo."
+        }
+      ]
+    },
+    {
+      "titulo": "«Gabon» y «Gabonak»: cuidado con la -k",
+      "cuerpo": "Aquí hay una coincidencia que confunde si no se avisa.\n\n<b>gabon</b> — buenas noches. Lo tienes desde la unidad 1.\n<b>Gabonak</b> — la Navidad.\n\nLa segunda es literalmente el plural de la primera: <i>las buenas noches</i>, las noches buenas del año. Va casi siempre en plural y con mayúscula.\n\nAsí que si alguien te dice <i>Gabon</i> por la noche te está dando las buenas noches, y si te habla de <i>Gabonak</i> te está hablando de las fiestas. El contexto lo deja claro enseguida, pero la primera vez despista.",
+      "ejemplos": [
+        {
+          "eu": "gabon",
+          "es": "buenas noches"
+        },
+        {
+          "eu": "Gabonak",
+          "es": "la Navidad"
+        }
+      ]
+    },
+    {
+      "titulo": "Olentzero, el carbonero que baja del monte",
+      "cuerpo": "En Euskal Herria los regalos de Navidad no los trae Papá Noel ni —tradicionalmente— los Reyes: los trae <b>Olentzero</b>.\n\nEs un carbonero que vive en el monte y baja al pueblo la Nochebuena. Se le representa con boina, ropa de caserío y buen apetito, y en muchos sitios lo pasean en un desfile con antorchas la tarde del 24.\n\nSi buscas <i>Olentzero</i> en el diccionario de Euskaltzaindia te dirá «Gabon eguna», el día de Nochebuena — porque el nombre designaba primero el día y luego el personaje. En el habla de hoy, es el personaje.",
+      "ejemplos": [
+        {
+          "eu": "Olentzero",
+          "es": "Olentzero"
+        },
+        {
+          "eu": "Gabonak",
+          "es": "la Navidad"
+        }
+      ]
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "Con el cuerpo, un detalle de pronunciación que ya conoces: <b>belarria</b> (oreja) lleva esa <i>rr</i> fuerte que en Bizkaia se marca bien, y no hay que confundirla con <i>belarra</i>, que es la hierba.\n\nCon las fiestas: los carnavales, <b>Inauteriak</b> en batua, aquí se llaman muchas veces <b>Aratusteak</b>. Es la palabra que oirás en Bilbao y en buena parte de Bizkaia.\n\nY el 20 de enero, San Sebastián, en Bilbao no es gran cosa — pero el 15 de agosto sí: es la <b>Aste Nagusia</b>, la Semana Grande.",
+      "ejemplos": [
+        {
+          "eu": "Inauteriak",
+          "es": "los carnavales"
+        },
+        {
+          "eu": "Gabonak",
+          "es": "la Navidad"
+        }
+      ],
+      "registro": "bizkaiera"
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u10.1-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            },
+            {
+              "eu": "begiak",
+              "es": "los ojos"
+            },
+            {
+              "eu": "sudurra",
+              "es": "la nariz"
+            },
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "belarriak",
+              "es": "las orejas"
+            },
+            {
+              "eu": "eskua",
+              "es": "la mano"
+            },
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "oina",
+              "es": "el pie"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "bihotza",
+              "es": "el corazón"
+            },
+            {
+              "eu": "burua",
+              "es": "la cabeza"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "eskua",
+              "es": "la mano"
+            },
+            {
+              "eu": "besoa",
+              "es": "el brazo"
+            },
+            {
+              "eu": "oina",
+              "es": "el pie"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las partes del cuerpo",
+          "pares": [
+            {
+              "eu": "ahoa",
+              "es": "la boca"
+            },
+            {
+              "eu": "sudurra",
+              "es": "la nariz"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "begiak",
+              "es": "los ojos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10.1-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Me gustan tus ojos» se dice…",
+          "opciones": [
+            "Zure begiak gustatzen zait.",
+            "Zure begiak gustatzen zaizkit.",
+            "Zure begia gustatzen zaizkit.",
+            "Zure begiak gustatzen naiz."
+          ],
+          "correcta": 1,
+          "explicacion": "Son varios, así que toca «zaizkit»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Me gusta tu pelo» se dice…",
+          "opciones": [
+            "Zure ilea gustatzen zaizkit.",
+            "Zure ilea gustatzen zait.",
+            "Zure ileak gustatzen zait.",
+            "Zure ilea gustatzen naiz."
+          ],
+          "correcta": 1,
+          "explicacion": "Una sola cosa: «zait»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «bihotza»?",
+          "opciones": [
+            "la cabeza",
+            "el corazón",
+            "el brazo",
+            "la mano"
+          ],
+          "correcta": 1,
+          "explicacion": "Bihotza es el corazón."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «belarriak»?",
+          "opciones": [
+            "los ojos",
+            "las orejas",
+            "las manos",
+            "los pies"
+          ],
+          "correcta": 1,
+          "explicacion": "Belarriak son las orejas. Ojo con «belarra», la hierba."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «hanka»?",
+          "opciones": [
+            "el brazo",
+            "la pierna",
+            "el pie",
+            "la mano"
+          ],
+          "correcta": 1,
+          "explicacion": "Hanka es la pierna. «Oina» es el pie."
+        }
+      ]
+    },
+    {
+      "id": "u10.1-g03",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué estación es «udaberria»?",
+          "opciones": [
+            "el verano",
+            "la primavera",
+            "el otoño",
+            "el invierno"
+          ],
+          "correcta": 1,
+          "explicacion": "Uda (verano) + berri (nuevo): la primavera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué estación es «udazkena»?",
+          "opciones": [
+            "la primavera",
+            "el verano",
+            "el otoño",
+            "el invierno"
+          ],
+          "correcta": 2,
+          "explicacion": "Uda + azken (final): el otoño."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Sobre qué estación se construyen «udaberria» y «udazkena»?",
+          "opciones": [
+            "el invierno",
+            "el verano",
+            "la primavera",
+            "el otoño"
+          ],
+          "correcta": 1,
+          "explicacion": "Sobre «uda», el verano: el verano nuevo y el final del verano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «elurra»?",
+          "opciones": [
+            "la lluvia",
+            "la nieve",
+            "el viento",
+            "la nube"
+          ],
+          "correcta": 1,
+          "explicacion": "Elurra es la nieve. «Euria» es la lluvia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «haizea»?",
+          "opciones": [
+            "la nube",
+            "el viento",
+            "el frío",
+            "el calor"
+          ],
+          "correcta": 1,
+          "explicacion": "Haizea es el viento."
+        }
+      ]
+    },
+    {
+      "id": "u10.1-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «Gabonak»?",
+          "opciones": [
+            "buenas noches",
+            "la Navidad",
+            "el Año Nuevo",
+            "las vacaciones"
+          ],
+          "correcta": 1,
+          "explicacion": "Es el plural de «gabon»: las noches buenas del año."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si alguien te dice «Gabon» por la noche, te está…",
+          "opciones": [
+            "felicitando la Navidad",
+            "dando las buenas noches",
+            "invitando a una fiesta",
+            "despidiéndose para siempre"
+          ],
+          "correcta": 1,
+          "explicacion": "«Gabon» a secas es buenas noches. La Navidad es «Gabonak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Quién es Olentzero?",
+          "opciones": [
+            "un santo",
+            "el carbonero que trae los regalos",
+            "un monte",
+            "un baile"
+          ],
+          "correcta": 1,
+          "explicacion": "El carbonero que baja del monte en Nochebuena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué son «Inauteriak»?",
+          "opciones": [
+            "la Semana Santa",
+            "los carnavales",
+            "la Navidad",
+            "las vacaciones"
+          ],
+          "correcta": 1,
+          "explicacion": "Los carnavales. En Bizkaia, «Aratusteak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «jaieguna»?",
+          "opciones": [
+            "el cumpleaños",
+            "el día festivo",
+            "el fin de semana",
+            "el verano"
+          ],
+          "correcta": 1,
+          "explicacion": "Jaieguna es el día festivo."
+        }
+      ]
+    },
+    {
+      "id": "u10.1-g05",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "En primavera llueve.",
+          "eu": "Udaberrian euria egiten du.",
+          "palabras": [
+            "Udaberrian",
+            "euria",
+            "egiten",
+            "du."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "En invierno hace frío.",
+          "eu": "Neguan hotz egiten du.",
+          "palabras": [
+            "Neguan",
+            "hotz",
+            "egiten",
+            "du."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Hoy hace buen tiempo.",
+          "eu": "Gaur eguraldi ona dago.",
+          "palabras": [
+            "Gaur",
+            "eguraldi",
+            "ona",
+            "dago."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Me gustan tus ojos.",
+          "eu": "Zure begiak gustatzen zaizkit.",
+          "palabras": [
+            "Zure",
+            "begiak",
+            "gustatzen",
+            "zaizkit."
+          ]
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "la primavera",
+          "respuestas": [
+            "udaberria"
+          ],
+          "pista": "Empieza como «verano»."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,554 @@
+{
+  "id": "u7.1",
+  "numero": 7.1,
+  "titulo": "Hilabeteak",
+  "subtitulo": "Ampliación: los meses del año",
+  "objetivo": "Aprender los doce meses, decir en cuál cae algo, y de paso ver de dónde sale la palabra «cumpleaños».",
+  "color": "ocre",
+  "vocabulario": [
+    {
+      "eu": "hilabetea",
+      "es": "el mes",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "urtarrila",
+      "es": "enero",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "otsaila",
+      "es": "febrero",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "martxoa",
+      "es": "marzo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "apirila",
+      "es": "abril",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "maiatza",
+      "es": "mayo",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "ekaina",
+      "es": "junio",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "uztaila",
+      "es": "julio",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "abuztua",
+      "es": "agosto",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "iraila",
+      "es": "septiembre",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "urria",
+      "es": "octubre",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "azaroa",
+      "es": "noviembre",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "abendua",
+      "es": "diciembre",
+      "nota": null,
+      "categoria": "sustantivo"
+    },
+    {
+      "eu": "urtebetetzea",
+      "es": "el cumpleaños",
+      "nota": "De «urte» (año) + «bete» (llenar): el completarse del año.",
+      "categoria": "sustantivo"
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "Los doce meses",
+      "cuerpo": "Van siempre con su artículo <b>-a</b> al final, igual que <i>eguna</i> o <i>astea</i>. Así se dicen y así conviene aprenderlos:\n\n<b>urtarrila</b> enero · <b>otsaila</b> febrero · <b>martxoa</b> marzo\n<b>apirila</b> abril · <b>maiatza</b> mayo · <b>ekaina</b> junio\n<b>uztaila</b> julio · <b>abuztua</b> agosto · <b>iraila</b> septiembre\n<b>urria</b> octubre · <b>azaroa</b> noviembre · <b>abendua</b> diciembre\n\nA diferencia del castellano, en euskera los meses se escriben en minúscula, como los días de la semana que ya viste en esta unidad.",
+      "ejemplos": [
+        {
+          "eu": "urtarrila",
+          "es": "enero"
+        },
+        {
+          "eu": "maiatza",
+          "es": "mayo"
+        },
+        {
+          "eu": "abendua",
+          "es": "diciembre"
+        }
+      ]
+    },
+    {
+      "titulo": "«En mayo»: el mismo -n de siempre",
+      "cuerpo": "Ya lo tienes de la unidad 6, con los lugares: <b>etxean</b> (en casa), <b>tabernan</b> (en el bar). Con los meses funciona igual, solo que el artículo <i>-a</i> se convierte en <i>-e-</i> al añadir la terminación:\n\n<b>maiatza</b> → <b>maiatzean</b> — en mayo\n<b>abendua</b> → <b>abenduan</b> — en diciembre\n<b>urtarrila</b> → <b>urtarrilean</b> — en enero\n\nNo hace falta que lo memorices ahora mismo: con reconocerlo cuando lo oigas es suficiente en este punto.",
+      "ejemplos": [
+        {
+          "eu": "Nire urtebetetzea maiatzean da.",
+          "es": "Mi cumpleaños es en mayo."
+        },
+        {
+          "eu": "abenduan",
+          "es": "en diciembre"
+        }
+      ]
+    },
+    {
+      "titulo": "«Urtebetetzea»: el año que se llena",
+      "cuerpo": "Esta merece que le mires las piezas, porque una vez las ves ya no se olvida:\n\n<b>urte</b> (año) + <b>bete</b> (llenar, completar) + <b>-tze</b>\n\nLiteralmente, <b>el completarse del año</b>. No es «el día de tu nacimiento» como en castellano, sino el momento en que se te cumple otro año entero.\n\nEl verbo <i>bete</i> lo vas a volver a ver: sirve para llenar un vaso, una hoja o un plazo, con la misma idea de completar algo hasta el borde.",
+      "ejemplos": [
+        {
+          "eu": "urtebetetzea",
+          "es": "el cumpleaños"
+        },
+        {
+          "eu": "bete",
+          "es": "llenar, completar"
+        }
+      ]
+    },
+    {
+      "titulo": "Dos meses que también son otras cosas",
+      "cuerpo": "Un par de coincidencias que llaman la atención al principio:\n\n<b>urria</b> es octubre, pero <i>urri</i> por su cuenta significa «escaso». Se cree que el mes se llamó así por ser el de la escasez, cuando ya se ha recogido lo que había.\n\n<b>abendua</b> es diciembre, y comparte raíz con el <i>advenimiento</i> del castellano — el mes de la llegada.\n\nNo hace falta saber esto para usarlos, pero ayuda a que se peguen.",
+      "ejemplos": [
+        {
+          "eu": "urria",
+          "es": "octubre"
+        },
+        {
+          "eu": "abendua",
+          "es": "diciembre"
+        }
+      ]
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "Los meses son de las cosas más estables del idioma y en Bizkaia se dicen igual que en batua. Lo que sí cambia es lo de alrededor.\n\nPara preguntar por una fecha, en vez de <b>noiz?</b> (cuándo) oirás muchas veces <b>zenbatean?</b>, literalmente «¿en cuánto?».\n\nY ojo con una trampa del castellano: para felicitar un cumpleaños no se dice nada parecido a «feliz cumpleaños». Se dice <b>Zorionak!</b> a secas, o <b>Zorionak zuri!</b> — la misma palabra que ya conoces para «felicidades».",
+      "ejemplos": [
+        {
+          "eu": "Zorionak!",
+          "es": "¡Felicidades! / ¡Feliz cumpleaños!"
+        },
+        {
+          "eu": "Zorionak zuri!",
+          "es": "¡Feliz cumpleaños!"
+        }
+      ],
+      "registro": "bizkaiera"
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u7.1-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los meses",
+          "pares": [
+            {
+              "eu": "urtarrila",
+              "es": "enero"
+            },
+            {
+              "eu": "otsaila",
+              "es": "febrero"
+            },
+            {
+              "eu": "martxoa",
+              "es": "marzo"
+            },
+            {
+              "eu": "apirila",
+              "es": "abril"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los meses",
+          "pares": [
+            {
+              "eu": "maiatza",
+              "es": "mayo"
+            },
+            {
+              "eu": "ekaina",
+              "es": "junio"
+            },
+            {
+              "eu": "uztaila",
+              "es": "julio"
+            },
+            {
+              "eu": "abuztua",
+              "es": "agosto"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los meses",
+          "pares": [
+            {
+              "eu": "iraila",
+              "es": "septiembre"
+            },
+            {
+              "eu": "urria",
+              "es": "octubre"
+            },
+            {
+              "eu": "azaroa",
+              "es": "noviembre"
+            },
+            {
+              "eu": "abendua",
+              "es": "diciembre"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los meses",
+          "pares": [
+            {
+              "eu": "urtarrila",
+              "es": "enero"
+            },
+            {
+              "eu": "maiatza",
+              "es": "mayo"
+            },
+            {
+              "eu": "abuztua",
+              "es": "agosto"
+            },
+            {
+              "eu": "abendua",
+              "es": "diciembre"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los meses",
+          "pares": [
+            {
+              "eu": "otsaila",
+              "es": "febrero"
+            },
+            {
+              "eu": "ekaina",
+              "es": "junio"
+            },
+            {
+              "eu": "iraila",
+              "es": "septiembre"
+            },
+            {
+              "eu": "azaroa",
+              "es": "noviembre"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u7.1-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué mes es «maiatza»?",
+          "opciones": [
+            "marzo",
+            "mayo",
+            "julio",
+            "agosto"
+          ],
+          "correcta": 1,
+          "explicacion": "Maiatza es mayo. Ojo con «martxoa», que es marzo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué mes es «abendua»?",
+          "opciones": [
+            "septiembre",
+            "octubre",
+            "noviembre",
+            "diciembre"
+          ],
+          "correcta": 3,
+          "explicacion": "Abendua es diciembre, el último."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué mes es «urria»?",
+          "opciones": [
+            "octubre",
+            "agosto",
+            "abril",
+            "enero"
+          ],
+          "correcta": 0,
+          "explicacion": "Urria es octubre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué mes es «ekaina»?",
+          "opciones": [
+            "enero",
+            "junio",
+            "julio",
+            "septiembre"
+          ],
+          "correcta": 1,
+          "explicacion": "Ekaina es junio. «Uztaila» es julio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué mes es «otsaila»?",
+          "opciones": [
+            "febrero",
+            "marzo",
+            "octubre",
+            "noviembre"
+          ],
+          "correcta": 0,
+          "explicacion": "Otsaila es febrero."
+        }
+      ]
+    },
+    {
+      "id": "u7.1-g03",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estos es el primer mes del año?",
+          "opciones": [
+            "abendua",
+            "urtarrila",
+            "urria",
+            "uztaila"
+          ],
+          "correcta": 1,
+          "explicacion": "Urtarrila es enero."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estos NO es un mes?",
+          "opciones": [
+            "apirila",
+            "azaroa",
+            "astelehena",
+            "abuztua"
+          ],
+          "correcta": 2,
+          "explicacion": "«Astelehena» es el lunes, un día de la semana."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hilabetea»?",
+          "opciones": [
+            "la semana",
+            "el mes",
+            "el año",
+            "el día"
+          ],
+          "correcta": 1,
+          "explicacion": "Hilabetea es el mes."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se escriben los meses en euskera?",
+          "opciones": [
+            "siempre en mayúscula",
+            "en minúscula",
+            "en mayúscula solo al principio de frase",
+            "da igual"
+          ],
+          "correcta": 1,
+          "explicacion": "En minúscula, igual que los días de la semana."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué mes es «uztaila»?",
+          "opciones": [
+            "junio",
+            "julio",
+            "agosto",
+            "septiembre"
+          ],
+          "correcta": 1,
+          "explicacion": "Uztaila es julio."
+        }
+      ]
+    },
+    {
+      "id": "u7.1-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿De qué dos palabras sale «urtebetetzea»?",
+          "opciones": [
+            "urte + bete",
+            "urte + eguna",
+            "hilabete + urte",
+            "urte + jaio"
+          ],
+          "correcta": 0,
+          "explicacion": "Urte (año) + bete (llenar): el completarse del año."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «bete»?",
+          "opciones": [
+            "nacer",
+            "llenar, completar",
+            "contar",
+            "celebrar"
+          ],
+          "correcta": 1,
+          "explicacion": "Bete es llenar o completar algo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para felicitar un cumpleaños se dice…",
+          "opciones": [
+            "Urtebetetze ona!",
+            "Zorionak!",
+            "Egun on!",
+            "Ondo izan!"
+          ],
+          "correcta": 1,
+          "explicacion": "«Zorionak!», la misma palabra que «felicidades»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «urtebetetzea»?",
+          "opciones": [
+            "el año nuevo",
+            "el cumpleaños",
+            "el aniversario de boda",
+            "el mes"
+          ],
+          "correcta": 1,
+          "explicacion": "El cumpleaños."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zorionak zuri!» se usa para…",
+          "opciones": [
+            "despedirse",
+            "felicitar el cumpleaños",
+            "dar las gracias",
+            "pedir perdón"
+          ],
+          "correcta": 1,
+          "explicacion": "Es la fórmula habitual de felicitación."
+        }
+      ]
+    },
+    {
+      "id": "u7.1-g05",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mi cumpleaños es en mayo.",
+          "eu": "Nire urtebetetzea maiatzean da.",
+          "palabras": [
+            "Nire",
+            "urtebetetzea",
+            "maiatzean",
+            "da."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Diciembre es un mes frío.",
+          "eu": "Abendua hilabete hotza da.",
+          "palabras": [
+            "Abendua",
+            "hilabete",
+            "hotza",
+            "da."
+          ]
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "enero",
+          "respuestas": [
+            "urtarrila"
+          ],
+          "pista": "Empieza por «u»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "el mes",
+          "respuestas": [
+            "hilabetea"
+          ],
+          "pista": "Una palabra."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¡Felicidades!",
+          "respuestas": [
+            "zorionak"
+          ],
+          "pista": "Una palabra, la misma que ya conoces."
+        }
+      ]
+    }
+  ]
+}

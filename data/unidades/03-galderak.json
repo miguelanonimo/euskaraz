@@ -72,7 +72,7 @@
     {
       "eu": "zergatik?",
       "es": "¿por qué?",
-      "nota": null,
+      "nota": "Ojo con el castellano: «por qué» en dos palabras es la pregunta. «Porque», junto, es la respuesta — y esa en euskera es otra cosa, el sufijo «-lako».",
       "audio": "unidades/u3/zergatik.mp3",
       "categoria": "otros"
     },
@@ -323,7 +323,8 @@
           "es": "Puede venir cualquiera.",
           "audio": "unidades/u3/edonor-etor-daiteke.mp3"
         }
-      ]
+      ],
+      "registro": "bizkaiera"
     }
   ],
   "ejercicios": [
@@ -575,7 +576,7 @@
             "Bilbotik naiz",
             "Bilbokoa naiz eta Gernikatik nator",
             "Bilbokoa naiz",
-            "Bilbora naiz"
+            "Gernikakoa naiz eta Bilbotik nator"
           ],
           "correcta": 1,
           "explicacion": "«-koa» para el origen, «-tik» para el movimiento. El euskera las separa."
@@ -839,7 +840,7 @@
           "opciones": [
             "Barkatu?",
             "Eskerrik asko",
-            "Bai",
+            "Noiz?",
             "Gero arte"
           ],
           "correcta": 0,

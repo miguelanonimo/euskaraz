@@ -154,6 +154,22 @@ svg{
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
+/* La unidad, delante del tema en la barra. En gris y sin negrita para que
+   el titular siga siendo el tema, que es donde estás trabajando.
+   Van en dos líneas y no en una: «Zenbat eta familia · 4.4 Tener, y decir
+   tu edad» no cabe seguido en un móvil, y cortando se perdía justo el
+   nombre del tema. La barra mide 60px y una línea usa 22, así que caben
+   las dos y cada nombre tiene el ancho entero. */
+.topbar__title--doble{
+  display: flex; flex-direction: column; gap: 1px;
+  line-height: 1.2;
+}
+.topbar__ctx{
+  font-size: var(--t-xs); color: var(--tinta-45); font-weight: 500;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.topbar__tema{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
 .topbar__right{ flex: 0 0 auto; display: flex; align-items: center; gap: var(--u); }
 
 .dialecto{
@@ -637,6 +653,16 @@ body.silencioso .pair__play{ display: none; }
   letter-spacing: -1%;
   line-height: 1.12;
   text-wrap: balance;
+}
+
+/* Dentro de un ejemplo, que ya va en negrita, el <u> señala la pieza
+   concreta que ilustra la regla. Subrayado a secas se lee como enlace, así
+   que se marca con el acento y separado del texto. */
+.gcard__body u {
+  text-decoration: underline;
+  text-decoration-color: var(--acento);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 .gcard__body{
@@ -1360,3 +1386,98 @@ body.silencioso .pair__play{ display: none; }
   text-transform: uppercase;
   color: var(--acento);
 }
+
+/* ── Subniveles ───────────────────────────────────────────
+   Las porciones dentro de una unidad. Hereda de .unitcard —
+   misma rejilla, mismo ritmo— pero un escalón por debajo:
+   el título es --t-m en vez de --t-l, porque una unidad pesa
+   más que una de sus partes. Ver docs/propuesta-10-unidades.md */
+
+.sublist{ display: block; }
+
+.subcard{
+  display: grid;
+  grid-template-columns: 34px 1fr auto 16px;
+  align-items: start;
+  gap: calc(var(--u) * 2);
+  width: 100%;
+  padding: calc(var(--u) * 2.5) 0;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid var(--filete);
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity .12s ease;
+}
+.subcard:active{ opacity: .5; }
+.subcard:last-child{ border-bottom: 0; }
+
+.subcard__id{
+  font-size: var(--t-s);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--tinta-45);
+  font-variant-numeric: tabular-nums;
+}
+.subcard--ok .subcard__id{ color: var(--bien-txt); }
+
+.subcard__body{ min-width: 0; }
+
+.subcard__title{
+  display: block;
+  font-family: var(--f-display);
+  font-size: var(--t-m);
+  font-weight: 600;
+  letter-spacing: -1%;
+  line-height: 1.25;
+}
+
+.subcard__sub{
+  display: block;
+  margin-top: 2px;
+  font-size: var(--t-s);
+  line-height: 1.4;
+  color: var(--tinta-45);
+}
+
+/* Estado, alineado con la primera línea del título. */
+.subcard__hecho,
+.subcard__visto{
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.subcard__hecho{ color: var(--bien-txt); font-variant-numeric: tabular-nums; }
+.subcard__hecho svg{ display: none; }
+.subcard__visto{ color: var(--tinta-45); }
+
+.subcard__chev{ width: 16px; height: 16px; margin-top: 5px; color: var(--tinta-20); }
+
+/* El test cierra la unidad: se separa y pesa como una unidad. */
+.subcard--test{
+  margin-top: calc(var(--u) * 2);
+  border-top: 1px solid var(--filete);
+  border-bottom: 0;
+  padding-top: calc(var(--u) * 3);
+}
+.subcard--test .subcard__title{ font-size: var(--t-l); }
+/* En verde, no en rojo: aquí el rojo significaría fallo. */
+.subcard--test .subcard__id{ color: var(--tinta-45); }
+.subcard--test.subcard--ok .subcard__id{ color: var(--bien-txt); }
+
+/* Subnivel aún sin escribir: se lista para que se vea el plan,
+   pero apagado y sin ser un botón. */
+.subcard--pendiente{
+  opacity: .4;
+  cursor: default;
+  grid-template-columns: 34px 1fr auto;
+}
+.subcard--pendiente .subcard__title{ font-style: italic; }
+
+/* Cabecera de subnivel: la de unidad, un punto más contenida. */
+.unithero--sub{ padding-bottom: calc(var(--u) * 3); }
+.unithero--sub .unithero__title{ font-size: var(--t-xl); }

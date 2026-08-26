@@ -25,29 +25,47 @@ curso.
 - **Audio:** Google Cloud TTS (`eu-ES`), generado una sola vez por
   palabra/frase en tiempo de autoría, cacheado como mp3 en Supabase
   Storage. Nunca generar en vivo en cada reproducción.
-- **Contenido:** mismo esqueleto de 12 unidades del original
-  (`data/unidades/*.json`). Registro batua + vocabulario bizkaino/bilbaíno
-  incluido explícitamente (ver esquema de `variantes` en `docs/brief.md`
-  sección 5.1) — NO eliminar formas bizkainas, son el objetivo, no un
-  sesgo a corregir.
+- **Contenido:** reestructurado el 26/08/2026 a **10 unidades con
+  subniveles** (`data/curso-v2.json` → `data/unidades-v2/*.json`),
+  trabajo de Ric documentado en `docs/propuesta-10-unidades.md` — es
+  el curso en producción, ya no una prueba con `?v2`. El antiguo
+  esqueleto de 12 unidades (`data/curso.json` → `data/unidades/*.json`)
+  se deja en el repo sin usar por si hiciera falta volver atrás; no
+  editarlo pensando que afecta a la app. Registro batua + vocabulario
+  bizkaino/bilbaíno incluido explícitamente (ver esquema de
+  `variantes`) — NO eliminar formas bizkainas, son el objetivo, no un
+  sesgo a corregir. La variante gernikés (`data/unidades-gernikes/`) se
+  borró el 26/08/2026, decisión de Ric — recuperable en el historial
+  de git si hiciera falta.
+- **Verificación de contenido:** `verificar.py` en la raíz (recuperado
+  del proyecto original de Ric) — `python3 verificar.py` valida el
+  curso en producción, `python3 verificar.py v2` es un alias del
+  mismo. `scripts/probar-todo.sh` corre eso más la sintaxis de
+  `js/app.js` y los tests de `scripts/probar_*.js` de una vez.
 
 ## Fase actual
 
-**Fase 3 — Contenido, en curso (piloto Unidad 1 hecho).**
+**Fase 3 — Contenido, cerrada la reestructuración a 10 unidades.**
 
 - **Fase 1 (fontanería): cerrada y validada.** Progreso en Supabase
-  (`euskaraz_progreso`, proyecto Ippo compartido), login con magic link,
-  sincroniza entre dispositivos.
-- **Fase 2 (audio): cerrada.** Pipeline de Cloud TTS en
-  `scripts/generar-audio/` (ADC, sin claves que gestionar). Las 12
-  unidades tienen mp3 generado y subido a `euskaraz-audio` en Supabase
-  Storage; botón de altavoz en Vocabulario y Diccionario.
-- **Fase 3 (contenido): piloto de la Unidad 1 hecho**, ver
-  `docs/notas-contenido-u1.md` para el detalle de qué se cambió y por
-  qué. Esquema `registro`/`variantes` aplicado a las dos parejas
-  batua/bizkaiera verificadas (kaixo↔aupa, zer moduz↔zelan zagoz).
-  Pendiente: que Miguel valide el piloto antes de replicar la
-  metodología a las 11 unidades restantes.
+  (`euskaraz_progreso`, proyecto Ippo compartido), login con email +
+  contraseña, sincroniza entre dispositivos.
+- **Fase 2 (audio): cerrada para el curso de 12 unidades.** Pipeline de
+  Cloud TTS en `scripts/generar-audio/` (ADC, sin claves que
+  gestionar). **Pendiente para el curso nuevo de 10 unidades**: las
+  sub-unidades y el vocabulario añadido en la reestructuración se
+  escribieron sin audio a propósito (la app no pinta el botón si
+  falta) — lista consolidada en `docs/audios-pendientes.md`, con el
+  lote ejecutable `scripts/generar-audio/lote-ric-3.mjs` listo para
+  correr cuando se decida generarlos.
+- **Fase 3 (contenido): reestructuración a 10 unidades con subniveles
+  fusionada a `main` el 26/08/2026** (desde `ric/trabajo`, con Claude
+  Fable) — ver `docs/propuesta-10-unidades.md` y `docs/ideas-ric.md`
+  para el detalle de qué cambió y por qué. Pendiente de diseño: la app
+  se está replanteando como PWA de 4 pestañas (Hoy/Lecciones/
+  Diccionario/Ajustes) en `docs/propuesta-4-paginas.md`, en manos de
+  Claude Design — no tocar la estructura de navegación hasta que vuelva
+  esa propuesta.
 
 ## Al terminar cada fase
 

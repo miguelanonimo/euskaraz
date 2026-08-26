@@ -441,7 +441,8 @@
           "es": "¿Con quién estás? — batua: Norekin zaude?",
           "audio": "unidades/u2/nogaz-zagoz.mp3"
         }
-      ]
+      ],
+      "registro": "bizkaiera"
     }
   ],
   "ejercicios": [
@@ -1089,7 +1090,7 @@
             "A mí",
             "De mí",
             "Conmigo",
-            "Para mí"
+            "Mío"
           ],
           "correcta": 2,
           "explicacion": "«-rekin» es el sufijo de compañía: nirekin, zurekin."

@@ -1,0 +1,2428 @@
+{
+  "id": "u1",
+  "numero": 1,
+  "titulo": "Kaixo!",
+  "subtitulo": "Saludos y primeros sonidos",
+  "objetivo": "Saludar, despedirte y dar las gracias, y entender dónde se habla euskera y por qué hay más de una forma de hablarlo.",
+  "color": "rojo",
+  "subniveles": [
+    {
+      "id": "1.1",
+      "titulo": "Saludos y despedidas",
+      "resumen": "Kaixo, egun on, agur… y cómo se encadenan."
+    },
+    {
+      "id": "1.2",
+      "titulo": "Cortesía y cómo estás",
+      "resumen": "Gracias, por favor, perdón. Y responder si estás bien o mal."
+    },
+    {
+      "id": "1.3",
+      "titulo": "Dónde se habla",
+      "resumen": "Euskal Herria, los dialectos y por qué existe el batua."
+    },
+    {
+      "id": "1.4",
+      "titulo": "Pronunciación y dialectos",
+      "resumen": "Los sonidos que hay que tener claros desde el primer día."
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "El euskera no se parece al castellano, y eso ayuda",
+      "cuerpo": "El euskera es una lengua aislada: no tiene parientes conocidos. No viene del latín ni del indoeuropeo. Casi ningún truco del castellano, del francés o del inglés te va a servir aquí.\n\nLa contrapartida buena es que la pronunciación es muy regular. Se lee prácticamente como se escribe y, una vez aprendes las reglas, no hay excepciones caprichosas.\n\nEste primer módulo va despacio a propósito. En esta unidad solo saludos; en la siguiente, los pronombres; en la tercera, las preguntas. Los verbos no llegan hasta la cuarta. Merece la pena tener el suelo firme antes de construir encima.",
+      "ejemplos": [],
+      "subnivel": "1.1"
+    },
+    {
+      "titulo": "«on» = bueno, y va detrás",
+      "cuerpo": "Los tres saludos del día comparten la misma pieza:\n\n<b>egun</b> (día) + <b>on</b> → egun on\n<b>arratsalde</b> (tarde) + <b>on</b> → arratsalde on\n<b>gau</b> (noche) + <b>on</b> → gabon\n\nEl adjetivo va <b>detrás</b> del sustantivo, al revés que en «buenos días». No es una excepción de los saludos, es una regla general del idioma: <i>etxe handia</i> es «casa grande», nunca «grande casa».\n\nGuárdate esta regla, porque va a aparecer en todas las unidades.",
+      "ejemplos": [
+        {
+          "eu": "egun on",
+          "es": "buenos días (día bueno)",
+          "audio": "unidades/u1/egun-on.mp3"
+        },
+        {
+          "eu": "etxe polita",
+          "es": "casa bonita",
+          "audio": "unidades/u1/etxe-polita.mp3"
+        },
+        {
+          "eu": "kale zaharra",
+          "es": "calle vieja",
+          "audio": "unidades/u1/kale-zaharra.mp3"
+        }
+      ],
+      "subnivel": "1.1"
+    },
+    {
+      "titulo": "Pronunciación: lo que necesitas hoy",
+      "cuerpo": "Las cinco vocales suenan como en castellano: <b>a, e, i, o, u</b>. Sin diptongos raros, sin vocales mudas.\n\nLas consonantes que cambian:\n\n<b>z</b> — s silbante, como la «s» del inglés <i>see</i>. Nunca como la «z» castellana.\n<b>s</b> — una s más apagada, con la punta de la lengua algo retraída. Al principio pronúnciala como una s normal.\n<b>x</b> — «sh», como en <i>show</i>.\n<b>tx</b> — «ch», como en <i>chico</i>.\n<b>ts</b> y <b>tz</b> — «ts», como en <i>pizza</i>.\n<b>j</b> — normalmente «y», como en <i>yo</i>. En Gipuzkoa suena como la jota castellana.\n<b>h</b> — muda en casi todo el País Vasco.\n<b>ñ</b> y <b>ll</b> — como en castellano.",
+      "ejemplos": [
+        {
+          "eu": "zu",
+          "es": "tú → suena «su»",
+          "audio": "unidades/u1/zu.mp3"
+        },
+        {
+          "eu": "etxe",
+          "es": "casa → suena «eche»",
+          "audio": "unidades/u1/etxe.mp3"
+        },
+        {
+          "eu": "kaixo",
+          "es": "hola → suena «kaisho»",
+          "audio": "unidades/u1/kaixo.mp3"
+        },
+        {
+          "eu": "jaso",
+          "es": "recoger → suena «yaso»",
+          "audio": "unidades/u1/jaso.mp3"
+        }
+      ],
+      "subnivel": "1.4"
+    },
+    {
+      "titulo": "Un aviso sobre los dialectos",
+      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
+      "ejemplos": [],
+      "subnivel": "1.4"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "Bizkaia tiene su propio acento dentro del euskera: el <b>bizkaiera</b> (euskera occidental). Lo que aprendes aquí es batua, el estándar, y con eso te entiendes en todas partes. Pero en Bilbao y en el resto de Bizkaia estos rasgos te van a saltar a la oreja desde el primer día.\n\n<b>Zelan?</b> en vez de <b>nola?</b>\nEl «¿cómo?» del bizkaiera es <i>zelan</i>. Así que el «¿qué tal?» más habitual no es <i>zer moduz?</i> sino <b>Zelan zagoz?</b> Y verás <i>holan, halan, honan</i> donde el batua pone <i>horrela, hala, honela</i>.\n\n<b>La j suena «y»</b>\nEn Bizkaia <i>jan</i> (comer) suena «yan», no «jan» con jota castellana. La jota fuerte es cosa guipuzcoana. La <b>h</b> es muda en todo Bizkaia.\n\n<b>Aupa! Epa!</b>\nMuy usados como saludo informal, más que <i>kaixo</i> entre conocidos.\n\n<b>Gero arte</b>\nPara despedirse se oye más que <i>ikusi arte</i>.",
+      "ejemplos": [
+        {
+          "eu": "Zelan zagoz?",
+          "es": "¿Qué tal estás? (bizkaiera) — batua: Zer moduz zaude?",
+          "audio": "unidades/u1/zelan-zagoz.mp3"
+        },
+        {
+          "eu": "Aupa!",
+          "es": "¡Hola! (informal, muy de Bizkaia)",
+          "audio": "unidades/u1/aupa.mp3"
+        },
+        {
+          "eu": "Gero arte!",
+          "es": "¡Hasta luego!",
+          "audio": "unidades/u1/gero-arte.mp3"
+        }
+      ],
+      "subnivel": "1.4",
+      "registro": "bizkaiera"
+    },
+    {
+      "subnivel": "1.3",
+      "titulo": "Dónde se habla el euskera",
+      "cuerpo": "El euskera no es de un país: es de un territorio repartido entre dos estados, y que en euskera se llama <b>Euskal Herria</b>.\n\nSon siete zonas. Cuatro al sur, en España:\n\n<b>Bizkaia</b> (Vizcaya) — su capital es Bilbo, Bilbao\n<b>Gipuzkoa</b> (Guipúzcoa) — Donostia, San Sebastián\n<b>Araba</b> (Álava) — Gasteiz, Vitoria\n<b>Nafarroa</b> (Navarra) — Iruñea, Pamplona\n\nFíjate en que casi todo tiene dos nombres, uno en cada lengua. Los dos son correctos; aquí verás el vasco, porque es el que vas a leer en los carteles.\n\nY tres al norte, en Francia, más pequeñas y con menos hablantes:\n\n<b>Lapurdi</b> · <b>Nafarroa Beherea</b> · <b>Zuberoa</b>\n\nUn detalle de escritura: <i>Euskal Herria</i> va siempre en dos palabras y las dos con mayúscula. Así lo fijó la Academia de la Lengua Vasca.",
+      "ejemplos": [
+        {
+          "eu": "Euskal Herria",
+          "es": "el País Vasco, las siete zonas"
+        },
+        {
+          "eu": "Bizkaia",
+          "es": "Vizcaya, la de Bilbao"
+        }
+      ]
+    },
+    {
+      "subnivel": "1.3",
+      "titulo": "Cada zona tiene su forma de hablar",
+      "cuerpo": "Con el territorio así de repartido, y montañas por medio, cada zona fue haciéndose su manera de hablar. A cada una se le llama <b>euskalki</b>: dialecto.\n\nY se nombran a partir de su zona:\n\nBizkaia → <b>bizkaiera</b>\nGipuzkoa → <b>gipuzkera</b>\nLapurdi → <b>lapurtera</b>\nZuberoa → <b>zuberera</b>\n\nNo son lenguas distintas: es la misma lengua con sus acentos y sus palabras propias, como el castellano de Valladolid y el de Cádiz. Alguien de Bilbao y alguien de Zuberoa se entienden, aunque al principio les cueste.",
+      "ejemplos": [
+        {
+          "eu": "euskalkia",
+          "es": "el dialecto"
+        },
+        {
+          "eu": "bizkaiera",
+          "es": "el dialecto de Bizkaia"
+        }
+      ]
+    },
+    {
+      "subnivel": "1.3",
+      "titulo": "Y por eso existe el batua",
+      "cuerpo": "Con tantas variantes, hacer un libro de texto o dar clase era un problema: ¿en cuál de todas?\n\nEn 1968 la Academia de la Lengua Vasca —<i>Euskaltzaindia</i>— reunió las formas comunes y fijó un estándar: el <b>euskara batua</b>. Literalmente, «el euskera unido».\n\nEl batua es lo que se enseña en la escuela, lo que sale en los periódicos y en la tele, y lo que te sirve para entenderte con cualquiera venga de donde venga.\n\nNo vino a sustituir a los dialectos: convive con ellos. La gente habla su euskalki en casa y batua en un examen, y mezcla las dos cosas sin pensarlo.\n\n<b>Lo que aprendes en esta app es batua.</b>",
+      "ejemplos": [
+        {
+          "eu": "batua",
+          "es": "el euskera unificado"
+        },
+        {
+          "eu": "euskara batua",
+          "es": "euskera batua, el estándar"
+        }
+      ]
+    },
+    {
+      "subnivel": "1.3",
+      "titulo": "El botón de arriba, explicado",
+      "cuerpo": "Arriba del todo hay un botón con dos palabras: <b>Batua / Bizkaiera</b>. Ahora ya tiene sentido.\n\nLo primero, para quitarte la duda: <b>no cambia el idioma que aprendes</b>. Siempre es batua. Lo que decide es otra cosa — <b>si los ejercicios te preguntan también por las formas locales</b>, o se quedan solo en batua.\n\n<b>Batua</b> — los ejercicios solo te piden la forma estándar. Las formas locales siguen ahí, en el Vocabulario y en el Diccionario, para leerlas y reconocerlas: simplemente no te examinan de ellas. Viene así de fábrica.\n<b>Bizkaiera</b> — también te las preguntan.\n\nY cuál es «tu variante» se elige aparte, en <b>Tu cuenta</b>. De momento la que está montada y con audio es el <b>bizkaiera</b>, el de Bilbao y alrededores. El nombre que veas en el botón es el de la variante que tengas puesta ahí.\n\nUn consejo si estás empezando: <b>déjalo en Batua</b>. Ya tienes bastante con una forma de cada cosa. Enciéndelo más adelante, cuando el batua te salga solo y quieras que se te queden también las de aquí — o antes, si vives en Bizkaia y prefieres reconocer cuanto antes lo que oyes en la calle.",
+      "ejemplos": [
+        {
+          "eu": "batua",
+          "es": "el estándar, lo que enseña la app"
+        },
+        {
+          "eu": "bizkaiera",
+          "es": "el habla de Bizkaia"
+        },
+        {
+          "eu": "euskalkia",
+          "es": "un dialecto, cualquiera de ellos"
+        }
+      ]
+    },
+    {
+      "titulo": "El territorio se llama como la lengua, y no al revés",
+      "cuerpo": "Vuelve a mirar el nombre, despacio:\n\n<b>Euskal Herria</b> = <i>euskal</i> (del euskera) + <i>herri</i> (pueblo, territorio)\n\nEs decir: <b>«el territorio del euskera»</b>. El sitio toma el nombre de la lengua.\n\nFíjate en que en castellano y en francés funciona justo al contrario. El <i>castellano</i> se llama así por Castilla, y el <i>français</i> por Francia: primero está el sitio, y la lengua lleva su nombre. Aquí el orden es el inverso.\n\nY el sistema es coherente hasta el final. La palabra para quien habla euskera es <b>euskaldun</b>, que se descompone igual: <i>euskal</i> + <i>-dun</i>, un sufijo que significa «que tiene». <b>El que tiene el euskera.</b> No dice de dónde eres ni de quién desciendes: dice qué hablas. Y la llevas puesta desde hoy, porque estás aprendiéndolo.\n\nEl término está recogido por escrito desde el <b>siglo XVI</b>, en los primeros libros impresos en euskera, y nació como nombre cultural: señala hasta dónde llega la lengua.",
+      "ejemplos": [
+        {
+          "eu": "Euskal Herria.",
+          "es": "El País Vasco — «el territorio del euskera»."
+        },
+        {
+          "eu": "Euskara.",
+          "es": "La lengua vasca."
+        }
+      ],
+      "subnivel": "1.3"
+    }
+  ],
+  "vocabulario": [
+    {
+      "eu": "kaixo",
+      "es": "hola",
+      "registro": "batua",
+      "nota": "Vale a cualquier hora. Informal pero muy común.",
+      "audio": "unidades/u1/kaixo.mp3",
+      "variantes": [
+        {
+          "eu": "aupa",
+          "registro": "bizkaiera",
+          "nota": "Forma informal muy extendida en Bizkaia, sobre todo en Bilbao. En el resto de Euskal Herria se oyen variantes como epa o iepa.",
+          "audio": "unidades/u1/aupa.mp3",
+          "categoria": "otros"
+        }
+      ],
+      "categoria": "otros",
+      "subnivel": "1.1"
+    },
+    {
+      "eu": "egun on",
+      "es": "buenos días",
+      "nota": "Literalmente «día bueno». Hasta el mediodía.",
+      "audio": "unidades/u1/egun-on.mp3",
+      "categoria": "otros",
+      "subnivel": "1.1"
+    },
+    {
+      "eu": "arratsalde on",
+      "es": "buenas tardes",
+      "nota": "Desde el mediodía hasta el anochecer.",
+      "audio": "unidades/u1/arratsalde-on.mp3",
+      "categoria": "otros",
+      "subnivel": "1.1"
+    },
+    {
+      "eu": "gabon",
+      "es": "buenas noches",
+      "nota": "De «gau» (noche) + «on» (bueno).",
+      "audio": "unidades/u1/gabon.mp3",
+      "categoria": "otros",
+      "subnivel": "1.1"
+    },
+    {
+      "eu": "agur",
+      "es": "adiós",
+      "nota": "Despedida general.",
+      "audio": "unidades/u1/agur.mp3",
+      "categoria": "otros",
+      "subnivel": "1.1"
+    },
+    {
+      "eu": "ikusi arte",
+      "es": "hasta luego",
+      "nota": "Literalmente «hasta ver». Despedida neutra, sin matiz de cuándo.",
+      "audio": "unidades/u1/ikusi-arte.mp3",
+      "categoria": "otros",
+      "subnivel": "1.1"
+    },
+    {
+      "eu": "gero arte",
+      "es": "hasta luego",
+      "nota": "«gero» = después. Matiz de «hasta pronto», no una forma bizkaina de ikusi arte — las dos son batua estándar.",
+      "audio": "unidades/u1/gero-arte.mp3",
+      "categoria": "otros",
+      "subnivel": "1.1"
+    },
+    {
+      "eu": "bihar arte",
+      "es": "hasta mañana",
+      "nota": "«bihar» = mañana (el día siguiente).",
+      "audio": "unidades/u1/bihar-arte.mp3",
+      "categoria": "otros",
+      "subnivel": "1.1"
+    },
+    {
+      "eu": "zer moduz?",
+      "es": "¿qué tal?",
+      "registro": "batua",
+      "nota": "La pregunta cotidiana por excelencia.",
+      "audio": "unidades/u1/zer-moduz.mp3",
+      "variantes": [
+        {
+          "eu": "zelan zagoz?",
+          "registro": "bizkaiera",
+          "nota": "«zelan» es el «nola» (cómo) bizkaino. Muy oído en Bilbao para preguntar qué tal está alguien.",
+          "audio": "unidades/u1/zelan-zagoz.mp3",
+          "categoria": "otros"
+        }
+      ],
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "ondo",
+      "es": "bien",
+      "nota": "Respuesta estándar.",
+      "audio": "unidades/u1/ondo.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "oso ondo",
+      "es": "muy bien",
+      "nota": "«oso» = muy.",
+      "audio": "unidades/u1/oso-ondo.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "hala-hola",
+      "es": "así así, regular",
+      "nota": null,
+      "audio": "unidades/u1/hala-hola.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "gaizki",
+      "es": "mal",
+      "nota": null,
+      "audio": "unidades/u1/gaizki.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "eskerrik asko",
+      "es": "muchas gracias",
+      "nota": "También vale «mila esker» (mil gracias).",
+      "audio": "unidades/u1/eskerrik-asko.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2",
+      "esAlt": [
+        "gracias"
+      ]
+    },
+    {
+      "eu": "ez horregatik",
+      "es": "de nada",
+      "nota": null,
+      "audio": "unidades/u1/ez-horregatik.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "mesedez",
+      "es": "por favor",
+      "nota": null,
+      "audio": "unidades/u1/mesedez.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "barkatu",
+      "es": "perdón / disculpa",
+      "nota": null,
+      "audio": "unidades/u1/barkatu.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2",
+      "esAlt": [
+        "perdona",
+        "perdone",
+        "disculpe"
+      ]
+    },
+    {
+      "eu": "bai",
+      "es": "sí",
+      "nota": null,
+      "audio": "unidades/u1/bai.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "ez",
+      "es": "no",
+      "nota": null,
+      "audio": "unidades/u1/ez.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "eta zu?",
+      "es": "¿y tú?",
+      "nota": "«eta» = y.",
+      "audio": "unidades/u1/eta-zu.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "oso",
+      "es": "muy",
+      "nota": null,
+      "audio": "unidades/u1/oso.mp3",
+      "categoria": "otros",
+      "subnivel": "1.2"
+    },
+    {
+      "eu": "euskara",
+      "es": "el euskera",
+      "nota": "La lengua. Y «euskaraz» es «en euskera».",
+      "categoria": "sustantivo",
+      "subnivel": "1.3"
+    },
+    {
+      "eu": "Euskal Herria",
+      "es": "el País Vasco",
+      "nota": "«El territorio del euskera». Siempre en dos palabras y las dos con mayúscula.",
+      "categoria": "sustantivo",
+      "subnivel": "1.3"
+    },
+    {
+      "eu": "euskalkia",
+      "es": "el dialecto",
+      "nota": "Cada forma local de hablar euskera.",
+      "categoria": "sustantivo",
+      "subnivel": "1.3"
+    },
+    {
+      "eu": "batua",
+      "es": "el euskera unificado",
+      "nota": "El estándar del euskera. Es lo que enseña esta app.",
+      "categoria": "sustantivo",
+      "subnivel": "1.3",
+      "esAlt": [
+        "el estándar",
+        "el batua"
+      ]
+    },
+    {
+      "eu": "Bizkaia",
+      "es": "Vizcaya",
+      "nota": "Su capital es Bilbo (Bilbao). En castellano oficial también se escribe «Bizkaia».",
+      "categoria": "sustantivo",
+      "subnivel": "1.3"
+    },
+    {
+      "eu": "Gipuzkoa",
+      "es": "Guipúzcoa",
+      "nota": "Su capital es Donostia (San Sebastián). En castellano oficial también se escribe «Gipuzkoa».",
+      "categoria": "sustantivo",
+      "subnivel": "1.3"
+    },
+    {
+      "eu": "Araba",
+      "es": "Álava",
+      "nota": "Su capital es Gasteiz (Vitoria).",
+      "categoria": "sustantivo",
+      "subnivel": "1.3"
+    },
+    {
+      "eu": "Nafarroa",
+      "es": "Navarra",
+      "nota": "Su capital es Iruñea (Pamplona).",
+      "categoria": "sustantivo",
+      "subnivel": "1.3"
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u1-g01",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada saludo con su traducción",
+          "pares": [
+            {
+              "eu": "kaixo",
+              "es": "hola"
+            },
+            {
+              "eu": "egun on",
+              "es": "buenos días"
+            },
+            {
+              "eu": "gabon",
+              "es": "buenas noches"
+            },
+            {
+              "eu": "agur",
+              "es": "adiós"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada expresión con su traducción",
+          "pares": [
+            {
+              "eu": "arratsalde on",
+              "es": "buenas tardes"
+            },
+            {
+              "eu": "bihar arte",
+              "es": "hasta mañana"
+            },
+            {
+              "eu": "ikusi arte",
+              "es": "hasta luego"
+            },
+            {
+              "eu": "kaixo",
+              "es": "hola"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las fórmulas de cortesía",
+          "pares": [
+            {
+              "eu": "egun on",
+              "es": "buenos días"
+            },
+            {
+              "eu": "gabon",
+              "es": "buenas noches"
+            },
+            {
+              "eu": "agur",
+              "es": "adiós"
+            },
+            {
+              "eu": "gero arte",
+              "es": "hasta luego"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los saludos según la hora",
+          "pares": [
+            {
+              "eu": "egun on",
+              "es": "por la mañana"
+            },
+            {
+              "eu": "arratsalde on",
+              "es": "por la tarde"
+            },
+            {
+              "eu": "gabon",
+              "es": "por la noche"
+            },
+            {
+              "eu": "kaixo",
+              "es": "a cualquier hora"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las despedidas",
+          "pares": [
+            {
+              "eu": "agur",
+              "es": "adiós"
+            },
+            {
+              "eu": "gero arte",
+              "es": "hasta luego"
+            },
+            {
+              "eu": "bihar arte",
+              "es": "hasta mañana"
+            },
+            {
+              "eu": "aupa",
+              "es": "hola (informal)"
+            }
+          ]
+        }
+      ],
+      "subnivel": "1.1"
+    },
+    {
+      "id": "u1-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Son las 6 de la tarde y entras en una tienda. ¿Qué dices?",
+          "opciones": [
+            "Egun on",
+            "Arratsalde on",
+            "Gabon",
+            "Bihar arte"
+          ],
+          "correcta": 1,
+          "explicacion": "«Arratsalde on» cubre desde el mediodía hasta el anochecer."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Son las 9 de la mañana y saludas a un vecino. ¿Qué dices?",
+          "opciones": [
+            "Gabon",
+            "Arratsalde on",
+            "Egun on",
+            "Agur"
+          ],
+          "correcta": 2,
+          "explicacion": "«Egun on» va desde que amanece hasta el mediodía."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Son las 11 de la noche y te cruzas con alguien. ¿Qué dices?",
+          "opciones": [
+            "Gabon",
+            "Egun on",
+            "Arratsalde on",
+            "Mesedez"
+          ],
+          "correcta": 0,
+          "explicacion": "«Gabon» viene de «gau» (noche) + «on» (bueno)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No sabes qué hora es y quieres saludar sin equivocarte. ¿Qué dices?",
+          "opciones": [
+            "Egun on",
+            "Kaixo",
+            "Gabon",
+            "Agur"
+          ],
+          "correcta": 1,
+          "explicacion": "«Kaixo» sirve a cualquier hora del día."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Son las 2 del mediodía. ¿Qué saludo es el más apropiado?",
+          "opciones": [
+            "Egun on",
+            "Arratsalde on",
+            "Gabon",
+            "Gero arte"
+          ],
+          "correcta": 1,
+          "explicacion": "A partir del mediodía ya se entra en «arratsalde»."
+        }
+      ],
+      "subnivel": "1.1"
+    },
+    {
+      "id": "u1-g03",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «Zer moduz?»",
+          "opciones": [
+            "¿Cómo te llamas?",
+            "¿Qué tal?",
+            "¿De dónde eres?",
+            "¿Cuántos años tienes?"
+          ],
+          "correcta": 1,
+          "explicacion": "Es el «¿qué tal?» de cada día. Puedes responder «Ondo, eskerrik asko»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Alguien te dice «Zer moduz?». ¿Qué respondes?",
+          "opciones": [
+            "Kaixo",
+            "Ondo, eskerrik asko",
+            "Bihar arte",
+            "Mesedez"
+          ],
+          "correcta": 1,
+          "explicacion": "«Ondo, eskerrik asko» = «bien, gracias». Y puedes devolver la pregunta con «Eta zu?»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En Bizkaia oyes «Zelan zagoz?». ¿Qué te preguntan?",
+          "opciones": [
+            "De dónde eres",
+            "Qué tal estás",
+            "Cómo te llamas",
+            "Adónde vas"
+          ],
+          "correcta": 1,
+          "explicacion": "«Zelan» es el «nola» (cómo) del bizkaiera, y «zagoz» es «zaude»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo devuelves la pregunta después de contestar?",
+          "opciones": [
+            "Eta zu?",
+            "Zer moduz?",
+            "Bai",
+            "Oso"
+          ],
+          "correcta": 0,
+          "explicacion": "«Eta» es «y». Literalmente: «¿y tú?»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «oso» en «oso ondo»?",
+          "opciones": [
+            "Bastante",
+            "Muy",
+            "Poco",
+            "Todo"
+          ],
+          "correcta": 1,
+          "explicacion": "«Oso» es «muy», y va delante del adjetivo o adverbio."
+        }
+      ],
+      "subnivel": "1.2"
+    },
+    {
+      "id": "u1-g04",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las respuestas",
+          "pares": [
+            {
+              "eu": "ondo",
+              "es": "bien"
+            },
+            {
+              "eu": "oso ondo",
+              "es": "muy bien"
+            },
+            {
+              "eu": "hala-hola",
+              "es": "regular"
+            },
+            {
+              "eu": "gaizki",
+              "es": "mal"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja estas palabras",
+          "pares": [
+            {
+              "eu": "bai",
+              "es": "sí"
+            },
+            {
+              "eu": "ez",
+              "es": "no"
+            },
+            {
+              "eu": "eta",
+              "es": "y"
+            },
+            {
+              "eu": "oso",
+              "es": "muy"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las preguntas y respuestas",
+          "pares": [
+            {
+              "eu": "eta zu?",
+              "es": "¿y tú?"
+            },
+            {
+              "eu": "gaizki",
+              "es": "mal"
+            },
+            {
+              "eu": "oso ondo",
+              "es": "muy bien"
+            },
+            {
+              "eu": "zer moduz?",
+              "es": "¿qué tal?"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada saludo con su momento",
+          "pares": [
+            {
+              "eu": "aupa",
+              "es": "informal, a un conocido"
+            },
+            {
+              "eu": "egun on",
+              "es": "al llegar por la mañana"
+            },
+            {
+              "eu": "gero arte",
+              "es": "al irte"
+            },
+            {
+              "eu": "barkatu",
+              "es": "al pedir paso"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las expresiones",
+          "pares": [
+            {
+              "eu": "mesedez",
+              "es": "por favor"
+            },
+            {
+              "eu": "barkatu",
+              "es": "perdón"
+            },
+            {
+              "eu": "eskerrik asko",
+              "es": "gracias"
+            },
+            {
+              "eu": "ez horregatik",
+              "es": "de nada"
+            }
+          ]
+        }
+      ],
+      "subnivel": "1.2"
+    },
+    {
+      "id": "u1-g05",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Muy bien, muchas gracias.",
+          "eu": "Oso ondo, eskerrik asko.",
+          "palabras": [
+            "Oso",
+            "ondo,",
+            "eskerrik",
+            "asko."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Buenos días. ¿Qué tal?",
+          "eu": "Egun on. Zer moduz?",
+          "palabras": [
+            "Egun",
+            "on.",
+            "Zer",
+            "moduz?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Muchas gracias. ¡Adiós!",
+          "eu": "Eskerrik asko. Agur!",
+          "palabras": [
+            "Eskerrik",
+            "asko.",
+            "Agur!"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Bien, gracias. ¿Y tú?",
+          "eu": "Ondo, eskerrik asko. Eta zu?",
+          "palabras": [
+            "Ondo,",
+            "eskerrik",
+            "asko.",
+            "Eta",
+            "zu?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Buenas tardes. ¿Qué tal?",
+          "eu": "Arratsalde on. Zer moduz?",
+          "palabras": [
+            "Arratsalde",
+            "on.",
+            "Zer",
+            "moduz?"
+          ]
+        }
+      ],
+      "subnivel": "1.2"
+    },
+    {
+      "id": "u1-g06",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se pronuncia «kaixo»?",
+          "opciones": [
+            "ka-i-ko",
+            "kai-sho",
+            "kai-cho",
+            "kai-jo"
+          ],
+          "correcta": 1,
+          "explicacion": "La «x» en euskera suena «sh», como en el inglés show."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se pronuncia «etxe» (casa)?",
+          "opciones": [
+            "et-she",
+            "e-che",
+            "et-ke",
+            "e-tse"
+          ],
+          "correcta": 1,
+          "explicacion": "«tx» suena «ch», como en chico. La «x» sola sería «sh»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La palabra «zu» (tú) se pronuncia…",
+          "opciones": [
+            "«zu» con z castellana",
+            "«su» con s silbante",
+            "«chu»",
+            "«yu»"
+          ],
+          "correcta": 1,
+          "explicacion": "La «z» del euskera nunca es la z castellana: es una s silbante."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo suena la «h» en casi todo el País Vasco?",
+          "opciones": [
+            "Como una jota",
+            "Como una g suave",
+            "Es muda",
+            "Como una s"
+          ],
+          "correcta": 2,
+          "explicacion": "Se escribe pero no se pronuncia, igual que en castellano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo suena «tz», por ejemplo en «zortzi» (ocho)?",
+          "opciones": [
+            "Como «ch»",
+            "Como «ts» de pizza",
+            "Como «z» castellana",
+            "Como «sh»"
+          ],
+          "correcta": 1,
+          "explicacion": "«ts» y «tz» suenan las dos como la doble z de pizza."
+        }
+      ],
+      "subnivel": "1.4"
+    },
+    {
+      "id": "u1-g07",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "adiós",
+          "respuestas": [
+            "agur"
+          ],
+          "pista": "Literalmente: «gracias muchas»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "buenas tardes",
+          "respuestas": [
+            "arratsalde on"
+          ],
+          "pista": "«tarde» + «bueno», en ese orden."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "hasta mañana",
+          "respuestas": [
+            "bihar arte"
+          ],
+          "pista": "«arte» significa «hasta» y va al final."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "buenos días",
+          "respuestas": [
+            "egun on"
+          ],
+          "pista": "«día» + «bueno»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "hasta luego",
+          "respuestas": [
+            "ikusi arte",
+            "gero arte"
+          ],
+          "pista": "Dos formas válidas: «hasta ver» o «hasta después»."
+        }
+      ],
+      "subnivel": "1.1"
+    },
+    {
+      "id": "u1-g08",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "por favor",
+          "respuestas": [
+            "mesedez"
+          ],
+          "pista": "Una sola palabra, empieza por m-."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "perdón",
+          "respuestas": [
+            "barkatu"
+          ],
+          "pista": "Una sola palabra, empieza por b-."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "adiós",
+          "respuestas": [
+            "agur"
+          ],
+          "pista": "Cuatro letras. Se usa también en el castellano del norte."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "mal",
+          "respuestas": [
+            "gaizki"
+          ],
+          "pista": "Seis letras, empieza por g-."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "regular, así así",
+          "respuestas": [
+            "hala-hola",
+            "hala hola"
+          ],
+          "pista": "Dos palabras casi iguales, unidas por un guion."
+        }
+      ],
+      "subnivel": "1.2"
+    },
+    {
+      "id": "u1-g09",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Te despides de un amigo al que verás mañana. ¿Qué dices?",
+          "opciones": [
+            "Ikusi arte",
+            "Bihar arte",
+            "Egun on",
+            "Ez horregatik"
+          ],
+          "correcta": 1,
+          "explicacion": "«Bihar» es mañana y «arte» es hasta."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa literalmente «ikusi arte»?",
+          "opciones": [
+            "Hasta pronto",
+            "Hasta ver",
+            "Hasta mañana",
+            "Buen viaje"
+          ],
+          "correcta": 1,
+          "explicacion": "«ikusi» es ver y «arte» es hasta. El equivalente al «hasta luego»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En Bilbao, ¿qué despedida oirás con más frecuencia?",
+          "opciones": [
+            "Gero arte",
+            "Bihar arte",
+            "Egun on",
+            "Barkatu"
+          ],
+          "correcta": 0,
+          "explicacion": "«Gero arte» («hasta después») es la despedida más habitual en Bizkaia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa la palabra «arte» en estas despedidas?",
+          "opciones": [
+            "Adiós",
+            "Hasta",
+            "Luego",
+            "Pronto"
+          ],
+          "correcta": 1,
+          "explicacion": "Va detrás: «bihar arte», «ikusi arte», «gero arte»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Entras en una tienda a las diez de la mañana. ¿Cómo saludas?",
+          "opciones": [
+            "Egun on",
+            "Arratsalde on",
+            "Gabon",
+            "Gero arte"
+          ],
+          "correcta": 0,
+          "explicacion": "«Egun on» vale hasta el mediodía. Después ya es «arratsalde on»."
+        }
+      ],
+      "subnivel": "1.1"
+    },
+    {
+      "id": "u1-g10",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¡Hola! ¿Qué tal?",
+          "eu": "Kaixo! Zer moduz?",
+          "palabras": [
+            "Kaixo!",
+            "Zer",
+            "moduz?"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Regular, gracias.",
+          "eu": "Hala-hola, eskerrik asko.",
+          "palabras": [
+            "Hala-hola,",
+            "eskerrik",
+            "asko."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Adiós, hasta luego.",
+          "eu": "Agur, gero arte.",
+          "palabras": [
+            "Agur,",
+            "gero",
+            "arte."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Buenas noches, hasta mañana.",
+          "eu": "Gabon, bihar arte.",
+          "palabras": [
+            "Gabon,",
+            "bihar",
+            "arte."
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Buenas noches, hasta la vista.",
+          "eu": "Gabon, ikusi arte.",
+          "palabras": [
+            "Gabon,",
+            "ikusi",
+            "arte."
+          ]
+        }
+      ],
+      "subnivel": "1.1"
+    },
+    {
+      "id": "u1-g11",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "de nada",
+          "respuestas": [
+            "ez horregatik"
+          ],
+          "pista": "Dos palabras. Empieza con «ez»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "muy bien",
+          "respuestas": [
+            "oso ondo"
+          ],
+          "pista": "«muy» va delante de «bien»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "buenas noches",
+          "respuestas": [
+            "gabon"
+          ],
+          "pista": "Una sola palabra: «gau» + «on», contraído."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "bien",
+          "respuestas": [
+            "ondo"
+          ],
+          "pista": "Cuatro letras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿y tú?",
+          "respuestas": [
+            "eta zu",
+            "eta zu?"
+          ],
+          "pista": "Dos palabras. «eta» es «y»."
+        }
+      ],
+      "subnivel": "test"
+    },
+    {
+      "id": "u1-g12",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En euskera, «casa bonita» se dice…",
+          "opciones": [
+            "polita etxe",
+            "etxe polita",
+            "polit etxea",
+            "etxea polit"
+          ],
+          "correcta": 1,
+          "explicacion": "El adjetivo va siempre detrás del sustantivo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Egun on» significa literalmente…",
+          "opciones": [
+            "Buen día",
+            "Día bueno",
+            "Buenos días a ti",
+            "El día es bueno"
+          ],
+          "correcta": 1,
+          "explicacion": "«egun» (día) + «on» (bueno). El adjetivo detrás, como siempre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si «gau» es noche y «on» es bueno, ¿qué esperarías que significase «gabon»?",
+          "opciones": [
+            "Buena noche",
+            "Media noche",
+            "Toda la noche",
+            "Esta noche"
+          ],
+          "correcta": 0,
+          "explicacion": "«gau» + «on» → «gabon». La -u se convierte en -b- al juntarse."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde coloca el euskera el adjetivo?",
+          "opciones": [
+            "Delante del sustantivo",
+            "Detrás del sustantivo",
+            "Al final de la frase",
+            "Depende del adjetivo"
+          ],
+          "correcta": 1,
+          "explicacion": "Siempre detrás. Es una regla sin excepciones prácticas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Kale zaharra» significa…",
+          "opciones": [
+            "Vieja calle",
+            "Calle vieja",
+            "La calle es vieja",
+            "Calle nueva"
+          ],
+          "correcta": 1,
+          "explicacion": "Sustantivo primero, adjetivo después. Como en «Parte Zaharra»."
+        }
+      ],
+      "subnivel": "test"
+    },
+    {
+      "id": "u1-g13",
+      "subnivel": "1.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «Euskal Herria»?",
+          "opciones": [
+            "Una ciudad",
+            "El territorio donde se habla euskera",
+            "Un dialecto",
+            "La academia de la lengua"
+          ],
+          "correcta": 1,
+          "explicacion": "Siete zonas repartidas entre España y Francia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuántas zonas forman Euskal Herria?",
+          "opciones": [
+            "Tres",
+            "Cuatro",
+            "Siete",
+            "Diez"
+          ],
+          "correcta": 2,
+          "explicacion": "Cuatro al sur y tres al norte."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En qué zona está Bilbao?",
+          "opciones": [
+            "Bizkaia",
+            "Gipuzkoa",
+            "Araba",
+            "Nafarroa"
+          ],
+          "correcta": 0,
+          "explicacion": "Bilbo es la capital de Bizkaia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «euskalki»?",
+          "opciones": [
+            "Lengua",
+            "Dialecto",
+            "Pueblo",
+            "Escuela"
+          ],
+          "correcta": 1,
+          "explicacion": "Cada forma local de hablar euskera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es el «batua»?",
+          "opciones": [
+            "Un dialecto más",
+            "El euskera unificado, el estándar",
+            "El euskera antiguo",
+            "El euskera de Francia"
+          ],
+          "correcta": 1,
+          "explicacion": "Fijado en 1968 para que todos se entendieran por escrito."
+        }
+      ]
+    },
+    {
+      "id": "u1-g14",
+      "subnivel": "1.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada zona con su capital",
+          "pares": [
+            {
+              "eu": "Bizkaia",
+              "es": "Bilbao"
+            },
+            {
+              "eu": "Gipuzkoa",
+              "es": "San Sebastián"
+            },
+            {
+              "eu": "Araba",
+              "es": "Vitoria"
+            },
+            {
+              "eu": "Nafarroa",
+              "es": "Pamplona"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada zona con su dialecto",
+          "pares": [
+            {
+              "eu": "Bizkaia",
+              "es": "bizkaiera"
+            },
+            {
+              "eu": "Gipuzkoa",
+              "es": "gipuzkera"
+            },
+            {
+              "eu": "Lapurdi",
+              "es": "lapurtera"
+            },
+            {
+              "eu": "Zuberoa",
+              "es": "zuberera"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las palabras de la lengua",
+          "pares": [
+            {
+              "eu": "euskara",
+              "es": "el euskera"
+            },
+            {
+              "eu": "euskalkia",
+              "es": "el dialecto"
+            },
+            {
+              "eu": "batua",
+              "es": "el estándar"
+            },
+            {
+              "eu": "Euskal Herria",
+              "es": "el País Vasco"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El botón «Batua / Bizkaiera» de la barra de arriba…",
+          "opciones": [
+            "Decide si los ejercicios te preguntan también en bizkaiera",
+            "Cambia el idioma de la app",
+            "Cambia el nivel",
+            "Activa el audio"
+          ],
+          "correcta": 0,
+          "explicacion": "El idioma que aprendes es siempre el batua. Lo que decide es si además te examinan de las formas locales."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué relación hay entre el batua y los dialectos?",
+          "opciones": [
+            "El batua los sustituyó",
+            "Conviven: batua para escribir, el dialecto en casa",
+            "Son lenguas distintas",
+            "Los dialectos ya no se usan"
+          ],
+          "correcta": 1,
+          "explicacion": "La gente mezcla las dos cosas sin pensarlo."
+        }
+      ]
+    },
+    {
+      "id": "u1-g15",
+      "subnivel": "1.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cortesía y cómo estás",
+          "pares": [
+            {
+              "eu": "bai",
+              "es": "sí"
+            },
+            {
+              "eu": "eta zu?",
+              "es": "¿y tú?"
+            },
+            {
+              "eu": "zer moduz?",
+              "es": "¿qué tal?"
+            },
+            {
+              "eu": "oso",
+              "es": "muy"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cortesía y cómo estás",
+          "pares": [
+            {
+              "eu": "ondo",
+              "es": "bien"
+            },
+            {
+              "eu": "hala-hola",
+              "es": "así así, regular"
+            },
+            {
+              "eu": "ez horregatik",
+              "es": "de nada"
+            },
+            {
+              "eu": "barkatu",
+              "es": "perdón / disculpa"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «bai»?",
+          "opciones": [
+            "sí",
+            "buenos días",
+            "mal",
+            "Álava"
+          ],
+          "correcta": 0,
+          "explicacion": "bai = sí."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«así así, regular» se dice…",
+          "opciones": [
+            "hala-hola",
+            "ez",
+            "zer moduz?",
+            "bihar arte"
+          ],
+          "correcta": 0,
+          "explicacion": "así así, regular = hala-hola."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «oso»?",
+          "opciones": [
+            "muy",
+            "perdón / disculpa",
+            "hasta luego",
+            "Navarra"
+          ],
+          "correcta": 0,
+          "explicacion": "oso = muy."
+        }
+      ]
+    },
+    {
+      "id": "u1-g16",
+      "subnivel": "1.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dónde se habla",
+          "pares": [
+            {
+              "eu": "Gipuzkoa",
+              "es": "Guipúzcoa"
+            },
+            {
+              "eu": "euskalkia",
+              "es": "el dialecto"
+            },
+            {
+              "eu": "batua",
+              "es": "el batua"
+            },
+            {
+              "eu": "Euskal Herria",
+              "es": "el País Vasco"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dónde se habla",
+          "pares": [
+            {
+              "eu": "euskalkia",
+              "es": "el dialecto"
+            },
+            {
+              "eu": "batua",
+              "es": "el batua"
+            },
+            {
+              "eu": "Nafarroa",
+              "es": "Navarra"
+            },
+            {
+              "eu": "Euskal Herria",
+              "es": "el País Vasco"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es Euskal Herria?",
+          "opciones": [
+            "Una ciudad",
+            "El territorio donde se habla euskera",
+            "Un dialecto",
+            "La academia de la lengua"
+          ],
+          "correcta": 1,
+          "explicacion": "Siete zonas repartidas entre España y Francia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es el batua?",
+          "opciones": [
+            "Un dialecto más",
+            "El euskera unificado, el estándar",
+            "El euskera antiguo",
+            "El euskera de Francia"
+          ],
+          "correcta": 1,
+          "explicacion": "Fijado en 1968 para que todos se entendieran por escrito."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «Araba»?",
+          "opciones": [
+            "Álava",
+            "bien",
+            "muy",
+            "buenas noches"
+          ],
+          "correcta": 0,
+          "explicacion": "Su capital es Gasteiz (Vitoria)."
+        }
+      ]
+    },
+    {
+      "id": "u1-g17",
+      "subnivel": "1.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dónde se habla",
+          "pares": [
+            {
+              "eu": "Bizkaia",
+              "es": "Vizcaya"
+            },
+            {
+              "eu": "Araba",
+              "es": "Álava"
+            },
+            {
+              "eu": "Gipuzkoa",
+              "es": "Guipúzcoa"
+            },
+            {
+              "eu": "euskalkia",
+              "es": "el dialecto"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dónde se habla",
+          "pares": [
+            {
+              "eu": "Nafarroa",
+              "es": "Navarra"
+            },
+            {
+              "eu": "Gipuzkoa",
+              "es": "Guipúzcoa"
+            },
+            {
+              "eu": "Araba",
+              "es": "Álava"
+            },
+            {
+              "eu": "euskalkia",
+              "es": "el dialecto"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «euskara»?",
+          "opciones": [
+            "el euskera",
+            "buenos días",
+            "¿qué tal?",
+            "buenas tardes"
+          ],
+          "correcta": 0,
+          "explicacion": "La lengua. Y «euskaraz» es «en euskera»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Para qué se creó el batua?",
+          "opciones": [
+            "Para sustituir a los dialectos",
+            "Para poder enseñar y escribir en una forma común",
+            "Para hablar en casa",
+            "Para los turistas"
+          ],
+          "correcta": 1,
+          "explicacion": "Convive con los dialectos, no los sustituye."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «Araba»?",
+          "opciones": [
+            "Álava",
+            "perdón / disculpa",
+            "muchas gracias",
+            "bien"
+          ],
+          "correcta": 0,
+          "explicacion": "Su capital es Gasteiz (Vitoria)."
+        }
+      ]
+    },
+    {
+      "id": "u1-g18",
+      "subnivel": "1.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dónde se habla",
+          "pares": [
+            {
+              "eu": "Bizkaia",
+              "es": "Vizcaya"
+            },
+            {
+              "eu": "batua",
+              "es": "el batua"
+            },
+            {
+              "eu": "Gipuzkoa",
+              "es": "Guipúzcoa"
+            },
+            {
+              "eu": "Araba",
+              "es": "Álava"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja dónde se habla",
+          "pares": [
+            {
+              "eu": "euskalkia",
+              "es": "el dialecto"
+            },
+            {
+              "eu": "euskara",
+              "es": "el euskera"
+            },
+            {
+              "eu": "Nafarroa",
+              "es": "Navarra"
+            },
+            {
+              "eu": "Euskal Herria",
+              "es": "el País Vasco"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué enseña esta app?",
+          "opciones": [
+            "bizkaiera puro",
+            "batua",
+            "gipuzkera",
+            "una mezcla al azar"
+          ],
+          "correcta": 1,
+          "explicacion": "Batua, con notas del habla de Bilbao."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál es la capital de Bizkaia?",
+          "opciones": [
+            "Donostia",
+            "Bilbo",
+            "Gasteiz",
+            "Iruñea"
+          ],
+          "correcta": 1,
+          "explicacion": "Bilbo es Bilbao."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuántas zonas forman Euskal Herria?",
+          "opciones": [
+            "Tres",
+            "Cinco",
+            "Siete",
+            "Diez"
+          ],
+          "correcta": 2,
+          "explicacion": "Cuatro al sur y tres al norte."
+        }
+      ]
+    },
+    {
+      "id": "u1-g19",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "gaizki",
+              "es": "mal"
+            },
+            {
+              "eu": "ez",
+              "es": "no"
+            },
+            {
+              "eu": "bihar arte",
+              "es": "hasta mañana"
+            },
+            {
+              "eu": "Araba",
+              "es": "Álava"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "egun on",
+              "es": "buenos días"
+            },
+            {
+              "eu": "hala-hola",
+              "es": "así así, regular"
+            },
+            {
+              "eu": "oso ondo",
+              "es": "muy bien"
+            },
+            {
+              "eu": "zer moduz?",
+              "es": "¿qué tal?"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «Nafarroa»?",
+          "opciones": [
+            "Navarra",
+            "¿qué tal?",
+            "perdón / disculpa",
+            "muchas gracias"
+          ],
+          "correcta": 0,
+          "explicacion": "Su capital es Iruñea (Pamplona)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«buenas tardes» se dice…",
+          "opciones": [
+            "arratsalde on",
+            "hala-hola",
+            "euskalkia",
+            "euskara"
+          ],
+          "correcta": 0,
+          "explicacion": "Desde el mediodía hasta el anochecer."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «euskalkia»?",
+          "opciones": [
+            "el dialecto",
+            "Navarra",
+            "Bizkaia",
+            "Gipuzkoa"
+          ],
+          "correcta": 0,
+          "explicacion": "Cada forma local de hablar euskera."
+        }
+      ]
+    },
+    {
+      "id": "u1-g20",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "arratsalde on",
+              "es": "buenas tardes"
+            },
+            {
+              "eu": "Nafarroa",
+              "es": "Navarra"
+            },
+            {
+              "eu": "Araba",
+              "es": "Álava"
+            },
+            {
+              "eu": "oso ondo",
+              "es": "muy bien"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "eta zu?",
+              "es": "¿y tú?"
+            },
+            {
+              "eu": "agur",
+              "es": "adiós"
+            },
+            {
+              "eu": "egun on",
+              "es": "buenos días"
+            },
+            {
+              "eu": "ondo",
+              "es": "bien"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En qué año se fijó el batua?",
+          "opciones": [
+            "1968",
+            "1868",
+            "2001",
+            "1936"
+          ],
+          "correcta": 0,
+          "explicacion": "Euskaltzaindia reunió las formas comunes y fijó el estándar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«buenas tardes» se dice…",
+          "opciones": [
+            "arratsalde on",
+            "zer moduz?",
+            "kaixo",
+            "euskara"
+          ],
+          "correcta": 0,
+          "explicacion": "Desde el mediodía hasta el anochecer."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «eta zu?»?",
+          "opciones": [
+            "¿y tú?",
+            "el euskera",
+            "el País Vasco",
+            "mal"
+          ],
+          "correcta": 0,
+          "explicacion": "«eta» = y."
+        }
+      ]
+    },
+    {
+      "id": "u1-g21",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "bai",
+              "es": "sí"
+            },
+            {
+              "eu": "zer moduz?",
+              "es": "¿qué tal?"
+            },
+            {
+              "eu": "ez",
+              "es": "no"
+            },
+            {
+              "eu": "Araba",
+              "es": "Álava"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "eta zu?",
+              "es": "¿y tú?"
+            },
+            {
+              "eu": "batua",
+              "es": "el batua"
+            },
+            {
+              "eu": "oso",
+              "es": "muy"
+            },
+            {
+              "eu": "ez",
+              "es": "no"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El dialecto de Bizkaia se llama…",
+          "opciones": [
+            "bizkaiera",
+            "gipuzkera",
+            "lapurtera",
+            "zuberera"
+          ],
+          "correcta": 0,
+          "explicacion": "Cada zona da nombre a su euskalki."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«bien» se dice…",
+          "opciones": [
+            "ondo",
+            "Euskal Herria",
+            "hala-hola",
+            "bai"
+          ],
+          "correcta": 0,
+          "explicacion": "Respuesta estándar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «mesedez»?",
+          "opciones": [
+            "por favor",
+            "buenas noches",
+            "de nada",
+            "¿qué tal?"
+          ],
+          "correcta": 0,
+          "explicacion": "mesedez = por favor."
+        }
+      ]
+    },
+    {
+      "id": "u1-g22",
+      "subnivel": "1.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La «h» en euskera…",
+          "opciones": [
+            "suena como una jota",
+            "es muda",
+            "suena como una g",
+            "no existe"
+          ],
+          "correcta": 1,
+          "explicacion": "No se pronuncia. «Mahaia» suena «maaia»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La «z» del euskera se pronuncia…",
+          "opciones": [
+            "como la z española",
+            "como una s sibilante",
+            "como una ch",
+            "como una j"
+          ],
+          "correcta": 1,
+          "explicacion": "Una s silbante, apoyando la lengua arriba."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En Bizkaia, «jan» (comer) suena…",
+          "opciones": [
+            "«jan» con jota fuerte",
+            "«yan»",
+            "«chan»",
+            "«san»"
+          ],
+          "correcta": 1,
+          "explicacion": "La jota fuerte es cosa guipuzcoana."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es el «batua»?",
+          "opciones": [
+            "un dialecto de Bilbao",
+            "el euskera unificado",
+            "el euskera antiguo",
+            "una región"
+          ],
+          "correcta": 1,
+          "explicacion": "El estándar. Es lo que enseña esta app."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zelan?» es una palabra muy bizkaina. ¿Qué está preguntando?",
+          "opciones": [
+            "¿cómo?",
+            "¿dónde?",
+            "¿quién?",
+            "¿cuándo?"
+          ],
+          "correcta": 0,
+          "explicacion": "En batua se dice «nola?», que verás en la unidad 3."
+        }
+      ]
+    },
+    {
+      "id": "u1-g23",
+      "subnivel": "1.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La «tx» suena como…",
+          "opciones": [
+            "la ch española",
+            "la j española",
+            "la s",
+            "la z"
+          ],
+          "correcta": 0,
+          "explicacion": "Txakurra se lee «chakurra»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas NO es una forma vizcaína?",
+          "opciones": [
+            "zelan",
+            "holan",
+            "nola",
+            "zagoz"
+          ],
+          "correcta": 2,
+          "explicacion": "«Nola» es batua; su versión de aquí es «zelan»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Para qué sirve saber el dialecto de tu zona?",
+          "opciones": [
+            "Para los exámenes",
+            "Para entender lo que oyes por la calle",
+            "Para escribir cartas",
+            "Para nada"
+          ],
+          "correcta": 1,
+          "explicacion": "Para escribir, batua; para la calle, las notas locales."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Aupa» es…",
+          "opciones": [
+            "adiós",
+            "un saludo informal muy usado en Bizkaia",
+            "por favor",
+            "gracias"
+          ],
+          "correcta": 1,
+          "explicacion": "Entre conocidos se oye más que «kaixo»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La doble «rr» del euskera se pronuncia…",
+          "opciones": [
+            "floja, casi como una l",
+            "fuerte y vibrante",
+            "muda",
+            "como una d"
+          ],
+          "correcta": 1,
+          "explicacion": "Como la rr de «perro»."
+        }
+      ]
+    },
+    {
+      "id": "u1-g24",
+      "subnivel": "1.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "cada sonido con su lectura",
+          "pares": [
+            {
+              "eu": "h",
+              "es": "no suena"
+            },
+            {
+              "eu": "tx",
+              "es": "como la ch española"
+            },
+            {
+              "eu": "z",
+              "es": "como una s silbante"
+            },
+            {
+              "eu": "rr",
+              "es": "fuerte y vibrante"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "las formas de Bizkaia con las de batua",
+          "pares": [
+            {
+              "eu": "zelan",
+              "es": "nola (¿cómo?)"
+            },
+            {
+              "eu": "holan",
+              "es": "horrela (así)"
+            },
+            {
+              "eu": "aupa",
+              "es": "kaixo (hola)"
+            },
+            {
+              "eu": "gero arte",
+              "es": "ikusi arte (hasta luego)"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué se usa para escribir y para los exámenes?",
+          "opciones": [
+            "el dialecto de tu zona",
+            "el batua",
+            "cualquiera",
+            "el castellano"
+          ],
+          "correcta": 1,
+          "explicacion": "El batua es el estándar común."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Mahaia» (la mesa) se pronuncia…",
+          "opciones": [
+            "ma-ja-ia",
+            "maaia",
+            "majaia",
+            "ma-ya-ia"
+          ],
+          "correcta": 1,
+          "explicacion": "La h es muda: las dos aes seguidas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En qué se parece el euskera al castellano?",
+          "opciones": [
+            "En el vocabulario",
+            "En casi nada: no son lenguas emparentadas",
+            "En la gramática",
+            "En los verbos"
+          ],
+          "correcta": 1,
+          "explicacion": "Es una lengua aislada, sin parientes conocidos."
+        }
+      ]
+    },
+    {
+      "id": "u1-g25",
+      "subnivel": "1.4",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa que el euskera sea una «lengua aislada»?",
+          "opciones": [
+            "Que solo se habla en un sitio",
+            "Que no tiene parientes conocidos",
+            "Que es muy difícil",
+            "Que es muy antigua"
+          ],
+          "correcta": 1,
+          "explicacion": "No se le conoce familia lingüística."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La «s» y la «z» del euskera…",
+          "opciones": [
+            "suenan igual",
+            "son dos sonidos distintos",
+            "no existen",
+            "suenan como la ch"
+          ],
+          "correcta": 1,
+          "explicacion": "Cuesta al principio, pero se distinguen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si vas a hablar con alguien de Gipuzkoa, ¿te entenderá tu batua?",
+          "opciones": [
+            "No",
+            "Sí, el batua vale en todas partes",
+            "Solo si hablas despacio",
+            "Solo por escrito"
+          ],
+          "correcta": 1,
+          "explicacion": "Para eso se creó."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "cada cosa con lo que es",
+          "pares": [
+            {
+              "eu": "batua",
+              "es": "el euskera unificado"
+            },
+            {
+              "eu": "bizkaiera",
+              "es": "el dialecto de Bizkaia"
+            },
+            {
+              "eu": "euskalkia",
+              "es": "un dialecto"
+            },
+            {
+              "eu": "euskara",
+              "es": "la lengua"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Epa!» es…",
+          "opciones": [
+            "una despedida",
+            "un saludo informal",
+            "una disculpa",
+            "un agradecimiento"
+          ],
+          "correcta": 1,
+          "explicacion": "Como «aupa», entre conocidos."
+        }
+      ]
+    }
+  ]
+}

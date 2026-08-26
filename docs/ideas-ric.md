@@ -10,6 +10,135 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ## Pendientes de comentar con Miguel
 
+### 📄 Audios: la lista para Miguel está en `docs/audios-pendientes.md`
+
+Todo lo de audio —los 22 que suenan mal y los 194 que faltan— está
+consolidado ahí, con el lote ejecutable `scripts/generar-audio/lote-ric-3.mjs`
+listo para correr. Ric lo acordó así el 26/08: *«los audios, con que esté la
+lista de lo que dije, Miguel se encarga de hacer las generaciones»*.
+
+Lo que sigue debajo es el histórico de cómo se fue detectando cada uno, que
+es donde está el porqué de cada corrección. Para trabajar, usar el documento.
+
+### Audios nuevos que hay que generar (no son fallos, son frases que cambiaron)
+
+- **2026-08-23 · Unidad 10, dos frases de ejemplo corregidas de `diot` a
+  `dio`** (ver más abajo el porqué). Como el nombre del mp3 es el slug de
+  la frase, cambian de archivo y hacen falta dos audios nuevos:
+  - `unidades/u10/aneri-esan-dio.mp3` — «Aneri esan dio.»
+  - `unidades/u10/lagunari-lagundu-dio.mp3` — «Lagunari lagundu dio.»
+
+  Los antiguos (`aneri-esan-diot.mp3`, `lagunari-lagundu-diot.mp3`) quedan
+  sin usar y se pueden borrar del bucket. Hasta que se generen, esos dos
+  ejemplos se quedan sin audio.
+
+### Correcciones en curso (pendientes de commitear en tanda)
+
+Ric está probando la app continuamente —la publicada y las locales— y va
+mandando lo que encuentra. Esto se va acumulando aquí y se commitea de
+golpe cuando toque, para no llenar el historial de commits de una línea.
+
+**Audios · tercera ronda (25/08/2026 en adelante)**
+
+| Palabra | Qué se oye | Qué debería oírse | Historial |
+|---|---|---|---|
+| `berdin` (u12, "igual") · `unidades/u12/berdin.mp3` | la I final queda cerrada y átona | I abierta y acentuada: «berd**í**n» | Salió al revisar la lista de vecinas de `benetan`. Segundo fallo de acento tras `agian`: en los dos, la sílaba final se come el peso. |
+| `daude` (u6, "están") · `unidades/u6/daude.mp3` | el acento cae mal | acentuada en la **e**: «daud**é**» | Tercer fallo de acento, tras `agian` y `berdin`. Y es de los auxiliares que arrastra `da`, así que probablemente se arreglen en la misma tanda. |
+| `du` (u5, "tiene") · `unidades/u5/du.mp3` | "dui": se le añade una I que no existe | «du» limpio, dos letras | Confirma lo avisado en `da`: **los auxiliares están tocados**. Van ya `da`, `du` y `daude`. |
+| `eguerdia` (u7, "el mediodía") · `unidades/u7/eguerdia.mp3` | el acento cae mal | acentuada en la **e**: «egü**é**rdia» | Cuarto fallo de acento |
+| `euria` (u10, "la lluvia") · `unidades/u10/euria.mp3` | el acento cae mal | acentuada en la **i**: «eur**í**a» | Quinto fallo de acento. Ojo: `euria` y `eguerdia` empiezan igual (eu-/egu-) pero el acento va en sílabas distintas. |
+| `ez horregatik` (u1, "de nada") · `unidades/u1/ez-horregatik.mp3` | "orregatit": la K final se pierde | K final clara: «horregati**k**» | **Segunda ronda para esta palabra.** El 20/08 fallaba la RR; Miguel la regeneró y el 21/08 ya sonaba bien la RR pero salía "Ez horregadit". Ahora sigue con la K mal: **tercer intento**. |
+| `gara` (u4, "somos") · `unidades/u4/gara.mp3` | "dara": la G inicial suena como D | G clara: «gara» | Otro auxiliar tocado, y encaja con la G inestable ya vista: `gure`/`guri` sonaban "bule"/"buri" (G→B) y `haragia` "arayia" (G→Y). Ahora G→D. |
+| `garai hartan` (u11, "en aquella época") · `unidades/u11/garai-hartan.mp3` | el acento de `hartan` cae mal | acentuada en la última a: «hart**á**n» | Sexto fallo de acento |
+| `geu` (u2, "nosotros mismos") · `unidades/u2/geu.mp3` | "guiu": la E se cierra | E abierta: «g**e**u» | Conviene escuchar sus hermanas `neu` y `zeu` (u2), que tienen la misma forma. |
+| `da` (u4, "es") · `unidades/u4/da.mp3` | la D suena a inglesa (alveolar, aspirada) | D dental clara, como en «dato» | ⚠️ **La más importante de la lista.** `da` es el verbo «ser» y sale en casi todas las frases del curso. Y arrastra a los auxiliares, que son las palabras más frecuentes del euskera: `dut`, `du`, `duzu`, `dugu`, `dute`, `ditut`, `dira`, `dago`, `daude`, `doa`, `dator`, `dabil` — todas con audio ya generado. Enlaza con `denda` (primera ronda: la segunda D suavizada) y `galdera` (la D casi como Y). |
+| `benetan` (u12, "de verdad") · `unidades/u12/benetan.mp3` | "denetan": la B inicial suena como D | B clara: «benetan» | ⚠️ Enlaza con fallos ya vistos en la primera ronda: `hobea` sonaba "hogea" (B→G) y `gure`/`guri` sonaban "bule"/"buri" (G→B). **La B es inestable en las dos direcciones.** Vecinas con audio ya generado que conviene escuchar: `bera`, `berandu`, `beraz`, `berdin`, `berria`, `berriro`, `bederatzi`, `bezain`, `beti`. |
+| `astea` (u7, "la semana") · `unidades/u7/astea.mp3` | "aspea": la T suena como P | T clara: «as-te-a» | Ric comprobó las demás con raíz «aste-» (`asteburua`, `astelehena`, `asteartea`, `asteazkena`) y **suenan bien**: no es la raíz. |
+| `axola zait` (u10, "me importa") · `unidades/u10/axola-zait.mp3` | "achola": la X suena como CH | X suave, como la «sh» inglesa: «ashola» | ⚠️ Solo hay otras dos palabras con X (sin contar «tx», que sí es CH): `kaixo` (u1) y `pixka bat` (u10). Conviene escucharlas. |
+| `atea` (u6, "la puerta") · `unidades/u6/atea.mp3` | "apea": la T suena como P | T clara: «a-te-a» | Mismo fallo que `astea` |
+| `agian` (u3, "quizás") · `unidades/u3/agian.mp3` | el acento cae mal | acentuada en la **i**: «aguían» | Primera vez que se anota |
+| `mahaia` | "maiaia" — sigue metiendo un sonido donde la H debería ser muda | "maaia": H muda y las dos A seguidas | **Tercer intento fallido.** Anotada el 20/08, regenerada por Miguel, y el 21/08 sonaba "mayayaia". Ahora "maiaia": cambia el ruido pero no se va. |
+
+**Patrón 1 · El acento se coloca mal.** Ya son seis (la sexta es
+`garai hartan`): `agian` (en la i),
+`berdin` (en la i), `daude` (en la e), `eguerdia` (en la e) y `euria`
+(en la i). No hay una regla simple que las una —`eguerdia` y `euria`
+empiezan casi igual y llevan el acento en sílabas distintas—, así que
+probablemente haya que darle a la voz la posición del acento palabra por
+palabra, no confiar en que lo deduzca.
+
+**Patrón 2 · Los auxiliares están tocados.** `da` suena a inglesa, `du`
+suena "dui", `daude` lleva mal el acento y `gara` suena "dara". Son las palabras más
+frecuentes del euskera y salen en casi todas las frases, así que arreglar
+esta familia (`dut`, `du`, `duzu`, `dugu`, `dute`, `ditut`, `dira`,
+`dago`, `daude`, `doa`, `dator`, `dabil`) rinde más que cualquier otra
+tanda.
+
+**Posible patrón: la T entre vocales convertida en P.** Confirmado en
+`astea` → "aspea" y `atea` → "apea". No es la raíz «aste-»: Ric verificó
+que `asteburua`, `astelehena`, `asteartea` y `asteazkena` suenan bien.
+Lo que comparten las dos que fallan es la **terminación `-tea` en
+palabra corta**. Queda por escuchar `urtea` (u5, el año), que es la
+única del curso con esa misma forma y que ya tiene audio generado.
+(`emaztea`, `hilabetea` y `tomatea` también acaban en -tea pero aún no
+tienen mp3: son vocabulario nuevo.)
+
+**Nota sobre `mahaia`:** tres regeneraciones y tres resultados malos
+distintos apuntan a que **regenerar no basta para esta palabra**. Es
+candidata clara para la opción 2 de la investigación de TTS: trucar el
+texto que se manda a sintetizar (probar `maaia`, `ma-aia` o similar) en
+vez de seguir mandando `mahaia` y esperar suerte.
+
+**Contenido · ejercicios que suenan forzados**
+
+- **26/08 · u1-g10 v5 y u1-g05 v3: «barkatu» pegado donde no toca.**
+  Detectado por Ric. Eran «Barkatu, zer moduz?» (perdón, ¿qué tal?) y
+  «Barkatu, eskerrik asko» (perdón, muchas gracias). El fallo es el
+  mismo en las dos: `barkatu` sirve para **interrumpir o disculparse**,
+  y pegado a un saludo o a un agradecimiento no tiene situación real.
+  **Sustituidas** por «Gabon, ikusi arte.» y «Eskerrik asko. Agur!»,
+  elegidas por Ric. Comprobado que `barkatu` sigue practicándose en
+  otras 14 variantes, así que la palabra no se pierde.
+  - *Barrido posterior:* se revisaron las 241 frases completas del curso
+    buscando más casos de cortesía pegada a saludo. **No hay más.**
+  - ⚠️ Queda una repetición menor: `u1-g10` tiene ahora dos variantes
+    que empiezan por «Gabon» (v4 «Gabon, bihar arte» y v5 «Gabon, ikusi
+    arte»). La app solo enseña una por ronda, pero si salen seguidas
+    puede cansar. Revisar al probarlo.
+
+- **25/08 · u1-g10 v1: «Zer moduz? Eta zu?» no la dice nadie.**
+  Detectado por Ric probando la app. El ejercicio de ordenar encadenaba
+  «¿Qué tal?» con «¿Y tú?», pero `eta zu?` es lo que devuelves **después
+  de contestar**, no pegado a tu propia pregunta. El propio curso lo
+  tiene bien en otros sitios: `u1-g03 v4` pregunta literalmente «¿cómo
+  devuelves la pregunta después de contestar?», y `u1-g05 v4` construye
+  la secuencia correcta («Ondo, eskerrik asko. Eta zu?»). Solo esta
+  variante se saltaba ese orden.
+  **Sustituida** por «Oso ondo, eskerrik asko.» (muy bien, gracias) —
+  elegida por Ric entre tres opciones. Aplicada en las dos versiones del
+  curso (`data/unidades/` y `data/unidades-v2/`). No choca con
+  `u1-g05 v4`, que lleva «ondo» a secas y termina con la coletilla.
+
+### Segunda ronda: audios regenerados por Miguel que siguen fallando
+
+Miguel regeneró las 45 palabras del inventario original (commit
+`eefafb4`, 20/08/2026) más el audio de `hi` por separado. Ric las está
+revisando una por una en el Diccionario general de la app y verificando
+las fechas de subida contra el bucket. Estas ya se comprobaron regeneradas
+pero **siguen sonando mal, con un fallo distinto al original** —
+necesitan otra vuelta. Revisado por Ric el 21/08/2026.
+
+| Palabra | Qué se oye ahora | Qué debería oírse |
+|---|---|---|
+| `ez horregatik` | la RR ya suena bien, pero ahora "Ez horregadit": la T y la K finales no se oyen claras | T y K finales claras |
+| `inor ez` | "inon es" | la I y la N se funden en Ñ ("iñor"), y la R clara: "iñor ez" |
+| `iruditzen zait` | el `zait` suena como "set" | `zait` claro: "zaid" (za-it) |
+| `joan` | sigue sonando "Yoan" (no mejoró) | J suave, como la H inglesa de "hat" — ojo, en «joan den astean» sí está bien pronunciado, es solo la palabra suelta la que falla |
+| `logela` | "lojela", como en castellano | G fuerte, marcada (como "logue" en "LoGUEla") |
+| `mahaia` | ahora suena "mayayaia" (se pasó al otro extremo) | H muda y dos A seguidas: "maaia" |
+| `noren?` | "nolen" | R clara: "noren" |
+| `zatoz` | la primera Z aún no es s sibilante clara | s sibilante clara, como "Satós" en castellano |
+
 ### Audios con pronunciación mal generada (para re-generarlos en tanda)
 
 Inventario ordenado por unidad. Todos los mp3 viven en el bucket
@@ -229,6 +358,950 @@ comparten este error (confirmado de oído en `jaten dut`).
   una casualidad — si aparecen más palabras con esa terminación al
   revisar, comprobarlas también.
 
+### Respuestas en castellano demasiado rígidas: «pequeño» no vale para «pequeño/a»
+
+- **2026-08-25 · Detectado por Ric usando la app publicada.** En el
+  ejercicio nuevo de escuchar (audio dice «txikia», hay que teclear la
+  traducción), respondió «pequeño» y se marcó como fallo, porque la
+  respuesta guardada es literalmente «pequeño/a». Debería aceptar
+  «pequeño» y «pequeña», y decir de paso que la palabra vale para los
+  dos géneros — en euskera pasa constantemente, porque el adjetivo no
+  tiene género.
+
+- **Diagnóstico (código de Miguel en `main`, que nuestra rama aún no
+  tiene):** `preguntaEscucharTeclear` pasa `respuestas: [entrada.es]`
+  tal cual, y `normalizar()` quita `¿?¡!.,;:«»"'()` pero **no** la
+  barra `/` ni expande alternativas. Así que la única respuesta
+  aceptada es la cadena entera del campo `es`. Tres familias de fallo:
+  - **Barra** (43 entradas): «pequeño/a», «tú / usted», «él / ella» —
+    teclear una de las dos alternativas falla.
+  - **Coma** (19): «coger, tomar», «escuchar, oír» — la coma se borra
+    al normalizar y queda «coger tomar»; teclear solo «coger» falla.
+  - **Paréntesis** (54): «(yo) soy», «hermano (de un chico)» — se
+    borran los signos pero queda el contenido («yo soy»); teclear
+    «soy» a secas falla.
+  **Total: 116 entradas afectadas, un tercio del vocabulario.** El
+  «casi correcto» que Miguel acaba de añadir amortigua algún caso, pero
+  no es la solución: «pequeño» no es *casi* correcto, es correcto.
+
+- **Arreglo propuesto — en código, no tocando los datos:** una función
+  `variantesEs(es)` que expanda el campo en todas las respuestas
+  aceptables, aplicada donde se corrige una respuesta en castellano:
+  1. Alternativas por barra o coma → todas valen («tú / usted» acepta
+     las dos).
+  2. Contracción de género «-o/a» → las dos formas («pequeño»,
+     «pequeña»). También «el/la amigo/a» → amigo, amiga, con o sin
+     artículo.
+  3. Paréntesis aclaratorios → se acepta con y sin ellos («(yo) soy»
+     acepta «soy» y «yo soy»; «hermano (de un chico)» acepta
+     «hermano»).
+  Y en la pantalla de acierto, cuando la palabra vale para ambos
+  géneros, decirlo: es enseñanza, no solo corrección.
+
+- **Coordinación:** el ejercicio de escuchar es trabajo reciente de
+  Miguel en `main` y está desplegando estos días — este arreglo es de
+  su terreno ahora mismo. Comentárselo antes de tocar nada; si prefiere
+  que lo hagamos nosotros, entra cuando fusionemos `main` en
+  `ric/trabajo` (pendiente de todas formas para la reestructuración).
+  Para el contenido nuevo de las 10 unidades no hace falta cambiar
+  ninguna convención: el campo `es` se queda legible para humanos y la
+  expansión la hace el código.
+
+#### Continuación: las tildes y los espacios de la barra (2026-08-25)
+
+Ric, con el audio de `bera`/`hura` («él / ella»), tecleó **`el/ella`** y se
+marcó mal. Dos cosas distintas, las dos arregladas:
+
+1. **La tilde se comparaba.** El brief ya decía que una tilde de más o de
+   menos es cosmética y no cuenta como fallo, pero la comparación no lo
+   implementaba: `el` no casaba con `él`.
+2. **La barra solo separaba con espacios alrededor.** La respuesta guardada
+   es `él / ella`, y al partirla salían `él` y `ella` sueltas y la frase
+   entera con espacios — pero nunca `el/ella`, que es justo como lo escribe
+   cualquiera.
+
+Ahora se comparan por una clave que aplana las dos cosas (`claveRespuesta`).
+Lo que se **muestra** en pantalla no cambia: sigue apareciendo `él / ella`
+bien escrito, que es lo que hay que aprender.
+
+**La ñ se deja intacta a propósito.** En castellano y en euskera es otra
+letra, no una n con adorno: aceptar `manana` por `mañana` sería enseñar mal.
+Comprobado antes de aplicarlo que ninguna pareja de palabras del curso (522
+entradas) se confunde al aplanar tildes — cero colisiones.
+
+**Y una cosa que salió de aquí:** Ric estaba viendo arreglos anteriores como
+si no existieran, porque el navegador servía el `app.js` cacheado. El `?v=2`
+de `index.html` no sirve si no se sube el número en cada retoque, y es fácil
+pasarse un rato depurando código viejo sin saberlo. Añadido
+`scripts/servidor-local.py`, que es el servidor de siempre más una cabecera
+`Cache-Control: no-store`. Para probar en local, usar ese en vez de
+`python3 -m http.server`. No toca `index.html`, así que lo publicado sigue
+igual.
+
+```
+python3 scripts/servidor-local.py 8321
+```
+
+### Pistas que entregan la solución en vez de estrecharla (2026-08-25)
+
+Ric, en «Me llamo Ane.» (u4-g11 v3, unidad 2 del curso nuevo): la pista
+decía **«Vale «Ane dut izena» o simplemente «Ane naiz»»**. Es decir, las dos
+respuestas buenas, escritas enteras. *«Es demasiado literal.»* El ejercicio
+se resolvía copiando de la ayuda.
+
+Buscadas todas las iguales por los tres cursos. **Tres ejercicios**, cada uno
+repetido en las tres versiones:
+
+| Ejercicio | Antes | Ahora |
+|---|---|---|
+| «Me llamo Ane.» | *Vale «Ane dut izena» o simplemente «Ane naiz».* | *En euskera no existe «llamarse»: se dice, literalmente, «tengo Ane por nombre».* |
+| «Tengo un perro.» | *…es «txakur bat»… También vale «txakurra dut».* | *El número va detrás del nombre, y delante de un número el sustantivo pierde el artículo: «perro uno», no «el perro uno».* |
+| «Tenemos una casa.» | *«una casa» = «etxe bat». «Guk» con -k … → «dugu».* | *El sujeto de «tener» lleva -k al final. El objeto es singular, así que el auxiliar va en la forma de «nosotros».* |
+
+El criterio: **la pista da la regla, el alumno pone las palabras.** Lo de la
+`-k` de `guk` se queda porque es gramática de verdad; lo que sobraba eran
+las palabras servidas.
+
+**Para que no vuelva:** `verificar.py` tiene ahora `pista_delata()`, que falla
+si todas las piezas de alguna respuesta aparecen sueltas por la pista.
+Probado a la inversa (volviendo a poner la pista vieja) para confirmar que
+salta de verdad.
+
+#### De paso: el verificador no miraba el curso nuevo
+
+Al ir a blindarlo salió que `verificar.py` solo leía `data/curso.json` — las
+17 unidades publicadas. **El curso reestructurado de 10 unidades, donde está
+justo el fallo que encontró Ric, no lo revisaba nadie.** Ahora:
+
+```
+python3 verificar.py            # el publicado
+python3 verificar.py v2         # el de 10 unidades
+python3 verificar.py gernikes   # el de Gernika
+```
+
+Al abrirlo a los tres aparecieron dos cosas más:
+
+- **Las fichas de gramática del v2 llevan `subnivel`** y el verificador lo
+  daba por clave rara: 120 errores falsos. Ya lo conoce.
+- **134 grupos con el id de su unidad de origen** (el de Ric se llama
+  `u4-g11` y vive en la unidad 2). No es un fallo: al mudarlos conservaron
+  el id a propósito, y el código nunca lee el prefijo, solo usa el id como
+  llave. Queda como aviso.
+- **`u1-g06` del gernikés tiene 6 variantes en vez de 5.** Es anterior a
+  todo esto y sigue sin arreglar — pendiente de decidir qué variante sobra.
+
+### El subnivel 3.3 tenía ejercicios pero nada que estudiar (2026-08-25)
+
+Ric: *«el Subnivel 3.3: Demostrativos no tiene nada de gramática, así es
+imposible entrar a los ejercicios sabiendo».* Tenía razón: **0 fichas de
+gramática y 1 sola palabra** (`hau`), contra 5 grupos de ejercicios que
+preguntaban por `hori`, `hura`, `hauek`, `horiek` y `haiek` — ninguna
+presentada antes. Fallo nuestro al crear los subniveles que tapaban huecos
+del A1: se generaron los ejercicios y no se escribió la lección.
+
+Barridos los 50 subniveles buscando lo mismo. Salieron seis, pero **solo el
+3.3 estaba de verdad vacío**: los otros cuatro (1.2, 4.8, 8.5, 9.4) son de
+vocabulario y tienen 8-13 palabras que estudiar, y el 5.4 tiene su ficha.
+
+**Escrito lo que faltaba:**
+
+- Ficha *«Tres distancias, y lo que cuenta es de quién está cerca»* — el
+  sistema hau/hori/hura, con el matiz que piden los ejercicios: el criterio
+  no son los metros, es **de quién** está cerca la cosa. Más los plurales.
+- Ficha *«Van detrás del nombre, y el nombre pierde el artículo»* — el orden
+  al revés que en castellano (`etxe hau`, «casa esta»), la caída de la `-a`
+  (`etxea` → `etxe hau`), y por qué `hura`/`haiek` son las mismas palabras
+  que «él/ella» y «ellos/ellas» de la unidad 2.
+- Vocabulario: `hori`, `hauek`, `horiek`.
+
+**Dos cosas más que salieron al mirarlo:**
+
+1. **`u3-g05` no era de demostrativos.** Preguntaba dónde se coloca la
+   palabra interrogativa — es de 3.1, donde además está su ficha. Movido. Al
+   irse, 3.3 se quedó con 4 grupos, así que se escribió `u3-g29` sobre la
+   gramática nueva para mantener el mínimo de 5.
+2. **`u3-g23 v5` daba una respuesta falsa.** Preguntaba «¿qué demostrativo
+   ya conocías de la unidad 2?» y daba por buena `hau`, que se presenta
+   justo ahí. De la unidad 2 se conocen `hura` y `haiek`. Corregida a `hura`.
+
+**Sobre `hura` y `haiek`:** primero las añadí al diccionario de la unidad 3
+como «aquel/aquellos», y quedaban duplicadas con las de la unidad 2. Son la
+misma palabra, no dos, así que se quedan donde estaban y se les amplió el
+significado (`esAlt` + nota); la ficha de 3.3 explica el doble uso.
+
+**Pendiente:** las tres palabras nuevas y las seis frases de ejemplo no
+tienen audio. Los ejemplos sin audio ya son normales en el curso (107 de
+311), así que no rompe nada, pero entran en la lista de audios por generar.
+Las frases de ejemplo son nuestras y **no las ha revisado un nativo**.
+
+### Demostrativos en bizkaiera: «ha» por «hura» (2026-08-25)
+
+Aportación de Ric al hilo del subnivel 3.3: **en bizkaino «hura» es «ha»**.
+No estaba en ninguna parte del curso — ni siquiera en la versión en gernikés.
+
+Verificado en [bizkaiera.eus](https://www.bizkaiera.eus/bizkaiera/morfologia-puntu-batzuk/)
+(Bizkaieraren ataria), que confirma el dato y añade lo que no se puede
+deducir: **los plurales no se parecen nada a los del batua.**
+
+| batua | bizkaiera |
+|---|---|
+| hau | hau (igual) |
+| hori | hori (igual) |
+| **hura** | **ha** ← dato de Ric |
+| hauek | **honeek** (var. *honeik*) |
+| horiek | **horreek** (var. *horreik*) |
+| haiek | **hareek** (forma antigua *haek*) |
+
+Metido por el mecanismo que ya existía (`variantes` con `registro:
+"bizkaiera"`), en los dos cursos: `hura` y `haiek` en la unidad 2, `hauek` y
+`horiek` en la 3. Más una ficha *«Cómo suena esto en Bizkaia: los
+demostrativos»* en el 3.3 — la que ya había está en el 3.1 y va de
+interrogativas, así que estudiando demostrativos no se veía.
+
+También recoge el intensivo con **-xe-** (*hauxe, horixe, haxe*), que según
+la fuente se oye sobre todo en el este de Bizkaia.
+
+**Detalle técnico que casi se cuela:** puse el contraste con el batua en un
+campo `nota` dentro de los ejemplos, y **la app solo pinta `eu` y `es`** —
+se habría perdido en silencio. Había 0 ejemplos con `nota` en todo el curso,
+que era la pista. Movido al texto visible.
+
+**Sin audio:** `ha`, `honeek`, `horreek`, `hareek` y las dos frases de
+ejemplo. A la lista de audios por generar.
+
+### Revisión general del curso nuevo · bloque 1 (2026-08-26)
+
+Ric pidió una lectura del curso reestructurado «como una persona que entra
+desde cero en una lengua sin lógicas parecidas al español». Primera pasada:
+dos barridos mecánicos antes de leer las 123 fichas.
+
+#### Referencias que apuntaban al mapa viejo — ARREGLADO
+
+Frases dentro de las explicaciones del tipo «como viste en la unidad N», con
+la numeración anterior a la reestructuración. Cinco. Tres eran solo el
+número mal:
+
+- 4.2 decía *«En la unidad 5 viste que el euskera cuenta en base veinte»* —
+  es 4.1, el subnivel anterior de la misma unidad.
+- 4.7 citaba *«un detalle de la unidad 5»* — `ditut` está en 4.4, misma unidad.
+- 6.3 decía *«Ya lo tienes de la unidad 6, con los lugares»* — se citaba a sí
+  misma; el `-n` de lugar es de la unidad 5.
+
+**Las otras dos eran el fallo del 3.3 otra vez**, escrito en prosa: le decían
+al alumno que ya sabe algo que se enseña después.
+
+- 6.4 daba `egin` por sabido *«de la unidad 8»*, pero se enseña en **7.1,
+  después**. Reescrito para presentarlo como fórmula cerrada («todavía no lo
+  hemos visto por dentro —eso es la unidad siguiente—, apréndete estas dos
+  enteras»), que es lo que ya hace el curso en 3.4 con las frases hechas.
+- 9.5 daba `oporrak` por conocido *«de la unidad 11»*, pero estaba en **10.2,
+  después**. Y además se usaba en un ejercicio de 6.5, cuatro unidades antes
+  de presentarse.
+
+**`oporrak` movida de 10.2 a 6.5.** Estaba en «Cuándo pasó» rodeada de
+expresiones de tiempo (`lehen`, `orduan`, `iaz`, `aurten`, `txikitan`,
+`garai hartan`) siendo la única que no lo es. Su sitio es «Las fiestas del
+año», con `jaiak`, `Gabonak` y `Aste Santua`. Se sigue practicando en la
+unidad 10 como repaso, que es justo el comportamiento que Ric quería.
+
+#### Ejercicios en el subnivel equivocado — PENDIENTE DE DECIDIR
+
+Siete grupos cuyo contenido es de otro sitio. Los flagrantes:
+
+| Grupo | Está en | Es de |
+|---|---|---|
+| Partes del cuerpo | 6.1 **La hora** | 9.3 El cuerpo |
+| Animales | 4.7 **La familia extendida** | 4.8 Animales |
+| Emparejar números | 4.4 Tener y decir tu edad | 4.1 Números |
+| «¿Cómo se dice 11 y 14?» | 4.4 Tener y decir tu edad | 4.2 Seguir contando |
+| «Non→-n, Nora→-ra…» | 3.1 Las interrogativas | 3.2 La familia de «non» |
+| `nator`/`zatoz`, `noa`/`zoaz` | 8.2 En qué vas y por dónde | 8.1 Ir y venir |
+
+Otros 38 saltaron en el barrido y **son falsos positivos sanos**: un
+ejercicio de «decir tu edad» usa números por definición. No tocar.
+
+**Por qué no se han movido aún:** 4.7 se quedaría en 4 ejercicios y 8.2 en 3,
+así que hacen falta 3 grupos nuevos; y el del cuerpo no es un cambio de
+subnivel sino **de unidad** (está en la 6, su sitio está en la 9).
+
+#### Cuñas culturales
+
+Ric: *«me encantan todas las cuñas sociales, históricas y contextuales».*
+Comprobada la más obvia —el sistema de base veinte, `berrogei` = «dos
+veintes», con el guiño al `quatre-vingts` francés— y **ya está puesta y bien
+escrita**. El listón está alto. Se irán anotando los huecos al leer las
+fichas.
+
+### Barrido total de ejercicios «sucios» + dos fusiones (2026-08-26)
+
+Ric: *«es clave que en la barrida total encuentres estas cosas sucias de
+ejercicios que no son de la unidad»*. Hecho, con un criterio objetivo:
+**¿se puede acertar sabiendo solo lo anterior?**
+
+**De 47 variantes imposibles a 14.** Ningún subnivel por debajo de 5
+ejercicios, y la unidad 4 baja de 8 temáticas a 7.
+
+#### Cómo se midió, y por qué el primer número engañaba
+
+El barrido crudo daba 107 variantes usando vocabulario posterior. Pero **55
+eran la variante 4** de su grupo — artefacto del generador — y al separarlas
+salió lo importante: **97 eran distractores** (una palabra posterior como
+opción *falsa*, que no impide acertar) y solo **13 eran la respuesta
+correcta**. Sumando parejas y traducir, donde toda palabra cuenta: 47 reales.
+
+#### El hallazgo gordo: el tiempo escondido en «El cuerpo»
+
+El subnivel 9.3 era el vertedero de la vieja unidad 10.1 («Gorputza,
+urtaroak eta jaiak»). Las fiestas ya se habían sacado a 6.5, pero **las
+estaciones y el tiempo seguían dentro**: `udaberria`, `udazkena`, `elurra`,
+`haizea`, `hodeia`, `eguraldia`, `hotza`, `beroa`.
+
+Consecuencia para el alumno: **en la unidad 6 aprendía invierno y verano, y
+primavera y otoño no aparecían hasta tres unidades después, dentro de un
+subnivel de partes del cuerpo.** Y cuatro ejercicios titulados «Empareja el
+cuerpo» le sacaban `elurra` (nieve) o `hodeia` (nube) — más `dirua` (dinero)
+y `galdetu`, que tampoco pintaban nada.
+
+Movidas las ocho a 6.4. Limpiadas las 21 celdas contaminadas, repartiendo las
+once palabras del cuerpo de forma uniforme (tres apariciones cada una) en
+vez de repetir `burua` seis veces. Y reescrito `u6-g18`, que era **el tercero
+de tres emparejar casi idénticos** rotando las mismas cuatro palabras, para
+cubrir las recién llegadas.
+
+#### Fusión 1 · Unidad 4: «La familia cercana» + «La familia extendida»
+
+Idea de Ric: la línea entre cercana y extendida era arbitraria, se aprende
+como un solo campo, y **la unidad 4 era la única del curso con 8 temáticas**.
+
+Al mirarlo de cerca los dos subniveles estaban además sucios: `u4-g26` y
+`u4-g27` mezclaban familia + números + animales de granja en el mismo
+«empareja», y `u5-g12` metía `txakurra` y `katua` entre padre, madre e hijos.
+
+Esas bolsas no eran malas, **estaban en el sitio equivocado**: son ejercicios
+de repaso, y la unidad ya tiene un test que es literalmente «todo lo anterior
+mezclado». Movidas ahí. Resultado, **sin escribir ni un ejercicio nuevo**:
+
+| | antes | después |
+|---|---|---|
+| 4.6 «La familia» | 5 + 5 | **7 grupos** |
+| 4.7 «Animales» (era 4.8) | 5 | **6** |
+| Test | 5 | **7** |
+
+#### Fusión 2 · Unidad 8: «En qué vas» + «Dar indicaciones» → «Cómo llegar»
+
+También idea de Ric. Y hay un argumento que la respalda: la ficha de «Dar
+indicaciones» ya decía *«fíjate en que `ezkerrera` lleva dentro el `-ra` de
+movimiento»*, **y ese `-ra` se enseña en la primera ficha del otro
+subnivel**. La conexión existía pero cruzaba una frontera. Añadido un puente
+al principio. 8.2 queda con 3 fichas, 9 palabras y 8 grupos.
+
+#### Unidad 1: el orden estaba del revés
+
+«Pronunciación y dialectos» hablaba de `batua` y `euskalkia` **antes** de que
+«Dónde se habla» los presentara. O sea: te explicaba cómo suenan los
+dialectos antes de decirte qué es un dialecto. **Intercambiados 1.3 y 1.4.**
+
+Y limpiadas cuatro variantes de 1.1 «Saludos» que practicaban cortesía
+(`barkatu`, `eskerrik asko`, `mesedez`), que es 1.2.
+
+#### Otros movimientos
+
+- `u10.1-g01` (partes del cuerpo) estaba en **6.1 «La hora»** → 9.3.
+- `u8-g03` y `u8-g12` (comida) estaban en 7.1, que tenía **11 grupos**, el
+  doble de la mediana → 7.5 «Comer y beber».
+- `non?` estaba en 3.2 aunque 3.1 «Las interrogativas» tiene las otras
+  nueve → movida a 3.1. Y `u3-g04`, que enseña la familia Non/Nora/Nondik,
+  subió a 3.2, que es su ficha.
+- Solo **2 palabras duplicadas** en todo el curso (`bihar`, `nahi dut`), las
+  dos con la misma traducción.
+
+#### ⚠ Aviso sobre el progreso local
+
+Se han renumerado subniveles (4.8→4.7, 8.4→8.3, 8.5→8.4, 1.3↔1.4). El
+progreso guardado en el navegador va por id de subnivel, así que **lo hecho
+en esos aparecerá desplazado**. Se arregla borrando el progreso local.
+
+#### Quedan 14 variantes
+
+Contaminaciones de una sola palabra, casi todas del subnivel siguiente:
+`u2-g01` (geu/neu/zeu), `u3-g01` (la familia de non), `u9-g10`
+(eskuinera/ezkerrera), `u9-g13` (erantzun/guri), y siete más con una palabra
+cada una. Pendientes.
+
+### Pasada final: lo que salió al revisar los propios cambios (2026-08-26)
+
+Ric: *«haces una nueva pasada por todas las unidades, para asegurarnos que
+con los últimos cambios no quedó algo raro»*. Buena idea, porque salieron
+tres cosas — **una de ellas provocada por un arreglo anterior de hoy.**
+
+#### 5.3 «Los colores» no tenía ni un color
+
+Los once colores estaban en **5.2 «La casa por dentro»**, que cargaba con
+**39 palabras**, la mayor del curso. Y 5.3, titulada «Los colores», contenía
+adjetivos: `handia`, `txikia`, `polita`, `berria`, `zaharra`.
+
+Ric ya había dicho en su día que **los colores fueran con los adjetivos**.
+Movidos, y 5.3 pasa a llamarse **«Colores y adjetivos»** (16 palabras).
+5.2 baja a 28.
+
+**Y ahí saltó el efecto secundario:** al mover el vocabulario, su ejercicio
+(`u6.1-g01`, emparejar los once colores) se quedó atrás en 5.2. La pasada lo
+cazó. Movido también — y entonces 5.2 se quedó en 4 grupos, así que se
+escribió uno nuevo (`u5-n01`).
+
+El grupo nuevo **practica el patrón `-gela` que la ficha ya explicaba** en vez
+de repetirlo (`egon`+gela = salón, `jan`+gela = comedor, `su`+`alde` =
+cocina) y recoge `telebista`, la única palabra del subnivel sin practicar.
+
+#### Un fallo mío en la ficha de demostrativos
+
+La ficha que escribí para 3.3 usaba de ejemplo `etxea`, `liburua`, `mendia`,
+`handia` y `txikia`. **Las cinco se enseñan después de la unidad 3** — en la
+5, la 8 y la 9. Comprobé que existieran en el curso, pero no que se
+enseñaran antes. Es exactamente el error que llevaba toda la tarde cazando
+en los demás.
+
+Reescritas las tres fichas y el grupo `u3-g29` con vocabulario que el alumno
+sí tiene en la unidad 3: `laguna`, `ikaslea`, `irakaslea`, `medikua`,
+`galdera`, `euskalduna`.
+
+#### El id que ya existía en otra unidad
+
+Al crear el grupo nuevo le puse `u5-g05`… que ya existía **en la unidad 4**,
+porque los grupos conservan el id de su unidad de origen. Lo cazó
+`verificar.py`. Renombrado a `u5-n01`.
+
+#### Sobre los ejemplos de gramática
+
+El barrido encontró **73 ejemplos de gramática** que usan vocabulario
+posterior. **No se han tocado, y con motivo:** un ejemplo lleva la traducción
+al lado, así que no exige conocer la palabra — a diferencia de un ejercicio,
+donde hay que producirla o reconocerla. Muchos además son de un subnivel más
+adelante dentro de la misma unidad. Corregirlos en bloque sería empeorar
+ejemplos que funcionan.
+
+#### Estado final del curso v2
+
+| Comprobación | |
+|---|---|
+| Numeración de subniveles sin huecos | ✓ |
+| Sin subniveles huérfanos | ✓ |
+| Todos con 5+ ejercicios | ✓ |
+| Todos con algo que estudiar | ✓ |
+| Nada imposible de acertar | ✓ *(1 excepción, abajo)* |
+| Parejas sin lados repetidos | ✓ |
+| Sin preguntas circulares | ✓ |
+| Sin referencias a unidades posteriores | ✓ |
+| Ids únicos en todo el curso | ✓ |
+| Ficha de dialecto en cada unidad | ✓ |
+| Todos los grupos con 5 variantes | ✓ |
+
+**48 subniveles, 327 grupos, 1.635 variantes, 506 palabras.**
+
+*La excepción:* `gutxi` en dos variantes de 6.1 «La hora». No es un fallo —
+la ficha lo enseña explícitamente («los minutos se cuelgan con *eta* o con
+*gutxi*»); está catalogado en 9.1 con su otro sentido, «poco». Se deja así
+en vez de forzar el número a cero.
+
+### Etiquetas literales en pantalla, y tres cuñas nuevas (2026-08-26)
+
+#### El `<u>` que se veía tal cual — ARREGLADO
+
+Ric: *«me iba encontrando con `<u></u>` o `<b></b>` y se me pasaba
+anotarlo»*. Nueve casos, todos `<u>`, en las **tres versiones del curso**,
+o sea que también estaba en lo publicado.
+
+**El fallo estaba en la app, no en los datos.** `richText()` convertía `<b>`
+e `<i>` pero no `<u>`, así que salía «`<u>ogirik</u>`» en crudo. Y
+`verificar.py` ya daba `<u>` por válida: el que iba por detrás era el
+renderizador.
+
+El uso además es legítimo y **no se podía sustituir por `<b>`**: marca la
+pieza clave *dentro* de un ejemplo que va entero en negrita —
+«Ez dut `<u>`ogirik`</u>` jaten», «Bilbo Gernika `<u>`baino`</u>` handiagoa
+da»—, un segundo nivel de énfasis que la negrita no puede dar.
+
+Añadido a `richText`, y estilado con el color de acento en vez de subrayado
+a secas, que se lee como enlace.
+
+**Comprobado de paso algo que habría sido peor:** `nota`, `explicacion`,
+`pista`, `pregunta` e `instruccion` **no pasan por `richText`** sino por
+`esc()`, así que cualquier etiqueta ahí saldría literal. No hay ninguna, y
+ahora hay una comprobación que lo vigila.
+
+#### Las cuñas: el curso estaba mejor surtido de lo que parecía
+
+Al barrer las 126 fichas, **58 ya tienen contexto histórico o cultural**, y
+las buenas son muy buenas: la base veinte con el guiño al `quatre-vingts`,
+`asteburua` = «la cabeza de la semana», `sukaldea` = «la zona del fuego»,
+el patrón `-gela`, `urdina` cubriendo un rango más amplio que el «azul»
+castellano, y el remate del cuadro de hermanos: *«curiosamente, en una
+lengua sin género gramatical»*.
+
+Así que en vez de rellenar, se buscaron **huecos reales**. Tres:
+
+**1 · «El año tenía dos estaciones, no cuatro» (6.4).** Salió de verificar
+una explicación que yo había escrito de memoria: estaba bien pero corta.
+Tradicionalmente el euskera solo tenía `uda` y `negu`; las otras dos se
+formaron sobre el verano (*udaberri* = verano nuevo, *udazken* = final del
+verano), mientras que «primavera» viene de *prima vera*, «el primer
+verdor», sin relación con «verano». Cada lengua cortó el año por donde le
+importaba.
+
+**2 · «El territorio se llama como la lengua, y no al revés» (1.3).**
+`Euskal Herria` = *euskal* (del euskera) + *herri* (pueblo, territorio).
+El sitio toma el nombre de la lengua, al contrario que el castellano
+(← Castilla) o el `français` (← Francia). Y el sistema es coherente hasta
+el final: `euskaldun` = *euskal* + *-dun* («que tiene»), **el que tiene el
+euskera** — no dice de dónde eres, dice qué hablas. Recogido por escrito
+desde el siglo XVI, y de origen cultural, no político.
+
+**3 · «El jueves y el viernes: los dos que no encajan» (6.2).** Tapa un
+hueco visible: la ficha de los días explicaba los tres `aste-` y dejaba
+`ostegun` y `ostiral` sin comentar, aunque saltan a la vista. El `ost-`
+tiene que ver con el cielo y el trueno, y es la raíz de `Ortzi`. Y el
+paralelo remata: *jueves* ← Júpiter, *Thursday* ← Thor, `ostegun` ← Ortzi.
+Tres familias de lenguas sin relación, y las tres dieron el jueves al mismo
+tipo de dios. **Lleva un aviso explícito de que es la explicación más
+aceptada y no un hecho cerrado**, porque los detalles se siguen discutiendo.
+
+Las tres verificadas antes de escribirlas, y comprobado que sus ejemplos
+solo usan vocabulario ya visto.
+
+#### Huecos que quedan y NO se han tapado
+
+Se miraron y se descartaron a propósito, porque ya estaban cubiertos: el
+patrón `egin` (*lo egin*, *hitz egin*), los meses (tienen cuatro fichas,
+incluida «El año que se llena»), los dobles nombres de las ciudades, y el
+sistema `neba`/`arreba`. Meter algo encima habría sido relleno.
+
+### Saltos de línea en mitad de la frase (2026-08-26)
+
+Detectado por Ric en la ficha «Dónde se habla el euskera»: el párrafo se
+veía partido a mitad.
+
+**La causa:** `richText()` convierte **cada `\n` suelto en un `<br>`**. Eso es
+justo lo que se quiere en una lista —los territorios, las conjugaciones, los
+pares de vocabulario—, pero si un párrafo de prosa se escribió ajustado a
+mano a unos 70 caracteres, el lector ve la frase cortada donde acababa la
+línea del editor.
+
+**Barrido: un solo caso en todo el curso.** El detector marcó once párrafos,
+pero **diez eran listas legítimas** (`uda + berri → udaberri`, `Si es un
+chico: anaia…`, `Ni ikaslea naiz. → sin -k…`), donde el salto es correcto y
+tocarlo lo empeoraría. El único de verdad era el que vio Ric.
+
+De los 5 saltos de esa ficha, **3 son buenos** (la lista de los cuatro
+territorios del sur) y 2 eran el párrafo mal ajustado. Unido en una línea;
+comprobado en la app que ese párrafo ya tiene 0 `<br>` y que la lista de
+territorios conserva los suyos.
+
+**El problema espejo, comprobado y limpio:** `nota`, `explicacion`, `pista`,
+`pregunta` e `instruccion` van por `esc()`, que **no** convierte `\n` — en
+HTML se colapsaría a un espacio y un corte de párrafo intencionado se
+perdería sin avisar. No hay ninguno.
+
+**Para que no vuelva:** `verificar.py` avisa cuando dos líneas seguidas de un
+párrafo parecen las dos prosa corrida en vez de elementos de una lista.
+Probado a la inversa (volviendo a meter el salto) para confirmar que salta.
+
+### La ficha del botón describía el diseño anterior (2026-08-26)
+
+Detectado por Ric. «El botón de arriba, explicado» (u1, 1.3) contaba que el
+botón de la cabecera elegía **entre dos variantes de contenido**, bizkaiera
+o gernikera. Eso ya no es así, y lo dice el propio código:
+
+> *El botón de la topbar ya no elige QUÉ dataset cargar —eso ahora es el
+> desplegable de Ajustes—, sino si los ejercicios también preguntan por esa
+> variante.*
+
+**El reparto real ahora son dos controles distintos:**
+
+| | Dónde | Qué hace |
+|---|---|---|
+| **Batua / Bizkaiera** | cabecera | Si los ejercicios **también** te preguntan las formas locales. Apagado de fábrica. |
+| **Tu variante dialectal** | Tu cuenta | Qué variante muestra el **contenido** del curso. |
+
+Ficha reescrita con eso. Y se aprovechó para explicar el porqué del valor
+por defecto, que estaba en un comentario del código y no llegaba al alumno:
+apagado, las formas locales **siguen visibles** en Vocabulario y Diccionario
+para leerlas y reconocerlas — simplemente no te examinan de ellas.
+
+#### ⚠ Incoherencia encontrada al verificarlo — NO tocada, es decisión de producto
+
+El desplegable de «Tu cuenta» **sigue ofreciendo Gernikera**, aunque Ric dice
+que ahora solo el bizkaiera está accesible. Y hay algo peor: en el curso
+reestructurado, elegir Gernikera **no hace absolutamente nada**. La línea que
+decide qué cargar es:
+
+```js
+var indicePath = V2 ? 'data/curso-v2.json'
+                    : (MODO_DIALECTO === 'gernikes' ? 'data/curso-gernikes.json' : 'data/curso.json');
+```
+
+Con `?v2` activo, `MODO_DIALECTO` se ignora. O sea que es **un ajuste que el
+usuario cambia y no pasa nada**, sin aviso ninguno. En el curso publicado sí
+funciona, porque ahí `V2` es falso.
+
+Dos salidas, y la elección es de Ric y Miguel:
+1. **Ocultar Gernikera** mientras no esté lista (le falta el audio entero).
+2. **Montar la versión gernikés del curso v2**, que hoy no existe: solo hay
+   `data/unidades-gernikes/` con la estructura vieja de 12 unidades.
+
+Mientras tanto, la ficha nueva no menciona Gernikera: habla de «tu variante»
+y dice que la montada y con audio es el bizkaiera.
+
+### Fuera el gernikés, y las fichas de dialecto siguen al switch (2026-08-26)
+
+Decisión de Ric: *«eliminaremos el Gernikera, era un capricho mío porque
+convivo más en Gernika, pero no es relevante»*.
+
+#### Lo que se ha quitado
+
+- La opción **Gernikera** del desplegable de «Tu cuenta».
+- La rama `gernikes` de `cargarCurso()`, `nombreDialecto()` y `MODO_DIALECTO`.
+- Los comentarios que la describían, que se habrían quedado mintiendo.
+
+**El mecanismo se conserva a propósito**, con una sola entrada
+(`var VARIANTES = { bizkaiera: 'Bizkaiera' }`), porque Ric dice que en el
+futuro podría enriquecerse con otras. Añadir una es una línea.
+
+**Los archivos NO se han borrado.** `data/unidades-gernikes/` y
+`data/curso-gernikes.json` siguen en el repo, desenganchados de la interfaz.
+Es contenido original de Ric y borrarlo es una decisión aparte; si se quiere,
+se hace en un commit propio y limpio. `verificar.py gernikes` los sigue
+revisando.
+
+#### Lo que queda de aquello, y es lo bueno
+
+En vez de una versión entera que mantener, el gernikés se queda como
+**curiosidad dentro de la ficha de los artículos** (u2, 2.3), que es donde
+encaja porque va justo de esa `-a`:
+
+> En **Gernika** y por zonas de Busturialdea, esa *-a* final se oye a menudo
+> como **-ie**: donde aquí escribimos *etxea*, allí suena **etxie**.
+
+Con el aviso de que no hay que aprenderlo —esto es batua— pero que si se oye,
+no es un error.
+
+#### Las fichas de dialecto ahora aparecen y desaparecen con el switch
+
+Petición de Ric: si has elegido que **no** te pregunten en bizkaiera, tampoco
+tiene sentido llenarte la lección de bizkaiera.
+
+Las 19 fichas «Cómo suena esto en Bizkaia» del curso v2 (49 contando los tres
+cursos) llevan ahora **`registro: "bizkaiera"`** en el JSON — igual que ya lo
+llevaba el vocabulario. El código las reconoce **por el dato, no por el
+título**, que sería frágil.
+
+| Switch | Fichas visibles |
+|---|---|
+| **Batua** | 107 de 126 |
+| **Bizkaiera** | las 126 |
+
+Filtrado en un solo sitio (`gramaticaVisible()`), aplicado en los tres que
+importan: la pantalla de gramática, el contador de la unidad y el de cada
+subnivel. Comprobado en la app: el rótulo del subnivel 3.3 pasa de
+«2 explicaciones» a «3» al darle al switch, así que **el contador no miente**.
+
+*Detalle que se simplificó al verlo:* el switch solo está visible en la Home
+(`mostrar()` lo esconde en las demás), y al entrar en una unidad se pinta de
+cero. Así que no hace falta repintar más pantallas — se quitaron esas ramas,
+que eran código muerto.
+
+#### ⚠ Para comentar con Miguel
+
+El brief, sección **5.1**, es un refinamiento que pidió él: *«ambas presentes,
+ninguna oculta»*. Esto **no lo contradice**, porque 5.1 habla del
+**vocabulario** (`kaixo` / `aupa`), y ahí las dos formas siguen visibles y
+etiquetadas como siempre — solo se ocultan las **fichas de explicación**.
+Pero está lo bastante cerca como para decírselo.
+
+### Cuarta tanda de Ric (26/08/2026) — sin subir, a la espera de Miguel
+
+Ric abre lista nueva probando la app. Se acumulan y se suben juntas, porque
+son de audios o de respuestas flexibles.
+
+**1 · `barkatu` no aceptaba «perdona».** Solo «perdón» y «disculpa».
+Añadido `esAlt: ["perdona", "perdone", "disculpe"]`, comprobado antes que las
+tres estaban libres y no son de ninguna otra palabra del curso.
+
+*Falsa alarma que conviene dejar escrita:* Ric dijo primero que el audio era
+«mesedez» (que es «por favor»), lo que habría significado un mp3 cruzado en
+el bucket. Se comprobó descargando los dos: **son archivos distintos**
+(7.244 y 4.172 bytes, hashes distintos), y además `preguntaEscucharTeclear`
+coge el audio y la respuesta **de la misma entrada**, así que no puede
+descuadrarlas. Ric confirmó después que se había equivocado al escribir: era
+`barkatu`. Queda anotado el método, que sirve para la próxima sospecha.
+
+**2 · «¿Qué significa batua?» → «el batua».** No enseñaba nada. La traducción
+pasa a **«el euskera unificado»**, con `esAlt` para «el estándar» y «el
+batua» (aceptarlo es de justicia, aunque no sea lo que se muestra). La nota
+se ajustó para no repetir lo que ya dice la traducción.
+
+*Barrido de la misma clase de fallo:* solo tres entradas en todo el curso se
+traducen a sí mismas, y **las otras dos no son un fallo**: `sofa` = «el sofá»
+y `patata` = «la patata» son préstamos que coinciden de verdad. Para un
+ejercicio de escuchar siguen valiendo, porque la pronunciación no es la misma.
+
+**3 · El «casi correcto» no enseñaba la respuesta buena.** Se daba por válido
+y se pasaba de largo, así que la errata volvía a la siguiente vuelta. Ahora
+las dos correcciones (`corregirTraducir` y `corregirTeclear`) muestran la
+comparación letra a letra igual que en un fallo — solo cambia el titular y el
+color.
+
+Detalle que importa: se compara contra **la variante a la que te acercaste**,
+no contra la solución principal. Si escribiste algo parecido a la segunda
+forma válida, corregirte hacia la primera sería desconcertante.
+
+Probado en `scripts/probar_casi.js`, con el caso de control incluido:
+acertando exacto **no** se enseña la respuesta, porque acabas de escribirla.
+
+**4 · `nongoa` suena «nowa».** La G se pierde y la última vocal no se oye.
+Deben sonar las tres sílabas con la G marcada: **non-GO-a**. Añadida al lote
+(`lote-ric-3.mjs`, ahora 23) y a `docs/audios-pendientes.md`.
+
+### «Tema» en vez de «subnivel», y salida del callejón al acabar (26/08/2026)
+
+Dos cosas que Ric ve **haciendo el curso**, que es donde se notan.
+
+#### La palabra
+
+*«Subnivel»* pasa a **«tema»** en todo lo que se ve en pantalla: las tarjetas
+de unidad («4 temas»), la cabecera del tema, y los mensajes de la pantalla
+final («Tema superado», «Te quedan 3 temas en la unidad»).
+
+**Solo el texto visible.** La clave `subnivel` de los JSON y los nombres de
+las funciones se quedan como están: renombrarlas sería mucho ruido sin
+ganancia, y el esquema de datos también es de Miguel. Queda esa asimetría
+entre lo que se ve y lo que se programa; si molesta, es un commit aparte.
+
+#### El callejón del final
+
+Al acabar los ejercicios de un tema, la pantalla ofrecía **«Repetir la
+unidad»** y **«Volver al inicio»**. Ninguna de las dos es lo que quieres
+hacer ahí: lo natural es seguir. Y encima «repetir la unidad» era mentira,
+porque lo que habías hecho era un tema.
+
+Ahora, al terminar un tema:
+
+| | |
+|---|---|
+| **Seguir: «La familia de non»** | entra en el siguiente tema por su explicación |
+| Volver a la unidad | |
+| Repetir este tema | |
+
+Si era el último tema de la unidad, el primer botón pasa a ser **«Volver a la
+unidad»**. El test de la unidad conserva sus botones de siempre.
+
+**Una trampa que había que esquivar:** cuatro temas del curso son solo de
+vocabulario y no tienen ficha de gramática (1.2, 4.7, 8.4 y 9.4). «Seguir» en
+esos habría abierto una pantalla vacía, así que cae en la portada del tema.
+
+Comprobado en `scripts/probar_navegacion.js`, que recorre **los 48 temas de
+las 10 unidades** verificando a dónde manda cada «Seguir», que el test no lo
+ofrezca, y qué botones salen en cada caso.
+
+### Quinta tanda: agujeros de explicación en las unidades 3 y 4 (26/08/2026)
+
+Todo detectado por Ric **haciendo el curso**, que es donde se ven.
+
+#### Respuestas
+
+**`zenbat?` daba «casi correcto» a «cuánto».** Su traducción es «¿cuánto?
+¿cuántos?» — dos alternativas separadas solo por el cierre de interrogación,
+y los separadores que el código entendía eran la coma y la barra. Las trataba
+como **una sola respuesta de dos palabras**. Arreglado en el motor, no palabra
+por palabra: ahora `? ¿` separa alternativas, patrón que no es ambiguo. Le
+pasaba también a `zein?` y a `nondik?`.
+
+**`zergatik?` y «porqué»: se queda como error, a propósito.** Ric preguntó si
+debería aceptarse. La respuesta salió al probarlo: como las tildes se aplanan,
+aceptar «porqué» acepta también **«porque»** — y «porque» ya es de `-lako`, el
+sufijo causal. Aceptarla enseñaría a confundir dos palabras del curso. Es el
+mismo motivo que impidió dar «bien» a `oso ondo`. En vez de eso, la nota de
+`zergatik?` explica ahora la diferencia.
+
+#### Explicaciones que faltaban
+
+**3.4 practicaba exclamativas sin explicarlas.** Siete variantes preguntaban
+por `Hau hotza!` y no había ninguna ficha. El agujero del 3.3 otra vez.
+Escrita **«Exclamar: la misma palabra que para señalar»**, que engancha con
+los demostrativos que se acaban de ver y avisa de que los adjetivos llegan en
+la unidad 5.
+
+**4.1 «Números del 1 al 20» empezaba por el once.** Los diez primeros estaban
+en el vocabulario y no los presentaba nadie. Escrita **«Del uno al diez»**,
+con los tres avisos que ahorran disgustos (`bat` es también «un/una» y va
+detrás; `bi` admite las dos posiciones; detrás de número el sustantivo va sin
+artículo).
+
+**4.6 «La familia» no presentaba la familia.** Efecto de la fusión: «La
+familia cercana» solo aportaba la ficha de los hermanos y «La familia
+extendida» hablaba de casos particulares. Veinte palabras y nada que las
+ordenara — y salían en las pruebas. Escrita **«La familia, de arriba abajo»**,
+con el mapa entero y dos observaciones: casi ninguna se empareja por género
+(*aita*/*ama*, *osaba*/*izeba* no se parecen), y la excepción que canta es
+`lehengusua`/`lehengusina`, que vino de fuera con el emparejamiento puesto.
+
+#### Explicaciones que se quedaban cortas
+
+**4.2** ahora **desmonta el 71 y el 54** paso a paso, señala que el segundo
+trozo nunca pasa de 19 (que es por lo que hacía falta el once-diecinueve
+antes), y amplía el paralelo con el francés: *soixante-dix*, *quatre-vingts*,
+y que el francés solo lo hace a partir del 60 mientras el euskera lo lleva de
+principio a fin.
+
+**4.3** lista **los doce primeros ordinales** en vez de cinco, con sus siete
+palabras nuevas al vocabulario (más distractores para los ejercicios).
+
+**4.5 `eduki`** se conjuga **entero** (nik, zuk, hark, guk, zuek, haiek),
+verificado en fuente, señalando que todas empiezan por `dauka-` y que quien
+tiene lleva la `-k` del ergativo. Y se quitó la referencia a `jaten dut`, que
+es de la unidad 7: ahora dice que ese mecanismo llega más adelante. El
+ejercicio `u4-g21 v4` lo citaba igual y también se reescribió.
+
+**Vocabulario que se usaba sin presentar:** `astia` (no estaba en ninguna
+unidad) y `dirua` (estaba en 9.5, cuatro unidades después de usarse) pasan a
+4.5. Quitada la duplicada de 9.5, que la sigue practicando como repaso.
+
+**4.6, ejemplos con «nik»** (pedido por Ric): las tres frases comparadas
+—`Nik arreba bat daukat` / `Nik ahizpa bat daukat` / `Mikelek arreba bat
+dauka`— dejan ver que la `-k` marca a quien tiene, y que las dos primeras son
+la misma frase en castellano y palabras distintas en euskera.
+
+#### El género en las explicaciones
+
+Ric: *«a veces me da la sensación de que las explicaciones son siempre en
+masculino»*. El vocabulario ya estaba bien («el/la amigo/a», «nosotros /
+nosotras»); donde se escoraba era en **las tablas de conjugación**.
+
+Decisión de estilo: **doblar todas las glosas dejaría el texto ilegible**. Así
+que la tabla de `izan` —la primera del curso— va doblada y rematada con el
+porqué («de aquí en adelante no lo repetiremos, pero da igual siempre»), y a
+partir de ahí se **alterna**: las formas reforzadas abren en femenino, y la
+ficha de ordinales explica que `bigarrena` es «el segundo» y «la segunda» sin
+que haya que elegir.
+
+#### Escuchando un número, la cifra vale tanto como la palabra
+
+Ric: oyendo `zortzi` debería aceptar **«8»** además de «ocho». Lo que se
+practica es reconocer la palabra en euskera, no escribir castellano.
+
+Hecho **en el motor**, no con `esAlt` palabra por palabra, para que valga
+también para los números que se añadan después: 29 entradas cubiertas de
+golpe (1-20, las decenas, `ehun` y `mila`).
+
+Dos decisiones que conviene tener anotadas:
+
+- **Funciona en los dos sentidos.** Si algún día una respuesta se escribe con
+  cifra, se aceptará la palabra.
+- **Solo cuando la respuesta entera es el número.** Dentro de una frase no se
+  convierte: «hace dos años» no acepta «hace 2 años». Se puede ampliar, pero
+  así el comportamiento es predecible y no aparecen sorpresas donde nadie las
+  busca.
+
+Cubierto en `scripts/probar_respuestas.js`, que comprueba también que
+rechace el número equivocado y las palabras parecidas (`ochenta` por `ocho`).
+
+### El curso en gernikés, borrado (26/08/2026)
+
+Ric: *«el gernikés se puede borrar definitivamente»*. Estaba desenganchado de
+la interfaz desde hace unas horas; ahora se van también los archivos.
+
+**Lo que se ha ido:** `data/unidades-gernikes/` (12 unidades, 77 fichas, 365
+palabras, 721 variantes) y `data/curso-gernikes.json`. Unos 456 KB.
+Recuperables en el historial de git si algún día hicieran falta.
+
+**Y el cableado que quedaba**, que era más de lo que parecía: el registro de
+cursos de `verificar.py`, el bloque informativo de `probar-todo.sh`, y la
+opción del selector en `revisar.html` — una herramienta que no habíamos
+mirado y que también lo llevaba.
+
+#### Lo que NO se toca, porque no es lo mismo
+
+Ric lo precisó: *«cuando se usa Gernika en los textos y explicaciones está OK,
+es la variante y explicaciones localizadas»*. **Las once menciones a Gernika
+en las fichas se quedan**, incluida la curiosidad del `etxie` por `etxea` en la
+ficha del artículo. Lo que se borra es la versión paralela del curso, no el
+sitio ni sus rasgos.
+
+También se quedan las menciones en `docs/` y `CHANGELOG.md`: eso es histórico
+y borrarlo sería reescribir el pasado.
+
+#### Un fallo que salió del barrido
+
+`u1-g14 v4` **seguía preguntando por el botón «Bizkaiera / Gernikera»**. Al
+reescribir su ficha se me pasó el ejercicio, así que estaba doblemente mal: el
+botón ya no dice eso, y tampoco hace lo que la respuesta correcta afirmaba.
+Actualizado.
+
+`scripts/gen_14.py` se conserva —es el registro de cómo se montó el subnivel
+1.4— pero **con un aviso arriba de que ya corrió y no hay que relanzarlo**: la
+ficha que escribe describe el selector retirado, y volver a ejecutarlo
+pisaría la versión buena.
+
+### La barra dice dónde estás, y las burbujas van al final (26/08/2026)
+
+#### Unidad y tema en la barra superior
+
+Ric: dentro de un tema quiere ver **la unidad y el tema** arriba. Antes solo
+cabía una de las dos —en Gramática se veía la unidad, en la portada del tema
+el tema— así que metido en un ejercicio no sabías de qué tema era.
+
+Empecé metiéndolo en una línea y **no cabía**: el peor caso, «Zenbat eta
+familia · 4.4 Tener, y decir tu edad», se corta en un móvil, y lo que se
+perdía era justo el nombre del tema. La barra mide 60px y una línea usa 22,
+así que **van en dos líneas**: la unidad arriba en gris, el tema debajo. Con
+la barra de progreso del ejercicio ocupa 45 de 59px, así que cabe de sobra.
+
+Comprobado a 375px con el título más largo del curso: los dos enteros, sin
+recortar. Las pantallas de una sola línea (Home, unidad, diccionario) no
+cambian.
+
+*Detalle:* la clase de las dos líneas la pone el JS en vez de usar `:has()`
+en el CSS, que es un selector reciente y esto tiene que verse igual en
+cualquier navegador.
+
+#### Las burbujas de dialecto, al final de su tema
+
+Ric: *«estas burbujas localizadas deben estar al final del tema que les
+corresponde»*. En medio cortan la explicación en dos.
+
+Barridas las 21. **Cuatro estaban en medio** —una de ellas por mi culpa, al
+insertar la ficha del jueves en 6.2 empujé la burbuja detrás— y **tres
+estaban en el tema equivocado**:
+
+- La de **`egon`** vivía en 5.2 «La casa por dentro» y habla del verbo:
+  pasa a **5.1**. La encontró Ric.
+- La de 5.2 mezclaba **colores y casa**. Partida: los colores a **5.3**
+  (donde los moví hace unas horas), la casa se queda.
+- La de 6.5 «Las fiestas» abría hablando **del cuerpo** (`belarria`). Otro
+  resto de la vieja unidad 10.1: ese párrafo se va a **u9 9.3**.
+
+Todas las unidades conservan al menos una. **`verificar.py` comprueba ahora
+que ninguna burbuja tenga una ficha normal detrás**, así que la regla se
+mantiene sola.
+
+### Errores de contenido en ejercicios (para el próximo lote de cambios)
+
+- **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
+  ambiguo: "a la izquierda" / "a la derecha".**
+  `data/unidades/09-nora.json:1071` («a la derecha») y
+  `:1084` («a la izquierda»). Cada uno da por única respuesta correcta la
+  forma de movimiento (`eskuinera`/`ezkerrera`, "hacia la derecha/hacia la
+  izquierda"), pero entre las opciones también está la forma de ubicación
+  (`eskuinean`/`ezkerrean`, "en la derecha/en la izquierda") — y las dos
+  se traducen al castellano exactamente igual, "a la derecha"/"a la
+  izquierda", así que con el enunciado tal cual las dos son defendibles.
+  La propia ficha de gramática de la unidad (línea 349) ya explica la
+  diferencia (el sufijo `-ra` es el que marca movimiento) pero el
+  ejercicio no la aprovecha. Corrección propuesta por Ric: reescribir el
+  enunciado para que quede claro que se pide la forma de movimiento —
+  algo como «Cuando das una indicación y dices que hay que girar a la
+  izquierda, se dice ____» (y su pareja con "derecha"/"girar a la
+  derecha").
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-18 · Unidad 2, ejercicio de ordenar: falta "bonito/a" en el
@@ -252,6 +1325,110 @@ comparten este error (confirmado de oído en `jaten dut`).
   la pista por algo que oriente sin resolver — p. ej. avisar de que hay dos
   formas válidas y en qué se apoya cada una («izena» = sustantivo + "dut";
   o el verbo "izan"), sin escribir la frase entera.
+
+- **2026-08-22 · Repaso de vocabulario: pregunta "tarde" ambigua entre
+  adverbio y sustantivo.** `data/unidades/07-ordua.json:235` (`berandu` →
+  `es: "tarde"`, adverbio de llegar tarde) y `data/unidades/07-ordua.json:129`
+  (`arratsaldea` → `es: "la tarde"`, sustantivo del momento del día).
+  Duplicado también en `data/unidades-gernikes/07-ordua.json` (mismas
+  líneas) y `berandu` reaparece en `data/unidades/08-egiten.json:144` /
+  `data/unidades-gernikes/08-egiten.json:144`. En castellano las dos
+  palabras coinciden («tarde»), y en el repaso de vocabulario la pregunta
+  se muestra sin más contexto, así que no hay forma de saber cuál de las
+  dos se pide. `berandu` ya lleva una `nota` que distingue de
+  `arratsaldea` (en la versión de u7, no en la de u8), pero no está claro
+  que el repaso la muestre. **Criterio general a aplicar:** cuando una
+  palabra en castellano tiene un sinónimo/homónimo entre las palabras del
+  curso, aclarar debajo de la pregunta a qué acepción se refiere (p. ej.
+  «tarde (llegar tarde)» vs. «tarde (momento del día)»), no dejar la
+  palabra sola. Revisar si hay más pares así en el resto del vocabulario.
+
+- **2026-08-23 · Unidad 10: se enseñaba `dio` pero se pedía `diot`, una
+  forma nunca explicada. CORREGIDO en esta rama.** La tabla de gramática
+  («A quién: la -(r)i de los nombres») enseña seis formas del auxiliar de
+  dar/decir — `dit, dizu, dio, digu, dizue, die` — todas con **sujeto de
+  tercera persona** (es él/ella quien da): lo único que varía en la tabla
+  es el destinatario. Pero la unidad usaba `diot` («yo se lo a él/ella»,
+  con la `-t` de sujeto «yo»), que combina un cambio de sujeto que no se
+  explica en ningún sitio: lo comprobé en las 12 unidades y no aparece
+  antes ni después. Y no era un desliz aislado: estaba en la nota de
+  vocabulario de `lagundu`, en el ejemplo del cuerpo, en dos frases de
+  ejemplo con audio, en un ejercicio de ordenar y **en dos ejercicios de
+  opción múltiple que lo daban como respuesta correcta** («Yo, a ella →
+  diot»), o sea que acumulabas fallos por una forma que el curso nunca
+  te había enseñado.
+  - **Por qué no se añade al temario:** el paradigma completo
+    NOR-NORI-NORK (auxiliar variando a la vez por sujeto, objeto y
+    destinatario) es contenido de A2/B1, muy por encima del A1/HABE que
+    fija `docs/brief.md`. La propia sección ya lo trataba como
+    reconocimiento pasivo («No hace falta que lo domines hoy. Basta con
+    reconocerlo cuando lo oigas»), así que meter el eje del sujeto sería
+    justo la sobrecarga que esa frase intenta evitar.
+  - **Qué se hizo:** pasar todo a `dio`, la forma que sí está en la tabla,
+    ajustando el castellano («Se lo he dicho» → «Se lo ha dicho») y el
+    sujeto del ejercicio de ordenar (`Nik` → `Hark`, que sí se enseña en
+    la unidad 5). Los ejemplos siguen cumpliendo su función original, que
+    era mostrar `-ri` con nombres propios (*Aneri*), sin introducir nada
+    nuevo.
+  - **Dato que confirma que `dio` era lo correcto:** la sección dialectal
+    de esa misma unidad ya decía «<b>Esan deutso.</b> — Se lo ha dicho.
+    (batua: esan dio)» — la parte de bizkaiera ya usaba la forma de
+    tercera persona, y era el batua el que se desviaba.
+  - Pendiente para Miguel: generar los dos audios nuevos (ver la sección
+    «Audios nuevos que hay que generar» al principio del documento).
+
+### La forma de la respuesta no debe delatarla en las opciones múltiples
+
+- **2026-08-23 · Detectado por Ric repasando vocabulario. CORREGIDO el
+  generador; los ejercicios escritos a mano, a medias.** Cuando la
+  respuesta correcta es una pregunta o una frase y las otras tres son
+  sustantivos sueltos, se acierta sin saber la palabra, solo por la
+  silueta.
+  - **El repaso de vocabulario (generado por código): arreglado.**
+    `preguntaOpcion` en `js/app.js` rellenaba con palabras al azar del
+    fondo y su único filtro era «que no signifiquen lo mismo que la
+    respuesta»; no miraba la forma. Ejemplo real: «Zer ordu da?» salía
+    contra «el mediodía», «el día» y «temprano» — la única con signo de
+    interrogación era la buena. Ahora los candidatos se agrupan por forma
+    (pregunta / frase de varias palabras / palabra suelta) y se prefieren
+    los de la misma, sin perder dentro de cada grupo la preferencia por
+    la misma unidad. Medido sobre el vocabulario real del curso (686
+    preguntas posibles, las 12 unidades abiertas): **antes la forma
+    delataba la respuesta en 73 casos (10,6%), ahora en 0**. Si el fondo
+    abierto no da ninguno de la misma forma —al principio del curso, o en
+    unidades como la 7 que tiene una sola pregunta entre 33 palabras— se
+    rellena como antes: mejor una opción de otra forma que quedarse sin
+    pregunta.
+  - **Ejercicios escritos a mano: corregidos 6 de 40.** Los arreglados
+    son los de vocabulario, donde bastaba cambiar un distractor por otro
+    del mismo curso: u1 «Son las 11 de la noche» (`Eskerrik asko` →
+    `Mesedez`, para que `Gabon` no fuera la única de una palabra; se
+    descartó `Agur` porque «adiós» al cruzarte con alguien es defendible
+    y un distractor no debe poder discutirse), u1 «¿Cómo
+    devuelves la pregunta?» (`Zer moduz` → `Zer moduz?`, que además es
+    como está en el vocabulario), u2 «¿Qué significa nirekin?» (`Para mí`
+    → `Mío`, que encima se confunde de verdad con `nire`), u3 «Quieres
+    que te repitan algo» (`Bai` → `Noiz?`), u3 «Eres de Bilbao pero hoy
+    vienes de Gernika» (`Bilbora naiz`, que era agramatical, → la frase
+    inversa `Gernikakoa naiz eta Bilbotik nator`: misma longitud y obliga
+    a entenderla de verdad) y u11 «La semana pasada» (el hueco partía la
+    respuesta en `____ astean`; ahora el hueco es entero y las opciones
+    son las expresiones completas de la unidad).
+
+- **PENDIENTE DE DECIDIR: quedan 34 ejercicios donde la correcta es la
+  más larga.** De ellos **30 son preguntas de concepto**, en las que la
+  respuesta buena es larga porque *explica* algo y los distractores son
+  cortos y a menudo de broma. Ejemplo (u2): «¿Por qué en euskera se omite
+  el pronombre sujeto a menudo?» → ✔ «Porque el verbo ya dice quién es»
+  frente a «Por pereza», «Porque está prohibido», «Solo se omite por
+  escrito». Se acierta eligiendo la larga.
+  - Están repartidos así (en batua; se duplican en gernikés): u2 con 13,
+    u6 con 6, u3 con 5, u4 con 4, u1 y u5 con 2, u7 y u12 con 1.
+  - **No los he tocado** porque arreglarlos no es cambiar un distractor:
+    hay que reescribir los tres falsos para que sean explicaciones igual
+    de largas y creíbles. Son 30 × 2 archivos, es trabajo de contenido y
+    con riesgo de meter errores. Decidir con Miguel si merece la pena, y
+    si se hace, en qué unidades primero (la 2 sola se lleva un tercio).
 
 ### Audio en ejercicios: altavoz explícito en vez de auto-reproducir
 
@@ -322,6 +1499,461 @@ comparten este error (confirmado de oído en `jaten dut`).
     en el repaso (entra cuando se supera esa unidad/tema, no de forma
     genérica por avance total).
 
+### Lista concreta de vocabulario a añadir (2026-08-20, revisada con Ric)
+
+> ✅ **VERIFICADO CONTRA EUSKALTZAINDIA (20/08/2026).** Las palabras de
+> esta lista se han contrastado **una a una** contra el Hiztegi Batua de
+> Euskaltzaindia (consulta automatizada al buscador oficial,
+> `euskaltzaindia.eus/hiztegibatua`). Resultado: **114 de 118
+> confirmadas** como lema con su categoría gramatical y definición.
+> Miguel no necesita repetir esta verificación.
+>
+> **Las 4 que no salieron limpias, revisadas a mano:**
+> - `eta` — falso negativo del script (la búsqueda la sepultaba bajo
+>   decenas de compuestos). **Existe** como `eta1`, categoría
+>   *juntagailua*. ✓
+> - `iloba` — **confirmadas las dos acepciones**: «Senide baten semea edo
+>   alaba» (sobrino/a) y «Biloba, seme-alaben semea edo alaba»
+>   (nieto/a). ✓
+> - `mutil-lagun` / `neska-lagun` — existen, pero como **azpisarrera**
+>   (subentrada) de `lagun`, y con una definición más amplia que
+>   «novio/a»: «Jolasean, lanean edo kidekoetan aritzen den pertsona».
+>   Pendiente de criterio nativo (pregunta A abajo).
+> - `aitite` — **0 resultados**, no está en el diccionario normativo. En
+>   cambio **`amama` sí está** (definida como «Amona»). Asimetría rara,
+>   pendiente de criterio nativo (pregunta B abajo).
+>
+> **Dos sorpresas del diccionario:**
+> - `olentzero` no se define como el personaje, sino como **«Gabon
+>   eguna»** (el día de Nochebuena).
+> - `gabon` viene marcada **«Heg.»** (uso de Hegoaldea, la parte
+>   peninsular).
+>
+> ⚠️ **Lo que esta verificación NO cubre: las frases de ejemplo.** El
+> diccionario valida palabras, no gramática de frases. Las 28 frases de
+> ejemplo escritas para el vocabulario nuevo siguen **sin verificar** y
+> las está revisando un hablante nativo (documento de revisión preparado
+> el 20/08). Hasta que vuelvan, no darlas por buenas.
+
+**Huecos estructurales encontrados al revisar (no estaban en la lista
+original de Ric, salieron al comparar fichas contra vocabulario):**
+
+1. **No hay meses en todo el curso.** La unidad 7 enseña días de la
+   semana, partes del día y ayer/hoy/mañana, pero ningún mes. Es
+   vocabulario A1 básico.
+2. **Los números se cortan en 20, pero la ficha explica más.** La ficha
+   "El sistema es de base veinte" (u5) ya menciona `berrogei`,
+   `hirurogei`, `laurogei` — pero esas palabras **no están en el
+   vocabulario**, así que no tienen audio ni salen en diccionario ni en
+   repaso. Se explica algo que luego no se puede practicar.
+3. **Faltan `eta` (y) y `edo` (o) como vocabulario** — detectado por Ric.
+   Peor aún: la ficha "Enlazar frases" (u12) dice literalmente *"Los que
+   ya tienes: eta (y), baina (pero), edo (o), ere (también)"*, dando por
+   enseñadas dos palabras que nunca se añadieron al vocabulario. Mismo
+   fallo estructural que el punto 2.
+4. **No hay ropa en todo el curso.** Encaja en la u8, que ya tiene
+   `erosi` (comprar) y `denda` (tienda).
+
+*Nota metodológica: se intentó buscar más casos de este tipo con un
+script (palabras en `<b>` de fichas que no están en vocabulario), pero da
+demasiados falsos positivos —tablas de conjugación, contrastes de
+bizkaiera, sufijos, formas declinadas de demostración— para ser fiable.
+Los cuatro casos de arriba salieron de leer con criterio, no del script.*
+
+#### Unidad 2 — conectores básicos
+
+`eta` (y) · `edo` (o)
+
+#### Unidad 5 — familia, animales y números
+
+**Familia** (hoy solo hay hermanos, padres e hijos):
+`mutil-laguna` novio · `neska-laguna` novia · `senarra` marido/esposo ·
+`emaztea` mujer/esposa · `aitona` abuelo ⚠️(en Bizkaia se usa mucho
+`aitite`) · `amona` abuela ⚠️(`amama`) · `osaba` tío · `izeba` tía ·
+`lehengusua` primo · `lehengusina` prima · `iloba` sobrino/a **y también**
+nieto/a · `biloba` nieto/a (esta sí inequívoca)
+⚠️ *Ampliado tras la consulta nativa del 20/08 — ver sección de revisión:*
+formas de bizkaiera a incluir con `registro: bizkaiera` →
+`loba` (= `iloba`, recogida en el diccionario como bizkaiera),
+`aitite` y `aitxitxe` (abuelo), `amuma` y `amama` (abuela).
+De esas cinco solo `loba` y `amama` tienen respaldo normativo; las otras
+tres son habla real sin entrada en el Hiztegi Batua.
+
+**Animales** (hoy solo perro y gato):
+`txoria` pájaro · `zaldia` caballo · `behia` vaca · `ardia` oveja ·
+`txerria` cerdo · `oiloa` gallina · `untxia` conejo · `sagua` ratón
+
+**Números por encima de 20** (ver hueco 2):
+`hogeita hamar` 30 · `berrogei` 40 · `berrogeita hamar` 50 ·
+`hirurogei` 60 · `hirurogeita hamar` 70 · `laurogei` 80 ·
+`laurogeita hamar` 90 · `ehun` 100 · `mila` 1000
+
+#### Unidad 6 — colores y casa
+
+**Colores** — *decidido con Ric el 20/08: van a la u6, no a la u2, porque
+es donde vive la ficha "Adjetivos: detrás, y con el artículo al final".
+Hay que retocar esa ficha y añadir ejercicios con colores.*
+`gorria` rojo · `urdina` azul · `horia` amarillo · `berdea` verde ·
+`zuria` blanco · `beltza` negro · `grisa` gris · `marroia` marrón ·
+`arrosa` rosa · `morea` morado
+⚠️ `laranja` sirve para la fruta y para el color naranja — no es error,
+es así en euskera, pero conviene decirlo en la ficha.
+Frases de ejemplo del estilo que pedía Ric (⚠️ verificar): «etxe gorria»
+(la casa roja), «gure herri zuria» (nuestro pueblo blanco). **Ojo:
+`nire` = mi, `gure` = nuestro** — en el ejemplo original de Ric se
+tradujo `nire herri zuria` como "nuestro pueblo blanco" y es "mi".
+
+**Casa** (hoy hay dormitorio, cocina, baño, puerta, ventana, mesa, silla,
+cama — faltan habitaciones y muebles comunes):
+`egongela` salón · `jangela` comedor · `bainugela` cuarto de baño ·
+`sarrera` entrada · `eskailerak` escaleras · `igogailua` ascensor ·
+`balkoia` balcón · `lorategia` jardín · `garajea` garaje ·
+`armairua` armario · `sofa` sofá · `telebista` televisión ·
+`hozkailua` nevera · `dutxa` ducha · `ispilua` espejo · `argia` luz ·
+`horma` pared · `teilatua` tejado
+
+#### Unidad 7 — meses (ver hueco 1)
+
+`urtarrila` enero · `otsaila` febrero · `martxoa` marzo · `apirila` abril ·
+`maiatza` mayo · `ekaina` junio · `uztaila` julio · `abuztua` agosto ·
+`iraila` septiembre · `urria` octubre · `azaroa` noviembre ·
+`abendua` diciembre · `hilabetea` el mes
+
+#### Unidad 8 — comida y ropa
+
+**Comida y bebida:**
+`laranja` naranja · `platanoa` plátano · `mahatsa` uva · `madaria` pera ·
+`marrubia` fresa · `patata` patata · `tomatea` tomate · `tipula` cebolla ·
+`letxuga` lechuga · `gazta` queso · `oilaskoa` pollo · `arroza` arroz ·
+`zukua` zumo · `gatza` sal · `azukrea` azúcar
+
+**Ropa** (ver hueco 4):
+`arropa` ropa · `alkandora` camisa · `prakak` pantalones ·
+`zapatak` zapatos · `jertsea` jersey · `jaka` chaqueta · `gona` falda ·
+`soinekoa` vestido · `txapela` boina · `betaurrekoak` gafas
+✅ *Confirmada como vigente por los nativos (20/08), y con familia
+léxica que merece ficha propia:* `txapelduna` campeón/a ·
+`txapelketa` campeonato — los dos salen de `txapela`, porque al ganador
+se le entrega una.
+
+#### Unidad 10 — cuerpo, estaciones, tiempo y fiestas
+
+**Partes del cuerpo** — *idea de Ric: entran de forma natural con los
+gustos, que la unidad ya enseña en plural (`gustatzen zaizkit`): «zure
+begiak gustatzen zaizkit» (⚠️ verificar la frase).*
+`burua` cabeza · `begia`/`begiak` ojo/ojos · `sudurra` nariz ·
+`ahoa` boca · `belarria` oreja · `eskua` mano · `besoa` brazo ·
+`hanka` pierna · `oina` pie · `ilea` pelo · `bihotza` corazón
+
+**Estaciones** (la unidad ya tiene `negua` y `uda`):
+`udaberria` primavera · `udazkena` otoño
+
+**Tiempo atmosférico** (ya hay `euria` y `eguzkia`):
+`eguraldia` el tiempo · `elurra` nieve · `haizea` viento · `hotza` frío ·
+`beroa` calor · `hodeia` nube
+
+**Fiestas y celebraciones:**
+`Gabonak` Navidad · `Urte Berri` Año Nuevo · `Olentzero` ⚠️(personaje
+navideño vasco, muy cultural — decidir si entra como vocabulario o como
+nota cultural) · `Aste Santua` Semana Santa · `Inauteriak` carnaval ·
+`urtebetetzea` cumpleaños · `jaieguna` día festivo
+⚠️ **Detalle a explicar:** `Gabonak` (Navidad) es el plural de `gabon`,
+que la u1 ya enseña como "buenas noches". Sin nota, confunde.
+
+**Volumen total: ~115 palabras nuevas**, casi un tercio más de las 340
+que tiene hoy el curso. Conviene decidir con Miguel si entran todas de
+golpe o por tandas (p. ej. primero los huecos estructurales —meses,
+números, eta/edo— que son los más sangrantes, y luego los temáticos).
+
+### Cómo introducir el vocabulario nuevo: sub-unidades (decidido 20/08)
+
+- **2026-08-20 · Propuesta de Ric, con recomendación de Claude.** En vez
+  de que las palabras nuevas aparezcan flotando en el repaso, crear
+  **sub-unidades**: después de la unidad 5 viene la 5.1, que es su
+  ampliación de vocabulario — con sus palabras, sus explicaciones tipo
+  ficha de gramática, y sus propios ejercicios. **Las palabras solo entran
+  al repaso general al aprobar la sub-unidad.**
+
+  **Por qué esta opción y no el repaso dosificado:** hay palabras que
+  necesitan explicación, y una tarjeta de repaso no tiene dónde ponerla.
+  Casos concretos salidos de la verificación con Euskaltzaindia:
+  `iloba` (sobrino **y** nieto), `Gabonak` (Navidad) contra el `gabon`
+  (buenas noches) que ya enseña la u1, `laranja` (la fruta y el color),
+  los números vigesimales (`berrogei` = «dos veintes»), y las formas
+  vizcaínas `aitite`/`amama`. Todo eso cabe en una ficha, no en una
+  tarjeta.
+
+  Además encaja con la decisión de diseño ya tomada («el contenido vive
+  en JSON y el código no se toca para añadir temario»): una sub-unidad es
+  estructuralmente una unidad más, y el motor ya sabe hacer
+  gramática → vocabulario → ejercicios → 70% → completada → alimenta el
+  calendario.
+
+  **Coste real, medido:** cada unidad de hoy tiene exactamente **12
+  grupos × 5 variantes = 60 variantes**, sin excepción (144 grupos y 720
+  variantes en total). Si las sub-unidades copiaran esa convención serían
+  300 variantes nuevas. **Recomendación: hacerlas más ligeras, 5-6 grupos
+  en vez de 12.** Los 5 variantes por grupo hay que mantenerlos (el motor
+  los usa para no repetir la ronda anterior, vía `progreso.ultimas`), pero
+  el número de grupos no tiene por qué igualar al de una unidad completa.
+  Una sub-unidad es un apéndice, no un capítulo.
+
+  **Serían 5 sub-unidades, no 12** — solo cinco unidades reciben
+  suficiente vocabulario nuevo:
+  `5.1` familia, animales y números · `6.1` colores y casa ·
+  `7.1` los meses · `8.1` comida y ropa · `10.1` cuerpo, tiempo y fiestas.
+  La unidad 2 solo recibe `eta` y `edo`, dos palabras que no necesitan
+  explicación: van directas a su vocabulario, sin sub-unidad.
+
+  **Consecuencia que simplifica:** esta opción **hace innecesaria la
+  pantalla de "vocabulario nuevo"** de la sección siguiente. No son
+  complementarias, son dos soluciones al mismo problema — si la palabra
+  se presenta en el vocabulario de su sub-unidad, ya no llega fría al
+  repaso. Se elige una de las dos.
+
+  **A comprobar con Miguel:** cómo se ve la portada con 17 entradas en
+  vez de 12, y cómo se numeran/muestran las sub-unidades.
+
+### Recuperar `verificar.py`, el control de calidad del original
+
+- **2026-08-20 · Detectado por Claude, aprobado por Ric.** El repositorio
+  de Miguel **no tiene `verificar.py`** — y no es que se borrara: nunca
+  estuvo (comprobado en el historial de git). Es el script de control de
+  calidad del proyecto original de Ric.
+
+  **Probado contra los datos actuales de Miguel: funciona tal cual, sin
+  adaptar nada.** Resultado: `Unidades: 12 · ejercicios: 144 · variantes:
+  720 · Vocabulario: 364 entradas` → **sin errores**, 15 avisos menores
+  (13 respuestas de `traducir` sin normalizar —inofensivo, la comparación
+  ya ignora mayúsculas y puntuación— y 2 traducciones compartidas que la
+  app ya resuelve sola forzando la dirección de la pregunta).
+
+  **Qué comprueba** (relevante con 115 palabras y 5 sub-unidades nuevas):
+  ids de grupo únicos en todo el curso y con el prefijo de su unidad,
+  cinco variantes por grupo, tipos de ejercicio conocidos, índice de
+  `correcta` dentro de rango, que las fichas de `orden` reconstruyan
+  exactamente su frase, cuatro parejas en los de emparejar, enunciados sin
+  repetir entre unidades, claves raras en vocabulario o gramática,
+  palabras repetidas dentro de una unidad, unidades sin ficha de Gernika,
+  y **pistas que mienten** al contar letras/palabras o al decir por dónde
+  empieza la solución.
+
+  ⚠️ **Corrección a lo que dijo Claude antes en la conversación:** afirmé
+  que este script habría cazado los dos errores de contenido que encontró
+  Ric (el enunciado sin «bonito» de la u2 y la pista que da la respuesta
+  de la u4). **Es falso.** No los caza ninguno: el primero exigiría
+  comparar el sentido del `es` contra el `eu`, y el segundo es una pista
+  que no miente sobre letras ni sobre el comienzo, simplemente entrega la
+  solución. El propio `PROYECTO.md` del original ya lo dice: *«el
+  verificador cubre lo mecánico, no lo pedagógico. Una explicación puede
+  estar bien formada y ser falsa.»* Sigue mereciendo la pena recuperarlo,
+  pero por lo mecánico, no como red contra errores de criterio.
+
+  **Hueco a resolver al recuperarlo:** el script lee las unidades desde
+  `data/curso.json`, que solo lista `unidades/`. La variante
+  **`data/unidades-gernikes/` (12 archivos) se queda sin revisar**. Es
+  contenido que Miguel añadió después del original, así que el script no
+  lo contemplaba. Convendría ampliarlo para que cubra las dos variantes.
+
+  El archivo original está en la copia de Ric:
+  `Dropbox/Ric/Tests Claude/euskaraz/verificar.py` (8 KB).
+
+### Pantalla de "vocabulario nuevo" antes del repaso
+
+> **Nota del 20/08, posterior:** si se adopta la propuesta de
+> **sub-unidades** (sección anterior), esta pantalla deja de hacer falta —
+> las palabras ya se presentan en el vocabulario de su sub-unidad y nunca
+> llegan frías al repaso. Son dos soluciones alternativas al mismo
+> problema, no complementarias. Se mantiene anotada por si se descarta la
+> vía de sub-unidades.
+
+- **2026-08-20 · Propuesta de Ric.** Al entrar en una sesión de repaso de
+  vocabulario, si entre las preguntas hay palabras que nunca se han
+  visto, mostrar **una pantalla previa** al primer ejercicio: "Vocabulario
+  nuevo", con esas palabras y sus traducciones, como presentación.
+  - **Por qué importa ahora más que nunca:** con ~115 palabras nuevas
+    entrando al curso, sin esta pantalla la primera vez que ves una
+    palabra es **fallando** una pregunta sobre ella. Es justo la
+    frustración que se quiere evitar. Es además el patrón estándar en
+    sistemas de repetición espaciada (Anki y similares "presentan" la
+    tarjeta antes de examinarla).
+  - **⚠️ Consecuencia a decidir — choca con una decisión ya tomada.** El
+    `PROYECTO.md` establece que el calendario solo mira **la primera
+    respuesta** de cada palabra en la sesión, y que el acierto que cuenta
+    debe ser "en frío" porque *"acertar treinta segundos después de haber
+    visto la solución no prueba nada"*. Si la palabra se enseña justo
+    antes, esa primera respuesta ya **no es en frío** y el calendario la
+    ascendería como si se dominara.
+    **Recomendación:** que las palabras presentadas en esa pantalla **no
+    puntúen para el calendario en esa primera vuelta** — se practican,
+    pero el calendario empieza a medirlas en la sesión siguiente, ya en
+    frío. Es coherente con lo que la app ya hace con los repasos ("son
+    práctica, no examen").
+  - **Detalles menores:** que sea saltable (si ya conoces la palabra es
+    fricción), y poner un tope de palabras por pantalla (5-6): si un día
+    caen 14 nuevas de golpe, una pantalla con 14 es un muro.
+
+### Petición concreta para Miguel: generar los audios
+
+El vocabulario de arriba **ya está verificado** contra Euskaltzaindia
+(ver el bloque ✅), así que las palabras se pueden dar por buenas salvo
+las seis que están pendientes de criterio nativo (lista más abajo). Hay
+que generar un mp3 por palabra nueva con `scripts/generar-audio/generar.mjs`
+y subirlos al bucket `euskaraz-audio` de Supabase Storage.
+
+**Ya no hay nada que esperar** (actualizado 25/08): la revisión nativa
+está cerrada, así que se pueden generar todos los audios de una tanda.
+Ojo con estas, que se añadieron o cambiaron después de la lista inicial
+y es fácil que se queden fuera: `loba`, `biloba`, `aitite`, `aitxitxe`,
+`amuma`, `amama`, `txapelduna`, `txapelketa`, `zorionak zuri`.
+
+- Son ~115 mp3 nuevos. El script ya hace el trabajo (`node generar.mjs u5`
+  por unidad, con `--forzar` si hace falta rehacer).
+- **Ojo al coste de revisión:** dado el estado de la voz en euskera
+  (ver más arriba: `eu-ES` está en fase *Preview* en Gemini TTS, y Ric ha
+  encontrado ~41 audios mal pronunciados de los existentes), es de
+  esperar que **una parte de estos 115 salga mal a la primera**. Conviene
+  escucharlos antes de darlos por buenos, igual que se está haciendo con
+  los actuales.
+- Sigue pendiente el acceso de Ric al proyecto de Google Cloud para poder
+  ayudar con esto (ver bloqueo anotado más arriba).
+
+### Revisión nativa: COMPLETA Y CERRADA (25/08/2026)
+
+✅ **Todo el vocabulario nuevo y sus frases están verificados.** Nada
+pendiente en este bloque.
+
+- **Las palabras** (115): contrastadas una a una contra el Hiztegi Batua
+  de Euskaltzaindia. 114 confirmadas directamente, 4 resueltas a mano.
+- **Las seis dudas de criterio**: contestadas por hablantes nativos, y
+  las formas nuevas que aportaron, re-verificadas contra el diccionario.
+- **Las 28 frases de ejemplo**: 4 corregidas en la primera ronda; **las
+  24 restantes revisadas y dadas por buenas por la pareja de Ric (de
+  Gernika)**, que es quien ya venía revisando el contenido del curso
+  según el `PROYECTO.md` original.
+
+**Esto desbloquea:** escribir el contenido de las sub-unidades y generar
+los audios. Ya no hay nada que esperar por el lado lingüístico.
+
+Lo que sigue es el detalle de las respuestas, para que quede el rastro
+del porqué de cada decisión.
+
+#### Respuestas a las seis dudas
+
+- **A. `mutil-lagun` / `neska-lagun`: correcto, y la ambigüedad es real.**
+  Los nativos confirman que se usa **tanto para novio/a como para amigo
+  chico / amiga chica** acentuando el género — «casi como
+  girlfriend/boyfriend en inglés». No hay que buscar otra palabra: hay que
+  **enseñar la ambigüedad**, que es parte del idioma.
+
+- **B. En Bizkaia se usan cuatro formas, no una.** Los nativos: se dice
+  **`aitite` y `aitxitxe`** para abuelo, **`amuma` y `amama`** para
+  abuela, y merece la pena explicarlo. Comprobado después contra
+  Euskaltzaindia: de las cuatro, **solo `amama` está recogida** (definida
+  como «Amona»); `aitite`, `aitxitxe` y `amuma` dan cero resultados. No
+  las invalida —son habla real y el curso quiere precisamente ese
+  registro— pero conviene saber que van sin respaldo normativo, así que
+  el campo `registro: bizkaiera` del esquema es exactamente su sitio.
+
+- **C. `Olentzero` es el personaje, sin duda.** Los nativos corrigen al
+  diccionario en cuanto a uso: la definición «Gabon eguna» es el sentido
+  estrecho, pero en el habla es el personaje. Y añaden que es **una nota
+  cultural muy bonita**, que encaja al hablar de la Navidad y las
+  estaciones (o sea, en la 10.1).
+
+- **D. `iloba` sí es ambiguo en la lengua** — puede ser las dos cosas, lo
+  confirman. **Y aportan un dato nuevo: en Bizkaia se usa `loba`, sin la
+  i- inicial** (lo oyen sobre todo en plural, `lobak`).
+  **Investigado a fondo en Euskaltzaindia, y hay un hallazgo que resuelve
+  la ambigüedad para el curso:**
+  - **`loba`** está recogida, marcada **`iz. bizk.`** (sustantivo,
+    bizkaiera) y definida simplemente como «Iloba». Ejemplos del propio
+    diccionario: «Osaba eta loba», «Beren loba Kepari». Es decir: el
+    dato de los nativos está respaldado, y encaja perfecto como
+    `registro: bizkaiera` de `iloba`.
+  - **`biloba`** existe y **sí es inequívoca**: «Semearen edo alabaren
+    semea edo alaba» — el hijo o hija de tu hijo o hija, o sea nieto/a a
+    secas. Remite explícitamente a «Ik. iloba 2» (véase iloba, acepción
+    2). En bizkaiera tiene además un segundo sentido: bisnieto
+    (`birbiloba`).
+  - **Conclusión práctica para el curso:** el euskera *sí* tiene manera
+    de desambiguar — **`biloba` para nieto/a**, y `iloba` cuando el
+    contexto basta o cuando se habla de sobrinos. Merece una ficha en la
+    5.1 explicando las tres (`iloba`, `loba`, `biloba`).
+  - ✅ **Resuelto por los nativos (25/08):** `loba` / `lobak` en bizkaino
+    vale **indistintamente para sobrino/a y para nieto/a**. Es decir,
+    hereda la ambigüedad completa de `iloba`, no solo el sentido de
+    sobrino que sugerían los dos ejemplos del diccionario. Con esto la
+    ficha de la 5.1 queda clara: `iloba` (batua) y `loba` (bizkaiera) son
+    ambiguas las dos, y `biloba` es la que desambigua hacia nieto/a.
+
+- **E. `Gabonak` va más adelante, no junto a `gabon`.** Los nativos
+  avisan de que enseñarlas cerca confunde. Debe aparecer **cuando se
+  hable de momentos del año y estaciones** — que es justo donde estaba
+  planificada (unidad 10 / sub-unidad 10.1). Decisión confirmada.
+
+- **F. `txapel` es palabra vigente, y su explicación es una inmersión
+  cultural.** Los nativos: campeón es **`txapeldun`** (literalmente «el
+  que tiene txapela») y campeonato también sale de ahí. Comprobado en
+  Euskaltzaindia, y la etimología es aún más bonita de lo que parecía:
+  - `txapeldun` = «Txapelketa edo lehiaketa baten irabazlea» (el ganador
+    de un campeonato o competición).
+  - `txapelketa` = «Irabazleari saritzat, besteak beste, **txapela**
+    ematen zaion lehiaketa» — la competición en la que al ganador se le
+    da, entre otras cosas, **una txapela**. O sea: el campeonato se llama
+    así literalmente por la boina que se le entrega al que gana.
+  - **Añadir `txapeldun` y `txapelketa` al vocabulario**, no solo
+    `txapel`, y una ficha con esta explicación.
+
+#### Correcciones a las frases de ejemplo
+
+- **Frase 13** — `Mahai zuria eta aulki beltza.` La frase está bien; el
+  fallo era **mi traducción**: es «mesa blanca y silla negra», no «*una*
+  mesa blanca y *una* silla negra». Para decir «una» habría que añadir
+  **`bat`** al final de cada sintagma: `mahai zuri bat eta aulki beltz
+  bat`. **Es un buen punto pedagógico**: merece nota o ejercicio propio en
+  la 6.1, porque es un error natural del castellanohablante.
+
+- **Frase 16** — `Nire urtebetetzea maiatzean da.` Correcta. Los nativos
+  sugieren aprovechar palabras así para **explicar sus piezas como
+  curiosidad**: `urtebetetze` sale de **`urte`** (año) + **`bete`**
+  (llenar, completar — confirmado en Euskaltzaindia como verbo:
+  «Zerbaitek hutsune edo tarte bat zeharo hartu»). Literalmente, «el
+  completarse del año». Ficha para la 7.1.
+
+- **Frase 23** — `Zure ahoa gustatzen zait` («me gusta tu boca»):
+  gramaticalmente correcta, pero **puede resultar incómoda**. Cambiada a
+  **`Zure ilea gustatzen zait`** («me gusta tu pelo»). Sigue sirviendo
+  igual para enseñar el singular `zait` frente al plural `zaizkit` de la
+  frase 22. `ile` verificado en Euskaltzaindia.
+
+- **Frase 27** — `Urtebetetze zoriontsua!` **Descartada.** Los nativos la
+  entienden pero no les resulta natural: nadie lo dice así. Lo normal es
+  **`Zorionak!`** o **`Zorionak zuri!`**. Ventaja añadida: `zorionak` ya
+  está en el vocabulario del curso (unidad 12), así que no hay que
+  introducir nada nuevo.
+
+#### Las 24 frases restantes: confirmadas (25/08)
+
+Revisadas por la pareja de Ric, de Gernika. **Todas correctas**, sin
+cambios. Junto con las cuatro corregidas arriba, las 28 frases de
+ejemplo quedan listas para entrar al curso.
+
+#### Resumen para la ficha de parentesco de la 5.1
+
+Queda material para una ficha bonita, con todo verificado:
+
+| Palabra | Registro | Significa |
+|---|---|---|
+| `iloba` | batua | sobrino/a **y** nieto/a — ambigua |
+| `loba` | bizkaiera | lo mismo, igual de ambigua (confirmado por nativos) |
+| `biloba` | batua | nieto/a, sin ambigüedad |
+
+La gracia pedagógica: el castellano necesita dos palabras donde el
+euskera usa una, pero el euskera **sí tiene** manera de desambiguar
+cuando hace falta (`biloba`). No es una carencia del idioma, es que la
+distinción no le resulta necesaria por defecto.
+
 ### Home: colorear el porcentaje de cada unidad por tramos
 
 - **2026-08-18 · Propuesta de Ric, refinada en conversación.** En las
@@ -358,6 +1990,80 @@ comparten este error (confirmado de oído en `jaten dut`).
     hoy. ¿Un repaso filtrado respeta el calendario (solo lo vencido de esa
     categoría) o es práctica libre? Y ¿debe puntuar para el calendario o
     ser como los repasos actuales, que entrenan sin marcar unidades?
+
+### Selector de dialecto: renombrar "Gernikés" a "Gernikera"
+
+- **2026-08-20 · Propuesta de Ric.** La etiqueta "Gernikés" del selector
+  (`index.html:37`, `data-modo="gernikes"`) no es una palabra estándar ni
+  en español ni en euskera — no sigue el patrón real de gentilicios en
+  español (que sería *guernicarra* o *gernikarra*, como *bilbaíno* de
+  Bilbao o *donostiarra* de San Sebastián).
+  - El problema de fondo: el selector empareja "Bizkaiera" (término vasco
+    real, "el habla/dialecto vizcaíno") con "Gernikés", que mezcla un
+    término inventado en español con uno vasco — no son de la misma
+    familia.
+  - **Propuesta:** cambiar la etiqueta a **"Gernikera"**, que sigue el
+    mismo patrón que *Bizkaiera* y *Gipuzkera* (dialecto guipuzcoano): el
+    sufijo *-era* para nombrar el habla local de un sitio. Sería "el habla
+    de Gernika", igual que Bizkaiera es "el habla de Bizkaia".
+  - Solo afecta al texto visible (`index.html:37`); la clave interna
+    `data-modo="gernikes"` / `MODO_DIALECTO` puede quedarse igual, es un
+    identificador técnico, no el nombre que ve el usuario.
+
+### Análisis de nivel: el curso frente al A1 oficial (25/08/2026)
+
+Investigación pedida por Ric. Fuente: **HEOC** (*Helduen Euskalduntzearen
+Oinarrizko Curriculuma*), currículo oficial establecido por Orden del
+Gobierno Vasco del 22/07/2015 (BOPV nº 144), marco de referencia para
+euskaltegis homologados y HABE. Se leyó íntegra la sección A1,
+**páginas 73-98** del PDF oficial. Informe compartible:
+https://claude.ai/code/artifact/2fca0736-c0ee-41a7-b19c-ee1e4f35fde7
+
+⚠️ **Trampa de la fuente:** las secciones A1 y A2 van seguidas y son casi
+idénticas en estructura. La de A2 empieza en la pág. 99 y se reconoce
+porque dice «A1 mailakoez gain» («además de los de A1»). En esta
+investigación se extrajo A2 creyendo que era A1 y hubo que rehacerlo.
+
+**Conclusión, y no es la esperada: el curso no se pasa de nivel, se
+queda corto de A1.**
+
+**Contenido de A1 que el curso NO cubre (10):** futuro (`joango naiz`) ·
+imperativo (`Etorri!`, `ezazu`) · `ahal izan`/`ezin izan` · `behar izan` ·
+progresivo (`ikasten ari naiz`) · verbo `eduki` (`dauka`) · ordinales ·
+demostrativos completos (solo está `hau`) · casos `norentzat` y
+`noraino` · exclamativas (`Hau hotza!`).
+
+Lo llamativo: la ficha final de la u12 lista el futuro y el imperativo
+como **«lo que falta para seguir hacia A2»**, y el currículo los pone en
+A1. Comprobado por script que ninguno se enseña como vocabulario; solo
+se mencionan en textos explicativos.
+
+**Contenido que SÍ se pasa de A1 (3, todos menores):** los verbos de
+movimiento sintéticos de la u9 (`noa`, `nator`, `nabil` — en presente A1
+solo pide `izan` y `egon`; `joan`/`ibili`/`etorri` vienen marcados como
+novedad de A2) · el pasado de `egon` de la u11 (`nengoen`, `zegoen` —
+A1 solo pide pasado de `izan`, `ukan`, `eduki`) · `mila` de la 5.1
+(A1 llega a 100).
+
+**Temas del catálogo oficial peor cubiertos:** Euskal Herria
+(territorios) 0/5 · tareas cotidianas 0/6 · datos personales
+(edad, dirección, estado civil) 0/5 · servicios (correos, banco) 0/4 ·
+medios de comunicación 1/4.
+
+**Las cinco sub-unidades nuevas apuntan bien:** sus seis campos
+temáticos están explícitamente en el catálogo A1, algunos con las mismas
+palabras («gelak, altzariak» para la casa). Dos matices: los animales de
+granja encajan regular (el catálogo dice «etxeko animaliak», domésticos)
+y la ropa no figura como tema explícito de A1.
+
+**Decisión pendiente entre Ric y Miguel** — es de producto, no técnica:
+- **A.** Completar el A1 con los diez contenidos que faltan.
+- **B.** Asumir que es A1 parcial y decirlo: hoy el subtítulo de la app
+  dice «Nivel A1 completo», y la ficha de la u12 llama A2 a cosas de A1.
+- **C.** Las dos por orden: corregir ya lo que promete la app, y añadir
+  lo que falta como sub-unidades, que es un formato ya montado y probado.
+
+## Implementadas
 
 ## Pendientes de comentar con Ric
 
