@@ -1183,6 +1183,27 @@ partir de ahí se **alterna**: las formas reforzadas abren en femenino, y la
 ficha de ordinales explica que `bigarrena` es «el segundo» y «la segunda» sin
 que haya que elegir.
 
+#### Escuchando un número, la cifra vale tanto como la palabra
+
+Ric: oyendo `zortzi` debería aceptar **«8»** además de «ocho». Lo que se
+practica es reconocer la palabra en euskera, no escribir castellano.
+
+Hecho **en el motor**, no con `esAlt` palabra por palabra, para que valga
+también para los números que se añadan después: 29 entradas cubiertas de
+golpe (1-20, las decenas, `ehun` y `mila`).
+
+Dos decisiones que conviene tener anotadas:
+
+- **Funciona en los dos sentidos.** Si algún día una respuesta se escribe con
+  cifra, se aceptará la palabra.
+- **Solo cuando la respuesta entera es el número.** Dentro de una frase no se
+  convierte: «hace dos años» no acepta «hace 2 años». Se puede ampliar, pero
+  así el comportamiento es predecible y no aparecen sorpresas donde nadie las
+  busca.
+
+Cubierto en `scripts/probar_respuestas.js`, que comprueba también que
+rechace el número equivocado y las palabras parecidas (`ochenta` por `ocho`).
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

@@ -10,11 +10,22 @@ function sacar(n) {
     if (src[k] === '{') p++; else if (src[k] === '}' && --p === 0) return src.slice(i, k + 1);
   }
 }
+// Las tablas de módulo se sacan del propio app.js, para que la prueba use
+// exactamente las mismas que la app y no una copia que se quede vieja.
+function sacarVar(nombre) {
+  const i = src.indexOf('var ' + nombre + ' =');
+  if (i < 0) throw new Error('no está la variable ' + nombre);
+  let prof = 0, dentro = false;
+  for (let k = i; k < src.length; k++) {
+    if (src[k] === '{' || src[k] === '(') { prof++; dentro = true; }
+    else if (src[k] === '}' || src[k] === ')') prof--;
+    if (dentro && prof === 0) return src.slice(i, src.indexOf(';', k) + 1);
+    if (!dentro && src[k] === ';') return src.slice(i, k + 1);
+  }
+}
 const f = new Function(`
   var ARTICULO_ES = /^(el|la|los|las|un|una|unos|unas)\\s+/;
-  var TILDES = { 'á':'a','à':'a','ä':'a','â':'a','é':'e','è':'e','ë':'e','ê':'e',
-                 'í':'i','ì':'i','ï':'i','î':'i','ó':'o','ò':'o','ö':'o','ô':'o',
-                 'ú':'u','ù':'u','ü':'u','û':'u' };
+  ${['TILDES','CIFRAS','LETRAS'].map(sacarVar).join('\n')}
   ${['esc','normalizar','expandirBarra','combinar','variantesRespuesta','todasLasVariantes',
      'claveRespuesta','aciertaTecleado'].map(sacar).join('\n')}
   return { aciertaTecleado, normalizar };
@@ -39,6 +50,20 @@ const casos = [
   ['por qué',  ['¿por qué?'], true,  'la forma correcta'],
   ['porque',   ['¿por qué?'], false, 'RECHAZA «porque»: es de -lako'],
   ['porqué',   ['¿por qué?'], false, 'y por tanto «porqué» tampoco'],
+  // Números: la cifra vale tanto como la palabra (pedido por Ric)
+  ['8',         ['ocho'],       true,  'EL CASO DE RIC: la cifra por la palabra'],
+  ['ocho',      ['ocho'],       true,  'y la palabra sigue valiendo'],
+  ['16',        ['dieciséis'],  true,  'con tilde en la palabra'],
+  ['dieciseis', ['dieciséis'],  true,  'y sin tilde'],
+  ['1',         ['uno'],        true,  'uno'],
+  ['20',        ['veinte'],     true,  'veinte'],
+  ['100',       ['cien'],       true,  'cien'],
+  ['1000',      ['mil'],        true,  'mil'],
+  ['9',         ['ocho'],       false, 'RECHAZA el número equivocado'],
+  ['ochenta',   ['ocho'],       false, 'RECHAZA una palabra parecida'],
+  ['8',         ['ochenta'],    false, 'y al revés'],
+  // fuera de un número suelto no se toca nada
+  ['hace 2 años', ['hace dos años'], false, 'dentro de una frase NO se convierte, a propósito'],
 ];
 let mal = 0;
 for (const [t, rs, esperado, nota] of casos) {

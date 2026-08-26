@@ -249,9 +249,36 @@
     return out;
   }
 
+  /* Escuchando un número, «8» vale tanto como «ocho»: lo que se practica es
+     reconocer `zortzi`, no escribir castellano (pedido por Ric). Va aquí y no
+     como `esAlt` palabra por palabra para que valga también para los números
+     que se añadan después.
+     Solo se convierte cuando la respuesta entera es el número, no dentro de
+     una frase: así el comportamiento es predecible y no hay sorpresas. */
+  var CIFRAS = {
+    'uno':1, 'dos':2, 'tres':3, 'cuatro':4, 'cinco':5, 'seis':6, 'siete':7,
+    'ocho':8, 'nueve':9, 'diez':10, 'once':11, 'doce':12, 'trece':13,
+    'catorce':14, 'quince':15, 'dieciseis':16, 'diecisiete':17, 'dieciocho':18,
+    'diecinueve':19, 'veinte':20, 'treinta':30, 'cuarenta':40, 'cincuenta':50,
+    'sesenta':60, 'setenta':70, 'ochenta':80, 'noventa':90, 'cien':100, 'mil':1000
+  };
+  var LETRAS = (function () {
+    var r = {};
+    for (var k in CIFRAS) r[String(CIFRAS[k])] = k;
+    return r;
+  })();
+
   function variantesRespuesta(texto) {
     var vistas = {}, salida = [];
     function meter(t) {
+      var n = normalizar(t);
+      if (n && !vistas[n]) { vistas[n] = true; salida.push(n); }
+      // el mismo número escrito de la otra manera
+      var sinTilde = claveRespuesta(t);
+      if (CIFRAS[sinTilde] !== undefined) meter2(String(CIFRAS[sinTilde]));
+      else if (LETRAS[sinTilde] !== undefined) meter2(LETRAS[sinTilde]);
+    }
+    function meter2(t) {
       var n = normalizar(t);
       if (n && !vistas[n]) { vistas[n] = true; salida.push(n); }
     }
