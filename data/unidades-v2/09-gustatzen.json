@@ -1033,15 +1033,16 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Se me ha olvidado. → ____ zait.",
+          "pregunta": "Me gusta el euskera. → Euskara ____ zait.",
           "opciones": [
-            "Gustatzen",
-            "Ahaztu",
-            "Iruditzen",
-            "Eman"
+            "gustatzen",
+            "iruditzen",
+            "interesatzen",
+            "axola"
           ],
-          "correcta": 1,
-          "explicacion": "«ahaztu zait»."
+          "correcta": 0,
+          "explicacion": "«ahaztu zait».",
+          "es": "Me gusta el euskera."
         },
         {
           "tipo": "opcion",
@@ -1498,8 +1499,8 @@
           "instruccion": "Empareja me gusta",
           "pares": [
             {
-              "eu": "guri",
-              "es": "a nosotros"
+              "eu": "asko",
+              "es": "mucho"
             },
             {
               "eu": "iruditzen zait",
@@ -1531,12 +1532,12 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«responder» se dice…",
+          "pregunta": "«todo» se dice…",
           "opciones": [
-            "erantzun",
-            "begiak",
-            "ilea",
-            "esan"
+            "guztia",
+            "asko",
+            "gutxi",
+            "pixka bat"
           ],
           "correcta": 0,
           "explicacion": "responder = erantzun."

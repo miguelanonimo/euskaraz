@@ -18,8 +18,8 @@
     },
     {
       "id": "5.3",
-      "titulo": "Los colores",
-      "resumen": "Adjetivos, y van donde van los adjetivos."
+      "titulo": "Colores y adjetivos",
+      "resumen": "Cómo es algo: de qué color, y de qué tamaño."
     },
     {
       "id": "5.4",
@@ -412,77 +412,77 @@
       "es": "rojo",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "urdina",
       "es": "azul",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "horia",
       "es": "amarillo",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "berdea",
       "es": "verde",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "zuria",
       "es": "blanco",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "beltza",
       "es": "negro",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "grisa",
       "es": "gris",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "marroia",
       "es": "marrón",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "arrosa",
       "es": "rosa",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "morea",
       "es": "morado",
       "nota": null,
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "laranja",
       "es": "naranja",
       "nota": "La misma palabra sirve para la fruta y para el color.",
       "categoria": "adjetivo",
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "eu": "egongela",
@@ -1133,12 +1133,12 @@
               "es": "viejo"
             },
             {
-              "eu": "herria",
-              "es": "el pueblo"
+              "eu": "urdina",
+              "es": "azul"
             },
             {
-              "eu": "kalea",
-              "es": "la calle"
+              "eu": "gorria",
+              "es": "rojo"
             }
           ]
         },
@@ -1177,8 +1177,8 @@
               "es": "la habitación pequeña"
             },
             {
-              "eu": "kale zaharra",
-              "es": "la calle vieja"
+              "eu": "gela berria",
+              "es": "la habitación nueva"
             },
             {
               "eu": "herri polita",
@@ -1636,7 +1636,7 @@
           ]
         }
       ],
-      "subnivel": "5.2"
+      "subnivel": "5.3"
     },
     {
       "id": "u6.1-g02",
@@ -1895,6 +1895,81 @@
         }
       ],
       "subnivel": "5.2"
+    },
+    {
+      "id": "u5-n01",
+      "subnivel": "5.2",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Egongela» (el salón) es «gela» más otra palabra. ¿Cuál?",
+          "opciones": [
+            "egon (estar)",
+            "jan (comer)",
+            "lo (dormir)",
+            "su (fuego)"
+          ],
+          "correcta": 0,
+          "explicacion": "«La habitación de estar». Igual que en castellano decimos «sala de estar»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Y «jangela», el comedor?",
+          "opciones": [
+            "jan (comer)",
+            "egon (estar)",
+            "lo (dormir)",
+            "bainu (baño)"
+          ],
+          "correcta": 0
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo que hay en casa",
+          "pares": [
+            {
+              "eu": "telebista",
+              "es": "la televisión"
+            },
+            {
+              "eu": "hozkailua",
+              "es": "la nevera"
+            },
+            {
+              "eu": "sofa",
+              "es": "el sofá"
+            },
+            {
+              "eu": "armairua",
+              "es": "el armario"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Sukaldea» (la cocina) viene de «su» + «alde» (zona). ¿Qué es «su»?",
+          "opciones": [
+            "el fuego",
+            "el agua",
+            "la comida",
+            "la mesa"
+          ],
+          "correcta": 0,
+          "explicacion": "«La zona del fuego». El nombre es más viejo que las cocinas de gas."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "La televisión está en el salón.",
+          "respuestas": [
+            "telebista egongelan dago"
+          ],
+          "pista": "«En el salón» lleva la -n de lugar, y el verbo cierra la frase."
+        }
+      ]
     },
     {
       "id": "u6.1-g05",

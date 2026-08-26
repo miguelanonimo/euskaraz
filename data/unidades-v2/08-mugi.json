@@ -1239,27 +1239,27 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«a la derecha» se dice ____",
+          "pregunta": "«desde aquí» se dice ____",
           "opciones": [
-            "eskuina",
-            "eskuinera",
-            "eskuinean",
-            "eskuinetik"
+            "hemendik",
+            "hona",
+            "hara",
+            "hortik"
           ],
-          "correcta": 1,
+          "correcta": 0,
           "explicacion": "Ya lleva dentro el -ra de movimiento."
         },
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«a la izquierda» se dice ____",
+          "pregunta": "El verbo «entrar» es ____",
           "opciones": [
-            "ezkerra",
-            "ezkerrean",
-            "ezkerrera",
-            "ezkerretik"
+            "sartu",
+            "irten",
+            "iritsi",
+            "ibili"
           ],
-          "correcta": 2,
+          "correcta": 0,
           "explicacion": "Igual que la derecha: ezkerrera."
         }
       ],

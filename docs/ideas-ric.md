@@ -728,6 +728,81 @@ Contaminaciones de una sola palabra, casi todas del subnivel siguiente:
 (eskuinera/ezkerrera), `u9-g13` (erantzun/guri), y siete más con una palabra
 cada una. Pendientes.
 
+### Pasada final: lo que salió al revisar los propios cambios (2026-08-26)
+
+Ric: *«haces una nueva pasada por todas las unidades, para asegurarnos que
+con los últimos cambios no quedó algo raro»*. Buena idea, porque salieron
+tres cosas — **una de ellas provocada por un arreglo anterior de hoy.**
+
+#### 5.3 «Los colores» no tenía ni un color
+
+Los once colores estaban en **5.2 «La casa por dentro»**, que cargaba con
+**39 palabras**, la mayor del curso. Y 5.3, titulada «Los colores», contenía
+adjetivos: `handia`, `txikia`, `polita`, `berria`, `zaharra`.
+
+Ric ya había dicho en su día que **los colores fueran con los adjetivos**.
+Movidos, y 5.3 pasa a llamarse **«Colores y adjetivos»** (16 palabras).
+5.2 baja a 28.
+
+**Y ahí saltó el efecto secundario:** al mover el vocabulario, su ejercicio
+(`u6.1-g01`, emparejar los once colores) se quedó atrás en 5.2. La pasada lo
+cazó. Movido también — y entonces 5.2 se quedó en 4 grupos, así que se
+escribió uno nuevo (`u5-n01`).
+
+El grupo nuevo **practica el patrón `-gela` que la ficha ya explicaba** en vez
+de repetirlo (`egon`+gela = salón, `jan`+gela = comedor, `su`+`alde` =
+cocina) y recoge `telebista`, la única palabra del subnivel sin practicar.
+
+#### Un fallo mío en la ficha de demostrativos
+
+La ficha que escribí para 3.3 usaba de ejemplo `etxea`, `liburua`, `mendia`,
+`handia` y `txikia`. **Las cinco se enseñan después de la unidad 3** — en la
+5, la 8 y la 9. Comprobé que existieran en el curso, pero no que se
+enseñaran antes. Es exactamente el error que llevaba toda la tarde cazando
+en los demás.
+
+Reescritas las tres fichas y el grupo `u3-g29` con vocabulario que el alumno
+sí tiene en la unidad 3: `laguna`, `ikaslea`, `irakaslea`, `medikua`,
+`galdera`, `euskalduna`.
+
+#### El id que ya existía en otra unidad
+
+Al crear el grupo nuevo le puse `u5-g05`… que ya existía **en la unidad 4**,
+porque los grupos conservan el id de su unidad de origen. Lo cazó
+`verificar.py`. Renombrado a `u5-n01`.
+
+#### Sobre los ejemplos de gramática
+
+El barrido encontró **73 ejemplos de gramática** que usan vocabulario
+posterior. **No se han tocado, y con motivo:** un ejemplo lleva la traducción
+al lado, así que no exige conocer la palabra — a diferencia de un ejercicio,
+donde hay que producirla o reconocerla. Muchos además son de un subnivel más
+adelante dentro de la misma unidad. Corregirlos en bloque sería empeorar
+ejemplos que funcionan.
+
+#### Estado final del curso v2
+
+| Comprobación | |
+|---|---|
+| Numeración de subniveles sin huecos | ✓ |
+| Sin subniveles huérfanos | ✓ |
+| Todos con 5+ ejercicios | ✓ |
+| Todos con algo que estudiar | ✓ |
+| Nada imposible de acertar | ✓ *(1 excepción, abajo)* |
+| Parejas sin lados repetidos | ✓ |
+| Sin preguntas circulares | ✓ |
+| Sin referencias a unidades posteriores | ✓ |
+| Ids únicos en todo el curso | ✓ |
+| Ficha de dialecto en cada unidad | ✓ |
+| Todos los grupos con 5 variantes | ✓ |
+
+**48 subniveles, 327 grupos, 1.635 variantes, 506 palabras.**
+
+*La excepción:* `gutxi` en dos variantes de 6.1 «La hora». No es un fallo —
+la ficha lo enseña explícitamente («los minutos se cuelgan con *eta* o con
+*gutxi*»); está catalogado en 9.1 con su otro sentido, «poco». Se deja así
+en vez de forzar el número a cero.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

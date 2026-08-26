@@ -692,16 +692,16 @@
           "instruccion": "Empareja las formas reforzadas",
           "pares": [
             {
-              "eu": "neu",
-              "es": "yo mismo"
+              "eu": "gu",
+              "es": "nosotros"
             },
             {
-              "eu": "zeu",
-              "es": "tú mismo"
+              "eu": "zuek",
+              "es": "vosotros"
             },
             {
-              "eu": "geu",
-              "es": "nosotros mismos"
+              "eu": "haiek",
+              "es": "ellos / ellas"
             },
             {
               "eu": "bera",
@@ -2034,8 +2034,8 @@
               "es": "medikuak"
             },
             {
-              "eu": "etxea",
-              "es": "etxeak"
+              "eu": "irakaslea",
+              "es": "irakasleak"
             }
           ]
         },

@@ -99,35 +99,35 @@
       "cuerpo": "El castellano tiene tres (<i>este, ese, aquel</i>) y el euskera también. La suerte es que se corresponden casi uno a uno:\n\n<b>hau</b> — esto, este: está cerca de <b>mí</b>\n<b>hori</b> — eso, ese: está cerca de <b>ti</b>\n<b>hura</b> — aquello, aquel: está <b>lejos de los dos</b>\n\nFíjate en que el criterio no es la distancia en metros, sino <b>de quién</b> está cerca la cosa. Un libro que tienes tú en la mano es <i>hori</i> para mí, aunque estemos sentados juntos.\n\nEn plural solo cambia la cola:\n\n<b>hauek</b> — estos · <b>horiek</b> — esos · <b>haiek</b> — aquellos\n\nOjo con <i>hori</i>: su plural es <b>horiek</b>, no «horrek». Y el de <i>hura</i> es <b>haiek</b>, que no se parece nada al singular — esa hay que aprendérsela tal cual.",
       "ejemplos": [
         {
-          "eu": "Etxe hau handia da.",
-          "es": "Esta casa es grande."
+          "eu": "Lagun hau irakaslea da.",
+          "es": "Este amigo es profesor."
         },
         {
-          "eu": "Liburu hori txikia da.",
-          "es": "Ese libro es pequeño."
+          "eu": "Ikasle hori nongoa da?",
+          "es": "¿De dónde es ese estudiante?"
         },
         {
-          "eu": "Mendi hura handia da.",
-          "es": "Aquella montaña es grande."
+          "eu": "Hura medikua da.",
+          "es": "Aquel es médico."
         }
       ],
       "subnivel": "3.3"
     },
     {
       "titulo": "Van detrás del nombre, y el nombre pierde el artículo",
-      "cuerpo": "Aquí el euskera hace lo contrario que el castellano. Nosotros decimos «<i>esta</i> casa»; en euskera es «casa <i>esta</i>»:\n\n<b>etxe hau</b> — esta casa\n<b>liburu hori</b> — ese libro\n<b>mendi hura</b> — aquella montaña\n\nY hay un detalle que se escapa siempre. Ya sabes que «la casa» es <b>etxea</b>, con esa <i>-a</i> final que hace de artículo. Pues cuando detrás viene un demostrativo, <b>esa -a desaparece</b>: <i>etxe<b>a</b></i> pero <i>etxe hau</i>. Tiene sentido si lo piensas — no dices «la casa esta», porque el demostrativo ya hace ese trabajo.\n\nUna última cosa, y esta te va a sonar. <b>Hura</b> y <b>haiek</b> ya las viste en la unidad 2, traducidas como «él/ella» y «ellos/ellas». No es coincidencia ni son dos palabras distintas: <b>son las mismas</b>. El euskera usa el demostrativo lejano para referirse a la tercera persona. Por eso <i>haiek</i> vale para «aquellos» y para «ellos», y por el contexto se entiende cuál es.",
+      "cuerpo": "Aquí el euskera hace lo contrario que el castellano. Nosotros decimos «<i>esta</i> casa»; en euskera es «casa <i>esta</i>»:\n\n<b>lagun hau</b> — este amigo\n<b>ikasle hori</b> — ese estudiante\n<b>galdera hura</b> — aquella pregunta\n\nY hay un detalle que se escapa siempre. Ya sabes que «el amigo» es <b>laguna</b>, con esa <i>-a</i> final que hace de artículo. Pues cuando detrás viene un demostrativo, <b>esa -a desaparece</b>: <i>lagun<b>a</b></i> pero <i>lagun hau</i>. Tiene sentido si lo piensas — no dices «el amigo este», porque el demostrativo ya hace ese trabajo.\n\nUna última cosa, y esta te va a sonar. <b>Hura</b> y <b>haiek</b> ya las viste en la unidad 2, traducidas como «él/ella» y «ellos/ellas». No es coincidencia ni son dos palabras distintas: <b>son las mismas</b>. El euskera usa el demostrativo lejano para referirse a la tercera persona. Por eso <i>haiek</i> vale para «aquellos» y para «ellos», y por el contexto se entiende cuál es.",
       "ejemplos": [
         {
-          "eu": "Etxea handia da.",
-          "es": "La casa es grande."
+          "eu": "Laguna irakaslea da.",
+          "es": "El amigo es profesor."
         },
         {
-          "eu": "Etxe hau handia da.",
-          "es": "Esta casa es grande."
+          "eu": "Lagun hau irakaslea da.",
+          "es": "Este amigo es profesor."
         },
         {
-          "eu": "Liburu horiek txikiak dira.",
-          "es": "Esos libros son pequeños."
+          "eu": "Ikasle horiek euskaldunak dira.",
+          "es": "Esos estudiantes hablan euskera."
         }
       ],
       "subnivel": "3.3"
@@ -137,12 +137,12 @@
       "cuerpo": "Los dos primeros no cambian: <b>hau</b> y <b>hori</b> son iguales en batua y en bizkaiera. El tercero sí:\n\n<b>ha</b> — donde el batua dice <i>hura</i>\n\nY como <i>hura</i>, vale para las dos cosas: «aquel» y «él/ella». Si oyes a alguien en Bilbao decir <i>ha</i>, está diciendo cualquiera de las dos.\n\nDonde de verdad se separan es en el plural, que no se parece en nada:\n\n<b>honeek</b> — estos (batua: <i>hauek</i>)\n<b>horreek</b> — esos (batua: <i>horiek</i>)\n<b>hareek</b> — aquellos (batua: <i>haiek</i>)\n\nNo intentes deducirlos del singular, porque no salen. Se aprenden aparte. También se oyen <i>honeik</i> y <i>horreik</i>, y la forma antigua <i>haek</i> por <i>hareek</i>.\n\nUna cosa más que se oye mucho en el este de Bizkaia: añadirles <b>-xe-</b> para señalar con énfasis, como nuestro «este mismo»: <b>hauxe</b>, <b>horixe</b>, <b>haxe</b>.",
       "ejemplos": [
         {
-          "eu": "Ha handia da.",
-          "es": "Aquel es grande. — en batua, «Hura handia da»."
+          "eu": "Ha medikua da.",
+          "es": "Aquel es médico. — en batua, «Hura medikua da»."
         },
         {
-          "eu": "Liburu horreek txikiak dira.",
-          "es": "Esos libros son pequeños. — en batua, «Liburu horiek txikiak dira»."
+          "eu": "Ikasle horreek euskaldunak dira.",
+          "es": "Esos estudiantes hablan euskera. — en batua, «Ikasle horiek…»."
         }
       ],
       "subnivel": "3.3"
@@ -512,20 +512,20 @@
           "instruccion": "Empareja las preguntas de lugar",
           "pares": [
             {
+              "eu": "noren?",
+              "es": "¿de quién?"
+            },
+            {
+              "eu": "norekin?",
+              "es": "¿con quién?"
+            },
+            {
               "eu": "non?",
               "es": "¿dónde?"
             },
             {
-              "eu": "nora?",
-              "es": "¿adónde?"
-            },
-            {
-              "eu": "nondik?",
-              "es": "¿de dónde? (viniendo)"
-            },
-            {
-              "eu": "nongoa?",
-              "es": "¿de dónde? (origen)"
+              "eu": "nola?",
+              "es": "¿cómo?"
             }
           ]
         },
@@ -2390,12 +2390,12 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«La casa» es «etxea». ¿Cómo se dice «esta casa»?",
+          "pregunta": "«El amigo» es «laguna». ¿Cómo se dice «este amigo»?",
           "opciones": [
-            "etxe hau",
-            "etxea hau",
-            "hau etxea",
-            "hau etxe"
+            "lagun hau",
+            "laguna hau",
+            "hau laguna",
+            "hau lagun"
           ],
           "correcta": 0,
           "explicacion": "El demostrativo va detrás, y el nombre suelta la -a del artículo."
@@ -2411,27 +2411,27 @@
             "Se pone en plural"
           ],
           "correcta": 0,
-          "explicacion": "«Etxea» es la casa; «etxe hau», esta casa. El demostrativo ya hace de artículo."
+          "explicacion": "«Laguna» es el amigo; «lagun hau», este amigo. El demostrativo ya hace de artículo."
         },
         {
           "tipo": "pares",
           "instruccion": "Empareja cada expresión con su traducción",
           "pares": [
             {
-              "eu": "etxea",
-              "es": "la casa"
+              "eu": "laguna",
+              "es": "el amigo"
             },
             {
-              "eu": "etxe hau",
-              "es": "esta casa"
+              "eu": "lagun hau",
+              "es": "este amigo"
             },
             {
-              "eu": "liburu hori",
-              "es": "ese libro"
+              "eu": "ikasle hori",
+              "es": "ese estudiante"
             },
             {
-              "eu": "mendi hura",
-              "es": "aquella montaña"
+              "eu": "galdera hura",
+              "es": "aquella pregunta"
             }
           ]
         },
@@ -2451,12 +2451,12 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Esta casa es grande.",
-          "eu": "etxe hau handia da",
+          "es": "Este amigo es profesor.",
+          "eu": "lagun hau irakaslea da",
           "palabras": [
-            "etxe",
+            "lagun",
             "hau",
-            "handia",
+            "irakaslea",
             "da"
           ],
           "pista": "El demostrativo se pega al nombre, y el verbo cierra la frase."
@@ -2706,7 +2706,7 @@
             "ez dakit",
             "barkatu",
             "agian",
-            "hamabi"
+            "galdera"
           ],
           "correcta": 3,
           "explicacion": "«Hamabi» es el número doce."
