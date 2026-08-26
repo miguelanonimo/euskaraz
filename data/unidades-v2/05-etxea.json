@@ -165,19 +165,19 @@
     },
     {
       "titulo": "Para decir «una» hace falta «bat»",
-      "cuerpo": "Este es un tropiezo clásico viniendo del castellano. Mira las dos:\n\n<b>mahai zuria</b> — <i>la</i> mesa blanca\n<b>mahai zuri bat</b> — <i>una</i> mesa blanca\n\nEl <b>-a</b> del final es «el/la». Si quieres decir «un» o «una», se quita ese artículo y se pone <b>bat</b> detrás de todo.\n\nY ojo cuando hay dos cosas: cada una lleva su <i>bat</i>.\n\n<b>Mahai zuria eta aulki beltza.</b> — La mesa blanca y la silla negra.\n<b>Mahai zuri bat eta aulki beltz bat.</b> — Una mesa blanca y una silla negra.",
+      "cuerpo": "Este es un tropiezo clásico viniendo del castellano. Mira las dos:\n\n<b>mahai zuria</b> — <i>la</i> mesa blanca\n<b>mahai zuri bat</b> — <i>una</i> mesa blanca\n\nEl <b>-a</b> del final es «el/la». Si quieres decir «un» o «una», se quita ese artículo y se pone <b>bat</b> detrás de todo.\n\nY ojo cuando hay dos cosas: cada una lleva su <i>bat</i>.\n\n<b>Mahai zuria eta aulki beltza.</b> — La mesa blanca y la silla negra.\n<b>Mahai zuri bat eta aulki beltz bat.</b> — Una mesa blanca y una silla negra.\n\n<b>¿Y si son varias?</b>\n\nPara «unos» o «unas» hay una palabra hermana: <b>batzuk</b>. Se coloca igual, detrás de todo, y el nombre sigue sin artículo:\n\n<b>mahai bat</b> — una mesa\n<b>mahai batzuk</b> — unas mesas\n\nCompáralo con lo que ya sabes y se ve solo. La <b>-ak</b> es «los/las», algo concreto; <b>batzuk</b> es «unos/unas», sin concretar:\n\n<b>mahaiak</b> — las mesas (esas, las que sabemos)\n<b>mahai batzuk</b> — unas mesas (algunas, cualesquiera)\n\nEs la misma diferencia que en castellano entre «trae las sillas» y «trae unas sillas». Y fíjate en que <i>batzuk</i> ya lleva el plural dentro: no se dice «mahaiak batzuk».",
       "ejemplos": [
         {
-          "eu": "mahai zuria",
-          "es": "la mesa blanca"
+          "eu": "Mahai zuri bat.",
+          "es": "Una mesa blanca."
         },
         {
-          "eu": "mahai zuri bat",
-          "es": "una mesa blanca"
+          "eu": "Mahai batzuk.",
+          "es": "Unas mesas."
         },
         {
-          "eu": "Mahai zuria eta aulki beltza.",
-          "es": "La mesa blanca y la silla negra."
+          "eu": "Aulki batzuk beltzak dira.",
+          "es": "Unas sillas son negras."
         }
       ],
       "subnivel": "5.4"
@@ -720,6 +720,12 @@
       "es": "el caserío",
       "nota": "De «baso» (bosque) + «herri» (pueblo): la casa de fuera del pueblo. No es solo el edificio: incluye la tierra y los animales.",
       "subnivel": "5.5"
+    },
+    {
+      "eu": "batzuk",
+      "es": "unos, unas, algunos",
+      "nota": "El plural de «bat». Va detrás del nombre, que se queda sin artículo: «mahai batzuk».",
+      "subnivel": "5.4"
     }
   ],
   "ejercicios": [

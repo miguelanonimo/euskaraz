@@ -1493,6 +1493,29 @@ unidad N» en singular y no cazaba las plurales. `verificar.py` coge ahora
 también «las unidades 6 y 8», y da error si una explicación remite a su propia
 unidad o a una posterior. Probado a la inversa con el texto viejo puesto.
 
+### «Batzuk» se preguntaba sin explicarse (26/08/2026)
+
+Detectado por Ric: 5.4 explica `bat` pero no `batzuk`, y `batzuk` es **la
+respuesta correcta de dos variantes** de ese mismo tema. Encima el subnivel
+tenía el vocabulario vacío, así que la palabra no estaba en ninguna parte.
+
+Añadido a la ficha, enganchándolo con lo que el alumno ya tiene — el plural
+`-ak`, que es donde se ve la diferencia de verdad:
+
+> **mahaiak** — las mesas (esas, las que sabemos)
+> **mahai batzuk** — unas mesas (algunas, cualesquiera)
+>
+> Es la misma diferencia que en castellano entre «trae las sillas» y «trae
+> unas sillas».
+
+Con el aviso de que `batzuk` ya lleva el plural dentro: no se dice «mahaiak
+batzuk». Y la palabra al vocabulario del tema, que estaba a cero.
+
+*Curiosidad que salió del comprobador:* marcó `zuri` en el ejemplo «Mahai
+zuri bat» como vocabulario posterior. Es un **falso positivo por homógrafo**:
+`zuri` es a la vez la raíz de `zuria` (blanco, 5.3) y el dativo de `zu` («a
+ti», 9.2). El ejemplo está bien; lo que no distingue es el comprobador.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
