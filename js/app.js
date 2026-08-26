@@ -181,11 +181,18 @@
       .replace(/"/g, '&quot;');
   }
 
-  // La gramática admite <b> e <i> escritos a mano en el JSON.
+  /* La gramática admite <b>, <i> y <u> escritos a mano en el JSON.
+     El <u> no estaba y las fichas sí lo usaban: se veía «<u>ogirik</u>»
+     tal cual en pantalla (lo sufrió Ric un tiempo sin que lo anotáramos).
+     No es decorativo: marca la pieza clave DENTRO de un ejemplo que ya
+     va entero en negrita, que es un segundo nivel de énfasis que <b> no
+     puede dar. verificar.py ya lo daba por válido; el que iba por detrás
+     era esto. */
   function richText(s) {
     return esc(s)
       .replace(/&lt;b&gt;/g, '<b>').replace(/&lt;\/b&gt;/g, '</b>')
       .replace(/&lt;i&gt;/g, '<i>').replace(/&lt;\/i&gt;/g, '</i>')
+      .replace(/&lt;u&gt;/g, '<u>').replace(/&lt;\/u&gt;/g, '</u>')
       .split('\n\n').map(function (p) {
         return '<p>' + p.replace(/\n/g, '<br>') + '</p>';
       }).join('');

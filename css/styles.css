@@ -639,6 +639,16 @@ body.silencioso .pair__play{ display: none; }
   text-wrap: balance;
 }
 
+/* Dentro de un ejemplo, que ya va en negrita, el <u> señala la pieza
+   concreta que ilustra la regla. Subrayado a secas se lee como enlace, así
+   que se marca con el acento y separado del texto. */
+.gcard__body u {
+  text-decoration: underline;
+  text-decoration-color: var(--acento);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 .gcard__body{
   margin: 0;
   font-size: var(--t-b);
