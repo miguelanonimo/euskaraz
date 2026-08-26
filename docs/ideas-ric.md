@@ -10,6 +10,16 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ## Pendientes de comentar con Miguel
 
+### 📄 Audios: la lista para Miguel está en `docs/audios-pendientes.md`
+
+Todo lo de audio —los 22 que suenan mal y los 194 que faltan— está
+consolidado ahí, con el lote ejecutable `scripts/generar-audio/lote-ric-3.mjs`
+listo para correr. Ric lo acordó así el 26/08: *«los audios, con que esté la
+lista de lo que dije, Miguel se encarga de hacer las generaciones»*.
+
+Lo que sigue debajo es el histórico de cómo se fue detectando cada uno, que
+es donde está el porqué de cada corrección. Para trabajar, usar el documento.
+
 ### Audios nuevos que hay que generar (no son fallos, son frases que cambiaron)
 
 - **2026-08-23 · Unidad 10, dos frases de ejemplo corregidas de `diot` a
