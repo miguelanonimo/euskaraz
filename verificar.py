@@ -144,6 +144,26 @@ for ruta, u in unidades:
            not set(gr) <= {"titulo","cuerpo","ejemplos","subnivel"}:
             errores.append("%s: ficha de gramática con claves raras en «%s»: %s"
                            % (ruta, gr.get("titulo","?"), sorted(gr)))
+        # La app convierte cada \n suelto en un <br>. En una lista eso es lo
+        # que se quiere, pero si el párrafo se escribió ajustado a mano a ~70
+        # caracteres, el lector ve la frase partida a mitad (lo cazó Ric en
+        # «Dónde se habla el euskera»). Se avisa cuando dos líneas seguidas
+        # parecen las dos prosa corrida en vez de elementos de una lista.
+        for parr in gr["cuerpo"].split("\n\n"):
+            ls = parr.split("\n")
+            if len(ls) < 2:
+                continue
+            items = sum(1 for l in ls if re.match(r"\s*(<b>|[-\u2013\u2014\u2022]|\d+[.)])", l))
+            if items >= len(ls) - 1:
+                continue                      # es una lista: correcto
+            for a, b in zip(ls, ls[1:]):
+                sa = re.sub(r"<[^>]+>", "", a).rstrip()
+                sb = re.sub(r"<[^>]+>", "", b).lstrip()
+                if sa and sb and sa[-1] not in u".:!?\u00bb" and 45 <= len(sa) <= 92:
+                    avisos.append(u"%s: «%s» tiene un salto de línea en mitad "
+                                  u"de la frase (…%s / %s…)"
+                                  % (ruta, gr["titulo"], sa[-28:], sb[:28]))
+                    break
         for tag in re.findall(r"</?(\w+)>", gr["cuerpo"]):
             if tag not in ("b","i","u"):
                 avisos.append("%s: etiqueta <%s> en «%s»" % (ruta, tag, gr["titulo"]))

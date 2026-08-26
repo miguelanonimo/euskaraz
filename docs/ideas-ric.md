@@ -875,6 +875,36 @@ patrón `egin` (*lo egin*, *hitz egin*), los meses (tienen cuatro fichas,
 incluida «El año que se llena»), los dobles nombres de las ciudades, y el
 sistema `neba`/`arreba`. Meter algo encima habría sido relleno.
 
+### Saltos de línea en mitad de la frase (2026-08-26)
+
+Detectado por Ric en la ficha «Dónde se habla el euskera»: el párrafo se
+veía partido a mitad.
+
+**La causa:** `richText()` convierte **cada `\n` suelto en un `<br>`**. Eso es
+justo lo que se quiere en una lista —los territorios, las conjugaciones, los
+pares de vocabulario—, pero si un párrafo de prosa se escribió ajustado a
+mano a unos 70 caracteres, el lector ve la frase cortada donde acababa la
+línea del editor.
+
+**Barrido: un solo caso en todo el curso.** El detector marcó once párrafos,
+pero **diez eran listas legítimas** (`uda + berri → udaberri`, `Si es un
+chico: anaia…`, `Ni ikaslea naiz. → sin -k…`), donde el salto es correcto y
+tocarlo lo empeoraría. El único de verdad era el que vio Ric.
+
+De los 5 saltos de esa ficha, **3 son buenos** (la lista de los cuatro
+territorios del sur) y 2 eran el párrafo mal ajustado. Unido en una línea;
+comprobado en la app que ese párrafo ya tiene 0 `<br>` y que la lista de
+territorios conserva los suyos.
+
+**El problema espejo, comprobado y limpio:** `nota`, `explicacion`, `pista`,
+`pregunta` e `instruccion` van por `esc()`, que **no** convierte `\n` — en
+HTML se colapsaría a un espacio y un corte de párrafo intencionado se
+perdería sin avisar. No hay ninguno.
+
+**Para que no vuelva:** `verificar.py` avisa cuando dos líneas seguidas de un
+párrafo parecen las dos prosa corrida en vez de elementos de una lista.
+Probado a la inversa (volviendo a meter el salto) para confirmar que salta.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
