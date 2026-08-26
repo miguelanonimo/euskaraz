@@ -401,6 +401,23 @@ código.
 
 ## Implementadas
 
+- **2026-08-26 · Media docena de arreglos pequeños de `ric/trabajo`**
+  (commits `10a9933`, `104b3f2`, `00ff5c8`, `ed9af82`, `f0b9ff6`,
+  `25c1fd2`, con Claude Fable), sin tocar la reestructuración de 10
+  unidades ni `data/unidades-v2/`: campo `esAlt` para formas
+  castellanas que no se deducen del texto ("gracias" vale para
+  "muchas gracias"); tildes y espacios de barra ya no cuentan como
+  fallo (`claveRespuesta()`, "el/ella" acepta "él / ella"); al fallar
+  traduciendo AL castellano ahora dice "dijiste"/"significa" en vez de
+  "escribiste"/"se escribe", y no se enseña la nota en euskera (solo
+  despistaba); dos frases con "barkatu" mal usado sustituidas; dos
+  pistas que daban la solución hecha, reescritas (U5); demostrativos
+  bizkainos nuevos, "hura"→"ha" y "haiek"→"hareek" (U2); progreso en
+  `localStorage` al probar sin cuenta en local (`MODO_LOCAL`, no toca
+  producción). El resto de esa tanda (distractores de Olentzero,
+  nombres de territorio, preguntas circulares, la ficha de
+  demostrativos del subnivel 3.3) solo toca `unidades-v2/`, aparcado
+  con el resto de la reestructuración.
 - **2026-08-25 · Respuestas flexibles en castellano**, portado de
   `ric/trabajo` (commit `01ec749`, con Claude Fable). El campo `es`
   está escrito para leerse, no para compararse — «pequeño/a» marcaba

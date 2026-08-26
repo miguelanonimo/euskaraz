@@ -122,7 +122,10 @@
       "es": "muchas gracias",
       "nota": "También vale «mila esker» (mil gracias).",
       "audio": "unidades/u1/eskerrik-asko.mp3",
-      "categoria": "otros"
+      "categoria": "otros",
+      "esAlt": [
+        "gracias"
+      ]
     },
     {
       "eu": "ez horregatik",
@@ -667,12 +670,12 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Perdón, muchas gracias.",
-          "eu": "Barkatu, eskerrik asko.",
+          "es": "Muchas gracias. ¡Adiós!",
+          "eu": "Eskerrik asko. Agur!",
           "palabras": [
-            "Barkatu,",
-            "eskerrik",
-            "asko."
+            "Eskerrik",
+            "asko.",
+            "Agur!"
           ]
         },
         {
@@ -1009,12 +1012,12 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Perdón, ¿qué tal?",
-          "eu": "Barkatu, zer moduz?",
+          "es": "Buenas noches, hasta la vista.",
+          "eu": "Gabon, ikusi arte.",
           "palabras": [
-            "Barkatu,",
-            "zer",
-            "moduz?"
+            "Gabon,",
+            "ikusi",
+            "arte."
           ]
         }
       ]
