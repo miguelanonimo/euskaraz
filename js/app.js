@@ -920,7 +920,7 @@
       totalHoy++;
       var rVo = recuento(vocab, claveDeVocab);
       pintarPendiente(el.vocabRepasoDue, rVo.vencidos);
-      if (rVo.vencidos === 0) {
+      if (rVo.vencidos === 0 && !rVo.nuevos) {
         el.vocabRepasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
         el.vocabRepasoCount.className = 'navcard__sub navcard__sub--ok';
       } else {
@@ -939,7 +939,7 @@
       totalHoy++;
       var rEj = recuento(fondo, claveDeFondo);
       pintarPendiente(el.repasoDue, rEj.vencidos);
-      if (rEj.vencidos === 0) {
+      if (rEj.vencidos === 0 && !rEj.nuevos) {
         el.repasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
         el.repasoCount.className = 'navcard__sub navcard__sub--ok';
       } else {
@@ -1104,6 +1104,10 @@
     var p = progUnidad(unidadId);
     if (!p.subs) p.subs = {};
     if (!p.subs[subId]) p.subs[subId] = { visitado: false, mejor: 0 };
+    // `visitado` es haber abierto la portada del tema; `desbloqueado` es
+    // haber entrado a su gramática o a su vocabulario, que es lo que mete
+    // sus palabras en el repaso general (criterio de Ric).
+    if (p.subs[subId].desbloqueado === undefined) p.subs[subId].desbloqueado = false;
     return p.subs[subId];
   }
 
@@ -1258,8 +1262,19 @@
     else tituloBarra(seccion ? seccion + ' · ' + u.titulo : u.titulo);
   }
 
+  /* Abrir la explicación o el vocabulario de un tema desbloquea sus
+     palabras para el repaso general. Se acumulan: las de los temas que
+     abriste hace tres unidades siguen dentro. */
+  function desbloquearTema() {
+    var u = estado.unidad, id = estado.subnivel;
+    if (!u || !id || id === 'test' || !tieneSubniveles(u)) return;
+    progSub(u.id, id).desbloqueado = true;
+    guardarProgreso();
+  }
+
   function pantallaGramatica() {
     var u = estado.unidad;
+    desbloquearTema();
     barraDeUnidad(u, 'Gramática');
 
     el.gramContent.innerHTML = gramaticaVisible(delSubnivel(u.gramatica, estado.subnivel)).map(function (g) {
@@ -1327,8 +1342,11 @@
 
   function pantallaVocabulario() {
     var u = estado.unidad;
-    progUnidad(u.id).vocab = true;
-    guardarProgreso();
+    // La marca de unidad entera solo tiene sentido donde no hay temas: si
+    // los hay, dejarla puesta desbloquearía las 74 palabras de la unidad
+    // por haber asomado a un tema.
+    if (tieneSubniveles(u)) desbloquearTema();
+    else { progUnidad(u.id).vocab = true; guardarProgreso(); }
     barraDeUnidad(u, 'Vocabulario');
     el.vocabUnitCat.value = '';
     pintarVocabulario();
@@ -1424,12 +1442,37 @@
      con haber entrado a la portada), sin repetir la misma palabra en
      euskera aunque salga en dos unidades. Se guarda la unidad de origen
      para poder sacar distractores de la misma lección. */
+  /* Las palabras que ya se han desbloqueado, de todas las unidades. Es
+     aditivo: se van sumando conforme abres temas, y las de atrás no se
+     caen nunca (petición de Ric).
+
+     Antes esto iba por unidad entera y con la señal equivocada: bastaba
+     abrir la pantalla de Vocabulario para meter sus 74 palabras, incluidos
+     los temas sin tocar.
+
+     Se conservan dos vías de respaldo para no dejar a nadie sin bolsa:
+     las unidades sin temas (el curso viejo de data/unidades/), y el
+     progreso guardado de antes de este cambio, que marcaba la unidad y no
+     los temas — si esa marca está y no hay ningún tema abierto, se
+     entiende que la unidad se vio entera. */
+  function temaDesbloqueado(u, subId) {
+    var p = progUnidad(u.id);
+    return !!(p.subs && p.subs[subId] && p.subs[subId].desbloqueado);
+  }
+
   function fondoVocabulario(categoria) {
     var vistas = {}, fondo = [];
     CURSO.unidades.forEach(function (u) {
-      if (!progUnidad(u.id).vocab) return;
+      var conTemas = tieneSubniveles(u);
+      var p = progUnidad(u.id);
+      var algunTema = conTemas && (u.subniveles || []).some(function (s) {
+        return temaDesbloqueado(u, s.id);
+      });
+      var unidadEntera = !conTemas ? !!p.vocab : (!!p.vocab && !algunTema);
+      if (!unidadEntera && !algunTema) return;
       u.vocabulario.forEach(function (v) {
         if (categoria && (v.categoria || 'otros') !== categoria) return;
+        if (!unidadEntera && !temaDesbloqueado(u, v.subnivel)) return;
         formasDe(v, u.numero, u.titulo).forEach(function (forma) {
           var k = normalizar(forma.eu);
           if (vistas[k]) return;
