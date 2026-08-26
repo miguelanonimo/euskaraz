@@ -40,17 +40,11 @@
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   var usuarioId = null;
 
-  /* Entrar sin cuenta, SOLO en local, para poder revisar contenido nuevo
-     sin pasar por el magic link. El progreso no se guarda (guardarProgreso
-     y guardarProgresoAhora ya salen si no hay usuarioId), así que cada
-     recarga empieza limpia: es para mirar, no para estudiar.
-
-     La condición es el nombre del host, no una variable ni una bandera:
-     en el dominio real esto es false siempre y el acceso funciona igual
-     que ahora. No hay forma de activarlo en producción sin cambiar esta
-     línea. */
+  /* Entrar sin cuenta, SOLO en local, para poder revisar contenido sin
+     pasar por el login (aportado por Ric). La condición es el nombre
+     del host, no una bandera: en el dominio real esto es false siempre,
+     no hay forma de activarlo en producción sin cambiar esta línea. */
   var MODO_LOCAL = ['localhost', '127.0.0.1', '::1', ''].indexOf(location.hostname) !== -1;
-
   // Bucket público de pronunciaciones (Cloud TTS, ver docs/brief.md sección 6).
   var AUDIO_BASE = SUPABASE_URL + '/storage/v1/object/public/euskaraz-audio/';
   var GUARDAR_ESPERA_MS = 1500;
@@ -297,20 +291,20 @@
   }
 
   /* Las tildes y los espacios alrededor de la barra son cosméticos: el
-     brief los da por no-fallo, pero la comparación sí los miraba, y «el/ella»
-     salía mal contra «él / ella» (detectado por Ric). Se comparan por esta
-     clave; lo que se muestra en pantalla no cambia.
-     La ñ se deja tal cual a propósito: en castellano y en euskera es otra
-     letra, no una n con adorno. Comprobado que ninguna pareja de palabras
-     del curso se confunde al aplanar así. */
-  var TILDES = { '\u00e1':'a','\u00e0':'a','\u00e4':'a','\u00e2':'a',
-                 '\u00e9':'e','\u00e8':'e','\u00eb':'e','\u00ea':'e',
-                 '\u00ed':'i','\u00ec':'i','\u00ef':'i','\u00ee':'i',
-                 '\u00f3':'o','\u00f2':'o','\u00f6':'o','\u00f4':'o',
-                 '\u00fa':'u','\u00f9':'u','\u00fc':'u','\u00fb':'u' };
+     brief los da por no-fallo, pero la comparación sí los miraba, y
+     «el/ella» salía mal contra «él / ella» (detectado por Ric). Se
+     comparan por esta clave; lo que se muestra en pantalla no cambia.
+     La ñ se deja tal cual a propósito: en castellano y en euskera es
+     otra letra, no una n con adorno. Comprobado que ninguna pareja de
+     palabras del curso se confunde al aplanar así. */
+  var TILDES = { 'á':'a','à':'a','ä':'a','â':'a',
+                 'é':'e','è':'e','ë':'e','ê':'e',
+                 'í':'i','ì':'i','ï':'i','î':'i',
+                 'ó':'o','ò':'o','ö':'o','ô':'o',
+                 'ú':'u','ù':'u','ü':'u','û':'u' };
   function claveRespuesta(texto) {
     return normalizar(texto)
-      .replace(/[\u00e1\u00e0\u00e4\u00e2\u00e9\u00e8\u00eb\u00ea\u00ed\u00ec\u00ef\u00ee\u00f3\u00f2\u00f6\u00f4\u00fa\u00f9\u00fc\u00fb]/g,
+      .replace(/[áàäâéèëêíìïîóòöôúùüû]/g,
                function (c) { return TILDES[c]; })
       .replace(/\s*\/\s*/g, '/');
   }
@@ -559,8 +553,8 @@
   }
 
   /* Requiere que usuarioId ya esté fijado (ver onAuthStateChange), salvo
-     en MODO_LOCAL sin sesión: ahí se trabaja con un progreso en memoria
-     que no se persiste en ningún sitio. */
+     en MODO_LOCAL sin sesión: ahí el progreso vive en localStorage, para
+     no empezar de cero en cada recarga al probar sin cuenta. */
   function cargarProgreso() {
     if (!usuarioId) {
       var guardado = null;
@@ -2401,11 +2395,11 @@
     // letra mezclaba coincidencias sueltas sin sentido (ver comparacion()).
     var porPalabras = normalizar(ej.solucion).indexOf(' ') !== -1;
     // Traduciendo al castellano la etiqueta «se escribe» no encaja: no
-    // has fallado la grafía, has fallado el significado. Y la nota de la
-    // palabra, que habla de otras formas en euskera, aquí despista más
-    // que ayuda (las dos cosas, detectadas por Ric).
+    // has fallado la grafía, has fallado el significado. Y la nota de
+    // la palabra, que habla de otras formas en euskera, aquí despista
+    // más que ayuda (las dos cosas, detectadas por Ric).
     var traduciendo = ej.__objetivo === 'es';
-    var nota = (ej.explicacion && !traduciendo)
+    var nota2 = (ej.explicacion && !traduciendo)
       ? '<p class="dif__nota">' + esc(ej.explicacion) + '</p>' : '';
     /* El «casi correcto» también enseña la forma buena: antes se daba por
        válido y se pasaba de largo, así que la errata volvía a la siguiente
@@ -2414,7 +2408,7 @@
     return {
       ok: leve, leve: leve,
       cuerpo: comparacion(dado, leve ? cercana.texto : normalizar(ej.solucion),
-                          porPalabras, traduciendo ? 'dijiste' : undefined) + nota
+                          porPalabras, traduciendo ? 'dijiste' : undefined) + nota2
     };
   }
 
@@ -3126,7 +3120,8 @@
       usuarioId = session.user.id;
       arrancarApp();
     } else if (MODO_LOCAL) {
-      // En local se entra directamente, sin cuenta y sin guardar nada.
+      // En local se entra directamente, sin cuenta — el progreso vive
+      // en localStorage (ver cargarProgreso/guardarProgresoAhora).
       usuarioId = null;
       arrancarApp();
     } else if (event !== 'INITIAL_SESSION' || !arrancado) {

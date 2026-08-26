@@ -744,3 +744,33 @@ aceptadas, no solo la primera. Al acertar una palabra de doble género
 se avisa de que el adjetivo en euskera no tiene género — idea de Ric.
 Inocuo sobre respuestas en euskera (ningún campo `eu` del curso lleva
 barra, coma ni paréntesis).
+
+## 2026-08-26 — Media docena de arreglos más de `ric/trabajo`, sin la reestructuración
+
+Portados de `ric/trabajo` (con Claude Fable), dejando aparte la
+reestructuración de 10 unidades con subniveles (`data/unidades-v2/`,
+sigue sin tocar):
+
+- **Tildes y espacios de barra ya no cuentan como fallo** al teclear
+  ("el/ella" acepta "él / ella") — `claveRespuesta()` aplana las dos
+  cosas para comparar, sin tocar lo que se ve en pantalla. La ñ se
+  deja intacta a propósito. `corregirTraducir`/`corregirTeclear` pasan
+  ahora los dos por `aciertaTecleado()`.
+- **Campo `esAlt`** en vocabulario: formas castellanas alternativas que
+  no se pueden deducir del texto ("gracias" vale para "muchas
+  gracias" en escuchar+teclear).
+- **Mensaje de fallo más claro al traducir AL castellano**: "dijiste"/
+  "significa" en vez de "escribiste"/"se escribe" (no has fallado la
+  grafía, el significado), y ya no se enseña la nota en euskera de la
+  palabra (solo despistaba, hablando de un fallo en castellano).
+- **Dos frases con "barkatu" mal usado** sustituidas (U1): "barkatu"
+  pegado a un saludo o un agradecimiento no tiene situación real.
+- **Dos pistas más que daban la solución hecha**, reescritas (U5,
+  "tengo un perro"/"tenemos una casa") — la pista da la regla, no las
+  palabras.
+- **Demostrativos bizkainos nuevos** (U2): "hura"→"ha", "haiek"→
+  "hareek", verificados contra bizkaieraren ataria, con el mismo
+  esquema `registro`/`variantes` de siempre.
+- **Progreso en `localStorage` al probar sin cuenta en local**
+  (`MODO_LOCAL`, gated por `location.hostname`) — antes se perdía en
+  cada recarga. No cambia nada en producción.
