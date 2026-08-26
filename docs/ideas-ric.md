@@ -1241,6 +1241,48 @@ Actualizado.
 ficha que escribe describe el selector retirado, y volver a ejecutarlo
 pisaría la versión buena.
 
+### La barra dice dónde estás, y las burbujas van al final (26/08/2026)
+
+#### Unidad y tema en la barra superior
+
+Ric: dentro de un tema quiere ver **la unidad y el tema** arriba. Antes solo
+cabía una de las dos —en Gramática se veía la unidad, en la portada del tema
+el tema— así que metido en un ejercicio no sabías de qué tema era.
+
+Empecé metiéndolo en una línea y **no cabía**: el peor caso, «Zenbat eta
+familia · 4.4 Tener, y decir tu edad», se corta en un móvil, y lo que se
+perdía era justo el nombre del tema. La barra mide 60px y una línea usa 22,
+así que **van en dos líneas**: la unidad arriba en gris, el tema debajo. Con
+la barra de progreso del ejercicio ocupa 45 de 59px, así que cabe de sobra.
+
+Comprobado a 375px con el título más largo del curso: los dos enteros, sin
+recortar. Las pantallas de una sola línea (Home, unidad, diccionario) no
+cambian.
+
+*Detalle:* la clase de las dos líneas la pone el JS en vez de usar `:has()`
+en el CSS, que es un selector reciente y esto tiene que verse igual en
+cualquier navegador.
+
+#### Las burbujas de dialecto, al final de su tema
+
+Ric: *«estas burbujas localizadas deben estar al final del tema que les
+corresponde»*. En medio cortan la explicación en dos.
+
+Barridas las 21. **Cuatro estaban en medio** —una de ellas por mi culpa, al
+insertar la ficha del jueves en 6.2 empujé la burbuja detrás— y **tres
+estaban en el tema equivocado**:
+
+- La de **`egon`** vivía en 5.2 «La casa por dentro» y habla del verbo:
+  pasa a **5.1**. La encontró Ric.
+- La de 5.2 mezclaba **colores y casa**. Partida: los colores a **5.3**
+  (donde los moví hace unas horas), la casa se queda.
+- La de 6.5 «Las fiestas» abría hablando **del cuerpo** (`belarria`). Otro
+  resto de la vieja unidad 10.1: ese párrafo se va a **u9 9.3**.
+
+Todas las unidades conservan al menos una. **`verificar.py` comprueba ahora
+que ninguna burbuja tenga una ficha normal detrás**, así que la regla se
+mantiene sola.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

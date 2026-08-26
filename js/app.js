@@ -1181,7 +1181,7 @@
     guardarProgreso();
 
     var c = contenidoSub(u, subId);
-    el.topbarTitle.textContent = subId + ' · ' + s.titulo;
+    tituloBarra(u.titulo, subId + ' ' + s.titulo);
     el.subHeroNum.textContent = 'Tema ' + subId;
     el.subHeroTitle.textContent = s.titulo;
     el.subHeroGoal.textContent = s.resumen || '';
@@ -1227,9 +1227,40 @@
 
   // ─────────── Pantalla: gramática ───────────
 
+  /* La barra dice dónde estás. Antes solo cabía una de las dos cosas —en
+     Gramática se veía la unidad, en el tema el tema— así que metido en un
+     ejercicio no sabías de qué tema era (pedido por Ric). Va en una sola
+     línea porque la barra tiene altura fija, con la unidad en gris para
+     que el tema siga leyéndose como el titular. */
+  function tituloBarra(unidad, tema) {
+    // La clase la pone el JS en vez de usar :has() en el CSS: :has() es
+    // reciente y esto tiene que verse igual en cualquier navegador.
+    el.topbarTitle.classList.toggle('topbar__title--doble', !!tema);
+    el.topbarTitle.innerHTML = tema
+      ? '<span class="topbar__ctx">' + esc(unidad) + '</span>' +
+        '<span class="topbar__tema">' + esc(tema) + '</span>'
+      : esc(unidad);
+  }
+
+  /* El tema en el que estás, o null si la unidad no los tiene. */
+  function temaActual() {
+    var u = estado.unidad, id = estado.subnivel;
+    if (!u || !id || id === 'test' || !tieneSubniveles(u)) return null;
+    return u.subniveles.filter(function (s) { return s.id === id; })[0] || null;
+  }
+
+  /* Lo que toca poner en la barra dentro de una unidad: si hay tema, la
+     unidad y el tema; si no, lo de siempre. */
+  function barraDeUnidad(u, seccion) {
+    var t = temaActual();
+    if (t) tituloBarra(u.titulo, t.id + ' ' + t.titulo);
+    else if (estado.subnivel === 'test') tituloBarra(u.titulo, 'Test');
+    else tituloBarra(seccion ? seccion + ' · ' + u.titulo : u.titulo);
+  }
+
   function pantallaGramatica() {
     var u = estado.unidad;
-    el.topbarTitle.textContent = 'Gramática · ' + u.titulo;
+    barraDeUnidad(u, 'Gramática');
 
     el.gramContent.innerHTML = gramaticaVisible(delSubnivel(u.gramatica, estado.subnivel)).map(function (g) {
       var ejemplos = '';
@@ -1298,7 +1329,7 @@
     var u = estado.unidad;
     progUnidad(u.id).vocab = true;
     guardarProgreso();
-    el.topbarTitle.textContent = 'Vocabulario · ' + u.titulo;
+    barraDeUnidad(u, 'Vocabulario');
     el.vocabUnitCat.value = '';
     pintarVocabulario();
     mostrar('vocab');
@@ -2049,7 +2080,7 @@
     estado.aciertos = 0;
     estado.fallos = 0;
     estado.falladas = [];
-    el.topbarTitle.textContent = u.titulo;
+    barraDeUnidad(u, null);
     mostrar('quiz');
     pintarEjercicio();
   }

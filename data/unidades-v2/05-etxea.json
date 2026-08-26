@@ -136,7 +136,7 @@
           "audio": "unidades/u6/haiek-tabernan-dagoz.mp3"
         }
       ],
-      "subnivel": "5.2",
+      "subnivel": "5.1",
       "registro": "bizkaiera"
     },
     {
@@ -209,7 +209,7 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Dos detalles que se oyen mucho por aquí.\n\nEl color rojo, <b>gorria</b>, no cambia. Pero <b>urdina</b> (azul) cubre en euskera un rango más amplio que el «azul» castellano: tradicionalmente sirve también para lo que llamaríamos gris o verde grisáceo, sobre todo hablando del mar o del cielo.\n\nY sobre la casa: para el salón oirás también <b>sala</b>, tomado del castellano y muy usado en el habla de todos los días, aunque <i>egongela</i> es lo normativo.",
+      "cuerpo": "Para el salón oirás también <b>sala</b>, tomado del castellano y muy usado en el habla de todos los días, aunque <i>egongela</i> es lo normativo.",
       "ejemplos": [
         {
           "eu": "etxe gorria",
@@ -221,6 +221,13 @@
         }
       ],
       "subnivel": "5.2",
+      "registro": "bizkaiera"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "El color rojo, <b>gorria</b>, no cambia. Pero <b>urdina</b> (azul) cubre en euskera un rango más amplio que el «azul» castellano: tradicionalmente sirve también para lo que llamaríamos gris o verde grisáceo, sobre todo hablando del mar o del cielo.",
+      "ejemplos": [],
+      "subnivel": "5.3",
       "registro": "bizkaiera"
     }
   ],

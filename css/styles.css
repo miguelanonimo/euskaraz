@@ -154,6 +154,22 @@ svg{
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
+/* La unidad, delante del tema en la barra. En gris y sin negrita para que
+   el titular siga siendo el tema, que es donde estás trabajando.
+   Van en dos líneas y no en una: «Zenbat eta familia · 4.4 Tener, y decir
+   tu edad» no cabe seguido en un móvil, y cortando se perdía justo el
+   nombre del tema. La barra mide 60px y una línea usa 22, así que caben
+   las dos y cada nombre tiene el ancho entero. */
+.topbar__title--doble{
+  display: flex; flex-direction: column; gap: 1px;
+  line-height: 1.2;
+}
+.topbar__ctx{
+  font-size: var(--t-xs); color: var(--tinta-45); font-weight: 500;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.topbar__tema{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
 .topbar__right{ flex: 0 0 auto; display: flex; align-items: center; gap: var(--u); }
 
 .dialecto{

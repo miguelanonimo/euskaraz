@@ -35,6 +35,28 @@
       "subnivel": "1.1"
     },
     {
+      "titulo": "«on» = bueno, y va detrás",
+      "cuerpo": "Los tres saludos del día comparten la misma pieza:\n\n<b>egun</b> (día) + <b>on</b> → egun on\n<b>arratsalde</b> (tarde) + <b>on</b> → arratsalde on\n<b>gau</b> (noche) + <b>on</b> → gabon\n\nEl adjetivo va <b>detrás</b> del sustantivo, al revés que en «buenos días». No es una excepción de los saludos, es una regla general del idioma: <i>etxe handia</i> es «casa grande», nunca «grande casa».\n\nGuárdate esta regla, porque va a aparecer en todas las unidades.",
+      "ejemplos": [
+        {
+          "eu": "egun on",
+          "es": "buenos días (día bueno)",
+          "audio": "unidades/u1/egun-on.mp3"
+        },
+        {
+          "eu": "etxe polita",
+          "es": "casa bonita",
+          "audio": "unidades/u1/etxe-polita.mp3"
+        },
+        {
+          "eu": "kale zaharra",
+          "es": "calle vieja",
+          "audio": "unidades/u1/kale-zaharra.mp3"
+        }
+      ],
+      "subnivel": "1.1"
+    },
+    {
       "titulo": "Pronunciación: lo que necesitas hoy",
       "cuerpo": "Las cinco vocales suenan como en castellano: <b>a, e, i, o, u</b>. Sin diptongos raros, sin vocales mudas.\n\nLas consonantes que cambian:\n\n<b>z</b> — s silbante, como la «s» del inglés <i>see</i>. Nunca como la «z» castellana.\n<b>s</b> — una s más apagada, con la punta de la lengua algo retraída. Al principio pronúnciala como una s normal.\n<b>x</b> — «sh», como en <i>show</i>.\n<b>tx</b> — «ch», como en <i>chico</i>.\n<b>ts</b> y <b>tz</b> — «ts», como en <i>pizza</i>.\n<b>j</b> — normalmente «y», como en <i>yo</i>. En Gipuzkoa suena como la jota castellana.\n<b>h</b> — muda en casi todo el País Vasco.\n<b>ñ</b> y <b>ll</b> — como en castellano.",
       "ejemplos": [
@@ -62,26 +84,10 @@
       "subnivel": "1.4"
     },
     {
-      "titulo": "«on» = bueno, y va detrás",
-      "cuerpo": "Los tres saludos del día comparten la misma pieza:\n\n<b>egun</b> (día) + <b>on</b> → egun on\n<b>arratsalde</b> (tarde) + <b>on</b> → arratsalde on\n<b>gau</b> (noche) + <b>on</b> → gabon\n\nEl adjetivo va <b>detrás</b> del sustantivo, al revés que en «buenos días». No es una excepción de los saludos, es una regla general del idioma: <i>etxe handia</i> es «casa grande», nunca «grande casa».\n\nGuárdate esta regla, porque va a aparecer en todas las unidades.",
-      "ejemplos": [
-        {
-          "eu": "egun on",
-          "es": "buenos días (día bueno)",
-          "audio": "unidades/u1/egun-on.mp3"
-        },
-        {
-          "eu": "etxe polita",
-          "es": "casa bonita",
-          "audio": "unidades/u1/etxe-polita.mp3"
-        },
-        {
-          "eu": "kale zaharra",
-          "es": "calle vieja",
-          "audio": "unidades/u1/kale-zaharra.mp3"
-        }
-      ],
-      "subnivel": "1.1"
+      "titulo": "Un aviso sobre los dialectos",
+      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
+      "ejemplos": [],
+      "subnivel": "1.4"
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
@@ -105,12 +111,6 @@
       ],
       "subnivel": "1.4",
       "registro": "bizkaiera"
-    },
-    {
-      "titulo": "Un aviso sobre los dialectos",
-      "cuerpo": "El habla varía de un pueblo a otro dentro de Bizkaia, y hasta de un barrio bilbaíno a otro. Lo que aprendes aquí es bizkaiera de uso general, con Bilbao como referencia — no hay un único bizkaiera «correcto», y quien se ha escolarizado en batua mezcla las dos formas constantemente, también en Bilbao.\n\nTómalo como oído entrenado, no como norma. Para escribir, para exámenes y para entenderte con cualquiera, usa batua. Para reconocer lo que oyes por la calle en Bilbao, ten estas notas a mano.\n\nY contrástalo con alguien de allí en cuanto puedas. Ninguna app sustituye eso.",
-      "ejemplos": [],
-      "subnivel": "1.4"
     },
     {
       "subnivel": "1.3",

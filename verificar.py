@@ -166,6 +166,22 @@ for ruta, u in unidades:
         for tag in re.findall(r"</?(\w+)>", gr["cuerpo"]):
             if tag not in ("b","i","u"):
                 avisos.append("%s: etiqueta <%s> en «%s»" % (ruta, tag, gr["titulo"]))
+    # Las burbujas de dialecto van AL FINAL de su tema: primero la forma
+    # normativa entera, y de remate cómo suena por aquí. En medio cortan la
+    # explicación en dos (criterio de Ric).
+    porTema = {}
+    for gr in u["gramatica"]:
+        porTema.setdefault(gr.get("subnivel"), []).append(gr)
+    for sub, fichas in porTema.items():
+        vistoDialecto = False
+        for gr in fichas:
+            if gr.get("registro") == "bizkaiera":
+                vistoDialecto = True
+            elif vistoDialecto:
+                errores.append(u"%s: la ficha de dialecto de %s está en medio; "
+                               u"detrás va «%s»" % (ruta, sub, gr["titulo"]))
+                break
+
     # El original pedía una ficha de dialecto por unidad. Se reconocen por
     # `registro: "bizkaiera"`; se aceptan también por el título, que es como
     # estaban marcadas antes de que existiera el campo.

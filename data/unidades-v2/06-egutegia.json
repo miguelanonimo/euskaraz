@@ -144,6 +144,21 @@
       "subnivel": "6.2"
     },
     {
+      "titulo": "El jueves y el viernes: los dos que no encajan",
+      "cuerpo": "Ya viste que lunes, martes y miércoles son «el primero, el de en medio y el último» de la semana. Pero <b>ostegun</b> (jueves) y <b>ostiral</b> (viernes) se salen del patrón — y arrancan los dos igual, por <b>ost-</b>.\n\nEse <i>ost-</i> (también <i>ortz-</i>) no tiene que ver con la semana: tiene que ver con <b>el cielo</b>. Aparece en palabras del firmamento y del trueno, y es la raíz del nombre <b>Ortzi</b> (o <i>Urtzi</i>), que se recoge como el del cielo y la tormenta. Así que <i>ostegun</i> se lee como <b>«el día del cielo»</b>.\n\nY ahora lo bonito. Mira a quién está dedicado el jueves en otras lenguas:\n\n<b>jueves</b> — de <i>Iovis dies</i>, el día de Júpiter, dios romano del rayo\n<b>Thursday</b> — el día de <i>Thor</i>, dios nórdico del trueno\n<b>ostegun</b> — el día de <i>Ortzi</i>\n\nTres familias de lenguas que no tienen nada que ver entre sí, y las tres le dieron el jueves al mismo tipo de dios. El euskera no copió el nombre: llegó por su cuenta a la misma idea.\n\nUn aviso de honestidad: esto es la explicación más aceptada, no un hecho cerrado. Los detalles —sobre todo los de <i>ostiral</i>— siguen discutiéndose entre especialistas.",
+      "ejemplos": [
+        {
+          "eu": "Ostegunean.",
+          "es": "El jueves."
+        },
+        {
+          "eu": "Ostirala eta larunbata.",
+          "es": "El viernes y el sábado."
+        }
+      ],
+      "subnivel": "6.2"
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "Aquí el bizkaiera no cambia un detalle: cambia <b>los nombres de los días</b>. Y es de lo primero que descoloca a quien llega con batua aprendido.\n\n<b>astelehena</b> — igual (a veces <i>astelena</i>)\n<b>martitzena</b> — batua: asteartea\n<b>eguaztena</b> — batua: asteazkena\n<b>eguena</b> — batua: osteguna\n<b>barikua</b> — batua: ostirala\n<b>zapatua</b> — batua: larunbata\n<b>domeka</b> — batua: igandea\n\nAsí que «el viernes por la noche» por allí es <b>barikuan gabean</b>, no <i>ostiralean gauean</i>. Los carteles y la prensa usan batua; la gente, en casa, sigue con estos.\n\n<b>gaua → gaba</b>\nLa noche es <b>gaba</b> en bizkaiera, de donde sale el <i>gabon</i> de «buenas noches» (gau on). En batua, <i>gaua</i>.\n\n<b>Ze ordu da?</b>\nEl <i>zer</i> del batua se acorta en <b>ze</b> delante de un nombre: <b>Ze ordu da?</b>, <b>Ze egun da gaur?</b>",
       "ejemplos": [
@@ -165,21 +180,6 @@
       ],
       "subnivel": "6.2",
       "registro": "bizkaiera"
-    },
-    {
-      "titulo": "El jueves y el viernes: los dos que no encajan",
-      "cuerpo": "Ya viste que lunes, martes y miércoles son «el primero, el de en medio y el último» de la semana. Pero <b>ostegun</b> (jueves) y <b>ostiral</b> (viernes) se salen del patrón — y arrancan los dos igual, por <b>ost-</b>.\n\nEse <i>ost-</i> (también <i>ortz-</i>) no tiene que ver con la semana: tiene que ver con <b>el cielo</b>. Aparece en palabras del firmamento y del trueno, y es la raíz del nombre <b>Ortzi</b> (o <i>Urtzi</i>), que se recoge como el del cielo y la tormenta. Así que <i>ostegun</i> se lee como <b>«el día del cielo»</b>.\n\nY ahora lo bonito. Mira a quién está dedicado el jueves en otras lenguas:\n\n<b>jueves</b> — de <i>Iovis dies</i>, el día de Júpiter, dios romano del rayo\n<b>Thursday</b> — el día de <i>Thor</i>, dios nórdico del trueno\n<b>ostegun</b> — el día de <i>Ortzi</i>\n\nTres familias de lenguas que no tienen nada que ver entre sí, y las tres le dieron el jueves al mismo tipo de dios. El euskera no copió el nombre: llegó por su cuenta a la misma idea.\n\nUn aviso de honestidad: esto es la explicación más aceptada, no un hecho cerrado. Los detalles —sobre todo los de <i>ostiral</i>— siguen discutiéndose entre especialistas.",
-      "ejemplos": [
-        {
-          "eu": "Ostegunean.",
-          "es": "El jueves."
-        },
-        {
-          "eu": "Ostirala eta larunbata.",
-          "es": "El viernes y el sábado."
-        }
-      ],
-      "subnivel": "6.2"
     },
     {
       "titulo": "Los doce meses",
@@ -350,7 +350,7 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Con el cuerpo, un detalle de pronunciación que ya conoces: <b>belarria</b> (oreja) lleva esa <i>rr</i> fuerte que en Bizkaia se marca bien, y no hay que confundirla con <i>belarra</i>, que es la hierba.\n\nCon las fiestas: los carnavales, <b>Inauteriak</b> en batua, aquí se llaman muchas veces <b>Aratusteak</b>. Es la palabra que oirás en Bilbao y en buena parte de Bizkaia.\n\nY el 20 de enero, San Sebastián, en Bilbao no es gran cosa — pero el 15 de agosto sí: es la <b>Aste Nagusia</b>, la Semana Grande.",
+      "cuerpo": "Los carnavales, <b>Inauteriak</b> en batua, aquí se llaman muchas veces <b>Aratusteak</b>. Es la palabra que oirás en Bilbao y en buena parte de Bizkaia.\n\nY el 20 de enero, San Sebastián, en Bilbao no es gran cosa — pero el 15 de agosto sí: es la <b>Aste Nagusia</b>, la Semana Grande.",
       "ejemplos": [
         {
           "eu": "Inauteriak",
