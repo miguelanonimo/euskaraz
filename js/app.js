@@ -834,7 +834,7 @@
                  pu.hechos + ' de ' + pu.total + ' hechos</span>';
         } else {
           meta = '<span class="unitcard__meta unitcard__meta--pend">' +
-                 plural(u.subniveles.length, 'subnivel', 'subniveles') + '</span>';
+                 plural(u.subniveles.length, 'tema', 'temas') + '</span>';
         }
       } else {
         meta = p.completada
@@ -1156,7 +1156,7 @@
 
     var c = contenidoSub(u, subId);
     el.topbarTitle.textContent = subId + ' · ' + s.titulo;
-    el.subHeroNum.textContent = 'Subnivel ' + subId;
+    el.subHeroNum.textContent = 'Tema ' + subId;
     el.subHeroTitle.textContent = s.titulo;
     el.subHeroGoal.textContent = s.resumen || '';
 
@@ -2589,6 +2589,34 @@
 
   // ─────────── Pantalla: resultado ───────────
 
+  /* El siguiente tema de la unidad que tenga algo dentro, o null si este
+     era el último. Al acabar los ejercicios de un tema, la pantalla solo
+     ofrecía repetir o volver al inicio: un callejón, justo cuando lo
+     natural es seguir (detectado por Ric haciendo el curso). */
+  function temaSiguiente(u, subId) {
+    if (!tieneSubniveles(u) || !subId || subId === 'test') return null;
+    var ids = u.subniveles.map(function (s) { return s.id; });
+    for (var k = ids.indexOf(subId) + 1; k > 0 && k < u.subniveles.length; k++) {
+      var c = contenidoSub(u, u.subniveles[k].id);
+      if (c.gramatica.length || c.vocabulario.length || c.ejercicios.length) {
+        return u.subniveles[k];
+      }
+    }
+    return null;
+  }
+
+  /* Entra en un tema por su explicación, que es por donde se empieza. Si
+     no tiene gramática (los hay que son solo vocabulario), se queda en la
+     portada del tema en vez de abrir una pantalla vacía. */
+  function seguirConTema(s) {
+    var u = estado.unidad;
+    estado.subnivel = s.id;
+    progSub(u.id, s.id).visitado = true;
+    guardarProgreso();
+    if (gramaticaVisible(delSubnivel(u.gramatica, s.id)).length) pantallaGramatica();
+    else pantallaSubnivel(s.id);
+  }
+
   function pantallaResultado() {
     var u = estado.unidad;
     var total = estado.ejercicios.length;
@@ -2644,18 +2672,18 @@
          una porción confundía y daba la sensación de que ya no quedaba
          nada (detectado por Ric). */
       var esParte = !!(estado.subnivel && estado.subnivel !== 'test');
-      var queEs = esParte ? 'este subnivel' : 'esta unidad';
+      var queEs = esParte ? 'este tema' : 'esta unidad';
       var restantes = 0;
       if (esParte && tieneSubniveles(u)) {
         var pr = progresoUnidad(u);
         restantes = pr.total - pr.hechos;
       }
       var cola = restantes > 0
-        ? ' Te quedan ' + plural(restantes, 'parte', 'partes') + ' de la unidad.'
+        ? ' Te quedan ' + plural(restantes, 'tema', 'temas') + ' en la unidad.'
         : '';
       if (ratio === 1)      { titulo = 'Bikain!';   sub = 'Perfecto. Todas correctas.' + cola; }
       else if (ratio >= 0.8){ titulo = 'Oso ondo!'; sub = 'Muy bien. Dominas ' + queEs + '.' + cola; }
-      else if (ratio >= 0.7){ titulo = 'Ondo!';     sub = 'Bien. ' + (esParte ? 'Subnivel superado.' : 'Unidad superada.') + cola; }
+      else if (ratio >= 0.7){ titulo = 'Ondo!';     sub = 'Bien. ' + (esParte ? 'Tema superado.' : 'Unidad superada.') + cola; }
       else                  { titulo = 'Ia-ia…';    sub = 'Casi. Repasa la explicación y vuelve a intentarlo.'; }
     }
 
@@ -2686,6 +2714,14 @@
       acciones = '<button class="btn btn--primary" id="rRepetir">Otras palabras</button>' +
                  '<button class="btn btn--ghost" id="rDicc">Abrir el diccionario</button>' +
                  '<button class="btn btn--ghost" id="rHome">Volver al inicio</button>';
+    } else if (estado.subnivel && estado.subnivel !== 'test') {
+      // Acabas de terminar un tema: lo primero que ofrecemos es continuar.
+      var sig = temaSiguiente(u, estado.subnivel);
+      acciones = (sig
+          ? '<button class="btn btn--primary" id="rSeguir">Seguir: ' + esc(sig.titulo) + '</button>'
+          : '<button class="btn btn--primary" id="rUnidad">Volver a la unidad</button>') +
+        (sig ? '<button class="btn btn--ghost" id="rUnidad">Volver a la unidad</button>' : '') +
+        '<button class="btn btn--ghost" id="rRepetir">Repetir este tema</button>';
     } else {
       acciones = '<button class="btn btn--primary" id="rRepetir">Repetir la unidad</button>' +
                  '<button class="btn btn--ghost" id="rGram">Repasar la gramática</button>' +
@@ -2728,10 +2764,17 @@
     var otra = estado.modo === 'repaso' ? empezarRepaso
              : estado.modo === 'vocab'  ? empezarVocab
              : empezarPractica;
-    $('rRepetir').addEventListener('click', otra);
-    if ($('rGram')) $('rGram').addEventListener('click', pantallaGramatica);
-    if ($('rDicc')) $('rDicc').addEventListener('click', pantallaDiccionario);
-    $('rHome').addEventListener('click', pantallaHome);
+    if ($('rRepetir')) $('rRepetir').addEventListener('click', otra);
+    if ($('rGram'))    $('rGram').addEventListener('click', pantallaGramatica);
+    if ($('rDicc'))    $('rDicc').addEventListener('click', pantallaDiccionario);
+    if ($('rHome'))    $('rHome').addEventListener('click', pantallaHome);
+    if ($('rUnidad'))  $('rUnidad').addEventListener('click', function () {
+      estado.subnivel = null;
+      pantallaUnidad(estado.unidad);
+    });
+    if ($('rSeguir'))  $('rSeguir').addEventListener('click', function () {
+      seguirConTema(temaSiguiente(estado.unidad, estado.subnivel));
+    });
   }
 
   // ─────────── Eventos globales ───────────

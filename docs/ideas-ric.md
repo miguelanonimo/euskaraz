@@ -1061,6 +1061,47 @@ acertando exacto **no** se enseña la respuesta, porque acabas de escribirla.
 Deben sonar las tres sílabas con la G marcada: **non-GO-a**. Añadida al lote
 (`lote-ric-3.mjs`, ahora 23) y a `docs/audios-pendientes.md`.
 
+### «Tema» en vez de «subnivel», y salida del callejón al acabar (26/08/2026)
+
+Dos cosas que Ric ve **haciendo el curso**, que es donde se notan.
+
+#### La palabra
+
+*«Subnivel»* pasa a **«tema»** en todo lo que se ve en pantalla: las tarjetas
+de unidad («4 temas»), la cabecera del tema, y los mensajes de la pantalla
+final («Tema superado», «Te quedan 3 temas en la unidad»).
+
+**Solo el texto visible.** La clave `subnivel` de los JSON y los nombres de
+las funciones se quedan como están: renombrarlas sería mucho ruido sin
+ganancia, y el esquema de datos también es de Miguel. Queda esa asimetría
+entre lo que se ve y lo que se programa; si molesta, es un commit aparte.
+
+#### El callejón del final
+
+Al acabar los ejercicios de un tema, la pantalla ofrecía **«Repetir la
+unidad»** y **«Volver al inicio»**. Ninguna de las dos es lo que quieres
+hacer ahí: lo natural es seguir. Y encima «repetir la unidad» era mentira,
+porque lo que habías hecho era un tema.
+
+Ahora, al terminar un tema:
+
+| | |
+|---|---|
+| **Seguir: «La familia de non»** | entra en el siguiente tema por su explicación |
+| Volver a la unidad | |
+| Repetir este tema | |
+
+Si era el último tema de la unidad, el primer botón pasa a ser **«Volver a la
+unidad»**. El test de la unidad conserva sus botones de siempre.
+
+**Una trampa que había que esquivar:** cuatro temas del curso son solo de
+vocabulario y no tienen ficha de gramática (1.2, 4.7, 8.4 y 9.4). «Seguir» en
+esos habría abierto una pantalla vacía, así que cae en la portada del tema.
+
+Comprobado en `scripts/probar_navegacion.js`, que recorre **los 48 temas de
+las 10 unidades** verificando a dónde manda cada «Seguir», que el test no lo
+ofrezca, y qué botones salen en cada caso.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
