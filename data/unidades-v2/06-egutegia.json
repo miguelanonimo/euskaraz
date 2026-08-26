@@ -287,6 +287,21 @@
       "subnivel": "6.4"
     },
     {
+      "titulo": "El año tenía dos estaciones, no cuatro",
+      "cuerpo": "Mira los nombres con calma, porque cuentan algo:\n\n<b>uda</b> — el verano\n<b>negua</b> — el invierno\n<b>udaberria</b> — la primavera\n<b>udazkena</b> — el otoño\n\nLos dos primeros son palabras propias, sin parecido entre sí. Los dos últimos <b>están hechos con el primero</b>:\n\n<i>uda</i> (verano) + <i>berri</i> (nuevo) → <b>udaberri</b>, «el verano nuevo»\n<i>uda</i> (verano) + <i>azken</i> (último) → <b>udazken</b>, «el final del verano»\n\nNo es una casualidad bonita. Tradicionalmente el año vasco se partía en <b>dos</b>: verano e invierno, la temporada de trabajo fuera y la de estar dentro. Cuando hicieron falta las otras dos, no se inventaron palabras nuevas: se colocaron como el principio y el final del verano.\n\nCompáralo con el castellano, donde «primavera» viene del latín <i>prima vera</i>, «el primer verdor», y no tiene nada que ver con «verano». Cada lengua cortó el año por donde le importaba.",
+      "ejemplos": [
+        {
+          "eu": "Udaberria eta udazkena.",
+          "es": "La primavera y el otoño."
+        },
+        {
+          "eu": "Negua hotza da.",
+          "es": "El invierno es frío."
+        }
+      ],
+      "subnivel": "6.4"
+    },
+    {
       "titulo": "«Gabon» y «Gabonak»: cuidado con la -k",
       "cuerpo": "Aquí hay una coincidencia que confunde si no se avisa.\n\n<b>gabon</b> — buenas noches. Lo tienes desde la unidad 1.\n<b>Gabonak</b> — la Navidad.\n\nLa segunda es literalmente el plural de la primera: <i>las buenas noches</i>, las noches buenas del año. Va casi siempre en plural y con mayúscula.\n\nAsí que si alguien te dice <i>Gabon</i> por la noche te está dando las buenas noches, y si te habla de <i>Gabonak</i> te está hablando de las fiestas. El contexto lo deja claro enseguida, pero la primera vez despista.",
       "ejemplos": [
@@ -2851,7 +2866,7 @@
             "urtea (el año)"
           ],
           "correcta": 0,
-          "explicacion": "«Udaberria» es «el nuevo verano» y «udazkena» es «el final del verano». El euskera organiza el año alrededor del verano."
+          "explicacion": "«Udaberria» es «el verano nuevo» y «udazkena», «el final del verano». El año vasco se partía en dos —verano e invierno—, y las otras dos estaciones se colocaron alrededor del verano."
         }
       ]
     },
