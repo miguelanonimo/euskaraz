@@ -1624,6 +1624,44 @@ seguían describiendo las viejas** —«Empieza por gaur», «Dos palabras»—.
 Saltó la comprobación de pistas que se añadió esta misma mañana. Reescritas
 con la regla en vez de con la forma.
 
+### Retirada la ficha de Ortzi: el remate era falso (26/08/2026)
+
+Ric dudó de la ficha «El jueves y el viernes: los dos que no encajan»
+—a los hablantes que conoce no les sonaba el `ost-`— y pidió fuentes o
+retirarla. **Tenía razón, y el fallo era peor de lo que parecía.**
+
+La fuente buena es **M. Glonti, «Sobre los nombres vascos del jueves», en
+*Euskera* XXIX**, la revista de Euskaltzaindia. Lo que dice:
+
+- **`ortz` sí significa «cielo, dios, trueno»** — esa parte de la ficha estaba
+  bien.
+- **Pero `ortzegun` es un CALCO del latín *Iovis dies*.** Conclusión literal
+  del artículo: *«en el tiempo latino el vasco sí que produjo el calco
+  ortzegun»*. Y la semana de siete días llegó a Europa por el latín, así que
+  el jueves como concepto no es prelatino en euskera.
+- El artículo repasa **cuatro hipótesis enfrentadas** (Gorostiaga,
+  Barandiarán y otras). No hay consenso.
+
+**Mi remate decía justo lo contrario:** *«El euskera no copió el nombre: llegó
+por su cuenta a la misma idea»*. Es falso. Sí lo copió — lo tradujo. Y era
+precisamente la frase que hacía la ficha memorable.
+
+El aviso que le puse («esto es la explicación más aceptada, no un hecho
+cerrado») **no salva nada**: hedgear un dato no lo arregla si el dato está al
+revés.
+
+**Retirada la ficha.** En su lugar, una frase dentro de «Los días de la
+semana» que dice la verdad y no promete magia: el jueves y el viernes
+arrancan por `ost-`, de una capa más antigua, **su origen se sigue discutiendo
+entre especialistas**, y lo práctico es aprendérselos tal cual.
+
+**Lección para las cuñas culturales:** verificar antes de escribir no bastó —
+lo hice, y la primera búsqueda me dio un resumen que confirmaba lo que quería
+oír. Lo que faltó fue **ir a la fuente primaria** en vez de a los resúmenes.
+Las otras dos cuñas de ese día (las estaciones y `Euskal Herria`) se apoyan en
+etimologías transparentes y verificadas; esta se apoyaba en una
+reconstrucción discutida.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

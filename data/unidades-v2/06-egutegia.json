@@ -101,7 +101,7 @@
     },
     {
       "titulo": "Los días de la semana",
-      "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana): <i>aste-lehena</i> es «el primero de la semana», <i>aste-artea</i> «el de en medio», <i>aste-azkena</i> «el último»… aunque el miércoles no sea el último. El nombre viene de una semana antigua más corta.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».",
+      "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana): <i>aste-lehena</i> es «el primero de la semana», <i>aste-artea</i> «el de en medio», <i>aste-azkena</i> «el último»… aunque el miércoles no sea el último. El nombre viene de una semana antigua más corta.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».\n\n¿Y el jueves y el viernes, que no llevan <i>aste-</i>? Arrancan los dos por <b>ost-</b>, de una capa más antigua de la lengua. De dónde sale exactamente <b>se sigue discutiendo entre especialistas</b>, así que aquí no te vamos a contar una historia bonita: apréndetelos tal cual, que es lo que hace todo el mundo.",
       "ejemplos": [
         {
           "eu": "Larunbatean etxean nago.",
@@ -139,21 +139,6 @@
           "eu": "Gauean beti nekatuta nago.",
           "es": "Por la noche siempre estoy cansado.",
           "audio": "unidades/u7/gauean-beti-nekatuta-nago.mp3"
-        }
-      ],
-      "subnivel": "6.2"
-    },
-    {
-      "titulo": "El jueves y el viernes: los dos que no encajan",
-      "cuerpo": "Ya viste que lunes, martes y miércoles son «el primero, el de en medio y el último» de la semana. Pero <b>ostegun</b> (jueves) y <b>ostiral</b> (viernes) se salen del patrón — y arrancan los dos igual, por <b>ost-</b>.\n\nEse <i>ost-</i> (también <i>ortz-</i>) no tiene que ver con la semana: tiene que ver con <b>el cielo</b>. Aparece en palabras del firmamento y del trueno, y es la raíz del nombre <b>Ortzi</b> (o <i>Urtzi</i>), que se recoge como el del cielo y la tormenta. Así que <i>ostegun</i> se lee como <b>«el día del cielo»</b>.\n\nY ahora lo bonito. Mira a quién está dedicado el jueves en otras lenguas:\n\n<b>jueves</b> — de <i>Iovis dies</i>, el día de Júpiter, dios romano del rayo\n<b>Thursday</b> — el día de <i>Thor</i>, dios nórdico del trueno\n<b>ostegun</b> — el día de <i>Ortzi</i>\n\nTres familias de lenguas que no tienen nada que ver entre sí, y las tres le dieron el jueves al mismo tipo de dios. El euskera no copió el nombre: llegó por su cuenta a la misma idea.\n\nUn aviso de honestidad: esto es la explicación más aceptada, no un hecho cerrado. Los detalles —sobre todo los de <i>ostiral</i>— siguen discutiéndose entre especialistas.",
-      "ejemplos": [
-        {
-          "eu": "Ostegunean.",
-          "es": "El jueves."
-        },
-        {
-          "eu": "Ostirala eta larunbata.",
-          "es": "El viernes y el sábado."
         }
       ],
       "subnivel": "6.2"
