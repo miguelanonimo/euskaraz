@@ -2346,9 +2346,15 @@
     }
     var cercana = respuestaMasCercana(dado, variantes.length ? variantes : ej.respuestas);
     var leve = esCasiCorrecto(dado, cercana);
+    /* Un «casi correcto» se da por bueno, pero hay que enseñar la forma
+       buena igualmente o el fallo se repite (pedido por Ric). Se compara
+       contra la variante a la que te acercaste, no contra respuestas[0]:
+       si escribiste algo parecido a la segunda forma válida, corregirte
+       hacia la primera sería desconcertante. */
+    var objetivo = leve ? cercana.texto : normalizar(ej.respuestas[0]);
     return {
       ok: leve, leve: leve,
-      cuerpo: leve ? '' : comparacion(dado, normalizar(ej.respuestas[0]), true)
+      cuerpo: comparacion(dado, objetivo, true)
     };
   }
 
@@ -2389,9 +2395,7 @@
       return { ok: true, leve: false, cuerpo: base };
     }
     var cercana = respuestaMasCercana(dado, variantes.length ? variantes : ej.respuestas);
-    if (esCasiCorrecto(dado, cercana)) {
-      return { ok: true, leve: true, cuerpo: ej.explicacion ? esc(ej.explicacion) : '' };
-    }
+    var leve = esCasiCorrecto(dado, cercana);
     // Letra a letra para una palabra suelta, por palabras si la solución
     // tiene más de una — comparar "tu propio" contra lo escrito letra a
     // letra mezclaba coincidencias sueltas sin sentido (ver comparacion()).
@@ -2403,10 +2407,14 @@
     var traduciendo = ej.__objetivo === 'es';
     var nota = (ej.explicacion && !traduciendo)
       ? '<p class="dif__nota">' + esc(ej.explicacion) + '</p>' : '';
+    /* El «casi correcto» también enseña la forma buena: antes se daba por
+       válido y se pasaba de largo, así que la errata volvía a la siguiente
+       (pedido por Ric). Se compara contra la variante a la que te
+       acercaste, no contra la solución principal. */
     return {
-      ok: false, leve: false,
-      cuerpo: comparacion(dado, normalizar(ej.solucion), porPalabras,
-                          traduciendo ? 'dijiste' : undefined) + nota
+      ok: leve, leve: leve,
+      cuerpo: comparacion(dado, leve ? cercana.texto : normalizar(ej.solucion),
+                          porPalabras, traduciendo ? 'dijiste' : undefined) + nota
     };
   }
 

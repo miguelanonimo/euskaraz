@@ -350,7 +350,12 @@
       "nota": null,
       "audio": "unidades/u1/barkatu.mp3",
       "categoria": "otros",
-      "subnivel": "1.2"
+      "subnivel": "1.2",
+      "esAlt": [
+        "perdona",
+        "perdone",
+        "disculpe"
+      ]
     },
     {
       "eu": "bai",
@@ -407,10 +412,14 @@
     },
     {
       "eu": "batua",
-      "es": "el batua",
-      "nota": "El euskera unificado, el estándar. Es lo que enseña esta app.",
+      "es": "el euskera unificado",
+      "nota": "El estándar del euskera. Es lo que enseña esta app.",
       "categoria": "sustantivo",
-      "subnivel": "1.3"
+      "subnivel": "1.3",
+      "esAlt": [
+        "el estándar",
+        "el batua"
+      ]
     },
     {
       "eu": "Bizkaia",

@@ -80,6 +80,12 @@ const PENDIENTES = [
     nota: 'Both z sounds are a clear sibilant s, as in English "see". Neither may be the Spanish "th" z sound.' },
 ];
 
+// ── Grupo 5 · Cuarta ronda de Ric (26/08) ───────────────────────────────
+const CUARTA = [
+  { ruta: 'unidades/u3/nongoa.mp3', texto: 'nongoa',
+    nota: 'Three clear syllables: non-GO-a. The "g" must be a hard, clearly articulated g as in English "go", and the final "a" must be audible as its own vowel. Do NOT swallow the middle into something like "nowa".' },
+];
+
 // ── mahaia · caso aparte ────────────────────────────────────────────────
 // Tres regeneraciones, tres resultados malos distintos ("mayayaia",
 // "maiaia"). Regenerar tal cual no parece bastar, así que va con la
@@ -92,7 +98,7 @@ const MAHAIA = [
     nota: 'CRITICAL: the letter h here is COMPLETELY SILENT. The word is exactly three vowel sounds after the m: ma-a-ia. Do not insert any y, j, or consonant sound where the h is written. It must sound like "maaia" — never "mayaya", "mayayaia" or "maiaia".' },
 ];
 
-const PALABRAS = [...ACENTO, ...AUXILIARES, ...CONSONANTES, ...PENDIENTES, ...MAHAIA];
+const PALABRAS = [...ACENTO, ...AUXILIARES, ...CONSONANTES, ...PENDIENTES, ...CUARTA, ...MAHAIA];
 
 function esperar(ms) { return new Promise((r) => setTimeout(r, ms)); }
 

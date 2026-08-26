@@ -8,12 +8,12 @@ Son **dos trabajos distintos** y conviene no mezclarlos:
 
 | | Qué es | Cuántos | Cómo |
 |---|---|---|---|
-| **A** | Audios que ya existen pero **suenan mal** | 22 | `node lote-ric-3.mjs` |
+| **A** | Audios que ya existen pero **suenan mal** | 23 | `node lote-ric-3.mjs` |
 | **B** | Palabras nuevas **sin audio ninguno** | 194 | `node generar.mjs <unidad>` |
 
 ---
 
-## A · Regenerar los 22 que suenan mal
+## A · Regenerar los 23 que suenan mal
 
 ```
 cd scripts/generar-audio
@@ -27,7 +27,7 @@ por guiones bajos (`unidades_u3_agian.mp3`). Mismo mecanismo que
 `lote-ric.mjs`, el de la tanda anterior: a cada palabra se le adjunta una
 instrucción fonética en inglés, porque el modelo no acepta SSML ni fonemas.
 
-Las 22 rutas están verificadas contra los JSON del curso: todas existen y
+Las 23 rutas están verificadas contra los JSON del curso: todas existen y
 ninguna está repetida.
 
 ### Grupo 1 · El acento cae en la sílaba equivocada (6)
@@ -75,6 +75,11 @@ Estas se regeneraron el 20/08 y el 21/08 seguían mal, con un fallo
 **distinto** al original:
 
 `inor ez` · `iruditzen zait` · `joan` · `logela` · `noren` · `zatoz`
+
+### Grupo 5 · Cuarta ronda (1)
+
+- `nongoa` — suena «nowa»: la G se pierde y la última vocal no se oye.
+  Deben sonar las tres sílabas, con la G marcada: **non-GO-a**.
 
 ### El caso aparte: `mahaia`
 

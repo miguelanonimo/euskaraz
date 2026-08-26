@@ -1017,6 +1017,50 @@ ninguna oculta»*. Esto **no lo contradice**, porque 5.1 habla del
 etiquetadas como siempre — solo se ocultan las **fichas de explicación**.
 Pero está lo bastante cerca como para decírselo.
 
+### Cuarta tanda de Ric (26/08/2026) — sin subir, a la espera de Miguel
+
+Ric abre lista nueva probando la app. Se acumulan y se suben juntas, porque
+son de audios o de respuestas flexibles.
+
+**1 · `barkatu` no aceptaba «perdona».** Solo «perdón» y «disculpa».
+Añadido `esAlt: ["perdona", "perdone", "disculpe"]`, comprobado antes que las
+tres estaban libres y no son de ninguna otra palabra del curso.
+
+*Falsa alarma que conviene dejar escrita:* Ric dijo primero que el audio era
+«mesedez» (que es «por favor»), lo que habría significado un mp3 cruzado en
+el bucket. Se comprobó descargando los dos: **son archivos distintos**
+(7.244 y 4.172 bytes, hashes distintos), y además `preguntaEscucharTeclear`
+coge el audio y la respuesta **de la misma entrada**, así que no puede
+descuadrarlas. Ric confirmó después que se había equivocado al escribir: era
+`barkatu`. Queda anotado el método, que sirve para la próxima sospecha.
+
+**2 · «¿Qué significa batua?» → «el batua».** No enseñaba nada. La traducción
+pasa a **«el euskera unificado»**, con `esAlt` para «el estándar» y «el
+batua» (aceptarlo es de justicia, aunque no sea lo que se muestra). La nota
+se ajustó para no repetir lo que ya dice la traducción.
+
+*Barrido de la misma clase de fallo:* solo tres entradas en todo el curso se
+traducen a sí mismas, y **las otras dos no son un fallo**: `sofa` = «el sofá»
+y `patata` = «la patata» son préstamos que coinciden de verdad. Para un
+ejercicio de escuchar siguen valiendo, porque la pronunciación no es la misma.
+
+**3 · El «casi correcto» no enseñaba la respuesta buena.** Se daba por válido
+y se pasaba de largo, así que la errata volvía a la siguiente vuelta. Ahora
+las dos correcciones (`corregirTraducir` y `corregirTeclear`) muestran la
+comparación letra a letra igual que en un fallo — solo cambia el titular y el
+color.
+
+Detalle que importa: se compara contra **la variante a la que te acercaste**,
+no contra la solución principal. Si escribiste algo parecido a la segunda
+forma válida, corregirte hacia la primera sería desconcertante.
+
+Probado en `scripts/probar_casi.js`, con el caso de control incluido:
+acertando exacto **no** se enseña la respuesta, porque acabas de escribirla.
+
+**4 · `nongoa` suena «nowa».** La G se pierde y la última vocal no se oye.
+Deben sonar las tres sílabas con la G marcada: **non-GO-a**. Añadida al lote
+(`lote-ric-3.mjs`, ahora 23) y a `docs/audios-pendientes.md`.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
