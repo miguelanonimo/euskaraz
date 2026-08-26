@@ -1596,6 +1596,34 @@ mañana», «por la tarde», «a mediodía» fuerzan la lectura temporal; «el
 domingo», a pelo, no. De los cinco de ese mismo grupo, solo el de Ric la
 tenía.
 
+### 6.1 pedía cosas que enseña 6.2 (26/08/2026)
+
+Ric lo vio en un «bihar arratsaldean». El tema **6.1 «La hora»** tiene como
+vocabulario `goiza`, `arratsaldea`, `gaua`… pero **la forma con `-n`
+(`goizean`, `arratsaldean`) la explica 6.2**, junto con los días de la
+semana. Así que 6.1 pedía cosas de la ficha siguiente.
+
+No era un ejercicio suelto:
+
+- **`u7-g06` entero** —«Por la mañana», «Por la tarde», «A mediodía»…— son
+  los cinco la `-n` de tiempo. **Movido a 6.2.**
+- **`u7-g08 v3`** pedía «Hoy es viernes» (los días son 6.2) → ahora «Son las
+  once».
+- **`u7-g08 v5`** era el de Ric, «Mañana por la tarde» → ahora «A las tres y
+  media».
+- **`u7-g09 v3`** pedía «El domingo por la mañana estoy en casa» —días **y**
+  la `-n`— → ahora «A las cinco estoy en casa».
+
+Los tres reemplazos usan las formas de la propia ficha de 6.1
+(`hamaikak dira`, `hiru eta erdietan`, `bostetan`), que es de lo que va el
+tema. **No hizo falta crear ningún grupo**: 6.1 se queda con cinco, el
+mínimo, y 6.2 sube a seis.
+
+*Y el verificador me pilló a mí:* al cambiar las respuestas, las **pistas
+seguían describiendo las viejas** —«Empieza por gaur», «Dos palabras»—.
+Saltó la comprobación de pistas que se añadió esta misma mañana. Reescritas
+con la regla en vez de con la forma.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

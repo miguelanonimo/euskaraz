@@ -1304,7 +1304,7 @@
           "explicacion": "La -n marca el cuándo. Sin ella, «igandea» es el día en sí: «Gaur igandea da», hoy es domingo. En castellano las dos se dicen «el domingo», y de ahí la confusión."
         }
       ],
-      "subnivel": "6.1"
+      "subnivel": "6.2"
     },
     {
       "id": "u7-g07",
@@ -1402,11 +1402,11 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Hoy es viernes.",
+          "es": "Son las once.",
           "respuestas": [
-            "gaur ostirala da"
+            "hamaikak dira"
           ],
-          "pista": "Empieza por «gaur»."
+          "pista": "La hora va en plural, y el verbo también."
         },
         {
           "tipo": "traducir",
@@ -1423,11 +1423,11 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Mañana por la tarde.",
+          "es": "A las tres y media.",
           "respuestas": [
-            "bihar arratsaldean"
+            "hiru eta erdietan"
           ],
-          "pista": "Dos palabras."
+          "pista": "Con «y media», el -etan se pega a «erdiak» y la hora se queda desnuda."
         }
       ],
       "subnivel": "6.1"
@@ -1467,16 +1467,15 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "El domingo por la mañana estoy en casa.",
-          "eu": "Igande goizean etxean nago.",
+          "es": "A las cinco estoy en casa.",
+          "eu": "Bostetan etxean nago.",
           "palabras": [
-            "igande",
-            "goizean",
+            "bostetan",
             "etxean",
             "nago"
           ],
           "distractores": [
-            "eguraldia"
+            "ordua"
           ]
         },
         {
