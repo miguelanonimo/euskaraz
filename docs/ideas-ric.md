@@ -905,6 +905,52 @@ perdería sin avisar. No hay ninguno.
 párrafo parecen las dos prosa corrida en vez de elementos de una lista.
 Probado a la inversa (volviendo a meter el salto) para confirmar que salta.
 
+### La ficha del botón describía el diseño anterior (2026-08-26)
+
+Detectado por Ric. «El botón de arriba, explicado» (u1, 1.3) contaba que el
+botón de la cabecera elegía **entre dos variantes de contenido**, bizkaiera
+o gernikera. Eso ya no es así, y lo dice el propio código:
+
+> *El botón de la topbar ya no elige QUÉ dataset cargar —eso ahora es el
+> desplegable de Ajustes—, sino si los ejercicios también preguntan por esa
+> variante.*
+
+**El reparto real ahora son dos controles distintos:**
+
+| | Dónde | Qué hace |
+|---|---|---|
+| **Batua / Bizkaiera** | cabecera | Si los ejercicios **también** te preguntan las formas locales. Apagado de fábrica. |
+| **Tu variante dialectal** | Tu cuenta | Qué variante muestra el **contenido** del curso. |
+
+Ficha reescrita con eso. Y se aprovechó para explicar el porqué del valor
+por defecto, que estaba en un comentario del código y no llegaba al alumno:
+apagado, las formas locales **siguen visibles** en Vocabulario y Diccionario
+para leerlas y reconocerlas — simplemente no te examinan de ellas.
+
+#### ⚠ Incoherencia encontrada al verificarlo — NO tocada, es decisión de producto
+
+El desplegable de «Tu cuenta» **sigue ofreciendo Gernikera**, aunque Ric dice
+que ahora solo el bizkaiera está accesible. Y hay algo peor: en el curso
+reestructurado, elegir Gernikera **no hace absolutamente nada**. La línea que
+decide qué cargar es:
+
+```js
+var indicePath = V2 ? 'data/curso-v2.json'
+                    : (MODO_DIALECTO === 'gernikes' ? 'data/curso-gernikes.json' : 'data/curso.json');
+```
+
+Con `?v2` activo, `MODO_DIALECTO` se ignora. O sea que es **un ajuste que el
+usuario cambia y no pasa nada**, sin aviso ninguno. En el curso publicado sí
+funciona, porque ahí `V2` es falso.
+
+Dos salidas, y la elección es de Ric y Miguel:
+1. **Ocultar Gernikera** mientras no esté lista (le falta el audio entero).
+2. **Montar la versión gernikés del curso v2**, que hoy no existe: solo hay
+   `data/unidades-gernikes/` con la estructura vieja de 12 unidades.
+
+Mientras tanto, la ficha nueva no menciona Gernikera: habla de «tu variante»
+y dice que la montada y con audio es el bizkaiera.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

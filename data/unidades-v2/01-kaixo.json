@@ -159,15 +159,19 @@
     {
       "subnivel": "1.3",
       "titulo": "El botón de arriba, explicado",
-      "cuerpo": "Habrás visto en la barra de arriba un botón que pone <b>Bizkaiera / Gernikera</b>. Ahora ya tiene sentido.\n\nEse botón no cambia el idioma que aprendes —siempre es batua—, sino <b>qué sabor local lo acompaña</b>:\n\n<b>Bizkaiera</b> — las formas que se oyen en Bilbao y alrededores. Es la opción por defecto.\n<b>Gernikera</b> — las de la zona de Gernika, en la costa de Bizkaia, algo más cerradas.\n\nElijas la que elijas, la gramática y el vocabulario base son los mismos. Lo que cambia son las notas de «cómo suena esto por aquí» y algunas palabras del día a día.\n\nSi estás empezando y no tienes preferencia, déjalo en bizkaiera.",
+      "cuerpo": "Arriba del todo hay un botón con dos palabras: <b>Batua / Bizkaiera</b>. Ahora ya tiene sentido.\n\nLo primero, para quitarte la duda: <b>no cambia el idioma que aprendes</b>. Siempre es batua. Lo que decide es otra cosa — <b>si los ejercicios te preguntan también por las formas locales</b>, o se quedan solo en batua.\n\n<b>Batua</b> — los ejercicios solo te piden la forma estándar. Las formas locales siguen ahí, en el Vocabulario y en el Diccionario, para leerlas y reconocerlas: simplemente no te examinan de ellas. Viene así de fábrica.\n<b>Bizkaiera</b> — también te las preguntan.\n\nY cuál es «tu variante» se elige aparte, en <b>Tu cuenta</b>. De momento la que está montada y con audio es el <b>bizkaiera</b>, el de Bilbao y alrededores. El nombre que veas en el botón es el de la variante que tengas puesta ahí.\n\nUn consejo si estás empezando: <b>déjalo en Batua</b>. Ya tienes bastante con una forma de cada cosa. Enciéndelo más adelante, cuando el batua te salga solo y quieras que se te queden también las de aquí — o antes, si vives en Bizkaia y prefieres reconocer cuanto antes lo que oyes en la calle.",
       "ejemplos": [
+        {
+          "eu": "batua",
+          "es": "el estándar, lo que enseña la app"
+        },
         {
           "eu": "bizkaiera",
           "es": "el habla de Bizkaia"
         },
         {
-          "eu": "batua",
-          "es": "el estándar, lo que enseña la app"
+          "eu": "euskalkia",
+          "es": "un dialecto, cualquiera de ellos"
         }
       ]
     },
