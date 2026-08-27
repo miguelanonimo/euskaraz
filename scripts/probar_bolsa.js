@@ -1,7 +1,7 @@
 // La bolsa del repaso de vocabulario es aditiva: solo entran las palabras
 // de los temas que has abierto, y no se caen las de unidades anteriores.
 const fs = require('fs');
-const src = fs.readFileSync(process.env.HOME + '/Proyectos/euskaraz/js/app.js', 'utf8');
+const src = fs.readFileSync(require('path').join(__dirname, '..', 'js/app.js'), 'utf8');
 function sacar(n) {
   const i = src.indexOf('function ' + n + '(');
   if (i < 0) throw new Error('no está ' + n);
@@ -10,7 +10,7 @@ function sacar(n) {
     if (src[k] === '{') p++; else if (src[k] === '}' && --p === 0) return src.slice(i, k + 1);
   }
 }
-const raiz = process.env.HOME + '/Proyectos/euskaraz/data/';
+const raiz = require('path').join(__dirname, '..', 'data') + '/';
 const idx = JSON.parse(fs.readFileSync(raiz + 'curso-v2.json', 'utf8'));
 const unidades = idx.unidades.map(r => JSON.parse(fs.readFileSync(raiz + r, 'utf8')));
 

@@ -1,7 +1,7 @@
 // El test de unidad debe llegar a 12 preguntas (mínimo aceptable 10) y
 // repartirlas entre todos los temas, no cargarlas en los primeros.
 const fs = require('fs');
-const src = fs.readFileSync(process.env.HOME + '/Proyectos/euskaraz/js/app.js', 'utf8');
+const src = fs.readFileSync(require('path').join(__dirname, '..', 'js/app.js'), 'utf8');
 function sacar(n) {
   const i = src.indexOf('function ' + n + '(');
   if (i < 0) throw new Error('no está ' + n);
@@ -21,7 +21,7 @@ const f = new Function(`
   return { relleno, LARGO_TEST, ESCUCHAR_PRACTICA };
 `)();
 
-const raiz = process.env.HOME + '/Proyectos/euskaraz/data/';
+const raiz = require('path').join(__dirname, '..', 'data') + '/';
 const idx = JSON.parse(fs.readFileSync(raiz + 'curso-v2.json', 'utf8'));
 const unidades = idx.unidades.map(r => JSON.parse(fs.readFileSync(raiz + r, 'utf8')));
 

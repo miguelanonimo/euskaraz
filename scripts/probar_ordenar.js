@@ -2,7 +2,7 @@
 // sin mayúscula inicial (salvo nombres propios), sin signos pegados, con el
 // «?» como ficha suelta, y con distractores que no formen parte de la frase.
 const fs = require('fs'), path = require('path');
-const raiz = process.env.HOME + '/Proyectos/euskaraz/data/';
+const raiz = require('path').join(__dirname, '..', 'data') + '/';
 const idx = JSON.parse(fs.readFileSync(raiz + 'curso-v2.json', 'utf8'));
 const unidades = idx.unidades.map(r => JSON.parse(fs.readFileSync(raiz + r, 'utf8')));
 
