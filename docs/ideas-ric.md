@@ -1812,6 +1812,24 @@ sus propias fichas enseñan como frases hechas; y «Zukua edan nahi dut» aparec
 como ejemplo de una ficha de la unidad 9 que **reutiliza** una frase de la 7,
 así que el detector la registró allí.
 
+### 6.5 — la burbuja de Bizkaia (27/08/2026)
+
+Ric: *«no se entiende bien el inicio de la frase»*. Decía «el 20 de enero,
+San Sebastián, en Bilbao no es gran cosa». Quería decir **el día** de San
+Sebastián (la Tamborrada donostiarra); se lee como que **la ciudad** no es gran
+cosa en Bilbao. Quitado.
+
+En su lugar, y a propuesta suya, la **feria de Gernika**: el `Urriko Azken
+Astelehena`. El nombre entero se arma con vocabulario ya dado — `azkena` (4.3),
+`astelehena` (6.2), `urria` (6.3), `-ko` (2.4) — comprobado uno por uno antes
+de escribirlo. De regalo sale una nota de gramática real: `azken` delante del
+nombre pierde la `-a` y el artículo se lo queda la palabra siguiente.
+
+No he usado `azoka` (feria), que es de 8.4.
+
+Corregido de paso un error de dato: la Aste Nagusia **no es «el 15 de agosto»**,
+empieza el sábado siguiente y dura nueve días.
+
 ### Las rutas absolutas de mis bancos de pruebas (27/08/2026)
 
 Miguel, al fusionar: *«Rutas absolutas de los tres scripts de test nuevos
