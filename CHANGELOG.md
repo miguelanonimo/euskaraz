@@ -844,3 +844,13 @@ Tres scripts de test nuevos (`probar_bolsa.js`, `probar_ordenar.js`,
 `probar_test.js`) con la misma ruta absoluta al Mac de Ric corregida a
 relativa. Verificado con `probar-todo.sh` entero en verde antes de
 subir.
+
+## 2026-08-27 — Ficha duplicada de las estaciones (6.4)
+
+Merge de `ric/trabajo`. Al escribir la reestructuración, la ficha
+nueva de las estaciones del año en el tema 6.4 solapaba entera a una
+que ya existía — detectado por el propio Ric. Borrada la vieja,
+rescatados antes los dos matices que solo estaban ahí (el de
+"udaberria" como "el verano nuevo" y los cuatro nombres sueltos como
+ejemplos). Ningún ejercicio ni audio se pierde. Barrido el resto del
+curso por si había más duplicados de la misma clase: no hay.

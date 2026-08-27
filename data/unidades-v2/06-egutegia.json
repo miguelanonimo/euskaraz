@@ -247,8 +247,8 @@
       "registro": "bizkaiera"
     },
     {
-      "titulo": "Las cuatro estaciones salen de dos palabras",
-      "cuerpo": "Ya tienes <b>negua</b> (invierno) y <b>uda</b> (verano) de esta unidad. Las otras dos se construyen sobre el verano, y tiene su lógica:\n\n<b>uda</b> + <b>berri</b> (nuevo) → <b>udaberria</b>, la primavera. El verano nuevo, el que está por venir.\n<b>uda</b> + <b>azken</b> (último, final) → <b>udazkena</b>, el otoño. El final del verano.\n\nAsí que en euskera las estaciones se ordenan alrededor del verano, no del invierno. Una vez lo ves, no se olvidan.",
+      "titulo": "El año tenía dos estaciones, no cuatro",
+      "cuerpo": "Mira los nombres con calma, porque cuentan algo:\n\n<b>uda</b> — el verano\n<b>negua</b> — el invierno\n<b>udaberria</b> — la primavera\n<b>udazkena</b> — el otoño\n\nLos dos primeros son palabras propias, sin parecido entre sí. Los dos últimos <b>están hechos con el primero</b>:\n\n<i>uda</i> (verano) + <i>berri</i> (nuevo) → <b>udaberri</b>, «el verano nuevo» — el que está por venir\n<i>uda</i> (verano) + <i>azken</i> (último) → <b>udazken</b>, «el final del verano»\n\nNo es una casualidad bonita. Tradicionalmente el año vasco se partía en <b>dos</b>: verano e invierno, la temporada de trabajo fuera y la de estar dentro. Cuando hicieron falta las otras dos, no se inventaron palabras nuevas: se colocaron como el principio y el final del verano.\n\nCompáralo con el castellano, donde «primavera» viene del latín <i>prima vera</i>, «el primer verdor», y no tiene nada que ver con «verano». Cada lengua cortó el año por donde le importaba.",
       "ejemplos": [
         {
           "eu": "udaberria",
@@ -265,6 +265,10 @@
         {
           "eu": "negua",
           "es": "el invierno"
+        },
+        {
+          "eu": "Negua hotza da.",
+          "es": "El invierno es frío."
         }
       ],
       "subnivel": "6.4"
@@ -284,21 +288,6 @@
         {
           "eu": "Gaur eguraldi ona dago.",
           "es": "Hoy hace buen tiempo."
-        }
-      ],
-      "subnivel": "6.4"
-    },
-    {
-      "titulo": "El año tenía dos estaciones, no cuatro",
-      "cuerpo": "Mira los nombres con calma, porque cuentan algo:\n\n<b>uda</b> — el verano\n<b>negua</b> — el invierno\n<b>udaberria</b> — la primavera\n<b>udazkena</b> — el otoño\n\nLos dos primeros son palabras propias, sin parecido entre sí. Los dos últimos <b>están hechos con el primero</b>:\n\n<i>uda</i> (verano) + <i>berri</i> (nuevo) → <b>udaberri</b>, «el verano nuevo»\n<i>uda</i> (verano) + <i>azken</i> (último) → <b>udazken</b>, «el final del verano»\n\nNo es una casualidad bonita. Tradicionalmente el año vasco se partía en <b>dos</b>: verano e invierno, la temporada de trabajo fuera y la de estar dentro. Cuando hicieron falta las otras dos, no se inventaron palabras nuevas: se colocaron como el principio y el final del verano.\n\nCompáralo con el castellano, donde «primavera» viene del latín <i>prima vera</i>, «el primer verdor», y no tiene nada que ver con «verano». Cada lengua cortó el año por donde le importaba.",
-      "ejemplos": [
-        {
-          "eu": "Udaberria eta udazkena.",
-          "es": "La primavera y el otoño."
-        },
-        {
-          "eu": "Negua hotza da.",
-          "es": "El invierno es frío."
         }
       ],
       "subnivel": "6.4"

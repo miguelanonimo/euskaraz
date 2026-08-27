@@ -1684,6 +1684,28 @@ donde es un **conjunto que hay que aprenderse**:
 - `1. = lehena · 2. = bigarrena · 3. = hirugarrena` — son el ejemplo de cómo
   se escribe con cifra, no la lista de ordinales.
 
+### 6.4 explicaba dos veces lo mismo (27/08/2026)
+
+**Duplicado que creé yo** al escribir la cuña de las estaciones: la ficha
+nueva («El año tenía dos estaciones, no cuatro») solapaba entera a la que ya
+había («Las cuatro estaciones salen de dos palabras»), y no me di cuenta.
+Detectado por Ric, que además prefiere la segunda.
+
+Borrada la vieja y subida la buena al principio del tema. **Antes de borrar
+se comparó concepto a concepto**, no a ojo:
+
+- Todo lo que decía la vieja está en la que queda, salvo dos cosas, que se
+  rescataron: el matiz de que `udaberria` es «el verano nuevo, **el que está
+  por venir**», y los cuatro nombres sueltos como ejemplos.
+- Los ejemplos de la ficha borrada **no tenían audio**, así que no se pierde
+  ninguna grabación. Las cuatro palabras siguen en el vocabulario del tema.
+- Los **7 ejercicios** de 6.4 que preguntan por la construcción
+  (`udaberria`/`udazkena`) siguen cubiertos por la ficha que queda.
+
+**Barrido del resto del curso** por si había más duplicados de la misma
+clase, comparando las fichas de cada tema por las palabras con peso que
+comparten: **ninguno más**.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
