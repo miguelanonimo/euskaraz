@@ -8,26 +8,31 @@
   "subniveles": [
     {
       "id": "7.1",
+      "titulo_eu": "Zer egiten duzu?",
       "titulo": "El presente habitual",
-      "resumen": "El mecanismo de dos piezas: -t(z)en + dut."
+      "resumen": "El mecanismo de dos piezas: -t(z)en + dut, y ditut si son varios."
     },
     {
       "id": "7.2",
+      "titulo_eu": "Ez",
       "titulo": "Negar",
       "resumen": "El salto del auxiliar y el partitivo -(r)ik."
     },
     {
       "id": "7.3",
+      "titulo_eu": "Goizetik gauera",
       "titulo": "La rutina diaria",
       "resumen": "Levantarse, ducharse, las tareas de casa."
     },
     {
       "id": "7.4",
+      "titulo_eu": "Ari naiz",
       "titulo": "«Estoy haciéndolo»",
       "resumen": "Ari naiz: ahora mismo frente a normalmente."
     },
     {
       "id": "7.5",
+      "titulo_eu": "Jan eta edan",
       "titulo": "Comer y beber",
       "resumen": "La comida, la bebida y las tres comidas del día."
     }
@@ -35,7 +40,7 @@
   "gramatica": [
     {
       "titulo": "Lo que haces cada día: verbo en -t(z)en + dut",
-      "cuerpo": "Hasta ahora solo has usado verbos que se conjugan solos: <i>naiz, dut, nago</i>. La mayoría no funcionan así. La mayoría se parten en <b>dos piezas</b>:\n\n<b>jaten</b> + <b>dut</b> = como\n\nLa primera pieza dice <b>qué</b> se hace, y no cambia nunca. La segunda dice <b>quién</b>, y es el <i>ukan</i> de la quinta unidad:\n\n<b>nik jaten dut</b> — yo como\n<b>zuk jaten duzu</b> — tú comes\n<b>hark jaten du</b> — él come\n<b>guk jaten dugu</b> — nosotros comemos\n<b>zuek jaten duzue</b> — vosotros coméis\n<b>haiek jaten dute</b> — ellos comen\n\nY como hay complemento directo, el sujeto lleva la <b>-k</b> del ergativo: <i>ni<b>k</b></i>, <i>zu<b>k</b></i>, <i>har<b>k</b></i>.\n\nEsta forma sirve para lo habitual y para lo general, como el presente castellano: «como pescado» (todos los días), no «estoy comiendo ahora mismo».",
+      "cuerpo": "Hasta ahora solo has usado verbos que se conjugan solos: <i>naiz, dut, nago</i>. La mayoría no funcionan así. La mayoría se parten en <b>dos piezas</b>:\n\n<b>jaten</b> + <b>dut</b> = como\n\nLa primera pieza dice <b>qué</b> se hace, y no cambia nunca. La segunda dice <b>quién</b>, y es el <i>ukan</i> de la cuarta unidad:\n\n<b>nik jaten dut</b> — yo como\n<b>zuk jaten duzu</b> — tú comes\n<b>hark jaten du</b> — él come\n<b>guk jaten dugu</b> — nosotros comemos\n<b>zuek jaten duzue</b> — vosotros coméis\n<b>haiek jaten dute</b> — ellos comen\n\nY como hay complemento directo, el sujeto lleva la <b>-k</b> del ergativo: <i>ni<b>k</b></i>, <i>zu<b>k</b></i>, <i>har<b>k</b></i>.\n\nEsta forma sirve para lo habitual y para lo general, como el presente castellano: «como pescado» (todos los días), no «estoy comiendo ahora mismo».",
       "ejemplos": [
         {
           "eu": "Nik ogia jaten dut.",
@@ -78,12 +83,31 @@
       "subnivel": "7.1"
     },
     {
+      "titulo": "Si el objeto es plural: ditut",
+      "cuerpo": "Cuando lo que comes, ves o compras va en <b>plural</b>, el auxiliar cambia. Donde había <i>dut</i>, ahora hay <b>ditut</b>:\n\n<b>nik ditut</b> — yo los/las…\n<b>zuk dituzu</b> — tú\n<b>hark ditu</b> — él/ella\n<b>guk ditugu</b> — nosotros\n<b>zuek dituzue</b> — vosotros\n<b>haiek dituzte</b> — ellos\n\n<b>Sagarra jaten dut.</b> — Como la manzana.\n<b>Sagarrak jaten ditut.</b> — Como las manzanas.\n\nEse <b>-it-</b> que se cuela en medio es la marca de plural del objeto. Es el mismo que ya viste en <i>ditugu</i> cuando hablaste de tener varias cosas.\n\nCon los verbos sin objeto no pasa nada de esto: allí lo que manda es el sujeto, y eso es lo siguiente.",
+      "ejemplos": [
+        {
+          "eu": "Barazkiak erosten ditut.",
+          "es": "Compro las verduras."
+        },
+        {
+          "eu": "Liburuak irakurtzen ditugu.",
+          "es": "Leemos los libros."
+        },
+        {
+          "eu": "Haiek etxeak ikusten dituzte.",
+          "es": "Ellos ven las casas."
+        }
+      ],
+      "subnivel": "7.1"
+    },
+    {
       "titulo": "Cuando no hay objeto, el auxiliar es izan",
-      "cuerpo": "Si el verbo no lleva complemento directo, la segunda pieza no es <i>dut</i> sino <b>naiz</b>. Y entonces el sujeto <b>no lleva -k</b>.\n\nTres verbos nuevos para verlo, con su forma de diccionario delante:\n\n<i>etorri</i> (venir) → <b>Ni etortzen naiz.</b> — Yo vengo.\n<i>joan</i> (ir) → <b>Zu joaten zara.</b> — Tú vas.\n<i>egon</i> (estar, ya de la sexta unidad) → <b>Hura egoten da.</b> — Él suele estar.\n\n<i>joan</i> y <i>etorri</i> los verás a fondo en la novena unidad; aquí solo te hacen falta para ver la diferencia.\n\nCompara las dos familias:\n\n<b>Nik ogia jaten dut.</b> — hay objeto (el pan) → <i>dut</i>, y <i>nik</i>\n<b>Ni etxera joaten naiz.</b> — no hay objeto → <i>naiz</i>, y <i>ni</i>\n\nEsta división entre verbos con objeto y verbos sin objeto atraviesa toda la gramática vasca. Si te acostumbras ahora a preguntarte «¿esto lleva objeto?», el resto del camino es mucho más llano.",
+      "cuerpo": "Si el verbo no lleva complemento directo, la segunda pieza no es <i>dut</i> sino <b>naiz</b>. Y entonces el sujeto <b>no lleva -k</b>.\n\nTres verbos nuevos para verlo, con su forma de diccionario delante:\n\n<i>etorri</i> (venir) → <b>Ni etortzen naiz.</b> — Yo vengo.\n<i>joan</i> (ir) → <b>Zu joaten zara.</b> — Tú vas.\n<i>egon</i> (estar, ya de la quinta unidad) → <b>Hura egoten da.</b> — Él suele estar.\n\n<i>joan</i> y <i>etorri</i> los verás a fondo en la octava unidad; aquí solo te hacen falta para ver la diferencia.\n\nCompara las dos familias:\n\n<b>Nik ogia jaten dut.</b> — hay objeto (el pan) → <i>dut</i>, y <i>nik</i>\n<b>Ni etxera joaten naiz.</b> — no hay objeto → <i>naiz</i>, y <i>ni</i>\n\nEsta división entre verbos con objeto y verbos sin objeto atraviesa toda la gramática vasca. Si te acostumbras ahora a preguntarte «¿esto lleva objeto?», el resto del camino es mucho más llano.",
       "ejemplos": [
         {
           "eu": "Ni goizean etxetik joaten naiz.",
-          "es": "Por la mañana salgo de casa. (etxe-tik = desde casa; el -tik llega en la unidad 9)",
+          "es": "Por la mañana salgo de casa. (etxe-tik = desde casa; el -tik ya lo tienes de la unidad 5)",
           "audio": "unidades/u8/ni-goizean-etxetik-joaten-naiz.mp3"
         },
         {
@@ -101,7 +125,7 @@
     },
     {
       "titulo": "La negación: «ez» y el auxiliar dan un salto",
-      "cuerpo": "Para negar se pone <b>ez</b> delante… pero pasa algo más: <b>el auxiliar se coloca justo detrás del ez</b>, y el resto de la frase se queda después.\n\n<b>Nik ogia jaten dut.</b>\n<b>Nik ez dut ogia jaten.</b> — No como pan.\n\nEl <i>dut</i> ha saltado desde el final hasta detrás del <i>ez</i>. Con las formas de una sola pieza es más simple, porque no hay nada que mover:\n\n<b>Ni ikaslea naiz.</b> → <b>Ni ez naiz ikaslea.</b>\n<b>Etxean nago.</b> → <b>Ez nago etxean.</b>\n\nEl salto del auxiliar es de los pocos sitios donde el orden de palabras del euskera es rígido. Merece la pena practicarlo hasta que salga solo.",
+      "cuerpo": "Para negar se pone <b>ez</b> delante… pero pasa algo más: <b>el auxiliar se coloca justo detrás del ez</b>, y el resto de la frase se queda después.\n\n<b>Nik liburua irakurtzen dut.</b> — Leo el libro.\n<b>Nik ez dut liburua irakurtzen.</b> — No leo el libro.\n\nEl <i>dut</i> ha saltado desde el final hasta detrás del <i>ez</i>. Con las formas de una sola pieza es más simple, porque no hay nada que mover:\n\n<b>Ni ikaslea naiz.</b> → <b>Ni ez naiz ikaslea.</b>\n<b>Etxean nago.</b> → <b>Ez nago etxean.</b>\n\nEl salto del auxiliar es de los pocos sitios donde el orden de palabras del euskera es rígido. Merece la pena practicarlo hasta que salga solo.\n\nUn aviso para lo que viene: aquí lo negado es <b>el libro</b>, algo concreto, y por eso <i>liburua</i> se queda igual. Cuando lo que niegas es genérico —«no como pan», sin más— el objeto cambia de forma. Es lo siguiente.",
       "ejemplos": [
         {
           "eu": "Ez dut kafea edaten.",
@@ -123,44 +147,27 @@
     },
     {
       "titulo": "«Nada de eso»: el partitivo -(r)ik",
-      "cuerpo": "En castellano dices «no como pan», con el mismo «pan» que en afirmativa. En euskera, cuando niegas o preguntas, el objeto suele cambiar de forma: pierde el artículo y coge <b>-rik</b>.\n\n<b>Ogia jaten dut.</b> — Como pan.\n<b>Ez dut <u>ogirik</u> jaten.</b> — No como pan.\n\nLa terminación es <b>-rik</b> tras vocal y <b>-ik</b> tras consonante:\n<i>ogi</i> (pan) → <b>ogirik</b>\n<i>diru</i> (dinero) → <b>dirurik</b>\n<i>ur</i> (agua) → <b>urik</b>\n<i>lan</i> (trabajo) → <b>lanik</b>\n\nFíjate en que aquí las palabras van <b>sin el artículo -a</b>: no es <i>ogia</i> sino <i>ogi</i>. El partitivo lo sustituye.\n\nSe usa igual con <i>egon</i> para decir que algo no hay:\n<b>Ez dago ardorik.</b> — No hay vino.\n<b>Ez dago arazorik.</b> — No hay problema. (<i>arazoa</i> = el problema)\n\nEs opcional en muchos casos y nadie te va a corregir si no lo pones, pero suena mucho más natural con él.",
+      "cuerpo": "En castellano dices «no como pan», con el mismo «pan» que en afirmativa. En euskera, cuando niegas o preguntas, el objeto suele cambiar de forma: pierde el artículo y coge <b>-rik</b>.\n\n<b>Ogia jaten dut.</b> — Como pan.\n<b>Ez dut <u>ogirik</u> jaten.</b> — No como pan.\n\nLa terminación es <b>-rik</b> tras vocal y <b>-ik</b> tras consonante:\n<i>ogi</i> (pan) → <b>ogirik</b>\n<i>diru</i> (dinero) → <b>dirurik</b>\n<i>ur</i> (agua) → <b>urik</b>\n<i>lan</i> (trabajo) → <b>lanik</b>\n\nFíjate en que aquí las palabras van <b>sin el artículo -a</b>: no es <i>ogia</i> sino <i>ogi</i>. El partitivo lo sustituye.\n\nSe usa igual con <i>egon</i> para decir que algo no hay:\n<b>Ez dago ardorik.</b> — No hay vino.\n<b>Ez dago arazorik.</b> — No hay problema. (<i>arazoa</i> = el problema)\n\nY aquí está la diferencia que conviene tener clara, porque las dos frases son correctas pero <b>no dicen lo mismo</b>. Compara las dos escenas.\n\n<b>Primera: estás sentado a la mesa y hay pan delante.</b> Te lo acercan y lo rechazas.\n\n<b>Ez dut ogia jaten.</b> — No como el pan. Ese, el que tengo ahí.\n\nHay un pan concreto que los dos estáis mirando, así que lleva su artículo, igual que en afirmativa.\n\n<b>Segunda: alguien te pregunta qué comes y qué no.</b> No hay ningún pan delante.\n\n<b>Ez dut ogirik jaten.</b> — No como pan. Ninguno, nunca.\n\nAquí no hablas de un pan, sino del pan en general, y ese es el sitio del partitivo.\n\nConviene que no te quedes con la idea de que esto va de tiempo, porque no va. Lo que decide es <b>si hay un pan concreto de por medio</b>. Si quieres marcar el momento, añade la palabra que lo diga, y el partitivo no se mueve:\n\n<b>Gaur ez dut ogirik jaten.</b> — Hoy no como pan.\n<b>Inoiz ez dut ogirik jaten.</b> — Nunca como pan.\n\nEn las dos sigue sin haber un pan concreto, así que en las dos va <i>ogirik</i>. Y al revés: si el pan está ahí y lo señalas, va <i>ogia</i> tanto si hablas de hoy como de siempre.\n\nDe la misma familia es <b>ezer</b>, que es «nada» y aparece siempre en frases negativas: <b>Ez dut ezer nahi.</b> — No quiero nada. Y suelto, como respuesta corta, <b>ezer ez</b> — nada.\n\nResumiendo: cuando hablas en general, la del partitivo es la que quieres. Si pones el artículo, quien te escucha entiende que hablas de un pan concreto.",
       "ejemplos": [
         {
           "eu": "Ez dut dirurik.",
-          "es": "No tengo dinero.",
-          "audio": "unidades/u8/ez-dut-dirurik.mp3"
+          "es": "No tengo dinero."
         },
         {
           "eu": "Ez dago urik.",
-          "es": "No hay agua.",
-          "audio": "unidades/u8/ez-dago-urik.mp3"
+          "es": "No hay agua."
         },
         {
           "eu": "Ez dut ezer nahi.",
-          "es": "No quiero nada.",
-          "audio": "unidades/u8/ez-dut-ezer-nahi.mp3"
-        }
-      ],
-      "subnivel": "7.2"
-    },
-    {
-      "titulo": "Si el objeto es plural: ditut",
-      "cuerpo": "Cuando lo que comes, ves o compras va en <b>plural</b>, el auxiliar cambia. Donde había <i>dut</i>, ahora hay <b>ditut</b>:\n\n<b>nik ditut</b> — yo los/las…\n<b>zuk dituzu</b> — tú\n<b>hark ditu</b> — él/ella\n<b>guk ditugu</b> — nosotros\n<b>zuek dituzue</b> — vosotros\n<b>haiek dituzte</b> — ellos\n\n<b>Sagarra jaten dut.</b> — Como la manzana.\n<b>Sagarrak jaten ditut.</b> — Como las manzanas.\n\nEse <b>-it-</b> que se cuela en medio es la marca de plural del objeto. Es el mismo que ya viste en <i>ditugu</i> cuando hablaste de tener varias cosas.\n\nCon los verbos sin objeto no pasa nada de esto: allí lo que manda es el sujeto (<i>naiz, gara</i>).",
-      "ejemplos": [
-        {
-          "eu": "Barazkiak erosten ditut.",
-          "es": "Compro las verduras.",
-          "audio": "unidades/u8/barazkiak-erosten-ditut.mp3"
+          "es": "No quiero nada."
         },
         {
-          "eu": "Liburuak irakurtzen ditugu.",
-          "es": "Leemos los libros.",
-          "audio": "unidades/u8/liburuak-irakurtzen-ditugu.mp3"
+          "eu": "Gaur ez dut ogirik jaten.",
+          "es": "Hoy no como pan."
         },
         {
-          "eu": "Ez ditut haragia eta arraina jaten.",
-          "es": "No como carne ni pescado.",
-          "audio": "unidades/u8/ez-ditut-haragia-eta-arraina-jaten.mp3"
+          "eu": "Inoiz ez dut ogirik jaten.",
+          "es": "Nunca como pan."
         }
       ],
       "subnivel": "7.2"
@@ -189,6 +196,25 @@
       "registro": "bizkaiera"
     },
     {
+      "titulo": "La despensa entera, por grupos",
+      "cuerpo": "Este tema es sobre todo vocabulario, y hay bastante. Muchas de estas palabras ya te han ido saliendo por el camino —<i>ogia</i>, <i>ura</i> y <i>kafea</i> llevan contigo desde los primeros ejercicios de la unidad—, así que aquí se juntan todas y se añaden las que faltan. Por grupos entran mucho mejor que en una lista suelta.\n\n<b>Las tres comidas del día</b>\n\n<b>gosaria</b> — el desayuno\n<b>bazkaria</b> — la comida (del mediodía)\n<b>afaria</b> — la cena\n\nDe estas tres salen los verbos que ya viste en el tema anterior: <i>gosaldu</i>, <i>bazkaldu</i>, <i>afaldu</i>.\n\n<b>Para beber</b>\n\n<b>ura</b> — el agua\n<b>kafea</b> — el café\n<b>esnea</b> — la leche\n<b>zukua</b> — el zumo\n<b>ardoa</b> — el vino\n<b>garagardoa</b> — la cerveza\n\nFíjate en <i>garagardoa</i>, porque lleva <b>ardo</b> dentro. Y no es la única:\n\n<i>sagar</i> (manzana) + <i>ardo</i> → <b>sagardoa</b>, la sidra.\n<i>garagar</i> (cebada) + <i>ardo</i> → <b>garagardoa</b>, la cerveza.\n\nUna vez que ves el <i>-ardo</i>, las dos se quedan solas.\n\n<b>En el plato</b>\n\n<b>ogia</b> — el pan\n<b>haragia</b> — la carne\n<b>arraina</b> — el pescado\n<b>oilaskoa</b> — el pollo\n<b>gazta</b> — el queso\n<b>arroza</b> — el arroz\n\n<i>Oilaskoa</i> se parece a <i>oiloa</i>, la gallina que viste en la quinta unidad. Te sirve para acordarte.\n\n<b>De la huerta</b>\n\n<b>barazkiak</b> — las verduras\n<b>patata</b> — la patata\n<b>tomatea</b> — el tomate\n<b>tipula</b> — la cebolla\n<b>letxuga</b> — la lechuga\n\n<b>Fruta</b>\n\n<b>sagarra</b> — la manzana\n<b>platanoa</b> — el plátano\n<b>mahatsa</b> — la uva\n<b>madaria</b> — la pera\n<b>marrubia</b> — la fresa\n<b>arana</b> — la ciruela\n\nDe <i>arana</i> vas a oír también <i>okaran</i>, que es la misma fruta con otro nombre.\n\nY <i>laranja</i>, la naranja, que ya tienes desde los colores.\n\nLa sal y el azúcar van aparte, en la ficha de al lado, porque se confunden entre ellas.",
+      "ejemplos": [
+        {
+          "eu": "Goizean kafea hartzen dut.",
+          "es": "Por la mañana tomo café."
+        },
+        {
+          "eu": "Barazkiak eta arraina jaten ditut.",
+          "es": "Como verduras y pescado."
+        },
+        {
+          "eu": "Sagarra eta madaria erosten ditut.",
+          "es": "Compro una manzana y una pera."
+        }
+      ],
+      "subnivel": "7.5"
+    },
+    {
       "titulo": "«Gatza» y «azukrea»: dos que se confunden",
       "cuerpo": "Van juntas en la cocina y conviene no mezclarlas:\n\n<b>gatza</b> — la sal\n<b>azukrea</b> — el azúcar\n\n<i>Gatza</i> es palabra vasca de siempre, y aparece en un montón de expresiones con el sentido de «gracia» o «chispa», como el «salero» del castellano. <i>Azukrea</i>, en cambio, es un préstamo, y por eso se parece tanto a la palabra castellana.\n\nTruco para no liarlas: la sal es la corta.",
       "ejemplos": [
@@ -205,12 +231,8 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Un par de cosas del habla de aquí con la comida.\n\nPara la patata, además de <b>patata</b> se oye mucho <b>lursagarra</b> —literalmente «manzana de tierra», igual que el <i>pomme de terre</i> francés—, aunque en Bilbao lo normal es <i>patata</i> a secas.\n\nY una nota de uso: <b>gazta</b> es el queso en general, pero si te hablan de <b>Idiazabal</b> te están hablando del de oveja con denominación de origen, que aquí es casi otra categoría.",
+      "cuerpo": "Una nota de uso más que de dialecto: <b>gazta</b> es el queso en general, pero si te hablan de <b>Idiazabal</b> te están hablando del de oveja con denominación de origen, que aquí es casi otra categoría.",
       "ejemplos": [
-        {
-          "eu": "patata",
-          "es": "la patata"
-        },
         {
           "eu": "gazta",
           "es": "el queso"
@@ -585,6 +607,14 @@
       "subnivel": "7.5"
     },
     {
+      "eu": "arana",
+      "es": "la ciruela",
+      "nota": "También se oye «okaran».",
+      "audio": null,
+      "categoria": "sustantivo",
+      "subnivel": "7.5"
+    },
+    {
       "eu": "patata",
       "es": "la patata",
       "nota": null,
@@ -650,90 +680,6 @@
     {
       "eu": "azukrea",
       "es": "el azúcar",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "arropa",
-      "es": "la ropa",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "alkandora",
-      "es": "la camisa",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "prakak",
-      "es": "los pantalones",
-      "nota": "Se usa en plural.",
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "zapatak",
-      "es": "los zapatos",
-      "nota": "Se usa en plural.",
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "jertsea",
-      "es": "el jersey",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "jaka",
-      "es": "la chaqueta",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "gona",
-      "es": "la falda",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "soinekoa",
-      "es": "el vestido",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "txapela",
-      "es": "la boina",
-      "nota": "De aquí salen «txapelduna» y «txapelketa». Ver la ficha.",
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "betaurrekoak",
-      "es": "las gafas",
-      "nota": "Se usa en plural.",
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "txapelduna",
-      "es": "el campeón / la campeona",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "txapelketa",
-      "es": "el campeonato",
       "nota": null,
       "categoria": "sustantivo",
       "subnivel": "7.5"
@@ -1095,15 +1041,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "No como pan. → Nik ____ ogia jaten.",
+          "pregunta": "No leo el libro. → Nik ____ liburua irakurtzen.",
           "opciones": [
             "ez dut",
             "dut ez",
-            "ez jaten",
-            "jaten ez"
+            "ez irakurtzen",
+            "irakurtzen ez"
           ],
           "correcta": 0,
-          "explicacion": "En negativa el auxiliar salta justo detrás del «ez»: «ez dut … jaten»."
+          "explicacion": "En negativa el auxiliar salta justo detrás del «ez»: «ez dut … irakurtzen»."
         },
         {
           "tipo": "opcion",
@@ -1158,7 +1104,7 @@
           "explicacion": "El auxiliar de objeto es «duzu», y va detrás del «ez»."
         }
       ],
-      "subnivel": "7.1"
+      "subnivel": "7.2"
     },
     {
       "id": "u8-g05",
@@ -1391,13 +1337,12 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "No como carne.",
+          "es": "Trabajo en casa.",
           "respuestas": [
-            "ez dut haragia jaten",
-            "nik ez dut haragia jaten",
-            "ez dut haragirik jaten"
+            "etxean lan egiten dut",
+            "nik etxean lan egiten dut"
           ],
-          "pista": "El auxiliar va detrás del «ez»."
+          "pista": "«lan egin» tiene dos piezas, y la que se conjuga es la segunda."
         },
         {
           "tipo": "traducir",
@@ -1427,16 +1372,17 @@
             "euskara ikasten dut",
             "nik euskara ikasten dut"
           ],
-          "pista": "«euskara» va sin artículo aquí."
+          "pista": "Recuerda: «ikasi» es aprender/estudiar."
         },
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "No hay pan.",
+          "es": "Tomo café.",
           "respuestas": [
-            "ez dago ogirik"
+            "kafea hartzen dut",
+            "nik kafea hartzen dut"
           ],
-          "pista": "Con «egon» y el partitivo."
+          "pista": "hartu → hartzen."
         }
       ],
       "subnivel": "7.1"
@@ -1448,12 +1394,12 @@
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
           "es": "No bebo vino.",
-          "eu": "Nik ez dut ardoa edaten.",
+          "eu": "Nik ez dut ardorik edaten.",
           "palabras": [
             "nik",
             "ez",
             "dut",
-            "ardoa",
+            "ardorik",
             "edaten"
           ],
           "distractores": [
@@ -1465,16 +1411,16 @@
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
           "es": "Ella no come pescado.",
-          "eu": "Hark ez du arraina jaten.",
+          "eu": "Hark ez du arrainik jaten.",
           "palabras": [
             "hark",
             "ez",
             "du",
-            "arraina",
+            "arrainik",
             "jaten"
           ],
           "distractores": [
-            "prakak",
+            "gazta",
             "jaiki"
           ]
         },
@@ -1496,7 +1442,7 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "No compro carne.",
+          "es": "No compro la carne.",
           "eu": "Nik ez dut haragia erosten.",
           "palabras": [
             "nik",
@@ -1526,7 +1472,7 @@
           ]
         }
       ],
-      "subnivel": "7.1"
+      "subnivel": "7.2"
     },
     {
       "id": "u8-g10",
@@ -1605,7 +1551,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«No bebo café» en bizkaiera: Nik ez ____ kafea edaten.",
+          "pregunta": "«Bebo café» en bizkaiera: Nik kafea edaten ____.",
           "opciones": [
             "dut",
             "dot",
@@ -1666,6 +1612,122 @@
           ],
           "correcta": 1,
           "explicacion": "Objeto plural en bizkaiera: «dodaz», con esa -z de siempre."
+        }
+      ],
+      "subnivel": "7.1"
+    },
+    {
+      "id": "u8-g31",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "idatzi",
+              "es": "escribir"
+            },
+            {
+              "eu": "entzun",
+              "es": "escuchar"
+            },
+            {
+              "eu": "hartu",
+              "es": "coger, tomar"
+            },
+            {
+              "eu": "irakurri",
+              "es": "leer"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "hitz egin",
+              "es": "hablar"
+            },
+            {
+              "eu": "lan egin",
+              "es": "trabajar"
+            },
+            {
+              "eu": "egin",
+              "es": "hacer"
+            },
+            {
+              "eu": "jarri",
+              "es": "poner"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "jan",
+              "es": "comer"
+            },
+            {
+              "eu": "edan",
+              "es": "beber"
+            },
+            {
+              "eu": "ikusi",
+              "es": "ver"
+            },
+            {
+              "eu": "ikasi",
+              "es": "aprender"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "irakurri",
+              "es": "leer"
+            },
+            {
+              "eu": "idatzi",
+              "es": "escribir"
+            },
+            {
+              "eu": "jarri",
+              "es": "poner"
+            },
+            {
+              "eu": "entzun",
+              "es": "escuchar"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "lan egin",
+              "es": "trabajar"
+            },
+            {
+              "eu": "hartu",
+              "es": "coger, tomar"
+            },
+            {
+              "eu": "ikusi",
+              "es": "ver"
+            },
+            {
+              "eu": "edan",
+              "es": "beber"
+            }
+          ]
         }
       ],
       "subnivel": "7.1"
@@ -1929,193 +1991,6 @@
       "subnivel": "7.5"
     },
     {
-      "id": "u8.1-g03",
-      "variantes": [
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la ropa",
-          "pares": [
-            {
-              "eu": "alkandora",
-              "es": "la camisa"
-            },
-            {
-              "eu": "prakak",
-              "es": "los pantalones"
-            },
-            {
-              "eu": "zapatak",
-              "es": "los zapatos"
-            },
-            {
-              "eu": "jertsea",
-              "es": "el jersey"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la ropa",
-          "pares": [
-            {
-              "eu": "jaka",
-              "es": "la chaqueta"
-            },
-            {
-              "eu": "gona",
-              "es": "la falda"
-            },
-            {
-              "eu": "soinekoa",
-              "es": "el vestido"
-            },
-            {
-              "eu": "txapela",
-              "es": "la boina"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la ropa",
-          "pares": [
-            {
-              "eu": "arropa",
-              "es": "la ropa"
-            },
-            {
-              "eu": "betaurrekoak",
-              "es": "las gafas"
-            },
-            {
-              "eu": "zapatak",
-              "es": "los zapatos"
-            },
-            {
-              "eu": "jaka",
-              "es": "la chaqueta"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la txapela y su familia",
-          "pares": [
-            {
-              "eu": "txapela",
-              "es": "la boina"
-            },
-            {
-              "eu": "txapelduna",
-              "es": "el campeón"
-            },
-            {
-              "eu": "txapelketa",
-              "es": "el campeonato"
-            },
-            {
-              "eu": "arropa",
-              "es": "la ropa"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la ropa",
-          "pares": [
-            {
-              "eu": "gona",
-              "es": "la falda"
-            },
-            {
-              "eu": "alkandora",
-              "es": "la camisa"
-            },
-            {
-              "eu": "soinekoa",
-              "es": "el vestido"
-            },
-            {
-              "eu": "jertsea",
-              "es": "el jersey"
-            }
-          ]
-        }
-      ],
-      "subnivel": "7.5"
-    },
-    {
-      "id": "u8.1-g04",
-      "variantes": [
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «txapelduna»?",
-          "opciones": [
-            "el que vende boinas",
-            "el campeón",
-            "el jugador",
-            "el árbitro"
-          ],
-          "correcta": 1,
-          "explicacion": "«El que tiene txapela»: al ganador se le entrega una."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «txapelketa»?",
-          "opciones": [
-            "la boina",
-            "el campeonato",
-            "el equipo",
-            "el premio"
-          ],
-          "correcta": 1,
-          "explicacion": "El campeonato, la competición donde se gana la txapela."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿De qué palabra salen «txapelduna» y «txapelketa»?",
-          "opciones": [
-            "txapela (la boina)",
-            "txapa (la chapa)",
-            "txalo (el aplauso)",
-            "txartela (la tarjeta)"
-          ],
-          "correcta": 0,
-          "explicacion": "De la boina que se le pone al ganador."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál de estas va siempre en plural?",
-          "opciones": [
-            "alkandora",
-            "gona",
-            "prakak",
-            "jaka"
-          ],
-          "correcta": 2,
-          "explicacion": "«Prakak», los pantalones. También «zapatak» y «betaurrekoak»."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«Betaurrekoak» se construye a partir de…",
-          "opciones": [
-            "begi (ojo) + aurre (delante)",
-            "bete (llenar) + urre (oro)",
-            "beti (siempre) + arreta (atención)",
-            "beso (brazo) + aurre (delante)"
-          ],
-          "correcta": 0,
-          "explicacion": "«Los de delante de los ojos»."
-        }
-      ],
-      "subnivel": "test"
-    },
-    {
       "id": "u8.1-g05",
       "variantes": [
         {
@@ -2153,17 +2028,18 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "He comprado una camisa blanca.",
-          "eu": "Alkandora zuria erosi dut.",
+          "es": "No bebo vino.",
+          "eu": "Ez dut ardorik edaten.",
           "palabras": [
-            "alkandora",
-            "zuria",
-            "erosi",
-            "dut"
+            "ez",
+            "dut",
+            "ardorik",
+            "edaten"
           ],
           "distractores": [
-            "txapela"
-          ]
+            "kafea"
+          ],
+          "pista": "En negativo, el objeto coge el -rik del partitivo."
         },
         {
           "tipo": "orden",
@@ -2671,7 +2547,7 @@
           "pregunta": "«desayunar» se dice…",
           "opciones": [
             "gosaldu",
-            "txapelketa",
+            "afaldu",
             "edaten dut",
             "jaten dut"
           ],
@@ -2686,7 +2562,7 @@
             "dormir",
             "trabajar",
             "el desayuno",
-            "la boina"
+            "ducharse"
           ],
           "correcta": 0,
           "explicacion": "Literalmente «hacer sueño»."
@@ -2813,8 +2689,8 @@
           "instruccion": "Empareja comer y beber",
           "pares": [
             {
-              "eu": "jaka",
-              "es": "la chaqueta"
+              "eu": "madaria",
+              "es": "la pera"
             },
             {
               "eu": "oilaskoa",
@@ -2825,49 +2701,49 @@
               "es": "la comida (del mediodía)"
             },
             {
-              "eu": "soinekoa",
-              "es": "el vestido"
+              "eu": "zukua",
+              "es": "el zumo"
             }
           ]
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «prakak»?",
+          "pregunta": "¿Qué significa «barazkiak»?",
           "opciones": [
-            "los pantalones",
+            "las verduras",
             "escribir",
-            "el campeón / la campeona",
-            "la chaqueta"
+            "el desayuno",
+            "la cebolla"
           ],
           "correcta": 0,
-          "explicacion": "Se usa en plural."
+          "explicacion": "Va casi siempre en plural, como en castellano."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«la ropa» se dice…",
+          "pregunta": "«el agua» se dice…",
           "opciones": [
-            "arropa",
-            "zapatak",
+            "ura",
+            "ardoa",
             "hartu",
-            "ura"
+            "arroza"
           ],
           "correcta": 0,
-          "explicacion": "la ropa = arropa."
+          "explicacion": "el agua = ura."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «jertsea»?",
+          "pregunta": "¿Qué significa «mahatsa»?",
           "opciones": [
-            "el jersey",
+            "la uva",
             "comer",
             "estoy (haciendo algo)",
             "(yo) como"
           ],
           "correcta": 0,
-          "explicacion": "jertsea = el jersey."
+          "explicacion": "mahatsa = la uva."
         }
       ]
     },
@@ -2880,20 +2756,20 @@
           "instruccion": "Empareja comer y beber",
           "pares": [
             {
-              "eu": "prakak",
-              "es": "los pantalones"
+              "eu": "marrubia",
+              "es": "la fresa"
             },
             {
-              "eu": "betaurrekoak",
-              "es": "las gafas"
+              "eu": "letxuga",
+              "es": "la lechuga"
             },
             {
               "eu": "afaria",
               "es": "la cena"
             },
             {
-              "eu": "txapelketa",
-              "es": "el campeonato"
+              "eu": "azukrea",
+              "es": "el azúcar"
             }
           ]
         },
@@ -2902,8 +2778,8 @@
           "instruccion": "Empareja comer y beber",
           "pares": [
             {
-              "eu": "txapela",
-              "es": "la boina"
+              "eu": "arana",
+              "es": "la ciruela"
             },
             {
               "eu": "tipula",
@@ -2914,23 +2790,23 @@
               "es": "la leche"
             },
             {
-              "eu": "txapelduna",
-              "es": "el campeón / la campeona"
+              "eu": "garagardoa",
+              "es": "la cerveza"
             }
           ]
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «alkandora»?",
+          "pregunta": "¿Qué significa «tomatea»?",
           "opciones": [
-            "la camisa",
-            "el jersey",
+            "el tomate",
+            "el queso",
             "la manzana",
             "el problema"
           ],
           "correcta": 0,
-          "explicacion": "alkandora = la camisa."
+          "explicacion": "tomatea = el tomate."
         },
         {
           "tipo": "opcion",
@@ -2981,8 +2857,8 @@
               "es": "el pescado"
             },
             {
-              "eu": "txapela",
-              "es": "la boina"
+              "eu": "kafea",
+              "es": "el café"
             }
           ]
         },
@@ -2991,20 +2867,20 @@
           "instruccion": "Empareja lo de esta unidad",
           "pares": [
             {
-              "eu": "alkandora",
-              "es": "la camisa"
+              "eu": "platanoa",
+              "es": "el plátano"
             },
             {
               "eu": "letxuga",
               "es": "la lechuga"
             },
             {
-              "eu": "soinekoa",
-              "es": "el vestido"
+              "eu": "oilaskoa",
+              "es": "el pollo"
             },
             {
-              "eu": "txapelduna",
-              "es": "el campeón / la campeona"
+              "eu": "gosaria",
+              "es": "el desayuno"
             }
           ]
         },
@@ -3024,15 +2900,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«el jersey» se dice…",
+          "pregunta": "«el arroz» se dice…",
           "opciones": [
-            "jertsea",
+            "arroza",
             "egin",
             "dutxatu",
             "idatzi"
           ],
           "correcta": 0,
-          "explicacion": "el jersey = jertsea."
+          "explicacion": "el arroz = arroza."
         },
         {
           "tipo": "opcion",
@@ -3070,8 +2946,8 @@
               "es": "cenar"
             },
             {
-              "eu": "soinekoa",
-              "es": "el vestido"
+              "eu": "haragia",
+              "es": "la carne"
             }
           ]
         },
@@ -3100,15 +2976,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «gona»?",
+          "pregunta": "¿Qué significa «zukua»?",
           "opciones": [
-            "la falda",
+            "el zumo",
             "estoy (haciendo algo)",
-            "los zapatos",
+            "la sal",
             "el pescado"
           ],
           "correcta": 0,
-          "explicacion": "gona = la falda."
+          "explicacion": "zukua = el zumo."
         },
         {
           "tipo": "opcion",
@@ -3147,8 +3023,8 @@
           "instruccion": "Empareja lo de esta unidad",
           "pares": [
             {
-              "eu": "jertsea",
-              "es": "el jersey"
+              "eu": "tipula",
+              "es": "la cebolla"
             },
             {
               "eu": "garbitu",
@@ -3177,8 +3053,8 @@
               "es": "la leche"
             },
             {
-              "eu": "gona",
-              "es": "la falda"
+              "eu": "arana",
+              "es": "la ciruela"
             },
             {
               "eu": "sagarra",
@@ -3192,9 +3068,9 @@
           "pregunta": "¿Qué significa «irakurri»?",
           "opciones": [
             "leer",
-            "el jersey",
+            "el arroz",
             "levantarse",
-            "la ropa"
+            "la cena"
           ],
           "correcta": 0,
           "explicacion": "irakurri = leer."
@@ -3219,7 +3095,7 @@
           "opciones": [
             "el vino",
             "el zumo",
-            "la falda",
+            "la pera",
             "el pescado"
           ],
           "correcta": 0,
@@ -3352,7 +3228,7 @@
             "de pasado"
           ],
           "correcta": 1,
-          "explicacion": "Y en preguntas: «ba al duzu dirurik?»"
+          "explicacion": "Y en preguntas también: «baduzu dirurik?»."
         },
         {
           "tipo": "opcion",
@@ -3377,15 +3253,15 @@
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
           "es": "No como pan.",
-          "eu": "Ez dut ogia jaten.",
+          "eu": "Ez dut ogirik jaten.",
           "palabras": [
             "ez",
             "dut",
-            "ogia",
+            "ogirik",
             "jaten"
           ],
           "distractores": [
-            "jertsea"
+            "arroza"
           ]
         },
         {

@@ -854,3 +854,47 @@ rescatados antes los dos matices que solo estaban ahí (el de
 "udaberria" como "el verano nuevo" y los cuatro nombres sueltos como
 ejemplos). Ningún ejercicio ni audio se pierde. Barrido el resto del
 curso por si había más duplicados de la misma clase: no hay.
+
+## 2026-08-27 — Negación fuera de sitio, ogia/ogirik, ropa mal colocada
+
+Merge de `ric/trabajo`:
+
+- **La negación se practicaba en 7.1 antes de explicarse en 7.2.** Diez
+  variantes movidas, cuatro reescritas en afirmativo, uno nuevo para
+  que 7.1 no se quedara corto. De paso, distractores de construcciones
+  aún no vistas (gehiago/gutxiago, "ezin dut") sustituidos en cuatro
+  temas.
+- **"No como pan" tenía dos traducciones distintas contando lo mismo**:
+  «Nik ez dut ogia jaten» (no como *el* pan) y «Ez dut ogirik jaten»
+  (no como pan, ninguno) estaban traducidas igual — verificado en la
+  Euskararen Gramatika (15.5). Corregido en los tres ejercicios
+  afectados, con dos escenas nuevas para verlo claro.
+- **La ropa vivía en el tema de "comer y beber"** (12 palabras, 2
+  ejercicios, 4 preguntas del test) mientras 9.5 "Arropa eta opariak"
+  tenía 3. Todo movido a 9.5.
+- **8 referencias entre fichas apuntaban a la unidad equivocada**,
+  resto de la reordenación a diez unidades.
+- Y lo pequeño: burbuja de bizkaiera del 6.5 reescrita (la de San
+  Sebastián se entendía al revés), 7.5 ya presenta su vocabulario,
+  "lursagarra" fuera (nadie la reconoce), añadida "arana" (ciruela).
+
+**Herramientas nuevas**: `scripts/probar_adelantos.js` avisa si un
+ejercicio usa una construcción (negación, partitivo, "ari", pasado,
+comparativos...) antes de que el tema la explique — con las frases
+hechas que se enseñan enteras exentas. `verificar.py` tenía un regex
+que nunca casaba con "unidad 9" en singular (exigía la "e" de
+"unidades"), corregido, y acepta `--filtro texto` para no perderse
+entre 249 avisos. `probar-todo.sh` falla ahora si algún
+`scripts/probar_*.js` trae una ruta absoluta en vez de relativa —
+para que no haga falta corregirlo a mano una tercera vez.
+
+Verificado con `probar-todo.sh` entero en verde (8 pruebas) antes de
+subir.
+
+**Pendiente, sin decidir**: el generador de audio
+(`scripts/generar-audio/generar.mjs`) lee `data/unidades/` (v1), pero
+lo publicado es `data/unidades-v2/` — mientras el vocabulario de v2
+venía heredado de v1 esto daba igual, pero las 54 palabras añadidas
+solo en v2 nunca se generan. Detalle completo y las dos salidas
+propuestas en `docs/audios-pendientes.md`, apartado C — decisión
+pendiente, no aplicada en este commit.

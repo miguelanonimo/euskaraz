@@ -8,21 +8,25 @@
   "subniveles": [
     {
       "id": "8.1",
+      "titulo_eu": "Joan eta etorri",
       "titulo": "Ir y venir",
       "resumen": "Joan, etorri, ibili."
     },
     {
       "id": "8.2",
+      "titulo_eu": "Nora zoaz?",
       "titulo": "Cómo llegar",
       "resumen": "En qué vas, por dónde, y cómo explicárselo a alguien."
     },
     {
       "id": "8.3",
+      "titulo_eu": "Ahal eta behar",
       "titulo": "Poder y deber",
       "resumen": "Ahal, ezin, behar: hacer planes."
     },
     {
       "id": "8.4",
+      "titulo_eu": "Hiria",
       "titulo": "La ciudad y sus servicios",
       "resumen": "Correos, banco, ayuntamiento, bares."
     }
@@ -509,6 +513,13 @@
       "nota": null,
       "audio": "unidades/u9/hemendik.mp3",
       "categoria": "otros",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "mugitu",
+      "es": "mover, moverse",
+      "nota": "El título de la unidad, «Mugi zaitez!», es su imperativo: «¡muévete!».",
+      "categoria": "verbo",
       "subnivel": "8.1"
     },
     {
@@ -1663,7 +1674,7 @@
             "joan",
             "hiria",
             "iritsi",
-            "ezin dut"
+            "etorri"
           ],
           "correcta": 0,
           "explicacion": "ir = joan."

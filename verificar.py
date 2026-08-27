@@ -47,7 +47,19 @@ RE_EMPIEZA = re.compile(u"[Ee]mpieza por (?:\u00ab([^\u00bb]+)\u00bb|(\\w)\\b)")
 # una que mande hacia adelante es peor que un número mal: le dice al alumno
 # que ya sabe algo que aún no ha visto. Coge también las plurales
 # («desde las unidades 6 y 8»), que a la primera versión se le escapaban.
-RE_UNIDAD = re.compile(u"unidades?\\s+(\\d+)((?:\\s*(?:,|y|o)\\s*\\d+)*)", re.I)
+basestring_ = str
+
+RE_UNIDAD = re.compile(u"unidad(?:es)?\\s+(\\d+)((?:\\s*(?:,|y|o)\\s*\\d+)*)", re.I)
+
+# Las fichas también citan unidades en letra («ya de la sexta unidad»), y así
+# escritas se escapaban de RE_UNIDAD. La reordenación a diez unidades dejó
+# varias apuntando a la unidad equivocada.
+ORDINALES = {u"primera":1, u"segunda":2, u"tercera":3, u"cuarta":4, u"quinta":5,
+             u"sexta":6, u"séptima":7, u"septima":7, u"octava":8, u"novena":9,
+             u"décima":10, u"decima":10, u"undécima":11, u"undecima":11,
+             u"duodécima":12, u"duodecima":12}
+RE_UNIDAD_LETRA = re.compile(
+    u"(" + u"|".join(sorted(ORDINALES, key=len, reverse=True)) + u")\\s+unidad", re.I)
 
 def cifra(t):
     t = t.lower()
@@ -124,6 +136,11 @@ if nums != sorted(nums):
     avisos.append("las unidades no están en orden numérico: %s" % nums)
 
 for ruta, u in unidades:
+    # Cada tema lleva su título en euskera además del castellano (`titulo_eu`).
+    for s_ in u.get("subniveles") or []:
+        if not s_.get("titulo_eu"):
+            errores.append(u"%s: el tema %s no tiene título en euskera" % (ruta, s_.get("id")))
+
     for k in ("id","numero","titulo","subtitulo","objetivo","color","vocabulario","gramatica","ejercicios"):
         if k not in u: errores.append("%s: falta la clave %s" % (ruta, k))
     vistos = set()
@@ -170,12 +187,34 @@ for ruta, u in unidades:
                                   u"de la frase (…%s / %s…)"
                                   % (ruta, gr["titulo"], sa[-28:], sb[:28]))
                     break
-        for m in RE_UNIDAD.finditer(gr["cuerpo"]):
-            nums = [int(m.group(1))] + [int(x) for x in re.findall(r"\\d+", m.group(2) or "")]
-            futuras = [n for n in nums if n >= u["numero"]]
-            if futuras:
-                errores.append(u"%s: «%s» remite a la unidad %s, que es esta misma o "
-                               u"posterior" % (ruta, gr["titulo"], futuras[0]))
+        # Mirar el cuerpo y también los ejemplos, que es donde se escondía
+        # «el -tik llega en la unidad 9» (y llega en la quinta).
+        sitios = [gr["cuerpo"]]
+        for ej in gr.get("ejemplos") or []:
+            if isinstance(ej, dict):
+                sitios += [v for k, v in ej.items()
+                           if k not in ("eu", "audio") and isinstance(v, basestring_)]
+
+        for txt in sitios:
+            citadas = []
+            for m in RE_UNIDAD_LETRA.finditer(txt):
+                citadas.append((ORDINALES[m.group(1).lower()], m.group(1)))
+            for m in RE_UNIDAD.finditer(txt):
+                citadas.append((int(m.group(1)), m.group(1)))
+                for x in re.findall(r"\d+", m.group(2) or ""):
+                    citadas.append((int(x), x))
+            for n, tal_cual in citadas:
+                if n == u["numero"]:
+                    errores.append(u"%s: «%s» remite a la unidad %s, que es ella misma"
+                                   % (ruta, gr["titulo"], tal_cual))
+                elif n > u["numero"]:
+                    # Adelantar lo que viene es deliberado y está bien («los
+                    # adjetivos llegan en la unidad 5»). Solo se avisa para
+                    # poder repasar el número a ojo, porque saber si acierta
+                    # exige saber dónde se enseña cada cosa.
+                    avisos.append(u"%s: «%s» anuncia la unidad %s; comprueba que "
+                                  u"sigue siendo la que toca"
+                                  % (ruta, gr["titulo"], tal_cual))
 
         for tag in re.findall(r"</?(\w+)>", gr["cuerpo"]):
             if tag not in ("b","i","u"):
@@ -297,7 +336,20 @@ else:
     print("Sin errores.")
 print()
 if avisos:
-    print("Avisos (%d):" % len(avisos))
-    for a in avisos[:40]: print("  ·", a)
-    if len(avisos) > 40: print("  … y %d más" % (len(avisos)-40))
+    # Con 250 avisos la lista se corta a 40 y no hay manera de mirar una
+    # familia concreta. «--filtro texto» enseña todos los que la contienen.
+    filtro = None
+    if "--filtro" in sys.argv:
+        i = sys.argv.index("--filtro")
+        filtro = sys.argv[i + 1].lower() if i + 1 < len(sys.argv) else ""
+    if filtro is not None:
+        elegidos = [a for a in avisos if filtro in a.lower()]
+        print("Avisos que contienen «%s» (%d de %d):" % (filtro, len(elegidos), len(avisos)))
+        for a in elegidos: print("  ·", a)
+    else:
+        print("Avisos (%d):" % len(avisos))
+        for a in avisos[:40]: print("  ·", a)
+        if len(avisos) > 40:
+            print("  … y %d más (usa «--filtro texto» para ver los que te interesen)"
+                  % (len(avisos) - 40))
 sys.exit(1 if errores else 0)

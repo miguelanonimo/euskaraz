@@ -8,26 +8,31 @@
   "subniveles": [
     {
       "id": "5.1",
+      "titulo_eu": "Non zaude?",
       "titulo": "El verbo «egon» y el sitio",
       "resumen": "Estar, y el -n de «en»."
     },
     {
       "id": "5.2",
+      "titulo_eu": "Etxeko gelak",
       "titulo": "La casa por dentro",
       "resumen": "Habitaciones y muebles. Y el patrón -gela."
     },
     {
       "id": "5.3",
+      "titulo_eu": "Gorria, urdina, handia",
       "titulo": "Colores y adjetivos",
       "resumen": "Cómo es algo: de qué color, y de qué tamaño."
     },
     {
       "id": "5.4",
+      "titulo_eu": "Etxe bat",
       "titulo": "«Una» se dice con «bat»",
       "resumen": "Etxe gorria frente a etxe gorri bat."
     },
     {
       "id": "5.5",
+      "titulo_eu": "Baserria",
       "titulo": "El caserío y sus animales",
       "resumen": "La casa que incluye la tierra, los bichos y a los que viven allí."
     }
@@ -1470,15 +1475,15 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "La calle es vieja.",
-          "eu": "Kalea zaharra da.",
+          "es": "La silla es roja.",
+          "eu": "Aulkia gorria da.",
           "palabras": [
-            "kalea",
-            "zaharra",
+            "aulkia",
+            "gorria",
             "da"
           ],
           "distractores": [
-            "arrosa"
+            "leihoa"
           ]
         },
         {

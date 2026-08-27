@@ -1112,6 +1112,16 @@
     return p.subs[subId];
   }
 
+  /* El título del tema va en euskera, con el castellano debajo en pequeño
+     (pedido por Ric). Los temas sin traducir todavía caen al castellano, que
+     es lo que había. */
+  function tituloTema(s) {
+    return s.titulo_eu
+      ? '<span class="subcard__title">' + esc(s.titulo_eu) + '</span>' +
+        '<span class="subcard__title-es">' + esc(s.titulo) + '</span>'
+      : '<span class="subcard__title">' + esc(s.titulo) + '</span>';
+  }
+
   function pintarListaSubniveles(u) {
     var partes = u.subniveles.map(function (s) {
       var c = contenidoSub(u, s.id);
@@ -1128,7 +1138,7 @@
         return '<span class="subcard subcard--pendiente">' +
           '<span class="subcard__id">' + esc(s.id) + '</span>' +
           '<span class="subcard__body">' +
-            '<span class="subcard__title">' + esc(s.titulo) + '</span>' +
+            tituloTema(s) +
             '<span class="subcard__sub">' + esc(s.resumen || '') + '</span>' +
           '</span><span class="subcard__visto">en preparación</span></span>';
       }
@@ -1140,7 +1150,7 @@
       return '<button class="subcard' + (ps.mejor >= 0.7 ? ' subcard--ok' : '') + '" data-sub="' + esc(s.id) + '">' +
         '<span class="subcard__id">' + esc(s.id) + '</span>' +
         '<span class="subcard__body">' +
-          '<span class="subcard__title">' + esc(s.titulo) + '</span>' +
+          tituloTema(s) +
           '<span class="subcard__sub">' + esc(trozos.join(' · ')) + '</span>' +
         '</span>' + estadoTxt +
         '<span class="subcard__chev" aria-hidden="true">' +
@@ -1188,8 +1198,9 @@
     var c = contenidoSub(u, subId);
     tituloBarra(u.titulo, subId + ' ' + s.titulo);
     el.subHeroNum.textContent = 'Tema ' + subId;
-    el.subHeroTitle.textContent = s.titulo;
-    el.subHeroGoal.textContent = s.resumen || '';
+    el.subHeroTitle.textContent = s.titulo_eu || s.titulo;
+    // el castellano, como antesala del resumen
+    el.subHeroGoal.textContent = (s.titulo_eu ? s.titulo + ' · ' : '') + (s.resumen || '');
 
     var tarjetas = [];
     if (c.gramatica.length) {

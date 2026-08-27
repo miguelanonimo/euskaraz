@@ -8,26 +8,31 @@
   "subniveles": [
     {
       "id": "6.1",
+      "titulo_eu": "Zer ordu da?",
       "titulo": "La hora",
       "resumen": "Va en plural, y media, menos cuarto."
     },
     {
       "id": "6.2",
+      "titulo_eu": "Asteko egunak",
       "titulo": "Los días y la costumbre",
       "resumen": "La semana, y cada cuánto haces las cosas."
     },
     {
       "id": "6.3",
+      "titulo_eu": "Hilabeteak",
       "titulo": "Los meses",
       "resumen": "Los doce, y «en mayo»."
     },
     {
       "id": "6.4",
+      "titulo_eu": "Eguraldia",
       "titulo": "Estaciones y tiempo",
       "resumen": "Las cuatro estaciones salen de «uda»."
     },
     {
       "id": "6.5",
+      "titulo_eu": "Jaiak",
       "titulo": "Las fiestas del año",
       "resumen": "Gabonak, Olentzero, Inauteriak."
     }
@@ -35,7 +40,7 @@
   "gramatica": [
     {
       "titulo": "La hora va en plural",
-      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>Ordu bata da.</b> — Es la una.\n<b>Ordu biak dira.</b> — Son las dos.\n<b>Hirurak dira.</b> — Son las tres.\n<b>Laurak dira.</b> — Son las cuatro.\n<b>Bostak dira.</b> — Son las cinco.\n<b>Seiak dira.</b> — Son las seis.\n<b>Zazpiak dira.</b> — Son las siete.\n<b>Zortziak dira.</b> — Son las ocho.\n<b>Bederatziak dira.</b> — Son las nueve.\n<b>Hamarrak dira.</b> — Son las diez.\n<b>Hamaikak dira.</b> — Son las once.\n<b>Hamabiak dira.</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la quinta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.",
+      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>Ordu bata da.</b> — Es la una.\n<b>Ordu biak dira.</b> — Son las dos.\n<b>Hirurak dira.</b> — Son las tres.\n<b>Laurak dira.</b> — Son las cuatro.\n<b>Bostak dira.</b> — Son las cinco.\n<b>Seiak dira.</b> — Son las seis.\n<b>Zazpiak dira.</b> — Son las siete.\n<b>Zortziak dira.</b> — Son las ocho.\n<b>Bederatziak dira.</b> — Son las nueve.\n<b>Hamarrak dira.</b> — Son las diez.\n<b>Hamaikak dira.</b> — Son las once.\n<b>Hamabiak dira.</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la cuarta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.",
       "ejemplos": [
         {
           "eu": "Zer ordu da?",
@@ -168,7 +173,7 @@
     },
     {
       "titulo": "Los doce meses",
-      "cuerpo": "Van siempre con su artículo <b>-a</b> al final, igual que <i>eguna</i> o <i>astea</i>. Así se dicen y así conviene aprenderlos:\n\n<b>urtarrila</b> — enero\n<b>otsaila</b> — febrero\n<b>martxoa</b> — marzo\n<b>apirila</b> — abril\n<b>maiatza</b> — mayo\n<b>ekaina</b> — junio\n<b>uztaila</b> — julio\n<b>abuztua</b> — agosto\n<b>iraila</b> — septiembre\n<b>urria</b> — octubre\n<b>azaroa</b> — noviembre\n<b>abendua</b> — diciembre\n\nA diferencia del castellano, en euskera los meses se escriben en minúscula, como los días de la semana que ya viste en esta unidad.",
+      "cuerpo": "Van siempre con su artículo <b>-a</b> al final, igual que <i>eguna</i> o <i>astea</i>. Así se dicen y así conviene aprenderlos:\n\n<b>urtarrila</b> — enero\n<b>otsaila</b> — febrero\n<b>martxoa</b> — marzo\n<b>apirila</b> — abril\n<b>maiatza</b> — mayo\n<b>ekaina</b> — junio\n<b>uztaila</b> — julio\n<b>abuztua</b> — agosto\n<b>iraila</b> — septiembre\n<b>urria</b> — octubre\n<b>azaroa</b> — noviembre\n<b>abendua</b> — diciembre\n\nIgual que en castellano, los meses van en <b>minúscula</b> — y lo mismo los días de la semana, que ya viste en esta unidad. Quien lo tiene distinto es el inglés, que los escribe con mayúscula.",
       "ejemplos": [
         {
           "eu": "urtarrila",
@@ -202,15 +207,19 @@
     },
     {
       "titulo": "«Urtebetetzea»: el año que se llena",
-      "cuerpo": "Esta merece que le mires las piezas, porque una vez las ves ya no se olvida:\n\n<b>urte</b> (año) + <b>bete</b> (llenar, completar) + <b>-tze</b>\n\nLiteralmente, <b>el completarse del año</b>. No es «el día de tu nacimiento» como en castellano, sino el momento en que se te cumple otro año entero.\n\nEl verbo <i>bete</i> lo vas a volver a ver: sirve para llenar un vaso, una hoja o un plazo, con la misma idea de completar algo hasta el borde.",
+      "cuerpo": "Esta merece que le mires las piezas, porque una vez las ves ya no se olvida:\n\n<b>urte</b> (año) + <b>bete</b> (llenar, completar) + <b>-tze</b>\n\nLiteralmente, <b>el completarse del año</b>. Y fíjate en que el castellano hace exactamente lo mismo: <i>cumpleaños</i> es «cumplir años», completar otro año. Las dos lenguas cuentan lo mismo — el año que se llena, no el día en que naciste.\n\nQuien lo dice de la otra manera es el inglés, con <i>birthday</i>, el día del nacimiento.\n\nEl verbo <i>bete</i> lo vas a volver a ver: sirve para llenar un vaso, una hoja o un plazo, con la misma idea de completar algo hasta el borde.\n\n<b>Y cómo se felicita.</b> No hay nada parecido a «feliz cumpleaños»: se dice <b>Zorionak!</b> a secas, o <b>Zorionak zuri!</b> — «felicidades a ti».\n\nOjo, porque no son solo de cumpleaños: <i>zorionak</i> es «felicidades» a secas, y sirve para un ascenso, un premio o una boda igual que para los años. Es batua, se usa en todas partes.",
       "ejemplos": [
         {
-          "eu": "urtebetetzea",
-          "es": "el cumpleaños"
+          "eu": "Zorionak!",
+          "es": "¡Felicidades!"
         },
         {
-          "eu": "bete",
-          "es": "llenar, completar"
+          "eu": "Zorionak zuri!",
+          "es": "¡Felicidades a ti!"
+        },
+        {
+          "eu": "Nire urtebetetzea maiatzean da.",
+          "es": "Mi cumpleaños es en mayo."
         }
       ],
       "subnivel": "6.3"
@@ -232,7 +241,7 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Los meses son de las cosas más estables del idioma y en Bizkaia se dicen igual que en batua. Lo que sí cambia es lo de alrededor.\n\nPara preguntar por una fecha, en vez de <b>noiz?</b> (cuándo) oirás muchas veces <b>zenbatean?</b>, literalmente «¿en cuánto?».\n\nY ojo con una trampa del castellano: para felicitar un cumpleaños no se dice nada parecido a «feliz cumpleaños». Se dice <b>Zorionak!</b> a secas, o <b>Zorionak zuri!</b> — la misma palabra que ya conoces para «felicidades».",
+      "cuerpo": "Los meses son de las cosas más estables del idioma y en Bizkaia se dicen igual que en batua. Lo que sí cambia es lo de alrededor.\n\nPara preguntar por una fecha, en vez de <b>noiz?</b> (cuándo) oirás muchas veces <b>zenbatean?</b>, literalmente «¿en cuánto?».",
       "ejemplos": [
         {
           "eu": "Zorionak!",
@@ -308,31 +317,39 @@
       "subnivel": "6.5"
     },
     {
-      "titulo": "Olentzero, el carbonero que baja del monte",
-      "cuerpo": "En Euskal Herria los regalos de Navidad no los trae Papá Noel ni —tradicionalmente— los Reyes: los trae <b>Olentzero</b>.\n\nEs un carbonero que vive en el monte y baja al pueblo la Nochebuena. Se le representa con boina, ropa de caserío y buen apetito, y en muchos sitios lo pasean en un desfile con antorchas la tarde del 24.\n\nSi buscas <i>Olentzero</i> en el diccionario de Euskaltzaindia te dirá «Gabon eguna», el día de Nochebuena — porque el nombre designaba primero el día y luego el personaje. En el habla de hoy, es el personaje.",
+      "titulo": "Olentzero: primero fue una fiesta, después un carbonero",
+      "cuerpo": "En Euskal Herria los regalos de Navidad no los trae Papá Noel ni —tradicionalmente— los Reyes: los trae <b>Olentzero</b>.\n\nHoy es un personaje concreto: un <b>carbonero</b> que vive en el monte y baja al pueblo la Nochebuena. Se le representa con boina, ropa de caserío y buen apetito, y en muchos sitios lo pasean en un desfile con antorchas la tarde del 24.\n\n<b>Pero antes no era nadie.</b> Y esto es lo interesante.\n\nEn zonas de Navarra y Gipuzkoa, <i>Olentzero</i> era el nombre de <b>la fiesta misma</b>: la Nochebuena y, más atrás, la celebración del <b>solsticio de invierno</b> — la noche más larga, cuando el año da la vuelta. No designaba a una persona, sino a un día del calendario.\n\nCon los siglos, esa fiesta <b>tomó forma humana</b>. El nombre del día se convirtió en el nombre de un personaje, y alrededor de él creció la leyenda del carbonero que baja del monte.\n\nPor eso, si buscas <i>Olentzero</i> en el diccionario de Euskaltzaindia, lo primero que te dice es <b>«Gabon eguna»</b>, el día de Nochebuena. No es un error del diccionario: es el significado más antiguo, el que había antes de que la fiesta echara barba.\n\nY encaja con lo que ya sabes de esta unidad: en euskera <b>Gabonak</b> son las Navidades y <i>gabon</i>, a secas, es «buenas noches». Todo esto gira alrededor de la misma idea — la noche, y la noche más larga del año.",
       "ejemplos": [
         {
           "eu": "Olentzero",
-          "es": "Olentzero"
+          "es": "El carbonero — y, antes, la propia Nochebuena."
+        },
+        {
+          "eu": "Gabon eguna",
+          "es": "El día de Nochebuena."
         },
         {
           "eu": "Gabonak",
-          "es": "la Navidad"
+          "es": "La Navidad."
         }
       ],
       "subnivel": "6.5"
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Los carnavales, <b>Inauteriak</b> en batua, aquí se llaman muchas veces <b>Aratusteak</b>. Es la palabra que oirás en Bilbao y en buena parte de Bizkaia.\n\nY el 20 de enero, San Sebastián, en Bilbao no es gran cosa — pero el 15 de agosto sí: es la <b>Aste Nagusia</b>, la Semana Grande.",
+      "cuerpo": "Los carnavales, <b>Inauteriak</b> en batua, aquí se llaman muchas veces <b>Aratusteak</b>. Es la palabra que oirás en Bilbao y en buena parte de Bizkaia.\n\nLa fiesta grande de Bilbao es la <b>Aste Nagusia</b>, la Semana Grande: empieza el sábado siguiente al 15 de agosto y dura nueve días. El nombre no tiene misterio: <i>astea</i> ya sabes que es la semana, y <i>nagusi</i> es «mayor, principal». La semana mayor del año.\n\nY en Gernika hay una fecha cuyo nombre se dice entero con palabras que ya tienes: el <b>Urriko Azken Astelehena</b>, el último lunes de octubre, día de feria en la villa desde hace siglos.\n\n<i>urria</i> (octubre) + <i>-ko</i> (de) + <i>azken</i> (último) + <i>astelehena</i> (el lunes).\n\nFija el detalle de <i>azken</i>: lo aprendiste como <b>azkena</b>, «el último», pero cuando va delante del nombre pierde la <i>-a</i> y el artículo se lo queda la palabra de detrás — <i>azken astelehena</i>, no <i>azkena astelehena</i>.",
       "ejemplos": [
         {
-          "eu": "Inauteriak",
-          "es": "los carnavales"
+          "eu": "Aratusteak",
+          "es": "los carnavales (en Bizkaia)"
         },
         {
-          "eu": "Gabonak",
-          "es": "la Navidad"
+          "eu": "Aste Nagusia",
+          "es": "la Semana Grande de Bilbao"
+        },
+        {
+          "eu": "Urriko Azken Astelehena",
+          "es": "el último lunes de octubre — la feria de Gernika"
         }
       ],
       "subnivel": "6.5",
@@ -557,6 +574,13 @@
       "subnivel": "6.2"
     },
     {
+      "eu": "egutegia",
+      "es": "el calendario",
+      "nota": "De «egun» (día). Es el título de esta unidad: todo lo que estás viendo —la hora, los días, los meses— cabe dentro de un egutegi.",
+      "categoria": "sustantivo",
+      "subnivel": "6.2"
+    },
+    {
       "eu": "hilabetea",
       "es": "el mes",
       "nota": null,
@@ -652,6 +676,14 @@
       "es": "el cumpleaños",
       "nota": "De «urte» (año) + «bete» (llenar): el completarse del año.",
       "categoria": "sustantivo",
+      "subnivel": "6.3"
+    },
+    {
+      "eu": "zorionak",
+      "es": "felicidades",
+      "nota": "«Felicidades», para cualquier cosa: un cumpleaños, un premio, una boda. «Zorionak zuri!» es «felicidades a ti».",
+      "audio": "unidades/u12/zorionak.mp3",
+      "categoria": "otros",
       "subnivel": "6.3"
     },
     {
@@ -1096,7 +1128,7 @@
           "opciones": [
             "gutxi",
             "eta",
-            "gehiago",
+            "hamar",
             "erdiak"
           ],
           "correcta": 0,
@@ -2090,77 +2122,6 @@
       "subnivel": "test"
     },
     {
-      "id": "u10.1-g02",
-      "variantes": [
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«Me gustan tus ojos» se dice…",
-          "opciones": [
-            "Zure begiak gustatzen zait.",
-            "Zure begiak gustatzen zaizkit.",
-            "Zure begia gustatzen zaizkit.",
-            "Zure begiak gustatzen naiz."
-          ],
-          "correcta": 1,
-          "explicacion": "Son varios, así que toca «zaizkit»."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«Me gusta tu pelo» se dice…",
-          "opciones": [
-            "Zure ilea gustatzen zaizkit.",
-            "Zure ilea gustatzen zait.",
-            "Zure ileak gustatzen zait.",
-            "Zure ilea gustatzen naiz."
-          ],
-          "correcta": 1,
-          "explicacion": "Una sola cosa: «zait»."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué es «bihotza»?",
-          "opciones": [
-            "la cabeza",
-            "el corazón",
-            "el brazo",
-            "la mano"
-          ],
-          "correcta": 1,
-          "explicacion": "Bihotza es el corazón."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué es «belarriak»?",
-          "opciones": [
-            "los ojos",
-            "las orejas",
-            "las manos",
-            "los pies"
-          ],
-          "correcta": 1,
-          "explicacion": "Belarriak son las orejas. Ojo con «belarra», la hierba."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué es «hanka»?",
-          "opciones": [
-            "el brazo",
-            "la pierna",
-            "el pie",
-            "la mano"
-          ],
-          "correcta": 1,
-          "explicacion": "Hanka es la pierna. «Oina» es el pie."
-        }
-      ],
-      "subnivel": "test"
-    },
-    {
       "id": "u10.1-g03",
       "variantes": [
         {
@@ -2353,17 +2314,18 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Me gustan tus ojos.",
-          "eu": "Zure begiak gustatzen zaizkit.",
+          "es": "En verano hace calor.",
+          "eu": "Udan bero egiten du.",
           "palabras": [
-            "zure",
-            "begiak",
-            "gustatzen",
-            "zaizkit"
+            "udan",
+            "bero",
+            "egiten",
+            "du"
           ],
           "distractores": [
-            "urtebetetzea"
-          ]
+            "euria"
+          ],
+          "pista": "El mismo molde que «hotz egiten du», cambiando el frío por el calor."
         },
         {
           "tipo": "traducir",

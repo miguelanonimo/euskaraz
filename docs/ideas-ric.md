@@ -1706,6 +1706,335 @@ se comparó concepto a concepto**, no a ojo:
 clase, comparando las fichas de cada tema por las palabras con peso que
 comparten: **ninguno más**.
 
+### Tanda del 27/08: siete cosas de Ric, y dos errores míos del mismo tipo
+
+#### El mismo fallo dos veces: comparar con el castellano pensando en inglés
+
+**Los meses.** La ficha decía *«A diferencia del castellano, en euskera los
+meses se escriben en minúscula»*. **Falso**: en castellano también van en
+minúscula. La lengua que los escribe con mayúscula es el inglés. Corregido a
+«igual que en castellano», con la aclaración de quién es el raro.
+
+**Urtebetetzea.** Decía *«No es "el día de tu nacimiento" como en
+castellano»*. También falso: **«cumpleaños» es literalmente cumplir años**,
+exactamente la misma idea que *urte + bete*. El que dice «el día del
+nacimiento» es el inglés, con *birthday*. Reescrita para señalar que las dos
+lenguas cuentan lo mismo.
+
+Los dos los detectó Ric, y son el mismo descuido: tenía la norma inglesa en la
+cabeza y la atribuí al castellano.
+
+#### Zorionak, donde toca
+
+Estaba en la burbuja de bizkaiera de 6.3, **y es batua**. Subido a la ficha de
+cumpleaños, con la precisión de Ric: `Zorionak` es «felicidades» a secas —vale
+para un premio o una boda, no solo para los años— y `Zorionak zuri` es
+«felicidades a ti». La burbuja se queda con `zenbatean?`, que sí es de aquí.
+
+De paso, `zorionak` estaba catalogada en 10.6 y se usa en dos ejercicios de la
+unidad 6: **movida a 6.3**, donde se usa primero.
+
+#### Olentzero: primero la fiesta, después el personaje
+
+Ric aportó el dato que faltaba: *Olentzero* era el nombre con el que se
+llamaba, en zonas de Navarra y Gipuzkoa, a la **Vigilia de Navidad y a la
+celebración del solsticio de invierno**. Con los siglos la fiesta tomó forma
+humana y nació la leyenda del carbonero.
+
+La ficha lo mencionaba de refilón («el nombre designaba primero el día») y así
+no se entendía. Reescrita con ese orden, y enlazada con lo que ya sabe el
+alumno: `Gabonak` son las Navidades y `gabon` es «buenas noches» — todo gira
+alrededor de la noche más larga.
+
+#### La familia: una sola burbuja, y `izeko`
+
+Había **dos fichas de dialecto** en 4.6 más una mención suelta a `loba` dentro
+de la ficha de `iloba`. Juntadas en una: los abuelos (aitite/aitxitxe,
+amama/amuma), `izeko`, `loba`/`lobak` y el `dot`/`dodaz` del verbo.
+
+**`izeko` verificado**: es el «tía» de Bizkaia frente al `izeba` del batua,
+recogido en el diccionario de Labayru y en el OEH. El tío es `osaba` en las
+dos. Añadida como variante en el vocabulario.
+
+#### Palabras que dan nombre a algo y no se enseñaban
+
+Ric lo vio con **`egutegia`**: es el título de la unidad 6 y no estaba en
+ninguna parte, ni en el diccionario. Barrido:
+
+- **`egutegia`** (u6), **`familia`** (u4) y **`mugitu`** (u8, cuyo imperativo
+  es el título «Mugi zaitez!») — añadidas, con una nota que las conecta con el
+  título de su unidad.
+- `galderak` **no** hacía falta: es el plural de `galdera`, que sí se enseña.
+- Y el mismo barrido sobre los temas sacó dos más: **`gorputza`**, que da
+  nombre al tema 9.3 y no estaba, y **`oparia`**, que se pregunta en un
+  ejercicio de 9.5 sin estar tampoco.
+
+#### Los títulos de tema, en euskera
+
+Los 48 llevan ahora `titulo_eu`, y se pintan en euskera con el castellano
+debajo en pequeño — en las tarjetas y en la portada del tema.
+
+**Regla que me impuse al escribirlos: solo palabras o frases que el curso ya
+enseña.** Por eso varios son listas de tres palabras («Nor, zer, noiz») en vez
+de títulos elegantes, y por eso se descartaron `izenordainak` (pronombres) y
+`ahoskera` (pronunciación): son términos gramaticales que no aparecen en
+ninguna parte del curso. Quedaron «Ni, zu, hura» y «Euskalkiak».
+
+En la barra superior se sigue viendo el castellano: ahí solo cabe una línea, y
+es la etiqueta con la que navegas.
+
+**No los ha revisado un nativo.** Son míos.
+
+#### «Me gustan tus ojos» en el test de la unidad 6
+
+Lo encontró Ric haciendo el test. Era `u10.1-g02`, un grupo entero sobre
+`gustatzen zaizkit` con partes del cuerpo —las dos cosas de la unidad 9—
+que se quedó en la unidad 6 al reestructurar. **Movido a 9.3.** Y una variante
+suelta igual en 6.4, reescrita como «En verano hace calor».
+
+*Detalle:* la primera versión de ese reemplazo fue «hace viento», y se cambió
+porque **no encaja en el patrón `egiten du`** que enseña la ficha: para el
+viento el euskera dice más `haizea dabil`. Se usó el paralelo exacto de
+`hotz egiten du`.
+
+**Barrido de todos los tests** buscando lo mismo. Salieron tres más, los tres
+arreglados con vocabulario de su propia unidad:
+
+- u4 preguntaba «Las vacas están en el monte» (`behia` 5.5, `mendia` 8.1,
+  `daude` 5.1)
+- u5 preguntaba «La calle es vieja» (`kalea` 8.4)
+- u7 preguntaba «He comprado una camisa blanca» — el fallo no era la camisa,
+  que sí es de 7.5, sino **`erosi`**, de 9.5
+
+Los dos que siguen saltando son **falsos positivos** y conviene tenerlo
+anotado: el test de la unidad 2 usa «Nola duzu izena?» y «Nor zara zu?», que
+sus propias fichas enseñan como frases hechas; y «Zukua edan nahi dut» aparece
+como ejemplo de una ficha de la unidad 9 que **reutiliza** una frase de la 7,
+así que el detector la registró allí.
+
+### Ejercicios que iban por delante de la explicación (27/08/2026)
+
+Ric, probando el 7.1: *«me sale la pregunta "no como carne" pero aquí aún no
+hemos aprendido la negación»*. Cierto: la negación se explica en el **7.2**.
+
+Al barrer resultó que no era un ejercicio suelto, sino que **el 7.1 se había
+quedado con casi toda la práctica de negación** al repartir los temas:
+
+| Ejercicio | Qué pasaba | Qué se ha hecho |
+|---|---|---|
+| `u8-g04` | 5 variantes, todas de negación | movido al 7.2 |
+| `u8-g09` | 5 de ordenar, todas con `ez` | movido al 7.2 |
+| `u8-g08` | v0 «no como carne», v4 «no hay pan» | reescritas en afirmativo |
+| `u8-g11` | la pregunta de bizkaiera partía de una frase negativa | reescrita en afirmativo |
+
+El 7.1 se quedaba en 7 ejercicios, así que entra uno nuevo (`u8-g31`, emparejar
+verbos) y vuelve a 8. El 7.2 pasa de 5 a 7.
+
+Sueltos, en otras unidades: `gehiago`/`gutxiago` (10.4) y `ezin dut` (8.3)
+salían de distractores en el 6.1, el 8.1, el 10.1 y el 10.3. Cambiados por
+palabras ya dadas.
+
+**Ahora lo vigila `scripts/probar_adelantos.js`**, dentro de `probar-todo.sh`.
+Comprueba nueve construcciones (negación, partitivo, `ari`, `gustatzen`,
+pasado, `al`, `ezin`, `behar`, comparativos) y avisa si aparecen antes de su
+tema. Deja fuera las frases hechas que el curso enseña enteras a propósito
+(`ez dakit`, `ez dut ulertzen`, `ez horregatik`).
+
+Ojo con los homógrafos, que daban 98 falsos positivos en la primera versión:
+`nago`/`dago` no son comparativos en `-ago`, y el `zuen` de la 2.2 es
+«vuestro», no el pasado.
+
+### «No como pan» dicho de dos maneras (27/08/2026)
+
+Ric: *«primero usas "Nik ez dut ogia jaten" y justo después "Ez dut ogirik
+jaten", ambas traducidas como "no como pan"… me resulta extraño»*.
+
+Tenía razón, y **no significan lo mismo**:
+
+- `Ez dut ogia jaten` — No como **el** pan. Uno concreto.
+- `Ez dut ogirik jaten` — No como pan. Ninguno, nunca.
+
+Verificado en la [Euskararen Gramatika de Euskaltzaindia][eg] (15.5,
+partitiboa) y en la [guía de la EHU][ehu]: el partitivo es siempre
+indefinido; con el artículo, quien escucha entiende que hablas de algo
+determinado. Poner las dos con la misma traducción castellana, una detrás de
+otra, era confuso de verdad.
+
+[eg]: https://euskaltzaindia.eus/index.php?ItemId=1765&kodea=1505&lang=eu&option=com_liburuak&task=gramatika
+[ehu]: https://www.ehu.eus/documents/2660428/5068953/partitiboa.pdf
+
+Qué se ha hecho:
+
+- La ficha de la negación usa ahora un objeto **de verdad concreto**
+  (`liburua`, «no leo el libro»), así no compite con la del partitivo, y
+  cierra anunciando el cambio que viene.
+- La del partitivo pone las dos frases **una al lado de la otra** con su
+  diferencia explicada. Antes decía que el partitivo «es opcional y nadie te
+  va a corregir», que se saltaba justo esto; ahora dice que sin él la frase se
+  entiende como algo concreto.
+- El mismo fallo estaba **propagado a los ejercicios**: `u7-g32` v0 pedía «No
+  como pan» y daba por buena `Ez dut ogia jaten`. Igual en `u8-g09` v0 y v1.
+  Pasados a partitivo. La v3 se queda con artículo a propósito, para que se
+  vea el contraste, y lo que se ajusta es el castellano («no compro **la**
+  carne»).
+
+### El 7.5: vocabulario presentado, y la ropa a su unidad (27/08/2026)
+
+Ric: quitar `lursagarra` («nadie que conozco ha oído eso») y **presentar el
+vocabulario**, porque el tema es casi todo palabras nuevas y no se
+introducían.
+
+Ficha nueva, **«La despensa entera, por grupos»**: cinco bloques —las tres
+comidas, para beber, en el plato, de la huerta, fruta— en vez de una lista
+plana, que ya la da la pantalla de vocabulario. Cada bloque con algo de lo que
+agarrarse; el mejor, el `-ardo`:
+
+    sagar (manzana) + ardo  → sagardoa, la sidra
+    garagar (cebada) + ardo → garagardoa, la cerveza
+
+Añadida `arana`, **la ciruela** (verificada en el [OEH][oeh]; también se oye
+`okaran`). Y de aquí salió un malentendido que merece quedar escrito: Ric
+escribió «añade Arana a las frutas» y yo entendí **Sabino Arana**, a cuento de
+que `garagardoa` la acuñó él en 1896. Llegué a escribirlo en la ficha. Era la
+ciruela.
+
+[oeh]: https://www.euskaltzaindia.eus/index.php?Itemid=&id=124884&lang=es&option=com_oehberria&task=sarreraIkusi
+
+**La ropa estaba en el tema de comer.** «Jan eta edan» tenía 12 palabras de
+ropa catalogadas, dos ejercicios enteros de ropa y cuatro preguntas de ropa
+en el test de la unidad — mientras el 9.5, «Arropa eta opariak», tenía tres
+fichas de gramática sobre ropa y **3 palabras**. Movido todo al 9.5:
+12 palabras, `u8.1-g03` y `u8.1-g04` enteros, y reescritas las variantes
+mezcladas de `u7-g25`, `u7-g26`, `u7-g23` y las tres del test. El 7.5 queda
+con 28 palabras de comida y el 9.5 con 15 de ropa.
+
+### El generador de audio no ve el curso que se publica (27/08/2026)
+
+Salió tirando del hilo anterior, y es lo más importante del día para Miguel.
+
+`scripts/generar-audio/generar.mjs` lee **`data/unidades/`**, que son los
+ficheros **v1**. El curso que se publica es **`data/unidades-v2/`**.
+
+Mientras el vocabulario de v2 venía heredado de v1 daba igual. Pero **todo lo
+que hemos añadido directamente en v2 no existe en v1**, así que el generador
+no lo ve y nunca le hará audio. Son **54 palabras**, y no son de relleno: los
+ordinales enteros, `eduki` con sus formas, los verbos de la rutina del 7.3,
+el `ari naiz` del 7.4, los de poder y deber del 8.3.
+
+Listadas una a una en `docs/audios-pendientes.md`, apartado C, con las dos
+salidas posibles. Decide Miguel.
+
+De paso: casi piso la cifra de 194 audios pendientes por 181, y **no cuentan
+lo mismo** —la de 194 va sobre los ficheros v1 e incluye frases de ejemplo,
+la mía solo vocabulario de v2—. Restaurada.
+
+### Ampliada la diferencia «hoy» / «nunca» (27/08/2026)
+
+Ric pidió dejar más claro «cuando no comes pan hoy y cuando no comes pan
+nunca». La ficha del partitivo lo explica ahora con dos escenas:
+
+- **Sentado a la mesa, con el pan delante** → `Ez dut ogia jaten`. Hay un pan
+  concreto que los dos miráis.
+- **Te preguntan qué comes y qué no, sin pan a la vista** → `Ez dut ogirik
+  jaten`. Hablas del pan en general.
+
+Con una advertencia que va a contracorriente de la intuición y que conviene
+mantener: **esto no va de tiempo**. Lo que decide es si hay un pan concreto de
+por medio. Se ve añadiendo el adverbio, porque el partitivo no se mueve:
+
+    Gaur ez dut ogirik jaten.   — Hoy no como pan.
+    Inoiz ez dut ogirik jaten.  — Nunca como pan.
+
+`gaur`, `inoiz ez` y `beti` son todos del 3.1, así que se pueden usar sin
+adelantar nada.
+
+Al cambiar los ejemplos me llevé por delante `Ez dut ezer nahi`, que era el
+único sitio donde se explicaba `ezer` — y hay tres ejercicios del 7.2 que
+preguntan por él. Repuesto, con una línea que lo ata al partitivo.
+
+**Nota sobre los duplicados de vocabulario**: `bihar` (3.1 y 10.3) y `nahi dut`
+(7.1 y 8.3) están catalogados dos veces, a propósito («ya la tenías; aquí se
+usa con el futuro»). Comprobado que **no molestan**: `fondoVocabulario()`
+deduplica por palabra antes de armar el repaso, y se queda con la primera, que
+es la que lleva audio.
+
+### La ficha del plural estaba en el tema de negar (27/08/2026)
+
+También de Ric: *«la ficha siguiente es sobre el plural, ¿no crees que
+deberíamos tenerla en el 7.1?»*.
+
+Sí, y hay un dato que lo decide: **los ejercicios de objeto plural (`u8-g07`)
+ya estaban en el 7.1**. Era la ficha la que estaba fuera de sitio — el mismo
+desajuste explicación/ejercicio que el de la negación, pero al revés.
+
+Movida al 7.1, entre «Cómo se forma el -t(z)en» y «Cuando no hay objeto»: de
+más objeto a menos. Su último ejemplo era negativo (`Ez ditut haragia eta
+arraina jaten`) y ahí aún no toca, así que se cambia por uno afirmativo.
+
+No hace falta renombrar el 7.2: su resumen ya decía «el salto del auxiliar y
+el partitivo», sin mencionar el plural.
+
+### Referencias a unidades que quedaron caducadas (27/08/2026)
+
+Tirando del hilo anterior apareció otra cosa. Varias fichas se remiten unas a
+otras («ya de la sexta unidad»), y **la reordenación a diez unidades dejó ocho
+apuntando a la unidad equivocada**:
+
+- 6.1 los números → decía 5ª, están en la **4**
+- 7.1 el `ukan` → decía 5ª, está en la **4**
+- 7.1 `egon` → decía 6ª, está en la **5**
+- 7.1 `joan`/`etorri` → decía 9ª, están en la **8**
+- 10.1 el presente de `izan` → decía 4ª, está en la **2**
+- 10.1 el `-it-` y el mecanismo de dos piezas → decían 8ª, están en la **7**
+- 7.1 el `-tik` → decía «llega en la unidad 9», y en realidad **ya se ha visto
+  en la 5**: el número estaba mal y la dirección también
+
+Había una comprobación para esto que **nunca llegó a funcionar**: el patrón era
+`unidades?`, que exige la «e» y solo casa con el plural «unidad**es** 6 y 8»,
+nunca con «unidad 9». Corregido a `unidad(?:es)?`. Además ahora mira los
+ejemplos (donde estaba escondido el del `-tik`) y entiende los ordinales en
+letra, que era la forma más común y la que se escapaba entera.
+
+Las referencias hacia adelante son **avisos, no errores**: anunciar lo que
+viene está bien hecho y el curso lo hace cuatro veces a propósito. Saber si el
+número acierta exige saber dónde se enseña cada cosa, así que eso se repasa a
+ojo; el aviso solo lo pone delante.
+
+De paso, `verificar.py` acepta `--filtro texto`, porque con 249 avisos la lista
+se cortaba a 40 y no había manera de mirar una familia concreta.
+
+### 6.5 — la burbuja de Bizkaia (27/08/2026)
+
+Ric: *«no se entiende bien el inicio de la frase»*. Decía «el 20 de enero,
+San Sebastián, en Bilbao no es gran cosa». Quería decir **el día** de San
+Sebastián (la Tamborrada donostiarra); se lee como que **la ciudad** no es gran
+cosa en Bilbao. Quitado.
+
+En su lugar, y a propuesta suya, la **feria de Gernika**: el `Urriko Azken
+Astelehena`. El nombre entero se arma con vocabulario ya dado — `azkena` (4.3),
+`astelehena` (6.2), `urria` (6.3), `-ko` (2.4) — comprobado uno por uno antes
+de escribirlo. De regalo sale una nota de gramática real: `azken` delante del
+nombre pierde la `-a` y el artículo se lo queda la palabra siguiente.
+
+No he usado `azoka` (feria), que es de 8.4.
+
+Corregido de paso un error de dato: la Aste Nagusia **no es «el 15 de agosto»**,
+empieza el sábado siguiente y dura nueve días.
+
+### Las rutas absolutas de mis bancos de pruebas (27/08/2026)
+
+Miguel, al fusionar: *«Rutas absolutas de los tres scripts de test nuevos
+corregidas a relativas, **igual que la vez pasada**»*.
+
+Es un error mío y **es la segunda vez que se lo arregla él**. Los bancos de
+pruebas usaban `process.env.HOME + '/Proyectos/euskaraz/...'`, que funciona en
+el portátil de quien lo escribió y falla en el del otro. Lo correcto es
+`path.join(__dirname, '..')`, que es como los ha dejado.
+
+Para que no haya una tercera, **`probar-todo.sh` lo comprueba ahora**: si algún
+`scripts/probar_*.js` contiene `process.env.HOME`, falla y dice qué usar en su
+lugar. Probado metiendo uno a propósito.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

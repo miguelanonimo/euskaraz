@@ -8,26 +8,31 @@
   "subniveles": [
     {
       "id": "9.1",
+      "titulo_eu": "Gustatzen zait",
       "titulo": "Me gusta",
       "resumen": "Zait y zaizkit: singular y plural."
     },
     {
       "id": "9.2",
+      "titulo_eu": "Niri, zuri, hari",
       "titulo": "A quién le gusta",
       "resumen": "El dativo, y los verbos que funcionan igual."
     },
     {
       "id": "9.3",
+      "titulo_eu": "Gorputza",
       "titulo": "El cuerpo",
       "resumen": "Aprovechando los gustos, que es donde se ve mejor."
     },
     {
       "id": "9.4",
+      "titulo_eu": "Kirola eta musika",
       "titulo": "Ocio y medios",
       "resumen": "Deporte, música, cine, periódicos y televisión."
     },
     {
       "id": "9.5",
+      "titulo_eu": "Arropa eta opariak",
       "titulo": "De compras",
       "resumen": "La ropa, los regalos y para quién son."
     }
@@ -257,6 +262,97 @@
       "nota": "Sale en la regla del -t(z)en: saldu → saltzen.",
       "audio": "unidades/u8/saldu.mp3",
       "categoria": "verbo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "oparia",
+      "es": "el regalo",
+      "nota": "De «oparitu», regalar. Se usa en los ejercicios de este tema.",
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "arropa",
+      "es": "la ropa",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "alkandora",
+      "es": "la camisa",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "prakak",
+      "es": "los pantalones",
+      "nota": "Se usa en plural.",
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "zapatak",
+      "es": "los zapatos",
+      "nota": "Se usa en plural.",
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "jertsea",
+      "es": "el jersey",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "jaka",
+      "es": "la chaqueta",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "gona",
+      "es": "la falda",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "soinekoa",
+      "es": "el vestido",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "txapela",
+      "es": "la boina",
+      "nota": "De aquí salen «txapelduna» y «txapelketa». Ver la ficha.",
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "betaurrekoak",
+      "es": "las gafas",
+      "nota": "Se usa en plural.",
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "txapelduna",
+      "es": "el campeón / la campeona",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "txapelketa",
+      "es": "el campeonato",
+      "nota": null,
+      "categoria": "sustantivo",
       "subnivel": "9.5"
     },
     {
@@ -589,6 +685,13 @@
       "eu": "bihotza",
       "es": "el corazón",
       "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "gorputza",
+      "es": "el cuerpo",
+      "nota": "Da nombre a este tema. Todo lo que viene ahora son sus partes.",
       "categoria": "sustantivo",
       "subnivel": "9.3"
     }
@@ -2055,6 +2158,77 @@
       "subnivel": "9.3"
     },
     {
+      "id": "u10.1-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Me gustan tus ojos» se dice…",
+          "opciones": [
+            "Zure begiak gustatzen zait.",
+            "Zure begiak gustatzen zaizkit.",
+            "Zure begia gustatzen zaizkit.",
+            "Zure begiak gustatzen naiz."
+          ],
+          "correcta": 1,
+          "explicacion": "Son varios, así que toca «zaizkit»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Me gusta tu pelo» se dice…",
+          "opciones": [
+            "Zure ilea gustatzen zaizkit.",
+            "Zure ilea gustatzen zait.",
+            "Zure ileak gustatzen zait.",
+            "Zure ilea gustatzen naiz."
+          ],
+          "correcta": 1,
+          "explicacion": "Una sola cosa: «zait»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «bihotza»?",
+          "opciones": [
+            "la cabeza",
+            "el corazón",
+            "el brazo",
+            "la mano"
+          ],
+          "correcta": 1,
+          "explicacion": "Bihotza es el corazón."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «belarriak»?",
+          "opciones": [
+            "los ojos",
+            "las orejas",
+            "las manos",
+            "los pies"
+          ],
+          "correcta": 1,
+          "explicacion": "Belarriak son las orejas. Ojo con «belarra», la hierba."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «hanka»?",
+          "opciones": [
+            "el brazo",
+            "la pierna",
+            "el pie",
+            "la mano"
+          ],
+          "correcta": 1,
+          "explicacion": "Hanka es la pierna. «Oina» es el pie."
+        }
+      ],
+      "subnivel": "9.3"
+    },
+    {
       "id": "u9-g18",
       "subnivel": "9.4",
       "variantes": [
@@ -3165,6 +3339,193 @@
           ]
         }
       ]
+    },
+    {
+      "id": "u8.1-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ropa",
+          "pares": [
+            {
+              "eu": "alkandora",
+              "es": "la camisa"
+            },
+            {
+              "eu": "prakak",
+              "es": "los pantalones"
+            },
+            {
+              "eu": "zapatak",
+              "es": "los zapatos"
+            },
+            {
+              "eu": "jertsea",
+              "es": "el jersey"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ropa",
+          "pares": [
+            {
+              "eu": "jaka",
+              "es": "la chaqueta"
+            },
+            {
+              "eu": "gona",
+              "es": "la falda"
+            },
+            {
+              "eu": "soinekoa",
+              "es": "el vestido"
+            },
+            {
+              "eu": "txapela",
+              "es": "la boina"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ropa",
+          "pares": [
+            {
+              "eu": "arropa",
+              "es": "la ropa"
+            },
+            {
+              "eu": "betaurrekoak",
+              "es": "las gafas"
+            },
+            {
+              "eu": "zapatak",
+              "es": "los zapatos"
+            },
+            {
+              "eu": "jaka",
+              "es": "la chaqueta"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la txapela y su familia",
+          "pares": [
+            {
+              "eu": "txapela",
+              "es": "la boina"
+            },
+            {
+              "eu": "txapelduna",
+              "es": "el campeón"
+            },
+            {
+              "eu": "txapelketa",
+              "es": "el campeonato"
+            },
+            {
+              "eu": "arropa",
+              "es": "la ropa"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ropa",
+          "pares": [
+            {
+              "eu": "gona",
+              "es": "la falda"
+            },
+            {
+              "eu": "alkandora",
+              "es": "la camisa"
+            },
+            {
+              "eu": "soinekoa",
+              "es": "el vestido"
+            },
+            {
+              "eu": "jertsea",
+              "es": "el jersey"
+            }
+          ]
+        }
+      ],
+      "subnivel": "9.5"
+    },
+    {
+      "id": "u8.1-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txapelduna»?",
+          "opciones": [
+            "el que vende boinas",
+            "el campeón",
+            "el jugador",
+            "el árbitro"
+          ],
+          "correcta": 1,
+          "explicacion": "«El que tiene txapela»: al ganador se le entrega una."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txapelketa»?",
+          "opciones": [
+            "la boina",
+            "el campeonato",
+            "el equipo",
+            "el premio"
+          ],
+          "correcta": 1,
+          "explicacion": "El campeonato, la competición donde se gana la txapela."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿De qué palabra salen «txapelduna» y «txapelketa»?",
+          "opciones": [
+            "txapela (la boina)",
+            "txapa (la chapa)",
+            "txalo (el aplauso)",
+            "txartela (la tarjeta)"
+          ],
+          "correcta": 0,
+          "explicacion": "De la boina que se le pone al ganador."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas va siempre en plural?",
+          "opciones": [
+            "alkandora",
+            "gona",
+            "prakak",
+            "jaka"
+          ],
+          "correcta": 2,
+          "explicacion": "«Prakak», los pantalones. También «zapatak» y «betaurrekoak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Betaurrekoak» se construye a partir de…",
+          "opciones": [
+            "begi (ojo) + aurre (delante)",
+            "bete (llenar) + urre (oro)",
+            "beti (siempre) + arreta (atención)",
+            "beso (brazo) + aurre (delante)"
+          ],
+          "correcta": 0,
+          "explicacion": "«Los de delante de los ojos»."
+        }
+      ],
+      "subnivel": "9.5"
     }
   ]
 }
