@@ -8,26 +8,31 @@
   "subniveles": [
     {
       "id": "7.1",
+      "titulo_eu": "Zer egiten duzu?",
       "titulo": "El presente habitual",
       "resumen": "El mecanismo de dos piezas: -t(z)en + dut."
     },
     {
       "id": "7.2",
+      "titulo_eu": "Ez",
       "titulo": "Negar",
       "resumen": "El salto del auxiliar y el partitivo -(r)ik."
     },
     {
       "id": "7.3",
+      "titulo_eu": "Goizetik gauera",
       "titulo": "La rutina diaria",
       "resumen": "Levantarse, ducharse, las tareas de casa."
     },
     {
       "id": "7.4",
+      "titulo_eu": "Ari naiz",
       "titulo": "«Estoy haciéndolo»",
       "resumen": "Ari naiz: ahora mismo frente a normalmente."
     },
     {
       "id": "7.5",
+      "titulo_eu": "Jan eta edan",
       "titulo": "Comer y beber",
       "resumen": "La comida, la bebida y las tres comidas del día."
     }
@@ -2153,17 +2158,18 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "He comprado una camisa blanca.",
-          "eu": "Alkandora zuria erosi dut.",
+          "es": "No bebo vino.",
+          "eu": "Ez dut ardorik edaten.",
           "palabras": [
-            "alkandora",
-            "zuria",
-            "erosi",
-            "dut"
+            "ez",
+            "dut",
+            "ardorik",
+            "edaten"
           ],
           "distractores": [
-            "txapela"
-          ]
+            "kafea"
+          ],
+          "pista": "En negativo, el objeto coge el -rik del partitivo."
         },
         {
           "tipo": "orden",

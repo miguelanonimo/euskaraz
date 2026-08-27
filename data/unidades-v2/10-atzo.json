@@ -8,31 +8,37 @@
   "subniveles": [
     {
       "id": "10.1",
+      "titulo_eu": "Atzo",
       "titulo": "El pasado",
       "resumen": "Izan y ukan en pasado: nintzen, nuen."
     },
     {
       "id": "10.2",
+      "titulo_eu": "Lehen eta orain",
       "titulo": "Cuándo pasó",
       "resumen": "Atzo, iaz, duela bi urte, txikitan."
     },
     {
       "id": "10.3",
+      "titulo_eu": "Bihar",
       "titulo": "El futuro",
       "resumen": "-ko / -go: planes y quedadas."
     },
     {
       "id": "10.4",
+      "titulo_eu": "Handiagoa, txikiagoa",
       "titulo": "Comparar",
       "resumen": "Baino, -ago, -ena: más, menos, el que más."
     },
     {
       "id": "10.5",
+      "titulo_eu": "Baina, beraz, gero",
       "titulo": "Redondear la frase",
       "resumen": "La partícula «al» y los conectores."
     },
     {
       "id": "10.6",
+      "titulo_eu": "Dena batera",
       "titulo": "Dena batera",
       "resumen": "Repaso general y el cuadro completo del A1."
     }
@@ -846,14 +852,6 @@
       "nota": null,
       "audio": "unidades/u12/hurrengoa.mp3",
       "categoria": "adjetivo",
-      "subnivel": "10.6"
-    },
-    {
-      "eu": "zorionak",
-      "es": "felicidades",
-      "nota": "Literalmente «suertes buenas».",
-      "audio": "unidades/u12/zorionak.mp3",
-      "categoria": "otros",
       "subnivel": "10.6"
     },
     {

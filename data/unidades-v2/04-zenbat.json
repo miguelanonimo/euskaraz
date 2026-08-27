@@ -8,31 +8,37 @@
   "subniveles": [
     {
       "id": "4.1",
+      "titulo_eu": "Bat, bi, hiru",
       "titulo": "Números del 1 al 20",
       "resumen": "Y por qué el euskera cuenta de veinte en veinte."
     },
     {
       "id": "4.2",
+      "titulo_eu": "Hogei, berrogei, ehun",
       "titulo": "Seguir contando",
       "resumen": "Berrogei, hirurogei, ehun: el resto de la escalera."
     },
     {
       "id": "4.3",
+      "titulo_eu": "Lehena, bigarrena",
       "titulo": "Ordinales",
       "resumen": "Lehena, bigarrena, hirugarrena…"
     },
     {
       "id": "4.4",
+      "titulo_eu": "Zenbat urte dituzu?",
       "titulo": "Tener, y decir tu edad",
       "resumen": "El verbo «ukan» y la -k del ergativo."
     },
     {
       "id": "4.5",
+      "titulo_eu": "Daukat eta dut",
       "titulo": "El otro tener: «eduki»",
       "resumen": "Daukat, dauka: cuándo se oye cada uno."
     },
     {
       "id": "4.6",
+      "titulo_eu": "Familia",
       "titulo": "La familia",
       "resumen": "Del padre al primo — y los hermanos, que cambian según quién los tiene."
     }
@@ -219,7 +225,7 @@
     },
     {
       "titulo": "«Iloba» es sobrino y nieto a la vez",
-      "cuerpo": "Aquí el euskera no distingue lo que el castellano separa. <b>Iloba</b> vale para el hijo de tu hermano <i>y</i> para el hijo de tu hijo.\n\nNo es que al idioma le falte algo: es que esa distinción no le hace falta casi nunca, porque el contexto la resuelve. Si estás hablando de tus hermanos, <b>iloba</b> es sobrino; si estás hablando de tus hijos, es nieto.\n\nY cuando sí hace falta precisar, existe la palabra:\n\n<b>biloba</b> — nieto, solo nieto\n\nEn Bizkaia oirás <b>loba</b>, sin la i- del principio. Significa exactamente lo mismo que <i>iloba</i>, con la misma doble lectura.",
+      "cuerpo": "Aquí el euskera no distingue lo que el castellano separa. <b>Iloba</b> vale para el hijo de tu hermano <i>y</i> para el hijo de tu hijo.\n\nNo es que al idioma le falte algo: es que esa distinción no le hace falta casi nunca, porque el contexto la resuelve. Si estás hablando de tus hermanos, <b>iloba</b> es sobrino; si estás hablando de tus hijos, es nieto.\n\nY cuando sí hace falta precisar, existe la palabra:\n\n<b>biloba</b> — nieto, solo nieto",
       "ejemplos": [
         {
           "eu": "iloba",
@@ -252,30 +258,6 @@
       "subnivel": "4.6"
     },
     {
-      "titulo": "Los abuelos tienen dos nombres en Bizkaia",
-      "cuerpo": "El batua dice <b>aitona</b> y <b>amona</b>, y con eso te entiendes en todas partes.\n\nPero en Bizkaia se oye otra cosa, y se oye mucho:\n\n<b>aitite</b> y <b>aitxitxe</b> — abuelo\n<b>amama</b> y <b>amuma</b> — abuela\n\nLas cuatro conviven. No son incorrectas ni «peor euskera»: son las formas de aquí, y en una conversación en Bilbao te van a salir antes que las normativas.",
-      "ejemplos": [
-        {
-          "eu": "aitona",
-          "es": "el abuelo (batua)"
-        },
-        {
-          "eu": "aitite",
-          "es": "el abuelo (bizkaiera)"
-        },
-        {
-          "eu": "amona",
-          "es": "la abuela (batua)"
-        },
-        {
-          "eu": "amama",
-          "es": "la abuela (bizkaiera)"
-        }
-      ],
-      "subnivel": "4.6",
-      "registro": "bizkaiera"
-    },
-    {
       "titulo": "Seguir contando: de veinte en veinte",
       "cuerpo": "Al empezar la unidad viste que el euskera cuenta en base veinte. Aquí está el resto de la escalera, y una vez ves el patrón ya no hay que memorizar nada:\n\n<b>hogei</b> (20) · <b>berrogei</b> (40) · <b>hirurogei</b> (60) · <b>laurogei</b> (80)\n\nSon «un veinte, dos veintes, tres veintes, cuatro veintes». Y las decenas intermedias son ese número más diez:\n\n<b>hogeita hamar</b> (30) — veinte y diez\n<b>berrogeita hamar</b> (50) — cuarenta y diez\n<b>hirurogeita hamar</b> (70) · <b>laurogeita hamar</b> (90)\n\nAhora lo importante: <b>desmontar uno de verdad</b>, despacio, porque es lo único que hace falta entender.\n\n<b>71 · hirurogeita hamaika</b>\n<i>hirurogei</i> (tres veintes = 60) + <i>ta</i> (y) + <i>hamaika</i> (11) → 60 + 11 = <b>71</b>\n\n<b>54 · berrogeita hamalau</b>\n<i>berrogei</i> (dos veintes = 40) + <i>ta</i> (y) + <i>hamalau</i> (14) → 40 + 14 = <b>54</b>\n\nFíjate en que el segundo trozo <b>nunca pasa de 19</b>. Por eso necesitabas el once al diecinueve antes de llegar aquí: son las piezas que rellenan el hueco entre veintena y veintena.\n\nY ese <b>-ta</b> es simplemente <i>eta</i> (y) pegada y acortada. «Sesenta y once». No hay más truco.\n\n<b>El francés hace lo mismo, a medias.</b> Dice <i>soixante-dix</i> (sesenta-diez) para 70 y <i>quatre-vingts</i> (cuatro veintes) para 80. Pero solo a partir de 60: hasta ahí cuenta de diez en diez como nosotros. El euskera lo lleva desde el principio y hasta el final. Nadie sabe con seguridad si el francés lo tomó de aquí, de otra lengua anterior al latín, o si salió por su cuenta — pero la coincidencia geográfica es difícil de ignorar.\n\nPara salir de la escalera: <b>ehun</b> (100) y <b>mila</b> (1000).",
       "ejemplos": [
@@ -296,11 +278,19 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Además de los abuelos y de <i>loba</i>, hay un detalle de esta misma unidad que vuelve aquí: en bizkaiera, <b>ditut</b> (tengo varias cosas) suena <b>dodaz</b>, y <b>dut</b> suena <b>dot</b>.\n\nAsí que «tengo dos primos» puede llegarte de dos maneras:\n\n<b>Bi lehengusu ditut.</b> — batua\n<b>Bi lehengusu dodaz.</b> — bizkaiera\n\nComo siempre: esto es para reconocerlo de oído, no para que lo produzcas tú.",
+      "cuerpo": "La familia es de los sitios donde más se nota el habla de aquí. Cuatro cosas, y las cuatro las vas a oír en Bilbao antes que las normativas.\n\n<b>Los abuelos, con dos nombres</b>\nEl batua dice <b>aitona</b> y <b>amona</b>, y con eso te entiendes en todas partes. Pero aquí se oye:\n\n<b>aitite</b> · <b>aitxitxe</b> — abuelo\n<b>amama</b> · <b>amuma</b> — abuela\n\n<b>La tía</b>\nDonde el batua dice <b>izeba</b>, en Bizkaia se dice <b>izeko</b>. El tío, en cambio, es <i>osaba</i> en los dos sitios.\n\n<b>El sobrino y el nieto, sin la i-</b>\nEl <i>iloba</i> del batua aquí es <b>loba</b>, y en plural <b>lobak</b>. Significa exactamente lo mismo, con la misma doble lectura de sobrino y nieto.\n\n<b>Y el verbo, otra vez</b>\nUn detalle de esta misma unidad que vuelve aquí: <b>dut</b> suena <b>dot</b>, y <b>ditut</b> (tengo varias cosas) suena <b>dodaz</b>.\n\n<b>Bi lehengusu ditut.</b> — batua\n<b>Bi lehengusu dodaz.</b> — bizkaiera\n\nComo siempre: esto es para reconocerlo de oído, no para que lo produzcas tú.",
       "ejemplos": [
         {
-          "eu": "Bi lehengusu ditut.",
-          "es": "Tengo dos primos."
+          "eu": "Nire aitite eta nire amama.",
+          "es": "Mi abuelo y mi abuela. — en batua, «aitona» y «amona»."
+        },
+        {
+          "eu": "Izeko bat daukat.",
+          "es": "Tengo una tía. — en batua, «izeba»."
+        },
+        {
+          "eu": "Bi loba dodaz.",
+          "es": "Tengo dos sobrinos. — en batua, «bi iloba ditut»."
         }
       ],
       "subnivel": "4.6",
@@ -710,7 +700,15 @@
       "es": "la tía",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "4.6"
+      "subnivel": "4.6",
+      "registro": "batua",
+      "variantes": [
+        {
+          "eu": "izeko",
+          "registro": "bizkaiera",
+          "nota": "La tía en Bizkaia. El tío es «osaba» en las dos variedades."
+        }
+      ]
     },
     {
       "eu": "lehengusua",
@@ -736,7 +734,7 @@
         {
           "eu": "loba",
           "registro": "bizkaiera",
-          "nota": "En Bizkaia, y también para sobrino y nieto indistintamente."
+          "nota": "Sin la i- del principio. En plural, «lobak». Misma doble lectura: sobrino y nieto."
         }
       ],
       "subnivel": "4.6"
@@ -759,6 +757,13 @@
       "eu": "neska-laguna",
       "es": "la novia",
       "nota": "También «amiga» acentuando que es chica. Ver la ficha.",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "familia",
+      "es": "la familia",
+      "nota": "Se dice igual que en castellano. Da nombre a media unidad: «Zenbat eta familia».",
       "categoria": "sustantivo",
       "subnivel": "4.6"
     },
@@ -2235,16 +2240,19 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Las vacas están en el monte.",
-          "eu": "Behiak mendian daude.",
+          "es": "Mi hermana tiene veinte años.",
+          "eu": "Nire arrebak hogei urte ditu.",
           "palabras": [
-            "behiak",
-            "mendian",
-            "daude"
+            "nire",
+            "arrebak",
+            "hogei",
+            "urte",
+            "ditu"
           ],
           "distractores": [
-            "dirua"
-          ]
+            "osaba"
+          ],
+          "pista": "Quien tiene lleva la -k, y la edad va sin artículo detrás del número."
         },
         {
           "tipo": "orden",

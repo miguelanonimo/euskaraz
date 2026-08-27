@@ -1706,6 +1706,112 @@ se comparó concepto a concepto**, no a ojo:
 clase, comparando las fichas de cada tema por las palabras con peso que
 comparten: **ninguno más**.
 
+### Tanda del 27/08: siete cosas de Ric, y dos errores míos del mismo tipo
+
+#### El mismo fallo dos veces: comparar con el castellano pensando en inglés
+
+**Los meses.** La ficha decía *«A diferencia del castellano, en euskera los
+meses se escriben en minúscula»*. **Falso**: en castellano también van en
+minúscula. La lengua que los escribe con mayúscula es el inglés. Corregido a
+«igual que en castellano», con la aclaración de quién es el raro.
+
+**Urtebetetzea.** Decía *«No es "el día de tu nacimiento" como en
+castellano»*. También falso: **«cumpleaños» es literalmente cumplir años**,
+exactamente la misma idea que *urte + bete*. El que dice «el día del
+nacimiento» es el inglés, con *birthday*. Reescrita para señalar que las dos
+lenguas cuentan lo mismo.
+
+Los dos los detectó Ric, y son el mismo descuido: tenía la norma inglesa en la
+cabeza y la atribuí al castellano.
+
+#### Zorionak, donde toca
+
+Estaba en la burbuja de bizkaiera de 6.3, **y es batua**. Subido a la ficha de
+cumpleaños, con la precisión de Ric: `Zorionak` es «felicidades» a secas —vale
+para un premio o una boda, no solo para los años— y `Zorionak zuri` es
+«felicidades a ti». La burbuja se queda con `zenbatean?`, que sí es de aquí.
+
+De paso, `zorionak` estaba catalogada en 10.6 y se usa en dos ejercicios de la
+unidad 6: **movida a 6.3**, donde se usa primero.
+
+#### Olentzero: primero la fiesta, después el personaje
+
+Ric aportó el dato que faltaba: *Olentzero* era el nombre con el que se
+llamaba, en zonas de Navarra y Gipuzkoa, a la **Vigilia de Navidad y a la
+celebración del solsticio de invierno**. Con los siglos la fiesta tomó forma
+humana y nació la leyenda del carbonero.
+
+La ficha lo mencionaba de refilón («el nombre designaba primero el día») y así
+no se entendía. Reescrita con ese orden, y enlazada con lo que ya sabe el
+alumno: `Gabonak` son las Navidades y `gabon` es «buenas noches» — todo gira
+alrededor de la noche más larga.
+
+#### La familia: una sola burbuja, y `izeko`
+
+Había **dos fichas de dialecto** en 4.6 más una mención suelta a `loba` dentro
+de la ficha de `iloba`. Juntadas en una: los abuelos (aitite/aitxitxe,
+amama/amuma), `izeko`, `loba`/`lobak` y el `dot`/`dodaz` del verbo.
+
+**`izeko` verificado**: es el «tía» de Bizkaia frente al `izeba` del batua,
+recogido en el diccionario de Labayru y en el OEH. El tío es `osaba` en las
+dos. Añadida como variante en el vocabulario.
+
+#### Palabras que dan nombre a algo y no se enseñaban
+
+Ric lo vio con **`egutegia`**: es el título de la unidad 6 y no estaba en
+ninguna parte, ni en el diccionario. Barrido:
+
+- **`egutegia`** (u6), **`familia`** (u4) y **`mugitu`** (u8, cuyo imperativo
+  es el título «Mugi zaitez!») — añadidas, con una nota que las conecta con el
+  título de su unidad.
+- `galderak` **no** hacía falta: es el plural de `galdera`, que sí se enseña.
+- Y el mismo barrido sobre los temas sacó dos más: **`gorputza`**, que da
+  nombre al tema 9.3 y no estaba, y **`oparia`**, que se pregunta en un
+  ejercicio de 9.5 sin estar tampoco.
+
+#### Los títulos de tema, en euskera
+
+Los 48 llevan ahora `titulo_eu`, y se pintan en euskera con el castellano
+debajo en pequeño — en las tarjetas y en la portada del tema.
+
+**Regla que me impuse al escribirlos: solo palabras o frases que el curso ya
+enseña.** Por eso varios son listas de tres palabras («Nor, zer, noiz») en vez
+de títulos elegantes, y por eso se descartaron `izenordainak` (pronombres) y
+`ahoskera` (pronunciación): son términos gramaticales que no aparecen en
+ninguna parte del curso. Quedaron «Ni, zu, hura» y «Euskalkiak».
+
+En la barra superior se sigue viendo el castellano: ahí solo cabe una línea, y
+es la etiqueta con la que navegas.
+
+**No los ha revisado un nativo.** Son míos.
+
+#### «Me gustan tus ojos» en el test de la unidad 6
+
+Lo encontró Ric haciendo el test. Era `u10.1-g02`, un grupo entero sobre
+`gustatzen zaizkit` con partes del cuerpo —las dos cosas de la unidad 9—
+que se quedó en la unidad 6 al reestructurar. **Movido a 9.3.** Y una variante
+suelta igual en 6.4, reescrita como «En verano hace calor».
+
+*Detalle:* la primera versión de ese reemplazo fue «hace viento», y se cambió
+porque **no encaja en el patrón `egiten du`** que enseña la ficha: para el
+viento el euskera dice más `haizea dabil`. Se usó el paralelo exacto de
+`hotz egiten du`.
+
+**Barrido de todos los tests** buscando lo mismo. Salieron tres más, los tres
+arreglados con vocabulario de su propia unidad:
+
+- u4 preguntaba «Las vacas están en el monte» (`behia` 5.5, `mendia` 8.1,
+  `daude` 5.1)
+- u5 preguntaba «La calle es vieja» (`kalea` 8.4)
+- u7 preguntaba «He comprado una camisa blanca» — el fallo no era la camisa,
+  que sí es de 7.5, sino **`erosi`**, de 9.5
+
+Los dos que siguen saltando son **falsos positivos** y conviene tenerlo
+anotado: el test de la unidad 2 usa «Nola duzu izena?» y «Nor zara zu?», que
+sus propias fichas enseñan como frases hechas; y «Zukua edan nahi dut» aparece
+como ejemplo de una ficha de la unidad 9 que **reutiliza** una frase de la 7,
+así que el detector la registró allí.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado

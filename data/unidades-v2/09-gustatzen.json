@@ -8,26 +8,31 @@
   "subniveles": [
     {
       "id": "9.1",
+      "titulo_eu": "Gustatzen zait",
       "titulo": "Me gusta",
       "resumen": "Zait y zaizkit: singular y plural."
     },
     {
       "id": "9.2",
+      "titulo_eu": "Niri, zuri, hari",
       "titulo": "A quién le gusta",
       "resumen": "El dativo, y los verbos que funcionan igual."
     },
     {
       "id": "9.3",
+      "titulo_eu": "Gorputza",
       "titulo": "El cuerpo",
       "resumen": "Aprovechando los gustos, que es donde se ve mejor."
     },
     {
       "id": "9.4",
+      "titulo_eu": "Kirola eta musika",
       "titulo": "Ocio y medios",
       "resumen": "Deporte, música, cine, periódicos y televisión."
     },
     {
       "id": "9.5",
+      "titulo_eu": "Arropa eta opariak",
       "titulo": "De compras",
       "resumen": "La ropa, los regalos y para quién son."
     }
@@ -257,6 +262,13 @@
       "nota": "Sale en la regla del -t(z)en: saldu → saltzen.",
       "audio": "unidades/u8/saldu.mp3",
       "categoria": "verbo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "oparia",
+      "es": "el regalo",
+      "nota": "De «oparitu», regalar. Se usa en los ejercicios de este tema.",
+      "categoria": "sustantivo",
       "subnivel": "9.5"
     },
     {
@@ -589,6 +601,13 @@
       "eu": "bihotza",
       "es": "el corazón",
       "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "gorputza",
+      "es": "el cuerpo",
+      "nota": "Da nombre a este tema. Todo lo que viene ahora son sus partes.",
       "categoria": "sustantivo",
       "subnivel": "9.3"
     }
@@ -2050,6 +2069,77 @@
               "es": "los ojos"
             }
           ]
+        }
+      ],
+      "subnivel": "9.3"
+    },
+    {
+      "id": "u10.1-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Me gustan tus ojos» se dice…",
+          "opciones": [
+            "Zure begiak gustatzen zait.",
+            "Zure begiak gustatzen zaizkit.",
+            "Zure begia gustatzen zaizkit.",
+            "Zure begiak gustatzen naiz."
+          ],
+          "correcta": 1,
+          "explicacion": "Son varios, así que toca «zaizkit»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Me gusta tu pelo» se dice…",
+          "opciones": [
+            "Zure ilea gustatzen zaizkit.",
+            "Zure ilea gustatzen zait.",
+            "Zure ileak gustatzen zait.",
+            "Zure ilea gustatzen naiz."
+          ],
+          "correcta": 1,
+          "explicacion": "Una sola cosa: «zait»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «bihotza»?",
+          "opciones": [
+            "la cabeza",
+            "el corazón",
+            "el brazo",
+            "la mano"
+          ],
+          "correcta": 1,
+          "explicacion": "Bihotza es el corazón."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «belarriak»?",
+          "opciones": [
+            "los ojos",
+            "las orejas",
+            "las manos",
+            "los pies"
+          ],
+          "correcta": 1,
+          "explicacion": "Belarriak son las orejas. Ojo con «belarra», la hierba."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «hanka»?",
+          "opciones": [
+            "el brazo",
+            "la pierna",
+            "el pie",
+            "la mano"
+          ],
+          "correcta": 1,
+          "explicacion": "Hanka es la pierna. «Oina» es el pie."
         }
       ],
       "subnivel": "9.3"

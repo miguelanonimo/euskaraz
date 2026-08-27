@@ -8,21 +8,25 @@
   "subniveles": [
     {
       "id": "2.1",
+      "titulo_eu": "Ni, zu, hura",
       "titulo": "Los pronombres",
       "resumen": "Seis personas y ninguna con género."
     },
     {
       "id": "2.2",
+      "titulo_eu": "Nire, zure, gure",
       "titulo": "Los posesivos",
       "resumen": "Nire, zure, gure… de quién es cada cosa."
     },
     {
       "id": "2.3",
+      "titulo_eu": "«Izan»",
       "titulo": "El verbo «izan»",
       "resumen": "Ser, el verbo al final, y el artículo -a."
     },
     {
       "id": "2.4",
+      "titulo_eu": "Nor zara zu?",
       "titulo": "Presentarse",
       "resumen": "Nombre, origen y profesión."
     }

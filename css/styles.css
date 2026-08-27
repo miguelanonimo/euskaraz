@@ -1433,6 +1433,18 @@ body.silencioso .pair__play{ display: none; }
   line-height: 1.25;
 }
 
+/* La traducción del título del tema, debajo del euskera. Más pequeña y en
+   gris: el título es el de arriba, esto es la muleta para saber de qué va. */
+.subcard__title-es{
+  display: block;
+  font-size: var(--t-xs);
+  font-weight: 500;
+  color: var(--tinta-45);
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 1px;
+}
+
 .subcard__sub{
   display: block;
   margin-top: 2px;

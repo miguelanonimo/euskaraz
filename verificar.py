@@ -124,6 +124,11 @@ if nums != sorted(nums):
     avisos.append("las unidades no están en orden numérico: %s" % nums)
 
 for ruta, u in unidades:
+    # Cada tema lleva su título en euskera además del castellano (`titulo_eu`).
+    for s_ in u.get("subniveles") or []:
+        if not s_.get("titulo_eu"):
+            errores.append(u"%s: el tema %s no tiene título en euskera" % (ruta, s_.get("id")))
+
     for k in ("id","numero","titulo","subtitulo","objetivo","color","vocabulario","gramatica","ejercicios"):
         if k not in u: errores.append("%s: falta la clave %s" % (ruta, k))
     vistos = set()

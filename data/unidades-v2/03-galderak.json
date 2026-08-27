@@ -8,21 +8,25 @@
   "subniveles": [
     {
       "id": "3.1",
+      "titulo_eu": "Nor, zer, noiz",
       "titulo": "Las interrogativas",
       "resumen": "Nor, zer, non, noiz… casi todas con n- o z-."
     },
     {
       "id": "3.2",
+      "titulo_eu": "Non, nora, nondik",
       "titulo": "La familia de «non»",
       "resumen": "Nora, nondik, nongoa: un anticipo del sistema."
     },
     {
       "id": "3.3",
+      "titulo_eu": "Hau, hori, hura",
       "titulo": "Demostrativos",
       "resumen": "Hau, hori, hura y sus plurales."
     },
     {
       "id": "3.4",
+      "titulo_eu": "Ez dakit!",
       "titulo": "Exclamativas y apuros",
       "resumen": "«Hau hotza!» y las frases que salvan cualquier situación."
     }

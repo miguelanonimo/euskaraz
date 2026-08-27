@@ -8,21 +8,25 @@
   "subniveles": [
     {
       "id": "1.1",
+      "titulo_eu": "Agurrak",
       "titulo": "Saludos y despedidas",
       "resumen": "Kaixo, egun on, agur… y cómo se encadenan."
     },
     {
       "id": "1.2",
+      "titulo_eu": "Zer moduz?",
       "titulo": "Cortesía y cómo estás",
       "resumen": "Gracias, por favor, perdón. Y responder si estás bien o mal."
     },
     {
       "id": "1.3",
+      "titulo_eu": "Euskal Herria",
       "titulo": "Dónde se habla",
       "resumen": "Euskal Herria, los dialectos y por qué existe el batua."
     },
     {
       "id": "1.4",
+      "titulo_eu": "Euskalkiak",
       "titulo": "Pronunciación y dialectos",
       "resumen": "Los sonidos que hay que tener claros desde el primer día."
     }
