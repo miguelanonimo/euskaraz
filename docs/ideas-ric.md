@@ -1844,6 +1844,56 @@ Ojo con los homógrafos, que daban 98 falsos positivos en la primera versión:
 `nago`/`dago` no son comparativos en `-ago`, y el `zuen` de la 2.2 es
 «vuestro», no el pasado.
 
+### «No como pan» dicho de dos maneras (27/08/2026)
+
+Ric: *«primero usas "Nik ez dut ogia jaten" y justo después "Ez dut ogirik
+jaten", ambas traducidas como "no como pan"… me resulta extraño»*.
+
+Tenía razón, y **no significan lo mismo**:
+
+- `Ez dut ogia jaten` — No como **el** pan. Uno concreto.
+- `Ez dut ogirik jaten` — No como pan. Ninguno, nunca.
+
+Verificado en la [Euskararen Gramatika de Euskaltzaindia][eg] (15.5,
+partitiboa) y en la [guía de la EHU][ehu]: el partitivo es siempre
+indefinido; con el artículo, quien escucha entiende que hablas de algo
+determinado. Poner las dos con la misma traducción castellana, una detrás de
+otra, era confuso de verdad.
+
+[eg]: https://euskaltzaindia.eus/index.php?ItemId=1765&kodea=1505&lang=eu&option=com_liburuak&task=gramatika
+[ehu]: https://www.ehu.eus/documents/2660428/5068953/partitiboa.pdf
+
+Qué se ha hecho:
+
+- La ficha de la negación usa ahora un objeto **de verdad concreto**
+  (`liburua`, «no leo el libro»), así no compite con la del partitivo, y
+  cierra anunciando el cambio que viene.
+- La del partitivo pone las dos frases **una al lado de la otra** con su
+  diferencia explicada. Antes decía que el partitivo «es opcional y nadie te
+  va a corregir», que se saltaba justo esto; ahora dice que sin él la frase se
+  entiende como algo concreto.
+- El mismo fallo estaba **propagado a los ejercicios**: `u7-g32` v0 pedía «No
+  como pan» y daba por buena `Ez dut ogia jaten`. Igual en `u8-g09` v0 y v1.
+  Pasados a partitivo. La v3 se queda con artículo a propósito, para que se
+  vea el contraste, y lo que se ajusta es el castellano («no compro **la**
+  carne»).
+
+### La ficha del plural estaba en el tema de negar (27/08/2026)
+
+También de Ric: *«la ficha siguiente es sobre el plural, ¿no crees que
+deberíamos tenerla en el 7.1?»*.
+
+Sí, y hay un dato que lo decide: **los ejercicios de objeto plural (`u8-g07`)
+ya estaban en el 7.1**. Era la ficha la que estaba fuera de sitio — el mismo
+desajuste explicación/ejercicio que el de la negación, pero al revés.
+
+Movida al 7.1, entre «Cómo se forma el -t(z)en» y «Cuando no hay objeto»: de
+más objeto a menos. Su último ejemplo era negativo (`Ez ditut haragia eta
+arraina jaten`) y ahí aún no toca, así que se cambia por uno afirmativo.
+
+No hace falta renombrar el 7.2: su resumen ya decía «el salto del auxiliar y
+el partitivo», sin mencionar el plural.
+
 ### Referencias a unidades que quedaron caducadas (27/08/2026)
 
 Tirando del hilo anterior apareció otra cosa. Varias fichas se remiten unas a

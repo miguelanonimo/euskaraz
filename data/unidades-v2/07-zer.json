@@ -10,7 +10,7 @@
       "id": "7.1",
       "titulo_eu": "Zer egiten duzu?",
       "titulo": "El presente habitual",
-      "resumen": "El mecanismo de dos piezas: -t(z)en + dut."
+      "resumen": "El mecanismo de dos piezas: -t(z)en + dut, y ditut si son varios."
     },
     {
       "id": "7.2",
@@ -83,6 +83,25 @@
       "subnivel": "7.1"
     },
     {
+      "titulo": "Si el objeto es plural: ditut",
+      "cuerpo": "Cuando lo que comes, ves o compras va en <b>plural</b>, el auxiliar cambia. Donde había <i>dut</i>, ahora hay <b>ditut</b>:\n\n<b>nik ditut</b> — yo los/las…\n<b>zuk dituzu</b> — tú\n<b>hark ditu</b> — él/ella\n<b>guk ditugu</b> — nosotros\n<b>zuek dituzue</b> — vosotros\n<b>haiek dituzte</b> — ellos\n\n<b>Sagarra jaten dut.</b> — Como la manzana.\n<b>Sagarrak jaten ditut.</b> — Como las manzanas.\n\nEse <b>-it-</b> que se cuela en medio es la marca de plural del objeto. Es el mismo que ya viste en <i>ditugu</i> cuando hablaste de tener varias cosas.\n\nCon los verbos sin objeto no pasa nada de esto: allí lo que manda es el sujeto, y eso es lo siguiente.",
+      "ejemplos": [
+        {
+          "eu": "Barazkiak erosten ditut.",
+          "es": "Compro las verduras."
+        },
+        {
+          "eu": "Liburuak irakurtzen ditugu.",
+          "es": "Leemos los libros."
+        },
+        {
+          "eu": "Haiek etxeak ikusten dituzte.",
+          "es": "Ellos ven las casas."
+        }
+      ],
+      "subnivel": "7.1"
+    },
+    {
       "titulo": "Cuando no hay objeto, el auxiliar es izan",
       "cuerpo": "Si el verbo no lleva complemento directo, la segunda pieza no es <i>dut</i> sino <b>naiz</b>. Y entonces el sujeto <b>no lleva -k</b>.\n\nTres verbos nuevos para verlo, con su forma de diccionario delante:\n\n<i>etorri</i> (venir) → <b>Ni etortzen naiz.</b> — Yo vengo.\n<i>joan</i> (ir) → <b>Zu joaten zara.</b> — Tú vas.\n<i>egon</i> (estar, ya de la quinta unidad) → <b>Hura egoten da.</b> — Él suele estar.\n\n<i>joan</i> y <i>etorri</i> los verás a fondo en la octava unidad; aquí solo te hacen falta para ver la diferencia.\n\nCompara las dos familias:\n\n<b>Nik ogia jaten dut.</b> — hay objeto (el pan) → <i>dut</i>, y <i>nik</i>\n<b>Ni etxera joaten naiz.</b> — no hay objeto → <i>naiz</i>, y <i>ni</i>\n\nEsta división entre verbos con objeto y verbos sin objeto atraviesa toda la gramática vasca. Si te acostumbras ahora a preguntarte «¿esto lleva objeto?», el resto del camino es mucho más llano.",
       "ejemplos": [
@@ -106,7 +125,7 @@
     },
     {
       "titulo": "La negación: «ez» y el auxiliar dan un salto",
-      "cuerpo": "Para negar se pone <b>ez</b> delante… pero pasa algo más: <b>el auxiliar se coloca justo detrás del ez</b>, y el resto de la frase se queda después.\n\n<b>Nik ogia jaten dut.</b>\n<b>Nik ez dut ogia jaten.</b> — No como pan.\n\nEl <i>dut</i> ha saltado desde el final hasta detrás del <i>ez</i>. Con las formas de una sola pieza es más simple, porque no hay nada que mover:\n\n<b>Ni ikaslea naiz.</b> → <b>Ni ez naiz ikaslea.</b>\n<b>Etxean nago.</b> → <b>Ez nago etxean.</b>\n\nEl salto del auxiliar es de los pocos sitios donde el orden de palabras del euskera es rígido. Merece la pena practicarlo hasta que salga solo.",
+      "cuerpo": "Para negar se pone <b>ez</b> delante… pero pasa algo más: <b>el auxiliar se coloca justo detrás del ez</b>, y el resto de la frase se queda después.\n\n<b>Nik liburua irakurtzen dut.</b> — Leo el libro.\n<b>Nik ez dut liburua irakurtzen.</b> — No leo el libro.\n\nEl <i>dut</i> ha saltado desde el final hasta detrás del <i>ez</i>. Con las formas de una sola pieza es más simple, porque no hay nada que mover:\n\n<b>Ni ikaslea naiz.</b> → <b>Ni ez naiz ikaslea.</b>\n<b>Etxean nago.</b> → <b>Ez nago etxean.</b>\n\nEl salto del auxiliar es de los pocos sitios donde el orden de palabras del euskera es rígido. Merece la pena practicarlo hasta que salga solo.\n\nUn aviso para lo que viene: aquí lo negado es <b>el libro</b>, algo concreto, y por eso <i>liburua</i> se queda igual. Cuando lo que niegas es genérico —«no como pan», sin más— el objeto cambia de forma. Es lo siguiente.",
       "ejemplos": [
         {
           "eu": "Ez dut kafea edaten.",
@@ -128,7 +147,7 @@
     },
     {
       "titulo": "«Nada de eso»: el partitivo -(r)ik",
-      "cuerpo": "En castellano dices «no como pan», con el mismo «pan» que en afirmativa. En euskera, cuando niegas o preguntas, el objeto suele cambiar de forma: pierde el artículo y coge <b>-rik</b>.\n\n<b>Ogia jaten dut.</b> — Como pan.\n<b>Ez dut <u>ogirik</u> jaten.</b> — No como pan.\n\nLa terminación es <b>-rik</b> tras vocal y <b>-ik</b> tras consonante:\n<i>ogi</i> (pan) → <b>ogirik</b>\n<i>diru</i> (dinero) → <b>dirurik</b>\n<i>ur</i> (agua) → <b>urik</b>\n<i>lan</i> (trabajo) → <b>lanik</b>\n\nFíjate en que aquí las palabras van <b>sin el artículo -a</b>: no es <i>ogia</i> sino <i>ogi</i>. El partitivo lo sustituye.\n\nSe usa igual con <i>egon</i> para decir que algo no hay:\n<b>Ez dago ardorik.</b> — No hay vino.\n<b>Ez dago arazorik.</b> — No hay problema. (<i>arazoa</i> = el problema)\n\nEs opcional en muchos casos y nadie te va a corregir si no lo pones, pero suena mucho más natural con él.",
+      "cuerpo": "En castellano dices «no como pan», con el mismo «pan» que en afirmativa. En euskera, cuando niegas o preguntas, el objeto suele cambiar de forma: pierde el artículo y coge <b>-rik</b>.\n\n<b>Ogia jaten dut.</b> — Como pan.\n<b>Ez dut <u>ogirik</u> jaten.</b> — No como pan.\n\nLa terminación es <b>-rik</b> tras vocal y <b>-ik</b> tras consonante:\n<i>ogi</i> (pan) → <b>ogirik</b>\n<i>diru</i> (dinero) → <b>dirurik</b>\n<i>ur</i> (agua) → <b>urik</b>\n<i>lan</i> (trabajo) → <b>lanik</b>\n\nFíjate en que aquí las palabras van <b>sin el artículo -a</b>: no es <i>ogia</i> sino <i>ogi</i>. El partitivo lo sustituye.\n\nSe usa igual con <i>egon</i> para decir que algo no hay:\n<b>Ez dago ardorik.</b> — No hay vino.\n<b>Ez dago arazorik.</b> — No hay problema. (<i>arazoa</i> = el problema)\n\nY aquí está la diferencia que conviene tener clara, porque las dos frases son correctas pero <b>no dicen lo mismo</b>:\n\n<b>Ez dut ogia jaten.</b> — No como <b>el</b> pan. Ese, el que hay ahí.\n<b>Ez dut ogirik jaten.</b> — No como pan. Ninguno, nunca.\n\nCuando hablas en general, la del partitivo es la que quieres. Si pones el artículo, quien te escucha entiende que hablas de un pan concreto.",
       "ejemplos": [
         {
           "eu": "Ez dut dirurik.",
@@ -144,28 +163,6 @@
           "eu": "Ez dut ezer nahi.",
           "es": "No quiero nada.",
           "audio": "unidades/u8/ez-dut-ezer-nahi.mp3"
-        }
-      ],
-      "subnivel": "7.2"
-    },
-    {
-      "titulo": "Si el objeto es plural: ditut",
-      "cuerpo": "Cuando lo que comes, ves o compras va en <b>plural</b>, el auxiliar cambia. Donde había <i>dut</i>, ahora hay <b>ditut</b>:\n\n<b>nik ditut</b> — yo los/las…\n<b>zuk dituzu</b> — tú\n<b>hark ditu</b> — él/ella\n<b>guk ditugu</b> — nosotros\n<b>zuek dituzue</b> — vosotros\n<b>haiek dituzte</b> — ellos\n\n<b>Sagarra jaten dut.</b> — Como la manzana.\n<b>Sagarrak jaten ditut.</b> — Como las manzanas.\n\nEse <b>-it-</b> que se cuela en medio es la marca de plural del objeto. Es el mismo que ya viste en <i>ditugu</i> cuando hablaste de tener varias cosas.\n\nCon los verbos sin objeto no pasa nada de esto: allí lo que manda es el sujeto (<i>naiz, gara</i>).",
-      "ejemplos": [
-        {
-          "eu": "Barazkiak erosten ditut.",
-          "es": "Compro las verduras.",
-          "audio": "unidades/u8/barazkiak-erosten-ditut.mp3"
-        },
-        {
-          "eu": "Liburuak irakurtzen ditugu.",
-          "es": "Leemos los libros.",
-          "audio": "unidades/u8/liburuak-irakurtzen-ditugu.mp3"
-        },
-        {
-          "eu": "Ez ditut haragia eta arraina jaten.",
-          "es": "No como carne ni pescado.",
-          "audio": "unidades/u8/ez-ditut-haragia-eta-arraina-jaten.mp3"
         }
       ],
       "subnivel": "7.2"
@@ -1453,12 +1450,12 @@
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
           "es": "No bebo vino.",
-          "eu": "Nik ez dut ardoa edaten.",
+          "eu": "Nik ez dut ardorik edaten.",
           "palabras": [
             "nik",
             "ez",
             "dut",
-            "ardoa",
+            "ardorik",
             "edaten"
           ],
           "distractores": [
@@ -1470,12 +1467,12 @@
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
           "es": "Ella no come pescado.",
-          "eu": "Hark ez du arraina jaten.",
+          "eu": "Hark ez du arrainik jaten.",
           "palabras": [
             "hark",
             "ez",
             "du",
-            "arraina",
+            "arrainik",
             "jaten"
           ],
           "distractores": [
@@ -1501,7 +1498,7 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "No compro carne.",
+          "es": "No compro la carne.",
           "eu": "Nik ez dut haragia erosten.",
           "palabras": [
             "nik",
@@ -3499,11 +3496,11 @@
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
           "es": "No como pan.",
-          "eu": "Ez dut ogia jaten.",
+          "eu": "Ez dut ogirik jaten.",
           "palabras": [
             "ez",
             "dut",
-            "ogia",
+            "ogirik",
             "jaten"
           ],
           "distractores": [
