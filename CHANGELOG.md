@@ -898,3 +898,24 @@ venía heredado de v1 esto daba igual, pero las 54 palabras añadidas
 solo en v2 nunca se generan. Detalle completo y las dos salidas
 propuestas en `docs/audios-pendientes.md`, apartado C — decisión
 pendiente, no aplicada en este commit.
+
+## 2026-08-27 — `generar.mjs` apunta a v2, y el test de unidad decía 5 en vez de 12
+
+**El agujero del audio, arreglado de fondo (opción 1).** `generar.mjs`
+lee ahora `data/unidades-v2/` en `buscarPorId()`. Comprobado antes de
+tocar el script que los ids de unidad y las rutas de audio siguen
+coincidiendo aunque el contenido se haya movido de unidad al
+reestructurar (los animales, trasladados a la 5, ya llevan
+`unidades/u5/...`), así que no hizo falta ningún mapeo especial. De
+paso, nuevo flag `--subnivel <id>` para generar solo el vocabulario y
+los ejemplos de un tema, en vez de la unidad entera — las 54 palabras
+que faltan se reparten en 16 subniveles. Pendiente: correr el script
+de verdad (necesita credenciales de Google Cloud), no se ha ejecutado
+en este commit.
+
+**Bug encontrado al revisar el test de unidad**: la ficha decía "5
+ejercicios" pero la sesión real tiene 12 — el ajuste de ayer (7→12
+preguntas) cambió cuántas entran de verdad, pero la ficha seguía
+enseñando el crudo de `test.length` (los grupos marcados `test` en el
+JSON, casi siempre 5) en vez de `LARGO_TEST`, la constante que de
+verdad gobierna el tamaño de la sesión.

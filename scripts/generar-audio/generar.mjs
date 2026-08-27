@@ -14,10 +14,19 @@
 // acceso se saca con google-auth-library (dependencia de @google-cloud/
 // text-to-speech), sin necesitar el CLI de gcloud instalado.
 //
+// Lee de data/unidades-v2/ (el curso de 10 unidades con subniveles que está
+// en producción desde el 26/08/2026 — antes leía data/unidades/, el curso
+// viejo de 12; ver docs/audios-pendientes.md apartado C). Los ids de unidad
+// (u1, u4...) y las rutas de audio que referencian los datos siguen
+// coincidiendo aunque el contenido se haya movido de unidad al reestructurar
+// — comprobado a mano antes de este cambio — así que no hace falta ningún
+// mapeo especial, solo cambiar el directorio de origen.
+//
 // Uso:
 //   npm install
 //   node generar.mjs u1
-//   node generar.mjs u1 --forzar   (regenera aunque el mp3 ya exista)
+//   node generar.mjs u1 --forzar            (regenera aunque el mp3 ya exista)
+//   node generar.mjs u1 --subnivel 1.3      (solo el vocabulario/ejemplos de ese tema)
 
 import { readFile, mkdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
@@ -62,8 +71,10 @@ async function existe(ruta) {
 async function main() {
   const unidadId = process.argv[2];
   const forzar = process.argv.includes('--forzar');
-  if (!unidadId) {
-    console.error('Uso: node generar.mjs <unidadId> [--forzar]   (ej: node generar.mjs u1)');
+  const subnivelIdx = process.argv.indexOf('--subnivel');
+  const subnivel = subnivelIdx !== -1 ? process.argv[subnivelIdx + 1] : null;
+  if (!unidadId || (subnivelIdx !== -1 && !subnivel)) {
+    console.error('Uso: node generar.mjs <unidadId> [--forzar] [--subnivel <id>]   (ej: node generar.mjs u1 --subnivel 1.3)');
     process.exit(1);
   }
 
@@ -77,16 +88,29 @@ async function main() {
   const authClient = await auth.getClient();
 
   // Aplana entradas + variantes de registro (sección 5.1 del brief): cada
-  // variante bizkaina lleva su propio mp3, igual que la forma normativa.
+  // variante bizkaina lleva su propio mp3, igual que la forma normativa. Una
+  // variante sin `subnivel` propio hereda el de su entrada — no lo necesita
+  // para nada más, solo para que --subnivel la filtre bien.
   // Se suman también las frases de ejemplo de gramática (sección 6: "y
-  // frases relevantes de ejercicios"). Si un ejemplo coincide en texto
-  // con una palabra de vocabulario, comparten el mismo mp3 (misma clave).
-  var palabras = unidad.vocabulario.flatMap((v) => [v, ...(v.variantes || [])]);
+  // frases relevantes de ejercicios"), heredando el `subnivel` del bloque
+  // si el ejemplo no trae el suyo. Si un ejemplo coincide en texto con una
+  // palabra de vocabulario, comparten el mismo mp3 (misma clave).
+  var palabras = unidad.vocabulario.flatMap((v) => [
+    v,
+    ...(v.variantes || []).map((x) => ({ ...x, subnivel: x.subnivel || v.subnivel })),
+  ]);
   (unidad.gramatica || []).forEach((g) => {
-    (g.ejemplos || []).forEach((e) => palabras.push(e));
+    (g.ejemplos || []).forEach((e) => palabras.push({ ...e, subnivel: e.subnivel || g.subnivel }));
   });
 
-  console.log(`Unidad ${unidad.id} — ${palabras.length} palabras`);
+  if (subnivel) {
+    palabras = palabras.filter((v) => v.subnivel === subnivel);
+    if (!palabras.length) {
+      throw new Error(`El subnivel "${subnivel}" no tiene ninguna entrada en la unidad ${unidad.id}.`);
+    }
+  }
+
+  console.log(`Unidad ${unidad.id}${subnivel ? ` · subnivel ${subnivel}` : ''} — ${palabras.length} palabras`);
 
   for (const v of palabras) {
     const clave = claveArchivo(v.eu);
@@ -149,15 +173,16 @@ async function sintetizar(authClient, texto) {
   return datos.audioContent;
 }
 
-// Fallback si data/curso.json no lista la ruta con ese nombre exacto de archivo.
+// Busca por id en vez de por nombre de archivo porque data/curso-v2.json
+// no lista la ruta con el mismo nombre exacto (01-kaixo.json, no u1.json).
 async function buscarPorId(unidadId) {
   const { readdir } = await import('node:fs/promises');
-  const dir = path.join(RAIZ, 'data', 'unidades');
+  const dir = path.join(RAIZ, 'data', 'unidades-v2');
   for (const f of await readdir(dir)) {
     const contenido = JSON.parse(await readFile(path.join(dir, f), 'utf8'));
     if (contenido.id === unidadId) return path.join(dir, f);
   }
-  throw new Error(`No encuentro ninguna unidad con id "${unidadId}" en data/unidades/`);
+  throw new Error(`No encuentro ninguna unidad con id "${unidadId}" en data/unidades-v2/`);
 }
 
 main().catch((err) => {

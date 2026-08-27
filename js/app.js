@@ -1167,8 +1167,12 @@
           '<span class="subcard__id">' + (pu.completada ? tickSvg : '') + '</span>' +
           '<span class="subcard__body">' +
             '<span class="subcard__title">Test de la unidad</span>' +
+            // El test no se queda en sus propios grupos (`test.length`, casi
+            // siempre 5) — empezarPractica() lo completa hasta LARGO_TEST
+            // tirando de los temas, así que el número que se enseña aquí
+            // tiene que ser el mismo, no el crudo de la ficha.
             '<span class="subcard__sub">Todo lo anterior mezclado · ' +
-              plural(test.length, 'ejercicio', 'ejercicios') + '</span>' +
+              plural(LARGO_TEST, 'ejercicio', 'ejercicios') + '</span>' +
           '</span>' +
           (pu.completada ? '<span class="subcard__hecho">' + tickSvg + Math.round(pu.mejor * 100) + '%</span>' : '') +
           '<span class="subcard__chev" aria-hidden="true">' +

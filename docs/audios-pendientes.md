@@ -205,15 +205,22 @@ deber del 8.3.
 | `10.3` | `etorkizuna` | el futuro |
 | `10.3` | `asmoa` | la intención, el plan |
 
-Dos maneras de arreglarlo, y la decisión es tuya:
+**Decidido (27/08/2026, Miguel): opción 1.** `generar.mjs` ya lee
+`data/unidades-v2/` en vez de `data/unidades/`. Comprobado a mano antes de
+tocar el script: los ids de unidad y las rutas de audio que referencian los
+datos siguen coincidiendo aunque el contenido se haya movido de unidad al
+reestructurar (p. ej. los animales, trasladados a la 5, ya llevan
+`unidades/u5/...`), así que no hizo falta ningún mapeo especial — solo
+cambiar el directorio de origen en `buscarPorId()`.
 
-1. **Apuntar `generar.mjs` a `data/unidades-v2/`** y agrupar por `subnivel` en
-   vez de por unidad. Es lo limpio, pero hay que tocar cómo resuelve la ruta
-   de salida, porque los ids ya no coinciden.
-2. **Volcar estas 54 a un lote suelto**, como se hizo con `lote-ric-3.mjs`, y
-   dejar el arreglo de fondo para después.
+De paso, nuevo flag `--subnivel <id>` para no tener que regenerar la unidad
+entera por 5-10 palabras nuevas: `node generar.mjs u4 --subnivel 4.3` genera
+solo el vocabulario y los ejemplos de ese tema. Las 54 de la tabla de arriba
+se reparten en 16 subniveles — con el flag, cada tanda es una llamada.
 
-Yo tiraría por la 1, pero es tu terreno.
+Pendiente: correr `generar.mjs` de verdad para las 54 (necesita credenciales
+de Google Cloud y cuesta tiempo/cuota) — el script está listo, no se ha
+ejecutado todavía.
 
 ---
 
