@@ -919,3 +919,21 @@ preguntas) cambió cuántas entran de verdad, pero la ficha seguía
 enseñando el crudo de `test.length` (los grupos marcados `test` en el
 JSON, casi siempre 5) en vez de `LARGO_TEST`, la constante que de
 verdad gobierna el tamaño de la sesión.
+
+## 2026-08-27 — Barrido de la misma familia de bug: dos sitios más
+
+Pedido explícito tras el bug del test: revisados todos los sitios que
+enseñan un número de ejercicios antes de empezar una sesión,
+comparando cada uno contra cómo se construye la sesión de verdad en
+`empezarPractica()`. Aparecieron dos más con el mismo defecto —
+`ESCUCHAR_PRACTICA` (2 preguntas de escuchar) se cuela en **cualquier**
+práctica, no solo en el test, y ninguno de los dos sitios lo contaba:
+
+- La tarjeta "Practicar" dentro de un tema.
+- El resumen de cada tema en la lista de la portada de la unidad
+  (`pintarListaSubniveles()`).
+
+Los demás contadores revisados (fichas de gramática, palabras de
+vocabulario, temas restantes de la unidad, pendientes de repaso en la
+Home) no tienen este problema: cuentan algo que no cambia al empezar
+la sesión, o ya salen de la misma fuente en vivo que la sesión usa.
