@@ -49,6 +49,11 @@ RE_EMPIEZA = re.compile(u"[Ee]mpieza por (?:\u00ab([^\u00bb]+)\u00bb|(\\w)\\b)")
 # («desde las unidades 6 y 8»), que a la primera versión se le escapaban.
 basestring_ = str
 
+# Para la comprobación de glosas: palabra resaltada, y señales de que
+# detrás viene la traducción.
+RE_RESALTE = re.compile(u"<([bi])>([^<]{2,40})</\\1>")
+RE_GLOSA = re.compile(u"^\\s*(\u2014|\u2013|\\(|:|,\\s|\\s*es\\b|\\s*significa\\b)")
+
 RE_UNIDAD = re.compile(u"unidad(?:es)?\\s+(\\d+)((?:\\s*(?:,|y|o)\\s*\\d+)*)", re.I)
 
 # Las fichas también citan unidades en letra («ya de la sexta unidad»), y así
@@ -130,6 +135,16 @@ for ruta in idx["unidades"]:
     if not os.path.exists(f):
         errores.append("falta el archivo %s" % ruta); continue
     unidades.append((ruta, json.load(io.open(f, encoding="utf-8"))))
+
+# Dónde se estrena cada palabra. Hace falta antes del bucle, porque la
+# comprobación de glosas solo mira las que se presentan por primera vez en
+# ese tema: las ya dadas no se reglosan cada vez que se mencionan.
+estrenoVocab = {}
+for _, u_ in unidades:
+    for v_ in u_.get("vocabulario") or []:
+        w_ = (v_.get("eu") or u"").lower().strip()
+        if len(w_) > 2 and w_ not in estrenoVocab:
+            estrenoVocab[w_] = v_.get("subnivel")
 
 nums = [u["numero"] for _, u in unidades]
 if nums != sorted(nums):
@@ -219,6 +234,31 @@ for ruta, u in unidades:
         for tag in re.findall(r"</?(\w+)>", gr["cuerpo"]):
             if tag not in ("b","i","u"):
                 avisos.append("%s: etiqueta <%s> en «%s»" % (ruta, tag, gr["titulo"]))
+    # Regla de Ric: una palabra se presenta SIEMPRE con su traducción. Se
+    # mira por tema entero, no por ficha, porque a veces se glosa en una y
+    # se usa en la de al lado, y eso vale. Y solo se miran las palabras que
+    # se ESTRENAN en ese tema: las ya dadas no hay que reglosarlas cada vez.
+    porTemaTexto = {}
+    for gr in u["gramatica"]:
+        porTemaTexto[gr.get("subnivel")] = (porTemaTexto.get(gr.get("subnivel"), u"")
+                                            + (gr.get("cuerpo") or u"") + u"\n")
+    for sub, texto in porTemaTexto.items():
+        vistas = set()
+        for m in RE_RESALTE.finditer(texto):
+            w = m.group(2).strip().strip(u"\u00ab\u00bb\u00a1!\u00bf?.,:;")
+            k = w.lower()
+            if len(k) < 3 or estrenoVocab.get(k) != sub or k in vistas:
+                continue
+            vistas.add(k)
+            glosada = False
+            for x in re.finditer(re.escape(m.group(2)) + u"</[bi]>", texto):
+                if RE_GLOSA.match(texto[x.end():x.end() + 16]):
+                    glosada = True
+                    break
+            if not glosada:
+                avisos.append(u"%s: «%s» se estrena en el tema %s sin traducción "
+                              u"a la vista" % (ruta, w, sub))
+
     # Las burbujas de dialecto van AL FINAL de su tema: primero la forma
     # normativa entera, y de remate cómo suena por aquí. En medio cortan la
     # explicación en dos (criterio de Ric).

@@ -1878,6 +1878,53 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### «Siempre con su traducción» (27/08/2026)
+
+Ric, sobre la ficha nueva del 9.4: *«cuando introduces asko, pixka bat y
+batere ez, no pones las traducciones… siempre introducimos las palabras con su
+traducción»*.
+
+Arreglado eso y **barridas todas las fichas escritas hoy**: seis casos reales
+(`asko`/`pixka bat`/`batere ez`, `pilota`, `burua`/`sudurra`/`ahoa`/`bihotza`,
+`niri`/`zuri`/`hari`, `Mugitu!`, `joan`/`etorri`/`ibili`, y los verbos del 7.3
+citados de pasada en el 7.5).
+
+Al revisarlo apareció otro hueco: el **9.2 tiene cinco verbos en el
+vocabulario** —`eman`, `esan`, `galdetu`, `erantzun`, `lagundu`— **que las
+fichas no presentaban**, el mismo problema que el 7.5. Ahora van listados con
+su traducción.
+
+**La comprobación queda puesta en `verificar.py`**, como aviso. Dos decisiones
+que la hacen utilizable en vez de ruido:
+
+1. **Se mira por tema entero, no por ficha.** A veces una palabra se glosa en
+   una ficha y se usa en la de al lado, y eso vale.
+2. **Solo las que se ESTRENAN en ese tema.** Las ya dadas no hay que
+   reglosarlas cada vez que se mencionan.
+
+Sin esas dos, saltaban 108 avisos en 59 de las 140 fichas y no servía para
+nada. Con ellas, 8 — y los ocho revisados a mano: son casos donde la
+traducción está en la prosa en vez de detrás de la palabra (`Euskal Herria`
+se explica entero, `bosgarrena` va en una lista numerada, `ezkerrera` se
+traduce dos líneas más abajo). Se dejan como aviso, no como error,
+precisamente por eso.
+
+### «Pilotalekua»: ¿es batua? (27/08/2026)
+
+Ric preguntó de dónde salía. Buena pregunta: yo lo había sacado de una página
+de instalaciones deportivas y del título de una exposición, que no es lo mismo
+que confirmarlo.
+
+Comprobado en el [Elhuyar][ep]: entrada normativa, con compuestos propios
+(`pilotaleku ireki`, `labur`, `luze`) y ejemplo de uso. Y buscando «frontón» al
+revés, el diccionario da **las dos**: `pilotaleku` primero y `frontoi` después.
+
+La ficha lo dice ahora así: las dos valen, `pilotalekua` es la formada con
+piezas vascas y la que los diccionarios ponen primero, pero `frontoia` también
+se oye.
+
+[ep]: https://hiztegiak.elhuyar.eus/eu_es/pilotaleku
+
 ### Reestructurada la unidad 9 (27/08/2026)
 
 Ric: *«no me gusta que para explicar "me gusta" usemos el cuerpo… al final es
