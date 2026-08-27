@@ -147,22 +147,27 @@
     },
     {
       "titulo": "«Nada de eso»: el partitivo -(r)ik",
-      "cuerpo": "En castellano dices «no como pan», con el mismo «pan» que en afirmativa. En euskera, cuando niegas o preguntas, el objeto suele cambiar de forma: pierde el artículo y coge <b>-rik</b>.\n\n<b>Ogia jaten dut.</b> — Como pan.\n<b>Ez dut <u>ogirik</u> jaten.</b> — No como pan.\n\nLa terminación es <b>-rik</b> tras vocal y <b>-ik</b> tras consonante:\n<i>ogi</i> (pan) → <b>ogirik</b>\n<i>diru</i> (dinero) → <b>dirurik</b>\n<i>ur</i> (agua) → <b>urik</b>\n<i>lan</i> (trabajo) → <b>lanik</b>\n\nFíjate en que aquí las palabras van <b>sin el artículo -a</b>: no es <i>ogia</i> sino <i>ogi</i>. El partitivo lo sustituye.\n\nSe usa igual con <i>egon</i> para decir que algo no hay:\n<b>Ez dago ardorik.</b> — No hay vino.\n<b>Ez dago arazorik.</b> — No hay problema. (<i>arazoa</i> = el problema)\n\nY aquí está la diferencia que conviene tener clara, porque las dos frases son correctas pero <b>no dicen lo mismo</b>:\n\n<b>Ez dut ogia jaten.</b> — No como <b>el</b> pan. Ese, el que hay ahí.\n<b>Ez dut ogirik jaten.</b> — No como pan. Ninguno, nunca.\n\nCuando hablas en general, la del partitivo es la que quieres. Si pones el artículo, quien te escucha entiende que hablas de un pan concreto.",
+      "cuerpo": "En castellano dices «no como pan», con el mismo «pan» que en afirmativa. En euskera, cuando niegas o preguntas, el objeto suele cambiar de forma: pierde el artículo y coge <b>-rik</b>.\n\n<b>Ogia jaten dut.</b> — Como pan.\n<b>Ez dut <u>ogirik</u> jaten.</b> — No como pan.\n\nLa terminación es <b>-rik</b> tras vocal y <b>-ik</b> tras consonante:\n<i>ogi</i> (pan) → <b>ogirik</b>\n<i>diru</i> (dinero) → <b>dirurik</b>\n<i>ur</i> (agua) → <b>urik</b>\n<i>lan</i> (trabajo) → <b>lanik</b>\n\nFíjate en que aquí las palabras van <b>sin el artículo -a</b>: no es <i>ogia</i> sino <i>ogi</i>. El partitivo lo sustituye.\n\nSe usa igual con <i>egon</i> para decir que algo no hay:\n<b>Ez dago ardorik.</b> — No hay vino.\n<b>Ez dago arazorik.</b> — No hay problema. (<i>arazoa</i> = el problema)\n\nY aquí está la diferencia que conviene tener clara, porque las dos frases son correctas pero <b>no dicen lo mismo</b>. Compara las dos escenas.\n\n<b>Primera: estás sentado a la mesa y hay pan delante.</b> Te lo acercan y lo rechazas.\n\n<b>Ez dut ogia jaten.</b> — No como el pan. Ese, el que tengo ahí.\n\nHay un pan concreto que los dos estáis mirando, así que lleva su artículo, igual que en afirmativa.\n\n<b>Segunda: alguien te pregunta qué comes y qué no.</b> No hay ningún pan delante.\n\n<b>Ez dut ogirik jaten.</b> — No como pan. Ninguno, nunca.\n\nAquí no hablas de un pan, sino del pan en general, y ese es el sitio del partitivo.\n\nConviene que no te quedes con la idea de que esto va de tiempo, porque no va. Lo que decide es <b>si hay un pan concreto de por medio</b>. Si quieres marcar el momento, añade la palabra que lo diga, y el partitivo no se mueve:\n\n<b>Gaur ez dut ogirik jaten.</b> — Hoy no como pan.\n<b>Inoiz ez dut ogirik jaten.</b> — Nunca como pan.\n\nEn las dos sigue sin haber un pan concreto, así que en las dos va <i>ogirik</i>. Y al revés: si el pan está ahí y lo señalas, va <i>ogia</i> tanto si hablas de hoy como de siempre.\n\nDe la misma familia es <b>ezer</b>, que es «nada» y aparece siempre en frases negativas: <b>Ez dut ezer nahi.</b> — No quiero nada. Y suelto, como respuesta corta, <b>ezer ez</b> — nada.\n\nResumiendo: cuando hablas en general, la del partitivo es la que quieres. Si pones el artículo, quien te escucha entiende que hablas de un pan concreto.",
       "ejemplos": [
         {
           "eu": "Ez dut dirurik.",
-          "es": "No tengo dinero.",
-          "audio": "unidades/u8/ez-dut-dirurik.mp3"
+          "es": "No tengo dinero."
         },
         {
           "eu": "Ez dago urik.",
-          "es": "No hay agua.",
-          "audio": "unidades/u8/ez-dago-urik.mp3"
+          "es": "No hay agua."
         },
         {
           "eu": "Ez dut ezer nahi.",
-          "es": "No quiero nada.",
-          "audio": "unidades/u8/ez-dut-ezer-nahi.mp3"
+          "es": "No quiero nada."
+        },
+        {
+          "eu": "Gaur ez dut ogirik jaten.",
+          "es": "Hoy no como pan."
+        },
+        {
+          "eu": "Inoiz ez dut ogirik jaten.",
+          "es": "Nunca como pan."
         }
       ],
       "subnivel": "7.2"

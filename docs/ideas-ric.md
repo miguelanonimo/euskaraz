@@ -1878,6 +1878,36 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Ampliada la diferencia «hoy» / «nunca» (27/08/2026)
+
+Ric pidió dejar más claro «cuando no comes pan hoy y cuando no comes pan
+nunca». La ficha del partitivo lo explica ahora con dos escenas:
+
+- **Sentado a la mesa, con el pan delante** → `Ez dut ogia jaten`. Hay un pan
+  concreto que los dos miráis.
+- **Te preguntan qué comes y qué no, sin pan a la vista** → `Ez dut ogirik
+  jaten`. Hablas del pan en general.
+
+Con una advertencia que va a contracorriente de la intuición y que conviene
+mantener: **esto no va de tiempo**. Lo que decide es si hay un pan concreto de
+por medio. Se ve añadiendo el adverbio, porque el partitivo no se mueve:
+
+    Gaur ez dut ogirik jaten.   — Hoy no como pan.
+    Inoiz ez dut ogirik jaten.  — Nunca como pan.
+
+`gaur`, `inoiz ez` y `beti` son todos del 3.1, así que se pueden usar sin
+adelantar nada.
+
+Al cambiar los ejemplos me llevé por delante `Ez dut ezer nahi`, que era el
+único sitio donde se explicaba `ezer` — y hay tres ejercicios del 7.2 que
+preguntan por él. Repuesto, con una línea que lo ata al partitivo.
+
+**Nota sobre los duplicados de vocabulario**: `bihar` (3.1 y 10.3) y `nahi dut`
+(7.1 y 8.3) están catalogados dos veces, a propósito («ya la tenías; aquí se
+usa con el futuro»). Comprobado que **no molestan**: `fondoVocabulario()`
+deduplica por palabra antes de armar el repaso, y se queda con la primera, que
+es la que lleva audio.
+
 ### La ficha del plural estaba en el tema de negar (27/08/2026)
 
 También de Ric: *«la ficha siguiente es sobre el plural, ¿no crees que
