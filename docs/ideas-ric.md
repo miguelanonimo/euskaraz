@@ -1878,6 +1878,56 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Reestructurada la unidad 9 (27/08/2026)
+
+Ric: *«no me gusta que para explicar "me gusta" usemos el cuerpo… al final es
+todo un poco extraño hablar del cuerpo de otra persona»*, más que el 9.4 no
+tenía explicación y que `txapelduna` estaba en el tema siguiente.
+
+Las tres cosas eran ciertas, y **las dos primeras estaban conectadas**. El
+cuerpo no es de lo que uno dice que le gusta; lo que uno dice que le gusta es
+el fútbol, la música, el cine. O sea que la gramática de la unidad se estaba
+practicando en el sitio equivocado: forzada en el cuerpo (9.3) y ausente del
+ocio (9.4), que era justo su terreno y no tenía **ni una ficha**.
+
+|  | antes | ahora |
+|---|---|---|
+| 9.3 | 2 fichas, 722 car. | 3 fichas, 1826 car. |
+| 9.4 | **0 fichas, 0 car.** | 3 fichas, 2261 car. |
+
+**9.3** pierde la ficha del «me gustan tus ojos» y gana dos:
+
+- *El cuerpo que ya usabas sin saberlo*: `oin`+`-z`→`oinez`, `esku`+`-z`→`eskuz`,
+  `buru`+`-z`→`buruz`, y `begi`+`aurre`+`-ko`→`betaurrekoak`. Es el `-z` del
+  8.3 cobrando intereses: ya venía diciendo `oinez nator` con un pie dentro.
+- *Describirte*: posesivos del 2.2 y colores del 5.3, sobre uno mismo. Mantiene
+  lo útil (los pares van en plural) sin hablar del cuerpo de nadie.
+
+**9.4** recibe la ficha de la txapela desde el 9.5 —con una línea que dice por
+qué vive ahí— más `txapelduna` y `txapelketa`, y estrena dos: el `gustatzen`
+aplicado al ocio, que es su terreno, y la pilota con el frontón como plaza del
+pueblo (el Gobierno Vasco lo llama «el ágora vasca»). También recupera para el
+9.2 el ejercicio `u10-g03`, que era del dativo y estaba ahí por error.
+
+**9.5** cierra la unidad con *Un regalo es siempre para alguien*, que junta
+`oparia` + `erosi` + el dativo del 9.2.
+
+Tres cosas que me cacé al escribir:
+
+- `luzea` (largo) en un ejemplo, sin estar enseñado.
+- `eman diot`, cuando el 9.2 solo da la serie `dit`/`dizu`/`dio` y encima avisa
+  de que basta con reconocerla.
+- El 9.5 decía «como viste en la **6.1**» para el orden del adjetivo, que es
+  del **5.3**. Es un tipo de referencia caducada que no había buscado: a un
+  **tema**, no a una unidad. Barrido el curso entero, era la única.
+
+Y un hueco que apareció solo: al escribir la ficha del regalo metí el
+`-entzat`, y resulta que **`u9-g29` ya lo preguntaba en cuatro variantes sin
+que se explicara en ningún sitio**. La ficha nueva lo tapa.
+
+El subtítulo decía «Gustos, el cuerpo y regalos» y el ocio es un tema entero:
+ahora «Gustos, ocio, el cuerpo y regalos».
+
 ### Reestructurada la unidad 8 (27/08/2026)
 
 Ric: en el 8.1 se hablaba de salir y entrar sin explicarlos, y *«la 8.1 está
