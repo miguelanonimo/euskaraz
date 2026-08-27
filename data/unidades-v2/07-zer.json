@@ -196,6 +196,25 @@
       "registro": "bizkaiera"
     },
     {
+      "titulo": "La despensa entera, por grupos",
+      "cuerpo": "Este tema es sobre todo vocabulario, y hay bastante. Muchas de estas palabras ya te han ido saliendo por el camino —<i>ogia</i>, <i>ura</i> y <i>kafea</i> llevan contigo desde los primeros ejercicios de la unidad—, así que aquí se juntan todas y se añaden las que faltan. Por grupos entran mucho mejor que en una lista suelta.\n\n<b>Las tres comidas del día</b>\n\n<b>gosaria</b> — el desayuno\n<b>bazkaria</b> — la comida (del mediodía)\n<b>afaria</b> — la cena\n\nDe estas tres salen los verbos que ya viste en el tema anterior: <i>gosaldu</i>, <i>bazkaldu</i>, <i>afaldu</i>.\n\n<b>Para beber</b>\n\n<b>ura</b> — el agua\n<b>kafea</b> — el café\n<b>esnea</b> — la leche\n<b>zukua</b> — el zumo\n<b>ardoa</b> — el vino\n<b>garagardoa</b> — la cerveza\n\nFíjate en <i>garagardoa</i>, porque lleva <b>ardo</b> dentro. Y no es la única:\n\n<i>sagar</i> (manzana) + <i>ardo</i> → <b>sagardoa</b>, la sidra.\n<i>garagar</i> (cebada) + <i>ardo</i> → <b>garagardoa</b>, la cerveza.\n\nUna vez que ves el <i>-ardo</i>, las dos se quedan solas.\n\n<b>En el plato</b>\n\n<b>ogia</b> — el pan\n<b>haragia</b> — la carne\n<b>arraina</b> — el pescado\n<b>oilaskoa</b> — el pollo\n<b>gazta</b> — el queso\n<b>arroza</b> — el arroz\n\n<i>Oilaskoa</i> se parece a <i>oiloa</i>, la gallina que viste en la quinta unidad. Te sirve para acordarte.\n\n<b>De la huerta</b>\n\n<b>barazkiak</b> — las verduras\n<b>patata</b> — la patata\n<b>tomatea</b> — el tomate\n<b>tipula</b> — la cebolla\n<b>letxuga</b> — la lechuga\n\n<b>Fruta</b>\n\n<b>sagarra</b> — la manzana\n<b>platanoa</b> — el plátano\n<b>mahatsa</b> — la uva\n<b>madaria</b> — la pera\n<b>marrubia</b> — la fresa\n<b>arana</b> — la ciruela\n\nDe <i>arana</i> vas a oír también <i>okaran</i>, que es la misma fruta con otro nombre.\n\nY <i>laranja</i>, la naranja, que ya tienes desde los colores.\n\nLa sal y el azúcar van aparte, en la ficha de al lado, porque se confunden entre ellas.",
+      "ejemplos": [
+        {
+          "eu": "Goizean kafea hartzen dut.",
+          "es": "Por la mañana tomo café."
+        },
+        {
+          "eu": "Barazkiak eta arraina jaten ditut.",
+          "es": "Como verduras y pescado."
+        },
+        {
+          "eu": "Sagarra eta madaria erosten ditut.",
+          "es": "Compro una manzana y una pera."
+        }
+      ],
+      "subnivel": "7.5"
+    },
+    {
       "titulo": "«Gatza» y «azukrea»: dos que se confunden",
       "cuerpo": "Van juntas en la cocina y conviene no mezclarlas:\n\n<b>gatza</b> — la sal\n<b>azukrea</b> — el azúcar\n\n<i>Gatza</i> es palabra vasca de siempre, y aparece en un montón de expresiones con el sentido de «gracia» o «chispa», como el «salero» del castellano. <i>Azukrea</i>, en cambio, es un préstamo, y por eso se parece tanto a la palabra castellana.\n\nTruco para no liarlas: la sal es la corta.",
       "ejemplos": [
@@ -212,12 +231,8 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Un par de cosas del habla de aquí con la comida.\n\nPara la patata, además de <b>patata</b> se oye mucho <b>lursagarra</b> —literalmente «manzana de tierra», igual que el <i>pomme de terre</i> francés—, aunque en Bilbao lo normal es <i>patata</i> a secas.\n\nY una nota de uso: <b>gazta</b> es el queso en general, pero si te hablan de <b>Idiazabal</b> te están hablando del de oveja con denominación de origen, que aquí es casi otra categoría.",
+      "cuerpo": "Una nota de uso más que de dialecto: <b>gazta</b> es el queso en general, pero si te hablan de <b>Idiazabal</b> te están hablando del de oveja con denominación de origen, que aquí es casi otra categoría.",
       "ejemplos": [
-        {
-          "eu": "patata",
-          "es": "la patata"
-        },
         {
           "eu": "gazta",
           "es": "el queso"
@@ -592,6 +607,14 @@
       "subnivel": "7.5"
     },
     {
+      "eu": "arana",
+      "es": "la ciruela",
+      "nota": "También se oye «okaran».",
+      "audio": null,
+      "categoria": "sustantivo",
+      "subnivel": "7.5"
+    },
+    {
       "eu": "patata",
       "es": "la patata",
       "nota": null,
@@ -657,90 +680,6 @@
     {
       "eu": "azukrea",
       "es": "el azúcar",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "arropa",
-      "es": "la ropa",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "alkandora",
-      "es": "la camisa",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "prakak",
-      "es": "los pantalones",
-      "nota": "Se usa en plural.",
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "zapatak",
-      "es": "los zapatos",
-      "nota": "Se usa en plural.",
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "jertsea",
-      "es": "el jersey",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "jaka",
-      "es": "la chaqueta",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "gona",
-      "es": "la falda",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "soinekoa",
-      "es": "el vestido",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "txapela",
-      "es": "la boina",
-      "nota": "De aquí salen «txapelduna» y «txapelketa». Ver la ficha.",
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "betaurrekoak",
-      "es": "las gafas",
-      "nota": "Se usa en plural.",
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "txapelduna",
-      "es": "el campeón / la campeona",
-      "nota": null,
-      "categoria": "sustantivo",
-      "subnivel": "7.5"
-    },
-    {
-      "eu": "txapelketa",
-      "es": "el campeonato",
       "nota": null,
       "categoria": "sustantivo",
       "subnivel": "7.5"
@@ -1481,7 +1420,7 @@
             "jaten"
           ],
           "distractores": [
-            "prakak",
+            "gazta",
             "jaiki"
           ]
         },
@@ -2052,193 +1991,6 @@
       "subnivel": "7.5"
     },
     {
-      "id": "u8.1-g03",
-      "variantes": [
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la ropa",
-          "pares": [
-            {
-              "eu": "alkandora",
-              "es": "la camisa"
-            },
-            {
-              "eu": "prakak",
-              "es": "los pantalones"
-            },
-            {
-              "eu": "zapatak",
-              "es": "los zapatos"
-            },
-            {
-              "eu": "jertsea",
-              "es": "el jersey"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la ropa",
-          "pares": [
-            {
-              "eu": "jaka",
-              "es": "la chaqueta"
-            },
-            {
-              "eu": "gona",
-              "es": "la falda"
-            },
-            {
-              "eu": "soinekoa",
-              "es": "el vestido"
-            },
-            {
-              "eu": "txapela",
-              "es": "la boina"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la ropa",
-          "pares": [
-            {
-              "eu": "arropa",
-              "es": "la ropa"
-            },
-            {
-              "eu": "betaurrekoak",
-              "es": "las gafas"
-            },
-            {
-              "eu": "zapatak",
-              "es": "los zapatos"
-            },
-            {
-              "eu": "jaka",
-              "es": "la chaqueta"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la txapela y su familia",
-          "pares": [
-            {
-              "eu": "txapela",
-              "es": "la boina"
-            },
-            {
-              "eu": "txapelduna",
-              "es": "el campeón"
-            },
-            {
-              "eu": "txapelketa",
-              "es": "el campeonato"
-            },
-            {
-              "eu": "arropa",
-              "es": "la ropa"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja la ropa",
-          "pares": [
-            {
-              "eu": "gona",
-              "es": "la falda"
-            },
-            {
-              "eu": "alkandora",
-              "es": "la camisa"
-            },
-            {
-              "eu": "soinekoa",
-              "es": "el vestido"
-            },
-            {
-              "eu": "jertsea",
-              "es": "el jersey"
-            }
-          ]
-        }
-      ],
-      "subnivel": "7.5"
-    },
-    {
-      "id": "u8.1-g04",
-      "variantes": [
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «txapelduna»?",
-          "opciones": [
-            "el que vende boinas",
-            "el campeón",
-            "el jugador",
-            "el árbitro"
-          ],
-          "correcta": 1,
-          "explicacion": "«El que tiene txapela»: al ganador se le entrega una."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «txapelketa»?",
-          "opciones": [
-            "la boina",
-            "el campeonato",
-            "el equipo",
-            "el premio"
-          ],
-          "correcta": 1,
-          "explicacion": "El campeonato, la competición donde se gana la txapela."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿De qué palabra salen «txapelduna» y «txapelketa»?",
-          "opciones": [
-            "txapela (la boina)",
-            "txapa (la chapa)",
-            "txalo (el aplauso)",
-            "txartela (la tarjeta)"
-          ],
-          "correcta": 0,
-          "explicacion": "De la boina que se le pone al ganador."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál de estas va siempre en plural?",
-          "opciones": [
-            "alkandora",
-            "gona",
-            "prakak",
-            "jaka"
-          ],
-          "correcta": 2,
-          "explicacion": "«Prakak», los pantalones. También «zapatak» y «betaurrekoak»."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«Betaurrekoak» se construye a partir de…",
-          "opciones": [
-            "begi (ojo) + aurre (delante)",
-            "bete (llenar) + urre (oro)",
-            "beti (siempre) + arreta (atención)",
-            "beso (brazo) + aurre (delante)"
-          ],
-          "correcta": 0,
-          "explicacion": "«Los de delante de los ojos»."
-        }
-      ],
-      "subnivel": "test"
-    },
-    {
       "id": "u8.1-g05",
       "variantes": [
         {
@@ -2795,7 +2547,7 @@
           "pregunta": "«desayunar» se dice…",
           "opciones": [
             "gosaldu",
-            "txapelketa",
+            "afaldu",
             "edaten dut",
             "jaten dut"
           ],
@@ -2810,7 +2562,7 @@
             "dormir",
             "trabajar",
             "el desayuno",
-            "la boina"
+            "ducharse"
           ],
           "correcta": 0,
           "explicacion": "Literalmente «hacer sueño»."
@@ -2937,8 +2689,8 @@
           "instruccion": "Empareja comer y beber",
           "pares": [
             {
-              "eu": "jaka",
-              "es": "la chaqueta"
+              "eu": "madaria",
+              "es": "la pera"
             },
             {
               "eu": "oilaskoa",
@@ -2949,49 +2701,49 @@
               "es": "la comida (del mediodía)"
             },
             {
-              "eu": "soinekoa",
-              "es": "el vestido"
+              "eu": "zukua",
+              "es": "el zumo"
             }
           ]
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «prakak»?",
+          "pregunta": "¿Qué significa «barazkiak»?",
           "opciones": [
-            "los pantalones",
+            "las verduras",
             "escribir",
-            "el campeón / la campeona",
-            "la chaqueta"
+            "el desayuno",
+            "la cebolla"
           ],
           "correcta": 0,
-          "explicacion": "Se usa en plural."
+          "explicacion": "Va casi siempre en plural, como en castellano."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«la ropa» se dice…",
+          "pregunta": "«el agua» se dice…",
           "opciones": [
-            "arropa",
-            "zapatak",
+            "ura",
+            "ardoa",
             "hartu",
-            "ura"
+            "arroza"
           ],
           "correcta": 0,
-          "explicacion": "la ropa = arropa."
+          "explicacion": "el agua = ura."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «jertsea»?",
+          "pregunta": "¿Qué significa «mahatsa»?",
           "opciones": [
-            "el jersey",
+            "la uva",
             "comer",
             "estoy (haciendo algo)",
             "(yo) como"
           ],
           "correcta": 0,
-          "explicacion": "jertsea = el jersey."
+          "explicacion": "mahatsa = la uva."
         }
       ]
     },
@@ -3004,20 +2756,20 @@
           "instruccion": "Empareja comer y beber",
           "pares": [
             {
-              "eu": "prakak",
-              "es": "los pantalones"
+              "eu": "marrubia",
+              "es": "la fresa"
             },
             {
-              "eu": "betaurrekoak",
-              "es": "las gafas"
+              "eu": "letxuga",
+              "es": "la lechuga"
             },
             {
               "eu": "afaria",
               "es": "la cena"
             },
             {
-              "eu": "txapelketa",
-              "es": "el campeonato"
+              "eu": "azukrea",
+              "es": "el azúcar"
             }
           ]
         },
@@ -3026,8 +2778,8 @@
           "instruccion": "Empareja comer y beber",
           "pares": [
             {
-              "eu": "txapela",
-              "es": "la boina"
+              "eu": "arana",
+              "es": "la ciruela"
             },
             {
               "eu": "tipula",
@@ -3038,23 +2790,23 @@
               "es": "la leche"
             },
             {
-              "eu": "txapelduna",
-              "es": "el campeón / la campeona"
+              "eu": "garagardoa",
+              "es": "la cerveza"
             }
           ]
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «alkandora»?",
+          "pregunta": "¿Qué significa «tomatea»?",
           "opciones": [
-            "la camisa",
-            "el jersey",
+            "el tomate",
+            "el queso",
             "la manzana",
             "el problema"
           ],
           "correcta": 0,
-          "explicacion": "alkandora = la camisa."
+          "explicacion": "tomatea = el tomate."
         },
         {
           "tipo": "opcion",
@@ -3105,8 +2857,8 @@
               "es": "el pescado"
             },
             {
-              "eu": "txapela",
-              "es": "la boina"
+              "eu": "kafea",
+              "es": "el café"
             }
           ]
         },
@@ -3115,20 +2867,20 @@
           "instruccion": "Empareja lo de esta unidad",
           "pares": [
             {
-              "eu": "alkandora",
-              "es": "la camisa"
+              "eu": "platanoa",
+              "es": "el plátano"
             },
             {
               "eu": "letxuga",
               "es": "la lechuga"
             },
             {
-              "eu": "soinekoa",
-              "es": "el vestido"
+              "eu": "oilaskoa",
+              "es": "el pollo"
             },
             {
-              "eu": "txapelduna",
-              "es": "el campeón / la campeona"
+              "eu": "gosaria",
+              "es": "el desayuno"
             }
           ]
         },
@@ -3148,15 +2900,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«el jersey» se dice…",
+          "pregunta": "«el arroz» se dice…",
           "opciones": [
-            "jertsea",
+            "arroza",
             "egin",
             "dutxatu",
             "idatzi"
           ],
           "correcta": 0,
-          "explicacion": "el jersey = jertsea."
+          "explicacion": "el arroz = arroza."
         },
         {
           "tipo": "opcion",
@@ -3194,8 +2946,8 @@
               "es": "cenar"
             },
             {
-              "eu": "soinekoa",
-              "es": "el vestido"
+              "eu": "haragia",
+              "es": "la carne"
             }
           ]
         },
@@ -3224,15 +2976,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «gona»?",
+          "pregunta": "¿Qué significa «zukua»?",
           "opciones": [
-            "la falda",
+            "el zumo",
             "estoy (haciendo algo)",
-            "los zapatos",
+            "la sal",
             "el pescado"
           ],
           "correcta": 0,
-          "explicacion": "gona = la falda."
+          "explicacion": "zukua = el zumo."
         },
         {
           "tipo": "opcion",
@@ -3271,8 +3023,8 @@
           "instruccion": "Empareja lo de esta unidad",
           "pares": [
             {
-              "eu": "jertsea",
-              "es": "el jersey"
+              "eu": "tipula",
+              "es": "la cebolla"
             },
             {
               "eu": "garbitu",
@@ -3301,8 +3053,8 @@
               "es": "la leche"
             },
             {
-              "eu": "gona",
-              "es": "la falda"
+              "eu": "arana",
+              "es": "la ciruela"
             },
             {
               "eu": "sagarra",
@@ -3316,9 +3068,9 @@
           "pregunta": "¿Qué significa «irakurri»?",
           "opciones": [
             "leer",
-            "el jersey",
+            "el arroz",
             "levantarse",
-            "la ropa"
+            "la cena"
           ],
           "correcta": 0,
           "explicacion": "irakurri = leer."
@@ -3343,7 +3095,7 @@
           "opciones": [
             "el vino",
             "el zumo",
-            "la falda",
+            "la pera",
             "el pescado"
           ],
           "correcta": 0,
@@ -3509,7 +3261,7 @@
             "jaten"
           ],
           "distractores": [
-            "jertsea"
+            "arroza"
           ]
         },
         {

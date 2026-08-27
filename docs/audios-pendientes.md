@@ -4,12 +4,14 @@ Todo lo de audio que hay ahora mismo pendiente, en un sitio. Sale de lo que
 Ric fue detectando de oído probando la app, más el vocabulario nuevo que
 aún no tiene mp3.
 
-Son **dos trabajos distintos** y conviene no mezclarlos:
+Son **tres trabajos distintos** y conviene no mezclarlos. El C salió hoy y
+es el que conviene mirar primero, porque afecta a cómo se genera todo lo demás:
 
 | | Qué es | Cuántos | Cómo |
 |---|---|---|---|
 | **A** | Audios que ya existen pero **suenan mal** | 23 | `node lote-ric-3.mjs` |
 | **B** | Palabras nuevas **sin audio ninguno** | 194 | `node generar.mjs <unidad>` |
+| **C** | Palabras de v2 que el generador **no puede ver** | 54 | hay que decidir cómo |
 
 ---
 
@@ -131,7 +133,91 @@ los demostrativos (dato de Ric, verificado en Bizkaieraren ataria).
 
 ---
 
-## C · Dos archivos que cambiaron de nombre
+## C · El agujero: 54 palabras que `generar.mjs` no puede ver
+
+**Esto es nuevo y conviene mirarlo antes que A y B.**
+
+`generar.mjs` lee `data/unidades/` —los ficheros **v1**—, pero el curso que
+se publica es `data/unidades-v2/`. Mientras el vocabulario de v2 venía
+heredado de v1, eso daba igual: se generaba desde v1 y el mp3 caía en la ruta
+que v2 referencia.
+
+Pero **todo lo que hemos añadido directamente en v2 no existe en v1**, así que
+el generador no lo ve y nunca le va a hacer audio. Son **54 palabras**, y no
+son de relleno: están los ordinales enteros, `eduki` con sus formas, los
+verbos de la rutina diaria del 7.3, el `ari naiz` del 7.4 y los de poder y
+deber del 8.3.
+
+| Tema | Palabra | Castellano |
+|---|---|---|
+| `1.3` | `Euskal Herria` | el País Vasco |
+| `1.3` | `euskalkia` | el dialecto |
+| `1.3` | `batua` | el euskera unificado |
+| `1.3` | `Bizkaia` | Vizcaya |
+| `1.3` | `Gipuzkoa` | Guipúzcoa |
+| `1.3` | `Araba` | Álava |
+| `1.3` | `Nafarroa` | Navarra |
+| `3.3` | `hori` | eso, ese |
+| `3.3` | `hauek` | estos |
+| `3.3` | `horiek` | esos |
+| `4.3` | `lehena` | el primero |
+| `4.3` | `bigarrena` | el segundo |
+| `4.3` | `hirugarrena` | el tercero |
+| `4.3` | `laugarrena` | el cuarto |
+| `4.3` | `bosgarrena` | el quinto |
+| `4.3` | `azkena` | el último |
+| `4.3` | `seigarrena` | el sexto, la sexta |
+| `4.3` | `zazpigarrena` | el séptimo, la séptima |
+| `4.3` | `zortzigarrena` | el octavo, la octava |
+| `4.3` | `bederatzigarrena` | el noveno, la novena |
+| `4.3` | `hamargarrena` | el décimo, la décima |
+| `4.3` | `hamaikagarrena` | el undécimo, la undécima |
+| `4.3` | `hamabigarrena` | el duodécimo, la duodécima |
+| `4.5` | `daukat` | (yo) tengo |
+| `4.5` | `daukazu` | (tú) tienes |
+| `4.5` | `dauka` | (él/ella) tiene |
+| `4.5` | `eduki` | tener |
+| `4.5` | `astia` | el tiempo (del que se dispone) |
+| `4.6` | `familia` | la familia |
+| `5.4` | `batzuk` | unos, unas, algunos |
+| `5.5` | `baserria` | el caserío |
+| `6.2` | `egutegia` | el calendario |
+| `7.3` | `esnatu` | despertarse |
+| `7.3` | `jaiki` | levantarse |
+| `7.3` | `dutxatu` | ducharse |
+| `7.3` | `jantzi` | vestirse |
+| `7.3` | `gosaldu` | desayunar |
+| `7.3` | `bazkaldu` | comer (al mediodía) |
+| `7.3` | `afaldu` | cenar |
+| `7.3` | `garbitu` | limpiar |
+| `7.3` | `lo egin` | dormir |
+| `7.3` | `etxeko lanak` | las tareas de casa |
+| `7.4` | `ari naiz` | estoy (haciendo algo) |
+| `7.4` | `ari zara` | estás (haciendo algo) |
+| `7.4` | `ari da` | está (haciendo algo) |
+| `7.5` | `arana` | la ciruela |
+| `8.1` | `mugitu` | mover, moverse |
+| `8.3` | `ahal dut` | puedo |
+| `8.3` | `ezin dut` | no puedo |
+| `8.3` | `behar dut` | tengo que, necesito |
+| `9.3` | `gorputza` | el cuerpo |
+| `9.5` | `oparia` | el regalo |
+| `10.3` | `etorkizuna` | el futuro |
+| `10.3` | `asmoa` | la intención, el plan |
+
+Dos maneras de arreglarlo, y la decisión es tuya:
+
+1. **Apuntar `generar.mjs` a `data/unidades-v2/`** y agrupar por `subnivel` en
+   vez de por unidad. Es lo limpio, pero hay que tocar cómo resuelve la ruta
+   de salida, porque los ids ya no coinciden.
+2. **Volcar estas 54 a un lote suelto**, como se hizo con `lote-ric-3.mjs`, y
+   dejar el arreglo de fondo para después.
+
+Yo tiraría por la 1, pero es tu terreno.
+
+---
+
+## D · Dos archivos que cambiaron de nombre
 
 Al corregir dos frases de la unidad 10 de `diot` a `dio`, cambia el slug y
 por tanto el nombre del mp3:

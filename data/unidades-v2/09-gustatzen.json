@@ -272,6 +272,90 @@
       "subnivel": "9.5"
     },
     {
+      "eu": "arropa",
+      "es": "la ropa",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "alkandora",
+      "es": "la camisa",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "prakak",
+      "es": "los pantalones",
+      "nota": "Se usa en plural.",
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "zapatak",
+      "es": "los zapatos",
+      "nota": "Se usa en plural.",
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "jertsea",
+      "es": "el jersey",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "jaka",
+      "es": "la chaqueta",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "gona",
+      "es": "la falda",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "soinekoa",
+      "es": "el vestido",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "txapela",
+      "es": "la boina",
+      "nota": "De aquí salen «txapelduna» y «txapelketa». Ver la ficha.",
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "betaurrekoak",
+      "es": "las gafas",
+      "nota": "Se usa en plural.",
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "txapelduna",
+      "es": "el campeón / la campeona",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "txapelketa",
+      "es": "el campeonato",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "9.5"
+    },
+    {
       "eu": "liburua",
       "es": "el libro",
       "nota": null,
@@ -3255,6 +3339,193 @@
           ]
         }
       ]
+    },
+    {
+      "id": "u8.1-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ropa",
+          "pares": [
+            {
+              "eu": "alkandora",
+              "es": "la camisa"
+            },
+            {
+              "eu": "prakak",
+              "es": "los pantalones"
+            },
+            {
+              "eu": "zapatak",
+              "es": "los zapatos"
+            },
+            {
+              "eu": "jertsea",
+              "es": "el jersey"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ropa",
+          "pares": [
+            {
+              "eu": "jaka",
+              "es": "la chaqueta"
+            },
+            {
+              "eu": "gona",
+              "es": "la falda"
+            },
+            {
+              "eu": "soinekoa",
+              "es": "el vestido"
+            },
+            {
+              "eu": "txapela",
+              "es": "la boina"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ropa",
+          "pares": [
+            {
+              "eu": "arropa",
+              "es": "la ropa"
+            },
+            {
+              "eu": "betaurrekoak",
+              "es": "las gafas"
+            },
+            {
+              "eu": "zapatak",
+              "es": "los zapatos"
+            },
+            {
+              "eu": "jaka",
+              "es": "la chaqueta"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la txapela y su familia",
+          "pares": [
+            {
+              "eu": "txapela",
+              "es": "la boina"
+            },
+            {
+              "eu": "txapelduna",
+              "es": "el campeón"
+            },
+            {
+              "eu": "txapelketa",
+              "es": "el campeonato"
+            },
+            {
+              "eu": "arropa",
+              "es": "la ropa"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja la ropa",
+          "pares": [
+            {
+              "eu": "gona",
+              "es": "la falda"
+            },
+            {
+              "eu": "alkandora",
+              "es": "la camisa"
+            },
+            {
+              "eu": "soinekoa",
+              "es": "el vestido"
+            },
+            {
+              "eu": "jertsea",
+              "es": "el jersey"
+            }
+          ]
+        }
+      ],
+      "subnivel": "9.5"
+    },
+    {
+      "id": "u8.1-g04",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txapelduna»?",
+          "opciones": [
+            "el que vende boinas",
+            "el campeón",
+            "el jugador",
+            "el árbitro"
+          ],
+          "correcta": 1,
+          "explicacion": "«El que tiene txapela»: al ganador se le entrega una."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txapelketa»?",
+          "opciones": [
+            "la boina",
+            "el campeonato",
+            "el equipo",
+            "el premio"
+          ],
+          "correcta": 1,
+          "explicacion": "El campeonato, la competición donde se gana la txapela."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿De qué palabra salen «txapelduna» y «txapelketa»?",
+          "opciones": [
+            "txapela (la boina)",
+            "txapa (la chapa)",
+            "txalo (el aplauso)",
+            "txartela (la tarjeta)"
+          ],
+          "correcta": 0,
+          "explicacion": "De la boina que se le pone al ganador."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas va siempre en plural?",
+          "opciones": [
+            "alkandora",
+            "gona",
+            "prakak",
+            "jaka"
+          ],
+          "correcta": 2,
+          "explicacion": "«Prakak», los pantalones. También «zapatak» y «betaurrekoak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Betaurrekoak» se construye a partir de…",
+          "opciones": [
+            "begi (ojo) + aurre (delante)",
+            "bete (llenar) + urre (oro)",
+            "beti (siempre) + arreta (atención)",
+            "beso (brazo) + aurre (delante)"
+          ],
+          "correcta": 0,
+          "explicacion": "«Los de delante de los ojos»."
+        }
+      ],
+      "subnivel": "9.5"
     }
   ]
 }

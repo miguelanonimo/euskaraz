@@ -1878,6 +1878,56 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### El 7.5: vocabulario presentado, y la ropa a su unidad (27/08/2026)
+
+Ric: quitar `lursagarra` («nadie que conozco ha oído eso») y **presentar el
+vocabulario**, porque el tema es casi todo palabras nuevas y no se
+introducían.
+
+Ficha nueva, **«La despensa entera, por grupos»**: cinco bloques —las tres
+comidas, para beber, en el plato, de la huerta, fruta— en vez de una lista
+plana, que ya la da la pantalla de vocabulario. Cada bloque con algo de lo que
+agarrarse; el mejor, el `-ardo`:
+
+    sagar (manzana) + ardo  → sagardoa, la sidra
+    garagar (cebada) + ardo → garagardoa, la cerveza
+
+Añadida `arana`, **la ciruela** (verificada en el [OEH][oeh]; también se oye
+`okaran`). Y de aquí salió un malentendido que merece quedar escrito: Ric
+escribió «añade Arana a las frutas» y yo entendí **Sabino Arana**, a cuento de
+que `garagardoa` la acuñó él en 1896. Llegué a escribirlo en la ficha. Era la
+ciruela.
+
+[oeh]: https://www.euskaltzaindia.eus/index.php?Itemid=&id=124884&lang=es&option=com_oehberria&task=sarreraIkusi
+
+**La ropa estaba en el tema de comer.** «Jan eta edan» tenía 12 palabras de
+ropa catalogadas, dos ejercicios enteros de ropa y cuatro preguntas de ropa
+en el test de la unidad — mientras el 9.5, «Arropa eta opariak», tenía tres
+fichas de gramática sobre ropa y **3 palabras**. Movido todo al 9.5:
+12 palabras, `u8.1-g03` y `u8.1-g04` enteros, y reescritas las variantes
+mezcladas de `u7-g25`, `u7-g26`, `u7-g23` y las tres del test. El 7.5 queda
+con 28 palabras de comida y el 9.5 con 15 de ropa.
+
+### El generador de audio no ve el curso que se publica (27/08/2026)
+
+Salió tirando del hilo anterior, y es lo más importante del día para Miguel.
+
+`scripts/generar-audio/generar.mjs` lee **`data/unidades/`**, que son los
+ficheros **v1**. El curso que se publica es **`data/unidades-v2/`**.
+
+Mientras el vocabulario de v2 venía heredado de v1 daba igual. Pero **todo lo
+que hemos añadido directamente en v2 no existe en v1**, así que el generador
+no lo ve y nunca le hará audio. Son **54 palabras**, y no son de relleno: los
+ordinales enteros, `eduki` con sus formas, los verbos de la rutina del 7.3,
+el `ari naiz` del 7.4, los de poder y deber del 8.3.
+
+Listadas una a una en `docs/audios-pendientes.md`, apartado C, con las dos
+salidas posibles. Decide Miguel.
+
+De paso: casi piso la cifra de 194 audios pendientes por 181, y **no cuentan
+lo mismo** —la de 194 va sobre los ficheros v1 e incluye frases de ejemplo,
+la mía solo vocabulario de v2—. Restaurada.
+
 ### Ampliada la diferencia «hoy» / «nunca» (27/08/2026)
 
 Ric pidió dejar más claro «cuando no comes pan hoy y cuando no comes pan
