@@ -1812,6 +1812,20 @@ sus propias fichas enseñan como frases hechas; y «Zukua edan nahi dut» aparec
 como ejemplo de una ficha de la unidad 9 que **reutiliza** una frase de la 7,
 así que el detector la registró allí.
 
+### Las rutas absolutas de mis bancos de pruebas (27/08/2026)
+
+Miguel, al fusionar: *«Rutas absolutas de los tres scripts de test nuevos
+corregidas a relativas, **igual que la vez pasada**»*.
+
+Es un error mío y **es la segunda vez que se lo arregla él**. Los bancos de
+pruebas usaban `process.env.HOME + '/Proyectos/euskaraz/...'`, que funciona en
+el portátil de quien lo escribió y falla en el del otro. Lo correcto es
+`path.join(__dirname, '..')`, que es como los ha dejado.
+
+Para que no haya una tercera, **`probar-todo.sh` lo comprueba ahora**: si algún
+`scripts/probar_*.js` contiene `process.env.HOME`, falla y dice qué usar en su
+lugar. Probado metiendo uno a propósito.
+
 ### Errores de contenido en ejercicios (para el próximo lote de cambios)
 
 - **2026-08-20 · Unidad 9, dos ejercicios de opción con enunciado
