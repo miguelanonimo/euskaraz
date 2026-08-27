@@ -24,7 +24,7 @@ if [[ -n "$absolutas" ]]; then
 fi
 
 echo "── Pruebas ──"
-for t in probar_bolsa probar_casi probar_ordenar probar_test probar_navegacion probar_respuestas probar_tildes; do
+for t in probar_adelantos probar_bolsa probar_casi probar_ordenar probar_test probar_navegacion probar_respuestas probar_tildes; do
   printf "  %-20s " "$t"
   if node "scripts/$t.js" >/dev/null 2>&1; then echo "OK"; else echo "FALLA"; fallos=$((fallos+1)); fi
 done

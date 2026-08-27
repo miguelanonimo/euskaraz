@@ -1812,6 +1812,67 @@ sus propias fichas enseñan como frases hechas; y «Zukua edan nahi dut» aparec
 como ejemplo de una ficha de la unidad 9 que **reutiliza** una frase de la 7,
 así que el detector la registró allí.
 
+### Ejercicios que iban por delante de la explicación (27/08/2026)
+
+Ric, probando el 7.1: *«me sale la pregunta "no como carne" pero aquí aún no
+hemos aprendido la negación»*. Cierto: la negación se explica en el **7.2**.
+
+Al barrer resultó que no era un ejercicio suelto, sino que **el 7.1 se había
+quedado con casi toda la práctica de negación** al repartir los temas:
+
+| Ejercicio | Qué pasaba | Qué se ha hecho |
+|---|---|---|
+| `u8-g04` | 5 variantes, todas de negación | movido al 7.2 |
+| `u8-g09` | 5 de ordenar, todas con `ez` | movido al 7.2 |
+| `u8-g08` | v0 «no como carne», v4 «no hay pan» | reescritas en afirmativo |
+| `u8-g11` | la pregunta de bizkaiera partía de una frase negativa | reescrita en afirmativo |
+
+El 7.1 se quedaba en 7 ejercicios, así que entra uno nuevo (`u8-g31`, emparejar
+verbos) y vuelve a 8. El 7.2 pasa de 5 a 7.
+
+Sueltos, en otras unidades: `gehiago`/`gutxiago` (10.4) y `ezin dut` (8.3)
+salían de distractores en el 6.1, el 8.1, el 10.1 y el 10.3. Cambiados por
+palabras ya dadas.
+
+**Ahora lo vigila `scripts/probar_adelantos.js`**, dentro de `probar-todo.sh`.
+Comprueba nueve construcciones (negación, partitivo, `ari`, `gustatzen`,
+pasado, `al`, `ezin`, `behar`, comparativos) y avisa si aparecen antes de su
+tema. Deja fuera las frases hechas que el curso enseña enteras a propósito
+(`ez dakit`, `ez dut ulertzen`, `ez horregatik`).
+
+Ojo con los homógrafos, que daban 98 falsos positivos en la primera versión:
+`nago`/`dago` no son comparativos en `-ago`, y el `zuen` de la 2.2 es
+«vuestro», no el pasado.
+
+### Referencias a unidades que quedaron caducadas (27/08/2026)
+
+Tirando del hilo anterior apareció otra cosa. Varias fichas se remiten unas a
+otras («ya de la sexta unidad»), y **la reordenación a diez unidades dejó ocho
+apuntando a la unidad equivocada**:
+
+- 6.1 los números → decía 5ª, están en la **4**
+- 7.1 el `ukan` → decía 5ª, está en la **4**
+- 7.1 `egon` → decía 6ª, está en la **5**
+- 7.1 `joan`/`etorri` → decía 9ª, están en la **8**
+- 10.1 el presente de `izan` → decía 4ª, está en la **2**
+- 10.1 el `-it-` y el mecanismo de dos piezas → decían 8ª, están en la **7**
+- 7.1 el `-tik` → decía «llega en la unidad 9», y en realidad **ya se ha visto
+  en la 5**: el número estaba mal y la dirección también
+
+Había una comprobación para esto que **nunca llegó a funcionar**: el patrón era
+`unidades?`, que exige la «e» y solo casa con el plural «unidad**es** 6 y 8»,
+nunca con «unidad 9». Corregido a `unidad(?:es)?`. Además ahora mira los
+ejemplos (donde estaba escondido el del `-tik`) y entiende los ordinales en
+letra, que era la forma más común y la que se escapaba entera.
+
+Las referencias hacia adelante son **avisos, no errores**: anunciar lo que
+viene está bien hecho y el curso lo hace cuatro veces a propósito. Saber si el
+número acierta exige saber dónde se enseña cada cosa, así que eso se repasa a
+ojo; el aviso solo lo pone delante.
+
+De paso, `verificar.py` acepta `--filtro texto`, porque con 249 avisos la lista
+se cortaba a 40 y no había manera de mirar una familia concreta.
+
 ### 6.5 — la burbuja de Bizkaia (27/08/2026)
 
 Ric: *«no se entiende bien el inicio de la frase»*. Decía «el 20 de enero,

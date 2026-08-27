@@ -40,7 +40,7 @@
   "gramatica": [
     {
       "titulo": "Lo que haces cada día: verbo en -t(z)en + dut",
-      "cuerpo": "Hasta ahora solo has usado verbos que se conjugan solos: <i>naiz, dut, nago</i>. La mayoría no funcionan así. La mayoría se parten en <b>dos piezas</b>:\n\n<b>jaten</b> + <b>dut</b> = como\n\nLa primera pieza dice <b>qué</b> se hace, y no cambia nunca. La segunda dice <b>quién</b>, y es el <i>ukan</i> de la quinta unidad:\n\n<b>nik jaten dut</b> — yo como\n<b>zuk jaten duzu</b> — tú comes\n<b>hark jaten du</b> — él come\n<b>guk jaten dugu</b> — nosotros comemos\n<b>zuek jaten duzue</b> — vosotros coméis\n<b>haiek jaten dute</b> — ellos comen\n\nY como hay complemento directo, el sujeto lleva la <b>-k</b> del ergativo: <i>ni<b>k</b></i>, <i>zu<b>k</b></i>, <i>har<b>k</b></i>.\n\nEsta forma sirve para lo habitual y para lo general, como el presente castellano: «como pescado» (todos los días), no «estoy comiendo ahora mismo».",
+      "cuerpo": "Hasta ahora solo has usado verbos que se conjugan solos: <i>naiz, dut, nago</i>. La mayoría no funcionan así. La mayoría se parten en <b>dos piezas</b>:\n\n<b>jaten</b> + <b>dut</b> = como\n\nLa primera pieza dice <b>qué</b> se hace, y no cambia nunca. La segunda dice <b>quién</b>, y es el <i>ukan</i> de la cuarta unidad:\n\n<b>nik jaten dut</b> — yo como\n<b>zuk jaten duzu</b> — tú comes\n<b>hark jaten du</b> — él come\n<b>guk jaten dugu</b> — nosotros comemos\n<b>zuek jaten duzue</b> — vosotros coméis\n<b>haiek jaten dute</b> — ellos comen\n\nY como hay complemento directo, el sujeto lleva la <b>-k</b> del ergativo: <i>ni<b>k</b></i>, <i>zu<b>k</b></i>, <i>har<b>k</b></i>.\n\nEsta forma sirve para lo habitual y para lo general, como el presente castellano: «como pescado» (todos los días), no «estoy comiendo ahora mismo».",
       "ejemplos": [
         {
           "eu": "Nik ogia jaten dut.",
@@ -84,11 +84,11 @@
     },
     {
       "titulo": "Cuando no hay objeto, el auxiliar es izan",
-      "cuerpo": "Si el verbo no lleva complemento directo, la segunda pieza no es <i>dut</i> sino <b>naiz</b>. Y entonces el sujeto <b>no lleva -k</b>.\n\nTres verbos nuevos para verlo, con su forma de diccionario delante:\n\n<i>etorri</i> (venir) → <b>Ni etortzen naiz.</b> — Yo vengo.\n<i>joan</i> (ir) → <b>Zu joaten zara.</b> — Tú vas.\n<i>egon</i> (estar, ya de la sexta unidad) → <b>Hura egoten da.</b> — Él suele estar.\n\n<i>joan</i> y <i>etorri</i> los verás a fondo en la novena unidad; aquí solo te hacen falta para ver la diferencia.\n\nCompara las dos familias:\n\n<b>Nik ogia jaten dut.</b> — hay objeto (el pan) → <i>dut</i>, y <i>nik</i>\n<b>Ni etxera joaten naiz.</b> — no hay objeto → <i>naiz</i>, y <i>ni</i>\n\nEsta división entre verbos con objeto y verbos sin objeto atraviesa toda la gramática vasca. Si te acostumbras ahora a preguntarte «¿esto lleva objeto?», el resto del camino es mucho más llano.",
+      "cuerpo": "Si el verbo no lleva complemento directo, la segunda pieza no es <i>dut</i> sino <b>naiz</b>. Y entonces el sujeto <b>no lleva -k</b>.\n\nTres verbos nuevos para verlo, con su forma de diccionario delante:\n\n<i>etorri</i> (venir) → <b>Ni etortzen naiz.</b> — Yo vengo.\n<i>joan</i> (ir) → <b>Zu joaten zara.</b> — Tú vas.\n<i>egon</i> (estar, ya de la quinta unidad) → <b>Hura egoten da.</b> — Él suele estar.\n\n<i>joan</i> y <i>etorri</i> los verás a fondo en la octava unidad; aquí solo te hacen falta para ver la diferencia.\n\nCompara las dos familias:\n\n<b>Nik ogia jaten dut.</b> — hay objeto (el pan) → <i>dut</i>, y <i>nik</i>\n<b>Ni etxera joaten naiz.</b> — no hay objeto → <i>naiz</i>, y <i>ni</i>\n\nEsta división entre verbos con objeto y verbos sin objeto atraviesa toda la gramática vasca. Si te acostumbras ahora a preguntarte «¿esto lleva objeto?», el resto del camino es mucho más llano.",
       "ejemplos": [
         {
           "eu": "Ni goizean etxetik joaten naiz.",
-          "es": "Por la mañana salgo de casa. (etxe-tik = desde casa; el -tik llega en la unidad 9)",
+          "es": "Por la mañana salgo de casa. (etxe-tik = desde casa; el -tik ya lo tienes de la unidad 5)",
           "audio": "unidades/u8/ni-goizean-etxetik-joaten-naiz.mp3"
         },
         {
@@ -1100,15 +1100,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "No como pan. → Nik ____ ogia jaten.",
+          "pregunta": "No leo el libro. → Nik ____ liburua irakurtzen.",
           "opciones": [
             "ez dut",
             "dut ez",
-            "ez jaten",
-            "jaten ez"
+            "ez irakurtzen",
+            "irakurtzen ez"
           ],
           "correcta": 0,
-          "explicacion": "En negativa el auxiliar salta justo detrás del «ez»: «ez dut … jaten»."
+          "explicacion": "En negativa el auxiliar salta justo detrás del «ez»: «ez dut … irakurtzen»."
         },
         {
           "tipo": "opcion",
@@ -1163,7 +1163,7 @@
           "explicacion": "El auxiliar de objeto es «duzu», y va detrás del «ez»."
         }
       ],
-      "subnivel": "7.1"
+      "subnivel": "7.2"
     },
     {
       "id": "u8-g05",
@@ -1396,13 +1396,12 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "No como carne.",
+          "es": "Trabajo en casa.",
           "respuestas": [
-            "ez dut haragia jaten",
-            "nik ez dut haragia jaten",
-            "ez dut haragirik jaten"
+            "etxean lan egiten dut",
+            "nik etxean lan egiten dut"
           ],
-          "pista": "El auxiliar va detrás del «ez»."
+          "pista": "«lan egin» tiene dos piezas, y la que se conjuga es la segunda."
         },
         {
           "tipo": "traducir",
@@ -1432,16 +1431,17 @@
             "euskara ikasten dut",
             "nik euskara ikasten dut"
           ],
-          "pista": "«euskara» va sin artículo aquí."
+          "pista": "Recuerda: «ikasi» es aprender/estudiar."
         },
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "No hay pan.",
+          "es": "Tomo café.",
           "respuestas": [
-            "ez dago ogirik"
+            "kafea hartzen dut",
+            "nik kafea hartzen dut"
           ],
-          "pista": "Con «egon» y el partitivo."
+          "pista": "hartu → hartzen."
         }
       ],
       "subnivel": "7.1"
@@ -1531,7 +1531,7 @@
           ]
         }
       ],
-      "subnivel": "7.1"
+      "subnivel": "7.2"
     },
     {
       "id": "u8-g10",
@@ -1610,7 +1610,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«No bebo café» en bizkaiera: Nik ez ____ kafea edaten.",
+          "pregunta": "«Bebo café» en bizkaiera: Nik kafea edaten ____.",
           "opciones": [
             "dut",
             "dot",
@@ -1671,6 +1671,122 @@
           ],
           "correcta": 1,
           "explicacion": "Objeto plural en bizkaiera: «dodaz», con esa -z de siempre."
+        }
+      ],
+      "subnivel": "7.1"
+    },
+    {
+      "id": "u8-g31",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "idatzi",
+              "es": "escribir"
+            },
+            {
+              "eu": "entzun",
+              "es": "escuchar"
+            },
+            {
+              "eu": "hartu",
+              "es": "coger, tomar"
+            },
+            {
+              "eu": "irakurri",
+              "es": "leer"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "hitz egin",
+              "es": "hablar"
+            },
+            {
+              "eu": "lan egin",
+              "es": "trabajar"
+            },
+            {
+              "eu": "egin",
+              "es": "hacer"
+            },
+            {
+              "eu": "jarri",
+              "es": "poner"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "jan",
+              "es": "comer"
+            },
+            {
+              "eu": "edan",
+              "es": "beber"
+            },
+            {
+              "eu": "ikusi",
+              "es": "ver"
+            },
+            {
+              "eu": "ikasi",
+              "es": "aprender"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "irakurri",
+              "es": "leer"
+            },
+            {
+              "eu": "idatzi",
+              "es": "escribir"
+            },
+            {
+              "eu": "jarri",
+              "es": "poner"
+            },
+            {
+              "eu": "entzun",
+              "es": "escuchar"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "lan egin",
+              "es": "trabajar"
+            },
+            {
+              "eu": "hartu",
+              "es": "coger, tomar"
+            },
+            {
+              "eu": "ikusi",
+              "es": "ver"
+            },
+            {
+              "eu": "edan",
+              "es": "beber"
+            }
+          ]
         }
       ],
       "subnivel": "7.1"
@@ -3358,7 +3474,7 @@
             "de pasado"
           ],
           "correcta": 1,
-          "explicacion": "Y en preguntas: «ba al duzu dirurik?»"
+          "explicacion": "Y en preguntas también: «baduzu dirurik?»."
         },
         {
           "tipo": "opcion",

@@ -40,7 +40,7 @@
   "gramatica": [
     {
       "titulo": "La hora va en plural",
-      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>Ordu bata da.</b> — Es la una.\n<b>Ordu biak dira.</b> — Son las dos.\n<b>Hirurak dira.</b> — Son las tres.\n<b>Laurak dira.</b> — Son las cuatro.\n<b>Bostak dira.</b> — Son las cinco.\n<b>Seiak dira.</b> — Son las seis.\n<b>Zazpiak dira.</b> — Son las siete.\n<b>Zortziak dira.</b> — Son las ocho.\n<b>Bederatziak dira.</b> — Son las nueve.\n<b>Hamarrak dira.</b> — Son las diez.\n<b>Hamaikak dira.</b> — Son las once.\n<b>Hamabiak dira.</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la quinta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.",
+      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>Ordu bata da.</b> — Es la una.\n<b>Ordu biak dira.</b> — Son las dos.\n<b>Hirurak dira.</b> — Son las tres.\n<b>Laurak dira.</b> — Son las cuatro.\n<b>Bostak dira.</b> — Son las cinco.\n<b>Seiak dira.</b> — Son las seis.\n<b>Zazpiak dira.</b> — Son las siete.\n<b>Zortziak dira.</b> — Son las ocho.\n<b>Bederatziak dira.</b> — Son las nueve.\n<b>Hamarrak dira.</b> — Son las diez.\n<b>Hamaikak dira.</b> — Son las once.\n<b>Hamabiak dira.</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la cuarta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.",
       "ejemplos": [
         {
           "eu": "Zer ordu da?",
@@ -1128,7 +1128,7 @@
           "opciones": [
             "gutxi",
             "eta",
-            "gehiago",
+            "hamar",
             "erdiak"
           ],
           "correcta": 0,

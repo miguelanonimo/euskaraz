@@ -46,7 +46,7 @@
   "gramatica": [
     {
       "titulo": "El pasado de «izan»",
-      "cuerpo": "El presente lo tienes desde la cuarta unidad. El pasado se parece bastante:\n\n<b>ni nintzen</b> — yo era, yo fui\n<b>zu zinen</b> — tú eras\n<b>hura zen</b> — él/ella era\n<b>gu ginen</b> — nosotros éramos\n<b>zuek zineten</b> — vosotros erais\n<b>haiek ziren</b> — ellos eran\n\nMira la lógica: donde el presente pone <i>n-</i> para «yo» (<i>naiz</i>), el pasado también (<i>nintzen</i>); donde pone <i>z-</i> para «tú» (<i>zara</i>), el pasado también (<i>zinen</i>). Y todas las formas de pasado acaban en <b>-n</b>.\n\nEsa <b>-n</b> final es la marca del pasado en euskera. Una vez la ves, la reconoces en todas partes.",
+      "cuerpo": "El presente lo tienes desde la segunda unidad. El pasado se parece bastante:\n\n<b>ni nintzen</b> — yo era, yo fui\n<b>zu zinen</b> — tú eras\n<b>hura zen</b> — él/ella era\n<b>gu ginen</b> — nosotros éramos\n<b>zuek zineten</b> — vosotros erais\n<b>haiek ziren</b> — ellos eran\n\nMira la lógica: donde el presente pone <i>n-</i> para «yo» (<i>naiz</i>), el pasado también (<i>nintzen</i>); donde pone <i>z-</i> para «tú» (<i>zara</i>), el pasado también (<i>zinen</i>). Y todas las formas de pasado acaban en <b>-n</b>.\n\nEsa <b>-n</b> final es la marca del pasado en euskera. Una vez la ves, la reconoces en todas partes.",
       "ejemplos": [
         {
           "eu": "Ni Bilbon jaio nintzen.",
@@ -68,7 +68,7 @@
     },
     {
       "titulo": "El pasado de «ukan» (tener)",
-      "cuerpo": "Y el otro auxiliar, el de los verbos con objeto:\n\n<b>nik nuen</b> — yo tenía / lo hice\n<b>zuk zenuen</b>\n<b>hark zuen</b>\n<b>guk genuen</b>\n<b>zuek zenuten</b>\n<b>haiek zuten</b>\n\nOtra vez la <b>-n</b> del final, y el sujeto con <b>-k</b> como siempre que hay objeto.\n\nSi el objeto es plural, se cuela el <b>-it-</b> de la octava unidad:\n\n<b>nik nituen</b> — yo los/las…\n<b>zuk zenituen</b> — tú\n<b>hark zituen</b> — él/ella\n<b>guk genituen</b> — nosotros\n<b>zuek zenituzten</b> — vosotros\n<b>haiek zituzten</b> — ellos\n\n<b>Liburua irakurri nuen.</b> — Leí el libro.\n<b>Liburuak irakurri nituen.</b> — Leí los libros.",
+      "cuerpo": "Y el otro auxiliar, el de los verbos con objeto:\n\n<b>nik nuen</b> — yo tenía / lo hice\n<b>zuk zenuen</b>\n<b>hark zuen</b>\n<b>guk genuen</b>\n<b>zuek zenuten</b>\n<b>haiek zuten</b>\n\nOtra vez la <b>-n</b> del final, y el sujeto con <b>-k</b> como siempre que hay objeto.\n\nSi el objeto es plural, se cuela el <b>-it-</b> de la séptima unidad:\n\n<b>nik nituen</b> — yo los/las…\n<b>zuk zenituen</b> — tú\n<b>hark zituen</b> — él/ella\n<b>guk genituen</b> — nosotros\n<b>zuek zenituzten</b> — vosotros\n<b>haiek zituzten</b> — ellos\n\n<b>Liburua irakurri nuen.</b> — Leí el libro.\n<b>Liburuak irakurri nituen.</b> — Leí los libros.",
       "ejemplos": [
         {
           "eu": "Atzo film bat ikusi nuen.",
@@ -112,7 +112,7 @@
     },
     {
       "titulo": "«Comí», «he comido» y «comía»",
-      "cuerpo": "El euskera separa las tres con mucha limpieza. La pieza del verbo dice el aspecto, y el auxiliar dice el tiempo:\n\n<b>jan dut</b> — he comido (participio + presente)\n<b>jan nuen</b> — comí (participio + pasado)\n<b>jaten nuen</b> — comía, solía comer (forma en -t(z)en + pasado)\n\nY con los verbos sin objeto, igual:\n<b>etorri naiz</b> — he venido\n<b>etorri nintzen</b> — vine\n<b>etortzen nintzen</b> — venía, solía venir\n\nEs el mismo mecanismo de dos piezas de la octava unidad. Lo único nuevo es el auxiliar.",
+      "cuerpo": "El euskera separa las tres con mucha limpieza. La pieza del verbo dice el aspecto, y el auxiliar dice el tiempo:\n\n<b>jan dut</b> — he comido (participio + presente)\n<b>jan nuen</b> — comí (participio + pasado)\n<b>jaten nuen</b> — comía, solía comer (forma en -t(z)en + pasado)\n\nY con los verbos sin objeto, igual:\n<b>etorri naiz</b> — he venido\n<b>etorri nintzen</b> — vine\n<b>etortzen nintzen</b> — venía, solía venir\n\nEs el mismo mecanismo de dos piezas de la séptima unidad. Lo único nuevo es el auxiliar.",
       "ejemplos": [
         {
           "eu": "Atzo Bilbora joan nintzen.",
@@ -1553,8 +1553,8 @@
             "egiten"
           ],
           "distractores": [
-            "gehiago",
-            "gutxiago"
+            "dut",
+            "naiz"
           ]
         },
         {
@@ -2809,7 +2809,7 @@
             "naiz"
           ],
           "distractores": [
-            "gutxiago"
+            "nago"
           ]
         },
         {
