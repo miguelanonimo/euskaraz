@@ -1878,6 +1878,53 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Repasada la unidad 10 (27/08/2026)
+
+La medida que lo destapó: **34 de las 66 palabras de la unidad no las
+mencionaba ninguna ficha de su tema**. Y no eran de adorno — **21 de ellas se
+preguntaban en ejercicios**, algunas seis o siete veces (`norbait` ×7, `jaio`
+×6, `zaila` ×6). `norbait` llegaba a preguntarse en el **10.1** estando
+catalogada en el **10.5**.
+
+Antes de dar por hecho que la 10 era la peor, medí las diez unidades. **No lo
+era**: la 1 sale al 62% y la 5 al 51%, igual que la 10. Pero el porcentaje
+engaña — en la 1 lo no presentado son saludos, que se explican solos en la
+lista; en la 10 eran palabras que se preguntan sin haberse explicado nunca.
+**La unidad 5 sí merece una mirada después.**
+
+|  | antes | ahora |
+|---|---|---|
+| 10.1 | 4 fichas, 8 sin presentar | 5 fichas, **0** |
+| 10.4 | **1 ficha**, 7 palabras | 2 fichas, 15 palabras |
+| 10.5 | 2 fichas, **16 sin presentar** | 3 fichas, **0** |
+| toda | **34 sin presentar** | **0** |
+
+Lo estructural: **el 10.5 era un cajón de sastre** —22 palabras de cuatro
+temas distintos con dos fichas— y **los comparativos estaban mal catalogados**:
+`baino`, `-ago` y `-ena` figuraban en el 10.5 aunque se enseñan en el 10.4.
+
+Movidos al 10.4, y con ellos los adjetivos (`zaila`, `erraza`,
+`garrantzitsua`, `azkar`, `poliki`), que no es un apaño: comparar necesita
+adjetivos, y ahí se ve `zailagoa` saliendo de `zaila`.
+
+Fichas nuevas: los nueve verbos del 10.1 que nadie presentaba, los adjetivos
+del 10.4, y **los indefinidos del 10.5**, que era la que más me interesaba
+porque sale de lo que ya sabe desde la tercera unidad:
+
+    nor  (quién) → norbait  (alguien)      → inor ez  (nadie)
+    zer  (qué)   → zerbait  (algo)         → ezer ez  (nada)
+    non  (dónde) → nonbait  (en algún sitio)
+
+`ezer ez` ya lo tenía del 7.2. Verificado `norbait` en el Elhuyar, que además
+apunta que se usa en contextos **no** negativos — justo el contraste con
+`inor ez`.
+
+**Y el 10.6 estaba lleno de cosas caducadas.** No tenía título en castellano
+(decía «Dena batera» en los dos campos), y su ficha «Qué viene después»
+prometía como pendientes **el futuro** (que se enseña en el 10.3, dos temas
+antes), **el imperativo** (que hoy mismo hemos metido en el 8.2) y **`eduki`**
+(que está en el 4.5) — y hablaba de «estas **doce** unidades» cuando son diez.
+
 ### «Siempre con su traducción» (27/08/2026)
 
 Ric, sobre la ficha nueva del 9.4: *«cuando introduces asko, pixka bat y
