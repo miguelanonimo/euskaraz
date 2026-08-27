@@ -1878,6 +1878,80 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Reestructurada la unidad 8 (27/08/2026)
+
+Ric: en el 8.1 se hablaba de salir y entrar sin explicarlos, y *«la 8.1 está
+muy cargada y las demás no tanto… la 8.4 es importante hacerle explicación»*.
+
+Al medirla, el desequilibrio era peor de lo que parecía: **el 8.1 se llevaba
+el 48% del vocabulario de la unidad** (22 de 45) y **el 8.4 tenía 0 caracteres
+de explicación** para 10 palabras y 5 ejercicios.
+
+De las 22 del 8.1, solo 11 eran suyas:
+
+- 11 · `joan`/`etorri`/`ibili` y sus formas → correctas
+- 7 · `hondartza` `mendia` `urrun` `gertu` `hona` `hara` `hemendik` → **se
+  explicaban en el 8.2**, un tema después
+- 4 · `sartu` `irten` `iritsi` `mugitu` → **no se explicaban en ningún sitio**,
+  y se usaban en seis ejercicios
+
+`irten` llegaba a aparecer por primera vez **dentro de la burbuja de
+bizkaiera**, como «el *irten* del batua por allí es *urten*»: se presentaba la
+variante dialectal de una palabra que nunca se había presentado.
+
+Y la unidad se llama «Mugi zaitez!» con el subtítulo «moverse, **mandar** y la
+ciudad», pero el imperativo solo se mencionaba de pasada en una nota de
+vocabulario.
+
+**Ahora son cinco temas** (era la única unidad con cuatro junto a la 1, 2 y 3):
+
+| | Tema | Palabras | Qué cambió |
+|---|---|---|---|
+| 8.1 | Joan eta etorri | 22 → **11** | aligerado |
+| 8.2 | **Sartu eta irten** | **4** | nuevo: los verbos huérfanos + el imperativo |
+| 8.3 | Nora zoaz? | 9 → **16** | recibe las 7 que ya explicaba |
+| 8.4 | Ahal eta behar | 4 | sin tocar |
+| 8.5 | Hiria | 10 | **tres fichas nuevas** |
+
+El 8.2 tiene buen gancho: los del 8.1 van en una pieza, estos van con el
+`-t(z)en` de la unidad 7, y de paso repasan la regla de formación
+(`sartu→sartzen`, `iritsi→iristen`, `irten→irteten` son justo los tres casos
+que se enseñaron allí). El imperativo va detrás porque prepara el 8.3, que ya
+usaba `Zuzen joan, mesedez`.
+
+La burbuja de bizkaiera del 8.1 llevaba dos cosas ajenas —el `urten` y una
+nota sobre el Mercado de la Ribera—; repartidas al 8.2 y al 8.5. Y `u9-g03`,
+que era de verbos de movimiento, estaba en «la ciudad».
+
+Verificado antes de escribir: `irteten` y que va con `naiz` y no con `dut`
+([Elhuyar][ei]) —importa, porque es justo lo que cambia en bizkaiera—, y
+`okindegia` para el `-tegi` ([Elhuyar][eo]). Quitada una frase mía que decía
+que el cambio de auxiliar de `urten` es «de los pocos casos en que pasa»: sin
+respaldo.
+
+[ei]: https://hiztegiak.elhuyar.eus/eu_es/irten
+[eo]: https://hiztegiak.elhuyar.eus/es_eu/panader%C3%ADa
+
+### «Azoka» es mercado antes que feria (27/08/2026)
+
+Ric: *«cuando hablas de azoka le dices feria, pero yo lo pienso como mercado…
+si es indistinta preferiría que lo llamaras mercado»*.
+
+El [Elhuyar][ea] da **«mercado» como primera acepción** y «feria» como
+segunda, la de exposición comercial (la de Durango). Cambiado.
+
+Pero no basta con traducir las dos igual, porque `merkatua` también es «el
+mercado» y el repaso las marcaría como **traducción ambigua**, dejando de
+preguntarlas del castellano al euskera. Separadas por lo que de verdad las
+distingue:
+
+- `azoka` — el mercado de la calle, el de los días señalados (Gernika)
+- `merkatua` — el mercado como edificio (la Ribera)
+
+Explicado en la tercera ficha del 8.5.
+
+[ea]: https://hiztegiak.elhuyar.eus/eu_es/azoka
+
 ### El 7.5: vocabulario presentado, y la ropa a su unidad (27/08/2026)
 
 Ric: quitar `lursagarra` («nadie que conozco ha oído eso») y **presentar el
