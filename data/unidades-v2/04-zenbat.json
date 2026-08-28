@@ -3276,7 +3276,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«el conejo» se dice…",
+          "pregunta": "«la tía» se dice…",
           "opciones": [
             "izeba",
             "hirurogeita hamar",
@@ -3284,7 +3284,7 @@
             "hamasei"
           ],
           "correcta": 0,
-          "explicacion": "el conejo = untxia."
+          "explicacion": "la tía = izeba."
         },
         {
           "tipo": "opcion",
@@ -3457,7 +3457,7 @@
           "pregunta": "«el quinto» se dice…",
           "opciones": [
             "bosgarrena",
-            "ama",
+            "laugarrena",
             "txerria",
             "lau"
           ],
@@ -3556,15 +3556,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «laugarrena»?",
+          "pregunta": "¿Qué significa «zortzigarrena»?",
           "opciones": [
+            "el octavo",
             "el cuarto",
-            "el conejo",
             "el sobrino / el nieto",
             "el segundo"
           ],
           "correcta": 0,
-          "explicacion": "laugarrena = el cuarto."
+          "explicacion": "zortzi (ocho) + -garren + -a."
         }
       ]
     },

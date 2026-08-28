@@ -2100,12 +2100,12 @@
               "es": "¿y tú?"
             },
             {
-              "eu": "batua",
-              "es": "el euskera estándar"
+              "eu": "zer moduz?",
+              "es": "¿qué tal?"
             },
             {
-              "eu": "oso",
-              "es": "muy"
+              "eu": "batua",
+              "es": "el euskera estándar"
             },
             {
               "eu": "bai",
@@ -2187,15 +2187,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué dice esta unidad sobre el bizkaiera que aprendes aquí?",
+          "pregunta": "La «x» del euskera suena como…",
           "opciones": [
-            "Que varía de un pueblo a otro, y esto es de uso general con Bilbao como referencia",
-            "Que es el único bizkaiera correcto",
-            "Que sustituye al batua para escribir",
-            "Que se habla igual en toda Euskal Herria"
+            "«sh», como en show",
+            "«ch», como en chico",
+            "«ts», como en pizza",
+            "la «z» castellana"
           ],
           "correcta": 0,
-          "explicacion": "No hay un único bizkaiera «correcto». Tómalo como oído entrenado, no como norma."
+          "explicacion": "La x es «sh»: «kaixo» se dice «káisho»."
         },
         {
           "tipo": "opcion",
@@ -2352,7 +2352,7 @@
             "el dialecto de tu zona",
             "el batua",
             "cualquiera",
-            "el castellano"
+            "el bizkaiera"
           ],
           "correcta": 1,
           "explicacion": "El batua es el estándar común, y es lo que usan administración y medios."
