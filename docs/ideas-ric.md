@@ -1878,6 +1878,56 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Cobertura: que cada tema ejercite lo que enseña (28/08/2026)
+
+Ric corrigió el enfoque: *«olvida la regla de 2 anteriores… lo clave es que con
+todo el contenido y el vocabulario que hemos ampliado, ahora que hemos
+reestructurado todo, todas las unidades tengan bien sus ejercicios y
+**aprovechen todo su contenido**»*.
+
+Eso es **cobertura**, no contaminación — que es lo que medía el informe de la
+sesión de terminal (`docs/revision-temas-unidades.md`, sin commitear a
+propósito). Medido de nuevo:
+
+**El vocabulario estaba al 96%.** Solo 16 palabras no aparecían en ningún
+ejercicio del curso. Varias eran **la palabra que da nombre a su propio tema**
+—`gorputza` (9.3), `egutegia` (6.2), `baserria` (5.5)—, el mismo despiste que
+Ric ya había cazado con «Egutegia». **Ahora es el 100%.**
+
+**El problema de verdad era el reparto plano.** 30 de los 50 temas tenían
+exactamente 5 ejercicios, tuvieran 1 palabra o 28:
+
+    7.5   28 palabras · 6 ejercicios
+    5.2   28 palabras · 5 ejercicios
+    4.1   20 palabras · 5 ejercicios
+    5.4    1 palabra  · 5 ejercicios
+
+El curso se amplió y se reordenó, pero los ejercicios se quedaron donde
+estaban. Un tema con 28 palabras y 25 variantes no puede tocarlas todas.
+
+Por eso **no seguí el plan de ampliar todo de 5 a 8 uniforme** (1670 → 2672
+variantes): eso multiplica el trabajo por 1,6 y **conserva el desequilibrio**.
+Repartido por carga en su lugar: 17 ejercicios nuevos en los temas cargados,
+los ligeros sin tocar.
+
+|  | antes | ahora |
+|---|---|---|
+| temas con 5 ejercicios | 30 | 22 |
+| temas con 7 u 8 | 9 | 15 |
+| total | 334 ej · 1670 var | **351 ej · 1755 var** |
+
+De paso, `altua` se usaba en la ficha del 10.4 y en un ejercicio nuevo sin
+estar catalogada. Añadida.
+
+**Sobre los «72 grupos con vocabulario de tema posterior» del informe**: mi
+propio detector da **44**, y al mirarlos uno a uno **la mayoría son falsos
+positivos por homógrafos**. Todos los de `al` son el «al» castellano («Al
+final», «pegada al verbo»), no la partícula vasca del 10.5. Y `zuri` es «a ti»
+(9.2) pero también «blanco» (5.3). Queda pendiente separar los reales, que son
+pocos; el candidato más claro es `etxea`, catalogada en 5.2 pero usada desde la
+2.2, donde probablemente lo que hay que mover es la etiqueta, no los
+ejercicios.
+
 ### Repasada la unidad 10 (27/08/2026)
 
 La medida que lo destapó: **34 de las 66 palabras de la unidad no las

@@ -3741,6 +3741,166 @@
         }
       ],
       "subnivel": "9.4"
+    },
+    {
+      "id": "u9-g50",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «edaria»?",
+          "opciones": [
+            "la bebida",
+            "la comida",
+            "la cena",
+            "el vaso"
+          ],
+          "correcta": 0,
+          "explicacion": "De «edan», beber."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si «edan» es beber, «edaria» es la bebida. ¿Y «janaria»?",
+          "opciones": [
+            "la comida",
+            "el comedor",
+            "el plato",
+            "la cocina"
+          ],
+          "correcta": 0,
+          "explicacion": "De «jan», comer. Mismo mecanismo."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "edaria",
+              "es": "la bebida"
+            },
+            {
+              "eu": "janaria",
+              "es": "la comida"
+            },
+            {
+              "eu": "gauza",
+              "es": "la cosa"
+            },
+            {
+              "eu": "guztia",
+              "es": "todo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Edaria gustatzen ____» si hablo de una sola bebida.",
+          "opciones": [
+            "zait",
+            "zaizkit",
+            "dut",
+            "naiz"
+          ],
+          "correcta": 0,
+          "explicacion": "Singular: zait."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez zait batere gustatzen» significa…",
+          "opciones": [
+            "no me gusta nada",
+            "me gusta un poco",
+            "me gusta mucho",
+            "me da igual"
+          ],
+          "correcta": 0,
+          "explicacion": "«batere ez» es «nada en absoluto»."
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "id": "u9-g51",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gorputza»?",
+          "opciones": [
+            "el cuerpo",
+            "la cabeza",
+            "la mano",
+            "el corazón"
+          ],
+          "correcta": 0,
+          "explicacion": "Da nombre a este tema."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Oinez» (a pie) lleva dentro…",
+          "opciones": [
+            "oin, el pie",
+            "esku, la mano",
+            "buru, la cabeza",
+            "hanka, la pierna"
+          ],
+          "correcta": 0,
+          "explicacion": "oin + -z, el «por medio de» de la octava unidad."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Y «eskuz» (a mano)?",
+          "opciones": [
+            "esku, la mano",
+            "oin, el pie",
+            "begi, el ojo",
+            "belarri, la oreja"
+          ],
+          "correcta": 0,
+          "explicacion": "esku + -z."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Betaurrekoak» se arma con…",
+          "opciones": [
+            "begi (ojo) + aurre (delante)",
+            "bete (llenar) + urre (oro)",
+            "beso (brazo) + aurre",
+            "beti (siempre) + arreta"
+          ],
+          "correcta": 0,
+          "explicacion": "«Los de delante de los ojos»."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "gorputza",
+              "es": "el cuerpo"
+            },
+            {
+              "eu": "bihotza",
+              "es": "el corazón"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            }
+          ]
+        }
+      ],
+      "subnivel": "9.3"
     }
   ]
 }

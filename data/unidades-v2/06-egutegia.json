@@ -3190,6 +3190,243 @@
           ]
         }
       ]
+    },
+    {
+      "id": "u6-g50",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Las cinco menos cuarto. → Bostak ____.",
+          "opciones": [
+            "laurden gutxi",
+            "laurden eta",
+            "eta laurden",
+            "laurdenak"
+          ],
+          "correcta": 0,
+          "explicacion": "«gutxi» (poco) hace de «menos», y va al final."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Las tres y cuarto. → Hirurak ____.",
+          "opciones": [
+            "eta laurden",
+            "laurden gutxi",
+            "laurdenak",
+            "laurden"
+          ],
+          "correcta": 0,
+          "explicacion": "«eta laurden» para sumar, «laurden gutxi» para restar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zortziak laurden gutxi» son las…",
+          "opciones": [
+            "ocho menos cuarto",
+            "ocho y cuarto",
+            "siete y cuarto",
+            "ocho y media"
+          ],
+          "correcta": 0,
+          "explicacion": "laurden gutxi = menos cuarto."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La una y media. → ____ eta erdi.",
+          "opciones": [
+            "Ordu bata",
+            "Batak",
+            "Bata",
+            "Orduak"
+          ],
+          "correcta": 0,
+          "explicacion": "La una es la excepción: lleva «ordu» delante y va en singular."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Son las seis menos cuarto.",
+          "respuestas": [
+            "seiak laurden gutxi dira",
+            "seiak laurden gutxi"
+          ],
+          "pista": "La hora va en plural."
+        }
+      ],
+      "subnivel": "6.1"
+    },
+    {
+      "id": "u6-g51",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es un «egutegia»?",
+          "opciones": [
+            "el calendario",
+            "la semana",
+            "el reloj",
+            "el día festivo"
+          ],
+          "correcta": 0,
+          "explicacion": "Da nombre a esta unidad entera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Egutegia» lleva dentro una palabra que ya conoces. ¿Cuál?",
+          "opciones": [
+            "eguna (el día)",
+            "astea (la semana)",
+            "eguzkia (el sol)",
+            "egun on"
+          ],
+          "correcta": 0,
+          "explicacion": "egun + -tegi: el sitio de los días."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "egutegia",
+              "es": "el calendario"
+            },
+            {
+              "eu": "eguna",
+              "es": "el día"
+            },
+            {
+              "eu": "astea",
+              "es": "la semana"
+            },
+            {
+              "eu": "asteburua",
+              "es": "el fin de semana"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Asteburua» se arma con…",
+          "opciones": [
+            "aste (semana) + buru (cabeza)",
+            "aste + eguna",
+            "aste + ordua",
+            "aste + urtea"
+          ],
+          "correcta": 0,
+          "explicacion": "La «cabeza» de la semana: el fin de semana."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ordena de menor a mayor: eguna, astea, hilabetea.",
+          "opciones": [
+            "eguna < astea < hilabetea",
+            "astea < eguna < hilabetea",
+            "hilabetea < astea < eguna",
+            "eguna < hilabetea < astea"
+          ],
+          "correcta": 0,
+          "explicacion": "Día, semana, mes."
+        }
+      ],
+      "subnivel": "6.2"
+    },
+    {
+      "id": "u6-g52",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "maiatza",
+              "es": "mayo"
+            },
+            {
+              "eu": "ekaina",
+              "es": "junio"
+            },
+            {
+              "eu": "uztaila",
+              "es": "julio"
+            },
+            {
+              "eu": "abuztua",
+              "es": "agosto"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "iraila",
+              "es": "septiembre"
+            },
+            {
+              "eu": "urria",
+              "es": "octubre"
+            },
+            {
+              "eu": "azaroa",
+              "es": "noviembre"
+            },
+            {
+              "eu": "abendua",
+              "es": "diciembre"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«En marzo» se dice…",
+          "opciones": [
+            "martxoan",
+            "martxoa",
+            "martxora",
+            "martxotik"
+          ],
+          "correcta": 0,
+          "explicacion": "El mismo -n de siempre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué mes es «otsaila»?",
+          "opciones": [
+            "febrero",
+            "enero",
+            "marzo",
+            "abril"
+          ],
+          "correcta": 0,
+          "explicacion": "otsaila = febrero."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál es el último mes del año?",
+          "opciones": [
+            "abendua",
+            "azaroa",
+            "urria",
+            "urtarrila"
+          ],
+          "correcta": 0,
+          "explicacion": "abendua = diciembre."
+        }
+      ],
+      "subnivel": "6.3"
     }
   ]
 }

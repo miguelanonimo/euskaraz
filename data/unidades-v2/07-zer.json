@@ -3632,6 +3632,172 @@
           ]
         }
       ]
+    },
+    {
+      "id": "u8-g50",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "platanoa",
+              "es": "el plátano"
+            },
+            {
+              "eu": "mahatsa",
+              "es": "la uva"
+            },
+            {
+              "eu": "madaria",
+              "es": "la pera"
+            },
+            {
+              "eu": "arana",
+              "es": "la ciruela"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "marrubia",
+              "es": "la fresa"
+            },
+            {
+              "eu": "sagarra",
+              "es": "la manzana"
+            },
+            {
+              "eu": "tomatea",
+              "es": "el tomate"
+            },
+            {
+              "eu": "letxuga",
+              "es": "la lechuga"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "garagardoa",
+              "es": "la cerveza"
+            },
+            {
+              "eu": "zukua",
+              "es": "el zumo"
+            },
+            {
+              "eu": "esnea",
+              "es": "la leche"
+            },
+            {
+              "eu": "ardoa",
+              "es": "el vino"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Garagardoa» lleva dentro «ardo». ¿Con qué se hace?",
+          "opciones": [
+            "garagar, la cebada",
+            "sagar, la manzana",
+            "mahats, la uva",
+            "ur, el agua"
+          ],
+          "correcta": 0,
+          "explicacion": "garagar + ardo, igual que sagar + ardo da sagardoa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas es una bebida?",
+          "opciones": [
+            "zukua",
+            "tipula",
+            "gatza",
+            "oilaskoa"
+          ],
+          "correcta": 0,
+          "explicacion": "zukua = el zumo."
+        }
+      ],
+      "subnivel": "7.5"
+    },
+    {
+      "id": "u8-g51",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La comida del mediodía es…",
+          "opciones": [
+            "bazkaria",
+            "gosaria",
+            "afaria",
+            "janaria"
+          ],
+          "correcta": 0,
+          "explicacion": "gosaria desayuno, bazkaria comida, afaria cena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «oilaskoa»?",
+          "opciones": [
+            "el pollo",
+            "la gallina",
+            "el huevo",
+            "el pescado"
+          ],
+          "correcta": 0,
+          "explicacion": "Se parece a «oiloa», la gallina."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Arroza» es…",
+          "opciones": [
+            "el arroz",
+            "la carne",
+            "el queso",
+            "el pan"
+          ],
+          "correcta": 0,
+          "explicacion": "arroza = el arroz."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Como pan y queso.",
+          "respuestas": [
+            "ogia eta gazta jaten ditut",
+            "nik ogia eta gazta jaten ditut"
+          ],
+          "pista": "Dos cosas: el auxiliar va en plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Truco de la ficha: la sal es la corta. ¿Cuál es?",
+          "opciones": [
+            "gatza",
+            "azukrea",
+            "arroza",
+            "gazta"
+          ],
+          "correcta": 0,
+          "explicacion": "gatza (sal) y azukrea (azúcar)."
+        }
+      ],
+      "subnivel": "7.5"
     }
   ]
 }

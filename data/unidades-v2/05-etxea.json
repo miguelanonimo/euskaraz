@@ -3489,6 +3489,353 @@
           "explicacion": "txoria = el pájaro."
         }
       ]
+    },
+    {
+      "id": "u5-g50",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "logela",
+              "es": "el dormitorio"
+            },
+            {
+              "eu": "sukaldea",
+              "es": "la cocina"
+            },
+            {
+              "eu": "komuna",
+              "es": "el baño"
+            },
+            {
+              "eu": "egongela",
+              "es": "el salón"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "jangela",
+              "es": "el comedor"
+            },
+            {
+              "eu": "bainugela",
+              "es": "el cuarto de baño"
+            },
+            {
+              "eu": "sarrera",
+              "es": "la entrada"
+            },
+            {
+              "eu": "atea",
+              "es": "la puerta"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "leihoa",
+              "es": "la ventana"
+            },
+            {
+              "eu": "mahaia",
+              "es": "la mesa"
+            },
+            {
+              "eu": "aulkia",
+              "es": "la silla"
+            },
+            {
+              "eu": "ohea",
+              "es": "la cama"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "komuna",
+              "es": "el baño"
+            },
+            {
+              "eu": "logela",
+              "es": "el dormitorio"
+            },
+            {
+              "eu": "atea",
+              "es": "la puerta"
+            },
+            {
+              "eu": "leihoa",
+              "es": "la ventana"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "sukaldea",
+              "es": "la cocina"
+            },
+            {
+              "eu": "egongela",
+              "es": "el salón"
+            },
+            {
+              "eu": "ohea",
+              "es": "la cama"
+            },
+            {
+              "eu": "mahaia",
+              "es": "la mesa"
+            }
+          ]
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
+      "id": "u5-g51",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si «gela» es habitación, ¿qué es «jangela»?",
+          "opciones": [
+            "el comedor",
+            "la cocina",
+            "el dormitorio",
+            "la entrada"
+          ],
+          "correcta": 0,
+          "explicacion": "jan (comer) + gela: la habitación de comer."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Y «bainugela»?",
+          "opciones": [
+            "el cuarto de baño",
+            "el salón",
+            "la despensa",
+            "el pasillo"
+          ],
+          "correcta": 0,
+          "explicacion": "bainu (baño) + gela."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Y «logela»?",
+          "opciones": [
+            "el dormitorio",
+            "el comedor",
+            "el garaje",
+            "la cocina"
+          ],
+          "correcta": 0,
+          "explicacion": "lo (sueño) + gela: la habitación de dormir."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En un sitio público, para preguntar por el baño lo normal es decir…",
+          "opciones": [
+            "komuna",
+            "bainugela",
+            "logela",
+            "sarrera"
+          ],
+          "correcta": 0,
+          "explicacion": "«Non dago komuna?» es lo que oirás en un bar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas NO acaba en «-gela»?",
+          "opciones": [
+            "komuna",
+            "jangela",
+            "logela",
+            "egongela"
+          ],
+          "correcta": 0,
+          "explicacion": "«Komuna» va por su cuenta."
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
+      "id": "u5-g52",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«La mesa negra» se dice…",
+          "opciones": [
+            "mahai beltza",
+            "beltz mahaia",
+            "mahaia beltza",
+            "beltza mahai"
+          ],
+          "correcta": 0,
+          "explicacion": "El adjetivo detrás, y el artículo al final del grupo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Una casa nueva» se dice…",
+          "opciones": [
+            "etxe berri bat",
+            "berri etxe bat",
+            "etxe bat berria",
+            "bat etxe berri"
+          ],
+          "correcta": 0,
+          "explicacion": "El «bat» cierra el grupo: etxe berri bat."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué color es «morea»?",
+          "opciones": [
+            "morado",
+            "marrón",
+            "gris",
+            "rosa"
+          ],
+          "correcta": 0,
+          "explicacion": "morea = morado."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué color es «grisa»?",
+          "opciones": [
+            "gris",
+            "verde",
+            "amarillo",
+            "azul"
+          ],
+          "correcta": 0,
+          "explicacion": "grisa = gris."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Urdina» cubre en euskera un rango más amplio que el «azul» castellano. ¿Qué más puede ser?",
+          "opciones": [
+            "gris o verde grisáceo",
+            "morado",
+            "negro",
+            "blanco"
+          ],
+          "correcta": 0,
+          "explicacion": "Sobre todo hablando del mar o del cielo."
+        }
+      ],
+      "subnivel": "5.3"
+    },
+    {
+      "id": "u5-g53",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es un «baserria»?",
+          "opciones": [
+            "el caserío",
+            "el bosque",
+            "el pueblo",
+            "el establo"
+          ],
+          "correcta": 0,
+          "explicacion": "La casa del campo con todo lo vivo dentro."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué diferencia hay entre «etxea» y «baserria»?",
+          "opciones": [
+            "El baserri es la casa del campo, con tierras y animales",
+            "Son lo mismo",
+            "El baserri es más pequeño",
+            "El baserri es de piedra"
+          ],
+          "correcta": 0,
+          "explicacion": "«Etxea» es la casa a secas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Baso» significa…",
+          "opciones": [
+            "bosque",
+            "monte pelado",
+            "prado",
+            "huerta"
+          ],
+          "correcta": 0,
+          "explicacion": "No confundirlo con «baserri»."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "baserria",
+              "es": "el caserío"
+            },
+            {
+              "eu": "behia",
+              "es": "la vaca"
+            },
+            {
+              "eu": "oiloa",
+              "es": "la gallina"
+            },
+            {
+              "eu": "ardia",
+              "es": "la oveja"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "baserria",
+              "es": "el caserío"
+            },
+            {
+              "eu": "zaldia",
+              "es": "el caballo"
+            },
+            {
+              "eu": "txerria",
+              "es": "el cerdo"
+            },
+            {
+              "eu": "katua",
+              "es": "el gato"
+            }
+          ]
+        }
+      ],
+      "subnivel": "5.5"
     }
   ]
 }

@@ -873,6 +873,14 @@
       "subnivel": "10.4"
     },
     {
+      "eu": "altua",
+      "es": "alto/a",
+      "nota": "Sale en el «bezain» de la ficha: zu bezain altua.",
+      "audio": null,
+      "categoria": "adjetivo",
+      "subnivel": "10.4"
+    },
+    {
       "eu": "-lako",
       "es": "porque",
       "nota": "Se pega al verbo: «euskalduna naizelako».",
@@ -4393,6 +4401,157 @@
           "explicacion": "Naiz, dut, da… El verbo solo cambia de terminación."
         }
       ]
+    },
+    {
+      "id": "u11-g50",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Vosotros erais» → Zuek ____.",
+          "opciones": [
+            "zineten",
+            "zinen",
+            "ziren",
+            "ginen"
+          ],
+          "correcta": 0,
+          "explicacion": "zuek zineten. La forma de «zuek» acaba en -ten."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gogoratu»?",
+          "opciones": [
+            "recordar",
+            "olvidar",
+            "empezar",
+            "conocer"
+          ],
+          "correcta": 0,
+          "explicacion": "Y «ez naiz gogoratzen» es «no me acuerdo»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ahaztu zait» significa…",
+          "opciones": [
+            "se me ha olvidado",
+            "lo he recordado",
+            "lo he terminado",
+            "ha pasado"
+          ],
+          "correcta": 0,
+          "explicacion": "Va con la misma pieza que «gustatzen zait»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berriro»?",
+          "opciones": [
+            "otra vez",
+            "hace mucho",
+            "ayer",
+            "por fin"
+          ],
+          "correcta": 0,
+          "explicacion": "De «berri», nuevo."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "gogoratu",
+              "es": "recordar"
+            },
+            {
+              "eu": "ahaztu",
+              "es": "olvidar"
+            },
+            {
+              "eu": "berriro",
+              "es": "otra vez"
+            },
+            {
+              "eu": "aspaldi",
+              "es": "hace mucho"
+            }
+          ]
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u11-g51",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Más grande» se dice…",
+          "opciones": [
+            "handiagoa",
+            "handiena",
+            "handia",
+            "handibat"
+          ],
+          "correcta": 0,
+          "explicacion": "handi + -ago + -a. Sin el artículo de «handia»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El más grande» se dice…",
+          "opciones": [
+            "handiena",
+            "handiagoa",
+            "handia",
+            "handibaino"
+          ],
+          "correcta": 0,
+          "explicacion": "El superlativo es -ena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bilbao es más grande que Gernika» → Bilbo Gernika ____ handiagoa da.",
+          "opciones": [
+            "baino",
+            "bezain",
+            "berdin",
+            "gehiago"
+          ],
+          "correcta": 0,
+          "explicacion": "El «que» de la comparación es «baino», y va delante."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Tan alto como tú» → Zu ____ altua.",
+          "opciones": [
+            "bezain",
+            "baino",
+            "gehiago",
+            "berdin"
+          ],
+          "correcta": 0,
+          "explicacion": "Para «tan… como», bezain."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Más difícil» se dice…",
+          "opciones": [
+            "zailagoa",
+            "zailena",
+            "zaila",
+            "zailbaino"
+          ],
+          "correcta": 0,
+          "explicacion": "zail + -ago + -a."
+        }
+      ],
+      "subnivel": "10.4"
     }
   ]
 }
