@@ -1878,6 +1878,41 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### «Edonor» se preguntaba y no se enseñaba (28/08/2026)
+
+Ric, revisando ejercicios con la app: *«mira a ver si en el 3.1 incluyes
+edonor, edonon, edonora en el vocabulario, porque creo que no lo veo»*.
+
+No estaban. Y el caso era peor de lo que parecía:
+
+- `u3-g10` es el ejercicio de la **burbuja de bizkaiera** (zelan, nogaz,
+  zelango), pero **dos de sus cinco variantes preguntan por `edonor` y
+  `edonon`**.
+- Esas palabras **no son bizkaiera** — la explicación del propio ejercicio lo
+  decía: *«Es batua, no solo bizkaiera»*.
+- **No estaban en el vocabulario** de ningún tema.
+- **No las explicaba ninguna ficha.** La única mención en todo el curso era un
+  ejemplo suelto (`Edonor etor daiteke`) dentro de la burbuja de dialecto.
+
+Arreglado: ficha nueva en el 3.1, **«Edo-»: de la pregunta a "cualquiera"**,
+que sale directa de las interrogativas recién aprendidas; las tres palabras al
+vocabulario; y el ejemplo fuera de la burbuja, que no era su sitio.
+
+Y **enlaza con el 10.5**: la ficha de indefinidos que escribí ayer hacía
+`nor → norbait → inor ez`. El `edo-` es la tercera familia del mismo sistema,
+así que el 3.1 da la primera y el 10.5 cierra las otras dos, diciéndolo.
+
+Verificado en el Elhuyar: `edonor` es pronombre indefinido, «cualquiera,
+quienquiera»; `edonon`, «en cualquier parte». Existe la familia entera
+(`edonondik`, `edonongo`).
+
+Dos veces me colé escribiendo los ejemplos: primero con `sar daiteke` y
+`joan naiteke`, que son **formas potenciales** —justo lo que el 10.6 lista
+como pendiente para después del A1—, y luego con `Edonon dago`, que usa el
+`egon` del 5.1. En el 3.1 el alumno solo tiene `izan`. Se conserva un único
+ejemplo, el que ya tenía mp3 grabado, con un aviso de que el `daiteke` llega
+mucho después.
+
 ### Cobertura: que cada tema ejercite lo que enseña (28/08/2026)
 
 Ric corrigió el enfoque: *«olvida la regla de 2 anteriores… lo clave es que con

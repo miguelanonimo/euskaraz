@@ -229,6 +229,18 @@
       "subnivel": "3.4"
     },
     {
+      "titulo": "«Edo-»: de la pregunta a «cualquiera»",
+      "cuerpo": "Ya tienes las preguntas. Pues con ellas sale gratis otra familia entera: pégales <b>edo-</b> delante y se convierten en indefinidos.\n\n<i>nor</i> (quién) → <b>edonor</b> — cualquiera\n<i>non</i> (dónde) → <b>edonon</b> — en cualquier sitio\n<i>nora</i> (adónde) → <b>edonora</b> — a cualquier sitio\n\nEl sistema sigue más allá: <i>edonoiz</i> (cuando sea), <i>edozer</i> (cualquier cosa), <i>edozein</i> (cualquiera, delante de un nombre). No hace falta que te los aprendas hoy — lo que vale la pena es <b>reconocer el edo-</b>: si una palabra empieza así, alguien está diciendo «me da igual cuál».\n\nY esto es batua corriente, no cosa de Bizkaia.\n\nMás adelante verás las otras dos maneras de decir esto a medias —«alguien» y «nadie»—, que salen de estas mismas preguntas con otras piezas. Con <i>edo-</i> ya tienes la primera de las tres.",
+      "ejemplos": [
+        {
+          "eu": "Edonor etor daiteke.",
+          "es": "Puede venir cualquiera. (el «daiteke» de «poder» llega mucho más adelante; aquí fíjate solo en «edonor»)",
+          "audio": "unidades/u3/edonor-etor-daiteke.mp3"
+        }
+      ],
+      "subnivel": "3.1"
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "<b>zelan en lugar de nola</b>\nYa lo viste en la primera unidad, pero aquí es donde encaja del todo. El «¿cómo?» del bizkaiera es <b>zelan</b>. Y de ahí sale toda una familia:\n\n<b>zelan?</b> — cómo (batua: nola)\n<b>zelango?</b> — de qué tipo (batua: nolako)\n<b>holan, halan, honan</b> — así, de esa manera (batua: horrela, hala, honela)\n\n<b>nogaz en lugar de norekin</b>\nPara «¿con quién?», el bizkaiera usa el sufijo <b>-gaz</b>: <b>nogaz?</b>\n\n<b>La serie de «edo-» y «zeo-»</b>\nA cada interrogativa se le puede poner <b>edo-</b> delante para hacer el indefinido «cualquiera». Ojo: <b>edonor, edonon, edonora, edozein</b> son batua normal, no bizkaiera — te sirven en todas partes:\n\n<b>edonor</b> — cualquiera\n<b>edonon</b> — en cualquier sitio\n<b>edonora</b> — a cualquier sitio\n\nLo propiamente bizkaino es aplicárselo a <b>zelan</b>: <b>edozelan</b> (de cualquier manera), donde el batua dice <i>edonola</i>.\n\nY el <b>zeo-</b> del «alguno» sí es de allí: <b>zeozer</b> (algo), <b>zeozelan</b> (de alguna manera), donde el batua pone <i>zerbait</i> y <i>nolabait</i>. Es un sistema muy regular: aprendes la interrogativa y te salen tres palabras más.",
       "ejemplos": [
@@ -241,11 +253,6 @@
           "eu": "Nogaz zoaz?",
           "es": "¿Con quién vas? — batua: Norekin zoaz?",
           "audio": "unidades/u3/nogaz-zoaz.mp3"
-        },
-        {
-          "eu": "Edonor etor daiteke.",
-          "es": "Puede venir cualquiera.",
-          "audio": "unidades/u3/edonor-etor-daiteke.mp3"
         }
       ],
       "subnivel": "3.1",
@@ -434,6 +441,30 @@
       "es": "ahora",
       "nota": null,
       "audio": "unidades/u3/orain.mp3",
+      "categoria": "otros",
+      "subnivel": "3.1"
+    },
+    {
+      "eu": "edonor",
+      "es": "cualquiera",
+      "nota": "nor + edo-. Y de ahí toda la familia.",
+      "audio": null,
+      "categoria": "otros",
+      "subnivel": "3.1"
+    },
+    {
+      "eu": "edonon",
+      "es": "en cualquier sitio",
+      "nota": null,
+      "audio": null,
+      "categoria": "otros",
+      "subnivel": "3.1"
+    },
+    {
+      "eu": "edonora",
+      "es": "a cualquier sitio",
+      "nota": null,
+      "audio": null,
       "categoria": "otros",
       "subnivel": "3.1"
     },
@@ -1245,7 +1276,7 @@
             "Nosotros"
           ],
           "correcta": 1,
-          "explicacion": "El prefijo «edo-» convierte la interrogativa en indefinido: edonor, edonon, edonora. Es batua, no solo bizkaiera."
+          "explicacion": "El prefijo «edo-» convierte la interrogativa en indefinido: nor → edonor."
         },
         {
           "tipo": "opcion",
@@ -1258,7 +1289,7 @@
             "Cuando sea"
           ],
           "correcta": 1,
-          "explicacion": "«non» (dónde) + «edo-» = en cualquier sitio. Sistema muy regular."
+          "explicacion": "non (dónde) + edo- = en cualquier sitio. El sistema es muy regular."
         },
         {
           "tipo": "opcion",
