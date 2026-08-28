@@ -2,8 +2,8 @@
   "id": "u9",
   "numero": 9,
   "titulo": "Gustatzen zait",
-  "subtitulo": "Gustos, el cuerpo y regalos",
-  "objetivo": "Decir qué te gusta y qué no, hablar del cuerpo y comprar un regalo.",
+  "subtitulo": "Gustos, ocio, el cuerpo y regalos",
+  "objetivo": "Decir qué te gusta y qué no, hablar de ocio y deporte, del cuerpo, y comprar un regalo.",
   "color": "morado",
   "subniveles": [
     {
@@ -39,8 +39,42 @@
   ],
   "gramatica": [
     {
+      "titulo": "Aquí es donde el «gustatzen» se usa de verdad",
+      "cuerpo": "El mecanismo del <i>gustatzen zait</i> lo montaste al principio de la unidad. Este es su terreno natural: cuando alguien te pregunta qué te gusta, la respuesta casi siempre está en esta lista.\n\n<b>Futbola gustatzen zait.</b> — Me gusta el fútbol.\n<b>Musika asko gustatzen zait.</b> — Me gusta mucho la música.\n<b>Zinema ez zait gustatzen.</b> — No me gusta el cine.\n\nY si lo que gusta va en plural, ya sabes lo que pasa:\n\n<b>Liburuak gustatzen zaizkit.</b> — Me gustan los libros.\n\nFíjate en el orden, que es el de siempre: primero lo que gusta, después el verbo. Lo que en castellano es el sujeto —«me gusta <i>el fútbol</i>»— en euskera va delante igual, así que aquí las dos lenguas se parecen más de lo que parecía.\n\nCon <i>asko</i> (mucho), <i>pixka bat</i> (un poco) y <i>batere ez</i> (nada en absoluto), que también tienes del principio de la unidad, ya puedes contestar entero:\n\n<b>—Kirola gustatzen zaizu?</b> — ¿Te gusta el deporte?\n<b>—Bai, asko.</b> — Sí, mucho.",
+      "ejemplos": [
+        {
+          "eu": "Futbola gustatzen zait.",
+          "es": "Me gusta el fútbol."
+        },
+        {
+          "eu": "Dantza ez zait gustatzen.",
+          "es": "No me gusta bailar."
+        },
+        {
+          "eu": "Liburuak gustatzen zaizkit.",
+          "es": "Me gustan los libros."
+        }
+      ],
+      "subnivel": "9.4"
+    },
+    {
+      "titulo": "La pilota y el frontón: la plaza del pueblo",
+      "cuerpo": "De todo el vocabulario de este tema, <b>pilota</b> —la pelota— es el que más cosas explica.\n\nLa pelota vasca se juega en un <b>pilotalekua</b> —el frontón—, y la palabra se arma igual que las de la unidad anterior: <i>pilota</i> + <i>leku</i> (sitio) + <b>-a</b>. El sitio de la pelota.\n\nVas a oír también <b>frontoia</b>, tomado del castellano. Las dos valen y las dos están en el diccionario; <i>pilotalekua</i> es la formada con piezas vascas, y es la que los diccionarios ponen primero.\n\nLo interesante es que <b>no es solo una cancha</b>. El frontón suele estar en el centro del pueblo, junto a la iglesia y al ayuntamiento, y ha hecho de plaza mayor: sitio de reunión, de fiestas y de mercado. El Gobierno Vasco lo llama «el ágora vasca», y la comparación es literal.\n\nAsí que cuando alguien te diga que ha quedado <i>pilotalekuan</i>, puede que no vaya a jugar a nada.",
+      "ejemplos": [
+        {
+          "eu": "Pilota gustatzen zait.",
+          "es": "Me gusta la pelota."
+        },
+        {
+          "eu": "Pilotalekuan gaude.",
+          "es": "Estamos en el frontón."
+        }
+      ],
+      "subnivel": "9.4"
+    },
+    {
       "titulo": "La txapela, el campeón y el campeonato",
-      "cuerpo": "Esta es de las que explican media cultura de golpe.\n\n<b>txapela</b> es la boina. Y de ahí salen dos palabras que oirás constantemente:\n\n<b>txapelduna</b> — el campeón. Literalmente, <i>el que tiene txapela</i> (<b>-dun</b> es «el que tiene»).\n<b>txapelketa</b> — el campeonato.\n\nY el porqué está en el diccionario de Euskaltzaindia, que define <i>txapelketa</i> como «la competición en la que al ganador se le entrega, entre otras cosas, <b>una txapela</b>».\n\nO sea: no es que al campeón se le llame así por casualidad. En las competiciones vascas —pelota, bertsolaris, levantamiento de piedra— al que gana se le pone literalmente la boina. La palabra viene del gesto.",
+      "cuerpo": "Esta es de las que explican media cultura de golpe.\n\n<b>txapela</b> es la boina. Y de ahí salen dos palabras que oirás constantemente:\n\n<b>txapelduna</b> — el campeón. Literalmente, <i>el que tiene txapela</i> (<b>-dun</b> es «el que tiene»).\n<b>txapelketa</b> — el campeonato.\n\nY el porqué está en el diccionario de Euskaltzaindia, que define <i>txapelketa</i> como «la competición en la que al ganador se le entrega, entre otras cosas, <b>una txapela</b>».\n\nO sea: no es que al campeón se le llame así por casualidad. En las competiciones vascas —pelota, bertsolaris, levantamiento de piedra— al que gana se le pone literalmente la boina. La palabra viene del gesto.\n\nY por eso esta ficha vive aquí, con el deporte, y no con la ropa: la <i>txapela</i> es una prenda, pero <i>txapeldun</i> y <i>txapelketa</i> son palabras de competición.",
       "ejemplos": [
         {
           "eu": "txapela",
@@ -55,7 +89,7 @@
           "es": "el campeonato"
         }
       ],
-      "subnivel": "9.5"
+      "subnivel": "9.4"
     },
     {
       "titulo": "Ropa que va siempre en plural",
@@ -78,7 +112,7 @@
     },
     {
       "titulo": "Comprar y vender, que ya los tienes",
-      "cuerpo": "Los verbos de esta unidad se estrenan de verdad con este vocabulario. <b>erosi</b> (comprar), <b>saldu</b> (vender) y <b>nahi dut</b> (quiero) son justo lo que hace falta en una tienda o en un mercado.\n\n<b>Alkandora zuria erosi dut.</b> — He comprado una camisa blanca.\n<b>Zukua edan nahi dut.</b> — Quiero beber zumo.\n\nFíjate en que el color va detrás y con el artículo, exactamente como viste en la 6.1: <i>alkandora zuria</i>, no «zuri alkandora».",
+      "cuerpo": "Los verbos de esta unidad se estrenan de verdad con este vocabulario. <b>erosi</b> (comprar), <b>saldu</b> (vender) y <b>nahi dut</b> (quiero) son justo lo que hace falta en una tienda o en un mercado.\n\n<b>Alkandora zuria erosi dut.</b> — He comprado una camisa blanca.\n<b>Zukua edan nahi dut.</b> — Quiero beber zumo.\n\nFíjate en que el color va detrás y con el artículo, exactamente como viste en la 5.3: <i>alkandora zuria</i>, no «zuri alkandora».",
       "ejemplos": [
         {
           "eu": "Alkandora zuria erosi dut.",
@@ -181,7 +215,7 @@
     },
     {
       "titulo": "A quién: la -(r)i de los nombres",
-      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién):\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>Liburua eman dit.</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio.</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
+      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nEstos son los cinco verbos que piden un «a quién», y son los de este tema:\n\n<b>eman</b> — dar\n<b>esan</b> — decir\n<b>galdetu</b> — preguntar\n<b>erantzun</b> — responder\n<b>lagundu</b> — ayudar\n\nTodos ellos hacen algo <i>a alguien</i>, y por eso van con el <b>-ri</b>.\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién):\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>Liburua eman dit.</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio.</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
       "ejemplos": [
         {
           "eu": "Aneri esan dio.",
@@ -225,16 +259,39 @@
       "registro": "bizkaiera"
     },
     {
-      "titulo": "El cuerpo con «gustatzen»: singular y plural de golpe",
-      "cuerpo": "Las partes del cuerpo son la mejor manera de fijar lo que esta unidad enseña, porque unas van solas y otras en pareja. Y el verbo cambia según eso:\n\n<b>Zure ilea gustatzen zait.</b> — Me gusta tu pelo. <i>(una cosa → zait)</i>\n<b>Zure begiak gustatzen zaizkit.</b> — Me gustan tus ojos. <i>(varias → zaizkit)</i>\n\nEs el mismo mecanismo de la ficha del plural, pero aquí lo tienes con algo que no falla: <i>burua</i>, <i>sudurra</i>, <i>ahoa</i> y <i>bihotza</i> van en singular; <i>begiak</i>, <i>belarriak</i> y <i>eskuak</i> suelen ir en plural, porque son dos.\n\nTruco: si en castellano dirías «me gustaN», en euskera toca <b>zaizkit</b>.",
+      "titulo": "El cuerpo que ya usabas sin saberlo",
+      "cuerpo": "Antes de aprenderte la lista, fíjate en una cosa: <b>ya llevas usando partes del cuerpo desde hace tres unidades</b>, metidas dentro de palabras que te sabes.\n\nAcuérdate del <b>-z</b> de «por medio de», el de la octava unidad. Pégalo a una parte del cuerpo y sale sola:\n\n<i>oin</i> (pie) + <b>-z</b> → <b>oinez</b>, a pie\n<i>esku</i> (mano) + <b>-z</b> → <b>eskuz</b>, a mano\n<i>buru</i> (cabeza) + <b>-z</b> → <b>buruz</b>, de memoria\n\nLas dos primeras ya las has usado: <i>oinez nator</i> (vengo a pie) y <i>eskuz idazten dut</i> (escribo a mano) salieron las dos en su momento, y llevaban un pie y una mano dentro sin que hiciera falta saberlo.\n\nY hay otra escondida en un sitio inesperado:\n\n<i>begi</i> (ojo) + <i>aurre</i> (delante) + <b>-ko</b> → <b>betaurrekoak</b>, las gafas\n\nLiteralmente, «los de delante de los ojos».\n\nAsí que la lista de abajo no es material nuevo del todo: es abrir palabras que ya tenías cerradas.",
       "ejemplos": [
         {
-          "eu": "Zure ilea gustatzen zait.",
-          "es": "Me gusta tu pelo."
+          "eu": "Oinez nator.",
+          "es": "Vengo a pie."
         },
         {
-          "eu": "Zure begiak gustatzen zaizkit.",
-          "es": "Me gustan tus ojos."
+          "eu": "Eskuz idazten dut.",
+          "es": "Escribo a mano."
+        },
+        {
+          "eu": "Buruz dakit.",
+          "es": "Me lo sé de memoria."
+        }
+      ],
+      "subnivel": "9.3"
+    },
+    {
+      "titulo": "Describirte: lo que ya sabes, aplicado",
+      "cuerpo": "Con el cuerpo puedes estrenar de golpe tres cosas que llevas guardadas: los posesivos de la segunda unidad, los adjetivos y colores de la quinta, y el plural de <i>izan</i>.\n\n<b>Nire ilea beltza da.</b> — Mi pelo es negro.\n<b>Nire begiak handiak dira.</b> — Mis ojos son grandes.\n<b>Zure eskuak txikiak dira.</b> — Tus manos son pequeñas.\n\nEl adjetivo va detrás y con el artículo, como siempre. Y si lo que describes va en plural, el verbo también: <i>da</i> → <b>dira</b>.\n\n<b>Lo que va por pares, va en plural</b>\n\nAquí hay una regularidad que ahorra trabajo. Las partes que tenemos dos veces se nombran casi siempre en plural, igual que en castellano:\n\n<b>begiak</b> — los ojos\n<b>belarriak</b> — las orejas\n<b>eskuak</b> — las manos\n\nY las que van solas, en singular:\n\n<b>burua</b> — la cabeza\n<b>sudurra</b> — la nariz\n<b>ahoa</b> — la boca\n<b>bihotza</b> — el corazón\n\nSi tienes que hablar de una sola de las que van por pares, se puede: <i>esku bat</i>, una mano. Pero lo normal es el plural.",
+      "ejemplos": [
+        {
+          "eu": "Nire begiak urdinak dira.",
+          "es": "Mis ojos son azules."
+        },
+        {
+          "eu": "Nire ilea beltza da.",
+          "es": "Mi pelo es negro."
+        },
+        {
+          "eu": "Zure eskuak handiak dira.",
+          "es": "Tus manos son grandes."
         }
       ],
       "subnivel": "9.3"
@@ -245,6 +302,25 @@
       "ejemplos": [],
       "subnivel": "9.3",
       "registro": "bizkaiera"
+    },
+    {
+      "titulo": "Un regalo es siempre para alguien",
+      "cuerpo": "<b>oparia</b> — el regalo\n\nEsta palabra cierra la unidad, porque para usarla hacen falta las dos mitades que has ido montando: <b>algo que se compra</b> y <b>alguien a quien dárselo</b>.\n\nYa tienes las dos. <i>Erosi</i> es comprar, y el <b>-(r)i</b> de «a quién» lo viste en el segundo tema:\n\n<b>Opari bat erosi dut.</b> — He comprado un regalo.\n<b>Amari opari bat eman dio.</b> — Le ha dado un regalo a mi madre.\n\nFíjate en <i>amari</i>: es <i>ama</i> con el <b>-ri</b> de destinatario, el mismo que hay en <i>niri</i> (a mí), <i>zuri</i> (a ti) y <i>hari</i> (a él, a ella). Del <i>dio</i> no te preocupes todavía: con reconocerlo basta, como te decían allí.\n\n<b>Norentzat?</b> — ¿Para quién?\n\nY hay otra manera de decirlo, con <b>-entzat</b>, que es «para»:\n\n<b>Amarentzat da.</b> — Es para mi madre.\n<b>Niretzat da.</b> — Es para mí.\n\nLa diferencia es de matiz: con <i>-ri</i> el regalo llega a alguien, con <i>-entzat</i> está destinado a alguien. En la práctica las dos se oyen a todas horas.",
+      "ejemplos": [
+        {
+          "eu": "Opari bat erosi dut.",
+          "es": "He comprado un regalo."
+        },
+        {
+          "eu": "Niretzat da.",
+          "es": "Es para mí."
+        },
+        {
+          "eu": "Zure amarentzat da.",
+          "es": "Es para tu madre."
+        }
+      ],
+      "subnivel": "9.5"
     }
   ],
   "vocabulario": [
@@ -346,14 +422,14 @@
       "es": "el campeón / la campeona",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "9.5"
+      "subnivel": "9.4"
     },
     {
       "eu": "txapelketa",
       "es": "el campeonato",
       "nota": null,
       "categoria": "sustantivo",
-      "subnivel": "9.5"
+      "subnivel": "9.4"
     },
     {
       "eu": "liburua",
@@ -953,7 +1029,7 @@
           ]
         }
       ],
-      "subnivel": "9.4"
+      "subnivel": "9.2"
     },
     {
       "id": "u10-g04",
@@ -3526,6 +3602,305 @@
         }
       ],
       "subnivel": "9.5"
+    },
+    {
+      "id": "u9-g35",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Me gusta el fútbol. → Futbola ____ zait.",
+          "opciones": [
+            "gustatzen",
+            "gustatu",
+            "gustatzen zaizkit",
+            "gusta"
+          ],
+          "correcta": 0,
+          "explicacion": "El mecanismo del principio de la unidad, aplicado aquí."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Me gustan los libros. → Liburuak gustatzen ____.",
+          "opciones": [
+            "zaizkit",
+            "zait",
+            "dut",
+            "naiz"
+          ],
+          "correcta": 0,
+          "explicacion": "Plural: zaizkit."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No me gusta bailar. → Dantza ez ____ gustatzen.",
+          "opciones": [
+            "zait",
+            "zaizkit",
+            "dut",
+            "da"
+          ],
+          "correcta": 0,
+          "explicacion": "Singular y en negativo: ez zait gustatzen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¿Te gusta el deporte?» → Kirola gustatzen ____?",
+          "opciones": [
+            "zaizu",
+            "zait",
+            "zaio",
+            "duzu"
+          ],
+          "correcta": 0,
+          "explicacion": "A ti: zaizu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Musika gustatzen zaizu? —Bai, ____.",
+          "opciones": [
+            "asko",
+            "handia",
+            "ondo",
+            "bat"
+          ],
+          "correcta": 0,
+          "explicacion": "«asko» es «mucho», del primer tema de la unidad."
+        }
+      ],
+      "subnivel": "9.4"
+    },
+    {
+      "id": "u9-g36",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Pilotalekua» se arma con…",
+          "opciones": [
+            "pilota + leku (sitio)",
+            "pilota + luze",
+            "pila + lekua",
+            "pilota + lekuan"
+          ],
+          "correcta": 0,
+          "explicacion": "El sitio de la pelota. En castellano, el frontón."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es un «txapelduna»?",
+          "opciones": [
+            "el campeón",
+            "el que vende boinas",
+            "el árbitro",
+            "el frontón"
+          ],
+          "correcta": 0,
+          "explicacion": "Literalmente, «el que tiene txapela»: al ganador se le pone."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Y una «txapelketa»?",
+          "opciones": [
+            "el campeonato",
+            "la boina",
+            "el equipo",
+            "la pelota"
+          ],
+          "correcta": 0,
+          "explicacion": "La competición donde se gana la txapela."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Además de cancha, el frontón del pueblo ha hecho de…",
+          "opciones": [
+            "plaza mayor",
+            "escuela",
+            "mercado cubierto",
+            "ayuntamiento"
+          ],
+          "correcta": 0,
+          "explicacion": "Sitio de reunión y de fiestas: el Gobierno Vasco lo llama «el ágora vasca»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Me gusta la pelota.",
+          "respuestas": [
+            "pilota gustatzen zait",
+            "niri pilota gustatzen zait"
+          ],
+          "pista": "Singular, así que «zait»."
+        }
+      ],
+      "subnivel": "9.4"
+    },
+    {
+      "id": "u9-g50",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «edaria»?",
+          "opciones": [
+            "la bebida",
+            "la comida",
+            "la cena",
+            "el vaso"
+          ],
+          "correcta": 0,
+          "explicacion": "De «edan», beber."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si «edan» es beber, «edaria» es la bebida. ¿Y «janaria»?",
+          "opciones": [
+            "la comida",
+            "el comedor",
+            "el plato",
+            "la cocina"
+          ],
+          "correcta": 0,
+          "explicacion": "De «jan», comer. Mismo mecanismo."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "edaria",
+              "es": "la bebida"
+            },
+            {
+              "eu": "janaria",
+              "es": "la comida"
+            },
+            {
+              "eu": "gauza",
+              "es": "la cosa"
+            },
+            {
+              "eu": "guztia",
+              "es": "todo"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Edaria gustatzen ____» si hablo de una sola bebida.",
+          "opciones": [
+            "zait",
+            "zaizkit",
+            "dut",
+            "naiz"
+          ],
+          "correcta": 0,
+          "explicacion": "Singular: zait."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez zait batere gustatzen» significa…",
+          "opciones": [
+            "no me gusta nada",
+            "me gusta un poco",
+            "me gusta mucho",
+            "me da igual"
+          ],
+          "correcta": 0,
+          "explicacion": "«batere ez» es «nada en absoluto»."
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "id": "u9-g51",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gorputza»?",
+          "opciones": [
+            "el cuerpo",
+            "la cabeza",
+            "la mano",
+            "el corazón"
+          ],
+          "correcta": 0,
+          "explicacion": "Da nombre a este tema."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Oinez» (a pie) lleva dentro…",
+          "opciones": [
+            "oin, el pie",
+            "esku, la mano",
+            "buru, la cabeza",
+            "hanka, la pierna"
+          ],
+          "correcta": 0,
+          "explicacion": "oin + -z, el «por medio de» de la octava unidad."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Y «eskuz» (a mano)?",
+          "opciones": [
+            "esku, la mano",
+            "oin, el pie",
+            "begi, el ojo",
+            "belarri, la oreja"
+          ],
+          "correcta": 0,
+          "explicacion": "esku + -z."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Betaurrekoak» se arma con…",
+          "opciones": [
+            "begi (ojo) + aurre (delante)",
+            "bete (llenar) + urre (oro)",
+            "beso (brazo) + aurre",
+            "beti (siempre) + arreta"
+          ],
+          "correcta": 0,
+          "explicacion": "«Los de delante de los ojos»."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "gorputza",
+              "es": "el cuerpo"
+            },
+            {
+              "eu": "bihotza",
+              "es": "el corazón"
+            },
+            {
+              "eu": "ilea",
+              "es": "el pelo"
+            },
+            {
+              "eu": "hanka",
+              "es": "la pierna"
+            }
+          ]
+        }
+      ],
+      "subnivel": "9.3"
     }
   ]
 }

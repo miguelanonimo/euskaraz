@@ -197,7 +197,7 @@
     },
     {
       "titulo": "La despensa entera, por grupos",
-      "cuerpo": "Este tema es sobre todo vocabulario, y hay bastante. Muchas de estas palabras ya te han ido saliendo por el camino —<i>ogia</i>, <i>ura</i> y <i>kafea</i> llevan contigo desde los primeros ejercicios de la unidad—, así que aquí se juntan todas y se añaden las que faltan. Por grupos entran mucho mejor que en una lista suelta.\n\n<b>Las tres comidas del día</b>\n\n<b>gosaria</b> — el desayuno\n<b>bazkaria</b> — la comida (del mediodía)\n<b>afaria</b> — la cena\n\nDe estas tres salen los verbos que ya viste en el tema anterior: <i>gosaldu</i>, <i>bazkaldu</i>, <i>afaldu</i>.\n\n<b>Para beber</b>\n\n<b>ura</b> — el agua\n<b>kafea</b> — el café\n<b>esnea</b> — la leche\n<b>zukua</b> — el zumo\n<b>ardoa</b> — el vino\n<b>garagardoa</b> — la cerveza\n\nFíjate en <i>garagardoa</i>, porque lleva <b>ardo</b> dentro. Y no es la única:\n\n<i>sagar</i> (manzana) + <i>ardo</i> → <b>sagardoa</b>, la sidra.\n<i>garagar</i> (cebada) + <i>ardo</i> → <b>garagardoa</b>, la cerveza.\n\nUna vez que ves el <i>-ardo</i>, las dos se quedan solas.\n\n<b>En el plato</b>\n\n<b>ogia</b> — el pan\n<b>haragia</b> — la carne\n<b>arraina</b> — el pescado\n<b>oilaskoa</b> — el pollo\n<b>gazta</b> — el queso\n<b>arroza</b> — el arroz\n\n<i>Oilaskoa</i> se parece a <i>oiloa</i>, la gallina que viste en la quinta unidad. Te sirve para acordarte.\n\n<b>De la huerta</b>\n\n<b>barazkiak</b> — las verduras\n<b>patata</b> — la patata\n<b>tomatea</b> — el tomate\n<b>tipula</b> — la cebolla\n<b>letxuga</b> — la lechuga\n\n<b>Fruta</b>\n\n<b>sagarra</b> — la manzana\n<b>platanoa</b> — el plátano\n<b>mahatsa</b> — la uva\n<b>madaria</b> — la pera\n<b>marrubia</b> — la fresa\n<b>arana</b> — la ciruela\n\nDe <i>arana</i> vas a oír también <i>okaran</i>, que es la misma fruta con otro nombre.\n\nY <i>laranja</i>, la naranja, que ya tienes desde los colores.\n\nLa sal y el azúcar van aparte, en la ficha de al lado, porque se confunden entre ellas.",
+      "cuerpo": "Este tema es sobre todo vocabulario, y hay bastante. Muchas de estas palabras ya te han ido saliendo por el camino —<i>ogia</i>, <i>ura</i> y <i>kafea</i> llevan contigo desde los primeros ejercicios de la unidad—, así que aquí se juntan todas y se añaden las que faltan. Por grupos entran mucho mejor que en una lista suelta.\n\n<b>Las tres comidas del día</b>\n\n<b>gosaria</b> — el desayuno\n<b>bazkaria</b> — la comida (del mediodía)\n<b>afaria</b> — la cena\n\nDe estas tres salen los verbos que ya viste en el tema anterior: <i>gosaldu</i> (desayunar), <i>bazkaldu</i> (comer) y <i>afaldu</i> (cenar).\n\n<b>Para beber</b>\n\n<b>ura</b> — el agua\n<b>kafea</b> — el café\n<b>esnea</b> — la leche\n<b>zukua</b> — el zumo\n<b>ardoa</b> — el vino\n<b>garagardoa</b> — la cerveza\n\nFíjate en <i>garagardoa</i>, porque lleva <b>ardo</b> dentro. Y no es la única:\n\n<i>sagar</i> (manzana) + <i>ardo</i> → <b>sagardoa</b>, la sidra.\n<i>garagar</i> (cebada) + <i>ardo</i> → <b>garagardoa</b>, la cerveza.\n\nUna vez que ves el <i>-ardo</i>, las dos se quedan solas.\n\n<b>En el plato</b>\n\n<b>ogia</b> — el pan\n<b>haragia</b> — la carne\n<b>arraina</b> — el pescado\n<b>oilaskoa</b> — el pollo\n<b>gazta</b> — el queso\n<b>arroza</b> — el arroz\n\n<i>Oilaskoa</i> se parece a <i>oiloa</i>, la gallina que viste en la quinta unidad. Te sirve para acordarte.\n\n<b>De la huerta</b>\n\n<b>barazkiak</b> — las verduras\n<b>patata</b> — la patata\n<b>tomatea</b> — el tomate\n<b>tipula</b> — la cebolla\n<b>letxuga</b> — la lechuga\n\n<b>Fruta</b>\n\n<b>sagarra</b> — la manzana\n<b>platanoa</b> — el plátano\n<b>mahatsa</b> — la uva\n<b>madaria</b> — la pera\n<b>marrubia</b> — la fresa\n<b>arana</b> — la ciruela\n\nDe <i>arana</i> vas a oír también <i>okaran</i>, que es la misma fruta con otro nombre.\n\nY <i>laranja</i>, la naranja, que ya tienes desde los colores.\n\nLa sal y el azúcar van aparte, en la ficha de al lado, porque se confunden entre ellas.",
       "ejemplos": [
         {
           "eu": "Goizean kafea hartzen dut.",
@@ -3632,6 +3632,172 @@
           ]
         }
       ]
+    },
+    {
+      "id": "u8-g50",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "platanoa",
+              "es": "el plátano"
+            },
+            {
+              "eu": "mahatsa",
+              "es": "la uva"
+            },
+            {
+              "eu": "madaria",
+              "es": "la pera"
+            },
+            {
+              "eu": "arana",
+              "es": "la ciruela"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "marrubia",
+              "es": "la fresa"
+            },
+            {
+              "eu": "sagarra",
+              "es": "la manzana"
+            },
+            {
+              "eu": "tomatea",
+              "es": "el tomate"
+            },
+            {
+              "eu": "letxuga",
+              "es": "la lechuga"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "garagardoa",
+              "es": "la cerveza"
+            },
+            {
+              "eu": "zukua",
+              "es": "el zumo"
+            },
+            {
+              "eu": "esnea",
+              "es": "la leche"
+            },
+            {
+              "eu": "ardoa",
+              "es": "el vino"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Garagardoa» lleva dentro «ardo». ¿Con qué se hace?",
+          "opciones": [
+            "garagar, la cebada",
+            "sagar, la manzana",
+            "mahats, la uva",
+            "ur, el agua"
+          ],
+          "correcta": 0,
+          "explicacion": "garagar + ardo, igual que sagar + ardo da sagardoa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas es una bebida?",
+          "opciones": [
+            "zukua",
+            "tipula",
+            "gatza",
+            "oilaskoa"
+          ],
+          "correcta": 0,
+          "explicacion": "zukua = el zumo."
+        }
+      ],
+      "subnivel": "7.5"
+    },
+    {
+      "id": "u8-g51",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La comida del mediodía es…",
+          "opciones": [
+            "bazkaria",
+            "gosaria",
+            "afaria",
+            "janaria"
+          ],
+          "correcta": 0,
+          "explicacion": "gosaria desayuno, bazkaria comida, afaria cena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué es «oilaskoa»?",
+          "opciones": [
+            "el pollo",
+            "la gallina",
+            "el huevo",
+            "el pescado"
+          ],
+          "correcta": 0,
+          "explicacion": "Se parece a «oiloa», la gallina."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Arroza» es…",
+          "opciones": [
+            "el arroz",
+            "la carne",
+            "el queso",
+            "el pan"
+          ],
+          "correcta": 0,
+          "explicacion": "arroza = el arroz."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Como pan y queso.",
+          "respuestas": [
+            "ogia eta gazta jaten ditut",
+            "nik ogia eta gazta jaten ditut"
+          ],
+          "pista": "Dos cosas: el auxiliar va en plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Truco de la ficha: la sal es la corta. ¿Cuál es?",
+          "opciones": [
+            "gatza",
+            "azukrea",
+            "arroza",
+            "gazta"
+          ],
+          "correcta": 0,
+          "explicacion": "gatza (sal) y azukrea (azúcar)."
+        }
+      ],
+      "subnivel": "7.5"
     }
   ]
 }

@@ -937,3 +937,35 @@ Los demás contadores revisados (fichas de gramática, palabras de
 vocabulario, temas restantes de la unidad, pendientes de repaso en la
 Home) no tienen este problema: cuentan algo que no cambia al empezar
 la sesión, o ya salen de la misma fuente en vivo que la sesión usa.
+
+## 2026-08-28 — Unidades 8, 9 y 10 reequilibradas, y ejercicios repartidos por carga
+
+Merge de `ric/trabajo`, solo contenido (`data/unidades-v2/`), sin
+tocar `js/app.js`:
+
+- **Unidad 8 reestructurada en 5 temas.** El 8.1 se llevaba el 48% del
+  vocabulario y el 8.4 no tenía explicación ninguna para 10 palabras y
+  5 ejercicios. Cuatro verbos (sartu, irten, iritsi, mugitu) se
+  usaban en seis ejercicios sin explicarse en ningún sitio — uno de
+  ellos aparecía por primera vez dentro de la burbuja de bizkaiera.
+- **Unidad 9: "me gusta" recupera el ocio.** Se explicaba con el
+  cuerpo (hablar del cuerpo de otra persona resultaba extraño) cuando
+  su terreno natural —el ocio, 9.4— no tenía ni una ficha.
+- **Unidad 10: de 34 palabras sin presentar a ninguna.** El 10.5 era
+  un cajón de sastre con 22 palabras de cuatro temas distintos; los
+  comparativos (baino, -ago, -ena) estaban catalogados ahí aunque se
+  enseñan en el 10.4 — movidos.
+- **Vocabulario huérfano cubierto: del 96% al 100%.** 16 palabras no
+  aparecían en ningún ejercicio del curso, varias la que da nombre a
+  su propio tema (gorputza en 9.3, egutegia en 6.2, baserria en 5.5).
+  El reparto de ejercicios era plano (30 de 50 temas con exactamente 5,
+  tuvieran 1 palabra o 28) — ahora se reparte por carga real.
+- Barrido de fichas nuevas sin traducir alguna palabra (asko, pixka
+  bat, batere ez y otras 5) y de vocabulario sin presentar en su
+  propia ficha — ahora es un aviso permanente en `verificar.py`.
+- Guardado `docs/revision-temas-unidades.md`, el informe de análisis
+  de coherencia temática de la sesión — sin cambios de contenido, se
+  conserva por las doce palabras que se adelantan una y otra vez y las
+  decisiones abiertas sobre qué hacer con ellas.
+
+Verificado con `probar-todo.sh` en verde antes de subir.

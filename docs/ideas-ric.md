@@ -1878,6 +1878,274 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Cobertura: que cada tema ejercite lo que enseña (28/08/2026)
+
+Ric corrigió el enfoque: *«olvida la regla de 2 anteriores… lo clave es que con
+todo el contenido y el vocabulario que hemos ampliado, ahora que hemos
+reestructurado todo, todas las unidades tengan bien sus ejercicios y
+**aprovechen todo su contenido**»*.
+
+Eso es **cobertura**, no contaminación — que es lo que medía el informe de la
+sesión de terminal (`docs/revision-temas-unidades.md`, sin commitear a
+propósito). Medido de nuevo:
+
+**El vocabulario estaba al 96%.** Solo 16 palabras no aparecían en ningún
+ejercicio del curso. Varias eran **la palabra que da nombre a su propio tema**
+—`gorputza` (9.3), `egutegia` (6.2), `baserria` (5.5)—, el mismo despiste que
+Ric ya había cazado con «Egutegia». **Ahora es el 100%.**
+
+**El problema de verdad era el reparto plano.** 30 de los 50 temas tenían
+exactamente 5 ejercicios, tuvieran 1 palabra o 28:
+
+    7.5   28 palabras · 6 ejercicios
+    5.2   28 palabras · 5 ejercicios
+    4.1   20 palabras · 5 ejercicios
+    5.4    1 palabra  · 5 ejercicios
+
+El curso se amplió y se reordenó, pero los ejercicios se quedaron donde
+estaban. Un tema con 28 palabras y 25 variantes no puede tocarlas todas.
+
+Por eso **no seguí el plan de ampliar todo de 5 a 8 uniforme** (1670 → 2672
+variantes): eso multiplica el trabajo por 1,6 y **conserva el desequilibrio**.
+Repartido por carga en su lugar: 17 ejercicios nuevos en los temas cargados,
+los ligeros sin tocar.
+
+|  | antes | ahora |
+|---|---|---|
+| temas con 5 ejercicios | 30 | 22 |
+| temas con 7 u 8 | 9 | 15 |
+| total | 334 ej · 1670 var | **351 ej · 1755 var** |
+
+De paso, `altua` se usaba en la ficha del 10.4 y en un ejercicio nuevo sin
+estar catalogada. Añadida.
+
+**Sobre los «72 grupos con vocabulario de tema posterior» del informe**: mi
+propio detector da **44**, y al mirarlos uno a uno **la mayoría son falsos
+positivos por homógrafos**. Todos los de `al` son el «al» castellano («Al
+final», «pegada al verbo»), no la partícula vasca del 10.5. Y `zuri` es «a ti»
+(9.2) pero también «blanco» (5.3). Queda pendiente separar los reales, que son
+pocos; el candidato más claro es `etxea`, catalogada en 5.2 pero usada desde la
+2.2, donde probablemente lo que hay que mover es la etiqueta, no los
+ejercicios.
+
+### Repasada la unidad 10 (27/08/2026)
+
+La medida que lo destapó: **34 de las 66 palabras de la unidad no las
+mencionaba ninguna ficha de su tema**. Y no eran de adorno — **21 de ellas se
+preguntaban en ejercicios**, algunas seis o siete veces (`norbait` ×7, `jaio`
+×6, `zaila` ×6). `norbait` llegaba a preguntarse en el **10.1** estando
+catalogada en el **10.5**.
+
+Antes de dar por hecho que la 10 era la peor, medí las diez unidades. **No lo
+era**: la 1 sale al 62% y la 5 al 51%, igual que la 10. Pero el porcentaje
+engaña — en la 1 lo no presentado son saludos, que se explican solos en la
+lista; en la 10 eran palabras que se preguntan sin haberse explicado nunca.
+**La unidad 5 sí merece una mirada después.**
+
+|  | antes | ahora |
+|---|---|---|
+| 10.1 | 4 fichas, 8 sin presentar | 5 fichas, **0** |
+| 10.4 | **1 ficha**, 7 palabras | 2 fichas, 15 palabras |
+| 10.5 | 2 fichas, **16 sin presentar** | 3 fichas, **0** |
+| toda | **34 sin presentar** | **0** |
+
+Lo estructural: **el 10.5 era un cajón de sastre** —22 palabras de cuatro
+temas distintos con dos fichas— y **los comparativos estaban mal catalogados**:
+`baino`, `-ago` y `-ena` figuraban en el 10.5 aunque se enseñan en el 10.4.
+
+Movidos al 10.4, y con ellos los adjetivos (`zaila`, `erraza`,
+`garrantzitsua`, `azkar`, `poliki`), que no es un apaño: comparar necesita
+adjetivos, y ahí se ve `zailagoa` saliendo de `zaila`.
+
+Fichas nuevas: los nueve verbos del 10.1 que nadie presentaba, los adjetivos
+del 10.4, y **los indefinidos del 10.5**, que era la que más me interesaba
+porque sale de lo que ya sabe desde la tercera unidad:
+
+    nor  (quién) → norbait  (alguien)      → inor ez  (nadie)
+    zer  (qué)   → zerbait  (algo)         → ezer ez  (nada)
+    non  (dónde) → nonbait  (en algún sitio)
+
+`ezer ez` ya lo tenía del 7.2. Verificado `norbait` en el Elhuyar, que además
+apunta que se usa en contextos **no** negativos — justo el contraste con
+`inor ez`.
+
+**Y el 10.6 estaba lleno de cosas caducadas.** No tenía título en castellano
+(decía «Dena batera» en los dos campos), y su ficha «Qué viene después»
+prometía como pendientes **el futuro** (que se enseña en el 10.3, dos temas
+antes), **el imperativo** (que hoy mismo hemos metido en el 8.2) y **`eduki`**
+(que está en el 4.5) — y hablaba de «estas **doce** unidades» cuando son diez.
+
+### «Siempre con su traducción» (27/08/2026)
+
+Ric, sobre la ficha nueva del 9.4: *«cuando introduces asko, pixka bat y
+batere ez, no pones las traducciones… siempre introducimos las palabras con su
+traducción»*.
+
+Arreglado eso y **barridas todas las fichas escritas hoy**: seis casos reales
+(`asko`/`pixka bat`/`batere ez`, `pilota`, `burua`/`sudurra`/`ahoa`/`bihotza`,
+`niri`/`zuri`/`hari`, `Mugitu!`, `joan`/`etorri`/`ibili`, y los verbos del 7.3
+citados de pasada en el 7.5).
+
+Al revisarlo apareció otro hueco: el **9.2 tiene cinco verbos en el
+vocabulario** —`eman`, `esan`, `galdetu`, `erantzun`, `lagundu`— **que las
+fichas no presentaban**, el mismo problema que el 7.5. Ahora van listados con
+su traducción.
+
+**La comprobación queda puesta en `verificar.py`**, como aviso. Dos decisiones
+que la hacen utilizable en vez de ruido:
+
+1. **Se mira por tema entero, no por ficha.** A veces una palabra se glosa en
+   una ficha y se usa en la de al lado, y eso vale.
+2. **Solo las que se ESTRENAN en ese tema.** Las ya dadas no hay que
+   reglosarlas cada vez que se mencionan.
+
+Sin esas dos, saltaban 108 avisos en 59 de las 140 fichas y no servía para
+nada. Con ellas, 8 — y los ocho revisados a mano: son casos donde la
+traducción está en la prosa en vez de detrás de la palabra (`Euskal Herria`
+se explica entero, `bosgarrena` va en una lista numerada, `ezkerrera` se
+traduce dos líneas más abajo). Se dejan como aviso, no como error,
+precisamente por eso.
+
+### «Pilotalekua»: ¿es batua? (27/08/2026)
+
+Ric preguntó de dónde salía. Buena pregunta: yo lo había sacado de una página
+de instalaciones deportivas y del título de una exposición, que no es lo mismo
+que confirmarlo.
+
+Comprobado en el [Elhuyar][ep]: entrada normativa, con compuestos propios
+(`pilotaleku ireki`, `labur`, `luze`) y ejemplo de uso. Y buscando «frontón» al
+revés, el diccionario da **las dos**: `pilotaleku` primero y `frontoi` después.
+
+La ficha lo dice ahora así: las dos valen, `pilotalekua` es la formada con
+piezas vascas y la que los diccionarios ponen primero, pero `frontoia` también
+se oye.
+
+[ep]: https://hiztegiak.elhuyar.eus/eu_es/pilotaleku
+
+### Reestructurada la unidad 9 (27/08/2026)
+
+Ric: *«no me gusta que para explicar "me gusta" usemos el cuerpo… al final es
+todo un poco extraño hablar del cuerpo de otra persona»*, más que el 9.4 no
+tenía explicación y que `txapelduna` estaba en el tema siguiente.
+
+Las tres cosas eran ciertas, y **las dos primeras estaban conectadas**. El
+cuerpo no es de lo que uno dice que le gusta; lo que uno dice que le gusta es
+el fútbol, la música, el cine. O sea que la gramática de la unidad se estaba
+practicando en el sitio equivocado: forzada en el cuerpo (9.3) y ausente del
+ocio (9.4), que era justo su terreno y no tenía **ni una ficha**.
+
+|  | antes | ahora |
+|---|---|---|
+| 9.3 | 2 fichas, 722 car. | 3 fichas, 1826 car. |
+| 9.4 | **0 fichas, 0 car.** | 3 fichas, 2261 car. |
+
+**9.3** pierde la ficha del «me gustan tus ojos» y gana dos:
+
+- *El cuerpo que ya usabas sin saberlo*: `oin`+`-z`→`oinez`, `esku`+`-z`→`eskuz`,
+  `buru`+`-z`→`buruz`, y `begi`+`aurre`+`-ko`→`betaurrekoak`. Es el `-z` del
+  8.3 cobrando intereses: ya venía diciendo `oinez nator` con un pie dentro.
+- *Describirte*: posesivos del 2.2 y colores del 5.3, sobre uno mismo. Mantiene
+  lo útil (los pares van en plural) sin hablar del cuerpo de nadie.
+
+**9.4** recibe la ficha de la txapela desde el 9.5 —con una línea que dice por
+qué vive ahí— más `txapelduna` y `txapelketa`, y estrena dos: el `gustatzen`
+aplicado al ocio, que es su terreno, y la pilota con el frontón como plaza del
+pueblo (el Gobierno Vasco lo llama «el ágora vasca»). También recupera para el
+9.2 el ejercicio `u10-g03`, que era del dativo y estaba ahí por error.
+
+**9.5** cierra la unidad con *Un regalo es siempre para alguien*, que junta
+`oparia` + `erosi` + el dativo del 9.2.
+
+Tres cosas que me cacé al escribir:
+
+- `luzea` (largo) en un ejemplo, sin estar enseñado.
+- `eman diot`, cuando el 9.2 solo da la serie `dit`/`dizu`/`dio` y encima avisa
+  de que basta con reconocerla.
+- El 9.5 decía «como viste en la **6.1**» para el orden del adjetivo, que es
+  del **5.3**. Es un tipo de referencia caducada que no había buscado: a un
+  **tema**, no a una unidad. Barrido el curso entero, era la única.
+
+Y un hueco que apareció solo: al escribir la ficha del regalo metí el
+`-entzat`, y resulta que **`u9-g29` ya lo preguntaba en cuatro variantes sin
+que se explicara en ningún sitio**. La ficha nueva lo tapa.
+
+El subtítulo decía «Gustos, el cuerpo y regalos» y el ocio es un tema entero:
+ahora «Gustos, ocio, el cuerpo y regalos».
+
+### Reestructurada la unidad 8 (27/08/2026)
+
+Ric: en el 8.1 se hablaba de salir y entrar sin explicarlos, y *«la 8.1 está
+muy cargada y las demás no tanto… la 8.4 es importante hacerle explicación»*.
+
+Al medirla, el desequilibrio era peor de lo que parecía: **el 8.1 se llevaba
+el 48% del vocabulario de la unidad** (22 de 45) y **el 8.4 tenía 0 caracteres
+de explicación** para 10 palabras y 5 ejercicios.
+
+De las 22 del 8.1, solo 11 eran suyas:
+
+- 11 · `joan`/`etorri`/`ibili` y sus formas → correctas
+- 7 · `hondartza` `mendia` `urrun` `gertu` `hona` `hara` `hemendik` → **se
+  explicaban en el 8.2**, un tema después
+- 4 · `sartu` `irten` `iritsi` `mugitu` → **no se explicaban en ningún sitio**,
+  y se usaban en seis ejercicios
+
+`irten` llegaba a aparecer por primera vez **dentro de la burbuja de
+bizkaiera**, como «el *irten* del batua por allí es *urten*»: se presentaba la
+variante dialectal de una palabra que nunca se había presentado.
+
+Y la unidad se llama «Mugi zaitez!» con el subtítulo «moverse, **mandar** y la
+ciudad», pero el imperativo solo se mencionaba de pasada en una nota de
+vocabulario.
+
+**Ahora son cinco temas** (era la única unidad con cuatro junto a la 1, 2 y 3):
+
+| | Tema | Palabras | Qué cambió |
+|---|---|---|---|
+| 8.1 | Joan eta etorri | 22 → **11** | aligerado |
+| 8.2 | **Sartu eta irten** | **4** | nuevo: los verbos huérfanos + el imperativo |
+| 8.3 | Nora zoaz? | 9 → **16** | recibe las 7 que ya explicaba |
+| 8.4 | Ahal eta behar | 4 | sin tocar |
+| 8.5 | Hiria | 10 | **tres fichas nuevas** |
+
+El 8.2 tiene buen gancho: los del 8.1 van en una pieza, estos van con el
+`-t(z)en` de la unidad 7, y de paso repasan la regla de formación
+(`sartu→sartzen`, `iritsi→iristen`, `irten→irteten` son justo los tres casos
+que se enseñaron allí). El imperativo va detrás porque prepara el 8.3, que ya
+usaba `Zuzen joan, mesedez`.
+
+La burbuja de bizkaiera del 8.1 llevaba dos cosas ajenas —el `urten` y una
+nota sobre el Mercado de la Ribera—; repartidas al 8.2 y al 8.5. Y `u9-g03`,
+que era de verbos de movimiento, estaba en «la ciudad».
+
+Verificado antes de escribir: `irteten` y que va con `naiz` y no con `dut`
+([Elhuyar][ei]) —importa, porque es justo lo que cambia en bizkaiera—, y
+`okindegia` para el `-tegi` ([Elhuyar][eo]). Quitada una frase mía que decía
+que el cambio de auxiliar de `urten` es «de los pocos casos en que pasa»: sin
+respaldo.
+
+[ei]: https://hiztegiak.elhuyar.eus/eu_es/irten
+[eo]: https://hiztegiak.elhuyar.eus/es_eu/panader%C3%ADa
+
+### «Azoka» es mercado antes que feria (27/08/2026)
+
+Ric: *«cuando hablas de azoka le dices feria, pero yo lo pienso como mercado…
+si es indistinta preferiría que lo llamaras mercado»*.
+
+El [Elhuyar][ea] da **«mercado» como primera acepción** y «feria» como
+segunda, la de exposición comercial (la de Durango). Cambiado.
+
+Pero no basta con traducir las dos igual, porque `merkatua` también es «el
+mercado» y el repaso las marcaría como **traducción ambigua**, dejando de
+preguntarlas del castellano al euskera. Separadas por lo que de verdad las
+distingue:
+
+- `azoka` — el mercado de la calle, el de los días señalados (Gernika)
+- `merkatua` — el mercado como edificio (la Ribera)
+
+Explicado en la tercera ficha del 8.5.
+
+[ea]: https://hiztegiak.elhuyar.eus/eu_es/azoka
+
 ### El 7.5: vocabulario presentado, y la ropa a su unidad (27/08/2026)
 
 Ric: quitar `lursagarra` («nadie que conozco ha oído eso») y **presentar el

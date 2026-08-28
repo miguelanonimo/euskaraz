@@ -14,18 +14,24 @@
     },
     {
       "id": "8.2",
+      "titulo_eu": "Sartu eta irten",
+      "titulo": "Entrar y salir",
+      "resumen": "Los otros verbos de moverse, y cómo dar una orden."
+    },
+    {
+      "id": "8.3",
       "titulo_eu": "Nora zoaz?",
       "titulo": "Cómo llegar",
       "resumen": "En qué vas, por dónde, y cómo explicárselo a alguien."
     },
     {
-      "id": "8.3",
+      "id": "8.4",
       "titulo_eu": "Ahal eta behar",
       "titulo": "Poder y deber",
       "resumen": "Ahal, ezin, behar: hacer planes."
     },
     {
-      "id": "8.4",
+      "id": "8.5",
       "titulo_eu": "Hiria",
       "titulo": "La ciudad y sus servicios",
       "resumen": "Correos, banco, ayuntamiento, bares."
@@ -96,7 +102,7 @@
           "audio": "unidades/u9/hona-zatoz.mp3"
         }
       ],
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "titulo": "Cómo vas: la -z de «por medio de»",
@@ -118,7 +124,7 @@
           "audio": "unidades/u9/euskaraz-hitz-egiten-dugu.mp3"
         }
       ],
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "titulo": "Dar indicaciones",
@@ -140,23 +146,76 @@
           "audio": "unidades/u9/zuzen-joan-mesedez.mp3"
         }
       ],
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "<b>Salir se dice «urten»</b>\nEl <i>irten</i> del batua por allí es <b>urten</b>, y se conjuga con <i>dut</i>: <b>urten dot</b>.\n\n<b>Joan y etorri</b>\nLas formas de una pieza aguantan bastante parecidas: <b>noa, zoaz, doa</b> se oyen igual; en plural asoma otra vez la <b>-z</b>, <b>doiaz</b> por <i>doaz</i>. Y para lo habitual el bizkaiera prefiere <b>joaten naz</b> y <b>etorten naz</b>.\n\n<b>Un apunte de geografía</b>\nLa <b>azoka</b> más conocida para un bilbaíno es el Mercado de la Ribera, uno de los mercados cubiertos más grandes de Europa. Y si sales de Bilbao hacia Busturialdea, el mercado semanal de los lunes en Gernika es toda una institución.",
+      "cuerpo": "<b>Joan y etorri</b>\nLas formas de una pieza aguantan bastante parecidas: <i>noa</i>, <i>zoaz</i>, <i>doa</i> se oyen igual; en plural asoma otra vez la <b>-z</b>, <i>doiaz</i> por <i>doaz</i>. Y para lo habitual el bizkaiera prefiere <b>joaten naz</b> y <b>etorten naz</b>.",
       "ejemplos": [
         {
-          "eu": "Astelehenean azokara joaten naz.",
-          "es": "Los lunes voy a la feria. — batua: joaten naiz.",
-          "audio": "unidades/u9/astelehenean-azokara-joaten-naz.mp3"
+          "eu": "Bilbora noa.",
+          "es": "Voy a Bilbao. — igual que en batua."
+        },
+        {
+          "eu": "Etorten naz.",
+          "es": "Suelo venir. — batua: etortzen naiz."
         }
       ],
       "subnivel": "8.1",
       "registro": "bizkaiera"
     },
     {
-      "subnivel": "8.3",
+      "titulo": "«Sartu», «irten», «iritsi»: estos sí llevan auxiliar",
+      "cuerpo": "Los tres del tema anterior —<i>joan</i> (ir), <i>etorri</i> (venir) e <i>ibili</i> (andar)— son la excepción: van en una pieza, sin auxiliar. Estos cuatro son lo normal, y funcionan con el mecanismo que ya montaste en la séptima unidad: <b>verbo en -t(z)en + auxiliar</b>.\n\n<b>sartu</b> (entrar) → <b>sartzen naiz</b>\n<b>irten</b> (salir) → <b>irteten naiz</b>\n<b>iritsi</b> (llegar) → <b>iristen naiz</b>\n<b>mugitu</b> (moverse) → <b>mugitzen naiz</b>\n\nFíjate en que las terminaciones salen de la regla que ya conoces: <i>-tu</i> se vuelve <i>-tzen</i> (sartu → sartzen), <i>-i</i> se vuelve <i>-ten</i> (iritsi → iristen), y a las que acaban en <i>-n</i> se les añade <i>-ten</i> (irten → irteten).\n\nNinguno lleva objeto, así que el auxiliar es <i>izan</i> y el sujeto va sin <b>-k</b>: <i>ni sartzen naiz</i>, nunca «nik sartzen naiz».\n\n<b>Sartu</b> e <b>irten</b> van a pares, y cada uno pide su terminación:\n\n<b>Etxean sartzen naiz.</b> — Entro en casa.\n<b>Etxetik irteten naiz.</b> — Salgo de casa.\n\nEl <i>-n</i> de «dentro» y el <i>-tik</i> de «desde» son los de siempre, los de la quinta unidad.",
+      "ejemplos": [
+        {
+          "eu": "Etxean sartzen naiz.",
+          "es": "Entro en casa."
+        },
+        {
+          "eu": "Lanetik irteten naiz.",
+          "es": "Salgo del trabajo."
+        },
+        {
+          "eu": "Berandu iristen naiz.",
+          "es": "Llego tarde."
+        }
+      ],
+      "subnivel": "8.2"
+    },
+    {
+      "titulo": "Mandar: el verbo desnudo ya es una orden",
+      "cuerpo": "Para mandar, el euskera no necesita casi nada. La forma de diccionario, a secas, <b>ya es una orden</b>:\n\n<b>Sartu!</b> — ¡Entra!\n<b>Etorri!</b> — ¡Ven!\n<b>Jan!</b> — ¡Come!\n<b>Idatzi!</b> — ¡Escribe!\n\nEs lo que verás en los carteles y lo que oirás en casa.\n\nCon los verbos de una pieza del tema anterior hay además una forma propia, que resulta ser <b>la misma que el presente de zu</b>. No hay nada nuevo que memorizar:\n\n<b>Zoaz!</b> — ¡Ve! ¡Vete!\n<b>Zatoz!</b> — ¡Ven!\n\n<b>Zoaz hemendik!</b> — ¡Vete de aquí!\n\nY con esto ya puedes leer el nombre de la unidad. <b>Mugi zaitez!</b> es «¡muévete!»: una manera más cuidada de dar la orden, con una pieza (<i>zaitez</i>) que no te hace falta ahora. La versión corta y de todos los días es <b>Mugitu!</b>, de <i>mugitu</i>, moverse.",
+      "ejemplos": [
+        {
+          "eu": "Zatoz hona!",
+          "es": "¡Ven aquí!"
+        },
+        {
+          "eu": "Zoaz hemendik!",
+          "es": "¡Vete de aquí!"
+        },
+        {
+          "eu": "Sartu, mesedez.",
+          "es": "Entra, por favor."
+        }
+      ],
+      "subnivel": "8.2"
+    },
+    {
+      "titulo": "Cómo suena esto en Bizkaia",
+      "cuerpo": "<b>Salir se dice «urten»</b>\nEl <i>irten</i> del batua por allí es <b>urten</b>. Y hay algo más que el nombre: en bizkaiera se conjuga <b>con «dut»</b>, no con «naiz».\n\n<b>urten dot</b> — salgo\nfrente al batua <b>irteten naiz</b>\n\nAsí que no cambia solo la palabra: cambia el auxiliar que la acompaña. Si oyes «urten dot» y esperabas un «naiz», es por esto.",
+      "ejemplos": [
+        {
+          "eu": "Etxetik urten dot.",
+          "es": "He salido de casa. — batua: etxetik irten naiz."
+        }
+      ],
+      "registro": "bizkaiera",
+      "subnivel": "8.2"
+    },
+    {
+      "subnivel": "8.4",
       "titulo": "Poder, querer y tener que",
       "cuerpo": "Tres piezas que se montan igual y que abren muchísimo lo que puedes decir. Todas van con el verbo en su forma de diccionario delante:\n\n<b>Joan nahi dut.</b> — Quiero ir.\n<b>Joan behar dut.</b> — Tengo que ir.\n<b>Joan ahal dut.</b> — Puedo ir.\n\nEl orden es siempre el mismo: <i>verbo + nahi/behar/ahal + auxiliar</i>. Y <b>nahi</b> ya lo conocías de la unidad de comer: es la misma pieza.",
       "ejemplos": [
@@ -175,7 +234,7 @@
       ]
     },
     {
-      "subnivel": "8.3",
+      "subnivel": "8.4",
       "titulo": "«Ezin» es «no puedo», sin «ez»",
       "cuerpo": "Aquí hay una rareza que conviene tener clara desde el principio.\n\nPara negar casi todo se pone <b>ez</b> delante, como ya sabes. Pero «no poder» tiene palabra propia:\n\n<b>ahal dut</b> — puedo\n<b>ezin dut</b> — no puedo\n\n<i>Ezin</i> ya lleva la negación dentro, así que <b>no</b> se dice «ez ezin dut». Y por eso tampoco hace saltar el auxiliar como hace la negación normal.\n\n<b>Ezin dut joan.</b> — No puedo ir.",
       "ejemplos": [
@@ -192,6 +251,51 @@
           "es": "No puedo ir."
         }
       ]
+    },
+    {
+      "titulo": "«-tegi»: el sitio donde está la cosa",
+      "cuerpo": "Una de las piezas más rentables del euskera, porque te deja adivinar palabras que no has visto nunca. Pegando <b>-tegi</b> (a veces <b>-degi</b>) a un nombre sale <b>el sitio</b> donde está esa cosa o donde se hace:\n\n<i>liburu</i> (libro) + <b>-tegi</b> → <b>liburutegia</b>, la biblioteca\n<i>okin</i> (panadero) + <b>-degi</b> → <b>okindegia</b>, la panadería\n<i>sagardo</i> (sidra) + <b>-tegi</b> → <b>sagardotegia</b>, la sidrería\n\nLa sidrería merece parada aparte: al <i>sagardotegi</i> se va a comer y a beber sidra servida directamente de la barrica, y es de las costumbres más vivas que hay por aquí.\n\nLo útil es la regla: cuando veas una palabra larga acabada en <b>-tegi</b>, es un sitio. Con eso ya has entendido la mitad.",
+      "ejemplos": [
+        {
+          "eu": "Liburutegira noa.",
+          "es": "Voy a la biblioteca."
+        },
+        {
+          "eu": "Okindegian ogia erosten dut.",
+          "es": "Compro pan en la panadería."
+        }
+      ],
+      "subnivel": "8.5"
+    },
+    {
+      "titulo": "«Hiria» y «herria»: la ciudad y el pueblo",
+      "cuerpo": "<b>hiria</b> — la ciudad\n<b>herria</b> — el pueblo\n\n<i>Herria</i> ya la tienes desde la segunda unidad, pero conviene mirarla otra vez, porque hace <b>dos trabajos</b>: es el pueblo como sitio —una localidad— y el pueblo como <b>gente</b>.\n\nEse segundo sentido es el que llevas viendo desde el primer día sin saberlo, en <b>Euskal Herria</b>. No es un territorio dibujado en un mapa: es «el pueblo del euskera», la gente que habla la lengua, y de ahí el sitio donde vive.\n\nPor eso el nombre del territorio sale del nombre de la lengua, y no al revés, como ya se contó en la primera unidad.",
+      "ejemplos": [
+        {
+          "eu": "Bilbo hiri handia da.",
+          "es": "Bilbao es una ciudad grande."
+        },
+        {
+          "eu": "Nire herria txikia da.",
+          "es": "Mi pueblo es pequeño."
+        }
+      ],
+      "subnivel": "8.5"
+    },
+    {
+      "titulo": "«Azoka», «merkatua» y «denda»: tres maneras de comprar",
+      "cuerpo": "Las tres se traducen en castellano con palabras que se pisan, así que conviene separarlas de una vez:\n\n<b>denda</b> — la tienda. Un local, abierto todos los días.\n<b>merkatua</b> — el mercado como <b>edificio</b>, el cubierto de toda la vida.\n<b>azoka</b> — el mercado de la <b>calle</b>, el de los días señalados: el semanal del pueblo, o el de una fecha concreta.\n\nEl <i>merkatu</i> más conocido de Bilbao es el de la Ribera, uno de los mercados cubiertos más grandes de Europa.\n\nY una <i>azoka</i> ya la conoces: el <b>Urriko Azken Astelehena</b> de Gernika, el último lunes de octubre, que salió con el calendario. Ahí se ve bien la diferencia — no es un edificio que abre a diario, es un día en que el pueblo entero se llena de puestos.",
+      "ejemplos": [
+        {
+          "eu": "Azokara noa.",
+          "es": "Voy al mercado."
+        },
+        {
+          "eu": "Dendan erosten dut.",
+          "es": "Compro en la tienda."
+        }
+      ],
+      "subnivel": "8.5"
     }
   ],
   "vocabulario": [
@@ -201,7 +305,7 @@
       "nota": null,
       "audio": "unidades/u6/kalea.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "eskola",
@@ -209,7 +313,7 @@
       "nota": null,
       "audio": "unidades/u6/eskola.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "lana",
@@ -217,7 +321,7 @@
       "nota": null,
       "audio": "unidades/u6/lana.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "taberna",
@@ -225,7 +329,7 @@
       "nota": null,
       "audio": "unidades/u6/taberna.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "joan",
@@ -321,7 +425,7 @@
       "nota": "También «atera» en muchos sitios.",
       "audio": "unidades/u9/irten.mp3",
       "categoria": "verbo",
-      "subnivel": "8.1"
+      "subnivel": "8.2"
     },
     {
       "eu": "sartu",
@@ -329,7 +433,7 @@
       "nota": null,
       "audio": "unidades/u9/sartu.mp3",
       "categoria": "verbo",
-      "subnivel": "8.1"
+      "subnivel": "8.2"
     },
     {
       "eu": "iritsi",
@@ -337,7 +441,7 @@
       "nota": null,
       "audio": "unidades/u9/iritsi.mp3",
       "categoria": "verbo",
-      "subnivel": "8.1"
+      "subnivel": "8.2"
     },
     {
       "eu": "geltokia",
@@ -345,7 +449,7 @@
       "nota": null,
       "audio": "unidades/u9/geltokia.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "eu": "autobusa",
@@ -353,7 +457,7 @@
       "nota": null,
       "audio": "unidades/u9/autobusa.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "eu": "trena",
@@ -361,7 +465,7 @@
       "nota": null,
       "audio": "unidades/u9/trena.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "eu": "kotxea",
@@ -369,7 +473,7 @@
       "nota": "También «autoa».",
       "audio": "unidades/u9/kotxea.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "eu": "bizikleta",
@@ -377,7 +481,7 @@
       "nota": null,
       "audio": "unidades/u9/bizikleta.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "eu": "oinez",
@@ -385,7 +489,7 @@
       "nota": "De «oin» (pie) + la -z de «por medio de».",
       "audio": "unidades/u9/oinez.mp3",
       "categoria": "otros",
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "eu": "hondartza",
@@ -393,7 +497,7 @@
       "nota": null,
       "audio": "unidades/u9/hondartza.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.1"
+      "subnivel": "8.3"
     },
     {
       "eu": "mendia",
@@ -401,23 +505,23 @@
       "nota": null,
       "audio": "unidades/u9/mendia.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.1"
+      "subnivel": "8.3"
     },
     {
       "eu": "merkatua",
-      "es": "el mercado",
+      "es": "el mercado (el edificio)",
       "nota": null,
       "audio": "unidades/u9/merkatua.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "azoka",
-      "es": "la feria, el mercado",
-      "nota": "La más conocida en Bilbao es el Mercado de la Ribera. Si sales hacia Gernika, la suya es la del lunes.",
+      "es": "el mercado",
+      "nota": "El de la calle, el de los días señalados.",
       "audio": "unidades/u9/azoka.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "denda",
@@ -425,7 +529,7 @@
       "nota": null,
       "audio": "unidades/u9/denda.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "liburutegia",
@@ -433,7 +537,7 @@
       "nota": "De «liburu» (libro) + «tegi» (lugar de).",
       "audio": "unidades/u9/liburutegia.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "ospitalea",
@@ -441,7 +545,7 @@
       "nota": null,
       "audio": "unidades/u9/ospitalea.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "hiria",
@@ -449,7 +553,7 @@
       "nota": null,
       "audio": "unidades/u9/hiria.mp3",
       "categoria": "sustantivo",
-      "subnivel": "8.4"
+      "subnivel": "8.5"
     },
     {
       "eu": "urrun",
@@ -457,7 +561,7 @@
       "nota": null,
       "audio": "unidades/u9/urrun.mp3",
       "categoria": "otros",
-      "subnivel": "8.1"
+      "subnivel": "8.3"
     },
     {
       "eu": "gertu",
@@ -465,7 +569,7 @@
       "nota": "También «hurbil».",
       "audio": "unidades/u9/gertu.mp3",
       "categoria": "otros",
-      "subnivel": "8.1"
+      "subnivel": "8.3"
     },
     {
       "eu": "zuzen",
@@ -473,7 +577,7 @@
       "nota": null,
       "audio": "unidades/u9/zuzen.mp3",
       "categoria": "otros",
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "eu": "ezkerrera",
@@ -481,7 +585,7 @@
       "nota": null,
       "audio": "unidades/u9/ezkerrera.mp3",
       "categoria": "otros",
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "eu": "eskuinera",
@@ -489,7 +593,7 @@
       "nota": null,
       "audio": "unidades/u9/eskuinera.mp3",
       "categoria": "otros",
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "eu": "hona",
@@ -497,7 +601,7 @@
       "nota": null,
       "audio": "unidades/u9/hona.mp3",
       "categoria": "otros",
-      "subnivel": "8.1"
+      "subnivel": "8.3"
     },
     {
       "eu": "hara",
@@ -505,7 +609,7 @@
       "nota": null,
       "audio": "unidades/u9/hara.mp3",
       "categoria": "otros",
-      "subnivel": "8.1"
+      "subnivel": "8.3"
     },
     {
       "eu": "hemendik",
@@ -513,42 +617,42 @@
       "nota": null,
       "audio": "unidades/u9/hemendik.mp3",
       "categoria": "otros",
-      "subnivel": "8.1"
+      "subnivel": "8.3"
     },
     {
       "eu": "mugitu",
       "es": "mover, moverse",
       "nota": "El título de la unidad, «Mugi zaitez!», es su imperativo: «¡muévete!».",
       "categoria": "verbo",
-      "subnivel": "8.1"
+      "subnivel": "8.2"
     },
     {
       "eu": "ahal dut",
       "es": "puedo",
       "nota": "Tener la posibilidad de hacer algo.",
       "categoria": "verbo",
-      "subnivel": "8.3"
+      "subnivel": "8.4"
     },
     {
       "eu": "ezin dut",
       "es": "no puedo",
       "nota": "Fíjate: no lleva «ez» delante, ya va dentro.",
       "categoria": "verbo",
-      "subnivel": "8.3"
+      "subnivel": "8.4"
     },
     {
       "eu": "behar dut",
       "es": "tengo que, necesito",
       "nota": null,
       "categoria": "verbo",
-      "subnivel": "8.3"
+      "subnivel": "8.4"
     },
     {
       "eu": "nahi dut",
       "es": "quiero",
       "nota": "Ya la tenías; aquí se ve en familia.",
       "categoria": "verbo",
-      "subnivel": "8.3"
+      "subnivel": "8.4"
     }
   ],
   "ejercicios": [
@@ -808,7 +912,7 @@
           ]
         }
       ],
-      "subnivel": "8.4"
+      "subnivel": "8.2"
     },
     {
       "id": "u9-g04",
@@ -958,7 +1062,7 @@
           ]
         }
       ],
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "id": "u9-g06",
@@ -1029,7 +1133,7 @@
           "explicacion": "bizikleta + -z = bizikletaz."
         }
       ],
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "id": "u9-g07",
@@ -1236,7 +1340,7 @@
           ]
         }
       ],
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "id": "u9-g10",
@@ -1307,7 +1411,7 @@
           "explicacion": "Igual que la derecha: ezkerrera."
         }
       ],
-      "subnivel": "8.1"
+      "subnivel": "8.3"
     },
     {
       "id": "u9-g11",
@@ -1453,7 +1557,7 @@
     },
     {
       "id": "u8-g13",
-      "subnivel": "8.3",
+      "subnivel": "8.4",
       "variantes": [
         {
           "tipo": "opcion",
@@ -1524,7 +1628,7 @@
     },
     {
       "id": "u8-g14",
-      "subnivel": "8.3",
+      "subnivel": "8.4",
       "variantes": [
         {
           "tipo": "pares",
@@ -1607,23 +1711,45 @@
     },
     {
       "id": "u8-g15",
-      "subnivel": "8.1",
+      "subnivel": "8.2",
       "variantes": [
         {
           "tipo": "pares",
-          "instruccion": "Empareja ir y venir",
+          "instruccion": "Empareja los verbos",
           "pares": [
             {
               "eu": "sartu",
               "es": "entrar"
             },
             {
-              "eu": "hemendik",
-              "es": "desde aquí"
+              "eu": "irten",
+              "es": "salir"
             },
+            {
+              "eu": "iritsi",
+              "es": "llegar"
+            },
+            {
+              "eu": "mugitu",
+              "es": "moverse"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
             {
               "eu": "irten",
               "es": "salir"
+            },
+            {
+              "eu": "joan",
+              "es": "ir"
+            },
+            {
+              "eu": "sartu",
+              "es": "entrar"
             },
             {
               "eu": "etorri",
@@ -1633,70 +1759,75 @@
         },
         {
           "tipo": "pares",
-          "instruccion": "Empareja ir y venir",
+          "instruccion": "Empareja los verbos",
           "pares": [
             {
-              "eu": "hemendik",
-              "es": "desde aquí"
+              "eu": "iritsi",
+              "es": "llegar"
             },
             {
-              "eu": "dator",
-              "es": "(él/ella) viene"
+              "eu": "ibili",
+              "es": "andar"
             },
             {
-              "eu": "doa",
-              "es": "(él/ella) va"
+              "eu": "mugitu",
+              "es": "moverse"
             },
             {
-              "eu": "urrun",
-              "es": "lejos"
+              "eu": "sartu",
+              "es": "entrar"
             }
           ]
         },
         {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «etorri»?",
-          "opciones": [
-            "venir",
-            "la ciudad",
-            "puedo",
-            "el coche"
-          ],
-          "correcta": 0,
-          "explicacion": "etorri = venir."
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "mugitu",
+              "es": "moverse"
+            },
+            {
+              "eu": "irten",
+              "es": "salir"
+            },
+            {
+              "eu": "etorri",
+              "es": "venir"
+            },
+            {
+              "eu": "iritsi",
+              "es": "llegar"
+            }
+          ]
         },
         {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "«ir» se dice…",
-          "opciones": [
-            "joan",
-            "hiria",
-            "iritsi",
-            "etorri"
-          ],
-          "correcta": 0,
-          "explicacion": "ir = joan."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «urrun»?",
-          "opciones": [
-            "lejos",
-            "recto, derecho",
-            "andar, andar por ahí",
-            "el hospital"
-          ],
-          "correcta": 0,
-          "explicacion": "urrun = lejos."
+          "tipo": "pares",
+          "instruccion": "Empareja los verbos",
+          "pares": [
+            {
+              "eu": "sartu",
+              "es": "entrar"
+            },
+            {
+              "eu": "iritsi",
+              "es": "llegar"
+            },
+            {
+              "eu": "joan",
+              "es": "ir"
+            },
+            {
+              "eu": "irten",
+              "es": "salir"
+            }
+          ]
         }
       ]
     },
     {
       "id": "u8-g16",
-      "subnivel": "8.4",
+      "subnivel": "8.5",
       "variantes": [
         {
           "tipo": "pares",
@@ -1785,7 +1916,7 @@
     },
     {
       "id": "u8-g17",
-      "subnivel": "8.4",
+      "subnivel": "8.5",
       "variantes": [
         {
           "tipo": "pares",
@@ -1874,7 +2005,7 @@
     },
     {
       "id": "u8-g18",
-      "subnivel": "8.4",
+      "subnivel": "8.5",
       "variantes": [
         {
           "tipo": "pares",
@@ -1963,7 +2094,7 @@
     },
     {
       "id": "u8-g19",
-      "subnivel": "8.4",
+      "subnivel": "8.5",
       "variantes": [
         {
           "tipo": "pares",
@@ -2319,7 +2450,7 @@
     },
     {
       "id": "u8-g23",
-      "subnivel": "8.2",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "pares",
@@ -2408,7 +2539,7 @@
     },
     {
       "id": "u8-g24",
-      "subnivel": "8.3",
+      "subnivel": "8.4",
       "variantes": [
         {
           "tipo": "pares",
@@ -2497,7 +2628,7 @@
     },
     {
       "id": "u8-g25",
-      "subnivel": "8.3",
+      "subnivel": "8.4",
       "variantes": [
         {
           "tipo": "pares",
@@ -2586,7 +2717,7 @@
     },
     {
       "id": "u8-g26",
-      "subnivel": "8.3",
+      "subnivel": "8.4",
       "variantes": [
         {
           "tipo": "pares",
@@ -2675,7 +2806,7 @@
     },
     {
       "id": "u8-g27",
-      "subnivel": "8.2",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "opcion",
@@ -2746,7 +2877,7 @@
     },
     {
       "id": "u8-g28",
-      "subnivel": "8.2",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "opcion",
@@ -2826,7 +2957,7 @@
     },
     {
       "id": "u8-g29",
-      "subnivel": "8.2",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "orden",
@@ -2899,7 +3030,7 @@
     },
     {
       "id": "u8-g30",
-      "subnivel": "8.2",
+      "subnivel": "8.3",
       "variantes": [
         {
           "tipo": "opcion",
@@ -2976,6 +3107,275 @@
           "explicacion": "Orden + ordinal: aquí se juntan dos cosas que ya sabes."
         }
       ]
+    },
+    {
+      "id": "u9-g31",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "sartu → ____",
+          "opciones": [
+            "sartzen",
+            "sarten",
+            "sartuten",
+            "sartzten"
+          ],
+          "correcta": 0,
+          "explicacion": "-tu se vuelve -tzen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "irten → ____",
+          "opciones": [
+            "irteten",
+            "irtetzen",
+            "irtenen",
+            "irtezen"
+          ],
+          "correcta": 0,
+          "explicacion": "Acaba en -n, así que se le añade -ten."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "iritsi → ____",
+          "opciones": [
+            "iristen",
+            "iritsiten",
+            "iritsten",
+            "iritsizen"
+          ],
+          "correcta": 0,
+          "explicacion": "-i se vuelve -ten: iritsi → iristen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "mugitu → ____",
+          "opciones": [
+            "mugitzen",
+            "mugiten",
+            "mugituten",
+            "mugizen"
+          ],
+          "correcta": 0,
+          "explicacion": "-tu se vuelve -tzen, como sartu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ni etxean ____ naiz.",
+          "opciones": [
+            "sartzen",
+            "sartu",
+            "sartzten",
+            "sarten"
+          ],
+          "correcta": 0,
+          "explicacion": "Con «sartu» va el -n de dentro: etxean sartzen naiz."
+        }
+      ],
+      "subnivel": "8.2"
+    },
+    {
+      "id": "u9-g32",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¡Entra!» se dice…",
+          "opciones": [
+            "Sartu!",
+            "Sartzen!",
+            "Sartu naiz!",
+            "Sartzen naiz!"
+          ],
+          "correcta": 0,
+          "explicacion": "La forma de diccionario, a secas, ya es una orden."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¡Vete de aquí!» → ____ hemendik!",
+          "opciones": [
+            "Zoaz",
+            "Noa",
+            "Doa",
+            "Joaten"
+          ],
+          "correcta": 0,
+          "explicacion": "El imperativo de «joan» es «zoaz», igual que el presente de zu."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«¡Ven aquí!» → ____ hona!",
+          "opciones": [
+            "Zatoz",
+            "Nator",
+            "Dator",
+            "Etortzen"
+          ],
+          "correcta": 0,
+          "explicacion": "El de «etorri» es «zatoz»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Mugi zaitez!», el título de la unidad, significa…",
+          "opciones": [
+            "¡Muévete!",
+            "¡Vete!",
+            "¡Entra!",
+            "¡Ven!"
+          ],
+          "correcta": 0,
+          "explicacion": "Es la manera más cuidada de decirlo; la corta sería «Mugitu!»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas NO es una orden?",
+          "opciones": [
+            "Mugitzen naiz",
+            "Sartu!",
+            "Zoaz!",
+            "Etorri!"
+          ],
+          "correcta": 0,
+          "explicacion": "«Mugitzen naiz» es «me muevo», no una orden."
+        }
+      ],
+      "subnivel": "8.2"
+    },
+    {
+      "id": "u9-g33",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Entro en casa.",
+          "respuestas": [
+            "etxean sartzen naiz",
+            "ni etxean sartzen naiz"
+          ],
+          "pista": "Con «sartu» va el -n de dentro."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Salgo de casa.",
+          "respuestas": [
+            "etxetik irteten naiz",
+            "ni etxetik irteten naiz"
+          ],
+          "pista": "Con «irten» va el -tik de desde."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Llego tarde.",
+          "respuestas": [
+            "berandu iristen naiz",
+            "ni berandu iristen naiz"
+          ],
+          "pista": "iritsi → iristen."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¡Ven aquí!",
+          "respuestas": [
+            "zatoz hona",
+            "etorri hona"
+          ],
+          "pista": "Vale la forma propia o el verbo desnudo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Salgo del trabajo.",
+          "respuestas": [
+            "lanetik irteten naiz",
+            "ni lanetik irteten naiz"
+          ],
+          "pista": "lan + -etik."
+        }
+      ],
+      "subnivel": "8.2"
+    },
+    {
+      "id": "u9-g34",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Liburutegia» es la biblioteca. ¿Qué parte significa «el sitio de»?",
+          "opciones": [
+            "-tegi",
+            "liburu-",
+            "-a",
+            "-gia"
+          ],
+          "correcta": 0,
+          "explicacion": "liburu (libro) + -tegi (el sitio de)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si «okin» es el panadero, «okindegia» es…",
+          "opciones": [
+            "la panadería",
+            "el pan",
+            "el horno",
+            "el panadero"
+          ],
+          "correcta": 0,
+          "explicacion": "-degi es el mismo -tegi: el sitio de."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué diferencia hay entre «merkatua» y «azoka»?",
+          "opciones": [
+            "El merkatua es el edificio; la azoka, el de la calle",
+            "Son exactamente lo mismo",
+            "La azoka es más cara",
+            "El merkatua solo vende libros"
+          ],
+          "correcta": 0,
+          "explicacion": "La azoka es el de los días señalados, en la calle."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «herria»?",
+          "opciones": [
+            "el pueblo, y también la gente",
+            "solo la ciudad",
+            "solo la calle",
+            "el mercado"
+          ],
+          "correcta": 0,
+          "explicacion": "Hace los dos trabajos, y de ahí «Euskal Herria»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Voy a la tienda» → ____ noa.",
+          "opciones": [
+            "Dendara",
+            "Dendan",
+            "Dendatik",
+            "Denda"
+          ],
+          "correcta": 0,
+          "explicacion": "Movimiento hacia: -ra."
+        }
+      ],
+      "subnivel": "8.5"
     }
   ]
 }

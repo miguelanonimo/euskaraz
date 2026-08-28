@@ -4540,6 +4540,335 @@
           "explicacion": "Porque al llegar a 20 empieza la veintena siguiente. Por eso hacen falta los números del once al diecinueve antes de contar alto."
         }
       ]
+    },
+    {
+      "id": "u4-g50",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El séptimo» se dice…",
+          "opciones": [
+            "zazpigarrena",
+            "zazpina",
+            "zazpiena",
+            "zazpirena"
+          ],
+          "correcta": 0,
+          "explicacion": "zazpi + -garren + -a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El octavo» se dice…",
+          "opciones": [
+            "zortzigarrena",
+            "zortziena",
+            "zortzina",
+            "zortzirena"
+          ],
+          "correcta": 0,
+          "explicacion": "zortzi + -garren + -a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El noveno» se dice…",
+          "opciones": [
+            "bederatzigarrena",
+            "bederatziena",
+            "bederatzina",
+            "bederatzirena"
+          ],
+          "correcta": 0,
+          "explicacion": "bederatzi + -garren + -a."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El décimo» se dice…",
+          "opciones": [
+            "hamargarrena",
+            "hamarrena",
+            "hamarna",
+            "hamargena"
+          ],
+          "correcta": 0,
+          "explicacion": "hamar + -garren + -a. Siempre igual."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Si «hamaika» es once, «el undécimo» es…",
+          "opciones": [
+            "hamaikagarrena",
+            "hamaikena",
+            "hamaikarena",
+            "hamaikana"
+          ],
+          "correcta": 0,
+          "explicacion": "La regla no falla: número + -garren + -a."
+        }
+      ],
+      "subnivel": "4.3"
+    },
+    {
+      "id": "u4-g51",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "zazpigarrena",
+              "es": "el séptimo"
+            },
+            {
+              "eu": "zortzigarrena",
+              "es": "el octavo"
+            },
+            {
+              "eu": "hamargarrena",
+              "es": "el décimo"
+            },
+            {
+              "eu": "lehena",
+              "es": "el primero"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "bederatzigarrena",
+              "es": "el noveno"
+            },
+            {
+              "eu": "hamaikagarrena",
+              "es": "el undécimo"
+            },
+            {
+              "eu": "hamabigarrena",
+              "es": "el duodécimo"
+            },
+            {
+              "eu": "azkena",
+              "es": "el último"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "hamargarrena",
+              "es": "el décimo"
+            },
+            {
+              "eu": "bosgarrena",
+              "es": "el quinto"
+            },
+            {
+              "eu": "zortzigarrena",
+              "es": "el octavo"
+            },
+            {
+              "eu": "bigarrena",
+              "es": "el segundo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "hamabigarrena",
+              "es": "el duodécimo"
+            },
+            {
+              "eu": "zazpigarrena",
+              "es": "el séptimo"
+            },
+            {
+              "eu": "hirugarrena",
+              "es": "el tercero"
+            },
+            {
+              "eu": "azkena",
+              "es": "el último"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja",
+          "pares": [
+            {
+              "eu": "bederatzigarrena",
+              "es": "el noveno"
+            },
+            {
+              "eu": "hamargarrena",
+              "es": "el décimo"
+            },
+            {
+              "eu": "laugarrena",
+              "es": "el cuarto"
+            },
+            {
+              "eu": "hamaikagarrena",
+              "es": "el undécimo"
+            }
+          ]
+        }
+      ],
+      "subnivel": "4.3"
+    },
+    {
+      "id": "u4-g52",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «astia»?",
+          "opciones": [
+            "el tiempo del que dispones",
+            "la semana",
+            "el reloj",
+            "la prisa"
+          ],
+          "correcta": 0,
+          "explicacion": "No es el tiempo que hace ni la hora: es el rato libre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«No tengo tiempo» → Ez daukat ____.",
+          "opciones": [
+            "astirik",
+            "astia",
+            "ordua",
+            "astea"
+          ],
+          "correcta": 0,
+          "explicacion": "Con «ez», el objeto va en partitivo: astirik."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ojo con el parecido: «astea» es…",
+          "opciones": [
+            "la semana",
+            "el tiempo libre",
+            "el mes",
+            "el día"
+          ],
+          "correcta": 0,
+          "explicacion": "«astea» la semana, «astia» el tiempo del que dispones."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Daukazu astirik?» pregunta…",
+          "opciones": [
+            "si tienes un rato",
+            "qué día es",
+            "qué hora es",
+            "si tienes semana"
+          ],
+          "correcta": 0,
+          "explicacion": "Literalmente, «¿tienes tiempo?»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál usarías para «tengo un rato»?",
+          "opciones": [
+            "astia daukat",
+            "astea daukat",
+            "ordua daukat",
+            "asteburua daukat"
+          ],
+          "correcta": 0,
+          "explicacion": "astia = el rato del que dispones."
+        }
+      ],
+      "subnivel": "4.5"
+    },
+    {
+      "id": "u4-g53",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué número es «hamazazpi»?",
+          "opciones": [
+            "17",
+            "7",
+            "27",
+            "70"
+          ],
+          "correcta": 0,
+          "explicacion": "hamar + zazpi: diez y siete."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué número es «hamalau»?",
+          "opciones": [
+            "14",
+            "4",
+            "40",
+            "24"
+          ],
+          "correcta": 0,
+          "explicacion": "hamar + lau."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice 13?",
+          "opciones": [
+            "hamahiru",
+            "hirurahama",
+            "hamairu",
+            "hiruhama"
+          ],
+          "correcta": 0,
+          "explicacion": "hamar + hiru → hamahiru."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo se dice 20?",
+          "opciones": [
+            "hogei",
+            "hamahamar",
+            "bihamar",
+            "hogeita"
+          ],
+          "correcta": 0,
+          "explicacion": "«hogei», y de ahí arranca todo el sistema de veintenas."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hamaika» significa once, pero también…",
+          "opciones": [
+            "muchísimos",
+            "ninguno",
+            "la mitad",
+            "el doble"
+          ],
+          "correcta": 0,
+          "explicacion": "Se usa también con el sentido de «un montón»: once por «muchísimos»."
+        }
+      ],
+      "subnivel": "4.1"
     }
   ]
 }
