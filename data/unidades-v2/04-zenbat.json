@@ -65,8 +65,13 @@
     },
     {
       "titulo": "Del once al diecinueve",
-      "cuerpo": "De 12 a 17 se construye con <b>hama-</b> (de «hamar», diez) más el número:\n\nhama + bi → <b>hamabi</b> (12)\nhama + hiru → <b>hamahiru</b> (13)\nhama + lau → <b>hamalau</b> (14)\nhama + bost → <b>hamabost</b> (15)\nhama + sei → <b>hamasei</b> (16)\nhama + zazpi → <b>hamazazpi</b> (17)\n\nEl 11 se sale del todo:\n\n<b>hamaika</b> (11) — aquí no hay «bat» por ninguna parte. Hay que memorizarlo.\n\nEl 18 y el 19 siguen el mismo patrón que los demás, pero con la vocal cambiada:\n\nhama + zortzi → <b>hemezortzi</b> (18)\nhama + bederatzi → <b>hemeretzi</b> (19)\n\nSiguen siendo diez y ocho, y diez y nueve, igual que <i>hamasei</i> es diez y seis. Lo único que pasa es que el prefijo suena <b>heme-</b> en vez de <b>hama-</b>, y que en el 19 el «bederatzi» se queda en <b>-retzi</b>. No es otra lógica: es la misma con desgaste.",
-      "ejemplos": [],
+      "cuerpo": "De 12 a 17 se construye con <b>hama-</b> (de «hamar», diez) más el número:\n\nhama + bi → <b>hamabi</b> (12)\nhama + hiru → <b>hamahiru</b> (13)\nhama + lau → <b>hamalau</b> (14)\nhama + bost → <b>hamabost</b> (15)\nhama + sei → <b>hamasei</b> (16)\nhama + zazpi → <b>hamazazpi</b> (17)\n\nEl 11 se sale del todo:\n\n<b>hamaika</b> (11) — aquí no hay «bat» por ninguna parte. Hay que memorizarlo.\n\nY guárdate esta, que da mucho juego: <b>hamaika</b> significa además <b>«muchísimos»</b>, igual que en castellano decimos «mil cosas» sin contar hasta mil.\n\n<b>hamaika lagun</b> — un montón de amigos\n\nFíjate en que funciona con la regla de arriba: detrás del número, el sustantivo va en singular y sin artículo, igual que en <i>hiru lagun</i>.\n\nAsí que si oyes <i>hamaika</i> y el once no encaja, lo más seguro es que te estén diciendo «un montón».\n\nEl 18 y el 19 siguen el mismo patrón que los demás, pero con la vocal cambiada:\n\nhama + zortzi → <b>hemezortzi</b> (18)\nhama + bederatzi → <b>hemeretzi</b> (19)\n\nSiguen siendo diez y ocho, y diez y nueve, igual que <i>hamasei</i> es diez y seis. Lo único que pasa es que el prefijo suena <b>heme-</b> en vez de <b>hama-</b>, y que en el 19 el «bederatzi» se queda en <b>-retzi</b>. No es otra lógica: es la misma con desgaste.",
+      "ejemplos": [
+        {
+          "eu": "hamaika lagun",
+          "es": "un montón de amigos (literalmente, «once amigos»)"
+        }
+      ],
       "subnivel": "4.1"
     },
     {
@@ -4757,7 +4762,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Ojo con el parecido: «astea» es…",
+          "pregunta": "¿Qué significa «astea»?",
           "opciones": [
             "la semana",
             "el tiempo libre",
@@ -4862,7 +4867,7 @@
             "el doble"
           ],
           "correcta": 0,
-          "explicacion": "Se usa también con el sentido de «un montón»: once por «muchísimos»."
+          "explicacion": "Once, y también «un montón»: hamaika lagun es «un montón de amigos»."
         }
       ],
       "subnivel": "4.1"

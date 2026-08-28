@@ -1878,6 +1878,33 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### «Hamaika» también es «un montón» (29/08/2026)
+
+Ric: la explicación de que `hamaika` vale por «muchísimos» estaba **en un
+ejercicio y en ninguna ficha**. Y la había escrito yo el día anterior, al
+ampliar los ejercicios del 4.1: exactamente el defecto que llevamos toda la
+semana corrigiendo, cometido por mí.
+
+Verificado en el [Elhuyar][eh]: además de «once», *«muchos, infinidad,
+tantos»*, con ejemplos del tipo «se lo pedí infinidad de veces». Añadido a la
+ficha **«Del once al diecinueve»**, donde ya se explica que el 11 es la
+irregular del grupo.
+
+[eh]: https://hiztegiak.elhuyar.eus/eu_es/hamaika
+
+**Y me volvió a pasar con el ejemplo.** Escribí *«Hamaika aldiz esan dizut»*:
+`aldiz` no está enseñado y `esan dizut` es del **9.2**. En el 4.1 solo hay
+números e `izan`. Cambiado por **`hamaika lagun`**, que además aprovecha la
+regla que la propia ficha acaba de dar —detrás del número, el sustantivo va en
+singular y sin artículo, como en `hiru lagun`—.
+
+Es la tercera vez esta semana que me pasa lo mismo: escribo el ejemplo con
+gramática de unidades posteriores. `probar_adelantos.js` no lo caza porque
+solo mira **ejercicios**, no los ejemplos de las fichas.
+
+De paso, `u4-g52` v2 decía «Ojo con el parecido: astea es…», que depende de
+venir tras otra pregunta. Ahora es «¿Qué significa astea?».
+
 ### Primeras 50 correcciones de la revisión (28/08/2026)
 
 Ric, con 536 de 1755 variantes revisadas en la app, pasó un informe con 50
