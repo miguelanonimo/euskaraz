@@ -1878,6 +1878,60 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Primeras 50 correcciones de la revisión (28/08/2026)
+
+Ric, con 536 de 1755 variantes revisadas en la app, pasó un informe con 50
+avisos. **Dos eran fallos de verdad**, no matices de redacción:
+
+- **`u4-g27` v3** preguntaba *«la oveja» se dice…* y daba por buena **`alaba`**,
+  que es «la hija». La corrección decía `ardia` — palabra que ni estaba entre
+  las opciones y que además es de la unidad 5. Arreglado cambiando el
+  enunciado a «la hija», que es lo que encaja con las cuatro opciones.
+- **`u1-g07` v0** tenía la pista de otro ejercicio: para `agur` (adiós) decía
+  *«Literalmente: gracias muchas»*, que es la de `eskerrik asko`.
+
+El resto, por familias:
+
+- **Enunciados que dependían del orden** (`u4-g12`, `u3-g07`, `u4-g19`): «¿Y
+  «erdalduna»?» solo se entiende si viene después de otra. Si algún día
+  barajamos las variantes, se rompen. Ahora son autónomos.
+- **Respuestas que la forma delataba**: en los emparejar, una sola pregunta
+  entre tres palabras se acierta sin saber nada. Repartidos.
+- **Distractores poco creíbles**: `medikua` frente a «(yo) soy» no es una
+  elección. Ahora frente a «la medicación» o «el hospital».
+- **Bilbocentrismo**: Bermeo, Durango y Gernika donde antes todo era Bilbao.
+- **`batua = el batua`** no traducía nada: ahora «el euskera estándar».
+
+Dos que investigué antes de tocar:
+
+- **`ere`**: Ric dudaba de «detrás de la palabra a la que acompaña». La regla
+  es correcta —el [Elhuyar][ee] confirma que va pospuesto a cualquier
+  elemento, no solo al pronombre, con ejemplos tras sustantivo y tras verbo—,
+  así que se conserva la pregunta y se reescribe el enunciado: «justo detrás
+  de lo que quiere subrayar».
+- **La jota de `jan`**: Ric avisa de que dentro de Bizkaia varía. Cierto, y la
+  ficha del 1.4 ya matiza que en Gipuzkoa suena distinto. Pregunta sustituida
+  por una que no va de pronunciación.
+
+[ee]: https://hiztegiak.elhuyar.eus/eu_es/ere
+
+**Y dos que me pillé a mí mismo aplicando el informe:**
+
+- Ric pidió `izeko` en un emparejar de familia. **`izeko` es la forma
+  bizkaina** de `izeba`, y vive en el bloque dialectal, no en el vocabulario.
+  En un ejercicio de batua va `izeba`.
+- Al rehacer `u3-g20` metí *«Nora zoaz?»*… y **`zoaz` es del 8.1**, cinco
+  unidades más tarde. Cambiado por «nongoa zara», que usa el `zara` del 2.3.
+
+Ese segundo es revelador: **`probar_adelantos.js` no lo cazó**, porque solo
+vigila construcciones gramaticales, no vocabulario. Es justo el hueco que
+señalaba el informe de la sesión de terminal.
+
+Una que no cambio, y por qué: `u5-g08` («Yo tengo dos hermanas») es de
+**ordenar palabras**, no de traducir. Ric pide que valga sin `nik`, pero ahí
+las palabras vienen dadas y hay que usarlas todas — no hay nada que aceptar.
+La equivalente de traducir, `u5-g09` v1, **sí** acepta las dos formas.
+
 ### «Edonor» se preguntaba y no se enseñaba (28/08/2026)
 
 Ric, revisando ejercicios con la app: *«mira a ver si en el 3.1 incluyes

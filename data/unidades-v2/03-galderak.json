@@ -797,7 +797,7 @@
             "-koa"
           ],
           "correcta": 2,
-          "explicacion": "Nondik? — Bilbotik. Misma cola en pregunta y respuesta."
+          "explicacion": "Nondik? — Bermeotik. Misma cola en pregunta y respuesta."
         },
         {
           "tipo": "opcion",
@@ -1013,7 +1013,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Y «inoiz ez»?",
+          "pregunta": "¿Qué significa «inoiz ez»?",
           "opciones": [
             "Alguna vez",
             "Nunca",
@@ -1653,8 +1653,8 @@
               "es": "ayer"
             },
             {
-              "eu": "zergatik?",
-              "es": "¿por qué?"
+              "eu": "erantzuna",
+              "es": "la respuesta"
             }
           ]
         },
@@ -1678,7 +1678,7 @@
           "opciones": [
             "erantzuna",
             "nor?",
-            "hau",
+            "galdera",
             "nondik?"
           ],
           "correcta": 0,
@@ -1842,9 +1842,9 @@
           "pregunta": "¿Qué significa «nongoa?»?",
           "opciones": [
             "¿de dónde (eres)?",
-            "la respuesta",
+            "¿adónde?",
             "¿cuándo?",
-            "siempre"
+            "¿por qué?"
           ],
           "correcta": 0,
           "explicacion": "Origen, no movimiento."
@@ -1997,20 +1997,20 @@
           "instruccion": "Empareja la familia de «non»",
           "pares": [
             {
-              "eu": "non?",
-              "es": "¿dónde?"
+              "eu": "nor?",
+              "es": "¿quién?"
             },
             {
-              "eu": "nora?",
-              "es": "¿adónde?"
+              "eu": "norekin?",
+              "es": "¿con quién?"
+            },
+            {
+              "eu": "noren?",
+              "es": "¿de quién?"
             },
             {
               "eu": "nongoa?",
               "es": "¿de dónde (eres)?"
-            },
-            {
-              "eu": "nondik?",
-              "es": "¿de dónde? ¿por dónde?"
             }
           ]
         },
@@ -2082,26 +2082,14 @@
           ]
         },
         {
-          "tipo": "pares",
-          "instruccion": "Empareja la familia de «non»",
-          "pares": [
-            {
-              "eu": "nongoa?",
-              "es": "¿de dónde (eres)?"
-            },
-            {
-              "eu": "nora?",
-              "es": "¿adónde?"
-            },
-            {
-              "eu": "non?",
-              "es": "¿dónde?"
-            },
-            {
-              "eu": "nondik?",
-              "es": "¿de dónde? ¿por dónde?"
-            }
-          ]
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿De dónde eres?",
+          "respuestas": [
+            "nongoa zara",
+            "nongoa zara?"
+          ],
+          "pista": "La cola del origen es -ko, y el verbo cierra."
         },
         {
           "tipo": "opcion",
@@ -2203,7 +2191,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuántos grados de distancia distingue el euskera?",
+          "pregunta": "¿Cuántos grados de distancia al señalar algo distingue el euskera?",
           "opciones": [
             "Uno",
             "Dos",
@@ -2236,8 +2224,8 @@
               "es": "aquello, aquel"
             },
             {
-              "eu": "bera",
-              "es": "él, ella"
+              "eu": "haiek",
+              "es": "aquellos"
             }
           ]
         },
@@ -2368,7 +2356,7 @@
             "hori",
             "hura",
             "hau",
-            "haiek"
+            "horiek"
           ],
           "correcta": 1,
           "explicacion": "«Hura» apareció como «él/ella». Es el mismo demostrativo lejano."
@@ -2477,13 +2465,13 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "¿Qué le pasa al nombre cuando lleva un demostrativo detrás?",
           "opciones": [
-            "Pierde la -a del artículo",
+            "Pierde el sufijo del artículo",
             "Gana una -a",
             "No cambia",
-            "Se pone en plural"
+            "Se pone siempre en plural"
           ],
           "correcta": 0,
-          "explicacion": "«Laguna» es el amigo; «lagun hau», este amigo. El demostrativo ya hace de artículo."
+          "explicacion": "«Laguna» → «lagun hau»; «lagunak» → «lagun hauek». El demostrativo ya hace de artículo."
         },
         {
           "tipo": "pares",
@@ -2677,15 +2665,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Las exclamativas se construyen con lo que aprendiste en…",
+          "pregunta": "¿Qué significa «Hau polita!»?",
           "opciones": [
-            "los saludos",
-            "los demostrativos",
-            "los números",
-            "los verbos"
+            "¡Qué bonito!",
+            "Esto es bonito.",
+            "¿Es bonito?",
+            "Aquello es bonito."
           ],
-          "correcta": 1,
-          "explicacion": "«Hau» es el mismo de «hau, hori, hura»."
+          "correcta": 0,
+          "explicacion": "Sin verbo y con exclamación, «hau» pasa de señalar a admirarse."
         }
       ]
     },
@@ -2759,12 +2747,12 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "¿Qué diferencia hay entre «hau hotza» y «hau hotza!»?",
           "opciones": [
+            "La primera describe, la segunda exclama",
             "Ninguna",
-            "La exclamación: la primera describe, la segunda se admira",
-            "La segunda es una pregunta",
-            "La primera está mal"
+            "La primera pregunta",
+            "Son iguales"
           ],
-          "correcta": 1,
+          "correcta": 0,
           "explicacion": "El tono lo cambia todo."
         }
       ]
@@ -2784,7 +2772,7 @@
             "galdera"
           ],
           "correcta": 3,
-          "explicacion": "«Hamabi» es el número doce."
+          "explicacion": "«Galdera» es «la pregunta»: una palabra, no una frase para salir del paso."
         },
         {
           "tipo": "opcion",

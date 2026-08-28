@@ -1246,15 +1246,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "El euskera cuenta en base…",
+          "pregunta": "¿Qué número es «berrogeita hamabi»?",
           "opciones": [
-            "diez",
-            "doce",
-            "veinte",
-            "cinco"
+            "52",
+            "32",
+            "47",
+            "63"
           ],
-          "correcta": 2,
-          "explicacion": "Base veinte: berrogei (40) es «dos veintes», laurogei (80) «cuatro veintes»."
+          "correcta": 0,
+          "explicacion": "berrogei (40) + hamabi (12) = 52. Dos veintes y doce."
         }
       ],
       "subnivel": "4.4"
@@ -1583,7 +1583,7 @@
             "nik bi katu ditut",
             "bi katu ditut"
           ],
-          "pista": "Objeto plural → «ditut». El nombre no se pluraliza."
+          "pista": "Objeto plural → «ditut». El sustantivo no se pluraliza."
         },
         {
           "tipo": "traducir",
@@ -1591,11 +1591,8 @@
           "es": "Ella tiene un hermano.",
           "respuestas": [
             "hark neba bat du",
-            "hark anaia bat du",
             "neba bat du",
-            "anaia bat du",
-            "berak neba bat du",
-            "berak anaia bat du"
+            "berak neba bat du"
           ],
           "pista": "El hermano de una chica es «neba»."
         },
@@ -2305,7 +2302,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál es la excepción, la que no lleva «-garren»?",
+          "pregunta": "De los ordinales, ¿cuál es la excepción, la que no lleva «-garren»?",
           "opciones": [
             "el segundo",
             "el primero",
@@ -2339,7 +2336,7 @@
             "el mejor"
           ],
           "correcta": 2,
-          "explicacion": "Azkena es el último, con palabra propia."
+          "explicacion": "Azkena es el último (o la última), con palabra propia."
         }
       ]
     },
@@ -2478,7 +2475,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál de los dos se puede enganchar detrás de otro verbo?",
+          "pregunta": "¿Cuál se puede enganchar detrás de otro verbo?",
           "opciones": [
             "solo «dut»",
             "solo «daukat»",
@@ -2627,16 +2624,16 @@
               "es": "hermano (de un chico)"
             },
             {
-              "eu": "semea",
-              "es": "el hijo"
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
             },
             {
               "eu": "ama",
               "es": "madre"
             },
             {
-              "eu": "aita",
-              "es": "padre"
+              "eu": "izeba",
+              "es": "la tía"
             }
           ]
         },
@@ -2740,7 +2737,7 @@
             "el cuarto"
           ],
           "correcta": 0,
-          "explicacion": "Palabra especialmente viva en Bizkaia."
+          "explicacion": "neba = hermano, cuando quien habla es una chica."
         },
         {
           "tipo": "opcion",
@@ -3012,7 +3009,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«la oveja» se dice…",
+          "pregunta": "«la hija» se dice…",
           "opciones": [
             "alaba",
             "bigarrena",
@@ -3020,7 +3017,7 @@
             "lehena"
           ],
           "correcta": 0,
-          "explicacion": "la oveja = ardia."
+          "explicacion": "la hija = alaba."
         },
         {
           "tipo": "opcion",
@@ -3206,7 +3203,7 @@
           "pregunta": "¿Qué significa «hirurogeita hamar»?",
           "opciones": [
             "setenta",
-            "(yo) tengo (varias cosas)",
+            "sesenta",
             "el ratón",
             "la tía"
           ],

@@ -997,7 +997,7 @@
           "respuestas": [
             "agur"
           ],
-          "pista": "Literalmente: «gracias muchas»."
+          "pista": "Sirve para despedirse a cualquier hora del día."
         },
         {
           "tipo": "traducir",
@@ -1323,7 +1323,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Si «gau» es noche y «on» es bueno, ¿qué esperarías que significase «gabon»?",
+          "pregunta": "Si «gau» es noche, ¿qué esperarías que significase «gabon»?",
           "opciones": [
             "Buena noche",
             "Media noche",
@@ -1514,7 +1514,7 @@
             "Activa el audio"
           ],
           "correcta": 0,
-          "explicacion": "El idioma que aprendes es siempre el batua. Lo que decide es si además te examinan de las formas locales."
+          "explicacion": "El idioma que aprendes es siempre el batua. Lo que decide es si además añadimos formas locales."
         },
         {
           "tipo": "opcion",
@@ -1638,7 +1638,7 @@
             },
             {
               "eu": "batua",
-              "es": "el batua"
+              "es": "el euskera estándar"
             },
             {
               "eu": "Euskal Herria",
@@ -1656,7 +1656,7 @@
             },
             {
               "eu": "batua",
-              "es": "el batua"
+              "es": "el euskera estándar"
             },
             {
               "eu": "Nafarroa",
@@ -1763,9 +1763,9 @@
           "pregunta": "¿Qué significa «euskara»?",
           "opciones": [
             "el euskera",
-            "buenos días",
+            "el País Vasco",
             "¿qué tal?",
-            "buenas tardes"
+            "buenos días"
           ],
           "correcta": 0,
           "explicacion": "La lengua. Y «euskaraz» es «en euskera»."
@@ -1812,7 +1812,7 @@
             },
             {
               "eu": "batua",
-              "es": "el batua"
+              "es": "el euskera estándar"
             },
             {
               "eu": "Gipuzkoa",
@@ -1851,13 +1851,13 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "¿Qué enseña esta app?",
           "opciones": [
-            "bizkaiera puro",
-            "batua",
-            "gipuzkera",
-            "una mezcla al azar"
+            "Batua en general, con formas localizadas opcionales",
+            "Solo bizkaiera",
+            "Solo gipuzkera",
+            "Una mezcla sin norma"
           ],
-          "correcta": 1,
-          "explicacion": "Batua, con notas del habla de Bilbao."
+          "correcta": 0,
+          "explicacion": "El batua es el estándar; las formas de Bilbao se añaden aparte, y puedes quitarlas."
         },
         {
           "tipo": "opcion",
@@ -1930,8 +1930,8 @@
               "es": "muy bien"
             },
             {
-              "eu": "zer moduz?",
-              "es": "¿qué tal?"
+              "eu": "agur",
+              "es": "adiós"
             }
           ]
         },
@@ -2082,8 +2082,8 @@
               "es": "¿qué tal?"
             },
             {
-              "eu": "ez",
-              "es": "no"
+              "eu": "eta zu?",
+              "es": "¿y tú?"
             },
             {
               "eu": "Araba",
@@ -2101,15 +2101,15 @@
             },
             {
               "eu": "batua",
-              "es": "el batua"
+              "es": "el euskera estándar"
             },
             {
               "eu": "oso",
               "es": "muy"
             },
             {
-              "eu": "ez",
-              "es": "no"
+              "eu": "bai",
+              "es": "sí"
             }
           ]
         },
@@ -2187,15 +2187,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En Bizkaia, «jan» (comer) suena…",
+          "pregunta": "¿Qué dice esta unidad sobre el bizkaiera que aprendes aquí?",
           "opciones": [
-            "«jan» con jota fuerte",
-            "«yan»",
-            "«chan»",
-            "«san»"
+            "Que varía de un pueblo a otro, y esto es de uso general con Bilbao como referencia",
+            "Que es el único bizkaiera correcto",
+            "Que sustituye al batua para escribir",
+            "Que se habla igual en toda Euskal Herria"
           ],
-          "correcta": 1,
-          "explicacion": "La jota fuerte es cosa guipuzcoana."
+          "correcta": 0,
+          "explicacion": "No hay un único bizkaiera «correcto». Tómalo como oído entrenado, no como norma."
         },
         {
           "tipo": "opcion",
@@ -2347,7 +2347,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué se usa para escribir y para los exámenes?",
+          "pregunta": "¿Qué se usa en las comunicaciones oficiales?",
           "opciones": [
             "el dialecto de tu zona",
             "el batua",
@@ -2355,7 +2355,7 @@
             "el castellano"
           ],
           "correcta": 1,
-          "explicacion": "El batua es el estándar común."
+          "explicacion": "El batua es el estándar común, y es lo que usan administración y medios."
         },
         {
           "tipo": "opcion",
