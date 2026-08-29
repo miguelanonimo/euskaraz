@@ -1878,6 +1878,47 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### El curso entero, sin vocabulario huérfano (29/08/2026)
+
+Terminada la pasada. **526 palabras, ninguna sin presentar en su tema.**
+
+|  | antes | ahora |
+|---|---|---|
+| u1 | 62% | 0% |
+| u5 | 51% | 0% |
+| u9 | 40% | 0% |
+| u3 | 33% | 0% |
+| u6 | 31% | 0% |
+| **todas** | **~30%** | **0%** |
+
+En esta última tanda, además de las listas que faltaban, salieron ganchos que
+merecen quedar:
+
+- **`-le`/`-la`, quien hace algo** (2.4): `irakaslea` de `irakatsi`, `idazlea`
+  de `idatzi`, `langilea` de `lan`. Y el aviso de que **ninguna profesión lleva
+  género**, que es donde más se nota.
+- **`inoiz` solo es «alguna vez»** (3.1): es el `ez` el que lo vuelve «nunca»,
+  igual que el «jamás» castellano necesita el «no».
+- **`eguzkia` lleva `egun` dentro** (6.4), la misma pieza que está en `egun on`
+  y en `egutegia`.
+- **`jaieguna` = jai + egun**, y **`Aste Santua`** lleva la `astea` del tema
+  anterior (6.5).
+- **`etxeko lanak` = etxe + -ko + lanak** (7.3), los trabajos de la casa.
+- **`hemen`/`han`** (5.1) presentadas como las hermanas de `hau`/`hura`.
+
+**Un fallo mío que conviene no repetir**: la corrección del 10.4 de ayer
+—añadir `gutxiago`, `txarragoa` y `berdin`— **nunca llegó a guardarse**. Usé
+`.replace()` sin comprobar que el texto encajara, así que no hizo nada y no
+avisó de nada. Desde entonces, o `assert` antes de reemplazar, o añadir al
+final del cuerpo, que no depende de encajar con nada.
+
+Sobre el criterio, que Ric matizó: **dentro de una misma unidad no pasa nada**
+que una palabra aparezca antes de su tema — a veces hace falta para poder
+formar frases. Por eso la comprobación de ejemplos solo avisa **cruzando
+unidad**. `liburua` y `musika` se han movido igualmente al 7.1, pero por otra
+razón: así entran en el repaso de vocabulario cuando el alumno los conoce, y no
+dos unidades después.
+
 ### Unidades 1 y 9, a cero (29/08/2026)
 
 Siguiendo con lo del vocabulario sin presentar. Las dos peores eran la 1 (62%)
