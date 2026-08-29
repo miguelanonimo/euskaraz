@@ -34,7 +34,7 @@
   "gramatica": [
     {
       "titulo": "Casi todas empiezan por n- o por z-",
-      "cuerpo": "Antes de meterte en verbos, merece la pena tener a mano las palabras con las que se hacen preguntas. Son pocas y siguen un patrón muy claro.\n\nLas de <b>n-</b> preguntan por <b>personas y lugares</b>:\n\n<b>nor?</b> — quién\n<b>non?</b> — dónde\n<b>nora?</b> — adónde\n<b>nondik?</b> — de dónde, por dónde\n<b>noiz?</b> — cuándo\n<b>nola?</b> — cómo\n\nLas de <b>z-</b> preguntan por <b>cosas, causas y cantidades</b>:\n\n<b>zer?</b> — qué\n<b>zein?</b> — cuál\n<b>zergatik?</b> — por qué\n<b>zenbat?</b> — cuánto\n\nNo es una regla infalible (<i>nola</i> es de cómo, no de lugar), pero como gancho para memorizarlas funciona muy bien.",
+      "cuerpo": "Antes de meterte en verbos, merece la pena tener a mano las palabras con las que se hacen preguntas. Son pocas y siguen un patrón muy claro.\n\nLas de <b>n-</b> preguntan por <b>personas y lugares</b>:\n\n<b>nor?</b> — quién\n<b>non?</b> — dónde\n<b>nora?</b> — adónde\n<b>nondik?</b> — de dónde, por dónde\n<b>noiz?</b> — cuándo\n<b>nola?</b> — cómo\n\nLas de <b>z-</b> preguntan por <b>cosas, causas y cantidades</b>:\n\n<b>zer?</b> — qué\n<b>zein?</b> — cuál\n<b>zergatik?</b> — por qué\n<b>zenbat?</b> — cuánto\n\nNo es una regla infalible (<i>nola</i> es de cómo, no de lugar), pero como gancho para memorizarlas funciona muy bien.\n\n<b>Dos más de la familia, con quién y de quién</b>\n\n<b>norekin?</b> — ¿con quién?\n<b>noren?</b> — ¿de quién?\n\nLas dos salen de <i>nor</i> con una cola detrás, igual que <i>nongoa</i> sale de <i>non</i>. El sistema es siempre el mismo: la pregunta lleva la misma terminación que va a llevar la respuesta.\n\n<b>Y las dos palabras para hablar de esto mismo</b>\n\n<b>galdera</b> — la pregunta\n<b>erantzuna</b> — la respuesta",
       "ejemplos": [
         {
           "eu": "Nor?",
@@ -236,6 +236,25 @@
           "eu": "Edonor etor daiteke.",
           "es": "Puede venir cualquiera. (el «daiteke» de «poder» llega mucho más adelante; aquí fíjate solo en «edonor»)",
           "audio": "unidades/u3/edonor-etor-daiteke.mp3"
+        }
+      ],
+      "subnivel": "3.1"
+    },
+    {
+      "titulo": "Cuándo: cuatro palabras que colocan cualquier frase",
+      "cuerpo": "Preguntar <i>noiz?</i> (cuándo) sirve de poco sin palabras para contestar. Estas cuatro son las que más salen:\n\n<b>gaur</b> — hoy\n<b>bihar</b> — mañana\n<b>atzo</b> — ayer\n<b>orain</b> — ahora\n\nY dos que marcan la frecuencia, en los dos extremos:\n\n<b>beti</b> — siempre\n<b>inoiz ez</b> — nunca\n\n<i>Inoiz ez</i> tiene truco: <i>inoiz</i> solo significa «alguna vez». Es el <b>ez</b> el que lo vuelve del revés, igual que en castellano «jamás» necesita el «no» en «no lo hice jamás». Nunca va suelto.\n\nLo normal es que el «cuándo» <b>abra la frase</b>:\n\n<b>Gaur ondo nago.</b> — Hoy estoy bien.\n<b>Bihar arte!</b> — ¡Hasta mañana!\n\nEse <i>bihar arte</i> ya lo traías de la primera unidad sin saber que llevaba «mañana» dentro.",
+      "ejemplos": [
+        {
+          "eu": "Noiz? Gaur.",
+          "es": "¿Cuándo? Hoy."
+        },
+        {
+          "eu": "Beti hemen.",
+          "es": "Siempre aquí."
+        },
+        {
+          "eu": "Bihar arte!",
+          "es": "¡Hasta mañana!"
         }
       ],
       "subnivel": "3.1"

@@ -451,22 +451,6 @@
       "subnivel": "9.4"
     },
     {
-      "eu": "liburua",
-      "es": "el libro",
-      "nota": null,
-      "audio": "unidades/u8/liburua.mp3",
-      "categoria": "sustantivo",
-      "subnivel": "9.4"
-    },
-    {
-      "eu": "musika",
-      "es": "la música",
-      "nota": null,
-      "audio": "unidades/u8/musika.mp3",
-      "categoria": "sustantivo",
-      "subnivel": "9.4"
-    },
-    {
       "eu": "gustatu",
       "es": "gustar",
       "nota": null,

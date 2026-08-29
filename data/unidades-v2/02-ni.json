@@ -291,6 +291,25 @@
       "subnivel": "2.4"
     },
     {
+      "titulo": "Decir a qué te dedicas: el «-le» de quien hace algo",
+      "cuerpo": "Con <i>izan</i> y una profesión ya puedes presentarte entero. Estas son las del tema:\n\n<b>irakaslea</b> — el/la profesor/a\n<b>ikaslea</b> — el/la estudiante\n<b>medikua</b> — el/la médico/a\n<b>sukaldaria</b> — el/la cocinero/a\n<b>langilea</b> — el/la trabajador/a\n<b>idazlea</b> — el/la escritor/a\n\nFíjate en que <b>ninguna tiene género</b>: <i>irakaslea</i> vale para profesor y para profesora. El euskera no marca masculino ni femenino en ningún sitio, y esto se nota justo aquí.\n\nY hay un patrón que se repite en cuatro de ellas: <b>-le</b> o <b>-la</b>, la pieza de «quien hace eso».\n\n<i>irakatsi</i> (enseñar) → <b>irakaslea</b>, quien enseña\n<i>ikasi</i> (estudiar) → <b>ikaslea</b>, quien estudia\n<i>idatzi</i> (escribir) → <b>idazlea</b>, quien escribe\n<i>lan</i> (trabajo) → <b>langilea</b>, quien trabaja\n\nLos verbos que hay debajo llegan en la séptima unidad, pero la pieza la reconoces desde ya.\n\n<b>Dos palabras más del tema</b>\n\n<b>herria</b> — el pueblo. La misma que está en <i>Euskal Herria</i>, desde la primera unidad.\n<b>erdalduna</b> — quien no habla euskera. Es el contrario de <i>euskalduna</i>: <i>erdara</i> es cualquier lengua que no sea el euskera.\n<b>baina</b> — pero. Pequeña y utilísima: <i>Ni ikaslea naiz, baina zu irakaslea zara.</i>",
+      "ejemplos": [
+        {
+          "eu": "Ni irakaslea naiz.",
+          "es": "Soy profesor. / Soy profesora."
+        },
+        {
+          "eu": "Zu medikua zara, baina ni ikaslea naiz.",
+          "es": "Tú eres médica, pero yo soy estudiante."
+        },
+        {
+          "eu": "Nire herria txikia da.",
+          "es": "Mi pueblo es pequeño."
+        }
+      ],
+      "subnivel": "2.4"
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "El bizkaiera se aleja bastante del batua en el verbo «izan», y esto es justo lo que vas a reconocer en Bilbao.\n\n<b>naiz → naz</b>\nEl verbo «izan» cambia poco, pero lo que cambia se nota: <i>ni naz</i> en lugar de <i>ni naiz</i>, y <i>zuek zarie</i> en lugar de <i>zuek zarete</i>. Las demás formas (zara, da, gara, dira) son iguales.\n\n<b>Las palabras en -ción</b>\nEl castellano <i>-ción</i> da <b>-ziño</b>: <i>erlijiño</i> (religión), <i>estaziño</i> (estación). En batua serían <i>erlijio</i> y <i>estazio</i>.",
       "ejemplos": [
