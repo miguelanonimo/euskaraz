@@ -199,6 +199,25 @@
       "subnivel": "5.3"
     },
     {
+      "titulo": "La casa entera, de la puerta al tejado",
+      "cuerpo": "Este tema es sobre todo vocabulario, y hay bastante. Ordenado se aprende mucho mejor que en una lista suelta, así que aquí va por zonas.\n\n<b>Lo que ves antes de entrar</b>\n\n<b>etxea</b> — la casa\n<b>atea</b> — la puerta\n<b>sarrera</b> — la entrada\n<b>eskailerak</b> — las escaleras\n<b>igogailua</b> — el ascensor\n<b>balkoia</b> — el balcón\n<b>lorategia</b> — el jardín\n<b>garajea</b> — el garaje\n<b>teilatua</b> — el tejado\n<b>horma</b> — la pared\n\n<b>Lo que hay dentro</b>\n\n<b>sukaldea</b> — la cocina\n<b>mahaia</b> — la mesa\n<b>aulkia</b> — la silla\n<b>ohea</b> — la cama\n<b>armairua</b> — el armario\n<b>sofa</b> — el sofá\n<b>telebista</b> — la televisión\n<b>hozkailua</b> — la nevera\n<b>leihoa</b> — la ventana\n<b>argia</b> — la luz\n<b>dutxa</b> — la ducha\n<b>ispilua</b> — el espejo\n\nLas habitaciones van aparte, en la ficha de al lado, porque tienen su propia lógica.\n\n<b>Dos que se descifran solas</b>\n\nFíjate en <i>igogailua</i> y <i>hozkailua</i>. Las dos acaban en <b>-gailu</b>, que es la pieza de «aparato»:\n\n<i>igo</i> (subir) + <b>-gailu</b> → <b>igogailua</b>, el aparato de subir\n<i>hotz</i> (frío) + <b>-gailu</b> → <b>hozkailua</b>, el aparato del frío\n\nLa consonante se ajusta al juntarse —<i>hotz</i> + <i>gailu</i> sale <i>hozkailu</i>—, la misma comodidad al hablar que hacía que <i>-ko</i> se volviera <i>-go</i> en la segunda unidad.\n\nEs un sufijo muy rentable: cuando más adelante te encuentres <i>garbigailua</i> (la lavadora) o <i>lehorgailua</i> (el secador), ya no serán palabras nuevas.\n\n<b>Y unas cuantas que ya sabes sin saberlo</b>\n\n<i>sofa</i>, <i>telebista</i>, <i>garajea</i>, <i>balkoia</i>, <i>dutxa</i>: son préstamos, y se entienden a la primera. De las veintitantas de este tema, esas cinco vienen regaladas.\n\n<b>Un apunte de «sukaldea»</b>\n\nSirve para las dos cosas: <b>la cocina como habitación</b> y <b>la cocina como aparato</b>, el fogón donde se guisa. Igual que en castellano.",
+      "ejemplos": [
+        {
+          "eu": "Non dago komuna?",
+          "es": "¿Dónde está el baño?"
+        },
+        {
+          "eu": "Telebista egongelan dago.",
+          "es": "La televisión está en el salón."
+        },
+        {
+          "eu": "Mahai bat eta lau aulki.",
+          "es": "Una mesa y cuatro sillas."
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
       "titulo": "Las habitaciones acaban casi todas en -gela",
       "cuerpo": "Ya conoces <b>gela</b> (la habitación, el aula) y <b>logela</b> (el dormitorio). Pues el patrón sigue, y una vez lo ves te ahorras memorizar:\n\n<b>lo</b> (dormir) + gela → <b>logela</b>, el dormitorio\n<b>jan</b> (comer) + gela → <b>jangela</b>, el comedor\n<b>egon</b> (estar) + gela → <b>egongela</b>, el salón — literalmente «la habitación de estar»\n<b>bainu</b> (baño) + gela → <b>bainugela</b>, el cuarto de baño\n\nDe esas cuatro piezas ya tienes dos: <b>gela</b>, de hace un momento, y <b>egon</b>, del tema anterior de esta misma unidad. <i>Jan</i> (comer) llega en la unidad 7; apúntatela de paso, que aquí ya la ves trabajando.\n\n<b>Y ahora la que más te va a hacer falta fuera de casa.</b>\n\nEn casa, el cuarto de baño es <b>bainugela</b>. Pero en un bar, en un restaurante o en un museo, lo que se pregunta y lo que verás escrito en la puerta es otra palabra:\n\n<b>komuna</b> — el baño, el servicio\n\nY casi siempre en plural, porque son varios: <b>Komunak</b>. Es lo que pone en los carteles.\n\nAsí que si te pierdes buscándolo, la frase es <b>Non dago komuna?</b> — ¿dónde está el baño? Con <i>non</i> y <i>dago</i>, que ya son tuyos. <i>Bainugela</i> ahí no sonaría mal, pero sonaría a que preguntas por el cuarto de baño de una casa.",
       "ejemplos": [

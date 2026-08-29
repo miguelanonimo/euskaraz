@@ -1878,6 +1878,43 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### La casa: 22 palabras que nadie presentaba (29/08/2026)
+
+Ric: *«en la unidad de la casa no hay introducción a las partes de la casa,
+todo es vocabulario que introducimos en el diccionario y en los ejercicios»*.
+
+Medido: el **5.2 tenía 28 palabras y 22 sin mencionar en ninguna ficha**. Lo
+único que había era la ficha del `-gela` (las habitaciones) y `komuna`; todo lo
+demás —puerta, ventana, cama, armario, tejado, ascensor— entraba directo al
+diccionario.
+
+Ficha nueva, **«La casa entera, de la puerta al tejado»**, por zonas: lo que
+ves antes de entrar, y lo que hay dentro. Va **antes** de la del `-gela`, que
+así queda como el detalle de las habitaciones.
+
+Dos ganchos, los dos verificados:
+
+- **`-gailu`, la pieza de «aparato»**: `igo` (subir) + `-gailu` → `igogailua`;
+  `hotz` (frío) + `-gailu` → `hozkailua`. El [Elhuyar][eg] confirma que es un
+  sufijo productivo, y da `garbigailua` (lavadora) y `lehorgailua` (secador).
+  Y el ajuste de consonante enlaza con el `-ko`/`-go` de la segunda unidad,
+  que ya se explicaba como comodidad al hablar.
+- **Los préstamos**: `sofa`, `telebista`, `garajea`, `balkoia`, `dutxa` se
+  entienden a la primera. De veintitantas palabras, cinco vienen regaladas, y
+  decirlo quita agobio.
+
+**Lo que NO afirmo**: iba a explicar `sukaldea` como `su` (fuego) + `alde`
+(zona). Es la etimología que todo el mundo repite, pero **el diccionario no me
+la confirma**, así que fuera. A cambio da un dato que sí está: `sukalde` vale
+para la cocina **como habitación y como aparato**, el fogón. Eso es lo que
+entra en la ficha.
+
+[eg]: https://hiztegiak.elhuyar.eus/eu_es/igogailu
+
+Con esto la unidad 5 baja del **51% al 17%** de vocabulario sin presentar.
+Las que quedan peor son la **1** (62%, casi todo en el 1.2) y la **9** (40%,
+sobre todo el 9.1).
+
 ### «Hamaika» también es «un montón» (29/08/2026)
 
 Ric: la explicación de que `hamaika` vale por «muchísimos» estaba **en un
