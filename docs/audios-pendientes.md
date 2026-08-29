@@ -11,7 +11,7 @@ es el que conviene mirar primero, porque afecta a cómo se genera todo lo demás
 |---|---|---|---|
 | **A** | Audios que ya existen pero **suenan mal** | 23 | `node lote-ric-3.mjs` |
 | **B** | Palabras nuevas **sin audio ninguno** | 194 | `node generar.mjs <unidad>` |
-| **C** | Palabras de v2 que el generador **no puede ver** | 54 | hay que decidir cómo |
+| **C** | Palabras de v2 que el generador **no puede ver** | 58 | hay que decidir cómo |
 
 ---
 
@@ -133,7 +133,7 @@ los demostrativos (dato de Ric, verificado en Bizkaieraren ataria).
 
 ---
 
-## C · El agujero: 54 palabras que `generar.mjs` no puede ver
+## C · El agujero: 58 palabras que `generar.mjs` no puede ver
 
 **Esto es nuevo y conviene mirarlo antes que A y B.**
 
@@ -143,7 +143,7 @@ heredado de v1, eso daba igual: se generaba desde v1 y el mp3 caía en la ruta
 que v2 referencia.
 
 Pero **todo lo que hemos añadido directamente en v2 no existe en v1**, así que
-el generador no lo ve y nunca le va a hacer audio. Son **54 palabras**, y no
+el generador no lo ve y nunca le va a hacer audio. Son **58 palabras** (eran 54; suben con cada palabra nueva), y no
 son de relleno: están los ordinales enteros, `eduki` con sus formas, los
 verbos de la rutina diaria del 7.3, el `ari naiz` del 7.4 y los de poder y
 deber del 8.3.
