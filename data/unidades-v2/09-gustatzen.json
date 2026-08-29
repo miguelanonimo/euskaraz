@@ -40,7 +40,7 @@
   "gramatica": [
     {
       "titulo": "Aquí es donde el «gustatzen» se usa de verdad",
-      "cuerpo": "El mecanismo del <i>gustatzen zait</i> lo montaste al principio de la unidad. Este es su terreno natural: cuando alguien te pregunta qué te gusta, la respuesta casi siempre está en esta lista.\n\n<b>Futbola gustatzen zait.</b> — Me gusta el fútbol.\n<b>Musika asko gustatzen zait.</b> — Me gusta mucho la música.\n<b>Zinema ez zait gustatzen.</b> — No me gusta el cine.\n<b>Antzerkia asko gustatzen zait.</b> — Me gusta mucho el teatro.\n\nY si lo que gusta va en plural, ya sabes lo que pasa:\n\n<b>Liburuak gustatzen zaizkit.</b> — Me gustan los libros.\n\nFíjate en el orden, que es el de siempre: primero lo que gusta, después el verbo. Lo que en castellano es el sujeto —«me gusta <i>el fútbol</i>»— en euskera va delante igual, así que aquí las dos lenguas se parecen más de lo que parecía.\n\nCon <i>asko</i> (mucho), <i>pixka bat</i> (un poco) y <i>batere ez</i> (nada en absoluto), que también tienes del principio de la unidad, ya puedes contestar entero:\n\n<b>—Kirola gustatzen zaizu?</b> — ¿Te gusta el deporte?\n<b>—Bai, asko.</b> — Sí, mucho.",
+      "cuerpo": "El mecanismo del <i>gustatzen zait</i> lo montaste al principio de la unidad. Este es su terreno natural: cuando alguien te pregunta qué te gusta, la respuesta casi siempre está en esta lista.\n\n<b>Futbola gustatzen zait.</b> — Me gusta el fútbol.\n<b>Musika asko gustatzen zait.</b> — Me gusta mucho la música.\n<b>Zinema ez zait gustatzen.</b> — No me gusta el cine.\n<b>Antzerkia asko gustatzen zait.</b> — Me gusta mucho el teatro.\n\nY si lo que gusta va en plural, ya sabes lo que pasa:\n\n<b>Liburuak gustatzen zaizkit.</b> — Me gustan los libros.\n\nOjo con el orden, que <b>no</b> coincide con el castellano: aquí lo que gusta va <b>delante</b> —<i>futbola gustatzen zait</i>— y en castellano va detrás —«me gusta <i>el fútbol</i>»—.\n\nLo que sí coincide es el reparto de papeles, que es lo llamativo de las dos lenguas: <b>el fútbol es el sujeto</b> tanto en euskera como en castellano, y tú eres a quien le pasa algo. Por eso decimos «me gusta<b>n</b> los libros» y no «me gusto los libros». El mecanismo es el mismo; el orden, del revés.\n\nCon <i>asko</i> (mucho), <i>pixka bat</i> (un poco) y <i>batere ez</i> (nada en absoluto), que también tienes del principio de la unidad, ya puedes contestar entero:\n\n<b>—Kirola gustatzen zaizu?</b> — ¿Te gusta el deporte?\n<b>—Bai, asko.</b> — Sí, mucho.",
       "ejemplos": [
         {
           "eu": "Futbola gustatzen zait.",
@@ -74,7 +74,7 @@
     },
     {
       "titulo": "La txapela, el campeón y el campeonato",
-      "cuerpo": "Esta es de las que explican media cultura de golpe.\n\n<b>txapela</b> es la boina. Y de ahí salen dos palabras que oirás constantemente:\n\n<b>txapelduna</b> — el campeón. Literalmente, <i>el que tiene txapela</i> (<b>-dun</b> es «el que tiene»).\n<b>txapelketa</b> — el campeonato.\n\nY el porqué está en el diccionario de Euskaltzaindia, que define <i>txapelketa</i> como «la competición en la que al ganador se le entrega, entre otras cosas, <b>una txapela</b>».\n\nO sea: no es que al campeón se le llame así por casualidad. En las competiciones vascas —pelota, bertsolaris, levantamiento de piedra— al que gana se le pone literalmente la boina. La palabra viene del gesto.\n\nY por eso esta ficha vive aquí, con el deporte, y no con la ropa: la <i>txapela</i> es una prenda, pero <i>txapeldun</i> y <i>txapelketa</i> son palabras de competición.",
+      "cuerpo": "Esta es de las que explican media cultura de golpe.\n\n<b>txapela</b> es la boina. Y de ahí salen dos palabras que oirás constantemente:\n\n<b>txapelduna</b> — el campeón. Literalmente, <i>el que tiene txapela</i>: <b>-dun</b> es «el que tiene», la misma pieza que ya viste en <b>euskalduna</b>, quien tiene el euskera.\n<b>txapelketa</b> — el campeonato.\n\nY el porqué está en el diccionario de Euskaltzaindia, que define <i>txapelketa</i> como «la competición en la que al ganador se le entrega, entre otras cosas, <b>una txapela</b>».\n\nO sea: no es que al campeón se le llame así por casualidad. En las competiciones vascas —pelota, bertsolaris, levantamiento de piedra— al que gana se le pone literalmente la boina. La palabra viene del gesto.\n\nY por eso esta ficha vive aquí, con el deporte, y no con la ropa: la <i>txapela</i> es una prenda, pero <i>txapeldun</i> y <i>txapelketa</i> son palabras de competición.",
       "ejemplos": [
         {
           "eu": "txapela",
@@ -93,7 +93,7 @@
     },
     {
       "titulo": "Ropa que va siempre en plural",
-      "cuerpo": "Antes de la regla, la lista. Estas son las prendas del tema:\n\n<b>arropa</b> — la ropa (en general)\n<b>alkandora</b> — la camisa\n<b>jertsea</b> — el jersey\n<b>jaka</b> — la chaqueta\n<b>gona</b> — la falda\n<b>soinekoa</b> — el vestido\n<b>txapela</b> — la boina\n\nIgual que en castellano decimos «los pantalones» y no «el pantalón» para la prenda entera, el euskera tiene su propia lista de cosas que van en plural. La marca es <b>-ak</b> al final:\n\n<b>prakak</b> — los pantalones\n<b>zapatak</b> — los zapatos\n<b>betaurrekoak</b> — las gafas\n\n<i>Betaurrekoak</i> además tiene una construcción bonita por dentro: <b>begi</b> (ojo) + <b>aurre</b> (delante) + <b>-ko</b> — «los de delante de los ojos».\n\nY ya conoces otra de la unidad 6: <b>oporrak</b>, las vacaciones.",
+      "cuerpo": "Antes de la regla, la lista. Estas son las prendas del tema:\n\n<b>arropa</b> — la ropa (en general)\n<b>alkandora</b> — la camisa\n<b>jertsea</b> — el jersey\n<b>jaka</b> — la chaqueta\n<b>gona</b> — la falda\n<b>soinekoa</b> — el vestido\n<b>txapela</b> — la boina\n\nIgual que en castellano decimos «los pantalones» y no «el pantalón» para la prenda entera, el euskera tiene su propia lista de cosas que van en plural. La marca es <b>-ak</b> al final:\n\n<b>prakak</b> — los pantalones\n<b>zapatak</b> — los zapatos\n<b>betaurrekoak</b> — las gafas\n\n<i>Betaurrekoak</i> además tiene una construcción bonita por dentro: <b>begi</b> (ojo) + <b>aurre</b> (delante) + <b>-ko</b> — «los de delante de los ojos».\n\nY en castellano guardamos la misma idea en una palabra más antigua: <b>anteojos</b>.\n\nY esto no es cosa solo de la ropa: <b>oporrak</b>, las vacaciones, que viste en la sexta unidad, va en plural por la misma razón.",
       "ejemplos": [
         {
           "eu": "prakak",
@@ -279,7 +279,7 @@
     },
     {
       "titulo": "El cuerpo que ya usabas sin saberlo",
-      "cuerpo": "Antes de aprenderte la lista, fíjate en una cosa: <b>ya llevas usando partes del cuerpo desde hace tres unidades</b>, metidas dentro de palabras que te sabes.\n\nAcuérdate del <b>-z</b> de «por medio de», el de la octava unidad. Pégalo a una parte del cuerpo y sale sola:\n\n<i>oin</i> (pie) + <b>-z</b> → <b>oinez</b>, a pie\n<i>esku</i> (mano) + <b>-z</b> → <b>eskuz</b>, a mano\n<i>buru</i> (cabeza) + <b>-z</b> → <b>buruz</b>, de memoria\n\nLas dos primeras ya las has usado: <i>oinez nator</i> (vengo a pie) y <i>eskuz idazten dut</i> (escribo a mano) salieron las dos en su momento, y llevaban un pie y una mano dentro sin que hiciera falta saberlo.\n\nY hay otra escondida en un sitio inesperado:\n\n<i>begi</i> (ojo) + <i>aurre</i> (delante) + <b>-ko</b> → <b>betaurrekoak</b>, las gafas\n\nLiteralmente, «los de delante de los ojos».\n\nAsí que la lista de abajo no es material nuevo del todo: es abrir palabras que ya tenías cerradas.",
+      "cuerpo": "Antes de aprenderte la lista, fíjate en una cosa: <b>ya llevas usando partes del cuerpo desde hace tres unidades</b>, metidas dentro de palabras que te sabes.\n\nAcuérdate del <b>-z</b> de «por medio de», el de la octava unidad. Pégalo a una parte del cuerpo y sale sola:\n\n<i>oin</i> (pie) + <b>-z</b> → <b>oinez</b>, a pie\n<i>esku</i> (mano) + <b>-z</b> → <b>eskuz</b>, a mano\n<i>buru</i> (cabeza) + <b>-z</b> → <b>buruz</b>, de memoria\n\nLas dos primeras ya las has usado: <i>oinez nator</i> (vengo a pie) y <i>eskuz idazten dut</i> (escribo a mano) salieron las dos en su momento, y llevaban un pie y una mano dentro sin que hiciera falta saberlo.\n\nAsí que la lista de abajo no es material nuevo del todo: es abrir palabras que ya tenías cerradas. Y queda otra escondida en las gafas, pero esa la verás cuando llegue la ropa.",
       "ejemplos": [
         {
           "eu": "Oinez nator.",
@@ -2740,15 +2740,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «jaieguna»?",
+          "pregunta": "¿Qué significa «oina»?",
           "opciones": [
-            "el fútbol",
             "el pie",
+            "el fútbol",
             "dar",
             "la cabeza"
           ],
           "correcta": 0,
-          "explicacion": "jaieguna = el día festivo."
+          "explicacion": "oina = el pie. Es el «oin» que llevas dentro de «oinez», a pie."
         }
       ]
     },

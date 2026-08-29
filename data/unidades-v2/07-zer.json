@@ -293,7 +293,7 @@
     {
       "subnivel": "7.4",
       "titulo": "«Como» frente a «estoy comiendo»",
-      "cuerpo": "<b>Jaten dut</b> es lo que haces normalmente. Pero para lo que estás haciendo <i>ahora mismo</i>, el euskera tiene otra construcción:\n\n<b>jaten ari naiz</b> — estoy comiendo\n<b>ikasten ari naiz</b> — estoy estudiando\n\nLa receta es la misma de siempre —el verbo en <b>-t(z)en</b>— pero en vez de <i>dut</i> se pone <b>ari</b> más el verbo <i>izan</i>:\n\n<b>ari naiz</b> — yo estoy\n<b>ari zara</b> — tú estás\n<b>ari da</b> — él o ella está\n\nFíjate en un detalle que sorprende: aunque comas algo, aquí el auxiliar es <i>izan</i> (naiz), nunca <i>dut</i>.",
+      "cuerpo": "<b>Jaten dut</b> es lo que haces normalmente. Pero para lo que estás haciendo <i>ahora mismo</i>, el euskera tiene otra construcción:\n\n<b>jaten ari naiz</b> — estoy comiendo\n<b>ikasten ari naiz</b> — estoy estudiando\n\nLa receta es la misma de siempre —el verbo en <b>-t(z)en</b>— pero en vez de <i>dut</i> se pone <b>ari</b> más el verbo <i>izan</i>:\n\n<b>… ari naiz</b> — yo estoy …ndo\n<b>… ari zara</b> — tú estás …ndo\n<b>… ari da</b> — él o ella está …ndo\n\n<b>Y esto es importante: «ari» nunca va solo.</b> No es un verbo que signifique «estar» por su cuenta — necesita siempre delante el verbo en <i>-t(z)en</i>. <i>Ari naiz</i> a secas no dice «estoy en ello»: le falta la mitad. Lo que se dice es <b>jaten ari naiz</b>, <b>ikasten ari naiz</b>, <b>lanean ari naiz</b>.\n\nFíjate en un detalle que sorprende: aunque comas algo, aquí el auxiliar es <i>izan</i> (naiz), nunca <i>dut</i>.",
       "ejemplos": [
         {
           "eu": "Jaten ari naiz.",
@@ -772,22 +772,22 @@
     },
     {
       "eu": "ari naiz",
-      "es": "estoy (haciendo algo)",
-      "nota": "Para lo que pasa ahora mismo.",
+      "es": "estoy (con el verbo en -t(z)en delante)",
+      "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
       "categoria": "verbo",
       "subnivel": "7.4"
     },
     {
       "eu": "ari zara",
-      "es": "estás (haciendo algo)",
-      "nota": null,
+      "es": "estás (con el verbo en -t(z)en delante)",
+      "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
       "categoria": "verbo",
       "subnivel": "7.4"
     },
     {
       "eu": "ari da",
-      "es": "está (haciendo algo)",
-      "nota": null,
+      "es": "está (con el verbo en -t(z)en delante)",
+      "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
       "categoria": "verbo",
       "subnivel": "7.4"
     }

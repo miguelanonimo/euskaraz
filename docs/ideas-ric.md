@@ -1878,6 +1878,51 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Tanda de Ric probando la app publicada (29/08/2026)
+
+Siete avisos, y **dos exigían investigación de verdad**.
+
+**«Ari naiz» no puede ir solo.** Ric: sus conocidos lo cuestionaban. Tenían
+razón. La [Euskararen Gramatika][eg] es explícita: la perífrasis `ari izan`
+exige el verbo principal en `-t(z)en`. `Ari naiz` a secas no significa «estoy
+en ello», le falta la mitad. La ficha del 7.4 presentaba `ari naiz — yo estoy`
+como si fuera un paradigma suelto, y el vocabulario lo glosaba igual.
+Corregidas las dos cosas. **Los ejercicios estaban bien**: todos lo usan con su
+verbo (`ikasten ari zara`, `kafea edaten ari naiz`).
+
+**Los plurales bizkainos: correctos, pero mal enmarcados.** Ric: en Gernika no
+les suenan. Comprobado en [Bizkaieraren ataria][ba]: `honeek`, `horreek`,
+`hareek` son exactamente lo que recoge la gramática, con las variantes
+`honeik`/`horreik` y la antigua `haek` — la ficha no se inventaba nada. Pero
+las presentaba como lo que vas a oír, y eso sí era pasarse: mucha gente
+escolarizada en batua usa hoy `hauek/horiek/haiek` también en casa. Añadido un
+aviso que lo dice, en la línea del que ya hay en la primera unidad.
+
+[eg]: https://euskaltzaindia.eus/index.php?ItemId=1765&kodea=2604&lang=eu&option=com_liburuak&task=gramatika
+[ba]: https://www.bizkaiera.eus/bizkaiera/morfologia-puntu-batzuk/
+
+**Un cuarto ejercicio con la respuesta fuera de las opciones.** `u9-g22` v4
+preguntaba «¿Qué significa jaieguna?» y daba por buena **«el fútbol»**; la
+respuesta correcta ni estaba, y `jaieguna` además es del 6.5. Van cuatro de
+esta familia (`alaba`/oveja, `izeba`/conejo, `erantzun`/guztia, y esta).
+
+**Y el párrafo del 9.4 se contradecía**, como vio Ric: decía que en euskera lo
+que gusta «va delante igual» que en castellano, cuando en castellano va detrás.
+Reescrito: lo que coincide es **el reparto de papeles** —el fútbol es el sujeto
+en las dos lenguas, por eso decimos «me gustaN los libros»— y el orden es justo
+al revés.
+
+**Otro `.replace()` que había fallado en silencio.** La duplicación de las
+gafas que Ric detectó entre el 9.3 y el 9.5 venía de ahí: una edición anterior
+para quitarla del 9.5 no encajó con el texto y no hizo nada. Es la segunda vez
+en dos días. Ahora todas las ediciones llevan `assert`, y en esta misma tanda
+me ha parado tres veces.
+
+Lo demás: el `-dun` del 9.4 enlaza ya con `euskalduna`; las gafas se cierran en
+el 9.5 con **anteojos**, que es la misma idea en castellano; y `oporrak` se
+queda donde está, pero diciendo por qué —va en plural por la misma razón que
+las prendas—.
+
 ### El curso entero, sin vocabulario huérfano (29/08/2026)
 
 Terminada la pasada. **526 palabras, ninguna sin presentar en su tema.**
