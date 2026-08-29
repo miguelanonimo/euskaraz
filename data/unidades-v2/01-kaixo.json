@@ -39,6 +39,25 @@
       "subnivel": "1.1"
     },
     {
+      "titulo": "Saludar y despedirse: «arte» es «hasta»",
+      "cuerpo": "Empecemos por lo que vas a decir el primer día.\n\n<b>kaixo</b> — hola\n<b>agur</b> — adiós\n\n<i>Kaixo</i> vale a cualquier hora, y <i>agur</i> también: no hay que elegir según el momento del día, como pasa con los tres saludos de la ficha siguiente.\n\n<b>Las despedidas llevan todas la misma pieza</b>\n\nFíjate en estas tres:\n\n<b>ikusi arte</b> — hasta luego (literalmente, «hasta vernos»)\n<b>gero arte</b> — hasta luego\n<b>bihar arte</b> — hasta mañana\n\nLas tres acaban en <b>arte</b>, que es <b>«hasta»</b>. Y va <b>detrás</b>, no delante como el «hasta» castellano: primero dices hasta cuándo, y luego el <i>arte</i>.\n\n<i>ikusi</i> (ver) → hasta vernos\n<i>gero</i> (luego) → hasta luego\n<i>bihar</i> (mañana) → hasta mañana\n\nCon eso, cualquier palabra de tiempo que aprendas te sirve para despedirte. Cuando en la sexta unidad veas los días de la semana, <i>astelehen arte</i> será «hasta el lunes» sin que nadie te lo tenga que enseñar.",
+      "ejemplos": [
+        {
+          "eu": "Kaixo!",
+          "es": "¡Hola!"
+        },
+        {
+          "eu": "Bihar arte!",
+          "es": "¡Hasta mañana!"
+        },
+        {
+          "eu": "Ikusi arte!",
+          "es": "¡Hasta luego!"
+        }
+      ],
+      "subnivel": "1.1"
+    },
+    {
       "titulo": "«on» = bueno, y va detrás",
       "cuerpo": "Los tres saludos del día comparten la misma pieza:\n\n<b>egun</b> (día) + <b>on</b> → egun on\n<b>arratsalde</b> (tarde) + <b>on</b> → arratsalde on\n<b>gau</b> (noche) + <b>on</b> → gabon\n\nEl adjetivo va <b>detrás</b> del sustantivo, al revés que en «buenos días». No es una excepción de los saludos, es una regla general del idioma: <i>etxe handia</i> es «casa grande», nunca «grande casa».\n\nGuárdate esta regla, porque va a aparecer en todas las unidades.",
       "ejemplos": [
@@ -59,6 +78,25 @@
         }
       ],
       "subnivel": "1.1"
+    },
+    {
+      "titulo": "«Zer moduz?» y toda la escala de respuestas",
+      "cuerpo": "La pregunta que más veces vas a oír y a decir:\n\n<b>zer moduz?</b> — ¿qué tal?\n\nY para contestar tienes una escala completa, de mejor a peor:\n\n<b>oso ondo</b> — muy bien\n<b>ondo</b> — bien\n<b>hala-hola</b> — así así, regular\n<b>gaizki</b> — mal\n\nLa pieza que la abre es <b>oso</b>, que es <b>«muy»</b> y sirve con cualquier cosa, no solo aquí: más adelante lo verás en <i>oso handia</i>, muy grande. Con aprender <i>oso</i> te llevas media escala.\n\nY la coletilla que devuelve la pregunta:\n\n<b>eta zu?</b> — ¿y tú?\n\n<b>Lo mínimo para ser educado</b>\n\n<b>mesedez</b> — por favor\n<b>barkatu</b> — perdón, disculpa\n<b>eskerrik asko</b> — muchas gracias\n<b>ez horregatik</b> — de nada\n\nEsas dos últimas van en pareja: una es la respuesta de la otra. <i>Eskerrik asko</i> es literalmente «gracias muchas», con el adjetivo detrás, igual que en <i>egun on</i>.\n\nY las dos que resuelven la mitad de las conversaciones:\n\n<b>bai</b> — sí\n<b>ez</b> — no\n\n<i>Ez</i> guárdala bien, porque no es solo «no» como respuesta: es la pieza con la que se niega cualquier frase en euskera, y eso llega en la séptima unidad.",
+      "ejemplos": [
+        {
+          "eu": "Zer moduz? — Oso ondo, eta zu?",
+          "es": "¿Qué tal? — Muy bien, ¿y tú?"
+        },
+        {
+          "eu": "Eskerrik asko! — Ez horregatik.",
+          "es": "¡Muchas gracias! — De nada."
+        },
+        {
+          "eu": "Barkatu, mesedez.",
+          "es": "Perdone, por favor."
+        }
+      ],
+      "subnivel": "1.2"
     },
     {
       "titulo": "Pronunciación: lo que necesitas hoy",

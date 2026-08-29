@@ -1878,6 +1878,47 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Unidades 1 y 9, a cero (29/08/2026)
+
+Siguiendo con lo del vocabulario sin presentar. Las dos peores eran la 1 (62%)
+y la 9 (40%).
+
+**El 1.2 «Cortesía y cómo estás» no tenía NI UNA ficha** para sus 13 palabras
+—el mismo caso que el 8.4 y el 9.4—, y era el primer tema de verdad del curso.
+Ficha nueva con la escala entera de respuestas a `zer moduz?`, de `oso ondo` a
+`gaizki`, señalando que `oso` («muy») sirve para todo y no solo ahí.
+
+**En el 1.1 se preguntaba por `arte` sin explicarlo**: `u1-g09` v3 pregunta qué
+significa en `bihar arte`. Ficha nueva con los saludos, y el gancho de que
+`arte` es «hasta» y va **detrás**: `ikusi arte`, `gero arte`, `bihar arte`. Con
+eso, cualquier palabra de tiempo que aprenda después le sirve para despedirse.
+
+**Y dos desajustes de catalogación en la 9, en sentidos opuestos:**
+
+- `niri`, `zuri`, `hari`, `guri`, `zuei`, `haiei` estaban en el **9.2**, pero
+  **la ficha del 9.1 enseña la serie entera**. Movidos al 9.1. Esto es
+  justo lo que decía el informe de la sesión de terminal, que contaba 15 usos
+  de `zuri`/`niri` antes de su tema — la etiqueta estaba mal, no los
+  ejercicios.
+- `iruditzen zait`, `interesatzen zait` y `axola zait` estaban en el **9.1** y
+  los explica la ficha del **9.2**. Movidos al 9.2.
+
+El resto son listas que faltaban: las cuatro partes del cuerpo del 9.3, las
+siete prendas del 9.5, `antzerkia` en el 9.4, y una ficha en el 9.1 para
+`gustatu`, `janaria`, `edaria`, `gauza` y `guztia` — con el detalle de que
+`janaria` y `edaria` llevan dentro `jan` y `edan`.
+
+**Otra vez me colé con los ejemplos**: escribí `Dena ondo` (`dena` es del 10.5)
+y `Edaria hotza da` (`hotza` es del 6.4). Van cuatro esta semana. Es siempre lo
+mismo: `probar_adelantos.js` mira ejercicios, no los ejemplos de las fichas.
+
+|  | antes | ahora |
+|---|---|---|
+| u1 | 62% | **0%** |
+| u9 | 40% | **0%** |
+
+Quedan por mirar: **3.1** (10 palabras), **6.x** (20 repartidas) y **2.4** (8).
+
 ### La casa: 22 palabras que nadie presentaba (29/08/2026)
 
 Ric: *«en la unidad de la casa no hay introducción a las partes de la casa,
