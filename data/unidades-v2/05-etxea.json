@@ -959,12 +959,12 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cómo se dice «en Bilbao»?",
+          "pregunta": "¿Cómo se dice «en Barakaldo»?",
           "opciones": [
-            "Bilbora",
-            "Bilbokoa",
-            "Bilbon",
-            "Bilbao"
+            "Barakaldora",
+            "Barakaldokoa",
+            "Barakaldon",
+            "Barakaldo"
           ],
           "correcta": 2,
           "explicacion": "Acaba en vocal, así que se añade la -n directamente."
@@ -1186,7 +1186,7 @@
             "txikia logela"
           ],
           "correcta": 0,
-          "explicacion": "Sustantivo, adjetivo, y el artículo al final del grupo."
+          "explicacion": "Sustantivo, adjetivo, y el artículo al final del grupo. Ojo: la -a de «logela» no es el artículo, es parte de la palabra —es «logela», no «logel»—, así que no se quita."
         },
         {
           "tipo": "opcion",
@@ -1217,7 +1217,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuántas veces aparece el artículo -a en «etxe handia»?",
+          "pregunta": "¿Cuántas veces aparece el artículo en «etxe handia»?",
           "opciones": [
             "Ninguna",
             "Una, al final del grupo",
@@ -1372,10 +1372,10 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "Vivo en Bilbao.",
+          "es": "Vivo en Lekeitio.",
           "respuestas": [
-            "bilbon bizi naiz",
-            "ni bilbon bizi naiz"
+            "lekeition bizi naiz",
+            "ni lekeition bizi naiz"
           ],
           "pista": "«bizi naiz» es «vivo». El lugar va delante."
         },
@@ -1566,7 +1566,7 @@
             "Cómo te llamas"
           ],
           "correcta": 1,
-          "explicacion": "«Non» es dónde; «Nongoa» es de dónde. La diferencia está en el -ko."
+          "explicacion": "«Non» es dónde; «Nongoa» es de dónde."
         },
         {
           "tipo": "opcion",
@@ -1597,7 +1597,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál es la pregunta para «Bilbokoa naiz»?",
+          "pregunta": "¿Cuál es la pregunta para «Gernikakoa naiz»?",
           "opciones": [
             "Non zaude?",
             "Nongoa zara?",
@@ -1655,7 +1655,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En Bilbao oyes «Non zagoz?». ¿Qué forma del batua es «zagoz»?",
+          "pregunta": "En Bizkaia oyes «Non zagoz?». ¿Qué forma del batua es «zagoz»?",
           "opciones": [
             "zara",
             "zaude",
@@ -2088,14 +2088,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Y «jangela», el comedor?",
+          "pregunta": "¿Cuál es la raíz de «jangela», el comedor?",
           "opciones": [
-            "jan (comer)",
-            "egon (estar)",
-            "lo (dormir)",
-            "bainu (baño)"
+            "comer",
+            "estar",
+            "dormir",
+            "baño"
           ],
-          "correcta": 0
+          "correcta": 0,
+          "explicacion": "jan (comer) + gela: la habitación de comer."
         },
         {
           "tipo": "pares",
@@ -2360,10 +2361,10 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "¿Dónde suele estar el sofá?",
           "opciones": [
-            "egongelan (en el salón)",
-            "sukaldean (en la cocina)",
-            "komunean (en el baño)",
-            "lorategian (en el jardín)"
+            "egongelan",
+            "sukaldean",
+            "komunean",
+            "lorategian"
           ],
           "correcta": 0,
           "explicacion": "Egongela: la habitación de estar."
@@ -2565,8 +2566,8 @@
           "pregunta": "¿Qué significa «txikia»?",
           "opciones": [
             "pequeño/a",
-            "la casa",
-            "la luz",
+            "el pájaro",
+            "el cerdo",
             "grande"
           ],
           "correcta": 0,
@@ -2580,7 +2581,7 @@
       "variantes": [
         {
           "tipo": "pares",
-          "instruccion": "Empareja los colores",
+          "instruccion": "Empareja los adjetivos",
           "pares": [
             {
               "eu": "handia",
@@ -2602,7 +2603,7 @@
         },
         {
           "tipo": "pares",
-          "instruccion": "Empareja los colores",
+          "instruccion": "Empareja los adjetivos",
           "pares": [
             {
               "eu": "polita",
@@ -2848,7 +2849,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "El error típico del castellanohablante aquí es…",
+          "pregunta": "En «Mahai zuri bat», el error típico del castellanohablante es…",
           "opciones": [
             "poner bat delante",
             "olvidarse de quitar el -a",
@@ -3644,7 +3645,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Y «bainugela»?",
+          "pregunta": "¿Qué es «bainugela»?",
           "opciones": [
             "el cuarto de baño",
             "el salón",
@@ -3657,7 +3658,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Y «logela»?",
+          "pregunta": "¿Qué es «logela»?",
           "opciones": [
             "el dormitorio",
             "el comedor",
@@ -3683,15 +3684,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál de estas NO acaba en «-gela»?",
+          "pregunta": "En un bar, ¿qué palabra verás escrita en la puerta del servicio?",
           "opciones": [
-            "komuna",
-            "jangela",
-            "logela",
-            "egongela"
+            "Komunak",
+            "Bainugela",
+            "Egongela",
+            "Sarrera"
           ],
           "correcta": 0,
-          "explicacion": "«Komuna» va por su cuenta."
+          "explicacion": "En plural, porque son varios. «Bainugela» es el cuarto de baño de una casa."
         }
       ],
       "subnivel": "5.2"

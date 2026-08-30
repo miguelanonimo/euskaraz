@@ -1542,17 +1542,14 @@
           ]
         },
         {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "El botón «Batua / Bizkaiera» de la barra de arriba…",
-          "opciones": [
-            "Decide si los ejercicios te preguntan también en bizkaiera",
-            "Cambia el idioma de la app",
-            "Cambia el nivel",
-            "Activa el audio"
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "el dialecto",
+          "respuestas": [
+            "euskalkia",
+            "euskalki"
           ],
-          "correcta": 0,
-          "explicacion": "El idioma que aprendes es siempre el batua. Lo que decide es si además añadimos formas locales."
+          "pista": "Lleva «euskal-» delante, como Euskal Herria."
         },
         {
           "tipo": "opcion",
