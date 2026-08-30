@@ -1201,6 +1201,22 @@
           "distractores": [
             "gazta"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Tú comes pan.",
+          "eu": "Zuk ogia jaten duzu.",
+          "palabras": [
+            "zuk",
+            "ogia",
+            "jaten",
+            "duzu"
+          ],
+          "distractores": [
+            "zu",
+            "dut"
+          ]
         }
       ],
       "subnivel": "7.1"

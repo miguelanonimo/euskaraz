@@ -1878,6 +1878,46 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Formato nuevo: escribir con la bolsa a la vista (30/08/2026)
+
+Idea de Ric a partir de la nota de investigación: **los ejercicios de ordenar,
+pero tecleando**. Ves los huecos, escribes cada palabra, y la que aciertas se
+pone verde y se apaga abajo en la bolsa.
+
+Encaja de lleno con lo que dice la nota: recuperar **produciendo** gana con
+diferencia a reconocer, y los formatos **híbridos** —con algo de andamio, pero
+produciendo— fueron los más eficaces del metaanálisis de 217 estudios. Un
+ejercicio de ordenar es reconocimiento: las piezas están ahí y se colocan.
+Este obliga a producir cada palabra, con la bolsa solo como red.
+
+Decisión de diseño: **las fichas de la bolsa no se pueden pinchar**. Si se
+pudieran, volvería a ser un ejercicio de reconocer y se perdería justo lo que
+lo hace valer.
+
+**Cómo está montado.** Tipo `escribir`, con los mismos campos que `orden` —
+`es`, `eu`, `palabras`, `distractores`—, así que comparte sus comprobaciones en
+`verificar.py` y no hace falta contenido nuevo: cualquier ejercicio de ordenar
+se puede duplicar como `escribir` cambiando una palabra.
+
+**Prototipo**: tres variantes, en `u4-g04` (2.3), `u2-g08` (2.2) y `u8-g05`
+(7.1). Van **como sexta variante**, encima de las cinco que ya había, no
+sustituyendo a ninguna. El verificador admite esa sexta solo si es de este
+tipo.
+
+**Probado en el navegador de punta a punta**: acertar pone verde y apaga la
+ficha; equivocarse no; corregir la enciende de nuevo; y **estropear una palabra
+ya acertada devuelve su ficha a la bolsa**. Con las tres bien, «Oso ondo!».
+
+Dos cosas que me pillé montándolo:
+
+- **Me inventé variables de CSS** (`--linea`, `--ok`) que no existen en este
+  proyecto. Como el valor era inválido, la declaración entera se anulaba y
+  **los huecos salían sin borde**: se veía uno solo, el que tenía el foco.
+  Ahora usa las de verdad: `--filete`, `--bien-txt`, `--bien-10`.
+- La variante se elige **al azar** entre las del grupo, así que con seis salta
+  1 de cada 6. Si el formato convence, Ric apuntó darle **más peso en los tests
+  de fin de unidad**, que es donde más rinde producir.
+
 ### El «-a»/«-ak», misma familia de riesgo (30/08/2026)
 
 La nota mete la oposición `-a`/`-ak` en el mismo saco que el ergativo, y con

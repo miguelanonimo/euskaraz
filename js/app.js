@@ -1988,7 +1988,7 @@
        la que no aplique simplemente no encuentra nada. */
     if (ej.tipo === 'opcion') {
       audio = audioDePalabra(ej.opciones[ej.correcta]) || audioDePalabra(ej.pregunta);
-    } else if (ej.tipo === 'orden') {
+    } else if (ej.tipo === 'orden' || ej.tipo === 'escribir') {
       audio = audioDePalabra(ej.eu);
     } else if (ej.tipo === 'traducir') {
       audio = ej.respuestas && audioDePalabra(ej.respuestas[0]);
@@ -2221,6 +2221,7 @@
       case 'opcion':   pintarOpcion(ej); break;
       case 'pares':    pintarPares(ej); break;
       case 'orden':    pintarOrden(ej); break;
+      case 'escribir': pintarEscribir(ej); break;
       case 'traducir': pintarTraducir(ej); break;
       case 'teclear':  pintarTeclear(ej); break;
       default:         siguiente();
@@ -2468,6 +2469,90 @@
     };
   }
 
+  /* — Escribir con la bolsa a la vista —
+
+     Mismo material que «orden», pero en vez de arrastrar fichas hay que
+     teclear cada palabra. La bolsa de abajo se queda como ayuda visual y
+     no se puede pinchar: si se pudiera, volvería a ser un ejercicio de
+     reconocer. Cada palabra acertada se pone en verde, se bloquea, y su
+     ficha se apaga abajo.
+
+     La razón de existir de este formato está en la nota de investigación:
+     recuperar produciendo (teclear la forma) gana con diferencia a
+     reconocerla, y los formatos híbridos —algo de andamio, pero
+     produciendo— fueron los más eficaces del metaanálisis. */
+
+  function pintarEscribir(ej) {
+    var esperadas = ej.palabras.slice();
+
+    el.quizContent.innerHTML =
+      '<p class="q__inst">' + esc(ej.instruccion) + '</p>' +
+      '<h2 class="q__prompt q__prompt--es">' + esc(ej.es) + '</h2>' +
+      '<div class="slots" id="slots">' +
+      esperadas.map(function (p, i) {
+        return '<input class="slot" type="text" data-i="' + i +
+               '" size="' + Math.max(p.length, 3) + '" autocomplete="off" ' +
+               'autocorrect="off" autocapitalize="off" spellcheck="false" ' +
+               'aria-label="palabra ' + (i + 1) + '">';
+      }).join('') + '</div>' +
+      '<div class="bank bank--ayuda" id="bank">' +
+      barajar(esperadas.concat(ej.distractores || [])).map(function (p) {
+        return '<span class="chip chip--ayuda" data-n="' + esc(normalizar(p)) + '">' + esc(p) + '</span>';
+      }).join('') + '</div>';
+
+    var slots = $('slots'), bank = $('bank');
+
+    function apagarFicha(pal) {
+      var libres = bank.querySelectorAll('.chip[data-n="' + normalizar(pal) + '"]:not(.is-used)');
+      if (libres.length) libres[0].classList.add('is-used');
+    }
+    function encenderFicha(pal) {
+      var usadas = bank.querySelectorAll('.chip[data-n="' + normalizar(pal) + '"].is-used');
+      if (usadas.length) usadas[usadas.length - 1].classList.remove('is-used');
+    }
+    function refrescar() {
+      var llenos = 0;
+      Array.prototype.forEach.call(slots.children, function (s) {
+        if (s.value.trim()) llenos++;
+      });
+      el.btnCheck.disabled = llenos < esperadas.length;
+    }
+
+    slots.addEventListener('input', function (e) {
+      var s = e.target;
+      if (!s.classList.contains('slot') || estado.resuelto) return;
+      var i = +s.dataset.i, bien = normalizar(s.value) === normalizar(esperadas[i]);
+      if (bien && !s.classList.contains('is-ok')) {
+        s.classList.add('is-ok');
+        apagarFicha(esperadas[i]);
+        var sig = slots.querySelector('.slot:not(.is-ok)');
+        if (sig) sig.focus();
+      } else if (!bien && s.classList.contains('is-ok')) {
+        s.classList.remove('is-ok');
+        encenderFicha(esperadas[i]);
+      }
+      refrescar();
+    });
+    slots.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter') return;
+      e.preventDefault();
+      if (!el.btnCheck.disabled) el.btnCheck.click();
+    });
+
+    var primero = slots.querySelector('.slot');
+    if (primero) primero.focus();
+  }
+
+  function corregirEscribir(ej) {
+    var dado = Array.prototype.map.call($('slots').children, function (s) { return s.value; }).join(' ');
+    var ok = normalizar(dado) === normalizar(ej.palabras.join(' '));
+    Array.prototype.forEach.call($('slots').children, function (s) { s.blur(); });
+    return {
+      ok: ok,
+      cuerpo: ok ? '' : '<span class="sol">' + esc(ej.eu) + '</span>'
+    };
+  }
+
   // — Escribir la traducción —
 
   function pintarTraducir(ej) {
@@ -2667,6 +2752,7 @@
     var r;
     if (ej.tipo === 'opcion')        r = corregirOpcion(ej);
     else if (ej.tipo === 'orden')    r = corregirOrden(ej);
+    else if (ej.tipo === 'escribir') r = corregirEscribir(ej);
     else if (ej.tipo === 'traducir') r = corregirTraducir(ej);
     else if (ej.tipo === 'teclear')  r = corregirTeclear(ej);
     else return;

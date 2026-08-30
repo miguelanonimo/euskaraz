@@ -23,7 +23,9 @@ errores, avisos = [], []
 ids, enunciados = {}, {}
 total_v = 0
 
-TIPOS = {"opcion", "pares", "orden", "traducir"}
+# «escribir» es la bolsa a la vista pero tecleando: mismos campos que
+# «orden», y por eso comparte sus comprobaciones.
+TIPOS = {"opcion", "pares", "orden", "traducir", "escribir"}
 
 # Claves admitidas en una entrada de vocabulario (o en una variante).
 # {eu,es,nota} son las del original y siguen siendo obligatorias en la
@@ -328,8 +330,13 @@ for ruta, u in unidades:
                 "%s: el id %s no empieza por %s- (grupo mudado de unidad)"
                 % (ruta, gexp["id"], u["id"]))
         vs = gexp["variantes"]
-        if len(vs) != 5:
-            errores.append("%s: %s tiene %d variantes" % (ruta, gexp["id"], len(vs)))
+        # Cinco es lo normal. Se admite una sexta cuando es del tipo
+        # «escribir», que es la variante productiva que se añade encima de
+        # las que ya había, no una de repuesto.
+        extra = [v for v in vs if v.get("tipo") == "escribir"]
+        if len(vs) - len(extra) != 5:
+            errores.append("%s: %s tiene %d variantes (%d sin contar las de escribir)"
+                           % (ruta, gexp["id"], len(vs), len(vs) - len(extra)))
         total_v += len(vs)
         for n, v in enumerate(vs):
             eid = "%s v%d" % (gexp["id"], n+1)
@@ -356,7 +363,10 @@ for ruta, u in unidades:
                 if len(set(p["eu"] for p in ps)) != len(ps): errores.append("%s: euskera repetido en las parejas" % eid)
                 if len(set(p["es"] for p in ps)) != len(ps): errores.append("%s: castellano repetido en las parejas" % eid)
                 clave = norm(" ".join(p["eu"] for p in ps))
-            elif t == "orden":
+            elif t == "orden" or t == "escribir":
+                # «escribir» usa los mismos campos que «orden» —es la misma
+                # frase, tecleada en vez de arrastrada—, así que pasa por las
+                # mismas comprobaciones.
                 # Los distractores son fichas que NO forman parte de la frase:
                 # si alguna se cuela en la solución, el ejercicio es irresoluble
                 # o tiene dos respuestas buenas.

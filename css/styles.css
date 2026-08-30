@@ -989,6 +989,30 @@ body.silencioso .pair__play{ display: none; }
 }
 .chip:active{ background: var(--tinta); color: var(--papel); }
 .chip.is-used{ opacity: 0; pointer-events: none; }
+/* Escribir con la bolsa a la vista: huecos que se ponen verdes al acertar,
+   y fichas de abajo que solo hacen de ayuda — no se pinchan, porque si se
+   pincharan volvería a ser un ejercicio de reconocer. */
+.slots{
+  display: flex; flex-wrap: wrap; gap: var(--u);
+  margin: calc(var(--u) * 2) 0 calc(var(--u) * 3);
+}
+.slot{
+  font: inherit; font-size: 1.05rem;
+  padding: calc(var(--u) * 1.2) calc(var(--u) * 1.5);
+  border: 1px solid var(--filete); border-radius: 8px;
+  background: var(--papel-alto); color: var(--tinta);
+  min-width: 4.5rem; text-align: center;
+}
+.slot::placeholder{ color: var(--tinta-45); }
+.slot:focus{ outline: 2px solid var(--acento); outline-offset: 1px; }
+.slot.is-ok{
+  border-color: var(--bien-txt); color: var(--bien-txt);
+  background: var(--bien-10); font-weight: 600;
+}
+.chip--ayuda{ cursor: default; }
+.chip--ayuda:active{ background: none; color: inherit; }
+.bank--ayuda .chip.is-used{ opacity: .2; text-decoration: line-through; }
+
 .chip--in{ background: var(--tinta); color: var(--papel); border-color: var(--tinta); }
 
 /* — Escribir — */

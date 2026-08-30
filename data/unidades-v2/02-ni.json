@@ -1282,6 +1282,21 @@
           "distractores": [
             "bera"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "nuestra casa nueva",
+          "eu": "gure etxe berria",
+          "palabras": [
+            "gure",
+            "etxe",
+            "berria"
+          ],
+          "distractores": [
+            "zuen",
+            "etxea"
+          ]
         }
       ],
       "subnivel": "2.2"
@@ -1927,6 +1942,21 @@
           ],
           "distractores": [
             "neu"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Nosotros somos amigos.",
+          "eu": "Gu lagunak gara.",
+          "palabras": [
+            "gu",
+            "lagunak",
+            "gara"
+          ],
+          "distractores": [
+            "naiz",
+            "laguna"
           ]
         }
       ],
