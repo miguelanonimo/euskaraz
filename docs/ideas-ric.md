@@ -1944,6 +1944,45 @@ Probado en el navegador **intentando hacer trampa a propósito**: tecleé «gu»
 luego «zu», y al tercer intento la correcta — el hueco ya estaba cerrado y el
 ejercicio salió «No exactamente» con la solución delante.
 
+### Cuarta tanda de revisión: veintiuna (30/08/2026)
+
+Ric, con 1028 de 1819 variantes vistas. Ya entran las del formato nuevo, y de
+hecho cuatro de sus avisos son distractores de esas.
+
+Lo que más se repite sigue siendo lo mismo: **enunciados que dan la respuesta**.
+
+- «¿De qué dos palabras sale *urtebetetzea*?» — leyendo la pregunta ya
+  contestas. Sustituida por «*Urtebetetzea* significa cumpleaños. ¿Qué dice
+  literalmente?», que es lo que de verdad hay que entender.
+- «*Udaberria* y *udazkena* se construyen sobre la misma palabra, ¿cuál?» —
+  con las dos delante, `uda` salta a la vista. Cambiada por cuántas estaciones
+  tenía el año antiguo, que es el dato que importa.
+- «*Asteburua* se arma con…» — se contestaba sola. Ahora pregunta qué
+  significa.
+- «Ordena de menor a mayor: eguna, astea, hilabetea» — **el enunciado traía la
+  respuesta escrita**.
+
+También: el «en agosto» que iba dentro de la respuesta correcta de la Aste
+Nagusia, movido a la corrección; y «El carbonero» fuera de las opciones del
+Olentzero, porque con la ficha que dice que primero fue una fiesta y después un
+personaje, esa opción es una trampa y no un distractor.
+
+**Tres variantes de emparejar con las mismas cuatro palabras** (`u6-g16`,
+`u6-g17`): repartidas con otras del tema —`udazkena`, `udaberria`, `elurra`,
+`haizea`, `hodeia`, `beroa`—.
+
+**El enunciado admite negrita ahora.** Ric quería marcar «el domingo» dentro de
+la frase para que se vea de qué parte se pregunta, y el enunciado pasaba por
+`esc()`, así que las etiquetas salían literales. Añadido `richInline()`: igual
+que el `richText` de las fichas pero sin partir en párrafos, y con la misma
+seguridad —escapa todo y solo devuelve `<b>`, `<i>` y `<u>`—. Comprobado que
+ningún otro enunciado del curso lleva `<`.
+
+**Y una que no apliqué tal cual**: Ric pidió cambiar un distractor por
+«L'Automàtica». Es catalán y no pinta nada en un ejercicio de euskera, así que
+lo tomé por un pegado accidental y puse `hiru`, que junto a `bi` sí hace de
+distractor.
+
 ### El formato «escribir», en todo el curso (30/08/2026)
 
 Ric lo probó y dio el visto bueno, con el peso en 3. Extendido a **los 40

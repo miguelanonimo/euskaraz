@@ -1313,7 +1313,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«Nos vemos el domingo» — el domingo, ahí, es un cuándo: ____",
+          "pregunta": "«Nos vemos <b>el domingo</b>» → ____",
           "opciones": [
             "igandean",
             "igandera",
@@ -1550,7 +1550,7 @@
       "variantes": [
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "Siempre. → ____",
           "opciones": [
             "beti",
@@ -1563,7 +1563,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "A veces. → ____",
           "opciones": [
             "beti",
@@ -1576,7 +1576,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "Nunca. → ____",
           "opciones": [
             "inoiz ez",
@@ -1589,7 +1589,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "Ahora. → ____",
           "opciones": [
             "gero",
@@ -1602,7 +1602,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "Anoche. → ____",
           "opciones": [
             "atzo",
@@ -1682,7 +1682,7 @@
             "Nor ordu da?"
           ],
           "correcta": 1,
-          "explicacion": "Delante de un nombre, «zer» se queda en «ze»."
+          "explicacion": "Delante de un sustantivo, «zer» se queda en «ze»."
         }
       ],
       "subnivel": "6.2"
@@ -2022,15 +2022,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿De qué dos palabras sale «urtebetetzea»?",
+          "pregunta": "«Urtebetetzea» significa cumpleaños. ¿Qué dice literalmente?",
           "opciones": [
-            "urte + bete",
-            "urte + eguna",
-            "hilabete + urte",
-            "urte + jaio"
+            "que el año se llena",
+            "que el año empieza",
+            "el día del nacimiento",
+            "el año que viene"
           ],
           "correcta": 0,
-          "explicacion": "Urte (año) + bete (llenar): el completarse del año."
+          "explicacion": "urte (año) + bete (llenar): el año que se completa. No es el día en que naciste, es el que cierra la vuelta."
         },
         {
           "tipo": "opcion",
@@ -2554,7 +2554,7 @@
           "pregunta": "«pasado mañana» se dice…",
           "opciones": [
             "etzi",
-            "eta laurden",
+            "atzo",
             "maiatza",
             "arratsaldea"
           ],
@@ -2696,20 +2696,20 @@
           "instruccion": "Empareja estaciones y tiempo",
           "pares": [
             {
-              "eu": "euria",
-              "es": "la lluvia"
+              "eu": "udazkena",
+              "es": "el otoño"
             },
             {
-              "eu": "negua",
-              "es": "el invierno"
+              "eu": "udaberria",
+              "es": "la primavera"
             },
             {
-              "eu": "eguzkia",
-              "es": "el sol"
+              "eu": "elurra",
+              "es": "la nieve"
             },
             {
-              "eu": "uda",
-              "es": "el verano"
+              "eu": "haizea",
+              "es": "el viento"
             }
           ]
         },
@@ -2763,12 +2763,12 @@
           "instruccion": "Empareja estaciones y tiempo",
           "pares": [
             {
-              "eu": "euria",
-              "es": "la lluvia"
+              "eu": "hodeia",
+              "es": "la nube"
             },
             {
-              "eu": "uda",
-              "es": "el verano"
+              "eu": "beroa",
+              "es": "el calor"
             },
             {
               "eu": "negua",
@@ -2918,15 +2918,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Udaberria» y «udazkena» se construyen las dos sobre la misma palabra. ¿Cuál?",
+          "pregunta": "¿En cuántas estaciones partía el año el euskera antiguo?",
           "opciones": [
-            "uda (verano)",
-            "negua (invierno)",
-            "eguraldia (el tiempo)",
-            "urtea (el año)"
+            "Dos",
+            "Tres",
+            "Cuatro",
+            "Seis"
           ],
           "correcta": 0,
-          "explicacion": "«Udaberria» es «el verano nuevo» y «udazkena», «el final del verano». El año vasco se partía en dos —verano e invierno—, y las otras dos estaciones se colocaron alrededor del verano."
+          "explicacion": "Verano e invierno. Por eso «udaberria» es «el verano nuevo» y «udazkena» «el final del verano»: las dos se apoyan en «uda»."
         }
       ]
     },
@@ -3054,7 +3054,7 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "«Olentzero» en el diccionario aparece como…",
           "opciones": [
-            "El carbonero",
+            "El año nuevo",
             "El día de Nochebuena",
             "El árbol de Navidad",
             "La cena de Navidad"
@@ -3126,12 +3126,12 @@
           "pregunta": "La «Aste Nagusia» de Bilbao es…",
           "opciones": [
             "la Semana Santa",
-            "la Semana Grande, en agosto",
+            "la Semana Grande",
             "la Navidad",
             "el carnaval"
           ],
           "correcta": 1,
-          "explicacion": "Nagusi = principal, mayor."
+          "explicacion": "Se celebra en agosto. Nagusi = principal, mayor: la semana mayor del año."
         },
         {
           "tipo": "pares",
@@ -3372,20 +3372,20 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Asteburua» se arma con…",
+          "pregunta": "¿Qué significa «asteburua»?",
           "opciones": [
-            "aste (semana) + buru (cabeza)",
-            "aste + eguna",
-            "aste + ordua",
-            "aste + urtea"
+            "el fin de semana",
+            "el día de la semana",
+            "el principio de la semana",
+            "la semana entera"
           ],
           "correcta": 0,
-          "explicacion": "La «cabeza» de la semana: el fin de semana."
+          "explicacion": "aste (semana) + buru (cabeza): la «cabeza» de la semana."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Ordena de menor a mayor: eguna, astea, hilabetea.",
+          "pregunta": "Ordena de menor a mayor:",
           "opciones": [
             "eguna < astea < hilabetea",
             "astea < eguna < hilabetea",

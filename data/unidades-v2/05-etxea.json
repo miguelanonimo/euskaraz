@@ -1167,7 +1167,7 @@
             "nago"
           ],
           "distractores": [
-            "zaldia"
+            "naiz"
           ]
         }
       ],
@@ -2248,7 +2248,7 @@
         {
           "tipo": "escribir",
           "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
-          "es": "En el salón hay una televisión.",
+          "es": "En el salón hay televisión.",
           "eu": "Egongelan telebista dago.",
           "palabras": [
             "egongelan",
@@ -2939,7 +2939,7 @@
             "bat"
           ],
           "distractores": [
-            "laranja"
+            "zuria"
           ]
         }
       ]

@@ -188,6 +188,16 @@
      va entero en negrita, que es un segundo nivel de énfasis que <b> no
      puede dar. verificar.py ya lo daba por válido; el que iba por detrás
      era esto. */
+  /* Igual que richText pero de una línea: sirve para el enunciado de un
+     ejercicio, donde partir en párrafos no tiene sentido. Escapa todo y
+     solo devuelve <b>, <i> y <u>, así que sigue siendo seguro. */
+  function richInline(s) {
+    return esc(s)
+      .replace(/&lt;b&gt;/g, '<b>').replace(/&lt;\/b&gt;/g, '</b>')
+      .replace(/&lt;i&gt;/g, '<i>').replace(/&lt;\/i&gt;/g, '</i>')
+      .replace(/&lt;u&gt;/g, '<u>').replace(/&lt;\/u&gt;/g, '</u>');
+  }
+
   function richText(s) {
     return esc(s)
       .replace(/&lt;b&gt;/g, '<b>').replace(/&lt;\/b&gt;/g, '</b>')
@@ -2269,7 +2279,7 @@
      botón grande para reproducirlo. */
   function pintarPrompt(ej) {
     if (!ej.__escuchar) {
-      return '<h2 class="q__prompt q__prompt--es">' + esc(ej.pregunta) + '</h2>';
+      return '<h2 class="q__prompt q__prompt--es">' + richInline(ej.pregunta) + '</h2>';
     }
     return '<button class="escuchar" type="button" id="btnEscuchar" aria-label="Escuchar la palabra">' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg>' +
