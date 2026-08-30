@@ -383,14 +383,24 @@
      sesión se elige una al azar, para que no se memorice la solución.
      Se evita repetir la misma variante que salió la vez anterior,
      siempre que haya más de una disponible. */
+  /* Las variantes de tipo «escribir» pesan más que las demás: obligan a
+     producir la forma, que es lo que de verdad fija, y por eso no basta
+     con que salgan como una más del montón. En el test de fin de unidad
+     pesan todavía más, porque es donde más rinde producir. */
+  var PESO_ESCRIBIR = 3, PESO_ESCRIBIR_TEST = 5;
+
   function elegirVariante(grupo) {
     var vs = grupo.variantes || [grupo];
     if (vs.length === 1) return vs[0];
     var previa = progreso.ultimas ? progreso.ultimas[grupo.id] : undefined;
-    var opciones = vs.map(function (v, i) { return i; });
-    if (previa !== undefined) {
-      opciones = opciones.filter(function (i) { return i !== previa; });
-    }
+    var peso = grupo.subnivel === 'test' ? PESO_ESCRIBIR_TEST : PESO_ESCRIBIR;
+    var opciones = [];
+    vs.forEach(function (v, i) {
+      if (i === previa) return;
+      var veces = v.tipo === 'escribir' ? peso : 1;
+      for (var k = 0; k < veces; k++) opciones.push(i);
+    });
+    if (!opciones.length) opciones = vs.map(function (v, i) { return i; });
     var elegida = alAzar(opciones);
     if (!progreso.ultimas) progreso.ultimas = {};
     progreso.ultimas[grupo.id] = elegida;

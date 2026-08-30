@@ -1899,24 +1899,23 @@ lo hace valer.
 `verificar.py` y no hace falta contenido nuevo: cualquier ejercicio de ordenar
 se puede duplicar como `escribir` cambiando una palabra.
 
-**Prototipo**: tres variantes, en `u4-g04` (2.3), `u2-g08` (2.2) y `u8-g05`
-(7.1). Van **como sexta variante**, encima de las cinco que ya había, no
-sustituyendo a ninguna. El verificador admite esa sexta solo si es de este
-tipo.
+**Prototipo**: cinco variantes en el tema 2.3 —`u4-g02`, `u4-g03`, `u4-g04`,
+`u4-g05` y `u2-g61`— más `u2-g08` (2.2) y `u8-g05` (7.1). Van **como variante
+de más**, encima de las cinco que ya había, no sustituyendo a ninguna. El
+verificador admite esa sexta solo si es de este tipo.
 
-**Probado en el navegador de punta a punta**: acertar pone verde y apaga la
-ficha; equivocarse no; corregir la enciende de nuevo; y **estropear una palabra
-ya acertada devuelve su ficha a la bolsa**. Con las tres bien, «Oso ondo!».
+**Y hubo que darle peso.** Ric probó doce veces y la vio una. La cuenta
+explicaba por qué: el 2.3 tenía **un solo ejercicio de ordenar** de nueve, así
+que la probabilidad era 1/9 × 1/6 ≈ **1,9%** por ejercicio mostrado. Dos
+arreglos:
 
-Dos cosas que me pillé montándolo:
+- `elegirVariante` **pondera**: una variante `escribir` cuenta como **3**, y
+  como **5 en el test de fin de unidad**, que es donde más rinde producir. Era
+  la idea que ya había apuntado Ric.
+- Cinco de los nueve ejercicios del 2.3 tienen ahora variante `escribir`.
 
-- **Me inventé variables de CSS** (`--linea`, `--ok`) que no existen en este
-  proyecto. Como el valor era inválido, la declaración entera se anulaba y
-  **los huecos salían sin borde**: se veía uno solo, el que tenía el foco.
-  Ahora usa las de verdad: `--filete`, `--bien-txt`, `--bien-10`.
-- La variante se elige **al azar** entre las del grupo, así que con seis salta
-  1 de cada 6. Si el formato convence, Ric apuntó darle **más peso en los tests
-  de fin de unidad**, que es donde más rinde producir.
+Medido sobre los datos reales: de **1,9% a 21%** por ejercicio, es decir de
+0,2 a **2,6 apariciones** en doce ejercicios.
 
 ### El «-a»/«-ak», misma familia de riesgo (30/08/2026)
 

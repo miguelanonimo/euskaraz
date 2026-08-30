@@ -1795,6 +1795,21 @@
           ],
           "correcta": 1,
           "explicacion": "Primera persona del singular: «naiz»."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Tú eres médica.",
+          "eu": "Zu medikua zara.",
+          "palabras": [
+            "zu",
+            "medikua",
+            "zara"
+          ],
+          "distractores": [
+            "naiz",
+            "medikuak"
+          ]
         }
       ],
       "subnivel": "2.3"
@@ -1866,6 +1881,21 @@
           ],
           "correcta": 1,
           "explicacion": "«Bera» equivale a «hura», así que el verbo es «da»."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Ellos son profesores.",
+          "eu": "Haiek irakasleak dira.",
+          "palabras": [
+            "haiek",
+            "irakasleak",
+            "dira"
+          ],
+          "distractores": [
+            "da",
+            "irakaslea"
+          ]
         }
       ],
       "subnivel": "2.3"
@@ -2029,6 +2059,22 @@
           ],
           "correcta": 1,
           "explicacion": "«Ni ere ikaslea naiz» subraya el «ni». Y puede ir tras cualquier cosa, no solo tras el pronombre: «Bilbon ere», «liburua ere»."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Yo también soy estudiante.",
+          "eu": "Ni ere ikaslea naiz.",
+          "palabras": [
+            "ni",
+            "ere",
+            "ikaslea",
+            "naiz"
+          ],
+          "distractores": [
+            "gara",
+            "ikasleak"
+          ]
         }
       ],
       "subnivel": "2.3"
@@ -2946,6 +2992,21 @@
             "lagunak gara"
           ],
           "pista": "lagun + -ak, y «gara»."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Somos amigas.",
+          "eu": "Gu lagunak gara.",
+          "palabras": [
+            "gu",
+            "lagunak",
+            "gara"
+          ],
+          "distractores": [
+            "naiz",
+            "laguna"
+          ]
         }
       ],
       "subnivel": "2.3"
