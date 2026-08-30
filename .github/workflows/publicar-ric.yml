@@ -1,0 +1,50 @@
+name: Publicar rama de Ric
+
+# Se dispara cuando alguien empuja a ric/publicar — la señal explícita de
+# "esto ya está listo para producción", distinta de ric/trabajo, que es el
+# cuaderno de trabajo normal de Ric y no dispara nada.
+#
+# Fusiona ric/publicar en main, corre las mismas comprobaciones que se han
+# usado a mano toda la sesión (scripts/probar-todo.sh) y solo si pasan
+# empuja a main — Vercel despliega solo desde ahí. Si hay conflicto de
+# fusión o algún test falla, el job se para y main no se toca: queda para
+# revisar a mano, igual que antes.
+
+on:
+  push:
+    branches: ['ric/publicar']
+
+permissions:
+  contents: write
+
+jobs:
+  fusionar-y-desplegar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repo (main, historial completo)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Configurar el usuario de git para el commit de fusión
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fusionar ric/publicar en main
+        run: |
+          git fetch origin ric/publicar
+          git merge --no-ff origin/ric/publicar \
+            -m "Auto: fusiona ric/publicar en main (via GitHub Actions)"
+
+      - name: Verificar contenido, sintaxis y tests (scripts/probar-todo.sh)
+        run: bash scripts/probar-todo.sh
+
+      - name: Subir a main (Vercel despliega desde aquí)
+        run: git push origin main

@@ -1002,3 +1002,25 @@ el generador como roto. Corregida la sección para reflejar que ya está
 arreglado — falta ejecutarlo, no decidir nada.
 
 Verificado con `probar-todo.sh` en verde antes de subir.
+
+## 2026-08-30 — Publicación automática: `ric/publicar` + GitHub Action
+
+Hasta ahora cada tanda de `ric/trabajo` había que fusionarla a mano en
+`main`. Nuevo GitHub Action
+(`.github/workflows/publicar-ric.yml`, dispara con `push` a
+`ric/publicar`): fusiona esa rama en `main`, corre
+`scripts/probar-todo.sh` como comprobación final, y solo si pasa
+empuja a `main` — Vercel despliega desde ahí, sin nadie mirando. Si
+hay conflicto de fusión o algún test falla, el Action se para ahí:
+`main` no se toca, queda para revisar a mano como hasta ahora.
+
+`ric/trabajo` sigue sin disparar nada — es el cuaderno de trabajo
+normal. `ric/publicar` es solo la señal explícita de "esto ya está
+listo": `git push origin ric/trabajo:ric/publicar --force` cuando Ric
+decida que una tanda debe salir. Instrucciones para él en
+`docs/ideas-ric.md`; no hace falta tocar su rama para que le llegue el
+workflow, entra solo la próxima vez que fusione `main`.
+
+Esto es para lo rutinario — un cambio estructural grande (como la
+reestructuración a v2) sigue necesitando revisión a mano antes de
+subir, igual que hasta ahora.
