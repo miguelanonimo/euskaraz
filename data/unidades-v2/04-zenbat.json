@@ -65,8 +65,13 @@
     },
     {
       "titulo": "Del once al diecinueve",
-      "cuerpo": "De 12 a 17 se construye con <b>hama-</b> (de «hamar», diez) más el número:\n\nhama + bi → <b>hamabi</b> (12)\nhama + hiru → <b>hamahiru</b> (13)\nhama + lau → <b>hamalau</b> (14)\nhama + bost → <b>hamabost</b> (15)\nhama + sei → <b>hamasei</b> (16)\nhama + zazpi → <b>hamazazpi</b> (17)\n\nEl 11 se sale del todo:\n\n<b>hamaika</b> (11) — aquí no hay «bat» por ninguna parte. Hay que memorizarlo.\n\nEl 18 y el 19 siguen el mismo patrón que los demás, pero con la vocal cambiada:\n\nhama + zortzi → <b>hemezortzi</b> (18)\nhama + bederatzi → <b>hemeretzi</b> (19)\n\nSiguen siendo diez y ocho, y diez y nueve, igual que <i>hamasei</i> es diez y seis. Lo único que pasa es que el prefijo suena <b>heme-</b> en vez de <b>hama-</b>, y que en el 19 el «bederatzi» se queda en <b>-retzi</b>. No es otra lógica: es la misma con desgaste.",
-      "ejemplos": [],
+      "cuerpo": "De 12 a 17 se construye con <b>hama-</b> (de «hamar», diez) más el número:\n\nhama + bi → <b>hamabi</b> (12)\nhama + hiru → <b>hamahiru</b> (13)\nhama + lau → <b>hamalau</b> (14)\nhama + bost → <b>hamabost</b> (15)\nhama + sei → <b>hamasei</b> (16)\nhama + zazpi → <b>hamazazpi</b> (17)\n\nEl 11 se sale del todo:\n\n<b>hamaika</b> (11) — aquí no hay «bat» por ninguna parte. Hay que memorizarlo.\n\nY guárdate esta, que da mucho juego: <b>hamaika</b> significa además <b>«muchísimos»</b>, igual que en castellano decimos «mil cosas» sin contar hasta mil.\n\n<b>hamaika lagun</b> — un montón de amigos\n\nFíjate en que funciona con la regla de arriba: detrás del número, el sustantivo va en singular y sin artículo, igual que en <i>hiru lagun</i>.\n\nAsí que si oyes <i>hamaika</i> y el once no encaja, lo más seguro es que te estén diciendo «un montón».\n\nEl 18 y el 19 siguen el mismo patrón que los demás, pero con la vocal cambiada:\n\nhama + zortzi → <b>hemezortzi</b> (18)\nhama + bederatzi → <b>hemeretzi</b> (19)\n\nSiguen siendo diez y ocho, y diez y nueve, igual que <i>hamasei</i> es diez y seis. Lo único que pasa es que el prefijo suena <b>heme-</b> en vez de <b>hama-</b>, y que en el 19 el «bederatzi» se queda en <b>-retzi</b>. No es otra lógica: es la misma con desgaste.",
+      "ejemplos": [
+        {
+          "eu": "hamaika lagun",
+          "es": "un montón de amigos (literalmente, «once amigos»)"
+        }
+      ],
       "subnivel": "4.1"
     },
     {
@@ -94,7 +99,7 @@
     },
     {
       "titulo": "La -k del ergativo",
-      "cuerpo": "Esta es la idea más rara del euskera para un hispanohablante, y la más importante. Merece la pena entenderla despacio.\n\nEl sujeto lleva la marca <b>-k</b> solo cuando el verbo tiene complemento directo:\n\n<i>Ni ikaslea <b>naiz</b>.</i> → sin -k, porque «ser» no lleva objeto\n<i><b>Nik</b> txakurra <b>dut</b>.</i> → con -k, porque tengo <i>algo</i>\n\nDicho de otra forma: quien <b>hace</b> algo a algo lleva -k. Quien simplemente <b>es</b> o <b>está</b>, no.\n\nEn castellano el sujeto es siempre igual y no marcas nada. En euskera tienes que decidir cada vez. Al principio se falla mucho, y es completamente normal: es una categoría que tu lengua materna no tiene.",
+      "cuerpo": "Esta es la idea más rara del euskera para un hispanohablante, y la más importante. Merece la pena entenderla despacio.\n\nEl sujeto lleva la marca <b>-k</b> solo cuando el verbo tiene complemento directo:\n\n<i>Ni ikaslea <b>naiz</b>.</i> → sin -k, porque «ser» no lleva objeto\n<i><b>Nik</b> txakurra <b>dut</b>.</i> → con -k, porque tengo <i>algo</i>\n\nDicho de otra forma: quien <b>hace</b> algo a algo lleva -k. Quien simplemente <b>es</b> o <b>está</b>, no.\n\nEn castellano el sujeto es siempre igual y no marcas nada. En euskera tienes que decidir cada vez. Al principio se falla mucho, y es completamente normal: es una categoría que tu lengua materna no tiene.\n\n<b>Por qué esta se resiste más que otras</b>\n\nHay tres cosas jugando en contra a la vez, y conviene saberlo para no frustrarse:\n\n<b>Casi no se oye.</b> Es una sola consonante al final, sin acento. En una frase rápida se pierde.\n<b>No hace falta para entender.</b> El auxiliar ya dice quién hace qué, así que quitarla no impide que te entiendan.\n<b>Tu idioma resuelve lo mismo sin ella.</b> El castellano no tiene caso, así que llegas con un sistema completo que no la necesita.\n\nTraducido: <b>esta marca no se pega por oírla mucho</b>. Hay que fijarse en ella a propósito, y practicarla produciéndola, no solo reconociéndola. Por eso los ejercicios de este tema te van a hacer elegir entre dos frases casi idénticas.\n\n<b>La pregunta que lo resuelve siempre</b>\n\nAntes de poner el sujeto, pregúntate: <b>¿hay algo a lo que se le hace la acción?</b>\n\nSí → el sujeto lleva <b>-k</b>, y el verbo es de la familia <i>dut</i>.\nNo → el sujeto va limpio, y el verbo es <i>naiz</i> o <i>nago</i>.\n\n<i>Ni</i> · <i>zu</i> · <i>hura</i> — sin objeto\n<b>Nik</b> · <b>zuk</b> · <b>hark</b> — con objeto",
       "ejemplos": [
         {
           "eu": "Ni Bilbokoa naiz.",
@@ -356,7 +361,7 @@
     {
       "subnivel": "4.5",
       "titulo": "Cuándo se prefiere cada una",
-      "cuerpo": "Si quieres afinar, hay una tendencia —no una regla— que ayuda:\n\n<b>eduki</b> (daukat) tira más hacia <i>tener algo en la mano, poseer algo concreto</i>: un coche, un perro, una casa.\n\n<b>ukan</b> (dut) es más general. Y tiene un segundo trabajo que <i>eduki</i> no puede hacer: <b>engancharse detrás de otro verbo</b> para formar frases de dos piezas. Eso llega en la unidad 7, cuando aparezcan cosas como «lo estoy comiendo» o «lo suelo hacer»; de momento basta con saber que ahí <b>solo vale <i>dut</i></b>, y que cambiarlo por <i>daukat</i> no funcionaría.\n\nO sea: para cosas, las dos. Para el mecanismo de dos piezas —que ya verás—, solo <i>dut</i>.",
+      "cuerpo": "Si quieres afinar, hay una tendencia —no una regla— que ayuda:\n\n<b>eduki</b> (daukat) tira más hacia <i>tener algo en la mano, poseer algo concreto</i>: un coche, un perro, una casa.\n\n<b>ukan</b> (dut) es más general. Y tiene un segundo trabajo que <i>eduki</i> no puede hacer: <b>engancharse detrás de otro verbo</b> para formar frases de dos piezas. Eso llega en la unidad 7, cuando aparezcan cosas como «lo estoy comiendo» o «lo suelo hacer»; de momento basta con saber que ahí <b>solo vale <i>dut</i></b>, y que cambiarlo por <i>daukat</i> no funcionaría.\n\nO sea: para cosas, las dos. Para el mecanismo de dos piezas —que ya verás—, solo <i>dut</i>.\n\nY una palabra del tema que conviene no confundir:\n\n<b>astia</b> — el tiempo del que dispones, el rato\n\nNo es el tiempo que hace ni la hora: es lo que te falta cuando dices «no tengo tiempo». Y ojo con <i>astea</i>, la semana, que se le parece demasiado.\n\n<b>Ez daukat astirik.</b> — No tengo tiempo.",
       "ejemplos": [
         {
           "eu": "Dirua daukat.",
@@ -1246,15 +1251,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "El euskera cuenta en base…",
+          "pregunta": "¿Qué número es «berrogeita hamabi»?",
           "opciones": [
-            "diez",
-            "doce",
-            "veinte",
-            "cinco"
+            "52",
+            "32",
+            "47",
+            "63"
           ],
-          "correcta": 2,
-          "explicacion": "Base veinte: berrogei (40) es «dos veintes», laurogei (80) «cuatro veintes»."
+          "correcta": 0,
+          "explicacion": "berrogei (40) + hamabi (12) = 52. Dos veintes y doce."
         }
       ],
       "subnivel": "4.4"
@@ -1475,6 +1480,20 @@
           "distractores": [
             "aitona"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Tengo veinte años.",
+          "eu": "Hogei urte ditut.",
+          "palabras": [
+            "hogei",
+            "urte",
+            "ditut"
+          ],
+          "distractores": [
+            "hamaika"
+          ]
         }
       ],
       "subnivel": "4.4"
@@ -1556,6 +1575,21 @@
           "distractores": [
             "hamasei"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Yo tengo dos hermanas.",
+          "eu": "Nik bi ahizpa ditut.",
+          "palabras": [
+            "nik",
+            "bi",
+            "ahizpa",
+            "ditut"
+          ],
+          "distractores": [
+            "hiru"
+          ]
         }
       ],
       "subnivel": "4.4"
@@ -1583,7 +1617,7 @@
             "nik bi katu ditut",
             "bi katu ditut"
           ],
-          "pista": "Objeto plural → «ditut». El nombre no se pluraliza."
+          "pista": "Objeto plural → «ditut». El sustantivo no se pluraliza."
         },
         {
           "tipo": "traducir",
@@ -1591,11 +1625,8 @@
           "es": "Ella tiene un hermano.",
           "respuestas": [
             "hark neba bat du",
-            "hark anaia bat du",
             "neba bat du",
-            "anaia bat du",
-            "berak neba bat du",
-            "berak anaia bat du"
+            "berak neba bat du"
           ],
           "pista": "El hermano de una chica es «neba»."
         },
@@ -2268,6 +2299,23 @@
           "distractores": [
             "dirua"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Mi abuelo vive en Bilbao.",
+          "eu": "Nire aitona Bilbon bizi da.",
+          "palabras": [
+            "nire",
+            "aitona",
+            "Bilbon",
+            "bizi",
+            "da"
+          ],
+          "distractores": [
+            "lehengusua",
+            "hirurogei"
+          ]
         }
       ],
       "subnivel": "test"
@@ -2305,7 +2353,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál es la excepción, la que no lleva «-garren»?",
+          "pregunta": "De los ordinales, ¿cuál es la excepción, la que no lleva «-garren»?",
           "opciones": [
             "el segundo",
             "el primero",
@@ -2339,7 +2387,7 @@
             "el mejor"
           ],
           "correcta": 2,
-          "explicacion": "Azkena es el último, con palabra propia."
+          "explicacion": "Azkena es el último (o la última), con palabra propia."
         }
       ]
     },
@@ -2478,7 +2526,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál de los dos se puede enganchar detrás de otro verbo?",
+          "pregunta": "¿Cuál se puede enganchar detrás de otro verbo?",
           "opciones": [
             "solo «dut»",
             "solo «daukat»",
@@ -2589,6 +2637,19 @@
           ],
           "correcta": 0,
           "explicacion": "Un coche, un perro, dinero, tiempo."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Tengo dinero.",
+          "eu": "Dirua daukat.",
+          "palabras": [
+            "dirua",
+            "daukat"
+          ],
+          "distractores": [
+            "seigarrena"
+          ]
         }
       ]
     },
@@ -2627,16 +2688,16 @@
               "es": "hermano (de un chico)"
             },
             {
-              "eu": "semea",
-              "es": "el hijo"
+              "eu": "arreba",
+              "es": "hermana (de un chico)"
             },
             {
               "eu": "ama",
               "es": "madre"
             },
             {
-              "eu": "aita",
-              "es": "padre"
+              "eu": "izeba",
+              "es": "la tía"
             }
           ]
         },
@@ -2740,7 +2801,7 @@
             "el cuarto"
           ],
           "correcta": 0,
-          "explicacion": "Palabra especialmente viva en Bizkaia."
+          "explicacion": "neba = hermano, cuando quien habla es una chica."
         },
         {
           "tipo": "opcion",
@@ -3012,7 +3073,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«la oveja» se dice…",
+          "pregunta": "«la hija» se dice…",
           "opciones": [
             "alaba",
             "bigarrena",
@@ -3020,7 +3081,7 @@
             "lehena"
           ],
           "correcta": 0,
-          "explicacion": "la oveja = ardia."
+          "explicacion": "la hija = alaba."
         },
         {
           "tipo": "opcion",
@@ -3206,7 +3267,7 @@
           "pregunta": "¿Qué significa «hirurogeita hamar»?",
           "opciones": [
             "setenta",
-            "(yo) tengo (varias cosas)",
+            "sesenta",
             "el ratón",
             "la tía"
           ],
@@ -3279,7 +3340,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«el conejo» se dice…",
+          "pregunta": "«la tía» se dice…",
           "opciones": [
             "izeba",
             "hirurogeita hamar",
@@ -3287,7 +3348,7 @@
             "hamasei"
           ],
           "correcta": 0,
-          "explicacion": "el conejo = untxia."
+          "explicacion": "la tía = izeba."
         },
         {
           "tipo": "opcion",
@@ -3460,7 +3521,7 @@
           "pregunta": "«el quinto» se dice…",
           "opciones": [
             "bosgarrena",
-            "ama",
+            "laugarrena",
             "txerria",
             "lau"
           ],
@@ -3559,15 +3620,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «laugarrena»?",
+          "pregunta": "¿Qué significa «zortzigarrena»?",
           "opciones": [
+            "el octavo",
             "el cuarto",
-            "el conejo",
             "el sobrino / el nieto",
             "el segundo"
           ],
           "correcta": 0,
-          "explicacion": "laugarrena = el cuarto."
+          "explicacion": "zortzi (ocho) + -garren + -a."
         }
       ]
     },
@@ -4760,7 +4821,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Ojo con el parecido: «astea» es…",
+          "pregunta": "¿Qué significa «astea»?",
           "opciones": [
             "la semana",
             "el tiempo libre",
@@ -4865,10 +4926,138 @@
             "el doble"
           ],
           "correcta": 0,
-          "explicacion": "Se usa también con el sentido de «un montón»: once por «muchísimos»."
+          "explicacion": "Once, y también «un montón»: hamaika lagun es «un montón de amigos»."
         }
       ],
       "subnivel": "4.1"
+    },
+    {
+      "id": "u4-g60",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Ni ikaslea naiz.",
+            "Nik ikaslea naiz.",
+            "Ni ikaslea dut.",
+            "Nik ikaslea da."
+          ],
+          "correcta": 0,
+          "explicacion": "«Ser» no lleva objeto, así que el sujeto va limpio: «ni», no «nik»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Nik lagun bat dut.",
+            "Ni lagun bat dut.",
+            "Nik lagun bat naiz.",
+            "Ni lagun bat naiz."
+          ],
+          "correcta": 0,
+          "explicacion": "Hay algo que se tiene —un amigo—, así que el sujeto lleva -k: «nik»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Zu medikua zara.",
+            "Zuk medikua zara.",
+            "Zuk medikua da.",
+            "Zu medikua duzu."
+          ],
+          "correcta": 0,
+          "explicacion": "Sin objeto: «zu» limpio, y el verbo «zara»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Zuk bi anaia dituzu.",
+            "Zu bi anaia dituzu.",
+            "Zuk bi anaia zara.",
+            "Zuk bi anaia duzu."
+          ],
+          "correcta": 0,
+          "explicacion": "Dos hermanos son el objeto: «zuk» con -k, y el auxiliar en plural, «dituzu»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Hark hiru urte ditu.",
+            "Hura hiru urte ditu.",
+            "Hark hiru urte da.",
+            "Hura hiru urte du."
+          ],
+          "correcta": 0,
+          "explicacion": "La edad se «tiene», así que hay objeto: «hark»."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u4-g61",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Yo soy estudiante.",
+          "respuestas": [
+            "ni ikaslea naiz",
+            "ikaslea naiz"
+          ],
+          "pista": "¿Hay algo a lo que se le haga la acción? Si no, el sujeto va limpio."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Yo tengo un amigo.",
+          "respuestas": [
+            "nik lagun bat dut",
+            "lagun bat dut"
+          ],
+          "pista": "Aquí sí hay objeto."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tú eres profesora.",
+          "respuestas": [
+            "zu irakaslea zara",
+            "irakaslea zara"
+          ],
+          "pista": "Sin objeto."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tú tienes dos hermanos.",
+          "respuestas": [
+            "zuk bi anaia dituzu",
+            "bi anaia dituzu"
+          ],
+          "pista": "Con objeto, y son dos."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ella tiene cinco años.",
+          "respuestas": [
+            "hark bost urte ditu",
+            "berak bost urte ditu",
+            "bost urte ditu"
+          ],
+          "pista": "La edad se tiene, no se es."
+        }
+      ],
+      "subnivel": "4.4"
     }
   ]
 }

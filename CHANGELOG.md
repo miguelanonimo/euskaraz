@@ -969,3 +969,36 @@ tocar `js/app.js`:
   decisiones abiertas sobre qué hacer con ellas.
 
 Verificado con `probar-todo.sh` en verde antes de subir.
+
+## 2026-08-30 — Nuevo formato "escribir", ergativo como sufijo de riesgo, 4 tandas de revisión
+
+Merge grande de `ric/trabajo` (20 commits, del 28 al 30 de agosto):
+
+- **Nuevo tipo de ejercicio: "escribir".** Como "ordenar" pero tecleando
+  cada palabra en su hueco en vez de pinchar fichas — producir en vez
+  de reconocer, que según la nota de investigación de Ric rinde mucho
+  más para fijar vocabulario. Dos intentos por hueco (al segundo fallo
+  se cierra en rojo y el ejercicio cuenta como fallado, para que no se
+  pueda tantear hasta acertar); pesa el triple que "ordenar" al
+  sortear formato, y el quíntuple en el test de fin de unidad. Extendido
+  a los 40 ejercicios de ordenar del curso.
+- **El ergativo (-k) y el -a/-ak tratados como los sufijos de riesgo que
+  son**: consonante final átona, redundante con lo que ya dice el
+  auxiliar, y sin equivalente en castellano — la predicción es que no
+  se adquieren solo con exposición. Fichas reescritas con la regla y
+  ejercicios de producción, no solo metalingüísticos.
+- **Cuatro tandas de revisión de Ric** (50 + 8 + 17 + 21 correcciones):
+  vocabulario sin presentar cerrado a 0 en las diez unidades (526
+  palabras, ninguna huérfana), varias fichas con palabras sin traducir
+  arregladas, opciones de longitud desigual igualadas para que no se
+  acierte por forma en vez de por significado, y más.
+- `docs/evidencia-motor.md` nuevo: los huecos que no se arreglan con
+  contenido, con su dato y su coste.
+
+**De paso, arreglada una inconsistencia en `docs/audios-pendientes.md`**:
+la rama de Ric no tenía todavía el arreglo del 27/08 que apunta
+`generar.mjs` a v2, así que su commit de esos días seguía describiendo
+el generador como roto. Corregida la sección para reflejar que ya está
+arreglado — falta ejecutarlo, no decidir nada.
+
+Verificado con `probar-todo.sh` en verde antes de subir.

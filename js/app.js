@@ -188,6 +188,16 @@
      va entero en negrita, que es un segundo nivel de énfasis que <b> no
      puede dar. verificar.py ya lo daba por válido; el que iba por detrás
      era esto. */
+  /* Igual que richText pero de una línea: sirve para el enunciado de un
+     ejercicio, donde partir en párrafos no tiene sentido. Escapa todo y
+     solo devuelve <b>, <i> y <u>, así que sigue siendo seguro. */
+  function richInline(s) {
+    return esc(s)
+      .replace(/&lt;b&gt;/g, '<b>').replace(/&lt;\/b&gt;/g, '</b>')
+      .replace(/&lt;i&gt;/g, '<i>').replace(/&lt;\/i&gt;/g, '</i>')
+      .replace(/&lt;u&gt;/g, '<u>').replace(/&lt;\/u&gt;/g, '</u>');
+  }
+
   function richText(s) {
     return esc(s)
       .replace(/&lt;b&gt;/g, '<b>').replace(/&lt;\/b&gt;/g, '</b>')
@@ -383,14 +393,24 @@
      sesión se elige una al azar, para que no se memorice la solución.
      Se evita repetir la misma variante que salió la vez anterior,
      siempre que haya más de una disponible. */
+  /* Las variantes de tipo «escribir» pesan más que las demás: obligan a
+     producir la forma, que es lo que de verdad fija, y por eso no basta
+     con que salgan como una más del montón. En el test de fin de unidad
+     pesan todavía más, porque es donde más rinde producir. */
+  var PESO_ESCRIBIR = 3, PESO_ESCRIBIR_TEST = 5;
+
   function elegirVariante(grupo) {
     var vs = grupo.variantes || [grupo];
     if (vs.length === 1) return vs[0];
     var previa = progreso.ultimas ? progreso.ultimas[grupo.id] : undefined;
-    var opciones = vs.map(function (v, i) { return i; });
-    if (previa !== undefined) {
-      opciones = opciones.filter(function (i) { return i !== previa; });
-    }
+    var peso = grupo.subnivel === 'test' ? PESO_ESCRIBIR_TEST : PESO_ESCRIBIR;
+    var opciones = [];
+    vs.forEach(function (v, i) {
+      if (i === previa) return;
+      var veces = v.tipo === 'escribir' ? peso : 1;
+      for (var k = 0; k < veces; k++) opciones.push(i);
+    });
+    if (!opciones.length) opciones = vs.map(function (v, i) { return i; });
     var elegida = alAzar(opciones);
     if (!progreso.ultimas) progreso.ultimas = {};
     progreso.ultimas[grupo.id] = elegida;
@@ -1997,7 +2017,7 @@
        la que no aplique simplemente no encuentra nada. */
     if (ej.tipo === 'opcion') {
       audio = audioDePalabra(ej.opciones[ej.correcta]) || audioDePalabra(ej.pregunta);
-    } else if (ej.tipo === 'orden') {
+    } else if (ej.tipo === 'orden' || ej.tipo === 'escribir') {
       audio = audioDePalabra(ej.eu);
     } else if (ej.tipo === 'traducir') {
       audio = ej.respuestas && audioDePalabra(ej.respuestas[0]);
@@ -2230,6 +2250,7 @@
       case 'opcion':   pintarOpcion(ej); break;
       case 'pares':    pintarPares(ej); break;
       case 'orden':    pintarOrden(ej); break;
+      case 'escribir': pintarEscribir(ej); break;
       case 'traducir': pintarTraducir(ej); break;
       case 'teclear':  pintarTeclear(ej); break;
       default:         siguiente();
@@ -2267,7 +2288,7 @@
      botón grande para reproducirlo. */
   function pintarPrompt(ej) {
     if (!ej.__escuchar) {
-      return '<h2 class="q__prompt q__prompt--es">' + esc(ej.pregunta) + '</h2>';
+      return '<h2 class="q__prompt q__prompt--es">' + richInline(ej.pregunta) + '</h2>';
     }
     return '<button class="escuchar" type="button" id="btnEscuchar" aria-label="Escuchar la palabra">' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg>' +
@@ -2477,6 +2498,148 @@
     };
   }
 
+  /* — Escribir con la bolsa a la vista —
+
+     Mismo material que «orden», pero en vez de arrastrar fichas hay que
+     teclear cada palabra. La bolsa de abajo se queda como ayuda visual y
+     no se puede pinchar: si se pudiera, volvería a ser un ejercicio de
+     reconocer. Cada palabra acertada se pone en verde, se bloquea, y su
+     ficha se apaga abajo.
+
+     La razón de existir de este formato está en la nota de investigación:
+     recuperar produciendo (teclear la forma) gana con diferencia a
+     reconocerla, y los formatos híbridos —algo de andamio, pero
+     produciendo— fueron los más eficaces del metaanálisis. */
+
+  var SOLO_SIGNO = /^[\u00bf?\u00a1!.,;:]+$/;
+
+  function pintarEscribir(ej) {
+    var esperadas = ej.palabras.slice();
+
+    el.quizContent.innerHTML =
+      '<p class="q__inst">' + esc(ej.instruccion) + '</p>' +
+      '<h2 class="q__prompt q__prompt--es">' + esc(ej.es) + '</h2>' +
+      '<div class="slots" id="slots">' +
+      esperadas.map(function (p, i) {
+        /* Los signos sueltos —el «?» que va aparte desde que Ric pidió que
+           no delatara la forma— se pintan fijos, no como hueco: teclear un
+           interrogante no enseña nada. */
+        if (SOLO_SIGNO.test(p)) {
+          return '<span class="slot slot--fijo" data-i="' + i + '">' + esc(p) + '</span>';
+        }
+        return '<input class="slot" type="text" data-i="' + i +
+               '" size="' + Math.max(p.length, 3) + '" autocomplete="off" ' +
+               'autocorrect="off" autocapitalize="off" spellcheck="false" ' +
+               'aria-label="palabra ' + (i + 1) + '">';
+      }).join('') + '</div>' +
+      '<div class="bank bank--ayuda" id="bank">' +
+      barajar(esperadas.filter(function (p) { return !SOLO_SIGNO.test(p); })
+                       .concat(ej.distractores || [])).map(function (p) {
+        return '<span class="chip chip--ayuda" data-n="' + esc(normalizar(p)) + '">' + esc(p) + '</span>';
+      }).join('') + '</div>';
+
+    var slots = $('slots'), bank = $('bank');
+
+    function apagarFicha(pal) {
+      var libres = bank.querySelectorAll('.chip[data-n="' + normalizar(pal) + '"]:not(.is-used)');
+      if (libres.length) libres[0].classList.add('is-used');
+    }
+    function encenderFicha(pal) {
+      var usadas = bank.querySelectorAll('.chip[data-n="' + normalizar(pal) + '"].is-used');
+      if (usadas.length) usadas[usadas.length - 1].classList.remove('is-used');
+    }
+    function refrescar() {
+      var pendientes = 0;
+      Array.prototype.forEach.call(slots.children, function (s) {
+        if (s.classList.contains('slot--fijo')) return;
+        var resuelto = s.classList.contains('is-ok') || s.classList.contains('is-mal');
+        if (!resuelto && !s.value.trim()) pendientes++;
+      });
+      el.btnCheck.disabled = pendientes > 0;
+    }
+
+    /* Dos intentos por hueco y se cierra en rojo.
+
+       Sin esto el ejercicio no mide nada: se pueden ir tecleando palabras
+       hasta que una se pone verde, y entonces siempre sale bien — lo que
+       además le miente al calendario de repaso, que registra un acierto
+       donde hubo tanteo. Lo vio Ric probándolo.
+
+       Un intento se cuenta al SALIR del hueco (al pulsar Tab o Enter, o
+       al pinchar fuera), no en cada tecla: si no, escribir «lagunak»
+       gastaría los dos intentos antes de llegar a la k. */
+    var TOPE = 2;
+
+    function acertar(s, i) {
+      s.classList.add('is-ok');
+      s.readOnly = true;
+      apagarFicha(esperadas[i]);
+      var sig = slots.querySelector('input.slot:not(.is-ok):not(.is-mal)');
+      if (sig) sig.focus();
+    }
+
+    function cerrar(s, i) {
+      s.classList.add('is-mal');
+      s.readOnly = true;
+      var sig = slots.querySelector('input.slot:not(.is-ok):not(.is-mal)');
+      if (sig) sig.focus();
+    }
+
+    function evaluar(s, definitivo) {
+      if (estado.resuelto || s.classList.contains('is-ok') || s.classList.contains('is-mal')) return;
+      var i = +s.dataset.i;
+      if (normalizar(s.value) === normalizar(esperadas[i])) { acertar(s, i); refrescar(); return; }
+      if (!definitivo || !s.value.trim()) return;
+      var fallos = (+s.dataset.fallos || 0) + 1;
+      s.dataset.fallos = fallos;
+      if (fallos >= TOPE) cerrar(s, i);
+      else s.classList.add('is-tocado');
+      refrescar();
+    }
+
+    slots.addEventListener('input', function (e) {
+      var s = e.target;
+      if (!s.classList.contains('slot')) return;
+      s.classList.remove('is-tocado');
+      evaluar(s, false);
+    });
+    slots.addEventListener('focusout', function (e) {
+      if (e.target.classList.contains('slot')) evaluar(e.target, true);
+    });
+    slots.addEventListener('keydown', function (e) {
+      var s = e.target;
+      if (!s.classList.contains('slot')) return;
+      if (e.key === 'Tab') { evaluar(s, true); return; }   // el foco lo mueve el navegador
+      if (e.key !== 'Enter') return;
+      e.preventDefault();
+      evaluar(s, true);
+      var sig = slots.querySelector('input.slot:not(.is-ok):not(.is-mal)');
+      if (sig && sig !== s) { sig.focus(); return; }
+      if (!el.btnCheck.disabled) el.btnCheck.click();
+    });
+
+    var primero = slots.querySelector('input.slot');
+    if (primero) primero.focus();
+  }
+
+  function corregirEscribir(ej) {
+    /* Cuenta bien solo si los huecos están todos en verde. Uno cerrado en
+       rojo por agotar intentos es un fallo aunque el texto acabe siendo el
+       correcto. */
+    var celdas = Array.prototype.slice.call($('slots').children);
+    var dado = celdas.map(function (s) {
+      return s.classList.contains('slot--fijo') ? s.textContent : s.value;
+    }).join(' ');
+    var ok = celdas.every(function (s) {
+      return s.classList.contains('slot--fijo') || s.classList.contains('is-ok');
+    }) && normalizar(dado) === normalizar(ej.palabras.join(' '));
+    Array.prototype.forEach.call($('slots').children, function (s) { s.blur(); });
+    return {
+      ok: ok,
+      cuerpo: ok ? '' : '<span class="sol">' + esc(ej.eu) + '</span>'
+    };
+  }
+
   // — Escribir la traducción —
 
   function pintarTraducir(ej) {
@@ -2676,6 +2839,7 @@
     var r;
     if (ej.tipo === 'opcion')        r = corregirOpcion(ej);
     else if (ej.tipo === 'orden')    r = corregirOrden(ej);
+    else if (ej.tipo === 'escribir') r = corregirEscribir(ej);
     else if (ej.tipo === 'traducir') r = corregirTraducir(ej);
     else if (ej.tipo === 'teclear')  r = corregirTeclear(ej);
     else return;

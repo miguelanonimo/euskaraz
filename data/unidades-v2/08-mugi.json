@@ -106,7 +106,7 @@
     },
     {
       "titulo": "Cómo vas: la -z de «por medio de»",
-      "cuerpo": "Para decir <b>en qué</b> vas, el euskera no usa preposición: pega una <b>-z</b> al medio de transporte.\n\n<b>kotxe</b> → <b>kotxez</b> — en coche\n<b>tren</b> → <b>trenez</b> — en tren\n<b>autobus</b> → <b>autobusez</b> — en autobús\n<b>bizikleta</b> → <b>bizikletaz</b> — en bici\n<b>oin</b> (pie) → <b>oinez</b> — a pie\n\nTras consonante se cuela una <b>-e-</b>: <i>tren<b>ez</b></i>, <i>autobus<b>ez</b></i>.\n\nEse mismo sufijo sirve para «por medio de» en general, y ahí está el nombre de esta aplicación: <b>euskara</b> + <b>-z</b> = <b>euskaraz</b>, «en euskera».\n\n<b>Euskaraz hitz egiten dut.</b> — Hablo en euskera.\n<b>Eskuz idazten dut.</b> — Escribo a mano.",
+      "cuerpo": "Para decir <b>en qué</b> vas, el euskera no usa preposición: pega una <b>-z</b> al medio de transporte.\n\n<b>kotxe</b> → <b>kotxez</b> — en coche\n<b>tren</b> → <b>trenez</b> — en tren\n<b>autobus</b> → <b>autobusez</b> — en autobús\n<b>bizikleta</b> → <b>bizikletaz</b> — en bici\n<b>oin</b> (pie) → <b>oinez</b> — a pie\n\nTras consonante se cuela una <b>-e-</b>: <i>tren<b>ez</b></i>, <i>autobus<b>ez</b></i>.\n\nEse mismo sufijo sirve para «por medio de» en general, y ahí está el nombre de esta aplicación: <b>euskara</b> + <b>-z</b> = <b>euskaraz</b>, «en euskera».\n\n<b>Euskaraz hitz egiten dut.</b> — Hablo en euskera.\n<b>Eskuz idazten dut.</b> — Escribo a mano.\n\nLos medios de transporte del tema:\n\n<b>autobusa</b> — el autobús\n<b>trena</b> — el tren\n<b>kotxea</b> — el coche\n<b>bizikleta</b> — la bicicleta\n<b>oinez</b> — a pie\n\nY un sitio al que se va mucho: <b>mendia</b>, el monte. Aquí el monte no es una excursión de domingo cualquiera — es una costumbre tan arraigada que tiene su propia palabra para el que lo hace, <i>mendizalea</i>.",
       "ejemplos": [
         {
           "eu": "Trenez noa Bilbora.",
@@ -284,7 +284,7 @@
     },
     {
       "titulo": "«Azoka», «merkatua» y «denda»: tres maneras de comprar",
-      "cuerpo": "Las tres se traducen en castellano con palabras que se pisan, así que conviene separarlas de una vez:\n\n<b>denda</b> — la tienda. Un local, abierto todos los días.\n<b>merkatua</b> — el mercado como <b>edificio</b>, el cubierto de toda la vida.\n<b>azoka</b> — el mercado de la <b>calle</b>, el de los días señalados: el semanal del pueblo, o el de una fecha concreta.\n\nEl <i>merkatu</i> más conocido de Bilbao es el de la Ribera, uno de los mercados cubiertos más grandes de Europa.\n\nY una <i>azoka</i> ya la conoces: el <b>Urriko Azken Astelehena</b> de Gernika, el último lunes de octubre, que salió con el calendario. Ahí se ve bien la diferencia — no es un edificio que abre a diario, es un día en que el pueblo entero se llena de puestos.",
+      "cuerpo": "Las tres se traducen en castellano con palabras que se pisan, así que conviene separarlas de una vez:\n\n<b>denda</b> — la tienda. Un local, abierto todos los días.\n<b>merkatua</b> — el mercado como <b>edificio</b>, el cubierto de toda la vida.\n<b>azoka</b> — el mercado de la <b>calle</b>, el de los días señalados: el semanal del pueblo, o el de una fecha concreta.\n\nEl <i>merkatu</i> más conocido de Bilbao es el de la Ribera, uno de los mercados cubiertos más grandes de Europa.\n\nY una <i>azoka</i> ya la conoces: el <b>Urriko Azken Astelehena</b> de Gernika, el último lunes de octubre, que salió con el calendario. Ahí se ve bien la diferencia — no es un edificio que abre a diario, es un día en que el pueblo entero se llena de puestos.\n\nY el resto de sitios del tema:\n\n<b>kalea</b> — la calle\n<b>eskola</b> — la escuela\n<b>lana</b> — el trabajo (también el sitio donde se trabaja)\n<b>taberna</b> — el bar\n<b>ospitalea</b> — el hospital\n<b>liburutegia</b> — la biblioteca\n\n<i>Taberna</i> merece un apunte: aquí no es solo donde se bebe. Es donde se queda, donde se ve el partido y donde pasa media vida social de un pueblo.",
       "ejemplos": [
         {
           "eu": "Azokara noa.",
@@ -1060,6 +1060,21 @@
           "distractores": [
             "eskuinera"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Voy a Bilbao en tren.",
+          "eu": "Ni trenez Bilbora noa.",
+          "palabras": [
+            "ni",
+            "trenez",
+            "Bilbora",
+            "noa"
+          ],
+          "distractores": [
+            "autobusa"
+          ]
         }
       ],
       "subnivel": "8.3"
@@ -1337,6 +1352,21 @@
           ],
           "distractores": [
             "kotxea"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Voy al mercado a pie.",
+          "eu": "Ni oinez merkatura noa.",
+          "palabras": [
+            "ni",
+            "oinez",
+            "merkatura",
+            "noa"
+          ],
+          "distractores": [
+            "nator"
           ]
         }
       ],
@@ -1706,6 +1736,20 @@
           ],
           "correcta": 1,
           "explicacion": "Joan nahi dut: primero el verbo."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "No puedo ir.",
+          "eu": "Ezin dut joan.",
+          "palabras": [
+            "ezin",
+            "dut",
+            "joan"
+          ],
+          "distractores": [
+            "dator"
+          ]
         }
       ]
     },
@@ -3025,6 +3069,21 @@
           ],
           "correcta": 1,
           "explicacion": "Indicaciones, recetas, avisos."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Recto, y luego a la izquierda.",
+          "eu": "Zuzen, eta gero ezkerrera.",
+          "palabras": [
+            "zuzen",
+            "eta",
+            "gero",
+            "ezkerrera"
+          ],
+          "distractores": [
+            "kotxea"
+          ]
         }
       ]
     },

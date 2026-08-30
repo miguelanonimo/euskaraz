@@ -40,7 +40,7 @@
   "gramatica": [
     {
       "titulo": "La hora va en plural",
-      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>Ordu bata da.</b> — Es la una.\n<b>Ordu biak dira.</b> — Son las dos.\n<b>Hirurak dira.</b> — Son las tres.\n<b>Laurak dira.</b> — Son las cuatro.\n<b>Bostak dira.</b> — Son las cinco.\n<b>Seiak dira.</b> — Son las seis.\n<b>Zazpiak dira.</b> — Son las siete.\n<b>Zortziak dira.</b> — Son las ocho.\n<b>Bederatziak dira.</b> — Son las nueve.\n<b>Hamarrak dira.</b> — Son las diez.\n<b>Hamaikak dira.</b> — Son las once.\n<b>Hamabiak dira.</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la cuarta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.",
+      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>Ordu bata da.</b> — Es la una.\n<b>Ordu biak dira.</b> — Son las dos.\n<b>Hirurak dira.</b> — Son las tres.\n<b>Laurak dira.</b> — Son las cuatro.\n<b>Bostak dira.</b> — Son las cinco.\n<b>Seiak dira.</b> — Son las seis.\n<b>Zazpiak dira.</b> — Son las siete.\n<b>Zortziak dira.</b> — Son las ocho.\n<b>Bederatziak dira.</b> — Son las nueve.\n<b>Hamarrak dira.</b> — Son las diez.\n<b>Hamaikak dira.</b> — Son las once.\n<b>Hamabiak dira.</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la cuarta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.\n\nY las palabras para decir en qué parte del día:\n\n<b>ordua</b> — la hora\n<b>goiza</b> — la mañana\n<b>arratsaldea</b> — la tarde\n<b>iluntzea</b> — el anochecer\n<b>gaua</b> — la noche\n\nDos ya las traías de los saludos: <i>egun on</i> lleva el día, y <i>arratsalde on</i> lleva esta misma <i>arratsalde</i>. <b>Iluntzea</b> es la que no tiene equivalente cómodo en castellano: ese rato entre que se va la luz y es de noche.",
       "ejemplos": [
         {
           "eu": "Zer ordu da?",
@@ -128,7 +128,7 @@
     },
     {
       "titulo": "Cuándo: el día, el rato y la costumbre",
-      "cuerpo": "Los ratos del día llevan la misma <b>-n</b>:\n\n<b>goizean</b> — por la mañana\n<b>eguerdian</b> — a mediodía\n<b>arratsaldean</b> — por la tarde\n<b>iluntzean</b> — al anochecer\n<b>gauean</b> — por la noche\n\nLos días sueltos, en cambio, no llevan nada: <b>gaur</b> (hoy), <b>bihar</b> (mañana), <b>atzo</b> (ayer), <b>etzi</b> (pasado mañana), <b>bart</b> (anoche).\n\nSe combinan sin más: <b>gaur goizean</b> (esta mañana), <b>bihar arratsaldean</b> (mañana por la tarde).\n\nY para la frecuencia: <b>beti</b> (siempre), <b>askotan</b> (a menudo), <b>batzuetan</b> (a veces), <b>gutxitan</b> (pocas veces), <b>inoiz ez</b> (nunca).\n\nLo habitual es que la expresión de tiempo vaya <b>al principio de la frase</b>: <i>Gaur goizean etxean nago.</i>",
+      "cuerpo": "Los ratos del día llevan la misma <b>-n</b>:\n\n<b>goizean</b> — por la mañana\n<b>eguerdian</b> — a mediodía\n<b>arratsaldean</b> — por la tarde\n<b>iluntzean</b> — al anochecer\n<b>gauean</b> — por la noche\n\nLos días sueltos, en cambio, no llevan nada: <b>gaur</b> (hoy), <b>bihar</b> (mañana), <b>atzo</b> (ayer), <b>etzi</b> (pasado mañana), <b>bart</b> (anoche).\n\nSe combinan sin más: <b>gaur goizean</b> (esta mañana), <b>bihar arratsaldean</b> (mañana por la tarde).\n\nY para la frecuencia: <b>beti</b> (siempre), <b>askotan</b> (a menudo), <b>batzuetan</b> (a veces), <b>gutxitan</b> (pocas veces), <b>inoiz ez</b> (nunca).\n\nLo habitual es que la expresión de tiempo vaya <b>al principio de la frase</b>: <i>Gaur goizean etxean nago.</i>\n\nY tres palabras más para colocar las cosas en el tiempo:\n\n<b>gero</b> — luego, después\n<b>berandu</b> — tarde\n<b>egutegia</b> — el calendario, que da nombre a esta unidad\n\n<i>Gero</i> ya la usabas sin saberlo: <b>gero arte</b>, «hasta luego», de la primera unidad.\n\nY la pregunta que abre cualquier conversación con prisa:\n\n<b>Zer ordu da?</b> — ¿Qué hora es?",
       "ejemplos": [
         {
           "eu": "Gaur goizean etxean nago.",
@@ -173,7 +173,7 @@
     },
     {
       "titulo": "Los doce meses",
-      "cuerpo": "Van siempre con su artículo <b>-a</b> al final, igual que <i>eguna</i> o <i>astea</i>. Así se dicen y así conviene aprenderlos:\n\n<b>urtarrila</b> — enero\n<b>otsaila</b> — febrero\n<b>martxoa</b> — marzo\n<b>apirila</b> — abril\n<b>maiatza</b> — mayo\n<b>ekaina</b> — junio\n<b>uztaila</b> — julio\n<b>abuztua</b> — agosto\n<b>iraila</b> — septiembre\n<b>urria</b> — octubre\n<b>azaroa</b> — noviembre\n<b>abendua</b> — diciembre\n\nIgual que en castellano, los meses van en <b>minúscula</b> — y lo mismo los días de la semana, que ya viste en esta unidad. Quien lo tiene distinto es el inglés, que los escribe con mayúscula.",
+      "cuerpo": "Van siempre con su artículo <b>-a</b> al final, igual que <i>eguna</i> o <i>astea</i>. Así se dicen y así conviene aprenderlos:\n\n<b>urtarrila</b> — enero\n<b>otsaila</b> — febrero\n<b>martxoa</b> — marzo\n<b>apirila</b> — abril\n<b>maiatza</b> — mayo\n<b>ekaina</b> — junio\n<b>uztaila</b> — julio\n<b>abuztua</b> — agosto\n<b>iraila</b> — septiembre\n<b>urria</b> — octubre\n<b>azaroa</b> — noviembre\n<b>abendua</b> — diciembre\n\nIgual que en castellano, los meses van en <b>minúscula</b> — y lo mismo los días de la semana, que ya viste en esta unidad. Quien lo tiene distinto es el inglés, que los escribe con mayúscula.\n\nY la palabra que los agrupa: <b>hilabetea</b>, el mes.",
       "ejemplos": [
         {
           "eu": "urtarrila",
@@ -284,7 +284,7 @@
     },
     {
       "titulo": "El tiempo se «hace», como en castellano",
-      "cuerpo": "Para hablar del tiempo, el euskera usa <b>egin</b> (hacer). Todavía no lo hemos visto por dentro —eso es la unidad siguiente—, así que de momento apréndete estas dos enteras, como fórmulas:\n\n<b>Udaberrian euria egiten du.</b> — En primavera llueve.\n<b>Neguan hotz egiten du.</b> — En invierno hace frío.\n\nFíjate en que <i>euria</i> (la lluvia) y <i>hotza</i> (el frío) son sustantivos, no verbos: literalmente es «hace lluvia», «hace frío». Igual que en castellano.\n\nY para preguntar u opinar sobre el tiempo en general se usa <b>eguraldia</b>:\n\n<b>Gaur eguraldi ona dago.</b> — Hoy hace buen tiempo.",
+      "cuerpo": "Para hablar del tiempo, el euskera usa <b>egin</b> (hacer). Todavía no lo hemos visto por dentro —eso es la unidad siguiente—, así que de momento apréndete estas dos enteras, como fórmulas:\n\n<b>Udaberrian euria egiten du.</b> — En primavera llueve.\n<b>Neguan hotz egiten du.</b> — En invierno hace frío.\n\nFíjate en que <i>euria</i> (la lluvia) y <i>hotza</i> (el frío) son sustantivos, no verbos: literalmente es «hace lluvia», «hace frío». Igual que en castellano.\n\nY para preguntar u opinar sobre el tiempo en general se usa <b>eguraldia</b>:\n\n<b>Gaur eguraldi ona dago.</b> — Hoy hace buen tiempo.\n\nLo que se ve al mirar por la ventana:\n\n<b>eguzkia</b> — el sol\n<b>euria</b> — la lluvia\n<b>elurra</b> — la nieve\n<b>haizea</b> — el viento\n<b>hodeia</b> — la nube\n<b>beroa</b> — el calor\n<b>hotza</b> — el frío\n\n<i>Eguzkia</i> lleva dentro <b>egun</b>, el día — que a su vez está en <i>egun on</i> y en <i>egutegia</i>. Es de las piezas más repetidas del idioma.",
       "ejemplos": [
         {
           "eu": "Udaberrian euria egiten du.",
@@ -303,7 +303,7 @@
     },
     {
       "titulo": "«Gabon» y «Gabonak»: cuidado con la -k",
-      "cuerpo": "Aquí hay una coincidencia que confunde si no se avisa.\n\n<b>gabon</b> — buenas noches. Lo tienes desde la unidad 1.\n<b>Gabonak</b> — la Navidad.\n\nLa segunda es literalmente el plural de la primera: <i>las buenas noches</i>, las noches buenas del año. Va casi siempre en plural y con mayúscula.\n\nAsí que si alguien te dice <i>Gabon</i> por la noche te está dando las buenas noches, y si te habla de <i>Gabonak</i> te está hablando de las fiestas. El contexto lo deja claro enseguida, pero la primera vez despista.",
+      "cuerpo": "Aquí hay una coincidencia que confunde si no se avisa.\n\n<b>gabon</b> — buenas noches. Lo tienes desde la unidad 1.\n<b>Gabonak</b> — la Navidad.\n\nLa segunda es literalmente el plural de la primera: <i>las buenas noches</i>, las noches buenas del año. Va casi siempre en plural y con mayúscula.\n\nAsí que si alguien te dice <i>Gabon</i> por la noche te está dando las buenas noches, y si te habla de <i>Gabonak</i> te está hablando de las fiestas. El contexto lo deja claro enseguida, pero la primera vez despista.\n\nEl resto del calendario festivo:\n\n<b>jaiak</b> — las fiestas\n<b>jaieguna</b> — el día festivo, literalmente «día de fiesta»\n<b>Urte Berri</b> — el Año Nuevo\n<b>Aste Santua</b> — la Semana Santa\n<b>oporrak</b> — las vacaciones\n\nTres se descifran con lo que ya tienes: <i>jaieguna</i> es <b>jai</b> + <b>egun</b>; <i>Urte Berri</i> es «año nuevo» con el adjetivo detrás, como siempre; y <i>Aste Santua</i> lleva la <b>astea</b> del tema anterior. <i>Oporrak</i> va en plural, como las vacaciones en castellano.",
       "ejemplos": [
         {
           "eu": "gabon",
@@ -1237,6 +1237,20 @@
           "distractores": [
             "jaieguna"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Hoy es lunes.",
+          "eu": "Gaur astelehena da.",
+          "palabras": [
+            "gaur",
+            "astelehena",
+            "da"
+          ],
+          "distractores": [
+            "larunbata"
+          ]
         }
       ],
       "subnivel": "6.2"
@@ -1299,7 +1313,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«Nos vemos el domingo» — el domingo, ahí, es un cuándo: ____",
+          "pregunta": "«Nos vemos <b>el domingo</b>» → ____",
           "opciones": [
             "igandean",
             "igandera",
@@ -1512,6 +1526,21 @@
           "distractores": [
             "urtarrila"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Son las siete y media.",
+          "eu": "Zazpi eta erdiak dira.",
+          "palabras": [
+            "zazpi",
+            "eta",
+            "erdiak",
+            "dira"
+          ],
+          "distractores": [
+            "udaberria"
+          ]
         }
       ],
       "subnivel": "6.1"
@@ -1521,7 +1550,7 @@
       "variantes": [
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "Siempre. → ____",
           "opciones": [
             "beti",
@@ -1534,7 +1563,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "A veces. → ____",
           "opciones": [
             "beti",
@@ -1547,7 +1576,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "Nunca. → ____",
           "opciones": [
             "inoiz ez",
@@ -1560,7 +1589,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "Ahora. → ____",
           "opciones": [
             "gero",
@@ -1573,7 +1602,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "Anoche. → ____",
           "opciones": [
             "atzo",
@@ -1647,13 +1676,13 @@
           "instruccion": "Completa la frase",
           "pregunta": "«Zer ordu da?» se acorta en bizkaiera como ____",
           "opciones": [
-            "Zeren ordu da?",
             "Ze ordu da?",
-            "Zein ordu da?",
-            "Nor ordu da?"
+            "Zer or da?",
+            "Zer ordu?",
+            "Ze ordua da?"
           ],
-          "correcta": 1,
-          "explicacion": "Delante de un nombre, «zer» se queda en «ze»."
+          "correcta": 0,
+          "explicacion": "Delante de un sustantivo, «zer» se queda en «ze». Lo que se acorta es «zer», no «ordu», y el verbo se queda donde estaba."
         }
       ],
       "subnivel": "6.2"
@@ -1993,15 +2022,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿De qué dos palabras sale «urtebetetzea»?",
+          "pregunta": "«Urtebetetzea» significa cumpleaños. ¿Qué dice literalmente?",
           "opciones": [
-            "urte + bete",
-            "urte + eguna",
-            "hilabete + urte",
-            "urte + jaio"
+            "que el año se llena",
+            "que el año empieza",
+            "el día del nacimiento",
+            "el año que viene"
           ],
           "correcta": 0,
-          "explicacion": "Urte (año) + bete (llenar): el completarse del año."
+          "explicacion": "urte (año) + bete (llenar): el año que se completa. No es el día en que naciste, es el que cierra la vuelta."
         },
         {
           "tipo": "opcion",
@@ -2117,6 +2146,21 @@
             "urtea"
           ],
           "pista": "Una palabra, la misma que ya conoces."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Mi cumpleaños es en mayo.",
+          "eu": "Nire urtebetetzea maiatzean da.",
+          "palabras": [
+            "nire",
+            "urtebetetzea",
+            "maiatzean",
+            "da"
+          ],
+          "distractores": [
+            "hodeia"
+          ]
         }
       ],
       "subnivel": "test"
@@ -2335,6 +2379,21 @@
             "udaberria"
           ],
           "pista": "Empieza como «verano»."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "En primavera llueve.",
+          "eu": "Udaberrian euria egiten du.",
+          "palabras": [
+            "udaberrian",
+            "euria",
+            "egiten",
+            "du"
+          ],
+          "distractores": [
+            "asteazkena"
+          ]
         }
       ],
       "subnivel": "6.4"
@@ -2495,7 +2554,7 @@
           "pregunta": "«pasado mañana» se dice…",
           "opciones": [
             "etzi",
-            "eta laurden",
+            "atzo",
             "maiatza",
             "arratsaldea"
           ],
@@ -2637,20 +2696,20 @@
           "instruccion": "Empareja estaciones y tiempo",
           "pares": [
             {
-              "eu": "euria",
-              "es": "la lluvia"
+              "eu": "udazkena",
+              "es": "el otoño"
             },
             {
-              "eu": "negua",
-              "es": "el invierno"
+              "eu": "udaberria",
+              "es": "la primavera"
             },
             {
-              "eu": "eguzkia",
-              "es": "el sol"
+              "eu": "elurra",
+              "es": "la nieve"
             },
             {
-              "eu": "uda",
-              "es": "el verano"
+              "eu": "haizea",
+              "es": "el viento"
             }
           ]
         },
@@ -2704,12 +2763,12 @@
           "instruccion": "Empareja estaciones y tiempo",
           "pares": [
             {
-              "eu": "euria",
-              "es": "la lluvia"
+              "eu": "hodeia",
+              "es": "la nube"
             },
             {
-              "eu": "uda",
-              "es": "el verano"
+              "eu": "beroa",
+              "es": "el calor"
             },
             {
               "eu": "negua",
@@ -2859,15 +2918,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Udaberria» y «udazkena» se construyen las dos sobre la misma palabra. ¿Cuál?",
+          "pregunta": "¿En cuántas estaciones partía el año el euskera antiguo?",
           "opciones": [
-            "uda (verano)",
-            "negua (invierno)",
-            "eguraldia (el tiempo)",
-            "urtea (el año)"
+            "Dos",
+            "Tres",
+            "Cuatro",
+            "Seis"
           ],
           "correcta": 0,
-          "explicacion": "«Udaberria» es «el verano nuevo» y «udazkena», «el final del verano». El año vasco se partía en dos —verano e invierno—, y las otras dos estaciones se colocaron alrededor del verano."
+          "explicacion": "Verano e invierno. Por eso «udaberria» es «el verano nuevo» y «udazkena» «el final del verano»: las dos se apoyan en «uda»."
         }
       ]
     },
@@ -2995,7 +3054,7 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "«Olentzero» en el diccionario aparece como…",
           "opciones": [
-            "El carbonero",
+            "El año nuevo",
             "El día de Nochebuena",
             "El árbol de Navidad",
             "La cena de Navidad"
@@ -3067,12 +3126,12 @@
           "pregunta": "La «Aste Nagusia» de Bilbao es…",
           "opciones": [
             "la Semana Santa",
-            "la Semana Grande, en agosto",
+            "la Semana Grande",
             "la Navidad",
             "el carnaval"
           ],
           "correcta": 1,
-          "explicacion": "Nagusi = principal, mayor."
+          "explicacion": "Se celebra en agosto. Nagusi = principal, mayor: la semana mayor del año."
         },
         {
           "tipo": "pares",
@@ -3313,20 +3372,20 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Asteburua» se arma con…",
+          "pregunta": "¿Qué significa «asteburua»?",
           "opciones": [
-            "aste (semana) + buru (cabeza)",
-            "aste + eguna",
-            "aste + ordua",
-            "aste + urtea"
+            "el fin de semana",
+            "el día de la semana",
+            "el principio de la semana",
+            "la semana entera"
           ],
           "correcta": 0,
-          "explicacion": "La «cabeza» de la semana: el fin de semana."
+          "explicacion": "aste (semana) + buru (cabeza): la «cabeza» de la semana."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Ordena de menor a mayor: eguna, astea, hilabetea.",
+          "pregunta": "Ordena de menor a mayor:",
           "opciones": [
             "eguna < astea < hilabetea",
             "astea < eguna < hilabetea",

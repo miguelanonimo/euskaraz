@@ -11,7 +11,7 @@ es el que conviene mirar primero, porque afecta a cómo se genera todo lo demás
 |---|---|---|---|
 | **A** | Audios que ya existen pero **suenan mal** | 23 | `node lote-ric-3.mjs` |
 | **B** | Palabras nuevas **sin audio ninguno** | 194 | `node generar.mjs <unidad>` |
-| **C** | Palabras de v2 que el generador **no puede ver** | 54 | hay que decidir cómo |
+| **C** | Palabras de v2 que el generador **no podía ver** | 58 | ya arreglado, ver abajo — falta ejecutar |
 
 ---
 
@@ -133,20 +133,23 @@ los demostrativos (dato de Ric, verificado en Bizkaieraren ataria).
 
 ---
 
-## C · El agujero: 54 palabras que `generar.mjs` no puede ver
+## C · El agujero de antes: ya arreglado, falta ejecutarlo
 
-**Esto es nuevo y conviene mirarlo antes que A y B.**
+**Ya no es un agujero — `generar.mjs` lee `data/unidades-v2/` directamente
+desde el 27/08/2026** (ver la nota de Miguel más abajo). Se deja el
+contexto y la lista porque siguen sirviendo para saber qué falta generar,
+no porque el generador siga sin verlas.
 
-`generar.mjs` lee `data/unidades/` —los ficheros **v1**—, pero el curso que
-se publica es `data/unidades-v2/`. Mientras el vocabulario de v2 venía
-heredado de v1, eso daba igual: se generaba desde v1 y el mp3 caía en la ruta
-que v2 referencia.
-
-Pero **todo lo que hemos añadido directamente en v2 no existe en v1**, así que
-el generador no lo ve y nunca le va a hacer audio. Son **54 palabras**, y no
-son de relleno: están los ordinales enteros, `eduki` con sus formas, los
-verbos de la rutina diaria del 7.3, el `ari naiz` del 7.4 y los de poder y
-deber del 8.3.
+Hasta ese arreglo, `generar.mjs` leía `data/unidades/` (v1), y todo lo
+añadido directamente en v2 —sin pasar por v1— quedaba invisible para
+siempre, por muchas veces que se corriera el script. Eran **58 palabras**
+en el último recuento (27-29/08), y no son de relleno: están los
+ordinales enteros, `eduki` con sus formas, los verbos de la rutina diaria
+del 7.3, el `ari naiz` del 7.4 y los de poder y deber del 8.3. Con el
+curso siempre creciendo, esta cifra ya no es la que manda — lo que hace
+falta generar de verdad, en cualquier momento, es "todo lo que no tenga
+`audio` en `data/unidades-v2/`", categorías B y C ya fusionadas en una
+sola desde el arreglo.
 
 | Tema | Palabra | Castellano |
 |---|---|---|

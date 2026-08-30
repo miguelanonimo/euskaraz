@@ -39,6 +39,25 @@
       "subnivel": "1.1"
     },
     {
+      "titulo": "Saludar y despedirse: «arte» es «hasta»",
+      "cuerpo": "Empecemos por lo que vas a decir el primer día.\n\n<b>kaixo</b> — hola\n<b>agur</b> — adiós\n\n<i>Kaixo</i> vale a cualquier hora, y <i>agur</i> también: no hay que elegir según el momento del día, como pasa con los tres saludos de la ficha siguiente.\n\n<b>Las despedidas llevan todas la misma pieza</b>\n\nFíjate en estas tres:\n\n<b>ikusi arte</b> — hasta luego (literalmente, «hasta vernos»)\n<b>gero arte</b> — hasta luego\n<b>bihar arte</b> — hasta mañana\n\nLas tres acaban en <b>arte</b>, que es <b>«hasta»</b>. Y va <b>detrás</b>, no delante como el «hasta» castellano: primero dices hasta cuándo, y luego el <i>arte</i>.\n\n<i>ikusi</i> (ver) → hasta vernos\n<i>gero</i> (luego) → hasta luego\n<i>bihar</i> (mañana) → hasta mañana\n\nCon eso, cualquier palabra de tiempo que aprendas te sirve para despedirte. Cuando en la sexta unidad veas los días de la semana, <i>astelehen arte</i> será «hasta el lunes» sin que nadie te lo tenga que enseñar.",
+      "ejemplos": [
+        {
+          "eu": "Kaixo!",
+          "es": "¡Hola!"
+        },
+        {
+          "eu": "Bihar arte!",
+          "es": "¡Hasta mañana!"
+        },
+        {
+          "eu": "Ikusi arte!",
+          "es": "¡Hasta luego!"
+        }
+      ],
+      "subnivel": "1.1"
+    },
+    {
       "titulo": "«on» = bueno, y va detrás",
       "cuerpo": "Los tres saludos del día comparten la misma pieza:\n\n<b>egun</b> (día) + <b>on</b> → egun on\n<b>arratsalde</b> (tarde) + <b>on</b> → arratsalde on\n<b>gau</b> (noche) + <b>on</b> → gabon\n\nEl adjetivo va <b>detrás</b> del sustantivo, al revés que en «buenos días». No es una excepción de los saludos, es una regla general del idioma: <i>etxe handia</i> es «casa grande», nunca «grande casa».\n\nGuárdate esta regla, porque va a aparecer en todas las unidades.",
       "ejemplos": [
@@ -59,6 +78,25 @@
         }
       ],
       "subnivel": "1.1"
+    },
+    {
+      "titulo": "«Zer moduz?» y toda la escala de respuestas",
+      "cuerpo": "La pregunta que más veces vas a oír y a decir:\n\n<b>zer moduz?</b> — ¿qué tal?\n\nY para contestar tienes una escala completa, de mejor a peor:\n\n<b>oso ondo</b> — muy bien\n<b>ondo</b> — bien\n<b>hala-hola</b> — así así, regular\n<b>gaizki</b> — mal\n\nLa pieza que la abre es <b>oso</b>, que es <b>«muy»</b> y sirve con cualquier cosa, no solo aquí: más adelante lo verás en <i>oso handia</i>, muy grande. Con aprender <i>oso</i> te llevas media escala.\n\nY la coletilla que devuelve la pregunta:\n\n<b>eta zu?</b> — ¿y tú?\n\n<b>Lo mínimo para ser educado</b>\n\n<b>mesedez</b> — por favor\n<b>barkatu</b> — perdón, disculpa\n<b>eskerrik asko</b> — muchas gracias\n<b>ez horregatik</b> — de nada\n\nEsas dos últimas van en pareja: una es la respuesta de la otra. <i>Eskerrik asko</i> es literalmente «gracias muchas», con el adjetivo detrás, igual que en <i>egun on</i>.\n\nY las dos que resuelven la mitad de las conversaciones:\n\n<b>bai</b> — sí\n<b>ez</b> — no\n\n<i>Ez</i> guárdala bien, porque no es solo «no» como respuesta: es la pieza con la que se niega cualquier frase en euskera, y eso llega en la séptima unidad.",
+      "ejemplos": [
+        {
+          "eu": "Zer moduz? — Oso ondo, eta zu?",
+          "es": "¿Qué tal? — Muy bien, ¿y tú?"
+        },
+        {
+          "eu": "Eskerrik asko! — Ez horregatik.",
+          "es": "¡Muchas gracias! — De nada."
+        },
+        {
+          "eu": "Barkatu, mesedez.",
+          "es": "Perdone, por favor."
+        }
+      ],
+      "subnivel": "1.2"
     },
     {
       "titulo": "Pronunciación: lo que necesitas hoy",
@@ -912,6 +950,21 @@
             "bai",
             "mesedez"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Muy bien, muchas gracias.",
+          "eu": "Oso ondo, eskerrik asko.",
+          "palabras": [
+            "oso",
+            "ondo",
+            "eskerrik",
+            "asko"
+          ],
+          "distractores": [
+            "gabon"
+          ]
         }
       ],
       "subnivel": "1.2"
@@ -997,7 +1050,7 @@
           "respuestas": [
             "agur"
           ],
-          "pista": "Literalmente: «gracias muchas»."
+          "pista": "Sirve para despedirse a cualquier hora del día."
         },
         {
           "tipo": "traducir",
@@ -1235,6 +1288,20 @@
           "distractores": [
             "barkatu"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Regular, gracias.",
+          "eu": "Hala-hola, eskerrik asko.",
+          "palabras": [
+            "hala-hola",
+            "eskerrik",
+            "asko"
+          ],
+          "distractores": [
+            "ondo"
+          ]
         }
       ],
       "subnivel": "1.1"
@@ -1323,7 +1390,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Si «gau» es noche y «on» es bueno, ¿qué esperarías que significase «gabon»?",
+          "pregunta": "Si «gau» es noche, ¿qué esperarías que significase «gabon»?",
           "opciones": [
             "Buena noche",
             "Media noche",
@@ -1504,17 +1571,14 @@
           ]
         },
         {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "El botón «Batua / Bizkaiera» de la barra de arriba…",
-          "opciones": [
-            "Decide si los ejercicios te preguntan también en bizkaiera",
-            "Cambia el idioma de la app",
-            "Cambia el nivel",
-            "Activa el audio"
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "el dialecto",
+          "respuestas": [
+            "euskalkia",
+            "euskalki"
           ],
-          "correcta": 0,
-          "explicacion": "El idioma que aprendes es siempre el batua. Lo que decide es si además te examinan de las formas locales."
+          "pista": "Lleva «euskal-» delante, como Euskal Herria."
         },
         {
           "tipo": "opcion",
@@ -1638,7 +1702,7 @@
             },
             {
               "eu": "batua",
-              "es": "el batua"
+              "es": "el euskera estándar"
             },
             {
               "eu": "Euskal Herria",
@@ -1656,7 +1720,7 @@
             },
             {
               "eu": "batua",
-              "es": "el batua"
+              "es": "el euskera estándar"
             },
             {
               "eu": "Nafarroa",
@@ -1763,9 +1827,9 @@
           "pregunta": "¿Qué significa «euskara»?",
           "opciones": [
             "el euskera",
-            "buenos días",
+            "el País Vasco",
             "¿qué tal?",
-            "buenas tardes"
+            "buenos días"
           ],
           "correcta": 0,
           "explicacion": "La lengua. Y «euskaraz» es «en euskera»."
@@ -1812,7 +1876,7 @@
             },
             {
               "eu": "batua",
-              "es": "el batua"
+              "es": "el euskera estándar"
             },
             {
               "eu": "Gipuzkoa",
@@ -1851,13 +1915,13 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "¿Qué enseña esta app?",
           "opciones": [
-            "bizkaiera puro",
-            "batua",
-            "gipuzkera",
-            "una mezcla al azar"
+            "Batua en general, con formas localizadas opcionales",
+            "Solo bizkaiera",
+            "Solo gipuzkera",
+            "Una mezcla sin norma"
           ],
-          "correcta": 1,
-          "explicacion": "Batua, con notas del habla de Bilbao."
+          "correcta": 0,
+          "explicacion": "El batua es el estándar; las formas de Bilbao se añaden aparte, y puedes quitarlas."
         },
         {
           "tipo": "opcion",
@@ -1930,8 +1994,8 @@
               "es": "muy bien"
             },
             {
-              "eu": "zer moduz?",
-              "es": "¿qué tal?"
+              "eu": "agur",
+              "es": "adiós"
             }
           ]
         },
@@ -2082,8 +2146,8 @@
               "es": "¿qué tal?"
             },
             {
-              "eu": "ez",
-              "es": "no"
+              "eu": "eta zu?",
+              "es": "¿y tú?"
             },
             {
               "eu": "Araba",
@@ -2100,16 +2164,16 @@
               "es": "¿y tú?"
             },
             {
+              "eu": "zer moduz?",
+              "es": "¿qué tal?"
+            },
+            {
               "eu": "batua",
-              "es": "el batua"
+              "es": "el euskera estándar"
             },
             {
-              "eu": "oso",
-              "es": "muy"
-            },
-            {
-              "eu": "ez",
-              "es": "no"
+              "eu": "bai",
+              "es": "sí"
             }
           ]
         },
@@ -2187,15 +2251,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En Bizkaia, «jan» (comer) suena…",
+          "pregunta": "La «x» del euskera suena como…",
           "opciones": [
-            "«jan» con jota fuerte",
-            "«yan»",
-            "«chan»",
-            "«san»"
+            "«sh», como en show",
+            "«ch», como en chico",
+            "«ts», como en pizza",
+            "la «z» castellana"
           ],
-          "correcta": 1,
-          "explicacion": "La jota fuerte es cosa guipuzcoana."
+          "correcta": 0,
+          "explicacion": "La x es «sh»: «kaixo» se dice «káisho»."
         },
         {
           "tipo": "opcion",
@@ -2347,15 +2411,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué se usa para escribir y para los exámenes?",
+          "pregunta": "¿Qué se usa en las comunicaciones oficiales?",
           "opciones": [
             "el dialecto de tu zona",
             "el batua",
             "cualquiera",
-            "el castellano"
+            "el bizkaiera"
           ],
           "correcta": 1,
-          "explicacion": "El batua es el estándar común."
+          "explicacion": "El batua es el estándar común, y es lo que usan administración y medios."
         },
         {
           "tipo": "opcion",

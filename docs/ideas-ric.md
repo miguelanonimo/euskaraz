@@ -1878,6 +1878,479 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### Formato nuevo: escribir con la bolsa a la vista (30/08/2026)
+
+Idea de Ric a partir de la nota de investigación: **los ejercicios de ordenar,
+pero tecleando**. Ves los huecos, escribes cada palabra, y la que aciertas se
+pone verde y se apaga abajo en la bolsa.
+
+Encaja de lleno con lo que dice la nota: recuperar **produciendo** gana con
+diferencia a reconocer, y los formatos **híbridos** —con algo de andamio, pero
+produciendo— fueron los más eficaces del metaanálisis de 217 estudios. Un
+ejercicio de ordenar es reconocimiento: las piezas están ahí y se colocan.
+Este obliga a producir cada palabra, con la bolsa solo como red.
+
+Decisión de diseño: **las fichas de la bolsa no se pueden pinchar**. Si se
+pudieran, volvería a ser un ejercicio de reconocer y se perdería justo lo que
+lo hace valer.
+
+**Cómo está montado.** Tipo `escribir`, con los mismos campos que `orden` —
+`es`, `eu`, `palabras`, `distractores`—, así que comparte sus comprobaciones en
+`verificar.py` y no hace falta contenido nuevo: cualquier ejercicio de ordenar
+se puede duplicar como `escribir` cambiando una palabra.
+
+**Prototipo**: cinco variantes en el tema 2.3 —`u4-g02`, `u4-g03`, `u4-g04`,
+`u4-g05` y `u2-g61`— más `u2-g08` (2.2) y `u8-g05` (7.1). Van **como variante
+de más**, encima de las cinco que ya había, no sustituyendo a ninguna. El
+verificador admite esa sexta solo si es de este tipo.
+
+**Y hubo que darle peso.** Ric probó doce veces y la vio una. La cuenta
+explicaba por qué: el 2.3 tenía **un solo ejercicio de ordenar** de nueve, así
+que la probabilidad era 1/9 × 1/6 ≈ **1,9%** por ejercicio mostrado. Dos
+arreglos:
+
+- `elegirVariante` **pondera**: una variante `escribir` cuenta como **3**, y
+  como **5 en el test de fin de unidad**, que es donde más rinde producir. Era
+  la idea que ya había apuntado Ric.
+- Cinco de los nueve ejercicios del 2.3 tienen ahora variante `escribir`.
+
+Medido sobre los datos reales: de **1,9% a 21%** por ejercicio, es decir de
+0,2 a **2,6 apariciones** en doce ejercicios.
+
+### Dos intentos por hueco, y se cierra (30/08/2026)
+
+Ric, probando el formato nuevo: *«si fallas dos veces, el espacio se debería
+poner rojo y bloquearse, porque ahora escribes todas las opciones hasta que te
+da bien, y entonces el ejercicio siempre cuenta como hecho OK»*.
+
+Fallo de verdad, y de los que importan: no solo hacía el ejercicio inútil, sino
+que **le mentía al calendario de repaso**, que registraba un acierto donde solo
+hubo tanteo. Es justo lo que la nota de investigación dice que hay que evitar —
+la pista o el atajo barato sustituyendo al intento.
+
+**Dos intentos por hueco.** Al segundo fallo se cierra en rojo, deja de
+aceptar texto y el ejercicio cuenta como fallado aunque los demás huecos estén
+en verde.
+
+El detalle que decide si esto funciona o molesta: **un intento se cuenta al
+SALIR del hueco** —Tab, Enter, o pinchar fuera—, no en cada tecla. Si se
+contara por tecla, escribir «lagunak» gastaría los dos intentos antes de llegar
+a la k.
+
+Hay un estado intermedio, `is-tocado`: tras el primer fallo el borde avisa en
+rojo pero el hueco sigue abierto.
+
+Probado en el navegador **intentando hacer trampa a propósito**: tecleé «gu»,
+luego «zu», y al tercer intento la correcta — el hueco ya estaba cerrado y el
+ejercicio salió «No exactamente» con la solución delante.
+
+### Cuarta tanda de revisión: veintiuna (30/08/2026)
+
+Ric, con 1028 de 1819 variantes vistas. Ya entran las del formato nuevo, y de
+hecho cuatro de sus avisos son distractores de esas.
+
+Lo que más se repite sigue siendo lo mismo: **enunciados que dan la respuesta**.
+
+- «¿De qué dos palabras sale *urtebetetzea*?» — leyendo la pregunta ya
+  contestas. Sustituida por «*Urtebetetzea* significa cumpleaños. ¿Qué dice
+  literalmente?», que es lo que de verdad hay que entender.
+- «*Udaberria* y *udazkena* se construyen sobre la misma palabra, ¿cuál?» —
+  con las dos delante, `uda` salta a la vista. Cambiada por cuántas estaciones
+  tenía el año antiguo, que es el dato que importa.
+- «*Asteburua* se arma con…» — se contestaba sola. Ahora pregunta qué
+  significa.
+- «Ordena de menor a mayor: eguna, astea, hilabetea» — **el enunciado traía la
+  respuesta escrita**.
+
+También: el «en agosto» que iba dentro de la respuesta correcta de la Aste
+Nagusia, movido a la corrección; y «El carbonero» fuera de las opciones del
+Olentzero, porque con la ficha que dice que primero fue una fiesta y después un
+personaje, esa opción es una trampa y no un distractor.
+
+**Tres variantes de emparejar con las mismas cuatro palabras** (`u6-g16`,
+`u6-g17`): repartidas con otras del tema —`udazkena`, `udaberria`, `elurra`,
+`haizea`, `hodeia`, `beroa`—.
+
+**El enunciado admite negrita ahora.** Ric quería marcar «el domingo» dentro de
+la frase para que se vea de qué parte se pregunta, y el enunciado pasaba por
+`esc()`, así que las etiquetas salían literales. Añadido `richInline()`: igual
+que el `richText` de las fichas pero sin partir en párrafos, y con la misma
+seguridad —escapa todo y solo devuelve `<b>`, `<i>` y `<u>`—. Comprobado que
+ningún otro enunciado del curso lleva `<`.
+
+**Y una que no apliqué tal cual**: Ric pidió cambiar un distractor por
+«L'Automàtica». Es catalán y no pinta nada en un ejercicio de euskera, así que
+lo tomé por un pegado accidental y puse `hiru`, que junto a `bi` sí hace de
+distractor.
+
+### El formato «escribir», en todo el curso (30/08/2026)
+
+Ric lo probó y dio el visto bueno, con el peso en 3. Extendido a **los 40
+ejercicios que tienen variante de ordenar**, todos con una variante `escribir`
+encima, sin quitar ninguna.
+
+La frase de cada uno se toma de una de sus propias variantes de ordenar,
+prefiriendo las de 2 a 5 huecos: teclear siete palabras cansa y deja de medir
+lo que quiere medir.
+
+**Los signos sueltos se pintan fijos.** Tres ejercicios se quedaban fuera
+porque llevan el `?` como ficha aparte —de cuando Ric pidió que el signo no
+delatara la forma—, y poner un hueco para teclear un interrogante no enseña
+nada. Ahora se dibujan como texto, no cuentan para la corrección y no aparecen
+en la bolsa. Con eso entran los tres.
+
+**Por qué añadir y no reemplazar** (era la duda de Ric): los de ordenar no
+sobran. Enseñan **orden de palabras**, que en euskera no es menor —el salto del
+auxiliar en la negación, el verbo al final—. Lo que no enseñan es a producir.
+Son cosas distintas. Y reemplazarlos sería tirar ejercicios ya revisados por
+Ric para meter otros sin revisar.
+
+Con el peso en 3, una variante `escribir` sale en el **37%** de las
+apariciones de su grupo, y en el **50%** en el test de fin de unidad.
+
+### El «-a»/«-ak», misma familia de riesgo (30/08/2026)
+
+La nota mete la oposición `-a`/`-ak` en el mismo saco que el ergativo, y con
+razón: entre `irakaslea` y `irakasleak` hay **una consonante** de diferencia, y
+esa `-k` carga con toda la información del plural. Apenas se oye, y el verbo ya
+la ha dado —`da` frente a `dira`—, así que es redundante.
+
+Lo despachaba **una línea** de la ficha del 2.3: «El plural es -ak:
+irakasleak, etxeak».
+
+Mismo tratamiento que el ergativo: la ficha explica por qué se escapa y da la
+regla de que **artículo y verbo tienen que ir de acuerdo** (`Ni ikaslea naiz` /
+`Gu ikasleak gara`), más pares mínimos (`u2-g60`) y producción (`u2-g61`).
+
+### Nota de motor para Miguel (30/08/2026)
+
+`docs/evidencia-motor.md`: los tres huecos de la nota de investigación que no
+se arreglan con contenido, con su dato y su coste. Por orden de rendimiento:
+el **repaso gramatical intercalado** (que no necesita contenido nuevo, solo
+seleccionar y barajar lo que ya hay), el **pretest de tres ítems** al abrir
+unidad, y el **realce del sufijo en la corrección**. Más el aviso de que si
+medimos algo, sean sesiones e ítems y no minutos.
+
+### El ergativo, tratado como lo que es (30/08/2026)
+
+De la nota de investigación que pasó Ric («Evidencia para Euskaraz»). Uno de
+los cinco huecos que señala es que **los sufijos de baja saliencia no reciben
+tratamiento diferenciado**, y pone el ergativo `-k` como caso de manual.
+
+El argumento es fuerte porque cumple **los tres criterios de riesgo a la vez**:
+
+- **poco saliente** — una consonante final átona, que en habla rápida se pierde
+- **redundante** — el auxiliar ya dice quién hace qué, así que quitarla no
+  impide que te entiendan
+- **bloqueado** — el castellano no tiene caso, así que el alumno llega con un
+  sistema completo que resuelve lo mismo sin él
+
+La predicción de la teoría (N. Ellis, *learned attention*) es que **no se
+adquiere por exposición, ni con mucha**. Y los ejercicios que había eran casi
+todos metalingüísticos —«¿cómo se llama esa marca?»—, que construyen
+conocimiento declarativo, no procedimental.
+
+Tres medidas, las que la nota recomienda:
+
+1. **La ficha lo dice.** Añadido el porqué se resiste, para que el alumno no lo
+   lea como torpeza suya, y una regla operativa de un vistazo: *¿hay algo a lo
+   que se le hace la acción?* Sí → `-k` y familia `dut`. No → sujeto limpio y
+   `naiz`/`nago`.
+2. **Pares mínimos contrastivos** (`u4-g60`), que es el formato canónico para
+   dirigir la atención a una marca redundante: la misma frase con y sin
+   ergativo, y hay que elegir. `Ni ikaslea naiz` frente a `Nik ikaslea naiz`.
+3. **Producción obligatoria** (`u4-g61`): teclear la frase entera. La nota es
+   tajante — *se proceduraliza lo que se practica*, y el ergativo solo se
+   practica produciéndolo.
+
+**Lo que queda y no es contenido**: el realce tipográfico del sufijo en la
+solución tras el fallo es de `app.js`. Y el hueco más gordo de la nota —**no
+hay repaso gramatical intercalado entre unidades**— pide un modo nuevo, no
+ejercicios. El dato que lo respalda es de los más claros de la nota: intercalar
+baja el acierto en la sesión del 87% al 77% y **mejora el recuerdo una semana
+después** (d=0,64), y el alumno no lo percibe, así que no se puede decidir
+preguntándole.
+
+### Tanda de Ric probando la app publicada (29/08/2026)
+
+Siete avisos, y **dos exigían investigación de verdad**.
+
+**«Ari naiz» no puede ir solo.** Ric: sus conocidos lo cuestionaban. Tenían
+razón. La [Euskararen Gramatika][eg] es explícita: la perífrasis `ari izan`
+exige el verbo principal en `-t(z)en`. `Ari naiz` a secas no significa «estoy
+en ello», le falta la mitad. La ficha del 7.4 presentaba `ari naiz — yo estoy`
+como si fuera un paradigma suelto, y el vocabulario lo glosaba igual.
+Corregidas las dos cosas. **Los ejercicios estaban bien**: todos lo usan con su
+verbo (`ikasten ari zara`, `kafea edaten ari naiz`).
+
+**Los plurales bizkainos: correctos, pero mal enmarcados.** Ric: en Gernika no
+les suenan. Comprobado en [Bizkaieraren ataria][ba]: `honeek`, `horreek`,
+`hareek` son exactamente lo que recoge la gramática, con las variantes
+`honeik`/`horreik` y la antigua `haek` — la ficha no se inventaba nada. Pero
+las presentaba como lo que vas a oír, y eso sí era pasarse: mucha gente
+escolarizada en batua usa hoy `hauek/horiek/haiek` también en casa. Añadido un
+aviso que lo dice, en la línea del que ya hay en la primera unidad.
+
+[eg]: https://euskaltzaindia.eus/index.php?ItemId=1765&kodea=2604&lang=eu&option=com_liburuak&task=gramatika
+[ba]: https://www.bizkaiera.eus/bizkaiera/morfologia-puntu-batzuk/
+
+**Un cuarto ejercicio con la respuesta fuera de las opciones.** `u9-g22` v4
+preguntaba «¿Qué significa jaieguna?» y daba por buena **«el fútbol»**; la
+respuesta correcta ni estaba, y `jaieguna` además es del 6.5. Van cuatro de
+esta familia (`alaba`/oveja, `izeba`/conejo, `erantzun`/guztia, y esta).
+
+**Y el párrafo del 9.4 se contradecía**, como vio Ric: decía que en euskera lo
+que gusta «va delante igual» que en castellano, cuando en castellano va detrás.
+Reescrito: lo que coincide es **el reparto de papeles** —el fútbol es el sujeto
+en las dos lenguas, por eso decimos «me gustaN los libros»— y el orden es justo
+al revés.
+
+**Otro `.replace()` que había fallado en silencio.** La duplicación de las
+gafas que Ric detectó entre el 9.3 y el 9.5 venía de ahí: una edición anterior
+para quitarla del 9.5 no encajó con el texto y no hizo nada. Es la segunda vez
+en dos días. Ahora todas las ediciones llevan `assert`, y en esta misma tanda
+me ha parado tres veces.
+
+Lo demás: el `-dun` del 9.4 enlaza ya con `euskalduna`; las gafas se cierran en
+el 9.5 con **anteojos**, que es la misma idea en castellano; y `oporrak` se
+queda donde está, pero diciendo por qué —va en plural por la misma razón que
+las prendas—.
+
+### El curso entero, sin vocabulario huérfano (29/08/2026)
+
+Terminada la pasada. **526 palabras, ninguna sin presentar en su tema.**
+
+|  | antes | ahora |
+|---|---|---|
+| u1 | 62% | 0% |
+| u5 | 51% | 0% |
+| u9 | 40% | 0% |
+| u3 | 33% | 0% |
+| u6 | 31% | 0% |
+| **todas** | **~30%** | **0%** |
+
+En esta última tanda, además de las listas que faltaban, salieron ganchos que
+merecen quedar:
+
+- **`-le`/`-la`, quien hace algo** (2.4): `irakaslea` de `irakatsi`, `idazlea`
+  de `idatzi`, `langilea` de `lan`. Y el aviso de que **ninguna profesión lleva
+  género**, que es donde más se nota.
+- **`inoiz` solo es «alguna vez»** (3.1): es el `ez` el que lo vuelve «nunca»,
+  igual que el «jamás» castellano necesita el «no».
+- **`eguzkia` lleva `egun` dentro** (6.4), la misma pieza que está en `egun on`
+  y en `egutegia`.
+- **`jaieguna` = jai + egun**, y **`Aste Santua`** lleva la `astea` del tema
+  anterior (6.5).
+- **`etxeko lanak` = etxe + -ko + lanak** (7.3), los trabajos de la casa.
+- **`hemen`/`han`** (5.1) presentadas como las hermanas de `hau`/`hura`.
+
+**Un fallo mío que conviene no repetir**: la corrección del 10.4 de ayer
+—añadir `gutxiago`, `txarragoa` y `berdin`— **nunca llegó a guardarse**. Usé
+`.replace()` sin comprobar que el texto encajara, así que no hizo nada y no
+avisó de nada. Desde entonces, o `assert` antes de reemplazar, o añadir al
+final del cuerpo, que no depende de encajar con nada.
+
+Sobre el criterio, que Ric matizó: **dentro de una misma unidad no pasa nada**
+que una palabra aparezca antes de su tema — a veces hace falta para poder
+formar frases. Por eso la comprobación de ejemplos solo avisa **cruzando
+unidad**. `liburua` y `musika` se han movido igualmente al 7.1, pero por otra
+razón: así entran en el repaso de vocabulario cuando el alumno los conoce, y no
+dos unidades después.
+
+### Unidades 1 y 9, a cero (29/08/2026)
+
+Siguiendo con lo del vocabulario sin presentar. Las dos peores eran la 1 (62%)
+y la 9 (40%).
+
+**El 1.2 «Cortesía y cómo estás» no tenía NI UNA ficha** para sus 13 palabras
+—el mismo caso que el 8.4 y el 9.4—, y era el primer tema de verdad del curso.
+Ficha nueva con la escala entera de respuestas a `zer moduz?`, de `oso ondo` a
+`gaizki`, señalando que `oso` («muy») sirve para todo y no solo ahí.
+
+**En el 1.1 se preguntaba por `arte` sin explicarlo**: `u1-g09` v3 pregunta qué
+significa en `bihar arte`. Ficha nueva con los saludos, y el gancho de que
+`arte` es «hasta» y va **detrás**: `ikusi arte`, `gero arte`, `bihar arte`. Con
+eso, cualquier palabra de tiempo que aprenda después le sirve para despedirse.
+
+**Y dos desajustes de catalogación en la 9, en sentidos opuestos:**
+
+- `niri`, `zuri`, `hari`, `guri`, `zuei`, `haiei` estaban en el **9.2**, pero
+  **la ficha del 9.1 enseña la serie entera**. Movidos al 9.1. Esto es
+  justo lo que decía el informe de la sesión de terminal, que contaba 15 usos
+  de `zuri`/`niri` antes de su tema — la etiqueta estaba mal, no los
+  ejercicios.
+- `iruditzen zait`, `interesatzen zait` y `axola zait` estaban en el **9.1** y
+  los explica la ficha del **9.2**. Movidos al 9.2.
+
+El resto son listas que faltaban: las cuatro partes del cuerpo del 9.3, las
+siete prendas del 9.5, `antzerkia` en el 9.4, y una ficha en el 9.1 para
+`gustatu`, `janaria`, `edaria`, `gauza` y `guztia` — con el detalle de que
+`janaria` y `edaria` llevan dentro `jan` y `edan`.
+
+**Otra vez me colé con los ejemplos**: escribí `Dena ondo` (`dena` es del 10.5)
+y `Edaria hotza da` (`hotza` es del 6.4). Van cuatro esta semana. Es siempre lo
+mismo: `probar_adelantos.js` mira ejercicios, no los ejemplos de las fichas.
+
+|  | antes | ahora |
+|---|---|---|
+| u1 | 62% | **0%** |
+| u9 | 40% | **0%** |
+
+Quedan por mirar: **3.1** (10 palabras), **6.x** (20 repartidas) y **2.4** (8).
+
+### La casa: 22 palabras que nadie presentaba (29/08/2026)
+
+Ric: *«en la unidad de la casa no hay introducción a las partes de la casa,
+todo es vocabulario que introducimos en el diccionario y en los ejercicios»*.
+
+Medido: el **5.2 tenía 28 palabras y 22 sin mencionar en ninguna ficha**. Lo
+único que había era la ficha del `-gela` (las habitaciones) y `komuna`; todo lo
+demás —puerta, ventana, cama, armario, tejado, ascensor— entraba directo al
+diccionario.
+
+Ficha nueva, **«La casa entera, de la puerta al tejado»**, por zonas: lo que
+ves antes de entrar, y lo que hay dentro. Va **antes** de la del `-gela`, que
+así queda como el detalle de las habitaciones.
+
+Dos ganchos, los dos verificados:
+
+- **`-gailu`, la pieza de «aparato»**: `igo` (subir) + `-gailu` → `igogailua`;
+  `hotz` (frío) + `-gailu` → `hozkailua`. El [Elhuyar][eg] confirma que es un
+  sufijo productivo, y da `garbigailua` (lavadora) y `lehorgailua` (secador).
+  Y el ajuste de consonante enlaza con el `-ko`/`-go` de la segunda unidad,
+  que ya se explicaba como comodidad al hablar.
+- **Los préstamos**: `sofa`, `telebista`, `garajea`, `balkoia`, `dutxa` se
+  entienden a la primera. De veintitantas palabras, cinco vienen regaladas, y
+  decirlo quita agobio.
+
+**Lo que NO afirmo**: iba a explicar `sukaldea` como `su` (fuego) + `alde`
+(zona). Es la etimología que todo el mundo repite, pero **el diccionario no me
+la confirma**, así que fuera. A cambio da un dato que sí está: `sukalde` vale
+para la cocina **como habitación y como aparato**, el fogón. Eso es lo que
+entra en la ficha.
+
+[eg]: https://hiztegiak.elhuyar.eus/eu_es/igogailu
+
+Con esto la unidad 5 baja del **51% al 17%** de vocabulario sin presentar.
+Las que quedan peor son la **1** (62%, casi todo en el 1.2) y la **9** (40%,
+sobre todo el 9.1).
+
+### «Hamaika» también es «un montón» (29/08/2026)
+
+Ric: la explicación de que `hamaika` vale por «muchísimos» estaba **en un
+ejercicio y en ninguna ficha**. Y la había escrito yo el día anterior, al
+ampliar los ejercicios del 4.1: exactamente el defecto que llevamos toda la
+semana corrigiendo, cometido por mí.
+
+Verificado en el [Elhuyar][eh]: además de «once», *«muchos, infinidad,
+tantos»*, con ejemplos del tipo «se lo pedí infinidad de veces». Añadido a la
+ficha **«Del once al diecinueve»**, donde ya se explica que el 11 es la
+irregular del grupo.
+
+[eh]: https://hiztegiak.elhuyar.eus/eu_es/hamaika
+
+**Y me volvió a pasar con el ejemplo.** Escribí *«Hamaika aldiz esan dizut»*:
+`aldiz` no está enseñado y `esan dizut` es del **9.2**. En el 4.1 solo hay
+números e `izan`. Cambiado por **`hamaika lagun`**, que además aprovecha la
+regla que la propia ficha acaba de dar —detrás del número, el sustantivo va en
+singular y sin artículo, como en `hiru lagun`—.
+
+Es la tercera vez esta semana que me pasa lo mismo: escribo el ejemplo con
+gramática de unidades posteriores. `probar_adelantos.js` no lo caza porque
+solo mira **ejercicios**, no los ejemplos de las fichas.
+
+De paso, `u4-g52` v2 decía «Ojo con el parecido: astea es…», que depende de
+venir tras otra pregunta. Ahora es «¿Qué significa astea?».
+
+### Primeras 50 correcciones de la revisión (28/08/2026)
+
+Ric, con 536 de 1755 variantes revisadas en la app, pasó un informe con 50
+avisos. **Dos eran fallos de verdad**, no matices de redacción:
+
+- **`u4-g27` v3** preguntaba *«la oveja» se dice…* y daba por buena **`alaba`**,
+  que es «la hija». La corrección decía `ardia` — palabra que ni estaba entre
+  las opciones y que además es de la unidad 5. Arreglado cambiando el
+  enunciado a «la hija», que es lo que encaja con las cuatro opciones.
+- **`u1-g07` v0** tenía la pista de otro ejercicio: para `agur` (adiós) decía
+  *«Literalmente: gracias muchas»*, que es la de `eskerrik asko`.
+
+El resto, por familias:
+
+- **Enunciados que dependían del orden** (`u4-g12`, `u3-g07`, `u4-g19`): «¿Y
+  «erdalduna»?» solo se entiende si viene después de otra. Si algún día
+  barajamos las variantes, se rompen. Ahora son autónomos.
+- **Respuestas que la forma delataba**: en los emparejar, una sola pregunta
+  entre tres palabras se acierta sin saber nada. Repartidos.
+- **Distractores poco creíbles**: `medikua` frente a «(yo) soy» no es una
+  elección. Ahora frente a «la medicación» o «el hospital».
+- **Bilbocentrismo**: Bermeo, Durango y Gernika donde antes todo era Bilbao.
+- **`batua = el batua`** no traducía nada: ahora «el euskera estándar».
+
+Dos que investigué antes de tocar:
+
+- **`ere`**: Ric dudaba de «detrás de la palabra a la que acompaña». La regla
+  es correcta —el [Elhuyar][ee] confirma que va pospuesto a cualquier
+  elemento, no solo al pronombre, con ejemplos tras sustantivo y tras verbo—,
+  así que se conserva la pregunta y se reescribe el enunciado: «justo detrás
+  de lo que quiere subrayar».
+- **La jota de `jan`**: Ric avisa de que dentro de Bizkaia varía. Cierto, y la
+  ficha del 1.4 ya matiza que en Gipuzkoa suena distinto. Pregunta sustituida
+  por una que no va de pronunciación.
+
+[ee]: https://hiztegiak.elhuyar.eus/eu_es/ere
+
+**Y dos que me pillé a mí mismo aplicando el informe:**
+
+- Ric pidió `izeko` en un emparejar de familia. **`izeko` es la forma
+  bizkaina** de `izeba`, y vive en el bloque dialectal, no en el vocabulario.
+  En un ejercicio de batua va `izeba`.
+- Al rehacer `u3-g20` metí *«Nora zoaz?»*… y **`zoaz` es del 8.1**, cinco
+  unidades más tarde. Cambiado por «nongoa zara», que usa el `zara` del 2.3.
+
+Ese segundo es revelador: **`probar_adelantos.js` no lo cazó**, porque solo
+vigila construcciones gramaticales, no vocabulario. Es justo el hueco que
+señalaba el informe de la sesión de terminal.
+
+Una que no cambio, y por qué: `u5-g08` («Yo tengo dos hermanas») es de
+**ordenar palabras**, no de traducir. Ric pide que valga sin `nik`, pero ahí
+las palabras vienen dadas y hay que usarlas todas — no hay nada que aceptar.
+La equivalente de traducir, `u5-g09` v1, **sí** acepta las dos formas.
+
+### «Edonor» se preguntaba y no se enseñaba (28/08/2026)
+
+Ric, revisando ejercicios con la app: *«mira a ver si en el 3.1 incluyes
+edonor, edonon, edonora en el vocabulario, porque creo que no lo veo»*.
+
+No estaban. Y el caso era peor de lo que parecía:
+
+- `u3-g10` es el ejercicio de la **burbuja de bizkaiera** (zelan, nogaz,
+  zelango), pero **dos de sus cinco variantes preguntan por `edonor` y
+  `edonon`**.
+- Esas palabras **no son bizkaiera** — la explicación del propio ejercicio lo
+  decía: *«Es batua, no solo bizkaiera»*.
+- **No estaban en el vocabulario** de ningún tema.
+- **No las explicaba ninguna ficha.** La única mención en todo el curso era un
+  ejemplo suelto (`Edonor etor daiteke`) dentro de la burbuja de dialecto.
+
+Arreglado: ficha nueva en el 3.1, **«Edo-»: de la pregunta a "cualquiera"**,
+que sale directa de las interrogativas recién aprendidas; las tres palabras al
+vocabulario; y el ejemplo fuera de la burbuja, que no era su sitio.
+
+Y **enlaza con el 10.5**: la ficha de indefinidos que escribí ayer hacía
+`nor → norbait → inor ez`. El `edo-` es la tercera familia del mismo sistema,
+así que el 3.1 da la primera y el 10.5 cierra las otras dos, diciéndolo.
+
+Verificado en el Elhuyar: `edonor` es pronombre indefinido, «cualquiera,
+quienquiera»; `edonon`, «en cualquier parte». Existe la familia entera
+(`edonondik`, `edonongo`).
+
+Dos veces me colé escribiendo los ejemplos: primero con `sar daiteke` y
+`joan naiteke`, que son **formas potenciales** —justo lo que el 10.6 lista
+como pendiente para después del A1—, y luego con `Edonon dago`, que usa el
+`egon` del 5.1. En el 3.1 el alumno solo tiene `izan`. Se conserva un único
+ejemplo, el que ya tenía mp3 grabado, con un aviso de que el `daiteke` llega
+mucho después.
+
 ### Cobertura: que cada tema ejercite lo que enseña (28/08/2026)
 
 Ric corrigió el enfoque: *«olvida la regla de 2 anteriores… lo clave es que con

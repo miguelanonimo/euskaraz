@@ -103,7 +103,7 @@
     },
     {
       "titulo": "Cuando no hay objeto, el auxiliar es izan",
-      "cuerpo": "Si el verbo no lleva complemento directo, la segunda pieza no es <i>dut</i> sino <b>naiz</b>. Y entonces el sujeto <b>no lleva -k</b>.\n\nTres verbos nuevos para verlo, con su forma de diccionario delante:\n\n<i>etorri</i> (venir) → <b>Ni etortzen naiz.</b> — Yo vengo.\n<i>joan</i> (ir) → <b>Zu joaten zara.</b> — Tú vas.\n<i>egon</i> (estar, ya de la quinta unidad) → <b>Hura egoten da.</b> — Él suele estar.\n\n<i>joan</i> y <i>etorri</i> los verás a fondo en la octava unidad; aquí solo te hacen falta para ver la diferencia.\n\nCompara las dos familias:\n\n<b>Nik ogia jaten dut.</b> — hay objeto (el pan) → <i>dut</i>, y <i>nik</i>\n<b>Ni etxera joaten naiz.</b> — no hay objeto → <i>naiz</i>, y <i>ni</i>\n\nEsta división entre verbos con objeto y verbos sin objeto atraviesa toda la gramática vasca. Si te acostumbras ahora a preguntarte «¿esto lleva objeto?», el resto del camino es mucho más llano.",
+      "cuerpo": "Si el verbo no lleva complemento directo, la segunda pieza no es <i>dut</i> sino <b>naiz</b>. Y entonces el sujeto <b>no lleva -k</b>.\n\nTres verbos nuevos para verlo, con su forma de diccionario delante:\n\n<i>etorri</i> (venir) → <b>Ni etortzen naiz.</b> — Yo vengo.\n<i>joan</i> (ir) → <b>Zu joaten zara.</b> — Tú vas.\n<i>egon</i> (estar, ya de la quinta unidad) → <b>Hura egoten da.</b> — Él suele estar.\n\n<i>joan</i> y <i>etorri</i> los verás a fondo en la octava unidad; aquí solo te hacen falta para ver la diferencia.\n\nCompara las dos familias:\n\n<b>Nik ogia jaten dut.</b> — hay objeto (el pan) → <i>dut</i>, y <i>nik</i>\n<b>Ni etxera joaten naiz.</b> — no hay objeto → <i>naiz</i>, y <i>ni</i>\n\nEsta división entre verbos con objeto y verbos sin objeto atraviesa toda la gramática vasca. Si te acostumbras ahora a preguntarte «¿esto lleva objeto?», el resto del camino es mucho más llano.\n\nY dos verbos del tema que se construyen con <b>egin</b> (hacer) más un nombre, en vez de tener palabra propia:\n\n<b>lan egin</b> — trabajar (literalmente, «hacer trabajo»)\n<b>hitz egin</b> — hablar («hacer palabra»)\n\nComo llevan <i>egin</i> dentro, van con <i>ukan</i>: <b>lan egiten dut</b>.\n\nDos formas más que verás sueltas por todas partes, ya conjugadas:\n\n<b>edaten dut</b> — bebo\n<b>egiten dut</b> — hago\n\nY dos palabras que hacen falta enseguida:\n\n<b>nahi dut</b> — quiero. Se usa con la forma de diccionario delante: <i>ura nahi dut</i>.\n<b>arazoa</b> — el problema. <i>Ez dago arazorik</i>, no hay problema, es de las frases más útiles que existen.",
       "ejemplos": [
         {
           "eu": "Ni goizean etxetik joaten naiz.",
@@ -244,7 +244,7 @@
     {
       "subnivel": "7.3",
       "titulo": "Un día entero, de la cama a la cama",
-      "cuerpo": "Con el mecanismo que acabas de aprender puedes contar tu día. Estos son los verbos que hacen falta, en el orden en que pasan:\n\n<b>esnatu</b> — despertarse\n<b>jaiki</b> — levantarse (salir de la cama)\n<b>dutxatu</b> — ducharse\n<b>jantzi</b> — vestirse\n<b>gosaldu</b> — desayunar\n<b>bazkaldu</b> — comer al mediodía\n<b>afaldu</b> — cenar\n<b>lo egin</b> — dormir\n\nCasi todos son de los que no llevan objeto, así que el auxiliar es <i>izan</i>, no <i>ukan</i>: <b>jaikitzen naiz</b>, no «jaikitzen dut».",
+      "cuerpo": "Con el mecanismo que acabas de aprender puedes contar tu día. Estos son los verbos que hacen falta, en el orden en que pasan:\n\n<b>esnatu</b> — despertarse\n<b>jaiki</b> — levantarse (salir de la cama)\n<b>dutxatu</b> — ducharse\n<b>jantzi</b> — vestirse\n<b>gosaldu</b> — desayunar\n<b>bazkaldu</b> — comer al mediodía\n<b>afaldu</b> — cenar\n<b>lo egin</b> — dormir\n\nCasi todos son de los que no llevan objeto, así que el auxiliar es <i>izan</i>, no <i>ukan</i>: <b>jaikitzen naiz</b>, no «jaikitzen dut».\n\nY dos más de la casa, que caen en la misma rutina:\n\n<b>garbitu</b> — limpiar\n<b>etxeko lanak</b> — las tareas de casa\n\n<i>Etxeko lanak</i> es transparente si lo abres: <b>etxe</b> + <b>-ko</b> (de) + <b>lanak</b> (los trabajos). Los trabajos de la casa. Ojo, que en el colegio significa además los deberes.",
       "ejemplos": [
         {
           "eu": "Goizean jaikitzen naiz.",
@@ -293,7 +293,7 @@
     {
       "subnivel": "7.4",
       "titulo": "«Como» frente a «estoy comiendo»",
-      "cuerpo": "<b>Jaten dut</b> es lo que haces normalmente. Pero para lo que estás haciendo <i>ahora mismo</i>, el euskera tiene otra construcción:\n\n<b>jaten ari naiz</b> — estoy comiendo\n<b>ikasten ari naiz</b> — estoy estudiando\n\nLa receta es la misma de siempre —el verbo en <b>-t(z)en</b>— pero en vez de <i>dut</i> se pone <b>ari</b> más el verbo <i>izan</i>:\n\n<b>ari naiz</b> — yo estoy\n<b>ari zara</b> — tú estás\n<b>ari da</b> — él o ella está\n\nFíjate en un detalle que sorprende: aunque comas algo, aquí el auxiliar es <i>izan</i> (naiz), nunca <i>dut</i>.",
+      "cuerpo": "<b>Jaten dut</b> es lo que haces normalmente. Pero para lo que estás haciendo <i>ahora mismo</i>, el euskera tiene otra construcción:\n\n<b>jaten ari naiz</b> — estoy comiendo\n<b>ikasten ari naiz</b> — estoy estudiando\n\nLa receta es la misma de siempre —el verbo en <b>-t(z)en</b>— pero en vez de <i>dut</i> se pone <b>ari</b> más el verbo <i>izan</i>:\n\n<b>… ari naiz</b> — yo estoy …ndo\n<b>… ari zara</b> — tú estás …ndo\n<b>… ari da</b> — él o ella está …ndo\n\n<b>Y esto es importante: «ari» nunca va solo.</b> No es un verbo que signifique «estar» por su cuenta — necesita siempre delante el verbo en <i>-t(z)en</i>. <i>Ari naiz</i> a secas no dice «estoy en ello»: le falta la mitad. Lo que se dice es <b>jaten ari naiz</b>, <b>ikasten ari naiz</b>, <b>lanean ari naiz</b>.\n\nFíjate en un detalle que sorprende: aunque comas algo, aquí el auxiliar es <i>izan</i> (naiz), nunca <i>dut</i>.",
       "ejemplos": [
         {
           "eu": "Jaten ari naiz.",
@@ -579,6 +579,22 @@
       "subnivel": "7.1"
     },
     {
+      "eu": "liburua",
+      "es": "el libro",
+      "nota": null,
+      "audio": "unidades/u8/liburua.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "7.1"
+    },
+    {
+      "eu": "musika",
+      "es": "la música",
+      "nota": null,
+      "audio": "unidades/u8/musika.mp3",
+      "categoria": "sustantivo",
+      "subnivel": "7.1"
+    },
+    {
       "eu": "platanoa",
       "es": "el plátano",
       "nota": null,
@@ -756,22 +772,22 @@
     },
     {
       "eu": "ari naiz",
-      "es": "estoy (haciendo algo)",
-      "nota": "Para lo que pasa ahora mismo.",
+      "es": "estoy (con el verbo en -t(z)en delante)",
+      "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
       "categoria": "verbo",
       "subnivel": "7.4"
     },
     {
       "eu": "ari zara",
-      "es": "estás (haciendo algo)",
-      "nota": null,
+      "es": "estás (con el verbo en -t(z)en delante)",
+      "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
       "categoria": "verbo",
       "subnivel": "7.4"
     },
     {
       "eu": "ari da",
-      "es": "está (haciendo algo)",
-      "nota": null,
+      "es": "está (con el verbo en -t(z)en delante)",
+      "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
       "categoria": "verbo",
       "subnivel": "7.4"
     }
@@ -1185,6 +1201,22 @@
           "distractores": [
             "gazta"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Tú comes pan.",
+          "eu": "Zuk ogia jaten duzu.",
+          "palabras": [
+            "zuk",
+            "ogia",
+            "jaten",
+            "duzu"
+          ],
+          "distractores": [
+            "zu",
+            "dut"
+          ]
         }
       ],
       "subnivel": "7.1"
@@ -1469,6 +1501,23 @@
           ],
           "distractores": [
             "arazoa"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "No bebo vino.",
+          "eu": "Nik ez dut ardorik edaten.",
+          "palabras": [
+            "nik",
+            "ez",
+            "dut",
+            "ardorik",
+            "edaten"
+          ],
+          "distractores": [
+            "gazta",
+            "gosaria"
           ]
         }
       ],
@@ -2063,6 +2112,23 @@
             "gazta"
           ],
           "pista": "Una palabra corta."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Como queso y pan.",
+          "eu": "Gazta eta ogia jaten ditut.",
+          "palabras": [
+            "gazta",
+            "eta",
+            "ogia",
+            "jaten",
+            "ditut"
+          ],
+          "distractores": [
+            "jan",
+            "azukrea"
+          ]
         }
       ],
       "subnivel": "test"
@@ -2234,6 +2300,20 @@
           "distractores": [
             "afaria"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Por la mañana me levanto.",
+          "eu": "Goizean jaikitzen naiz.",
+          "palabras": [
+            "goizean",
+            "jaikitzen",
+            "naiz"
+          ],
+          "distractores": [
+            "afaria"
+          ]
         }
       ]
     },
@@ -2388,6 +2468,20 @@
           ],
           "correcta": 0,
           "explicacion": "Es lo habitual, no lo de ahora mismo."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Estoy comiendo.",
+          "eu": "Jaten ari naiz.",
+          "palabras": [
+            "jaten",
+            "ari",
+            "naiz"
+          ],
+          "distractores": [
+            "afaldu"
+          ]
         }
       ]
     },
@@ -3324,6 +3418,21 @@
           ],
           "correcta": 1,
           "explicacion": "Ditut para plural, también al negar."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "No como pan.",
+          "eu": "Ez dut ogirik jaten.",
+          "palabras": [
+            "ez",
+            "dut",
+            "ogirik",
+            "jaten"
+          ],
+          "distractores": [
+            "arroza"
+          ]
         }
       ]
     },
@@ -3386,6 +3495,20 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
+          "es": "No tengo dinero.",
+          "eu": "Ez dut dirurik.",
+          "palabras": [
+            "ez",
+            "dut",
+            "dirurik"
+          ],
+          "distractores": [
+            "gatza"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
           "es": "No tengo dinero.",
           "eu": "Ez dut dirurik.",
           "palabras": [
@@ -3548,6 +3671,20 @@
           ],
           "correcta": 1,
           "explicacion": "Jaten ari naiz."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Estoy estudiando.",
+          "eu": "Ikasten ari naiz.",
+          "palabras": [
+            "ikasten",
+            "ari",
+            "naiz"
+          ],
+          "distractores": [
+            "afaldu"
+          ]
         }
       ]
     },
@@ -3619,6 +3756,21 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
+          "es": "Estoy aprendiendo euskera.",
+          "eu": "Euskara ikasten ari naiz.",
+          "palabras": [
+            "euskara",
+            "ikasten",
+            "ari",
+            "naiz"
+          ],
+          "distractores": [
+            "barazkiak"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
           "es": "Estoy aprendiendo euskera.",
           "eu": "Euskara ikasten ari naiz.",
           "palabras": [

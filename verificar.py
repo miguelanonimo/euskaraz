@@ -23,7 +23,9 @@ errores, avisos = [], []
 ids, enunciados = {}, {}
 total_v = 0
 
-TIPOS = {"opcion", "pares", "orden", "traducir"}
+# «escribir» es la bolsa a la vista pero tecleando: mismos campos que
+# «orden», y por eso comparte sus comprobaciones.
+TIPOS = {"opcion", "pares", "orden", "traducir", "escribir"}
 
 # Claves admitidas en una entrada de vocabulario (o en una variante).
 # {eu,es,nota} son las del original y siguen siendo obligatorias en la
@@ -139,12 +141,19 @@ for ruta in idx["unidades"]:
 # Dónde se estrena cada palabra. Hace falta antes del bucle, porque la
 # comprobación de glosas solo mira las que se presentan por primera vez en
 # ese tema: las ya dadas no se reglosan cada vez que se mencionan.
+def subOrden(s_):
+    m_ = re.match(r"^(\d+)\.(\d+)$", str(s_ or ""))
+    return (int(m_.group(1)), int(m_.group(2))) if m_ else (99, 99)
+
 estrenoVocab = {}
 for _, u_ in unidades:
     for v_ in u_.get("vocabulario") or []:
-        w_ = (v_.get("eu") or u"").lower().strip()
-        if len(w_) > 2 and w_ not in estrenoVocab:
+        w_ = norm(v_.get("eu")).strip()
+        if len(w_) > 2 and (w_ not in estrenoVocab
+                            or subOrden(v_.get("subnivel")) < subOrden(estrenoVocab[w_])):
             estrenoVocab[w_] = v_.get("subnivel")
+# frases largas primero, para que «ikusi arte» no se trocee en dos
+clavesVocab = sorted(estrenoVocab, key=lambda x: -len(x))
 
 nums = [u["numero"] for _, u in unidades]
 if nums != sorted(nums):
@@ -259,6 +268,31 @@ for ruta, u in unidades:
                 avisos.append(u"%s: «%s» se estrena en el tema %s sin traducción "
                               u"a la vista" % (ruta, w, sub))
 
+    # Los EJEMPLOS de las fichas tienen que poder leerse con lo que el alumno
+    # ya tiene. Es donde más veces se me ha colado gramática de unidades
+    # posteriores («sar daiteke» en el 3.1, «esan dizut» en el 4.1). Se avisa
+    # solo cuando la palabra es de una UNIDAD posterior: dentro de la misma
+    # unidad, adelantarse un tema es corriente y no molesta.
+    for gr in u["gramatica"]:
+        aqui = subOrden(gr.get("subnivel"))
+        if aqui[0] == 99:
+            continue
+        for ejx in gr.get("ejemplos") or []:
+            if not isinstance(ejx, dict):
+                continue
+            t = u" " + norm(ejx.get("eu")) + u" "
+            for w in clavesVocab:
+                if not w:
+                    continue
+                pat = u"(^| )" + re.escape(w) + u"( |$)"
+                if re.search(pat, t):
+                    t = re.sub(pat, u" ", t)
+                    if subOrden(estrenoVocab.get(w))[0] > aqui[0]:
+                        avisos.append(u"%s: el ejemplo «%s» de «%s» usa «%s», "
+                                      u"que es de la unidad %s"
+                                      % (ruta, ejx.get("eu"), gr.get("titulo"), w,
+                                         subOrden(estrenoVocab.get(w))[0]))
+
     # Las burbujas de dialecto van AL FINAL de su tema: primero la forma
     # normativa entera, y de remate cómo suena por aquí. En medio cortan la
     # explicación en dos (criterio de Ric).
@@ -296,8 +330,13 @@ for ruta, u in unidades:
                 "%s: el id %s no empieza por %s- (grupo mudado de unidad)"
                 % (ruta, gexp["id"], u["id"]))
         vs = gexp["variantes"]
-        if len(vs) != 5:
-            errores.append("%s: %s tiene %d variantes" % (ruta, gexp["id"], len(vs)))
+        # Cinco es lo normal. Se admite una sexta cuando es del tipo
+        # «escribir», que es la variante productiva que se añade encima de
+        # las que ya había, no una de repuesto.
+        extra = [v for v in vs if v.get("tipo") == "escribir"]
+        if len(vs) - len(extra) != 5:
+            errores.append("%s: %s tiene %d variantes (%d sin contar las de escribir)"
+                           % (ruta, gexp["id"], len(vs), len(vs) - len(extra)))
         total_v += len(vs)
         for n, v in enumerate(vs):
             eid = "%s v%d" % (gexp["id"], n+1)
@@ -324,7 +363,10 @@ for ruta, u in unidades:
                 if len(set(p["eu"] for p in ps)) != len(ps): errores.append("%s: euskera repetido en las parejas" % eid)
                 if len(set(p["es"] for p in ps)) != len(ps): errores.append("%s: castellano repetido en las parejas" % eid)
                 clave = norm(" ".join(p["eu"] for p in ps))
-            elif t == "orden":
+            elif t == "orden" or t == "escribir":
+                # «escribir» usa los mismos campos que «orden» —es la misma
+                # frase, tecleada en vez de arrastrada—, así que pasa por las
+                # mismas comprobaciones.
                 # Los distractores son fichas que NO forman parte de la frase:
                 # si alguna se cuela en la solución, el ejercicio es irresoluble
                 # o tiene dos respuestas buenas.
