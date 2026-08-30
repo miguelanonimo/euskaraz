@@ -1251,6 +1251,21 @@
           "distractores": [
             "horiek"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "¿Cómo te llamas?",
+          "eu": "Nola duzu izena?",
+          "palabras": [
+            "nola",
+            "duzu",
+            "izena",
+            "?"
+          ],
+          "distractores": [
+            "hauek"
+          ]
         }
       ],
       "subnivel": "3.1"
@@ -2539,6 +2554,21 @@
             "da"
           ],
           "pista": "El demostrativo se pega al nombre, y el verbo cierra la frase.",
+          "distractores": [
+            "horiek"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Este amigo es profesor.",
+          "eu": "lagun hau irakaslea da",
+          "palabras": [
+            "lagun",
+            "hau",
+            "irakaslea",
+            "da"
+          ],
           "distractores": [
             "horiek"
           ]

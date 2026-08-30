@@ -950,6 +950,21 @@
             "bai",
             "mesedez"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Muy bien, muchas gracias.",
+          "eu": "Oso ondo, eskerrik asko.",
+          "palabras": [
+            "oso",
+            "ondo",
+            "eskerrik",
+            "asko"
+          ],
+          "distractores": [
+            "gabon"
+          ]
         }
       ],
       "subnivel": "1.2"
@@ -1272,6 +1287,20 @@
           ],
           "distractores": [
             "barkatu"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Regular, gracias.",
+          "eu": "Hala-hola, eskerrik asko.",
+          "palabras": [
+            "hala-hola",
+            "eskerrik",
+            "asko"
+          ],
+          "distractores": [
+            "ondo"
           ]
         }
       ],

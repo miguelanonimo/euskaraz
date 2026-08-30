@@ -1060,6 +1060,21 @@
           "distractores": [
             "eskuinera"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Voy a Bilbao en tren.",
+          "eu": "Ni trenez Bilbora noa.",
+          "palabras": [
+            "ni",
+            "trenez",
+            "Bilbora",
+            "noa"
+          ],
+          "distractores": [
+            "autobusa"
+          ]
         }
       ],
       "subnivel": "8.3"
@@ -1337,6 +1352,21 @@
           ],
           "distractores": [
             "kotxea"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Voy al mercado a pie.",
+          "eu": "Ni oinez merkatura noa.",
+          "palabras": [
+            "ni",
+            "oinez",
+            "merkatura",
+            "noa"
+          ],
+          "distractores": [
+            "nator"
           ]
         }
       ],
@@ -1706,6 +1736,20 @@
           ],
           "correcta": 1,
           "explicacion": "Joan nahi dut: primero el verbo."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "No puedo ir.",
+          "eu": "Ezin dut joan.",
+          "palabras": [
+            "ezin",
+            "dut",
+            "joan"
+          ],
+          "distractores": [
+            "dator"
+          ]
         }
       ]
     },
@@ -3025,6 +3069,21 @@
           ],
           "correcta": 1,
           "explicacion": "Indicaciones, recetas, avisos."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Recto, y luego a la izquierda.",
+          "eu": "Zuzen, eta gero ezkerrera.",
+          "palabras": [
+            "zuzen",
+            "eta",
+            "gero",
+            "ezkerrera"
+          ],
+          "distractores": [
+            "kotxea"
+          ]
         }
       ]
     },

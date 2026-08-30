@@ -2412,6 +2412,20 @@
           "distractores": [
             "idazlea"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Yo soy de Bilbao.",
+          "eu": "Ni Bilbokoa naiz.",
+          "palabras": [
+            "ni",
+            "Bilbokoa",
+            "naiz"
+          ],
+          "distractores": [
+            "zarete"
+          ]
         }
       ],
       "subnivel": "2.4"

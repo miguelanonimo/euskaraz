@@ -1480,6 +1480,20 @@
           "distractores": [
             "aitona"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Tengo veinte años.",
+          "eu": "Hogei urte ditut.",
+          "palabras": [
+            "hogei",
+            "urte",
+            "ditut"
+          ],
+          "distractores": [
+            "osaba"
+          ]
         }
       ],
       "subnivel": "4.4"
@@ -1560,6 +1574,21 @@
           ],
           "distractores": [
             "hamasei"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Yo tengo dos hermanas.",
+          "eu": "Nik bi ahizpa ditut.",
+          "palabras": [
+            "nik",
+            "bi",
+            "ahizpa",
+            "ditut"
+          ],
+          "distractores": [
+            "bosgarrena"
           ]
         }
       ],
@@ -2270,6 +2299,23 @@
           "distractores": [
             "dirua"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Mi abuelo vive en Bilbao.",
+          "eu": "Nire aitona Bilbon bizi da.",
+          "palabras": [
+            "nire",
+            "aitona",
+            "Bilbon",
+            "bizi",
+            "da"
+          ],
+          "distractores": [
+            "lehengusua",
+            "hirurogei"
+          ]
         }
       ],
       "subnivel": "test"
@@ -2591,6 +2637,19 @@
           ],
           "correcta": 0,
           "explicacion": "Un coche, un perro, dinero, tiempo."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Tengo dinero.",
+          "eu": "Dirua daukat.",
+          "palabras": [
+            "dirua",
+            "daukat"
+          ],
+          "distractores": [
+            "seigarrena"
+          ]
         }
       ]
     },

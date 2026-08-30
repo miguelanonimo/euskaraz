@@ -1017,6 +1017,12 @@ body.silencioso .pair__play{ display: none; }
   background: var(--mal-fondo); font-weight: 600;
 }
 .slot[readonly]{ cursor: default; }
+/* El «?» y demás signos sueltos: se ven, pero no son hueco. */
+.slot--fijo{
+  border-color: transparent; background: none;
+  min-width: 0; padding-left: 0; padding-right: 0;
+  color: var(--tinta-45); display: inline-flex; align-items: center;
+}
 .chip--ayuda{ cursor: default; }
 .chip--ayuda:active{ background: none; color: inherit; }
 .bank--ayuda .chip.is-used{ opacity: .2; text-decoration: line-through; }

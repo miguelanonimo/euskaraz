@@ -1353,6 +1353,21 @@
           "distractores": [
             "zenuen"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Ayer fui a Bilbao.",
+          "eu": "Atzo Bilbora joan nintzen.",
+          "palabras": [
+            "atzo",
+            "Bilbora",
+            "joan",
+            "nintzen"
+          ],
+          "distractores": [
+            "gainera"
+          ]
         }
       ],
       "subnivel": "10.1"
@@ -1635,6 +1650,21 @@
           ],
           "distractores": [
             "txarragoa"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Leí los libros.",
+          "eu": "Nik liburuak irakurri nituen.",
+          "palabras": [
+            "nik",
+            "liburuak",
+            "irakurri",
+            "nituen"
+          ],
+          "distractores": [
+            "norbait"
           ]
         }
       ],
@@ -2263,6 +2293,23 @@
             "aditza",
             "beraz"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Bilbao es más grande que Gernika.",
+          "eu": "Bilbo Gernika baino handiagoa da.",
+          "palabras": [
+            "Bilbo",
+            "Gernika",
+            "baino",
+            "handiagoa",
+            "da"
+          ],
+          "distractores": [
+            "bezain",
+            "al"
+          ]
         }
       ],
       "subnivel": "10.5"
@@ -2548,6 +2595,23 @@
           "distractores": [
             "zenuen",
             "nonbait"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Es difícil, pero me gusta.",
+          "eu": "Zaila da, baina gustatzen zait.",
+          "palabras": [
+            "zaila",
+            "da",
+            "baina",
+            "gustatzen",
+            "zait"
+          ],
+          "distractores": [
+            "gutxiago",
+            "aurten"
           ]
         }
       ],
@@ -2918,6 +2982,21 @@
           ],
           "correcta": 1,
           "explicacion": "De «etorri», venir: lo que está por venir."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Mañana iré a Bilbao.",
+          "eu": "Bihar Bilbora joango naiz.",
+          "palabras": [
+            "bihar",
+            "Bilbora",
+            "joango",
+            "naiz"
+          ],
+          "distractores": [
+            "nago"
+          ]
         }
       ]
     },
@@ -4319,6 +4398,23 @@
           ],
           "correcta": 1,
           "explicacion": "De «etorri»: lo que está por venir."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "¿Qué vas a hacer mañana?",
+          "eu": "Zer egingo duzu bihar?",
+          "palabras": [
+            "zer",
+            "egingo",
+            "duzu",
+            "bihar",
+            "?"
+          ],
+          "distractores": [
+            "norbait",
+            "txikitan"
+          ]
         }
       ]
     },

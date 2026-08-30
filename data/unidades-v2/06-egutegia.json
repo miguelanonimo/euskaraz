@@ -1237,6 +1237,20 @@
           "distractores": [
             "jaieguna"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Hoy es lunes.",
+          "eu": "Gaur astelehena da.",
+          "palabras": [
+            "gaur",
+            "astelehena",
+            "da"
+          ],
+          "distractores": [
+            "larunbata"
+          ]
         }
       ],
       "subnivel": "6.2"
@@ -1511,6 +1525,21 @@
           ],
           "distractores": [
             "urtarrila"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Son las siete y media.",
+          "eu": "Zazpi eta erdiak dira.",
+          "palabras": [
+            "zazpi",
+            "eta",
+            "erdiak",
+            "dira"
+          ],
+          "distractores": [
+            "udaberria"
           ]
         }
       ],
@@ -2117,6 +2146,21 @@
             "urtea"
           ],
           "pista": "Una palabra, la misma que ya conoces."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Mi cumpleaños es en mayo.",
+          "eu": "Nire urtebetetzea maiatzean da.",
+          "palabras": [
+            "nire",
+            "urtebetetzea",
+            "maiatzean",
+            "da"
+          ],
+          "distractores": [
+            "hodeia"
+          ]
         }
       ],
       "subnivel": "test"
@@ -2335,6 +2379,21 @@
             "udaberria"
           ],
           "pista": "Empieza como «verano»."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "En primavera llueve.",
+          "eu": "Udaberrian euria egiten du.",
+          "palabras": [
+            "udaberrian",
+            "euria",
+            "egiten",
+            "du"
+          ],
+          "distractores": [
+            "asteazkena"
+          ]
         }
       ],
       "subnivel": "6.4"

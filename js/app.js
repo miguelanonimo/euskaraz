@@ -2492,6 +2492,8 @@
      reconocerla, y los formatos híbridos —algo de andamio, pero
      produciendo— fueron los más eficaces del metaanálisis. */
 
+  var SOLO_SIGNO = /^[\u00bf?\u00a1!.,;:]+$/;
+
   function pintarEscribir(ej) {
     var esperadas = ej.palabras.slice();
 
@@ -2500,13 +2502,20 @@
       '<h2 class="q__prompt q__prompt--es">' + esc(ej.es) + '</h2>' +
       '<div class="slots" id="slots">' +
       esperadas.map(function (p, i) {
+        /* Los signos sueltos —el «?» que va aparte desde que Ric pidió que
+           no delatara la forma— se pintan fijos, no como hueco: teclear un
+           interrogante no enseña nada. */
+        if (SOLO_SIGNO.test(p)) {
+          return '<span class="slot slot--fijo" data-i="' + i + '">' + esc(p) + '</span>';
+        }
         return '<input class="slot" type="text" data-i="' + i +
                '" size="' + Math.max(p.length, 3) + '" autocomplete="off" ' +
                'autocorrect="off" autocapitalize="off" spellcheck="false" ' +
                'aria-label="palabra ' + (i + 1) + '">';
       }).join('') + '</div>' +
       '<div class="bank bank--ayuda" id="bank">' +
-      barajar(esperadas.concat(ej.distractores || [])).map(function (p) {
+      barajar(esperadas.filter(function (p) { return !SOLO_SIGNO.test(p); })
+                       .concat(ej.distractores || [])).map(function (p) {
         return '<span class="chip chip--ayuda" data-n="' + esc(normalizar(p)) + '">' + esc(p) + '</span>';
       }).join('') + '</div>';
 
@@ -2523,6 +2532,7 @@
     function refrescar() {
       var pendientes = 0;
       Array.prototype.forEach.call(slots.children, function (s) {
+        if (s.classList.contains('slot--fijo')) return;
         var resuelto = s.classList.contains('is-ok') || s.classList.contains('is-mal');
         if (!resuelto && !s.value.trim()) pendientes++;
       });
@@ -2545,14 +2555,14 @@
       s.classList.add('is-ok');
       s.readOnly = true;
       apagarFicha(esperadas[i]);
-      var sig = slots.querySelector('.slot:not(.is-ok):not(.is-mal)');
+      var sig = slots.querySelector('input.slot:not(.is-ok):not(.is-mal)');
       if (sig) sig.focus();
     }
 
     function cerrar(s, i) {
       s.classList.add('is-mal');
       s.readOnly = true;
-      var sig = slots.querySelector('.slot:not(.is-ok):not(.is-mal)');
+      var sig = slots.querySelector('input.slot:not(.is-ok):not(.is-mal)');
       if (sig) sig.focus();
     }
 
@@ -2584,12 +2594,12 @@
       if (e.key !== 'Enter') return;
       e.preventDefault();
       evaluar(s, true);
-      var sig = slots.querySelector('.slot:not(.is-ok):not(.is-mal)');
+      var sig = slots.querySelector('input.slot:not(.is-ok):not(.is-mal)');
       if (sig && sig !== s) { sig.focus(); return; }
       if (!el.btnCheck.disabled) el.btnCheck.click();
     });
 
-    var primero = slots.querySelector('.slot');
+    var primero = slots.querySelector('input.slot');
     if (primero) primero.focus();
   }
 
@@ -2598,9 +2608,12 @@
        rojo por agotar intentos es un fallo aunque el texto acabe siendo el
        correcto. */
     var celdas = Array.prototype.slice.call($('slots').children);
-    var dado = celdas.map(function (s) { return s.value; }).join(' ');
-    var ok = celdas.every(function (s) { return s.classList.contains('is-ok'); }) &&
-             normalizar(dado) === normalizar(ej.palabras.join(' '));
+    var dado = celdas.map(function (s) {
+      return s.classList.contains('slot--fijo') ? s.textContent : s.value;
+    }).join(' ');
+    var ok = celdas.every(function (s) {
+      return s.classList.contains('slot--fijo') || s.classList.contains('is-ok');
+    }) && normalizar(dado) === normalizar(ej.palabras.join(' '));
     Array.prototype.forEach.call($('slots').children, function (s) { s.blur(); });
     return {
       ok: ok,

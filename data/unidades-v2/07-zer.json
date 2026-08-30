@@ -1502,6 +1502,23 @@
           "distractores": [
             "arazoa"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "No bebo vino.",
+          "eu": "Nik ez dut ardorik edaten.",
+          "palabras": [
+            "nik",
+            "ez",
+            "dut",
+            "ardorik",
+            "edaten"
+          ],
+          "distractores": [
+            "gazta",
+            "gosaria"
+          ]
         }
       ],
       "subnivel": "7.2"
@@ -2095,6 +2112,23 @@
             "gazta"
           ],
           "pista": "Una palabra corta."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Como queso y pan.",
+          "eu": "Gazta eta ogia jaten ditut.",
+          "palabras": [
+            "gazta",
+            "eta",
+            "ogia",
+            "jaten",
+            "ditut"
+          ],
+          "distractores": [
+            "jan",
+            "azukrea"
+          ]
         }
       ],
       "subnivel": "test"
@@ -2266,6 +2300,20 @@
           "distractores": [
             "afaria"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Por la mañana me levanto.",
+          "eu": "Goizean jaikitzen naiz.",
+          "palabras": [
+            "goizean",
+            "jaikitzen",
+            "naiz"
+          ],
+          "distractores": [
+            "afaria"
+          ]
         }
       ]
     },
@@ -2420,6 +2468,20 @@
           ],
           "correcta": 0,
           "explicacion": "Es lo habitual, no lo de ahora mismo."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Estoy comiendo.",
+          "eu": "Jaten ari naiz.",
+          "palabras": [
+            "jaten",
+            "ari",
+            "naiz"
+          ],
+          "distractores": [
+            "afaldu"
+          ]
         }
       ]
     },
@@ -3356,6 +3418,21 @@
           ],
           "correcta": 1,
           "explicacion": "Ditut para plural, también al negar."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "No como pan.",
+          "eu": "Ez dut ogirik jaten.",
+          "palabras": [
+            "ez",
+            "dut",
+            "ogirik",
+            "jaten"
+          ],
+          "distractores": [
+            "arroza"
+          ]
         }
       ]
     },
@@ -3418,6 +3495,20 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
+          "es": "No tengo dinero.",
+          "eu": "Ez dut dirurik.",
+          "palabras": [
+            "ez",
+            "dut",
+            "dirurik"
+          ],
+          "distractores": [
+            "gatza"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
           "es": "No tengo dinero.",
           "eu": "Ez dut dirurik.",
           "palabras": [
@@ -3580,6 +3671,20 @@
           ],
           "correcta": 1,
           "explicacion": "Jaten ari naiz."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Estoy estudiando.",
+          "eu": "Ikasten ari naiz.",
+          "palabras": [
+            "ikasten",
+            "ari",
+            "naiz"
+          ],
+          "distractores": [
+            "afaldu"
+          ]
         }
       ]
     },
@@ -3651,6 +3756,21 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
+          "es": "Estoy aprendiendo euskera.",
+          "eu": "Euskara ikasten ari naiz.",
+          "palabras": [
+            "euskara",
+            "ikasten",
+            "ari",
+            "naiz"
+          ],
+          "distractores": [
+            "barazkiak"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
           "es": "Estoy aprendiendo euskera.",
           "eu": "Euskara ikasten ari naiz.",
           "palabras": [

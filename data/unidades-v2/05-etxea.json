@@ -1155,6 +1155,20 @@
           "distractores": [
             "aulkia"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Yo estoy en casa.",
+          "eu": "Ni etxean nago.",
+          "palabras": [
+            "ni",
+            "etxean",
+            "nago"
+          ],
+          "distractores": [
+            "zaldia"
+          ]
         }
       ],
       "subnivel": "5.1"
@@ -1547,6 +1561,21 @@
           ],
           "distractores": [
             "argia"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Mi casa es pequeña.",
+          "eu": "Nire etxea txikia da.",
+          "palabras": [
+            "nire",
+            "etxea",
+            "txikia",
+            "da"
+          ],
+          "distractores": [
+            "mahaia"
           ]
         }
       ],
@@ -2215,6 +2244,20 @@
             "etxe gorria"
           ],
           "pista": "Dos palabras."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "En el salón hay una televisión.",
+          "eu": "Egongelan telebista dago.",
+          "palabras": [
+            "egongelan",
+            "telebista",
+            "dago"
+          ],
+          "distractores": [
+            "hemen"
+          ]
         }
       ],
       "subnivel": "test"
@@ -2884,6 +2927,20 @@
           ],
           "correcta": 1,
           "explicacion": "Batzuk es el plural indefinido."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "una mesa blanca",
+          "eu": "mahai zuri bat",
+          "palabras": [
+            "mahai",
+            "zuri",
+            "bat"
+          ],
+          "distractores": [
+            "laranja"
+          ]
         }
       ]
     },

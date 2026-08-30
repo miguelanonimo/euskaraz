@@ -1944,6 +1944,31 @@ Probado en el navegador **intentando hacer trampa a propósito**: tecleé «gu»
 luego «zu», y al tercer intento la correcta — el hueco ya estaba cerrado y el
 ejercicio salió «No exactamente» con la solución delante.
 
+### El formato «escribir», en todo el curso (30/08/2026)
+
+Ric lo probó y dio el visto bueno, con el peso en 3. Extendido a **los 40
+ejercicios que tienen variante de ordenar**, todos con una variante `escribir`
+encima, sin quitar ninguna.
+
+La frase de cada uno se toma de una de sus propias variantes de ordenar,
+prefiriendo las de 2 a 5 huecos: teclear siete palabras cansa y deja de medir
+lo que quiere medir.
+
+**Los signos sueltos se pintan fijos.** Tres ejercicios se quedaban fuera
+porque llevan el `?` como ficha aparte —de cuando Ric pidió que el signo no
+delatara la forma—, y poner un hueco para teclear un interrogante no enseña
+nada. Ahora se dibujan como texto, no cuentan para la corrección y no aparecen
+en la bolsa. Con eso entran los tres.
+
+**Por qué añadir y no reemplazar** (era la duda de Ric): los de ordenar no
+sobran. Enseñan **orden de palabras**, que en euskera no es menor —el salto del
+auxiliar en la negación, el verbo al final—. Lo que no enseñan es a producir.
+Son cosas distintas. Y reemplazarlos sería tirar ejercicios ya revisados por
+Ric para meter otros sin revisar.
+
+Con el peso en 3, una variante `escribir` sale en el **37%** de las
+apariciones de su grupo, y en el **50%** en el test de fin de unidad.
+
 ### El «-a»/«-ak», misma familia de riesgo (30/08/2026)
 
 La nota mete la oposición `-a`/`-ak` en el mismo saco que el ergativo, y con

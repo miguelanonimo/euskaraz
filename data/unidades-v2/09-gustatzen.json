@@ -1182,6 +1182,21 @@
           "distractores": [
             "erantzun"
           ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Me gusta el euskera.",
+          "eu": "Niri euskara gustatzen zait.",
+          "palabras": [
+            "niri",
+            "euskara",
+            "gustatzen",
+            "zait"
+          ],
+          "distractores": [
+            "sudurra"
+          ]
         }
       ],
       "subnivel": "9.1"
@@ -1464,6 +1479,21 @@
           ],
           "distractores": [
             "erosi"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "A nosotros nos gusta el monte.",
+          "eu": "Guri mendia gustatzen zaigu.",
+          "palabras": [
+            "guri",
+            "mendia",
+            "gustatzen",
+            "zaigu"
+          ],
+          "distractores": [
+            "saldu"
           ]
         }
       ],
