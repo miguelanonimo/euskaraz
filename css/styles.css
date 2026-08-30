@@ -1009,6 +1009,14 @@ body.silencioso .pair__play{ display: none; }
   border-color: var(--bien-txt); color: var(--bien-txt);
   background: var(--bien-10); font-weight: 600;
 }
+/* Un intento gastado: el borde avisa, pero aún se puede corregir. */
+.slot.is-tocado{ border-color: var(--acento); }
+/* Dos intentos y se cierra: ya no se puede tocar, y cuenta como fallo. */
+.slot.is-mal{
+  border-color: var(--mal); color: var(--mal);
+  background: var(--mal-fondo); font-weight: 600;
+}
+.slot[readonly]{ cursor: default; }
 .chip--ayuda{ cursor: default; }
 .chip--ayuda:active{ background: none; color: inherit; }
 .bank--ayuda .chip.is-used{ opacity: .2; text-decoration: line-through; }

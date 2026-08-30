@@ -1917,6 +1917,33 @@ arreglos:
 Medido sobre los datos reales: de **1,9% a 21%** por ejercicio, es decir de
 0,2 a **2,6 apariciones** en doce ejercicios.
 
+### Dos intentos por hueco, y se cierra (30/08/2026)
+
+Ric, probando el formato nuevo: *«si fallas dos veces, el espacio se debería
+poner rojo y bloquearse, porque ahora escribes todas las opciones hasta que te
+da bien, y entonces el ejercicio siempre cuenta como hecho OK»*.
+
+Fallo de verdad, y de los que importan: no solo hacía el ejercicio inútil, sino
+que **le mentía al calendario de repaso**, que registraba un acierto donde solo
+hubo tanteo. Es justo lo que la nota de investigación dice que hay que evitar —
+la pista o el atajo barato sustituyendo al intento.
+
+**Dos intentos por hueco.** Al segundo fallo se cierra en rojo, deja de
+aceptar texto y el ejercicio cuenta como fallado aunque los demás huecos estén
+en verde.
+
+El detalle que decide si esto funciona o molesta: **un intento se cuenta al
+SALIR del hueco** —Tab, Enter, o pinchar fuera—, no en cada tecla. Si se
+contara por tecla, escribir «lagunak» gastaría los dos intentos antes de llegar
+a la k.
+
+Hay un estado intermedio, `is-tocado`: tras el primer fallo el borde avisa en
+rojo pero el hueco sigue abierto.
+
+Probado en el navegador **intentando hacer trampa a propósito**: tecleé «gu»,
+luego «zu», y al tercer intento la correcta — el hueco ya estaba cerrado y el
+ejercicio salió «No exactamente» con la solución delante.
+
 ### El «-a»/«-ak», misma familia de riesgo (30/08/2026)
 
 La nota mete la oposición `-a`/`-ak` en el mismo saco que el ergativo, y con

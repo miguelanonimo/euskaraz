@@ -2521,31 +2521,71 @@
       if (usadas.length) usadas[usadas.length - 1].classList.remove('is-used');
     }
     function refrescar() {
-      var llenos = 0;
+      var pendientes = 0;
       Array.prototype.forEach.call(slots.children, function (s) {
-        if (s.value.trim()) llenos++;
+        var resuelto = s.classList.contains('is-ok') || s.classList.contains('is-mal');
+        if (!resuelto && !s.value.trim()) pendientes++;
       });
-      el.btnCheck.disabled = llenos < esperadas.length;
+      el.btnCheck.disabled = pendientes > 0;
+    }
+
+    /* Dos intentos por hueco y se cierra en rojo.
+
+       Sin esto el ejercicio no mide nada: se pueden ir tecleando palabras
+       hasta que una se pone verde, y entonces siempre sale bien — lo que
+       además le miente al calendario de repaso, que registra un acierto
+       donde hubo tanteo. Lo vio Ric probándolo.
+
+       Un intento se cuenta al SALIR del hueco (al pulsar Tab o Enter, o
+       al pinchar fuera), no en cada tecla: si no, escribir «lagunak»
+       gastaría los dos intentos antes de llegar a la k. */
+    var TOPE = 2;
+
+    function acertar(s, i) {
+      s.classList.add('is-ok');
+      s.readOnly = true;
+      apagarFicha(esperadas[i]);
+      var sig = slots.querySelector('.slot:not(.is-ok):not(.is-mal)');
+      if (sig) sig.focus();
+    }
+
+    function cerrar(s, i) {
+      s.classList.add('is-mal');
+      s.readOnly = true;
+      var sig = slots.querySelector('.slot:not(.is-ok):not(.is-mal)');
+      if (sig) sig.focus();
+    }
+
+    function evaluar(s, definitivo) {
+      if (estado.resuelto || s.classList.contains('is-ok') || s.classList.contains('is-mal')) return;
+      var i = +s.dataset.i;
+      if (normalizar(s.value) === normalizar(esperadas[i])) { acertar(s, i); refrescar(); return; }
+      if (!definitivo || !s.value.trim()) return;
+      var fallos = (+s.dataset.fallos || 0) + 1;
+      s.dataset.fallos = fallos;
+      if (fallos >= TOPE) cerrar(s, i);
+      else s.classList.add('is-tocado');
+      refrescar();
     }
 
     slots.addEventListener('input', function (e) {
       var s = e.target;
-      if (!s.classList.contains('slot') || estado.resuelto) return;
-      var i = +s.dataset.i, bien = normalizar(s.value) === normalizar(esperadas[i]);
-      if (bien && !s.classList.contains('is-ok')) {
-        s.classList.add('is-ok');
-        apagarFicha(esperadas[i]);
-        var sig = slots.querySelector('.slot:not(.is-ok)');
-        if (sig) sig.focus();
-      } else if (!bien && s.classList.contains('is-ok')) {
-        s.classList.remove('is-ok');
-        encenderFicha(esperadas[i]);
-      }
-      refrescar();
+      if (!s.classList.contains('slot')) return;
+      s.classList.remove('is-tocado');
+      evaluar(s, false);
+    });
+    slots.addEventListener('focusout', function (e) {
+      if (e.target.classList.contains('slot')) evaluar(e.target, true);
     });
     slots.addEventListener('keydown', function (e) {
+      var s = e.target;
+      if (!s.classList.contains('slot')) return;
+      if (e.key === 'Tab') { evaluar(s, true); return; }   // el foco lo mueve el navegador
       if (e.key !== 'Enter') return;
       e.preventDefault();
+      evaluar(s, true);
+      var sig = slots.querySelector('.slot:not(.is-ok):not(.is-mal)');
+      if (sig && sig !== s) { sig.focus(); return; }
       if (!el.btnCheck.disabled) el.btnCheck.click();
     });
 
@@ -2554,8 +2594,13 @@
   }
 
   function corregirEscribir(ej) {
-    var dado = Array.prototype.map.call($('slots').children, function (s) { return s.value; }).join(' ');
-    var ok = normalizar(dado) === normalizar(ej.palabras.join(' '));
+    /* Cuenta bien solo si los huecos están todos en verde. Uno cerrado en
+       rojo por agotar intentos es un fallo aunque el texto acabe siendo el
+       correcto. */
+    var celdas = Array.prototype.slice.call($('slots').children);
+    var dado = celdas.map(function (s) { return s.value; }).join(' ');
+    var ok = celdas.every(function (s) { return s.classList.contains('is-ok'); }) &&
+             normalizar(dado) === normalizar(ej.palabras.join(' '));
     Array.prototype.forEach.call($('slots').children, function (s) { s.blur(); });
     return {
       ok: ok,
