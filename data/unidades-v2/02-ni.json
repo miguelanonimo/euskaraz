@@ -214,7 +214,7 @@
     },
     {
       "titulo": "El artículo va pegado al final: -a",
-      "cuerpo": "Ya lo has visto en los posesivos, pero ahora toca decirlo del todo. El euskera no tiene «el» ni «la» delante. Añade <b>-a</b> al final de la palabra:\n\n<b>irakasle</b> (profesor) → <b>irakaslea</b> (el profesor)\n<b>etxe</b> (casa) → <b>etxea</b> (la casa)\n<b>mediku</b> (médico) → <b>medikua</b> (el médico)\n\nEl plural es <b>-ak</b>: <i>irakasleak</i>, <i>etxeak</i>.\n\nSi la palabra ya termina en -a, no se dobla: <i>neska</i> (chica) → <i>neska</i> (la chica).\n\nOjo con esto: a diferencia del castellano, en euskera las profesiones <b>sí</b> llevan artículo. Se dice <i>Ni irakasle<b>a</b> naiz</i>, no «Ni irakasle naiz».\n\nY una curiosidad, ya que estamos con esa <b>-a</b>. El euskera tiene variantes muy locales, de pueblo a pueblo. En <b>Gernika</b> y por zonas de Busturialdea, esa <i>-a</i> final se oye a menudo como <b>-ie</b>: donde aquí escribimos <i>etxea</i>, allí suena <b>etxie</b>.\n\nNo hace falta que lo aprendas ni lo uses —esto es batua, y <i>etxea</i> es lo correcto—, pero si algún día lo oyes, ya sabes que no te estás equivocando de palabra.",
+      "cuerpo": "Ya lo has visto en los posesivos, pero ahora toca decirlo del todo. El euskera no tiene «el» ni «la» delante. Añade <b>-a</b> al final de la palabra:\n\n<b>irakasle</b> (profesor) → <b>irakaslea</b> (el profesor)\n<b>etxe</b> (casa) → <b>etxea</b> (la casa)\n<b>mediku</b> (médico) → <b>medikua</b> (el médico)\n\nEl plural es <b>-ak</b>:\n\n<i>irakasle</i> → <b>irakaslea</b> (el profesor) → <b>irakasleak</b> (los profesores)\n<i>lagun</i> → <b>laguna</b> (el amigo) → <b>lagunak</b> (los amigos)\n\n<b>Una consonante que decide el número</b>\n\nEntre <i>irakaslea</i> y <i>irakasleak</i> hay una <b>-k</b> de diferencia, y esa -k es toda la información del plural. Es poca cosa para tanto trabajo, y por dos motivos se escapa con facilidad:\n\napenas se oye al final de una palabra hablada rápido, y\nel verbo ya te ha dicho si es uno o son varios —<i>da</i> frente a <i>dira</i>—, así que no la necesitas para entender.\n\nJusto por eso hay que fijarse en ella a propósito. La regla es que <b>el artículo y el verbo tienen que ir de acuerdo</b>:\n\n<b>Ni ikaslea naiz.</b> — Soy estudiante. (uno, y <i>naiz</i>)\n<b>Gu ikasleak gara.</b> — Somos estudiantes. (varios, y <i>gara</i>)\n\nSi el verbo va en plural y el nombre en singular, algo falla. Y al revés.\n\nSi la palabra ya termina en -a, no se dobla: <i>neska</i> (chica) → <i>neska</i> (la chica).\n\nOjo con esto: a diferencia del castellano, en euskera las profesiones <b>sí</b> llevan artículo. Se dice <i>Ni irakasle<b>a</b> naiz</i>, no «Ni irakasle naiz».\n\nY una curiosidad, ya que estamos con esa <b>-a</b>. El euskera tiene variantes muy locales, de pueblo a pueblo. En <b>Gernika</b> y por zonas de Busturialdea, esa <i>-a</i> final se oye a menudo como <b>-ie</b>: donde aquí escribimos <i>etxea</i>, allí suena <b>etxie</b>.\n\nNo hace falta que lo aprendas ni lo uses —esto es batua, y <i>etxea</i> es lo correcto—, pero si algún día lo oyes, ya sabes que no te estás equivocando de palabra.",
       "ejemplos": [
         {
           "eu": "ikaslea",
@@ -2792,6 +2792,133 @@
           "explicacion": "naiz = (yo) soy."
         }
       ]
+    },
+    {
+      "id": "u2-g60",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Ni ikaslea naiz.",
+            "Ni ikasleak naiz.",
+            "Ni ikasle naiz.",
+            "Nik ikaslea naiz."
+          ],
+          "correcta": 0,
+          "explicacion": "Uno solo: artículo en singular, «-a», y el verbo «naiz»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Gu ikasleak gara.",
+            "Gu ikaslea gara.",
+            "Gu ikasle gara.",
+            "Guk ikasleak gara."
+          ],
+          "correcta": 0,
+          "explicacion": "Varios: artículo en plural, «-ak», y el verbo «gara». Los dos de acuerdo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Haiek medikuak dira.",
+            "Haiek medikua dira.",
+            "Haiek mediku dira.",
+            "Haiek medikuak da."
+          ],
+          "correcta": 0,
+          "explicacion": "«Dira» es plural, así que el nombre también: «medikuak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Zu irakaslea zara.",
+            "Zu irakasleak zara.",
+            "Zuk irakaslea zara.",
+            "Zu irakasle zara."
+          ],
+          "correcta": 0,
+          "explicacion": "«Zu» es una persona: «irakaslea», en singular."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Lagunak gara» significa…",
+          "opciones": [
+            "Somos amigos",
+            "Soy amigo",
+            "Es amigo",
+            "Sois amigo"
+          ],
+          "correcta": 0,
+          "explicacion": "La -k de «lagunak» y el «gara» dicen lo mismo: varios."
+        }
+      ],
+      "subnivel": "2.3"
+    },
+    {
+      "id": "u2-g61",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Soy estudiante.",
+          "respuestas": [
+            "ni ikaslea naiz",
+            "ikaslea naiz"
+          ],
+          "pista": "Uno solo, así que el artículo va en singular."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Somos estudiantes.",
+          "respuestas": [
+            "gu ikasleak gara",
+            "ikasleak gara"
+          ],
+          "pista": "Varios: el nombre y el verbo, los dos en plural."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ellos son médicos.",
+          "respuestas": [
+            "haiek medikuak dira",
+            "medikuak dira"
+          ],
+          "pista": "«Dira» pide «-ak»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Eres profesora.",
+          "respuestas": [
+            "zu irakaslea zara",
+            "irakaslea zara"
+          ],
+          "pista": "Una persona."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Somos amigos.",
+          "respuestas": [
+            "gu lagunak gara",
+            "lagunak gara"
+          ],
+          "pista": "lagun + -ak, y «gara»."
+        }
+      ],
+      "subnivel": "2.3"
     }
   ]
 }

@@ -1878,6 +1878,29 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### El «-a»/«-ak», misma familia de riesgo (30/08/2026)
+
+La nota mete la oposición `-a`/`-ak` en el mismo saco que el ergativo, y con
+razón: entre `irakaslea` y `irakasleak` hay **una consonante** de diferencia, y
+esa `-k` carga con toda la información del plural. Apenas se oye, y el verbo ya
+la ha dado —`da` frente a `dira`—, así que es redundante.
+
+Lo despachaba **una línea** de la ficha del 2.3: «El plural es -ak:
+irakasleak, etxeak».
+
+Mismo tratamiento que el ergativo: la ficha explica por qué se escapa y da la
+regla de que **artículo y verbo tienen que ir de acuerdo** (`Ni ikaslea naiz` /
+`Gu ikasleak gara`), más pares mínimos (`u2-g60`) y producción (`u2-g61`).
+
+### Nota de motor para Miguel (30/08/2026)
+
+`docs/evidencia-motor.md`: los tres huecos de la nota de investigación que no
+se arreglan con contenido, con su dato y su coste. Por orden de rendimiento:
+el **repaso gramatical intercalado** (que no necesita contenido nuevo, solo
+seleccionar y barajar lo que ya hay), el **pretest de tres ítems** al abrir
+unidad, y el **realce del sufijo en la corrección**. Más el aviso de que si
+medimos algo, sean sesiones e ítems y no minutos.
+
 ### El ergativo, tratado como lo que es (30/08/2026)
 
 De la nota de investigación que pasó Ric («Evidencia para Euskaraz»). Uno de
