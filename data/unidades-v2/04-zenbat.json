@@ -99,7 +99,7 @@
     },
     {
       "titulo": "La -k del ergativo",
-      "cuerpo": "Esta es la idea más rara del euskera para un hispanohablante, y la más importante. Merece la pena entenderla despacio.\n\nEl sujeto lleva la marca <b>-k</b> solo cuando el verbo tiene complemento directo:\n\n<i>Ni ikaslea <b>naiz</b>.</i> → sin -k, porque «ser» no lleva objeto\n<i><b>Nik</b> txakurra <b>dut</b>.</i> → con -k, porque tengo <i>algo</i>\n\nDicho de otra forma: quien <b>hace</b> algo a algo lleva -k. Quien simplemente <b>es</b> o <b>está</b>, no.\n\nEn castellano el sujeto es siempre igual y no marcas nada. En euskera tienes que decidir cada vez. Al principio se falla mucho, y es completamente normal: es una categoría que tu lengua materna no tiene.",
+      "cuerpo": "Esta es la idea más rara del euskera para un hispanohablante, y la más importante. Merece la pena entenderla despacio.\n\nEl sujeto lleva la marca <b>-k</b> solo cuando el verbo tiene complemento directo:\n\n<i>Ni ikaslea <b>naiz</b>.</i> → sin -k, porque «ser» no lleva objeto\n<i><b>Nik</b> txakurra <b>dut</b>.</i> → con -k, porque tengo <i>algo</i>\n\nDicho de otra forma: quien <b>hace</b> algo a algo lleva -k. Quien simplemente <b>es</b> o <b>está</b>, no.\n\nEn castellano el sujeto es siempre igual y no marcas nada. En euskera tienes que decidir cada vez. Al principio se falla mucho, y es completamente normal: es una categoría que tu lengua materna no tiene.\n\n<b>Por qué esta se resiste más que otras</b>\n\nHay tres cosas jugando en contra a la vez, y conviene saberlo para no frustrarse:\n\n<b>Casi no se oye.</b> Es una sola consonante al final, sin acento. En una frase rápida se pierde.\n<b>No hace falta para entender.</b> El auxiliar ya dice quién hace qué, así que quitarla no impide que te entiendan.\n<b>Tu idioma resuelve lo mismo sin ella.</b> El castellano no tiene caso, así que llegas con un sistema completo que no la necesita.\n\nTraducido: <b>esta marca no se pega por oírla mucho</b>. Hay que fijarse en ella a propósito, y practicarla produciéndola, no solo reconociéndola. Por eso los ejercicios de este tema te van a hacer elegir entre dos frases casi idénticas.\n\n<b>La pregunta que lo resuelve siempre</b>\n\nAntes de poner el sujeto, pregúntate: <b>¿hay algo a lo que se le hace la acción?</b>\n\nSí → el sujeto lleva <b>-k</b>, y el verbo es de la familia <i>dut</i>.\nNo → el sujeto va limpio, y el verbo es <i>naiz</i> o <i>nago</i>.\n\n<i>Ni</i> · <i>zu</i> · <i>hura</i> — sin objeto\n<b>Nik</b> · <b>zuk</b> · <b>hark</b> — con objeto",
       "ejemplos": [
         {
           "eu": "Ni Bilbokoa naiz.",
@@ -4871,6 +4871,134 @@
         }
       ],
       "subnivel": "4.1"
+    },
+    {
+      "id": "u4-g60",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Ni ikaslea naiz.",
+            "Nik ikaslea naiz.",
+            "Ni ikaslea dut.",
+            "Nik ikaslea da."
+          ],
+          "correcta": 0,
+          "explicacion": "«Ser» no lleva objeto, así que el sujeto va limpio: «ni», no «nik»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Nik lagun bat dut.",
+            "Ni lagun bat dut.",
+            "Nik lagun bat naiz.",
+            "Ni lagun bat naiz."
+          ],
+          "correcta": 0,
+          "explicacion": "Hay algo que se tiene —un amigo—, así que el sujeto lleva -k: «nik»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Zu medikua zara.",
+            "Zuk medikua zara.",
+            "Zuk medikua da.",
+            "Zu medikua duzu."
+          ],
+          "correcta": 0,
+          "explicacion": "Sin objeto: «zu» limpio, y el verbo «zara»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Zuk bi anaia dituzu.",
+            "Zu bi anaia dituzu.",
+            "Zuk bi anaia zara.",
+            "Zuk bi anaia duzu."
+          ],
+          "correcta": 0,
+          "explicacion": "Dos hermanos son el objeto: «zuk» con -k, y el auxiliar en plural, «dituzu»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien?",
+          "opciones": [
+            "Hark hiru urte ditu.",
+            "Hura hiru urte ditu.",
+            "Hark hiru urte da.",
+            "Hura hiru urte du."
+          ],
+          "correcta": 0,
+          "explicacion": "La edad se «tiene», así que hay objeto: «hark»."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u4-g61",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Yo soy estudiante.",
+          "respuestas": [
+            "ni ikaslea naiz",
+            "ikaslea naiz"
+          ],
+          "pista": "¿Hay algo a lo que se le haga la acción? Si no, el sujeto va limpio."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Yo tengo un amigo.",
+          "respuestas": [
+            "nik lagun bat dut",
+            "lagun bat dut"
+          ],
+          "pista": "Aquí sí hay objeto."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tú eres profesora.",
+          "respuestas": [
+            "zu irakaslea zara",
+            "irakaslea zara"
+          ],
+          "pista": "Sin objeto."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tú tienes dos hermanos.",
+          "respuestas": [
+            "zuk bi anaia dituzu",
+            "bi anaia dituzu"
+          ],
+          "pista": "Con objeto, y son dos."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ella tiene cinco años.",
+          "respuestas": [
+            "hark bost urte ditu",
+            "berak bost urte ditu",
+            "bost urte ditu"
+          ],
+          "pista": "La edad se tiene, no se es."
+        }
+      ],
+      "subnivel": "4.4"
     }
   ]
 }

@@ -1878,6 +1878,46 @@ Qué se ha hecho:
   vea el contraste, y lo que se ajusta es el castellano («no compro **la**
   carne»).
 
+### El ergativo, tratado como lo que es (30/08/2026)
+
+De la nota de investigación que pasó Ric («Evidencia para Euskaraz»). Uno de
+los cinco huecos que señala es que **los sufijos de baja saliencia no reciben
+tratamiento diferenciado**, y pone el ergativo `-k` como caso de manual.
+
+El argumento es fuerte porque cumple **los tres criterios de riesgo a la vez**:
+
+- **poco saliente** — una consonante final átona, que en habla rápida se pierde
+- **redundante** — el auxiliar ya dice quién hace qué, así que quitarla no
+  impide que te entiendan
+- **bloqueado** — el castellano no tiene caso, así que el alumno llega con un
+  sistema completo que resuelve lo mismo sin él
+
+La predicción de la teoría (N. Ellis, *learned attention*) es que **no se
+adquiere por exposición, ni con mucha**. Y los ejercicios que había eran casi
+todos metalingüísticos —«¿cómo se llama esa marca?»—, que construyen
+conocimiento declarativo, no procedimental.
+
+Tres medidas, las que la nota recomienda:
+
+1. **La ficha lo dice.** Añadido el porqué se resiste, para que el alumno no lo
+   lea como torpeza suya, y una regla operativa de un vistazo: *¿hay algo a lo
+   que se le hace la acción?* Sí → `-k` y familia `dut`. No → sujeto limpio y
+   `naiz`/`nago`.
+2. **Pares mínimos contrastivos** (`u4-g60`), que es el formato canónico para
+   dirigir la atención a una marca redundante: la misma frase con y sin
+   ergativo, y hay que elegir. `Ni ikaslea naiz` frente a `Nik ikaslea naiz`.
+3. **Producción obligatoria** (`u4-g61`): teclear la frase entera. La nota es
+   tajante — *se proceduraliza lo que se practica*, y el ergativo solo se
+   practica produciéndolo.
+
+**Lo que queda y no es contenido**: el realce tipográfico del sufijo en la
+solución tras el fallo es de `app.js`. Y el hueco más gordo de la nota —**no
+hay repaso gramatical intercalado entre unidades**— pide un modo nuevo, no
+ejercicios. El dato que lo respalda es de los más claros de la nota: intercalar
+baja el acierto en la sesión del 87% al 77% y **mejora el recuerdo una semana
+después** (d=0,64), y el alumno no lo percibe, así que no se puede decidir
+preguntándole.
+
 ### Tanda de Ric probando la app publicada (29/08/2026)
 
 Siete avisos, y **dos exigían investigación de verdad**.
