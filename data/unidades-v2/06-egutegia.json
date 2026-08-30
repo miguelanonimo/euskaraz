@@ -1676,13 +1676,13 @@
           "instruccion": "Completa la frase",
           "pregunta": "«Zer ordu da?» se acorta en bizkaiera como ____",
           "opciones": [
-            "Zeren ordu da?",
             "Ze ordu da?",
-            "Zein ordu da?",
-            "Nor ordu da?"
+            "Zer or da?",
+            "Zer ordu?",
+            "Ze ordua da?"
           ],
-          "correcta": 1,
-          "explicacion": "Delante de un sustantivo, «zer» se queda en «ze»."
+          "correcta": 0,
+          "explicacion": "Delante de un sustantivo, «zer» se queda en «ze». Lo que se acorta es «zer», no «ordu», y el verbo se queda donde estaba."
         }
       ],
       "subnivel": "6.2"
