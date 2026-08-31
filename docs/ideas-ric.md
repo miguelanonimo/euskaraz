@@ -1944,6 +1944,48 @@ Probado en el navegador **intentando hacer trampa a propósito**: tecleé «gu»
 luego «zu», y al tercer intento la correcta — el hueco ya estaba cerrado y el
 ejercicio salió «No exactamente» con la solución delante.
 
+### «Completa la frase» donde no había frase (31/08/2026)
+
+Ric, mirando `u8-g10`: el enunciado decía «Completa la frase», pero ahí no hay
+frase — es un verbo suelto (`hartu → ____`) y lo que se pide es pasarlo a
+`-t(z)en`.
+
+Al barrerlo salieron **20 variantes** con ese enunciado sin frase, y **no eran
+todas el mismo caso**:
+
+- **Quince son traducciones** (`En coche. → ____`, `a mí → ____`, `más grande
+  → ____`): pasan a **«Escoge la traducción»**, que es el enunciado que Ric ya
+  había pedido para `u7-g10`.
+- **Cinco son transformación**, todas de `u8-g10`, que es el único ejercicio de
+  su tipo en el curso y por eso se quedó con el genérico. Pasan a **«Pasa el
+  verbo a -t(z)en»**: describe lo que hay que hacer y usa la etiqueta que el
+  curso ya le ha dado —las dos fichas del 7.1 se llaman «verbo en -t(z)en» y
+  «Cómo se forma el -t(z)en»—, sin meter metalenguaje nuevo.
+
+**Un fallo mío en el barrido**: conté palabras para decidir si había frase, con
+el umbral en dos, y `Barazkiak ____ gustatzen.` cayó del lado equivocado — la
+única que yo mismo había dicho que no tocara. Devuelta a «Completa la frase».
+
+De paso, **la firma de las variantes en la app de revisión incluye ahora el
+enunciado**. Sin eso, cambiar solo la instrucción no desmarcaba nada y estas
+veinte no habrían vuelto a la cola de revisión.
+
+### Cómo se llama el «-t(z)en» (31/08/2026)
+
+Pregunta de Ric. Es el **partizipio burutugabea**, participio imperfectivo, y
+marca el **aspecto imperfectivo**. Comprobado en la [Euskararen Gramatika][eg].
+
+Conviene saber que **la gramática de Euskaltzaindia NO lo analiza** como
+«nombre verbal + inesivo» (`jate` + `-n`), que es la otra explicación que
+circula: lo llama participio, y describe la construcción como perífrasis
+`[-t(z)en + izan/edun]`.
+
+El curso **no lo nombra en ninguna ficha**, y probablemente está bien así para
+un A1. Si algún día se quiere, el sitio es el 10.1, donde ya se habla de
+aspecto y se ponen los tres tiempos en fila.
+
+[eg]: https://www.euskaltzaindia.eus/index.php?Itemid=1765&kodea=2606&lang=eu&option=com_liburuak&task=gramatika
+
 ### Cuarta tanda de revisión: veintiuna (30/08/2026)
 
 Ric, con 1028 de 1819 variantes vistas. Ya entran las del formato nuevo, y de

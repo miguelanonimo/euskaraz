@@ -1528,7 +1528,7 @@
       "variantes": [
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "hartu → ____",
           "opciones": [
             "harten",
@@ -1541,7 +1541,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "idatzi → ____",
           "opciones": [
             "idatziten",
@@ -1554,7 +1554,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "erosi → ____",
           "opciones": [
             "erosten",
@@ -1567,7 +1567,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "egin → ____",
           "opciones": [
             "egiten",
@@ -1580,7 +1580,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "saldu → ____",
           "opciones": [
             "salduten",

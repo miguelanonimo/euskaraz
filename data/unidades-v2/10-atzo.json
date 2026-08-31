@@ -1487,7 +1487,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "De pequeño. → ____",
           "opciones": [
             "txikia",
@@ -1500,7 +1500,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "Anteayer. → ____",
           "opciones": [
             "atzo",
@@ -1959,7 +1959,7 @@
       "variantes": [
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "más grande → ____",
           "opciones": [
             "handia",
@@ -2011,7 +2011,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "mejor (adjetivo) → ____",
           "opciones": [
             "onago",
@@ -2345,7 +2345,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "¿Por qué? → ____",
           "opciones": [
             "Nola?",
