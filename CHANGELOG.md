@@ -1103,3 +1103,15 @@ Banco de pruebas nuevo, `scripts/probar_calendario.js`, dentro de
 `probar-todo.sh`: comprueba el reparto, la mezcla de la sesión, el cupo
 y que la cifra de la portada sea la de verdad. Verificado además a mano
 en local, sembrando 200 fichas vencidas: quedaron 45/45/45/45/20.
+
+Dos detalles más de la misma tanda:
+
+- **El lauburu, en la cabecera y siempre presente** (`icons/lauburu.svg`,
+  original de Ric), delante del nombre y como atajo al inicio desde
+  cualquier pantalla. Dentro de una práctica pregunta antes de salir,
+  igual que el botón de atrás: está siempre en pantalla y un toque sin
+  querer no puede tirar la sesión. Toma el rojo por `currentColor`, no
+  el del archivo, para no quedarse fuera de la paleta.
+- **El número de la unidad ya no desaparece al completarla.** El ✓ lo
+  sustituía, y con él se perdía la referencia de por dónde ibas: ahora
+  van los dos, el número y el ✓ detrás.

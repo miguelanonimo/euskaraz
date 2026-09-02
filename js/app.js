@@ -123,6 +123,7 @@
     rutaTabs: $('rutaTabs'),
     rutaLista: $('rutaLista'),
     btnBack: $('btnBack'),
+    btnMarca: $('btnMarca'),
     progressbar: $('progressbar'),
     progressbarFill: $('progressbarFill'),
     hearts: $('hearts'),
@@ -974,7 +975,10 @@
 
     el.unitList.innerHTML = CURSO.unidades.map(function (u) {
       var p = progUnidad(u.id);
-      var badge = p.completada ? tickSvg : esc(u.numero);
+      /* El número se queda siempre. Antes lo sustituía el ✓ al completar
+         la unidad y se perdía la referencia de por dónde ibas (pedido de
+         Ric): el ✓ dice que está hecha, el número dice cuál es. */
+      var badge = esc(u.numero) + (p.completada ? tickSvg : '');
       // (el estado real se calcula abajo, en progresoUnidad)
       /* El número de la unidad marca su progreso, no un color de
          contenido: gris sin empezar, ámbar empezada, rojo completada. */
@@ -3349,6 +3353,18 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') cerrarRuta();
   });
+
+  /* El lauburu va al inicio desde cualquier sitio. Dentro de una
+     práctica pregunta antes, igual que el botón de atrás: está siempre
+     en pantalla, así que un toque sin querer no puede tirar la sesión. */
+  function irAlInicio() {
+    if (estado.pantalla === 'quiz') {
+      if (confirm('¿Salir de la práctica? Perderás el avance de esta sesión.')) salirDeSesion();
+      return;
+    }
+    pantallaHome();
+  }
+  el.btnMarca.addEventListener('click', irAlInicio);
 
   el.btnBack.addEventListener('click', atras);
   el.btnCheck.addEventListener('click', comprobar);
