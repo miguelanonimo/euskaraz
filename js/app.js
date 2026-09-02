@@ -1149,7 +1149,11 @@
       var trozos = [];
       if (c.gramatica.length)   trozos.push(plural(c.gramatica.length, 'explicación', 'explicaciones'));
       if (c.vocabulario.length) trozos.push(plural(c.vocabulario.length, 'palabra', 'palabras'));
-      if (c.ejercicios.length)  trozos.push(plural(c.ejercicios.length, 'ejercicio', 'ejercicios'));
+      // + ESCUCHAR_PRACTICA: empezarPractica() cuela esas preguntas de
+      // escuchar en cualquier sesión, no solo en el test (mismo bug que el
+      // del test — el número que se enseña tiene que ser el que de verdad
+      // sale, no el crudo de los grupos del tema).
+      if (c.ejercicios.length)  trozos.push(plural(c.ejercicios.length + ESCUCHAR_PRACTICA, 'ejercicio', 'ejercicios'));
 
       // Subnivel todavía sin escribir: se enseña, para que se vea el plan,
       // pero no se puede abrir a una pantalla vacía.
@@ -1187,8 +1191,12 @@
           '<span class="subcard__id">' + (pu.completada ? tickSvg : '') + '</span>' +
           '<span class="subcard__body">' +
             '<span class="subcard__title">Test de la unidad</span>' +
+            // El test no se queda en sus propios grupos (`test.length`, casi
+            // siempre 5) — empezarPractica() lo completa hasta LARGO_TEST
+            // tirando de los temas, así que el número que se enseña aquí
+            // tiene que ser el mismo, no el crudo de la ficha.
             '<span class="subcard__sub">Todo lo anterior mezclado · ' +
-              plural(test.length, 'ejercicio', 'ejercicios') + '</span>' +
+              plural(LARGO_TEST, 'ejercicio', 'ejercicios') + '</span>' +
           '</span>' +
           (pu.completada ? '<span class="subcard__hecho">' + tickSvg + Math.round(pu.mejor * 100) + '%</span>' : '') +
           '<span class="subcard__chev" aria-hidden="true">' +
@@ -1233,8 +1241,9 @@
     }
     if (c.ejercicios.length) {
       var v = c.ejercicios.reduce(function (n, g) { return n + ((g.variantes && g.variantes.length) || 1); }, 0);
+      // + ESCUCHAR_PRACTICA, mismo motivo que en pintarListaSubniveles().
       tarjetas.push(tarjetaNav('goPrac', 'Practicar',
-        plural(c.ejercicios.length, 'ejercicio', 'ejercicios') + ' · ' + v + ' variantes',
+        plural(c.ejercicios.length + ESCUCHAR_PRACTICA, 'ejercicio', 'ejercicios') + ' · ' + v + ' variantes',
         ' navcard--accent'));
     }
     el.subCards.innerHTML = tarjetas.join('');

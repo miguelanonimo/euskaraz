@@ -11,7 +11,7 @@ es el que conviene mirar primero, porque afecta a cómo se genera todo lo demás
 |---|---|---|---|
 | **A** | Audios que ya existen pero **suenan mal** | 23 | `node lote-ric-3.mjs` |
 | **B** | Palabras nuevas **sin audio ninguno** | 194 | `node generar.mjs <unidad>` |
-| **C** | Palabras de v2 que el generador **no puede ver** | 58 | hay que decidir cómo |
+| **C** | Palabras de v2 que el generador **no podía ver** | 58 | ya arreglado, ver abajo — falta ejecutar |
 
 ---
 
@@ -133,20 +133,23 @@ los demostrativos (dato de Ric, verificado en Bizkaieraren ataria).
 
 ---
 
-## C · El agujero: 58 palabras que `generar.mjs` no puede ver
+## C · El agujero de antes: ya arreglado, falta ejecutarlo
 
-**Esto es nuevo y conviene mirarlo antes que A y B.**
+**Ya no es un agujero — `generar.mjs` lee `data/unidades-v2/` directamente
+desde el 27/08/2026** (ver la nota de Miguel más abajo). Se deja el
+contexto y la lista porque siguen sirviendo para saber qué falta generar,
+no porque el generador siga sin verlas.
 
-`generar.mjs` lee `data/unidades/` —los ficheros **v1**—, pero el curso que
-se publica es `data/unidades-v2/`. Mientras el vocabulario de v2 venía
-heredado de v1, eso daba igual: se generaba desde v1 y el mp3 caía en la ruta
-que v2 referencia.
-
-Pero **todo lo que hemos añadido directamente en v2 no existe en v1**, así que
-el generador no lo ve y nunca le va a hacer audio. Son **58 palabras** (eran 54; suben con cada palabra nueva), y no
-son de relleno: están los ordinales enteros, `eduki` con sus formas, los
-verbos de la rutina diaria del 7.3, el `ari naiz` del 7.4 y los de poder y
-deber del 8.3.
+Hasta ese arreglo, `generar.mjs` leía `data/unidades/` (v1), y todo lo
+añadido directamente en v2 —sin pasar por v1— quedaba invisible para
+siempre, por muchas veces que se corriera el script. Eran **58 palabras**
+en el último recuento (27-29/08), y no son de relleno: están los
+ordinales enteros, `eduki` con sus formas, los verbos de la rutina diaria
+del 7.3, el `ari naiz` del 7.4 y los de poder y deber del 8.3. Con el
+curso siempre creciendo, esta cifra ya no es la que manda — lo que hace
+falta generar de verdad, en cualquier momento, es "todo lo que no tenga
+`audio` en `data/unidades-v2/`", categorías B y C ya fusionadas en una
+sola desde el arreglo.
 
 | Tema | Palabra | Castellano |
 |---|---|---|
@@ -205,15 +208,22 @@ deber del 8.3.
 | `10.3` | `etorkizuna` | el futuro |
 | `10.3` | `asmoa` | la intención, el plan |
 
-Dos maneras de arreglarlo, y la decisión es tuya:
+**Decidido (27/08/2026, Miguel): opción 1.** `generar.mjs` ya lee
+`data/unidades-v2/` en vez de `data/unidades/`. Comprobado a mano antes de
+tocar el script: los ids de unidad y las rutas de audio que referencian los
+datos siguen coincidiendo aunque el contenido se haya movido de unidad al
+reestructurar (p. ej. los animales, trasladados a la 5, ya llevan
+`unidades/u5/...`), así que no hizo falta ningún mapeo especial — solo
+cambiar el directorio de origen en `buscarPorId()`.
 
-1. **Apuntar `generar.mjs` a `data/unidades-v2/`** y agrupar por `subnivel` en
-   vez de por unidad. Es lo limpio, pero hay que tocar cómo resuelve la ruta
-   de salida, porque los ids ya no coinciden.
-2. **Volcar estas 54 a un lote suelto**, como se hizo con `lote-ric-3.mjs`, y
-   dejar el arreglo de fondo para después.
+De paso, nuevo flag `--subnivel <id>` para no tener que regenerar la unidad
+entera por 5-10 palabras nuevas: `node generar.mjs u4 --subnivel 4.3` genera
+solo el vocabulario y los ejemplos de ese tema. Las 54 de la tabla de arriba
+se reparten en 16 subniveles — con el flag, cada tanda es una llamada.
 
-Yo tiraría por la 1, pero es tu terreno.
+Pendiente: correr `generar.mjs` de verdad para las 54 (necesita credenciales
+de Google Cloud y cuesta tiempo/cuota) — el script está listo, no se ha
+ejecutado todavía.
 
 ---
 

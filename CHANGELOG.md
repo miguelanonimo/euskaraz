@@ -844,3 +844,183 @@ Tres scripts de test nuevos (`probar_bolsa.js`, `probar_ordenar.js`,
 `probar_test.js`) con la misma ruta absoluta al Mac de Ric corregida a
 relativa. Verificado con `probar-todo.sh` entero en verde antes de
 subir.
+
+## 2026-08-27 — Ficha duplicada de las estaciones (6.4)
+
+Merge de `ric/trabajo`. Al escribir la reestructuración, la ficha
+nueva de las estaciones del año en el tema 6.4 solapaba entera a una
+que ya existía — detectado por el propio Ric. Borrada la vieja,
+rescatados antes los dos matices que solo estaban ahí (el de
+"udaberria" como "el verano nuevo" y los cuatro nombres sueltos como
+ejemplos). Ningún ejercicio ni audio se pierde. Barrido el resto del
+curso por si había más duplicados de la misma clase: no hay.
+
+## 2026-08-27 — Negación fuera de sitio, ogia/ogirik, ropa mal colocada
+
+Merge de `ric/trabajo`:
+
+- **La negación se practicaba en 7.1 antes de explicarse en 7.2.** Diez
+  variantes movidas, cuatro reescritas en afirmativo, uno nuevo para
+  que 7.1 no se quedara corto. De paso, distractores de construcciones
+  aún no vistas (gehiago/gutxiago, "ezin dut") sustituidos en cuatro
+  temas.
+- **"No como pan" tenía dos traducciones distintas contando lo mismo**:
+  «Nik ez dut ogia jaten» (no como *el* pan) y «Ez dut ogirik jaten»
+  (no como pan, ninguno) estaban traducidas igual — verificado en la
+  Euskararen Gramatika (15.5). Corregido en los tres ejercicios
+  afectados, con dos escenas nuevas para verlo claro.
+- **La ropa vivía en el tema de "comer y beber"** (12 palabras, 2
+  ejercicios, 4 preguntas del test) mientras 9.5 "Arropa eta opariak"
+  tenía 3. Todo movido a 9.5.
+- **8 referencias entre fichas apuntaban a la unidad equivocada**,
+  resto de la reordenación a diez unidades.
+- Y lo pequeño: burbuja de bizkaiera del 6.5 reescrita (la de San
+  Sebastián se entendía al revés), 7.5 ya presenta su vocabulario,
+  "lursagarra" fuera (nadie la reconoce), añadida "arana" (ciruela).
+
+**Herramientas nuevas**: `scripts/probar_adelantos.js` avisa si un
+ejercicio usa una construcción (negación, partitivo, "ari", pasado,
+comparativos...) antes de que el tema la explique — con las frases
+hechas que se enseñan enteras exentas. `verificar.py` tenía un regex
+que nunca casaba con "unidad 9" en singular (exigía la "e" de
+"unidades"), corregido, y acepta `--filtro texto` para no perderse
+entre 249 avisos. `probar-todo.sh` falla ahora si algún
+`scripts/probar_*.js` trae una ruta absoluta en vez de relativa —
+para que no haga falta corregirlo a mano una tercera vez.
+
+Verificado con `probar-todo.sh` entero en verde (8 pruebas) antes de
+subir.
+
+**Pendiente, sin decidir**: el generador de audio
+(`scripts/generar-audio/generar.mjs`) lee `data/unidades/` (v1), pero
+lo publicado es `data/unidades-v2/` — mientras el vocabulario de v2
+venía heredado de v1 esto daba igual, pero las 54 palabras añadidas
+solo en v2 nunca se generan. Detalle completo y las dos salidas
+propuestas en `docs/audios-pendientes.md`, apartado C — decisión
+pendiente, no aplicada en este commit.
+
+## 2026-08-27 — `generar.mjs` apunta a v2, y el test de unidad decía 5 en vez de 12
+
+**El agujero del audio, arreglado de fondo (opción 1).** `generar.mjs`
+lee ahora `data/unidades-v2/` en `buscarPorId()`. Comprobado antes de
+tocar el script que los ids de unidad y las rutas de audio siguen
+coincidiendo aunque el contenido se haya movido de unidad al
+reestructurar (los animales, trasladados a la 5, ya llevan
+`unidades/u5/...`), así que no hizo falta ningún mapeo especial. De
+paso, nuevo flag `--subnivel <id>` para generar solo el vocabulario y
+los ejemplos de un tema, en vez de la unidad entera — las 54 palabras
+que faltan se reparten en 16 subniveles. Pendiente: correr el script
+de verdad (necesita credenciales de Google Cloud), no se ha ejecutado
+en este commit.
+
+**Bug encontrado al revisar el test de unidad**: la ficha decía "5
+ejercicios" pero la sesión real tiene 12 — el ajuste de ayer (7→12
+preguntas) cambió cuántas entran de verdad, pero la ficha seguía
+enseñando el crudo de `test.length` (los grupos marcados `test` en el
+JSON, casi siempre 5) en vez de `LARGO_TEST`, la constante que de
+verdad gobierna el tamaño de la sesión.
+
+## 2026-08-27 — Barrido de la misma familia de bug: dos sitios más
+
+Pedido explícito tras el bug del test: revisados todos los sitios que
+enseñan un número de ejercicios antes de empezar una sesión,
+comparando cada uno contra cómo se construye la sesión de verdad en
+`empezarPractica()`. Aparecieron dos más con el mismo defecto —
+`ESCUCHAR_PRACTICA` (2 preguntas de escuchar) se cuela en **cualquier**
+práctica, no solo en el test, y ninguno de los dos sitios lo contaba:
+
+- La tarjeta "Practicar" dentro de un tema.
+- El resumen de cada tema en la lista de la portada de la unidad
+  (`pintarListaSubniveles()`).
+
+Los demás contadores revisados (fichas de gramática, palabras de
+vocabulario, temas restantes de la unidad, pendientes de repaso en la
+Home) no tienen este problema: cuentan algo que no cambia al empezar
+la sesión, o ya salen de la misma fuente en vivo que la sesión usa.
+
+## 2026-08-28 — Unidades 8, 9 y 10 reequilibradas, y ejercicios repartidos por carga
+
+Merge de `ric/trabajo`, solo contenido (`data/unidades-v2/`), sin
+tocar `js/app.js`:
+
+- **Unidad 8 reestructurada en 5 temas.** El 8.1 se llevaba el 48% del
+  vocabulario y el 8.4 no tenía explicación ninguna para 10 palabras y
+  5 ejercicios. Cuatro verbos (sartu, irten, iritsi, mugitu) se
+  usaban en seis ejercicios sin explicarse en ningún sitio — uno de
+  ellos aparecía por primera vez dentro de la burbuja de bizkaiera.
+- **Unidad 9: "me gusta" recupera el ocio.** Se explicaba con el
+  cuerpo (hablar del cuerpo de otra persona resultaba extraño) cuando
+  su terreno natural —el ocio, 9.4— no tenía ni una ficha.
+- **Unidad 10: de 34 palabras sin presentar a ninguna.** El 10.5 era
+  un cajón de sastre con 22 palabras de cuatro temas distintos; los
+  comparativos (baino, -ago, -ena) estaban catalogados ahí aunque se
+  enseñan en el 10.4 — movidos.
+- **Vocabulario huérfano cubierto: del 96% al 100%.** 16 palabras no
+  aparecían en ningún ejercicio del curso, varias la que da nombre a
+  su propio tema (gorputza en 9.3, egutegia en 6.2, baserria en 5.5).
+  El reparto de ejercicios era plano (30 de 50 temas con exactamente 5,
+  tuvieran 1 palabra o 28) — ahora se reparte por carga real.
+- Barrido de fichas nuevas sin traducir alguna palabra (asko, pixka
+  bat, batere ez y otras 5) y de vocabulario sin presentar en su
+  propia ficha — ahora es un aviso permanente en `verificar.py`.
+- Guardado `docs/revision-temas-unidades.md`, el informe de análisis
+  de coherencia temática de la sesión — sin cambios de contenido, se
+  conserva por las doce palabras que se adelantan una y otra vez y las
+  decisiones abiertas sobre qué hacer con ellas.
+
+Verificado con `probar-todo.sh` en verde antes de subir.
+
+## 2026-08-30 — Nuevo formato "escribir", ergativo como sufijo de riesgo, 4 tandas de revisión
+
+Merge grande de `ric/trabajo` (20 commits, del 28 al 30 de agosto):
+
+- **Nuevo tipo de ejercicio: "escribir".** Como "ordenar" pero tecleando
+  cada palabra en su hueco en vez de pinchar fichas — producir en vez
+  de reconocer, que según la nota de investigación de Ric rinde mucho
+  más para fijar vocabulario. Dos intentos por hueco (al segundo fallo
+  se cierra en rojo y el ejercicio cuenta como fallado, para que no se
+  pueda tantear hasta acertar); pesa el triple que "ordenar" al
+  sortear formato, y el quíntuple en el test de fin de unidad. Extendido
+  a los 40 ejercicios de ordenar del curso.
+- **El ergativo (-k) y el -a/-ak tratados como los sufijos de riesgo que
+  son**: consonante final átona, redundante con lo que ya dice el
+  auxiliar, y sin equivalente en castellano — la predicción es que no
+  se adquieren solo con exposición. Fichas reescritas con la regla y
+  ejercicios de producción, no solo metalingüísticos.
+- **Cuatro tandas de revisión de Ric** (50 + 8 + 17 + 21 correcciones):
+  vocabulario sin presentar cerrado a 0 en las diez unidades (526
+  palabras, ninguna huérfana), varias fichas con palabras sin traducir
+  arregladas, opciones de longitud desigual igualadas para que no se
+  acierte por forma en vez de por significado, y más.
+- `docs/evidencia-motor.md` nuevo: los huecos que no se arreglan con
+  contenido, con su dato y su coste.
+
+**De paso, arreglada una inconsistencia en `docs/audios-pendientes.md`**:
+la rama de Ric no tenía todavía el arreglo del 27/08 que apunta
+`generar.mjs` a v2, así que su commit de esos días seguía describiendo
+el generador como roto. Corregida la sección para reflejar que ya está
+arreglado — falta ejecutarlo, no decidir nada.
+
+Verificado con `probar-todo.sh` en verde antes de subir.
+
+## 2026-08-30 — Publicación automática: `ric/publicar` + GitHub Action
+
+Hasta ahora cada tanda de `ric/trabajo` había que fusionarla a mano en
+`main`. Nuevo GitHub Action
+(`.github/workflows/publicar-ric.yml`, dispara con `push` a
+`ric/publicar`): fusiona esa rama en `main`, corre
+`scripts/probar-todo.sh` como comprobación final, y solo si pasa
+empuja a `main` — Vercel despliega desde ahí, sin nadie mirando. Si
+hay conflicto de fusión o algún test falla, el Action se para ahí:
+`main` no se toca, queda para revisar a mano como hasta ahora.
+
+`ric/trabajo` sigue sin disparar nada — es el cuaderno de trabajo
+normal. `ric/publicar` es solo la señal explícita de "esto ya está
+listo": `git push origin ric/trabajo:ric/publicar --force` cuando Ric
+decida que una tanda debe salir. Instrucciones para él en
+`docs/ideas-ric.md`; no hace falta tocar su rama para que le llegue el
+workflow, entra solo la próxima vez que fusione `main`.
+
+Esto es para lo rutinario — un cambio estructural grande (como la
+reestructuración a v2) sigue necesitando revisión a mano antes de
+subir, igual que hasta ahora.

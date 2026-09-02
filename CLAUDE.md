@@ -42,6 +42,18 @@ curso.
   curso en producción, `python3 verificar.py v2` es un alias del
   mismo. `scripts/probar-todo.sh` corre eso más la sintaxis de
   `js/app.js` y los tests de `scripts/probar_*.js` de una vez.
+- **Publicación automática de la rama de Ric (30/08/2026):** cuando Ric
+  empuja `ric/trabajo` a `ric/publicar` (`git push origin
+  ric/trabajo:ric/publicar --force`), el GitHub Action
+  `.github/workflows/publicar-ric.yml` fusiona sola esa rama en `main`,
+  corre `scripts/probar-todo.sh` y solo si pasa empuja a `main` — Vercel
+  despliega desde ahí. Si hay conflicto o algún test falla, el Action se
+  para y `main` no se toca. `ric/trabajo` sigue sin disparar nada (es su
+  cuaderno de trabajo); solo `ric/publicar` fusiona. Detalle para Ric en
+  `docs/ideas-ric.md`. Esto no sustituye una fusión a mano cuando el
+  cambio es estructural o grande (como la reestructuración a v2) — para
+  eso sigue haciendo falta una sesión que lo revise, tal como hasta
+  ahora.
 
 ## Fase actual
 

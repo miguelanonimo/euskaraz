@@ -8,6 +8,38 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ---
 
+## 📣 Nuevo (30/08/2026): cómo publicar sin esperar a que Miguel fusione a mano
+
+Hasta ahora, cada tanda de `ric/trabajo` la fusionaba Miguel (con Claude) a
+mano en `main`. Ya no hace falta esperar a eso para lo rutinario.
+
+**Lo que cambia para ti/tu Claude: un comando nuevo cuando decidas que algo
+está listo para producción** (después de haber corrido
+`bash scripts/probar-todo.sh` tú mismo, como ya hacías):
+
+```
+git push origin ric/trabajo:ric/publicar --force
+```
+
+Eso mueve la rama `ric/publicar` a donde esté `ric/trabajo` en ese momento.
+Un GitHub Action (`.github/workflows/publicar-ric.yml`) hace el resto solo:
+fusiona `ric/publicar` en `main`, vuelve a correr `probar-todo.sh` como
+comprobación final, y si pasa, empuja a `main` — Vercel despliega desde ahí,
+sin que nadie tenga que estar mirando.
+
+Si algo falla (conflicto de fusión, algún test en rojo), el Action se para
+ahí mismo: `main` no se toca, y queda para revisar a mano como hasta ahora.
+Se puede ver el resultado de cada intento en la pestaña "Actions" del repo
+en GitHub.
+
+`ric/trabajo` sigue siendo tu cuaderno de trabajo normal — se sigue subiendo
+igual, sin que dispare nada. `ric/publicar` es solo la señal de "esto ya".
+No hace falta hacer nada más para que el workflow te llegue: en cuanto tu
+rama vuelva a fusionar `main` (como ya hacéis de vez en cuando), el archivo
+del workflow entra con el resto.
+
+---
+
 ## Pendientes de comentar con Miguel
 
 ### El repaso de vocabulario ya es aditivo (26/08/2026) — HECHO
