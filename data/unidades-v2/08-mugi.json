@@ -1084,7 +1084,7 @@
       "variantes": [
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "En coche. → ____",
           "opciones": [
             "kotxean",
@@ -1097,7 +1097,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "En tren. → ____",
           "opciones": [
             "trena",
@@ -1110,7 +1110,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "A pie. → ____",
           "opciones": [
             "oina",
@@ -1123,7 +1123,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "En euskera. → ____",
           "opciones": [
             "euskara",
@@ -1136,7 +1136,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "En bici. → ____",
           "opciones": [
             "bizikletan",

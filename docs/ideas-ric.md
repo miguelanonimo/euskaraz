@@ -1976,6 +1976,48 @@ Probado en el navegador **intentando hacer trampa a propósito**: tecleé «gu»
 luego «zu», y al tercer intento la correcta — el hueco ya estaba cerrado y el
 ejercicio salió «No exactamente» con la solución delante.
 
+### «Completa la frase» donde no había frase (31/08/2026)
+
+Ric, mirando `u8-g10`: el enunciado decía «Completa la frase», pero ahí no hay
+frase — es un verbo suelto (`hartu → ____`) y lo que se pide es pasarlo a
+`-t(z)en`.
+
+Al barrerlo salieron **20 variantes** con ese enunciado sin frase, y **no eran
+todas el mismo caso**:
+
+- **Quince son traducciones** (`En coche. → ____`, `a mí → ____`, `más grande
+  → ____`): pasan a **«Escoge la traducción»**, que es el enunciado que Ric ya
+  había pedido para `u7-g10`.
+- **Cinco son transformación**, todas de `u8-g10`, que es el único ejercicio de
+  su tipo en el curso y por eso se quedó con el genérico. Pasan a **«Pasa el
+  verbo a -t(z)en»**: describe lo que hay que hacer y usa la etiqueta que el
+  curso ya le ha dado —las dos fichas del 7.1 se llaman «verbo en -t(z)en» y
+  «Cómo se forma el -t(z)en»—, sin meter metalenguaje nuevo.
+
+**Un fallo mío en el barrido**: conté palabras para decidir si había frase, con
+el umbral en dos, y `Barazkiak ____ gustatzen.` cayó del lado equivocado — la
+única que yo mismo había dicho que no tocara. Devuelta a «Completa la frase».
+
+De paso, **la firma de las variantes en la app de revisión incluye ahora el
+enunciado**. Sin eso, cambiar solo la instrucción no desmarcaba nada y estas
+veinte no habrían vuelto a la cola de revisión.
+
+### Cómo se llama el «-t(z)en» (31/08/2026)
+
+Pregunta de Ric. Es el **partizipio burutugabea**, participio imperfectivo, y
+marca el **aspecto imperfectivo**. Comprobado en la [Euskararen Gramatika][eg].
+
+Conviene saber que **la gramática de Euskaltzaindia NO lo analiza** como
+«nombre verbal + inesivo» (`jate` + `-n`), que es la otra explicación que
+circula: lo llama participio, y describe la construcción como perífrasis
+`[-t(z)en + izan/edun]`.
+
+El curso **no lo nombra en ninguna ficha**, y probablemente está bien así para
+un A1. Si algún día se quiere, el sitio es el 10.1, donde ya se habla de
+aspecto y se ponen los tres tiempos en fila.
+
+[eg]: https://www.euskaltzaindia.eus/index.php?Itemid=1765&kodea=2606&lang=eu&option=com_liburuak&task=gramatika
+
 ### Cuarta tanda de revisión: veintiuna (30/08/2026)
 
 Ric, con 1028 de 1819 variantes vistas. Ya entran las del formato nuevo, y de
@@ -3631,6 +3673,30 @@ código.
   https://euskaraz-git-experimento-ejercicio-listening-anonimostudio.vercel.app
 
 ## Implementadas
+
+- **2026-09-02 · Quinta tanda de revisión (20 arreglos, unidad 7).**
+  Primera publicada por la vía automática de Miguel (`ric/publicar`).
+  Traducción añadida al texto de post-respuesta donde se acertaba el
+  auxiliar sin entender la frase (`u8-g02` entero); distractores de
+  otra categoría gramatical o que también eran correctos, cambiados en
+  cinco preguntas de vocabulario; tres ejercicios de parejas en los que
+  la única entrada de varias palabras se emparejaba sola; dos preguntas
+  retiradas —«*ari naiz* = estoy en ello», que contradecía la ficha de
+  su propio tema y que los nativos no reconocen, y «*ez dakit* es la
+  negación de…», que se contestaba sin leer—; el truco de la sal, que
+  no se sostenía con *gazta* entre las opciones. «Tomo café» acepta
+  ahora también `kafea edaten dut`: Elhuyar documenta *kafea hartu*
+  (acepción 6 de *hartu*: tomar, beber, comer) y la unidad enseña
+  *kafea edaten* en cuatro sitios.
+
+  Queda **abierto un patrón de fondo** que salió al ordenar la tanda:
+  en las preguntas de vocabulario («¿Qué significa X?») hay **132
+  variantes en las diez unidades** con algún distractor de otra
+  categoría gramatical —un verbo o una perífrasis compitiendo con un
+  sustantivo—, que se descartan sin saber la palabra. Las peores están
+  en `04-zenbat` (33), `10-atzo` (24), `08-mugi` y `09-gustatzen` (17
+  cada una). Pendiente de decidir con Ric si se barren todas.
+
 
 - **2026-08-26 · Media docena de arreglos pequeños de `ric/trabajo`**
   (commits `10a9933`, `104b3f2`, `00ff5c8`, `ed9af82`, `f0b9ff6`,

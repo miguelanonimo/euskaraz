@@ -1024,3 +1024,42 @@ workflow, entra solo la próxima vez que fusione `main`.
 Esto es para lo rutinario — un cambio estructural grande (como la
 reestructuración a v2) sigue necesitando revisión a mano antes de
 subir, igual que hasta ahora.
+
+## 2026-09-02 — Quinta tanda de revisión de Ric (unidad 7)
+
+Primera tanda publicada por la vía automática (`ric/publicar`), sin
+fusión a mano de Miguel. Veinte arreglos sobre el informe de Ric, que
+lleva revisadas 1222 de las 1819 variantes del curso.
+
+- **Ejercicios que se acertaban sin entender la frase.** Las cinco
+  variantes de `u8-g02` preguntan por el auxiliar (`dut` frente a
+  `naiz`) y al responder explicaban la regla pero no traducían la
+  frase. Ahora la traducción va delante de la regla; igual en
+  `u7-g36` v0.
+- **Distractores que se descartaban sin saber la palabra**, por ser de
+  otra categoría gramatical («estoy (haciendo algo)» compitiendo con
+  nombres de comida), y uno que la propia explicación daba por bueno
+  («los deberes del cole» para *etxeko lanak*). Cinco cambiados.
+- **Parejas que se resolvían por la forma**: en tres ejercicios la
+  única entrada de varias palabras (*etxeko lanak*, *jaten ari naiz*)
+  se emparejaba sola con la única traducción larga. Una de ellas
+  además desvelaba la respuesta de otra pareja del mismo ejercicio.
+- **Dos preguntas retiradas.** «*Ari naiz* sin verbo delante significa
+  "estoy en ello"» contradecía la ficha de su propio tema, que dice
+  que *ari* nunca va solo, y los hablantes nativos a los que preguntó
+  Ric no lo reconocen. «*Ez dakit* es la negación de…» se contestaba
+  sin leer. Sustituidas por el auxiliar de *ari* (izan, aunque haya
+  objeto) y por la distinción *ogia*/*ogirik*.
+- **El truco de la ficha de la sal** («la sal es la corta») no se
+  sostenía en el ejercicio que lo citaba, porque tenía *gazta* entre
+  las opciones, igual de corta. Enunciado nuevo, y la ficha avisa
+  ahora de la confusión: mismas letras con la t y la z al revés.
+- «Tomo café» acepta también `kafea edaten dut`. Elhuyar documenta
+  *kafea hartu* (acepción 6 de *hartu*: tomar, beber, comer) y la
+  unidad enseña *kafea edaten* en cuatro sitios: las dos son
+  respuesta buena.
+
+Los cambios se aplicaron con asserts sobre el valor anterior —dos
+`.replace()` silenciosos en tandas pasadas dieron por hecho un cambio
+que no se guardó— y el juego de avisos de `verificar.py` queda
+idéntico al de antes (322, ninguno nuevo). `probar-todo.sh` en verde.

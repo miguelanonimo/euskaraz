@@ -1299,7 +1299,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Escoge la traducción",
           "pregunta": "A mediodía. → ____",
           "opciones": [
             "eguerdia",

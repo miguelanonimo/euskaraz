@@ -216,7 +216,7 @@
     },
     {
       "titulo": "«Gatza» y «azukrea»: dos que se confunden",
-      "cuerpo": "Van juntas en la cocina y conviene no mezclarlas:\n\n<b>gatza</b> — la sal\n<b>azukrea</b> — el azúcar\n\n<i>Gatza</i> es palabra vasca de siempre, y aparece en un montón de expresiones con el sentido de «gracia» o «chispa», como el «salero» del castellano. <i>Azukrea</i>, en cambio, es un préstamo, y por eso se parece tanto a la palabra castellana.\n\nTruco para no liarlas: la sal es la corta.",
+      "cuerpo": "Van juntas en la cocina y conviene no mezclarlas:\n\n<b>gatza</b> — la sal\n<b>azukrea</b> — el azúcar\n\n<i>Gatza</i> es palabra vasca de siempre, y aparece en un montón de expresiones con el sentido de «gracia» o «chispa», como el «salero» del castellano. <i>Azukrea</i>, en cambio, es un préstamo, y por eso se parece tanto a la palabra castellana.\n\nTruco para no liarlas: la sal es la corta.\n\nY ojo con una tercera que se cuela: <b>gazta</b> es el queso. Llevan las mismas letras con la <b>t</b> y la <b>z</b> al revés: <i>ga<b>tz</b>a</i> es la sal, <i>ga<b>zt</b>a</i> el queso.",
       "ejemplos": [
         {
           "eu": "gatza",
@@ -878,7 +878,7 @@
             "dute"
           ],
           "correcta": 1,
-          "explicacion": "Hay objeto (el pan), así que el auxiliar es «dut»."
+          "explicacion": "«Nik ogia jaten dut» = yo como pan. Hay objeto (el pan), así que el auxiliar es «dut»."
         },
         {
           "tipo": "opcion",
@@ -891,7 +891,7 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "«joan» no lleva objeto: el auxiliar es «naiz»."
+          "explicacion": "«Ni etxera joaten naiz» = yo voy a casa. «joan» no lleva objeto: el auxiliar es «naiz»."
         },
         {
           "tipo": "opcion",
@@ -904,7 +904,7 @@
             "duzue"
           ],
           "correcta": 1,
-          "explicacion": "«la música» es el objeto → «duzu»."
+          "explicacion": "«Zuk musika entzuten duzu» = tú escuchas música. «la música» es el objeto → «duzu»."
         },
         {
           "tipo": "opcion",
@@ -917,7 +917,7 @@
             "ditugu"
           ],
           "correcta": 1,
-          "explicacion": "«etorri» no lleva objeto → «gara»."
+          "explicacion": "«Gu berandu etortzen gara» = nosotros venimos tarde. «etorri» no lleva objeto → «gara»."
         },
         {
           "tipo": "opcion",
@@ -930,7 +930,7 @@
             "ditu"
           ],
           "correcta": 1,
-          "explicacion": "«el euskera» es el objeto → «dute»."
+          "explicacion": "«Haiek euskara ikasten dute» = ellos aprenden euskera. «el euskera» es el objeto → «dute»."
         }
       ],
       "subnivel": "7.1"
@@ -1412,7 +1412,9 @@
           "es": "Tomo café.",
           "respuestas": [
             "kafea hartzen dut",
-            "nik kafea hartzen dut"
+            "nik kafea hartzen dut",
+            "kafea edaten dut",
+            "nik kafea edaten dut"
           ],
           "pista": "hartu → hartzen."
         }
@@ -1528,7 +1530,7 @@
       "variantes": [
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "hartu → ____",
           "opciones": [
             "harten",
@@ -1541,7 +1543,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "idatzi → ____",
           "opciones": [
             "idatziten",
@@ -1554,7 +1556,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "erosi → ____",
           "opciones": [
             "erosten",
@@ -1567,7 +1569,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "egin → ____",
           "opciones": [
             "egiten",
@@ -1580,7 +1582,7 @@
         },
         {
           "tipo": "opcion",
-          "instruccion": "Completa la frase",
+          "instruccion": "Pasa el verbo a -t(z)en",
           "pregunta": "saldu → ____",
           "opciones": [
             "salduten",
@@ -2004,11 +2006,11 @@
           "opciones": [
             "el azúcar",
             "la sal",
-            "el aceite",
+            "el queso",
             "la harina"
           ],
           "correcta": 1,
-          "explicacion": "Gatza es la sal."
+          "explicacion": "Gatza es la sal. Ojo con «gazta», que es el queso: cambian de sitio la t y la z."
         },
         {
           "tipo": "opcion",
@@ -2246,7 +2248,7 @@
             "lo joan"
           ],
           "correcta": 0,
-          "explicacion": "Lo (sueño) + egin (hacer), como «lan egin»."
+          "explicacion": "Lo (sueño) + egin (hacer), como «lan egin» (trabajar)."
         },
         {
           "tipo": "opcion",
@@ -2279,7 +2281,7 @@
           "instruccion": "Elige la opción correcta",
           "pregunta": "¿Qué significa «etxeko lanak»?",
           "opciones": [
-            "los deberes del cole",
+            "comida casera",
             "las tareas de casa",
             "el trabajo",
             "la familia"
@@ -2409,8 +2411,8 @@
               "es": "está"
             },
             {
-              "eu": "jaten ari naiz",
-              "es": "estoy comiendo"
+              "eu": "ni naiz",
+              "es": "yo soy"
             }
           ]
         },
@@ -2516,8 +2518,8 @@
           "instruccion": "Empareja la rutina diaria",
           "pares": [
             {
-              "eu": "etxeko lanak",
-              "es": "las tareas de casa"
+              "eu": "gosaldu",
+              "es": "desayunar"
             },
             {
               "eu": "dutxatu",
@@ -2583,8 +2585,8 @@
           "instruccion": "Empareja la rutina diaria",
           "pares": [
             {
-              "eu": "etxeko lanak",
-              "es": "las tareas de casa"
+              "eu": "dutxatu",
+              "es": "ducharse"
             },
             {
               "eu": "gosaldu",
@@ -2833,7 +2835,7 @@
           "opciones": [
             "la uva",
             "comer",
-            "estoy (haciendo algo)",
+            "la pera",
             "(yo) como"
           ],
           "correcta": 0,
@@ -3012,7 +3014,7 @@
             "las tareas de casa",
             "poner",
             "la carne",
-            "el café"
+            "caldo casero"
           ],
           "correcta": 0,
           "explicacion": "etxeko lanak = las tareas de casa."
@@ -3101,7 +3103,7 @@
             "la sal",
             "la fresa",
             "vestirse",
-            "está (haciendo algo)"
+            "el queso"
           ],
           "correcta": 0,
           "explicacion": "gatza = la sal."
@@ -3217,7 +3219,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Al negar, el auxiliar…",
+          "pregunta": "Al negar, el auxiliar (dut, por ejemplo)…",
           "opciones": [
             "se queda donde estaba",
             "salta justo detrás de «ez»",
@@ -3374,15 +3376,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Ez dakit» es la negación de…",
+          "pregunta": "«Ez dut ogia jaten», con artículo, se entiende como…",
           "opciones": [
-            "dut",
-            "dakit (sé)",
-            "naiz",
-            "dago"
+            "no como pan, nunca",
+            "no como ese pan de ahí",
+            "no hay pan",
+            "no me gusta el pan"
           ],
           "correcta": 1,
-          "explicacion": "No sé."
+          "explicacion": "Con artículo hablas de un pan concreto. Para «no como pan» en general va el partitivo: «Ez dut ogirik jaten»."
         },
         {
           "tipo": "pares",
@@ -3703,20 +3705,20 @@
             "son de dialectos distintos"
           ],
           "correcta": 1,
-          "explicacion": "El orden admite las dos."
+          "explicacion": "Las dos preguntan «¿qué estás haciendo?». El orden admite las dos."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Ari naiz» sin verbo delante significa…",
+          "pregunta": "Ogia jaten ari ____ (estoy comiendo pan).",
           "opciones": [
-            "estoy",
-            "estoy en ello",
-            "soy",
-            "voy"
+            "dut",
+            "naiz",
+            "du",
+            "da"
           ],
           "correcta": 1,
-          "explicacion": "Se sobreentiende lo que estás haciendo."
+          "explicacion": "Con «ari» el auxiliar es siempre «izan»: «ogia jaten ari naiz», aunque la frase lleve objeto."
         },
         {
           "tipo": "opcion",
@@ -3938,7 +3940,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Truco de la ficha: la sal es la corta. ¿Cuál es?",
+          "pregunta": "¿Cómo se dice «sal»? (¡Y no lo confundas con el queso!)",
           "opciones": [
             "gatza",
             "azukrea",
@@ -3946,7 +3948,7 @@
             "gazta"
           ],
           "correcta": 0,
-          "explicacion": "gatza (sal) y azukrea (azúcar)."
+          "explicacion": "gatza (sal) y gazta (queso): las mismas letras, con la t y la z al revés."
         }
       ],
       "subnivel": "7.5"
