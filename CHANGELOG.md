@@ -1063,3 +1063,43 @@ Los cambios se aplicaron con asserts sobre el valor anterior —dos
 `.replace()` silenciosos en tandas pasadas dieron por hecho un cambio
 que no se guardó— y el juego de avisos de `verificar.py` queda
 idéntico al de antes (322, ninguno nuevo). `probar-todo.sh` en verde.
+
+## 2026-09-02 — El calendario de repaso, y una ruta en la cabecera
+
+Ric: «no puede ser que si he hecho todo al día, me diga al día siguiente
+que tengo 177 ejercicios por hacer hoy». Era verdad y no era un fallo
+suelto: con 881 fichas (355 grupos + 526 palabras) y la escala
+`1,2,4,8,16,32,64,120`, un alumno al día tiene ~50 repasos diarios y
+picos de 170. Simulado antes de tocar nada, el modelo reproduce sus 177.
+
+- **La escala se abre** a `1,3,7,16,35,75,150,300`. Mismos ocho
+  peldaños, más separados: la carga media baja un 25% y las dos
+  primeras repeticiones, que son las que sujetan, no se tocan. Las
+  fechas ya guardadas no se recalculan; cada ficha coge el intervalo
+  nuevo la próxima vez que sale.
+- **Lo atrasado se reparte en cola** (`repartirAtrasos`). Cuando lo
+  vencido pasa de 45, se escalona por los días siguientes, 45 por día y
+  por orden de urgencia; nada se adelanta y nada se perdona. Sirve para
+  el atasco que dejó la escala vieja —cambiarla no lo quita, porque las
+  fechas ya estaban guardadas— y para volver de dos semanas fuera sin
+  encontrarse 400 pendientes.
+- **La portada dice el trabajo del día, no la deuda**: «23 ejercicios
+  para hoy». Y es verdad, no un recorte al pintar: el reparto ya ha
+  dejado lo vencido por debajo del tope, así que al terminar el día
+  pone «¡Completado!» de verdad.
+- **La sesión se compone a propósito**, 40% de lo fallado hace poco y
+  40% de lo aprobado hace mucho. Con la urgencia a secas, un atraso de
+  170 hacía que nunca llegaras a lo que vencía hoy: se quedaba siempre
+  detrás de la deuda vieja, que es media gracia del repaso perdida.
+- **Cupo de novedades** (20 al día) en lo que estrenan los repasos. Lo
+  que estrenas practicando una unidad no cuenta: eso lo decides tú.
+
+Y la cabecera pasa a ser navegable: los dos trozos del título (unidad y
+tema) abren un panel con pestañas —las diez unidades con su progreso,
+los temas de la que tengas abierta, y la portada— para saltar sin tener
+que salir hasta el inicio. Pedido de Ric.
+
+Banco de pruebas nuevo, `scripts/probar_calendario.js`, dentro de
+`probar-todo.sh`: comprueba el reparto, la mezcla de la sesión, el cupo
+y que la cifra de la portada sea la de verdad. Verificado además a mano
+en local, sembrando 200 fichas vencidas: quedaron 45/45/45/45/20.

@@ -67,8 +67,35 @@
      lleva un paso dentro de esta escala, en días. Aciertas: subes un
      peldaño y no vuelve hasta entonces. Fallas: vuelves al principio y
      te sale mañana. La escala es corta al principio, que es donde se
-     olvida, y se abre deprisa cuando algo ya está asentado. */
-  var PASOS = [1, 2, 4, 8, 16, 32, 64, 120];
+     olvida, y se abre deprisa cuando algo ya está asentado.
+
+     La escala era [1,2,4,8,16,32,64,120] y se abrió el 02/09/2026. Con
+     881 fichas —355 grupos y 526 palabras— esos intervalos cortos dan
+     unos 50 repasos al día haciéndolo todo bien, con picos de 170: Ric
+     se encontró 177 pendientes justo al día siguiente de ponerse al
+     día. Son los mismos ocho peldaños, más separados; baja la carga
+     media un 25% sin tocar las dos primeras repeticiones, que son las
+     que sujetan. Las fechas ya guardadas no se recalculan solas: cada
+     ficha coge el intervalo nuevo la próxima vez que sale. */
+  var PASOS = [1, 3, 7, 16, 35, 75, 150, 300];
+
+  /* Fichas nuevas que pueden entrar al calendario desde los repasos en
+     un mismo día. Sin tope, el repaso de vocabulario estrena palabras a
+     puñados y todas caen en los peldaños bajos a la vez: de ahí las
+     oleadas. Lo que estrenas practicando una unidad no cuenta aquí —eso
+     lo decides tú al abrirla. */
+  var CUPO_NUEVOS = 20;
+
+  /* Lo que la portada llama "hoy". Por encima de esto la cuenta deja de
+     crecer: el resto espera su turno sin gritar. Ver un 177 después de
+     haberlo hecho todo desanima más de lo que ayuda. */
+  var TOPE_DIA = 45;
+
+  /* Cómo se reparte una sesión de repaso. Con la urgencia a secas, un
+     atraso de 170 hacía que nunca llegaras a lo que vence hoy —lo que
+     aprobaste hace tiempo, que es media gracia del repaso—: se quedaba
+     siempre detrás de la deuda vieja. */
+  var MEZCLA = { flojo: 0.40, veterano: 0.40 };   // el resto: novedades y lo que quepa
 
   var estado = {
     pantalla: 'home',
@@ -92,6 +119,9 @@
 
   var el = {
     topbarTitle: $('topbarTitle'),
+    rutamenu: $('rutamenu'),
+    rutaTabs: $('rutaTabs'),
+    rutaLista: $('rutaLista'),
     btnBack: $('btnBack'),
     progressbar: $('progressbar'),
     progressbarFill: $('progressbarFill'),
@@ -566,7 +596,7 @@
   // ─────────── Persistencia ───────────
 
   function progresoVacio() {
-    return { version: 2, unidades: {}, ultimas: {}, srs: {} };
+    return { version: 2, unidades: {}, ultimas: {}, srs: {}, estreno: null, repartido: 0 };
   }
 
   /* La v2 añade `srs`: el calendario de repaso, una entrada por ítem.
@@ -580,6 +610,8 @@
       if (viejo.unidades) p.unidades = viejo.unidades;
       if (viejo.ultimas) p.ultimas = viejo.ultimas;
       if (viejo.srs) p.srs = viejo.srs;
+      if (viejo.estreno) p.estreno = viejo.estreno;
+      if (viejo.repartido) p.repartido = viejo.repartido;
     }
     return p;
   }
@@ -712,10 +744,28 @@
     return !!f && f.toca <= dia;
   }
 
+  /* Cuántas fichas se han estrenado hoy, por tipo ('g' de grupo, 'v' de
+     palabra). Va con el día pegado para que a medianoche vuelva a cero
+     sola, sin tener que limpiarla desde ningún sitio. */
+  function estrenosHoy(tipo) {
+    var e = progreso.estreno;
+    return (e && e.dia === hoy()) ? (e[tipo] || 0) : 0;
+  }
+
+  function apuntarEstreno(clave) {
+    var e = progreso.estreno;
+    if (!e || e.dia !== hoy()) e = progreso.estreno = { dia: hoy(), g: 0, v: 0 };
+    var tipo = clave.charAt(0);
+    e[tipo] = (e[tipo] || 0) + 1;
+  }
+
   function anotar(clave, ok) {
     if (!clave) return;
     var f = progreso.srs[clave];
-    if (!f) f = progreso.srs[clave] = { paso: 0, toca: 0, aciertos: 0, fallos: 0, visto: 0 };
+    if (!f) {
+      f = progreso.srs[clave] = { paso: 0, toca: 0, aciertos: 0, fallos: 0, visto: 0 };
+      apuntarEstreno(clave);
+    }
     if (ok) {
       f.aciertos++;
       f.paso = Math.min(f.paso + 1, PASOS.length - 1);
@@ -737,25 +787,84 @@
      final se baraja: la urgencia decide qué entra, no en qué orden sale. */
   function elegirSesion(candidatos, cuantos, claveDe) {
     var dia = hoy();
-    var pendientes = [], nuevos = [], resto = [];
+    var flojos = [], veteranos = [], nuevos = [], resto = [], tipo = null;
 
     candidatos.forEach(function (c, orden) {
-      var f = ficha(claveDe(c));
+      var clave = claveDe(c);
+      if (tipo === null) tipo = clave.charAt(0);
+      var f = ficha(clave);
       if (!f)                 nuevos.push({ c: c, orden: orden });
-      else if (f.toca <= dia) pendientes.push({ c: c, f: f, orden: orden });
+      else if (f.toca <= dia) (f.paso <= 1 ? flojos : veteranos).push({ c: c, f: f, orden: orden });
       else                    resto.push({ c: c, f: f, orden: orden });
     });
 
-    pendientes.sort(function (a, b) {
-      if (a.f.toca !== b.f.toca) return a.f.toca - b.f.toca;      // el más atrasado
-      if (a.f.fallos !== b.f.fallos) return b.f.fallos - a.f.fallos; // el más fallado
+    // Dentro de cada montón manda la urgencia, y a igualdad, lo más fallado.
+    function urgencia(a, b) {
+      if (a.f.toca !== b.f.toca) return a.f.toca - b.f.toca;
+      if (a.f.fallos !== b.f.fallos) return b.f.fallos - a.f.fallos;
       return a.orden - b.orden;
-    });
+    }
+    flojos.sort(urgencia);
+    veteranos.sort(urgencia);
     nuevos.sort(function (a, b) { return a.orden - b.orden; });
     resto.sort(function (a, b) { return a.f.toca - b.f.toca; });
 
-    var cola = pendientes.concat(nuevos, resto).map(function (x) { return x.c; });
-    return barajar(cola.slice(0, cuantos));
+    // Las novedades tienen cupo diario; lo ya estrenado hoy resta.
+    nuevos = nuevos.slice(0, Math.max(0, CUPO_NUEVOS - estrenosHoy(tipo || 'g')));
+
+    /* Se reserva sitio a los dos montones que pidió Ric —lo que fallaste
+       hace poco y lo que aprobaste hace mucho— y luego se rellena con lo
+       que haya. Si no hay veteranos vencidos su hueco se lo quedan los
+       flojos, y al revés: nadie se queda fuera por falta de sitio. */
+    var cola = flojos.slice(0, Math.round(cuantos * MEZCLA.flojo))
+       .concat(veteranos.slice(0, Math.round(cuantos * MEZCLA.veterano)));
+    [flojos, veteranos, nuevos, resto].forEach(function (monton) {
+      monton.forEach(function (x) {
+        if (cola.length < cuantos && cola.indexOf(x) < 0) cola.push(x);
+      });
+    });
+
+    return barajar(cola.slice(0, cuantos).map(function (x) { return x.c; }));
+  }
+
+  /* Cuando el atasco se dispara, se escalona: lo vencido se reparte por
+     los días siguientes, TOPE_DIA por día y por orden de urgencia. Los
+     primeros TOPE_DIA siguen siendo de hoy, y ninguna ficha se adelanta
+     —solo se mueven hacia adelante—, así que no se pierde ni se perdona
+     nada: se hace cola en vez de montón.
+
+     Sirve para dos cosas. Una, de una vez: el atasco que dejó la escala
+     corta, que cambiarla no quita por sí solo, porque las fechas ya
+     estaban guardadas. Y otra, siempre: volver después de dos semanas
+     sin abrir la app y encontrarte 400 pendientes es la otra forma de
+     abandonar.
+
+     El disparador es el propio tope, y esto importa: en cuanto lo
+     vencido pasa de TOPE_DIA se reparte, así que la cifra de la portada
+     nunca lo supera porque es verdad, no porque se recorte al pintarla.
+     Un tope de pintura diría 45 con 87 detrás, y al terminar esos 45
+     seguiría diciendo 45. Repartiendo, terminas el día y pone
+     "¡Completado!". No se repite dentro del mismo día. */
+  var REPARTIR_DESDE = TOPE_DIA;
+
+  function repartirAtrasos() {
+    var dia = hoy();
+    if (progreso.repartido === dia) return 0;
+    var vencidos = Object.keys(progreso.srs).filter(function (k) {
+      return progreso.srs[k].toca <= dia;
+    });
+    if (vencidos.length <= REPARTIR_DESDE) return 0;
+    progreso.repartido = dia;
+    vencidos.sort(function (a, b) {
+      var fa = progreso.srs[a], fb = progreso.srs[b];
+      if (fa.toca !== fb.toca) return fa.toca - fb.toca;
+      return (fb.fallos || 0) - (fa.fallos || 0);
+    });
+    vencidos.forEach(function (k, i) {
+      progreso.srs[k].toca = dia + Math.floor(i / TOPE_DIA);
+    });
+    guardarProgreso();
+    return vencidos.length;
   }
 
   /* Para la portada: cuántos vencen hoy y cuántos no se han visto nunca.
@@ -768,6 +877,10 @@
       if (!f) r.nuevos++;
       else if (f.toca <= dia) r.vencidos++;
     });
+    /* Red de seguridad: repartirAtrasos() deja lo vencido por debajo del
+       tope al arrancar, así que casi siempre `hoy` y `vencidos` son lo
+       mismo. Solo se separan si algo vence con la app ya abierta. */
+    r.hoy = Math.min(r.vencidos, TOPE_DIA);
     return r;
   }
 
@@ -775,7 +888,7 @@
   function frasePendientes(r, singular, plural) {
     if (!r.total) return '';
     if (r.vencidos) {
-      return r.vencidos + (r.vencidos === 1 ? ' ' + singular + ' te toca hoy' : ' ' + plural + ' te tocan hoy');
+      return r.hoy + (r.hoy === 1 ? ' ' + singular + ' para hoy' : ' ' + plural + ' para hoy');
     }
     if (r.nuevos) {
       return 'Al día · ' + r.nuevos + ' sin estrenar';
@@ -796,6 +909,7 @@
     el.hearts.hidden = (nombre !== 'quiz');
     el.btnDialecto.hidden = (nombre !== 'home');
     el.btnCuenta.hidden = (nombre !== 'home');
+    cerrarRuta();
     ocultarFeedback();
     window.scrollTo(0, 0);
   }
@@ -844,7 +958,7 @@
   // ─────────── Pantalla: inicio ───────────
 
   function pantallaHome() {
-    el.topbarTitle.textContent = 'Euskaraz';
+    tituloBarra('Euskaraz');
     el.heroSub.textContent = CURSO.meta.subtitulo;
 
     var hechas = 0, palabras = 0;
@@ -940,7 +1054,7 @@
     if (vocab.length >= 4) {
       totalHoy++;
       var rVo = recuento(vocab, claveDeVocab);
-      pintarPendiente(el.vocabRepasoDue, rVo.vencidos);
+      pintarPendiente(el.vocabRepasoDue, rVo.hoy);
       if (rVo.vencidos === 0 && !rVo.nuevos) {
         el.vocabRepasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
         el.vocabRepasoCount.className = 'navcard__sub navcard__sub--ok';
@@ -959,7 +1073,7 @@
     if (fondo.length) {
       totalHoy++;
       var rEj = recuento(fondo, claveDeFondo);
-      pintarPendiente(el.repasoDue, rEj.vencidos);
+      pintarPendiente(el.repasoDue, rEj.hoy);
       if (rEj.vencidos === 0 && !rEj.nuevos) {
         el.repasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
         el.repasoCount.className = 'navcard__sub navcard__sub--ok';
@@ -1061,7 +1175,7 @@
     guardarProgreso();
     precargarAudioDeUnidad(u);
 
-    el.topbarTitle.textContent = u.titulo;
+    tituloBarra(u.titulo);
     el.unitHeroNum.textContent = u.numero + '. unitatea';
     el.unitHeroTitle.textContent = u.titulo;
     el.unitHeroSub.textContent = u.subtitulo;
@@ -1277,14 +1391,115 @@
      ejercicio no sabías de qué tema era (pedido por Ric). Va en una sola
      línea porque la barra tiene altura fija, con la unidad en gris para
      que el tema siga leyéndose como el titular. */
+  var CHEV_RUTA = '<svg class="rutaseg__chev" viewBox="0 0 24 24" aria-hidden="true">' +
+                  '<path d="M6 9l6 6 6-6"/></svg>';
+
+  function segmentoRuta(clase, texto, cual) {
+    return '<button class="' + clase + ' rutaseg" type="button" data-ruta="' + cual + '"' +
+           ' aria-haspopup="true"><span class="rutaseg__txt">' + esc(texto) + '</span>' +
+           CHEV_RUTA + '</button>';
+  }
+
   function tituloBarra(unidad, tema) {
     // La clase la pone el JS en vez de usar :has() en el CSS: :has() es
     // reciente y esto tiene que verse igual en cualquier navegador.
     el.topbarTitle.classList.toggle('topbar__title--doble', !!tema);
     el.topbarTitle.innerHTML = tema
-      ? '<span class="topbar__ctx">' + esc(unidad) + '</span>' +
-        '<span class="topbar__tema">' + esc(tema) + '</span>'
-      : esc(unidad);
+      ? segmentoRuta('topbar__ctx', unidad, 'unidades') +
+        segmentoRuta('topbar__tema', tema, 'temas')
+      : segmentoRuta('topbar__solo', unidad, 'unidades');
+  }
+
+  // ─────────── Ruta desplegable de la cabecera ───────────
+
+  /* La cabecera decía dónde estabas, pero no llevaba a ningún sitio: para
+     ir del vocabulario de la 3 a la unidad 7 había que salir hasta la
+     portada y volver a entrar (pedido de Ric). Ahora los dos trozos del
+     título son botones y abren el mismo panel por pestañas: arriba las
+     unidades, abajo los temas de la que tengas abierta.
+
+     Un solo panel con dos pestañas, y no dos desplegables distintos: en
+     el móvil dos menús que se tapan entre ellos son un lío, y así puedes
+     saltar de tema a unidad sin cerrar y volver a abrir. */
+  var rutaAbierta = null;   // 'unidades' | 'temas' | null
+
+  function cerrarRuta() {
+    if (!rutaAbierta) return;
+    rutaAbierta = null;
+    el.rutamenu.hidden = true;
+    el.rutaLista.innerHTML = '';
+    el.rutaTabs.innerHTML = '';
+  }
+
+  function filaRuta(tipo, id, texto, meta, marca) {
+    return '<button class="rutafila' + (marca ? ' rutafila--' + marca : '') + '"' +
+      ' type="button" data-tipo="' + tipo + '" data-id="' + esc(id) + '">' +
+      '<span class="rutafila__txt">' + esc(texto) + '</span>' +
+      (meta ? '<span class="rutafila__meta">' + esc(meta) + '</span>' : '') +
+      '</button>';
+  }
+
+  function listaUnidades() {
+    var aqui = estado.unidad && estado.unidad.id;
+    var filas = [filaRuta('home', '', 'Portada', '', 'portada')];
+    CURSO.unidades.forEach(function (u) {
+      var pu = progresoUnidad(u);
+      var meta = tieneSubniveles(u) ? pu.hechos + ' de ' + pu.total
+                                    : (pu.completada ? 'hecha' : '');
+      filas.push(filaRuta('unidad', u.id, u.numero + '. ' + u.titulo, meta,
+        u.id === aqui ? 'aqui' : (pu.completada ? 'ok' : '')));
+    });
+    return filas.join('');
+  }
+
+  function listaTemas() {
+    var u = estado.unidad;
+    if (!u || !tieneSubniveles(u)) return '';
+    var filas = u.subniveles.map(function (s) {
+      return filaRuta('tema', s.id, s.id + ' ' + s.titulo,
+        (progSub(u.id, s.id).mejor || 0) >= 0.7 ? 'hecho' : '',
+        s.id === estado.subnivel ? 'aqui' : '');
+    });
+    if (delSubnivel(u.ejercicios, 'test').length) {
+      filas.push(filaRuta('tema', 'test', 'Test de unidad',
+        progUnidad(u.id).completada ? 'hecho' : '',
+        estado.subnivel === 'test' ? 'aqui' : ''));
+    }
+    return filas.join('');
+  }
+
+  function abrirRuta(cual) {
+    if (!CURSO) return;                       // aún cargando: no hay qué enseñar
+    var hayTemas = !!(estado.unidad && tieneSubniveles(estado.unidad));
+    if (cual === 'temas' && !hayTemas) cual = 'unidades';
+    if (rutaAbierta === cual) { cerrarRuta(); return; }   // el mismo botón, se cierra
+    rutaAbierta = cual;
+    el.rutaTabs.innerHTML = hayTemas
+      ? ['unidades', 'temas'].map(function (t) {
+          return '<button class="rutatab' + (t === cual ? ' rutatab--on' : '') +
+                 '" type="button" data-tab="' + t + '">' +
+                 (t === 'unidades' ? 'Unidades' : 'Temas de la ' + estado.unidad.numero) +
+                 '</button>';
+        }).join('')
+      : '';
+    el.rutaLista.innerHTML = cual === 'temas' ? listaTemas() : listaUnidades();
+    el.rutamenu.hidden = false;
+    var aqui = el.rutaLista.querySelector('.rutafila--aqui');
+    if (aqui && aqui.scrollIntoView) aqui.scrollIntoView({ block: 'nearest' });
+  }
+
+  function irPorRuta(tipo, id) {
+    cerrarRuta();
+    if (tipo === 'home') { pantallaHome(); return; }
+    if (tipo === 'unidad') {
+      var u = CURSO.unidades.filter(function (x) { return x.id === id; })[0];
+      if (u) pantallaUnidad(u);
+      return;
+    }
+    if (tipo === 'tema' && estado.unidad) {
+      if (id === 'test') pantallaUnidad(estado.unidad);   // el test se lanza desde la unidad
+      else pantallaSubnivel(id);
+    }
   }
 
   /* El tema en el que estás, o null si la unidad no los tiene. */
@@ -1472,7 +1687,7 @@
     estado.aciertos = 0;
     estado.fallos = 0;
     estado.falladas = [];
-    el.topbarTitle.textContent = 'Repaso mezclado';
+    tituloBarra('Repaso mezclado');
     mostrar('quiz');
     pintarEjercicio();
   }
@@ -1921,7 +2136,7 @@
     estado.aciertos = 0;
     estado.fallos = 0;
     estado.falladas = [];
-    el.topbarTitle.textContent = 'Vocabulario';
+    tituloBarra('Vocabulario');
     mostrar('quiz');
     pintarEjercicio();
   }
@@ -2110,7 +2325,7 @@
   }
 
   function pantallaDiccionario() {
-    el.topbarTitle.textContent = 'Diccionario';
+    tituloBarra('Diccionario');
     pintarDiccionario(el.dictInput.value);
     mostrar('dict');
   }
@@ -2118,7 +2333,7 @@
   // ─────────── Cuenta ───────────
 
   function pantallaCuenta(mensajeInicial) {
-    el.topbarTitle.textContent = 'Tu cuenta';
+    tituloBarra('Tu cuenta');
     sb.auth.getSession().then(function (r) {
       var email = r.data && r.data.session ? r.data.session.user.email : '';
       el.cuentaEmail.textContent = email;
@@ -3076,7 +3291,7 @@
                  casilla(Math.round(ratio * 100), 'por ciento', null);
     }
 
-    el.topbarTitle.textContent = 'Resultado';
+    tituloBarra('Resultado');
     el.resultContent.innerHTML =
       '<div class="result__mark"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>' +
       '<h1 class="result__title' + (tituloBien ? ' es-bien' : '') + '">' + esc(titulo) + '</h1>' +
@@ -3104,6 +3319,36 @@
   }
 
   // ─────────── Eventos globales ───────────
+
+  el.topbarTitle.addEventListener('click', function (e) {
+    var seg = e.target.closest('.rutaseg');
+    if (seg) abrirRuta(seg.dataset.ruta);
+  });
+  el.rutamenu.addEventListener('click', function (e) {
+    var tab = e.target.closest('.rutatab');
+    if (tab) {
+      /* Cambiar de pestaña vuelve a pintar el panel, así que este botón
+         se queda suelto fuera del documento. El vigilante de "has tocado
+         fuera" mira con closest(), y sobre un nodo ya desenganchado le
+         dice que sí: sin cortar aquí la burbuja, cambiar de pestaña
+         cerraba el menú. */
+      e.stopPropagation();
+      rutaAbierta = null;
+      abrirRuta(tab.dataset.tab);
+      return;
+    }
+    var fila = e.target.closest('.rutafila');
+    if (fila) irPorRuta(fila.dataset.tipo, fila.dataset.id);
+  });
+  // Tocar fuera o pulsar Escape lo cierra, como cualquier menú.
+  document.addEventListener('click', function (e) {
+    if (!rutaAbierta) return;
+    if (e.target.closest('#rutamenu') || e.target.closest('.rutaseg')) return;
+    cerrarRuta();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') cerrarRuta();
+  });
 
   el.btnBack.addEventListener('click', atras);
   el.btnCheck.addEventListener('click', comprobar);
@@ -3427,6 +3672,7 @@
       .then(function (r) {
         CURSO = r[0];
         progreso = r[1];
+        repartirAtrasos();
         document.title = CURSO.meta.titulo + ' · Aprende euskera desde cero';
         if (enRecuperacion) {
           enRecuperacion = false;
