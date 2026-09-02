@@ -3674,6 +3674,30 @@ código.
 
 ## Implementadas
 
+- **2026-09-02 · Quinta tanda de revisión (20 arreglos, unidad 7).**
+  Primera publicada por la vía automática de Miguel (`ric/publicar`).
+  Traducción añadida al texto de post-respuesta donde se acertaba el
+  auxiliar sin entender la frase (`u8-g02` entero); distractores de
+  otra categoría gramatical o que también eran correctos, cambiados en
+  cinco preguntas de vocabulario; tres ejercicios de parejas en los que
+  la única entrada de varias palabras se emparejaba sola; dos preguntas
+  retiradas —«*ari naiz* = estoy en ello», que contradecía la ficha de
+  su propio tema y que los nativos no reconocen, y «*ez dakit* es la
+  negación de…», que se contestaba sin leer—; el truco de la sal, que
+  no se sostenía con *gazta* entre las opciones. «Tomo café» acepta
+  ahora también `kafea edaten dut`: Elhuyar documenta *kafea hartu*
+  (acepción 6 de *hartu*: tomar, beber, comer) y la unidad enseña
+  *kafea edaten* en cuatro sitios.
+
+  Queda **abierto un patrón de fondo** que salió al ordenar la tanda:
+  en las preguntas de vocabulario («¿Qué significa X?») hay **132
+  variantes en las diez unidades** con algún distractor de otra
+  categoría gramatical —un verbo o una perífrasis compitiendo con un
+  sustantivo—, que se descartan sin saber la palabra. Las peores están
+  en `04-zenbat` (33), `10-atzo` (24), `08-mugi` y `09-gustatzen` (17
+  cada una). Pendiente de decidir con Ric si se barren todas.
+
+
 - **2026-08-26 · Media docena de arreglos pequeños de `ric/trabajo`**
   (commits `10a9933`, `104b3f2`, `00ff5c8`, `ed9af82`, `f0b9ff6`,
   `25c1fd2`, con Claude Fable), sin tocar la reestructuración de 10
