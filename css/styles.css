@@ -144,6 +144,21 @@ svg{
 .topbar__back:active{ color: var(--acento); }
 .topbar__back[hidden]{ display: none; }
 
+/* El lauburu: ancla fija a la izquierda y atajo al inicio. Toma el rojo
+   de la marca por currentColor, no el del archivo, para que siga a la
+   paleta si algún día cambia. */
+.topbar__marca{
+  flex: 0 0 auto;
+  display: flex; align-items: center;
+  width: 26px; height: 26px;
+  margin: 0; padding: 0; border: 0; background: transparent;
+  color: var(--acento);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.topbar__marca svg{ width: 100%; height: 100%; fill: currentColor; stroke: currentColor; stroke-width: 1.65px; }
+.topbar__marca:active{ opacity: .55; }
+
 .topbar__mid{ flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 7px; }
 
 .topbar__title{
@@ -171,6 +186,76 @@ svg{
 .topbar__tema{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .topbar__right{ flex: 0 0 auto; display: flex; align-items: center; gap: var(--u); }
+
+/* ── Ruta desplegable de la cabecera ──────────────────────────────────
+   Los trozos del título son botones. Se resetean a mano porque un
+   <button> trae su propia tipografía y su propio padding, y aquí tiene
+   que leerse exactamente igual que cuando era un <span>. */
+.rutaseg{
+  display: flex; align-items: center; gap: 4px;
+  max-width: 100%;
+  margin: 0; padding: 0; border: 0; background: transparent;
+  font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit;
+  text-align: left; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.rutaseg__txt{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rutaseg__chev{
+  flex: 0 0 auto; width: 13px; height: 13px;
+  fill: none; stroke: currentColor; stroke-width: 2.4;
+  stroke-linecap: round; stroke-linejoin: round;
+  opacity: .45; transition: transform .15s ease;
+}
+.rutaseg:active .rutaseg__chev,
+.rutaseg[aria-expanded="true"] .rutaseg__chev{ opacity: .9; }
+.topbar__solo{ font: inherit; }
+
+.rutamenu{
+  position: fixed; z-index: 45;
+  top: calc(var(--h-top) + env(safe-area-inset-top, 0px));
+  left: 0; right: 0;
+  max-height: min(70vh, 520px);
+  display: flex; flex-direction: column;
+  background: var(--papel-alto);
+  border-bottom: 1px solid var(--filete);
+  box-shadow: 0 12px 28px rgba(22, 21, 19, .12);
+}
+.rutamenu[hidden]{ display: none; }
+@media (min-width: 720px){
+  .rutamenu{ left: auto; right: auto; width: 420px; margin-left: var(--margen);
+             border: 1px solid var(--filete); border-radius: 10px; }
+}
+
+.rutamenu__tabs{ display: flex; gap: 0; border-bottom: 1px solid var(--filete); }
+.rutamenu__tabs:empty{ display: none; }
+.rutatab{
+  flex: 1 1 0; padding: calc(var(--u) * 1.5) var(--u);
+  border: 0; border-bottom: 2px solid transparent; background: transparent;
+  font-family: var(--f); font-size: var(--t-xs); font-weight: 500;
+  color: var(--tinta-45); cursor: pointer;
+}
+.rutatab--on{ color: var(--tinta); border-bottom-color: var(--acento); }
+
+.rutamenu__lista{ overflow-y: auto; -webkit-overflow-scrolling: touch; padding: var(--u) 0; }
+
+.rutafila{
+  display: flex; align-items: center; gap: var(--u);
+  width: 100%; padding: calc(var(--u) * 1.25) var(--margen);
+  border: 0; background: transparent; text-align: left; cursor: pointer;
+  font-family: var(--f); font-size: var(--t-s); color: var(--tinta);
+}
+.rutafila:active{ background: var(--papel); }
+.rutafila__txt{ flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rutafila__meta{ flex: 0 0 auto; font-size: var(--t-xs); color: var(--tinta-45); }
+
+/* Dónde estás, en rojo y en negrita; lo ya superado, con el verde de
+   acierto en la cifra de la derecha. La portada va separada del resto
+   por un filete, que no es una unidad. */
+.rutafila--aqui{ color: var(--acento); font-weight: 600; }
+.rutafila--aqui .rutafila__meta{ color: var(--acento); }
+.rutafila--ok .rutafila__meta{ color: var(--bien-txt); }
+.rutafila--portada{ border-bottom: 1px solid var(--filete); margin-bottom: var(--u);
+                    padding-bottom: calc(var(--u) * 1.5); font-weight: 500; }
 
 .dialecto{
   display: flex; align-items: center;
@@ -454,7 +539,11 @@ body.silencioso .pair__play{ display: none; }
 }
 .unitcard:active{ opacity: .5; }
 
+/* Número y, si la unidad está hecha, el ✓ detrás. Los dos: el ✓ dice que
+   está superada y el número dice cuál es, que es la referencia para
+   moverse por la lista. */
 .unitcard__badge{
+  display: flex; align-items: center; gap: 3px;
   font-size: var(--t-s);
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -462,7 +551,9 @@ body.silencioso .pair__play{ display: none; }
   color: var(--tinta-45);
   font-variant-numeric: tabular-nums;
 }
-.unitcard__badge svg{ width: 15px; height: 15px; stroke-width: 2.4; color: var(--bien-txt); }
+/* Más pequeño que cuando iba solo: ahora acompaña al número, no lo
+   sustituye, y las dos cosas tienen que caber en la columna de 34px. */
+.unitcard__badge svg{ width: 12px; height: 12px; stroke-width: 2.6; color: var(--bien-txt); }
 .unitcard__badge--activa{ color: var(--progreso-empezada); }
 .unitcard__badge--ok{ color: var(--bien-txt); }
 

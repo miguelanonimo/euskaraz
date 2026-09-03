@@ -15,7 +15,7 @@
 <link rel="manifest" href="site.webmanifest">
 <!-- El ?v= se sube al cambiar CSS o JS: sin él, el navegador sirve
      la copia cacheada y se ven estilos viejos sobre marcado nuevo. -->
-<link rel="stylesheet" href="css/styles.css?v=2">
+<link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 <body>
 
@@ -25,6 +25,11 @@
   <header class="topbar" id="topbar">
     <button class="topbar__back" id="btnBack" aria-label="Volver" hidden>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <!-- El lauburu está siempre, y siempre lleva al inicio: es el ancla
+         de la app. El original lo mandó Ric; queda en icons/lauburu.svg. -->
+    <button class="topbar__marca" id="btnMarca" type="button" title="Ir al inicio" aria-label="Ir al inicio">
+      <svg viewBox="0 0 500 500" aria-hidden="true"><path d="M250.01,250c-54.54-10-90.65-62.32-80.65-116.86,10-54.54,62.32-90.65,116.86-80.65,27.27,5,45.32,31.16,40.33,58.44-5,27.27-31.16,45.32-58.44,40.33-27.27-5-53.43,13.06-58.44,40.33-5,27.27,13.06,53.43,40.33,58.44h0c10-54.54,62.32-90.65,116.86-80.65,54.54,10,90.65,62.32,80.65,116.86-5,27.27-31.16,45.32-58.44,40.33-27.27-5-45.32-31.16-40.33-58.44,5-27.27-13.06-53.43-40.33-58.44-27.27-5-53.43,13.06-58.44,40.33,54.54,10,90.65,62.32,80.65,116.86-10,54.54-62.32,90.65-116.86,80.65h0c-27.27-5-45.32-31.16-40.33-58.44,5-27.27,31.16-45.32,58.44-40.33,27.27,5,53.43-13.06,58.44-40.33,5-27.27-13.06-53.43-40.33-58.44-10,54.54-62.32,90.65-116.86,80.65-54.54-10-90.65-62.32-80.65-116.86,5-27.27,31.16-45.32,58.44-40.33,27.27,5,45.32,31.16,40.33,58.44-5,27.27,13.06,53.43,40.33,58.44s53.43-13.06,58.44-40.33"/></svg>
     </button>
     <div class="topbar__mid">
       <span class="topbar__title" id="topbarTitle">Euskaraz</span>
@@ -44,6 +49,13 @@
       <span class="hearts" id="hearts" hidden></span>
     </div>
   </header>
+
+  <!-- La ruta desplegable: sale al tocar el título de la cabecera y sirve
+       para saltar de unidad o de tema sin volver hasta la portada. -->
+  <div class="rutamenu" id="rutamenu" hidden>
+    <div class="rutamenu__tabs" id="rutaTabs"></div>
+    <div class="rutamenu__lista" id="rutaLista"></div>
+  </div>
 
   <!-- ══════════ PANTALLA: ACCESO ══════════ -->
   <main class="screen screen--auth" id="screenAuth" hidden>
@@ -335,6 +347,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
-<script src="js/app.js?v=2"></script>
+<script src="js/app.js?v=3"></script>
 </body>
 </html>

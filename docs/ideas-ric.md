@@ -3674,6 +3674,20 @@ código.
 
 ## Implementadas
 
+- **2026-09-02 · El calendario de repaso, replanteado.** Ric: al día
+  siguiente de ponerse al día le salían 177 pendientes. Se simuló antes
+  de tocar nada y el número sale solo: con 881 fichas y la escala corta,
+  un alumno al día tiene ~50 repasos diarios y picos de 170. Un tope de
+  45 al trabajo diario **empeoraba** las cosas (la cola se iba a 693: lo
+  no hecho se acumula sobre lo del día siguiente), así que el arreglo va
+  por otro lado — escala más abierta, reparto del atasco en cola,
+  sesión compuesta a propósito y cupo de novedades. Detalle en el
+  CHANGELOG.
+- **2026-09-02 · Ruta desplegable en la cabecera.** Los dos trozos del
+  título abren un panel con pestañas (unidades / temas de la unidad
+  abierta / portada). Antes solo había «atrás».
+
+
 - **2026-09-02 · Quinta tanda de revisión (20 arreglos, unidad 7).**
   Primera publicada por la vía automática de Miguel (`ric/publicar`).
   Traducción añadida al texto de post-respuesta donde se acertaba el
