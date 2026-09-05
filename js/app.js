@@ -693,7 +693,7 @@
       if (r.error) { console.error('Error guardando progreso', r.error); return; }
       if (r.data && r.data.length) { progresoActualizadoEn = ahora; return; }
       // No se actualizó ninguna fila: alguien más guardó primero. Adoptamos su versión.
-      cargarProgreso().then(function (p) { progreso = p; });
+      cargarProgreso().then(adoptarProgreso);
     });
   }
 
@@ -708,9 +708,20 @@
     // último del servidor antes de que esta pestaña, con datos viejos,
     // pueda llegar a guardar y perder ese avance.
     if (document.visibilityState === 'visible' && usuarioId && !guardarTimer) {
-      cargarProgreso().then(function (p) { progreso = p; });
+      cargarProgreso().then(adoptarProgreso);
     }
   });
+
+  /* Todo progreso que entra en la app pasa por aquí, venga del arranque,
+     de un conflicto al guardar o de volver a la pestaña. Antes cada sitio
+     hacía `progreso = p` por su cuenta y solo el arranque repartía los
+     atrasos, así que bastaba con que el servidor devolviera una copia sin
+     repartir para quedarse clavado en 45. */
+  function adoptarProgreso(p) {
+    progreso = p;
+    repartirAtrasos();
+    return p;
+  }
 
   function progUnidad(id) {
     if (!progreso.unidades[id]) {
@@ -845,12 +856,20 @@
      nunca lo supera porque es verdad, no porque se recorte al pintarla.
      Un tope de pintura diría 45 con 87 detrás, y al terminar esos 45
      seguiría diciendo 45. Repartiendo, terminas el día y pone
-     "¡Completado!". No se repite dentro del mismo día. */
+     "¡Completado!".
+
+     No lleva candado de "una vez al día", y es a propósito. Lo llevó, y
+     Ric se encontró 45 en repaso y 45 en vocabulario que no bajaban por
+     mucho que jugara: el reparto solo estaba enganchado al arranque, y
+     hay tres sitios más donde se adopta un progreso —el conflicto al
+     guardar, la vuelta a la pestaña y el cambio de sesión— que se lo
+     saltaban. Con la condición de arriba ya no hace falta candado: en
+     cuanto reparte, lo vencido baja del tope y la siguiente llamada no
+     hace nada. Se puede llamar cuantas veces se quiera. */
   var REPARTIR_DESDE = TOPE_DIA;
 
   function repartirAtrasos() {
     var dia = hoy();
-    if (progreso.repartido === dia) return 0;
     var vencidos = Object.keys(progreso.srs).filter(function (k) {
       return progreso.srs[k].toca <= dia;
     });
@@ -959,6 +978,10 @@
   // ─────────── Pantalla: inicio ───────────
 
   function pantallaHome() {
+    /* Última red: si por donde sea llega un progreso con más atraso del
+       que cabe en un día, se reparte antes de contar. Así la cifra que
+       se pinta es siempre la de un día de trabajo de verdad. */
+    repartirAtrasos();
     tituloBarra('Euskaraz');
     el.heroSub.textContent = CURSO.meta.subtitulo;
 
@@ -3687,8 +3710,7 @@
     Promise.all([cargarCurso(), cargarProgreso()])
       .then(function (r) {
         CURSO = r[0];
-        progreso = r[1];
-        repartirAtrasos();
+        adoptarProgreso(r[1]);
         document.title = CURSO.meta.titulo + ' · Aprende euskera desde cero';
         if (enRecuperacion) {
           enRecuperacion = false;

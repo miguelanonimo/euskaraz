@@ -65,7 +65,7 @@ comprobar('ningún día pasa del tope',
 comprobar('el primer día es hoy, no mañana', dias[0] === hoyEs);
 comprobar('nada queda atrasado después del reparto',
   dias.every(d => d >= hoyEs));
-comprobar('no se repite dentro del mismo día', api.repartirAtrasos() === 0);
+comprobar('llamarlo otra vez ya no mueve nada', api.repartirAtrasos() === 0);
 
 // Con poco atraso no toca nada: 40 vencidas (bajo el tope) siguen igual.
 api.reset();
@@ -79,6 +79,36 @@ api.reset();
 api.progreso.repartido = hoyEs - 14;
 for (let i = 0; i < 300; i++) api.progreso.srs['g:w' + i] = { paso: 3, toca: hoyEs - 14, fallos: 0 };
 comprobar('al volver de un parón vuelve a repartir', api.repartirAtrasos() === 300);
+
+/* La que se le escapó a Ric: tenía 45 en repaso y 45 en vocabulario y no
+   bajaban por mucho que jugara. Eran los dos topes tapando un atraso sin
+   repartir, porque el reparto solo corría al arrancar y cualquier otra
+   ruta que adoptara un progreso se lo saltaba. Ya no lleva candado de día,
+   así que da igual quién lo llame ni cuántas veces: si hay atraso, reparte.
+   La prueba fija las dos mitades — que repartir arregle el 45+45, y que
+   llamarlo con el candado "puesto" no lo impida. */
+api.reset();
+const gr = [], pa = [];
+for (let i = 0; i < 355; i++) { const k = 'g:x' + i; gr.push(k);
+  api.progreso.srs[k] = { paso: 2, toca: hoyEs - (i % 3), fallos: 0 }; }
+for (let i = 0; i < 526; i++) { const k = 'v:x' + i; pa.push(k);
+  api.progreso.srs[k] = { paso: 2, toca: hoyEs - (i % 3), fallos: 0 }; }
+api.progreso.repartido = hoyEs;          // como si ya hubiera corrido hoy
+comprobar('el 45+45 de Ric: los dos topes tapan el atraso',
+  api.recuento(gr, c => c).hoy === api.TOPE_DIA &&
+  api.recuento(pa, c => c).hoy === api.TOPE_DIA);
+api.repartirAtrasos();
+const tras = api.recuento(gr, c => c).vencidos + api.recuento(pa, c => c).vencidos;
+comprobar('y repartir lo deja en un día de trabajo, no en dos topes',
+  tras <= api.TOPE_DIA, 'quedaron ' + tras + ' vencidos entre los dos');
+// Y tres rondas de 15 lo dejan a cero, que es lo que Ric no conseguía.
+for (let r = 0; r < 3; r++) {
+  api.elegirSesion(gr, 15, c => c).forEach(k => api.anotar(k, true));
+}
+api.elegirSesion(pa, 15, c => c).forEach(k => api.anotar(k, true));
+comprobar('tres rondas vacían el día',
+  api.recuento(gr, c => c).vencidos + api.recuento(pa, c => c).vencidos === 0,
+  'quedan ' + (api.recuento(gr, c => c).vencidos + api.recuento(pa, c => c).vencidos));
 
 // ── La mezcla de la sesión ───────────────────────────────────────────────
 // 100 flojas (falladas hace poco) y 10 veteranas que vencen justo hoy: con la

@@ -1115,3 +1115,36 @@ Dos detalles más de la misma tanda:
 - **El número de la unidad ya no desaparece al completarla.** El ✓ lo
   sustituía, y con él se perdía la referencia de por dónde ibas: ahora
   van los dos, el número y el ✓ detrás.
+
+## 2026-09-03 — El reparto de atrasos no se ejecutaba casi nunca
+
+Ric, probando lo publicado: «tenía 45 en repaso y 45 en vocabulario. He
+trabajado en vocabulario hasta estar al día, pero al hacer el repaso me
+mantiene el 45, y he hecho más de tres rondas».
+
+Los dos 45 eran los dos topes de pintura tapando un atraso sin repartir
+—879 fichas vencidas detrás—, así que el número no bajaba por mucho que
+jugara: quitabas 15 de 879 y seguía enseñando el tope.
+
+La causa: `repartirAtrasos()` estaba enganchado solo al arranque, y hay
+otras tres rutas que sustituyen el progreso entero sin pasar por él —el
+conflicto al guardar (dos pestañas o dos aparatos), la vuelta a una
+pestaña que estaba en segundo plano, y el cambio de sesión—. Bastaba
+con que cualquiera de ellas trajera una copia sin repartir para
+quedarse clavado el resto de la sesión. Encima el reparto llevaba un
+candado de «una vez al día» que impedía recuperarse.
+
+- Todo progreso que entra en la app pasa ahora por `adoptarProgreso()`,
+  que asigna y reparte. Las cuatro rutas usan esa.
+- El candado de día desaparece. No hacía falta: la condición de
+  «¿hay más vencido que el tope?» ya es autolimitante — en cuanto
+  reparte, lo vencido baja del tope y la siguiente llamada no hace
+  nada. Se puede llamar cuantas veces se quiera.
+- Y la portada reparte antes de contar, como última red, para que la
+  cifra pintada sea siempre un día de trabajo de verdad.
+
+La prueba de regresión reproduce el caso exacto de Ric (355 grupos + 526
+palabras vencidos y el candado puesto) y falla contra el código que
+estaba publicado: «quedaron 881 vencidos», «tres rondas dejan 821».
+Comprobado además en la app: con esas 879 fichas vencidas, la portada
+pasa de 45+45 a «24 ejercicios» y «20 palabras».
