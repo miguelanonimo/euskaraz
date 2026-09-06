@@ -3674,6 +3674,20 @@ código.
 
 ## Implementadas
 
+- **2026-09-06 · La app de revisión gana el vocabulario.** Ric preguntó
+  por qué no podía corregir los ejercicios de escuchar: no están, porque
+  se fabrican al vuelo desde el vocabulario y no existen como ejercicio
+  en los ficheros. Un fallo de escuchar es casi siempre un fallo de la
+  traducción de la palabra, así que la app lleva ahora una segunda
+  sección con las **526 palabras** (538 formas contando las dialectales,
+  que cuelgan de la misma ficha). Las dos secciones cuentan aparte, para
+  que el avance de los ejercicios se siga leyendo como hasta ahora.
+- **2026-09-06 · «Pilotalekua» se arma con…** (u9-g36 v0) se contestaba
+  sola: la respuesta estaba escrita en la opción. Sustituida por la
+  pareja *pilotalekua* / *frontoia*, que sí tiene contenido: las dos son
+  correctas y la vasca es la que los diccionarios ponen primero.
+
+
 - **2026-09-06 · «askotan» acepta «muchas veces»** (lo pilló Ric en un
   ejercicio de escuchar). Y con ello salió que el campo `esAlt` —las
   otras traducciones válidas— no llegaba nunca a la pregunta, porque
