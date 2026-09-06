@@ -1148,3 +1148,24 @@ palabras vencidos y el candado puesto) y falla contra el código que
 estaba publicado: «quedaron 881 vencidos», «tres rondas dejan 821».
 Comprobado además en la app: con esas 879 fichas vencidas, la portada
 pasa de 45+45 a «24 ejercicios» y «20 palabras».
+
+## 2026-09-06 — «askotan» acepta «muchas veces», y el esAlt que nunca llegaba
+
+Ric, en un ejercicio de escuchar de la unidad 6: «la palabra es askotan
+y la respuesta es "a menudo", pero "muchas veces" debería ser correcto,
+porque es literalmente eso». Lo es —*asko* es "mucho"— así que se añade
+como respuesta buena.
+
+Al ir a añadirla apareció lo de debajo: **`esAlt` no funcionaba en
+ninguna parte**. Es el campo que recoge las otras formas castellanas
+válidas que no se deducen del texto («gracias» por «muchas gracias»,
+«aquel» por «hura»), y lo usa la pregunta de escuchar y traducir. Pero
+todo el vocabulario del repaso y de escuchar pasa antes por
+`formasDe()`, que copia campo a campo, y ahí se quedaba fuera: nunca
+llegaba a la pregunta. Las cinco entradas que lo tenían daban por malas
+sus propias alternativas desde que se añadió el campo.
+
+`formasDe()` lo arrastra ahora, en la entrada principal y en sus
+variantes dialectales. Prueba nueva, `scripts/probar_esalt.js`, que
+recorre el curso de verdad y comprueba que cada `esAlt` llega hasta la
+pregunta; falla contra el código publicado con las seis entradas.

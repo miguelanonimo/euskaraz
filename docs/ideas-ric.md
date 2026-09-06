@@ -3674,6 +3674,13 @@ código.
 
 ## Implementadas
 
+- **2026-09-06 · «askotan» acepta «muchas veces»** (lo pilló Ric en un
+  ejercicio de escuchar). Y con ello salió que el campo `esAlt` —las
+  otras traducciones válidas— no llegaba nunca a la pregunta, porque
+  `formasDe()` no lo copiaba: las cinco entradas que lo usaban daban por
+  malas sus propias alternativas.
+
+
 - **2026-09-02 · El calendario de repaso, replanteado.** Ric: al día
   siguiente de ponerse al día le salían 177 pendientes. Se simuló antes
   de tocar nada y el número sale solo: con 881 fichas y la escala corta,

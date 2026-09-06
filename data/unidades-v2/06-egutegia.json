@@ -544,6 +544,9 @@
     {
       "eu": "askotan",
       "es": "a menudo",
+      "esAlt": [
+        "muchas veces"
+      ],
       "nota": null,
       "audio": "unidades/u7/askotan.mp3",
       "categoria": "otros",

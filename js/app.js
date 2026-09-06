@@ -513,13 +513,22 @@
      del padre —significa lo mismo, solo cambia la forma euskera—, y se
      le añade `categoria` por si falta, para no romper el filtro de
      Vocabulario. */
+  /* Ojo con `esAlt`: esta función copia campo a campo, y durante un
+     tiempo se lo dejó fuera. Como todo el vocabulario del repaso y de
+     escuchar pasa por aquí, las otras formas castellanas válidas no
+     llegaban nunca a la pregunta y se daban por malas — «gracias» por
+     «muchas gracias», «muchas veces» por «askotan» (esta la cazó Ric).
+     Si se añade un campo a una entrada de vocabulario, hay que añadirlo
+     también aquí, o no existe. */
   function formasDe(v, unidad, titulo) {
-    var base = { eu: v.eu, es: v.es, nota: v.nota, audio: v.audio, registro: v.registro,
-                 categoria: v.categoria || 'otros', unidad: unidad, titulo: titulo };
+    var base = { eu: v.eu, es: v.es, esAlt: v.esAlt, nota: v.nota, audio: v.audio,
+                 registro: v.registro, categoria: v.categoria || 'otros',
+                 unidad: unidad, titulo: titulo };
     if (!incluirDialectales || !v.variantes || !v.variantes.length) return [base];
     return [base].concat(v.variantes.map(function (variante) {
-      return { eu: variante.eu, es: v.es, nota: variante.nota, audio: variante.audio,
-               registro: variante.registro, categoria: variante.categoria || base.categoria,
+      return { eu: variante.eu, es: v.es, esAlt: v.esAlt, nota: variante.nota,
+               audio: variante.audio, registro: variante.registro,
+               categoria: variante.categoria || base.categoria,
                unidad: unidad, titulo: titulo };
     }));
   }
