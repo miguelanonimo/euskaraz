@@ -3713,15 +3713,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Pilotalekua» se arma con…",
+          "pregunta": "Para «frontón» oirás «pilotalekua» y «frontoia»…",
           "opciones": [
-            "pilota + leku (sitio)",
-            "pilota + luze",
-            "pila + lekua",
-            "pilota + lekuan"
+            "las dos son correctas",
+            "«frontoia» es un castellanismo que no vale",
+            "«frontoia» es el edificio; la otra, la cancha",
+            "«frontoia» solo se usa en algunas zonas"
           ],
           "correcta": 0,
-          "explicacion": "El sitio de la pelota. En castellano, el frontón."
+          "explicacion": "Las dos están en el diccionario. «Pilotalekua» es la formada con piezas vascas —pilota + leku (sitio)— y es la que ponen primero."
         },
         {
           "tipo": "opcion",

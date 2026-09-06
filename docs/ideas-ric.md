@@ -3674,6 +3674,34 @@ código.
 
 ## Implementadas
 
+- **2026-09-06 · Al repaso mezclado solo entran las unidades superadas**
+  (lo preguntó Ric). Antes bastaba con abrir la portada de la unidad, y
+  sus ejercicios enteros caían al calendario sin haberlos estudiado. Y el
+  reparto diario ya no gasta cupo en fichas de unidades que se han caído
+  del repaso. El vocabulario sigue igual: aditivo por tema.
+
+
+- **2026-09-06 · La app de revisión gana el vocabulario.** Ric preguntó
+  por qué no podía corregir los ejercicios de escuchar: no están, porque
+  se fabrican al vuelo desde el vocabulario y no existen como ejercicio
+  en los ficheros. Un fallo de escuchar es casi siempre un fallo de la
+  traducción de la palabra, así que la app lleva ahora una segunda
+  sección con las **526 palabras** (538 formas contando las dialectales,
+  que cuelgan de la misma ficha). Las dos secciones cuentan aparte, para
+  que el avance de los ejercicios se siga leyendo como hasta ahora.
+- **2026-09-06 · «Pilotalekua» se arma con…** (u9-g36 v0) se contestaba
+  sola: la respuesta estaba escrita en la opción. Sustituida por la
+  pareja *pilotalekua* / *frontoia*, que sí tiene contenido: las dos son
+  correctas y la vasca es la que los diccionarios ponen primero.
+
+
+- **2026-09-06 · «askotan» acepta «muchas veces»** (lo pilló Ric en un
+  ejercicio de escuchar). Y con ello salió que el campo `esAlt` —las
+  otras traducciones válidas— no llegaba nunca a la pregunta, porque
+  `formasDe()` no lo copiaba: las cinco entradas que lo usaban daban por
+  malas sus propias alternativas.
+
+
 - **2026-09-02 · El calendario de repaso, replanteado.** Ric: al día
   siguiente de ponerse al día le salían 177 pendientes. Se simuló antes
   de tocar nada y el número sale solo: con 881 fichas y la escala corta,
