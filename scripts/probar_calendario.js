@@ -30,9 +30,14 @@ const previo = `
   var guardados = 0;
   function guardarProgreso(){ guardados++; }
   function barajar(a){ return a; }   // sin azar, para poder afirmar cosas
+  // clavesVivas() se sustituye por una lista que pone la prueba: aquí no
+  // hay curso, y lo que se comprueba es que el reparto la respeta.
+  var VIVAS = null;
+  function clavesVivas(){ return VIVAS; }
+  function ponerVivas(v){ VIVAS = v; }
 `;
 const api = new Function(previo + fns.map(sacar).join('\n\n') +
-  '; return { hoy, anotar, elegirSesion, repartirAtrasos, recuento, frasePendientes,' +
+  '; return { hoy, anotar, elegirSesion, repartirAtrasos, recuento, frasePendientes, ponerVivas,' +
   '           estrenosHoy, progreso, PASOS, TOPE_DIA, CUPO_NUEVOS, REPARTIR_DESDE,' +
   '           reset: function(){ progreso.srs={}; progreso.estreno=null; progreso.repartido=0; } };')();
 
@@ -184,6 +189,53 @@ Object.keys(api.progreso.srs).forEach(k => {
 });
 comprobar('al terminar el día no queda nada vencido',
   api.recuento(muchas, c => c).vencidos === 0);
+
+// ── Qué entra al repaso mezclado ─────────────────────────────────────────
+/* Solo las unidades SUPERADAS. Antes entraban las «visitadas», y eso se
+   pone con solo abrir la portada de la unidad: los 37 ejercicios de una
+   unidad sin estudiar caían al calendario de golpe (lo cazó Ric). */
+const fondo = new Function(`
+  var CURSO = arguments[0], progreso = arguments[1];
+  function progUnidad(id){ return progreso.unidades[id] || (progreso.unidades[id]={}); }
+  ${sacar('fondoRepaso')}
+  return fondoRepaso();
+`);
+const CURSO_FALSO = { unidades: [
+  { id: 'u1', ejercicios: [{id:'u1-g01'},{id:'u1-g02'}] },
+  { id: 'u2', ejercicios: [{id:'u2-g01'}] },
+  { id: 'u3', ejercicios: [{id:'u3-g01'}] },
+]};
+const prog = { unidades: {
+  u1: { visitada: true, completada: true },    // superada
+  u2: { visitada: true, completada: false },   // abierta, sin ganar el test
+  u3: { visitada: false, completada: false },  // ni tocada
+}};
+const dentro = fondo(CURSO_FALSO, prog).map(x => x.grupo.id);
+comprobar('entra la unidad superada', dentro.indexOf('u1-g01') >= 0 && dentro.indexOf('u1-g02') >= 0);
+comprobar('NO entra la unidad solo abierta', dentro.indexOf('u2-g01') < 0, dentro.join(','));
+comprobar('NO entra la unidad sin tocar', dentro.indexOf('u3-g01') < 0, dentro.join(','));
+comprobar('y no se cuela nada más', dentro.length === 2, dentro.join(','));
+
+/* Y las fichas de una unidad que se ha caído del repaso no gastan cupo:
+   siguen guardadas, pero el día se llena con lo que sí puede salir. */
+api.reset();
+const vivas = {};
+for (let i = 0; i < 300; i++) {              // huérfanas: unidad sin superar
+  api.progreso.srs['g:fuera' + i] = { paso: 1, toca: hoyEs - 5, fallos: 0 };
+}
+for (let i = 0; i < 60; i++) {               // vivas: unidad superada
+  const k = 'g:dentro' + i;
+  api.progreso.srs[k] = { paso: 1, toca: hoyEs - 5, fallos: 0 };
+  vivas[k] = 1;
+}
+api.ponerVivas(vivas);
+comprobar('el reparto solo cuenta lo que puede salir', api.repartirAtrasos() === 60);
+const hoyVivas = Object.keys(vivas).filter(k => api.progreso.srs[k].toca <= hoyEs).length;
+comprobar('y llena el día con eso, no con las huérfanas',
+  hoyVivas === api.TOPE_DIA, 'hoy salen ' + hoyVivas);
+comprobar('las huérfanas se quedan como estaban',
+  api.progreso.srs['g:fuera0'].toca === hoyEs - 5);
+api.ponerVivas(null);
 
 if (fallos) { console.error(fallos + ' fallo(s)'); process.exit(1); }
 console.log('calendario OK');

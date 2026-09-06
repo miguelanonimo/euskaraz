@@ -3674,6 +3674,13 @@ código.
 
 ## Implementadas
 
+- **2026-09-06 · Al repaso mezclado solo entran las unidades superadas**
+  (lo preguntó Ric). Antes bastaba con abrir la portada de la unidad, y
+  sus ejercicios enteros caían al calendario sin haberlos estudiado. Y el
+  reparto diario ya no gasta cupo en fichas de unidades que se han caído
+  del repaso. El vocabulario sigue igual: aditivo por tema.
+
+
 - **2026-09-06 · La app de revisión gana el vocabulario.** Ric preguntó
   por qué no podía corregir los ejercicios de escuchar: no están, porque
   se fabrican al vuelo desde el vocabulario y no existen como ejercicio

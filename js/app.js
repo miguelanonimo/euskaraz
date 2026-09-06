@@ -877,10 +877,24 @@
      hace nada. Se puede llamar cuantas veces se quiera. */
   var REPARTIR_DESDE = TOPE_DIA;
 
+  /* Qué fichas pueden llegar a salir hoy. Importa desde que el repaso
+     solo coge unidades superadas: las de una unidad que aún no has
+     ganado siguen guardadas en el calendario —con su historial, para
+     cuando vuelvan— pero no deben ocupar sitio en el cupo del día, o el
+     día se llenaría de cosas que no vas a ver y la portada enseñaría un
+     puñado en vez de las 45 que tocan. */
+  function clavesVivas() {
+    if (!CURSO) return null;          // sin curso cargado, se reparte todo
+    var vivas = {};
+    fondoRepaso().forEach(function (x) { vivas[claveDeFondo(x)] = 1; });
+    fondoVocabulario().forEach(function (v) { vivas[claveDeVocab(v)] = 1; });
+    return vivas;
+  }
+
   function repartirAtrasos() {
-    var dia = hoy();
+    var dia = hoy(), vivas = clavesVivas();
     var vencidos = Object.keys(progreso.srs).filter(function (k) {
-      return progreso.srs[k].toca <= dia;
+      return progreso.srs[k].toca <= dia && (!vivas || vivas[k]);
     });
     if (vencidos.length <= REPARTIR_DESDE) return 0;
     progreso.repartido = dia;
@@ -1119,7 +1133,7 @@
         el.repasoCount.className = 'navcard__sub';
       }
     } else {
-      el.repasoCount.textContent = 'Abre una unidad y aquí tendrás repaso';
+      el.repasoCount.textContent = 'Supera el test de una unidad y tendrás repaso';
       el.repasoCount.className = 'navcard__sub';
       pintarPendiente(el.repasoDue, 0);
     }
@@ -1647,13 +1661,21 @@
 
   // ─────────── Repaso mezclado ───────────
 
-  /* El repaso solo tira de las unidades que has abierto alguna vez.
-     Así no te salen ejercicios de gramática que todavía no has leído.
-     Si no has abierto ninguna, no hay repaso que hacer. */
+  /* Al repaso mezclado solo entran las unidades SUPERADAS: las que has
+     ganado en su test final. Antes bastaba con haberlas «visitado», y
+     eso se pone al abrir la portada de la unidad —ni siquiera hacía
+     falta leer una explicación—, así que sus 25-48 ejercicios entraban
+     al calendario de golpe, la mayoría de cosas que aún no habías
+     estudiado. Criterio de Ric: mientras no ganas la unidad, sus
+     ejercicios no son repaso, son materia; se practican en la unidad,
+     que es su sitio.
+
+     El calendario de los que salen no se pierde: sus fichas siguen
+     guardadas y vuelven con su historial en cuanto superas la unidad. */
   function fondoRepaso() {
     var fondo = [];
     CURSO.unidades.forEach(function (u) {
-      if (!progUnidad(u.id).visitada) return;
+      if (!progUnidad(u.id).completada) return;
       u.ejercicios.forEach(function (gr) {
         fondo.push({ grupo: gr, unidad: u });
       });
@@ -1709,7 +1731,7 @@
   function empezarRepaso() {
     var fondo = fondoRepaso();
     if (!fondo.length) {
-      alert('Todavía no has abierto ninguna unidad. Empieza por la primera y luego vuelve aquí.');
+      alert('Aquí se mezcla lo de las unidades que ya has superado. Gana el test de la primera y vuelve.');
       return;
     }
     estado.unidad = null;

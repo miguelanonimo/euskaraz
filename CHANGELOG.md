@@ -1169,3 +1169,34 @@ sus propias alternativas desde que se añadió el campo.
 variantes dialectales. Prueba nueva, `scripts/probar_esalt.js`, que
 recorre el curso de verdad y comprueba que cada `esAlt` llega hasta la
 pregunta; falla contra el código publicado con las seis entradas.
+
+## 2026-09-06 — Al repaso mezclado solo entran las unidades superadas
+
+Ric: «¿cuándo entran los ejercicios de una unidad al repaso mezclado? No
+deberían entrar hasta que esa unidad está validada al 100%… me da la
+sensación de que entran con solo abrir una explicación».
+
+Entraban con menos que eso: `fondoRepaso()` pedía que la unidad estuviera
+«visitada», y eso se marca **al abrir la portada de la unidad**, sin leer
+nada. Con abrirla, sus 25-48 ejercicios se metían en el calendario de
+golpe, la mayoría de cosas todavía sin estudiar. De ahí salía buena parte
+del atasco de fichas nuevas.
+
+Ahora se pide `completada`: haber ganado el test final de la unidad.
+Mientras no la ganas, sus ejercicios no son repaso, son materia, y se
+practican en la unidad, que es su sitio. El calendario de los que salen
+**no se pierde**: sus fichas siguen guardadas con su historial y vuelven
+en cuanto superas la unidad.
+
+Con eso apareció un cabo suelto que se cierra a la vez: el reparto diario
+recorría todas las fichas del calendario, así que las de una unidad
+caída ocupaban sitio en el cupo de 45 sin poder salir, y la portada
+habría enseñado un puñado en vez del día entero. `repartirAtrasos()` mira
+ahora solo lo que puede llegar a salir (`clavesVivas()`).
+
+El vocabulario no cambia: sigue siendo aditivo por tema, que fue una
+decisión de Ric del 26/08.
+
+Comprobado en la app con las diez unidades abiertas y solo la primera
+superada: el repaso pasa de tener las 355 fichas a las 25 de esa unidad.
+La prueba de `probar_calendario.js` falla contra el código publicado.
