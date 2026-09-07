@@ -6,6 +6,23 @@ historial de git si hace falta el detalle.
 
 ---
 
+## 2026-09-07 — Pronunciación g/gu + doc de flujo de lecciones
+
+En la Unidad 1 (v2), el bloque "Pronunciación: lo que necesitas hoy"
+cubría z/s/x/tx/ts-tz/j/h/ñ-ll pero no la interferencia real de **g**
+antes de e/i (en castellano "ge/gi" suena a jota, en euskera suena
+siempre fuerte) ni las letras que no existen en euskera (c/qu/v/w/y) ni
+la ausencia de tildes. Se añade ese contenido, un ejemplo nuevo
+("gela", reutilizando el audio ya subido de u6) y se sustituye la
+pregunta de quiz sobre "tz" (redundante con la de "ts") por una sobre
+g/gu, manteniendo el grupo en 5 variantes como exige `verificar.py`.
+
+También se crea `docs/flujo-lecciones-ejercicios.md`, documento de
+referencia para Claude Design con toda la estructura interna de una
+lección: unidad → tema, los 7 tipos de ejercicio, los 4 contextos que
+generan preguntas (practicar/test/repaso mezclado/repaso de
+vocabulario) y la pantalla de resultado.
+
 ## 2026-08-16 — Arranque del proyecto
 
 Motor heredado del código original (vanilla JS/HTML/CSS, sin build).
