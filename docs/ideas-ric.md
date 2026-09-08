@@ -40,6 +40,34 @@ del workflow entra con el resto.
 
 ---
 
+## 🎧 Nuevo (08/09/2026): revisar el audio nuevo — bloque 1
+
+Miguel está generando el audio que faltaba (389 palabras/frases nuevas en
+total en `data/unidades-v2/`, se genera por bloques). El primer bloque (51,
+unidades 1-4) está listo para escuchar y ya no hace falta esperar a que él
+lo revise entero — puedes hacerlo tú directamente:
+
+1. Abre `revision-audio/bloque1.html` del repo (está en `main`, en la raíz
+   del proyecto — es autocontenido, con el audio ya incrustado en el propio
+   archivo, no depende de red).
+2. Pídele a tu Claude que te lo publique como un Artifact ("publica
+   revision-audio/bloque1.html como artifact"). Es tuyo, no compartido con
+   Miguel — cada uno tiene su propia copia, no hace falta que coincidan.
+3. En la página: pestañas por unidad arriba, botón ▶ para escuchar cada
+   palabra, y dos botones **Bien/Mal** por fila. Si marcas mal, se abre un
+   campo para anotar qué falla (acento, letra que suena distinta, etc.).
+4. Al final, botón **"Copiar informe"** — copia un JSON con solo lo que
+   marcaste, y tu nota si dejaste una. Pégaselo a Miguel (por donde sea
+   más cómodo) y él se lo pasa a su Claude para regenerar esas palabras en
+   varias versiones y elegir la mejor.
+
+No hace falta que ambos revisemos lo mismo — si repartís el bloque, mejor
+(menos redundancia). Los siguientes bloques (quedan ~340 palabras más)
+saldrán con el mismo patrón, un archivo nuevo en `revision-audio/` cada
+vez.
+
+---
+
 ## Pendientes de comentar con Miguel
 
 ### El repaso de vocabulario ya es aditivo (26/08/2026) — HECHO
