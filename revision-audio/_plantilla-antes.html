@@ -1,0 +1,347 @@
+<title>Revisión — bloque 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef;
+  --panel:#ffffff;
+  --ink:#20221f;
+  --ink-dim:#68685f;
+  --line:#e2ded3;
+  --accent:#3f6b52;
+  --accent-soft:#e7efe9;
+  --bien-bg:#eef4ef;
+  --bien-line:#bcd3c3;
+  --mal-bg:#faf0ee;
+  --mal-line:#e3b3ab;
+  --mal-ink:#a13f30;
+  --radius:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#181a17;
+    --panel:#212420;
+    --ink:#ece9e0;
+    --ink-dim:#93938a;
+    --line:#33362f;
+    --accent:#7cb894;
+    --accent-soft:#26302a;
+    --bien-bg:#1e2a22;
+    --bien-line:#38513f;
+    --mal-bg:#2b2020;
+    --mal-line:#5c3833;
+    --mal-ink:#e2988a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#181a17;
+  --panel:#212420;
+  --ink:#ece9e0;
+  --ink-dim:#93938a;
+  --line:#33362f;
+  --accent:#7cb894;
+  --accent-soft:#26302a;
+  --bien-bg:#1e2a22;
+  --bien-line:#38513f;
+  --mal-bg:#2b2020;
+  --mal-line:#5c3833;
+  --mal-ink:#e2988a;
+}
+*{box-sizing:border-box;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'PP Neue Montreal', 'Inter', system-ui, sans-serif;
+  padding:clamp(20px,4vw,48px);
+  max-width:760px;
+  margin:0 auto;
+}
+h1{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:600;
+  font-size:clamp(26px,4vw,34px);
+  letter-spacing:-0.01em;
+  margin:0 0 6px;
+  text-wrap:balance;
+}
+.sub{
+  color:var(--ink-dim);
+  font-size:14px;
+  line-height:1.5;
+  margin:0 0 28px;
+  max-width:60ch;
+}
+.progreso{
+  display:flex;
+  align-items:baseline;
+  gap:14px;
+  margin-bottom:28px;
+  font-size:13px;
+  color:var(--ink-dim);
+  flex-wrap:wrap;
+}
+.progreso b{
+  font-family:'Fraunces', Georgia, serif;
+  font-size:20px;
+  font-weight:600;
+  color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+.progreso .malas{ color:var(--mal-ink); }
+.barra{
+  flex:1;
+  min-width:80px;
+  height:6px;
+  border-radius:99px;
+  background:var(--line);
+  overflow:hidden;
+  display:flex;
+}
+.barra__bien{ height:100%; background:var(--accent); }
+.barra__mal{ height:100%; background:var(--mal-ink); }
+.pestanas{
+  display:flex;
+  gap:4px;
+  overflow-x:auto;
+  margin-bottom:22px;
+  padding-bottom:2px;
+  border-bottom:1px solid var(--line);
+}
+.pestanas button{
+  flex:none;
+  border:0;
+  background:transparent;
+  color:var(--ink-dim);
+  font-size:13px;
+  font-weight:500;
+  padding:9px 14px;
+  cursor:pointer;
+  border-bottom:2px solid transparent;
+  white-space:nowrap;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.pestanas button:hover{ color:var(--ink); }
+.pestanas button.activa{
+  color:var(--ink);
+  border-bottom-color:var(--accent);
+}
+.pestanas button .cuenta{
+  font-size:11px;
+  color:var(--ink-dim);
+  font-variant-numeric:tabular-nums;
+}
+.pestanas button .punto-mal{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--mal-ink);
+  display:none;
+}
+.pestanas button.tiene-malas .punto-mal{ display:inline-block; }
+.unidad{
+  display:none;
+}
+.unidad.activa{
+  display:block;
+}
+.unidad__titulo{
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+  margin:0 0 14px;
+}
+.fila{
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:var(--panel);
+  margin-bottom:8px;
+  transition:background .15s ease, border-color .15s ease;
+  overflow:hidden;
+}
+.fila.bien{ background:var(--bien-bg); border-color:var(--bien-line); }
+.fila.mal{ background:var(--mal-bg); border-color:var(--mal-line); }
+.fila__top{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px 12px;
+}
+.fila button.play{
+  flex:none;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:var(--accent-soft);
+  color:var(--accent);
+  font-size:14px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.fila button.play:hover{ filter:brightness(0.96); }
+.fila button.play:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+.fila .texto{
+  flex:1;
+  min-width:0;
+}
+.fila .eu{
+  font-weight:500;
+  font-size:15px;
+}
+.fila .es{
+  color:var(--ink-dim);
+  font-size:12.5px;
+  margin-top:1px;
+}
+.veredicto{
+  flex:none;
+  display:flex;
+  border:1px solid var(--line);
+  border-radius:99px;
+  overflow:hidden;
+  background:var(--panel);
+}
+.veredicto button{
+  border:0;
+  background:transparent;
+  color:var(--ink-dim);
+  font-size:12px;
+  font-weight:500;
+  padding:6px 13px;
+  cursor:pointer;
+  transition:background .12s ease, color .12s ease;
+}
+.veredicto button:first-child{ border-right:1px solid var(--line); }
+.veredicto button:focus-visible{ outline:2px solid var(--accent); outline-offset:-2px; }
+.veredicto button.activo.bien{ background:var(--accent); color:#fff; }
+.veredicto button.activo.mal{ background:var(--mal-ink); color:#fff; }
+.nota{
+  display:none;
+  padding:0 12px 12px;
+}
+.fila.mal .nota{ display:block; }
+.nota textarea{
+  width:100%;
+  min-height:52px;
+  resize:vertical;
+  border:1px solid var(--mal-line);
+  background:var(--panel);
+  color:var(--ink);
+  border-radius:8px;
+  padding:8px 10px;
+  font-family:inherit;
+  font-size:13px;
+  line-height:1.4;
+}
+.nota textarea::placeholder{ color:var(--ink-dim); }
+.nota textarea:focus-visible{ outline:2px solid var(--mal-ink); outline-offset:1px; }
+.informe{
+  margin-top:8px;
+  padding:16px;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:var(--panel);
+}
+.informe__cabecera{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:6px;
+}
+.informe h2{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:600;
+  font-size:16px;
+  margin:0;
+}
+.informe__contador{
+  font-size:12px;
+  color:var(--ink-dim);
+  font-variant-numeric:tabular-nums;
+}
+.informe__ayuda{
+  font-size:12.5px;
+  color:var(--ink-dim);
+  line-height:1.5;
+  margin:0 0 10px;
+}
+.informe textarea{
+  width:100%;
+  min-height:110px;
+  resize:vertical;
+  border:1px solid var(--line);
+  background:var(--bg);
+  color:var(--ink);
+  border-radius:8px;
+  padding:10px;
+  font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size:12px;
+  line-height:1.5;
+  margin-bottom:10px;
+}
+.informe__boton{
+  border:0;
+  border-radius:8px;
+  background:var(--accent);
+  color:#fff;
+  font-size:13px;
+  font-weight:500;
+  padding:9px 16px;
+  cursor:pointer;
+}
+.informe__boton:hover{ filter:brightness(1.05); }
+.informe__boton:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+footer{
+  margin-top:36px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  font-size:12px;
+  color:var(--ink-dim);
+  line-height:1.6;
+}
+footer code{
+  background:var(--accent-soft);
+  padding:1px 5px;
+  border-radius:5px;
+  font-size:11.5px;
+}
+</style>
+
+<h1>Revisión de audio — bloque 1</h1>
+<p class="sub">51 palabras y frases nuevas (unidades 1–4), generadas hoy y subidas a <code>test/bloque-50/</code> en el bucket — todavía no están en producción. Marca cada una como bien o mal; si está mal, deja una nota de qué falla para regenerarla en varias versiones y elegir la mejor.</p>
+
+<div class="progreso">
+  <span>Revisadas</span>
+  <b id="contador">0 / 0</b>
+  <div class="barra"><div class="barra__bien" id="barraBien" style="width:0%"></div><div class="barra__mal" id="barraMal" style="width:0%"></div></div>
+  <span class="malas" id="contadorMalas"></span>
+</div>
+
+<div class="pestanas" id="pestanas"></div>
+<div id="lista"></div>
+
+<div class="informe">
+  <div class="informe__cabecera">
+    <h2>Informe para Miguel</h2>
+    <span id="contadorInforme" class="informe__contador">0 marcadas</span>
+  </div>
+  <p class="informe__ayuda">Solo se incluye lo que has marcado (bien o mal), con tu nota si dejaste una. Copia esto y pégaselo a Miguel — él se lo pasa a Claude para regenerar lo que esté mal.</p>
+  <textarea id="informeArea" readonly spellcheck="false"></textarea>
+  <button type="button" id="btnCopiarInforme" class="informe__boton">Copiar informe</button>
+</div>
+
+<footer>
+  Todo se guarda solo en este navegador (<code>localStorage</code>) — cierra la pestaña y sigue donde lo dejaste. No afecta a nada del curso, es tu propia hoja de repaso.
+</footer>
+
+<script>
+const BASE = "https://teoyketwfyxjhkoympcj.supabase.co/storage/v1/object/public/euskaraz-audio/test/bloque-50";
+

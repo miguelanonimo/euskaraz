@@ -6,6 +6,22 @@ historial de git si hace falta el detalle.
 
 ---
 
+## 2026-09-09 — Generado el audio nuevo de las 10 unidades + herramienta de revisión
+
+Generados con `generar.mjs` los mp3 de las 389 palabras/frases que
+faltaban en `data/unidades-v2/` (unidades 1-10 completas). Todavía no
+están en producción — el campo `audio` de los JSON no se ha tocado —
+falta el paso de escucha/aprobación.
+
+Para ese paso, herramienta nueva en `revision-audio/`: páginas HTML
+autocontenidas (el audio va incrustado en base64 dentro del propio
+archivo, para poder publicarse como Artifact sin depender de red ni de
+compartir cuenta/organización) repartidas en 8 bloques por unidad, con
+botones Bien/Mal, campo de nota por palabra fallida, y un botón
+"Copiar informe" que exporta un JSON con lo marcado. Generador
+reutilizable en `scripts/generar-audio/construir-revision.mjs`.
+Instrucciones para Ric en `docs/ideas-ric.md`.
+
 ## 2026-09-07 — Pronunciación g/gu + doc de flujo de lecciones
 
 En la Unidad 1 (v2), el bloque "Pronunciación: lo que necesitas hoy"

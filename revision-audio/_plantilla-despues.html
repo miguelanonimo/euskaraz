@@ -1,0 +1,223 @@
+
+
+const lista = document.getElementById("lista");
+const pestanas = document.getElementById("pestanas");
+const KEY_LOCAL = "euskaraz-revision-bloque1";
+const KEY_PESTANA = "euskaraz-revision-bloque1-pestana";
+
+let estados = {};
+try {
+  const guardado = JSON.parse(localStorage.getItem(KEY_LOCAL) || "{}");
+  Object.keys(guardado).forEach((k) => {
+    if (typeof guardado[k] === "object" && guardado[k]) estados[k] = guardado[k];
+  });
+} catch (e) {}
+
+function estadoDe(idAudio) {
+  return estados[idAudio] || { veredicto: null, nota: "" };
+}
+
+function guardarLocal() {
+  try { localStorage.setItem(KEY_LOCAL, JSON.stringify(estados)); } catch (e) {}
+}
+
+const bloques = {};
+const pestanaBotones = {};
+const filas = {};
+let total = 0;
+
+UNIDADES.forEach((u) => {
+  total += u.items.length;
+  const bloque = document.createElement("div");
+  bloque.className = "unidad";
+  bloques[u.id] = bloque;
+
+  const pestana = document.createElement("button");
+  pestana.type = "button";
+  const nombreCorto = "U" + u.id.replace(/^u/, "");
+  pestana.innerHTML = '<span class="punto-mal"></span>' + nombreCorto + ' <span class="cuenta">(' + u.items.length + ')</span>';
+  pestana.addEventListener("click", () => activarUnidad(u.id));
+  pestanas.appendChild(pestana);
+  pestanaBotones[u.id] = pestana;
+
+  const titulo = document.createElement("div");
+  titulo.className = "unidad__titulo";
+  titulo.textContent = u.titulo;
+  bloque.appendChild(titulo);
+
+  u.items.forEach(([clave, es]) => {
+    const idAudio = u.id + "/" + clave;
+    const estado = estadoDe(idAudio);
+
+    const fila = document.createElement("div");
+    fila.className = "fila";
+    if (estado.veredicto) fila.classList.add(estado.veredicto);
+
+    const top = document.createElement("div");
+    top.className = "fila__top";
+
+    const btn = document.createElement("button");
+    btn.className = "play";
+    btn.type = "button";
+    btn.setAttribute("aria-label", "Reproducir " + clave);
+    btn.textContent = "▶";
+    let audio = null;
+    btn.addEventListener("click", () => {
+      if (!audio) audio = new Audio("data:audio/mpeg;base64," + AUDIOS[idAudio]);
+      audio.currentTime = 0;
+      audio.play();
+    });
+
+    const texto = document.createElement("div");
+    texto.className = "texto";
+    const eu = document.createElement("div");
+    eu.className = "eu";
+    eu.textContent = clave.replace(/-/g, " ");
+    const esEl = document.createElement("div");
+    esEl.className = "es";
+    esEl.textContent = es;
+    texto.appendChild(eu);
+    texto.appendChild(esEl);
+
+    const veredicto = document.createElement("div");
+    veredicto.className = "veredicto";
+    const btnBien = document.createElement("button");
+    btnBien.type = "button";
+    btnBien.className = "bien" + (estado.veredicto === "bien" ? " activo" : "");
+    btnBien.textContent = "Bien";
+    const btnMal = document.createElement("button");
+    btnMal.type = "button";
+    btnMal.className = "mal" + (estado.veredicto === "mal" ? " activo" : "");
+    btnMal.textContent = "Mal";
+
+    const notaWrap = document.createElement("div");
+    notaWrap.className = "nota";
+    const textarea = document.createElement("textarea");
+    textarea.placeholder = "¿Qué falla? (acento en la sílaba equivocada, letra que suena mal…)";
+    textarea.value = estado.nota || "";
+    textarea.addEventListener("input", () => {
+      const actual = estadoDe(idAudio);
+      actual.nota = textarea.value;
+      estados[idAudio] = actual;
+      guardarLocal();
+      actualizarInforme();
+    });
+    notaWrap.appendChild(textarea);
+
+    function marcar(v) {
+      const actual = estadoDe(idAudio);
+      actual.veredicto = actual.veredicto === v ? null : v;
+      estados[idAudio] = actual;
+      guardarLocal();
+      fila.classList.remove("bien", "mal");
+      if (actual.veredicto) fila.classList.add(actual.veredicto);
+      btnBien.classList.toggle("activo", actual.veredicto === "bien");
+      btnMal.classList.toggle("activo", actual.veredicto === "mal");
+      actualizarProgreso();
+      actualizarInforme();
+    }
+    btnBien.addEventListener("click", () => marcar("bien"));
+    btnMal.addEventListener("click", () => marcar("mal"));
+
+    veredicto.appendChild(btnBien);
+    veredicto.appendChild(btnMal);
+
+    top.appendChild(btn);
+    top.appendChild(texto);
+    top.appendChild(veredicto);
+    fila.appendChild(top);
+    fila.appendChild(notaWrap);
+    bloque.appendChild(fila);
+
+    filas[idAudio] = { fila, btnBien, btnMal, textarea };
+  });
+
+  lista.appendChild(bloque);
+});
+
+function activarUnidad(id) {
+  Object.entries(bloques).forEach(([uid, el]) => el.classList.toggle("activa", uid === id));
+  Object.entries(pestanaBotones).forEach(([uid, el]) => el.classList.toggle("activa", uid === id));
+  try { localStorage.setItem(KEY_PESTANA, id); } catch (e) {}
+}
+
+let pestanaInicial = UNIDADES[0].id;
+try {
+  const guardada = localStorage.getItem(KEY_PESTANA);
+  if (guardada && bloques[guardada]) pestanaInicial = guardada;
+} catch (e) {}
+activarUnidad(pestanaInicial);
+
+function actualizarProgreso() {
+  const valores = Object.values(estados);
+  const bien = valores.filter((e) => e.veredicto === "bien").length;
+  const mal = valores.filter((e) => e.veredicto === "mal").length;
+  const revisadas = bien + mal;
+  document.getElementById("contador").textContent = revisadas + " / " + total;
+  document.getElementById("barraBien").style.width = (total ? (bien / total * 100) : 0) + "%";
+  document.getElementById("barraMal").style.width = (total ? (mal / total * 100) : 0) + "%";
+  document.getElementById("contadorMalas").textContent = mal ? (mal + " mal") : "";
+
+  UNIDADES.forEach((u) => {
+    const tieneMalas = u.items.some(([clave]) => {
+      const e = estados[u.id + "/" + clave];
+      return e && e.veredicto === "mal";
+    });
+    pestanaBotones[u.id].classList.toggle("tiene-malas", tieneMalas);
+  });
+}
+actualizarProgreso();
+
+// Informe exportable: solo lo marcado (bien o mal), con su nota si la hay.
+// Se copia al portapapeles para pegarlo donde haga falta — no depende de
+// ninguna cuenta ni de compartir nada entre organizaciones.
+function generarInforme() {
+  const filasInforme = [];
+  UNIDADES.forEach((u) => {
+    u.items.forEach(([clave, es]) => {
+      const idAudio = u.id + "/" + clave;
+      const e = estados[idAudio];
+      if (e && e.veredicto) {
+        filasInforme.push({
+          unidad: u.id,
+          clave: clave,
+          es: es,
+          veredicto: e.veredicto,
+          nota: e.nota || "",
+        });
+      }
+    });
+  });
+  return filasInforme;
+}
+
+async function actualizarInforme() {
+  const informe = generarInforme();
+  const area = document.getElementById("informeArea");
+  const contadorInforme = document.getElementById("contadorInforme");
+  const json = JSON.stringify(informe, null, 2);
+  area.value = informe.length ? json : "(todavía no hay nada marcado)";
+  contadorInforme.textContent = informe.length + " marcadas";
+}
+actualizarInforme();
+
+document.getElementById("btnCopiarInforme").addEventListener("click", async () => {
+  const informe = generarInforme();
+  const json = JSON.stringify(informe, null, 2);
+  const area = document.getElementById("informeArea");
+  const boton = document.getElementById("btnCopiarInforme");
+  area.value = informe.length ? json : "(todavía no hay nada marcado)";
+  area.focus();
+  area.select();
+  let copiado = false;
+  try {
+    await navigator.clipboard.writeText(json);
+    copiado = true;
+  } catch (e) {
+    try { copiado = document.execCommand("copy"); } catch (e2) {}
+  }
+  boton.textContent = copiado ? "Copiado ✓" : "No se pudo copiar — selecciona y copia a mano";
+  setTimeout(() => { boton.textContent = "Copiar informe"; }, 2200);
+});
+
+</script>

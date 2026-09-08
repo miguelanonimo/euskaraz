@@ -62,9 +62,33 @@ lo revise entero — puedes hacerlo tú directamente:
    varias versiones y elegir la mejor.
 
 No hace falta que ambos revisemos lo mismo — si repartís el bloque, mejor
-(menos redundancia). Los siguientes bloques (quedan ~340 palabras más)
-saldrán con el mismo patrón, un archivo nuevo en `revision-audio/` cada
-vez.
+(menos redundancia).
+
+**Actualización (09/09/2026): ya está todo generado y repartido en bloques.**
+En `revision-audio/` hay ya, además del 1, los bloques **2 a 8** — mismo
+patrón exacto (pídele a tu Claude "publica revision-audio/bloqueN.html
+como artifact", escucha, marca Bien/Mal, copia el informe al final):
+
+| Archivo | Qué cubre | Palabras |
+|---|---|---|
+| `bloque1.html` | unidades 1-4 (parcial) | 51 |
+| `bloque2.html` | unidad 5 completa | 53 |
+| `bloque3.html` | unidad 6 completa | 44 |
+| `bloque4.html` | unidad 7 completa | 48 |
+| `bloque5.html` | unidad 8 completa | 24 |
+| `bloque6.html` | unidad 9 completa | 44 |
+| `bloque7.html` | unidad 10 completa | 22 |
+| `bloque8.html` | resto suelto de u1 y u4 que no entró en el bloque 1 | 67 |
+
+353 palabras en total entre los 8. Si quieres repartirte el trabajo conmigo
+(Miguel), dime qué bloques te quedas y yo me ocupo del resto — o cada uno
+revisa lo que le apetezca y ya cruzamos los informes al final.
+
+Si en algún momento hace falta un bloque nuevo (por ejemplo si se añade más
+vocabulario y vuelve a quedar audio pendiente), el script que los genera es
+`scripts/generar-audio/construir-revision.mjs` — `node
+construir-revision.mjs <numeroBloque> <unidadId...>` (requiere haber
+corrido antes `generar.mjs <unidadId>` para tener los mp3 en `out/`).
 
 ---
 
