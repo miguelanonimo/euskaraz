@@ -3726,6 +3726,14 @@ código.
 
 ## Implementadas
 
+- **2026-09-09 · «Al día · 136 sin estrenar» era engañoso** (lo preguntó
+  Ric mirando producción). Son las palabras que aún no te ha preguntado
+  nunca, y entran a 20 por día; gastado el cupo no quedaba nada que
+  hacer, pero la tarjeta seguía enseñando el número entero y entrar
+  llevaba a una sesión vacía. Ahora dice lo que cabe hoy. **Pendiente de
+  hablar con Ric: si 20 al día es el ritmo que quiere.**
+
+
 - **2026-09-06 · Al repaso mezclado solo entran las unidades superadas**
   (lo preguntó Ric). Antes bastaba con abrir la portada de la unidad, y
   sus ejercicios enteros caían al calendario sin haberlos estudiado. Y el

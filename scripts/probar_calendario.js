@@ -237,5 +237,30 @@ comprobar('las huérfanas se quedan como estaban',
   api.progreso.srs['g:fuera0'].toca === hoyEs - 5);
 api.ponerVivas(null);
 
+// ── «Sin estrenar» no es una deuda ───────────────────────────────────────
+/* Ric: «pone al día · 136 sin estrenar, yo hago repasos y ese número no
+   baja». Las nuevas entran a 20 por día (CUPO_NUEVOS); gastado el cupo, hoy
+   no queda nada que estrenar y la portada tiene que decir eso, no repetir
+   los 136 como si fueran tarea pendiente. */
+api.reset();
+const nuevasVoc = [];
+for (let i = 0; i < 136; i++) nuevasVoc.push('v:nueva' + i);
+let rv = api.recuento(nuevasVoc, c => c);
+comprobar('con el cupo entero, hoy se pueden estrenar 20',
+  rv.estrenables === api.CUPO_NUEVOS && rv.nuevos === 136, JSON.stringify(rv));
+comprobar('y la frase habla de hoy, no de los 136',
+  /hoy puedes estrenar 20/.test(api.frasePendientes(rv, 'palabra', 'palabras')),
+  api.frasePendientes(rv, 'palabra', 'palabras'));
+
+for (let i = 0; i < api.CUPO_NUEVOS; i++) api.anotar('v:nueva' + i, true);
+rv = api.recuento(nuevasVoc, c => c);
+comprobar('gastado el cupo, hoy no queda nada que estrenar', rv.estrenables === 0,
+  JSON.stringify({estrenables: rv.estrenables, nuevos: rv.nuevos}));
+comprobar('y lo dice, en vez de repetir el número entero',
+  /mañana más/.test(api.frasePendientes(rv, 'palabra', 'palabras')),
+  api.frasePendientes(rv, 'palabra', 'palabras'));
+comprobar('el cupo es por tipo: los ejercicios no lo gastan',
+  api.recuento(['g:otra1','g:otra2'], c => c).estrenables === 2);
+
 if (fallos) { console.error(fallos + ' fallo(s)'); process.exit(1); }
 console.log('calendario OK');

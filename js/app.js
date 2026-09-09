@@ -920,6 +920,14 @@
       if (!f) r.nuevos++;
       else if (f.toca <= dia) r.vencidos++;
     });
+    /* `nuevos` son las que nunca se han preguntado. No es una deuda: es
+       la materia esperando turno, y solo entran CUPO_NUEVOS al día. Lo
+       que importa para la portada es cuántas de esas caben HOY —si el
+       cupo ya está gastado, hoy no hay nada que estrenar y decir «136
+       sin estrenar» hace pensar que la app no te hace caso (lo dijo Ric:
+       «yo hago repasos y ese número no baja»). */
+    var tipo = candidatos.length ? claveDe(candidatos[0]).charAt(0) : 'g';
+    r.estrenables = Math.min(r.nuevos, Math.max(0, CUPO_NUEVOS - estrenosHoy(tipo)));
     /* Red de seguridad: repartirAtrasos() deja lo vencido por debajo del
        tope al arrancar, así que casi siempre `hoy` y `vencidos` son lo
        mismo. Solo se separan si algo vence con la app ya abierta. */
@@ -933,8 +941,13 @@
     if (r.vencidos) {
       return r.hoy + (r.hoy === 1 ? ' ' + singular + ' para hoy' : ' ' + plural + ' para hoy');
     }
+    if (r.estrenables) {
+      // Sin género: «14 palabras nuevas» y «14 ejercicios nuevos» no se
+      // resuelven con una sola plantilla.
+      return 'Al día · hoy puedes estrenar ' + r.estrenables;
+    }
     if (r.nuevos) {
-      return 'Al día · ' + r.nuevos + ' sin estrenar';
+      return 'Al día · quedan ' + r.nuevos + ' por estrenar, mañana más';
     }
     return 'Al día · vuelve cuando quieras';
   }
@@ -1105,8 +1118,11 @@
       totalHoy++;
       var rVo = recuento(vocab, claveDeVocab);
       pintarPendiente(el.vocabRepasoDue, rVo.hoy);
-      if (rVo.vencidos === 0 && !rVo.nuevos) {
-        el.vocabRepasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
+      if (!rVo.vencidos && !rVo.estrenables) {
+        // Nada que hacer hoy: ni se cuenta como pendiente ni se pinta cifra.
+        el.vocabRepasoCount.innerHTML = rVo.nuevos
+          ? '<span>' + frasePendientes(rVo, 'palabra', 'palabras') + '</span>'
+          : checkSvg + '<span>¡Completado!</span>';
         el.vocabRepasoCount.className = 'navcard__sub navcard__sub--ok';
       } else {
         pendientesHoy++;
@@ -1124,8 +1140,10 @@
       totalHoy++;
       var rEj = recuento(fondo, claveDeFondo);
       pintarPendiente(el.repasoDue, rEj.hoy);
-      if (rEj.vencidos === 0 && !rEj.nuevos) {
-        el.repasoCount.innerHTML = checkSvg + '<span>¡Completado!</span>';
+      if (!rEj.vencidos && !rEj.estrenables) {
+        el.repasoCount.innerHTML = rEj.nuevos
+          ? '<span>' + frasePendientes(rEj, 'ejercicio', 'ejercicios') + '</span>'
+          : checkSvg + '<span>¡Completado!</span>';
         el.repasoCount.className = 'navcard__sub navcard__sub--ok';
       } else {
         pendientesHoy++;
@@ -1740,6 +1758,11 @@
       .map(function (x) { return prepararVariante(x.grupo, x.unidad); });
     var extra = candidatosEscuchar(fondoVocabulario().concat(fondoEjemplos()), ESCUCHAR_REPASO);
     estado.ejercicios = barajar(base.concat(extra));
+    if (!estado.ejercicios.length) {
+      alert('Por hoy ya está: no queda nada vencido y los ejercicios nuevos del día ya han salido. Mañana entran más.');
+      pantallaHome();
+      return;
+    }
     guardarProgreso();
     estado.indice = 0;
     estado.aciertos = 0;
@@ -2186,6 +2209,14 @@
         // faltan: cuántos aciertos le quedan para salir de la cola.
         return { p: v, base: base, nivel: base, faltan: 1, fallos: 0, primera: null, ultimoFormato: -1 };
       });
+    /* Con el cupo del día gastado y nada vencido no queda nada que
+       preguntar, y entrar llevaba derecho a la pantalla de resultado con
+       un 0 de 0: parecía que la app no hacía nada. */
+    if (!estado.ejercicios.length) {
+      alert('Por hoy ya está: has estrenado las palabras nuevas que tocaban y no queda nada vencido. Mañana entran más.');
+      pantallaHome();
+      return;
+    }
     estado.indice = 0;
     estado.total = estado.ejercicios.length;
     estado.aprendidas = 0;
