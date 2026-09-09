@@ -1257,5 +1257,13 @@ directo a la pantalla de resultado con un 0 de 0.
 - Entrar a un repaso sin nada que preguntar avisa y vuelve a la portada,
   en vez de fingir una sesión.
 
-El cupo de 20/día es un número puesto a ojo: pendiente de comentar con
-Ric si le va bien ese ritmo.
+Y el ritmo, decidido con Ric el 09/09: el cupo sube a **25 al día**, y
+cada sesión mete al menos **2 sin estrenar** mientras queden, para que
+goteen en vez de gastarse de golpe en la primera sesión del día. Antes
+las nuevas iban las últimas de la cola, así que con atraso no salían
+nunca.
+
+El número de las que faltan **sale de la portada** y pasa a *Tu cuenta*.
+Allí informa; en la portada pedía —y pedía algo que no bajaba al ritmo
+al que uno repasa. La tarjeta ahora dice «Al día» en verde, como el
+repaso de ejercicios.

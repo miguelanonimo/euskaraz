@@ -84,7 +84,15 @@
      puñados y todas caen en los peldaños bajos a la vez: de ahí las
      oleadas. Lo que estrenas practicando una unidad no cuenta aquí —eso
      lo decides tú al abrirla. */
-  var CUPO_NUEVOS = 20;
+  var CUPO_NUEVOS = 25;
+
+  /* Y de ese cupo, al menos estas entran en CADA sesión mientras queden
+     sin estrenar. Antes las nuevas iban las últimas en la cola, así que
+     con atraso no salían nunca: el cupo se gastaba de golpe en la primera
+     sesión del día y luego el vocabulario nuevo se quedaba parado. Con
+     dos por sesión gotea, y la cola de repaso se mantiene con el resto de
+     los huecos (criterio de Ric). */
+  var MIN_NUEVOS = 2;
 
   /* Lo que la portada llama "hoy". Por encima de esto la cuenta deja de
      crecer: el resto espera su turno sin gritar. Ver un 177 después de
@@ -139,6 +147,7 @@
     authSub:    $('authSub'),
     authMsg:    $('authMsg'),
     cuentaEmail:  $('cuentaEmail'),
+    cuentaEstado: $('cuentaEstado'),
     formPassword: $('formPassword'),
     nuevaPassword: $('nuevaPassword'),
     cuentaMsg:    $('cuentaMsg'),
@@ -833,11 +842,12 @@
     // Las novedades tienen cupo diario; lo ya estrenado hoy resta.
     nuevos = nuevos.slice(0, Math.max(0, CUPO_NUEVOS - estrenosHoy(tipo || 'g')));
 
-    /* Se reserva sitio a los dos montones que pidió Ric —lo que fallaste
-       hace poco y lo que aprobaste hace mucho— y luego se rellena con lo
-       que haya. Si no hay veteranos vencidos su hueco se lo quedan los
-       flojos, y al revés: nadie se queda fuera por falta de sitio. */
-    var cola = flojos.slice(0, Math.round(cuantos * MEZCLA.flojo))
+    /* Se reserva sitio a tres cosas —un par de palabras sin estrenar, lo
+       que fallaste hace poco y lo que aprobaste hace mucho— y luego se
+       rellena con lo que haya. Si un montón está vacío su hueco se lo
+       quedan los otros: nadie se queda fuera por falta de sitio. */
+    var cola = nuevos.slice(0, MIN_NUEVOS)
+       .concat(flojos.slice(0, Math.round(cuantos * MEZCLA.flojo)))
        .concat(veteranos.slice(0, Math.round(cuantos * MEZCLA.veterano)));
     [flojos, veteranos, nuevos, resto].forEach(function (monton) {
       monton.forEach(function (x) {
@@ -941,14 +951,11 @@
     if (r.vencidos) {
       return r.hoy + (r.hoy === 1 ? ' ' + singular + ' para hoy' : ' ' + plural + ' para hoy');
     }
-    if (r.estrenables) {
-      // Sin género: «14 palabras nuevas» y «14 ejercicios nuevos» no se
-      // resuelven con una sola plantilla.
-      return 'Al día · hoy puedes estrenar ' + r.estrenables;
-    }
-    if (r.nuevos) {
-      return 'Al día · quedan ' + r.nuevos + ' por estrenar, mañana más';
-    }
+    /* Lo que queda sin estrenar ya no se dice aquí. Es un número que no
+       baja al ritmo al que uno repasa —entran unas pocas por sesión— y
+       en la portada se leía como una tarea pendiente que no avanzaba
+       («yo hago repasos y ese número no baja», Ric). Vive en Tu cuenta,
+       que es donde se mira el estado sin que te esté pidiendo nada. */
     return 'Al día · vuelve cuando quieras';
   }
 
@@ -1118,11 +1125,10 @@
       totalHoy++;
       var rVo = recuento(vocab, claveDeVocab);
       pintarPendiente(el.vocabRepasoDue, rVo.hoy);
-      if (!rVo.vencidos && !rVo.estrenables) {
-        // Nada que hacer hoy: ni se cuenta como pendiente ni se pinta cifra.
-        el.vocabRepasoCount.innerHTML = rVo.nuevos
-          ? '<span>' + frasePendientes(rVo, 'palabra', 'palabras') + '</span>'
-          : checkSvg + '<span>¡Completado!</span>';
+      if (!rVo.vencidos) {
+        // Al día. Que queden palabras por estrenar no es tarea del día:
+        // van entrando de dos en dos en las sesiones que hagas.
+        el.vocabRepasoCount.innerHTML = checkSvg + '<span>Al día</span>';
         el.vocabRepasoCount.className = 'navcard__sub navcard__sub--ok';
       } else {
         pendientesHoy++;
@@ -1140,10 +1146,8 @@
       totalHoy++;
       var rEj = recuento(fondo, claveDeFondo);
       pintarPendiente(el.repasoDue, rEj.hoy);
-      if (!rEj.vencidos && !rEj.estrenables) {
-        el.repasoCount.innerHTML = rEj.nuevos
-          ? '<span>' + frasePendientes(rEj, 'ejercicio', 'ejercicios') + '</span>'
-          : checkSvg + '<span>¡Completado!</span>';
+      if (!rEj.vencidos) {
+        el.repasoCount.innerHTML = checkSvg + '<span>Al día</span>';
         el.repasoCount.className = 'navcard__sub navcard__sub--ok';
       } else {
         pendientesHoy++;
@@ -2421,12 +2425,37 @@
 
   // ─────────── Cuenta ───────────
 
+  /* Cuánto has estrenado de cada montón, para mirarlo cuando te apetezca
+     en vez de tenerlo delante en la portada. «Sin estrenar» son las que
+     la app no te ha preguntado nunca: van entrando de dos en dos en cada
+     sesión, así que el número baja despacio y a propósito. */
+  function resumenEstado() {
+    var filas = [
+      { t: 'Vocabulario', r: recuento(fondoVocabulario(), claveDeVocab) },
+      { t: 'Repaso de ejercicios', r: recuento(fondoRepaso(), claveDeFondo) }
+    ];
+    return filas.map(function (f) {
+      if (!f.r.total) return '';
+      var salidas = f.r.total - f.r.nuevos, det = [];
+      if (f.r.nuevos) det.push(f.r.nuevos + ' sin estrenar');
+      if (f.r.vencidos) det.push(f.r.hoy + ' para hoy');
+      return '<div class="cuenta__linea">' +
+        '<b>' + esc(f.t) + '</b>' +
+        '<small>' + salidas + ' de ' + f.r.total + ' ya han salido' +
+        (det.length ? ' · ' + esc(det.join(' · ')) : '') + '</small>' +
+      '</div>';
+    }).join('');
+  }
+
   function pantallaCuenta(mensajeInicial) {
     tituloBarra('Tu cuenta');
     sb.auth.getSession().then(function (r) {
       var email = r.data && r.data.session ? r.data.session.user.email : '';
       el.cuentaEmail.textContent = email;
     });
+    /* El detalle que se quitó de la portada. Aquí informa; allí pedía. */
+    el.cuentaEstado.innerHTML = CURSO ? resumenEstado() : '';
+    el.cuentaEstado.hidden = !CURSO;
     mensajeCuenta(mensajeInicial || '', false);
     el.nuevaPassword.value = '';
     el.modoSilencioso.checked = modoSilencioso;
