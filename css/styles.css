@@ -400,6 +400,19 @@ svg{
 }
 .authbox__msg.is-mal{ color: var(--acento); }
 
+/* El estado del repaso, en Tu cuenta. Mismo aire que las opciones de
+   abajo, pero sin ser pulsable: aquí no se toca nada, solo se mira. */
+.cuenta__estado{
+  display: flex; flex-direction: column; gap: calc(var(--u) * 1.5);
+  margin-top: calc(var(--u) * 4);
+  padding-top: calc(var(--u) * 3);
+  border-top: 1px solid var(--filete);
+}
+.cuenta__estado[hidden]{ display: none; }
+.cuenta__linea{ font-size: var(--t-s); line-height: 1.45; }
+.cuenta__linea b{ display: block; color: var(--tinta); }
+.cuenta__linea small{ display: block; font-size: inherit; color: var(--tinta-45); }
+
 .cuenta__opcion{
   display: flex;
   align-items: flex-start;

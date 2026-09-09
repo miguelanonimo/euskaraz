@@ -15,7 +15,7 @@
 <link rel="manifest" href="site.webmanifest">
 <!-- El ?v= se sube al cambiar CSS o JS: sin él, el navegador sirve
      la copia cacheada y se ven estilos viejos sobre marcado nuevo. -->
-<link rel="stylesheet" href="css/styles.css?v=6">
+<link rel="stylesheet" href="css/styles.css?v=7">
 </head>
 <body>
 
@@ -87,6 +87,9 @@
         <button class="btn btn--primary" type="submit">Guardar contraseña</button>
       </form>
       <p class="authbox__msg" id="cuentaMsg" hidden aria-live="polite"></p>
+      <!-- Cuánto llevas estrenado. Vive aquí y no en la portada: allí
+           parecía una tarea pendiente que no bajaba. -->
+      <div class="cuenta__estado" id="cuentaEstado" hidden></div>
       <label class="cuenta__opcion">
         <input type="checkbox" id="modoSilencioso">
         <span>
@@ -347,6 +350,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
-<script src="js/app.js?v=6"></script>
+<script src="js/app.js?v=7"></script>
 </body>
 </html>

@@ -25,7 +25,7 @@ function sacarLinea(nombre) {
 const fns = ['hoy', 'ficha', 'estrenosHoy', 'apuntarEstreno', 'anotar',
              'elegirSesion', 'repartirAtrasos', 'recuento', 'frasePendientes'];
 const previo = `
-  ${['PASOS', 'CUPO_NUEVOS', 'TOPE_DIA', 'MEZCLA', 'REPARTIR_DESDE'].map(sacarLinea).join('\n')}
+  ${['PASOS', 'CUPO_NUEVOS', 'TOPE_DIA', 'MEZCLA', 'REPARTIR_DESDE', 'MIN_NUEVOS'].map(sacarLinea).join('\n')}
   var progreso = { srs: {}, estreno: null, repartido: 0 };
   var guardados = 0;
   function guardarProgreso(){ guardados++; }
@@ -38,7 +38,7 @@ const previo = `
 `;
 const api = new Function(previo + fns.map(sacar).join('\n\n') +
   '; return { hoy, anotar, elegirSesion, repartirAtrasos, recuento, frasePendientes, ponerVivas,' +
-  '           estrenosHoy, progreso, PASOS, TOPE_DIA, CUPO_NUEVOS, REPARTIR_DESDE,' +
+  '           estrenosHoy, progreso, PASOS, TOPE_DIA, CUPO_NUEVOS, REPARTIR_DESDE, MIN_NUEVOS,' +
   '           reset: function(){ progreso.srs={}; progreso.estreno=null; progreso.repartido=0; } };')();
 
 let fallos = 0;
@@ -236,6 +236,49 @@ comprobar('y llena el día con eso, no con las huérfanas',
 comprobar('las huérfanas se quedan como estaban',
   api.progreso.srs['g:fuera0'].toca === hoyEs - 5);
 api.ponerVivas(null);
+
+// ── «Sin estrenar» no es una deuda ───────────────────────────────────────
+/* Ric: «pone al día · 136 sin estrenar, yo hago repasos y ese número no
+   baja». Son las que la app no ha preguntado nunca, y entran a un máximo
+   de CUPO_NUEVOS al día. Dos reglas desde entonces: la portada no lo dice
+   —vive en Tu cuenta— y cada sesión mete al menos MIN_NUEVOS mientras
+   queden, para que goteen en vez de gastarse de golpe el primer día. */
+api.reset();
+const nuevasVoc = [];
+for (let i = 0; i < 136; i++) nuevasVoc.push('v:nueva' + i);
+let rv = api.recuento(nuevasVoc, c => c);
+comprobar('el recuento sigue sabiendo cuántas hay y cuántas caben hoy',
+  rv.nuevos === 136 && rv.estrenables === api.CUPO_NUEVOS, JSON.stringify(rv));
+comprobar('pero la portada no canta el número',
+  !/136/.test(api.frasePendientes(rv, 'palabra', 'palabras')),
+  api.frasePendientes(rv, 'palabra', 'palabras'));
+
+// Con 300 atrasadas por delante, las nuevas entraban las últimas y no
+// salían nunca. Ahora tienen sitio reservado en cada sesión.
+api.reset();
+const mezcla = [];
+for (let i = 0; i < 300; i++) {
+  const k = 'v:vieja' + i;
+  api.progreso.srs[k] = { paso: 0, toca: hoyEs - 9, fallos: 2 };
+  mezcla.push(k);
+}
+for (let i = 0; i < 50; i++) mezcla.push('v:sinestrenar' + i);
+const ses = api.elegirSesion(mezcla, 14, c => c);
+const cuantasNuevas = ses.filter(k => k.startsWith('v:sinestrenar')).length;
+comprobar('entran las nuevas que toca aunque haya 300 atrasadas delante',
+  cuantasNuevas >= api.MIN_NUEVOS, 'entraron ' + cuantasNuevas);
+comprobar('y el resto de la sesión sigue siendo repaso',
+  ses.length === 14 && cuantasNuevas <= 4, 'nuevas ' + cuantasNuevas + ' de ' + ses.length);
+
+// Gastado el cupo del día, ninguna nueva más: el goteo no se salta el tope.
+api.reset();
+for (let i = 0; i < api.CUPO_NUEVOS; i++) api.anotar('v:gastada' + i, true);
+const soloNuevas = [];
+for (let i = 0; i < 40; i++) soloNuevas.push('v:otra' + i);
+comprobar('gastado el cupo, el goteo se para',
+  api.elegirSesion(soloNuevas, 14, c => c).length === 0);
+comprobar('y el cupo es por tipo: los ejercicios no lo gastan',
+  api.recuento(['g:a','g:b'], c => c).estrenables === 2);
 
 if (fallos) { console.error(fallos + ' fallo(s)'); process.exit(1); }
 console.log('calendario OK');

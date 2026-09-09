@@ -1233,3 +1233,37 @@ decisión de Ric del 26/08.
 Comprobado en la app con las diez unidades abiertas y solo la primera
 superada: el repaso pasa de tener las 355 fichas a las 25 de esa unidad.
 La prueba de `probar_calendario.js` falla contra el código publicado.
+
+## 2026-09-09 — «Sin estrenar» decía una cosa y hacía otra
+
+Ric, sobre producción: «el repaso de vocabulario dice "al día · 136 sin
+estrenar". ¿Qué quiere decir? Yo hago repasos y ese número no baja».
+
+El número era correcto y la frase engañosa. «Sin estrenar» son las
+palabras que la app nunca te ha preguntado: no es deuda, es materia
+esperando turno, y entra a un máximo de `CUPO_NUEVOS` (20) al día desde
+el 02/09. Gastado el cupo del día y sin nada vencido, no queda nada que
+preguntar — pero la tarjeta seguía enseñando los 136 y contándose como
+tarea pendiente, así que parecía que repasar no servía de nada.
+
+Peor: entrar entonces al repaso construía una sesión vacía y caía
+directo a la pantalla de resultado con un 0 de 0.
+
+- El recuento distingue ahora **lo que hay** (`nuevos`) de **lo que cabe
+  hoy** (`estrenables`), que es lo que la portada necesita.
+- Las frases: «hoy puedes estrenar 14» mientras quede cupo, y «quedan
+  136 por estrenar, mañana más» cuando se acaba. Esa segunda ya no
+  cuenta como pendiente en el marcador de arriba.
+- Entrar a un repaso sin nada que preguntar avisa y vuelve a la portada,
+  en vez de fingir una sesión.
+
+Y el ritmo, decidido con Ric el 09/09: el cupo sube a **25 al día**, y
+cada sesión mete al menos **2 sin estrenar** mientras queden, para que
+goteen en vez de gastarse de golpe en la primera sesión del día. Antes
+las nuevas iban las últimas de la cola, así que con atraso no salían
+nunca.
+
+El número de las que faltan **sale de la portada** y pasa a *Tu cuenta*.
+Allí informa; en la portada pedía —y pedía algo que no bajaba al ritmo
+al que uno repasa. La tarjeta ahora dice «Al día» en verde, como el
+repaso de ejercicios.

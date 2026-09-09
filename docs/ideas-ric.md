@@ -3726,6 +3726,17 @@ código.
 
 ## Implementadas
 
+- **2026-09-09 · «Al día · 136 sin estrenar» era engañoso** (lo preguntó
+  Ric mirando producción). Son las palabras que aún no te ha preguntado
+  nunca, y entran con cuentagotas; gastado el cupo del día no quedaba
+  nada que hacer, pero la tarjeta seguía enseñando el número entero y
+  entrar llevaba a una sesión vacía. Decidido con él: el cupo sube a 25
+  y cada sesión reserva sitio para 2 sin estrenar mientras queden, para
+  que goteen en vez de gastarse de golpe. Y el número de las que faltan
+  sale de la portada y pasa a **Tu cuenta**, donde informa en vez de
+  pedir.
+
+
 - **2026-09-06 · Al repaso mezclado solo entran las unidades superadas**
   (lo preguntó Ric). Antes bastaba con abrir la portada de la unidad, y
   sus ejercicios enteros caían al calendario sin haberlos estudiado. Y el
