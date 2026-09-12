@@ -3147,10 +3147,10 @@
             "girar a la izquierda",
             "quedarte a la izquierda",
             "venir de la izquierda",
-            "mirar a la izquierda"
+            "coger el de la izquierda"
           ],
           "correcta": 0,
-          "explicacion": "El -ra es movimiento: hacia allá."
+          "explicacion": "El -ra es movimiento: hacia allá. Las demás pedirían otro final: quedarte, «ezkerrean»; venir de allí, «ezkerretik»; el de la izquierda, «ezkerrekoa»."
         },
         {
           "tipo": "opcion",
