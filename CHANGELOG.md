@@ -1267,3 +1267,23 @@ El número de las que faltan **sale de la portada** y pasa a *Tu cuenta*.
 Allí informa; en la portada pedía —y pedía algo que no bajaba al ritmo
 al que uno repasa. La tarjeta ahora dice «Al día» en verde, como el
 repaso de ejercicios.
+
+## 2026-09-12 — «Mirar a la izquierda» también es «ezkerrera»
+
+Ric, sobre `u8-g30` v3 («Si te dicen "ezkerrera" tienes que…»): «¿estás
+seguro de que "mirar a la izquierda" y "quedarte a la izquierda" no se
+dicen igual?».
+
+De las dos, una sí. Elhuyar da para *begiratu* el caso **-ra** cuando es
+dirección en el espacio —*leiho aldera begiratu zuen*, «miró hacia la
+ventana»—, así que «mirar a la izquierda» es **ezkerrera begiratu**: la
+misma forma que la respuesta buena. Era un distractor que también valía.
+
+«Quedarte a la izquierda» sí es otra cosa: **ezkerrean**, con el -n de
+sitio (*nire ezkerrean ama eseriko da*, «a mi izquierda se sentará mi
+madre»).
+
+El distractor pasa a «coger el de la izquierda» (**ezkerrekoa**), con lo
+que las cuatro opciones piden ahora cuatro finales distintos —-ra, -n,
+-tik, -ko—, que es lo que la pregunta quiere probar. Y la corrección los
+dice todos, que era justo lo que Ric preguntaba.
