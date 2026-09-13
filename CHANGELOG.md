@@ -1287,3 +1287,28 @@ El distractor pasa a «coger el de la izquierda» (**ezkerrekoa**), con lo
 que las cuatro opciones piden ahora cuatro finales distintos —-ra, -n,
 -tik, -ko—, que es lo que la pregunta quiere probar. Y la corrección los
 dice todos, que era justo lo que Ric preguntaba.
+
+## 2026-09-13 — La «a» de «anaia» no es el artículo
+
+Ric, sobre «Zuk bi anaia dituzu»: «¿se debe poner el artículo en anaia?
+¿o debería ser anai?». La frase estaba bien, pero la pregunta señala un
+hueco de la unidad 4.
+
+Euskaltzaindia lo zanja: *anaia* lleva **a itsatsia**, la «a pegada» que
+forma parte de la palabra y no es el artículo. El Euskara Batuaren
+Eskuliburua la cita entre sus ejemplos —*uda*, *alaba*, *anaia*— y da la
+prueba: la -a no cae ante un cuantificador ni ante un adjetivo
+(«*anai zaharra* → *anaiA zaharra*»). En el Hiztegia la entrada es
+*anaia*, y *anai* solo aparece como primer miembro de compuesto
+(*anai-arrebak*) o como tratamiento religioso.
+
+El hueco: la ficha 4.1 enseña que detrás de un número el nombre va sin
+artículo —*hiru lagun*, nunca «hiru lagunak»— y la unidad usa luego
+*bi anaia* y *bi alaba* sin explicar por qué no se quedan en «bi anai».
+Ficha nueva en 4.6, **«Bi anaia», pero «bi seme»**, con el par que lo
+enseña solo: las dos palabras están en la misma lista de familia y se
+portan distinto, porque *semea* es *seme* + artículo y *alaba* es
+*alaba* entera.
+
+El verificador cazó de paso que el ejemplo que había escrito usaba
+*zaharra*, que es de la unidad 5.
