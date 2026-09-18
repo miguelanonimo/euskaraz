@@ -3726,6 +3726,19 @@ código.
 
 ## Implementadas
 
+- **2026-09-18 · «Esan» con ficha, ejercicios y «esan nahi du»** (lo
+  señaló Ric: salía en 36 sitios sin haberse explicado). Pendiente de
+  decidir si se enseñan las formas sintéticas (*diot, diozu, dio*).
+- **2026-09-18 · Sexta tanda de revisión**: 12 arreglos, sobre todo
+  huecos sin frase que traducir y negaciones que pedían -rik.
+
+
+- **2026-09-13 · Ficha nueva sobre la «a itsatsia»** (4.6), a raíz de una
+  pregunta de Ric: «bi anaia» o «bi anai». Es «bi anaia» —la -a es parte
+  de la palabra, no el artículo—, y la unidad lo usaba sin explicarlo
+  teniendo la regla contraria en la 4.1.
+
+
 - **2026-09-09 · «Al día · 136 sin estrenar» era engañoso** (lo preguntó
   Ric mirando producción). Son las palabras que aún no te ha preguntado
   nunca, y entran con cuentagotas; gastado el cupo del día no quedaba

@@ -1287,3 +1287,72 @@ El distractor pasa a «coger el de la izquierda» (**ezkerrekoa**), con lo
 que las cuatro opciones piden ahora cuatro finales distintos —-ra, -n,
 -tik, -ko—, que es lo que la pregunta quiere probar. Y la corrección los
 dice todos, que era justo lo que Ric preguntaba.
+
+## 2026-09-13 — La «a» de «anaia» no es el artículo
+
+Ric, sobre «Zuk bi anaia dituzu»: «¿se debe poner el artículo en anaia?
+¿o debería ser anai?». La frase estaba bien, pero la pregunta señala un
+hueco de la unidad 4.
+
+Euskaltzaindia lo zanja: *anaia* lleva **a itsatsia**, la «a pegada» que
+forma parte de la palabra y no es el artículo. El Euskara Batuaren
+Eskuliburua la cita entre sus ejemplos —*uda*, *alaba*, *anaia*— y da la
+prueba: la -a no cae ante un cuantificador ni ante un adjetivo
+(«*anai zaharra* → *anaiA zaharra*»). En el Hiztegia la entrada es
+*anaia*, y *anai* solo aparece como primer miembro de compuesto
+(*anai-arrebak*) o como tratamiento religioso.
+
+El hueco: la ficha 4.1 enseña que detrás de un número el nombre va sin
+artículo —*hiru lagun*, nunca «hiru lagunak»— y la unidad usa luego
+*bi anaia* y *bi alaba* sin explicar por qué no se quedan en «bi anai».
+Ficha nueva en 4.6, **«Bi anaia», pero «bi seme»**, con el par que lo
+enseña solo: las dos palabras están en la misma lista de familia y se
+portan distinto, porque *semea* es *seme* + artículo y *alaba* es
+*alaba* entera.
+
+El verificador cazó de paso que el ejemplo que había escrito usaba
+*zaharra*, que es de la unidad 5.
+
+## 2026-09-18 — «Esan» deja de ser una palabra de paso
+
+Ric: «No hemos explicado ni conjugado *esan* (decir), pero aparece en
+preguntas y repasos. Solo lo dices de paso, ni se conjuga, ni se le da
+importancia».
+
+Era así: entraba en 9.2 como una línea de una lista de cinco verbos
+(«esan — decir») y a partir de ahí salía en 36 sitios de las unidades 9
+y 10 sin explicación. Y **«esan nahi du»** —«significa, quiere decir», la
+pregunta que abre cualquier palabra que no conoces— no aparecía ni una
+vez en todo el curso.
+
+- Ficha propia en 9.2, detrás de la del dativo: el habitual *esaten*
+  con la regla que ya se sabe (*jan* → *jaten*), la diferencia entre
+  *esan du* y *esan dio*, y *esan nahi du*. Contrastado con Elhuyar
+  (entrada «esan, esan, esaten»; «esan nahi izan» = significar).
+- Vocabulario: *esan* gana nota con su habitual, y entra *esan nahi du*.
+- Grupo de ejercicios nuevo, `u9-g40`, con las cinco cosas.
+- En la ficha del futuro (10.3), *esan → esango*, que además es un
+  ejemplo limpio de la regla del -go tras n.
+
+Queda una cosa sin hacer, a propósito: *esan* tiene también forma
+sintética (*diot, diozu, dio* — digo, dices, dice), y *dio* coincide con
+el auxiliar dativo que se enseña en el mismo tema. Meterlo ahí liaría
+más de lo que ayuda en un A1.
+
+## 2026-09-18 — Sexta tanda de revisión de Ric (12 arreglos)
+
+- **Huecos sin frase que traducir** (`u8-g01`, las cinco; `u9-g31` v4).
+  Sin la frase en castellano, *jan*, *jaten* y *jango* eran todas
+  gramaticales. Ahora llevan la frase delante: «Como pan. → Nik ogia
+  ____ dut.»
+- **La negación general, con -rik** (`u8-g04` v1 y v4, `u8-g09` v3). «No
+  bebo café» es *kaferik*: con *kafea* se hablaba de un café concreto,
+  que es justo la distinción que la ficha de 7.2 explica. Y «No compro
+  la carne» pasa a «No compro carne», que es lo que se dice.
+- **Castellano natural** (`u8-g11` v3 y v4): «Suelo venir tarde» para el
+  habitual, y «Como manzanas» sin el artículo — con una nota de que el
+  euskera sí lo pone (*sagarrak*).
+- **Una pregunta subjetiva** (`u9-g29` v2): «la pregunta clave al
+  comprar un regalo» admitía «¿cuánto es?» igual de bien. Pasa a una
+  traducción objetiva: «¿Para quién es?» se dice… *Norentzat da?*
+- `u8-g30` v3 (*ezkerrera*) ya estaba corregido desde el 12/09.
