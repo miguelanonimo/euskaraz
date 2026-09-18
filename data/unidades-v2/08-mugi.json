@@ -3225,7 +3225,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Ni etxean ____ naiz.",
+          "pregunta": "Entro en casa. → Ni etxean ____ naiz.",
           "opciones": [
             "sartzen",
             "sartu",
