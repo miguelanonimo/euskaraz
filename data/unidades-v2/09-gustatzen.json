@@ -255,6 +255,25 @@
       "subnivel": "9.2"
     },
     {
+      "titulo": "«Esan»: decir, y casi siempre a alguien",
+      "cuerpo": "De los cinco verbos de la lista hay uno que vas a usar más que los otros cuatro juntos: <b>esan</b>, decir. Merece su propio sitio.\n\n<b>Las formas ya las sabes hacer</b>\nAcaba en <b>-n</b>, así que va igual que <i>jan</i> → <i>jaten</i>:\n\n<b>esan</b> → <b>esaten</b>\n\n<b>Amak beti hori esaten du.</b> — Mi madre siempre dice eso.\n<b>Zer esan duzu?</b> — ¿Qué has dicho?\n\n<b>A quién se lo dices cambia el auxiliar</b>\nSi no dices a quién, va con el auxiliar de siempre. Si lo dices, entra el de la ficha anterior, el que junta quién, qué y a quién:\n\n<b>Esan du.</b> — Lo ha dicho.\n<b>Aneri esan dio.</b> — Se lo ha dicho a Ane.\n\nPor eso <i>esan</i> es el verbo con el que mejor se entiende el <b>dio</b>: casi nunca se dice algo al aire, casi siempre se le dice a alguien.\n\n<b>Y la que más vas a necesitar</b>\n<b>esan nahi du</b> — significa, quiere decir\n\nEs literalmente lo mismo que en castellano: «quiere decir» es <i>esan nahi</i>, con el <i>nahi</i> de <i>nahi dut</i>. Y con ella se pregunta todo lo que no entiendes:\n\n<b>Zer esan nahi du?</b> — ¿Qué significa? ¿Qué quiere decir?\n\nGuárdatela bien, porque es la pregunta que abre cualquier palabra que no conozcas.",
+      "ejemplos": [
+        {
+          "eu": "Amak beti hori esaten du.",
+          "es": "Mi madre siempre dice eso."
+        },
+        {
+          "eu": "Esan du.",
+          "es": "Lo ha dicho."
+        },
+        {
+          "eu": "Zer esan nahi du?",
+          "es": "¿Qué significa?"
+        }
+      ],
+      "subnivel": "9.2"
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "<b>La z se vuelve j</b>\nToda la serie de <i>zait</i> cambia de inicial en bizkaiera:\n\n<b>jat</b> — batua: zait\n<b>jatzu</b> — zaizu\n<b>jako</b> — zaio\n<b>jaku</b> — zaigu\n<b>jatzue</b> — zaizue\n<b>jake</b> — zaie\n\nAsí que «me gusta» por allí es <b>gustetan jat</b>, con el verbo también cambiado: donde el batua dice <i>gustatzen</i>, el bizkaiera dice <b>gustetan</b>.\n\n<b>Gustetan jat euskerea.</b> — Me gusta el euskera.\n\nY en plural, la <b>-z</b> de siempre: <b>jataz</b> donde el batua pone <i>zaizkit</i>.\n\n<b>Dar y decir</b>\nEl <i>dit</i> del batua es <b>deust</b> o <b>dost</b> en bizkaiera, y <i>dio</i> es <b>deutso</b>:\n\n<b>Emon deust.</b> — Me lo ha dado. (batua: eman dit)\n<b>Esan deutso.</b> — Se lo ha dicho. (batua: esan dio)\n\nY «dar» es <b>emon</b>, no <i>eman</i>.",
       "ejemplos": [
@@ -557,8 +576,15 @@
     {
       "eu": "esan",
       "es": "decir",
-      "nota": null,
+      "nota": "Habitual: esaten. Casi siempre se le dice algo a alguien: «Aneri esan dio».",
       "audio": "unidades/u10/esan.mp3",
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "esan nahi du",
+      "es": "significa, quiere decir",
+      "nota": "Literalmente «quiere decir». «Zer esan nahi du?» — ¿qué significa?",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -3322,15 +3348,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "Al comprar un regalo, la pregunta clave es…",
+          "pregunta": "«¿Para quién es?» se dice…",
           "opciones": [
-            "Zenbat da?",
+            "Nor da?",
             "Norentzat da?",
             "Non dago?",
             "Zer da?"
           ],
           "correcta": 1,
-          "explicacion": "Para quién es."
+          "explicacion": "-entzat es «para»: norentzat, para quién. «Nor da?» sería «¿quién es?»."
         },
         {
           "tipo": "pares",
@@ -3934,6 +3960,73 @@
         }
       ],
       "subnivel": "9.3"
+    },
+    {
+      "id": "u9-g40",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "esan (decir), para lo de cada día → ____",
+          "opciones": [
+            "esaten",
+            "esatzen",
+            "esanten",
+            "esaen"
+          ],
+          "correcta": 0,
+          "explicacion": "Acaba en -n, como jan → jaten: esan → esaten."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zer esan nahi du?» significa…",
+          "opciones": [
+            "¿Qué significa?",
+            "¿Qué ha dicho?",
+            "¿Qué quiere hacer?",
+            "¿Qué te ha preguntado?"
+          ],
+          "correcta": 0,
+          "explicacion": "«Esan nahi» es «querer decir», como en castellano. «¿Qué ha dicho?» sería «Zer esan du?»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Se lo ha dicho a Ane.",
+          "opciones": [
+            "Aneri esan dio.",
+            "Anek esan du.",
+            "Aneri esan du.",
+            "Ane esan dio."
+          ],
+          "correcta": 0,
+          "explicacion": "A quién: «Aneri», con -ri, y el auxiliar «dio». «Anek esan du» es «Ane lo ha dicho»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Mi madre siempre dice eso.",
+          "opciones": [
+            "Amak beti hori esaten du.",
+            "Amak beti hori esan du.",
+            "Ama beti hori esaten da.",
+            "Amari beti hori esaten dio."
+          ],
+          "correcta": 0,
+          "explicacion": "Lo de siempre va en -t(z)en: «esaten du». Y quien dice lleva -k: «amak»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Qué significa?",
+          "respuestas": [
+            "zer esan nahi du"
+          ],
+          "pista": "«Querer decir» es «esan nahi», igual que en castellano."
+        }
+      ],
+      "subnivel": "9.2"
     }
   ]
 }
