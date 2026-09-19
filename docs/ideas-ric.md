@@ -3754,6 +3754,30 @@ código.
 
 ## Implementadas
 
+- **2026-09-18 · «Esan» con ficha, ejercicios y «esan nahi du»** (lo
+  señaló Ric: salía en 36 sitios sin haberse explicado). Pendiente de
+  decidir si se enseñan las formas sintéticas (*diot, diozu, dio*).
+- **2026-09-18 · Sexta tanda de revisión**: 12 arreglos, sobre todo
+  huecos sin frase que traducir y negaciones que pedían -rik.
+
+
+- **2026-09-13 · Ficha nueva sobre la «a itsatsia»** (4.6), a raíz de una
+  pregunta de Ric: «bi anaia» o «bi anai». Es «bi anaia» —la -a es parte
+  de la palabra, no el artículo—, y la unidad lo usaba sin explicarlo
+  teniendo la regla contraria en la 4.1.
+
+
+- **2026-09-09 · «Al día · 136 sin estrenar» era engañoso** (lo preguntó
+  Ric mirando producción). Son las palabras que aún no te ha preguntado
+  nunca, y entran con cuentagotas; gastado el cupo del día no quedaba
+  nada que hacer, pero la tarjeta seguía enseñando el número entero y
+  entrar llevaba a una sesión vacía. Decidido con él: el cupo sube a 25
+  y cada sesión reserva sitio para 2 sin estrenar mientras queden, para
+  que goteen en vez de gastarse de golpe. Y el número de las que faltan
+  sale de la portada y pasa a **Tu cuenta**, donde informa en vez de
+  pedir.
+
+
 - **2026-09-06 · Al repaso mezclado solo entran las unidades superadas**
   (lo preguntó Ric). Antes bastaba con abrir la portada de la unidad, y
   sus ejercicios enteros caían al calendario sin haberlos estudiado. Y el

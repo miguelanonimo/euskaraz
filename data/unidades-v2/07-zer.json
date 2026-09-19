@@ -799,7 +799,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Nik ogia ____ dut.",
+          "pregunta": "Como pan. → Nik ogia ____ dut.",
           "opciones": [
             "jan",
             "jaten",
@@ -812,7 +812,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Zuk kafea ____ duzu.",
+          "pregunta": "Bebes café. → Zuk kafea ____ duzu.",
           "opciones": [
             "edan",
             "edaten",
@@ -825,7 +825,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Guk euskara ____ dugu.",
+          "pregunta": "Estudiamos euskera. → Guk euskara ____ dugu.",
           "opciones": [
             "ikasi",
             "ikasten",
@@ -838,7 +838,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Hark liburua ____ du.",
+          "pregunta": "Lee el libro. → Hark liburua ____ du.",
           "opciones": [
             "irakurri",
             "irakurtzen",
@@ -851,7 +851,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Haiek musika ____ dute.",
+          "pregunta": "Escuchan música. → Haiek musika ____ dute.",
           "opciones": [
             "entzun",
             "entzuten",
@@ -1070,7 +1070,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "No bebo café. → ____ kafea edaten.",
+          "pregunta": "No bebo café. → ____ kaferik edaten.",
           "opciones": [
             "Edaten ez dut",
             "Ez dut",
@@ -1078,7 +1078,7 @@
             "Ez edaten dut"
           ],
           "correcta": 1,
-          "explicacion": "«Ez dut kafea edaten»: ez + auxiliar, y el verbo al final."
+          "explicacion": "«Ez dut kaferik edaten»: ez + auxiliar, el verbo al final, y el café con -rik porque es café en general."
         },
         {
           "tipo": "opcion",
@@ -1109,7 +1109,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Tú no comes carne. → Zuk ____ haragia jaten.",
+          "pregunta": "Tú no comes carne. → Zuk ____ haragirik jaten.",
           "opciones": [
             "ez duzu",
             "duzu ez",
@@ -1117,7 +1117,7 @@
             "ez jaten"
           ],
           "correcta": 0,
-          "explicacion": "El auxiliar de objeto es «duzu», y va detrás del «ez»."
+          "explicacion": "El auxiliar de objeto es «duzu» y va detrás del «ez». La carne, en general, con -rik: «haragirik»."
         }
       ],
       "subnivel": "7.2"
@@ -1476,13 +1476,13 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "No compro la carne.",
-          "eu": "Nik ez dut haragia erosten.",
+          "es": "No compro carne.",
+          "eu": "Nik ez dut haragirik erosten.",
           "palabras": [
             "nik",
             "ez",
             "dut",
-            "haragia",
+            "haragirik",
             "erosten"
           ],
           "distractores": [
@@ -1641,7 +1641,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«Vengo tarde» en bizkaiera: Berandu ____ naz.",
+          "pregunta": "«Suelo venir tarde» en bizkaiera: Berandu ____ naz.",
           "opciones": [
             "etortzen",
             "etorten",
@@ -1654,7 +1654,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "«Como las manzanas» en bizkaiera: Sagarrak jaten ____.",
+          "pregunta": "«Como manzanas» en bizkaiera: Sagarrak jaten ____.",
           "opciones": [
             "ditut",
             "dodaz",
@@ -1662,7 +1662,7 @@
             "dabe"
           ],
           "correcta": 1,
-          "explicacion": "Objeto plural en bizkaiera: «dodaz», con esa -z de siempre."
+          "explicacion": "Objeto plural en bizkaiera: «dodaz», con esa -z de siempre. Y fíjate en que el euskera sí pone artículo donde el castellano no: manzanas en general son «sagarrak»."
         }
       ],
       "subnivel": "7.1"
