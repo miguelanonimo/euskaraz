@@ -8,6 +8,34 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ---
 
+## 🎙️ Nuevo (19/09/2026): elegir la mejor de las 3 versiones corregidas (bloque 1)
+
+Gracias por el informe del bloque 1 — con tus 16 notas se generaron 3
+versiones nuevas de cada palabra marcada mal (instrucción fonética
+traducida de tu nota, mismo mecanismo que ya se usó en rondas anteriores).
+
+Página nueva, mismo patrón que las de revisión: `revision-audio/elegir-mejor-bloque1.html`.
+
+1. Pídele a tu Claude: "publica revision-audio/elegir-mejor-bloque1.html
+   como artifact".
+2. Por cada palabra tienes 4 opciones para escuchar: el **original** (el
+   que marcaste mal) y **3 versiones nuevas**. Tu propia nota está a la
+   vista para recordar qué buscabas.
+3. Marca con el radio la que suene mejor. Si ninguna de las 3 convence,
+   dilo directamente en el informe de texto de abajo antes de copiarlo
+   (por ejemplo: "ninguna arregla el acento de X, hace falta otro
+   enfoque") — el botón "Copiar informe" solo mete lo que has marcado con
+   radio, así que cualquier cosa aparte se añade a mano en el textarea
+   antes de copiar.
+4. Cópiaselo a Miguel igual que el informe anterior.
+
+Con esa elección se aplica el audio ganador de cada palabra a
+`data/unidades-v2/` y sale del limbo de `test/`. Los bloques 2-8 (unidades
+5-10 + el resto de u1/u4) siguen tal cual, pendientes de tu revisión o la
+de Miguel — este es solo el ciclo de vuelta del bloque 1.
+
+---
+
 ## 📣 Nuevo (30/08/2026): cómo publicar sin esperar a que Miguel fusione a mano
 
 Hasta ahora, cada tanda de `ric/trabajo` la fusionaba Miguel (con Claude) a

@@ -6,6 +6,19 @@ historial de git si hace falta el detalle.
 
 ---
 
+## 2026-09-19 — 3 versiones de cada audio que Ric marcó mal (bloque 1)
+
+Ric revisó el bloque 1 y marcó 16 palabras/frases como "mal", con nota de
+qué falla en cada una. Traducidas esas notas a instrucciones fonéticas en
+inglés (mismo mecanismo que `lote-ric-3.mjs`), se generaron 3 versiones
+nuevas de cada una (`scripts/generar-audio/regenerar-fallos-bloque1.mjs`,
+48 audios en `scripts/generar-audio/out/_regenerar/`).
+
+Página nueva `revision-audio/elegir-mejor-bloque1.html` para comparar: el
+original + las 3 versiones nuevas de cada palabra, con la nota de Ric a la
+vista, y un informe copiable con la elección de cada una — para aplicar
+después la ganadora a `data/unidades-v2/`.
+
 ## 2026-09-09 — Generado el audio nuevo de las 10 unidades + herramienta de revisión
 
 Generados con `generar.mjs` los mp3 de las 389 palabras/frases que
