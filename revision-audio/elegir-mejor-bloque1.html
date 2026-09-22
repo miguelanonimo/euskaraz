@@ -130,6 +130,8 @@ h1{
   background:var(--bg);
   cursor:pointer;
 }
+.opcion--ninguna{ border-style:dashed; }
+.opcion--ninguna label{ color:var(--ink-dim); }
 .opcion.elegida{
   background:var(--elegida-bg);
   border-color:var(--elegida-line);
@@ -196,7 +198,7 @@ footer{
 </style>
 
 <h1>Elegir mejor audio — correcciones bloque 1</h1>
-<p class="sub">16 palabras que Ric marcó como "mal" al revisar el bloque 1, con 3 versiones nuevas cada una (más el original, para comparar). Escucha y elige la que suene mejor — si ninguna convence, dilo en el informe de abajo.</p>
+<p class="sub">16 palabras que Ric marcó como "mal" al revisar el bloque 1, con 3 versiones nuevas cada una (más el original, para comparar). Escucha y elige la que suene mejor — si ninguna arregla lo que señalaste, marca «Ninguna vale».</p>
 
 <div class="progreso">
   <span>Decididas</span>
@@ -238,6 +240,10 @@ const OPCIONES = [
   ["v1", "Versión 1"],
   ["v2", "Versión 2"],
   ["v3", "Versión 3"],
+  // Si ninguna arregla lo que Ric señaló. Sin esto había que elegir el
+  // original —que ya estaba marcado mal— o dejarla en blanco, y el cuadro
+  // del informe no deja escribir para explicarlo.
+  ["ninguna", "Ninguna vale"],
 ];
 
 PALABRAS.forEach((p) => {
@@ -284,6 +290,7 @@ PALABRAS.forEach((p) => {
       audio.currentTime = 0;
       audio.play();
     });
+    const tieneAudio = !!AUDIOS[idPalabra + "/" + clave];
 
     const radioId = "r-" + idPalabra.replace(/[\/]/g, "-") + "-" + clave;
     const radio = document.createElement("input");
@@ -305,7 +312,8 @@ PALABRAS.forEach((p) => {
     label.setAttribute("for", radioId);
     label.textContent = etiqueta;
 
-    opcion.appendChild(btn);
+    if (tieneAudio) opcion.appendChild(btn);
+    else opcion.classList.add("opcion--ninguna");
     opcion.appendChild(radio);
     opcion.appendChild(label);
     opcion.addEventListener("click", (ev) => {
