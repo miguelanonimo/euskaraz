@@ -22,11 +22,10 @@ Página nueva, mismo patrón que las de revisión: `revision-audio/elegir-mejor-
    que marcaste mal) y **3 versiones nuevas**. Tu propia nota está a la
    vista para recordar qué buscabas.
 3. Marca con el radio la que suene mejor. Si ninguna de las 3 convence,
-   dilo directamente en el informe de texto de abajo antes de copiarlo
-   (por ejemplo: "ninguna arregla el acento de X, hace falta otro
-   enfoque") — el botón "Copiar informe" solo mete lo que has marcado con
-   radio, así que cualquier cosa aparte se añade a mano en el textarea
-   antes de copiar.
+   marca **«Ninguna vale»**: sale en el informe como `"elegida":
+   "ninguna"`. (Al principio esto se pedía escribiéndolo en el cuadro del
+   informe, pero ese cuadro es de solo lectura y el botón de copiar no lo
+   lee; se añadió la opción el 22/09.)
 4. Cópiaselo a Miguel igual que el informe anterior.
 
 Con esa elección se aplica el audio ganador de cada palabra a
