@@ -1369,3 +1369,40 @@ más de lo que ayuda en un A1.
   comprar un regalo» admitía «¿cuánto es?» igual de bien. Pasa a una
   traducción objetiva: «¿Para quién es?» se dice… *Norentzat da?*
 - `u8-g30` v3 (*ezkerrera*) ya estaba corregido desde el 12/09.
+
+## 2026-09-24 — Faltaba «bere», que es la mitad de «su»
+
+Ric, comparando con otras apps: «para ella/él me dices *haren*, pero
+existe una forma mucho más común que es *bere*. ¿Se nos está pasando
+algo? ¿Es batua o solo bizkaiera?».
+
+**«bere» no aparecía ni una vez en todo el curso.** Y es batua de pleno
+derecho: es el genitivo reflexivo de *bera*, y la tercera persona de la
+serie *neure, zeure, geure* que la unidad 2 ya enseñaba… sin completar.
+
+La regla es la **ley de Linschmann-Aresti**, que recogen la Euskararen
+Gramatika de Euskaltzaindia (13.7) y el Euskara Batuaren Eskuliburua:
+se usa el genitivo reflexivo cuando el dueño aparece en esa misma
+oración como NOR, NORI o NORK. Es decir:
+
+- **Jon bere etxean dago** — Jon está en su casa, en la suya.
+- **Jon haren etxean dago** — Jon está en casa de otro.
+
+Lo dialectal no es *bere*, sino la **neutralización**: en los dialectos
+occidentales —Bizkaia la primera— *bere* se ha comido a *haren* y sirve
+para todo. El Eskuliburua lo describe («mendebaldeko euskalkietan
+sumatzen da batez ere *bere*-ren aldeko neutralizazioa») y avisa de la
+ambigüedad que trae. Euskaltzaindia no ha dictado un arau numerado
+sobre esto.
+
+Revisados **todos** los usos de *haren*/*haien* del curso: ninguno está
+mal. Y hay un motivo de fondo — hasta la unidad 5 el único verbo es
+«ser», y con «ser» el dueño nunca es argumento de la oración, así que
+*haren* era lo que tocaba.
+
+- Unidad 2.2: *bere* entra en la lista de posesivos, con la diferencia
+  dicha en dos líneas y el aviso de que se ve entera en la unidad 5.
+  *haren* gana nota. Vocabulario nuevo: *bere*.
+- Unidad 5.1: ficha **«Bere» o «haren»: dos maneras de decir «su»**, con
+  el par mínimo, el plural (*beren* / *haien*) y lo que pasa de verdad al
+  hablar. Grupo de ejercicios `u5-g40`.
