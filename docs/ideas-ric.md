@@ -3753,6 +3753,12 @@ código.
 
 ## Implementadas
 
+- **2026-09-24 · «gurasoak» y «senidea»** (los propuso Ric). El curso no
+  tenía forma de decir «mis padres», y «senidea» resultó ser la salida
+  neutra del sistema anaia/arreba/neba/ahizpa: Euskaltzaindia lo define
+  como hermano o hermana, no como «pariente».
+
+
 - **2026-09-24 · «bere», que faltaba entero** (lo detectó Ric comparando
   con otras apps). Es batua —genitivo reflexivo de *bera*— y la regla es
   la ley de Linschmann-Aresti, en la Gramatika de Euskaltzaindia. Lo

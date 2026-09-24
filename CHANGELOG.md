@@ -1406,3 +1406,28 @@ mal. Y hay un motivo de fondo — hasta la unidad 5 el único verbo es
 - Unidad 5.1: ficha **«Bere» o «haren»: dos maneras de decir «su»**, con
   el par mínimo, el plural (*beren* / *haien*) y lo que pasa de verdad al
   hablar. Grupo de ejercicios `u5-g40`.
+
+## 2026-09-24 — «Gurasoak» y «senidea» entran en la familia
+
+Propuesta de Ric. Las dos merecen estar, y la segunda más de lo que
+parecía.
+
+**gurasoak** — los padres. El curso tenía *aita* y *ama* pero ninguna
+forma de decir «mis padres» sin nombrarlos de uno en uno. Va casi
+siempre en plural, porque nombra a los dos; el singular *gurasoa* es
+«progenitor» y apenas se usa (Elhuyar lo marca como plural).
+
+**senidea** — hermano o hermana, sin distinguir. Aquí estaba la
+sorpresa: no es sobre todo «pariente». El Euskaltzaindiaren Hiztegia lo
+define como «cada uno de los otros hijos de tus padres, o de uno de tus
+padres» —lo que además cubre a los hermanos de un solo lado— y la
+acepción «ahaidea» (pariente) va después y sin marca dialectal; Elhuyar
+sí marca esa segunda como bizkaina. Las dos cosas se dicen en la ficha.
+
+Lo que lo hace valioso para el curso: es **la salida neutra del sistema
+de cuatro palabras** (anaia/arreba/neba/ahizpa), que es lo más costoso
+de ese tema. *Hiru senide gara* se dice sin saber el sexo de nadie.
+
+Van en 4.6: *gurasoak* en el mapa de la familia, *senidea* al final de la
+ficha de hermanos, las dos en el vocabulario, y grupo `u4-g49` con cinco
+variantes.
