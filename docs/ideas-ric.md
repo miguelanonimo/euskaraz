@@ -3753,6 +3753,19 @@ código.
 
 ## Implementadas
 
+- **2026-09-24 · «gurasoak» y «senidea»** (los propuso Ric). El curso no
+  tenía forma de decir «mis padres», y «senidea» resultó ser la salida
+  neutra del sistema anaia/arreba/neba/ahizpa: Euskaltzaindia lo define
+  como hermano o hermana, no como «pariente».
+
+
+- **2026-09-24 · «bere», que faltaba entero** (lo detectó Ric comparando
+  con otras apps). Es batua —genitivo reflexivo de *bera*— y la regla es
+  la ley de Linschmann-Aresti, en la Gramatika de Euskaltzaindia. Lo
+  dialectal es que en el oeste *bere* se coma a *haren*. Ningún *haren*
+  del curso estaba mal usado.
+
+
 - **2026-09-18 · «Esan» con ficha, ejercicios y «esan nahi du»** (lo
   señaló Ric: salía en 36 sitios sin haberse explicado). Pendiente de
   decidir si se enseñan las formas sintéticas (*diot, diozu, dio*).
