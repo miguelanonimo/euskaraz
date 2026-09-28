@@ -2472,7 +2472,8 @@
             "Que es muy antigua"
           ],
           "correcta": 1,
-          "explicacion": "No se le conoce familia lingüística."
+          "explicacion": "No se le conoce familia lingüística.",
+          "explica": "1.1"
         },
         {
           "tipo": "opcion",
@@ -2498,7 +2499,8 @@
             "Solo por escrito"
           ],
           "correcta": 1,
-          "explicacion": "Para eso se creó."
+          "explicacion": "Para eso se creó.",
+          "explica": "1.3"
         },
         {
           "tipo": "pares",
@@ -2520,7 +2522,8 @@
               "eu": "euskara",
               "es": "la lengua"
             }
-          ]
+          ],
+          "explica": "1.3"
         },
         {
           "tipo": "opcion",

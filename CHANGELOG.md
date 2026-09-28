@@ -1558,3 +1558,22 @@ Dos matices, anotados para no olvidarlos:
   va de tres sitios a la vez: la lengua aislada (1.1), que el batua vale
   en todas partes (1.3) y la s/z y «Epa!» (1.4). Su propio tema cubre dos
   de las cinco, que es más de lo que cubriría cualquier otro.
+
+## 2026-09-28 — `explica` también por variante
+
+Ric, sobre el «berrogeita hamabi» que quedaba huérfano en un grupo de
+números del once al diecinueve: «se deduce perfectamente con la
+explicación del 4.2, que señale allí sin duda».
+
+Una variante puede llevar ahora su propio `explica`, y manda sobre el
+del grupo. Con eso:
+
+- `u5-g03` v4 (el 52) → **4.2**, contar de veinte en veinte. Las otras
+  cuatro siguen en 4.1.
+- `u1-g25`, el repaso de fin de unidad que se había dejado como estaba
+  por tocar tres temas, queda afinado del todo: v0 (la lengua aislada) →
+  **1.1**, v2 (el batua vale en todas partes) y v3 (batua / euskalkia /
+  bizkaiera) → **1.3**. La s/z y «Epa!» se quedan en su propio 1.4.
+
+Trece apuntes en total en el curso, todos comprobados por
+`probar_ficha.js` contra los temas que existen.

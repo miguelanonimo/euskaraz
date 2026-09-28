@@ -77,6 +77,12 @@ comprobar('una palabra trae la unidad por número',
 comprobar('un ejercicio sin tema no ofrece ficha', a.fichasDe({ __uid: 'u5' }).length === 0);
 comprobar('el test de unidad tampoco', a.fichasDe({ __sub: 'test', __uid: 'u5' }).length === 0);
 
+// ── Una variante puede apuntar por su cuenta, y manda sobre su grupo ────
+a = api(CURSO_FALSO, null);
+comprobar('la variante manda sobre el grupo',
+  JSON.stringify(titulos(a.fichasDe({ __sub: '5.5', __uid: 'u5', __explica: '4.1' }))) ===
+  JSON.stringify(['Del uno al diez']));
+
 // ── Y el curso de verdad: los `explica` apuntan a temas que existen ──────
 const curso = JSON.parse(fs.readFileSync(require('path').join(__dirname, '..', 'data/curso-v2.json'), 'utf8'));
 const base = require('path').join(__dirname, '..', 'data');
@@ -85,10 +91,13 @@ const grupos = [];
 for (const rel of curso.unidades) {
   const u = JSON.parse(fs.readFileSync(require('path').join(base, rel), 'utf8'));
   (u.subniveles || []).forEach(s => temas.add(s.id));
-  u.ejercicios.forEach(g => { if (g.explica) grupos.push([g.id, g.explica]); });
+  u.ejercicios.forEach(g => {
+    if (g.explica) grupos.push([g.id, g.explica]);
+    (g.variantes || []).forEach((v, i) => { if (v.explica) grupos.push([g.id + ' v' + i, v.explica]); });
+  });
 }
 grupos.forEach(([id, ex]) => comprobar('«' + id + '» apunta a un tema que existe (' + ex + ')', temas.has(ex)));
-console.log('  (grupos con `explica`: ' + grupos.length + ')');
+console.log('  (apuntes `explica` en el curso: ' + grupos.length + ')');
 
 if (fallos) { console.error(fallos + ' fallo(s)'); process.exit(1); }
 console.log('ficha OK');
