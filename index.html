@@ -15,7 +15,7 @@
 <link rel="manifest" href="site.webmanifest">
 <!-- El ?v= se sube al cambiar CSS o JS: sin él, el navegador sirve
      la copia cacheada y se ven estilos viejos sobre marcado nuevo. -->
-<link rel="stylesheet" href="css/styles.css?v=7">
+<link rel="stylesheet" href="css/styles.css?v=13">
 </head>
 <body>
 
@@ -55,6 +55,24 @@
   <div class="rutamenu" id="rutamenu" hidden>
     <div class="rutamenu__tabs" id="rutaTabs"></div>
     <div class="rutamenu__lista" id="rutaLista"></div>
+  </div>
+
+  <!-- La ficha del tema, encima del ejercicio. Se cierra y sigues donde
+       estabas: no cambia de pantalla ni desbloquea nada. -->
+  <div class="hoja" id="hoja" hidden>
+    <div class="hoja__fondo" id="hojaFondo"></div>
+    <div class="hoja__panel" role="dialog" aria-modal="true" aria-labelledby="hojaTitulo">
+      <div class="hoja__cab">
+        <div>
+          <p class="hoja__ruta" id="hojaRuta"></p>
+          <h2 class="hoja__titulo" id="hojaTitulo">Explicación</h2>
+        </div>
+        <button class="hoja__cerrar" id="hojaCerrar" type="button" aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="hoja__cuerpo" id="hojaCuerpo"></div>
+    </div>
   </div>
 
   <!-- ══════════ PANTALLA: ACCESO ══════════ -->
@@ -338,7 +356,19 @@
         <span class="feedback__title" id="feedbackTitle"></span>
       </div>
       <p class="feedback__body" id="feedbackBody"></p>
-      <button class="btn btn--feedback" id="feedbackNext">Continuar</button>
+      <!-- El libro abre la ficha del tema sin salir del ejercicio. Solo
+           aparece si ese tema tiene explicación que enseñar. -->
+      <div class="feedback__acciones">
+        <button class="btn btn--ficha" id="btnFicha" type="button" hidden
+                aria-label="Ver explicación" data-tip="Ver explicación">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 6.5C10.5 5.2 8.6 4.6 6 4.6c-1 0-2 .1-2.8.3v13c.8-.2 1.8-.3 2.8-.3 2.6 0 4.5.6 6 1.9"/>
+            <path d="M12 6.5c1.5-1.3 3.4-1.9 6-1.9 1 0 2 .1 2.8.3v13c-.8-.2-1.8-.3-2.8-.3-2.6 0-4.5.6-6 1.9"/>
+            <path d="M12 6.5v12.9"/>
+          </svg>
+        </button>
+        <button class="btn btn--feedback" id="feedbackNext">Continuar</button>
+      </div>
     </div>
   </div>
 
@@ -350,6 +380,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
-<script src="js/app.js?v=7"></script>
+<script src="js/app.js?v=13"></script>
 </body>
 </html>

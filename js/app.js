@@ -207,6 +207,11 @@
     feedbackTitle: $('feedbackTitle'),
     feedbackBody:  $('feedbackBody'),
     feedbackNext:  $('feedbackNext'),
+    btnFicha:      $('btnFicha'),
+    hoja:          $('hoja'),
+    hojaRuta:      $('hojaRuta'),
+    hojaTitulo:    $('hojaTitulo'),
+    hojaCuerpo:    $('hojaCuerpo'),
     actionbar:     $('actionbar'),
     btnCheck:      $('btnCheck')
   };
@@ -466,7 +471,12 @@
     var copia = {};
     for (var k in v) copia[k] = v[k];
     copia.__clave = claveGrupo(grupo.id);
-    if (unidad) copia.__unidad = unidad.numero + '. ' + unidad.titulo;
+    // De qué tema sale, para poder abrir su ficha desde el ejercicio.
+    copia.__sub = grupo.subnivel;
+    if (unidad) {
+      copia.__unidad = unidad.numero + '. ' + unidad.titulo;
+      copia.__uid = unidad.id;
+    }
     return copia;
   }
 
@@ -532,13 +542,13 @@
   function formasDe(v, unidad, titulo) {
     var base = { eu: v.eu, es: v.es, esAlt: v.esAlt, nota: v.nota, audio: v.audio,
                  registro: v.registro, categoria: v.categoria || 'otros',
-                 unidad: unidad, titulo: titulo };
+                 subnivel: v.subnivel, unidad: unidad, titulo: titulo };
     if (!incluirDialectales || !v.variantes || !v.variantes.length) return [base];
     return [base].concat(v.variantes.map(function (variante) {
       return { eu: variante.eu, es: v.es, esAlt: v.esAlt, nota: variante.nota,
                audio: variante.audio, registro: variante.registro,
                categoria: variante.categoria || base.categoria,
-               unidad: unidad, titulo: titulo };
+               subnivel: v.subnivel, unidad: unidad, titulo: titulo };
     }));
   }
 
@@ -1600,12 +1610,11 @@
     guardarProgreso();
   }
 
-  function pantallaGramatica() {
-    var u = estado.unidad;
-    desbloquearTema();
-    barraDeUnidad(u, 'Gramática');
-
-    el.gramContent.innerHTML = gramaticaVisible(delSubnivel(u.gramatica, estado.subnivel)).map(function (g) {
+  /* Las fichas de un tema, en HTML. Lo usan la pantalla de Gramática y la
+     hoja que se abre desde dentro de un ejercicio: el mismo contenido y el
+     mismo aspecto en los dos sitios. */
+  function pintarFichas(lista) {
+    return lista.map(function (g) {
       var ejemplos = '';
       if (g.ejemplos && g.ejemplos.length) {
         ejemplos = '<ul class="exlist">' + g.ejemplos.map(function (e) {
@@ -1619,6 +1628,14 @@
         ejemplos +
       '</article>';
     }).join('');
+  }
+
+  function pantallaGramatica() {
+    var u = estado.unidad;
+    desbloquearTema();
+    barraDeUnidad(u, 'Gramática');
+
+    el.gramContent.innerHTML = pintarFichas(gramaticaVisible(delSubnivel(u.gramatica, estado.subnivel)));
 
     mostrar('gram');
   }
@@ -1716,7 +1733,8 @@
     var r = [];
     (u.gramatica || []).forEach(function (g) {
       (g.ejemplos || []).forEach(function (e) {
-        if (e.audio) r.push({ eu: e.eu, es: e.es, audio: e.audio, unidad: u.numero, titulo: u.titulo });
+        if (e.audio) r.push({ eu: e.eu, es: e.es, audio: e.audio, subnivel: g.subnivel,
+                              unidad: u.numero, titulo: u.titulo });
       });
     });
     return r;
@@ -2155,6 +2173,8 @@
   function marcarVocab(q, entrada) {
     q.__clave   = clavePalabra(entrada.eu);
     q.__unidad  = entrada.unidad + '. ' + entrada.titulo;
+    q.__sub     = entrada.subnivel;
+    q.__unum    = entrada.unidad;
     q.__palabra = entrada;
     q.__registro = entrada.registro;
     return q;
@@ -3226,6 +3246,47 @@
 
   // ─────────── Feedback ───────────
 
+  /* ── La ficha del tema, sin salir del ejercicio ──────────────────────
+
+     Un ejercicio sabe de qué tema viene (`__sub`) y de qué unidad
+     (`__uid`, o `__unum` cuando viene del vocabulario, que guarda el
+     número). Con eso se sacan las mismas fichas que enseña la pantalla de
+     Gramática. No desbloquea nada: abrirla aquí no mete las palabras del
+     tema en el repaso, que es lo que hace entrar por la pantalla. */
+  function unidadDe(ej) {
+    if (!CURSO) return null;
+    var us = CURSO.unidades;
+    for (var i = 0; i < us.length; i++) {
+      if (ej.__uid && us[i].id === ej.__uid) return us[i];
+      if (ej.__unum && us[i].numero === ej.__unum) return us[i];
+    }
+    /* Practicando una unidad, prepararVariante() no recibe la unidad
+       —ya está en el estado y la etiqueta no hace falta—, así que el
+       ejercicio no la lleva encima. Aquí es la que tienes abierta. */
+    return estado.unidad || null;
+  }
+
+  function fichasDe(ej) {
+    if (!ej || !ej.__sub) return [];
+    var u = unidadDe(ej);
+    if (!u) return [];
+    return gramaticaVisible(delSubnivel(u.gramatica, ej.__sub));
+  }
+
+  function abrirHoja() {
+    var ej = ejActual(), fichas = fichasDe(ej);
+    if (!fichas.length) return;
+    var u = unidadDe(ej);
+    var tema = (u.subniveles || []).filter(function (s) { return s.id === ej.__sub; })[0];
+    el.hojaRuta.textContent = u.numero + '. ' + u.titulo;
+    el.hojaTitulo.textContent = tema ? (tema.id + ' ' + tema.titulo) : 'Explicación';
+    el.hojaCuerpo.innerHTML = pintarFichas(fichas);
+    el.hojaCuerpo.scrollTop = 0;
+    el.hoja.hidden = false;
+  }
+
+  function cerrarHoja() { el.hoja.hidden = true; el.hojaCuerpo.innerHTML = ''; }
+
   function feedback(ok, titulo, cuerpo, leve) {
     el.feedback.className = 'feedback ' + (leve ? 'is-leve-fb' : (ok ? 'is-ok-fb' : 'is-mal-fb'));
     el.feedback.hidden = false;
@@ -3239,9 +3300,12 @@
       ? (estado.ejercicios.length === 1 && estado.ejercicios[0].faltan === 0)
       : (estado.indice === estado.ejercicios.length - 1);
     el.feedbackNext.textContent = ultimo ? 'Ver resultado' : 'Continuar';
+    // El libro solo se ofrece si ese tema tiene algo que enseñar.
+    el.btnFicha.hidden = !fichasDe(ejActual()).length;
   }
 
   function ocultarFeedback() {
+    cerrarHoja();
     el.feedback.hidden = true;
     if (estado.pantalla === 'quiz') el.actionbar.hidden = false;
   }
@@ -3483,6 +3547,13 @@
   el.btnBack.addEventListener('click', atras);
   el.btnCheck.addEventListener('click', comprobar);
   el.feedbackNext.addEventListener('click', siguiente);
+  el.btnFicha.addEventListener('click', abrirHoja);
+  $('hojaCerrar').addEventListener('click', cerrarHoja);
+  $('hojaFondo').addEventListener('click', cerrarHoja);
+  activarAudioEnLista(el.hojaCuerpo);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !el.hoja.hidden) cerrarHoja();
+  });
 
   /* Atajo de teclado para ordenador: en un ejercicio de opción, la letra
      (A, B, C…) elige esa opción, igual que tocarla — no la comprueba
