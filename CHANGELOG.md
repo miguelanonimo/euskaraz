@@ -1488,3 +1488,40 @@ Dos decisiones:
 
 El pintado de fichas se comparte con la pantalla de Gramática
 (`pintarFichas`) en vez de duplicarlo.
+
+## 2026-09-28 — Un ejercicio puede decir dónde se explica
+
+Ric, estrenando el botón del libro: «"Haiek etxe bat ___" con opciones
+du/dute/dira, y el botón me lleva a la ficha 5.5, "El caserío y sus
+animales". Es muy confuso, porque la pregunta habla del verbo tener.
+¿Es un error?».
+
+Lo era, y del ejercicio. `u5-g04` prueba entero el auxiliar de «tener»
+(dut/du/dugu/duzu/dute) y está archivado en 5.5 porque su vocabulario es
+de allí —txakurra, katua, etxea—. La única ficha de 5.5 habla de
+*etxea* y *baserria*.
+
+No se re-etiqueta el grupo: su vocabulario sí es de 5.5 y moverlo lo
+sacaría de la práctica de ese tema. Se añade un campo opcional en el
+grupo, **`explica`**, con el id del tema donde está la explicación —de
+cualquier unidad, porque los ids la llevan delante—. El libro lleva ahí
+y la cabecera de la hoja dice de qué unidad y tema es. `u5-g04` apunta
+ahora a **4.4**, el verbo *ukan*.
+
+Barrido de todo el curso buscando lo mismo —grupos cuyas respuestas no
+aparecen en la ficha de su tema—: **9 candidatos reales** de 357 grupos.
+Este es el primero; los otros ocho quedan anotados para decidir con Ric:
+
+    u10-g01 (9.5)  zait/zaizu/zaio…      la ficha está en 9.1
+    u10-g02 (9.3)  zaizkit/zaizkio…      la ficha está en 9.1
+    u9-g27  (9.5)  txapela, txapelduna   la ficha está en 9.4
+    u12-g02 (10.5) handiago, handiena    comparativos
+    u5-g03  (4.4)  hamaika, hemeretzi    los números son 4.1/4.2
+    u9-g04  (8.1)  Hondartzara, Bilbotik los casos son 8.3
+    u4-g08  (2.3)  Madrilgoa naiz        el -ko/-go es 2.4
+    u6-g12  (5.4)  -ra, zaude            es material de 5.1
+    u1-g25  (1.4)  sobre la lengua       parece de 1.3
+
+`scripts/probar_ficha.js` cubre la resolución (tema propio, `explica` a
+otra unidad, unidad abierta, vocabulario por número, y que los `explica`
+del curso apunten a temas que existen).

@@ -3753,6 +3753,13 @@ código.
 
 ## Implementadas
 
+- **2026-09-28 · Campo `explica` en los grupos de ejercicios**, para que
+  el botón del libro lleve a la ficha correcta cuando el ejercicio
+  practica algo de otro tema (lo encontró Ric el primer día de uso).
+  **Pendiente: decidir los otros 8 grupos mal archivados**, listados en
+  el CHANGELOG.
+
+
 - **2026-09-28 · La ficha del tema desde dentro del ejercicio** (idea de
   Ric): botón de icono junto a «Continuar» que abre la explicación en una
   hoja, sin salir del test y sin desbloquear el tema.
