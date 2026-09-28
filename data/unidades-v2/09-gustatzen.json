@@ -871,7 +871,8 @@
           "explicacion": "«a ellos» → zaie."
         }
       ],
-      "subnivel": "9.5"
+      "subnivel": "9.5",
+      "explica": "9.1"
     },
     {
       "id": "u10-g02",
@@ -942,7 +943,8 @@
           "explicacion": "«a nosotros» + plural = zaizkigu."
         }
       ],
-      "subnivel": "9.3"
+      "subnivel": "9.3",
+      "explica": "9.1"
     },
     {
       "id": "u10-g03",
@@ -3233,7 +3235,8 @@
           "correcta": 1,
           "explicacion": "«El que tiene» algo."
         }
-      ]
+      ],
+      "explica": "9.4"
     },
     {
       "id": "u9-g28",
