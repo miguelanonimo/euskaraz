@@ -304,7 +304,8 @@
         },
         {
           "eu": "Nire herria txikia da.",
-          "es": "Mi pueblo es pequeño."
+          "es": "Mi pueblo es pequeño.",
+          "audio": "unidades/u2/nire-herria-txikia-da.mp3"
         }
       ],
       "subnivel": "2.4"

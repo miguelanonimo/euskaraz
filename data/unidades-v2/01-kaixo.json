@@ -93,7 +93,8 @@
         },
         {
           "eu": "Barkatu, mesedez.",
-          "es": "Perdone, por favor."
+          "es": "Perdone, por favor.",
+          "audio": "unidades/u1/barkatu-mesedez.mp3"
         }
       ],
       "subnivel": "1.2"
@@ -185,7 +186,8 @@
         },
         {
           "eu": "bizkaiera",
-          "es": "el dialecto de Bizkaia"
+          "es": "el dialecto de Bizkaia",
+          "audio": "unidades/u1/bizkaiera.mp3"
         }
       ]
     },
@@ -215,7 +217,8 @@
         },
         {
           "eu": "bizkaiera",
-          "es": "el habla de Bizkaia"
+          "es": "el habla de Bizkaia",
+          "audio": "unidades/u1/bizkaiera.mp3"
         },
         {
           "eu": "euskalkia",
