@@ -83,6 +83,25 @@
       "subnivel": "5.1"
     },
     {
+      "titulo": "«Bere» o «haren»: dos maneras de decir «su»",
+      "cuerpo": "En la segunda unidad te avisé de que <i>haren</i> tenía compañera, <b>bere</b>, y de que la diferencia no se podía ver todavía. Aquí sí, porque ya sabes montar una frase con alguien dentro.\n\n<b>Jon bere etxean dago.</b> — Jon está en su casa. En la suya.\n<b>Jon haren etxean dago.</b> — Jon está en su casa. En la de otro.\n\nLa misma frase en castellano, dos situaciones distintas en euskera. El castellano dice «su» para las dos y lo deja al contexto; el euskera lo resuelve con la palabra.\n\n<b>La regla, en una línea</b>\nSi el dueño es quien hace o recibe la acción de esa misma frase, <b>bere</b>. Si el dueño está fuera de la frase, <b>haren</b>.\n\nEso explica por qué en la unidad 2 solo salía <i>haren</i>: con «ser» el dueño nunca está dentro (<i>haren laguna ikaslea da</i> — su amigo es estudiante).\n\n<b>En plural, igual</b>\n<b>beren</b> — lo suyo, de ellos mismos\n<b>haien</b> — lo de aquellos otros\n\n<b>Y ahora, la realidad</b>\nEso es la norma escrita. Hablando —y en Bizkaia especialmente— <b>bere</b> se ha comido a <i>haren</i> y se usa para todo. Euskaltzaindia no ha dictado una norma cerrada sobre esto, pero su gramática y su manual recogen la regla de arriba y avisan de que en los dialectos occidentales se está perdiendo la distinción, con la ambigüedad que eso trae.\n\nTraducido a lo práctico: si oyes <i>bere</i> donde esperabas <i>haren</i>, no es que hablen mal, es el uso real. Y si escribes, mantener la diferencia te sale gratis y se entiende mejor.",
+      "ejemplos": [
+        {
+          "eu": "Jon bere etxean dago.",
+          "es": "Jon está en su casa (en la suya)."
+        },
+        {
+          "eu": "Jon haren etxean dago.",
+          "es": "Jon está en casa de otro."
+        },
+        {
+          "eu": "Beren etxean daude.",
+          "es": "Están en su casa (en la de ellos)."
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
       "titulo": "Las cuatro preguntas de lugar, completas",
       "cuerpo": "Ahora ya puedes cerrar el cuadro que empezaste en la tercera unidad:\n\n<b>Non?</b> (¿dónde?) → <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\nCuatro preguntas, cuatro sufijos, y la respuesta lleva siempre la misma cola que la pregunta.\n\nEste sistema de sufijos que encajan unos con otros es el corazón del euskera. Cuando llegues a los casos que faltan (a quién, con quién, para quién), ya sabrás cómo funciona el mecanismo.\n\nY las dos palabras con las que se contesta sin nombrar el sitio:\n\n<b>hemen</b> — aquí\n<b>han</b> — allí\n\nSon las hermanas de <i>hau</i> y <i>hura</i>, los demostrativos de la tercera unidad: lo de cerca y lo de lejos. Y entran en el mismo cuadro de arriba — <i>hemendik</i> es «desde aquí», <i>hona</i> «hacia aquí».",
       "ejemplos": [
@@ -3913,6 +3932,73 @@
         }
       ],
       "subnivel": "5.5"
+    },
+    {
+      "id": "u5-g40",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Jon está en su propia casa. → Jon ____ etxean dago.",
+          "opciones": [
+            "bere",
+            "haren",
+            "haien",
+            "zure"
+          ],
+          "correcta": 0,
+          "explicacion": "El dueño es Jon, que es de quien va la frase: «bere»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Jon está en casa de otra persona. → Jon ____ etxean dago.",
+          "opciones": [
+            "haren",
+            "bere",
+            "gure",
+            "zuen"
+          ],
+          "correcta": 0,
+          "explicacion": "El dueño no está en la frase: «haren». Con «bere» sería la casa del propio Jon."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bere» y «haren» se traducen igual al castellano. ¿Qué las separa?",
+          "opciones": [
+            "Si el dueño es quien hace la acción",
+            "Si hay uno o varios dueños",
+            "Si hablas de tú o de usted",
+            "Si la cosa está cerca o lejos"
+          ],
+          "correcta": 0,
+          "explicacion": "Dueño dentro de la frase, «bere»; fuera, «haren»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Están en su propia casa (de ellos). → ____ etxean daude.",
+          "opciones": [
+            "Beren",
+            "Haien",
+            "Bere",
+            "Gure"
+          ],
+          "correcta": 0,
+          "explicacion": "El plural de «bere» es «beren». «Haien» sería la casa de otros."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Jon está en su casa (en la suya).",
+          "respuestas": [
+            "jon bere etxean dago"
+          ],
+          "pista": "Lo suyo propio lleva «bere»."
+        }
+      ],
+      "subnivel": "5.1"
     }
   ]
 }

@@ -22,11 +22,10 @@ Página nueva, mismo patrón que las de revisión: `revision-audio/elegir-mejor-
    que marcaste mal) y **3 versiones nuevas**. Tu propia nota está a la
    vista para recordar qué buscabas.
 3. Marca con el radio la que suene mejor. Si ninguna de las 3 convence,
-   dilo directamente en el informe de texto de abajo antes de copiarlo
-   (por ejemplo: "ninguna arregla el acento de X, hace falta otro
-   enfoque") — el botón "Copiar informe" solo mete lo que has marcado con
-   radio, así que cualquier cosa aparte se añade a mano en el textarea
-   antes de copiar.
+   marca **«Ninguna vale»**: sale en el informe como `"elegida":
+   "ninguna"`. (Al principio esto se pedía escribiéndolo en el cuadro del
+   informe, pero ese cuadro es de solo lectura y el botón de copiar no lo
+   lee; se añadió la opción el 22/09.)
 4. Cópiaselo a Miguel igual que el informe anterior.
 
 Con esa elección se aplica el audio ganador de cada palabra a
@@ -3753,6 +3752,19 @@ código.
   https://euskaraz-git-experimento-ejercicio-listening-anonimostudio.vercel.app
 
 ## Implementadas
+
+- **2026-09-24 · «gurasoak» y «senidea»** (los propuso Ric). El curso no
+  tenía forma de decir «mis padres», y «senidea» resultó ser la salida
+  neutra del sistema anaia/arreba/neba/ahizpa: Euskaltzaindia lo define
+  como hermano o hermana, no como «pariente».
+
+
+- **2026-09-24 · «bere», que faltaba entero** (lo detectó Ric comparando
+  con otras apps). Es batua —genitivo reflexivo de *bera*— y la regla es
+  la ley de Linschmann-Aresti, en la Gramatika de Euskaltzaindia. Lo
+  dialectal es que en el oeste *bere* se coma a *haren*. Ningún *haren*
+  del curso estaba mal usado.
+
 
 - **2026-09-18 · «Esan» con ficha, ejercicios y «esan nahi du»** (lo
   señaló Ric: salía en 36 sitios sin haberse explicado). Pendiente de

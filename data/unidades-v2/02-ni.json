@@ -90,7 +90,7 @@
     },
     {
       "titulo": "Los posesivos: nire, zure, gure…",
-      "cuerpo": "Los posesivos salen de los pronombres, y se parecen bastante. Van <b>delante</b> del sustantivo, como en castellano:\n\n<b>nire</b> — mi\n<b>zure</b> — tu, su (de usted)\n<b>haren</b> — su (de él, de ella)\n<b>gure</b> — nuestro\n<b>zuen</b> — vuestro\n<b>haien</b> — su (de ellos)\n\nY el sustantivo mantiene su artículo <b>-a</b>:\n\n<b>nire etxea</b> — mi casa\n<b>zure laguna</b> — tu amigo\n<b>gure herria</b> — nuestro pueblo\n\nSi además metes un adjetivo, va al final del grupo, con el artículo pegado a él:\n\n<b>nire etxe handia</b> — mi casa grande",
+      "cuerpo": "Los posesivos salen de los pronombres, y se parecen bastante. Van <b>delante</b> del sustantivo, como en castellano:\n\n<b>nire</b> — mi\n<b>zure</b> — tu, su (de usted)\n<b>haren</b> — su (de él, de ella)\n<b>gure</b> — nuestro\n<b>zuen</b> — vuestro\n<b>haien</b> — su (de ellos)\n\nY el sustantivo mantiene su artículo <b>-a</b>:\n\n<b>nire etxea</b> — mi casa\n<b>zure laguna</b> — tu amigo\n<b>gure herria</b> — nuestro pueblo\n\nSi además metes un adjetivo, va al final del grupo, con el artículo pegado a él:\n\n<b>nire etxe handia</b> — mi casa grande\n\n<b>Y falta una, que además es la que más vas a oír</b>\n\n<b>bere</b> — su (de él, de ella)\n\nNo es intercambiable con <i>haren</i>, aunque las dos se traduzcan «su»:\n\n<b>bere</b> es <b>lo suyo propio</b>: el dueño es de quien va la frase.\n<b>haren</b> es lo <b>de esa otra persona</b>.\n\nCon el verbo «ser» a secas la diferencia no llega a verse, porque el dueño no aparece dentro de la frase — por eso hasta aquí solo ha salido <i>haren</i>. En cuanto alguien hace algo, cambia el sentido: lo tienes entero en la quinta unidad.\n\nY no es una palabra suelta: es la tercera persona de la serie <i>neure, zeure, geure</i> de la ficha siguiente, que allí se queda sin completar.",
       "ejemplos": [
         {
           "eu": "nire izena",
@@ -437,8 +437,15 @@
     {
       "eu": "haren",
       "es": "su (de él / de ella)",
-      "nota": null,
+      "nota": "De otra persona, no de quien hace la acción en esa frase. Si es lo suyo propio, «bere».",
       "audio": "unidades/u2/haren.mp3",
+      "categoria": "otros",
+      "subnivel": "2.2"
+    },
+    {
+      "eu": "bere",
+      "es": "su (de él / de ella), lo suyo propio",
+      "nota": "Frente a «haren», que es de otro. La diferencia se explica en la unidad 5.",
       "categoria": "otros",
       "subnivel": "2.2"
     },
