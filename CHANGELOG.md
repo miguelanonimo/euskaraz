@@ -1458,3 +1458,33 @@ de ese tema. *Hiru senide gara* se dice sin saber el sexo de nadie.
 Van en 4.6: *gurasoak* en el mapa de la familia, *senidea* al final de la
 ficha de hermanos, las dos en el vocabulario, y grupo `u4-g49` con cinco
 variantes.
+
+## 2026-09-28 — La explicación, sin salir del ejercicio
+
+Idea de Ric: al responder una pregunta —acertando o fallando—, un botón
+junto a «Continuar» que abre la ficha del tema, la lees y sigues.
+
+Un botón de icono redondo y oscuro (44 px, el mínimo cómodo para el
+dedo) con un libro abierto, a la izquierda de «Continuar» y centrado a su
+altura. Al pulsarlo sube una hoja con **la ficha exacta del tema** de ese
+ejercicio: la misma que enseña la pantalla de Gramática, con sus botones
+de audio. Se cierra con la X, tocando fuera o con Escape, y el ejercicio
+sigue donde estaba. Tooltip «Ver explicación» en ratón y teclado.
+
+Para saber de qué tema viene cada pregunta, el `subnivel` viaja ahora con
+el ejercicio (`__sub`) desde los tres sitios que los construyen: práctica
+de unidad, repaso mezclado y repaso de vocabulario —incluidas las
+preguntas de escuchar, que son las que más lejos quedaban del tema—.
+
+Dos decisiones:
+
+- **Abrir la ficha desde aquí no desbloquea nada.** Entrar por la
+  pantalla de Gramática mete las palabras de ese tema en el repaso;
+  hacerlo desde un ejercicio ampliaría el calendario cada vez que
+  consultas una duda.
+- **El botón solo sale si ese tema tiene explicación.** En el test de
+  unidad los grupos marcados como «test» no son de ningún tema, así que
+  ahí no aparece; los de relleno, que sí vienen de uno, lo muestran.
+
+El pintado de fichas se comparte con la pantalla de Gramática
+(`pintarFichas`) en vez de duplicarlo.

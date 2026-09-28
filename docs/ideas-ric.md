@@ -3753,6 +3753,11 @@ código.
 
 ## Implementadas
 
+- **2026-09-28 · La ficha del tema desde dentro del ejercicio** (idea de
+  Ric): botón de icono junto a «Continuar» que abre la explicación en una
+  hoja, sin salir del test y sin desbloquear el tema.
+
+
 - **2026-09-24 · «gurasoak» y «senidea»** (los propuso Ric). El curso no
   tenía forma de decir «mis padres», y «senidea» resultó ser la salida
   neutra del sistema anaia/arreba/neba/ahizpa: Euskaltzaindia lo define
