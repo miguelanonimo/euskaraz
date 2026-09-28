@@ -1525,3 +1525,36 @@ Este es el primero; los otros ocho quedan anotados para decidir con Ric:
 `scripts/probar_ficha.js` cubre la resolución (tema propio, `explica` a
 otra unidad, unidad abierta, vocabulario por número, y que los `explica`
 del curso apunten a temas que existen).
+
+## 2026-09-28 — Los ocho grupos restantes apuntan ya a su ficha
+
+Criterio de Ric: «cuando te enfrentes a la pregunta y dudes o falles,
+puedas leer de dónde viene». Con eso, el libro tiene que llevar a lo que
+explica **la respuesta**, esté donde esté.
+
+Siete eran evidentes —las cinco variantes del grupo prueban una sola
+cosa— y uno es mixto pero tiene destino claro:
+
+| grupo | vivía en | `explica` | qué prueba |
+|---|---|---|---|
+| `u10-g01` | 9.5 | **9.1** | zait / zaizu / zaio / zaigu / zaie |
+| `u10-g02` | 9.3 | **9.1** | zait frente a zaizkit |
+| `u9-g27` | 9.5 | **9.4** | txapela, txapeldun, el sufijo -dun |
+| `u12-g02` | 10.5 | **10.4** | handiago, handiena, baino, bezain |
+| `u5-g03` | 4.4 | **4.1** | los números del once al diecinueve |
+| `u9-g04` | 8.1 | **8.3** | -ra, -tik y -n, también en plural |
+| `u4-g08` | 2.3 | **2.4** | el sufijo -ko / -go |
+| `u6-g12` | 5.4 | **5.1** | preguntas de lugar y bizkaiera |
+
+Ninguno cambia de tema: siguen practicándose donde están, solo dicen
+dónde se explican.
+
+Dos matices, anotados para no olvidarlos:
+
+- `u5-g03` v4 pregunta «berrogeita hamabi» (52), que es de **4.2**, no de
+  4.1. Cuatro de las cinco son del once al diecinueve, así que apunta
+  ahí; esa quinta manda a una ficha que no la cubre del todo.
+- `u1-g25` (1.4) **se queda como está**. Es un repaso de fin de unidad y
+  va de tres sitios a la vez: la lengua aislada (1.1), que el batua vale
+  en todas partes (1.3) y la s/z y «Epa!» (1.4). Su propio tema cubre dos
+  de las cinco, que es más de lo que cubriría cualquier otro.
