@@ -473,6 +473,10 @@
     copia.__clave = claveGrupo(grupo.id);
     // De qué tema sale, para poder abrir su ficha desde el ejercicio.
     copia.__sub = grupo.subnivel;
+    // Algunos grupos practican algo que se explica en OTRO tema: un
+    // ejercicio de «tener» con vocabulario del caserío, por ejemplo. Con
+    // `explica` apuntan a la ficha que toca, y el libro lleva allí.
+    copia.__explica = grupo.explica;
     if (unidad) {
       copia.__unidad = unidad.numero + '. ' + unidad.titulo;
       copia.__uid = unidad.id;
@@ -3266,18 +3270,34 @@
     return estado.unidad || null;
   }
 
+  /* Dónde se explica lo que pregunta este ejercicio: su propio tema, o el
+     que señale `explica` si practica algo de otra parte del curso. Los ids
+     de tema llevan la unidad delante («4.4»), así que se busca en todas. */
+  function temaDe(ej) {
+    if (!ej) return null;
+    var id = ej.__explica || ej.__sub;
+    if (!id || !CURSO) return null;
+    var us = CURSO.unidades, propia = unidadDe(ej);
+    var orden = ej.__explica ? us : [propia].concat(us);
+    for (var i = 0; i < orden.length; i++) {
+      var u = orden[i];
+      if (!u) continue;
+      var t = (u.subniveles || []).filter(function (s) { return s.id === id; })[0];
+      if (t || (!ej.__explica && u === propia)) return { unidad: u, tema: t, id: id };
+    }
+    return null;
+  }
+
   function fichasDe(ej) {
-    if (!ej || !ej.__sub) return [];
-    var u = unidadDe(ej);
-    if (!u) return [];
-    return gramaticaVisible(delSubnivel(u.gramatica, ej.__sub));
+    var d = temaDe(ej);
+    if (!d) return [];
+    return gramaticaVisible(delSubnivel(d.unidad.gramatica, d.id));
   }
 
   function abrirHoja() {
     var ej = ejActual(), fichas = fichasDe(ej);
     if (!fichas.length) return;
-    var u = unidadDe(ej);
-    var tema = (u.subniveles || []).filter(function (s) { return s.id === ej.__sub; })[0];
+    var d = temaDe(ej), u = d.unidad, tema = d.tema;
     el.hojaRuta.textContent = u.numero + '. ' + u.titulo;
     el.hojaTitulo.textContent = tema ? (tema.id + ' ' + tema.titulo) : 'Explicación';
     el.hojaCuerpo.innerHTML = pintarFichas(fichas);
