@@ -6,6 +6,33 @@ historial de git si hace falta el detalle.
 
 ---
 
+## 2026-09-28 — Aplicadas las correcciones de audio del bloque 1 (14 de 16)
+
+Con la elección de Ric entre las 3 versiones regeneradas, dos tipos de
+aplicación (el análisis de Ric en `docs/audio-bloque1-elecciones.md`
+distinguió bien las dos, evitó duplicar trabajo):
+
+- **9 sin campo `audio` todavía** (existían solo en el bucket de pruebas,
+  la app salía muda): subido el mp3 ganador a producción y añadido el
+  campo en `data/unidades-v2/` — incluye una variante dialectal anidada,
+  «horreek», que un primer pase pasó por alto al no mirar dentro de
+  `variantes`.
+- **5 con audio ya en producción, y era el malo** (`nola-duzu-izena` en
+  dos sitios del curso con dos ficheros distintos, `ni-ere-euskalduna-naiz`,
+  `gu-ere-lagunak-gara`, `zuek-ikasleak-zarie`, `hemeretzi`): sustituido el
+  fichero en el bucket manteniendo la misma ruta — la CLI de Supabase no
+  sobrescribe directo (`cp` da "Duplicate"), y `rm` no borra en esta
+  versión (2.115.0, sin log de llamada DELETE); rodeado con `mv` a
+  `test/_descartes/` para liberar la ruta y luego `cp` del bueno. Los
+  viejos quedan ahí por si hay que volver atrás, no se han borrado.
+
+**Pendientes, sin resolver todavía:** `gipuzkoa` y `gela` — Ric marcó
+"ninguna" en las 3 versiones nuevas para ambas. Propuesta de Ric/Claude
+Opus para la siguiente ronda: en vez de solo la instrucción, cambiar el
+TEXTO que se le manda al modelo («Gipuskoa», «guela» en vez de la forma
+real, dejando la grafía correcta en la app) — y si tampoco basta, cambiar
+de voz (todo el lote usa `Kore`). Decisión de Miguel, no se hace sola.
+
 ## 2026-09-19 — 3 versiones de cada audio que Ric marcó mal (bloque 1)
 
 Ric revisó el bloque 1 y marcó 16 palabras/frases como "mal", con nota de

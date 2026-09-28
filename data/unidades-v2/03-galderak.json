@@ -108,7 +108,8 @@
         },
         {
           "eu": "Ikasle hori nongoa da?",
-          "es": "¿De dónde es ese estudiante?"
+          "es": "¿De dónde es ese estudiante?",
+          "audio": "unidades/u3/ikasle-hori-nongoa-da.mp3"
         },
         {
           "eu": "Hura medikua da.",
@@ -142,11 +143,13 @@
       "ejemplos": [
         {
           "eu": "Ha medikua da.",
-          "es": "Aquel es médico. — en batua, «Hura medikua da»."
+          "es": "Aquel es médico. — en batua, «Hura medikua da».",
+          "audio": "unidades/u3/ha-medikua-da.mp3"
         },
         {
           "eu": "Ikasle horreek euskaldunak dira.",
-          "es": "Esos estudiantes hablan euskera. — en batua, «Ikasle horiek…»."
+          "es": "Esos estudiantes hablan euskera. — en batua, «Ikasle horiek…».",
+          "audio": "unidades/u3/ikasle-horreek-euskaldunak-dira.mp3"
         }
       ],
       "subnivel": "3.3",
@@ -246,7 +249,8 @@
       "ejemplos": [
         {
           "eu": "Noiz? Gaur.",
-          "es": "¿Cuándo? Hoy."
+          "es": "¿Cuándo? Hoy.",
+          "audio": "unidades/u3/noiz-gaur.mp3"
         },
         {
           "eu": "Beti hemen.",
@@ -525,9 +529,11 @@
         {
           "eu": "horreek",
           "registro": "bizkaiera",
-          "nota": "Plural bizkaino de «hori». También se oye «horreik»."
+          "nota": "Plural bizkaino de «hori». También se oye «horreik».",
+          "audio": "unidades/u3/horreek.mp3"
         }
-      ]
+      ],
+      "audio": "unidades/u3/horiek.mp3"
     }
   ],
   "ejercicios": [
