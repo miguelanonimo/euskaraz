@@ -1296,7 +1296,8 @@
             "63"
           ],
           "correcta": 0,
-          "explicacion": "berrogei (40) + hamabi (12) = 52. Dos veintes y doce."
+          "explicacion": "berrogei (40) + hamabi (12) = 52. Dos veintes y doce.",
+          "explica": "4.2"
         }
       ],
       "subnivel": "4.4",

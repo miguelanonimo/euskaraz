@@ -473,10 +473,12 @@
     copia.__clave = claveGrupo(grupo.id);
     // De qué tema sale, para poder abrir su ficha desde el ejercicio.
     copia.__sub = grupo.subnivel;
-    // Algunos grupos practican algo que se explica en OTRO tema: un
-    // ejercicio de «tener» con vocabulario del caserío, por ejemplo. Con
-    // `explica` apuntan a la ficha que toca, y el libro lleva allí.
-    copia.__explica = grupo.explica;
+    /* Algunos grupos practican algo que se explica en OTRO tema: un
+       ejercicio de «tener» con vocabulario del caserío, por ejemplo. Con
+       `explica` apuntan a la ficha que toca, y el libro lleva allí.
+       Una variante suelta puede apuntar a otra distinta que su grupo —el
+       52 de un grupo de números del 11 al 19—, y entonces manda ella. */
+    copia.__explica = copia.explica || grupo.explica;
     if (unidad) {
       copia.__unidad = unidad.numero + '. ' + unidad.titulo;
       copia.__uid = unidad.id;
