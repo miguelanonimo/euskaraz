@@ -203,7 +203,7 @@
       "nota": null,
       "audio": "unidades/u12/azkar.mp3",
       "categoria": "otros",
-      "subnivel": "11.4"
+      "subnivel": "11.3"
     },
     {
       "eu": "poliki",
@@ -211,7 +211,7 @@
       "nota": null,
       "audio": "unidades/u12/poliki.mp3",
       "categoria": "otros",
-      "subnivel": "11.4"
+      "subnivel": "11.3"
     },
     {
       "eu": "zaila",
@@ -243,7 +243,7 @@
       "nota": "Sale en el «bezain» de la ficha: zu bezain altua.",
       "audio": null,
       "categoria": "adjetivo",
-      "subnivel": "11.4"
+      "subnivel": "11.3"
     },
     {
       "eu": "etorkizuna",
@@ -341,122 +341,6 @@
       "explica": "10.4"
     },
     {
-      "id": "u12-g03",
-      "variantes": [
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja las comparaciones",
-          "pares": [
-            {
-              "eu": "baino",
-              "es": "que (comparando)"
-            },
-            {
-              "eu": "bezain",
-              "es": "tan… como"
-            },
-            {
-              "eu": "gehiago",
-              "es": "más"
-            },
-            {
-              "eu": "gutxiago",
-              "es": "menos"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja los conectores",
-          "pares": [
-            {
-              "eu": "beraz",
-              "es": "así que"
-            },
-            {
-              "eu": "gainera",
-              "es": "además"
-            },
-            {
-              "eu": "hala ere",
-              "es": "aun así"
-            },
-            {
-              "eu": "adibidez",
-              "es": "por ejemplo"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja los adverbios",
-          "pares": [
-            {
-              "eu": "noski",
-              "es": "claro"
-            },
-            {
-              "eu": "benetan",
-              "es": "de verdad"
-            },
-            {
-              "eu": "bakarrik",
-              "es": "solo"
-            },
-            {
-              "eu": "berdin",
-              "es": "igual"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja los adjetivos y adverbios",
-          "pares": [
-            {
-              "eu": "zaila",
-              "es": "difícil"
-            },
-            {
-              "eu": "erraza",
-              "es": "fácil"
-            },
-            {
-              "eu": "azkar",
-              "es": "rápido"
-            },
-            {
-              "eu": "poliki",
-              "es": "despacio"
-            }
-          ]
-        },
-        {
-          "tipo": "pares",
-          "instruccion": "Empareja los indefinidos",
-          "pares": [
-            {
-              "eu": "norbait",
-              "es": "alguien"
-            },
-            {
-              "eu": "zerbait",
-              "es": "algo"
-            },
-            {
-              "eu": "nonbait",
-              "es": "en algún sitio"
-            },
-            {
-              "eu": "denak",
-              "es": "todos"
-            }
-          ]
-        }
-      ],
-      "subnivel": "11.3"
-    },
-    {
       "id": "u12-g07",
       "variantes": [
         {
@@ -488,7 +372,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Euskara zaila da, baina ____ da polita.",
+          "pregunta": "Bilbo handia da, baina Gernika ____ polita da.",
           "opciones": [
             "baino",
             "ere",

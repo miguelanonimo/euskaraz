@@ -6,6 +6,66 @@ historial de git si hace falta el detalle.
 
 ---
 
+## 2026-09-30 — Los ejercicios se colocan en el tema que de verdad les toca
+
+Ric, usando la app: en el 10.1 («el pasado de izan») le salió *Ordena las
+palabras — La semana pasada estaba en casa* → «Joan den astean etxean
+nengoen», que necesita **egon** (10.3) y un marcador de 10.5.
+
+Causa: al partir la unidad 10 en tres (26/09) se repartieron con cuidado las
+**fichas**, pero los **ejercicios** se quedaron donde cayeron. Estaban
+escritos para una unidad donde los tres auxiliares se enseñaban de golpe, así
+que de los 5 grupos del 10.1 solo 1 pertenecía al 10.1.
+
+Mover un grupo de tema no cambia su firma, así que no le borra marcas a Ric;
+reescribir una frase sí. De ahí que casi todo se arregle moviendo:
+
+- `u11-g50` → 10.4 (es su ficha: gogoratu / ahaztu / berriro)
+- `u11-g12` → 10.5 (marcador de tiempo + forma verbal: es «Cuándo pasó»)
+- `u11-g03`, `u11-g05` → test de unidad (mezclan los tres auxiliares)
+- `u12-g03` → unidad 12, test (emparejaba conectores e indefinidos, que son
+  vocabulario de la 12, estando en la 11)
+- Los adverbios de una palabra (`lehen`, `orduan`, `herenegun`, `iaz`,
+  `txikitan`, `aspaldi`, `jaio`) pasan al 10.1: la unidad se llama «Atzo» y
+  tenerlos todos en el 10.5 dejaba a los cuatro primeros temas sin más
+  marcador que «atzo». Las construcciones de varias palabras (`joan den
+  astean`, `duela bi urte`, `garai hartan`) se quedan en el 10.5, que es la
+  ficha que las sistematiza.
+- `altua`, `azkar`, `poliki` pasan al 11.3, que es donde se usan; `zaila`,
+  `erraza` y `garrantzitsua` se quedan en el 11.4, que sí los explica.
+
+Reescrito solo lo imprescindible (2 variantes, las únicas que pierden marca):
+
+- `u11-g08` v5: «hace dos años» → «el año pasado» (`duela bi urte` es del 10.5).
+- `u12-g07` v3: **era incorrecto**, no solo prematuro. El hueco estaba en
+  «Euskara zaila da, baina ____ da polita», y su propia explicación dice que
+  «ere» va *detrás* del elemento. Ahora: «Bilbo handia da, baina Gernika ____
+  polita da», con el patrón `X ere` que el curso ya usa en «Ni ere ikaslea naiz».
+
+El 10.1 se quedaba con un solo grupo, así que tres nuevos de `izan` puro,
+con vocabulario de las unidades 1-9: `u10-g44` (ordenar), `u10-g45`
+(traducir), `u10-g46` (elegir la forma, usando los marcadores adelantados).
+
+**`probar_adelantos.js` también se había roto en silencio con la partición**,
+y era lo que debía haber cazado esto:
+
+- la regla «pasado» era una sola, *desde 10.1*, así que `nuen` y `nengoen` en
+  el 10.1 le parecían bien. Partida en tres, una por auxiliar y por tema.
+- `partícula «al»` decía *desde 10.5* y `al` se enseña ahora en el 12.1;
+  `comparativo` decía *desde 10.4* y son el 11.3. Las dos dejaban pasar cosas.
+  Si se vuelven a mover temas, hay que repasarlas.
+- `textos()` miraba también las opciones falsas y los distractores, y se
+  quejaba de ejercicios bien hechos: el 10.1 ofrece «naiz / nintzen / nengoen
+  / nuen» a propósito. Ahora solo mira la opción correcta.
+
+Comprobado reintroduciendo la frase de Ric: el test falla; con el arreglo, pasa.
+
+**Queda sin tocar**: el mismo barrido encuentra 207 casos más en las unidades
+8 y 9 (grupos de emparejar colocados antes de que se enseñen sus palabras).
+Son anteriores a la partición y no se han tocado — decisión de Ric y Miguel.
+
+---
+
 ## 2026-09-28 — Aplicadas las correcciones de audio del bloque 1 (14 de 16)
 
 Con la elección de Ric entre las 3 versiones regeneradas, dos tipos de
