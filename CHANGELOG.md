@@ -1577,3 +1577,56 @@ del grupo. Con eso:
 
 Trece apuntes en total en el curso, todos comprobados por
 `probar_ficha.js` contra los temas que existen.
+
+## 2026-09-30 — La unidad 10, partida en tres: el curso pasa a 12 unidades
+
+Ric: «es demasiado para una sola unidad de cierre». Medido, el problema
+no era el tamaño —la 10 estaba en la media, la 4 es la mayor— sino que
+**10.1 rompía el criterio del propio proyecto**, «un subnivel = una
+idea»: tenía cinco fichas y cinco ideas, mientras que en presente cada
+uno de esos tres verbos había tenido un tema entero para él solo.
+
+- **10 · Atzo** — un tema por verbo en pasado (izan, ukan, egon), otro
+  para comí/he comido/comía y otro para cuándo pasó.
+- **11 · Bihar** — el futuro, los tres tiempos, comparar y los
+  adjetivos que más se comparan.
+- **12 · Dena batera** — la partícula al, los conectores, los
+  indefinidos y el cierre del nivel.
+
+**Tabla de los tres tiempos al final de cada verbo en pasado**
+(presente · pasado · futuro, con el pasado en negrita), que es lo que
+pedía Ric para consolidar. En la de *ukan* se cuenta que el futuro de
+«tener» es *izango dut*: no existe *ukango*.
+
+**Nadie pierde progreso**: los 45 grupos conservan su id, así que ni el
+calendario de repaso ni las marcas de revisión se enteran. Solo cambian
+de `subnivel` y de fichero. La app no necesitó cambios.
+
+Nueve grupos nuevos (45 variantes) para los temas que quedaron flacos y
+para los tests de la 10 y la 11, que no existían. `probar_test.js` cazó
+que 12.3 (indefinidos) se había quedado con cero ejercicios.
+
+Detalle y lo que queda pendiente en `docs/reestructuracion-12-unidades.md`.
+
+## 2026-09-30 — El futuro sale de las fichas del pasado
+
+Ric, viendo las fichas nuevas: «no pongas el futuro cuando explicas el
+pasado, es mejor ir paso a paso… verlo al explicar el pasado, de la
+nada, es extraño y añade ruido al proceso de aprendizaje». Y pide más
+frases construidas, que es donde se ve la lógica.
+
+Tiene razón en las dos cosas, así que la tabla se parte en dos sitios:
+
+- En 10.1, 10.2 y 10.3 la tabla es ahora **presente · pasado**, sin
+  tercera columna. Cada una con **cinco frases de ejemplo**, y la
+  primera de cada grupo lleva los dos tiempos dentro de la misma frase
+  —«Ni ikaslea nintzen, eta orain irakaslea naiz»— que es donde se ve
+  que lo único que cambia es el auxiliar.
+- La tabla de los tres tiempos pasa a **11.2**, al final del futuro, que
+  es cuando ya has visto todo y reunirlo tiene sentido. Allí van los
+  tres auxiliares enteros y la sorpresa del futuro de «tener»:
+  *izango dut*, con el participio de *izan*.
+
+Las frases aprovechan para colar de refilón cosas ya vistas: el
+partitivo en negativa (*Guk ez genuen dirurik*), el objeto plural
+(*Haiek bi seme zituzten*) y el inesivo (*etxean*, *lanean*).

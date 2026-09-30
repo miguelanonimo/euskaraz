@@ -1,0 +1,1696 @@
+{
+  "id": "u11",
+  "numero": 11,
+  "titulo": "Bihar",
+  "subtitulo": "Lo que viene, y comparar",
+  "objetivo": "Hablar de planes con el futuro en -ko, y comparar unas cosas con otras.",
+  "color": "azul",
+  "subniveles": [
+    {
+      "id": "11.1",
+      "titulo_eu": "Bihar",
+      "titulo": "El futuro",
+      "resumen": "-ko / -go: planes y quedadas."
+    },
+    {
+      "id": "11.2",
+      "titulo_eu": "Hiru garaiak",
+      "titulo": "Los tres tiempos",
+      "resumen": "Pasado, presente y futuro, uno al lado del otro."
+    },
+    {
+      "id": "11.3",
+      "titulo_eu": "Handiagoa",
+      "titulo": "Comparar",
+      "resumen": "Baino, -ago, -ena: más, menos, el que más."
+    },
+    {
+      "id": "11.4",
+      "titulo_eu": "Azkar eta poliki",
+      "titulo": "Los adjetivos que más se comparan",
+      "resumen": "Hobea, txarragoa, azkar, poliki."
+    }
+  ],
+  "gramatica": [
+    {
+      "titulo": "Más, menos, el que más",
+      "cuerpo": "El comparativo se pega detrás del adjetivo:\n\n<b>handi</b> (grande) → <b>handiago</b> — más grande\n<b>txiki</b> (pequeño) → <b>txikiago</b> — más pequeño\n<b>polit</b> (bonito) → <b>politago</b> — más bonito\n\nOjo: el adjetivo va aquí <b>sin el artículo -a</b>. <i>handia</i> es «grande», pero para comparar se parte de <i>handi</i>.\n\nY el «que» de la comparación es <b>baino</b>, que va <b>delante</b>:\n\n<b>Bilbo Gernika <u>baino</u> handiagoa da.</b> — Bilbao es más grande que Gernika.\n\nEl superlativo es <b>-ena</b>:\n<b>handiena</b> — el más grande\n<b>Bilbo Bizkaiko hiri handiena da.</b> — Bilbao es la ciudad más grande de Bizkaia.\n\nPara «tan… como», <b>bezain</b>:\n<b>Ni zu bezain altua naiz.</b> — Soy tan alto como tú.\n\nY tres irregulares que salen a diario:\n<b>ona</b> (bueno) → <b>hobea</b> (mejor) → <b>onena</b> (el mejor)\n<b>asko</b> (mucho) → <b>gehiago</b> (más) → <b>gehien</b> (el que más)\n<b>ondo</b> (bien) → <b>hobeto</b> (mejor)\n\nY los contrarios, que se forman igual:\n\n<b>gutxiago</b> — menos\n<b>txarragoa</b> — peor\n\nCuando no hay diferencia que marcar, <b>berdin</b> — igual:\n\n<b>Niretzat berdin da.</b> — Para mí es igual, me da lo mismo.",
+      "ejemplos": [
+        {
+          "eu": "Bilbo Gernika baino handiagoa da.",
+          "es": "Bilbao es más grande que Gernika.",
+          "audio": "unidades/u12/bilbo-gernika-baino-handiagoa-da.mp3"
+        },
+        {
+          "eu": "Gaur hobeto nago.",
+          "es": "Hoy estoy mejor.",
+          "audio": "unidades/u12/gaur-hobeto-nago.mp3"
+        },
+        {
+          "eu": "Zu bezain azkar.",
+          "es": "Tan rápido como tú.",
+          "audio": "unidades/u12/zu-bezain-azkar.mp3"
+        }
+      ],
+      "subnivel": "11.3"
+    },
+    {
+      "titulo": "Los adjetivos que más se comparan",
+      "cuerpo": "Para comparar hacen falta adjetivos, y estos son los que salen a todas horas:\n\n<b>zaila</b> — difícil\n<b>erraza</b> — fácil\n<b>garrantzitsua</b> — importante\n\nMétele el <b>-ago</b> de la ficha anterior, acordándote de quitar el artículo, y ya los tienes comparando:\n\n<i>zail</i> → <b>zailagoa</b> — más difícil\n<i>erraz</i> → <b>errazagoa</b> — más fácil\n\n<b>Euskara zailagoa da?</b> — ¿Es más difícil el euskera?\n<b>Ez, uste baino errazagoa da.</b> — No, es más fácil de lo que parece.\n\nY dos adverbios que también se comparan, y que te van a hacer falta pidiendo que te repitan las cosas:\n\n<b>azkar</b> — rápido\n<b>poliki</b> — despacio\n\n<b>Poliki, mesedez.</b> — Despacio, por favor.\n\nEsa frase, dicha a tiempo, vale más que media unidad.",
+      "ejemplos": [
+        {
+          "eu": "Poliki, mesedez.",
+          "es": "Despacio, por favor."
+        },
+        {
+          "eu": "Euskara zaila da?",
+          "es": "¿Es difícil el euskera?"
+        },
+        {
+          "eu": "Hau errazagoa da.",
+          "es": "Esto es más fácil."
+        }
+      ],
+      "subnivel": "11.4"
+    },
+    {
+      "subnivel": "11.1",
+      "titulo": "El futuro: una «-ko» y ya está",
+      "cuerpo": "De todas las cosas que has aprendido, esta es de las más baratas. Para hablar de lo que va a pasar, al verbo se le pega <b>-ko</b> (o <b>-go</b>) y el auxiliar se queda igual:\n\n<b>joan</b> → <b>joango naiz</b> — iré, voy a ir\n<b>egin</b> → <b>egingo dut</b> — haré, voy a hacer\n<b>ikasi</b> → <b>ikasiko dut</b> — estudiaré\n<b>esan</b> → <b>esango dut</b> — diré\n\n¿Cuándo <i>-ko</i> y cuándo <i>-go</i>? Por comodidad al hablar: detrás de <b>n</b> o <b>l</b> se pone <b>-go</b> (joan → joango, egin → egingo, esan → esango), y en los demás casos <b>-ko</b>.\n\nEs la misma lógica que hace que digamos «un» y no «uno» delante de nombre: la lengua busca lo que suena mejor.",
+      "ejemplos": [
+        {
+          "eu": "Bihar joango naiz.",
+          "es": "Mañana iré."
+        },
+        {
+          "eu": "Zer egingo duzu?",
+          "es": "¿Qué vas a hacer?"
+        },
+        {
+          "eu": "Euskara ikasiko dut.",
+          "es": "Aprenderé euskera."
+        }
+      ]
+    },
+    {
+      "subnivel": "11.2",
+      "titulo": "Los tres tiempos, uno al lado del otro",
+      "cuerpo": "Ahora ya los tienes todos. Mira el mismo verbo en los tres:\n\n<b>Atzo joan nintzen.</b> — Ayer fui.\n<b>Gaur joaten naiz.</b> — Hoy voy (habitualmente).\n<b>Bihar joango naiz.</b> — Mañana iré.\n\nFíjate en que el auxiliar es el que carga con casi todo el trabajo, y el verbo solo cambia de terminación: <i>joan</i>, <i>joaten</i>, <i>joango</i>.\n\nEse es, en una línea, el motor del euskera que llevas todo el curso montando.\n\nY dos palabras para hablar de lo que viene:\n\n<b>etorkizuna</b> — el futuro\n<b>asmoa</b> — la intención, el plan\n\n<i>Etorkizuna</i> tiene dentro <i>etorri</i>, venir: literalmente, «lo que ha de venir». Y <b>asmoa dut</b> es «tengo la intención de», que es como se dicen la mitad de los planes.\n\n<b>Y ahora sí, los tres auxiliares enteros</b>\nYa has visto los tres tiempos por separado. Aquí están juntos, que es cuando cobra sentido mirarlos de golpe:\n\n<i>izan</i> (ser, estar)\n<b>ni</b> — naiz · nintzen · izango naiz\n<b>hura</b> — da · zen · izango da\n<b>haiek</b> — dira · ziren · izango dira\n\n<i>ukan</i> (tener, haber)\n<b>nik</b> — dut · nuen · izango dut\n<b>hark</b> — du · zuen · izango du\n<b>haiek</b> — dute · zuten · izango dute\n\n<i>egon</i> (estar)\n<b>ni</b> — nago · nengoen · egongo naiz\n<b>hura</b> — dago · zegoen · egongo da\n<b>haiek</b> — daude · zeuden · egongo dira\n\nUna sorpresa de la última columna: el futuro de «tener» es <b>izango dut</b>, con el participio de <i>izan</i>. No hay ningún <i>ukango</i>. Los dos auxiliares comparten participio, y lo que distingue «seré» de «tendré» es el auxiliar de detrás: <b>izango naiz</b> frente a <b>izango dut</b>.",
+      "ejemplos": [
+        {
+          "eu": "Atzo joan nintzen.",
+          "es": "Ayer fui."
+        },
+        {
+          "eu": "Gaur joaten naiz.",
+          "es": "Hoy voy."
+        },
+        {
+          "eu": "Bihar joango naiz.",
+          "es": "Mañana iré."
+        },
+        {
+          "eu": "Zer asmo duzu bihar?",
+          "es": "¿Qué planes tienes mañana?"
+        }
+      ]
+    }
+  ],
+  "vocabulario": [
+    {
+      "eu": "baino",
+      "es": "que (en comparaciones)",
+      "nota": null,
+      "audio": "unidades/u12/baino.mp3",
+      "categoria": "otros",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "-ago",
+      "es": "más",
+      "nota": "Se pega al adjetivo: handi → handiago.",
+      "audio": "unidades/u12/-ago.mp3",
+      "categoria": "otros",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "-ena",
+      "es": "el más",
+      "nota": "handi → handiena.",
+      "audio": "unidades/u12/-ena.mp3",
+      "categoria": "otros",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "gehiago",
+      "es": "más (cantidad)",
+      "nota": null,
+      "audio": "unidades/u12/gehiago.mp3",
+      "categoria": "otros",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "gutxiago",
+      "es": "menos",
+      "nota": null,
+      "audio": "unidades/u12/gutxiago.mp3",
+      "categoria": "otros",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "hobea",
+      "es": "mejor",
+      "nota": "Irregular: de «ona» (bueno).",
+      "audio": "unidades/u12/hobea.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "txarragoa",
+      "es": "peor",
+      "nota": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio.",
+      "audio": "unidades/u12/txarragoa.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "hobeto",
+      "es": "mejor (adverbio)",
+      "nota": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio.",
+      "audio": "unidades/u12/hobeto.mp3",
+      "categoria": "otros",
+      "subnivel": "11.4"
+    },
+    {
+      "eu": "bezain",
+      "es": "tan… como",
+      "nota": null,
+      "audio": "unidades/u12/bezain.mp3",
+      "categoria": "otros",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "berdin",
+      "es": "igual",
+      "nota": null,
+      "audio": "unidades/u12/berdin.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "azkar",
+      "es": "rápido",
+      "nota": null,
+      "audio": "unidades/u12/azkar.mp3",
+      "categoria": "otros",
+      "subnivel": "11.4"
+    },
+    {
+      "eu": "poliki",
+      "es": "despacio",
+      "nota": null,
+      "audio": "unidades/u12/poliki.mp3",
+      "categoria": "otros",
+      "subnivel": "11.4"
+    },
+    {
+      "eu": "zaila",
+      "es": "difícil",
+      "nota": null,
+      "audio": "unidades/u12/zaila.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "11.4"
+    },
+    {
+      "eu": "erraza",
+      "es": "fácil",
+      "nota": null,
+      "audio": "unidades/u12/erraza.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "11.4"
+    },
+    {
+      "eu": "garrantzitsua",
+      "es": "importante",
+      "nota": null,
+      "audio": "unidades/u12/garrantzitsua.mp3",
+      "categoria": "adjetivo",
+      "subnivel": "11.4"
+    },
+    {
+      "eu": "altua",
+      "es": "alto/a",
+      "nota": "Sale en el «bezain» de la ficha: zu bezain altua.",
+      "audio": null,
+      "categoria": "adjetivo",
+      "subnivel": "11.4"
+    },
+    {
+      "eu": "etorkizuna",
+      "es": "el futuro",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "11.1"
+    },
+    {
+      "eu": "asmoa",
+      "es": "la intención, el plan",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "11.1"
+    },
+    {
+      "eu": "bihar",
+      "es": "mañana",
+      "nota": "Ya la tenías; aquí se usa con el futuro.",
+      "categoria": "otros",
+      "subnivel": "11.1"
+    }
+  ],
+  "ejercicios": [
+    {
+      "id": "u12-g02",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Escoge la traducción",
+          "pregunta": "más grande → ____",
+          "opciones": [
+            "handia",
+            "handiago",
+            "handiena",
+            "handirik"
+          ],
+          "correcta": 1,
+          "explicacion": "El comparativo se pega detrás: -ago."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "el más grande → ____",
+          "opciones": [
+            "handiago",
+            "handiena",
+            "handia",
+            "handiz"
+          ],
+          "correcta": 1,
+          "explicacion": "El superlativo es -ena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Bilbao es más grande que Gernika. → Bilbo Gernika ____ handiagoa da.",
+          "opciones": [
+            "eta",
+            "baino",
+            "bezain",
+            "ere"
+          ],
+          "correcta": 1,
+          "explicacion": "«baino» es el «que» de la comparación."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "tan rápido como tú → zu ____ azkar",
+          "opciones": [
+            "baino",
+            "bezain",
+            "eta",
+            "ere"
+          ],
+          "correcta": 1,
+          "explicacion": "«bezain» es «tan… como»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Escoge la traducción",
+          "pregunta": "mejor (adjetivo) → ____",
+          "opciones": [
+            "onago",
+            "hobea",
+            "onena",
+            "hobeto"
+          ],
+          "correcta": 1,
+          "explicacion": "«ona» hace «hobea», irregular."
+        }
+      ],
+      "subnivel": "11.3",
+      "explica": "10.4"
+    },
+    {
+      "id": "u12-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las comparaciones",
+          "pares": [
+            {
+              "eu": "baino",
+              "es": "que (comparando)"
+            },
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los conectores",
+          "pares": [
+            {
+              "eu": "beraz",
+              "es": "así que"
+            },
+            {
+              "eu": "gainera",
+              "es": "además"
+            },
+            {
+              "eu": "hala ere",
+              "es": "aun así"
+            },
+            {
+              "eu": "adibidez",
+              "es": "por ejemplo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adverbios",
+          "pares": [
+            {
+              "eu": "noski",
+              "es": "claro"
+            },
+            {
+              "eu": "benetan",
+              "es": "de verdad"
+            },
+            {
+              "eu": "bakarrik",
+              "es": "solo"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adjetivos y adverbios",
+          "pares": [
+            {
+              "eu": "zaila",
+              "es": "difícil"
+            },
+            {
+              "eu": "erraza",
+              "es": "fácil"
+            },
+            {
+              "eu": "azkar",
+              "es": "rápido"
+            },
+            {
+              "eu": "poliki",
+              "es": "despacio"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los indefinidos",
+          "pares": [
+            {
+              "eu": "norbait",
+              "es": "alguien"
+            },
+            {
+              "eu": "zerbait",
+              "es": "algo"
+            },
+            {
+              "eu": "nonbait",
+              "es": "en algún sitio"
+            },
+            {
+              "eu": "denak",
+              "es": "todos"
+            }
+          ]
+        }
+      ],
+      "subnivel": "11.3"
+    },
+    {
+      "id": "u12-g07",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nire etxea zurea ____ txikiagoa da.",
+          "opciones": [
+            "bezain",
+            "baino",
+            "ere",
+            "eta"
+          ],
+          "correcta": 1,
+          "explicacion": "Con -ago hace falta «baino»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ni zu ____ altua naiz: berdinak gara.",
+          "opciones": [
+            "baino",
+            "bezain",
+            "ere",
+            "gehiago"
+          ],
+          "correcta": 1,
+          "explicacion": "«iguales» pide «bezain», no «baino»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Euskara zaila da, baina ____ da polita.",
+          "opciones": [
+            "baino",
+            "ere",
+            "bezain",
+            "beraz"
+          ],
+          "correcta": 1,
+          "explicacion": "«ere» es «también» y va detrás del elemento."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Kafe ____ nahi dut, mesedez.",
+          "opciones": [
+            "gehiago",
+            "handiena",
+            "bezain",
+            "baino"
+          ],
+          "correcta": 0,
+          "explicacion": "«más» de cantidad es «gehiago»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hau da hiri ____ Bizkaian.",
+          "opciones": [
+            "handiago",
+            "handiena",
+            "handia",
+            "handirik"
+          ],
+          "correcta": 1,
+          "explicacion": "«la más grande» pide el superlativo -ena."
+        }
+      ],
+      "subnivel": "11.3"
+    },
+    {
+      "id": "u10-g25",
+      "subnivel": "11.1",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Mañana iré» se dice…",
+          "opciones": [
+            "Bihar joan naiz",
+            "Bihar joango naiz",
+            "Bihar joaten naiz",
+            "Bihar joan nintzen"
+          ],
+          "correcta": 1,
+          "explicacion": "Joan + go + naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Haré» se dice…",
+          "opciones": [
+            "egiten dut",
+            "egingo dut",
+            "egin dut",
+            "egin nuen"
+          ],
+          "correcta": 1,
+          "explicacion": "Egin acaba en n, así que -go."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuándo se usa «-go» en vez de «-ko»?",
+          "opciones": [
+            "Siempre",
+            "Detrás de n o l",
+            "Solo con verbos de movimiento",
+            "En pasado"
+          ],
+          "correcta": 1,
+          "explicacion": "Joango, egingo: por comodidad al hablar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ikasiko dut» significa…",
+          "opciones": [
+            "estudio",
+            "estudié",
+            "estudiaré",
+            "estoy estudiando"
+          ],
+          "correcta": 2,
+          "explicacion": "Ikasi + ko + dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué cambia entre «joaten naiz» y «joango naiz»?",
+          "opciones": [
+            "El auxiliar",
+            "La terminación del verbo",
+            "El orden",
+            "Nada"
+          ],
+          "correcta": 1,
+          "explicacion": "El auxiliar se queda igual; el verbo pasa de -ten a -go."
+        }
+      ]
+    },
+    {
+      "id": "u10-g26",
+      "subnivel": "11.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los tres tiempos",
+          "pares": [
+            {
+              "eu": "joan nintzen",
+              "es": "fui"
+            },
+            {
+              "eu": "joaten naiz",
+              "es": "voy"
+            },
+            {
+              "eu": "joango naiz",
+              "es": "iré"
+            },
+            {
+              "eu": "etorkizuna",
+              "es": "el futuro"
+            }
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mañana iré a Bilbao.",
+          "eu": "Bihar Bilbora joango naiz.",
+          "palabras": [
+            "bihar",
+            "Bilbora",
+            "joango",
+            "naiz"
+          ],
+          "distractores": [
+            "nago"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Qué vas a hacer?",
+          "eu": "Zer egingo duzu?",
+          "palabras": [
+            "zer",
+            "egingo",
+            "duzu",
+            "?"
+          ],
+          "distractores": [
+            "zenuen"
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zer egingo duzu bihar?» pregunta por…",
+          "opciones": [
+            "lo que hiciste",
+            "lo que haces siempre",
+            "lo que vas a hacer",
+            "lo que estás haciendo"
+          ],
+          "correcta": 2,
+          "explicacion": "Bihar (mañana) + futuro."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etorkizuna» significa…",
+          "opciones": [
+            "el pasado",
+            "el futuro",
+            "la costumbre",
+            "el plan"
+          ],
+          "correcta": 1,
+          "explicacion": "De «etorri», venir: lo que está por venir."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Mañana iré a Bilbao.",
+          "eu": "Bihar Bilbora joango naiz.",
+          "palabras": [
+            "bihar",
+            "Bilbora",
+            "joango",
+            "naiz"
+          ],
+          "distractores": [
+            "nago"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10-g34",
+      "subnivel": "11.3",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "txarragoa",
+              "es": "peor"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "txarragoa",
+              "es": "peor"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hobea»?",
+          "opciones": [
+            "mejor",
+            "(yo) tenía, tuve",
+            "hace mucho tiempo",
+            "(nosotros) éramos"
+          ],
+          "correcta": 0,
+          "explicacion": "Irregular: de «ona» (bueno)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«más (cantidad)» se dice…",
+          "opciones": [
+            "gehiago",
+            "genuen",
+            "berdin",
+            "beraz"
+          ],
+          "correcta": 0,
+          "explicacion": "más (cantidad) = gehiago."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «berdin»?",
+          "opciones": [
+            "igual",
+            "entonces",
+            "(tú) tenías",
+            "(yo) era, fui"
+          ],
+          "correcta": 0,
+          "explicacion": "berdin = igual."
+        }
+      ]
+    },
+    {
+      "id": "u10-g35",
+      "subnivel": "11.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "berdin",
+              "es": "igual"
+            },
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            },
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hobeto»?",
+          "opciones": [
+            "mejor (adverbio)",
+            "(nosotros) éramos",
+            "la palabra",
+            "que (en comparaciones)"
+          ],
+          "correcta": 0,
+          "explicacion": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«peor» se dice…",
+          "opciones": [
+            "txarragoa",
+            "nuen",
+            "lehen",
+            "jaio"
+          ],
+          "correcta": 0,
+          "explicacion": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hobea»?",
+          "opciones": [
+            "mejor",
+            "(ellos) eran",
+            "en algún sitio",
+            "algo"
+          ],
+          "correcta": 0,
+          "explicacion": "Irregular: de «ona» (bueno)."
+        }
+      ]
+    },
+    {
+      "id": "u10-g36",
+      "subnivel": "11.4",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            },
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            },
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txarragoa»?",
+          "opciones": [
+            "peor",
+            "(vosotros) erais",
+            "(nosotros) éramos",
+            "felicidades"
+          ],
+          "correcta": 0,
+          "explicacion": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«mejor» se dice…",
+          "opciones": [
+            "hobea",
+            "herenegun",
+            "ezagutu",
+            "bihar"
+          ],
+          "correcta": 0,
+          "explicacion": "Irregular: de «ona» (bueno)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «gutxiago»?",
+          "opciones": [
+            "menos",
+            "(tú) eras, fuiste",
+            "ocurrir, pasar",
+            "anteayer"
+          ],
+          "correcta": 0,
+          "explicacion": "gutxiago = menos."
+        }
+      ]
+    },
+    {
+      "id": "u10-g37",
+      "subnivel": "test",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "txarragoa",
+              "es": "peor"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más (cantidad)"
+            },
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja comparar",
+          "pares": [
+            {
+              "eu": "hobeto",
+              "es": "mejor (adverbio)"
+            },
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «hobeto»?",
+          "opciones": [
+            "mejor (adverbio)",
+            "anteayer",
+            "por ejemplo",
+            "solo, únicamente"
+          ],
+          "correcta": 0,
+          "explicacion": "De «ondo». «Hobea» es el adjetivo; «hobeto», el adverbio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«tan… como» se dice…",
+          "opciones": [
+            "bezain",
+            "garrantzitsua",
+            "zaila",
+            "ezagutu"
+          ],
+          "correcta": 0,
+          "explicacion": "tan… como = bezain."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «txarragoa»?",
+          "opciones": [
+            "peor",
+            "fácil",
+            "la semana pasada",
+            "solo, únicamente"
+          ],
+          "correcta": 0,
+          "explicacion": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio."
+        }
+      ]
+    },
+    {
+      "id": "u10-g41",
+      "subnivel": "11.1",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Mañana iré» se dice…",
+          "opciones": [
+            "Bihar joan naiz",
+            "Bihar joango naiz",
+            "Bihar joaten naiz",
+            "Bihar joan nintzen"
+          ],
+          "correcta": 1,
+          "explicacion": "Joan + go + naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para el futuro, al verbo se le añade…",
+          "opciones": [
+            "-ten",
+            "-ko o -go",
+            "-tu",
+            "nada"
+          ],
+          "correcta": 1,
+          "explicacion": "Y el auxiliar no cambia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Egingo dut» significa…",
+          "opciones": [
+            "hago",
+            "hice",
+            "haré",
+            "estoy haciendo"
+          ],
+          "correcta": 2,
+          "explicacion": "Egin + go + dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuándo se usa «-go» en vez de «-ko»?",
+          "opciones": [
+            "siempre",
+            "detrás de n o l",
+            "en preguntas",
+            "en negativo"
+          ],
+          "correcta": 1,
+          "explicacion": "Joango, egingo: suena mejor."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ikasiko dut» significa…",
+          "opciones": [
+            "estudio",
+            "estudié",
+            "estudiaré",
+            "estudiando"
+          ],
+          "correcta": 2,
+          "explicacion": "Ikasi + ko + dut."
+        }
+      ]
+    },
+    {
+      "id": "u10-g42",
+      "subnivel": "11.2",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "los tres tiempos",
+          "pares": [
+            {
+              "eu": "joan nintzen",
+              "es": "fui"
+            },
+            {
+              "eu": "joaten naiz",
+              "es": "voy"
+            },
+            {
+              "eu": "joango naiz",
+              "es": "iré"
+            },
+            {
+              "eu": "joaten ari naiz",
+              "es": "estoy yendo"
+            }
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Qué vas a hacer mañana?",
+          "eu": "Zer egingo duzu bihar?",
+          "palabras": [
+            "zer",
+            "egingo",
+            "duzu",
+            "bihar",
+            "?"
+          ],
+          "distractores": [
+            "norbait",
+            "txikitan"
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Entre «joaten naiz» y «joango naiz» cambia…",
+          "opciones": [
+            "el auxiliar",
+            "la terminación del verbo",
+            "el orden",
+            "nada"
+          ],
+          "correcta": 1,
+          "explicacion": "El auxiliar se queda igual."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etorriko da» significa…",
+          "opciones": [
+            "viene",
+            "vino",
+            "vendrá",
+            "está viniendo"
+          ],
+          "correcta": 2,
+          "explicacion": "Etorri + ko + da."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etorkizuna» significa…",
+          "opciones": [
+            "el pasado",
+            "el futuro",
+            "la costumbre",
+            "el plan"
+          ],
+          "correcta": 1,
+          "explicacion": "De «etorri»: lo que está por venir."
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "¿Qué vas a hacer mañana?",
+          "eu": "Zer egingo duzu bihar?",
+          "palabras": [
+            "zer",
+            "egingo",
+            "duzu",
+            "bihar",
+            "?"
+          ],
+          "distractores": [
+            "norbait",
+            "txikitan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10-g43",
+      "subnivel": "11.1",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bihar Bilbora joango naiz» significa…",
+          "opciones": [
+            "Ayer fui a Bilbao",
+            "Mañana iré a Bilbao",
+            "Voy a Bilbao",
+            "Estoy yendo a Bilbao"
+          ],
+          "correcta": 1,
+          "explicacion": "Bihar + futuro."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Para hacer planes con alguien usarías…",
+          "opciones": [
+            "el pasado",
+            "el futuro",
+            "el presente continuo",
+            "el imperativo"
+          ],
+          "correcta": 1,
+          "explicacion": "«¿Qué haremos?», «iré»…"
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dut egingo» significa…",
+          "opciones": [
+            "no lo hago",
+            "no lo hice",
+            "no lo haré",
+            "no lo hago ahora"
+          ],
+          "correcta": 2,
+          "explicacion": "La negación funciona igual, con el futuro detrás."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "emparejar",
+          "pares": [
+            {
+              "eu": "joango naiz",
+              "es": "iré"
+            },
+            {
+              "eu": "egingo dut",
+              "es": "haré"
+            },
+            {
+              "eu": "etorriko da",
+              "es": "vendrá"
+            },
+            {
+              "eu": "ikasiko dut",
+              "es": "estudiaré"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué parte de la frase carga con la persona?",
+          "opciones": [
+            "el verbo",
+            "el auxiliar",
+            "el sujeto",
+            "la terminación -ko"
+          ],
+          "correcta": 1,
+          "explicacion": "Naiz, dut, da… El verbo solo cambia de terminación."
+        }
+      ]
+    },
+    {
+      "id": "u11-g51",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Más grande» se dice…",
+          "opciones": [
+            "handiagoa",
+            "handiena",
+            "handia",
+            "handibat"
+          ],
+          "correcta": 0,
+          "explicacion": "handi + -ago + -a. Sin el artículo de «handia»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El más grande» se dice…",
+          "opciones": [
+            "handiena",
+            "handiagoa",
+            "handia",
+            "handibaino"
+          ],
+          "correcta": 0,
+          "explicacion": "El superlativo es -ena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bilbao es más grande que Gernika» → Bilbo Gernika ____ handiagoa da.",
+          "opciones": [
+            "baino",
+            "bezain",
+            "berdin",
+            "gehiago"
+          ],
+          "correcta": 0,
+          "explicacion": "El «que» de la comparación es «baino», y va delante."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Tan alto como tú» → Zu ____ altua.",
+          "opciones": [
+            "bezain",
+            "baino",
+            "gehiago",
+            "berdin"
+          ],
+          "correcta": 0,
+          "explicacion": "Para «tan… como», bezain."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Más difícil» se dice…",
+          "opciones": [
+            "zailagoa",
+            "zailena",
+            "zaila",
+            "zailbaino"
+          ],
+          "correcta": 0,
+          "explicacion": "zail + -ago + -a."
+        }
+      ],
+      "subnivel": "11.3"
+    },
+    {
+      "id": "u11-g13",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Estudiaré euskera. → Euskara ____.",
+          "opciones": [
+            "ikasiko dut",
+            "ikasten dut",
+            "ikasi dut",
+            "ikasiko naiz"
+          ],
+          "correcta": 0,
+          "explicacion": "Futuro: participio + -ko, y el auxiliar se queda igual."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuándo se pone «-go» en vez de «-ko»?",
+          "opciones": [
+            "Detrás de n o l",
+            "Detrás de vocal",
+            "Detrás de r",
+            "Siempre que el verbo sea largo"
+          ],
+          "correcta": 0,
+          "explicacion": "joan → joango, egin → egingo, esan → esango. Por comodidad al hablar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Mañana haré el trabajo. → Bihar lana ____.",
+          "opciones": [
+            "egingo dut",
+            "egiten dut",
+            "egin dut",
+            "egingo naiz"
+          ],
+          "correcta": 0,
+          "explicacion": "egin acaba en -n, así que -go: egingo dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «asmoa»?",
+          "opciones": [
+            "la intención, el plan",
+            "el futuro",
+            "la costumbre",
+            "el trabajo"
+          ],
+          "correcta": 0,
+          "explicacion": "«Asmoa dut» es «tengo la intención de». Y «etorkizuna» es el futuro."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "mañana",
+          "respuestas": [
+            "bihar"
+          ],
+          "pista": "Cinco letras, empieza por b-."
+        }
+      ],
+      "subnivel": "11.1"
+    },
+    {
+      "id": "u11-g14",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Joaten naiz» significa…",
+          "opciones": [
+            "voy, suelo ir",
+            "fui",
+            "iré",
+            "he ido"
+          ],
+          "correcta": 0,
+          "explicacion": "La forma en -t(z)en con el presente es lo habitual. «Iré» sería «joango naiz»."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los tres tiempos y el ya hecho",
+          "pares": [
+            {
+              "eu": "joan nintzen",
+              "es": "fui"
+            },
+            {
+              "eu": "joaten naiz",
+              "es": "voy, suelo ir"
+            },
+            {
+              "eu": "joango naiz",
+              "es": "iré"
+            },
+            {
+              "eu": "joan naiz",
+              "es": "he ido"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Mañana comeré en casa. → Bihar etxean ____.",
+          "opciones": [
+            "jango dut",
+            "jaten dut",
+            "jan dut",
+            "jango naiz"
+          ],
+          "correcta": 0,
+          "explicacion": "jan + -go, y el auxiliar de objeto: jango dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Entre «joan», «joaten» y «joango», ¿qué cambia?",
+          "opciones": [
+            "Solo la terminación del verbo",
+            "El auxiliar",
+            "El orden de la frase",
+            "El sujeto"
+          ],
+          "correcta": 0,
+          "explicacion": "El auxiliar carga con el tiempo; el verbo solo cambia de final."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Ayer fui a casa. → Atzo etxera joan ____.",
+          "opciones": [
+            "nintzen",
+            "naiz",
+            "nuen",
+            "nengoen"
+          ],
+          "correcta": 0,
+          "explicacion": "Pasado de izan, porque «joan» no lleva objeto."
+        }
+      ],
+      "subnivel": "11.2"
+    },
+    {
+      "id": "u11-g15",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adjetivos que más se comparan",
+          "pares": [
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            },
+            {
+              "eu": "txarragoa",
+              "es": "peor"
+            },
+            {
+              "eu": "azkar",
+              "es": "rápido"
+            },
+            {
+              "eu": "poliki",
+              "es": "despacio"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «erraza»?",
+          "opciones": [
+            "fácil",
+            "difícil",
+            "importante",
+            "alto"
+          ],
+          "correcta": 0,
+          "explicacion": "Y su contrario es «zaila», difícil."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hobea» es a «ona» lo que «txarragoa» es a…",
+          "opciones": [
+            "txarra",
+            "handia",
+            "altua",
+            "erraza"
+          ],
+          "correcta": 0,
+          "explicacion": "Son las dos parejas irregulares: ona → hobea, txarra → txarragoa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «poliki»?",
+          "opciones": [
+            "despacio",
+            "rápido",
+            "pronto",
+            "tarde"
+          ],
+          "correcta": 0,
+          "explicacion": "Y «azkar» es rápido."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja más adjetivos",
+          "pares": [
+            {
+              "eu": "zaila",
+              "es": "difícil"
+            },
+            {
+              "eu": "erraza",
+              "es": "fácil"
+            },
+            {
+              "eu": "garrantzitsua",
+              "es": "importante"
+            },
+            {
+              "eu": "altua",
+              "es": "alto"
+            }
+          ]
+        }
+      ],
+      "subnivel": "11.4"
+    },
+    {
+      "id": "u11-g16",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Mañana iré a Bilbao. → Bihar Bilbora ____.",
+          "opciones": [
+            "joango naiz",
+            "joaten naiz",
+            "joan naiz",
+            "joango dut"
+          ],
+          "correcta": 0,
+          "explicacion": "Futuro de joan, y sin objeto: joango naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Nire etxea zurea baino handiagoa da» significa…",
+          "opciones": [
+            "Mi casa es más grande que la tuya",
+            "Mi casa es la más grande",
+            "Mi casa es tan grande como la tuya",
+            "Tu casa es más grande que la mía"
+          ],
+          "correcta": 0,
+          "explicacion": "«Baino» es «que», y «-ago» es «más»."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja lo de esta unidad",
+          "pares": [
+            {
+              "eu": "bihar",
+              "es": "mañana"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            },
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Mi casa es tan grande como la tuya. → Nire etxea zurea ____ handia da.",
+          "opciones": [
+            "bezain",
+            "baino",
+            "gehiago",
+            "berdin"
+          ],
+          "correcta": 0,
+          "explicacion": "«Bezain» es «tan… como». «Baino» sería «que», para el comparativo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Handiena» significa…",
+          "opciones": [
+            "el más grande",
+            "más grande",
+            "tan grande",
+            "bastante grande"
+          ],
+          "correcta": 0,
+          "explicacion": "-ago es «más»; -ena es «el más»."
+        }
+      ],
+      "subnivel": "test"
+    }
+  ]
+}
