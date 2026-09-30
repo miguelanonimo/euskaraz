@@ -33,14 +33,14 @@ relación: la partícula `al`, los conectores y los indefinidos.
 | **12 · Dena batera** *(cerrar el nivel)* | 12.1 la partícula al · 12.2 enlazar frases · 12.3 los indefinidos · 12.4 todo junto |
 
 Cada verbo en pasado tiene ahora su tema, y **al final de cada uno una
-tabla de los tres tiempos** —presente · pasado · futuro— con el pasado
-en negrita. El futuro va ahí a propósito, aunque se monte en la unidad
-siguiente: verlo entero es lo que consolida (criterio de Ric). La app le
-pone altavoz a cada forma sin hacer nada.
+tabla presente · pasado** con el pasado en negrita, más **cinco frases de
+ejemplo**. La app le pone altavoz a cada forma sin hacer nada.
 
-En la tabla de *ukan* se aprovecha para contar algo que sorprende: el
-futuro de «tener» es **izango dut**, con el participio de *izan*. No hay
-*ukango*.
+El futuro **no** aparece en esas fichas. Se probó y Ric lo descartó:
+«verlo al explicar el pasado, de la nada, es extraño y añade ruido».
+La tabla de los tres tiempos vive en **11.2**, al final del futuro, que
+es cuando ya se ha visto todo. Allí se cuenta además que el futuro de
+«tener» es *izango dut*, con el participio de *izan*: no hay *ukango*.
 
 ## Lo que costó, y lo que no
 

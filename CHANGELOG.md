@@ -1607,3 +1607,26 @@ para los tests de la 10 y la 11, que no existían. `probar_test.js` cazó
 que 12.3 (indefinidos) se había quedado con cero ejercicios.
 
 Detalle y lo que queda pendiente en `docs/reestructuracion-12-unidades.md`.
+
+## 2026-09-30 — El futuro sale de las fichas del pasado
+
+Ric, viendo las fichas nuevas: «no pongas el futuro cuando explicas el
+pasado, es mejor ir paso a paso… verlo al explicar el pasado, de la
+nada, es extraño y añade ruido al proceso de aprendizaje». Y pide más
+frases construidas, que es donde se ve la lógica.
+
+Tiene razón en las dos cosas, así que la tabla se parte en dos sitios:
+
+- En 10.1, 10.2 y 10.3 la tabla es ahora **presente · pasado**, sin
+  tercera columna. Cada una con **cinco frases de ejemplo**, y la
+  primera de cada grupo lleva los dos tiempos dentro de la misma frase
+  —«Ni ikaslea nintzen, eta orain irakaslea naiz»— que es donde se ve
+  que lo único que cambia es el auxiliar.
+- La tabla de los tres tiempos pasa a **11.2**, al final del futuro, que
+  es cuando ya has visto todo y reunirlo tiene sentido. Allí van los
+  tres auxiliares enteros y la sorpresa del futuro de «tener»:
+  *izango dut*, con el participio de *izan*.
+
+Las frases aprovechan para colar de refilón cosas ya vistas: el
+partitivo en negativa (*Guk ez genuen dirurik*), el objeto plural
+(*Haiek bi seme zituzten*) y el inesivo (*etxean*, *lanean*).
