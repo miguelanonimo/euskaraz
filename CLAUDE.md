@@ -9,6 +9,22 @@ curso.
 
 ## Decisiones ya cerradas (no las vuelvas a plantear)
 
+- **El orden del vocabulario no se vigila; el de la gramática sí.** Medido el
+  30/09/2026: un barrido que exige que ninguna palabra aparezca antes del tema
+  que la cataloga da 148 casos, y prácticamente todos son buen diseño. El 2.2
+  enseña los posesivos con «nire etxe handia», y `etxea` está catalogado en el
+  5.2 porque la unidad 5 es la casa — pero es imposible enseñar posesivos sin
+  nombres, y el enunciado español ya los traduce. La unidad 3 enseña las
+  palabras de pregunta con «Nola duzu izena?» y «Nora zoaz?», donde el verbo es
+  andamio. `verificar.py` ya los saca como avisos (hay 334) y se convive con
+  ellos a propósito. **No los "arregles" moviendo grupos: estropearías un curso
+  bien hecho para contentar a un script.** Lo que sí es un fallo de verdad es
+  una **construcción gramatical** prematura —una conjugación que no se puede
+  deducir y que es justo la lección—, y de eso se encarga
+  `scripts/probar_adelantos.js`. Si mueves temas de sitio, repasa sus `desde`:
+  al partir la unidad 10 en tres se quedaron viejos dos y el test se volvió más
+  permisivo sin que nadie se enterara.
+
 - **Motor:** vanilla JS/HTML/CSS del original, sin migrar a React. El
   algoritmo de repetición espaciada en `js/app.js` ya funciona — no
   reescribirlo, solo portar su persistencia.

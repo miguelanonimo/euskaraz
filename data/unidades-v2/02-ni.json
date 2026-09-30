@@ -1266,12 +1266,12 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "su amigo (de ella)",
-          "eu": "haren lagun polita",
+          "es": "su pueblo nuevo (de ella)",
+          "eu": "haren herri berria",
           "palabras": [
             "haren",
-            "lagun",
-            "polita"
+            "herri",
+            "berria"
           ],
           "distractores": [
             "gure"
