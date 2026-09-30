@@ -33,13 +33,27 @@ const REGLAS = [
     re: new RegExp('(^|[^a-záéíóúñ])ari\\s+(naiz|zara|da|gara|zarete|dira)(?![a-záéíóúñ])', 'i') },
   { id: '«gustatzen» / NOR-NORI', desde: '9.1',
     re: /\b(gustatzen|zait|zaizkit|zaizu|zaizkizu|zaio|zaizkio)\b/i },
-  { id: 'pasado', desde: '10.1',
-    re: /\b(nintzen|ginen|ziren|zinen|zineten|nuen|genuen|zuten|zenuen|nengoen|zegoen|zeuden)\b/i },
-  { id: 'partícula «al»', desde: '10.5',
+  // El pasado NO es una sola cosa: la unidad 10 lo reparte en tres temas, un
+  // auxiliar por tema. Mientras esto era una regla única «desde 10.1», un
+  // ejercicio del 10.1 podía pedir «nuen» o «nengoen» y nadie se quejaba. Lo
+  // cazó Ric usando la app: en el 10.1 le salió «Joan den astean etxean
+  // nengoen», que necesita egon (10.3) y un marcador de 10.5.
+  // «zuen» se queda fuera a propósito: en la 2.2 es «vuestro», no el pasado
+  // de ukan. Y «zen» suelto da demasiados falsos positivos.
+  { id: 'pasado de «izan»', desde: '10.1',
+    re: /\b(nintzen|zinen|ginen|zineten|ziren)\b/i },
+  { id: 'pasado de «ukan»', desde: '10.2',
+    re: /\b(nuen|zenuen|genuen|zenuten|zuten|nituen|zenituen|zituen|genituen|zenituzten|zituzten)\b/i },
+  { id: 'pasado de «egon»', desde: '10.3',
+    re: /\b(nengoen|zeunden|zegoen|geunden|zeundeten|zeuden)\b/i },
+  // Estos dos «desde» se quedaron viejos al partir la unidad 10 en tres: la
+  // partícula «al» se fue al 12.1 y los comparativos al 11.3, así que las
+  // reglas estaban dejando pasar cosas. Si vuelves a mover temas, repásalas.
+  { id: 'partícula «al»', desde: '12.1',
     re: new RegExp('(^|[^a-záéíóúñ])(ba\\s+)?al\\s+(' + AUX + ')(?![a-záéíóúñ])', 'i') },
   { id: '«ezin»', desde: '8.3', re: /\bezin\b/i },
   { id: '«behar»', desde: '8.3', re: /\bbehar\s+(dut|duzu|du|dugu|duzue|dute|izan)\b/i },
-  { id: 'comparativo / superlativo', desde: '10.4',
+  { id: 'comparativo / superlativo', desde: '11.3',
     re: /\b(gehiago|gutxiago|handiago|txikiago|politago|hobea|hoberena|gehien|handiena|onena)\b/i },
 ];
 
@@ -47,8 +61,16 @@ function textos(v) {
   const out = [];
   const push = (campo, x) => { if (x) out.push({ campo, t: String(x) }); };
   ['instruccion', 'pregunta', 'enunciado', 'frase', 'pista', 'explicacion'].forEach(k => push(k, v[k]));
-  ['opciones', 'palabras', 'distractores', 'respuestas'].forEach(k =>
-    (v[k] || []).forEach(x => push(k, x)));
+  ['palabras', 'respuestas'].forEach(k => (v[k] || []).forEach(x => push(k, x)));
+  // Solo la opción BUENA. Las falsas y los distractores son, a propósito, lo
+  // que el alumno tiene que descartar: el 10.1 ofrece «naiz / nintzen /
+  // nengoen / nuen» justamente para que separe el presente del pasado, y
+  // rechazar «nengoen» no exige haberlo estudiado. Mirarlos todos hacía que
+  // el test se quejara de sus propios ejercicios bien hechos.
+  if (Number.isInteger(v.correcta) && Array.isArray(v.opciones) &&
+      v.correcta >= 0 && v.correcta < v.opciones.length) {
+    push('opciones', v.opciones[v.correcta]);
+  }
   (v.pares || []).forEach(p => {
     if (p && typeof p === 'object' && !Array.isArray(p)) {
       Object.keys(p).forEach(k => { if (k !== 'es') push('pares.' + k, p[k]); });

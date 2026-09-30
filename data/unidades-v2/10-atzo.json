@@ -298,7 +298,7 @@
       "nota": null,
       "audio": "unidades/u11/lehen.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.1"
     },
     {
       "eu": "orduan",
@@ -306,7 +306,7 @@
       "nota": null,
       "audio": "unidades/u11/orduan.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.1"
     },
     {
       "eu": "herenegun",
@@ -314,7 +314,7 @@
       "nota": null,
       "audio": "unidades/u11/herenegun.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.1"
     },
     {
       "eu": "iaz",
@@ -322,7 +322,7 @@
       "nota": null,
       "audio": "unidades/u11/iaz.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.1"
     },
     {
       "eu": "aurten",
@@ -354,7 +354,7 @@
       "nota": "De «txiki» + esa -tan de plural que ya conoces.",
       "audio": "unidades/u11/txikitan.mp3",
       "categoria": "otros",
-      "subnivel": "10.5"
+      "subnivel": "10.1"
     },
     {
       "eu": "garai hartan",
@@ -370,7 +370,7 @@
       "nota": null,
       "audio": "unidades/u11/jaio.mp3",
       "categoria": "verbo",
-      "subnivel": "10.4"
+      "subnivel": "10.1"
     },
     {
       "eu": "ezagutu",
@@ -426,7 +426,7 @@
       "nota": null,
       "audio": "unidades/u11/aspaldi.mp3",
       "categoria": "otros",
-      "subnivel": "10.4"
+      "subnivel": "10.1"
     },
     {
       "eu": "berriro",
@@ -508,6 +508,226 @@
         }
       ],
       "subnivel": "10.1"
+    },
+    {
+      "id": "u10-g44",
+      "subnivel": "10.1",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Yo era profesor.",
+          "eu": "Ni irakaslea nintzen.",
+          "palabras": [
+            "ni",
+            "irakaslea",
+            "nintzen"
+          ],
+          "distractores": [
+            "nuen"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ayer fuiste al mercado.",
+          "eu": "Atzo merkatura joan zinen.",
+          "palabras": [
+            "atzo",
+            "merkatura",
+            "joan",
+            "zinen"
+          ],
+          "distractores": [
+            "zara"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mi madre era médica.",
+          "eu": "Nire ama medikua zen.",
+          "palabras": [
+            "nire",
+            "ama",
+            "medikua",
+            "zen"
+          ],
+          "distractores": [
+            "da"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Nosotros éramos amigos.",
+          "eu": "Gu lagunak ginen.",
+          "palabras": [
+            "gu",
+            "lagunak",
+            "ginen"
+          ],
+          "distractores": [
+            "gara"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ellos eran escritores.",
+          "eu": "Haiek idazleak ziren.",
+          "palabras": [
+            "haiek",
+            "idazleak",
+            "ziren"
+          ],
+          "distractores": [
+            "dira"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Ayer fuiste al mercado.",
+          "eu": "Atzo merkatura joan zinen.",
+          "palabras": [
+            "atzo",
+            "merkatura",
+            "joan",
+            "zinen"
+          ],
+          "distractores": [
+            "zara"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u10-g45",
+      "subnivel": "10.1",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ayer fui a casa.",
+          "respuestas": [
+            "atzo etxera joan nintzen",
+            "ni atzo etxera joan nintzen"
+          ],
+          "pista": "Cuatro palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tú eras profesor.",
+          "respuestas": [
+            "zu irakaslea zinen",
+            "irakaslea zinen"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Antes éramos estudiantes.",
+          "respuestas": [
+            "lehen ikasleak ginen",
+            "gu lehen ikasleak ginen"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Nací en Gernika.",
+          "respuestas": [
+            "gernikan jaio nintzen",
+            "ni gernikan jaio nintzen"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ellos eran mis primos.",
+          "respuestas": [
+            "haiek nire lehengusuak ziren",
+            "nire lehengusuak ziren"
+          ],
+          "pista": "Cuatro palabras."
+        }
+      ]
+    },
+    {
+      "id": "u10-g46",
+      "subnivel": "10.1",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Iaz gu Bilbon bizi ____.",
+          "opciones": [
+            "gara",
+            "ginen",
+            "zara",
+            "naiz"
+          ],
+          "correcta": 1,
+          "explicacion": "«iaz» es el año pasado, así que la frase va en pasado. Y «gu» pide «ginen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Herenegun zu eskolara joan ____.",
+          "opciones": [
+            "zara",
+            "zinen",
+            "naiz",
+            "gara"
+          ],
+          "correcta": 1,
+          "explicacion": "«herenegun» es anteayer: pasado. Con «zu», «zinen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Lehen haiek ikasleak ____, orain irakasleak dira.",
+          "opciones": [
+            "dira",
+            "ziren",
+            "gara",
+            "zineten"
+          ],
+          "correcta": 1,
+          "explicacion": "«lehen» frente a «orain»: la primera mitad va en pasado, y «haiek» pide «ziren»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Txikitan ni oso txikia ____.",
+          "opciones": [
+            "naiz",
+            "nintzen",
+            "zen",
+            "ginen"
+          ],
+          "correcta": 1,
+          "explicacion": "«txikitan» es de pequeño, así que pasado: con «ni», «nintzen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Aspaldi zuek nire lagunak ____.",
+          "opciones": [
+            "zarete",
+            "zineten",
+            "ziren",
+            "zinen"
+          ],
+          "correcta": 1,
+          "explicacion": "«aspaldi» es hace mucho: pasado. «zuek» pide «zineten», no «zinen»."
+        }
+      ]
     },
     {
       "id": "u11-g02",
@@ -694,7 +914,7 @@
           ]
         }
       ],
-      "subnivel": "10.1"
+      "subnivel": "test"
     },
     {
       "id": "u11-g04",
@@ -865,7 +1085,7 @@
           ]
         }
       ],
-      "subnivel": "10.1"
+      "subnivel": "test"
     },
     {
       "id": "u11-g06",
@@ -1056,12 +1276,12 @@
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
-          "es": "La conocí hace dos años.",
+          "es": "La conocí el año pasado.",
           "respuestas": [
-            "duela bi urte ezagutu nuen",
-            "nik duela bi urte ezagutu nuen"
+            "iaz ezagutu nuen",
+            "nik iaz ezagutu nuen"
           ],
-          "pista": "Empieza por «duela»."
+          "pista": "Empieza por «iaz»."
         }
       ],
       "subnivel": "10.4"
@@ -1376,7 +1596,7 @@
           "explicacion": "«hace dos años» es pasado, y «estar» → nengoen."
         }
       ],
-      "subnivel": "10.1"
+      "subnivel": "10.5"
     },
     {
       "id": "u10-g30",
@@ -1812,7 +2032,7 @@
           ]
         }
       ],
-      "subnivel": "10.1"
+      "subnivel": "10.4"
     },
     {
       "id": "u10-g13",
