@@ -1356,6 +1356,27 @@
     '</div>';
   }
 
+  /* El rosco se reparte entre las unidades: a cada una le toca una
+     porción igual, que se llena según lo que llevas de ella y con su
+     color. Las porciones van seguidas desde arriba, en orden de unidad,
+     sin dejar hueco a las que aún no has empezado: si llevas la 1 entera
+     y un poco de la 2 y de la 6, lo de la 6 va justo detrás de lo de la 2,
+     no en su sitio. Una raya blanca separa cada tramo. */
+  function arcoCurso() {
+    var n = CURSO.unidades.length, pos = 0, tramos = [];
+    CURSO.unidades.forEach(function (u) {
+      var r = progresoUnidad(u).ratio;
+      if (r <= 0) return;
+      var largo = r / n * 100, fin = pos + largo;
+      var corte = largo > 1.2 ? fin - 0.5 : fin;   // los tramos mínimos, sin raya
+      tramos.push(familia(u).c + ' ' + pos.toFixed(2) + '% ' + corte.toFixed(2) + '%');
+      if (corte < fin) tramos.push('rgb(255,255,255) ' + corte.toFixed(2) + '% ' + fin.toFixed(2) + '%');
+      pos = fin;
+    });
+    if (!tramos.length) return 'transparent';
+    return 'conic-gradient(' + tramos.join(', ') + ', transparent ' + pos.toFixed(2) + '% 100%)';
+  }
+
   function pantallaProgreso() {
     ponerFamilia(null);
     cabecera('atras', { raiz: true });
@@ -1377,7 +1398,7 @@
 
     el.screens.progress.innerHTML =
       '<div class="stack">' +
-        '<div class="donut" style="--v:' + curso + '">' +
+        '<div class="donut" style="--arco:' + arcoCurso() + '">' +
           '<div class="donut__in"><b>' + curso + '<small>%</small></b>' +
           '<span>' + hechas + ' de ' + n + ' unidades</span></div>' +
         '</div>' +

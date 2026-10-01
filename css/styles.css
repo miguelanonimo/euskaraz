@@ -377,7 +377,7 @@ div.scard{ cursor: default; }
 .srow--vacio{ cursor: default; }
 /* El hilo que une los temas, de una insignia a la siguiente. */
 .srow:not(:last-child)::after{
-  content: ''; position: absolute; left: 25.5px; top: 60px; bottom: -28px; width: 1px;
+  content: ''; position: absolute; left: 25.5px; top: 52px; bottom: -32px; width: 1px;
   background: var(--ink-20);
 }
 .srow--done:not(:last-child)::after{ background: var(--c-strong); }
@@ -698,8 +698,8 @@ div.scard{ cursor: default; }
   -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 28px), #000 calc(100% - 28px));
           mask: radial-gradient(farthest-side, transparent calc(100% - 28px), #000 calc(100% - 28px));
 }
-.donut::before{ background: var(--main-20); }
-.donut::after{ background: conic-gradient(currentColor calc(var(--v, 0) * 1%), transparent 0); }
+.donut::before{ background: var(--grey10); }
+.donut::after{ background: var(--arco, transparent); }
 .donut__in{
   position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
 }
