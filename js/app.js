@@ -1073,11 +1073,26 @@
     else if (tab === 'account')    pantallaCuenta();
   }
 
+  /* Microinteracción de entrada: un fundido con una pequeña subida,
+     reutilizado en cada cambio de pantalla, ficha y pregunta — es lo que
+     hace que el contenido se sienta vivo en vez de aparecer de golpe.
+     Respeta prefers-reduced-motion (igual que el resto de animaciones
+     con Web Animations API de esta app). */
+  var REDUCIR_MOVIMIENTO = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function entrar(nodo, distancia) {
+    if (!nodo || REDUCIR_MOVIMIENTO.matches) return;
+    nodo.animate(
+      [{ opacity: 0, transform: 'translateY(' + (distancia || 10) + 'px)' }, { opacity: 1, transform: 'none' }],
+      { duration: 260, easing: 'cubic-bezier(.2,.8,.2,1)' }
+    );
+  }
+
   function mostrar(nombre) {
     estado.pantalla = nombre;
     for (var k in el.screens) {
       el.screens[k].hidden = (k !== nombre);
     }
+    entrar(el.screens[nombre]);
     el.screenAuth.hidden = true;
     document.body.classList.toggle('con-tabbar', !!CON_TABBAR[nombre]);
     document.body.classList.toggle('con-lateral', !FOCO[nombre]);
@@ -1368,7 +1383,7 @@
       var f = familia(u), pu = progresoUnidad(u);
       var alfa = pu.completada ? 1 : 0.1 + 0.9 * pu.ratio;
       var bg = 'rgba(' + f.raw + ',' + alfa + ')';
-      return '<button class="lrow" type="button" data-unidad="' + esc(u.id) + '" style="--bg:' + bg + '">' +
+      return '<button class="lrow" type="button" data-unidad="' + esc(u.id) + '" style="--bg:' + bg + ';--c:' + f.c + '">' +
         '<span class="lrow__n">' + esc(u.numero) + '</span>' +
         '<span class="lrow__txt"><span class="lrow__t">' + esc(u.titulo) + '</span>' +
           '<span class="lrow__s">' + esc(u.subtitulo) + '</span></span>' +
@@ -2924,6 +2939,7 @@
       default:         siguiente();
     }
 
+    entrar(el.quizContent, 14);
     window.scrollTo(0, 0);
   }
 
@@ -3651,6 +3667,12 @@
   function feedback(ok, titulo, cuerpo, leve) {
     el.sheet.className = 'sheet ' + (leve ? 'is-leve' : (ok ? 'is-ok' : 'is-mal'));
     el.feedback.hidden = false;
+    if (!REDUCIR_MOVIMIENTO.matches) {
+      el.feedback.animate(
+        [{ opacity: 0, transform: 'translateY(16px)' }, { opacity: 1, transform: 'none' }],
+        { duration: 220, easing: 'cubic-bezier(.2,.8,.2,1)' }
+      );
+    }
     el.feedbackIcon.innerHTML = icono(leve ? 'eye' : (ok ? 'check-bold' : 'cross-bold'), 20);
     el.feedbackTitle.textContent = titulo;
     el.feedbackBody.innerHTML = cuerpo || '';
