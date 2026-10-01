@@ -31,7 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- Miguel · 2026-10-01 · revertir el alfabeto del diccionario a anchor (js/app.js)
+- Miguel · 2026-10-01 · X fija en la hoja de ficha, audio+color en ejemplos, hover de botones (css/styles.css, js/app.js)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
