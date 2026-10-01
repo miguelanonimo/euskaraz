@@ -36,7 +36,13 @@
   --papel-alto: #ffffff;
   --tinta:      #161513;
   --tinta-70:   #5a5852;
-  --tinta-45:   #8e8b84;
+  /* Era #8e8b84, que daba 2,99:1 sobre --papel y no llegaba al 4,5:1
+     que pide la WCAG AA. Ric, leyendo sin gafas: le costaban las
+     palabras de los ejercicios. Mismo matiz, más oscuro: 4,53:1. El
+     nombre ya no es literal (sale sobre un 57%), pero se queda para no
+     tocar los 42 sitios que lo usan. Ninguno va sobre fondo oscuro:
+     comprobado antes de oscurecerlo. */
+  --tinta-45:   #706d67;
   --tinta-20:   #c9c6bf;
   --filete:     #d6d3cc;
   --filete-alto:#161513;
@@ -920,7 +926,7 @@ body.silencioso .pair__play{ display: none; }
   margin: 0 0 calc(var(--u) * 4);
   font-size: var(--t-xl);
   font-weight: 600;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.015em;   /* era -0.035em: cierre de titular, a costa de leerlo */
   line-height: 1.15;
   text-wrap: balance;
 }
@@ -975,6 +981,8 @@ body.silencioso .pair__play{ display: none; }
   text-align: left;
   font-size: var(--t-b);
   line-height: 1.35;
+  /* Sin el -0.011em del body: estas son las palabras que hay que leer. */
+  letter-spacing: 0;
   border: 0;
   border-bottom: 1px solid var(--filete);
   background: transparent;
@@ -1024,6 +1032,7 @@ body.silencioso .pair__play{ display: none; }
   background: var(--papel);
   font-size: var(--t-m);
   line-height: 1.3;
+  letter-spacing: 0;
   text-align: center;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -1086,7 +1095,7 @@ body.silencioso .pair__play{ display: none; }
   background: transparent;
   font-size: var(--t-m);
   font-weight: 500;
-  letter-spacing: -0.018em;
+  letter-spacing: 0;   /* era -0.018em, el más cerrado del ejercicio y a 17px */
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: opacity .12s ease, background .1s ease;
@@ -1101,7 +1110,7 @@ body.silencioso .pair__play{ display: none; }
   margin: calc(var(--u) * 2) 0 calc(var(--u) * 3);
 }
 .slot{
-  font: inherit; font-size: 1.05rem;
+  font: inherit; font-size: 1.05rem; letter-spacing: 0;
   padding: calc(var(--u) * 1.2) calc(var(--u) * 1.5);
   border: 1px solid var(--filete); border-radius: 8px;
   background: var(--papel-alto); color: var(--tinta);
