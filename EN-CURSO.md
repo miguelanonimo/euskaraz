@@ -15,7 +15,7 @@ son los que más se cruzan.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- (vacío — nadie trabajando ahora mismo)
+- Miguel · 2026-10-01 · modelo de ramas (contenido/diseño) + apagar preview de Vercel en rediseno + documentar servidor local (vercel.json, EN-CURSO.md, CLAUDE.md)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
