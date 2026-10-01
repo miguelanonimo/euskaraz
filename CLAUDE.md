@@ -117,7 +117,25 @@ curso.
   `ric/trabajo`), cada uno con su sesión de Claude, de forma escalonada.
   `EN-CURSO.md` en la raíz es el aviso de "estoy aquí" para no pisarse —
   leerlo y seguir su protocolo antes de tocar `css/styles.css` o
-  `js/app.js` en esta rama.
+  `js/app.js` en esta rama. **Dos carriles, no dos ramas por persona:**
+  `main` es el contenido (texto, audio, `data/`), por el carril de
+  siempre (`ric/trabajo` → `ric/publicar`); `rediseno` es el diseño
+  visual. Traer contenido nuevo de `main` a `rediseno` para probar con
+  datos reales es un bloque de trabajo normal — se anota en
+  `EN-CURSO.md` igual que cualquier otro, tal como hizo Ric el
+  01/10/2026 (`842cc8a`/`f34924d`/`002cafe`).
+- **Sin preview de Vercel en `rediseno` (01/10/2026):** iterar diseño
+  esperando 1-2 minutos a cada push y comprobar en una URL de preview
+  no compensa. `vercel.json` (`git.deploymentEnabled.rediseno: false`)
+  apaga el despliegue automático de esa rama — los pushes a `rediseno`
+  no generan preview, a propósito. Para ver los cambios al momento,
+  cada uno levanta su propio servidor local: `python3
+  scripts/servidor-local.py [puerto]` (por defecto 8321; sirve el repo
+  entero sin caché, así que un refresh del navegador basta tras cada
+  cambio — nunca `python3 -m http.server` a secas, que sí cachea y
+  hace parecer que un arreglo no se ha aplicado). Cuando `rediseno` se
+  dé por terminado y se fusione a `main`, quitar esa entrada de
+  `vercel.json` para que vuelva a tener preview como cualquier rama.
 
 ## Al terminar cada fase
 

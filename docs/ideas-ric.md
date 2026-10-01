@@ -8,6 +8,35 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ---
 
+## 🎨 Nuevo (01/10/2026, tarde): sin preview de Vercel en `rediseno` — servidor local
+
+Gracias por el aviso de la preview desactualizada — tenías razón, el
+despliegue automático de esa rama se había quedado atascado. En vez de
+arreglarlo, lo hemos apagado del todo a propósito: iterar diseño
+esperando 1-2 minutos por cada push y mirar una URL de preview no tiene
+sentido cuando lo que hace falta es ver el cambio ya. `vercel.json`
+tiene ahora `git.deploymentEnabled.rediseno: false` — los pushes a
+`rediseno` ya no generan ningún deploy, ni roto ni bueno.
+
+Para ver tus cambios al momento, el servidor de siempre:
+
+```
+python3 scripts/servidor-local.py        # puerto 8321 por defecto
+```
+
+Y abres `http://localhost:8321/` en el navegador. Sirve el repo tal
+cual está en tu disco, sin caché — cambias algo, le das a refrescar, lo
+ves. No hace falta parar y volver a arrancarlo salvo que cambies de
+rama.
+
+También aclarado el modelo de ramas: `main` sigue siendo tu carril de
+contenido de siempre (`ric/trabajo` → `ric/publicar`), `rediseno` es
+solo el diseño visual. Traer contenido de `main` a `rediseno` para
+probar con datos reales — como hiciste hoy — sigue siendo válido,
+anotado en `EN-CURSO.md` como cualquier otro bloque.
+
+---
+
 ## 🎨 Nuevo (01/10/2026): trabajar los dos a la vez en `rediseno`
 
 Hay una rama nueva, `rediseno`, con el rediseño visual de la app (aún sin
