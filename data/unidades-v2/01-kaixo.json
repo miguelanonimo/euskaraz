@@ -44,15 +44,18 @@
       "ejemplos": [
         {
           "eu": "Kaixo!",
-          "es": "¡Hola!"
+          "es": "¡Hola!",
+          "audio": "unidades/u1/kaixo.mp3"
         },
         {
           "eu": "Bihar arte!",
-          "es": "¡Hasta mañana!"
+          "es": "¡Hasta mañana!",
+          "audio": "unidades/u1/bihar-arte.mp3"
         },
         {
           "eu": "Ikusi arte!",
-          "es": "¡Hasta luego!"
+          "es": "¡Hasta luego!",
+          "audio": "unidades/u1/ikusi-arte.mp3"
         }
       ],
       "subnivel": "1.1"
@@ -85,11 +88,13 @@
       "ejemplos": [
         {
           "eu": "Zer moduz? — Oso ondo, eta zu?",
-          "es": "¿Qué tal? — Muy bien, ¿y tú?"
+          "es": "¿Qué tal? — Muy bien, ¿y tú?",
+          "audio": "unidades/u1/zer-moduz-oso-ondo-eta-zu.mp3"
         },
         {
           "eu": "Eskerrik asko! — Ez horregatik.",
-          "es": "¡Muchas gracias! — De nada."
+          "es": "¡Muchas gracias! — De nada.",
+          "audio": "unidades/u1/eskerrik-asko-ez-horregatik.mp3"
         },
         {
           "eu": "Barkatu, mesedez.",
