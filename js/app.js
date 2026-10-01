@@ -1244,6 +1244,25 @@
     return 'Kaixo' + (usuarioNombre ? ', ' + usuarioNombre : '') + '!';
   }
 
+  /* Cuántas de las fichas de un montón has hecho hoy: las que tienen la
+     última respuesta fechada hoy. Sirve para el anillo de los repasos. */
+  function hechosHoy(candidatos, claveDe) {
+    var d = hoy(), n = 0;
+    candidatos.forEach(function (c) {
+      var f = ficha(claveDe(c));
+      if (f && f.visto === d) n++;
+    });
+    return n;
+  }
+
+  /* El tono de texto de una familia sobre su fondo suave. En las familias
+     claras —naranja, amarillo, pistacho, verde, turquesa— el tono normal no
+     se lee sobre el suave, así que va el fuerte. */
+  function colorTexto(u) {
+    var n = ((u && u.numero ? u.numero : 1) - 1) % FAMILIAS.length, f = familia(u);
+    return [1, 2, 3, 4, 5].indexOf(n) !== -1 ? f.strong : f.c;
+  }
+
   function pantallaHome() {
     /* Última red: si por donde sea llega un progreso con más atraso del
        que cabe en un día, se reparte antes de contar. Así la cifra que
@@ -1283,18 +1302,27 @@
       '</button>';
     }).join('');
 
-    // Los dos repasos: cuánto toca hoy de cada uno.
+    /* Los dos repasos, en el color de la lección en curso. La cifra es lo
+       que queda para hoy y el anillo lo que ya llevas hecho hoy de ese
+       repaso: sin empezar, la tarjeta sale apagada; a medias, el anillo a
+       medias; terminado, el anillo lleno con su check. */
+    var ft = familia(turno), ink = colorTexto(turno);
     function repaso(id, titulo, fondo, claveDe, minimo) {
-      var valor = '–', hecho = false;
-      if (fondo.length >= minimo) {
+      var valor = '–', hechos = 0, quedan = 0, abierto = fondo.length >= minimo;
+      if (abierto) {
         var r = recuento(fondo, claveDe);
-        valor = String(r.hoy);
-        hecho = !r.vencidos;
+        quedan = r.hoy;
+        hechos = hechosHoy(fondo, claveDe);
+        valor = String(quedan);
       }
-      return '<button class="scard" type="button" id="' + id + '">' +
+      var total = hechos + quedan;
+      var terminado = abierto && total > 0 && quedan === 0;
+      var apagada = !abierto || hechos === 0;
+      return '<button class="scard' + (apagada ? ' scard--off' : '') + '" type="button" id="' + id + '"' +
+        ' style="--sc:' + ink + ';--sc-soft:' + ft.soft + '">' +
         '<span class="scard__t">' + titulo + '</span>' +
         '<span class="scard__row"><span class="scard__v">' + valor + '</span>' +
-          anillo(100, { tam: 32, color: 'var(--main)', hecho: hecho }) + '</span>' +
+          anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ink, hecho: terminado }) + '</span>' +
       '</button>';
     }
 
@@ -1764,8 +1792,13 @@
      se ve en la lista, no toca el progreso ni el calendario. */
   var CATEGORIAS = [['', 'Todas'], ['verbo', 'Verb'], ['sustantivo', 'Sust'], ['adjetivo', 'Adj']];
 
+  /* La píldora del seleccionado es una capa propia, colocada por CSS con
+     --i (índice) y --n (opciones); al tocar otra opción se desliza hasta
+     ella (ver deslizarSeg). */
   function segmentado(id, opciones, activa) {
-    return '<div class="seg" id="' + id + '" role="tablist">' + opciones.map(function (o) {
+    var i = Math.max(0, opciones.map(function (o) { return o[0]; }).indexOf(activa));
+    return '<div class="seg" id="' + id + '" role="tablist" style="--n:' + opciones.length + ';--i:' + i + '">' +
+      '<span class="seg__pill" aria-hidden="true"></span>' + opciones.map(function (o) {
       return '<button class="seg__opt' + (o[0] === activa ? ' is-on' : '') + '" type="button" role="tab"' +
         ' data-valor="' + esc(o[0]) + '" aria-selected="' + (o[0] === activa) + '">' +
         (o[2] || '') + '<span>' + esc(o[1]) + '</span></button>';
@@ -3901,6 +3934,27 @@
     e.preventDefault();
     opts[i].click();
   });
+
+  /* Los segmentados se repintan enteros al elegir (cambia la pantalla de
+     debajo), así que la transición se hace FLIP: antes del repintado se
+     apunta dónde estaba la píldora y, ya repintado, la nueva sale de ahí
+     y se desliza a su sitio. */
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('.seg__opt');
+    if (!b || b.classList.contains('is-on')) return;
+    var seg = b.closest('.seg'), desde = seg.style.getPropertyValue('--i');
+    requestAnimationFrame(function () {
+      var ahora = $(seg.id) || seg, opts = ahora.querySelectorAll('.seg__opt');
+      var hasta = Array.prototype.indexOf.call(opts, ahora.querySelector('.seg__opt.is-on'));
+      if (hasta < 0) return;
+      var pill = ahora.querySelector('.seg__pill');
+      pill.style.transition = 'none';
+      ahora.style.setProperty('--i', desde);
+      void pill.offsetWidth;
+      pill.style.transition = '';
+      ahora.style.setProperty('--i', hasta);
+    });
+  }, true);
 
   // Diccionario
   el.dictInput.addEventListener('input', function () {
