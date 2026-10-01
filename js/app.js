@@ -1263,6 +1263,34 @@
     return [1, 2, 3, 4, 5].indexOf(n) !== -1 ? f.strong : f.c;
   }
 
+  /* Cambiar la tarjeta abierta de la pila reconstruye el HTML entero (el
+     tipo de tarjeta cambia, no solo su contenido), así que la animación
+     es FLIP: se apunta dónde estaba cada tarjeta por su id antes de
+     repintar y, ya repintada, cada una desliza y aparece desde ahí. */
+  function animarPila(repintar) {
+    var antes = {}, cont = el.screens.home.querySelector('.lstack');
+    if (cont) {
+      Array.prototype.forEach.call(cont.children, function (n) {
+        var id = n.dataset.pila || n.dataset.unidad;
+        if (id) antes[id] = n.getBoundingClientRect();
+      });
+    }
+    repintar();
+    if (!Object.keys(antes).length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    cont = el.screens.home.querySelector('.lstack');
+    if (!cont) return;
+    Array.prototype.forEach.call(cont.children, function (n) {
+      var id = n.dataset.pila || n.dataset.unidad, r0 = id && antes[id];
+      if (!r0) return;
+      var dy = r0.top - n.getBoundingClientRect().top;
+      n.animate(
+        [{ transform: 'translateY(' + dy + 'px)', opacity: 0.7 }, { transform: 'none', opacity: 1 }],
+        { duration: 320, easing: 'cubic-bezier(.65,0,.35,1)' }
+      );
+    });
+  }
+
   function pantallaHome() {
     /* Última red: si por donde sea llega un progreso con más atraso del
        que cabe en un día, se reparte antes de contar. Así la cifra que
@@ -1318,11 +1346,15 @@
       var total = hechos + quedan;
       var terminado = abierto && total > 0 && quedan === 0;
       var apagada = !abierto || hechos === 0;
+      /* Apagada no es opacidad (eso también lava el texto): es el tono
+         normal de la familia en vez del fuerte, sobre el mismo fondo
+         suave — se ve lavada pero el texto sigue al 100%. */
+      var tinta = apagada ? ft.c : ink;
       return '<button class="scard' + (apagada ? ' scard--off' : '') + '" type="button" id="' + id + '"' +
-        ' style="--sc:' + ink + ';--sc-soft:' + ft.soft + '">' +
+        ' style="--sc:' + tinta + ';--sc-soft:' + ft.soft + '">' +
         '<span class="scard__t">' + titulo + '</span>' +
         '<span class="scard__row"><span class="scard__v">' + valor + '</span>' +
-          anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ink, hecho: terminado }) + '</span>' +
+          anillo(total ? hechos / total * 100 : 0, { tam: 32, color: tinta, hecho: terminado }) + '</span>' +
       '</button>';
     }
 
@@ -1352,11 +1384,12 @@
       ? 'Segi aurrera!\nLlevas ' + plural(hechas, 'lección', 'lecciones')
       : 'Hasi gaitezen!\nTu primera lección te espera';
 
-    /* El color dice cómo vas: la familia entera si está hecha, a medias
-       si la has empezado, y el tono suave si aún no la has abierto. */
+    /* El color dice cómo vas: de un 10% de opacidad sin empezar hasta el
+       100% (el color sólido) al completarla, según el ratio de avance. */
     var filas = CURSO.unidades.map(function (u) {
-      var f = familia(u), pu = progresoUnidad(u), p = progUnidad(u.id);
-      var bg = pu.completada ? f.c : ((pu.ratio > 0 || p.visitada) ? 'rgba(' + f.raw + ',0.3)' : f.soft);
+      var f = familia(u), pu = progresoUnidad(u);
+      var alfa = pu.completada ? 1 : 0.1 + 0.9 * pu.ratio;
+      var bg = 'rgba(' + f.raw + ',' + alfa + ')';
       return '<button class="lrow" type="button" data-unidad="' + esc(u.id) + '" style="--bg:' + bg + '">' +
         '<span class="lrow__n">' + esc(u.numero) + '</span>' +
         '<span class="lrow__txt"><span class="lrow__t">' + esc(u.titulo) + '</span>' +
@@ -3871,7 +3904,7 @@
   // Hoy: la pila de lecciones y los dos repasos
   el.screens.home.addEventListener('click', function (e) {
     var peek = e.target.closest('[data-pila]');
-    if (peek) { estado.homeActiva = peek.dataset.pila; pantallaHome(); return; }
+    if (peek) { estado.homeActiva = peek.dataset.pila; animarPila(pantallaHome); return; }
     var card = e.target.closest('.lcard');
     if (card) { abrirUnidad(card.dataset.unidad, 'home'); return; }
     if (e.target.closest('#goVocabRepaso')) empezarVocab();
