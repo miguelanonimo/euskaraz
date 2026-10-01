@@ -34,8 +34,13 @@
   /* Entrar sin cuenta, SOLO en local, para poder revisar contenido sin
      pasar por el login (aportado por Ric). La condición es el nombre
      del host, no una bandera: en el dominio real esto es false siempre,
-     no hay forma de activarlo en producción sin cambiar esta línea. */
-  var MODO_LOCAL = ['localhost', '127.0.0.1', '::1', ''].indexOf(location.hostname) !== -1;
+     no hay forma de activarlo en producción sin cambiar esta línea.
+     Con ?cuenta en la URL se desactiva aposta: sirve para entrar con
+     una cuenta de verdad en local y ver el progreso real de Supabase
+     en vez del de localStorage (por ejemplo, para comprobar un cambio
+     de diseño con datos reales en vez de los que uno mismo se invente). */
+  var MODO_LOCAL = ['localhost', '127.0.0.1', '::1', ''].indexOf(location.hostname) !== -1
+    && location.search.indexOf('cuenta') === -1;
   // Bucket público de pronunciaciones (Cloud TTS, ver docs/brief.md sección 6).
   var AUDIO_BASE = SUPABASE_URL + '/storage/v1/object/public/euskaraz-audio/';
   var GUARDAR_ESPERA_MS = 1500;
