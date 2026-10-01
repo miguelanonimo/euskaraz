@@ -73,11 +73,17 @@ curso.
 - **Fase 3 (contenido): reestructuración a 10 unidades con subniveles
   fusionada a `main` el 26/08/2026** (desde `ric/trabajo`, con Claude
   Fable) — ver `docs/propuesta-10-unidades.md` y `docs/ideas-ric.md`
-  para el detalle de qué cambió y por qué. Pendiente de diseño: la app
-  se está replanteando como PWA de 4 pestañas (Hoy/Lecciones/
-  Diccionario/Ajustes) en `docs/propuesta-4-paginas.md`, en manos de
-  Claude Design — no tocar la estructura de navegación hasta que vuelva
-  esa propuesta.
+  para el detalle de qué cambió y por qué.
+- **Rediseño (01/10/2026), en la rama `rediseno`, sin fusionar a
+  `main`:** aplicado el diseño de Claude Design (proyecto «Esukaraz
+  mobile app design», 3a022012-…; se lee con la herramienta DesignSync)
+  — 4 secciones (Hoy, Lecciones, Progreso, Diccionario) más Ajustes,
+  Bricolage Grotesque + Schibsted Grotesk, un color por unidad. Solo el
+  diseño de MÓVIL: en pantallas grandes es la misma columna centrada
+  (máx. 480px) y en escritorio la barra de abajo se cambia por el menú
+  lateral (SideNav) del diseño. El diseño propio de tablet y escritorio
+  (Flujo 08/09) queda para una sesión posterior. La lógica (calendario,
+  corrección, Supabase) no se ha tocado: solo el pintado.
 
 ## Al terminar cada fase
 

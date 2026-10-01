@@ -6,6 +6,33 @@ historial de git si hace falta el detalle.
 
 ---
 
+## 2026-10-01 — Rediseño completo (rama `rediseno`, sin publicar)
+
+Aplicado el diseño de Claude Design en versión móvil a todas las
+pantallas: Hoy (pila de lecciones, los dos repasos y la racha de la
+semana), Lecciones, portada de unidad con la línea de temas, subunidad,
+fichas de explicación de una en una con barra de pasos, vocabulario,
+los siete tipos de ejercicio con la hoja inferior de comprobar y
+feedback (bien / casi / mal), resultado, Progreso (nueva), Diccionario
+con abecedario y Ajustes con modales.
+
+Navegación nueva: cuatro secciones en la barra de abajo (móvil) o en el
+menú lateral (escritorio). Desaparecen la cabecera con la ruta
+desplegable y el interruptor Batua/Bizkaiera de la portada (pasa a
+Ajustes).
+
+Para la racha y Progreso, el progreso guarda ahora un contador por día
+(`dias`: aciertos y respuestas). Es aditivo: los progresos viejos se
+leen igual y empiezan con la racha a cero.
+
+Fuera del diseño, decidido por pedagogía: en «ordenar» el hueco no
+enseña cuántas palabras lleva la frase (el diseño ponía marcadores
+«···»), para no dar pistas, que es el mismo criterio por el que se
+añadieron los distractores. «Media diaria» de Progreso cuenta
+ejercicios por día y no minutos, porque el tiempo no se mide. Objetivo
+semanal y Recordatorio de Ajustes no están: no hay nada detrás que los
+haga funcionar.
+
 ## 2026-09-28 — Aplicadas las correcciones de audio del bloque 1 (14 de 16)
 
 Con la elección de Ric entre las 3 versiones regeneradas, dos tipos de
