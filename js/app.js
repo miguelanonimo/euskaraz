@@ -157,6 +157,7 @@
     dictContent:   $('dictContent'),
     alfaPrev:      $('alfaPrev'),
     alfaNext:      $('alfaNext'),
+    dictArriba:    $('dictArriba'),
     quizContent:   $('quizContent'),
     sheet:         $('sheet'),
     feedback:      $('feedback'),
@@ -1411,10 +1412,8 @@
     CURSO.unidades.forEach(function (u) {
       var r = progresoUnidad(u).ratio;
       if (r <= 0) return;
-      var largo = r / n * 100, fin = pos + largo;
-      var corte = largo > 1.2 ? fin - 0.5 : fin;   // los tramos mínimos, sin raya
-      tramos.push(familia(u).c + ' ' + pos.toFixed(2) + '% ' + corte.toFixed(2) + '%');
-      if (corte < fin) tramos.push('rgb(255,255,255) ' + corte.toFixed(2) + '% ' + fin.toFixed(2) + '%');
+      var fin = pos + r / n * 100;
+      tramos.push(familia(u).c + ' ' + pos.toFixed(2) + '% ' + fin.toFixed(2) + '%');
       pos = fin;
     });
     if (!tramos.length) return 'transparent';
@@ -1422,7 +1421,9 @@
   }
 
   function pantallaProgreso() {
-    ponerFamilia(null);
+    // El rosco y el "X%" del centro van en el color de la lección en
+    // curso (la misma que abre Hoy), no siempre en rojo de marca.
+    ponerFamilia(unidadDeTurno());
     cabecera('atras', { raiz: true });
 
     var n = CURSO.unidades.length;
@@ -1726,7 +1727,7 @@
   function pintarFicha(g) {
     var ejemplos = '';
     if (g.ejemplos && g.ejemplos.length) {
-      ejemplos = '<div class="divider divider--light"></div>' +
+      ejemplos = '<div class="divider divider--c"></div>' +
         '<div class="vlist vlist--pad">' + g.ejemplos.map(function (e) {
           return '<div class="vi"><span class="vi__w">' + esc(e.eu) + botonAudio(e) + '</span>' +
                  '<span class="vi__m">' + esc(e.es) + '</span></div>';
@@ -2576,8 +2577,8 @@
     });
     var letras = Object.keys(grupos).sort(ordenLetras);
 
-    el.dictLetras.innerHTML = letras.map(function (l, i) {
-      return '<button class="alfa__l' + (i === 0 ? ' is-on' : '') + '" type="button" data-letra="' + l + '">' + l + '</button>';
+    el.dictLetras.innerHTML = letras.map(function (l) {
+      return '<button class="alfa__l" type="button" data-letra="' + l + '">' + l + '</button>';
     }).join('');
 
     if (!lista.length) {
@@ -3639,11 +3640,12 @@
     var d = temaDe(ej), u = d.unidad, tema = d.tema;
     abrirModal(
       '<button class="modal__x" type="button" id="hojaCerrar" aria-label="Cerrar">' + icono('close', 24) + '</button>' +
-      '<p class="modal__ruta">' + esc(u.numero + '. ' + u.titulo + (tema ? ' · ' + tema.id + ' ' + tema.titulo : '')) + '</p>' +
-      pintarFichas(fichas),
+      '<div class="modal__scroll">' +
+        '<p class="modal__ruta">' + esc(u.numero + '. ' + u.titulo + (tema ? ' · ' + tema.id + ' ' + tema.titulo : '')) + '</p>' +
+        pintarFichas(fichas) +
+      '</div>',
       'modal__panel--ficha');
     $('hojaCerrar').addEventListener('click', cerrarModal);
-    el.modalPanel.scrollTop = 0;
   }
 
   function feedback(ok, titulo, cuerpo, leve) {
@@ -3982,7 +3984,6 @@
     }
     var l = e.target.closest('.alfa__l');
     if (l) {
-      Array.prototype.forEach.call(el.dictLetras.children, function (b) { b.classList.toggle('is-on', b === l); });
       var sec = $('dsec-' + (l.dataset.letra === '—' ? 'raya' : l.dataset.letra));
       if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -3993,6 +3994,19 @@
   el.alfaNext.addEventListener('click', function () { el.dictLetras.scrollBy({ left: el.dictLetras.clientWidth - 16, behavior: 'smooth' }); });
   el.dictLetras.addEventListener('scroll', actualizarFlechasAlfa);
   document.querySelector('#screenDict .search__ico').innerHTML = icono('search', 20);
+
+  /* Ir arriba: solo en el diccionario, que es la única lista larga de
+     verdad. Aparece al bajar un poco y vuelve a lo alto de la pantalla
+     (el scroll es del documento, no de un contenedor propio). */
+  el.dictArriba.innerHTML = icono('arrow-left', 20);
+  el.dictArriba.firstElementChild.style.transform = 'rotate(90deg)';
+  window.addEventListener('scroll', function () {
+    if (el.screens.dict.hidden) return;
+    el.dictArriba.classList.toggle('is-on', window.scrollY > 600);
+  }, { passive: true });
+  el.dictArriba.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
   $('authLogo').innerHTML = icono('logo', 48);
 
   // ─────────── Arranque ───────────
