@@ -2534,6 +2534,7 @@
   }
 
   var dictCatActiva = '';
+  var dictLetraActiva = '';
 
   /* Las palabras sin letra delante —los sufijos, «-ena»— van juntas en un
      primer grupo con raya, como en el diseño. */
@@ -2565,9 +2566,13 @@
       (grupos[l] || (grupos[l] = [])).push(v);
     });
     var letras = Object.keys(grupos).sort(ordenLetras);
+    /* El alfabeto es un filtro, no un ancla: solo se pinta la letra
+       elegida. Si la activa ya no tiene palabras (cambió el filtro de
+       categoría o la búsqueda), se cae a la primera disponible. */
+    if (letras.indexOf(dictLetraActiva) === -1) dictLetraActiva = letras[0] || '';
 
-    el.dictLetras.innerHTML = letras.map(function (l, i) {
-      return '<button class="alfa__l' + (i === 0 ? ' is-on' : '') + '" type="button" data-letra="' + l + '">' + l + '</button>';
+    el.dictLetras.innerHTML = letras.map(function (l) {
+      return '<button class="alfa__l' + (l === dictLetraActiva ? ' is-on' : '') + '" type="button" data-letra="' + l + '">' + l + '</button>';
     }).join('');
 
     if (!lista.length) {
@@ -2576,21 +2581,19 @@
       return;
     }
 
-    el.dictContent.innerHTML = letras.map(function (l) {
-      return '<section class="dsec" id="dsec-' + (l === '—' ? 'raya' : l) + '">' +
-        '<span class="dsec__h">' + l + '</span>' +
-        '<div class="dsec__items">' + grupos[l].map(function (v) {
-          var vista = !!vistas[normalizar(v.eu)];
-          return '<div class="dentry">' +
-            '<div class="dentry__row">' +
-              '<span class="dentry__w">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
-              '<span class="dentry__m">' + esc(v.es) + '</span>' +
-              '<span class="dentry__u' + (vista ? '' : ' is-off') + '">u' + esc(v.unidad) + '</span>' +
-            '</div>' +
-            (v.nota ? '<span class="dentry__x">' + esc(v.nota) + '</span>' : '') +
-          '</div>';
-        }).join('') + '</div></section>';
-    }).join('');
+    var activos = grupos[dictLetraActiva] || [];
+    el.dictContent.innerHTML = '<section class="dsec">' +
+      '<div class="dsec__items">' + activos.map(function (v) {
+        var vista = !!vistas[normalizar(v.eu)];
+        return '<div class="dentry">' +
+          '<div class="dentry__row">' +
+            '<span class="dentry__w">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
+            '<span class="dentry__m">' + esc(v.es) + '</span>' +
+            '<span class="dentry__u' + (vista ? '' : ' is-off') + '">u' + esc(v.unidad) + '</span>' +
+          '</div>' +
+          (v.nota ? '<span class="dentry__x">' + esc(v.nota) + '</span>' : '') +
+        '</div>';
+      }).join('') + '</div></section>';
     actualizarFlechasAlfa();
   }
 
@@ -3972,9 +3975,8 @@
     }
     var l = e.target.closest('.alfa__l');
     if (l) {
-      Array.prototype.forEach.call(el.dictLetras.children, function (b) { b.classList.toggle('is-on', b === l); });
-      var sec = $('dsec-' + (l.dataset.letra === '—' ? 'raya' : l.dataset.letra));
-      if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      dictLetraActiva = l.dataset.letra;
+      pintarDiccionario(el.dictInput.value);
     }
   });
   el.alfaPrev.innerHTML = icono('chevron-right', 14);
