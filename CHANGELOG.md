@@ -6,6 +6,29 @@ historial de git si hace falta el detalle.
 
 ---
 
+## 2026-10-01 — Fuera «senidea»
+
+Ric, con hablantes nativos delante (su pareja y gente de allí): «eso se usa más
+para pariente, y no es común su uso, tal vez hace que sea más confuso».
+
+Coincide con la duda que ya quedó anotada al meterlo: el diccionario de
+Euskaltzaindia recoge la acepción «pariente» sin marcarla como dialectal, pero
+el de Elhuyar sí la marca. Entre una fuente que duda y el uso real que reportan
+los nativos, gana el uso real.
+
+Quitado de los tres sitios: el bloque de la ficha 4.6 «Hermano y hermana
+dependen de quién los tiene» con su ejemplo (*Hiru senide gara*), la entrada de
+vocabulario (530 → 529 palabras) y tres variantes de `u4-g49`, que ahora
+practican el sistema que el tema sí enseña: «Una chica habla de su hermano»
+→ `neba`, «Mikelek arreba bat du» y, en el emparejar, `ahizpa` en su lugar.
+
+No deja hueco: la ficha de al lado ya enseña **`anai-arrebak`** —los hermanos,
+los dos sexos juntos—, que es la forma corriente de decir lo que `senidea`
+intentaba cubrir (*Hiru anai-arreba gara*). Y no deja audio huérfano en el
+bucket: la palabra nunca llegó a tener.
+
+---
+
 ## 2026-10-01 — Tipografía de los ejercicios, más legible
 
 Ric: «sin gafas me cuesta leer las palabras de los ejercicios. ¿Esa tipo tiene
