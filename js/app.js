@@ -1259,13 +1259,19 @@
     var pila = CURSO.unidades.slice(i0, i0 + 3).reverse();
     var activa = pila.filter(function (u) { return u.id === estado.homeActiva; })[0] || turno;
 
-    var tarjetas = pila.map(function (u) {
+    /* Las de encima asoman por arriba, cada una sobre la anterior; las de
+       debajo se meten por detrás de la abierta, cada una por detrás de la
+       que tiene encima. Por eso el orden de pintado va por posición. */
+    var iActiva = pila.indexOf(activa);
+    var tarjetas = pila.map(function (u, i) {
       var f = familia(u), titulo = u.numero + '. ' + u.titulo;
       if (u !== activa) {
-        return '<button class="peek" type="button" data-pila="' + esc(u.id) + '" style="--c:' + f.c + '">' + esc(titulo) + '</button>';
+        var debajo = i > iActiva;
+        return '<button class="peek' + (debajo ? ' peek--debajo' : '') + '" type="button" data-pila="' + esc(u.id) + '"' +
+          ' style="--c:' + f.c + ';z-index:' + (debajo ? 10 - (i - iActiva) : i + 1) + '">' + esc(titulo) + '</button>';
       }
       var pct = Math.round(progresoUnidad(u).ratio * 100);
-      return '<button class="lcard" type="button" data-unidad="' + esc(u.id) + '" style="--c:' + f.c + '">' +
+      return '<button class="lcard" type="button" data-unidad="' + esc(u.id) + '" style="--c:' + f.c + ';z-index:10">' +
         '<span class="lcard__top">' +
           '<span class="lcard__row">' +
             '<span class="lcard__title">' + esc(titulo) + '</span>' +

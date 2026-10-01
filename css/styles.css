@@ -255,8 +255,8 @@ body.silencioso .pair__play{ display: none; }
   white-space: nowrap;
 }
 
-.bar{ display: flex; width: 100%; height: 6px; border-radius: 1000px; overflow: hidden; background: rgba(255,255,255,0.4); }
-.bar > span{ display: block; height: 100%; border-radius: 1000px; background: var(--white); }
+.bar{ display: flex; width: 100%; height: 6px; border-radius: 1000px; overflow: hidden; background: var(--white); }
+.bar > span{ display: block; height: 100%; border-radius: 1000px; background: rgba(20,19,20,0.8); }
 
 .pill{
   display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
@@ -278,7 +278,7 @@ body.silencioso .pair__play{ display: none; }
 .lstack{ display: flex; flex-direction: column; }
 .lstack > *{ position: relative; }
 .lstack > * + *{ margin-top: -36px; }
-.lstack > .lcard + *{ margin-top: 12px; }
+.peek--debajo{ padding-top: 52px; padding-bottom: 0; }   /* los 36px de arriba quedan tapados por la abierta */
 
 .lcard{
   display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;
@@ -303,7 +303,7 @@ body.silencioso .pair__play{ display: none; }
 .peek{
   display: flex; align-items: flex-start;
   width: 100%; height: 82px; padding: 16px 24px 48px;
-  border: 0; border-radius: 32px 32px 4px 4px; background: var(--c);
+  border: 0; border-radius: var(--r-card); background: var(--c);
   color: var(--ink); text-align: left; cursor: pointer;
   font-family: var(--f-d); font-weight: 800; font-size: 18px; line-height: 1; letter-spacing: 0.01em;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
