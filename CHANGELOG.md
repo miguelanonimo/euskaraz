@@ -6,6 +6,34 @@ historial de git si hace falta el detalle.
 
 ---
 
+## 2026-10-01 — El 12.3 deja de aprobarse con una sola pregunta
+
+Ric: «Ese tema lo he superado con un solo ejercicio. Y esto no puede ser,
+cada test de final de tema debe tener al menos 3 ejercicios para pasarlo».
+
+La sesión de un tema son exactamente sus grupos, una variante de cada uno
+(`delSubnivel(u.ejercicios, sub)` + `elegirVariante`), y se supera con
+`ratio >= 0.7`. Con un grupo, acertar una pregunta daba el tema por hecho.
+Medido en todo el curso: el 12.3 era **el único** tema por debajo de 3.
+
+- La ficha del 12.3 se cortaba en seco: presentaba `denak` y `bakarrik` sin
+  una sola frase de ejemplo. Ampliada con el uso de las dos, verificado en
+  Elhuyar: `bakarrik` va **detrás** del elemento al que afecta, igual que
+  `ere` (*hauxe bakarrik esan nahi dizut*), y sin nada delante pasa a ser «a
+  solas» (*bakarrik gelditu da etxean*). Y `denak` es absolutivo plural, pero
+  con un verbo que lleva objeto el sujeto va en ergativo, **`denek`**
+  (*denek ez dute bat egiten*) — la -k que el curso enseña en el 4.4. Esa
+  trampa va también en la nota de la palabra, que es donde se repasa.
+- Dos grupos nuevos que usan ya lo anterior: `u12-g14` (elegir entre denak /
+  denek / bakarrik / ezer) y `u12-g15` (ordenar, con `denek` de distractor
+  frente a `denak`).
+
+**Queda una decisión abierta**: con exactamente 3 grupos hay que acertar 3 de
+3, porque 2/3 = 66,7% y el umbral es 0,7. Son 7 temas (10.2, 10.3, 11.2, 11.4,
+12.1, 12.2, 12.3) y son los únicos del curso que no perdonan ningún fallo.
+
+---
+
 ## 2026-09-30 — Los ejercicios se colocan en el tema que de verdad les toca
 
 Ric, usando la app: en el 10.1 («el pasado de izan») le salió *Ordena las
