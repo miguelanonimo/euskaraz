@@ -28,9 +28,10 @@ Medido en todo el curso: el 12.3 era **el único** tema por debajo de 3.
   denek / bakarrik / ezer) y `u12-g15` (ordenar, con `denek` de distractor
   frente a `denak`).
 
-**Queda una decisión abierta**: con exactamente 3 grupos hay que acertar 3 de
-3, porque 2/3 = 66,7% y el umbral es 0,7. Son 7 temas (10.2, 10.3, 11.2, 11.4,
-12.1, 12.2, 12.3) y son los únicos del curso que no perdonan ningún fallo.
+Con exactamente 3 grupos hay que acertar 3 de 3, porque 2/3 = 66,7% y el
+umbral es 0,7. Son 7 temas (10.2, 10.3, 11.2, 11.4, 12.1, 12.2, 12.3) y son los
+únicos del curso que no perdonan ningún fallo. **Ric lo deja así a propósito**
+(01/10/2026): son también los temas de menos materia.
 
 ---
 

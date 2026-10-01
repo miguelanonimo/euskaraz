@@ -9,6 +9,15 @@ curso.
 
 ## Decisiones ya cerradas (no las vuelvas a plantear)
 
+- **Un tema se supera con el 70% y el suelo son 3 grupos.** La sesión de un
+  tema son sus grupos, una variante de cada uno, así que 3 grupos = 3 preguntas
+  y hay que acertar las 3 (2/3 queda por debajo de 0,7). Decidido por Ric el
+  01/10/2026, sabiendo que esos 7 temas son los únicos que no perdonan un
+  fallo: son también los de menos materia. No bajes el umbral ni metas casos
+  especiales. Lo que sí hay que vigilar es que **ningún tema baje de 3 grupos**
+  — con uno solo, acertar una pregunta daba el tema por hecho (lo pilló Ric en
+  el 12.3).
+
 - **El orden del vocabulario no se vigila; el de la gramática sí.** Medido el
   30/09/2026: un barrido que exige que ninguna palabra aparezca antes del tema
   que la cataloga da 148 casos, y prácticamente todos son buen diseño. El 2.2
