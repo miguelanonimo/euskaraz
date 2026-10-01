@@ -1268,34 +1268,6 @@
     return [1, 2, 3, 4, 5].indexOf(n) !== -1 ? f.strong : f.c;
   }
 
-  /* Cambiar la tarjeta abierta de la pila reconstruye el HTML entero (el
-     tipo de tarjeta cambia, no solo su contenido), así que la animación
-     es FLIP: se apunta dónde estaba cada tarjeta por su id antes de
-     repintar y, ya repintada, cada una desliza y aparece desde ahí. */
-  function animarPila(repintar) {
-    var antes = {}, cont = el.screens.home.querySelector('.lstack');
-    if (cont) {
-      Array.prototype.forEach.call(cont.children, function (n) {
-        var id = n.dataset.pila || n.dataset.unidad;
-        if (id) antes[id] = n.getBoundingClientRect();
-      });
-    }
-    repintar();
-    if (!Object.keys(antes).length) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    cont = el.screens.home.querySelector('.lstack');
-    if (!cont) return;
-    Array.prototype.forEach.call(cont.children, function (n) {
-      var id = n.dataset.pila || n.dataset.unidad, r0 = id && antes[id];
-      if (!r0) return;
-      var dy = r0.top - n.getBoundingClientRect().top;
-      n.animate(
-        [{ transform: 'translateY(' + dy + 'px)', opacity: 0.7 }, { transform: 'none', opacity: 1 }],
-        { duration: 320, easing: 'cubic-bezier(.65,0,.35,1)' }
-      );
-    });
-  }
-
   function pantallaHome() {
     /* Última red: si por donde sea llega un progreso con más atraso del
        que cabe en un día, se reparte antes de contar. Así la cifra que
@@ -2572,7 +2544,6 @@
   }
 
   var dictCatActiva = '';
-  var dictLetraActiva = '';
 
   /* Las palabras sin letra delante —los sufijos, «-ena»— van juntas en un
      primer grupo con raya, como en el diseño. */
@@ -2604,13 +2575,9 @@
       (grupos[l] || (grupos[l] = [])).push(v);
     });
     var letras = Object.keys(grupos).sort(ordenLetras);
-    /* El alfabeto es un filtro, no un ancla: solo se pinta la letra
-       elegida. Si la activa ya no tiene palabras (cambió el filtro de
-       categoría o la búsqueda), se cae a la primera disponible. */
-    if (letras.indexOf(dictLetraActiva) === -1) dictLetraActiva = letras[0] || '';
 
-    el.dictLetras.innerHTML = letras.map(function (l) {
-      return '<button class="alfa__l' + (l === dictLetraActiva ? ' is-on' : '') + '" type="button" data-letra="' + l + '">' + l + '</button>';
+    el.dictLetras.innerHTML = letras.map(function (l, i) {
+      return '<button class="alfa__l' + (i === 0 ? ' is-on' : '') + '" type="button" data-letra="' + l + '">' + l + '</button>';
     }).join('');
 
     if (!lista.length) {
@@ -2619,19 +2586,21 @@
       return;
     }
 
-    var activos = grupos[dictLetraActiva] || [];
-    el.dictContent.innerHTML = '<section class="dsec">' +
-      '<div class="dsec__items">' + activos.map(function (v) {
-        var vista = !!vistas[normalizar(v.eu)];
-        return '<div class="dentry">' +
-          '<div class="dentry__row">' +
-            '<span class="dentry__w">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
-            '<span class="dentry__m">' + esc(v.es) + '</span>' +
-            '<span class="dentry__u' + (vista ? '' : ' is-off') + '">u' + esc(v.unidad) + '</span>' +
-          '</div>' +
-          (v.nota ? '<span class="dentry__x">' + esc(v.nota) + '</span>' : '') +
-        '</div>';
-      }).join('') + '</div></section>';
+    el.dictContent.innerHTML = letras.map(function (l) {
+      return '<section class="dsec" id="dsec-' + (l === '—' ? 'raya' : l) + '">' +
+        '<span class="dsec__h">' + l + '</span>' +
+        '<div class="dsec__items">' + grupos[l].map(function (v) {
+          var vista = !!vistas[normalizar(v.eu)];
+          return '<div class="dentry">' +
+            '<div class="dentry__row">' +
+              '<span class="dentry__w">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
+              '<span class="dentry__m">' + esc(v.es) + '</span>' +
+              '<span class="dentry__u' + (vista ? '' : ' is-off') + '">u' + esc(v.unidad) + '</span>' +
+            '</div>' +
+            (v.nota ? '<span class="dentry__x">' + esc(v.nota) + '</span>' : '') +
+          '</div>';
+        }).join('') + '</div></section>';
+    }).join('');
     actualizarFlechasAlfa();
   }
 
@@ -3909,7 +3878,7 @@
   // Hoy: la pila de lecciones y los dos repasos
   el.screens.home.addEventListener('click', function (e) {
     var peek = e.target.closest('[data-pila]');
-    if (peek) { estado.homeActiva = peek.dataset.pila; animarPila(pantallaHome); return; }
+    if (peek) { estado.homeActiva = peek.dataset.pila; pantallaHome(); return; }
     var card = e.target.closest('.lcard');
     if (card) { abrirUnidad(card.dataset.unidad, 'home'); return; }
     if (e.target.closest('#goVocabRepaso')) empezarVocab();
@@ -4013,8 +3982,9 @@
     }
     var l = e.target.closest('.alfa__l');
     if (l) {
-      dictLetraActiva = l.dataset.letra;
-      pintarDiccionario(el.dictInput.value);
+      Array.prototype.forEach.call(el.dictLetras.children, function (b) { b.classList.toggle('is-on', b === l); });
+      var sec = $('dsec-' + (l.dataset.letra === '—' ? 'raya' : l.dataset.letra));
+      if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
   el.alfaPrev.innerHTML = icono('chevron-right', 14);
