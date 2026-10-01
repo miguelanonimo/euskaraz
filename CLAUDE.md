@@ -84,6 +84,12 @@ curso.
   lateral (SideNav) del diseño. El diseño propio de tablet y escritorio
   (Flujo 08/09) queda para una sesión posterior. La lógica (calendario,
   corrección, Supabase) no se ha tocado: solo el pintado.
+- **Colaboración en `rediseno` (01/10/2026):** Miguel y Ric trabajan en
+  la misma rama (Ric ya tenía permiso de escritura en el repo por
+  `ric/trabajo`), cada uno con su sesión de Claude, de forma escalonada.
+  `EN-CURSO.md` en la raíz es el aviso de "estoy aquí" para no pisarse —
+  leerlo y seguir su protocolo antes de tocar `css/styles.css` o
+  `js/app.js` en esta rama.
 
 ## Al terminar cada fase
 

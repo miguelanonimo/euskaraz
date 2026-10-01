@@ -8,6 +8,32 @@ Formato de cada entrada: fecha · qué he visto · qué propongo.
 
 ---
 
+## 🎨 Nuevo (01/10/2026): trabajar los dos a la vez en `rediseno`
+
+Hay una rama nueva, `rediseno`, con el rediseño visual de la app (aún sin
+pasar a `main` — es la versión de pruebas). Como ya tienes permiso de
+escritura en el repo, podemos tocarla los dos, cada uno con nuestro
+Claude, sin pisarnos y sin gastar crédito en lo mismo dos veces.
+
+El mecanismo es `EN-CURSO.md`, en la raíz del repo:
+
+1. Antes de tocar nada: `git pull origin rediseno`, y mira ese archivo.
+   Si está vacío, vía libre. Si hay una línea con mi nombre, espera o
+   dime qué vas a tocar para no cruzarnos (sobre todo si es
+   `css/styles.css` o `js/app.js`, que son los que más se repiten).
+2. Al empezar, añade una línea con tu nombre, hora y en qué vas a
+   trabajar, y súbela con un commit aparte (solo ese archivo).
+3. Al terminar ese bloque, borra tu línea y vuelve a subir el archivo
+   vacío.
+
+Si en algún momento los dos empujamos sin haber mirado el archivo, no
+pasa nada grave: gana quien empujó primero, el otro hace
+`git pull --rebase origin rediseno` y resuelve el conflicto (o se lo
+pide a su Claude mirando el diff). La rama sigue sin tocar `main` hasta
+que decidamos fusionarla.
+
+---
+
 ## 🎙️ Nuevo (19/09/2026): elegir la mejor de las 3 versiones corregidas (bloque 1)
 
 Gracias por el informe del bloque 1 — con tus 16 notas se generaron 3
