@@ -31,7 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- Miguel · 2026-10-01 · hover en botones + microinteracciones de entrada + U1 color + 12 lecciones (css/styles.css, js/app.js)
+- Miguel · 2026-10-01 · generando audio que falta en u1 1.1/1.2 (scripts/generar-audio, data/unidades-v2/01-kaixo.json)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
