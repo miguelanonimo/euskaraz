@@ -228,9 +228,16 @@
     ['255,180,237', '255,240,251', '219,86,188']
   ];
 
+  /* FAMILIAS solo tiene 10 colores para las 12 lecciones del curso
+     nuevo. Provisional mientras no hay color para la 10, 11 y 12: en
+     vez de reciclar el rojo/naranja de la 1 y la 2 (lo que hacía el
+     módulo), las tres últimas comparten el último color — distinto a
+     cualquier otra lección, aunque repetido entre ellas. Cuando lleguen
+     los colores de verdad, basta con ampliar FAMILIAS y quitar el
+     Math.min. */
   function familia(u) {
-    var n = (u && u.numero ? u.numero : 1) - 1;
-    var f = FAMILIAS[((n % FAMILIAS.length) + FAMILIAS.length) % FAMILIAS.length];
+    var n = Math.min((u && u.numero ? u.numero : 1) - 1, FAMILIAS.length - 1);
+    var f = FAMILIAS[n];
     return { raw: f[0], c: 'rgb(' + f[0] + ')', soft: 'rgb(' + f[1] + ')', strong: 'rgb(' + f[2] + ')' };
   }
 
@@ -1280,7 +1287,7 @@
      claras —naranja, amarillo, pistacho, verde, turquesa— el tono normal no
      se lee sobre el suave, así que va el fuerte. */
   function colorTexto(u) {
-    var n = ((u && u.numero ? u.numero : 1) - 1) % FAMILIAS.length, f = familia(u);
+    var n = Math.min((u && u.numero ? u.numero : 1) - 1, FAMILIAS.length - 1), f = familia(u);
     return [1, 2, 3, 4, 5].indexOf(n) !== -1 ? f.strong : f.c;
   }
 
