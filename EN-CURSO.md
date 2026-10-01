@@ -15,7 +15,11 @@ son los que más se cruzan.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- (vacío — nadie trabajando ahora mismo)
+- **Ric** · 01/10/2026 13:37 — traigo a `rediseno` el contenido de `main` que falta
+  (6 commits: ejercicios recolocados, 12.3, el «bonito» del 2.2, fuera
+  «senidea», test afinado). Toco `data/`, `CHANGELOG.md` y `CLAUDE.md`.
+  **`css/styles.css` y `js/app.js` NO se tocan**: en el cruce del CSS gana
+  la versión del rediseño.
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
