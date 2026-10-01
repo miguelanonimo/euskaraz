@@ -6,6 +6,38 @@ historial de git si hace falta el detalle.
 
 ---
 
+## 2026-10-01 — Tipografía de los ejercicios, más legible
+
+Ric: «sin gafas me cuesta leer las palabras de los ejercicios. ¿Esa tipo tiene
+el kerning cerrado?». Sí, y además había algo peor que el kerning.
+
+Medido, no opinado:
+
+- Los botones de opción (`.opt`) no declaran tipografía: heredan PP Neue
+  Montreal 400 a 20px y, sobre todo, el `letter-spacing: -0.011em` del `body`
+  — que `button{ letter-spacing: inherit }` se encarga de propagar. El
+  enunciado iba a -0.035em, y las fichas de «Ordena las palabras» (`.chip`) a
+  **-0.018em y solo 17px**, el texto más cerrado de todo el ejercicio.
+- El gris `--tinta-45` (#8e8b84 sobre #f2f0ec) daba **2,99:1**, por debajo del
+  4,5:1 de la WCAG AA. Lo usan la instrucción (11px y en mayúsculas), la pista
+  y las letras A/B/C/D. El texto principal, en cambio, está en 16:1.
+
+Aplicado: `--tinta-45` a **#706d67** (mismo matiz, **4,53:1**) y
+`letter-spacing: 0` en `.opt`, `.chip`, `.pair` y `.slot`, con el enunciado de
+-0.035em a -0.015em. Comprobado antes de oscurecer que ninguno de los 42 usos
+del gris cae sobre fondo oscuro.
+
+Dos cosas vistas y **no** tocadas, a decisión de Ric: `-webkit-font-smoothing:
+antialiased` en el `body`, que adelgaza los trazos en Mac, y la instrucción a
+11px en mayúsculas, que es el texto menos legible de la pantalla. Y un cabo
+suelto inofensivo: la hoja pide `font-feature-settings: ... "cv05" 1`, pero
+PP Neue Montreal solo declara `ss01` y `ss02` (comprobado en el binario), así
+que ese trozo no hace nada.
+
+Miguel está rehaciendo la interfaz: esto hay que trasladarlo o se pierde.
+
+---
+
 ## 2026-10-01 — El 12.3 deja de aprobarse con una sola pregunta
 
 Ric: «Ese tema lo he superado con un solo ejercicio. Y esto no puede ser,
