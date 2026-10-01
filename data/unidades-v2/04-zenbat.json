@@ -203,7 +203,7 @@
     },
     {
       "titulo": "Hermano y hermana dependen de quién los tiene",
-      "cuerpo": "Aquí el euskera es más preciso que el castellano. La palabra cambia según el sexo de <b>quien tiene ese hermano</b>, no del hermano:\n\nSi es un chico quien lo tiene: <b>anaia</b> (hermano), <b>arreba</b> (hermana)\nSi es una chica: <b>neba</b> (hermano), <b>ahizpa</b> (hermana)\n\nNormalmente coincide con quien habla, pero no siempre: en <i>Anek ahizpa bat du</i> manda Ane, no el hablante.\n\nCompara las tres, que es donde se ve:\n\n<b>Nik arreba bat daukat.</b> — Tengo una hermana (lo dice un chico)\n<b>Nik ahizpa bat daukat.</b> — Tengo una hermana (lo dice una chica)\n<b>Mikelek arreba bat dauka.</b> — Mikel tiene una hermana\n\nLas dos primeras son la misma frase en castellano y palabras distintas en euskera. Lo único que cambia es quién la dice.\n\nDos hermanos, chico y chica, usan palabras distintas para referirse el uno al otro. Curiosamente, en una lengua sin género gramatical.\n\n<b>Y la palabra que te salva de todo esto: «senidea»</b>\nCuando no quieres entrar en quién lo tiene, o no lo sabes, existe una palabra que vale para los cuatro casos:\n\n<b>senidea</b> — hermano o hermana, sin más\n\nEuskaltzaindia la define como «cada uno de los otros hijos de tus padres, o de uno de tus padres» — así que cubre también a los hermanos de un solo lado, que el sistema de cuatro palabras no distingue.\n\n<b>Hiru senide gara.</b> — Somos tres hermanos.\n\nFíjate en lo cómoda que es ahí: con <i>anaia</i> o <i>arreba</i> habría que saber de quién hablas y de qué sexo es cada uno.\n\nTiene un segundo sentido, «pariente», que oirás sobre todo por Bizkaia. El diccionario de Euskaltzaindia lo recoge sin marcarlo como dialectal; el de Elhuyar sí lo marca. Con el contexto se distingue sin esfuerzo.",
+      "cuerpo": "Aquí el euskera es más preciso que el castellano. La palabra cambia según el sexo de <b>quien tiene ese hermano</b>, no del hermano:\n\nSi es un chico quien lo tiene: <b>anaia</b> (hermano), <b>arreba</b> (hermana)\nSi es una chica: <b>neba</b> (hermano), <b>ahizpa</b> (hermana)\n\nNormalmente coincide con quien habla, pero no siempre: en <i>Anek ahizpa bat du</i> manda Ane, no el hablante.\n\nCompara las tres, que es donde se ve:\n\n<b>Nik arreba bat daukat.</b> — Tengo una hermana (lo dice un chico)\n<b>Nik ahizpa bat daukat.</b> — Tengo una hermana (lo dice una chica)\n<b>Mikelek arreba bat dauka.</b> — Mikel tiene una hermana\n\nLas dos primeras son la misma frase en castellano y palabras distintas en euskera. Lo único que cambia es quién la dice.\n\nDos hermanos, chico y chica, usan palabras distintas para referirse el uno al otro. Curiosamente, en una lengua sin género gramatical.",
       "ejemplos": [
         {
           "eu": "Nik arreba bat daukat.",
@@ -220,10 +220,6 @@
         {
           "eu": "Anek ahizpa bat du.",
           "es": "Ane tiene una hermana."
-        },
-        {
-          "eu": "Hiru senide gara.",
-          "es": "Somos tres hermanos."
         }
       ],
       "subnivel": "4.6"
@@ -627,13 +623,6 @@
       "es": "hermana (de una chica)",
       "nota": null,
       "audio": "unidades/u5/ahizpa.mp3",
-      "categoria": "sustantivo",
-      "subnivel": "4.6"
-    },
-    {
-      "eu": "senidea",
-      "es": "el hermano / la hermana (sin distinguir)",
-      "nota": "Vale para los cuatro casos de anaia/arreba/neba/ahizpa. También significa «pariente», sobre todo en Bizkaia.",
       "categoria": "sustantivo",
       "subnivel": "4.6"
     },
@@ -5130,28 +5119,28 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "No sabes si quien habla es chico o chica. ¿Cómo dices «hermano»?",
+          "pregunta": "Una chica habla de su hermano. ¿Qué palabra usa?",
           "opciones": [
-            "senidea",
-            "anaia",
             "neba",
-            "osaba"
+            "anaia",
+            "arreba",
+            "ahizpa"
           ],
           "correcta": 0,
-          "explicacion": "«Senidea» vale para los cuatro casos. «Anaia» y «neba» dependen de quién lo tiene."
+          "explicacion": "Manda el sexo de quien lo tiene: si es una chica, su hermano es «neba». «Anaia» es el hermano de un chico."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Hiru senide gara» significa…",
+          "pregunta": "«Mikelek arreba bat du» significa…",
           "opciones": [
-            "Somos tres hermanos",
-            "Tenemos tres tíos",
-            "Son tres primos",
-            "Somos tres amigos"
+            "Mikel tiene una hermana",
+            "Mikel tiene un hermano",
+            "Ane tiene una hermana",
+            "Mikel tiene una prima"
           ],
           "correcta": 0,
-          "explicacion": "«Senide» es hermano o hermana sin especificar, y «gara» es «somos»."
+          "explicacion": "Mikel es chico, así que su hermana es «arreba». Si lo dijera Ane sería «ahizpa»."
         },
         {
           "tipo": "pares",
@@ -5162,8 +5151,8 @@
               "es": "los padres"
             },
             {
-              "eu": "senidea",
-              "es": "el hermano o la hermana"
+              "eu": "ahizpa",
+              "es": "la hermana (de una chica)"
             },
             {
               "eu": "aitona",
