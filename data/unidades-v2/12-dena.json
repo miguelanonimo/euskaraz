@@ -78,7 +78,7 @@
     },
     {
       "titulo": "De las preguntas salen los indefinidos",
-      "cuerpo": "Esta es de las que se aprenden solas, porque no hay nada nuevo: son las preguntas de la tercera unidad con una pieza pegada detrás. Allí ya viste la primera de las tres familias, la del <i>edo-</i>: <b>edonor</b> (cualquiera). Aquí se cierran las otras dos.\n\nA la palabra de pregunta se le añade <b>-bait</b> y sale «algún»:\n\n<i>nor</i> (quién) → <b>norbait</b> — alguien\n<i>zer</i> (qué) → <b>zerbait</b> — algo\n<i>non</i> (dónde) → <b>nonbait</b> — en algún sitio\n\n<b>Norbait dago etxean.</b> — Hay alguien en casa.\n<b>Zerbait esan du.</b> — Ha dicho algo.\n\nY para lo contrario —«nadie», «nada»— el euskera usa otras formas, que van <b>siempre acompañadas de ez</b>:\n\n<b>inor ez</b> — nadie\n<b>ezer ez</b> — nada\n\nDe <i>ezer ez</i> ya te acuerdas, que salió con el partitivo en la séptima unidad. Funcionan igual:\n\n<b>Ez dago inor.</b> — No hay nadie.\n<b>Ez dut ezer esan.</b> — No he dicho nada.\n\nFíjate en el reparto: <i>norbait</i> y <i>zerbait</i> para lo afirmativo, <i>inor</i> y <i>ezer</i> para lo negativo. Nunca se cruzan.\n\nY dos más para cerrar el grupo:\n\n<b>denak</b> — todos\n<b>bakarrik</b> — solo, únicamente",
+      "cuerpo": "Y dos más para cerrar el grupo:\n\n<b>denak</b> — todos\n<b>bakarrik</b> — solo, únicamente\n\n<b>denak</b> es un plural, así que el verbo va en plural:\n\n<b>Denak hemen daude.</b> — Todos están aquí.\n<b>Denak nire lagunak dira.</b> — Todos son mis amigos.\n\nOjo con uno: si «todos» es quien <i>hace</i> algo —el sujeto de un verbo que\nlleva objeto— entonces se le pega la <b>-k</b> del ergativo que viste en el 4.4,\ny queda <b>denek</b>:\n\n<b>Denek euskara ikasten dute.</b> — Todos aprenden euskera.\n\n<b>bakarrik</b> se coloca <b>detrás</b> de la palabra a la que afecta, igual que\n<i>ere</i>:\n\n<b>Kafea bakarrik nahi dut.</b> — Solo quiero café.\n<b>Ura bakarrik nahi dut.</b> — Solo quiero agua.\n\nY si no hay nada delante al que agarrarse, pasa a significar «a solas»:\n\n<b>Bakarrik nago etxean.</b> — Estoy solo en casa.",
       "ejemplos": [
         {
           "eu": "Norbait dago etxean.",
@@ -91,6 +91,22 @@
         {
           "eu": "Zerbait esan du.",
           "es": "Ha dicho algo."
+        },
+        {
+          "eu": "Denak hemen daude.",
+          "es": "Todos están aquí."
+        },
+        {
+          "eu": "Denek euskara ikasten dute.",
+          "es": "Todos aprenden euskera."
+        },
+        {
+          "eu": "Kafea bakarrik nahi dut.",
+          "es": "Solo quiero café."
+        },
+        {
+          "eu": "Bakarrik nago etxean.",
+          "es": "Estoy solo en casa."
         }
       ],
       "subnivel": "12.3"
@@ -208,7 +224,7 @@
     {
       "eu": "denak",
       "es": "todos",
-      "nota": null,
+      "nota": "Con un verbo que lleva objeto, el sujeto va en ergativo: «denek».",
       "audio": "unidades/u12/denak.mp3",
       "categoria": "otros",
       "subnivel": "12.3"
@@ -1605,6 +1621,288 @@
         }
       ],
       "subnivel": "12.3"
+    },
+    {
+      "id": "u12-g14",
+      "subnivel": "12.3",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Todos están aquí. → ____ hemen daude.",
+          "opciones": [
+            "Denak",
+            "Denek",
+            "Inor",
+            "Bakarrik"
+          ],
+          "correcta": 0,
+          "explicacion": "«daude» (egon) no lleva objeto, así que el sujeto va tal cual: «denak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Todos aprenden euskera. → ____ euskara ikasten dute.",
+          "opciones": [
+            "Denak",
+            "Denek",
+            "Dena",
+            "Inor"
+          ],
+          "correcta": 1,
+          "explicacion": "«ikasten dute» lleva objeto (euskara), así que el sujeto se lleva la -k del ergativo: «denek»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Solo quiero café. → Kafea ____ nahi dut.",
+          "opciones": [
+            "bakarrik",
+            "denak",
+            "ezer",
+            "norbait"
+          ],
+          "correcta": 0,
+          "explicacion": "«bakarrik» va detrás de la palabra a la que afecta, igual que «ere»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Estoy solo en casa. → ____ nago etxean.",
+          "opciones": [
+            "Bakarrik",
+            "Denak",
+            "Inor",
+            "Zerbait"
+          ],
+          "correcta": 0,
+          "explicacion": "Sin nada delante a lo que agarrarse, «bakarrik» pasa a significar «a solas»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "No he dicho nada. → Ez dut ____ esan.",
+          "opciones": [
+            "ezer",
+            "zerbait",
+            "inor",
+            "denak"
+          ],
+          "correcta": 0,
+          "explicacion": "«ezer» es lo negativo y pide «ez» al lado; «zerbait» es lo afirmativo. Nunca se cruzan."
+        }
+      ]
+    },
+    {
+      "id": "u12-g15",
+      "subnivel": "12.3",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Todos son mis amigos.",
+          "eu": "Denak nire lagunak dira.",
+          "palabras": [
+            "denak",
+            "nire",
+            "lagunak",
+            "dira"
+          ],
+          "distractores": [
+            "denek"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Solo quiero agua.",
+          "eu": "Ura bakarrik nahi dut.",
+          "palabras": [
+            "ura",
+            "bakarrik",
+            "nahi",
+            "dut"
+          ],
+          "distractores": [
+            "denak"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Hay alguien en la cocina.",
+          "eu": "Norbait dago sukaldean.",
+          "palabras": [
+            "norbait",
+            "dago",
+            "sukaldean"
+          ],
+          "distractores": [
+            "inor"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "No he dicho nada.",
+          "eu": "Ez dut ezer esan.",
+          "palabras": [
+            "ez",
+            "dut",
+            "ezer",
+            "esan"
+          ],
+          "distractores": [
+            "zerbait"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Todos viven en Bilbao.",
+          "eu": "Denak Bilbon bizi dira.",
+          "palabras": [
+            "denak",
+            "Bilbon",
+            "bizi",
+            "dira"
+          ],
+          "distractores": [
+            "denek"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "es": "Solo quiero agua.",
+          "eu": "Ura bakarrik nahi dut.",
+          "palabras": [
+            "ura",
+            "bakarrik",
+            "nahi",
+            "dut"
+          ],
+          "distractores": [
+            "denak"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u12-g03",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las comparaciones",
+          "pares": [
+            {
+              "eu": "baino",
+              "es": "que (comparando)"
+            },
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los conectores",
+          "pares": [
+            {
+              "eu": "beraz",
+              "es": "así que"
+            },
+            {
+              "eu": "gainera",
+              "es": "además"
+            },
+            {
+              "eu": "hala ere",
+              "es": "aun así"
+            },
+            {
+              "eu": "adibidez",
+              "es": "por ejemplo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adverbios",
+          "pares": [
+            {
+              "eu": "noski",
+              "es": "claro"
+            },
+            {
+              "eu": "benetan",
+              "es": "de verdad"
+            },
+            {
+              "eu": "bakarrik",
+              "es": "solo"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adjetivos y adverbios",
+          "pares": [
+            {
+              "eu": "zaila",
+              "es": "difícil"
+            },
+            {
+              "eu": "erraza",
+              "es": "fácil"
+            },
+            {
+              "eu": "azkar",
+              "es": "rápido"
+            },
+            {
+              "eu": "poliki",
+              "es": "despacio"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los indefinidos",
+          "pares": [
+            {
+              "eu": "norbait",
+              "es": "alguien"
+            },
+            {
+              "eu": "zerbait",
+              "es": "algo"
+            },
+            {
+              "eu": "nonbait",
+              "es": "en algún sitio"
+            },
+            {
+              "eu": "denak",
+              "es": "todos"
+            }
+          ]
+        }
+      ],
+      "subnivel": "test"
     }
   ]
 }

@@ -9,6 +9,31 @@ curso.
 
 ## Decisiones ya cerradas (no las vuelvas a plantear)
 
+- **Un tema se supera con el 70% y el suelo son 3 grupos.** La sesión de un
+  tema son sus grupos, una variante de cada uno, así que 3 grupos = 3 preguntas
+  y hay que acertar las 3 (2/3 queda por debajo de 0,7). Decidido por Ric el
+  01/10/2026, sabiendo que esos 7 temas son los únicos que no perdonan un
+  fallo: son también los de menos materia. No bajes el umbral ni metas casos
+  especiales. Lo que sí hay que vigilar es que **ningún tema baje de 3 grupos**
+  — con uno solo, acertar una pregunta daba el tema por hecho (lo pilló Ric en
+  el 12.3).
+
+- **El orden del vocabulario no se vigila; el de la gramática sí.** Medido el
+  30/09/2026: un barrido que exige que ninguna palabra aparezca antes del tema
+  que la cataloga da 148 casos, y prácticamente todos son buen diseño. El 2.2
+  enseña los posesivos con «nire etxe handia», y `etxea` está catalogado en el
+  5.2 porque la unidad 5 es la casa — pero es imposible enseñar posesivos sin
+  nombres, y el enunciado español ya los traduce. La unidad 3 enseña las
+  palabras de pregunta con «Nola duzu izena?» y «Nora zoaz?», donde el verbo es
+  andamio. `verificar.py` ya los saca como avisos (hay 334) y se convive con
+  ellos a propósito. **No los "arregles" moviendo grupos: estropearías un curso
+  bien hecho para contentar a un script.** Lo que sí es un fallo de verdad es
+  una **construcción gramatical** prematura —una conjugación que no se puede
+  deducir y que es justo la lección—, y de eso se encarga
+  `scripts/probar_adelantos.js`. Si mueves temas de sitio, repasa sus `desde`:
+  al partir la unidad 10 en tres se quedaron viejos dos y el test se volvió más
+  permisivo sin que nadie se enterara.
+
 - **Motor:** vanilla JS/HTML/CSS del original, sin migrar a React. El
   algoritmo de repetición espaciada en `js/app.js` ya funciona — no
   reescribirlo, solo portar su persistencia.
@@ -28,8 +53,11 @@ curso.
 - **Contenido:** reestructurado el 26/08/2026 a **10 unidades con
   subniveles** (`data/curso-v2.json` → `data/unidades-v2/*.json`),
   trabajo de Ric documentado en `docs/propuesta-10-unidades.md` — es
-  el curso en producción, ya no una prueba con `?v2`. El antiguo
-  esqueleto de 12 unidades (`data/curso.json` → `data/unidades/*.json`)
+  el curso en producción, ya no una prueba con `?v2`. **Desde el
+  26/09/2026 son 12**: la unidad 10 se partió en tres (Atzo / Bihar /
+  Dena batera), ver `docs/reestructuracion-12-unidades.md`. Ojo con el
+  número, que se presta a confusión: esas 12 NO son las de abajo. El
+  antiguo esqueleto de 12 unidades (`data/curso.json` → `data/unidades/*.json`)
   se deja en el repo sin usar por si hiciera falta volver atrás; no
   editarlo pensando que afecta a la app. Registro batua + vocabulario
   bizkaino/bilbaíno incluido explícitamente (ver esquema de

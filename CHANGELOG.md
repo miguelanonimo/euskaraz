@@ -32,6 +32,149 @@ añadieron los distractores. «Media diaria» de Progreso cuenta
 ejercicios por día y no minutos, porque el tiempo no se mide. Objetivo
 semanal y Recordatorio de Ajustes no están: no hay nada detrás que los
 haga funcionar.
+## 2026-10-01 — Fuera «senidea»
+
+Ric, con hablantes nativos delante (su pareja y gente de allí): «eso se usa más
+para pariente, y no es común su uso, tal vez hace que sea más confuso».
+
+Coincide con la duda que ya quedó anotada al meterlo: el diccionario de
+Euskaltzaindia recoge la acepción «pariente» sin marcarla como dialectal, pero
+el de Elhuyar sí la marca. Entre una fuente que duda y el uso real que reportan
+los nativos, gana el uso real.
+
+Quitado de los tres sitios: el bloque de la ficha 4.6 «Hermano y hermana
+dependen de quién los tiene» con su ejemplo (*Hiru senide gara*), la entrada de
+vocabulario (530 → 529 palabras) y tres variantes de `u4-g49`, que ahora
+practican el sistema que el tema sí enseña: «Una chica habla de su hermano»
+→ `neba`, «Mikelek arreba bat du» y, en el emparejar, `ahizpa` en su lugar.
+
+No deja hueco: la ficha de al lado ya enseña **`anai-arrebak`** —los hermanos,
+los dos sexos juntos—, que es la forma corriente de decir lo que `senidea`
+intentaba cubrir (*Hiru anai-arreba gara*). Y no deja audio huérfano en el
+bucket: la palabra nunca llegó a tener.
+
+---
+
+## 2026-10-01 — Tipografía de los ejercicios, más legible
+
+Ric: «sin gafas me cuesta leer las palabras de los ejercicios. ¿Esa tipo tiene
+el kerning cerrado?». Sí, y además había algo peor que el kerning.
+
+Medido, no opinado:
+
+- Los botones de opción (`.opt`) no declaran tipografía: heredan PP Neue
+  Montreal 400 a 20px y, sobre todo, el `letter-spacing: -0.011em` del `body`
+  — que `button{ letter-spacing: inherit }` se encarga de propagar. El
+  enunciado iba a -0.035em, y las fichas de «Ordena las palabras» (`.chip`) a
+  **-0.018em y solo 17px**, el texto más cerrado de todo el ejercicio.
+- El gris `--tinta-45` (#8e8b84 sobre #f2f0ec) daba **2,99:1**, por debajo del
+  4,5:1 de la WCAG AA. Lo usan la instrucción (11px y en mayúsculas), la pista
+  y las letras A/B/C/D. El texto principal, en cambio, está en 16:1.
+
+Aplicado: `--tinta-45` a **#706d67** (mismo matiz, **4,53:1**) y
+`letter-spacing: 0` en `.opt`, `.chip`, `.pair` y `.slot`, con el enunciado de
+-0.035em a -0.015em. Comprobado antes de oscurecer que ninguno de los 42 usos
+del gris cae sobre fondo oscuro.
+
+Dos cosas vistas y **no** tocadas, a decisión de Ric: `-webkit-font-smoothing:
+antialiased` en el `body`, que adelgaza los trazos en Mac, y la instrucción a
+11px en mayúsculas, que es el texto menos legible de la pantalla. Y un cabo
+suelto inofensivo: la hoja pide `font-feature-settings: ... "cv05" 1`, pero
+PP Neue Montreal solo declara `ss01` y `ss02` (comprobado en el binario), así
+que ese trozo no hace nada.
+
+Miguel está rehaciendo la interfaz: esto hay que trasladarlo o se pierde.
+
+---
+
+## 2026-10-01 — El 12.3 deja de aprobarse con una sola pregunta
+
+Ric: «Ese tema lo he superado con un solo ejercicio. Y esto no puede ser,
+cada test de final de tema debe tener al menos 3 ejercicios para pasarlo».
+
+La sesión de un tema son exactamente sus grupos, una variante de cada uno
+(`delSubnivel(u.ejercicios, sub)` + `elegirVariante`), y se supera con
+`ratio >= 0.7`. Con un grupo, acertar una pregunta daba el tema por hecho.
+Medido en todo el curso: el 12.3 era **el único** tema por debajo de 3.
+
+- La ficha del 12.3 se cortaba en seco: presentaba `denak` y `bakarrik` sin
+  una sola frase de ejemplo. Ampliada con el uso de las dos, verificado en
+  Elhuyar: `bakarrik` va **detrás** del elemento al que afecta, igual que
+  `ere` (*hauxe bakarrik esan nahi dizut*), y sin nada delante pasa a ser «a
+  solas» (*bakarrik gelditu da etxean*). Y `denak` es absolutivo plural, pero
+  con un verbo que lleva objeto el sujeto va en ergativo, **`denek`**
+  (*denek ez dute bat egiten*) — la -k que el curso enseña en el 4.4. Esa
+  trampa va también en la nota de la palabra, que es donde se repasa.
+- Dos grupos nuevos que usan ya lo anterior: `u12-g14` (elegir entre denak /
+  denek / bakarrik / ezer) y `u12-g15` (ordenar, con `denek` de distractor
+  frente a `denak`).
+
+Con exactamente 3 grupos hay que acertar 3 de 3, porque 2/3 = 66,7% y el
+umbral es 0,7. Son 7 temas (10.2, 10.3, 11.2, 11.4, 12.1, 12.2, 12.3) y son los
+únicos del curso que no perdonan ningún fallo. **Ric lo deja así a propósito**
+(01/10/2026): son también los temas de menos materia.
+
+---
+
+## 2026-09-30 — Los ejercicios se colocan en el tema que de verdad les toca
+
+Ric, usando la app: en el 10.1 («el pasado de izan») le salió *Ordena las
+palabras — La semana pasada estaba en casa* → «Joan den astean etxean
+nengoen», que necesita **egon** (10.3) y un marcador de 10.5.
+
+Causa: al partir la unidad 10 en tres (26/09) se repartieron con cuidado las
+**fichas**, pero los **ejercicios** se quedaron donde cayeron. Estaban
+escritos para una unidad donde los tres auxiliares se enseñaban de golpe, así
+que de los 5 grupos del 10.1 solo 1 pertenecía al 10.1.
+
+Mover un grupo de tema no cambia su firma, así que no le borra marcas a Ric;
+reescribir una frase sí. De ahí que casi todo se arregle moviendo:
+
+- `u11-g50` → 10.4 (es su ficha: gogoratu / ahaztu / berriro)
+- `u11-g12` → 10.5 (marcador de tiempo + forma verbal: es «Cuándo pasó»)
+- `u11-g03`, `u11-g05` → test de unidad (mezclan los tres auxiliares)
+- `u12-g03` → unidad 12, test (emparejaba conectores e indefinidos, que son
+  vocabulario de la 12, estando en la 11)
+- Los adverbios de una palabra (`lehen`, `orduan`, `herenegun`, `iaz`,
+  `txikitan`, `aspaldi`, `jaio`) pasan al 10.1: la unidad se llama «Atzo» y
+  tenerlos todos en el 10.5 dejaba a los cuatro primeros temas sin más
+  marcador que «atzo». Las construcciones de varias palabras (`joan den
+  astean`, `duela bi urte`, `garai hartan`) se quedan en el 10.5, que es la
+  ficha que las sistematiza.
+- `altua`, `azkar`, `poliki` pasan al 11.3, que es donde se usan; `zaila`,
+  `erraza` y `garrantzitsua` se quedan en el 11.4, que sí los explica.
+
+Reescrito solo lo imprescindible (2 variantes, las únicas que pierden marca):
+
+- `u11-g08` v5: «hace dos años» → «el año pasado» (`duela bi urte` es del 10.5).
+- `u12-g07` v3: **era incorrecto**, no solo prematuro. El hueco estaba en
+  «Euskara zaila da, baina ____ da polita», y su propia explicación dice que
+  «ere» va *detrás* del elemento. Ahora: «Bilbo handia da, baina Gernika ____
+  polita da», con el patrón `X ere` que el curso ya usa en «Ni ere ikaslea naiz».
+
+El 10.1 se quedaba con un solo grupo, así que tres nuevos de `izan` puro,
+con vocabulario de las unidades 1-9: `u10-g44` (ordenar), `u10-g45`
+(traducir), `u10-g46` (elegir la forma, usando los marcadores adelantados).
+
+**`probar_adelantos.js` también se había roto en silencio con la partición**,
+y era lo que debía haber cazado esto:
+
+- la regla «pasado» era una sola, *desde 10.1*, así que `nuen` y `nengoen` en
+  el 10.1 le parecían bien. Partida en tres, una por auxiliar y por tema.
+- `partícula «al»` decía *desde 10.5* y `al` se enseña ahora en el 12.1;
+  `comparativo` decía *desde 10.4* y son el 11.3. Las dos dejaban pasar cosas.
+  Si se vuelven a mover temas, hay que repasarlas.
+- `textos()` miraba también las opciones falsas y los distractores, y se
+  quejaba de ejercicios bien hechos: el 10.1 ofrece «naiz / nintzen / nengoen
+  / nuen» a propósito. Ahora solo mira la opción correcta.
+
+Comprobado reintroduciendo la frase de Ric: el test falla; con el arreglo, pasa.
+
+**Queda sin tocar**: el mismo barrido encuentra 207 casos más en las unidades
+8 y 9 (grupos de emparejar colocados antes de que se enseñen sus palabras).
+Son anteriores a la partición y no se han tocado — decisión de Ric y Miguel.
+
+---
 
 ## 2026-09-28 — Aplicadas las correcciones de audio del bloque 1 (14 de 16)
 
