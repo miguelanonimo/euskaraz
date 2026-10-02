@@ -1113,14 +1113,24 @@
      durante su espera, no se ve un instante antes de que le toque.
      Devuelve el momento en que termina el último, para encadenar el
      siguiente grupo detrás sin que se pisen. */
-  function aparecerEscalonado(nodos, desde, paso, distancia) {
+  function aparecerEscalonado(nodos, desde, paso, distancia, duracion) {
     if (REDUCIR_MOVIMIENTO.matches || !nodos || !nodos.length) return desde;
     Array.prototype.forEach.call(nodos, function (n, i) {
       n.animate(
         [{ opacity: 0, transform: 'translateY(' + (distancia || 14) + 'px)' }, { opacity: 1, transform: 'none' }],
-        { duration: 320, delay: desde + i * paso, easing: 'ease', fill: 'backwards' }
+        { duration: duracion || 320, delay: desde + i * paso, easing: 'ease', fill: 'backwards' }
       );
     });
+    return desde + nodos.length * paso;
+  }
+
+  /* aparecerEscalonado(), pero con el primero más lento que el resto —
+     la pila de lecciones y los repasos quieren que la de arriba de
+     todo se note más al llegar. */
+  function aparecerPrimeroLento(nodos, desde, paso, duracionPrimero) {
+    if (REDUCIR_MOVIMIENTO.matches || !nodos || !nodos.length) return desde;
+    aparecerEscalonado([nodos[0]], desde, paso, null, duracionPrimero);
+    aparecerEscalonado(Array.prototype.slice.call(nodos, 1), desde + paso, paso);
     return desde + nodos.length * paso;
   }
 
@@ -1406,10 +1416,13 @@
     // y luego cada día.
     var PASO = 150, DB = 60;
     aparecerEscalonado(el.screens.home.querySelectorAll('.pagetitle'), 0 * DB, PASO);
-    aparecerEscalonado(el.screens.home.querySelectorAll('.lstack > *'), 1 * DB, PASO);
-    aparecerEscalonado(el.screens.home.querySelectorAll('.reviews > *'), 2 * DB, PASO);
+    // La primera de la pila (la que asoma del todo arriba) y la primera
+    // tarjeta de repaso llegan más despacio que el resto de su grupo.
+    aparecerPrimeroLento(el.screens.home.querySelectorAll('.lstack > *'), 1 * DB, PASO, 480);
+    aparecerPrimeroLento(el.screens.home.querySelectorAll('.reviews > *'), 2 * DB, PASO, 480);
     var tr = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), 3 * DB, PASO);
-    aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), tr, PASO);
+    // Los días, en cambio, más rápidos entre sí que el resto de bloques.
+    aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), tr, 50);
   }
 
   // ─────────── Pantalla: lecciones ───────────
