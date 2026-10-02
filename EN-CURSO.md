@@ -31,7 +31,11 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- (vacío — nadie trabajando ahora mismo)
+- **Ric** · 02/10 19:00 — (1) traigo contenido de `main` (la ficha de cierre decía
+  «estas diez unidades»); (2) **toco `js/app.js`**: en `filaTema()` el
+  porcentaje solo se pinta mientras el tema está «en curso» y desaparece
+  al superarlo, así que Ric no puede saber cuál repetir. Que se vea
+  también en «Completado».
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
