@@ -86,6 +86,9 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + 32px + var(--safe-b)); }
 .screen--quiz{ padding-bottom: calc(180px + var(--safe-b)); }
 
 .stack{ display: flex; flex-direction: column; gap: 24px; }
+/* El CTA de "siguiente ficha" pegado al final de la lectura se notaba
+   corto de aire — algo más de margen encima del que ya da el stack. */
+.stack > .ficha + .btn{ margin-top: 16px; }
 
 /* ── Cabecera ── */
 .hdr{
@@ -122,7 +125,11 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + 32px + var(--safe-b)); }
   background: var(--ink); opacity: .2;
 }
 .steps__seg.is-on::before{ background: var(--c); opacity: .4; }
+.steps__seg.is-ok::before{ background: var(--right); opacity: .4; }
+.steps__seg.is-mal::before{ background: var(--wrong); opacity: .4; }
 .steps__seg > span{ position: absolute; left: 0; top: 0; bottom: 0; border-radius: inherit; background: var(--c); }
+.steps__seg.is-ok > span{ background: var(--right); }
+.steps__seg.is-mal > span{ background: var(--wrong); }
 .steps__lbl{
   font-family: var(--f-d); font-weight: 800; font-size: 18px; line-height: 1;
   letter-spacing: -0.02em; white-space: nowrap; font-variant-numeric: tabular-nums;
@@ -214,8 +221,8 @@ body.con-tabbar .tabbar{ display: block; }
 /* drop-shadow, no box-shadow: btn--ink/--main/--outline ya usan box-shadow
    inset para su anillo de 1px, y un box-shadow nuevo lo sustituiría en vez
    de sumarse. drop-shadow es una propiedad aparte, convive sin pisarlo. */
-.btn:hover{ transform: translateY(-2px); filter: drop-shadow(0 6px 14px rgba(20,19,20,.16)); }
-.btn:active{ transform: scale(0.98); filter: none; }
+.btn:hover{ transform: translateY(-2px); }
+.btn:active{ transform: scale(0.98); }
 .btn--lg{ font-size: 18px; min-height: 52px; }
 .btn--block{ width: 100%; }
 .btn--ink{ background: var(--ink); color: var(--white); box-shadow: inset 0 0 0 1px var(--ink); }
@@ -291,8 +298,8 @@ body.silencioso .pair__play{ display: none; }
   color: var(--ink); text-align: left; cursor: pointer;
   transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s ease;
 }
-.lcard:hover{ transform: translateY(-3px); box-shadow: 0 10px 20px color-mix(in srgb, var(--c, var(--main)) 45%, transparent); }
-.lcard:active{ transform: scale(0.98); box-shadow: none; }
+.lcard:hover{ transform: translateY(-3px); }
+.lcard:active{ transform: scale(0.98); }
 .lcard__top{ display: flex; flex-direction: column; gap: 20px; align-self: stretch; }
 .lcard__row{ display: flex; gap: 16px; align-items: flex-start; }
 .lcard__title{
@@ -313,8 +320,8 @@ body.silencioso .pair__play{ display: none; }
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s ease;
 }
-.peek:hover{ transform: translateY(-3px); box-shadow: 0 10px 20px color-mix(in srgb, var(--c, var(--main)) 45%, transparent); }
-.peek:active{ transform: scale(0.99); box-shadow: none; }
+.peek:hover{ transform: translateY(-3px); }
+.peek:active{ transform: scale(0.99); }
 
 .reviews{ display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
 
@@ -326,8 +333,8 @@ body.silencioso .pair__play{ display: none; }
   text-align: left; cursor: pointer;
   transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s ease;
 }
-button.scard:hover{ transform: translateY(-3px); box-shadow: 0 10px 20px color-mix(in srgb, var(--sc, var(--main)) 45%, transparent); }
-button.scard:active{ transform: scale(0.98); box-shadow: none; }
+button.scard:hover{ transform: translateY(-3px); }
+button.scard:active{ transform: scale(0.98); }
 div.scard{ cursor: default; }
 .scard__t{ font-family: var(--f-d); font-weight: 800; font-size: 22px; line-height: 1; white-space: pre-line; }
 .scard__row{ display: flex; justify-content: space-between; align-items: center; gap: 8px; }
@@ -356,8 +363,8 @@ div.scard{ cursor: default; }
   background: var(--bg); color: var(--ink); text-align: left; cursor: pointer;
   transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s ease;
 }
-.lrow:hover{ transform: translateY(-3px); box-shadow: 0 10px 20px color-mix(in srgb, var(--c, var(--main)) 45%, transparent); }
-.lrow:active{ transform: scale(0.98); box-shadow: none; }
+.lrow:hover{ transform: translateY(-3px); }
+.lrow:active{ transform: scale(0.98); }
 .lrow__n{ width: 34px; flex-shrink: 0; font-family: var(--f-d); font-weight: 800; font-size: 30px; line-height: 1; letter-spacing: -0.02em; }
 .lrow__txt{ display: flex; flex-direction: column; gap: 4px; flex: 1 1 0; min-width: 0; }
 .lrow__t{ font-family: var(--f-d); font-weight: 800; font-size: 18px; line-height: 1; letter-spacing: 0.01em; }
@@ -455,6 +462,11 @@ div.scard{ cursor: default; }
 }
 .ficha__body b{ font-weight: 700; }
 .ficha__body u{ text-decoration: none; font-weight: 700; color: var(--c-strong); }
+.ficha__lista{
+  display: flex; flex-direction: column; gap: 4px;
+  padding-left: 20px; border-left: 2px solid var(--c, var(--grey30));
+}
+.ficha__lista p{ margin: 0; }
 .vlist{ display: flex; flex-direction: column; gap: 24px; }
 .vlist--pad{ padding: 0 32px; }
 
@@ -536,8 +548,13 @@ div.scard{ cursor: default; }
 .opt.is-ok .opt__key, .opt.is-mal .opt__key{ background: rgba(255,255,255,0.5); }
 
 /* Parejas */
-.pairs{ display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
+.pairs{ position: relative; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
 .paircol{ display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+/* El hilo que marca una pareja ya resuelta — verde, en la variante
+   transparent (igual que en Figma: no es un trazo sólido, deja ver lo
+   de detrás). */
+.pairs__hilos{ position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.pairs__hilo{ fill: none; stroke: var(--right); stroke-width: 2; stroke-linecap: round; opacity: .5; }
 .pair{
   display: flex; align-items: center; gap: 12px; width: 100%; min-height: 60px;
   padding: 14px 16px 14px 20px; border: 0; border-radius: var(--r-card);
@@ -631,7 +648,7 @@ div.scard{ cursor: default; }
 }
 .sheet__in{
   max-width: var(--col); margin: 0 auto; padding: 24px 32px 32px;
-  display: flex; flex-direction: column; gap: 16px;
+  display: flex; flex-direction: column; gap: 24px;
 }
 .sheet.is-ok  { --fbc: rgb(62,214,123);  background: linear-gradient(rgba(62,214,123,.12), rgba(62,214,123,.12)), var(--white); box-shadow: 0 -4px 12px rgba(20,19,20,.1); }
 .sheet.is-leve{ --fbc: rgb(250,171,67);  background: linear-gradient(rgba(250,171,67,.12), rgba(250,171,67,.12)), var(--white); box-shadow: 0 -4px 12px rgba(20,19,20,.1); }
@@ -671,8 +688,8 @@ div.scard{ cursor: default; }
   white-space: nowrap; cursor: pointer;
   transition: filter .15s ease, background-color .15s ease, transform .1s ease;
 }
-.checkbtn:hover{ transform: translateY(-2px); filter: drop-shadow(0 6px 14px rgba(20,19,20,.16)); }
-.checkbtn:active{ transform: scale(0.98); filter: none; }
+.checkbtn:hover{ transform: translateY(-2px); }
+.checkbtn:active{ transform: scale(0.98); }
 .checkbtn:disabled{ background: var(--grey50); cursor: not-allowed; filter: none; transform: none; }
 .sheet.is-ok .checkbtn  { background: var(--right);  color: var(--ink); }
 .sheet.is-leve .checkbtn{ background: var(--almost); color: var(--ink); }

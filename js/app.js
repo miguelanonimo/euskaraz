@@ -110,6 +110,7 @@
     aciertos: 0,
     fallos: 0,
     falladas: [],       // palabras erradas en la sesión de vocabulario
+    resultados: null,   // acierto/fallo por índice, para los pasos de arriba — solo en unidad/repaso
     resuelto: false,    // el ejercicio actual ya se ha comprobado
     sel: null           // selección temporal del ejercicio en curso
   };
@@ -293,13 +294,24 @@
       .replace(/&lt;u&gt;/g, '<u>').replace(/&lt;\/u&gt;/g, '</u>');
   }
 
+  /* Un bloque entre \n\n con varios renglones cortos (las parejas
+     «kaixo — hola», las fórmulas «hama + bi → hamabi», los territorios)
+     es una lista, no un párrafo: sangrada y con una raya a la izquierda,
+     como en el diseño — un <br> seguido no se distinguía de prosa normal
+     partida por el ancho de línea. */
   function richText(s) {
     return esc(s)
       .replace(/&lt;b&gt;/g, '<b>').replace(/&lt;\/b&gt;/g, '</b>')
       .replace(/&lt;i&gt;/g, '<i>').replace(/&lt;\/i&gt;/g, '</i>')
       .replace(/&lt;u&gt;/g, '<u>').replace(/&lt;\/u&gt;/g, '</u>')
-      .split('\n\n').map(function (p) {
-        return '<p>' + p.replace(/\n/g, '<br>') + '</p>';
+      .split('\n\n').map(function (bloque) {
+        var renglones = bloque.split('\n');
+        if (renglones.length > 1) {
+          return '<div class="ficha__lista">' +
+            renglones.map(function (r) { return '<p>' + r + '</p>'; }).join('') +
+          '</div>';
+        }
+        return '<p>' + bloque + '</p>';
       }).join('');
   }
 
@@ -1129,7 +1141,7 @@
     } else if (tipo === 'atras') {
       html = volver + (o.derecha || '');
     } else if (tipo === 'pasos') {
-      html = volver + '<div class="steps">' + segmentos(o.total, o.hechos) + '</div>' +
+      html = volver + '<div class="steps">' + segmentos(o.total, o.hechos, o.resultados) + '</div>' +
              '<span class="steps__lbl">' + esc(o.etiqueta || '') + '</span>';
     }
     h.className = 'hdr' + (tipo === 'home' ? ' hdr--home' : '') + (o.raiz ? ' hdr--raiz' : '');
@@ -1139,7 +1151,11 @@
   /* Un segmento por paso. `hechos` admite decimales: el paso en curso sale
      a medias, como en el diseño. Con muchos pasos los segmentos se
      quedarían en rayitas, así que por encima de 20 es una barra seguida. */
-  function segmentos(total, hechos) {
+  /* `resultados` es un acierto/fallo por índice (estado.resultados, solo
+     en unidad/repaso — en vocab la cola se reordena y el índice no
+     identifica una pregunta fija). Un paso ya respondido se queda en
+     verde o rojo según cómo fue, en vez de en el color de la lección. */
+  function segmentos(total, hechos, resultados) {
     total = Math.max(1, total || 1);
     if (total > 20) {
       var pct = Math.max(0, Math.min(100, hechos / total * 100));
@@ -1148,7 +1164,9 @@
     var out = '';
     for (var i = 0; i < total; i++) {
       var f = Math.max(0, Math.min(1, hechos - i));
-      out += '<div class="steps__seg' + (f > 0 ? ' is-on' : '') + '"><span style="width:' + (f * 100) + '%"></span></div>';
+      var r = resultados && resultados[i];
+      var clase = 'steps__seg' + (f > 0 ? ' is-on' : '') + (r === true ? ' is-ok' : r === false ? ' is-mal' : '');
+      out += '<div class="' + clase + '"><span style="width:' + (f * 100) + '%"></span></div>';
     }
     return out;
   }
@@ -1283,14 +1301,6 @@
     return n;
   }
 
-  /* El tono de texto de una familia sobre su fondo suave. En las familias
-     claras —naranja, amarillo, pistacho, verde, turquesa— el tono normal no
-     se lee sobre el suave, así que va el fuerte. */
-  function colorTexto(u) {
-    var n = Math.min((u && u.numero ? u.numero : 1) - 1, FAMILIAS.length - 1), f = familia(u);
-    return [1, 2, 3, 4, 5].indexOf(n) !== -1 ? f.strong : f.c;
-  }
-
   function pantallaHome() {
     /* Última red: si por donde sea llega un progreso con más atraso del
        que cabe en un día, se reparte antes de contar. Así la cifra que
@@ -1334,7 +1344,7 @@
        que queda para hoy y el anillo lo que ya llevas hecho hoy de ese
        repaso: sin empezar, la tarjeta sale apagada; a medias, el anillo a
        medias; terminado, el anillo lleno con su check. */
-    var ft = familia(turno), ink = colorTexto(turno);
+    var ft = familia(turno);
     function repaso(id, titulo, fondo, claveDe, minimo) {
       var valor = '–', hechos = 0, quedan = 0, abierto = fondo.length >= minimo;
       if (abierto) {
@@ -1345,16 +1355,13 @@
       }
       var total = hechos + quedan;
       var terminado = abierto && total > 0 && quedan === 0;
-      var apagada = !abierto || hechos === 0;
-      /* Apagada no es opacidad (eso también lava el texto): es el tono
-         normal de la familia en vez del fuerte, sobre el mismo fondo
-         suave — se ve lavada pero el texto sigue al 100%. */
-      var tinta = apagada ? ft.c : ink;
-      return '<button class="scard' + (apagada ? ' scard--off' : '') + '" type="button" id="' + id + '"' +
-        ' style="--sc:' + tinta + ';--sc-soft:' + ft.soft + '">' +
+      // Un solo tono para las dos tarjetas, el normal de la familia — sin
+      // variante fuerte, que las dejaba a cada una de un color distinto.
+      return '<button class="scard" type="button" id="' + id + '"' +
+        ' style="--sc:' + ft.c + ';--sc-soft:' + ft.soft + '">' +
         '<span class="scard__t">' + titulo + '</span>' +
         '<span class="scard__row"><span class="scard__v">' + valor + '</span>' +
-          anillo(total ? hechos / total * 100 : 0, { tam: 32, color: tinta, hecho: terminado }) + '</span>' +
+          anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ft.c, hecho: terminado }) + '</span>' +
       '</button>';
     }
 
@@ -1972,6 +1979,7 @@
     estado.aciertos = 0;
     estado.fallos = 0;
     estado.falladas = [];
+    estado.resultados = [];
     mostrar('quiz');
     pintarEjercicio();
   }
@@ -2890,6 +2898,7 @@
     estado.aciertos = 0;
     estado.fallos = 0;
     estado.falladas = [];
+    estado.resultados = [];
     mostrar('quiz');
     pintarEjercicio();
   }
@@ -2912,7 +2921,7 @@
     var total = estado.ejercicios.length || 1;
     var i = Math.min(estado.indice, total - 1);
     cabecera('pasos', { total: total, hechos: estado.indice + (estado.resuelto ? 1 : 0.5),
-                        etiqueta: (i + 1) + '/' + total });
+                        etiqueta: (i + 1) + '/' + total, resultados: estado.resultados });
   }
 
   function pintarEjercicio() {
@@ -3067,6 +3076,7 @@
     el.quizContent.innerHTML =
       cabeceraEj(ej, 'Toca las parejas') +
       '<div class="pairs">' +
+        '<svg class="pairs__hilos" id="pairsHilos" aria-hidden="true"></svg>' +
         '<div class="paircol" id="colEu">' + eus.map(function (o) {
           return '<button class="pair pair--eu" type="button" aria-pressed="false" data-i="' + o.i + '">' +
             '<span class="pair__txt">' + esc(o.txt) + '</span>' +
@@ -3081,6 +3091,23 @@
 
     var selEu = null, selEs = null, resueltas = 0, errores = 0;
     var total = ej.pares.length;
+    var hilos = $('pairsHilos'), pairs = hilos.closest('.pairs');
+
+    /* Una curva suave del borde derecho de la palabra en euskera al
+       borde izquierdo de su traducción, en las coordenadas del propio
+       contenedor (no de la ventana, que no se mueve con el scroll). */
+    function dibujarHilo(a, b) {
+      var base = pairs.getBoundingClientRect();
+      var ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect();
+      var x1 = ra.right - base.left, y1 = ra.top + ra.height / 2 - base.top;
+      var x2 = rb.left - base.left, y2 = rb.top + rb.height / 2 - base.top;
+      var mx = (x1 + x2) / 2;
+      var d = 'M' + x1 + ',' + y1 + ' C' + mx + ',' + y1 + ' ' + mx + ',' + y2 + ' ' + x2 + ',' + y2;
+      var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('class', 'pairs__hilo');
+      path.setAttribute('d', d);
+      hilos.appendChild(path);
+    }
 
     function limpiarSel() {
       if (selEu) selEu.setAttribute('aria-pressed', 'false');
@@ -3094,6 +3121,7 @@
       if (a.dataset.i === b.dataset.i) {
         a.classList.add('is-ok'); b.classList.add('is-ok');
         a.setAttribute('aria-pressed', 'false'); b.setAttribute('aria-pressed', 'false');
+        dibujarHilo(a, b);
         selEu = null; selEs = null;
         resueltas++;
         if (resueltas === total) {
@@ -3598,6 +3626,9 @@
   function registrar(ok) {
     apuntarActividad(ok);
     if (ok) { estado.aciertos++; } else { estado.fallos++; vibrar(45); }
+    // Solo en unidad/repaso: en vocab la cola se reordena y el índice no
+    // identifica siempre la misma pregunta.
+    if (estado.resultados) estado.resultados[estado.indice] = ok;
     actualizarBarra();
   }
 
@@ -3843,7 +3874,9 @@
        fallos, sino cuántas salieron limpias, cuántas necesitaron vuelta
        y cuánto trabajo costó en total. */
     var verde = ['rgb(11,183,80)', 'rgb(226,248,234)'], rojo = ['rgb(229,48,52)', 'rgb(253,224,225)'],
-        gris = ['rgb(20,19,20)', 'rgb(232,231,232)'];
+        naranja = ['rgb(221,104,0)', 'rgb(254,238,217)'], gris = ['rgb(20,19,20)', 'rgb(232,231,232)'];
+    // La nota es un semáforo: verde al 100%, naranja a partir de 75%, rojo por debajo.
+    var tonoNota = ratio >= 1 ? verde : ratio >= 0.75 ? naranja : rojo;
     function casilla(n, etiqueta, tono) {
       return '<div class="scard" style="--sc:' + tono[0] + ';--sc-soft:' + tono[1] + '">' +
         '<span class="scard__t">' + esc(etiqueta) + '</span><span class="scard__v">' + n + '</span></div>';
@@ -3854,13 +3887,13 @@
         casilla(estado.respuestas, 'Respuestas', gris)
       : casilla(estado.aciertos, 'Aciertos', verde) +
         casilla(estado.fallos, 'Fallos', rojo) +
-        casilla(Math.round(ratio * 100) + '%', 'Nota', gris);
+        casilla(Math.round(ratio * 100) + '%', 'Nota', tonoNota);
 
     if (estado.modo !== 'unidad') ponerFamilia(null);
     cabecera('atras');
     el.screens.result.innerHTML =
       '<div class="stack">' +
-        '<h1 class="pagetitle"' + (tituloBien ? ' style="color:var(--c-strong)"' : '') + '>' + esc(titulo) + '</h1>' +
+        '<h1 class="pagetitle"' + (tituloBien ? ' style="color:var(--c)"' : '') + '>' + esc(titulo) + '</h1>' +
         '<p class="lead">' + esc(sub) + '</p>' +
         '<div class="res__tiles">' + marcador + '</div>' +
         repaso +
