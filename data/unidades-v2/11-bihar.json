@@ -1247,15 +1247,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Más difícil» se dice…",
+          "pregunta": "«Más bonito» se dice…",
           "opciones": [
-            "zailagoa",
-            "zailena",
-            "zaila",
-            "zailbaino"
+            "politagoa",
+            "politena",
+            "polita",
+            "politbaino"
           ],
           "correcta": 0,
-          "explicacion": "zail + -ago + -a."
+          "explicacion": "polit + -ago + -a. El adjetivo entra sin el -a de «polita»."
         }
       ],
       "subnivel": "11.3"
