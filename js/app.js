@@ -1106,6 +1106,24 @@
     );
   }
 
+  /* Igual que entrar(), pero para un grupo de nodos que deben aparecer
+     uno detrás de otro (las cards de la pila, los días de la racha...)
+     en vez de todos a la vez. `fill:'backwards'` es lo que evita el
+     parpadeo: el nodo se queda en el fotograma de salida (opacity 0)
+     durante su espera, no se ve un instante antes de que le toque.
+     Devuelve el momento en que termina el último, para encadenar el
+     siguiente grupo detrás sin que se pisen. */
+  function aparecerEscalonado(nodos, desde, paso, distancia) {
+    if (REDUCIR_MOVIMIENTO.matches || !nodos || !nodos.length) return desde;
+    Array.prototype.forEach.call(nodos, function (n, i) {
+      n.animate(
+        [{ opacity: 0, transform: 'translateY(' + (distancia || 10) + 'px)' }, { opacity: 1, transform: 'none' }],
+        { duration: 280, delay: desde + i * paso, easing: 'ease', fill: 'backwards' }
+      );
+    });
+    return desde + (nodos.length - 1) * paso + 280;
+  }
+
   function mostrar(nombre) {
     estado.pantalla = nombre;
     for (var k in el.screens) {
@@ -1379,6 +1397,13 @@
       '</div>';
 
     mostrar('home');
+
+    // Aparición escalonada: la pila de cards, luego los dos repasos,
+    // luego "Racha" y por último cada día de la semana, uno a uno.
+    var t = aparecerEscalonado(el.screens.home.querySelectorAll('.lstack > *'), 0, 70);
+    t = aparecerEscalonado(el.screens.home.querySelectorAll('.reviews > *'), t + 60, 80);
+    t = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), t + 80, 0);
+    aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), t + 40, 35);
   }
 
   // ─────────── Pantalla: lecciones ───────────
