@@ -31,10 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- **Ric** · 02/10 21:15 — **toco `js/app.js` y `css/styles.css`**: en el diccionario,
-  la etiqueta de unidad de cada palabra pasa a ser un enlace que lleva a la
-  ficha donde se explica. Zonas: `diccionario()`, `pantallaDiccionario()`,
-  `pantallaGramatica()` y la clase `.dentry__u`.
+- (vacío — nadie trabajando ahora mismo)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
