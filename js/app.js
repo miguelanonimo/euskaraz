@@ -1098,10 +1098,16 @@
      Respeta prefers-reduced-motion (igual que el resto de animaciones
      con Web Animations API de esta app). */
   var REDUCIR_MOVIMIENTO = window.matchMedia('(prefers-reduced-motion: reduce)');
+  // El fundido va siempre a este ritmo, corto, aunque el desplazamiento
+  // de cada animación dure más — se piden como dos velocidades sueltas,
+  // no una sola. Por eso van en dos animate() aparte: opacity y
+  // transform no tienen por qué compartir duración.
+  var FADE_MS = 140;
   function entrar(nodo, distancia) {
     if (!nodo || REDUCIR_MOVIMIENTO.matches) return;
+    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
     nodo.animate(
-      [{ opacity: 0, transform: 'translateY(' + (distancia || 10) + 'px)' }, { opacity: 1, transform: 'none' }],
+      [{ transform: 'translateY(' + (distancia || 10) + 'px)' }, { transform: 'none' }],
       { duration: 260, easing: 'cubic-bezier(.2,.8,.2,1)' }
     );
   }
@@ -1109,16 +1115,18 @@
   /* Igual que entrar(), pero para un grupo de nodos que deben aparecer
      uno detrás de otro (las cards de la pila, los días de la racha...)
      en vez de todos a la vez. `fill:'backwards'` es lo que evita el
-     parpadeo: el nodo se queda en el fotograma de salida (opacity 0)
-     durante su espera, no se ve un instante antes de que le toque.
-     Devuelve el momento en que termina el último, para encadenar el
-     siguiente grupo detrás sin que se pisen. */
+     parpadeo: el nodo se queda en el fotograma de salida (opacity 0 /
+     desplazado) durante su espera, no se ve un instante antes de que le
+     toque. Devuelve el momento en que termina el último, para encadenar
+     el siguiente grupo detrás sin que se pisen. */
   function aparecerEscalonado(nodos, desde, paso, distancia, duracion) {
     if (REDUCIR_MOVIMIENTO.matches || !nodos || !nodos.length) return desde;
     Array.prototype.forEach.call(nodos, function (n, i) {
+      var retraso = desde + i * paso;
+      n.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, delay: retraso, easing: 'ease', fill: 'backwards' });
       n.animate(
-        [{ opacity: 0, transform: 'translateY(' + (distancia || 14) + 'px)' }, { opacity: 1, transform: 'none' }],
-        { duration: duracion || 320, delay: desde + i * paso, easing: 'ease', fill: 'backwards' }
+        [{ transform: 'translateY(' + (distancia || 14) + 'px)' }, { transform: 'none' }],
+        { duration: duracion || 320, delay: retraso, easing: 'ease', fill: 'backwards' }
       );
     });
     return desde + nodos.length * paso;
@@ -3756,8 +3764,9 @@
     el.sheet.className = 'sheet ' + (leve ? 'is-leve' : (ok ? 'is-ok' : 'is-mal'));
     el.feedback.hidden = false;
     if (!REDUCIR_MOVIMIENTO.matches) {
+      el.feedback.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
       el.feedback.animate(
-        [{ opacity: 0, transform: 'translateY(16px)' }, { opacity: 1, transform: 'none' }],
+        [{ transform: 'translateY(16px)' }, { transform: 'none' }],
         { duration: 220, easing: 'cubic-bezier(.2,.8,.2,1)' }
       );
     }
