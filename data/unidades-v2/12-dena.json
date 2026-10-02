@@ -746,7 +746,7 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "¿Vienes conmigo?",
+          "es": "¿Vienes tú conmigo?",
           "eu": "Zu nirekin zatoz?",
           "palabras": [
             "zu",
