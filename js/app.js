@@ -1127,10 +1127,10 @@
   /* aparecerEscalonado(), pero con el primero más lento que el resto —
      la pila de lecciones y los repasos quieren que la de arriba de
      todo se note más al llegar. */
-  function aparecerPrimeroLento(nodos, desde, paso, duracionPrimero) {
+  function aparecerPrimeroLento(nodos, desde, paso, duracionPrimero, duracionResto) {
     if (REDUCIR_MOVIMIENTO.matches || !nodos || !nodos.length) return desde;
     aparecerEscalonado([nodos[0]], desde, paso, null, duracionPrimero);
-    aparecerEscalonado(Array.prototype.slice.call(nodos, 1), desde + paso, paso);
+    aparecerEscalonado(Array.prototype.slice.call(nodos, 1), desde + paso, paso, null, duracionResto);
     return desde + nodos.length * paso;
   }
 
@@ -1419,7 +1419,7 @@
     // La primera de la pila (la que asoma del todo arriba) y la primera
     // tarjeta de repaso llegan más despacio que el resto de su grupo.
     aparecerPrimeroLento(el.screens.home.querySelectorAll('.lstack > *'), 1 * DB, PASO, 480);
-    aparecerPrimeroLento(el.screens.home.querySelectorAll('.reviews > *'), 2 * DB, PASO, 480);
+    aparecerPrimeroLento(el.screens.home.querySelectorAll('.reviews > *'), 2 * DB, PASO + 70, 480, 380);
     var tr = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), 3 * DB, PASO);
     // Los días, en cambio, más rápidos entre sí que el resto de bloques.
     aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), tr, 50);
@@ -1455,6 +1455,12 @@
         '<div class="llist">' + filas + '</div>' +
       '</div>';
     mostrar('lessons');
+
+    // Misma idea que en Hoy: el título y la lista arrancan casi a la vez
+    // (un pequeño desfase), y dentro de la lista cada lección aparece
+    // detrás de la anterior — más rápido que en Hoy porque aquí son 12.
+    aparecerEscalonado(el.screens.lessons.querySelectorAll('.pagetitle'), 0, 150);
+    aparecerEscalonado(el.screens.lessons.querySelectorAll('.llist > *'), 60, 90);
   }
 
   // ─────────── Pantalla: progreso ───────────
