@@ -37,6 +37,41 @@ anotado en `EN-CURSO.md` como cualquier otro bloque.
 
 ---
 
+## 📐 Apuntado (02/10/2026): el «100%» se sale de su tarjeta
+
+En la pantalla de resultado, con nota 100%, el número se desborda de su
+recuadro. Medido con la hoja y la tipografía reales a 375px: **se sale 25px**.
+
+La causa no es el tamaño de letra, es una línea:
+
+```css
+.res__tiles{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+```
+
+El `minmax(0,1fr)` obliga a las tres columnas a medir lo mismo y deja que el
+contenido se salga. Medidas de las cuatro salidas posibles:
+
+| | columnas | se sale |
+|---|---|---|
+| ahora (`minmax(0,1fr)`) | 104 / 104 / 104 | 25px |
+| solo `<small>` en el % | 104 / 104 / 104 | 16px |
+| solo `repeat(3, 1fr)` | 95 / 87 / 129 | 0 |
+| **`1fr` + `<small>`** | **96 / 96 / 120** | **0** |
+
+La recomendada es la última, y son dos cambios pequeños:
+
+1. `.res__tiles` → `repeat(3, 1fr)`, fuera el `minmax`.
+2. `casilla()` (en `pantallaResultado`) manda el `%` como `<small>`, que es el
+   patrón que el diseño ya usa en las tarjetas de unidad, el rosco y las
+   barras de Progreso. La de resultado es la única que lo manda como texto
+   plano a 34px.
+
+Así **los tres números se quedan a 34px** —requisito de Ric: si se baja el
+cuerpo, se baja en los tres— y la tarjeta de Nota solo crece cuando le hace
+falta. Descartado bajar el cuerpo: para que entrara había que irse a 26px.
+
+---
+
 ## 🎨 Nuevo (01/10/2026): trabajar los dos a la vez en `rediseno`
 
 Hay una rama nueva, `rediseno`, con el rediseño visual de la app (aún sin
