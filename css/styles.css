@@ -296,7 +296,7 @@ body.silencioso .pair__play{ display: none; }
   width: 100%; height: 204px; padding: 24px;
   border: 0; border-radius: var(--r-card); background: var(--c);
   color: var(--ink); text-align: left; cursor: pointer;
-  transition: transform .32s cubic-bezier(.2,.8,.2,1);
+  transition: transform .32s ease;
 }
 .lcard:hover{ transform: translateY(-3px); }
 .lcard:active{ transform: scale(0.98); }
@@ -318,7 +318,7 @@ body.silencioso .pair__play{ display: none; }
   color: var(--ink); text-align: left; cursor: pointer;
   font-family: var(--f-d); font-weight: 800; font-size: 18px; line-height: 1; letter-spacing: 0.01em;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  transition: transform .32s cubic-bezier(.2,.8,.2,1);
+  transition: transform .32s ease;
 }
 .peek:hover{ transform: translateY(-3px); }
 .peek:active{ transform: scale(0.99); }
@@ -331,7 +331,7 @@ body.silencioso .pair__play{ display: none; }
   border: 0; border-radius: var(--r-card);
   background: var(--sc-soft, var(--main-20)); color: var(--sc, var(--main));
   text-align: left; cursor: pointer;
-  transition: transform .32s cubic-bezier(.2,.8,.2,1);
+  transition: transform .32s ease;
 }
 button.scard:hover{ transform: translateY(-3px); }
 button.scard:active{ transform: scale(0.98); }
@@ -361,7 +361,7 @@ div.scard{ cursor: default; }
   display: flex; align-items: center; gap: 12px; width: 100%;
   padding: 24px 20px 24px 28px; border: 0; border-radius: var(--r-row);
   background: var(--bg); color: var(--ink); text-align: left; cursor: pointer;
-  transition: transform .32s cubic-bezier(.2,.8,.2,1);
+  transition: transform .32s ease;
 }
 .lrow:hover{ transform: translateY(-3px); }
 .lrow:active{ transform: scale(0.98); }
