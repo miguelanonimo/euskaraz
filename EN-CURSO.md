@@ -31,7 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- Miguel · 2026-10-02 · los 4 bloques de Hoy en paralelo, cada uno con su secuencia interna (js/app.js)
+- (vacío — nadie trabajando ahora mismo)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.

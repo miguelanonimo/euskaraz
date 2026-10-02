@@ -1398,15 +1398,16 @@
 
     mostrar('home');
 
-    // Aparición escalonada: la pila de cards, luego los dos repasos,
-    // luego "Racha" y por último cada día de la semana, uno a uno — un
-    // solo ritmo seguido (el mismo paso entre grupos que dentro de cada
-    // uno), para que se note una secuencia continua y no "por bloques".
+    // Los 4 bloques (título, pila, repasos, racha) arrancan los cuatro a
+    // la vez — no uno detrás de otro — pero cada uno trae su propia
+    // secuencia interna: las cards entre sí, los repasos entre sí, y
+    // dentro de la racha primero la palabra y luego cada día.
     var PASO = 150;
-    var t = aparecerEscalonado(el.screens.home.querySelectorAll('.lstack > *'), 0, PASO);
-    t = aparecerEscalonado(el.screens.home.querySelectorAll('.reviews > *'), t, PASO);
-    t = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), t, PASO);
-    aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), t, PASO);
+    entrar(el.screens.home.querySelector('.pagetitle'));
+    aparecerEscalonado(el.screens.home.querySelectorAll('.lstack > *'), 0, PASO);
+    aparecerEscalonado(el.screens.home.querySelectorAll('.reviews > *'), 0, PASO);
+    var tr = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), 0, PASO);
+    aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), tr, PASO);
   }
 
   // ─────────── Pantalla: lecciones ───────────
