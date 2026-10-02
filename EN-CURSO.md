@@ -31,7 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- Miguel · 2026-10-02 · primera tarjeta de repaso más lenta, días de la racha más rápidos, en local (js/app.js)
+- Miguel · 2026-10-02 · repasos más lento + aparición secuencial en Lecciones (js/app.js)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
