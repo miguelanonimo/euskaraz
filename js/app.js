@@ -1699,7 +1699,14 @@
     var insignia = anillo(valor, { tam: 52, color: color, etiqueta: o.numero, icono: o.icono });
     var estadoTxt = '<span class="ustatus' + (o.estado === 'done' ? ' ustatus--ok' : '') + '">' +
       '<span>' + esc(o.etiqueta) + '</span>' +
-      (o.estado === 'current' ? '<span>·</span><span>' + o.pct + '%</span>' : '') + '</span>';
+      /* El porcentaje se enseñaba solo mientras el tema estaba «en curso» y
+         desaparecía al superarlo, justo cuando sirve para algo: Ric, con la
+         unidad 12 al 93% y los cinco temas diciendo «Completado», no tenía
+         forma de saber cuál repetir. El anillo sí se queda lleno a propósito
+         —dice «aprobado», y al 71% parecería que falta algo—; el número va
+         en el texto. */
+      (o.estado === 'current' || o.estado === 'done'
+        ? '<span>·</span><span>' + o.pct + '%</span>' : '') + '</span>';
     var clase = 'srow srow--' + o.estado;
     var abre = o.estado === 'vacio' ? '<div class="' + clase + '">' : '<button class="' + clase + '" type="button" data-sub="' + esc(o.id) + '">';
     var cierra = o.estado === 'vacio' ? '</div>' : '</button>';
