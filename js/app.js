@@ -1217,7 +1217,9 @@
         break;
       case 'gram':
         // Dentro de las fichas, atrás es la ficha anterior.
-        if (estado.fichaIdx > 0) { pantallaGramatica(estado.fichaIdx - 1); break; }
+        if (estado.fichaIdx > 0) { pantallaGramatica(estado.fichaIdx - 1, estado.desdeDicc); break; }
+        // Y si llegaste mirando una palabra, atrás es el diccionario.
+        if (estado.desdeDicc) { estado.desdeDicc = false; pantallaDiccionario(); break; }
         /* falls through */
       case 'vocab':
         // Dentro de un subnivel se vuelve al subnivel, no a la unidad.
@@ -1785,6 +1787,7 @@
     if (!s) return;
 
     estado.subnivel = subId;
+    estado.desdeDicc = false;
     progSub(u.id, subId).visitado = true;
     guardarProgreso();
     ponerFamilia(u);
@@ -1841,13 +1844,13 @@
 
   /* Las fichas van de una en una, como en el diseño: la barra de arriba
      dice por cuál vas, y al final se pasa directo a practicar. */
-  function pantallaGramatica(idx) {
+  function pantallaGramatica(idx, ojeando) {
     var u = estado.unidad;
     var fichas = gramaticaVisible(delSubnivel(u.gramatica, estado.subnivel));
     if (!fichas.length) return;
     idx = (typeof idx === 'number') ? Math.max(0, Math.min(idx, fichas.length - 1)) : 0;
     estado.fichaIdx = idx;
-    desbloquearTema();
+    if (!ojeando) desbloquearTema();
     ponerFamilia(u);
     cabecera('pasos', { total: fichas.length, hechos: idx + 1, etiqueta: (idx + 1) + '/' + fichas.length });
 
@@ -2616,22 +2619,26 @@
     if (DICC) return DICC;
     var vistas = {};
     DICC = [];
-    function anadir(v, es, unidad) {
+    function anadir(v, es, u, sub) {
       var clave = normalizar(v.eu);
       if (vistas[clave]) return;
       vistas[clave] = true;
       DICC.push({
         eu: v.eu, es: es, nota: v.nota, audio: v.audio, registro: v.registro,
         categoria: v.categoria || 'otros',
-        unidad: unidad,
+        unidad: u.numero,
+        // A dónde lleva la etiqueta de unidad. Antes solo se guardaba el
+        // número, que sirve para enseñarlo pero no para ir a ningún sitio.
+        unidadId: u.id, subnivel: sub || null,
         letra: (plegar(v.eu).charAt(0) || '').toUpperCase(),
         busca: plegar(v.eu) + ' ' + plegar(es) + ' ' + plegar(v.nota || '')
       });
     }
     CURSO.unidades.forEach(function (u) {
       u.vocabulario.forEach(function (v) {
-        anadir(v, v.es, u.numero);
-        (v.variantes || []).forEach(function (variante) { anadir(variante, v.es, u.numero); });
+        anadir(v, v.es, u, v.subnivel);
+        // Una variante dialectal se explica donde su palabra madre.
+        (v.variantes || []).forEach(function (variante) { anadir(variante, v.es, u, v.subnivel); });
       });
     });
     DICC.sort(function (a, b) {
@@ -2692,7 +2699,11 @@
             '<div class="dentry__row">' +
               '<span class="dentry__w">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
               '<span class="dentry__m">' + esc(v.es) + '</span>' +
-              '<span class="dentry__u' + (vista ? '' : ' is-off') + '">u' + esc(v.unidad) + '</span>' +
+              (v.subnivel
+                ? '<button class="dentry__u' + (vista ? '' : ' is-off') + '" type="button"' +
+                  ' data-ir-u="' + esc(v.unidadId) + '" data-ir-s="' + esc(v.subnivel) + '">u' +
+                  esc(v.unidad) + '</button>'
+                : '<span class="dentry__u' + (vista ? '' : ' is-off') + '">u' + esc(v.unidad) + '</span>') +
             '</div>' +
             (v.nota ? '<span class="dentry__x">' + esc(v.nota) + '</span>' : '') +
           '</div>';
@@ -2705,6 +2716,19 @@
     var r = el.dictLetras;
     el.alfaPrev.disabled = r.scrollLeft <= 1;
     el.alfaNext.disabled = r.scrollLeft + r.clientWidth >= r.scrollWidth - 1;
+  }
+
+  /* Desde el diccionario a la ficha que explica esa palabra. Se mira,
+     no se estudia: por eso NO se llama a desbloquearTema(), que metería el
+     vocabulario de ese tema en la bolsa de repaso. Si desde ahí se entra a
+     la práctica, ya se desbloquea por su cuenta. */
+  function irAFichaDe(unidadId, subId) {
+    var u = CURSO.unidades.filter(function (x) { return x.id === unidadId; })[0];
+    if (!u) return;
+    estado.unidad = u;
+    estado.subnivel = subId;
+    estado.desdeDicc = true;
+    pantallaGramatica(0, true);
   }
 
   function pantallaDiccionario() {
@@ -4098,6 +4122,15 @@
   }, true);
 
   // Diccionario
+  /* La etiqueta de unidad de cada palabra lleva a la ficha que la explica
+     (pedido de Ric). Delegado, porque la lista se repinta en cada letra
+     que se teclea en el buscador. */
+  el.dictContent.addEventListener('click', function (e) {
+    var b = e.target.closest('button.dentry__u');
+    if (!b) return;
+    irAFichaDe(b.dataset.irU, b.dataset.irS);
+  });
+
   el.dictInput.addEventListener('input', function () {
     pintarDiccionario(this.value);
   });

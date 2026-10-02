@@ -822,6 +822,15 @@ div.scard{ cursor: default; }
 .dentry__m{ flex: 1 1 0; min-width: 0; font-family: var(--f-t); font-weight: 500; font-size: 18px; line-height: 1.15; letter-spacing: -0.01em; }
 .dentry__u{ font-family: var(--f-t); font-weight: 700; font-size: 15px; line-height: 1.15; white-space: nowrap; color: var(--main); }
 .dentry__u.is-off{ font-weight: 500; opacity: .5; }
+/* La etiqueta de unidad es un enlace a la ficha que explica la palabra. El
+   subrayado es el mismo recurso que usa `.auth__link`; el padding negativo
+   agranda la zona de toque sin mover nada de sitio (15px es poco dedo). */
+button.dentry__u{
+  background: none; border: 0; cursor: pointer;
+  padding: 6px 2px; margin: -6px -2px;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+button.dentry__u:active{ opacity: .6; }
 .dentry__x{ font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: -0.01em; color: var(--grey50); }
 
 /* ═══════════ AJUSTES ═══════════ */
