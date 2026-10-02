@@ -1398,15 +1398,17 @@
 
     mostrar('home');
 
-    // Los 4 bloques (título, pila, repasos, racha) arrancan los cuatro a
-    // la vez — no uno detrás de otro — pero cada uno trae su propia
-    // secuencia interna: las cards entre sí, los repasos entre sí, y
-    // dentro de la racha primero la palabra y luego cada día.
-    var PASO = 150;
-    entrar(el.screens.home.querySelector('.pagetitle'));
-    aparecerEscalonado(el.screens.home.querySelectorAll('.lstack > *'), 0, PASO);
-    aparecerEscalonado(el.screens.home.querySelectorAll('.reviews > *'), 0, PASO);
-    var tr = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), 0, PASO);
+    // Los 4 bloques (título, pila, repasos, racha) se solapan — no uno
+    // detrás de otro del todo — pero arrancan con un pequeño desfase
+    // entre sí (DB), así que se nota el orden sin dejar de sentirse
+    // simultáneos. Dentro de cada uno, su propia secuencia: las cards
+    // entre sí, los repasos entre sí, y en la racha primero la palabra
+    // y luego cada día.
+    var PASO = 150, DB = 60;
+    aparecerEscalonado(el.screens.home.querySelectorAll('.pagetitle'), 0 * DB, PASO);
+    aparecerEscalonado(el.screens.home.querySelectorAll('.lstack > *'), 1 * DB, PASO);
+    aparecerEscalonado(el.screens.home.querySelectorAll('.reviews > *'), 2 * DB, PASO);
+    var tr = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), 3 * DB, PASO);
     aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), tr, PASO);
   }
 
