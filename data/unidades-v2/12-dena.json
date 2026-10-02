@@ -78,7 +78,7 @@
     },
     {
       "titulo": "De las preguntas salen los indefinidos",
-      "cuerpo": "Y dos más para cerrar el grupo:\n\n<b>denak</b> — todos\n<b>bakarrik</b> — solo, únicamente\n\n<b>denak</b> es un plural, así que el verbo va en plural:\n\n<b>Denak hemen daude.</b> — Todos están aquí.\n<b>Denak nire lagunak dira.</b> — Todos son mis amigos.\n\nOjo con uno: si «todos» es quien <i>hace</i> algo —el sujeto de un verbo que\nlleva objeto— entonces se le pega la <b>-k</b> del ergativo que viste en el 4.4,\ny queda <b>denek</b>:\n\n<b>Denek euskara ikasten dute.</b> — Todos aprenden euskera.\n\n<b>bakarrik</b> se coloca <b>detrás</b> de la palabra a la que afecta, igual que\n<i>ere</i>:\n\n<b>Kafea bakarrik nahi dut.</b> — Solo quiero café.\n<b>Ura bakarrik nahi dut.</b> — Solo quiero agua.\n\nY si no hay nada delante al que agarrarse, pasa a significar «a solas»:\n\n<b>Bakarrik nago etxean.</b> — Estoy solo en casa.",
+      "cuerpo": "Y dos más para cerrar el grupo:\n\n<b>denak</b> — todos\n<b>bakarrik</b> — solo, únicamente\n\n<b>denak</b> es un plural, así que el verbo va en plural:\n\n<b>Denak hemen daude.</b> — Todos están aquí.\n<b>Denak nire lagunak dira.</b> — Todos son mis amigos.\n\nOjo con uno: cuando «todos» es quien <i>hace</i> algo —el sujeto de un verbo\nque lleva objeto— <b>denak</b> cambia a <b>denek</b>:\n\n<b>Denek euskara ikasten dute.</b> — Todos aprenden euskera.\n\nLo que manda es el verbo: <i>daude</i> (están) no lleva objeto, así que va\n<b>denak</b>; <i>ikasten dute</i> (aprenden) sí lleva uno, el euskera, así que\nva <b>denek</b>.\n\n<b>bakarrik</b> se coloca <b>detrás</b> de la palabra a la que afecta, igual que\n<i>ere</i>:\n\n<b>Kafea bakarrik nahi dut.</b> — Solo quiero café.\n<b>Ura bakarrik nahi dut.</b> — Solo quiero agua.\n\nY si no hay nada delante al que agarrarse, pasa a significar «a solas»:\n\n<b>Bakarrik nago etxean.</b> — Estoy solo en casa.",
       "ejemplos": [
         {
           "eu": "Norbait dago etxean.",
@@ -224,7 +224,7 @@
     {
       "eu": "denak",
       "es": "todos",
-      "nota": "Con un verbo que lleva objeto, el sujeto va en ergativo: «denek».",
+      "nota": "Con un verbo que lleva objeto, cambia a «denek».",
       "audio": "unidades/u12/denak.mp3",
       "categoria": "otros",
       "subnivel": "12.3"
@@ -1650,7 +1650,7 @@
             "Inor"
           ],
           "correcta": 1,
-          "explicacion": "«ikasten dute» lleva objeto (euskara), así que el sujeto se lleva la -k del ergativo: «denek»."
+          "explicacion": "«ikasten dute» lleva objeto (euskara), y con objeto «denak» cambia a «denek»."
         },
         {
           "tipo": "opcion",
