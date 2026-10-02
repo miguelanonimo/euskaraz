@@ -1117,11 +1117,11 @@
     if (REDUCIR_MOVIMIENTO.matches || !nodos || !nodos.length) return desde;
     Array.prototype.forEach.call(nodos, function (n, i) {
       n.animate(
-        [{ opacity: 0, transform: 'translateY(' + (distancia || 10) + 'px)' }, { opacity: 1, transform: 'none' }],
-        { duration: 280, delay: desde + i * paso, easing: 'ease', fill: 'backwards' }
+        [{ opacity: 0, transform: 'translateY(' + (distancia || 14) + 'px)' }, { opacity: 1, transform: 'none' }],
+        { duration: 320, delay: desde + i * paso, easing: 'ease', fill: 'backwards' }
       );
     });
-    return desde + (nodos.length - 1) * paso + 280;
+    return desde + nodos.length * paso;
   }
 
   function mostrar(nombre) {
@@ -1399,11 +1399,14 @@
     mostrar('home');
 
     // Aparición escalonada: la pila de cards, luego los dos repasos,
-    // luego "Racha" y por último cada día de la semana, uno a uno.
-    var t = aparecerEscalonado(el.screens.home.querySelectorAll('.lstack > *'), 0, 70);
-    t = aparecerEscalonado(el.screens.home.querySelectorAll('.reviews > *'), t + 60, 80);
-    t = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), t + 80, 0);
-    aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), t + 40, 35);
+    // luego "Racha" y por último cada día de la semana, uno a uno — un
+    // solo ritmo seguido (el mismo paso entre grupos que dentro de cada
+    // uno), para que se note una secuencia continua y no "por bloques".
+    var PASO = 150;
+    var t = aparecerEscalonado(el.screens.home.querySelectorAll('.lstack > *'), 0, PASO);
+    t = aparecerEscalonado(el.screens.home.querySelectorAll('.reviews > *'), t, PASO);
+    t = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), t, PASO);
+    aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), t, PASO);
   }
 
   // ─────────── Pantalla: lecciones ───────────

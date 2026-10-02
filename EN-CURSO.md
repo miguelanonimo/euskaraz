@@ -31,7 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- Miguel · 2026-10-02 · ritmo de la aparición escalonada en Hoy, secuencia continua (js/app.js)
+- (vacío — nadie trabajando ahora mismo)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
