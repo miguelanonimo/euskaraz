@@ -1416,19 +1416,19 @@
 
     mostrar('home');
 
-    // Los 4 bloques (título, pila, repasos, racha) se solapan — no uno
-    // detrás de otro del todo — pero arrancan con un pequeño desfase
-    // entre sí (DB), así que se nota el orden sin dejar de sentirse
-    // simultáneos. Dentro de cada uno, su propia secuencia: las cards
-    // entre sí, los repasos entre sí, y en la racha primero la palabra
-    // y luego cada día.
+    // 3 bloques (título, lecciones+repaso, racha): se solapan, arrancan
+    // casi a la vez con un pequeño desfase entre sí (DB) — no uno detrás
+    // de otro del todo, pero se nota el orden. "Lecciones+repaso" es UN
+    // solo bloque: la pila y los dos repasos son una sola secuencia
+    // continua (la cola de la pila sigue directa en los repasos, no
+    // vuelve a empezar), con la primera card de cada mitad más lenta
+    // que el resto de su mitad. La racha, aparte, con su propio orden
+    // interno: primero la palabra y luego cada día, más rápido.
     var PASO = 150, DB = 60;
     aparecerEscalonado(el.screens.home.querySelectorAll('.pagetitle'), 0 * DB, PASO);
-    // La primera de la pila (la que asoma del todo arriba) y la primera
-    // tarjeta de repaso llegan más despacio que el resto de su grupo.
-    aparecerPrimeroLento(el.screens.home.querySelectorAll('.lstack > *'), 1 * DB, PASO, 480);
-    aparecerPrimeroLento(el.screens.home.querySelectorAll('.reviews > *'), 2 * DB, PASO + 70, 480, 380);
-    var tr = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), 3 * DB, PASO);
+    var t = aparecerPrimeroLento(el.screens.home.querySelectorAll('.lstack > *'), 1 * DB, PASO, 480);
+    aparecerPrimeroLento(el.screens.home.querySelectorAll('.reviews > *'), t, PASO + 70, 480, 380);
+    var tr = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), 2 * DB, PASO);
     // Los días, en cambio, más rápidos entre sí que el resto de bloques.
     aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), tr, 50);
   }
