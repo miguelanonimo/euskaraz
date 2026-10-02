@@ -1426,8 +1426,9 @@
     // interno: primero la palabra y luego cada día, más rápido.
     var PASO = 150, DB = 60;
     aparecerEscalonado(el.screens.home.querySelectorAll('.pagetitle'), 0 * DB, PASO);
-    var t = aparecerPrimeroLento(el.screens.home.querySelectorAll('.lstack > *'), 1 * DB, PASO, 480);
-    aparecerPrimeroLento(el.screens.home.querySelectorAll('.reviews > *'), t, PASO + 70, 480, 380);
+    var PASO2 = 110;
+    var t = aparecerPrimeroLento(el.screens.home.querySelectorAll('.lstack > *'), 1 * DB, PASO2, 400);
+    aparecerPrimeroLento(el.screens.home.querySelectorAll('.reviews > *'), t, PASO2, 400, 320);
     var tr = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), 2 * DB, PASO);
     // Los días, en cambio, más rápidos entre sí que el resto de bloques.
     aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), tr, 50);
