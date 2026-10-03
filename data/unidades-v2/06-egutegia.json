@@ -40,7 +40,7 @@
   "gramatica": [
     {
       "titulo": "La hora va en plural",
-      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>Ordu bata da.</b> — Es la una.\n<b>Ordu biak dira.</b> — Son las dos.\n<b>Hirurak dira.</b> — Son las tres.\n<b>Laurak dira.</b> — Son las cuatro.\n<b>Bostak dira.</b> — Son las cinco.\n<b>Seiak dira.</b> — Son las seis.\n<b>Zazpiak dira.</b> — Son las siete.\n<b>Zortziak dira.</b> — Son las ocho.\n<b>Bederatziak dira.</b> — Son las nueve.\n<b>Hamarrak dira.</b> — Son las diez.\n<b>Hamaikak dira.</b> — Son las once.\n<b>Hamabiak dira.</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la cuarta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.\n\nY las palabras para decir en qué parte del día:\n\n<b>ordua</b> — la hora\n<b>goiza</b> — la mañana\n<b>arratsaldea</b> — la tarde\n<b>iluntzea</b> — el anochecer\n<b>gaua</b> — la noche\n\nDos ya las traías de los saludos: <i>egun on</i> lleva el día, y <i>arratsalde on</i> lleva esta misma <i>arratsalde</i>. <b>Iluntzea</b> es la que no tiene equivalente cómodo en castellano: ese rato entre que se va la luz y es de noche.",
+      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>Ordu bata da.</b> — Es la una.\n<b>Ordu biak dira.</b> — Son las dos.\n<b>Hirurak dira.</b> — Son las tres.\n<b>Laurak dira.</b> — Son las cuatro.\n<b>Bostak dira.</b> — Son las cinco.\n<b>Seiak dira.</b> — Son las seis.\n<b>Zazpiak dira.</b> — Son las siete.\n<b>Zortziak dira.</b> — Son las ocho.\n<b>Bederatziak dira.</b> — Son las nueve.\n<b>Hamarrak dira.</b> — Son las diez.\n<b>Hamaikak dira.</b> — Son las once.\n<b>Hamabiak dira.</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la cuarta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.\n\nY las palabras para decir en qué parte del día:\n\n<b>ordua</b> — la hora\n<b>eguna</b> — el día\n<b>goiza</b> — la mañana\n<b>arratsaldea</b> — la tarde\n<b>iluntzea</b> — el anochecer\n<b>gaua</b> — la noche\n\nDos ya las traías de los saludos: <i>egun on</i> lleva <i>egun</i> («día») y <i>arratsalde on</i> lleva <i>arratsalde</i> («tarde»), las dos sin la <b>-a</b> final, que es el artículo. Ojo con <i>egun on</i>: se dice por la mañana, pero «mañana» es <b>goiza</b>; <i>egun on</i> es literalmente «buen día». <b>Iluntzea</b> es la que no tiene equivalente cómodo en castellano: ese rato entre que se va la luz y es de noche.",
       "ejemplos": [
         {
           "eu": "Zer ordu da?",
@@ -403,7 +403,7 @@
       "nota": null,
       "audio": "unidades/u7/eguna.mp3",
       "categoria": "sustantivo",
-      "subnivel": "6.2"
+      "subnivel": "6.1"
     },
     {
       "eu": "astea",
