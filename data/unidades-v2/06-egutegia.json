@@ -337,7 +337,7 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Los carnavales, <b>Inauteriak</b> en batua, aquí se llaman muchas veces <b>Aratusteak</b>. Es la palabra que oirás en Bilbao y en buena parte de Bizkaia.\n\nLa fiesta grande de Bilbao es la <b>Aste Nagusia</b>, la Semana Grande: empieza el sábado siguiente al 15 de agosto y dura nueve días. El nombre no tiene misterio: <i>astea</i> ya sabes que es la semana, y <i>nagusi</i> es «mayor, principal». La semana mayor del año.\n\nY en Gernika hay una fecha cuyo nombre se dice entero con palabras que ya tienes: el <b>Urriko Azken Astelehena</b>, el último lunes de octubre, día de feria en la villa desde hace siglos.\n\n<i>urria</i> (octubre) + <i>-ko</i> (de) + <i>azken</i> (último) + <i>astelehena</i> (el lunes).\n\nFija el detalle de <i>azken</i>: lo aprendiste como <b>azkena</b>, «el último», pero cuando va delante del nombre pierde la <i>-a</i> y el artículo se lo queda la palabra de detrás — <i>azken astelehena</i>, no <i>azkena astelehena</i>.",
+      "cuerpo": "Los carnavales, <b>Inauteriak</b> en batua, se llaman muchas veces <b>Aratusteak</b>. Es la palabra que oirás en Bilbao y en buena parte de Bizkaia.\n\nLa fiesta grande de Bilbao es la <b>Aste Nagusia</b>, la Semana Grande: empieza el sábado siguiente al 15 de agosto y dura nueve días. El nombre no tiene misterio: <i>astea</i> ya sabes que es la semana, y <i>nagusi</i> es «mayor, principal». La semana mayor del año.\n\nY en Gernika hay una fecha cuyo nombre se dice entero con palabras que ya tienes: el <b>Urriko Azken Astelehena</b>, el último lunes de octubre, día de feria en la villa desde hace siglos.\n\n<i>urria</i> (octubre) + <i>-ko</i> (de) + <i>azken</i> (último) + <i>astelehena</i> (el lunes).\n\nFija el detalle de <i>azken</i>: lo aprendiste como <b>azkena</b>, «el último», pero cuando va delante del nombre pierde la <i>-a</i> y el artículo se lo queda la palabra de detrás — <i>azken astelehena</i>, no <i>azkena astelehena</i>.",
       "ejemplos": [
         {
           "eu": "Aratusteak",
@@ -3108,7 +3108,7 @@
             "Jaiak"
           ],
           "correcta": 1,
-          "explicacion": "Aratusteak es la forma de aquí."
+          "explicacion": "Aratusteak es la forma de Bizkaia."
         },
         {
           "tipo": "opcion",
