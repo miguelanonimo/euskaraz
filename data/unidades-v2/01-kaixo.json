@@ -144,7 +144,7 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "El euskalki de aquí es el <b>bizkaiera</b>. Estos son los rasgos que más te van a saltar a la oreja en Bilbao desde el primer día.\n\n<b>Zelan?</b> en vez de <b>nola?</b>\nEl «¿cómo?» del bizkaiera es <i>zelan</i>. Así que el «¿qué tal?» más habitual no es <i>zer moduz?</i> sino <b>Zelan zagoz?</b> Y verás <i>holan, halan, honan</i> donde el batua pone <i>horrela, hala, honela</i>.\n\n<b>La j suena «y»</b>\nEn Bizkaia <i>jan</i> (comer) suena «yan», no «jan» con jota castellana. La jota fuerte es cosa guipuzcoana. La <b>h</b> es muda en todo Bizkaia.\n\n<b>Aupa! Epa!</b>\nMuy usados como saludo informal, más que <i>kaixo</i> entre conocidos.\n\n<b>Gero arte</b>\nPara despedirse se oye más que <i>ikusi arte</i>.",
+      "cuerpo": "El euskalki de Bizkaia es el <b>bizkaiera</b>. Estos son los rasgos que más te van a saltar a la oreja en Bilbao desde el primer día.\n\n<b>Zelan?</b> en vez de <b>nola?</b>\nEl «¿cómo?» del bizkaiera es <i>zelan</i>. Así que el «¿qué tal?» más habitual no es <i>zer moduz?</i> sino <b>Zelan zagoz?</b> Y verás <i>holan, halan, honan</i> donde el batua pone <i>horrela, hala, honela</i>.\n\n<b>La j suena «y»</b>\nEn Bizkaia <i>jan</i> (comer) suena «yan», no «jan» con jota castellana. La jota fuerte es cosa guipuzcoana. La <b>h</b> es muda en todo Bizkaia.\n\n<b>Aupa! Epa!</b>\nMuy usados como saludo informal, más que <i>kaixo</i> entre conocidos.\n\n<b>Gero arte</b>\nPara despedirse se oye más que <i>ikusi arte</i>.",
       "ejemplos": [
         {
           "eu": "Zelan zagoz?",
@@ -214,7 +214,7 @@
     {
       "subnivel": "1.3",
       "titulo": "El ajuste de Batua / Bizkaiera, explicado",
-      "cuerpo": "En <b>Tu cuenta</b>, en el apartado <i>Aprendizaje</i>, hay un ajuste con dos palabras: <b>Batua / Bizkaiera</b>. Ahora ya tiene sentido.\n\nLo primero, para quitarte la duda: <b>no cambia el idioma que aprendes</b>. Siempre es batua. Lo que decide es cuánto bizkaiera se te cruza por delante.\n\n<b>Batua</b> — las lecciones te dan la explicación general, y los ejercicios te piden solo la forma estándar. Viene así de fábrica.\n<b>Bizkaiera</b> — además aparecen las fichas «Cómo suena esto en Bizkaia», y los ejercicios también te preguntan por las formas locales.\n\nPongas lo que pongas, <b>las formas locales no desaparecen</b>: en el Vocabulario y en el Diccionario están siempre, etiquetadas, para leerlas y reconocerlas. Lo que cambia es si te examinan de ellas.\n\nDe momento la única variante montada, y con audio, es el <b>bizkaiera</b>: el de Bilbao y alrededores.\n\nUn consejo si estás empezando: <b>déjalo en Batua</b>. Ya tienes bastante con una forma de cada cosa. Enciéndelo más adelante, cuando el batua te salga solo y quieras que se te queden también las de aquí — o antes, si vives en Bizkaia y prefieres reconocer cuanto antes lo que oyes en la calle.",
+      "cuerpo": "En <b>Tu cuenta</b>, en el apartado <i>Aprendizaje</i>, hay un ajuste con dos palabras: <b>Batua / Bizkaiera</b>. Ahora ya tiene sentido.\n\nLo primero, para quitarte la duda: <b>no cambia el idioma que aprendes</b>. Siempre es batua. Lo que decide es cuánto bizkaiera se te cruza por delante.\n\n<b>Batua</b> — las lecciones te dan la explicación general, y los ejercicios te piden solo la forma estándar. Viene así de fábrica.\n<b>Bizkaiera</b> — además aparecen las fichas «Cómo suena esto en Bizkaia», y los ejercicios también te preguntan por las formas locales.\n\nPongas lo que pongas, <b>las formas locales no desaparecen</b>: en el Vocabulario y en el Diccionario están siempre, etiquetadas, para leerlas y reconocerlas. Lo que cambia es si te examinan de ellas.\n\nDe momento la única variante montada, y con audio, es el <b>bizkaiera</b>: el de Bilbao y alrededores.\n\nUn consejo si estás empezando: <b>déjalo en Batua</b>. Ya tienes bastante con una forma de cada cosa. Enciéndelo más adelante, cuando el batua te salga solo y quieras que se te queden también las locales — o antes, si vives en Bizkaia y prefieres reconocer cuanto antes lo que oyes en la calle.",
       "ejemplos": [
         {
           "eu": "batua",
@@ -2330,7 +2330,7 @@
             "zagoz"
           ],
           "correcta": 2,
-          "explicacion": "«Nola» es batua; su versión de aquí es «zelan»."
+          "explicacion": "«Nola» es batua; su versión en Bizkaia es «zelan»."
         },
         {
           "tipo": "opcion",
