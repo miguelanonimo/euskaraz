@@ -9,6 +9,16 @@ curso.
 
 ## Decisiones ya cerradas (no las vuelvas a plantear)
 
+- **El curso va a tener varios euskalkiak, no solo bizkaiera** (Ric,
+  03/10/2026). Hoy solo está montado el bizkaiera, pero la intención es
+  añadir más para que cada estudiante practique las formas de su zona. Así
+  que **no escribas contenido ni código que dé por hecho que la única
+  variante es el bizkaiera**. Estado real: el dato ya lo soporta
+  (`registro` es texto libre, y `etiquetaRegistro()` ya contempla
+  `gipuzkera`); el código no, porque `incluirDialectales` es un booleano
+  «¿con dialecto o sin él?» cuando tendría que ser «¿cuál?» — ver
+  `docs/propuestas-interfaz.md`.
+
 - **Un tema se supera con el 70% y el suelo son 3 grupos.** La sesión de un
   tema son sus grupos, una variante de cada uno, así que 3 grupos = 3 preguntas
   y hay que acertar las 3 (2/3 queda por debajo de 0,7). Decidido por Ric el
@@ -85,21 +95,23 @@ curso.
 
 ## Fase actual
 
-**Fase 3 — Contenido, cerrada la reestructuración a 10 unidades.**
+**Fase 3 — Contenido, cerrada la reestructuración (10 unidades el
+26/08/2026, partidas en 12 el 26/09/2026).**
 
 - **Fase 1 (fontanería): cerrada y validada.** Progreso en Supabase
   (`euskaraz_progreso`, proyecto Ippo compartido), login con email +
   contraseña, sincroniza entre dispositivos.
 - **Fase 2 (audio): cerrada para el curso de 12 unidades.** Pipeline de
   Cloud TTS en `scripts/generar-audio/` (ADC, sin claves que
-  gestionar). **Pendiente para el curso nuevo de 10 unidades**: las
+  gestionar). **Pendiente para el curso nuevo**: las
   sub-unidades y el vocabulario añadido en la reestructuración se
   escribieron sin audio a propósito (la app no pinta el botón si
   falta) — lista consolidada en `docs/audios-pendientes.md`, con el
   lote ejecutable `scripts/generar-audio/lote-ric-3.mjs` listo para
   correr cuando se decida generarlos.
 - **Fase 3 (contenido): reestructuración a 10 unidades con subniveles
-  fusionada a `main` el 26/08/2026** (desde `ric/trabajo`, con Claude
+  fusionada a `main` el 26/08/2026, y la unidad 10 partida en tres el
+  26/09/2026, con lo que el curso son 12** (desde `ric/trabajo`, con Claude
   Fable) — ver `docs/propuesta-10-unidades.md` y `docs/ideas-ric.md`
   para el detalle de qué cambió y por qué.
 - **Rediseño (01/10/2026), en la rama `rediseno`, sin fusionar a
