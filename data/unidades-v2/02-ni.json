@@ -56,7 +56,7 @@
     },
     {
       "titulo": "«zu» es tú y usted a la vez",
-      "cuerpo": "En castellano tienes que decidir constantemente entre tutear o tratar de usted. En euskera batua, no: <b>zu</b> cubre las dos cosas.\n\nHablas con tu mejor amigo: <b>zu</b>.\nHablas con el médico al que ves por primera vez: <b>zu</b>.\n\nUna preocupación menos.\n\nHay una forma aún más familiar, <b>hi</b>, que se usa entre amigos muy cercanos, dentro de la familia o con niños. Tiene la particularidad de que <b>hace cambiar el verbo entero</b>, y por eso se aprende bastante más tarde. De momento reconócela si la oyes y sigue con <i>zu</i> para todo.",
+      "cuerpo": "En castellano tienes que decidir constantemente entre tutear o tratar de usted. En euskera batua, no: <b>zu</b> cubre las dos cosas.\n\nHablas con tu mejor amigo: <b>zu</b>.\nHablas con el médico al que ves por primera vez: <b>zu</b>.\n\nUna preocupación menos.\n\nHay una forma aún más familiar, <b>hi</b>, que se usa entre amigos muy cercanos, dentro de la familia o con niños. Tiene la particularidad de <b>llevar su propia conjugación</b>, distinta de la que comparten los demás, y por eso se aprende bastante más tarde. De momento reconócela si la oyes y sigue con <i>zu</i> para todo.",
       "ejemplos": [
         {
           "eu": "Zu ondo zaude?",
@@ -865,20 +865,20 @@
             "gu"
           ],
           "correcta": 0,
-          "explicacion": "«Zu» vale para todo el mundo. «Hi» es más familiar, pero cambia el verbo entero."
+          "explicacion": "«Zu» vale para todo el mundo. «Hi» es más familiar, pero lleva una conjugación aparte."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué tiene de particular el pronombre «hi»?",
+          "pregunta": "Hablas con tres compañeros a la vez. ¿Qué pronombre usas?",
           "opciones": [
-            "Es plural",
-            "Hace cambiar la forma del verbo",
-            "Solo se usa por escrito",
-            "Es femenino"
+            "zuek",
+            "zu",
+            "gu",
+            "haiek"
           ],
-          "correcta": 1,
-          "explicacion": "El trato «hika» conjuga los verbos de otra manera. Por eso se aprende más tarde."
+          "correcta": 0,
+          "explicacion": "«Zuek» es «vosotros»: zu con la marca de plural. «Gu» somos nosotros, y «haiek» son ellos, de quienes se habla sin tenerlos delante."
         },
         {
           "tipo": "opcion",
