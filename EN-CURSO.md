@@ -31,10 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- **Ric** · 03/10 08:38 — traigo contenido de `main` a `rediseno` para probar el
-  diseño con los datos buenos (ficha 1.3, denak/denek, fuera el hitano y
-  las tres correcciones de la revisión). **Solo `data/`**: no toco
-  `css/styles.css` ni `js/app.js`.
+- (vacío — nadie trabajando ahora mismo)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
