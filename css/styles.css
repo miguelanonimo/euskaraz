@@ -75,10 +75,16 @@ input, textarea{ font: inherit; color: inherit; }
 /* ═══════════ ESTRUCTURA ═══════════ */
 
 .col{
+  /* Sin min-height forzado a la pantalla: era 100dvh, y en iOS, al
+     abrir la app desde el icono (modo standalone), esa unidad no
+     siempre coincide con la pantalla real — deja un hueco en blanco
+     antes del tabbar que no aparece en una pestaña normal de Safari.
+     El tabbar va fijo (position:fixed) y el fondo de body ya es
+     blanco, así que no hace falta forzar la altura de .col para que
+     no se vea un hueco detrás. */
   position: relative;
   max-width: var(--col);
   margin: 0 auto;
-  min-height: 100dvh;
 }
 
 .screen{ padding: 48px 20px 32px; }
