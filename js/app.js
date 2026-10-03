@@ -111,6 +111,7 @@
     fallos: 0,
     falladas: [],       // palabras erradas en la sesión de vocabulario
     resultados: null,   // acierto/fallo por índice, para los pasos de arriba — solo en unidad/repaso
+    historial: null,    // instantánea de cada pregunta ya respondida, para poder repasarla (ver revisarPregunta)
     resuelto: false,    // el ejercicio actual ya se ha comprobado
     sel: null           // selección temporal del ejercicio en curso
   };
@@ -578,20 +579,54 @@
     aplicarModoSilencioso();
   }
 
-  /* Incluir variantes dialectales en el repaso: preferencia de este
-     aparato, igual que el modo silencioso. Por defecto apagado —el
-     repaso solo prueba la forma batua de cada palabra, y las variantes
-     (aupa, zelan zagoz…) se quedan como lo que son en Vocabulario/
-     Diccionario, formas para leer, no para que te examinen de ellas—
-     hasta que el usuario decide activamente que también quiere que le
-     pregunten en bizkaiera. */
-  var INCLUIR_DIALECTALES_KEY = 'euskaraz_incluir_dialectales';
-  var incluirDialectales = false;
-  try { incluirDialectales = localStorage.getItem(INCLUIR_DIALECTALES_KEY) === '1'; } catch (e) {}
+  /* Qué euskalki (variante dialectal) se examina en el repaso, además
+     de la forma batua: preferencia de este aparato, igual que el modo
+     silencioso. null por defecto —el repaso solo prueba la forma
+     batua de cada palabra, y las variantes (aupa, zelan zagoz…) se
+     quedan como lo que son en Vocabulario/Diccionario, formas para
+     leer, no para que te examinen de ellas— hasta que el usuario
+     decide activamente cuál quiere.
 
-  function setIncluirDialectales(on) {
-    incluirDialectales = !!on;
-    try { localStorage.setItem(INCLUIR_DIALECTALES_KEY, incluirDialectales ? '1' : '0'); } catch (e) {}
+     Antes esto era un sí/no (solo existía bizkaiera, así que "sí" no
+     dejaba ambigüedad); ahora es el código del euskalki elegido, para
+     poder añadir más sin que "activar dialecto" deje de significar
+     algo concreto — propuesta de Ric, docs/propuestas-interfaz.md. */
+  var EUSKALKI_KEY = 'euskaraz_euskalki';
+  var EUSKALKI_KEY_VIEJA = 'euskaraz_incluir_dialectales';
+  var euskalkiActivo = null;
+  try {
+    var guardado = localStorage.getItem(EUSKALKI_KEY);
+    if (guardado === null) {
+      // Migración de la clave vieja: un '1' solo podía significar
+      // bizkaiera, que era el único euskalki que existía entonces.
+      guardado = localStorage.getItem(EUSKALKI_KEY_VIEJA) === '1' ? 'bizkaiera' : '';
+    }
+    euskalkiActivo = guardado || null;
+  } catch (e) {}
+
+  function setEuskalki(valor) {
+    euskalkiActivo = valor || null;
+    try { localStorage.setItem(EUSKALKI_KEY, euskalkiActivo || ''); } catch (e) {}
+  }
+
+  /* Los euskalkiak que el curso tiene de verdad, mirando qué registros
+     usa el contenido — el segmentado de Ajustes sale de aquí, no de
+     una lista escrita a mano que se quedaría corta en cuanto se añada
+     el siguiente. */
+  function euskalkisDisponibles() {
+    var vistos = {};
+    (CURSO.unidades || []).forEach(function (u) {
+      (u.vocabulario || []).forEach(function (v) {
+        (v.variantes || []).forEach(function (x) { if (x.registro) vistos[x.registro] = true; });
+      });
+      (u.gramatica || []).forEach(function (g) { if (g.registro) vistos[g.registro] = true; });
+    });
+    return Object.keys(vistos).sort();
+  }
+
+  var NOMBRE_EUSKALKI = { bizkaiera: 'Bizkaiera', gipuzkera: 'Gipuzkera' };
+  function nombreEuskalki(r) {
+    return NOMBRE_EUSKALKI[r] || (r.charAt(0).toUpperCase() + r.slice(1));
   }
 
   /* Todas las formas de una entrada de vocabulario que entran en juego
@@ -611,8 +646,12 @@
     var base = { eu: v.eu, es: v.es, esAlt: v.esAlt, nota: v.nota, audio: v.audio,
                  registro: v.registro, categoria: v.categoria || 'otros',
                  subnivel: v.subnivel, unidad: unidad, titulo: titulo };
-    if (!incluirDialectales || !v.variantes || !v.variantes.length) return [base];
-    return [base].concat(v.variantes.map(function (variante) {
+    if (!euskalkiActivo || !v.variantes || !v.variantes.length) return [base];
+    // Solo las variantes del euskalki elegido — antes, con el booleano,
+    // entraban todas sin mirar de cuál eran.
+    var delEuskalki = v.variantes.filter(function (variante) { return variante.registro === euskalkiActivo; });
+    if (!delEuskalki.length) return [base];
+    return [base].concat(delEuskalki.map(function (variante) {
       return { eu: variante.eu, es: v.es, esAlt: v.esAlt, nota: variante.nota,
                audio: variante.audio, registro: variante.registro,
                categoria: variante.categoria || base.categoria,
@@ -1202,7 +1241,9 @@
       var f = Math.max(0, Math.min(1, hechos - i));
       var r = resultados && resultados[i];
       var clase = 'steps__seg' + (f > 0 ? ' is-on' : '') + (r === true ? ' is-ok' : r === false ? ' is-mal' : '');
-      out += '<div class="' + clase + '"><span style="width:' + (f * 100) + '%"></span></div>';
+      // data-i identifica el paso para poder tocarlo y repasarlo — solo
+      // tiene sentido en uno ya respondido (ver revisarPregunta()).
+      out += '<div class="' + clase + '" data-i="' + i + '"><span style="width:' + (f * 100) + '%"></span></div>';
     }
     return out;
   }
@@ -1583,8 +1624,7 @@
      Ojo: esto NO afecta al vocabulario. Ahí las dos formas siguen
      visibles y etiquetadas, que es la decisión de Miguel en el brief 5.1. */
   function gramaticaVisible(lista) {
-    if (incluirDialectales) return lista || [];
-    return (lista || []).filter(function (g) { return g.registro !== 'bizkaiera'; });
+    return (lista || []).filter(function (g) { return !g.registro || g.registro === euskalkiActivo; });
   }
 
   function contenidoSub(u, sub) {
@@ -2064,7 +2104,7 @@
     estado.aciertos = 0;
     estado.fallos = 0;
     estado.falladas = [];
-    estado.resultados = [];
+    estado.resultados = []; estado.historial = [];
     mostrar('quiz');
     pintarEjercicio();
   }
@@ -2836,8 +2876,10 @@
           '<span class="eyebrow">Aprendizaje</span>' +
           '<div class="blk">' +
             '<h3>Tu variante dialectal</h3>' +
-            '<p>Elige si quieres aprender solo batua (euskera unificado) o si también quieres que se te muestren explicaciones y ejercicios en bizkaiera.</p>' +
-            segmentado('segDialecto', [['batua', 'Batua'], ['bizkaiera', 'Bizkaiera']], incluirDialectales ? 'bizkaiera' : 'batua') +
+            '<p>Elige si quieres aprender solo batua (euskera unificado) o si también quieres que se te muestren explicaciones y ejercicios en algún euskalki.</p>' +
+            segmentado('segDialecto',
+              [['batua', 'Batua']].concat(euskalkisDisponibles().map(function (r) { return [r, nombreEuskalki(r)]; })),
+              euskalkiActivo || 'batua') +
             '<div class="nota"><b>*</b><span><b>Bizkaiera</b> (Bizkaia y zonas de Álava y Gipuzkoa). De momento es la única variante del curso.</span></div>' +
           '</div>' +
           '<div class="sep"></div>' +
@@ -2867,7 +2909,7 @@
     $('segDialecto').addEventListener('click', function (e) {
       var b = e.target.closest('.seg__opt');
       if (!b) return;
-      setIncluirDialectales(b.dataset.valor === 'bizkaiera');
+      setEuskalki(b.dataset.valor === 'batua' ? null : b.dataset.valor);
       marcarSegmento(this, b);
     });
     $('segSonido').addEventListener('click', function (e) {
@@ -3004,7 +3046,7 @@
     estado.aciertos = 0;
     estado.fallos = 0;
     estado.falladas = [];
-    estado.resultados = [];
+    estado.resultados = []; estado.historial = [];
     mostrar('quiz');
     pintarEjercicio();
   }
@@ -3715,6 +3757,13 @@
   function resolver(ok, titulo, cuerpo, leve) {
     var ej = ejActual();
     estado.resuelto = true;
+    // Instantánea de cómo quedó la pregunta (ya marcada en verde/rojo
+    // por el corregirXxx() que llamó a resolver) para poder volver a
+    // verla desde los pasos de arriba sin tener que reconstruirla por
+    // tipo de ejercicio.
+    if (estado.historial) {
+      estado.historial[estado.indice] = { html: el.quizContent.innerHTML, titulo: titulo, cuerpo: cuerpo, leve: leve, ok: ok, ej: ej };
+    }
     if (estado.modo === 'vocab') {
       if (ej) resolverVocab(ej, ok);
     } else {
@@ -3794,8 +3843,12 @@
     return gramaticaVisible(delSubnivel(d.unidad.gramatica, d.id));
   }
 
-  function abrirHoja() {
-    var ej = ejActual(), fichas = fichasDe(ej);
+  function abrirHoja() { abrirHojaPara(ejActual()); }
+
+  // Separado de abrirHoja() para que revisarPregunta() pueda abrir la
+  // ficha de una pregunta ya pasada, no solo la que está en pantalla.
+  function abrirHojaPara(ej) {
+    var fichas = fichasDe(ej);
     if (!fichas.length) return;
     var d = temaDe(ej), u = d.unidad, tema = d.tema;
     abrirModal(
@@ -3806,6 +3859,34 @@
       '</div>',
       'modal__panel--ficha');
     $('hojaCerrar').addEventListener('click', cerrarModal);
+  }
+
+  /* Repasar una pregunta ya contestada, desde los pasos de arriba: la
+     instantánea de cómo quedó (resolver() la guarda en estado.historial),
+     más el mismo título/cuerpo de la hoja de feedback de entonces y,
+     si la tiene, el botón a su ficha. Sin controles activos encima — los
+     botones de la instantánea no tienen manejador aquí, así que tocarlos
+     no hace nada: es "ver", no "corregir otra vez". */
+  function revisarPregunta(i) {
+    var h = estado.historial && estado.historial[i];
+    if (!h) return;
+    var fichas = fichasDe(h.ej);
+    var fbc = h.leve ? 'var(--almost)' : h.ok ? 'var(--right)' : 'var(--wrong)';
+    abrirModal(
+      '<button class="modal__x" type="button" id="revisarCerrar" aria-label="Cerrar">' + icono('close', 24) + '</button>' +
+      '<div class="modal__scroll">' +
+        '<p class="modal__ruta">Pregunta ' + (i + 1) + '</p>' +
+        h.html +
+        '<div class="fb" style="--fbc:' + fbc + '">' +
+          '<div class="fb__head"><span class="fb__icon">' + icono(h.leve ? 'eye' : (h.ok ? 'check-bold' : 'cross-bold'), 20) + '</span>' +
+            '<span class="fb__title">' + esc(h.titulo) + '</span></div>' +
+          '<div class="fb__body">' + (h.cuerpo || '') + '</div>' +
+        '</div>' +
+        (fichas.length ? '<button class="btn btn--outline btn--block" type="button" id="revisarFicha">Ver la explicación</button>' : '') +
+      '</div>',
+      'modal__panel--ficha');
+    $('revisarCerrar').addEventListener('click', cerrarModal);
+    if ($('revisarFicha')) $('revisarFicha').addEventListener('click', function () { abrirHojaPara(h.ej); });
   }
 
   function feedback(ok, titulo, cuerpo, leve) {
@@ -4038,6 +4119,8 @@
 
   // Cabecera: volver, logo, cuenta
   el.hdr.addEventListener('click', function (e) {
+    var paso = e.target.closest('.steps__seg[data-i]');
+    if (paso) { revisarPregunta(parseInt(paso.dataset.i, 10)); return; }
     var b = e.target.closest('[data-accion]');
     if (!b) return;
     var a = b.dataset.accion;

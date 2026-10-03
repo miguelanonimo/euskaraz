@@ -15,7 +15,7 @@ function sacar(nombre) {
 }
 
 const f = new Function(`
-  var incluirDialectales = false;
+  var euskalkiActivo = null;
   ${['tieneSubniveles','delSubnivel','gramaticaVisible','contenidoSub','temaSiguiente'].map(sacar).join('\n')}
   return { temaSiguiente, contenidoSub, gramaticaVisible, delSubnivel };
 `)();

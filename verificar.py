@@ -302,7 +302,7 @@ for ruta, u in unidades:
     for sub, fichas in porTema.items():
         vistoDialecto = False
         for gr in fichas:
-            if gr.get("registro") == "bizkaiera":
+            if gr.get("registro"):
                 vistoDialecto = True
             elif vistoDialecto:
                 errores.append(u"%s: la ficha de dialecto de %s está en medio; "
@@ -310,9 +310,10 @@ for ruta, u in unidades:
                 break
 
     # El original pedía una ficha de dialecto por unidad. Se reconocen por
-    # `registro: "bizkaiera"`; se aceptan también por el título, que es como
-    # estaban marcadas antes de que existiera el campo.
-    if not any(gr.get("registro") == "bizkaiera" or u"Gernika" in gr["titulo"]
+    # tener `registro` (cualquier euskalki, no solo bizkaiera); se aceptan
+    # también por el título, que es como estaban marcadas antes de que
+    # existiera el campo.
+    if not any(gr.get("registro") or u"Gernika" in gr["titulo"]
                or u"Bizkaia" in gr["titulo"] for gr in u["gramatica"]):
         avisos.append("%s: no tiene ficha de dialecto" % ruta)
 

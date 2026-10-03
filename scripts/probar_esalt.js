@@ -21,7 +21,7 @@ function sacar(n) {
 
 // formasDe mira una variable de módulo; se le da el valor por fuera.
 const api = new Function(`
-  var incluirDialectales = true;
+  var euskalkiActivo = 'bizkaiera';
   var modoSilencioso = false;
   function marcarVocab(q, entrada) { q.__clave = 'v:' + entrada.eu; return q; }
   ${sacar('formasDe')}
