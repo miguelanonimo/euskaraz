@@ -31,10 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- **Ric** · 03/10 15:37 — **toco `js/app.js` y `css/styles.css`**: en las fichas,
-  los pasos de arriba pasan a ser navegables (tocar un paso lleva a esa
-  ficha) y se añade swipe izquierda/derecha. Zonas: `cabecera()`,
-  `pantallaGramatica()`, el manejador de `el.hdr` y `.steps`.
+- (vacío — nadie trabajando ahora mismo)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
