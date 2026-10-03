@@ -168,7 +168,7 @@
     {
       "subnivel": "1.3",
       "titulo": "Dónde se habla el euskera",
-      "cuerpo": "El euskera no es de un país: es de un territorio repartido entre dos estados, y que en euskera se llama <b>Euskal Herria</b>.\n\nSon siete zonas. Cuatro al sur, en España:\n\n<b>Bizkaia</b> (Vizcaya) — su capital es Bilbo, Bilbao\n<b>Gipuzkoa</b> (Guipúzcoa) — Donostia, San Sebastián\n<b>Araba</b> (Álava) — Gasteiz, Vitoria\n<b>Nafarroa</b> (Navarra) — Iruñea, Pamplona\n\nFíjate en que casi todo tiene dos nombres, uno en cada lengua. Los dos son correctos; aquí verás el vasco, porque es el que vas a leer en los carteles.\n\nY tres al norte, en Francia, más pequeñas y con menos hablantes:\n\n<b>Lapurdi</b> · <b>Nafarroa Beherea</b> · <b>Zuberoa</b>\n\nUn detalle de escritura: <i>Euskal Herria</i> va siempre en dos palabras y las dos con mayúscula. Así lo fijó la Academia de la Lengua Vasca.",
+      "cuerpo": "El euskera no es de un país: es de un territorio repartido entre dos estados, y se llama <b>Euskal Herria</b>.\n\nSon siete zonas. Cuatro al sur, en España:\n\n<b>Bizkaia</b> (Vizcaya) — su capital es <b>Bilbo</b> (Bilbao)\n<b>Gipuzkoa</b> (Guipúzcoa) — <b>Donostia</b> (San Sebastián)\n<b>Araba</b> (Álava) — <b>Gasteiz</b> (Vitoria)\n<b>Nafarroa</b> (Navarra) — <b>Iruñea</b> (Pamplona)\n\nFíjate en que casi todo tiene dos nombres, uno en cada lengua. Los dos son correctos; aquí verás el vasco, porque es el que vas a leer en los carteles.\n\nY tres zonas al norte, en Francia:\n\n<b>Lapurdi</b> · <b>Nafarroa Beherea</b> · <b>Zuberoa</b>\n\nUn detalle de escritura: <i>Euskal Herria</i> va siempre en dos palabras y las dos con mayúscula. Así lo fijó Euskaltzaindia, la Real Academia de la Lengua Vasca.",
       "ejemplos": [
         {
           "eu": "Euskal Herria",
@@ -1044,7 +1044,7 @@
           "opciones": [
             "je-la, como jota",
             "gue-la, con g dura",
-            "gue-la con u muda",
+            "gue-la, con la g casi muda",
             "khe-la"
           ],
           "correcta": 1,
