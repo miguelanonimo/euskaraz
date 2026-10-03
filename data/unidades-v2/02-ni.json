@@ -870,15 +870,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué distingue a «hi» de los demás pronombres?",
+          "pregunta": "Hablas con tres compañeros a la vez. ¿Qué pronombre usas?",
           "opciones": [
-            "Tiene su propia conjugación, aparte de la de los demás",
-            "Es plural",
-            "Solo se usa por escrito",
-            "Es femenino"
+            "zuek",
+            "zu",
+            "gu",
+            "haiek"
           ],
           "correcta": 0,
-          "explicacion": "Ni, zu, hura, gu, zuek y haiek comparten la misma conjugación. «Hi» tiene otra aparte, y por eso se deja para más adelante."
+          "explicacion": "«Zuek» es «vosotros»: zu con la marca de plural. «Gu» somos nosotros, y «haiek» son ellos, de quienes se habla sin tenerlos delante."
         },
         {
           "tipo": "opcion",
