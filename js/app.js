@@ -4467,4 +4467,44 @@
     }
   });
 
+  /* Diagnóstico temporal del hueco en modo app en móvil (?debug) — se
+     actualiza solo, sin recargar, para poder rotar el móvil o escribir
+     en la barra de direcciones y ver cómo cambian los números. Quitar
+     junto con el <pre id="debugPanel"> de index.html en cuanto se
+     resuelva el hueco. */
+  if (location.search.indexOf('debug') !== -1) {
+    var panelDebug = document.getElementById('debugPanel');
+    panelDebug.hidden = false;
+    var probeSafeB = document.createElement('div');
+    probeSafeB.style.cssText = 'position:fixed;height:env(safe-area-inset-bottom);width:0;visibility:hidden;';
+    document.body.appendChild(probeSafeB);
+    function medir100dvh() {
+      var p = document.createElement('div');
+      p.style.cssText = 'position:fixed;height:100dvh;width:0;visibility:hidden;';
+      document.body.appendChild(p);
+      var h = p.getBoundingClientRect().height;
+      p.remove();
+      return Math.round(h);
+    }
+    function pintarDebug() {
+      var modo = window.matchMedia('(display-mode: standalone)').matches ? 'standalone'
+               : window.navigator.standalone ? 'standalone (iOS legacy)' : 'navegador';
+      var col = document.querySelector('.col'), tabbar = document.querySelector('.tabbar');
+      panelDebug.textContent =
+        'modo: ' + modo + '\n' +
+        'innerHeight: ' + window.innerHeight + 'px · innerWidth: ' + window.innerWidth + '\n' +
+        'documentElement.clientHeight: ' + document.documentElement.clientHeight + 'px\n' +
+        '100dvh medido: ' + medir100dvh() + 'px\n' +
+        'safe-area-inset-bottom real: ' + Math.round(probeSafeB.getBoundingClientRect().height) + 'px\n' +
+        '.col height: ' + (col ? Math.round(col.getBoundingClientRect().height) : '—') + 'px\n' +
+        '.tabbar height: ' + (tabbar ? Math.round(tabbar.getBoundingClientRect().height) : '—') + 'px\n' +
+        '.tabbar bottom (distancia al borde real): ' + (tabbar ? Math.round(window.innerHeight - tabbar.getBoundingClientRect().bottom) : '—') + 'px\n' +
+        'scrollY: ' + window.scrollY + ' / scrollHeight: ' + document.documentElement.scrollHeight + '\n' +
+        'UA: ' + navigator.userAgent;
+    }
+    pintarDebug();
+    window.addEventListener('resize', pintarDebug);
+    setInterval(pintarDebug, 1000);
+  }
+
 })();
