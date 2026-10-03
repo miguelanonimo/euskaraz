@@ -1216,7 +1216,12 @@
     } else if (tipo === 'atras') {
       html = volver + (o.derecha || '');
     } else if (tipo === 'pasos') {
-      html = volver + '<div class="steps">' + segmentos(o.total, o.hechos, o.resultados) + '</div>' +
+      /* Dos usos distintos de la misma barra. En una práctica los pasos son
+         historial: solo se puede volver a lo ya contestado (revisarPregunta).
+         En las fichas son navegación: se puede ir a cualquiera, también
+         hacia delante. `navegable` es lo que los separa, aquí y en el CSS. */
+      html = volver + '<div class="steps' + (o.navegable ? ' steps--nav' : '') + '">' +
+             segmentos(o.total, o.hechos, o.resultados) + '</div>' +
              '<span class="steps__lbl">' + esc(o.etiqueta || '') + '</span>';
     }
     h.className = 'hdr' + (tipo === 'home' ? ' hdr--home' : '') + (o.raiz ? ' hdr--raiz' : '');
@@ -1892,7 +1897,8 @@
     estado.fichaIdx = idx;
     if (!ojeando) desbloquearTema();
     ponerFamilia(u);
-    cabecera('pasos', { total: fichas.length, hechos: idx + 1, etiqueta: (idx + 1) + '/' + fichas.length });
+    cabecera('pasos', { total: fichas.length, hechos: idx + 1, navegable: true,
+                        etiqueta: (idx + 1) + '/' + fichas.length });
 
     var ultima = idx === fichas.length - 1;
     var hayPractica = delSubnivel(u.ejercicios, estado.subnivel).length > 0;
@@ -3867,6 +3873,18 @@
      si la tiene, el botón a su ficha. Sin controles activos encima — los
      botones de la instantánea no tienen manejador aquí, así que tocarlos
      no hace nada: es "ver", no "corregir otra vez". */
+  /* Saltar a una ficha concreta del tema. No se clava en los extremos: si
+     ya estás en la primera o en la última, el gesto no hace nada, que es
+     menos desconcertante que repintar lo mismo. Conserva `desdeDicc` para
+     que «atrás» siga devolviendo al diccionario si llegaste por ahí. */
+  function irAFicha(i) {
+    var u = estado.unidad;
+    if (!u || estado.pantalla !== 'gram') return;
+    var total = gramaticaVisible(delSubnivel(u.gramatica, estado.subnivel)).length;
+    if (i < 0 || i >= total || i === estado.fichaIdx) return;
+    pantallaGramatica(i, estado.desdeDicc);
+  }
+
   function revisarPregunta(i) {
     var h = estado.historial && estado.historial[i];
     if (!h) return;
@@ -4109,6 +4127,31 @@
 
   pintarNavegacion();
 
+  /* Deslizar para cambiar de ficha. Solo en las fichas: es la única
+     pantalla sin nada que arrastrar, así que el gesto no se pelea con
+     nada (las piezas de «ordena las palabras» se colocan tocando).
+     Pasivo a propósito: no se bloquea el scroll vertical, solo se mira
+     el gesto cuando ya ha terminado y se decide si era horizontal. */
+  (function deslizarEntreFichas() {
+    var MINIMO = 60;     // px: por debajo es un toque tembloroso, no un gesto
+    var TOPE = 600;      // ms: más lento que esto es arrastrar, no deslizar
+    var x0 = null, y0 = null, t0 = 0;
+    el.screens.gram.addEventListener('touchstart', function (e) {
+      if (e.touches.length !== 1) { x0 = null; return; }
+      x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; t0 = Date.now();
+    }, { passive: true });
+    el.screens.gram.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var t = e.changedTouches[0], dx = t.clientX - x0, dy = t.clientY - y0;
+      x0 = null;
+      if (Date.now() - t0 > TOPE) return;
+      if (Math.abs(dx) < MINIMO) return;
+      // Claramente horizontal, o era alguien bajando la página en diagonal.
+      if (Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      irAFicha(estado.fichaIdx + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+  })();
+
   // Pestañas y menú lateral
   [el.tabbarItems, el.sidenav].forEach(function (cont) {
     cont.addEventListener('click', function (e) {
@@ -4120,7 +4163,11 @@
   // Cabecera: volver, logo, cuenta
   el.hdr.addEventListener('click', function (e) {
     var paso = e.target.closest('.steps__seg[data-i]');
-    if (paso) { revisarPregunta(parseInt(paso.dataset.i, 10)); return; }
+    if (paso) {
+      var ip = parseInt(paso.dataset.i, 10);
+      if (paso.closest('.steps--nav')) irAFicha(ip); else revisarPregunta(ip);
+      return;
+    }
     var b = e.target.closest('[data-accion]');
     if (!b) return;
     var a = b.dataset.accion;

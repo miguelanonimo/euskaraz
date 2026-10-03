@@ -131,6 +131,10 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + 32px + var(--safe-b)); }
    dedo. */
 .steps__seg{ position: relative; flex: 1 1 0; min-height: 24px; display: flex; align-items: center; border-radius: 1000px; }
 .steps__seg.is-ok, .steps__seg.is-mal{ cursor: pointer; }
+/* En las fichas la barra es navegación, no historial: todos los pasos
+   llevan a su ficha, también los de delante (pedido de Ric). */
+.steps--nav .steps__seg{ cursor: pointer; }
+.steps--nav .steps__seg:active::before{ opacity: .45; }
 .steps__seg::before{
   content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 4px; transform: translateY(-50%);
   border-radius: inherit;
