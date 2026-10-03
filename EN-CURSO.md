@@ -31,7 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- (vacío — nadie trabajando ahora mismo)
+- Miguel · 2026-10-03 · selector de euskalki + repasar pregunta desde los pasos (js/app.js, css/styles.css, verificar.py)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
