@@ -125,15 +125,21 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + 32px + var(--safe-b)); }
 
 /* Pasos de la ficha y del ejercicio */
 .steps{ display: flex; align-items: center; gap: 4px; flex: 1 1 0; min-width: 0; }
-.steps__seg{ position: relative; flex: 1 1 0; height: 4px; border-radius: 1000px; overflow: hidden; }
+/* 4px de alto visual, pero el hueco de tocar es más alto (min-height,
+   centrado con la barra via ::before/span al 50%) — una pregunta ya
+   respondida se puede repasar tocándola, y 4px a secas es muy poco
+   dedo. */
+.steps__seg{ position: relative; flex: 1 1 0; min-height: 24px; display: flex; align-items: center; border-radius: 1000px; }
+.steps__seg.is-ok, .steps__seg.is-mal{ cursor: pointer; }
 .steps__seg::before{
-  content: ''; position: absolute; inset: 0; border-radius: inherit;
+  content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 4px; transform: translateY(-50%);
+  border-radius: inherit;
   background: var(--ink); opacity: .2;
 }
 .steps__seg.is-on::before{ background: var(--c); opacity: .4; }
 .steps__seg.is-ok::before{ background: var(--right); opacity: .4; }
 .steps__seg.is-mal::before{ background: var(--wrong); opacity: .4; }
-.steps__seg > span{ position: absolute; left: 0; top: 0; bottom: 0; border-radius: inherit; background: var(--c); }
+.steps__seg > span{ position: absolute; left: 0; top: 50%; height: 4px; transform: translateY(-50%); border-radius: inherit; background: var(--c); }
 .steps__seg.is-ok > span{ background: var(--right); }
 .steps__seg.is-mal > span{ background: var(--wrong); }
 .steps__lbl{
