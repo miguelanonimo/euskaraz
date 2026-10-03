@@ -149,6 +149,15 @@ curso.
   dé por terminado y se fusione a `main`, quitar esa entrada de
   `vercel.json` para que vuelva a tener preview como cualquier rama.
 
+- **Pendiente (03/10/2026): auditoría de fluidez vertical en móviles
+  pequeños.** Miguel, con un móvil pequeño, no ve la 4ª opción de un
+  ejercicio de escuchar sin hacer scroll — da la sensación de que solo
+  hay 3. Aparcado a propósito (no es del "100%" que se sale de su
+  tarjeta en el resultado, eso ya está medido en `docs/ideas-ric.md`):
+  hace falta revisar altura de cabecera/opciones/hoja en los viewports
+  más bajos (iPhone SE, 667px de alto o menos) por toda la app, no
+  parchear un caso suelto.
+
 ## Al terminar cada fase
 
 Actualiza este archivo (sección "Fase actual") y anota en `docs/brief.md`
