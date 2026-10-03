@@ -1904,6 +1904,22 @@
   /* La píldora del seleccionado es una capa propia, colocada por CSS con
      --i (índice) y --n (opciones); al tocar otra opción se desliza hasta
      ella (ver deslizarSeg). */
+  /* Mover un segmentado sin repintar la pantalla. En Tu cuenta, cambiar el
+     selector llamaba a pantallaCuenta(), y mostrar() termina con
+     window.scrollTo(0, 0): te subía al principio y perdías dónde estabas
+     leyendo (detectado por Ric). Nada más de esa pantalla depende de esos
+     dos ajustes —resumenEstado() no los mira—, así que no hay que repintar
+     nada. La pastilla la anima el manejador general de `.seg__opt`, que mira
+     cuál quedó con `is-on`. Es lo que ya hacía el selector del diccionario,
+     que ahora usa este mismo ayudante en vez de su propia copia. */
+  function marcarSegmento(seg, boton) {
+    Array.prototype.forEach.call(seg.querySelectorAll('.seg__opt'), function (b) {
+      var on = b === boton;
+      b.classList.toggle('is-on', on);
+      b.setAttribute('aria-selected', on);
+    });
+  }
+
   function segmentado(id, opciones, activa) {
     var i = Math.max(0, opciones.map(function (o) { return o[0]; }).indexOf(activa));
     return '<div class="seg" id="' + id + '" role="tablist" style="--n:' + opciones.length + ';--i:' + i + '">' +
@@ -2852,13 +2868,13 @@
       var b = e.target.closest('.seg__opt');
       if (!b) return;
       setIncluirDialectales(b.dataset.valor === 'bizkaiera');
-      pantallaCuenta();
+      marcarSegmento(this, b);
     });
     $('segSonido').addEventListener('click', function (e) {
       var b = e.target.closest('.seg__opt');
       if (!b) return;
       setModoSilencioso(b.dataset.valor === 'silencio');
-      pantallaCuenta();
+      marcarSegmento(this, b);
     });
     $('ctaEmail').addEventListener('click', abrirCambioEmail);
     $('ctaPass').addEventListener('click', function () { abrirCambioPassword(); });
@@ -4138,9 +4154,7 @@
     var seg = e.target.closest('#dictSeg .seg__opt');
     if (seg) {
       dictCatActiva = seg.dataset.valor;
-      Array.prototype.forEach.call(el.dictSeg.children, function (b) {
-        b.classList.toggle('is-on', b === seg);
-      });
+      marcarSegmento(el.dictSeg, seg);
       pintarDiccionario(el.dictInput.value);
       return;
     }
