@@ -721,7 +721,11 @@ div.scard{ cursor: default; }
 
 /* ═══════════ RESULTADO ═══════════ */
 
-.res__tiles{ display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+/* Sin el `minmax(0,...)` a propósito: con tres columnas rígidas el «100%»
+   de la nota se desbordaba 25px de su tarjeta (medido a 375px). Con `1fr`
+   a secas la rejilla reparte sola y la de Nota crece solo cuando le hace
+   falta — con «71%» las tres siguen iguales. Detectado por Ric. */
+.res__tiles{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .res__tiles .scard{ min-height: 120px; gap: 20px; padding: 20px 16px 16px; }
 .res__tiles .scard__t{ font-size: 15px; }
 

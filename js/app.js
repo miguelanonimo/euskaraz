@@ -4093,7 +4093,10 @@
         casilla(estado.respuestas, 'Respuestas', gris)
       : casilla(estado.aciertos, 'Aciertos', verde) +
         casilla(estado.fallos, 'Fallos', rojo) +
-        casilla(Math.round(ratio * 100) + '%', 'Nota', tonoNota);
+        // El % en <small>, como ya hacen las tarjetas de unidad, el rosco y
+        // las barras de Progreso. Esta pantalla era la única que lo mandaba
+        // como texto plano a 34px, y es lo que hacía que no cupiera.
+        casilla(Math.round(ratio * 100) + '<small>%</small>', 'Nota', tonoNota);
 
     if (estado.modo !== 'unidad') ponerFamilia(null);
     cabecera('atras');
