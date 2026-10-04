@@ -2374,8 +2374,10 @@
 
     // 0: misma forma y unidad · 1: misma forma · 2: misma unidad · 3: resto
     var grupos = [[], [], [], []];
+    var choca = ctx.choca[normalizar(entrada.eu)] || {};
     ctx.fondo.forEach(function (v) {
       if (v === entrada) return;
+      if (choca[normalizar(v.eu)]) return;   // diría lo mismo que la correcta
       var txt = normalizar(v[campo]);
       if (yaPuesto[txt]) return;
       var mismaForma  = formaDe(v[campo]) === forma;
@@ -2453,8 +2455,10 @@
     yaPuesto[normalizar(correcta)] = true;
 
     var mismos = [], otros = [];
+    var choca = ctx.choca[normalizar(entrada.eu)] || {};
     ctx.fondo.forEach(function (v) {
       if (v === entrada) return;
+      if (choca[normalizar(v.eu)]) return;   // diría lo mismo que la correcta
       var txt = normalizar(v.es);
       if (yaPuesto[txt]) return;
       (v.unidad === entrada.unidad ? mismos : otros).push(v);
@@ -2551,21 +2555,46 @@
       return;
     }
 
-    // Traducciones que sirven para más de una palabra: no se pueden
-    // preguntar del castellano al euskera con una sola respuesta buena.
-    // Se calcula una vez por sesión, y de paso deja la lista de
-    // sinónimos que el ejercicio de teclear acepta.
-    var cuantas = {}, ambiguas = {}, porEs = {};
+    /* Traducciones que sirven para más de una palabra: no se pueden
+       preguntar del castellano al euskera con una sola respuesta buena.
+       Se calcula una vez por sesión, y de paso deja la lista de sinónimos
+       que el ejercicio de teclear acepta.
+
+       Cuenta TODOS los significados de cada entrada —`es` y los `esAlt`—,
+       no solo el principal. Comparando el `es` exacto se escapaban dos
+       palabras que dicen lo mismo con distinta redacción: «haren» es «su
+       (de él/de ella)» y «bere» es «su (de él/de ella), lo suyo propio»,
+       cadenas distintas, y además los dos `esAlt` son idénticos. Ric se
+       encontró la pregunta «¿cómo se dice "su (de él/de ella)"?» con
+       «haren» y «bere» entre las opciones y solo una contando.
+
+       `choca` guarda, por palabra, las que comparten algún significado con
+       ella: no pueden ser distractores la una de la otra en ninguna de las
+       dos direcciones. */
+    var ambiguas = {}, porEs = {}, choca = {}, deQuien = {};
+    function sentidos(v) {
+      return [v.es].concat(v.esAlt || []).map(normalizar);
+    }
     fondo.forEach(function (v) {
-      var k = normalizar(v.es);
-      cuantas[k] = (cuantas[k] || 0) + 1;
-      if (cuantas[k] > 1) ambiguas[k] = true;
-      (porEs[k] || (porEs[k] = [])).push(v.eu);
+      sentidos(v).forEach(function (k) { (deQuien[k] || (deQuien[k] = [])).push(v); });
+    });
+    fondo.forEach(function (v) {
+      var mia = normalizar(v.eu), rivales = {};
+      sentidos(v).forEach(function (k) {
+        deQuien[k].forEach(function (o) {
+          if (normalizar(o.eu) !== mia) rivales[normalizar(o.eu)] = o.eu;
+        });
+      });
+      var k0 = normalizar(v.es), nombres = Object.keys(rivales);
+      if (nombres.length) ambiguas[k0] = true;
+      choca[mia] = rivales;
+      // al teclear ese significado valen la suya y todas las que lo comparten
+      porEs[k0] = [v.eu].concat(nombres.map(function (r) { return rivales[r]; }));
     });
 
     estado.unidad = null;
     estado.modo = 'vocab';
-    estado.ctxVocab = { fondo: fondo, ambiguas: ambiguas, porEs: porEs };
+    estado.ctxVocab = { fondo: fondo, ambiguas: ambiguas, porEs: porEs, choca: choca };
     estado.ejercicios = elegirSesion(fondo, Math.min(LARGO_VOCAB, fondo.length), claveDeVocab)
       .map(function (v) {
         var base = nivelBase(clavePalabra(v.eu));
