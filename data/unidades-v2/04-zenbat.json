@@ -3269,9 +3269,9 @@
           "pregunta": "¿Qué significa «du»?",
           "opciones": [
             "(él/ella) tiene",
-            "ochenta",
-            "la gallina",
-            "sesenta"
+            "(yo) tengo",
+            "(tú) tienes",
+            "tener"
           ],
           "correcta": 0,
           "explicacion": "du = (él/ella) tiene."
@@ -3358,9 +3358,9 @@
           "pregunta": "¿Qué significa «ditut»?",
           "opciones": [
             "(yo) tengo (varias cosas)",
-            "la abuela",
-            "el segundo",
-            "padre"
+            "(yo) tengo",
+            "(él/ella) tiene",
+            "(tú) tienes"
           ],
           "correcta": 0,
           "explicacion": "ditut = (yo) tengo (varias cosas)."
@@ -3536,9 +3536,9 @@
           "pregunta": "¿Qué significa «laugarrena»?",
           "opciones": [
             "el cuarto",
-            "once",
-            "dieciocho",
-            "tener"
+            "el primero",
+            "el segundo",
+            "el quinto"
           ],
           "correcta": 0,
           "explicacion": "laugarrena = el cuarto."
@@ -3714,9 +3714,9 @@
           "pregunta": "¿Qué significa «daukat»?",
           "opciones": [
             "(yo) tengo",
-            "cien",
-            "el gato",
-            "el caballo"
+            "(él/ella) tiene",
+            "(tú) tienes",
+            "tener"
           ],
           "correcta": 0,
           "explicacion": "Del verbo «eduki». Se oye muchísimo."
@@ -3740,9 +3740,9 @@
           "pregunta": "¿Qué significa «eduki»?",
           "opciones": [
             "tener",
-            "trece",
-            "el ratón",
-            "el nieto"
+            "(yo) tengo",
+            "(él/ella) tiene",
+            "(tú) tienes"
           ],
           "correcta": 0,
           "explicacion": "El otro «tener», junto a «ukan»."
@@ -3803,9 +3803,9 @@
           "pregunta": "¿Qué significa «eduki»?",
           "opciones": [
             "tener",
-            "hermano (de un chico)",
-            "la novia",
-            "dieciocho"
+            "(yo) tengo (varias cosas)",
+            "(él/ella) tiene",
+            "(yo) tengo"
           ],
           "correcta": 0,
           "explicacion": "El otro «tener», junto a «ukan»."
@@ -3829,9 +3829,9 @@
           "pregunta": "¿Qué significa «dauka»?",
           "opciones": [
             "(él/ella) tiene",
-            "el pájaro",
-            "noventa",
-            "el conejo"
+            "(yo) tengo",
+            "(tú) tienes",
+            "tener"
           ],
           "correcta": 0,
           "explicacion": "dauka = (él/ella) tiene."
@@ -3892,9 +3892,9 @@
           "pregunta": "¿Qué significa «eduki»?",
           "opciones": [
             "tener",
-            "catorce",
-            "trece",
-            "dos"
+            "(tú) tienes",
+            "(yo) tengo (varias cosas)",
+            "(él/ella) tiene"
           ],
           "correcta": 0,
           "explicacion": "El otro «tener», junto a «ukan»."
@@ -3918,9 +3918,9 @@
           "pregunta": "¿Qué significa «dauka»?",
           "opciones": [
             "(él/ella) tiene",
-            "quince",
-            "el cuarto",
-            "el pájaro"
+            "(tú) tienes",
+            "(yo) tengo (varias cosas)",
+            "tener"
           ],
           "correcta": 0,
           "explicacion": "dauka = (él/ella) tiene."

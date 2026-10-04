@@ -106,7 +106,7 @@
     },
     {
       "titulo": "Los días de la semana",
-      "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana): <i>aste-lehena</i> es «el primero de la semana», <i>aste-artea</i> «el de en medio», <i>aste-azkena</i> «el último»… aunque el miércoles no sea el último. El nombre viene de una semana antigua más corta.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».\n\n¿Y el jueves y el viernes, que no llevan <i>aste-</i>? Arrancan los dos por <b>ost-</b>, de una capa más antigua de la lengua. De dónde sale exactamente <b>se sigue discutiendo entre especialistas</b>, así que aquí no te vamos a contar una historia bonita: apréndetelos tal cual, que es lo que hace todo el mundo.",
+      "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana), y las piezas se leen solas:\n\naste (semana) + lehen (primero) → <i>astelehena</i>, «el primero de la semana»\naste (semana) + arte (entre) → <i>asteartea</i>, «el de en medio»\naste (semana) + azken (último) → <i>asteazkena</i>, «el último de la semana»\n\nY ahí hay algo que no cuadra: el «último de la semana» es el miércoles.\n\nLa explicación más extendida es que esos tres nombres son más viejos que la semana de siete días. Antes el tiempo se contaba en bloques más cortos, de tres días: uno para empezar, uno en medio y uno para cerrar. Cuando se adoptó la semana de siete, esos tres días conservaron el nombre que ya tenían, y por eso el «último» se quedó a mitad de camino.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nCompara las dos formas y se ve para qué sirve:\n\n<i>Gaur ostirala da.</i> — Hoy es viernes.\n<i>Ostiralean Bilbon nago.</i> — El viernes estoy en Bilbao.\n\nSin la <b>-n</b> nombras el día; con la <b>-n</b> dices que algo pasa ese día.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».",
       "ejemplos": [
         {
           "eu": "Larunbatean etxean nago.",
@@ -2748,9 +2748,9 @@
           "pregunta": "¿Qué significa «euria»?",
           "opciones": [
             "la lluvia",
-            "tarde",
-            "a menudo",
-            "abril"
+            "la nieve",
+            "el viento",
+            "la nube"
           ],
           "correcta": 0,
           "explicacion": "euria = la lluvia."

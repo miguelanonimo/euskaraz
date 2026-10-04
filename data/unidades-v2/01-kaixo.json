@@ -2044,9 +2044,9 @@
           "pregunta": "¿Qué significa «euskalkia»?",
           "opciones": [
             "el dialecto",
-            "Navarra",
-            "Bizkaia",
-            "Gipuzkoa"
+            "el euskera unificado",
+            "el País Vasco",
+            "el euskera"
           ],
           "correcta": 0,
           "explicacion": "Cada forma local de hablar euskera."

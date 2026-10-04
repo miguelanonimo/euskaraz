@@ -1924,9 +1924,9 @@
           "pregunta": "¿Qué significa «kalea»?",
           "opciones": [
             "la calle",
-            "(tú) vienes",
-            "(él/ella) va",
-            "cerca"
+            "la ciudad",
+            "la tienda",
+            "el mercado"
           ],
           "correcta": 0,
           "explicacion": "kalea = la calle."
@@ -1950,9 +1950,9 @@
           "pregunta": "¿Qué significa «ospitalea»?",
           "opciones": [
             "el hospital",
-            "(él/ella) va",
-            "cerca",
-            "(yo) voy"
+            "la escuela",
+            "la biblioteca",
+            "el mercado"
           ],
           "correcta": 0,
           "explicacion": "ospitalea = el hospital."
@@ -2395,9 +2395,9 @@
           "pregunta": "¿Qué significa «sartu»?",
           "opciones": [
             "entrar",
-            "quiero",
-            "la ciudad",
-            "lejos"
+            "salir",
+            "llegar",
+            "venir"
           ],
           "correcta": 0,
           "explicacion": "sartu = entrar."
@@ -2547,9 +2547,9 @@
           "pregunta": "¿Qué significa «bizikleta»?",
           "opciones": [
             "la bicicleta",
-            "(yo) vengo",
-            "(él/ella) anda",
-            "puedo"
+            "el coche",
+            "el autobús",
+            "el tren"
           ],
           "correcta": 0,
           "explicacion": "bizikleta = la bicicleta."
