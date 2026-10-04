@@ -3885,7 +3885,7 @@
     if (!fichas.length) return;
     var d = temaDe(ej), u = d.unidad, tema = d.tema;
     abrirModal(
-      '<button class="modal__x" type="button" id="hojaCerrar" aria-label="Cerrar">' + icono('close', 24) + '</button>' +
+      '<button class="modal__x" type="button" id="hojaCerrar" aria-label="Cerrar">' + icono('close', 20) + '</button>' +
       '<div class="modal__scroll">' +
         '<p class="modal__ruta">' + esc(u.numero + '. ' + u.titulo + (tema ? ' · ' + tema.id + ' ' + tema.titulo : '')) + '</p>' +
         pintarFichas(fichas) +
@@ -3941,7 +3941,7 @@
     var fichas = fichasDe(h.ej);
     var fbc = h.leve ? 'var(--almost)' : h.ok ? 'var(--right)' : 'var(--wrong)';
     abrirModal(
-      '<button class="modal__x" type="button" id="revisarCerrar" aria-label="Cerrar">' + icono('close', 24) + '</button>' +
+      '<button class="modal__x" type="button" id="revisarCerrar" aria-label="Cerrar">' + icono('close', 20) + '</button>' +
       '<div class="modal__scroll">' +
         pasos +
         '<p class="modal__ruta">Pregunta ' + (i + 1) + '</p>' +
