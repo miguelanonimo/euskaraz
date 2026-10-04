@@ -31,10 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- **Ric** · 04/10 08:37 — **toco `js/app.js` y `css/styles.css`**: la barra de
-  tramos dentro del repaso de una pregunta (verde/rojo/gris, con el que
-  miras más grueso y tocable) y animación al deslizar. Zonas:
-  `segmentos()`, `revisarPregunta()`, `revisarVecina()` y `.steps__seg`.
+- (vacío — nadie trabajando ahora mismo)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
