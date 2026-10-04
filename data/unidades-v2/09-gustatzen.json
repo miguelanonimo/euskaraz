@@ -2623,9 +2623,9 @@
           "pregunta": "¿Qué significa «antzerkia»?",
           "opciones": [
             "el teatro",
-            "decir",
-            "me parece",
-            "todo"
+            "el cine",
+            "el deporte",
+            "la danza, el baile"
           ],
           "correcta": 0,
           "explicacion": "antzerkia = el teatro."
@@ -3042,9 +3042,9 @@
           "pregunta": "¿Qué significa «lagundu»?",
           "opciones": [
             "ayudar",
-            "mucho",
-            "a vosotros",
-            "el calor"
+            "dar",
+            "preguntar",
+            "responder"
           ],
           "correcta": 0,
           "explicacion": "Se construye con dativo: «lagundu dio»."
@@ -3068,9 +3068,9 @@
           "pregunta": "¿Qué significa «eman»?",
           "opciones": [
             "dar",
-            "el cine",
-            "la primavera",
-            "a nosotros"
+            "comprar",
+            "vender",
+            "ayudar"
           ],
           "correcta": 0,
           "explicacion": "eman = dar."
@@ -3157,9 +3157,9 @@
           "pregunta": "¿Qué significa «galdetu»?",
           "opciones": [
             "preguntar",
-            "el libro",
-            "poco",
-            "el pie"
+            "responder",
+            "decir",
+            "ayudar"
           ],
           "correcta": 0,
           "explicacion": "galdetu = preguntar."

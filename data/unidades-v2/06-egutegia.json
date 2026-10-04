@@ -2748,9 +2748,9 @@
           "pregunta": "¿Qué significa «euria»?",
           "opciones": [
             "la lluvia",
-            "tarde",
-            "a menudo",
-            "abril"
+            "la nieve",
+            "el viento",
+            "la nube"
           ],
           "correcta": 0,
           "explicacion": "euria = la lluvia."
