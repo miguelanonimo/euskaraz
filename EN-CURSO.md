@@ -31,7 +31,10 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- (vacío — nadie trabajando ahora mismo)
+- **Ric** · 04/10 08:53 — **toco `js/app.js` y `css/styles.css`**: la X de cerrar
+  de las modales, más pequeña y sobre un círculo translúcido con desenfoque,
+  para que el contenido gane los 40px que le reservaba. Zonas: `.modal__x`,
+  `.modal__panel--ficha .modal__scroll` y los dos `icono('close', …)`.
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
