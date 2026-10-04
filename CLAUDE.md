@@ -9,6 +9,22 @@ curso.
 
 ## Decisiones ya cerradas (no las vuelvas a plantear)
 
+- **En el repaso de vocabulario NO se pueden repasar las preguntas ya
+  contestadas, y es correcto que no se pueda** (Ric, 04/10/2026). Tocar un
+  paso de la barra abre `revisarPregunta()` en los ejercicios y en el
+  repaso mezclado, pero no ahí, y **no es un olvido**: los dos modelos son
+  incompatibles. En vocabulario `estado.ejercicios` es una cola —la palabra
+  actual es siempre `[0]`, las falladas vuelven a entrar con `splice()`— y
+  `estado.indice` se queda en 0 toda la sesión. La barra, en consecuencia,
+  no cuenta preguntas sino **palabras aprendidas** (ver el comentario de
+  `actualizarBarra()`: «una barra que retrocede desanima»). Inicializar
+  `estado.historial` ahí haría que cada respuesta machacara la posición 0,
+  y los segmentos no se corresponderían con ninguna pregunta.
+  Se valoró y se descartó hacer que el segmento k abriera la k-ésima
+  palabra dejada puesta: una palabra solo sale de la cola cuando se
+  acierta, así que ahí nunca se vería un fallo propio. Y sobre todo, en
+  vocabulario **las falladas ya vuelven solas**: ese es el repaso.
+
 - **Antes de dar por buena cualquier forma en euskera, verifícala en una
   fuente normativa, nunca por intuición.** Las reglas ya verificadas —y
   los errores que costó encontrarlas— están en **[`GRAMATIKA.md`](GRAMATIKA.md)**,
