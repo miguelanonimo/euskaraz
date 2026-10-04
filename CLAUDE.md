@@ -9,6 +9,16 @@ curso.
 
 ## Decisiones ya cerradas (no las vuelvas a plantear)
 
+- **Antes de dar por buena cualquier forma en euskera, verifícala en una
+  fuente normativa, nunca por intuición.** Las reglas ya verificadas —y
+  los errores que costó encontrarlas— están en **[`GRAMATIKA.md`](GRAMATIKA.md)**,
+  en la raíz. Léelo antes de escribir o corregir contenido: once reglas
+  cerradas (las horas, `noren?`/`zeren?`, `edonor` no es bizkaiera,
+  `inoiz`, `anaia`/`arreba`, `euskaldun`, `euskara`/`euskaraz ikasi`,
+  «peor», `hemezortzi`, `hala-hola`) que no hay que volver a introducir
+  mal. Un hablante nativo detectó un error en una unidad y la revisión
+  posterior destapó otras ocho.
+
 - **El curso va a tener varios euskalkiak, no solo bizkaiera** (Ric,
   03/10/2026). Hoy solo está montado el bizkaiera, pero la intención es
   añadir más para que cada estudiante practique las formas de su zona. Así
