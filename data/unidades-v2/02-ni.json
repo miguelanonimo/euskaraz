@@ -436,7 +436,11 @@
     },
     {
       "eu": "haren",
-      "es": "su (de él / de ella)",
+      "es": "su (de él/de ella)",
+      "esAlt": [
+        "su de él",
+        "su de ella"
+      ],
       "nota": "De otra persona, no de quien hace la acción en esa frase. Si es lo suyo propio, «bere».",
       "audio": "unidades/u2/haren.mp3",
       "categoria": "otros",
@@ -444,7 +448,11 @@
     },
     {
       "eu": "bere",
-      "es": "su (de él / de ella), lo suyo propio",
+      "es": "su (de él/de ella), lo suyo propio",
+      "esAlt": [
+        "su de él",
+        "su de ella"
+      ],
       "nota": "Frente a «haren», que es de otro. La diferencia se explica en la unidad 5.",
       "categoria": "otros",
       "subnivel": "2.2"
@@ -467,7 +475,11 @@
     },
     {
       "eu": "haien",
-      "es": "su (de ellos / de ellas)",
+      "es": "su (de ellos/de ellas)",
+      "esAlt": [
+        "su de ellos",
+        "su de ellas"
+      ],
       "nota": null,
       "audio": "unidades/u2/haien.mp3",
       "categoria": "otros",
