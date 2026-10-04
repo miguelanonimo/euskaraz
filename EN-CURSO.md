@@ -31,7 +31,10 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- (vacío — nadie trabajando ahora mismo)
+- **Ric** · 04/10 08:23 — **toco `js/app.js`**: deslizar entre las respuestas
+  ya contestadas dentro del repaso de una pregunta, y el botón «Ver la
+  explicación» en negro con el icono del libro. Zonas: `revisarPregunta()`,
+  `cerrarModal()` y el gesto, que pasa a función reutilizable.
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
