@@ -1142,6 +1142,18 @@
   // no una sola. Por eso van en dos animate() aparte: opacity y
   // transform no tienen por qué compartir duración.
   var FADE_MS = 140;
+  /* Entrar deslizando de un lado. Es entrar() en horizontal: al cambiar de
+     respuesta se ve de qué lado viene, y así se lee como pasar tarjetas en
+     vez de como un repintado (pedido de Ric). */
+  function entrarDeLado(nodo, desde) {
+    if (!nodo || REDUCIR_MOVIMIENTO.matches) return;
+    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
+    nodo.animate(
+      [{ transform: 'translateX(' + desde + 'px)' }, { transform: 'none' }],
+      { duration: 260, easing: 'cubic-bezier(.2,.8,.2,1)' }
+    );
+  }
+
   function entrar(nodo, distancia) {
     if (!nodo || REDUCIR_MOVIMIENTO.matches) return;
     nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
@@ -1235,7 +1247,7 @@
      en unidad/repaso — en vocab la cola se reordena y el índice no
      identifica una pregunta fija). Un paso ya respondido se queda en
      verde o rojo según cómo fue, en vez de en el color de la lección. */
-  function segmentos(total, hechos, resultados) {
+  function segmentos(total, hechos, resultados, aqui) {
     total = Math.max(1, total || 1);
     if (total > 20) {
       var pct = Math.max(0, Math.min(100, hechos / total * 100));
@@ -1245,7 +1257,8 @@
     for (var i = 0; i < total; i++) {
       var f = Math.max(0, Math.min(1, hechos - i));
       var r = resultados && resultados[i];
-      var clase = 'steps__seg' + (f > 0 ? ' is-on' : '') + (r === true ? ' is-ok' : r === false ? ' is-mal' : '');
+      var clase = 'steps__seg' + (f > 0 ? ' is-on' : '') + (r === true ? ' is-ok' : r === false ? ' is-mal' : '')
+                + (i === aqui ? ' is-aqui' : '');
       // data-i identifica el paso para poder tocarlo y repasarlo — solo
       // tiene sentido en uno ya respondido (ver revisarPregunta()).
       out += '<div class="' + clase + '" data-i="' + i + '"><span style="width:' + (f * 100) + '%"></span></div>';
@@ -3909,19 +3922,28 @@
   function revisarVecina(paso) {
     if (revisandoIdx === null || !estado.historial) return;
     for (var i = revisandoIdx + paso; i >= 0 && i < estado.historial.length; i += paso) {
-      if (estado.historial[i]) { revisarPregunta(i); return; }
+      if (estado.historial[i]) { revisarPregunta(i, paso > 0 ? 40 : -40); return; }
     }
   }
 
-  function revisarPregunta(i) {
+  function revisarPregunta(i, desde) {
     var h = estado.historial && estado.historial[i];
     if (!h) return;
     revisandoIdx = i;
+    /* La misma barra de la cabecera, que ahí queda tapada por la modal: de
+       un vistazo se ve cómo fue el test entero y dónde estás dentro de él.
+       Se pasan los mismos `hechos` que la cabecera, así que lo contestado
+       va lleno y coloreado y lo que falta se queda en gris. */
+    var pasos = '<div class="steps steps--repaso">' +
+      segmentos(estado.ejercicios.length || 1,
+                estado.indice + (estado.resuelto ? 1 : 0.5),
+                estado.resultados, i) + '</div>';
     var fichas = fichasDe(h.ej);
     var fbc = h.leve ? 'var(--almost)' : h.ok ? 'var(--right)' : 'var(--wrong)';
     abrirModal(
       '<button class="modal__x" type="button" id="revisarCerrar" aria-label="Cerrar">' + icono('close', 24) + '</button>' +
       '<div class="modal__scroll">' +
+        pasos +
         '<p class="modal__ruta">Pregunta ' + (i + 1) + '</p>' +
         h.html +
         '<div class="fb" style="--fbc:' + fbc + '">' +
@@ -3938,6 +3960,15 @@
       'modal__panel--ficha');
     $('revisarCerrar').addEventListener('click', cerrarModal);
     if ($('revisarFicha')) $('revisarFicha').addEventListener('click', function () { abrirHojaPara(h.ej); });
+    /* Tocar un tramo salta a esa pregunta. El manejador de la cabecera no
+       llega aquí: la modal la tapa. */
+    el.modalPanel.querySelector('.steps--repaso').addEventListener('click', function (e) {
+      var p = e.target.closest('.steps__seg[data-i]');
+      if (!p) return;
+      var j = parseInt(p.dataset.i, 10);
+      if (j !== revisandoIdx) revisarPregunta(j, j > revisandoIdx ? 40 : -40);
+    });
+    entrarDeLado(el.modalPanel.querySelector('.modal__scroll'), desde);
   }
 
   function feedback(ok, titulo, cuerpo, leve) {
