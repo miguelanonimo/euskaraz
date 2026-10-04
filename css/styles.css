@@ -919,20 +919,30 @@ button.dentry__u:active{ opacity: .6; }
 .modal__panel > p{ margin: 0; font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.5; letter-spacing: -0.01em; text-wrap: pretty; }
 .modal__msg{ margin: 0; font-weight: 500; font-size: 15px; line-height: 1.4; }
 .modal__msg.is-mal{ color: var(--wrong); }
+/* Flotando sobre el contenido, no apartándolo. Antes reservaba 40px de
+   padding a la derecha en .modal__panel--ficha y las opciones de un
+   ejercicio partían en dos líneas (detectado por Ric). Ahora el texto pasa
+   por debajo y el desenfoque lo deja intuirse sin que estorbe: sobre blanco
+   se ve la X sola, sobre cualquier otra cosa se adivina el círculo. Sin
+   borde a propósito, por lo mismo. */
 .modal__x{
-  position: absolute; top: 20px; right: 20px;
-  display: flex; padding: 8px; border: 0; background: none; color: rgb(10,10,10); cursor: pointer;
+  position: absolute; top: 14px; right: 14px; z-index: 5;
+  display: flex; padding: 7px; border: 0; border-radius: 1000px;
+  background: rgba(255, 255, 255, .72);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  color: rgb(10,10,10); cursor: pointer;
 }
 /* La X de la hoja de ficha no debe desplazarse con la lectura: el panel
    deja de hacer scroll él mismo y pasa el scroll a .modal__scroll, un
-   hijo aparte. El padding-right de ese hijo reserva sitio para la X en
-   TODA la columna, no solo arriba — si no, cualquier línea que suba
-   hasta esa altura (no solo el título) puede acabar debajo del botón. */
+   hijo aparte. Ya no reserva sitio a la derecha para la X (antes 72px, y
+   las opciones de un ejercicio partían en dos líneas): la X flota encima
+   con su desenfoque, y el padding-top de 56px deja libre la única franja
+   por la que pasa — la X acaba a 48px. */
 .modal__panel--ficha{ padding: 0; overflow: hidden; }
 .modal__panel--ficha .modal__scroll{
   flex: 1 1 auto; min-height: 0; overflow-y: auto;
   display: flex; flex-direction: column; gap: 32px;
-  padding: 64px 72px calc(32px + var(--safe-b)) 32px;
+  padding: 56px 32px calc(32px + var(--safe-b)) 32px;
 }
 .modal__ruta{ margin: 0; font-family: var(--f-t); font-weight: 700; font-size: 12px; line-height: 1; letter-spacing: .1em; text-transform: uppercase; color: var(--grey50); }
 

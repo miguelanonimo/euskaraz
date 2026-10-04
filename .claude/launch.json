@@ -4,8 +4,11 @@
     {
       "name": "euskaraz",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8765"],
-      "port": 8765,
+      "runtimeArgs": [
+        "scripts/servidor-local.py",
+        "8321"
+      ],
+      "port": 8321,
       "autoPort": false
     }
   ]
