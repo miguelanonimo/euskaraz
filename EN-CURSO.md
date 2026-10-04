@@ -31,6 +31,12 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
+- **Ric** · 04/10 18:20 — **toco `js/app.js`**: el repaso de vocabulario
+  ofrecía «haren» y «bere» como opciones de la misma pregunta («su, de
+  él/de ella») y solo contaba una. Zonas: el constructor de `ctxVocab`
+  (`ambiguas` / `porEs`) y los dos generadores de distractores,
+  `preguntaOpcion` y `preguntaEscucharOpcion`.
+
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
 
