@@ -31,11 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- **Ric** · 04/10 07:59 — **toco `js/app.js`**: en Progreso, «palabras vistas»
-  se compara contra el diccionario entero, variantes dialectales incluidas,
-  así que con batua el tope es 528/540 y no se puede llegar al 100%. Que el
-  denominador respete `euskalkiActivo`. Zonas: `diccionario()` y
-  `pantallaProgreso()`.
+- (vacío — nadie trabajando ahora mismo)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
