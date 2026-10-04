@@ -4622,12 +4622,21 @@
     }
   });
 
-  /* Diagnóstico temporal del hueco en modo app en móvil (?debug) — se
-     actualiza solo, sin recargar, para poder rotar el móvil o escribir
-     en la barra de direcciones y ver cómo cambian los números. Quitar
-     junto con el <pre id="debugPanel"> de index.html en cuanto se
-     resuelva el hueco. */
-  if (location.search.indexOf('debug') !== -1) {
+  /* Diagnóstico temporal del hueco en modo app en móvil — se actualiza
+     solo, sin recargar, para poder rotar el móvil y ver cómo cambian
+     los números. Antes solo miraba ?debug en la URL, pero el icono de
+     la pantalla de inicio abre por el start_url del manifest (./, sin
+     query), así que nunca llegaba a verse en modo standalone — que es
+     justo el modo que hay que depurar. Ahora, visitar ?debug una vez
+     en Safari deja la marca en localStorage (el almacenamiento es del
+     origen, no del modo en que se abrió), y desde ahí el icono normal
+     ya la lleva encima. Quitar esto junto con el <pre id="debugPanel">
+     de index.html en cuanto se resuelva el hueco. */
+  var debugEnUrl = location.search.indexOf('debug') !== -1;
+  if (debugEnUrl) { try { localStorage.setItem('euskaraz_debug', '1'); } catch (e) {} }
+  var mostrarDebug = debugEnUrl;
+  if (!mostrarDebug) { try { mostrarDebug = localStorage.getItem('euskaraz_debug') === '1'; } catch (e) {} }
+  if (mostrarDebug) {
     var panelDebug = document.getElementById('debugPanel');
     panelDebug.hidden = false;
     var probeSafeB = document.createElement('div');
@@ -4660,6 +4669,11 @@
     pintarDebug();
     window.addEventListener('resize', pintarDebug);
     setInterval(pintarDebug, 1000);
+    // Tocar el panel lo apaga del todo (borra la marca, no solo lo oculta).
+    panelDebug.addEventListener('click', function () {
+      try { localStorage.removeItem('euskaraz_debug'); } catch (e) {}
+      panelDebug.hidden = true;
+    });
   }
 
 })();
