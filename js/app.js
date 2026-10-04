@@ -1574,7 +1574,13 @@
     var sem = ultimaSemana();
     var aciertos = sem.total ? Math.round(sem.aciertos / sem.total * 100) : 0;
     var vistas = Object.keys(progreso.srs).filter(function (k) { return k.charAt(0) === 'v'; }).length;
-    var totalPalabras = diccionario().length || 1;
+    /* El total son las palabras que PUEDEN preguntarte, no las del
+       diccionario entero: con batua puesto las 12 variantes dialectales no
+       salen nunca, y el 100% era inalcanzable —el tope real era 528 de 540
+       (detectado por Ric). */
+    var totalPalabras = diccionario().filter(function (e) {
+      return !e.dial || e.dial === euskalkiActivo;
+    }).length || 1;
     var media = sem.activos ? Math.round(sem.total / sem.activos) : 0;
 
     el.screens.progress.innerHTML =
@@ -2681,7 +2687,7 @@
     if (DICC) return DICC;
     var vistas = {};
     DICC = [];
-    function anadir(v, es, u, sub) {
+    function anadir(v, es, u, sub, dial) {
       var clave = normalizar(v.eu);
       if (vistas[clave]) return;
       vistas[clave] = true;
@@ -2692,6 +2698,11 @@
         // A dónde lleva la etiqueta de unidad. Antes solo se guardaba el
         // número, que sirve para enseñarlo pero no para ir a ningún sitio.
         unidadId: u.id, subnivel: sub || null,
+        /* De qué euskalki es, si es una variante dialectal. El diccionario
+           las enseña todas siempre, pero solo se PREGUNTAN las del euskalki
+           activo (ver formasDe), así que esto es lo que deja contar cuántas
+           palabras puede ver de verdad quien tiene batua puesto. */
+        dial: dial || null,
         letra: (plegar(v.eu).charAt(0) || '').toUpperCase(),
         busca: plegar(v.eu) + ' ' + plegar(es) + ' ' + plegar(v.nota || '')
       });
@@ -2700,7 +2711,9 @@
       u.vocabulario.forEach(function (v) {
         anadir(v, v.es, u, v.subnivel);
         // Una variante dialectal se explica donde su palabra madre.
-        (v.variantes || []).forEach(function (variante) { anadir(variante, v.es, u, v.subnivel); });
+        (v.variantes || []).forEach(function (variante) {
+          anadir(variante, v.es, u, v.subnivel, variante.registro);
+        });
       });
     });
     DICC.sort(function (a, b) {
