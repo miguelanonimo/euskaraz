@@ -1,8 +1,18 @@
 # Propuestas para la interfaz
 
-Dos cosas que salieron trabajando con Ric el 2 y el 3 de octubre de 2026 y
-que **no se han tocado**: las dos son de `js/app.js`, el carril de Miguel.
-Aquí queda el análisis hecho para que no haya que repetirlo.
+> **Estado (03/10/2026, 15:00): Miguel implementó las dos.** `2636cdf` «El
+> dialecto pasa de interruptor a selector de euskalki» y `909be93` «Repasar
+> una pregunta ya contestada desde los pasos de arriba». El análisis de
+> abajo se deja como registro de por qué se hicieron así, no como pendiente.
+>
+> La segunda se resolvió por una vía mejor que la que se proponía: en vez
+> de un gesto, **tocando un paso de la barra de arriba** se abre la
+> pregunta con su resultado y el botón de la explicación (`revisarPregunta()`,
+> con `estado.historial`). El gesto llegó después y solo para las fichas.
+
+Dos cosas que salieron trabajando con Ric el 2 y el 3 de octubre de 2026.
+Las dos son de `js/app.js`, el carril de Miguel. Aquí queda el análisis
+hecho para que no haya que repetirlo.
 
 ---
 
