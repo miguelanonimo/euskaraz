@@ -2826,6 +2826,7 @@
   }
 
   function cerrarModal() {
+    revisandoIdx = null;
     if (el.modal.hidden) return;
     el.modal.hidden = true;
     el.modalPanel.innerHTML = '';
@@ -3898,9 +3899,24 @@
     pantallaGramatica(i, estado.desdeDicc);
   }
 
+  /* Qué pregunta se está repasando ahora mismo, para poder saltar a la de
+     al lado deslizando. null cuando la modal está cerrada. */
+  var revisandoIdx = null;
+
+  /* La anterior o la siguiente que SÍ esté contestada: en un test se puede
+     volver atrás, así que puede haber huecos por delante. En los extremos no
+     hace nada, que es menos desconcertante que repintar lo mismo. */
+  function revisarVecina(paso) {
+    if (revisandoIdx === null || !estado.historial) return;
+    for (var i = revisandoIdx + paso; i >= 0 && i < estado.historial.length; i += paso) {
+      if (estado.historial[i]) { revisarPregunta(i); return; }
+    }
+  }
+
   function revisarPregunta(i) {
     var h = estado.historial && estado.historial[i];
     if (!h) return;
+    revisandoIdx = i;
     var fichas = fichasDe(h.ej);
     var fbc = h.leve ? 'var(--almost)' : h.ok ? 'var(--right)' : 'var(--wrong)';
     abrirModal(
@@ -3913,7 +3929,11 @@
             '<span class="fb__title">' + esc(h.titulo) + '</span></div>' +
           '<div class="fb__body">' + (h.cuerpo || '') + '</div>' +
         '</div>' +
-        (fichas.length ? '<button class="btn btn--outline btn--block" type="button" id="revisarFicha">Ver la explicación</button>' : '') +
+        /* Negro y con el icono del libro, el mismo de `btnFicha`: es la
+           misma función que el botón que sale al contestar, y conviene que
+           se lea como tal (pedido de Ric). */
+        (fichas.length ? '<button class="btn btn--ink btn--block" type="button" id="revisarFicha">' +
+          icono('dictionary', 20) + 'Ver la explicación</button>' : '') +
       '</div>',
       'modal__panel--ficha');
     $('revisarCerrar').addEventListener('click', cerrarModal);
@@ -4143,30 +4163,42 @@
 
   pintarNavegacion();
 
-  /* Deslizar para cambiar de ficha. Solo en las fichas: es la única
-     pantalla sin nada que arrastrar, así que el gesto no se pelea con
-     nada (las piezas de «ordena las palabras» se colocan tocando).
-     Pasivo a propósito: no se bloquea el scroll vertical, solo se mira
-     el gesto cuando ya ha terminado y se decide si era horizontal. */
-  (function deslizarEntreFichas() {
-    var MINIMO = 60;     // px: por debajo es un toque tembloroso, no un gesto
-    var TOPE = 600;      // ms: más lento que esto es arrastrar, no deslizar
+  /* Un deslizamiento horizontal sobre `nodo`. Pasivo a propósito: no
+     bloquea el scroll vertical, mira el gesto cuando ya ha terminado y lo
+     descarta si duró demasiado, si recorrió poco, o si fue más vertical que
+     horizontal (alguien bajando la página en diagonal). Lo usan las fichas
+     de un tema y el repaso de una pregunta ya contestada. */
+  function alDeslizar(nodo, haciaAtras, haciaDelante) {
+    var MINIMO = 60;   // px: por debajo es un toque tembloroso, no un gesto
+    var TOPE = 600;    // ms: más lento que esto es arrastrar, no deslizar
     var x0 = null, y0 = null, t0 = 0;
-    el.screens.gram.addEventListener('touchstart', function (e) {
+    nodo.addEventListener('touchstart', function (e) {
       if (e.touches.length !== 1) { x0 = null; return; }
       x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; t0 = Date.now();
     }, { passive: true });
-    el.screens.gram.addEventListener('touchend', function (e) {
+    nodo.addEventListener('touchend', function (e) {
       if (x0 === null) return;
       var t = e.changedTouches[0], dx = t.clientX - x0, dy = t.clientY - y0;
       x0 = null;
       if (Date.now() - t0 > TOPE) return;
       if (Math.abs(dx) < MINIMO) return;
-      // Claramente horizontal, o era alguien bajando la página en diagonal.
       if (Math.abs(dx) < Math.abs(dy) * 1.5) return;
-      irAFicha(estado.fichaIdx + (dx < 0 ? 1 : -1));
+      (dx < 0 ? haciaDelante : haciaAtras)();
     }, { passive: true });
-  })();
+  }
+
+  /* Las fichas de un tema. Es la única pantalla sin nada que arrastrar, así
+     que el gesto no se pelea con nada (las piezas de «ordena las palabras»
+     se colocan tocando). */
+  alDeslizar(el.screens.gram,
+    function () { irAFicha(estado.fichaIdx - 1); },
+    function () { irAFicha(estado.fichaIdx + 1); });
+
+  /* Y dentro del repaso de una pregunta, para recorrer lo ya contestado sin
+     tener que cerrar y volver a tocar el punto de arriba (pedido de Ric). */
+  alDeslizar(el.modalPanel,
+    function () { revisarVecina(-1); },
+    function () { revisarVecina(1); });
 
   // Pestañas y menú lateral
   [el.tabbarItems, el.sidenav].forEach(function (cont) {
