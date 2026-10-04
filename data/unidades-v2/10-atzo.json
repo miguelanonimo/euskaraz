@@ -1652,9 +1652,9 @@
           "pregunta": "¿Qué significa «joan den astean»?",
           "opciones": [
             "la semana pasada",
-            "ocurrir, pasar",
-            "(nosotros) teníamos",
-            "fácil"
+            "el año pasado",
+            "anteayer",
+            "hace dos años"
           ],
           "correcta": 0,
           "explicacion": "«joan den» es «la que se ha ido»."
@@ -1767,9 +1767,9 @@
           "pregunta": "¿Qué significa «iaz»?",
           "opciones": [
             "el año pasado",
-            "(nosotros) éramos",
-            "despacio",
-            "terminar"
+            "la semana pasada",
+            "anteayer",
+            "hace dos años"
           ],
           "correcta": 0,
           "explicacion": "iaz = el año pasado."
@@ -1919,9 +1919,9 @@
           "pregunta": "¿Qué significa «iaz»?",
           "opciones": [
             "el año pasado",
-            "(yo) estaba",
+            "la semana pasada",
             "antes",
-            "(partícula de pregunta)"
+            "este año"
           ],
           "correcta": 0,
           "explicacion": "iaz = el año pasado."
@@ -1945,9 +1945,9 @@
           "pregunta": "¿Qué significa «herenegun»?",
           "opciones": [
             "anteayer",
-            "el verbo",
-            "algo",
-            "felicidades"
+            "ayer",
+            "la semana pasada",
+            "el año pasado"
           ],
           "correcta": 0,
           "explicacion": "herenegun = anteayer."

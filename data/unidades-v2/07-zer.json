@@ -2719,9 +2719,9 @@
           "pregunta": "¿Qué significa «garbitu»?",
           "opciones": [
             "limpiar",
-            "el campeonato",
-            "el desayuno",
-            "la carne"
+            "trabajar",
+            "vestirse",
+            "poner"
           ],
           "correcta": 0,
           "explicacion": "garbitu = limpiar."

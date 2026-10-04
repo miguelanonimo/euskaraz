@@ -1151,9 +1151,9 @@
           "pregunta": "¿Qué significa «oporrak»?",
           "opciones": [
             "las vacaciones",
-            "así que, por tanto",
-            "(yo) estaba",
-            "más (cantidad)"
+            "las fiestas",
+            "el fin de semana",
+            "el día festivo"
           ],
           "correcta": 0,
           "explicacion": "Siempre en plural."
@@ -1329,9 +1329,9 @@
           "pregunta": "¿Qué significa «hurrengoa»?",
           "opciones": [
             "el siguiente",
-            "de verdad",
-            "nadie",
-            "mañana"
+            "el último",
+            "el primero",
+            "el segundo"
           ],
           "correcta": 0,
           "explicacion": "hurrengoa = el siguiente."
@@ -1355,9 +1355,9 @@
           "pregunta": "¿Qué significa «esaldia»?",
           "opciones": [
             "la frase",
-            "(yo) estaba",
-            "solo, únicamente",
-            "de pequeño"
+            "la palabra",
+            "el verbo",
+            "la pregunta"
           ],
           "correcta": 0,
           "explicacion": "esaldia = la frase."
@@ -1444,9 +1444,9 @@
           "pregunta": "¿Qué significa «esaldia»?",
           "opciones": [
             "la frase",
-            "(partícula de pregunta)",
-            "menos",
-            "(yo) tenía, tuve"
+            "el verbo",
+            "la palabra",
+            "la respuesta"
           ],
           "correcta": 0,
           "explicacion": "esaldia = la frase."
@@ -1507,9 +1507,9 @@
           "pregunta": "¿Qué significa «aditza»?",
           "opciones": [
             "el verbo",
-            "de verdad",
-            "terminar",
-            "(yo) tenía, tuve"
+            "la palabra",
+            "la frase",
+            "la pregunta"
           ],
           "correcta": 0,
           "explicacion": "aditza = el verbo."
@@ -1533,9 +1533,9 @@
           "pregunta": "¿Qué significa «hitza»?",
           "opciones": [
             "la palabra",
-            "aun así",
-            "terminar",
-            "mejor (adverbio)"
+            "la frase",
+            "la pregunta",
+            "la respuesta"
           ],
           "correcta": 0,
           "explicacion": "hitza = la palabra."

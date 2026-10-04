@@ -2343,9 +2343,9 @@
           "pregunta": "¿Qué significa «nago»?",
           "opciones": [
             "(yo) estoy",
-            "bonito/a",
-            "la cocina",
-            "el tejado"
+            "(tú) estás",
+            "(él/ella) está",
+            "(ellos) están"
           ],
           "correcta": 0,
           "explicacion": "nago = (yo) estoy."

@@ -2895,9 +2895,9 @@
           "pregunta": "¿Qué significa «naiz»?",
           "opciones": [
             "(yo) soy",
-            "el/la amigo/a",
-            "tu / su (de usted)",
-            "vuestro/a"
+            "(tú) eres",
+            "(él/ella) es",
+            "(ellos) son"
           ],
           "correcta": 0,
           "explicacion": "naiz = (yo) soy."
