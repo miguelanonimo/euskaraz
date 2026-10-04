@@ -31,7 +31,10 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- (vacío — nadie trabajando ahora mismo)
+- **Ric** · 04/10 07:19 — **toco `js/app.js` y `css/styles.css`**: el «100%» que
+  se sale de su tarjeta en la pantalla de resultado (análisis en
+  `docs/ideas-ric.md`). Zonas: `.res__tiles` y `casilla()`. Después traigo
+  contenido de `main` y llevo el diseño a producción.
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
