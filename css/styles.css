@@ -134,6 +134,13 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + 32px + var(--safe-b)); }
 /* En las fichas la barra es navegación, no historial: todos los pasos
    llevan a su ficha, también los de delante (pedido de Ric). */
 .steps--nav .steps__seg{ cursor: pointer; }
+/* La barra dentro del repaso de una pregunta: todos los tramos llevan a su
+   pregunta, y el que estás mirando va más grueso. La media línea NO sirve
+   para esto: ya significa «por dónde vas en el test», y usarla para las dos
+   cosas confundiría. */
+.steps--repaso .steps__seg{ cursor: pointer; }
+.steps__seg.is-aqui::before,
+.steps__seg.is-aqui > span{ height: 10px; }
 .steps--nav .steps__seg:active::before{ opacity: .45; }
 .steps__seg::before{
   content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 4px; transform: translateY(-50%);
