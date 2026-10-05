@@ -817,6 +817,27 @@ div.scard{ cursor: default; }
   font-family: var(--f-d); font-weight: 800; font-size: 22px; line-height: 1; letter-spacing: 0.01em;
 }
 
+/* Pantallas bajas: mismo criterio que Hoy (ver esa sección) — el rosco
+   y las barras son las piezas grandes que sobran. Van aquí, después de
+   las reglas base, para que de verdad las pisen (misma especificidad:
+   gana quien va después en el archivo, no quien está en un @media). */
+@media (max-height: 800px){
+  #screenProgress .stack{ gap: 16px; }
+  .donut{ width: 190px; height: 190px; }
+  .statbar{ height: 72px; }
+}
+@media (max-height: 700px){
+  #screenProgress .stack{ gap: 12px; }
+  .donut{ width: 160px; height: 160px; }
+  .donut::before, .donut::after{
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 22px), #000 calc(100% - 22px));
+            mask: radial-gradient(farthest-side, transparent calc(100% - 22px), #000 calc(100% - 22px));
+  }
+  .donut__in b{ font-size: 40px; }
+  .statbar{ height: 60px; padding: 12px 20px; }
+  .statbar__v b{ font-size: 40px; }
+}
+
 /* ═══════════ DICCIONARIO ═══════════ */
 
 .dict__filtros{ display: grid; gap: 8px 12px; }
