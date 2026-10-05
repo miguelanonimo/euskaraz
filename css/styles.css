@@ -386,7 +386,11 @@ div.scard{ cursor: default; }
 .scard__v small{ font-size: 18px; line-height: 1.48; margin-left: 4px; }
 .scard__stat{ display: flex; align-items: flex-end; }
 
-.racha{ display: flex; justify-content: space-between; align-items: center; padding-top: 24px; }
+/* padding-bottom siempre, no solo en los breakpoints bajos: medido a
+   844px de alto (un móvil normal, fuera de ambos @media de abajo) el
+   hueco con el tabbar era de 4px — quedaba pegado también fuera de
+   pantallas "cortas", porque antes solo lo recuperaba el breakpoint. */
+.racha{ display: flex; justify-content: space-between; align-items: center; padding-top: 24px; padding-bottom: 20px; }
 .racha__lbl{ font-family: var(--f-d); font-weight: 800; font-size: 22px; line-height: 1; color: var(--main); }
 .racha__dias{ display: flex; gap: 6px; align-items: center; }
 .day{
@@ -398,23 +402,31 @@ div.scard{ cursor: default; }
 .day--ok{ background: var(--main); color: var(--white); }
 .day--off{ background: transparent; box-shadow: inset 0 0 0 1px var(--main); }
 
-/* Pantallas bajas (iPhone SE y similares, o cualquier móvil en horizontal):
-   Hoy es la pantalla con más piezas apiladas, así que es la que más se
-   nota. Menos aire entre bloques y tarjetas algo más bajas — no hace
-   falta tocar el contenido de dentro, solo la caja. La "Racha" ganaba
-   antes su separación del tabbar del aire general que quitamos a
-   propósito en el resto de la app; aquí se le devuelve un poco, solo a
-   ella, en vez de recuperarlo en todos lados. */
-@media (max-height: 800px){
+/* Pantallas bajas: Hoy es la pantalla con más piezas apiladas, así que
+   es la que más se nota. Menos aire entre bloques y tarjetas algo más
+   bajas — no hace falta tocar el contenido de dentro, solo la caja. La
+   "Racha" ganaba antes su separación del tabbar del aire general que
+   quitamos a propósito en el resto de la app; aquí se le devuelve un
+   poco, solo a ella, en vez de recuperarlo en todos lados.
+   El umbral es 860px, no 800: medido con puppeteer, a 844px de alto
+   (iPhone 13/14/15 normal — no es un móvil pequeño) la racha quedaba
+   solapada con el tabbar (-16px) con las tarjetas a tamaño completo,
+   así que "pantalla baja" no puede ser solo el caso del SE. */
+@media (max-height: 860px){
   .home{ gap: 16px; }
   .racha{ padding-bottom: 12px; }
   .lcard{ height: 176px; }
   .peek{ height: 70px; }
   .scard{ min-height: 128px; }
 }
-/* Un iPhone SE (667px) seguía sin que la racha entrara ni con lo de
-   arriba — un escalón más para lo realmente bajo, mismo criterio. */
-@media (max-height: 700px){
+/* El escalón anterior (860px) no alcanza por sí solo en todo su rango:
+   el ahorro que da es fijo, así que cerca de su límite inferior (desde
+   790px hacia abajo) el sobrante vuelve a agotarse y la racha se
+   solapa otra vez con el tabbar. Medido con puppeteer: a 740px el
+   hueco daba -28px con solo el escalón de 860. De ahí que este
+   segundo escalón empiece en 790, no en 700 — el iPhone SE (667px)
+   es solo el caso más extremo, no el único que lo necesita. */
+@media (max-height: 790px){
   .home{ gap: 8px; }
   .pagetitle{ font-size: 28px; }
   .lcard{ height: 140px; }
@@ -787,14 +799,28 @@ div.scard{ cursor: default; }
 .donut{
   position: relative; align-self: center;
   width: 240px; height: 240px; color: var(--c, var(--main));
+  /* Forma del aro (el grosor), en un custom property porque la
+     comparten ::before y ::after y los breakpoints bajos solo
+     necesitan redefinir esto una vez, no las dos reglas de máscara. */
+  --anillo: radial-gradient(farthest-side, transparent calc(100% - 28px), #000 calc(100% - 28px));
 }
 .donut::before, .donut::after{
   content: ''; position: absolute; inset: 0; border-radius: 50%;
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 28px), #000 calc(100% - 28px));
-          mask: radial-gradient(farthest-side, transparent calc(100% - 28px), #000 calc(100% - 28px));
+  -webkit-mask-image: var(--anillo);
+          mask-image: var(--anillo);
 }
 .donut::before{ background: var(--grey10); }
-.donut::after{ background: var(--arco, transparent); }
+.donut::after{
+  background: var(--arco, transparent);
+  /* --sweep (registrado en JS como <angle>, animado 0→360deg) añade un
+     segundo recorte cónico encima del aro: así lo hecho se revela en
+     sentido horario sin tocar el fondo (--arco), que ya trae sus
+     colores por tramo de unidad. */
+  -webkit-mask-image: var(--anillo), conic-gradient(#000 var(--sweep, 360deg), transparent var(--sweep, 360deg));
+  -webkit-mask-composite: source-in;
+          mask-image: var(--anillo), conic-gradient(#000 var(--sweep, 360deg), transparent var(--sweep, 360deg));
+          mask-composite: intersect;
+}
 .donut__in{
   position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
 }
@@ -808,7 +834,12 @@ div.scard{ cursor: default; }
   width: 100%; height: 88px; padding: 16px 24px; overflow: hidden;
   border-radius: var(--r-card); background: var(--sb-soft);
 }
-.statbar__fill{ position: absolute; left: 0; top: 0; bottom: 0; border-radius: var(--r-card); background: var(--sb); }
+.statbar__fill{
+  position: absolute; left: 0; top: 0; bottom: 0; border-radius: var(--r-card); background: var(--sb);
+  /* La carga anima transform:scaleX (no width) para no tocar layout;
+     el origen a la izquierda es lo que hace que crezca desde ahí. */
+  transform-origin: left center;
+}
 .statbar__v{ position: relative; display: flex; align-items: flex-end; flex-shrink: 0; font-family: var(--f-d); font-weight: 800; }
 .statbar__v b{ font-size: 56px; line-height: 1; font-weight: 800; white-space: nowrap; }
 .statbar__v small{ font-size: 18px; line-height: 1.9; white-space: nowrap; }
@@ -828,10 +859,9 @@ div.scard{ cursor: default; }
 }
 @media (max-height: 700px){
   #screenProgress .stack{ gap: 12px; }
-  .donut{ width: 160px; height: 160px; }
-  .donut::before, .donut::after{
-    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 22px), #000 calc(100% - 22px));
-            mask: radial-gradient(farthest-side, transparent calc(100% - 22px), #000 calc(100% - 22px));
+  .donut{
+    width: 160px; height: 160px;
+    --anillo: radial-gradient(farthest-side, transparent calc(100% - 22px), #000 calc(100% - 22px));
   }
   .donut__in b{ font-size: 40px; }
   .statbar{ height: 60px; padding: 12px 20px; }

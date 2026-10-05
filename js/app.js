@@ -1142,6 +1142,18 @@
   // no una sola. Por eso van en dos animate() aparte: opacity y
   // transform no tienen por qué compartir duración.
   var FADE_MS = 140;
+  /* El aro de Progreso revela sus tramos en sentido horario animando
+     --sweep (0deg → 360deg) sobre la máscara cónica de .donut::after.
+     Un custom property normal no interpola por fotogramas — hay que
+     registrarlo como ángulo para que el navegador sepa qué valores
+     intermedios pintar. Sin este registro (navegador viejo) el CSS cae
+     en 360deg fijo: se ve el aro completo de golpe, sin animación, pero
+     correcto. */
+  try {
+    if (window.CSS && CSS.registerProperty) {
+      CSS.registerProperty({ name: '--sweep', syntax: '<angle>', inherits: false, initialValue: '360deg' });
+    }
+  } catch (e) {}
   /* Entrar deslizando de un lado. Es entrar() en horizontal: al cambiar de
      respuesta se ve de qué lado viene, y así se lee como pasar tarjetas en
      vez de como un repintado (pedido de Ric). */
@@ -1191,6 +1203,20 @@
     aparecerEscalonado([nodos[0]], desde, paso, null, duracionPrimero);
     aparecerEscalonado(Array.prototype.slice.call(nodos, 1), desde + paso, paso, null, duracionResto);
     return desde + nodos.length * paso;
+  }
+
+  /* El rosco de Progreso: el aro gris funde su opacidad y, encima, lo
+     hecho se revela en sentido horario barriendo --sweep de 0 a 360deg
+     (ver su registro más arriba). pseudoElement hace que WAAPI anime
+     ::before/::after en vez del propio nodo. */
+  function animarDonut(donut, desde) {
+    if (!donut || REDUCIR_MOVIMIENTO.matches) return;
+    donut.animate([{ opacity: 0 }, { opacity: 1 }],
+      { duration: FADE_MS, delay: desde, easing: 'ease', fill: 'backwards', pseudoElement: '::before' });
+    if (window.CSS && CSS.registerProperty) {
+      donut.animate([{ '--sweep': '0deg' }, { '--sweep': '360deg' }],
+        { duration: 700, delay: desde + 150, easing: 'ease', fill: 'backwards' });
+    }
   }
 
   function mostrar(nombre) {
@@ -1614,6 +1640,25 @@
         '</div>' +
       '</div>';
     mostrar('progress');
+
+    // Misma regla que Hoy: 3 bloques que arrancan casi a la vez con un
+    // pequeño desfase (DB) entre sí — rosco, barras y cards — cada uno
+    // secuencial por dentro. Las barras cargan su progreso (scaleX, no
+    // width, para no animar layout) a la vez que funden fondo y texto.
+    var DB = 60;
+    animarDonut(el.screens.progress.querySelector('.donut'), 0 * DB);
+    if (!REDUCIR_MOVIMIENTO.matches) {
+      var barras = el.screens.progress.querySelectorAll('.statbar');
+      Array.prototype.forEach.call(barras, function (bar, i) {
+        var retraso = 1 * DB + i * 150;
+        bar.animate([{ opacity: 0 }, { opacity: 1 }],
+          { duration: FADE_MS, delay: retraso, easing: 'ease', fill: 'backwards' });
+        var fill = bar.querySelector('.statbar__fill');
+        if (fill) fill.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }],
+          { duration: 500, delay: retraso, easing: 'ease', fill: 'backwards' });
+      });
+    }
+    aparecerEscalonado(el.screens.progress.querySelectorAll('.reviews > *'), 2 * DB, 150);
   }
 
   // ─────────── Pantalla: portada de unidad ───────────
