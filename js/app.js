@@ -2101,7 +2101,12 @@
     if (modoSilencioso) return [];
     var conAudio = fondo.filter(function (v) { return v.audio; });
     if (conAudio.length < 4) return [];
-    var ctx = { fondo: conAudio };
+    // choca vacío: aquí no hay el mapa de colisiones que sí construye
+    // ctxVocab para el repaso de vocabulario — preguntaEscucharOpcion()
+    // lo necesita (revienta si falta), y sin él los distractores
+    // simplemente no se filtran por colisión, que es como se comportaba
+    // antes de que existiera ese filtro.
+    var ctx = { fondo: conAudio, choca: {} };
     return elegirSesion(conAudio, cuantos, claveDeVocab).map(function (v) {
       return Math.random() < 0.5 ? preguntaEscucharOpcion(v, ctx) : preguntaEscucharTeclear(v);
     });
@@ -4000,6 +4005,18 @@
     entrarDeLado(el.modalPanel.querySelector('.modal__scroll'), desde);
   }
 
+  /* .screen--quiz reserva espacio abajo para que el contenido no quede
+     tapado por la hoja fija — pero la hoja mide mucho menos antes de
+     responder (solo el botón) que con el feedback abierto (título +
+     cuerpo + el libro). Una cifra fija tenía que cubrir el caso más
+     alto, así que antes de responder sobraba de más (hasta 70px en un
+     iPhone con home indicator) — justo el "hueco" reportado en los
+     ejercicios. Se mide la hoja de verdad cada vez que cambia y el
+     hueco se ajusta solo. */
+  function medirHoja() {
+    document.documentElement.style.setProperty('--sheet-h', el.sheet.offsetHeight + 'px');
+  }
+
   function feedback(ok, titulo, cuerpo, leve) {
     el.sheet.className = 'sheet ' + (leve ? 'is-leve' : (ok ? 'is-ok' : 'is-mal'));
     el.feedback.hidden = false;
@@ -4023,6 +4040,7 @@
     // El libro solo se ofrece si ese tema tiene algo que enseñar.
     el.btnFicha.hidden = !fichasDe(ejActual()).length;
     el.btnCheck.focus({ preventScroll: true });
+    medirHoja();
   }
 
   function ocultarFeedback() {
@@ -4032,6 +4050,7 @@
     el.btnFicha.hidden = true;
     el.btnCheck.textContent = 'Comprobar';
     el.btnCheck.disabled = true;
+    medirHoja();
   }
 
   // ─────────── Pantalla: resultado ───────────
@@ -4327,6 +4346,10 @@
   el.btnCheck.addEventListener('click', comprobar);
   el.btnFicha.innerHTML = icono('dictionary', 24);
   el.btnFicha.addEventListener('click', abrirHoja);
+  // Rotar el móvil cambia el alto de la hoja (el ancho disponible para
+  // el texto del feedback varía), así que --sheet-h se vuelve a medir.
+  window.addEventListener('resize', medirHoja);
+  medirHoja();
 
   // Modal: se cierra tocando fuera o con Escape
   $('modalScrim').addEventListener('click', cerrarModal);
@@ -4622,12 +4645,18 @@
     }
   });
 
-  /* Diagnóstico temporal del hueco en modo app en móvil (?debug) — se
-     actualiza solo, sin recargar, para poder rotar el móvil o escribir
-     en la barra de direcciones y ver cómo cambian los números. Quitar
-     junto con el <pre id="debugPanel"> de index.html en cuanto se
-     resuelva el hueco. */
-  if (location.search.indexOf('debug') !== -1) {
+  /* Diagnóstico temporal del hueco en modo app en móvil — se actualiza
+     solo, sin recargar, para poder rotar el móvil y ver cómo cambian
+     los números. Sin condición a propósito, aunque sea feo: ni ?debug
+     en la URL ni localStorage llegaban a verse en modo standalone (el
+     icono de pantalla de inicio puede quedarse con un index.html/
+     app.js en caché, de antes de que existiera cualquiera de los dos
+     — o, si no es caché, tener su propio almacenamiento aislado de
+     Safari). Así no hay condición que pueda fallar: si esto tampoco
+     aparece en standalone, es que el propio index.html servido ahí es
+     viejo, no un problema de lógica. Quitar esto junto con el
+     <pre id="debugPanel"> de index.html en cuanto se resuelva el hueco. */
+  if (true) {
     var panelDebug = document.getElementById('debugPanel');
     panelDebug.hidden = false;
     var probeSafeB = document.createElement('div');
@@ -4660,6 +4689,11 @@
     pintarDebug();
     window.addEventListener('resize', pintarDebug);
     setInterval(pintarDebug, 1000);
+    // Tocar el panel lo apaga del todo (borra la marca, no solo lo oculta).
+    panelDebug.addEventListener('click', function () {
+      try { localStorage.removeItem('euskaraz_debug'); } catch (e) {}
+      panelDebug.hidden = true;
+    });
   }
 
 })();
