@@ -175,14 +175,19 @@ curso.
   dé por terminado y se fusione a `main`, quitar esa entrada de
   `vercel.json` para que vuelva a tener preview como cualquier rama.
 
-- **Pendiente (03/10/2026): auditoría de fluidez vertical en móviles
-  pequeños.** Miguel, con un móvil pequeño, no ve la 4ª opción de un
-  ejercicio de escuchar sin hacer scroll — da la sensación de que solo
-  hay 3. Aparcado a propósito (no es del "100%" que se sale de su
-  tarjeta en el resultado, eso ya está medido en `docs/ideas-ric.md`):
-  hace falta revisar altura de cabecera/opciones/hoja en los viewports
-  más bajos (iPhone SE, 667px de alto o menos) por toda la app, no
-  parchear un caso suelto.
+- **Responsive fluido, paso 1 hecho (06/10/2026): pantallas pequeñas.**
+  Nada de escalones `@media (max-height)`: cada medida es «mínimo +
+  recorrido × factor» con dos variables de `:root` — `--w` (0→70px entre
+  320 y 390 de ancho: tipografía y márgenes) y `--h` (0→300px entre 640
+  y 940 de alto, en `svh`: alturas y huecos). Nunca pasa del tamaño del
+  diseño. Al tocar tamaños en móvil, usar eso, no px fijos ni un
+  `@media` nuevo. Verificado con puppeteer (320/360/390/430 × 568-932):
+  sin desborde lateral en ninguna pantalla, las 4 opciones visibles sin
+  scroll hasta 568, la racha de Hoy cabe desde 640 (a 568 Hoy hace
+  scroll, aceptado). **Pendiente, paso 2:** pantallas grandes (tablet y
+  escritorio siguen siendo la columna de 480px centrada). El "100%" que
+  se sale de su tarjeta en el resultado sigue aparte, en
+  `docs/ideas-ric.md`.
 
 ## Al terminar cada fase
 
