@@ -1217,7 +1217,7 @@
       // Sobre ::after, no sobre el nodo: --sweep está registrado sin
       // herencia, así que animarlo en .donut no llegaba al pseudo.
       donut.animate([{ '--sweep': '0deg' }, { '--sweep': '360deg' }],
-        { duration: 700, delay: desde + 150, easing: 'ease', fill: 'backwards', pseudoElement: '::after' });
+        { duration: 1100, delay: desde + 150, easing: 'ease', fill: 'backwards', pseudoElement: '::after' });
     }
   }
 
@@ -1657,7 +1657,7 @@
           { duration: FADE_MS, delay: retraso, easing: 'ease', fill: 'backwards' });
         var fill = bar.querySelector('.statbar__fill');
         if (fill) fill.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }],
-          { duration: 500, delay: retraso, easing: 'ease', fill: 'backwards' });
+          { duration: 800, delay: retraso, easing: 'ease', fill: 'backwards' });
       });
     }
     aparecerEscalonado(el.screens.progress.querySelectorAll('.reviews > *'), 2 * DB, 150);

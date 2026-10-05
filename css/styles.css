@@ -56,6 +56,21 @@
      falta. Menos margen de seguridad que lo que recomienda Apple, a
      cambio de unos iconos más pegados al borde real. */
   --safe-b-tabbar: min(10px, var(--safe-b));
+
+  /* Tamaños fluidos. En vez de escalones @media, cada medida es
+     «mínimo + recorrido × factor»: --w recorre 0→70px entre 320 y 390
+     de ancho (tipografía y márgenes laterales) y --h 0→300px entre 640
+     y 940 de alto (alturas de tarjetas, huecos, rosco). Por debajo se
+     queda en el mínimo y por encima en el tamaño del diseño, nunca más
+     grande. svh y no vh/dvh: en iOS cuenta con la barra de Safari a la
+     vista, que es cuando de verdad falta sitio. */
+  --w: clamp(0px, 100vw - 320px, 70px);
+  --h: clamp(0px, 100vh - 640px, 300px);
+  --gutter: calc(16px + var(--w) * 0.0571);
+  --pad-top: calc(32px + var(--h) * 0.0533);
+}
+@supports (height: 100svh){
+  :root{ --h: clamp(0px, 100svh - 640px, 300px); }
 }
 
 *, *::before, *::after{ box-sizing: border-box; }
@@ -95,7 +110,7 @@ input, textarea{ font: inherit; color: inherit; }
   margin: 0 auto;
 }
 
-.screen{ padding: 48px 20px 32px; }
+.screen{ padding: var(--pad-top) var(--gutter) 32px; }
 /* Exactamente la altura del tabbar (72px + su propio safe-area), sin
    margen de más encima — el +32px que llevaba antes se notaba como un
    hueco en blanco entre el contenido y la barra (pasa en Safari
@@ -122,7 +137,7 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b-tabbar)); }
   position: sticky; top: 0; z-index: 30;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
   height: calc(60px + var(--safe-t));
-  padding: var(--safe-t) 20px 0;
+  padding: var(--safe-t) var(--gutter) 0;
   background: var(--white);
 }
 .hdr--home{ padding-right: 28px; }
@@ -184,7 +199,7 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b-tabbar)); }
   display: none;
   position: fixed; left: var(--side); right: 0; bottom: 0; z-index: 40;
   background: var(--white);
-  padding: 0 20px var(--safe-b-tabbar);
+  padding: 0 var(--gutter) var(--safe-b-tabbar);
   /* Bug conocido de Safari iOS: al hacer scroll hacia arriba desde el
      final, mientras la barra de direcciones vuelve a aparecer, un
      position:fixed que no tiene su propia capa de composición puede
@@ -244,7 +259,10 @@ body.con-tabbar .tabbar{ display: block; }
 
 .pagetitle{
   margin: 0; width: 100%;
-  font-family: var(--f-d); font-weight: 800; font-size: 34px; line-height: 1;
+  font-family: var(--f-d); font-weight: 800; line-height: 1;
+  /* El menor de los dos: estrecho, para que cada línea del título
+     quepa entera; bajo, para dejar sitio a lo de debajo. */
+  font-size: min(calc(26px + var(--w) * 0.1143), calc(28px + var(--h) * 0.02));
   letter-spacing: -0.02em; white-space: pre-line; text-wrap: pretty; color: var(--ink);
 }
 .lead{
@@ -332,9 +350,13 @@ body.silencioso .pair__play{ display: none; }
 
 /* ═══════════ HOY ═══════════ */
 
+/* Todo lo de Hoy es fluido (ver --w y --h en :root): es la pantalla
+   con más piezas apiladas y la que tiene que caber sin scroll, racha
+   incluida. Las alturas siguen a --h y la tipografía a --w. */
 .home{
-  display: flex; flex-direction: column; gap: 24px;
-  min-height: calc(100dvh - 60px - 72px - 48px - 32px - var(--safe-b) - var(--safe-t));
+  display: flex; flex-direction: column;
+  gap: calc(8px + var(--h) * 0.0533);
+  min-height: calc(100dvh - 60px - 72px - var(--pad-top) - 32px - var(--safe-b) - var(--safe-t));
 }
 .home__spacer{ flex: 1 1 auto; }
 
@@ -345,41 +367,53 @@ body.silencioso .pair__play{ display: none; }
 
 .lcard{
   display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;
-  width: 100%; height: 204px; padding: 24px;
+  width: 100%;
+  height: calc(136px + var(--h) * 0.2267);
+  padding: calc(20px + var(--w) * 0.0571);
   border: 0; border-radius: var(--r-card); background: var(--c);
   color: var(--ink); text-align: left; cursor: pointer;
   transition: transform .32s ease;
 }
 .lcard:hover{ transform: translateY(-3px); }
 .lcard:active{ transform: scale(0.98); }
-.lcard__top{ display: flex; flex-direction: column; gap: 20px; align-self: stretch; }
+.lcard__top{ display: flex; flex-direction: column; gap: calc(12px + var(--h) * 0.0267); align-self: stretch; }
 .lcard__row{ display: flex; gap: 16px; align-items: flex-start; }
 .lcard__title{
   flex: 1 1 0; min-width: 0;
-  font-family: var(--f-d); font-weight: 800; font-size: 30px; line-height: 1; letter-spacing: 0.01em; text-wrap: pretty;
+  font-family: var(--f-d); font-weight: 800; line-height: 1; letter-spacing: 0.01em; text-wrap: pretty;
+  font-size: calc(24px + var(--w) * 0.0857);
 }
 .lcard__pct{ display: flex; align-items: flex-end; gap: 4px; flex-shrink: 0; font-family: var(--f-d); font-weight: 800; }
-.lcard__pct b{ font-size: 34px; line-height: 1; font-weight: 800; }
-.lcard__pct small{ font-size: 18px; line-height: 1.58; }
-.lcard__sub{ font-family: var(--f-t); font-weight: 500; font-size: 18px; line-height: 1.25; letter-spacing: 0.02em; }
+.lcard__pct b{ font-size: calc(28px + var(--w) * 0.0857); line-height: 1; font-weight: 800; }
+.lcard__pct small{ font-size: calc(16px + var(--w) * 0.0286); line-height: 1.58; }
+.lcard__sub{
+  font-family: var(--f-t); font-weight: 500; line-height: 1.25; letter-spacing: 0.02em;
+  font-size: calc(16px + var(--w) * 0.0286);
+}
 
 .peek{
   display: flex; align-items: flex-start;
-  width: 100%; height: 82px; padding: 16px 24px 48px;
+  width: 100%;
+  height: calc(52px + var(--h) * 0.1);
+  padding: 16px calc(20px + var(--w) * 0.0571) 48px;
   border: 0; border-radius: var(--r-card); background: var(--c);
   color: var(--ink); text-align: left; cursor: pointer;
-  font-family: var(--f-d); font-weight: 800; font-size: 18px; line-height: 1; letter-spacing: 0.01em;
+  font-family: var(--f-d); font-weight: 800; line-height: 1; letter-spacing: 0.01em;
+  font-size: calc(15px + var(--w) * 0.0429);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   transition: transform .32s ease;
 }
 .peek:hover{ transform: translateY(-3px); }
 .peek:active{ transform: scale(0.99); }
 
-.reviews{ display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
+.reviews{ display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: calc(8px + var(--w) * 0.0571); }
 
 .scard{
-  display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
-  width: 100%; min-height: 150px; padding: 24px 16px 16px 20px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  gap: calc(16px + var(--h) * 0.0533);
+  width: 100%;
+  min-height: calc(90px + var(--h) * 0.2);
+  padding: calc(16px + var(--h) * 0.0267) calc(12px + var(--w) * 0.0571) calc(12px + var(--h) * 0.0133) calc(14px + var(--w) * 0.0857);
   border: 0; border-radius: var(--r-card);
   background: var(--sc-soft, var(--main-20)); color: var(--sc, var(--main));
   text-align: left; cursor: pointer;
@@ -388,84 +422,57 @@ body.silencioso .pair__play{ display: none; }
 button.scard:hover{ transform: translateY(-3px); }
 button.scard:active{ transform: scale(0.98); }
 div.scard{ cursor: default; }
-.scard__t{ font-family: var(--f-d); font-weight: 800; font-size: 22px; line-height: 1; white-space: pre-line; }
+/* A 320 de ancho «vocabulario» a 22px no cabía en media tarjeta. */
+.scard__t{ font-family: var(--f-d); font-weight: 800; font-size: calc(17px + var(--w) * 0.0714); line-height: 1; white-space: pre-line; }
 .scard__row{ display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-.scard__v{ font-family: var(--f-d); font-weight: 800; font-size: 34px; line-height: 1; letter-spacing: 0.01em; white-space: nowrap; }
-.scard__v small{ font-size: 18px; line-height: 1.48; margin-left: 4px; }
+.scard__v{ font-family: var(--f-d); font-weight: 800; font-size: calc(28px + var(--w) * 0.0857); line-height: 1; letter-spacing: 0.01em; white-space: nowrap; }
+.scard__v small{ font-size: calc(16px + var(--w) * 0.0286); line-height: 1.48; margin-left: 4px; }
 .scard__stat{ display: flex; align-items: flex-end; }
 
-/* padding-bottom siempre, no solo en los breakpoints bajos: medido a
-   844px de alto (un móvil normal, fuera de ambos @media de abajo) el
-   hueco con el tabbar era de 4px — quedaba pegado también fuera de
-   pantallas "cortas", porque antes solo lo recuperaba el breakpoint. */
-.racha{ display: flex; justify-content: space-between; align-items: center; padding-top: 24px; padding-bottom: 20px; }
-.racha__lbl{ font-family: var(--f-d); font-weight: 800; font-size: 22px; line-height: 1; color: var(--main); }
-.racha__dias{ display: flex; gap: 6px; align-items: center; }
+/* padding-bottom siempre: es el aire entre la racha y el tabbar, que
+   también faltaba en móviles normales (4px a 844 de alto). */
+.racha{
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  padding-top: calc(12px + var(--h) * 0.04);
+  padding-bottom: calc(16px + var(--h) * 0.0133);
+}
+.racha__lbl{ font-family: var(--f-d); font-weight: 800; font-size: calc(18px + var(--w) * 0.0571); line-height: 1; color: var(--main); }
+.racha__dias{ display: flex; gap: calc(4px + var(--w) * 0.0286); align-items: center; }
 .day{
-  width: 26px; height: 26px; border-radius: 1000px; flex-shrink: 0;
+  --day: calc(22px + var(--w) * 0.0571);
+  width: var(--day); height: var(--day); border-radius: 1000px; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--f-t); font-weight: 800; font-size: 15px; line-height: 14px; letter-spacing: 0.01em;
+  font-family: var(--f-t); font-weight: 800; font-size: calc(13px + var(--w) * 0.0286); line-height: 1; letter-spacing: 0.01em;
   background: var(--main-20); color: var(--main);
 }
 .day--ok{ background: var(--main); color: var(--white); }
 .day--off{ background: transparent; box-shadow: inset 0 0 0 1px var(--main); }
 
-/* Pantallas bajas: Hoy es la pantalla con más piezas apiladas, así que
-   es la que más se nota. Menos aire entre bloques y tarjetas algo más
-   bajas — no hace falta tocar el contenido de dentro, solo la caja. La
-   "Racha" ganaba antes su separación del tabbar del aire general que
-   quitamos a propósito en el resto de la app; aquí se le devuelve un
-   poco, solo a ella, en vez de recuperarlo en todos lados.
-   El umbral es 860px, no 800: medido con puppeteer, a 844px de alto
-   (iPhone 13/14/15 normal — no es un móvil pequeño) la racha quedaba
-   solapada con el tabbar (-16px) con las tarjetas a tamaño completo,
-   así que "pantalla baja" no puede ser solo el caso del SE. */
-@media (max-height: 860px){
-  .home{ gap: 16px; }
-  .racha{ padding-bottom: 12px; }
-  .lcard{ height: 176px; }
-  .peek{ height: 70px; }
-  .scard{ min-height: 128px; }
-}
-/* El escalón anterior (860px) no alcanza por sí solo en todo su rango:
-   el ahorro que da es fijo, así que cerca de su límite inferior (desde
-   790px hacia abajo) el sobrante vuelve a agotarse y la racha se
-   solapa otra vez con el tabbar. Medido con puppeteer: a 740px el
-   hueco daba -28px con solo el escalón de 860. De ahí que este
-   segundo escalón empiece en 790, no en 700 — el iPhone SE (667px)
-   es solo el caso más extremo, no el único que lo necesita. */
-@media (max-height: 790px){
-  .home{ gap: 8px; }
-  .pagetitle{ font-size: 28px; }
-  .lcard{ height: 140px; }
-  .peek{ height: 52px; }
-  .scard{ min-height: 90px; gap: 16px; padding: 16px 16px 12px 20px; }
-}
-
 /* ═══════════ LECCIONES ═══════════ */
 
-.llist{ display: flex; flex-direction: column; gap: 12px; }
+.llist{ display: flex; flex-direction: column; gap: calc(8px + var(--w) * 0.0571); }
 .lrow{
   display: flex; align-items: center; gap: 12px; width: 100%;
-  padding: 24px 20px 24px 28px; border: 0; border-radius: var(--r-row);
+  padding: calc(16px + var(--h) * 0.0267) calc(14px + var(--w) * 0.0857) calc(16px + var(--h) * 0.0267) calc(20px + var(--w) * 0.1143);
+  border: 0; border-radius: var(--r-row);
   background: var(--bg); color: var(--ink); text-align: left; cursor: pointer;
   transition: transform .32s ease;
 }
 .lrow:hover{ transform: translateY(-3px); }
 .lrow:active{ transform: scale(0.98); }
-.lrow__n{ width: 34px; flex-shrink: 0; font-family: var(--f-d); font-weight: 800; font-size: 30px; line-height: 1; letter-spacing: -0.02em; }
+.lrow__n{ width: calc(28px + var(--w) * 0.0857); flex-shrink: 0; font-family: var(--f-d); font-weight: 800; font-size: calc(24px + var(--w) * 0.0857); line-height: 1; letter-spacing: -0.02em; }
 .lrow__txt{ display: flex; flex-direction: column; gap: 4px; flex: 1 1 0; min-width: 0; }
-.lrow__t{ font-family: var(--f-d); font-weight: 800; font-size: 18px; line-height: 1; letter-spacing: 0.01em; }
+.lrow__t{ font-family: var(--f-d); font-weight: 800; font-size: calc(16px + var(--w) * 0.0286); line-height: 1; letter-spacing: 0.01em; }
 .lrow__s{ font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em; }
 
 /* ═══════════ UNIDAD ═══════════ */
 
-.ustats{ display: flex; gap: 24px; }
+.ustats{ display: flex; gap: calc(16px + var(--w) * 0.1143); }
 .ustat{ display: flex; flex-direction: column; gap: 2px; flex: 1 1 0; min-width: 0; color: var(--c-strong); font-family: var(--f-d); font-weight: 800; }
-.ustat b{ font-size: 34px; line-height: 1; letter-spacing: 0.01em; font-weight: 800; }
+.ustat b{ font-size: calc(28px + var(--w) * 0.0857); line-height: 1; letter-spacing: 0.01em; font-weight: 800; }
 .ustat span{ font-size: 15px; line-height: 1; }
 
-.sublist{ display: flex; flex-direction: column; gap: 32px; padding: 16px 0; }
+.sublist{ display: flex; flex-direction: column; gap: 32px; padding: calc(8px + var(--h) * 0.0267) 0; }
 .srow{
   position: relative;
   display: flex; align-items: flex-start; gap: 20px; width: 100%;
@@ -482,7 +489,7 @@ div.scard{ cursor: default; }
 }
 .srow--done:not(:last-child)::after{ background: var(--c-strong); }
 .srow__txt{ display: flex; flex-direction: column; gap: 4px; padding: 4px 0; flex: 1 1 0; min-width: 0; }
-.srow__t{ font-family: var(--f-d); font-weight: 800; font-size: 22px; line-height: 1; letter-spacing: 0.01em; }
+.srow__t{ font-family: var(--f-d); font-weight: 800; font-size: calc(18px + var(--w) * 0.0571); line-height: 1; letter-spacing: 0.01em; }
 .srow--current .srow__t{ color: var(--c-strong); }
 .srow__s{ font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em; }
 .srow__chev{ display: flex; padding: 2px 0; transition: transform .15s ease; color: rgb(10,10,10); }
@@ -498,10 +505,11 @@ div.scard{ cursor: default; }
 .ustatus--ok{ color: var(--c-strong); }
 
 /* ── Filas de navegación ── */
-.navrows{ display: flex; flex-direction: column; gap: 12px; }
+.navrows{ display: flex; flex-direction: column; gap: calc(8px + var(--w) * 0.0571); }
 .navrow{
   display: flex; align-items: center; gap: 12px; width: 100%;
-  padding: 24px 20px 24px 28px; border: 0; border-radius: var(--r-row);
+  padding: calc(16px + var(--h) * 0.0267) calc(14px + var(--w) * 0.0857) calc(16px + var(--h) * 0.0267) calc(20px + var(--w) * 0.1143);
+  border: 0; border-radius: var(--r-row);
   background: transparent; color: var(--ink); text-align: left; cursor: pointer;
   box-shadow: inset 0 0 0 1px var(--main);
   transition: filter .15s ease, background-color .15s ease, transform .1s ease;
@@ -509,7 +517,7 @@ div.scard{ cursor: default; }
 .navrow:hover{ background: var(--main-12); }
 .navrow:active{ transform: scale(0.99); }
 .navrow__txt{ display: flex; flex-direction: column; gap: 4px; flex: 1 1 0; min-width: 0; }
-.navrow__t{ font-family: var(--f-d); font-weight: 800; font-size: 18px; line-height: 1; letter-spacing: 0.01em; }
+.navrow__t{ font-family: var(--f-d); font-weight: 800; font-size: calc(16px + var(--w) * 0.0286); line-height: 1; letter-spacing: 0.01em; }
 .navrow__s{
   display: flex; gap: 8px; align-items: flex-start;
   font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em;
@@ -531,9 +539,9 @@ div.scard{ cursor: default; }
   margin: 0; display: flex; flex-direction: column; gap: 6px;
   font-family: var(--f-d); font-weight: 800; letter-spacing: -0.02em; line-height: 1;
 }
-.subtit__k{ font-size: 22px; color: rgb(10,10,10); }
-.subtit__t{ font-size: 34px; color: var(--grey50); text-wrap: pretty; }
-.navrows--sub{ padding: 16px 0; }
+.subtit__k{ font-size: calc(18px + var(--w) * 0.0571); color: rgb(10,10,10); }
+.subtit__t{ font-size: min(calc(26px + var(--w) * 0.1143), calc(28px + var(--h) * 0.02)); color: var(--grey50); text-wrap: pretty; }
+.navrows--sub{ padding: calc(8px + var(--h) * 0.0267) 0; }
 
 /* ═══════════ FICHAS ═══════════ */
 
@@ -575,9 +583,11 @@ div.scard{ cursor: default; }
 
 /* ═══════════ EJERCICIO ═══════════ */
 
-.quiz{ display: flex; flex-direction: column; gap: 32px; }
+/* Fluido (--w/--h en :root): en un móvil pequeño las cuatro opciones
+   tienen que verse sin scroll encima de la hoja de «Comprobar». */
+.quiz{ display: flex; flex-direction: column; gap: calc(16px + var(--h) * 0.0533); }
 
-.exh{ display: flex; flex-direction: column; gap: 12px; }
+.exh{ display: flex; flex-direction: column; gap: calc(8px + var(--h) * 0.0133); }
 .exh__meta{ display: flex; gap: 8px; align-items: flex-start; min-height: 18px; }
 .exh__inst{
   flex: 1 1 0; min-width: 0; padding: 3px 0;
@@ -585,7 +595,8 @@ div.scard{ cursor: default; }
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--grey50);
 }
 .exh__q{
-  margin: 0; font-family: var(--f-d); font-weight: 800; font-size: 30px; line-height: 1;
+  margin: 0; font-family: var(--f-d); font-weight: 800; line-height: 1;
+  font-size: min(calc(24px + var(--w) * 0.0857), calc(24px + var(--h) * 0.02));
   letter-spacing: -0.02em; text-wrap: pretty;
 }
 .exh__hint{
@@ -595,8 +606,8 @@ div.scard{ cursor: default; }
 
 /* Escuchar */
 .escuchar{
-  display: flex; flex-direction: column; gap: 16px; justify-content: center; align-items: center;
-  width: 100%; min-height: 180px; padding: 24px;
+  display: flex; flex-direction: column; gap: calc(10px + var(--h) * 0.02); justify-content: center; align-items: center;
+  width: 100%; min-height: calc(112px + var(--h) * 0.2267); padding: calc(16px + var(--h) * 0.0267);
   border: 0; border-radius: var(--r-card); background: var(--c-soft); color: var(--ink); cursor: pointer;
   font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em;
   transition: filter .15s ease, transform .1s ease;
@@ -604,22 +615,24 @@ div.scard{ cursor: default; }
 .escuchar:hover{ filter: brightness(0.96); }
 .escuchar:active{ transform: scale(0.98); }
 .escuchar__btn{
-  width: 72px; height: 72px; border-radius: 1000px;
+  --tam: calc(56px + var(--h) * 0.0533);
+  width: var(--tam); height: var(--tam); border-radius: 1000px;
   display: flex; justify-content: center; align-items: center; background: var(--c);
 }
 
 /* Opción múltiple */
-.opts{ display: flex; flex-direction: column; gap: 8px; }
+.opts{ display: flex; flex-direction: column; gap: calc(6px + var(--h) * 0.0067); }
 .opt{
-  display: flex; align-items: stretch; gap: 16px; width: 100%;
-  padding: 16px 24px 16px 16px; border: 0; border-radius: var(--r-card);
+  display: flex; align-items: stretch; gap: calc(12px + var(--w) * 0.0571); width: 100%;
+  padding: calc(10px + var(--h) * 0.02) calc(18px + var(--w) * 0.0857) calc(10px + var(--h) * 0.02) calc(12px + var(--w) * 0.0571);
+  border: 0; border-radius: var(--r-card);
   background: transparent; box-shadow: inset 0 0 0 1px var(--grey30);
   color: var(--ink); text-align: left; cursor: pointer; user-select: none;
-  font-family: var(--f-t); font-weight: 500; font-size: 18px; line-height: 1.39; letter-spacing: 0.01em;
+  font-family: var(--f-t); font-weight: 500; font-size: calc(16px + var(--w) * 0.0286); line-height: 1.39; letter-spacing: 0.01em;
   transition: filter .15s ease, background-color .15s ease, box-shadow .15s ease, transform .1s ease;
 }
 .opt__key{
-  width: 28px; flex-shrink: 0; border-radius: 1000px;
+  width: calc(24px + var(--w) * 0.0571); flex-shrink: 0; border-radius: 1000px;
   display: flex; align-items: center; justify-content: center;
   background: var(--ink-10);
   font-weight: 800; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em;
@@ -636,23 +649,26 @@ div.scard{ cursor: default; }
 .opt.is-ok .opt__key, .opt.is-mal .opt__key{ background: rgba(255,255,255,0.5); }
 
 /* Parejas */
-.pairs{ position: relative; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
-.paircol{ display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.pairs{ position: relative; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: calc(8px + var(--w) * 0.0571); }
+.paircol{ display: flex; flex-direction: column; gap: calc(8px + var(--h) * 0.0133); min-width: 0; }
 /* El hilo que marca una pareja ya resuelta — verde, en la variante
    transparent (igual que en Figma: no es un trazo sólido, deja ver lo
    de detrás). */
 .pairs__hilos{ position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
 .pairs__hilo{ fill: none; stroke: var(--right); stroke-width: 2; stroke-linecap: round; opacity: .5; }
 .pair{
-  display: flex; align-items: center; gap: 12px; width: 100%; min-height: 60px;
-  padding: 14px 16px 14px 20px; border: 0; border-radius: var(--r-card);
+  display: flex; align-items: center; gap: calc(6px + var(--w) * 0.0857); width: 100%;
+  min-height: calc(48px + var(--h) * 0.04);
+  padding: calc(10px + var(--h) * 0.0133) calc(12px + var(--w) * 0.0571) calc(10px + var(--h) * 0.0133) calc(14px + var(--w) * 0.0857);
+  border: 0; border-radius: var(--r-card);
   background: transparent; box-shadow: inset 0 0 0 1px var(--grey30);
   color: var(--ink); text-align: left; cursor: pointer; user-select: none;
-  font-family: var(--f-t); font-weight: 500; font-size: 18px; line-height: 1.25; letter-spacing: 0.01em;
+  /* A 320-360 de ancho, 18px partía «arratsalde» a mitad de palabra. */
+  font-family: var(--f-t); font-weight: 500; font-size: calc(15px + var(--w) * 0.0429); line-height: 1.25; letter-spacing: 0.01em;
   transition: filter .15s ease, background-color .15s ease, box-shadow .15s ease, transform .1s ease;
 }
 .pair--eu{ font-weight: 700; }
-.pair__txt{ flex: 1 1 0; min-width: 0; overflow-wrap: anywhere; }
+.pair__txt{ flex: 1 1 0; min-width: 0; overflow-wrap: break-word; }
 .pair__play{ display: flex; color: rgba(10,10,10,0.5); padding: 4px; margin: -4px; }
 .pair:hover{ background: var(--cream); box-shadow: inset 0 0 0 1px var(--grey50); }
 .pair:active{ transform: scale(0.98); }
@@ -665,15 +681,15 @@ div.scard{ cursor: default; }
 /* Ordenar y escribir: fichas */
 .build{
   display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start;
-  min-height: 132px; padding-bottom: 24px; border-bottom: 0.5px solid var(--grey30);
+  min-height: calc(96px + var(--h) * 0.12); padding-bottom: calc(16px + var(--h) * 0.0267); border-bottom: 0.5px solid var(--grey30);
 }
 .bank{ display: flex; flex-wrap: wrap; gap: 6px; }
 .chip{
   display: inline-flex; align-items: center;
-  padding: 16px 24px; border: 0; border-radius: var(--r-card);
+  padding: calc(12px + var(--h) * 0.0133) calc(16px + var(--w) * 0.1143); border: 0; border-radius: var(--r-card);
   background: var(--grey10); box-shadow: inset 0 0 0 1px var(--grey10);
   color: var(--ink); cursor: pointer; user-select: none; white-space: nowrap;
-  font-family: var(--f-t); font-weight: 500; font-size: 18px; line-height: 1.39; letter-spacing: 0.01em;
+  font-family: var(--f-t); font-weight: 500; font-size: calc(16px + var(--w) * 0.0286); line-height: 1.39; letter-spacing: 0.01em;
   transition: filter .15s ease, background-color .15s ease, transform .1s ease;
 }
 .chip:hover{ filter: brightness(0.94); }
@@ -687,9 +703,9 @@ div.scard{ cursor: default; }
 
 .slots{ display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .slot{
-  min-width: 60px; padding: 16px 20px; border: 0; border-radius: var(--r-card);
+  min-width: 60px; padding: calc(12px + var(--h) * 0.0133) calc(14px + var(--w) * 0.0857); border: 0; border-radius: var(--r-card);
   background: transparent; box-shadow: inset 0 0 0 1px var(--grey30); outline: none;
-  font-family: var(--f-t); font-weight: 700; font-size: 18px; line-height: 1.39; letter-spacing: 0.01em; color: var(--ink);
+  font-family: var(--f-t); font-weight: 700; font-size: calc(16px + var(--w) * 0.0286); line-height: 1.39; letter-spacing: 0.01em; color: var(--ink);
   transition: box-shadow .15s ease, background-color .15s ease;
 }
 .slot:hover{ box-shadow: inset 0 0 0 1px var(--grey50); }
@@ -697,15 +713,15 @@ div.scard{ cursor: default; }
 .slot.is-ok{ background: var(--right); box-shadow: inset 0 0 0 1px var(--right); }
 .slot.is-tocado{ background: rgba(250,171,67,0.15); box-shadow: inset 0 0 0 1px var(--almost); }
 .slot.is-mal{ background: rgba(247,104,107,0.3); box-shadow: inset 0 0 0 1px var(--wrong); color: var(--wrong); text-decoration: line-through; }
-.slot--fijo{ min-width: 0; padding: 16px 2px; box-shadow: none; }
+.slot--fijo{ min-width: 0; padding: calc(12px + var(--h) * 0.0133) 2px; box-shadow: none; }
 .slot--fijo:hover{ box-shadow: none; }
 
 /* Respuesta libre */
 .typebox{
-  display: block; width: 100%; min-height: 110px; margin: 0;
-  padding: 16px 24px; border: 0; border-radius: 20px 20px 4px 20px; outline: none; resize: none;
+  display: block; width: 100%; min-height: calc(80px + var(--h) * 0.1); margin: 0;
+  padding: calc(12px + var(--h) * 0.0133) calc(16px + var(--w) * 0.1143); border: 0; border-radius: 20px 20px 4px 20px; outline: none; resize: none;
   background: transparent; box-shadow: inset 0 0 0 1px var(--grey30);
-  font-family: var(--f-t); font-weight: 700; font-size: 18px; line-height: 1.39; letter-spacing: 0.01em; color: var(--ink);
+  font-family: var(--f-t); font-weight: 700; font-size: calc(16px + var(--w) * 0.0286); line-height: 1.39; letter-spacing: 0.01em; color: var(--ink);
   transition: box-shadow .15s ease;
 }
 .typebox--corta{ min-height: 0; border-radius: var(--r-btn); }
@@ -736,13 +752,14 @@ div.scard{ cursor: default; }
   transition: background-color .2s ease, box-shadow .2s ease;
 }
 .sheet__in{
-  max-width: var(--col); margin: 0 auto; padding: 24px 32px 32px;
-  display: flex; flex-direction: column; gap: 24px;
+  max-width: var(--col); margin: 0 auto;
+  padding: calc(16px + var(--h) * 0.0267) calc(20px + var(--w) * 0.1714) calc(16px + var(--h) * 0.0533);
+  display: flex; flex-direction: column; gap: calc(16px + var(--h) * 0.0267);
 }
 .sheet.is-ok  { --fbc: rgb(62,214,123);  background: linear-gradient(rgba(62,214,123,.12), rgba(62,214,123,.12)), var(--white); box-shadow: 0 -4px 12px rgba(20,19,20,.1); }
 .sheet.is-leve{ --fbc: rgb(250,171,67);  background: linear-gradient(rgba(250,171,67,.12), rgba(250,171,67,.12)), var(--white); box-shadow: 0 -4px 12px rgba(20,19,20,.1); }
 .sheet.is-mal { --fbc: rgb(247,104,107); background: linear-gradient(rgba(247,104,107,.13), rgba(247,104,107,.13)), var(--white); box-shadow: 0 -4px 12px rgba(20,19,20,.1); }
-.sheet.is-ok .sheet__in, .sheet.is-leve .sheet__in, .sheet.is-mal .sheet__in{ padding-top: 32px; }
+.sheet.is-ok .sheet__in, .sheet.is-leve .sheet__in, .sheet.is-mal .sheet__in{ padding-top: calc(20px + var(--h) * 0.04); }
 
 .fb{ display: flex; flex-direction: column; gap: 12px; max-height: 42dvh; overflow-y: auto; }
 .fb__head{ display: flex; align-items: center; gap: 8px; color: var(--fbc); }
@@ -771,7 +788,7 @@ div.scard{ cursor: default; }
 
 .sheet__row{ display: flex; gap: 8px; align-items: flex-start; }
 .checkbtn{
-  flex: 1 1 0; min-width: 0; height: 52px; padding: 16px 20px;
+  flex: 1 1 0; min-width: 0; height: calc(48px + var(--h) * 0.0133); padding: 0 20px;
   border: 0; border-radius: var(--r-btn); background: var(--ink); color: var(--white);
   font-family: var(--f-t); font-weight: 500; font-size: 18px; line-height: 1; letter-spacing: 0.01em;
   white-space: nowrap; cursor: pointer;
@@ -784,7 +801,8 @@ div.scard{ cursor: default; }
 .sheet.is-leve .checkbtn{ background: var(--almost); color: var(--ink); }
 .sheet.is-mal .checkbtn { background: var(--wrong);  color: var(--ink); }
 .lessonbtn{
-  width: 52px; height: 52px; flex-shrink: 0;
+  --tam: calc(48px + var(--h) * 0.0133);
+  width: var(--tam); height: var(--tam); flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
   border: 0; border-radius: 1000px; background: var(--ink); color: var(--white); cursor: pointer;
   transition: filter .15s ease, transform .1s ease;
@@ -804,13 +822,18 @@ div.scard{ cursor: default; }
 
 /* ═══════════ PROGRESO ═══════════ */
 
+/* Fluido como Hoy (--w/--h en :root): el rosco y las barras, que son
+   las piezas grandes, encogen con el alto; los textos, con el ancho. */
+#screenProgress .stack{ gap: calc(12px + var(--h) * 0.04); }
+
 .donut{
   position: relative; align-self: center;
-  width: 240px; height: 240px; color: var(--c, var(--main));
-  /* Forma del aro (el grosor), en un custom property porque la
-     comparten ::before y ::after y los breakpoints bajos solo
-     necesitan redefinir esto una vez, no las dos reglas de máscara. */
-  --anillo: radial-gradient(farthest-side, transparent calc(100% - 28px), #000 calc(100% - 28px));
+  --tam: calc(160px + var(--h) * 0.2667);
+  width: var(--tam); height: var(--tam); color: var(--c, var(--main));
+  /* Forma del aro, en un custom property porque la comparten ::before
+     y ::after; el grosor acompaña al tamaño. */
+  --grosor: calc(22px + var(--h) * 0.02);
+  --anillo: radial-gradient(farthest-side, transparent calc(100% - var(--grosor)), #000 calc(100% - var(--grosor)));
 }
 .donut::before, .donut::after{
   content: ''; position: absolute; inset: 0; border-radius: 50%;
@@ -832,14 +855,17 @@ div.scard{ cursor: default; }
 .donut__in{
   position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
 }
-.donut__in b{ font-family: var(--f-d); font-weight: 800; font-size: 56px; line-height: 0.9; letter-spacing: -0.04em; }
-.donut__in b small{ font-size: 24px; letter-spacing: 0; }
-.donut__in span{ font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; color: var(--grey50); }
+.donut__in b{ font-family: var(--f-d); font-weight: 800; font-size: calc(40px + var(--h) * 0.0533); line-height: 0.9; letter-spacing: -0.04em; }
+.donut__in b small{ font-size: calc(18px + var(--h) * 0.02); letter-spacing: 0; }
+.donut__in span{ font-family: var(--f-t); font-weight: 500; font-size: calc(13px + var(--w) * 0.0286); line-height: 1.25; color: var(--grey50); }
 
-.statbars{ display: flex; flex-direction: column; gap: 12px; align-self: stretch; }
+.statbars{ display: flex; flex-direction: column; gap: calc(8px + var(--w) * 0.0571); align-self: stretch; }
 .statbar{
   position: relative; display: flex; align-items: center; gap: 12px;
-  width: 100%; height: 88px; padding: 16px 24px; overflow: hidden;
+  width: 100%;
+  height: calc(60px + var(--h) * 0.0933);
+  padding: calc(12px + var(--h) * 0.0133) calc(18px + var(--w) * 0.0857);
+  overflow: hidden;
   border-radius: var(--r-card); background: var(--sb-soft);
 }
 .statbar__fill{
@@ -849,31 +875,11 @@ div.scard{ cursor: default; }
   transform-origin: left center;
 }
 .statbar__v{ position: relative; display: flex; align-items: flex-end; flex-shrink: 0; font-family: var(--f-d); font-weight: 800; }
-.statbar__v b{ font-size: 56px; line-height: 1; font-weight: 800; white-space: nowrap; }
-.statbar__v small{ font-size: 18px; line-height: 1.9; white-space: nowrap; }
+.statbar__v b{ font-size: min(calc(44px + var(--w) * 0.1714), calc(40px + var(--h) * 0.0533)); line-height: 1; font-weight: 800; white-space: nowrap; }
+.statbar__v small{ font-size: calc(16px + var(--w) * 0.0286); line-height: 1.9; white-space: nowrap; }
 .statbar__l{
   position: relative; flex: 1 1 0; min-width: 0; text-align: right; white-space: pre-line;
-  font-family: var(--f-d); font-weight: 800; font-size: 22px; line-height: 1; letter-spacing: 0.01em;
-}
-
-/* Pantallas bajas: mismo criterio que Hoy (ver esa sección) — el rosco
-   y las barras son las piezas grandes que sobran. Van aquí, después de
-   las reglas base, para que de verdad las pisen (misma especificidad:
-   gana quien va después en el archivo, no quien está en un @media). */
-@media (max-height: 800px){
-  #screenProgress .stack{ gap: 16px; }
-  .donut{ width: 190px; height: 190px; }
-  .statbar{ height: 72px; }
-}
-@media (max-height: 700px){
-  #screenProgress .stack{ gap: 12px; }
-  .donut{
-    width: 160px; height: 160px;
-    --anillo: radial-gradient(farthest-side, transparent calc(100% - 22px), #000 calc(100% - 22px));
-  }
-  .donut__in b{ font-size: 40px; }
-  .statbar{ height: 60px; padding: 12px 20px; }
-  .statbar__v b{ font-size: 40px; }
+  font-family: var(--f-d); font-weight: 800; font-size: calc(18px + var(--w) * 0.0571); line-height: 1; letter-spacing: 0.01em;
 }
 
 /* ═══════════ DICCIONARIO ═══════════ */
