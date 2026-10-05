@@ -89,7 +89,12 @@ input, textarea{ font: inherit; color: inherit; }
 
 .screen{ padding: 48px 20px 32px; }
 body.con-tabbar .screen{ padding-bottom: calc(72px + 32px + var(--safe-b)); }
-.screen--quiz{ padding-bottom: calc(180px + var(--safe-b)); }
+/* --sheet-h la mide medirHoja() (js/app.js) con la altura real de la
+   hoja — antes era una cifra fija (180px) pensada para el feedback
+   abierto, que sobraba de más antes de responder (el hueco reportado
+   en los ejercicios). --sheet-h ya lleva su propio safe-area dentro
+   (es el alto real de .sheet), así que aquí no se vuelve a sumar. */
+.screen--quiz{ padding-bottom: calc(var(--sheet-h, 180px) + 24px); }
 
 .stack{ display: flex; flex-direction: column; gap: 24px; }
 /* El CTA de "siguiente ficha" pegado al final de la lectura se notaba
