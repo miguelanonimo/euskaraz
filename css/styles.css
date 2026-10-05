@@ -175,7 +175,7 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b)); }
 .tabbar{
   display: none;
   position: fixed; left: var(--side); right: 0; bottom: 0; z-index: 40;
-  background: var(--white);
+  background: rgb(160,160,160); /* DIAGNÓSTICO temporal — gris para ver hasta dónde llega el elemento de verdad */
   padding: 0 20px var(--safe-b);
 }
 body.con-tabbar .tabbar{ display: block; }
@@ -678,7 +678,8 @@ div.scard{ cursor: default; }
 /* ── Hoja inferior: comprobar y feedback ── */
 .sheet{
   position: fixed; left: var(--side); right: 0; bottom: 0; z-index: 40;
-  background: var(--white); border-radius: 0 32px 0 0;
+  background: rgb(160,160,160); /* DIAGNÓSTICO temporal, igual que .tabbar */
+  border-radius: 0 32px 0 0;
   padding-bottom: var(--safe-b);
   transition: background-color .2s ease, box-shadow .2s ease;
 }
