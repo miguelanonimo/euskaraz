@@ -2909,6 +2909,20 @@
     pintarDiccionario(el.dictInput.value);
     mostrar('dict');
     actualizarFlechasAlfa();
+
+    // Misma regla que Hoy: título, filtros y lista arrancan casi a la vez
+    // (DB) y cada uno es secuencial por dentro. Solo al entrar, no al
+    // teclear en el buscador. De la lista, solo lo que se ve: son cientos
+    // de entradas y animar las de abajo solo retrasaría.
+    var DB = 60, s = el.screens.dict;
+    aparecerEscalonado(s.querySelectorAll('.pagetitle'), 0 * DB, 150);
+    var tf = aparecerEscalonado(s.querySelectorAll('.search, .seg, .alfa'), 1 * DB, 110);
+    aparecerEscalonado(s.querySelectorAll('.alfa__l'), tf, 30);
+    var alto = window.innerHeight;
+    var visibles = Array.prototype.filter.call(s.querySelectorAll('.dsec__h, .dentry'), function (n) {
+      return n.getBoundingClientRect().top < alto;
+    });
+    aparecerEscalonado(visibles, 2 * DB, 70);
   }
 
   // ─────────── Modal ───────────
