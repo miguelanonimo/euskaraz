@@ -1214,8 +1214,10 @@
     donut.animate([{ opacity: 0 }, { opacity: 1 }],
       { duration: FADE_MS, delay: desde, easing: 'ease', fill: 'backwards', pseudoElement: '::before' });
     if (window.CSS && CSS.registerProperty) {
+      // Sobre ::after, no sobre el nodo: --sweep está registrado sin
+      // herencia, así que animarlo en .donut no llegaba al pseudo.
       donut.animate([{ '--sweep': '0deg' }, { '--sweep': '360deg' }],
-        { duration: 700, delay: desde + 150, easing: 'ease', fill: 'backwards' });
+        { duration: 700, delay: desde + 150, easing: 'ease', fill: 'backwards', pseudoElement: '::after' });
     }
   }
 

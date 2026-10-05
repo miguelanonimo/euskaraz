@@ -185,6 +185,14 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b-tabbar)); }
   position: fixed; left: var(--side); right: 0; bottom: 0; z-index: 40;
   background: var(--white);
   padding: 0 20px var(--safe-b-tabbar);
+  /* Bug conocido de Safari iOS: al hacer scroll hacia arriba desde el
+     final, mientras la barra de direcciones vuelve a aparecer, un
+     position:fixed que no tiene su propia capa de composición puede
+     repintarse tarde y quedar medio oculto durante esa transición.
+     translateZ(0) fuerza esa capa aparte y evita el parpadeo — no
+     cambia nada visualmente, solo cómo lo pinta el navegador. */
+  transform: translateZ(0);
+  will-change: transform;
 }
 body.con-tabbar .tabbar{ display: block; }
 .tabbar__in{
