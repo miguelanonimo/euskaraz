@@ -88,13 +88,21 @@ input, textarea{ font: inherit; color: inherit; }
 }
 
 .screen{ padding: 48px 20px 32px; }
-body.con-tabbar .screen{ padding-bottom: calc(72px + 32px + var(--safe-b)); }
+/* Exactamente la altura del tabbar (72px + su propio safe-area), sin
+   margen de más encima — el +32px que llevaba antes se notaba como un
+   hueco en blanco entre el contenido y la barra (pasa en Safari
+   normal, no solo en modo app): las pantallas sin nada fijo abajo
+   (lecciones de un tema, explicaciones) no tienen ese hueco, así que
+   tampoco debería tenerlo esta. */
+body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b)); }
 /* --sheet-h la mide medirHoja() (js/app.js) con la altura real de la
    hoja — antes era una cifra fija (180px) pensada para el feedback
    abierto, que sobraba de más antes de responder (el hueco reportado
    en los ejercicios). --sheet-h ya lleva su propio safe-area dentro
    (es el alto real de .sheet), así que aquí no se vuelve a sumar. */
-.screen--quiz{ padding-bottom: calc(var(--sheet-h, 180px) + 24px); }
+/* Mismo criterio que con el tabbar: sin margen de más, solo un
+   pelín (8px) para que la última fila no quede pegada al botón. */
+.screen--quiz{ padding-bottom: calc(var(--sheet-h, 180px) + 8px); }
 
 .stack{ display: flex; flex-direction: column; gap: 24px; }
 /* El CTA de "siguiente ficha" pegado al final de la lectura se notaba
