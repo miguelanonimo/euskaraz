@@ -31,7 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- Miguel, 05/10/2026 — animando pantalla Progreso (rosco + barras + cards). Toca `js/app.js` y `css/styles.css`.
+- (vacío — nadie trabajando ahora mismo)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
