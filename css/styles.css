@@ -398,6 +398,30 @@ div.scard{ cursor: default; }
 .day--ok{ background: var(--main); color: var(--white); }
 .day--off{ background: transparent; box-shadow: inset 0 0 0 1px var(--main); }
 
+/* Pantallas bajas (iPhone SE y similares, o cualquier móvil en horizontal):
+   Hoy es la pantalla con más piezas apiladas, así que es la que más se
+   nota. Menos aire entre bloques y tarjetas algo más bajas — no hace
+   falta tocar el contenido de dentro, solo la caja. La "Racha" ganaba
+   antes su separación del tabbar del aire general que quitamos a
+   propósito en el resto de la app; aquí se le devuelve un poco, solo a
+   ella, en vez de recuperarlo en todos lados. */
+@media (max-height: 800px){
+  .home{ gap: 16px; }
+  .racha{ padding-bottom: 12px; }
+  .lcard{ height: 176px; }
+  .peek{ height: 70px; }
+  .scard{ min-height: 128px; }
+}
+/* Un iPhone SE (667px) seguía sin que la racha entrara ni con lo de
+   arriba — un escalón más para lo realmente bajo, mismo criterio. */
+@media (max-height: 700px){
+  .home{ gap: 8px; }
+  .pagetitle{ font-size: 28px; }
+  .lcard{ height: 140px; }
+  .peek{ height: 52px; }
+  .scard{ min-height: 90px; gap: 16px; padding: 16px 16px 12px 20px; }
+}
+
 /* ═══════════ LECCIONES ═══════════ */
 
 .llist{ display: flex; flex-direction: column; gap: 12px; }
