@@ -48,6 +48,14 @@
   --side: 0px;              /* ancho del menú lateral cuando está */
   --safe-b: env(safe-area-inset-bottom, 0px);
   --safe-t: env(safe-area-inset-top, 0px);
+  /* Para el tabbar y la hoja del ejercicio: el safe-area completo (34px
+     en un iPhone con home indicator) deja los iconos más lejos del
+     borde de lo que se quiere a propósito — min() lo recorta a 10px
+     como mucho, y a 0 donde --safe-b ya es 0 (macOS, Android, un
+     iPhone sin home indicator), así que no añade nada donde no hacía
+     falta. Menos margen de seguridad que lo que recomienda Apple, a
+     cambio de unos iconos más pegados al borde real. */
+  --safe-b-tabbar: min(10px, var(--safe-b));
 }
 
 *, *::before, *::after{ box-sizing: border-box; }
@@ -94,7 +102,7 @@ input, textarea{ font: inherit; color: inherit; }
    normal, no solo en modo app): las pantallas sin nada fijo abajo
    (lecciones de un tema, explicaciones) no tienen ese hueco, así que
    tampoco debería tenerlo esta. */
-body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b)); }
+body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b-tabbar)); }
 /* --sheet-h la mide medirHoja() (js/app.js) con la altura real de la
    hoja — antes era una cifra fija (180px) pensada para el feedback
    abierto, que sobraba de más antes de responder (el hueco reportado
@@ -176,7 +184,7 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b)); }
   display: none;
   position: fixed; left: var(--side); right: 0; bottom: 0; z-index: 40;
   background: var(--white);
-  padding: 0 20px var(--safe-b);
+  padding: 0 20px var(--safe-b-tabbar);
 }
 body.con-tabbar .tabbar{ display: block; }
 .tabbar__in{
@@ -680,7 +688,7 @@ div.scard{ cursor: default; }
   position: fixed; left: var(--side); right: 0; bottom: 0; z-index: 40;
   background: var(--white);
   border-radius: 0 32px 0 0;
-  padding-bottom: var(--safe-b);
+  padding-bottom: var(--safe-b-tabbar);
   transition: background-color .2s ease, box-shadow .2s ease;
 }
 .sheet__in{
@@ -983,7 +991,7 @@ button.dentry__u:active{ opacity: .6; }
 .goup{
   position: fixed; z-index: 25;
   right: max(20px, calc((100vw - var(--side) - var(--col)) / 2));
-  bottom: calc(20px + var(--safe-b));
+  bottom: calc(20px + var(--safe-b-tabbar));
   width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
   border: 0; border-radius: 1000px; background: var(--ink); color: var(--white); cursor: pointer;
   box-shadow: 0 4px 16px rgba(20,19,20,0.25);
@@ -991,4 +999,4 @@ button.dentry__u:active{ opacity: .6; }
   transition: opacity .2s ease, transform .2s ease;
 }
 .goup.is-on{ opacity: 1; transform: none; pointer-events: auto; }
-body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b)); }
+body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
