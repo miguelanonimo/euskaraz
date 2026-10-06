@@ -1636,7 +1636,10 @@
     // (un pequeño desfase), y dentro de la lista cada lección aparece
     // detrás de la anterior — más rápido que en Hoy porque aquí son 12.
     aparecerEscalonado(el.screens.lessons.querySelectorAll('.pagetitle'), 0, 150);
-    aparecerEscalonado(el.screens.lessons.querySelectorAll('.llist > *'), 60, 90);
+    // Desde 1024 se ven las 12 a la vez en la rejilla: a 90ms la última
+    // tardaba más de un segundo en llegar; ahí van a la mitad.
+    var pasoL = window.matchMedia('(min-width: 1024px)').matches ? 45 : 90;
+    aparecerEscalonado(el.screens.lessons.querySelectorAll('.llist > *'), 60, pasoL);
   }
 
   // ─────────── Pantalla: progreso ───────────
