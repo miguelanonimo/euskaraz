@@ -70,11 +70,21 @@
      vista, que es cuando de verdad falta sitio. */
   --w: clamp(0px, 100vw - 320px, 70px);
   --h: clamp(0px, 100vh - 640px, 300px);
+  /* Solo Hoy, que tiene que llenar la pantalla justa: --hh recorre
+     0→180px entre 600 y 780 de alto (de compacto a tamaño de diseño) y
+     --hx 0→220px entre 780 y 1000 (lo que sobra en un móvil muy alto,
+     para que lo ganen las tarjetas y no un hueco). */
+  --hh: clamp(0px, 100vh - 600px, 180px);
+  --hx: clamp(0px, 100vh - 780px, 220px);
   --gutter: calc(16px + var(--w) * 0.0571);
   --pad-top: calc(32px + var(--h) * 0.0533);
 }
 @supports (height: 100svh){
-  :root{ --h: clamp(0px, 100svh - 640px, 300px); }
+  :root{
+    --h: clamp(0px, 100svh - 640px, 300px);
+    --hh: clamp(0px, 100svh - 600px, 180px);
+    --hx: clamp(0px, 100svh - 780px, 220px);
+  }
 }
 
 *, *::before, *::after{ box-sizing: border-box; }
@@ -354,25 +364,36 @@ body.silencioso .pair__play{ display: none; }
 
 /* ═══════════ HOY ═══════════ */
 
-/* Todo lo de Hoy es fluido (ver --w y --h en :root): es la pantalla
-   con más piezas apiladas y la que tiene que caber sin scroll, racha
-   incluida. Las alturas siguen a --h y la tipografía a --w. */
+/* Hoy llena la pantalla justa: la racha abajo, cerca del menú, y lo que
+   sobra se lo quedan las tarjetas, no un hueco. Tres tramos de alto:
+   por debajo de 600 todo compacto (y si no cabe, scroll); entre 600 y
+   780 crece con --hh hasta el tamaño de diseño; por encima, --hx agranda
+   la lección y los repasos (con tope) y solo un poco el aire de la
+   racha. La tipografía sigue a --w. */
 .home{
   display: flex; flex-direction: column;
-  gap: calc(8px + var(--h) * 0.0533);
-  min-height: calc(100dvh - 60px - 72px - var(--pad-top) - 32px - var(--safe-b) - var(--safe-t));
+  gap: calc(8px + var(--hh) * 0.0222);
+  /* Exactamente el alto libre: cabecera (60 + safe-t), aire de arriba de
+     la pantalla y tabbar (72 + su safe-area). Antes restaba además 32px
+     de un margen inferior que ya no existe: ese era el hueco de más
+     entre la racha y el menú. */
+  min-height: calc(100dvh - 60px - var(--safe-t) - var(--pad-top) - 72px - var(--safe-b-tabbar));
 }
 .home__spacer{ flex: 1 1 auto; }
 
-.lstack{ display: flex; flex-direction: column; }
+/* --peek es el alto de una tarjeta apilada; de él asoman --peek - 36px
+   (los 36 de abajo los tapa la siguiente). */
+.lstack{ display: flex; flex-direction: column; --peek: calc(60px + var(--hh) * 0.1111 + var(--hx) * 0.07); }
 .lstack > *{ position: relative; }
 .lstack > * + *{ margin-top: -36px; }
-.peek--debajo{ padding-top: 52px; padding-bottom: 0; }   /* los 36px de arriba quedan tapados por la abierta */
+/* Debajo de la abierta lo tapado son los 36 de arriba: el texto se centra
+   en la franja que queda abajo. */
+.peek--debajo{ padding-top: calc(36px + (var(--peek) - 36px - 1em) / 2); padding-bottom: 0; }
 
 .lcard{
   display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;
   width: 100%;
-  height: calc(136px + var(--h) * 0.2267);
+  height: calc(136px + var(--hh) * 0.3 + var(--hx) * 0.5);
   padding: calc(20px + var(--w) * 0.0571);
   border: 0; border-radius: var(--r-card); background: var(--c);
   color: var(--ink); text-align: left; cursor: pointer;
@@ -380,7 +401,7 @@ body.silencioso .pair__play{ display: none; }
 }
 .lcard:hover{ transform: translateY(-3px); }
 .lcard:active{ transform: scale(0.98); }
-.lcard__top{ display: flex; flex-direction: column; gap: calc(12px + var(--h) * 0.0267); align-self: stretch; }
+.lcard__top{ display: flex; flex-direction: column; gap: calc(12px + var(--hh) * 0.0444); align-self: stretch; }
 .lcard__row{ display: flex; gap: 16px; align-items: flex-start; }
 .lcard__title{
   flex: 1 1 0; min-width: 0;
@@ -398,8 +419,10 @@ body.silencioso .pair__play{ display: none; }
 .peek{
   display: flex; align-items: flex-start;
   width: 100%;
-  height: calc(52px + var(--h) * 0.1);
-  padding: 16px calc(20px + var(--w) * 0.0571) 48px;
+  height: var(--peek);
+  /* El texto, centrado en la franja que asoma: pegado arriba (16px) se
+     cortaba cuando la franja era estrecha. */
+  padding: calc((var(--peek) - 36px - 1em) / 2) calc(20px + var(--w) * 0.0571) 0;
   border: 0; border-radius: var(--r-card); background: var(--c);
   color: var(--ink); text-align: left; cursor: pointer;
   font-family: var(--f-d); font-weight: 800; line-height: 1; letter-spacing: 0.01em;
@@ -432,13 +455,19 @@ div.scard{ cursor: default; }
 .scard__v{ font-family: var(--f-d); font-weight: 800; font-size: calc(28px + var(--w) * 0.0857); line-height: 1; letter-spacing: 0.01em; white-space: nowrap; }
 .scard__v small{ font-size: calc(16px + var(--w) * 0.0286); line-height: 1.48; margin-left: 4px; }
 .scard__stat{ display: flex; align-items: flex-end; }
+/* En Hoy los repasos siguen a --hh/--hx como el resto de la pantalla
+   (crecen con ella hasta ~170px); en Progreso y el resultado, no. */
+.home .scard{
+  min-height: calc(96px + var(--hh) * 0.2389 + var(--hx) * 0.2);
+  gap: calc(8px + var(--hh) * 0.0444);
+}
 
 /* padding-bottom siempre: es el aire entre la racha y el tabbar, que
    también faltaba en móviles normales (4px a 844 de alto). */
 .racha{
   display: flex; justify-content: space-between; align-items: center; gap: 8px;
-  padding-top: calc(12px + var(--h) * 0.04);
-  padding-bottom: calc(16px + var(--h) * 0.0133);
+  padding-top: calc(12px + var(--hh) * 0.0667);
+  padding-bottom: calc(10px + var(--hh) * 0.0222);
 }
 .racha__lbl{ font-family: var(--f-d); font-weight: 800; font-size: calc(18px + var(--w) * 0.0571); line-height: 1; color: var(--main); }
 .racha__dias{ display: flex; gap: calc(4px + var(--w) * 0.0286); align-items: center; }
