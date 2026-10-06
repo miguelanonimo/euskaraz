@@ -1564,8 +1564,9 @@
      porcentaje en grande abajo con su barra. */
   function tarjetaRail(u, grande) {
     var f = familia(u), pct = Math.round(progresoUnidad(u).ratio * 100);
+    // Todas abren su unidad: en el carril no hay pila que reordenar.
     return '<button class="' + (grande ? 'lfeat' : 'ltile') + ' rcard" type="button" ' +
-      (grande ? 'data-unidad' : 'data-pila') + '="' + esc(u.id) + '" style="--c:' + f.c + '">' +
+      'data-unidad="' + esc(u.id) + '" style="--c:' + f.c + '">' +
       '<span class="rcard__txt"><span class="rcard__t">' + esc(u.numero + '. ' + u.titulo) + '</span>' +
         '<span class="rcard__s">' + esc(u.subtitulo) + '</span></span>' +
       '<span class="rcard__bottom"><span class="rcard__big"><b>' + pct + '</b><small>%</small></span>' +
@@ -4573,7 +4574,7 @@
   el.screens.home.addEventListener('click', function (e) {
     var peek = e.target.closest('[data-pila]');
     if (peek) { estado.homeActiva = peek.dataset.pila; pantallaHome(); return; }
-    var card = e.target.closest('.lcard, .lfeat');
+    var card = e.target.closest('.lcard, .lfeat, .ltile');
     if (card) { abrirUnidad(card.dataset.unidad, 'home'); return; }
     if (e.target.closest('#goVocabRepaso')) empezarVocab();
     else if (e.target.closest('#goRepaso')) empezarRepaso();
