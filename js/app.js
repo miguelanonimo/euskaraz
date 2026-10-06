@@ -1893,15 +1893,15 @@
       var ring = f.querySelector('.ring');
       var v = ring ? parseFloat(getComputedStyle(ring).getPropertyValue('--v')) || 0 : 0;
       if (v > 0) {
-        var dur = 250 + 3 * v;
+        var dur = 200 + 2.4 * v;
         ring.animate([{ '--v': '0' }, { '--v': String(v) }],
           { duration: dur, delay: t, easing: EASE, fill: 'backwards' });
         t += dur * 0.7;
       }
       if (hecho && f.nextElementSibling) {
         f.animate([{ '--hilo': '0%' }, { '--hilo': '100%' }],
-          { duration: 320, delay: t, easing: EASE, fill: 'backwards', pseudoElement: '::after' });
-        t += 320 * 0.7;
+          { duration: 255, delay: t, easing: EASE, fill: 'backwards', pseudoElement: '::after' });
+        t += 255 * 0.7;
       }
     });
   }
