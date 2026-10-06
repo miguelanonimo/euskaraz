@@ -1091,9 +1091,15 @@
                  dict: 'dictionary', cuenta: 'account' };
   // Pantallas con barra de abajo en el móvil.
   var CON_TABBAR = { home: 1, lessons: 1, progress: 1, dict: 1 };
-  /* Pantallas de foco: sin menú lateral en escritorio, como en el diseño.
-     Aquí se está aprendiendo, y el menú solo distrae. */
-  var FOCO = { sub: 1, gram: 1, vocab: 1, quiz: 1, result: 1 };
+  /* En escritorio el menú lateral está siempre (pedido de Miguel: no
+     perderlo nunca). En las pantallas de estudio se marca de dónde vienes:
+     Lecciones si estás dentro de una unidad, Hoy si es un repaso. */
+  function tabDe(nombre) {
+    if (TAB_DE[nombre]) return TAB_DE[nombre];
+    if (nombre === 'quiz' || nombre === 'result') return estado.modo === 'unidad' ? 'lessons' : 'today';
+    if (nombre === 'sub' || nombre === 'gram' || nombre === 'vocab') return estado.desdeDicc ? 'dictionary' : 'lessons';
+    return null;
+  }
 
   function pintarNavegacion() {
     el.tabbarItems.innerHTML = TABS.map(function (t) {
@@ -1253,8 +1259,8 @@
     entrar(el.screens[nombre]);
     el.screenAuth.hidden = true;
     document.body.classList.toggle('con-tabbar', !!CON_TABBAR[nombre]);
-    document.body.classList.toggle('con-lateral', !FOCO[nombre]);
-    marcarTab(TAB_DE[nombre] || null);
+    document.body.classList.add('con-lateral');
+    marcarTab(tabDe(nombre));
     el.sheet.hidden = (nombre !== 'quiz');
     cerrarModal();
     ocultarFeedback();
