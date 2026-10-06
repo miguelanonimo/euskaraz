@@ -1142,6 +1142,10 @@
   // no una sola. Por eso van en dos animate() aparte: opacity y
   // transform no tienen por qué compartir duración.
   var FADE_MS = 140;
+  // Una sola curva para todo lo que se mueve o aparece: sale rápido y
+  // frena suave al llegar. 'ease' a secas, en recorridos largos (el aro,
+  // las barras), se percibía casi lineal.
+  var EASE = 'cubic-bezier(.22,1,.36,1)';
   /* El aro de Progreso revela sus tramos en sentido horario animando
      --sweep (0deg → 360deg) sobre la máscara cónica de .donut::after.
      Un custom property normal no interpola por fotogramas — hay que
@@ -1159,19 +1163,19 @@
      vez de como un repintado (pedido de Ric). */
   function entrarDeLado(nodo, desde) {
     if (!nodo || REDUCIR_MOVIMIENTO.matches) return;
-    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
+    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: EASE });
     nodo.animate(
       [{ transform: 'translateX(' + desde + 'px)' }, { transform: 'none' }],
-      { duration: 260, easing: 'cubic-bezier(.2,.8,.2,1)' }
+      { duration: 260, easing: EASE }
     );
   }
 
   function entrar(nodo, distancia) {
     if (!nodo || REDUCIR_MOVIMIENTO.matches) return;
-    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
+    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: EASE });
     nodo.animate(
       [{ transform: 'translateY(' + (distancia || 10) + 'px)' }, { transform: 'none' }],
-      { duration: 260, easing: 'cubic-bezier(.2,.8,.2,1)' }
+      { duration: 260, easing: EASE }
     );
   }
 
@@ -1186,10 +1190,10 @@
     if (REDUCIR_MOVIMIENTO.matches || !nodos || !nodos.length) return desde;
     Array.prototype.forEach.call(nodos, function (n, i) {
       var retraso = desde + i * paso;
-      n.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, delay: retraso, easing: 'ease', fill: 'backwards' });
+      n.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, delay: retraso, easing: EASE, fill: 'backwards' });
       n.animate(
         [{ transform: 'translateY(' + (distancia || 14) + 'px)' }, { transform: 'none' }],
-        { duration: duracion || 320, delay: retraso, easing: 'ease', fill: 'backwards' }
+        { duration: duracion || 320, delay: retraso, easing: EASE, fill: 'backwards' }
       );
     });
     return desde + nodos.length * paso;
@@ -1206,18 +1210,21 @@
   }
 
   /* El rosco de Progreso: el aro gris funde su opacidad y, encima, lo
-     hecho se revela en sentido horario barriendo --sweep de 0 a 360deg
-     (ver su registro más arriba). pseudoElement hace que WAAPI anime
-     ::before/::after en vez del propio nodo. */
-  function animarDonut(donut, desde) {
+     hecho se revela en sentido horario barriendo --sweep (ver su registro
+     más arriba) hasta `pct`, donde acaba lo hecho — no hasta 360deg: con
+     un 15% el tramo visible se dibujaba en un suspiro y la frenada de la
+     curva caía sobre aro vacío. La duración crece con el tramo. Al acabar
+     --sweep vuelve a su 360deg inicial, que se ve igual. pseudoElement
+     hace que WAAPI anime ::before/::after en vez del propio nodo. */
+  function animarDonut(donut, desde, pct) {
     if (!donut || REDUCIR_MOVIMIENTO.matches) return;
     donut.animate([{ opacity: 0 }, { opacity: 1 }],
-      { duration: FADE_MS, delay: desde, easing: 'ease', fill: 'backwards', pseudoElement: '::before' });
-    if (window.CSS && CSS.registerProperty) {
+      { duration: FADE_MS, delay: desde, easing: EASE, fill: 'backwards', pseudoElement: '::before' });
+    if (window.CSS && CSS.registerProperty && pct > 0) {
       // Sobre ::after, no sobre el nodo: --sweep está registrado sin
       // herencia, así que animarlo en .donut no llegaba al pseudo.
-      donut.animate([{ '--sweep': '0deg' }, { '--sweep': '360deg' }],
-        { duration: 1100, delay: desde + 150, easing: 'ease', fill: 'backwards', pseudoElement: '::after' });
+      donut.animate([{ '--sweep': '0deg' }, { '--sweep': (pct * 3.6) + 'deg' }],
+        { duration: 700 + 7 * pct, delay: desde + 150, easing: EASE, fill: 'backwards', pseudoElement: '::after' });
     }
   }
 
@@ -1648,16 +1655,16 @@
     // secuencial por dentro. Las barras cargan su progreso (scaleX, no
     // width, para no animar layout) a la vez que funden fondo y texto.
     var DB = 60;
-    animarDonut(el.screens.progress.querySelector('.donut'), 0 * DB);
+    animarDonut(el.screens.progress.querySelector('.donut'), 0 * DB, suma / n * 100);
     if (!REDUCIR_MOVIMIENTO.matches) {
       var barras = el.screens.progress.querySelectorAll('.statbar');
       Array.prototype.forEach.call(barras, function (bar, i) {
         var retraso = 1 * DB + i * 150;
         bar.animate([{ opacity: 0 }, { opacity: 1 }],
-          { duration: FADE_MS, delay: retraso, easing: 'ease', fill: 'backwards' });
+          { duration: FADE_MS, delay: retraso, easing: EASE, fill: 'backwards' });
         var fill = bar.querySelector('.statbar__fill');
         if (fill) fill.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }],
-          { duration: 800, delay: retraso, easing: 'ease', fill: 'backwards' });
+          { duration: 800, delay: retraso, easing: EASE, fill: 'backwards' });
       });
     }
     aparecerEscalonado(el.screens.progress.querySelectorAll('.reviews > *'), 2 * DB, 150);
@@ -4082,10 +4089,10 @@
     el.sheet.className = 'sheet ' + (leve ? 'is-leve' : (ok ? 'is-ok' : 'is-mal'));
     el.feedback.hidden = false;
     if (!REDUCIR_MOVIMIENTO.matches) {
-      el.feedback.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
+      el.feedback.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: EASE });
       el.feedback.animate(
         [{ transform: 'translateY(16px)' }, { transform: 'none' }],
-        { duration: 220, easing: 'cubic-bezier(.2,.8,.2,1)' }
+        { duration: 220, easing: EASE }
       );
     }
     el.feedbackIcon.innerHTML = icono(leve ? 'eye' : (ok ? 'check-bold' : 'cross-bold'), 20);

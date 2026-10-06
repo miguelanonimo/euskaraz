@@ -57,6 +57,10 @@
      cambio de unos iconos más pegados al borde real. */
   --safe-b-tabbar: min(10px, var(--safe-b));
 
+  /* La misma curva que EASE en js/app.js: nada se mueve a velocidad
+     constante. */
+  --ease: cubic-bezier(.22,1,.36,1);
+
   /* Tamaños fluidos. En vez de escalones @media, cada medida es
      «mínimo + recorrido × factor»: --w recorre 0→70px entre 320 y 390
      de ancho (tipografía y márgenes laterales) y --h 0→300px entre 640
@@ -154,7 +158,7 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b-tabbar)); }
   border: 0; border-radius: 1000px; background: transparent;
   box-shadow: inset 0 0 0 1px var(--grey50);
   color: rgba(10,10,10,0.5); cursor: pointer;
-  transition: background-color .15s ease, box-shadow .15s ease, transform .1s ease;
+  transition: background-color .15s var(--ease), box-shadow .15s var(--ease), transform .1s var(--ease);
 }
 .backbtn:hover{ background: var(--ink); box-shadow: inset 0 0 0 1px var(--grey50); color: var(--white); }
 .backbtn:active{ transform: scale(0.96); }
@@ -218,7 +222,7 @@ body.con-tabbar .tabbar{ display: block; }
 }
 .tab{
   display: flex; border: 0; padding: 0; background: none;
-  color: var(--ink); cursor: pointer; transition: transform .1s ease, color .15s ease;
+  color: var(--ink); cursor: pointer; transition: transform .1s var(--ease), color .15s var(--ease);
 }
 .tab:hover{ color: var(--main); transform: translateY(-1px); }
 .tab.is-on{ color: var(--main); transform: none; }
@@ -233,7 +237,7 @@ body.con-tabbar .tabbar{ display: block; }
   padding: 14px 20px; border: 0; border-radius: var(--r-btn);
   background: transparent; color: var(--ink); text-align: left; cursor: pointer;
   font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1; letter-spacing: 0.01em;
-  transition: background-color .15s ease;
+  transition: background-color .15s var(--ease);
 }
 .sidenav__item:hover{ background: var(--cream); }
 .sidenav__item.is-on{ background: var(--main-12); color: var(--main); font-weight: 700; }
@@ -286,7 +290,7 @@ body.con-tabbar .tabbar{ display: block; }
   padding: 16px 20px; border: 0; border-radius: var(--r-btn);
   font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1; letter-spacing: 0.01em;
   white-space: nowrap; cursor: pointer; user-select: none;
-  transition: filter .15s ease, background-color .15s ease, box-shadow .15s ease, transform .1s ease;
+  transition: filter .15s var(--ease), background-color .15s var(--ease), box-shadow .15s var(--ease), transform .1s var(--ease);
 }
 /* drop-shadow, no box-shadow: btn--ink/--main/--outline ya usan box-shadow
    inset para su anillo de 1px, y un box-shadow nuevo lo sustituiría en vez
@@ -372,7 +376,7 @@ body.silencioso .pair__play{ display: none; }
   padding: calc(20px + var(--w) * 0.0571);
   border: 0; border-radius: var(--r-card); background: var(--c);
   color: var(--ink); text-align: left; cursor: pointer;
-  transition: transform .32s ease;
+  transition: transform .32s var(--ease);
 }
 .lcard:hover{ transform: translateY(-3px); }
 .lcard:active{ transform: scale(0.98); }
@@ -401,7 +405,7 @@ body.silencioso .pair__play{ display: none; }
   font-family: var(--f-d); font-weight: 800; line-height: 1; letter-spacing: 0.01em;
   font-size: calc(15px + var(--w) * 0.0429);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  transition: transform .32s ease;
+  transition: transform .32s var(--ease);
 }
 .peek:hover{ transform: translateY(-3px); }
 .peek:active{ transform: scale(0.99); }
@@ -417,7 +421,7 @@ body.silencioso .pair__play{ display: none; }
   border: 0; border-radius: var(--r-card);
   background: var(--sc-soft, var(--main-20)); color: var(--sc, var(--main));
   text-align: left; cursor: pointer;
-  transition: transform .32s ease;
+  transition: transform .32s var(--ease);
 }
 button.scard:hover{ transform: translateY(-3px); }
 button.scard:active{ transform: scale(0.98); }
@@ -456,7 +460,7 @@ div.scard{ cursor: default; }
   padding: calc(16px + var(--h) * 0.0267) calc(14px + var(--w) * 0.0857) calc(16px + var(--h) * 0.0267) calc(20px + var(--w) * 0.1143);
   border: 0; border-radius: var(--r-row);
   background: var(--bg); color: var(--ink); text-align: left; cursor: pointer;
-  transition: transform .32s ease;
+  transition: transform .32s var(--ease);
 }
 .lrow:hover{ transform: translateY(-3px); }
 .lrow:active{ transform: scale(0.98); }
@@ -477,7 +481,7 @@ div.scard{ cursor: default; }
   position: relative;
   display: flex; align-items: flex-start; gap: 20px; width: 100%;
   padding: 0; border: 0; background: none; color: var(--ink); text-align: left; cursor: pointer;
-  transition: transform .1s ease;
+  transition: transform .1s var(--ease);
 }
 .srow:active{ transform: scale(0.98); }
 .srow--todo{ opacity: .6; }
@@ -492,7 +496,7 @@ div.scard{ cursor: default; }
 .srow__t{ font-family: var(--f-d); font-weight: 800; font-size: calc(18px + var(--w) * 0.0571); line-height: 1; letter-spacing: 0.01em; }
 .srow--current .srow__t{ color: var(--c-strong); }
 .srow__s{ font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em; }
-.srow__chev{ display: flex; padding: 2px 0; transition: transform .15s ease; color: rgb(10,10,10); }
+.srow__chev{ display: flex; padding: 2px 0; transition: transform .15s var(--ease); color: rgb(10,10,10); }
 .srow--current .srow__chev{ color: var(--c-strong); }
 .srow:hover .srow__chev{ transform: translateX(4px); }
 .srow--vacio:hover .srow__chev{ transform: none; }
@@ -512,7 +516,7 @@ div.scard{ cursor: default; }
   border: 0; border-radius: var(--r-row);
   background: transparent; color: var(--ink); text-align: left; cursor: pointer;
   box-shadow: inset 0 0 0 1px var(--main);
-  transition: filter .15s ease, background-color .15s ease, transform .1s ease;
+  transition: filter .15s var(--ease), background-color .15s var(--ease), transform .1s var(--ease);
 }
 .navrow:hover{ background: var(--main-12); }
 .navrow:active{ transform: scale(0.99); }
@@ -610,7 +614,7 @@ div.scard{ cursor: default; }
   width: 100%; min-height: calc(112px + var(--h) * 0.2267); padding: calc(16px + var(--h) * 0.0267);
   border: 0; border-radius: var(--r-card); background: var(--c-soft); color: var(--ink); cursor: pointer;
   font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em;
-  transition: filter .15s ease, transform .1s ease;
+  transition: filter .15s var(--ease), transform .1s var(--ease);
 }
 .escuchar:hover{ filter: brightness(0.96); }
 .escuchar:active{ transform: scale(0.98); }
@@ -629,7 +633,7 @@ div.scard{ cursor: default; }
   background: transparent; box-shadow: inset 0 0 0 1px var(--grey30);
   color: var(--ink); text-align: left; cursor: pointer; user-select: none;
   font-family: var(--f-t); font-weight: 500; font-size: calc(16px + var(--w) * 0.0286); line-height: 1.39; letter-spacing: 0.01em;
-  transition: filter .15s ease, background-color .15s ease, box-shadow .15s ease, transform .1s ease;
+  transition: filter .15s var(--ease), background-color .15s var(--ease), box-shadow .15s var(--ease), transform .1s var(--ease);
 }
 .opt__key{
   width: calc(24px + var(--w) * 0.0571); flex-shrink: 0; border-radius: 1000px;
@@ -665,7 +669,7 @@ div.scard{ cursor: default; }
   color: var(--ink); text-align: left; cursor: pointer; user-select: none;
   /* A 320-360 de ancho, 18px partía «arratsalde» a mitad de palabra. */
   font-family: var(--f-t); font-weight: 500; font-size: calc(15px + var(--w) * 0.0429); line-height: 1.25; letter-spacing: 0.01em;
-  transition: filter .15s ease, background-color .15s ease, box-shadow .15s ease, transform .1s ease;
+  transition: filter .15s var(--ease), background-color .15s var(--ease), box-shadow .15s var(--ease), transform .1s var(--ease);
 }
 .pair--eu{ font-weight: 700; }
 .pair__txt{ flex: 1 1 0; min-width: 0; overflow-wrap: break-word; }
@@ -690,7 +694,7 @@ div.scard{ cursor: default; }
   background: var(--grey10); box-shadow: inset 0 0 0 1px var(--grey10);
   color: var(--ink); cursor: pointer; user-select: none; white-space: nowrap;
   font-family: var(--f-t); font-weight: 500; font-size: calc(16px + var(--w) * 0.0286); line-height: 1.39; letter-spacing: 0.01em;
-  transition: filter .15s ease, background-color .15s ease, transform .1s ease;
+  transition: filter .15s var(--ease), background-color .15s var(--ease), transform .1s var(--ease);
 }
 .chip:hover{ filter: brightness(0.94); }
 .chip:active{ transform: scale(0.97); }
@@ -706,7 +710,7 @@ div.scard{ cursor: default; }
   min-width: 60px; padding: calc(12px + var(--h) * 0.0133) calc(14px + var(--w) * 0.0857); border: 0; border-radius: var(--r-card);
   background: transparent; box-shadow: inset 0 0 0 1px var(--grey30); outline: none;
   font-family: var(--f-t); font-weight: 700; font-size: calc(16px + var(--w) * 0.0286); line-height: 1.39; letter-spacing: 0.01em; color: var(--ink);
-  transition: box-shadow .15s ease, background-color .15s ease;
+  transition: box-shadow .15s var(--ease), background-color .15s var(--ease);
 }
 .slot:hover{ box-shadow: inset 0 0 0 1px var(--grey50); }
 .slot:focus{ box-shadow: inset 0 0 0 1.5px var(--ink); }
@@ -722,7 +726,7 @@ div.scard{ cursor: default; }
   padding: calc(12px + var(--h) * 0.0133) calc(16px + var(--w) * 0.1143); border: 0; border-radius: 20px 20px 4px 20px; outline: none; resize: none;
   background: transparent; box-shadow: inset 0 0 0 1px var(--grey30);
   font-family: var(--f-t); font-weight: 700; font-size: calc(16px + var(--w) * 0.0286); line-height: 1.39; letter-spacing: 0.01em; color: var(--ink);
-  transition: box-shadow .15s ease;
+  transition: box-shadow .15s var(--ease);
 }
 .typebox--corta{ min-height: 0; border-radius: var(--r-btn); }
 .typebox::placeholder{ color: var(--grey50); font-weight: 500; }
@@ -736,7 +740,7 @@ div.scard{ cursor: default; }
   background: transparent; box-shadow: inset 0 0 0 1px var(--grey20);
   font-family: var(--f-t); font-weight: 500; font-size: 13px; line-height: 1.39; letter-spacing: 0.01em;
   color: var(--ink-65); cursor: pointer;
-  transition: background-color .15s ease, box-shadow .15s ease;
+  transition: background-color .15s var(--ease), box-shadow .15s var(--ease);
 }
 .hintchip svg{ color: var(--grey30); }
 .hintchip:hover{ background: var(--cream); box-shadow: inset 0 0 0 1px var(--grey50); }
@@ -749,7 +753,7 @@ div.scard{ cursor: default; }
   background: var(--white);
   border-radius: 0 32px 0 0;
   padding-bottom: var(--safe-b-tabbar);
-  transition: background-color .2s ease, box-shadow .2s ease;
+  transition: background-color .2s var(--ease), box-shadow .2s var(--ease);
 }
 .sheet__in{
   max-width: var(--col); margin: 0 auto;
@@ -792,7 +796,7 @@ div.scard{ cursor: default; }
   border: 0; border-radius: var(--r-btn); background: var(--ink); color: var(--white);
   font-family: var(--f-t); font-weight: 500; font-size: 18px; line-height: 1; letter-spacing: 0.01em;
   white-space: nowrap; cursor: pointer;
-  transition: filter .15s ease, background-color .15s ease, transform .1s ease;
+  transition: filter .15s var(--ease), background-color .15s var(--ease), transform .1s var(--ease);
 }
 .checkbtn:hover{ transform: translateY(-2px); }
 .checkbtn:active{ transform: scale(0.98); }
@@ -805,7 +809,7 @@ div.scard{ cursor: default; }
   width: var(--tam); height: var(--tam); flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
   border: 0; border-radius: 1000px; background: var(--ink); color: var(--white); cursor: pointer;
-  transition: filter .15s ease, transform .1s ease;
+  transition: filter .15s var(--ease), transform .1s var(--ease);
 }
 .lessonbtn:hover{ filter: brightness(1.35); }
 .lessonbtn:active{ transform: scale(0.96); }
@@ -889,7 +893,7 @@ div.scard{ cursor: default; }
   display: flex; align-items: center; gap: 8px; width: 100%; height: 54px;
   padding: 16px 20px; border-radius: var(--r-btn);
   box-shadow: inset 0 0 0 1px var(--main); cursor: text;
-  transition: background-color .15s ease, box-shadow .15s ease;
+  transition: background-color .15s var(--ease), box-shadow .15s var(--ease);
 }
 .search:hover{ background: var(--main-12); }
 .search:focus-within{ background: transparent; box-shadow: inset 0 0 0 2px var(--main); }
@@ -921,7 +925,7 @@ div.scard{ cursor: default; }
   padding: var(--seg-pad, 16px 20px); border: 0; border-radius: var(--r-btn);
   background: transparent; color: var(--grey65); cursor: pointer; user-select: none;
   font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1; letter-spacing: 0.01em; white-space: nowrap;
-  transition: background-color .15s ease, color .3s ease .05s;
+  transition: background-color .15s var(--ease), color .3s var(--ease) .05s;
 }
 .seg__opt:not(.is-on):hover{ background: var(--main-20); }
 .seg__opt.is-on{ color: var(--white); }
@@ -999,7 +1003,7 @@ button.dentry__u:active{ opacity: .6; }
   border: 0; border-radius: var(--r-btn); outline: none; background: transparent;
   box-shadow: inset 0 0 0 1px var(--grey30);
   font-family: var(--f-t); font-weight: 500; font-size: 18px; line-height: 1; color: var(--ink);
-  transition: box-shadow .15s ease;
+  transition: box-shadow .15s var(--ease);
 }
 .field::placeholder{ color: var(--grey50); }
 .field:hover{ box-shadow: inset 0 0 0 1px var(--grey50); }
@@ -1085,7 +1089,7 @@ button.dentry__u:active{ opacity: .6; }
   border: 0; border-radius: 1000px; background: var(--ink); color: var(--white); cursor: pointer;
   box-shadow: 0 4px 16px rgba(20,19,20,0.25);
   opacity: 0; transform: translateY(8px); pointer-events: none;
-  transition: opacity .2s ease, transform .2s ease;
+  transition: opacity .2s var(--ease), transform .2s var(--ease);
 }
 .goup.is-on{ opacity: 1; transform: none; pointer-events: auto; }
 body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
