@@ -31,7 +31,7 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
-- (vacío — nadie trabajando ahora mismo)
+- Miguel, 06/10/2026 — curva de easing común para todas las animaciones. Toca `js/app.js` y `css/styles.css`.
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
 línea propia y volver a dejar el archivo vacío, con su propio commit.
