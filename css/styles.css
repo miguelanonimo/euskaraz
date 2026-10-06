@@ -567,7 +567,7 @@ div.scard{ cursor: default; }
 .ficha__body u{ text-decoration: none; font-weight: 700; color: var(--c-strong); }
 .ficha__lista{
   display: flex; flex-direction: column; gap: 4px;
-  padding-left: 20px; border-left: 2px solid var(--c, var(--grey30));
+  padding-left: 20px;
 }
 .ficha__lista p{ margin: 0; }
 .vlist{ display: flex; flex-direction: column; gap: 24px; }
@@ -1030,7 +1030,7 @@ button.dentry__u:active{ opacity: .6; }
   position: absolute; left: var(--side); right: 0; bottom: 0;
   max-width: var(--col); margin: 0 auto; max-height: 90dvh; overflow-y: auto;
   display: flex; flex-direction: column; gap: 16px;
-  padding: 48px 32px calc(32px + var(--safe-b));
+  padding: calc(32px + var(--h) * 0.0533) calc(20px + var(--w) * 0.1714) calc(20px + var(--h) * 0.04 + var(--safe-b));
   border-radius: 0 32px 0 0; background: var(--white);
 }
 .modal__panel h2{ margin: 0; font-family: var(--f-d); font-weight: 700; font-size: 22px; line-height: 1; letter-spacing: -0.01em; }

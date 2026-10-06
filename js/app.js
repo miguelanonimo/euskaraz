@@ -1204,6 +1204,14 @@
     return desde + nodos.length * paso;
   }
 
+  /* De una lista de nodos, los que asoman en pantalla al entrar. En las
+     pantallas largas (diccionario, fichas, ajustes) animar lo de debajo
+     no se vería y solo retrasaría: eso aparece ya puesto. */
+  function enPantalla(nodos) {
+    var alto = window.innerHeight;
+    return Array.prototype.filter.call(nodos, function (n) { return n.getBoundingClientRect().top < alto; });
+  }
+
   /* aparecerEscalonado(), pero con el primero más lento que el resto —
      la pila de lecciones y los repasos quieren que la de arriba de
      todo se note más al llegar. */
@@ -1793,16 +1801,20 @@
      (sale rápido, frena al llegar; 1-(1-t)^5 es prácticamente la misma
      curva). Se escribe el valor final antes de empezar y al acabar, así
      que si algo falla queda siempre la cifra correcta. */
+  // Cuenta sobre el primer nodo de texto, no sobre todo el contenido: en
+  // la nota del resultado el número va seguido de un <small>%</small>.
   function contarHasta(nodo, retraso, duracion) {
-    var fin = parseInt(nodo.textContent, 10);
+    var txt = nodo.firstChild;
+    if (!txt || txt.nodeType !== 3) return;
+    var fin = parseInt(txt.nodeValue, 10);
     if (REDUCIR_MOVIMIENTO.matches || !(fin > 0)) return;
-    nodo.textContent = '0';
+    txt.nodeValue = '0';
     setTimeout(function () {
       var t0 = performance.now();
       (function paso(ahora) {
         var t = Math.min(1, (ahora - t0) / duracion);
-        nodo.textContent = String(Math.round(fin * (1 - Math.pow(1 - t, 5))));
-        if (t < 1) requestAnimationFrame(paso); else nodo.textContent = String(fin);
+        txt.nodeValue = String(Math.round(fin * (1 - Math.pow(1 - t, 5))));
+        if (t < 1) requestAnimationFrame(paso); else txt.nodeValue = String(fin);
       })(t0);
     }, retraso);
   }
@@ -2057,6 +2069,14 @@
       else atras();
     });
     mostrar('gram');
+
+    // Misma regla que Hoy: título, cuerpo y ejemplos arrancan casi a la
+    // vez (DB) y cada uno va en cascada por dentro. Se repite al pasar de
+    // ficha, como pasar página.
+    var DB = 60, sg = el.screens.gram;
+    aparecerEscalonado(sg.querySelectorAll('.ficha__title'), 0 * DB, 150);
+    aparecerEscalonado(enPantalla(sg.querySelectorAll('.ficha__body > *')), 1 * DB, 110);
+    aparecerEscalonado(enPantalla(sg.querySelectorAll('.ficha > .divider, .vlist > *, #fichaSig')), 2 * DB, 90);
   }
 
   // ─────────── Pantalla: vocabulario ───────────
@@ -2158,6 +2178,14 @@
     estado.vocabCat = '';
     pintarVocabulario();
     mostrar('vocab');
+
+    // Misma regla que Hoy: cabecera, filtro y lista arrancan casi a la vez
+    // (DB) y cada uno va en cascada por dentro. Solo al entrar, no al
+    // cambiar de filtro, como en el diccionario.
+    var DB = 60, sv = el.screens.vocab;
+    aparecerEscalonado(sv.querySelectorAll('.pagetitle, .lead'), 0 * DB, 150);
+    aparecerEscalonado(sv.querySelectorAll('.seg'), 1 * DB, 110);
+    aparecerEscalonado(enPantalla(sv.querySelectorAll('.vlist > *, #vocabPractica')), 2 * DB, 80);
   }
 
   // ─────────── Repaso mezclado ───────────
@@ -2994,11 +3022,7 @@
     aparecerEscalonado(s.querySelectorAll('.pagetitle'), 0 * DB, 150);
     var tf = aparecerEscalonado(s.querySelectorAll('.search, .seg, .alfa'), 1 * DB, 110);
     aparecerEscalonado(s.querySelectorAll('.alfa__l'), tf, 30);
-    var alto = window.innerHeight;
-    var visibles = Array.prototype.filter.call(s.querySelectorAll('.dsec__h, .dentry'), function (n) {
-      return n.getBoundingClientRect().top < alto;
-    });
-    aparecerEscalonado(visibles, 2 * DB, 70);
+    aparecerEscalonado(enPantalla(s.querySelectorAll('.dsec__h, .dentry')), 2 * DB, 70);
   }
 
   // ─────────── Modal ───────────
@@ -3007,6 +3031,12 @@
     el.modalPanel.className = 'modal__panel' + (clase ? ' ' + clase : '');
     el.modalPanel.innerHTML = html;
     el.modal.hidden = false;
+    // Entrada de hoja: el fondo funde y el panel sube desde abajo.
+    if (!REDUCIR_MOVIMIENTO.matches) {
+      $('modalScrim').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220, easing: EASE });
+      el.modalPanel.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: EASE });
+      el.modalPanel.animate([{ transform: 'translateY(40px)' }, { transform: 'none' }], { duration: 380, easing: EASE });
+    }
   }
 
   function cerrarModal() {
@@ -3128,6 +3158,14 @@
     $('ctaReset').addEventListener('click', abrirReinicio);
 
     mostrar('cuenta');
+
+    // Misma regla que Hoy: título y las dos secciones arrancan casi a la
+    // vez (DB) y cada una va en cascada por dentro.
+    var DB = 60, secs = el.screens.cuenta.querySelectorAll('.sec');
+    aparecerEscalonado(el.screens.cuenta.querySelectorAll('.pagetitle'), 0 * DB, 150);
+    Array.prototype.forEach.call(secs, function (sec, i) {
+      aparecerEscalonado(enPantalla(sec.querySelectorAll(':scope > *:not(.navrows), .navrows > *')), (i + 1) * DB, 90);
+    });
     if (mensajeInicial) abrirCambioPassword(mensajeInicial);
   }
 
@@ -4360,6 +4398,18 @@
 
     mostrar('result');
 
+    // Misma regla que Hoy: título, marcador y lo de debajo arrancan casi a
+    // la vez (DB), cada uno en cascada por dentro; las cifras del marcador
+    // cuentan desde 0 al aparecer su casilla, como las de la unidad.
+    var DB = 60, sr = el.screens.result;
+    aparecerEscalonado(sr.querySelectorAll('.pagetitle, .lead'), 0 * DB, 150);
+    var casillas = sr.querySelectorAll('.res__tiles > .scard');
+    aparecerEscalonado(casillas, 1 * DB, 120);
+    Array.prototype.forEach.call(casillas, function (c, i) {
+      contarHasta(c.querySelector('.scard__v'), 1 * DB + i * 120, 900);
+    });
+    aparecerEscalonado(enPantalla(sr.querySelectorAll('.stack > .divider, .stack > .eyebrow, .vlist > *, .btns > *')), 2 * DB, 90);
+
     var otra = estado.modo === 'repaso' ? empezarRepaso
              : estado.modo === 'vocab'  ? empezarVocab
              : empezarPractica;
@@ -4637,6 +4687,8 @@
     document.body.classList.remove('con-tabbar', 'con-lateral');
     el.sheet.hidden = true;
     el.authPassword.value = '';
+    // Lo primero que se ve: misma cascada que el resto de pantallas.
+    aparecerEscalonado(el.screenAuth.querySelectorAll('.auth > *:not([hidden]):not(form), .auth__form > *'), 0, 90);
   }
 
   /* El nombre para el saludo, si la cuenta lo tiene. Solo el primero:
