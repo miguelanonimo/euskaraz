@@ -252,7 +252,9 @@ body.con-tabbar .tabbar{ display: block; }
 .sidenav__item:hover{ background: var(--cream); }
 .sidenav__item.is-on{ background: var(--main-12); color: var(--main); font-weight: 700; }
 
-@media (min-width: 1024px){
+/* El menú lateral es de escritorio (Flujo 09). Entre 768 y 1199 —un iPad,
+   también en horizontal— sigue la barra de abajo, con la versión tablet. */
+@media (min-width: 1200px){
   body.con-lateral{ --side: 248px; padding-left: 248px; }
   body.con-lateral .sidenav{
     display: flex; flex-direction: column; justify-content: space-between;
@@ -266,7 +268,7 @@ body.con-tabbar .tabbar{ display: block; }
   /* Y en las secciones principales sobra la cabecera de volver. */
   body.con-lateral .hdr--raiz{ display: none; }
   body.con-lateral .hdr--raiz + .screen,
-  body.con-lateral .screen{ padding-top: 56px; }
+  body.con-lateral .screen{ padding-top: var(--pad-top); }
 }
 
 /* ═══════════ TIPOGRAFÍA ═══════════ */
@@ -561,6 +563,7 @@ div.scard{ cursor: default; }
 }
 .navrow__s svg{ margin-top: 3px; }
 .navrow__chev{ display: flex; color: rgb(10,10,10); }
+.navrow__n{ display: none; }   /* el número suelto, solo en tablet y escritorio */
 .navrow--outline{ box-shadow: inset 0 0 0 1px var(--c); }
 .navrow--outline:hover{ background: var(--c-soft); }
 .navrow--outline .navrow__chev{ color: var(--c); }
@@ -1100,15 +1103,6 @@ button.dentry__u:active{ opacity: .6; }
 }
 .modal__ruta{ margin: 0; font-family: var(--f-t); font-weight: 700; font-size: 12px; line-height: 1; letter-spacing: .1em; text-transform: uppercase; color: var(--grey50); }
 
-@media (min-width: 1024px){
-  .modal__panel{
-    left: 50%; right: auto; bottom: auto; top: 50%;
-    width: 480px; margin: 0;
-    transform: translate(calc(-50% + var(--side) / 2), -50%);
-    border-radius: var(--r-card);
-  }
-}
-
 @media (prefers-reduced-motion: reduce){
   *, *::before, *::after{ transition: none !important; scroll-behavior: auto !important; }
 }
@@ -1132,3 +1126,213 @@ button.dentry__u:active{ opacity: .6; }
 }
 .goup.is-on{ opacity: 1; transform: none; pointer-events: auto; }
 body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
+
+
+/* ═══════════ TABLET Y ESCRITORIO (Flujos 08/09) ═══════════
+   Tablet desde 768px, escritorio desde 1200px (menú lateral). Todo lo de
+   arriba es el móvil; aquí solo lo que cambia. Los tamaños son fluidos
+   con vw dentro de cada tramo; los valores exactos del diseño (su
+   breakpoints.js) quedan por contrastar. */
+@media (min-width: 768px){
+  :root{
+    --col: 100%;
+    --gutter: clamp(40px, 5vw, 64px);
+    --pad-top: clamp(32px, 3.6vw, 56px);
+    --fs-hero: clamp(44px, 4.4vw, 64px);
+    --fs-h1: clamp(34px, 3vw, 44px);
+    --fs-mega: clamp(56px, 5vw, 72px);
+    --fs-h3: clamp(22px, 1.8vw, 26px);
+    --fs-lead: clamp(20px, 1.6vw, 24px);
+    --card-pad: clamp(24px, 2.8vw, 40px);
+  }
+  .tabbar__in{ max-width: 560px; }
+  .pagetitle{ font-size: var(--fs-h1); }
+
+  /* Pantallas de foco y de lectura: una columna, no el ancho entero. */
+  body[data-pantalla="gram"] .col,
+  body[data-pantalla="vocab"] .col,
+  body[data-pantalla="quiz"] .col,
+  body[data-pantalla="result"] .col{ --col: calc(640px + 2 * var(--gutter)); }
+  .sheet__in{ max-width: 640px; }
+
+  /* ── Hoy ── */
+  .homew{
+    display: flex; flex-direction: column; gap: 32px;
+    min-height: calc(100dvh - var(--home-resta));
+    --home-resta: calc(60px + var(--safe-t) + var(--pad-top) + 72px + var(--safe-b-tabbar));
+  }
+  .homew__hero{ display: flex; flex-direction: column; align-items: flex-start; gap: 28px 48px; }
+  .homew .pagetitle{ font-size: var(--fs-hero); line-height: .92; letter-spacing: -0.035em; }
+  .homew__racha{ display: flex; flex-direction: column; align-items: flex-start; gap: 14px; flex-shrink: 0; }
+  .homew__cuenta{ display: flex; align-items: flex-end; gap: 10px; color: var(--main); font-family: var(--f-d); font-weight: 800; }
+  .homew__cuenta b{ font-size: var(--fs-mega); line-height: .76; letter-spacing: -0.05em; }
+  .homew__cuenta span{ font-size: var(--fs-h3); line-height: 1; white-space: pre; }
+  .homew__rail{ flex: 1 1 auto; min-height: 300px; display: flex; gap: 16px; }
+  .lfeat, .ltile{
+    display: flex; flex-direction: column; justify-content: space-between; min-width: 0;
+    border: 0; border-radius: var(--r-card); background: var(--c); color: var(--ink);
+    text-align: left; cursor: pointer; transition: filter .15s var(--ease), transform .32s var(--ease);
+  }
+  .lfeat:hover, .ltile:hover{ filter: brightness(.94); }
+  .lfeat:active, .ltile:active{ transform: scale(.98); }
+  .lfeat{ flex: 2 1 0; gap: 32px; min-height: 300px; padding: var(--card-pad); }
+  .lfeat__top{ display: flex; flex-direction: column; gap: 14px; }
+  .lfeat__t{ font-family: var(--f-d); font-weight: 800; font-size: var(--fs-h1); line-height: 1; letter-spacing: -0.02em; text-wrap: balance; }
+  .lfeat__s{ font-family: var(--f-t); font-weight: 500; font-size: var(--fs-lead); line-height: 1.25; letter-spacing: 0.01em; }
+  .lfeat__bottom{ display: flex; flex-direction: column; gap: 24px; align-self: stretch; }
+  .lfeat__pct{ display: flex; align-items: flex-end; gap: 6px; font-family: var(--f-d); font-weight: 800; }
+  .lfeat__pct b{ font-size: var(--fs-mega); line-height: .78; letter-spacing: -0.04em; }
+  .lfeat__pct small{ font-size: 30px; line-height: 1; }
+  .ltile{ flex: 1 1 0; gap: 24px; min-height: 240px; padding: clamp(20px, 2.2vw, 28px); }
+  .ltile__top{ display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+  .ltile__txt{ display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .ltile__t{ font-family: var(--f-d); font-weight: 800; font-size: var(--fs-h3); line-height: 1; letter-spacing: 0.01em; text-wrap: pretty; }
+  .ltile__s{ font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em; text-wrap: pretty; }
+  .ltile__n{ font-family: var(--f-d); font-weight: 800; font-size: var(--fs-mega); line-height: .78; letter-spacing: -0.04em; }
+  .homew__reviews{ gap: 16px; }
+  .homew__reviews .scard{ min-height: 200px; padding: var(--card-pad); }
+  .homew__reviews .scard__t{ font-size: var(--fs-h3); }
+  .homew__reviews .scard__v{ font-size: var(--fs-mega); line-height: .8; letter-spacing: -0.04em; }
+}
+
+@media (min-width: 768px){
+  /* ── Lecciones ── */
+  #screenLessons .pagetitle{ font-size: var(--fs-hero); line-height: .92; letter-spacing: -0.035em; }
+  .llist{ gap: 10px; }
+  .lrow{ gap: 24px; padding: 22px 28px; }
+  .lrow__n{ width: auto; min-width: 1.1em; font-size: var(--fs-mega); line-height: .8; letter-spacing: -0.04em; }
+  .lrow__txt{ gap: 6px; }
+  .lrow__t{ font-size: var(--fs-h3); }
+
+  /* ── Progreso: el rosco junto al título, las barras debajo ── */
+  #screenProgress .stack{ display: grid; grid-template-columns: auto minmax(0,1fr); align-items: center; gap: 40px; }
+  #screenProgress .donut{ --tam: clamp(220px, 24vw, 300px); margin: 0; }
+  #screenProgress .pagetitle{ white-space: pre-line; }
+  #screenProgress .statbars{ grid-column: 1 / -1; }
+
+  /* ── Diccionario: letras en columna a la derecha, entradas a dos columnas ── */
+  #screenDict .stack{ display: grid; grid-template-columns: minmax(0,1fr) 24px; column-gap: 32px; }
+  #screenDict .pagetitle{ grid-column: 1 / -1; grid-row: 1; }
+  #screenDict .dict__filtros{ grid-column: 1 / -1; grid-row: 2; }
+  #screenDict .alfa{
+    grid-column: 2; grid-row: 3; align-self: start;
+    position: sticky; top: calc(60px + var(--safe-t) + 16px);
+    border: 0; padding: 0;
+  }
+  #screenDict .alfa__chev{ display: none; }
+  #screenDict .alfa__rail{ flex-direction: column; align-items: center; gap: 6px; overflow: visible; }
+  #screenDict .alfa__l{ font-size: 13px; }
+  #screenDict .dict__lista{ grid-column: 1; grid-row: 3; padding-top: 32px; border-top: 0.5px solid var(--grey50); }
+  .dsec__h{ font-size: 200px; line-height: .75; letter-spacing: -0.06em; }
+  .dsec__items{ display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 40px 48px; align-content: start; }
+  /* La raya del grupo de sufijos, a tamaño de letra gigante, era una
+     barra roja: se queda en un tamaño de titular. */
+  #dsec-raya .dsec__h{ font-size: 96px; line-height: 1; }
+}
+
+@media (min-width: 768px){
+  /* ── Unidad: cabecera y cifras a la izquierda, temas a la derecha ── */
+  #screenUnit .stack{
+    display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    column-gap: clamp(48px, 5vw, 72px); row-gap: 24px; align-items: start;
+  }
+  #screenUnit .stack > *{ grid-column: 1; }
+  #screenUnit .stack > .sublist, #screenUnit .stack > .navrows{ grid-column: 2; grid-row: 1 / span 6; padding-top: 0; }
+  #screenUnit .lead--22{ font-size: var(--fs-lead); }
+
+  /* ── Subnivel: las tres puertas, en tarjetas con su número ── */
+  #screenSub .subtit{ gap: 20px; max-width: 1000px; }
+  #screenSub .subtit__k{ font-size: var(--fs-h3); }
+  #screenSub .subtit__t{ font-size: var(--fs-hero); line-height: .95; letter-spacing: -0.035em; text-wrap: balance; }
+  #screenSub .lead{ max-width: 760px; font-size: var(--fs-lead); line-height: 1.3; }
+  .navrows--sub{ display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; padding-top: 16px; }
+  .navrows--sub .navrow{
+    display: grid; grid-template-columns: minmax(0,1fr) auto; grid-template-rows: auto 1fr auto;
+    grid-template-areas: "t chev" "n n" "s s"; gap: 12px;
+    min-height: clamp(240px, 24vw, 340px); padding: var(--card-pad); align-items: start;
+  }
+  .navrows--sub .navrow__txt{ display: contents; }
+  .navrows--sub .navrow__t{ grid-area: t; font-size: var(--fs-h3); line-height: 1; }
+  .navrows--sub .navrow__chev{ grid-area: chev; }
+  .navrows--sub .navrow__n{
+    display: block; grid-area: n; align-self: end;
+    font-family: var(--f-d); font-weight: 800; font-size: var(--fs-mega); line-height: .78; letter-spacing: -0.04em; color: var(--ink);
+  }
+  .navrows--sub .navrow__s{ grid-area: s; font-size: 18px; color: var(--ink); }
+  .navrows--sub .navrow__sn{ display: none; }
+
+  /* ── Ajustes: modales como ventana centrada, no como hoja ── */
+  .modal__panel{
+    /* Centrada en el área de contenido: con menú lateral, a su derecha.
+       Con `translate` y no `transform`, que lo usa la animación de entrada. */
+    top: 50%; bottom: auto; left: calc(50% + var(--side) / 2); right: auto; width: min(480px, calc(100vw - 2 * var(--gutter)));
+    margin: 0; translate: -50% -50%; border-radius: var(--r-card);
+    padding: 40px;
+  }
+  .modal__panel--ficha{ width: min(640px, calc(100vw - 2 * var(--gutter))); padding: 0; }
+}
+
+/* iPad en horizontal y escritorio: Hoy con el saludo y la racha en fila
+   y los repasos apaisados; si no, a 1194×834 no cabía. */
+@media (min-width: 1024px){
+  .homew__hero{ flex-direction: row; justify-content: space-between; align-items: flex-end; }
+  .homew__racha{ align-items: flex-end; }
+  .homew__reviews .scard{ min-height: 128px; flex-direction: row; align-items: center; }
+  .homew__reviews .scard__row{ gap: 16px; }
+
+  /* ── Lecciones: rejilla de 2 columnas ── */
+  .llist{ display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); grid-template-rows: repeat(6, auto); grid-auto-flow: column; gap: 12px 16px; }
+  .lrow__n{ font-size: clamp(56px, 4.4vw, 64px); }
+
+  /* ── Progreso: título y rosco a la izquierda, barras a la derecha ── */
+  #screenProgress .stack{
+    grid-template-columns: minmax(0,6fr) minmax(0,5fr); grid-template-rows: auto auto;
+    column-gap: 72px; row-gap: 40px; align-content: center;
+  }
+  #screenProgress .pagetitle{ grid-column: 1; grid-row: 1; align-self: end; }
+  #screenProgress .donut{ grid-column: 1; grid-row: 2; align-self: start; justify-self: start; }
+  #screenProgress .statbars{ grid-column: 2; grid-row: 1 / 3; }
+}
+
+@media (min-width: 1200px){
+  :root{ --col: 1312px; }   /* 1184 de contenido + márgenes */
+  /* Escritorio, pantallas de foco (sin menú lateral): Flujo 09. */
+  body[data-pantalla="quiz"] .col{ --col: calc(1100px + 2 * var(--gutter)); }
+  body[data-pantalla="gram"] .col{ --col: calc(1296px + 2 * var(--gutter)); }
+
+  /* ── Hoy ── */
+  .homew{ --home-resta: calc(var(--pad-top) + 48px); }
+
+  /* Lecciones y Progreso llenan la pantalla (sin barra de abajo). */
+  #screenLessons .stack, #screenProgress .stack{ min-height: calc(100dvh - var(--pad-top) - 48px); }
+  .llist{ flex: 1 1 auto; grid-template-rows: repeat(6, minmax(72px, 1fr)); }
+  .lrow{ padding: 0 28px; }
+
+  /* ── Diccionario: título, buscador y filtro en una fila; la letra grande
+     a la izquierda de sus palabras ── */
+  #screenDict .stack{ grid-template-columns: auto minmax(0,1fr) 24px; }
+  #screenDict .pagetitle{ grid-column: 1; grid-row: 1; align-self: end; white-space: pre; }
+  #screenDict .dict__filtros{ grid-column: 2 / -1; grid-row: 1; grid-template-columns: minmax(0,1fr) 400px; align-items: end; }
+  #screenDict .alfa{ grid-column: 3; grid-row: 2; top: 24px; }
+  #screenDict .dict__lista{ grid-column: 1 / 3; grid-row: 2; }
+  .dsec{ display: grid; grid-template-columns: 300px minmax(0,1fr); gap: 48px; align-items: start; }
+  .dsec__h{ position: sticky; top: 24px; font-size: 300px; }
+
+  /* ── Ficha: el título fijo a la izquierda, la explicación a la derecha ── */
+  #screenGram .stack{ display: grid; grid-template-columns: minmax(0,5fr) minmax(0,7fr); column-gap: 96px; row-gap: 32px; align-items: start; }
+  #screenGram .ficha{ display: contents; }
+  #screenGram .ficha__title{ grid-column: 1; grid-row: 1 / span 4; position: sticky; top: 24px; font-size: var(--fs-h1); line-height: 1.02; }
+  #screenGram .ficha > :not(.ficha__title), #screenGram #fichaSig{ grid-column: 2; }
+
+  /* ── Ejercicio: el enunciado a la izquierda, la respuesta a la derecha ── */
+  #screenQuiz .quiz{ display: grid; grid-template-columns: minmax(0,5fr) minmax(0,6fr); column-gap: 96px; row-gap: 32px; align-items: center; }
+  #screenQuiz .quiz > *{ grid-column: 1; }
+  #screenQuiz .quiz > :last-child:not(:first-child){ grid-column: 2; grid-row: 1 / span 2; }
+  body[data-pantalla="quiz"] .sheet__in{ max-width: 1100px; }
+
+  /* ── Ajustes: las dos secciones lado a lado ── */
+  #screenCuenta .stack{ display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); column-gap: 72px; align-items: start; }
+  #screenCuenta .stack > .pagetitle{ grid-column: 1 / -1; }
+  #screenCuenta .sec + .sec{ padding-top: 32px; }
+}
+

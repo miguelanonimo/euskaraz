@@ -184,10 +184,21 @@ curso.
   `@media` nuevo. Verificado con puppeteer (320/360/390/430 × 568-932):
   sin desborde lateral en ninguna pantalla, las 4 opciones visibles sin
   scroll hasta 568, la racha de Hoy cabe desde 640 (a 568 Hoy hace
-  scroll, aceptado). **Pendiente, paso 2:** pantallas grandes (tablet y
-  escritorio siguen siendo la columna de 480px centrada). El "100%" que
-  se sale de su tarjeta en el resultado sigue aparte, en
-  `docs/ideas-ric.md`.
+  scroll, aceptado). El "100%" que se sale de su tarjeta en el resultado
+  sigue aparte, en `docs/ideas-ric.md`.
+
+- **Tablet y escritorio, primera pasada (07/10/2026):** aplicados los
+  Flujos 08/09 de Claude Design (cada `Screen*.dc.html` tiene su variante
+  `size="tablet"`/`"desktop"`). Cortes: tablet desde 768px (barra de
+  abajo), escritorio desde 1200px (menú lateral; antes salía desde 1024).
+  Todo en la sección «TABLET Y ESCRITORIO» al final de `css/styles.css`;
+  el único marcado propio es Hoy (`pintarHomeAncha()`, se repinta al
+  cruzar 768) y el número suelto de las puertas de Subnivel (`puerta()`).
+  `body[data-pantalla]` permite dar a cada pantalla su ancho de columna.
+  **Pendiente de refinar:** los tamaños de texto y márgenes exactos están
+  estimados con `clamp()`; los del diseño están en `ds/breakpoints.js` del
+  proyecto de Claude Design, que no se llegó a leer (DesignSync necesita
+  `/design-login` desde una sesión interactiva).
 
 ## Al terminar cada fase
 

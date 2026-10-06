@@ -1137,6 +1137,9 @@
      Respeta prefers-reduced-motion (igual que el resto de animaciones
      con Web Animations API de esta app). */
   var REDUCIR_MOVIMIENTO = window.matchMedia('(prefers-reduced-motion: reduce)');
+  // Tablet y escritorio (Flujos 08/09 del diseño). El CSS hace casi todo;
+  // ANCHO lo mira el JS solo donde cambia el marcado (Hoy).
+  var ANCHO = window.matchMedia('(min-width: 768px)');
   // El fundido va siempre a este ritmo, corto, aunque el desplazamiento
   // de cada animación dure más — se piden como dos velocidades sueltas,
   // no una sola. Por eso van en dos animate() aparte: opacity y
@@ -1243,6 +1246,7 @@
 
   function mostrar(nombre) {
     estado.pantalla = nombre;
+    document.body.setAttribute('data-pantalla', nombre);
     for (var k in el.screens) {
       el.screens[k].hidden = (k !== nombre);
     }
@@ -1510,6 +1514,8 @@
       '</button>';
     }
 
+    if (ANCHO.matches) { pintarHomeAncha(pila, activa, repaso); return; }
+
     el.screens.home.innerHTML =
       '<div class="home">' +
         '<h1 class="pagetitle">' + esc(saludo()) + '\nEuskaraz pixka bat?</h1>' +
@@ -1542,6 +1548,60 @@
     // Los días, en cambio, más rápidos entre sí que el resto de bloques.
     aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), tr, 50);
   }
+
+  /* Hoy en tablet y escritorio (Flujos 08/09): el saludo con la racha al
+     lado, un carril con la lección abierta en grande y las otras dos en
+     tarjetas con su número (tocarlas las trae delante, como la pila del
+     móvil), y los repasos debajo. */
+  function pintarHomeAncha(pila, activa, repaso) {
+    var otras = pila.filter(function (u) { return u !== activa; }).reverse();
+    var fa = familia(activa), pa = Math.round(progresoUnidad(activa).ratio * 100);
+    var racha = rachaActual();
+    el.screens.home.innerHTML =
+      '<div class="homew">' +
+        '<div class="homew__hero">' +
+          '<h1 class="pagetitle">' + esc(saludo()) + '\nEuskaraz pixka bat?</h1>' +
+          '<div class="homew__racha">' +
+            '<span class="homew__cuenta"><b>' + racha + '</b><span>' + (racha === 1 ? 'día' : 'días') + '\nde racha</span></span>' +
+            '<span class="racha__dias">' + semana() + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="homew__rail">' +
+          '<button class="lfeat" type="button" data-unidad="' + esc(activa.id) + '" style="--c:' + fa.c + '">' +
+            '<span class="lfeat__top"><span class="lfeat__t">' + esc(activa.numero + '. ' + activa.titulo) + '</span>' +
+              '<span class="lfeat__s">' + esc(activa.subtitulo) + '</span></span>' +
+            '<span class="lfeat__bottom"><span class="lfeat__pct"><b>' + pa + '</b><small>%</small></span>' +
+              '<span class="bar"><span style="width:' + pa + '%"></span></span></span>' +
+          '</button>' +
+          otras.map(function (u) {
+            var f = familia(u), pu = progresoUnidad(u);
+            return '<button class="ltile" type="button" data-pila="' + esc(u.id) + '" style="--c:' + f.c + '">' +
+              '<span class="ltile__top"><span class="ltile__txt"><span class="ltile__t">' + esc(u.titulo) + '</span>' +
+                '<span class="ltile__s">' + esc(u.subtitulo) + '</span></span>' +
+                (pu.ratio > 0 || pu.completada ? anillo(pu.ratio * 100, { tam: 36, color: 'rgb(10,10,10)', hecho: pu.completada }) : '') +
+              '</span>' +
+              '<span class="ltile__n">' + esc(u.numero) + '</span>' +
+            '</button>';
+          }).join('') +
+        '</div>' +
+        '<div class="reviews homew__reviews">' +
+          repaso('goVocabRepaso', 'Repaso de\nvocabulario', fondoVocabulario(), claveDeVocab, 4) +
+          repaso('goRepaso', 'Repaso\nmezclado', fondoRepaso(), claveDeFondo, 1) +
+        '</div>' +
+      '</div>';
+    mostrar('home');
+
+    // Misma regla que el móvil: tres bloques casi a la vez, en cascada.
+    var DB = 60, s = el.screens.home;
+    aparecerEscalonado(s.querySelectorAll('.homew__hero > .pagetitle, .homew__cuenta, .homew__racha .day'), 0 * DB, 70);
+    aparecerPrimeroLento(s.querySelectorAll('.homew__rail > *'), 1 * DB, 110, 400, 320);
+    aparecerEscalonado(s.querySelectorAll('.homew__reviews > *'), 2 * DB, 110);
+  }
+
+  // Al cruzar el corte de tablet, Hoy cambia de marcado: se repinta.
+  ANCHO.addEventListener('change', function () {
+    if (estado.pantalla === 'home') pantallaHome();
+  });
 
   // ─────────── Pantalla: lecciones ───────────
 
@@ -1952,18 +2012,30 @@
   function puertasDeTema(c) {
     var p = [];
     if (c.gramatica.length) {
-      p.push(filaNav('goGram', 'outline', 'Explicación', plural(c.gramatica.length, 'ficha gramatical', 'fichas gramaticales')));
+      p.push(puerta('goGram', 'outline', 'Explicación', c.gramatica.length, 'ficha gramatical', 'fichas gramaticales'));
     }
     if (c.vocabulario.length) {
-      p.push(filaNav('goVoc', 'outline', 'Vocabulario', plural(c.vocabulario.length, 'palabra del tema', 'palabras del tema')));
+      p.push(puerta('goVoc', 'outline', 'Vocabulario', c.vocabulario.length, 'palabra del tema', 'palabras del tema'));
     }
     if (c.ejercicios.length) {
       // + ESCUCHAR_PRACTICA: empezarPractica() cuela esas preguntas de
       // escuchar en cualquier sesión, y el número que se enseña tiene que
       // ser el que de verdad sale.
-      p.push(filaNav('goPrac', 'filled', 'Práctica', plural(c.ejercicios.length + ESCUCHAR_PRACTICA, 'ejercicio', 'ejercicios')));
+      p.push(puerta('goPrac', 'filled', 'Práctica', c.ejercicios.length + ESCUCHAR_PRACTICA, 'ejercicio', 'ejercicios'));
     }
     return p.join('');
+  }
+
+  /* Una puerta de tema: en el móvil es una fila más («3 fichas
+     gramaticales»); en tablet y escritorio, una tarjeta con el número en
+     grande. Por eso el número va también suelto, en .navrow__n. */
+  function puerta(id, variante, titulo, n, uno, varios) {
+    return '<button class="navrow navrow--' + variante + '" type="button" id="' + id + '">' +
+      '<span class="navrow__txt"><span class="navrow__t">' + esc(titulo) + '</span>' +
+        '<span class="navrow__n">' + n + '</span>' +
+        '<span class="navrow__s"><span><span class="navrow__sn">' + n + ' </span>' + esc(n === 1 ? uno : varios) + '</span></span></span>' +
+      '<span class="navrow__chev">' + icono('chevron-right', 24) + '</span>' +
+    '</button>';
   }
 
   function filaNav(id, variante, titulo, sub, extraSub) {
@@ -4494,7 +4566,7 @@
   el.screens.home.addEventListener('click', function (e) {
     var peek = e.target.closest('[data-pila]');
     if (peek) { estado.homeActiva = peek.dataset.pila; pantallaHome(); return; }
-    var card = e.target.closest('.lcard');
+    var card = e.target.closest('.lcard, .lfeat');
     if (card) { abrirUnidad(card.dataset.unidad, 'home'); return; }
     if (e.target.closest('#goVocabRepaso')) empezarVocab();
     else if (e.target.closest('#goRepaso')) empezarRepaso();
