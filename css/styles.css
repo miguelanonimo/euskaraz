@@ -1256,7 +1256,7 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   #screenUnit .ustat b{ font-size: var(--fs-mega); line-height: .9; letter-spacing: -0.03em; }
 
   /* ── Subnivel: las tres puertas, en tarjetas con su número ── */
-  #screenSub .subtit{ gap: 20px; max-width: 1000px; }
+  #screenSub .subtit{ gap: 8px; max-width: 1000px; }
   #screenSub .subtit__k{ font-size: var(--fs-h3); }
   #screenSub .subtit__t{ font-size: var(--fs-hero); line-height: .95; letter-spacing: -0.035em; text-wrap: balance; }
   #screenSub .lead{ max-width: 760px; font-size: var(--fs-lead); line-height: 1.3; }
