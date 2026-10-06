@@ -1167,7 +1167,13 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   .homew__cuenta{ display: flex; align-items: flex-end; gap: 10px; color: var(--main); font-family: var(--f-d); font-weight: 800; }
   .homew__cuenta b{ font-size: var(--fs-mega); line-height: .76; letter-spacing: -0.05em; }
   .homew__cuenta span{ font-size: var(--fs-h3); line-height: 1; white-space: pre; }
-  .homew__rail{ flex: 1 1 auto; min-height: 300px; display: flex; gap: 16px; }
+  /* Rejilla y no flex: en flex el reparto 2:1:1 descuenta antes el
+     relleno de cada tarjeta, distinto en la grande, y las columnas no
+     cuadraban con las de los repasos de debajo. */
+  .homew__rail{
+    flex: 1 1 auto; min-height: 300px; display: grid; gap: 16px;
+    grid-template-columns: minmax(0,2fr) minmax(0,1fr) minmax(0,1fr);
+  }
   .lfeat, .ltile{
     display: flex; flex-direction: column; justify-content: space-between; min-width: 0;
     border: 0; border-radius: var(--r-card); background: var(--c); color: var(--ink);
@@ -1176,23 +1182,30 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   .lfeat:hover, .ltile:hover{ filter: brightness(.94); }
   .lfeat:active, .ltile:active{ transform: scale(.98); }
   .lfeat{ flex: 2 1 0; gap: 32px; min-height: 300px; padding: var(--card-pad); }
-  .lfeat__top{ display: flex; flex-direction: column; gap: 14px; }
-  .lfeat__t{ font-family: var(--f-d); font-weight: 800; font-size: var(--fs-h1); line-height: 1; letter-spacing: -0.02em; text-wrap: balance; }
-  .lfeat__s{ font-family: var(--f-t); font-weight: 500; font-size: var(--fs-lead); line-height: 1.25; letter-spacing: 0.01em; }
-  .lfeat__bottom{ display: flex; flex-direction: column; gap: 24px; align-self: stretch; }
-  .lfeat__pct{ display: flex; align-items: flex-end; gap: 6px; font-family: var(--f-d); font-weight: 800; }
-  .lfeat__pct b{ font-size: var(--fs-mega); line-height: .78; letter-spacing: -0.04em; }
-  .lfeat__pct small{ font-size: 30px; line-height: 1; }
   .ltile{ flex: 1 1 0; gap: 24px; min-height: 240px; padding: clamp(20px, 2.2vw, 28px); }
-  .ltile__top{ display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
-  .ltile__txt{ display: flex; flex-direction: column; gap: 8px; min-width: 0; }
-  .ltile__t{ font-family: var(--f-d); font-weight: 800; font-size: var(--fs-h3); line-height: 1; letter-spacing: 0.01em; text-wrap: pretty; }
-  .ltile__s{ font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em; text-wrap: pretty; }
-  .ltile__n{ font-family: var(--f-d); font-weight: 800; font-size: var(--fs-mega); line-height: .78; letter-spacing: -0.04em; }
-  .homew__reviews{ gap: 16px; }
+  /* Tarjetas del carril: el mismo esquema en la grande y en las demás. */
+  .rcard__txt{ display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .lfeat .rcard__txt{ gap: 14px; }
+  .rcard__t{ font-family: var(--f-d); font-weight: 800; font-size: var(--fs-h3); line-height: 1; letter-spacing: 0.01em; text-wrap: pretty; }
+  .lfeat .rcard__t{ font-size: var(--fs-h1); letter-spacing: -0.02em; text-wrap: balance; }
+  .rcard__s{ font-family: var(--f-t); font-weight: 500; font-size: 15px; line-height: 1.25; letter-spacing: 0.02em; text-wrap: pretty; }
+  .lfeat .rcard__s{ font-size: var(--fs-lead); letter-spacing: 0.01em; }
+  .rcard__bottom{ display: flex; flex-direction: column; gap: 20px; align-self: stretch; }
+  .rcard__big{ display: flex; align-items: flex-end; gap: 6px; font-family: var(--f-d); font-weight: 800; }
+  .rcard__big b{ font-size: var(--fs-mega); line-height: .78; letter-spacing: -0.04em; }
+  .rcard__big small{ font-size: 30px; line-height: 1; }
+  /* Las mismas columnas que el carril de arriba (2:1:1, hueco 16): así el
+     hueco entre los repasos cae justo bajo el de la lección grande. */
+  .homew__reviews{ grid-template-columns: minmax(0,2fr) minmax(0,1fr) minmax(0,1fr); gap: 16px; }
+  .homew__reviews > :last-child{ grid-column: span 2; }
+  /* Mismo hueco en vertical que entre tarjetas: 16px, no los 32 del resto. */
+  .homew__rail + .homew__reviews{ margin-top: -16px; }
   .homew__reviews .scard{ min-height: 200px; padding: var(--card-pad); }
   .homew__reviews .scard__t{ font-size: var(--fs-h3); }
   .homew__reviews .scard__v{ font-size: var(--fs-mega); line-height: .8; letter-spacing: -0.04em; }
+  /* El anillo, tan alto como la cifra (a 32px se perdía al lado). El
+     grosor va con !important porque anillo() lo pone en línea. */
+  .homew__reviews .ring{ width: calc(var(--fs-mega) * .78); height: calc(var(--fs-mega) * .78); --rw: 6px !important; }
 }
 
 @media (min-width: 768px){

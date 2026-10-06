@@ -1553,9 +1553,22 @@
      lado, un carril con la lección abierta en grande y las otras dos en
      tarjetas con su número (tocarlas las trae delante, como la pila del
      móvil), y los repasos debajo. */
+  /* Una tarjeta del carril de Hoy, con el mismo esquema para la lección
+     abierta (la grande) y las siguientes: número y título arriba, el
+     porcentaje en grande abajo con su barra. */
+  function tarjetaRail(u, grande) {
+    var f = familia(u), pct = Math.round(progresoUnidad(u).ratio * 100);
+    return '<button class="' + (grande ? 'lfeat' : 'ltile') + ' rcard" type="button" ' +
+      (grande ? 'data-unidad' : 'data-pila') + '="' + esc(u.id) + '" style="--c:' + f.c + '">' +
+      '<span class="rcard__txt"><span class="rcard__t">' + esc(u.numero + '. ' + u.titulo) + '</span>' +
+        '<span class="rcard__s">' + esc(u.subtitulo) + '</span></span>' +
+      '<span class="rcard__bottom"><span class="rcard__big"><b>' + pct + '</b><small>%</small></span>' +
+        '<span class="bar"><span style="width:' + pct + '%"></span></span></span>' +
+    '</button>';
+  }
+
   function pintarHomeAncha(pila, activa, repaso) {
     var otras = pila.filter(function (u) { return u !== activa; }).reverse();
-    var fa = familia(activa), pa = Math.round(progresoUnidad(activa).ratio * 100);
     var racha = rachaActual();
     el.screens.home.innerHTML =
       '<div class="homew">' +
@@ -1567,22 +1580,7 @@
           '</div>' +
         '</div>' +
         '<div class="homew__rail">' +
-          '<button class="lfeat" type="button" data-unidad="' + esc(activa.id) + '" style="--c:' + fa.c + '">' +
-            '<span class="lfeat__top"><span class="lfeat__t">' + esc(activa.numero + '. ' + activa.titulo) + '</span>' +
-              '<span class="lfeat__s">' + esc(activa.subtitulo) + '</span></span>' +
-            '<span class="lfeat__bottom"><span class="lfeat__pct"><b>' + pa + '</b><small>%</small></span>' +
-              '<span class="bar"><span style="width:' + pa + '%"></span></span></span>' +
-          '</button>' +
-          otras.map(function (u) {
-            var f = familia(u), pu = progresoUnidad(u);
-            return '<button class="ltile" type="button" data-pila="' + esc(u.id) + '" style="--c:' + f.c + '">' +
-              '<span class="ltile__top"><span class="ltile__txt"><span class="ltile__t">' + esc(u.titulo) + '</span>' +
-                '<span class="ltile__s">' + esc(u.subtitulo) + '</span></span>' +
-                (pu.ratio > 0 || pu.completada ? anillo(pu.ratio * 100, { tam: 36, color: 'rgb(10,10,10)', hecho: pu.completada }) : '') +
-              '</span>' +
-              '<span class="ltile__n">' + esc(u.numero) + '</span>' +
-            '</button>';
-          }).join('') +
+          tarjetaRail(activa, true) + otras.map(function (u) { return tarjetaRail(u, false); }).join('') +
         '</div>' +
         '<div class="reviews homew__reviews">' +
           repaso('goVocabRepaso', 'Repaso de\nvocabulario', fondoVocabulario(), claveDeVocab, 4) +
