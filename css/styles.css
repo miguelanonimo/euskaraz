@@ -937,7 +937,6 @@ div.scard{ cursor: default; }
   box-shadow: inset 0 0 0 1px var(--main); cursor: text;
   transition: background-color .15s var(--ease), box-shadow .15s var(--ease);
 }
-.search:hover{ background: var(--main-12); }
 .search:focus-within{ background: transparent; box-shadow: inset 0 0 0 2px var(--main); }
 .search__ico{ display: flex; color: rgb(245,100,103); }
 .search input{
@@ -1329,13 +1328,14 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
 
   /* ── Diccionario: título, buscador y filtro en una fila; la letra grande
      a la izquierda de sus palabras ── */
-  #screenDict .stack{ grid-template-columns: auto minmax(0,1fr) 24px; }
-  #screenDict .pagetitle{ grid-column: 1; grid-row: 1; align-self: end; white-space: pre; }
-  #screenDict .dict__filtros{ grid-column: 2 / -1; grid-row: 1; grid-template-columns: minmax(0,1fr) 400px; align-items: end; }
-  #screenDict .alfa{ grid-column: 3; grid-row: 2; top: 24px; }
-  #screenDict .dict__lista{ grid-column: 1 / 3; grid-row: 2; }
-  .dsec{ display: grid; grid-template-columns: 300px minmax(0,1fr); gap: 48px; align-items: start; }
-  .dsec__h{ position: sticky; top: 24px; font-size: 300px; }
+  /* El título en una línea; debajo, el buscador en todo el ancho libre
+     y el filtro al lado. */
+  #screenDict .pagetitle{ white-space: normal; }
+  #screenDict .dict__filtros{ grid-template-columns: minmax(0,1fr) 400px; align-items: center; }
+  #screenDict .alfa{ top: 24px; }
+  .dsec{ display: grid; grid-template-columns: 220px minmax(0,1fr); gap: 48px; align-items: start; }
+  .dsec__h{ position: sticky; top: 24px; font-size: 200px; }
+  #dsec-raya .dsec__h{ font-size: 72px; }
 
   /* ── Ficha: el título fijo a la izquierda, la explicación a la derecha ── */
   #screenGram .stack{ display: grid; grid-template-columns: minmax(0,5fr) minmax(0,7fr); column-gap: 96px; row-gap: 32px; align-items: start; }
