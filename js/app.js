@@ -1780,8 +1780,31 @@
     var DB = 60, s = el.screens.unit;
     aparecerEscalonado(s.querySelectorAll('.pagetitle, .lead'), 0 * DB, 150);
     aparecerEscalonado(s.querySelectorAll('.divider, .ustat'), 1 * DB, 90);
+    // Cada cifra cuenta desde 0 a la vez que su columna aparece (el
+    // primer .divider ocupa el hueco 0 de la cascada, de ahí el i + 1).
+    Array.prototype.forEach.call(s.querySelectorAll('.ustat b'), function (b, i) {
+      contarHasta(b, 1 * DB + (i + 1) * 90, 900);
+    });
     aparecerEscalonado(s.querySelectorAll('.sublist > .srow, .navrows > *'), 2 * DB, 110);
     avanzarColor(s.querySelectorAll('.sublist > .srow'), 2 * DB + 250);
+  }
+
+  /* Count up: el número sube de 0 a su valor con la misma forma que EASE
+     (sale rápido, frena al llegar; 1-(1-t)^5 es prácticamente la misma
+     curva). Se escribe el valor final antes de empezar y al acabar, así
+     que si algo falla queda siempre la cifra correcta. */
+  function contarHasta(nodo, retraso, duracion) {
+    var fin = parseInt(nodo.textContent, 10);
+    if (REDUCIR_MOVIMIENTO.matches || !(fin > 0)) return;
+    nodo.textContent = '0';
+    setTimeout(function () {
+      var t0 = performance.now();
+      (function paso(ahora) {
+        var t = Math.min(1, (ahora - t0) / duracion);
+        nodo.textContent = String(Math.round(fin * (1 - Math.pow(1 - t, 5))));
+        if (t < 1) requestAnimationFrame(paso); else nodo.textContent = String(fin);
+      })(t0);
+    }, retraso);
   }
 
   /* Lo hecho «se va llenando» de arriba abajo: el anillo del primer tema
@@ -1963,6 +1986,12 @@
       '</div>';
 
     mostrar('sub');
+
+    // Misma regla que Hoy: cabecera y puertas arrancan casi a la vez (DB)
+    // y cada bloque va en cascada por dentro.
+    var DB = 60, sc = el.screens.sub;
+    aparecerEscalonado(sc.querySelectorAll('.subtit__k, .subtit__t, .lead'), 0 * DB, 120);
+    aparecerEscalonado(sc.querySelectorAll('.navrows > *'), 1 * DB, 110);
   }
 
   // ─────────── Pantalla: fichas de gramática ───────────

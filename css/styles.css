@@ -473,7 +473,7 @@ div.scard{ cursor: default; }
 
 .ustats{ display: flex; gap: calc(16px + var(--w) * 0.1143); }
 .ustat{ display: flex; flex-direction: column; gap: 2px; flex: 1 1 0; min-width: 0; color: var(--c-strong); font-family: var(--f-d); font-weight: 800; }
-.ustat b{ font-size: calc(28px + var(--w) * 0.0857); line-height: 1; letter-spacing: 0.01em; font-weight: 800; }
+.ustat b{ font-size: calc(28px + var(--w) * 0.0857); line-height: 1; letter-spacing: 0.01em; font-weight: 800; font-variant-numeric: tabular-nums; }
 .ustat span{ font-size: 15px; line-height: 1; }
 
 .sublist{ display: flex; flex-direction: column; gap: 32px; padding: calc(8px + var(--h) * 0.0267) 0; }
