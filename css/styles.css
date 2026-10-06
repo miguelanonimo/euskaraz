@@ -1265,6 +1265,7 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
     display: grid; grid-template-columns: minmax(0,1fr) auto; grid-template-rows: auto 1fr auto;
     grid-template-areas: "t chev" "n n" "s s"; gap: 12px;
     min-height: clamp(240px, 24vw, 340px); padding: var(--card-pad); align-items: start;
+    border-radius: var(--r-card);   /* el de las tarjetas de Hoy */
   }
   .navrows--sub .navrow__txt{ display: contents; }
   .navrows--sub .navrow__t{ grid-area: t; font-size: var(--fs-h3); line-height: 1; }
@@ -1327,6 +1328,10 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   /* ── Hoy ── */
   .homew{ --home-resta: calc(var(--pad-top) + 48px); }
 
+  /* ── Subnivel: las tres puertas, muy verticales, llenan el alto libre ── */
+  #screenSub .stack{ min-height: calc(100dvh - 60px - var(--safe-t) - var(--pad-top) - 48px); }
+  #screenSub .navrows--sub{ flex: 1 1 auto; }
+
   /* Lecciones y Progreso llenan la pantalla (sin barra de abajo). */
   #screenLessons .stack, #screenProgress .stack{ min-height: calc(100dvh - var(--pad-top) - 48px); }
   .llist{ flex: 1 1 auto; grid-template-rows: repeat(6, minmax(72px, 1fr)); }
@@ -1360,4 +1365,3 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   #screenCuenta .stack > .pagetitle{ grid-column: 1 / -1; }
   #screenCuenta .sec + .sec{ padding-top: 32px; }
 }
-
