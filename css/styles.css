@@ -1300,13 +1300,13 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
      iguales: el rosco (que así puede crecer) y las barras ── */
   #screenProgress .stack{
     grid-template-columns: minmax(0,1fr) minmax(0,1fr); grid-template-rows: auto auto;
-    column-gap: 72px; row-gap: 40px; align-content: center;
+    column-gap: 72px; row-gap: 40px; align-content: start;   /* el título, a la altura del de las demás pantallas */
   }
   #screenProgress .pagetitle{ grid-column: 1 / -1; grid-row: 1; }
   /* El rosco llena su mitad: (ancho de la columna de contenido - márgenes
      - hueco) / 2. Con tope por alto para que no empuje las barras fuera. */
   #screenProgress .donut{
-    --tam: min(calc((min(100vw - var(--side), 1312px) - 2 * var(--gutter) - 72px) / 2), calc(100dvh - 410px));
+    --tam: min(calc((min(100vw - var(--side), 1312px) - 2 * var(--gutter) - 72px) / 2), calc(100dvh - 300px));
     grid-column: 1; grid-row: 2; align-self: center; justify-self: start;
   }
   #screenProgress .statbars{ grid-column: 2; grid-row: 2; }
