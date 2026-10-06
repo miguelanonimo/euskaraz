@@ -265,7 +265,7 @@
     if (o.icono) dentro = '<span class="ring__in">' + icono(o.icono, o.icono === 'check-lg' ? 12 : (o.icono === 'list' ? 20 : 8)) + '</span>';
     else if (o.hecho) dentro = '<span class="ring__in">' + icono(tam >= 48 ? 'check-lg' : 'check-thin', tam >= 48 ? 12 : 8) + '</span>';
     else if (o.etiqueta) dentro = '<span class="ring__in">' + esc(o.etiqueta) + '</span>';
-    return '<span class="ring" style="--s:' + tam + 'px;--w:' + grosor + 'px;--v:' + v + ';--rc:' + color + '">' + dentro + '</span>';
+    return '<span class="ring" style="--s:' + tam + 'px;--rw:' + grosor + 'px;--v:' + v + ';--rc:' + color + '">' + dentro + '</span>';
   }
 
   // ─────────── Utilidades ───────────
@@ -1156,6 +1156,11 @@
   try {
     if (window.CSS && CSS.registerProperty) {
       CSS.registerProperty({ name: '--sweep', syntax: '<angle>', inherits: false, initialValue: '360deg' });
+      // Relleno de los anillos (0-100) y del hilo entre temas: registrados
+      // para poder animar el color que avanza en la pantalla de Unidad.
+      // --v hereda porque lo pinta el ::after del anillo.
+      CSS.registerProperty({ name: '--v', syntax: '<number>', inherits: true, initialValue: '0' });
+      CSS.registerProperty({ name: '--hilo', syntax: '<percentage>', inherits: false, initialValue: '100%' });
     }
   } catch (e) {}
   /* Entrar deslizando de un lado. Es entrar() en horizontal: al cambiar de
@@ -1768,6 +1773,41 @@
       '</div>';
 
     mostrar('unit');
+
+    // Misma regla que Hoy: cabecera, cifras y lista arrancan casi a la vez
+    // (DB) y cada bloque va en cascada por dentro. Cuando la lista ya está
+    // entrando, el color de lo hecho baja por ella (avanzarColor).
+    var DB = 60, s = el.screens.unit;
+    aparecerEscalonado(s.querySelectorAll('.pagetitle, .lead'), 0 * DB, 150);
+    aparecerEscalonado(s.querySelectorAll('.divider, .ustat'), 1 * DB, 90);
+    aparecerEscalonado(s.querySelectorAll('.sublist > .srow, .navrows > *'), 2 * DB, 110);
+    avanzarColor(s.querySelectorAll('.sublist > .srow'), 2 * DB + 250);
+  }
+
+  /* Lo hecho «se va llenando» de arriba abajo: el anillo del primer tema
+     completado, el hilo hasta el siguiente, ese anillo… hasta el tema en
+     curso, que se queda en su porcentaje. Cada tramo arranca al 70% del
+     anterior para que se lea como un solo avance y no a tirones. */
+  function avanzarColor(filas, desde) {
+    if (REDUCIR_MOVIMIENTO.matches || !(window.CSS && CSS.registerProperty)) return;
+    var t = desde;
+    Array.prototype.forEach.call(filas, function (f) {
+      var hecho = f.classList.contains('srow--done');
+      if (!hecho && !f.classList.contains('srow--current')) return;
+      var ring = f.querySelector('.ring');
+      var v = ring ? parseFloat(getComputedStyle(ring).getPropertyValue('--v')) || 0 : 0;
+      if (v > 0) {
+        var dur = 250 + 3 * v;
+        ring.animate([{ '--v': '0' }, { '--v': String(v) }],
+          { duration: dur, delay: t, easing: EASE, fill: 'backwards' });
+        t += dur * 0.7;
+      }
+      if (hecho && f.nextElementSibling) {
+        f.animate([{ '--hilo': '0%' }, { '--hilo': '100%' }],
+          { duration: 320, delay: t, easing: EASE, fill: 'backwards', pseudoElement: '::after' });
+        t += 320 * 0.7;
+      }
+    });
   }
 
   /* Qué se ha hecho ya de cada subnivel. Se guarda dentro del progreso de

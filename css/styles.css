@@ -329,8 +329,8 @@ body.silencioso .pair__play{ display: none; }
 }
 .ring::before, .ring::after{
   content: ''; position: absolute; inset: 0; border-radius: 50%;
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--w, 4px)), #000 calc(100% - var(--w, 4px)));
-          mask: radial-gradient(farthest-side, transparent calc(100% - var(--w, 4px)), #000 calc(100% - var(--w, 4px)));
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--rw, 4px)), #000 calc(100% - var(--rw, 4px)));
+          mask: radial-gradient(farthest-side, transparent calc(100% - var(--rw, 4px)), #000 calc(100% - var(--rw, 4px)));
 }
 .ring::before{ background: currentColor; opacity: .2; }
 .ring::after{ background: conic-gradient(currentColor calc(var(--v, 0) * 1%), transparent 0); }
@@ -491,7 +491,10 @@ div.scard{ cursor: default; }
   content: ''; position: absolute; left: 25.5px; top: 52px; bottom: -32px; width: 1px;
   background: var(--ink-20);
 }
-.srow--done:not(:last-child)::after{ background: var(--c-strong); }
+/* --hilo (registrado en JS, 0→100%) es cuánto del hilo va pintado: la
+   pantalla de Unidad lo anima para que el color baje de un tema al
+   siguiente. Sin animar se queda en 100%, el hilo entero. */
+.srow--done:not(:last-child)::after{ background: linear-gradient(var(--c-strong) var(--hilo, 100%), var(--ink-20) var(--hilo, 100%)); }
 .srow__txt{ display: flex; flex-direction: column; gap: 4px; padding: 4px 0; flex: 1 1 0; min-width: 0; }
 .srow__t{ font-family: var(--f-d); font-weight: 800; font-size: calc(18px + var(--w) * 0.0571); line-height: 1; letter-spacing: 0.01em; }
 .srow--current .srow__t{ color: var(--c-strong); }
