@@ -142,6 +142,7 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b-tabbar)); }
 .screen--quiz{ padding-bottom: calc(var(--sheet-h, 180px) + 8px); }
 
 .stack{ display: flex; flex-direction: column; gap: 24px; }
+.vocab__cab{ display: flex; flex-direction: column; gap: 24px; }
 /* El CTA de "siguiente ficha" pegado al final de la lectura se notaba
    corto de aire — algo más de margen encima del que ya da el stack. */
 .stack > .ficha + .btn{ margin-top: 16px; }
@@ -1323,7 +1324,7 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   :root{ --col: 1312px; }   /* 1184 de contenido + márgenes */
   /* Escritorio, pantallas de foco (sin menú lateral): Flujo 09. */
   body[data-pantalla="quiz"] .col{ --col: calc(1100px + 2 * var(--gutter)); }
-  body[data-pantalla="gram"] .col{ --col: calc(1296px + 2 * var(--gutter)); }
+  body[data-pantalla="gram"] .col, body[data-pantalla="vocab"] .col{ --col: calc(1296px + 2 * var(--gutter)); }
 
   /* ── Hoy ── */
   .homew{ --home-resta: calc(var(--pad-top) + 48px); }
@@ -1351,14 +1352,31 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   /* ── Ficha: el título fijo a la izquierda, la explicación a la derecha ── */
   #screenGram .stack{ display: grid; grid-template-columns: minmax(0,5fr) minmax(0,7fr); column-gap: 96px; row-gap: 32px; align-items: start; }
   #screenGram .ficha{ display: contents; }
-  #screenGram .ficha__title{ grid-column: 1; grid-row: 1 / span 4; position: sticky; top: 24px; font-size: var(--fs-h1); line-height: 1.02; }
+  /* Fijo al hacer scroll, justo bajo la cabecera (que también es fija y
+     blanca: a top:24px se escondía detrás de ella). */
+  #screenGram .ficha__title{ grid-column: 1; grid-row: 1 / span 6; position: sticky; top: calc(60px + var(--safe-t) + 24px); font-size: var(--fs-h1); line-height: 1.02; }
   #screenGram .ficha > :not(.ficha__title), #screenGram #fichaSig{ grid-column: 2; }
+
+  /* ── Vocabulario: como las fichas, la cabecera fija a la izquierda ── */
+  #screenVocab .stack{ display: grid; grid-template-columns: minmax(0,5fr) minmax(0,7fr); column-gap: 96px; row-gap: 32px; align-items: start; }
+  #screenVocab .vocab__cab{ grid-column: 1; grid-row: 1 / span 3; position: sticky; top: calc(60px + var(--safe-t) + 24px); }
+  #screenVocab .stack > :not(.vocab__cab){ grid-column: 2; }
 
   /* ── Ejercicio: el enunciado a la izquierda, la respuesta a la derecha ── */
   #screenQuiz .quiz{ display: grid; grid-template-columns: minmax(0,5fr) minmax(0,6fr); column-gap: 96px; row-gap: 32px; align-items: center; }
   #screenQuiz .quiz > *{ grid-column: 1; }
   #screenQuiz .quiz > :last-child:not(:first-child){ grid-column: 2; grid-row: 1 / span 2; }
   body[data-pantalla="quiz"] .sheet__in{ max-width: 1100px; }
+  /* Las opciones, más grandes: en escritorio a 18px se quedaban pequeñas
+     para el ancho que tienen. */
+  #screenQuiz .opts{ gap: 12px; }
+  #screenQuiz .opt{ padding: 22px 32px 22px 22px; font-size: 22px; gap: 20px; }
+  #screenQuiz .opt__key{ width: 36px; font-size: 17px; }
+  #screenQuiz .pairs, #screenQuiz .paircol{ gap: 16px; }
+  #screenQuiz .pair{ min-height: 80px; padding: 20px 24px 20px 28px; font-size: 22px; }
+  #screenQuiz .chip{ padding: 20px 30px; font-size: 22px; }
+  #screenQuiz .slot{ padding: 20px 26px; font-size: 22px; }
+  #screenQuiz .typebox{ padding: 22px 28px; font-size: 22px; }
 
   /* ── Ajustes: las dos secciones lado a lado ── */
   #screenCuenta .stack{ display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); column-gap: 72px; align-items: start; }

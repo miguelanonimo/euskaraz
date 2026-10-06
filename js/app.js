@@ -2228,9 +2228,12 @@
 
     el.screens.vocab.innerHTML =
       '<div class="stack">' +
-        '<h1 class="pagetitle">Vocabulario</h1>' +
-        '<p class="lead">' + esc(plural(todas.length, 'palabra del tema', 'palabras del tema')) + '</p>' +
-        segmentado('vocabSeg', CATEGORIAS, cat) +
+        // La cabecera agrupada: en escritorio es la columna fija de la izquierda.
+        '<div class="vocab__cab">' +
+          '<h1 class="pagetitle">Vocabulario</h1>' +
+          '<p class="lead">' + esc(plural(todas.length, 'palabra del tema', 'palabras del tema')) + '</p>' +
+          segmentado('vocabSeg', CATEGORIAS, cat) +
+        '</div>' +
         (lista.length
           ? '<div class="vlist">' + lista.map(fichaVocabulario).join('') + '</div>'
           : '<p class="dict__vacio">Ninguna palabra de este tema es de ese tipo.</p>') +
