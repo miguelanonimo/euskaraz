@@ -1251,8 +1251,9 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   #screenUnit .stack > *{ grid-column: 1; }
   #screenUnit .stack > .sublist, #screenUnit .stack > .navrows{ grid-column: 2; grid-row: 1 / span 6; padding-top: 0; }
   #screenUnit .lead--22{ font-size: var(--fs-lead); }
-  /* Las cifras, al tamaño del título de la unidad. */
-  #screenUnit .ustat b{ font-size: var(--fs-h1); line-height: 1; }
+  /* Las cifras, al tamaño de las demás cifras grandes (tarjetas de Hoy,
+     Subnivel). */
+  #screenUnit .ustat b{ font-size: var(--fs-mega); line-height: .9; letter-spacing: -0.03em; }
 
   /* ── Subnivel: las tres puertas, en tarjetas con su número ── */
   #screenSub .subtit{ gap: 20px; max-width: 1000px; }
