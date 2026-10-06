@@ -882,7 +882,7 @@ div.scard{ cursor: default; }
   -webkit-mask-image: var(--anillo);
           mask-image: var(--anillo);
 }
-.donut::before{ background: var(--main-20); }
+.donut::before{ background: var(--main-12); }   /* el mismo tono que el fondo del selector del diccionario */
 .donut::after{
   background: var(--arco, transparent);
   /* --sweep (registrado en JS como <angle>, animado 0→360deg) añade un
