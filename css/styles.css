@@ -1309,7 +1309,10 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
     --tam: min(calc((min(100vw - var(--side), 1312px) - 2 * var(--gutter) - 72px) / 2), calc(100dvh - 300px));
     grid-column: 1; grid-row: 2; align-self: center; justify-self: start;
   }
-  #screenProgress .statbars{ grid-column: 2; grid-row: 2; }
+  /* Las barras ocupan todo el alto del rosco: las dos tarjetas de abajo
+     crecen hasta terminar donde termina él. */
+  #screenProgress .statbars{ grid-column: 2; grid-row: 2; align-self: stretch; }
+  #screenProgress .statbars > .reviews{ flex: 1 1 auto; }
 }
 
 @media (min-width: 1200px){
