@@ -265,7 +265,7 @@
     if (o.icono) dentro = '<span class="ring__in">' + icono(o.icono, o.icono === 'check-lg' ? 12 : (o.icono === 'list' ? 20 : 8)) + '</span>';
     else if (o.hecho) dentro = '<span class="ring__in">' + icono(tam >= 48 ? 'check-lg' : 'check-thin', tam >= 48 ? 12 : 8) + '</span>';
     else if (o.etiqueta) dentro = '<span class="ring__in">' + esc(o.etiqueta) + '</span>';
-    return '<span class="ring" style="--s:' + tam + 'px;--w:' + grosor + 'px;--v:' + v + ';--rc:' + color + '">' + dentro + '</span>';
+    return '<span class="ring" style="--s:' + tam + 'px;--rw:' + grosor + 'px;--v:' + v + ';--rc:' + color + '">' + dentro + '</span>';
   }
 
   // ─────────── Utilidades ───────────
@@ -1091,9 +1091,15 @@
                  dict: 'dictionary', cuenta: 'account' };
   // Pantallas con barra de abajo en el móvil.
   var CON_TABBAR = { home: 1, lessons: 1, progress: 1, dict: 1 };
-  /* Pantallas de foco: sin menú lateral en escritorio, como en el diseño.
-     Aquí se está aprendiendo, y el menú solo distrae. */
-  var FOCO = { sub: 1, gram: 1, vocab: 1, quiz: 1, result: 1 };
+  /* En escritorio el menú lateral está siempre (pedido de Miguel: no
+     perderlo nunca). En las pantallas de estudio se marca de dónde vienes:
+     Lecciones si estás dentro de una unidad, Hoy si es un repaso. */
+  function tabDe(nombre) {
+    if (TAB_DE[nombre]) return TAB_DE[nombre];
+    if (nombre === 'quiz' || nombre === 'result') return estado.modo === 'unidad' ? 'lessons' : 'today';
+    if (nombre === 'sub' || nombre === 'gram' || nombre === 'vocab') return estado.desdeDicc ? 'dictionary' : 'lessons';
+    return null;
+  }
 
   function pintarNavegacion() {
     el.tabbarItems.innerHTML = TABS.map(function (t) {
@@ -1137,29 +1143,53 @@
      Respeta prefers-reduced-motion (igual que el resto de animaciones
      con Web Animations API de esta app). */
   var REDUCIR_MOVIMIENTO = window.matchMedia('(prefers-reduced-motion: reduce)');
+  // Tablet y escritorio (Flujos 08/09 del diseño). El CSS hace casi todo;
+  // ANCHO lo mira el JS solo donde cambia el marcado (Hoy).
+  var ANCHO = window.matchMedia('(min-width: 768px)');
   // El fundido va siempre a este ritmo, corto, aunque el desplazamiento
   // de cada animación dure más — se piden como dos velocidades sueltas,
   // no una sola. Por eso van en dos animate() aparte: opacity y
   // transform no tienen por qué compartir duración.
   var FADE_MS = 140;
+  // Una sola curva para todo lo que se mueve o aparece: sale rápido y
+  // frena suave al llegar. 'ease' a secas, en recorridos largos (el aro,
+  // las barras), se percibía casi lineal.
+  var EASE = 'cubic-bezier(.22,1,.36,1)';
+  /* El aro de Progreso revela sus tramos en sentido horario animando
+     --sweep (0deg → 360deg) sobre la máscara cónica de .donut::after.
+     Un custom property normal no interpola por fotogramas — hay que
+     registrarlo como ángulo para que el navegador sepa qué valores
+     intermedios pintar. Sin este registro (navegador viejo) el CSS cae
+     en 360deg fijo: se ve el aro completo de golpe, sin animación, pero
+     correcto. */
+  try {
+    if (window.CSS && CSS.registerProperty) {
+      CSS.registerProperty({ name: '--sweep', syntax: '<angle>', inherits: false, initialValue: '360deg' });
+      // Relleno de los anillos (0-100) y del hilo entre temas: registrados
+      // para poder animar el color que avanza en la pantalla de Unidad.
+      // --v hereda porque lo pinta el ::after del anillo.
+      CSS.registerProperty({ name: '--v', syntax: '<number>', inherits: true, initialValue: '0' });
+      CSS.registerProperty({ name: '--hilo', syntax: '<percentage>', inherits: false, initialValue: '100%' });
+    }
+  } catch (e) {}
   /* Entrar deslizando de un lado. Es entrar() en horizontal: al cambiar de
      respuesta se ve de qué lado viene, y así se lee como pasar tarjetas en
      vez de como un repintado (pedido de Ric). */
   function entrarDeLado(nodo, desde) {
     if (!nodo || REDUCIR_MOVIMIENTO.matches) return;
-    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
+    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: EASE });
     nodo.animate(
       [{ transform: 'translateX(' + desde + 'px)' }, { transform: 'none' }],
-      { duration: 260, easing: 'cubic-bezier(.2,.8,.2,1)' }
+      { duration: 260, easing: EASE }
     );
   }
 
   function entrar(nodo, distancia) {
     if (!nodo || REDUCIR_MOVIMIENTO.matches) return;
-    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
+    nodo.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: EASE });
     nodo.animate(
       [{ transform: 'translateY(' + (distancia || 10) + 'px)' }, { transform: 'none' }],
-      { duration: 260, easing: 'cubic-bezier(.2,.8,.2,1)' }
+      { duration: 260, easing: EASE }
     );
   }
 
@@ -1174,13 +1204,21 @@
     if (REDUCIR_MOVIMIENTO.matches || !nodos || !nodos.length) return desde;
     Array.prototype.forEach.call(nodos, function (n, i) {
       var retraso = desde + i * paso;
-      n.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, delay: retraso, easing: 'ease', fill: 'backwards' });
+      n.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, delay: retraso, easing: EASE, fill: 'backwards' });
       n.animate(
         [{ transform: 'translateY(' + (distancia || 14) + 'px)' }, { transform: 'none' }],
-        { duration: duracion || 320, delay: retraso, easing: 'ease', fill: 'backwards' }
+        { duration: duracion || 320, delay: retraso, easing: EASE, fill: 'backwards' }
       );
     });
     return desde + nodos.length * paso;
+  }
+
+  /* De una lista de nodos, los que asoman en pantalla al entrar. En las
+     pantallas largas (diccionario, fichas, ajustes) animar lo de debajo
+     no se vería y solo retrasaría: eso aparece ya puesto. */
+  function enPantalla(nodos) {
+    var alto = window.innerHeight;
+    return Array.prototype.filter.call(nodos, function (n) { return n.getBoundingClientRect().top < alto; });
   }
 
   /* aparecerEscalonado(), pero con el primero más lento que el resto —
@@ -1193,16 +1231,36 @@
     return desde + nodos.length * paso;
   }
 
+  /* El rosco de Progreso: el aro gris funde su opacidad y, encima, lo
+     hecho se revela en sentido horario barriendo --sweep (ver su registro
+     más arriba) hasta `pct`, donde acaba lo hecho — no hasta 360deg: con
+     un 15% el tramo visible se dibujaba en un suspiro y la frenada de la
+     curva caía sobre aro vacío. La duración crece con el tramo. Al acabar
+     --sweep vuelve a su 360deg inicial, que se ve igual. pseudoElement
+     hace que WAAPI anime ::before/::after en vez del propio nodo. */
+  function animarDonut(donut, desde, pct) {
+    if (!donut || REDUCIR_MOVIMIENTO.matches) return;
+    donut.animate([{ opacity: 0 }, { opacity: 1 }],
+      { duration: FADE_MS, delay: desde, easing: EASE, fill: 'backwards', pseudoElement: '::before' });
+    if (window.CSS && CSS.registerProperty && pct > 0) {
+      // Sobre ::after, no sobre el nodo: --sweep está registrado sin
+      // herencia, así que animarlo en .donut no llegaba al pseudo.
+      donut.animate([{ '--sweep': '0deg' }, { '--sweep': (pct * 3.6) + 'deg' }],
+        { duration: 700 + 7 * pct, delay: desde + 150, easing: EASE, fill: 'backwards', pseudoElement: '::after' });
+    }
+  }
+
   function mostrar(nombre) {
     estado.pantalla = nombre;
+    document.body.setAttribute('data-pantalla', nombre);
     for (var k in el.screens) {
       el.screens[k].hidden = (k !== nombre);
     }
     entrar(el.screens[nombre]);
     el.screenAuth.hidden = true;
     document.body.classList.toggle('con-tabbar', !!CON_TABBAR[nombre]);
-    document.body.classList.toggle('con-lateral', !FOCO[nombre]);
-    marcarTab(TAB_DE[nombre] || null);
+    document.body.classList.add('con-lateral');
+    marcarTab(tabDe(nombre));
     el.sheet.hidden = (nombre !== 'quiz');
     cerrarModal();
     ocultarFeedback();
@@ -1462,6 +1520,8 @@
       '</button>';
     }
 
+    if (ANCHO.matches) { pintarHomeAncha(pila, activa, repaso); return; }
+
     el.screens.home.innerHTML =
       '<div class="home">' +
         '<h1 class="pagetitle">' + esc(saludo()) + '\nEuskaraz pixka bat?</h1>' +
@@ -1494,6 +1554,59 @@
     // Los días, en cambio, más rápidos entre sí que el resto de bloques.
     aparecerEscalonado(el.screens.home.querySelectorAll('.racha .day'), tr, 50);
   }
+
+  /* Hoy en tablet y escritorio (Flujos 08/09): el saludo con la racha al
+     lado, un carril con la lección abierta en grande y las otras dos en
+     tarjetas con su número (tocarlas las trae delante, como la pila del
+     móvil), y los repasos debajo. */
+  /* Una tarjeta del carril de Hoy, con el mismo esquema para la lección
+     abierta (la grande) y las siguientes: número y título arriba, el
+     porcentaje en grande abajo con su barra. */
+  function tarjetaRail(u, grande) {
+    var f = familia(u), pct = Math.round(progresoUnidad(u).ratio * 100);
+    // Todas abren su unidad: en el carril no hay pila que reordenar.
+    return '<button class="' + (grande ? 'lfeat' : 'ltile') + ' rcard" type="button" ' +
+      'data-unidad="' + esc(u.id) + '" style="--c:' + f.c + '">' +
+      '<span class="rcard__txt"><span class="rcard__t">' + esc(u.numero + '. ' + u.titulo) + '</span>' +
+        '<span class="rcard__s">' + esc(u.subtitulo) + '</span></span>' +
+      '<span class="rcard__bottom"><span class="rcard__big"><b>' + pct + '</b><small>%</small></span>' +
+        '<span class="bar"><span style="width:' + pct + '%"></span></span></span>' +
+    '</button>';
+  }
+
+  function pintarHomeAncha(pila, activa, repaso) {
+    var otras = pila.filter(function (u) { return u !== activa; }).reverse();
+    var racha = rachaActual();
+    el.screens.home.innerHTML =
+      '<div class="homew">' +
+        '<div class="homew__hero">' +
+          '<h1 class="pagetitle">' + esc(saludo()) + '\nEuskaraz pixka bat?</h1>' +
+          '<div class="homew__racha">' +
+            '<span class="homew__cuenta"><b>' + racha + '</b><span>' + (racha === 1 ? 'día' : 'días') + '\nde racha</span></span>' +
+            '<span class="racha__dias">' + semana() + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="homew__rail">' +
+          tarjetaRail(activa, true) + otras.map(function (u) { return tarjetaRail(u, false); }).join('') +
+        '</div>' +
+        '<div class="reviews homew__reviews">' +
+          repaso('goVocabRepaso', 'Repaso de\nvocabulario', fondoVocabulario(), claveDeVocab, 4) +
+          repaso('goRepaso', 'Repaso\nmezclado', fondoRepaso(), claveDeFondo, 1) +
+        '</div>' +
+      '</div>';
+    mostrar('home');
+
+    // Misma regla que el móvil: tres bloques casi a la vez, en cascada.
+    var DB = 60, s = el.screens.home;
+    aparecerEscalonado(s.querySelectorAll('.homew__hero > .pagetitle, .homew__cuenta, .homew__racha .day'), 0 * DB, 70);
+    aparecerPrimeroLento(s.querySelectorAll('.homew__rail > *'), 1 * DB, 110, 400, 320);
+    aparecerEscalonado(s.querySelectorAll('.homew__reviews > *'), 2 * DB, 110);
+  }
+
+  // Al cruzar el corte de tablet, Hoy cambia de marcado: se repinta.
+  ANCHO.addEventListener('change', function () {
+    if (estado.pantalla === 'home') pantallaHome();
+  });
 
   // ─────────── Pantalla: lecciones ───────────
 
@@ -1530,7 +1643,10 @@
     // (un pequeño desfase), y dentro de la lista cada lección aparece
     // detrás de la anterior — más rápido que en Hoy porque aquí son 12.
     aparecerEscalonado(el.screens.lessons.querySelectorAll('.pagetitle'), 0, 150);
-    aparecerEscalonado(el.screens.lessons.querySelectorAll('.llist > *'), 60, 90);
+    // Desde 1024 se ven las 12 a la vez en la rejilla: a 90ms la última
+    // tardaba más de un segundo en llegar; ahí van a la mitad.
+    var pasoL = window.matchMedia('(min-width: 1024px)').matches ? 45 : 90;
+    aparecerEscalonado(el.screens.lessons.querySelectorAll('.llist > *'), 60, pasoL);
   }
 
   // ─────────── Pantalla: progreso ───────────
@@ -1614,6 +1730,25 @@
         '</div>' +
       '</div>';
     mostrar('progress');
+
+    // Misma regla que Hoy: 3 bloques que arrancan casi a la vez con un
+    // pequeño desfase (DB) entre sí — rosco, barras y cards — cada uno
+    // secuencial por dentro. Las barras cargan su progreso (scaleX, no
+    // width, para no animar layout) a la vez que funden fondo y texto.
+    var DB = 60;
+    animarDonut(el.screens.progress.querySelector('.donut'), 0 * DB, suma / n * 100);
+    if (!REDUCIR_MOVIMIENTO.matches) {
+      var barras = el.screens.progress.querySelectorAll('.statbar');
+      Array.prototype.forEach.call(barras, function (bar, i) {
+        var retraso = 1 * DB + i * 150;
+        bar.animate([{ opacity: 0 }, { opacity: 1 }],
+          { duration: FADE_MS, delay: retraso, easing: EASE, fill: 'backwards' });
+        var fill = bar.querySelector('.statbar__fill');
+        if (fill) fill.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }],
+          { duration: 800, delay: retraso, easing: EASE, fill: 'backwards' });
+      });
+    }
+    aparecerEscalonado(el.screens.progress.querySelectorAll('.reviews > *'), 2 * DB, 150);
   }
 
   // ─────────── Pantalla: portada de unidad ───────────
@@ -1714,6 +1849,68 @@
       '</div>';
 
     mostrar('unit');
+
+    // Misma regla que Hoy: cabecera, cifras y lista arrancan casi a la vez
+    // (DB) y cada bloque va en cascada por dentro. Cuando la lista ya está
+    // entrando, el color de lo hecho baja por ella (avanzarColor).
+    var DB = 60, s = el.screens.unit;
+    aparecerEscalonado(s.querySelectorAll('.pagetitle, .lead'), 0 * DB, 150);
+    aparecerEscalonado(s.querySelectorAll('.divider, .ustat'), 1 * DB, 90);
+    // Cada cifra cuenta desde 0 a la vez que su columna aparece (el
+    // primer .divider ocupa el hueco 0 de la cascada, de ahí el i + 1).
+    Array.prototype.forEach.call(s.querySelectorAll('.ustat b'), function (b, i) {
+      contarHasta(b, 1 * DB + (i + 1) * 90, 900);
+    });
+    aparecerEscalonado(s.querySelectorAll('.sublist > .srow, .navrows > *'), 2 * DB, 110);
+    avanzarColor(s.querySelectorAll('.sublist > .srow'), 2 * DB + 250);
+  }
+
+  /* Count up: el número sube de 0 a su valor con la misma forma que EASE
+     (sale rápido, frena al llegar; 1-(1-t)^5 es prácticamente la misma
+     curva). Se escribe el valor final antes de empezar y al acabar, así
+     que si algo falla queda siempre la cifra correcta. */
+  // Cuenta sobre el primer nodo de texto, no sobre todo el contenido: en
+  // la nota del resultado el número va seguido de un <small>%</small>.
+  function contarHasta(nodo, retraso, duracion) {
+    var txt = nodo.firstChild;
+    if (!txt || txt.nodeType !== 3) return;
+    var fin = parseInt(txt.nodeValue, 10);
+    if (REDUCIR_MOVIMIENTO.matches || !(fin > 0)) return;
+    txt.nodeValue = '0';
+    setTimeout(function () {
+      var t0 = performance.now();
+      (function paso(ahora) {
+        var t = Math.min(1, (ahora - t0) / duracion);
+        txt.nodeValue = String(Math.round(fin * (1 - Math.pow(1 - t, 5))));
+        if (t < 1) requestAnimationFrame(paso); else txt.nodeValue = String(fin);
+      })(t0);
+    }, retraso);
+  }
+
+  /* Lo hecho «se va llenando» de arriba abajo: el anillo del primer tema
+     completado, el hilo hasta el siguiente, ese anillo… hasta el tema en
+     curso, que se queda en su porcentaje. Cada tramo arranca al 70% del
+     anterior para que se lea como un solo avance y no a tirones. */
+  function avanzarColor(filas, desde) {
+    if (REDUCIR_MOVIMIENTO.matches || !(window.CSS && CSS.registerProperty)) return;
+    var t = desde;
+    Array.prototype.forEach.call(filas, function (f) {
+      var hecho = f.classList.contains('srow--done');
+      if (!hecho && !f.classList.contains('srow--current')) return;
+      var ring = f.querySelector('.ring');
+      var v = ring ? parseFloat(getComputedStyle(ring).getPropertyValue('--v')) || 0 : 0;
+      if (v > 0) {
+        var dur = 200 + 2.4 * v;
+        ring.animate([{ '--v': '0' }, { '--v': String(v) }],
+          { duration: dur, delay: t, easing: EASE, fill: 'backwards' });
+        t += dur * 0.7;
+      }
+      if (hecho && f.nextElementSibling) {
+        f.animate([{ '--hilo': '0%' }, { '--hilo': '100%' }],
+          { duration: 255, delay: t, easing: EASE, fill: 'backwards', pseudoElement: '::after' });
+        t += 255 * 0.7;
+      }
+    });
   }
 
   /* Qué se ha hecho ya de cada subnivel. Se guarda dentro del progreso de
@@ -1823,18 +2020,30 @@
   function puertasDeTema(c) {
     var p = [];
     if (c.gramatica.length) {
-      p.push(filaNav('goGram', 'outline', 'Explicación', plural(c.gramatica.length, 'ficha gramatical', 'fichas gramaticales')));
+      p.push(puerta('goGram', 'outline', 'Explicación', c.gramatica.length, 'ficha gramatical', 'fichas gramaticales'));
     }
     if (c.vocabulario.length) {
-      p.push(filaNav('goVoc', 'outline', 'Vocabulario', plural(c.vocabulario.length, 'palabra del tema', 'palabras del tema')));
+      p.push(puerta('goVoc', 'outline', 'Vocabulario', c.vocabulario.length, 'palabra del tema', 'palabras del tema'));
     }
     if (c.ejercicios.length) {
       // + ESCUCHAR_PRACTICA: empezarPractica() cuela esas preguntas de
       // escuchar en cualquier sesión, y el número que se enseña tiene que
       // ser el que de verdad sale.
-      p.push(filaNav('goPrac', 'filled', 'Práctica', plural(c.ejercicios.length + ESCUCHAR_PRACTICA, 'ejercicio', 'ejercicios')));
+      p.push(puerta('goPrac', 'filled', 'Práctica', c.ejercicios.length + ESCUCHAR_PRACTICA, 'ejercicio', 'ejercicios'));
     }
     return p.join('');
+  }
+
+  /* Una puerta de tema: en el móvil es una fila más («3 fichas
+     gramaticales»); en tablet y escritorio, una tarjeta con el número en
+     grande. Por eso el número va también suelto, en .navrow__n. */
+  function puerta(id, variante, titulo, n, uno, varios) {
+    return '<button class="navrow navrow--' + variante + '" type="button" id="' + id + '">' +
+      '<span class="navrow__txt"><span class="navrow__t">' + esc(titulo) + '</span>' +
+        '<span class="navrow__n">' + n + '</span>' +
+        '<span class="navrow__s"><span><span class="navrow__sn">' + n + ' </span>' + esc(n === 1 ? uno : varios) + '</span></span></span>' +
+      '<span class="navrow__chev">' + icono('chevron-right', 24) + '</span>' +
+    '</button>';
   }
 
   function filaNav(id, variante, titulo, sub, extraSub) {
@@ -1869,6 +2078,12 @@
       '</div>';
 
     mostrar('sub');
+
+    // Misma regla que Hoy: cabecera y puertas arrancan casi a la vez (DB)
+    // y cada bloque va en cascada por dentro.
+    var DB = 60, sc = el.screens.sub;
+    aparecerEscalonado(sc.querySelectorAll('.subtit__k, .subtit__t, .lead'), 0 * DB, 120);
+    aparecerEscalonado(sc.querySelectorAll('.navrows > *'), 1 * DB, 110);
   }
 
   // ─────────── Pantalla: fichas de gramática ───────────
@@ -1934,6 +2149,14 @@
       else atras();
     });
     mostrar('gram');
+
+    // Misma regla que Hoy: título, cuerpo y ejemplos arrancan casi a la
+    // vez (DB) y cada uno va en cascada por dentro. Se repite al pasar de
+    // ficha, como pasar página.
+    var DB = 60, sg = el.screens.gram;
+    aparecerEscalonado(sg.querySelectorAll('.ficha__title'), 0 * DB, 150);
+    aparecerEscalonado(enPantalla(sg.querySelectorAll('.ficha__body > *')), 1 * DB, 110);
+    aparecerEscalonado(enPantalla(sg.querySelectorAll('.ficha > .divider, .vlist > *, #fichaSig')), 2 * DB, 90);
   }
 
   // ─────────── Pantalla: vocabulario ───────────
@@ -2005,9 +2228,12 @@
 
     el.screens.vocab.innerHTML =
       '<div class="stack">' +
-        '<h1 class="pagetitle">Vocabulario</h1>' +
-        '<p class="lead">' + esc(plural(todas.length, 'palabra del tema', 'palabras del tema')) + '</p>' +
-        segmentado('vocabSeg', CATEGORIAS, cat) +
+        // La cabecera agrupada: en escritorio es la columna fija de la izquierda.
+        '<div class="vocab__cab">' +
+          '<h1 class="pagetitle">Vocabulario</h1>' +
+          '<p class="lead">' + esc(plural(todas.length, 'palabra del tema', 'palabras del tema')) + '</p>' +
+          segmentado('vocabSeg', CATEGORIAS, cat) +
+        '</div>' +
         (lista.length
           ? '<div class="vlist">' + lista.map(fichaVocabulario).join('') + '</div>'
           : '<p class="dict__vacio">Ninguna palabra de este tema es de ese tipo.</p>') +
@@ -2035,6 +2261,14 @@
     estado.vocabCat = '';
     pintarVocabulario();
     mostrar('vocab');
+
+    // Misma regla que Hoy: cabecera, filtro y lista arrancan casi a la vez
+    // (DB) y cada uno va en cascada por dentro. Solo al entrar, no al
+    // cambiar de filtro, como en el diccionario.
+    var DB = 60, sv = el.screens.vocab;
+    aparecerEscalonado(sv.querySelectorAll('.pagetitle, .lead'), 0 * DB, 150);
+    aparecerEscalonado(sv.querySelectorAll('.seg'), 1 * DB, 110);
+    aparecerEscalonado(enPantalla(sv.querySelectorAll('.vlist > *, #vocabPractica')), 2 * DB, 80);
   }
 
   // ─────────── Repaso mezclado ───────────
@@ -2862,6 +3096,16 @@
     pintarDiccionario(el.dictInput.value);
     mostrar('dict');
     actualizarFlechasAlfa();
+
+    // Misma regla que Hoy: título, filtros y lista arrancan casi a la vez
+    // (DB) y cada uno es secuencial por dentro. Solo al entrar, no al
+    // teclear en el buscador. De la lista, solo lo que se ve: son cientos
+    // de entradas y animar las de abajo solo retrasaría.
+    var DB = 60, s = el.screens.dict;
+    aparecerEscalonado(s.querySelectorAll('.pagetitle'), 0 * DB, 150);
+    var tf = aparecerEscalonado(s.querySelectorAll('.search, .seg, .alfa'), 1 * DB, 110);
+    aparecerEscalonado(s.querySelectorAll('.alfa__l'), tf, 30);
+    aparecerEscalonado(enPantalla(s.querySelectorAll('.dsec__h, .dentry')), 2 * DB, 70);
   }
 
   // ─────────── Modal ───────────
@@ -2870,6 +3114,12 @@
     el.modalPanel.className = 'modal__panel' + (clase ? ' ' + clase : '');
     el.modalPanel.innerHTML = html;
     el.modal.hidden = false;
+    // Entrada de hoja: el fondo funde y el panel sube desde abajo.
+    if (!REDUCIR_MOVIMIENTO.matches) {
+      $('modalScrim').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220, easing: EASE });
+      el.modalPanel.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: EASE });
+      el.modalPanel.animate([{ transform: 'translateY(40px)' }, { transform: 'none' }], { duration: 380, easing: EASE });
+    }
   }
 
   function cerrarModal() {
@@ -2991,6 +3241,14 @@
     $('ctaReset').addEventListener('click', abrirReinicio);
 
     mostrar('cuenta');
+
+    // Misma regla que Hoy: título y las dos secciones arrancan casi a la
+    // vez (DB) y cada una va en cascada por dentro.
+    var DB = 60, secs = el.screens.cuenta.querySelectorAll('.sec');
+    aparecerEscalonado(el.screens.cuenta.querySelectorAll('.pagetitle'), 0 * DB, 150);
+    Array.prototype.forEach.call(secs, function (sec, i) {
+      aparecerEscalonado(enPantalla(sec.querySelectorAll(':scope > *:not(.navrows), .navrows > *')), (i + 1) * DB, 90);
+    });
     if (mensajeInicial) abrirCambioPassword(mensajeInicial);
   }
 
@@ -4021,10 +4279,10 @@
     el.sheet.className = 'sheet ' + (leve ? 'is-leve' : (ok ? 'is-ok' : 'is-mal'));
     el.feedback.hidden = false;
     if (!REDUCIR_MOVIMIENTO.matches) {
-      el.feedback.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease' });
+      el.feedback.animate([{ opacity: 0 }, { opacity: 1 }], { duration: FADE_MS, easing: EASE });
       el.feedback.animate(
         [{ transform: 'translateY(16px)' }, { transform: 'none' }],
-        { duration: 220, easing: 'cubic-bezier(.2,.8,.2,1)' }
+        { duration: 220, easing: EASE }
       );
     }
     el.feedbackIcon.innerHTML = icono(leve ? 'eye' : (ok ? 'check-bold' : 'cross-bold'), 20);
@@ -4223,6 +4481,18 @@
 
     mostrar('result');
 
+    // Misma regla que Hoy: título, marcador y lo de debajo arrancan casi a
+    // la vez (DB), cada uno en cascada por dentro; las cifras del marcador
+    // cuentan desde 0 al aparecer su casilla, como las de la unidad.
+    var DB = 60, sr = el.screens.result;
+    aparecerEscalonado(sr.querySelectorAll('.pagetitle, .lead'), 0 * DB, 150);
+    var casillas = sr.querySelectorAll('.res__tiles > .scard');
+    aparecerEscalonado(casillas, 1 * DB, 120);
+    Array.prototype.forEach.call(casillas, function (c, i) {
+      contarHasta(c.querySelector('.scard__v'), 1 * DB + i * 120, 900);
+    });
+    aparecerEscalonado(enPantalla(sr.querySelectorAll('.stack > .divider, .stack > .eyebrow, .vlist > *, .btns > *')), 2 * DB, 90);
+
     var otra = estado.modo === 'repaso' ? empezarRepaso
              : estado.modo === 'vocab'  ? empezarVocab
              : empezarPractica;
@@ -4307,7 +4577,7 @@
   el.screens.home.addEventListener('click', function (e) {
     var peek = e.target.closest('[data-pila]');
     if (peek) { estado.homeActiva = peek.dataset.pila; pantallaHome(); return; }
-    var card = e.target.closest('.lcard');
+    var card = e.target.closest('.lcard, .lfeat, .ltile');
     if (card) { abrirUnidad(card.dataset.unidad, 'home'); return; }
     if (e.target.closest('#goVocabRepaso')) empezarVocab();
     else if (e.target.closest('#goRepaso')) empezarRepaso();
@@ -4500,6 +4770,8 @@
     document.body.classList.remove('con-tabbar', 'con-lateral');
     el.sheet.hidden = true;
     el.authPassword.value = '';
+    // Lo primero que se ve: misma cascada que el resto de pantallas.
+    aparecerEscalonado(el.screenAuth.querySelectorAll('.auth > *:not([hidden]):not(form), .auth__form > *'), 0, 90);
   }
 
   /* El nombre para el saludo, si la cuenta lo tiene. Solo el primero:
@@ -4644,56 +4916,5 @@
       mostrarAuth();
     }
   });
-
-  /* Diagnóstico temporal del hueco en modo app en móvil — se actualiza
-     solo, sin recargar, para poder rotar el móvil y ver cómo cambian
-     los números. Sin condición a propósito, aunque sea feo: ni ?debug
-     en la URL ni localStorage llegaban a verse en modo standalone (el
-     icono de pantalla de inicio puede quedarse con un index.html/
-     app.js en caché, de antes de que existiera cualquiera de los dos
-     — o, si no es caché, tener su propio almacenamiento aislado de
-     Safari). Así no hay condición que pueda fallar: si esto tampoco
-     aparece en standalone, es que el propio index.html servido ahí es
-     viejo, no un problema de lógica. Quitar esto junto con el
-     <pre id="debugPanel"> de index.html en cuanto se resuelva el hueco. */
-  if (true) {
-    var panelDebug = document.getElementById('debugPanel');
-    panelDebug.hidden = false;
-    var probeSafeB = document.createElement('div');
-    probeSafeB.style.cssText = 'position:fixed;height:env(safe-area-inset-bottom);width:0;visibility:hidden;';
-    document.body.appendChild(probeSafeB);
-    function medir100dvh() {
-      var p = document.createElement('div');
-      p.style.cssText = 'position:fixed;height:100dvh;width:0;visibility:hidden;';
-      document.body.appendChild(p);
-      var h = p.getBoundingClientRect().height;
-      p.remove();
-      return Math.round(h);
-    }
-    function pintarDebug() {
-      var modo = window.matchMedia('(display-mode: standalone)').matches ? 'standalone'
-               : window.navigator.standalone ? 'standalone (iOS legacy)' : 'navegador';
-      var col = document.querySelector('.col'), tabbar = document.querySelector('.tabbar');
-      panelDebug.textContent =
-        'modo: ' + modo + '\n' +
-        'innerHeight: ' + window.innerHeight + 'px · innerWidth: ' + window.innerWidth + '\n' +
-        'documentElement.clientHeight: ' + document.documentElement.clientHeight + 'px\n' +
-        '100dvh medido: ' + medir100dvh() + 'px\n' +
-        'safe-area-inset-bottom real: ' + Math.round(probeSafeB.getBoundingClientRect().height) + 'px\n' +
-        '.col height: ' + (col ? Math.round(col.getBoundingClientRect().height) : '—') + 'px\n' +
-        '.tabbar height: ' + (tabbar ? Math.round(tabbar.getBoundingClientRect().height) : '—') + 'px\n' +
-        '.tabbar bottom (distancia al borde real): ' + (tabbar ? Math.round(window.innerHeight - tabbar.getBoundingClientRect().bottom) : '—') + 'px\n' +
-        'scrollY: ' + window.scrollY + ' / scrollHeight: ' + document.documentElement.scrollHeight + '\n' +
-        'UA: ' + navigator.userAgent;
-    }
-    pintarDebug();
-    window.addEventListener('resize', pintarDebug);
-    setInterval(pintarDebug, 1000);
-    // Tocar el panel lo apaga del todo (borra la marca, no solo lo oculta).
-    panelDebug.addEventListener('click', function () {
-      try { localStorage.removeItem('euskaraz_debug'); } catch (e) {}
-      panelDebug.hidden = true;
-    });
-  }
 
 })();
