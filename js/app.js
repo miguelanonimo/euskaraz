@@ -3863,6 +3863,14 @@
     });
   }
 
+  /* En un ordenador (ratón y teclado), la caja de respuesta nace con el foco:
+     se escribe sin tocar nada. En una pantalla táctil no, porque abriría el
+     teclado en pantalla antes de que hayas leído la pregunta. */
+  var CON_TECLADO = window.matchMedia('(hover: hover) and (pointer: fine)');
+  function enfocarSiHayTeclado(nodo) {
+    if (nodo && CON_TECLADO.matches) nodo.focus({ preventScroll: true });
+  }
+
   function pintarTraducir(ej) {
     el.quizContent.innerHTML =
       cabeceraEj(ej, esc(ej.es)) +
@@ -3880,6 +3888,7 @@
       if (e.key === 'Enter') { e.preventDefault(); if (!el.btnCheck.disabled) el.btnCheck.click(); }
     });
     activarPista(ej.pista);
+    enfocarSiHayTeclado(ta);
   }
 
   function corregirTraducir(ej) {
@@ -3927,6 +3936,7 @@
     ta.addEventListener('keydown', function (e) {
       if (e.key === 'Enter') { e.preventDefault(); if (!el.btnCheck.disabled) el.btnCheck.click(); }
     });
+    enfocarSiHayTeclado(ta);
   }
 
   function corregirTeclear(ej) {

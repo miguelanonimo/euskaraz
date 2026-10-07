@@ -18,19 +18,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700..800&family=Schibsted+Grotesk:wght@400..800&display=swap">
 <!-- El ?v= se sube al cambiar CSS o JS: sin él, el navegador sirve
      la copia cacheada y se ven estilos viejos sobre marcado nuevo. -->
-<link rel="stylesheet" href="css/styles.css?v=57">
+<link rel="stylesheet" href="css/styles.css?v=58">
 </head>
 <body>
-
-<!-- Menú lateral: solo en escritorio y fuera de las pantallas de foco
-     (ejercicio, fichas). En el móvil hace su papel la barra de abajo. -->
-<nav class="sidenav" id="sidenav" aria-label="Secciones">
-  <div class="sidenav__top">
-    <button class="sidenav__logo" type="button" data-tab="today" aria-label="Hoy"></button>
-    <div class="sidenav__items" id="sidenavItems"></div>
-  </div>
-  <button class="sidenav__item" type="button" data-tab="account" id="sidenavCuenta"></button>
-</nav>
 
 <div class="col" id="col">
 
@@ -117,6 +107,18 @@
   <nav class="tabbar" id="tabbar" aria-label="Secciones"><div class="tabbar__in" id="tabbarItems"></div></nav>
 </div>
 
+<!-- Menú lateral: solo en escritorio. En el móvil hace su papel la barra de
+     abajo. Va DESPUÉS del contenido en el DOM (es position:fixed, así que no
+     cambia cómo se ve): con el teclado, el Tab llega antes a lo que se está
+     haciendo que a los cuatro botones del menú. -->
+<nav class="sidenav" id="sidenav" aria-label="Secciones">
+  <div class="sidenav__top">
+    <button class="sidenav__logo" type="button" data-tab="today" aria-label="Hoy"></button>
+    <div class="sidenav__items" id="sidenavItems"></div>
+  </div>
+  <button class="sidenav__item" type="button" data-tab="account" id="sidenavCuenta"></button>
+</nav>
+
 <!-- ══════════ MODAL ══════════ -->
 <div class="modal" id="modal" hidden>
   <div class="modal__scrim" id="modalScrim"></div>
@@ -124,6 +126,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
-<script src="js/app.js?v=57"></script>
+<script src="js/app.js?v=58"></script>
 </body>
 </html>
