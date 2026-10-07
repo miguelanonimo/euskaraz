@@ -125,8 +125,14 @@ curso.
 26/08/2026, partidas en 12 el 26/09/2026).**
 
 - **Fase 1 (fontanería): cerrada y validada.** Progreso en Supabase
-  (`euskaraz_progreso`, proyecto Ippo compartido), login con email +
-  contraseña, sincroniza entre dispositivos.
+  (`euskaraz_progreso`), login con email + contraseña, sincroniza entre
+  dispositivos. **Desde el 07/10/2026 en un proyecto de Supabase propio**
+  (`jdijrqkzhohpzdwlsyvg`, en otra cuenta de Supabase por falta de hueco
+  en el plan gratis); antes compartía el de Ippo (`teoyketwfyxjhkoympcj`).
+  Se migraron las 2 cuentas con su mismo id y contraseña, el progreso
+  (comprobado idéntico por md5) y los 868 audios del bucket
+  `euskaraz-audio`. Lo de euskaraz sigue en Ippo como respaldo hasta que
+  se decida borrarlo.
 - **Fase 2 (audio): cerrada para el curso de 12 unidades.** Pipeline de
   Cloud TTS en `scripts/generar-audio/` (ADC, sin claves que
   gestionar). **Pendiente para el curso nuevo**: las
