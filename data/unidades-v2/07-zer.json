@@ -258,8 +258,8 @@
     },
     {
       "subnivel": "7.3",
-      "titulo": "Las tres comidas tienen su verbo propio",
-      "cuerpo": "Aquí el euskera es más económico que el castellano. Donde nosotros decimos «tomar el desayuno» o «hacer la cena», el euskera tiene un verbo para cada comida, sacado del nombre:\n\n<b>gosaria</b> (el desayuno) → <b>gosaldu</b>, desayunar\n<b>bazkaria</b> (la comida) → <b>bazkaldu</b>, comer\n<b>afaria</b> (la cena) → <b>afaldu</b>, cenar\n\nLos tres nombres ya los tienes de antes. Los verbos son gratis.",
+      "titulo": "Las tres comidas y sus tres verbos",
+      "cuerpo": "Las comidas van de dos en dos: cada una tiene su nombre y su verbo, y se parecen tanto que sabiendo uno tienes el otro.\n\n<b>gosaria</b> (el desayuno) → <b>gosaldu</b>, desayunar\n<b>bazkaria</b> (la comida) → <b>bazkaldu</b>, comer al mediodía\n<b>afaria</b> (la cena) → <b>afaldu</b>, cenar\n\nEl patrón es el mismo en los tres: donde el nombre acaba en <b>-ari</b>, el verbo acaba en <b>-aldu</b>. Cambias la terminación y ya está.\n\nEl castellano empareja igual —desayuno y desayunar, cena y cenar—, así que la idea no te resulta nueva; lo que cambia es la pieza que se intercambia.\n\nY ojo con <i>bazkaldu</i>: es comer en el sentido de hacer la comida del mediodía, no «comer algo». Para eso tienes <i>jan</i>.",
       "ejemplos": [
         {
           "eu": "gosaldu",
