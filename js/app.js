@@ -26,7 +26,7 @@
   // Ippo). Tabla euskaraz_progreso aislada por RLS (auth.uid() = user_id).
   // Ver docs/brief.md sección 4.
   var SUPABASE_URL = 'https://jdijrqkzhohpzdwlsyvg.supabase.co';
-  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpkaWpycWt6aG9ocHpkd2xzeXZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEzNTIyMzcsImV4cCI6MjEwNjkyODIzN30.ydTcInHGXJN7jR3VJ9BJymptkKWXO0OjxFgfz2cS0cg';
+  var SUPABASE_ANON_KEY = 'sb_publishable_vajgspdqfKFOBRTUM-wDbg_ZrRa-YTn';
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   var usuarioId = null;
   var usuarioEmail = '';
