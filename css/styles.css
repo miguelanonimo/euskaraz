@@ -1128,6 +1128,22 @@ button.dentry__u:active{ opacity: .6; }
 body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
 
 
+/* Móvil, ejercicios de escuchar: la pregunta ocupa al menos todo el alto
+   libre (entre la cabecera y la hoja de «Comprobar») y el botón de
+   escuchar crece para rellenarlo. Así todo entra en pantalla; si las
+   opciones van a dos líneas y no cabe, la pregunta crece y hay scroll. */
+@media (max-width: 767px){
+  .quiz:has(> .escuchar){ min-height: calc(100dvh - 60px - var(--safe-t) - var(--pad-top) - var(--sheet-h0, 180px) - 8px); }
+  /* Relleno, separación y altavoz siguen al alto de pantalla, para que en
+     las más bajas (320×568) el botón pueda compactarse y no obligar a
+     hacer scroll con cuatro opciones de una línea. */
+  .quiz > .escuchar{
+    flex: 1 0 auto; min-height: 0;
+    padding: clamp(6px, calc(3.5svh - 8px), 24px); gap: clamp(4px, 1.6svh - 2px, 16px);
+  }
+  .quiz > .escuchar .escuchar__btn{ --tam: clamp(40px, 8svh, 72px); }
+}
+
 /* ═══════════ TABLET Y ESCRITORIO (Flujos 08/09) ═══════════
    Tablet desde 768px, escritorio desde 1200px (menú lateral). Todo lo de
    arriba es el móvil; aquí solo lo que cambia. Los tamaños son fluidos

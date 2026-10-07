@@ -4273,6 +4273,9 @@
      hueco se ajusta solo. */
   function medirHoja() {
     document.documentElement.style.setProperty('--sheet-h', el.sheet.offsetHeight + 'px');
+    // El alto con solo «Comprobar», sin el feedback: con este se ajusta el
+    // botón de escuchar, para que no salte al corregir.
+    if (el.feedback.hidden) document.documentElement.style.setProperty('--sheet-h0', el.sheet.offsetHeight + 'px');
   }
 
   function feedback(ok, titulo, cuerpo, leve) {
