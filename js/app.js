@@ -696,6 +696,15 @@
      vocabulario/diccionario. Si el <b> es énfasis de una regla, no de
      una palabra, no hay match y no se toca nada. */
   function enriquecerCuerpoConAudio(html) {
+    /* Una frase en cursiva con un <b> dentro (el verbo resaltado) se
+       narra entera: el botón va al final de la frase y el <b> interior
+       pierde el suyo. Si la frase no tiene audio, no se toca nada. */
+    html = html.replace(/<i>((?:(?!<\/i>)[\s\S])*?<b>(?:(?!<\/i>)[\s\S])*?)<\/i>/g, function (m, dentro) {
+      var texto = dentro.replace(/<[^>]+>/g, '');
+      var audio = audioDePalabra(texto);
+      if (!audio) return m;
+      return '<i>' + dentro.replace(/<b>/g, '<b class="sin-audio">') + '</i>' + botonAudioTexto(texto, audio);
+    });
     return html.replace(/<b>([^<]+)<\/b>/g, function (m, texto) {
       var audio = audioDePalabra(texto);
       return audio ? m + botonAudioTexto(texto, audio) : m;
@@ -2929,6 +2938,7 @@
         (u.gramatica || []).forEach(function (g) {
           (g.ejemplos || []).forEach(anadir);
         });
+        (u.audiosExtra || []).forEach(anadir);
       });
     }
     return AUDIO_POR_PALABRA[normalizar(texto)];
