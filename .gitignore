@@ -2,3 +2,4 @@
 .vercel
 .env*
 /ric
+.claves-supabase.env

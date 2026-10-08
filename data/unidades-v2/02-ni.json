@@ -296,7 +296,8 @@
       "ejemplos": [
         {
           "eu": "Ni irakaslea naiz.",
-          "es": "Soy profesor. / Soy profesora."
+          "es": "Soy profesor. / Soy profesora.",
+          "audio": "unidades/u4/ni-irakaslea-naiz.mp3"
         },
         {
           "eu": "Zu medikua zara, baina ni ikaslea naiz.",
@@ -328,6 +329,10 @@
       "subnivel": "2.3",
       "registro": "bizkaiera"
     }
+  ],
+  "audiosExtra": [
+    { "eu": "irakasleak", "audio": "unidades/u4/irakasleak.mp3" },
+    { "eu": "lagunak", "audio": "unidades/u4/lagunak.mp3" }
   ],
   "vocabulario": [
     {
