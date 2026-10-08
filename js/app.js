@@ -1966,8 +1966,12 @@
      (en euskera, con el castellano debajo cuando lo hay) y cómo vas. */
   function filaTema(o) {
     var f = familia(estado.unidad);
-    var ink = 'rgb(20,19,20)';
-    var color = o.estado === 'todo' || o.estado === 'vacio' ? ink : f.strong;
+    /* Cuatro estados, cuatro anillos: bloqueado (gris, no se puede abrir),
+       por empezar (el color suave de la unidad, vacío), en curso (arco
+       parcial) y completado (lleno). «vacio» es un tema aún sin escribir
+       y se pinta como el bloqueado. */
+    var inactivo = o.estado === 'locked' || o.estado === 'vacio';
+    var color = inactivo ? 'rgb(150,150,150)' : f.strong;
     var valor = o.estado === 'done' ? 100 : (o.estado === 'current' ? o.pct : 0);
     var insignia = anillo(valor, { tam: 52, color: color, etiqueta: o.numero, icono: o.icono });
     var estadoTxt = '<span class="ustatus' + (o.estado === 'done' ? ' ustatus--ok' : '') + '">' +
@@ -1981,16 +1985,18 @@
       (o.estado === 'current' || o.estado === 'done'
         ? '<span>·</span><span>' + o.pct + '%</span>' : '') + '</span>';
     var clase = 'srow srow--' + o.estado;
-    var abre = o.estado === 'vacio' ? '<div class="' + clase + '">' : '<button class="' + clase + '" type="button" data-sub="' + esc(o.id) + '">';
-    var cierra = o.estado === 'vacio' ? '</div>' : '</button>';
+    var sinAbrir = inactivo;
+    var abre = sinAbrir ? '<div class="' + clase + '"' + (o.estado === 'locked' ? ' aria-disabled="true"' : '') + '>' : '<button class="' + clase + '" type="button" data-sub="' + esc(o.id) + '">';
+    var cierra = sinAbrir ? '</div>' : '</button>';
     return abre + insignia +
       '<span class="srow__txt"><span class="srow__t">' + esc(o.titulo) + '</span>' +
         (o.sub ? '<span class="srow__s">' + esc(o.sub) + '</span>' : '') + estadoTxt + '</span>' +
-      (o.estado === 'vacio' ? '' : '<span class="srow__chev">' + icono('chevron-right', 24) + '</span>') +
+      (sinAbrir ? '' : '<span class="srow__chev">' + icono('chevron-right', 24) + '</span>') +
     cierra;
   }
 
   function filasSubniveles(u) {
+    var pendientes = 0;
     var filas = u.subniveles.map(function (s) {
       var c = contenidoSub(u, s.id), ps = progSub(u.id, s.id);
       // Subnivel todavía sin escribir: se enseña, para que se vea el plan,
@@ -1999,6 +2005,7 @@
       var est = vacio ? 'vacio'
               : ps.mejor >= 0.7 ? 'done'
               : (ps.visitado || ps.mejor > 0) ? 'current' : 'todo';
+      if (est !== 'done' && est !== 'vacio') pendientes++;
       return filaTema({
         id: s.id, numero: s.id, estado: est, pct: Math.round((ps.mejor || 0) * 100),
         titulo: s.titulo_eu || s.titulo,
@@ -2010,7 +2017,10 @@
     // El test final: todos los grupos marcados como "test".
     if (delSubnivel(u.ejercicios, 'test').length) {
       var pu = progUnidad(u.id);
-      var est = pu.completada ? 'done' : (pu.intentos ? 'current' : 'todo');
+      /* El test se abre al completar todos los temas (o si ya se hizo
+         alguna vez, para no cerrarle la puerta a quien ya lo tenía). */
+      var abierto = pendientes === 0 || pu.completada || pu.intentos;
+      var est = pu.completada ? 'done' : !abierto ? 'locked' : (pu.intentos ? 'current' : 'todo');
       filas.push(filaTema({
         id: 'test', estado: est, pct: Math.round((pu.mejor || 0) * 100),
         icono: pu.completada ? 'check-lg' : 'list',
@@ -2019,7 +2029,9 @@
         // empezarPractica() lo completa hasta LARGO_TEST tirando de los
         // temas, así que el número que se enseña tiene que ser ese.
         sub: LARGO_TEST + ' preguntas de toda la unidad',
-        etiqueta: { done: 'Completado', current: 'Por superar', todo: 'Por empezar' }[est]
+        etiqueta: est === 'locked'
+          ? 'Completa los temas para abrirlo' + (pendientes ? ' · te faltan ' + pendientes : '')
+          : { done: 'Completado', current: 'Por superar', todo: 'Por empezar' }[est]
       }));
     }
     return filas.join('');

@@ -516,8 +516,10 @@ div.scard{ cursor: default; }
   transition: transform .1s var(--ease);
 }
 .srow:active{ transform: scale(0.98); }
-.srow--todo{ opacity: .6; }
-.srow--vacio{ cursor: default; }
+.srow--vacio, .srow--locked{ cursor: default; }
+.srow--vacio .srow__t, .srow--locked .srow__t, .srow--vacio .srow__s, .srow--locked .srow__s{ color: var(--grey50); }
+.srow--vacio .ustatus, .srow--locked .ustatus{ color: var(--grey50); }
+.srow--locked:active, .srow--vacio:active{ transform: none; }
 /* El hilo que une los temas, de una insignia a la siguiente. */
 .srow:not(:last-child)::after{
   content: ''; position: absolute; left: 25.5px; top: 52px; bottom: -32px; width: 1px;
