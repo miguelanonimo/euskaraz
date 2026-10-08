@@ -206,6 +206,16 @@ curso.
   proyecto de Claude Design, que no se llegó a leer (DesignSync necesita
   `/design-login` desde una sesión interactiva).
 
+- **Recordatorio con Web Push (08/10/2026), construido pero apagado.** La
+  sección «Recordatorio» de Ajustes (interruptor, días L–D, hora cada 30
+  min) y `sw.js` están en la app, pero no se ven hasta rellenar
+  `VAPID_PUBLICA` en `js/app.js`. El servidor está en `supabase/avisos/`
+  (dos tablas, la Edge Function `enviar-avisos` y el cron cada 15 min);
+  los pasos de despliegue están al principio de cada archivo. El aviso solo
+  sale si ese día aún no has practicado. En iPhone solo funciona con la app
+  añadida a la pantalla de inicio. Si algún día se envuelve para la App
+  Store, el servidor sirve igual; solo cambia la entrega (APNs).
+
 ## Al terminar cada fase
 
 Actualiza este archivo (sección "Fase actual") y anota en `docs/brief.md`

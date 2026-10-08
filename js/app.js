@@ -3182,6 +3182,157 @@
     }).join('');
   }
 
+  // ─────────── Recordatorio (Web Push) ───────────
+
+  /* Clave pública de los avisos (VAPID). Vacía = el recordatorio está apagado
+     y Ajustes no enseña la sección. Se rellena cuando el servidor está listo
+     (ver supabase/avisos/). */
+  var VAPID_PUBLICA = '';
+  var NOMBRES_DIA = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];   // 0 = lunes, como la fila de la racha
+  var avisos = { activo: false, dias: [0, 1, 2, 3, 4, 5, 6], hora: '20:00', msg: '' };
+  var avisosTimer = null;
+
+  if (VAPID_PUBLICA && 'serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(function () {});
+  }
+
+  function avisosDisponible() { return !!VAPID_PUBLICA && !!usuarioId; }
+  function avisosSoportado() { return 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window; }
+  function esIos() { return /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1); }
+  function esInstalada() { return !!navigator.standalone || window.matchMedia('(display-mode: standalone)').matches; }
+  function zonaLocal() { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || 'Europe/Madrid'; } catch (e) { return 'Europe/Madrid'; } }
+
+  function horaMas(hora, minutos) {
+    var p = hora.split(':'), m = (((+p[0]) * 60 + (+p[1]) + minutos) % 1440 + 1440) % 1440;
+    return ('0' + Math.floor(m / 60)).slice(-2) + ':' + ('0' + (m % 60)).slice(-2);
+  }
+
+  function claveVapid(b64) {
+    var pad = '='.repeat((4 - b64.length % 4) % 4);
+    var raw = atob((b64 + pad).replace(/-/g, '+').replace(/_/g, '/'));
+    var out = new Uint8Array(raw.length);
+    for (var i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i);
+    return out;
+  }
+
+  function avisosCuerpo() {
+    var html = '<h3>Recordatorio</h3>' +
+      '<p>Un aviso a la hora que elijas, solo los días marcados y solo si ese día todavía no has practicado.</p>';
+    if (!avisosSoportado()) {
+      return html + '<div class="nota"><span>' + (esIos() && !esInstalada()
+        ? 'Para recibir avisos en el iPhone, añade la app a la pantalla de inicio (Compartir → Añadir a pantalla de inicio) y ábrela desde ahí.'
+        : 'Este navegador no permite avisos.') + '</span></div>';
+    }
+    html += segmentado('segAviso', [['si', 'Activado'], ['no', 'Desactivado']], avisos.activo ? 'si' : 'no');
+    if (avisos.activo) {
+      html += '<div class="avdias" role="group" aria-label="Días del recordatorio">' + NOMBRES_DIA.map(function (l, i) {
+        var on = avisos.dias.indexOf(i) !== -1;
+        return '<button class="avdia' + (on ? ' is-on' : '') + '" type="button" data-dia="' + i + '" aria-pressed="' + on + '">' + l + '</button>';
+      }).join('') + '</div>' +
+      '<div class="avhora"><span class="avhora__l">Hora del aviso</span><span class="avhora__sel">' +
+        '<button class="avhora__btn" type="button" data-paso="-30" aria-label="30 minutos antes">−</button>' +
+        '<b class="avhora__v">' + esc(avisos.hora) + '</b>' +
+        '<button class="avhora__btn" type="button" data-paso="30" aria-label="30 minutos después">+</button>' +
+      '</span></div>';
+    }
+    if (avisos.msg) html += '<div class="nota"><span>' + esc(avisos.msg) + '</span></div>';
+    return html;
+  }
+
+  function avisosHtml() {
+    return avisosDisponible() ? '<div class="sep"></div><div class="blk" id="avisosBlk">' + avisosCuerpo() + '</div>' : '';
+  }
+
+  function pintarAvisos() { var b = $('avisosBlk'); if (b) b.innerHTML = avisosCuerpo(); }
+
+  /* El interruptor es de ESTE dispositivo (tiene o no suscripción); los días
+     y la hora son de la cuenta y valen para todos sus dispositivos. */
+  function cargarAvisos() {
+    if (!avisosDisponible() || !avisosSoportado()) return Promise.resolve();
+    return Promise.all([
+      sb.from('euskaraz_avisos').select('dias,hora').eq('user_id', usuarioId).maybeSingle(),
+      navigator.serviceWorker.ready.then(function (reg) { return reg.pushManager.getSubscription(); })
+    ]).then(function (r) {
+      var fila = r[0] && r[0].data;
+      if (fila) { avisos.dias = fila.dias || avisos.dias; avisos.hora = fila.hora || avisos.hora; }
+      avisos.activo = !!r[1] && Notification.permission === 'granted';
+      pintarAvisos();
+    }).catch(function () {});
+  }
+
+  function guardarAvisos(activoCuenta) {
+    return sb.from('euskaraz_avisos').upsert({
+      user_id: usuarioId, activo: activoCuenta, dias: avisos.dias, hora: avisos.hora,
+      zona: zonaLocal(), updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id' }).then(function (r) { if (r.error) throw r.error; });
+  }
+
+  function guardarAvisosPronto() {
+    clearTimeout(avisosTimer);
+    avisosTimer = setTimeout(function () {
+      guardarAvisos(true).catch(function () { avisos.msg = 'No se han podido guardar los cambios.'; pintarAvisos(); });
+    }, 600);
+  }
+
+  function activarAvisos() {
+    avisos.activo = true; avisos.msg = 'Activando…'; pintarAvisos();
+    return Notification.requestPermission().then(function (perm) {
+      if (perm !== 'granted') throw new Error('permiso');
+      return navigator.serviceWorker.ready;
+    }).then(function (reg) {
+      return reg.pushManager.getSubscription().then(function (s) {
+        return s || reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: claveVapid(VAPID_PUBLICA) });
+      });
+    }).then(function (sub) {
+      return sb.from('euskaraz_dispositivos').upsert(
+        { endpoint: sub.endpoint, user_id: usuarioId, suscripcion: sub.toJSON() }, { onConflict: 'endpoint' }
+      ).then(function (r) { if (r.error) throw r.error; });
+    }).then(function () { return guardarAvisos(true); })
+      .then(function () { avisos.msg = ''; })
+      .catch(function (e) {
+        avisos.activo = false;
+        avisos.msg = e && e.message === 'permiso'
+          ? (Notification.permission === 'denied'
+              ? 'Has bloqueado los avisos de esta web. Actívalos en los ajustes del navegador y vuelve a probar.'
+              : 'No se han activado los avisos: hace falta darles permiso.')
+          : 'No se han podido activar los avisos. Inténtalo de nuevo.';
+      }).then(pintarAvisos);
+  }
+
+  function desactivarAvisos() {
+    avisos.activo = false; avisos.msg = ''; pintarAvisos();
+    clearTimeout(avisosTimer);
+    return navigator.serviceWorker.ready.then(function (reg) { return reg.pushManager.getSubscription(); })
+      .then(function (sub) {
+        if (!sub) return;
+        return sb.from('euskaraz_dispositivos').delete().eq('endpoint', sub.endpoint).then(function () { return sub.unsubscribe(); });
+      })
+      .then(function () {
+        return sb.from('euskaraz_dispositivos').select('endpoint', { count: 'exact', head: true }).eq('user_id', usuarioId);
+      })
+      // Si quedan otros dispositivos suscritos, la cuenta sigue con avisos.
+      .then(function (r) { return guardarAvisos(!!(r && r.count > 0)); })
+      .catch(function () { avisos.msg = 'No se han podido guardar los cambios.'; pintarAvisos(); });
+  }
+
+  function manejarAvisos(e) {
+    var op = e.target.closest('.seg__opt'), dia = e.target.closest('.avdia'), paso = e.target.closest('.avhora__btn');
+    if (op) {
+      if ((op.dataset.valor === 'si') === avisos.activo) return;
+      return op.dataset.valor === 'si' ? activarAvisos() : desactivarAvisos();
+    }
+    if (dia) {
+      var i = +dia.dataset.dia, k = avisos.dias.indexOf(i);
+      if (k === -1) avisos.dias.push(i);
+      else if (avisos.dias.length > 1) avisos.dias.splice(k, 1);   // al menos un día
+      avisos.dias.sort(function (a, b) { return a - b; });
+      pintarAvisos(); guardarAvisosPronto();
+    } else if (paso) {
+      avisos.hora = horaMas(avisos.hora, +paso.dataset.paso);
+      pintarAvisos(); guardarAvisosPronto();
+    }
+  }
+
   function pantallaCuenta(mensajeInicial) {
     ponerFamilia(null);
     cabecera('ajustes', { raiz: true });
@@ -3207,6 +3358,7 @@
             segmentado('segSonido', [['sonido', 'Sonido', icono('speaker', 12.149)], ['silencio', 'Silencioso', icono('speaker-off', 11.953)]],
                        modoSilencioso ? 'silencio' : 'sonido') +
           '</div>' +
+          avisosHtml() +
           (estadoHtml
             ? '<div class="sep"></div><div class="blk"><h3>Lo que llevas estrenado</h3><div class="estado">' + estadoHtml + '</div></div>'
             : '') +
@@ -3236,6 +3388,7 @@
       setModoSilencioso(b.dataset.valor === 'silencio');
       marcarSegmento(this, b);
     });
+    if ($('avisosBlk')) { $('avisosBlk').addEventListener('click', manejarAvisos); cargarAvisos(); }
     $('ctaEmail').addEventListener('click', abrirCambioEmail);
     $('ctaPass').addEventListener('click', function () { abrirCambioPassword(); });
     $('ctaSalir').addEventListener('click', function () { sb.auth.signOut(); });
