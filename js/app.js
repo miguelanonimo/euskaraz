@@ -3390,7 +3390,7 @@
           '<span class="eyebrow">Cuenta</span>' +
           '<div class="navrows">' +
             filaNav('ctaEmail', '', 'Cambiar email', usuarioEmail || 'Sin sesión') +
-            filaNav('ctaPass', '', 'Cambiar contraseña', 'Elige una contraseña nueva') +
+            filaNav('ctaPass', '', 'Cambiar contraseña', debeCambiarClave ? 'Estás usando una contraseña provisional: elige la tuya' : 'Elige una contraseña nueva') +
             filaNav('ctaSalir', '', 'Cerrar sesión', 'Cerrar sesión en este dispositivo') +
             filaNav('ctaReset', 'danger', 'Reiniciar progreso',
               'Volverás a la lección 1 y perderás todos los datos de racha y progreso. No se puede deshacer.',
@@ -5076,8 +5076,6 @@
         if (enRecuperacion) {
           enRecuperacion = false;
           pantallaCuenta('Elige tu contraseña nueva para terminar de recuperar el acceso.');
-        } else if (debeCambiarClave) {
-          pantallaCuenta('Entras con una contraseña provisional. Elige la tuya ahora; si lo dejas para luego, te lo volveremos a pedir.');
         } else {
           pantallaHome();
         }
