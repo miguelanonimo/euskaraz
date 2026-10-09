@@ -4979,21 +4979,26 @@
     el.authMsg.classList.toggle('is-mal', !!esError);
   }
 
-  /* Un solo formulario sirve para entrar y para crear cuenta; el botón
-     "¿Primera vez?" cambia qué hace el submit, sin duplicar el HTML. */
+  /* Un solo formulario sirve para entrar y para pedir acceso; el botón
+     "¿Sin cuenta?" cambia qué hace el submit, sin duplicar el HTML. Las
+     cuentas ya no se crean solas: quien pide acceso deja su correo y
+     la aprobamos a mano (función «solicitar-acceso» de Supabase). */
   var modoCrearCuenta = false;
 
   function pintarModoAuth() {
     if (modoCrearCuenta) {
-      el.authSub.textContent = 'Crea tu cuenta con correo y contraseña. Así tu progreso se guarda y sincroniza entre dispositivos.';
-      el.authSubmit.textContent = 'Crear cuenta';
+      el.authSub.textContent = 'La app es privada. Deja tu correo y, cuando aprobemos tu solicitud, te escribiremos con tu acceso.';
+      el.authSubmit.textContent = 'Solicitar acceso';
       el.authToggle.textContent = '¿Ya tienes cuenta? Entrar';
-      el.authPassword.autocomplete = 'new-password';
+      el.authPassword.hidden = true;
+      el.authPassword.required = false;
       el.authOlvido.hidden = true;
     } else {
       el.authSub.textContent = 'Inicia sesión con tu correo y tu contraseña. Así tu progreso se guarda y sincroniza entre dispositivos.';
       el.authSubmit.textContent = 'Entrar';
-      el.authToggle.textContent = '¿Primera vez? Crear cuenta';
+      el.authToggle.textContent = '¿Sin cuenta? Solicitar acceso';
+      el.authPassword.hidden = false;
+      el.authPassword.required = true;
       el.authPassword.autocomplete = 'current-password';
       el.authOlvido.hidden = false;
     }
@@ -5010,36 +5015,33 @@
     e.preventDefault();
     var email = el.authEmail.value.trim();
     var password = el.authPassword.value;
-    if (!email || !password) return;
+    if (!email || (!modoCrearCuenta && !password)) return;
     el.authSubmit.disabled = true;
-    mensajeAuth(modoCrearCuenta ? 'Creando cuenta…' : 'Entrando…', false);
-    var accion = modoCrearCuenta
-      ? sb.auth.signUp({ email: email, password: password })
-      : sb.auth.signInWithPassword({ email: email, password: password });
-    accion.then(function (r) {
+
+    if (modoCrearCuenta) {
+      mensajeAuth('Enviando solicitud…', false);
+      fetch(SUPABASE_URL + '/functions/v1/solicitar-acceso', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', apikey: SUPABASE_ANON_KEY },
+        body: JSON.stringify({ email: email })
+      }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+        .then(function (r) {
+          el.authSubmit.disabled = false;
+          if (!r.ok) { mensajeAuth(r.d.error || 'No se pudo enviar la solicitud. Inténtalo de nuevo.', true); return; }
+          mensajeAuth('Solicitud enviada. Cuando la aprobemos recibirás un correo en ' + email + '.', false);
+        })
+        .catch(function () {
+          el.authSubmit.disabled = false;
+          mensajeAuth('No se pudo enviar la solicitud. Inténtalo de nuevo.', true);
+        });
+      return;
+    }
+
+    mensajeAuth('Entrando…', false);
+    sb.auth.signInWithPassword({ email: email, password: password }).then(function (r) {
       el.authSubmit.disabled = false;
       if (r.error) { mensajeAuth(r.error.message, true); return; }
-      if (modoCrearCuenta && !r.data.session) {
-        // Supabase no distingue "alta nueva pendiente de confirmar" de
-        // "el correo ya tenía cuenta" en el resultado de signUp (por
-        // diseño, para no filtrar qué emails existen) — salvo por este
-        // detalle: en una cuenta que ya existía, `identities` viene
-        // vacío; en una alta genuinamente nueva, trae al menos uno.
-        var yaExistia = r.data.user && Array.isArray(r.data.user.identities) && r.data.user.identities.length === 0;
-        if (yaExistia) {
-          mensajeAuth('Ya existe una cuenta con ese correo. Inicia sesión.', true);
-          modoCrearCuenta = false;
-          pintarModoAuth();
-        } else {
-          // Confirmación de correo activada en el proyecto: no hay sesión
-          // todavía, hace falta que confirmes antes de poder entrar.
-          mensajeAuth('Cuenta creada. Revisa tu correo para confirmarla y luego entra con tu contraseña.', false);
-          modoCrearCuenta = false;
-          pintarModoAuth();
-        }
-      }
-      // Si hay sesión (login normal, o alta sin confirmación de correo
-      // activada), onAuthStateChange se dispara solo y arranca la app.
+      // Con sesión, onAuthStateChange se dispara solo y arranca la app.
     });
   });
 

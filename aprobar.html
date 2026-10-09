@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Aprobar acceso · Euskaraz</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Schibsted+Grotesk:wght@400..800&display=swap">
+<style>
+  :root{ --ink: rgb(20,19,20); --grey: rgb(96,96,96); --main: rgb(247,104,107); --soft: rgb(253,224,225); }
+  *{ box-sizing: border-box; }
+  body{ margin: 0; min-height: 100svh; display: grid; place-items: center; padding: clamp(20px, 6vw, 40px);
+        font-family: 'Schibsted Grotesk', system-ui, sans-serif; color: var(--ink); background: #fff; }
+  main{ width: min(100%, 440px); display: flex; flex-direction: column; gap: 20px; }
+  h1{ margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: clamp(36px, 10vw, 52px); line-height: .95; letter-spacing: -0.03em; }
+  p{ margin: 0; font-size: 18px; line-height: 1.35; color: var(--grey); }
+  b{ color: var(--ink); overflow-wrap: anywhere; }
+  .acciones{ display: flex; flex-direction: column; gap: 10px; }
+  button{ font: inherit; font-weight: 600; font-size: 18px; min-height: 56px; border-radius: 32px 24px 4px 32px; cursor: pointer; border: 0; }
+  .si{ background: var(--ink); color: #fff; }
+  .no{ background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+  button:disabled{ opacity: .5; cursor: default; }
+  .aviso{ padding: 16px 18px; border-radius: 20px; background: var(--soft); color: var(--ink); font-size: 16px; }
+  :focus-visible{ outline: 2px solid var(--main); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main id="pagina" aria-live="polite"><h1>Un momento…</h1></main>
+<script>
+(function () {
+  var FUNCION = 'https://jdijrqkzhohpzdwlsyvg.supabase.co/functions/v1/aprobar-acceso';
+  var token = new URLSearchParams(location.search).get('t') || '';
+  var pagina = document.getElementById('pagina');
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function pintar(html) { pagina.innerHTML = html; }
+
+  function resultado(d) {
+    if (d.estado === 'rechazada') return pintar('<h1>Rechazada</h1><p>La solicitud de <b>' + esc(d.email) + '</b> queda rechazada. No se ha creado ninguna cuenta.</p>');
+    var html = '<h1>Aprobada</h1><p>La cuenta de <b>' + esc(d.email) + '</b> ya existe.</p>';
+    if (d.yaExistia) html += '<div class="aviso">Ese correo ya tenía cuenta; no se ha tocado.</div>';
+    else if (d.avisado) html += '<p>Le hemos enviado un correo con su acceso.</p>';
+    else html += '<div class="aviso">No se pudo enviar el correo. Díselo tú: entra con su correo y la contraseña provisional <b>' + esc(d.clave || '') + '</b>; al entrar elegirá la suya.</div>';
+    pintar(html);
+  }
+
+  function decidir(accion, botones) {
+    botones.forEach(function (b) { b.disabled = true; });
+    fetch(FUNCION, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token: token, accion: accion }) })
+      .then(function (r) { return r.json(); })
+      .then(function (d) { if (d.error) throw new Error(d.error); resultado(d); })
+      .catch(function (e) { pintar('<h1>No ha salido</h1><p>' + esc(e.message || e) + '</p>'); });
+  }
+
+  fetch(FUNCION + '?t=' + encodeURIComponent(token))
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      if (d.error) throw new Error(d.error);
+      if (d.estado !== 'pendiente') return pintar('<h1>Ya resuelta</h1><p>La solicitud de <b>' + esc(d.email) + '</b> ya estaba <b>' + esc(d.estado) + '</b>.</p>');
+      pintar('<h1>¿Das acceso?</h1><p><b>' + esc(d.email) + '</b> ha pedido una cuenta en Euskaraz.</p>' +
+        '<div class="acciones"><button class="si" id="aprobar" type="button">Aprobar</button><button class="no" id="rechazar" type="button">Rechazar</button></div>');
+      var a = document.getElementById('aprobar'), n = document.getElementById('rechazar');
+      a.addEventListener('click', function () { decidir('aprobar', [a, n]); });
+      n.addEventListener('click', function () { decidir('rechazar', [a, n]); });
+    })
+    .catch(function (e) { pintar('<h1>Solicitud no encontrada</h1><p>' + esc(e.message || e) + '</p>'); });
+})();
+</script>
+</body>
+</html>
