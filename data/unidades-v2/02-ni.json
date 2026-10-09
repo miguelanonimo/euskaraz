@@ -301,7 +301,8 @@
         },
         {
           "eu": "Zu medikua zara, baina ni ikaslea naiz.",
-          "es": "Tú eres médica, pero yo soy estudiante."
+          "es": "Tú eres médica, pero yo soy estudiante.",
+          "audio": "unidades/u2/zu-medikua-zara-baina-ni-ikaslea-naiz.mp3"
         },
         {
           "eu": "Nire herria txikia da.",
@@ -331,8 +332,14 @@
     }
   ],
   "audiosExtra": [
-    { "eu": "irakasleak", "audio": "unidades/u4/irakasleak.mp3" },
-    { "eu": "lagunak", "audio": "unidades/u4/lagunak.mp3" }
+    {
+      "eu": "irakasleak",
+      "audio": "unidades/u4/irakasleak.mp3"
+    },
+    {
+      "eu": "lagunak",
+      "audio": "unidades/u4/lagunak.mp3"
+    }
   ],
   "vocabulario": [
     {

@@ -44,15 +44,18 @@
       "ejemplos": [
         {
           "eu": "Futbola gustatzen zait.",
-          "es": "Me gusta el fútbol."
+          "es": "Me gusta el fútbol.",
+          "audio": "unidades/u9/futbola-gustatzen-zait.mp3"
         },
         {
           "eu": "Dantza ez zait gustatzen.",
-          "es": "No me gusta bailar."
+          "es": "No me gusta bailar.",
+          "audio": "unidades/u9/dantza-ez-zait-gustatzen.mp3"
         },
         {
           "eu": "Liburuak gustatzen zaizkit.",
-          "es": "Me gustan los libros."
+          "es": "Me gustan los libros.",
+          "audio": "unidades/u10/liburuak-gustatzen-zaizkit.mp3"
         }
       ],
       "subnivel": "9.4"
@@ -63,11 +66,13 @@
       "ejemplos": [
         {
           "eu": "Pilota gustatzen zait.",
-          "es": "Me gusta la pelota."
+          "es": "Me gusta la pelota.",
+          "audio": "unidades/u9/pilota-gustatzen-zait.mp3"
         },
         {
           "eu": "Pilotalekuan gaude.",
-          "es": "Estamos en el frontón."
+          "es": "Estamos en el frontón.",
+          "audio": "unidades/u9/pilotalekuan-gaude.mp3"
         }
       ],
       "subnivel": "9.4"
@@ -78,15 +83,18 @@
       "ejemplos": [
         {
           "eu": "txapela",
-          "es": "la boina"
+          "es": "la boina",
+          "audio": "unidades/u9/txapela.mp3"
         },
         {
           "eu": "txapelduna",
-          "es": "el campeón"
+          "es": "el campeón",
+          "audio": "unidades/u9/txapelduna.mp3"
         },
         {
           "eu": "txapelketa",
-          "es": "el campeonato"
+          "es": "el campeonato",
+          "audio": "unidades/u9/txapelketa.mp3"
         }
       ],
       "subnivel": "9.4"
@@ -97,15 +105,18 @@
       "ejemplos": [
         {
           "eu": "prakak",
-          "es": "los pantalones"
+          "es": "los pantalones",
+          "audio": "unidades/u9/prakak.mp3"
         },
         {
           "eu": "zapatak",
-          "es": "los zapatos"
+          "es": "los zapatos",
+          "audio": "unidades/u9/zapatak.mp3"
         },
         {
           "eu": "betaurrekoak",
-          "es": "las gafas"
+          "es": "las gafas",
+          "audio": "unidades/u9/betaurrekoak.mp3"
         }
       ],
       "subnivel": "9.5"
@@ -116,11 +127,13 @@
       "ejemplos": [
         {
           "eu": "Alkandora zuria erosi dut.",
-          "es": "He comprado una camisa blanca."
+          "es": "He comprado una camisa blanca.",
+          "audio": "unidades/u9/alkandora-zuria-erosi-dut.mp3"
         },
         {
           "eu": "Zukua edan nahi dut.",
-          "es": "Quiero beber zumo."
+          "es": "Quiero beber zumo.",
+          "audio": "unidades/u9/zukua-edan-nahi-dut.mp3"
         }
       ],
       "subnivel": "9.5"
@@ -197,15 +210,18 @@
       "ejemplos": [
         {
           "eu": "Janaria gustatzen zait.",
-          "es": "Me gusta la comida."
+          "es": "Me gusta la comida.",
+          "audio": "unidades/u9/janaria-gustatzen-zait.mp3"
         },
         {
           "eu": "Edaria ona da.",
-          "es": "La bebida es buena."
+          "es": "La bebida es buena.",
+          "audio": "unidades/u9/edaria-ona-da.mp3"
         },
         {
           "eu": "Guztia gustatzen zait.",
-          "es": "Me gusta todo."
+          "es": "Me gusta todo.",
+          "audio": "unidades/u9/guztia-gustatzen-zait.mp3"
         }
       ],
       "subnivel": "9.1"
@@ -260,15 +276,18 @@
       "ejemplos": [
         {
           "eu": "Amak beti hori esaten du.",
-          "es": "Mi madre siempre dice eso."
+          "es": "Mi madre siempre dice eso.",
+          "audio": "unidades/u9/amak-beti-hori-esaten-du.mp3"
         },
         {
           "eu": "Esan du.",
-          "es": "Lo ha dicho."
+          "es": "Lo ha dicho.",
+          "audio": "unidades/u9/esan-du.mp3"
         },
         {
           "eu": "Zer esan nahi du?",
-          "es": "¿Qué significa?"
+          "es": "¿Qué significa?",
+          "audio": "unidades/u9/zer-esan-nahi-du.mp3"
         }
       ],
       "subnivel": "9.2"
@@ -302,15 +321,18 @@
       "ejemplos": [
         {
           "eu": "Oinez nator.",
-          "es": "Vengo a pie."
+          "es": "Vengo a pie.",
+          "audio": "unidades/u9/oinez-nator.mp3"
         },
         {
           "eu": "Eskuz idazten dut.",
-          "es": "Escribo a mano."
+          "es": "Escribo a mano.",
+          "audio": "unidades/u9/eskuz-idazten-dut.mp3"
         },
         {
           "eu": "Buruz dakit.",
-          "es": "Me lo sé de memoria."
+          "es": "Me lo sé de memoria.",
+          "audio": "unidades/u9/buruz-dakit.mp3"
         }
       ],
       "subnivel": "9.3"
@@ -321,15 +343,18 @@
       "ejemplos": [
         {
           "eu": "Nire begiak urdinak dira.",
-          "es": "Mis ojos son azules."
+          "es": "Mis ojos son azules.",
+          "audio": "unidades/u9/nire-begiak-urdinak-dira.mp3"
         },
         {
           "eu": "Nire ilea beltza da.",
-          "es": "Mi pelo es negro."
+          "es": "Mi pelo es negro.",
+          "audio": "unidades/u9/nire-ilea-beltza-da.mp3"
         },
         {
           "eu": "Zure eskuak handiak dira.",
-          "es": "Tus manos son grandes."
+          "es": "Tus manos son grandes.",
+          "audio": "unidades/u9/zure-eskuak-handiak-dira.mp3"
         }
       ],
       "subnivel": "9.3"
@@ -347,15 +372,18 @@
       "ejemplos": [
         {
           "eu": "Opari bat erosi dut.",
-          "es": "He comprado un regalo."
+          "es": "He comprado un regalo.",
+          "audio": "unidades/u9/opari-bat-erosi-dut.mp3"
         },
         {
           "eu": "Niretzat da.",
-          "es": "Es para mí."
+          "es": "Es para mí.",
+          "audio": "unidades/u9/niretzat-da.mp3"
         },
         {
           "eu": "Zure amarentzat da.",
-          "es": "Es para tu madre."
+          "es": "Es para tu madre.",
+          "audio": "unidades/u9/zure-amarentzat-da.mp3"
         }
       ],
       "subnivel": "9.5"

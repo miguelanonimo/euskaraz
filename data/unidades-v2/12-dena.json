@@ -82,31 +82,38 @@
       "ejemplos": [
         {
           "eu": "Norbait dago etxean.",
-          "es": "Hay alguien en casa."
+          "es": "Hay alguien en casa.",
+          "audio": "unidades/u12/norbait-dago-etxean.mp3"
         },
         {
           "eu": "Ez dago inor.",
-          "es": "No hay nadie."
+          "es": "No hay nadie.",
+          "audio": "unidades/u12/ez-dago-inor.mp3"
         },
         {
           "eu": "Zerbait esan du.",
-          "es": "Ha dicho algo."
+          "es": "Ha dicho algo.",
+          "audio": "unidades/u12/zerbait-esan-du.mp3"
         },
         {
           "eu": "Denak hemen daude.",
-          "es": "Todos están aquí."
+          "es": "Todos están aquí.",
+          "audio": "unidades/u12/denak-hemen-daude.mp3"
         },
         {
           "eu": "Denek euskara ikasten dute.",
-          "es": "Todos aprenden euskera."
+          "es": "Todos aprenden euskera.",
+          "audio": "unidades/u12/denek-euskara-ikasten-dute.mp3"
         },
         {
           "eu": "Kafea bakarrik nahi dut.",
-          "es": "Solo quiero café."
+          "es": "Solo quiero café.",
+          "audio": "unidades/u12/kafea-bakarrik-nahi-dut.mp3"
         },
         {
           "eu": "Bakarrik nago etxean.",
-          "es": "Estoy solo en casa."
+          "es": "Estoy solo en casa.",
+          "audio": "unidades/u12/bakarrik-nago-etxean.mp3"
         }
       ],
       "subnivel": "12.3"
@@ -139,11 +146,13 @@
       "ejemplos": [
         {
           "eu": "Hurrengo hitza, mesedez.",
-          "es": "La siguiente palabra, por favor."
+          "es": "La siguiente palabra, por favor.",
+          "audio": "unidades/u12/hurrengo-hitza-mesedez.mp3"
         },
         {
           "eu": "Esaldi hau zaila da.",
-          "es": "Esta frase es difícil."
+          "es": "Esta frase es difícil.",
+          "audio": "unidades/u12/esaldi-hau-zaila-da.mp3"
         }
       ],
       "subnivel": "12.4"

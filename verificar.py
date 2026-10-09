@@ -191,6 +191,14 @@ for ruta, u in unidades:
            not set(gr) <= {"titulo","cuerpo","ejemplos","subnivel","registro"}:
             errores.append("%s: ficha de gramática con claves raras en «%s»: %s"
                            % (ruta, gr.get("titulo","?"), sorted(gr)))
+        # Toda frase destacada de una ficha lleva audio, en todas las lecciones
+        # (la app solo pinta el botón si el ejemplo trae `audio`). Para añadir
+        # los que falten: scripts/generar-audio/completar-ejemplos.mjs.
+        # (Solo en el curso vigente: el v1 es el antiguo, ya sin uso.)
+        for ejx in (gr.get("ejemplos") or []) if INDICE == CURSOS["v2"] else []:
+            if isinstance(ejx, dict) and not ejx.get("audio"):
+                errores.append(u"%s: ejemplo sin audio en «%s»: %s"
+                               % (ruta, gr.get("titulo", "?"), ejx.get("eu")))
         # La app convierte cada \n suelto en un <br>. En una lista eso es lo
         # que se quiere, pero si el párrafo se escribió ajustado a mano a ~70
         # caracteres, el lector ve la frase partida a mitad (lo cazó Ric en

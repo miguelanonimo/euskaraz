@@ -3,3 +3,4 @@
 .env*
 /ric
 .claves-supabase.env
+supabase/.temp/

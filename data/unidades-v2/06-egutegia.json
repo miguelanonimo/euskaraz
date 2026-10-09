@@ -177,15 +177,18 @@
       "ejemplos": [
         {
           "eu": "urtarrila",
-          "es": "enero"
+          "es": "enero",
+          "audio": "unidades/u6/urtarrila.mp3"
         },
         {
           "eu": "maiatza",
-          "es": "mayo"
+          "es": "mayo",
+          "audio": "unidades/u6/maiatza.mp3"
         },
         {
           "eu": "abendua",
-          "es": "diciembre"
+          "es": "diciembre",
+          "audio": "unidades/u6/abendua.mp3"
         }
       ],
       "subnivel": "6.3"
@@ -196,11 +199,13 @@
       "ejemplos": [
         {
           "eu": "Nire urtebetetzea maiatzean da.",
-          "es": "Mi cumpleaños es en mayo."
+          "es": "Mi cumpleaños es en mayo.",
+          "audio": "unidades/u6/nire-urtebetetzea-maiatzean-da.mp3"
         },
         {
           "eu": "abenduan",
-          "es": "en diciembre"
+          "es": "en diciembre",
+          "audio": "unidades/u6/abenduan.mp3"
         }
       ],
       "subnivel": "6.3"
@@ -211,15 +216,18 @@
       "ejemplos": [
         {
           "eu": "Zorionak!",
-          "es": "¡Felicidades!"
+          "es": "¡Felicidades!",
+          "audio": "unidades/u12/zorionak.mp3"
         },
         {
           "eu": "Zorionak zuri!",
-          "es": "¡Felicidades a ti!"
+          "es": "¡Felicidades a ti!",
+          "audio": "unidades/u6/zorionak-zuri.mp3"
         },
         {
           "eu": "Nire urtebetetzea maiatzean da.",
-          "es": "Mi cumpleaños es en mayo."
+          "es": "Mi cumpleaños es en mayo.",
+          "audio": "unidades/u6/nire-urtebetetzea-maiatzean-da.mp3"
         }
       ],
       "subnivel": "6.3"
@@ -230,11 +238,13 @@
       "ejemplos": [
         {
           "eu": "urria",
-          "es": "octubre"
+          "es": "octubre",
+          "audio": "unidades/u6/urria.mp3"
         },
         {
           "eu": "abendua",
-          "es": "diciembre"
+          "es": "diciembre",
+          "audio": "unidades/u6/abendua.mp3"
         }
       ],
       "subnivel": "6.3"
@@ -245,11 +255,13 @@
       "ejemplos": [
         {
           "eu": "Zorionak!",
-          "es": "¡Felicidades! / ¡Feliz cumpleaños!"
+          "es": "¡Felicidades! / ¡Feliz cumpleaños!",
+          "audio": "unidades/u12/zorionak.mp3"
         },
         {
           "eu": "Zorionak zuri!",
-          "es": "¡Feliz cumpleaños!"
+          "es": "¡Feliz cumpleaños!",
+          "audio": "unidades/u6/zorionak-zuri.mp3"
         }
       ],
       "subnivel": "6.3",
@@ -261,23 +273,28 @@
       "ejemplos": [
         {
           "eu": "udaberria",
-          "es": "la primavera"
+          "es": "la primavera",
+          "audio": "unidades/u6/udaberria.mp3"
         },
         {
           "eu": "uda",
-          "es": "el verano"
+          "es": "el verano",
+          "audio": "unidades/u10/uda.mp3"
         },
         {
           "eu": "udazkena",
-          "es": "el otoño"
+          "es": "el otoño",
+          "audio": "unidades/u6/udazkena.mp3"
         },
         {
           "eu": "negua",
-          "es": "el invierno"
+          "es": "el invierno",
+          "audio": "unidades/u10/negua.mp3"
         },
         {
           "eu": "Negua hotza da.",
-          "es": "El invierno es frío."
+          "es": "El invierno es frío.",
+          "audio": "unidades/u6/negua-hotza-da.mp3"
         }
       ],
       "subnivel": "6.4"
@@ -288,15 +305,18 @@
       "ejemplos": [
         {
           "eu": "Udaberrian euria egiten du.",
-          "es": "En primavera llueve."
+          "es": "En primavera llueve.",
+          "audio": "unidades/u6/udaberrian-euria-egiten-du.mp3"
         },
         {
           "eu": "Neguan hotz egiten du.",
-          "es": "En invierno hace frío."
+          "es": "En invierno hace frío.",
+          "audio": "unidades/u6/neguan-hotz-egiten-du.mp3"
         },
         {
           "eu": "Gaur eguraldi ona dago.",
-          "es": "Hoy hace buen tiempo."
+          "es": "Hoy hace buen tiempo.",
+          "audio": "unidades/u6/gaur-eguraldi-ona-dago.mp3"
         }
       ],
       "subnivel": "6.4"
@@ -307,11 +327,13 @@
       "ejemplos": [
         {
           "eu": "gabon",
-          "es": "buenas noches"
+          "es": "buenas noches",
+          "audio": "unidades/u1/gabon.mp3"
         },
         {
           "eu": "Gabonak",
-          "es": "la Navidad"
+          "es": "la Navidad",
+          "audio": "unidades/u6/gabonak.mp3"
         }
       ],
       "subnivel": "6.5"
@@ -322,15 +344,18 @@
       "ejemplos": [
         {
           "eu": "Olentzero",
-          "es": "El carbonero — y, antes, la propia Nochebuena."
+          "es": "El carbonero — y, antes, la propia Nochebuena.",
+          "audio": "unidades/u6/olentzero.mp3"
         },
         {
           "eu": "Gabon eguna",
-          "es": "El día de Nochebuena."
+          "es": "El día de Nochebuena.",
+          "audio": "unidades/u6/gabon-eguna.mp3"
         },
         {
           "eu": "Gabonak",
-          "es": "La Navidad."
+          "es": "La Navidad.",
+          "audio": "unidades/u6/gabonak.mp3"
         }
       ],
       "subnivel": "6.5"
@@ -341,15 +366,18 @@
       "ejemplos": [
         {
           "eu": "Aratusteak",
-          "es": "los carnavales (en Bizkaia)"
+          "es": "los carnavales (en Bizkaia)",
+          "audio": "unidades/u6/aratusteak.mp3"
         },
         {
           "eu": "Aste Nagusia",
-          "es": "la Semana Grande de Bilbao"
+          "es": "la Semana Grande de Bilbao",
+          "audio": "unidades/u6/aste-nagusia.mp3"
         },
         {
           "eu": "Urriko Azken Astelehena",
-          "es": "el último lunes de octubre — la feria de Gernika"
+          "es": "el último lunes de octubre — la feria de Gernika",
+          "audio": "unidades/u6/urriko-azken-astelehena.mp3"
         }
       ],
       "subnivel": "6.5",

@@ -132,19 +132,23 @@
       "ejemplos": [
         {
           "eu": "Bilbon jaio nintzen.",
-          "es": "Nací en Bilbao."
+          "es": "Nací en Bilbao.",
+          "audio": "unidades/u10/bilbon-jaio-nintzen.mp3"
         },
         {
           "eu": "Atzo ezagutu nuen.",
-          "es": "Lo conocí ayer."
+          "es": "Lo conocí ayer.",
+          "audio": "unidades/u10/atzo-ezagutu-nuen.mp3"
         },
         {
           "eu": "Zer gertatu zen?",
-          "es": "¿Qué pasó?"
+          "es": "¿Qué pasó?",
+          "audio": "unidades/u10/zer-gertatu-zen.mp3"
         },
         {
           "eu": "Ahaztu zait.",
-          "es": "Se me ha olvidado."
+          "es": "Se me ha olvidado.",
+          "audio": "unidades/u10/ahaztu-zait.mp3"
         }
       ],
       "subnivel": "10.4"

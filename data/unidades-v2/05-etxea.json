@@ -88,15 +88,18 @@
       "ejemplos": [
         {
           "eu": "Jon bere etxean dago.",
-          "es": "Jon está en su casa (en la suya)."
+          "es": "Jon está en su casa (en la suya).",
+          "audio": "unidades/u5/jon-bere-etxean-dago.mp3"
         },
         {
           "eu": "Jon haren etxean dago.",
-          "es": "Jon está en casa de otro."
+          "es": "Jon está en casa de otro.",
+          "audio": "unidades/u5/jon-haren-etxean-dago.mp3"
         },
         {
           "eu": "Beren etxean daude.",
-          "es": "Están en su casa (en la de ellos)."
+          "es": "Están en su casa (en la de ellos).",
+          "audio": "unidades/u5/beren-etxean-daude.mp3"
         }
       ],
       "subnivel": "5.1"
@@ -174,15 +177,18 @@
       "ejemplos": [
         {
           "eu": "etxe gorria",
-          "es": "la casa roja"
+          "es": "la casa roja",
+          "audio": "unidades/u5/etxe-gorria.mp3"
         },
         {
           "eu": "mahai zuria",
-          "es": "la mesa blanca"
+          "es": "la mesa blanca",
+          "audio": "unidades/u5/mahai-zuria.mp3"
         },
         {
           "eu": "Nire logela urdina da.",
-          "es": "Mi habitación es azul."
+          "es": "Mi habitación es azul.",
+          "audio": "unidades/u5/nire-logela-urdina-da.mp3"
         }
       ],
       "subnivel": "5.3"
@@ -193,15 +199,18 @@
       "ejemplos": [
         {
           "eu": "Mahai zuri bat.",
-          "es": "Una mesa blanca."
+          "es": "Una mesa blanca.",
+          "audio": "unidades/u5/mahai-zuri-bat.mp3"
         },
         {
           "eu": "Mahai batzuk.",
-          "es": "Unas mesas."
+          "es": "Unas mesas.",
+          "audio": "unidades/u5/mahai-batzuk.mp3"
         },
         {
           "eu": "Aulki batzuk beltzak dira.",
-          "es": "Unas sillas son negras."
+          "es": "Unas sillas son negras.",
+          "audio": "unidades/u5/aulki-batzuk-beltzak-dira.mp3"
         }
       ],
       "subnivel": "5.4"
@@ -212,7 +221,8 @@
       "ejemplos": [
         {
           "eu": "laranja",
-          "es": "la naranja / naranja"
+          "es": "la naranja / naranja",
+          "audio": "unidades/u5/laranja.mp3"
         }
       ],
       "subnivel": "5.3"
@@ -223,15 +233,18 @@
       "ejemplos": [
         {
           "eu": "Non dago komuna?",
-          "es": "¿Dónde está el baño?"
+          "es": "¿Dónde está el baño?",
+          "audio": "unidades/u5/non-dago-komuna.mp3"
         },
         {
           "eu": "Telebista egongelan dago.",
-          "es": "La televisión está en el salón."
+          "es": "La televisión está en el salón.",
+          "audio": "unidades/u5/telebista-egongelan-dago.mp3"
         },
         {
           "eu": "Mahai bat eta lau aulki.",
-          "es": "Una mesa y cuatro sillas."
+          "es": "Una mesa y cuatro sillas.",
+          "audio": "unidades/u5/mahai-bat-eta-lau-aulki.mp3"
         }
       ],
       "subnivel": "5.2"
@@ -242,15 +255,18 @@
       "ejemplos": [
         {
           "eu": "Non dago komuna?",
-          "es": "¿Dónde está el baño?"
+          "es": "¿Dónde está el baño?",
+          "audio": "unidades/u5/non-dago-komuna.mp3"
         },
         {
           "eu": "Komunak",
-          "es": "Servicios — lo que pone en la puerta."
+          "es": "Servicios — lo que pone en la puerta.",
+          "audio": "unidades/u5/komunak.mp3"
         },
         {
           "eu": "Bainugela handia da.",
-          "es": "El cuarto de baño es grande."
+          "es": "El cuarto de baño es grande.",
+          "audio": "unidades/u5/bainugela-handia-da.mp3"
         }
       ],
       "subnivel": "5.2"
@@ -261,11 +277,13 @@
       "ejemplos": [
         {
           "eu": "etxe gorria",
-          "es": "la casa roja"
+          "es": "la casa roja",
+          "audio": "unidades/u5/etxe-gorria.mp3"
         },
         {
           "eu": "egongela",
-          "es": "el salón"
+          "es": "el salón",
+          "audio": "unidades/u5/egongela.mp3"
         }
       ],
       "subnivel": "5.2",
@@ -284,15 +302,18 @@
       "ejemplos": [
         {
           "eu": "Baserri bat daukate.",
-          "es": "Tienen un caserío."
+          "es": "Tienen un caserío.",
+          "audio": "unidades/u5/baserri-bat-daukate.mp3"
         },
         {
           "eu": "Behiak eta ardiak.",
-          "es": "Vacas y ovejas."
+          "es": "Vacas y ovejas.",
+          "audio": "unidades/u5/behiak-eta-ardiak.mp3"
         },
         {
           "eu": "Txakurra etxean dago.",
-          "es": "El perro está en casa."
+          "es": "El perro está en casa.",
+          "audio": "unidades/u5/txakurra-etxean-dago.mp3"
         }
       ],
       "subnivel": "5.5"

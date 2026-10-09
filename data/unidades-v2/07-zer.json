@@ -88,15 +88,18 @@
       "ejemplos": [
         {
           "eu": "Barazkiak erosten ditut.",
-          "es": "Compro las verduras."
+          "es": "Compro las verduras.",
+          "audio": "unidades/u7/barazkiak-erosten-ditut.mp3"
         },
         {
           "eu": "Liburuak irakurtzen ditugu.",
-          "es": "Leemos los libros."
+          "es": "Leemos los libros.",
+          "audio": "unidades/u7/liburuak-irakurtzen-ditugu.mp3"
         },
         {
           "eu": "Haiek etxeak ikusten dituzte.",
-          "es": "Ellos ven las casas."
+          "es": "Ellos ven las casas.",
+          "audio": "unidades/u7/haiek-etxeak-ikusten-dituzte.mp3"
         }
       ],
       "subnivel": "7.1"
@@ -151,23 +154,28 @@
       "ejemplos": [
         {
           "eu": "Ez dut dirurik.",
-          "es": "No tengo dinero."
+          "es": "No tengo dinero.",
+          "audio": "unidades/u7/ez-dut-dirurik.mp3"
         },
         {
           "eu": "Ez dago urik.",
-          "es": "No hay agua."
+          "es": "No hay agua.",
+          "audio": "unidades/u7/ez-dago-urik.mp3"
         },
         {
           "eu": "Ez dut ezer nahi.",
-          "es": "No quiero nada."
+          "es": "No quiero nada.",
+          "audio": "unidades/u7/ez-dut-ezer-nahi.mp3"
         },
         {
           "eu": "Gaur ez dut ogirik jaten.",
-          "es": "Hoy no como pan."
+          "es": "Hoy no como pan.",
+          "audio": "unidades/u7/gaur-ez-dut-ogirik-jaten.mp3"
         },
         {
           "eu": "Inoiz ez dut ogirik jaten.",
-          "es": "Nunca como pan."
+          "es": "Nunca como pan.",
+          "audio": "unidades/u7/inoiz-ez-dut-ogirik-jaten.mp3"
         }
       ],
       "subnivel": "7.2"
@@ -201,15 +209,18 @@
       "ejemplos": [
         {
           "eu": "Goizean kafea hartzen dut.",
-          "es": "Por la mañana tomo café."
+          "es": "Por la mañana tomo café.",
+          "audio": "unidades/u7/goizean-kafea-hartzen-dut.mp3"
         },
         {
           "eu": "Barazkiak eta arraina jaten ditut.",
-          "es": "Como verduras y pescado."
+          "es": "Como verduras y pescado.",
+          "audio": "unidades/u7/barazkiak-eta-arraina-jaten-ditut.mp3"
         },
         {
           "eu": "Sagarra eta madaria erosten ditut.",
-          "es": "Compro una manzana y una pera."
+          "es": "Compro una manzana y una pera.",
+          "audio": "unidades/u7/sagarra-eta-madaria-erosten-ditut.mp3"
         }
       ],
       "subnivel": "7.5"
@@ -220,11 +231,13 @@
       "ejemplos": [
         {
           "eu": "gatza",
-          "es": "la sal"
+          "es": "la sal",
+          "audio": "unidades/u7/gatza.mp3"
         },
         {
           "eu": "azukrea",
-          "es": "el azúcar"
+          "es": "el azúcar",
+          "audio": "unidades/u7/azukrea.mp3"
         }
       ],
       "subnivel": "7.5"
@@ -235,7 +248,8 @@
       "ejemplos": [
         {
           "eu": "gazta",
-          "es": "el queso"
+          "es": "el queso",
+          "audio": "unidades/u7/gazta.mp3"
         }
       ],
       "subnivel": "7.5",
@@ -248,11 +262,13 @@
       "ejemplos": [
         {
           "eu": "Goizean jaikitzen naiz.",
-          "es": "Por la mañana me levanto."
+          "es": "Por la mañana me levanto.",
+          "audio": "unidades/u7/goizean-jaikitzen-naiz.mp3"
         },
         {
           "eu": "Etxean afaltzen dut.",
-          "es": "Ceno en casa."
+          "es": "Ceno en casa.",
+          "audio": "unidades/u7/etxean-afaltzen-dut.mp3"
         }
       ]
     },
@@ -263,15 +279,18 @@
       "ejemplos": [
         {
           "eu": "gosaldu",
-          "es": "desayunar"
+          "es": "desayunar",
+          "audio": "unidades/u7/gosaldu.mp3"
         },
         {
           "eu": "bazkaldu",
-          "es": "comer"
+          "es": "comer",
+          "audio": "unidades/u7/bazkaldu.mp3"
         },
         {
           "eu": "afaldu",
-          "es": "cenar"
+          "es": "cenar",
+          "audio": "unidades/u7/afaldu.mp3"
         }
       ]
     },
@@ -282,11 +301,13 @@
       "ejemplos": [
         {
           "eu": "lo egin",
-          "es": "dormir"
+          "es": "dormir",
+          "audio": "unidades/u7/lo-egin.mp3"
         },
         {
           "eu": "Ondo lo egiten dut.",
-          "es": "Duermo bien."
+          "es": "Duermo bien.",
+          "audio": "unidades/u7/ondo-lo-egiten-dut.mp3"
         }
       ]
     },
@@ -297,15 +318,18 @@
       "ejemplos": [
         {
           "eu": "Jaten ari naiz.",
-          "es": "Estoy comiendo."
+          "es": "Estoy comiendo.",
+          "audio": "unidades/u7/jaten-ari-naiz.mp3"
         },
         {
           "eu": "Ikasten ari zara.",
-          "es": "Estás estudiando."
+          "es": "Estás estudiando.",
+          "audio": "unidades/u7/ikasten-ari-zara.mp3"
         },
         {
           "eu": "Euskara ikasten ari naiz.",
-          "es": "Estoy aprendiendo euskera."
+          "es": "Estoy aprendiendo euskera.",
+          "audio": "unidades/u7/euskara-ikasten-ari-naiz.mp3"
         }
       ]
     },
@@ -316,15 +340,18 @@
       "ejemplos": [
         {
           "eu": "Kafea edaten dut.",
-          "es": "Tomo café."
+          "es": "Tomo café.",
+          "audio": "unidades/u7/kafea-edaten-dut.mp3"
         },
         {
           "eu": "Kafea edaten ari naiz.",
-          "es": "Estoy tomando café."
+          "es": "Estoy tomando café.",
+          "audio": "unidades/u7/kafea-edaten-ari-naiz.mp3"
         },
         {
           "eu": "Zer egiten ari zara?",
-          "es": "¿Qué estás haciendo?"
+          "es": "¿Qué estás haciendo?",
+          "audio": "unidades/u7/zer-egiten-ari-zara.mp3"
         }
       ]
     }

@@ -60,15 +60,18 @@
       "ejemplos": [
         {
           "eu": "Poliki, mesedez.",
-          "es": "Despacio, por favor."
+          "es": "Despacio, por favor.",
+          "audio": "unidades/u11/poliki-mesedez.mp3"
         },
         {
           "eu": "Euskara zaila da?",
-          "es": "¿Es difícil el euskera?"
+          "es": "¿Es difícil el euskera?",
+          "audio": "unidades/u11/euskara-zaila-da.mp3"
         },
         {
           "eu": "Hau errazagoa da.",
-          "es": "Esto es más fácil."
+          "es": "Esto es más fácil.",
+          "audio": "unidades/u11/hau-errazagoa-da.mp3"
         }
       ],
       "subnivel": "11.4"
@@ -80,15 +83,18 @@
       "ejemplos": [
         {
           "eu": "Bihar joango naiz.",
-          "es": "Mañana iré."
+          "es": "Mañana iré.",
+          "audio": "unidades/u11/bihar-joango-naiz.mp3"
         },
         {
           "eu": "Zer egingo duzu?",
-          "es": "¿Qué vas a hacer?"
+          "es": "¿Qué vas a hacer?",
+          "audio": "unidades/u11/zer-egingo-duzu.mp3"
         },
         {
           "eu": "Euskara ikasiko dut.",
-          "es": "Aprenderé euskera."
+          "es": "Aprenderé euskera.",
+          "audio": "unidades/u11/euskara-ikasiko-dut.mp3"
         }
       ]
     },
@@ -99,19 +105,23 @@
       "ejemplos": [
         {
           "eu": "Atzo joan nintzen.",
-          "es": "Ayer fui."
+          "es": "Ayer fui.",
+          "audio": "unidades/u11/atzo-joan-nintzen.mp3"
         },
         {
           "eu": "Gaur joaten naiz.",
-          "es": "Hoy voy."
+          "es": "Hoy voy.",
+          "audio": "unidades/u11/gaur-joaten-naiz.mp3"
         },
         {
           "eu": "Bihar joango naiz.",
-          "es": "Mañana iré."
+          "es": "Mañana iré.",
+          "audio": "unidades/u11/bihar-joango-naiz.mp3"
         },
         {
           "eu": "Zer asmo duzu bihar?",
-          "es": "¿Qué planes tienes mañana?"
+          "es": "¿Qué planes tienes mañana?",
+          "audio": "unidades/u11/zer-asmo-duzu-bihar.mp3"
         }
       ]
     }

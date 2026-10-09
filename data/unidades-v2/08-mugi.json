@@ -154,11 +154,13 @@
       "ejemplos": [
         {
           "eu": "Bilbora noa.",
-          "es": "Voy a Bilbao. — igual que en batua."
+          "es": "Voy a Bilbao. — igual que en batua.",
+          "audio": "unidades/u9/bilbora-noa.mp3"
         },
         {
           "eu": "Etorten naz.",
-          "es": "Suelo venir. — batua: etortzen naiz."
+          "es": "Suelo venir. — batua: etortzen naiz.",
+          "audio": "unidades/u8/etorten-naz.mp3"
         }
       ],
       "subnivel": "8.1",
@@ -170,15 +172,18 @@
       "ejemplos": [
         {
           "eu": "Etxean sartzen naiz.",
-          "es": "Entro en casa."
+          "es": "Entro en casa.",
+          "audio": "unidades/u8/etxean-sartzen-naiz.mp3"
         },
         {
           "eu": "Lanetik irteten naiz.",
-          "es": "Salgo del trabajo."
+          "es": "Salgo del trabajo.",
+          "audio": "unidades/u8/lanetik-irteten-naiz.mp3"
         },
         {
           "eu": "Berandu iristen naiz.",
-          "es": "Llego tarde."
+          "es": "Llego tarde.",
+          "audio": "unidades/u8/berandu-iristen-naiz.mp3"
         }
       ],
       "subnivel": "8.2"
@@ -189,15 +194,18 @@
       "ejemplos": [
         {
           "eu": "Zatoz hona!",
-          "es": "¡Ven aquí!"
+          "es": "¡Ven aquí!",
+          "audio": "unidades/u8/zatoz-hona.mp3"
         },
         {
           "eu": "Zoaz hemendik!",
-          "es": "¡Vete de aquí!"
+          "es": "¡Vete de aquí!",
+          "audio": "unidades/u8/zoaz-hemendik.mp3"
         },
         {
           "eu": "Sartu, mesedez.",
-          "es": "Entra, por favor."
+          "es": "Entra, por favor.",
+          "audio": "unidades/u8/sartu-mesedez.mp3"
         }
       ],
       "subnivel": "8.2"
@@ -208,7 +216,8 @@
       "ejemplos": [
         {
           "eu": "Etxetik urten dot.",
-          "es": "He salido de casa. — batua: etxetik irten naiz."
+          "es": "He salido de casa. — batua: etxetik irten naiz.",
+          "audio": "unidades/u8/etxetik-urten-dot.mp3"
         }
       ],
       "registro": "bizkaiera",
@@ -221,15 +230,18 @@
       "ejemplos": [
         {
           "eu": "Joan nahi dut.",
-          "es": "Quiero ir."
+          "es": "Quiero ir.",
+          "audio": "unidades/u8/joan-nahi-dut.mp3"
         },
         {
           "eu": "Lan egin behar dut.",
-          "es": "Tengo que trabajar."
+          "es": "Tengo que trabajar.",
+          "audio": "unidades/u8/lan-egin-behar-dut.mp3"
         },
         {
           "eu": "Etorri ahal zara?",
-          "es": "¿Puedes venir?"
+          "es": "¿Puedes venir?",
+          "audio": "unidades/u8/etorri-ahal-zara.mp3"
         }
       ]
     },
@@ -240,15 +252,18 @@
       "ejemplos": [
         {
           "eu": "ahal dut",
-          "es": "puedo"
+          "es": "puedo",
+          "audio": "unidades/u8/ahal-dut.mp3"
         },
         {
           "eu": "ezin dut",
-          "es": "no puedo"
+          "es": "no puedo",
+          "audio": "unidades/u8/ezin-dut.mp3"
         },
         {
           "eu": "Ezin dut joan.",
-          "es": "No puedo ir."
+          "es": "No puedo ir.",
+          "audio": "unidades/u8/ezin-dut-joan.mp3"
         }
       ]
     },
@@ -258,11 +273,13 @@
       "ejemplos": [
         {
           "eu": "Liburutegira noa.",
-          "es": "Voy a la biblioteca."
+          "es": "Voy a la biblioteca.",
+          "audio": "unidades/u8/liburutegira-noa.mp3"
         },
         {
           "eu": "Okindegian ogia erosten dut.",
-          "es": "Compro pan en la panadería."
+          "es": "Compro pan en la panadería.",
+          "audio": "unidades/u8/okindegian-ogia-erosten-dut.mp3"
         }
       ],
       "subnivel": "8.5"
@@ -273,11 +290,13 @@
       "ejemplos": [
         {
           "eu": "Bilbo hiri handia da.",
-          "es": "Bilbao es una ciudad grande."
+          "es": "Bilbao es una ciudad grande.",
+          "audio": "unidades/u8/bilbo-hiri-handia-da.mp3"
         },
         {
           "eu": "Nire herria txikia da.",
-          "es": "Mi pueblo es pequeño."
+          "es": "Mi pueblo es pequeño.",
+          "audio": "unidades/u2/nire-herria-txikia-da.mp3"
         }
       ],
       "subnivel": "8.5"
@@ -288,11 +307,13 @@
       "ejemplos": [
         {
           "eu": "Azokara noa.",
-          "es": "Voy al mercado."
+          "es": "Voy al mercado.",
+          "audio": "unidades/u8/azokara-noa.mp3"
         },
         {
           "eu": "Dendan erosten dut.",
-          "es": "Compro en la tienda."
+          "es": "Compro en la tienda.",
+          "audio": "unidades/u8/dendan-erosten-dut.mp3"
         }
       ],
       "subnivel": "8.5"

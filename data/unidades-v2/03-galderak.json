@@ -104,7 +104,8 @@
       "ejemplos": [
         {
           "eu": "Lagun hau irakaslea da.",
-          "es": "Este amigo es profesor."
+          "es": "Este amigo es profesor.",
+          "audio": "unidades/u3/lagun-hau-irakaslea-da.mp3"
         },
         {
           "eu": "Ikasle hori nongoa da?",
@@ -113,7 +114,8 @@
         },
         {
           "eu": "Hura medikua da.",
-          "es": "Aquel es médico."
+          "es": "Aquel es médico.",
+          "audio": "unidades/u4/hura-medikua-da.mp3"
         }
       ],
       "subnivel": "3.3"
@@ -124,15 +126,18 @@
       "ejemplos": [
         {
           "eu": "Laguna irakaslea da.",
-          "es": "El amigo es profesor."
+          "es": "El amigo es profesor.",
+          "audio": "unidades/u3/laguna-irakaslea-da.mp3"
         },
         {
           "eu": "Lagun hau irakaslea da.",
-          "es": "Este amigo es profesor."
+          "es": "Este amigo es profesor.",
+          "audio": "unidades/u3/lagun-hau-irakaslea-da.mp3"
         },
         {
           "eu": "Ikasle horiek euskaldunak dira.",
-          "es": "Esos estudiantes hablan euskera."
+          "es": "Esos estudiantes hablan euskera.",
+          "audio": "unidades/u3/ikasle-horiek-euskaldunak-dira.mp3"
         }
       ],
       "subnivel": "3.3"
@@ -183,11 +188,13 @@
       "ejemplos": [
         {
           "eu": "Hau polita!",
-          "es": "¡Qué bonito! · ¡Qué bonita!"
+          "es": "¡Qué bonito! · ¡Qué bonita!",
+          "audio": "unidades/u3/hau-polita.mp3"
         },
         {
           "eu": "Hau handia!",
-          "es": "¡Qué grande!"
+          "es": "¡Qué grande!",
+          "audio": "unidades/u3/hau-handia.mp3"
         }
       ],
       "subnivel": "3.4"
@@ -254,11 +261,13 @@
         },
         {
           "eu": "Beti hemen.",
-          "es": "Siempre aquí."
+          "es": "Siempre aquí.",
+          "audio": "unidades/u3/beti-hemen.mp3"
         },
         {
           "eu": "Bihar arte!",
-          "es": "¡Hasta mañana!"
+          "es": "¡Hasta mañana!",
+          "audio": "unidades/u1/bihar-arte.mp3"
         }
       ],
       "subnivel": "3.1"

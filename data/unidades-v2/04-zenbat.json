@@ -50,15 +50,18 @@
       "ejemplos": [
         {
           "eu": "Lagun bat.",
-          "es": "Un amigo. · Una amiga."
+          "es": "Un amigo. · Una amiga.",
+          "audio": "unidades/u4/lagun-bat.mp3"
         },
         {
           "eu": "Hiru lagun.",
-          "es": "Tres amigos."
+          "es": "Tres amigos.",
+          "audio": "unidades/u4/hiru-lagun.mp3"
         },
         {
           "eu": "Bost eta bost, hamar.",
-          "es": "Cinco y cinco, diez."
+          "es": "Cinco y cinco, diez.",
+          "audio": "unidades/u4/bost-eta-bost-hamar.mp3"
         }
       ],
       "subnivel": "4.1"
@@ -69,7 +72,8 @@
       "ejemplos": [
         {
           "eu": "hamaika lagun",
-          "es": "un montón de amigos (literalmente, «once amigos»)"
+          "es": "un montón de amigos (literalmente, «once amigos»)",
+          "audio": "unidades/u4/hamaika-lagun.mp3"
         }
       ],
       "subnivel": "4.1"
@@ -169,15 +173,18 @@
       "ejemplos": [
         {
           "eu": "Nire aita eta nire ama.",
-          "es": "Mi padre y mi madre."
+          "es": "Mi padre y mi madre.",
+          "audio": "unidades/u4/nire-aita-eta-nire-ama.mp3"
         },
         {
           "eu": "Bi alaba dauzkate.",
-          "es": "Tienen dos hijas."
+          "es": "Tienen dos hijas.",
+          "audio": "unidades/u4/bi-alaba-dauzkate.mp3"
         },
         {
           "eu": "Amona Bilbokoa da.",
-          "es": "La abuela es de Bilbao."
+          "es": "La abuela es de Bilbao.",
+          "audio": "unidades/u4/amona-bilbokoa-da.mp3"
         }
       ],
       "subnivel": "4.6"
@@ -188,19 +195,23 @@
       "ejemplos": [
         {
           "eu": "Nik arreba bat daukat.",
-          "es": "Tengo una hermana. — dicho por un chico"
+          "es": "Tengo una hermana. — dicho por un chico",
+          "audio": "unidades/u4/nik-arreba-bat-daukat.mp3"
         },
         {
           "eu": "Nik ahizpa bat daukat.",
-          "es": "Tengo una hermana. — dicho por una chica"
+          "es": "Tengo una hermana. — dicho por una chica",
+          "audio": "unidades/u4/nik-ahizpa-bat-daukat.mp3"
         },
         {
           "eu": "Mikelek arreba bat du.",
-          "es": "Mikel tiene una hermana."
+          "es": "Mikel tiene una hermana.",
+          "audio": "unidades/u4/mikelek-arreba-bat-du.mp3"
         },
         {
           "eu": "Anek ahizpa bat du.",
-          "es": "Ane tiene una hermana."
+          "es": "Ane tiene una hermana.",
+          "audio": "unidades/u4/anek-ahizpa-bat-du.mp3"
         }
       ],
       "subnivel": "4.6"
@@ -211,15 +222,18 @@
       "ejemplos": [
         {
           "eu": "Bi anaia ditut.",
-          "es": "Tengo dos hermanos."
+          "es": "Tengo dos hermanos.",
+          "audio": "unidades/u4/bi-anaia-ditut.mp3"
         },
         {
           "eu": "Bi seme dituzte.",
-          "es": "Tienen dos hijos."
+          "es": "Tienen dos hijos.",
+          "audio": "unidades/u4/bi-seme-dituzte.mp3"
         },
         {
           "eu": "Nire anaia euskalduna da.",
-          "es": "Mi hermano es euskaldun."
+          "es": "Mi hermano es euskaldun.",
+          "audio": "unidades/u4/nire-anaia-euskalduna-da.mp3"
         }
       ],
       "subnivel": "4.6"
@@ -253,15 +267,18 @@
       "ejemplos": [
         {
           "eu": "iloba",
-          "es": "el sobrino / el nieto"
+          "es": "el sobrino / el nieto",
+          "audio": "unidades/u4/iloba.mp3"
         },
         {
           "eu": "loba",
-          "es": "lo mismo, en bizkaiera"
+          "es": "lo mismo, en bizkaiera",
+          "audio": "unidades/u4/loba.mp3"
         },
         {
           "eu": "biloba",
-          "es": "el nieto (sin ambigüedad)"
+          "es": "el nieto (sin ambigüedad)",
+          "audio": "unidades/u4/biloba.mp3"
         }
       ],
       "subnivel": "4.6"
@@ -272,11 +289,13 @@
       "ejemplos": [
         {
           "eu": "mutil-laguna",
-          "es": "el novio / el amigo"
+          "es": "el novio / el amigo",
+          "audio": "unidades/u4/mutil-laguna.mp3"
         },
         {
           "eu": "neska-laguna",
-          "es": "la novia / la amiga"
+          "es": "la novia / la amiga",
+          "audio": "unidades/u4/neska-laguna.mp3"
         }
       ],
       "subnivel": "4.6"
@@ -287,15 +306,18 @@
       "ejemplos": [
         {
           "eu": "Hirurogeita hamaika.",
-          "es": "Setenta y uno (60 + 11)."
+          "es": "Setenta y uno (60 + 11).",
+          "audio": "unidades/u4/hirurogeita-hamaika.mp3"
         },
         {
           "eu": "Berrogeita hamalau.",
-          "es": "Cincuenta y cuatro (40 + 14)."
+          "es": "Cincuenta y cuatro (40 + 14).",
+          "audio": "unidades/u4/berrogeita-hamalau.mp3"
         },
         {
           "eu": "Ehun eta bat.",
-          "es": "Ciento uno."
+          "es": "Ciento uno.",
+          "audio": "unidades/u4/ehun-eta-bat.mp3"
         }
       ],
       "subnivel": "4.2"
@@ -306,15 +328,18 @@
       "ejemplos": [
         {
           "eu": "Nire aitite eta nire amama.",
-          "es": "Mi abuelo y mi abuela. — en batua, «aitona» y «amona»."
+          "es": "Mi abuelo y mi abuela. — en batua, «aitona» y «amona».",
+          "audio": "unidades/u4/nire-aitite-eta-nire-amama.mp3"
         },
         {
           "eu": "Izeko bat daukat.",
-          "es": "Tengo una tía. — en batua, «izeba»."
+          "es": "Tengo una tía. — en batua, «izeba».",
+          "audio": "unidades/u4/izeko-bat-daukat.mp3"
         },
         {
           "eu": "Bi loba dodaz.",
-          "es": "Tengo dos sobrinos. — en batua, «bi iloba ditut»."
+          "es": "Tengo dos sobrinos. — en batua, «bi iloba ditut».",
+          "audio": "unidades/u4/bi-loba-dodaz.mp3"
         }
       ],
       "subnivel": "4.6",
@@ -327,19 +352,23 @@
       "ejemplos": [
         {
           "eu": "Bigarrena naiz.",
-          "es": "Soy el segundo. · Soy la segunda."
+          "es": "Soy el segundo. · Soy la segunda.",
+          "audio": "unidades/u4/bigarrena-naiz.mp3"
         },
         {
           "eu": "Hirugarren solairua.",
-          "es": "La tercera planta."
+          "es": "La tercera planta.",
+          "audio": "unidades/u4/hirugarren-solairua.mp3"
         },
         {
           "eu": "Azkena da.",
-          "es": "Es el último. · Es la última."
+          "es": "Es el último. · Es la última.",
+          "audio": "unidades/u4/azkena-da.mp3"
         },
         {
           "eu": "Lehena eta azkena.",
-          "es": "El primero y el último."
+          "es": "El primero y el último.",
+          "audio": "unidades/u4/lehena-eta-azkena.mp3"
         }
       ]
     },
@@ -350,11 +379,13 @@
       "ejemplos": [
         {
           "eu": "hirugarrena",
-          "es": "el tercero"
+          "es": "el tercero",
+          "audio": "unidades/u4/hirugarrena.mp3"
         },
         {
           "eu": "laugarrena",
-          "es": "el cuarto"
+          "es": "el cuarto",
+          "audio": "unidades/u4/laugarrena.mp3"
         }
       ]
     },
@@ -365,15 +396,18 @@
       "ejemplos": [
         {
           "eu": "Nik txakur bat daukat.",
-          "es": "Yo tengo un perro."
+          "es": "Yo tengo un perro.",
+          "audio": "unidades/u4/nik-txakur-bat-daukat.mp3"
         },
         {
           "eu": "Guk etxe bat daukagu.",
-          "es": "Nosotros tenemos una casa. · Nosotras tenemos una casa."
+          "es": "Nosotros tenemos una casa. · Nosotras tenemos una casa.",
+          "audio": "unidades/u4/guk-etxe-bat-daukagu.mp3"
         },
         {
           "eu": "Haiek bi katu dauzkate.",
-          "es": "Ellos tienen dos gatos. — con varias cosas se cuela una z: dauzkate."
+          "es": "Ellos tienen dos gatos. — con varias cosas se cuela una z: dauzkate.",
+          "audio": "unidades/u4/haiek-bi-katu-dauzkate.mp3"
         }
       ]
     },
@@ -384,11 +418,13 @@
       "ejemplos": [
         {
           "eu": "Dirua daukat.",
-          "es": "Tengo dinero."
+          "es": "Tengo dinero.",
+          "audio": "unidades/u4/dirua-daukat.mp3"
         },
         {
           "eu": "Ez daukat astirik.",
-          "es": "No tengo tiempo."
+          "es": "No tengo tiempo.",
+          "audio": "unidades/u4/ez-daukat-astirik.mp3"
         }
       ]
     }

@@ -172,11 +172,13 @@
       "ejemplos": [
         {
           "eu": "Euskal Herria",
-          "es": "el País Vasco, las siete zonas"
+          "es": "el País Vasco, las siete zonas",
+          "audio": "unidades/u1/euskal-herria.mp3"
         },
         {
           "eu": "Bizkaia",
-          "es": "Vizcaya, la de Bilbao"
+          "es": "Vizcaya, la de Bilbao",
+          "audio": "unidades/u1/bizkaia.mp3"
         }
       ]
     },
@@ -187,7 +189,8 @@
       "ejemplos": [
         {
           "eu": "euskalkia",
-          "es": "el dialecto"
+          "es": "el dialecto",
+          "audio": "unidades/u1/euskalkia.mp3"
         },
         {
           "eu": "bizkaiera",
@@ -203,11 +206,13 @@
       "ejemplos": [
         {
           "eu": "batua",
-          "es": "el euskera unificado"
+          "es": "el euskera unificado",
+          "audio": "unidades/u1/batua.mp3"
         },
         {
           "eu": "euskara batua",
-          "es": "euskera batua, el estándar"
+          "es": "euskera batua, el estándar",
+          "audio": "unidades/u1/euskara-batua.mp3"
         }
       ]
     },
@@ -218,7 +223,8 @@
       "ejemplos": [
         {
           "eu": "batua",
-          "es": "el estándar, lo que enseña la app"
+          "es": "el estándar, lo que enseña la app",
+          "audio": "unidades/u1/batua.mp3"
         },
         {
           "eu": "bizkaiera",
@@ -227,7 +233,8 @@
         },
         {
           "eu": "euskalkia",
-          "es": "un dialecto, cualquiera de ellos"
+          "es": "un dialecto, cualquiera de ellos",
+          "audio": "unidades/u1/euskalkia.mp3"
         }
       ]
     },
@@ -237,11 +244,13 @@
       "ejemplos": [
         {
           "eu": "Euskal Herria.",
-          "es": "El País Vasco — «el territorio del euskera»."
+          "es": "El País Vasco — «el territorio del euskera».",
+          "audio": "unidades/u1/euskal-herria.mp3"
         },
         {
           "eu": "Euskara.",
-          "es": "La lengua vasca."
+          "es": "La lengua vasca.",
+          "audio": "unidades/u1/euskara.mp3"
         }
       ],
       "subnivel": "1.3"
