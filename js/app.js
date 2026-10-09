@@ -30,6 +30,7 @@
   var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   var usuarioId = null;
   var usuarioEmail = '';
+  var debeCambiarClave = false;  // cuenta de invitado con la contraseña provisional
   var usuarioNombre = '';   // para el «Kaixo, …!»: sale de los metadatos de la cuenta, si los hay
 
   /* Entrar sin cuenta, SOLO en local, para poder revisar contenido sin
@@ -3455,8 +3456,9 @@
       alConfirmar: function (password) {
         if (!password || password.length < 6) { mensajeModal('Tiene que tener al menos seis caracteres.', true); return; }
         mensajeModal('Guardando…', false);
-        sb.auth.updateUser({ password: password }).then(function (r) {
+        sb.auth.updateUser({ password: password, data: { debe_cambiar_clave: false } }).then(function (r) {
           if (r.error) { mensajeModal(r.error.message, true); return; }
+          debeCambiarClave = false;
           mensajeModal('Contraseña guardada.', false);
           setTimeout(cerrarModal, 900);
         });
@@ -5072,6 +5074,8 @@
         if (enRecuperacion) {
           enRecuperacion = false;
           pantallaCuenta('Elige tu contraseña nueva para terminar de recuperar el acceso.');
+        } else if (debeCambiarClave) {
+          pantallaCuenta('Entras con una contraseña provisional. Elige la tuya ahora; si lo dejas para luego, te lo volveremos a pedir.');
         } else {
           pantallaHome();
         }
@@ -5091,6 +5095,7 @@
     if (session) {
       usuarioId = session.user.id;
       usuarioEmail = session.user.email || '';
+      debeCambiarClave = !!(session.user.user_metadata && session.user.user_metadata.debe_cambiar_clave);
       usuarioNombre = nombreDe(session.user);
       pintarCuentaLateral();
       arrancarApp();
