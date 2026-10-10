@@ -1718,8 +1718,12 @@
        100% (el color sólido) al completarla, según el ratio de avance. */
     var filas = CURSO.unidades.map(function (u) {
       var f = familia(u), pu = progresoUnidad(u);
-      var alfa = pu.completada ? 1 : 0.1 + 0.9 * pu.ratio;
-      var bg = 'rgba(' + f.raw + ',' + alfa + ')';
+      /* El fondo va del tono suave de la lección (sin empezar) al color pleno
+         (completada), mezclando los dos según el avance. Partir del suave y no
+         de un 10% del color deja las lecciones sin empezar con más color. */
+      var avance = pu.completada ? 1 : pu.ratio;
+      var cm = f.raw.split(',').map(Number), cs = f.soft.match(/\d+/g).map(Number);
+      var bg = 'rgb(' + [0, 1, 2].map(function (k) { return Math.round(cs[k] + (cm[k] - cs[k]) * avance); }).join(',') + ')';
       return '<button class="lrow" type="button" data-unidad="' + esc(u.id) + '" style="--bg:' + bg + ';--c:' + f.c + '">' +
         '<span class="lrow__n">' + esc(u.numero) + '</span>' +
         '<span class="lrow__txt"><span class="lrow__t">' + esc(u.titulo) + '</span>' +
