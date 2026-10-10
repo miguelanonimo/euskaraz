@@ -172,8 +172,22 @@ audio.
    pista y con el «por qué»: de qué piezas se forma. Esa lista sale de
    alguien que viva allí, no del curso; sería contenido nuevo (Ric o las
    betatesters).
-4. **Compartirla.** Un botón para mandar la palabra por WhatsApp, que es
-   donde nació.
+4. **Compartirla, con una tarjeta de diseño propio.** Un botón para mandar la
+   palabra por WhatsApp, que es donde nació, pero no como texto suelto sino
+   como una **imagen con diseño** (como cuando se comparte algo de Spotify):
+   la app la dibuja en el propio móvil con un `canvas`, con las tipografías,
+   los colores de la unidad y el lauburu, y la entrega con el menú nativo de
+   compartir (`navigator.share` con archivo), que abre WhatsApp o Instagram con
+   la imagen ya adjunta. En escritorio se descarga o se copia. No hace falta
+   servidor. Dos tarjetas: **«Adivina»** (la palabra grande, sin traducción y con
+   la pista; es la que engancha, como en el grupo original) y **«Solución»**
+   (con el significado y cómo se parte si es compuesta). Formato vertical
+   1080×1920 para historias y chat, y cuadrado 1080×1080; abajo,
+   «euskaraz.vercel.app». Serviría igual para compartir logros (una racha, una
+   unidad). Límites: hay que esperar a que carguen las tipografías antes de
+   dibujar, y la imagen es un archivo, no una vista previa de enlace (para eso
+   haría falta una función en Vercel; no se recomienda de entrada). Siguiente
+   paso: diseñar las dos tarjetas en Claude Design y que la app las reproduzca.
 
 **Qué cuesta.** La 1 y la 2 son pequeñas y reutilizan lo que hay. La 3 es
 trabajo de contenido, no de código. La 4 es una línea. No requiere servidor
