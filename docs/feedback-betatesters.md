@@ -182,3 +182,36 @@ ni puntos.
 **Recomendación.** Empezar por la 1 con palabras del propio curso para ver si
 engancha, y dejar la 3 como evolución si la gente la usa. Antes, conviene
 confirmar con más betatesters si les motivaría una palabra al día.
+
+---
+
+## 6. «Como en pizza» no es una referencia fiable para «ts» y «tz» — **propuesto**
+
+**Qué cuentan.** Una betatester comenta, con humor, que «pizza» es seguramente
+la palabra con más formas de pronunciarse en castellano, y que lo debatieron
+el viernes pasado cinco personas (una de Vigo, dos bizkainas…). Lo dice
+viendo la ficha de pronunciación del 1.1/1.4, donde pone «**ts y tz** — "ts",
+como en *pizza*».
+
+**Cómo lo leo.** Tiene razón: *pizza* se dice «pitsa» (la pronunciación
+italiana, la que queremos), pero también «pisa», «pidza» o «piza» (con zeta
+castellana). Justo la palabra que se usa de ejemplo para el sonido «ts» es
+una de las que más cambia según el hablante, así que no ancla el sonido; en
+muchos casos confunde. El sonido «ts» es difícil de nombrar en castellano
+precisamente porque no existe como letra.
+
+**Propuesta.** Cambiar la referencia por algo más estable y dar además una
+pista física:
+- *tsunami* (en castellano se dice casi siempre «tsunami» con el golpe «ts»),
+  o el «tz» de *Mozart*;
+- y la pista: «la t y la s pegadas, en un solo golpe de lengua, sin soltar la
+  t: como el final de *gats* en inglés».
+
+Texto posible: «**ts** y **tz** — la t y la s juntas, en un solo golpe: como
+en *tsunami*, o como el final del inglés *cats*.»
+
+**Antes de cambiarlo.** Lo ideal es que lo valide Ric o una persona nativa;
+si se acepta, es una línea del JSON (`data/unidades-v2/01-kaixo.json`, ficha
+de pronunciación, tema 1.4). El resto de la lista de la ficha («z» como la
+*s* inglesa de *see*, «x» como *show*, «tx» como *chico*) la ha leído sin
+queja.
