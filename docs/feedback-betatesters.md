@@ -215,3 +215,63 @@ si se acepta, es una línea del JSON (`data/unidades-v2/01-kaixo.json`, ficha
 de pronunciación, tema 1.4). El resto de la lista de la ficha («z» como la
 *s* inglesa de *see*, «x» como *show*, «tx» como *chico*) la ha leído sin
 queja.
+
+---
+
+## 7. «Escribe la frase»: no se entiende que hay que traducir — **propuesto**
+
+**Qué cuentan.** «Con esta instrucción pasé tiempo, no me di cuenta de que hay
+que traducir la frase. Me lo dijo Marta.» (captura: tema 1.2, ejercicio de
+escribir con la frase en castellano «Regular, gracias.»).
+
+**Cómo lo leo.** En ese ejercicio el título grande es la frase en castellano
+y la única pista de qué hay que hacer está en la etiqueta pequeña, en
+mayúsculas y gris: «ESCRIBE LA FRASE. LAS FICHAS DE ABAJO SON SOLO AYUDA.».
+No dice **en qué idioma** hay que escribir ni que es una traducción. Quien
+lee el título grande y ve fichas en euskera no sabe si hay que copiar,
+ordenar o traducir. Es el mismo problema de fondo que el punto 3 (escriben lo
+que oyen en vez de traducir): **no queda claro hacia qué idioma se va**.
+Ya han coincidido tres o cuatro personas, así que no es casual.
+
+**Ideas.**
+- Poner la dirección en el propio título del ejercicio: «Escríbelo en
+  euskera:» encima de «Regular, gracias.», o una etiqueta «ES → EU».
+- Cambiar el enunciado: «Traduce al euskera. Las fichas de abajo son solo
+  ayuda.» (la etiqueta ya existe, solo cambia el texto; se puede aplicar a
+  todos los ejercicios de escribir y de ordenar).
+- En los ejercicios de escuchar (punto 3), el equivalente: «Escribe en
+  castellano qué significa».
+- Poner el campo de escribir con un marcador «en euskera…» / «en
+  castellano…» según el caso.
+
+**Recomendación.** Tratar los puntos 3 y 7 juntos: una regla común de
+enunciados que diga siempre «de qué idioma a qué idioma». Es un cambio de
+texto en el `instruccion` de las variantes de los tipos escribir, ordenar,
+traducir y escuchar, sin tocar el código.
+
+---
+
+## 8. «Kaixo» y «agur» son los dos saludos — **propuesto**
+
+**Qué cuentan.** Un comentario con risas: en una pregunta de elegir, tanto
+«kaixo» como «agur» son saludos.
+
+**Dónde está.** En el 1.1, `u1-g02`, variante 4: «No sabes qué hora es y
+quieres saludar sin equivocarte. ¿Qué dices?» con las opciones *Egun on,
+Kaixo, Gabon, Agur*; la correcta es *Kaixo*. El problema: en castellano
+«saludar» incluye a veces el «adiós», y *agur* se oye también al encontrarse
+y en las zonas en que se usa para los dos. Quien responde *Agur* no se
+equivoca del todo, y el enunciado no deja claro que es solo al llegar.
+
+**Propuesta.** Una de dos:
+- Cambiar el enunciado: «…quieres **saludar al llegar** sin equivocarte».
+- O cambiar el distractor «Agur» por otro que sea claramente otra cosa
+  (p. ej. *Barkatu* o *Eskerrik asko*).
+Lo más limpio es hacer las dos.
+
+**Revisar también.** Otras preguntas de esa unidad que mezclan saludos y
+despedidas como si fueran categorías cerradas (`u1-g09` «¿qué despedida
+oirás con más frecuencia?» tiene *Gero arte* y *Bihar arte*, que son ambas
+despedidas válidas). Para que no pase de nuevo, una regla para quien escriba
+contenido: en una pregunta con una sola respuesta correcta, ningún
+distractor debe poder defenderse con la lectura habitual del enunciado.
