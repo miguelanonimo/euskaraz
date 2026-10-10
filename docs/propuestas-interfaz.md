@@ -1,6 +1,9 @@
 # Propuestas para la interfaz
 
-> **Estado (03/10/2026, 15:00): Miguel implementó las dos.** `2636cdf` «El
+> **Pendiente:** la 3, los colores de las unidades 10, 11 y 12 (añadida el
+> 10/10/2026, abajo del todo).
+>
+> **Estado (03/10/2026, 15:00): Miguel implementó las dos primeras.** `2636cdf` «El
 > dialecto pasa de interruptor a selector de euskalki» y `909be93` «Repasar
 > una pregunta ya contestada desde los pasos de arriba». El análisis de
 > abajo se deja como registro de por qué se hicieron así, no como pendiente.
@@ -100,3 +103,42 @@ literalmente lo que se pide: repasar sin corregir.
 El «100%» que se sale de su tarjeta en la pantalla de resultado está
 analizado y medido en `docs/ideas-ric.md`, con las cuatro salidas posibles
 y la recomendada. También sin aplicar.
+
+
+---
+
+## 3. Las unidades 10, 11 y 12 salen todas del mismo color
+
+**Pendiente.** Añadido el 10/10/2026.
+
+**Qué vio Ric.** En la pantalla de Hoy, con la pila de lecciones abierta por
+la 9: *«la unidad 10 y la 11 salen con el mismo tono, cuando todas las
+anteriores van variando»*. Lo mandó con una captura.
+
+**Por qué pasa, y no es un fallo.** Está documentado en el propio código
+(`js/app.js`, el comentario encima de `familia()`): `FAMILIAS` tiene **10
+colores para 12 lecciones**, y `familia()` recorta con
+`Math.min(numero - 1, FAMILIAS.length - 1)`. Resultado: la 10, la 11 y la
+12 reciben las tres el último color de la lista, el rosa
+`255,180,237`. El comentario ya dice que es provisional y que la salida es
+«ampliar FAMILIAS y quitar el Math.min».
+
+Esto se decidió a propósito, y bien: la alternativa de entonces era reciclar
+por módulo el rojo de la 1 y el naranja de la 2, lo que habría dado a la 10 y
+la 11 el color de lecciones que ya existen. Compartir un color nuevo entre
+las tres últimas confunde menos. Pero ahora que Ric estudia por la 9, las
+tres últimas le quedan a la vista y el patrón se nota.
+
+**Lo que falta,** entonces, no es código sino **tres colores**: los de la 10,
+la 11 y la 12, en el mismo formato que los otros diez —terna de
+`base / soft / strong` en RGB sin paréntesis—. La escala actual va del rojo al
+rosa pasando por amarillo, verde, azul y morado, así que las tres nuevas
+tendrían que seguir después del rosa sin volver al rojo del principio.
+
+Con los colores en la mano el cambio es de dos líneas: añadirlos a
+`FAMILIAS` y quitar el `Math.min` de `familia()`.
+
+**Nota.** Los campos `color` de `data/unidades-v2/*.json` (la 10 dice
+«negro», la 11 «azul») **no son los que se usan** en la interfaz nueva: son
+de la versión anterior y hoy no los lee nadie. Conviene saberlo para no
+buscar ahí el arreglo.
