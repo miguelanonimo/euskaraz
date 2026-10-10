@@ -387,3 +387,54 @@ la ficha del tema pero no como entrada de vocabulario).
 **Ligado a** el punto 9 (opción A: etiquetar en pantalla los casos que se
 decida mantener como «reto») y a la nota de `CLAUDE.md` sobre el orden del
 vocabulario, que habría que actualizar si se adopta esta regla.
+
+---
+
+## 11. «Hay play en todas las frases, pero no todas suenan» — **resuelto** (v67)
+
+**Qué cuentan.** Una betatester (captura: parejas de frases del tema 2.4)
+tiene la sensación de que no todas las frases tienen audio aunque todas
+muestran el icono de reproducir.
+
+**Qué pasaba.** Tenía razón. En «Toca las parejas» el icono de audio se pintaba
+en **todas** las palabras en euskera, con o sin mp3. Medido en todo el curso,
+**550 de las 1.688 palabras de las parejas (33 %, 217 textos distintos)** no
+tenían audio: al tocar el icono no pasaba nada. Los 715 audios que ya existían
+estaban bien (ninguno vacío ni cortado).
+
+**Qué se ha hecho.** (1) El icono solo se pinta si hay audio. (2) Se han
+generado y subido los 217 audios que faltaban. (3) `verificar.py` da error si
+una pareja no tiene audio, para que no vuelva a pasar. Detalle y lista de los
+217 textos en [`audios-parejas-sin-audio.md`](audios-parejas-sin-audio.md).
+
+---
+
+## 12. La unidad aparece con el tic aunque no está al 100 % — **propuesto**
+
+**Qué cuentan.** Si se completa el test de la unidad con un 92 %, la unidad
+se marca como completada y en el listado aparece con el tic, pero el progreso
+real no es del 100 %. Propone que pueda salir de Hoy (para seguir con la
+siguiente), pero que en el listado no lleve el tic, sino el progreso real,
+avanzado pero no al 100 %.
+
+**Qué pasa.** Hay dos cosas distintas con el mismo nombre. `completada` se
+activa al superar el test de la unidad con un 70 % o más (`js/app.js`,
+`ratio >= 0.7`). El progreso que se muestra es otra cuenta: la media de la
+mejor nota de cada tema y del test (`progresoUnidad()`). Con un test del 92 %
+y temas más bajos el progreso queda por debajo de 100, pero el listado de
+Lecciones pinta el anillo lleno y el tic en cuanto `completada` es verdadero
+(`anillo(..., { hecho: pu.completada })`).
+
+**Propuesta.**
+- Mantener `completada` como está: sirve para que Hoy avance a la siguiente
+  unidad y para el contador de «unidades completadas».
+- En el listado, pintar el tic **solo cuando el progreso real sea el 100 %**; si
+  no, el anillo con su porcentaje real (92 %) y el color de la unidad ya
+  sólido, para que se vea que está superada pero se puede mejorar.
+- El 100 % exacto exige haber sacado la nota máxima en todos los temas y en el
+  test, lo que casi nadie conseguirá. Conviene decidir si es lo que se
+  quiere (el tic sería un premio raro) o si el tic debería salir al superar
+  todos los temas y el test aunque la media no sea 100 %.
+
+**Ligado a** lo que ya anotó Ric sobre el «100 %» que se desborda de la tarjeta
+en el resultado (`docs/ideas-ric.md`).

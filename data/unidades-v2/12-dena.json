@@ -1913,5 +1913,15 @@
       ],
       "subnivel": "test"
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "asmoa",
+      "audio": "unidades/u12/asmoa.mp3"
+    },
+    {
+      "eu": "inor",
+      "audio": "unidades/u12/inor.mp3"
+    }
   ]
 }

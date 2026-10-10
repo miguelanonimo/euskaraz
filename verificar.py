@@ -159,6 +159,22 @@ nums = [u["numero"] for _, u in unidades]
 if nums != sorted(nums):
     avisos.append("las unidades no están en orden numérico: %s" % nums)
 
+# Audio que hay en todo el curso, por texto (igual que audioDePalabra en la app):
+# vocabulario, variantes, ejemplos de ficha y la lista suelta `audiosExtra`.
+def _clave_audio(t):
+    return re.sub(r"\s+", " ", re.sub(r"[¿?¡!.,;:«»\"'()]", "", (t or "").lower())).strip()
+AUDIO_POR_TEXTO = set()
+def _reg_audio(x):
+    if isinstance(x, dict) and x.get("eu") and x.get("audio"):
+        AUDIO_POR_TEXTO.add(_clave_audio(x["eu"]))
+for _r, _u in unidades:
+    for _v in _u.get("vocabulario") or []:
+        _reg_audio(_v)
+        for _x in _v.get("variantes") or []: _reg_audio(_x)
+    for _g in _u.get("gramatica") or []:
+        for _e in _g.get("ejemplos") or []: _reg_audio(_e)
+    for _e in _u.get("audiosExtra") or []: _reg_audio(_e)
+
 for ruta, u in unidades:
     # Cada tema lleva su título en euskera además del castellano (`titulo_eu`).
     for s_ in u.get("subniveles") or []:
@@ -368,6 +384,13 @@ for ruta, u in unidades:
                 clave = norm(v["pregunta"])
             elif t == "pares":
                 ps = v["pares"]
+                # Las parejas pintan un icono de audio en cada palabra en euskera:
+                # sin mp3 el icono no hacía nada. Para añadirlos:
+                # node scripts/generar-audio/completar-ejemplos.mjs --pares
+                if INDICE == CURSOS["v2"]:
+                    for _p in ps:
+                        if _clave_audio(_p.get("eu")) not in AUDIO_POR_TEXTO:
+                            errores.append(u"%s: pareja sin audio: %s" % (eid, _p.get("eu")))
                 if len(ps) != 4: avisos.append("%s: %d parejas (lo normal son 4)" % (eid, len(ps)))
                 if len(set(p["eu"] for p in ps)) != len(ps): errores.append("%s: euskera repetido en las parejas" % eid)
                 if len(set(p["es"] for p in ps)) != len(ps): errores.append("%s: castellano repetido en las parejas" % eid)

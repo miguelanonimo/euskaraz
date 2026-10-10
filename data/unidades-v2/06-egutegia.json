@@ -3518,5 +3518,87 @@
       ],
       "subnivel": "6.3"
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "otsaila",
+      "audio": "unidades/u6/otsaila.mp3"
+    },
+    {
+      "eu": "martxoa",
+      "audio": "unidades/u6/martxoa.mp3"
+    },
+    {
+      "eu": "apirila",
+      "audio": "unidades/u6/apirila.mp3"
+    },
+    {
+      "eu": "ekaina",
+      "audio": "unidades/u6/ekaina.mp3"
+    },
+    {
+      "eu": "uztaila",
+      "audio": "unidades/u6/uztaila.mp3"
+    },
+    {
+      "eu": "abuztua",
+      "audio": "unidades/u6/abuztua.mp3"
+    },
+    {
+      "eu": "iraila",
+      "audio": "unidades/u6/iraila.mp3"
+    },
+    {
+      "eu": "azaroa",
+      "audio": "unidades/u6/azaroa.mp3"
+    },
+    {
+      "eu": "urtebetetzea",
+      "audio": "unidades/u6/urtebetetzea.mp3"
+    },
+    {
+      "eu": "hilabetea",
+      "audio": "unidades/u6/hilabetea.mp3"
+    },
+    {
+      "eu": "elurra",
+      "audio": "unidades/u6/elurra.mp3"
+    },
+    {
+      "eu": "haizea",
+      "audio": "unidades/u6/haizea.mp3"
+    },
+    {
+      "eu": "hodeia",
+      "audio": "unidades/u6/hodeia.mp3"
+    },
+    {
+      "eu": "beroa",
+      "audio": "unidades/u6/beroa.mp3"
+    },
+    {
+      "eu": "eguraldia",
+      "audio": "unidades/u6/eguraldia.mp3"
+    },
+    {
+      "eu": "Urte Berri",
+      "audio": "unidades/u6/urte-berri.mp3"
+    },
+    {
+      "eu": "Inauteriak",
+      "audio": "unidades/u6/inauteriak.mp3"
+    },
+    {
+      "eu": "Aste Santua",
+      "audio": "unidades/u6/aste-santua.mp3"
+    },
+    {
+      "eu": "jaieguna",
+      "audio": "unidades/u6/jaieguna.mp3"
+    },
+    {
+      "eu": "egutegia",
+      "audio": "unidades/u6/egutegia.mp3"
+    }
   ]
 }

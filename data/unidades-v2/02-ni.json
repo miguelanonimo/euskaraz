@@ -339,6 +339,90 @@
     {
       "eu": "lagunak",
       "audio": "unidades/u4/lagunak.mp3"
+    },
+    {
+      "eu": "nire etxea",
+      "audio": "unidades/u2/nire-etxea.mp3"
+    },
+    {
+      "eu": "zure laguna",
+      "audio": "unidades/u2/zure-laguna.mp3"
+    },
+    {
+      "eu": "gure herria",
+      "audio": "unidades/u2/gure-herria.mp3"
+    },
+    {
+      "eu": "haren izena",
+      "audio": "unidades/u2/haren-izena.mp3"
+    },
+    {
+      "eu": "neure",
+      "audio": "unidades/u2/neure.mp3"
+    },
+    {
+      "eu": "zeure",
+      "audio": "unidades/u2/zeure.mp3"
+    },
+    {
+      "eu": "geure",
+      "audio": "unidades/u2/geure.mp3"
+    },
+    {
+      "eu": "nire herria",
+      "audio": "unidades/u2/nire-herria.mp3"
+    },
+    {
+      "eu": "zure izena",
+      "audio": "unidades/u2/zure-izena.mp3"
+    },
+    {
+      "eu": "gure laguna",
+      "audio": "unidades/u2/gure-laguna.mp3"
+    },
+    {
+      "eu": "haien irakaslea",
+      "audio": "unidades/u2/haien-irakaslea.mp3"
+    },
+    {
+      "eu": "nire laguna",
+      "audio": "unidades/u2/nire-laguna.mp3"
+    },
+    {
+      "eu": "gure izena",
+      "audio": "unidades/u2/gure-izena.mp3"
+    },
+    {
+      "eu": "haien ikaslea",
+      "audio": "unidades/u2/haien-ikaslea.mp3"
+    },
+    {
+      "eu": "zeuek",
+      "audio": "unidades/u2/zeuek.mp3"
+    },
+    {
+      "eu": "nirekin",
+      "audio": "unidades/u2/nirekin.mp3"
+    },
+    {
+      "eu": "zurekin",
+      "audio": "unidades/u2/zurekin.mp3"
+    },
+    {
+      "eu": "Ni ikaslea naiz.",
+      "audio": "unidades/u2/ni-ikaslea-naiz.mp3"
+    },
+    {
+      "eu": "Zu medikua zara.",
+      "audio": "unidades/u2/zu-medikua-zara.mp3"
+    },
+    {
+      "eu": "Gu lagunak gara.",
+      "audio": "unidades/u2/gu-lagunak-gara.mp3"
+    },
+    {
+      "eu": "Haiek irakasleak dira.",
+      "audio": "unidades/u2/haiek-irakasleak-dira.mp3"
     }
   ],
   "vocabulario": [

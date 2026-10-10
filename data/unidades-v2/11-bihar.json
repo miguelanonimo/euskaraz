@@ -1586,5 +1586,47 @@
       ],
       "subnivel": "test"
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "joan nintzen",
+      "audio": "unidades/u11/joan-nintzen.mp3"
+    },
+    {
+      "eu": "joaten naiz",
+      "audio": "unidades/u11/joaten-naiz.mp3"
+    },
+    {
+      "eu": "joango naiz",
+      "audio": "unidades/u11/joango-naiz.mp3"
+    },
+    {
+      "eu": "etorkizuna",
+      "audio": "unidades/u11/etorkizuna.mp3"
+    },
+    {
+      "eu": "joaten ari naiz",
+      "audio": "unidades/u11/joaten-ari-naiz.mp3"
+    },
+    {
+      "eu": "egingo dut",
+      "audio": "unidades/u11/egingo-dut.mp3"
+    },
+    {
+      "eu": "etorriko da",
+      "audio": "unidades/u11/etorriko-da.mp3"
+    },
+    {
+      "eu": "ikasiko dut",
+      "audio": "unidades/u11/ikasiko-dut.mp3"
+    },
+    {
+      "eu": "joan naiz",
+      "audio": "unidades/u11/joan-naiz.mp3"
+    },
+    {
+      "eu": "altua",
+      "audio": "unidades/u11/altua.mp3"
+    }
   ]
 }

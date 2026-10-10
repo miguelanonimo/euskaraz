@@ -215,34 +215,36 @@
 
   // ─────────── Colores por unidad ───────────
 
-  /* Cada unidad es una familia de color, en el orden del diseño: rojo,
-     naranja, amarillo, pistacho, verde, turquesa, azul, morado, lavanda,
-     rosa. A partir de la 11 se vuelve a empezar. Cada familia trae tres
-     tonos: el normal, el suave (fondos) y el fuerte (texto sobre blanco). */
+  /* Cada unidad es una familia de color: una rueda de 12 pasos que arranca en
+     el rojo de marca (elegida por Miguel el 10/10/2026, «rueda A2» de la
+     propuesta de colores: sin melocotón en la 3, con un verde franco en la 5,
+     el azul de la 8 más claro y el cian de la 7 algo menos intenso). Cada
+     familia trae tres tonos: el normal, el suave (fondos) y el fuerte (texto
+     sobre blanco); el suave es un 20% del normal sobre blanco y el fuerte
+     está calculado para llegar a 4,5:1 sobre el suave. */
   var FAMILIAS = [
     ['247,104,107', '253,224,225', '229,48,52'],
-    ['250,171,67',  '254,238,217', '221,104,0'],
-    ['240,244,36',  '253,253,222', '196,157,0'],
-    ['150,228,79',  '234,250,220', '118,197,0'],
-    ['62,214,123',  '226,248,234', '11,183,80'],
-    ['92,216,179',  '231,249,244', '16,184,134'],
-    ['64,164,250',  '217,237,254', '21,97,237'],
-    ['145,143,247', '233,233,253', '98,71,216'],
-    ['201,151,247', '244,234,253', '156,83,222'],
-    ['255,180,237', '255,240,251', '219,86,188']
+    ['255,157,101', '255,235,224', '172,81,15'],
+    ['240,244,36',  '253,253,222', '196,157,0', '182,185,16'],
+    ['147,238,127', '233,252,229', '37,129,2'],
+    ['14,233,136',  '207,251,231', '2,126,71'],
+    ['11,234,184',  '206,251,241', '8,123,96'],
+    ['82,208,214',  '220,246,247', '11,120,124'],
+    ['97,194,254',  '223,243,255', '7,116,167'],
+    ['77,140,245',  '219,232,253', '38,99,201'],
+    ['149,126,244', '234,229,253', '110,83,197'],
+    ['216,131,236', '247,230,251', '152,70,171'],
+    ['252,125,190', '254,229,242', '181,60,127']
   ];
 
-  /* FAMILIAS solo tiene 10 colores para las 12 lecciones del curso
-     nuevo. Provisional mientras no hay color para la 10, 11 y 12: en
-     vez de reciclar el rojo/naranja de la 1 y la 2 (lo que hacía el
-     módulo), las tres últimas comparten el último color — distinto a
-     cualquier otra lección, aunque repetido entre ellas. Cuando lleguen
-     los colores de verdad, basta con ampliar FAMILIAS y quitar el
-     Math.min. */
   function familia(u) {
-    var n = Math.min((u && u.numero ? u.numero : 1) - 1, FAMILIAS.length - 1);
+    var n = Math.min((u && u.numero ? u.numero : 1) - 1, FAMILIAS.length - 1);  // el tope es solo por si algún día hay más unidades que colores
     var f = FAMILIAS[n];
-    return { raw: f[0], c: 'rgb(' + f[0] + ')', soft: 'rgb(' + f[1] + ')', strong: 'rgb(' + f[2] + ')' };
+    /* `texto` (cuarto valor, opcional) es el color con el que se escribe sobre el
+       tono suave cuando el color de la unidad es demasiado claro para leerse:
+       solo el amarillo lo lleva (un poco más oscuro, mismo tono). */
+    return { raw: f[0], c: 'rgb(' + f[0] + ')', soft: 'rgb(' + f[1] + ')', strong: 'rgb(' + f[2] + ')',
+             texto: 'rgb(' + (f[3] || f[0]) + ')' };
   }
 
   /* El color de la unidad en la que estás pinta los acentos de la pantalla
@@ -1606,10 +1608,10 @@
       // Un solo tono para las dos tarjetas, el normal de la familia — sin
       // variante fuerte, que las dejaba a cada una de un color distinto.
       return '<button class="scard" type="button" id="' + id + '"' +
-        ' style="--sc:' + ft.c + ';--sc-soft:' + ft.soft + '">' +
+        ' style="--sc:' + ft.texto + ';--sc-soft:' + ft.soft + '">' +
         '<span class="scard__t">' + titulo + '</span>' +
         '<span class="scard__row"><span class="scard__v">' + valor + '</span>' +
-          anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ft.c, hecho: terminado }) + '</span>' +
+          anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ft.texto, hecho: terminado }) + '</span>' +
       '</button>';
     }
 
@@ -3815,7 +3817,9 @@
         '<div class="paircol" id="colEu">' + eus.map(function (o) {
           return '<button class="pair pair--eu" type="button" aria-pressed="false" data-i="' + o.i + '">' +
             '<span class="pair__txt">' + esc(o.txt) + '</span>' +
-            '<span class="pair__play" data-play="1" aria-label="Escuchar «' + esc(o.txt) + '»">' + icono('volume', 16) + '</span>' +
+            /* El icono solo se pinta si hay audio de verdad: antes salía en todas
+               las parejas y, si no había mp3, el toque no hacía nada. */
+            (audioDePalabra(o.txt) ? '<span class="pair__play" data-play="1" aria-label="Escuchar «' + esc(o.txt) + '»">' + icono('volume', 16) + '</span>' : '') +
           '</button>';
         }).join('') + '</div>' +
         '<div class="paircol" id="colEs">' + ess.map(function (o) {

@@ -2892,5 +2892,27 @@
         }
       ]
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "hori",
+      "audio": "unidades/u3/hori.mp3"
+    },
+    {
+      "eu": "hauek",
+      "audio": "unidades/u3/hauek.mp3"
+    },
+    {
+      "eu": "lagun hau",
+      "audio": "unidades/u3/lagun-hau.mp3"
+    },
+    {
+      "eu": "ikasle hori",
+      "audio": "unidades/u3/ikasle-hori.mp3"
+    },
+    {
+      "eu": "galdera hura",
+      "audio": "unidades/u3/galdera-hura.mp3"
+    }
   ]
 }

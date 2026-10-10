@@ -3980,5 +3980,115 @@
       ],
       "subnivel": "7.5"
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "platanoa",
+      "audio": "unidades/u7/platanoa.mp3"
+    },
+    {
+      "eu": "mahatsa",
+      "audio": "unidades/u7/mahatsa.mp3"
+    },
+    {
+      "eu": "madaria",
+      "audio": "unidades/u7/madaria.mp3"
+    },
+    {
+      "eu": "patata",
+      "audio": "unidades/u7/patata.mp3"
+    },
+    {
+      "eu": "tomatea",
+      "audio": "unidades/u7/tomatea.mp3"
+    },
+    {
+      "eu": "tipula",
+      "audio": "unidades/u7/tipula.mp3"
+    },
+    {
+      "eu": "letxuga",
+      "audio": "unidades/u7/letxuga.mp3"
+    },
+    {
+      "eu": "oilaskoa",
+      "audio": "unidades/u7/oilaskoa.mp3"
+    },
+    {
+      "eu": "arroza",
+      "audio": "unidades/u7/arroza.mp3"
+    },
+    {
+      "eu": "zukua",
+      "audio": "unidades/u7/zukua.mp3"
+    },
+    {
+      "eu": "marrubia",
+      "audio": "unidades/u7/marrubia.mp3"
+    },
+    {
+      "eu": "esnatu",
+      "audio": "unidades/u7/esnatu.mp3"
+    },
+    {
+      "eu": "jaiki",
+      "audio": "unidades/u7/jaiki.mp3"
+    },
+    {
+      "eu": "dutxatu",
+      "audio": "unidades/u7/dutxatu.mp3"
+    },
+    {
+      "eu": "jantzi",
+      "audio": "unidades/u7/jantzi.mp3"
+    },
+    {
+      "eu": "garbitu",
+      "audio": "unidades/u7/garbitu.mp3"
+    },
+    {
+      "eu": "etxeko lanak",
+      "audio": "unidades/u7/etxeko-lanak.mp3"
+    },
+    {
+      "eu": "ari naiz",
+      "audio": "unidades/u7/ari-naiz.mp3"
+    },
+    {
+      "eu": "ari zara",
+      "audio": "unidades/u7/ari-zara.mp3"
+    },
+    {
+      "eu": "ari da",
+      "audio": "unidades/u7/ari-da.mp3"
+    },
+    {
+      "eu": "ni naiz",
+      "audio": "unidades/u7/ni-naiz.mp3"
+    },
+    {
+      "eu": "arana",
+      "audio": "unidades/u7/arana.mp3"
+    },
+    {
+      "eu": "ez dut",
+      "audio": "unidades/u7/ez-dut.mp3"
+    },
+    {
+      "eu": "ez naiz",
+      "audio": "unidades/u7/ez-naiz.mp3"
+    },
+    {
+      "eu": "ari gara",
+      "audio": "unidades/u7/ari-gara.mp3"
+    },
+    {
+      "eu": "ikasten dut",
+      "audio": "unidades/u7/ikasten-dut.mp3"
+    },
+    {
+      "eu": "ikasten ari naiz",
+      "audio": "unidades/u7/ikasten-ari-naiz.mp3"
+    }
   ]
 }

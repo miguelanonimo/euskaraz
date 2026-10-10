@@ -5203,5 +5203,183 @@
       ],
       "subnivel": "4.6"
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "osaba",
+      "audio": "unidades/u4/osaba.mp3"
+    },
+    {
+      "eu": "izeba",
+      "audio": "unidades/u4/izeba.mp3"
+    },
+    {
+      "eu": "dugu",
+      "audio": "unidades/u4/dugu.mp3"
+    },
+    {
+      "eu": "dute",
+      "audio": "unidades/u4/dute.mp3"
+    },
+    {
+      "eu": "nik",
+      "audio": "unidades/u4/nik.mp3"
+    },
+    {
+      "eu": "zuk",
+      "audio": "unidades/u4/zuk.mp3"
+    },
+    {
+      "eu": "hark",
+      "audio": "unidades/u4/hark.mp3"
+    },
+    {
+      "eu": "guk",
+      "audio": "unidades/u4/guk.mp3"
+    },
+    {
+      "eu": "aitona",
+      "audio": "unidades/u4/aitona.mp3"
+    },
+    {
+      "eu": "amona",
+      "audio": "unidades/u4/amona.mp3"
+    },
+    {
+      "eu": "senarra",
+      "audio": "unidades/u4/senarra.mp3"
+    },
+    {
+      "eu": "emaztea",
+      "audio": "unidades/u4/emaztea.mp3"
+    },
+    {
+      "eu": "lehengusua",
+      "audio": "unidades/u4/lehengusua.mp3"
+    },
+    {
+      "eu": "lehengusina",
+      "audio": "unidades/u4/lehengusina.mp3"
+    },
+    {
+      "eu": "aitite",
+      "audio": "unidades/u4/aitite.mp3"
+    },
+    {
+      "eu": "amama",
+      "audio": "unidades/u4/amama.mp3"
+    },
+    {
+      "eu": "lehena",
+      "audio": "unidades/u4/lehena.mp3"
+    },
+    {
+      "eu": "bigarrena",
+      "audio": "unidades/u4/bigarrena.mp3"
+    },
+    {
+      "eu": "bosgarrena",
+      "audio": "unidades/u4/bosgarrena.mp3"
+    },
+    {
+      "eu": "azkena",
+      "audio": "unidades/u4/azkena.mp3"
+    },
+    {
+      "eu": "daukat",
+      "audio": "unidades/u4/daukat.mp3"
+    },
+    {
+      "eu": "daukazu",
+      "audio": "unidades/u4/daukazu.mp3"
+    },
+    {
+      "eu": "dauka",
+      "audio": "unidades/u4/dauka.mp3"
+    },
+    {
+      "eu": "eduki",
+      "audio": "unidades/u4/eduki.mp3"
+    },
+    {
+      "eu": "hirurogeita hamar",
+      "audio": "unidades/u4/hirurogeita-hamar.mp3"
+    },
+    {
+      "eu": "laurogei",
+      "audio": "unidades/u4/laurogei.mp3"
+    },
+    {
+      "eu": "hirurogei",
+      "audio": "unidades/u4/hirurogei.mp3"
+    },
+    {
+      "eu": "berrogeita hamar",
+      "audio": "unidades/u4/berrogeita-hamar.mp3"
+    },
+    {
+      "eu": "laurogeita hamar",
+      "audio": "unidades/u4/laurogeita-hamar.mp3"
+    },
+    {
+      "eu": "berrogei",
+      "audio": "unidades/u4/berrogei.mp3"
+    },
+    {
+      "eu": "ehun",
+      "audio": "unidades/u4/ehun.mp3"
+    },
+    {
+      "eu": "mila",
+      "audio": "unidades/u4/mila.mp3"
+    },
+    {
+      "eu": "hogeita hamar",
+      "audio": "unidades/u4/hogeita-hamar.mp3"
+    },
+    {
+      "eu": "berrogeita bi",
+      "audio": "unidades/u4/berrogeita-bi.mp3"
+    },
+    {
+      "eu": "hogeita bi",
+      "audio": "unidades/u4/hogeita-bi.mp3"
+    },
+    {
+      "eu": "hirurogeita hamasei",
+      "audio": "unidades/u4/hirurogeita-hamasei.mp3"
+    },
+    {
+      "eu": "laurogeita hamaika",
+      "audio": "unidades/u4/laurogeita-hamaika.mp3"
+    },
+    {
+      "eu": "zazpigarrena",
+      "audio": "unidades/u4/zazpigarrena.mp3"
+    },
+    {
+      "eu": "zortzigarrena",
+      "audio": "unidades/u4/zortzigarrena.mp3"
+    },
+    {
+      "eu": "hamargarrena",
+      "audio": "unidades/u4/hamargarrena.mp3"
+    },
+    {
+      "eu": "bederatzigarrena",
+      "audio": "unidades/u4/bederatzigarrena.mp3"
+    },
+    {
+      "eu": "hamaikagarrena",
+      "audio": "unidades/u4/hamaikagarrena.mp3"
+    },
+    {
+      "eu": "hamabigarrena",
+      "audio": "unidades/u4/hamabigarrena.mp3"
+    },
+    {
+      "eu": "gurasoak",
+      "audio": "unidades/u4/gurasoak.mp3"
+    }
   ]
 }

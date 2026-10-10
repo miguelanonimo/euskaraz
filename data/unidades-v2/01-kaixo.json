@@ -2556,5 +2556,55 @@
         }
       ]
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "eta",
+      "audio": "unidades/u1/eta.mp3"
+    },
+    {
+      "eu": "Gipuzkoa",
+      "audio": "unidades/u1/gipuzkoa.mp3"
+    },
+    {
+      "eu": "Araba",
+      "audio": "unidades/u1/araba.mp3"
+    },
+    {
+      "eu": "Nafarroa",
+      "audio": "unidades/u1/nafarroa.mp3"
+    },
+    {
+      "eu": "Lapurdi",
+      "audio": "unidades/u1/lapurdi.mp3"
+    },
+    {
+      "eu": "Zuberoa",
+      "audio": "unidades/u1/zuberoa.mp3"
+    },
+    {
+      "eu": "h",
+      "audio": "unidades/u1/h.mp3"
+    },
+    {
+      "eu": "tx",
+      "audio": "unidades/u1/tx.mp3"
+    },
+    {
+      "eu": "z",
+      "audio": "unidades/u1/z.mp3"
+    },
+    {
+      "eu": "rr",
+      "audio": "unidades/u1/rr.mp3"
+    },
+    {
+      "eu": "zelan",
+      "audio": "unidades/u1/zelan.mp3"
+    },
+    {
+      "eu": "holan",
+      "audio": "unidades/u1/holan.mp3"
+    }
   ]
 }
