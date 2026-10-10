@@ -1390,6 +1390,7 @@
         },
         {
           "tipo": "opcion",
+          "dial": "bizkaiera",
           "instruccion": "Elige la opción correcta",
           "pregunta": "«Nigaz» es la forma de Bizkaia para…",
           "opciones": [
@@ -1621,6 +1622,7 @@
         },
         {
           "tipo": "pares",
+          "dial": "bizkaiera",
           "instruccion": "Empareja el batua con el bizkaiera",
           "pares": [
             {
