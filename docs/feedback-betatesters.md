@@ -87,3 +87,47 @@ han oído y escrito bien.
 Recomendación para empezar: la primera (mensaje específico sin penalizar) más
 la pista en el campo; es barato y arregla el momento de frustración sin
 cambiar el ejercicio.
+
+---
+
+## 4. «Aupa» se echa de menos en la lección y luego aparece en el examen — **resuelto en parte** (v66)
+
+**Qué cuentan.** Una betatester (Bilbao) echó de menos «aupa» en la lección
+inicial y lo vio después en un ejercicio («Empareja cada saludo con su
+momento», tema 1.2). Dice que puede ser que leyera deprisa.
+
+**Qué pasa de verdad.** No es que leyera deprisa: es un fallo de la app, y
+es el primero de los dos que se sospechaban. «Aupa» es una **forma
+bizkaina** del 1.1: está en el vocabulario como variante de «kaixo» y en la
+ficha «Cómo suena esto en Bizkaia», y ambas **solo se ven si en Ajustes se
+elige Bizkaiera** (por defecto está en Batua). Pero los ejercicios no
+distinguen: dos ejercicios de la unidad 1 (`u1-g01` en el 1.1 y `u1-g04` en
+el 1.2) piden «aupa» como una palabra más, **con Batua puesto**, donde nunca
+se ha explicado. Con Bizkaiera puesto, sí aparece explicada (vocabulario del
+1.1) y el ejercicio es correcto.
+
+Otras dos preguntas de la unidad 1 y 3 («En Bizkaia oyes “Zelan zagoz?”…»)
+sí nombran el dialecto en el enunciado, así que se entienden con cualquier
+ajuste y se dejan.
+
+**Qué se ha hecho.** Un ejercicio ya puede llevar `dial: "bizkaiera"`: solo
+sale si esa persona estudia ese euskalki (`elegirVariante` en `js/app.js`);
+con Batua se saltan. Se han marcado los dos de «aupa» (`u1-g01`, variante 5,
+y `u1-g04`, variante 4). El grupo conserva sus otras variantes.
+
+**Pendiente de decidir y revisar.**
+- Un barrido automático saca ~25 ejercicios más, en las unidades 4, 5, 6, 8,
+  9 y 12, que usan palabras que solo se explican en una ficha de dialecto
+  (p. ej. «aitite», «amama», «ze ordu da», «aratusteak», «bilbora noa»,
+  «zegaitik», «ni be bai»). No se han tocado: hay que mirar uno a uno cuáles
+  son bizkainismos sin contexto (se marcan igual) y cuáles son batua con
+  una palabra que el barrido ha confundido.
+- **Ajuste por defecto:** la app está pensada para gente de Bilbao y arranca
+  en Batua. Si la mayoría de betatesters quiere ver «aupa» desde el primer
+  día, quizá el ajuste por defecto debería ser Bizkaiera, o preguntarlo al
+  entrar. Decisión de producto.
+- **Ajuste que no viaja:** el euskalki elegido se guarda solo en ese aparato
+  (`localStorage`), no en la cuenta: quien entra desde otro móvil vuelve a
+  Batua sin avisar. Convendría guardarlo con el progreso.
+- No puedo saber qué tenía puesto esa persona; si me confirma que en
+  Ajustes tenía Batua, queda explicado.

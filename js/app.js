@@ -517,8 +517,16 @@
     var opciones = [];
     vs.forEach(function (v, i) {
       if (i === previa) return;
+      /* Una variante marcada con `dial` practica una forma de un euskalki
+         (p. ej. «aupa») y solo sale si ese es el que estudia la persona;
+         con batua puesto nadie la ha visto explicada y sería un adelanto
+         sin explicación. */
+      if (v.dial && v.dial !== euskalkiActivo) return;
       var veces = v.tipo === 'escribir' ? peso : 1;
       for (var k = 0; k < veces; k++) opciones.push(i);
+    });
+    if (!opciones.length) opciones = vs.map(function (v, i) { return i; }).filter(function (i) {
+      return !vs[i].dial || vs[i].dial === euskalkiActivo;
     });
     if (!opciones.length) opciones = vs.map(function (v, i) { return i; });
     var elegida = alAzar(opciones);

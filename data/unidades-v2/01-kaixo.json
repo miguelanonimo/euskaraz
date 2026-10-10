@@ -608,6 +608,7 @@
         },
         {
           "tipo": "pares",
+          "dial": "bizkaiera",
           "instruccion": "Empareja las despedidas",
           "pares": [
             {
@@ -844,6 +845,7 @@
         },
         {
           "tipo": "pares",
+          "dial": "bizkaiera",
           "instruccion": "Empareja cada saludo con su momento",
           "pares": [
             {
