@@ -275,3 +275,57 @@ oirás con más frecuencia?» tiene *Gero arte* y *Bihar arte*, que son ambas
 despedidas válidas). Para que no pase de nuevo, una regla para quien escriba
 contenido: en una pregunta con una sola respuesta correcta, ningún
 distractor debe poder defenderse con la lectura habitual del enunciado.
+
+---
+
+## 9. «Esto no me lo explicaron antes»: preguntas de un tema que se explica en otro — **decisión previa + parte arreglada** (v66)
+
+**Qué cuentan.** Dos mensajes que dicen lo mismo: «esto no me lo explicaron
+antes» (captura: tema 2.1, «“Nigaz” es la forma de Bizkaia para… nirekin
+(conmigo)») y «algunas preguntas de un tema están asociadas a un tema
+anterior: el concepto se explica en el 2.2 pero la pregunta sale en los
+ejercicios del 2.1; me pasó 2 o 3 veces». Añade, en broma, que igual lo
+queríamos para el «challenge».
+
+**Qué hay detrás.** Son dos cosas distintas.
+
+1. **Un euskalki sin avisar (arreglado).** «Nigaz» es la forma bizkaina de
+   «nirekin». Con Batua puesto no se explica en ningún sitio y, aun así, una
+   pregunta del 2.1 y un emparejado del test final la pedían. Es el mismo fallo
+   que «aupa» (punto 4). Esas dos variantes (`u2-g09`, variante 5, y
+   `u2-g12`, variante 5) llevan ahora `dial: "bizkaiera"` y solo salen si se
+   estudia bizkaiera.
+
+2. **Preguntas con palabras de un tema posterior (decisión de diseño de Ric,
+   a discutir).** Es la queja general. El curso se diseñó así a propósito: un
+   tema puede usar en sus ejercicios palabras que el vocabulario cataloga más
+   adelante (por ejemplo, los posesivos del 2.2 se practican con *herria*,
+   *laguna* o *izena*, que son del 2.4), porque sería imposible enseñar
+   posesivos sin nombres, y el enunciado en castellano las traduce.
+   Está recogido en `CLAUDE.md` («el orden del vocabulario no se vigila»);
+   sólo se vigilan las **construcciones gramaticales** prematuras. Los
+   betatesters lo notan igual: no saben que es a propósito.
+
+   Cifras (barrido del 10/10): 91 ejercicios de 1.615 (5,6 %) usan como
+   objetivo o respuesta una palabra de un tema posterior de su unidad; en la
+   unidad 2 son 30: 21 del 2.3 con palabras del 2.4 (*ikaslea*, *medikua*,
+   *idazlea*…), 7 del 2.2 con palabras del 2.4 y 2 del 2.1 con palabras
+   del 2.2.
+
+**Opciones.**
+- **A. Etiquetarlo en pantalla (recomendada, barata).** Cuando una pregunta use
+  una palabra aún no vista, la pantalla lo dice: una etiqueta pequeña
+  «Reto: esta palabra la verás en el 2.4» (o «Aún no la hemos visto, pero
+  puedes deducirla»). Convierte el fallo en lo que era la intención
+  («challenge») y quita la sensación de injusticia. Funciona porque el
+  motor ya sabe de qué tema es cada palabra.
+- **B. Reordenar el contenido.** Mover cada grupo al tema donde se enseña su
+  vocabulario, o cambiar las palabras por otras ya vistas. Mucho trabajo y
+  algunos ejercicios dejarían de tener sentido en su sitio.
+- **C. Dejar el vocabulario compartido a la vista.** Que la ficha de cada
+  tema tenga una línea «palabras de apoyo» con las que se usan sin ser del
+  tema (*herria*, *laguna*, *izena*…) y su traducción. Es contenido.
+
+Recomendación: A para todo el curso, y revisar con Ric sólo los grupos donde
+la palabra adelantada es la respuesta correcta (no un distractor), que son
+los que más chocan.
