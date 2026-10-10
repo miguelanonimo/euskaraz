@@ -220,33 +220,32 @@
      propuesta de colores: sin melocotón en la 3, con un verde franco en la 5,
      el azul de la 8 más claro y el cian de la 7 algo menos intenso). Cada
      familia trae tres tonos: el normal, el suave (fondos) y el fuerte (texto
-     sobre blanco); el suave es un 20% del normal sobre blanco y el fuerte
-     está calculado para llegar a 4,5:1 sobre el suave. */
+     sobre blanco); el suave es un 20% del normal sobre blanco. El fuerte NO
+     cumple ya la norma estricta de 4,5:1 (se relajó el 10/10/2026): es el
+     principal oscurecido lo justo para que se lea, elegido por Miguel lección
+     por lección; en las lecciones 1, 9 y 10 es el propio principal. */
   var FAMILIAS = [
-    ['247,104,107', '253,224,225', '229,48,52'],
-    ['255,157,101', '255,235,224', '172,81,15'],
-    ['240,244,36',  '253,253,222', '211,214,26', '211,214,26'],
-    ['147,238,127', '233,252,229', '37,129,2'],
-    ['14,233,136',  '207,251,231', '2,126,71'],
-    ['11,234,184',  '206,251,241', '8,123,96'],
-    ['82,208,214',  '220,246,247', '11,120,124'],
-    ['97,194,254',  '223,243,255', '7,116,167'],
-    ['77,140,245',  '219,232,253', '38,99,201'],
-    ['149,126,244', '234,229,253', '110,83,197'],
-    ['216,131,236', '247,230,251', '152,70,171'],
-    ['252,125,190', '254,229,242', '181,60,127']
+    ['247,104,107', '253,224,225', '247,104,107'],
+    ['255,157,101', '255,235,224', '238,144,90'],
+    ['240,244,36', '253,253,222', '200,203,5'],
+    ['147,238,127', '233,252,229', '106,193,87'],
+    ['14,233,136', '207,251,231', '0,208,120'],
+    ['11,234,184', '206,251,241', '14,209,164'],
+    ['82,208,214', '220,246,247', '61,186,191'],
+    ['97,194,254', '223,243,255', '70,165,222'],
+    ['77,140,245', '219,232,253', '77,140,245'],
+    ['149,126,244', '234,229,253', '149,126,244'],
+    ['216,131,236', '247,230,251', '207,125,227'],
+    ['252,125,190', '254,229,242', '242,120,182']
   ];
 
   function familia(u) {
     var n = Math.min((u && u.numero ? u.numero : 1) - 1, FAMILIAS.length - 1);  // el tope es solo por si algún día hay más unidades que colores
     var f = FAMILIAS[n];
-    /* `texto` (cuarto valor, opcional) es el color con el que se escribe sobre el
-       tono suave cuando el color de la unidad es demasiado claro para leerse:
-       solo el amarillo lo lleva (un poco más oscuro, mismo tono). Para el amarillo
-       es el mismo valor que su tono fuerte, por decisión de Miguel (10/10/2026):
-       el #d3d61a se usa en todos los sitios donde va el amarillo fuerte. */
+    /* `texto` es el color con el que se escribe sobre el tono suave (repasos,
+       cifras, anillos): el tono fuerte de la familia, en todas las lecciones. */
     return { raw: f[0], c: 'rgb(' + f[0] + ')', soft: 'rgb(' + f[1] + ')', strong: 'rgb(' + f[2] + ')',
-             texto: 'rgb(' + (f[3] || f[0]) + ')' };
+             texto: 'rgb(' + f[2] + ')' };
   }
 
   /* El color de la unidad en la que estás pinta los acentos de la pantalla
