@@ -244,7 +244,15 @@
     var f = FAMILIAS[n];
     /* `texto` es el color con el que se escribe sobre el tono suave (repasos,
        cifras, anillos): el tono fuerte de la familia, en todas las lecciones. */
+    /* `suaveClaro` es un fondo más pálido que `soft` (un 13% del color sobre
+       blanco) para las cuatro tarjetas iguales —repaso de vocabulario, repaso
+       mezclado, media diaria y racha más larga—: con el 20% los colores muy
+       saturados (el turquesa) quedaban pesados. Las tres primeras lecciones
+       conservan su suave de siempre, que ya estaba afinado a mano. */
+    var claro = f[1];
+    if (n >= 3) claro = f[0].split(',').map(function (v) { return Math.round(255 * 0.87 + Number(v) * 0.13); }).join(',');
     return { raw: f[0], c: 'rgb(' + f[0] + ')', soft: 'rgb(' + f[1] + ')', strong: 'rgb(' + f[2] + ')',
+             suaveClaro: 'rgb(' + claro + ')',
              texto: 'rgb(' + f[2] + ')' };
   }
 
@@ -1609,7 +1617,7 @@
       // Un solo tono para las dos tarjetas, el normal de la familia — sin
       // variante fuerte, que las dejaba a cada una de un color distinto.
       return '<button class="scard" type="button" id="' + id + '"' +
-        ' style="--sc:' + ft.texto + ';--sc-soft:' + ft.soft + '">' +
+        ' style="--sc:' + ft.texto + ';--sc-soft:' + ft.suaveClaro + '">' +
         '<span class="scard__t">' + titulo + '</span>' +
         '<span class="scard__row"><span class="scard__v">' + valor + '</span>' +
           anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ft.texto, hecho: terminado }) + '</span>' +
@@ -1833,8 +1841,8 @@
           statBar(vistas, '', 'Palabras\nvistas', vistas / totalPalabras * 100, cVistas.c, cVistas.soft) +
           statBar(hechas, '/' + n, 'Unidades\ncompletadas', hechas / n * 100, cUnidades.c, cUnidades.soft) +
           '<div class="reviews">' +
-            tarjetaDato('Media\ndiaria', media, 'ejerc.', cRacha.texto, cRacha.soft) +
-            tarjetaDato('Racha\nmás larga', rachaMasLarga(), 'días', cRacha.texto, cRacha.soft) +
+            tarjetaDato('Media\ndiaria', media, 'ejerc.', cRacha.texto, cRacha.suaveClaro) +
+            tarjetaDato('Racha\nmás larga', rachaMasLarga(), 'días', cRacha.texto, cRacha.suaveClaro) +
           '</div>' +
         '</div>' +
       '</div>';
