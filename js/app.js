@@ -225,7 +225,7 @@
   var FAMILIAS = [
     ['247,104,107', '253,224,225', '229,48,52'],
     ['255,157,101', '255,235,224', '172,81,15'],
-    ['240,244,36',  '253,253,222', '196,157,0', '211,214,26'],
+    ['240,244,36',  '253,253,222', '211,214,26', '211,214,26'],
     ['147,238,127', '233,252,229', '37,129,2'],
     ['14,233,136',  '207,251,231', '2,126,71'],
     ['11,234,184',  '206,251,241', '8,123,96'],
@@ -242,7 +242,9 @@
     var f = FAMILIAS[n];
     /* `texto` (cuarto valor, opcional) es el color con el que se escribe sobre el
        tono suave cuando el color de la unidad es demasiado claro para leerse:
-       solo el amarillo lo lleva (un poco más oscuro, mismo tono). */
+       solo el amarillo lo lleva (un poco más oscuro, mismo tono). Para el amarillo
+       es el mismo valor que su tono fuerte, por decisión de Miguel (10/10/2026):
+       el #d3d61a se usa en todos los sitios donde va el amarillo fuerte. */
     return { raw: f[0], c: 'rgb(' + f[0] + ')', soft: 'rgb(' + f[1] + ')', strong: 'rgb(' + f[2] + ')',
              texto: 'rgb(' + (f[3] || f[0]) + ')' };
   }
