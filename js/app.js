@@ -1812,6 +1812,15 @@
     }).length || 1;
     var media = sem.activos ? Math.round(sem.total / sem.activos) : 0;
 
+    /* Los colores de los datos van con la lección de turno y avanzan de uno en
+       uno: aciertos, la actual; palabras vistas, la siguiente; unidades, la
+       siguiente a esa; y el bloque de media y racha, la siguiente. Al llegar a
+       la 12 se vuelve a la 1 (si la de turno es la 12, aciertos lleva el color
+       de la 12 y palabras vistas el de la 1). */
+    var iTurno = Math.max(0, CURSO.unidades.indexOf(unidadDeTurno()));
+    function colorDato(k) { return familia(CURSO.unidades[(iTurno + k) % CURSO.unidades.length]); }
+    var cAciertos = colorDato(0), cVistas = colorDato(1), cUnidades = colorDato(2), cRacha = colorDato(3);
+
     el.screens.progress.innerHTML =
       '<div class="stack">' +
         '<div class="donut" style="--arco:' + arcoCurso() + '">' +
@@ -1820,12 +1829,12 @@
         '</div>' +
         '<h1 class="pagetitle">' + esc(titulo) + '</h1>' +
         '<div class="statbars">' +
-          statBar(aciertos, '%', 'Aciertos\nsemanal', aciertos, 'rgb(62,214,123)', 'rgb(226,248,234)') +
-          statBar(vistas, '', 'Palabras\nvistas', vistas / totalPalabras * 100, 'rgb(92,216,173)', 'rgb(231,249,244)') +
-          statBar(hechas, '/' + n, 'Unidades\ncompletadas', hechas / n * 100, 'rgb(64,164,250)', 'rgb(217,237,254)') +
+          statBar(aciertos, '%', 'Aciertos\nsemanal', aciertos, cAciertos.c, cAciertos.soft) +
+          statBar(vistas, '', 'Palabras\nvistas', vistas / totalPalabras * 100, cVistas.c, cVistas.soft) +
+          statBar(hechas, '/' + n, 'Unidades\ncompletadas', hechas / n * 100, cUnidades.c, cUnidades.soft) +
           '<div class="reviews">' +
-            tarjetaDato('Media\ndiaria', media, 'ejerc.', 'rgb(134,110,241)', 'rgb(233,233,253)') +
-            tarjetaDato('Racha\nmás larga', rachaMasLarga(), 'días', 'rgb(134,110,241)', 'rgb(233,233,253)') +
+            tarjetaDato('Media\ndiaria', media, 'ejerc.', cRacha.texto, cRacha.soft) +
+            tarjetaDato('Racha\nmás larga', rachaMasLarga(), 'días', cRacha.texto, cRacha.soft) +
           '</div>' +
         '</div>' +
       '</div>';
