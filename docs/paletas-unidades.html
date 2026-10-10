@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paletas de Euskaraz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ground:#FBFAF7; --panel:#FFFFFF;
+  --ink:#1C1B19; --dim:#6E6B62; --faint:#9A978E;
+  --line:#E6E2D8; --line-soft:#F1EEE7;
+  --mark:#B4463E; --mark-soft:#FAEDEB;
+  --ok:#2F6B4F; --ok-soft:#EBF3EE;
+  --shadow:0 1px 2px rgba(28,27,25,.05), 0 10px 28px -20px rgba(28,27,25,.3);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#16171A; --panel:#1E2024;
+    --ink:#ECEAE4; --dim:#9C9A93; --faint:#6F6E68;
+    --line:#2E3136; --line-soft:#24262A;
+    --mark:#E88B82; --mark-soft:#2B1E1D;
+    --ok:#7FC6A0; --ok-soft:#1C2922;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -20px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#16171A; --panel:#1E2024;
+  --ink:#ECEAE4; --dim:#9C9A93; --faint:#6F6E68;
+  --line:#2E3136; --line-soft:#24262A;
+  --mark:#E88B82; --mark-soft:#2B1E1D;
+  --ok:#7FC6A0; --ok-soft:#1C2922;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -20px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  font-size:16px; line-height:1.56; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:740px; margin:0 auto; padding:46px 16px 86px;}
+@media (min-width:700px){ .wrap{padding:74px 32px 120px;} }
+h1{font-family:Fraunces,Georgia,serif; font-weight:700;
+   font-size:clamp(30px,7vw,46px); line-height:1.05; letter-spacing:-.02em;
+   margin:0 0 14px; text-wrap:balance;}
+h2{font-family:Fraunces,Georgia,serif; font-weight:700;
+   font-size:clamp(21px,4.4vw,27px); line-height:1.16; letter-spacing:-.012em;
+   margin:0 0 12px; text-wrap:balance;}
+p{margin:0 0 15px; max-width:62ch;}
+.lede{font-size:clamp(16px,2.4vw,18px); color:var(--dim); max-width:54ch;}
+.eyebrow{font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600;
+   letter-spacing:.14em; text-transform:uppercase; color:var(--mark); margin:0 0 14px;}
+section{margin-top:54px;}
+.rule{height:1px; background:var(--line); border:0; margin:54px 0 0;}
+code,.mono{font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums;}
+strong{font-weight:600;}
+
+/* ---- los tres papeles ---- */
+.roles{display:grid; gap:10px; margin-top:20px;}
+@media (min-width:620px){ .roles{grid-template-columns:repeat(3,1fr);} }
+.role{background:var(--panel); border:1px solid var(--line); border-radius:12px;
+      overflow:hidden; box-shadow:var(--shadow);}
+.role__demo{height:62px; display:grid; place-items:center;
+      font-weight:600; font-size:14px;}
+.role__b{padding:12px 14px 14px;}
+.role__n{font-family:"IBM Plex Mono",monospace; font-size:12px; font-weight:600;
+      color:var(--mark); letter-spacing:.03em;}
+.role__d{font-size:13.5px; color:var(--dim); line-height:1.45; margin-top:3px;}
+
+/* ---- gráfico de contraste ---- */
+.chart{background:var(--panel); border:1px solid var(--line); border-radius:13px;
+       padding:20px 16px 14px; box-shadow:var(--shadow); margin-top:20px;}
+.chart h3{font-size:13px; font-weight:600; margin:0 0 3px; letter-spacing:.01em;}
+.chart .sub{font-size:12.5px; color:var(--faint); margin:0 0 16px;}
+.bars{display:flex; flex-direction:column; gap:6px;}
+.bar{display:grid; grid-template-columns:26px 1fr 50px; align-items:center; gap:9px;}
+.bar__n{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--faint);
+        text-align:right; font-variant-numeric:tabular-nums;}
+.bar__t{height:19px; background:var(--line-soft); border-radius:5px; overflow:hidden; position:relative;}
+/* `display:block` a propósito: es un <span> dentro del carril, no un hijo
+   directo de la rejilla, así que sin esto sigue siendo inline e ignora
+   `width` y `height` — las barras salían vacías. */
+.bar__f{display:block; height:100%; border-radius:5px;}
+.bar__v{font-family:"IBM Plex Mono",monospace; font-size:11.5px;
+        font-variant-numeric:tabular-nums; text-align:right;}
+.bar__t::after{content:""; position:absolute; top:-2px; bottom:-2px; width:2px;
+        background:var(--mark); opacity:.5; left:var(--umbral,0);}
+.leg{display:flex; gap:14px; flex-wrap:wrap; margin-top:13px;
+     font-size:11.5px; color:var(--faint);}
+.leg b{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:4px;}
+
+/* ---- unidades ---- */
+.units{display:flex; flex-direction:column; gap:9px; margin-top:20px;}
+.u{background:var(--panel); border:1px solid var(--line); border-radius:12px;
+   overflow:hidden; box-shadow:var(--shadow);}
+.u--borrowed{border-style:dashed; border-color:var(--mark);}
+.u__bar{display:grid; grid-template-columns:1.1fr 1fr .9fr; height:34px;}
+.u__cell{display:grid; place-items:center; font-family:"IBM Plex Mono",monospace;
+         font-size:10px; font-weight:600; letter-spacing:.04em;}
+.u__body{display:flex; align-items:center; gap:13px; padding:11px 14px;}
+.u__n{flex:0 0 auto; width:36px; height:36px; border-radius:9px; display:grid;
+      place-items:center; font-family:Fraunces,Georgia,serif; font-weight:700;
+      font-size:16px; font-variant-numeric:tabular-nums;}
+.u__t{flex:1 1 auto; min-width:0; font-weight:600; font-size:14.5px;
+      overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.u__m{flex:0 0 auto; font-family:"IBM Plex Mono",monospace; font-size:11px;
+      color:var(--faint); text-align:right; line-height:1.45;
+      font-variant-numeric:tabular-nums;}
+.tag{display:inline-block; margin-left:6px; padding:1px 7px; border-radius:100px;
+     background:var(--mark-soft); color:var(--mark);
+     font-family:"IBM Plex Mono",monospace; font-size:9.5px; font-weight:600;
+     letter-spacing:.06em; text-transform:uppercase; vertical-align:1px;}
+@media (max-width:440px){ .u__m{font-size:10px;} }
+
+/* ---- la muestra de texto real ---- */
+.demo{background:#FFFFFF; border:1px solid var(--line); border-radius:12px;
+      padding:16px 18px; margin-top:18px; box-shadow:var(--shadow);}
+.demo p{margin:0 0 10px; font-size:17px; line-height:1.4; letter-spacing:.01em;
+        color:rgb(20,19,20); max-width:none;}
+.demo p:last-child{margin-bottom:0;}
+.demo u{text-decoration:none; font-weight:700;}
+.demo .lc{font-family:"IBM Plex Mono",monospace; font-size:11px; color:#6E6B62;
+          font-variant-numeric:tabular-nums;}
+
+/* ---- aviso ---- */
+.note{border-left:3px solid var(--mark); background:var(--mark-soft);
+      border-radius:0 10px 10px 0; padding:15px 17px; margin-top:20px;}
+.note p{margin:0; font-size:14.5px; color:var(--ink);}
+.note p + p{margin-top:9px;}
+.note--ok{border-left-color:var(--ok); background:var(--ok-soft);}
+
+pre{background:var(--panel); border:1px solid var(--line); border-radius:11px;
+    padding:15px 16px; overflow-x:auto; margin:16px 0 0;
+    font-family:"IBM Plex Mono",monospace; font-size:12.5px; line-height:1.7;
+    box-shadow:var(--shadow);}
+pre .c{color:var(--faint);} pre .hl{color:var(--mark); font-weight:600;}
+ul{margin:0 0 15px; padding-left:20px; max-width:62ch;}
+li{margin-bottom:7px;}
+.foot{margin-top:48px; font-size:13px; color:var(--faint); max-width:60ch;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">Euskaraz · interfaz</p>
+  <h1>Paletas de las unidades</h1>
+  <p class="lede">Cómo funciona el sistema de color que hay en el código, qué
+  hace falta para añadir las dos unidades que faltan, y por qué medirlo con la
+  herramienta de siempre da un resultado falso.</p>
+
+  <section>
+    <h2>Tres papeles, no tres tonos</h2>
+    <p>Cada unidad tiene tres colores, y cada uno hace un trabajo distinto.
+    No son «el color y dos variantes»: son tres piezas con requisitos
+    propios.</p>
+    <div class="roles" id="roles"></div>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>El sistema está afinado</h2>
+    <p>Los diez tonos no están repartidos a intervalos iguales, y tampoco
+    comparten saturación ni luminosidad: la saturación va de <strong>61 a
+    100</strong> y la luminosidad de <strong>54 a 85</strong>. Cada color
+    tiene las suyas.</p>
+    <p>Eso no es desorden, es lo que hace que el sistema funcione. Un barrido
+    de tonos con la misma luminosidad da azules demasiado oscuros y amarillos
+    demasiado claros, y el texto deja de leerse en unos cuantos. Aquí no pasa:</p>
+
+    <div class="chart">
+      <h3>Tinta oscura sobre el color de fondo</h3>
+      <p class="sub">Es el uso principal — tarjetas, botones, píldoras. Diez
+      reglas del CSS.</p>
+      <div class="bars" id="barsA"></div>
+      <div class="leg">
+        <span><b style="background:var(--ok)"></b>pasa AA (4.5)</span>
+        <span>la marca vertical es el umbral</span>
+      </div>
+    </div>
+
+    <div class="note note--ok">
+      <p><strong>Las diez pasan, de 6,31 a 15,60.</strong> La peor está casi un
+      40&nbsp;% por encima del mínimo. Para conseguir eso con tonos tan
+      distintos como el amarillo y el azul hay que mover la luminosidad de cada
+      uno a mano — que es exactamente lo que está hecho.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>El tercer color, y por qué los números engañan</h2>
+    <p>El color oscuro se usa como <strong>texto sobre el fondo blanco de la
+    app</strong>:
+    el número de la cabecera, el título de la lección en curso, y las palabras
+    destacadas dentro de las explicaciones (18&nbsp;px, peso 700).</p>
+
+    <p>Medido con el contraste clásico de WCAG&nbsp;2.1, los diez suspenden
+    menos dos, y el verde de la unidad 4 marca 2,15 — una nota de «ilegible».
+    Pero basta con mirarlo para ver que no lo es:</p>
+
+    <div class="demo" id="demo"></div>
+
+    <div class="note">
+      <p><strong>El número está mal, no el color.</strong> El contraste de
+      WCAG&nbsp;2.1 solo mide <em>luminancia</em> e ignora por completo la
+      diferencia de tono. En esa fórmula el verde pesa un 71&nbsp;%, así que
+      cualquier verde saturado saca una nota pésima aunque se distinga
+      perfectamente del fondo. Es una limitación conocida, y es la razón de que
+      WCAG&nbsp;3 esté cambiando a otro modelo, APCA, que sí tiene en cuenta
+      cómo funciona la vista.</p>
+    </div>
+
+    <div class="chart">
+      <h3>Las dos métricas, lado a lado</h3>
+      <p class="sub">Barra clara: WCAG 2.1 (sobre 7). Barra oscura: APCA, en
+      Lc (sobre 100). A 18&nbsp;px y peso 700, APCA pide del orden de Lc 60
+      para lectura cómoda y 45 para una palabra destacada.</p>
+      <div class="bars" id="barsB"></div>
+      <div class="leg">
+        <span><b style="background:var(--dim)"></b>WCAG 2.1</span>
+        <span><b style="background:var(--ok)"></b>APCA ≥ 45</span>
+        <span><b style="background:var(--mark)"></b>APCA &lt; 45</span>
+      </div>
+    </div>
+
+    <p>Con el modelo bueno la imagen se da la vuelta: <strong>nueve de los diez
+    pasan</strong>, y varios con holgura. El único que se queda corto es el
+    verde de la unidad 4, en 42 frente a un listón de 45 — tres puntos, que a
+    la vista no se notan.</p>
+    <p>Dicho de otro modo: <strong>la paleta está bien</strong>. Lo que estaba
+    mal era la forma de medirla. Y eso es lo que conviene saber
+    <strong>antes de elegir los colores nuevos</strong>, porque si se juzgan
+    con el contraste clásico se descartarán verdes y amarillos perfectamente
+    válidos.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>Las doce unidades</h2>
+    <p>Las dos últimas aparecen con el color de la 10 porque la lista solo
+    tiene diez entradas y la función recorta al último.</p>
+    <div class="units" id="units"></div>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <h2>Qué hace falta para la 11 y la 12</h2>
+    <p>No es «buscar dos huecos libres en la rueda». Es dar dos conjuntos de
+    tres que cumplan lo que cumplen los otros diez:</p>
+    <ul>
+      <li>un <strong>fondo</strong> claro, con la tinta oscura encima por encima
+      de 6:1 — es el listón que marcan los diez actuales;</li>
+      <li>un <strong>fondo suave</strong> casi blanco, en la misma familia;</li>
+      <li>un <strong>oscuro</strong> que se lea sobre el blanco. Medido con APCA,
+      no con el contraste clásico: el clásico castiga a los verdes y amarillos
+      sin motivo.</li>
+    </ul>
+    <p>El sitio donde entran está entre el rosa de la 10 y el rojo de la 1, que
+    es el tramo que queda sin usar. Dos magentas y un vino irían ahí sin chocar
+    con nada — pero esa es una decisión de Miguel, y la escala no es tan
+    regular como para deducirla con una fórmula.</p>
+    <pre><span class="c">// js/app.js — var FAMILIAS = [ … ]   y quitar el Math.min de familia()</span>
+<span class="c">//              fondo           suave            oscuro</span>
+  ['255,180,237', '255,240,251', '219,86,188'],  <span class="c">// 10</span>
+<span class="hl">  ['···,···,···', '···,···,···', '···,···,···'],  // 11</span>
+<span class="hl">  ['···,···,···', '···,···,···', '···,···,···']   // 12</span>
+];</pre>
+  </section>
+
+  <p class="foot">Medido sobre <code>js/app.js</code> y <code>css/styles.css</code>
+  en <code>main</code>. Contrastes en WCAG 2.1, con el fondo real de la app
+  (<code>rgb(255,255,255)</code>, de <code>body</code>) y su tinta
+  (<code>rgb(20,19,20)</code>). Los
+  campos <code>color</code> de los JSON de unidad son de la versión anterior y
+  hoy no los lee nadie.</p>
+
+</div>
+
+<script>
+const U=["Kaixo!","Ni eta zu","Galderak","Zenbat eta familia","Etxea","Egutegia",
+         "Zer egiten duzu?","Mugi zaitez!","Gustatzen zait","Atzo","Bihar","Dena batera"];
+const FAM=[['247,104,107','253,224,225','229,48,52'],['250,171,67','254,238,217','221,104,0'],
+           ['240,244,36','253,253,222','196,157,0'],['150,228,79','234,250,220','118,197,0'],
+           ['62,214,123','226,248,234','11,183,80'],['92,216,179','231,249,244','16,184,134'],
+           ['64,164,250','217,237,254','21,97,237'],['145,143,247','233,233,253','98,71,216'],
+           ['201,151,247','244,234,253','156,83,222'],['255,180,237','255,240,251','219,86,188']];
+/* El fondo real de la app es blanco: `body{ background: var(--white) }`.
+   --cream existe, pero solo para estados al pasar el ratón. */
+const PAG='255,255,255', INK='20,19,20';
+const rgb=t=>'rgb('+t+')';
+const hex=t=>'#'+t.split(',').map(x=>(+x).toString(16).padStart(2,'0')).join('').toUpperCase();
+const lin=c=>c<=.04045?c/12.92:Math.pow((c+.055)/1.055,2.4);
+const lum=t=>{const[r,g,b]=t.split(',').map(x=>lin(+x/255));return .2126*r+.7152*g+.0722*b;};
+const ct=(a,b)=>{const l=[lum(a),lum(b)].sort((x,y)=>y-x);return (l[0]+.05)/(l[1]+.05);};
+
+/* los tres papeles */
+const f0=FAM[7];
+document.getElementById('roles').innerHTML=[
+ ['base','fondo','Tarjetas, botones y píldoras. Lleva la tinta oscura encima.',
+  `background:${rgb(f0[0])};color:${rgb(INK)}`,'Texto encima'],
+ ['soft','fondo suave','Zonas tranquilas: el bloque de escuchar, filas al pasar el ratón.',
+  `background:${rgb(f0[1])};color:${rgb(INK)}`,'Texto encima'],
+ ['strong','oscuro','Color de texto sobre el fondo de página. El más exigente.',
+  `background:${rgb(PAG)};color:${rgb(f0[2])}`,'Texto en color']
+].map(([k,n,d,st,lab])=>`<div class="role">
+   <div class="role__demo" style="${st}">${lab}</div>
+   <div class="role__b"><div class="role__n">${k} · ${n}</div><div class="role__d">${d}</div></div>
+ </div>`).join('');
+
+/* barras */
+function barras(id, vals, umbral, max){
+  document.getElementById(id).innerHTML = vals.map((v,i)=>{
+    const pasa = v >= umbral;
+    const col = pasa ? 'var(--ok)' : 'var(--mark)';
+    return `<div class="bar">
+      <span class="bar__n">${i+1}</span>
+      <span class="bar__t" style="--umbral:${(umbral/max*100).toFixed(1)}%">
+        <span class="bar__f" style="width:${Math.min(100,v/max*100).toFixed(1)}%;background:${col}"></span>
+      </span>
+      <span class="bar__v" style="color:${col}">${v.toFixed(2)}</span>
+    </div>`;}).join('');
+}
+barras('barsA', FAM.map(f=>ct(INK,f[0])), 4.5, 16);
+
+/* APCA 0.1.9 — el modelo perceptual con el que WCAG 3 sustituye al de arriba.
+   A diferencia del clásico, no es solo luminancia. */
+const Yv=t=>{const[r,g,b]=t.split(',').map(v=>Math.pow(+v/255,2.4));
+             return .2126729*r+.7151522*g+.0721750*b;};
+function apca(txt,bg){
+  let t=Yv(txt), B=Yv(bg); const k=.022, e=1.414;
+  t = t>k ? t : t+Math.pow(k-t,e);
+  B = B>k ? B : B+Math.pow(k-B,e);
+  if(Math.abs(B-t)<.0005) return 0;
+  let S,o;
+  if(B>t){ S=(Math.pow(B,.56)-Math.pow(t,.57))*1.14; o=S<.1?0:S-.027; }
+  else   { S=(Math.pow(B,.65)-Math.pow(t,.62))*1.14; o=S>-.1?0:S+.027; }
+  return Math.abs(o*100);
+}
+const LC = FAM.map(f=>apca(f[2],PAG));
+const WC = FAM.map(f=>ct(f[2],PAG));
+
+/* las dos métricas en la misma fila, para que se vea el desacuerdo */
+document.getElementById('barsB').innerHTML = LC.map((lc,i)=>{
+  const col = lc>=45 ? 'var(--ok)' : 'var(--mark)';
+  return `<div class="bar">
+    <span class="bar__n">${i+1}</span>
+    <span class="bar__t" style="--umbral:${(45/100*100).toFixed(1)}%">
+      <span class="bar__f" style="width:${(WC[i]/7*100).toFixed(1)}%;background:var(--dim);opacity:.28"></span>
+      <span class="bar__f" style="width:${Math.min(100,lc).toFixed(1)}%;background:${col};margin-top:-19px;height:9px;border-radius:0 5px 5px 0"></span>
+    </span>
+    <span class="bar__v" style="color:${col}">${lc.toFixed(0)}</span>
+  </div>`;}).join('');
+
+/* la muestra con el texto real */
+const TT=["Kaixo","Ni eta zu","Galderak","Zenbat","Etxea","Egutegia","Zer egiten","Mugi","Gustatzen","Atzo"];
+document.getElementById('demo').innerHTML = FAM.map((f,i)=>
+  `<p>${i+1}. la palabra <u style="color:${rgb(f[2])}">${TT[i]}</u> va destacada.
+   <span class="lc">WCAG ${WC[i].toFixed(2)} · APCA ${LC[i].toFixed(0)}</span></p>`).join('');
+
+/* unidades */
+document.getElementById('units').innerHTML = U.map((t,i)=>{
+  const j=Math.min(i,FAM.length-1), f=FAM[j], pres=i>=FAM.length;
+  const cA=ct(INK,f[0]).toFixed(2), cB=apca(f[2],PAG).toFixed(0);
+  return `<article class="u${pres?' u--borrowed':''}">
+    <div class="u__bar">
+      <span class="u__cell" style="background:${rgb(f[0])};color:${rgb(INK)}">${hex(f[0])}</span>
+      <span class="u__cell" style="background:${rgb(f[1])};color:${rgb(INK)}">${hex(f[1])}</span>
+      <span class="u__cell" style="background:${rgb(f[2])};color:#fff">${hex(f[2])}</span>
+    </div>
+    <div class="u__body">
+      <span class="u__n" style="background:${rgb(f[1])};color:${rgb(f[2])}">${i+1}</span>
+      <span class="u__t">${t}${pres?'<span class="tag">prestado</span>':''}</span>
+      <span class="u__m">tinta/fondo ${cA}<br>texto APCA ${cB}</span>
+    </div>
+  </article>`;}).join('');
+</script>
+</body>
+</html>
