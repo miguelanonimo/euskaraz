@@ -131,3 +131,54 @@ y `u1-g04`, variante 4). El grupo conserva sus otras variantes.
   Batua sin avisar. Convendría guardarlo con el progreso.
 - No puedo saber qué tenía puesto esa persona; si me confirma que en
   Ajustes tenía Batua, queda explicado.
+
+---
+
+## 5. Idea: «Gaurko hitza» (la palabra del día) — **idea, sin decidir**
+
+**Qué cuentan.** Una betatester, que lleva tiempo estudiando, propone una
+dinámica que a ella le motivó mucho. Al llegar al País Vasco, un compañero de
+baile le preguntaba cada jueves la *gaurko hitza*; a ella le pareció poco y en
+su trabajo montaron un grupo de WhatsApp (una compañera con el C2 puso cinco
+palabras a la semana): cada día una palabra suelta vista en el autobús o en
+las noticias, **sin traducción**, y había que adivinar qué significaba, a
+veces con una pista. Lo bueno, dice, era pasarse el día dándole vueltas,
+analizar palabras compuestas o usar el sentido común, y luego fijarse en los
+carteles. Ejemplo: *norabide guztiak*, con la pista «grupo de música»
+(One Direction); salió cuando alguien recordó que *norabide* sale en los
+carteles de Bilbao para indicar direcciones. Propone un modo «gaurko hitza»
+con una palabra al azar y varias opciones de significado, con puntos o sin
+ellos (sabe que la app no tiene sistema de puntos).
+
+**Cómo lo leo.** Lo valioso no son las opciones: es la **adivinanza con
+tiempo** (pensarlo todo el día) y el **vínculo con la calle** (ver la palabra
+en un cartel y reconocerla). Esas dos cosas son lo que enganchaba, y encajan
+con lo que ya tiene la app: Hoy, el recordatorio diario y el diccionario con
+audio.
+
+**Cómo se podría hacer (de menos a más).**
+1. **Versión barata.** Una tarjeta «Gaurko hitza» en Hoy con una palabra al
+   día, la misma para todos (se elige por la fecha, sin servidor), sacada del
+   vocabulario del curso. Se muestra la palabra con su audio, la persona
+   toca para adivinar entre 3 opciones y después se revela el significado
+   con su nota y, si es compuesta, cómo se parte. Sin puntos; solo cuenta
+   para la racha si se quiere.
+2. **Con el recordatorio.** El aviso (ya construido, apagado hasta poner la
+   clave VAPID) podría llevar la palabra del día como gancho en vez de un
+   texto genérico: «Gaurko hitza: norabide. ¿Qué crees que significa?».
+3. **La versión de verdad: palabras de la calle.** Una lista aparte, curada,
+   de las palabras que se ven en carteles, autobús y tiendas (*irteera*,
+   *sarrera*, *norabide*, *ireki*, *itxi*, *kaixo*…), cada una con una
+   pista y con el «por qué»: de qué piezas se forma. Esa lista sale de
+   alguien que viva allí, no del curso; sería contenido nuevo (Ric o las
+   betatesters).
+4. **Compartirla.** Un botón para mandar la palabra por WhatsApp, que es
+   donde nació.
+
+**Qué cuesta.** La 1 y la 2 son pequeñas y reutilizan lo que hay. La 3 es
+trabajo de contenido, no de código. La 4 es una línea. No requiere servidor
+ni puntos.
+
+**Recomendación.** Empezar por la 1 con palabras del propio curso para ver si
+engancha, y dejar la 3 como evolución si la gente la usa. Antes, conviene
+confirmar con más betatesters si les motivaría una palabra al día.
