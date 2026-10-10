@@ -329,3 +329,47 @@ queríamos para el «challenge».
 Recomendación: A para todo el curso, y revisar con Ric sólo los grupos donde
 la palabra adelantada es la respuesta correcta (no un distractor), que son
 los que más chocan.
+
+---
+
+## 10. Regla nueva: lo que no se ha enseñado solo puede ser distractor — **auditado, por arreglar**
+
+**Qué se pide.** Respuesta de Miguel al punto 9: las palabras de un tema
+posterior pueden salir en un ejercicio, pero **solo como opción incorrecta
+(distractor)**; nunca como lo que se pregunta ni como la respuesta correcta.
+No se puede preguntar por una palabra que la persona aún no ha aprendido.
+
+**Qué hemos medido.** 89 de las 1.615 variantes de ejercicio por tema (5,5 %)
+incumplen la regla: piden como objetivo o respuesta una palabra que se
+enseña en un tema posterior. Detalle completo, variante a variante, en
+[`auditoria-palabras-no-vistas.md`](auditoria-palabras-no-vistas.md).
+
+| Unidad | U1 | U2 | U3 | U4 | U5 | U6 | U7 | U8 | U9 | U10 | U11 | U12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Variantes | 5 | 24 | 14 | 13 | 8 | 2 | 3 | 8 | 8 | 1 | 2 | 1 |
+
+La unidad 2 concentra casi un tercio: los posesivos del 2.2 se practican con
+*laguna*, *herri* y *berria* (que se enseñan en el 2.4 y el 5.3), y las
+profesiones del 2.3 con *lagunak*, *ere* e *idazlea* (2.4).
+
+**Cómo se mide.** «Enseñada» = aparece en el vocabulario del tema o en un
+ejemplo de ficha de ese tema o anterior. «Objetivo o respuesta» = lo que va
+entre «» en la pregunta, la opción correcta, el lado euskera de las parejas
+y las fichas de ordenar, escribir y traducir. El test final queda fuera
+(mezcla todo el curso). Es un barrido por palabras sueltas, no una revisión
+humana: hay falsos positivos (*lo*, *al*, *ere*, y palabras que sí están en
+la ficha del tema pero no como entrada de vocabulario).
+
+**Cómo arreglarlo.**
+1. Revisar a mano cada fila y confirmar cuáles son reales.
+2. En cada variante real, sustituir la palabra no vista por una ya enseñada
+   (o, si la palabra es el objetivo del ejercicio, mover la variante a un
+   tema posterior). Son cambios de contenido en euskera: conviene que los
+   valide Ric o una persona nativa, según `GRAMATIKA.md`.
+3. Empezar por las unidades 2 y 3 (38 de las 89).
+4. Añadir a `verificar.py` una comprobación que cuente estos casos y falle si
+   se introduce uno nuevo, para que no vuelva.
+
+**Ligado a** el punto 9 (opción A: etiquetar en pantalla los casos que se
+decida mantener como «reto») y a la nota de `CLAUDE.md` sobre el orden del
+vocabulario, que habría que actualizar si se adopta esta regla.
