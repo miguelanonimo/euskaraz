@@ -73,14 +73,22 @@
           "eu": "etxe polita",
           "es": "casa bonita",
           "audio": "unidades/u1/etxe-polita.mp3"
-        },
-        {
-          "eu": "kale zaharra",
-          "es": "calle vieja",
-          "audio": "unidades/u1/kale-zaharra.mp3"
         }
       ],
       "subnivel": "1.1"
+    },
+    {
+      "titulo": "«Aupa!», el saludo de la calle",
+      "cuerpo": "<b>Kaixo</b> sirve en todas partes y nunca desentona. Pero en la calle, entre gente que se conoce, se usan saludos informales que cambian según la zona.\n\nEn Bizkaia el más habitual con diferencia es <b>aupa</b>. Lo vas a oír enseguida, y entre conocidos mucho más que <i>kaixo</i>.\n\nEn otras zonas se oyen <b>epa</b> o <b>iepa</b>, que valen para lo mismo.\n\nNo hay que elegir: con <i>kaixo</i> siempre aciertas. Pero conviene reconocerlos, porque te los van a decir.",
+      "ejemplos": [
+        {
+          "eu": "Aupa!",
+          "es": "¡Hola! (informal, muy de Bizkaia)",
+          "audio": "unidades/u1/aupa.mp3"
+        }
+      ],
+      "subnivel": "1.1",
+      "registro": "bizkaiera"
     },
     {
       "titulo": "«Zer moduz?» y toda la escala de respuestas",
@@ -127,6 +135,11 @@
           "eu": "jaso",
           "es": "recoger → suena «yaso»",
           "audio": "unidades/u1/jaso.mp3"
+        },
+        {
+          "eu": "mahaia",
+          "es": "la mesa → suena «maaia»",
+          "audio": "unidades/u6/mahaia.mp3"
         },
         {
           "eu": "gela",
@@ -682,7 +695,7 @@
             "Egun on",
             "Kaixo",
             "Gabon",
-            "Agur"
+            "Ikusi arte"
           ],
           "correcta": 1,
           "explicacion": "«Kaixo» sirve a cualquier hora del día."
@@ -977,7 +990,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Muy bien, muchas gracias.",
           "eu": "Oso ondo, eskerrik asko.",
           "palabras": [
@@ -1315,7 +1328,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Regular, gracias.",
           "eu": "Hala-hola, eskerrik asko.",
           "palabras": [
@@ -1440,15 +1453,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Kale zaharra» significa…",
+          "pregunta": "«Gero arte» e «ikusi arte» significan las dos…",
           "opciones": [
-            "Vieja calle",
-            "Calle vieja",
-            "La calle es vieja",
-            "Calle nueva"
+            "Hasta luego",
+            "Hasta mañana",
+            "Buenas tardes",
+            "Adiós para siempre"
           ],
-          "correcta": 1,
-          "explicacion": "Sustantivo primero, adjetivo después. Como en «Parte Zaharra»."
+          "correcta": 0,
+          "explicacion": "Las dos acaban en «arte» (hasta): «ikusi arte» es «hasta vernos» y «gero arte», «hasta después»."
         }
       ],
       "subnivel": "test"

@@ -1269,7 +1269,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "¿Cómo te llamas?",
           "eu": "Nola duzu izena?",
           "palabras": [
@@ -2575,7 +2575,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Este amigo es profesor.",
           "eu": "lagun hau irakaslea da",
           "palabras": [
