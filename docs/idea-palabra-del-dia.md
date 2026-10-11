@@ -4,6 +4,19 @@ Pedido por Miguel el 11/10/2026 tras la idea de una betatester y los comentarios
 `docs/feedback-betatesters.md`). **Solo lógica y diseño: no hay nada implementado.** Propuestas de diseño en el
 artefacto «Palabra del día».
 
+## Decisiones cerradas (11/10/2026, tras ver las tres propuestas)
+
+Elegida la **propuesta A («Carta que gira»)**, con estos ajustes:
+
+- **Pistas en el anverso.** Bajo la palabra, 2 o 3 pistas sobre su construcción y contexto («dos palabras pegadas», «la verás en los carteles»…), para pensar antes de girar. Cada palabra de la lista lleva las suyas.
+- **Explicación en rojo.** El dorso conserva el rojo de marca: la traducción en blanco y las piezas en tarjetas blancas.
+- **Se añade al diccionario por defecto**, sin acción ni aviso (nada de «añadir al diccionario» ni de «añadida»).
+- **En el Diccionario no sale de ninguna manera especial**: ni etiqueta ni filtro; es una entrada más, solo sin el indicador de lección.
+- **Cómo volver a ella.** Un **icono a la izquierda del de usuario**, en la cabecera de Hoy, que abre siempre la palabra de hoy. Lleva un punto rojo hasta que se ve. Las anteriores se recuperan buscándolas en el Diccionario.
+- Sigue siendo una tarjeta a toda la altura que se gira al tocarla.
+
+Maqueta: artefacto «Palabra del día» (propuesta A ajustada). Sigue sin haber nada implementado.
+
 ## Qué es
 
 Una tarjeta que ofrece una palabra cada día. Al tocarla se **gira** y enseña su traducción y, si la hay, información
@@ -16,7 +29,7 @@ Cada palabra que se va viendo **se añade al diccionario**, y hay un sitio donde
 2. **Girar = tocarla.** Una vez girada se puede volver a girar (la cara de la palabra sigue disponible).
 3. **Se guarda al verla.** La palabra entra en el diccionario como «palabra del día» cuando se ve; se propone que cuente
    como vista al **girar** la tarjeta (ver la palabra sin girarla no basta).
-4. **Hay un sitio para volver a verla.** Cada palabra del día ya vista se puede reabrir (mismo formato de tarjeta).
+4. **Hay un sitio para volver a verla.** La de hoy, desde el icono de Hoy; las anteriores, desde el Diccionario (ver «Decisiones cerradas»).
 5. **Sin puntos.** No suma puntos, ni siquiera racha (a decidir si cuenta como actividad del día).
 
 ## Decisiones que quedan abiertas (con la recomendación)
