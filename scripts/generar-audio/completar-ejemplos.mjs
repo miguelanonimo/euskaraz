@@ -17,8 +17,10 @@ const PROJECT_ID = 'project-47fac5f5-2320-4893-9eb';
 const VOICE = { languageCode: 'eu-ES', name: 'Kore', modelName: 'gemini-2.5-flash-tts' };
 const BASE_PROMPT = 'Say this Basque word or phrase at a natural, normal conversational pace, clear pronunciation, not slow or exaggerated. ';
 const NOTA_Z = 'The letter z must be a clear sibilant s sound (like the s in English "see"), never a Spanish z sound.';
+const NOTA_G = 'The letter g is always a hard voiced g, exactly like the g in Spanish "gato" or "gana" — never a d, never a j.';
 const SUPA = 'https://jdijrqkzhohpzdwlsyvg.supabase.co';
 const SECO = process.argv.includes('--seco');
+const PARES = process.argv.includes('--pares');   // en vez de los ejemplos de ficha: los textos de «Toca las parejas» sin audio
 
 const AQUI = path.dirname(fileURLToPath(import.meta.url));
 const DATA = path.resolve(AQUI, '..', '..', 'data', 'unidades-v2');
@@ -38,7 +40,7 @@ async function sintetizar(authClient, texto, intento = 1) {
     method: 'POST',
     headers: { Authorization: 'Bearer ' + token, 'x-goog-user-project': PROJECT_ID, 'Content-Type': 'application/json; charset=utf-8' },
     body: JSON.stringify({
-      input: { prompt: BASE_PROMPT + (/z/i.test(texto) ? NOTA_Z : ''), text: texto },
+      input: { prompt: BASE_PROMPT + (/z/i.test(texto) ? NOTA_Z : '') + (/g/i.test(texto) ? ' ' + NOTA_G : ''), text: texto },
       voice: VOICE, audioConfig: { audioEncoding: 'MP3' },
     }),
   });
@@ -73,7 +75,22 @@ for (const { d } of unidades) {
   (d.audiosExtra || []).forEach(reg);
 }
 
-const pendientes = []; // { unidad, ejemplo, ruta }
+const pendientes = []; // { d, e, ruta, nuevo, extra }
+if (PARES) {
+  // Textos euskera de las parejas que no tienen audio en ninguna parte del curso.
+  for (const { d } of unidades) {
+    for (const g of d.ejercicios || []) for (const v of g.variantes || []) {
+      if (v.tipo !== 'pares') continue;
+      for (const par of v.pares) {
+        const clave = normalizar(par.eu);
+        if (!clave || porTexto.has(clave)) continue;
+        const ruta = `unidades/${d.id}/${claveArchivo(par.eu)}.mp3`;
+        porTexto.set(clave, ruta);
+        pendientes.push({ d, e: { eu: par.eu }, ruta, nuevo: true, extra: true });
+      }
+    }
+  }
+} else {
 for (const { d } of unidades) {
   for (const g of d.gramatica || []) for (const e of g.ejemplos || []) {
     if (e.audio) continue;
@@ -83,6 +100,7 @@ for (const { d } of unidades) {
     porTexto.set(normalizar(e.eu), ruta);
     pendientes.push({ d, e, ruta, nuevo: true });
   }
+}
 }
 const aGenerar = pendientes.filter((p) => p.nuevo);
 console.log(`Ejemplos sin audio: ${pendientes.length} (${aGenerar.length} mp3 nuevos, ${pendientes.length - aGenerar.length} reutilizan uno existente)`);
@@ -109,7 +127,11 @@ for (const p of aGenerar) {
 const tocados = new Set();
 for (const p of pendientes) {
   if (p.nuevo && !p.hecho) continue;
-  p.e.audio = p.ruta; tocados.add(p.d.id);
+  if (p.extra) {   // el texto no es un ejemplo de ficha: va a la lista de audios sueltos de la unidad
+    p.d.audiosExtra = p.d.audiosExtra || [];
+    if (!p.d.audiosExtra.some((x) => normalizar(x.eu) === normalizar(p.e.eu))) p.d.audiosExtra.push({ eu: p.e.eu, audio: p.ruta });
+  } else p.e.audio = p.ruta;
+  tocados.add(p.d.id);
 }
 for (const { f, d } of unidades) {
   if (tocados.has(d.id)) await writeFile(path.join(DATA, f), JSON.stringify(d, null, 2) + '\n');

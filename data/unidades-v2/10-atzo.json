@@ -2354,5 +2354,15 @@
       ],
       "subnivel": "test"
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "geunden",
+      "audio": "unidades/u10/geunden.mp3"
+    },
+    {
+      "eu": "zeuden",
+      "audio": "unidades/u10/zeuden.mp3"
+    }
   ]
 }

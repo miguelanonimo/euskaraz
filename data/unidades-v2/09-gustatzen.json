@@ -4059,5 +4059,119 @@
       ],
       "subnivel": "9.2"
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "zait",
+      "audio": "unidades/u9/zait.mp3"
+    },
+    {
+      "eu": "zaizu",
+      "audio": "unidades/u9/zaizu.mp3"
+    },
+    {
+      "eu": "zaio",
+      "audio": "unidades/u9/zaio.mp3"
+    },
+    {
+      "eu": "zaie",
+      "audio": "unidades/u9/zaie.mp3"
+    },
+    {
+      "eu": "hanka",
+      "audio": "unidades/u9/hanka.mp3"
+    },
+    {
+      "eu": "ilea",
+      "audio": "unidades/u9/ilea.mp3"
+    },
+    {
+      "eu": "besoa",
+      "audio": "unidades/u9/besoa.mp3"
+    },
+    {
+      "eu": "bihotza",
+      "audio": "unidades/u9/bihotza.mp3"
+    },
+    {
+      "eu": "belarriak",
+      "audio": "unidades/u9/belarriak.mp3"
+    },
+    {
+      "eu": "oina",
+      "audio": "unidades/u9/oina.mp3"
+    },
+    {
+      "eu": "sudurra",
+      "audio": "unidades/u9/sudurra.mp3"
+    },
+    {
+      "eu": "ahoa",
+      "audio": "unidades/u9/ahoa.mp3"
+    },
+    {
+      "eu": "eskua",
+      "audio": "unidades/u9/eskua.mp3"
+    },
+    {
+      "eu": "burua",
+      "audio": "unidades/u9/burua.mp3"
+    },
+    {
+      "eu": "begiak",
+      "audio": "unidades/u9/begiak.mp3"
+    },
+    {
+      "eu": "hotza",
+      "audio": "unidades/u9/hotza.mp3"
+    },
+    {
+      "eu": "alkandora",
+      "audio": "unidades/u9/alkandora.mp3"
+    },
+    {
+      "eu": "jertsea",
+      "audio": "unidades/u9/jertsea.mp3"
+    },
+    {
+      "eu": "gona",
+      "audio": "unidades/u9/gona.mp3"
+    },
+    {
+      "eu": "zenbat da?",
+      "audio": "unidades/u9/zenbat-da.mp3"
+    },
+    {
+      "eu": "norentzat?",
+      "audio": "unidades/u9/norentzat.mp3"
+    },
+    {
+      "eu": "non dago?",
+      "audio": "unidades/u9/non-dago.mp3"
+    },
+    {
+      "eu": "dirua",
+      "audio": "unidades/u9/dirua.mp3"
+    },
+    {
+      "eu": "oparia",
+      "audio": "unidades/u9/oparia.mp3"
+    },
+    {
+      "eu": "jaka",
+      "audio": "unidades/u9/jaka.mp3"
+    },
+    {
+      "eu": "soinekoa",
+      "audio": "unidades/u9/soinekoa.mp3"
+    },
+    {
+      "eu": "arropa",
+      "audio": "unidades/u9/arropa.mp3"
+    },
+    {
+      "eu": "gorputza",
+      "audio": "unidades/u9/gorputza.mp3"
+    }
   ]
 }

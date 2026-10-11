@@ -215,34 +215,45 @@
 
   // ─────────── Colores por unidad ───────────
 
-  /* Cada unidad es una familia de color, en el orden del diseño: rojo,
-     naranja, amarillo, pistacho, verde, turquesa, azul, morado, lavanda,
-     rosa. A partir de la 11 se vuelve a empezar. Cada familia trae tres
-     tonos: el normal, el suave (fondos) y el fuerte (texto sobre blanco). */
+  /* Cada unidad es una familia de color: una rueda de 12 pasos que arranca en
+     el rojo de marca (elegida por Miguel el 10/10/2026, «rueda A2» de la
+     propuesta de colores: sin melocotón en la 3, con un verde franco en la 5,
+     el azul de la 8 más claro y el cian de la 7 algo menos intenso). Cada
+     familia trae tres tonos: el normal, el suave (fondos) y el fuerte (texto
+     sobre blanco); el suave es un 20% del normal sobre blanco. El fuerte NO
+     cumple ya la norma estricta de 4,5:1 (se relajó el 10/10/2026): es el
+     principal oscurecido lo justo para que se lea, elegido por Miguel lección
+     por lección; en las lecciones 1, 9 y 10 es el propio principal. */
   var FAMILIAS = [
-    ['247,104,107', '253,224,225', '229,48,52'],
-    ['250,171,67',  '254,238,217', '221,104,0'],
-    ['240,244,36',  '253,253,222', '196,157,0'],
-    ['150,228,79',  '234,250,220', '118,197,0'],
-    ['62,214,123',  '226,248,234', '11,183,80'],
-    ['92,216,179',  '231,249,244', '16,184,134'],
-    ['64,164,250',  '217,237,254', '21,97,237'],
-    ['145,143,247', '233,233,253', '98,71,216'],
-    ['201,151,247', '244,234,253', '156,83,222'],
-    ['255,180,237', '255,240,251', '219,86,188']
+    ['247,104,107', '253,224,225', '247,104,107'],
+    ['255,157,101', '255,235,224', '238,144,90'],
+    ['240,244,36', '253,253,222', '200,203,5'],
+    ['147,238,127', '233,252,229', '106,193,87'],
+    ['14,233,136', '207,251,231', '0,208,120'],
+    ['11,234,184', '206,251,241', '14,209,164'],
+    ['82,208,214', '220,246,247', '61,186,191'],
+    ['97,194,254', '223,243,255', '70,165,222'],
+    ['77,140,245', '219,232,253', '77,140,245'],
+    ['149,126,244', '234,229,253', '149,126,244'],
+    ['216,131,236', '247,230,251', '207,125,227'],
+    ['252,125,190', '254,229,242', '246,123,186']
   ];
 
-  /* FAMILIAS solo tiene 10 colores para las 12 lecciones del curso
-     nuevo. Provisional mientras no hay color para la 10, 11 y 12: en
-     vez de reciclar el rojo/naranja de la 1 y la 2 (lo que hacía el
-     módulo), las tres últimas comparten el último color — distinto a
-     cualquier otra lección, aunque repetido entre ellas. Cuando lleguen
-     los colores de verdad, basta con ampliar FAMILIAS y quitar el
-     Math.min. */
   function familia(u) {
-    var n = Math.min((u && u.numero ? u.numero : 1) - 1, FAMILIAS.length - 1);
+    var n = Math.min((u && u.numero ? u.numero : 1) - 1, FAMILIAS.length - 1);  // el tope es solo por si algún día hay más unidades que colores
     var f = FAMILIAS[n];
-    return { raw: f[0], c: 'rgb(' + f[0] + ')', soft: 'rgb(' + f[1] + ')', strong: 'rgb(' + f[2] + ')' };
+    /* `texto` es el color con el que se escribe sobre el tono suave (repasos,
+       cifras, anillos): el tono fuerte de la familia, en todas las lecciones. */
+    /* `suaveClaro` es un fondo más pálido que `soft` (un 13% del color sobre
+       blanco) para las cuatro tarjetas iguales —repaso de vocabulario, repaso
+       mezclado, media diaria y racha más larga—: con el 20% los colores muy
+       saturados (el turquesa) quedaban pesados. Las tres primeras lecciones
+       conservan su suave de siempre, que ya estaba afinado a mano. */
+    var claro = f[1];
+    if (n >= 3) claro = f[0].split(',').map(function (v) { return Math.round(255 * 0.87 + Number(v) * 0.13); }).join(',');
+    return { raw: f[0], c: 'rgb(' + f[0] + ')', soft: 'rgb(' + f[1] + ')', strong: 'rgb(' + f[2] + ')',
+             suaveClaro: 'rgb(' + claro + ')',
+             texto: 'rgb(' + f[2] + ')' };
   }
 
   /* El color de la unidad en la que estás pinta los acentos de la pantalla
@@ -517,8 +528,16 @@
     var opciones = [];
     vs.forEach(function (v, i) {
       if (i === previa) return;
+      /* Una variante marcada con `dial` practica una forma de un euskalki
+         (p. ej. «aupa») y solo sale si ese es el que estudia la persona;
+         con batua puesto nadie la ha visto explicada y sería un adelanto
+         sin explicación. */
+      if (v.dial && v.dial !== euskalkiActivo) return;
       var veces = v.tipo === 'escribir' ? peso : 1;
       for (var k = 0; k < veces; k++) opciones.push(i);
+    });
+    if (!opciones.length) opciones = vs.map(function (v, i) { return i; }).filter(function (i) {
+      return !vs[i].dial || vs[i].dial === euskalkiActivo;
     });
     if (!opciones.length) opciones = vs.map(function (v, i) { return i; });
     var elegida = alAzar(opciones);
@@ -712,21 +731,95 @@
     });
   }
 
-  /* Solo se rebobina si es la MISMA pista que ya estaba puesta —para
-     que tocar dos veces seguidas la misma palabra la reinicie—. Con una
-     pista nueva no hace falta: ya empieza en 0. Ponerlo siempre, sin
-     esta condición, provocaba un recorte audible al principio la
-     primera vez que sonaba cada palabra (el audio aún no tiene
-     metadata cargada — readyState 0— cuando se le pide el seek a 0, así
-     que el navegador lo deja pendiente y lo aplica de golpe justo
-     cuando arranca a sonar). A partir de la segunda vez el archivo ya
-     está en caché y el fallo no se nota, lo que despistaba. */
-  function reproducir(ruta) {
-    if (modoSilencioso) return;
+  /* Cómo suena el audio. Antes se ponía el mp3 en un <audio> y se llamaba
+     a play() en el mismo instante: la primera vez que sonaba cada palabra el
+     navegador empezaba a reproducir mientras aún descargaba y decodificaba,
+     y se oía a medias («empieza a mitad»), a veces hasta darle varias veces.
+     Ahora el mp3 se descarga y se DECODIFICA entero antes de sonar (Web
+     Audio) y se guarda ya decodificado; precargarAudio() lo prepara en
+     segundo plano al abrir la unidad, así que normalmente suena al
+     instante y siempre desde el principio. Si el aparato no soporta Web
+     Audio, se cae al <audio> de siempre. El contexto se despierta con el
+     primer toque del usuario (iOS no deja sonar antes). */
+  var ctxAudio = null;
+  var buffersAudio = {};      // ruta → AudioBuffer ya decodificado
+  var cargandoAudio = {};     // ruta → promesa en curso
+  var ordenBuffers = [];      // para soltar los más viejos
+  var MAX_BUFFERS = 120;
+  var fuenteAudio = null;     // lo que suena ahora
+  var turnoAudio = 0;         // solo suena la última petición
+
+  function contextoAudio() {
+    if (ctxAudio) return ctxAudio;
+    var C = window.AudioContext || window.webkitAudioContext;
+    if (!C) return null;
+    try { ctxAudio = new C(); } catch (e) { ctxAudio = null; }
+    return ctxAudio;
+  }
+
+  function despertarAudio() {
+    var c = contextoAudio();
+    if (c && c.state === 'suspended') { try { c.resume(); } catch (e) {} }
+  }
+  ['pointerdown', 'touchend', 'keydown'].forEach(function (ev) {
+    document.addEventListener(ev, despertarAudio, { capture: true, passive: true });
+  });
+
+  function cargarBuffer(ruta) {
+    if (buffersAudio[ruta]) return Promise.resolve(buffersAudio[ruta]);
+    if (cargandoAudio[ruta]) return cargandoAudio[ruta];
+    var c = contextoAudio();
+    if (!c) return Promise.reject(new Error('sin Web Audio'));
+    cargandoAudio[ruta] = fetch(AUDIO_BASE + ruta, { cache: 'force-cache' })
+      .then(function (r) { if (!r.ok) throw new Error('audio ' + r.status); return r.arrayBuffer(); })
+      .then(function (ab) {
+        // La forma con callbacks es la que entienden también los Safari viejos.
+        return new Promise(function (ok, mal) { c.decodeAudioData(ab, ok, mal); });
+      })
+      .then(function (buf) {
+        buffersAudio[ruta] = buf;
+        ordenBuffers.push(ruta);
+        while (ordenBuffers.length > MAX_BUFFERS) delete buffersAudio[ordenBuffers.shift()];
+        delete cargandoAudio[ruta];
+        return buf;
+      })
+      .catch(function (err) { delete cargandoAudio[ruta]; throw err; });
+    return cargandoAudio[ruta];
+  }
+
+  function pararAudio() {
+    if (fuenteAudio) { try { fuenteAudio.stop(); } catch (e) {} fuenteAudio = null; }
+    reproductor.pause();
+  }
+
+  // Respaldo: el <audio> de siempre. Solo se rebobina si es la MISMA pista.
+  function reproducirConElemento(ruta) {
     var url = AUDIO_BASE + ruta;
     if (reproductor.src === url) reproductor.currentTime = 0;
     else reproductor.src = url;
     reproductor.play().catch(function () {});
+  }
+
+  function reproducir(ruta) {
+    if (modoSilencioso) return;
+    var c = contextoAudio();
+    if (!c) { reproducirConElemento(ruta); return; }
+    despertarAudio();
+    var turno = ++turnoAudio;
+    cargarBuffer(ruta).then(function (buf) {
+      if (turno !== turnoAudio) return;        // ya se pidió otra después
+      pararAudio();
+      var fuente = c.createBufferSource();
+      fuente.buffer = buf;
+      fuente.connect(c.destination);
+      fuente.onended = function () { if (fuenteAudio === fuente) fuenteAudio = null; };
+      // Un pelo de margen: el aparato de salida (altavoz, Bluetooth) tarda
+      // un instante en despertar y se comía el principio.
+      fuente.start(c.currentTime + 0.06);
+      fuenteAudio = fuente;
+    }).catch(function () {
+      if (turno === turnoAudio) reproducirConElemento(ruta);
+    });
   }
 
   // Un solo listener delegado sirve a vocabulario y diccionario, que
@@ -1524,10 +1617,10 @@
       // Un solo tono para las dos tarjetas, el normal de la familia — sin
       // variante fuerte, que las dejaba a cada una de un color distinto.
       return '<button class="scard" type="button" id="' + id + '"' +
-        ' style="--sc:' + ft.c + ';--sc-soft:' + ft.soft + '">' +
+        ' style="--sc:' + ft.texto + ';--sc-soft:' + ft.suaveClaro + '">' +
         '<span class="scard__t">' + titulo + '</span>' +
         '<span class="scard__row"><span class="scard__v">' + valor + '</span>' +
-          anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ft.c, hecho: terminado }) + '</span>' +
+          anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ft.texto, hecho: terminado }) + '</span>' +
       '</button>';
     }
 
@@ -1633,8 +1726,12 @@
        100% (el color sólido) al completarla, según el ratio de avance. */
     var filas = CURSO.unidades.map(function (u) {
       var f = familia(u), pu = progresoUnidad(u);
-      var alfa = pu.completada ? 1 : 0.1 + 0.9 * pu.ratio;
-      var bg = 'rgba(' + f.raw + ',' + alfa + ')';
+      /* El fondo va del tono suave de la lección (sin empezar) al color pleno
+         (completada), mezclando los dos según el avance. Partir del suave y no
+         de un 10% del color deja las lecciones sin empezar con más color. */
+      var avance = pu.completada ? 1 : pu.ratio;
+      var cm = f.raw.split(',').map(Number), cs = f.soft.match(/\d+/g).map(Number);
+      var bg = 'rgb(' + [0, 1, 2].map(function (k) { return Math.round(cs[k] + (cm[k] - cs[k]) * avance); }).join(',') + ')';
       return '<button class="lrow" type="button" data-unidad="' + esc(u.id) + '" style="--bg:' + bg + ';--c:' + f.c + '">' +
         '<span class="lrow__n">' + esc(u.numero) + '</span>' +
         '<span class="lrow__txt"><span class="lrow__t">' + esc(u.titulo) + '</span>' +
@@ -1723,6 +1820,15 @@
     }).length || 1;
     var media = sem.activos ? Math.round(sem.total / sem.activos) : 0;
 
+    /* Los colores de los datos van con la lección de turno y avanzan de uno en
+       uno: aciertos, la actual; palabras vistas, la siguiente; unidades, la
+       siguiente a esa; y el bloque de media y racha, la siguiente. Al llegar a
+       la 12 se vuelve a la 1 (si la de turno es la 12, aciertos lleva el color
+       de la 12 y palabras vistas el de la 1). */
+    var iTurno = Math.max(0, CURSO.unidades.indexOf(unidadDeTurno()));
+    function colorDato(k) { return familia(CURSO.unidades[(iTurno + k) % CURSO.unidades.length]); }
+    var cAciertos = colorDato(0), cVistas = colorDato(1), cUnidades = colorDato(2), cRacha = colorDato(3);
+
     el.screens.progress.innerHTML =
       '<div class="stack">' +
         '<div class="donut" style="--arco:' + arcoCurso() + '">' +
@@ -1731,12 +1837,12 @@
         '</div>' +
         '<h1 class="pagetitle">' + esc(titulo) + '</h1>' +
         '<div class="statbars">' +
-          statBar(aciertos, '%', 'Aciertos\nsemanal', aciertos, 'rgb(62,214,123)', 'rgb(226,248,234)') +
-          statBar(vistas, '', 'Palabras\nvistas', vistas / totalPalabras * 100, 'rgb(92,216,173)', 'rgb(231,249,244)') +
-          statBar(hechas, '/' + n, 'Unidades\ncompletadas', hechas / n * 100, 'rgb(64,164,250)', 'rgb(217,237,254)') +
+          statBar(aciertos, '%', 'Aciertos\nsemanal', aciertos, cAciertos.c, cAciertos.soft) +
+          statBar(vistas, '', 'Palabras\nvistas', vistas / totalPalabras * 100, cVistas.c, cVistas.soft) +
+          statBar(hechas, '/' + n, 'Unidades\ncompletadas', hechas / n * 100, cUnidades.c, cUnidades.soft) +
           '<div class="reviews">' +
-            tarjetaDato('Media\ndiaria', media, 'ejerc.', 'rgb(134,110,241)', 'rgb(233,233,253)') +
-            tarjetaDato('Racha\nmás larga', rachaMasLarga(), 'días', 'rgb(134,110,241)', 'rgb(233,233,253)') +
+            tarjetaDato('Media\ndiaria', media, 'ejerc.', cRacha.texto, cRacha.suaveClaro) +
+            tarjetaDato('Racha\nmás larga', rachaMasLarga(), 'días', cRacha.texto, cRacha.suaveClaro) +
           '</div>' +
         '</div>' +
       '</div>';
@@ -1811,7 +1917,9 @@
      a que termine ni bloquear nada: si una petición falla, no pasa
      nada, simplemente esa palabra tardará como antes la primera vez. */
   function precargarAudio(ruta) {
-    if (ruta && !modoSilencioso) fetch(AUDIO_BASE + ruta, { cache: 'force-cache' }).catch(function () {});
+    if (!ruta || modoSilencioso) return;
+    if (contextoAudio()) cargarBuffer(ruta).catch(function () {});
+    else fetch(AUDIO_BASE + ruta, { cache: 'force-cache' }).catch(function () {});
   }
 
   function precargarAudioDeUnidad(u) {
@@ -3731,7 +3839,9 @@
         '<div class="paircol" id="colEu">' + eus.map(function (o) {
           return '<button class="pair pair--eu" type="button" aria-pressed="false" data-i="' + o.i + '">' +
             '<span class="pair__txt">' + esc(o.txt) + '</span>' +
-            '<span class="pair__play" data-play="1" aria-label="Escuchar «' + esc(o.txt) + '»">' + icono('volume', 16) + '</span>' +
+            /* El icono solo se pinta si hay audio de verdad: antes salía en todas
+               las parejas y, si no había mp3, el toque no hacía nada. */
+            (audioDePalabra(o.txt) ? '<span class="pair__play" data-play="1" aria-label="Escuchar «' + esc(o.txt) + '»">' + icono('volume', 16) + '</span>' : '') +
           '</button>';
         }).join('') + '</div>' +
         '<div class="paircol" id="colEs">' + ess.map(function (o) {

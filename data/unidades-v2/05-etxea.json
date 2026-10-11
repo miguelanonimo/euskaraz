@@ -4030,5 +4030,175 @@
       ],
       "subnivel": "5.1"
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "urdina",
+      "audio": "unidades/u5/urdina.mp3"
+    },
+    {
+      "eu": "gorria",
+      "audio": "unidades/u5/gorria.mp3"
+    },
+    {
+      "eu": "gela txikia",
+      "audio": "unidades/u5/gela-txikia.mp3"
+    },
+    {
+      "eu": "gela berria",
+      "audio": "unidades/u5/gela-berria.mp3"
+    },
+    {
+      "eu": "herri polita",
+      "audio": "unidades/u5/herri-polita.mp3"
+    },
+    {
+      "eu": "horia",
+      "audio": "unidades/u5/horia.mp3"
+    },
+    {
+      "eu": "berdea",
+      "audio": "unidades/u5/berdea.mp3"
+    },
+    {
+      "eu": "zuria",
+      "audio": "unidades/u5/zuria.mp3"
+    },
+    {
+      "eu": "beltza",
+      "audio": "unidades/u5/beltza.mp3"
+    },
+    {
+      "eu": "grisa",
+      "audio": "unidades/u5/grisa.mp3"
+    },
+    {
+      "eu": "marroia",
+      "audio": "unidades/u5/marroia.mp3"
+    },
+    {
+      "eu": "arrosa",
+      "audio": "unidades/u5/arrosa.mp3"
+    },
+    {
+      "eu": "morea",
+      "audio": "unidades/u5/morea.mp3"
+    },
+    {
+      "eu": "jangela",
+      "audio": "unidades/u5/jangela.mp3"
+    },
+    {
+      "eu": "bainugela",
+      "audio": "unidades/u5/bainugela.mp3"
+    },
+    {
+      "eu": "sarrera",
+      "audio": "unidades/u5/sarrera.mp3"
+    },
+    {
+      "eu": "eskailerak",
+      "audio": "unidades/u5/eskailerak.mp3"
+    },
+    {
+      "eu": "igogailua",
+      "audio": "unidades/u5/igogailua.mp3"
+    },
+    {
+      "eu": "balkoia",
+      "audio": "unidades/u5/balkoia.mp3"
+    },
+    {
+      "eu": "lorategia",
+      "audio": "unidades/u5/lorategia.mp3"
+    },
+    {
+      "eu": "armairua",
+      "audio": "unidades/u5/armairua.mp3"
+    },
+    {
+      "eu": "sofa",
+      "audio": "unidades/u5/sofa.mp3"
+    },
+    {
+      "eu": "hozkailua",
+      "audio": "unidades/u5/hozkailua.mp3"
+    },
+    {
+      "eu": "ispilua",
+      "audio": "unidades/u5/ispilua.mp3"
+    },
+    {
+      "eu": "teilatua",
+      "audio": "unidades/u5/teilatua.mp3"
+    },
+    {
+      "eu": "horma",
+      "audio": "unidades/u5/horma.mp3"
+    },
+    {
+      "eu": "argia",
+      "audio": "unidades/u5/argia.mp3"
+    },
+    {
+      "eu": "dutxa",
+      "audio": "unidades/u5/dutxa.mp3"
+    },
+    {
+      "eu": "garajea",
+      "audio": "unidades/u5/garajea.mp3"
+    },
+    {
+      "eu": "telebista",
+      "audio": "unidades/u5/telebista.mp3"
+    },
+    {
+      "eu": "etxe bat",
+      "audio": "unidades/u5/etxe-bat.mp3"
+    },
+    {
+      "eu": "mahai bat",
+      "audio": "unidades/u5/mahai-bat.mp3"
+    },
+    {
+      "eu": "gela bat",
+      "audio": "unidades/u5/gela-bat.mp3"
+    },
+    {
+      "eu": "txoria",
+      "audio": "unidades/u5/txoria.mp3"
+    },
+    {
+      "eu": "zaldia",
+      "audio": "unidades/u5/zaldia.mp3"
+    },
+    {
+      "eu": "behia",
+      "audio": "unidades/u5/behia.mp3"
+    },
+    {
+      "eu": "ardia",
+      "audio": "unidades/u5/ardia.mp3"
+    },
+    {
+      "eu": "txerria",
+      "audio": "unidades/u5/txerria.mp3"
+    },
+    {
+      "eu": "oiloa",
+      "audio": "unidades/u5/oiloa.mp3"
+    },
+    {
+      "eu": "untxia",
+      "audio": "unidades/u5/untxia.mp3"
+    },
+    {
+      "eu": "sagua",
+      "audio": "unidades/u5/sagua.mp3"
+    },
+    {
+      "eu": "baserria",
+      "audio": "unidades/u5/baserria.mp3"
+    }
   ]
 }

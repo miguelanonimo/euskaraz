@@ -3458,5 +3458,23 @@
       ],
       "subnivel": "8.5"
     }
+  ],
+  "audiosExtra": [
+    {
+      "eu": "handik",
+      "audio": "unidades/u8/handik.mp3"
+    },
+    {
+      "eu": "behar dut",
+      "audio": "unidades/u8/behar-dut.mp3"
+    },
+    {
+      "eu": "mugitu",
+      "audio": "unidades/u8/mugitu.mp3"
+    },
+    {
+      "eu": "noraino?",
+      "audio": "unidades/u8/noraino.mp3"
+    }
   ]
 }

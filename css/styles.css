@@ -909,7 +909,7 @@ div.scard{ cursor: default; }
 .donut__in{
   position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
 }
-.donut__in b{ font-family: var(--f-d); font-weight: 800; font-size: calc(var(--tam) * 0.24); line-height: 0.9; letter-spacing: -0.04em; }
+.donut__in b{ font-family: var(--f-d); font-weight: 800; font-size: calc(var(--tam) * 0.24); line-height: 0.9; letter-spacing: 0.025em; }
 .donut__in b small{ font-size: calc(var(--tam) * 0.1); letter-spacing: 0; }
 .donut__in span{ font-family: var(--f-t); font-weight: 500; font-size: calc(13px + var(--w) * 0.0286); line-height: 1.25; color: var(--grey50); }
 
@@ -1236,7 +1236,7 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   .lfeat .rcard__s{ font-size: var(--fs-lead); letter-spacing: 0.01em; }
   .rcard__bottom{ display: flex; flex-direction: column; gap: 20px; align-self: stretch; }
   .rcard__big{ display: flex; align-items: flex-end; gap: 6px; font-family: var(--f-d); font-weight: 800; }
-  .rcard__big b{ font-size: var(--fs-mega); line-height: .78; letter-spacing: -0.04em; }
+  .rcard__big b{ font-size: var(--fs-mega); line-height: .78; letter-spacing: 0.01em; }
   .rcard__big small{ font-size: 30px; line-height: 1; }
   /* Las mismas columnas que el carril de arriba (2:1:1, hueco 16): así el
      hueco entre los repasos cae justo bajo el de la lección grande. */
@@ -1246,7 +1246,7 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   .homew__rail + .homew__reviews{ margin-top: -16px; }
   .homew__reviews .scard{ min-height: 200px; padding: var(--card-pad); }
   .homew__reviews .scard__t{ font-size: var(--fs-h3); }
-  .homew__reviews .scard__v{ font-size: var(--fs-mega); line-height: .8; letter-spacing: -0.04em; }
+  .homew__reviews .scard__v{ font-size: var(--fs-mega); line-height: .8; letter-spacing: 0.01em; }
   /* El anillo, tan alto como la cifra (a 32px se perdía al lado). El
      grosor va con !important porque anillo() lo pone en línea. */
   .homew__reviews .ring{ width: calc(var(--fs-mega) * .78); height: calc(var(--fs-mega) * .78); --rw: 6px !important; }
@@ -1257,7 +1257,7 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   #screenLessons .pagetitle, #screenProgress .pagetitle, #screenDict .pagetitle{ font-size: var(--fs-hero); line-height: .92; letter-spacing: -0.035em; }
   .llist{ gap: 10px; }
   .lrow{ gap: 24px; padding: 22px 28px; }
-  .lrow__n{ width: auto; min-width: 1.1em; font-size: var(--fs-mega); line-height: .8; letter-spacing: -0.04em; }
+  .lrow__n{ width: auto; min-width: 1.1em; font-size: var(--fs-mega); line-height: .8; letter-spacing: 0.01em; }
   .lrow__txt{ gap: 6px; }
   .lrow__t{ font-size: var(--fs-h3); }
 
@@ -1317,7 +1317,7 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   .navrows--sub .navrow__chev{ grid-area: chev; }
   .navrows--sub .navrow__n{
     display: block; grid-area: n; align-self: end;
-    font-family: var(--f-d); font-weight: 800; font-size: var(--fs-mega); line-height: .78; letter-spacing: -0.04em; color: var(--ink);
+    font-family: var(--f-d); font-weight: 800; font-size: var(--fs-mega); line-height: .78; letter-spacing: 0.01em; color: var(--ink);
   }
   .navrows--sub .navrow__s{ grid-area: s; font-size: 18px; color: var(--ink); }
   .navrows--sub .navrow__sn{ display: none; }
