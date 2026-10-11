@@ -3974,13 +3974,26 @@
     });
   }
 
+  /* Algunas frases tienen más de una forma buena, y las dos hay que darlas
+     por válidas. El caso típico es el sujeto: en euskera el verbo ya lleva
+     la persona, así que «Nirekin zatoz?» y «Zu nirekin zatoz?» son las dos
+     correctas (el pronombre solo añade énfasis). `euAlt` es opcional; sin
+     él esto se comporta igual que antes.
+
+     Se corrige contra la alternativa que el alumno haya construido, no
+     siempre contra `eu`: si no, al acertar por la vía corta las fichas se
+     pintarían en rojo uña a uña. */
   function corregirOrden(ej) {
     var fichas = Array.prototype.slice.call($('build').children);
     var construido = fichas.map(function (c) { return c.textContent; }).join(' ');
-    var ok = normalizar(construido) === normalizar(ej.eu);
+    var dado = normalizar(construido);
+    var validas = [ej.eu].concat(ej.euAlt || []);
+    var acertada = null;
+    validas.some(function (f) { if (normalizar(f) === dado) { acertada = f; return true; } return false; });
+    var ok = !!acertada;
     /* Cada ficha se pinta según si está en su sitio: así se ve dónde se
        torció la frase, no solo que se torció. */
-    var buenas = normalizar(ej.eu).split(' ');
+    var buenas = normalizar(acertada || ej.eu).split(' ');
     fichas.forEach(function (c, i) {
       c.classList.add(ok || normalizar(c.textContent) === buenas[i] ? 'is-ok' : 'is-mal');
     });
