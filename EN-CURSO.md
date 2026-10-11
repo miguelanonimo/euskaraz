@@ -31,6 +31,11 @@ que parecían no aplicados.
 fecha/hora y qué se va a tocar, y hacer commit+push de solo este archivo
 (commit rápido, separado del trabajo real):
 
+- **Ric** · 11/10 — **toco `js/app.js`**: los ejercicios de ordenar solo
+  admiten una respuesta, y hay frases con dos igual de correctas (el sujeto
+  en euskera es opcional). Zona: `corregirOrden()`, para que acepte un
+  `euAlt` opcional.
+
 - (vacío — nadie trabajando ahora mismo)
 
 **Al terminar ese bloque** (al hacer push del cambio real), borrar la
