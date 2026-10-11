@@ -142,6 +142,11 @@
           "audio": "unidades/u1/jaso.mp3"
         },
         {
+          "eu": "mahaia",
+          "es": "la mesa → suena «maaia»",
+          "audio": "unidades/u6/mahaia.mp3"
+        },
+        {
           "eu": "gela",
           "es": "habitación → suena «guela»",
           "audio": "unidades/u6/gela.mp3"
