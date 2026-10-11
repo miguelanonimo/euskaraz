@@ -1401,7 +1401,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "nuestra casa nueva",
           "eu": "gure etxe berria",
           "palabras": [
@@ -1916,7 +1916,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Tú eres médica.",
           "eu": "Zu medikua zara.",
           "palabras": [
@@ -2002,7 +2002,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Ellos son profesores.",
           "eu": "Haiek irakasleak dira.",
           "palabras": [
@@ -2094,7 +2094,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Nosotros somos amigos.",
           "eu": "Gu lagunak gara.",
           "palabras": [
@@ -2180,7 +2180,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Yo también soy estudiante.",
           "eu": "Ni ere ikaslea naiz.",
           "palabras": [
@@ -2534,7 +2534,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Yo soy de Bilbao.",
           "eu": "Ni Bilbokoa naiz.",
           "palabras": [
@@ -3128,7 +3128,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Somos amigas.",
           "eu": "Gu lagunak gara.",
           "palabras": [

@@ -1045,23 +1045,23 @@
         },
         {
           "tipo": "pares",
-          "instruccion": "Empareja el tiempo y las estaciones",
+          "instruccion": "Empareja las expresiones con «zait»",
           "pares": [
             {
-              "eu": "euria",
-              "es": "la lluvia"
+              "eu": "gustatzen zait",
+              "es": "me gusta"
             },
             {
-              "eu": "eguzkia",
-              "es": "el sol"
+              "eu": "iruditzen zait",
+              "es": "me parece"
             },
             {
-              "eu": "negua",
-              "es": "el invierno"
+              "eu": "interesatzen zait",
+              "es": "me interesa"
             },
             {
-              "eu": "uda",
-              "es": "el verano"
+              "eu": "axola zait",
+              "es": "me importa"
             }
           ]
         },
@@ -1241,7 +1241,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Me gusta el euskera.",
           "eu": "Niri euskara gustatzen zait.",
           "palabras": [
@@ -1539,7 +1539,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "A nosotros nos gusta el monte.",
           "eu": "Guri mendia gustatzen zaigu.",
           "palabras": [

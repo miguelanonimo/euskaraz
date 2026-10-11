@@ -554,7 +554,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Bilbao es más grande que Gernika.",
           "eu": "Bilbo Gernika baino handiagoa da.",
           "palabras": [
@@ -765,7 +765,11 @@
           ],
           "distractores": [
             "hobeto"
-          ]
+          ],
+          "euAlt": [
+            "Nirekin zatoz?"
+          ],
+          "pista": "El pronombre «zu» es opcional: el verbo ya dice quién."
         },
         {
           "tipo": "orden",
@@ -786,7 +790,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Es difícil, pero me gusta.",
           "eu": "Zaila da, baina gustatzen zait.",
           "palabras": [
@@ -1782,7 +1786,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Solo quiero agua.",
           "eu": "Ura bakarrik nahi dut.",
           "palabras": [

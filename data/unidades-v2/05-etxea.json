@@ -1205,7 +1205,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Yo estoy en casa.",
           "eu": "Ni etxean nago.",
           "palabras": [
@@ -1612,7 +1612,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Mi casa es pequeña.",
           "eu": "Nire etxea txikia da.",
           "palabras": [
@@ -2295,7 +2295,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "En el salón hay televisión.",
           "eu": "Egongelan telebista dago.",
           "palabras": [
@@ -2978,7 +2978,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "una mesa blanca",
           "eu": "mahai zuri bat",
           "palabras": [
