@@ -1687,14 +1687,18 @@
       /* El fondo va del tono suave de la lección (sin empezar) al color pleno
          (completada), mezclando los dos según el avance. Partir del suave y no
          de un 10% del color deja las lecciones sin empezar con más color. */
-      var avance = pu.completada ? 1 : pu.ratio;
+      /* El tic y el color pleno solo llegan cuando TODO está al 100%. Superar el
+         test (≥70%) saca la unidad de Hoy, pero aquí se ve cuánto llevas de
+         verdad: el anillo, lleno en proporción, sin tic. (Ric y Miguel, 11/10/2026) */
+      var avance = pu.ratio;
+      var completo = pu.ratio >= 0.995;
       var cm = f.raw.split(',').map(Number), cs = f.soft.match(/\d+/g).map(Number);
       var bg = 'rgb(' + [0, 1, 2].map(function (k) { return Math.round(cs[k] + (cm[k] - cs[k]) * avance); }).join(',') + ')';
       return '<button class="lrow" type="button" data-unidad="' + esc(u.id) + '" style="--bg:' + bg + ';--c:' + f.c + '">' +
         '<span class="lrow__n">' + esc(u.numero) + '</span>' +
         '<span class="lrow__txt"><span class="lrow__t">' + esc(u.titulo) + '</span>' +
           '<span class="lrow__s">' + esc(u.subtitulo) + '</span></span>' +
-        anillo(pu.ratio * 100, { tam: 36, color: 'rgb(10,10,10)', hecho: pu.completada }) +
+        anillo(pu.ratio * 100, { tam: 36, color: 'rgb(10,10,10)', hecho: completo }) +
       '</button>';
     }).join('');
 
