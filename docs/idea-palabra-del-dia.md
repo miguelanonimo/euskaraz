@@ -17,7 +17,7 @@ Elegida la **propuesta A («Carta que gira»)**, con estos ajustes:
 - **Las pistas se descubren**, como en los ejercicios: cada una va escondida tras un botón «ver pista» (el mismo `hintchip` con el ojo). Se abren de una en una, de la más vaga a la más clara; al abrir una aparece «ver otra pista» con la siguiente.
 - **El contenido va siempre centrado en vertical dentro de la tarjeta** (palabra + pistas en el anverso; traducción + explicación en el dorso), con la cabecera arriba y «Toca para girar» abajo fijos.
 - **El icono de Hoy es pequeño**, del tamaño del de usuario.
-- Se gira al tocarla (fuera de los botones de pista).
+- **La tarjeta solo gira con un botón**, no al tocarla en cualquier sitio: «**Ver significado**» en el anverso y «**Ver palabra**» en el dorso (textos cortos). Así la palabra y un altavoz («escuchar») se pueden tocar para oír la pronunciación sin darle la vuelta.
 
 Maqueta: artefacto «Palabra del día» (propuesta A ajustada; las pistas y el giro se pueden probar tocando). Sigue sin haber nada implementado.
 
