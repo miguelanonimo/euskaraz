@@ -73,11 +73,6 @@
           "eu": "etxe polita",
           "es": "casa bonita",
           "audio": "unidades/u1/etxe-polita.mp3"
-        },
-        {
-          "eu": "kale zaharra",
-          "es": "calle vieja",
-          "audio": "unidades/u1/kale-zaharra.mp3"
         }
       ],
       "subnivel": "1.1"
@@ -1458,15 +1453,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Kale zaharra» significa…",
+          "pregunta": "«Gero arte» e «ikusi arte» significan las dos…",
           "opciones": [
-            "Vieja calle",
-            "Calle vieja",
-            "La calle es vieja",
-            "Calle nueva"
+            "Hasta luego",
+            "Hasta mañana",
+            "Buenas tardes",
+            "Adiós para siempre"
           ],
-          "correcta": 1,
-          "explicacion": "Sustantivo primero, adjetivo después. Como en «Parte Zaharra»."
+          "correcta": 0,
+          "explicacion": "Las dos acaban en «arte» (hasta): «ikusi arte» es «hasta vernos» y «gero arte», «hasta después»."
         }
       ],
       "subnivel": "test"
