@@ -591,7 +591,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Ayer fuiste al mercado.",
           "eu": "Atzo merkatura joan zinen.",
           "palabras": [
@@ -1075,7 +1075,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Ayer fui a Bilbao.",
           "eu": "Atzo Bilbora joan nintzen.",
           "palabras": [
@@ -1373,7 +1373,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Leí los libros.",
           "eu": "Nik liburuak irakurri nituen.",
           "palabras": [

@@ -695,7 +695,7 @@
             "Egun on",
             "Kaixo",
             "Gabon",
-            "Agur"
+            "Ikusi arte"
           ],
           "correcta": 1,
           "explicacion": "«Kaixo» sirve a cualquier hora del día."
@@ -990,7 +990,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Muy bien, muchas gracias.",
           "eu": "Oso ondo, eskerrik asko.",
           "palabras": [
@@ -1328,7 +1328,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Regular, gracias.",
           "eu": "Hala-hola, eskerrik asko.",
           "palabras": [

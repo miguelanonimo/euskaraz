@@ -1271,7 +1271,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Hoy es lunes.",
           "eu": "Gaur astelehena da.",
           "palabras": [
@@ -1560,7 +1560,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Son las siete y media.",
           "eu": "Zazpi eta erdiak dira.",
           "palabras": [
@@ -2180,7 +2180,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Mi cumpleaños es en mayo.",
           "eu": "Nire urtebetetzea maiatzean da.",
           "palabras": [
@@ -2413,7 +2413,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "En primavera llueve.",
           "eu": "Udaberrian euria egiten du.",
           "palabras": [

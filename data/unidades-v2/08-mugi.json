@@ -1085,7 +1085,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Voy a Bilbao en tren.",
           "eu": "Ni trenez Bilbora noa.",
           "palabras": [
@@ -1378,7 +1378,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Voy al mercado a pie.",
           "eu": "Ni oinez merkatura noa.",
           "palabras": [
@@ -1761,7 +1761,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "No puedo ir.",
           "eu": "Ezin dut joan.",
           "palabras": [
@@ -3094,7 +3094,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Recto, y luego a la izquierda.",
           "eu": "Zuzen, eta gero ezkerrera.",
           "palabras": [

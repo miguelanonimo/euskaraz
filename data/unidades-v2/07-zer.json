@@ -1231,7 +1231,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Tú comes pan.",
           "eu": "Zuk ogia jaten duzu.",
           "palabras": [
@@ -1534,7 +1534,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "No bebo vino.",
           "eu": "Nik ez dut ardorik edaten.",
           "palabras": [
@@ -2085,7 +2085,7 @@
           ],
           "distractores": [
             "jan",
-            "azukrea"
+            "dut"
           ]
         },
         {
@@ -2144,7 +2144,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Como queso y pan.",
           "eu": "Gazta eta ogia jaten ditut.",
           "palabras": [
@@ -2332,7 +2332,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Por la mañana me levanto.",
           "eu": "Goizean jaikitzen naiz.",
           "palabras": [
@@ -2500,7 +2500,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Estoy comiendo.",
           "eu": "Jaten ari naiz.",
           "palabras": [
@@ -3450,7 +3450,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "No como pan.",
           "eu": "Ez dut ogirik jaten.",
           "palabras": [
@@ -3537,7 +3537,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "No tengo dinero.",
           "eu": "Ez dut dirurik.",
           "palabras": [
@@ -3703,7 +3703,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Estoy estudiando.",
           "eu": "Ikasten ari naiz.",
           "palabras": [
@@ -3799,7 +3799,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Estoy aprendiendo euskera.",
           "eu": "Euskara ikasten ari naiz.",
           "palabras": [

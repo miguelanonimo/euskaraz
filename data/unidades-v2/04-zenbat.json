@@ -1547,7 +1547,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Tengo veinte años.",
           "eu": "Hogei urte ditut.",
           "palabras": [
@@ -1642,7 +1642,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Yo tengo dos hermanas.",
           "eu": "Nik bi ahizpa ditut.",
           "palabras": [
@@ -2366,7 +2366,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Mi abuelo vive en Bilbao.",
           "eu": "Nire aitona Bilbon bizi da.",
           "palabras": [
@@ -2704,7 +2704,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Tengo dinero.",
           "eu": "Dirua daukat.",
           "palabras": [

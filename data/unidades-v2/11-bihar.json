@@ -576,7 +576,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "Mañana iré a Bilbao.",
           "eu": "Bihar Bilbora joango naiz.",
           "palabras": [
@@ -1102,7 +1102,7 @@
         },
         {
           "tipo": "escribir",
-          "instruccion": "Escribe la frase. Las fichas de abajo son solo ayuda.",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
           "es": "¿Qué vas a hacer mañana?",
           "eu": "Zer egingo duzu bihar?",
           "palabras": [
