@@ -13,7 +13,8 @@ Elegida la **propuesta A («Carta que gira»)**, con estos ajustes:
 - **Se añade al diccionario por defecto**, sin acción ni aviso (nada de «añadir al diccionario» ni de «añadida»).
 - **En el Diccionario no sale de ninguna manera especial**: ni etiqueta ni filtro; es una entrada más, solo sin el indicador de lección.
 - **Cómo volver a ella.** Un **icono a la izquierda del de usuario**, en la cabecera de Hoy, que abre siempre la palabra de hoy. Lleva un punto rojo hasta que se ve. Las anteriores se recuperan buscándolas en el Diccionario.
-- **Es un modal, no pantalla completa.** Respeta los márgenes generales (20 px a los lados), deja ver Hoy atenuado detrás y se cierra con la X o tocando fuera. Las esquinas son las de las tarjetas de Hoy (grande, grande, pequeña, grande).
+- **Es un modal, no pantalla completa.** Respeta los márgenes generales (20 px a los lados), deja Hoy detrás con un **overlay oscuro con backdrop blur** (así el fondo no se ve tan claro) y se cierra con la X o tocando fuera. Las esquinas son las de las tarjetas de Hoy (grande, grande, pequeña, grande).
+- **Sin lauburu de fondo** y sin fondo de botón en «Ver significado» / «Ver palabra»: son solo texto subrayado, para no recargar la tarjeta.
 - **Las pistas se descubren**, como en los ejercicios: cada una va escondida tras un botón «ver pista» (el mismo `hintchip` con el ojo). Se abren de una en una, de la más vaga a la más clara; al abrir una aparece «ver otra pista» con la siguiente.
 - **El contenido va siempre centrado en vertical dentro de la tarjeta** (palabra + pistas en el anverso; traducción + explicación en el dorso), con la cabecera arriba y «Toca para girar» abajo fijos.
 - **El icono de Hoy es pequeño**, del tamaño del de usuario.
