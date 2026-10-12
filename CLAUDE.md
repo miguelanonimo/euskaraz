@@ -35,6 +35,20 @@ curso.
   mal. Un hablante nativo detectó un error en una unidad y la revisión
   posterior destapó otras ocho.
 
+- **Una palabra adelantada solo molesta si te preguntan por ella** (Ric,
+  12/10/2026). Hablando de los posesivos de 2.2: «lo importante es que
+  estamos introduciendo adjetivos y sustantivos para poder explicarlo; las
+  combinaciones de los pronombres es lo interesante que haga el alumno». Así
+  que el sustantivo y el adjetivo son **material**: pueden venir de una
+  unidad posterior siempre que **la ficha del tema los enseñe**. Lo que no
+  vale es preguntar por el significado de algo que no se ha dado.
+  `ric/revision/detectar-prematuros.py` clasifica con ese criterio —
+  `pregunta` (cambiar el ejercicio), `falta` (meterla en la ficha), `vista`
+  (está bien)— y la app de revisión solo pone en cola las dos primeras.
+
+- **Los distractores sí pueden ser de unidades posteriores.** Ric: «eso no me
+  preocupa en lo más mínimo». Solo se mira lo que hace falta para acertar.
+
 - **El curso va a tener varios euskalkiak, no solo bizkaiera** (Ric,
   03/10/2026). Hoy solo está montado el bizkaiera, pero la intención es
   añadir más para que cada estudiante practique las formas de su zona. Así
