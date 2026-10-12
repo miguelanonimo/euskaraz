@@ -206,7 +206,7 @@
     },
     {
       "titulo": "«Gustatu», y de qué suele gustar uno",
-      "cuerpo": "La forma de diccionario es <b>gustatu</b> (gustar), aunque en la práctica siempre la verás trabajando: <i>gustatzen zait</i>.\n\nY estas cuatro son las que más salen al hablar de gustos, porque sirven para cualquier cosa:\n\n<b>janaria</b> — la comida (en general)\n<b>edaria</b> — la bebida\n<b>gauza</b> — la cosa\n<b>guztia</b> — todo\n\n<i>Janaria</i> y <i>edaria</i> se explican solas si te fijas: llevan dentro <b>jan</b> (comer) y <b>edan</b> (beber), los dos verbos que llegan en la séptima unidad. Lo comido y lo bebido.\n\n<b>Gauza</b> es la palabra comodín para lo que no sabes nombrar todavía —y al principio son muchas—:\n\n<b>Gauza hau gustatzen zait.</b> — Me gusta esta cosa.\n\nY <b>guztia</b> es «todo», que te saca de cualquier apuro cuando no quieres detallar:\n\n<b>Guztia gustatzen zait.</b> — Me gusta todo.",
+      "cuerpo": "La forma de diccionario es <b>gustatu</b> (gustar), aunque en la práctica siempre la verás trabajando: <i>gustatzen zait</i>.\n\nY estas cuatro son las que más salen al hablar de gustos, porque sirven para cualquier cosa:\n\n<b>janaria</b> — la comida (en general)\n<b>edaria</b> — la bebida\n<b>gauza</b> — la cosa\n<b>guztia</b> — todo\n\n<i>Janaria</i> y <i>edaria</i> se explican solas si te fijas: llevan dentro <b>jan</b> (comer) y <b>edan</b> (beber), los dos verbos que llegan en la séptima unidad. Lo comido y lo bebido.\n\n<b>Gauza</b> es la palabra comodín para lo que no sabes nombrar todavía —y al principio son muchas—:\n\n<b>Gauza hau gustatzen zait.</b> — Me gusta esta cosa.\n\nY <b>guztia</b> es «todo», que te saca de cualquier apuro cuando no quieres detallar:\n\n<b>Guztia gustatzen zait.</b> — Me gusta todo.\n\nY hay otra palabra para exactamente lo mismo, que conviene conocer desde ya:\n\n<b>dena</b> — todo\n\nLas dos son correctas, y aquí son intercambiables:\n\n<b>Dena gustatzen zait.</b> — Me gusta todo.\n\nLa diferencia es de costumbre, no de corrección: <b>guzti</b> suele ir pegado a un nombre —<i>egun guztia</i> (todo el día)—, mientras que <b>dena</b> va suelto. Así que cuando «todo» va solo, como aquí, lo que más oirás es <b>dena</b>. En la última unidad volverá en plural: <b>denak</b>, «todos».",
       "ejemplos": [
         {
           "eu": "Janaria gustatzen zait.",
@@ -741,6 +741,13 @@
       "es": "todo",
       "nota": null,
       "audio": "unidades/u10/guztia.mp3",
+      "categoria": "otros",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "dena",
+      "es": "todo",
+      "nota": "Lo mismo que «guztia». Cuando «todo» va solo, sin nombre delante, es la forma más corriente.",
       "categoria": "otros",
       "subnivel": "9.1"
     },

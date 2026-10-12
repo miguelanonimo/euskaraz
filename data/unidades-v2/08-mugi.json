@@ -1335,10 +1335,10 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Los lunes voy a la feria.",
-          "eu": "Astelehenean azokara joaten naiz.",
+          "es": "Todos los lunes voy a la feria.",
+          "eu": "Astelehenero azokara joaten naiz.",
           "palabras": [
-            "astelehenean",
+            "astelehenero",
             "azokara",
             "joaten",
             "naiz"
