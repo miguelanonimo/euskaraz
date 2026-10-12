@@ -470,6 +470,7 @@
       "eu": "euskara",
       "es": "el euskera",
       "nota": "La lengua. Y «euskaraz» es «en euskera».",
+      "audio": "unidades/u1/euskara.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3"
     },
@@ -477,6 +478,7 @@
       "eu": "Euskal Herria",
       "es": "el País Vasco",
       "nota": "«El territorio del euskera». Siempre en dos palabras y las dos con mayúscula.",
+      "audio": "unidades/u1/euskal-herria.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3"
     },
@@ -484,6 +486,7 @@
       "eu": "euskalkia",
       "es": "el dialecto",
       "nota": "Cada forma local de hablar euskera.",
+      "audio": "unidades/u1/euskalkia.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3"
     },
@@ -491,6 +494,7 @@
       "eu": "batua",
       "es": "el euskera unificado",
       "nota": "El estándar del euskera. Es lo que enseña esta app.",
+      "audio": "unidades/u1/batua.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3",
       "esAlt": [
@@ -502,6 +506,7 @@
       "eu": "Bizkaia",
       "es": "Vizcaya",
       "nota": "Su capital es Bilbo (Bilbao). En castellano oficial también se escribe «Bizkaia».",
+      "audio": "unidades/u1/bizkaia.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3"
     },
@@ -509,6 +514,7 @@
       "eu": "Gipuzkoa",
       "es": "Guipúzcoa",
       "nota": "Su capital es Donostia (San Sebastián). En castellano oficial también se escribe «Gipuzkoa».",
+      "audio": "unidades/u1/gipuzkoa.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3"
     },
@@ -516,6 +522,7 @@
       "eu": "Araba",
       "es": "Álava",
       "nota": "Su capital es Gasteiz (Vitoria).",
+      "audio": "unidades/u1/araba.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3"
     },
@@ -523,6 +530,7 @@
       "eu": "Nafarroa",
       "es": "Navarra",
       "nota": "Su capital es Iruñea (Pamplona).",
+      "audio": "unidades/u1/nafarroa.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3"
     }

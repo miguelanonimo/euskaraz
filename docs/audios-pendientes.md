@@ -177,6 +177,23 @@ ahora”, y *joaten naiz* es “suelo ir”». Lo detectó Dei.
 
 ---
 
+### Añadido el 12/10/2026 · `astiro` (1)
+
+Palabra nueva en el vocabulario de la unidad 11 de v2 (tema 11.3), «despacio».
+Va junto a `poliki`, que ya tiene audio. Las dos son batua: las dos están en
+el *Euskaltzaindiaren Hiztegia* sin marca de dialecto ni de registro, y el
+diccionario define la segunda acepción de `poliki` literalmente como
+«astiro». Lo notó Dei.
+
+**Ruta de destino, comprobada contra el bucket:** `unidades/u11/astiro.mp3`
+(comprobado: no existe).
+
+Ojo: la ficha 11.4 menciona también **`astia`**, que es una de las que ya
+estaban pendientes de generar. Cuando se generen las dos, el párrafo nuevo
+se enciende entero.
+
+---
+
 ---
 
 ## C · El agujero de antes: ya arreglado, falta ejecutarlo

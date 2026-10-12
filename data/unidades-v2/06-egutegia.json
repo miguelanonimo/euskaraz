@@ -608,6 +608,7 @@
       "eu": "egutegia",
       "es": "el calendario",
       "nota": "De «egun» (día). Es el título de esta unidad: todo lo que estás viendo —la hora, los días, los meses— cabe dentro de un egutegi.",
+      "audio": "unidades/u6/egutegia.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.2"
     },
@@ -615,6 +616,7 @@
       "eu": "hilabetea",
       "es": "el mes",
       "nota": null,
+      "audio": "unidades/u6/hilabetea.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -622,6 +624,7 @@
       "eu": "urtarrila",
       "es": "enero",
       "nota": null,
+      "audio": "unidades/u6/urtarrila.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -629,6 +632,7 @@
       "eu": "otsaila",
       "es": "febrero",
       "nota": null,
+      "audio": "unidades/u6/otsaila.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -636,6 +640,7 @@
       "eu": "martxoa",
       "es": "marzo",
       "nota": null,
+      "audio": "unidades/u6/martxoa.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -643,6 +648,7 @@
       "eu": "apirila",
       "es": "abril",
       "nota": null,
+      "audio": "unidades/u6/apirila.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -650,6 +656,7 @@
       "eu": "maiatza",
       "es": "mayo",
       "nota": null,
+      "audio": "unidades/u6/maiatza.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -657,6 +664,7 @@
       "eu": "ekaina",
       "es": "junio",
       "nota": null,
+      "audio": "unidades/u6/ekaina.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -664,6 +672,7 @@
       "eu": "uztaila",
       "es": "julio",
       "nota": null,
+      "audio": "unidades/u6/uztaila.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -671,6 +680,7 @@
       "eu": "abuztua",
       "es": "agosto",
       "nota": null,
+      "audio": "unidades/u6/abuztua.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -678,6 +688,7 @@
       "eu": "iraila",
       "es": "septiembre",
       "nota": null,
+      "audio": "unidades/u6/iraila.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -685,6 +696,7 @@
       "eu": "urria",
       "es": "octubre",
       "nota": null,
+      "audio": "unidades/u6/urria.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -692,6 +704,7 @@
       "eu": "azaroa",
       "es": "noviembre",
       "nota": null,
+      "audio": "unidades/u6/azaroa.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -699,6 +712,7 @@
       "eu": "abendua",
       "es": "diciembre",
       "nota": null,
+      "audio": "unidades/u6/abendua.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -706,6 +720,7 @@
       "eu": "urtebetetzea",
       "es": "el cumpleaños",
       "nota": "De «urte» (año) + «bete» (llenar): el completarse del año.",
+      "audio": "unidades/u6/urtebetetzea.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.3"
     },
@@ -753,6 +768,7 @@
       "eu": "udaberria",
       "es": "la primavera",
       "nota": "«Uda» (verano) + «berri» (nuevo): el verano nuevo.",
+      "audio": "unidades/u6/udaberria.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.4"
     },
@@ -760,6 +776,7 @@
       "eu": "udazkena",
       "es": "el otoño",
       "nota": "También sale de «uda»: el final del verano.",
+      "audio": "unidades/u6/udazkena.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.4"
     },
@@ -767,6 +784,7 @@
       "eu": "eguraldia",
       "es": "el tiempo (meteorológico)",
       "nota": null,
+      "audio": "unidades/u6/eguraldia.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.4"
     },
@@ -774,6 +792,7 @@
       "eu": "elurra",
       "es": "la nieve",
       "nota": null,
+      "audio": "unidades/u6/elurra.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.4"
     },
@@ -781,6 +800,7 @@
       "eu": "haizea",
       "es": "el viento",
       "nota": null,
+      "audio": "unidades/u6/haizea.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.4"
     },
@@ -795,6 +815,7 @@
       "eu": "beroa",
       "es": "el calor",
       "nota": null,
+      "audio": "unidades/u6/beroa.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.4"
     },
@@ -802,6 +823,7 @@
       "eu": "hodeia",
       "es": "la nube",
       "nota": null,
+      "audio": "unidades/u6/hodeia.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.4"
     },
@@ -817,6 +839,7 @@
       "eu": "Gabonak",
       "es": "la Navidad",
       "nota": "Plural de «gabon». Ver la ficha.",
+      "audio": "unidades/u6/gabonak.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.5"
     },
@@ -824,6 +847,7 @@
       "eu": "Urte Berri",
       "es": "el Año Nuevo",
       "nota": null,
+      "audio": "unidades/u6/urte-berri.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.5"
     },
@@ -831,6 +855,7 @@
       "eu": "Olentzero",
       "es": "el carbonero de la Navidad",
       "nota": "Baja del monte la noche del 24 y trae los regalos.",
+      "audio": "unidades/u6/olentzero.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.5"
     },
@@ -838,6 +863,7 @@
       "eu": "Aste Santua",
       "es": "la Semana Santa",
       "nota": null,
+      "audio": "unidades/u6/aste-santua.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.5"
     },
@@ -845,6 +871,7 @@
       "eu": "Inauteriak",
       "es": "los carnavales",
       "nota": null,
+      "audio": "unidades/u6/inauteriak.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.5"
     },
@@ -852,6 +879,7 @@
       "eu": "jaieguna",
       "es": "el día festivo",
       "nota": null,
+      "audio": "unidades/u6/jaieguna.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.5"
     },

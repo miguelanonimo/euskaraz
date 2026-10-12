@@ -644,6 +644,7 @@
       "eu": "mugitu",
       "es": "mover, moverse",
       "nota": "El título de la unidad, «Mugi zaitez!», es su imperativo: «¡muévete!».",
+      "audio": "unidades/u8/mugitu.mp3",
       "categoria": "verbo",
       "subnivel": "8.2"
     },
@@ -651,6 +652,7 @@
       "eu": "ahal dut",
       "es": "puedo",
       "nota": "Tener la posibilidad de hacer algo.",
+      "audio": "unidades/u8/ahal-dut.mp3",
       "categoria": "verbo",
       "subnivel": "8.4"
     },
@@ -658,6 +660,7 @@
       "eu": "ezin dut",
       "es": "no puedo",
       "nota": "Fíjate: no lleva «ez» delante, ya va dentro.",
+      "audio": "unidades/u8/ezin-dut.mp3",
       "categoria": "verbo",
       "subnivel": "8.4"
     },
@@ -665,6 +668,7 @@
       "eu": "behar dut",
       "es": "tengo que, necesito",
       "nota": null,
+      "audio": "unidades/u8/behar-dut.mp3",
       "categoria": "verbo",
       "subnivel": "8.4"
     },
@@ -672,6 +676,7 @@
       "eu": "nahi dut",
       "es": "quiero",
       "nota": "Ya la tenías; aquí se ve en familia.",
+      "audio": "unidades/u8/nahi-dut.mp3",
       "categoria": "verbo",
       "subnivel": "8.4"
     }

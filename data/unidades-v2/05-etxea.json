@@ -515,6 +515,7 @@
       "eu": "gorria",
       "es": "rojo",
       "nota": null,
+      "audio": "unidades/u5/gorria.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -522,6 +523,7 @@
       "eu": "urdina",
       "es": "azul",
       "nota": null,
+      "audio": "unidades/u5/urdina.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -529,6 +531,7 @@
       "eu": "horia",
       "es": "amarillo",
       "nota": null,
+      "audio": "unidades/u5/horia.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -536,6 +539,7 @@
       "eu": "berdea",
       "es": "verde",
       "nota": null,
+      "audio": "unidades/u5/berdea.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -543,6 +547,7 @@
       "eu": "zuria",
       "es": "blanco",
       "nota": null,
+      "audio": "unidades/u5/zuria.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -550,6 +555,7 @@
       "eu": "beltza",
       "es": "negro",
       "nota": null,
+      "audio": "unidades/u5/beltza.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -557,6 +563,7 @@
       "eu": "grisa",
       "es": "gris",
       "nota": null,
+      "audio": "unidades/u5/grisa.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -564,6 +571,7 @@
       "eu": "marroia",
       "es": "marrón",
       "nota": null,
+      "audio": "unidades/u5/marroia.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -571,6 +579,7 @@
       "eu": "arrosa",
       "es": "rosa",
       "nota": null,
+      "audio": "unidades/u5/arrosa.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -578,6 +587,7 @@
       "eu": "morea",
       "es": "morado",
       "nota": null,
+      "audio": "unidades/u5/morea.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -585,6 +595,7 @@
       "eu": "laranja",
       "es": "naranja",
       "nota": "La misma palabra sirve para la fruta y para el color.",
+      "audio": "unidades/u5/laranja.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -592,6 +603,7 @@
       "eu": "egongela",
       "es": "el salón",
       "nota": null,
+      "audio": "unidades/u5/egongela.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -599,6 +611,7 @@
       "eu": "jangela",
       "es": "el comedor",
       "nota": null,
+      "audio": "unidades/u5/jangela.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -606,6 +619,7 @@
       "eu": "bainugela",
       "es": "el cuarto de baño",
       "nota": "El de casa. Para preguntar en un bar, «komuna».",
+      "audio": "unidades/u5/bainugela.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -613,6 +627,7 @@
       "eu": "sarrera",
       "es": "la entrada",
       "nota": null,
+      "audio": "unidades/u5/sarrera.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -620,6 +635,7 @@
       "eu": "eskailerak",
       "es": "las escaleras",
       "nota": "Se usa en plural.",
+      "audio": "unidades/u5/eskailerak.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -627,6 +643,7 @@
       "eu": "igogailua",
       "es": "el ascensor",
       "nota": null,
+      "audio": "unidades/u5/igogailua.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -634,6 +651,7 @@
       "eu": "balkoia",
       "es": "el balcón",
       "nota": null,
+      "audio": "unidades/u5/balkoia.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -641,6 +659,7 @@
       "eu": "lorategia",
       "es": "el jardín",
       "nota": null,
+      "audio": "unidades/u5/lorategia.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -648,6 +667,7 @@
       "eu": "garajea",
       "es": "el garaje",
       "nota": null,
+      "audio": "unidades/u5/garajea.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -655,6 +675,7 @@
       "eu": "armairua",
       "es": "el armario",
       "nota": null,
+      "audio": "unidades/u5/armairua.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -662,6 +683,7 @@
       "eu": "sofa",
       "es": "el sofá",
       "nota": null,
+      "audio": "unidades/u5/sofa.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -669,6 +691,7 @@
       "eu": "telebista",
       "es": "la televisión",
       "nota": null,
+      "audio": "unidades/u5/telebista.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -676,6 +699,7 @@
       "eu": "hozkailua",
       "es": "la nevera",
       "nota": null,
+      "audio": "unidades/u5/hozkailua.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -683,6 +707,7 @@
       "eu": "dutxa",
       "es": "la ducha",
       "nota": null,
+      "audio": "unidades/u5/dutxa.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -690,6 +715,7 @@
       "eu": "ispilua",
       "es": "el espejo",
       "nota": null,
+      "audio": "unidades/u5/ispilua.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -697,6 +723,7 @@
       "eu": "argia",
       "es": "la luz",
       "nota": null,
+      "audio": "unidades/u5/argia.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -704,6 +731,7 @@
       "eu": "horma",
       "es": "la pared",
       "nota": null,
+      "audio": "unidades/u5/horma.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -711,6 +739,7 @@
       "eu": "teilatua",
       "es": "el tejado",
       "nota": null,
+      "audio": "unidades/u5/teilatua.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.2"
     },
@@ -734,6 +763,7 @@
       "eu": "txoria",
       "es": "el pájaro",
       "nota": null,
+      "audio": "unidades/u5/txoria.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.5"
     },
@@ -741,6 +771,7 @@
       "eu": "zaldia",
       "es": "el caballo",
       "nota": null,
+      "audio": "unidades/u5/zaldia.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.5"
     },
@@ -748,6 +779,7 @@
       "eu": "behia",
       "es": "la vaca",
       "nota": null,
+      "audio": "unidades/u5/behia.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.5"
     },
@@ -755,6 +787,7 @@
       "eu": "ardia",
       "es": "la oveja",
       "nota": null,
+      "audio": "unidades/u5/ardia.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.5"
     },
@@ -762,6 +795,7 @@
       "eu": "txerria",
       "es": "el cerdo",
       "nota": null,
+      "audio": "unidades/u5/txerria.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.5"
     },
@@ -769,6 +803,7 @@
       "eu": "oiloa",
       "es": "la gallina",
       "nota": null,
+      "audio": "unidades/u5/oiloa.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.5"
     },
@@ -776,6 +811,7 @@
       "eu": "untxia",
       "es": "el conejo",
       "nota": null,
+      "audio": "unidades/u5/untxia.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.5"
     },
@@ -783,6 +819,7 @@
       "eu": "sagua",
       "es": "el ratón",
       "nota": null,
+      "audio": "unidades/u5/sagua.mp3",
       "categoria": "sustantivo",
       "subnivel": "5.5"
     },
@@ -790,6 +827,7 @@
       "eu": "baserria",
       "es": "el caserío",
       "nota": "De «baso» (bosque) + «herri» (pueblo): la casa de fuera del pueblo. No es solo el edificio: incluye la tierra y los animales.",
+      "audio": "unidades/u5/baserria.mp3",
       "subnivel": "5.5"
     },
     {
