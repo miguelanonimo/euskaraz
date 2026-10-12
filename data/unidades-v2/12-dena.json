@@ -78,7 +78,7 @@
     },
     {
       "titulo": "De las preguntas salen los indefinidos",
-      "cuerpo": "Y dos más para cerrar el grupo:\n\n<b>denak</b> — todos\n<b>bakarrik</b> — solo, únicamente\n\n<b>denak</b> es un plural, así que el verbo va en plural:\n\n<b>Denak hemen daude.</b> — Todos están aquí.\n<b>Denak nire lagunak dira.</b> — Todos son mis amigos.\n\nOjo con uno: cuando «todos» es quien <i>hace</i> algo —el sujeto de un verbo\nque lleva objeto— <b>denak</b> cambia a <b>denek</b>:\n\n<b>Denek euskara ikasten dute.</b> — Todos aprenden euskera.\n\nLo que manda es el verbo: <i>daude</i> (están) no lleva objeto, así que va\n<b>denak</b>; <i>ikasten dute</i> (aprenden) sí lleva uno, el euskera, así que\nva <b>denek</b>.\n\n<b>bakarrik</b> se coloca <b>detrás</b> de la palabra a la que afecta, igual que\n<i>ere</i>:\n\n<b>Kafea bakarrik nahi dut.</b> — Solo quiero café.\n<b>Ura bakarrik nahi dut.</b> — Solo quiero agua.\n\nY si no hay nada delante al que agarrarse, pasa a significar «a solas»:\n\n<b>Bakarrik nago etxean.</b> — Estoy solo en casa.",
+      "cuerpo": "En la tercera unidad viste la primera de las tres maneras de decir algo a medias: pegarle <b>edo-</b> delante a una pregunta.\n\n<i>nor</i> (quién) → <b>edonor</b> — cualquiera\n\nAquí llegan las otras dos, y salen de las mismas preguntas.\n\n<b>La primera: «-bait» al final, para decir «algún»</b>\n\n<i>nor</i> (quién) → <b>norbait</b> — alguien\n<i>zer</i> (qué) → <b>zerbait</b> — algo\n<i>non</i> (dónde) → <b>nonbait</b> — en algún sitio\n\n<b>Norbait dago etxean.</b> — Hay alguien en casa.\n<b>Zerbait esan du.</b> — Ha dicho algo.\n\n<b>La segunda: «nadie» y «nada»</b>\n\nEstas no se forman pegando nada: son palabras propias, y hay que aprendérselas aparte.\n\n<b>inor</b> — nadie, para <b>personas</b>\n<b>ezer</b> — nada, para <b>cosas</b>\n\nLa diferencia entre las dos es de qué estás hablando, y confundirlas es el tropiezo más corriente al empezar: <i>inor</i> es gente, <i>ezer</i> son cosas.\n\n<b>Y lo importante: piden un «ez» en la frase</b>\n\nEn castellano dices «<b>no</b> hay <b>nadie</b>», con dos negaciones. El euskera hace lo mismo:\n\n<b>Ez dago inor.</b> — No hay nadie.\n<b>Ez dut ezer esan.</b> — No he dicho nada.\n\nFíjate en el orden: el <b>ez</b> va delante del verbo, y <i>inor</i> o <i>ezer</i> van detrás. Por eso en el vocabulario los verás escritos <b>inor ez</b> — nadie y <b>ezer ez</b> — nada, con el <i>ez</i> pegado, para que no se te olvide que vienen acompañados.\n\nY ya tenías dos de la familia sin saberlo: <i>ezer ez</i> desde la séptima unidad e <i>inoiz ez</i> (nunca) desde la tercera.\n\n<b>En preguntas cambian de sentido</b>\n\nCon el <b>al</b> que acabas de ver, <i>inor</i> y <i>ezer</i> dejan de ser «nadie» y «nada» y pasan a ser «alguien» y «algo»:\n\n<b>Inor al dago etxean?</b> — ¿Hay alguien en casa?\n\nEs la misma palabra: lo que cambia es que la frase ya no afirma nada.",
       "ejemplos": [
         {
           "eu": "Norbait dago etxean.",
@@ -94,7 +94,14 @@
           "eu": "Zerbait esan du.",
           "es": "Ha dicho algo.",
           "audio": "unidades/u12/zerbait-esan-du.mp3"
-        },
+        }
+      ],
+      "subnivel": "12.3"
+    },
+    {
+      "titulo": "«Denak» y «bakarrik»",
+      "cuerpo": "Y dos más para cerrar el grupo:\n\n<b>denak</b> — todos\n<b>bakarrik</b> — solo, únicamente\n\n<b>denak</b> es un plural, así que el verbo va en plural:\n\n<b>Denak hemen daude.</b> — Todos están aquí.\n<b>Denak nire lagunak dira.</b> — Todos son mis amigos.\n\nOjo con uno: cuando «todos» es quien <i>hace</i> algo —el sujeto de un verbo que lleva objeto— <b>denak</b> cambia a <b>denek</b>:\n\n<b>Denek euskara ikasten dute.</b> — Todos aprenden euskera.\n\nLo que manda es el verbo: <i>daude</i> (están) no lleva objeto, así que va <b>denak</b>; <i>ikasten dute</i> (aprenden) sí lleva uno, el euskera, así que\nva <b>denek</b>.\n\n<b>bakarrik</b> se coloca <b>detrás</b> de la palabra a la que afecta, igual que\n<i>ere</i>:\n\n<b>Kafea bakarrik nahi dut.</b> — Solo quiero café.\n<b>Ura bakarrik nahi dut.</b> — Solo quiero agua.\n\nY si no hay nada delante al que agarrarse, pasa a significar «a solas»:\n\n<b>Bakarrik nago etxean.</b> — Estoy solo en casa.",
+      "ejemplos": [
         {
           "eu": "Denak hemen daude.",
           "es": "Todos están aquí.",
