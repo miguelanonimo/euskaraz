@@ -131,6 +131,52 @@ node generar.mjs u10.1
 Los 2 de `u2` son de esta semana: `ha` y `hareek`, las formas bizkainas de
 los demostrativos (dato de Ric, verificado en Bizkaieraren ataria).
 
+### Añadido el 12/10/2026 · `dena` (1)
+
+Palabra nueva en el vocabulario de la unidad 9 de v2 (tema 9.1), «todo».
+Va junto a `guztia`, que ya tiene audio: Euskaltzaindia las da por
+equivalentes, y `dena` es la forma más corriente cuando «todo» va solo, sin
+nombre delante (ficha `dena(k)/guztia(k)` del Euskara Batuaren Eskuliburua).
+Lo notó Dei, que es a quien le sonaba raro `Guztia gustatzen zait`.
+
+**Ruta de destino, comprobada contra el bucket:** `unidades/u10/dena.mp3`
+(comprobado: no existe). Ojo a no confundirla con `unidades/u12/denak.mp3`,
+que sí existe y es otra palabra: el plural `denak`, «todos», de la unidad 12.
+
+La carpeta es `u10` y no `u9` por el desplazamiento histórico de cuando el
+curso tenía diez unidades. No es un error.
+
+**No está contado en las cifras de arriba**, que son anteriores. Esas cifras
+están pendientes de una revisión aparte: comprobando las palabras sin audio
+una a una contra el bucket salió que la gran mayoría ya tienen el mp3 subido
+y solo les falta el campo `audio` en el JSON. Está en
+`docs/audio-bloque3-revision.md`.
+
+---
+
+### Añadido el 12/10/2026 · nada que generar, pero un mp3 queda sin uso
+
+Al corregir la gramática de la ficha 11.2 (ver abajo) ha dejado de usarse
+`unidades/u11/gaur-joaten-naiz.mp3`. **No hay que generar nada**: la frase que
+ocupa su sitio, `Astelehenero azokara joaten naiz.`, ya tenía su mp3
+(`unidades/u9/astelehenero-azokara-joaten-naiz.mp3`) y ahora suena también en
+la unidad 11 y en el ejercicio `u9-g09 v3` de la unidad 8, que antes era mudo.
+
+**El fichero se puede dejar donde está**: no estorba y no lo referencia nadie.
+Solo conviene saber que está huérfano, por si algún día se limpia el bucket.
+
+Ojo a una cosa para la revisión de audio: Ric dio `gaur-joaten-naiz` por
+**bueno** en el bloque 7. El audio estaba bien; lo que estaba mal era la frase.
+
+**Por qué se quitó:** `Gaur joaten naiz` juntaba un tiempo puntual («gaur»)
+con la forma de la costumbre. La *Euskararen Gramatika* de Euskaltzaindia
+(26.6.1.1) dice que con los verbos que tienen forma sintética viva —`joan`
+la tiene: *noa, doa*— la forma larga `-t(z)en + naiz` no sirve para un momento
+concreto. Y la propia unidad 8 del curso ya lo enseñaba bien: «*noa* es “voy
+ahora”, y *joaten naiz* es “suelo ir”». Lo detectó Dei.
+
+---
+
 ---
 
 ## C · El agujero de antes: ya arreglado, falta ejecutarlo
