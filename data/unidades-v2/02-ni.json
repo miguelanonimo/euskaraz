@@ -1294,7 +1294,7 @@
           "respuestas": [
             "zure laguna"
           ],
-          "pista": "De «zu» sale «zure»."
+          "pista": "amigo = «lagun» + artículo"
         },
         {
           "tipo": "traducir",
@@ -1312,7 +1312,7 @@
           "respuestas": [
             "nire izena"
           ],
-          "pista": "«izen» + artículo."
+          "pista": "nombre = «izen» + artículo"
         },
         {
           "tipo": "traducir",
@@ -1416,6 +1416,86 @@
         }
       ],
       "subnivel": "2.2"
+    },
+    {
+      "id": "u2-g62",
+      "subnivel": "2.2",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué añade «neu» frente a «ni»?",
+          "opciones": [
+            "Plural",
+            "Énfasis",
+            "Formalidad",
+            "Pasado"
+          ],
+          "correcta": 1,
+          "explicacion": "Es la diferencia entre «yo» y «yo mismo»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En Bizkaia, las formas «neu, zeu, geu»…",
+          "opciones": [
+            "No se usan",
+            "Son de uso muy corriente",
+            "Son solo escritas",
+            "Significan otra cosa"
+          ],
+          "correcta": 1,
+          "explicacion": "Allí se oyen constantemente, sin necesidad de énfasis especial."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál es la forma reforzada de «gu»?",
+          "opciones": [
+            "geu",
+            "gure",
+            "geure",
+            "guek"
+          ],
+          "correcta": 0,
+          "explicacion": "ni→neu, zu→zeu, gu→geu. El posesivo correspondiente es «geure»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «neure etxea»?",
+          "opciones": [
+            "mi propia casa",
+            "nuestra casa",
+            "tu casa",
+            "su casa"
+          ],
+          "correcta": 0,
+          "explicacion": "«neure» es el posesivo de «neu»: subraya que la casa es de uno mismo."
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cada pronombre con su forma reforzada",
+          "pares": [
+            {
+              "eu": "ni",
+              "es": "neu"
+            },
+            {
+              "eu": "zu",
+              "es": "zeu"
+            },
+            {
+              "eu": "gu",
+              "es": "geu"
+            },
+            {
+              "eu": "zuek",
+              "es": "zeuek"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "u2-g09",
@@ -1534,28 +1614,28 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué añade «neu» frente a «ni»?",
+          "pregunta": "¿Cuál de estos pronombres cambia según sea hombre o mujer?",
           "opciones": [
-            "Plural",
-            "Énfasis",
-            "Formalidad",
-            "Pasado"
+            "Ninguno",
+            "hura",
+            "haiek",
+            "zu"
           ],
-          "correcta": 1,
-          "explicacion": "Es la diferencia entre «yo» y «yo mismo»."
+          "correcta": 0,
+          "explicacion": "El euskera no marca el género en los pronombres: «hura» vale para él y para ella."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En Bizkaia, las formas «neu, zeu, geu»…",
+          "pregunta": "«Bera» y «hura» significan lo mismo. ¿Cuál vas a ver más escrito?",
           "opciones": [
-            "No se usan",
-            "Son de uso muy corriente",
-            "Son solo escritas",
-            "Significan otra cosa"
+            "hura",
+            "bera",
+            "las dos por igual",
+            "ninguna de las dos"
           ],
-          "correcta": 1,
-          "explicacion": "Allí se oyen constantemente, sin necesidad de énfasis especial."
+          "correcta": 0,
+          "explicacion": "«Hura» es la forma del batua escrito. «Bera» se oye muchísimo al hablar, y también es correcta."
         }
       ],
       "subnivel": "2.1"
@@ -1891,7 +1971,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Ni ere euskalduna ____.",
+          "pregunta": "Ni euskalduna ____.",
           "opciones": [
             "da",
             "naiz",
@@ -1899,7 +1979,7 @@
             "zara"
           ],
           "correcta": 1,
-          "explicacion": "«ere» no cambia el verbo: el sujeto sigue siendo «ni»."
+          "explicacion": "El sujeto es «ni», así que el verbo es «naiz»."
         },
         {
           "tipo": "opcion",
@@ -2066,30 +2146,29 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Yo también soy estudiante.",
-          "eu": "Ni ere ikaslea naiz.",
+          "es": "Vosotros sois médicos.",
+          "eu": "Zuek medikuak zarete.",
           "palabras": [
-            "ni",
-            "ere",
-            "ikaslea",
-            "naiz"
+            "zuek",
+            "medikuak",
+            "zarete"
           ],
           "distractores": [
-            "da"
+            "zara"
           ]
         },
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Él es escritor.",
-          "eu": "Hura idazlea da.",
+          "es": "Ellos son profesores.",
+          "eu": "Haiek irakasleak dira.",
           "palabras": [
-            "hura",
-            "idazlea",
-            "da"
+            "haiek",
+            "irakasleak",
+            "dira"
           ],
           "distractores": [
-            "neu"
+            "da"
           ]
         },
         {
@@ -2168,30 +2247,29 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Dónde se coloca «ere» (también)?",
+          "pregunta": "En «Hura ikaslea da», ¿qué es la «-a» de «ikaslea»?",
           "opciones": [
-            "Al principio de la frase",
-            "Justo detrás de lo que quiere subrayar",
-            "Delante del verbo siempre",
-            "Al final"
+            "El artículo: el, la",
+            "La marca de plural",
+            "Parte de la palabra",
+            "La marca de femenino"
           ],
-          "correcta": 1,
-          "explicacion": "«Ni ere ikaslea naiz» subraya el «ni». Y puede ir tras cualquier cosa, no solo tras el pronombre: «Bilbon ere», «liburua ere»."
+          "correcta": 0,
+          "explicacion": "El euskera no pone «el» ni «la» delante: el artículo va pegado al final. En plural es «-ak»: ikasleak."
         },
         {
           "tipo": "escribir",
           "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
-          "es": "Yo también soy estudiante.",
-          "eu": "Ni ere ikaslea naiz.",
+          "es": "Nosotros somos estudiantes.",
+          "eu": "Gu ikasleak gara.",
           "palabras": [
-            "ni",
-            "ere",
-            "ikaslea",
-            "naiz"
+            "gu",
+            "ikasleak",
+            "gara"
           ],
           "distractores": [
-            "gara",
-            "ikasleak"
+            "naiz",
+            "ikaslea"
           ]
         }
       ],
@@ -2382,7 +2460,7 @@
           "explicacion": "Sujeto plural, así que el atributo también va en plural: «-koak»."
         }
       ],
-      "subnivel": "2.3"
+      "subnivel": "2.4"
     },
     {
       "id": "u4-g08",
@@ -2453,7 +2531,7 @@
           "explicacion": "«Irun» acaba en -n, así que toca «-go»."
         }
       ],
-      "subnivel": "2.3",
+      "subnivel": "2.4",
       "explica": "2.4"
     },
     {
