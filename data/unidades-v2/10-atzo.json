@@ -2353,6 +2353,637 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u10-g47",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek gure lagunak ____ txikitan.",
+          "opciones": [
+            "dira",
+            "ziren",
+            "zuten",
+            "zeuden"
+          ],
+          "correcta": 1,
+          "explicacion": "«ser amigos» no lleva objeto: el pasado de «izan» con «haiek» es «ziren»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zuek irakasleak ____ iaz.",
+          "opciones": [
+            "zineten",
+            "zarete",
+            "zenuten",
+            "zeundeten"
+          ],
+          "correcta": 0,
+          "explicacion": "Pasado de «izan» con «zuek»: zineten."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Gu ikasleak ____ lehen.",
+          "opciones": [
+            "genuen",
+            "gara",
+            "ginen",
+            "geunden"
+          ],
+          "correcta": 2,
+          "explicacion": "Pasado de «izan» con «gu»: ginen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hura sukaldaria ____ garai hartan.",
+          "opciones": [
+            "zegoen",
+            "zuen",
+            "zen",
+            "da"
+          ],
+          "correcta": 2,
+          "explicacion": "Pasado de «izan» con «hura»: zen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nire amona medikua ____.",
+          "opciones": [
+            "ziren",
+            "zen",
+            "zuten",
+            "zegoen"
+          ],
+          "correcta": 1,
+          "explicacion": "«nire amona» es una sola persona, así que va con «zen», no con «ziren»."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u10-g48",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ellos eran mis amigos.",
+          "respuestas": [
+            "nire lagunak ziren",
+            "haiek nire lagunak ziren"
+          ],
+          "pista": "Tres palabras. El sujeto no lleva -k: este verbo no tiene objeto."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Vosotros erais profesores.",
+          "respuestas": [
+            "irakasleak zineten",
+            "zuek irakasleak zineten"
+          ],
+          "pista": "Dos palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Nosotros éramos estudiantes.",
+          "respuestas": [
+            "ikasleak ginen",
+            "gu ikasleak ginen"
+          ],
+          "pista": "Dos palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ella era mi profesora.",
+          "respuestas": [
+            "nire irakaslea zen",
+            "hura nire irakaslea zen"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "El año pasado fuimos a Bilbao.",
+          "respuestas": [
+            "iaz bilbora joan ginen",
+            "iaz bilbora joan ginen gu"
+          ],
+          "pista": "Cuatro palabras. «a Bilbao» es una sola, con -ra al final."
+        }
+      ],
+      "subnivel": "10.1"
+    },
+    {
+      "id": "u10-g49",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Nik hiru liburu irakurri ____.",
+          "opciones": [
+            "nuen",
+            "nituen",
+            "nintzen",
+            "genituen"
+          ],
+          "correcta": 1,
+          "explicacion": "Son tres libros, así que el objeto es plural y se cuela el -it-: «nuen» pasa a «nituen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hark bi sagar erosi ____.",
+          "opciones": [
+            "zituzten",
+            "zen",
+            "zituen",
+            "zuen"
+          ],
+          "correcta": 2,
+          "explicacion": "Objeto plural (dos manzanas) y sujeto «hark»: zituen. Con una sola manzana sería «zuen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Guk lau opari eman ____.",
+          "opciones": [
+            "genuen",
+            "zenituen",
+            "genituen",
+            "ginen"
+          ],
+          "correcta": 2,
+          "explicacion": "«genuen» con el -it- del plural dentro: genituen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zuek bi liburu ikusi ____.",
+          "opciones": [
+            "zenuten",
+            "zenituzten",
+            "zineten",
+            "zituzten"
+          ],
+          "correcta": 1,
+          "explicacion": "Dos libros, sujeto «zuek»: zenituzten. Con un solo libro sería «zenuten»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek bost sagar jan ____.",
+          "opciones": [
+            "ziren",
+            "zituzten",
+            "zuten",
+            "zenituzten"
+          ],
+          "correcta": 1,
+          "explicacion": "Cinco manzanas, sujeto «haiek»: zituzten. Con una sola sería «zuten»."
+        }
+      ],
+      "subnivel": "10.2"
+    },
+    {
+      "id": "u10-g50",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Él compró el pan.",
+          "respuestas": [
+            "ogia erosi zuen",
+            "hark ogia erosi zuen"
+          ],
+          "pista": "Tres palabras. Hay objeto, así que el auxiliar es de «ukan»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ayer leísteis el libro.",
+          "respuestas": [
+            "atzo liburua irakurri zenuten",
+            "zuek atzo liburua irakurri zenuten"
+          ],
+          "pista": "Cuatro palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Nosotros compramos la casa.",
+          "respuestas": [
+            "etxea erosi genuen",
+            "guk etxea erosi genuen"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tú compraste dos libros.",
+          "respuestas": [
+            "bi liburu erosi zenituen",
+            "zuk bi liburu erosi zenituen"
+          ],
+          "pista": "Cuatro palabras. Son dos libros: el auxiliar lleva el -it- del plural."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ellos hicieron los deberes.",
+          "respuestas": [
+            "etxeko lanak egin zituzten",
+            "haiek etxeko lanak egin zituzten"
+          ],
+          "pista": "Cuatro palabras. Los deberes son varios: el auxiliar lleva el -it- del plural."
+        }
+      ],
+      "subnivel": "10.2"
+    },
+    {
+      "id": "u10-g51",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cómo se dice «vosotros lo hicisteis»?",
+          "opciones": [
+            "zenuen",
+            "zenuten",
+            "zineten",
+            "zenituzten"
+          ],
+          "correcta": 1,
+          "explicacion": "«zuek» con un solo objeto: zenuten. Con varios sería «zenituzten»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cómo se dice «él lo hizo»?",
+          "opciones": [
+            "zuten",
+            "zen",
+            "zuen",
+            "zituen"
+          ],
+          "correcta": 2,
+          "explicacion": "«hark» con un solo objeto: zuen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cómo se dice «yo los hice», con varios objetos?",
+          "opciones": [
+            "nuen",
+            "nituen",
+            "nintzen",
+            "genituen"
+          ],
+          "correcta": 1,
+          "explicacion": "Con objeto plural se cuela el -it-: «nuen» pasa a «nituen»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cómo se dice «nosotros los compramos», con varios objetos?",
+          "opciones": [
+            "genuen",
+            "zenituen",
+            "genituen",
+            "ginen"
+          ],
+          "correcta": 2,
+          "explicacion": "«guk» con objeto plural: genituen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cuál es el pasado de «dute»?",
+          "opciones": [
+            "ziren",
+            "zuten",
+            "zeuden",
+            "zenuten"
+          ],
+          "correcta": 1,
+          "explicacion": "«dute» en pasado es «zuten». Fíjate en la -n del final, que es la marca del pasado."
+        }
+      ],
+      "subnivel": "10.2"
+    },
+    {
+      "id": "u10-g52",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zu non ____ atzo?",
+          "opciones": [
+            "zaude",
+            "zeunden",
+            "zinen",
+            "zenuen"
+          ],
+          "correcta": 1,
+          "explicacion": "Preguntar dónde estaba alguien es «egon»: con «zu», zeunden."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zuek tabernan ____.",
+          "opciones": [
+            "zineten",
+            "zenuten",
+            "zeundeten",
+            "zaudete"
+          ],
+          "correcta": 2,
+          "explicacion": "Estar en un sitio es «egon»: con «zuek», zeundeten."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek hondartzan ____.",
+          "opciones": [
+            "zeuden",
+            "daude",
+            "ziren",
+            "zuten"
+          ],
+          "correcta": 0,
+          "explicacion": "Pasado de «egon» con «haiek»: zeuden. Fíjate en que «daude» pierde la -au- y gana -eu-."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Gu mendian ____ bart.",
+          "opciones": [
+            "ginen",
+            "geunden",
+            "genuen",
+            "gaude"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «egon» con «gu»: geunden. Igual que «gaude», con -eu- en vez de -au-."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Hura liburutegian ____.",
+          "opciones": [
+            "zen",
+            "zuen",
+            "dago",
+            "zegoen"
+          ],
+          "correcta": 3,
+          "explicacion": "Pasado de «egon» con «hura»: zegoen."
+        }
+      ],
+      "subnivel": "10.3"
+    },
+    {
+      "id": "u10-g53",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cómo se dice «tú estabas»?",
+          "opciones": [
+            "zaude",
+            "zeunden",
+            "zinen",
+            "zenuen"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «egon» con «zu»: zeunden. La -au- de «zaude» pasa a -eu-."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cómo se dice «vosotros estabais»?",
+          "opciones": [
+            "zineten",
+            "zeundeten",
+            "zaudete",
+            "zenuten"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «egon» con «zuek»: zeundeten."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cómo se dice «nosotros estábamos»?",
+          "opciones": [
+            "ginen",
+            "geunden",
+            "gaude",
+            "genuen"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «egon» con «gu»: geunden. Ojo a «ginen», que es «éramos», de «izan»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cómo se dice «ellos estaban»?",
+          "opciones": [
+            "ziren",
+            "zeuden",
+            "daude",
+            "zuten"
+          ],
+          "correcta": 1,
+          "explicacion": "Pasado de «egon» con «haiek»: zeuden."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la forma correcta",
+          "pregunta": "¿Cuál es el pasado de «dago»?",
+          "opciones": [
+            "zen",
+            "zegoen",
+            "zuen",
+            "zeuden"
+          ],
+          "correcta": 1,
+          "explicacion": "«dago» en pasado es «zegoen»."
+        }
+      ],
+      "subnivel": "10.3"
+    },
+    {
+      "id": "u10-g54",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ayer estuve en casa.",
+          "eu": "Atzo etxean nengoen.",
+          "palabras": [
+            "atzo",
+            "etxean",
+            "nengoen"
+          ],
+          "distractores": [
+            "nintzen"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ellos leyeron el libro.",
+          "eu": "Haiek liburua irakurri zuten.",
+          "palabras": [
+            "haiek",
+            "liburua",
+            "irakurri",
+            "zuten"
+          ],
+          "distractores": [
+            "ziren"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Vosotros erais estudiantes.",
+          "eu": "Zuek ikasleak zineten.",
+          "palabras": [
+            "zuek",
+            "ikasleak",
+            "zineten"
+          ],
+          "distractores": [
+            "zenuten"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Nosotros estábamos en el monte.",
+          "eu": "Gu mendian geunden.",
+          "palabras": [
+            "gu",
+            "mendian",
+            "geunden"
+          ],
+          "distractores": [
+            "ginen"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ella compró dos manzanas.",
+          "eu": "Hark bi sagar erosi zituen.",
+          "palabras": [
+            "hark",
+            "bi",
+            "sagar",
+            "erosi",
+            "zituen"
+          ],
+          "distractores": [
+            "zuen"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
+          "es": "Vosotros estabais en la taberna.",
+          "eu": "Zuek tabernan zeundeten.",
+          "palabras": [
+            "zuek",
+            "tabernan",
+            "zeundeten"
+          ],
+          "distractores": [
+            "zineten"
+          ]
+        }
+      ],
+      "subnivel": "10.4"
+    },
+    {
+      "id": "u10-g55",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Atzo liburu bat irakurri ____.",
+          "opciones": [
+            "nintzen",
+            "nuen",
+            "nengoen",
+            "zen"
+          ],
+          "correcta": 1,
+          "explicacion": "Hay objeto, el libro, así que el auxiliar es de «ukan»: nuen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Atzo Bilbora joan ____.",
+          "opciones": [
+            "nuen",
+            "nintzen",
+            "nengoen",
+            "zen"
+          ],
+          "correcta": 1,
+          "explicacion": "«joan» no lleva objeto, así que el auxiliar es de «izan»: nintzen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Atzo goizean etxean ____.",
+          "opciones": [
+            "nintzen",
+            "nuen",
+            "nengoen",
+            "zen"
+          ],
+          "correcta": 2,
+          "explicacion": "Estar en un sitio pide «egon»: nengoen."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek ogia erosi ____.",
+          "opciones": [
+            "ziren",
+            "zuten",
+            "zeuden",
+            "zen"
+          ],
+          "correcta": 1,
+          "explicacion": "Hay objeto, el pan: «ukan» con «haiek» es zuten."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Haiek kalean ____.",
+          "opciones": [
+            "ziren",
+            "zuten",
+            "zeuden",
+            "zuen"
+          ],
+          "correcta": 2,
+          "explicacion": "Estar en un sitio pide «egon»: con «haiek», zeuden."
+        }
+      ],
+      "subnivel": "test"
     }
   ],
   "audiosExtra": [
