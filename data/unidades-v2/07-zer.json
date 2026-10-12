@@ -625,6 +625,7 @@
       "eu": "platanoa",
       "es": "el plátano",
       "nota": null,
+      "audio": "unidades/u7/platanoa.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -632,6 +633,7 @@
       "eu": "mahatsa",
       "es": "la uva",
       "nota": null,
+      "audio": "unidades/u7/mahatsa.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -639,6 +641,7 @@
       "eu": "madaria",
       "es": "la pera",
       "nota": null,
+      "audio": "unidades/u7/madaria.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -646,6 +649,7 @@
       "eu": "marrubia",
       "es": "la fresa",
       "nota": null,
+      "audio": "unidades/u7/marrubia.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -653,7 +657,7 @@
       "eu": "arana",
       "es": "la ciruela",
       "nota": "También se oye «okaran».",
-      "audio": null,
+      "audio": "unidades/u7/arana.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -661,6 +665,7 @@
       "eu": "patata",
       "es": "la patata",
       "nota": null,
+      "audio": "unidades/u7/patata.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -668,6 +673,7 @@
       "eu": "tomatea",
       "es": "el tomate",
       "nota": null,
+      "audio": "unidades/u7/tomatea.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -675,6 +681,7 @@
       "eu": "tipula",
       "es": "la cebolla",
       "nota": null,
+      "audio": "unidades/u7/tipula.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -682,6 +689,7 @@
       "eu": "letxuga",
       "es": "la lechuga",
       "nota": null,
+      "audio": "unidades/u7/letxuga.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -689,6 +697,7 @@
       "eu": "gazta",
       "es": "el queso",
       "nota": null,
+      "audio": "unidades/u7/gazta.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -696,6 +705,7 @@
       "eu": "oilaskoa",
       "es": "el pollo",
       "nota": null,
+      "audio": "unidades/u7/oilaskoa.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -703,6 +713,7 @@
       "eu": "arroza",
       "es": "el arroz",
       "nota": null,
+      "audio": "unidades/u7/arroza.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -710,6 +721,7 @@
       "eu": "zukua",
       "es": "el zumo",
       "nota": null,
+      "audio": "unidades/u7/zukua.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -717,6 +729,7 @@
       "eu": "gatza",
       "es": "la sal",
       "nota": null,
+      "audio": "unidades/u7/gatza.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -724,6 +737,7 @@
       "eu": "azukrea",
       "es": "el azúcar",
       "nota": null,
+      "audio": "unidades/u7/azukrea.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -731,6 +745,7 @@
       "eu": "esnatu",
       "es": "despertarse",
       "nota": null,
+      "audio": "unidades/u7/esnatu.mp3",
       "categoria": "verbo",
       "subnivel": "7.3"
     },
@@ -738,6 +753,7 @@
       "eu": "jaiki",
       "es": "levantarse",
       "nota": "Salir de la cama.",
+      "audio": "unidades/u7/jaiki.mp3",
       "categoria": "verbo",
       "subnivel": "7.3"
     },
@@ -745,6 +761,7 @@
       "eu": "dutxatu",
       "es": "ducharse",
       "nota": null,
+      "audio": "unidades/u7/dutxatu.mp3",
       "categoria": "verbo",
       "subnivel": "7.3"
     },
@@ -752,6 +769,7 @@
       "eu": "jantzi",
       "es": "vestirse",
       "nota": null,
+      "audio": "unidades/u7/jantzi.mp3",
       "categoria": "verbo",
       "subnivel": "7.3"
     },
@@ -759,6 +777,7 @@
       "eu": "gosaldu",
       "es": "desayunar",
       "nota": null,
+      "audio": "unidades/u7/gosaldu.mp3",
       "categoria": "verbo",
       "subnivel": "7.3"
     },
@@ -766,6 +785,7 @@
       "eu": "bazkaldu",
       "es": "comer (al mediodía)",
       "nota": null,
+      "audio": "unidades/u7/bazkaldu.mp3",
       "categoria": "verbo",
       "subnivel": "7.3"
     },
@@ -773,6 +793,7 @@
       "eu": "afaldu",
       "es": "cenar",
       "nota": null,
+      "audio": "unidades/u7/afaldu.mp3",
       "categoria": "verbo",
       "subnivel": "7.3"
     },
@@ -780,6 +801,7 @@
       "eu": "garbitu",
       "es": "limpiar",
       "nota": null,
+      "audio": "unidades/u7/garbitu.mp3",
       "categoria": "verbo",
       "subnivel": "7.3"
     },
@@ -787,6 +809,7 @@
       "eu": "lo egin",
       "es": "dormir",
       "nota": "Literalmente «hacer sueño».",
+      "audio": "unidades/u7/lo-egin.mp3",
       "categoria": "verbo",
       "subnivel": "7.3"
     },
@@ -794,6 +817,7 @@
       "eu": "etxeko lanak",
       "es": "las tareas de casa",
       "nota": null,
+      "audio": "unidades/u7/etxeko-lanak.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.3"
     },
@@ -801,6 +825,7 @@
       "eu": "ari naiz",
       "es": "estoy (con el verbo en -t(z)en delante)",
       "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
+      "audio": "unidades/u7/ari-naiz.mp3",
       "categoria": "verbo",
       "subnivel": "7.4"
     },
@@ -808,6 +833,7 @@
       "eu": "ari zara",
       "es": "estás (con el verbo en -t(z)en delante)",
       "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
+      "audio": "unidades/u7/ari-zara.mp3",
       "categoria": "verbo",
       "subnivel": "7.4"
     },
@@ -815,6 +841,7 @@
       "eu": "ari da",
       "es": "está (con el verbo en -t(z)en delante)",
       "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
+      "audio": "unidades/u7/ari-da.mp3",
       "categoria": "verbo",
       "subnivel": "7.4"
     }

@@ -512,12 +512,14 @@
       "eu": "hori",
       "es": "eso, ese",
       "nota": "Señala algo que está cerca de tu interlocutor, no de ti.",
+      "audio": "unidades/u3/hori.mp3",
       "subnivel": "3.3"
     },
     {
       "eu": "hauek",
       "es": "estos",
       "nota": "Plural de «hau».",
+      "audio": "unidades/u3/hauek.mp3",
       "subnivel": "3.3",
       "registro": "batua",
       "variantes": [

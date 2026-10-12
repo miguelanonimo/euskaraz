@@ -231,7 +231,9 @@ a una contra el bucket, probando la carpeta de su unidad y las vecinas:
 
 Las trece de verdad: `bere`, `edonor`, `edonon`, `edonora`, `familia`,
 `seigarrena`, `dirua`, `astia`, `itsusia`, `batzuk`, `hotza`, `esan nahi du`
-y `bihar`. Más `dena`, añadida el 12/10/2026 (ver `audios-pendientes.md`).
+y `bihar`. Más `dena` y `astiro`, añadidas el 12/10/2026 (ver `audios-pendientes.md`), que lo dejan en **quince**.
+
+**Las 175 ya están enlazadas** (12/10/2026): el vocabulario del curso pasa de 342 a 517 palabras con audio, y quedan catorce mudas, que son justo las de la lista de arriba.
 
 O sea que el 93 % de ese pendiente **no necesita credenciales de TTS**: es
 añadir una línea a `data/unidades-v2/*.json` apuntando a un fichero que ya
