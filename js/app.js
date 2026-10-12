@@ -731,95 +731,53 @@
     });
   }
 
-  /* Cómo suena el audio. Antes se ponía el mp3 en un <audio> y se llamaba
-     a play() en el mismo instante: la primera vez que sonaba cada palabra el
-     navegador empezaba a reproducir mientras aún descargaba y decodificaba,
-     y se oía a medias («empieza a mitad»), a veces hasta darle varias veces.
-     Ahora el mp3 se descarga y se DECODIFICA entero antes de sonar (Web
-     Audio) y se guarda ya decodificado; precargarAudio() lo prepara en
-     segundo plano al abrir la unidad, así que normalmente suena al
-     instante y siempre desde el principio. Si el aparato no soporta Web
-     Audio, se cae al <audio> de siempre. El contexto se despierta con el
-     primer toque del usuario (iOS no deja sonar antes). */
-  var ctxAudio = null;
-  var buffersAudio = {};      // ruta → AudioBuffer ya decodificado
+  /* Cómo suena el audio. Todo pasa por un único <audio>: en iPhone el audio
+     de Web Audio se silencia con el interruptor de silencio y con las
+     restricciones de Safari (lo probamos en la v65 y en el móvil dejó de
+     oírse todo), y un <audio> normal suena siempre. Para que no empiece a
+     mitad —el mp3 se pedía y se reproducía a la vez— cada mp3 se descarga
+     entero a un Blob en cuanto se abre la unidad (precargarAudio) y se pone
+     como src desde memoria: arranca desde el principio y sin esperar red.
+     Si todavía no está descargado, se usa la URL directa, como antes. Hay que
+     llamar a play() dentro del gesto del usuario, así que nada aquí espera
+     una promesa antes de reproducir. */
+  var blobsAudio = {};        // ruta → URL de objeto con el mp3 ya descargado
   var cargandoAudio = {};     // ruta → promesa en curso
-  var ordenBuffers = [];      // para soltar los más viejos
-  var MAX_BUFFERS = 120;
-  var fuenteAudio = null;     // lo que suena ahora
-  var turnoAudio = 0;         // solo suena la última petición
+  var ordenBlobs = [];        // para soltar los más viejos
+  var MAX_BLOBS = 250;
 
-  function contextoAudio() {
-    if (ctxAudio) return ctxAudio;
-    var C = window.AudioContext || window.webkitAudioContext;
-    if (!C) return null;
-    try { ctxAudio = new C(); } catch (e) { ctxAudio = null; }
-    return ctxAudio;
-  }
+  // Que iOS trate esto como reproducción de medios (suena aunque esté en silencio)
+  try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
 
-  function despertarAudio() {
-    var c = contextoAudio();
-    if (c && c.state === 'suspended') { try { c.resume(); } catch (e) {} }
-  }
-  ['pointerdown', 'touchend', 'keydown'].forEach(function (ev) {
-    document.addEventListener(ev, despertarAudio, { capture: true, passive: true });
-  });
-
-  function cargarBuffer(ruta) {
-    if (buffersAudio[ruta]) return Promise.resolve(buffersAudio[ruta]);
+  function cargarBlob(ruta) {
+    if (blobsAudio[ruta]) return Promise.resolve();
     if (cargandoAudio[ruta]) return cargandoAudio[ruta];
-    var c = contextoAudio();
-    if (!c) return Promise.reject(new Error('sin Web Audio'));
     cargandoAudio[ruta] = fetch(AUDIO_BASE + ruta, { cache: 'force-cache' })
-      .then(function (r) { if (!r.ok) throw new Error('audio ' + r.status); return r.arrayBuffer(); })
-      .then(function (ab) {
-        // La forma con callbacks es la que entienden también los Safari viejos.
-        return new Promise(function (ok, mal) { c.decodeAudioData(ab, ok, mal); });
-      })
-      .then(function (buf) {
-        buffersAudio[ruta] = buf;
-        ordenBuffers.push(ruta);
-        while (ordenBuffers.length > MAX_BUFFERS) delete buffersAudio[ordenBuffers.shift()];
+      .then(function (r) { if (!r.ok) throw new Error('audio ' + r.status); return r.blob(); })
+      .then(function (blob) {
+        blobsAudio[ruta] = URL.createObjectURL(blob);
+        ordenBlobs.push(ruta);
+        while (ordenBlobs.length > MAX_BLOBS) {
+          var vieja = ordenBlobs.shift();
+          try { URL.revokeObjectURL(blobsAudio[vieja]); } catch (e) {}
+          delete blobsAudio[vieja];
+        }
         delete cargandoAudio[ruta];
-        return buf;
       })
       .catch(function (err) { delete cargandoAudio[ruta]; throw err; });
     return cargandoAudio[ruta];
   }
 
-  function pararAudio() {
-    if (fuenteAudio) { try { fuenteAudio.stop(); } catch (e) {} fuenteAudio = null; }
-    reproductor.pause();
-  }
-
-  // Respaldo: el <audio> de siempre. Solo se rebobina si es la MISMA pista.
-  function reproducirConElemento(ruta) {
-    var url = AUDIO_BASE + ruta;
+  /* Solo se rebobina si es la MISMA pista que ya estaba puesta —para que
+     tocar dos veces seguidas la misma palabra la reinicie—. Con una pista
+     nueva no hace falta: ya empieza en 0. */
+  function reproducir(ruta) {
+    if (modoSilencioso) return;
+    var url = blobsAudio[ruta];
+    if (!url) { url = AUDIO_BASE + ruta; cargarBlob(ruta).catch(function () {}); }
     if (reproductor.src === url) reproductor.currentTime = 0;
     else reproductor.src = url;
     reproductor.play().catch(function () {});
-  }
-
-  function reproducir(ruta) {
-    if (modoSilencioso) return;
-    var c = contextoAudio();
-    if (!c) { reproducirConElemento(ruta); return; }
-    despertarAudio();
-    var turno = ++turnoAudio;
-    cargarBuffer(ruta).then(function (buf) {
-      if (turno !== turnoAudio) return;        // ya se pidió otra después
-      pararAudio();
-      var fuente = c.createBufferSource();
-      fuente.buffer = buf;
-      fuente.connect(c.destination);
-      fuente.onended = function () { if (fuenteAudio === fuente) fuenteAudio = null; };
-      // Un pelo de margen: el aparato de salida (altavoz, Bluetooth) tarda
-      // un instante en despertar y se comía el principio.
-      fuente.start(c.currentTime + 0.06);
-      fuenteAudio = fuente;
-    }).catch(function () {
-      if (turno === turnoAudio) reproducirConElemento(ruta);
-    });
   }
 
   // Un solo listener delegado sirve a vocabulario y diccionario, que
@@ -1729,14 +1687,18 @@
       /* El fondo va del tono suave de la lección (sin empezar) al color pleno
          (completada), mezclando los dos según el avance. Partir del suave y no
          de un 10% del color deja las lecciones sin empezar con más color. */
-      var avance = pu.completada ? 1 : pu.ratio;
+      /* El tic y el color pleno solo llegan cuando TODO está al 100%. Superar el
+         test (≥70%) saca la unidad de Hoy, pero aquí se ve cuánto llevas de
+         verdad: el anillo, lleno en proporción, sin tic. (Ric y Miguel, 11/10/2026) */
+      var avance = pu.ratio;
+      var completo = pu.ratio >= 0.995;
       var cm = f.raw.split(',').map(Number), cs = f.soft.match(/\d+/g).map(Number);
       var bg = 'rgb(' + [0, 1, 2].map(function (k) { return Math.round(cs[k] + (cm[k] - cs[k]) * avance); }).join(',') + ')';
       return '<button class="lrow" type="button" data-unidad="' + esc(u.id) + '" style="--bg:' + bg + ';--c:' + f.c + '">' +
         '<span class="lrow__n">' + esc(u.numero) + '</span>' +
         '<span class="lrow__txt"><span class="lrow__t">' + esc(u.titulo) + '</span>' +
           '<span class="lrow__s">' + esc(u.subtitulo) + '</span></span>' +
-        anillo(pu.ratio * 100, { tam: 36, color: 'rgb(10,10,10)', hecho: pu.completada }) +
+        anillo(pu.ratio * 100, { tam: 36, color: 'rgb(10,10,10)', hecho: completo }) +
       '</button>';
     }).join('');
 
@@ -1918,8 +1880,7 @@
      nada, simplemente esa palabra tardará como antes la primera vez. */
   function precargarAudio(ruta) {
     if (!ruta || modoSilencioso) return;
-    if (contextoAudio()) cargarBuffer(ruta).catch(function () {});
-    else fetch(AUDIO_BASE + ruta, { cache: 'force-cache' }).catch(function () {});
+    cargarBlob(ruta).catch(function () {});
   }
 
   function precargarAudioDeUnidad(u) {

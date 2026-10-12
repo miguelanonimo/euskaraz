@@ -9,7 +9,7 @@ Empezado el 10/10/2026.
 
 ---
 
-## 1. Los audios suenan entrecortados la primera vez — **resuelto** (v65)
+## 1. Los audios suenan entrecortados la primera vez — **resuelto** (v77)
 
 **Qué cuentan.** La primera vez que se oye una palabra, el audio sale a
 medias («empieza a mitad») y hay que tocar varias veces. Lo notó Miguel en
@@ -37,6 +37,13 @@ antes).
 primera pulsación tras un rato sin sonido (Bluetooth) y el audio que salta
 solo al entrar en «Escucha y elige».
 
+**Corrección del 11/10/2026 (v77).** La solución de la v65 (decodificar con Web Audio) hizo
+que en el iPhone dejara de oírse todo: Web Audio se silencia con el interruptor de silencio y
+con las restricciones de Safari, y un `<audio>` normal no. Se ha vuelto al `<audio>` de
+siempre y se ha mantenido lo bueno: al abrir una unidad cada mp3 se descarga entero a un
+Blob en memoria, y se reproduce desde ahí, sin esperar red y desde el principio. Si el mp3
+todavía no está descargado, se usa la URL directa, como antes. Ver el punto 13.
+
 ---
 
 ## 2. Orden de los ejercicios: primero repasar lo leído, luego los audios — **propuesto**
@@ -59,7 +66,7 @@ Queda por decidir si va solo al final o repartido en la segunda mitad.
 
 ---
 
-## 3. «Escucha y tradúcelo»: escriben lo que oyen en vez de la traducción — **a pensar**
+## 3. «Escucha y tradúcelo»: escriben lo que oyen en vez de la traducción — **a pensar** (Ric no cambiaría el ejercicio)
 
 **Qué cuentan.** Les ha pasado a 3 personas: al oír el audio escriben la
 palabra en euskera (lo que han escuchado) en vez de su traducción al
@@ -88,9 +95,17 @@ Recomendación para empezar: la primera (mensaje específico sin penalizar) más
 la pista en el campo; es barato y arregla el momento de frustración sin
 cambiar el ejercicio.
 
+**Respuesta de Ric (11/10/2026).** No cambiaría por opción múltiple (que ya hay): escribir es lo que más fija lo aprendido. Le
+pasó a él varias veces, es frustrante pero a la segunda ya se tiene en cuenta; lo atribuye a la
+dinámica de «jugar» (la gamificación nos automatiza y no leemos la interfaz), no a un fallo del
+ejercicio. Propone dos cosas baratas: un **tooltip rojo «Traduce!»** al enfocar el campo de
+texto, o un **paso de confirmación** al pulsar Comprobar («¿lo has traducido al castellano?»,
+con opción de volver). Dice que no le preocupa mucho. *Queda descartada la opción de pasar a
+opción múltiple; pendiente decidir entre el tooltip y la confirmación (o ninguno).*
+
 ---
 
-## 4. «Aupa» se echa de menos en la lección y luego aparece en el examen — **resuelto en parte** (v66)
+## 4. «Aupa» se echa de menos en la lección y luego aparece en el examen — **resuelto** (v66 + ficha de Ric)
 
 **Qué cuentan.** Una betatester (Bilbao) echó de menos «aupa» en la lección
 inicial y lo vio después en un ejercicio («Empareja cada saludo con su
@@ -132,9 +147,15 @@ y `u1-g04`, variante 4). El grupo conserva sus otras variantes.
 - No puedo saber qué tenía puesto esa persona; si me confirma que en
   Ajustes tenía Batua, queda explicado.
 
+**Respuesta de Ric (11/10/2026).** Confirma que era una ficha de la variante bizkaina del 1.1 que había desaparecido (o se
+fusionó con la del 1.4, la de los dialectos). Ya la ha recuperado: hay una ficha condicional
+(«¡Aupa!, el saludo de la calle») que solo sale si se tiene Bizkaiera seleccionado en el 1.1.
+Eso encaja con lo que hicimos: los ejercicios con formas bizkainas (`dial: "bizkaiera"`) solo
+salen si se estudia ese euskalki.
+
 ---
 
-## 5. Idea: «Gaurko hitza» (la palabra del día) — **idea, sin decidir**
+## 5. Idea: «Gaurko hitza» (la palabra del día) — **idea, sin decidir** (Ric: dentro de la app)
 
 **Qué cuentan.** Una betatester, que lleva tiempo estudiando, propone una
 dinámica que a ella le motivó mucho. Al llegar al País Vasco, un compañero de
@@ -197,9 +218,19 @@ ni puntos.
 engancha, y dejar la 3 como evolución si la gente la usa. Antes, conviene
 confirmar con más betatesters si les motivaría una palabra al día.
 
+**Respuesta de Ric (11/10/2026).** Le gusta la idea: hay muchas palabras interesantes, y cosas que se entienden con raíces y
+sufijos que se aprenden en la app. **La mantendría dentro de la app**: conectarla con
+Instagram o WhatsApp le parece un jaleo innecesario (por tanto, la tarjeta compartible de la
+propuesta 4 queda en duda). Sin puntos; dos pantallas (la palabra y, si se quiere, la
+explicación en otra tarjeta). Preguntas abiertas que plantea: ¿es la misma palabra para
+todos, vaya por donde vaya del curso y sea la fecha que sea? Una opción: un listado de unas
+700 palabras o frases y asignar algunas a fechas concretas (Navidad, carnavales, Semana
+Grande, último lunes de octubre). Otra: que veas la palabra y no puedas ver la respuesta hasta
+unas 4 horas después de abrirla, para dejar espacio a la reflexión.
+
 ---
 
-## 6. «Como en pizza» no es una referencia fiable para «ts» y «tz» — **propuesto**
+## 6. «Como en pizza» no es una referencia fiable para «ts» y «tz» — **resuelto** (v78)
 
 **Qué cuentan.** Una betatester comenta, con humor, que «pizza» es seguramente
 la palabra con más formas de pronunciarse en castellano, y que lo debatieron
@@ -230,9 +261,17 @@ de pronunciación, tema 1.4). El resto de la lista de la ficha («z» como la
 *s* inglesa de *see*, «x» como *show*, «tx» como *chico*) la ha leído sin
 queja.
 
+**Respuesta de Ric (11/10/2026).** El problema es de quien pronuncia mal «pizza», no de la palabra, pero hay que buscar otra
+referencia mejor. «Tsunami» tal vez, pero mucha gente dice «sunami». Le gusta más la pista de
+**«cats»** (y apunta que en el texto aparecía «gats», que era una errata mía): el inglés *cats*
+es más inequívoco.
+**Aplicado (v78):** la ficha de pronunciación dice ahora «ts y tz — «ts»: la t y la s juntas,
+en un solo golpe, como el final del inglés *cats*», y la opción incorrecta del ejercicio
+equivalente pasa de «como en pizza» a «como el final de cats». Tsunami queda descartada.
+
 ---
 
-## 7. «Escribe la frase»: no se entiende que hay que traducir — **propuesto**
+## 7. «Escribe la frase»: no se entiende que hay que traducir — **resuelto** (Ric)
 
 **Qué cuentan.** «Con esta instrucción pasé tiempo, no me di cuenta de que hay
 que traducir la frase. Me lo dijo Marta.» (captura: tema 1.2, ejercicio de
@@ -263,9 +302,14 @@ enunciados que diga siempre «de qué idioma a qué idioma». Es un cambio de
 texto en el `instruccion` de las variantes de los tipos escribir, ordenar,
 traducir y escuchar, sin tocar el código.
 
+**Respuesta de Ric (11/10/2026).** Corregido por él. Cambia el enunciado de los ejercicios de escribir, sobre todo porque puede
+ser el primer momento en que se ve este tipo de ejercicio: «Escribe la frase en euskera. Entre
+las palabras de abajo están todas las necesarias.» Ya está en el curso (grupos de escribir y de
+ordenar de todas las unidades).
+
 ---
 
-## 8. «Kaixo» y «agur» son los dos saludos — **propuesto**
+## 8. «Kaixo» y «agur» son los dos saludos — **resuelto** (Ric)
 
 **Qué cuentan.** Un comentario con risas: en una pregunta de elegir, tanto
 «kaixo» como «agur» son saludos.
@@ -290,9 +334,14 @@ despedidas válidas). Para que no pase de nuevo, una regla para quien escriba
 contenido: en una pregunta con una sola respuesta correcta, ningún
 distractor debe poder defenderse con la lectura habitual del enunciado.
 
+**Respuesta de Ric (11/10/2026).** Hecho: ha cambiado el distractor «Agur» por «Ikusi arte», que es de la unidad. Cuenta que
+su compañera Dei no conoce a nadie que salude al llegar con *agur*; él no confunde saludar
+con despedirse, pero entiende que en algunos sitios se haga. Con esto el enunciado y la opción
+correcta («Kaixo») ya no tienen ambigüedad.
+
 ---
 
-## 9. «Esto no me lo explicaron antes»: preguntas de un tema que se explica en otro — **decisión previa + parte arreglada** (v66)
+## 9. «Esto no me lo explicaron antes»: preguntas de un tema que se explica en otro — **decisión previa + parte arreglada** (v66); Ric: caso por caso
 
 **Qué cuentan.** Dos mensajes que dicen lo mismo: «esto no me lo explicaron
 antes» (captura: tema 2.1, «“Nigaz” es la forma de Bizkaia para… nirekin
@@ -344,9 +393,14 @@ Recomendación: A para todo el curso, y revisar con Ric sólo los grupos donde
 la palabra adelantada es la respuesta correcta (no un distractor), que son
 los que más chocan.
 
+**Respuesta de Ric (11/10/2026).** Es buena queja; lo ideal es **ver caso por caso**. Va a montarse un artefacto para revisar
+esas preguntas una a una (o añadir una búsqueda al que ya tiene). Su criterio coincide con la
+regla del punto 10: si la palabra adelantada es un **distractor**, le parece bien ir viendo
+palabras nuevas; si es **la respuesta correcta**, es muy frustrante.
+
 ---
 
-## 10. Regla nueva: lo que no se ha enseñado solo puede ser distractor — **auditado, por arreglar**
+## 10. Regla nueva: lo que no se ha enseñado solo puede ser distractor — **auditado, por arreglar** (Ric de acuerdo)
 
 **Qué se pide.** Respuesta de Miguel al punto 9: las palabras de un tema
 posterior pueden salir en un ejercicio, pero **solo como opción incorrecta
@@ -388,6 +442,9 @@ la ficha del tema pero no como entrada de vocabulario).
 decida mantener como «reto») y a la nota de `CLAUDE.md` sobre el orden del
 vocabulario, que habría que actualizar si se adopta esta regla.
 
+Ric está de acuerdo con esta regla en el hilo del punto 9 y va a revisar los casos en su
+artefacto: se pueden repartir las 89 filas de `auditoria-palabras-no-vistas.md` entre los dos.
+
 ---
 
 ## 11. «Hay play en todas las frases, pero no todas suenan» — **resuelto** (v67)
@@ -409,7 +466,7 @@ una pareja no tiene audio, para que no vuelva a pasar. Detalle y lista de los
 
 ---
 
-## 12. La unidad aparece con el tic aunque no está al 100 % — **propuesto**
+## 12. La unidad aparece con el tic aunque no está al 100 % — **resuelto** (v78)
 
 **Qué cuentan.** Si se completa el test de la unidad con un 92 %, la unidad
 se marca como completada y en el listado aparece con el tic, pero el progreso
@@ -438,3 +495,31 @@ Lecciones pinta el anillo lleno y el tic en cuanto `completada` es verdadero
 
 **Ligado a** lo que ya anotó Ric sobre el «100 %» que se desborda de la tarjeta
 en el resultado (`docs/ideas-ric.md`).
+
+**Respuesta de Ric (11/10/2026) y lo aplicado.** Está de acuerdo, y ya había hecho un par de
+arreglos en esto («a los que tenemos algo de TOC nos molesta mucho»): el tic debe aparecer
+**solo cuando todo está al 100 %**; si algo no llega, se muestra el porcentaje y el anillo lleno
+en proporción. Y propone mantener la norma de que superar el test final saca la unidad de Hoy,
+pero que en Progreso se vea el anillo hasta donde se va, no el tic (cree que ahora ya es así).
+Nota: el umbral real del test es el **70 %** (decisión de Ric del 01/10/2026), no el 75 % que él
+recuerda; no se ha tocado.
+**Aplicado en v78:** en la lista de Lecciones el tic y el color pleno solo salen cuando el
+progreso real es el 100 %; antes salían al superar el test. Con la unidad superada pero, por
+ejemplo, al 92 %, la tarjeta muestra el anillo al 92 % sin tic y el color casi pleno, y Hoy
+sigue avanzando a la siguiente unidad.
+
+---
+
+## 13. En el móvil no se oía ningún audio — **resuelto** (v77)
+
+**Qué cuentan.** Miguel: en el móvil no suenan los audios (en el ordenador sí), y en otras
+webs sí se oye el sonido, así que no era cosa del teléfono.
+
+**Qué pasaba.** Era una consecuencia de mi arreglo del punto 1 (v65): al pasar el audio a Web
+Audio, en iPhone el sonido queda silenciado por el interruptor de silencio y por las
+restricciones de Safari (en el ordenador no pasa).
+
+**Qué se ha hecho (v77).** Vuelve el reproductor `<audio>` normal, que suena siempre, y se
+conserva lo que arreglaba el corte inicial: precarga de cada mp3 como Blob en memoria al abrir
+la unidad. Además se pide a iOS que trate la página como reproducción de medios
+(`navigator.audioSession.type = 'playback'`). *Pendiente de confirmar en el iPhone de Miguel.*
