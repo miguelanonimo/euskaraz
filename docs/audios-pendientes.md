@@ -194,6 +194,44 @@ se enciende entero.
 
 ---
 
+### Añadido el 12/10/2026 · los paradigmas de la unidad 10 (9)
+
+La unidad 10 enseña 24 formas verbales en pasado, pero **doce no estaban en
+el vocabulario**: solo vivían en el texto de la ficha, así que no salían en
+el diccionario, no volvían en el repaso y no tenían audio. Ya están las doce.
+De ellas, tres ya tenían mp3 subido y se han enlazado: `zuen`
+(`unidades/u11/zuen.mp3`), `geunden` y `zeuden` (`unidades/u10/`).
+
+**Faltan nueve por generar**, todas del tema 10.2 y 10.3:
+
+| forma | qué es |
+|---|---|
+| `zenuten` | (vosotros) teníais |
+| `nituen` | (yo) los tenía |
+| `zenituen` | (tú) los tenías |
+| `zituen` | (él/ella) los tenía |
+| `genituen` | (nosotros) los teníamos |
+| `zenituzten` | (vosotros) los teníais |
+| `zituzten` | (ellos) los tenían |
+| `zeunden` | (tú) estabas |
+| `zeundeten` | (vosotros) estabais |
+
+**Carpeta:** `unidades/u11/`. La unidad 10 usa `u11` para 49 de sus 55 audios
+y `u10` solo para seis, así que conviene seguir con `u11` y no repartir más.
+(Sí, la carpeta no coincide con el número de unidad: es el desplazamiento
+histórico de cuando el curso tenía diez. No es un error.)
+
+**Por qué importan.** Con estas nueve, los tres paradigmas del pasado quedan
+completos y sonando, y se puede volver a usar el tipo de ejercicio «pares»
+para ellos, que ahora mismo no se puede: «pares» exige audio en cada palabra.
+
+**Formas verificadas.** El paradigma de `egon` en pasado —`nengoen, zeunden,
+zegoen, geunden, zeundeten, zeuden`— se comprobó antes de escribir ejercicios
+encima: coincide en varias tablas independientes, y `geunden` aparece en un
+ejemplo del propio *Euskaltzaindiaren Hiztegia*.
+
+---
+
 ---
 
 ## C · El agujero de antes: ya arreglado, falta ejecutarlo
