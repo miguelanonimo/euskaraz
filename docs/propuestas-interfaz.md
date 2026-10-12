@@ -1,7 +1,7 @@
 # Propuestas para la interfaz
 
-> **Pendiente:** la 3, los colores de las unidades 10, 11 y 12 (añadida el
-> 10/10/2026, abajo del todo).
+> **No queda nada pendiente.** La 3, los colores de las unidades 10, 11 y
+> 12, la resolvió Miguel en `f216965` (10/10/2026).
 >
 > **Estado (03/10/2026, 15:00): Miguel implementó las dos primeras.** `2636cdf` «El
 > dialecto pasa de interruptor a selector de euskalki» y `909be93` «Repasar
@@ -109,7 +109,18 @@ y la recomendada. También sin aplicar.
 
 ## 3. Las unidades 10, 11 y 12 salen todas del mismo color
 
-**Pendiente.** Añadido el 10/10/2026.
+**Resuelto por Miguel** en `f216965` (10/10/2026), «paleta de 12 colores
+(rueda A2, azul B1)». Añadido el 10/10/2026, cerrado el 12/10/2026.
+
+**Y no lo resolvió como se proponía aquí, sino mejor.** La propuesta era
+añadir tres colores detrás del rosa. Miguel **rehízo la escala entera**: las
+doce ternas de `FAMILIAS` son nuevas y recorren la rueda de rojo a rosa
+pasando por naranja, amarillo, verde, turquesa, azul y morado, con una
+unidad por color. El `Math.min` de `familia()` sigue ahí, pero ya solo como
+tope de seguridad —lo dice su comentario— y no recorta a ninguna unidad.
+
+El análisis de abajo se deja como registro de por qué se hizo, no como
+pendiente.
 
 **Qué vio Ric.** En la pantalla de Hoy, con la pila de lecciones abierta por
 la 9: *«la unidad 10 y la 11 salen con el mismo tono, cuando todas las
