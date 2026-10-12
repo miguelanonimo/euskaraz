@@ -5,15 +5,33 @@ mal**. Todas son de la unidad 6 (`06-egutegia.json`).
 
 ---
 
-## Lo primero: cinco están mudas en el curso
+## Lo primero, y es lo más gordo: 29 de 32 están mudas
 
-Igual que en los bloques 1 y 2. Estas cinco no tienen campo `audio` en su
-entrada de vocabulario, así que la app ni pinta el altavoz:
+De las palabras de vocabulario que entran en este bloque, **solo tres tienen
+el campo `audio`** en `06-egutegia.json`. Las otras veintinueve no suenan en el
+curso, aunque su mp3 exista y Ric lo haya escuchado — en la app de revisión el
+audio va incrustado, así que allí se oyen igual.
 
-`elurra` · `haizea` · `gabonak` · `urte-berri` · `jaieguna`
+| | cuántas | qué hace falta |
+|---|---|---|
+| suenan | 3 | nada |
+| **mudas y Ric las dio por BUENAS** | **24** | **solo enlazarlas** |
+| mudas y marcadas mal | 5 | regenerar **y** enlazar |
 
-No basta con regenerar el mp3: hay que **añadirles el campo** en
-`06-egutegia.json` o seguirán mudas.
+Las veinticuatro buenas son: egutegia, hilabetea, los doce meses, urtebetetzea,
+udaberria, udazkena, eguraldia, hotza, beroa, hodeia, olentzero, aste santua e
+inauteriak.
+
+**Eso es el trabajo más barato de todo el bloque, y está comprobado**:
+veintitrés de esas veinticuatro ya tienen su mp3 en el bucket, en
+`unidades/u6/<palabra>.mp3`. Solo falta la línea del JSON. (La excepción es
+`hotza`, que sí habría que generar.)
+
+Y no es cosa solo de este bloque — ver el apartado del final.
+
+Las cinco que además hay que regenerar: `elurra` · `haizea` · `Gabonak` ·
+`Urte Berri` · `jaieguna`. (Las dos últimas van con mayúscula en el
+vocabulario, ojo al buscarlas.)
 
 Y un aviso de enlazado: **`gabonak` está en los dos estados**, muda en el
 vocabulario pero enlazada en la ficha 6.5 a `unidades/u6/gabonak.mp3`.
@@ -145,3 +163,32 @@ acento en la é: «haizéa».
 | 2 | 53 | sí — 15 mal (`docs/audio-bloque2-revision.md`) |
 | 3 | 44 | sí — 14 mal (este) |
 | 4–8 | 205 | pendiente |
+
+---
+
+## Lo que apareció al comprobar esto: las 188 no son lo que parecen
+
+El pendiente que arrastra el proyecto —«188 palabras de vocabulario sin
+audio»— se ha estado tratando como si hubiera que **generar** 188 audios. Se
+comprobaron las 188 una a una contra el bucket, probando la carpeta de su
+unidad y las vecinas:
+
+| | |
+|---|---|
+| **el mp3 ya existe, solo falta enlazarlo** | **175** |
+| hay que generarlo de verdad | **13** |
+
+Las trece que faltan de verdad son: `bere`, `edonor`, `edonon`, `edonora`,
+`familia`, `seigarrena`, `dirua`, `astia`, `itsusia`, `batzuk`, `hotza`,
+`esan nahi du` y `bihar`.
+
+O sea que el 93 % del pendiente **no necesita credenciales de TTS ni generar
+nada**: es añadir el campo `audio` a 175 entradas de `data/unidades-v2/*.json`,
+apuntando a un fichero que ya está subido. Es un cambio de datos, se puede
+hacer con un script que compruebe cada ruta antes de escribirla, y entra por
+el carril de contenido.
+
+La lista completa, con la ruta verificada de cada una, se puede regenerar con
+el mismo método: para cada palabra sin `audio`, probar
+`unidades/uN/<slug>.mp3` con N = su unidad y las vecinas, y quedarse con la
+que devuelva 200.
