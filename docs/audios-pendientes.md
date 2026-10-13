@@ -131,78 +131,48 @@ node generar.mjs u10.1
 Los 2 de `u2` son de esta semana: `ha` y `hareek`, las formas bizkainas de
 los demostrativos (dato de Ric, verificado en Bizkaieraren ataria).
 
-### Añadido el 12/10/2026 · `dena` (1)
+## B-bis · Lo que de verdad falta por generar: 24 palabras
 
-Palabra nueva en el vocabulario de la unidad 9 de v2 (tema 9.1), «todo».
-Va junto a `guztia`, que ya tiene audio: Euskaltzaindia las da por
-equivalentes, y `dena` es la forma más corriente cuando «todo» va solo, sin
-nombre delante (ficha `dena(k)/guztia(k)` del Euskara Batuaren Eskuliburua).
-Lo notó Dei, que es a quien le sonaba raro `Guztia gustatzen zait`.
+Esta es **la lista corta y comprobada**, y es la que conviene mirar primero.
+Sale de haber verificado una a una contra el bucket todas las palabras sin
+audio del curso: la inmensa mayoría ya tenían el mp3 subido y solo les
+faltaba la línea en el JSON (175, ya enlazadas el 12/10/2026). Estas 24 son
+las que no existen en ninguna parte.
 
-**Ruta de destino, comprobada contra el bucket:** `unidades/u10/dena.mp3`
-(comprobado: no existe). Ojo a no confundirla con `unidades/u12/denak.mp3`,
-que sí existe y es otra palabra: el plural `denak`, «todos», de la unidad 12.
+**El vocabulario del curso está en 520 palabras con audio de 544.** Estas 24
+son las 24 que faltan.
 
-La carpeta es `u10` y no `u9` por el desplazamiento histórico de cuando el
-curso tenía diez unidades. No es un error.
+### Las 13 de siempre
 
-**No está contado en las cifras de arriba**, que son anteriores. Esas cifras
-están pendientes de una revisión aparte: comprobando las palabras sin audio
-una a una contra el bucket salió que la gran mayoría ya tienen el mp3 subido
-y solo les falta el campo `audio` en el JSON. Está en
-`docs/audio-bloque3-revision.md`.
+`bere` · `edonor` · `edonon` · `edonora` · `familia` · `seigarrena` ·
+`dirua` · `astia` · `itsusia` · `batzuk` · `hotza` · `esan nahi du` · `bihar`
 
----
+### Las 2 añadidas el 12/10/2026
 
-### Añadido el 12/10/2026 · nada que generar, pero un mp3 queda sin uso
+| palabra | qué es | ruta de destino |
+|---|---|---|
+| `dena` | «todo», en el tema 9.1, junto a `guztia` | `unidades/u10/dena.mp3` |
+| `astiro` | «despacio», en el tema 11.3, junto a `poliki` | `unidades/u11/astiro.mp3` |
 
-Al corregir la gramática de la ficha 11.2 (ver abajo) ha dejado de usarse
-`unidades/u11/gaur-joaten-naiz.mp3`. **No hay que generar nada**: la frase que
-ocupa su sitio, `Astelehenero azokara joaten naiz.`, ya tenía su mp3
-(`unidades/u9/astelehenero-azokara-joaten-naiz.mp3`) y ahora suena también en
-la unidad 11 y en el ejercicio `u9-g09 v3` de la unidad 8, que antes era mudo.
+Las dos salieron de oír a Dei y están verificadas en el
+*Euskaltzaindiaren Hiztegia*: `dena` y `guztia` son equivalentes, y `astiro`
+es la palabra que el propio diccionario usa para definir `poliki`.
 
-**El fichero se puede dejar donde está**: no estorba y no lo referencia nadie.
-Solo conviene saber que está huérfano, por si algún día se limpia el bucket.
+Ojo con `astiro`: la ficha 11.4 menciona también **`astia`**, que está en la
+lista de arriba. Generando las dos, ese párrafo se enciende entero.
 
-Ojo a una cosa para la revisión de audio: Ric dio `gaur-joaten-naiz` por
-**bueno** en el bloque 7. El audio estaba bien; lo que estaba mal era la frase.
+### Las 9 de los paradigmas de la unidad 10 (13/10/2026)
 
-**Por qué se quitó:** `Gaur joaten naiz` juntaba un tiempo puntual («gaur»)
-con la forma de la costumbre. La *Euskararen Gramatika* de Euskaltzaindia
-(26.6.1.1) dice que con los verbos que tienen forma sintética viva —`joan`
-la tiene: *noa, doa*— la forma larga `-t(z)en + naiz` no sirve para un momento
-concreto. Y la propia unidad 8 del curso ya lo enseñaba bien: «*noa* es “voy
-ahora”, y *joaten naiz* es “suelo ir”». Lo detectó Dei.
+**Hay un script preparado:** `scripts/generar-audio/lote-paradigmas-u10.mjs`.
+Lleva dentro las nueve rutas y, en cada una, las instrucciones fonéticas de
+los fallos que la voz ya comete —la z silbante, las finales que se come, el
+grupo tz—, para no gastar una ronda de revisión en descubrir lo sabido.
 
----
-
-### Añadido el 12/10/2026 · `astiro` (1)
-
-Palabra nueva en el vocabulario de la unidad 11 de v2 (tema 11.3), «despacio».
-Va junto a `poliki`, que ya tiene audio. Las dos son batua: las dos están en
-el *Euskaltzaindiaren Hiztegia* sin marca de dialecto ni de registro, y el
-diccionario define la segunda acepción de `poliki` literalmente como
-«astiro». Lo notó Dei.
-
-**Ruta de destino, comprobada contra el bucket:** `unidades/u11/astiro.mp3`
-(comprobado: no existe).
-
-Ojo: la ficha 11.4 menciona también **`astia`**, que es una de las que ya
-estaban pendientes de generar. Cuando se generen las dos, el párrafo nuevo
-se enciende entero.
-
----
-
-### Añadido el 12/10/2026 · los paradigmas de la unidad 10 (9)
-
-La unidad 10 enseña 24 formas verbales en pasado, pero **doce no estaban en
-el vocabulario**: solo vivían en el texto de la ficha, así que no salían en
-el diccionario, no volvían en el repaso y no tenían audio. Ya están las doce.
-De ellas, tres ya tenían mp3 subido y se han enlazado: `zuen`
-(`unidades/u11/zuen.mp3`), `geunden` y `zeuden` (`unidades/u10/`).
-
-**Faltan nueve por generar**, todas del tema 10.2 y 10.3:
+```
+cd scripts/generar-audio && npm install
+mkdir -p /tmp/audio-trim-work/lote
+node lote-paradigmas-u10.mjs
+```
 
 | forma | qué es |
 |---|---|
@@ -216,21 +186,46 @@ De ellas, tres ya tenían mp3 subido y se han enlazado: `zuen`
 | `zeunden` | (tú) estabas |
 | `zeundeten` | (vosotros) estabais |
 
-**Carpeta:** `unidades/u11/`. La unidad 10 usa `u11` para 49 de sus 55 audios
-y `u10` solo para seis, así que conviene seguir con `u11` y no repartir más.
-(Sí, la carpeta no coincide con el número de unidad: es el desplazamiento
-histórico de cuando el curso tenía diez. No es un error.)
+Todas a **`unidades/u11/`**: trece de las quince formas hermanas del
+paradigma ya viven ahí. (La carpeta no coincide con el número de unidad por
+el desplazamiento histórico de cuando el curso tenía diez. No es un error.)
 
-**Por qué importan.** Con estas nueve, los tres paradigmas del pasado quedan
-completos y sonando, y se puede volver a usar el tipo de ejercicio «pares»
-para ellos, que ahora mismo no se puede: «pares» exige audio en cada palabra.
+**De dónde salen.** La unidad 10 enseña 24 formas verbales en pasado y doce
+no estaban en el vocabulario: solo vivían en el texto de la ficha, así que no
+salían en el diccionario, no volvían en el repaso y no tenían audio. Ya están
+las doce; tres de ellas (`zuen`, `geunden`, `zeuden`) ya tenían mp3 y se
+enlazaron. Estas nueve se buscaron en las doce carpetas de unidad y en los
+prefijos de pruebas —198 rutas— y no existe ninguna.
 
-**Formas verificadas.** El paradigma de `egon` en pasado —`nengoen, zeunden,
-zegoen, geunden, zeundeten, zeuden`— se comprobó antes de escribir ejercicios
-encima: coincide en varias tablas independientes, y `geunden` aparece en un
-ejemplo del propio *Euskaltzaindiaren Hiztegia*.
+**Formas verificadas** antes de escribir 46 ejercicios encima: el paradigma
+de `egon` en pasado (`nengoen, zeunden, zegoen, geunden, zeundeten, zeuden`)
+coincide en varias tablas independientes, y `geunden` aparece en un ejemplo
+del propio *Euskaltzaindiaren Hiztegia*.
+
+### Cuando estén subidas
+
+Hay que **añadir el campo `audio`** a sus entradas de
+`data/unidades-v2/*.json`, o seguirán mudas aunque el mp3 exista. Es el
+mismo paso que se hizo con las 175.
+
+Y entonces se podrá usar el tipo de ejercicio «pares» con estas formas, que
+ahora mismo no se puede: «pares» exige audio en cada palabra, y por eso dos
+grupos de la unidad 10 tuvieron que escribirse como opción.
 
 ---
+
+### Un mp3 que queda sin uso
+
+Al corregir la gramática de la ficha 11.2 dejó de usarse
+`unidades/u11/gaur-joaten-naiz.mp3`. **No hay que generar nada**: la frase
+que ocupa su sitio ya tenía su mp3. El fichero se puede dejar donde está;
+solo conviene saber que está huérfano por si algún día se limpia el bucket.
+
+Ojo para la revisión de audio: Ric dio `gaur-joaten-naiz` por **bueno** en el
+bloque 7. El audio estaba bien; lo que estaba mal era la frase — juntaba un
+tiempo puntual («gaur») con la forma de la costumbre, y la *Euskararen
+Gramatika* (26.6.1.1) marca eso como agramatical con los verbos que tienen
+forma sintética viva, como `joan`.
 
 ---
 
