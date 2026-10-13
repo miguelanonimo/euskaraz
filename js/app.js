@@ -1800,6 +1800,8 @@
           '<span>' + hechas + ' de ' + n + ' unidades</span></div>' +
         '</div>' +
         '<h1 class="pagetitle">' + esc(titulo) + '</h1>' +
+        '<div class="racha racha--progreso"><span class="racha__lbl">Racha</span>' +
+          '<span class="racha__dias">' + semana() + '</span></div>' +
         '<div class="statbars">' +
           statBar(aciertos, '%', 'Aciertos\nsemanal', aciertos, cAciertos.c, cAciertos.soft) +
           statBar(vistas, '', 'Palabras\nvistas', vistas / totalPalabras * 100, cVistas.c, cVistas.soft) +

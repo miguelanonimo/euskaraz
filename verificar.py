@@ -387,8 +387,11 @@ for ruta, u in unidades:
                 # Las parejas pintan un icono de audio en cada palabra en euskera:
                 # sin mp3 el icono no hacía nada. Para añadirlos:
                 # node scripts/generar-audio/completar-ejemplos.mjs --pares
+                # Salvo las letras y sonidos de la ficha de pronunciación («tx»,
+                # «rr»…): son referentes, no palabras, y no llevan audio a propósito.
                 if INDICE == CURSOS["v2"]:
                     for _p in ps:
+                        if _p.get("eu") in ("h", "tx", "z", "rr"): continue
                         if _clave_audio(_p.get("eu")) not in AUDIO_POR_TEXTO:
                             errores.append(u"%s: pareja sin audio: %s" % (eid, _p.get("eu")))
                 if len(ps) != 4: avisos.append("%s: %d parejas (lo normal son 4)" % (eid, len(ps)))

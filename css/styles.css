@@ -476,6 +476,9 @@ div.scard{ cursor: default; }
 }
 .racha__lbl{ font-family: var(--f-d); font-weight: 800; font-size: calc(18px + var(--w) * 0.0571); line-height: 1; color: var(--main); }
 .racha__dias{ display: flex; gap: calc(4px + var(--w) * 0.0286); align-items: center; }
+/* La misma racha de Hoy, repetida en Progreso (Figma «streak-bar»): pegada al
+   título, con los días justo al lado de la palabra en vez de a la otra punta. */
+.racha--progreso{ justify-content: flex-start; gap: calc(12px + var(--w) * 0.0286); padding: 0; }
 .day{
   --day: calc(22px + var(--w) * 0.0571);
   width: var(--day); height: var(--day); border-radius: 1000px; flex-shrink: 0;
@@ -1272,6 +1275,7 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   #screenProgress .donut{ --tam: clamp(220px, 24vw, 300px); margin: 0; }
   #screenProgress .pagetitle{ white-space: pre-line; }
   #screenProgress .statbars{ grid-column: 1 / -1; }
+  #screenProgress .racha--progreso{ grid-column: 1 / -1; }
 
   /* ── Diccionario: letras en columna a la derecha, entradas a dos columnas ── */
   #screenDict .stack{ display: grid; grid-template-columns: minmax(0,1fr) 24px; column-gap: 32px; }
@@ -1354,19 +1358,20 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   /* ── Progreso: el título arriba a todo el ancho; debajo, dos mitades
      iguales: el rosco (que así puede crecer) y las barras ── */
   #screenProgress .stack{
-    grid-template-columns: minmax(0,1fr) minmax(0,1fr); grid-template-rows: auto auto;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr); grid-template-rows: auto auto auto;
     column-gap: 72px; row-gap: 40px; align-content: start;   /* el título, a la altura del de las demás pantallas */
   }
   #screenProgress .pagetitle{ grid-column: 1 / -1; grid-row: 1; }
+  #screenProgress .racha--progreso{ grid-column: 1 / -1; grid-row: 2; }
   /* El rosco llena su mitad: (ancho de la columna de contenido - márgenes
      - hueco) / 2. Con tope por alto para que no empuje las barras fuera. */
   #screenProgress .donut{
     --tam: min(calc((min(100vw - var(--side), 1312px) - 2 * var(--gutter) - 72px) / 2), calc(100dvh - 300px));
-    grid-column: 1; grid-row: 2; align-self: center; justify-self: start;
+    grid-column: 1; grid-row: 3; align-self: center; justify-self: start;
   }
   /* Las barras ocupan todo el alto del rosco: las dos tarjetas de abajo
      crecen hasta terminar donde termina él. */
-  #screenProgress .statbars{ grid-column: 2; grid-row: 2; align-self: stretch; }
+  #screenProgress .statbars{ grid-column: 2; grid-row: 3; align-self: stretch; }
   #screenProgress .statbars > .reviews{ flex: 1 1 auto; }
 }
 
