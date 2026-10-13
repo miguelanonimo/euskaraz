@@ -523,3 +523,36 @@ restricciones de Safari (en el ordenador no pasa).
 conserva lo que arreglaba el corte inicial: precarga de cada mp3 como Blob en memoria al abrir
 la unidad. Además se pide a iOS que trate la página como reproducción de medios
 (`navigator.audioSession.type = 'playback'`). *Pendiente de confirmar en el iPhone de Miguel.*
+
+---
+
+## 14. Navegar entre ejercicios deslizando (idea de Ric) — **propuesto**
+
+**La idea.** Poder moverse entre ejercicios con un deslizamiento, y no solo con los puntos de la barra de arriba. **Solo
+hacia preguntas ya respondidas; nunca hacia delante.**
+
+**Qué hay ya.** Casi todo el mecanismo existe:
+- Tocar un paso de la barra abre el repaso de esa pregunta (`revisarPregunta`).
+- **Dentro de ese repaso ya se desliza**: `alDeslizar(el.modalPanel, …)` salta a la anterior o a la siguiente pregunta
+  *contestada* (`revisarVecina`), saltándose los huecos por delante (un test permite volver atrás). Fue otra petición de Ric.
+- Las fichas de un tema también se recorren deslizando.
+
+**Qué falta.** El gesto **desde la propia pantalla del ejercicio**: hoy hay que tocar un punto de la barra para entrar en el
+repaso, y recién dentro se puede deslizar. Lo que pide Ric sería que, estando en una pregunta, deslizar hacia la derecha
+abra la anterior ya contestada (y nunca hacer nada al deslizar hacia la izquierda sobre la actual).
+
+**Cómo se haría.** Unas diez líneas: un `alDeslizar` más sobre la pantalla del ejercicio, con `haciaAtras` abriendo
+`revisarPregunta` de la última contestada antes de la actual y `haciaDelante` vacío. Reutiliza el mismo detector
+(rápido, ≥60 px, más horizontal que vertical, pasivo: no estorba al scroll).
+
+**Cosas a vigilar:**
+- **El repaso de vocabulario queda fuera**, como está decidido (ahí la cola no es una lista de preguntas).
+- **Choque con el gesto de «atrás» del navegador:** en iPhone, deslizar desde el borde izquierdo vuelve a la página
+  anterior de Safari. Convendría ignorar los gestos que empiezan en los primeros ~20 px del borde.
+- **Ejercicios con arrastre:** las piezas de «ordena» y «escribe la frase» se colocan **tocando**, no arrastrando, así que
+  no hay conflicto; la caja de escribir sí recibe toques horizontales para mover el cursor, pero el detector exige un gesto
+  rápido y largo.
+- **No hay pista visual** de que se puede deslizar. Se podría enseñar una vez (un tooltip la primera vez) o no decir nada.
+
+**Recomendación.** Sí, es pequeño y coherente con lo que ya hay. Solo conviene probarlo en un móvil de verdad
+(el iPhone, por el gesto del borde) antes de darlo por bueno.

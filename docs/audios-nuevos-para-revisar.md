@@ -21,16 +21,16 @@ Con estas tandas, **el diccionario queda con las 556 entradas con audio** (palab
 
 | # | Palabra | Significado | Tema | Mp3 | Ric |
 |---|---|---|---|---|---|
-| 1 | **ha** | él / ella| 2.1 | [`u2/ha.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u2/ha.mp3) |  |
-| 2 | **hareek** | ellos / ellas| 2.1 | [`u2/hareek.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u2/hareek.mp3) |  |
+| 1 | **ha** | él / ella | 2.1 | [`u2/ha.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u2/ha.mp3) |  |
+| 2 | **hareek** | ellos / ellas | 2.1 | [`u2/hareek.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u2/hareek.mp3) |  |
 | 3 | **bere** | su (de él/de ella), lo suyo propio | 2.2 | [`u2/bere.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u2/bere.mp3) |  |
 | 4 | **edonor** | cualquiera | 3.1 | [`u3/edonor.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u3/edonor.mp3) |  |
 | 5 | **edonon** | en cualquier sitio | 3.1 | [`u3/edonon.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u3/edonon.mp3) |  |
 | 6 | **edonora** | a cualquier sitio | 3.1 | [`u3/edonora.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u3/edonora.mp3) |  |
-| 7 | **honeek** | estos| 3.3 | [`u3/honeek.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u3/honeek.mp3) |  |
-| 8 | **aitxitxe** | el abuelo| 4.6 | [`u4/aitxitxe.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/aitxitxe.mp3) |  |
-| 9 | **amuma** | la abuela| 4.6 | [`u4/amuma.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/amuma.mp3) |  |
-| 10 | **izeko** | la tía| 4.6 | [`u4/izeko.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/izeko.mp3) |  |
+| 7 | **honeek** | estos | 3.3 | [`u3/honeek.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u3/honeek.mp3) |  |
+| 8 | **aitxitxe** | el abuelo | 4.6 | [`u4/aitxitxe.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/aitxitxe.mp3) |  |
+| 9 | **amuma** | la abuela | 4.6 | [`u4/amuma.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/amuma.mp3) |  |
+| 10 | **izeko** | la tía | 4.6 | [`u4/izeko.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/izeko.mp3) |  |
 | 11 | **familia** | la familia | 4.6 | [`u4/familia.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/familia.mp3) |  |
 | 12 | **seigarrena** | el sexto, la sexta | 4.3 | [`u4/seigarrena.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/seigarrena.mp3) |  |
 | 13 | **astia** | el tiempo (del que se dispone) | 4.5 | [`u4/astia.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/astia.mp3) |  |
@@ -55,9 +55,9 @@ Las 9 formas del pasado (`zenuten`…`zeundeten`) son el lote que dejaste prepar
 
 | Palabra | Significado | Tema | Mp3 | Ric |
 |---|---|---|---|---|
-| **aitite** | el abuelo| 4.6 | [`u4/aitite.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/aitite.mp3) |  |
-| **amama** | la abuela| 4.6 | [`u4/amama.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/amama.mp3) |  |
-| **loba** | el sobrino / el nieto| 4.6 | [`u4/loba.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/loba.mp3) |  |
+| **aitite** | el abuelo | 4.6 | [`u4/aitite.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/aitite.mp3) |  |
+| **amama** | la abuela | 4.6 | [`u4/amama.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/amama.mp3) |  |
+| **loba** | el sobrino / el nieto | 4.6 | [`u4/loba.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u4/loba.mp3) |  |
 | **dirua** | el dinero | 4.5 | [`u9/dirua.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u9/dirua.mp3) |  |
 | **hotza** | el frío | 6.4 | [`u9/hotza.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u9/hotza.mp3) |  |
 | **bihar** | mañana | 11.1 | [`u3/bihar.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u3/bihar.mp3) |  |
