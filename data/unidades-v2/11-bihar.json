@@ -404,7 +404,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Kafe ____ nahi dut, mesedez.",
+          "pregunta": "«Quiero más café, por favor» → Kafe ____ nahi dut, mesedez.",
           "opciones": [
             "gehiago",
             "handiena",
@@ -412,7 +412,7 @@
             "baino"
           ],
           "correcta": 0,
-          "explicacion": "«más» de cantidad es «gehiago»."
+          "explicacion": "«más» de cantidad es «gehiago». Ojo con «handiena», que es «el más grande»: también sería una frase posible, pero no esta."
         },
         {
           "tipo": "opcion",
@@ -1274,7 +1274,7 @@
             "politbaino"
           ],
           "correcta": 0,
-          "explicacion": "polit + -ago + -a. El adjetivo entra sin el -a de «polita»."
+          "explicacion": "polit + -ago + -a. El adjetivo entra sin el -a de «polita». «politena» sería «el más bonito», con -en."
         }
       ],
       "subnivel": "11.3"

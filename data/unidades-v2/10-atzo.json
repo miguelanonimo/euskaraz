@@ -537,13 +537,13 @@
           "instruccion": "Completa la frase",
           "pregunta": "Ni Bilbon jaio ____.",
           "opciones": [
-            "naiz",
+            "ginen",
             "nintzen",
             "nengoen",
             "nuen"
           ],
           "correcta": 1,
-          "explicacion": "«nacer» no lleva objeto: el pasado de «izan» con «ni» es «nintzen»."
+          "explicacion": "«nacer» no lleva objeto, así que va con «izan»: con «ni», nintzen."
         },
         {
           "tipo": "opcion",
@@ -561,7 +561,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Hura nire laguna ____.",
+          "pregunta": "Hura lehen nire laguna ____.",
           "opciones": [
             "da",
             "zen",
@@ -574,7 +574,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Gu lagunak ____.",
+          "pregunta": "Gu txikitan lagunak ____.",
           "opciones": [
             "gara",
             "ginen",
@@ -587,7 +587,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Haiek ikasleak ____.",
+          "pregunta": "Haiek iaz ikasleak ____.",
           "opciones": [
             "dira",
             "ziren",
@@ -839,7 +839,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Zer egin ____? (tú)",
+          "pregunta": "Zer egin ____ atzo? (tú)",
           "opciones": [
             "duzu",
             "zenuen",
@@ -852,7 +852,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Hark liburua irakurri ____.",
+          "pregunta": "Hark atzo liburua irakurri ____.",
           "opciones": [
             "du",
             "zuen",
@@ -865,7 +865,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Guk etxe bat ____.",
+          "pregunta": "Guk lehen etxe bat ____.",
           "opciones": [
             "dugu",
             "genuen",
@@ -878,7 +878,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Haiek euskara ikasi ____.",
+          "pregunta": "Haiek iaz euskara ikasi ____.",
           "opciones": [
             "dute",
             "zuten",
@@ -1410,6 +1410,9 @@
           ],
           "distractores": [
             "norbait"
+          ],
+          "euAlt": [
+            "Liburuak irakurri nituen."
           ]
         },
         {
@@ -2785,7 +2788,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Zuek tabernan ____.",
+          "pregunta": "Zuek atzo tabernan ____.",
           "opciones": [
             "zineten",
             "zenuten",
@@ -2798,7 +2801,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Haiek hondartzan ____.",
+          "pregunta": "Haiek bart hondartzan ____.",
           "opciones": [
             "zeuden",
             "daude",
@@ -2824,7 +2827,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Completa la frase",
-          "pregunta": "Hura liburutegian ____.",
+          "pregunta": "Hura lehen liburutegian ____.",
           "opciones": [
             "zen",
             "zuen",
