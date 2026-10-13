@@ -526,7 +526,7 @@ la unidad. Además se pide a iOS que trate la página como reproducción de medi
 
 ---
 
-## 14. Navegar entre ejercicios deslizando (idea de Ric) — **propuesto**
+## 14. Navegar entre ejercicios deslizando (idea de Ric) — **aplicado 2026-10-13 (v81)**
 
 **La idea.** Poder moverse entre ejercicios con un deslizamiento, y no solo con los puntos de la barra de arriba. **Solo
 hacia preguntas ya respondidas; nunca hacia delante.**
@@ -556,3 +556,5 @@ abra la anterior ya contestada (y nunca hacer nada al deslizar hacia la izquierd
 
 **Recomendación.** Sí, es pequeño y coherente con lo que ya hay. Solo conviene probarlo en un móvil de verdad
 (el iPhone, por el gesto del borde) antes de darlo por bueno.
+
+> **Aplicado (v81).** Deslizar a la derecha en el ejercicio abre la última pregunta contestada; en ordenador, flecha izquierda. Dentro del repaso, flechas y deslizamiento recorren lo contestado, y al pasar de la última hacia delante se vuelve al ejercicio en curso. Nunca se avanza a lo no respondido. Los campos de texto no disparan el gesto.

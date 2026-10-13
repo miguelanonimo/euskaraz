@@ -71,3 +71,9 @@ Cada palabra que se va viendo **se añade al diccionario**, y hay un sitio donde
 
 *Norabide*: dirección (de un camino). Construcción: *nora* («a dónde») + *bide* («camino»). Se ve en los carteles de
 las carreteras y de Bilbao. (Contenido ilustrativo, por validar según `GRAMATIKA.md` antes de usarlo en la app.)
+
+## Decisión de ubicación (2026-10-13)
+
+- La **racha sale de la home y pasa a Progreso**.
+- En el hueco que deja la racha en la home va la **palabra del día** (acceso al modal de la propuesta A).
+- Pendiente de implementar; sin cambios en la app todavía. Al hacerlo, revisar que la racha en Progreso mantenga su color de dato (media/racha) y que la home no quede desequilibrada sin ese bloque.

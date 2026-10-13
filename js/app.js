@@ -1577,7 +1577,9 @@
       return '<button class="scard" type="button" id="' + id + '"' +
         ' style="--sc:' + ft.texto + ';--sc-soft:' + ft.suaveClaro + '">' +
         '<span class="scard__t">' + titulo + '</span>' +
-        '<span class="scard__row"><span class="scard__v">' + valor + '</span>' +
+        '<span class="scard__row"><span class="scard__n">' +
+          (abierto && quedan > 0 ? '<span class="scard__faltan">faltan</span>' : '') +
+          '<span class="scard__v">' + valor + '</span></span>' +
           anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ft.texto, hecho: terminado }) + '</span>' +
       '</button>';
     }
@@ -3789,6 +3791,8 @@
 
   // — Emparejar —
 
+  var corregirParesActual = null;
+
   function pintarPares(ej) {
     var eus = barajar(ej.pares.map(function (p, i) { return { txt: p.eu, i: i }; }));
     var ess = barajar(ej.pares.map(function (p, i) { return { txt: p.es, i: i }; }));
@@ -3811,9 +3815,12 @@
         }).join('') + '</div>' +
       '</div>';
 
-    var selEu = null, selEs = null, resueltas = 0, errores = 0;
+    var selEu = null, selEs = null;
     var total = ej.pares.length;
     var hilos = $('pairsHilos'), pairs = hilos.closest('.pairs');
+    /* Primero se conecta y luego se comprueba: cada unión queda en gris, sin
+       decir si es buena, y solo al pulsar «Comprobar» se pintan todas. */
+    var uniones = [];   // { a: botón euskera, b: botón castellano, hilo: path }
 
     /* Una curva suave del borde derecho de la palabra en euskera al
        borde izquierdo de su traducción, en las coordenadas del propio
@@ -3829,6 +3836,7 @@
       path.setAttribute('class', 'pairs__hilo');
       path.setAttribute('d', d);
       hilos.appendChild(path);
+      return path;
     }
 
     function limpiarSel() {
@@ -3837,55 +3845,80 @@
       selEu = null; selEs = null;
     }
 
-    function intentar() {
+    function actualizarBoton() {
+      var listo = uniones.length === total;
+      el.btnCheck.disabled = !listo;
+      el.btnCheck.textContent = listo ? 'Comprobar' : 'Conecta las ' + total + ' parejas';
+    }
+
+    // Deshace la unión que tenga este botón (si la tiene).
+    function soltar(btn) {
+      for (var k = 0; k < uniones.length; k++) {
+        if (uniones[k].a === btn || uniones[k].b === btn) {
+          uniones[k].a.classList.remove('is-link');
+          uniones[k].b.classList.remove('is-link');
+          if (uniones[k].hilo.parentNode) uniones[k].hilo.parentNode.removeChild(uniones[k].hilo);
+          uniones.splice(k, 1);
+          return;
+        }
+      }
+    }
+
+    function unir() {
       if (!selEu || !selEs) return;
       var a = selEu, b = selEs;
-      if (a.dataset.i === b.dataset.i) {
-        a.classList.add('is-ok'); b.classList.add('is-ok');
-        a.setAttribute('aria-pressed', 'false'); b.setAttribute('aria-pressed', 'false');
-        dibujarHilo(a, b);
-        selEu = null; selEs = null;
-        resueltas++;
-        if (resueltas === total) {
-          resolver(errores === 0,
-            errores === 0 ? '¡Todas bien!' : 'Completado',
-            errores === 0 ? '' : 'Has necesitado ' + errores + (errores === 1 ? ' intento extra.' : ' intentos extra.'));
-        }
-      } else {
-        errores++;
-        vibrar(35);
-        a.classList.add('is-mal'); b.classList.add('is-mal');
-        setTimeout(function () {
-          a.classList.remove('is-mal'); b.classList.remove('is-mal');
-        }, 320);
-        limpiarSel();
-      }
+      limpiarSel();
+      soltar(a); soltar(b);
+      a.classList.add('is-link'); b.classList.add('is-link');
+      uniones.push({ a: a, b: b, hilo: dibujarHilo(a, b) });
+      actualizarBoton();
     }
 
     function handler(esEu) {
       return function (e) {
         var btn = e.target.closest('.pair');
-        if (!btn || btn.classList.contains('is-ok') || estado.resuelto) return;
+        if (!btn || estado.resuelto) return;
         if (e.target.closest('.pair__play')) {
           var audio = audioDePalabra(ej.pares[parseInt(btn.dataset.i, 10)].eu);
           if (audio) reproducir(audio);
           return;
+        }
+        /* Tocar una palabra ya unida deshace esa unión; pero si ya hay una
+           palabra elegida en la otra columna, se toma como cambio de pareja. */
+        if (btn.classList.contains('is-link')) {
+          soltar(btn); actualizarBoton();
+          if (!(esEu ? selEs : selEu)) return;
         }
         var actual = esEu ? selEu : selEs;
         if (actual === btn) { btn.setAttribute('aria-pressed', 'false'); if (esEu) selEu = null; else selEs = null; return; }
         if (actual) actual.setAttribute('aria-pressed', 'false');
         btn.setAttribute('aria-pressed', 'true');
         if (esEu) selEu = btn; else selEs = btn;
-        intentar();
+        unir();
       };
     }
 
     $('colEu').addEventListener('click', handler(true));
     $('colEs').addEventListener('click', handler(false));
 
-    // Este tipo se autocorrige al emparejar las cuatro; no hay botón que pulsar.
-    el.btnCheck.disabled = true;
-    el.btnCheck.textContent = 'Empareja las ' + total + ' parejas';
+    /* Al comprobar se pintan todas las uniones a la vez. Si alguna falla, la
+       solución completa va en el panel de abajo. */
+    corregirParesActual = function () {
+      var malas = 0;
+      uniones.forEach(function (u) {
+        var bien = u.a.dataset.i === u.b.dataset.i;
+        if (!bien) malas++;
+        u.a.classList.remove('is-link'); u.b.classList.remove('is-link');
+        u.a.classList.add(bien ? 'is-ok' : 'is-mal'); u.b.classList.add(bien ? 'is-ok' : 'is-mal');
+        u.hilo.classList.add(bien ? 'is-ok' : 'is-mal');
+      });
+      var cuerpo = malas ? '<p>' + ej.pares.map(function (p) {
+        return '<b>' + esc(p.eu) + '</b> = ' + esc(p.es);
+      }).join('<br>') + '</p>' : '';
+      return { ok: malas === 0, cuerpo: cuerpo, titulo: malas === 0 ? '¡Todas bien!' : 'Completado' };
+    };
+
+    actualizarBoton();
   }
 
   // — Ordenar palabras —
@@ -4347,12 +4380,13 @@
     var r;
     if (ej.tipo === 'opcion')        r = corregirOpcion(ej);
     else if (ej.tipo === 'orden')    r = corregirOrden(ej);
+    else if (ej.tipo === 'pares' && corregirParesActual) r = corregirParesActual();
     else if (ej.tipo === 'escribir') r = corregirEscribir(ej);
     else if (ej.tipo === 'traducir') r = corregirTraducir(ej);
     else if (ej.tipo === 'teclear')  r = corregirTeclear(ej);
     else return;
 
-    var titulo = r.leve ? 'Casi correcto!' : (r.ok ? 'Oso ondo!' : 'No exactamente!');
+    var titulo = r.titulo || (r.leve ? 'Casi correcto!' : (r.ok ? 'Oso ondo!' : 'No exactamente!'));
     resolver(r.ok, titulo, r.cuerpo, r.leve);
   }
 
@@ -4808,12 +4842,12 @@
      descarta si duró demasiado, si recorrió poco, o si fue más vertical que
      horizontal (alguien bajando la página en diagonal). Lo usan las fichas
      de un tema y el repaso de una pregunta ya contestada. */
-  function alDeslizar(nodo, haciaAtras, haciaDelante) {
+  function alDeslizar(nodo, haciaAtras, haciaDelante, ignorar) {
     var MINIMO = 60;   // px: por debajo es un toque tembloroso, no un gesto
     var TOPE = 600;    // ms: más lento que esto es arrastrar, no deslizar
     var x0 = null, y0 = null, t0 = 0;
     nodo.addEventListener('touchstart', function (e) {
-      if (e.touches.length !== 1) { x0 = null; return; }
+      if (e.touches.length !== 1 || (ignorar && ignorar(e.target))) { x0 = null; return; }
       x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; t0 = Date.now();
     }, { passive: true });
     nodo.addEventListener('touchend', function (e) {
@@ -4838,7 +4872,31 @@
      tener que cerrar y volver a tocar el punto de arriba (pedido de Ric). */
   alDeslizar(el.modalPanel,
     function () { revisarVecina(-1); },
-    function () { revisarVecina(1); });
+    revisarAdelante);
+
+  /* En el propio ejercicio: deslizar hacia la derecha (o la flecha izquierda
+     en el ordenador) abre la última pregunta ya contestada, y desde ahí se
+     recorre lo contestado. Nunca hacia delante: lo que no se ha respondido no
+     se puede saltar (idea de Ric). Los campos de texto se ignoran, para no
+     pelear con quien mueve el cursor. */
+  function revisarAnterior() {
+    if (estado.pantalla !== 'quiz' || !el.modal.hidden || !estado.historial) return;
+    for (var i = estado.indice - 1; i >= 0; i--) {
+      if (estado.historial[i]) { revisarPregunta(i, -40); return; }
+    }
+  }
+  alDeslizar(el.screens.quiz,
+    revisarAnterior,
+    function () {},
+    function (t) { return !!(t.closest && t.closest('input, textarea')); });
+
+  /* Y al pasar de largo la última contestada hacia delante, se vuelve al
+     ejercicio en curso en vez de quedarse parado. */
+  function revisarAdelante() {
+    var antes = revisandoIdx;
+    revisarVecina(1);
+    if (revisandoIdx === antes) cerrarModal();
+  }
 
   // Pestañas y menú lateral
   [el.tabbarItems, el.sidenav].forEach(function (cont) {
@@ -4916,6 +4974,19 @@
   $('modalScrim').addEventListener('click', cerrarModal);
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') cerrarModal();
+  });
+
+  // Flechas: recorrer lo ya contestado, igual que deslizar
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+    if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+    if (revisandoIdx !== null) {
+      e.preventDefault();
+      if (e.key === 'ArrowLeft') revisarVecina(-1); else revisarAdelante();
+    } else if (e.key === 'ArrowLeft' && estado.pantalla === 'quiz' && el.modal.hidden) {
+      e.preventDefault();
+      revisarAnterior();
+    }
   });
 
   // Atajos de teclado para quien use ordenador
