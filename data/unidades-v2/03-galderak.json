@@ -480,7 +480,7 @@
       "eu": "edonor",
       "es": "cualquiera",
       "nota": "nor + edo-. Y de ahí toda la familia.",
-      "audio": null,
+      "audio": "unidades/u3/edonor.mp3",
       "categoria": "otros",
       "subnivel": "3.1"
     },
@@ -488,7 +488,7 @@
       "eu": "edonon",
       "es": "en cualquier sitio",
       "nota": null,
-      "audio": null,
+      "audio": "unidades/u3/edonon.mp3",
       "categoria": "otros",
       "subnivel": "3.1"
     },
@@ -496,7 +496,7 @@
       "eu": "edonora",
       "es": "a cualquier sitio",
       "nota": null,
-      "audio": null,
+      "audio": "unidades/u3/edonora.mp3",
       "categoria": "otros",
       "subnivel": "3.1"
     },
@@ -526,7 +526,8 @@
         {
           "eu": "honeek",
           "registro": "bizkaiera",
-          "nota": "Plural bizkaino de «hau». También se oye «honeik»."
+          "nota": "Plural bizkaino de «hau». También se oye «honeik».",
+          "audio": "unidades/u3/honeek.mp3"
         }
       ]
     },

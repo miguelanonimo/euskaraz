@@ -284,6 +284,7 @@
       "eu": "zenuten",
       "es": "(vosotros) teníais",
       "nota": null,
+      "audio": "unidades/u11/zenuten.mp3",
       "categoria": "verbo",
       "subnivel": "10.2"
     },
@@ -299,6 +300,7 @@
       "eu": "nituen",
       "es": "(yo) los tenía",
       "nota": "Con el objeto en plural se cuela un -it- dentro del auxiliar.",
+      "audio": "unidades/u11/nituen.mp3",
       "categoria": "verbo",
       "subnivel": "10.2"
     },
@@ -306,6 +308,7 @@
       "eu": "zenituen",
       "es": "(tú) los tenías",
       "nota": null,
+      "audio": "unidades/u11/zenituen.mp3",
       "categoria": "verbo",
       "subnivel": "10.2"
     },
@@ -313,6 +316,7 @@
       "eu": "zituen",
       "es": "(él/ella) los tenía",
       "nota": null,
+      "audio": "unidades/u11/zituen.mp3",
       "categoria": "verbo",
       "subnivel": "10.2"
     },
@@ -320,6 +324,7 @@
       "eu": "genituen",
       "es": "(nosotros) los teníamos",
       "nota": null,
+      "audio": "unidades/u11/genituen.mp3",
       "categoria": "verbo",
       "subnivel": "10.2"
     },
@@ -327,6 +332,7 @@
       "eu": "zenituzten",
       "es": "(vosotros) los teníais",
       "nota": null,
+      "audio": "unidades/u11/zenituzten.mp3",
       "categoria": "verbo",
       "subnivel": "10.2"
     },
@@ -334,6 +340,7 @@
       "eu": "zituzten",
       "es": "(ellos) los tenían",
       "nota": null,
+      "audio": "unidades/u11/zituzten.mp3",
       "categoria": "verbo",
       "subnivel": "10.2"
     },
@@ -349,6 +356,7 @@
       "eu": "zeunden",
       "es": "(tú) estabas",
       "nota": "La -au- de «zaude» pasa a -eu-.",
+      "audio": "unidades/u11/zeunden.mp3",
       "categoria": "verbo",
       "subnivel": "10.3"
     },
@@ -372,6 +380,7 @@
       "eu": "zeundeten",
       "es": "(vosotros) estabais",
       "nota": null,
+      "audio": "unidades/u11/zeundeten.mp3",
       "categoria": "verbo",
       "subnivel": "10.3"
     },

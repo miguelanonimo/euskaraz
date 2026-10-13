@@ -356,6 +356,7 @@
       "eu": "itsusia",
       "es": "feo/a",
       "nota": null,
+      "audio": "unidades/u5/itsusia.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -834,6 +835,7 @@
       "eu": "batzuk",
       "es": "unos, unas, algunos",
       "nota": "El plural de «bat». Va detrás del nombre, que se queda sin artículo: «mahai batzuk».",
+      "audio": "unidades/u5/batzuk.mp3",
       "subnivel": "5.4"
     }
   ],

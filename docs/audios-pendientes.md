@@ -131,6 +131,12 @@ node generar.mjs u10.1
 Los 2 de `u2` son de esta semana: `ha` y `hareek`, las formas bizkainas de
 los demostrativos (dato de Ric, verificado en Bizkaieraren ataria).
 
+> **Actualización del 13/10/2026 (Miguel + Claude): las 24 de abajo, ya generadas y subidas, junto con 9 más que
+> solo faltaban en el diccionario (`ha`, `hareek`, `honeek`, `aitxitxe`, `amuma`, `izeko`) o ya existían sin enlazar.
+> El diccionario queda con las 556 entradas con audio. Todo lo nuevo está listado para escucharlo en
+> `docs/audios-nuevos-para-revisar.md`.** Generador: `scripts/generar-audio/generar-faltantes.mjs`
+> (genera todo lo que no tenga `audio`, lo sube y lo enlaza en el JSON; se puede repetir).
+
 ## B-bis · Lo que de verdad falta por generar: 24 palabras
 
 Esta es **la lista corta y comprobada**, y es la que conviene mirar primero.

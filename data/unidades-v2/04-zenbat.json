@@ -729,12 +729,14 @@
         {
           "eu": "aitite",
           "registro": "bizkaiera",
-          "nota": "Muy usado en Bizkaia."
+          "nota": "Muy usado en Bizkaia.",
+          "audio": "unidades/u4/aitite.mp3"
         },
         {
           "eu": "aitxitxe",
           "registro": "bizkaiera",
-          "nota": "La otra forma vizcaína, igual de viva."
+          "nota": "La otra forma vizcaína, igual de viva.",
+          "audio": "unidades/u4/aitxitxe.mp3"
         }
       ],
       "subnivel": "4.6"
@@ -750,12 +752,14 @@
         {
           "eu": "amama",
           "registro": "bizkaiera",
-          "nota": "Recogida en el diccionario de Euskaltzaindia."
+          "nota": "Recogida en el diccionario de Euskaltzaindia.",
+          "audio": "unidades/u4/amama.mp3"
         },
         {
           "eu": "amuma",
           "registro": "bizkaiera",
-          "nota": "La otra forma vizcaína, igual de viva."
+          "nota": "La otra forma vizcaína, igual de viva.",
+          "audio": "unidades/u4/amuma.mp3"
         }
       ],
       "subnivel": "4.6"
@@ -780,7 +784,8 @@
         {
           "eu": "izeko",
           "registro": "bizkaiera",
-          "nota": "La tía en Bizkaia. El tío es «osaba» en las dos variedades."
+          "nota": "La tía en Bizkaia. El tío es «osaba» en las dos variedades.",
+          "audio": "unidades/u4/izeko.mp3"
         }
       ]
     },
@@ -811,7 +816,8 @@
         {
           "eu": "loba",
           "registro": "bizkaiera",
-          "nota": "Sin la i- del principio. En plural, «lobak». Misma doble lectura: sobrino y nieto."
+          "nota": "Sin la i- del principio. En plural, «lobak». Misma doble lectura: sobrino y nieto.",
+          "audio": "unidades/u4/loba.mp3"
         }
       ],
       "subnivel": "4.6"
@@ -844,6 +850,7 @@
       "eu": "familia",
       "es": "la familia",
       "nota": "Se dice igual que en castellano. Da nombre a media unidad: «Zenbat eta familia».",
+      "audio": "unidades/u4/familia.mp3",
       "categoria": "sustantivo",
       "subnivel": "4.6"
     },
@@ -971,6 +978,7 @@
       "eu": "seigarrena",
       "es": "el sexto, la sexta",
       "nota": "Sin género: vale para los dos.",
+      "audio": "unidades/u4/seigarrena.mp3",
       "subnivel": "4.3"
     },
     {
@@ -1051,12 +1059,14 @@
       "eu": "dirua",
       "es": "el dinero",
       "nota": "«Diru» a secas, sin la -a, en muchas frases hechas.",
+      "audio": "unidades/u9/dirua.mp3",
       "subnivel": "4.5"
     },
     {
       "eu": "astia",
       "es": "el tiempo (del que se dispone)",
       "nota": "No es el tiempo del reloj ni el del cielo: es el rato libre que tienes.",
+      "audio": "unidades/u4/astia.mp3",
       "subnivel": "4.5"
     }
   ],

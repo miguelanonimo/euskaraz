@@ -626,6 +626,7 @@
       "eu": "esan nahi du",
       "es": "significa, quiere decir",
       "nota": "Literalmente «quiere decir». «Zer esan nahi du?» — ¿qué significa?",
+      "audio": "unidades/u10/esan-nahi-du.mp3",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -761,6 +762,7 @@
       "eu": "dena",
       "es": "todo",
       "nota": "Lo mismo que «guztia». Cuando «todo» va solo, sin nombre delante, es la forma más corriente.",
+      "audio": "unidades/u10/dena.mp3",
       "categoria": "otros",
       "subnivel": "9.1"
     },
