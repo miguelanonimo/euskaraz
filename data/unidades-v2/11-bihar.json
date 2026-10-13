@@ -79,7 +79,7 @@
     {
       "subnivel": "11.1",
       "titulo": "El futuro: una «-ko» y ya está",
-      "cuerpo": "De todas las cosas que has aprendido, esta es de las más sencillas. Para hablar de lo que va a pasar, al verbo se le pega <b>-ko</b> (o <b>-go</b>) y el auxiliar se queda igual:\n\n<b>joan</b> → <b>joango naiz</b> — iré, voy a ir\n<b>egin</b> → <b>egingo dut</b> — haré, voy a hacer\n<b>ikasi</b> → <b>ikasiko dut</b> — estudiaré\n<b>esan</b> → <b>esango dut</b> — diré\n\n¿Cuándo <i>-ko</i> y cuándo <i>-go</i>? Por comodidad al hablar: detrás de <b>n</b> o <b>l</b> se pone <b>-go</b> (joan → joango, egin → egingo, esan → esango), y en los demás casos <b>-ko</b>.\n\nEs la misma lógica que hace que digamos «un» y no «uno» delante de nombre: la lengua busca lo que suena mejor.",
+      "cuerpo": "De todas las cosas que has aprendido, esta es de las más sencillas. Para hablar de lo que va a pasar, al verbo se le pega <b>-ko</b> (o <b>-go</b>) y el auxiliar se queda igual:\n\n<b>joan</b> → <b>joango naiz</b> — iré, voy a ir\n<b>egin</b> → <b>egingo dut</b> — haré, voy a hacer\n<b>ikasi</b> → <b>ikasiko dut</b> — estudiaré\n<b>esan</b> → <b>esango dut</b> — diré\n\n¿Cuándo <i>-ko</i> y cuándo <i>-go</i>? Por comodidad al hablar: detrás de <b>n</b> se pone <b>-go</b> (joan → joango, egin → egingo, esan → esango), y en los demás casos <b>-ko</b>.\n\nEs la misma lógica que hace que digamos «un» y no «uno» delante de nombre: la lengua busca lo que suena mejor.",
       "ejemplos": [
         {
           "eu": "Bihar joango naiz.",
@@ -1591,6 +1591,536 @@
           ],
           "correcta": 0,
           "explicacion": "-ago es «más»; -ena es «el más»."
+        }
+      ],
+      "subnivel": "test"
+    },
+    {
+      "id": "u11-g17",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«ikasi» (estudiar) en futuro es…",
+          "opciones": [
+            "ikasiko",
+            "ikasigo",
+            "ikasten",
+            "ikasi"
+          ],
+          "correcta": 0,
+          "explicacion": "No acaba en -n, así que lleva -ko: ikasiko dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«joan» (ir) en futuro es…",
+          "opciones": [
+            "joanko",
+            "joango",
+            "joaten",
+            "joan"
+          ],
+          "correcta": 1,
+          "explicacion": "Acaba en -n, y detrás de -n la -k se ablanda en -g: joango naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«erosi» (comprar) en futuro es…",
+          "opciones": [
+            "erosiko",
+            "erosigo",
+            "erosten",
+            "erosi"
+          ],
+          "correcta": 0,
+          "explicacion": "Acaba en vocal, así que -ko: erosiko dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«esan» (decir) en futuro es…",
+          "opciones": [
+            "esanko",
+            "esango",
+            "esaten",
+            "esan"
+          ],
+          "correcta": 1,
+          "explicacion": "Otra que acaba en -n: esango dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Por qué «joan» hace «joango» y no «joanko»?",
+          "opciones": [
+            "Porque acaba en -n",
+            "Porque es irregular",
+            "Porque es de movimiento",
+            "Por casualidad"
+          ],
+          "correcta": 0,
+          "explicacion": "Detrás de -n cuesta decir -ko, así que se ablanda en -go. Pura comodidad al hablar."
+        }
+      ],
+      "subnivel": "11.1"
+    },
+    {
+      "id": "u11-g18",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Mañana iré a Bilbao.",
+          "respuestas": [
+            "bihar bilbora joango naiz"
+          ],
+          "pista": "Cuatro palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estudiaré euskera.",
+          "respuestas": [
+            "euskara ikasiko dut"
+          ],
+          "pista": "Tres palabras. El verbo no acaba en -n."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Compraré pan.",
+          "respuestas": [
+            "ogia erosiko dut"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Qué harás mañana?",
+          "respuestas": [
+            "zer egingo duzu bihar",
+            "bihar zer egingo duzu"
+          ],
+          "pista": "Cuatro palabras. «egin» acaba en -n."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Comeré en casa.",
+          "respuestas": [
+            "etxean jango dut"
+          ],
+          "pista": "Tres palabras."
+        }
+      ],
+      "subnivel": "11.1"
+    },
+    {
+      "id": "u11-g19",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«El tren es más rápido que el autobús» → Trena autobusa ____ azkarragoa da.",
+          "opciones": [
+            "baino",
+            "bezain",
+            "berdin",
+            "gehiago"
+          ],
+          "correcta": 0,
+          "explicacion": "El «que» de comparar es «baino», y va delante del adjetivo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Ane es tan rápida como Mikel» → Ane Mikel ____ azkarra da.",
+          "opciones": [
+            "baino",
+            "bezain",
+            "gehiago",
+            "berdin"
+          ],
+          "correcta": 1,
+          "explicacion": "Para «tan… como» va «bezain», no «baino»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«El libro más importante» se dice…",
+          "opciones": [
+            "liburu garrantzitsuena",
+            "liburu garrantzitsuagoa",
+            "liburu garrantzitsua",
+            "liburu garrantzitsubaino"
+          ],
+          "correcta": 0,
+          "explicacion": "El superlativo es -ena: garrantzitsuena. Con -ago sería solo «más importante»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Es el mejor» → ____ da.",
+          "opciones": [
+            "Onena",
+            "Hobea",
+            "Gehiago",
+            "Berdin"
+          ],
+          "correcta": 0,
+          "explicacion": "«ona» es irregular: hobea (mejor) y onena (el mejor)."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Este es más fácil» → Hau ____ da.",
+          "opciones": [
+            "errazagoa",
+            "errazena",
+            "erraza",
+            "errazbaino"
+          ],
+          "correcta": 0,
+          "explicacion": "erraz + -ago + -a. El adjetivo entra sin el -a de «erraza»."
+        }
+      ],
+      "subnivel": "11.3"
+    },
+    {
+      "id": "u11-g20",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Bilbao es más grande que Gernika.",
+          "respuestas": [
+            "bilbo gernika baino handiagoa da"
+          ],
+          "pista": "Cinco palabras. El «que» va delante del adjetivo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Soy tan alto como tú.",
+          "respuestas": [
+            "zu bezain altua naiz",
+            "ni zu bezain altua naiz"
+          ],
+          "pista": "Cuatro palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Este libro es mejor.",
+          "respuestas": [
+            "liburu hau hobea da"
+          ],
+          "pista": "Cuatro palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Quiero menos café.",
+          "respuestas": [
+            "kafe gutxiago nahi dut"
+          ],
+          "pista": "Cuatro palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Es la ciudad más grande.",
+          "respuestas": [
+            "hiri handiena da"
+          ],
+          "pista": "Tres palabras."
+        }
+      ],
+      "subnivel": "11.3"
+    },
+    {
+      "id": "u11-g21",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adjetivos del tema",
+          "pares": [
+            {
+              "eu": "zaila",
+              "es": "difícil"
+            },
+            {
+              "eu": "garrantzitsua",
+              "es": "importante"
+            },
+            {
+              "eu": "azkar",
+              "es": "rápido"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja cómo se hace algo",
+          "pares": [
+            {
+              "eu": "azkar",
+              "es": "rápido"
+            },
+            {
+              "eu": "poliki",
+              "es": "despacio"
+            },
+            {
+              "eu": "hobeto",
+              "es": "mejor"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las comparaciones",
+          "pares": [
+            {
+              "eu": "hobea",
+              "es": "mejor"
+            },
+            {
+              "eu": "txarragoa",
+              "es": "peor"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más"
+            },
+            {
+              "eu": "gutxiago",
+              "es": "menos"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los adjetivos que ya tenías",
+          "pares": [
+            {
+              "eu": "handia",
+              "es": "grande"
+            },
+            {
+              "eu": "txikia",
+              "es": "pequeño"
+            },
+            {
+              "eu": "polita",
+              "es": "bonito"
+            },
+            {
+              "eu": "zaharra",
+              "es": "viejo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja las piezas de comparar",
+          "pares": [
+            {
+              "eu": "baino",
+              "es": "que (en comparaciones)"
+            },
+            {
+              "eu": "bezain",
+              "es": "tan… como"
+            },
+            {
+              "eu": "gehiago",
+              "es": "más"
+            },
+            {
+              "eu": "berdin",
+              "es": "igual"
+            }
+          ]
+        }
+      ],
+      "subnivel": "11.4"
+    },
+    {
+      "id": "u11-g22",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mañana estudiaré euskera.",
+          "eu": "Bihar euskara ikasiko dut.",
+          "palabras": [
+            "bihar",
+            "euskara",
+            "ikasiko",
+            "dut"
+          ],
+          "distractores": [
+            "nuen"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Ayer comí en casa.",
+          "eu": "Atzo etxean jan nuen.",
+          "palabras": [
+            "atzo",
+            "etxean",
+            "jan",
+            "nuen"
+          ],
+          "distractores": [
+            "dut"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mañana vendré en tren.",
+          "eu": "Bihar trenez etorriko naiz.",
+          "palabras": [
+            "bihar",
+            "trenez",
+            "etorriko",
+            "naiz"
+          ],
+          "distractores": [
+            "nintzen"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "El año pasado estudié euskera.",
+          "eu": "Iaz euskara ikasi nuen.",
+          "palabras": [
+            "iaz",
+            "euskara",
+            "ikasi",
+            "nuen"
+          ],
+          "distractores": [
+            "dut"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "Mañana compraré pan.",
+          "eu": "Bihar ogia erosiko dut.",
+          "palabras": [
+            "bihar",
+            "ogia",
+            "erosiko",
+            "dut"
+          ],
+          "distractores": [
+            "nuen"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
+          "es": "Mañana haré los deberes.",
+          "eu": "Bihar etxeko lanak egingo ditut.",
+          "palabras": [
+            "bihar",
+            "etxeko",
+            "lanak",
+            "egingo",
+            "ditut"
+          ],
+          "distractores": [
+            "nituen"
+          ]
+        }
+      ],
+      "subnivel": "11.2"
+    },
+    {
+      "id": "u11-g23",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Bihar Bilbora ____.",
+          "opciones": [
+            "joango naiz",
+            "joan nintzen",
+            "joaten naiz",
+            "joango dut"
+          ],
+          "correcta": 0,
+          "explicacion": "«bihar» pide futuro, y «joan» no lleva objeto: joango naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Más despacio, por favor» → ____, mesedez.",
+          "opciones": [
+            "Polikiago",
+            "Polikiena",
+            "Poliki",
+            "Polikibaino"
+          ],
+          "correcta": 0,
+          "explicacion": "El -ago también se le pega a los adverbios: poliki → polikiago."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«hartu» (tomar) en futuro es…",
+          "opciones": [
+            "hartuko",
+            "hartugo",
+            "hartzen",
+            "hartu"
+          ],
+          "correcta": 0,
+          "explicacion": "Acaba en vocal, así que -ko: hartuko dut."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Hoy estoy mejor que ayer» → Gaur atzo ____ hobeto nago.",
+          "opciones": [
+            "baino",
+            "bezain",
+            "gehiago",
+            "berdin"
+          ],
+          "correcta": 0,
+          "explicacion": "Comparar dos cosas pide «baino», aunque lo comparado sea un adverbio."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «asmoa dut»?",
+          "opciones": [
+            "Tengo la intención",
+            "Tengo tiempo",
+            "Tengo razón",
+            "Tengo frío"
+          ],
+          "correcta": 0,
+          "explicacion": "«asmoa» es la intención o el plan. Así se dicen la mitad de los planes."
         }
       ],
       "subnivel": "test"

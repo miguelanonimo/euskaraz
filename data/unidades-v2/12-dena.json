@@ -1920,6 +1920,472 @@
         }
       ],
       "subnivel": "test"
+    },
+    {
+      "id": "u12-g16",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Es tarde. Así que no iré» → Berandu da. ____, ez naiz joango.",
+          "opciones": [
+            "Beraz",
+            "Gainera",
+            "Adibidez",
+            "Noski"
+          ],
+          "correcta": 0,
+          "explicacion": "«beraz» es «así que»: introduce la consecuencia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Además» se dice…",
+          "opciones": [
+            "gainera",
+            "beraz",
+            "hala ere",
+            "adibidez"
+          ],
+          "correcta": 0,
+          "explicacion": "«gainera» suma algo a lo que acabas de decir."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Aun así» se dice…",
+          "opciones": [
+            "hala ere",
+            "gainera",
+            "beraz",
+            "benetan"
+          ],
+          "correcta": 0,
+          "explicacion": "«hala ere» marca que lo que viene va contra lo anterior."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Por ejemplo» se dice…",
+          "opciones": [
+            "adibidez",
+            "noski",
+            "beraz",
+            "gainera"
+          ],
+          "correcta": 0,
+          "explicacion": "«adibidez» presenta un ejemplo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "Zergatik ikasten duzu euskara? — Gustatzen ____.",
+          "opciones": [
+            "zaidalako",
+            "zait",
+            "zaizu",
+            "zaio"
+          ],
+          "correcta": 0,
+          "explicacion": "«porque» no es una palabra suelta: es el sufijo -lako pegado al verbo."
+        }
+      ],
+      "subnivel": "12.2"
+    },
+    {
+      "id": "u12-g17",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los conectores nuevos",
+          "pares": [
+            {
+              "eu": "beraz",
+              "es": "así que"
+            },
+            {
+              "eu": "noski",
+              "es": "claro, por supuesto"
+            },
+            {
+              "eu": "baina",
+              "es": "pero"
+            },
+            {
+              "eu": "ere",
+              "es": "también"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los que ya tenías",
+          "pares": [
+            {
+              "eu": "baina",
+              "es": "pero"
+            },
+            {
+              "eu": "ere",
+              "es": "también"
+            },
+            {
+              "eu": "beraz",
+              "es": "así que"
+            },
+            {
+              "eu": "gainera",
+              "es": "además"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja estas cuatro",
+          "pares": [
+            {
+              "eu": "noski",
+              "es": "claro, por supuesto"
+            },
+            {
+              "eu": "benetan",
+              "es": "de verdad"
+            },
+            {
+              "eu": "hala ere",
+              "es": "aun así"
+            },
+            {
+              "eu": "adibidez",
+              "es": "por ejemplo"
+            }
+          ]
+        },
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja consecuencia y contraste",
+          "pares": [
+            {
+              "eu": "beraz",
+              "es": "así que"
+            },
+            {
+              "eu": "hala ere",
+              "es": "aun así"
+            },
+            {
+              "eu": "baina",
+              "es": "pero"
+            },
+            {
+              "eu": "gainera",
+              "es": "además"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde se coloca «ere»?",
+          "opciones": [
+            "Detrás de la palabra a la que acompaña",
+            "Delante",
+            "Al final de la frase",
+            "Donde sea"
+          ],
+          "correcta": 0,
+          "explicacion": "«Ni ere euskalduna naiz»: va pegado detrás de «ni», no delante."
+        }
+      ],
+      "subnivel": "12.2"
+    },
+    {
+      "id": "u12-g18",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«No he visto a nadie» → Ez dut ____ ikusi.",
+          "opciones": [
+            "inor",
+            "ezer",
+            "norbait",
+            "zerbait"
+          ],
+          "correcta": 0,
+          "explicacion": "«inor» es para personas. Para cosas sería «ezer»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«No he comprado nada» → Ez dut ____ erosi.",
+          "opciones": [
+            "ezer",
+            "inor",
+            "zerbait",
+            "nonbait"
+          ],
+          "correcta": 0,
+          "explicacion": "«ezer» es para cosas. Para personas sería «inor»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«inor» se usa para…",
+          "opciones": [
+            "personas",
+            "cosas",
+            "sitios",
+            "momentos"
+          ],
+          "correcta": 0,
+          "explicacion": "inor = nadie, de gente. Confundirlo con «ezer» es el tropiezo más corriente."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Hay alguien en la puerta» → ____ dago atean.",
+          "opciones": [
+            "Norbait",
+            "Inor",
+            "Ezer",
+            "Nonbait"
+          ],
+          "correcta": 0,
+          "explicacion": "De «nor» (quién) sale «norbait» (alguien), pegándole -bait."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué le falta a la frase «Ez dago ____»?",
+          "opciones": [
+            "Nada: «inor» y «ezer» ya piden el «ez»",
+            "Un «bai»",
+            "Un «al»",
+            "Un «ere»"
+          ],
+          "correcta": 0,
+          "explicacion": "«inor» y «ezer» van con el «ez» delante del verbo, igual que en castellano decimos «no hay nadie»."
+        }
+      ],
+      "subnivel": "12.3"
+    },
+    {
+      "id": "u12-g19",
+      "variantes": [
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "No hay nadie en la calle.",
+          "eu": "Ez dago inor kalean.",
+          "palabras": [
+            "ez",
+            "dago",
+            "inor",
+            "kalean"
+          ],
+          "distractores": [
+            "ezer"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "He comprado algo.",
+          "eu": "Zerbait erosi dut.",
+          "palabras": [
+            "zerbait",
+            "erosi",
+            "dut"
+          ],
+          "distractores": [
+            "inor"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "No he visto nada.",
+          "eu": "Ez dut ezer ikusi.",
+          "palabras": [
+            "ez",
+            "dut",
+            "ezer",
+            "ikusi"
+          ],
+          "distractores": [
+            "inor"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "El libro está en algún sitio.",
+          "eu": "Liburua nonbait dago.",
+          "palabras": [
+            "liburua",
+            "nonbait",
+            "dago"
+          ],
+          "distractores": [
+            "inor"
+          ]
+        },
+        {
+          "tipo": "orden",
+          "instruccion": "Ordena las palabras",
+          "es": "¿Hay alguien en casa?",
+          "eu": "Inor al dago etxean?",
+          "palabras": [
+            "inor",
+            "al",
+            "dago",
+            "etxean",
+            "?"
+          ],
+          "distractores": [
+            "ezer"
+          ]
+        },
+        {
+          "tipo": "escribir",
+          "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
+          "es": "No hay nadie aquí.",
+          "eu": "Ez dago inor hemen.",
+          "palabras": [
+            "ez",
+            "dago",
+            "inor",
+            "hemen"
+          ],
+          "distractores": [
+            "zerbait"
+          ]
+        }
+      ],
+      "subnivel": "12.3"
+    },
+    {
+      "id": "u12-g20",
+      "variantes": [
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Vives en Bilbao?",
+          "respuestas": [
+            "bilbon bizi al zara"
+          ],
+          "pista": "Cuatro palabras. El «al» va justo antes del verbo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Quieres agua?",
+          "respuestas": [
+            "ura nahi al duzu"
+          ],
+          "pista": "Cuatro palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Tienes tiempo?",
+          "respuestas": [
+            "astia al duzu"
+          ],
+          "pista": "Tres palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Vendrás mañana?",
+          "respuestas": [
+            "bihar etorriko al zara"
+          ],
+          "pista": "Cuatro palabras."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Es difícil el euskera?",
+          "respuestas": [
+            "euskara zaila al da"
+          ],
+          "pista": "Cuatro palabras."
+        }
+      ],
+      "subnivel": "12.1"
+    },
+    {
+      "id": "u12-g21",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde se coloca «al» en la frase?",
+          "opciones": [
+            "Justo antes del verbo",
+            "Al final",
+            "Al principio",
+            "Justo detrás del verbo"
+          ],
+          "correcta": 0,
+          "explicacion": "«Etxean al zaude?», «Kafea nahi al duzu?»: siempre pegado delante del verbo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«No quiero nada» → Ez dut ____ nahi.",
+          "opciones": [
+            "ezer",
+            "inor",
+            "zerbait",
+            "denak"
+          ],
+          "correcta": 0,
+          "explicacion": "Cosas: ezer. Personas: inor."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué significa «nonbait»?",
+          "opciones": [
+            "En algún sitio",
+            "Alguien",
+            "Nada",
+            "Nunca"
+          ],
+          "correcta": 0,
+          "explicacion": "De «non» (dónde) sale «nonbait» (en algún sitio), con el mismo -bait."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Así que» se dice…",
+          "opciones": [
+            "beraz",
+            "gainera",
+            "hala ere",
+            "noski"
+          ],
+          "correcta": 0,
+          "explicacion": "«beraz» introduce la consecuencia de lo dicho."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Solo quiero agua» → Ura ____ nahi dut.",
+          "opciones": [
+            "bakarrik",
+            "denak",
+            "ezer",
+            "norbait"
+          ],
+          "correcta": 0,
+          "explicacion": "«bakarrik» va detrás de la palabra a la que afecta, igual que «ere»."
+        }
+      ],
+      "subnivel": "test"
     }
   ],
   "audiosExtra": [
