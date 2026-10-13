@@ -1239,6 +1239,9 @@
           "distractores": [
             "madaria",
             "gosaldu"
+          ],
+          "euAlt": [
+            "Etxean musika entzuten dut."
           ]
         },
         {
@@ -1493,6 +1496,9 @@
           "distractores": [
             "gazta",
             "gosaria"
+          ],
+          "euAlt": [
+            "Ez dut ardorik edaten."
           ]
         },
         {
@@ -1525,6 +1531,9 @@
           ],
           "distractores": [
             "dutxatu"
+          ],
+          "euAlt": [
+            "Ez nago lanean."
           ]
         },
         {
@@ -1542,6 +1551,9 @@
           "distractores": [
             "gosaldu",
             "jan"
+          ],
+          "euAlt": [
+            "Ez dut haragirik erosten."
           ]
         },
         {
@@ -2414,7 +2426,7 @@
             "daukat"
           ],
           "correcta": 1,
-          "explicacion": "Aunque haya objeto, siempre «naiz»."
+          "explicacion": "Aunque la frase lleve objeto, con «ari» el auxiliar es siempre «izan»: naiz, zara, da. Ojo con «egon» (nago, zaude, dago), que suena parecido y aquí no vale."
         },
         {
           "tipo": "opcion",

@@ -864,7 +864,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué tienen en común la pregunta y su respuesta en euskera?",
+          "pregunta": "«Non? — Bilbon». ¿Qué tienen en común la pregunta y la respuesta en euskera?",
           "opciones": [
             "Nada",
             "La misma terminación",

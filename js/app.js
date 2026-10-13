@@ -3960,8 +3960,24 @@
     });
     return {
       ok: ok,
-      cuerpo: ok ? '' : htmlSolucion(ej.eu)
+      cuerpo: ok ? htmlOtrasValidas(ej, acertada) : htmlSolucion(ej.eu)
     };
+  }
+
+  /* Hay frases que admiten más de un orden —típicamente con el pronombre
+     dentro o fuera: «Zu nirekin zatoz?» y «Nirekin zatoz?»—, y las dos
+     cuentan como buenas desde que se añadió `euAlt`. Al acertar conviene
+     decirlo: si no, quien puso la otra se queda pensando que coló de
+     milagro, y quien puso esta no se entera de que había alternativa.
+     Petición de Ric. */
+  function htmlOtrasValidas(ej, acertada) {
+    var otras = [ej.eu].concat(ej.euAlt || []).filter(function (f) {
+      return normalizar(f) !== normalizar(acertada || ej.eu);
+    });
+    if (!otras.length) return '';
+    return '<p class="dif__nota">También vale: ' + otras.map(function (f) {
+      return '\u00ab' + esc(f) + '\u00bb';
+    }).join(' \u00b7 ') + '</p>';
   }
 
   /* — Escribir con la bolsa a la vista —

@@ -498,18 +498,16 @@
         {
           "tipo": "orden",
           "instruccion": "Ordena las palabras",
-          "es": "Bilbao es más grande que Gernika.",
-          "eu": "Bilbo Gernika baino handiagoa da.",
+          "es": "¿Estás en casa?",
+          "eu": "Etxean al zaude?",
           "palabras": [
-            "Bilbo",
-            "Gernika",
-            "baino",
-            "handiagoa",
-            "da"
+            "etxean",
+            "al",
+            "zaude",
+            "?"
           ],
           "distractores": [
-            "bezain",
-            "al"
+            "zen"
           ]
         },
         {
@@ -562,18 +560,17 @@
         {
           "tipo": "escribir",
           "instruccion": "Escribe la frase en euskera. Entre las palabras de abajo están todas las necesarias.",
-          "es": "Bilbao es más grande que Gernika.",
-          "eu": "Bilbo Gernika baino handiagoa da.",
+          "es": "¿Estudias euskera?",
+          "eu": "Euskara ikasten al duzu?",
           "palabras": [
-            "Bilbo",
-            "Gernika",
-            "baino",
-            "handiagoa",
-            "da"
+            "euskara",
+            "ikasten",
+            "al",
+            "duzu",
+            "?"
           ],
           "distractores": [
-            "bezain",
-            "al"
+            "zara"
           ]
         }
       ],
@@ -776,7 +773,7 @@
           "euAlt": [
             "Nirekin zatoz?"
           ],
-          "pista": "El pronombre «zu» es opcional: el verbo ya dice quién."
+          "pista": "El pronombre «zu» es opcional: el verbo ya dice quién. Las dos formas cuentan como buenas."
         },
         {
           "tipo": "orden",

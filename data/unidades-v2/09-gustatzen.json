@@ -1055,23 +1055,23 @@
         },
         {
           "tipo": "pares",
-          "instruccion": "Empareja las aficiones",
+          "instruccion": "Empareja más verbos del tema",
           "pares": [
             {
-              "eu": "kirola",
-              "es": "el deporte"
+              "eu": "erantzun",
+              "es": "responder"
             },
             {
-              "eu": "zinema",
-              "es": "el cine"
+              "eu": "eman",
+              "es": "dar"
             },
             {
-              "eu": "dantza",
-              "es": "el baile"
+              "eu": "galdetu",
+              "es": "preguntar"
             },
             {
-              "eu": "antzerkia",
-              "es": "el teatro"
+              "eu": "lagundu",
+              "es": "ayudar"
             }
           ]
         },
@@ -1537,6 +1537,9 @@
           ],
           "distractores": [
             "asko"
+          ],
+          "euAlt": [
+            "Aneri esan dio."
           ]
         },
         {
