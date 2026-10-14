@@ -1578,7 +1578,7 @@
         ' style="--sc:' + ft.texto + ';--sc-soft:' + ft.suaveClaro + '">' +
         '<span class="scard__t">' + titulo + '</span>' +
         '<span class="scard__row"><span class="scard__n">' +
-          (abierto && quedan > 0 ? '<span class="scard__faltan">faltan</span>' : '') +
+          (abierto && quedan > 0 ? '<span class="scard__faltan">' + (quedan === 1 ? 'falta' : 'faltan') + '</span>' : '') +
           '<span class="scard__v">' + valor + '</span></span>' +
           anillo(total ? hechos / total * 100 : 0, { tam: 32, color: ft.texto, hecho: terminado }) + '</span>' +
       '</button>';
@@ -1641,8 +1641,21 @@
   function pintarHomeAncha(pila, activa, repaso) {
     var otras = pila.filter(function (u) { return u !== activa; }).reverse();
     var racha = rachaActual();
+    var repasos = '<div class="reviews homew__reviews">' +
+      repaso('goVocabRepaso', 'Repaso de\nvocabulario', fondoVocabulario(), claveDeVocab, 4) +
+      repaso('goRepaso', 'Repaso\nmezclado', fondoRepaso(), claveDeFondo, 1) +
+    '</div>';
+    /* Con el curso entero al 100% ya no hay lecciones siguientes que asomen:
+       queda solo la última, y los repasos se apilan a su derecha en vez de
+       ir debajo (la tarjeta llega hasta donde acaban los dos repasos). */
+    var completo = CURSO.unidades.every(function (u) { return progresoUnidad(u).ratio >= 0.995; });
+    var cuerpo = completo
+      ? '<div class="homew__fin">' + tarjetaRail(activa, true) + repasos + '</div>'
+      : '<div class="homew__rail">' +
+          tarjetaRail(activa, true) + otras.map(function (u) { return tarjetaRail(u, false); }).join('') +
+        '</div>' + repasos;
     el.screens.home.innerHTML =
-      '<div class="homew">' +
+      '<div class="homew' + (completo ? ' homew--fin' : '') + '">' +
         '<div class="homew__hero">' +
           '<h1 class="pagetitle">' + esc(saludo()) + '\nEuskaraz pixka bat?</h1>' +
           '<div class="homew__racha">' +
@@ -1650,20 +1663,14 @@
             '<span class="racha__dias">' + semana() + '</span>' +
           '</div>' +
         '</div>' +
-        '<div class="homew__rail">' +
-          tarjetaRail(activa, true) + otras.map(function (u) { return tarjetaRail(u, false); }).join('') +
-        '</div>' +
-        '<div class="reviews homew__reviews">' +
-          repaso('goVocabRepaso', 'Repaso de\nvocabulario', fondoVocabulario(), claveDeVocab, 4) +
-          repaso('goRepaso', 'Repaso\nmezclado', fondoRepaso(), claveDeFondo, 1) +
-        '</div>' +
+        cuerpo +
       '</div>';
     mostrar('home');
 
     // Misma regla que el móvil: tres bloques casi a la vez, en cascada.
     var DB = 60, s = el.screens.home;
     aparecerEscalonado(s.querySelectorAll('.homew__hero > .pagetitle, .homew__cuenta, .homew__racha .day'), 0 * DB, 70);
-    aparecerPrimeroLento(s.querySelectorAll('.homew__rail > *'), 1 * DB, 110, 400, 320);
+    aparecerPrimeroLento(s.querySelectorAll('.homew__rail > *, .homew__fin > .lfeat'), 1 * DB, 110, 400, 320);
     aparecerEscalonado(s.querySelectorAll('.homew__reviews > *'), 2 * DB, 110);
   }
 
