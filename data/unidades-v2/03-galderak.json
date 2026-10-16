@@ -1010,41 +1010,41 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «Ez dakit»?",
+          "pregunta": "¿Qué significa «zergatik»?",
           "opciones": [
-            "No quiero",
-            "No sé",
-            "No entiendo",
-            "No es"
+            "Por qué",
+            "Cuándo",
+            "Cómo",
+            "Cuánto"
           ],
-          "correcta": 1,
-          "explicacion": "Probablemente la frase más útil de todo el módulo."
+          "correcta": 0,
+          "explicacion": "«zergatik?» es «¿por qué?». Lleva dentro «zer» (qué), como casi todas las interrogativas."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "No has entendido lo que te han dicho. ¿Qué respondes?",
+          "pregunta": "Quieres saber cuántos hay. ¿Qué preguntas?",
           "opciones": [
-            "Ez dakit",
-            "Ez dut ulertzen",
-            "Agian",
-            "Beti"
+            "Zenbat?",
+            "Zein?",
+            "Nola?",
+            "Noiz?"
           ],
-          "correcta": 1,
-          "explicacion": "«Ez dut ulertzen» es «no entiendo». «Ez dakit» sería «no sé»."
+          "correcta": 0,
+          "explicacion": "«zenbat?» pregunta por la cantidad."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué significa «agian»?",
+          "pregunta": "¿Qué significa «noren»?",
           "opciones": [
-            "Siempre",
-            "Nunca",
-            "Quizás",
-            "Ahora"
+            "De quién",
+            "Con quién",
+            "Dónde",
+            "Cuál"
           ],
-          "correcta": 2,
-          "explicacion": "Útil cuando no quieres comprometerte con un sí o un no."
+          "correcta": 0,
+          "explicacion": "«noren?» es «¿de quién?». Con «norekin?» sería «¿con quién?»."
         },
         {
           "tipo": "opcion",
