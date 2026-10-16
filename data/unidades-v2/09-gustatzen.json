@@ -3968,28 +3968,28 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Oinez» (a pie) lleva dentro…",
+          "pregunta": "Te duele la cabeza. ¿Qué parte del cuerpo es?",
           "opciones": [
-            "oin, el pie",
-            "esku, la mano",
-            "buru, la cabeza",
-            "hanka, la pierna"
+            "burua",
+            "bihotza",
+            "hanka",
+            "besoa"
           ],
           "correcta": 0,
-          "explicacion": "oin + -z, el «por medio de» de la octava unidad."
+          "explicacion": "«burua» es la cabeza."
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Y «eskuz» (a mano)?",
+          "pregunta": "«Nire ilea beltza da» significa…",
           "opciones": [
-            "esku, la mano",
-            "oin, el pie",
-            "begi, el ojo",
-            "belarri, la oreja"
+            "Mi pelo es negro",
+            "Mis ojos son negros",
+            "Mi mano es grande",
+            "Mi corazón es fuerte"
           ],
           "correcta": 0,
-          "explicacion": "esku + -z."
+          "explicacion": "«ilea» es el pelo, y «beltza» el negro que viste en la unidad 5."
         },
         {
           "tipo": "opcion",
