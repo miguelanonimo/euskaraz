@@ -2034,14 +2034,15 @@
     };
   }
 
-  /* Cuánto pesa en un tema haberlo visto (abierto su portada, su explicación
-     o su vocabulario) frente a sus ejercicios: el resto, hasta el 100%, es la
-     mejor nota de la práctica. Ver 2 temas de 4 ya mueve el porcentaje. */
+  /* El avance de un tema es su mejor nota (la más alta que has sacado, aunque
+     la siguiente vez saques menos), con un suelo del 20% por haberlo visto
+     (abierta su portada, su explicación o su vocabulario): así ver 2 temas de
+     4 ya mueve el porcentaje, y con una nota de 70 se enseña 70. */
   var AVANCE_VISTO = 0.2;
   function avanceTema(unidadId, subId) {
     var ps = progSub(unidadId, subId), nota = ps.mejor || 0;
     var visto = ps.visitado || ps.desbloqueado || nota > 0;
-    return (visto ? AVANCE_VISTO : 0) + (1 - AVANCE_VISTO) * nota;
+    return Math.max(nota, visto ? AVANCE_VISTO : 0);
   }
 
   function plural(n, uno, varios) { return n + ' ' + (n === 1 ? uno : varios); }
