@@ -20,13 +20,19 @@ function sacar(n) {
 }
 
 // formasDe mira una variable de módulo; se le da el valor por fuera.
+const regla = src.match(/var NOTA_TRAS_GUION = [^;]+;/)[0];
+
 const api = new Function(`
   var euskalkiActivo = 'bizkaiera';
   var modoSilencioso = false;
   function marcarVocab(q, entrada) { q.__clave = 'v:' + entrada.eu; return q; }
+  ${regla}
+  ${sacar('normalizar')}
+  ${sacar('sinNota')}
+  ${sacar('formasTraduccion')}
   ${sacar('formasDe')}
   ${sacar('preguntaEscucharTeclear')}
-  return { formasDe, preguntaEscucharTeclear };
+  return { formasDe, preguntaEscucharTeclear, formasTraduccion, sinNota, normalizar };
 `)();
 
 const curso = JSON.parse(fs.readFileSync(path.join(raiz, 'data/curso-v2.json'), 'utf8'));
@@ -63,6 +69,30 @@ if (!askotan || (askotan.esAlt || []).indexOf('muchas veces') < 0) {
   console.error('  ✗ «askotan» debe aceptar «muchas veces», que es lo que significa literalmente');
 }
 
+// La nota pegada a la traducción no se teclea. Ric oyó «Zu ondo zaude?»,
+// escribió «estás bien?» y le salió «No exactamente», porque lo que se
+// esperaba era «¿Estás bien? — vale para cualquiera», nota incluida.
+// Y el guion largo no siempre separa una nota: en «¿Dónde? — En Bilbao.»
+// la segunda mitad ES la traducción y tiene que seguir haciendo falta.
+const NOTAS = [
+  ['¿Estás bien? — vale para cualquiera', 'estás bien?',        true ],
+  ['¿Estás bien? — vale para cualquiera', 'estás bien',         true ],
+  ['la comida (del mediodía)',            'la comida',          true ],
+  ['conmigo — batua: nirekin',            'conmigo',            true ],
+  ['Tengo una hermana. — dicho por un chico', 'tengo una hermana', true ],
+  ['¿Dónde? — En Bilbao.',                '¿dónde?',            false],
+  ['¿Qué tal? — Muy bien, ¿y tú?',        'qué tal?',           false],
+];
+for (const [es, dado, debeValer] of NOTAS) {
+  const vale = api.formasTraduccion({ es })
+    .some(f => api.normalizar(f) === api.normalizar(dado));
+  if (vale !== debeValer) {
+    fallos++;
+    console.error('  ✗ «' + es + '» con «' + dado + '»: ' +
+      (debeValer ? 'debería valer y no vale' : 'no debería valer y vale'));
+  }
+}
+
 if (!comprobadas) { console.error('  ✗ no hay ninguna entrada con esAlt: la prueba no prueba nada'); fallos++; }
 if (fallos) { console.error(fallos + ' fallo(s)'); process.exit(1); }
-console.log('esAlt OK (' + comprobadas + ' entradas)');
+console.log('esAlt y notas OK (' + comprobadas + ' entradas con esAlt, ' + NOTAS.length + ' casos de nota)');

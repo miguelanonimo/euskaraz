@@ -2799,6 +2799,39 @@
     }, entrada);
   }
 
+  /* La traducción de una entrada lleva a veces una nota pegada: «¿Estás
+     bien? — vale para cualquiera», «la comida (del mediodía)». En la ficha
+     eso se lee bien, pero estas mismas entradas se reciclan en «escucha y
+     tradúcelo», donde `es` pasa a ser lo que hay que TECLEAR — y entonces
+     para acertar hay que escribir también la nota. Lo cazó Ric: oyó «Zu
+     ondo zaude?», escribió «estás bien?» y le salió «No exactamente».
+
+     El guion largo hace dos trabajos distintos en el curso y no vale
+     cortar por él a ciegas: en «¿Dónde? — En Bilbao.» lo de después ES la
+     traducción; en «conmigo — batua: nirekin» es una nota. Lo que los
+     separa es la mayúscula —una nota empieza en minúscula o con comillas—
+     y la regla se comprobó contra las 55 entradas del curso que llevan
+     guion: 46 notas y 9 diálogos, sin confundir ninguna. */
+  var NOTA_TRAS_GUION = /\s[\u2014\u2013]\s+(?=[a-z\u00e1\u00e9\u00ed\u00f3\u00fa\u00fc\u00f1\u00ab"])/;
+
+  function sinNota(es) {
+    return String(es || '').split(NOTA_TRAS_GUION)[0]
+      .replace(/\s*\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  /* Todas las formas castellanas que cuentan como acertar. La entera
+     siempre, y además la limpia de nota y la limpia de paréntesis por
+     separado: «la comida (del mediodía)» tiene que aceptar «la comida». */
+  function formasTraduccion(entrada) {
+    var es = String(entrada.es || '');
+    var fuera = [es].concat(entrada.esAlt || []);
+    [sinNota(es),
+     es.split(NOTA_TRAS_GUION)[0].trim(),
+     es.replace(/\s*\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim()
+    ].forEach(function (f) { if (f && fuera.indexOf(f) < 0) fuera.push(f); });
+    return fuera;
+  }
+
   /* Escuchar + opción: la pregunta ya no se lee, se oye. Solo tiene
      sentido si la palabra tiene audio narrado; si no, el llamante cae a
      otro formato. Los distractores en castellano se sortean igual que
@@ -2807,7 +2840,10 @@
      misma palabra escrita", eso no prueba comprensión. */
   function preguntaEscucharOpcion(entrada, ctx) {
     if (!entrada.audio || modoSilencioso) return null;
-    var correcta = entrada.es;
+    /* Sin la nota: si la correcta llega con «— vale para cualquiera»
+       pegado y los distractores son de dos palabras, se acierta por el
+       largo sin entender nada. */
+    var correcta = sinNota(entrada.es) || entrada.es;
     var yaPuesto = {};
     yaPuesto[normalizar(correcta)] = true;
 
@@ -2816,17 +2852,18 @@
     ctx.fondo.forEach(function (v) {
       if (v === entrada) return;
       if (choca[normalizar(v.eu)]) return;   // diría lo mismo que la correcta
-      var txt = normalizar(v.es);
+      var txt = normalizar(sinNota(v.es) || v.es);
       if (yaPuesto[txt]) return;
       (v.unidad === entrada.unidad ? mismos : otros).push(v);
     });
 
     var opciones = [correcta];
     barajar(mismos).concat(barajar(otros)).some(function (v) {
-      var txt = normalizar(v.es);
+      var limpia = sinNota(v.es) || v.es;
+      var txt = normalizar(limpia);
       if (yaPuesto[txt]) return false;
       yaPuesto[txt] = true;
-      opciones.push(v.es);
+      opciones.push(limpia);
       return opciones.length === 4;
     });
 
@@ -2860,7 +2897,7 @@
       // «gracias» (detectado por Ric). No se puede quitar el
       // intensificador por regla general, porque «muy bien» → «bien»
       // chocaría con `ondo`, que es otra palabra del curso.
-      respuestas: [entrada.es].concat(entrada.esAlt || []),
+      respuestas: formasTraduccion(entrada),
       solucion: entrada.es,
       explicacion: entrada.nota || ''
     }, entrada);

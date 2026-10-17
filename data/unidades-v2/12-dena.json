@@ -2157,15 +2157,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Qué le falta a la frase «Ez dago ____»?",
+          "pregunta": "«Inor» y «ezer» piden que la frase lleve…",
           "opciones": [
-            "Nada: «inor» y «ezer» ya piden el «ez»",
-            "Un «bai»",
-            "Un «al»",
-            "Un «ere»"
+            "un «ez»",
+            "un «bai»",
+            "un «al»",
+            "un «ere»"
           ],
           "correcta": 0,
-          "explicacion": "«inor» y «ezer» van con el «ez» delante del verbo, igual que en castellano decimos «no hay nadie»."
+          "explicacion": "Van con el «ez» delante del verbo: «Ez dago inor», «Ez dut ezer esan». Igual que en castellano decimos «no hay nadie»."
         }
       ],
       "subnivel": "12.3"

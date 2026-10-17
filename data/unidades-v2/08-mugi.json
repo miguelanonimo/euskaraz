@@ -84,7 +84,7 @@
     },
     {
       "titulo": "Adónde y de dónde, ahora con plurales",
-      "cuerpo": "Ya conoces la familia entera:\n\n<b>Non?</b> → <b>-n</b>: <i>etxean</i>, en casa\n<b>Nora?</b> → <b>-ra</b>: <i>etxera</i>, a casa\n<b>Nondik?</b> → <b>-tik</b>: <i>etxetik</i>, desde casa\n\nEn plural, las tres se alargan con esa <b>-eta-</b> que viste en las horas:\n\n<b>-etan</b>: <i>mendietan</i>, en los montes\n<b>-etara</b>: <i>mendietara</i>, a los montes\n<b>-etatik</b>: <i>mendietatik</i>, desde los montes\n\nY los tres demostrativos también se mueven:\n\n<b>hemen / hona / hemendik</b> — aquí / hacia aquí / desde aquí\n<b>hor / horra / hortik</b>\n<b>han / hara / handik</b>",
+      "cuerpo": "Ya conoces la familia entera:\n\n<b>Non?</b> → <b>-n</b>: <i>etxean</i>, en casa\n<b>Nora?</b> → <b>-ra</b>: <i>etxera</i>, a casa\n<b>Nondik?</b> → <b>-tik</b>: <i>etxetik</i>, desde casa\n\nEn plural, las tres se alargan con esa <b>-eta-</b> que viste en las horas:\n\n<b>-etan</b>: <i>mendietan</i>, en los montes\n<b>-etara</b>: <i>mendietara</i>, a los montes\n<b>-etatik</b>: <i>mendietatik</i>, desde los montes\n\nY los tres demostrativos también se mueven:\n\n<b>hemen / hona / hemendik</b> — aquí / hacia aquí / desde aquí\n<b>hor / horra / hortik</b> — ahí / hacia ahí / desde ahí\n<b>han / hara / handik</b> — allí / hacia allí / desde allí",
       "ejemplos": [
         {
           "eu": "Hondartzara noa.",
@@ -873,7 +873,7 @@
         },
         {
           "tipo": "pares",
-          "instruccion": "Empareja los lugares",
+          "instruccion": "Empareja lugares y cómo llegar",
           "pares": [
             {
               "eu": "hondartza",
@@ -884,12 +884,12 @@
               "es": "el monte"
             },
             {
-              "eu": "denda",
-              "es": "la tienda"
-            },
-            {
               "eu": "geltokia",
               "es": "la estación"
+            },
+            {
+              "eu": "oinez",
+              "es": "a pie"
             }
           ]
         },
@@ -938,7 +938,7 @@
           ]
         }
       ],
-      "subnivel": "8.2"
+      "subnivel": "8.3"
     },
     {
       "id": "u9-g04",
@@ -3468,6 +3468,86 @@
         }
       ],
       "subnivel": "8.5"
+    },
+    {
+      "id": "u8-g32",
+      "variantes": [
+        {
+          "tipo": "pares",
+          "instruccion": "Empareja los cuatro verbos del tema",
+          "pares": [
+            {
+              "eu": "irten",
+              "es": "salir"
+            },
+            {
+              "eu": "sartu",
+              "es": "entrar"
+            },
+            {
+              "eu": "iritsi",
+              "es": "llegar"
+            },
+            {
+              "eu": "mugitu",
+              "es": "mover, moverse"
+            }
+          ]
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Lanetik irteten naiz» significa…",
+          "opciones": [
+            "Salgo del trabajo",
+            "Entro al trabajo",
+            "Llego al trabajo",
+            "Estoy en el trabajo"
+          ],
+          "correcta": 0,
+          "explicacion": "«-tik» es «desde», e «irten» es salir: salgo del trabajo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Etxean sartzen naiz» significa…",
+          "opciones": [
+            "Entro en casa",
+            "Salgo de casa",
+            "Llego a casa",
+            "Ando por casa"
+          ],
+          "correcta": 0,
+          "explicacion": "«sartu» es entrar. Fíjate en que no lleva objeto, así que el auxiliar es «naiz»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Completa la frase",
+          "pregunta": "«Llego tarde» → Berandu ____ naiz.",
+          "opciones": [
+            "iristen",
+            "irteten",
+            "sartzen",
+            "mugitzen"
+          ],
+          "correcta": 0,
+          "explicacion": "«iritsi» es llegar: iristen naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estos cuatro significa «moverse»?",
+          "opciones": [
+            "mugitu",
+            "iritsi",
+            "irten",
+            "sartu"
+          ],
+          "correcta": 0,
+          "explicacion": "«mugitu» es mover o moverse. De ahí viene el título de la unidad, «Mugi»."
+        }
+      ],
+      "subnivel": "8.2"
     }
   ],
   "audiosExtra": [
