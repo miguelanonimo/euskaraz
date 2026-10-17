@@ -2016,11 +2016,15 @@
       return { ratio: p.mejor || 0, hechos: p.completada ? 1 : 0, total: 1,
                completada: !!p.completada };
     }
-    var partes = u.subniveles.map(function (s) {
+    var notas = u.subniveles.map(function (s) {
       return (progSub(u.id, s.id).mejor) || 0;
     });
-    if (delSubnivel(u.ejercicios, 'test').length) partes.push(p.mejor || 0);
-    var hechos = partes.filter(function (r) { return r >= 0.7; }).length;
+    /* El avance de cada tema no son solo sus ejercicios: haberlo abierto ya
+       cuenta un poco (AVANCE_VISTO), para que ver las lecciones sume aunque
+       aún no hayas hecho la práctica. */
+    var partes = u.subniveles.map(function (s) { return avanceTema(u.id, s.id); });
+    if (delSubnivel(u.ejercicios, 'test').length) { notas.push(p.mejor || 0); partes.push(p.mejor || 0); }
+    var hechos = notas.filter(function (r) { return r >= 0.7; }).length;
     var suma = partes.reduce(function (a, b) { return a + b; }, 0);
     return {
       ratio: partes.length ? suma / partes.length : 0,
@@ -2028,6 +2032,16 @@
       // La unidad se da por hecha cuando se ha superado su test.
       completada: !!p.completada
     };
+  }
+
+  /* Cuánto pesa en un tema haberlo visto (abierto su portada, su explicación
+     o su vocabulario) frente a sus ejercicios: el resto, hasta el 100%, es la
+     mejor nota de la práctica. Ver 2 temas de 4 ya mueve el porcentaje. */
+  var AVANCE_VISTO = 0.2;
+  function avanceTema(unidadId, subId) {
+    var ps = progSub(unidadId, subId), nota = ps.mejor || 0;
+    var visto = ps.visitado || ps.desbloqueado || nota > 0;
+    return (visto ? AVANCE_VISTO : 0) + (1 - AVANCE_VISTO) * nota;
   }
 
   function plural(n, uno, varios) { return n + ' ' + (n === 1 ? uno : varios); }
@@ -2053,16 +2067,17 @@
        y se pinta como el bloqueado. */
     var inactivo = o.estado === 'locked' || o.estado === 'vacio';
     var color = inactivo ? 'rgb(150,150,150)' : f.strong;
-    var valor = o.estado === 'done' ? 100 : (o.estado === 'current' ? o.pct : 0);
+    /* El anillo cuenta lo mismo que el número: un tema aprobado con un 70%
+       ya no se ve lleno. Solo el test final superado va lleno, con su check. */
+    var valor = (o.estado === 'done' && o.lleno) ? 100 : (o.estado === 'done' || o.estado === 'current' ? o.pct : 0);
     var insignia = anillo(valor, { tam: 52, color: color, etiqueta: o.numero, icono: o.icono });
     var estadoTxt = '<span class="ustatus' + (o.estado === 'done' ? ' ustatus--ok' : '') + '">' +
       '<span>' + esc(o.etiqueta) + '</span>' +
       /* El porcentaje se enseñaba solo mientras el tema estaba «en curso» y
          desaparecía al superarlo, justo cuando sirve para algo: Ric, con la
          unidad 12 al 93% y los cinco temas diciendo «Completado», no tenía
-         forma de saber cuál repetir. El anillo sí se queda lleno a propósito
-         —dice «aprobado», y al 71% parecería que falta algo—; el número va
-         en el texto. */
+         forma de saber cuál repetir. El anillo antes se quedaba lleno al
+         aprobar; desde el 17/10/2026 cuenta lo mismo que el número. */
       (o.estado === 'current' || o.estado === 'done'
         ? '<span>·</span><span>' + o.pct + '%</span>' : '') + '</span>';
     var clase = 'srow srow--' + o.estado;
@@ -2088,7 +2103,7 @@
               : (ps.visitado || ps.mejor > 0) ? 'current' : 'todo';
       if (est !== 'done' && est !== 'vacio') pendientes++;
       return filaTema({
-        id: s.id, numero: s.id, estado: est, pct: Math.round((ps.mejor || 0) * 100),
+        id: s.id, numero: s.id, estado: est, pct: Math.round(avanceTema(u.id, s.id) * 100),
         titulo: s.titulo_eu || s.titulo,
         sub: s.titulo_eu ? s.titulo : (s.resumen || ''),
         etiqueta: { done: 'Completado', current: 'En curso', todo: 'Por empezar', vacio: 'En preparación' }[est]
@@ -2103,7 +2118,7 @@
       var abierto = pendientes === 0 || pu.completada || pu.intentos;
       var est = pu.completada ? 'done' : !abierto ? 'locked' : (pu.intentos ? 'current' : 'todo');
       filas.push(filaTema({
-        id: 'test', estado: est, pct: Math.round((pu.mejor || 0) * 100),
+        id: 'test', estado: est, pct: Math.round((pu.mejor || 0) * 100), lleno: true,
         icono: pu.completada ? 'check-lg' : 'list',
         titulo: 'Test final',
         // El test no se queda en sus propios grupos —casi siempre 5—:
