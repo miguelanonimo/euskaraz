@@ -15,6 +15,56 @@ es el que conviene mirar primero, porque afecta a cómo se genera todo lo demás
 
 ---
 
+## A-bis · Los 108 que Ric marcó mal · LOTE PREPARADO (18/10/2026)
+
+**Esto es lo que queda por hacer en audio**, y es distinto de generar lo que
+falta: el diccionario ya está en 544/544, no hay mudas. Lo que sigue roto son
+los 108 audios que Ric marcó mal al escuchar los 302 del curso.
+
+**Miguel generó lo que faltaba, no lo que estaba mal.** Comprobadas las fechas
+de los ficheros el 18/10: los 108 siguen con su versión original, del 7 al 10
+de octubre, anterior a las notas fonéticas.
+
+### Y sabemos que el arreglo funciona
+
+`seigarrena` se marcó mal el 12/10 («garrena debe ser claro, la N debe sonar
+bien»), se regeneró el 13/10 **con las notas fonéticas dentro**, y el 18/10
+Ric confirmó que ahora suena bien. Es el experimento de control: las notas
+corrigen. Por eso `seigarrena` queda fuera de este lote — ya está hecha.
+
+### El lote
+
+```
+cd scripts/generar-audio && npm install
+mkdir -p /tmp/audio-trim-work/lote
+node lote-revision-ric.mjs
+```
+
+`scripts/generar-audio/lote-revision-ric.mjs` lleva los 108 agrupados por
+bloque de revisión, y cada uno con **lo que dijo Ric con sus palabras** en el
+comentario y la instrucción en inglés debajo. Si una sigue fallando al
+escucharla, lo que hay que afinar es ese texto, no la palabra.
+
+**Las 108 rutas están verificadas** una a una contra el bucket: todas
+responden 200, ninguna repetida. **Sustituyen a ficheros que ya existen**, así
+que no hay que tocar ningún JSON: las rutas no cambian y ya están enlazadas.
+
+| bloque | unidad | audios |
+|---|---|---|
+| 2 | 5 · Etxea | 15 |
+| 3 | 6 · Egutegia | 14 |
+| 4 | 7 · Zer | 18 |
+| 5 | 8 · Mugi | 9 |
+| 6 | 9 · Gustatzen | 21 |
+| 7 | 10 · Atzo | 8 |
+| 8 | 1 y 4 · Kaixo, Zenbat | 23 |
+| | | **108** |
+
+Las causas agrupadas y el porqué de cada una están en
+`docs/audio-revision-completa.md`.
+
+---
+
 ## A · Regenerar los 23 que suenan mal
 
 ```
