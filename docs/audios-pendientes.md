@@ -137,16 +137,24 @@ los demostrativos (dato de Ric, verificado en Bizkaieraren ataria).
 > `docs/audios-nuevos-para-revisar.md`.** Generador: `scripts/generar-audio/generar-faltantes.mjs`
 > (genera todo lo que no tenga `audio`, lo sube y lo enlaza en el JSON; se puede repetir).
 
-## B-bis · Lo que de verdad falta por generar: 24 palabras
+## B-bis · ~~Lo que falta por generar~~ · HECHO el 13/10/2026
 
-Esta es **la lista corta y comprobada**, y es la que conviene mirar primero.
-Sale de haber verificado una a una contra el bucket todas las palabras sin
-audio del curso: la inmensa mayoría ya tenían el mp3 subido y solo les
-faltaba la línea en el JSON (175, ya enlazadas el 12/10/2026). Estas 24 son
-las que no existen en ninguna parte.
+> **Ya no falta nada.** Miguel generó y enlazó las 24 de esta lista y nueve
+> más, y el **vocabulario del curso está en 544 de 544 con audio: cero
+> palabras mudas**. Comprobado el 18/10/2026 sobre los datos de `main`.
+>
+> Las nueve del paradigma de la unidad 10 salieron con el lote que quedó
+> preparado aquí, y `dena` y `astiro` con las rutas exactas que estaban
+> apuntadas: `unidades/u10/dena.mp3` y `unidades/u11/astiro.mp3`.
+>
+> **Lo que queda es escucharlo**, que es otra cosa: hay 430 audios nuevos
+> sin que nadie los haya oído, listados en `docs/audios-nuevos-para-revisar.md`.
+> La lista de abajo se deja como registro de cómo se llegó hasta aquí.
 
-**El vocabulario del curso está en 520 palabras con audio de 544.** Estas 24
-son las 24 que faltan.
+Lo que decía esta sección cuando se escribió, el 13/10/2026: de las palabras
+sin audio del curso, la inmensa mayoría ya tenían el mp3 subido y solo les
+faltaba la línea en el JSON (175, enlazadas el 12/10/2026); estas 24 eran las
+que no existían en ninguna parte.
 
 ### Las 13 de siempre
 
