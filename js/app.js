@@ -2967,8 +2967,29 @@
        ella: no pueden ser distractores la una de la otra en ninguna de las
        dos direcciones. */
     var ambiguas = {}, porEs = {}, choca = {}, deQuien = {};
+    /* Dos glosas dicen lo mismo aunque no se escriban igual: «él / ella» y
+       «él, ella» son la misma respuesta. Si una es la correcta y la otra un
+       distractor, el alumno acierta y la app le dice que no. Ric se lo
+       encontró oyendo «hura / bera».
+
+       `normalizar` no basta aquí: quita las comas pero conserva la barra,
+       así que deja «él / ella» en una caja y «él ella» en otra. Esta clave
+       aplana los separadores —barra, punto medio y la «o» de «él o ella»—
+       y ordena las palabras, de modo que las dos redacciones caen juntas. */
+    function claveSentido(es) {
+      return normalizar(sinNota(es))
+        .replace(/[\/\u00b7]/g, ' ')
+        .replace(/(^| )o( |$)/g, ' ')
+        .split(/\s+/).filter(Boolean).sort().join(' ');
+    }
     function sentidos(v) {
-      return [v.es].concat(v.esAlt || []).map(normalizar);
+      var fuera = [], vistos = {};
+      [v.es].concat(v.esAlt || []).forEach(function (es) {
+        [normalizar(es), claveSentido(es)].forEach(function (k) {
+          if (k && !vistos[k]) { vistos[k] = 1; fuera.push(k); }
+        });
+      });
+      return fuera;
     }
     fondo.forEach(function (v) {
       sentidos(v).forEach(function (k) { (deQuien[k] || (deQuien[k] = [])).push(v); });
