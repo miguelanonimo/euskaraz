@@ -93,6 +93,43 @@ for (const [es, dado, debeValer] of NOTAS) {
   }
 }
 
+// Cuando la entrada es UNA palabra, su traducción suele enumerar varias
+// maneras de decirlo y cualquiera vale. Oír «zu» y escribir «tú» contaba
+// como fallo; Ric lo encontró con «bere», escribiendo «suyo». Hay 45
+// entradas así en el curso.
+// Y al revés: una FRASE no se trocea, porque ahí la coma separa las dos
+// mitades de un diálogo y dar media por buena sería regalar la respuesta.
+const ALTERNATIVAS = [
+  [{ eu: 'zu',        es: 'tú / usted' },            'tú',              true ],
+  [{ eu: 'zu',        es: 'tú / usted' },            'usted',           true ],
+  [{ eu: 'gu',        es: 'nosotros / nosotras' },   'nosotros',        true ],
+  [{ eu: 'iloba',     es: 'el sobrino / el nieto' }, 'el nieto',        true ],
+  [{ eu: 'hala-hola', es: 'así así, regular' },      'regular',         true ],
+  [{ eu: 'emaztea',   es: 'la mujer, la esposa' },   'la esposa',       true ],
+  [{ eu: 'bere', es: 'su (de él/de ella), lo suyo propio' }, 'lo suyo propio', true ],
+  [{ eu: 'Zer moduz? — Oso ondo, eta zu?', es: '¿Qué tal? — Muy bien, ¿y tú?' }, '¿y tú?', false],
+  [{ eu: 'Non? — Bilbon.', es: '¿Dónde? — En Bilbao.' }, '¿dónde?', false],
+];
+for (const [entrada, dado, debeValer] of ALTERNATIVAS) {
+  const vale = api.formasTraduccion(entrada)
+    .some(f => api.normalizar(f) === api.normalizar(dado));
+  if (vale !== debeValer) {
+    fallos++;
+    console.error('  ✗ «' + entrada.eu + '» con «' + dado + '»: ' +
+      (debeValer ? 'debería valer y no vale' : 'no debería valer y vale'));
+  }
+}
+
+// El de Ric, con el dato real del curso.
+const u2 = JSON.parse(fs.readFileSync(path.join(raiz, 'data/unidades-v2/02-ni.json'), 'utf8'));
+const bere = (u2.vocabulario || []).filter(v => v.eu === 'bere')[0];
+if (!bere || !api.formasTraduccion(bere)
+      .some(f => api.normalizar(f) === api.normalizar('suyo'))) {
+  fallos++;
+  console.error('  ✗ «bere» debe aceptar «suyo» al escuchar y traducir');
+}
+
 if (!comprobadas) { console.error('  ✗ no hay ninguna entrada con esAlt: la prueba no prueba nada'); fallos++; }
 if (fallos) { console.error(fallos + ' fallo(s)'); process.exit(1); }
-console.log('esAlt y notas OK (' + comprobadas + ' entradas con esAlt, ' + NOTAS.length + ' casos de nota)');
+console.log('esAlt, notas y alternativas OK (' + comprobadas + ' entradas con esAlt, ' +
+            NOTAS.length + ' casos de nota, ' + ALTERNATIVAS.length + ' de alternativas)');

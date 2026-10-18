@@ -2822,14 +2822,34 @@
 
   /* Todas las formas castellanas que cuentan como acertar. La entera
      siempre, y además la limpia de nota y la limpia de paréntesis por
-     separado: «la comida (del mediodía)» tiene que aceptar «la comida». */
+     separado: «la comida (del mediodía)» tiene que aceptar «la comida».
+
+     Y cuando la entrada es UNA palabra en euskera, su traducción suele
+     enumerar varias maneras de decirlo —«tú / usted», «así así, regular»,
+     «el sobrino / el nieto»— y cualquiera de ellas es acertar. Sin esto,
+     oír «zu» y escribir «tú» contaba como fallo. Lo encontró Ric con
+     «bere». Hay 45 entradas así en el curso.
+
+     El troceo se hace solo con palabras sueltas, nunca con frases: en
+     «¿Qué tal? — Muy bien, ¿y tú?» la coma separa las dos mitades de un
+     diálogo, y dar por buena «¿y tú?» sería regalar la respuesta. */
   function formasTraduccion(entrada) {
     var es = String(entrada.es || '');
     var fuera = [es].concat(entrada.esAlt || []);
-    [sinNota(es),
-     es.split(NOTA_TRAS_GUION)[0].trim(),
-     es.replace(/\s*\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim()
-    ].forEach(function (f) { if (f && fuera.indexOf(f) < 0) fuera.push(f); });
+    function meter(f) {
+      f = String(f || '').replace(/\s+/g, ' ').trim();
+      if (f && fuera.indexOf(f) < 0) fuera.push(f);
+    }
+    var limpia = es.replace(/\s*\([^)]*\)/g, ' ');
+    meter(sinNota(es));
+    meter(es.split(NOTA_TRAS_GUION)[0]);
+    meter(limpia);
+
+    var unaPalabra = String(entrada.eu || '').trim().split(/\s+/).length === 1;
+    if (unaPalabra) {
+      sinNota(es).split(/\s*[,\/\u00b7]\s*/).forEach(meter);
+      limpia.split(NOTA_TRAS_GUION)[0].split(/\s*[,\/\u00b7]\s*/).forEach(meter);
+    }
     return fuera;
   }
 
