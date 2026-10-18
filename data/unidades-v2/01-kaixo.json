@@ -360,7 +360,13 @@
         }
       ],
       "categoria": "otros",
-      "subnivel": "1.2"
+      "subnivel": "1.2",
+      "esAlt": [
+        "cómo estás",
+        "cómo estás?",
+        "qué hay",
+        "qué tal estás"
+      ]
     },
     {
       "eu": "ondo",
