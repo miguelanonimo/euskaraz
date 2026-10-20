@@ -561,7 +561,7 @@ div.scard{ cursor: default; }
   border-radius: calc(24 * var(--u)) calc(20 * var(--u)) calc(4 * var(--u)) calc(24 * var(--u));
   font-family: var(--f-t); font-size: calc(12 * var(--u)); line-height: 1.39; letter-spacing: .01em; text-align: left;
 }
-.pdia__pista{ background: rgba(255,255,255,.2); font-weight: 700; }
+.pdia__pista{ background: none; font-weight: 700; }
 .pdia__ver{ background: none; font-weight: 500; cursor: pointer; }
 .pdia__audio[aria-disabled="true"]{ cursor: default; }
 .pdia__ver svg{ width: calc(15 * var(--u)); height: calc(15 * var(--u)); }

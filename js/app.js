@@ -1689,7 +1689,7 @@
     }
     /* Cada botón destapa su propia pista, en su sitio: el botón se convierte en
        la pista, el contenedor crece hasta su tamaño y el texto se escribe
-       dentro mientras crece. */
+       dentro mientras crece (sin relleno: solo el trazo, para que se lea en cualquier color). */
     function verPista(btn) {
       var texto = p.pistas[parseInt(btn.dataset.pista, 10)];
       if (!texto) return;
@@ -1710,10 +1710,10 @@
       span.style.width = (w - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 2) + 'px';
       span.textContent = '';
       chip.style.overflow = 'hidden';
-      var dur = Math.min(1200, Math.max(450, texto.length * 26));
+      var dur = Math.min(800, Math.max(300, texto.length * 16));
       chip.animate([
-        { width: bw + 'px', height: bh + 'px', backgroundColor: 'rgba(255,255,255,0)' },
-        { width: w + 'px', height: h + 'px', backgroundColor: 'rgba(255,255,255,.2)' }
+        { width: bw + 'px', height: bh + 'px' },
+        { width: w + 'px', height: h + 'px' }
       ], { duration: dur, easing: EASE });
       var t0 = performance.now();
       (function paso(t) {
