@@ -522,7 +522,7 @@ div.scard{ cursor: default; }
   width: 100%; height: 100%;
   max-width: clamp(340px, 17.7vw, 760px); max-height: clamp(680px, 35.4vw, 1520px);
 }
-.pdia__giro{ position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .85s cubic-bezier(.45,.05,.2,1); }
+.pdia__giro{ position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .55s ease-in-out; }
 .pdia__card.is-girada .pdia__giro{ transform: rotateY(180deg); }
 .pdia__cara{
   --u: 0.2941cqi;
