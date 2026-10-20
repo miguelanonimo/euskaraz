@@ -467,6 +467,24 @@ div.scard{ cursor: default; }
   gap: calc(8px + var(--hh) * 0.0444);
 }
 
+/* Gaurko hitza (palabra del día). Sin abrir va del color de la lección en
+   curso; abierta, en blanco con el trazo y el texto en ese color. */
+.palabra{
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%;
+  padding: calc(16px + var(--h) * 0.0133) calc(20px + var(--w) * 0.0571);
+  border: 1.5px solid var(--sc); border-radius: var(--r-card);
+  background: var(--sc); color: var(--ink); text-align: left; cursor: pointer;
+  transition: background-color .35s var(--ease), color .35s var(--ease), transform .32s var(--ease);
+}
+.palabra:hover{ transform: translateY(-3px); }
+.palabra:active{ transform: scale(0.98); }
+.palabra__txt{ display: flex; align-items: center; gap: 6px; line-height: 1; white-space: nowrap; min-width: 0; }
+.palabra__txt b{ font-family: var(--f-d); font-weight: 800; font-size: calc(18px + var(--w) * 0.0571); }
+.palabra__txt span{ font-family: var(--f-d); font-weight: 500; font-size: calc(14px + var(--w) * 0.0571); opacity: .5; }
+.palabra__ico{ display: flex; flex-shrink: 0; }
+.palabra--abierta{ background: var(--white); color: var(--sct); }
+.palabra--abierta .palabra__txt span{ opacity: .6; }
+
 /* padding-bottom siempre: es el aire entre la racha y el tabbar, que
    también faltaba en móviles normales (4px a 844 de alto). */
 .racha{
@@ -1026,6 +1044,7 @@ div.scard{ cursor: default; }
 /* La etiqueta de unidad es un enlace a la ficha que explica la palabra. El
    subrayado es el mismo recurso que usa `.auth__link`; el padding negativo
    agranda la zona de toque sin mover nada de sitio (15px es poco dedo). */
+.dentry__sol{ display: flex; align-items: center; opacity: 1 !important; color: var(--main); }
 button.dentry__u{
   background: none; border: 0; cursor: pointer;
   padding: 6px 2px; margin: -6px -2px;
@@ -1261,6 +1280,10 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   .homew__reviews > :last-child{ grid-column: span 2; }
   /* Mismo hueco en vertical que entre tarjetas: 16px, no los 32 del resto. */
   .homew__rail + .homew__reviews{ margin-top: -16px; }
+  /* La palabra del día va a 16px de lo de arriba y de los repasos, como entre tarjetas. */
+  .homew__rail + .palabra, .homew__fin + .palabra{ margin-top: -16px; }
+  .homew .palabra + .homew__reviews{ margin-top: -16px; }
+  .homew .palabra{ padding: 24px 32px; }
   .homew__reviews .scard{ min-height: 200px; padding: var(--card-pad); }
   .homew__reviews .scard__t{ font-size: var(--fs-h3); }
   .homew__reviews .scard__v{ font-size: var(--fs-mega); line-height: .8; letter-spacing: 0.01em; }

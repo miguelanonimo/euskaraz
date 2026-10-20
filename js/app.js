@@ -196,6 +196,8 @@
     'warning': { vb: '0 0 24 24', b: '<path d="M10.3 3.9 1.8 18.6A2 2 0 0 0 3.5 21.6h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 9v4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17.3" r="1.2" fill="currentColor"/>' },
     'minus': { vb: '0 0 24 24', b: '<path d="M18 11H6a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2Z" fill="currentColor"/>' },
     'dictionary': { vb: '0 0 26.182 24', b: '<path d="M 24.219 1.268 C 23.605 0.756 22.887 0.384 22.114 0.18 C 21.341 -0.024 20.532 -0.055 19.746 0.089 L 15.576 0.846 C 14.614 1.023 13.738 1.518 13.091 2.252 C 12.442 1.517 11.564 1.022 10.599 0.846 L 6.436 0.089 C 5.65 -0.055 4.842 -0.024 4.068 0.179 C 3.295 0.382 2.576 0.753 1.962 1.265 C 1.348 1.777 0.854 2.417 0.515 3.141 C 0.176 3.865 0 4.655 0 5.454 L 0 17.229 C 0 18.506 0.448 19.743 1.267 20.723 C 2.085 21.704 3.222 22.366 4.478 22.595 L 11.336 23.842 C 12.497 24.053 13.686 24.053 14.846 23.842 L 21.709 22.595 C 22.965 22.365 24.1 21.702 24.918 20.722 C 25.735 19.741 26.182 18.505 26.182 17.229 L 26.182 5.454 C 26.183 4.655 26.007 3.866 25.668 3.142 C 25.328 2.419 24.833 1.779 24.219 1.268 L 24.219 1.268 Z M 12 21.74 C 11.909 21.727 11.817 21.711 11.725 21.695 L 4.869 20.449 C 4.115 20.312 3.433 19.914 2.942 19.326 C 2.451 18.737 2.182 17.995 2.182 17.229 L 2.182 5.454 C 2.182 4.586 2.527 3.754 3.14 3.14 C 3.754 2.526 4.587 2.181 5.455 2.181 C 5.652 2.182 5.849 2.2 6.044 2.235 L 10.211 2.999 C 10.712 3.09 11.166 3.355 11.493 3.746 C 11.82 4.137 11.999 4.63 12 5.14 L 12 21.74 Z M 24 17.229 C 24 17.995 23.732 18.737 23.241 19.326 C 22.75 19.914 22.068 20.312 21.313 20.449 L 14.457 21.695 C 14.365 21.711 14.274 21.727 14.182 21.74 L 14.182 5.14 C 14.182 4.629 14.361 4.134 14.689 3.742 C 15.016 3.35 15.471 3.085 15.973 2.993 L 20.142 2.229 C 20.614 2.144 21.099 2.163 21.563 2.285 C 22.027 2.407 22.458 2.63 22.826 2.938 C 23.195 3.246 23.491 3.631 23.693 4.066 C 23.896 4.5 24.001 4.974 24 5.454 L 24 17.229 Z" fill="currentColor"/>' },
+    'sun': { vb: '0 0 24 24', b: '<path d="M12 4V2M12 20V22M6.41421 6.41421L5 5M17.728 17.728L19.1422 19.1422M4 12H2M20 12H22M17.7285 6.41421L19.1427 5M6.4147 17.728L5.00049 19.1422M12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' },
+    'check-pill': { vb: '0 0 24 24', b: '<path d="M3.00068 12L9.00065 18L20.9993 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>' },
     'check-thin': { vb: '0 0 12 8', b: '<path d="M1 3.6 4.4 7 11 .9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' },
     'check-lg': { vb: '0 0 18 12', b: '<path d="M1.4 5.8 6.4 10.6 16.6 1.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>' },
     'speaker': { vb: '0 0 16.667 12.149', b: '<path d="M8.33 2.37v7.46c0 1.1 0 1.65-.22 1.9a.7.7 0 0 1-.74.33c-.33-.05-.68-.48-1.4-1.37L4.57 8.93c-.12-.15-.18-.22-.25-.27a.7.7 0 0 0-.27-.13c-.08-.02-.18-.02-.38-.02H2.34c-.62 0-.93 0-1.17-.08A1.6 1.6 0 0 1 .08 7.37C0 7.13 0 6.82 0 6.1s0-1.03.08-1.27a1.6 1.6 0 0 1 1.06-1.06c.24-.08.55-.08 1.17-.08h1.19c.2 0 .3 0 .38-.02a.7.7 0 0 0 .27-.13c.07-.05.13-.12.25-.27L5.96 1.53C6.68.64 7.03.2 7.36.15a.7.7 0 0 1 .75.24c.22.24.22.8.22 1.98Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14.02 0a7.7 7.7 0 0 1 .04 12.15M11.74 2.44a4.7 4.7 0 0 1 .03 7.29" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' },
@@ -792,7 +794,7 @@
   // ─────────── Persistencia ───────────
 
   function progresoVacio() {
-    return { version: 2, unidades: {}, ultimas: {}, srs: {}, estreno: null, repartido: 0, dias: {} };
+    return { version: 2, unidades: {}, ultimas: {}, srs: {}, estreno: null, repartido: 0, dias: {}, palabras: {} };
   }
 
   /* La v2 añade `srs`: el calendario de repaso, una entrada por ítem.
@@ -809,6 +811,7 @@
       if (viejo.estreno) p.estreno = viejo.estreno;
       if (viejo.repartido) p.repartido = viejo.repartido;
       if (viejo.dias) p.dias = viejo.dias;
+      if (viejo.palabras) p.palabras = viejo.palabras;
     }
     return p;
   }
@@ -1518,6 +1521,58 @@
     return n;
   }
 
+  /* ── Gaurko hitza: la palabra del día ──────────────────────────────────
+     Una por día, atada al calendario. Por ahora la elige el día entre el
+     vocabulario ya validado (con audio y sin dialectales), de forma estable:
+     la misma palabra todo el día y en todos los aparatos. Cuando exista la
+     lista propia por fechas (palabras de la época del año), solo hay que
+     sustituir palabraDeHoy(). `progreso.palabras[día] = clave` guarda cuáles
+     has abierto: esa es también la lista que alimentará el diccionario. */
+  var MESES_CORTOS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+
+  function palabraDeHoy() {
+    var lista = [];
+    CURSO.unidades.forEach(function (u) {
+      u.vocabulario.forEach(function (v) { if (v.audio && !v.registro) lista.push(v); });
+    });
+    return lista.length ? lista[hoy() % lista.length] : null;
+  }
+
+  function palabraAbiertaHoy() {
+    return !!(progreso.palabras && progreso.palabras[hoy()]);
+  }
+
+  function pildoraPalabra(ft) {
+    var abierta = palabraAbiertaHoy(), d = new Date();
+    return '<button class="palabra' + (abierta ? ' palabra--abierta' : '') + '" type="button" id="goPalabra"' +
+      ' style="--sc:' + ft.c + ';--sct:' + ft.texto + '">' +
+      '<span class="palabra__txt"><b>Gaurko hitza</b><span>·</span><span>' + d.getDate() + ' ' + MESES_CORTOS[d.getMonth()] + '</span></span>' +
+      '<span class="palabra__ico">' + icono(abierta ? 'check-pill' : 'sun', 24) + '</span>' +
+    '</button>';
+  }
+
+  function abrirPalabraDelDia() {
+    var v = palabraDeHoy();
+    if (!v) return;
+    if (!palabraAbiertaHoy()) {
+      if (!progreso.palabras) progreso.palabras = {};
+      progreso.palabras[hoy()] = normalizar(v.eu);
+      guardarProgreso();
+      var b = $('goPalabra');
+      if (b) {
+        b.classList.add('palabra--abierta');
+        b.querySelector('.palabra__ico').innerHTML = icono('check-pill', 24);
+      }
+    }
+    // Provisional hasta tener el diseño de la tarjeta: la palabra, su significado y el audio.
+    abrirModal(
+      '<button class="modal__x" type="button" id="palabraCerrar" aria-label="Cerrar">' + icono('close', 20) + '</button>' +
+      '<div class="modal__scroll"><p class="modal__ruta">Gaurko hitza</p>' +
+      '<h2>' + esc(v.eu) + ' ' + botonAudio(v) + '</h2><p>' + esc(v.es) + '</p></div>',
+      'modal__panel--ficha');
+    $('palabraCerrar').addEventListener('click', cerrarModal);
+  }
+
   function pantallaHome() {
     /* Última red: si por donde sea llega un progreso con más atraso del
        que cabe en un día, se reparte antes de contar. Así la cifra que
@@ -1590,6 +1645,7 @@
       '<div class="home">' +
         '<h1 class="pagetitle">' + esc(saludo()) + '\nEuskaraz pixka bat?</h1>' +
         '<div class="lstack">' + tarjetas + '</div>' +
+        pildoraPalabra(ft) +
         '<div class="reviews">' +
           repaso('goVocabRepaso', 'Repaso de\nvocabulario', fondoVocabulario(), claveDeVocab, 4) +
           repaso('goRepaso', 'Repaso\nmezclado', fondoRepaso(), claveDeFondo, 1) +
@@ -1650,10 +1706,10 @@
        ir debajo (la tarjeta llega hasta donde acaban los dos repasos). */
     var completo = CURSO.unidades.every(function (u) { return progresoUnidad(u).ratio >= 0.995; });
     var cuerpo = completo
-      ? '<div class="homew__fin">' + tarjetaRail(activa, true) + repasos + '</div>'
+      ? '<div class="homew__fin">' + tarjetaRail(activa, true) + repasos + '</div>' + pildoraPalabra(familia(activa))
       : '<div class="homew__rail">' +
           tarjetaRail(activa, true) + otras.map(function (u) { return tarjetaRail(u, false); }).join('') +
-        '</div>' + repasos;
+        '</div>' + pildoraPalabra(familia(activa)) + repasos;
     el.screens.home.innerHTML =
       '<div class="homew' + (completo ? ' homew--fin' : '') + '">' +
         '<div class="homew__hero">' +
@@ -3254,6 +3310,10 @@
        marcada; las que aún no has abierto, con la unidad apagada. */
     var vistas = {};
     fondoVocabulario().forEach(function (v) { vistas[normalizar(v.eu)] = true; });
+    /* Las que han salido como palabra del día llevan el sol en el sitio de la
+       etiqueta de unidad (Gaurko hitza). */
+    var delDia = {};
+    Object.keys(progreso.palabras || {}).forEach(function (d) { delDia[progreso.palabras[d]] = true; });
 
     var grupos = {};
     lista.forEach(function (v) {
@@ -3281,7 +3341,9 @@
             '<div class="dentry__row">' +
               '<span class="dentry__w">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
               '<span class="dentry__m">' + esc(v.es) + '</span>' +
-              (v.subnivel
+              (delDia[normalizar(v.eu)]
+                ? '<span class="dentry__u dentry__sol" role="img" aria-label="Gaurko hitza, palabra del día">' + icono('sun', 24) + '</span>'
+                : v.subnivel
                 ? '<button class="dentry__u' + (vista ? '' : ' is-off') + '" type="button"' +
                   ' data-ir-u="' + esc(v.unidadId) + '" data-ir-s="' + esc(v.subnivel) + '">u' +
                   esc(v.unidad) + '</button>'
@@ -5059,7 +5121,8 @@
     if (peek) { estado.homeActiva = peek.dataset.pila; pantallaHome(); return; }
     var card = e.target.closest('.lcard, .lfeat, .ltile');
     if (card) { abrirUnidad(card.dataset.unidad, 'home'); return; }
-    if (e.target.closest('#goVocabRepaso')) empezarVocab();
+    if (e.target.closest('#goPalabra')) abrirPalabraDelDia();
+    else if (e.target.closest('#goVocabRepaso')) empezarVocab();
     else if (e.target.closest('#goRepaso')) empezarRepaso();
   });
 
