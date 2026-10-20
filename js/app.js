@@ -2461,7 +2461,10 @@
     // antes de que existiera ese filtro.
     var ctx = { fondo: conAudio, choca: {} };
     return elegirSesion(conAudio, cuantos, claveDeVocab).map(function (v) {
-      return Math.random() < 0.5 ? preguntaEscucharOpcion(v, ctx) : preguntaEscucharTeclear(v);
+      // Si la frase es muy larga para teclearla, cae en la de elegir:
+      // antes se colaba un null en la lista de ejercicios.
+      if (Math.random() < 0.5) return preguntaEscucharOpcion(v, ctx);
+      return preguntaEscucharTeclear(v) || preguntaEscucharOpcion(v, ctx);
     });
   }
 
@@ -2813,7 +2816,11 @@
      separa es la mayúscula —una nota empieza en minúscula o con comillas—
      y la regla se comprobó contra las 55 entradas del curso que llevan
      guion: 46 notas y 9 diálogos, sin confundir ninguna. */
-  var NOTA_TRAS_GUION = /\s[\u2014\u2013]\s+(?=[a-z\u00e1\u00e9\u00ed\u00f3\u00fa\u00fc\u00f1\u00ab"])/;
+  /* Dos marcas de nota, no una. Además del guion largo está la flecha
+     de la ficha de pronunciación de 1.4: «tú \u2192 suena \u00absu\u00bb». Teclear eso
+     entero no lo hace nadie. La flecha corta siempre; el guion solo
+     cuando lo que sigue empieza en min\u00fascula o con comillas. */
+  var NOTA_TRAS_GUION = /\s[\u2014\u2013]\s+(?=[a-z\u00e1\u00e9\u00ed\u00f3\u00fa\u00fc\u00f1\u00ab"])|\s\u2192\s/;
 
   function sinNota(es) {
     return String(es || '').split(NOTA_TRAS_GUION)[0]
@@ -2822,14 +2829,34 @@
 
   /* Todas las formas castellanas que cuentan como acertar. La entera
      siempre, y además la limpia de nota y la limpia de paréntesis por
-     separado: «la comida (del mediodía)» tiene que aceptar «la comida». */
+     separado: «la comida (del mediodía)» tiene que aceptar «la comida».
+
+     Y cuando la entrada es UNA palabra en euskera, su traducción suele
+     enumerar varias maneras de decirlo —«tú / usted», «así así, regular»,
+     «el sobrino / el nieto»— y cualquiera de ellas es acertar. Sin esto,
+     oír «zu» y escribir «tú» contaba como fallo. Lo encontró Ric con
+     «bere». Hay 45 entradas así en el curso.
+
+     El troceo se hace solo con palabras sueltas, nunca con frases: en
+     «¿Qué tal? — Muy bien, ¿y tú?» la coma separa las dos mitades de un
+     diálogo, y dar por buena «¿y tú?» sería regalar la respuesta. */
   function formasTraduccion(entrada) {
     var es = String(entrada.es || '');
     var fuera = [es].concat(entrada.esAlt || []);
-    [sinNota(es),
-     es.split(NOTA_TRAS_GUION)[0].trim(),
-     es.replace(/\s*\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim()
-    ].forEach(function (f) { if (f && fuera.indexOf(f) < 0) fuera.push(f); });
+    function meter(f) {
+      f = String(f || '').replace(/\s+/g, ' ').trim();
+      if (f && fuera.indexOf(f) < 0) fuera.push(f);
+    }
+    var limpia = es.replace(/\s*\([^)]*\)/g, ' ');
+    meter(sinNota(es));
+    meter(es.split(NOTA_TRAS_GUION)[0]);
+    meter(limpia);
+
+    var unaPalabra = String(entrada.eu || '').trim().split(/\s+/).length === 1;
+    if (unaPalabra) {
+      sinNota(es).split(/\s*[,\/\u00b7]\s*/).forEach(meter);
+      limpia.split(NOTA_TRAS_GUION)[0].split(/\s*[,\/\u00b7]\s*/).forEach(meter);
+    }
     return fuera;
   }
 
@@ -2887,8 +2914,29 @@
      castellano de un único gloss por entrada, no hace falta la lista de
      sinónimos que sí usa preguntaTeclear (`ctx.porEs`): no hay
      ambigüedad al escribir en castellano. */
+  /* Cuántas palabras hay que teclear, contando la forma más corta que se
+     acepta. A partir de cinco deja de ser un ejercicio de vocabulario y
+     pasa a ser un dictado de memoria: «¿Qué tal? — Muy bien, ¿y tú?» tiene
+     mil redacciones buenas y la app solo conoce una. Ric se lo encontró
+     escribiendo «Como estás? muy bien, y tu?», que es una respuesta
+     perfectamente correcta.
+
+     Las que pasan del corte no se pierden: se oyen igual, pero con
+     «escucha y elige», que para una frase larga es el formato que tiene
+     sentido. Son 76 de 955, el 8%. */
+  var TOPE_TECLEAR = 5;
+
+  function demasiadoLargaParaTeclear(entrada) {
+    var corta = formasTraduccion(entrada).reduce(function (a, f) {
+      var n = String(f).trim().split(/\s+/).filter(Boolean).length;
+      return n < a ? n : a;
+    }, 99);
+    return corta >= TOPE_TECLEAR;
+  }
+
   function preguntaEscucharTeclear(entrada) {
     if (!entrada.audio || modoSilencioso) return null;
+    if (demasiadoLargaParaTeclear(entrada)) return null;
     var q = marcarVocab({
       tipo: 'teclear',
       instruccion: 'Vocabulario · escucha y tradúcelo',
@@ -2967,8 +3015,29 @@
        ella: no pueden ser distractores la una de la otra en ninguna de las
        dos direcciones. */
     var ambiguas = {}, porEs = {}, choca = {}, deQuien = {};
+    /* Dos glosas dicen lo mismo aunque no se escriban igual: «él / ella» y
+       «él, ella» son la misma respuesta. Si una es la correcta y la otra un
+       distractor, el alumno acierta y la app le dice que no. Ric se lo
+       encontró oyendo «hura / bera».
+
+       `normalizar` no basta aquí: quita las comas pero conserva la barra,
+       así que deja «él / ella» en una caja y «él ella» en otra. Esta clave
+       aplana los separadores —barra, punto medio y la «o» de «él o ella»—
+       y ordena las palabras, de modo que las dos redacciones caen juntas. */
+    function claveSentido(es) {
+      return normalizar(sinNota(es))
+        .replace(/[\/\u00b7]/g, ' ')
+        .replace(/(^| )o( |$)/g, ' ')
+        .split(/\s+/).filter(Boolean).sort().join(' ');
+    }
     function sentidos(v) {
-      return [v.es].concat(v.esAlt || []).map(normalizar);
+      var fuera = [], vistos = {};
+      [v.es].concat(v.esAlt || []).forEach(function (es) {
+        [normalizar(es), claveSentido(es)].forEach(function (k) {
+          if (k && !vistos[k]) { vistos[k] = 1; fuera.push(k); }
+        });
+      });
+      return fuera;
     }
     fondo.forEach(function (v) {
       sentidos(v).forEach(function (k) { (deQuien[k] || (deQuien[k] = [])).push(v); });

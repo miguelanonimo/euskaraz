@@ -43,12 +43,12 @@
         },
         {
           "eu": "hura",
-          "es": "él o ella, indistintamente",
+          "es": "él / ella — el euskera no distingue género",
           "audio": "unidades/u2/hura.mp3"
         },
         {
           "eu": "haiek",
-          "es": "ellos o ellas",
+          "es": "ellos / ellas — tampoco aquí",
           "audio": "unidades/u2/haiek.mp3"
         }
       ],
@@ -65,7 +65,7 @@
         },
         {
           "eu": "hi",
-          "es": "tú, muy familiar. Reconocer, no usar todavía.",
+          "es": "tú — muy familiar; reconocerlo basta, no hace falta usarlo",
           "audio": "unidades/u2/hi.mp3"
         }
       ],
@@ -562,7 +562,11 @@
       "nota": null,
       "audio": "unidades/u2/nire.mp3",
       "categoria": "otros",
-      "subnivel": "2.2"
+      "subnivel": "2.2",
+      "esAlt": [
+        "mío",
+        "mi"
+      ]
     },
     {
       "eu": "zure",
@@ -570,14 +574,20 @@
       "nota": null,
       "audio": "unidades/u2/zure.mp3",
       "categoria": "otros",
-      "subnivel": "2.2"
+      "subnivel": "2.2",
+      "esAlt": [
+        "tuyo",
+        "suyo"
+      ]
     },
     {
       "eu": "haren",
       "es": "su (de él/de ella)",
       "esAlt": [
         "su de él",
-        "su de ella"
+        "su de ella",
+        "suyo",
+        "su"
       ],
       "nota": "De otra persona, no de quien hace la acción en esa frase. Si es lo suyo propio, «bere».",
       "audio": "unidades/u2/haren.mp3",
@@ -589,7 +599,9 @@
       "es": "su (de él/de ella), lo suyo propio",
       "esAlt": [
         "su de él",
-        "su de ella"
+        "su de ella",
+        "suyo",
+        "su"
       ],
       "nota": "Frente a «haren», que es de otro. La diferencia se explica en la unidad 5.",
       "audio": "unidades/u2/bere.mp3",
@@ -602,7 +614,11 @@
       "nota": null,
       "audio": "unidades/u2/gure.mp3",
       "categoria": "otros",
-      "subnivel": "2.2"
+      "subnivel": "2.2",
+      "esAlt": [
+        "nuestro",
+        "nuestra"
+      ]
     },
     {
       "eu": "zuen",
@@ -610,14 +626,20 @@
       "nota": null,
       "audio": "unidades/u2/zuen.mp3",
       "categoria": "otros",
-      "subnivel": "2.2"
+      "subnivel": "2.2",
+      "esAlt": [
+        "vuestro",
+        "vuestra"
+      ]
     },
     {
       "eu": "haien",
       "es": "su (de ellos/de ellas)",
       "esAlt": [
         "su de ellos",
-        "su de ellas"
+        "su de ellas",
+        "suyo",
+        "su"
       ],
       "nota": null,
       "audio": "unidades/u2/haien.mp3",
