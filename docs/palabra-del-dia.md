@@ -21,3 +21,11 @@ Una palabra por día, atada al calendario. Las entradas viven en `data/palabras-
 - La palabra abierta se apunta en el progreso (`progreso.palabras[día]`). Entra al diccionario con el sol en el sitio del indicador de unidad, aunque no sea del curso.
 - La carta usa el color de la lección en curso y se gira («ver significado» / «ver palabra»).
 - Antes de dar por buena una palabra, verifícala (ver `GRAMATIKA.md`).
+
+## Ideas pendientes (de Ric, 21/10/2026)
+
+- **El sol del diccionario tiene que ser clicable.** Hoy es solo un icono junto a la palabra que ya salió como palabra del día. La idea: al tocarlo se abre directamente la carta de esa palabra, igual que desde Hoy.
+- **Deslizar para pasar a la siguiente.** Con la carta abierta desde el diccionario, el gesto (y las flechas del teclado en ordenador) lleva a la carta de la siguiente palabra del día que ya hayas visto. Sería la lista de palabras abiertas, no las que aún no han salido.
+- **Matiz sobre el contenido:** *udazkena* es una palabra que el curso sí enseña, en el tema del calendario (lección 6). Por eso aparece con su audio y su ficha, y no es una palabra «nueva» para quien ya llegó ahí. Está bien que salga como palabra del día, pero conviene tenerlo en cuenta al elegir las palabras: mejor que sean de la época del año y, cuando se pueda, que no se repitan con el temario.
+
+Sin implementar todavía: la carta se abre hoy solo desde la tarjeta de Hoy; hace falta decidir cómo se ordena la lista de palabras vistas (por fecha de apertura o por orden del calendario) y qué pasa en los extremos.
