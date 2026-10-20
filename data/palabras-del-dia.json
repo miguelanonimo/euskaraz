@@ -25,38 +25,29 @@
     },
     {
       "fecha": "10-20",
-      "eu": "udazkena",
-      "es": "el otoño",
-      "nota": "la estación entre el verano y el invierno",
-      "audio": "unidades/u6/udazkena.mp3",
-      "partes": [
-        {
-          "eu": "uda",
-          "es": "verano"
-        },
-        {
-          "eu": "azken",
-          "es": "final"
-        }
-      ],
-      "contexto": "Literalmente es «el final del verano». En Euskal Herria el udazkena trae lluvia, niebla y castañas.",
+      "eu": "hostoa",
+      "es": "la hoja",
+      "nota": "la parte verde del árbol, que cae en otoño",
+      "audio": "palabras-del-dia/hostoa.mp3",
+      "partes": [],
+      "contexto": "En otoño los hostoak, las hojas, caen de los árboles y cubren los caminos.",
       "pistas": [
-        "Llega justo después de uda, el verano.",
-        "Es cuando caen las hojas de los árboles."
+        "Es verde en verano y marrón en otoño.",
+        "El árbol las pierde antes del invierno."
       ],
       "revisar": true
     },
     {
       "fecha": "10-21",
-      "eu": "euria",
-      "es": "la lluvia",
-      "nota": "el agua que cae del cielo",
-      "audio": "unidades/u10/euria.mp3",
+      "eu": "ekaitza",
+      "es": "la tormenta",
+      "nota": "lluvia fuerte con truenos y viento",
+      "audio": "palabras-del-dia/ekaitza.mp3",
       "partes": [],
-      "contexto": "Lo oirás mucho en Bizkaia: «Euria ari du» significa «está lloviendo». Para no mojarte necesitas un aterkia, el paraguas.",
+      "contexto": "Cuando se juntan el viento fuerte, la lluvia y los truenos, hay ekaitza: una tormenta.",
       "pistas": [
-        "Cae del cielo y moja.",
-        "Con ella sacas el paraguas."
+        "Trae truenos y relámpagos.",
+        "Es mucho más que una simple lluvia."
       ],
       "revisar": true
     },
