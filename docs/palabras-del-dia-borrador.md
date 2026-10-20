@@ -5,10 +5,12 @@ Redactadas y con audio generado el 20/10/2026 para que la función esté viva mi
 | Fecha | Palabra | Significado | Partes | Audio | Ric |
 |---|---|---|---|---|---|
 | 10-11 | **norabide** | dirección | nora (a dónde) + bide (camino) | [`palabras-del-dia/norabide.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/norabide.mp3) |  |
-| 10-20 | **udazkena** | el otoño | uda (verano) + azken (final) | [`palabras-del-dia/udazkena.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/udazkena.mp3) |  |
-| 10-21 | **euria** | la lluvia | — | [`palabras-del-dia/euria.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/euria.mp3) |  |
+| 10-20 | **udazkena** | el otoño | uda (verano) + azken (final) | [`unidades/u6/udazkena.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u6/udazkena.mp3) (ya revisado, del curso) |  |
+| 10-21 | **euria** | la lluvia | — | [`unidades/u10/euria.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/unidades/u10/euria.mp3) (ya revisado, del curso) |  |
 | 10-22 | **gaztaina** | la castaña | — | [`palabras-del-dia/gaztaina.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/gaztaina.mp3) |  |
 | 10-23 | **sagardoa** | la sidra | sagar (manzana) + ardo (vino) | [`palabras-del-dia/sagardoa.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/sagardoa.mp3) |  |
 | 10-24 | **lainoa** | la niebla | — | [`palabras-del-dia/lainoa.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/lainoa.mp3) |  |
 
 A revisar con ojo especial: la etimología de *udazkena* (uda + azken) y *sagardoa* (sagar + ardo), y que los ejemplos («Euria ari du», *gaztainondo*, *sagardotegiak*) estén bien escritos.
+
+**Audios reutilizados:** *udazkena* (u6) y *euria* (u10) ya estaban en el curso, seguramente revisados, así que se usan esos en vez de los generados ahora (cambiaban la acentuación). Los generados quedan en el bucket en `palabras-del-dia/` sin uso.
