@@ -29,3 +29,9 @@ Una palabra por día, atada al calendario. Las entradas viven en `data/palabras-
 - **Matiz sobre el contenido:** *udazkena* es una palabra que el curso sí enseña, en el tema del calendario (lección 6). Por eso aparece con su audio y su ficha, y no es una palabra «nueva» para quien ya llegó ahí. Está bien que salga como palabra del día, pero conviene tenerlo en cuenta al elegir las palabras: mejor que sean de la época del año y, cuando se pueda, que no se repitan con el temario.
 
 Sin implementar todavía: la carta se abre hoy solo desde la tarjeta de Hoy; hace falta decidir cómo se ordena la lista de palabras vistas (por fecha de apertura o por orden del calendario) y qué pasa en los extremos.
+
+## Criterio de contenido (Ric, 20/10/2026)
+
+- **La palabra del día no debería estar en el temario.** La idea es que sean unas 360 palabras más que se aprenden fuera de las lecciones, una por día del año. Ric prepara el listado con ese criterio.
+- Si al final alguna sí coincide con el curso, **al pinchar su sol en el diccionario se va a la lección**, no a la carta (ya está así). Las palabras que no son del curso abren su carta y entran al diccionario al abrirlas.
+- De las seis de la tanda de prueba, *udazkena* (lección 6) y *euria* (lección 10) sí están en el curso; *gaztaina*, *sagardoa*, *lainoa* y *norabide* no.
