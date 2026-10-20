@@ -425,7 +425,7 @@ body.silencioso .pair__play{ display: none; }
   height: var(--peek);
   /* El texto, centrado en la franja que asoma: pegado arriba (16px) se
      cortaba cuando la franja era estrecha. */
-  padding: calc((var(--peek) - 36px - 1em) / 2) calc(20px + var(--w) * 0.0571) 0;
+  padding: calc((var(--peek) - 36px - 1em) / 2 + 6px) calc(20px + var(--w) * 0.0571) 0;
   border: 0; border-radius: var(--r-card); background: var(--c);
   color: var(--ink); text-align: left; cursor: pointer;
   font-family: var(--f-d); font-weight: 800; line-height: 1; letter-spacing: 0.01em;
@@ -484,6 +484,7 @@ div.scard{ cursor: default; }
 .palabra__ico{ display: flex; flex-shrink: 0; }
 .palabra--abierta{ background: var(--white); color: var(--sct); }
 .palabra--abierta .palabra__txt span{ opacity: .6; }
+.palabra--abierta .palabra__ico svg{ margin-right: -4px; }
 
 /* Tarjeta de escritorio: Gaurko hitza como una más del carril, delante de la lección en curso. */
 .ptile{
@@ -501,6 +502,8 @@ div.scard{ cursor: default; }
 .ptile__ico svg{ width: 48px; height: 48px; }
 .ptile.palabra--abierta{ background: var(--white); color: var(--sct); }
 .ptile.palabra--abierta .ptile__txt span{ opacity: .6; }
+.ptile.palabra--abierta .ptile__ico svg{ width: 34px; height: 34px; }
+.ptile.palabra--abierta .ptile__ico path{ stroke-width: 2.2; }
 
 /* ── Gaurko hitza: la carta ──
    Un velo negro al 50% con desenfoque; encima la carta con el color de la
@@ -530,7 +533,7 @@ div.scard{ cursor: default; }
   -webkit-backface-visibility: hidden; backface-visibility: hidden;
 }
 .pdia__cara--sentido{ transform: rotateY(180deg); }
-.pdia__cab{ display: flex; align-items: center; justify-content: space-between; }
+.pdia__cab{ display: flex; align-items: center; justify-content: space-between; margin-right: calc(-8 * var(--u)); }
 .pdia__fecha{ display: flex; gap: calc(6 * var(--u)); font-family: var(--f-d); font-size: calc(15 * var(--u)); line-height: 1.25; letter-spacing: .02em; white-space: nowrap; }
 .pdia__fecha > span{ font-weight: 500; }
 .pdia__fecha b{ font-weight: 700; }
@@ -560,6 +563,7 @@ div.scard{ cursor: default; }
 }
 .pdia__pista{ background: rgba(255,255,255,.2); font-weight: 700; }
 .pdia__ver{ background: none; font-weight: 500; cursor: pointer; }
+.pdia__audio[aria-disabled="true"]{ cursor: default; }
 .pdia__ver svg{ width: calc(15 * var(--u)); height: calc(15 * var(--u)); }
 .pdia__hecha{ display: flex; flex-direction: column; gap: calc(12 * var(--u)); }
 .pdia__etq{ margin: 0; font-family: var(--f-t); font-weight: 700; font-size: calc(12 * var(--u)); line-height: 1; letter-spacing: .1em; text-transform: uppercase; }
@@ -1364,7 +1368,7 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
     border: 0; border-radius: var(--r-card); background: var(--c); color: var(--ink);
     text-align: left; cursor: pointer; transition: filter .15s var(--ease), transform .32s var(--ease);
   }
-  .lfeat:hover, .ltile:hover{ filter: brightness(.94); }
+  .lfeat:hover, .ltile:hover{ transform: translateY(-3px); }
   .lfeat:active, .ltile:active{ transform: scale(.98); }
   .lfeat{ flex: 2 1 0; gap: 32px; min-height: 300px; padding: var(--card-pad) var(--card-pad) var(--rail-pad-b); }
   .ltile{ flex: 1 1 0; gap: 24px; min-height: 240px; padding: var(--rail-pad-b) clamp(20px, 2.2vw, 28px); }

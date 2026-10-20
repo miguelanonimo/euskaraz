@@ -1536,7 +1536,7 @@
 
   function formaPalabra(e) {
     return {
-      clave: normalizar(e.eu), eu: e.eu, es: e.es || '', nota: e.nota || '', audio: e.audio || '',
+      clave: normalizar(e.eu), eu: e.eu, es: e.es || '', nota: e.nota || '', audio: e.audio || audioDePalabra(e.eu) || '',
       partes: (e.partes || []).filter(function (x) { return x && x.eu; }),
       contexto: e.contexto || '', pistas: (e.pistas || []).slice(0, 2)
     };
@@ -1641,11 +1641,12 @@
       '<section class="pdia__cara pdia__cara--palabra" data-cara="palabra">' + cab() +
         '<div class="pdia__cuerpo">' +
           '<div class="pdia__pal"><p class="pdia__eu" data-ajustar="0.1947">' + esc(p.eu) + '</p>' +
-            (p.audio ? '<button class="pdia__audio" type="button" data-audio="' + esc(p.audio) + '">' +
-              '<span class="pdia__play">' + icono('volume', 16) + '</span><b>escuchar</b></button>' : '') +
+            '<button class="pdia__audio" type="button" data-audio="' + esc(p.audio) + '"' + (p.audio ? '' : ' aria-disabled="true"') + '>' +
+              '<span class="pdia__play">' + icono('volume', 16) + '</span><b>escuchar</b></button>' +
           '</div>' +
-          (p.pistas.length ? '<div class="pdia__pistas"><button class="pdia__ver" type="button" data-pista>' +
-            icono('eye', 15) + '<span>ver pista</span></button></div>' : '') +
+          (p.pistas.length ? '<div class="pdia__pistas">' + p.pistas.map(function (t, i) {
+            return '<button class="pdia__ver" type="button" data-pista="' + i + '">' + icono('eye', 15) + '<span>ver pista</span></button>';
+          }).join('') + '</div>' : '') +
         '</div>' +
         '<button class="pdia__girar" type="button" data-girar>' + icono('girar', 20) + '<span>ver significado</span></button>' +
       '</section>';
@@ -1666,12 +1667,11 @@
     var ov = document.createElement('div');
     ov.className = 'pdia'; ov.id = 'pdia';
     ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Gaurko hitza');
-    ov.style.setProperty('--pc', familia(unidadDeTurno()).c);
+    ov.style.setProperty('--pc', familia(unidadDeTurno()).texto);
     ov.innerHTML = '<div class="pdia__card"><div class="pdia__giro">' + caraPalabra + caraSentido + '</div></div>';
     document.body.appendChild(ov);
 
     var card = ov.querySelector('.pdia__card');
-    var estado_ = { vistas: 0 };
     var cara1 = ov.querySelector('[data-cara="palabra"]'), cara2 = ov.querySelector('[data-cara="sentido"]');
     function ajustar() { ajustarPalabra(card); }
     ajustar();
@@ -1684,21 +1684,20 @@
       var destino = (giradaAhora ? cara2 : cara1).querySelector('[data-girar]');
       if (destino) destino.focus({ preventScroll: true });
     }
+    // Cada botón destapa su propia pista, en su sitio.
     function verPista(btn) {
-      var texto = p.pistas[estado_.vistas];
+      var texto = p.pistas[parseInt(btn.dataset.pista, 10)];
       if (!texto) return;
-      estado_.vistas++;
       var chip = document.createElement('p');
       chip.className = 'pdia__pista';
       chip.textContent = texto;
-      btn.parentNode.insertBefore(chip, btn);
-      if (!REDUCIR_MOVIMIENTO.matches) chip.animate([{ opacity: 0, transform: 'translateY(6px)' }, { opacity: 1, transform: 'none' }], { duration: 260, easing: EASE });
-      if (estado_.vistas >= p.pistas.length) btn.parentNode.removeChild(btn);
+      btn.parentNode.replaceChild(chip, btn);
+      if (!REDUCIR_MOVIMIENTO.matches) chip.animate([{ opacity: 0, transform: 'translateY(4px)' }, { opacity: 1, transform: 'none' }], { duration: 260, easing: EASE });
     }
     ov.addEventListener('click', function (e) {
       if (e.target === ov || e.target.closest('[data-cerrar]')) { cerrarPalabra(); return; }
       var a = e.target.closest('[data-audio]');
-      if (a) { reproducir(a.dataset.audio); return; }
+      if (a) { if (a.dataset.audio) reproducir(a.dataset.audio); return; }
       if (e.target.closest('[data-girar]')) { girar(); return; }
       var v = e.target.closest('[data-pista]');
       if (v) verPista(v);
@@ -1812,6 +1811,8 @@
     aparecerEscalonado(el.screens.home.querySelectorAll('.pagetitle'), 0 * DB, PASO);
     var PASO2 = 110;
     var t = aparecerPrimeroLento(el.screens.home.querySelectorAll('.lstack > *'), 1 * DB, PASO2, 400);
+    // Gaurko hitza entra justo detrás de las lecciones y antes de los repasos.
+    t = aparecerEscalonado(el.screens.home.querySelectorAll('.home > .palabra'), t, PASO2, null, 400);
     aparecerPrimeroLento(el.screens.home.querySelectorAll('.reviews > *'), t, PASO2, 400, 320);
     var tr = aparecerEscalonado(el.screens.home.querySelectorAll('.racha__lbl'), 2 * DB, PASO);
     // Los días, en cambio, más rápidos entre sí que el resto de bloques.
@@ -1869,7 +1870,10 @@
     // Misma regla que el móvil: tres bloques casi a la vez, en cascada.
     var DB = 60, s = el.screens.home;
     aparecerEscalonado(s.querySelectorAll('.homew__hero > .pagetitle, .homew__cuenta, .homew__racha .day'), 0 * DB, 70);
-    aparecerPrimeroLento(s.querySelectorAll('.homew__rail > *, .homew__fin > .lfeat'), 1 * DB, 110, 400, 320);
+    // Gaurko hitza es la primera del carril: sale casi la primera, y las lecciones detrás.
+    var tp = aparecerEscalonado(s.querySelectorAll('.ptile'), 1 * DB, 110, null, 400);
+    aparecerPrimeroLento(s.querySelectorAll('.homew__rail > :not(.ptile), .homew__fin > .lfeat'), tp, 110, 400, 320);
+    aparecerEscalonado(s.querySelectorAll('.homew > .palabra'), 2 * DB, 110, null, 400);
     aparecerEscalonado(s.querySelectorAll('.homew__reviews > *'), 2 * DB, 110);
   }
 
