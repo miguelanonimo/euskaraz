@@ -198,6 +198,8 @@
     'dictionary': { vb: '0 0 26.182 24', b: '<path d="M 24.219 1.268 C 23.605 0.756 22.887 0.384 22.114 0.18 C 21.341 -0.024 20.532 -0.055 19.746 0.089 L 15.576 0.846 C 14.614 1.023 13.738 1.518 13.091 2.252 C 12.442 1.517 11.564 1.022 10.599 0.846 L 6.436 0.089 C 5.65 -0.055 4.842 -0.024 4.068 0.179 C 3.295 0.382 2.576 0.753 1.962 1.265 C 1.348 1.777 0.854 2.417 0.515 3.141 C 0.176 3.865 0 4.655 0 5.454 L 0 17.229 C 0 18.506 0.448 19.743 1.267 20.723 C 2.085 21.704 3.222 22.366 4.478 22.595 L 11.336 23.842 C 12.497 24.053 13.686 24.053 14.846 23.842 L 21.709 22.595 C 22.965 22.365 24.1 21.702 24.918 20.722 C 25.735 19.741 26.182 18.505 26.182 17.229 L 26.182 5.454 C 26.183 4.655 26.007 3.866 25.668 3.142 C 25.328 2.419 24.833 1.779 24.219 1.268 L 24.219 1.268 Z M 12 21.74 C 11.909 21.727 11.817 21.711 11.725 21.695 L 4.869 20.449 C 4.115 20.312 3.433 19.914 2.942 19.326 C 2.451 18.737 2.182 17.995 2.182 17.229 L 2.182 5.454 C 2.182 4.586 2.527 3.754 3.14 3.14 C 3.754 2.526 4.587 2.181 5.455 2.181 C 5.652 2.182 5.849 2.2 6.044 2.235 L 10.211 2.999 C 10.712 3.09 11.166 3.355 11.493 3.746 C 11.82 4.137 11.999 4.63 12 5.14 L 12 21.74 Z M 24 17.229 C 24 17.995 23.732 18.737 23.241 19.326 C 22.75 19.914 22.068 20.312 21.313 20.449 L 14.457 21.695 C 14.365 21.711 14.274 21.727 14.182 21.74 L 14.182 5.14 C 14.182 4.629 14.361 4.134 14.689 3.742 C 15.016 3.35 15.471 3.085 15.973 2.993 L 20.142 2.229 C 20.614 2.144 21.099 2.163 21.563 2.285 C 22.027 2.407 22.458 2.63 22.826 2.938 C 23.195 3.246 23.491 3.631 23.693 4.066 C 23.896 4.5 24.001 4.974 24 5.454 L 24 17.229 Z" fill="currentColor"/>' },
     'sun': { vb: '0 0 24 24', b: '<path d="M12 4V2M12 20V22M6.41421 6.41421L5 5M17.728 17.728L19.1422 19.1422M4 12H2M20 12H22M17.7285 6.41421L19.1427 5M6.4147 17.728L5.00049 19.1422M12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' },
     'check-pill': { vb: '0 0 24 24', b: '<path d="M3.00068 12L9.00065 18L20.9993 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>' },
+    'girar': { vb: '0 0 20 20', b: '<path d="M11.6667 13.3333H15.8333V17.5M8.33333 6.66667H4.16667V2.5M16.1813 7.50284C15.7141 6.34638 14.9318 5.3442 13.9233 4.61019C12.9149 3.87618 11.721 3.4396 10.4769 3.35042C9.23281 3.26125 7.98839 3.52284 6.88558 4.10551C5.78277 4.68818 4.86569 5.56878 4.23828 6.64677M3.81836 12.4976C4.2856 13.654 5.06788 14.6562 6.07631 15.3902C7.08474 16.1242 8.2799 16.5602 9.52398 16.6494C10.7681 16.7386 12.0115 16.477 13.1143 15.8944C14.2171 15.3117 15.1335 14.4313 15.7609 13.3533" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' },
+    'bookmark': { vb: '0 0 24 24', b: '<path d="M20.1371 24C19.7672 23.999 19.4011 23.9247 19.0601 23.7813C18.719 23.638 18.4097 23.4285 18.1501 23.165L12.0001 17.051L5.85012 23.169C5.45515 23.5697 4.94861 23.8422 4.39654 23.9508C3.84447 24.0594 3.27247 23.9992 2.75512 23.778C2.23264 23.5678 1.78567 23.205 1.47258 22.7369C1.15949 22.2688 0.994841 21.7171 1.00012 21.154V4.99999C1.00012 3.67391 1.52691 2.40214 2.46459 1.46446C3.40227 0.526777 4.67404 -7.62939e-06 6.00012 -7.62939e-06L18.0001 -7.62939e-06C18.6567 -7.62939e-06 19.3069 0.129321 19.9135 0.380595C20.5202 0.631868 21.0714 1.00017 21.5357 1.46446C22 1.92875 22.3683 2.47995 22.6195 3.08658C22.8708 3.6932 23.0001 4.34338 23.0001 4.99999V21.154C23.0057 21.7167 22.8417 22.268 22.5293 22.736C22.217 23.2041 21.7709 23.5672 21.2491 23.778C20.8969 23.9253 20.5189 24.0008 20.1371 24ZM6.00012 1.99999C5.20447 1.99999 4.44141 2.31606 3.8788 2.87867C3.31619 3.44128 3.00012 4.20434 3.00012 4.99999V21.154C2.99976 21.3206 3.04879 21.4836 3.14102 21.6224C3.23325 21.7612 3.36455 21.8695 3.51831 21.9337C3.67208 21.9979 3.84143 22.0151 4.00496 21.9831C4.1685 21.9512 4.31888 21.8714 4.43712 21.754V21.754L11.3001 14.933C11.4875 14.7467 11.7409 14.6422 12.0051 14.6422C12.2693 14.6422 12.5228 14.7467 12.7101 14.933L19.5651 21.752C19.6834 21.8694 19.8338 21.9492 19.9973 21.9811C20.1608 22.0131 20.3302 21.9959 20.4839 21.9317C20.6377 21.8675 20.769 21.7592 20.8612 21.6204C20.9535 21.4816 21.0025 21.3186 21.0021 21.152V4.99999C21.0021 4.20434 20.6861 3.44128 20.1234 2.87867C19.5608 2.31606 18.7978 1.99999 18.0021 1.99999H6.00012Z" fill="currentColor"/>' },
     'check-thin': { vb: '0 0 12 8', b: '<path d="M1 3.6 4.4 7 11 .9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' },
     'check-lg': { vb: '0 0 18 12', b: '<path d="M1.4 5.8 6.4 10.6 16.6 1.2" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>' },
     'speaker': { vb: '0 0 16.667 12.149', b: '<path d="M8.33 2.37v7.46c0 1.1 0 1.65-.22 1.9a.7.7 0 0 1-.74.33c-.33-.05-.68-.48-1.4-1.37L4.57 8.93c-.12-.15-.18-.22-.25-.27a.7.7 0 0 0-.27-.13c-.08-.02-.18-.02-.38-.02H2.34c-.62 0-.93 0-1.17-.08A1.6 1.6 0 0 1 .08 7.37C0 7.13 0 6.82 0 6.1s0-1.03.08-1.27a1.6 1.6 0 0 1 1.06-1.06c.24-.08.55-.08 1.17-.08h1.19c.2 0 .3 0 .38-.02a.7.7 0 0 0 .27-.13c.07-.05.13-.12.25-.27L5.96 1.53C6.68.64 7.03.2 7.36.15a.7.7 0 0 1 .75.24c.22.24.22.8.22 1.98Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M14.02 0a7.7 7.7 0 0 1 .04 12.15M11.74 2.44a4.7 4.7 0 0 1 .03 7.29" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' },
@@ -1171,7 +1173,7 @@
       return '<button class="tab" type="button" data-tab="' + t[0] + '" aria-label="' + t[2] + '">' +
         icono(t[1], 24) + '</button>';
     }).join('');
-    el.sidenavItems.innerHTML = TABS.map(function (t) {
+    el.sidenavItems.innerHTML = TABS.concat([['word', 'bookmark', 'Gaurko hitza']]).map(function (t) {
       return '<button class="sidenav__item" type="button" data-tab="' + t[0] + '">' +
         icono(t[1], 24) + '<span>' + t[2] + '</span></button>';
     }).join('');
@@ -1195,6 +1197,7 @@
   function irATab(tab) {
     if (estado.pantalla === 'quiz' &&
         !confirm('¿Salir de la práctica? Perderás el avance de esta sesión.')) return;
+    if (tab === 'word')            { abrirPalabraDelDia(); return; }
     if (tab === 'today')           pantallaHome();
     else if (tab === 'lessons')    pantallaLecciones();
     else if (tab === 'progress')   pantallaProgreso();
@@ -1522,55 +1525,187 @@
   }
 
   /* ── Gaurko hitza: la palabra del día ──────────────────────────────────
-     Una por día, atada al calendario. Por ahora la elige el día entre el
-     vocabulario ya validado (con audio y sin dialectales), de forma estable:
-     la misma palabra todo el día y en todos los aparatos. Cuando exista la
-     lista propia por fechas (palabras de la época del año), solo hay que
-     sustituir palabraDeHoy(). `progreso.palabras[día] = clave` guarda cuáles
-     has abierto: esa es también la lista que alimentará el diccionario. */
+     Una por día, atada al calendario: `data/palabras-del-dia.json` trae una
+     entrada por fecha (MM-DD, cada año) con la palabra, su significado, de
+     qué partes está hecha, un contexto y hasta dos pistas (ver
+     docs/palabra-del-dia.md). Mientras un día no tenga entrada se usa una
+     palabra provisional del vocabulario ya validado, elegida por fecha.
+     `progreso.palabras[día] = clave` guarda cuáles has abierto: esas entran
+     en el diccionario con el sol. */
   var MESES_CORTOS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
 
+  function formaPalabra(e) {
+    return {
+      clave: normalizar(e.eu), eu: e.eu, es: e.es || '', nota: e.nota || '', audio: e.audio || '',
+      partes: (e.partes || []).filter(function (x) { return x && x.eu; }),
+      contexto: e.contexto || '', pistas: (e.pistas || []).slice(0, 2)
+    };
+  }
+
   function palabraDeHoy() {
+    var d = new Date();
+    var mmdd = ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+    var e = (CURSO.palabras || []).filter(function (x) { return x.fecha === mmdd; })[0];
+    if (e) return formaPalabra(e);
     var lista = [];
     CURSO.unidades.forEach(function (u) {
       u.vocabulario.forEach(function (v) { if (v.audio && !v.registro) lista.push(v); });
     });
-    return lista.length ? lista[hoy() % lista.length] : null;
+    if (!lista.length) return null;
+    var v = lista[hoy() % lista.length];
+    return formaPalabra({ eu: v.eu, es: v.es, audio: v.audio });
   }
 
   function palabraAbiertaHoy() {
     return !!(progreso.palabras && progreso.palabras[hoy()]);
   }
 
+  function fechaCorta() {
+    var d = new Date();
+    return d.getDate() + ' ' + MESES_CORTOS[d.getMonth()];
+  }
+
+  // Móvil y tablet: una barra entre las lecciones y los repasos.
   function pildoraPalabra(ft) {
-    var abierta = palabraAbiertaHoy(), d = new Date();
+    var abierta = palabraAbiertaHoy();
     return '<button class="palabra' + (abierta ? ' palabra--abierta' : '') + '" type="button" id="goPalabra"' +
       ' style="--sc:' + ft.c + ';--sct:' + ft.texto + '">' +
-      '<span class="palabra__txt"><b>Gaurko hitza</b><span>·</span><span>' + d.getDate() + ' ' + MESES_CORTOS[d.getMonth()] + '</span></span>' +
+      '<span class="palabra__txt"><b>Gaurko hitza</b><span>·</span><span>' + fechaCorta() + '</span></span>' +
       '<span class="palabra__ico">' + icono(abierta ? 'check-pill' : 'sun', 24) + '</span>' +
     '</button>';
   }
 
+  // Escritorio: una tarjeta más del carril, delante de la lección en curso.
+  function fichaPalabra(ft) {
+    var abierta = palabraAbiertaHoy();
+    return '<button class="ptile' + (abierta ? ' palabra--abierta' : '') + '" type="button" id="goPalabra"' +
+      ' style="--sc:' + ft.c + ';--sct:' + ft.texto + '">' +
+      '<span class="ptile__txt"><b>Gaurko hitza</b><span>' + fechaCorta() + '</span></span>' +
+      '<span class="ptile__ico">' + icono(abierta ? 'check-pill' : 'sun', 24) + '</span>' +
+    '</button>';
+  }
+
+  // Cuánto cabe la palabra en su ancho: de su tamaño pleno hacia abajo, sin partirla.
+  function ajustarPalabra(card) {
+    Array.prototype.forEach.call(card.querySelectorAll('[data-ajustar]'), function (w) {
+      var max = card.clientWidth * parseFloat(w.dataset.ajustar), ancho = w.parentNode.clientWidth;
+      if (!ancho) return;
+      w.style.fontSize = max + 'px';
+      if (w.scrollWidth > ancho) w.style.fontSize = Math.max(card.clientWidth * 0.08, max * ancho / w.scrollWidth) + 'px';
+    });
+  }
+
+  var palabraAbierta = null;   // { ov, previo, alRedimensionar, alTeclear }
+
+  function cerrarPalabra() {
+    var c = palabraAbierta;
+    if (!c) return;
+    palabraAbierta = null;
+    window.removeEventListener('resize', c.alRedimensionar);
+    document.removeEventListener('keydown', c.alTeclear, true);
+    function quitar() { if (c.ov.parentNode) c.ov.parentNode.removeChild(c.ov); if (c.previo && c.previo.focus) c.previo.focus({ preventScroll: true }); }
+    if (REDUCIR_MOVIMIENTO.matches) { quitar(); return; }
+    var an = c.ov.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 200, easing: EASE });
+    an.onfinish = quitar;
+  }
+
   function abrirPalabraDelDia() {
-    var v = palabraDeHoy();
-    if (!v) return;
+    var p = palabraDeHoy();
+    if (!p || palabraAbierta) return;
     if (!palabraAbiertaHoy()) {
       if (!progreso.palabras) progreso.palabras = {};
-      progreso.palabras[hoy()] = normalizar(v.eu);
+      progreso.palabras[hoy()] = p.clave;
       guardarProgreso();
       var b = $('goPalabra');
       if (b) {
         b.classList.add('palabra--abierta');
-        b.querySelector('.palabra__ico').innerHTML = icono('check-pill', 24);
+        var ic = b.querySelector('.palabra__ico, .ptile__ico');
+        if (ic) ic.innerHTML = icono('check-pill', 24);
       }
     }
-    // Provisional hasta tener el diseño de la tarjeta: la palabra, su significado y el audio.
-    abrirModal(
-      '<button class="modal__x" type="button" id="palabraCerrar" aria-label="Cerrar">' + icono('close', 20) + '</button>' +
-      '<div class="modal__scroll"><p class="modal__ruta">Gaurko hitza</p>' +
-      '<h2>' + esc(v.eu) + ' ' + botonAudio(v) + '</h2><p>' + esc(v.es) + '</p></div>',
-      'modal__panel--ficha');
-    $('palabraCerrar').addEventListener('click', cerrarModal);
+    if (p.audio) precargarAudio(p.audio);
+    var fecha = fechaCorta();
+    function cab() {
+      return '<div class="pdia__cab"><span class="pdia__fecha"><span>Gaurko hitza</span><b>·</b><b>' + esc(fecha) + '</b></span>' +
+        '<button class="pdia__x" type="button" data-cerrar aria-label="Cerrar">' + icono('close', 24) + '</button></div>';
+    }
+    var caraPalabra =
+      '<section class="pdia__cara pdia__cara--palabra" data-cara="palabra">' + cab() +
+        '<div class="pdia__cuerpo">' +
+          '<div class="pdia__pal"><p class="pdia__eu" data-ajustar="0.1947">' + esc(p.eu) + '</p>' +
+            (p.audio ? '<button class="pdia__audio" type="button" data-audio="' + esc(p.audio) + '">' +
+              '<span class="pdia__play">' + icono('volume', 16) + '</span><b>escuchar</b></button>' : '') +
+          '</div>' +
+          (p.pistas.length ? '<div class="pdia__pistas"><button class="pdia__ver" type="button" data-pista>' +
+            icono('eye', 15) + '<span>ver pista</span></button></div>' : '') +
+        '</div>' +
+        '<button class="pdia__girar" type="button" data-girar>' + icono('girar', 20) + '<span>ver significado</span></button>' +
+      '</section>';
+    var caraSentido =
+      '<section class="pdia__cara pdia__cara--sentido" data-cara="sentido" aria-hidden="true">' + cab() +
+        '<div class="pdia__cuerpo pdia__cuerpo--sentido">' +
+          '<div class="pdia__pal"><p class="pdia__es" data-ajustar="0.1841">' + esc(p.es) + '</p>' +
+            (p.nota ? '<p class="pdia__nota">' + esc(p.nota) + '</p>' : '') + '</div>' +
+          (p.partes.length ? '<div class="pdia__hecha"><p class="pdia__etq">¿Cómo está hecha?</p><div class="pdia__partes">' +
+            p.partes.map(function (x) {
+              return '<span class="pdia__parte"><b>' + esc(x.eu) + '</b>' + (x.es ? '<small>' + esc(x.es) + '</small>' : '') + '</span>';
+            }).join('<span class="pdia__mas">+</span>') + '</div></div>' : '') +
+          (p.contexto ? '<p class="pdia__ctx">' + esc(p.contexto) + '</p>' : '') +
+        '</div>' +
+        '<button class="pdia__girar" type="button" data-girar>' + icono('girar', 20) + '<span>ver palabra</span></button>' +
+      '</section>';
+
+    var ov = document.createElement('div');
+    ov.className = 'pdia'; ov.id = 'pdia';
+    ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Gaurko hitza');
+    ov.style.setProperty('--pc', familia(unidadDeTurno()).c);
+    ov.innerHTML = '<div class="pdia__card"><div class="pdia__giro">' + caraPalabra + caraSentido + '</div></div>';
+    document.body.appendChild(ov);
+
+    var card = ov.querySelector('.pdia__card');
+    var estado_ = { vistas: 0 };
+    var cara1 = ov.querySelector('[data-cara="palabra"]'), cara2 = ov.querySelector('[data-cara="sentido"]');
+    function ajustar() { ajustarPalabra(card); }
+    ajustar();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(ajustar);
+
+    function girar() {
+      var giradaAhora = card.classList.toggle('is-girada');
+      cara1.setAttribute('aria-hidden', giradaAhora ? 'true' : 'false');
+      cara2.setAttribute('aria-hidden', giradaAhora ? 'false' : 'true');
+      var destino = (giradaAhora ? cara2 : cara1).querySelector('[data-girar]');
+      if (destino) destino.focus({ preventScroll: true });
+    }
+    function verPista(btn) {
+      var texto = p.pistas[estado_.vistas];
+      if (!texto) return;
+      estado_.vistas++;
+      var chip = document.createElement('p');
+      chip.className = 'pdia__pista';
+      chip.textContent = texto;
+      btn.parentNode.insertBefore(chip, btn);
+      if (!REDUCIR_MOVIMIENTO.matches) chip.animate([{ opacity: 0, transform: 'translateY(6px)' }, { opacity: 1, transform: 'none' }], { duration: 260, easing: EASE });
+      if (estado_.vistas >= p.pistas.length) btn.parentNode.removeChild(btn);
+    }
+    ov.addEventListener('click', function (e) {
+      if (e.target === ov || e.target.closest('[data-cerrar]')) { cerrarPalabra(); return; }
+      var a = e.target.closest('[data-audio]');
+      if (a) { reproducir(a.dataset.audio); return; }
+      if (e.target.closest('[data-girar]')) { girar(); return; }
+      var v = e.target.closest('[data-pista]');
+      if (v) verPista(v);
+    });
+    var alTeclear = function (e) { if (e.key === 'Escape') { e.stopPropagation(); cerrarPalabra(); } };
+    document.addEventListener('keydown', alTeclear, true);
+    window.addEventListener('resize', ajustar);
+    palabraAbierta = { ov: ov, previo: document.activeElement, alRedimensionar: ajustar, alTeclear: alTeclear };
+
+    if (!REDUCIR_MOVIMIENTO.matches) {
+      ov.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220, easing: EASE });
+      card.animate([{ opacity: 0, transform: 'translateY(24px) scale(.97)' }, { opacity: 1, transform: 'none' }], { duration: 380, easing: EASE });
+    }
+    var primero = cara1.querySelector('[data-girar]');
+    if (primero) primero.focus({ preventScroll: true });
   }
 
   function pantallaHome() {
@@ -1707,9 +1842,9 @@
     var completo = CURSO.unidades.every(function (u) { return progresoUnidad(u).ratio >= 0.995; });
     var cuerpo = completo
       ? '<div class="homew__fin">' + tarjetaRail(activa, true) + repasos + '</div>' + pildoraPalabra(familia(activa))
-      : '<div class="homew__rail">' +
+      : '<div class="homew__rail homew__rail--palabra">' + fichaPalabra(familia(activa)) +
           tarjetaRail(activa, true) + otras.map(function (u) { return tarjetaRail(u, false); }).join('') +
-        '</div>' + pildoraPalabra(familia(activa)) + repasos;
+        '</div>' + repasos;
     el.screens.home.innerHTML =
       '<div class="homew' + (completo ? ' homew--fin' : '') + '">' +
         '<div class="homew__hero">' +
@@ -3301,7 +3436,18 @@
 
   function pintarDiccionario(filtro) {
     var q = plegar(filtro || '');
-    var lista = diccionario().filter(function (v) {
+    var base = diccionario(), enBase = {};
+    base.forEach(function (v) { enBase[normalizar(v.eu)] = true; });
+    var abiertas = {};
+    Object.keys(progreso.palabras || {}).forEach(function (d) { abiertas[progreso.palabras[d]] = true; });
+    // Las palabras del día que no son del curso entran al diccionario en cuanto las abres.
+    var extras = (CURSO.palabras || []).filter(function (e) {
+      var k = normalizar(e.eu); return abiertas[k] && !enBase[k];
+    }).map(function (e) {
+      return { eu: e.eu, es: e.es, nota: '', audio: e.audio, registro: null, categoria: 'otros', unidad: '', unidadId: null, subnivel: null,
+               dial: null, letra: (plegar(e.eu).charAt(0) || '').toUpperCase(), busca: plegar(e.eu) + ' ' + plegar(e.es) };
+    });
+    var lista = base.concat(extras).filter(function (v) {
       if (dictCatActiva && v.categoria !== dictCatActiva) return false;
       return !q || v.busca.indexOf(q) !== -1;
     });
@@ -5310,7 +5456,10 @@
       return Promise.all(indice.unidades.map(function (ruta) {
         return traer('data/' + ruta);
       })).then(function (unidades) {
-        return { meta: indice.meta, unidades: unidades };
+        /* Las palabras del día, por fecha (MM-DD), son opcionales: si el archivo
+           no está o falla, la app sigue con la elección provisional. */
+        return traer('data/palabras-del-dia.json').then(function (pd) { return pd.palabras || []; }, function () { return []; })
+          .then(function (palabras) { return { meta: indice.meta, unidades: unidades, palabras: palabras }; });
       });
     });
   }

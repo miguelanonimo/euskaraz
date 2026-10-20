@@ -1,0 +1,21 @@
+{
+  "_ayuda": "Una entrada por fecha (MM-DD, se repite cada año). Ver docs/palabra-del-dia.md. Sin entrada para un día, la app usa una palabra provisional del vocabulario.",
+  "palabras": [
+    {
+      "fecha": "10-11",
+      "eu": "norabide",
+      "es": "dirección",
+      "nota": "de un camino o de una carretera",
+      "audio": "",
+      "partes": [
+        { "eu": "nora", "es": "a dónde" },
+        { "eu": "bide", "es": "camino" }
+      ],
+      "contexto": "Lo verás en los carteles de las carreteras y de las calles de Bilbao, como norabide guztiak: todas las direcciones.",
+      "pistas": [
+        "Sale de dos palabras que ya conoces.",
+        "Es lo que indica una flecha en un cruce."
+      ]
+    }
+  ]
+}

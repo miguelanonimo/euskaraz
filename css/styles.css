@@ -485,6 +485,111 @@ div.scard{ cursor: default; }
 .palabra--abierta{ background: var(--white); color: var(--sct); }
 .palabra--abierta .palabra__txt span{ opacity: .6; }
 
+/* Tarjeta de escritorio: Gaurko hitza como una más del carril, delante de la lección en curso. */
+.ptile{
+  display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; min-width: 0; min-height: 240px;
+  padding: 28px; border: 1.5px solid var(--sc); border-radius: var(--r-card);
+  background: var(--sc); color: var(--ink); text-align: left; cursor: pointer;
+  transition: background-color .35s var(--ease), color .35s var(--ease), transform .32s var(--ease);
+}
+.ptile:hover{ transform: translateY(-3px); }
+.ptile:active{ transform: scale(.98); }
+.ptile__txt{ display: flex; flex-direction: column; gap: 6px; line-height: 1; }
+.ptile__txt b{ font-family: var(--f-d); font-weight: 800; font-size: clamp(22px, 1.8vw, 26px); text-wrap: balance; }
+.ptile__txt span{ font-family: var(--f-d); font-weight: 500; font-size: 18px; opacity: .5; }
+.ptile__ico{ display: flex; }
+.ptile__ico svg{ width: 48px; height: 48px; }
+.ptile.palabra--abierta{ background: var(--white); color: var(--sct); }
+.ptile.palabra--abierta .ptile__txt span{ opacity: .6; }
+
+/* ── Gaurko hitza: la carta ──
+   Un velo negro al 50% con desenfoque; encima la carta con el color de la
+   lección en curso, que se gira como una carta. Todo va en la unidad --u
+   (1/340 del ancho de la carta, en cqi), así que a partir de 1920 la carta
+   crece con la pantalla y el texto con ella. */
+.pdia{
+  position: fixed; inset: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: center;
+  padding: 48px 24px;
+  background: rgba(20,19,20,.5);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+}
+.pdia__card{
+  container-type: inline-size; position: relative; perspective: 1800px;
+  width: 100%; height: 100%;
+  max-width: clamp(340px, 17.7vw, 760px); max-height: clamp(680px, 35.4vw, 1520px);
+}
+.pdia__giro{ position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform .85s cubic-bezier(.45,.05,.2,1); }
+.pdia__card.is-girada .pdia__giro{ transform: rotateY(180deg); }
+.pdia__cara{
+  --u: 0.2941cqi;
+  position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-between;
+  padding: calc(24 * var(--u)) calc(32 * var(--u));
+  background: var(--pc); color: var(--white);
+  border-radius: calc(28 * var(--u)) calc(28 * var(--u)) calc(4 * var(--u)) calc(28 * var(--u));
+  -webkit-backface-visibility: hidden; backface-visibility: hidden;
+}
+.pdia__cara--sentido{ transform: rotateY(180deg); }
+.pdia__cab{ display: flex; align-items: center; justify-content: space-between; }
+.pdia__fecha{ display: flex; gap: calc(6 * var(--u)); font-family: var(--f-d); font-size: calc(15 * var(--u)); line-height: 1.25; letter-spacing: .02em; white-space: nowrap; }
+.pdia__fecha > span{ font-weight: 500; }
+.pdia__fecha b{ font-weight: 700; }
+.pdia__x{ display: flex; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+.pdia__x svg{ width: calc(24 * var(--u)); height: calc(24 * var(--u)); }
+.pdia__cuerpo{ display: flex; flex-direction: column; gap: calc(32 * var(--u)); min-width: 0; }
+.pdia__cuerpo--sentido{ gap: calc(40 * var(--u)); }
+.pdia__pal{ display: flex; flex-direction: column; gap: calc(12 * var(--u)); min-width: 0; }
+.pdia__cuerpo--sentido .pdia__pal{ gap: calc(4 * var(--u)); }
+.pdia__eu, .pdia__es{
+  margin: 0; font-family: var(--f-d); font-weight: 800; line-height: 1; letter-spacing: .01em;
+  text-align: center; white-space: nowrap; font-size: calc(62 * var(--u));
+}
+.pdia__es{ text-align: left; }
+.pdia__nota{ margin: 0; font-family: var(--f-t); font-weight: 500; font-size: calc(15 * var(--u)); line-height: 1.25; letter-spacing: .02em; }
+.pdia__audio{ display: flex; align-items: center; justify-content: center; gap: calc(12 * var(--u)); padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+.pdia__audio b{ font-family: var(--f-d); font-weight: 700; font-size: calc(18 * var(--u)); letter-spacing: .02em; }
+.pdia__play{ display: flex; align-items: center; justify-content: center; width: calc(32 * var(--u)); height: calc(32 * var(--u)); border-radius: 50%; background: rgba(255,255,255,.2); }
+.pdia__play svg{ width: calc(16 * var(--u)); height: calc(16 * var(--u)); }
+.pdia__pistas{ display: flex; flex-direction: column; align-items: flex-start; gap: calc(8 * var(--u)); }
+.pdia__pista, .pdia__ver{
+  margin: 0; display: inline-flex; align-items: center; gap: calc(8 * var(--u));
+  padding: calc(10 * var(--u)) calc(16 * var(--u));
+  border: 1px solid rgba(255,255,255,.5); color: inherit;
+  border-radius: calc(24 * var(--u)) calc(20 * var(--u)) calc(4 * var(--u)) calc(24 * var(--u));
+  font-family: var(--f-t); font-size: calc(12 * var(--u)); line-height: 1.39; letter-spacing: .01em; text-align: left;
+}
+.pdia__pista{ background: rgba(255,255,255,.2); font-weight: 700; }
+.pdia__ver{ background: none; font-weight: 500; cursor: pointer; }
+.pdia__ver svg{ width: calc(15 * var(--u)); height: calc(15 * var(--u)); }
+.pdia__hecha{ display: flex; flex-direction: column; gap: calc(12 * var(--u)); }
+.pdia__etq{ margin: 0; font-family: var(--f-t); font-weight: 700; font-size: calc(12 * var(--u)); line-height: 1; letter-spacing: .1em; text-transform: uppercase; }
+.pdia__partes{ display: flex; align-items: center; gap: calc(8 * var(--u)); }
+.pdia__parte{
+  flex: 1 1 0; min-width: 0; display: flex; flex-direction: column;
+  padding: calc(6 * var(--u)) calc(16 * var(--u)) calc(10 * var(--u));
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: calc(20 * var(--u)) calc(20 * var(--u)) calc(4 * var(--u)) calc(20 * var(--u));
+}
+.pdia__parte b{ font-family: var(--f-d); font-weight: 800; font-size: calc(30 * var(--u)); line-height: 1.25; letter-spacing: .01em; overflow-wrap: anywhere; }
+.pdia__parte small{ font-family: var(--f-t); font-weight: 500; font-size: calc(12 * var(--u)); line-height: 1.39; color: rgba(255,255,255,.75); }
+.pdia__mas{ font-family: var(--f-t); font-weight: 700; font-size: calc(20 * var(--u)); }
+.pdia__ctx{ margin: 0; font-family: var(--f-t); font-weight: 500; font-size: calc(15 * var(--u)); line-height: 1.32; letter-spacing: .02em; }
+.pdia__girar{
+  display: flex; align-items: center; justify-content: center; gap: calc(8 * var(--u)); width: 100%;
+  padding: 0; border: 0; background: none; color: inherit; cursor: pointer;
+  font-family: var(--f-t); font-weight: 500; font-size: calc(15 * var(--u)); line-height: 1.25; letter-spacing: .02em;
+}
+.pdia__girar svg{ width: calc(20 * var(--u)); height: calc(20 * var(--u)); }
+.pdia button:focus-visible{ outline: 2px solid var(--white); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce){
+  .pdia__giro{ transform-style: flat; transition: none; }
+  .pdia__cara{ transition: opacity .2s; }
+  .pdia__cara--sentido{ transform: none; opacity: 0; pointer-events: none; }
+  .pdia__card.is-girada .pdia__giro{ transform: none; }
+  .pdia__card.is-girada .pdia__cara--palabra{ opacity: 0; pointer-events: none; }
+  .pdia__card.is-girada .pdia__cara--sentido{ opacity: 1; pointer-events: auto; }
+}
+
 /* padding-bottom siempre: es el aire entre la racha y el tabbar, que
    también faltaba en móviles normales (4px a 844 de alto). */
 .racha{
@@ -1282,6 +1387,10 @@ body.con-tabbar .goup{ bottom: calc(72px + 20px + var(--safe-b-tabbar)); }
   .homew__rail + .homew__reviews{ margin-top: -16px; }
   /* La palabra del día va a 16px de lo de arriba y de los repasos, como entre tarjetas. */
   .homew__rail + .palabra, .homew__fin + .palabra{ margin-top: -16px; }
+  /* Con la tarjeta de Gaurko hitza delante: 1 · 2 · 1 · 1 columnas, y los repasos a mitades. */
+  .homew__rail--palabra{ grid-template-columns: minmax(0,1fr) minmax(0,2fr) minmax(0,1fr) minmax(0,1fr); }
+  .homew__rail--palabra + .homew__reviews{ grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .homew__rail--palabra + .homew__reviews > :last-child{ grid-column: auto; }
   .homew .palabra + .homew__reviews{ margin-top: -16px; }
   .homew .palabra{ padding: 24px 32px; }
   .homew__reviews .scard{ min-height: 200px; padding: var(--card-pad); }
