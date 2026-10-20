@@ -1701,13 +1701,18 @@
       chip.appendChild(span);
       chip.style.visibility = 'hidden';
       btn.parentNode.replaceChild(chip, btn);
-      var w = chip.offsetWidth, h = chip.offsetHeight;
+      // Medidas con decimales y redondeadas hacia arriba: con enteros a ras, al acabar la animación
+      // la pista de una línea podía partirse un instante en dos.
+      var r = chip.getBoundingClientRect(), w = Math.ceil(r.width), h = Math.ceil(r.height);
+      var una = h < bh * 1.6;
+      if (una) span.style.whiteSpace = 'nowrap';
       chip.style.visibility = '';
       if (REDUCIR_MOVIMIENTO.matches) return;
       var cs = getComputedStyle(chip);
       // El texto se queda con su ancho final mientras se escribe, para que no salte de línea.
       span.style.display = 'block';
       span.style.width = (w - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 2) + 'px';
+      if (una) span.style.width = '';
       span.textContent = '';
       chip.style.overflow = 'hidden';
       var dur = Math.min(800, Math.max(300, texto.length * 16));
