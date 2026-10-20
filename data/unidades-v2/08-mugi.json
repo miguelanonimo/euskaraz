@@ -3566,6 +3566,134 @@
     {
       "eu": "noraino?",
       "audio": "unidades/u8/noraino.mp3"
+    },
+    {
+      "eu": "ni noa",
+      "audio": "unidades/u8/ni-noa.mp3"
+    },
+    {
+      "eu": "zu zoaz",
+      "audio": "unidades/u8/zu-zoaz.mp3"
+    },
+    {
+      "eu": "hura doa",
+      "audio": "unidades/u8/hura-doa.mp3"
+    },
+    {
+      "eu": "gu goaz",
+      "audio": "unidades/u8/gu-goaz.mp3"
+    },
+    {
+      "eu": "zuek zoazte",
+      "audio": "unidades/u8/zuek-zoazte.mp3"
+    },
+    {
+      "eu": "haiek doaz",
+      "audio": "unidades/u8/haiek-doaz.mp3"
+    },
+    {
+      "eu": "ni nator",
+      "audio": "unidades/u8/ni-nator.mp3"
+    },
+    {
+      "eu": "zu zatoz",
+      "audio": "unidades/u8/zu-zatoz.mp3"
+    },
+    {
+      "eu": "hura dator",
+      "audio": "unidades/u8/hura-dator.mp3"
+    },
+    {
+      "eu": "gu gatoz",
+      "audio": "unidades/u8/gu-gatoz.mp3"
+    },
+    {
+      "eu": "zuek zatozte",
+      "audio": "unidades/u8/zuek-zatozte.mp3"
+    },
+    {
+      "eu": "haiek datoz",
+      "audio": "unidades/u8/haiek-datoz.mp3"
+    },
+    {
+      "eu": "ni nabil",
+      "audio": "unidades/u8/ni-nabil.mp3"
+    },
+    {
+      "eu": "zu zabiltza",
+      "audio": "unidades/u8/zu-zabiltza.mp3"
+    },
+    {
+      "eu": "hura dabil",
+      "audio": "unidades/u8/hura-dabil.mp3"
+    },
+    {
+      "eu": "gu gabiltza",
+      "audio": "unidades/u8/gu-gabiltza.mp3"
+    },
+    {
+      "eu": "zuek zabiltzate",
+      "audio": "unidades/u8/zuek-zabiltzate.mp3"
+    },
+    {
+      "eu": "haiek dabiltza",
+      "audio": "unidades/u8/haiek-dabiltza.mp3"
+    },
+    {
+      "eu": "hemen / hona / hemendik",
+      "audio": "unidades/u8/hemen-o-hona-o-hemendik.mp3"
+    },
+    {
+      "eu": "hor / horra / hortik",
+      "audio": "unidades/u8/hor-o-horra-o-hortik.mp3"
+    },
+    {
+      "eu": "han / hara / handik",
+      "audio": "unidades/u8/han-o-hara-o-handik.mp3"
+    },
+    {
+      "eu": "Euskaraz hitz egiten dut.",
+      "audio": "unidades/u8/euskaraz-hitz-egiten-dut.mp3"
+    },
+    {
+      "eu": "Non dago geltokia?",
+      "audio": "unidades/u8/non-dago-geltokia.mp3"
+    },
+    {
+      "eu": "Hemendik gertu dago.",
+      "audio": "unidades/u8/hemendik-gertu-dago.mp3"
+    },
+    {
+      "eu": "Zuzen, eta gero ezkerrera.",
+      "audio": "unidades/u8/zuzen-eta-gero-ezkerrera.mp3"
+    },
+    {
+      "eu": "Urrun dago?",
+      "audio": "unidades/u8/urrun-dago.mp3"
+    },
+    {
+      "eu": "Etxetik irteten naiz.",
+      "audio": "unidades/u8/etxetik-irteten-naiz.mp3"
+    },
+    {
+      "eu": "urten dot",
+      "audio": "unidades/u8/urten-dot.mp3"
+    },
+    {
+      "eu": "Joan behar dut.",
+      "audio": "unidades/u8/joan-behar-dut.mp3"
+    },
+    {
+      "eu": "Joan ahal dut.",
+      "audio": "unidades/u8/joan-ahal-dut.mp3"
+    },
+    {
+      "eu": "trenez",
+      "audio": "unidades/u8/trenez.mp3"
+    },
+    {
+      "eu": "autobusez",
+      "audio": "unidades/u8/autobusez.mp3"
     }
   ]
 }

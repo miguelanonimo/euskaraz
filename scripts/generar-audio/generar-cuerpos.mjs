@@ -175,9 +175,11 @@ for (const p of plan) {
   informe.push(reg_);
 }
 // Cada línea queda enlazada en la lista suelta `audiosExtra` de su unidad: audioDePalabra() la busca ahí por el texto del <b>.
-for (const { f, d } of unidades) {
-  const nuevas = plan.filter((p) => p.d === d && p.ok);
+// (se vuelve a leer cada JSON del disco justo antes de escribir: mientras se generaba, Ric pudo haber fusionado cambios en `data/`)
+for (const { f, d: viejo } of unidades) {
+  const nuevas = plan.filter((p) => p.d === viejo && p.ok);
   if (!nuevas.length) continue;
+  const d = JSON.parse(await readFile(path.join(DATA, f), 'utf8'));
   d.audiosExtra = d.audiosExtra || [];
   for (const p of nuevas) if (!d.audiosExtra.some((x) => normalizar(x.eu) === normalizar(p.eu))) d.audiosExtra.push({ eu: p.eu, audio: p.ruta });
   await writeFile(path.join(DATA, f), JSON.stringify(d, null, 2) + '\n');

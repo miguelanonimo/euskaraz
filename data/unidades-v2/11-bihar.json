@@ -2168,6 +2168,34 @@
     {
       "eu": "altua",
       "audio": "unidades/u11/altua.mp3"
+    },
+    {
+      "eu": "handiena",
+      "audio": "unidades/u11/handiena.mp3"
+    },
+    {
+      "eu": "Bilbo Bizkaiko hiri handiena da.",
+      "audio": "unidades/u11/bilbo-bizkaiko-hiri-handiena-da.mp3"
+    },
+    {
+      "eu": "Ni zu bezain altua naiz.",
+      "audio": "unidades/u11/ni-zu-bezain-altua-naiz.mp3"
+    },
+    {
+      "eu": "Niretzat berdin da.",
+      "audio": "unidades/u11/niretzat-berdin-da.mp3"
+    },
+    {
+      "eu": "Euskara zailagoa da?",
+      "audio": "unidades/u11/euskara-zailagoa-da.mp3"
+    },
+    {
+      "eu": "Ez, uste baino errazagoa da.",
+      "audio": "unidades/u11/ez-uste-baino-errazagoa-da.mp3"
+    },
+    {
+      "eu": "Askotan joaten naiz.",
+      "audio": "unidades/u11/askotan-joaten-naiz.mp3"
     }
   ]
 }

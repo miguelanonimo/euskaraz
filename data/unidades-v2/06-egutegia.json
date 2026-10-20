@@ -3628,6 +3628,138 @@
     {
       "eu": "egutegia",
       "audio": "unidades/u6/egutegia.mp3"
+    },
+    {
+      "eu": "Ordu biak dira.",
+      "audio": "unidades/u6/ordu-biak-dira.mp3"
+    },
+    {
+      "eu": "Hirurak dira.",
+      "audio": "unidades/u6/hirurak-dira.mp3"
+    },
+    {
+      "eu": "Laurak dira.",
+      "audio": "unidades/u6/laurak-dira.mp3"
+    },
+    {
+      "eu": "Bostak dira.",
+      "audio": "unidades/u6/bostak-dira.mp3"
+    },
+    {
+      "eu": "Seiak dira.",
+      "audio": "unidades/u6/seiak-dira.mp3"
+    },
+    {
+      "eu": "Zazpiak dira.",
+      "audio": "unidades/u6/zazpiak-dira.mp3"
+    },
+    {
+      "eu": "Zortziak dira.",
+      "audio": "unidades/u6/zortziak-dira.mp3"
+    },
+    {
+      "eu": "Bederatziak dira.",
+      "audio": "unidades/u6/bederatziak-dira.mp3"
+    },
+    {
+      "eu": "Hamaikak dira.",
+      "audio": "unidades/u6/hamaikak-dira.mp3"
+    },
+    {
+      "eu": "Hamabiak dira.",
+      "audio": "unidades/u6/hamabiak-dira.mp3"
+    },
+    {
+      "eu": "Hirurak eta bost.",
+      "audio": "unidades/u6/hirurak-eta-bost.mp3"
+    },
+    {
+      "eu": "Hirurak eta laurden.",
+      "audio": "unidades/u6/hirurak-eta-laurden.mp3"
+    },
+    {
+      "eu": "Hiru eta erdiak.",
+      "audio": "unidades/u6/hiru-eta-erdiak.mp3"
+    },
+    {
+      "eu": "Laurak bost gutxi.",
+      "audio": "unidades/u6/laurak-bost-gutxi.mp3"
+    },
+    {
+      "eu": "Laurak laurden gutxi.",
+      "audio": "unidades/u6/laurak-laurden-gutxi.mp3"
+    },
+    {
+      "eu": "gauerdia",
+      "audio": "unidades/u6/gauerdia.mp3"
+    },
+    {
+      "eu": "ordu batean",
+      "audio": "unidades/u6/ordu-batean.mp3"
+    },
+    {
+      "eu": "ordu bietan",
+      "audio": "unidades/u6/ordu-bietan.mp3"
+    },
+    {
+      "eu": "hiru eta erdietan",
+      "audio": "unidades/u6/hiru-eta-erdietan.mp3"
+    },
+    {
+      "eu": "zortzi eta erdietan",
+      "audio": "unidades/u6/zortzi-eta-erdietan.mp3"
+    },
+    {
+      "eu": "goizean",
+      "audio": "unidades/u6/goizean.mp3"
+    },
+    {
+      "eu": "eguerdian",
+      "audio": "unidades/u6/eguerdian.mp3"
+    },
+    {
+      "eu": "arratsaldean",
+      "audio": "unidades/u6/arratsaldean.mp3"
+    },
+    {
+      "eu": "iluntzean",
+      "audio": "unidades/u6/iluntzean.mp3"
+    },
+    {
+      "eu": "gauean",
+      "audio": "unidades/u6/gauean.mp3"
+    },
+    {
+      "eu": "martitzena",
+      "audio": "unidades/u6/martitzena.mp3"
+    },
+    {
+      "eu": "eguaztena",
+      "audio": "unidades/u6/eguaztena.mp3"
+    },
+    {
+      "eu": "eguena",
+      "audio": "unidades/u6/eguena.mp3"
+    },
+    {
+      "eu": "barikua",
+      "audio": "unidades/u6/barikua.mp3"
+    },
+    {
+      "eu": "zapatua",
+      "audio": "unidades/u6/zapatua.mp3"
+    },
+    {
+      "eu": "domeka",
+      "audio": "unidades/u6/domeka.mp3"
+    },
+    {
+      "eu": "etxeetan",
+      "audio": "unidades/u6/etxeetan.mp3"
+    },
+    {
+      "eu": "herrietan",
+      "audio": "unidades/u6/herrietan.mp3"
     }
   ]
 }

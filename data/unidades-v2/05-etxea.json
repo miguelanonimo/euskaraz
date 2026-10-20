@@ -4239,6 +4239,62 @@
     {
       "eu": "baserria",
       "audio": "unidades/u5/baserria.mp3"
+    },
+    {
+      "eu": "ni nago",
+      "audio": "unidades/u5/ni-nago.mp3"
+    },
+    {
+      "eu": "zu zaude",
+      "audio": "unidades/u5/zu-zaude.mp3"
+    },
+    {
+      "eu": "hura dago",
+      "audio": "unidades/u5/hura-dago.mp3"
+    },
+    {
+      "eu": "gu gaude",
+      "audio": "unidades/u5/gu-gaude.mp3"
+    },
+    {
+      "eu": "zuek zaudete",
+      "audio": "unidades/u5/zuek-zaudete.mp3"
+    },
+    {
+      "eu": "haiek daude",
+      "audio": "unidades/u5/haiek-daude.mp3"
+    },
+    {
+      "eu": "beren",
+      "audio": "unidades/u5/beren.mp3"
+    },
+    {
+      "eu": "zu zagoz",
+      "audio": "unidades/u5/zu-zagoz.mp3"
+    },
+    {
+      "eu": "gu gagoz",
+      "audio": "unidades/u5/gu-gagoz.mp3"
+    },
+    {
+      "eu": "zuek zagoze",
+      "audio": "unidades/u5/zuek-zagoze.mp3"
+    },
+    {
+      "eu": "haiek dagoz",
+      "audio": "unidades/u5/haiek-dagoz.mp3"
+    },
+    {
+      "eu": "Mahai zuria eta aulki beltza.",
+      "audio": "unidades/u5/mahai-zuria-eta-aulki-beltza.mp3"
+    },
+    {
+      "eu": "Mahai zuri bat eta aulki beltz bat.",
+      "audio": "unidades/u5/mahai-zuri-bat-eta-aulki-beltz-bat.mp3"
+    },
+    {
+      "eu": "mahaiak",
+      "audio": "unidades/u5/mahaiak.mp3"
     }
   ]
 }

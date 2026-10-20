@@ -2916,6 +2916,46 @@
     {
       "eu": "galdera hura",
       "audio": "unidades/u3/galdera-hura.mp3"
+    },
+    {
+      "eu": "Hau hotza!",
+      "audio": "unidades/u3/hau-hotza.mp3"
+    },
+    {
+      "eu": "Hau beroa!",
+      "audio": "unidades/u3/hau-beroa.mp3"
+    },
+    {
+      "eu": "Gaur ondo nago.",
+      "audio": "unidades/u3/gaur-ondo-nago.mp3"
+    },
+    {
+      "eu": "zelango?",
+      "audio": "unidades/u3/zelango.mp3"
+    },
+    {
+      "eu": "holan, halan, honan",
+      "audio": "unidades/u3/holan-halan-honan.mp3"
+    },
+    {
+      "eu": "Bilbon",
+      "audio": "unidades/u3/bilbon.mp3"
+    },
+    {
+      "eu": "Bilbora",
+      "audio": "unidades/u3/bilbora.mp3"
+    },
+    {
+      "eu": "Bilbotik",
+      "audio": "unidades/u3/bilbotik.mp3"
+    },
+    {
+      "eu": "Bilbokoa",
+      "audio": "unidades/u3/bilbokoa.mp3"
+    },
+    {
+      "eu": "Zu nongoa zara?",
+      "audio": "unidades/u3/zu-nongoa-zara.mp3"
     }
   ]
 }

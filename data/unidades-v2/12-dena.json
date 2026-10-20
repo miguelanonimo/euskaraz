@@ -2396,6 +2396,74 @@
     {
       "eu": "inor",
       "audio": "unidades/u12/inor.mp3"
+    },
+    {
+      "eu": "Euskalduna zara.",
+      "audio": "unidades/u12/euskalduna-zara.mp3"
+    },
+    {
+      "eu": "Euskalduna naizelako.",
+      "audio": "unidades/u12/euskalduna-naizelako.mp3"
+    },
+    {
+      "eu": "ezer",
+      "audio": "unidades/u12/ezer.mp3"
+    },
+    {
+      "eu": "Ez dut ezer esan.",
+      "audio": "unidades/u12/ez-dut-ezer-esan.mp3"
+    },
+    {
+      "eu": "Inor al dago etxean?",
+      "audio": "unidades/u12/inor-al-dago-etxean.mp3"
+    },
+    {
+      "eu": "Denak nire lagunak dira.",
+      "audio": "unidades/u12/denak-nire-lagunak-dira.mp3"
+    },
+    {
+      "eu": "Ura bakarrik nahi dut.",
+      "audio": "unidades/u12/ura-bakarrik-nahi-dut.mp3"
+    },
+    {
+      "eu": "etxeak",
+      "audio": "unidades/u12/etxeak.mp3"
+    },
+    {
+      "eu": "etxean",
+      "audio": "unidades/u12/etxean.mp3"
+    },
+    {
+      "eu": "etxera",
+      "audio": "unidades/u12/etxera.mp3"
+    },
+    {
+      "eu": "etxetik",
+      "audio": "unidades/u12/etxetik.mp3"
+    },
+    {
+      "eu": "etxeko",
+      "audio": "unidades/u12/etxeko.mp3"
+    },
+    {
+      "eu": "etxeetan / etxeetara / etxeetatik",
+      "audio": "unidades/u12/etxeetan-o-etxeetara-o-etxeetatik.mp3"
+    },
+    {
+      "eu": "etxerik",
+      "audio": "unidades/u12/etxerik.mp3"
+    },
+    {
+      "eu": "izan",
+      "audio": "unidades/u12/izan.mp3"
+    },
+    {
+      "eu": "ukan",
+      "audio": "unidades/u12/ukan.mp3"
+    },
+    {
+      "eu": "egon",
+      "audio": "unidades/u12/egon.mp3"
     }
   ]
 }
