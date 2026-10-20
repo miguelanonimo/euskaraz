@@ -1176,7 +1176,9 @@
       return '<button class="tab" type="button" data-tab="' + t[0] + '" aria-label="' + t[2] + '">' +
         icono(t[1], 24) + '</button>';
     }).join('');
-    el.sidenavItems.innerHTML = TABS.concat([['word', 'bookmark', 'Gaurko hitza']]).map(function (t) {
+    /* La entrada «Gaurko hitza» del menú lateral queda oculta por ahora: se llega
+       desde la tarjeta de Hoy. Para recuperarla: TABS.concat([['word', 'bookmark', 'Gaurko hitza']]). */
+    el.sidenavItems.innerHTML = TABS.map(function (t) {
       return '<button class="sidenav__item" type="button" data-tab="' + t[0] + '">' +
         icono(t[1], 24) + '<span>' + t[2] + '</span></button>';
     }).join('');
