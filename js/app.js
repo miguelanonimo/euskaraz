@@ -1687,15 +1687,41 @@
       var destino = (giradaAhora ? cara2 : cara1).querySelector('[data-girar]');
       if (destino) destino.focus({ preventScroll: true });
     }
-    // Cada botón destapa su propia pista, en su sitio.
+    /* Cada botón destapa su propia pista, en su sitio: el botón se convierte en
+       la pista, el contenedor crece hasta su tamaño y el texto se escribe
+       dentro mientras crece. */
     function verPista(btn) {
       var texto = p.pistas[parseInt(btn.dataset.pista, 10)];
       if (!texto) return;
+      var bw = btn.offsetWidth, bh = btn.offsetHeight;
       var chip = document.createElement('p');
       chip.className = 'pdia__pista';
-      chip.textContent = texto;
+      var span = document.createElement('span');
+      span.textContent = texto;
+      chip.appendChild(span);
+      chip.style.visibility = 'hidden';
       btn.parentNode.replaceChild(chip, btn);
-      if (!REDUCIR_MOVIMIENTO.matches) chip.animate([{ opacity: 0, transform: 'translateY(4px)' }, { opacity: 1, transform: 'none' }], { duration: 260, easing: EASE });
+      var w = chip.offsetWidth, h = chip.offsetHeight;
+      chip.style.visibility = '';
+      if (REDUCIR_MOVIMIENTO.matches) return;
+      var cs = getComputedStyle(chip);
+      // El texto se queda con su ancho final mientras se escribe, para que no salte de línea.
+      span.style.display = 'block';
+      span.style.width = (w - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 2) + 'px';
+      span.textContent = '';
+      chip.style.overflow = 'hidden';
+      var dur = Math.min(1200, Math.max(450, texto.length * 26));
+      chip.animate([
+        { width: bw + 'px', height: bh + 'px', backgroundColor: 'rgba(255,255,255,0)' },
+        { width: w + 'px', height: h + 'px', backgroundColor: 'rgba(255,255,255,.2)' }
+      ], { duration: dur, easing: EASE });
+      var t0 = performance.now();
+      (function paso(t) {
+        var k = Math.min(1, (t - t0) / dur);
+        span.textContent = texto.slice(0, Math.round(k * texto.length));
+        if (k < 1) requestAnimationFrame(paso);
+        else { span.style.display = ''; span.style.width = ''; chip.style.overflow = ''; }
+      })(t0);
     }
     ov.addEventListener('click', function (e) {
       if (e.target === ov || e.target.closest('[data-cerrar]')) { cerrarPalabra(); return; }
