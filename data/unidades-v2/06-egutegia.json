@@ -40,20 +40,20 @@
   "gramatica": [
     {
       "titulo": "La hora va en plural",
-      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>Ordu bata da.</b> — Es la una.\n<b>Ordu biak dira.</b> — Son las dos.\n<b>Hirurak dira.</b> — Son las tres.\n<b>Laurak dira.</b> — Son las cuatro.\n<b>Bostak dira.</b> — Son las cinco.\n<b>Seiak dira.</b> — Son las seis.\n<b>Zazpiak dira.</b> — Son las siete.\n<b>Zortziak dira.</b> — Son las ocho.\n<b>Bederatziak dira.</b> — Son las nueve.\n<b>Hamarrak dira.</b> — Son las diez.\n<b>Hamaikak dira.</b> — Son las once.\n<b>Hamabiak dira.</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la cuarta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.\n\nY las palabras para decir en qué parte del día:\n\n<b>ordua</b> — la hora\n<b>eguna</b> — el día\n<b>goiza</b> — la mañana\n<b>arratsaldea</b> — la tarde\n<b>iluntzea</b> — el anochecer\n<b>gaua</b> — la noche\n\nDos ya las traías de los saludos: <i>egun on</i> lleva <i>egun</i> («día») y <i>arratsalde on</i> lleva <i>arratsalde</i> («tarde»), las dos sin la <b>-a</b> final, que es el artículo. Ojo con <i>egun on</i>: se dice por la mañana, pero «mañana» es <b>goiza</b>; <i>egun on</i> es literalmente «buen día». <b>Iluntzea</b> es la que no tiene equivalente cómodo en castellano: ese rato entre que se va la luz y es de noche.",
+      "cuerpo": "En euskera las horas son <b>plurales</b>, porque se cuentan campanadas. Por eso llevan la <b>-ak</b> del plural que ya conoces y el verbo va en <b>dira</b> (son):\n\n<b>ordu bata da</b> — Es la una.\n<b>ordu biak dira</b> — Son las dos.\n<b>hirurak dira</b> — Son las tres.\n<b>laurak dira</b> — Son las cuatro.\n<b>bostak dira</b> — Son las cinco.\n<b>seiak dira</b> — Son las seis.\n<b>zazpiak dira</b> — Son las siete.\n<b>zortziak dira</b> — Son las ocho.\n<b>bederatziak dira</b> — Son las nueve.\n<b>hamarrak dira</b> — Son las diez.\n<b>hamaikak dira</b> — Son las once.\n<b>hamabiak dira</b> — Son las doce.\n\nLa una y las dos son la excepción: llevan <b>ordu</b> delante, y la una va en singular (<i>ordu bata <b>da</b></i>).\n\nSon los números de la cuarta unidad con el artículo pegado. <i>hiru</i> → <i>hirurak</i>, <i>lau</i> → <i>laurak</i>, <i>bost</i> → <i>bostak</i>.\n\nY las palabras para decir en qué parte del día:\n\n<b>ordua</b> — la hora\n<b>eguna</b> — el día\n<b>goiza</b> — la mañana\n<b>arratsaldea</b> — la tarde\n<b>iluntzea</b> — el anochecer\n<b>gaua</b> — la noche\n\nDos ya las traías de los saludos: <i>egun on</i> lleva <i>egun</i> («día») y <i>arratsalde on</i> lleva <i>arratsalde</i> («tarde»), las dos sin la <b>-a</b> final, que es el artículo. Ojo con <i>egun on</i>: se dice por la mañana, pero «mañana» es <b>goiza</b>; <i>egun on</i> es literalmente «buen día». <b>Iluntzea</b> es la que no tiene equivalente cómodo en castellano: ese rato entre que se va la luz y es de noche.",
       "ejemplos": [
         {
-          "eu": "Zer ordu da?",
+          "eu": "zer ordu da?",
           "es": "¿Qué hora es?",
           "audio": "unidades/u7/zer-ordu-da.mp3"
         },
         {
-          "eu": "Ordu bata da.",
+          "eu": "ordu bata da",
           "es": "Es la una.",
           "audio": "unidades/u7/ordu-bata-da.mp3"
         },
         {
-          "eu": "Hamarrak dira.",
+          "eu": "hamarrak dira",
           "es": "Son las diez.",
           "audio": "unidades/u7/hamarrak-dira.mp3"
         }
@@ -62,20 +62,20 @@
     },
     {
       "titulo": "Y media, y cuarto, menos cuarto",
-      "cuerpo": "Los minutos se cuelgan detrás con <b>eta</b> (y) o con <b>gutxi</b> (menos):\n\n<b>Hirurak eta bost.</b> — Las tres y cinco.\n<b>Hirurak eta laurden.</b> — Las tres y cuarto.\n<b>Hiru eta erdiak.</b> — Las tres y media.\n<b>Laurak bost gutxi.</b> — Las cuatro menos cinco.\n<b>Laurak laurden gutxi.</b> — Las cuatro menos cuarto.\n\nOjo con <b>eta erdiak</b>: es la única forma que rompe el patrón. Aquí la hora <b>pierde la -ak</b> y se queda desnuda — <i>hiru</i> eta erdiak, <i>bost</i> eta erdiak, <i>zortzi</i> eta erdiak. El plural lo lleva solo <b>erdiak</b>, y el verbo va en <b>dira</b>. Decir <i>*hirurak eta erdiak</i> es un error corriente, pero error.\n\nCon <b>laurden</b> y con los minutos, en cambio, la hora sí conserva la -ak: <i>hirurak</i> eta laurden, <i>laurak</i> bost gutxi.\n\nFíjate en el orden de «menos»: primero los minutos y luego <b>gutxi</b>, al revés que en castellano.\n\nY dos horas que se dicen con nombre propio:\n<b>eguerdia</b> — el mediodía\n<b>gauerdia</b> — la medianoche",
+      "cuerpo": "Los minutos se cuelgan detrás con <b>eta</b> (y) o con <b>gutxi</b> (menos):\n\n<b>hirurak eta bost</b> — Las tres y cinco.\n<b>hirurak eta laurden</b> — Las tres y cuarto.\n<b>hiru eta erdiak</b> — Las tres y media.\n<b>laurak bost gutxi</b> — Las cuatro menos cinco.\n<b>laurak laurden gutxi</b> — Las cuatro menos cuarto.\n\nOjo con <b>eta erdiak</b>: es la única forma que rompe el patrón. Aquí la hora <b>pierde la -ak</b> y se queda desnuda — <i>hiru</i> eta erdiak, <i>bost</i> eta erdiak, <i>zortzi</i> eta erdiak. El plural lo lleva solo <b>erdiak</b>, y el verbo va en <b>dira</b>. Decir <i>*hirurak eta erdiak</i> es un error corriente, pero error.\n\nCon <b>laurden</b> y con los minutos, en cambio, la hora sí conserva la -ak: <i>hirurak</i> eta laurden, <i>laurak</i> bost gutxi.\n\nFíjate en el orden de «menos»: primero los minutos y luego <b>gutxi</b>, al revés que en castellano.\n\nY dos horas que se dicen con nombre propio:\n<b>eguerdia</b> — el mediodía\n<b>gauerdia</b> — la medianoche",
       "ejemplos": [
         {
-          "eu": "Zortzi eta erdiak dira.",
+          "eu": "zortzi eta erdiak dira",
           "es": "Son las ocho y media.",
           "audio": "unidades/u7/zortzi-eta-erdiak-dira.mp3"
         },
         {
-          "eu": "Bostak laurden gutxi dira.",
+          "eu": "bostak laurden gutxi dira",
           "es": "Son las cinco menos cuarto.",
           "audio": "unidades/u7/bostak-laurden-gutxi-dira.mp3"
         },
         {
-          "eu": "Eguerdia da.",
+          "eu": "eguerdia da",
           "es": "Es mediodía.",
           "audio": "unidades/u7/eguerdia-da.mp3"
         }
@@ -87,17 +87,17 @@
       "cuerpo": "Para decir <b>a qué hora</b> pasa algo se usa el locativo <b>-n</b> de la unidad anterior, pero sobre un plural. La forma que sale es <b>-etan</b>:\n\n<b>hirurak</b> (las tres) → <b>hiruretan</b> (a las tres)\n<b>bostak</b> → <b>bostetan</b>\n<b>zazpiak</b> → <b>zazpietan</b>\n<b>hamarrak</b> → <b>hamarretan</b>\n\nY las dos excepciones de siempre:\n<b>ordu batean</b> — a la una\n<b>ordu bietan</b> — a las dos\n\nY con «y media» el <b>-etan</b> se pega a <b>erdiak</b>, dejando la hora desnuda igual que antes:\n<b>hiru eta erdietan</b> — a las tres y media\n<b>zortzi eta erdietan</b> — a las ocho y media\n\nEse <b>-etan</b> no es solo para las horas: es el locativo de <b>plural</b> en general. <i>etxe<b>etan</b></i> = en las casas, <i>herri<b>etan</b></i> = en los pueblos. Compáralo con el singular: <i>etxe<b>an</b></i>, en la casa.",
       "ejemplos": [
         {
-          "eu": "Zortzietan nago etxean.",
+          "eu": "zortzietan nago etxean",
           "es": "A las ocho estoy en casa.",
           "audio": "unidades/u7/zortzietan-nago-etxean.mp3"
         },
         {
-          "eu": "Ordu bietan bazkaria.",
+          "eu": "ordu bietan bazkaria",
           "es": "A las dos, la comida.",
           "audio": "unidades/u7/ordu-bietan-bazkaria.mp3"
         },
         {
-          "eu": "Hamarretan lanean nago.",
+          "eu": "hamarretan lanean nago",
           "es": "A las diez estoy en el trabajo.",
           "audio": "unidades/u7/hamarretan-lanean-nago.mp3"
         }
@@ -109,17 +109,17 @@
       "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana), y las piezas se leen solas:\n\naste (semana) + lehen (primero) → <i>astelehena</i>, «el primero de la semana»\naste (semana) + arte (entre) → <i>asteartea</i>, «el de en medio»\naste (semana) + azken (último) → <i>asteazkena</i>, «el último de la semana»\n\nY ahí hay algo que no cuadra: el «último de la semana» es el miércoles.\n\nLa explicación más extendida es que esos tres nombres son más viejos que la semana de siete días. Antes el tiempo se contaba en bloques más cortos, de tres días: uno para empezar, uno en medio y uno para cerrar. Cuando se adoptó la semana de siete, esos tres días conservaron el nombre que ya tenían, y por eso el «último» se quedó a mitad de camino.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nCompara las dos formas y se ve para qué sirve:\n\n<i>Gaur ostirala da.</i> — Hoy es viernes.\n<i>Ostiralean Bilbon nago.</i> — El viernes estoy en Bilbao.\n\nSin la <b>-n</b> nombras el día; con la <b>-n</b> dices que algo pasa ese día.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».",
       "ejemplos": [
         {
-          "eu": "Larunbatean etxean nago.",
+          "eu": "larunbatean etxean nago",
           "es": "El sábado estoy en casa.",
           "audio": "unidades/u7/larunbatean-etxean-nago.mp3"
         },
         {
-          "eu": "Gaur asteartea da.",
+          "eu": "gaur asteartea da",
           "es": "Hoy es martes.",
           "audio": "unidades/u7/gaur-asteartea-da.mp3"
         },
         {
-          "eu": "Asteburua polita da.",
+          "eu": "asteburua polita da",
           "es": "El fin de semana es bonito.",
           "audio": "unidades/u7/asteburua-polita-da.mp3"
         }
@@ -128,20 +128,20 @@
     },
     {
       "titulo": "Cuándo: el día, el rato y la costumbre",
-      "cuerpo": "Los ratos del día llevan la misma <b>-n</b>:\n\n<b>goizean</b> — por la mañana\n<b>eguerdian</b> — a mediodía\n<b>arratsaldean</b> — por la tarde\n<b>iluntzean</b> — al anochecer\n<b>gauean</b> — por la noche\n\nLos días sueltos, en cambio, no llevan nada: <b>gaur</b> (hoy), <b>bihar</b> (mañana), <b>atzo</b> (ayer), <b>etzi</b> (pasado mañana), <b>bart</b> (anoche).\n\nSe combinan sin más: <b>gaur goizean</b> (esta mañana), <b>bihar arratsaldean</b> (mañana por la tarde).\n\nY para la frecuencia: <b>beti</b> (siempre), <b>askotan</b> (a menudo), <b>batzuetan</b> (a veces), <b>gutxitan</b> (pocas veces), <b>inoiz ez</b> (nunca).\n\nLo habitual es que la expresión de tiempo vaya <b>al principio de la frase</b>: <i>Gaur goizean etxean nago.</i>\n\nY tres palabras más para colocar las cosas en el tiempo:\n\n<b>gero</b> — luego, después\n<b>berandu</b> — tarde\n<b>egutegia</b> — el calendario, que da nombre a esta unidad\n\n<i>Gero</i> ya la usabas sin saberlo: <b>gero arte</b>, «hasta luego», de la primera unidad.\n\nY la pregunta que abre cualquier conversación con prisa:\n\n<b>Zer ordu da?</b> — ¿Qué hora es?",
+      "cuerpo": "Los ratos del día llevan la misma <b>-n</b>:\n\n<b>goizean</b> — por la mañana\n<b>eguerdian</b> — a mediodía\n<b>arratsaldean</b> — por la tarde\n<b>iluntzean</b> — al anochecer\n<b>gauean</b> — por la noche\n\nLos días sueltos, en cambio, no llevan nada: <b>gaur</b> (hoy), <b>bihar</b> (mañana), <b>atzo</b> (ayer), <b>etzi</b> (pasado mañana), <b>bart</b> (anoche).\n\nSe combinan sin más: <b>gaur goizean</b> (esta mañana), <b>bihar arratsaldean</b> (mañana por la tarde).\n\nY para la frecuencia: <b>beti</b> (siempre), <b>askotan</b> (a menudo), <b>batzuetan</b> (a veces), <b>gutxitan</b> (pocas veces), <b>inoiz ez</b> (nunca).\n\nLo habitual es que la expresión de tiempo vaya <b>al principio de la frase</b>: <i>Gaur goizean etxean nago.</i>\n\nY tres palabras más para colocar las cosas en el tiempo:\n\n<b>gero</b> — luego, después\n<b>berandu</b> — tarde\n<b>egutegia</b> — el calendario, que da nombre a esta unidad\n\n<i>Gero</i> ya la usabas sin saberlo: <b>gero arte</b>, «hasta luego», de la primera unidad.\n\nY la pregunta que abre cualquier conversación con prisa:\n\n<b>zer ordu da?</b> — ¿Qué hora es?",
       "ejemplos": [
         {
-          "eu": "Gaur goizean etxean nago.",
+          "eu": "gaur goizean etxean nago",
           "es": "Esta mañana estoy en casa.",
           "audio": "unidades/u7/gaur-goizean-etxean-nago.mp3"
         },
         {
-          "eu": "Bihar Bilbon nago.",
+          "eu": "bihar Bilbon nago",
           "es": "Mañana estoy en Bilbao.",
           "audio": "unidades/u7/bihar-bilbon-nago.mp3"
         },
         {
-          "eu": "Gauean beti nekatuta nago.",
+          "eu": "gauean beti nekatuta nago",
           "es": "Por la noche siempre estoy cansado.",
           "audio": "unidades/u7/gauean-beti-nekatuta-nago.mp3"
         }
@@ -153,17 +153,17 @@
       "cuerpo": "Aquí el bizkaiera no cambia un detalle: cambia <b>los nombres de los días</b>. Y es de lo primero que descoloca a quien llega con batua aprendido.\n\n<b>astelehena</b> — igual (a veces <i>astelena</i>)\n<b>martitzena</b> — batua: asteartea\n<b>eguaztena</b> — batua: asteazkena\n<b>eguena</b> — batua: osteguna\n<b>barikua</b> — batua: ostirala\n<b>zapatua</b> — batua: larunbata\n<b>domeka</b> — batua: igandea\n\nAsí que «el viernes por la noche» por allí es <b>barikuan gabean</b>, no <i>ostiralean gauean</i>. Los carteles y la prensa usan batua; la gente, en casa, sigue con estos.\n\n<b>gaua → gaba</b>\nLa noche es <b>gaba</b> en bizkaiera, de donde sale el <i>gabon</i> de «buenas noches» (gau on). En batua, <i>gaua</i>.\n\n<b>Ze ordu da?</b>\nEl <i>zer</i> del batua se acorta en <b>ze</b> delante de un nombre: <b>Ze ordu da?</b>, <b>Ze egun da gaur?</b>",
       "ejemplos": [
         {
-          "eu": "Zapatuan Bilbon nago.",
+          "eu": "zapatuan Bilbon nago",
           "es": "El sábado estoy en Bilbao. — batua: Larunbatean.",
           "audio": "unidades/u7/zapatuan-bilbon-nago.mp3"
         },
         {
-          "eu": "Ze ordu da?",
+          "eu": "ze ordu da?",
           "es": "¿Qué hora es? — batua: Zer ordu da?",
           "audio": "unidades/u7/ze-ordu-da.mp3"
         },
         {
-          "eu": "Barikuan gabean.",
+          "eu": "barikuan gabean",
           "es": "El viernes por la noche. — batua: Ostiralean gauean.",
           "audio": "unidades/u7/barikuan-gabean.mp3"
         }
@@ -198,7 +198,7 @@
       "cuerpo": "Ya lo tienes de la unidad 5, con los lugares: <b>etxean</b> (en casa), <b>tabernan</b> (en el bar). Con los meses funciona igual, solo que el artículo <i>-a</i> se convierte en <i>-e-</i> al añadir la terminación:\n\n<b>maiatza</b> → <b>maiatzean</b> — en mayo\n<b>abendua</b> → <b>abenduan</b> — en diciembre\n<b>urtarrila</b> → <b>urtarrilean</b> — en enero\n\nNo hace falta que lo memorices ahora mismo: con reconocerlo cuando lo oigas es suficiente en este punto.",
       "ejemplos": [
         {
-          "eu": "Nire urtebetetzea maiatzean da.",
+          "eu": "nire urtebetetzea maiatzean da",
           "es": "Mi cumpleaños es en mayo.",
           "audio": "unidades/u6/nire-urtebetetzea-maiatzean-da.mp3"
         },
@@ -215,17 +215,17 @@
       "cuerpo": "Esta merece que le mires las piezas, porque una vez las ves ya no se olvida:\n\n<b>urte</b> (año) + <b>bete</b> (llenar, completar) + <b>-tze</b>\n\nLiteralmente, <b>el completarse del año</b>. Y fíjate en que el castellano hace exactamente lo mismo: <i>cumpleaños</i> es «cumplir años», completar otro año. Las dos lenguas cuentan lo mismo — el año que se llena, no el día en que naciste.\n\nEl verbo <i>bete</i> lo vas a volver a ver: sirve para llenar un vaso, una hoja o un plazo, con la misma idea de completar algo hasta el borde.\n\n<b>Y cómo se felicita.</b> No hay nada parecido a «feliz cumpleaños»: se dice <b>Zorionak!</b> —felicidades— a secas, o <b>Zorionak zuri!</b> — «felicidades a ti».\n\nOjo, porque no son solo de cumpleaños: <i>zorionak</i> es «felicidades» a secas, y sirve para un ascenso, un premio o una boda igual que para los años. Es batua, se usa en todas partes.",
       "ejemplos": [
         {
-          "eu": "Zorionak!",
+          "eu": "zorionak!",
           "es": "¡Felicidades!",
           "audio": "unidades/u12/zorionak.mp3"
         },
         {
-          "eu": "Zorionak zuri!",
+          "eu": "zorionak zuri!",
           "es": "¡Felicidades a ti!",
           "audio": "unidades/u6/zorionak-zuri.mp3"
         },
         {
-          "eu": "Nire urtebetetzea maiatzean da.",
+          "eu": "nire urtebetetzea maiatzean da",
           "es": "Mi cumpleaños es en mayo.",
           "audio": "unidades/u6/nire-urtebetetzea-maiatzean-da.mp3"
         }
@@ -254,12 +254,12 @@
       "cuerpo": "Los meses son de las cosas más estables del idioma y en Bizkaia se dicen igual que en batua. Lo que sí cambia es lo de alrededor.\n\nPara preguntar por una fecha, en vez de <b>noiz?</b> (cuándo) oirás muchas veces <b>zenbatean?</b>, literalmente «¿en cuánto?».",
       "ejemplos": [
         {
-          "eu": "Zorionak!",
+          "eu": "zorionak!",
           "es": "¡Felicidades! / ¡Feliz cumpleaños!",
           "audio": "unidades/u12/zorionak.mp3"
         },
         {
-          "eu": "Zorionak zuri!",
+          "eu": "zorionak zuri!",
           "es": "¡Feliz cumpleaños!",
           "audio": "unidades/u6/zorionak-zuri.mp3"
         }
@@ -292,7 +292,7 @@
           "audio": "unidades/u10/negua.mp3"
         },
         {
-          "eu": "Negua hotza da.",
+          "eu": "negua hotza da",
           "es": "El invierno es frío.",
           "audio": "unidades/u6/negua-hotza-da.mp3"
         }
@@ -301,20 +301,20 @@
     },
     {
       "titulo": "El tiempo se «hace», como en castellano",
-      "cuerpo": "Para hablar del tiempo, el euskera usa <b>egin</b> (hacer). Todavía no lo hemos visto por dentro —eso es la unidad siguiente—, así que de momento apréndete estas dos enteras, como fórmulas:\n\n<b>Udaberrian euria egiten du.</b> — En primavera llueve.\n<b>Neguan hotz egiten du.</b> — En invierno hace frío.\n\nFíjate en que <i>euria</i> (la lluvia) y <i>hotza</i> (el frío) son sustantivos, no verbos: literalmente es «hace lluvia», «hace frío». Igual que en castellano.\n\nY para preguntar u opinar sobre el tiempo en general se usa <b>eguraldia</b>:\n\n<b>Gaur eguraldi ona dago.</b> — Hoy hace buen tiempo.\n\nLo que se ve al mirar por la ventana:\n\n<b>eguzkia</b> — el sol\n<b>euria</b> — la lluvia\n<b>elurra</b> — la nieve\n<b>haizea</b> — el viento\n<b>hodeia</b> — la nube\n<b>beroa</b> — el calor\n<b>hotza</b> — el frío\n\n<i>Eguzkia</i> lleva dentro <b>egun</b>, el día — que a su vez está en <i>egun on</i> y en <i>egutegia</i>. Es de las piezas más repetidas del idioma.",
+      "cuerpo": "Para hablar del tiempo, el euskera usa <b>egin</b> (hacer). Todavía no lo hemos visto por dentro —eso es la unidad siguiente—, así que de momento apréndete estas dos enteras, como fórmulas:\n\n<b>udaberrian euria egiten du</b> — En primavera llueve.\n<b>neguan hotz egiten du</b> — En invierno hace frío.\n\nFíjate en que <i>euria</i> (la lluvia) y <i>hotza</i> (el frío) son sustantivos, no verbos: literalmente es «hace lluvia», «hace frío». Igual que en castellano.\n\nY para preguntar u opinar sobre el tiempo en general se usa <b>eguraldia</b>:\n\n<b>gaur eguraldi ona dago</b> — Hoy hace buen tiempo.\n\nLo que se ve al mirar por la ventana:\n\n<b>eguzkia</b> — el sol\n<b>euria</b> — la lluvia\n<b>elurra</b> — la nieve\n<b>haizea</b> — el viento\n<b>hodeia</b> — la nube\n<b>beroa</b> — el calor\n<b>hotza</b> — el frío\n\n<i>Eguzkia</i> lleva dentro <b>egun</b>, el día — que a su vez está en <i>egun on</i> y en <i>egutegia</i>. Es de las piezas más repetidas del idioma.",
       "ejemplos": [
         {
-          "eu": "Udaberrian euria egiten du.",
+          "eu": "udaberrian euria egiten du",
           "es": "En primavera llueve.",
           "audio": "unidades/u6/udaberrian-euria-egiten-du.mp3"
         },
         {
-          "eu": "Neguan hotz egiten du.",
+          "eu": "neguan hotz egiten du",
           "es": "En invierno hace frío.",
           "audio": "unidades/u6/neguan-hotz-egiten-du.mp3"
         },
         {
-          "eu": "Gaur eguraldi ona dago.",
+          "eu": "gaur eguraldi ona dago",
           "es": "Hoy hace buen tiempo.",
           "audio": "unidades/u6/gaur-eguraldi-ona-dago.mp3"
         }
@@ -323,7 +323,7 @@
     },
     {
       "titulo": "«Gabon» y «Gabonak»: cuidado con la -k",
-      "cuerpo": "Aquí hay una coincidencia que confunde si no se avisa.\n\n<b>gabon</b> — buenas noches. Lo tienes desde la unidad 1.\n<b>Gabonak</b> — la Navidad.\n\nLa segunda es literalmente el plural de la primera: <i>las buenas noches</i>, las noches buenas del año. Va casi siempre en plural y con mayúscula.\n\nAsí que si alguien te dice <i>Gabon</i> por la noche te está dando las buenas noches, y si te habla de <i>Gabonak</i> te está hablando de las fiestas. El contexto lo deja claro enseguida, pero la primera vez despista.\n\nEl resto del calendario festivo:\n\n<b>jaiak</b> — las fiestas\n<b>jaieguna</b> — el día festivo, literalmente «día de fiesta»\n<b>Urte Berri</b> — el Año Nuevo\n<b>Aste Santua</b> — la Semana Santa\n<b>oporrak</b> — las vacaciones\n\nTres se descifran con lo que ya tienes: <i>jaieguna</i> es <b>jai</b> + <b>egun</b>; <i>Urte Berri</i> es «año nuevo» con el adjetivo detrás, como siempre; y <i>Aste Santua</i> lleva la <b>astea</b> del tema anterior. <i>Oporrak</i> va en plural, como las vacaciones en castellano.",
+      "cuerpo": "Aquí hay una coincidencia que confunde si no se avisa.\n\n<b>gabon</b> — buenas noches. Lo tienes desde la unidad 1.\n<b>gabonak</b> — la Navidad.\n\nLa segunda es literalmente el plural de la primera: <i>las buenas noches</i>, las noches buenas del año. Va casi siempre en plural y con mayúscula.\n\nAsí que si alguien te dice <i>Gabon</i> por la noche te está dando las buenas noches, y si te habla de <i>Gabonak</i> te está hablando de las fiestas. El contexto lo deja claro enseguida, pero la primera vez despista.\n\nEl resto del calendario festivo:\n\n<b>jaiak</b> — las fiestas\n<b>jaieguna</b> — el día festivo, literalmente «día de fiesta»\n<b>urte Berri</b> — el Año Nuevo\n<b>aste Santua</b> — la Semana Santa\n<b>oporrak</b> — las vacaciones\n\nTres se descifran con lo que ya tienes: <i>jaieguna</i> es <b>jai</b> + <b>egun</b>; <i>Urte Berri</i> es «año nuevo» con el adjetivo detrás, como siempre; y <i>Aste Santua</i> lleva la <b>astea</b> del tema anterior. <i>Oporrak</i> va en plural, como las vacaciones en castellano.",
       "ejemplos": [
         {
           "eu": "gabon",
@@ -331,7 +331,7 @@
           "audio": "unidades/u1/gabon.mp3"
         },
         {
-          "eu": "Gabonak",
+          "eu": "gabonak",
           "es": "la Navidad",
           "audio": "unidades/u6/gabonak.mp3"
         }
@@ -343,17 +343,17 @@
       "cuerpo": "En Euskal Herria los regalos de Navidad no los trae Papá Noel ni —tradicionalmente— los Reyes: los trae <b>Olentzero</b>.\n\nHoy es un personaje concreto: un <b>carbonero</b> que vive en el monte y baja al pueblo la Nochebuena. Se le representa con boina, ropa de caserío y buen apetito, y en muchos sitios lo pasean en un desfile con antorchas la tarde del 24.\n\n<b>Pero antes no era nadie.</b> Y esto es lo interesante.\n\nEn zonas de Navarra y Gipuzkoa, <i>Olentzero</i> era el nombre de <b>la fiesta misma</b>: la Nochebuena y, más atrás, la celebración del <b>solsticio de invierno</b> — la noche más larga, cuando el año da la vuelta. No designaba a una persona, sino a un día del calendario.\n\nCon los siglos, esa fiesta <b>tomó forma humana</b>. El nombre del día se convirtió en el nombre de un personaje, y alrededor de él creció la leyenda del carbonero que baja del monte.\n\nPor eso, si buscas <i>Olentzero</i> en el diccionario de Euskaltzaindia, lo primero que te dice es <b>«Gabon eguna»</b>, el día de Nochebuena. No es un error del diccionario: es el significado más antiguo, el que había antes de que la fiesta echara barba.\n\nY encaja con lo que ya sabes de esta unidad: en euskera <b>Gabonak</b> son las Navidades y <i>gabon</i>, a secas, es «buenas noches». Todo esto gira alrededor de la misma idea — la noche, y la noche más larga del año.",
       "ejemplos": [
         {
-          "eu": "Olentzero",
+          "eu": "olentzero",
           "es": "El carbonero — y, antes, la propia Nochebuena.",
           "audio": "unidades/u6/olentzero.mp3"
         },
         {
-          "eu": "Gabon eguna",
+          "eu": "gabon eguna",
           "es": "El día de Nochebuena.",
           "audio": "unidades/u6/gabon-eguna.mp3"
         },
         {
-          "eu": "Gabonak",
+          "eu": "gabonak",
           "es": "La Navidad.",
           "audio": "unidades/u6/gabonak.mp3"
         }
@@ -365,17 +365,17 @@
       "cuerpo": "Los carnavales, <b>Inauteriak</b> en batua, se llaman muchas veces <b>Aratusteak</b>. Es la palabra que oirás en Bilbao y en buena parte de Bizkaia.\n\nLa fiesta grande de Bilbao es la <b>Aste Nagusia</b>, la Semana Grande: empieza el sábado siguiente al 15 de agosto y dura nueve días. El nombre no tiene misterio: <i>astea</i> ya sabes que es la semana, y <i>nagusi</i> es «mayor, principal». La semana mayor del año.\n\nY en Gernika hay una fecha cuyo nombre se dice entero con palabras que ya tienes: el <b>Urriko Azken Astelehena</b>, el último lunes de octubre, día de feria en la villa desde hace siglos.\n\n<i>urria</i> (octubre) + <i>-ko</i> (de) + <i>azken</i> (último) + <i>astelehena</i> (el lunes).\n\nFija el detalle de <i>azken</i>: lo aprendiste como <b>azkena</b>, «el último», pero cuando va delante del nombre pierde la <i>-a</i> y el artículo se lo queda la palabra de detrás — <i>azken astelehena</i>, no <i>azkena astelehena</i>.",
       "ejemplos": [
         {
-          "eu": "Aratusteak",
+          "eu": "aratusteak",
           "es": "los carnavales (en Bizkaia)",
           "audio": "unidades/u6/aratusteak.mp3"
         },
         {
-          "eu": "Aste Nagusia",
+          "eu": "aste Nagusia",
           "es": "la Semana Grande de Bilbao",
           "audio": "unidades/u6/aste-nagusia.mp3"
         },
         {
-          "eu": "Urriko Azken Astelehena",
+          "eu": "urriko Azken Astelehena",
           "es": "el último lunes de octubre — la feria de Gernika",
           "audio": "unidades/u6/urriko-azken-astelehena.mp3"
         }

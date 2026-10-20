@@ -43,17 +43,17 @@
       "cuerpo": "El presente lo tienes desde la segunda unidad. El pasado se parece bastante:\n\n<b>ni nintzen</b> — yo era, yo fui\n<b>zu zinen</b> — tú eras\n<b>hura zen</b> — él/ella era\n<b>gu ginen</b> — nosotros éramos\n<b>zuek zineten</b> — vosotros erais\n<b>haiek ziren</b> — ellos eran\n\nMira la lógica: donde el presente pone <i>n-</i> para «yo» (<i>naiz</i>), el pasado también (<i>nintzen</i>); donde pone <i>z-</i> para «tú» (<i>zara</i>), el pasado también (<i>zinen</i>). Y todas las formas de pasado acaban en <b>-n</b>.\n\nEsa <b>-n</b> final es la marca del pasado en euskera. Una vez la ves, la reconoces en todas partes.\n\n<b>Presente y pasado, uno al lado del otro</b>\n\n<b>ni</b> — naiz · <b>nintzen</b>\n<b>zu</b> — zara · <b>zinen</b>\n<b>hura</b> — da · <b>zen</b>\n<b>gu</b> — gara · <b>ginen</b>\n<b>zuek</b> — zarete · <b>zineten</b>\n<b>haiek</b> — dira · <b>ziren</b>\n\nLéelo en horizontal: <i>soy · era</i>. La inicial no se mueve en toda la fila —la <b>n-</b> de «yo», la <b>z-</b> de «tú»— y el pasado siempre acaba en <b>-n</b>.\n\n<b>Frases para verlo funcionar</b>\n\n<b>Ni ikaslea nintzen, eta orain irakaslea naiz.</b>\nYo era estudiante, y ahora soy profesor.\n\n<b>Nire aitona sukaldaria zen.</b>\nMi abuelo era cocinero.\n\n<b>Atzo jaieguna zen.</b>\nAyer era festivo.\n\n<b>Gu Bilbokoak ginen.</b>\nNosotros éramos de Bilbao.\n\n<b>Haiek euskaldunak ziren.</b>\nEllos hablaban euskera.\n\nFíjate en la primera: la misma frase lleva el pasado y el presente, y lo único que cambia entre <i>nintzen</i> y <i>naiz</i> es esa <b>-n</b> del final y la vocal de dentro. Es el mismo verbo mirando a dos sitios.",
       "ejemplos": [
         {
-          "eu": "Ni Bilbon jaio nintzen.",
+          "eu": "ni Bilbon jaio nintzen",
           "es": "Nací en Bilbao.",
           "audio": "unidades/u11/ni-bilbon-jaio-nintzen.mp3"
         },
         {
-          "eu": "Atzo Bilbon zen.",
+          "eu": "atzo Bilbon zen",
           "es": "Ayer estuvo en Bilbao.",
           "audio": "unidades/u11/atzo-bilbon-zen.mp3"
         },
         {
-          "eu": "Gu lagunak ginen.",
+          "eu": "gu lagunak ginen",
           "es": "Éramos amigos.",
           "audio": "unidades/u11/gu-lagunak-ginen.mp3"
         }
@@ -62,20 +62,20 @@
     },
     {
       "titulo": "El pasado de «ukan» (tener)",
-      "cuerpo": "Y el otro auxiliar, el de los verbos con objeto:\n\n<b>nik nuen</b> — yo tenía / lo hice\n<b>zuk zenuen</b> — tú tenías / lo hiciste\n<b>hark zuen</b> — él/ella tenía / lo hizo\n<b>guk genuen</b> — nosotros teníamos / lo hicimos\n<b>zuek zenuten</b> — vosotros teníais / lo hicisteis\n<b>haiek zuten</b> — ellos tenían / lo hicieron\n\nOtra vez la <b>-n</b> del final, y el sujeto con <b>-k</b> como siempre que hay objeto.\n\nSi el objeto es plural, se cuela el <b>-it-</b> de la séptima unidad:\n\n<b>nik nituen</b> — yo los/las tenía\n<b>zuk zenituen</b> — tú los/las tenías\n<b>hark zituen</b> — él/ella los/las tenía\n<b>guk genituen</b> — nosotros los/las teníamos\n<b>zuek zenituzten</b> — vosotros los/las teníais\n<b>haiek zituzten</b> — ellos los/las tenían\n\n<b>Liburua irakurri nuen.</b> — Leí el libro.\n<b>Liburuak irakurri nituen.</b> — Leí los libros.\n\n<b>Presente y pasado, uno al lado del otro</b>\n\n<b>nik</b> — dut · <b>nuen</b>\n<b>zuk</b> — duzu · <b>zenuen</b>\n<b>hark</b> — du · <b>zuen</b>\n<b>guk</b> — dugu · <b>genuen</b>\n<b>zuek</b> — duzue · <b>zenuten</b>\n<b>haiek</b> — dute · <b>zuten</b>\n\nOtra vez la <b>-n</b> del final como única marca del pasado.\n\n<b>Frases para verlo funcionar</b>\n\n<b>Nik kotxe bat nuen, orain ez dut.</b>\nYo tenía un coche; ahora no.\n\n<b>Zer egin zenuen atzo?</b>\n¿Qué hiciste ayer?\n\n<b>Guk ez genuen dirurik.</b>\nNo teníamos dinero. (en negativa, el objeto con <i>-rik</i>, como en la séptima unidad)\n\n<b>Haiek bi seme zituzten.</b>\nEllos tenían dos hijos. (objeto plural, con el <i>-it-</i> de dentro)\n\n<b>Liburua irakurri nuen.</b>\nLeí el libro.\n\nEsa última es la que más juego da: <i>irakurri</i> no cambia nunca, y todo el trabajo de decir <b>cuándo</b> lo hace el auxiliar de detrás. Cambia <i>nuen</i> por <i>dut</i> y ya es «he leído el libro».",
+      "cuerpo": "Y el otro auxiliar, el de los verbos con objeto:\n\n<b>nik nuen</b> — yo tenía / lo hice\n<b>zuk zenuen</b> — tú tenías / lo hiciste\n<b>hark zuen</b> — él/ella tenía / lo hizo\n<b>guk genuen</b> — nosotros teníamos / lo hicimos\n<b>zuek zenuten</b> — vosotros teníais / lo hicisteis\n<b>haiek zuten</b> — ellos tenían / lo hicieron\n\nOtra vez la <b>-n</b> del final, y el sujeto con <b>-k</b> como siempre que hay objeto.\n\nSi el objeto es plural, se cuela el <b>-it-</b> de la séptima unidad:\n\n<b>nik nituen</b> — yo los/las tenía\n<b>zuk zenituen</b> — tú los/las tenías\n<b>hark zituen</b> — él/ella los/las tenía\n<b>guk genituen</b> — nosotros los/las teníamos\n<b>zuek zenituzten</b> — vosotros los/las teníais\n<b>haiek zituzten</b> — ellos los/las tenían\n\n<b>liburua irakurri nuen</b> — Leí el libro.\n<b>liburuak irakurri nituen</b> — Leí los libros.\n\n<b>Presente y pasado, uno al lado del otro</b>\n\n<b>nik</b> — dut · <b>nuen</b>\n<b>zuk</b> — duzu · <b>zenuen</b>\n<b>hark</b> — du · <b>zuen</b>\n<b>guk</b> — dugu · <b>genuen</b>\n<b>zuek</b> — duzue · <b>zenuten</b>\n<b>haiek</b> — dute · <b>zuten</b>\n\nOtra vez la <b>-n</b> del final como única marca del pasado.\n\n<b>Frases para verlo funcionar</b>\n\n<b>Nik kotxe bat nuen, orain ez dut.</b>\nYo tenía un coche; ahora no.\n\n<b>Zer egin zenuen atzo?</b>\n¿Qué hiciste ayer?\n\n<b>Guk ez genuen dirurik.</b>\nNo teníamos dinero. (en negativa, el objeto con <i>-rik</i>, como en la séptima unidad)\n\n<b>Haiek bi seme zituzten.</b>\nEllos tenían dos hijos. (objeto plural, con el <i>-it-</i> de dentro)\n\n<b>Liburua irakurri nuen.</b>\nLeí el libro.\n\nEsa última es la que más juego da: <i>irakurri</i> no cambia nunca, y todo el trabajo de decir <b>cuándo</b> lo hace el auxiliar de detrás. Cambia <i>nuen</i> por <i>dut</i> y ya es «he leído el libro».",
       "ejemplos": [
         {
-          "eu": "Atzo film bat ikusi nuen.",
+          "eu": "atzo film bat ikusi nuen",
           "es": "Ayer vi una película.",
           "audio": "unidades/u11/atzo-film-bat-ikusi-nuen.mp3"
         },
         {
-          "eu": "Zer egin zenuen?",
+          "eu": "zer egin zenuen?",
           "es": "¿Qué hiciste?",
           "audio": "unidades/u11/zer-egin-zenuen.mp3"
         },
         {
-          "eu": "Haiek etxe bat zuten.",
+          "eu": "haiek etxe bat zuten",
           "es": "Ellos tenían una casa.",
           "audio": "unidades/u11/haiek-etxe-bat-zuten.mp3"
         }
@@ -84,20 +84,20 @@
     },
     {
       "titulo": "El pasado de «egon»",
-      "cuerpo": "<b>ni nengoen</b> — yo estaba\n<b>zu zeunden</b> — tú estabas\n<b>hura zegoen</b> — él/ella estaba\n<b>gu geunden</b> — nosotros estábamos\n<b>zuek zeundeten</b> — vosotros estabais\n<b>haiek zeuden</b> — ellos estaban\n\nSirve igual que en presente: para dónde estaba algo y para cómo estaba alguien.\n\n<b>Etxean nengoen.</b> — Estaba en casa.\n<b>Non zegoen?</b> — ¿Dónde estaba?\n<b>Nekatuta geunden.</b> — Estábamos cansados.\n\n<b>Presente y pasado, uno al lado del otro</b>\n\n<b>ni</b> — nago · <b>nengoen</b>\n<b>zu</b> — zaude · <b>zeunden</b>\n<b>hura</b> — dago · <b>zegoen</b>\n<b>gu</b> — gaude · <b>geunden</b>\n<b>zuek</b> — zaudete · <b>zeundeten</b>\n<b>haiek</b> — daude · <b>zeuden</b>\n\nEste es el más irregular de los tres: la <i>-au-</i> del presente (<i>zaude, gaude</i>) se convierte en <b>-eu-</b> (<i>zeunden, geunden</i>). Lo demás, igual: la <b>-n</b> al final.\n\n<b>Frases para verlo funcionar</b>\n\n<b>Atzo etxean nengoen, eta gaur lanean nago.</b>\nAyer estaba en casa, y hoy estoy en el trabajo.\n\n<b>Non zegoen liburua?</b>\n¿Dónde estaba el libro?\n\n<b>Zu non zeunden atzo?</b>\n¿Dónde estabas tú ayer?\n\n<b>Gu ez geunden hor.</b>\nNosotros no estábamos ahí.\n\n<b>Haiek tabernan zeuden.</b>\nEllos estaban en el bar.\n\nLa primera vuelve a enseñar el truco: <i>nengoen</i> y <i>nago</i> en la misma frase, y entre las dos solo cambia el tiempo. El sitio se dice igual —<i>etxean</i>, <i>lanean</i>— con la <b>-n</b> de la quinta unidad.",
+      "cuerpo": "<b>ni nengoen</b> — yo estaba\n<b>zu zeunden</b> — tú estabas\n<b>hura zegoen</b> — él/ella estaba\n<b>gu geunden</b> — nosotros estábamos\n<b>zuek zeundeten</b> — vosotros estabais\n<b>haiek zeuden</b> — ellos estaban\n\nSirve igual que en presente: para dónde estaba algo y para cómo estaba alguien.\n\n<b>etxean nengoen</b> — Estaba en casa.\n<b>non zegoen?</b> — ¿Dónde estaba?\n<b>nekatuta geunden</b> — Estábamos cansados.\n\n<b>Presente y pasado, uno al lado del otro</b>\n\n<b>ni</b> — nago · <b>nengoen</b>\n<b>zu</b> — zaude · <b>zeunden</b>\n<b>hura</b> — dago · <b>zegoen</b>\n<b>gu</b> — gaude · <b>geunden</b>\n<b>zuek</b> — zaudete · <b>zeundeten</b>\n<b>haiek</b> — daude · <b>zeuden</b>\n\nEste es el más irregular de los tres: la <i>-au-</i> del presente (<i>zaude, gaude</i>) se convierte en <b>-eu-</b> (<i>zeunden, geunden</i>). Lo demás, igual: la <b>-n</b> al final.\n\n<b>Frases para verlo funcionar</b>\n\n<b>Atzo etxean nengoen, eta gaur lanean nago.</b>\nAyer estaba en casa, y hoy estoy en el trabajo.\n\n<b>Non zegoen liburua?</b>\n¿Dónde estaba el libro?\n\n<b>Zu non zeunden atzo?</b>\n¿Dónde estabas tú ayer?\n\n<b>Gu ez geunden hor.</b>\nNosotros no estábamos ahí.\n\n<b>Haiek tabernan zeuden.</b>\nEllos estaban en el bar.\n\nLa primera vuelve a enseñar el truco: <i>nengoen</i> y <i>nago</i> en la misma frase, y entre las dos solo cambia el tiempo. El sitio se dice igual —<i>etxean</i>, <i>lanean</i>— con la <b>-n</b> de la quinta unidad.",
       "ejemplos": [
         {
-          "eu": "Atzo etxean nengoen.",
+          "eu": "atzo etxean nengoen",
           "es": "Ayer estaba en casa.",
           "audio": "unidades/u11/atzo-etxean-nengoen.mp3"
         },
         {
-          "eu": "Non zegoen liburua?",
+          "eu": "non zegoen liburua?",
           "es": "¿Dónde estaba el libro?",
           "audio": "unidades/u11/non-zegoen-liburua.mp3"
         },
         {
-          "eu": "Haiek tabernan zeuden.",
+          "eu": "haiek tabernan zeuden",
           "es": "Ellos estaban en el bar.",
           "audio": "unidades/u11/haiek-tabernan-zeuden.mp3"
         }
@@ -109,17 +109,17 @@
       "cuerpo": "El euskera separa las tres con mucha limpieza. La pieza del verbo dice el aspecto, y el auxiliar dice el tiempo:\n\n<b>jan dut</b> — he comido (participio + presente)\n<b>jan nuen</b> — comí (participio + pasado)\n<b>jaten nuen</b> — comía, solía comer (forma en -t(z)en + pasado)\n\nY con los verbos sin objeto, igual:\n<b>etorri naiz</b> — he venido\n<b>etorri nintzen</b> — vine\n<b>etortzen nintzen</b> — venía, solía venir\n\nEs el mismo mecanismo de dos piezas de la séptima unidad. Lo único nuevo es el auxiliar.",
       "ejemplos": [
         {
-          "eu": "Atzo Bilbora joan nintzen.",
+          "eu": "atzo Bilbora joan nintzen",
           "es": "Ayer fui a Bilbao.",
           "audio": "unidades/u11/atzo-bilbora-joan-nintzen.mp3"
         },
         {
-          "eu": "Txikitan Bilbon bizi nintzen.",
+          "eu": "txikitan Bilbon bizi nintzen",
           "es": "De pequeño vivía en Bilbao.",
           "audio": "unidades/u11/txikitan-bilbon-bizi-nintzen.mp3"
         },
         {
-          "eu": "Gaur ez naiz joan.",
+          "eu": "gaur ez naiz joan",
           "es": "Hoy no he ido.",
           "audio": "unidades/u11/gaur-ez-naiz-joan.mp3"
         }
@@ -128,25 +128,25 @@
     },
     {
       "titulo": "Los verbos que casi siempre se dicen en pasado",
-      "cuerpo": "Tener el pasado montado sirve de poco sin cosas que contar con él. Estos son los verbos del tema, y no están elegidos al azar: son los que uno usa mirando hacia atrás.\n\n<b>jaio</b> — nacer\n<b>ezagutu</b> — conocer\n<b>gogoratu</b> — recordar\n<b>ahaztu</b> — olvidar\n<b>hasi</b> — empezar\n<b>bukatu</b> — terminar\n<b>gertatu</b> — ocurrir, pasar\n\nY dos palabras para situarlos:\n\n<b>aspaldi</b> — hace mucho\n<b>berriro</b> — otra vez\n\nCon ellos y lo que acabas de aprender ya se cuenta media vida:\n\n<b>Bilbon jaio nintzen.</b> — Nací en Bilbao.\n<b>Atzo ezagutu nuen.</b> — Lo conocí ayer.\n<b>Zer gertatu zen?</b> — ¿Qué pasó?\n<b>Lana bukatu dut.</b> — He terminado el trabajo.\n\nDos que ya te sonaban de la novena unidad: <i>ahaztu</i> aparece casi siempre como <b>ahaztu zait</b> (se me ha olvidado), con la misma pieza que <i>gustatzen zait</i>. Y para «no me acuerdo» lo corriente es <b>ez naiz gogoratzen</b>.\n\nFíjate en que <i>jaio</i> y <i>gertatu</i> van con <i>izan</i> —<b>nintzen</b>, <b>zen</b>— y <i>ezagutu</i> y <i>bukatu</i> con <i>ukan</i> —<b>nuen</b>, <b>dut</b>—. Es la misma división de siempre: si hay objeto, <i>ukan</i>.",
+      "cuerpo": "Tener el pasado montado sirve de poco sin cosas que contar con él. Estos son los verbos del tema, y no están elegidos al azar: son los que uno usa mirando hacia atrás.\n\n<b>jaio</b> — nacer\n<b>ezagutu</b> — conocer\n<b>gogoratu</b> — recordar\n<b>ahaztu</b> — olvidar\n<b>hasi</b> — empezar\n<b>bukatu</b> — terminar\n<b>gertatu</b> — ocurrir, pasar\n\nY dos palabras para situarlos:\n\n<b>aspaldi</b> — hace mucho\n<b>berriro</b> — otra vez\n\nCon ellos y lo que acabas de aprender ya se cuenta media vida:\n\n<b>Bilbon jaio nintzen</b> — Nací en Bilbao.\n<b>atzo ezagutu nuen</b> — Lo conocí ayer.\n<b>zer gertatu zen?</b> — ¿Qué pasó?\n<b>lana bukatu dut</b> — He terminado el trabajo.\n\nDos que ya te sonaban de la novena unidad: <i>ahaztu</i> aparece casi siempre como <b>ahaztu zait</b> (se me ha olvidado), con la misma pieza que <i>gustatzen zait</i>. Y para «no me acuerdo» lo corriente es <b>ez naiz gogoratzen</b>.\n\nFíjate en que <i>jaio</i> y <i>gertatu</i> van con <i>izan</i> —<b>nintzen</b>, <b>zen</b>— y <i>ezagutu</i> y <i>bukatu</i> con <i>ukan</i> —<b>nuen</b>, <b>dut</b>—. Es la misma división de siempre: si hay objeto, <i>ukan</i>.",
       "ejemplos": [
         {
-          "eu": "Bilbon jaio nintzen.",
+          "eu": "Bilbon jaio nintzen",
           "es": "Nací en Bilbao.",
           "audio": "unidades/u10/bilbon-jaio-nintzen.mp3"
         },
         {
-          "eu": "Atzo ezagutu nuen.",
+          "eu": "atzo ezagutu nuen",
           "es": "Lo conocí ayer.",
           "audio": "unidades/u10/atzo-ezagutu-nuen.mp3"
         },
         {
-          "eu": "Zer gertatu zen?",
+          "eu": "zer gertatu zen?",
           "es": "¿Qué pasó?",
           "audio": "unidades/u10/zer-gertatu-zen.mp3"
         },
         {
-          "eu": "Ahaztu zait.",
+          "eu": "ahaztu zait",
           "es": "Se me ha olvidado.",
           "audio": "unidades/u10/ahaztu-zait.mp3"
         }
@@ -158,17 +158,17 @@
       "cuerpo": "Los que ya conoces: <b>atzo</b> (ayer), <b>bart</b> (anoche), <b>herenegun</b> (anteayer).\n\nY los nuevos:\n\n<b>lehen</b> — antes\n<b>orduan</b> — entonces\n<b>aspaldi</b> — hace mucho\n<b>iaz</b> — el año pasado\n<b>aurten</b> — este año\n<b>joan den astean</b> — la semana pasada\n<b>joan den hilean</b> — el mes pasado\n<b>duela bi urte</b> — hace dos años\n<b>txikitan</b> — de pequeño\n<b>garai hartan</b> — en aquella época\n\n<b>duela</b> se usa con cualquier medida de tiempo: <i>duela ordubete</i> (hace una hora), <i>duela hilabete</i> (hace un mes), <i>duela urtebete</i> (hace un año).\n\nY como con las horas, lo normal es que el «cuándo» abra la frase.",
       "ejemplos": [
         {
-          "eu": "Joan den astean Bilbon nengoen.",
+          "eu": "joan den astean Bilbon nengoen",
           "es": "La semana pasada estaba en Bilbao.",
           "audio": "unidades/u11/joan-den-astean-bilbon-nengoen.mp3"
         },
         {
-          "eu": "Duela bi urte ezagutu nuen.",
+          "eu": "duela bi urte ezagutu nuen",
           "es": "La conocí hace dos años.",
           "audio": "unidades/u11/duela-bi-urte-ezagutu-nuen.mp3"
         },
         {
-          "eu": "Txikitan euskaraz hitz egiten nuen.",
+          "eu": "txikitan euskaraz hitz egiten nuen",
           "es": "De pequeño hablaba en euskera.",
           "audio": "unidades/u11/txikitan-euskaraz-hitz-egiten-nuen.mp3"
         }
@@ -177,20 +177,20 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "El pasado es uno de los sitios donde más se separan las dos variedades. Si el batua acaba en <b>-en</b>, el bizkaiera tiende a <b>-an</b>:\n\n<b>ni nintzan</b> — batua: nintzen\n<b>zu zinan</b> — zinen\n<b>hura zan</b> — zen\n<b>gu ginan</b> — ginen\n<b>haiek ziran</b> — ziren\n\nAsí que «era de Bilbao» por allí es <b>Bilbokoa zan</b>.\n\n<b>El pasado de tener</b>\nAquí el cambio es mayor todavía:\n\n<b>neban</b> — batua: nuen\n<b>zenduan</b> — zenuen\n<b>eban</b> — zuen\n<b>genduan</b> — genuen\n<b>eben</b> — zuten\n\n<b>Ikusi neban.</b> — Lo vi. (batua: ikusi nuen)\n<b>Esan eban.</b> — Lo dijo. (batua: esan zuen)\n\n<b>Estar</b>\nY <i>zegoen</i> es <b>egoan</b>: <b>Etxean egoan.</b> — Estaba en casa.\n\nEste es el bloque que más cuesta de oído al principio, porque <i>eban</i> y <i>zuen</i> no se parecen en nada. Pero son media docena de formas, y salen constantemente.",
+      "cuerpo": "El pasado es uno de los sitios donde más se separan las dos variedades. Si el batua acaba en <b>-en</b>, el bizkaiera tiende a <b>-an</b>:\n\n<b>ni nintzan</b> — batua: nintzen\n<b>zu zinan</b> — zinen\n<b>hura zan</b> — zen\n<b>gu ginan</b> — ginen\n<b>haiek ziran</b> — ziren\n\nAsí que «era de Bilbao» por allí es <b>Bilbokoa zan</b>.\n\n<b>El pasado de tener</b>\nAquí el cambio es mayor todavía:\n\n<b>neban</b> — batua: nuen\n<b>zenduan</b> — zenuen\n<b>eban</b> — zuen\n<b>genduan</b> — genuen\n<b>eben</b> — zuten\n\n<b>ikusi neban</b> — Lo vi. (batua: ikusi nuen)\n<b>esan eban</b> — Lo dijo. (batua: esan zuen)\n\n<b>Estar</b>\nY <i>zegoen</i> es <b>egoan</b>: <b>Etxean egoan.</b> — Estaba en casa.\n\nEste es el bloque que más cuesta de oído al principio, porque <i>eban</i> y <i>zuen</i> no se parecen en nada. Pero son media docena de formas, y salen constantemente.",
       "ejemplos": [
         {
-          "eu": "Ni Bilbon jaio nintzan.",
+          "eu": "ni Bilbon jaio nintzan",
           "es": "Nací en Bilbao. — batua: nintzen.",
           "audio": "unidades/u11/ni-bilbon-jaio-nintzan.mp3"
         },
         {
-          "eu": "Ikusi neban.",
+          "eu": "ikusi neban",
           "es": "Lo vi. — batua: ikusi nuen.",
           "audio": "unidades/u11/ikusi-neban.mp3"
         },
         {
-          "eu": "Etxean egoan.",
+          "eu": "etxean egoan",
           "es": "Estaba en casa. — batua: etxean zegoen.",
           "audio": "unidades/u11/etxean-egoan.mp3"
         }

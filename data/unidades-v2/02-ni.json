@@ -59,7 +59,7 @@
       "cuerpo": "En castellano tienes que decidir constantemente entre tutear o tratar de usted. En euskera batua, no: <b>zu</b> cubre las dos cosas.\n\nHablas con tu mejor amigo: <b>zu</b>.\nHablas con el médico al que ves por primera vez: <b>zu</b>.\n\nUna preocupación menos.\n\nHay una forma aún más familiar, <b>hi</b>, que se usa entre amigos muy cercanos, dentro de la familia o con niños. Tiene la particularidad de <b>llevar su propia conjugación</b>, distinta de la que comparten los demás, y por eso se aprende bastante más tarde. De momento reconócela si la oyes y sigue con <i>zu</i> para todo.",
       "ejemplos": [
         {
-          "eu": "Zu ondo zaude?",
+          "eu": "zu ondo zaude?",
           "es": "¿Estás bien? — vale para cualquiera",
           "audio": "unidades/u2/zu-ondo-zaude.mp3"
         },
@@ -115,7 +115,7 @@
       "cuerpo": "El euskera tiene una segunda serie de pronombres para cuando quieres subrayar quién:\n\n<b>neu</b> — yo mismo, yo misma\n<b>zeu</b> — tú misma, tú mismo\n<b>geu</b> — nosotras mismas, nosotros mismos\n<b>zeuek</b> — vosotros mismos, vosotras mismas\n\nEs la diferencia entre «yo lo hice» y «lo hice <i>yo</i>». Los posesivos correspondientes son <b>neure, zeure, geure</b>.\n\nSon muy frecuentes en el habla, sobre todo en Bizkaia. No hace falta que los uses todavía, pero conviene que no te suenen a chino cuando aparezcan.",
       "ejemplos": [
         {
-          "eu": "Neu naiz.",
+          "eu": "neu naiz",
           "es": "Soy yo. (con énfasis)",
           "audio": "unidades/u2/neu-naiz.mp3"
         },
@@ -155,7 +155,7 @@
       "cuerpo": "Los pronombres son terreno muy dialectal, y en Bizkaia hay dos cosas que notarás enseguida.\n\n<b>Las formas reforzadas son las normales</b>\nDonde el batua dice <i>ni</i>, en Bizkaia se oye <b>neu</b> con muchísima frecuencia, sin necesidad de énfasis especial. Lo mismo con <b>zeu, geu, zeuek</b>. Y los posesivos <b>neure, zeure, geure</b> compiten de tú a tú con <i>nire, zure, gure</i>.\n\n<b>«-gaz» en lugar de «-rekin»</b>\nPara decir «conmigo, contigo», el batua usa <i>-rekin</i>: <i>nirekin, zurekin</i>. El bizkaiera usa <b>-gaz</b>: <b>nigaz, zugaz</b>. Y para «con quién», donde el batua pregunta <i>norekin?</i>, en Bilbao se dice <b>nogaz?</b>",
       "ejemplos": [
         {
-          "eu": "Neu naz.",
+          "eu": "neu naz",
           "es": "Soy yo. (bizkaiera) — batua: Ni naiz.",
           "audio": "unidades/u2/neu-naz.mp3"
         },
@@ -165,7 +165,7 @@
           "audio": "unidades/u2/nigaz.mp3"
         },
         {
-          "eu": "Nogaz zagoz?",
+          "eu": "nogaz zagoz?",
           "es": "¿Con quién estás? — batua: Norekin zaude?",
           "audio": "unidades/u2/nogaz-zagoz.mp3"
         }
@@ -178,17 +178,17 @@
       "cuerpo": "Ya conoces los pronombres, así que este verbo va a costarte mucho menos. Es el que más vas a usar en toda tu vida en euskera:\n\n<b>ni naiz</b> — yo soy\n<b>zu zara</b> — tú eres\n<b>hura da</b> — él/ella es\n<b>gu gara</b> — nosotros somos · nosotras somos\n<b>zuek zarete</b> — vosotros sois · vosotras sois\n<b>haiek dira</b> — ellos son · ellas son\n\nSí, cada forma vale para los dos géneros. Es lo que viste hace un momento: el euskera no lo marca en ningún sitio. De aquí en adelante no lo repetiremos cada vez —quedaría ilegible— pero <b>da igual siempre</b>.\n\nFíjate en el patrón: las formas de <i>ni</i> y <i>gu</i> empiezan por <b>n-</b> y <b>g-</b>, igual que los pronombres. Las de <i>zu</i> y <i>zuek</i> por <b>z-</b>. Las de tercera persona por <b>d-</b>. No es casualidad: el verbo lleva dentro la marca de la persona.\n\nY como ya sabes, el pronombre suele omitirse: <i>Ane naiz</i> ya significa «soy Ane».",
       "ejemplos": [
         {
-          "eu": "Ni Ane naiz.",
+          "eu": "ni Ane naiz",
           "es": "Yo soy Ane.",
           "audio": "unidades/u4/ni-ane-naiz.mp3"
         },
         {
-          "eu": "Zu irakaslea zara.",
+          "eu": "zu irakaslea zara",
           "es": "Tú eres profesor.",
           "audio": "unidades/u4/zu-irakaslea-zara.mp3"
         },
         {
-          "eu": "Hura medikua da.",
+          "eu": "hura medikua da",
           "es": "Él/ella es médico.",
           "audio": "unidades/u4/hura-medikua-da.mp3"
         }
@@ -200,12 +200,12 @@
       "cuerpo": "En euskera el orden básico es <b>Sujeto – Objeto – Verbo</b>. El verbo cierra la frase casi siempre.\n\nCastellano: <i>Yo <b>soy</b> profesor.</i>\nEuskera: <i>Ni irakaslea <b>naiz</b>.</i>\n\nEs el cambio mental más grande al empezar. Piensa la frase entera antes de hablar y coloca el verbo al final.\n\nLa excepción que ya conoces: en las preguntas, la palabra interrogativa se pega delante del verbo. Y el verbo sigue estando al final. <i>Nongoa <b>zara</b>?</i>",
       "ejemplos": [
         {
-          "eu": "Ni Bilbokoa naiz.",
+          "eu": "ni Bilbokoa naiz",
           "es": "Yo soy de Bilbao.",
           "audio": "unidades/u4/ni-bilbokoa-naiz.mp3"
         },
         {
-          "eu": "Gu ikasleak gara.",
+          "eu": "gu ikasleak gara",
           "es": "Nosotros somos estudiantes.",
           "audio": "unidades/u4/gu-ikasleak-gara.mp3"
         }
@@ -214,7 +214,7 @@
     },
     {
       "titulo": "El artículo va pegado al final: -a",
-      "cuerpo": "Ya lo has visto en los posesivos, pero ahora toca decirlo del todo. El euskera no tiene «el» ni «la» delante. Añade <b>-a</b> al final de la palabra:\n\n<b>irakasle</b> (profesor) → <b>irakaslea</b> (el profesor)\n<b>etxe</b> (casa) → <b>etxea</b> (la casa)\n<b>mediku</b> (médico) → <b>medikua</b> (el médico)\n\nEl plural es <b>-ak</b>:\n\n<i>irakasle</i> → <b>irakaslea</b> (el profesor) → <b>irakasleak</b> (los profesores)\n<i>lagun</i> → <b>laguna</b> (el amigo) → <b>lagunak</b> (los amigos)\n\n<b>Una consonante que decide el número</b>\n\nEntre <i>irakaslea</i> y <i>irakasleak</i> hay una <b>-k</b> de diferencia, y esa -k es toda la información del plural. Es poca cosa para tanto trabajo, y por dos motivos se escapa con facilidad:\n\napenas se oye al final de una palabra hablada rápido, y\nel verbo ya te ha dicho si es uno o son varios —<i>da</i> frente a <i>dira</i>—, así que no la necesitas para entender.\n\nJusto por eso hay que fijarse en ella a propósito. La regla es que <b>el artículo y el verbo tienen que ir de acuerdo</b>:\n\n<b>Ni ikaslea naiz.</b> — Soy estudiante. (uno, y <i>naiz</i>)\n<b>Gu ikasleak gara.</b> — Somos estudiantes. (varios, y <i>gara</i>)\n\nSi el verbo va en plural y el nombre en singular, algo falla. Y al revés.\n\nSi la palabra ya termina en -a, no se dobla: <i>neska</i> (chica) → <i>neska</i> (la chica).\n\nOjo con esto: a diferencia del castellano, en euskera las profesiones <b>sí</b> llevan artículo. Se dice <i>Ni irakasle<b>a</b> naiz</i>, no «Ni irakasle naiz».\n\nY una curiosidad, ya que estamos con esa <b>-a</b>. El euskera tiene variantes muy locales, de pueblo a pueblo. En <b>Gernika</b> y por zonas de Busturialdea, esa <i>-a</i> final se oye a menudo como <b>-ie</b>: donde aquí escribimos <i>etxea</i>, allí suena <b>etxie</b>.\n\nNo hace falta que lo aprendas ni lo uses —esto es batua, y <i>etxea</i> es lo correcto—, pero si algún día lo oyes, ya sabes que no te estás equivocando de palabra.",
+      "cuerpo": "Ya lo has visto en los posesivos, pero ahora toca decirlo del todo. El euskera no tiene «el» ni «la» delante. Añade <b>-a</b> al final de la palabra:\n\n<b>irakasle</b> (profesor) → <b>irakaslea</b> (el profesor)\n<b>etxe</b> (casa) → <b>etxea</b> (la casa)\n<b>mediku</b> (médico) → <b>medikua</b> (el médico)\n\nEl plural es <b>-ak</b>:\n\n<i>irakasle</i> → <b>irakaslea</b> (el profesor) → <b>irakasleak</b> (los profesores)\n<i>lagun</i> → <b>laguna</b> (el amigo) → <b>lagunak</b> (los amigos)\n\n<b>Una consonante que decide el número</b>\n\nEntre <i>irakaslea</i> y <i>irakasleak</i> hay una <b>-k</b> de diferencia, y esa -k es toda la información del plural. Es poca cosa para tanto trabajo, y por dos motivos se escapa con facilidad:\n\napenas se oye al final de una palabra hablada rápido, y\nel verbo ya te ha dicho si es uno o son varios —<i>da</i> frente a <i>dira</i>—, así que no la necesitas para entender.\n\nJusto por eso hay que fijarse en ella a propósito. La regla es que <b>el artículo y el verbo tienen que ir de acuerdo</b>:\n\n<b>ni ikaslea naiz</b> — Soy estudiante. (uno, y <i>naiz</i>)\n<b>gu ikasleak gara</b> — Somos estudiantes. (varios, y <i>gara</i>)\n\nSi el verbo va en plural y el nombre en singular, algo falla. Y al revés.\n\nSi la palabra ya termina en -a, no se dobla: <i>neska</i> (chica) → <i>neska</i> (la chica).\n\nOjo con esto: a diferencia del castellano, en euskera las profesiones <b>sí</b> llevan artículo. Se dice <i>Ni irakasle<b>a</b> naiz</i>, no «Ni irakasle naiz».\n\nY una curiosidad, ya que estamos con esa <b>-a</b>. El euskera tiene variantes muy locales, de pueblo a pueblo. En <b>Gernika</b> y por zonas de Busturialdea, esa <i>-a</i> final se oye a menudo como <b>-ie</b>: donde aquí escribimos <i>etxea</i>, allí suena <b>etxie</b>.\n\nNo hace falta que lo aprendas ni lo uses —esto es batua, y <i>etxea</i> es lo correcto—, pero si algún día lo oyes, ya sabes que no te estás equivocando de palabra.",
       "ejemplos": [
         {
           "eu": "ikaslea",
@@ -227,7 +227,7 @@
           "audio": "unidades/u4/ikasleak.mp3"
         },
         {
-          "eu": "Ni sukaldaria naiz.",
+          "eu": "ni sukaldaria naiz",
           "es": "Soy cocinero.",
           "audio": "unidades/u4/ni-sukaldaria-naiz.mp3"
         }
@@ -239,17 +239,17 @@
       "cuerpo": "En la unidad de preguntas viste que <i>Nongoa?</i> se responde con <b>-koa</b>. Aquí está el detalle.\n\nSe añade <b>-ko</b> al nombre del sitio, y luego el artículo <b>-a</b>:\n\n<b>Bilbo</b> → Bilbo<b>koa</b> naiz (soy de Bilbao)\n<b>Donostia</b> → Donostia<b>koa</b> naiz\n<b>Gernika</b> → Gernika<b>koa</b> naiz\n\nSi el nombre acaba en <b>-n</b> o <b>-l</b>, el sufijo se convierte en <b>-go</b>:\n\n<b>Madril</b> → Madril<b>goa</b> naiz\n<b>Jaen</b> → Jaen<b>goa</b> naiz\n\nEs solo un ajuste de pronunciación: «Madrilkoa» sería incómodo de decir.",
       "ejemplos": [
         {
-          "eu": "Nongoa zara?",
+          "eu": "nongoa zara?",
           "es": "¿De dónde eres?",
           "audio": "unidades/u4/nongoa-zara.mp3"
         },
         {
-          "eu": "Bilbokoa naiz.",
+          "eu": "Bilbokoa naiz",
           "es": "Soy de Bilbao.",
           "audio": "unidades/u4/bilbokoa-naiz.mp3"
         },
         {
-          "eu": "Madrilgoa naiz.",
+          "eu": "Madrilgoa naiz",
           "es": "Soy de Madrid.",
           "audio": "unidades/u4/madrilgoa-naiz.mp3"
         }
@@ -258,15 +258,15 @@
     },
     {
       "titulo": "Preguntar el nombre",
-      "cuerpo": "Hay dos formas habituales, las dos correctas:\n\n<b>Nola duzu izena?</b> — literalmente «¿cómo tienes nombre?»\nRespuesta: <b>Ane dut izena.</b>\n\n<b>Nor zara zu?</b> — «¿quién eres tú?»\nRespuesta: <b>Ni Ane naiz.</b>\n\nLa primera es la más natural al presentarse. Lleva el verbo <i>ukan</i> (tener), que es el de la próxima unidad; de momento apréndetela entera.",
+      "cuerpo": "Hay dos formas habituales, las dos correctas:\n\n<b>nola duzu izena?</b> — literalmente «¿cómo tienes nombre?»\nRespuesta: <b>Ane dut izena.</b>\n\n<b>nor zara zu?</b> — «¿quién eres tú?»\nRespuesta: <b>Ni Ane naiz.</b>\n\nLa primera es la más natural al presentarse. Lleva el verbo <i>ukan</i> (tener), que es el de la próxima unidad; de momento apréndetela entera.",
       "ejemplos": [
         {
-          "eu": "Nola duzu izena?",
+          "eu": "nola duzu izena?",
           "es": "¿Cómo te llamas?",
           "audio": "unidades/u4/nola-duzu-izena.mp3"
         },
         {
-          "eu": "Mikel dut izena.",
+          "eu": "Mikel dut izena",
           "es": "Me llamo Mikel.",
           "audio": "unidades/u4/mikel-dut-izena.mp3"
         }
@@ -275,15 +275,15 @@
     },
     {
       "titulo": "«ere» significa también, y va detrás",
-      "cuerpo": "Una palabra pequeña muy útil. <b>ere</b> es «también», y como casi todo en euskera, va <b>detrás</b> de la palabra a la que acompaña:\n\n<b>Ni ere ikaslea naiz.</b> — Yo también soy estudiante.\n<b>Hura ere Bilbokoa da.</b> — Él también es de Bilbao.\n\nFíjate en que <i>ere</i> se coloca justo después de lo que quieres subrayar. Si lo mueves, cambia el sentido, igual que en castellano con «también».",
+      "cuerpo": "Una palabra pequeña muy útil. <b>ere</b> es «también», y como casi todo en euskera, va <b>detrás</b> de la palabra a la que acompaña:\n\n<b>ni ere ikaslea naiz</b> — Yo también soy estudiante.\n<b>hura ere Bilbokoa da</b> — Él también es de Bilbao.\n\nFíjate en que <i>ere</i> se coloca justo después de lo que quieres subrayar. Si lo mueves, cambia el sentido, igual que en castellano con «también».",
       "ejemplos": [
         {
-          "eu": "Ni ere euskalduna naiz.",
+          "eu": "ni ere euskalduna naiz",
           "es": "Yo también hablo euskera.",
           "audio": "unidades/u4/ni-ere-euskalduna-naiz.mp3"
         },
         {
-          "eu": "Gu ere lagunak gara.",
+          "eu": "gu ere lagunak gara",
           "es": "Nosotros también somos amigos.",
           "audio": "unidades/u4/gu-ere-lagunak-gara.mp3"
         }
@@ -295,17 +295,17 @@
       "cuerpo": "Con <i>izan</i> y una profesión ya puedes presentarte entero. Estas son las del tema:\n\n<b>irakaslea</b> — el/la profesor/a\n<b>ikaslea</b> — el/la estudiante\n<b>medikua</b> — el/la médico/a\n<b>sukaldaria</b> — el/la cocinero/a\n<b>langilea</b> — el/la trabajador/a\n<b>idazlea</b> — el/la escritor/a\n\nFíjate en que <b>ninguna tiene género</b>: <i>irakaslea</i> vale para profesor y para profesora. El euskera no marca masculino ni femenino en ningún sitio, y esto se nota justo aquí.\n\nY hay un patrón que se repite en cuatro de ellas: <b>-le</b> o <b>-la</b>, la pieza de «quien hace eso».\n\n<i>irakatsi</i> (enseñar) → <b>irakaslea</b>, quien enseña\n<i>ikasi</i> (estudiar) → <b>ikaslea</b>, quien estudia\n<i>idatzi</i> (escribir) → <b>idazlea</b>, quien escribe\n<i>lan</i> (trabajo) → <b>langilea</b>, quien trabaja\n\nLos verbos que hay debajo llegan en la séptima unidad, pero la pieza la reconoces desde ya.\n\n<b>Dos palabras más del tema</b>\n\n<b>herria</b> — el pueblo. La misma que está en <i>Euskal Herria</i>, desde la primera unidad.\n<b>erdalduna</b> — quien no habla euskera. Es el contrario de <i>euskalduna</i>: <i>erdara</i> es cualquier lengua que no sea el euskera.\n<b>baina</b> — pero. Pequeña y utilísima: <i>Ni ikaslea naiz, baina zu irakaslea zara.</i>",
       "ejemplos": [
         {
-          "eu": "Ni irakaslea naiz.",
+          "eu": "ni irakaslea naiz",
           "es": "Soy profesor. / Soy profesora.",
           "audio": "unidades/u4/ni-irakaslea-naiz.mp3"
         },
         {
-          "eu": "Zu medikua zara, baina ni ikaslea naiz.",
+          "eu": "zu medikua zara, baina ni ikaslea naiz",
           "es": "Tú eres médica, pero yo soy estudiante.",
           "audio": "unidades/u2/zu-medikua-zara-baina-ni-ikaslea-naiz.mp3"
         },
         {
-          "eu": "Nire herria txikia da.",
+          "eu": "nire herria txikia da",
           "es": "Mi pueblo es pequeño.",
           "audio": "unidades/u2/nire-herria-txikia-da.mp3"
         }
@@ -317,12 +317,12 @@
       "cuerpo": "El bizkaiera se aleja bastante del batua en el verbo «izan», y esto es justo lo que vas a reconocer en Bilbao.\n\n<b>naiz → naz</b>\nEl verbo «izan» cambia poco, pero lo que cambia se nota: <i>ni naz</i> en lugar de <i>ni naiz</i>, y <i>zuek zarie</i> en lugar de <i>zuek zarete</i>. Las demás formas (zara, da, gara, dira) son iguales.\n\n<b>Las palabras en -ción</b>\nEl castellano <i>-ción</i> da <b>-ziño</b>: <i>erlijiño</i> (religión), <i>estaziño</i> (estación). En batua serían <i>erlijio</i> y <i>estazio</i>.",
       "ejemplos": [
         {
-          "eu": "Ni Bilbokoa naz.",
+          "eu": "ni Bilbokoa naz",
           "es": "Soy de Bilbao. (bizkaiera) — batua: naiz",
           "audio": "unidades/u4/ni-bilbokoa-naz.mp3"
         },
         {
-          "eu": "Zuek ikasleak zarie.",
+          "eu": "zuek ikasleak zarie",
           "es": "Vosotros sois estudiantes. — batua: zarete",
           "audio": "unidades/u4/zuek-ikasleak-zarie.mp3"
         }

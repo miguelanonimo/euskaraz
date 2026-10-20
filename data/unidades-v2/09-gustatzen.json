@@ -40,20 +40,20 @@
   "gramatica": [
     {
       "titulo": "Aquí es donde el «gustatzen» se usa de verdad",
-      "cuerpo": "El mecanismo del <i>gustatzen zait</i> lo montaste al principio de la unidad. Este es su terreno natural: cuando alguien te pregunta qué te gusta, la respuesta casi siempre está en esta lista.\n\n<b>Futbola gustatzen zait.</b> — Me gusta el fútbol.\n<b>Musika asko gustatzen zait.</b> — Me gusta mucho la música.\n<b>Zinema ez zait gustatzen.</b> — No me gusta el cine.\n<b>Antzerkia asko gustatzen zait.</b> — Me gusta mucho el teatro.\n\nY si lo que gusta va en plural, ya sabes lo que pasa:\n\n<b>Liburuak gustatzen zaizkit.</b> — Me gustan los libros.\n\nOjo con el orden, que <b>no</b> coincide con el castellano: aquí lo que gusta va <b>delante</b> —<i>futbola gustatzen zait</i>— y en castellano va detrás —«me gusta <i>el fútbol</i>»—.\n\nLo que sí coincide es el reparto de papeles, que es lo llamativo de las dos lenguas: <b>el fútbol es el sujeto</b> tanto en euskera como en castellano, y tú eres a quien le pasa algo. Por eso decimos «me gusta<b>n</b> los libros» y no «me gusto los libros». El mecanismo es el mismo; el orden, del revés.\n\nCon <i>asko</i> (mucho), <i>pixka bat</i> (un poco) y <i>batere ez</i> (nada en absoluto), que también tienes del principio de la unidad, ya puedes contestar entero:\n\n<b>—Kirola gustatzen zaizu?</b> — ¿Te gusta el deporte?\n<b>—Bai, asko.</b> — Sí, mucho.",
+      "cuerpo": "El mecanismo del <i>gustatzen zait</i> lo montaste al principio de la unidad. Este es su terreno natural: cuando alguien te pregunta qué te gusta, la respuesta casi siempre está en esta lista.\n\n<b>futbola gustatzen zait</b> — Me gusta el fútbol.\n<b>musika asko gustatzen zait</b> — Me gusta mucho la música.\n<b>zinema ez zait gustatzen</b> — No me gusta el cine.\n<b>antzerkia asko gustatzen zait</b> — Me gusta mucho el teatro.\n\nY si lo que gusta va en plural, ya sabes lo que pasa:\n\n<b>liburuak gustatzen zaizkit</b> — Me gustan los libros.\n\nOjo con el orden, que <b>no</b> coincide con el castellano: aquí lo que gusta va <b>delante</b> —<i>futbola gustatzen zait</i>— y en castellano va detrás —«me gusta <i>el fútbol</i>»—.\n\nLo que sí coincide es el reparto de papeles, que es lo llamativo de las dos lenguas: <b>el fútbol es el sujeto</b> tanto en euskera como en castellano, y tú eres a quien le pasa algo. Por eso decimos «me gusta<b>n</b> los libros» y no «me gusto los libros». El mecanismo es el mismo; el orden, del revés.\n\nCon <i>asko</i> (mucho), <i>pixka bat</i> (un poco) y <i>batere ez</i> (nada en absoluto), que también tienes del principio de la unidad, ya puedes contestar entero:\n\n<b>—kirola gustatzen zaizu?</b> — ¿Te gusta el deporte?\n<b>—bai, asko</b> — Sí, mucho.",
       "ejemplos": [
         {
-          "eu": "Futbola gustatzen zait.",
+          "eu": "futbola gustatzen zait",
           "es": "Me gusta el fútbol.",
           "audio": "unidades/u9/futbola-gustatzen-zait.mp3"
         },
         {
-          "eu": "Dantza ez zait gustatzen.",
+          "eu": "dantza ez zait gustatzen",
           "es": "No me gusta bailar.",
           "audio": "unidades/u9/dantza-ez-zait-gustatzen.mp3"
         },
         {
-          "eu": "Liburuak gustatzen zaizkit.",
+          "eu": "liburuak gustatzen zaizkit",
           "es": "Me gustan los libros.",
           "audio": "unidades/u10/liburuak-gustatzen-zaizkit.mp3"
         }
@@ -65,12 +65,12 @@
       "cuerpo": "De todo el vocabulario de este tema, <b>pilota</b> —la pelota— es el que más cosas explica.\n\nLa pelota vasca se juega en un <b>pilotalekua</b> —el frontón—, y la palabra se arma igual que las de la unidad anterior: <i>pilota</i> + <i>leku</i> (sitio) + <b>-a</b>. El sitio de la pelota.\n\nVas a oír también <b>frontoia</b>, tomado del castellano. Las dos valen y las dos están en el diccionario; <i>pilotalekua</i> es la formada con piezas vascas, y es la que los diccionarios ponen primero.\n\nLo interesante es que <b>no es solo una cancha</b>. El frontón suele estar en el centro del pueblo, junto a la iglesia y al ayuntamiento, y ha hecho de plaza mayor: sitio de reunión, de fiestas y de mercado. El Gobierno Vasco lo llama «el ágora vasca», y la comparación es literal.\n\nAsí que cuando alguien te diga que ha quedado <i>pilotalekuan</i>, puede que no vaya a jugar a nada.",
       "ejemplos": [
         {
-          "eu": "Pilota gustatzen zait.",
+          "eu": "pilota gustatzen zait",
           "es": "Me gusta la pelota.",
           "audio": "unidades/u9/pilota-gustatzen-zait.mp3"
         },
         {
-          "eu": "Pilotalekuan gaude.",
+          "eu": "pilotalekuan gaude",
           "es": "Estamos en el frontón.",
           "audio": "unidades/u9/pilotalekuan-gaude.mp3"
         }
@@ -123,15 +123,15 @@
     },
     {
       "titulo": "Comprar y vender, que ya los tienes",
-      "cuerpo": "Los verbos de esta unidad se estrenan de verdad con este vocabulario. <b>erosi</b> (comprar), <b>saldu</b> (vender) y <b>nahi dut</b> (quiero) son justo lo que hace falta en una tienda o en un mercado.\n\n<b>Alkandora zuria erosi dut.</b> — He comprado una camisa blanca.\n<b>Zukua edan nahi dut.</b> — Quiero beber zumo.\n\nFíjate en que el color va detrás y con el artículo, exactamente como viste en la 5.3: <i>alkandora zuria</i>, no «zuri alkandora».",
+      "cuerpo": "Los verbos de esta unidad se estrenan de verdad con este vocabulario. <b>erosi</b> (comprar), <b>saldu</b> (vender) y <b>nahi dut</b> (quiero) son justo lo que hace falta en una tienda o en un mercado.\n\n<b>alkandora zuria erosi dut</b> — He comprado una camisa blanca.\n<b>zukua edan nahi dut</b> — Quiero beber zumo.\n\nFíjate en que el color va detrás y con el artículo, exactamente como viste en la 5.3: <i>alkandora zuria</i>, no «zuri alkandora».",
       "ejemplos": [
         {
-          "eu": "Alkandora zuria erosi dut.",
+          "eu": "alkandora zuria erosi dut",
           "es": "He comprado una camisa blanca.",
           "audio": "unidades/u9/alkandora-zuria-erosi-dut.mp3"
         },
         {
-          "eu": "Zukua edan nahi dut.",
+          "eu": "zukua edan nahi dut",
           "es": "Quiero beber zumo.",
           "audio": "unidades/u9/zukua-edan-nahi-dut.mp3"
         }
@@ -143,17 +143,17 @@
       "cuerpo": "En castellano no dices «yo gusto el euskera»: dices <b>me gusta el euskera</b>. El que gusta es el euskera, y tú eres el «me».\n\nEl euskera hace exactamente lo mismo:\n\n<b>Niri euskara gustatzen zait.</b>\n\n<i>euskara</i> es el sujeto, <i>niri</i> es «a mí», y <b>zait</b> es un auxiliar nuevo que junta las dos cosas: «(él) a mí».\n\nLa serie entera:\n\n<b>niri … zait</b> — me\n<b>zuri … zaizu</b> — te\n<b>hari … zaio</b> — le\n<b>guri … zaigu</b> — nos\n<b>zuei … zaizue</b> — os\n<b>haiei … zaie</b> — les\n\nY como en castellano, el <i>niri</i> se puede callar cuando está claro: <b>Euskara gustatzen zait.</b>",
       "ejemplos": [
         {
-          "eu": "Niri kirola gustatzen zait.",
+          "eu": "niri kirola gustatzen zait",
           "es": "A mí me gusta el deporte.",
           "audio": "unidades/u10/niri-kirola-gustatzen-zait.mp3"
         },
         {
-          "eu": "Zer gustatzen zaizu?",
+          "eu": "zer gustatzen zaizu?",
           "es": "¿Qué te gusta?",
           "audio": "unidades/u10/zer-gustatzen-zaizu.mp3"
         },
         {
-          "eu": "Hari zinema gustatzen zaio.",
+          "eu": "hari zinema gustatzen zaio",
           "es": "A él le gusta el cine.",
           "audio": "unidades/u10/hari-zinema-gustatzen-zaio.mp3"
         }
@@ -162,20 +162,20 @@
     },
     {
       "titulo": "Si lo que gusta va en plural: zaizkit",
-      "cuerpo": "Igual que <i>dut</i> se convertía en <i>ditut</i>, aquí <b>zait</b> se convierte en <b>zaizkit</b>:\n\n<b>Sagarra gustatzen zait.</b> — Me gusta la manzana.\n<b>Sagarrak gustatzen zaizkit.</b> — Me gustan las manzanas.\n\nLa serie:\n\n<b>zaizkit</b> — me gustan\n<b>zaizkizu</b> — te gustan\n<b>zaizkio</b> — le gustan\n<b>zaizkigu</b> — nos gustan\n<b>zaizkizue</b> — os gustan\n<b>zaizkie</b> — les gustan\n\nEs el mismo <b>-zki-</b> que verás en muchos otros sitios: la marca de que hay varios.",
+      "cuerpo": "Igual que <i>dut</i> se convertía en <i>ditut</i>, aquí <b>zait</b> se convierte en <b>zaizkit</b>:\n\n<b>sagarra gustatzen zait</b> — Me gusta la manzana.\n<b>sagarrak gustatzen zaizkit</b> — Me gustan las manzanas.\n\nLa serie:\n\n<b>zaizkit</b> — me gustan\n<b>zaizkizu</b> — te gustan\n<b>zaizkio</b> — le gustan\n<b>zaizkigu</b> — nos gustan\n<b>zaizkizue</b> — os gustan\n<b>zaizkie</b> — les gustan\n\nEs el mismo <b>-zki-</b> que verás en muchos otros sitios: la marca de que hay varios.",
       "ejemplos": [
         {
-          "eu": "Liburuak gustatzen zaizkit.",
+          "eu": "liburuak gustatzen zaizkit",
           "es": "Me gustan los libros.",
           "audio": "unidades/u10/liburuak-gustatzen-zaizkit.mp3"
         },
         {
-          "eu": "Barazkiak ez zaizkio gustatzen.",
+          "eu": "barazkiak ez zaizkio gustatzen",
           "es": "A él no le gustan las verduras.",
           "audio": "unidades/u10/barazkiak-ez-zaizkio-gustatzen.mp3"
         },
         {
-          "eu": "Zer gustatzen zaizkizu?",
+          "eu": "zer gustatzen zaizkizu?",
           "es": "¿Qué cosas te gustan?",
           "audio": "unidades/u10/zer-gustatzen-zaizkizu.mp3"
         }
@@ -184,20 +184,20 @@
     },
     {
       "titulo": "Cuánto, y cómo negarlo",
-      "cuerpo": "La cantidad va detrás del sujeto:\n\n<b>Kirola asko gustatzen zait.</b> — Me gusta mucho el deporte.\n<b>Zinema pixka bat gustatzen zait.</b> — Me gusta un poco el cine.\n<b>Kirola gutxi gustatzen zait.</b> — Me gusta poco el deporte.\n\nLa escala entera, de más a menos: <b>asko</b> (mucho), <b>pixka bat</b> (un poco), <b>gutxi</b> (poco), <b>batere ez</b> (nada en absoluto).\n\nY para negar, el <b>ez</b> con su salto de siempre. El auxiliar se coloca justo detrás:\n\n<b>Ez zait futbola gustatzen.</b> — No me gusta el fútbol.\n<b>Ez zaizkit barazkiak gustatzen.</b> — No me gustan las verduras.\n\nPara «nada en absoluto»:\n<b>Ez zait batere gustatzen.</b>\n\nY una respuesta corta que oirás mucho: <b>Niri ere bai.</b> (a mí también) y <b>Niri ez.</b> (a mí no).",
+      "cuerpo": "La cantidad va detrás del sujeto:\n\n<b>kirola asko gustatzen zait</b> — Me gusta mucho el deporte.\n<b>zinema pixka bat gustatzen zait</b> — Me gusta un poco el cine.\n<b>kirola gutxi gustatzen zait</b> — Me gusta poco el deporte.\n\nLa escala entera, de más a menos: <b>asko</b> (mucho), <b>pixka bat</b> (un poco), <b>gutxi</b> (poco), <b>batere ez</b> (nada en absoluto).\n\nY para negar, el <b>ez</b> con su salto de siempre. El auxiliar se coloca justo detrás:\n\n<b>ez zait futbola gustatzen</b> — No me gusta el fútbol.\n<b>ez zaizkit barazkiak gustatzen</b> — No me gustan las verduras.\n\nPara «nada en absoluto»:\n<b>Ez zait batere gustatzen.</b>\n\nY una respuesta corta que oirás mucho: <b>Niri ere bai.</b> (a mí también) y <b>Niri ez.</b> (a mí no).",
       "ejemplos": [
         {
-          "eu": "Ez zait euria gustatzen.",
+          "eu": "ez zait euria gustatzen",
           "es": "No me gusta la lluvia.",
           "audio": "unidades/u10/ez-zait-euria-gustatzen.mp3"
         },
         {
-          "eu": "Eguzkia asko gustatzen zait.",
+          "eu": "eguzkia asko gustatzen zait",
           "es": "Me gusta mucho el sol.",
           "audio": "unidades/u10/eguzkia-asko-gustatzen-zait.mp3"
         },
         {
-          "eu": "Niri ere bai.",
+          "eu": "niri ere bai",
           "es": "A mí también.",
           "audio": "unidades/u10/niri-ere-bai.mp3"
         }
@@ -206,20 +206,20 @@
     },
     {
       "titulo": "«Gustatu», y de qué suele gustar uno",
-      "cuerpo": "La forma de diccionario es <b>gustatu</b> (gustar), aunque en la práctica siempre la verás trabajando: <i>gustatzen zait</i>.\n\nY estas cuatro son las que más salen al hablar de gustos, porque sirven para cualquier cosa:\n\n<b>janaria</b> — la comida (en general)\n<b>edaria</b> — la bebida\n<b>gauza</b> — la cosa\n<b>guztia</b> — todo\n\n<i>Janaria</i> y <i>edaria</i> se explican solas si te fijas: llevan dentro <b>jan</b> (comer) y <b>edan</b> (beber), los dos verbos que llegan en la séptima unidad. Lo comido y lo bebido.\n\n<b>Gauza</b> es la palabra comodín para lo que no sabes nombrar todavía —y al principio son muchas—:\n\n<b>Gauza hau gustatzen zait.</b> — Me gusta esta cosa.\n\nY <b>guztia</b> es «todo», que te saca de cualquier apuro cuando no quieres detallar:\n\n<b>Guztia gustatzen zait.</b> — Me gusta todo.\n\nY hay otra palabra para exactamente lo mismo, que conviene conocer desde ya:\n\n<b>dena</b> — todo\n\nLas dos son correctas, y aquí son intercambiables:\n\n<b>Dena gustatzen zait.</b> — Me gusta todo.\n\nLa diferencia es de costumbre, no de corrección: <b>guzti</b> suele ir pegado a un nombre —<i>egun guztia</i> (todo el día)—, mientras que <b>dena</b> va suelto. Así que cuando «todo» va solo, como aquí, lo que más oirás es <b>dena</b>. En la última unidad volverá en plural: <b>denak</b>, «todos».",
+      "cuerpo": "La forma de diccionario es <b>gustatu</b> (gustar), aunque en la práctica siempre la verás trabajando: <i>gustatzen zait</i>.\n\nY estas cuatro son las que más salen al hablar de gustos, porque sirven para cualquier cosa:\n\n<b>janaria</b> — la comida (en general)\n<b>edaria</b> — la bebida\n<b>gauza</b> — la cosa\n<b>guztia</b> — todo\n\n<i>Janaria</i> y <i>edaria</i> se explican solas si te fijas: llevan dentro <b>jan</b> (comer) y <b>edan</b> (beber), los dos verbos que llegan en la séptima unidad. Lo comido y lo bebido.\n\n<b>Gauza</b> es la palabra comodín para lo que no sabes nombrar todavía —y al principio son muchas—:\n\n<b>gauza hau gustatzen zait</b> — Me gusta esta cosa.\n\nY <b>guztia</b> es «todo», que te saca de cualquier apuro cuando no quieres detallar:\n\n<b>guztia gustatzen zait</b> — Me gusta todo.\n\nY hay otra palabra para exactamente lo mismo, que conviene conocer desde ya:\n\n<b>dena</b> — todo\n\nLas dos son correctas, y aquí son intercambiables:\n\n<b>dena gustatzen zait</b> — Me gusta todo.\n\nLa diferencia es de costumbre, no de corrección: <b>guzti</b> suele ir pegado a un nombre —<i>egun guztia</i> (todo el día)—, mientras que <b>dena</b> va suelto. Así que cuando «todo» va solo, como aquí, lo que más oirás es <b>dena</b>. En la última unidad volverá en plural: <b>denak</b>, «todos».",
       "ejemplos": [
         {
-          "eu": "Janaria gustatzen zait.",
+          "eu": "janaria gustatzen zait",
           "es": "Me gusta la comida.",
           "audio": "unidades/u9/janaria-gustatzen-zait.mp3"
         },
         {
-          "eu": "Edaria ona da.",
+          "eu": "edaria ona da",
           "es": "La bebida es buena.",
           "audio": "unidades/u9/edaria-ona-da.mp3"
         },
         {
-          "eu": "Guztia gustatzen zait.",
+          "eu": "guztia gustatzen zait",
           "es": "Me gusta todo.",
           "audio": "unidades/u9/guztia-gustatzen-zait.mp3"
         }
@@ -228,20 +228,20 @@
     },
     {
       "titulo": "Otros verbos que funcionan igual",
-      "cuerpo": "Una vez tienes <i>zait</i>, se te abren unos cuantos más. Todos siguen el patrón «algo … a mí»:\n\n<b>iruditzen zait</b> — me parece\n<b>interesatzen zait</b> — me interesa\n<b>axola zait</b> — me importa\n<b>ahaztu zait</b> — se me ha olvidado\n<b>gertatzen zait</b> — me pasa\n\nY un aviso, porque es la confusión típica: la fórmula para presentarse <b>no</b> es de esta familia.\n\n<b>Ane dut izena.</b> — Me llamo Ane. (literalmente: «tengo Ane por nombre»)\n\nVa con <i>dut</i>, no con <i>zait</i>. La dejo aquí al lado solo porque se aprenden juntas y es fácil mezclarlas.",
+      "cuerpo": "Una vez tienes <i>zait</i>, se te abren unos cuantos más. Todos siguen el patrón «algo … a mí»:\n\n<b>iruditzen zait</b> — me parece\n<b>interesatzen zait</b> — me interesa\n<b>axola zait</b> — me importa\n<b>ahaztu zait</b> — se me ha olvidado\n<b>gertatzen zait</b> — me pasa\n\nY un aviso, porque es la confusión típica: la fórmula para presentarse <b>no</b> es de esta familia.\n\n<b>Ane dut izena</b> — Me llamo Ane. (literalmente: «tengo Ane por nombre»)\n\nVa con <i>dut</i>, no con <i>zait</i>. La dejo aquí al lado solo porque se aprenden juntas y es fácil mezclarlas.",
       "ejemplos": [
         {
-          "eu": "Ondo iruditzen zait.",
+          "eu": "ondo iruditzen zait",
           "es": "Me parece bien.",
           "audio": "unidades/u10/ondo-iruditzen-zait.mp3"
         },
         {
-          "eu": "Euskara asko interesatzen zait.",
+          "eu": "euskara asko interesatzen zait",
           "es": "Me interesa mucho el euskera.",
           "audio": "unidades/u10/euskara-asko-interesatzen-zait.mp3"
         },
         {
-          "eu": "Ez zait axola.",
+          "eu": "ez zait axola",
           "es": "No me importa.",
           "audio": "unidades/u10/ez-zait-axola.mp3"
         }
@@ -250,20 +250,20 @@
     },
     {
       "titulo": "A quién: la -(r)i de los nombres",
-      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nEstos son los cinco verbos que piden un «a quién», y son los de este tema:\n\n<b>eman</b> — dar\n<b>esan</b> — decir\n<b>galdetu</b> — preguntar\n<b>erantzun</b> — responder\n<b>lagundu</b> — ayudar\n\nTodos ellos hacen algo <i>a alguien</i>, y por eso van con el <b>-ri</b>.\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién):\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>Liburua eman dit.</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio.</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
+      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nEstos son los cinco verbos que piden un «a quién», y son los de este tema:\n\n<b>eman</b> — dar\n<b>esan</b> — decir\n<b>galdetu</b> — preguntar\n<b>erantzun</b> — responder\n<b>lagundu</b> — ayudar\n\nTodos ellos hacen algo <i>a alguien</i>, y por eso van con el <b>-ri</b>.\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién):\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>liburua eman dit</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
       "ejemplos": [
         {
-          "eu": "Aneri esan dio.",
+          "eu": "Aneri esan dio",
           "es": "Se lo ha dicho a Ane.",
           "audio": "unidades/u10/aneri-esan-dio.mp3"
         },
         {
-          "eu": "Lagunari lagundu dio.",
+          "eu": "lagunari lagundu dio",
           "es": "Ha ayudado al amigo.",
           "audio": "unidades/u10/lagunari-lagundu-dio.mp3"
         },
         {
-          "eu": "Zer esan dizu?",
+          "eu": "zer esan dizu?",
           "es": "¿Qué te ha dicho?",
           "audio": "unidades/u10/zer-esan-dizu.mp3"
         }
@@ -272,20 +272,20 @@
     },
     {
       "titulo": "«Esan»: decir, y casi siempre a alguien",
-      "cuerpo": "De los cinco verbos de la lista hay uno que vas a usar más que los otros cuatro juntos: <b>esan</b>, decir. Merece su propio sitio.\n\n<b>Las formas ya las sabes hacer</b>\nAcaba en <b>-n</b>, así que va igual que <i>jan</i> → <i>jaten</i>:\n\n<b>esan</b> → <b>esaten</b>\n\n<b>Amak beti hori esaten du.</b> — Mi madre siempre dice eso.\n<b>Zer esan duzu?</b> — ¿Qué has dicho?\n\n<b>A quién se lo dices cambia el auxiliar</b>\nSi no dices a quién, va con el auxiliar de siempre. Si lo dices, entra el de la ficha anterior, el que junta quién, qué y a quién:\n\n<b>Esan du.</b> — Lo ha dicho.\n<b>Aneri esan dio.</b> — Se lo ha dicho a Ane.\n\nPor eso <i>esan</i> es el verbo con el que mejor se entiende el <b>dio</b>: casi nunca se dice algo al aire, casi siempre se le dice a alguien.\n\n<b>Y la que más vas a necesitar</b>\n<b>esan nahi du</b> — significa, quiere decir\n\nEs literalmente lo mismo que en castellano: «quiere decir» es <i>esan nahi</i>, con el <i>nahi</i> de <i>nahi dut</i>. Y con ella se pregunta todo lo que no entiendes:\n\n<b>Zer esan nahi du?</b> — ¿Qué significa? ¿Qué quiere decir?\n\nGuárdatela bien, porque es la pregunta que abre cualquier palabra que no conozcas.",
+      "cuerpo": "De los cinco verbos de la lista hay uno que vas a usar más que los otros cuatro juntos: <b>esan</b>, decir. Merece su propio sitio.\n\n<b>Las formas ya las sabes hacer</b>\nAcaba en <b>-n</b>, así que va igual que <i>jan</i> → <i>jaten</i>:\n\n<b>esan</b> → <b>esaten</b>\n\n<b>amak beti hori esaten du</b> — Mi madre siempre dice eso.\n<b>zer esan duzu?</b> — ¿Qué has dicho?\n\n<b>A quién se lo dices cambia el auxiliar</b>\nSi no dices a quién, va con el auxiliar de siempre. Si lo dices, entra el de la ficha anterior, el que junta quién, qué y a quién:\n\n<b>esan du</b> — Lo ha dicho.\n<b>Aneri esan dio</b> — Se lo ha dicho a Ane.\n\nPor eso <i>esan</i> es el verbo con el que mejor se entiende el <b>dio</b>: casi nunca se dice algo al aire, casi siempre se le dice a alguien.\n\n<b>Y la que más vas a necesitar</b>\n<b>esan nahi du</b> — significa, quiere decir\n\nEs literalmente lo mismo que en castellano: «quiere decir» es <i>esan nahi</i>, con el <i>nahi</i> de <i>nahi dut</i>. Y con ella se pregunta todo lo que no entiendes:\n\n<b>zer esan nahi du?</b> — ¿Qué significa? ¿Qué quiere decir?\n\nGuárdatela bien, porque es la pregunta que abre cualquier palabra que no conozcas.",
       "ejemplos": [
         {
-          "eu": "Amak beti hori esaten du.",
+          "eu": "amak beti hori esaten du",
           "es": "Mi madre siempre dice eso.",
           "audio": "unidades/u9/amak-beti-hori-esaten-du.mp3"
         },
         {
-          "eu": "Esan du.",
+          "eu": "esan du",
           "es": "Lo ha dicho.",
           "audio": "unidades/u9/esan-du.mp3"
         },
         {
-          "eu": "Zer esan nahi du?",
+          "eu": "zer esan nahi du?",
           "es": "¿Qué significa?",
           "audio": "unidades/u9/zer-esan-nahi-du.mp3"
         }
@@ -294,20 +294,20 @@
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "<b>La z se vuelve j</b>\nToda la serie de <i>zait</i> cambia de inicial en bizkaiera:\n\n<b>jat</b> — batua: zait\n<b>jatzu</b> — zaizu\n<b>jako</b> — zaio\n<b>jaku</b> — zaigu\n<b>jatzue</b> — zaizue\n<b>jake</b> — zaie\n\nAsí que «me gusta» por allí es <b>gustetan jat</b>, con el verbo también cambiado: donde el batua dice <i>gustatzen</i>, el bizkaiera dice <b>gustetan</b>.\n\n<b>Gustetan jat euskerea.</b> — Me gusta el euskera.\n\nY en plural, la <b>-z</b> de siempre: <b>jataz</b> donde el batua pone <i>zaizkit</i>.\n\n<b>Dar y decir</b>\nEl <i>dit</i> del batua es <b>deust</b> o <b>dost</b> en bizkaiera, y <i>dio</i> es <b>deutso</b>:\n\n<b>Emon deust.</b> — Me lo ha dado. (batua: eman dit)\n<b>Esan deutso.</b> — Se lo ha dicho. (batua: esan dio)\n\nY «dar» es <b>emon</b>, no <i>eman</i>.",
+      "cuerpo": "<b>La z se vuelve j</b>\nToda la serie de <i>zait</i> cambia de inicial en bizkaiera:\n\n<b>jat</b> — batua: zait\n<b>jatzu</b> — zaizu\n<b>jako</b> — zaio\n<b>jaku</b> — zaigu\n<b>jatzue</b> — zaizue\n<b>jake</b> — zaie\n\nAsí que «me gusta» por allí es <b>gustetan jat</b>, con el verbo también cambiado: donde el batua dice <i>gustatzen</i>, el bizkaiera dice <b>gustetan</b>.\n\n<b>gustetan jat euskerea</b> — Me gusta el euskera.\n\nY en plural, la <b>-z</b> de siempre: <b>jataz</b> donde el batua pone <i>zaizkit</i>.\n\n<b>Dar y decir</b>\nEl <i>dit</i> del batua es <b>deust</b> o <b>dost</b> en bizkaiera, y <i>dio</i> es <b>deutso</b>:\n\n<b>emon deust</b> — Me lo ha dado. (batua: eman dit)\n<b>esan deutso</b> — Se lo ha dicho. (batua: esan dio)\n\nY «dar» es <b>emon</b>, no <i>eman</i>.",
       "ejemplos": [
         {
-          "eu": "Gustetan jat.",
+          "eu": "gustetan jat",
           "es": "Me gusta. — batua: gustatzen zait.",
           "audio": "unidades/u10/gustetan-jat.mp3"
         },
         {
-          "eu": "Ez jat gustetan.",
+          "eu": "ez jat gustetan",
           "es": "No me gusta. — batua: ez zait gustatzen.",
           "audio": "unidades/u10/ez-jat-gustetan.mp3"
         },
         {
-          "eu": "Emon deust liburua.",
+          "eu": "emon deust liburua",
           "es": "Me ha dado el libro. — batua: eman dit.",
           "audio": "unidades/u10/emon-deust-liburua.mp3"
         }
@@ -320,17 +320,17 @@
       "cuerpo": "Antes de aprenderte la lista, fíjate en una cosa: <b>ya llevas usando partes del cuerpo desde hace tres unidades</b>, metidas dentro de palabras que te sabes.\n\nAcuérdate del <b>-z</b> de «por medio de», el de la octava unidad. Pégalo a una parte del cuerpo y sale sola:\n\n<i>oin</i> (pie) + <b>-z</b> → <b>oinez</b>, a pie\n<i>esku</i> (mano) + <b>-z</b> → <b>eskuz</b>, a mano\n<i>buru</i> (cabeza) + <b>-z</b> → <b>buruz</b>, de memoria\n\nLas dos primeras ya las has usado: <i>oinez nator</i> (vengo a pie) y <i>eskuz idazten dut</i> (escribo a mano) salieron las dos en su momento, y llevaban un pie y una mano dentro sin que hiciera falta saberlo.\n\nAsí que la lista de abajo no es material nuevo del todo: es abrir palabras que ya tenías cerradas. Y queda otra escondida en las gafas, pero esa la verás cuando llegue la ropa.",
       "ejemplos": [
         {
-          "eu": "Oinez nator.",
+          "eu": "oinez nator",
           "es": "Vengo a pie.",
           "audio": "unidades/u9/oinez-nator.mp3"
         },
         {
-          "eu": "Eskuz idazten dut.",
+          "eu": "eskuz idazten dut",
           "es": "Escribo a mano.",
           "audio": "unidades/u9/eskuz-idazten-dut.mp3"
         },
         {
-          "eu": "Buruz dakit.",
+          "eu": "buruz dakit",
           "es": "Me lo sé de memoria.",
           "audio": "unidades/u9/buruz-dakit.mp3"
         }
@@ -339,20 +339,20 @@
     },
     {
       "titulo": "Describirte: lo que ya sabes, aplicado",
-      "cuerpo": "Con el cuerpo puedes estrenar de golpe tres cosas que llevas guardadas: los posesivos de la segunda unidad, los adjetivos y colores de la quinta, y el plural de <i>izan</i>.\n\n<b>Nire ilea beltza da.</b> — Mi pelo es negro.\n<b>Nire begiak handiak dira.</b> — Mis ojos son grandes.\n<b>Zure eskuak txikiak dira.</b> — Tus manos son pequeñas.\n\nEl adjetivo va detrás y con el artículo, como siempre. Y si lo que describes va en plural, el verbo también: <i>da</i> → <b>dira</b>.\n\n<b>Lo que va por pares, va en plural</b>\n\nAquí hay una regularidad que ahorra trabajo. Las partes que tenemos dos veces se nombran casi siempre en plural, igual que en castellano:\n\n<b>begiak</b> — los ojos\n<b>belarriak</b> — las orejas\n<b>eskuak</b> — las manos\n\nY las que van solas, en singular:\n\n<b>burua</b> — la cabeza\n<b>sudurra</b> — la nariz\n<b>ahoa</b> — la boca\n<b>bihotza</b> — el corazón\n<b>gorputza</b> — el cuerpo entero\n\nY de las extremidades, dos que se nombran en singular cuando hablas de una:\n\n<b>besoa</b> — el brazo\n<b>hanka</b> — la pierna\n<b>oina</b> — el pie\n\n<i>Oina</i> ya la traías del tema: es el <i>oin</i> de <b>oinez</b>, a pie.\n\nSi tienes que hablar de una sola de las que van por pares, se puede: <i>esku bat</i>, una mano. Pero lo normal es el plural.",
+      "cuerpo": "Con el cuerpo puedes estrenar de golpe tres cosas que llevas guardadas: los posesivos de la segunda unidad, los adjetivos y colores de la quinta, y el plural de <i>izan</i>.\n\n<b>nire ilea beltza da</b> — Mi pelo es negro.\n<b>nire begiak handiak dira</b> — Mis ojos son grandes.\n<b>zure eskuak txikiak dira</b> — Tus manos son pequeñas.\n\nEl adjetivo va detrás y con el artículo, como siempre. Y si lo que describes va en plural, el verbo también: <i>da</i> → <b>dira</b>.\n\n<b>Lo que va por pares, va en plural</b>\n\nAquí hay una regularidad que ahorra trabajo. Las partes que tenemos dos veces se nombran casi siempre en plural, igual que en castellano:\n\n<b>begiak</b> — los ojos\n<b>belarriak</b> — las orejas\n<b>eskuak</b> — las manos\n\nY las que van solas, en singular:\n\n<b>burua</b> — la cabeza\n<b>sudurra</b> — la nariz\n<b>ahoa</b> — la boca\n<b>bihotza</b> — el corazón\n<b>gorputza</b> — el cuerpo entero\n\nY de las extremidades, dos que se nombran en singular cuando hablas de una:\n\n<b>besoa</b> — el brazo\n<b>hanka</b> — la pierna\n<b>oina</b> — el pie\n\n<i>Oina</i> ya la traías del tema: es el <i>oin</i> de <b>oinez</b>, a pie.\n\nSi tienes que hablar de una sola de las que van por pares, se puede: <i>esku bat</i>, una mano. Pero lo normal es el plural.",
       "ejemplos": [
         {
-          "eu": "Nire begiak urdinak dira.",
+          "eu": "nire begiak urdinak dira",
           "es": "Mis ojos son azules.",
           "audio": "unidades/u9/nire-begiak-urdinak-dira.mp3"
         },
         {
-          "eu": "Nire ilea beltza da.",
+          "eu": "nire ilea beltza da",
           "es": "Mi pelo es negro.",
           "audio": "unidades/u9/nire-ilea-beltza-da.mp3"
         },
         {
-          "eu": "Zure eskuak handiak dira.",
+          "eu": "zure eskuak handiak dira",
           "es": "Tus manos son grandes.",
           "audio": "unidades/u9/zure-eskuak-handiak-dira.mp3"
         }
@@ -368,20 +368,20 @@
     },
     {
       "titulo": "Un regalo es siempre para alguien",
-      "cuerpo": "<b>oparia</b> — el regalo\n\nEsta palabra cierra la unidad, porque para usarla hacen falta las dos mitades que has ido montando: <b>algo que se compra</b> y <b>alguien a quien dárselo</b>.\n\nYa tienes las dos. <i>Erosi</i> es comprar, y el <b>-(r)i</b> de «a quién» lo viste en el segundo tema:\n\n<b>Opari bat erosi dut.</b> — He comprado un regalo.\n<b>Amari opari bat eman dio.</b> — Le ha dado un regalo a mi madre.\n\nFíjate en <i>amari</i>: es <i>ama</i> con el <b>-ri</b> de destinatario, el mismo que hay en <i>niri</i> (a mí), <i>zuri</i> (a ti) y <i>hari</i> (a él, a ella). Del <i>dio</i> no te preocupes todavía: con reconocerlo basta, como te decían allí.\n\n<b>Norentzat?</b> — ¿Para quién?\n\nY hay otra manera de decirlo, con <b>-entzat</b>, que es «para»:\n\n<b>Amarentzat da.</b> — Es para mi madre.\n<b>Niretzat da.</b> — Es para mí.\n\nLa diferencia es de matiz: con <i>-ri</i> el regalo llega a alguien, con <i>-entzat</i> está destinado a alguien. En la práctica las dos se oyen a todas horas.",
+      "cuerpo": "<b>oparia</b> — el regalo\n\nEsta palabra cierra la unidad, porque para usarla hacen falta las dos mitades que has ido montando: <b>algo que se compra</b> y <b>alguien a quien dárselo</b>.\n\nYa tienes las dos. <i>Erosi</i> es comprar, y el <b>-(r)i</b> de «a quién» lo viste en el segundo tema:\n\n<b>opari bat erosi dut</b> — He comprado un regalo.\n<b>amari opari bat eman dio</b> — Le ha dado un regalo a mi madre.\n\nFíjate en <i>amari</i>: es <i>ama</i> con el <b>-ri</b> de destinatario, el mismo que hay en <i>niri</i> (a mí), <i>zuri</i> (a ti) y <i>hari</i> (a él, a ella). Del <i>dio</i> no te preocupes todavía: con reconocerlo basta, como te decían allí.\n\n<b>norentzat?</b> — ¿Para quién?\n\nY hay otra manera de decirlo, con <b>-entzat</b>, que es «para»:\n\n<b>amarentzat da</b> — Es para mi madre.\n<b>niretzat da</b> — Es para mí.\n\nLa diferencia es de matiz: con <i>-ri</i> el regalo llega a alguien, con <i>-entzat</i> está destinado a alguien. En la práctica las dos se oyen a todas horas.",
       "ejemplos": [
         {
-          "eu": "Opari bat erosi dut.",
+          "eu": "opari bat erosi dut",
           "es": "He comprado un regalo.",
           "audio": "unidades/u9/opari-bat-erosi-dut.mp3"
         },
         {
-          "eu": "Niretzat da.",
+          "eu": "niretzat da",
           "es": "Es para mí.",
           "audio": "unidades/u9/niretzat-da.mp3"
         },
         {
-          "eu": "Zure amarentzat da.",
+          "eu": "zure amarentzat da",
           "es": "Es para tu madre.",
           "audio": "unidades/u9/zure-amarentzat-da.mp3"
         }

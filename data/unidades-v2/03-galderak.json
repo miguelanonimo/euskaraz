@@ -37,17 +37,17 @@
       "cuerpo": "Antes de meterte en verbos, merece la pena tener a mano las palabras con las que se hacen preguntas. Son pocas y siguen un patrón muy claro.\n\nLas de <b>n-</b> preguntan por <b>personas y lugares</b>:\n\n<b>nor?</b> — quién\n<b>non?</b> — dónde\n<b>nora?</b> — adónde\n<b>nondik?</b> — de dónde, por dónde\n<b>noiz?</b> — cuándo\n<b>nola?</b> — cómo\n\nLas de <b>z-</b> preguntan por <b>cosas, causas y cantidades</b>:\n\n<b>zer?</b> — qué\n<b>zein?</b> — cuál\n<b>zergatik?</b> — por qué\n<b>zenbat?</b> — cuánto\n\nNo es una regla infalible (<i>nola</i> es de cómo, no de lugar), pero como gancho para memorizarlas funciona muy bien.\n\n<b>Dos más de la familia, con quién y de quién</b>\n\n<b>norekin?</b> — ¿con quién?\n<b>noren?</b> — ¿de quién?\n\nLas dos salen de <i>nor</i> con una cola detrás, igual que <i>nongoa</i> sale de <i>non</i>. El sistema es siempre el mismo: la pregunta lleva la misma terminación que va a llevar la respuesta.\n\n<b>Y las dos palabras para hablar de esto mismo</b>\n\n<b>galdera</b> — la pregunta\n<b>erantzuna</b> — la respuesta",
       "ejemplos": [
         {
-          "eu": "Nor?",
+          "eu": "nor?",
           "es": "¿Quién?",
           "audio": "unidades/u3/nor.mp3"
         },
         {
-          "eu": "Zer?",
+          "eu": "zer?",
           "es": "¿Qué?",
           "audio": "unidades/u3/zer.mp3"
         },
         {
-          "eu": "Zenbat?",
+          "eu": "zenbat?",
           "es": "¿Cuánto?",
           "audio": "unidades/u3/zenbat.mp3"
         }
@@ -59,22 +59,22 @@
       "cuerpo": "Fíjate en estas cuatro. Son la misma raíz con distintas colas, y cada una pide un tipo de respuesta:\n\n<b>Non?</b> (¿dónde?) → se responde con <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → se responde con <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → se responde con <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → se responde con <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\n¿Ves lo que pasa? <b>La pregunta y la respuesta llevan la misma terminación.</b> Si la pregunta acaba en <i>-ra</i>, la respuesta también.\n\nEsto no es una casualidad bonita: es el mecanismo central del euskera. Toda la gramática que viene después funciona así, encajando sufijos. Si te quedas con esta idea ahora, las próximas unidades te van a parecer mucho menos arbitrarias.",
       "ejemplos": [
         {
-          "eu": "Non? — Bilbon.",
+          "eu": "non? — Bilbon",
           "es": "¿Dónde? — En Bilbao.",
           "audio": "unidades/u3/non-bilbon.mp3"
         },
         {
-          "eu": "Nora? — Bilbora.",
+          "eu": "nora? — Bilbora",
           "es": "¿Adónde? — A Bilbao.",
           "audio": "unidades/u3/nora-bilbora.mp3"
         },
         {
-          "eu": "Nondik? — Bilbotik.",
+          "eu": "nondik? — Bilbotik",
           "es": "¿De dónde? — Desde Bilbao.",
           "audio": "unidades/u3/nondik-bilbotik.mp3"
         },
         {
-          "eu": "Nongoa? — Bilbokoa.",
+          "eu": "nongoa? — Bilbokoa",
           "es": "¿De dónde eres? — De Bilbao.",
           "audio": "unidades/u3/nongoa-bilbokoa.mp3"
         }
@@ -86,12 +86,12 @@
       "cuerpo": "Las dos se traducen al castellano por «de dónde», y ahí está la trampa.\n\n<b>Nondik?</b> pregunta por un <b>movimiento</b>: de dónde vienes, por dónde has pasado.\n<i>Bilbotik nator</i> — vengo desde Bilbao.\n\n<b>Nongoa?</b> pregunta por el <b>origen</b>: de dónde eres, dónde están tus raíces.\n<i>Bilbokoa naiz</i> — soy de Bilbao.\n\nPuedes ser <i>Bilbokoa</i> (de Bilbao) y venir hoy <i>Gernikatik</i> (desde Gernika). Son dos cosas distintas y el euskera las separa.",
       "ejemplos": [
         {
-          "eu": "Nongoa zara?",
+          "eu": "nongoa zara?",
           "es": "¿De dónde eres? (origen)",
           "audio": "unidades/u3/nongoa-zara.mp3"
         },
         {
-          "eu": "Nondik zatoz?",
+          "eu": "nondik zatoz?",
           "es": "¿De dónde vienes? (movimiento)",
           "audio": "unidades/u3/nondik-zatoz.mp3"
         }
@@ -103,17 +103,17 @@
       "cuerpo": "El castellano tiene tres (<i>este, ese, aquel</i>) y el euskera también. La suerte es que se corresponden casi uno a uno:\n\n<b>hau</b> — esto, este: está cerca de <b>mí</b>\n<b>hori</b> — eso, ese: está cerca de <b>ti</b>\n<b>hura</b> — aquello, aquel: está <b>lejos de los dos</b>\n\nFíjate en que el criterio no es la distancia en metros, sino <b>de quién</b> está cerca la cosa. Un libro que tienes tú en la mano es <i>hori</i> para mí, aunque estemos sentados juntos.\n\nEn plural solo cambia la cola:\n\n<b>hauek</b> — estos\n<b>horiek</b> — esos\n<b>haiek</b> — aquellos\n\nOjo con <i>hori</i>: su plural es <b>horiek</b>, no «horrek». Y el de <i>hura</i> es <b>haiek</b>, que no se parece nada al singular — esa hay que aprendérsela tal cual.",
       "ejemplos": [
         {
-          "eu": "Lagun hau irakaslea da.",
+          "eu": "lagun hau irakaslea da",
           "es": "Este amigo es profesor.",
           "audio": "unidades/u3/lagun-hau-irakaslea-da.mp3"
         },
         {
-          "eu": "Ikasle hori nongoa da?",
+          "eu": "ikasle hori nongoa da?",
           "es": "¿De dónde es ese estudiante?",
           "audio": "unidades/u3/ikasle-hori-nongoa-da.mp3"
         },
         {
-          "eu": "Hura medikua da.",
+          "eu": "hura medikua da",
           "es": "Aquel es médico.",
           "audio": "unidades/u4/hura-medikua-da.mp3"
         }
@@ -125,17 +125,17 @@
       "cuerpo": "Aquí el euskera hace lo contrario que el castellano. Nosotros decimos «<i>esta</i> casa»; en euskera es «casa <i>esta</i>»:\n\n<b>lagun hau</b> — este amigo\n<b>ikasle hori</b> — ese estudiante\n<b>galdera hura</b> — aquella pregunta\n\nY hay un detalle que se escapa siempre. Ya sabes que «el amigo» es <b>laguna</b>, con esa <i>-a</i> final que hace de artículo. Pues cuando detrás viene un demostrativo, <b>esa -a desaparece</b>: <i>lagun<b>a</b></i> pero <i>lagun hau</i>. Tiene sentido si lo piensas — no dices «el amigo este», porque el demostrativo ya hace ese trabajo.\n\nUna última cosa, y esta te va a sonar. <b>Hura</b> y <b>haiek</b> ya las viste en la unidad 2, traducidas como «él/ella» y «ellos/ellas». No es coincidencia ni son dos palabras distintas: <b>son las mismas</b>. El euskera usa el demostrativo lejano para referirse a la tercera persona. Por eso <i>haiek</i> vale para «aquellos» y para «ellos», y por el contexto se entiende cuál es.",
       "ejemplos": [
         {
-          "eu": "Laguna irakaslea da.",
+          "eu": "laguna irakaslea da",
           "es": "El amigo es profesor.",
           "audio": "unidades/u3/laguna-irakaslea-da.mp3"
         },
         {
-          "eu": "Lagun hau irakaslea da.",
+          "eu": "lagun hau irakaslea da",
           "es": "Este amigo es profesor.",
           "audio": "unidades/u3/lagun-hau-irakaslea-da.mp3"
         },
         {
-          "eu": "Ikasle horiek euskaldunak dira.",
+          "eu": "ikasle horiek euskaldunak dira",
           "es": "Esos estudiantes hablan euskera.",
           "audio": "unidades/u3/ikasle-horiek-euskaldunak-dira.mp3"
         }
@@ -147,12 +147,12 @@
       "cuerpo": "Los dos primeros no cambian: <b>hau</b> y <b>hori</b> son iguales en batua y en bizkaiera. El tercero sí:\n\n<b>ha</b> — donde el batua dice <i>hura</i>\n\nY como <i>hura</i>, vale para las dos cosas: «aquel» y «él/ella». Si oyes a alguien en Bilbao decir <i>ha</i>, está diciendo cualquiera de las dos.\n\nDonde de verdad se separan es en el plural, que no se parece en nada:\n\n<b>honeek</b> — estos (batua: <i>hauek</i>)\n<b>horreek</b> — esos (batua: <i>horiek</i>)\n<b>hareek</b> — aquellos (batua: <i>haiek</i>)\n\nNo intentes deducirlos del singular, porque no salen. Se aprenden aparte. También se oyen <i>honeik</i> y <i>horreik</i>, y la forma antigua <i>haek</i> por <i>hareek</i>.\n\n<b>Un aviso honesto sobre estas tres.</b> Son las formas que recoge la gramática del bizkaiera, y las que vas a encontrar escritas. Pero puede que se las digas a alguien de un pueblo de Bizkaia y te mire raro: mucha gente escolarizada en batua usa hoy <i>hauek</i>, <i>horiek</i> y <i>haiek</i> también hablando en casa, y estas suenan sobre todo en el habla más dialectal.\n\nTenlas para reconocerlas cuando aparezcan, no para soltarlas dando por hecho que son lo corriente en todas partes. Es el mismo aviso de la primera unidad: aquí no hay una norma única, y contrastarlo con alguien de allí vale más que cualquier lista.\n\nUna cosa más que se oye mucho en el este de Bizkaia: añadirles <b>-xe-</b> para señalar con énfasis, como nuestro «este mismo»: <b>hauxe</b>, <b>horixe</b>, <b>haxe</b>.",
       "ejemplos": [
         {
-          "eu": "Ha medikua da.",
+          "eu": "ha medikua da",
           "es": "Aquel es médico. — en batua, «Hura medikua da».",
           "audio": "unidades/u3/ha-medikua-da.mp3"
         },
         {
-          "eu": "Ikasle horreek euskaldunak dira.",
+          "eu": "ikasle horreek euskaldunak dira",
           "es": "Esos estudiantes hablan euskera. — en batua, «Ikasle horiek…».",
           "audio": "unidades/u3/ikasle-horreek-euskaldunak-dira.mp3"
         }
@@ -165,17 +165,17 @@
       "cuerpo": "Esta regla es sencilla y muy útil, porque en euskera el orden de las palabras es bastante libre… salvo aquí.\n\nEn una pregunta, la palabra interrogativa se coloca <b>inmediatamente antes del verbo</b>. Pegada. Sin nada en medio.\n\n<i><b>Non</b> zaude?</i> — ¿Dónde estás?\n<i><b>Nor</b> zara zu?</i> — ¿Quién eres tú?\n<i>Zu <b>nongoa</b> zara?</i> — ¿De dónde eres tú?\n\nFíjate en la última: el sujeto <i>zu</i> puede irse al principio, pero <i>nongoa</i> sigue pegado a <i>zara</i>.\n\nSi alguna vez dudas de dónde colocar algo en una pregunta, empieza por esto: interrogativa + verbo, juntos.",
       "ejemplos": [
         {
-          "eu": "Zer da hau?",
+          "eu": "zer da hau?",
           "es": "¿Qué es esto?",
           "audio": "unidades/u3/zer-da-hau.mp3"
         },
         {
-          "eu": "Noiz da festa?",
+          "eu": "noiz da festa?",
           "es": "¿Cuándo es la fiesta?",
           "audio": "unidades/u3/noiz-da-festa.mp3"
         },
         {
-          "eu": "Zergatik ez?",
+          "eu": "zergatik ez?",
           "es": "¿Por qué no?",
           "audio": "unidades/u3/zergatik-ez.mp3"
         }
@@ -184,15 +184,15 @@
     },
     {
       "titulo": "Exclamar: la misma palabra que para señalar",
-      "cuerpo": "Acabas de ver <b>hau</b> como demostrativo, «esto». Pues sirve también para exclamar, y el molde no puede ser más simple:\n\n<b>hau</b> + adjetivo = <b>¡qué + adjetivo!</b>\n\n<b>Hau hotza!</b> — ¡Qué frío!\n<b>Hau beroa!</b> — ¡Qué calor!\n<b>Hau polita!</b> — ¡Qué bonito!\n<b>Hau handia!</b> — ¡Qué grande!\n\nSi lo piensas literalmente es «¡esto frío!», y de ahí sale el sentido. El castellano hace algo parecido con «¡esto sí que es frío!», solo que nosotros necesitamos más piezas.\n\nEl adjetivo va con su <b>-a</b> final, la misma que ya conoces del artículo: <i>hotz<b>a</b></i>, <i>polit<b>a</b></i>.\n\nLos adjetivos en sí llegan en la unidad 5, con calma. Aquí quédate con el molde, que es lo que se repite — y con que la palabra para señalar y la palabra para exclamar son <b>la misma</b>.",
+      "cuerpo": "Acabas de ver <b>hau</b> como demostrativo, «esto». Pues sirve también para exclamar, y el molde no puede ser más simple:\n\n<b>hau</b> + adjetivo = <b>¡qué + adjetivo!</b>\n\n<b>hau hotza!</b> — ¡Qué frío!\n<b>hau beroa!</b> — ¡Qué calor!\n<b>hau polita!</b> — ¡Qué bonito!\n<b>hau handia!</b> — ¡Qué grande!\n\nSi lo piensas literalmente es «¡esto frío!», y de ahí sale el sentido. El castellano hace algo parecido con «¡esto sí que es frío!», solo que nosotros necesitamos más piezas.\n\nEl adjetivo va con su <b>-a</b> final, la misma que ya conoces del artículo: <i>hotz<b>a</b></i>, <i>polit<b>a</b></i>.\n\nLos adjetivos en sí llegan en la unidad 5, con calma. Aquí quédate con el molde, que es lo que se repite — y con que la palabra para señalar y la palabra para exclamar son <b>la misma</b>.",
       "ejemplos": [
         {
-          "eu": "Hau polita!",
+          "eu": "hau polita!",
           "es": "¡Qué bonito! · ¡Qué bonita!",
           "audio": "unidades/u3/hau-polita.mp3"
         },
         {
-          "eu": "Hau handia!",
+          "eu": "hau handia!",
           "es": "¡Qué grande!",
           "audio": "unidades/u3/hau-handia.mp3"
         }
@@ -201,20 +201,20 @@
     },
     {
       "titulo": "Frases hechas: apréndetelas enteras por ahora",
-      "cuerpo": "En los ejemplos de esta unidad aparecen formas verbales que todavía no hemos explicado: <i>zara, zaude, da, dituzu</i>.\n\nNo pasa nada. Trátalas como bloques cerrados, igual que aprendiste <i>zer moduz?</i> sin desmontarlo.\n\n<b>Nor zara zu?</b> — ¿Quién eres tú?\n<b>Non zaude?</b> — ¿Dónde estás?\n<b>Nongoa zara?</b> — ¿De dónde eres?\n<b>Zer da hau?</b> — ¿Qué es esto?\n<b>Zenbat urte dituzu?</b> — ¿Cuántos años tienes?\n<b>Nola duzu izena?</b> — ¿Cómo te llamas?\n\nCon estas seis preguntas ya puedes sostener el principio de una conversación. En las próximas unidades desmontaremos los verbos pieza a pieza y entenderás por qué son así.",
+      "cuerpo": "En los ejemplos de esta unidad aparecen formas verbales que todavía no hemos explicado: <i>zara, zaude, da, dituzu</i>.\n\nNo pasa nada. Trátalas como bloques cerrados, igual que aprendiste <i>zer moduz?</i> sin desmontarlo.\n\n<b>nor zara zu?</b> — ¿Quién eres tú?\n<b>non zaude?</b> — ¿Dónde estás?\n<b>nongoa zara?</b> — ¿De dónde eres?\n<b>zer da hau?</b> — ¿Qué es esto?\n<b>zenbat urte dituzu?</b> — ¿Cuántos años tienes?\n<b>nola duzu izena?</b> — ¿Cómo te llamas?\n\nCon estas seis preguntas ya puedes sostener el principio de una conversación. En las próximas unidades desmontaremos los verbos pieza a pieza y entenderás por qué son así.",
       "ejemplos": [
         {
-          "eu": "Nor zara zu?",
+          "eu": "nor zara zu?",
           "es": "¿Quién eres tú?",
           "audio": "unidades/u3/nor-zara-zu.mp3"
         },
         {
-          "eu": "Nola duzu izena?",
+          "eu": "nola duzu izena?",
           "es": "¿Cómo te llamas?",
           "audio": "unidades/u3/nola-duzu-izena.mp3"
         },
         {
-          "eu": "Zenbat urte dituzu?",
+          "eu": "zenbat urte dituzu?",
           "es": "¿Cuántos años tienes?",
           "audio": "unidades/u3/zenbat-urte-dituzu.mp3"
         }
@@ -223,15 +223,15 @@
     },
     {
       "titulo": "Cuatro respuestas que salvan cualquier apuro",
-      "cuerpo": "Antes de saber construir frases, conviene poder salir del paso:\n\n<b>Bai</b> — sí\n<b>Ez</b> — no\n<b>Ez dakit</b> — no sé\n<b>Agian</b> — quizás\n\n<i>Ez dakit</i> es probablemente la frase más útil de todo este módulo. Literalmente es «no lo sé», y te permite responder honestamente a cualquier pregunta que no entiendas sin cortar la conversación.\n\nY si no has entendido lo que te dicen, dos más:\n\n<b>Barkatu?</b> — ¿perdón?\n<b>Ez dut ulertzen</b> — no entiendo",
+      "cuerpo": "Antes de saber construir frases, conviene poder salir del paso:\n\n<b>bai</b> — sí\n<b>ez</b> — no\n<b>ez dakit</b> — no sé\n<b>agian</b> — quizás\n\n<i>Ez dakit</i> es probablemente la frase más útil de todo este módulo. Literalmente es «no lo sé», y te permite responder honestamente a cualquier pregunta que no entiendas sin cortar la conversación.\n\nY si no has entendido lo que te dicen, dos más:\n\n<b>barkatu?</b> — ¿perdón?\n<b>ez dut ulertzen</b> — no entiendo",
       "ejemplos": [
         {
-          "eu": "Ez dakit.",
+          "eu": "ez dakit",
           "es": "No sé.",
           "audio": "unidades/u3/ez-dakit.mp3"
         },
         {
-          "eu": "Ez dut ulertzen.",
+          "eu": "ez dut ulertzen",
           "es": "No entiendo.",
           "audio": "unidades/u3/ez-dut-ulertzen.mp3"
         }
@@ -243,7 +243,7 @@
       "cuerpo": "Ya tienes las preguntas. Pues de ellas sale otra familia entera: pégales <b>edo-</b> delante y se convierten en indefinidos.\n\n<i>nor</i> (quién) → <b>edonor</b> — cualquiera\n<i>non</i> (dónde) → <b>edonon</b> — en cualquier sitio\n<i>nora</i> (adónde) → <b>edonora</b> — a cualquier sitio\n\nEl sistema sigue más allá: <i>edonoiz</i> (cuando sea), <i>edozer</i> (cualquier cosa), <i>edozein</i> (cualquiera, delante de un nombre). No hace falta que te los aprendas hoy — lo que vale la pena es <b>reconocer el edo-</b>: si una palabra empieza así, alguien está diciendo «me da igual cuál».\n\nY esto es batua corriente, no cosa de Bizkaia.\n\nMás adelante verás las otras dos maneras de decir esto a medias —«alguien» y «nadie»—, que salen de estas mismas preguntas con otras piezas. Con <i>edo-</i> ya tienes la primera de las tres.",
       "ejemplos": [
         {
-          "eu": "Edonor etor daiteke.",
+          "eu": "edonor etor daiteke",
           "es": "Puede venir cualquiera. (el «daiteke» de «poder» llega mucho más adelante; aquí fíjate solo en «edonor»)",
           "audio": "unidades/u3/edonor-etor-daiteke.mp3"
         }
@@ -252,20 +252,20 @@
     },
     {
       "titulo": "Cuándo: cuatro palabras que colocan cualquier frase",
-      "cuerpo": "Preguntar <i>noiz?</i> (cuándo) sirve de poco sin palabras para contestar. Estas cuatro son las que más salen:\n\n<b>gaur</b> — hoy\n<b>bihar</b> — mañana\n<b>atzo</b> — ayer\n<b>orain</b> — ahora\n\nY dos que marcan la frecuencia, en los dos extremos:\n\n<b>beti</b> — siempre\n<b>inoiz ez</b> — nunca\n\n<i>Inoiz ez</i> tiene truco: <i>inoiz</i> solo significa «alguna vez». Es el <b>ez</b> el que lo vuelve del revés, igual que en castellano «jamás» necesita el «no» en «no lo hice jamás». Nunca va suelto.\n\nLo normal es que el «cuándo» <b>abra la frase</b>:\n\n<b>Gaur ondo nago.</b> — Hoy estoy bien.\n<b>Bihar arte!</b> — ¡Hasta mañana!\n\nEse <i>bihar arte</i> ya lo traías de la primera unidad sin saber que llevaba «mañana» dentro.",
+      "cuerpo": "Preguntar <i>noiz?</i> (cuándo) sirve de poco sin palabras para contestar. Estas cuatro son las que más salen:\n\n<b>gaur</b> — hoy\n<b>bihar</b> — mañana\n<b>atzo</b> — ayer\n<b>orain</b> — ahora\n\nY dos que marcan la frecuencia, en los dos extremos:\n\n<b>beti</b> — siempre\n<b>inoiz ez</b> — nunca\n\n<i>Inoiz ez</i> tiene truco: <i>inoiz</i> solo significa «alguna vez». Es el <b>ez</b> el que lo vuelve del revés, igual que en castellano «jamás» necesita el «no» en «no lo hice jamás». Nunca va suelto.\n\nLo normal es que el «cuándo» <b>abra la frase</b>:\n\n<b>gaur ondo nago</b> — Hoy estoy bien.\n<b>bihar arte!</b> — ¡Hasta mañana!\n\nEse <i>bihar arte</i> ya lo traías de la primera unidad sin saber que llevaba «mañana» dentro.",
       "ejemplos": [
         {
-          "eu": "Noiz? Gaur.",
+          "eu": "noiz? Gaur",
           "es": "¿Cuándo? Hoy.",
           "audio": "unidades/u3/noiz-gaur.mp3"
         },
         {
-          "eu": "Beti hemen.",
+          "eu": "beti hemen",
           "es": "Siempre aquí.",
           "audio": "unidades/u3/beti-hemen.mp3"
         },
         {
-          "eu": "Bihar arte!",
+          "eu": "bihar arte!",
           "es": "¡Hasta mañana!",
           "audio": "unidades/u1/bihar-arte.mp3"
         }
@@ -277,12 +277,12 @@
       "cuerpo": "<b>zelan en lugar de nola</b>\nYa lo viste en la primera unidad, pero aquí es donde encaja del todo. El «¿cómo?» del bizkaiera es <b>zelan</b>. Y de ahí sale toda una familia:\n\n<b>zelan?</b> — cómo (batua: nola)\n<b>zelango?</b> — de qué tipo (batua: nolako)\n<b>holan, halan, honan</b> — así, de esa manera (batua: horrela, hala, honela)\n\n<b>nogaz en lugar de norekin</b>\nPara «¿con quién?», el bizkaiera usa el sufijo <b>-gaz</b>: <b>nogaz?</b>\n\n<b>La serie de «edo-» y «zeo-»</b>\nA cada interrogativa se le puede poner <b>edo-</b> delante para hacer el indefinido «cualquiera». Ojo: <b>edonor, edonon, edonora, edozein</b> son batua normal, no bizkaiera — te sirven en todas partes:\n\n<b>edonor</b> — cualquiera\n<b>edonon</b> — en cualquier sitio\n<b>edonora</b> — a cualquier sitio\n\nLo propiamente bizkaino es aplicárselo a <b>zelan</b>: <b>edozelan</b> (de cualquier manera), donde el batua dice <i>edonola</i>.\n\nY el <b>zeo-</b> del «alguno» sí es de allí: <b>zeozer</b> (algo), <b>zeozelan</b> (de alguna manera), donde el batua pone <i>zerbait</i> y <i>nolabait</i>. Es un sistema muy regular: aprendes la interrogativa y te salen tres palabras más.",
       "ejemplos": [
         {
-          "eu": "Zelan zagoz?",
+          "eu": "zelan zagoz?",
           "es": "¿Qué tal estás? — batua: Nola zaude?",
           "audio": "unidades/u3/zelan-zagoz.mp3"
         },
         {
-          "eu": "Nogaz zoaz?",
+          "eu": "nogaz zoaz?",
           "es": "¿Con quién vas? — batua: Norekin zoaz?",
           "audio": "unidades/u3/nogaz-zoaz.mp3"
         }

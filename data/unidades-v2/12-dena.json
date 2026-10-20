@@ -34,7 +34,7 @@
   "gramatica": [
     {
       "titulo": "Preguntas de sí o no: la partícula «al»",
-      "cuerpo": "Hasta ahora has preguntado con <i>nor, zer, non, noiz…</i>. Para las preguntas que se responden con <b>bai</b> o <b>ez</b> hay una palabrita que se cuela justo antes del verbo: <b>al</b>.\n\n<b>Euskalduna zara.</b> — Hablas euskera.\n<b>Euskalduna <u>al</u> zara?</b> — ¿Hablas euskera?\n\n<b>Kafea nahi <u>al</u> duzu?</b> — ¿Quieres café?\n<b>Etxean <u>al</u> zaude?</b> — ¿Estás en casa?\n<b>Euskara ikasten <u>al</u> duzu?</b> — ¿Estudias euskera? (con <i>euskaraz</i> sería «¿estudias <b>en</b> euskera?»)\n\nNo significa nada: solo avisa de que viene una pregunta. Se puede omitir y la frase sigue entendiéndose por la entonación, igual que en castellano, pero con <b>al</b> queda mucho más natural.\n\nY las respuestas cortas repiten el verbo: <b>Bai, naiz.</b> / <b>Ez, ez naiz.</b>",
+      "cuerpo": "Hasta ahora has preguntado con <i>nor, zer, non, noiz…</i>. Para las preguntas que se responden con <b>bai</b> o <b>ez</b> hay una palabrita que se cuela justo antes del verbo: <b>al</b>.\n\n<b>Euskalduna zara</b> — Hablas euskera.\n<b>Euskalduna <u>al</u> zara?</b> — ¿Hablas euskera?\n\n<b>Kafea nahi <u>al</u> duzu?</b> — ¿Quieres café?\n<b>Etxean <u>al</u> zaude?</b> — ¿Estás en casa?\n<b>Euskara ikasten <u>al</u> duzu?</b> — ¿Estudias euskera? (con <i>euskaraz</i> sería «¿estudias <b>en</b> euskera?»)\n\nNo significa nada: solo avisa de que viene una pregunta. Se puede omitir y la frase sigue entendiéndose por la entonación, igual que en castellano, pero con <b>al</b> queda mucho más natural.\n\nY las respuestas cortas repiten el verbo: <b>Bai, naiz.</b> / <b>Ez, ez naiz.</b>",
       "ejemplos": [
         {
           "eu": "Euskalduna al zara?",
@@ -42,12 +42,12 @@
           "audio": "unidades/u12/euskalduna-al-zara.mp3"
         },
         {
-          "eu": "Kafea nahi al duzu?",
+          "eu": "kafea nahi al duzu?",
           "es": "¿Quieres café?",
           "audio": "unidades/u12/kafea-nahi-al-duzu.mp3"
         },
         {
-          "eu": "Bai, nahi dut.",
+          "eu": "bai, nahi dut",
           "es": "Sí, quiero.",
           "audio": "unidades/u12/bai-nahi-dut.mp3"
         }
@@ -56,20 +56,20 @@
     },
     {
       "titulo": "Enlazar frases",
-      "cuerpo": "Los que ya tienes: <b>eta</b> (y), <b>baina</b> (pero), <b>edo</b> (o), <b>ere</b> (también).\n\nCuidado con <b>ere</b>: va <b>detrás</b> de lo que acompaña, no delante.\n<b>Ni ere euskalduna naiz.</b> — Yo también hablo euskera.\n\nY unos cuantos más:\n<b>beraz</b> — así que\n<b>gainera</b> — además\n<b>hala ere</b> — aun así\n<b>adibidez</b> — por ejemplo\n<b>noski</b> — claro, por supuesto\n<b>benetan</b> — de verdad\n\nPara «porque» el euskera no usa una palabra suelta, sino un sufijo pegado al verbo: <b>-lako</b>.\n\n<b>Zergatik ikasten duzu euskara?</b>\n<b>Gustatzen zaidalako.</b> — Porque me gusta.\n<b>Euskalduna naizelako.</b> — Porque hablo euskera.\n\nNo hace falta que lo produzcas todavía. Reconocerlo ya es bastante: cuando oigas un verbo acabado en <b>-lako</b>, alguien te está dando una razón.",
+      "cuerpo": "Los que ya tienes: <b>eta</b> (y), <b>baina</b> (pero), <b>edo</b> (o), <b>ere</b> (también).\n\nCuidado con <b>ere</b>: va <b>detrás</b> de lo que acompaña, no delante.\n<b>ni ere euskalduna naiz</b> — Yo también hablo euskera.\n\nY unos cuantos más:\n<b>beraz</b> — así que\n<b>gainera</b> — además\n<b>hala ere</b> — aun así\n<b>adibidez</b> — por ejemplo\n<b>noski</b> — claro, por supuesto\n<b>benetan</b> — de verdad\n\nPara «porque» el euskera no usa una palabra suelta, sino un sufijo pegado al verbo: <b>-lako</b>.\n\n<b>Zergatik ikasten duzu euskara?</b>\n<b>gustatzen zaidalako</b> — Porque me gusta.\n<b>Euskalduna naizelako</b> — Porque hablo euskera.\n\nNo hace falta que lo produzcas todavía. Reconocerlo ya es bastante: cuando oigas un verbo acabado en <b>-lako</b>, alguien te está dando una razón.",
       "ejemplos": [
         {
-          "eu": "Nekatuta nago, beraz etxean geratzen naiz.",
+          "eu": "nekatuta nago, beraz etxean geratzen naiz",
           "es": "Estoy cansado, así que me quedo en casa.",
           "audio": "unidades/u12/nekatuta-nago-beraz-etxean-geratzen-naiz.mp3"
         },
         {
-          "eu": "Ni ere Bilbokoa naiz.",
+          "eu": "ni ere Bilbokoa naiz",
           "es": "Yo también soy de Bilbao.",
           "audio": "unidades/u12/ni-ere-bilbokoa-naiz.mp3"
         },
         {
-          "eu": "Gustatzen zaidalako.",
+          "eu": "gustatzen zaidalako",
           "es": "Porque me gusta.",
           "audio": "unidades/u12/gustatzen-zaidalako.mp3"
         }
@@ -78,20 +78,20 @@
     },
     {
       "titulo": "De las preguntas salen los indefinidos",
-      "cuerpo": "En la tercera unidad viste la primera de las tres maneras de decir algo a medias: pegarle <b>edo-</b> delante a una pregunta.\n\n<i>nor</i> (quién) → <b>edonor</b> — cualquiera\n\nAquí llegan las otras dos, y salen de las mismas preguntas.\n\n<b>La primera: «-bait» al final, para decir «algún»</b>\n\n<i>nor</i> (quién) → <b>norbait</b> — alguien\n<i>zer</i> (qué) → <b>zerbait</b> — algo\n<i>non</i> (dónde) → <b>nonbait</b> — en algún sitio\n\n<b>Norbait dago etxean.</b> — Hay alguien en casa.\n<b>Zerbait esan du.</b> — Ha dicho algo.\n\n<b>La segunda: «nadie» y «nada»</b>\n\nEstas no se forman pegando nada: son palabras propias, y hay que aprendérselas aparte.\n\n<b>inor</b> — nadie, para <b>personas</b>\n<b>ezer</b> — nada, para <b>cosas</b>\n\nLa diferencia entre las dos es de qué estás hablando, y confundirlas es el tropiezo más corriente al empezar: <i>inor</i> es gente, <i>ezer</i> son cosas.\n\n<b>Y lo importante: piden un «ez» en la frase</b>\n\nEn castellano dices «<b>no</b> hay <b>nadie</b>», con dos negaciones. El euskera hace lo mismo:\n\n<b>Ez dago inor.</b> — No hay nadie.\n<b>Ez dut ezer esan.</b> — No he dicho nada.\n\nFíjate en el orden: el <b>ez</b> va delante del verbo, y <i>inor</i> o <i>ezer</i> van detrás. Por eso en el vocabulario los verás escritos <b>inor ez</b> — nadie y <b>ezer ez</b> — nada, con el <i>ez</i> pegado, para que no se te olvide que vienen acompañados.\n\nY ya tenías dos de la familia sin saberlo: <i>ezer ez</i> desde la séptima unidad e <i>inoiz ez</i> (nunca) desde la tercera.\n\n<b>En preguntas cambian de sentido</b>\n\nCon el <b>al</b> que acabas de ver, <i>inor</i> y <i>ezer</i> dejan de ser «nadie» y «nada» y pasan a ser «alguien» y «algo»:\n\n<b>Inor al dago etxean?</b> — ¿Hay alguien en casa?\n\nEs la misma palabra: lo que cambia es que la frase ya no afirma nada.",
+      "cuerpo": "En la tercera unidad viste la primera de las tres maneras de decir algo a medias: pegarle <b>edo-</b> delante a una pregunta.\n\n<i>nor</i> (quién) → <b>edonor</b> — cualquiera\n\nAquí llegan las otras dos, y salen de las mismas preguntas.\n\n<b>La primera: «-bait» al final, para decir «algún»</b>\n\n<i>nor</i> (quién) → <b>norbait</b> — alguien\n<i>zer</i> (qué) → <b>zerbait</b> — algo\n<i>non</i> (dónde) → <b>nonbait</b> — en algún sitio\n\n<b>norbait dago etxean</b> — Hay alguien en casa.\n<b>zerbait esan du</b> — Ha dicho algo.\n\n<b>La segunda: «nadie» y «nada»</b>\n\nEstas no se forman pegando nada: son palabras propias, y hay que aprendérselas aparte.\n\n<b>inor</b> — nadie, para <b>personas</b>\n<b>ezer</b> — nada, para <b>cosas</b>\n\nLa diferencia entre las dos es de qué estás hablando, y confundirlas es el tropiezo más corriente al empezar: <i>inor</i> es gente, <i>ezer</i> son cosas.\n\n<b>Y lo importante: piden un «ez» en la frase</b>\n\nEn castellano dices «<b>no</b> hay <b>nadie</b>», con dos negaciones. El euskera hace lo mismo:\n\n<b>ez dago inor</b> — No hay nadie.\n<b>ez dut ezer esan</b> — No he dicho nada.\n\nFíjate en el orden: el <b>ez</b> va delante del verbo, y <i>inor</i> o <i>ezer</i> van detrás. Por eso en el vocabulario los verás escritos <b>inor ez</b> — nadie y <b>ezer ez</b> — nada, con el <i>ez</i> pegado, para que no se te olvide que vienen acompañados.\n\nY ya tenías dos de la familia sin saberlo: <i>ezer ez</i> desde la séptima unidad e <i>inoiz ez</i> (nunca) desde la tercera.\n\n<b>En preguntas cambian de sentido</b>\n\nCon el <b>al</b> que acabas de ver, <i>inor</i> y <i>ezer</i> dejan de ser «nadie» y «nada» y pasan a ser «alguien» y «algo»:\n\n<b>inor al dago etxean?</b> — ¿Hay alguien en casa?\n\nEs la misma palabra: lo que cambia es que la frase ya no afirma nada.",
       "ejemplos": [
         {
-          "eu": "Norbait dago etxean.",
+          "eu": "norbait dago etxean",
           "es": "Hay alguien en casa.",
           "audio": "unidades/u12/norbait-dago-etxean.mp3"
         },
         {
-          "eu": "Ez dago inor.",
+          "eu": "ez dago inor",
           "es": "No hay nadie.",
           "audio": "unidades/u12/ez-dago-inor.mp3"
         },
         {
-          "eu": "Zerbait esan du.",
+          "eu": "zerbait esan du",
           "es": "Ha dicho algo.",
           "audio": "unidades/u12/zerbait-esan-du.mp3"
         }
@@ -100,25 +100,25 @@
     },
     {
       "titulo": "«Denak» y «bakarrik»",
-      "cuerpo": "Y dos más para cerrar el grupo:\n\n<b>denak</b> — todos\n<b>bakarrik</b> — solo, únicamente\n\n<b>denak</b> es un plural, así que el verbo va en plural:\n\n<b>Denak hemen daude.</b> — Todos están aquí.\n<b>Denak nire lagunak dira.</b> — Todos son mis amigos.\n\nOjo con uno: cuando «todos» es quien <i>hace</i> algo —el sujeto de un verbo que lleva objeto— <b>denak</b> cambia a <b>denek</b>:\n\n<b>Denek euskara ikasten dute.</b> — Todos aprenden euskera.\n\nLo que manda es el verbo: <i>daude</i> (están) no lleva objeto, así que va <b>denak</b>; <i>ikasten dute</i> (aprenden) sí lleva uno, el euskera, así que\nva <b>denek</b>.\n\n<b>bakarrik</b> se coloca <b>detrás</b> de la palabra a la que afecta, igual que\n<i>ere</i>:\n\n<b>Kafea bakarrik nahi dut.</b> — Solo quiero café.\n<b>Ura bakarrik nahi dut.</b> — Solo quiero agua.\n\nY si no hay nada delante al que agarrarse, pasa a significar «a solas»:\n\n<b>Bakarrik nago etxean.</b> — Estoy solo en casa.",
+      "cuerpo": "Y dos más para cerrar el grupo:\n\n<b>denak</b> — todos\n<b>bakarrik</b> — solo, únicamente\n\n<b>denak</b> es un plural, así que el verbo va en plural:\n\n<b>denak hemen daude</b> — Todos están aquí.\n<b>denak nire lagunak dira</b> — Todos son mis amigos.\n\nOjo con uno: cuando «todos» es quien <i>hace</i> algo —el sujeto de un verbo que lleva objeto— <b>denak</b> cambia a <b>denek</b>:\n\n<b>denek euskara ikasten dute</b> — Todos aprenden euskera.\n\nLo que manda es el verbo: <i>daude</i> (están) no lleva objeto, así que va <b>denak</b>; <i>ikasten dute</i> (aprenden) sí lleva uno, el euskera, así que\nva <b>denek</b>.\n\n<b>bakarrik</b> se coloca <b>detrás</b> de la palabra a la que afecta, igual que\n<i>ere</i>:\n\n<b>kafea bakarrik nahi dut</b> — Solo quiero café.\n<b>ura bakarrik nahi dut</b> — Solo quiero agua.\n\nY si no hay nada delante al que agarrarse, pasa a significar «a solas»:\n\n<b>bakarrik nago etxean</b> — Estoy solo en casa.",
       "ejemplos": [
         {
-          "eu": "Denak hemen daude.",
+          "eu": "denak hemen daude",
           "es": "Todos están aquí.",
           "audio": "unidades/u12/denak-hemen-daude.mp3"
         },
         {
-          "eu": "Denek euskara ikasten dute.",
+          "eu": "denek euskara ikasten dute",
           "es": "Todos aprenden euskera.",
           "audio": "unidades/u12/denek-euskara-ikasten-dute.mp3"
         },
         {
-          "eu": "Kafea bakarrik nahi dut.",
+          "eu": "kafea bakarrik nahi dut",
           "es": "Solo quiero café.",
           "audio": "unidades/u12/kafea-bakarrik-nahi-dut.mp3"
         },
         {
-          "eu": "Bakarrik nago etxean.",
+          "eu": "bakarrik nago etxean",
           "es": "Estoy solo en casa.",
           "audio": "unidades/u12/bakarrik-nago-etxean.mp3"
         }
@@ -130,17 +130,17 @@
       "cuerpo": "Los sufijos que has visto, sobre <i>etxe</i> (casa):\n\n<b>etxea</b> — la casa\n<b>etxeak</b> — las casas\n<b>etxean</b> — en la casa (non?)\n<b>etxera</b> — a la casa (nora?)\n<b>etxetik</b> — desde la casa (nondik?)\n<b>etxeko</b> — de la casa (nongoa?)\n<b>etxeetan / etxeetara / etxeetatik</b> — los mismos, en plural\n<b>etxerik</b> — casa (en negativas)\n\nY sobre personas: <b>-k</b> para el sujeto de un verbo con objeto (<i>nik</i>), <b>-ri</b> para «a quien» (<i>niri</i>), <b>-ren</b> para «de quien» (<i>nire</i>), <b>-rekin</b> para «con quien» (<i>nirekin</i>).\n\nLos verbos:\n<b>izan</b> — naiz, zara, da… / nintzen, zinen, zen…\n<b>ukan</b> — dut, duzu, du… / nuen, zenuen, zuen…\n<b>egon</b> — nago, zaude, dago… / nengoen, zeunden, zegoen…\n<b>joan</b> — noa, zoaz, doa… <b>etorri</b> — nator, zatoz, dator…\n<b>zait</b> y su serie, para los gustos.\n\nY las dos piezas: <b>jan dut</b> (he comido), <b>jaten dut</b> (como), <b>jan nuen</b> (comí), <b>jaten nuen</b> (comía).",
       "ejemplos": [
         {
-          "eu": "Etxetik etxera.",
+          "eu": "etxetik etxera",
           "es": "De casa a casa.",
           "audio": "unidades/u12/etxetik-etxera.mp3"
         },
         {
-          "eu": "Nirekin zatoz?",
+          "eu": "nirekin zatoz?",
           "es": "¿Vienes conmigo?",
           "audio": "unidades/u12/nirekin-zatoz.mp3"
         },
         {
-          "eu": "Jaten dut, jan dut, jan nuen.",
+          "eu": "jaten dut, jan dut, jan nuen",
           "es": "Como, he comido, comí.",
           "audio": "unidades/u12/jaten-dut-jan-dut-jan-nuen.mp3"
         }
@@ -152,12 +152,12 @@
       "cuerpo": "Con esto tienes un A1 completo: te presentas, preguntas, cuentas tu día, dices lo que te gusta, hablas del pasado y del futuro, comparas y das órdenes. Es suficiente para sostener una conversación corta y para entender bastante más de lo que puedes decir.\n\nLo que falta, por orden de utilidad:\n\n<b>Las subordinadas</b>: el <b>-la</b> de «dice que…», el <b>-n</b> de «cuando…», el <b>-lako</b> que ya has visto. Aquí es donde el euskera se pone realmente distinto del castellano.\n\n<b>Los verbos sintéticos</b> que faltan: <i>jakin</i> (saber: dakit, dakizu…), <i>ekarri</i> (traer), <i>eraman</i> (llevar).\n\n<b>El potencial y el condicional</b>: «podría», «si pudiera». Con <i>ahal</i> y <i>ezin</i> ya has asomado la cabeza.\n\nY cuatro palabras para hablar del idioma mientras lo aprendes, que es lo que vas a hacer a partir de ahora:\n\n<b>hitza</b> — la palabra\n<b>aditza</b> — el verbo\n<b>esaldia</b> — la frase\n<b>hurrengoa</b> — el siguiente\n\nPero antes de nada: habla. Con lo de estas doce unidades ya puedes.",
       "ejemplos": [
         {
-          "eu": "Hurrengo hitza, mesedez.",
+          "eu": "hurrengo hitza, mesedez",
           "es": "La siguiente palabra, por favor.",
           "audio": "unidades/u12/hurrengo-hitza-mesedez.mp3"
         },
         {
-          "eu": "Esaldi hau zaila da.",
+          "eu": "esaldi hau zaila da",
           "es": "Esta frase es difícil.",
           "audio": "unidades/u12/esaldi-hau-zaila-da.mp3"
         }
@@ -169,17 +169,17 @@
       "cuerpo": "El repaso del dialecto, que ha ido saliendo unidad a unidad:\n\n<b>naiz → naz</b>\n<b>dut → dot</b>\n<b>zaude → zagoz</b>\n<b>zait → jat</b>\n<b>nintzen → nintzan</b>\n<b>nuen → neban</b>\n<b>zegoen → egoan</b>\n<b>eman → emon</b> · <b>irten → urten</b>\n<b>nola → zelan</b>\n<b>-rekin → -gaz</b>\n<b>zer → ze</b>\nLos días: <b>martitzena, eguaztena, eguena, barikua, zapatua, domeka</b>\n\nY lo que faltaba:\n\n<b>ere → be</b>\n«También» es <b>be</b> en bizkaiera: <b>Ni be bai.</b> — Yo también. Es de las palabras que más se oyen.\n\n<b>zergatik → zegaitik</b>\nY «porque» es <b>-lako</b> en los dos.\n\n<b>ete</b>\nUna partícula preciosa que el batua casi no usa: marca la duda. <b>Etorriko ete da?</b> — ¿Vendrá?, me pregunto si vendrá.\n\n<b>-txu</b>\nEl diminutivo cariñoso. Donde el batua pone <i>-txo</i>, el bizkaiera pone <b>-txu</b>: <i>etxetxu</i>, <i>polittxu</i>.\n\nY el aviso de siempre: esto es bizkaiera de uso general, con Bilbao como referencia, no una norma calle por calle — y quien tenga menos de cuarenta años mezclará con batua sin darse cuenta, también en Bilbao. Úsalo para entender, no para corregir a nadie.",
       "ejemplos": [
         {
-          "eu": "Ni be bai.",
+          "eu": "ni be bai",
           "es": "Yo también. — batua: Ni ere bai.",
           "audio": "unidades/u12/ni-be-bai.mp3"
         },
         {
-          "eu": "Etorriko ete da?",
+          "eu": "etorriko ete da?",
           "es": "¿Vendrá? — matiz de duda.",
           "audio": "unidades/u12/etorriko-ete-da.mp3"
         },
         {
-          "eu": "Zegaitik?",
+          "eu": "zegaitik?",
           "es": "¿Por qué? — batua: Zergatik?",
           "audio": "unidades/u12/zegaitik.mp3"
         }

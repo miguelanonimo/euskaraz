@@ -34,20 +34,20 @@
   "gramatica": [
     {
       "titulo": "Más, menos, el que más",
-      "cuerpo": "El comparativo se pega detrás del adjetivo:\n\n<b>handi</b> (grande) → <b>handiago</b> — más grande\n<b>txiki</b> (pequeño) → <b>txikiago</b> — más pequeño\n<b>polit</b> (bonito) → <b>politago</b> — más bonito\n\nOjo: el adjetivo va aquí <b>sin el artículo -a</b>. <i>handia</i> es «grande», pero para comparar se parte de <i>handi</i>.\n\nY el «que» de la comparación es <b>baino</b>, que va <b>delante</b>:\n\n<b>Bilbo Gernika <u>baino</u> handiagoa da.</b> — Bilbao es más grande que Gernika.\n\nEl superlativo es <b>-ena</b>:\n<b>handiena</b> — el más grande\n<b>Bilbo Bizkaiko hiri handiena da.</b> — Bilbao es la ciudad más grande de Bizkaia.\n\nPara «tan… como», <b>bezain</b>:\n<b>Ni zu bezain altua naiz.</b> — Soy tan alto como tú.\n\nY tres irregulares que salen a diario:\n<b>ona</b> (bueno) → <b>hobea</b> (mejor) → <b>onena</b> (el mejor)\n<b>asko</b> (mucho) → <b>gehiago</b> (más) → <b>gehien</b> (el que más)\n<b>ondo</b> (bien) → <b>hobeto</b> (mejor)\n\nY los contrarios, que se forman igual:\n\n<b>gutxiago</b> — menos\n<b>txarragoa</b> — peor\n\nCuando no hay diferencia que marcar, <b>berdin</b> — igual:\n\n<b>Niretzat berdin da.</b> — Para mí es igual, me da lo mismo.",
+      "cuerpo": "El comparativo se pega detrás del adjetivo:\n\n<b>handi</b> (grande) → <b>handiago</b> — más grande\n<b>txiki</b> (pequeño) → <b>txikiago</b> — más pequeño\n<b>polit</b> (bonito) → <b>politago</b> — más bonito\n\nOjo: el adjetivo va aquí <b>sin el artículo -a</b>. <i>handia</i> es «grande», pero para comparar se parte de <i>handi</i>.\n\nY el «que» de la comparación es <b>baino</b>, que va <b>delante</b>:\n\n<b>Bilbo Gernika <u>baino</u> handiagoa da.</b> — Bilbao es más grande que Gernika.\n\nEl superlativo es <b>-ena</b>:\n<b>handiena</b> — el más grande\n<b>Bilbo Bizkaiko hiri handiena da</b> — Bilbao es la ciudad más grande de Bizkaia.\n\nPara «tan… como», <b>bezain</b>:\n<b>ni zu bezain altua naiz</b> — Soy tan alto como tú.\n\nY tres irregulares que salen a diario:\n<b>ona</b> (bueno) → <b>hobea</b> (mejor) → <b>onena</b> (el mejor)\n<b>asko</b> (mucho) → <b>gehiago</b> (más) → <b>gehien</b> (el que más)\n<b>ondo</b> (bien) → <b>hobeto</b> (mejor)\n\nY los contrarios, que se forman igual:\n\n<b>gutxiago</b> — menos\n<b>txarragoa</b> — peor\n\nCuando no hay diferencia que marcar, <b>berdin</b> — igual:\n\n<b>niretzat berdin da</b> — Para mí es igual, me da lo mismo.",
       "ejemplos": [
         {
-          "eu": "Bilbo Gernika baino handiagoa da.",
+          "eu": "Bilbo Gernika baino handiagoa da",
           "es": "Bilbao es más grande que Gernika.",
           "audio": "unidades/u12/bilbo-gernika-baino-handiagoa-da.mp3"
         },
         {
-          "eu": "Gaur hobeto nago.",
+          "eu": "gaur hobeto nago",
           "es": "Hoy estoy mejor.",
           "audio": "unidades/u12/gaur-hobeto-nago.mp3"
         },
         {
-          "eu": "Zu bezain azkar.",
+          "eu": "zu bezain azkar",
           "es": "Tan rápido como tú.",
           "audio": "unidades/u12/zu-bezain-azkar.mp3"
         }
@@ -56,20 +56,20 @@
     },
     {
       "titulo": "Los adjetivos que más se comparan",
-      "cuerpo": "Para comparar hacen falta adjetivos, y estos son los que salen a todas horas:\n\n<b>zaila</b> — difícil\n<b>erraza</b> — fácil\n<b>garrantzitsua</b> — importante\n\nMétele el <b>-ago</b> del tema anterior, acordándote de quitar el artículo, y ya los tienes comparando:\n\n<i>zail</i> → <b>zailagoa</b> — más difícil\n<i>erraz</i> → <b>errazagoa</b> — más fácil\n\n<b>Euskara zailagoa da?</b> — ¿Es más difícil el euskera?\n<b>Ez, uste baino errazagoa da.</b> — No, es más fácil de lo que parece.\n\nY dos adverbios que también se comparan, y que te van a hacer falta pidiendo que te repitan las cosas:\n\n<b>azkar</b> — rápido\n<b>poliki</b> — despacio\n\n<b>Poliki, mesedez.</b> — Despacio, por favor.\n\nEsa frase, dicha a tiempo, vale más que media unidad.\n\nY tienes una segunda palabra para lo mismo, que conviene conocer:\n\n<b>astiro</b> — despacio\n\nLas dos son correctas y aquí valen igual: <b>Astiro, mesedez.</b> es tan bueno como <i>Poliki, mesedez.</i>\n\nLa diferencia es que <b>poliki</b> significa también «bien, con gracia» —viene de <i>polit</i>, bonito—, así que arrastra ese otro sentido. <b>astiro</b> solo quiere decir despacio, y se explica solo si te fijas: lleva dentro <b>astia</b>, el tiempo del que dispones, que viste en la cuarta unidad. Ir <i>astiro</i> es ir tomándose el tiempo.",
+      "cuerpo": "Para comparar hacen falta adjetivos, y estos son los que salen a todas horas:\n\n<b>zaila</b> — difícil\n<b>erraza</b> — fácil\n<b>garrantzitsua</b> — importante\n\nMétele el <b>-ago</b> del tema anterior, acordándote de quitar el artículo, y ya los tienes comparando:\n\n<i>zail</i> → <b>zailagoa</b> — más difícil\n<i>erraz</i> → <b>errazagoa</b> — más fácil\n\n<b>euskara zailagoa da?</b> — ¿Es más difícil el euskera?\n<b>ez, uste baino errazagoa da</b> — No, es más fácil de lo que parece.\n\nY dos adverbios que también se comparan, y que te van a hacer falta pidiendo que te repitan las cosas:\n\n<b>azkar</b> — rápido\n<b>poliki</b> — despacio\n\n<b>poliki, mesedez</b> — Despacio, por favor.\n\nEsa frase, dicha a tiempo, vale más que media unidad.\n\nY tienes una segunda palabra para lo mismo, que conviene conocer:\n\n<b>astiro</b> — despacio\n\nLas dos son correctas y aquí valen igual: <b>Astiro, mesedez.</b> es tan bueno como <i>Poliki, mesedez.</i>\n\nLa diferencia es que <b>poliki</b> significa también «bien, con gracia» —viene de <i>polit</i>, bonito—, así que arrastra ese otro sentido. <b>astiro</b> solo quiere decir despacio, y se explica solo si te fijas: lleva dentro <b>astia</b>, el tiempo del que dispones, que viste en la cuarta unidad. Ir <i>astiro</i> es ir tomándose el tiempo.",
       "ejemplos": [
         {
-          "eu": "Poliki, mesedez.",
+          "eu": "poliki, mesedez",
           "es": "Despacio, por favor.",
           "audio": "unidades/u11/poliki-mesedez.mp3"
         },
         {
-          "eu": "Euskara zaila da?",
+          "eu": "euskara zaila da?",
           "es": "¿Es difícil el euskera?",
           "audio": "unidades/u11/euskara-zaila-da.mp3"
         },
         {
-          "eu": "Hau errazagoa da.",
+          "eu": "hau errazagoa da",
           "es": "Esto es más fácil.",
           "audio": "unidades/u11/hau-errazagoa-da.mp3"
         }
@@ -82,17 +82,17 @@
       "cuerpo": "De todas las cosas que has aprendido, esta es de las más sencillas. Para hablar de lo que va a pasar, al verbo se le pega <b>-ko</b> (o <b>-go</b>) y el auxiliar se queda igual:\n\n<b>joan</b> → <b>joango naiz</b> — iré, voy a ir\n<b>egin</b> → <b>egingo dut</b> — haré, voy a hacer\n<b>ikasi</b> → <b>ikasiko dut</b> — estudiaré\n<b>esan</b> → <b>esango dut</b> — diré\n\n¿Cuándo <i>-ko</i> y cuándo <i>-go</i>? Por comodidad al hablar: detrás de <b>n</b> se pone <b>-go</b> (joan → joango, egin → egingo, esan → esango), y en los demás casos <b>-ko</b>.\n\nEs la misma lógica que hace que digamos «un» y no «uno» delante de nombre: la lengua busca lo que suena mejor.",
       "ejemplos": [
         {
-          "eu": "Bihar joango naiz.",
+          "eu": "bihar joango naiz",
           "es": "Mañana iré.",
           "audio": "unidades/u11/bihar-joango-naiz.mp3"
         },
         {
-          "eu": "Zer egingo duzu?",
+          "eu": "zer egingo duzu?",
           "es": "¿Qué vas a hacer?",
           "audio": "unidades/u11/zer-egingo-duzu.mp3"
         },
         {
-          "eu": "Euskara ikasiko dut.",
+          "eu": "euskara ikasiko dut",
           "es": "Aprenderé euskera.",
           "audio": "unidades/u11/euskara-ikasiko-dut.mp3"
         }
@@ -101,25 +101,25 @@
     {
       "subnivel": "11.2",
       "titulo": "Los tres tiempos, uno al lado del otro",
-      "cuerpo": "Ahora ya los tienes todos. Mira el mismo verbo en los tres:\n\n<b>Atzo joan nintzen.</b> — Ayer fui.\n<b>Askotan joaten naiz.</b> — Voy a menudo.\n<b>Bihar joango naiz.</b> — Mañana iré.\n\nFíjate en que el auxiliar es el que carga con casi todo el trabajo, y el verbo solo cambia de terminación: <i>joan</i>, <i>joaten</i>, <i>joango</i>.\n\nOjo con el del medio, que no es «hoy voy». <b>joaten naiz</b> es «suelo ir», la forma de la costumbre que ya viste en la octava unidad. Para decir que vas ahora, o que vas hoy a un sitio concreto, el euskera tira de la forma corta: <b>Bilbora noa.</b> — Voy a Bilbao.\n\nEse es, en una línea, el motor del euskera que llevas todo el curso montando.\n\nY dos palabras para hablar de lo que viene:\n\n<b>etorkizuna</b> — el futuro\n<b>asmoa</b> — la intención, el plan\n\n<i>Etorkizuna</i> tiene dentro <i>etorri</i>, venir: literalmente, «lo que ha de venir». Y <b>asmoa dut</b> es «tengo la intención de», que es como se dicen la mitad de los planes.\n\n<b>Y ahora sí, los tres auxiliares enteros</b>\nYa has visto los tres tiempos por separado. Aquí están juntos, que es cuando cobra sentido mirarlos de golpe:\n\n<i>izan</i> (ser, estar)\n<b>ni</b> — naiz · nintzen · izango naiz\n<b>hura</b> — da · zen · izango da\n<b>haiek</b> — dira · ziren · izango dira\n\n<i>ukan</i> (tener, haber)\n<b>nik</b> — dut · nuen · izango dut\n<b>hark</b> — du · zuen · izango du\n<b>haiek</b> — dute · zuten · izango dute\n\n<i>egon</i> (estar)\n<b>ni</b> — nago · nengoen · egongo naiz\n<b>hura</b> — dago · zegoen · egongo da\n<b>haiek</b> — daude · zeuden · egongo dira\n\nUna sorpresa de la última columna: el futuro de «tener» es <b>izango dut</b>, con el participio de <i>izan</i>. No hay ningún <i>ukango</i>. Los dos auxiliares comparten participio, y lo que distingue «seré» de «tendré» es el auxiliar de detrás: <b>izango naiz</b> frente a <b>izango dut</b>.",
+      "cuerpo": "Ahora ya los tienes todos. Mira el mismo verbo en los tres:\n\n<b>atzo joan nintzen</b> — Ayer fui.\n<b>askotan joaten naiz</b> — Voy a menudo.\n<b>bihar joango naiz</b> — Mañana iré.\n\nFíjate en que el auxiliar es el que carga con casi todo el trabajo, y el verbo solo cambia de terminación: <i>joan</i>, <i>joaten</i>, <i>joango</i>.\n\nOjo con el del medio, que no es «hoy voy». <b>joaten naiz</b> es «suelo ir», la forma de la costumbre que ya viste en la octava unidad. Para decir que vas ahora, o que vas hoy a un sitio concreto, el euskera tira de la forma corta: <b>Bilbora noa.</b> — Voy a Bilbao.\n\nEse es, en una línea, el motor del euskera que llevas todo el curso montando.\n\nY dos palabras para hablar de lo que viene:\n\n<b>etorkizuna</b> — el futuro\n<b>asmoa</b> — la intención, el plan\n\n<i>Etorkizuna</i> tiene dentro <i>etorri</i>, venir: literalmente, «lo que ha de venir». Y <b>asmoa dut</b> es «tengo la intención de», que es como se dicen la mitad de los planes.\n\n<b>Y ahora sí, los tres auxiliares enteros</b>\nYa has visto los tres tiempos por separado. Aquí están juntos, que es cuando cobra sentido mirarlos de golpe:\n\n<i>izan</i> (ser, estar)\n<b>ni</b> — naiz · nintzen · izango naiz\n<b>hura</b> — da · zen · izango da\n<b>haiek</b> — dira · ziren · izango dira\n\n<i>ukan</i> (tener, haber)\n<b>nik</b> — dut · nuen · izango dut\n<b>hark</b> — du · zuen · izango du\n<b>haiek</b> — dute · zuten · izango dute\n\n<i>egon</i> (estar)\n<b>ni</b> — nago · nengoen · egongo naiz\n<b>hura</b> — dago · zegoen · egongo da\n<b>haiek</b> — daude · zeuden · egongo dira\n\nUna sorpresa de la última columna: el futuro de «tener» es <b>izango dut</b>, con el participio de <i>izan</i>. No hay ningún <i>ukango</i>. Los dos auxiliares comparten participio, y lo que distingue «seré» de «tendré» es el auxiliar de detrás: <b>izango naiz</b> frente a <b>izango dut</b>.",
       "ejemplos": [
         {
-          "eu": "Atzo joan nintzen.",
+          "eu": "atzo joan nintzen",
           "es": "Ayer fui.",
           "audio": "unidades/u11/atzo-joan-nintzen.mp3"
         },
         {
-          "eu": "Astelehenero azokara joaten naiz.",
+          "eu": "astelehenero azokara joaten naiz",
           "es": "Todos los lunes voy a la feria.",
           "audio": "unidades/u9/astelehenero-azokara-joaten-naiz.mp3"
         },
         {
-          "eu": "Bihar joango naiz.",
+          "eu": "bihar joango naiz",
           "es": "Mañana iré.",
           "audio": "unidades/u11/bihar-joango-naiz.mp3"
         },
         {
-          "eu": "Zer asmo duzu bihar?",
+          "eu": "zer asmo duzu bihar?",
           "es": "¿Qué planes tienes mañana?",
           "audio": "unidades/u11/zer-asmo-duzu-bihar.mp3"
         }

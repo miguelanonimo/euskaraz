@@ -43,17 +43,17 @@
       "cuerpo": "El euskera distingue <b>ser</b> (izan) de <b>estar</b> (egon), igual que el castellano:\n\n<b>ni nago</b> — yo estoy\n<b>zu zaude</b> — tú estás\n<b>hura dago</b> — él/ella está\n<b>gu gaude</b> — nosotros estamos\n<b>zuek zaudete</b> — vosotros estáis\n<b>haiek daude</b> — ellos están\n\nFíjate en que el sujeto <b>no lleva -k</b>. «Estar» no tiene complemento directo, así que se comporta como «ser»: <i>ni nago</i>, no «nik nago».\n\nSe usa para ubicación y para estados pasajeros, más o menos como en castellano.",
       "ejemplos": [
         {
-          "eu": "Ni etxean nago.",
+          "eu": "ni etxean nago",
           "es": "Estoy en casa.",
           "audio": "unidades/u6/ni-etxean-nago.mp3"
         },
         {
-          "eu": "Non zaude?",
+          "eu": "non zaude?",
           "es": "¿Dónde estás?",
           "audio": "unidades/u6/non-zaude.mp3"
         },
         {
-          "eu": "Oso ondo nago.",
+          "eu": "oso ondo nago",
           "es": "Estoy muy bien.",
           "audio": "unidades/u6/oso-ondo-nago.mp3"
         }
@@ -65,17 +65,17 @@
       "cuerpo": "Lo anticipamos en la unidad de preguntas: <b>Non?</b> se responde con <b>-n</b>. Aquí van los detalles.\n\nEl euskera no tiene preposiciones delante: pone sufijos detrás. El <b>-n</b> va después del artículo:\n\n<b>etxea</b> (la casa) → <b>etxean</b> (en la casa)\n<b>eskola</b> (la escuela) → <b>eskolan</b>\n<b>kalea</b> (la calle) → <b>kalean</b>\n\nCon nombres de lugar, se añade <b>-n</b> directamente si acaba en vocal:\n\n<b>Bilbo</b> → <b>Bilbon</b>\n<b>Gernika</b> → <b>Gernikan</b>\n\nSi acaba en consonante, se intercala una -e-: <b>Gasteiz</b> → <b>Gasteizen</b>.",
       "ejemplos": [
         {
-          "eu": "Bilbon bizi naiz.",
+          "eu": "Bilbon bizi naiz",
           "es": "Vivo en Bilbao.",
           "audio": "unidades/u6/bilbon-bizi-naiz.mp3"
         },
         {
-          "eu": "Lanean nago.",
+          "eu": "lanean nago",
           "es": "Estoy en el trabajo.",
           "audio": "unidades/u6/lanean-nago.mp3"
         },
         {
-          "eu": "Sukaldean dago.",
+          "eu": "sukaldean dago",
           "es": "Está en la cocina.",
           "audio": "unidades/u6/sukaldean-dago.mp3"
         }
@@ -84,20 +84,20 @@
     },
     {
       "titulo": "«Bere» o «haren»: dos maneras de decir «su»",
-      "cuerpo": "En la segunda unidad te avisé de que <i>haren</i> tenía compañera, <b>bere</b>, y de que la diferencia no se podía ver todavía. Aquí sí, porque ya sabes montar una frase con alguien dentro.\n\n<b>Jon bere etxean dago.</b> — Jon está en su casa. En la suya.\n<b>Jon haren etxean dago.</b> — Jon está en su casa. En la de otro.\n\nLa misma frase en castellano, dos situaciones distintas en euskera. El castellano dice «su» para las dos y lo deja al contexto; el euskera lo resuelve con la palabra.\n\n<b>La regla, en una línea</b>\nSi el dueño es quien hace o recibe la acción de esa misma frase, <b>bere</b>. Si el dueño está fuera de la frase, <b>haren</b>.\n\nEso explica por qué en la unidad 2 solo salía <i>haren</i>: con «ser» el dueño nunca está dentro (<i>haren laguna ikaslea da</i> — su amigo es estudiante).\n\n<b>En plural, igual</b>\n<b>beren</b> — lo suyo, de ellos mismos\n<b>haien</b> — lo de aquellos otros\n\n<b>Y ahora, la realidad</b>\nEso es la norma escrita. Hablando —y en Bizkaia especialmente— <b>bere</b> se ha comido a <i>haren</i> y se usa para todo. Euskaltzaindia no ha dictado una norma cerrada sobre esto, pero su gramática y su manual recogen la regla de arriba y avisan de que en los dialectos occidentales se está perdiendo la distinción, con la ambigüedad que eso trae.\n\nTraducido a lo práctico: si oyes <i>bere</i> donde esperabas <i>haren</i>, no es que hablen mal, es el uso real. Y si escribes, mantener la diferencia es fácil y se entiende mejor.",
+      "cuerpo": "En la segunda unidad te avisé de que <i>haren</i> tenía compañera, <b>bere</b>, y de que la diferencia no se podía ver todavía. Aquí sí, porque ya sabes montar una frase con alguien dentro.\n\n<b>Jon bere etxean dago</b> — Jon está en su casa. En la suya.\n<b>Jon haren etxean dago</b> — Jon está en su casa. En la de otro.\n\nLa misma frase en castellano, dos situaciones distintas en euskera. El castellano dice «su» para las dos y lo deja al contexto; el euskera lo resuelve con la palabra.\n\n<b>La regla, en una línea</b>\nSi el dueño es quien hace o recibe la acción de esa misma frase, <b>bere</b>. Si el dueño está fuera de la frase, <b>haren</b>.\n\nEso explica por qué en la unidad 2 solo salía <i>haren</i>: con «ser» el dueño nunca está dentro (<i>haren laguna ikaslea da</i> — su amigo es estudiante).\n\n<b>En plural, igual</b>\n<b>beren</b> — lo suyo, de ellos mismos\n<b>haien</b> — lo de aquellos otros\n\n<b>Y ahora, la realidad</b>\nEso es la norma escrita. Hablando —y en Bizkaia especialmente— <b>bere</b> se ha comido a <i>haren</i> y se usa para todo. Euskaltzaindia no ha dictado una norma cerrada sobre esto, pero su gramática y su manual recogen la regla de arriba y avisan de que en los dialectos occidentales se está perdiendo la distinción, con la ambigüedad que eso trae.\n\nTraducido a lo práctico: si oyes <i>bere</i> donde esperabas <i>haren</i>, no es que hablen mal, es el uso real. Y si escribes, mantener la diferencia es fácil y se entiende mejor.",
       "ejemplos": [
         {
-          "eu": "Jon bere etxean dago.",
+          "eu": "Jon bere etxean dago",
           "es": "Jon está en su casa (en la suya).",
           "audio": "unidades/u5/jon-bere-etxean-dago.mp3"
         },
         {
-          "eu": "Jon haren etxean dago.",
+          "eu": "Jon haren etxean dago",
           "es": "Jon está en casa de otro.",
           "audio": "unidades/u5/jon-haren-etxean-dago.mp3"
         },
         {
-          "eu": "Beren etxean daude.",
+          "eu": "beren etxean daude",
           "es": "Están en su casa (en la de ellos).",
           "audio": "unidades/u5/beren-etxean-daude.mp3"
         }
@@ -109,17 +109,17 @@
       "cuerpo": "Ahora ya puedes cerrar el cuadro que empezaste en la tercera unidad:\n\n<b>Non?</b> (¿dónde?) → <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\nCuatro preguntas, cuatro sufijos, y la respuesta lleva siempre la misma cola que la pregunta.\n\nEste sistema de sufijos que encajan unos con otros es el corazón del euskera. Cuando llegues a los casos que faltan (a quién, con quién, para quién), ya sabrás cómo funciona el mecanismo.\n\nY las tres palabras con las que se contesta sin nombrar el sitio:\n\n<b>hemen</b> — aquí\n<b>hor</b> — ahí\n<b>han</b> — allí\n\nSon las hermanas de <i>hau</i>, <i>hori</i> y <i>hura</i>, los demostrativos de la tercera unidad, y van con su mismo criterio: no cuenta la distancia en metros, sino de quién está cerca.\n\n<b>hemen</b> (aquí) ↔ <i>hau</i> (este) — donde estoy yo\n<b>hor</b> (ahí) ↔ <i>hori</i> (ese) — donde estás tú\n<b>han</b> (allí) ↔ <i>hura</i> (aquel) — lejos de los dos\n\nY entran en el mismo cuadro de arriba — <i>hemendik</i> es «desde aquí», <i>hona</i> «hacia aquí».",
       "ejemplos": [
         {
-          "eu": "Non zaude? — Etxean nago.",
+          "eu": "non zaude? — etxean nago",
           "es": "¿Dónde estás? — Estoy en casa.",
           "audio": "unidades/u6/non-zaude-etxean-nago.mp3"
         },
         {
-          "eu": "Nongoa zara? — Bilbokoa naiz.",
+          "eu": "nongoa zara? — Bilbokoa naiz",
           "es": "¿De dónde eres? — Soy de Bilbao.",
           "audio": "unidades/u6/nongoa-zara-bilbokoa-naiz.mp3"
         },
         {
-          "eu": "Nora zoaz? — Bilbora.",
+          "eu": "nora zoaz? — Bilbora",
           "es": "¿Adónde vas? — A Bilbao.",
           "audio": "unidades/u6/nora-zoaz-bilbora.mp3"
         }
@@ -153,17 +153,17 @@
       "cuerpo": "<b>egon en bizkaiera</b>\n\n<b>ni nago</b> — igual que en batua\n<b>zu zagoz</b> — batua: zaude\n<b>hura dago</b> — igual\n<b>gu gagoz</b> — gaude\n<b>zuek zagoze</b> — zaudete\n<b>haiek dagoz</b> — daude\n\nOtra vez esa <b>-z</b> del plural que ya viste en <i>doguz</i>. Es un rasgo sistemático del bizkaiera, no un capricho suelto.\n\nAsí que «¿dónde estás?» en Bilbao es <b>Non zagoz?</b>\n\n<b>Zelan y zelango</b>\nAl <i>zelan</i> (cómo) se le añade el mismo <i>-ko</i> que a los lugares: <b>zelango</b> = «de qué tipo». Donde el batua dice <i>nolako etxea?</i>, el bizkaiera dice <b>zelango etxea?</b>",
       "ejemplos": [
         {
-          "eu": "Non zagoz?",
+          "eu": "non zagoz?",
           "es": "¿Dónde estás? (bizkaiera) — batua: Non zaude?",
           "audio": "unidades/u6/non-zagoz.mp3"
         },
         {
-          "eu": "Zelango etxea da?",
+          "eu": "zelango etxea da?",
           "es": "¿De qué tipo de casa es? — batua cambia «zelango» por «nolako».",
           "audio": "unidades/u6/zelango-etxea-da.mp3"
         },
         {
-          "eu": "Haiek tabernan dagoz.",
+          "eu": "haiek tabernan dagoz",
           "es": "Ellos están en el bar. — batua: daude.",
           "audio": "unidades/u6/haiek-tabernan-dagoz.mp3"
         }
@@ -173,7 +173,7 @@
     },
     {
       "titulo": "Los colores van donde van los adjetivos",
-      "cuerpo": "Nada nuevo, en realidad: los colores son adjetivos y se colocan igual que <i>handi</i> o <i>txiki</i>, que ya viste en esta unidad. Detrás del sustantivo, y con el artículo al final del grupo:\n\n<b>etxe</b> + <b>gorri</b> + <b>-a</b> → <b>etxe gorria</b> (la casa roja)\n<b>mahai</b> + <b>zuri</b> + <b>-a</b> → <b>mahai zuria</b> (la mesa blanca)\n\nFíjate en que el color pierde su <i>-a</i> de diccionario cuando va acompañando: no es «etxe gorriaa», el artículo se pone una vez y punto.\n\nY con posesivo delante, como siempre:\n\n<b>Nire logela urdina da.</b> — Mi habitación es azul.\n\nLa paleta entera del tema:\n\n<b>gorria</b> — rojo\n<b>urdina</b> — azul\n<b>horia</b> — amarillo\n<b>berdea</b> — verde\n<b>zuria</b> — blanco\n<b>beltza</b> — negro\n<b>grisa</b> — gris\n<b>marroia</b> — marrón\n<b>arrosa</b> — rosa\n<b>morea</b> — morado\n<b>laranja</b> — naranja\n\nVarios se reconocen a la primera —<i>grisa</i>, <i>marroia</i>, <i>arrosa</i>—, así que la lista es más corta de lo que parece.",
+      "cuerpo": "Nada nuevo, en realidad: los colores son adjetivos y se colocan igual que <i>handi</i> o <i>txiki</i>, que ya viste en esta unidad. Detrás del sustantivo, y con el artículo al final del grupo:\n\n<b>etxe</b> + <b>gorri</b> + <b>-a</b> → <b>etxe gorria</b> (la casa roja)\n<b>mahai</b> + <b>zuri</b> + <b>-a</b> → <b>mahai zuria</b> (la mesa blanca)\n\nFíjate en que el color pierde su <i>-a</i> de diccionario cuando va acompañando: no es «etxe gorriaa», el artículo se pone una vez y punto.\n\nY con posesivo delante, como siempre:\n\n<b>nire logela urdina da</b> — Mi habitación es azul.\n\nLa paleta entera del tema:\n\n<b>gorria</b> — rojo\n<b>urdina</b> — azul\n<b>horia</b> — amarillo\n<b>berdea</b> — verde\n<b>zuria</b> — blanco\n<b>beltza</b> — negro\n<b>grisa</b> — gris\n<b>marroia</b> — marrón\n<b>arrosa</b> — rosa\n<b>morea</b> — morado\n<b>laranja</b> — naranja\n\nVarios se reconocen a la primera —<i>grisa</i>, <i>marroia</i>, <i>arrosa</i>—, así que la lista es más corta de lo que parece.",
       "ejemplos": [
         {
           "eu": "etxe gorria",
@@ -186,7 +186,7 @@
           "audio": "unidades/u5/mahai-zuria.mp3"
         },
         {
-          "eu": "Nire logela urdina da.",
+          "eu": "nire logela urdina da",
           "es": "Mi habitación es azul.",
           "audio": "unidades/u5/nire-logela-urdina-da.mp3"
         }
@@ -195,20 +195,20 @@
     },
     {
       "titulo": "Para decir «una» hace falta «bat»",
-      "cuerpo": "Este es un tropiezo clásico viniendo del castellano. Mira las dos:\n\n<b>mahai zuria</b> — <i>la</i> mesa blanca\n<b>mahai zuri bat</b> — <i>una</i> mesa blanca\n\nEl <b>-a</b> del final es «el/la». Si quieres decir «un» o «una», se quita ese artículo y se pone <b>bat</b> detrás de todo.\n\nY ojo cuando hay dos cosas: cada una lleva su <i>bat</i>.\n\n<b>Mahai zuria eta aulki beltza.</b> — La mesa blanca y la silla negra.\n<b>Mahai zuri bat eta aulki beltz bat.</b> — Una mesa blanca y una silla negra.\n\n<b>¿Y si son varias?</b>\n\nPara «unos» o «unas» hay una palabra hermana: <b>batzuk</b>. Se coloca igual, detrás de todo, y el nombre sigue sin artículo:\n\n<b>mahai bat</b> — una mesa\n<b>mahai batzuk</b> — unas mesas\n\nCompáralo con lo que ya sabes y se ve solo. La <b>-ak</b> es «los/las», algo concreto; <b>batzuk</b> es «unos/unas», sin concretar:\n\n<b>mahaiak</b> — las mesas (esas, las que sabemos)\n<b>mahai batzuk</b> — unas mesas (algunas, cualesquiera)\n\nEs la misma diferencia que en castellano entre «trae las sillas» y «trae unas sillas». Y fíjate en que <i>batzuk</i> ya lleva el plural dentro: no se dice «mahaiak batzuk».",
+      "cuerpo": "Este es un tropiezo clásico viniendo del castellano. Mira las dos:\n\n<b>mahai zuria</b> — <i>la</i> mesa blanca\n<b>mahai zuri bat</b> — <i>una</i> mesa blanca\n\nEl <b>-a</b> del final es «el/la». Si quieres decir «un» o «una», se quita ese artículo y se pone <b>bat</b> detrás de todo.\n\nY ojo cuando hay dos cosas: cada una lleva su <i>bat</i>.\n\n<b>mahai zuria eta aulki beltza</b> — La mesa blanca y la silla negra.\n<b>mahai zuri bat eta aulki beltz bat</b> — Una mesa blanca y una silla negra.\n\n<b>¿Y si son varias?</b>\n\nPara «unos» o «unas» hay una palabra hermana: <b>batzuk</b>. Se coloca igual, detrás de todo, y el nombre sigue sin artículo:\n\n<b>mahai bat</b> — una mesa\n<b>mahai batzuk</b> — unas mesas\n\nCompáralo con lo que ya sabes y se ve solo. La <b>-ak</b> es «los/las», algo concreto; <b>batzuk</b> es «unos/unas», sin concretar:\n\n<b>mahaiak</b> — las mesas (esas, las que sabemos)\n<b>mahai batzuk</b> — unas mesas (algunas, cualesquiera)\n\nEs la misma diferencia que en castellano entre «trae las sillas» y «trae unas sillas». Y fíjate en que <i>batzuk</i> ya lleva el plural dentro: no se dice «mahaiak batzuk».",
       "ejemplos": [
         {
-          "eu": "Mahai zuri bat.",
+          "eu": "mahai zuri bat",
           "es": "Una mesa blanca.",
           "audio": "unidades/u5/mahai-zuri-bat.mp3"
         },
         {
-          "eu": "Mahai batzuk.",
+          "eu": "mahai batzuk",
           "es": "Unas mesas.",
           "audio": "unidades/u5/mahai-batzuk.mp3"
         },
         {
-          "eu": "Aulki batzuk beltzak dira.",
+          "eu": "aulki batzuk beltzak dira",
           "es": "Unas sillas son negras.",
           "audio": "unidades/u5/aulki-batzuk-beltzak-dira.mp3"
         }
@@ -232,17 +232,17 @@
       "cuerpo": "Este tema es sobre todo vocabulario, y hay bastante. Ordenado se aprende mucho mejor que en una lista suelta, así que aquí va por zonas.\n\n<b>Lo que ves antes de entrar</b>\n\n<b>etxea</b> — la casa\n<b>atea</b> — la puerta\n<b>sarrera</b> — la entrada\n<b>eskailerak</b> — las escaleras\n<b>igogailua</b> — el ascensor\n<b>balkoia</b> — el balcón\n<b>lorategia</b> — el jardín\n<b>garajea</b> — el garaje\n<b>teilatua</b> — el tejado\n<b>horma</b> — la pared\n\n<b>Lo que hay dentro</b>\n\n<b>sukaldea</b> — la cocina\n<b>mahaia</b> — la mesa\n<b>aulkia</b> — la silla\n<b>ohea</b> — la cama\n<b>armairua</b> — el armario\n<b>sofa</b> — el sofá\n<b>telebista</b> — la televisión\n<b>hozkailua</b> — la nevera\n<b>leihoa</b> — la ventana\n<b>argia</b> — la luz\n<b>dutxa</b> — la ducha\n<b>ispilua</b> — el espejo\n\nLas habitaciones van aparte, en la ficha de al lado, porque tienen su propia lógica.\n\n<b>Dos que se descifran solas</b>\n\nFíjate en <i>igogailua</i> y <i>hozkailua</i>. Las dos acaban en <b>-gailu</b>, que es la pieza de «aparato»:\n\n<i>igo</i> (subir) + <b>-gailu</b> → <b>igogailua</b>, el aparato de subir\n<i>hotz</i> (frío) + <b>-gailu</b> → <b>hozkailua</b>, el aparato del frío\n\nLa consonante se ajusta al juntarse —<i>hotz</i> + <i>gailu</i> sale <i>hozkailu</i>—, la misma comodidad al hablar que hacía que <i>-ko</i> se volviera <i>-go</i> en la segunda unidad.\n\nEs un sufijo muy rentable: cuando más adelante te encuentres <i>garbigailua</i> (la lavadora) o <i>lehorgailua</i> (el secador), ya no serán palabras nuevas.\n\n<b>Y unas cuantas que ya sabes sin saberlo</b>\n\n<i>sofa</i>, <i>telebista</i>, <i>garajea</i>, <i>balkoia</i>, <i>dutxa</i>: son préstamos, y se entienden a la primera. De las veintitantas de este tema, esas cinco vienen regaladas.\n\n<b>Un apunte de «sukaldea»</b>\n\nPor dentro es <i>su</i> (fuego) + <i>alde</i> (lado, zona) + <b>-a</b>, el artículo: literalmente, «la zona del fuego», que es donde estaba el fogón de la casa. Y ojo, ese <i>alde</i> no tiene nada que ver con la «aldea» del castellano.\n\nSirve para las dos cosas: <b>la cocina como habitación</b> y <b>la cocina como aparato</b>, el fogón donde se guisa. Igual que en castellano.",
       "ejemplos": [
         {
-          "eu": "Non dago komuna?",
+          "eu": "non dago komuna?",
           "es": "¿Dónde está el baño?",
           "audio": "unidades/u5/non-dago-komuna.mp3"
         },
         {
-          "eu": "Telebista egongelan dago.",
+          "eu": "telebista egongelan dago",
           "es": "La televisión está en el salón.",
           "audio": "unidades/u5/telebista-egongelan-dago.mp3"
         },
         {
-          "eu": "Mahai bat eta lau aulki.",
+          "eu": "mahai bat eta lau aulki",
           "es": "Una mesa y cuatro sillas.",
           "audio": "unidades/u5/mahai-bat-eta-lau-aulki.mp3"
         }
@@ -254,17 +254,17 @@
       "cuerpo": "Ya conoces <b>gela</b> (la habitación, el aula) y <b>logela</b> (el dormitorio). Pues el patrón sigue, y una vez lo ves te ahorras memorizar:\n\n<b>lo</b> (dormir) + gela → <b>logela</b>, el dormitorio\n<b>jan</b> (comer) + gela → <b>jangela</b>, el comedor\n<b>egon</b> (estar) + gela → <b>egongela</b>, el salón — literalmente «la habitación de estar»\n<b>bainu</b> (baño) + gela → <b>bainugela</b>, el cuarto de baño\n\nDe esas cuatro piezas ya tienes dos: <b>gela</b>, de hace un momento, y <b>egon</b>, del tema anterior de esta misma unidad. <i>Jan</i> (comer) llega en la unidad 7; apúntatela de paso, que aquí ya la ves trabajando.\n\n<b>Y ahora la que más te va a hacer falta fuera de casa.</b>\n\nEn casa, el cuarto de baño es <b>bainugela</b>. Pero en un bar, en un restaurante o en un museo, lo que se pregunta y lo que verás escrito en la puerta es otra palabra:\n\n<b>komuna</b> — el baño, el servicio\n\nY casi siempre en plural, porque son varios: <b>Komunak</b>. Es lo que pone en los carteles.\n\nAsí que si te pierdes buscándolo, la frase es <b>Non dago komuna?</b> — ¿dónde está el baño? Con <i>non</i> y <i>dago</i>, que ya son tuyos. <i>Bainugela</i> ahí no sonaría mal, pero sonaría a que preguntas por el cuarto de baño de una casa.",
       "ejemplos": [
         {
-          "eu": "Non dago komuna?",
+          "eu": "non dago komuna?",
           "es": "¿Dónde está el baño?",
           "audio": "unidades/u5/non-dago-komuna.mp3"
         },
         {
-          "eu": "Komunak",
+          "eu": "komunak",
           "es": "Servicios — lo que pone en la puerta.",
           "audio": "unidades/u5/komunak.mp3"
         },
         {
-          "eu": "Bainugela handia da.",
+          "eu": "bainugela handia da",
           "es": "El cuarto de baño es grande.",
           "audio": "unidades/u5/bainugela-handia-da.mp3"
         }
@@ -298,20 +298,20 @@
     },
     {
       "titulo": "«Etxea» es la casa; «baserria» es la casa con todo lo vivo dentro",
-      "cuerpo": "Llevas toda la unidad con <b>etxea</b>, la casa. Pues hay otra palabra que conviene conocer antes de aprenderse los animales, porque explica por qué van juntos:\n\n<b>baserria</b> — el caserío\n\nPor dentro es <b>baso</b> (el bosque) + <b>herri</b>, la palabra para «pueblo» que ya conoces de la unidad 2. Literalmente, <b>el poblado del bosque</b>: la casa que está fuera del pueblo, monte adentro. Pero un baserri <b>no es un edificio</b>. Es la casa <b>y</b> la tierra <b>y</b> los animales <b>y</b> la gente que vive allí, todo contado como una sola cosa. Una unidad de trabajo y de familia, no una dirección.\n\nDe ahí sale algo que quizá ya hayas notado en los apellidos vascos. Muchísimos <b>son el nombre del caserío</b>, no el del padre: quien nacía en un caserío llamado Etxeberria se apellidaba Etxeberria — «la casa nueva». Etxebarria, Etxeandia, Elizalde, Mendizabal. En castellano el apellido dice de quién eres hijo; en euskera, muchas veces, dice <b>de qué casa</b>.\n\nCon eso en la cabeza, la lista de animales que viene ahora deja de ser una lista suelta:\n\n<b>Los de dentro</b> — <b>txakurra</b> (el perro), <b>katua</b> (el gato)\n<b>Los que dan de comer</b> — <b>behia</b> (la vaca), <b>ardia</b> (la oveja), <b>txerria</b> (el cerdo), <b>oiloa</b> (la gallina)\n<b>Los del monte y el corral</b> — <b>zaldia</b> (el caballo), <b>untxia</b> (el conejo), <b>txoria</b> (el pájaro), <b>sagua</b> (el ratón)\n\nY una que se lleva la palma: la oveja <b>latxa</b>, la raza de Euskal Herria, es la que da la leche del <i>Idiazabal</i>. Si alguna vez te preguntas por qué hay tantas ovejas en los montes vascos, la respuesta es esa.",
+      "cuerpo": "Llevas toda la unidad con <b>etxea</b>, la casa. Pues hay otra palabra que conviene conocer antes de aprenderse los animales, porque explica por qué van juntos:\n\n<b>baserria</b> — el caserío\n\nPor dentro es <b>baso</b> (el bosque) + <b>herri</b>, la palabra para «pueblo» que ya conoces de la unidad 2. Literalmente, <b>el poblado del bosque</b>: la casa que está fuera del pueblo, monte adentro. Pero un baserri <b>no es un edificio</b>. Es la casa <b>y</b> la tierra <b>y</b> los animales <b>y</b> la gente que vive allí, todo contado como una sola cosa. Una unidad de trabajo y de familia, no una dirección.\n\nDe ahí sale algo que quizá ya hayas notado en los apellidos vascos. Muchísimos <b>son el nombre del caserío</b>, no el del padre: quien nacía en un caserío llamado Etxeberria se apellidaba Etxeberria — «la casa nueva». Etxebarria, Etxeandia, Elizalde, Mendizabal. En castellano el apellido dice de quién eres hijo; en euskera, muchas veces, dice <b>de qué casa</b>.\n\nCon eso en la cabeza, la lista de animales que viene ahora deja de ser una lista suelta:\n\n<b>los de dentro</b> — <b>txakurra</b> (el perro), <b>katua</b> (el gato)\n<b>los que dan de comer</b> — <b>behia</b> (la vaca), <b>ardia</b> (la oveja), <b>txerria</b> (el cerdo), <b>oiloa</b> (la gallina)\n<b>los del monte y el corral</b> — <b>zaldia</b> (el caballo), <b>untxia</b> (el conejo), <b>txoria</b> (el pájaro), <b>sagua</b> (el ratón)\n\nY una que se lleva la palma: la oveja <b>latxa</b>, la raza de Euskal Herria, es la que da la leche del <i>Idiazabal</i>. Si alguna vez te preguntas por qué hay tantas ovejas en los montes vascos, la respuesta es esa.",
       "ejemplos": [
         {
-          "eu": "Baserri bat daukate.",
+          "eu": "baserri bat daukate",
           "es": "Tienen un caserío.",
           "audio": "unidades/u5/baserri-bat-daukate.mp3"
         },
         {
-          "eu": "Behiak eta ardiak.",
+          "eu": "behiak eta ardiak",
           "es": "Vacas y ovejas.",
           "audio": "unidades/u5/behiak-eta-ardiak.mp3"
         },
         {
-          "eu": "Txakurra etxean dago.",
+          "eu": "txakurra etxean dago",
           "es": "El perro está en casa.",
           "audio": "unidades/u5/txakurra-etxean-dago.mp3"
         }
