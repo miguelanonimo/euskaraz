@@ -1596,13 +1596,21 @@
     '</button>';
   }
 
-  // Cuánto cabe la palabra en su ancho: de su tamaño pleno hacia abajo, sin partirla.
+  /* La palabra crece hasta llenar el ancho de la carta, con un mínimo (una muy
+     larga no se queda diminuta: por debajo del mínimo se parte en líneas) y un
+     máximo (una de cuatro letras no se ve gigante). `data-ajustar="máx,mín"` va
+     como fracción del ancho de la carta. */
   function ajustarPalabra(card) {
     Array.prototype.forEach.call(card.querySelectorAll('[data-ajustar]'), function (w) {
-      var max = card.clientWidth * parseFloat(w.dataset.ajustar), ancho = w.parentNode.clientWidth;
+      var lim = w.dataset.ajustar.split(','), ancho = w.parentNode.clientWidth, cw = card.clientWidth;
       if (!ancho) return;
-      w.style.fontSize = max + 'px';
-      if (w.scrollWidth > ancho) w.style.fontSize = Math.max(card.clientWidth * 0.08, max * ancho / w.scrollWidth) + 'px';
+      var max = cw * parseFloat(lim[0]), min = cw * parseFloat(lim[1]);
+      w.style.whiteSpace = 'nowrap';
+      w.style.fontSize = '100px';
+      var ideal = 98 * ancho / (w.scrollWidth || 1);   // un 2% de margen: el texto no llega a tocar el borde
+      var tam = Math.max(min, Math.min(max, ideal));
+      w.style.fontSize = tam + 'px';
+      if (ideal < min) w.style.whiteSpace = 'normal';
     });
   }
 
@@ -1643,7 +1651,7 @@
     var caraPalabra =
       '<section class="pdia__cara pdia__cara--palabra" data-cara="palabra">' + cab() +
         '<div class="pdia__cuerpo">' +
-          '<div class="pdia__pal"><p class="pdia__eu" data-ajustar="0.1947">' + esc(p.eu) + '</p>' +
+          '<div class="pdia__pal"><p class="pdia__eu" data-ajustar="0.24,0.115">' + esc(p.eu) + '</p>' +
             '<button class="pdia__audio" type="button" data-audio="' + esc(p.audio) + '"' + (p.audio ? '' : ' aria-disabled="true"') + '>' +
               '<span class="pdia__play">' + icono('play-circle', 32) + '</span><b>escuchar</b></button>' +
           '</div>' +
@@ -1656,7 +1664,7 @@
     var caraSentido =
       '<section class="pdia__cara pdia__cara--sentido" data-cara="sentido" aria-hidden="true">' + cab() +
         '<div class="pdia__cuerpo pdia__cuerpo--sentido">' +
-          '<div class="pdia__pal"><p class="pdia__es" data-ajustar="0.1841">' + esc(p.es) + '</p>' +
+          '<div class="pdia__pal"><p class="pdia__es" data-ajustar="0.24,0.115">' + esc(p.es) + '</p>' +
             (p.nota ? '<p class="pdia__nota">' + esc(p.nota) + '</p>' : '') + '</div>' +
           (p.partes.length ? '<div class="pdia__hecha"><p class="pdia__etq">¿Cómo está hecha?</p><div class="pdia__partes">' +
             p.partes.map(function (x) {

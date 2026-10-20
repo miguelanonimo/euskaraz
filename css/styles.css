@@ -545,7 +545,7 @@ div.scard{ cursor: default; }
 .pdia__cuerpo--sentido .pdia__pal{ gap: calc(4 * var(--u)); }
 .pdia__eu, .pdia__es{
   margin: 0; font-family: var(--f-d); font-weight: 800; line-height: 1; letter-spacing: .01em;
-  text-align: center; white-space: nowrap; font-size: calc(62 * var(--u));
+  text-align: center; font-size: calc(62 * var(--u)); text-wrap: balance;
 }
 .pdia__es{ text-align: left; }
 .pdia__nota{ margin: 0; font-family: var(--f-t); font-weight: 500; font-size: calc(15 * var(--u)); line-height: 1.25; letter-spacing: .02em; }
