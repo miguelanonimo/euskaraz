@@ -1,21 +1,115 @@
 {
-  "_ayuda": "Una entrada por fecha (MM-DD, se repite cada año). Ver docs/palabra-del-dia.md. Sin entrada para un día, la app usa una palabra provisional del vocabulario.",
+  "_ayuda": "Una entrada por fecha (MM-DD, se repite cada año). Ver docs/palabra-del-dia.md. «revisar»: true = pendiente de que Ric la valide.",
   "palabras": [
     {
       "fecha": "10-11",
       "eu": "norabide",
       "es": "dirección",
       "nota": "de un camino o de una carretera",
-      "audio": "",
+      "audio": "palabras-del-dia/norabide.mp3",
       "partes": [
-        { "eu": "nora", "es": "a dónde" },
-        { "eu": "bide", "es": "camino" }
+        {
+          "eu": "nora",
+          "es": "a dónde"
+        },
+        {
+          "eu": "bide",
+          "es": "camino"
+        }
       ],
       "contexto": "Lo verás en los carteles de las carreteras y de las calles de Bilbao, como norabide guztiak: todas las direcciones.",
       "pistas": [
         "Sale de dos palabras que ya conoces.",
         "Es lo que indica una flecha en un cruce."
       ]
+    },
+    {
+      "fecha": "10-20",
+      "eu": "udazkena",
+      "es": "el otoño",
+      "nota": "la estación entre el verano y el invierno",
+      "audio": "palabras-del-dia/udazkena.mp3",
+      "partes": [
+        {
+          "eu": "uda",
+          "es": "verano"
+        },
+        {
+          "eu": "azken",
+          "es": "final"
+        }
+      ],
+      "contexto": "Literalmente es «el final del verano». En Euskal Herria el udazkena trae lluvia, niebla y castañas.",
+      "pistas": [
+        "Llega justo después de uda, el verano.",
+        "Es cuando caen las hojas de los árboles."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "10-21",
+      "eu": "euria",
+      "es": "la lluvia",
+      "nota": "el agua que cae del cielo",
+      "audio": "palabras-del-dia/euria.mp3",
+      "partes": [],
+      "contexto": "Lo oirás mucho en Bizkaia: «Euria ari du» significa «está lloviendo». Para no mojarte necesitas un aterkia, el paraguas.",
+      "pistas": [
+        "Cae del cielo y moja.",
+        "Con ella sacas el paraguas."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "10-22",
+      "eu": "gaztaina",
+      "es": "la castaña",
+      "nota": "el fruto del castaño",
+      "audio": "palabras-del-dia/gaztaina.mp3",
+      "partes": [],
+      "contexto": "Se asan en otoño y se comen calientes. El árbol que las da se llama gaztainondo.",
+      "pistas": [
+        "Es un fruto de otoño con cáscara marrón.",
+        "Se come asada y calentita."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "10-23",
+      "eu": "sagardoa",
+      "es": "la sidra",
+      "nota": "bebida hecha con manzana",
+      "audio": "palabras-del-dia/sagardoa.mp3",
+      "partes": [
+        {
+          "eu": "sagar",
+          "es": "manzana"
+        },
+        {
+          "eu": "ardo",
+          "es": "vino"
+        }
+      ],
+      "contexto": "Literalmente es «vino de manzana». Las sidrerías, sagardotegiak, son una tradición muy viva en Euskal Herria.",
+      "pistas": [
+        "Se hace con sagar, la manzana.",
+        "No es vino, pero lleva ardo en el nombre."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "10-24",
+      "eu": "lainoa",
+      "es": "la niebla",
+      "nota": "nube baja que cubre el suelo",
+      "audio": "palabras-del-dia/lainoa.mp3",
+      "partes": [],
+      "contexto": "En las mañanas de otoño, el lainoa cubre los montes y los valles de Bizkaia.",
+      "pistas": [
+        "Es como una nube, pero a ras de suelo.",
+        "Aparece al amanecer, sobre todo en los valles."
+      ],
+      "revisar": true
     }
   ]
 }

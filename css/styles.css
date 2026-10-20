@@ -549,10 +549,10 @@ div.scard{ cursor: default; }
 }
 .pdia__es{ text-align: left; }
 .pdia__nota{ margin: 0; font-family: var(--f-t); font-weight: 500; font-size: calc(15 * var(--u)); line-height: 1.25; letter-spacing: .02em; }
-.pdia__audio{ display: flex; align-items: center; justify-content: center; gap: calc(12 * var(--u)); padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+.pdia__audio{ display: flex; align-items: center; align-self: flex-start; gap: calc(12 * var(--u)); padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
 .pdia__audio b{ font-family: var(--f-d); font-weight: 700; font-size: calc(18 * var(--u)); letter-spacing: .02em; }
-.pdia__play{ display: flex; align-items: center; justify-content: center; width: calc(32 * var(--u)); height: calc(32 * var(--u)); border-radius: 50%; background: rgba(255,255,255,.2); }
-.pdia__play svg{ width: calc(16 * var(--u)); height: calc(16 * var(--u)); }
+.pdia__play{ display: flex; }
+.pdia__play svg{ width: calc(32 * var(--u)); height: calc(32 * var(--u)); }
 .pdia__pistas{ display: flex; flex-direction: column; align-items: flex-start; gap: calc(8 * var(--u)); }
 .pdia__pista, .pdia__ver{
   margin: 0; display: inline-flex; align-items: center; gap: calc(8 * var(--u));
