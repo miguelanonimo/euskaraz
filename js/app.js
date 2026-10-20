@@ -1541,7 +1541,7 @@
 
   function formaPalabra(e) {
     return {
-      clave: normalizar(e.eu), eu: e.eu, es: e.es || '', nota: e.nota || '', audio: e.audio || audioDePalabra(e.eu) || '',
+      clave: normalizar(e.eu), fecha: e.fecha || '', eu: e.eu, es: e.es || '', nota: e.nota || '', audio: e.audio || audioDePalabra(e.eu) || '',
       partes: (e.partes || []).filter(function (x) { return x && x.eu; }),
       contexto: e.contexto || '', pistas: (e.pistas || []).slice(0, 2)
     };
@@ -1624,34 +1624,79 @@
     palabraAbierta = null;
     window.removeEventListener('resize', c.alRedimensionar);
     document.removeEventListener('keydown', c.alTeclear, true);
+    window.removeEventListener('pointerup', c.alSoltar);
     function quitar() { if (c.ov.parentNode) c.ov.parentNode.removeChild(c.ov); if (c.previo && c.previo.focus) c.previo.focus({ preventScroll: true }); }
     if (REDUCIR_MOVIMIENTO.matches) { quitar(); return; }
     var an = c.ov.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 200, easing: EASE });
     an.onfinish = quitar;
   }
 
-  function abrirPalabraDelDia() {
-    var p = palabraDeHoy();
-    if (!p || palabraAbierta) return;
-    if (!palabraAbiertaHoy()) {
-      if (!progreso.palabras) progreso.palabras = {};
-      progreso.palabras[hoy()] = p.clave;
-      guardarProgreso();
-      var b = $('goPalabra');
-      if (b) {
-        b.classList.add('palabra--abierta');
-        var ic = b.querySelector('.palabra__ico, .ptile__ico');
-        if (ic) ic.innerHTML = icono('check-pill', 24);
+  /* Una palabra por su clave: la entrada de las palabras del día si la hay y, si no
+     (la provisional), la del vocabulario del curso. */
+  function palabraPorClave(clave) {
+    var e = (CURSO.palabras || []).filter(function (x) { return normalizar(x.eu) === clave; })[0];
+    if (e) return formaPalabra(e);
+    var d = diccionario().filter(function (x) { return normalizar(x.eu) === clave; })[0];
+    return d ? formaPalabra({ eu: d.eu, es: d.es, audio: d.audio }) : null;
+  }
+
+  // Las palabras del día que ya has abierto, por orden de apertura: el mazo de cartas.
+  function palabrasVistas() {
+    var vistas = {}, out = [];
+    Object.keys(progreso.palabras || {}).map(Number).sort(function (a, b) { return a - b; }).forEach(function (dia) {
+      var c = progreso.palabras[dia];
+      if (vistas[c]) return;
+      vistas[c] = true;
+      var p = palabraPorClave(c);
+      if (p) out.push({ p: p, dia: dia });
+    });
+    return out;
+  }
+
+  // La fecha de una carta es la del día del calendario al que va asociada la palabra, no la de hoy.
+  function fechaDeCarta(item) {
+    var m = /^(\d\d)-(\d\d)$/.exec(item.p.fecha || '');
+    if (m) return +m[2] + ' ' + MESES_CORTOS[+m[1] - 1];
+    var d = new Date(item.dia * 86400000);    // provisional: el día en que se abrió
+    return d.getUTCDate() + ' ' + MESES_CORTOS[d.getUTCMonth()];
+  }
+
+  /* Abre la carta. Sin clave, la palabra de hoy (y la apunta como abierta). Con
+     clave, esa palabra ya vista. Con dos o más palabras vistas se recorren sin
+     fin: «siguiente» (deslizar o arrastrar a la derecha, flecha derecha) pasa a
+     la siguiente en el orden en que las viste y, tras la última, a la primera;
+     «anterior» hace lo contrario. */
+  function abrirPalabraDelDia(claveElegida) {
+    if (palabraAbierta) return;
+    var hoyP = palabraDeHoy();
+    if (!claveElegida) {
+      if (!hoyP) return;
+      if (!palabraAbiertaHoy()) {
+        if (!progreso.palabras) progreso.palabras = {};
+        progreso.palabras[hoy()] = hoyP.clave;
+        guardarProgreso();
+        var b = $('goPalabra');
+        if (b) {
+          b.classList.add('palabra--abierta');
+          var ic = b.querySelector('.palabra__ico, .ptile__ico');
+          if (ic) ic.innerHTML = icono('check-pill', 24);
+        }
       }
+      claveElegida = hoyP.clave;
     }
-    if (p.audio) precargarAudio(p.audio);
-    var fecha = fechaCorta();
-    function cab() {
+    var mazo = palabrasVistas();
+    var pos = 0;
+    mazo.forEach(function (it, i) { if (it.p.clave === claveElegida) pos = i; });
+    if (!mazo.length) return;
+    var actual = mazo[pos].p;
+
+    function cab(fecha) {
       return '<div class="pdia__cab"><span class="pdia__fecha"><span>Gaurko hitza</span><b>·</b><b>' + esc(fecha) + '</b></span>' +
         '<button class="pdia__x" type="button" data-cerrar aria-label="Cerrar">' + icono('close', 24) + '</button></div>';
     }
-    var caraPalabra =
-      '<section class="pdia__cara pdia__cara--palabra" data-cara="palabra">' + cab() +
+    function caras(item) {
+      var p = item.p, fecha = fechaDeCarta(item);
+      return '<section class="pdia__cara pdia__cara--palabra" data-cara="palabra">' + cab(fecha) +
         '<div class="pdia__cuerpo">' +
           '<div class="pdia__pal"><p class="pdia__eu" data-ajustar="0.24,0.115">' + esc(p.eu) + '</p>' +
             '<button class="pdia__audio" type="button" data-audio="' + esc(p.audio) + '"' + (p.audio ? '' : ' aria-disabled="true"') + '>' +
@@ -1662,9 +1707,8 @@
           }).join('') + '</div>' : '') +
         '</div>' +
         '<button class="pdia__girar" type="button" data-girar>' + icono('girar', 20) + '<span>ver significado</span></button>' +
-      '</section>';
-    var caraSentido =
-      '<section class="pdia__cara pdia__cara--sentido" data-cara="sentido" aria-hidden="true">' + cab() +
+      '</section>' +
+      '<section class="pdia__cara pdia__cara--sentido" data-cara="sentido" aria-hidden="true">' + cab(fecha) +
         '<div class="pdia__cuerpo pdia__cuerpo--sentido">' +
           '<div class="pdia__pal"><p class="pdia__es" data-ajustar="0.24,0.115">' + esc(p.es) + '</p>' +
             (p.nota ? '<p class="pdia__nota">' + esc(p.nota) + '</p>' : '') + '</div>' +
@@ -1676,32 +1720,40 @@
         '</div>' +
         '<button class="pdia__girar" type="button" data-girar>' + icono('girar', 20) + '<span>ver palabra</span></button>' +
       '</section>';
+    }
 
     var ov = document.createElement('div');
     ov.className = 'pdia'; ov.id = 'pdia';
     ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', 'Gaurko hitza');
     ov.style.setProperty('--pc', familia(unidadDeTurno()).carta);
-    ov.innerHTML = '<div class="pdia__card"><div class="pdia__giro">' + caraPalabra + caraSentido + '</div></div>';
+    ov.innerHTML = '<div class="pdia__card"><div class="pdia__giro"></div></div>';
     document.body.appendChild(ov);
-
-    var card = ov.querySelector('.pdia__card');
-    var cara1 = ov.querySelector('[data-cara="palabra"]'), cara2 = ov.querySelector('[data-cara="sentido"]');
+    var card = ov.querySelector('.pdia__card'), giro = ov.querySelector('.pdia__giro');
     function ajustar() { ajustarPalabra(card); }
-    ajustar();
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(ajustar);
+
+    function pintar() {
+      actual = mazo[pos].p;
+      card.classList.remove('is-girada');
+      giro.innerHTML = caras(mazo[pos]);
+      if (actual.audio) precargarAudio(actual.audio);
+      ajustar();
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(ajustar);
+    }
+    pintar();
 
     function girar() {
-      var giradaAhora = card.classList.toggle('is-girada');
-      cara1.setAttribute('aria-hidden', giradaAhora ? 'true' : 'false');
-      cara2.setAttribute('aria-hidden', giradaAhora ? 'false' : 'true');
-      var destino = (giradaAhora ? cara2 : cara1).querySelector('[data-girar]');
+      var gira = card.classList.toggle('is-girada');
+      var c1 = giro.querySelector('[data-cara="palabra"]'), c2 = giro.querySelector('[data-cara="sentido"]');
+      c1.setAttribute('aria-hidden', gira ? 'true' : 'false');
+      c2.setAttribute('aria-hidden', gira ? 'false' : 'true');
+      var destino = (gira ? c2 : c1).querySelector('[data-girar]');
       if (destino) destino.focus({ preventScroll: true });
     }
-    /* Cada botón destapa su propia pista, en su sitio: el botón se convierte en
-       la pista, el contenedor crece hasta su tamaño y el texto se escribe
-       dentro mientras crece (sin relleno: solo el trazo, para que se lea en cualquier color). */
+    // Cada botón destapa su propia pista, en su sitio: el botón se convierte en
+    // la pista, el contenedor crece hasta su tamaño y el texto se escribe dentro
+    // mientras crece (sin relleno: solo el trazo, para que se lea en cualquier color).
     function verPista(btn) {
-      var texto = p.pistas[parseInt(btn.dataset.pista, 10)];
+      var texto = actual.pistas[parseInt(btn.dataset.pista, 10)];
       if (!texto) return;
       var bw = btn.offsetWidth, bh = btn.offsetHeight;
       var chip = document.createElement('p');
@@ -1719,17 +1771,13 @@
       chip.style.visibility = '';
       if (REDUCIR_MOVIMIENTO.matches) return;
       var cs = getComputedStyle(chip);
-      // El texto se queda con su ancho final mientras se escribe, para que no salte de línea.
       span.style.display = 'block';
       span.style.width = (w - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 2) + 'px';
       if (una) span.style.width = '';
       span.textContent = '';
       chip.style.overflow = 'hidden';
       var dur = Math.min(800, Math.max(300, texto.length * 16));
-      chip.animate([
-        { width: bw + 'px', height: bh + 'px' },
-        { width: w + 'px', height: h + 'px' }
-      ], { duration: dur, easing: EASE });
+      chip.animate([{ width: bw + 'px', height: bh + 'px' }, { width: w + 'px', height: h + 'px' }], { duration: dur, easing: EASE });
       var t0 = performance.now();
       (function paso(t) {
         var k = Math.min(1, (t - t0) / dur);
@@ -1738,7 +1786,26 @@
         else { span.style.display = ''; span.style.width = ''; chip.style.overflow = ''; }
       })(t0);
     }
+
+    // Pasar de carta: la actual sale hacia el lado del gesto y la nueva entra del otro.
+    var cambiando = false;
+    function navegar(paso) {
+      if (mazo.length < 2 || cambiando) return;
+      pos = (pos + paso + mazo.length) % mazo.length;
+      if (REDUCIR_MOVIMIENTO.matches) { pintar(); return; }
+      cambiando = true;
+      var sale = card.animate([{ transform: 'none', opacity: 1 }, { transform: 'translateX(' + (paso * 48) + 'px)', opacity: 0 }], { duration: 150, easing: 'ease-in' });
+      sale.onfinish = function () {
+        pintar();
+        var entra = card.animate([{ transform: 'translateX(' + (-paso * 48) + 'px)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 220, easing: 'ease-out' });
+        entra.onfinish = function () { cambiando = false; };
+      };
+    }
+    var siguiente = function () { navegar(1); }, anterior = function () { navegar(-1); };
+
+    var arrastrado = false;
     ov.addEventListener('click', function (e) {
+      if (arrastrado) { arrastrado = false; return; }
       if (e.target === ov || e.target.closest('[data-cerrar]')) { cerrarPalabra(); return; }
       var a = e.target.closest('[data-audio]');
       if (a) { if (a.dataset.audio) reproducir(a.dataset.audio); return; }
@@ -1746,16 +1813,36 @@
       var v = e.target.closest('[data-pista]');
       if (v) verPista(v);
     });
-    var alTeclear = function (e) { if (e.key === 'Escape') { e.stopPropagation(); cerrarPalabra(); } };
+    // Móvil: deslizar a la derecha = siguiente. Ordenador: arrastrar con el ratón o flechas.
+    alDeslizar(card, siguiente, anterior);
+    var x0 = null, y0 = null;
+    card.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse' && e.button === 0) { x0 = e.clientX; y0 = e.clientY; }
+    });
+    var alSoltar = function (e) {
+      if (x0 === null) return;
+      var dx = e.clientX - x0, dy = e.clientY - y0;
+      x0 = null;
+      if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      arrastrado = true;
+      setTimeout(function () { arrastrado = false; }, 0);
+      if (dx > 0) siguiente(); else anterior();
+    };
+    window.addEventListener('pointerup', alSoltar);
+    var alTeclear = function (e) {
+      if (e.key === 'Escape') { e.stopPropagation(); cerrarPalabra(); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); siguiente(); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); anterior(); }
+    };
     document.addEventListener('keydown', alTeclear, true);
     window.addEventListener('resize', ajustar);
-    palabraAbierta = { ov: ov, previo: document.activeElement, alRedimensionar: ajustar, alTeclear: alTeclear };
+    palabraAbierta = { ov: ov, previo: document.activeElement, alRedimensionar: ajustar, alTeclear: alTeclear, alSoltar: alSoltar };
 
     if (!REDUCIR_MOVIMIENTO.matches) {
       ov.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220, easing: EASE });
       card.animate([{ opacity: 0, transform: 'translateY(24px) scale(.97)' }, { opacity: 1, transform: 'none' }], { duration: 380, easing: EASE });
     }
-    var primero = cara1.querySelector('[data-girar]');
+    var primero = giro.querySelector('[data-girar]');
     if (primero) primero.focus({ preventScroll: true });
   }
 
@@ -3544,7 +3631,10 @@
               '<span class="dentry__w">' + esc(v.eu) + botonAudio(v) + etiquetaRegistro(v) + '</span>' +
               '<span class="dentry__m">' + esc(v.es) + '</span>' +
               (delDia[normalizar(v.eu)]
-                ? '<span class="dentry__u dentry__sol" role="img" aria-label="Gaurko hitza, palabra del día">' + icono('sun', 24) + '</span>'
+                ? (v.subnivel
+                  ? '<button class="dentry__u dentry__sol" type="button" aria-label="Gaurko hitza: ver la lección donde se explica"' +
+                    ' data-ir-u="' + esc(v.unidadId) + '" data-ir-s="' + esc(v.subnivel) + '">' + icono('sun', 24) + '</button>'
+                  : '<button class="dentry__u dentry__sol" type="button" aria-label="Gaurko hitza: abrir la carta" data-palabra="' + esc(normalizar(v.eu)) + '">' + icono('sun', 24) + '</button>')
                 : v.subnivel
                 ? '<button class="dentry__u' + (vista ? '' : ' is-off') + '" type="button"' +
                   ' data-ir-u="' + esc(v.unidadId) + '" data-ir-s="' + esc(v.subnivel) + '">u' +
@@ -5433,6 +5523,7 @@
   el.dictContent.addEventListener('click', function (e) {
     var b = e.target.closest('button.dentry__u');
     if (!b) return;
+    if (b.dataset.palabra) { abrirPalabraDelDia(b.dataset.palabra); return; }
     irAFichaDe(b.dataset.irU, b.dataset.irS);
   });
 
