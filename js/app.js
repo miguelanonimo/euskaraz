@@ -1542,9 +1542,17 @@
     };
   }
 
+  /* Para ver cualquier día sin esperar: `?palabra=10-11` en la dirección
+     fuerza la fecha de la palabra (solo cambia cuál sale, no el calendario). */
+  function fechaDePalabra() {
+    var m = /[?&]palabra=(\d\d)-(\d\d)/.exec(location.search), d = new Date();
+    if (m && +m[1] >= 1 && +m[1] <= 12 && +m[2] >= 1 && +m[2] <= 31) return { mes: +m[1] - 1, dia: +m[2] };
+    return { mes: d.getMonth(), dia: d.getDate() };
+  }
+
   function palabraDeHoy() {
-    var d = new Date();
-    var mmdd = ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+    var f = fechaDePalabra();
+    var mmdd = ('0' + (f.mes + 1)).slice(-2) + '-' + ('0' + f.dia).slice(-2);
     var e = (CURSO.palabras || []).filter(function (x) { return x.fecha === mmdd; })[0];
     if (e) return formaPalabra(e);
     var lista = [];
@@ -1561,8 +1569,8 @@
   }
 
   function fechaCorta() {
-    var d = new Date();
-    return d.getDate() + ' ' + MESES_CORTOS[d.getMonth()];
+    var f = fechaDePalabra();
+    return f.dia + ' ' + MESES_CORTOS[f.mes];
   }
 
   // Móvil y tablet: una barra entre las lecciones y los repasos.
