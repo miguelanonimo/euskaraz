@@ -2,11 +2,321 @@
   "_ayuda": "Una entrada por fecha (MM-DD, se repite cada año). Ver docs/palabra-del-dia.md. «revisar»: true = pendiente de que Ric la valide.",
   "palabras": [
     {
-      "fecha": "10-11",
-      "eu": "norabide",
-      "es": "dirección",
-      "nota": "de un camino o de una carretera",
-      "audio": "palabras-del-dia/norabide.mp3",
+      "fecha": "08-21",
+      "eu": "Aste Nagusia",
+      "es": "la Semana Grande",
+      "nota": "«Aste» es semana y «nagusi», principal o mayor. Juntas: la semana principal.",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "aste",
+          "es": "semana"
+        },
+        {
+          "eu": "nagusi",
+          "es": "principal, mayor"
+        }
+      ],
+      "contexto": "«Nagusi» de sustantivo es además amo, propietario o jefe, que es como más se oye en la calle. Pero aquí es el adjetivo: lo que convierte una semana cualquiera en LA semana. Empieza el sábado siguiente al 15 de agosto, así que no cae en el mismo número cada año.  «Aste Nagusia» — la Semana Grande",
+      "pistas": [
+        "Es una fiesta, y dura nueve días.",
+        "La segunda palabra significa «principal, mayor».",
+        "Es la Semana Grande de Bilbao."
+      ]
+    },
+    {
+      "fecha": "10-22",
+      "eu": "birziklatu",
+      "es": "reciclar",
+      "nota": "Es un verbo, no un sustantivo: reciclar, y también reciclarse.",
+      "audio": "",
+      "partes": [],
+      "contexto": "Lo verás escrito en los contenedores y en los puntos limpios.",
+      "pistas": [
+        "Es algo que haces en casa.",
+        "Tiene que ver con la basura.",
+        "Es separarla para que vuelva a servir."
+      ]
+    },
+    {
+      "fecha": "10-23",
+      "eu": "gazia",
+      "es": "salado",
+      "nota": "No es solo la sal: una manzana sin madurar es gazia, y una contestación cortante también.",
+      "audio": "",
+      "partes": [],
+      "contexto": "El agua del mar, una sopa con demasiada sal y una manzana verde son todas gaziak.  «Itsasoko ura gazia da.» — El agua del mar es salada.",
+      "pistas": [
+        "Se dice de una comida.",
+        "También de una manzana que todavía está verde.",
+        "Y de una respuesta que escuece."
+      ]
+    },
+    {
+      "fecha": "10-24",
+      "eu": "irribarrea",
+      "es": "la sonrisa",
+      "nota": "La risa con ruido es «barrea». Esta es la callada.",
+      "audio": "",
+      "partes": [],
+      "contexto": "Para sonreír se dice «irribarre egin», hacer sonrisa.  «Irribarrez ikusi ninduen.» — Me vio sonriendo.",
+      "pistas": [
+        "Se hace con la cara.",
+        "Dentro está «barre», la risa.",
+        "Pero esta no hace ruido."
+      ]
+    },
+    {
+      "fecha": "10-25",
+      "eu": "berokia",
+      "es": "el abrigo",
+      "nota": "Son dos cosas: la prenda y el lugar resguardado. Y de adverbio, «calurosamente».",
+      "audio": "",
+      "partes": [],
+      "contexto": "Fíjate en que «bero» es calor: los tres sentidos van de lo mismo.  «Berokia jantzi.» — Ponerse el abrigo.",
+      "pistas": [
+        "Se pone encima de todo lo demás.",
+        "También es un sitio donde no hace frío.",
+        "Cuando empieza el frío, no sales de casa sin él."
+      ]
+    },
+    {
+      "fecha": "10-26",
+      "eu": "Urriko azken astelehena",
+      "es": "el último lunes de octubre",
+      "nota": "«Urria» es octubre, «azkena» el último y «astelehena» el lunes. Juntas no hacen una fecha: hacen una regla, y hay que mirar el calendario para saber qué día cae.",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "urria",
+          "es": "octubre"
+        },
+        {
+          "eu": "azkena",
+          "es": "el último"
+        },
+        {
+          "eu": "astelehena",
+          "es": "el lunes"
+        }
+      ],
+      "contexto": "Ese lunes Gernika se llena. Llegan los productos de todo Euskal Herria —queso, verdura, txakoli, pastel vasco y mucho más— y es a la vez mercado y fiesta de la cultura vasca. Una de las citas más grandes del año.",
+      "pistas": [
+        "Son tres palabras pegadas: un mes, algo que es el último, y un día de la semana.",
+        "No cae en el mismo número cada año.",
+        "Ese día hay feria grande en Gernika."
+      ]
+    },
+    {
+      "fecha": "10-27",
+      "eu": "hostoa",
+      "es": "la hoja del árbol",
+      "nota": "La del árbol, la de una planta, la de una flor. Y también el follaje entero.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Hostoa galdu» es deshojarse. Ojo con una cosa: para la hoja de papel y para la página de un libro la palabra corriente es otra, «orria».",
+      "pistas": [
+        "En otoño hay muchas por el suelo.",
+        "Casi todo el año es verde.",
+        "Las hay caducas y perennes."
+      ]
+    },
+    {
+      "fecha": "10-28",
+      "eu": "goroldioa",
+      "es": "el musgo",
+      "nota": "Una planta verde, parecida a la pelusa, que crece sobre las piedras y los troncos.",
+      "audio": "",
+      "partes": [],
+      "contexto": "En un otoño de lluvia cubre las piedras del monte y los muros de sombra.",
+      "pistas": [
+        "Es verde y no es hierba.",
+        "Necesita humedad.",
+        "Lo verás en las piedras y en los troncos."
+      ]
+    },
+    {
+      "fecha": "10-29",
+      "eu": "ostatua",
+      "es": "el hostal",
+      "nota": "Posada, pensión, hostal, albergue.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Ostatu hartu» es hospedarse.",
+      "pistas": [
+        "Es un sitio al que llegas de fuera.",
+        "Allí duermes.",
+        "En Navarra y en Iparralde, además, es el bar del pueblo."
+      ]
+    },
+    {
+      "fecha": "10-30",
+      "eu": "arin",
+      "es": "ligero, rápido",
+      "nota": "Nueve sentidos: ligero de peso, veloz, leve, ameno, informal, voluble, ligero de comida...",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Arin-arin» es además un baile, que se toca con trikitixa y con txistu.  «Luma bezain arina.» — Ligero como una pluma.",
+      "pistas": [
+        "Puede decirse de una maleta.",
+        "También de alguien que corre.",
+        "Y de una cena de verano."
+      ]
+    },
+    {
+      "fecha": "10-31",
+      "eu": "emakumeak",
+      "es": "las mujeres",
+      "nota": "«Emakumea» es una mujer; «emakumeak», las mujeres. Esa -ak del final es la que hace el plural.",
+      "audio": "",
+      "partes": [],
+      "contexto": "Fíjate en el ejemplo: con «bat», un o una, la palabra se queda sin artículo.  «Emakume eder bat.» — Una mujer hermosa.",
+      "pistas": [
+        "Son personas.",
+        "La mitad del mundo."
+      ]
+    },
+    {
+      "fecha": "11-01",
+      "eu": "gaztaina",
+      "es": "la castaña",
+      "nota": "Vale para el fruto y para el árbol.",
+      "audio": "",
+      "partes": [],
+      "contexto": "El día de Domu Santu las plazas huelen a esto.  «Gaztaina-krema» — crema de castañas",
+      "pistas": [
+        "Se recoge en otoño, en el monte.",
+        "Se come caliente y en cucurucho.",
+        "Viene envuelta en un erizo de pinchos."
+      ]
+    },
+    {
+      "fecha": "11-02",
+      "eu": "putzua",
+      "es": "el charco",
+      "nota": "Charco y poza, sí — pero también pozo. El de la acera y el del caserío se dicen igual.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Putzu txikian ito» — ahogarse en un charco pequeño: nuestro «ahogarse en un vaso de agua».",
+      "pistas": [
+        "Aparece cuando llueve.",
+        "Los críos lo pisan a propósito.",
+        "La misma palabra sirve para un agujero mucho más hondo."
+      ]
+    },
+    {
+      "fecha": "11-03",
+      "eu": "txingorra",
+      "es": "el granizo",
+      "nota": "Granizo, pedrisco. Y la misma palabra vale para un sarpullido de la piel.",
+      "audio": "",
+      "partes": [],
+      "contexto": "En Gipuzkoa se oye también «kazkabarra».  «Txingorra ari du.» — Está granizando.",
+      "pistas": [
+        "Cae del cielo.",
+        "No es lluvia ni es nieve.",
+        "Hace ruido al dar en los cristales."
+      ]
+    },
+    {
+      "fecha": "11-04",
+      "eu": "enborra",
+      "es": "el tronco",
+      "nota": "El del árbol, el del cuerpo y, en gramática, el tema: lo que queda al quitarle a una palabra todo lo de fuera.",
+      "audio": "",
+      "partes": [],
+      "contexto": "Es lo que corta el aizkolari en las pruebas de herri kirolak.",
+      "pistas": [
+        "Lo tiene un árbol.",
+        "También lo tienes tú.",
+        "Y hasta lo tiene una palabra."
+      ]
+    },
+    {
+      "fecha": "11-05",
+      "eu": "ilargia",
+      "es": "la luna",
+      "nota": "La nuestra y, en general, cualquier satélite.",
+      "audio": "",
+      "partes": [],
+      "contexto": "Aunque no sea oficial, hay quien dice que viene de «hil» + «argi». Y ahí está la gracia: «hil» significa a la vez «mes» y «muerto», así que sale la luz del mes… o la luz de los muertos.",
+      "pistas": [
+        "Se ve de noche.",
+        "Cambia de forma cada noche.",
+        "También las tienen Júpiter y Saturno."
+      ]
+    },
+    {
+      "fecha": "11-06",
+      "eu": "katilua",
+      "es": "el tazón, el cuenco",
+      "nota": "Tazón o cuenco: más que una taza. Y también lo que cabe dentro.",
+      "audio": "",
+      "partes": [],
+      "contexto": "Cabe el desayuno entero.  «Katilua bi eskuez hartuz.» — Cogiendo el tazón con las dos manos.",
+      "pistas": [
+        "Por la mañana.",
+        "Es más grande que una taza.",
+        "Se coge con las dos manos."
+      ]
+    },
+    {
+      "fecha": "11-07",
+      "eu": "kanpandorrea",
+      "es": "el campanario",
+      "nota": "Dentro se ven «kanpai» (campana) y «dorre» (torre).",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "kanpai",
+          "es": "campana"
+        },
+        {
+          "eu": "dorre",
+          "es": "torre"
+        }
+      ],
+      "contexto": "Lo tienes en la plaza de cualquier pueblo, encima de la iglesia.  «Kanpandorreko kanpaiak» — las campanas del campanario",
+      "pistas": [
+        "Es la parte más alta de un edificio.",
+        "Suena.",
+        "Dentro se ven dos palabras pegadas."
+      ]
+    },
+    {
+      "fecha": "11-08",
+      "eu": "lokatza",
+      "es": "el barro",
+      "nota": "Barro, lodo, fango.",
+      "audio": "",
+      "partes": [],
+      "contexto": "No es el agua: es la tierra mojada y pisada, la que se queda pegada.  «Lokatzez beteta zaude.» — Estás lleno de barro.",
+      "pistas": [
+        "Aparece cuando la tierra se moja.",
+        "Se pega a las botas.",
+        "Después de una semana de lluvia, el monte está lleno."
+      ]
+    },
+    {
+      "fecha": "11-09",
+      "eu": "astigarra",
+      "es": "el arce",
+      "nota": "Arce. Hay tres: astigar arrunt (arce menor), astigar zorrotz (arce real) y astigar zuri (el falso plátano).",
+      "audio": "",
+      "partes": [],
+      "contexto": "Está dentro de Astigarraga y de Astigarribia. Como tantos árboles de aquí, es también apellido.",
+      "pistas": [
+        "Es un árbol.",
+        "En otoño cambia de color.",
+        "Un pueblo de Gipuzkoa lleva su nombre."
+      ]
+    },
+    {
+      "fecha": "11-10",
+      "eu": "norabidea",
+      "es": "la dirección",
+      "nota": "La dirección de un camino o de una carretera — el rumbo. No la dirección de una casa.",
+      "audio": "",
       "partes": [
         {
           "eu": "nora",
@@ -17,88 +327,321 @@
           "es": "camino"
         }
       ],
-      "contexto": "Lo verás en los carteles de las carreteras y de las calles de Bilbao, como norabide guztiak: todas las direcciones.",
+      "contexto": "Dentro se ven «nora» (a dónde) y «bide» (camino).  «Norabide-aldaketa» — cambio de dirección",
       "pistas": [
-        "Sale de dos palabras que ya conoces.",
-        "Es lo que indica una flecha en un cruce."
+        "Lo verás escrito en una carretera.",
+        "Dentro hay una palabra de pregunta.",
+        "Y detrás, un camino."
       ]
     },
     {
-      "fecha": "10-20",
-      "eu": "hostoa",
-      "es": "la hoja",
-      "nota": "la parte verde del árbol, que cae en otoño",
-      "audio": "palabras-del-dia/hostoa.mp3",
+      "fecha": "11-11",
+      "eu": "euskaltegia",
+      "es": "el euskaltegi",
+      "nota": "El centro donde se enseña euskera, sobre todo a personas adultas.",
+      "audio": "",
       "partes": [],
-      "contexto": "En otoño los hostoak, las hojas, caen de los árboles y cubren los caminos.",
+      "contexto": "Termina en «-tegi», el sufijo del sitio donde hay algo o donde se hace algo.",
       "pistas": [
-        "Es verde en verano y marrón en otoño.",
-        "El árbol las pierde antes del invierno."
+        "Es un sitio al que se va a aprender.",
+        "Y lo que se aprende es esto que estás leyendo."
+      ]
+    },
+    {
+      "fecha": "11-12",
+      "eu": "erizaina",
+      "es": "el enfermero, la enfermera",
+      "nota": "Es quien cuida a quien está enfermo.",
+      "audio": "",
+      "partes": [],
+      "contexto": "El médico es «medikua»; esta es la otra mitad del equipo.",
+      "pistas": [
+        "Trabaja en un hospital.",
+        "No es quien receta.",
+        "Es quien cuida."
+      ]
+    },
+    {
+      "fecha": "11-13",
+      "eu": "saguzarra",
+      "es": "el murciélago",
+      "nota": "Fíjate en que «sagu», el ratón, está dentro de esta palabra. Y no es cosa solo de aquí: en alemán el murciélago es «Fledermaus», el ratón que aletea.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Sagu» sirve además para el ratón del ordenador.",
+      "pistas": [
+        "Sale de noche.",
+        "Vuela, pero no es un pájaro.",
+        "Dentro se ve un animal mucho más pequeño."
+      ]
+    },
+    {
+      "fecha": "11-14",
+      "eu": "haizetea",
+      "es": "el vendaval",
+      "nota": "El ventarrón. Y además, la temporada de viento.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Negua haizete-garaia da» — el invierno es temporada de viento.  «Haizeteak etxea bota zuen.» — El ventarrón derribó la casa.",
+      "pistas": [
+        "Viene del cielo pero no moja.",
+        "Tira cosas al suelo.",
+        "En otoño y en invierno es cuando más hay."
+      ]
+    },
+    {
+      "fecha": "11-15",
+      "eu": "zilarra",
+      "es": "la plata",
+      "nota": "El metal. Y de adjetivo: brillante, reluciente, puro.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Zilarra bezain garbi» — limpio como la plata. Se dice de una casa que está impecable.  «Etxea zilarra bezain garbi izaten du.» — Suele tener la casa limpia como la plata.",
+      "pistas": [
+        "Es un metal.",
+        "Vale menos que el oro.",
+        "Brilla, y de ahí lo de estar limpísimo."
       ],
       "revisar": true
     },
     {
-      "fecha": "10-21",
-      "eu": "ekaitza",
-      "es": "la tormenta",
-      "nota": "lluvia fuerte con truenos y viento",
-      "audio": "palabras-del-dia/ekaitza.mp3",
+      "fecha": "11-16",
+      "eu": "txakolina",
+      "es": "el txakoli",
+      "nota": "El vino vasco por excelencia. Casi siempre blanco, con la acidez que le deja el Atlántico.",
+      "audio": "",
       "partes": [],
-      "contexto": "Cuando se juntan el viento fuerte, la lluvia y los truenos, hay ekaitza: una tormenta.",
+      "contexto": "Tiene tres denominaciones de origen, una por territorio: Getariako Txakolina en Gipuzkoa, Bizkaiko Txakolina en Bizkaia y Arabako Txakolina en Álava. La uva principal es la hondarrabi zuri.",
       "pistas": [
-        "Trae truenos y relámpagos.",
-        "Es mucho más que una simple lluvia."
+        "Se bebe.",
+        "Es joven, fresco y de poca graduación.",
+        "Hay uno por cada territorio."
       ],
       "revisar": true
     },
     {
-      "fecha": "10-22",
-      "eu": "gaztaina",
-      "es": "la castaña",
-      "nota": "el fruto del castaño",
-      "audio": "palabras-del-dia/gaztaina.mp3",
+      "fecha": "11-17",
+      "eu": "azala",
+      "es": "la piel",
+      "nota": "Piel, corteza, cáscara, funda, portada, superficie, apariencia. Todas sus acepciones son lo mismo: lo de fuera.",
+      "audio": "",
       "partes": [],
-      "contexto": "Se asan en otoño y se comen calientes. El árbol que las da se llama gaztainondo.",
+      "contexto": "«Azal lodia izan» — tener la piel gruesa, o sea, tener mucha cara.",
       "pistas": [
-        "Es un fruto de otoño con cáscara marrón.",
-        "Se come asada y calentita."
-      ],
-      "revisar": true
+        "La tienes tú.",
+        "La tiene el árbol.",
+        "Y la tiene un libro."
+      ]
     },
     {
-      "fecha": "10-23",
-      "eu": "sagardoa",
-      "es": "la sidra",
-      "nota": "bebida hecha con manzana",
-      "audio": "palabras-del-dia/sagardoa.mp3",
+      "fecha": "11-18",
+      "eu": "perretxikoak",
+      "es": "las setas",
+      "nota": "Las setas.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Perretxikoak bezala» — como setas: de un día para otro y en cantidad. Igual que en castellano.  «Etxebizitzak perretxikoak bezala ugaritu ziren.» — Las viviendas se multiplicaron como setas.",
+      "pistas": [
+        "Noviembre es su mes.",
+        "Salen después de la lluvia.",
+        "Y salen de golpe, muchas a la vez."
+      ]
+    },
+    {
+      "fecha": "11-19",
+      "eu": "erre",
+      "es": "quemar, asar",
+      "nota": "Quemar, asar, freír... y fumar. De adjetivo, quemado o asado.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Erre eta su egon» — estar que arde: estar enfadado.",
+      "pistas": [
+        "Se hace con fuego.",
+        "También se hace con un cigarro.",
+        "Y, de una persona, es estar que arde."
+      ]
+    },
+    {
+      "fecha": "11-20",
+      "eu": "gaztainerre",
+      "es": "la asada de castañas",
+      "nota": "«Gaztaina» (castaña) + «erre» (asada).",
+      "audio": "",
       "partes": [
         {
-          "eu": "sagar",
-          "es": "manzana"
+          "eu": "gaztaina",
+          "es": "castaña"
         },
         {
-          "eu": "ardo",
-          "es": "vino"
+          "eu": "erre",
+          "es": "asada"
         }
       ],
-      "contexto": "Literalmente es «vino de manzana». Las sidrerías, sagardotegiak, son una tradición muy viva en Euskal Herria.",
+      "contexto": "Es de esas palabras que no se estudian: se aprenden oyéndolas en la plaza.",
       "pistas": [
-        "Se hace con sagar, la manzana.",
-        "No es vino, pero lleva ardo en el nombre."
+        "Son dos palabras pegadas, y las dos van de otoño.",
+        "Huele desde lejos.",
+        "Se hace en la plaza."
+      ]
+    },
+    {
+      "fecha": "11-21",
+      "eu": "elorria",
+      "es": "el espino",
+      "nota": "Endrino, majuelo, espino blanco. En Iparralde significa directamente «espina».",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Ez da arrosarik elorririk gabe» — no hay rosa sin espina.",
+      "pistas": [
+        "Es una mata, no un árbol.",
+        "Pincha.",
+        "Y da el arán, el endrino."
+      ]
+    },
+    {
+      "fecha": "11-22",
+      "eu": "jatetxea",
+      "es": "el restaurante",
+      "nota": "Dentro se ven «jate» (de «jan», comer) y «etxe» (casa): casa de comer. Se lee solo en cuanto sabes las dos piezas.",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "jate",
+          "es": "comer"
+        },
+        {
+          "eu": "etxe",
+          "es": "casa"
+        }
+      ],
+      "contexto": "Lo verás en el cartel de cualquier calle.",
+      "pistas": [
+        "Se va a comer.",
+        "Dentro se ve «etxe», casa.",
+        "Y delante, algo que haces tres veces al día."
+      ]
+    },
+    {
+      "fecha": "11-23",
+      "eu": "itzala",
+      "es": "la sombra",
+      "nota": "Sombra, amparo, prestigio, el lado oscuro de algo, tristeza... y, en coloquial, la cárcel.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Itzala utzi» — dejar sombra: dejar huella.",
+      "pistas": [
+        "La hace el sol.",
+        "También la hace una persona que impone."
       ],
       "revisar": true
     },
     {
-      "fecha": "10-24",
-      "eu": "lainoa",
-      "es": "la niebla",
-      "nota": "nube baja que cubre el suelo",
-      "audio": "palabras-del-dia/lainoa.mp3",
+      "fecha": "11-24",
+      "eu": "haria",
+      "es": "el hilo",
+      "nota": "El de coser, el del teléfono, el de una conversación y la cuerda de un instrumento.",
+      "audio": "",
       "partes": [],
-      "contexto": "En las mañanas de otoño, el lainoa cubre los montes y los valles de Bizkaia.",
+      "contexto": "«Haria galdu» — perder el hilo, igual que en castellano.",
       "pistas": [
-        "Es como una nube, pero a ras de suelo.",
-        "Aparece al amanecer, sobre todo en los valles."
+        "Lo usa quien cose.",
+        "También lo tiene una conversación.",
+        "Y se puede perder."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "11-25",
+      "eu": "kontuz!",
+      "es": "¡cuidado!",
+      "nota": "Sale de «kontu», cuidado o atención. De adverbio es «con cuidado»; de interjección, «¡cuidado!».",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Kontuz ibili» — andar con cuidado.  «Kontuz, erori gabe!» — ¡Cuidado, no te vayas a caer!",
+      "pistas": [
+        "Es un aviso.",
+        "Lo verás escrito en una obra.",
+        "Y lo oirás justo antes de tropezar."
+      ]
+    },
+    {
+      "fecha": "11-26",
+      "eu": "soroa",
+      "es": "el campo de cultivo",
+      "nota": "Tierra sembrada, campo de cultivo. En Iparralde, además, el prado.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Nork bere sorora ur» — cada uno lleva el agua a su campo.",
+      "pistas": [
+        "Es un trozo de tierra.",
+        "Está trabajado, no salvaje.",
+        "De ahí sale lo que comes."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "11-27",
+      "eu": "hasiera",
+      "es": "el principio",
+      "nota": "El principio, el comienzo. En ajedrez, la apertura. Y en música, el ataque de una nota.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Hasiera eman» — dar comienzo.  «Astearen hasieran triste egoten naiz.» — Al comienzo de la semana suelo estar triste.",
+      "pistas": [
+        "Es un momento.",
+        "El primero de todos.",
+        "En ajedrez tiene nombre propio."
+      ]
+    },
+    {
+      "fecha": "11-28",
+      "eu": "hesia",
+      "es": "el seto, la valla",
+      "nota": "Seto, valla, barrera, cercado. Y en sentido figurado, obstáculo o impedimento.",
+      "audio": "",
+      "partes": [],
+      "contexto": "En atletismo es la valla: «hesi-lasterketa» es la carrera de vallas.",
+      "pistas": [
+        "Separa dos cosas.",
+        "Puede ser de plantas o de palos.",
+        "Y también es lo que no te deja avanzar."
+      ]
+    },
+    {
+      "fecha": "11-29",
+      "eu": "ongi etorri",
+      "es": "bienvenido",
+      "nota": "«Ongi» es bien y «etorri» es venir: bien venido, igual que en castellano.",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "ongi",
+          "es": "bien"
+        },
+        {
+          "eu": "etorri",
+          "es": "venir"
+        }
+      ],
+      "contexto": "Lo verás a la entrada de los pueblos, en los carteles y en los arcos de fiestas.",
+      "pistas": [
+        "Se dice cuando llega alguien.",
+        "La segunda palabra significa «venir»."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "11-30",
+      "eu": "negarra",
+      "es": "el llanto",
+      "nota": "El llanto, el acto de llorar. La lágrima en sí es otra palabra: «malkoa».",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Negar egin» es llorar; «negarrez», llorando; «negar batean», a lágrima viva.",
+      "pistas": [
+        "Lo hace un bebé a todas horas.",
+        "También lo hace una fuente que gotea.",
+        "Es lo contrario de reír."
       ],
       "revisar": true
     }
