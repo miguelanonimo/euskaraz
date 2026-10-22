@@ -1653,6 +1653,22 @@
     return out;
   }
 
+  /* Qué carta se abre y en qué posición del mazo.
+
+     La pedida suele estar en el mazo, porque el mazo son justo las que se
+     han abierto. Pero puede no estar: si un día se abrió una palabra y
+     después cambia la del calendario para ese día, el hueco del día sigue
+     apuntando a la vieja y la de hoy no aparece por ningún lado. Antes se
+     caía en la posición 0 y salía la PRIMERA carta que se abrió nunca, que
+     no tiene nada que ver. Ahora se antepone la que toca. */
+  function cartaInicial(mazo, clave, suelta, dia) {
+    for (var i = 0; i < mazo.length; i++) {
+      if (mazo[i].p.clave === clave) return { mazo: mazo, pos: i };
+    }
+    if (!suelta) return { mazo: mazo, pos: 0 };
+    return { mazo: [{ p: suelta, dia: dia }].concat(mazo), pos: 0 };
+  }
+
   // La fecha de una carta es la del día del calendario al que va asociada la palabra, no la de hoy.
   function fechaDeCarta(item) {
     var m = /^(\d\d)-(\d\d)$/.exec(item.p.fecha || '');
@@ -1684,9 +1700,8 @@
       }
       claveElegida = hoyP.clave;
     }
-    var mazo = palabrasVistas();
-    var pos = 0;
-    mazo.forEach(function (it, i) { if (it.p.clave === claveElegida) pos = i; });
+    var inicio = cartaInicial(palabrasVistas(), claveElegida, palabraPorClave(claveElegida), hoy());
+    var mazo = inicio.mazo, pos = inicio.pos;
     if (!mazo.length) return;
     var actual = mazo[pos].p;
 
