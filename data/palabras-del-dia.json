@@ -2,6 +2,499 @@
   "_ayuda": "Una entrada por fecha (MM-DD, se repite cada año). Ver docs/palabra-del-dia.md. «revisar»: true = pendiente de que Ric la valide.",
   "palabras": [
     {
+      "fecha": "01-01",
+      "eu": "Urte berri on",
+      "es": "¡Feliz año nuevo!",
+      "nota": "«Urte» es año, «berri» nuevo y «on» bueno. Literalmente: buen año nuevo.",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "urte",
+          "es": "año"
+        },
+        {
+          "eu": "berri",
+          "es": "nuevo"
+        },
+        {
+          "eu": "on",
+          "es": "bueno"
+        }
+      ],
+      "contexto": "Vale también más corto, «Urte on!», sin el «berri».  «Urte berri on!» — ¡Feliz año nuevo!",
+      "pistas": [
+        "Se dice una vez al año, y solo una.",
+        "Son tres palabras: año, nuevo y bueno."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-02",
+      "eu": "izarra",
+      "es": "la estrella",
+      "nota": "La del cielo, la de las cinco puntas de un hotel, y la persona que brilla.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Izarpean» es bajo las estrellas, al raso.  «Gauean izarrak ikustera joango gara.» — Por la noche iremos a ver las estrellas.",
+      "pistas": [
+        "Se ve de noche, y hay muchas.",
+        "También se le dice a quien destaca."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-03",
+      "eu": "bertsolaria",
+      "es": "el versolari",
+      "nota": "Quien improvisa versos cantando. También se llama así a quien los escribe.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Bat-bateko bertsolaria» es el que improvisa, y «bertsolari-txapelketa», el campeonato.",
+      "pistas": [
+        "Sube a un escenario sin papeles.",
+        "Y canta lo que se le acaba de ocurrir."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-04",
+      "eu": "bikotea",
+      "es": "la pareja",
+      "nota": "La pareja de dos personas que están juntas, y también el dúo de cualquier par.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Bikote-laguna» es la pareja de alguien; «bikote ezkondua», el matrimonio.",
+      "pistas": [
+        "Son dos.",
+        "Pueden ser novios, o solo ir juntos."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-05",
+      "eu": "aspaldiko!",
+      "es": "¡cuánto tiempo!",
+      "nota": "De adjetivo significa antiguo, de hace mucho. Como saludo, «¡cuánto tiempo!».",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Aspaldiko partez» es «por primera vez en mucho tiempo».  «Kaixo, aspaldiko!» — ¡Hola, cuánto tiempo sin verte!",
+      "pistas": [
+        "Se dice al saludar.",
+        "Pero solo a quien hace mucho que no ves."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-06",
+      "eu": "ahotsa",
+      "es": "la voz",
+      "nota": "La voz de una persona y la de quien canta. En sentido figurado, la de un pueblo.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Ahots-kordak» son las cuerdas vocales, y «ahotsa aldatu», cambiar la voz al crecer.",
+      "pistas": [
+        "Sale de la garganta.",
+        "La tiene un cantante, y también un pueblo entero."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-07",
+      "eu": "hortza",
+      "es": "el diente",
+      "nota": "El de la boca y el de una herramienta: la sierra, el rastrillo, un engranaje.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Hortzez eta haginez» es «con uñas y dientes» — aquí, con dientes y muelas.",
+      "pistas": [
+        "Lo tienes en la boca.",
+        "Y también lo tiene una sierra."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-08",
+      "eu": "jantzia",
+      "es": "la prenda",
+      "nota": "La prenda, el vestido, el traje.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Azpiko jantziak» es la ropa interior, y «etxeko jantziz», ir de trapillo.",
+      "pistas": [
+        "Se pone encima.",
+        "En plural, es toda la ropa."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-09",
+      "eu": "jaialdia",
+      "es": "el festival",
+      "nota": "El festival, el festejo. Casi siempre de música o de danza.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Musika-jaialdia» es un festival de música.",
+      "pistas": [
+        "Dura uno o varios días.",
+        "Hay música, o baile."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-10",
+      "eu": "hiztegia",
+      "es": "el diccionario",
+      "nota": "Dentro se ven «hitz» (palabra) y «-tegi», el sufijo del sitio de algo: el sitio de las palabras.",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "hitz",
+          "es": "palabra"
+        },
+        {
+          "eu": "-tegi",
+          "es": "sitio"
+        }
+      ],
+      "contexto": "Vale también para el vocabulario de alguien: «hiztegi aberatseko idazlea», un escritor de léxico rico.",
+      "pistas": [
+        "Se abre para buscar algo.",
+        "Dentro se ve «hitz», palabra."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-11",
+      "eu": "errota",
+      "es": "el molino",
+      "nota": "El molino, el molinillo y la rueda. Y en las aves, la molleja.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Haize-errota» es el molino de viento; «kafe-errota», el molinillo de café.  «Errota duen baserria» — caserío con molino",
+      "pistas": [
+        "Da vueltas.",
+        "Y muele."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-12",
+      "eu": "zalantza",
+      "es": "la duda",
+      "nota": "La duda.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Zalantzarik gabe» es sin duda, y «zalantzan egon», estar indeciso.  «Bere zalantza eta kezka ezkutuak kontatu zizkidan.» — Me contó sus dudas y preocupaciones secretas.",
+      "pistas": [
+        "Aparece antes de decidir.",
+        "Y a veces no se va."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-13",
+      "eu": "saskia",
+      "es": "la cesta",
+      "nota": "La cesta de mimbre y la canasta del baloncesto.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Saski-naski» es un revoltijo, un cajón de sastre.",
+      "pistas": [
+        "Se lleva en el brazo.",
+        "Y en el baloncesto se cuelga de un aro."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-14",
+      "eu": "eskularruak",
+      "es": "los guantes",
+      "nota": "Dentro se ven «esku» (mano) y «larru» (piel o cuero).",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "esku",
+          "es": "mano"
+        },
+        {
+          "eu": "larru",
+          "es": "piel, cuero"
+        }
+      ],
+      "contexto": "«Eskularru-kaxa» es la guantera del coche.  «Eskuak eskularru zuriez jantziak» — las manos calzadas con guantes blancos",
+      "pistas": [
+        "Van en las manos.",
+        "Dentro se ve «esku», la mano."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-15",
+      "eu": "txotx",
+      "es": "¡txotx!",
+      "nota": "La voz con la que se avisa de que se va a abrir una cuba.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Txotx-garaia» es la temporada de sidrería. Y «txotxean» se guarda la sidra en la cuba, para escanciarla, en vez de embotellarla.",
+      "pistas": [
+        "Es un grito, no una cosa.",
+        "Lo oyes en una sidrería."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-16",
+      "eu": "esaera",
+      "es": "el dicho",
+      "nota": "El dicho, el refrán. También un modismo o una manera de hablar.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Esaera zaharra» es el refrán de toda la vida.",
+      "pistas": [
+        "Se repite sin que nadie la escribiera.",
+        "Y casi siempre deja una enseñanza."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-17",
+      "eu": "nekea",
+      "es": "el cansancio",
+      "nota": "El cansancio, el esfuerzo que lo causa y, en otro sentido, el sufrimiento.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Nekearen nekez» es de puro agotamiento, y «nekea hartu», tomarse la molestia.",
+      "pistas": [
+        "Llega al final del día.",
+        "Y también después de un esfuerzo grande."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-18",
+      "eu": "pitxerra",
+      "es": "la jarra",
+      "nota": "La jarra, y también lo que cabe dentro de ella.",
+      "audio": "",
+      "partes": [],
+      "contexto": "Antes era además una medida de volumen: la azumbre.  «Pitxer handi bat sagardoz betea» — una jarra grande llena de sidra",
+      "pistas": [
+        "Se pone en el centro de la mesa.",
+        "Y de ahí se sirve."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-19",
+      "eu": "zelaia",
+      "es": "el prado",
+      "nota": "El prado, la campa, la llanura. En deporte, el terreno de juego. Y de adjetivo, llano.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Zelai-erdia» es el medio campo.",
+      "pistas": [
+        "Es verde y llano.",
+        "Y en deporte, es donde se juega."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-20",
+      "eu": "danborra",
+      "es": "el tambor",
+      "nota": "El tambor, y también quien lo toca.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Danbor-jolea» es el tamborrero. Y de una tripa bien comida también se dice danborra.",
+      "pistas": [
+        "Suena al golpearlo.",
+        "En la Danborrada de Donostia no para en toda la noche."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-21",
+      "eu": "oinezkoak",
+      "es": "los peatones",
+      "nota": "Quien va a pie. Dentro se ven «oin» (pie) y el final «-ezko».",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "oin",
+          "es": "pie"
+        }
+      ],
+      "contexto": "«Oinezkoen pasabidea» es el paso de peatones, y «oinezkoen kalea», la calle peatonal.",
+      "pistas": [
+        "Van por la calle.",
+        "Dentro se ve «oin», el pie."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-22",
+      "eu": "babarrunak",
+      "es": "las alubias",
+      "nota": "Las alubias, las judías.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Babarrun-jana» es la alubiada, la comida popular en la que se juntan a comerlas.",
+      "pistas": [
+        "Se comen con cuchara.",
+        "Las hay rojas, blancas y pintas."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-23",
+      "eu": "txokolate beroa",
+      "es": "el chocolate caliente",
+      "nota": "Son dos palabras: «txokolate» y «bero», caliente.",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "txokolate",
+          "es": "chocolate"
+        },
+        {
+          "eu": "bero",
+          "es": "caliente"
+        }
+      ],
+      "contexto": "Se toma en tazón, que es más grande que una taza.",
+      "pistas": [
+        "Se bebe en invierno.",
+        "Y se moja algo dentro."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-24",
+      "eu": "apurra",
+      "es": "la migaja",
+      "nota": "La migaja, y en general una cantidad pequeña.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Apur bat» es un poco; y hablando de tiempo, un momento.",
+      "pistas": [
+        "Es poquísimo.",
+        "Lo que cae del pan al cortarlo."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-25",
+      "eu": "auzokoa",
+      "es": "el vecino, la vecina",
+      "nota": "Quien vive en el mismo barrio. «Auzo» es el barrio y también la vecindad entera.",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "auzo",
+          "es": "barrio"
+        }
+      ],
+      "contexto": "«Auzo-elkartea» es la asociación de vecinos.",
+      "pistas": [
+        "Vive cerca.",
+        "Dentro se ve «auzo», el barrio."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-26",
+      "eu": "igeltseroa",
+      "es": "el albañil, la albañila",
+      "nota": "El albañil, la albañila.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Igeltsero-mailua» es la maceta, el martillo con el que trabaja.",
+      "pistas": [
+        "Trabaja en una obra.",
+        "Levanta paredes."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-27",
+      "eu": "xehea",
+      "es": "menudo",
+      "nota": "Menudo, diminuto. Y en dinero, la calderilla, el suelto.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Xehe-xehe» es con todo detalle, hasta el último pormenor.",
+      "pistas": [
+        "Se dice de algo muy pequeño.",
+        "Y del dinero que llevas suelto."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-28",
+      "eu": "ereinotza",
+      "es": "el laurel",
+      "nota": "El laurel.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Ereinotz-pikorra» es su fruto, la baya.",
+      "pistas": [
+        "Es un árbol.",
+        "Su hoja acaba en el guiso."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-29",
+      "eu": "korrika",
+      "es": "corriendo",
+      "nota": "Corriendo, y también deprisa.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Korrika egin» es correr, y «korrika eta presaka», deprisa y corriendo.",
+      "pistas": [
+        "No es andar.",
+        "Y no es una cosa: es cómo se hace algo."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-30",
+      "eu": "eskaintza",
+      "es": "la oferta",
+      "nota": "La oferta de una tienda y la dedicatoria de un libro. También una ofrenda.",
+      "audio": "",
+      "partes": [],
+      "contexto": "«Eskaintza egin» vale para ofrecer y para pujar en una subasta.",
+      "pistas": [
+        "Lo verás en un escaparate.",
+        "Y también en la primera página de un libro."
+      ],
+      "revisar": true
+    },
+    {
+      "fecha": "01-31",
+      "eu": "euri-langarra",
+      "es": "la llovizna",
+      "nota": "La lluvia menuda. «Euri» es lluvia.",
+      "audio": "",
+      "partes": [
+        {
+          "eu": "euri",
+          "es": "lluvia"
+        },
+        {
+          "eu": "langar",
+          "es": "lluvia menuda"
+        }
+      ],
+      "contexto": "El euskera distingue muchas: «euri-zirin» es el sirimiri y «euri-jasa», el chaparrón.",
+      "pistas": [
+        "Cae del cielo.",
+        "Tan fina que casi no se ve."
+      ],
+      "revisar": true
+    },
+    {
       "fecha": "08-21",
       "eu": "Aste Nagusia",
       "es": "la Semana Grande",
@@ -21,7 +514,8 @@
       "pistas": [
         "Es una fiesta, y dura nueve días.",
         "La segunda palabra significa «principal, mayor»."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-22",
@@ -34,7 +528,8 @@
       "pistas": [
         "Tiene que ver con la basura.",
         "Es separarla para que vuelva a servir."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-23",
@@ -47,7 +542,8 @@
       "pistas": [
         "Se dice de una comida.",
         "Y también de una respuesta que escuece."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-24",
@@ -60,7 +556,8 @@
       "pistas": [
         "Dentro está «barre», la risa.",
         "Pero esta no hace ruido."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-25",
@@ -73,7 +570,8 @@
       "pistas": [
         "Se pone encima de todo lo demás.",
         "También es un sitio donde no hace frío."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-26",
@@ -99,7 +597,8 @@
       "pistas": [
         "Son tres palabras pegadas: un mes, algo que es el último, y un día de la semana.",
         "Ese día hay feria grande en Gernika."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-27",
@@ -112,7 +611,8 @@
       "pistas": [
         "Casi todo el año es verde.",
         "En otoño hay muchas por el suelo."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-28",
@@ -125,7 +625,8 @@
       "pistas": [
         "Es verde y no es hierba.",
         "Lo verás en las piedras y en los troncos."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-29",
@@ -138,7 +639,8 @@
       "pistas": [
         "Es un sitio al que llegas de fuera y donde duermes.",
         "En Navarra y en Iparralde, además, es el bar del pueblo."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-30",
@@ -151,7 +653,8 @@
       "pistas": [
         "Puede decirse de una maleta.",
         "También de alguien que corre."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "10-31",
@@ -164,7 +667,8 @@
       "pistas": [
         "Son personas.",
         "La mitad del mundo."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-01",
@@ -177,7 +681,8 @@
       "pistas": [
         "Viene envuelta en un erizo de pinchos.",
         "Se come caliente y en cucurucho."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-02",
@@ -190,7 +695,8 @@
       "pistas": [
         "Aparece cuando llueve, y los críos lo pisan a propósito.",
         "La misma palabra sirve para un agujero mucho más hondo."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-03",
@@ -203,7 +709,8 @@
       "pistas": [
         "No es lluvia ni es nieve, pero cae del cielo.",
         "Hace ruido al dar en los cristales."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-04",
@@ -216,7 +723,8 @@
       "pistas": [
         "Lo tiene un árbol, y también lo tienes tú.",
         "Y hasta lo tiene una palabra."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-05",
@@ -229,7 +737,8 @@
       "pistas": [
         "Cambia de forma cada noche.",
         "También las tienen Júpiter y Saturno."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-06",
@@ -242,7 +751,8 @@
       "pistas": [
         "Por la mañana, y más grande que una taza.",
         "Se coge con las dos manos."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-07",
@@ -264,7 +774,8 @@
       "pistas": [
         "Es la parte más alta de un edificio, y suena.",
         "Dentro se ven dos palabras pegadas."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-08",
@@ -277,7 +788,8 @@
       "pistas": [
         "Aparece cuando la tierra se moja.",
         "Se pega a las botas."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-09",
@@ -290,7 +802,8 @@
       "pistas": [
         "Es un árbol, y en otoño cambia de color.",
         "Un pueblo de Gipuzkoa lleva su nombre."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-10",
@@ -312,7 +825,8 @@
       "pistas": [
         "Lo verás escrito en una carretera.",
         "Dentro hay una palabra de pregunta y, detrás, un camino."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-11",
@@ -325,7 +839,8 @@
       "pistas": [
         "Es un sitio al que se va a aprender.",
         "Y lo que se aprende es esto que estás leyendo."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-12",
@@ -338,7 +853,8 @@
       "pistas": [
         "Trabaja en un hospital, pero no es quien receta.",
         "Es quien cuida."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-13",
@@ -351,7 +867,8 @@
       "pistas": [
         "Vuela, pero no es un pájaro.",
         "Dentro se ve un animal mucho más pequeño."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-14",
@@ -364,7 +881,8 @@
       "pistas": [
         "Viene del cielo pero no moja.",
         "Tira cosas al suelo."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-15",
@@ -405,7 +923,8 @@
       "pistas": [
         "La tienes tú, y la tiene el árbol.",
         "Y también la tiene un libro."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-18",
@@ -418,7 +937,8 @@
       "pistas": [
         "Salen después de la lluvia.",
         "Y salen de golpe, muchas a la vez."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-19",
@@ -431,7 +951,8 @@
       "pistas": [
         "Se hace con fuego.",
         "También se hace con un cigarro."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-20",
@@ -453,7 +974,8 @@
       "pistas": [
         "Son dos palabras pegadas, y las dos van de otoño.",
         "Huele desde lejos, y se hace en la plaza."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-21",
@@ -466,7 +988,8 @@
       "pistas": [
         "Es una mata, no un árbol, y pincha.",
         "Da el arán, el endrino."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-22",
@@ -488,7 +1011,8 @@
       "pistas": [
         "Dentro se ve «etxe», casa.",
         "Y delante, algo que haces tres veces al día."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-23",
@@ -529,7 +1053,8 @@
       "pistas": [
         "Lo verás escrito en una obra.",
         "Y lo oirás justo antes de tropezar."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-26",
@@ -556,7 +1081,8 @@
       "pistas": [
         "Es un momento, y el primero de todos.",
         "En ajedrez tiene nombre propio."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-28",
@@ -569,7 +1095,8 @@
       "pistas": [
         "Separa dos cosas, y puede ser de plantas o de palos.",
         "También es lo que no te deja avanzar."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "11-29",
@@ -619,7 +1146,8 @@
       "pistas": [
         "Es agua que se ha parado.",
         "Hay que rascarlo del cristal del coche."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-02",
@@ -641,7 +1169,8 @@
       "pistas": [
         "Es un postre de invierno.",
         "Lleva nueces."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-03",
@@ -667,7 +1196,8 @@
       "pistas": [
         "Se dice de una persona, y también de un cartel.",
         "Tiene que ver con hablar dos."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-04",
@@ -689,7 +1219,8 @@
       "pistas": [
         "Dentro se ve «ogi», el pan.",
         "Y algo que va en medio."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-05",
@@ -702,7 +1233,8 @@
       "pistas": [
         "Es lo que se desea al brindar.",
         "Y lo que se pierde fumando."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-06",
@@ -715,7 +1247,8 @@
       "pistas": [
         "Es una feria, y pasa en diciembre.",
         "De libros y discos en euskera."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-07",
@@ -728,7 +1261,8 @@
       "pistas": [
         "Se encienden, y en diciembre llenan las calles.",
         "En singular, también es la inteligencia."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-08",
@@ -741,7 +1275,8 @@
       "pistas": [
         "Está en la boca.",
         "También la tienen una campana y un zapato."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-09",
@@ -754,7 +1289,8 @@
       "pistas": [
         "Se come, y sale del mar.",
         "En salsa verde, sobre todo."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-10",
@@ -767,7 +1303,8 @@
       "pistas": [
         "Corta, y cabe en el bolsillo.",
         "Y también la hay de mesa."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-11",
@@ -789,7 +1326,8 @@
       "pistas": [
         "Llega por un cable.",
         "Dentro hay dos palabras: una es luz y la otra fuerza."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-12",
@@ -802,7 +1340,8 @@
       "pistas": [
         "Es un personaje que aparece en Navidad.",
         "No viene sola."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-13",
@@ -815,7 +1354,8 @@
       "pistas": [
         "Es un sentimiento, y puede ser bueno o malo.",
         "Y además se dice de un bizcocho."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-14",
@@ -828,7 +1368,8 @@
       "pistas": [
         "Se toma con una cinta.",
         "Y también se toma cuando algo va mal."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-15",
@@ -841,7 +1382,8 @@
       "pistas": [
         "Es un edificio con campanario.",
         "Y también es la gente que va a él."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-16",
@@ -854,7 +1396,8 @@
       "pistas": [
         "Es de tela y está en la cama.",
         "Va debajo de todo."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-17",
@@ -876,7 +1419,8 @@
       "pistas": [
         "Se canta, y solo en estas fechas.",
         "Dentro se ve «kanta»."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-18",
@@ -898,7 +1442,8 @@
       "pistas": [
         "Viene del cielo.",
         "Dura poco, pero te deja empapado."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-19",
@@ -911,7 +1456,8 @@
       "pistas": [
         "Puede salir bien o mal.",
         "También es un programa de radio, y un escrito."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-20",
@@ -933,7 +1479,8 @@
       "pistas": [
         "Huele a brasa desde la calle.",
         "Dentro se ve «erre», asar."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-21",
@@ -946,7 +1493,8 @@
       "pistas": [
         "Se come en la calle, hecho en una plancha redonda.",
         "Es de maíz."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-22",
@@ -959,7 +1507,8 @@
       "pistas": [
         "Se hornea.",
         "Es redondo y pequeño."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-23",
@@ -972,7 +1521,8 @@
       "pistas": [
         "Es un árbol que crece junto al río.",
         "Y la misma palabra significa «débil»."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-24",
@@ -985,7 +1535,8 @@
       "pistas": [
         "Es negro, y arde.",
         "Lo recibe quien no se ha portado bien."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-25",
@@ -1007,7 +1558,8 @@
       "pistas": [
         "Se dice una vez al año.",
         "Son dos palabras, y la segunda significa «bueno»."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-26",
@@ -1020,7 +1572,8 @@
       "pistas": [
         "Van en los pies, y suelen ir de dos en dos.",
         "Se pierden en la lavadora."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-27",
@@ -1033,7 +1586,8 @@
       "pistas": [
         "Es lo de dentro; lo de fuera es la corteza.",
         "Y también es el fondo de un asunto."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-28",
@@ -1046,7 +1600,8 @@
       "pistas": [
         "Se dice de un postre, y también de una persona.",
         "Y hasta de una tierra."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-29",
@@ -1068,7 +1623,8 @@
       "pistas": [
         "Es un cartel que ves en una puerta.",
         "Y te deja fuera."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-30",
@@ -1081,7 +1637,8 @@
       "pistas": [
         "Son personas.",
         "La otra mitad del mundo."
-      ]
+      ],
+      "revisar": true
     },
     {
       "fecha": "12-31",
@@ -1103,7 +1660,8 @@
       "pistas": [
         "Es una noche concreta, la última de todas.",
         "Dentro se ve «zahar», viejo."
-      ]
+      ],
+      "revisar": true
     }
   ]
 }
