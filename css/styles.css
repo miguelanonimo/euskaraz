@@ -556,7 +556,12 @@ div.scard{ cursor: default; }
 .pdia__play svg{ width: calc(32 * var(--u)); height: calc(32 * var(--u)); }
 .pdia__pistas{ display: flex; flex-direction: column; align-items: flex-start; gap: calc(8 * var(--u)); }
 .pdia__pista, .pdia__ver{
-  margin: 0; display: inline-flex; align-items: center; gap: calc(8 * var(--u));
+  /* Nunca más ancha que la tarjeta: sin el tope, una pista larga se salía
+     por el lado. El texto ya sabe bajar de línea —verPista() mide el alto y
+     solo pone nowrap cuando cabe en una—, lo que faltaba era el límite.
+     Y el icono arriba, no centrado, para cuando ocupa dos o tres líneas. */
+  margin: 0; display: inline-flex; align-items: flex-start; gap: calc(8 * var(--u));
+  max-width: 100%;
   padding: calc(10 * var(--u)) calc(16 * var(--u));
   border: 1px solid rgba(255,255,255,.5); color: inherit;
   border-radius: calc(24 * var(--u)) calc(20 * var(--u)) calc(4 * var(--u)) calc(24 * var(--u));
@@ -565,7 +570,7 @@ div.scard{ cursor: default; }
 .pdia__pista{ background: none; font-weight: 700; }
 .pdia__ver{ background: none; font-weight: 500; cursor: pointer; }
 .pdia__audio[aria-disabled="true"]{ cursor: default; }
-.pdia__ver svg{ width: calc(15 * var(--u)); height: calc(15 * var(--u)); }
+.pdia__ver svg{ width: calc(15 * var(--u)); height: calc(15 * var(--u)); flex-shrink: 0; margin-top: calc(1 * var(--u)); }
 .pdia__hecha{ display: flex; flex-direction: column; gap: calc(12 * var(--u)); }
 .pdia__etq{ margin: 0; font-family: var(--f-t); font-weight: 700; font-size: calc(12 * var(--u)); line-height: 1; letter-spacing: .1em; text-transform: uppercase; }
 .pdia__partes{ display: flex; align-items: center; gap: calc(8 * var(--u)); }
