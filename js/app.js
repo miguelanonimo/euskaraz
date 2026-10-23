@@ -1781,11 +1781,18 @@
       // Medidas con decimales y redondeadas hacia arriba: con enteros a ras, al acabar la animación
       // la pista de una línea podía partirse un instante en dos.
       var r = chip.getBoundingClientRect(), w = Math.ceil(r.width), h = Math.ceil(r.height);
-      var una = h < bh * 1.6;
+      var cs = getComputedStyle(chip);
+      /* ¿Cabe en una línea? Se compara con lo que mediría ESTA pista de una
+         sola línea, no con el alto del botón. El botón ya trae su relleno,
+         así que con «h < bh * 1.6» una pista de dos líneas (56 px frente a
+         un umbral de 62) pasaba por corta: se le ponía nowrap y se salía de
+         la tarjeta por el lado. Solo partían las de tres líneas o más. */
+      var altoUnaLinea = parseFloat(cs.lineHeight) + parseFloat(cs.paddingTop) +
+        parseFloat(cs.paddingBottom) + parseFloat(cs.borderTopWidth) + parseFloat(cs.borderBottomWidth);
+      var una = h <= altoUnaLinea + 1;
       if (una) span.style.whiteSpace = 'nowrap';
       chip.style.visibility = '';
       if (REDUCIR_MOVIMIENTO.matches) return;
-      var cs = getComputedStyle(chip);
       span.style.display = 'block';
       span.style.width = (w - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 2) + 'px';
       if (una) span.style.width = '';
