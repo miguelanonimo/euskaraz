@@ -1791,6 +1791,29 @@
         parseFloat(cs.paddingBottom) + parseFloat(cs.borderTopWidth) + parseFloat(cs.borderBottomWidth);
       var una = h <= altoUnaLinea + 1;
       if (una) span.style.whiteSpace = 'nowrap';
+      /* Si parte en dos líneas, la píldora se queda del ancho entero y el
+         hueco de la derecha canta: el texto ya se ha repartido —CSS le pone
+         text-wrap: balance— pero la caja sigue estirada hasta el borde. Así
+         que se mide la línea más larga de verdad, con los rectángulos que
+         da el Range, y se le da ESE ancho. Lo pidió Ric el 25/10/2026. */
+      if (!una) {
+        var rango = document.createRange();
+        rango.selectNodeContents(span);
+        var lineas = rango.getClientRects(), masAncha = 0;
+        for (var i = 0; i < lineas.length; i++) {
+          if (lineas[i].width > masAncha) masAncha = lineas[i].width;
+        }
+        if (masAncha) {
+          var marco = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight) +
+            parseFloat(cs.borderLeftWidth) + parseFloat(cs.borderRightWidth);
+          chip.style.width = Math.min(Math.ceil(masAncha + marco), w) + 'px';
+          // El reparto puede cambiar al estrechar la caja, así que se
+          // vuelve a medir antes de animar hacia ese tamaño.
+          r = chip.getBoundingClientRect();
+          w = Math.ceil(r.width);
+          h = Math.ceil(r.height);
+        }
+      }
       chip.style.visibility = '';
       if (REDUCIR_MOVIMIENTO.matches) return;
       span.style.display = 'block';
