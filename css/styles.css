@@ -40,6 +40,16 @@
   --f-d: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   --f-t: "Schibsted Grotesk", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 
+  /* La pista de la palabra del día, aparte porque es texto para LEER y no
+     una etiqueta: Ric no las veía bien. La tipografía ya era la de leer
+     —Schibsted, var(--f-t)—, así que lo que fallaba era el cuerpo (12) y
+     sobre todo la negrita, que a ese tamaño y sobre el color cierra las
+     letras. Elegido probándolo en el móvil: 14 de cuerpo y 500 de grosor,
+     el mismo peso que el botón «ver pista». En variables porque así se
+     comparan dos ajustes sin tocar nada más. */
+  --pista-tam: 14;
+  --pista-peso: 500;
+
   --r-card: 32px 32px 4px 32px;
   --r-row:  48px 32px 4px 48px;
   --r-btn:  32px 24px 4px 32px;
@@ -565,9 +575,14 @@ div.scard{ cursor: default; }
   padding: calc(10 * var(--u)) calc(16 * var(--u));
   border: 1px solid rgba(255,255,255,.5); color: inherit;
   border-radius: calc(24 * var(--u)) calc(20 * var(--u)) calc(4 * var(--u)) calc(24 * var(--u));
-  font-family: var(--f-t); font-size: calc(12 * var(--u)); line-height: 1.39; letter-spacing: .01em; text-align: left;
+  font-family: var(--f-t); font-size: calc(var(--pista-tam) * var(--u));
+  line-height: 1.45; letter-spacing: .01em; text-align: left;
+  /* Reparte las líneas en vez de dejar una palabra suelta abajo: «También
+     es un sitio donde no hace / frío.» pasa a «También es un sitio / donde
+     no hace frío.». En una pista de dos líneas se nota. */
+  text-wrap: balance;
 }
-.pdia__pista{ background: none; font-weight: 700; }
+.pdia__pista{ background: none; font-weight: var(--pista-peso); }
 .pdia__ver{ background: none; font-weight: 500; cursor: pointer; }
 .pdia__audio[aria-disabled="true"]{ cursor: default; }
 .pdia__ver svg{ width: calc(15 * var(--u)); height: calc(15 * var(--u)); flex-shrink: 0; margin-top: calc(1 * var(--u)); }
