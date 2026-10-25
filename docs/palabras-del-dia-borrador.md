@@ -1,16 +1,10 @@
-# Palabras del día: tanda de esta semana (borrador para revisar)
+# Palabras del día: tanda de prueba (superada)
 
-Redactadas y con audio generado el 20/10/2026 para que la función esté viva mientras Ric las valida. Todas llevan `"revisar": true` en `data/palabras-del-dia.json`; al darlas por buenas se quita. Audio con la voz Kore y las notas fonéticas de siempre; no se ha escuchado. Ninguna de las seis está en el temario (criterio de Ric: la palabra del día va fuera del curso).
+Este documento recogía las seis palabras de prueba que se redactaron el 20/10/2026 mientras la función se montaba (norabide, hostoa, ekaitza, gaztaina, sagardoa, lainoa). **Ya no sirven:** el 22/10/2026 Ric las sustituyó por su lista de 365 palabras, una por día del año (`data/palabras-del-dia.json`), verificada en Elhuyar.
 
-| Fecha | Palabra | Significado | Partes | Audio | Ric |
-|---|---|---|---|---|---|
-| 10-11 | **norabide** | dirección | nora (a dónde) + bide (camino) | [`palabras-del-dia/norabide.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/norabide.mp3) |  |
-| 10-20 | **hostoa** | la hoja | — | [`palabras-del-dia/hostoa.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/hostoa.mp3) |  |
-| 10-21 | **ekaitza** | la tormenta | — | [`palabras-del-dia/ekaitza.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/ekaitza.mp3) |  |
-| 10-22 | **gaztaina** | la castaña | — | [`palabras-del-dia/gaztaina.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/gaztaina.mp3) |  |
-| 10-23 | **sagardoa** | la sidra | sagar (manzana) + ardo (vino) | [`palabras-del-dia/sagardoa.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/sagardoa.mp3) |  |
-| 10-24 | **lainoa** | la niebla | — | [`palabras-del-dia/lainoa.mp3`](https://jdijrqkzhohpzdwlsyvg.supabase.co/storage/v1/object/public/euskaraz-audio/palabras-del-dia/lainoa.mp3) |  |
+Para revisar los audios de la lista de Ric:
 
-A revisar con ojo especial: la etimología de *sagardoa* (sagar + ardo) y que los ejemplos (*hostoak*, *gaztainondo*, *sagardotegiak*) estén bien escritos.
-
-Nota: *udazkena* y *euria* estaban en la primera versión de la tanda, pero se cambiaron por *hostoa* y *ekaitza* porque ya se enseñan en el curso (lecciones 6 y 10). También existen en el bucket los mp3 generados de *udazkena*, *euria* y *haizea* (descartada por lo mismo) en `palabras-del-dia/`, sin uso.
+- Todas las entradas llevan `"revisar": true` hasta que Ric las dé por buenas.
+- 101 audios se generaron con `scripts/generar-audio/generar-palabras-del-dia.mjs` (voz Kore y las notas fonéticas de siempre, sin escuchar). Salen en el bucket como `palabras-del-dia/<palabra>.mp3`.
+- «Aste Nagusia» y «Urriko azken astelehena» ya tenían audio en el curso y reutilizan ese.
+- El generador no repite lo que ya existe: para regenerar una palabra, vacía su campo `audio` y borra o renombra su mp3, y vuelve a lanzarlo.
