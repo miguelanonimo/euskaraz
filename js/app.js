@@ -1542,7 +1542,8 @@
   function formaPalabra(e) {
     return {
       clave: normalizar(e.eu), fecha: e.fecha || '', eu: e.eu, es: e.es || '', nota: e.nota || '', audio: e.audio || audioDePalabra(e.eu) || '',
-      partes: (e.partes || []).filter(function (x) { return x && x.eu; }),
+      // Una frase (varias palabras) no enseña «¿Cómo está hecha?»: queda solo su explicación y el contexto.
+      partes: /\s/.test(String(e.eu || '').trim()) ? [] : (e.partes || []).filter(function (x) { return x && x.eu; }),
       contexto: e.contexto || '', pistas: (e.pistas || []).slice(0, 2)
     };
   }
