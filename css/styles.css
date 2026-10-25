@@ -538,6 +538,7 @@ div.scard{ cursor: default; }
 .pdia__cara{
   --u: 0.2941cqi;
   position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-between;
+  gap: calc(16 * var(--u));   /* aire mínimo entre cabecera, cuerpo y pie cuando el cuerpo es largo */
   padding: calc(24 * var(--u)) calc(32 * var(--u));
   background: var(--pc); color: var(--white);
   border-radius: calc(28 * var(--u)) calc(28 * var(--u)) calc(4 * var(--u)) calc(28 * var(--u));
@@ -551,7 +552,15 @@ div.scard{ cursor: default; }
 .pdia__x{ display: flex; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
 .pdia__x svg{ width: calc(24 * var(--u)); height: calc(24 * var(--u)); }
 .pdia__cuerpo{ display: flex; flex-direction: column; gap: calc(32 * var(--u)); min-width: 0; }
-.pdia__cuerpo--sentido{ gap: calc(40 * var(--u)); }
+/* La cara de atrás aguanta contextos largos: si no cabe, el cuerpo se desplaza por dentro
+   (sin barra visible) y el pie «ver palabra» se queda fijo. Si cabe, sigue centrado. */
+.pdia__cuerpo--sentido{
+  gap: calc(40 * var(--u)); flex: 0 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain;
+  scrollbar-width: none; margin: calc(-8 * var(--u)) calc(-8 * var(--u)); padding: calc(8 * var(--u));
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 calc(10 * var(--u)), #000 calc(100% - 18 * var(--u)), transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 calc(10 * var(--u)), #000 calc(100% - 18 * var(--u)), transparent 100%);
+}
+.pdia__cuerpo--sentido::-webkit-scrollbar{ display: none; }
 .pdia__pal{ display: flex; flex-direction: column; gap: calc(12 * var(--u)); min-width: 0; }
 .pdia__cuerpo--sentido .pdia__pal{ gap: calc(4 * var(--u)); }
 .pdia__eu, .pdia__es{
@@ -588,14 +597,16 @@ div.scard{ cursor: default; }
 .pdia__ver svg{ width: calc(15 * var(--u)); height: calc(15 * var(--u)); flex-shrink: 0; margin-top: calc(1 * var(--u)); }
 .pdia__hecha{ display: flex; flex-direction: column; gap: calc(12 * var(--u)); }
 .pdia__etq{ margin: 0; font-family: var(--f-t); font-weight: 700; font-size: calc(12 * var(--u)); line-height: 1; letter-spacing: .1em; text-transform: uppercase; }
-.pdia__partes{ display: flex; align-items: center; gap: calc(8 * var(--u)); }
+/* Con dos partes caben en una fila, a mitades. Con tres o más (p. ej. «urria + azkena +
+   astelehena») bajan de línea en vez de apretarse: cada parte, entera, con su ancho. */
+.pdia__partes{ display: flex; flex-wrap: wrap; align-items: center; gap: calc(8 * var(--u)); }
 .pdia__parte{
-  flex: 1 1 0; min-width: 0; display: flex; flex-direction: column;
+  flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column;
   padding: calc(6 * var(--u)) calc(16 * var(--u)) calc(10 * var(--u));
   border: 1px solid rgba(255,255,255,.5);
   border-radius: calc(20 * var(--u)) calc(20 * var(--u)) calc(4 * var(--u)) calc(20 * var(--u));
 }
-.pdia__parte b{ font-family: var(--f-d); font-weight: 800; font-size: calc(30 * var(--u)); line-height: 1.25; letter-spacing: .01em; overflow-wrap: anywhere; }
+.pdia__parte b{ font-family: var(--f-d); font-weight: 800; font-size: calc(30 * var(--u)); line-height: 1.25; letter-spacing: .01em; overflow-wrap: break-word; }
 .pdia__parte small{ font-family: var(--f-t); font-weight: 500; font-size: calc(12 * var(--u)); line-height: 1.39; color: var(--white); }
 .pdia__mas{ font-family: var(--f-t); font-weight: 700; font-size: calc(20 * var(--u)); }
 .pdia__ctx{ margin: 0; font-family: var(--f-t); font-weight: 500; font-size: calc(15 * var(--u)); line-height: 1.32; letter-spacing: .02em; }
