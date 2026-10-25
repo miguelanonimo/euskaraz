@@ -64,10 +64,20 @@ const NOTAS_RIC = { // las nueve del lote de Ric, con sus instrucciones propias
 };
 
 
+// Audio que el curso ya tiene por texto: la app usa `e.audio || audioDePalabra(e.eu)`, así que esas palabras
+// cogen el suyo (ya revisado) y no se generan de nuevo.
+const enCurso = new Set();
+for (const f of (await readdir(DATA)).filter((x) => x.endsWith('.json'))) {
+  const u = JSON.parse(await readFile(path.join(DATA, f), 'utf8'));
+  const reg = (x) => { if (x && x.eu && x.audio) enCurso.add(normalizar(x.eu)); };
+  for (const v of u.vocabulario || []) { reg(v); (v.variantes || []).forEach(reg); }
+  for (const g of u.gramatica || []) (g.ejemplos || []).forEach(reg);
+  (u.audiosExtra || []).forEach(reg);
+}
 const datos = JSON.parse(await readFile(ARCHIVO, 'utf8'));
-const plan = (datos.palabras || []).filter((p) => p.eu && !p.audio)
+const plan = (datos.palabras || []).filter((p) => p.eu && !p.audio && !enCurso.has(normalizar(p.eu)))
   .map((p) => ({ p, ruta: `palabras-del-dia/${clave(p.eu)}.mp3`, nota: nota(normalizar(p.eu)) }));
-console.log(`Palabras del día sin audio: ${plan.length}`);
+console.log(`Palabras del día a generar: ${plan.length} (de ${(datos.palabras || []).length}; las que ya tienen audio en el curso se reutilizan)`);
 if (SECO) { plan.forEach((x) => console.log(`  ${x.p.fecha} «${x.p.eu}» → ${x.ruta}`)); process.exit(0); }
 
 async function enBucket(ruta) {

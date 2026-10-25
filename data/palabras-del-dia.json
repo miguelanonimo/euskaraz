@@ -6,7 +6,7 @@
       "eu": "Urte berri on",
       "es": "¡Feliz año nuevo!",
       "nota": "«Urte» es año, «berri» nuevo y «on» bueno. Literalmente: buen año nuevo.",
-      "audio": "",
+      "audio": "palabras-del-dia/urte-berri-on.mp3",
       "partes": [
         {
           "eu": "urte",
@@ -33,7 +33,7 @@
       "eu": "izarra",
       "es": "la estrella",
       "nota": "La del cielo, la de las cinco puntas de un hotel, y la persona que brilla.",
-      "audio": "",
+      "audio": "palabras-del-dia/izarra.mp3",
       "partes": [],
       "contexto": "«Izarpean» es bajo las estrellas, al raso.  «Gauean izarrak ikustera joango gara.» — Por la noche iremos a ver las estrellas.",
       "pistas": [
@@ -47,7 +47,7 @@
       "eu": "bertsolaria",
       "es": "el versolari",
       "nota": "Quien improvisa versos cantando. También se llama así a quien los escribe.",
-      "audio": "",
+      "audio": "palabras-del-dia/bertsolaria.mp3",
       "partes": [],
       "contexto": "«Bat-bateko bertsolaria» es el que improvisa, y «bertsolari-txapelketa», el campeonato.",
       "pistas": [
@@ -61,7 +61,7 @@
       "eu": "bikotea",
       "es": "la pareja",
       "nota": "La pareja de dos personas que están juntas, y también el dúo de cualquier par.",
-      "audio": "",
+      "audio": "palabras-del-dia/bikotea.mp3",
       "partes": [],
       "contexto": "«Bikote-laguna» es la pareja de alguien; «bikote ezkondua», el matrimonio.",
       "pistas": [
@@ -75,7 +75,7 @@
       "eu": "aspaldiko!",
       "es": "¡cuánto tiempo!",
       "nota": "De adjetivo significa antiguo, de hace mucho. Como saludo, «¡cuánto tiempo!».",
-      "audio": "",
+      "audio": "palabras-del-dia/aspaldiko.mp3",
       "partes": [],
       "contexto": "«Aspaldiko partez» es «por primera vez en mucho tiempo».  «Kaixo, aspaldiko!» — ¡Hola, cuánto tiempo sin verte!",
       "pistas": [
@@ -89,7 +89,7 @@
       "eu": "ahotsa",
       "es": "la voz",
       "nota": "La voz de una persona y la de quien canta. En sentido figurado, la de un pueblo.",
-      "audio": "",
+      "audio": "palabras-del-dia/ahotsa.mp3",
       "partes": [],
       "contexto": "«Ahots-kordak» son las cuerdas vocales, y «ahotsa aldatu», cambiar la voz al crecer.",
       "pistas": [
@@ -103,7 +103,7 @@
       "eu": "hortza",
       "es": "el diente",
       "nota": "El de la boca y el de una herramienta: la sierra, el rastrillo, un engranaje.",
-      "audio": "",
+      "audio": "palabras-del-dia/hortza.mp3",
       "partes": [],
       "contexto": "«Hortzez eta haginez» es «con uñas y dientes» — aquí, con dientes y muelas.",
       "pistas": [
@@ -117,7 +117,7 @@
       "eu": "jantzia",
       "es": "la prenda",
       "nota": "La prenda, el vestido, el traje.",
-      "audio": "",
+      "audio": "palabras-del-dia/jantzia.mp3",
       "partes": [],
       "contexto": "«Azpiko jantziak» es la ropa interior, y «etxeko jantziz», ir de trapillo.",
       "pistas": [
@@ -131,7 +131,7 @@
       "eu": "jaialdia",
       "es": "el festival",
       "nota": "El festival, el festejo. Casi siempre de música o de danza.",
-      "audio": "",
+      "audio": "palabras-del-dia/jaialdia.mp3",
       "partes": [],
       "contexto": "«Musika-jaialdia» es un festival de música.",
       "pistas": [
@@ -145,7 +145,7 @@
       "eu": "hiztegia",
       "es": "el diccionario",
       "nota": "Dentro se ven «hitz» (palabra) y «-tegi», el sufijo del sitio de algo: el sitio de las palabras.",
-      "audio": "",
+      "audio": "palabras-del-dia/hiztegia.mp3",
       "partes": [
         {
           "eu": "hitz",
@@ -168,7 +168,7 @@
       "eu": "errota",
       "es": "el molino",
       "nota": "El molino, el molinillo y la rueda. Y en las aves, la molleja.",
-      "audio": "",
+      "audio": "palabras-del-dia/errota.mp3",
       "partes": [],
       "contexto": "«Haize-errota» es el molino de viento; «kafe-errota», el molinillo de café.  «Errota duen baserria» — caserío con molino",
       "pistas": [
@@ -182,7 +182,7 @@
       "eu": "zalantza",
       "es": "la duda",
       "nota": "La duda.",
-      "audio": "",
+      "audio": "palabras-del-dia/zalantza.mp3",
       "partes": [],
       "contexto": "«Zalantzarik gabe» es sin duda, y «zalantzan egon», estar indeciso.  «Bere zalantza eta kezka ezkutuak kontatu zizkidan.» — Me contó sus dudas y preocupaciones secretas.",
       "pistas": [
@@ -196,7 +196,7 @@
       "eu": "saskia",
       "es": "la cesta",
       "nota": "La cesta de mimbre y la canasta del baloncesto.",
-      "audio": "",
+      "audio": "palabras-del-dia/saskia.mp3",
       "partes": [],
       "contexto": "«Saski-naski» es un revoltijo, un cajón de sastre.",
       "pistas": [
@@ -210,7 +210,7 @@
       "eu": "eskularruak",
       "es": "los guantes",
       "nota": "Dentro se ven «esku» (mano) y «larru» (piel o cuero).",
-      "audio": "",
+      "audio": "palabras-del-dia/eskularruak.mp3",
       "partes": [
         {
           "eu": "esku",
@@ -233,7 +233,7 @@
       "eu": "txotx",
       "es": "¡txotx!",
       "nota": "La voz con la que se avisa de que se va a abrir una cuba.",
-      "audio": "",
+      "audio": "palabras-del-dia/txotx.mp3",
       "partes": [],
       "contexto": "«Txotx-garaia» es la temporada de sidrería. Y «txotxean» se guarda la sidra en la cuba, para escanciarla, en vez de embotellarla.",
       "pistas": [
@@ -247,7 +247,7 @@
       "eu": "esaera",
       "es": "el dicho",
       "nota": "El dicho, el refrán. También un modismo o una manera de hablar.",
-      "audio": "",
+      "audio": "palabras-del-dia/esaera.mp3",
       "partes": [],
       "contexto": "«Esaera zaharra» es el refrán de toda la vida.",
       "pistas": [
@@ -261,7 +261,7 @@
       "eu": "nekea",
       "es": "el cansancio",
       "nota": "El cansancio, el esfuerzo que lo causa y, en otro sentido, el sufrimiento.",
-      "audio": "",
+      "audio": "palabras-del-dia/nekea.mp3",
       "partes": [],
       "contexto": "«Nekearen nekez» es de puro agotamiento, y «nekea hartu», tomarse la molestia.",
       "pistas": [
@@ -275,7 +275,7 @@
       "eu": "pitxerra",
       "es": "la jarra",
       "nota": "La jarra, y también lo que cabe dentro de ella.",
-      "audio": "",
+      "audio": "palabras-del-dia/pitxerra.mp3",
       "partes": [],
       "contexto": "Antes era además una medida de volumen: la azumbre.  «Pitxer handi bat sagardoz betea» — una jarra grande llena de sidra",
       "pistas": [
@@ -289,7 +289,7 @@
       "eu": "zelaia",
       "es": "el prado",
       "nota": "El prado, la campa, la llanura. En deporte, el terreno de juego. Y de adjetivo, llano.",
-      "audio": "",
+      "audio": "palabras-del-dia/zelaia.mp3",
       "partes": [],
       "contexto": "«Zelai-erdia» es el medio campo.",
       "pistas": [
@@ -303,7 +303,7 @@
       "eu": "danborra",
       "es": "el tambor",
       "nota": "El tambor, y también quien lo toca.",
-      "audio": "",
+      "audio": "palabras-del-dia/danborra.mp3",
       "partes": [],
       "contexto": "«Danbor-jolea» es el tamborrero. Y de una tripa bien comida también se dice danborra.",
       "pistas": [
@@ -317,7 +317,7 @@
       "eu": "oinezkoak",
       "es": "los peatones",
       "nota": "Quien va a pie. Dentro se ven «oin» (pie) y el final «-ezko».",
-      "audio": "",
+      "audio": "palabras-del-dia/oinezkoak.mp3",
       "partes": [
         {
           "eu": "oin",
@@ -336,7 +336,7 @@
       "eu": "babarrunak",
       "es": "las alubias",
       "nota": "Las alubias, las judías.",
-      "audio": "",
+      "audio": "palabras-del-dia/babarrunak.mp3",
       "partes": [],
       "contexto": "«Babarrun-jana» es la alubiada, la comida popular en la que se juntan a comerlas.",
       "pistas": [
@@ -350,7 +350,7 @@
       "eu": "txokolate beroa",
       "es": "el chocolate caliente",
       "nota": "Son dos palabras: «txokolate» y «bero», caliente.",
-      "audio": "",
+      "audio": "palabras-del-dia/txokolate-beroa.mp3",
       "partes": [
         {
           "eu": "txokolate",
@@ -373,7 +373,7 @@
       "eu": "apurra",
       "es": "la migaja",
       "nota": "La migaja, y en general una cantidad pequeña.",
-      "audio": "",
+      "audio": "palabras-del-dia/apurra.mp3",
       "partes": [],
       "contexto": "«Apur bat» es un poco; y hablando de tiempo, un momento.",
       "pistas": [
@@ -387,7 +387,7 @@
       "eu": "auzokoa",
       "es": "el vecino, la vecina",
       "nota": "Quien vive en el mismo barrio. «Auzo» es el barrio y también la vecindad entera.",
-      "audio": "",
+      "audio": "palabras-del-dia/auzokoa.mp3",
       "partes": [
         {
           "eu": "auzo",
@@ -406,7 +406,7 @@
       "eu": "igeltseroa",
       "es": "el albañil, la albañila",
       "nota": "El albañil, la albañila.",
-      "audio": "",
+      "audio": "palabras-del-dia/igeltseroa.mp3",
       "partes": [],
       "contexto": "«Igeltsero-mailua» es la maceta, el martillo con el que trabaja.",
       "pistas": [
@@ -420,7 +420,7 @@
       "eu": "xehea",
       "es": "menudo",
       "nota": "Menudo, diminuto. Y en dinero, la calderilla, el suelto.",
-      "audio": "",
+      "audio": "palabras-del-dia/xehea.mp3",
       "partes": [],
       "contexto": "«Xehe-xehe» es con todo detalle, hasta el último pormenor.",
       "pistas": [
@@ -434,7 +434,7 @@
       "eu": "ereinotza",
       "es": "el laurel",
       "nota": "El laurel.",
-      "audio": "",
+      "audio": "palabras-del-dia/ereinotza.mp3",
       "partes": [],
       "contexto": "«Ereinotz-pikorra» es su fruto, la baya.",
       "pistas": [
@@ -448,7 +448,7 @@
       "eu": "korrika",
       "es": "corriendo",
       "nota": "Corriendo, y también deprisa.",
-      "audio": "",
+      "audio": "palabras-del-dia/korrika.mp3",
       "partes": [],
       "contexto": "«Korrika egin» es correr, y «korrika eta presaka», deprisa y corriendo.",
       "pistas": [
@@ -462,7 +462,7 @@
       "eu": "eskaintza",
       "es": "la oferta",
       "nota": "La oferta de una tienda y la dedicatoria de un libro. También una ofrenda.",
-      "audio": "",
+      "audio": "palabras-del-dia/eskaintza.mp3",
       "partes": [],
       "contexto": "«Eskaintza egin» vale para ofrecer y para pujar en una subasta.",
       "pistas": [
@@ -476,7 +476,7 @@
       "eu": "euri-langarra",
       "es": "la llovizna",
       "nota": "La lluvia menuda. «Euri» es lluvia.",
-      "audio": "",
+      "audio": "palabras-del-dia/euri-langarra.mp3",
       "partes": [
         {
           "eu": "euri",
@@ -522,7 +522,7 @@
       "eu": "birziklatu",
       "es": "reciclar",
       "nota": "Es un verbo, no un sustantivo: reciclar, y también reciclarse.",
-      "audio": "",
+      "audio": "palabras-del-dia/birziklatu.mp3",
       "partes": [],
       "contexto": "Lo verás escrito en los contenedores y en los puntos limpios.",
       "pistas": [
@@ -536,7 +536,7 @@
       "eu": "gazia",
       "es": "salado",
       "nota": "No es solo la sal: una manzana sin madurar es gazia, y una contestación cortante también.",
-      "audio": "",
+      "audio": "palabras-del-dia/gazia.mp3",
       "partes": [],
       "contexto": "El agua del mar, una sopa con demasiada sal y una manzana verde son todas gaziak.  «Itsasoko ura gazia da.» — El agua del mar es salada.",
       "pistas": [
@@ -550,7 +550,7 @@
       "eu": "irribarrea",
       "es": "la sonrisa",
       "nota": "La risa con ruido es «barrea». Esta es la callada.",
-      "audio": "",
+      "audio": "palabras-del-dia/irribarrea.mp3",
       "partes": [],
       "contexto": "Para sonreír se dice «irribarre egin», hacer sonrisa.  «Irribarrez ikusi ninduen.» — Me vio sonriendo.",
       "pistas": [
@@ -564,7 +564,7 @@
       "eu": "berokia",
       "es": "el abrigo",
       "nota": "Son dos cosas: la prenda y el lugar resguardado. Y de adverbio, «calurosamente».",
-      "audio": "",
+      "audio": "palabras-del-dia/berokia.mp3",
       "partes": [],
       "contexto": "Fíjate en que «bero» es calor: los tres sentidos van de lo mismo.  «Berokia jantzi.» — Ponerse el abrigo.",
       "pistas": [
@@ -605,7 +605,7 @@
       "eu": "hostoa",
       "es": "la hoja del árbol",
       "nota": "La del árbol, la de una planta, la de una flor. Y también el follaje entero.",
-      "audio": "",
+      "audio": "palabras-del-dia/hostoa.mp3",
       "partes": [],
       "contexto": "«Hostoa galdu» es deshojarse. Ojo con una cosa: para la hoja de papel y para la página de un libro la palabra corriente es otra, «orria».",
       "pistas": [
@@ -619,7 +619,7 @@
       "eu": "goroldioa",
       "es": "el musgo",
       "nota": "Una planta verde, parecida a la pelusa, que crece sobre las piedras y los troncos.",
-      "audio": "",
+      "audio": "palabras-del-dia/goroldioa.mp3",
       "partes": [],
       "contexto": "En un otoño de lluvia cubre las piedras del monte y los muros de sombra.",
       "pistas": [
@@ -633,7 +633,7 @@
       "eu": "ostatua",
       "es": "el hostal",
       "nota": "Posada, pensión, hostal, albergue.",
-      "audio": "",
+      "audio": "palabras-del-dia/ostatua.mp3",
       "partes": [],
       "contexto": "«Ostatu hartu» es hospedarse.",
       "pistas": [
@@ -647,7 +647,7 @@
       "eu": "arin",
       "es": "ligero, rápido",
       "nota": "Nueve sentidos: ligero de peso, veloz, leve, ameno, informal, voluble, ligero de comida...",
-      "audio": "",
+      "audio": "palabras-del-dia/arin.mp3",
       "partes": [],
       "contexto": "«Arin-arin» es además un baile, que se toca con trikitixa y con txistu.  «Luma bezain arina.» — Ligero como una pluma.",
       "pistas": [
@@ -661,7 +661,7 @@
       "eu": "emakumeak",
       "es": "las mujeres",
       "nota": "«Emakumea» es una mujer; «emakumeak», las mujeres. Esa -ak del final es la que hace el plural.",
-      "audio": "",
+      "audio": "palabras-del-dia/emakumeak.mp3",
       "partes": [],
       "contexto": "Fíjate en el ejemplo: con «bat», un o una, la palabra se queda sin artículo.  «Emakume eder bat.» — Una mujer hermosa.",
       "pistas": [
@@ -675,7 +675,7 @@
       "eu": "gaztaina",
       "es": "la castaña",
       "nota": "Vale para el fruto y para el árbol.",
-      "audio": "",
+      "audio": "palabras-del-dia/gaztaina.mp3",
       "partes": [],
       "contexto": "El día de Domu Santu las plazas huelen a esto.  «Gaztaina-krema» — crema de castañas",
       "pistas": [
@@ -689,7 +689,7 @@
       "eu": "putzua",
       "es": "el charco",
       "nota": "Charco y poza, sí — pero también pozo. El de la acera y el del caserío se dicen igual.",
-      "audio": "",
+      "audio": "palabras-del-dia/putzua.mp3",
       "partes": [],
       "contexto": "«Putzu txikian ito» — ahogarse en un charco pequeño: nuestro «ahogarse en un vaso de agua».",
       "pistas": [
@@ -703,7 +703,7 @@
       "eu": "txingorra",
       "es": "el granizo",
       "nota": "Granizo, pedrisco. Y la misma palabra vale para un sarpullido de la piel.",
-      "audio": "",
+      "audio": "palabras-del-dia/txingorra.mp3",
       "partes": [],
       "contexto": "En Gipuzkoa se oye también «kazkabarra».  «Txingorra ari du.» — Está granizando.",
       "pistas": [
@@ -717,7 +717,7 @@
       "eu": "enborra",
       "es": "el tronco",
       "nota": "El del árbol, el del cuerpo y, en gramática, el tema: lo que queda al quitarle a una palabra todo lo de fuera.",
-      "audio": "",
+      "audio": "palabras-del-dia/enborra.mp3",
       "partes": [],
       "contexto": "Es lo que corta el aizkolari en las pruebas de herri kirolak.",
       "pistas": [
@@ -731,7 +731,7 @@
       "eu": "ilargia",
       "es": "la luna",
       "nota": "La nuestra y, en general, cualquier satélite.",
-      "audio": "",
+      "audio": "palabras-del-dia/ilargia.mp3",
       "partes": [],
       "contexto": "Aunque no sea oficial, hay quien dice que viene de «hil» + «argi». Y ahí está la gracia: «hil» significa a la vez «mes» y «muerto», así que sale la luz del mes… o la luz de los muertos.",
       "pistas": [
@@ -745,7 +745,7 @@
       "eu": "katilua",
       "es": "el tazón, el cuenco",
       "nota": "Tazón o cuenco: más que una taza. Y también lo que cabe dentro.",
-      "audio": "",
+      "audio": "palabras-del-dia/katilua.mp3",
       "partes": [],
       "contexto": "Cabe el desayuno entero.  «Katilua bi eskuez hartuz.» — Cogiendo el tazón con las dos manos.",
       "pistas": [
@@ -759,7 +759,7 @@
       "eu": "kanpandorrea",
       "es": "el campanario",
       "nota": "Dentro se ven «kanpai» (campana) y «dorre» (torre).",
-      "audio": "",
+      "audio": "palabras-del-dia/kanpandorrea.mp3",
       "partes": [
         {
           "eu": "kanpai",
@@ -782,7 +782,7 @@
       "eu": "lokatza",
       "es": "el barro",
       "nota": "Barro, lodo, fango.",
-      "audio": "",
+      "audio": "palabras-del-dia/lokatza.mp3",
       "partes": [],
       "contexto": "No es el agua: es la tierra mojada y pisada, la que se queda pegada.  «Lokatzez beteta zaude.» — Estás lleno de barro.",
       "pistas": [
@@ -796,7 +796,7 @@
       "eu": "astigarra",
       "es": "el arce",
       "nota": "Arce. Hay tres: astigar arrunt (arce menor), astigar zorrotz (arce real) y astigar zuri (el falso plátano).",
-      "audio": "",
+      "audio": "palabras-del-dia/astigarra.mp3",
       "partes": [],
       "contexto": "Está dentro de Astigarraga y de Astigarribia. Como tantos árboles de aquí, es también apellido.",
       "pistas": [
@@ -810,7 +810,7 @@
       "eu": "norabidea",
       "es": "la dirección",
       "nota": "La dirección de un camino o de una carretera — el rumbo. No la dirección de una casa.",
-      "audio": "",
+      "audio": "palabras-del-dia/norabidea.mp3",
       "partes": [
         {
           "eu": "nora",
@@ -833,7 +833,7 @@
       "eu": "euskaltegia",
       "es": "el euskaltegi",
       "nota": "El centro donde se enseña euskera, sobre todo a personas adultas.",
-      "audio": "",
+      "audio": "palabras-del-dia/euskaltegia.mp3",
       "partes": [],
       "contexto": "Termina en «-tegi», el sufijo del sitio donde hay algo o donde se hace algo.",
       "pistas": [
@@ -847,7 +847,7 @@
       "eu": "erizaina",
       "es": "el enfermero, la enfermera",
       "nota": "Es quien cuida a quien está enfermo.",
-      "audio": "",
+      "audio": "palabras-del-dia/erizaina.mp3",
       "partes": [],
       "contexto": "El médico es «medikua»; esta es la otra mitad del equipo.",
       "pistas": [
@@ -861,7 +861,7 @@
       "eu": "saguzarra",
       "es": "el murciélago",
       "nota": "Fíjate en que «sagu», el ratón, está dentro de esta palabra. Y no es cosa solo de aquí: en alemán el murciélago es «Fledermaus», el ratón que aletea.",
-      "audio": "",
+      "audio": "palabras-del-dia/saguzarra.mp3",
       "partes": [],
       "contexto": "«Sagu» sirve además para el ratón del ordenador.",
       "pistas": [
@@ -875,7 +875,7 @@
       "eu": "haizetea",
       "es": "el vendaval",
       "nota": "El ventarrón. Y además, la temporada de viento.",
-      "audio": "",
+      "audio": "palabras-del-dia/haizetea.mp3",
       "partes": [],
       "contexto": "«Negua haizete-garaia da» — el invierno es temporada de viento.  «Haizeteak etxea bota zuen.» — El ventarrón derribó la casa.",
       "pistas": [
@@ -889,7 +889,7 @@
       "eu": "zilarra",
       "es": "la plata",
       "nota": "El metal. Y de adjetivo: brillante, reluciente, puro.",
-      "audio": "",
+      "audio": "palabras-del-dia/zilarra.mp3",
       "partes": [],
       "contexto": "«Zilarra bezain garbi» — limpio como la plata. Se dice de una casa que está impecable.  «Etxea zilarra bezain garbi izaten du.» — Suele tener la casa limpia como la plata.",
       "pistas": [
@@ -903,7 +903,7 @@
       "eu": "txakolina",
       "es": "el txakoli",
       "nota": "El vino vasco por excelencia. Casi siempre blanco, con la acidez que le deja el Atlántico.",
-      "audio": "",
+      "audio": "palabras-del-dia/txakolina.mp3",
       "partes": [],
       "contexto": "Tiene tres denominaciones de origen, una por territorio: Getariako Txakolina en Gipuzkoa, Bizkaiko Txakolina en Bizkaia y Arabako Txakolina en Álava. La uva principal es la hondarrabi zuri.",
       "pistas": [
@@ -917,7 +917,7 @@
       "eu": "azala",
       "es": "la piel",
       "nota": "Piel, corteza, cáscara, funda, portada, superficie, apariencia. Todas sus acepciones son lo mismo: lo de fuera.",
-      "audio": "",
+      "audio": "palabras-del-dia/azala.mp3",
       "partes": [],
       "contexto": "«Azal lodia izan» — tener la piel gruesa, o sea, tener mucha cara.",
       "pistas": [
@@ -931,7 +931,7 @@
       "eu": "perretxikoak",
       "es": "las setas",
       "nota": "Las setas.",
-      "audio": "",
+      "audio": "palabras-del-dia/perretxikoak.mp3",
       "partes": [],
       "contexto": "«Perretxikoak bezala» — como setas: de un día para otro y en cantidad. Igual que en castellano.  «Etxebizitzak perretxikoak bezala ugaritu ziren.» — Las viviendas se multiplicaron como setas.",
       "pistas": [
@@ -945,7 +945,7 @@
       "eu": "erre",
       "es": "quemar, asar",
       "nota": "Quemar, asar, freír... y fumar. De adjetivo, quemado o asado.",
-      "audio": "",
+      "audio": "palabras-del-dia/erre.mp3",
       "partes": [],
       "contexto": "«Erre eta su egon» — estar que arde: estar enfadado.",
       "pistas": [
@@ -959,7 +959,7 @@
       "eu": "gaztainerre",
       "es": "la asada de castañas",
       "nota": "«Gaztaina» (castaña) + «erre» (asada).",
-      "audio": "",
+      "audio": "palabras-del-dia/gaztainerre.mp3",
       "partes": [
         {
           "eu": "gaztaina",
@@ -982,7 +982,7 @@
       "eu": "elorria",
       "es": "el espino",
       "nota": "Endrino, majuelo, espino blanco. En Iparralde significa directamente «espina».",
-      "audio": "",
+      "audio": "palabras-del-dia/elorria.mp3",
       "partes": [],
       "contexto": "«Ez da arrosarik elorririk gabe» — no hay rosa sin espina.",
       "pistas": [
@@ -996,7 +996,7 @@
       "eu": "jatetxea",
       "es": "el restaurante",
       "nota": "Dentro se ven «jate» (de «jan», comer) y «etxe» (casa): casa de comer. Se lee solo en cuanto sabes las dos piezas.",
-      "audio": "",
+      "audio": "palabras-del-dia/jatetxea.mp3",
       "partes": [
         {
           "eu": "jate",
@@ -1019,7 +1019,7 @@
       "eu": "itzala",
       "es": "la sombra",
       "nota": "Sombra, amparo, prestigio, el lado oscuro de algo, tristeza... y, en coloquial, la cárcel.",
-      "audio": "",
+      "audio": "palabras-del-dia/itzala.mp3",
       "partes": [],
       "contexto": "«Itzala utzi» — dejar sombra: dejar huella.",
       "pistas": [
@@ -1033,7 +1033,7 @@
       "eu": "haria",
       "es": "el hilo",
       "nota": "El de coser, el del teléfono, el de una conversación y la cuerda de un instrumento.",
-      "audio": "",
+      "audio": "palabras-del-dia/haria.mp3",
       "partes": [],
       "contexto": "«Haria galdu» — perder el hilo, igual que en castellano.",
       "pistas": [
@@ -1047,7 +1047,7 @@
       "eu": "kontuz!",
       "es": "¡cuidado!",
       "nota": "Sale de «kontu», cuidado o atención. De adverbio es «con cuidado»; de interjección, «¡cuidado!».",
-      "audio": "",
+      "audio": "palabras-del-dia/kontuz.mp3",
       "partes": [],
       "contexto": "«Kontuz ibili» — andar con cuidado.  «Kontuz, erori gabe!» — ¡Cuidado, no te vayas a caer!",
       "pistas": [
@@ -1061,7 +1061,7 @@
       "eu": "soroa",
       "es": "el campo de cultivo",
       "nota": "Tierra sembrada, campo de cultivo. En Iparralde, además, el prado.",
-      "audio": "",
+      "audio": "palabras-del-dia/soroa.mp3",
       "partes": [],
       "contexto": "«Nork bere sorora ur» — cada uno lleva el agua a su campo.",
       "pistas": [
@@ -1075,7 +1075,7 @@
       "eu": "hasiera",
       "es": "el principio",
       "nota": "El principio, el comienzo. En ajedrez, la apertura. Y en música, el ataque de una nota.",
-      "audio": "",
+      "audio": "palabras-del-dia/hasiera.mp3",
       "partes": [],
       "contexto": "«Hasiera eman» — dar comienzo.  «Astearen hasieran triste egoten naiz.» — Al comienzo de la semana suelo estar triste.",
       "pistas": [
@@ -1089,7 +1089,7 @@
       "eu": "hesia",
       "es": "el seto, la valla",
       "nota": "Seto, valla, barrera, cercado. Y en sentido figurado, obstáculo o impedimento.",
-      "audio": "",
+      "audio": "palabras-del-dia/hesia.mp3",
       "partes": [],
       "contexto": "En atletismo es la valla: «hesi-lasterketa» es la carrera de vallas.",
       "pistas": [
@@ -1103,7 +1103,7 @@
       "eu": "ongi etorri",
       "es": "bienvenido",
       "nota": "«Ongi» es bien y «etorri» es venir: bien venido, igual que en castellano.",
-      "audio": "",
+      "audio": "palabras-del-dia/ongi-etorri.mp3",
       "partes": [
         {
           "eu": "ongi",
@@ -1126,7 +1126,7 @@
       "eu": "negarra",
       "es": "el llanto",
       "nota": "El llanto, el acto de llorar. La lágrima en sí es otra palabra: «malkoa».",
-      "audio": "",
+      "audio": "palabras-del-dia/negarra.mp3",
       "partes": [],
       "contexto": "«Negar egin» es llorar; «negarrez», llorando; «negar batean», a lágrima viva.",
       "pistas": [
@@ -1140,7 +1140,7 @@
       "eu": "izotza",
       "es": "el hielo",
       "nota": "El hielo. Y también la helada y la escarcha de la mañana.",
-      "audio": "",
+      "audio": "palabras-del-dia/izotza.mp3",
       "partes": [],
       "contexto": "«Izotz zuri» es la escarcha; «izotz-kandela», el carámbano que cuelga del alero.",
       "pistas": [
@@ -1154,7 +1154,7 @@
       "eu": "intxaur-saltsa",
       "es": "la crema de nueces",
       "nota": "«Intxaur» (nuez) + «saltsa» (salsa), y se escribe con guion.",
-      "audio": "",
+      "audio": "palabras-del-dia/intxaur-saltsa.mp3",
       "partes": [
         {
           "eu": "intxaur",
@@ -1177,7 +1177,7 @@
       "eu": "elebiduna",
       "es": "el bilingüe",
       "nota": "«Ele» es lengua, «bi» es dos y «-dun» es quien tiene algo. Quien tiene dos lenguas.",
-      "audio": "",
+      "audio": "palabras-del-dia/elebiduna.mp3",
       "partes": [
         {
           "eu": "ele",
@@ -1204,7 +1204,7 @@
       "eu": "ogitartekoa",
       "es": "el bocadillo",
       "nota": "Dentro se ven «ogi» (pan) y «arte» (entre): lo que va entre panes.",
-      "audio": "",
+      "audio": "palabras-del-dia/ogitartekoa.mp3",
       "partes": [
         {
           "eu": "ogi",
@@ -1227,7 +1227,7 @@
       "eu": "osasuna",
       "es": "la salud",
       "nota": "La salud. Y también la sanidad, el sistema entero.",
-      "audio": "",
+      "audio": "palabras-del-dia/osasuna.mp3",
       "partes": [],
       "contexto": "«Osasun-etxea» es el centro de salud, el ambulatorio.  «Osasun ona du.» — Tiene buena salud.",
       "pistas": [
@@ -1241,7 +1241,7 @@
       "eu": "Durangoko Azoka",
       "es": "la Feria de Durango",
       "nota": "La feria del libro y el disco vasco, en Durango. «Azoka» es feria o mercado.",
-      "audio": "",
+      "audio": "palabras-del-dia/durangoko-azoka.mp3",
       "partes": [],
       "contexto": "Son unos días de puente, y es la cita grande del año para quien edita en euskera.",
       "pistas": [
@@ -1255,7 +1255,7 @@
       "eu": "argiak",
       "es": "las luces",
       "nota": "«Argi» es la luz, el día, la lámpara... y la cabeza: «argi laburreko pertsona» es alguien de pocas luces.",
-      "audio": "",
+      "audio": "palabras-del-dia/argiak.mp3",
       "partes": [],
       "contexto": "«Argia ikusi» es nacer: ver la luz.",
       "pistas": [
@@ -1269,7 +1269,7 @@
       "eu": "mihia",
       "es": "la lengua",
       "nota": "La de la boca, la de hablar, el badajo de la campana y la lengüeta del zapato.",
-      "audio": "",
+      "audio": "palabras-del-dia/mihia.mp3",
       "partes": [],
       "contexto": "«Mihi-puntan eduki» — tenerlo en la punta de la lengua.",
       "pistas": [
@@ -1283,7 +1283,7 @@
       "eu": "legatza",
       "es": "la merluza",
       "nota": "La merluza.",
-      "audio": "",
+      "audio": "palabras-del-dia/legatza.mp3",
       "partes": [],
       "contexto": "«Legatzetara joan» es ir a por ella, a pescarla.  «Lapurdiko ontziak legatzetara joaten ziren.» — Los barcos de Lapurdi iban a pescar merluza.",
       "pistas": [
@@ -1297,7 +1297,7 @@
       "eu": "labana",
       "es": "la navaja",
       "nota": "Navaja y cuchillo: la misma palabra para las dos.",
-      "audio": "",
+      "audio": "palabras-del-dia/labana.mp3",
       "partes": [],
       "contexto": "«Bizar-labana» es la navaja de afeitar.",
       "pistas": [
@@ -1311,7 +1311,7 @@
       "eu": "argindarra",
       "es": "la electricidad",
       "nota": "Dentro se ven «argi» (luz) e «indar» (fuerza): la fuerza de la luz.",
-      "audio": "",
+      "audio": "palabras-del-dia/argindarra.mp3",
       "partes": [
         {
           "eu": "argi",
@@ -1334,7 +1334,7 @@
       "eu": "Mari Domingi",
       "es": "la que acompaña a Olentzero",
       "nota": "La figura que acompaña a Olentzero.",
-      "audio": "",
+      "audio": "palabras-del-dia/mari-domingi.mp3",
       "partes": [],
       "contexto": "Baja con él de los caseríos en las vísperas, vestida de aldeana.",
       "pistas": [
@@ -1348,7 +1348,7 @@
       "eu": "harrotasuna",
       "es": "el orgullo",
       "nota": "Orgullo, y también fanfarronería. Y en la cocina, lo esponjoso de una masa.",
-      "audio": "",
+      "audio": "palabras-del-dia/harrotasuna.mp3",
       "partes": [],
       "contexto": "La misma palabra para lo que levanta a una persona y para lo que levanta un pastel.",
       "pistas": [
@@ -1362,7 +1362,7 @@
       "eu": "neurria",
       "es": "la medida",
       "nota": "El tamaño, la medida, la moderación. Y la medida de un bertso.",
-      "audio": "",
+      "audio": "palabras-del-dia/neurria.mp3",
       "partes": [],
       "contexto": "«Neurriak hartu» vale para medir algo y para tomar medidas: las dos cosas.",
       "pistas": [
@@ -1376,7 +1376,7 @@
       "eu": "eliza",
       "es": "la iglesia",
       "nota": "El edificio y la institución: la misma palabra para las dos.",
-      "audio": "",
+      "audio": "palabras-del-dia/eliza.mp3",
       "partes": [],
       "contexto": "«Eliz atari» es el pórtico, el atrio de la entrada.  «Lekeitioko eliza ederra» — la hermosa iglesia de Lekeitio",
       "pistas": [
@@ -1390,7 +1390,7 @@
       "eu": "maindirea",
       "es": "la sábana",
       "nota": "La sábana. «Azpiko maindire» es la bajera.",
-      "audio": "",
+      "audio": "palabras-del-dia/maindirea.mp3",
       "partes": [],
       "contexto": "En Bizkaia se oye además «izarak».",
       "pistas": [
@@ -1404,7 +1404,7 @@
       "eu": "gabon-kanta",
       "es": "el villancico",
       "nota": "«Gabon» (Navidad) + «kanta» (canción), con guion.",
-      "audio": "",
+      "audio": "palabras-del-dia/gabon-kanta.mp3",
       "partes": [
         {
           "eu": "gabon",
@@ -1427,7 +1427,7 @@
       "eu": "euri-jasa",
       "es": "el chaparrón",
       "nota": "El aguacero. «Euri» (lluvia) + «jasa».",
-      "audio": "",
+      "audio": "palabras-del-dia/euri-jasa.mp3",
       "partes": [
         {
           "eu": "euri",
@@ -1450,7 +1450,7 @@
       "eu": "saioa",
       "es": "el intento",
       "nota": "El intento, la sesión, la actuación. Y el ensayo que se escribe.",
-      "audio": "",
+      "audio": "palabras-del-dia/saioa.mp3",
       "partes": [],
       "contexto": "«Saio-hodi» es el tubo de ensayo del laboratorio.",
       "pistas": [
@@ -1464,7 +1464,7 @@
       "eu": "erretegia",
       "es": "el asador",
       "nota": "El asador. Dentro se ven «erre» (asar) y «-tegi» (el sitio de algo).",
-      "audio": "",
+      "audio": "palabras-del-dia/erretegia.mp3",
       "partes": [
         {
           "eu": "erre",
@@ -1487,7 +1487,7 @@
       "eu": "talo",
       "es": "la torta de maíz",
       "nota": "La torta de maíz, fina y sin levadura.",
-      "audio": "",
+      "audio": "palabras-del-dia/talo.mp3",
       "partes": [],
       "contexto": "Se vende en las ferias, muchas veces con txistorra dentro.",
       "pistas": [
@@ -1501,7 +1501,7 @@
       "eu": "opila",
       "es": "la torta",
       "nota": "Torta, panecillo, bollo.",
-      "audio": "",
+      "audio": "palabras-del-dia/opila.mp3",
       "partes": [],
       "contexto": "«Nork bere opilari ikatza» — cada uno, el carbón a su propia torta.",
       "pistas": [
@@ -1515,7 +1515,7 @@
       "eu": "makala",
       "es": "el chopo",
       "nota": "El chopo, el álamo. Y de adjetivo: débil, flojo.",
-      "audio": "",
+      "audio": "palabras-del-dia/makala.mp3",
       "partes": [],
       "contexto": "Son dos palabras distintas que se escriben igual.",
       "pistas": [
@@ -1529,7 +1529,7 @@
       "eu": "ikatza",
       "es": "el carbón",
       "nota": "El carbón.",
-      "audio": "",
+      "audio": "palabras-del-dia/ikatza.mp3",
       "partes": [],
       "contexto": "«Ikatz bizi» es la brasa; «egur-ikatz», el carbón vegetal, el que hacía el carbonero.",
       "pistas": [
@@ -1543,7 +1543,7 @@
       "eu": "Eguberri on",
       "es": "¡Feliz Navidad!",
       "nota": "«Eguberri» (Navidad) + «on» (bueno). Literalmente: buena Navidad.",
-      "audio": "",
+      "audio": "palabras-del-dia/eguberri-on.mp3",
       "partes": [
         {
           "eu": "eguberri",
@@ -1566,7 +1566,7 @@
       "eu": "galtzerdiak",
       "es": "los calcetines",
       "nota": "Calcetines y medias: la misma palabra para las dos cosas. «Galtzerdi motz» es el corto.",
-      "audio": "",
+      "audio": "palabras-del-dia/galtzerdiak.mp3",
       "partes": [],
       "contexto": "Cuidado al traducir: si alguien dice «zetazko galtzerdiak», habla de medias de seda.  «Dirua galtzerdi batean gorde» — guardar el dinero en un calcetín",
       "pistas": [
@@ -1580,7 +1580,7 @@
       "eu": "mamia",
       "es": "la miga",
       "nota": "La miga, la pulpa, la carne de una fruta. Y el meollo de algo.",
-      "audio": "",
+      "audio": "palabras-del-dia/mamia.mp3",
       "partes": [],
       "contexto": "En Gipuzkoa se oye además para la cuajada.",
       "pistas": [
@@ -1594,7 +1594,7 @@
       "eu": "gozoa",
       "es": "dulce",
       "nota": "Dulce, sabroso, agradable, suave. Y de una tierra, fértil.",
-      "audio": "",
+      "audio": "palabras-del-dia/gozoa.mp3",
       "partes": [],
       "contexto": "De sustantivo y en plural, «gozoak» son los dulces; «gozo-denda», la confitería.",
       "pistas": [
@@ -1608,7 +1608,7 @@
       "eu": "Oporrengatik itxita",
       "es": "cerrado por vacaciones",
       "nota": "«Oporrengatik» (por vacaciones) + «itxita» (cerrado). Ese es el orden.",
-      "audio": "",
+      "audio": "palabras-del-dia/oporrengatik-itxita.mp3",
       "partes": [
         {
           "eu": "oporrengatik",
@@ -1631,7 +1631,7 @@
       "eu": "gizonak",
       "es": "los hombres",
       "nota": "«Gizona» es un hombre; «gizonak», los hombres.",
-      "audio": "",
+      "audio": "palabras-del-dia/gizonak.mp3",
       "partes": [],
       "contexto": "En registro popular vale además para «marido».",
       "pistas": [
@@ -1645,7 +1645,7 @@
       "eu": "gabon zahar",
       "es": "la nochevieja",
       "nota": "«Gabon» (Navidad) + «zahar» (viejo): la navidad vieja, la del final.",
-      "audio": "",
+      "audio": "palabras-del-dia/gabon-zahar.mp3",
       "partes": [
         {
           "eu": "gabon",
