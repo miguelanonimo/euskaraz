@@ -487,6 +487,10 @@
     {
       "eu": "edonon",
       "es": "en cualquier sitio",
+      "esAlt": [
+        "en cualquier lugar",
+        "en cualquier parte"
+      ],
       "nota": null,
       "audio": "unidades/u3/edonon.mp3",
       "categoria": "otros",
@@ -495,6 +499,10 @@
     {
       "eu": "edonora",
       "es": "a cualquier sitio",
+      "esAlt": [
+        "a cualquier lugar",
+        "a cualquier parte"
+      ],
       "nota": null,
       "audio": "unidades/u3/edonora.mp3",
       "categoria": "otros",

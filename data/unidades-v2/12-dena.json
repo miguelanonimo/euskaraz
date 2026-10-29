@@ -272,6 +272,10 @@
     {
       "eu": "nonbait",
       "es": "en algún sitio",
+      "esAlt": [
+        "en algún lugar",
+        "en alguna parte"
+      ],
       "nota": null,
       "audio": "unidades/u12/nonbait.mp3",
       "categoria": "otros",
