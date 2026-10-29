@@ -732,6 +732,14 @@
       if (!audio) return m;
       return '<i>' + dentro.replace(/<b>/g, '<b class="sin-audio">') + '</i>' + botonAudioTexto(texto, audio);
     });
+    /* Una frase de ejemplo escrita en cursiva al principio de línea, seguida de su
+       traducción («<i>Bilbotik nator</i> — vengo desde Bilbao.»), también se narra
+       entera si tiene audio. Solo al principio de línea y con la traducción detrás:
+       una cursiva suelta en medio de un párrafo suele ser énfasis, no un ejemplo. */
+    html = html.replace(/(^|\n)<i>([^<]+)<\/i>(?=\s*—)/g, function (m, ini, texto) {
+      var audio = audioDePalabra(texto);
+      return audio ? ini + '<i>' + texto + '</i>' + botonAudioTexto(texto, audio) : m;
+    });
     return html.replace(/<b>([^<]+)<\/b>/g, function (m, texto) {
       var audio = audioDePalabra(texto);
       return audio ? m + botonAudioTexto(texto, audio) : m;

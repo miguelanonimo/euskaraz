@@ -43,6 +43,8 @@ function nota(t) {
   if (/z/.test(t)) n += Z;
   if (/tz/.test(t)) n += 'The group "tz" is a clear ts sound as in English "cats", never "ch". ';
   if (/g/.test(t)) n += 'The letter g is always a hard g as in English "go" — never a d, never a j. ';
+  // «nago», «dago», «zagoz»… la voz tendía a decir «nabo»: la «g» entre vocales hay que marcarla (comprobado con «Gaur ondo nago.»).
+  if (/\b(nago|dago|zagoz|dagoz|gagoz|nagoz)\b/.test(t)) n += 'CRITICAL: in the verb form (nago, dago, zagoz…) the g between vowels is a strong, fully articulated hard plosive g, made with the back of the tongue, like the g in Spanish "tengo" or "lago". It must NEVER sound like b or v ("nabo") and must not disappear. ';
   if (/\bh|h[aeiou]/.test(t)) n += 'The letter h is silent. ';
   if (/rr/.test(t)) n += 'The "rr" is a strong trilled r. ';
   if (/tx/.test(t)) n += 'The "tx" is a "ch" as in English "church". ';
@@ -90,7 +92,7 @@ const vistos = new Map();
 for (const { d } of unidades) {
   for (const g of d.gramatica || []) {
     for (const ln of String(g.cuerpo || '').split('\n')) {
-      const m = /^<b>([^<]+)<\/b>\s*(—|–|-)/.exec(ln);
+      const m = /^<(?:b|i)>([^<]+)<\/(?:b|i)>\s*(—|–|-)/.exec(ln);   // en negrita o en cursiva
       if (!m) continue;
       const eu = m[1].trim();
       if (porTexto.has(normalizar(eu))) continue;
