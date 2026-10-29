@@ -903,6 +903,11 @@ div.scard{ cursor: default; }
   font-family: var(--f-t); font-weight: 500; font-size: calc(16px + var(--w) * 0.0286); line-height: 1.39; letter-spacing: 0.01em;
   transition: filter .15s var(--ease), background-color .15s var(--ease), transform .1s var(--ease);
 }
+/* Al comprobar, las fichas pasan a negrita y ocupan más. Se reserva ese ancho desde el principio con una copia
+   invisible del texto en negrita: así la ficha no cambia de tamaño al comprobar, y no se corta la última letra
+   (visto en «hau» en el iPhone). */
+.chip[data-p]{ flex-direction: column; justify-content: center; }
+.chip[data-p]::after{ content: attr(data-p); font-weight: 700; height: 0; overflow: hidden; visibility: hidden; white-space: nowrap; pointer-events: none; }
 .chip:hover{ filter: brightness(0.94); }
 .chip:active{ transform: scale(0.97); }
 .chip.is-used{ background: transparent; box-shadow: inset 0 0 0 1px var(--grey30); color: var(--grey50); cursor: default; filter: none; transform: none; }

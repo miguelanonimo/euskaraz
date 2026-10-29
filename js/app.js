@@ -4493,6 +4493,7 @@
       clon.className = 'chip chip--in';
       clon.textContent = c.dataset.p;
       clon.dataset.k = c.dataset.k;
+      clon.dataset.p = c.dataset.p;   // el CSS reserva con él el ancho en negrita (ver .chip[data-p])
       build.appendChild(clon);
       refrescar();
     });
