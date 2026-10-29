@@ -1542,8 +1542,11 @@
   function formaPalabra(e) {
     return {
       clave: normalizar(e.eu), fecha: e.fecha || '', eu: e.eu, es: e.es || '', nota: e.nota || '', audio: e.audio || audioDePalabra(e.eu) || '',
-      // Una frase (varias palabras) no enseña «¿Cómo está hecha?»: queda solo su explicación y el contexto.
-      partes: /\s/.test(String(e.eu || '').trim()) ? [] : (e.partes || []).filter(function (x) { return x && x.eu; }),
+      /* «¿Cómo está hecha?» se enseña con las partes que traiga la entrada, hasta dos
+         cajas (una palabra compuesta o una pareja: «ongi + etorri»). Con tres o más
+         partes es una frase («urria + azkena + astelehena»): ahí no se enseña y queda
+         solo la explicación y el contexto. */
+      partes: (function (ps) { return ps.length > 2 ? [] : ps; })((e.partes || []).filter(function (x) { return x && x.eu; })),
       contexto: e.contexto || '', pistas: (e.pistas || []).slice(0, 2)
     };
   }
@@ -1614,6 +1617,11 @@
       var tam = Math.max(min, Math.min(max, ideal));
       w.style.fontSize = tam + 'px';
       if (ideal < min) w.style.whiteSpace = 'normal';
+      // Medir a 100px no es exacto (el trazado cambia con el tamaño): se comprueba con el tamaño real y se baja un 2% hasta que cabe.
+      for (var i = 0; i < 12 && w.style.whiteSpace === 'nowrap' && w.scrollWidth > ancho && tam > min; i++) {
+        tam = Math.max(min, tam * 0.98);
+        w.style.fontSize = tam + 'px';
+      }
     });
   }
 
