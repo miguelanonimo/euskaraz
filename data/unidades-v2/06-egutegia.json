@@ -3760,6 +3760,54 @@
     {
       "eu": "herrietan",
       "audio": "unidades/u6/herrietan.mp3"
+    },
+    {
+      "eu": "Ordu bata",
+      "audio": "unidades/u6/ordu-bata.mp3"
+    },
+    {
+      "eu": "Ordu biak",
+      "audio": "unidades/u6/ordu-biak.mp3"
+    },
+    {
+      "eu": "erdiak",
+      "audio": "unidades/u6/erdiak.mp3"
+    },
+    {
+      "eu": "laurden",
+      "audio": "unidades/u6/laurden.mp3"
+    },
+    {
+      "eu": "Gaur astelehena da.",
+      "audio": "unidades/u6/gaur-astelehena-da.mp3"
+    },
+    {
+      "eu": "Gauean beti etxean nago.",
+      "audio": "unidades/u6/gauean-beti-etxean-nago.mp3"
+    },
+    {
+      "eu": "Zazpi eta erdiak dira.",
+      "audio": "unidades/u6/zazpi-eta-erdiak-dira.mp3"
+    },
+    {
+      "eu": "Orain hamabiak dira.",
+      "audio": "unidades/u6/orain-hamabiak-dira.mp3"
+    },
+    {
+      "eu": "Ordu bietan eskolan nago.",
+      "audio": "unidades/u6/ordu-bietan-eskolan-nago.mp3"
+    },
+    {
+      "eu": "Abendua hilabete hotza da.",
+      "audio": "unidades/u6/abendua-hilabete-hotza-da.mp3"
+    },
+    {
+      "eu": "Udan bero egiten du.",
+      "audio": "unidades/u6/udan-bero-egiten-du.mp3"
+    },
+    {
+      "eu": "seiak laurden gutxi dira",
+      "audio": "unidades/u6/seiak-laurden-gutxi-dira.mp3"
     }
   ]
 }

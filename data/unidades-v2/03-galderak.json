@@ -2956,6 +2956,26 @@
     {
       "eu": "Zu nongoa zara?",
       "audio": "unidades/u3/zu-nongoa-zara.mp3"
+    },
+    {
+      "eu": "Bilbokoa naiz eta Gernikatik nator",
+      "audio": "unidades/u3/bilbokoa-naiz-eta-gernikatik-nator.mp3"
+    },
+    {
+      "eu": "Nor zu zara?",
+      "audio": "unidades/u3/nor-zu-zara.mp3"
+    },
+    {
+      "eu": "Norekin zaude zu?",
+      "audio": "unidades/u3/norekin-zaude-zu.mp3"
+    },
+    {
+      "eu": "Nora zoaz zu?",
+      "audio": "unidades/u3/nora-zoaz-zu.mp3"
+    },
+    {
+      "eu": "hau, hori, hura",
+      "audio": "unidades/u3/hau-hori-hura.mp3"
     }
   ]
 }

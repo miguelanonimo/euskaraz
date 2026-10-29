@@ -2616,6 +2616,50 @@
     {
       "eu": "holan",
       "audio": "unidades/u1/holan.mp3"
+    },
+    {
+      "eu": "Ondo, eskerrik asko",
+      "audio": "unidades/u1/ondo-eskerrik-asko.mp3"
+    },
+    {
+      "eu": "Oso ondo, eskerrik asko.",
+      "audio": "unidades/u1/oso-ondo-eskerrik-asko.mp3"
+    },
+    {
+      "eu": "Egun on. Zer moduz?",
+      "audio": "unidades/u1/egun-on-zer-moduz.mp3"
+    },
+    {
+      "eu": "Eskerrik asko. Agur!",
+      "audio": "unidades/u1/eskerrik-asko-agur.mp3"
+    },
+    {
+      "eu": "Ondo, eskerrik asko. Eta zu?",
+      "audio": "unidades/u1/ondo-eskerrik-asko-eta-zu.mp3"
+    },
+    {
+      "eu": "Arratsalde on. Zer moduz?",
+      "audio": "unidades/u1/arratsalde-on-zer-moduz.mp3"
+    },
+    {
+      "eu": "Kaixo! Zer moduz?",
+      "audio": "unidades/u1/kaixo-zer-moduz.mp3"
+    },
+    {
+      "eu": "Hala-hola, eskerrik asko.",
+      "audio": "unidades/u1/hala-hola-eskerrik-asko.mp3"
+    },
+    {
+      "eu": "Agur, gero arte.",
+      "audio": "unidades/u1/agur-gero-arte.mp3"
+    },
+    {
+      "eu": "Gabon, bihar arte.",
+      "audio": "unidades/u1/gabon-bihar-arte.mp3"
+    },
+    {
+      "eu": "Gabon, ikusi arte.",
+      "audio": "unidades/u1/gabon-ikusi-arte.mp3"
     }
   ]
 }

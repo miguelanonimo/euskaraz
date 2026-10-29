@@ -3694,6 +3694,34 @@
     {
       "eu": "autobusez",
       "audio": "unidades/u8/autobusez.mp3"
+    },
+    {
+      "eu": "Ni trenez Bilbora noa.",
+      "audio": "unidades/u8/ni-trenez-bilbora-noa.mp3"
+    },
+    {
+      "eu": "Nondik zatoz zu?",
+      "audio": "unidades/u8/nondik-zatoz-zu.mp3"
+    },
+    {
+      "eu": "Haiek oinez datoz.",
+      "audio": "unidades/u8/haiek-oinez-datoz.mp3"
+    },
+    {
+      "eu": "etxera noa",
+      "audio": "unidades/u8/etxera-noa.mp3"
+    },
+    {
+      "eu": "Ni oinez merkatura noa.",
+      "audio": "unidades/u8/ni-oinez-merkatura-noa.mp3"
+    },
+    {
+      "eu": "Mugitzen naiz",
+      "audio": "unidades/u8/mugitzen-naiz.mp3"
+    },
+    {
+      "eu": "Barkatu, non dago…?",
+      "audio": "unidades/u8/barkatu-non-dago.mp3"
     }
   ]
 }

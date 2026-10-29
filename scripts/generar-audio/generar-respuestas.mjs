@@ -92,7 +92,7 @@ for (const { d } of unidades) {
     const k = normalizar(txt);
     if (conAudio.has(k) || vistos.has(k) || !esEuskera(txt) || noSeDice(txt)) continue;
     vistos.add(k);
-    plan.push({ d, eu: txt, ruta: `unidades/${d.id}/${clave(txt)}.mp3`, nota: nota(k) });
+    plan.push({ d, eu: txt, ruta: `unidades/${d.id}/${clave(txt.replace(/…/g, ""))}.mp3`, nota: nota(k) });
   }
 }
 console.log(`Respuestas correctas sin audio: ${plan.length}`);
@@ -129,7 +129,7 @@ for (const x of plan) {
     if (!(await enBucket(x.ruta))) {
       const local = path.join(SALIDA, x.ruta.replaceAll('/', '_'));
       let buf;
-      if (await existe(local)) buf = await readFile(local); else { buf = await sintetizar(cli, x.eu, x.nota); await writeFile(local, buf); await esperar(1500); }
+      if (await existe(local)) buf = await readFile(local); else { buf = await sintetizar(cli, x.eu.replace(/…/g, ''), x.nota); await writeFile(local, buf); await esperar(1500); }
       await subir(x.ruta, buf);
     }
     hechos.push(x);
