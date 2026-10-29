@@ -823,7 +823,7 @@
     },
     {
       "eu": "ari naiz",
-      "es": "estoy (con el verbo en -t(z)en delante)",
+      "es": "estoy …ndo",
       "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
       "audio": "unidades/u7/ari-naiz.mp3",
       "categoria": "verbo",
@@ -831,16 +831,16 @@
     },
     {
       "eu": "ari zara",
-      "es": "estás (con el verbo en -t(z)en delante)",
-      "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
+      "es": "estás …ndo",
+      "nota": "Nunca va solo: «jaten ari zara», no «ari zara» a secas.",
       "audio": "unidades/u7/ari-zara.mp3",
       "categoria": "verbo",
       "subnivel": "7.4"
     },
     {
       "eu": "ari da",
-      "es": "está (con el verbo en -t(z)en delante)",
-      "nota": "Nunca va solo: «jaten ari naiz», no «ari naiz» a secas.",
+      "es": "está …ndo",
+      "nota": "Nunca va solo: «jaten ari da», no «ari da» a secas.",
       "audio": "unidades/u7/ari-da.mp3",
       "categoria": "verbo",
       "subnivel": "7.4"
