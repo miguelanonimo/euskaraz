@@ -223,7 +223,7 @@
     },
     {
       "titulo": "Cuatro respuestas que salvan cualquier apuro",
-      "cuerpo": "Antes de saber construir frases, conviene poder salir del paso:\n\n<b>bai</b> — sí\n<b>ez</b> — no\n<b>ez dakit</b> — no sé\n<b>agian</b> — quizás\n\n<i>Ez dakit</i> es probablemente la frase más útil de todo este módulo. Literalmente es «no lo sé», y te permite responder honestamente a cualquier pregunta que no entiendas sin cortar la conversación.\n\nY si no has entendido lo que te dicen, dos más:\n\n<b>barkatu?</b> — ¿perdón?\n<b>ez dut ulertzen</b> — no entiendo",
+      "cuerpo": "Antes de saber construir frases, conviene poder salir del paso:\n\n<b>bai</b> — sí\n<b>ez</b> — no\n<b>ez dakit</b> — no sé\n<b>agian</b> — quizás\n\n<i>Ez dakit</i> es probablemente la frase más útil de todo este módulo. Literalmente es «no lo sé», y te permite responder honestamente a cualquier pregunta que no entiendas sin cortar la conversación.\n\nY si no has entendido lo que te dicen, tres más:\n\n<b>barkatu?</b> — ¿perdón?\n<b>ez dut ulertzen</b> — no entiendo\n<b>poliki, mesedez</b> — despacio, por favor\n\nLa última es la que más vas a usar al principio, y casi siempre por la misma razón: no es que te falten las palabras, es que te las dicen deprisa. <i>Mesedez</i> ya lo viste en la primera unidad; <i>poliki</i> es «despacio».",
       "ejemplos": [
         {
           "eu": "ez dakit",
@@ -425,6 +425,14 @@
       "es": "quizás",
       "nota": null,
       "audio": "unidades/u3/agian.mp3",
+      "categoria": "otros",
+      "subnivel": "3.4"
+    },
+    {
+      "eu": "poliki, mesedez",
+      "es": "despacio, por favor",
+      "nota": "Frase hecha. Pídela sin vergüenza: casi nunca es que te falten las palabras, es que te las dicen deprisa.",
+      "audio": "unidades/u11/poliki-mesedez.mp3",
       "categoria": "otros",
       "subnivel": "3.4"
     },
