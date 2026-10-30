@@ -122,3 +122,29 @@ Cómo se ha medido: «enseñada» = aparece en el vocabulario del tema o en un e
 | u11 | u10-g42 | 11.2 | 4 | opcion | etorriko (12.4) | «Etorriko da» significa… → vendrá |
 | u11 | u10-g43 | 11.1 | 4 | pares | etorriko (12.4) | joango naiz · egingo dut · etorriko da · ikasiko dut |
 | u12 | u12-g06 | 12.2 | 5 | opcion | zegaitik (12.4) | «Zegaitik?» es la forma de Bilbao de decir… → Zergatik? |
+
+## Resueltas
+
+**30/10/2026 — «poliki» en u3-g27 y u3-g28 (dos filas, tema 3.4).**
+Lo encontró un usuario: el ejercicio «"Poliki" significa…» sale en la
+unidad 3 y la palabra se enseñaba en la 11.3.
+
+La salida fácil era quitar los dos ejercicios y dejar la palabra para la
+unidad 11. Ric decidió al revés, y tiene razón pedagógica: **«poliki,
+mesedez» es justo una frase de apuro**, de las que hacen falta el primer
+día, así que el sitio donde se enseña es 3.4 y no la 11. Entra en la
+ficha «Cuatro respuestas que salvan cualquier apuro», en el grupo de
+«si no has entendido lo que te dicen», al lado de *barkatu?* y de *ez dut
+ulertzen*.
+
+Y una cosa que apareció al mirarlo: **la frase ya estaba en el curso**,
+en la ficha de la 11.3 que compara *poliki* con *astiro*, y **con su mp3
+grabado** (`unidades/u11/poliki-mesedez.mp3`). Por eso Ric tenía la
+sensación de haberla tenido. Así que entra también como entrada de
+vocabulario de la 3.4 reutilizando esa grabación —no hay que grabar
+nada— y la frase queda en el diccionario y en los repasos.
+
+Que esté en los dos sitios es bueno, no un duplicado: en la 3.4 se da
+entera, como bloque, igual que *ez dakit*; en la 11.3 se desmonta, con
+*poliki* frente a *astiro* y el doble sentido de *poliki* («bien, con
+gracia», de *polit*).
