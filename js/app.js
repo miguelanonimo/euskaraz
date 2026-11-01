@@ -1761,7 +1761,14 @@
     ov.innerHTML = '<div class="pdia__card"><div class="pdia__giro"></div></div>';
     document.body.appendChild(ov);
     var card = ov.querySelector('.pdia__card'), giro = ov.querySelector('.pdia__giro');
-    function ajustar() { ajustarPalabra(card); }
+    /* El desvanecido de arriba y de abajo de la cara del significado solo se pinta si el
+       texto se desplaza de verdad (con scroll); si cabe entero, se ve limpio. */
+    function marcarScroll() {
+      Array.prototype.forEach.call(card.querySelectorAll('.pdia__cuerpo--sentido'), function (c) {
+        c.classList.toggle('con-scroll', c.scrollHeight > c.clientHeight + 1);
+      });
+    }
+    function ajustar() { ajustarPalabra(card); marcarScroll(); }
 
     function pintar() {
       actual = mazo[pos].p;

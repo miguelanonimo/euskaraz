@@ -557,6 +557,9 @@ div.scard{ cursor: default; }
 .pdia__cuerpo--sentido{
   gap: calc(40 * var(--u)); flex: 0 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain;
   scrollbar-width: none; margin: calc(-8 * var(--u)) calc(-8 * var(--u)); padding: calc(8 * var(--u));
+}
+/* El desvanecido solo cuando hay scroll (lo pone el JS: .con-scroll). */
+.pdia__cuerpo--sentido.con-scroll{
   -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 calc(10 * var(--u)), #000 calc(100% - 18 * var(--u)), transparent 100%);
   mask-image: linear-gradient(to bottom, transparent 0, #000 calc(10 * var(--u)), #000 calc(100% - 18 * var(--u)), transparent 100%);
 }
