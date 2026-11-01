@@ -4424,12 +4424,15 @@
     function handler(esEu) {
       return function (e) {
         var btn = e.target.closest('.pair');
-        if (!btn || estado.resuelto) return;
+        if (!btn) return;
+        /* El altavoz suena siempre: también con la palabra ya unida y con el
+           ejercicio resuelto, para repasar cómo suena cada una. */
         if (e.target.closest('.pair__play')) {
           var audio = audioDePalabra(ej.pares[parseInt(btn.dataset.i, 10)].eu);
           if (audio) reproducir(audio);
           return;
         }
+        if (estado.resuelto) return;
         /* Tocar una palabra ya unida deshace esa unión; pero si ya hay una
            palabra elegida en la otra columna, se toma como cambio de pareja. */
         if (btn.classList.contains('is-link')) {

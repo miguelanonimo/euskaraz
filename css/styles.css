@@ -876,7 +876,7 @@ div.scard{ cursor: default; }
 }
 .pair--eu{ font-weight: 700; }
 .pair__txt{ flex: 1 1 0; min-width: 0; overflow-wrap: break-word; }
-.pair__play{ display: flex; color: rgba(10,10,10,0.5); padding: 4px; margin: -4px; }
+.pair__play{ display: flex; color: rgba(10,10,10,0.5); padding: 4px; margin: -4px; cursor: pointer; }
 .pair:hover{ background: var(--cream); box-shadow: inset 0 0 0 1px var(--grey50); }
 .pair:active{ transform: scale(0.98); }
 .pair[aria-pressed="true"]{ background: var(--grey65); box-shadow: inset 0 0 0 1px var(--grey65); color: var(--white); }
