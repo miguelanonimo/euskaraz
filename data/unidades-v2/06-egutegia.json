@@ -1477,7 +1477,7 @@
             "zer ordu da",
             "ze ordu da"
           ],
-          "pista": "Tres palabras."
+          "pista": "Literalmente, «qué hora es». Empieza por «zer»."
         },
         {
           "tipo": "traducir",
@@ -2196,7 +2196,7 @@
           "respuestas": [
             "hilabetea"
           ],
-          "pista": "Una palabra."
+          "pista": "Una sola palabra, empieza por «hil» y acaba con su artículo."
         },
         {
           "tipo": "traducir",

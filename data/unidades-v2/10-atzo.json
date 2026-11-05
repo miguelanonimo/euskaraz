@@ -714,7 +714,7 @@
             "atzo etxera joan nintzen",
             "ni atzo etxera joan nintzen"
           ],
-          "pista": "Cuatro palabras."
+          "pista": "«joan» va entero y detrás el pasado de «izan». «A casa», con la -ra."
         },
         {
           "tipo": "traducir",
@@ -724,7 +724,7 @@
             "zu irakaslea zinen",
             "irakaslea zinen"
           ],
-          "pista": "Tres palabras."
+          "pista": "El pasado de «izan» para «tú» empieza por z- y acaba en -en."
         },
         {
           "tipo": "traducir",
@@ -734,7 +734,7 @@
             "lehen ikasleak ginen",
             "gu lehen ikasleak ginen"
           ],
-          "pista": "Tres palabras."
+          "pista": "«Antes» es «lehen», y el oficio va en plural porque sois varios."
         },
         {
           "tipo": "traducir",
@@ -744,7 +744,7 @@
             "gernikan jaio nintzen",
             "ni gernikan jaio nintzen"
           ],
-          "pista": "Tres palabras."
+          "pista": "«En Gernika», con la -n de lugar. Nacer se dice con el pasado de «izan»."
         },
         {
           "tipo": "traducir",
@@ -754,7 +754,7 @@
             "haiek nire lehengusuak ziren",
             "nire lehengusuak ziren"
           ],
-          "pista": "Cuatro palabras."
+          "pista": "Posesivo delante, el sustantivo en plural, y el pasado al final."
         }
       ]
     },
@@ -1340,7 +1340,7 @@
             "bilbon jaio nintzen",
             "ni bilbon jaio nintzen"
           ],
-          "pista": "Tres palabras."
+          "pista": "Bilbo + la -n de lugar, y el mismo verbo que usarías para «fui»."
         },
         {
           "tipo": "traducir",
@@ -1361,7 +1361,7 @@
             "zer egin zenuen",
             "ze egin zenuen"
           ],
-          "pista": "Tres palabras."
+          "pista": "En pasado el verbo no lleva -ten: va entero, y detrás el auxiliar de «tú»."
         },
         {
           "tipo": "traducir",
@@ -2545,7 +2545,7 @@
             "irakasleak zineten",
             "zuek irakasleak zineten"
           ],
-          "pista": "Dos palabras."
+          "pista": "Como el de «tú», pero con una pieza más al final para el plural."
         },
         {
           "tipo": "traducir",
@@ -2555,7 +2555,7 @@
             "ikasleak ginen",
             "gu ikasleak ginen"
           ],
-          "pista": "Dos palabras."
+          "pista": "El verbo va al final, y el pasado de «nosotros» lleva una g delante."
         },
         {
           "tipo": "traducir",
@@ -2565,7 +2565,7 @@
             "nire irakaslea zen",
             "hura nire irakaslea zen"
           ],
-          "pista": "Tres palabras."
+          "pista": "El verbo del final es el pasado más corto de todos: una sola sílaba."
         },
         {
           "tipo": "traducir",
@@ -2672,7 +2672,7 @@
             "atzo liburua irakurri zenuten",
             "zuek atzo liburua irakurri zenuten"
           ],
-          "pista": "Cuatro palabras."
+          "pista": "El verbo va entero, y el auxiliar de «vosotros» lleva un -te- dentro."
         },
         {
           "tipo": "traducir",
@@ -2682,7 +2682,7 @@
             "etxea erosi genuen",
             "guk etxea erosi genuen"
           ],
-          "pista": "Tres palabras."
+          "pista": "Ojo, aquí «compramos» es pasado. El auxiliar de «nosotros» lleva una g delante."
         },
         {
           "tipo": "traducir",

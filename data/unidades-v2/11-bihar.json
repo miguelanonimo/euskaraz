@@ -1678,7 +1678,7 @@
           "respuestas": [
             "bihar bilbora joango naiz"
           ],
-          "pista": "Cuatro palabras."
+          "pista": "«joan» acaba en -n, así que el futuro se hace con -go. Y «a Bilbao», con la -ra."
         },
         {
           "tipo": "traducir",
@@ -1696,7 +1696,7 @@
           "respuestas": [
             "ogia erosiko dut"
           ],
-          "pista": "Tres palabras."
+          "pista": "«erosi» no acaba en -n, así que el futuro es con -ko. Y el pan, con su artículo."
         },
         {
           "tipo": "traducir",
@@ -1715,7 +1715,7 @@
           "respuestas": [
             "etxean jango dut"
           ],
-          "pista": "Tres palabras."
+          "pista": "«En casa», con la -n de lugar. Y «jan» acaba en -n: futuro con -go."
         }
       ],
       "subnivel": "11.1"
@@ -1811,7 +1811,7 @@
             "zu bezain altua naiz",
             "ni zu bezain altua naiz"
           ],
-          "pista": "Cuatro palabras."
+          "pista": "«Tan… como» es una sola palabra, «bezain», y va detrás de con quién te comparas."
         },
         {
           "tipo": "traducir",
@@ -1820,7 +1820,7 @@
           "respuestas": [
             "liburu hau hobea da"
           ],
-          "pista": "Cuatro palabras."
+          "pista": "«Este» va detrás del sustantivo, no delante. Y «mejor» es irregular: tiene palabra propia."
         },
         {
           "tipo": "traducir",
@@ -1829,7 +1829,7 @@
           "respuestas": [
             "kafe gutxiago nahi dut"
           ],
-          "pista": "Cuatro palabras."
+          "pista": "«Menos» es «gutxiago», y se coloca justo detrás de aquello de lo que hay menos."
         },
         {
           "tipo": "traducir",
@@ -1838,7 +1838,7 @@
           "respuestas": [
             "hiri handiena da"
           ],
-          "pista": "Tres palabras."
+          "pista": "El superlativo se hace pegando -ena al adjetivo. No hace falta decir «la»."
         }
       ],
       "subnivel": "11.3"
