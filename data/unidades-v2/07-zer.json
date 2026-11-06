@@ -243,6 +243,12 @@
       "subnivel": "7.5"
     },
     {
+      "subnivel": "7.5",
+      "titulo": "Pedir en la barra: los números se comen el artículo",
+      "cuerpo": "Con estas palabras ya puedes pedir, y es pidiendo donde se nota una regla que viste contando: <b>detrás de un número, el nombre va desnudo</b> — sin artículo y en singular.\n\n<b>garagardo bat, mesedez</b> — una cerveza, por favor\n<b>bi garagardo, mesedez</b> — dos cervezas, por favor\n<b>hiru kafe eta ardo bat</b> — tres cafés y un vino\n\nFíjate en lo que no está: la <b>-a</b>. Se dice <i>bi garagardo</i>, nunca «bi garagardoak», aunque pidas diez.\n\nEl orden tiene su truco, y son tres casos:\n\n<b>bat</b> va <b>detrás</b>: <i>garagardo bat</i>, <i>kafe bat</i>.\n<b>bi</b> puede ir a los dos lados: <i>bi garagardo</i> y <i>garagardo bi</i>.\nLos demás van <b>delante</b>: <i>hiru kafe</i>, nunca «kafe hiru».\n\nY el contraste que lo deja claro: <b>garagardoa, mesedez</b> es «la cerveza, por favor» —esa de la que ya estabais hablando—, mientras que <b>garagardo bat, mesedez</b> es «una cerveza». En cuanto entra un número, el artículo se va.",
+      "ejemplos": []
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "Una nota de uso más que de dialecto: <b>gazta</b> es el queso en general, pero si te hablan de <b>Idiazabal</b> te están hablando del de oveja con denominación de origen, que aquí es casi otra categoría.",
       "ejemplos": [
@@ -4018,6 +4024,77 @@
         }
       ],
       "subnivel": "7.5"
+    },
+    {
+      "id": "u7-g37",
+      "subnivel": "7.5",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Pides dos cervezas en la barra. ¿Cómo lo dices?",
+          "opciones": [
+            "bi garagardo, mesedez",
+            "bi garagardoak, mesedez",
+            "bi garagardoa, mesedez",
+            "garagardoak bi, mesedez"
+          ],
+          "correcta": 0,
+          "explicacion": "Detrás de un número, el nombre va desnudo: ni artículo ni plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Tres cafés» es…",
+          "opciones": [
+            "hiru kafe",
+            "hiru kafeak",
+            "kafe hiru",
+            "hiru kafea"
+          ],
+          "correcta": 0,
+          "explicacion": "Sin artículo, y el número delante: «bi» es el único que puede ir detrás."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Quieres UNA cerveza. ¿Cuál es?",
+          "opciones": [
+            "garagardo bat, mesedez",
+            "bat garagardo, mesedez",
+            "garagardoa bat, mesedez",
+            "garagardo bata, mesedez"
+          ],
+          "correcta": 0,
+          "explicacion": "«bat» es el único número que va detrás del nombre, pegado como si fuera el artículo «un»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Garagardoa, mesedez» y «garagardo bat, mesedez»: ¿en qué se diferencian?",
+          "opciones": [
+            "La primera pide «la cerveza»; la segunda, «una cerveza»",
+            "No se diferencian en nada, valen las dos igual",
+            "La primera es más educada",
+            "La primera es de Bizkaia y la segunda de Gipuzkoa"
+          ],
+          "correcta": 0,
+          "explicacion": "Con artículo señalas una concreta; con número, una cualquiera. Y en cuanto hay número, el artículo desaparece."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas NO se puede decir?",
+          "opciones": [
+            "zuku hiru",
+            "garagardo bi",
+            "bi zuku",
+            "ardo bat"
+          ],
+          "correcta": 0,
+          "explicacion": "«bat» detrás y «bi» a los dos lados, sí; pero «hiru» y los demás van siempre delante: «hiru zuku»."
+        }
+      ]
     }
   ],
   "audiosExtra": [
