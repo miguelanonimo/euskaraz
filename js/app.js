@@ -741,7 +741,8 @@
       return audio ? ini + '<i>' + texto + '</i>' + botonAudioTexto(texto, audio) : m;
     });
     return html.replace(/<b>([^<]+)<\/b>/g, function (m, texto) {
-      var audio = audioDePalabra(texto);
+      /* «4. laugarrena»: en una lista numerada el número no forma parte de la palabra */
+      var audio = audioDePalabra(texto) || audioDePalabra(texto.replace(/^\d+\.\s+/, ''));
       return audio ? m + botonAudioTexto(texto, audio) : m;
     });
   }

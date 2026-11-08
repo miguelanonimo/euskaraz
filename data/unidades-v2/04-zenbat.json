@@ -522,7 +522,7 @@
       "eu": "hamabi",
       "es": "doce",
       "nota": "hamar + bi",
-      "audio": "unidades/u5/hamabi.mp3",
+      "audio": "unidades/u5/hamabi-2.mp3",
       "categoria": "otros",
       "subnivel": "4.1"
     },
@@ -890,7 +890,7 @@
       "eu": "hirurogeita hamar",
       "es": "setenta",
       "nota": "Tres veintes y diez.",
-      "audio": "unidades/u4/hirurogeita-hamar-2.mp3",
+      "audio": "unidades/u4/hirurogeita-hamar-3.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -5422,7 +5422,7 @@
     },
     {
       "eu": "hirurogeita hamar",
-      "audio": "unidades/u4/hirurogeita-hamar-2.mp3"
+      "audio": "unidades/u4/hirurogeita-hamar-3.mp3"
     },
     {
       "eu": "laurogei",
