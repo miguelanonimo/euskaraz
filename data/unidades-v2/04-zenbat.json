@@ -874,7 +874,7 @@
       "eu": "berrogeita hamar",
       "es": "cincuenta",
       "nota": "Dos veintes y diez.",
-      "audio": "unidades/u4/berrogeita-hamar.mp3",
+      "audio": "unidades/u4/berrogeita-hamar-2.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -906,7 +906,7 @@
       "eu": "laurogeita hamar",
       "es": "noventa",
       "nota": "Cuatro veintes y diez.",
-      "audio": "unidades/u4/laurogeita-hamar.mp3",
+      "audio": "unidades/u4/laurogeita-hamar-2.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -5434,11 +5434,11 @@
     },
     {
       "eu": "berrogeita hamar",
-      "audio": "unidades/u4/berrogeita-hamar.mp3"
+      "audio": "unidades/u4/berrogeita-hamar-2.mp3"
     },
     {
       "eu": "laurogeita hamar",
-      "audio": "unidades/u4/laurogeita-hamar.mp3"
+      "audio": "unidades/u4/laurogeita-hamar-2.mp3"
     },
     {
       "eu": "berrogei",
