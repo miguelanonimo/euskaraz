@@ -46,7 +46,7 @@
   "gramatica": [
     {
       "titulo": "Del uno al diez, que es lo que hay que saberse",
-      "cuerpo": "Estos diez no salen de ninguna regla: hay que aprendérselos, y con ellos se construye todo lo demás.\n\n<b>bat</b> — 1\n<b>bi</b> — 2\n<b>hiru</b> — 3\n<b>lau</b> — 4\n<b>bost</b> — 5\n<b>sei</b> — 6\n<b>zazpi</b> — 7\n<b>zortzi</b> — 8\n<b>bederatzi</b> — 9\n<b>hamar</b> — 10\n\nTres avisos que ahorran disgustos:\n\n<b>bat</b> no es solo «uno». Es también el artículo «un/una», y va <b>detrás</b> del nombre: <i>lagun bat</i>, un amigo o una amiga.\n<b>bi</b> es de las pocas palabras del euskera que se pueden poner delante o detrás: <i>bi lagun</i> y <i>lagun bi</i> valen las dos.\n<b>sei</b> se pronuncia con <b>s</b> clara, como en castellano «seis», no con «sh».\n\nY lo importante para lo que viene: <b>detrás de un número, el sustantivo va sin artículo y en singular</b>. Se dice <i>hiru lagun</i>, tres amigos — nunca «hiru lagunak».",
+      "cuerpo": "Estos diez no salen de ninguna regla: hay que aprendérselos, y con ellos se construye todo lo demás.\n\n<b>bat</b> — 1\n<b>bi</b> — 2\n<b>hiru</b> — 3\n<b>lau</b> — 4\n<b>bost</b> — 5\n<b>sei</b> — 6\n<b>zazpi</b> — 7\n<b>zortzi</b> — 8\n<b>bederatzi</b> — 9\n<b>hamar</b> — 10\n\nTres avisos que ahorran disgustos:\n\n<b>bat</b> no es solo «uno». Es también el artículo «un/una», y va <b>detrás</b> del nombre: <i>lagun bat</i>, un amigo o una amiga.\n<b>bi</b> es el único número que puede ir delante o detrás: <i>bi lagun</i> y <i>lagun bi</i> valen las dos. Los demás van <b>siempre delante</b> — <i>hiru lagun</i>, nunca «lagun hiru».\n<b>sei</b> se pronuncia con <b>s</b> clara, como en castellano «seis», no con «sh».\n\nY lo importante para lo que viene: <b>detrás de un número, el sustantivo va sin artículo y en singular</b>. Se dice <i>hiru lagun</i>, tres amigos — nunca «hiru lagunak».",
       "ejemplos": [
         {
           "eu": "lagun bat",
@@ -2361,7 +2361,7 @@
             "bi lehengusu ditut",
             "nik bi lehengusu ditut"
           ],
-          "pista": "Tres palabras."
+          "pista": "Detrás de «bi» el sustantivo va desnudo, y el verbo tiene que marcar que son varios."
         },
         {
           "tipo": "orden",
@@ -5250,6 +5250,77 @@
         }
       ],
       "subnivel": "4.6"
+    },
+    {
+      "id": "u4-g62",
+      "subnivel": "4.6",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Una chica dice que tiene dos hermanas. ¿Cómo?",
+          "opciones": [
+            "bi ahizpa ditut",
+            "bi ahizpak ditut",
+            "bi ahizpa dut",
+            "bi ahizpak dut"
+          ],
+          "correcta": 0,
+          "explicacion": "Dos cosas a la vez: detrás del número el nombre va desnudo, y como son varias el verbo es «ditut»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Tres hijos» es…",
+          "opciones": [
+            "hiru seme",
+            "hiru semeak",
+            "hiru semea",
+            "semeak hiru"
+          ],
+          "correcta": 0,
+          "explicacion": "Sin artículo y en singular, por muchos que sean. «Semea» era «el hijo», con su artículo puesto."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas está mal?",
+          "opciones": [
+            "lau lehengusuak",
+            "lau lehengusu",
+            "lehengusu bat",
+            "bi lehengusu"
+          ],
+          "correcta": 0,
+          "explicacion": "La -ak sobra: detrás de un número el nombre no lleva ni artículo ni plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Se dice «bi alaba» pero «bi seme». ¿Por qué «alaba» conserva la -a?",
+          "opciones": [
+            "Porque esa -a es parte de la palabra, no el artículo",
+            "Porque «alaba» es femenino y lleva -a",
+            "Porque detrás de «bi» la -a se mantiene",
+            "Porque es una excepción que no tiene explicación"
+          ],
+          "correcta": 0,
+          "explicacion": "Es la «a itsatsia», la a pegada. «Alaba» es la palabra entera; «semea», en cambio, era «seme» con su artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zenbat anaia dituzu?» — ¿qué contestas si tienes tres?",
+          "opciones": [
+            "hiru anaia ditut",
+            "hiru anaiak ditut",
+            "hiru anai ditut",
+            "anaia hiru ditut"
+          ],
+          "correcta": 0,
+          "explicacion": "«Anaia» lleva la a pegada, así que no se cae; lo que no aparece nunca es la -ak del plural."
+        }
+      ]
     }
   ],
   "audiosExtra": [

@@ -1456,7 +1456,7 @@
             "ze gustatzen zaizu",
             "zuri zer gustatzen zaizu"
           ],
-          "pista": "Tres palabras."
+          "pista": "Con «gustatu» el verbo no es «duzu»: lo que gusta es el sujeto, y tú eres a quien le llega."
         },
         {
           "tipo": "traducir",
@@ -1486,7 +1486,7 @@
             "ondo iruditzen zait",
             "niri ondo iruditzen zait"
           ],
-          "pista": "Tres palabras."
+          "pista": "El mismo molde que «gustatzen zait», y acaba en -t porque es a mí."
         }
       ],
       "subnivel": "9.1"
