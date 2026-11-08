@@ -317,7 +317,7 @@
         {
           "eu": "ehun eta bat",
           "es": "Ciento uno.",
-          "audio": "unidades/u4/ehun-eta-bat.mp3"
+          "audio": "unidades/u4/ehun-eta-bat-2.mp3"
         }
       ],
       "subnivel": "4.2"
@@ -866,7 +866,7 @@
       "eu": "berrogei",
       "es": "cuarenta",
       "nota": "Dos veintes.",
-      "audio": "unidades/u4/berrogei-2.mp3",
+      "audio": "unidades/u4/berrogei-3.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -898,7 +898,7 @@
       "eu": "laurogei",
       "es": "ochenta",
       "nota": "Cuatro veintes.",
-      "audio": "unidades/u4/laurogei-2.mp3",
+      "audio": "unidades/u4/laurogei-3.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -922,7 +922,7 @@
       "eu": "mila",
       "es": "mil",
       "nota": null,
-      "audio": "unidades/u4/mila.mp3",
+      "audio": "unidades/u4/mila-2.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -5426,7 +5426,7 @@
     },
     {
       "eu": "laurogei",
-      "audio": "unidades/u4/laurogei-2.mp3"
+      "audio": "unidades/u4/laurogei-3.mp3"
     },
     {
       "eu": "hirurogei",
@@ -5442,7 +5442,7 @@
     },
     {
       "eu": "berrogei",
-      "audio": "unidades/u4/berrogei-2.mp3"
+      "audio": "unidades/u4/berrogei-3.mp3"
     },
     {
       "eu": "ehun",
@@ -5450,7 +5450,7 @@
     },
     {
       "eu": "mila",
-      "audio": "unidades/u4/mila.mp3"
+      "audio": "unidades/u4/mila-2.mp3"
     },
     {
       "eu": "hogeita hamar",
