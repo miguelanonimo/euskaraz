@@ -307,7 +307,7 @@
         {
           "eu": "hirurogeita hamaika",
           "es": "Setenta y uno (60 + 11).",
-          "audio": "unidades/u4/hirurogeita-hamaika.mp3"
+          "audio": "unidades/u4/hirurogeita-hamaika-2.mp3"
         },
         {
           "eu": "berrogeita hamalau",
@@ -858,7 +858,7 @@
       "eu": "hogeita hamar",
       "es": "treinta",
       "nota": "Veinte y diez.",
-      "audio": "unidades/u4/hogeita-hamar.mp3",
+      "audio": "unidades/u4/hogeita-hamar-2.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -866,7 +866,7 @@
       "eu": "berrogei",
       "es": "cuarenta",
       "nota": "Dos veintes.",
-      "audio": "unidades/u4/berrogei.mp3",
+      "audio": "unidades/u4/berrogei-2.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -882,7 +882,7 @@
       "eu": "hirurogei",
       "es": "sesenta",
       "nota": "Tres veintes.",
-      "audio": "unidades/u4/hirurogei.mp3",
+      "audio": "unidades/u4/hirurogei-2.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -890,7 +890,7 @@
       "eu": "hirurogeita hamar",
       "es": "setenta",
       "nota": "Tres veintes y diez.",
-      "audio": "unidades/u4/hirurogeita-hamar.mp3",
+      "audio": "unidades/u4/hirurogeita-hamar-2.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -898,7 +898,7 @@
       "eu": "laurogei",
       "es": "ochenta",
       "nota": "Cuatro veintes.",
-      "audio": "unidades/u4/laurogei.mp3",
+      "audio": "unidades/u4/laurogei-2.mp3",
       "categoria": "otros",
       "subnivel": "4.2"
     },
@@ -5422,15 +5422,15 @@
     },
     {
       "eu": "hirurogeita hamar",
-      "audio": "unidades/u4/hirurogeita-hamar.mp3"
+      "audio": "unidades/u4/hirurogeita-hamar-2.mp3"
     },
     {
       "eu": "laurogei",
-      "audio": "unidades/u4/laurogei.mp3"
+      "audio": "unidades/u4/laurogei-2.mp3"
     },
     {
       "eu": "hirurogei",
-      "audio": "unidades/u4/hirurogei.mp3"
+      "audio": "unidades/u4/hirurogei-2.mp3"
     },
     {
       "eu": "berrogeita hamar",
@@ -5442,7 +5442,7 @@
     },
     {
       "eu": "berrogei",
-      "audio": "unidades/u4/berrogei.mp3"
+      "audio": "unidades/u4/berrogei-2.mp3"
     },
     {
       "eu": "ehun",
@@ -5454,23 +5454,23 @@
     },
     {
       "eu": "hogeita hamar",
-      "audio": "unidades/u4/hogeita-hamar.mp3"
+      "audio": "unidades/u4/hogeita-hamar-2.mp3"
     },
     {
       "eu": "berrogeita bi",
-      "audio": "unidades/u4/berrogeita-bi.mp3"
+      "audio": "unidades/u4/berrogeita-bi-2.mp3"
     },
     {
       "eu": "hogeita bi",
-      "audio": "unidades/u4/hogeita-bi.mp3"
+      "audio": "unidades/u4/hogeita-bi-2.mp3"
     },
     {
       "eu": "hirurogeita hamasei",
-      "audio": "unidades/u4/hirurogeita-hamasei.mp3"
+      "audio": "unidades/u4/hirurogeita-hamasei-2.mp3"
     },
     {
       "eu": "laurogeita hamaika",
-      "audio": "unidades/u4/laurogeita-hamaika.mp3"
+      "audio": "unidades/u4/laurogeita-hamaika-2.mp3"
     },
     {
       "eu": "zazpigarrena",
@@ -5550,7 +5550,7 @@
     },
     {
       "eu": "Hogei urte ditut.",
-      "audio": "unidades/u4/hogei-urte-ditut.mp3"
+      "audio": "unidades/u4/hogei-urte-ditut-2.mp3"
     },
     {
       "eu": "Mikelek arreba bat dauka.",
@@ -5698,7 +5698,7 @@
     },
     {
       "eu": "Nire arrebak hogei urte ditu.",
-      "audio": "unidades/u4/nire-arrebak-hogei-urte-ditu.mp3"
+      "audio": "unidades/u4/nire-arrebak-hogei-urte-ditu-2.mp3"
     },
     {
       "eu": "Haren emaztea irakaslea da.",
