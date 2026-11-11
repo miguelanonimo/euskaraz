@@ -27,7 +27,14 @@
   // Ver docs/brief.md sección 4.
   var SUPABASE_URL = 'https://jdijrqkzhohpzdwlsyvg.supabase.co';
   var SUPABASE_ANON_KEY = 'sb_publishable_vajgspdqfKFOBRTUM-wDbg_ZrRa-YTn';
-  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  /* Si por lo que sea la librería no está, la app NO se cae: arranca en
+     modo local, con el progreso del navegador. Antes esta línea era lo
+     primero que reventaba sin red —createClient sobre un undefined— y no
+     llegaba a pintarse nada, ni un mensaje. */
+  var sb = window.supabase
+    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+    : null;
+  var SIN_LIBRERIA = !sb;
   var usuarioId = null;
   var usuarioEmail = '';
   var debeCambiarClave = false;  // cuenta de invitado con la contraseña provisional
@@ -41,8 +48,8 @@
      una cuenta de verdad en local y ver el progreso real de Supabase
      en vez del de localStorage (por ejemplo, para comprobar un cambio
      de diseño con datos reales en vez de los que uno mismo se invente). */
-  var MODO_LOCAL = ['localhost', '127.0.0.1', '::1', ''].indexOf(location.hostname) !== -1
-    && location.search.indexOf('cuenta') === -1;
+  var MODO_LOCAL = (['localhost', '127.0.0.1', '::1', ''].indexOf(location.hostname) !== -1
+    && location.search.indexOf('cuenta') === -1) || SIN_LIBRERIA;
   // Bucket público de pronunciaciones (Cloud TTS, ver docs/brief.md sección 6).
   var AUDIO_BASE = SUPABASE_URL + '/storage/v1/object/public/euskaraz-audio/';
   var GUARDAR_ESPERA_MS = 1500;
@@ -833,6 +840,29 @@
   /* Semilla de una sola vez para cuando este navegador ya tenía progreso
      en localStorage (de antes de existir Supabase) y la fila en la base
      de datos todavía no existe: así el primer login no empieza de cero. */
+  /* Espejo local del progreso de la cuenta. Existe por el avión: si la
+     escritura a Supabase falla no hay dónde caerse, y una sesión entera
+     de vuelo se pierde sin avisar. Aquí queda guardada, y se sube sola al
+     volver la red. La clave lleva el id de usuario para que dos cuentas
+     en el mismo navegador no se mezclen. */
+  function claveEspejo() { return 'euskaraz.espejo.' + (usuarioId || 'anon'); }
+
+  function guardarEspejo() {
+    if (!usuarioId) return;
+    try {
+      localStorage.setItem(claveEspejo(), JSON.stringify({
+        data: progreso, desde: progresoActualizadoEn, pendiente: hayPendiente
+      }));
+    } catch (e) {}
+  }
+
+  function leerEspejo() {
+    try { return JSON.parse(localStorage.getItem(claveEspejo()) || 'null'); }
+    catch (e) { return null; }
+  }
+
+  var hayPendiente = false;   // hay cambios que no han llegado al servidor
+
   function progresoLocalPrevio() {
     try {
       var raw = localStorage.getItem(CLAVE) || localStorage.getItem(CLAVE_VIEJA);
@@ -867,9 +897,26 @@
         if (r.error) throw r.error;
         if (r.data) {
           progresoActualizadoEn = r.data.updated_at;
+          var esp = leerEspejo();
+          // Si quedó trabajo sin subir (modo avión), manda el espejo y se
+          // reintenta la subida; si no, manda el servidor.
+          if (esp && esp.pendiente && esp.desde === r.data.updated_at) {
+            hayPendiente = true;
+            return normalizarProgreso(esp.data);
+          }
           return normalizarProgreso(r.data.data);
         }
         return crearFilaProgreso(normalizarProgreso(progresoLocalPrevio()));
+      })
+      .catch(function (err) {
+        // Sin red no se puede leer, pero sí seguir estudiando: se arranca
+        // con la última copia local. Lo que falla aquí es la conexión, no
+        // la cuenta, así que no tiene sentido echar al alumno al login.
+        var esp = leerEspejo();
+        if (!esp) throw err;
+        hayPendiente = !!esp.pendiente;
+        progresoActualizadoEn = esp.desde;
+        return normalizarProgreso(esp.data);
       });
   }
 
@@ -899,16 +946,38 @@
       }
       return;
     }
+    // El espejo primero y siempre: si lo de abajo falla, esto ya está a salvo.
+    hayPendiente = true;
+    guardarEspejo();
     var ahora = new Date().toISOString();
     var query = sb.from('euskaraz_progreso').update({ data: progreso, updated_at: ahora }).eq('user_id', usuarioId);
     if (progresoActualizadoEn) query = query.eq('updated_at', progresoActualizadoEn);
     query.select('updated_at').then(function (r) {
-      if (r.error) { console.error('Error guardando progreso', r.error); return; }
-      if (r.data && r.data.length) { progresoActualizadoEn = ahora; return; }
+      if (r.error) {
+        // Casi siempre es que no hay red. Se queda pendiente y se
+        // reintenta al volver («online» más abajo).
+        console.warn('Progreso sin subir, queda pendiente', r.error);
+        return;
+      }
+      if (r.data && r.data.length) {
+        progresoActualizadoEn = ahora;
+        hayPendiente = false;
+        guardarEspejo();
+        return;
+      }
       // No se actualizó ninguna fila: alguien más guardó primero. Adoptamos su versión.
       cargarProgreso().then(adoptarProgreso);
+    }, function (err) {
+      console.warn('Progreso sin subir, queda pendiente', err);
     });
   }
+
+  /* Al recuperar la red, subir lo que se estudió sin ella. Es lo que
+     cierra el modo avión: sin esto el espejo se queda ahí para siempre y
+     el progreso del vuelo solo existe en ese navegador. */
+  window.addEventListener('online', function () {
+    if (hayPendiente && usuarioId) guardarProgresoAhora();
+  });
 
   // Al cambiar de pantalla o salir, no dejar una escritura pendiente sin mandar.
   document.addEventListener('visibilitychange', function () {
@@ -2078,9 +2147,13 @@
     aparecerEscalonado(s.querySelectorAll('.homew__reviews > *'), 2 * DB, 110);
   }
 
-  // Al cruzar el corte de tablet, Hoy cambia de marcado: se repinta.
+  /* Al cruzar el corte de tablet, Hoy cambia de marcado: se repinta.
+     El `CURSO &&` no sobra: este aviso puede llegar ANTES de que el curso
+     haya cargado —girando el móvil nada más abrir, o con la carga lenta—
+     y entonces pantallaHome() entra en unidadDeTurno() con CURSO a null y
+     revienta la pantalla entera. Salió probando la app sin servidor. */
   ANCHO.addEventListener('change', function () {
-    if (estado.pantalla === 'home') pantallaHome();
+    if (CURSO && estado.pantalla === 'home') pantallaHome();
   });
 
   // ─────────── Pantalla: lecciones ───────────
@@ -3841,8 +3914,24 @@
   var avisos = { activo: false, dias: [0, 1, 2, 3, 4, 5, 6], hora: '20:00', msg: '' };
   var avisosTimer = null;
 
-  if (VAPID_PUBLICA && 'serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(function () {});
+  /* El service worker se registra SIEMPRE, no solo cuando hay avisos:
+     desde 11/2026 es también quien guarda la app para usarla sin
+     conexión. Se le pasa el mismo `?v=` que llevan el css y el js, que
+     es lo que hace que una publicación nueva tire la caché vieja —el
+     nombre de la caché sale de ahí— y lo que evita dejar a nadie
+     atrapado en una versión antigua. */
+  if ('serviceWorker' in navigator) {
+    var sVer = (document.querySelector('script[src*="app.js"]') || {}).src || '';
+    var mVer = sVer.match(/[?&]v=([^&]+)/);
+    navigator.serviceWorker.register('sw.js?v=' + (mVer ? mVer[1] : 'dev'))
+      .then(function () {
+        // El bucket de audio lo sabe la app, no el sw: se lo decimos para
+        // que pueda guardarse las pronunciaciones de fondo.
+        function avisar(sw) { if (sw) sw.postMessage({ tipo: 'audio-base', base: AUDIO_BASE }); }
+        avisar(navigator.serviceWorker.controller);
+        navigator.serviceWorker.ready.then(function (reg) { avisar(reg.active); });
+      })
+      .catch(function () {});
   }
 
   function avisosDisponible() { return !!VAPID_PUBLICA && !!usuarioId; }
