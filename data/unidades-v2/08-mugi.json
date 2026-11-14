@@ -696,7 +696,8 @@
             "goaz"
           ],
           "correcta": 0,
-          "explicacion": "Con «ni», el verbo «joan» hace «noa»."
+          "explicacion": "Con «ni», el verbo «joan» hace «noa».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -722,7 +723,8 @@
             "goaz"
           ],
           "correcta": 2,
-          "explicacion": "Con «hura» va «doa»."
+          "explicacion": "Con «hura» va «doa».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -967,7 +969,8 @@
             "Bilbo"
           ],
           "correcta": 2,
-          "explicacion": "Procedencia → -tik."
+          "explicacion": "Procedencia → -tik.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1194,7 +1197,8 @@
             "zaude"
           ],
           "correcta": 2,
-          "explicacion": "«ibili» con «zu»: zabiltza."
+          "explicacion": "«ibili» con «zu»: zabiltza.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1471,7 +1475,8 @@
             "ibili"
           ],
           "correcta": 0,
-          "explicacion": "Igual que la derecha: ezkerrera."
+          "explicacion": "Igual que la derecha: ezkerrera.",
+          "teclea": true
         }
       ],
       "subnivel": "8.3"
@@ -1503,7 +1508,8 @@
             "joan"
           ],
           "correcta": 1,
-          "explicacion": "«urten», y se conjuga con «dot»: urten dot."
+          "explicacion": "«urten», y se conjuga con «dot»: urten dot.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1516,7 +1522,8 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "El «naiz» del batua es «naz» en bizkaiera."
+          "explicacion": "El «naiz» del batua es «naz» en bizkaiera.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1561,7 +1568,8 @@
             "Etxe"
           ],
           "correcta": 1,
-          "explicacion": "La respuesta lleva la misma cola que la pregunta: nora → -ra."
+          "explicacion": "La respuesta lleva la misma cola que la pregunta: nora → -ra.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1600,7 +1608,8 @@
             "hona"
           ],
           "correcta": 1,
-          "explicacion": "Lo contrario de «gertu» (cerca) es «urrun» (lejos)."
+          "explicacion": "Lo contrario de «gertu» (cerca) es «urrun» (lejos).",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1613,7 +1622,8 @@
             "dut"
           ],
           "correcta": 1,
-          "explicacion": "«Ez noa trenez»: se niega el mismo verbo, «noa»."
+          "explicacion": "«Ez noa trenez»: se niega el mismo verbo, «noa».",
+          "teclea": true
         }
       ],
       "subnivel": "test"
@@ -1633,7 +1643,8 @@
             "Nahi dut joan"
           ],
           "correcta": 0,
-          "explicacion": "Verbo + nahi + auxiliar."
+          "explicacion": "Verbo + nahi + auxiliar.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1659,7 +1670,8 @@
             "ahal ez dut"
           ],
           "correcta": 1,
-          "explicacion": "«Ezin» ya lleva la negación dentro."
+          "explicacion": "«Ezin» ya lleva la negación dentro.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1974,7 +1986,8 @@
             "gertu"
           ],
           "correcta": 0,
-          "explicacion": "la tienda = denda."
+          "explicacion": "la tienda = denda.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2063,7 +2076,8 @@
             "dator"
           ],
           "correcta": 0,
-          "explicacion": "La más conocida en Bilbao es el Mercado de la Ribera. Si sales hacia Gernika, la suya es la del lunes."
+          "explicacion": "La más conocida en Bilbao es el Mercado de la Ribera. Si sales hacia Gernika, la suya es la del lunes.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2152,7 +2166,8 @@
             "dator"
           ],
           "correcta": 0,
-          "explicacion": "la calle = kalea."
+          "explicacion": "la calle = kalea.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2241,7 +2256,8 @@
             "taberna"
           ],
           "correcta": 0,
-          "explicacion": "De «liburu» (libro) + «tegi» (lugar de)."
+          "explicacion": "De «liburu» (libro) + «tegi» (lugar de).",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2330,7 +2346,8 @@
             "hara"
           ],
           "correcta": 0,
-          "explicacion": "la bicicleta = bizikleta."
+          "explicacion": "la bicicleta = bizikleta.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2419,7 +2436,8 @@
             "nahi dut"
           ],
           "correcta": 0,
-          "explicacion": "venir = etorri."
+          "explicacion": "venir = etorri.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2508,7 +2526,8 @@
             "noa"
           ],
           "correcta": 0,
-          "explicacion": "(tú) vienes = zatoz."
+          "explicacion": "(tú) vienes = zatoz.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2597,7 +2616,8 @@
             "ezkerrera"
           ],
           "correcta": 0,
-          "explicacion": "De «oin» (pie) + la -z de «por medio de»."
+          "explicacion": "De «oin» (pie) + la -z de «por medio de».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2686,7 +2706,8 @@
             "trena"
           ],
           "correcta": 0,
-          "explicacion": "Tener la posibilidad de hacer algo."
+          "explicacion": "Tener la posibilidad de hacer algo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2775,7 +2796,8 @@
             "dabil"
           ],
           "correcta": 0,
-          "explicacion": "Tener la posibilidad de hacer algo."
+          "explicacion": "Tener la posibilidad de hacer algo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2864,7 +2886,8 @@
             "hiria"
           ],
           "correcta": 0,
-          "explicacion": "tengo que, necesito = behar dut."
+          "explicacion": "tengo que, necesito = behar dut.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3285,7 +3308,8 @@
             "Sartzen naiz!"
           ],
           "correcta": 0,
-          "explicacion": "La forma de diccionario, a secas, ya es una orden."
+          "explicacion": "La forma de diccionario, a secas, ya es una orden.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3298,7 +3322,8 @@
             "Joaten"
           ],
           "correcta": 0,
-          "explicacion": "El imperativo de «joan» es «zoaz», igual que el presente de zu."
+          "explicacion": "El imperativo de «joan» es «zoaz», igual que el presente de zu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

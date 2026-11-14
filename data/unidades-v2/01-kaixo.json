@@ -2163,7 +2163,8 @@
             "euskara"
           ],
           "correcta": 0,
-          "explicacion": "Desde el mediodía hasta el anochecer."
+          "explicacion": "Desde el mediodía hasta el anochecer.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

@@ -552,7 +552,8 @@
             "nuen"
           ],
           "correcta": 1,
-          "explicacion": "«nacer» no lleva objeto, así que va con «izan»: con «ni», nintzen."
+          "explicacion": "«nacer» no lleva objeto, así que va con «izan»: con «ni», nintzen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -565,7 +566,8 @@
             "zeunden"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «izan» con «zu»: zinen."
+          "explicacion": "Pasado de «izan» con «zu»: zinen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -578,7 +580,8 @@
             "zegoen"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «izan» con «hura»: zen."
+          "explicacion": "Pasado de «izan» con «hura»: zen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -591,7 +594,8 @@
             "geunden"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «izan» con «gu»: ginen."
+          "explicacion": "Pasado de «izan» con «gu»: ginen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -604,7 +608,8 @@
             "zeuden"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «izan» con «haiek»: ziren."
+          "explicacion": "Pasado de «izan» con «haiek»: ziren.",
+          "teclea": true
         }
       ],
       "subnivel": "10.1"
@@ -773,7 +778,8 @@
             "naiz"
           ],
           "correcta": 1,
-          "explicacion": "«iaz» es el año pasado, así que la frase va en pasado. Y «gu» pide «ginen»."
+          "explicacion": "«iaz» es el año pasado, así que la frase va en pasado. Y «gu» pide «ginen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -786,7 +792,8 @@
             "gara"
           ],
           "correcta": 1,
-          "explicacion": "«herenegun» es anteayer: pasado. Con «zu», «zinen»."
+          "explicacion": "«herenegun» es anteayer: pasado. Con «zu», «zinen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -799,7 +806,8 @@
             "zineten"
           ],
           "correcta": 1,
-          "explicacion": "«lehen» frente a «orain»: la primera mitad va en pasado, y «haiek» pide «ziren»."
+          "explicacion": "«lehen» frente a «orain»: la primera mitad va en pasado, y «haiek» pide «ziren».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -812,7 +820,8 @@
             "ginen"
           ],
           "correcta": 1,
-          "explicacion": "«txikitan» es de pequeño, así que pasado: con «ni», «nintzen»."
+          "explicacion": "«txikitan» es de pequeño, así que pasado: con «ni», «nintzen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -825,7 +834,8 @@
             "zinen"
           ],
           "correcta": 1,
-          "explicacion": "«aspaldi» es hace mucho: pasado. «zuek» pide «zineten», no «zinen»."
+          "explicacion": "«aspaldi» es hace mucho: pasado. «zuek» pide «zineten», no «zinen».",
+          "teclea": true
         }
       ]
     },
@@ -843,7 +853,8 @@
             "nengoen"
           ],
           "correcta": 1,
-          "explicacion": "Hay objeto (una película) y es pasado: nuen."
+          "explicacion": "Hay objeto (una película) y es pasado: nuen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -856,7 +867,8 @@
             "zeunden"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «ukan» con «zuk»: zenuen."
+          "explicacion": "Pasado de «ukan» con «zuk»: zenuen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -869,7 +881,8 @@
             "zegoen"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «ukan» con «hark»: zuen."
+          "explicacion": "Pasado de «ukan» con «hark»: zuen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -882,7 +895,8 @@
             "geunden"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «ukan» con «guk»: genuen."
+          "explicacion": "Pasado de «ukan» con «guk»: genuen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -895,7 +909,8 @@
             "zeuden"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «ukan» con «haiek»: zuten."
+          "explicacion": "Pasado de «ukan» con «haiek»: zuten.",
+          "teclea": true
         }
       ],
       "subnivel": "10.2"
@@ -1030,7 +1045,8 @@
             "nuen"
           ],
           "correcta": 1,
-          "explicacion": "Ubicación y pasado → «egon» en pasado: nengoen."
+          "explicacion": "Ubicación y pasado → «egon» en pasado: nengoen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1043,7 +1059,8 @@
             "zuen"
           ],
           "correcta": 1,
-          "explicacion": "«egon» en pasado con «hura»: zegoen."
+          "explicacion": "«egon» en pasado con «hura»: zegoen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1056,7 +1073,8 @@
             "zuten"
           ],
           "correcta": 1,
-          "explicacion": "«egon» en pasado con «haiek»: zeuden."
+          "explicacion": "«egon» en pasado con «haiek»: zeuden.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1069,7 +1087,8 @@
             "genuen"
           ],
           "correcta": 1,
-          "explicacion": "Estado pasajero → «egon»: geunden."
+          "explicacion": "Estado pasajero → «egon»: geunden.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1082,7 +1101,8 @@
             "zenuen"
           ],
           "correcta": 1,
-          "explicacion": "«egon» en pasado con «zu»: zeunden."
+          "explicacion": "«egon» en pasado con «zu»: zeunden.",
+          "teclea": true
         }
       ],
       "subnivel": "10.3"
@@ -1201,7 +1221,8 @@
             "nintzen"
           ],
           "correcta": 0,
-          "explicacion": "Participio + presente = «he comido»."
+          "explicacion": "Participio + presente = «he comido».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1214,7 +1235,8 @@
             "nintzen"
           ],
           "correcta": 1,
-          "explicacion": "Participio + pasado = «comí»."
+          "explicacion": "Participio + pasado = «comí».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1240,7 +1262,8 @@
             "nuen"
           ],
           "correcta": 0,
-          "explicacion": "Sin objeto y presente: naiz."
+          "explicacion": "Sin objeto y presente: naiz.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1253,7 +1276,8 @@
             "nuen"
           ],
           "correcta": 1,
-          "explicacion": "Sin objeto y pasado: nintzen."
+          "explicacion": "Sin objeto y pasado: nintzen.",
+          "teclea": true
         }
       ],
       "subnivel": "10.4"
@@ -1272,7 +1296,8 @@
             "Aspaldi"
           ],
           "correcta": 1,
-          "explicacion": "«duela» + la medida de tiempo."
+          "explicacion": "«duela» + la medida de tiempo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1285,7 +1310,8 @@
             "Aurten"
           ],
           "correcta": 1,
-          "explicacion": "«joan den astean», la semana que se ha ido."
+          "explicacion": "«joan den astean», la semana que se ha ido.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1298,7 +1324,8 @@
             "orduan"
           ],
           "correcta": 1,
-          "explicacion": "«iaz» es el año pasado; «aurten», este año."
+          "explicacion": "«iaz» es el año pasado; «aurten», este año.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1324,7 +1351,8 @@
             "etzi"
           ],
           "correcta": 2,
-          "explicacion": "«herenegun». «etzi» es pasado mañana, hacia el otro lado."
+          "explicacion": "«herenegun». «etzi» es pasado mañana, hacia el otro lado.",
+          "teclea": true
         }
       ],
       "subnivel": "10.5"
@@ -1502,7 +1530,8 @@
             "ditut"
           ],
           "correcta": 1,
-          "explicacion": "Objeto plural en pasado: nituen."
+          "explicacion": "Objeto plural en pasado: nituen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1515,7 +1544,8 @@
             "ditut"
           ],
           "correcta": 1,
-          "explicacion": "Objeto singular en pasado: nuen."
+          "explicacion": "Objeto singular en pasado: nuen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1528,7 +1558,8 @@
             "dituzu"
           ],
           "correcta": 1,
-          "explicacion": "Objeto plural, pasado, «zuk»: zenituen."
+          "explicacion": "Objeto plural, pasado, «zuk»: zenituen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1541,7 +1572,8 @@
             "dituzte"
           ],
           "correcta": 1,
-          "explicacion": "Objeto plural, pasado, «haiek»: zituzten."
+          "explicacion": "Objeto plural, pasado, «haiek»: zituzten.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1554,7 +1586,8 @@
             "ditugu"
           ],
           "correcta": 1,
-          "explicacion": "Objeto singular, pasado, «guk»: genuen."
+          "explicacion": "Objeto singular, pasado, «guk»: genuen.",
+          "teclea": true
         }
       ],
       "subnivel": "10.2"
@@ -1573,7 +1606,8 @@
             "naz"
           ],
           "correcta": 1,
-          "explicacion": "El «-en» del batua se vuelve «-an»: nintzan."
+          "explicacion": "El «-en» del batua se vuelve «-an»: nintzan.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1586,7 +1620,8 @@
             "dot"
           ],
           "correcta": 1,
-          "explicacion": "El «nuen» del batua es «neban»."
+          "explicacion": "El «nuen» del batua es «neban».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1644,7 +1679,8 @@
             "joango naiz"
           ],
           "correcta": 1,
-          "explicacion": "Ayer es pasado y el verbo no lleva objeto: joan nintzen."
+          "explicacion": "Ayer es pasado y el verbo no lleva objeto: joan nintzen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1657,7 +1693,8 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "«lehen» pide pasado, y «bizi izan» va con «izan»."
+          "explicacion": "«lehen» pide pasado, y «bizi izan» va con «izan».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1670,7 +1707,8 @@
             "lanean"
           ],
           "correcta": 1,
-          "explicacion": "«ayer trabajé»: participio + pasado."
+          "explicacion": "«ayer trabajé»: participio + pasado.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1683,7 +1721,8 @@
             "hitza"
           ],
           "correcta": 1,
-          "explicacion": "«de pequeño hablaba»: es habitual, así que -t(z)en."
+          "explicacion": "«de pequeño hablaba»: es habitual, así que -t(z)en.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1696,7 +1735,8 @@
             "nuen"
           ],
           "correcta": 1,
-          "explicacion": "«hace dos años» es pasado, y «estar» → nengoen."
+          "explicacion": "«hace dos años» es pasado, y «estar» → nengoen.",
+          "teclea": true
         }
       ],
       "subnivel": "10.5"
@@ -1773,7 +1813,8 @@
             "nintzen"
           ],
           "correcta": 0,
-          "explicacion": "antes = lehen."
+          "explicacion": "antes = lehen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1862,7 +1903,8 @@
             "jaio"
           ],
           "correcta": 0,
-          "explicacion": "en aquella época = garai hartan."
+          "explicacion": "en aquella época = garai hartan.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1951,7 +1993,8 @@
             "genuen"
           ],
           "correcta": 0,
-          "explicacion": "«duela» + el tiempo: duela hilabete, duela urtebete."
+          "explicacion": "«duela» + el tiempo: duela hilabete, duela urtebete.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2040,7 +2083,8 @@
             "herenegun"
           ],
           "correcta": 0,
-          "explicacion": "en aquella época = garai hartan."
+          "explicacion": "en aquella época = garai hartan.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2071,7 +2115,8 @@
             "ginen"
           ],
           "correcta": 0,
-          "explicacion": "zuek zineten. La forma de «zuek» acaba en -ten."
+          "explicacion": "zuek zineten. La forma de «zuek» acaba en -ten.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2151,7 +2196,8 @@
             "zuten"
           ],
           "correcta": 0,
-          "explicacion": "«Guk» con objeto y en pasado: genuen. «Ginen» es de izan, sin objeto."
+          "explicacion": "«Guk» con objeto y en pasado: genuen. «Ginen» es de izan, sin objeto.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2164,7 +2210,8 @@
             "zuen"
           ],
           "correcta": 0,
-          "explicacion": "«Zuk» con objeto y en pasado: zenuen."
+          "explicacion": "«Zuk» con objeto y en pasado: zenuen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2177,7 +2224,8 @@
             "genuen"
           ],
           "correcta": 0,
-          "explicacion": "«Haiek» con objeto y en pasado: zuten."
+          "explicacion": "«Haiek» con objeto y en pasado: zuten.",
+          "teclea": true
         },
         {
           "tipo": "pares",
@@ -2231,7 +2279,8 @@
             "zeuden"
           ],
           "correcta": 0,
-          "explicacion": "«Gu» con egon en pasado: geunden. «Gaude» es el presente."
+          "explicacion": "«Gu» con egon en pasado: geunden. «Gaude» es el presente.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2244,7 +2293,8 @@
             "zeuden"
           ],
           "correcta": 0,
-          "explicacion": "«Hura» con egon en pasado: zegoen."
+          "explicacion": "«Hura» con egon en pasado: zegoen.",
+          "teclea": true
         },
         {
           "tipo": "pares",
@@ -2292,7 +2342,8 @@
             "geunden"
           ],
           "correcta": 0,
-          "explicacion": "«Haiek» con egon en pasado: zeuden."
+          "explicacion": "«Haiek» con egon en pasado: zeuden.",
+          "teclea": true
         }
       ],
       "subnivel": "10.3"
@@ -2359,7 +2410,8 @@
             "ezagutu"
           ],
           "correcta": 0,
-          "explicacion": "«Gertatu» es ocurrir, pasar."
+          "explicacion": "«Gertatu» es ocurrir, pasar.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2391,7 +2443,8 @@
             "nengoen"
           ],
           "correcta": 0,
-          "explicacion": "«Jaio» va sin objeto, así que el auxiliar es de izan: nintzen."
+          "explicacion": "«Jaio» va sin objeto, así que el auxiliar es de izan: nintzen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2404,7 +2457,8 @@
             "zuen"
           ],
           "correcta": 0,
-          "explicacion": "Hay objeto (mi amigo), así que ukan en pasado: nuen."
+          "explicacion": "Hay objeto (mi amigo), así que ukan en pasado: nuen.",
+          "teclea": true
         },
         {
           "tipo": "pares",
@@ -2467,7 +2521,8 @@
             "zeuden"
           ],
           "correcta": 1,
-          "explicacion": "«ser amigos» no lleva objeto: el pasado de «izan» con «haiek» es «ziren»."
+          "explicacion": "«ser amigos» no lleva objeto: el pasado de «izan» con «haiek» es «ziren».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2480,7 +2535,8 @@
             "zeundeten"
           ],
           "correcta": 0,
-          "explicacion": "Pasado de «izan» con «zuek»: zineten."
+          "explicacion": "Pasado de «izan» con «zuek»: zineten.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2493,7 +2549,8 @@
             "geunden"
           ],
           "correcta": 2,
-          "explicacion": "Pasado de «izan» con «gu»: ginen."
+          "explicacion": "Pasado de «izan» con «gu»: ginen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2506,7 +2563,8 @@
             "da"
           ],
           "correcta": 2,
-          "explicacion": "Pasado de «izan» con «hura»: zen."
+          "explicacion": "Pasado de «izan» con «hura»: zen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2519,7 +2577,8 @@
             "zegoen"
           ],
           "correcta": 1,
-          "explicacion": "«nire amona» es una sola persona, así que va con «zen», no con «ziren»."
+          "explicacion": "«nire amona» es una sola persona, así que va con «zen», no con «ziren».",
+          "teclea": true
         }
       ],
       "subnivel": "10.1"
@@ -2594,7 +2653,8 @@
             "genituen"
           ],
           "correcta": 1,
-          "explicacion": "Son tres libros, así que el objeto es plural y se cuela el -it-: «nuen» pasa a «nituen»."
+          "explicacion": "Son tres libros, así que el objeto es plural y se cuela el -it-: «nuen» pasa a «nituen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2607,7 +2667,8 @@
             "zuen"
           ],
           "correcta": 2,
-          "explicacion": "Objeto plural (dos manzanas) y sujeto «hark»: zituen. Con una sola manzana sería «zuen»."
+          "explicacion": "Objeto plural (dos manzanas) y sujeto «hark»: zituen. Con una sola manzana sería «zuen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2620,7 +2681,8 @@
             "ginen"
           ],
           "correcta": 2,
-          "explicacion": "«genuen» con el -it- del plural dentro: genituen."
+          "explicacion": "«genuen» con el -it- del plural dentro: genituen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2633,7 +2695,8 @@
             "zituzten"
           ],
           "correcta": 1,
-          "explicacion": "Dos libros, sujeto «zuek»: zenituzten. Con un solo libro sería «zenuten»."
+          "explicacion": "Dos libros, sujeto «zuek»: zenituzten. Con un solo libro sería «zenuten».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2646,7 +2709,8 @@
             "zenituzten"
           ],
           "correcta": 1,
-          "explicacion": "Cinco manzanas, sujeto «haiek»: zituzten. Con una sola sería «zuten»."
+          "explicacion": "Cinco manzanas, sujeto «haiek»: zituzten. Con una sola sería «zuten».",
+          "teclea": true
         }
       ],
       "subnivel": "10.2"
@@ -2721,7 +2785,8 @@
             "zenituzten"
           ],
           "correcta": 1,
-          "explicacion": "«zuek» con un solo objeto: zenuten. Con varios sería «zenituzten»."
+          "explicacion": "«zuek» con un solo objeto: zenuten. Con varios sería «zenituzten».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2734,7 +2799,8 @@
             "zituen"
           ],
           "correcta": 2,
-          "explicacion": "«hark» con un solo objeto: zuen."
+          "explicacion": "«hark» con un solo objeto: zuen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2747,7 +2813,8 @@
             "genituen"
           ],
           "correcta": 1,
-          "explicacion": "Con objeto plural se cuela el -it-: «nuen» pasa a «nituen»."
+          "explicacion": "Con objeto plural se cuela el -it-: «nuen» pasa a «nituen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2760,7 +2827,8 @@
             "ginen"
           ],
           "correcta": 2,
-          "explicacion": "«guk» con objeto plural: genituen."
+          "explicacion": "«guk» con objeto plural: genituen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2792,7 +2860,8 @@
             "zenuen"
           ],
           "correcta": 1,
-          "explicacion": "Preguntar dónde estaba alguien es «egon»: con «zu», zeunden."
+          "explicacion": "Preguntar dónde estaba alguien es «egon»: con «zu», zeunden.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2818,7 +2887,8 @@
             "zuten"
           ],
           "correcta": 0,
-          "explicacion": "Pasado de «egon» con «haiek»: zeuden. Fíjate en que «daude» pierde la -au- y gana -eu-."
+          "explicacion": "Pasado de «egon» con «haiek»: zeuden. Fíjate en que «daude» pierde la -au- y gana -eu-.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2831,7 +2901,8 @@
             "gaude"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «egon» con «gu»: geunden. Igual que «gaude», con -eu- en vez de -au-."
+          "explicacion": "Pasado de «egon» con «gu»: geunden. Igual que «gaude», con -eu- en vez de -au-.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2844,7 +2915,8 @@
             "zegoen"
           ],
           "correcta": 3,
-          "explicacion": "Pasado de «egon» con «hura»: zegoen."
+          "explicacion": "Pasado de «egon» con «hura»: zegoen.",
+          "teclea": true
         }
       ],
       "subnivel": "10.3"
@@ -2863,7 +2935,8 @@
             "zenuen"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «egon» con «zu»: zeunden. La -au- de «zaude» pasa a -eu-."
+          "explicacion": "Pasado de «egon» con «zu»: zeunden. La -au- de «zaude» pasa a -eu-.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2889,7 +2962,8 @@
             "genuen"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «egon» con «gu»: geunden. Ojo a «ginen», que es «éramos», de «izan»."
+          "explicacion": "Pasado de «egon» con «gu»: geunden. Ojo a «ginen», que es «éramos», de «izan».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2902,7 +2976,8 @@
             "zuten"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «egon» con «haiek»: zeuden."
+          "explicacion": "Pasado de «egon» con «haiek»: zeuden.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3027,7 +3102,8 @@
             "zen"
           ],
           "correcta": 1,
-          "explicacion": "Hay objeto, el libro, así que el auxiliar es de «ukan»: nuen."
+          "explicacion": "Hay objeto, el libro, así que el auxiliar es de «ukan»: nuen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3040,7 +3116,8 @@
             "zen"
           ],
           "correcta": 1,
-          "explicacion": "«joan» no lleva objeto, así que el auxiliar es de «izan»: nintzen."
+          "explicacion": "«joan» no lleva objeto, así que el auxiliar es de «izan»: nintzen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3053,7 +3130,8 @@
             "zen"
           ],
           "correcta": 2,
-          "explicacion": "Estar en un sitio pide «egon»: nengoen."
+          "explicacion": "Estar en un sitio pide «egon»: nengoen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3066,7 +3144,8 @@
             "zen"
           ],
           "correcta": 1,
-          "explicacion": "Hay objeto, el pan: «ukan» con «haiek» es zuten."
+          "explicacion": "Hay objeto, el pan: «ukan» con «haiek» es zuten.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3079,7 +3158,8 @@
             "zuen"
           ],
           "correcta": 2,
-          "explicacion": "Estar en un sitio pide «egon»: con «haiek», zeuden."
+          "explicacion": "Estar en un sitio pide «egon»: con «haiek», zeuden.",
+          "teclea": true
         }
       ],
       "subnivel": "test"
