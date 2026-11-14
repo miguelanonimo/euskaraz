@@ -25,7 +25,7 @@ function sacarLinea(nombre) {
 const fns = ['hoy', 'ficha', 'estrenosHoy', 'apuntarEstreno', 'anotar',
              'elegirSesion', 'repartirAtrasos', 'recuento', 'frasePendientes'];
 const previo = `
-  ${['PASOS', 'CUPO_NUEVOS', 'TOPE_DIA', 'MEZCLA', 'REPARTIR_DESDE', 'MIN_NUEVOS'].map(sacarLinea).join('\n')}
+  ${['PASOS', 'CUPO_NUEVOS', 'TOPE_DIA', 'REPARTO_SESION', 'REPARTIR_DESDE', 'MIN_NUEVOS'].map(sacarLinea).join('\n')}
   var progreso = { srs: {}, estreno: null, repartido: 0 };
   var guardados = 0;
   function guardarProgreso(){ guardados++; }

@@ -83,6 +83,18 @@
       "subnivel": "5.1"
     },
     {
+      "titulo": "Tras consonante no es -n: es -ean",
+      "cuerpo": "Con <b>etxea</b> → <b>etxean</b> parece que basta con pegarle una -n al artículo. Funciona mientras la palabra acabe en vocal.\n\nSi acaba en <b>consonante</b>, el «en» es <b>-ean</b>:\n\n<b>lan</b> (trabajo) → <b>lan<u>ean</u></b> (en el trabajo)\n<b>komun</b> (baño) → <b>komun<u>ean</u></b> (en el baño)\n\nDecir «lanan» o «komunan» es un tropiezo muy corriente de quien viene del castellano: se pega la -n sin mirar cómo acaba la palabra.\n\nCon los nombres de lugar pasa lo mismo, solo que sin la -a-, porque no llevan artículo: <b>Gasteiz</b> → <b>Gasteiz<u>en</u></b>.",
+      "ejemplos": [
+        {
+          "eu": "lanean nago",
+          "es": "Estoy en el trabajo.",
+          "audio": "unidades/u6/lanean-nago.mp3"
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
       "titulo": "«Bere» o «haren»: dos maneras de decir «su»",
       "cuerpo": "En la segunda unidad te avisé de que <i>haren</i> tenía compañera, <b>bere</b>, y de que la diferencia no se podía ver todavía. Aquí sí, porque ya sabes montar una frase con alguien dentro.\n\n<b>Jon bere etxean dago</b> — Jon está en su casa. En la suya.\n<b>Jon haren etxean dago</b> — Jon está en su casa. En la de otro.\n\nLa misma frase en castellano, dos situaciones distintas en euskera. El castellano dice «su» para las dos y lo deja al contexto; el euskera lo resuelve con la palabra.\n\n<b>La regla, en una línea</b>\nSi el dueño es quien hace o recibe la acción de esa misma frase, <b>bere</b>. Si el dueño está fuera de la frase, <b>haren</b>.\n\nEso explica por qué en la unidad 2 solo salía <i>haren</i>: con «ser» el dueño nunca está dentro (<i>haren laguna ikaslea da</i> — su amigo es estudiante).\n\n<b>En plural, igual</b>\n<b>beren</b> — lo suyo, de ellos mismos\n<b>haien</b> — lo de aquellos otros\n\n<b>Y ahora, la realidad</b>\nEso es la norma escrita. Hablando —y en Bizkaia especialmente— <b>bere</b> se ha comido a <i>haren</i> y se usa para todo. Euskaltzaindia no ha dictado una norma cerrada sobre esto, pero su gramática y su manual recogen la regla de arriba y avisan de que en los dialectos occidentales se está perdiendo la distinción, con la ambigüedad que eso trae.\n\nTraducido a lo práctico: si oyes <i>bere</i> donde esperabas <i>haren</i>, no es que hablen mal, es el uso real. Y si escribes, mantener la diferencia es fácil y se entiende mejor.",
       "ejemplos": [
@@ -4066,6 +4078,73 @@
             "jon bere etxean dago"
           ],
           "pista": "Lo suyo propio lleva «bere»."
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "id": "u5-g54",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Lan» acaba en consonante. ¿Cómo se dice «en el trabajo»?",
+          "opciones": [
+            "lanan",
+            "lanean",
+            "lana",
+            "lanera"
+          ],
+          "correcta": 1,
+          "explicacion": "Tras consonante, -ean: lan + ean. «Lanan» es el tropiezo de siempre: pegar la -n sin mirar cómo acaba la palabra."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Komun» acaba en consonante. ¿Cómo se dice «en el baño»?",
+          "opciones": [
+            "komunean",
+            "komunan",
+            "komuna",
+            "komunera"
+          ],
+          "correcta": 0,
+          "explicacion": "Komun + ean. Con «etxe», que acaba en vocal, es -an: etxean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Una acaba en vocal y la otra en consonante. ¿Qué pareja está bien escrita?",
+          "opciones": [
+            "etxean · lanan",
+            "etxen · lanen",
+            "etxean · lanean",
+            "etxeean · lanean"
+          ],
+          "correcta": 2,
+          "explicacion": "Vocal, -an: etxean. Consonante, -ean: lanean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Estoy en el trabajo. → ____ nago.",
+          "opciones": [
+            "Lanan",
+            "Lanera",
+            "Lana",
+            "Lanean"
+          ],
+          "correcta": 3,
+          "explicacion": "«Lanean nago». «Lan» acaba en consonante, así que el «en» es -ean."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "en el baño",
+          "respuestas": [
+            "komunean"
+          ],
+          "pista": "«Komun» acaba en consonante: no basta con una -n."
         }
       ],
       "subnivel": "5.1"

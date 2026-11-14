@@ -107,8 +107,19 @@
   /* Cómo se reparte una sesión de repaso. Con la urgencia a secas, un
      atraso de 170 hacía que nunca llegaras a lo que vence hoy —lo que
      aprobaste hace tiempo, que es media gracia del repaso—: se quedaba
-     siempre detrás de la deuda vieja. */
-  var MEZCLA = { flojo: 0.40, veterano: 0.40 };   // el resto: novedades y lo que quepa
+     siempre detrás de la deuda vieja.
+
+     Se llamaba MEZCLA, igual que la tabla de formatos del repaso de
+     vocabulario de más abajo, y como las dos son `var` del mismo ámbito
+     la de abajo pisaba a esta al cargar: el porcentaje salía undefined,
+     los dos huecos reservados quedaban vacíos y la sesión se llenaba por
+     orden —fallados primero—, justo lo que esto venía a evitar. Estuvo
+     así desde el día en que se escribió (02/09/2026) hasta el
+     14/11/2026: con 30 fallados y 30 veteranos vencidos, una sesión de
+     15 llevaba 13 y 0 en vez de 7 y 6. La prueba no lo veía porque saca
+     las funciones sueltas y solo copiaba la primera declaración; ahora
+     `scripts/probar_ambito.js` revienta si dos nombres se repiten. */
+  var REPARTO_SESION = { flojo: 0.40, veterano: 0.40 };   // el resto: novedades y lo que quepa
 
   var estado = {
     pantalla: 'home',
@@ -1111,8 +1122,8 @@
        rellena con lo que haya. Si un montón está vacío su hueco se lo
        quedan los otros: nadie se queda fuera por falta de sitio. */
     var cola = nuevos.slice(0, MIN_NUEVOS)
-       .concat(flojos.slice(0, Math.round(cuantos * MEZCLA.flojo)))
-       .concat(veteranos.slice(0, Math.round(cuantos * MEZCLA.veterano)));
+       .concat(flojos.slice(0, Math.round(cuantos * REPARTO_SESION.flojo)))
+       .concat(veteranos.slice(0, Math.round(cuantos * REPARTO_SESION.veterano)));
     [flojos, veteranos, nuevos, resto].forEach(function (monton) {
       monton.forEach(function (x) {
         if (cola.length < cuantos && cola.indexOf(x) < 0) cola.push(x);
@@ -3046,7 +3057,7 @@
      tiradas se pierden. Los dos formatos de escucha solo se ofrecen a
      palabras con audio narrado (si no lo tienen, caen a opción como el
      resto de formatos sin cumplir requisitos). */
-  var MEZCLA = [
+  var MEZCLA_FORMATOS = [
     [40, 25, 10, 15, 10],   // nivel 0 · paso 0-1, recién vista
     [20, 35, 15, 15, 15],   // nivel 1 · paso 2-3, en camino
     [10, 25, 35, 15, 15]    // nivel 2 · paso 4 o más, asentada
@@ -3064,7 +3075,7 @@
      palabra vuelve, que vuelva preguntada de otra manera. Solo se
      insiste si el sorteo la devuelve dos veces seguidas. */
   function sortearFormato(nivel, evitar) {
-    var pesos = MEZCLA[nivel] || MEZCLA[0];
+    var pesos = MEZCLA_FORMATOS[nivel] || MEZCLA_FORMATOS[0];
     if (modoSilencioso) pesos = pesos.slice(0, 3);
     var f = tirada(pesos);
     if (f === evitar) f = tirada(pesos);
