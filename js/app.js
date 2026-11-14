@@ -1064,12 +1064,47 @@
     e[tipo] = (e[tipo] || 0) + 1;
   }
 
+  /* Un acierto antes de tiempo no sube peldaño.
+
+     El calendario intenta averiguar una sola cosa: si te acuerdas de algo
+     cuando ha pasado el tiempo que tocaba. Acertar lo que viste hace diez
+     minutos no dice nada de eso, y sin embargo subía un peldaño cada vez:
+     repetir un tema tres veces en una tarde mandaba sus ejercicios a
+     dentro de 16 días, y con «Otra ronda de repaso» estando al día se
+     podía empujar el curso entero a meses vista sin haberlo repasado ni
+     una vez con distancia. Es la misma regla que ya seguía el repaso de
+     vocabulario dentro de una sesión —«el calendario solo escucha la
+     primera respuesta»—, llevada al resto (pedido por Ric, 14/11/2026).
+
+     Una respuesta va «adelantada» cuando la ficha no ha vencido Y no ha
+     pasado todavía su intervalo desde la última vez que contó. Hacen
+     falta las dos condiciones:
+
+     · solo la fecha no vale, porque repartirAtrasos() aplaza lo vencido
+       para hacer cola: esas fichas tienen la fecha por delante pero su
+       intervalo ya pasó, y ponerse al día haciendo rondas tiene que
+       contar;
+     · solo el intervalo tampoco, porque quedan fichas con la fecha
+       calculada con la escala corta de antes del 02/09/2026, vencidas
+       por su fecha aunque con la escala nueva les falte tiempo.
+
+     Lo adelantado se apunta —el acierto cuenta para tus cifras, y
+     `repaso` sirve para que la siguiente ronda de hoy saque otras— pero
+     no mueve ni el peldaño ni la fecha. Un FALLO sí cuenta siempre: no
+     saberlo es información venga cuando venga. */
   function anotar(clave, ok) {
     if (!clave) return;
-    var f = progreso.srs[clave];
-    if (!f) {
+    var f = progreso.srs[clave], nueva = !f, dia = hoy();
+    if (nueva) {
       f = progreso.srs[clave] = { paso: 0, toca: 0, aciertos: 0, fallos: 0, visto: 0 };
       apuntarEstreno(clave);
+    }
+    var adelantada = !nueva && f.toca > dia && (dia - f.visto) < PASOS[f.paso];
+    if (ok && adelantada) {
+      f.aciertos++;
+      f.repaso = dia;
+      guardarProgreso();
+      return;
     }
     if (ok) {
       f.aciertos++;
@@ -1078,7 +1113,8 @@
       f.fallos++;
       f.paso = 0;   // un fallo devuelve al principio de la escala
     }
-    f.visto = hoy();
+    if (f.repaso) delete f.repaso;
+    f.visto = dia;
     f.toca = f.visto + PASOS[f.paso];
     guardarProgreso();
   }
@@ -1112,7 +1148,12 @@
     flojos.sort(urgencia);
     veteranos.sort(urgencia);
     nuevos.sort(function (a, b) { return a.orden - b.orden; });
-    resto.sort(function (a, b) { return a.f.toca - b.f.toca; });
+    /* Lo que no ha vencido, por lo que vence antes; pero lo que ya has
+       tocado hoy va al final. Desde que un acierto adelantado no mueve la
+       fecha, sin esto «Otra ronda» estando al día sacaría las mismas
+       quince una y otra vez. */
+    function hoyYa(f) { return (f.repaso === dia || f.visto === dia) ? 1 : 0; }
+    resto.sort(function (a, b) { return (hoyYa(a.f) - hoyYa(b.f)) || (a.f.toca - b.f.toca); });
 
     // Las novedades tienen cupo diario; lo ya estrenado hoy resta.
     nuevos = nuevos.slice(0, Math.max(0, CUPO_NUEVOS - estrenosHoy(tipo || 'g')));
