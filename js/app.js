@@ -1064,12 +1064,47 @@
     e[tipo] = (e[tipo] || 0) + 1;
   }
 
+  /* Un acierto antes de tiempo no sube peldaño.
+
+     El calendario intenta averiguar una sola cosa: si te acuerdas de algo
+     cuando ha pasado el tiempo que tocaba. Acertar lo que viste hace diez
+     minutos no dice nada de eso, y sin embargo subía un peldaño cada vez:
+     repetir un tema tres veces en una tarde mandaba sus ejercicios a
+     dentro de 16 días, y con «Otra ronda de repaso» estando al día se
+     podía empujar el curso entero a meses vista sin haberlo repasado ni
+     una vez con distancia. Es la misma regla que ya seguía el repaso de
+     vocabulario dentro de una sesión —«el calendario solo escucha la
+     primera respuesta»—, llevada al resto (pedido por Ric, 14/11/2026).
+
+     Una respuesta va «adelantada» cuando la ficha no ha vencido Y no ha
+     pasado todavía su intervalo desde la última vez que contó. Hacen
+     falta las dos condiciones:
+
+     · solo la fecha no vale, porque repartirAtrasos() aplaza lo vencido
+       para hacer cola: esas fichas tienen la fecha por delante pero su
+       intervalo ya pasó, y ponerse al día haciendo rondas tiene que
+       contar;
+     · solo el intervalo tampoco, porque quedan fichas con la fecha
+       calculada con la escala corta de antes del 02/09/2026, vencidas
+       por su fecha aunque con la escala nueva les falte tiempo.
+
+     Lo adelantado se apunta —el acierto cuenta para tus cifras, y
+     `repaso` sirve para que la siguiente ronda de hoy saque otras— pero
+     no mueve ni el peldaño ni la fecha. Un FALLO sí cuenta siempre: no
+     saberlo es información venga cuando venga. */
   function anotar(clave, ok) {
     if (!clave) return;
-    var f = progreso.srs[clave];
-    if (!f) {
+    var f = progreso.srs[clave], nueva = !f, dia = hoy();
+    if (nueva) {
       f = progreso.srs[clave] = { paso: 0, toca: 0, aciertos: 0, fallos: 0, visto: 0 };
       apuntarEstreno(clave);
+    }
+    var adelantada = !nueva && f.toca > dia && (dia - f.visto) < PASOS[f.paso];
+    if (ok && adelantada) {
+      f.aciertos++;
+      f.repaso = dia;
+      guardarProgreso();
+      return;
     }
     if (ok) {
       f.aciertos++;
@@ -1078,7 +1113,8 @@
       f.fallos++;
       f.paso = 0;   // un fallo devuelve al principio de la escala
     }
-    f.visto = hoy();
+    if (f.repaso) delete f.repaso;
+    f.visto = dia;
     f.toca = f.visto + PASOS[f.paso];
     guardarProgreso();
   }
@@ -1112,7 +1148,12 @@
     flojos.sort(urgencia);
     veteranos.sort(urgencia);
     nuevos.sort(function (a, b) { return a.orden - b.orden; });
-    resto.sort(function (a, b) { return a.f.toca - b.f.toca; });
+    /* Lo que no ha vencido, por lo que vence antes; pero lo que ya has
+       tocado hoy va al final. Desde que un acierto adelantado no mueve la
+       fecha, sin esto «Otra ronda» estando al día sacaría las mismas
+       quince una y otra vez. */
+    function hoyYa(f) { return (f.repaso === dia || f.visto === dia) ? 1 : 0; }
+    resto.sort(function (a, b) { return (hoyYa(a.f) - hoyYa(b.f)) || (a.f.toca - b.f.toca); });
 
     // Las novedades tienen cupo diario; lo ya estrenado hoy resta.
     nuevos = nuevos.slice(0, Math.max(0, CUPO_NUEVOS - estrenosHoy(tipo || 'g')));
@@ -4118,6 +4159,9 @@
             filaNav('ctaEmail', '', 'Cambiar email', usuarioEmail || 'Sin sesión') +
             filaNav('ctaPass', '', 'Cambiar contraseña', debeCambiarClave ? 'Estás usando una contraseña provisional: elige la tuya' : 'Elige una contraseña nueva') +
             filaNav('ctaSalir', '', 'Cerrar sesión', 'Cerrar sesión en este dispositivo') +
+            filaNav('ctaResetCurso', 'danger', 'Empezar el curso de nuevo',
+              'Volverás a la lección 1 y los repasos se vacían, pero conservas la racha. No se puede deshacer.',
+              icono('warning', 14)) +
             filaNav('ctaReset', 'danger', 'Reiniciar progreso',
               'Volverás a la lección 1 y perderás todos los datos de racha y progreso. No se puede deshacer.',
               icono('warning', 14)) +
@@ -4141,6 +4185,7 @@
     $('ctaEmail').addEventListener('click', abrirCambioEmail);
     $('ctaPass').addEventListener('click', function () { abrirCambioPassword(); });
     $('ctaSalir').addEventListener('click', function () { sb.auth.signOut(); });
+    $('ctaResetCurso').addEventListener('click', abrirReinicioCurso);
     $('ctaReset').addEventListener('click', abrirReinicio);
 
     mostrar('cuenta');
@@ -4192,6 +4237,57 @@
     });
   }
 
+  /* Lo que hacen los dos reinicios de Tu cuenta.
+
+     Con `conservarRacha` se quedan dos cosas: `dias` —de ahí salen la
+     racha, la semana de Hoy y las cifras de Progreso— y `palabras`, las
+     del día que has abierto. Ninguna de las dos es avance del curso: son
+     lo que has hecho cada día. Lo demás vuelve a cero —unidades, temas,
+     calendario de repaso y cupo de estrenos—, así que el curso empieza
+     otra vez en la lección 1 (pedido por Ric el 14/11/2026, para poder
+     recorrerlo de nuevo sin perder la racha).
+
+     Dos detalles que valen para los dos reinicios:
+
+     · Lo local se borra ANTES de guardar. Probando sin cuenta, el guardado
+       escribe el progreso en el navegador; si el borrado iba después se
+       llevaba por delante lo recién guardado, racha incluida.
+     · Se guarda sin la condición de `updated_at`. Reiniciar es una
+       decisión, no una edición: con la condición, si otro aparato había
+       guardado después, la escritura no encontraba fila, se adoptaba la
+       copia del servidor y el reinicio se deshacía solo, sin avisar. */
+  function reiniciarProgreso(conservarRacha) {
+    var nuevo = progresoVacio();
+    if (conservarRacha) {
+      nuevo.dias = progreso.dias || {};
+      nuevo.palabras = progreso.palabras || {};
+    }
+    progreso = nuevo;
+    if (guardarTimer) { clearTimeout(guardarTimer); guardarTimer = null; }
+    try {
+      localStorage.removeItem(CLAVE); localStorage.removeItem(CLAVE_VIEJA);
+      localStorage.removeItem(claveLocal());   // el de probar sin cuenta
+      localStorage.removeItem(HOY_LECCION_KEY);   // «la lección de hoy ya está hecha» deja de ser verdad
+    } catch (e) {}
+    progresoActualizadoEn = null;
+    guardarProgresoAhora();
+    estado.homeActiva = null;
+  }
+
+  function abrirReinicioCurso() {
+    dialogo({
+      titulo: '¿Empezar el curso de nuevo?',
+      texto: 'Vuelves a la lección 1: se borran las unidades hechas y las fechas de repaso. Conservas la racha y las palabras del día que has abierto. Esto no se puede deshacer.',
+      confirmar: 'Sí, empezar de nuevo',
+      peligro: true,
+      alConfirmar: function () {
+        reiniciarProgreso(true);
+        cerrarModal();
+        pantallaHome();
+      }
+    });
+  }
+
   function abrirReinicio() {
     dialogo({
       titulo: '¿Reiniciar tu progreso?',
@@ -4199,13 +4295,7 @@
       confirmar: 'Sí, reiniciar',
       peligro: true,
       alConfirmar: function () {
-        progreso = progresoVacio();
-        if (guardarTimer) { clearTimeout(guardarTimer); guardarTimer = null; }
-        guardarProgresoAhora();
-        try {
-          localStorage.removeItem(CLAVE); localStorage.removeItem(CLAVE_VIEJA);
-          localStorage.removeItem(claveLocal());   // el de probar sin cuenta
-        } catch (e) {}
+        reiniciarProgreso(false);
         cerrarModal();
         pantallaHome();
       }
