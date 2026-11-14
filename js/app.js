@@ -4118,6 +4118,9 @@
             filaNav('ctaEmail', '', 'Cambiar email', usuarioEmail || 'Sin sesión') +
             filaNav('ctaPass', '', 'Cambiar contraseña', debeCambiarClave ? 'Estás usando una contraseña provisional: elige la tuya' : 'Elige una contraseña nueva') +
             filaNav('ctaSalir', '', 'Cerrar sesión', 'Cerrar sesión en este dispositivo') +
+            filaNav('ctaResetCurso', 'danger', 'Empezar el curso de nuevo',
+              'Volverás a la lección 1 y los repasos se vacían, pero conservas la racha. No se puede deshacer.',
+              icono('warning', 14)) +
             filaNav('ctaReset', 'danger', 'Reiniciar progreso',
               'Volverás a la lección 1 y perderás todos los datos de racha y progreso. No se puede deshacer.',
               icono('warning', 14)) +
@@ -4141,6 +4144,7 @@
     $('ctaEmail').addEventListener('click', abrirCambioEmail);
     $('ctaPass').addEventListener('click', function () { abrirCambioPassword(); });
     $('ctaSalir').addEventListener('click', function () { sb.auth.signOut(); });
+    $('ctaResetCurso').addEventListener('click', abrirReinicioCurso);
     $('ctaReset').addEventListener('click', abrirReinicio);
 
     mostrar('cuenta');
@@ -4192,6 +4196,57 @@
     });
   }
 
+  /* Lo que hacen los dos reinicios de Tu cuenta.
+
+     Con `conservarRacha` se quedan dos cosas: `dias` —de ahí salen la
+     racha, la semana de Hoy y las cifras de Progreso— y `palabras`, las
+     del día que has abierto. Ninguna de las dos es avance del curso: son
+     lo que has hecho cada día. Lo demás vuelve a cero —unidades, temas,
+     calendario de repaso y cupo de estrenos—, así que el curso empieza
+     otra vez en la lección 1 (pedido por Ric el 14/11/2026, para poder
+     recorrerlo de nuevo sin perder la racha).
+
+     Dos detalles que valen para los dos reinicios:
+
+     · Lo local se borra ANTES de guardar. Probando sin cuenta, el guardado
+       escribe el progreso en el navegador; si el borrado iba después se
+       llevaba por delante lo recién guardado, racha incluida.
+     · Se guarda sin la condición de `updated_at`. Reiniciar es una
+       decisión, no una edición: con la condición, si otro aparato había
+       guardado después, la escritura no encontraba fila, se adoptaba la
+       copia del servidor y el reinicio se deshacía solo, sin avisar. */
+  function reiniciarProgreso(conservarRacha) {
+    var nuevo = progresoVacio();
+    if (conservarRacha) {
+      nuevo.dias = progreso.dias || {};
+      nuevo.palabras = progreso.palabras || {};
+    }
+    progreso = nuevo;
+    if (guardarTimer) { clearTimeout(guardarTimer); guardarTimer = null; }
+    try {
+      localStorage.removeItem(CLAVE); localStorage.removeItem(CLAVE_VIEJA);
+      localStorage.removeItem(claveLocal());   // el de probar sin cuenta
+      localStorage.removeItem(HOY_LECCION_KEY);   // «la lección de hoy ya está hecha» deja de ser verdad
+    } catch (e) {}
+    progresoActualizadoEn = null;
+    guardarProgresoAhora();
+    estado.homeActiva = null;
+  }
+
+  function abrirReinicioCurso() {
+    dialogo({
+      titulo: '¿Empezar el curso de nuevo?',
+      texto: 'Vuelves a la lección 1: se borran las unidades hechas y las fechas de repaso. Conservas la racha y las palabras del día que has abierto. Esto no se puede deshacer.',
+      confirmar: 'Sí, empezar de nuevo',
+      peligro: true,
+      alConfirmar: function () {
+        reiniciarProgreso(true);
+        cerrarModal();
+        pantallaHome();
+      }
+    });
+  }
+
   function abrirReinicio() {
     dialogo({
       titulo: '¿Reiniciar tu progreso?',
@@ -4199,13 +4254,7 @@
       confirmar: 'Sí, reiniciar',
       peligro: true,
       alConfirmar: function () {
-        progreso = progresoVacio();
-        if (guardarTimer) { clearTimeout(guardarTimer); guardarTimer = null; }
-        guardarProgresoAhora();
-        try {
-          localStorage.removeItem(CLAVE); localStorage.removeItem(CLAVE_VIEJA);
-          localStorage.removeItem(claveLocal());   // el de probar sin cuenta
-        } catch (e) {}
+        reiniciarProgreso(false);
         cerrarModal();
         pantallaHome();
       }
