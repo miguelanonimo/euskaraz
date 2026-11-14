@@ -947,7 +947,8 @@
             "Hamaikak"
           ],
           "correcta": 1,
-          "explicacion": "«hamar» duplica la erre al llevar artículo: «hamarrak»."
+          "explicacion": "«hamar» duplica la erre al llevar artículo: «hamarrak».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1192,7 +1193,8 @@
             "erdiak"
           ],
           "correcta": 0,
-          "explicacion": "«gutxi» (poco) es el «menos», y va al final."
+          "explicacion": "«gutxi» (poco) es el «menos», y va al final.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1205,7 +1207,8 @@
             "laurden"
           ],
           "correcta": 1,
-          "explicacion": "Primero los minutos, luego «gutxi». Al revés que en castellano."
+          "explicacion": "Primero los minutos, luego «gutxi». Al revés que en castellano.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1400,7 +1403,8 @@
             "igandea"
           ],
           "correcta": 1,
-          "explicacion": "Después del martes viene el miércoles: asteazkena."
+          "explicacion": "Después del martes viene el miércoles: asteazkena.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1413,7 +1417,8 @@
             "asteartea"
           ],
           "correcta": 1,
-          "explicacion": "Después del viernes, el sábado: larunbata."
+          "explicacion": "Después del viernes, el sábado: larunbata.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1426,7 +1431,8 @@
             "asteazkena"
           ],
           "correcta": 2,
-          "explicacion": "Después del domingo empieza la semana: astelehena."
+          "explicacion": "Después del domingo empieza la semana: astelehena.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1439,7 +1445,8 @@
             "astelehena"
           ],
           "correcta": 1,
-          "explicacion": "Entre el jueves y el sábado está el viernes: ostirala."
+          "explicacion": "Entre el jueves y el sábado está el viernes: ostirala.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1452,7 +1459,8 @@
             "ordua"
           ],
           "correcta": 1,
-          "explicacion": "Sábado y domingo son el «asteburua», el fin de semana."
+          "explicacion": "Sábado y domingo son el «asteburua», el fin de semana.",
+          "teclea": true
         }
       ],
       "subnivel": "6.2"
@@ -1619,7 +1627,8 @@
             "gero"
           ],
           "correcta": 0,
-          "explicacion": "«beti» es siempre."
+          "explicacion": "«beti» es siempre.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1632,7 +1641,8 @@
             "orain"
           ],
           "correcta": 1,
-          "explicacion": "«batzuetan» es a veces. Lleva ese -etan de plural que ya conoces."
+          "explicacion": "«batzuetan» es a veces. Lleva ese -etan de plural que ya conoces.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1645,7 +1655,8 @@
             "bart"
           ],
           "correcta": 0,
-          "explicacion": "«inoiz» solo es «alguna vez»: hace falta el «ez» para negar."
+          "explicacion": "«inoiz» solo es «alguna vez»: hace falta el «ez» para negar.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1658,7 +1669,8 @@
             "bihar"
           ],
           "correcta": 1,
-          "explicacion": "«orain» es ahora; «gero», luego."
+          "explicacion": "«orain» es ahora; «gero», luego.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1671,7 +1683,8 @@
             "gaur"
           ],
           "correcta": 1,
-          "explicacion": "«bart» es concretamente anoche; «atzo» es ayer en general."
+          "explicacion": "«bart» es concretamente anoche; «atzo» es ayer en general.",
+          "teclea": true
         }
       ],
       "subnivel": "6.2"
@@ -1787,7 +1800,8 @@
             "igandea"
           ],
           "correcta": 1,
-          "explicacion": "Falta el miércoles: asteazkena."
+          "explicacion": "Falta el miércoles: asteazkena.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1800,7 +1814,8 @@
             "hamaika"
           ],
           "correcta": 1,
-          "explicacion": "Una hora después de las once y media son las doce y media."
+          "explicacion": "Una hora después de las once y media son las doce y media.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2530,7 +2545,8 @@
             "asteburua"
           ],
           "correcta": 0,
-          "explicacion": "agosto = abuztua."
+          "explicacion": "agosto = abuztua.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2619,7 +2635,8 @@
             "arratsaldea"
           ],
           "correcta": 0,
-          "explicacion": "pasado mañana = etzi."
+          "explicacion": "pasado mañana = etzi.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2708,7 +2725,8 @@
             "hilabetea"
           ],
           "correcta": 0,
-          "explicacion": "el viernes = ostirala."
+          "explicacion": "el viernes = ostirala.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2797,7 +2815,8 @@
             "astelehena"
           ],
           "correcta": 0,
-          "explicacion": "el invierno = negua."
+          "explicacion": "el invierno = negua.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2886,7 +2905,8 @@
             "osteguna"
           ],
           "correcta": 0,
-          "explicacion": "el verano = uda."
+          "explicacion": "el verano = uda.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2973,7 +2993,8 @@
             "elurra",
             "eguzkia"
           ],
-          "correcta": 0
+          "correcta": 0,
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3245,7 +3266,8 @@
             "Kaixo!"
           ],
           "correcta": 0,
-          "explicacion": "Vale para cumpleaños, Navidad y todo lo demás."
+          "explicacion": "Vale para cumpleaños, Navidad y todo lo demás.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

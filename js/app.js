@@ -571,6 +571,36 @@
     return vs[elegida];
   }
 
+  /* ── La gramática también se escribe ─────────────────────────────────
+
+     De los 399 grupos del curso, solo 86 tenían alguna variante de
+     producir —escribir o traducir—: el resto se podía aprobar entero
+     reconociendo la respuesta entre cuatro. El repaso de vocabulario ya
+     se endurece con el calendario (opción → ortografía → teclear); la
+     gramática no, y es donde más falta hace: reconocer «zaizkit» entre
+     cuatro no es saber decirlo.
+
+     Así que una pregunta de opción deja de enseñar las opciones cuando
+     su ficha está asentada: se pide ESCRITA. Dos condiciones:
+
+     · que la pregunta lo aguante. Lo dice el contenido, con `teclea:
+       true`, que pone scripts/marcar-tecleables.py en las de hueco
+       («Gu euskaldunak ____.») y en las de «se dice…» con respuesta
+       corta en euskera. Son 333, en 182 grupos; «¿cuál de estas…?» no
+       significa nada sin las opciones y no lo lleva.
+     · que la ficha esté en el peldaño 2 o más: la has acertado dos veces
+       con días por medio. Antes sería pedir de memoria lo que aún no se
+       ha fijado, y un fallo la devuelve al principio y a las opciones.
+
+     Siempre queda «ver opciones», que la vuelve a dejar como era: hay
+     preguntas con más de una respuesta posible que no hemos previsto, y
+     quedarse atascado delante de una caja vacía no enseña nada. */
+  var PASO_TECLEAR = 2;
+
+  function pideTeclear(v, f) {
+    return v.tipo === 'opcion' && v.teclea === true && !!f && f.paso >= PASO_TECLEAR;
+  }
+
   /* La variante se copia antes de usarla: así se le puede colgar de qué
      grupo y de qué unidad viene sin ensuciar el objeto del JSON, que se
      comparte entre sesiones. `__clave` es lo que enlaza el ejercicio con
@@ -580,6 +610,7 @@
     var copia = {};
     for (var k in v) copia[k] = v[k];
     copia.__clave = claveGrupo(grupo.id);
+    if (pideTeclear(copia, ficha(copia.__clave))) copia.__teclear = true;
     // De qué tema sale, para poder abrir su ficha desde el ejercicio.
     copia.__sub = grupo.subnivel;
     /* Algunos grupos practican algo que se explica en OTRO tema: un
@@ -4479,7 +4510,43 @@
     if (audio) reproducir(audio);
   }
 
+  /* La misma pregunta, sin las opciones: una caja para escribir y, debajo,
+     la salida de «ver opciones». La instrucción cambia —la de siempre dice
+     «Elige la opción correcta»— pero el enunciado es el mismo. */
+  function pintarOpcionTecleada(ej) {
+    var hueco = /_{2,}/.test(ej.pregunta);
+    var cabeza = {};
+    for (var k in ej) cabeza[k] = ej[k];
+    cabeza.instruccion = hueco ? 'Escribe lo que falta' : 'Escríbelo en euskera';
+
+    el.quizContent.innerHTML =
+      cabeceraEj(cabeza, richInline(ej.pregunta)) +
+      '<div class="answer">' +
+        '<textarea class="typebox typebox--corta" id="typebox" rows="1" autocomplete="off" ' +
+        'autocorrect="off" autocapitalize="off" spellcheck="false" ' +
+        'placeholder="' + (hueco ? 'Lo que va en el hueco…' : 'Escríbelo en euskera…') + '"></textarea>' +
+        '<button class="hintchip" type="button" id="btnOpciones">' + icono('list', 15) + '<span>ver opciones</span></button>' +
+      '</div>';
+
+    var ta = $('typebox');
+    ta.addEventListener('input', function () {
+      el.btnCheck.disabled = ta.value.trim().length === 0;
+    });
+    ta.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); if (!el.btnCheck.disabled) el.btnCheck.click(); }
+    });
+    $('btnOpciones').addEventListener('click', function () {
+      if (estado.resuelto) return;
+      ej.__conOpciones = true;
+      estado.sel = null;
+      el.btnCheck.disabled = true;
+      pintarOpcion(ej);
+    });
+    enfocarSiHayTeclado(ta);
+  }
+
   function pintarOpcion(ej) {
+    if (ej.__teclear && !ej.__conOpciones) return pintarOpcionTecleada(ej);
     var orden = barajar(ej.opciones.map(function (txt, i) { return { txt: txt, i: i }; }));
 
     el.quizContent.innerHTML =
@@ -4510,7 +4577,48 @@
     return '<span class="fb__answer">' + icono('check-bold', 20) + '<span>' + esc(texto) + '</span></span>';
   }
 
+  /* ¿Vale lo escrito? Tres salidas, y la del medio es la que importa:
+
+     · es la respuesta: bien;
+     · es justo uno de los distractores: MAL, sin perdón. Los distractores
+       son el error que la pregunta vigila —«dut» por «ditut», «lanan» por
+       «lanean»— y a una letra de la buena están casi todos: con la manga
+       del «casi correcto» se aprobaría precisamente el fallo que se quería
+       cazar;
+     · es otra cosa: se mide como en el resto de la app, y una errata en
+       una palabra de más de tres letras pasa como «casi correcto»,
+       enseñando la forma buena. */
+  function juzgarTecleada(dado, opciones, correcta) {
+    var buena = opciones[correcta];
+    if (aciertaTecleado(dado, [buena])) return { ok: true, leve: false, vigilado: false };
+    var k = claveRespuesta(dado);
+    var vigilado = opciones.some(function (o, i) { return i !== correcta && claveRespuesta(o) === k; });
+    if (vigilado) return { ok: false, leve: false, vigilado: true };
+    var leve = esCasiCorrecto(dado, respuestaMasCercana(dado, todasLasVariantes([buena])));
+    return { ok: leve, leve: leve, vigilado: false };
+  }
+
+  function corregirOpcionTecleada(ej) {
+    var ta = $('typebox');
+    var dado = normalizar(ta.value), buena = ej.opciones[ej.correcta];
+    // Para que lo escrito salga al repasar la pregunta desde los pasos de
+    // arriba: la instantánea guarda el HTML, y el valor de una caja no va en él.
+    ta.textContent = ta.value;
+    ta.readOnly = true;
+    ta.blur();
+    if ($('btnOpciones')) $('btnOpciones').hidden = true;
+    var r = juzgarTecleada(dado, ej.opciones, ej.correcta);
+    if (r.ok && !r.leve) return { ok: true, leve: false, cuerpo: ej.explicacion ? ej.explicacion : '' };
+    var porPalabras = normalizar(buena).indexOf(' ') !== -1;
+    return {
+      ok: r.ok, leve: r.leve,
+      cuerpo: comparacion(dado, normalizar(buena), porPalabras) +
+              (ej.explicacion ? '<p class="dif__nota">' + ej.explicacion + '</p>' : '')
+    };
+  }
+
   function corregirOpcion(ej) {
+    if (ej.__teclear && !ej.__conOpciones) return corregirOpcionTecleada(ej);
     var ok = estado.sel === ej.correcta;
     Array.prototype.forEach.call($('opts').children, function (b) {
       var i = parseInt(b.dataset.i, 10);

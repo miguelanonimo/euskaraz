@@ -370,6 +370,11 @@ for ruta, u in unidades:
                 errores.append("%s: tipo desconocido %r" % (eid, t)); continue
             if not v.get("instruccion"):
                 errores.append("%s: sin instrucción" % eid)
+            # «teclea» dice que la pregunta se puede hacer sin opciones cuando
+            # la ficha está asentada. Lo pone scripts/marcar-tecleables.py y
+            # solo tiene sentido en las de opción (false = vetada a mano).
+            if "teclea" in v and (t != "opcion" or not isinstance(v["teclea"], bool)):
+                errores.append("%s: «teclea» solo vale en preguntas de opción, y es true o false" % eid)
             if t == "opcion":
                 ops = v["opciones"]
                 if len(ops) < 2: errores.append("%s: menos de dos opciones" % eid)

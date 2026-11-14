@@ -866,7 +866,8 @@
             "dago"
           ],
           "correcta": 1,
-          "explicacion": "Ubicación → «egon». Con «ni» va «nago»."
+          "explicacion": "Ubicación → «egon». Con «ni» va «nago».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -879,7 +880,8 @@
             "gaude"
           ],
           "correcta": 1,
-          "explicacion": "Con «zu» + «egon» va «zaude»."
+          "explicacion": "Con «zu» + «egon» va «zaude».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -892,7 +894,8 @@
             "daude"
           ],
           "correcta": 1,
-          "explicacion": "Ubicación → «egon». Con «hura» va «dago»."
+          "explicacion": "Ubicación → «egon». Con «hura» va «dago».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -905,7 +908,8 @@
             "gara"
           ],
           "correcta": 1,
-          "explicacion": "«Egon» también sirve para estados pasajeros, como en castellano."
+          "explicacion": "«Egon» también sirve para estados pasajeros, como en castellano.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -918,7 +922,8 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "«Bera» equivale a «hura», así que el verbo es «dago»."
+          "explicacion": "«Bera» equivale a «hura», así que el verbo es «dago».",
+          "teclea": true
         }
       ],
       "subnivel": "5.1"
@@ -1053,7 +1058,8 @@
             "Bilbotik"
           ],
           "correcta": 1,
-          "explicacion": "«-n» indica ubicación. «-koa» sería procedencia y «-ra» destino."
+          "explicacion": "«-n» indica ubicación. «-koa» sería procedencia y «-ra» destino.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1529,7 +1535,8 @@
             "dute"
           ],
           "correcta": 1,
-          "explicacion": "Con «haiek» + egon → «daude»."
+          "explicacion": "Con «haiek» + egon → «daude».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1542,7 +1549,8 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "Ubicación → «egon». Con «gu» va «gaude»."
+          "explicacion": "Ubicación → «egon». Con «gu» va «gaude».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1979,7 +1987,8 @@
             "mahaia zuri"
           ],
           "correcta": 1,
-          "explicacion": "Se quita el artículo -a y se añade «bat» al final."
+          "explicacion": "Se quita el artículo -a y se añade «bat» al final.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2434,7 +2443,8 @@
             "polita"
           ],
           "correcta": 0,
-          "explicacion": "(él/ella) está = dago."
+          "explicacion": "(él/ella) está = dago.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2523,7 +2533,8 @@
             "zaharra"
           ],
           "correcta": 0,
-          "explicacion": "la cama = ohea."
+          "explicacion": "la cama = ohea.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2612,7 +2623,8 @@
             "sofa"
           ],
           "correcta": 0,
-          "explicacion": "bonito/a = polita."
+          "explicacion": "bonito/a = polita.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2701,7 +2713,8 @@
             "urdina"
           ],
           "correcta": 0,
-          "explicacion": "Como en «Parte Zaharra»."
+          "explicacion": "Como en «Parte Zaharra».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2790,7 +2803,8 @@
             "telebista"
           ],
           "correcta": 0,
-          "explicacion": "pequeño/a = txikia."
+          "explicacion": "pequeño/a = txikia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2822,7 +2836,8 @@
             "bat mahai zuria"
           ],
           "correcta": 0,
-          "explicacion": "El -a final es «la»."
+          "explicacion": "El -a final es «la».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2835,7 +2850,8 @@
             "mahaia bat"
           ],
           "correcta": 1,
-          "explicacion": "Se quita el artículo y se pone «bat» al final."
+          "explicacion": "Se quita el artículo y se pone «bat» al final.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3138,7 +3154,8 @@
             "ditut"
           ],
           "correcta": 1,
-          "explicacion": "«Nik» + un objeto en singular («txakurra») → «dut»."
+          "explicacion": "«Nik» + un objeto en singular («txakurra») → «dut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3151,7 +3168,8 @@
             "ditu"
           ],
           "correcta": 0,
-          "explicacion": "«Hark» + objeto singular → «du»."
+          "explicacion": "«Hark» + objeto singular → «du».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3164,7 +3182,8 @@
             "dute"
           ],
           "correcta": 0,
-          "explicacion": "«Guk» + objeto singular → «dugu»."
+          "explicacion": "«Guk» + objeto singular → «dugu».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3177,7 +3196,8 @@
             "du"
           ],
           "correcta": 1,
-          "explicacion": "«Zuk» + objeto singular → «duzu»."
+          "explicacion": "«Zuk» + objeto singular → «duzu».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3190,7 +3210,8 @@
             "du"
           ],
           "correcta": 1,
-          "explicacion": "«Haiek» + objeto singular → «dute»."
+          "explicacion": "«Haiek» + objeto singular → «dute».",
+          "teclea": true
         }
       ],
       "subnivel": "5.5",
@@ -3384,7 +3405,8 @@
             "txerria"
           ],
           "correcta": 0,
-          "explicacion": "la vaca = behia."
+          "explicacion": "la vaca = behia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3473,7 +3495,8 @@
             "laurogeita hamar"
           ],
           "correcta": 0,
-          "explicacion": "el conejo = untxia."
+          "explicacion": "el conejo = untxia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3562,7 +3585,8 @@
             "hirurogei"
           ],
           "correcta": 0,
-          "explicacion": "el pájaro = txoria."
+          "explicacion": "el pájaro = txoria.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3651,7 +3675,8 @@
             "duzu"
           ],
           "correcta": 0,
-          "explicacion": "el caballo = zaldia."
+          "explicacion": "el caballo = zaldia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3882,7 +3907,8 @@
             "bat etxe berri"
           ],
           "correcta": 0,
-          "explicacion": "El «bat» cierra el grupo: etxe berri bat."
+          "explicacion": "El «bat» cierra el grupo: etxe berri bat.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4029,7 +4055,8 @@
             "zure"
           ],
           "correcta": 0,
-          "explicacion": "El dueño es Jon, que es de quien va la frase: «bere»."
+          "explicacion": "El dueño es Jon, que es de quien va la frase: «bere».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4042,7 +4069,8 @@
             "zuen"
           ],
           "correcta": 0,
-          "explicacion": "El dueño no está en la frase: «haren». Con «bere» sería la casa del propio Jon."
+          "explicacion": "El dueño no está en la frase: «haren». Con «bere» sería la casa del propio Jon.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4068,7 +4096,8 @@
             "Gure"
           ],
           "correcta": 0,
-          "explicacion": "El plural de «bere» es «beren». «Haien» sería la casa de otros."
+          "explicacion": "El plural de «bere» es «beren». «Haien» sería la casa de otros.",
+          "teclea": true
         },
         {
           "tipo": "traducir",

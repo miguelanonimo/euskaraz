@@ -938,7 +938,8 @@
             "dute"
           ],
           "correcta": 1,
-          "explicacion": "«Nik ogia jaten dut» = yo como pan. Hay objeto (el pan), así que el auxiliar es «dut»."
+          "explicacion": "«Nik ogia jaten dut» = yo como pan. Hay objeto (el pan), así que el auxiliar es «dut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -951,7 +952,8 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "«Ni etxera joaten naiz» = yo voy a casa. «joan» no lleva objeto: el auxiliar es «naiz»."
+          "explicacion": "«Ni etxera joaten naiz» = yo voy a casa. «joan» no lleva objeto: el auxiliar es «naiz».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -977,7 +979,8 @@
             "ditugu"
           ],
           "correcta": 1,
-          "explicacion": "«Gu berandu etortzen gara» = nosotros venimos tarde. «etorri» no lleva objeto → «gara»."
+          "explicacion": "«Gu berandu etortzen gara» = nosotros venimos tarde. «etorri» no lleva objeto → «gara».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -990,7 +993,8 @@
             "ditu"
           ],
           "correcta": 1,
-          "explicacion": "«Haiek euskara ikasten dute» = ellos aprenden euskera. «el euskera» es el objeto → «dute»."
+          "explicacion": "«Haiek euskara ikasten dute» = ellos aprenden euskera. «el euskera» es el objeto → «dute».",
+          "teclea": true
         }
       ],
       "subnivel": "7.1"
@@ -1125,7 +1129,8 @@
             "irakurtzen ez"
           ],
           "correcta": 0,
-          "explicacion": "En negativa el auxiliar salta justo detrás del «ez»: «ez dut … irakurtzen»."
+          "explicacion": "En negativa el auxiliar salta justo detrás del «ez»: «ez dut … irakurtzen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1138,7 +1143,8 @@
             "Ez edaten dut"
           ],
           "correcta": 1,
-          "explicacion": "«Ez dut kaferik edaten»: ez + auxiliar, el verbo al final, y el café con -rik porque es café en general."
+          "explicacion": "«Ez dut kaferik edaten»: ez + auxiliar, el verbo al final, y el café con -rik porque es café en general.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1151,7 +1157,8 @@
             "ez naiz ez"
           ],
           "correcta": 1,
-          "explicacion": "Con las formas de una pieza basta con poner «ez» delante."
+          "explicacion": "Con las formas de una pieza basta con poner «ez» delante.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1164,7 +1171,8 @@
             "Etxean ez"
           ],
           "correcta": 2,
-          "explicacion": "Ubicación → «egon». En negativa: «Ez nago etxean»."
+          "explicacion": "Ubicación → «egon». En negativa: «Ez nago etxean».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1177,7 +1185,8 @@
             "ez jaten"
           ],
           "correcta": 0,
-          "explicacion": "El auxiliar de objeto es «duzu» y va detrás del «ez». La carne, en general, con -rik: «haragirik»."
+          "explicacion": "El auxiliar de objeto es «duzu» y va detrás del «ez». La carne, en general, con -rik: «haragirik».",
+          "teclea": true
         }
       ],
       "subnivel": "7.2"
@@ -1369,7 +1378,8 @@
             "naiz"
           ],
           "correcta": 1,
-          "explicacion": "Objeto plural → «ditut»."
+          "explicacion": "Objeto plural → «ditut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1382,7 +1392,8 @@
             "ditu"
           ],
           "correcta": 1,
-          "explicacion": "«barazkiak» es plural, así que «ditut»."
+          "explicacion": "«barazkiak» es plural, así que «ditut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1395,7 +1406,8 @@
             "dituzte"
           ],
           "correcta": 1,
-          "explicacion": "Nosotros + objeto plural = «ditugu»."
+          "explicacion": "Nosotros + objeto plural = «ditugu».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1408,7 +1420,8 @@
             "naiz"
           ],
           "correcta": 1,
-          "explicacion": "Aquí el objeto es singular: «dut»."
+          "explicacion": "Aquí el objeto es singular: «dut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1421,7 +1434,8 @@
             "ditugu"
           ],
           "correcta": 1,
-          "explicacion": "Ellos + objeto plural = «dituzte»."
+          "explicacion": "Ellos + objeto plural = «dituzte».",
+          "teclea": true
         }
       ],
       "subnivel": "7.1"
@@ -1734,7 +1748,8 @@
             "dabe"
           ],
           "correcta": 1,
-          "explicacion": "Objeto plural en bizkaiera: «dodaz», con esa -z de siempre. Y fíjate en que el euskera sí pone artículo donde el castellano no: manzanas en general son «sagarrak»."
+          "explicacion": "Objeto plural en bizkaiera: «dodaz», con esa -z de siempre. Y fíjate en que el euskera sí pone artículo donde el castellano no: manzanas en general son «sagarrak».",
+          "teclea": true
         }
       ],
       "subnivel": "7.1"
@@ -1869,7 +1884,8 @@
             "gaua"
           ],
           "correcta": 1,
-          "explicacion": "Por la mañana se toma el desayuno: gosaria."
+          "explicacion": "Por la mañana se toma el desayuno: gosaria.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1895,7 +1911,8 @@
             "jaten"
           ],
           "correcta": 1,
-          "explicacion": "Un libro se lee: irakurtzen."
+          "explicacion": "Un libro se lee: irakurtzen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1921,7 +1938,8 @@
             "dugu"
           ],
           "correcta": 1,
-          "explicacion": "Con «zuk» el auxiliar es «duzu»."
+          "explicacion": "Con «zuk» el auxiliar es «duzu».",
+          "teclea": true
         }
       ],
       "subnivel": "7.5"
@@ -2346,7 +2364,8 @@
             "jaikitzen da"
           ],
           "correcta": 1,
-          "explicacion": "No lleva objeto, así que el auxiliar es «izan»."
+          "explicacion": "No lleva objeto, así que el auxiliar es «izan».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2406,7 +2425,8 @@
             "jaten ari dut"
           ],
           "correcta": 1,
-          "explicacion": "El verbo en -t(z)en, más «ari» y el verbo izan."
+          "explicacion": "El verbo en -t(z)en, más «ari» y el verbo izan.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2720,7 +2740,8 @@
             "jaten dut"
           ],
           "correcta": 0,
-          "explicacion": "desayunar = gosaldu."
+          "explicacion": "desayunar = gosaldu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2809,7 +2830,8 @@
             "tipula"
           ],
           "correcta": 0,
-          "explicacion": "vestirse = jantzi."
+          "explicacion": "vestirse = jantzi.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2898,7 +2920,8 @@
             "arroza"
           ],
           "correcta": 0,
-          "explicacion": "el agua = ura."
+          "explicacion": "el agua = ura.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2987,7 +3010,8 @@
             "hartu"
           ],
           "correcta": 0,
-          "explicacion": "la cena = afaria."
+          "explicacion": "la cena = afaria.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3076,7 +3100,8 @@
             "idatzi"
           ],
           "correcta": 0,
-          "explicacion": "el arroz = arroza."
+          "explicacion": "el arroz = arroza.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3611,7 +3636,8 @@
             "jaten ari dut"
           ],
           "correcta": 1,
-          "explicacion": "Verbo en -t(z)en + ari + izan."
+          "explicacion": "Verbo en -t(z)en + ari + izan.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3790,7 +3816,8 @@
             "da"
           ],
           "correcta": 1,
-          "explicacion": "Con «ari» el auxiliar es siempre «izan»: «ogia jaten ari naiz», aunque la frase lleve objeto."
+          "explicacion": "Con «ari» el auxiliar es siempre «izan»: «ogia jaten ari naiz», aunque la frase lleve objeto.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4020,7 +4047,8 @@
             "gazta"
           ],
           "correcta": 0,
-          "explicacion": "gatza (sal) y gazta (queso): las mismas letras, con la t y la z al revés."
+          "explicacion": "gatza (sal) y gazta (queso): las mismas letras, con la t y la z al revés.",
+          "teclea": true
         }
       ],
       "subnivel": "7.5"

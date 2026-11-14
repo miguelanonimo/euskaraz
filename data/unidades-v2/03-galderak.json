@@ -1572,7 +1572,8 @@
             "galdera"
           ],
           "correcta": 0,
-          "explicacion": "¿qué? = zer?."
+          "explicacion": "¿qué? = zer?.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1661,7 +1662,8 @@
             "nor?"
           ],
           "correcta": 0,
-          "explicacion": "Movimiento desde un sitio."
+          "explicacion": "Movimiento desde un sitio.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1750,7 +1752,8 @@
             "nondik?"
           ],
           "correcta": 0,
-          "explicacion": "la respuesta = erantzuna."
+          "explicacion": "la respuesta = erantzuna.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1839,7 +1842,8 @@
             "nor?"
           ],
           "correcta": 0,
-          "explicacion": "ayer = atzo."
+          "explicacion": "ayer = atzo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1928,7 +1932,8 @@
             "zer?"
           ],
           "correcta": 0,
-          "explicacion": "¿adónde? = nora?."
+          "explicacion": "¿adónde? = nora?.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2017,7 +2022,8 @@
             "zein?"
           ],
           "correcta": 0,
-          "explicacion": "Origen, no movimiento."
+          "explicacion": "Origen, no movimiento.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2106,7 +2112,8 @@
             "orain"
           ],
           "correcta": 0,
-          "explicacion": "¿adónde? = nora?."
+          "explicacion": "¿adónde? = nora?.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2183,7 +2190,8 @@
             "ez dakit"
           ],
           "correcta": 0,
-          "explicacion": "Origen, no movimiento."
+          "explicacion": "Origen, no movimiento.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2526,7 +2534,8 @@
             "hau lagun"
           ],
           "correcta": 0,
-          "explicacion": "El demostrativo va detrás, y el nombre suelta la -a del artículo."
+          "explicacion": "El demostrativo va detrás, y el nombre suelta la -a del artículo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

@@ -1284,7 +1284,8 @@
             "haren"
           ],
           "correcta": 1,
-          "explicacion": "«Nire» viene de «ni»."
+          "explicacion": "«Nire» viene de «ni».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1297,7 +1298,8 @@
             "nire"
           ],
           "correcta": 0,
-          "explicacion": "«Gure» viene de «gu»."
+          "explicacion": "«Gure» viene de «gu».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1310,7 +1312,8 @@
             "haien"
           ],
           "correcta": 2,
-          "explicacion": "«Zuen» viene de «zuek». No lo confundas con «zure» (tu)."
+          "explicacion": "«Zuen» viene de «zuek». No lo confundas con «zure» (tu).",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1336,7 +1339,8 @@
             "gure"
           ],
           "correcta": 1,
-          "explicacion": "«Haren» es de una persona; «haien» de varias."
+          "explicacion": "«Haren» es de una persona; «haien» de varias.",
+          "teclea": true
         }
       ],
       "subnivel": "2.2"
@@ -1381,7 +1385,8 @@
             "herri gure polita"
           ],
           "correcta": 0,
-          "explicacion": "Mismo orden: gure + herri + polit + a."
+          "explicacion": "Mismo orden: gure + herri + polit + a.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2077,7 +2082,8 @@
             "gara"
           ],
           "correcta": 1,
-          "explicacion": "Con «ni» (yo) siempre va «naiz»."
+          "explicacion": "Con «ni» (yo) siempre va «naiz».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2090,7 +2096,8 @@
             "dira"
           ],
           "correcta": 2,
-          "explicacion": "Sujeto «ni» → «naiz», y el verbo cierra la frase."
+          "explicacion": "Sujeto «ni» → «naiz», y el verbo cierra la frase.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2103,7 +2110,8 @@
             "zarete"
           ],
           "correcta": 0,
-          "explicacion": "«Idazle» es escritor; con «ni» el verbo es «naiz»."
+          "explicacion": "«Idazle» es escritor; con «ni» el verbo es «naiz».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2116,7 +2124,8 @@
             "zara"
           ],
           "correcta": 1,
-          "explicacion": "El sujeto es «ni», así que el verbo es «naiz»."
+          "explicacion": "El sujeto es «ni», así que el verbo es «naiz».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2129,7 +2138,8 @@
             "da"
           ],
           "correcta": 1,
-          "explicacion": "Primera persona del singular: «naiz»."
+          "explicacion": "Primera persona del singular: «naiz».",
+          "teclea": true
         },
         {
           "tipo": "escribir",
@@ -2163,7 +2173,8 @@
             "dira"
           ],
           "correcta": 2,
-          "explicacion": "Con «zu» (tú) va «zara»."
+          "explicacion": "Con «zu» (tú) va «zara».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2176,7 +2187,8 @@
             "gara"
           ],
           "correcta": 0,
-          "explicacion": "Con «hura» (él/ella) va «da»."
+          "explicacion": "Con «hura» (él/ella) va «da».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2189,7 +2201,8 @@
             "zara"
           ],
           "correcta": 2,
-          "explicacion": "Con «zuek» (vosotros) va «zarete»."
+          "explicacion": "Con «zuek» (vosotros) va «zarete».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2202,7 +2215,8 @@
             "naiz"
           ],
           "correcta": 0,
-          "explicacion": "Con «gu» (nosotros) va «gara»."
+          "explicacion": "Con «gu» (nosotros) va «gara».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2215,7 +2229,8 @@
             "zara"
           ],
           "correcta": 1,
-          "explicacion": "«Bera» equivale a «hura», así que el verbo es «da»."
+          "explicacion": "«Bera» equivale a «hura», así que el verbo es «da».",
+          "teclea": true
         },
         {
           "tipo": "escribir",
@@ -3022,7 +3037,8 @@
             "hi"
           ],
           "correcta": 0,
-          "explicacion": "Su sentido básico es «que tiene el euskera», no el origen. También se usa como «del País Vasco», pero el primero es el que cuenta aquí."
+          "explicacion": "Su sentido básico es «que tiene el euskera», no el origen. También se usa como «del País Vasco», pero el primero es el que cuenta aquí.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3111,7 +3127,8 @@
             "neu"
           ],
           "correcta": 0,
-          "explicacion": "el pueblo = herria."
+          "explicacion": "el pueblo = herria.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3200,7 +3217,8 @@
             "zu"
           ],
           "correcta": 0,
-          "explicacion": "(nosotros) somos = gara."
+          "explicacion": "(nosotros) somos = gara.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

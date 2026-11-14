@@ -1390,7 +1390,8 @@
             "dira"
           ],
           "correcta": 1,
-          "explicacion": "Son tres gatos, objeto plural: entra la -it- de «ditut»."
+          "explicacion": "Son tres gatos, objeto plural: entra la -it- de «ditut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1403,7 +1404,8 @@
             "ditugu"
           ],
           "correcta": 1,
-          "explicacion": "«Haiek» + objeto plural («bi etxe») → «dituzte»."
+          "explicacion": "«Haiek» + objeto plural («bi etxe») → «dituzte».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2837,7 +2839,8 @@
             "katua"
           ],
           "correcta": 0,
-          "explicacion": "hermana (de un chico) = arreba."
+          "explicacion": "hermana (de un chico) = arreba.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2926,7 +2929,8 @@
             "bosgarrena"
           ],
           "correcta": 0,
-          "explicacion": "el hijo = semea."
+          "explicacion": "el hijo = semea.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3015,7 +3019,8 @@
             "bat"
           ],
           "correcta": 0,
-          "explicacion": "madre = ama."
+          "explicacion": "madre = ama.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3104,7 +3109,8 @@
             "amona"
           ],
           "correcta": 0,
-          "explicacion": "Esta sí es solo nieto: sirve para desambiguar cuando «iloba» no basta."
+          "explicacion": "Esta sí es solo nieto: sirve para desambiguar cuando «iloba» no basta.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3193,7 +3199,8 @@
             "lehena"
           ],
           "correcta": 0,
-          "explicacion": "la hija = alaba."
+          "explicacion": "la hija = alaba.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3282,7 +3289,8 @@
             "hamalau"
           ],
           "correcta": 0,
-          "explicacion": "Vale para las dos cosas. Ver la ficha de esta unidad."
+          "explicacion": "Vale para las dos cosas. Ver la ficha de esta unidad.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3371,7 +3379,8 @@
             "azkena"
           ],
           "correcta": 0,
-          "explicacion": "la mujer, la esposa = emaztea."
+          "explicacion": "la mujer, la esposa = emaztea.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3460,7 +3469,8 @@
             "hamasei"
           ],
           "correcta": 0,
-          "explicacion": "la tía = izeba."
+          "explicacion": "la tía = izeba.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3549,7 +3559,8 @@
             "daukazu"
           ],
           "correcta": 0,
-          "explicacion": "el cuarto = laugarrena."
+          "explicacion": "el cuarto = laugarrena.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3638,7 +3649,8 @@
             "lau"
           ],
           "correcta": 0,
-          "explicacion": "el quinto = bosgarrena."
+          "explicacion": "el quinto = bosgarrena.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3727,7 +3739,8 @@
             "bosgarrena"
           ],
           "correcta": 0,
-          "explicacion": "el segundo = bigarrena."
+          "explicacion": "el segundo = bigarrena.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3816,7 +3829,8 @@
             "hamasei"
           ],
           "correcta": 0,
-          "explicacion": "(tú) tienes = daukazu."
+          "explicacion": "(tú) tienes = daukazu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3905,7 +3919,8 @@
             "behia"
           ],
           "correcta": 0,
-          "explicacion": "(tú) tienes = daukazu."
+          "explicacion": "(tú) tienes = daukazu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3994,7 +4009,8 @@
             "ama"
           ],
           "correcta": 0,
-          "explicacion": "(tú) tienes = daukazu."
+          "explicacion": "(tú) tienes = daukazu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4083,7 +4099,8 @@
             "mutil-laguna"
           ],
           "correcta": 0,
-          "explicacion": "El prefijo cambia a «heme-». También se oye «hamazortzi»."
+          "explicacion": "El prefijo cambia a «heme-». También se oye «hamazortzi».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4172,7 +4189,8 @@
             "zortzi"
           ],
           "correcta": 0,
-          "explicacion": "veinte = hogei."
+          "explicacion": "veinte = hogei.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4261,7 +4279,8 @@
             "dut"
           ],
           "correcta": 0,
-          "explicacion": "También significa «un montón», coloquialmente."
+          "explicacion": "También significa «un montón», coloquialmente.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4350,7 +4369,8 @@
             "ama"
           ],
           "correcta": 0,
-          "explicacion": "quince = hamabost."
+          "explicacion": "quince = hamabost.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4439,7 +4459,8 @@
             "neska-laguna"
           ],
           "correcta": 0,
-          "explicacion": "Veinte y diez."
+          "explicacion": "Veinte y diez.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4528,7 +4549,8 @@
             "lehena"
           ],
           "correcta": 0,
-          "explicacion": "Dos veintes."
+          "explicacion": "Dos veintes.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4617,7 +4639,8 @@
             "ahizpa"
           ],
           "correcta": 0,
-          "explicacion": "Cuatro veintes."
+          "explicacion": "Cuatro veintes.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4662,7 +4685,8 @@
             "hirurogeita hamar"
           ],
           "correcta": 0,
-          "explicacion": "60 (tres veintes) + 16. «Hirurogeita sei» sería 66, y «hirurogeita hamar», 70."
+          "explicacion": "60 (tres veintes) + 16. «Hirurogeita sei» sería 66, y «hirurogeita hamar», 70.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4928,7 +4952,8 @@
             "astea"
           ],
           "correcta": 0,
-          "explicacion": "Con «ez», el objeto va en partitivo: astirik."
+          "explicacion": "Con «ez», el objeto va en partitivo: astirik.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
