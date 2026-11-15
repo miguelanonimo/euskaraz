@@ -118,7 +118,7 @@
     },
     {
       "titulo": "Las cuatro preguntas de lugar, completas",
-      "cuerpo": "Ahora ya puedes cerrar el cuadro que empezaste en la tercera unidad:\n\n<b>Non?</b> (¿dónde?) → <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\nCuatro preguntas, cuatro sufijos, y la respuesta lleva siempre la misma cola que la pregunta.\n\nEste sistema de sufijos que encajan unos con otros es el corazón del euskera. Cuando llegues a los casos que faltan (a quién, con quién, para quién), ya sabrás cómo funciona el mecanismo.\n\nY las tres palabras con las que se contesta sin nombrar el sitio:\n\n<b>hemen</b> — aquí\n<b>hor</b> — ahí\n<b>han</b> — allí\n\nSon las hermanas de <i>hau</i>, <i>hori</i> y <i>hura</i>, los demostrativos de la tercera unidad, y van con su mismo criterio: no cuenta la distancia en metros, sino de quién está cerca.\n\n<b>hemen</b> (aquí) ↔ <i>hau</i> (este) — donde estoy yo\n<b>hor</b> (ahí) ↔ <i>hori</i> (ese) — donde estás tú\n<b>han</b> (allí) ↔ <i>hura</i> (aquel) — lejos de los dos\n\nY entran en el mismo cuadro de arriba — <i>hemendik</i> es «desde aquí», <i>hona</i> «hacia aquí».",
+      "cuerpo": "Ahora ya puedes cerrar el cuadro que empezaste en la tercera unidad:\n\n<b>Non?</b> (¿dónde?) → <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\nCuatro preguntas, cuatro sufijos, y la respuesta lleva siempre la misma cola que la pregunta.\n\nEn clase, cada pregunta da nombre a su caso, igual que pasaba con NOR y NORK: NON, NORA, NONDIK y NONGO. Si oyes «el caso NORA», es este <i>-ra</i>.\n\nEste sistema de sufijos que encajan unos con otros es el corazón del euskera. Cuando llegues a los casos que faltan (a quién, con quién, para quién), ya sabrás cómo funciona el mecanismo.\n\nY las tres palabras con las que se contesta sin nombrar el sitio:\n\n<b>hemen</b> — aquí\n<b>hor</b> — ahí\n<b>han</b> — allí\n\nSon las hermanas de <i>hau</i>, <i>hori</i> y <i>hura</i>, los demostrativos de la tercera unidad, y van con su mismo criterio: no cuenta la distancia en metros, sino de quién está cerca.\n\n<b>hemen</b> (aquí) ↔ <i>hau</i> (este) — donde estoy yo\n<b>hor</b> (ahí) ↔ <i>hori</i> (ese) — donde estás tú\n<b>han</b> (allí) ↔ <i>hura</i> (aquel) — lejos de los dos\n\nY entran en el mismo cuadro de arriba — <i>hemendik</i> es «desde aquí», <i>hona</i> «hacia aquí».",
       "ejemplos": [
         {
           "eu": "non zaude? — etxean nago",
@@ -234,8 +234,8 @@
       "subnivel": "5.4"
     },
     {
-      "titulo": "«Es una casa bonita»: aquí no va «bat»",
-      "cuerpo": "La ficha anterior decía que «una» es <b>bat</b>. Vale cuando <b>nombras</b> una cosa cualquiera: <i>mahai zuri bat</i>, una mesa blanca. Pero hay un sitio donde el castellano pone «un» o «una» y el euskera pone el artículo de siempre: cuando dices <b>qué es</b> algo o <b>cómo es</b>.\n\n<b>Hau mahaia da.</b> — Esto es una mesa.\n<b>Etxe polita da.</b> — Es una casa bonita.\n<b>Txakur handia da.</b> — Es un perro grande.\n\nLo natural es que ninguna lleve <i>bat</i>. En castellano ese «una» no cuenta nada —no estás diciendo que sea una y no dos—, solo acompaña. Para eso el euskera usa <b>-a</b>.\n\nYa lo hacías con las profesiones, desde la segunda unidad: <i>ni irakaslea naiz</i>, soy profesor. Es la misma regla, un paso más allá.\n\nLa prueba: si puedes cambiar «un» por «dos» y la frase sigue teniendo sentido, es <b>bat</b>. Si no, es <b>-a</b>.\n\n<b>Katu bat daukat.</b> — Tengo un gato. Podrían ser dos: <i>bat</i>.\n<b>Katu polita da.</b> — Es un gato bonito. No estás contando: <i>-a</i>.",
+      "titulo": "«Es una casa bonita»: aquí basta la -a",
+      "cuerpo": "La ficha anterior decía que «una» es <b>bat</b>: <i>mahai zuri bat</i>, una mesa blanca. Es así cuando nombras una cosa cualquiera, y sobre todo cuando la cuentas: tengo <b>una</b>, quiero <b>una</b>.\n\nPero vas a encontrarte frases donde el castellano dice «una» y el euskera se queda con su artículo de siempre:\n\n<b>Etxe polita da.</b> — Es una casa bonita.\n<b>Txakur handia da.</b> — Es un perro grande.\n\nPasa cuando dices <b>cómo es</b> algo o <b>qué es</b>. Ahí el «una» castellano no cuenta nada —no estás diciendo que sea una y no dos—, y al euskera le basta la <b>-a</b>.\n\nNo es una regla nueva: es la de las profesiones, que tienes desde la segunda unidad. <i>Ni irakaslea naiz</i>, soy profesor.\n\nSi se te escapa un <i>bat</i> —«etxe polit bat da»— te van a entender igual, y también lo oirás. Esto no es para que te corrijas: es para que no te extrañe leer <i>etxe polita da</i> y entender «es <b>una</b> casa bonita». No falta nada.\n\nY una pista para orientarte: si puedes cambiar «un» por «dos» y la frase sigue teniendo sentido, estás contando, y ahí el <b>bat</b> va seguro.\n\n<b>Katu bat daukat.</b> — Tengo un gato. Podrían ser dos.",
       "ejemplos": [],
       "subnivel": "5.4"
     },
@@ -3164,29 +3164,15 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "«Es una casa bonita», dicho como se ha dicho siempre:",
+          "pregunta": "«Txakur handia da» se puede traducir por…",
           "opciones": [
-            "Etxe polit bat da",
-            "Etxe polita da",
-            "Etxea polit bat da",
-            "Polita etxe da"
+            "Tengo un perro grande",
+            "Es un perro grande",
+            "Los perros son grandes",
+            "No es un perro grande"
           ],
           "correcta": 1,
-          "explicacion": "Dices cómo es, no cuántas son: con el artículo. «Etxe polit bat da» es calcar el «una» del castellano."
-        },
-        {
-          "tipo": "opcion",
-          "instruccion": "Elige la opción correcta",
-          "pregunta": "Esto es una mesa. → Hau ____ da.",
-          "opciones": [
-            "mahai bat",
-            "mahai",
-            "mahaia",
-            "mahaiak"
-          ],
-          "correcta": 2,
-          "explicacion": "Dices qué es: lo natural es el artículo, igual que en «ni irakaslea naiz».",
-          "teclea": false
+          "explicacion": "Al decir cómo es algo, al euskera le basta la -a donde el castellano dice «un»."
         },
         {
           "tipo": "opcion",
@@ -3199,30 +3185,44 @@
             "Bat katu"
           ],
           "correcta": 0,
-          "explicacion": "Aquí sí cuentas —podrían ser dos—, así que va «bat», y el nombre sin artículo.",
+          "explicacion": "Aquí cuentas —podrían ser dos—, así que va «bat», y el nombre sin artículo.",
           "teclea": true
         },
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿En cuál de estas el «un» se dice con «bat»?",
+          "pregunta": "¿En cuál de estas estás contando, y por eso el «bat» va seguro?",
           "opciones": [
             "Es un perro grande",
-            "Soy un estudiante",
+            "Soy estudiante",
             "Tengo un perro",
             "Esto es un perro"
           ],
           "correcta": 2,
-          "explicacion": "Solo ahí estás contando. En las otras dices qué es o cómo es algo, y va el artículo."
+          "explicacion": "Podrías tener dos. En las otras dices qué es o cómo es algo, y al euskera le basta el artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ni irakaslea naiz» es «soy profesor». ¿Qué hace ahí la -a?",
+          "opciones": [
+            "Marca el plural",
+            "Dice que es una profesora",
+            "Lo mismo que en «etxe polita da»: decir qué es, sin contar",
+            "Nada: sobra"
+          ],
+          "correcta": 2,
+          "explicacion": "Cuando dices qué es alguien o cómo es algo, va el artículo."
         },
         {
           "tipo": "traducir",
           "instruccion": "Escríbelo en euskera",
           "es": "Es una casa bonita.",
           "respuestas": [
-            "etxe polita da"
+            "etxe polita da",
+            "etxe polit bat da"
           ],
-          "pista": "Dices cómo es: aquí no va «bat»."
+          "pista": "Dices cómo es: con el artículo basta."
         }
       ],
       "subnivel": "5.4"
