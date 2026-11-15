@@ -184,7 +184,7 @@
     },
     {
       "titulo": "Cuánto, y cómo negarlo",
-      "cuerpo": "La cantidad va detrás del sujeto:\n\n<b>kirola asko gustatzen zait</b> — Me gusta mucho el deporte.\n<b>zinema pixka bat gustatzen zait</b> — Me gusta un poco el cine.\n<b>kirola gutxi gustatzen zait</b> — Me gusta poco el deporte.\n\nLa escala entera, de más a menos: <b>asko</b> (mucho), <b>pixka bat</b> (un poco), <b>gutxi</b> (poco), <b>batere ez</b> (nada en absoluto).\n\nY para negar, el <b>ez</b> con su salto de siempre. El auxiliar se coloca justo detrás:\n\n<b>ez zait futbola gustatzen</b> — No me gusta el fútbol.\n<b>ez zaizkit barazkiak gustatzen</b> — No me gustan las verduras.\n\nPara «nada en absoluto»:\n<b>Ez zait batere gustatzen.</b>\n\nY una respuesta corta que oirás mucho: <b>Niri ere bai.</b> (a mí también) y <b>Niri ez.</b> (a mí no).",
+      "cuerpo": "La cantidad va detrás del sujeto:\n\n<b>kirola asko gustatzen zait</b> — Me gusta mucho el deporte.\n<b>zinema pixka bat gustatzen zait</b> — Me gusta un poco el cine.\n<b>kirola gutxi gustatzen zait</b> — Me gusta poco el deporte.\n\nLa escala entera, de más a menos: <b>asko</b> (mucho), <b>pixka bat</b> (un poco), <b>gutxi</b> (poco), <b>batere ez</b> (nada en absoluto).\n\nY para negar, el <b>ez</b> con su salto de siempre. El auxiliar se coloca justo detrás:\n\n<b>ez zait futbola gustatzen</b> — No me gusta el fútbol.\n<b>ez zaizkit barazkiak gustatzen</b> — No me gustan las verduras.\n\nPara «nada en absoluto»:\n<b>Ez zait batere gustatzen.</b>\n\nY una respuesta corta que oirás mucho: <b>Niri ere bai.</b> (a mí también) y <b>Niri ez.</b> (a mí no). Para sumarte a un «no me gusta», <b>Niri ere ez.</b> (a mí tampoco).",
       "ejemplos": [
         {
           "eu": "ez zait euria gustatzen",
@@ -200,6 +200,18 @@
           "eu": "niri ere bai",
           "es": "A mí también.",
           "audio": "unidades/u10/niri-ere-bai.mp3"
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "titulo": "«Asko» y «gutxi» también cuentan: van detrás y sin artículo",
+      "cuerpo": "Acabas de usar <b>asko</b> y <b>gutxi</b> para decir cuánto te gusta algo. Sirven también para decir cuánto <b>hay</b> de algo —«muchos amigos», «poco dinero»—, y ahí tienen dos reglas que chocan con el castellano.\n\n<b>Van detrás del nombre</b>\n\n<b>lagun asko</b> — muchos amigos\n<b>diru gutxi</b> — poco dinero\n\nNo «asko lagun». Es el orden de siempre: lo que acompaña al nombre va después, como <i>etxe handia</i> o <i>lagun bat</i>.\n\n<b>Y el nombre va sin artículo</b>\n\nIgual que detrás de un número. No se dice «lagunak asko» ni «dirua gutxi»:\n\n<b>liburu asko ditut</b> — Tengo muchos libros.\n<b>diru gutxi dut</b> — Tengo poco dinero.\n\n<b>El artículo cambia lo que dices</b>\n\nMira estas dos, que solo se separan por una <b>-ak</b>:\n\n<b>liburu<u>ak</u> asko gustatzen zaizkit</b> — Me gustan <b>mucho</b> los libros.\n<b>liburu asko gustatzen zaizkit</b> — Me gustan <b>muchos</b> libros.\n\nEn la primera, <i>liburuak</i> lleva su artículo y <i>asko</i> va por libre: dice cuánto te gustan. En la segunda, <i>liburu</i> va desnudo y <i>asko</i> se le pega: dice cuántos son.\n\nY la pregunta hace lo mismo: detrás de <b>zenbat</b> el nombre también va desnudo. <i>Zenbat urte dituzu?</i> ya te lo sabías; <i>Zenbat liburu dituzu?</i> es el mismo molde.",
+      "ejemplos": [
+        {
+          "eu": "Liburuak asko gustatzen zaizkit.",
+          "es": "Me gustan mucho los libros.",
+          "audio": "unidades/u9/liburuak-asko-gustatzen-zaizkit.mp3"
         }
       ],
       "subnivel": "9.1"
@@ -3981,6 +3993,79 @@
           ],
           "correcta": 0,
           "explicacion": "«batere ez» es «nada en absoluto»."
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "id": "u9-g52",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Muchos amigos. → ____",
+          "opciones": [
+            "asko lagun",
+            "lagunak asko",
+            "lagun asko",
+            "asko lagunak"
+          ],
+          "correcta": 2,
+          "explicacion": "Detrás del nombre y sin artículo: lagun asko.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tengo poco dinero. → ____ dut.",
+          "opciones": [
+            "Diru gutxi",
+            "Gutxi diru",
+            "Dirua gutxi",
+            "Gutxi dirua"
+          ],
+          "correcta": 0,
+          "explicacion": "«Gutxi» va detrás, y el nombre desnudo: diru gutxi."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Liburu asko gustatzen zaizkit» significa…",
+          "opciones": [
+            "Me gustan mucho los libros",
+            "Me gustan muchos libros",
+            "Me gusta mucho el libro",
+            "No me gustan muchos libros"
+          ],
+          "correcta": 1,
+          "explicacion": "«Liburu» va sin artículo y «asko» se le pega: muchos libros. Con «liburuak asko» sería «me gustan mucho los libros»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Me gustan mucho los libros. → ____ gustatzen zaizkit.",
+          "opciones": [
+            "Liburu asko",
+            "Asko liburuak",
+            "Asko liburu",
+            "Liburuak asko"
+          ],
+          "correcta": 3,
+          "explicacion": "Los libros, con su artículo, y «asko» aparte diciendo cuánto.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuántos libros tienes? → Zenbat ____ dituzu?",
+          "opciones": [
+            "liburuak",
+            "liburu",
+            "liburua",
+            "liburuek"
+          ],
+          "correcta": 1,
+          "explicacion": "Detrás de «zenbat», igual que detrás de un número, el nombre va desnudo."
         }
       ],
       "subnivel": "9.1"
