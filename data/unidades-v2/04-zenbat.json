@@ -131,7 +131,7 @@
         {
           "eu": "nik anaia bat dut",
           "es": "Tengo un hermano. (con -k)",
-          "audio": "unidades/u5/nik-anaia-bat-dut.mp3"
+          "audio": "unidades/u5/nik-anaia-bat-dut-2.mp3"
         },
         {
           "eu": "hura irakaslea da",
@@ -170,7 +170,7 @@
         {
           "eu": "nik anaia bat dut",
           "es": "Tengo un hermano. — «Nik», en NORK; «anaia bat», en NOR.",
-          "audio": "unidades/u5/nik-anaia-bat-dut.mp3"
+          "audio": "unidades/u5/nik-anaia-bat-dut-2.mp3"
         }
       ],
       "subnivel": "4.7"
@@ -6207,7 +6207,7 @@
     },
     {
       "eu": "hark",
-      "audio": "unidades/u4/hark.mp3"
+      "audio": "unidades/u4/hark-2.mp3"
     },
     {
       "eu": "guk",
