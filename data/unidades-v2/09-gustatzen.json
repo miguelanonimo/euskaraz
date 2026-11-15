@@ -3780,6 +3780,75 @@
       "subnivel": "9.5"
     },
     {
+      "id": "u9-g54",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Es para mí. → ____ da.",
+          "opciones": [
+            "Nirentzat",
+            "Niri",
+            "Nire",
+            "Niretzat"
+          ],
+          "correcta": 3,
+          "explicacion": "Nire + tzat, sin -n. «Nirentzat» es el tropiezo, por parecerse a «amarentzat»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Es para mi madre. → ____ da.",
+          "opciones": [
+            "Amatzat",
+            "Amarentzat",
+            "Amaretzat",
+            "Amari"
+          ],
+          "correcta": 1,
+          "explicacion": "Con un nombre, el dueño lleva su -ren entero, y detrás -tzat: amarentzat."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Es para ti. → ____ da.",
+          "opciones": [
+            "Zuretzat",
+            "Zurentzat",
+            "Zuri",
+            "Zure"
+          ],
+          "correcta": 0,
+          "explicacion": "Zure + tzat. Como «niretzat», sin -n."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Para quién es? → ____ da?",
+          "opciones": [
+            "Noretzat",
+            "Nori",
+            "Norentzat",
+            "Noren"
+          ],
+          "correcta": 2,
+          "explicacion": "La pregunta sí lleva la -n: noren + tzat."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Es para mi madre.",
+          "respuestas": [
+            "amarentzat da",
+            "nire amarentzat da",
+            "hau amarentzat da"
+          ],
+          "pista": "El dueño con -ren, y detrás -tzat."
+        }
+      ],
+      "subnivel": "9.5"
+    },
+    {
       "id": "u9-g35",
       "variantes": [
         {

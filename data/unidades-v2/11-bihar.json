@@ -99,6 +99,18 @@
       ]
     },
     {
+      "titulo": "«Tendré que ir»: joan beharko dut",
+      "cuerpo": "El futuro es pegarle <b>-ko</b> al verbo: <i>joango naiz</i>. Pero cuando en medio hay un <b>behar</b>, el <b>-ko</b> no se lo lleva el verbo: se lo lleva él.\n\n<b>joan behar dut</b> — Tengo que ir.\n<b>joan behar<u>ko</u> dut</b> — Tendré que ir.\n\n<b>egin behar dugu</b> — Tenemos que hacerlo.\n<b>egin behar<u>ko</u> dugu</b> — Tendremos que hacerlo.\n\nEl verbo de delante se queda como estaba, en su forma de diccionario. El tropiezo corriente es ponerle el futuro a él, que es donde lo pone el oído: «joango behar dut». En euskera el <b>-ko</b> va en la última pieza antes del auxiliar.\n\nCon <i>nahi</i> pasa lo mismo: <b>joan nahiko dut</b>, querré ir.",
+      "ejemplos": [
+        {
+          "eu": "bihar joango naiz",
+          "es": "Mañana iré.",
+          "audio": "unidades/u11/bihar-joango-naiz.mp3"
+        }
+      ],
+      "subnivel": "11.1"
+    },
+    {
       "subnivel": "11.2",
       "titulo": "Los tres tiempos, uno al lado del otro",
       "cuerpo": "Ahora ya los tienes todos. Mira el mismo verbo en los tres:\n\n<b>atzo joan nintzen</b> — Ayer fui.\n<b>askotan joaten naiz</b> — Voy a menudo.\n<b>bihar joango naiz</b> — Mañana iré.\n\nFíjate en que el auxiliar es el que carga con casi todo el trabajo, y el verbo solo cambia de terminación: <i>joan</i>, <i>joaten</i>, <i>joango</i>.\n\nOjo con el del medio, que no es «hoy voy». <b>joaten naiz</b> es «suelo ir», la forma de la costumbre que ya viste en la octava unidad. Para decir que vas ahora, o que vas hoy a un sitio concreto, el euskera tira de la forma corta: <b>Bilbora noa.</b> — Voy a Bilbao.\n\nEse es, en una línea, el motor del euskera que llevas todo el curso montando.\n\nY dos palabras para hablar de lo que viene:\n\n<b>etorkizuna</b> — el futuro\n<b>asmoa</b> — la intención, el plan\n\n<i>Etorkizuna</i> tiene dentro <i>etorri</i>, venir: literalmente, «lo que ha de venir». Y <b>asmoa dut</b> es «tengo la intención de», que es como se dicen la mitad de los planes.\n\n<b>Y ahora sí, los tres auxiliares enteros</b>\nYa has visto los tres tiempos por separado. Aquí están juntos, que es cuando cobra sentido mirarlos de golpe:\n\n<i>izan</i> (ser, estar)\n<b>ni</b> — naiz · nintzen · izango naiz\n<b>hura</b> — da · zen · izango da\n<b>haiek</b> — dira · ziren · izango dira\n\n<i>ukan</i> (tener, haber)\n<b>nik</b> — dut · nuen · izango dut\n<b>hark</b> — du · zuen · izango du\n<b>haiek</b> — dute · zuten · izango dute\n\n<i>egon</i> (estar)\n<b>ni</b> — nago · nengoen · egongo naiz\n<b>hura</b> — dago · zegoen · egongo da\n<b>haiek</b> — daude · zeuden · egongo dira\n\nUna sorpresa de la última columna: el futuro de «tener» es <b>izango dut</b>, con el participio de <i>izan</i>. No hay ningún <i>ukango</i>. Los dos auxiliares comparten participio, y lo que distingue «seré» de «tendré» es el auxiliar de detrás: <b>izango naiz</b> frente a <b>izango dut</b>.",
@@ -1737,6 +1749,75 @@
             "etxean jango dut"
           ],
           "pista": "«En casa», con la -n de lugar. Y «jan» acaba en -n: futuro con -go."
+        }
+      ],
+      "subnivel": "11.1"
+    },
+    {
+      "id": "u11-g52",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tendré que ir. → ____",
+          "opciones": [
+            "Joango behar dut",
+            "Joan behar dut",
+            "Joan beharko dut",
+            "Joango beharko dut"
+          ],
+          "correcta": 2,
+          "explicacion": "El -ko se lo lleva «behar», no el verbo: joan beharko dut.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tendremos que hacerlo. → Egin ____ dugu.",
+          "opciones": [
+            "behar",
+            "beharko",
+            "beharra",
+            "behargo"
+          ],
+          "correcta": 1,
+          "explicacion": "El futuro va en «behar»: beharko."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «joan beharko dut», ¿quién lleva el -ko del futuro?",
+          "opciones": [
+            "joan",
+            "dut",
+            "behar",
+            "los dos"
+          ],
+          "correcta": 2,
+          "explicacion": "La última pieza antes del auxiliar. El verbo se queda en su forma de diccionario."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas es «tengo que ir», ahora, sin futuro?",
+          "opciones": [
+            "joan beharko dut",
+            "joango naiz",
+            "joan behar dut",
+            "joan nahi dut"
+          ],
+          "correcta": 2,
+          "explicacion": "Sin -ko, es presente: tengo que ir."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tendré que ir.",
+          "respuestas": [
+            "joan beharko dut",
+            "nik joan beharko dut"
+          ],
+          "pista": "El -ko no va en «joan»."
         }
       ],
       "subnivel": "11.1"

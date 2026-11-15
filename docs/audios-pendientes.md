@@ -1,9 +1,9 @@
 # Audios pendientes — para Miguel
 
-## Lo último · Fichas nuevas de noviembre de 2026 (v138 y v139): 95 frases sin audio
+## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v140): 120 frases sin audio
 
 Ric y Claude repasaron la gramática del curso contra los «Errores típicos» de la
-*Gramática didáctica* de Zubiri y salieron dieciocho fichas nuevas. Los ejemplos van
+*Gramática didáctica* de Zubiri y salieron veinticuatro fichas nuevas. Los ejemplos van
 escritos en el cuerpo de la ficha, en líneas `<b>frase</b> — traducción`, y esas
 líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
 
@@ -11,7 +11,7 @@ líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
 
 ```
 cd scripts/generar-audio
-node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 95
+node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 120
 node generar-cuerpos.mjs           # genera, sube y las enlaza en audiosExtra
 ```
 
@@ -63,6 +63,11 @@ Lo que va a generar:
 | 5.3 | Handia da. | Es grande |
 | 5.3 | Nolakoak dira? | ¿Cómo son? |
 | 5.3 | Txikiak dira. | Son pequeñas |
+| 5.4 | Hau mahaia da. | Esto es una mesa |
+| 5.4 | Etxe polita da. | Es una casa bonita |
+| 5.4 | Txakur handia da. | Es un perro grande |
+| 5.4 | Katu bat daukat. | Tengo un gato |
+| 5.4 | Katu polita da. | Es un gato bonito |
 | 5.2 | gainean | encima |
 | 5.2 | azpian | debajo |
 | 5.2 | ondoan | al lado |
@@ -84,9 +89,18 @@ Lo que va a generar:
 | 6.2 | larunbat gauean | el sábado por la noche |
 | 6.2 | ostiral arratsaldean | el viernes por la tarde |
 | 6.2 | larunbat goizean | el sábado por la mañana |
+| 6.3 | maiatzaren bosta | el cinco de mayo |
+| 6.3 | urtarrilaren hogeia | el veinte de enero |
+| 6.3 | Gaur maiatzaren bosta da. | Hoy es cinco de mayo |
+| 6.3 | maiatzaren bostean | el cinco de mayo, cuando pasa algo |
+| 6.3 | urtarrilaren hogeian | el veinte de enero, cuando pasa algo |
+| 6.3 | Nire urtebetetzea maiatzaren bostean da. | Mi cumpleaños es el cinco de mayo |
 | 6.4 | hotz handia egiten du | Hace mucho frío |
 | 6.4 | bero handia egiten du | Hace mucho calor |
 | 6.4 | bero handia dago hemen | Hace mucho calor aquí |
+| 7.1 | lagun honek kafea edaten du | Este amigo bebe café |
+| 7.1 | ikasle hori Bilbokoa da | Ese estudiante es de Bilbao |
+| 7.1 | ikasle horrek euskara ikasten du | Ese estudiante aprende euskera |
 | 7.5 | garagardo bat, mesedez | una cerveza, por favor |
 | 7.5 | bi garagardo, mesedez | dos cervezas, por favor |
 | 7.5 | hiru kafe eta ardo bat | tres cafés y un vino |
@@ -95,6 +109,9 @@ Lo que va a generar:
 | 7.5 | botila bat ardo | una botella de vino |
 | 7.5 | kilo bat patata, mesedez | Un kilo de patatas, por favor |
 | 7.5 | bi litro esne nahi dut | Quiero dos litros de leche |
+| 7.5 | beste kafe bat, mesedez | Otro café, por favor |
+| 7.5 | beste garagardo bat | otra cerveza |
+| 7.5 | beste bat | otro, otra, sin decir de qué |
 | 7.5 | gose naiz | tengo hambre |
 | 7.5 | egarri naiz | tengo sed |
 | 7.5 | gose zara? | ¿Tienes hambre? |
@@ -114,6 +131,14 @@ Lo que va a generar:
 | 9.2 | Ane ikusi dut | He visto a Ane |
 | 9.2 | liburua ikusi dut | He visto el libro |
 | 9.2 | Miren ezagutzen dut | Conozco a Miren |
+| 10.4 | ikasten hasi naiz | He empezado a estudiar |
+| 10.4 | euskara ikasten hasi naiz | He empezado a aprender euskera |
+| 10.4 | lanean hasi da | Ha empezado a trabajar |
+| 10.4 | liburua hasi dut | He empezado el libro |
+| 10.4 | irakurtzen hasi naiz | He empezado a leer |
+| 11.1 | joan beharko dut | Tendré que ir |
+| 11.1 | egin behar dugu | Tenemos que hacerlo |
+| 11.1 | egin beharko dugu | Tendremos que hacerlo |
 | 12.1 | Euskara ikasten al duzu? | ¿Estudias euskera? (con euskaraz sería «¿estudias en euskera?») |
 | 12.1 | badakit | lo sé, ya lo sé |
 | 12.1 | banoa | me voy |

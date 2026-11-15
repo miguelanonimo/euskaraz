@@ -154,6 +154,12 @@
       "subnivel": "10.4"
     },
     {
+      "titulo": "«He empezado a estudiar»: ikasten hasi naiz",
+      "cuerpo": "<b>Hasi</b>, empezar, es de los verbos de la lista. Solo, funciona como cualquier otro: <i>lana hasi dut</i>, he empezado el trabajo. Pero lo que más se empieza no es una cosa, sino <b>a hacer algo</b>, y ahí tiene su molde:\n\n<b>ikasten hasi naiz</b> — He empezado a estudiar.\n<b>euskara ikasten hasi naiz</b> — He empezado a aprender euskera.\n<b>lanean hasi da</b> — Ha empezado a trabajar.\n\nDos cosas que mirar.\n\n<b>El verbo va en -t(z)en</b>, la forma de la séptima unidad, la de <i>ikasten dut</i>. El castellano dice «empezar <b>a</b> estudiar», y eso empuja a buscar una terminación que haga de «a». No la hay: es <i>ikasten hasi</i>.\n\n<b>El auxiliar es <i>izan</i></b>, aunque lo que empieces a hacer lleve objeto: <i>euskara ikasten hasi naiz</i>, no «hasi dut». Es lo mismo que pasaba con <i>ari</i>: <i>ikasten ari naiz</i>. Y quien empieza va sin <b>-k</b>.\n\nCompara las dos, que es donde se ve:\n\n<b>liburua hasi dut</b> — He empezado el libro. Empiezas una cosa: <i>dut</i>.\n<b>irakurtzen hasi naiz</b> — He empezado a leer. Empiezas a hacer algo: <i>naiz</i>.\n\nY en pasado, igual: <b>atzo hasi nintzen</b>, empecé ayer.",
+      "ejemplos": [],
+      "subnivel": "10.4"
+    },
+    {
       "titulo": "Cuándo pasó",
       "cuerpo": "Los que ya conoces: <b>atzo</b> (ayer), <b>bart</b> (anoche), <b>herenegun</b> (anteayer).\n\nY los nuevos:\n\n<b>lehen</b> — antes\n<b>orduan</b> — entonces\n<b>aspaldi</b> — hace mucho\n<b>iaz</b> — el año pasado\n<b>aurten</b> — este año\n<b>joan den astean</b> — la semana pasada\n<b>joan den hilean</b> — el mes pasado\n<b>duela bi urte</b> — hace dos años\n<b>txikitan</b> — de pequeño\n<b>garai hartan</b> — en aquella época\n\n<b>duela</b> se usa con cualquier medida de tiempo: <i>duela ordubete</i> (hace una hora), <i>duela hilabete</i> (hace un mes), <i>duela urtebete</i> (hace un año).\n\nY como con las horas, lo normal es que el «cuándo» abra la frase.",
       "ejemplos": [
@@ -3084,6 +3090,76 @@
           "distractores": [
             "zineten"
           ]
+        }
+      ],
+      "subnivel": "10.4"
+    },
+    {
+      "id": "u10-g56",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "He empezado a estudiar. → ____ hasi naiz.",
+          "opciones": [
+            "Ikastera",
+            "Ikasi",
+            "Ikasten",
+            "Ikasiko"
+          ],
+          "correcta": 2,
+          "explicacion": "«Empezar a» pide -t(z)en. «Ikastera» es calcar la «a» del castellano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "He empezado a aprender euskera. → Euskara ikasten hasi ____.",
+          "opciones": [
+            "dut",
+            "naiz",
+            "nago",
+            "noa"
+          ],
+          "correcta": 1,
+          "explicacion": "Empezar a hacer algo va con «izan», aunque lo que hagas lleve objeto.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "He empezado el libro. → Liburua hasi ____.",
+          "opciones": [
+            "naiz",
+            "nago",
+            "zait",
+            "dut"
+          ],
+          "correcta": 3,
+          "explicacion": "Aquí empiezas una cosa, no «a hacer» algo: con «ukan».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Lanean hasi da» significa…",
+          "opciones": [
+            "Está en el trabajo",
+            "Ha empezado a trabajar",
+            "Ha terminado de trabajar",
+            "Va al trabajo"
+          ],
+          "correcta": 1,
+          "explicacion": "Lanean, «en el trabajo, trabajando», y hasi da, «ha empezado»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "He empezado a estudiar.",
+          "respuestas": [
+            "ikasten hasi naiz",
+            "ni ikasten hasi naiz"
+          ],
+          "pista": "El verbo en -t(z)en, y el auxiliar es «izan»."
         }
       ],
       "subnivel": "10.4"

@@ -140,7 +140,7 @@
     },
     {
       "titulo": "Cuándo: el día, el rato y la costumbre",
-      "cuerpo": "Los ratos del día llevan la misma <b>-n</b>:\n\n<b>goizean</b> — por la mañana\n<b>eguerdian</b> — a mediodía\n<b>arratsaldean</b> — por la tarde\n<b>iluntzean</b> — al anochecer\n<b>gauean</b> — por la noche\n\nLos días sueltos, en cambio, no llevan nada: <b>gaur</b> (hoy), <b>bihar</b> (mañana), <b>atzo</b> (ayer), <b>etzi</b> (pasado mañana), <b>bart</b> (anoche).\n\nSe combinan sin más: <b>gaur goizean</b> (esta mañana), <b>bihar arratsaldean</b> (mañana por la tarde).\n\nY para la frecuencia: <b>beti</b> (siempre), <b>askotan</b> (a menudo), <b>batzuetan</b> (a veces), <b>gutxitan</b> (pocas veces), <b>inoiz ez</b> (nunca).\n\nLo habitual es que la expresión de tiempo vaya <b>al principio de la frase</b>: <i>Gaur goizean etxean nago.</i>\n\nY tres palabras más para colocar las cosas en el tiempo:\n\n<b>gero</b> — luego, después\n<b>berandu</b> — tarde\n<b>egutegia</b> — el calendario, que da nombre a esta unidad\n\n<i>Gero</i> ya la usabas sin saberlo: <b>gero arte</b>, «hasta luego», de la primera unidad.\n\nY la pregunta que abre cualquier conversación con prisa:\n\n<b>zer ordu da?</b> — ¿Qué hora es?",
+      "cuerpo": "Los ratos del día llevan la misma <b>-n</b>:\n\n<b>goizean</b> — por la mañana\n<b>eguerdian</b> — a mediodía\n<b>arratsaldean</b> — por la tarde\n<b>iluntzean</b> — al anochecer\n<b>gauean</b> — por la noche\n\nLos días sueltos, en cambio, no llevan nada: <b>gaur</b> (hoy), <b>bihar</b> (mañana), <b>atzo</b> (ayer), <b>etzi</b> (pasado mañana), <b>bart</b> (anoche).\n\nSe combinan sin más: <b>gaur goizean</b> (esta mañana), <b>bihar arratsaldean</b> (mañana por la tarde).\n\nY para la frecuencia: <b>beti</b> (siempre), <b>askotan</b> (a menudo), <b>batzuetan</b> (a veces), <b>gutxitan</b> (pocas veces), <b>inoiz ez</b> (nunca). Y para contar las veces, <b>behin</b>, una vez: <i>astean behin</i>, una vez a la semana.\n\nLo habitual es que la expresión de tiempo vaya <b>al principio de la frase</b>: <i>Gaur goizean etxean nago.</i>\n\nY tres palabras más para colocar las cosas en el tiempo:\n\n<b>gero</b> — luego, después\n<b>berandu</b> — tarde\n<b>egutegia</b> — el calendario, que da nombre a esta unidad\n\n<i>Gero</i> ya la usabas sin saberlo: <b>gero arte</b>, «hasta luego», de la primera unidad.\n\nY la pregunta que abre cualquier conversación con prisa:\n\n<b>zer ordu da?</b> — ¿Qué hora es?",
       "ejemplos": [
         {
           "eu": "gaur goizean etxean nago",
@@ -225,6 +225,18 @@
           "eu": "abenduan",
           "es": "en diciembre",
           "audio": "unidades/u6/abenduan.mp3"
+        }
+      ],
+      "subnivel": "6.3"
+    },
+    {
+      "titulo": "«El cinco de mayo»: maiatzaren bosta",
+      "cuerpo": "Para decir una fecha, el mes lleva el <b>-ren</b> de «de quién» y el número va detrás, con su artículo:\n\n<b>maiatzaren bosta</b> — el cinco de mayo\n<b>urtarrilaren hogeia</b> — el veinte de enero\n\nEl orden es el de <i>aitaren anaia</i>: primero el mes, que hace de dueño, y después el día. Con cifras se escribe <b>maiatzaren 5a</b>, y esa <i>a</i> pegada al número es el artículo.\n\n<b>Gaur maiatzaren bosta da.</b> — Hoy es cinco de mayo.\n\nCuando algo <b>pasa</b> ese día, el número coge el «en» de siempre: <b>-an</b> tras vocal, <b>-ean</b> tras consonante.\n\n<b>maiatzaren bost<u>ean</u></b> — el cinco de mayo, cuando pasa algo\n<b>urtarrilaren hogei<u>an</u></b> — el veinte de enero, cuando pasa algo\n\n<b>Nire urtebetetzea maiatzaren bostean da.</b> — Mi cumpleaños es el cinco de mayo.\n\nEs la diferencia que ya viste con los días de la semana: <i>ostirala</i> nombra el día, <i>ostiralean</i> dice que algo pasa ese día.",
+      "ejemplos": [
+        {
+          "eu": "nire urtebetetzea maiatzean da",
+          "es": "Mi cumpleaños es en mayo.",
+          "audio": "unidades/u6/nire-urtebetetzea-maiatzean-da.mp3"
         }
       ],
       "subnivel": "6.3"
@@ -3935,6 +3947,75 @@
             "maiatzean"
           ],
           "pista": "«Maiatz» acaba en consonante."
+        }
+      ],
+      "subnivel": "6.3"
+    },
+    {
+      "id": "u6-g58",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El cinco de mayo. → Maiatzaren ____.",
+          "opciones": [
+            "bost",
+            "bosta",
+            "bostak",
+            "bosgarrena"
+          ],
+          "correcta": 1,
+          "explicacion": "El número, con su artículo: bosta. Y no es «el quinto»: las fechas van con el número de contar.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Mi cumpleaños es el cinco de mayo. → Nire urtebetetzea maiatzaren ____ da.",
+          "opciones": [
+            "bosta",
+            "bostan",
+            "bostean",
+            "bost"
+          ],
+          "correcta": 2,
+          "explicacion": "Algo pasa ese día: lleva el «en», y tras consonante es -ean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El veinte de enero pasa algo. → Urtarrilaren ____.",
+          "opciones": [
+            "hogeiean",
+            "hogeia",
+            "hogei",
+            "hogeian"
+          ],
+          "correcta": 3,
+          "explicacion": "«Hogei» acaba en vocal, así que basta con -an."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas es «el cinco de mayo», bien ordenado?",
+          "opciones": [
+            "bosta maiatzaren",
+            "maiatza bosta",
+            "maiatzaren bosta",
+            "bost maiatzaren"
+          ],
+          "correcta": 2,
+          "explicacion": "Primero el mes, con -ren, y después el día: como «aitaren anaia»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "el cinco de mayo",
+          "respuestas": [
+            "maiatzaren bosta",
+            "maiatzaren 5a"
+          ],
+          "pista": "El mes delante, con -ren; el número detrás, con su artículo."
         }
       ],
       "subnivel": "6.3"
