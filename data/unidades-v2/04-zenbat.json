@@ -187,7 +187,7 @@
         {
           "eu": "nik hiru katu ditut",
           "es": "Tengo tres gatos.",
-          "audio": "unidades/u5/nik-hiru-katu-ditut.mp3"
+          "audio": "unidades/u5/nik-hiru-katu-ditut-2.mp3"
         }
       ],
       "subnivel": "4.4"
@@ -6391,11 +6391,11 @@
     },
     {
       "eu": "hark ditu",
-      "audio": "unidades/u4/hark-ditu.mp3"
+      "audio": "unidades/u4/hark-ditu-2.mp3"
     },
     {
       "eu": "guk ditugu",
-      "audio": "unidades/u4/guk-ditugu.mp3"
+      "audio": "unidades/u4/guk-ditugu-2.mp3"
     },
     {
       "eu": "zuek dituzue",
