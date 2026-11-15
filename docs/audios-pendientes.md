@@ -1,6 +1,6 @@
 # Audios pendientes — para Miguel
 
-## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v141): 123 frases sin audio
+## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v141): 121 frases sin audio
 
 Ric y Claude repasaron la gramática del curso contra los «Errores típicos» de la
 *Gramática didáctica* de Zubiri y salieron veinticinco fichas nuevas. Los ejemplos van
@@ -11,7 +11,7 @@ líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
 
 ```
 cd scripts/generar-audio
-node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 123
+node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 121
 node generar-cuerpos.mjs           # genera, sube y las enlaza en audiosExtra
 ```
 
@@ -35,12 +35,12 @@ Lo que va a generar:
 | 4.4 | lagunak txakur bat du | El amigo tiene un perro |
 | 4.4 | irakasleak bi katu ditu | La profesora tiene dos gatos |
 | 4.4 | Ane ikaslea da | Ane es estudiante |
-| 4.4 | lagunak irakasleak dira | Los amigos son profesores |
-| 4.4 | lagunek txakur bat dute | Los amigos tienen un perro |
-| 4.4 | lagunek | los amigos, cuando tienen o hacen algo |
-| 4.4 | nork? | ¿quién?, cuando ese quién hace algo a algo |
-| 4.4 | Nor da irakaslea? | ¿Quién es el profesor? |
-| 4.4 | Nork du txakurra? | ¿Quién tiene el perro? |
+| 4.7 | lagunak irakasleak dira | Los amigos son profesores |
+| 4.7 | lagunek txakur bat dute | Los amigos tienen un perro |
+| 4.7 | lagunek | los amigos, cuando tienen o hacen algo |
+| 4.7 | nork? | ¿quién?, cuando ese quién hace algo a algo |
+| 4.7 | Nor da irakaslea? | ¿Quién es el profesor? |
+| 4.7 | Nork du txakurra? | ¿Quién tiene el perro? |
 | 4.6 | seme-alabak | los hijos, hijos e hijas |
 | 4.6 | aitona-amonak | los abuelos, abuelo y abuela |
 | 4.6 | osaba-izebak | los tíos, tío y tía |
@@ -66,11 +66,9 @@ Lo que va a generar:
 | 5.3 | Handia da. | Es grande |
 | 5.3 | Nolakoak dira? | ¿Cómo son? |
 | 5.3 | Txikiak dira. | Son pequeñas |
-| 5.4 | Hau mahaia da. | Esto es una mesa |
 | 5.4 | Etxe polita da. | Es una casa bonita |
 | 5.4 | Txakur handia da. | Es un perro grande |
 | 5.4 | Katu bat daukat. | Tengo un gato |
-| 5.4 | Katu polita da. | Es un gato bonito |
 | 5.2 | gainean | encima |
 | 5.2 | azpian | debajo |
 | 5.2 | ondoan | al lado |
