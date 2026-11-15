@@ -105,6 +105,18 @@
       "subnivel": "6.1"
     },
     {
+      "titulo": "«A las tres y cuarto», «a las cuatro menos cuarto»",
+      "cuerpo": "Ya sabes decir a qué hora en punto y a qué hora y media: <i>hiruretan</i>, <i>hiru eta erdietan</i>. Faltan los cuartos, que son los otros dos que más se usan.\n\nCon «y cuarto», la terminación se cuelga de <i>laurden</i>, y la hora conserva su <b>-ak</b>:\n\n<b>hirurak eta laurden</b> — las tres y cuarto\n<b>hirurak eta laurden<u>etan</u></b> — a las tres y cuarto\n\nCon «menos cuarto», se cuelga de <i>gutxi</i>:\n\n<b>laurak laurden gutxi</b> — las cuatro menos cuarto\n<b>laurak laurden gutxi<u>tan</u></b> — a las cuatro menos cuarto\n\nLa idea es la misma en todos los casos: la terminación del «a las» va una sola vez, y siempre en la <b>última palabra</b>.\n\n<b>hirur<u>etan</u></b> — a las tres\n<b>hiru eta erdi<u>etan</u></b> — a las tres y media\n<b>hirurak eta laurden<u>etan</u></b> — a las tres y cuarto\n<b>laurak laurden gutxi<u>tan</u></b> — a las cuatro menos cuarto",
+      "ejemplos": [
+        {
+          "eu": "hiru eta erdietan",
+          "es": "A las tres y media.",
+          "audio": "unidades/u6/hiru-eta-erdietan.mp3"
+        }
+      ],
+      "subnivel": "6.1"
+    },
+    {
       "titulo": "Los días de la semana",
       "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana), y las piezas se leen solas:\n\naste (semana) + lehen (primero) → <i>astelehena</i>, «el primero de la semana»\naste (semana) + arte (entre) → <i>asteartea</i>, «el de en medio»\naste (semana) + azken (último) → <i>asteazkena</i>, «el último de la semana»\n\nY ahí hay algo que no cuadra: el «último de la semana» es el miércoles.\n\nLa explicación más extendida es que esos tres nombres son más viejos que la semana de siete días. Antes el tiempo se contaba en bloques más cortos, de tres días: uno para empezar, uno en medio y uno para cerrar. Cuando se adoptó la semana de siete, esos tres días conservaron el nombre que ya tenían, y por eso el «último» se quedó a mitad de camino.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nEs la regla de la unidad 5. Los que acaban en consonante cogen <b>-ean</b> —<i>astelehen</i> → <i>astelehen<u>ean</u></i>, <i>larunbat</i> → <i>larunbat<u>ean</u></i>— y los dos que acaban en vocal, solo <b>-an</b>: <i>astearte</i> → <i>asteartean</i>, <i>igande</i> → <i>igandean</i>. «Larunbatan» es el mismo tropiezo que «lanan».\n\nCompara las dos formas y se ve para qué sirve:\n\n<i>Gaur ostirala da.</i> — Hoy es viernes.\n<i>Ostiralean Bilbon nago.</i> — El viernes estoy en Bilbao.\n\nSin la <b>-n</b> nombras el día; con la <b>-n</b> dices que algo pasa ese día.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».",
       "ejemplos": [
@@ -324,6 +336,18 @@
           "eu": "gaur eguraldi ona dago",
           "es": "Hoy hace buen tiempo.",
           "audio": "unidades/u6/gaur-eguraldi-ona-dago.mp3"
+        }
+      ],
+      "subnivel": "6.4"
+    },
+    {
+      "titulo": "«Mucho frío» es «frío grande»: hotz handia",
+      "cuerpo": "Ya sabes decir que hace frío: <i>hotz egiten du</i>. Para decir que hace <b>mucho</b>, el euskera no cuenta el frío: lo mide. Y lo que se mide es <b>grande</b>.\n\n<b>hotz handia egiten du</b> — Hace mucho frío.\n<b>bero handia egiten du</b> — Hace mucho calor.\n\nLiteralmente, «hace frío grande». <i>Handia</i> es el adjetivo de la unidad 5, y va donde van todos: detrás y con el artículo.\n\nCon <i>egon</i>, igual:\n\n<b>bero handia dago hemen</b> — Hace mucho calor aquí.\n\nMás adelante aprenderás la palabra para «mucho», y te tentará ponerla aquí. No es su sitio: con el frío y el calor, lo que pide el euskera es un adjetivo, no un «mucho».",
+      "ejemplos": [
+        {
+          "eu": "neguan hotz egiten du",
+          "es": "En invierno hace frío.",
+          "audio": "unidades/u6/neguan-hotz-egiten-du.mp3"
         }
       ],
       "subnivel": "6.4"
@@ -3019,6 +3043,75 @@
       ]
     },
     {
+      "id": "u6-g57",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Hace mucho frío. → Hotz ____ egiten du.",
+          "opciones": [
+            "asko",
+            "handia",
+            "oso",
+            "handi"
+          ],
+          "correcta": 1,
+          "explicacion": "El frío se mide con un adjetivo: hotz handia, «frío grande». «Hotz asko» es calcar el «mucho»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Hace mucho calor. → ____ egiten du.",
+          "opciones": [
+            "Handia bero",
+            "Bero handi",
+            "Bero handia",
+            "Beroa handia"
+          ],
+          "correcta": 2,
+          "explicacion": "El adjetivo detrás y con el artículo una sola vez, al final: bero handia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bero handia dago hemen» significa…",
+          "opciones": [
+            "Aquí hace mucho calor",
+            "Aquí hay algo grande y caliente",
+            "El calor es de aquí",
+            "Aquí no hace calor"
+          ],
+          "correcta": 0,
+          "explicacion": "Con «egon» funciona igual que con «egin»: bero handia."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «hotz handia egiten du», ¿qué palabra hace de «mucho»?",
+          "opciones": [
+            "hotz",
+            "egiten",
+            "du",
+            "handia"
+          ],
+          "correcta": 3,
+          "explicacion": "Handia, «grande». El euskera no cuenta el frío: lo mide."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Hace mucho frío.",
+          "respuestas": [
+            "hotz handia egiten du",
+            "oso hotz egiten du",
+            "hotz handia dago"
+          ],
+          "pista": "Frío… grande."
+        }
+      ],
+      "subnivel": "6.4"
+    },
+    {
       "id": "u6-g19",
       "subnivel": "6.5",
       "variantes": [
@@ -3403,6 +3496,75 @@
             "seiak laurden gutxi"
           ],
           "pista": "La hora va en plural."
+        }
+      ],
+      "subnivel": "6.1"
+    },
+    {
+      "id": "u6-g56",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "A las tres y cuarto. → Hirurak eta ____.",
+          "opciones": [
+            "laurden",
+            "laurdenak",
+            "laurdenetan",
+            "laurdenean"
+          ],
+          "correcta": 2,
+          "explicacion": "El «a las» se cuelga de la última palabra: laurden + etan."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "A las cuatro menos cuarto. → Laurak laurden ____.",
+          "opciones": [
+            "gutxi",
+            "gutxitan",
+            "gutxietan",
+            "gutxian"
+          ],
+          "correcta": 1,
+          "explicacion": "La última palabra es «gutxi», y ahí va la terminación: gutxitan.",
+          "teclea": false
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Cuando la hora lleva minutos, ¿dónde va la terminación de «a las…»?",
+          "opciones": [
+            "En la hora",
+            "En las dos",
+            "En la última palabra",
+            "En ninguna"
+          ],
+          "correcta": 2,
+          "explicacion": "Una sola vez y al final: hirurak eta laurdenetan, hiru eta erdietan."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zortziak eta laurdenetan» significa…",
+          "opciones": [
+            "son las ocho y cuarto",
+            "a las ocho y cuarto",
+            "a las ocho menos cuarto",
+            "a las ocho y media"
+          ],
+          "correcta": 1,
+          "explicacion": "Con -etan ya no dices qué hora es, sino a qué hora pasa algo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "a las tres y cuarto",
+          "respuestas": [
+            "hirurak eta laurdenetan",
+            "hiru eta laurdenetan"
+          ],
+          "pista": "La terminación va en «laurden»."
         }
       ],
       "subnivel": "6.1"

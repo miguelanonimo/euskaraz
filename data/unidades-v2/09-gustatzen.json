@@ -283,6 +283,12 @@
       "subnivel": "9.2"
     },
     {
+      "titulo": "«He visto a Ane»: esa «a» no es -ri",
+      "cuerpo": "Acabas de aprender que «a alguien» se dice con <b>-ri</b>: <i>Aneri esan dio</i>, se lo ha dicho a Ane. Y aquí el castellano tiende una trampa, porque pone «a» delante de las personas en dos sitios distintos:\n\nLe he dado el libro <b>a Ane</b>. — Ane recibe algo.\nHe visto <b>a Ane</b>. — A Ane no le llega nada: es a quien ves.\n\nSolo la primera es un «a quién». En la segunda, Ane hace el mismo papel que «el libro» en «he visto el libro», y el castellano le pone la «a» solo por ser persona. El euskera no:\n\n<b>Ane ikusi dut</b> — He visto a Ane.\n<b>liburua ikusi dut</b> — He visto el libro.\n\nLas dos van igual: sin <b>-ri</b> y con el auxiliar de siempre, <i>dut</i>.\n\nPasa lo mismo con <i>ezagutu</i>, conocer:\n\n<b>Miren ezagutzen dut</b> — Conozco a Miren.\n\nLa prueba para no fallar: cambia la persona por una cosa. Si la «a» se cae —«he visto <i>el libro</i>»—, no era un «a quién», y en euskera va sin <b>-ri</b>.",
+      "ejemplos": [],
+      "subnivel": "9.2"
+    },
+    {
       "titulo": "«Esan»: decir, y casi siempre a alguien",
       "cuerpo": "De los cinco verbos de la lista hay uno que vas a usar más que los otros cuatro juntos: <b>esan</b>, decir. Merece su propio sitio.\n\n<b>Las formas ya las sabes hacer</b>\nAcaba en <b>-n</b>, así que va igual que <i>jan</i> → <i>jaten</i>:\n\n<b>esan</b> → <b>esaten</b>\n\n<b>amak beti hori esaten du</b> — Mi madre siempre dice eso.\n<b>zer esan duzu?</b> — ¿Qué has dicho?\n\n<b>A quién se lo dices cambia el auxiliar</b>\nSi no dices a quién, va con el auxiliar de siempre. Si lo dices, entra el de la ficha anterior, el que junta quién, qué y a quién:\n\n<b>esan du</b> — Lo ha dicho.\n<b>Aneri esan dio</b> — Se lo ha dicho a Ane.\n\nPor eso <i>esan</i> es el verbo con el que mejor se entiende el <b>dio</b>: casi nunca se dice algo al aire, casi siempre se le dice a alguien.\n\n<b>Y la que más vas a necesitar</b>\n<b>esan nahi du</b> — significa, quiere decir\n\nEs literalmente lo mismo que en castellano: «quiere decir» es <i>esan nahi</i>, con el <i>nahi</i> de <i>nahi dut</i>. Y con ella se pregunta todo lo que no entiendes:\n\n<b>zer esan nahi du?</b> — ¿Qué significa? ¿Qué quiere decir?\n\nGuárdatela bien, porque es la pregunta que abre cualquier palabra que no conozcas.",
       "ejemplos": [
@@ -4213,6 +4219,76 @@
             "zer esan nahi du"
           ],
           "pista": "«Querer decir» es «esan nahi», igual que en castellano."
+        }
+      ],
+      "subnivel": "9.2"
+    },
+    {
+      "id": "u9-g53",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "He visto a Ane. → ____ ikusi dut.",
+          "opciones": [
+            "Aneri",
+            "Ane",
+            "Anek",
+            "Aneren"
+          ],
+          "correcta": 1,
+          "explicacion": "Ane es a quien ves, no a quien le llega algo: va sin -ri, como «liburua ikusi dut».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Le ha dado un regalo a Ane. → ____ opari bat eman dio.",
+          "opciones": [
+            "Ane",
+            "Anek",
+            "Aneren",
+            "Aneri"
+          ],
+          "correcta": 3,
+          "explicacion": "Aquí sí: a Ane le llega el regalo. -ri, y el auxiliar «dio».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Conozco a Mikel. → ____ ezagutzen dut.",
+          "opciones": [
+            "Mikel",
+            "Mikeli",
+            "Mikelek",
+            "Mikelen"
+          ],
+          "correcta": 0,
+          "explicacion": "A Mikel no le das nada: es a quien conoces. Sin -ri."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En cuál de estas pone el euskera un -ri?",
+          "opciones": [
+            "He visto a Ane",
+            "Conozco a Ane",
+            "Le he dado un regalo a Ane",
+            "He visto la casa de Ane"
+          ],
+          "correcta": 2,
+          "explicacion": "Solo cuando a alguien le llega algo. En las otras, la «a» del castellano está por ser persona."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "He visto a Ane.",
+          "respuestas": [
+            "ane ikusi dut",
+            "nik ane ikusi dut"
+          ],
+          "pista": "Cambia a Ane por «el libro»: la «a» se cae."
         }
       ],
       "subnivel": "9.2"
