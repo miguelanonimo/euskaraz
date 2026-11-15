@@ -127,6 +127,18 @@
       "subnivel": "7.1"
     },
     {
+      "titulo": "«Este» y «ese» también cogen la -k: honek, horrek",
+      "cuerpo": "La <b>-k</b> de quien hace algo —el caso NORK— la has puesto en los pronombres (<i>nik</i>), en los nombres de persona (<i>Anek</i>) y en los nombres corrientes (<i>lagunak</i>). Faltan las palabras para señalar, y estas cambian un poco más:\n\n<b>hau</b> → <b>honek</b> — este, cuando hace algo\n<b>hori</b> → <b>horrek</b> — ese\n<b>hura</b> → <b>hark</b> — aquel\n\nLa tercera ya la conocías: es el <i>hark</i> de «él» o «ella», de la cuarta unidad. Las otras dos no salen pegando una <b>-k</b> sin más: cambia la palabra por dentro, y hay que aprendérselas.\n\nVan detrás del nombre, como siempre, y el nombre sigue sin artículo:\n\n<b>lagun hau irakaslea da</b> — Este amigo es profesor.\n<b>lagun honek kafea edaten du</b> — Este amigo bebe café.\n\n<b>ikasle hori Bilbokoa da</b> — Ese estudiante es de Bilbao.\n<b>ikasle horrek euskara ikasten du</b> — Ese estudiante aprende euskera.\n\nEn cada pareja, la primera frase no lleva objeto y la segunda sí. La pregunta es la de siempre: ¿hay algo a lo que se le hace la acción?\n\nEn plural no hay nada nuevo que aprender: <b>hauek</b>, <b>horiek</b> y <b>haiek</b> valen para las dos cosas.",
+      "ejemplos": [
+        {
+          "eu": "lagun hau irakaslea da",
+          "es": "Este amigo es profesor.",
+          "audio": "unidades/u3/lagun-hau-irakaslea-da.mp3"
+        }
+      ],
+      "subnivel": "7.1"
+    },
+    {
       "titulo": "La negación: «ez» y el auxiliar dan un salto",
       "cuerpo": "Para negar se pone <b>ez</b> delante… pero pasa algo más: <b>el auxiliar se coloca justo detrás del ez</b>, y el resto de la frase se queda después.\n\n<b>nik liburua irakurtzen dut</b> — Leo el libro.\n<b>nik ez dut liburua irakurtzen</b> — No leo el libro.\n\nEl <i>dut</i> ha saltado desde el final hasta detrás del <i>ez</i>. Con las formas de una sola pieza es más simple, porque no hay nada que mover:\n\n<b>Ni ikaslea naiz.</b> → <b>Ni ez naiz ikaslea.</b>\n<b>Etxean nago.</b> → <b>Ez nago etxean.</b>\n\nEl salto del auxiliar es de los pocos sitios donde el orden de palabras del euskera es rígido. Merece la pena practicarlo hasta que salga solo.\n\nUn aviso para lo que viene: aquí lo negado es <b>el libro</b>, algo concreto, y por eso <i>liburua</i> se queda igual. Cuando lo que niegas es genérico —«no como pan», sin más— el objeto cambia de forma. Es lo siguiente.",
       "ejemplos": [
@@ -245,8 +257,26 @@
     {
       "subnivel": "7.5",
       "titulo": "Pedir en la barra: los números se comen el artículo",
-      "cuerpo": "Con estas palabras ya puedes pedir, y es pidiendo donde se nota una regla que viste contando: <b>detrás de un número, el nombre va desnudo</b> — sin artículo y en singular.\n\n<b>garagardo bat, mesedez</b> — una cerveza, por favor\n<b>bi garagardo, mesedez</b> — dos cervezas, por favor\n<b>hiru kafe eta ardo bat</b> — tres cafés y un vino\n\nFíjate en lo que no está: la <b>-a</b>. Se dice <i>bi garagardo</i>, nunca «bi garagardoak», aunque pidas diez.\n\nEl orden tiene su truco, y son tres casos:\n\n<b>bat</b> va <b>detrás</b>: <i>garagardo bat</i>, <i>kafe bat</i>.\n<b>bi</b> puede ir a los dos lados: <i>bi garagardo</i> y <i>garagardo bi</i>.\nLos demás van <b>delante</b>: <i>hiru kafe</i>, nunca «kafe hiru».\n\nY el contraste que lo deja claro: <b>garagardoa, mesedez</b> es «la cerveza, por favor» —esa de la que ya estabais hablando—, mientras que <b>garagardo bat, mesedez</b> es «una cerveza». En cuanto entra un número, el artículo se va.",
+      "cuerpo": "Con estas palabras ya puedes pedir, y es pidiendo donde se nota una regla que viste contando: <b>detrás de un número, el nombre va desnudo</b> — sin artículo y en singular.\n\n<b>garagardo bat, mesedez</b> — una cerveza, por favor\n<b>bi garagardo, mesedez</b> — dos cervezas, por favor\n<b>hiru kafe eta ardo bat</b> — tres cafés y un vino\n\nFíjate en lo que no está: la <b>-a</b>. Para pedir se dice <i>bi garagardo</i>, no «bi garagardoak» —que serían <b>las</b> dos cervezas, unas que ya estaban en la mesa—, aunque pidas diez.\n\nEl orden tiene su truco, y son tres casos:\n\n<b>bat</b> va <b>detrás</b>: <i>garagardo bat</i>, <i>kafe bat</i>.\n<b>bi</b> puede ir a los dos lados: <i>bi garagardo</i> y <i>garagardo bi</i>.\nLos demás van <b>delante</b>: <i>hiru kafe</i>, nunca «kafe hiru».\n\nY el contraste que lo deja claro: <b>garagardoa, mesedez</b> es «la cerveza, por favor» —esa de la que ya estabais hablando—, mientras que <b>garagardo bat, mesedez</b> es «una cerveza». En cuanto entra un número, el artículo se va.",
       "ejemplos": []
+    },
+    {
+      "titulo": "«Un kilo de manzanas»: kilo bat sagar, sin «de»",
+      "cuerpo": "En la barra pides por unidades: <i>bi kafe</i>. En la tienda pides por cantidades —un kilo, un litro, una botella—, y ahí el castellano mete un «de» que el euskera no tiene.\n\n<b>kilo bat sagar</b> — un kilo de manzanas\n<b>litro bat esne</b> — un litro de leche\n<b>botila bat ardo</b> — una botella de vino\n\nEl molde es <b>cantidad + cosa</b>, y la cosa va <b>desnuda</b>: sin «de», sin artículo y sin plural. No es «kilo bat sagarrak», aunque en un kilo quepan muchas.\n\nEs la regla de los números otra vez. Igual que dices <i>hiru sagar</i>, tres manzanas, dices <i>hiru kilo sagar</i>, tres kilos de manzanas: cuando cuentas o mides, la cosa va sin artículo.\n\nY el orden no se toca: primero cuánto, después qué. No vale darle la vuelta, «sagar kilo bat».\n\nPara pedirlo, lo de siempre:\n\n<b>kilo bat patata, mesedez</b> — Un kilo de patatas, por favor.\n<b>bi litro esne nahi dut</b> — Quiero dos litros de leche.",
+      "ejemplos": [],
+      "subnivel": "7.5"
+    },
+    {
+      "titulo": "«Otro café»: beste kafe bat",
+      "cuerpo": "Para pedir <b>otro</b> —otro café, otra cerveza— hacen falta dos piezas que abrazan al nombre: <b>beste</b> delante y <b>bat</b> detrás.\n\n<b>beste kafe bat, mesedez</b> — Otro café, por favor.\n<b>beste garagardo bat</b> — otra cerveza\n<b>beste bat</b> — otro, otra, sin decir de qué\n\nEl castellano dice «otro café», no «otro un café», y por eso el <i>bat</i> es lo que se olvida. En euskera va siempre: sin él la frase se queda coja.\n\nEl nombre, en medio, va sin artículo, como siempre que le sigue <i>bat</i>: no «beste kafea bat».\n\nSi son varios, <b>batzuk</b> en lugar de <b>bat</b>: <b>beste batzuk</b>, otros.\n\nY cuando «el otro» es uno concreto, que ya sabemos cuál es, el <i>bat</i> desaparece y vuelve el artículo: <b>bestea</b>, el otro, la otra.\n\nUn aviso: «otra vez» no es <i>beste bat</i>. Tiene su palabra, <b>berriro</b>, que aprenderás al contar lo que pasó.",
+      "ejemplos": [],
+      "subnivel": "7.5"
+    },
+    {
+      "titulo": "«Tengo hambre» se dice con «ser»: gose naiz",
+      "cuerpo": "En un tema de comer y beber faltaba lo primero: decir que tienes hambre. Y aquí el euskera no «tiene»: <b>es</b>.\n\n<b>gose naiz</b> — tengo hambre\n<b>egarri naiz</b> — tengo sed\n\nEl verbo es <i>izan</i>, el de la segunda unidad, y cambia con la persona como siempre:\n\n<b>gose zara?</b> — ¿Tienes hambre?\n<b>egarri gara</b> — Tenemos sed.\n<b>ez naiz gose</b> — No tengo hambre.\n\nFíjate en dos cosas. La palabra va <b>sin artículo</b>: <i>gose</i>, <i>egarri</i>, no «gosea». Y quien tiene hambre va <b>sin -k</b>, porque <i>izan</i> no lleva objeto: <i>ni gose naiz</i>.\n\nY el mismo molde sirve para el frío, el calor y el sueño: <b>hotz naiz</b>, tengo frío; <b>bero naiz</b>, tengo calor; <b>logura naiz</b>, tengo sueño.\n\nEl tropiezo de quien viene del castellano es traducir el «tengo» tal cual: «gose daukat». Se oye, también entre gente que habla euskera desde niña, pero la forma de siempre es con <i>izan</i>.\n\nPara decir que es mucha, <b>oso</b> delante:\n\n<b>oso gose naiz</b> — Tengo mucha hambre.",
+      "ejemplos": [],
+      "subnivel": "7.5"
     },
     {
       "titulo": "Cómo suena esto en Bizkaia",
@@ -938,7 +968,8 @@
             "dute"
           ],
           "correcta": 1,
-          "explicacion": "«Nik ogia jaten dut» = yo como pan. Hay objeto (el pan), así que el auxiliar es «dut»."
+          "explicacion": "«Nik ogia jaten dut» = yo como pan. Hay objeto (el pan), así que el auxiliar es «dut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -951,7 +982,8 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "«Ni etxera joaten naiz» = yo voy a casa. «joan» no lleva objeto: el auxiliar es «naiz»."
+          "explicacion": "«Ni etxera joaten naiz» = yo voy a casa. «joan» no lleva objeto: el auxiliar es «naiz».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -977,7 +1009,8 @@
             "ditugu"
           ],
           "correcta": 1,
-          "explicacion": "«Gu berandu etortzen gara» = nosotros venimos tarde. «etorri» no lleva objeto → «gara»."
+          "explicacion": "«Gu berandu etortzen gara» = nosotros venimos tarde. «etorri» no lleva objeto → «gara».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -990,7 +1023,8 @@
             "ditu"
           ],
           "correcta": 1,
-          "explicacion": "«Haiek euskara ikasten dute» = ellos aprenden euskera. «el euskera» es el objeto → «dute»."
+          "explicacion": "«Haiek euskara ikasten dute» = ellos aprenden euskera. «el euskera» es el objeto → «dute».",
+          "teclea": true
         }
       ],
       "subnivel": "7.1"
@@ -1125,7 +1159,8 @@
             "irakurtzen ez"
           ],
           "correcta": 0,
-          "explicacion": "En negativa el auxiliar salta justo detrás del «ez»: «ez dut … irakurtzen»."
+          "explicacion": "En negativa el auxiliar salta justo detrás del «ez»: «ez dut … irakurtzen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1138,7 +1173,8 @@
             "Ez edaten dut"
           ],
           "correcta": 1,
-          "explicacion": "«Ez dut kaferik edaten»: ez + auxiliar, el verbo al final, y el café con -rik porque es café en general."
+          "explicacion": "«Ez dut kaferik edaten»: ez + auxiliar, el verbo al final, y el café con -rik porque es café en general.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1151,7 +1187,8 @@
             "ez naiz ez"
           ],
           "correcta": 1,
-          "explicacion": "Con las formas de una pieza basta con poner «ez» delante."
+          "explicacion": "Con las formas de una pieza basta con poner «ez» delante.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1164,7 +1201,8 @@
             "Etxean ez"
           ],
           "correcta": 2,
-          "explicacion": "Ubicación → «egon». En negativa: «Ez nago etxean»."
+          "explicacion": "Ubicación → «egon». En negativa: «Ez nago etxean».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1177,7 +1215,8 @@
             "ez jaten"
           ],
           "correcta": 0,
-          "explicacion": "El auxiliar de objeto es «duzu» y va detrás del «ez». La carne, en general, con -rik: «haragirik»."
+          "explicacion": "El auxiliar de objeto es «duzu» y va detrás del «ez». La carne, en general, con -rik: «haragirik».",
+          "teclea": true
         }
       ],
       "subnivel": "7.2"
@@ -1369,7 +1408,8 @@
             "naiz"
           ],
           "correcta": 1,
-          "explicacion": "Objeto plural → «ditut»."
+          "explicacion": "Objeto plural → «ditut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1382,7 +1422,8 @@
             "ditu"
           ],
           "correcta": 1,
-          "explicacion": "«barazkiak» es plural, así que «ditut»."
+          "explicacion": "«barazkiak» es plural, así que «ditut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1395,7 +1436,8 @@
             "dituzte"
           ],
           "correcta": 1,
-          "explicacion": "Nosotros + objeto plural = «ditugu»."
+          "explicacion": "Nosotros + objeto plural = «ditugu».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1408,7 +1450,8 @@
             "naiz"
           ],
           "correcta": 1,
-          "explicacion": "Aquí el objeto es singular: «dut»."
+          "explicacion": "Aquí el objeto es singular: «dut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1421,7 +1464,8 @@
             "ditugu"
           ],
           "correcta": 1,
-          "explicacion": "Ellos + objeto plural = «dituzte»."
+          "explicacion": "Ellos + objeto plural = «dituzte».",
+          "teclea": true
         }
       ],
       "subnivel": "7.1"
@@ -1734,7 +1778,8 @@
             "dabe"
           ],
           "correcta": 1,
-          "explicacion": "Objeto plural en bizkaiera: «dodaz», con esa -z de siempre. Y fíjate en que el euskera sí pone artículo donde el castellano no: manzanas en general son «sagarrak»."
+          "explicacion": "Objeto plural en bizkaiera: «dodaz», con esa -z de siempre. Y fíjate en que el euskera sí pone artículo donde el castellano no: manzanas en general son «sagarrak».",
+          "teclea": true
         }
       ],
       "subnivel": "7.1"
@@ -1856,6 +1901,73 @@
       "subnivel": "7.1"
     },
     {
+      "id": "u7-g41",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Este amigo bebe café. → Lagun ____ kafea edaten du.",
+          "opciones": [
+            "hau",
+            "honek",
+            "hauk",
+            "hauek"
+          ],
+          "correcta": 1,
+          "explicacion": "Bebe algo, así que quien bebe lleva -k. Y «hau» con -k es «honek»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ese estudiante aprende euskera. → Ikasle ____ euskara ikasten du.",
+          "opciones": [
+            "hori",
+            "horik",
+            "horiek",
+            "horrek"
+          ],
+          "correcta": 3,
+          "explicacion": "«Hori» con la -k de quien hace es «horrek». «Horiek» serían varios."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Este amigo es profesor. → Lagun ____ irakaslea da.",
+          "opciones": [
+            "honek",
+            "hau",
+            "hark",
+            "horrek"
+          ],
+          "correcta": 1,
+          "explicacion": "«Ser» no lleva objeto: sin -k."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Honek» es la forma con -k de…",
+          "opciones": [
+            "hori",
+            "hura",
+            "hau",
+            "hauek"
+          ],
+          "correcta": 2,
+          "explicacion": "Hau → honek, hori → horrek, hura → hark."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Este amigo bebe café.",
+          "respuestas": [
+            "lagun honek kafea edaten du"
+          ],
+          "pista": "Bebe algo: «este» lleva su forma con -k."
+        }
+      ],
+      "subnivel": "7.1"
+    },
+    {
       "id": "u8-g12",
       "variantes": [
         {
@@ -1869,7 +1981,8 @@
             "gaua"
           ],
           "correcta": 1,
-          "explicacion": "Por la mañana se toma el desayuno: gosaria."
+          "explicacion": "Por la mañana se toma el desayuno: gosaria.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1895,7 +2008,8 @@
             "jaten"
           ],
           "correcta": 1,
-          "explicacion": "Un libro se lee: irakurtzen."
+          "explicacion": "Un libro se lee: irakurtzen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1921,7 +2035,8 @@
             "dugu"
           ],
           "correcta": 1,
-          "explicacion": "Con «zuk» el auxiliar es «duzu»."
+          "explicacion": "Con «zuk» el auxiliar es «duzu».",
+          "teclea": true
         }
       ],
       "subnivel": "7.5"
@@ -2346,7 +2461,8 @@
             "jaikitzen da"
           ],
           "correcta": 1,
-          "explicacion": "No lleva objeto, así que el auxiliar es «izan»."
+          "explicacion": "No lleva objeto, así que el auxiliar es «izan».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2406,7 +2522,8 @@
             "jaten ari dut"
           ],
           "correcta": 1,
-          "explicacion": "El verbo en -t(z)en, más «ari» y el verbo izan."
+          "explicacion": "El verbo en -t(z)en, más «ari» y el verbo izan.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2720,7 +2837,8 @@
             "jaten dut"
           ],
           "correcta": 0,
-          "explicacion": "desayunar = gosaldu."
+          "explicacion": "desayunar = gosaldu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2809,7 +2927,8 @@
             "tipula"
           ],
           "correcta": 0,
-          "explicacion": "vestirse = jantzi."
+          "explicacion": "vestirse = jantzi.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2898,7 +3017,8 @@
             "arroza"
           ],
           "correcta": 0,
-          "explicacion": "el agua = ura."
+          "explicacion": "el agua = ura.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2987,7 +3107,8 @@
             "hartu"
           ],
           "correcta": 0,
-          "explicacion": "la cena = afaria."
+          "explicacion": "la cena = afaria.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3076,7 +3197,8 @@
             "idatzi"
           ],
           "correcta": 0,
-          "explicacion": "el arroz = arroza."
+          "explicacion": "el arroz = arroza.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3597,6 +3719,73 @@
       ]
     },
     {
+      "id": "u7-g39",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No hay pan. → Ez dago ____.",
+          "opciones": [
+            "ogiarik",
+            "ogi",
+            "ogirik",
+            "ogiak"
+          ],
+          "correcta": 2,
+          "explicacion": "El -rik se pega a la palabra sin artículo: ogi + rik. «Ogiarik» lleva una -a de más."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No como carne. → Ez dut ____ jaten.",
+          "opciones": [
+            "haragirik",
+            "haragiarik",
+            "haragiik",
+            "haragiak"
+          ],
+          "correcta": 0,
+          "explicacion": "Tras vocal, -rik, y sin el artículo: haragi + rik."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ur» acaba en consonante. ¿Cómo queda con el partitivo?",
+          "opciones": [
+            "urrik",
+            "urarik",
+            "urik",
+            "urak"
+          ],
+          "correcta": 2,
+          "explicacion": "Tras consonante es -ik: ur + ik. «Urarik» mete el artículo de «ura», que aquí no va."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No hay café. → Ez dago ____.",
+          "opciones": [
+            "kafearik",
+            "kaferik",
+            "kafeik",
+            "kafeak"
+          ],
+          "correcta": 1,
+          "explicacion": "«Kafe» acaba en vocal: -rik, pegado a la palabra sin artículo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "No hay agua.",
+          "respuestas": [
+            "ez dago urik"
+          ],
+          "pista": "«Ur» acaba en consonante, y el artículo se cae."
+        }
+      ],
+      "subnivel": "7.2"
+    },
+    {
       "id": "u7-g34",
       "subnivel": "7.4",
       "variantes": [
@@ -3611,7 +3800,8 @@
             "jaten ari dut"
           ],
           "correcta": 1,
-          "explicacion": "Verbo en -t(z)en + ari + izan."
+          "explicacion": "Verbo en -t(z)en + ari + izan.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3790,7 +3980,8 @@
             "da"
           ],
           "correcta": 1,
-          "explicacion": "Con «ari» el auxiliar es siempre «izan»: «ogia jaten ari naiz», aunque la frase lleve objeto."
+          "explicacion": "Con «ari» el auxiliar es siempre «izan»: «ogia jaten ari naiz», aunque la frase lleve objeto.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4020,7 +4211,8 @@
             "gazta"
           ],
           "correcta": 0,
-          "explicacion": "gatza (sal) y gazta (queso): las mismas letras, con la t y la z al revés."
+          "explicacion": "gatza (sal) y gazta (queso): las mismas letras, con la t y la z al revés.",
+          "teclea": true
         }
       ],
       "subnivel": "7.5"
@@ -4095,6 +4287,214 @@
           "explicacion": "«bat» detrás y «bi» a los dos lados, sí; pero «hiru» y los demás van siempre delante: «hiru zuku»."
         }
       ]
+    },
+    {
+      "id": "u7-g38",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tengo hambre. → Gose ____.",
+          "opciones": [
+            "daukat",
+            "naiz",
+            "noa",
+            "dira"
+          ],
+          "correcta": 1,
+          "explicacion": "El hambre se «es»: gose naiz. «Gose daukat» es calcar el «tengo» del castellano.",
+          "teclea": false
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tenemos sed. → Egarri ____.",
+          "opciones": [
+            "gara",
+            "daukagu",
+            "goaz",
+            "zarete"
+          ],
+          "correcta": 0,
+          "explicacion": "Con «izan», en la persona que toque: gu… gara.",
+          "teclea": false
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas es «tengo hambre», bien dicha?",
+          "opciones": [
+            "Nik gose naiz",
+            "Gose daukat",
+            "Gosea naiz",
+            "Gose naiz"
+          ],
+          "correcta": 3,
+          "explicacion": "Sin artículo, con «izan» y sin -k: gose naiz."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No tengo hambre. → ____",
+          "opciones": [
+            "Ez gose naiz",
+            "Gose ez naiz",
+            "Ez naiz gose",
+            "Ez naiz gosea"
+          ],
+          "correcta": 2,
+          "explicacion": "El «ez» y el verbo van juntos, como en cualquier negación: ez naiz gose."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tengo sed.",
+          "respuestas": [
+            "egarri naiz",
+            "ni egarri naiz",
+            "egarri nago",
+            "egarriak nago",
+            "egarriz nago"
+          ],
+          "pista": "No se «tiene»: se «es»."
+        }
+      ],
+      "subnivel": "7.5"
+    },
+    {
+      "id": "u7-g40",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Un kilo de manzanas. → ____",
+          "opciones": [
+            "kilo bat sagarrak",
+            "sagar kilo bat",
+            "kilo bat sagar",
+            "kilo sagar bat"
+          ],
+          "correcta": 2,
+          "explicacion": "Primero la cantidad, después la cosa, y la cosa desnuda: ni «de» ni artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Una botella de vino. → Botila bat ____.",
+          "opciones": [
+            "ardoa",
+            "ardo",
+            "ardoak",
+            "ardoko"
+          ],
+          "correcta": 1,
+          "explicacion": "Lo que se mide va sin artículo: botila bat ardo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tres kilos de patatas. → ____",
+          "opciones": [
+            "hiru kilo patatak",
+            "hiru patata kilo",
+            "hiru kiloak patata",
+            "hiru kilo patata"
+          ],
+          "correcta": 3,
+          "explicacion": "El número, la medida y la cosa, en ese orden y sin artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué le sobra a «litro bat esnea»?",
+          "opciones": [
+            "El «bat»",
+            "Nada: está bien",
+            "La -a del final: es «litro bat esne»",
+            "El orden: es «esne litro bat»"
+          ],
+          "correcta": 2,
+          "explicacion": "Detrás de una cantidad, la cosa no lleva artículo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "un litro de leche",
+          "respuestas": [
+            "litro bat esne"
+          ],
+          "pista": "Cantidad + cosa, sin «de» y sin artículo."
+        }
+      ],
+      "subnivel": "7.5"
+    },
+    {
+      "id": "u7-g42",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Otro café, por favor. → ____, mesedez.",
+          "opciones": [
+            "Beste kafea",
+            "Kafe beste bat",
+            "Beste kafe",
+            "Beste kafe bat"
+          ],
+          "correcta": 3,
+          "explicacion": "«Beste» delante, «bat» detrás, y el nombre en medio sin artículo.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «beste garagardo bat», ¿qué palabra es la que se olvida viniendo del castellano?",
+          "opciones": [
+            "beste",
+            "bat",
+            "garagardo",
+            "ninguna"
+          ],
+          "correcta": 1,
+          "explicacion": "En castellano no hay «otro un café», pero en euskera el «bat» va siempre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bestea» significa…",
+          "opciones": [
+            "otro cualquiera",
+            "otra vez",
+            "el otro, uno concreto",
+            "unos cuantos"
+          ],
+          "correcta": 2,
+          "explicacion": "Con el artículo es uno que ya sabemos cuál es. Uno cualquiera sería «beste bat»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Otros, varios y sin concretar. → Beste ____.",
+          "opciones": [
+            "bat",
+            "batzuk",
+            "ak",
+            "bi"
+          ],
+          "correcta": 1,
+          "explicacion": "El plural de «bat» es «batzuk»: beste batzuk."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Otro café, por favor.",
+          "respuestas": [
+            "beste kafe bat mesedez"
+          ],
+          "pista": "«Beste» delante y «bat» detrás."
+        }
+      ],
+      "subnivel": "7.5"
     }
   ],
   "audiosExtra": [

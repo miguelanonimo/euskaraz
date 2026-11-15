@@ -34,7 +34,7 @@
   "gramatica": [
     {
       "titulo": "Preguntas de sí o no: la partícula «al»",
-      "cuerpo": "Hasta ahora has preguntado con <i>nor, zer, non, noiz…</i>. Para las preguntas que se responden con <b>bai</b> o <b>ez</b> hay una palabrita que se cuela justo antes del verbo: <b>al</b>.\n\n<b>Euskalduna zara</b> — Hablas euskera.\n<b>Euskalduna <u>al</u> zara?</b> — ¿Hablas euskera?\n\n<b>Kafea nahi <u>al</u> duzu?</b> — ¿Quieres café?\n<b>Etxean <u>al</u> zaude?</b> — ¿Estás en casa?\n<b>Euskara ikasten <u>al</u> duzu?</b> — ¿Estudias euskera? (con <i>euskaraz</i> sería «¿estudias <b>en</b> euskera?»)\n\nNo significa nada: solo avisa de que viene una pregunta. Se puede omitir y la frase sigue entendiéndose por la entonación, igual que en castellano, pero con <b>al</b> queda mucho más natural.\n\nY las respuestas cortas repiten el verbo: <b>Bai, naiz.</b> / <b>Ez, ez naiz.</b>",
+      "cuerpo": "Hasta ahora has preguntado con <i>nor, zer, non, noiz…</i>. Para las preguntas que se responden con <b>bai</b> o <b>ez</b> hay una palabrita que se cuela justo antes del verbo: <b>al</b>.\n\n<b>Euskalduna zara</b> — Hablas euskera.\n<b>Euskalduna <u>al</u> zara?</b> — ¿Hablas euskera?\n\n<b>Kafea nahi <u>al</u> duzu?</b> — ¿Quieres café?\n<b>Etxean <u>al</u> zaude?</b> — ¿Estás en casa?\n<b>Euskara ikasten <u>al</u> duzu?</b> — ¿Estudias euskera? (con <i>euskaraz</i> sería «¿estudias <b>en</b> euskera?»)\n\nNo significa nada: solo avisa de que viene una pregunta. Se puede omitir y la frase sigue entendiéndose por la entonación, igual que en castellano, pero con <b>al</b> queda mucho más natural.\n\nY las respuestas cortas repiten el verbo. En la afirmativa, el verbo suelto necesita un <b>ba-</b> delante que lo sostenga: <b>Bai, banaiz.</b> / <b>Ez, ez naiz.</b>",
       "ejemplos": [
         {
           "eu": "Euskalduna al zara?",
@@ -50,6 +50,18 @@
           "eu": "bai, nahi dut",
           "es": "Sí, quiero.",
           "audio": "unidades/u12/bai-nahi-dut.mp3"
+        }
+      ],
+      "subnivel": "12.1"
+    },
+    {
+      "titulo": "«Badakit», «badago»: el «ba-» que sostiene al verbo",
+      "cuerpo": "Al final de la ficha anterior ha salido un <b>ba-</b> pegado al verbo: <i>Bai, banaiz</i>. No es un adorno, y lo vas a oír a todas horas.\n\nLos verbos que se conjugan solos —<i>naiz, nago, dut, daukat, noa, nator</i>— no aguantan estar <b>solos al principio</b> de una frase afirmativa. Necesitan algo delante. Cuando no hay nada, se les pone <b>ba-</b>:\n\n<b>badakit</b> — lo sé, ya lo sé\n<b>banoa</b> — me voy\n<b>badator</b> — ya viene\n<b>badago</b> — hay, sí que hay\n\nLa primera es la pareja que te faltaba. <i>Ez dakit</i>, no sé, lo tienes desde la tercera unidad, y su contrario no es «dakit» a secas, sino <b>badakit</b>.\n\nSirve igual para preguntar y para contestar:\n\n<b>Badago ogirik?</b> — ¿Hay pan?\n<b>Bai, badago.</b> — Sí, hay.\n<b>Ez, ez dago.</b> — No, no hay.\n\nFíjate en la negativa: con <i>ez</i> delante el verbo ya tiene dónde apoyarse, así que el <i>ba-</i> desaparece. O uno o el otro.\n\nY cuando delante hay algo que lleva el peso de la frase, tampoco hace falta: <i>etxean nago</i>, <i>Bilbora noa</i>. El <b>ba-</b> es para cuando lo que afirmas es el verbo mismo.\n\nCon la partícula <i>al</i> de las preguntas se escribe separado: <b>Ba al dago ogirik?</b>",
+      "ejemplos": [
+        {
+          "eu": "ez dakit",
+          "es": "No sé. — Su contrario: badakit.",
+          "audio": "unidades/u3/ez-dakit.mp3"
         }
       ],
       "subnivel": "12.1"
@@ -78,7 +90,7 @@
     },
     {
       "titulo": "De las preguntas salen los indefinidos",
-      "cuerpo": "En la tercera unidad viste la primera de las tres maneras de decir algo a medias: pegarle <b>edo-</b> delante a una pregunta.\n\n<i>nor</i> (quién) → <b>edonor</b> — cualquiera\n\nAquí llegan las otras dos, y salen de las mismas preguntas.\n\n<b>La primera: «-bait» al final, para decir «algún»</b>\n\n<i>nor</i> (quién) → <b>norbait</b> — alguien\n<i>zer</i> (qué) → <b>zerbait</b> — algo\n<i>non</i> (dónde) → <b>nonbait</b> — en algún sitio\n\n<b>norbait dago etxean</b> — Hay alguien en casa.\n<b>zerbait esan du</b> — Ha dicho algo.\n\n<b>La segunda: «nadie» y «nada»</b>\n\nEstas no se forman pegando nada: son palabras propias, y hay que aprendérselas aparte.\n\n<b>inor</b> — nadie, para <b>personas</b>\n<b>ezer</b> — nada, para <b>cosas</b>\n\nLa diferencia entre las dos es de qué estás hablando, y confundirlas es el tropiezo más corriente al empezar: <i>inor</i> es gente, <i>ezer</i> son cosas.\n\n<b>Y lo importante: piden un «ez» en la frase</b>\n\nEn castellano dices «<b>no</b> hay <b>nadie</b>», con dos negaciones. El euskera hace lo mismo:\n\n<b>ez dago inor</b> — No hay nadie.\n<b>ez dut ezer esan</b> — No he dicho nada.\n\nFíjate en el orden: el <b>ez</b> va delante del verbo, y <i>inor</i> o <i>ezer</i> van detrás. Por eso en el vocabulario los verás escritos <b>inor ez</b> — nadie y <b>ezer ez</b> — nada, con el <i>ez</i> pegado, para que no se te olvide que vienen acompañados.\n\nY ya tenías dos de la familia sin saberlo: <i>ezer ez</i> desde la séptima unidad e <i>inoiz ez</i> (nunca) desde la tercera.\n\n<b>En preguntas cambian de sentido</b>\n\nCon el <b>al</b> que acabas de ver, <i>inor</i> y <i>ezer</i> dejan de ser «nadie» y «nada» y pasan a ser «alguien» y «algo»:\n\n<b>inor al dago etxean?</b> — ¿Hay alguien en casa?\n\nEs la misma palabra: lo que cambia es que la frase ya no afirma nada.",
+      "cuerpo": "En la tercera unidad viste la primera de las tres maneras de decir algo a medias: pegarle <b>edo-</b> delante a una pregunta.\n\n<i>nor</i> (quién) → <b>edonor</b> — cualquiera\n\nAquí llegan las otras dos, y salen de las mismas preguntas.\n\n<b>La primera: «-bait» al final, para decir «algún»</b>\n\n<i>nor</i> (quién) → <b>norbait</b> — alguien\n<i>zer</i> (qué) → <b>zerbait</b> — algo\n<i>non</i> (dónde) → <b>nonbait</b> — en algún sitio\n\n<b>norbait dago etxean</b> — Hay alguien en casa.\n<b>zerbait esan du</b> — Ha dicho algo.\n\n<b>La segunda: «nadie» y «nada»</b>\n\nEstas no se forman pegando nada: son palabras propias, y hay que aprendérselas aparte.\n\n<b>inor</b> — nadie, para <b>personas</b>\n<b>ezer</b> — nada, para <b>cosas</b>\n\nLa diferencia entre las dos es de qué estás hablando, y confundirlas es el tropiezo más corriente al empezar: <i>inor</i> es gente, <i>ezer</i> son cosas.\n\n<b>Y lo importante: piden un «ez» en la frase</b>\n\nEn castellano dices «<b>no</b> hay <b>nadie</b>». El euskera también pone su <b>ez</b>, pero uno solo:\n\n<b>ez dago inor</b> — No hay nadie.\n<b>ez dut ezer esan</b> — No he dicho nada.\n\nFíjate en el orden: el <b>ez</b> va delante del verbo, y <i>inor</i> o <i>ezer</i> van detrás. Por eso en el vocabulario los verás escritos <b>inor ez</b> — nadie y <b>ezer ez</b> — nada, con el <i>ez</i> pegado, para que no se te olvide que vienen acompañados.\n\nEse <i>ez</i> pegado es para cuando contestas con una sola palabra: <i>Zer nahi duzu? — Ezer ez.</i> Dentro de una frase ya está el <i>ez</i> del verbo, y no se repite: en «ez dut ezer ez esan» sobra el segundo.\n\nY ya tenías dos de la familia sin saberlo: <i>ezer ez</i> desde la séptima unidad e <i>inoiz ez</i> (nunca) desde la tercera.\n\n<b>En preguntas cambian de sentido</b>\n\nCon el <b>al</b> que acabas de ver, <i>inor</i> y <i>ezer</i> dejan de ser «nadie» y «nada» y pasan a ser «alguien» y «algo»:\n\n<b>inor al dago etxean?</b> — ¿Hay alguien en casa?\n\nEs la misma palabra: lo que cambia es que la frase ya no afirma nada.",
       "ejemplos": [
         {
           "eu": "norbait dago etxean",
@@ -127,7 +139,7 @@
     },
     {
       "titulo": "Todo el A1 en un cuadro",
-      "cuerpo": "Los sufijos que has visto, sobre <i>etxe</i> (casa):\n\n<b>etxea</b> — la casa\n<b>etxeak</b> — las casas\n<b>etxean</b> — en la casa (non?)\n<b>etxera</b> — a la casa (nora?)\n<b>etxetik</b> — desde la casa (nondik?)\n<b>etxeko</b> — de la casa (nongoa?)\n<b>etxeetan / etxeetara / etxeetatik</b> — los mismos, en plural\n<b>etxerik</b> — casa (en negativas)\n\nY sobre personas: <b>-k</b> para el sujeto de un verbo con objeto (<i>nik</i>), <b>-ri</b> para «a quien» (<i>niri</i>), <b>-ren</b> para «de quien» (<i>nire</i>), <b>-rekin</b> para «con quien» (<i>nirekin</i>).\n\nLos verbos:\n<b>izan</b> — naiz, zara, da… / nintzen, zinen, zen…\n<b>ukan</b> — dut, duzu, du… / nuen, zenuen, zuen…\n<b>egon</b> — nago, zaude, dago… / nengoen, zeunden, zegoen…\n<b>joan</b> — noa, zoaz, doa… <b>etorri</b> — nator, zatoz, dator…\n<b>zait</b> y su serie, para los gustos.\n\nY las dos piezas: <b>jan dut</b> (he comido), <b>jaten dut</b> (como), <b>jan nuen</b> (comí), <b>jaten nuen</b> (comía).",
+      "cuerpo": "Los sufijos que has visto, sobre <i>etxe</i> (casa):\n\n<b>etxea</b> — la casa\n<b>etxeak</b> — las casas\n<b>etxean</b> — en la casa (non?)\n<b>etxera</b> — a la casa (nora?)\n<b>etxetik</b> — desde la casa (nondik?)\n<b>etxeko</b> — de la casa (nongoa?)\n<b>etxeetan / etxeetara / etxeetatik</b> — los mismos, en plural\n<b>etxerik</b> — casa (en negativas)\n\nY sobre personas, con el nombre que les dan en clase:\n\nNOR: <i>ni, laguna</i>. Quien es o está, y también lo que se tiene.\nNORK: <i>nik, lagunak</i>. Quien hace algo a algo.\nNORI: <i>niri, lagunari</i>. A quien.\nNOREN: <i>nire, lagunaren</i>. De quien.\nNOREKIN: <i>nirekin</i>. Con quien.\nNORENTZAT: <i>niretzat</i>. Para quien.\n\nLos verbos, con el nombre de los casos que llevan dentro:\n\n<b>izan</b> — naiz, zara, da… / nintzen, zinen, zen… (NOR)\n<b>ukan</b> — dut, duzu, du… / nuen, zenuen, zuen… (NOR-NORK)\n<b>egon</b> — nago, zaude, dago… / nengoen, zeunden, zegoen… (NOR)\n<b>joan</b> — noa, zoaz, doa… <b>etorri</b> — nator, zatoz, dator… (NOR)\n<b>zait</b> y su serie, para los gustos. (NOR-NORI)\n<b>dit</b>, <b>dio</b> y los suyos, para dar y decir. (NOR-NORI-NORK)\n\nY las dos piezas: <b>jan dut</b> (he comido), <b>jaten dut</b> (como), <b>jan nuen</b> (comí), <b>jaten nuen</b> (comía).",
       "ejemplos": [
         {
           "eu": "etxetik etxera",
@@ -379,7 +391,8 @@
             "baina"
           ],
           "correcta": 2,
-          "explicacion": "Etxean al zaude?"
+          "explicacion": "Etxean al zaude?",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -424,7 +437,8 @@
             "baina"
           ],
           "correcta": 0,
-          "explicacion": "«ere» va detrás de lo que acompaña: «ni ere»."
+          "explicacion": "«ere» va detrás de lo que acompaña: «ni ere».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -463,7 +477,8 @@
             "Adibidez"
           ],
           "correcta": 1,
-          "explicacion": "«hala ere» es «aun así»."
+          "explicacion": "«hala ere» es «aun así».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -620,7 +635,8 @@
             "Zenbat?"
           ],
           "correcta": 1,
-          "explicacion": "«zergatik» es por qué."
+          "explicacion": "«zergatik» es por qué.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -830,7 +846,8 @@
             "Etxeko"
           ],
           "correcta": 2,
-          "explicacion": "Procedencia: -tik."
+          "explicacion": "Procedencia: -tik.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -843,7 +860,8 @@
             "zaizu"
           ],
           "correcta": 1,
-          "explicacion": "Plural: zaizkit."
+          "explicacion": "Plural: zaizkit.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -856,7 +874,8 @@
             "nengoen"
           ],
           "correcta": 1,
-          "explicacion": "Objeto y pasado: nuen."
+          "explicacion": "Objeto y pasado: nuen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -914,7 +933,8 @@
             "Zenbat?"
           ],
           "correcta": 1,
-          "explicacion": "«Zegaitik?»"
+          "explicacion": "«Zegaitik?»",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -953,7 +973,8 @@
             "Non"
           ],
           "correcta": 1,
-          "explicacion": "«zelan» es el «nola» del batua, y «zagoz» el «zaude»."
+          "explicacion": "«zelan» es el «nola» del batua, y «zagoz» el «zaude».",
+          "teclea": true
         }
       ],
       "subnivel": "12.4"
@@ -972,7 +993,8 @@
             "Nola ordu da?"
           ],
           "correcta": 0,
-          "explicacion": "«Zer ordu da?»"
+          "explicacion": "«Zer ordu da?»",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -998,7 +1020,8 @@
             "noa"
           ],
           "correcta": 1,
-          "explicacion": "Ubicación: «egon»."
+          "explicacion": "Ubicación: «egon».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1101,7 +1124,8 @@
             "etorkizuna"
           ],
           "correcta": 0,
-          "explicacion": "nadie = inor ez."
+          "explicacion": "nadie = inor ez.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1190,7 +1214,8 @@
             "nengoen"
           ],
           "correcta": 0,
-          "explicacion": "menos = gutxiago."
+          "explicacion": "menos = gutxiago.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1279,7 +1304,8 @@
             "nintzen"
           ],
           "correcta": 0,
-          "explicacion": "importante = garrantzitsua."
+          "explicacion": "importante = garrantzitsua.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1368,7 +1394,8 @@
             "adibidez"
           ],
           "correcta": 0,
-          "explicacion": "el verbo = aditza."
+          "explicacion": "el verbo = aditza.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1457,7 +1484,8 @@
             "zinen"
           ],
           "correcta": 0,
-          "explicacion": "Literalmente «suertes buenas»."
+          "explicacion": "Literalmente «suertes buenas».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1546,7 +1574,8 @@
             "noski"
           ],
           "correcta": 0,
-          "explicacion": "la frase = esaldia."
+          "explicacion": "la frase = esaldia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1603,7 +1632,8 @@
             "denak"
           ],
           "correcta": 0,
-          "explicacion": "«Inor» y «ezer» van siempre con «ez». «Norbait» es de lo afirmativo."
+          "explicacion": "«Inor» y «ezer» van siempre con «ez». «Norbait» es de lo afirmativo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1616,7 +1646,8 @@
             "Bakarrik"
           ],
           "correcta": 0,
-          "explicacion": "Lo afirmativo lleva «norbait»; «inor» necesita un «ez» delante."
+          "explicacion": "Lo afirmativo lleva «norbait»; «inor» necesita un «ez» delante.",
+          "teclea": true
         },
         {
           "tipo": "pares",
@@ -1658,7 +1689,8 @@
             "Bakarrik"
           ],
           "correcta": 0,
-          "explicacion": "«daude» (egon) no lleva objeto, así que el sujeto va tal cual: «denak»."
+          "explicacion": "«daude» (egon) no lleva objeto, así que el sujeto va tal cual: «denak».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1671,7 +1703,8 @@
             "Inor"
           ],
           "correcta": 1,
-          "explicacion": "«ikasten dute» lleva objeto (euskara), y con objeto «denak» cambia a «denek»."
+          "explicacion": "«ikasten dute» lleva objeto (euskara), y con objeto «denak» cambia a «denek».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1684,7 +1717,8 @@
             "norbait"
           ],
           "correcta": 0,
-          "explicacion": "«bakarrik» va detrás de la palabra a la que afecta, igual que «ere»."
+          "explicacion": "«bakarrik» va detrás de la palabra a la que afecta, igual que «ere».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1697,7 +1731,8 @@
             "Zerbait"
           ],
           "correcta": 0,
-          "explicacion": "Sin nada delante a lo que agarrarse, «bakarrik» pasa a significar «a solas»."
+          "explicacion": "Sin nada delante a lo que agarrarse, «bakarrik» pasa a significar «a solas».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1710,7 +1745,8 @@
             "denak"
           ],
           "correcta": 0,
-          "explicacion": "«ezer» es lo negativo y pide «ez» al lado; «zerbait» es lo afirmativo. Nunca se cruzan."
+          "explicacion": "«ezer» es lo negativo y pide «ez» al lado; «zerbait» es lo afirmativo. Nunca se cruzan.",
+          "teclea": true
         }
       ]
     },
@@ -1939,7 +1975,8 @@
             "Noski"
           ],
           "correcta": 0,
-          "explicacion": "«beraz» es «así que»: introduce la consecuencia."
+          "explicacion": "«beraz» es «así que»: introduce la consecuencia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1952,7 +1989,8 @@
             "adibidez"
           ],
           "correcta": 0,
-          "explicacion": "«gainera» suma algo a lo que acabas de decir."
+          "explicacion": "«gainera» suma algo a lo que acabas de decir.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1965,7 +2003,8 @@
             "benetan"
           ],
           "correcta": 0,
-          "explicacion": "«hala ere» marca que lo que viene va contra lo anterior."
+          "explicacion": "«hala ere» marca que lo que viene va contra lo anterior.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1978,7 +2017,8 @@
             "gainera"
           ],
           "correcta": 0,
-          "explicacion": "«adibidez» presenta un ejemplo."
+          "explicacion": "«adibidez» presenta un ejemplo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1991,7 +2031,8 @@
             "zaio"
           ],
           "correcta": 0,
-          "explicacion": "«porque» no es una palabra suelta: es el sufijo -lako pegado al verbo."
+          "explicacion": "«porque» no es una palabra suelta: es el sufijo -lako pegado al verbo.",
+          "teclea": true
         }
       ],
       "subnivel": "12.2"
@@ -2117,7 +2158,8 @@
             "zerbait"
           ],
           "correcta": 0,
-          "explicacion": "«inor» es para personas. Para cosas sería «ezer»."
+          "explicacion": "«inor» es para personas. Para cosas sería «ezer».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2130,7 +2172,8 @@
             "nonbait"
           ],
           "correcta": 0,
-          "explicacion": "«ezer» es para cosas. Para personas sería «inor»."
+          "explicacion": "«ezer» es para cosas. Para personas sería «inor».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2156,7 +2199,8 @@
             "Nonbait"
           ],
           "correcta": 0,
-          "explicacion": "De «nor» (quién) sale «norbait» (alguien), pegándole -bait."
+          "explicacion": "De «nor» (quién) sale «norbait» (alguien), pegándole -bait.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2270,6 +2314,76 @@
       "subnivel": "12.3"
     },
     {
+      "id": "u12-g22",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Zer nahi duzu? —____ (nada)",
+          "opciones": [
+            "Ezer",
+            "Ezer ez",
+            "Inor ez",
+            "Ez ezer"
+          ],
+          "correcta": 1,
+          "explicacion": "Suelta, la palabra necesita su «ez» detrás: ezer ez. «Ezer» a secas no niega nada.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No he dicho nada. → ____",
+          "opciones": [
+            "Ez dut ezer ez esan",
+            "Ezer dut esan",
+            "Ez dut ezer esan",
+            "Ez ezer dut esan"
+          ],
+          "correcta": 2,
+          "explicacion": "Un solo «ez», el del verbo. Dentro de la frase no se repite."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Nor dago etxean? —____ (nadie)",
+          "opciones": [
+            "Inor",
+            "Ezer ez",
+            "Inor ez",
+            "Ez inor"
+          ],
+          "correcta": 2,
+          "explicacion": "Para personas, «inor», y suelta lleva su «ez» detrás.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuántos «ez» lleva «no hay nadie»?",
+          "opciones": [
+            "Dos: ez dago inor ez",
+            "Ninguno: dago inor",
+            "Dos: ez ez dago inor",
+            "Uno: ez dago inor"
+          ],
+          "correcta": 3,
+          "explicacion": "El del verbo, y basta. «Inor» por sí sola no es negativa: por eso en una pregunta significa «alguien»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "No hay nadie.",
+          "respuestas": [
+            "ez dago inor",
+            "inor ez dago"
+          ],
+          "pista": "Un «ez» delante del verbo, y la palabra para personas."
+        }
+      ],
+      "subnivel": "12.3"
+    },
+    {
       "id": "u12-g20",
       "variantes": [
         {
@@ -2321,6 +2435,75 @@
       "subnivel": "12.1"
     },
     {
+      "id": "u12-g23",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dakit» es «no sé». ¿Cómo dices «lo sé»?",
+          "opciones": [
+            "Dakit",
+            "Bai dakit",
+            "Badakit",
+            "Ez badakit"
+          ],
+          "correcta": 2,
+          "explicacion": "El verbo va solo, así que necesita su ba-: badakit."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Badago ogirik? —Bai, ____.",
+          "opciones": [
+            "dago",
+            "badago",
+            "ez dago",
+            "badakit"
+          ],
+          "correcta": 1,
+          "explicacion": "Afirmas el verbo mismo, y va solo: badago."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Badago ogirik? —Ez, ____.",
+          "opciones": [
+            "ez badago",
+            "badago ez",
+            "ez da dago",
+            "ez dago"
+          ],
+          "correcta": 3,
+          "explicacion": "Con «ez» delante el verbo ya tiene apoyo, y el ba- desaparece."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas es «me voy»?",
+          "opciones": [
+            "Banago",
+            "Badator",
+            "Banoa",
+            "Banator"
+          ],
+          "correcta": 2,
+          "explicacion": "Noa, «voy», con su ba-. Banago es «sí estoy»; badator, «ya viene»; banator, «ya vengo»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Lo sé.",
+          "respuestas": [
+            "badakit",
+            "bai badakit",
+            "nik badakit"
+          ],
+          "pista": "El contrario de «ez dakit»."
+        }
+      ],
+      "subnivel": "12.1"
+    },
+    {
       "id": "u12-g21",
       "variantes": [
         {
@@ -2347,7 +2530,8 @@
             "denak"
           ],
           "correcta": 0,
-          "explicacion": "Cosas: ezer. Personas: inor."
+          "explicacion": "Cosas: ezer. Personas: inor.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2373,7 +2557,8 @@
             "noski"
           ],
           "correcta": 0,
-          "explicacion": "«beraz» introduce la consecuencia de lo dicho."
+          "explicacion": "«beraz» introduce la consecuencia de lo dicho.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2386,7 +2571,8 @@
             "norbait"
           ],
           "correcta": 0,
-          "explicacion": "«bakarrik» va detrás de la palabra a la que afecta, igual que «ere»."
+          "explicacion": "«bakarrik» va detrás de la palabra a la que afecta, igual que «ere».",
+          "teclea": true
         }
       ],
       "subnivel": "test"

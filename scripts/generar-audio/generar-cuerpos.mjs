@@ -92,9 +92,10 @@ const vistos = new Map();
 for (const { d } of unidades) {
   for (const g of d.gramatica || []) {
     for (const ln of String(g.cuerpo || '').split('\n')) {
-      const m = /^<(?:b|i)>([^<]+)<\/(?:b|i)>\s*(—|–|-)/.exec(ln);   // en negrita o en cursiva
+      // en negrita o en cursiva; dentro puede ir un <u> que subraya la terminación («<b>Mikel<u>ek</u> katu bat du</b>»)
+      const m = /^<(?:b|i)>((?:[^<]|<\/?u>)+)<\/(?:b|i)>\s*(—|–|-)/.exec(ln);
       if (!m) continue;
-      const eu = m[1].trim();
+      const eu = m[1].replace(/<\/?u>/g, '').trim();
       if (porTexto.has(normalizar(eu))) continue;
       const tts = limpiar(eu);
       const k = normalizar(tts);

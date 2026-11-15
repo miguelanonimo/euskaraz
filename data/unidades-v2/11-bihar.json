@@ -34,7 +34,7 @@
   "gramatica": [
     {
       "titulo": "Más, menos, el que más",
-      "cuerpo": "El comparativo se pega detrás del adjetivo:\n\n<b>handi</b> (grande) → <b>handiago</b> — más grande\n<b>txiki</b> (pequeño) → <b>txikiago</b> — más pequeño\n<b>polit</b> (bonito) → <b>politago</b> — más bonito\n\nOjo: el adjetivo va aquí <b>sin el artículo -a</b>. <i>handia</i> es «grande», pero para comparar se parte de <i>handi</i>.\n\nY el «que» de la comparación es <b>baino</b>, que va <b>delante</b>:\n\n<b>Bilbo Gernika <u>baino</u> handiagoa da.</b> — Bilbao es más grande que Gernika.\n\nEl superlativo es <b>-ena</b>:\n<b>handiena</b> — el más grande\n<b>Bilbo Bizkaiko hiri handiena da</b> — Bilbao es la ciudad más grande de Bizkaia.\n\nPara «tan… como», <b>bezain</b>:\n<b>ni zu bezain altua naiz</b> — Soy tan alto como tú.\n\nY tres irregulares que salen a diario:\n<b>ona</b> (bueno) → <b>hobea</b> (mejor) → <b>onena</b> (el mejor)\n<b>asko</b> (mucho) → <b>gehiago</b> (más) → <b>gehien</b> (el que más)\n<b>ondo</b> (bien) → <b>hobeto</b> (mejor)\n\nY los contrarios, que se forman igual:\n\n<b>gutxiago</b> — menos\n<b>txarragoa</b> — peor\n\nCuando no hay diferencia que marcar, <b>berdin</b> — igual:\n\n<b>niretzat berdin da</b> — Para mí es igual, me da lo mismo.",
+      "cuerpo": "El comparativo se pega detrás del adjetivo:\n\n<b>handi</b> (grande) → <b>handiago</b> — más grande\n<b>txiki</b> (pequeño) → <b>txikiago</b> — más pequeño\n<b>polit</b> (bonito) → <b>politago</b> — más bonito\n\nOjo: el adjetivo va aquí <b>sin el artículo -a</b>. <i>handia</i> es «grande», pero para comparar se parte de <i>handi</i>.\n\nY el «que» de la comparación es <b>baino</b>, que va <b>delante</b>:\n\n<b>Bilbo Gernika <u>baino</u> handiagoa da.</b> — Bilbao es más grande que Gernika.\n\nEl superlativo es <b>-ena</b>:\n<b>handiena</b> — el más grande\n<b>Bilbo Bizkaiko hiri handiena da</b> — Bilbao es la ciudad más grande de Bizkaia.\n\nPara «tan… como», <b>bezain</b>:\n<b>ni zu bezain altua naiz</b> — Soy tan alto como tú.\n\nY tres irregulares que salen a diario:\n<b>ona</b> (bueno) → <b>hobea</b> (mejor) → <b>onena</b> (el mejor)\n<b>asko</b> (mucho) → <b>gehiago</b> (más) → <b>gehien</b> (el que más)\n<b>ondo</b> (bien) → <b>hobeto</b> (mejor)\n\nSi dudas entre las dos: con <i>izan</i> va <b>hobea</b> (<i>hau hobea da</i>, esto es mejor) y con <i>egon</i> va <b>hobeto</b> (<i>hobeto nago</i>, estoy mejor).\n\nY los contrarios, que se forman igual:\n\n<b>gutxiago</b> — menos\n<b>txarragoa</b> — peor\n\nCuando no hay diferencia que marcar, <b>berdin</b> — igual:\n\n<b>niretzat berdin da</b> — Para mí es igual, me da lo mismo.",
       "ejemplos": [
         {
           "eu": "Bilbo Gernika baino handiagoa da",
@@ -97,6 +97,18 @@
           "audio": "unidades/u11/euskara-ikasiko-dut.mp3"
         }
       ]
+    },
+    {
+      "titulo": "«Tendré que ir»: joan beharko dut",
+      "cuerpo": "El futuro es pegarle <b>-ko</b> al verbo: <i>joango naiz</i>. Pero cuando en medio hay un <b>behar</b>, el <b>-ko</b> no se lo lleva el verbo: se lo lleva él.\n\n<b>joan behar dut</b> — Tengo que ir.\n<b>joan behar<u>ko</u> dut</b> — Tendré que ir.\n\n<b>egin behar dugu</b> — Tenemos que hacerlo.\n<b>egin behar<u>ko</u> dugu</b> — Tendremos que hacerlo.\n\nEl verbo de delante se queda como estaba, en su forma de diccionario. El tropiezo corriente es ponerle el futuro a él, que es donde lo pone el oído: «joango behar dut». En euskera el <b>-ko</b> va en la última pieza antes del auxiliar.\n\nCon <i>nahi</i> pasa lo mismo: <b>joan nahiko dut</b>, querré ir.",
+      "ejemplos": [
+        {
+          "eu": "bihar joango naiz",
+          "es": "Mañana iré.",
+          "audio": "unidades/u11/bihar-joango-naiz.mp3"
+        }
+      ],
+      "subnivel": "11.1"
     },
     {
       "subnivel": "11.2",
@@ -329,7 +341,8 @@
             "ere"
           ],
           "correcta": 1,
-          "explicacion": "«baino» es el «que» de la comparación."
+          "explicacion": "«baino» es el «que» de la comparación.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -342,7 +355,8 @@
             "ere"
           ],
           "correcta": 1,
-          "explicacion": "«bezain» es «tan… como»."
+          "explicacion": "«bezain» es «tan… como».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -375,7 +389,8 @@
             "eta"
           ],
           "correcta": 1,
-          "explicacion": "Con -ago hace falta «baino»."
+          "explicacion": "Con -ago hace falta «baino».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -388,7 +403,8 @@
             "gehiago"
           ],
           "correcta": 1,
-          "explicacion": "«iguales» pide «bezain», no «baino»."
+          "explicacion": "«iguales» pide «bezain», no «baino».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -401,7 +417,8 @@
             "beraz"
           ],
           "correcta": 1,
-          "explicacion": "«ere» es «también» y va detrás del elemento."
+          "explicacion": "«ere» es «también» y va detrás del elemento.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -414,7 +431,8 @@
             "baino"
           ],
           "correcta": 0,
-          "explicacion": "«más» de cantidad es «gehiago». Ojo con «handiena», que es «el más grande»: también sería una frase posible, pero no esta."
+          "explicacion": "«más» de cantidad es «gehiago». Ojo con «handiena», que es «el más grande»: también sería una frase posible, pero no esta.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -447,7 +465,8 @@
             "Bihar joan nintzen"
           ],
           "correcta": 1,
-          "explicacion": "Joan + go + naiz."
+          "explicacion": "Joan + go + naiz.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -460,7 +479,8 @@
             "egin nuen"
           ],
           "correcta": 1,
-          "explicacion": "Egin acaba en n, así que -go."
+          "explicacion": "Egin acaba en n, así que -go.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -674,7 +694,8 @@
             "beraz"
           ],
           "correcta": 0,
-          "explicacion": "más (cantidad) = gehiago."
+          "explicacion": "más (cantidad) = gehiago.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -763,7 +784,8 @@
             "jaio"
           ],
           "correcta": 0,
-          "explicacion": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio."
+          "explicacion": "Comparativo de «txarra» (malo). También se oye «okerragoa», sobre todo como adverbio.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -852,7 +874,8 @@
             "bihar"
           ],
           "correcta": 0,
-          "explicacion": "Irregular: de «ona» (bueno)."
+          "explicacion": "Irregular: de «ona» (bueno).",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -941,7 +964,8 @@
             "ezagutu"
           ],
           "correcta": 0,
-          "explicacion": "tan… como = bezain."
+          "explicacion": "tan… como = bezain.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -973,7 +997,8 @@
             "Bihar joan nintzen"
           ],
           "correcta": 1,
-          "explicacion": "Joan + go + naiz."
+          "explicacion": "Joan + go + naiz.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1043,15 +1068,15 @@
             },
             {
               "eu": "joaten naiz",
-              "es": "voy"
+              "es": "suelo ir"
             },
             {
               "eu": "joango naiz",
               "es": "iré"
             },
             {
-              "eu": "joaten ari naiz",
-              "es": "estoy yendo"
+              "eu": "noa",
+              "es": "voy (ahora)"
             }
           ]
         },
@@ -1250,7 +1275,8 @@
             "gehiago"
           ],
           "correcta": 0,
-          "explicacion": "El «que» de la comparación es «baino», y va delante."
+          "explicacion": "El «que» de la comparación es «baino», y va delante.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1263,7 +1289,8 @@
             "berdin"
           ],
           "correcta": 0,
-          "explicacion": "Para «tan… como», bezain."
+          "explicacion": "Para «tan… como», bezain.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1295,7 +1322,8 @@
             "ikasiko naiz"
           ],
           "correcta": 0,
-          "explicacion": "Futuro: participio + -ko, y el auxiliar se queda igual."
+          "explicacion": "Futuro: participio + -ko, y el auxiliar se queda igual.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1321,7 +1349,8 @@
             "egingo naiz"
           ],
           "correcta": 0,
-          "explicacion": "egin acaba en -n, así que -go: egingo dut."
+          "explicacion": "egin acaba en -n, así que -go: egingo dut.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1397,7 +1426,8 @@
             "jango naiz"
           ],
           "correcta": 0,
-          "explicacion": "jan + -go, y el auxiliar de objeto: jango dut."
+          "explicacion": "jan + -go, y el auxiliar de objeto: jango dut.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1423,7 +1453,8 @@
             "nengoen"
           ],
           "correcta": 0,
-          "explicacion": "Pasado de izan, porque «joan» no lleva objeto."
+          "explicacion": "Pasado de izan, porque «joan» no lleva objeto.",
+          "teclea": true
         }
       ],
       "subnivel": "11.2"
@@ -1531,7 +1562,8 @@
             "joango dut"
           ],
           "correcta": 0,
-          "explicacion": "Futuro de joan, y sin objeto: joango naiz."
+          "explicacion": "Futuro de joan, y sin objeto: joango naiz.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1579,7 +1611,8 @@
             "berdin"
           ],
           "correcta": 0,
-          "explicacion": "«Bezain» es «tan… como». «Baino» sería «que», para el comparativo."
+          "explicacion": "«Bezain» es «tan… como». «Baino» sería «que», para el comparativo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1721,6 +1754,75 @@
       "subnivel": "11.1"
     },
     {
+      "id": "u11-g52",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tendré que ir. → ____",
+          "opciones": [
+            "Joango behar dut",
+            "Joan behar dut",
+            "Joan beharko dut",
+            "Joango beharko dut"
+          ],
+          "correcta": 2,
+          "explicacion": "El -ko se lo lleva «behar», no el verbo: joan beharko dut.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tendremos que hacerlo. → Egin ____ dugu.",
+          "opciones": [
+            "behar",
+            "beharko",
+            "beharra",
+            "behargo"
+          ],
+          "correcta": 1,
+          "explicacion": "El futuro va en «behar»: beharko."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «joan beharko dut», ¿quién lleva el -ko del futuro?",
+          "opciones": [
+            "joan",
+            "dut",
+            "behar",
+            "los dos"
+          ],
+          "correcta": 2,
+          "explicacion": "La última pieza antes del auxiliar. El verbo se queda en su forma de diccionario."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas es «tengo que ir», ahora, sin futuro?",
+          "opciones": [
+            "joan beharko dut",
+            "joango naiz",
+            "joan behar dut",
+            "joan nahi dut"
+          ],
+          "correcta": 2,
+          "explicacion": "Sin -ko, es presente: tengo que ir."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Tendré que ir.",
+          "respuestas": [
+            "joan beharko dut",
+            "nik joan beharko dut"
+          ],
+          "pista": "El -ko no va en «joan»."
+        }
+      ],
+      "subnivel": "11.1"
+    },
+    {
       "id": "u11-g19",
       "variantes": [
         {
@@ -1734,7 +1836,8 @@
             "gehiago"
           ],
           "correcta": 0,
-          "explicacion": "El «que» de comparar es «baino», y va delante del adjetivo."
+          "explicacion": "El «que» de comparar es «baino», y va delante del adjetivo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1747,7 +1850,8 @@
             "berdin"
           ],
           "correcta": 1,
-          "explicacion": "Para «tan… como» va «bezain», no «baino»."
+          "explicacion": "Para «tan… como» va «bezain», no «baino».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2070,7 +2174,8 @@
             "joango dut"
           ],
           "correcta": 0,
-          "explicacion": "«bihar» pide futuro, y «joan» no lleva objeto: joango naiz."
+          "explicacion": "«bihar» pide futuro, y «joan» no lleva objeto: joango naiz.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2109,7 +2214,8 @@
             "berdin"
           ],
           "correcta": 0,
-          "explicacion": "Comparar dos cosas pide «baino», aunque lo comparado sea un adverbio."
+          "explicacion": "Comparar dos cosas pide «baino», aunque lo comparado sea un adverbio.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

@@ -140,7 +140,7 @@
     },
     {
       "titulo": "«Me gusta» no funciona como en castellano… o sí",
-      "cuerpo": "En castellano no dices «yo gusto el euskera»: dices <b>me gusta el euskera</b>. El que gusta es el euskera, y tú eres el «me».\n\nEl euskera hace exactamente lo mismo:\n\n<b>Niri euskara gustatzen zait.</b>\n\n<i>euskara</i> es el sujeto, <i>niri</i> es «a mí», y <b>zait</b> es un auxiliar nuevo que junta las dos cosas: «(él) a mí».\n\nLa serie entera:\n\n<b>niri … zait</b> — me\n<b>zuri … zaizu</b> — te\n<b>hari … zaio</b> — le\n<b>guri … zaigu</b> — nos\n<b>zuei … zaizue</b> — os\n<b>haiei … zaie</b> — les\n\nY como en castellano, el <i>niri</i> se puede callar cuando está claro: <b>Euskara gustatzen zait.</b>",
+      "cuerpo": "En castellano no dices «yo gusto el euskera»: dices <b>me gusta el euskera</b>. El que gusta es el euskera, y tú eres el «me».\n\nEl euskera hace exactamente lo mismo:\n\n<b>Niri euskara gustatzen zait.</b>\n\n<i>euskara</i> es el sujeto, <i>niri</i> es «a mí», y <b>zait</b> es un auxiliar nuevo que junta las dos cosas: «(él) a mí».\n\nEn clase, ese «a mí» tiene nombre, como los demás casos: es NORI, por la pregunta <i>nori?</i>, ¿a quién? Y a <i>zait</i> y los suyos los llaman verbos NOR-NORI: llevan dentro qué gusta (NOR) y a quién (NORI).\n\nLa serie entera:\n\n<b>niri … zait</b> — me\n<b>zuri … zaizu</b> — te\n<b>hari … zaio</b> — le\n<b>guri … zaigu</b> — nos\n<b>zuei … zaizue</b> — os\n<b>haiei … zaie</b> — les\n\nY como en castellano, el <i>niri</i> se puede callar cuando está claro: <b>Euskara gustatzen zait.</b>",
       "ejemplos": [
         {
           "eu": "niri kirola gustatzen zait",
@@ -184,7 +184,7 @@
     },
     {
       "titulo": "Cuánto, y cómo negarlo",
-      "cuerpo": "La cantidad va detrás del sujeto:\n\n<b>kirola asko gustatzen zait</b> — Me gusta mucho el deporte.\n<b>zinema pixka bat gustatzen zait</b> — Me gusta un poco el cine.\n<b>kirola gutxi gustatzen zait</b> — Me gusta poco el deporte.\n\nLa escala entera, de más a menos: <b>asko</b> (mucho), <b>pixka bat</b> (un poco), <b>gutxi</b> (poco), <b>batere ez</b> (nada en absoluto).\n\nY para negar, el <b>ez</b> con su salto de siempre. El auxiliar se coloca justo detrás:\n\n<b>ez zait futbola gustatzen</b> — No me gusta el fútbol.\n<b>ez zaizkit barazkiak gustatzen</b> — No me gustan las verduras.\n\nPara «nada en absoluto»:\n<b>Ez zait batere gustatzen.</b>\n\nY una respuesta corta que oirás mucho: <b>Niri ere bai.</b> (a mí también) y <b>Niri ez.</b> (a mí no).",
+      "cuerpo": "La cantidad va detrás del sujeto:\n\n<b>kirola asko gustatzen zait</b> — Me gusta mucho el deporte.\n<b>zinema pixka bat gustatzen zait</b> — Me gusta un poco el cine.\n<b>kirola gutxi gustatzen zait</b> — Me gusta poco el deporte.\n\nLa escala entera, de más a menos: <b>asko</b> (mucho), <b>pixka bat</b> (un poco), <b>gutxi</b> (poco), <b>batere ez</b> (nada en absoluto).\n\nY para negar, el <b>ez</b> con su salto de siempre. El auxiliar se coloca justo detrás:\n\n<b>ez zait futbola gustatzen</b> — No me gusta el fútbol.\n<b>ez zaizkit barazkiak gustatzen</b> — No me gustan las verduras.\n\nPara «nada en absoluto»:\n<b>Ez zait batere gustatzen.</b>\n\nY una respuesta corta que oirás mucho: <b>Niri ere bai.</b> (a mí también) y <b>Niri ez.</b> (a mí no). Para sumarte a un «no me gusta», <b>Niri ere ez.</b> (a mí tampoco).",
       "ejemplos": [
         {
           "eu": "ez zait euria gustatzen",
@@ -200,6 +200,18 @@
           "eu": "niri ere bai",
           "es": "A mí también.",
           "audio": "unidades/u10/niri-ere-bai.mp3"
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "titulo": "«Asko» y «gutxi» también cuentan: van detrás y sin artículo",
+      "cuerpo": "Acabas de usar <b>asko</b> y <b>gutxi</b> para decir cuánto te gusta algo. Sirven también para decir cuánto <b>hay</b> de algo —«muchos amigos», «poco dinero»—, y ahí tienen dos reglas que chocan con el castellano.\n\n<b>Van detrás del nombre</b>\n\n<b>lagun asko</b> — muchos amigos\n<b>diru gutxi</b> — poco dinero\n\nNo «asko lagun». Es el orden de siempre: lo que acompaña al nombre va después, como <i>etxe handia</i> o <i>lagun bat</i>.\n\n<b>Y el nombre va sin artículo</b>\n\nIgual que detrás de un número. No se dice «lagunak asko» ni «dirua gutxi»:\n\n<b>liburu asko ditut</b> — Tengo muchos libros.\n<b>diru gutxi dut</b> — Tengo poco dinero.\n\n<b>El artículo cambia lo que dices</b>\n\nMira estas dos, que solo se separan por una <b>-ak</b>:\n\n<b>liburu<u>ak</u> asko gustatzen zaizkit</b> — Me gustan <b>mucho</b> los libros.\n<b>liburu asko gustatzen zaizkit</b> — Me gustan <b>muchos</b> libros.\n\nEn la primera, <i>liburuak</i> lleva su artículo y <i>asko</i> va por libre: dice cuánto te gustan. En la segunda, <i>liburu</i> va desnudo y <i>asko</i> se le pega: dice cuántos son.\n\nY la pregunta hace lo mismo: detrás de <b>zenbat</b> el nombre también va desnudo. <i>Zenbat urte dituzu?</i> ya te lo sabías; <i>Zenbat liburu dituzu?</i> es el mismo molde.",
+      "ejemplos": [
+        {
+          "eu": "Liburuak asko gustatzen zaizkit.",
+          "es": "Me gustan mucho los libros.",
+          "audio": "unidades/u9/liburuak-asko-gustatzen-zaizkit.mp3"
         }
       ],
       "subnivel": "9.1"
@@ -250,7 +262,7 @@
     },
     {
       "titulo": "A quién: la -(r)i de los nombres",
-      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nEstos son los cinco verbos que piden un «a quién», y son los de este tema:\n\n<b>eman</b> — dar\n<b>esan</b> — decir\n<b>galdetu</b> — preguntar\n<b>erantzun</b> — responder\n<b>lagundu</b> — ayudar\n\nTodos ellos hacen algo <i>a alguien</i>, y por eso van con el <b>-ri</b>.\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién):\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>liburua eman dit</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
+      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nEstos son los cinco verbos que piden un «a quién», y son los de este tema:\n\n<b>eman</b> — dar\n<b>esan</b> — decir\n<b>galdetu</b> — preguntar\n<b>erantzun</b> — responder\n<b>lagundu</b> — ayudar\n\nTodos ellos hacen algo <i>a alguien</i>, y por eso van con el <b>-ri</b>.\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién). En clase lo llaman NOR-NORI-NORK, por las tres preguntas que lleva dentro:\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>liburua eman dit</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
       "ejemplos": [
         {
           "eu": "Aneri esan dio",
@@ -268,6 +280,12 @@
           "audio": "unidades/u10/zer-esan-dizu.mp3"
         }
       ],
+      "subnivel": "9.2"
+    },
+    {
+      "titulo": "«He visto a Ane»: esa «a» no es -ri",
+      "cuerpo": "Acabas de aprender que «a alguien» se dice con <b>-ri</b>: <i>Aneri esan dio</i>, se lo ha dicho a Ane. Y aquí el castellano tiende una trampa, porque pone «a» delante de las personas en dos sitios distintos:\n\nLe he dado el libro <b>a Ane</b>. — Ane recibe algo.\nHe visto <b>a Ane</b>. — A Ane no le llega nada: es a quien ves.\n\nSolo la primera es un «a quién». En la segunda, Ane hace el mismo papel que «el libro» en «he visto el libro», y el castellano le pone la «a» solo por ser persona. El euskera no:\n\n<b>Ane ikusi dut</b> — He visto a Ane.\n<b>liburua ikusi dut</b> — He visto el libro.\n\nLas dos van igual: sin <b>-ri</b> y con el auxiliar de siempre, <i>dut</i>.\n\nPasa lo mismo con <i>ezagutu</i>, conocer:\n\n<b>Miren ezagutzen dut</b> — Conozco a Miren.\n\nLa prueba para no fallar: cambia la persona por una cosa. Si la «a» se cae —«he visto <i>el libro</i>»—, no era un «a quién», y en euskera va sin <b>-ri</b>.",
+      "ejemplos": [],
       "subnivel": "9.2"
     },
     {
@@ -878,7 +896,8 @@
             "zaigu"
           ],
           "correcta": 0,
-          "explicacion": "«a mí» → zait."
+          "explicacion": "«a mí» → zait.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -904,7 +923,8 @@
             "zaigu"
           ],
           "correcta": 2,
-          "explicacion": "«a él» → zaio."
+          "explicacion": "«a él» → zaio.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -950,7 +970,8 @@
             "ditut"
           ],
           "correcta": 1,
-          "explicacion": "Lo que gusta va en plural → zaizkit."
+          "explicacion": "Lo que gusta va en plural → zaizkit.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1138,7 +1159,8 @@
             "Gustatzen ez"
           ],
           "correcta": 0,
-          "explicacion": "El auxiliar salta detrás del «ez»: «Ez zait futbola gustatzen»."
+          "explicacion": "El auxiliar salta detrás del «ez»: «Ez zait futbola gustatzen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1151,7 +1173,8 @@
             "Ez zaizu"
           ],
           "correcta": 1,
-          "explicacion": "Plural y negativa: «Ez zaizkit … gustatzen»."
+          "explicacion": "Plural y negativa: «Ez zaizkit … gustatzen».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1164,7 +1187,8 @@
             "gutxi"
           ],
           "correcta": 1,
-          "explicacion": "«batere» en negativa es «nada en absoluto»."
+          "explicacion": "«batere» en negativa es «nada en absoluto».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1177,7 +1201,8 @@
             "Gutxi"
           ],
           "correcta": 0,
-          "explicacion": "«asko» es mucho."
+          "explicacion": "«asko» es mucho.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1190,7 +1215,8 @@
             "Ni ere."
           ],
           "correcta": 1,
-          "explicacion": "«ere» es «también», y el «bai» remata la respuesta corta."
+          "explicacion": "«ere» es «también», y el «bai» remata la respuesta corta.",
+          "teclea": true
         }
       ],
       "subnivel": "9.1"
@@ -1305,7 +1331,8 @@
             "axola"
           ],
           "correcta": 1,
-          "explicacion": "«iruditzen zait» es «me parece»."
+          "explicacion": "«iruditzen zait» es «me parece».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1318,7 +1345,8 @@
             "ahaztu"
           ],
           "correcta": 2,
-          "explicacion": "«interesatzen zait»."
+          "explicacion": "«interesatzen zait».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1331,7 +1359,8 @@
             "eman"
           ],
           "correcta": 1,
-          "explicacion": "«axola zait» es «me importa»."
+          "explicacion": "«axola zait» es «me importa».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1345,7 +1374,8 @@
           ],
           "correcta": 0,
           "explicacion": "«ahaztu zait».",
-          "es": "Me gusta el euskera."
+          "es": "Me gusta el euskera.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1358,7 +1388,8 @@
             "zaio"
           ],
           "correcta": 1,
-          "explicacion": "Este va con «dut»: «Ane dut izena»."
+          "explicacion": "Este va con «dut»: «Ane dut izena».",
+          "teclea": true
         }
       ],
       "subnivel": "9.2"
@@ -1429,7 +1460,8 @@
             "nire"
           ],
           "correcta": 2,
-          "explicacion": "«niri». Con -k sería el sujeto de un verbo con objeto; con -re, «mi»."
+          "explicacion": "«niri». Con -k sería el sujeto de un verbo con objeto; con -re, «mi».",
+          "teclea": true
         }
       ],
       "subnivel": "9.2"
@@ -1729,7 +1761,8 @@
             "hartu"
           ],
           "correcta": 1,
-          "explicacion": "«emon». En batua, «eman»."
+          "explicacion": "«emon». En batua, «eman».",
+          "teclea": true
         }
       ],
       "subnivel": "test"
@@ -1748,7 +1781,8 @@
             "batere"
           ],
           "correcta": 1,
-          "explicacion": "Si no le gusta la lluvia, encaja el sol: eguzkia."
+          "explicacion": "Si no le gusta la lluvia, encaja el sol: eguzkia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1774,7 +1808,8 @@
             "zait ez"
           ],
           "correcta": 1,
-          "explicacion": "«barazkiak» es plural y la frase es negativa: «ez zaizkit»."
+          "explicacion": "«barazkiak» es plural y la frase es negativa: «ez zaizkit».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1877,7 +1912,8 @@
             "pixka bat"
           ],
           "correcta": 0,
-          "explicacion": "guztia = todo. Con «asko», «gutxi» y «pixka bat» tienes la escala entera."
+          "explicacion": "guztia = todo. Con «asko», «gutxi» y «pixka bat» tienes la escala entera.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1964,7 +2000,8 @@
             "begiak",
             "belarriak"
           ],
-          "correcta": 0
+          "correcta": 0,
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2051,7 +2088,8 @@
             "besoa",
             "hanka"
           ],
-          "correcta": 0
+          "correcta": 0,
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2139,7 +2177,8 @@
             "eskua",
             "oina"
           ],
-          "correcta": 0
+          "correcta": 0,
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2227,7 +2266,8 @@
             "gutxi"
           ],
           "correcta": 0,
-          "explicacion": "la boca = ahoa."
+          "explicacion": "la boca = ahoa.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2502,7 +2542,8 @@
             "udazkena"
           ],
           "correcta": 0,
-          "explicacion": "el teatro = antzerkia."
+          "explicacion": "el teatro = antzerkia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2591,7 +2632,8 @@
             "gustatzen zait"
           ],
           "correcta": 0,
-          "explicacion": "el cine = zinema."
+          "explicacion": "el cine = zinema.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2680,7 +2722,8 @@
             "beroa"
           ],
           "correcta": 0,
-          "explicacion": "el deporte = kirola."
+          "explicacion": "el deporte = kirola.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2769,7 +2812,8 @@
             "gauza"
           ],
           "correcta": 0,
-          "explicacion": "el cine = zinema."
+          "explicacion": "el cine = zinema.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2858,7 +2902,8 @@
             "janaria"
           ],
           "correcta": 0,
-          "explicacion": "la cosa = gauza."
+          "explicacion": "la cosa = gauza.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2947,7 +2992,8 @@
             "liburua"
           ],
           "correcta": 0,
-          "explicacion": "mucho = asko."
+          "explicacion": "mucho = asko.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3036,7 +3082,8 @@
             "begiak"
           ],
           "correcta": 0,
-          "explicacion": "a mí = niri."
+          "explicacion": "a mí = niri.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3125,7 +3172,8 @@
             "udaberria"
           ],
           "correcta": 0,
-          "explicacion": "a vosotros = zuei."
+          "explicacion": "a vosotros = zuei.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3214,7 +3262,8 @@
             "lagundu"
           ],
           "correcta": 0,
-          "explicacion": "a él, a ella = hari."
+          "explicacion": "a él, a ella = hari.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3731,6 +3780,75 @@
       "subnivel": "9.5"
     },
     {
+      "id": "u9-g54",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Es para mí. → ____ da.",
+          "opciones": [
+            "Nirentzat",
+            "Niri",
+            "Nire",
+            "Niretzat"
+          ],
+          "correcta": 3,
+          "explicacion": "Nire + tzat, sin -n. «Nirentzat» es el tropiezo, por parecerse a «amarentzat»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Es para mi madre. → ____ da.",
+          "opciones": [
+            "Amatzat",
+            "Amarentzat",
+            "Amaretzat",
+            "Amari"
+          ],
+          "correcta": 1,
+          "explicacion": "Con un nombre, el dueño lleva su -ren entero, y detrás -tzat: amarentzat."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Es para ti. → ____ da.",
+          "opciones": [
+            "Zuretzat",
+            "Zurentzat",
+            "Zuri",
+            "Zure"
+          ],
+          "correcta": 0,
+          "explicacion": "Zure + tzat. Como «niretzat», sin -n."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Para quién es? → ____ da?",
+          "opciones": [
+            "Noretzat",
+            "Nori",
+            "Norentzat",
+            "Noren"
+          ],
+          "correcta": 2,
+          "explicacion": "La pregunta sí lleva la -n: noren + tzat."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Es para mi madre.",
+          "respuestas": [
+            "amarentzat da",
+            "nire amarentzat da",
+            "hau amarentzat da"
+          ],
+          "pista": "El dueño con -ren, y detrás -tzat."
+        }
+      ],
+      "subnivel": "9.5"
+    },
+    {
       "id": "u9-g35",
       "variantes": [
         {
@@ -3757,7 +3875,8 @@
             "naiz"
           ],
           "correcta": 0,
-          "explicacion": "Plural: zaizkit."
+          "explicacion": "Plural: zaizkit.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3770,7 +3889,8 @@
             "da"
           ],
           "correcta": 0,
-          "explicacion": "Singular y en negativo: ez zait gustatzen."
+          "explicacion": "Singular y en negativo: ez zait gustatzen.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3783,7 +3903,8 @@
             "duzu"
           ],
           "correcta": 0,
-          "explicacion": "A ti: zaizu."
+          "explicacion": "A ti: zaizu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3796,7 +3917,8 @@
             "bat"
           ],
           "correcta": 0,
-          "explicacion": "«asko» es «mucho», del primer tema de la unidad."
+          "explicacion": "«asko» es «mucho», del primer tema de la unidad.",
+          "teclea": true
         }
       ],
       "subnivel": "9.4"
@@ -3931,7 +4053,8 @@
             "naiz"
           ],
           "correcta": 0,
-          "explicacion": "Singular: zait."
+          "explicacion": "Singular: zait.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3945,6 +4068,79 @@
           ],
           "correcta": 0,
           "explicacion": "«batere ez» es «nada en absoluto»."
+        }
+      ],
+      "subnivel": "9.1"
+    },
+    {
+      "id": "u9-g52",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Muchos amigos. → ____",
+          "opciones": [
+            "asko lagun",
+            "lagunak asko",
+            "lagun asko",
+            "asko lagunak"
+          ],
+          "correcta": 2,
+          "explicacion": "Detrás del nombre y sin artículo: lagun asko.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tengo poco dinero. → ____ dut.",
+          "opciones": [
+            "Diru gutxi",
+            "Gutxi diru",
+            "Dirua gutxi",
+            "Gutxi dirua"
+          ],
+          "correcta": 0,
+          "explicacion": "«Gutxi» va detrás, y el nombre desnudo: diru gutxi."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Liburu asko gustatzen zaizkit» significa…",
+          "opciones": [
+            "Me gustan mucho los libros",
+            "Me gustan muchos libros",
+            "Me gusta mucho el libro",
+            "No me gustan muchos libros"
+          ],
+          "correcta": 1,
+          "explicacion": "«Liburu» va sin artículo y «asko» se le pega: muchos libros. Con «liburuak asko» sería «me gustan mucho los libros»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Me gustan mucho los libros. → ____ gustatzen zaizkit.",
+          "opciones": [
+            "Liburu asko",
+            "Asko liburuak",
+            "Asko liburu",
+            "Liburuak asko"
+          ],
+          "correcta": 3,
+          "explicacion": "Los libros, con su artículo, y «asko» aparte diciendo cuánto.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuántos libros tienes? → Zenbat ____ dituzu?",
+          "opciones": [
+            "liburuak",
+            "liburu",
+            "liburua",
+            "liburuek"
+          ],
+          "correcta": 1,
+          "explicacion": "Detrás de «zenbat», igual que detrás de un número, el nombre va desnudo."
         }
       ],
       "subnivel": "9.1"
@@ -4092,6 +4288,76 @@
             "zer esan nahi du"
           ],
           "pista": "«Querer decir» es «esan nahi», igual que en castellano."
+        }
+      ],
+      "subnivel": "9.2"
+    },
+    {
+      "id": "u9-g53",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "He visto a Ane. → ____ ikusi dut.",
+          "opciones": [
+            "Aneri",
+            "Ane",
+            "Anek",
+            "Aneren"
+          ],
+          "correcta": 1,
+          "explicacion": "Ane es a quien ves, no a quien le llega algo: va sin -ri, como «liburua ikusi dut».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Le ha dado un regalo a Ane. → ____ opari bat eman dio.",
+          "opciones": [
+            "Ane",
+            "Anek",
+            "Aneren",
+            "Aneri"
+          ],
+          "correcta": 3,
+          "explicacion": "Aquí sí: a Ane le llega el regalo. -ri, y el auxiliar «dio».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Conozco a Mikel. → ____ ezagutzen dut.",
+          "opciones": [
+            "Mikel",
+            "Mikeli",
+            "Mikelek",
+            "Mikelen"
+          ],
+          "correcta": 0,
+          "explicacion": "A Mikel no le das nada: es a quien conoces. Sin -ri."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En cuál de estas pone el euskera un -ri?",
+          "opciones": [
+            "He visto a Ane",
+            "Conozco a Ane",
+            "Le he dado un regalo a Ane",
+            "He visto la casa de Ane"
+          ],
+          "correcta": 2,
+          "explicacion": "Solo cuando a alguien le llega algo. En las otras, la «a» del castellano está por ser persona."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "He visto a Ane.",
+          "respuestas": [
+            "ane ikusi dut",
+            "nik ane ikusi dut"
+          ],
+          "pista": "Cambia a Ane por «el libro»: la «a» se cae."
         }
       ],
       "subnivel": "9.2"

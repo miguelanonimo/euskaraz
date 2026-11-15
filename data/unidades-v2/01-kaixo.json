@@ -1423,7 +1423,8 @@
             "etxea polit"
           ],
           "correcta": 1,
-          "explicacion": "El adjetivo va siempre detrás del sustantivo."
+          "explicacion": "El adjetivo va siempre detrás del sustantivo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2163,7 +2164,8 @@
             "euskara"
           ],
           "correcta": 0,
-          "explicacion": "Desde el mediodía hasta el anochecer."
+          "explicacion": "Desde el mediodía hasta el anochecer.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

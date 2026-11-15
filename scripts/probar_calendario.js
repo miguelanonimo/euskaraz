@@ -25,7 +25,7 @@ function sacarLinea(nombre) {
 const fns = ['hoy', 'ficha', 'estrenosHoy', 'apuntarEstreno', 'anotar',
              'elegirSesion', 'repartirAtrasos', 'recuento', 'frasePendientes'];
 const previo = `
-  ${['PASOS', 'CUPO_NUEVOS', 'TOPE_DIA', 'MEZCLA', 'REPARTIR_DESDE', 'MIN_NUEVOS'].map(sacarLinea).join('\n')}
+  ${['PASOS', 'CUPO_NUEVOS', 'TOPE_DIA', 'REPARTO_SESION', 'REPARTIR_DESDE', 'MIN_NUEVOS'].map(sacarLinea).join('\n')}
   var progreso = { srs: {}, estreno: null, repartido: 0 };
   var guardados = 0;
   function guardarProgreso(){ guardados++; }
@@ -279,6 +279,67 @@ comprobar('gastado el cupo, el goteo se para',
   api.elegirSesion(soloNuevas, 14, c => c).length === 0);
 comprobar('y el cupo es por tipo: los ejercicios no lo gastan',
   api.recuento(['g:a','g:b'], c => c).estrenables === 2);
+
+// ── Un acierto antes de tiempo no sube peldaño ──────────────────────────
+// Repetir un tema tres veces en una tarde mandaba sus ejercicios a dentro
+// de 16 días. Lo que se mide es acordarse con distancia, no a los diez
+// minutos.
+api.reset();
+api.anotar('g:tema', true);                        // primera vez: cuenta
+const tras1 = Object.assign({}, api.progreso.srs['g:tema']);
+api.anotar('g:tema', true);
+api.anotar('g:tema', true);
+const tras3 = api.progreso.srs['g:tema'];
+comprobar('el estreno sí cuenta', tras1.paso === 1 && tras1.toca === hoyEs + api.PASOS[1], JSON.stringify(tras1));
+comprobar('repetir el mismo día no sube peldaño', tras3.paso === 1, 'paso ' + tras3.paso);
+comprobar('ni mueve la fecha', tras3.toca === tras1.toca, 'toca ' + tras3.toca + ' frente a ' + tras1.toca);
+comprobar('pero los aciertos se apuntan', tras3.aciertos === 3, 'aciertos ' + tras3.aciertos);
+
+// Un fallo cuenta siempre, también antes de tiempo.
+api.anotar('g:tema', false);
+comprobar('un fallo adelantado devuelve al principio',
+  api.progreso.srs['g:tema'].paso === 0 && api.progreso.srs['g:tema'].toca === hoyEs + api.PASOS[0],
+  JSON.stringify(api.progreso.srs['g:tema']));
+// …y el acierto de después, el mismo día, no lo arregla: vuelve mañana.
+api.anotar('g:tema', true);
+comprobar('fallar y acertar el mismo día: sigue tocando mañana',
+  api.progreso.srs['g:tema'].paso === 0 && api.progreso.srs['g:tema'].toca === hoyEs + 1,
+  JSON.stringify(api.progreso.srs['g:tema']));
+
+// Lo aplazado por el reparto no va adelantado: su intervalo ya pasó.
+api.reset();
+api.progreso.srs['g:aplazada'] = { paso: 2, visto: hoyEs - 10, toca: hoyEs + 2, aciertos: 2, fallos: 0 };
+api.anotar('g:aplazada', true);
+comprobar('ponerse al día haciendo rondas cuenta',
+  api.progreso.srs['g:aplazada'].paso === 3 && api.progreso.srs['g:aplazada'].toca === hoyEs + api.PASOS[3],
+  JSON.stringify(api.progreso.srs['g:aplazada']));
+
+// Ni lo que venció con la escala corta de antes, aunque con la nueva le falte tiempo.
+api.progreso.srs['g:escala-vieja'] = { paso: 6, visto: hoyEs - 81, toca: hoyEs - 17, aciertos: 6, fallos: 0 };
+api.anotar('g:escala-vieja', true);
+comprobar('lo vencido por su fecha cuenta aunque no haya pasado el intervalo nuevo',
+  api.progreso.srs['g:escala-vieja'].paso === 7, JSON.stringify(api.progreso.srs['g:escala-vieja']));
+
+// Y al llegar el día, el acierto sí sube.
+api.progreso.srs['g:llega'] = { paso: 1, visto: hoyEs - 3, toca: hoyEs, aciertos: 1, fallos: 0, repaso: hoyEs - 1 };
+api.anotar('g:llega', true);
+comprobar('el día que toca, sube', api.progreso.srs['g:llega'].paso === 2 && api.progreso.srs['g:llega'].repaso === undefined,
+  JSON.stringify(api.progreso.srs['g:llega']));
+
+// Estando al día, «otra ronda» no saca las mismas: lo tocado hoy va al final.
+api.reset();
+const alDia = [];
+for (let i = 0; i < 40; i++) {
+  api.progreso.srs['g:d' + i] = { paso: 2, visto: hoyEs - 2, toca: hoyEs + 5 + i, aciertos: 2, fallos: 0 };
+  alDia.push('g:d' + i);
+}
+const ronda1 = api.elegirSesion(alDia, 15, c => c);
+ronda1.forEach(k => api.anotar(k, true));
+const ronda2 = api.elegirSesion(alDia, 15, c => c);
+comprobar('la primera ronda al día coge lo que vence antes', ronda1.indexOf('g:d0') >= 0 && ronda1.length === 15);
+comprobar('la segunda ronda saca otras quince', ronda2.every(k => ronda1.indexOf(k) < 0),
+  'repetidas: ' + ronda2.filter(k => ronda1.indexOf(k) >= 0).join(', '));
+comprobar('y la primera no ha movido ninguna fecha', ronda1.every((k) => api.progreso.srs[k].paso === 2));
 
 if (fallos) { console.error(fallos + ' fallo(s)'); process.exit(1); }
 console.log('calendario OK');

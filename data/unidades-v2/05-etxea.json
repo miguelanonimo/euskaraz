@@ -83,6 +83,18 @@
       "subnivel": "5.1"
     },
     {
+      "titulo": "Tras consonante no es -n: es -ean",
+      "cuerpo": "Con <b>etxea</b> → <b>etxean</b> parece que basta con pegarle una -n al artículo. Funciona mientras la palabra acabe en vocal.\n\nSi acaba en <b>consonante</b>, el «en» es <b>-ean</b>:\n\n<b>lan</b> (trabajo) → <b>lan<u>ean</u></b> (en el trabajo)\n<b>komun</b> (baño) → <b>komun<u>ean</u></b> (en el baño)\n\nDecir «lanan» o «komunan» es un tropiezo muy corriente de quien viene del castellano: se pega la -n sin mirar cómo acaba la palabra.\n\nCon los nombres de lugar pasa lo mismo, solo que sin la -a-, porque no llevan artículo: <b>Gasteiz</b> → <b>Gasteiz<u>en</u></b>.",
+      "ejemplos": [
+        {
+          "eu": "lanean nago",
+          "es": "Estoy en el trabajo.",
+          "audio": "unidades/u6/lanean-nago.mp3"
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
       "titulo": "«Bere» o «haren»: dos maneras de decir «su»",
       "cuerpo": "En la segunda unidad te avisé de que <i>haren</i> tenía compañera, <b>bere</b>, y de que la diferencia no se podía ver todavía. Aquí sí, porque ya sabes montar una frase con alguien dentro.\n\n<b>Jon bere etxean dago</b> — Jon está en su casa. En la suya.\n<b>Jon haren etxean dago</b> — Jon está en su casa. En la de otro.\n\nLa misma frase en castellano, dos situaciones distintas en euskera. El castellano dice «su» para las dos y lo deja al contexto; el euskera lo resuelve con la palabra.\n\n<b>La regla, en una línea</b>\nSi el dueño es quien hace o recibe la acción de esa misma frase, <b>bere</b>. Si el dueño está fuera de la frase, <b>haren</b>.\n\nEso explica por qué en la unidad 2 solo salía <i>haren</i>: con «ser» el dueño nunca está dentro (<i>haren laguna ikaslea da</i> — su amigo es estudiante).\n\n<b>En plural, igual</b>\n<b>beren</b> — lo suyo, de ellos mismos\n<b>haien</b> — lo de aquellos otros\n\n<b>Y ahora, la realidad</b>\nEso es la norma escrita. Hablando —y en Bizkaia especialmente— <b>bere</b> se ha comido a <i>haren</i> y se usa para todo. Euskaltzaindia no ha dictado una norma cerrada sobre esto, pero su gramática y su manual recogen la regla de arriba y avisan de que en los dialectos occidentales se está perdiendo la distinción, con la ambigüedad que eso trae.\n\nTraducido a lo práctico: si oyes <i>bere</i> donde esperabas <i>haren</i>, no es que hablen mal, es el uso real. Y si escribes, mantener la diferencia es fácil y se entiende mejor.",
       "ejemplos": [
@@ -106,7 +118,7 @@
     },
     {
       "titulo": "Las cuatro preguntas de lugar, completas",
-      "cuerpo": "Ahora ya puedes cerrar el cuadro que empezaste en la tercera unidad:\n\n<b>Non?</b> (¿dónde?) → <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\nCuatro preguntas, cuatro sufijos, y la respuesta lleva siempre la misma cola que la pregunta.\n\nEste sistema de sufijos que encajan unos con otros es el corazón del euskera. Cuando llegues a los casos que faltan (a quién, con quién, para quién), ya sabrás cómo funciona el mecanismo.\n\nY las tres palabras con las que se contesta sin nombrar el sitio:\n\n<b>hemen</b> — aquí\n<b>hor</b> — ahí\n<b>han</b> — allí\n\nSon las hermanas de <i>hau</i>, <i>hori</i> y <i>hura</i>, los demostrativos de la tercera unidad, y van con su mismo criterio: no cuenta la distancia en metros, sino de quién está cerca.\n\n<b>hemen</b> (aquí) ↔ <i>hau</i> (este) — donde estoy yo\n<b>hor</b> (ahí) ↔ <i>hori</i> (ese) — donde estás tú\n<b>han</b> (allí) ↔ <i>hura</i> (aquel) — lejos de los dos\n\nY entran en el mismo cuadro de arriba — <i>hemendik</i> es «desde aquí», <i>hona</i> «hacia aquí».",
+      "cuerpo": "Ahora ya puedes cerrar el cuadro que empezaste en la tercera unidad:\n\n<b>Non?</b> (¿dónde?) → <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\nCuatro preguntas, cuatro sufijos, y la respuesta lleva siempre la misma cola que la pregunta.\n\nEn clase, cada pregunta da nombre a su caso, igual que pasaba con NOR y NORK: NON, NORA, NONDIK y NONGO. Si oyes «el caso NORA», es este <i>-ra</i>.\n\nEste sistema de sufijos que encajan unos con otros es el corazón del euskera. Cuando llegues a los casos que faltan (a quién, con quién, para quién), ya sabrás cómo funciona el mecanismo.\n\nY las tres palabras con las que se contesta sin nombrar el sitio:\n\n<b>hemen</b> — aquí\n<b>hor</b> — ahí\n<b>han</b> — allí\n\nSon las hermanas de <i>hau</i>, <i>hori</i> y <i>hura</i>, los demostrativos de la tercera unidad, y van con su mismo criterio: no cuenta la distancia en metros, sino de quién está cerca.\n\n<b>hemen</b> (aquí) ↔ <i>hau</i> (este) — donde estoy yo\n<b>hor</b> (ahí) ↔ <i>hori</i> (ese) — donde estás tú\n<b>han</b> (allí) ↔ <i>hura</i> (aquel) — lejos de los dos\n\nY entran en el mismo cuadro de arriba — <i>hemendik</i> es «desde aquí», <i>hona</i> «hacia aquí».",
       "ejemplos": [
         {
           "eu": "non zaude? — etxean nago",
@@ -146,6 +158,12 @@
           "audio": "unidades/u6/nire-herri-polita.mp3"
         }
       ],
+      "subnivel": "5.3"
+    },
+    {
+      "titulo": "«¿Cómo es?» se pregunta con «nolakoa»",
+      "cuerpo": "Para preguntar cómo <b>está</b> alguien, o cómo se hace algo, tienes <b>nola</b>, de la tercera unidad. Pero para preguntar cómo <b>es</b> una cosa —grande, pequeña, bonita— la pregunta es otra:\n\n<b>nolakoa da?</b> — ¿cómo es?\n\nEs <i>nola</i> con el <b>-ko</b> de <i>Bilbokoa</i> y el artículo detrás. Y, como siempre, la pregunta lleva la misma cola que la respuesta: preguntas con <b>-a</b> y te contestan con un adjetivo con su <b>-a</b>.\n\n<b>Nolakoa da zure etxea?</b> — ¿Cómo es tu casa?\n<b>Handia da.</b> — Es grande.\n\nSi preguntas por varias cosas, en plural:\n\n<b>Nolakoak dira?</b> — ¿Cómo son?\n<b>Txikiak dira.</b> — Son pequeñas.\n\nEl tropiezo de quien viene del castellano es usar <i>nola</i> para las dos cosas, porque nosotros decimos «cómo» en ambas: «Nola da zure etxea?». <i>Nola</i> pregunta por la manera o el estado; <i>nolakoa</i>, por cómo es algo.",
+      "ejemplos": [],
       "subnivel": "5.3"
     },
     {
@@ -216,6 +234,12 @@
       "subnivel": "5.4"
     },
     {
+      "titulo": "«Es una casa bonita»: aquí basta la -a",
+      "cuerpo": "La ficha anterior decía que «una» es <b>bat</b>: <i>mahai zuri bat</i>, una mesa blanca. Es así cuando nombras una cosa cualquiera, y sobre todo cuando la cuentas: tengo <b>una</b>, quiero <b>una</b>.\n\nPero vas a encontrarte frases donde el castellano dice «una» y el euskera se queda con su artículo de siempre:\n\n<b>Etxe polita da.</b> — Es una casa bonita.\n<b>Txakur handia da.</b> — Es un perro grande.\n\nPasa cuando dices <b>cómo es</b> algo o <b>qué es</b>. Ahí el «una» castellano no cuenta nada —no estás diciendo que sea una y no dos—, y al euskera le basta la <b>-a</b>.\n\nNo es una regla nueva: es la de las profesiones, que tienes desde la segunda unidad. <i>Ni irakaslea naiz</i>, soy profesor.\n\nSi se te escapa un <i>bat</i> —«etxe polit bat da»— te van a entender igual, y también lo oirás. Esto no es para que te corrijas: es para que no te extrañe leer <i>etxe polita da</i> y entender «es <b>una</b> casa bonita». No falta nada.\n\nY una pista para orientarte: si puedes cambiar «un» por «dos» y la frase sigue teniendo sentido, estás contando, y ahí el <b>bat</b> va seguro.\n\n<b>Katu bat daukat.</b> — Tengo un gato. Podrían ser dos.",
+      "ejemplos": [],
+      "subnivel": "5.4"
+    },
+    {
       "titulo": "«Laranja» es la fruta y el color",
       "cuerpo": "Como en castellano, que también usamos «naranja» para las dos cosas.\n\n<b>laranja</b> — la naranja (la fruta), y también naranja (el color)\n\nNo hay truco ni palabra aparte que aprender: el contexto lo resuelve solo, igual que en castellano nadie confunde «me como una naranja» con «una camisa naranja».",
       "ejemplos": [
@@ -269,6 +293,12 @@
           "audio": "unidades/u5/bainugela-handia-da.mp3"
         }
       ],
+      "subnivel": "5.2"
+    },
+    {
+      "titulo": "Encima, debajo, al lado: «mahai gainean»",
+      "cuerpo": "Ya sabes decir dónde está algo: <i>sukaldean dago</i>, está en la cocina. Para afinar —encima de la mesa, debajo de la cama— el euskera pone una palabra de sitio <b>detrás</b> del nombre:\n\n<b>gainean</b> — encima\n<b>azpian</b> — debajo\n<b>ondoan</b> — al lado\n<b>aurrean</b> — delante\n<b>atzean</b> — detrás\n<b>barruan</b> — dentro\n\nLas seis acaban en <b>-an</b>: llevan puesto el «en» que ya conoces. Y el nombre que va delante se queda <b>desnudo</b>, sin artículo:\n\n<b>mahai gainean</b> — encima de la mesa\n<b>ohe azpian</b> — debajo de la cama\n<b>ate ondoan</b> — al lado de la puerta\n<b>etxe aurrean</b> — delante de casa\n<b>armairu barruan</b> — dentro del armario\n\nEl orden es otra vez el contrario del castellano: primero la mesa, después el «encima». Y el tropiezo corriente es dejarle el artículo al nombre —«mahaia gainean»—, porque así se aprendió la palabra.\n\nDentro de una frase:\n\n<b>katua ohe azpian dago</b> — El gato está debajo de la cama.\n<b>telebista mahai gainean dago</b> — La televisión está encima de la mesa.\n\nCon personas no vale dejarlo desnudo. Quien hace de referencia lleva el «de» de <i>nire</i>:\n\n<b>nire ondoan</b> — a mi lado\n<b>zure atzean</b> — detrás de ti",
+      "ejemplos": [],
       "subnivel": "5.2"
     },
     {
@@ -854,7 +884,8 @@
             "dago"
           ],
           "correcta": 1,
-          "explicacion": "Ubicación → «egon». Con «ni» va «nago»."
+          "explicacion": "Ubicación → «egon». Con «ni» va «nago».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -867,7 +898,8 @@
             "gaude"
           ],
           "correcta": 1,
-          "explicacion": "Con «zu» + «egon» va «zaude»."
+          "explicacion": "Con «zu» + «egon» va «zaude».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -880,7 +912,8 @@
             "daude"
           ],
           "correcta": 1,
-          "explicacion": "Ubicación → «egon». Con «hura» va «dago»."
+          "explicacion": "Ubicación → «egon». Con «hura» va «dago».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -893,7 +926,8 @@
             "gara"
           ],
           "correcta": 1,
-          "explicacion": "«Egon» también sirve para estados pasajeros, como en castellano."
+          "explicacion": "«Egon» también sirve para estados pasajeros, como en castellano.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -906,7 +940,8 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "«Bera» equivale a «hura», así que el verbo es «dago»."
+          "explicacion": "«Bera» equivale a «hura», así que el verbo es «dago».",
+          "teclea": true
         }
       ],
       "subnivel": "5.1"
@@ -1041,7 +1076,8 @@
             "Bilbotik"
           ],
           "correcta": 1,
-          "explicacion": "«-n» indica ubicación. «-koa» sería procedencia y «-ra» destino."
+          "explicacion": "«-n» indica ubicación. «-koa» sería procedencia y «-ra» destino.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1517,7 +1553,8 @@
             "dute"
           ],
           "correcta": 1,
-          "explicacion": "Con «haiek» + egon → «daude»."
+          "explicacion": "Con «haiek» + egon → «daude».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1530,7 +1567,8 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "Ubicación → «egon». Con «gu» va «gaude»."
+          "explicacion": "Ubicación → «egon». Con «gu» va «gaude».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1967,7 +2005,8 @@
             "mahaia zuri"
           ],
           "correcta": 1,
-          "explicacion": "Se quita el artículo -a y se añade «bat» al final."
+          "explicacion": "Se quita el artículo -a y se añade «bat» al final.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2422,7 +2461,8 @@
             "polita"
           ],
           "correcta": 0,
-          "explicacion": "(él/ella) está = dago."
+          "explicacion": "(él/ella) está = dago.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2511,7 +2551,8 @@
             "zaharra"
           ],
           "correcta": 0,
-          "explicacion": "la cama = ohea."
+          "explicacion": "la cama = ohea.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2600,7 +2641,8 @@
             "sofa"
           ],
           "correcta": 0,
-          "explicacion": "bonito/a = polita."
+          "explicacion": "bonito/a = polita.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2689,7 +2731,8 @@
             "urdina"
           ],
           "correcta": 0,
-          "explicacion": "Como en «Parte Zaharra»."
+          "explicacion": "Como en «Parte Zaharra».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2778,7 +2821,8 @@
             "telebista"
           ],
           "correcta": 0,
-          "explicacion": "pequeño/a = txikia."
+          "explicacion": "pequeño/a = txikia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2810,7 +2854,8 @@
             "bat mahai zuria"
           ],
           "correcta": 0,
-          "explicacion": "El -a final es «la»."
+          "explicacion": "El -a final es «la».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2823,7 +2868,8 @@
             "mahaia bat"
           ],
           "correcta": 1,
-          "explicacion": "Se quita el artículo y se pone «bat» al final."
+          "explicacion": "Se quita el artículo y se pone «bat» al final.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3113,6 +3159,75 @@
       ]
     },
     {
+      "id": "u5-g57",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Txakur handia da» se puede traducir por…",
+          "opciones": [
+            "Tengo un perro grande",
+            "Es un perro grande",
+            "Los perros son grandes",
+            "No es un perro grande"
+          ],
+          "correcta": 1,
+          "explicacion": "Al decir cómo es algo, al euskera le basta la -a donde el castellano dice «un»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tengo un gato. → ____ daukat.",
+          "opciones": [
+            "Katu bat",
+            "Katua bat",
+            "Katu",
+            "Bat katu"
+          ],
+          "correcta": 0,
+          "explicacion": "Aquí cuentas —podrían ser dos—, así que va «bat», y el nombre sin artículo.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En cuál de estas estás contando, y por eso el «bat» va seguro?",
+          "opciones": [
+            "Es un perro grande",
+            "Soy estudiante",
+            "Tengo un perro",
+            "Esto es un perro"
+          ],
+          "correcta": 2,
+          "explicacion": "Podrías tener dos. En las otras dices qué es o cómo es algo, y al euskera le basta el artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ni irakaslea naiz» es «soy profesor». ¿Qué hace ahí la -a?",
+          "opciones": [
+            "Marca el plural",
+            "Dice que es una profesora",
+            "Lo mismo que en «etxe polita da»: decir qué es, sin contar",
+            "Nada: sobra"
+          ],
+          "correcta": 2,
+          "explicacion": "Cuando dices qué es alguien o cómo es algo, va el artículo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Es una casa bonita.",
+          "respuestas": [
+            "etxe polita da",
+            "etxe polit bat da"
+          ],
+          "pista": "Dices cómo es: con el artículo basta."
+        }
+      ],
+      "subnivel": "5.4"
+    },
+    {
       "id": "u5-g04",
       "variantes": [
         {
@@ -3126,7 +3241,8 @@
             "ditut"
           ],
           "correcta": 1,
-          "explicacion": "«Nik» + un objeto en singular («txakurra») → «dut»."
+          "explicacion": "«Nik» + un objeto en singular («txakurra») → «dut».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3139,7 +3255,8 @@
             "ditu"
           ],
           "correcta": 0,
-          "explicacion": "«Hark» + objeto singular → «du»."
+          "explicacion": "«Hark» + objeto singular → «du».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3152,7 +3269,8 @@
             "dute"
           ],
           "correcta": 0,
-          "explicacion": "«Guk» + objeto singular → «dugu»."
+          "explicacion": "«Guk» + objeto singular → «dugu».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3165,7 +3283,8 @@
             "du"
           ],
           "correcta": 1,
-          "explicacion": "«Zuk» + objeto singular → «duzu»."
+          "explicacion": "«Zuk» + objeto singular → «duzu».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3178,7 +3297,8 @@
             "du"
           ],
           "correcta": 1,
-          "explicacion": "«Haiek» + objeto singular → «dute»."
+          "explicacion": "«Haiek» + objeto singular → «dute».",
+          "teclea": true
         }
       ],
       "subnivel": "5.5",
@@ -3372,7 +3492,8 @@
             "txerria"
           ],
           "correcta": 0,
-          "explicacion": "la vaca = behia."
+          "explicacion": "la vaca = behia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3461,7 +3582,8 @@
             "laurogeita hamar"
           ],
           "correcta": 0,
-          "explicacion": "el conejo = untxia."
+          "explicacion": "el conejo = untxia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3550,7 +3672,8 @@
             "hirurogei"
           ],
           "correcta": 0,
-          "explicacion": "el pájaro = txoria."
+          "explicacion": "el pájaro = txoria.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3639,7 +3762,8 @@
             "duzu"
           ],
           "correcta": 0,
-          "explicacion": "el caballo = zaldia."
+          "explicacion": "el caballo = zaldia.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3844,6 +3968,75 @@
       "subnivel": "5.2"
     },
     {
+      "id": "u5-g55",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Encima de la mesa. → ____",
+          "opciones": [
+            "mahaia gainean",
+            "gainean mahai",
+            "mahai gainean",
+            "mahai azpian"
+          ],
+          "correcta": 2,
+          "explicacion": "Primero la mesa, sin artículo, y después «gainean». «Azpian» sería debajo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El gato está debajo de la cama. → Katua ____ dago.",
+          "opciones": [
+            "ohe azpian",
+            "ohea azpian",
+            "ohe gainean",
+            "azpian ohe"
+          ],
+          "correcta": 0,
+          "explicacion": "El nombre va desnudo delante de la palabra de sitio: ohe azpian."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ate ondoan» significa…",
+          "opciones": [
+            "encima de la puerta",
+            "al lado de la puerta",
+            "detrás de la puerta",
+            "dentro de la puerta"
+          ],
+          "correcta": 1,
+          "explicacion": "Ondoan: al lado. Y «ate», la puerta, sin su artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "A mi lado. → ____ ondoan",
+          "opciones": [
+            "ni",
+            "nik",
+            "nire",
+            "niri"
+          ],
+          "correcta": 2,
+          "explicacion": "Con personas, la referencia lleva el «de»: nire ondoan.",
+          "teclea": true
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "debajo de la mesa",
+          "respuestas": [
+            "mahai azpian",
+            "mahaiaren azpian"
+          ],
+          "pista": "Primero la mesa, sin artículo; después la palabra de sitio."
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
       "id": "u5-g52",
       "variantes": [
         {
@@ -3870,7 +4063,8 @@
             "bat etxe berri"
           ],
           "correcta": 0,
-          "explicacion": "El «bat» cierra el grupo: etxe berri bat."
+          "explicacion": "El «bat» cierra el grupo: etxe berri bat.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3910,6 +4104,74 @@
           ],
           "correcta": 0,
           "explicacion": "Sobre todo hablando del mar o del cielo."
+        }
+      ],
+      "subnivel": "5.3"
+    },
+    {
+      "id": "u5-g56",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo es tu casa? → ____ da zure etxea?",
+          "opciones": [
+            "Nola",
+            "Nolako",
+            "Nolakoak",
+            "Nolakoa"
+          ],
+          "correcta": 3,
+          "explicacion": "Preguntas cómo es una cosa: nolakoa, con su artículo. «Nola» preguntaría por la manera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Nolakoa da zure etxea? —____",
+          "opciones": [
+            "Ondo",
+            "Handia da",
+            "Bilbon dago",
+            "Handi"
+          ],
+          "correcta": 1,
+          "explicacion": "La respuesta lleva la misma -a que la pregunta: un adjetivo con su artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Preguntas por varias cosas: ¿cómo son? → ____ dira?",
+          "opciones": [
+            "Nolakoa",
+            "Nola",
+            "Nolakoak",
+            "Nolako"
+          ],
+          "correcta": 2,
+          "explicacion": "Varias, y el verbo en plural: el artículo también, nolakoak."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Con cuál de estas preguntas cómo ESTÁ alguien?",
+          "opciones": [
+            "nolakoa",
+            "nola",
+            "nongoa",
+            "nor"
+          ],
+          "correcta": 1,
+          "explicacion": "Nola zaude? — Ondo. Para cómo ES algo, nolakoa."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Cómo es tu casa?",
+          "respuestas": [
+            "nolakoa da zure etxea",
+            "zure etxea nolakoa da"
+          ],
+          "pista": "No es «nola»: lleva -ko y el artículo."
         }
       ],
       "subnivel": "5.3"
@@ -4017,7 +4279,8 @@
             "zure"
           ],
           "correcta": 0,
-          "explicacion": "El dueño es Jon, que es de quien va la frase: «bere»."
+          "explicacion": "El dueño es Jon, que es de quien va la frase: «bere».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4030,7 +4293,8 @@
             "zuen"
           ],
           "correcta": 0,
-          "explicacion": "El dueño no está en la frase: «haren». Con «bere» sería la casa del propio Jon."
+          "explicacion": "El dueño no está en la frase: «haren». Con «bere» sería la casa del propio Jon.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -4056,7 +4320,8 @@
             "Gure"
           ],
           "correcta": 0,
-          "explicacion": "El plural de «bere» es «beren». «Haien» sería la casa de otros."
+          "explicacion": "El plural de «bere» es «beren». «Haien» sería la casa de otros.",
+          "teclea": true
         },
         {
           "tipo": "traducir",
@@ -4066,6 +4331,73 @@
             "jon bere etxean dago"
           ],
           "pista": "Lo suyo propio lleva «bere»."
+        }
+      ],
+      "subnivel": "5.1"
+    },
+    {
+      "id": "u5-g54",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Lan» acaba en consonante. ¿Cómo se dice «en el trabajo»?",
+          "opciones": [
+            "lanan",
+            "lanean",
+            "lana",
+            "lanera"
+          ],
+          "correcta": 1,
+          "explicacion": "Tras consonante, -ean: lan + ean. «Lanan» es el tropiezo de siempre: pegar la -n sin mirar cómo acaba la palabra."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Komun» acaba en consonante. ¿Cómo se dice «en el baño»?",
+          "opciones": [
+            "komunean",
+            "komunan",
+            "komuna",
+            "komunera"
+          ],
+          "correcta": 0,
+          "explicacion": "Komun + ean. Con «etxe», que acaba en vocal, es -an: etxean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Una acaba en vocal y la otra en consonante. ¿Qué pareja está bien escrita?",
+          "opciones": [
+            "etxean · lanan",
+            "etxen · lanen",
+            "etxean · lanean",
+            "etxeean · lanean"
+          ],
+          "correcta": 2,
+          "explicacion": "Vocal, -an: etxean. Consonante, -ean: lanean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Estoy en el trabajo. → ____ nago.",
+          "opciones": [
+            "Lanan",
+            "Lanera",
+            "Lana",
+            "Lanean"
+          ],
+          "correcta": 3,
+          "explicacion": "«Lanean nago». «Lan» acaba en consonante, así que el «en» es -ean."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "en el baño",
+          "respuestas": [
+            "komunean"
+          ],
+          "pista": "«Komun» acaba en consonante: no basta con una -n."
         }
       ],
       "subnivel": "5.1"

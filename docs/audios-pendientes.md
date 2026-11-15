@@ -1,5 +1,164 @@
 # Audios pendientes — para Miguel
 
+## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v141): 121 frases sin audio
+
+Ric y Claude repasaron la gramática del curso contra los «Errores típicos» de la
+*Gramática didáctica* de Zubiri y salieron veinticinco fichas nuevas. Los ejemplos van
+escritos en el cuerpo de la ficha, en líneas `<b>frase</b> — traducción`, y esas
+líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
+
+**No hay que preparar nada.** El guion de siempre las encuentra solo:
+
+```
+cd scripts/generar-audio
+node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 121
+node generar-cuerpos.mjs           # genera, sube y las enlaza en audiosExtra
+```
+
+Después, commit de `data/unidades-v2/` y listo.
+
+Un cambio en el guion y en la app (v139): las líneas que llevan la terminación
+subrayada dentro de la negrita (`<b>Mikel<u>ek</u> katu bat du</b>`) antes no
+contaban como frase, y eran justo las que más enseñan. Ahora el `<u>` de dentro se
+ignora al buscar el audio, en `generar-cuerpos.mjs` y en `enriquecerCuerpoConAudio`.
+Lo cubre `scripts/probar_audio_ficha.js`.
+
+Lo que va a generar:
+
+| Tema | Frase | Traducción |
+|---|---|---|
+| 4.1 | hiru lagunak | los tres amigos |
+| 4.1 | hiru lagun gara | Somos tres amigos |
+| 4.1 | hiru lagunak irakasleak dira | Los tres amigos son profesores |
+| 4.4 | Anek txakur bat du | Ane tiene un perro |
+| 4.4 | Mikelek katu bat du | Mikel tiene un gato |
+| 4.4 | lagunak txakur bat du | El amigo tiene un perro |
+| 4.4 | irakasleak bi katu ditu | La profesora tiene dos gatos |
+| 4.4 | Ane ikaslea da | Ane es estudiante |
+| 4.7 | lagunak irakasleak dira | Los amigos son profesores |
+| 4.7 | lagunek txakur bat dute | Los amigos tienen un perro |
+| 4.7 | lagunek | los amigos, cuando tienen o hacen algo |
+| 4.7 | nork? | ¿quién?, cuando ese quién hace algo a algo |
+| 4.7 | Nor da irakaslea? | ¿Quién es el profesor? |
+| 4.7 | Nork du txakurra? | ¿Quién tiene el perro? |
+| 4.6 | seme-alabak | los hijos, hijos e hijas |
+| 4.6 | aitona-amonak | los abuelos, abuelo y abuela |
+| 4.6 | osaba-izebak | los tíos, tío y tía |
+| 4.6 | senar-emazteak | el matrimonio, marido y mujer |
+| 4.6 | Zenbat seme-alaba dituzu? | ¿Cuántos hijos tienes? |
+| 4.6 | Hiru seme-alaba ditut. | Tengo tres hijos |
+| 4.6 | aitaren anaia | el hermano de mi padre |
+| 4.6 | amaren ahizpa | la hermana de mi madre |
+| 4.6 | lagunaren etxea | la casa del amigo |
+| 4.6 | Aneren etxea | la casa de Ane |
+| 4.6 | Mikelen arreba | la hermana de Mikel |
+| 4.6 | aitaren aita | el padre de mi padre: aitona |
+| 4.6 | etxe hau nirea da | Esta casa es mía |
+| 4.6 | etxe hau Anerena da | Esta casa es de Ane |
+| 4.6 | nirea | mío, mía |
+| 4.6 | zurea | tuyo, tuya |
+| 4.6 | harena | suyo, de él o de ella |
+| 4.6 | gurea | nuestro, nuestra |
+| 4.6 | zuena | vuestro, vuestra |
+| 4.6 | haiena | suyo, de ellos o de ellas |
+| 5.3 | nolakoa da? | ¿cómo es? |
+| 5.3 | Nolakoa da zure etxea? | ¿Cómo es tu casa? |
+| 5.3 | Handia da. | Es grande |
+| 5.3 | Nolakoak dira? | ¿Cómo son? |
+| 5.3 | Txikiak dira. | Son pequeñas |
+| 5.4 | Etxe polita da. | Es una casa bonita |
+| 5.4 | Txakur handia da. | Es un perro grande |
+| 5.4 | Katu bat daukat. | Tengo un gato |
+| 5.2 | gainean | encima |
+| 5.2 | azpian | debajo |
+| 5.2 | ondoan | al lado |
+| 5.2 | aurrean | delante |
+| 5.2 | atzean | detrás |
+| 5.2 | barruan | dentro |
+| 5.2 | mahai gainean | encima de la mesa |
+| 5.2 | ohe azpian | debajo de la cama |
+| 5.2 | ate ondoan | al lado de la puerta |
+| 5.2 | etxe aurrean | delante de casa |
+| 5.2 | armairu barruan | dentro del armario |
+| 5.2 | katua ohe azpian dago | El gato está debajo de la cama |
+| 5.2 | telebista mahai gainean dago | La televisión está encima de la mesa |
+| 5.2 | nire ondoan | a mi lado |
+| 5.2 | zure atzean | detrás de ti |
+| 6.1 | hirurak eta laurdenetan | a las tres y cuarto |
+| 6.1 | laurak laurden gutxitan | a las cuatro menos cuarto |
+| 6.1 | hiruretan | a las tres |
+| 6.2 | larunbat gauean | el sábado por la noche |
+| 6.2 | ostiral arratsaldean | el viernes por la tarde |
+| 6.2 | larunbat goizean | el sábado por la mañana |
+| 6.3 | maiatzaren bosta | el cinco de mayo |
+| 6.3 | urtarrilaren hogeia | el veinte de enero |
+| 6.3 | Gaur maiatzaren bosta da. | Hoy es cinco de mayo |
+| 6.3 | maiatzaren bostean | el cinco de mayo, cuando pasa algo |
+| 6.3 | urtarrilaren hogeian | el veinte de enero, cuando pasa algo |
+| 6.3 | Nire urtebetetzea maiatzaren bostean da. | Mi cumpleaños es el cinco de mayo |
+| 6.4 | hotz handia egiten du | Hace mucho frío |
+| 6.4 | bero handia egiten du | Hace mucho calor |
+| 6.4 | bero handia dago hemen | Hace mucho calor aquí |
+| 7.1 | lagun honek kafea edaten du | Este amigo bebe café |
+| 7.1 | ikasle hori Bilbokoa da | Ese estudiante es de Bilbao |
+| 7.1 | ikasle horrek euskara ikasten du | Ese estudiante aprende euskera |
+| 7.5 | garagardo bat, mesedez | una cerveza, por favor |
+| 7.5 | bi garagardo, mesedez | dos cervezas, por favor |
+| 7.5 | hiru kafe eta ardo bat | tres cafés y un vino |
+| 7.5 | kilo bat sagar | un kilo de manzanas |
+| 7.5 | litro bat esne | un litro de leche |
+| 7.5 | botila bat ardo | una botella de vino |
+| 7.5 | kilo bat patata, mesedez | Un kilo de patatas, por favor |
+| 7.5 | bi litro esne nahi dut | Quiero dos litros de leche |
+| 7.5 | beste kafe bat, mesedez | Otro café, por favor |
+| 7.5 | beste garagardo bat | otra cerveza |
+| 7.5 | beste bat | otro, otra, sin decir de qué |
+| 7.5 | gose naiz | tengo hambre |
+| 7.5 | egarri naiz | tengo sed |
+| 7.5 | gose zara? | ¿Tienes hambre? |
+| 7.5 | egarri gara | Tenemos sed |
+| 7.5 | ez naiz gose | No tengo hambre |
+| 7.5 | oso gose naiz | Tengo mucha hambre |
+| 8.3 | lanera noa | Voy al trabajo |
+| 8.3 | lanetik nator | Vengo del trabajo |
+| 8.4 | ez dut joan nahi | No quiero ir |
+| 8.4 | ez dut lan egin behar | No tengo que trabajar |
+| 8.4 | ez dut nahi | No quiero |
+| 9.1 | lagun asko | muchos amigos |
+| 9.1 | diru gutxi | poco dinero |
+| 9.1 | liburu asko ditut | Tengo muchos libros |
+| 9.1 | diru gutxi dut | Tengo poco dinero |
+| 9.1 | liburu asko gustatzen zaizkit | Me gustan muchos libros |
+| 9.2 | Ane ikusi dut | He visto a Ane |
+| 9.2 | liburua ikusi dut | He visto el libro |
+| 9.2 | Miren ezagutzen dut | Conozco a Miren |
+| 10.4 | ikasten hasi naiz | He empezado a estudiar |
+| 10.4 | euskara ikasten hasi naiz | He empezado a aprender euskera |
+| 10.4 | lanean hasi da | Ha empezado a trabajar |
+| 10.4 | liburua hasi dut | He empezado el libro |
+| 10.4 | irakurtzen hasi naiz | He empezado a leer |
+| 11.1 | joan beharko dut | Tendré que ir |
+| 11.1 | egin behar dugu | Tenemos que hacerlo |
+| 11.1 | egin beharko dugu | Tendremos que hacerlo |
+| 12.1 | Euskara ikasten al duzu? | ¿Estudias euskera? (con euskaraz sería «¿estudias en euskera?») |
+| 12.1 | badakit | lo sé, ya lo sé |
+| 12.1 | banoa | me voy |
+| 12.1 | badator | ya viene |
+| 12.1 | badago | hay, sí que hay |
+| 12.1 | Badago ogirik? | ¿Hay pan? |
+| 12.1 | Bai, badago. | Sí, hay |
+| 12.1 | Ez, ez dago. | No, no hay |
+
+**Vocabulario que quizá merezca entrar en el Diccionario** (decisión de Ric; hoy solo
+vive en las fichas): *gose*, *egarri* (7.5) y las seis palabras de sitio de 5.2
+—*gainean, azpian, ondoan, aurrean, atzean, barruan*—.
+
+De paso: en la ficha de bizkaiera del tema 6.2 se quitó la frase «barikuan gabean»,
+que no apareció en ninguna fuente (Labayru da «zapatu arratsaldean», con el día sin
+terminación). Su mp3 se queda en el bucket sin usar; no hay que hacer nada con él.
+
+---
+
 Todo lo de audio que hay ahora mismo pendiente, en un sitio. Sale de lo que
 Ric fue detectando de oído probando la app, más el vocabulario nuevo que
 aún no tiene mp3.

@@ -27,7 +27,14 @@
   // Ver docs/brief.md sección 4.
   var SUPABASE_URL = 'https://jdijrqkzhohpzdwlsyvg.supabase.co';
   var SUPABASE_ANON_KEY = 'sb_publishable_vajgspdqfKFOBRTUM-wDbg_ZrRa-YTn';
-  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  /* Si por lo que sea la librería no está, la app NO se cae: arranca en
+     modo local, con el progreso del navegador. Antes esta línea era lo
+     primero que reventaba sin red —createClient sobre un undefined— y no
+     llegaba a pintarse nada, ni un mensaje. */
+  var sb = window.supabase
+    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+    : null;
+  var SIN_LIBRERIA = !sb;
   var usuarioId = null;
   var usuarioEmail = '';
   var debeCambiarClave = false;  // cuenta de invitado con la contraseña provisional
@@ -41,8 +48,8 @@
      una cuenta de verdad en local y ver el progreso real de Supabase
      en vez del de localStorage (por ejemplo, para comprobar un cambio
      de diseño con datos reales en vez de los que uno mismo se invente). */
-  var MODO_LOCAL = ['localhost', '127.0.0.1', '::1', ''].indexOf(location.hostname) !== -1
-    && location.search.indexOf('cuenta') === -1;
+  var MODO_LOCAL = (['localhost', '127.0.0.1', '::1', ''].indexOf(location.hostname) !== -1
+    && location.search.indexOf('cuenta') === -1) || SIN_LIBRERIA;
   // Bucket público de pronunciaciones (Cloud TTS, ver docs/brief.md sección 6).
   var AUDIO_BASE = SUPABASE_URL + '/storage/v1/object/public/euskaraz-audio/';
   var GUARDAR_ESPERA_MS = 1500;
@@ -100,8 +107,19 @@
   /* Cómo se reparte una sesión de repaso. Con la urgencia a secas, un
      atraso de 170 hacía que nunca llegaras a lo que vence hoy —lo que
      aprobaste hace tiempo, que es media gracia del repaso—: se quedaba
-     siempre detrás de la deuda vieja. */
-  var MEZCLA = { flojo: 0.40, veterano: 0.40 };   // el resto: novedades y lo que quepa
+     siempre detrás de la deuda vieja.
+
+     Se llamaba MEZCLA, igual que la tabla de formatos del repaso de
+     vocabulario de más abajo, y como las dos son `var` del mismo ámbito
+     la de abajo pisaba a esta al cargar: el porcentaje salía undefined,
+     los dos huecos reservados quedaban vacíos y la sesión se llenaba por
+     orden —fallados primero—, justo lo que esto venía a evitar. Estuvo
+     así desde el día en que se escribió (02/09/2026) hasta el
+     14/11/2026: con 30 fallados y 30 veteranos vencidos, una sesión de
+     15 llevaba 13 y 0 en vez de 7 y 6. La prueba no lo veía porque saca
+     las funciones sueltas y solo copiaba la primera declaración; ahora
+     `scripts/probar_ambito.js` revienta si dos nombres se repiten. */
+  var REPARTO_SESION = { flojo: 0.40, veterano: 0.40 };   // el resto: novedades y lo que quepa
 
   var estado = {
     pantalla: 'home',
@@ -553,6 +571,36 @@
     return vs[elegida];
   }
 
+  /* ── La gramática también se escribe ─────────────────────────────────
+
+     De los 399 grupos del curso, solo 86 tenían alguna variante de
+     producir —escribir o traducir—: el resto se podía aprobar entero
+     reconociendo la respuesta entre cuatro. El repaso de vocabulario ya
+     se endurece con el calendario (opción → ortografía → teclear); la
+     gramática no, y es donde más falta hace: reconocer «zaizkit» entre
+     cuatro no es saber decirlo.
+
+     Así que una pregunta de opción deja de enseñar las opciones cuando
+     su ficha está asentada: se pide ESCRITA. Dos condiciones:
+
+     · que la pregunta lo aguante. Lo dice el contenido, con `teclea:
+       true`, que pone scripts/marcar-tecleables.py en las de hueco
+       («Gu euskaldunak ____.») y en las de «se dice…» con respuesta
+       corta en euskera. Son 333, en 182 grupos; «¿cuál de estas…?» no
+       significa nada sin las opciones y no lo lleva.
+     · que la ficha esté en el peldaño 2 o más: la has acertado dos veces
+       con días por medio. Antes sería pedir de memoria lo que aún no se
+       ha fijado, y un fallo la devuelve al principio y a las opciones.
+
+     Siempre queda «ver opciones», que la vuelve a dejar como era: hay
+     preguntas con más de una respuesta posible que no hemos previsto, y
+     quedarse atascado delante de una caja vacía no enseña nada. */
+  var PASO_TECLEAR = 2;
+
+  function pideTeclear(v, f) {
+    return v.tipo === 'opcion' && v.teclea === true && !!f && f.paso >= PASO_TECLEAR;
+  }
+
   /* La variante se copia antes de usarla: así se le puede colgar de qué
      grupo y de qué unidad viene sin ensuciar el objeto del JSON, que se
      comparte entre sesiones. `__clave` es lo que enlaza el ejercicio con
@@ -562,6 +610,7 @@
     var copia = {};
     for (var k in v) copia[k] = v[k];
     copia.__clave = claveGrupo(grupo.id);
+    if (pideTeclear(copia, ficha(copia.__clave))) copia.__teclear = true;
     // De qué tema sale, para poder abrir su ficha desde el ejercicio.
     copia.__sub = grupo.subnivel;
     /* Algunos grupos practican algo que se explica en OTRO tema: un
@@ -736,11 +785,16 @@
        traducción («<i>Bilbotik nator</i> — vengo desde Bilbao.»), también se narra
        entera si tiene audio. Solo al principio de línea y con la traducción detrás:
        una cursiva suelta en medio de un párrafo suele ser énfasis, no un ejemplo. */
-    html = html.replace(/(^|\n)<i>([^<]+)<\/i>(?=\s*—)/g, function (m, ini, texto) {
+    /* Dentro puede ir un <u> que subraya la terminación de la que habla la ficha
+       («<b>Mikel<u>ek</u> katu bat du</b>»): la frase es la misma, y el audio se
+       busca por su texto sin el subrayado. Cualquier otra etiqueta sigue sin contar. */
+    html = html.replace(/(^|\n)<i>((?:[^<]|<\/?u>)+)<\/i>(?=\s*—)/g, function (m, ini, dentro) {
+      var texto = dentro.replace(/<\/?u>/g, '');
       var audio = audioDePalabra(texto);
-      return audio ? ini + '<i>' + texto + '</i>' + botonAudioTexto(texto, audio) : m;
+      return audio ? ini + '<i>' + dentro + '</i>' + botonAudioTexto(texto, audio) : m;
     });
-    return html.replace(/<b>([^<]+)<\/b>/g, function (m, texto) {
+    return html.replace(/<b>((?:[^<]|<\/?u>)+)<\/b>/g, function (m, dentro) {
+      var texto = dentro.replace(/<\/?u>/g, '');
       /* «4. laugarrena»: en una lista numerada el número no forma parte de la palabra */
       var audio = audioDePalabra(texto) || audioDePalabra(texto.replace(/^\d+\.\s+/, ''));
       return audio ? m + botonAudioTexto(texto, audio) : m;
@@ -833,6 +887,29 @@
   /* Semilla de una sola vez para cuando este navegador ya tenía progreso
      en localStorage (de antes de existir Supabase) y la fila en la base
      de datos todavía no existe: así el primer login no empieza de cero. */
+  /* Espejo local del progreso de la cuenta. Existe por el avión: si la
+     escritura a Supabase falla no hay dónde caerse, y una sesión entera
+     de vuelo se pierde sin avisar. Aquí queda guardada, y se sube sola al
+     volver la red. La clave lleva el id de usuario para que dos cuentas
+     en el mismo navegador no se mezclen. */
+  function claveEspejo() { return 'euskaraz.espejo.' + (usuarioId || 'anon'); }
+
+  function guardarEspejo() {
+    if (!usuarioId) return;
+    try {
+      localStorage.setItem(claveEspejo(), JSON.stringify({
+        data: progreso, desde: progresoActualizadoEn, pendiente: hayPendiente
+      }));
+    } catch (e) {}
+  }
+
+  function leerEspejo() {
+    try { return JSON.parse(localStorage.getItem(claveEspejo()) || 'null'); }
+    catch (e) { return null; }
+  }
+
+  var hayPendiente = false;   // hay cambios que no han llegado al servidor
+
   function progresoLocalPrevio() {
     try {
       var raw = localStorage.getItem(CLAVE) || localStorage.getItem(CLAVE_VIEJA);
@@ -867,9 +944,26 @@
         if (r.error) throw r.error;
         if (r.data) {
           progresoActualizadoEn = r.data.updated_at;
+          var esp = leerEspejo();
+          // Si quedó trabajo sin subir (modo avión), manda el espejo y se
+          // reintenta la subida; si no, manda el servidor.
+          if (esp && esp.pendiente && esp.desde === r.data.updated_at) {
+            hayPendiente = true;
+            return normalizarProgreso(esp.data);
+          }
           return normalizarProgreso(r.data.data);
         }
         return crearFilaProgreso(normalizarProgreso(progresoLocalPrevio()));
+      })
+      .catch(function (err) {
+        // Sin red no se puede leer, pero sí seguir estudiando: se arranca
+        // con la última copia local. Lo que falla aquí es la conexión, no
+        // la cuenta, así que no tiene sentido echar al alumno al login.
+        var esp = leerEspejo();
+        if (!esp) throw err;
+        hayPendiente = !!esp.pendiente;
+        progresoActualizadoEn = esp.desde;
+        return normalizarProgreso(esp.data);
       });
   }
 
@@ -899,16 +993,38 @@
       }
       return;
     }
+    // El espejo primero y siempre: si lo de abajo falla, esto ya está a salvo.
+    hayPendiente = true;
+    guardarEspejo();
     var ahora = new Date().toISOString();
     var query = sb.from('euskaraz_progreso').update({ data: progreso, updated_at: ahora }).eq('user_id', usuarioId);
     if (progresoActualizadoEn) query = query.eq('updated_at', progresoActualizadoEn);
     query.select('updated_at').then(function (r) {
-      if (r.error) { console.error('Error guardando progreso', r.error); return; }
-      if (r.data && r.data.length) { progresoActualizadoEn = ahora; return; }
+      if (r.error) {
+        // Casi siempre es que no hay red. Se queda pendiente y se
+        // reintenta al volver («online» más abajo).
+        console.warn('Progreso sin subir, queda pendiente', r.error);
+        return;
+      }
+      if (r.data && r.data.length) {
+        progresoActualizadoEn = ahora;
+        hayPendiente = false;
+        guardarEspejo();
+        return;
+      }
       // No se actualizó ninguna fila: alguien más guardó primero. Adoptamos su versión.
       cargarProgreso().then(adoptarProgreso);
+    }, function (err) {
+      console.warn('Progreso sin subir, queda pendiente', err);
     });
   }
+
+  /* Al recuperar la red, subir lo que se estudió sin ella. Es lo que
+     cierra el modo avión: sin esto el espejo se queda ahí para siempre y
+     el progreso del vuelo solo existe en ese navegador. */
+  window.addEventListener('online', function () {
+    if (hayPendiente && usuarioId) guardarProgresoAhora();
+  });
 
   // Al cambiar de pantalla o salir, no dejar una escritura pendiente sin mandar.
   document.addEventListener('visibilitychange', function () {
@@ -984,12 +1100,47 @@
     e[tipo] = (e[tipo] || 0) + 1;
   }
 
+  /* Un acierto antes de tiempo no sube peldaño.
+
+     El calendario intenta averiguar una sola cosa: si te acuerdas de algo
+     cuando ha pasado el tiempo que tocaba. Acertar lo que viste hace diez
+     minutos no dice nada de eso, y sin embargo subía un peldaño cada vez:
+     repetir un tema tres veces en una tarde mandaba sus ejercicios a
+     dentro de 16 días, y con «Otra ronda de repaso» estando al día se
+     podía empujar el curso entero a meses vista sin haberlo repasado ni
+     una vez con distancia. Es la misma regla que ya seguía el repaso de
+     vocabulario dentro de una sesión —«el calendario solo escucha la
+     primera respuesta»—, llevada al resto (pedido por Ric, 14/11/2026).
+
+     Una respuesta va «adelantada» cuando la ficha no ha vencido Y no ha
+     pasado todavía su intervalo desde la última vez que contó. Hacen
+     falta las dos condiciones:
+
+     · solo la fecha no vale, porque repartirAtrasos() aplaza lo vencido
+       para hacer cola: esas fichas tienen la fecha por delante pero su
+       intervalo ya pasó, y ponerse al día haciendo rondas tiene que
+       contar;
+     · solo el intervalo tampoco, porque quedan fichas con la fecha
+       calculada con la escala corta de antes del 02/09/2026, vencidas
+       por su fecha aunque con la escala nueva les falte tiempo.
+
+     Lo adelantado se apunta —el acierto cuenta para tus cifras, y
+     `repaso` sirve para que la siguiente ronda de hoy saque otras— pero
+     no mueve ni el peldaño ni la fecha. Un FALLO sí cuenta siempre: no
+     saberlo es información venga cuando venga. */
   function anotar(clave, ok) {
     if (!clave) return;
-    var f = progreso.srs[clave];
-    if (!f) {
+    var f = progreso.srs[clave], nueva = !f, dia = hoy();
+    if (nueva) {
       f = progreso.srs[clave] = { paso: 0, toca: 0, aciertos: 0, fallos: 0, visto: 0 };
       apuntarEstreno(clave);
+    }
+    var adelantada = !nueva && f.toca > dia && (dia - f.visto) < PASOS[f.paso];
+    if (ok && adelantada) {
+      f.aciertos++;
+      f.repaso = dia;
+      guardarProgreso();
+      return;
     }
     if (ok) {
       f.aciertos++;
@@ -998,7 +1149,8 @@
       f.fallos++;
       f.paso = 0;   // un fallo devuelve al principio de la escala
     }
-    f.visto = hoy();
+    if (f.repaso) delete f.repaso;
+    f.visto = dia;
     f.toca = f.visto + PASOS[f.paso];
     guardarProgreso();
   }
@@ -1032,7 +1184,12 @@
     flojos.sort(urgencia);
     veteranos.sort(urgencia);
     nuevos.sort(function (a, b) { return a.orden - b.orden; });
-    resto.sort(function (a, b) { return a.f.toca - b.f.toca; });
+    /* Lo que no ha vencido, por lo que vence antes; pero lo que ya has
+       tocado hoy va al final. Desde que un acierto adelantado no mueve la
+       fecha, sin esto «Otra ronda» estando al día sacaría las mismas
+       quince una y otra vez. */
+    function hoyYa(f) { return (f.repaso === dia || f.visto === dia) ? 1 : 0; }
+    resto.sort(function (a, b) { return (hoyYa(a.f) - hoyYa(b.f)) || (a.f.toca - b.f.toca); });
 
     // Las novedades tienen cupo diario; lo ya estrenado hoy resta.
     nuevos = nuevos.slice(0, Math.max(0, CUPO_NUEVOS - estrenosHoy(tipo || 'g')));
@@ -1042,8 +1199,8 @@
        rellena con lo que haya. Si un montón está vacío su hueco se lo
        quedan los otros: nadie se queda fuera por falta de sitio. */
     var cola = nuevos.slice(0, MIN_NUEVOS)
-       .concat(flojos.slice(0, Math.round(cuantos * MEZCLA.flojo)))
-       .concat(veteranos.slice(0, Math.round(cuantos * MEZCLA.veterano)));
+       .concat(flojos.slice(0, Math.round(cuantos * REPARTO_SESION.flojo)))
+       .concat(veteranos.slice(0, Math.round(cuantos * REPARTO_SESION.veterano)));
     [flojos, veteranos, nuevos, resto].forEach(function (monton) {
       monton.forEach(function (x) {
         if (cola.length < cuantos && cola.indexOf(x) < 0) cola.push(x);
@@ -2078,9 +2235,13 @@
     aparecerEscalonado(s.querySelectorAll('.homew__reviews > *'), 2 * DB, 110);
   }
 
-  // Al cruzar el corte de tablet, Hoy cambia de marcado: se repinta.
+  /* Al cruzar el corte de tablet, Hoy cambia de marcado: se repinta.
+     El `CURSO &&` no sobra: este aviso puede llegar ANTES de que el curso
+     haya cargado —girando el móvil nada más abrir, o con la carga lenta—
+     y entonces pantallaHome() entra en unidadDeTurno() con CURSO a null y
+     revienta la pantalla entera. Salió probando la app sin servidor. */
   ANCHO.addEventListener('change', function () {
-    if (estado.pantalla === 'home') pantallaHome();
+    if (CURSO && estado.pantalla === 'home') pantallaHome();
   });
 
   // ─────────── Pantalla: lecciones ───────────
@@ -2973,7 +3134,7 @@
      tiradas se pierden. Los dos formatos de escucha solo se ofrecen a
      palabras con audio narrado (si no lo tienen, caen a opción como el
      resto de formatos sin cumplir requisitos). */
-  var MEZCLA = [
+  var MEZCLA_FORMATOS = [
     [40, 25, 10, 15, 10],   // nivel 0 · paso 0-1, recién vista
     [20, 35, 15, 15, 15],   // nivel 1 · paso 2-3, en camino
     [10, 25, 35, 15, 15]    // nivel 2 · paso 4 o más, asentada
@@ -2991,7 +3152,7 @@
      palabra vuelve, que vuelva preguntada de otra manera. Solo se
      insiste si el sorteo la devuelve dos veces seguidas. */
   function sortearFormato(nivel, evitar) {
-    var pesos = MEZCLA[nivel] || MEZCLA[0];
+    var pesos = MEZCLA_FORMATOS[nivel] || MEZCLA_FORMATOS[0];
     if (modoSilencioso) pesos = pesos.slice(0, 3);
     var f = tirada(pesos);
     if (f === evitar) f = tirada(pesos);
@@ -3841,8 +4002,24 @@
   var avisos = { activo: false, dias: [0, 1, 2, 3, 4, 5, 6], hora: '20:00', msg: '' };
   var avisosTimer = null;
 
-  if (VAPID_PUBLICA && 'serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(function () {});
+  /* El service worker se registra SIEMPRE, no solo cuando hay avisos:
+     desde 11/2026 es también quien guarda la app para usarla sin
+     conexión. Se le pasa el mismo `?v=` que llevan el css y el js, que
+     es lo que hace que una publicación nueva tire la caché vieja —el
+     nombre de la caché sale de ahí— y lo que evita dejar a nadie
+     atrapado en una versión antigua. */
+  if ('serviceWorker' in navigator) {
+    var sVer = (document.querySelector('script[src*="app.js"]') || {}).src || '';
+    var mVer = sVer.match(/[?&]v=([^&]+)/);
+    navigator.serviceWorker.register('sw.js?v=' + (mVer ? mVer[1] : 'dev'))
+      .then(function () {
+        // El bucket de audio lo sabe la app, no el sw: se lo decimos para
+        // que pueda guardarse las pronunciaciones de fondo.
+        function avisar(sw) { if (sw) sw.postMessage({ tipo: 'audio-base', base: AUDIO_BASE }); }
+        avisar(navigator.serviceWorker.controller);
+        navigator.serviceWorker.ready.then(function (reg) { avisar(reg.active); });
+      })
+      .catch(function () {});
   }
 
   function avisosDisponible() { return !!VAPID_PUBLICA && !!usuarioId; }
@@ -4018,6 +4195,9 @@
             filaNav('ctaEmail', '', 'Cambiar email', usuarioEmail || 'Sin sesión') +
             filaNav('ctaPass', '', 'Cambiar contraseña', debeCambiarClave ? 'Estás usando una contraseña provisional: elige la tuya' : 'Elige una contraseña nueva') +
             filaNav('ctaSalir', '', 'Cerrar sesión', 'Cerrar sesión en este dispositivo') +
+            filaNav('ctaResetCurso', 'danger', 'Empezar el curso de nuevo',
+              'Volverás a la lección 1 y los repasos se vacían, pero conservas la racha. No se puede deshacer.',
+              icono('warning', 14)) +
             filaNav('ctaReset', 'danger', 'Reiniciar progreso',
               'Volverás a la lección 1 y perderás todos los datos de racha y progreso. No se puede deshacer.',
               icono('warning', 14)) +
@@ -4041,6 +4221,7 @@
     $('ctaEmail').addEventListener('click', abrirCambioEmail);
     $('ctaPass').addEventListener('click', function () { abrirCambioPassword(); });
     $('ctaSalir').addEventListener('click', function () { sb.auth.signOut(); });
+    $('ctaResetCurso').addEventListener('click', abrirReinicioCurso);
     $('ctaReset').addEventListener('click', abrirReinicio);
 
     mostrar('cuenta');
@@ -4092,6 +4273,57 @@
     });
   }
 
+  /* Lo que hacen los dos reinicios de Tu cuenta.
+
+     Con `conservarRacha` se quedan dos cosas: `dias` —de ahí salen la
+     racha, la semana de Hoy y las cifras de Progreso— y `palabras`, las
+     del día que has abierto. Ninguna de las dos es avance del curso: son
+     lo que has hecho cada día. Lo demás vuelve a cero —unidades, temas,
+     calendario de repaso y cupo de estrenos—, así que el curso empieza
+     otra vez en la lección 1 (pedido por Ric el 14/11/2026, para poder
+     recorrerlo de nuevo sin perder la racha).
+
+     Dos detalles que valen para los dos reinicios:
+
+     · Lo local se borra ANTES de guardar. Probando sin cuenta, el guardado
+       escribe el progreso en el navegador; si el borrado iba después se
+       llevaba por delante lo recién guardado, racha incluida.
+     · Se guarda sin la condición de `updated_at`. Reiniciar es una
+       decisión, no una edición: con la condición, si otro aparato había
+       guardado después, la escritura no encontraba fila, se adoptaba la
+       copia del servidor y el reinicio se deshacía solo, sin avisar. */
+  function reiniciarProgreso(conservarRacha) {
+    var nuevo = progresoVacio();
+    if (conservarRacha) {
+      nuevo.dias = progreso.dias || {};
+      nuevo.palabras = progreso.palabras || {};
+    }
+    progreso = nuevo;
+    if (guardarTimer) { clearTimeout(guardarTimer); guardarTimer = null; }
+    try {
+      localStorage.removeItem(CLAVE); localStorage.removeItem(CLAVE_VIEJA);
+      localStorage.removeItem(claveLocal());   // el de probar sin cuenta
+      localStorage.removeItem(HOY_LECCION_KEY);   // «la lección de hoy ya está hecha» deja de ser verdad
+    } catch (e) {}
+    progresoActualizadoEn = null;
+    guardarProgresoAhora();
+    estado.homeActiva = null;
+  }
+
+  function abrirReinicioCurso() {
+    dialogo({
+      titulo: '¿Empezar el curso de nuevo?',
+      texto: 'Vuelves a la lección 1: se borran las unidades hechas y las fechas de repaso. Conservas la racha y las palabras del día que has abierto. Esto no se puede deshacer.',
+      confirmar: 'Sí, empezar de nuevo',
+      peligro: true,
+      alConfirmar: function () {
+        reiniciarProgreso(true);
+        cerrarModal();
+        pantallaHome();
+      }
+    });
+  }
+
   function abrirReinicio() {
     dialogo({
       titulo: '¿Reiniciar tu progreso?',
@@ -4099,13 +4331,7 @@
       confirmar: 'Sí, reiniciar',
       peligro: true,
       alConfirmar: function () {
-        progreso = progresoVacio();
-        if (guardarTimer) { clearTimeout(guardarTimer); guardarTimer = null; }
-        guardarProgresoAhora();
-        try {
-          localStorage.removeItem(CLAVE); localStorage.removeItem(CLAVE_VIEJA);
-          localStorage.removeItem(claveLocal());   // el de probar sin cuenta
-        } catch (e) {}
+        reiniciarProgreso(false);
         cerrarModal();
         pantallaHome();
       }
@@ -4289,7 +4515,43 @@
     if (audio) reproducir(audio);
   }
 
+  /* La misma pregunta, sin las opciones: una caja para escribir y, debajo,
+     la salida de «ver opciones». La instrucción cambia —la de siempre dice
+     «Elige la opción correcta»— pero el enunciado es el mismo. */
+  function pintarOpcionTecleada(ej) {
+    var hueco = /_{2,}/.test(ej.pregunta);
+    var cabeza = {};
+    for (var k in ej) cabeza[k] = ej[k];
+    cabeza.instruccion = hueco ? 'Escribe lo que falta' : 'Escríbelo en euskera';
+
+    el.quizContent.innerHTML =
+      cabeceraEj(cabeza, richInline(ej.pregunta)) +
+      '<div class="answer">' +
+        '<textarea class="typebox typebox--corta" id="typebox" rows="1" autocomplete="off" ' +
+        'autocorrect="off" autocapitalize="off" spellcheck="false" ' +
+        'placeholder="' + (hueco ? 'Lo que va en el hueco…' : 'Escríbelo en euskera…') + '"></textarea>' +
+        '<button class="hintchip" type="button" id="btnOpciones">' + icono('list', 15) + '<span>ver opciones</span></button>' +
+      '</div>';
+
+    var ta = $('typebox');
+    ta.addEventListener('input', function () {
+      el.btnCheck.disabled = ta.value.trim().length === 0;
+    });
+    ta.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); if (!el.btnCheck.disabled) el.btnCheck.click(); }
+    });
+    $('btnOpciones').addEventListener('click', function () {
+      if (estado.resuelto) return;
+      ej.__conOpciones = true;
+      estado.sel = null;
+      el.btnCheck.disabled = true;
+      pintarOpcion(ej);
+    });
+    enfocarSiHayTeclado(ta);
+  }
+
   function pintarOpcion(ej) {
+    if (ej.__teclear && !ej.__conOpciones) return pintarOpcionTecleada(ej);
     var orden = barajar(ej.opciones.map(function (txt, i) { return { txt: txt, i: i }; }));
 
     el.quizContent.innerHTML =
@@ -4320,7 +4582,48 @@
     return '<span class="fb__answer">' + icono('check-bold', 20) + '<span>' + esc(texto) + '</span></span>';
   }
 
+  /* ¿Vale lo escrito? Tres salidas, y la del medio es la que importa:
+
+     · es la respuesta: bien;
+     · es justo uno de los distractores: MAL, sin perdón. Los distractores
+       son el error que la pregunta vigila —«dut» por «ditut», «lanan» por
+       «lanean»— y a una letra de la buena están casi todos: con la manga
+       del «casi correcto» se aprobaría precisamente el fallo que se quería
+       cazar;
+     · es otra cosa: se mide como en el resto de la app, y una errata en
+       una palabra de más de tres letras pasa como «casi correcto»,
+       enseñando la forma buena. */
+  function juzgarTecleada(dado, opciones, correcta) {
+    var buena = opciones[correcta];
+    if (aciertaTecleado(dado, [buena])) return { ok: true, leve: false, vigilado: false };
+    var k = claveRespuesta(dado);
+    var vigilado = opciones.some(function (o, i) { return i !== correcta && claveRespuesta(o) === k; });
+    if (vigilado) return { ok: false, leve: false, vigilado: true };
+    var leve = esCasiCorrecto(dado, respuestaMasCercana(dado, todasLasVariantes([buena])));
+    return { ok: leve, leve: leve, vigilado: false };
+  }
+
+  function corregirOpcionTecleada(ej) {
+    var ta = $('typebox');
+    var dado = normalizar(ta.value), buena = ej.opciones[ej.correcta];
+    // Para que lo escrito salga al repasar la pregunta desde los pasos de
+    // arriba: la instantánea guarda el HTML, y el valor de una caja no va en él.
+    ta.textContent = ta.value;
+    ta.readOnly = true;
+    ta.blur();
+    if ($('btnOpciones')) $('btnOpciones').hidden = true;
+    var r = juzgarTecleada(dado, ej.opciones, ej.correcta);
+    if (r.ok && !r.leve) return { ok: true, leve: false, cuerpo: ej.explicacion ? ej.explicacion : '' };
+    var porPalabras = normalizar(buena).indexOf(' ') !== -1;
+    return {
+      ok: r.ok, leve: r.leve,
+      cuerpo: comparacion(dado, normalizar(buena), porPalabras) +
+              (ej.explicacion ? '<p class="dif__nota">' + ej.explicacion + '</p>' : '')
+    };
+  }
+
   function corregirOpcion(ej) {
+    if (ej.__teclear && !ej.__conOpciones) return corregirOpcionTecleada(ej);
     var ok = estado.sel === ej.correcta;
     Array.prototype.forEach.call($('opts').children, function (b) {
       var i = parseInt(b.dataset.i, 10);

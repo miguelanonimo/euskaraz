@@ -40,7 +40,7 @@
   "gramatica": [
     {
       "titulo": "«Joan»: ir, en una sola pieza",
-      "cuerpo": "Unos pocos verbos muy usados se conjugan solos, sin auxiliar, igual que <i>naiz</i> o <i>nago</i>. <b>Joan</b> (ir) es uno:\n\n<b>ni noa</b> — yo voy\n<b>zu zoaz</b> — tú vas\n<b>hura doa</b> — él/ella va\n<b>gu goaz</b> — nosotros vamos\n<b>zuek zoazte</b> — vosotros vais\n<b>haiek doaz</b> — ellos van\n\nNo lleva objeto, así que el sujeto <b>no lleva -k</b>: <i>ni noa</i>, nunca «nik noa».\n\nHay otra forma más larga, <b>joaten naiz</b>, que ya viste en la unidad anterior. La diferencia es de matiz: <b>noa</b> es «voy ahora», y <b>joaten naiz</b> es «suelo ir». En castellano las dos se dicen «voy».",
+      "cuerpo": "Unos pocos verbos muy usados se conjugan solos, sin auxiliar, igual que <i>naiz</i> o <i>nago</i>. <b>Joan</b> (ir) es uno:\n\n<b>ni noa</b> — yo voy\n<b>zu zoaz</b> — tú vas\n<b>hura doa</b> — él/ella va\n<b>gu goaz</b> — nosotros vamos\n<b>zuek zoazte</b> — vosotros vais\n<b>haiek doaz</b> — ellos van\n\nNo lleva objeto, así que el sujeto <b>no lleva -k</b>: <i>ni noa</i>, nunca «nik noa».\n\nHay otra forma más larga, <b>joaten naiz</b>, que ya viste en la unidad anterior. La diferencia es de matiz: <b>noa</b> es «voy ahora», y <b>joaten naiz</b> es «suelo ir». En castellano las dos se dicen «voy».\n\nY para «<b>estoy yendo</b>» no hace falta montar nada con el <i>ari</i> de la unidad anterior: <b>noa</b> ya lo dice. Con los verbos que se conjugan solos, «ahora mismo» es la forma corta: <i>etxera noa</i>, no «etxera joaten ari naiz».",
       "ejemplos": [
         {
           "eu": "Bilbora noa",
@@ -100,6 +100,23 @@
           "eu": "hona zatoz?",
           "es": "¿Vienes aquí?",
           "audio": "unidades/u9/hona-zatoz.mp3"
+        }
+      ],
+      "subnivel": "8.3"
+    },
+    {
+      "titulo": "«-ra» y «-tik» se pegan a la palabra pelada: lanera, lanetik",
+      "cuerpo": "Con <b>etxe</b> no se nota, porque acaba en vocal: <i>etxera</i>, <i>etxetik</i>. Pero estas dos terminaciones tienen la misma letra pequeña que el «en» de la quinta unidad.\n\n<b>Van sin el artículo.</b> No se pegan a <i>etxea</i> sino a <i>etxe</i>: se dice <i>etxera</i>, no «etxeara».\n\n<b>Y con nombres corrientes acabados en consonante entra una -e-</b>, para poder pronunciarlo:\n\n<b>lan</b> → <b>lan<u>e</u>ra</b> (al trabajo) · <b>lan<u>e</u>tik</b> (del trabajo)\n<b>komun</b> → <b>komun<u>e</u>ra</b> (al baño) · <b>komun<u>e</u>tik</b> (del baño)\n\nEl tropiezo de quien viene del castellano es colar el artículo en medio —«lanara», «komunatik»—, porque la palabra se aprendió con su <b>-a</b> puesta: <i>lana</i>, <i>komuna</i>. Esa <b>-a</b> no era de la palabra, y aquí se cae.\n\nLas tres juntas, para verlas de una vez:\n\n<b>lanean nago</b> — Estoy en el trabajo.\n<b>lanera noa</b> — Voy al trabajo.\n<b>lanetik nator</b> — Vengo del trabajo.",
+      "ejemplos": [
+        {
+          "eu": "lanean nago",
+          "es": "Estoy en el trabajo.",
+          "audio": "unidades/u6/lanean-nago.mp3"
+        },
+        {
+          "eu": "lanetik irteten naiz",
+          "es": "Salgo del trabajo.",
+          "audio": "unidades/u8/lanetik-irteten-naiz.mp3"
         }
       ],
       "subnivel": "8.3"
@@ -244,6 +261,23 @@
           "audio": "unidades/u8/etorri-ahal-zara.mp3"
         }
       ]
+    },
+    {
+      "titulo": "«No quiero ir»: ez dut joan nahi",
+      "cuerpo": "Para negar con <i>nahi</i> y <i>behar</i> no hace falta nada nuevo: es el salto del auxiliar de la séptima unidad. El <b>ez</b> se lleva el auxiliar al principio, y lo demás se queda detrás, en su orden:\n\n<b>joan nahi dut</b> — Quiero ir.\n<b>ez dut joan nahi</b> — No quiero ir.\n\n<b>lan egin behar dut</b> — Tengo que trabajar.\n<b>ez dut lan egin behar</b> — No tengo que trabajar.\n\nLo que no se separa es la pareja del verbo con <i>nahi</i>: van juntos y en ese orden, <i>joan nahi</i>. El tropiezo de quien viene del castellano es copiar «no quiero ir» palabra por palabra: «ez nahi dut joan». En euskera el <i>ez</i> y el auxiliar van pegados, y <i>nahi</i> espera al final.\n\nSi no hay otro verbo, igual:\n\n<b>ez dut nahi</b> — No quiero.\n\nY <i>ezin</i>, que ya lleva la negación dentro, va con el orden que viste: <b>ezin dut joan</b>.",
+      "ejemplos": [
+        {
+          "eu": "joan nahi dut",
+          "es": "Quiero ir.",
+          "audio": "unidades/u8/joan-nahi-dut.mp3"
+        },
+        {
+          "eu": "ezin dut joan",
+          "es": "No puedo ir.",
+          "audio": "unidades/u8/ezin-dut-joan.mp3"
+        }
+      ],
+      "subnivel": "8.4"
     },
     {
       "subnivel": "8.4",
@@ -696,7 +730,8 @@
             "goaz"
           ],
           "correcta": 0,
-          "explicacion": "Con «ni», el verbo «joan» hace «noa»."
+          "explicacion": "Con «ni», el verbo «joan» hace «noa».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -722,7 +757,8 @@
             "goaz"
           ],
           "correcta": 2,
-          "explicacion": "Con «hura» va «doa»."
+          "explicacion": "Con «hura» va «doa».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -967,7 +1003,8 @@
             "Bilbo"
           ],
           "correcta": 2,
-          "explicacion": "Procedencia → -tik."
+          "explicacion": "Procedencia → -tik.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1194,7 +1231,8 @@
             "zaude"
           ],
           "correcta": 2,
-          "explicacion": "«ibili» con «zu»: zabiltza."
+          "explicacion": "«ibili» con «zu»: zabiltza.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1304,6 +1342,77 @@
             "hondartza non dago"
           ],
           "pista": "Tres palabras, con «egon»."
+        }
+      ],
+      "subnivel": "8.1"
+    },
+    {
+      "id": "u8-g52",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Estoy yendo a casa. → Etxera ____.",
+          "opciones": [
+            "joaten ari naiz",
+            "joaten naiz",
+            "noa",
+            "nago"
+          ],
+          "correcta": 2,
+          "explicacion": "«Noa» ya es «estoy yendo»: con los verbos de una pieza no hace falta «ari». «Joaten naiz» sería «suelo ir».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "De «noa» y «joaten naiz», ¿cuál es «suelo ir»?",
+          "opciones": [
+            "noa",
+            "joaten naiz",
+            "las dos",
+            "ninguna"
+          ],
+          "correcta": 1,
+          "explicacion": "La forma larga es la de la costumbre. «Noa» es ahora mismo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Voy a Bilbao ahora mismo. → Bilbora ____.",
+          "opciones": [
+            "joaten naiz",
+            "nator",
+            "nago",
+            "noa"
+          ],
+          "correcta": 3,
+          "explicacion": "Ahora mismo, la forma corta: noa.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Todos los lunes voy a la feria. → Astelehenero azokara ____.",
+          "opciones": [
+            "noa",
+            "nago",
+            "joaten naiz",
+            "nator"
+          ],
+          "correcta": 2,
+          "explicacion": "Es una costumbre —todos los lunes—, así que va la forma larga.",
+          "teclea": true
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estoy yendo a casa.",
+          "respuestas": [
+            "etxera noa",
+            "ni etxera noa"
+          ],
+          "pista": "No hace falta «ari»: la forma corta ya lo dice."
         }
       ],
       "subnivel": "8.1"
@@ -1471,7 +1580,8 @@
             "ibili"
           ],
           "correcta": 0,
-          "explicacion": "Igual que la derecha: ezkerrera."
+          "explicacion": "Igual que la derecha: ezkerrera.",
+          "teclea": true
         }
       ],
       "subnivel": "8.3"
@@ -1503,7 +1613,8 @@
             "joan"
           ],
           "correcta": 1,
-          "explicacion": "«urten», y se conjuga con «dot»: urten dot."
+          "explicacion": "«urten», y se conjuga con «dot»: urten dot.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1516,7 +1627,8 @@
             "nago"
           ],
           "correcta": 1,
-          "explicacion": "El «naiz» del batua es «naz» en bizkaiera."
+          "explicacion": "El «naiz» del batua es «naz» en bizkaiera.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1561,7 +1673,8 @@
             "Etxe"
           ],
           "correcta": 1,
-          "explicacion": "La respuesta lleva la misma cola que la pregunta: nora → -ra."
+          "explicacion": "La respuesta lleva la misma cola que la pregunta: nora → -ra.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1574,7 +1687,8 @@
             "Lana"
           ],
           "correcta": 0,
-          "explicacion": "non → -n."
+          "explicacion": "non → -n.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1600,7 +1714,8 @@
             "hona"
           ],
           "correcta": 1,
-          "explicacion": "Lo contrario de «gertu» (cerca) es «urrun» (lejos)."
+          "explicacion": "Lo contrario de «gertu» (cerca) es «urrun» (lejos).",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1613,7 +1728,8 @@
             "dut"
           ],
           "correcta": 1,
-          "explicacion": "«Ez noa trenez»: se niega el mismo verbo, «noa»."
+          "explicacion": "«Ez noa trenez»: se niega el mismo verbo, «noa».",
+          "teclea": true
         }
       ],
       "subnivel": "test"
@@ -1633,7 +1749,8 @@
             "Nahi dut joan"
           ],
           "correcta": 0,
-          "explicacion": "Verbo + nahi + auxiliar."
+          "explicacion": "Verbo + nahi + auxiliar.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1659,7 +1776,8 @@
             "ahal ez dut"
           ],
           "correcta": 1,
-          "explicacion": "«Ezin» ya lleva la negación dentro."
+          "explicacion": "«Ezin» ya lleva la negación dentro.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1974,7 +2092,8 @@
             "gertu"
           ],
           "correcta": 0,
-          "explicacion": "la tienda = denda."
+          "explicacion": "la tienda = denda.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2063,7 +2182,8 @@
             "dator"
           ],
           "correcta": 0,
-          "explicacion": "La más conocida en Bilbao es el Mercado de la Ribera. Si sales hacia Gernika, la suya es la del lunes."
+          "explicacion": "La más conocida en Bilbao es el Mercado de la Ribera. Si sales hacia Gernika, la suya es la del lunes.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2152,7 +2272,8 @@
             "dator"
           ],
           "correcta": 0,
-          "explicacion": "la calle = kalea."
+          "explicacion": "la calle = kalea.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2241,7 +2362,8 @@
             "taberna"
           ],
           "correcta": 0,
-          "explicacion": "De «liburu» (libro) + «tegi» (lugar de)."
+          "explicacion": "De «liburu» (libro) + «tegi» (lugar de).",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2330,7 +2452,8 @@
             "hara"
           ],
           "correcta": 0,
-          "explicacion": "la bicicleta = bizikleta."
+          "explicacion": "la bicicleta = bizikleta.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2419,7 +2542,8 @@
             "nahi dut"
           ],
           "correcta": 0,
-          "explicacion": "venir = etorri."
+          "explicacion": "venir = etorri.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2508,7 +2632,8 @@
             "noa"
           ],
           "correcta": 0,
-          "explicacion": "(tú) vienes = zatoz."
+          "explicacion": "(tú) vienes = zatoz.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2597,7 +2722,8 @@
             "ezkerrera"
           ],
           "correcta": 0,
-          "explicacion": "De «oin» (pie) + la -z de «por medio de»."
+          "explicacion": "De «oin» (pie) + la -z de «por medio de».",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2686,7 +2812,8 @@
             "trena"
           ],
           "correcta": 0,
-          "explicacion": "Tener la posibilidad de hacer algo."
+          "explicacion": "Tener la posibilidad de hacer algo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2775,7 +2902,8 @@
             "dabil"
           ],
           "correcta": 0,
-          "explicacion": "Tener la posibilidad de hacer algo."
+          "explicacion": "Tener la posibilidad de hacer algo.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2864,7 +2992,8 @@
             "hiria"
           ],
           "correcta": 0,
-          "explicacion": "tengo que, necesito = behar dut."
+          "explicacion": "tengo que, necesito = behar dut.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2880,6 +3009,77 @@
           "explicacion": "Ya la tenías; aquí se ve en familia."
         }
       ]
+    },
+    {
+      "id": "u8-g54",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No quiero ir. → ____",
+          "opciones": [
+            "Ez nahi dut joan",
+            "Ez dut joan nahi",
+            "Ez joan nahi dut",
+            "Nahi ez dut joan"
+          ],
+          "correcta": 1,
+          "explicacion": "El «ez» se lleva el auxiliar: ez dut. Y «joan nahi» se queda detrás, junto y en ese orden."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Quiero entrar. → ____",
+          "opciones": [
+            "Nahi dut sartu",
+            "Nahi sartu dut",
+            "Sartu nahi dut",
+            "Dut sartu nahi"
+          ],
+          "correcta": 2,
+          "explicacion": "Verbo + nahi + auxiliar. El orden castellano, «quiero entrar», no vale.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No quiero. → ____",
+          "opciones": [
+            "Ez nahi dut",
+            "Nahi ez dut",
+            "Dut ez nahi",
+            "Ez dut nahi"
+          ],
+          "correcta": 3,
+          "explicacion": "El «ez» y el auxiliar, pegados; «nahi», detrás.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No tengo que trabajar. → Ez dut lan egin ____.",
+          "opciones": [
+            "nahi",
+            "ezin",
+            "behar",
+            "ahal"
+          ],
+          "correcta": 2,
+          "explicacion": "«Tener que» es «behar». Con «nahi» dirías que no quieres trabajar.",
+          "teclea": true
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "No quiero ir.",
+          "respuestas": [
+            "ez dut joan nahi",
+            "nik ez dut joan nahi"
+          ],
+          "pista": "El «ez» se lleva el auxiliar al principio."
+        }
+      ],
+      "subnivel": "8.4"
     },
     {
       "id": "u8-g27",
@@ -3201,6 +3401,74 @@
       ]
     },
     {
+      "id": "u8-g53",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Voy al trabajo. → ____ noa.",
+          "opciones": [
+            "Lanara",
+            "Lanean",
+            "Lanera",
+            "Lanra"
+          ],
+          "correcta": 2,
+          "explicacion": "La palabra es «lan», sin artículo, y tras consonante entra una -e-: lanera. «Lanara» cuela la -a de «lana»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Vengo del baño. → ____ nator.",
+          "opciones": [
+            "Komunetik",
+            "Komunatik",
+            "Komunean",
+            "Komuntik"
+          ],
+          "correcta": 0,
+          "explicacion": "«Komun» + e + tik. El artículo no entra."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Voy a casa. → ____ noa.",
+          "opciones": [
+            "Etxeara",
+            "Etxera",
+            "Etxean",
+            "Etxetik"
+          ],
+          "correcta": 1,
+          "explicacion": "«-ra» se pega a «etxe», no a «etxea»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué trío está bien escrito?",
+          "opciones": [
+            "lanan · lanara · lanatik",
+            "lanean · lanara · lanatik",
+            "lanen · lanra · lantik",
+            "lanean · lanera · lanetik"
+          ],
+          "correcta": 3,
+          "explicacion": "Tras consonante, las tres llevan su -e-, y ninguna la -a del artículo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Voy al trabajo.",
+          "respuestas": [
+            "lanera noa",
+            "ni lanera noa"
+          ],
+          "pista": "«Lan» acaba en consonante."
+        }
+      ],
+      "subnivel": "8.3"
+    },
+    {
       "id": "u9-g31",
       "variantes": [
         {
@@ -3285,7 +3553,8 @@
             "Sartzen naiz!"
           ],
           "correcta": 0,
-          "explicacion": "La forma de diccionario, a secas, ya es una orden."
+          "explicacion": "La forma de diccionario, a secas, ya es una orden.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3298,7 +3567,8 @@
             "Joaten"
           ],
           "correcta": 0,
-          "explicacion": "El imperativo de «joan» es «zoaz», igual que el presente de zu."
+          "explicacion": "El imperativo de «joan» es «zoaz», igual que el presente de zu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
