@@ -234,6 +234,12 @@
       "subnivel": "5.4"
     },
     {
+      "titulo": "«Es una casa bonita»: aquí no va «bat»",
+      "cuerpo": "La ficha anterior decía que «una» es <b>bat</b>. Vale cuando <b>nombras</b> una cosa cualquiera: <i>mahai zuri bat</i>, una mesa blanca. Pero hay un sitio donde el castellano pone «un» o «una» y el euskera pone el artículo de siempre: cuando dices <b>qué es</b> algo o <b>cómo es</b>.\n\n<b>Hau mahaia da.</b> — Esto es una mesa.\n<b>Etxe polita da.</b> — Es una casa bonita.\n<b>Txakur handia da.</b> — Es un perro grande.\n\nLo natural es que ninguna lleve <i>bat</i>. En castellano ese «una» no cuenta nada —no estás diciendo que sea una y no dos—, solo acompaña. Para eso el euskera usa <b>-a</b>.\n\nYa lo hacías con las profesiones, desde la segunda unidad: <i>ni irakaslea naiz</i>, soy profesor. Es la misma regla, un paso más allá.\n\nLa prueba: si puedes cambiar «un» por «dos» y la frase sigue teniendo sentido, es <b>bat</b>. Si no, es <b>-a</b>.\n\n<b>Katu bat daukat.</b> — Tengo un gato. Podrían ser dos: <i>bat</i>.\n<b>Katu polita da.</b> — Es un gato bonito. No estás contando: <i>-a</i>.",
+      "ejemplos": [],
+      "subnivel": "5.4"
+    },
+    {
       "titulo": "«Laranja» es la fruta y el color",
       "cuerpo": "Como en castellano, que también usamos «naranja» para las dos cosas.\n\n<b>laranja</b> — la naranja (la fruta), y también naranja (el color)\n\nNo hay truco ni palabra aparte que aprender: el contexto lo resuelve solo, igual que en castellano nadie confunde «me como una naranja» con «una camisa naranja».",
       "ejemplos": [
@@ -3151,6 +3157,75 @@
           "explicacion": "En euskera casi todo va detrás."
         }
       ]
+    },
+    {
+      "id": "u5-g57",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Es una casa bonita», dicho como se ha dicho siempre:",
+          "opciones": [
+            "Etxe polit bat da",
+            "Etxe polita da",
+            "Etxea polit bat da",
+            "Polita etxe da"
+          ],
+          "correcta": 1,
+          "explicacion": "Dices cómo es, no cuántas son: con el artículo. «Etxe polit bat da» es calcar el «una» del castellano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Esto es una mesa. → Hau ____ da.",
+          "opciones": [
+            "mahai bat",
+            "mahai",
+            "mahaia",
+            "mahaiak"
+          ],
+          "correcta": 2,
+          "explicacion": "Dices qué es: lo natural es el artículo, igual que en «ni irakaslea naiz».",
+          "teclea": false
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tengo un gato. → ____ daukat.",
+          "opciones": [
+            "Katu bat",
+            "Katua bat",
+            "Katu",
+            "Bat katu"
+          ],
+          "correcta": 0,
+          "explicacion": "Aquí sí cuentas —podrían ser dos—, así que va «bat», y el nombre sin artículo.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En cuál de estas el «un» se dice con «bat»?",
+          "opciones": [
+            "Es un perro grande",
+            "Soy un estudiante",
+            "Tengo un perro",
+            "Esto es un perro"
+          ],
+          "correcta": 2,
+          "explicacion": "Solo ahí estás contando. En las otras dices qué es o cómo es algo, y va el artículo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Es una casa bonita.",
+          "respuestas": [
+            "etxe polita da"
+          ],
+          "pista": "Dices cómo es: aquí no va «bat»."
+        }
+      ],
+      "subnivel": "5.4"
     },
     {
       "id": "u5-g04",

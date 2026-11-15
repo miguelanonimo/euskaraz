@@ -127,6 +127,18 @@
       "subnivel": "7.1"
     },
     {
+      "titulo": "«Este» y «ese» también cogen la -k: honek, horrek",
+      "cuerpo": "La <b>-k</b> de quien hace algo la has puesto en los pronombres (<i>nik</i>), en los nombres de persona (<i>Anek</i>) y en los nombres corrientes (<i>lagunak</i>). Faltan las palabras para señalar, y estas cambian un poco más:\n\n<b>hau</b> → <b>honek</b> — este, cuando hace algo\n<b>hori</b> → <b>horrek</b> — ese\n<b>hura</b> → <b>hark</b> — aquel\n\nLa tercera ya la conocías: es el <i>hark</i> de «él» o «ella», de la cuarta unidad. Las otras dos no salen pegando una <b>-k</b> sin más: cambia la palabra por dentro, y hay que aprendérselas.\n\nVan detrás del nombre, como siempre, y el nombre sigue sin artículo:\n\n<b>lagun hau irakaslea da</b> — Este amigo es profesor.\n<b>lagun honek kafea edaten du</b> — Este amigo bebe café.\n\n<b>ikasle hori Bilbokoa da</b> — Ese estudiante es de Bilbao.\n<b>ikasle horrek euskara ikasten du</b> — Ese estudiante aprende euskera.\n\nEn cada pareja, la primera frase no lleva objeto y la segunda sí. La pregunta es la de siempre: ¿hay algo a lo que se le hace la acción?\n\nEn plural no hay nada nuevo que aprender: <b>hauek</b>, <b>horiek</b> y <b>haiek</b> valen para las dos cosas.",
+      "ejemplos": [
+        {
+          "eu": "lagun hau irakaslea da",
+          "es": "Este amigo es profesor.",
+          "audio": "unidades/u3/lagun-hau-irakaslea-da.mp3"
+        }
+      ],
+      "subnivel": "7.1"
+    },
+    {
       "titulo": "La negación: «ez» y el auxiliar dan un salto",
       "cuerpo": "Para negar se pone <b>ez</b> delante… pero pasa algo más: <b>el auxiliar se coloca justo detrás del ez</b>, y el resto de la frase se queda después.\n\n<b>nik liburua irakurtzen dut</b> — Leo el libro.\n<b>nik ez dut liburua irakurtzen</b> — No leo el libro.\n\nEl <i>dut</i> ha saltado desde el final hasta detrás del <i>ez</i>. Con las formas de una sola pieza es más simple, porque no hay nada que mover:\n\n<b>Ni ikaslea naiz.</b> → <b>Ni ez naiz ikaslea.</b>\n<b>Etxean nago.</b> → <b>Ez nago etxean.</b>\n\nEl salto del auxiliar es de los pocos sitios donde el orden de palabras del euskera es rígido. Merece la pena practicarlo hasta que salga solo.\n\nUn aviso para lo que viene: aquí lo negado es <b>el libro</b>, algo concreto, y por eso <i>liburua</i> se queda igual. Cuando lo que niegas es genérico —«no como pan», sin más— el objeto cambia de forma. Es lo siguiente.",
       "ejemplos": [
@@ -255,8 +267,14 @@
       "subnivel": "7.5"
     },
     {
+      "titulo": "«Otro café»: beste kafe bat",
+      "cuerpo": "Para pedir <b>otro</b> —otro café, otra cerveza— hacen falta dos piezas que abrazan al nombre: <b>beste</b> delante y <b>bat</b> detrás.\n\n<b>beste kafe bat, mesedez</b> — Otro café, por favor.\n<b>beste garagardo bat</b> — otra cerveza\n<b>beste bat</b> — otro, otra, sin decir de qué\n\nEl castellano dice «otro café», no «otro un café», y por eso el <i>bat</i> es lo que se olvida. En euskera va siempre: sin él la frase se queda coja.\n\nEl nombre, en medio, va sin artículo, como siempre que le sigue <i>bat</i>: no «beste kafea bat».\n\nSi son varios, <b>batzuk</b> en lugar de <b>bat</b>: <b>beste batzuk</b>, otros.\n\nY cuando «el otro» es uno concreto, que ya sabemos cuál es, el <i>bat</i> desaparece y vuelve el artículo: <b>bestea</b>, el otro, la otra.\n\nUn aviso: «otra vez» no es <i>beste bat</i>. Tiene su palabra, <b>berriro</b>, que aprenderás al contar lo que pasó.",
+      "ejemplos": [],
+      "subnivel": "7.5"
+    },
+    {
       "titulo": "«Tengo hambre» se dice con «ser»: gose naiz",
-      "cuerpo": "En un tema de comer y beber faltaba lo primero: decir que tienes hambre. Y aquí el euskera no «tiene»: <b>es</b>.\n\n<b>gose naiz</b> — tengo hambre\n<b>egarri naiz</b> — tengo sed\n\nEl verbo es <i>izan</i>, el de la segunda unidad, y cambia con la persona como siempre:\n\n<b>gose zara?</b> — ¿Tienes hambre?\n<b>egarri gara</b> — Tenemos sed.\n<b>ez naiz gose</b> — No tengo hambre.\n\nFíjate en dos cosas. La palabra va <b>sin artículo</b>: <i>gose</i>, <i>egarri</i>, no «gosea». Y quien tiene hambre va <b>sin -k</b>, porque <i>izan</i> no lleva objeto: <i>ni gose naiz</i>.\n\nEl tropiezo de quien viene del castellano es traducir el «tengo» tal cual: «gose daukat». Se oye, también entre gente que habla euskera desde niña, pero la forma de siempre es con <i>izan</i>.\n\nPara decir que es mucha, <b>oso</b> delante:\n\n<b>oso gose naiz</b> — Tengo mucha hambre.",
+      "cuerpo": "En un tema de comer y beber faltaba lo primero: decir que tienes hambre. Y aquí el euskera no «tiene»: <b>es</b>.\n\n<b>gose naiz</b> — tengo hambre\n<b>egarri naiz</b> — tengo sed\n\nEl verbo es <i>izan</i>, el de la segunda unidad, y cambia con la persona como siempre:\n\n<b>gose zara?</b> — ¿Tienes hambre?\n<b>egarri gara</b> — Tenemos sed.\n<b>ez naiz gose</b> — No tengo hambre.\n\nFíjate en dos cosas. La palabra va <b>sin artículo</b>: <i>gose</i>, <i>egarri</i>, no «gosea». Y quien tiene hambre va <b>sin -k</b>, porque <i>izan</i> no lleva objeto: <i>ni gose naiz</i>.\n\nY el mismo molde sirve para el frío, el calor y el sueño: <b>hotz naiz</b>, tengo frío; <b>bero naiz</b>, tengo calor; <b>logura naiz</b>, tengo sueño.\n\nEl tropiezo de quien viene del castellano es traducir el «tengo» tal cual: «gose daukat». Se oye, también entre gente que habla euskera desde niña, pero la forma de siempre es con <i>izan</i>.\n\nPara decir que es mucha, <b>oso</b> delante:\n\n<b>oso gose naiz</b> — Tengo mucha hambre.",
       "ejemplos": [],
       "subnivel": "7.5"
     },
@@ -1878,6 +1896,73 @@
               "es": "beber"
             }
           ]
+        }
+      ],
+      "subnivel": "7.1"
+    },
+    {
+      "id": "u7-g41",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Este amigo bebe café. → Lagun ____ kafea edaten du.",
+          "opciones": [
+            "hau",
+            "honek",
+            "hauk",
+            "hauek"
+          ],
+          "correcta": 1,
+          "explicacion": "Bebe algo, así que quien bebe lleva -k. Y «hau» con -k es «honek»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ese estudiante aprende euskera. → Ikasle ____ euskara ikasten du.",
+          "opciones": [
+            "hori",
+            "horik",
+            "horiek",
+            "horrek"
+          ],
+          "correcta": 3,
+          "explicacion": "«Hori» con la -k de quien hace es «horrek». «Horiek» serían varios."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Este amigo es profesor. → Lagun ____ irakaslea da.",
+          "opciones": [
+            "honek",
+            "hau",
+            "hark",
+            "horrek"
+          ],
+          "correcta": 1,
+          "explicacion": "«Ser» no lleva objeto: sin -k."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Honek» es la forma con -k de…",
+          "opciones": [
+            "hori",
+            "hura",
+            "hau",
+            "hauek"
+          ],
+          "correcta": 2,
+          "explicacion": "Hau → honek, hori → horrek, hura → hark."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Este amigo bebe café.",
+          "respuestas": [
+            "lagun honek kafea edaten du"
+          ],
+          "pista": "Bebe algo: «este» lleva su forma con -k."
         }
       ],
       "subnivel": "7.1"
@@ -4339,6 +4424,74 @@
             "litro bat esne"
           ],
           "pista": "Cantidad + cosa, sin «de» y sin artículo."
+        }
+      ],
+      "subnivel": "7.5"
+    },
+    {
+      "id": "u7-g42",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Otro café, por favor. → ____, mesedez.",
+          "opciones": [
+            "Beste kafea",
+            "Kafe beste bat",
+            "Beste kafe",
+            "Beste kafe bat"
+          ],
+          "correcta": 3,
+          "explicacion": "«Beste» delante, «bat» detrás, y el nombre en medio sin artículo.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «beste garagardo bat», ¿qué palabra es la que se olvida viniendo del castellano?",
+          "opciones": [
+            "beste",
+            "bat",
+            "garagardo",
+            "ninguna"
+          ],
+          "correcta": 1,
+          "explicacion": "En castellano no hay «otro un café», pero en euskera el «bat» va siempre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bestea» significa…",
+          "opciones": [
+            "otro cualquiera",
+            "otra vez",
+            "el otro, uno concreto",
+            "unos cuantos"
+          ],
+          "correcta": 2,
+          "explicacion": "Con el artículo es uno que ya sabemos cuál es. Uno cualquiera sería «beste bat»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Otros, varios y sin concretar. → Beste ____.",
+          "opciones": [
+            "bat",
+            "batzuk",
+            "ak",
+            "bi"
+          ],
+          "correcta": 1,
+          "explicacion": "El plural de «bat» es «batzuk»: beste batzuk."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Otro café, por favor.",
+          "respuestas": [
+            "beste kafe bat mesedez"
+          ],
+          "pista": "«Beste» delante y «bat» detrás."
         }
       ],
       "subnivel": "7.5"
