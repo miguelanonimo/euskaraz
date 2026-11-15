@@ -1,5 +1,74 @@
 # Audios pendientes — para Miguel
 
+## Lo último · Fichas nuevas del 15/11/2026 (v138): 29 frases sin audio
+
+Ric y Claude repasaron la gramática del curso contra los «Errores típicos» de la
+*Gramática didáctica* de Zubiri y salieron ocho fichas nuevas. Los ejemplos van
+escritos en el cuerpo de la ficha, en líneas `<b>frase</b> — traducción`, y esas
+líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
+
+**No hay que preparar nada.** El guion de siempre las encuentra solo:
+
+```
+cd scripts/generar-audio
+node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 29
+node generar-cuerpos.mjs           # genera, sube y las enlaza en audiosExtra
+```
+
+Después, commit de `data/unidades-v2/` y listo. Lo que va a generar:
+
+| Tema | Frase | Traducción |
+|---|---|---|
+| 4.1 | hiru lagun gara | Somos tres amigos |
+| 4.1 | hiru lagunak irakasleak dira | Los tres amigos son profesores |
+| 4.4 | Ane ikaslea da | Ane es estudiante |
+| 4.4 | Anek txakur bat du | Ane tiene un perro |
+| 4.4 | lagunak irakasleak dira | Los amigos son profesores |
+| 4.4 | lagunak txakur bat du | El amigo tiene un perro |
+| 4.4 | lagunek | los amigos, cuando tienen o hacen algo |
+| 4.6 | aitaren anaia | el hermano de mi padre: osaba |
+| 4.6 | amaren ahizpa | la hermana de mi madre: izeba |
+| 4.6 | aitaren aita | el padre de mi padre: aitona |
+| 6.2 | larunbat gauean | el sábado por la noche |
+| 6.2 | ostiral arratsaldean | el viernes por la tarde |
+| 6.2 | larunbat goizean | el sábado por la mañana |
+| 7.5 | garagardo bat, mesedez | una cerveza, por favor |
+| 7.5 | bi garagardo, mesedez | dos cervezas, por favor |
+| 7.5 | hiru kafe eta ardo bat | tres cafés y un vino |
+| 7.5 | gose naiz | tengo hambre |
+| 7.5 | egarri naiz | tengo sed |
+| 7.5 | gose zara? | ¿Tienes hambre? |
+| 7.5 | egarri gara | Tenemos sed |
+| 7.5 | ez naiz gose | No tengo hambre |
+| 7.5 | oso gose naiz | Tengo mucha hambre |
+| 8.3 | lanera noa | Voy al trabajo |
+| 8.3 | lanetik nator | Vengo del trabajo |
+| 9.1 | lagun asko | muchos amigos |
+| 9.1 | diru gutxi | poco dinero |
+| 9.1 | liburu asko ditut | Tengo muchos libros |
+| 9.1 | diru gutxi dut | Tengo poco dinero |
+| 9.1 | liburu asko gustatzen zaizkit | Me gustan muchos libros |
+
+**Quedan fuera 8 líneas** que llevan la terminación subrayada dentro de la
+negrita (`<b>Mikel<u>ek</u> katu bat du</b>`): ni el guion ni la app las reconocen
+como frase, porque los dos buscan una negrita sin etiquetas dentro. Va arreglado en
+el siguiente lote de contenido; cuando llegue, basta con volver a correr lo mismo.
+
+- 4.1 · hiru lagunak — los tres amigos
+- 4.4 · Mikelek katu bat du — Mikel tiene un gato
+- 4.4 · irakasleak bi katu ditu — La profesora tiene dos gatos
+- 4.4 · lagunek txakur bat dute — Los amigos tienen un perro
+- 4.6 · lagunaren etxea — la casa del amigo
+- 4.6 · Aneren etxea — la casa de Ane
+- 4.6 · Mikelen arreba — la hermana de Mikel
+- 12.1 · Euskara ikasten al duzu? — ¿Estudias euskera? (con euskaraz sería «¿estudias en euskera?»)
+
+De paso: en la ficha de bizkaiera del tema 6.2 se quitó la frase «barikuan gabean»,
+que no apareció en ninguna fuente (Labayru da «zapatu arratsaldean», con el día sin
+terminación). Su mp3 se queda en el bucket sin usar; no hay que hacer nada con él.
+
+---
+
 Todo lo de audio que hay ahora mismo pendiente, en un sitio. Sale de lo que
 Ric fue detectando de oído probando la app, más el vocabulario nuevo que
 aún no tiene mp3.
