@@ -46,7 +46,7 @@
   "gramatica": [
     {
       "titulo": "Del uno al diez, que es lo que hay que saberse",
-      "cuerpo": "Estos diez no salen de ninguna regla: hay que aprendérselos, y con ellos se construye todo lo demás.\n\n<b>bat</b> — 1\n<b>bi</b> — 2\n<b>hiru</b> — 3\n<b>lau</b> — 4\n<b>bost</b> — 5\n<b>sei</b> — 6\n<b>zazpi</b> — 7\n<b>zortzi</b> — 8\n<b>bederatzi</b> — 9\n<b>hamar</b> — 10\n\nTres avisos que ahorran disgustos:\n\n<b>bat</b> no es solo «uno». Es también el artículo «un/una», y va <b>detrás</b> del nombre: <i>lagun bat</i>, un amigo o una amiga.\n<b>bi</b> es el único número que puede ir delante o detrás: <i>bi lagun</i> y <i>lagun bi</i> valen las dos. Los demás van <b>siempre delante</b> — <i>hiru lagun</i>, nunca «lagun hiru».\n<b>sei</b> se pronuncia con <b>s</b> clara, como en castellano «seis», no con «sh».\n\nY lo importante para lo que viene: <b>detrás de un número, el sustantivo va sin artículo y en singular</b>. Se dice <i>hiru lagun</i>, tres amigos — nunca «hiru lagunak».",
+      "cuerpo": "Estos diez no salen de ninguna regla: hay que aprendérselos, y con ellos se construye todo lo demás.\n\n<b>bat</b> — 1\n<b>bi</b> — 2\n<b>hiru</b> — 3\n<b>lau</b> — 4\n<b>bost</b> — 5\n<b>sei</b> — 6\n<b>zazpi</b> — 7\n<b>zortzi</b> — 8\n<b>bederatzi</b> — 9\n<b>hamar</b> — 10\n\nTres avisos que ahorran disgustos:\n\n<b>bat</b> no es solo «uno». Es también el artículo «un/una», y va <b>detrás</b> del nombre: <i>lagun bat</i>, un amigo o una amiga.\n<b>bi</b> es el único número que puede ir delante o detrás: <i>bi lagun</i> y <i>lagun bi</i> valen las dos. Los demás van <b>siempre delante</b> — <i>hiru lagun</i>, nunca «lagun hiru».\n<b>sei</b> se pronuncia con <b>s</b> clara, como en castellano «seis», no con «sh».\n\nY lo importante para lo que viene: <b>detrás de un número, el sustantivo va sin artículo y en singular</b>. Se dice <i>hiru lagun</i>, tres amigos. Con la <b>-ak</b> puesta, <i>hiru lagunak</i>, ya no cuentas: dices «<b>los</b> tres amigos». Esa diferencia tiene su ficha al final del tema.",
       "ejemplos": [
         {
           "eu": "lagun bat",
@@ -82,6 +82,18 @@
       "titulo": "El sistema es de base veinte",
       "cuerpo": "El euskera cuenta de veinte en veinte, como el francés con <i>quatre-vingts</i> pero llevado hasta el final:\n\n<b>hogei</b> (20)\n<b>berrogei</b> (40) = dos veintes\n<b>hirurogei</b> (60) = tres veintes\n<b>laurogei</b> (80) = cuatro veintes\n\nY 35 es <i>hogeita hamabost</i>: «veinte y quince». No hace falta que lo domines ahora, pero conviene saber por qué los números altos suenan tan largos.",
       "ejemplos": [],
+      "subnivel": "4.1"
+    },
+    {
+      "titulo": "«Hiru lagun» o «hiru lagunak»: tres, o los tres",
+      "cuerpo": "Ya tienes la regla: detrás de un número el nombre va desnudo. <i>Hiru lagun</i>, tres amigos.\n\nPero la forma con artículo también existe. Dice otra cosa:\n\n<b>hiru lagun</b> — tres amigos. Los estás contando.\n<b>hiru lagun<u>ak</u></b> — <b>los</b> tres amigos. Esos tres, los que ya sabemos.\n\nEs la diferencia que el castellano marca con «los». Si cuentas, sin artículo. Si hablas de un grupo que ya está claro cuál es, con <b>-ak</b>.\n\nTienes un ejemplo en el metro de Bilbao. La parada del Casco Viejo se llama <b>Zazpikaleak</b>: <i>zazpi</i> (siete) + <i>kale</i> (calle) + <b>-ak</b>. No son siete calles cualesquiera: son <b>las</b> Siete Calles, las del casco antiguo, y por eso llevan el artículo.\n\nEl tropiezo de quien viene del castellano va en la otra dirección: poner la <b>-ak</b> al contar, porque «tres amigos» suena a plural. Para contar, sin ella:\n\n<b>hiru lagun gara</b> — Somos tres amigos.\n<b>hiru lagunak irakasleak dira</b> — Los tres amigos son profesores.",
+      "ejemplos": [
+        {
+          "eu": "hiru lagun",
+          "es": "Tres amigos.",
+          "audio": "unidades/u4/hiru-lagun.mp3"
+        }
+      ],
       "subnivel": "4.1"
     },
     {
@@ -129,6 +141,18 @@
       "subnivel": "4.4"
     },
     {
+      "titulo": "La -k también va en los nombres: «Anek», «lagunak»",
+      "cuerpo": "Hasta aquí la <b>-k</b> solo la has visto en los pronombres: <i>nik, zuk, hark</i>. Pero quien tiene algo no siempre es «yo» o «tú»: puede ser Ane, o tu amigo. Entonces la <b>-k</b> se la lleva el nombre.\n\n<b>Con nombres de persona</b>\n\nSi acaba en vocal, <b>-k</b>. Si acaba en consonante, <b>-ek</b>, para que se pueda pronunciar:\n\n<b>Ane<u>k</u> txakur bat du</b> — Ane tiene un perro.\n<b>Mikel<u>ek</u> katu bat du</b> — Mikel tiene un gato.\n\n<b>Con nombres corrientes</b>\n\nLa <b>-k</b> va detrás del artículo: <i>laguna</i> → <i>lagunak</i>.\n\n<b>laguna<u>k</u> txakur bat du</b> — El amigo tiene un perro.\n<b>irakaslea<u>k</u> bi katu ditu</b> — La profesora tiene dos gatos.\n\nLa pregunta de siempre sigue valiendo: ¿hay algo a lo que se le hace la acción? Si lo hay, quien la hace lleva <b>-k</b>, sea un pronombre o un nombre.\n\n<b>Ane ikaslea da</b> — Ane es estudiante. Sin -k: «ser» no lleva objeto.\n<b>Anek txakur bat du</b> — Ane tiene un perro. Con -k: tiene algo.\n\nEs el olvido más corriente de quien viene del castellano: «Ane txakur bat du», sin la -k. Con los nombres se escapa todavía más que con <i>nik</i>, porque el nombre se ve entero y parece que no le falta nada.",
+      "ejemplos": [],
+      "subnivel": "4.4"
+    },
+    {
+      "titulo": "«Lagunak» puede ser uno o varios",
+      "cuerpo": "Aquí hay una trampa que conviene ver una vez, despacio, porque se repite toda la vida.\n\nEn la segunda unidad aprendiste que <b>lagunak</b> es «los amigos». Y acabas de ver que <b>lagunak</b> es también «el amigo», cuando tiene algo. Son dos cosas distintas que se escriben igual:\n\n<b>lagunak irakasleak dira</b> — Los amigos son profesores.\n<b>lagunak txakur bat du</b> — El amigo tiene un perro.\n\nEn la primera, la <b>-ak</b> es el plural. En la segunda es el artículo <b>-a</b> más la <b>-k</b> de quien hace. Lo que te saca de dudas es <b>el verbo</b>: <i>dira</i> es «son», varios; <i>du</i> es «tiene», uno solo.\n\n¿Y cuando son varios los que tienen algo? Entonces la terminación es <b>-ek</b>:\n\n<b>lagun<u>ek</u> txakur bat dute</b> — Los amigos tienen un perro.\n\nEl cuadro entero, con <i>lagun</i>:\n\n<b>laguna</b> — el amigo, cuando es o está\n<b>lagunak</b> — el amigo, cuando tiene o hace algo\n<b>lagunak</b> — los amigos, cuando son o están\n<b>lagunek</b> — los amigos, cuando tienen o hacen algo\n\nNo hace falta que te salga a la primera. Basta con que, cuando leas <i>lagunak</i>, mires el verbo antes de decidir cuántos son.",
+      "ejemplos": [],
+      "subnivel": "4.4"
+    },
+    {
       "titulo": "Cuando tienes varias cosas: dut → ditut",
       "cuerpo": "El verbo también cambia según <b>cuántas</b> cosas tienes. Si son varias, entra una <b>-it-</b>:\n\n<b>nik ditut</b> — yo tengo (varios)\n<b>zuk dituzu</b> — tú tienes\n<b>hark ditu</b> — él/ella tiene\n<b>guk ditugu</b> — nosotros tenemos\n<b>zuek dituzue</b> — vosotros tenéis\n<b>haiek dituzte</b> — ellos tienen\n\nCompara: <i>katu bat <b>dut</b></i> (tengo un gato) frente a <i>bi katu <b>ditut</b></i> (tengo dos gatos). Lo que cambia es el verbo, no el nombre: <i>katu</i> se queda igual.\n\nEsto es lo que hace que el verbo vasco parezca complicado, y también lo que lo hace potente: lleva dentro la información de quién hace, a quién y cuántos.",
       "ejemplos": [
@@ -147,7 +171,7 @@
     },
     {
       "titulo": "Decir tu edad",
-      "cuerpo": "La edad se «tiene», como en castellano, pero en plural porque son varios años:\n\n<b>zenbat urte dituzu?</b> — ¿Cuántos años tienes?\n<b>hogei urte ditut</b> — Tengo veinte años.\n\nY fíjate: <i>urte</i> va sin artículo y en singular detrás del número. Se dice <i>hogei urte</i>, nunca «hogei urteak». Es una regla general: <b>detrás de un número, el sustantivo no lleva artículo ni plural</b>.",
+      "cuerpo": "La edad se «tiene», como en castellano, pero en plural porque son varios años:\n\n<b>zenbat urte dituzu?</b> — ¿Cuántos años tienes?\n<b>hogei urte ditut</b> — Tengo veinte años.\n\nY fíjate: <i>urte</i> va sin artículo y en singular detrás del número. Se dice <i>hogei urte ditut</i>, no «hogei urteak ditut». Es la regla de los números: <b>cuando cuentas, el sustantivo va sin artículo y sin plural</b>.",
       "ejemplos": [
         {
           "eu": "zenbat urte dituzu?",
@@ -218,7 +242,7 @@
     },
     {
       "titulo": "«Bi anaia», pero «bi seme»",
-      "cuerpo": "Ya tienes la regla de los números: detrás de un número el nombre va <b>sin artículo</b> y en singular. <i>hiru lagun</i>, tres amigos — nunca «hiru lagunak».\n\nEntonces, ¿por qué se dice <b>bi anaia</b> y no «bi anai»?\n\nPorque esa <b>-a</b> no es el artículo: es parte de la palabra. Euskaltzaindia lo llama <b>a itsatsia</b>, la «a pegada», y la llevan bastantes de las palabras de la familia:\n\n<i>aita</i>, <i>ama</i>, <i>alaba</i>, <i>anaia</i>, <i>arreba</i>, <i>ahizpa</i>, <i>osaba</i>, <i>aitona</i>, <i>amona</i>\n\nLa prueba es poner un número delante y mirar si la <b>-a</b> aguanta:\n\n<b>bi alaba</b> — dos hijas. Aguanta, porque la palabra es <i>alaba</i>.\n<b>bi seme</b> — dos hijos. Se cae, porque la palabra es <i>seme</i>: <i>semea</i> era «el hijo», con su artículo puesto.\n\nLas dos están en la misma lista, una al lado de la otra, y se portan distinto. No hay regla que lo adivine: se mira en el diccionario. Si la entrada acaba en <b>-a</b> —<i>anaia</i>, <i>alaba</i>—, esa <b>-a</b> es suya y no se toca.\n\nCon un adjetivo detrás pasa lo mismo: <b>anaia euskalduna</b>. Nunca «anai euskalduna».\n\n<i>Anai</i> a secas sí existe, pero solo pegado a otra palabra: <b>anai-arrebak</b>, los hermanos (los dos sexos juntos).",
+      "cuerpo": "Ya tienes la regla de los números: detrás de un número el nombre va <b>sin artículo</b> y en singular. <i>hiru lagun</i>, tres amigos — no «hiru lagunak», que son <b>los</b> tres amigos.\n\nEntonces, ¿por qué se dice <b>bi anaia</b> y no «bi anai»?\n\nPorque esa <b>-a</b> no es el artículo: es parte de la palabra. Euskaltzaindia lo llama <b>a itsatsia</b>, la «a pegada», y la llevan bastantes de las palabras de la familia:\n\n<i>aita</i>, <i>ama</i>, <i>alaba</i>, <i>anaia</i>, <i>arreba</i>, <i>ahizpa</i>, <i>osaba</i>, <i>aitona</i>, <i>amona</i>\n\nLa prueba es poner un número delante y mirar si la <b>-a</b> aguanta:\n\n<b>bi alaba</b> — dos hijas. Aguanta, porque la palabra es <i>alaba</i>.\n<b>bi seme</b> — dos hijos. Se cae, porque la palabra es <i>seme</i>: <i>semea</i> era «el hijo», con su artículo puesto.\n\nLas dos están en la misma lista, una al lado de la otra, y se portan distinto. No hay regla que lo adivine: se mira en el diccionario. Si la entrada acaba en <b>-a</b> —<i>anaia</i>, <i>alaba</i>—, esa <b>-a</b> es suya y no se toca.\n\nCon un adjetivo detrás pasa lo mismo: <b>anaia euskalduna</b>. Nunca «anai euskalduna».\n\n<i>Anai</i> a secas sí existe, pero solo pegado a otra palabra: <b>anai-arrebak</b>, los hermanos (los dos sexos juntos).",
       "ejemplos": [
         {
           "eu": "bi anaia ditut",
@@ -298,6 +322,12 @@
           "audio": "unidades/u4/neska-laguna.mp3"
         }
       ],
+      "subnivel": "4.6"
+    },
+    {
+      "titulo": "De quién: «aitaren anaia», el hermano de mi padre",
+      "cuerpo": "Con la familia delante, tarde o temprano hace falta decir «el hermano <b>de</b> mi padre» o «la casa <b>de</b> Ane». En euskera ese «de» es una terminación, <b>-ren</b>, y va pegada al dueño.\n\nYa la conoces sin saberlo: <i>nire</i>, <i>zure</i> y <i>gure</i> son <i>ni</i>, <i>zu</i> y <i>gu</i> con esa misma pieza. Ahora se la pones a cualquier nombre.\n\n<b>Con nombres corrientes</b>, detrás del artículo:\n\n<b>aita<u>ren</u> anaia</b> — el hermano de mi padre\n<b>ama<u>ren</u> ahizpa</b> — la hermana de mi madre\n<b>laguna<u>ren</u> etxea</b> — la casa del amigo\n\n<b>Con nombres de persona</b>, <b>-ren</b> tras vocal y <b>-en</b> tras consonante:\n\n<b>Ane<u>ren</u> etxea</b> — la casa de Ane\n<b>Mikel<u>en</u> arreba</b> — la hermana de Mikel\n\nY si los dueños son varios, <b>-en</b>: <b>guraso<u>en</u> etxea</b>, la casa de mis padres.\n\n<b>El orden es el contrario del castellano</b>\n\nPrimero el dueño y después lo que tiene, igual que con <i>nire</i>: <i>nire etxea</i>, <i>Aneren etxea</i>. Decir «etxea Aneren» es calcar el orden castellano, y no funciona. Y lo que se tiene lleva su artículo: <i>Aneren etxe<u>a</u></i>.\n\nLa pregunta ya la traías de la tercera unidad: <b>noren?</b>, ¿de quién? Lleva la misma cola que la respuesta, como todas: <i>Noren etxea da? — Aneren etxea.</i>\n\nCon esto la familia se explica sola:\n\n<b>aitaren anaia</b> — el hermano de mi padre: <b>osaba</b>\n<b>amaren ahizpa</b> — la hermana de mi madre: <b>izeba</b>\n<b>aitaren aita</b> — el padre de mi padre: <b>aitona</b>",
+      "ejemplos": [],
       "subnivel": "4.6"
     },
     {
@@ -5069,6 +5099,75 @@
       "subnivel": "4.1"
     },
     {
+      "id": "u4-g63",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Hiru lagun» es «tres amigos». ¿Y «hiru lagunak»?",
+          "opciones": [
+            "los tres amigos",
+            "tres amigas",
+            "trece amigos",
+            "nada: está mal dicho"
+          ],
+          "correcta": 0,
+          "explicacion": "Con la -ak ya no cuentas: hablas de esos tres, los que ya sabemos. «Los tres amigos»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Somos tres amigos. → ____ gara.",
+          "opciones": [
+            "Hiru lagunak",
+            "Hiru lagun",
+            "Lagun hiru",
+            "Hiru laguna"
+          ],
+          "correcta": 1,
+          "explicacion": "Estás contando, así que va sin artículo. «Hiru lagunak gara» sería «somos los tres amigos».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Los tres amigos son profesores. → ____ irakasleak dira.",
+          "opciones": [
+            "Hiru lagun",
+            "Hiru laguna",
+            "Hiru lagunak",
+            "Lagunak hiru"
+          ],
+          "correcta": 2,
+          "explicacion": "Son esos tres, un grupo concreto: con -ak, igual que el castellano pone «los».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La parada de metro del Casco Viejo de Bilbao se llama «Zazpikaleak». ¿Qué lleva dentro?",
+          "opciones": [
+            "zazpi + kale: siete calles cualesquiera",
+            "zazpi + kale + -ak: las Siete Calles",
+            "zazpi + kalea: la calle siete",
+            "zazpi + kale + -an: en siete calles"
+          ],
+          "correcta": 1,
+          "explicacion": "Son las Siete Calles del casco antiguo, unas concretas, y por eso llevan el artículo de plural."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "los tres amigos",
+          "respuestas": [
+            "hiru lagunak"
+          ],
+          "pista": "Son esos, los que ya sabemos: falta el artículo de plural."
+        }
+      ],
+      "subnivel": "4.1"
+    },
+    {
       "id": "u4-g60",
       "variantes": [
         {
@@ -5197,6 +5296,144 @@
       "subnivel": "4.4"
     },
     {
+      "id": "u4-g64",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ane tiene un perro. → ____ txakur bat du.",
+          "opciones": [
+            "Ane",
+            "Anek",
+            "Anea",
+            "Aneak"
+          ],
+          "correcta": 1,
+          "explicacion": "Tiene algo, así que quien tiene lleva -k: Anek. «Ane», sin nada, es el olvido de siempre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Mikel tiene dos gatos. → ____ bi katu ditu.",
+          "opciones": [
+            "Mikel",
+            "Mikelk",
+            "Mikelak",
+            "Mikelek"
+          ],
+          "correcta": 3,
+          "explicacion": "Acaba en consonante, así que entra una -e- para poder pronunciarlo: Mikelek."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿En cuál de estas frases «Ane» lleva -k?",
+          "opciones": [
+            "Ane es profesora",
+            "Ane es de Bilbao",
+            "Ane tiene un gato",
+            "Ane es mi amiga"
+          ],
+          "correcta": 2,
+          "explicacion": "Solo «tener» lleva objeto. Con «ser» el sujeto va limpio: Ane irakaslea da."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La profesora tiene un perro. → ____ txakur bat du.",
+          "opciones": [
+            "Irakaslea",
+            "Irakasle",
+            "Irakasleak",
+            "Irakaslek"
+          ],
+          "correcta": 2,
+          "explicacion": "Con un nombre corriente, la -k va detrás del artículo: irakaslea + k."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Ane tiene un gato.",
+          "respuestas": [
+            "anek katu bat du",
+            "anek katu bat dauka"
+          ],
+          "pista": "Tiene algo: el nombre lleva -k."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u4-g65",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El amigo tiene una casa. → ____ etxe bat du.",
+          "opciones": [
+            "Laguna",
+            "Lagunek",
+            "Lagunak",
+            "Lagun"
+          ],
+          "correcta": 2,
+          "explicacion": "Uno solo que tiene algo: el artículo -a más la -k. «Lagunek» serían varios, y el verbo sería «dute».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Los amigos tienen una casa. → ____ etxe bat dute.",
+          "opciones": [
+            "Lagunek",
+            "Lagunak",
+            "Laguna",
+            "Lagun"
+          ],
+          "correcta": 0,
+          "explicacion": "Varios que tienen algo: -ek. El verbo lo confirma: «dute».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Lagunak txakur bat du.» ¿Cuántos amigos son?",
+          "opciones": [
+            "Varios: acaba en -ak",
+            "Uno: lo dice el verbo «du»",
+            "No se puede saber",
+            "Dos"
+          ],
+          "correcta": 1,
+          "explicacion": "«Du» es «tiene», uno solo. Esa -ak es el artículo más la -k de quien tiene, no el plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Lagunak irakasleak dira.» ¿Cuántos amigos son?",
+          "opciones": [
+            "Uno: lleva la -k de quien hace",
+            "Varios: lo dice el verbo «dira»",
+            "Uno: lo dice el verbo «dira»",
+            "No se puede saber"
+          ],
+          "correcta": 1,
+          "explicacion": "«Dira» es «son». Aquí nadie tiene nada, así que esa -ak es el plural de siempre."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Los amigos tienen un perro.",
+          "respuestas": [
+            "lagunek txakur bat dute",
+            "lagunek txakur bat daukate"
+          ],
+          "pista": "Varios que tienen algo: la terminación es -ek."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
       "id": "u4-g49",
       "variantes": [
         {
@@ -5309,7 +5546,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "¿Cuál de estas está mal?",
+          "pregunta": "Solo una de estas significa «los cuatro primos», esos que ya sabemos. ¿Cuál?",
           "opciones": [
             "lau lehengusuak",
             "lau lehengusu",
@@ -5317,7 +5554,7 @@
             "bi lehengusu"
           ],
           "correcta": 0,
-          "explicacion": "La -ak sobra: detrás de un número el nombre no lleva ni artículo ni plural."
+          "explicacion": "Con la -ak son «los cuatro primos», un grupo que ya está claro cuál es. Sin ella, «lau lehengusu», solo los cuentas: cuatro primos."
         },
         {
           "tipo": "opcion",
@@ -5346,6 +5583,140 @@
           "explicacion": "«Anaia» lleva la a pegada, así que no se cae; lo que no aparece nunca es la -ak del plural."
         }
       ]
+    },
+    {
+      "id": "u4-g66",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La casa de Ane. → ____ etxea",
+          "opciones": [
+            "Anek",
+            "Aneren",
+            "Aneko",
+            "Ane"
+          ],
+          "correcta": 1,
+          "explicacion": "El dueño lleva -ren y va delante: Aneren etxea."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La hermana de Mikel. → ____ arreba",
+          "opciones": [
+            "Mikelen",
+            "Mikelren",
+            "Mikelek",
+            "Mikelko"
+          ],
+          "correcta": 0,
+          "explicacion": "Tras consonante es -en: Mikelen. Con -ek sería Mikel teniendo algo, no de quién es."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien ordenada?",
+          "opciones": [
+            "etxea Aneren",
+            "etxe Aneren",
+            "Aneren etxea",
+            "Aneren etxe"
+          ],
+          "correcta": 2,
+          "explicacion": "Primero el dueño, después lo que tiene, y con su artículo. Al revés que en castellano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Aitaren anaia» es mi…",
+          "opciones": [
+            "osaba",
+            "izeba",
+            "aitona",
+            "lehengusua"
+          ],
+          "correcta": 0,
+          "explicacion": "El hermano de mi padre: mi tío."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "la casa de Ane",
+          "respuestas": [
+            "aneren etxea"
+          ],
+          "pista": "El dueño delante, con -ren."
+        }
+      ],
+      "subnivel": "4.6"
+    },
+    {
+      "id": "u4-g67",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Amaren ahizpa» es mi…",
+          "opciones": [
+            "osaba",
+            "amona",
+            "alaba",
+            "izeba"
+          ],
+          "correcta": 3,
+          "explicacion": "La hermana de mi madre: mi tía. Y es «ahizpa» porque quien la tiene es una mujer."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El hermano de mi padre. → ____ anaia",
+          "opciones": [
+            "aitak",
+            "aita",
+            "aitaren",
+            "aitan"
+          ],
+          "correcta": 2,
+          "explicacion": "De quién: -ren. «Aitak» sería mi padre haciendo algo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "La casa de mis padres. → ____ etxea",
+          "opciones": [
+            "gurasoak",
+            "gurasoen",
+            "gurasoek",
+            "guraso"
+          ],
+          "correcta": 1,
+          "explicacion": "Los dueños son varios: -en. «Gurasoek» serían mis padres haciendo algo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Lagunaren etxea» significa…",
+          "opciones": [
+            "el amigo de la casa",
+            "la casa del amigo",
+            "los amigos están en casa",
+            "la casa y el amigo"
+          ],
+          "correcta": 1,
+          "explicacion": "El que lleva -ren es el dueño, y va delante."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "la hermana de Mikel",
+          "respuestas": [
+            "mikelen arreba"
+          ],
+          "pista": "El dueño delante; tras consonante, -en."
+        }
+      ],
+      "subnivel": "4.6"
     }
   ],
   "audiosExtra": [

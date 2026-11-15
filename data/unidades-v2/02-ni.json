@@ -3146,6 +3146,74 @@
       ]
     },
     {
+      "id": "u2-g63",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál está bien dicha?",
+          "opciones": [
+            "Ni Bilboko naiz",
+            "Ni Bilbokoa da",
+            "Ni Bilbokoa naiz",
+            "Ni Bilbo naiz"
+          ],
+          "correcta": 2,
+          "explicacion": "Detrás del -ko va el artículo: Bilbokoa. «Bilboko», a secas, se queda esperando un nombre detrás."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Soy de Gernika. → Ni ____ naiz.",
+          "opciones": [
+            "Gernikako",
+            "Gernikakoa",
+            "Gernika",
+            "Gernikakoak"
+          ],
+          "correcta": 1,
+          "explicacion": "Sitio + -ko + artículo: Gernikakoa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Soy de Madrid. → ____ naiz.",
+          "opciones": [
+            "Madrilko",
+            "Madrilgo",
+            "Madrilkoa",
+            "Madrilgoa"
+          ],
+          "correcta": 3,
+          "explicacion": "Tras -l el sufijo es -go, y detrás va el artículo: Madrilgoa."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Somos de Bilbao. → Gu ____ gara.",
+          "opciones": [
+            "Bilbokoa",
+            "Bilboko",
+            "Bilbokoak",
+            "Bilbok"
+          ],
+          "correcta": 2,
+          "explicacion": "Sois varios y el verbo es «gara»: el artículo va en plural, Bilbokoak."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Soy de Gernika.",
+          "respuestas": [
+            "gernikakoa naiz",
+            "ni gernikakoa naiz"
+          ],
+          "pista": "Sitio, -ko, y el artículo al final."
+        }
+      ],
+      "subnivel": "2.4"
+    },
+    {
       "id": "u2-g15",
       "subnivel": "test",
       "variantes": [

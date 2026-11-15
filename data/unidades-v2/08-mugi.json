@@ -40,7 +40,7 @@
   "gramatica": [
     {
       "titulo": "«Joan»: ir, en una sola pieza",
-      "cuerpo": "Unos pocos verbos muy usados se conjugan solos, sin auxiliar, igual que <i>naiz</i> o <i>nago</i>. <b>Joan</b> (ir) es uno:\n\n<b>ni noa</b> — yo voy\n<b>zu zoaz</b> — tú vas\n<b>hura doa</b> — él/ella va\n<b>gu goaz</b> — nosotros vamos\n<b>zuek zoazte</b> — vosotros vais\n<b>haiek doaz</b> — ellos van\n\nNo lleva objeto, así que el sujeto <b>no lleva -k</b>: <i>ni noa</i>, nunca «nik noa».\n\nHay otra forma más larga, <b>joaten naiz</b>, que ya viste en la unidad anterior. La diferencia es de matiz: <b>noa</b> es «voy ahora», y <b>joaten naiz</b> es «suelo ir». En castellano las dos se dicen «voy».",
+      "cuerpo": "Unos pocos verbos muy usados se conjugan solos, sin auxiliar, igual que <i>naiz</i> o <i>nago</i>. <b>Joan</b> (ir) es uno:\n\n<b>ni noa</b> — yo voy\n<b>zu zoaz</b> — tú vas\n<b>hura doa</b> — él/ella va\n<b>gu goaz</b> — nosotros vamos\n<b>zuek zoazte</b> — vosotros vais\n<b>haiek doaz</b> — ellos van\n\nNo lleva objeto, así que el sujeto <b>no lleva -k</b>: <i>ni noa</i>, nunca «nik noa».\n\nHay otra forma más larga, <b>joaten naiz</b>, que ya viste en la unidad anterior. La diferencia es de matiz: <b>noa</b> es «voy ahora», y <b>joaten naiz</b> es «suelo ir». En castellano las dos se dicen «voy».\n\nY para «<b>estoy yendo</b>» no hace falta montar nada con el <i>ari</i> de la unidad anterior: <b>noa</b> ya lo dice. Con los verbos que se conjugan solos, «ahora mismo» es la forma corta: <i>etxera noa</i>, no «etxera joaten ari naiz».",
       "ejemplos": [
         {
           "eu": "Bilbora noa",
@@ -100,6 +100,23 @@
           "eu": "hona zatoz?",
           "es": "¿Vienes aquí?",
           "audio": "unidades/u9/hona-zatoz.mp3"
+        }
+      ],
+      "subnivel": "8.3"
+    },
+    {
+      "titulo": "«-ra» y «-tik» se pegan a la palabra pelada: lanera, lanetik",
+      "cuerpo": "Con <b>etxe</b> no se nota, porque acaba en vocal: <i>etxera</i>, <i>etxetik</i>. Pero estas dos terminaciones tienen la misma letra pequeña que el «en» de la quinta unidad.\n\n<b>Van sin el artículo.</b> No se pegan a <i>etxea</i> sino a <i>etxe</i>: se dice <i>etxera</i>, no «etxeara».\n\n<b>Y con nombres corrientes acabados en consonante entra una -e-</b>, para poder pronunciarlo:\n\n<b>lan</b> → <b>lan<u>e</u>ra</b> (al trabajo) · <b>lan<u>e</u>tik</b> (del trabajo)\n<b>komun</b> → <b>komun<u>e</u>ra</b> (al baño) · <b>komun<u>e</u>tik</b> (del baño)\n\nEl tropiezo de quien viene del castellano es colar el artículo en medio —«lanara», «komunatik»—, porque la palabra se aprendió con su <b>-a</b> puesta: <i>lana</i>, <i>komuna</i>. Esa <b>-a</b> no era de la palabra, y aquí se cae.\n\nLas tres juntas, para verlas de una vez:\n\n<b>lanean nago</b> — Estoy en el trabajo.\n<b>lanera noa</b> — Voy al trabajo.\n<b>lanetik nator</b> — Vengo del trabajo.",
+      "ejemplos": [
+        {
+          "eu": "lanean nago",
+          "es": "Estoy en el trabajo.",
+          "audio": "unidades/u6/lanean-nago.mp3"
+        },
+        {
+          "eu": "lanetik irteten naiz",
+          "es": "Salgo del trabajo.",
+          "audio": "unidades/u8/lanetik-irteten-naiz.mp3"
         }
       ],
       "subnivel": "8.3"
@@ -1313,6 +1330,77 @@
       "subnivel": "8.1"
     },
     {
+      "id": "u8-g52",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Estoy yendo a casa. → Etxera ____.",
+          "opciones": [
+            "joaten ari naiz",
+            "joaten naiz",
+            "noa",
+            "nago"
+          ],
+          "correcta": 2,
+          "explicacion": "«Noa» ya es «estoy yendo»: con los verbos de una pieza no hace falta «ari». «Joaten naiz» sería «suelo ir».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "De «noa» y «joaten naiz», ¿cuál es «suelo ir»?",
+          "opciones": [
+            "noa",
+            "joaten naiz",
+            "las dos",
+            "ninguna"
+          ],
+          "correcta": 1,
+          "explicacion": "La forma larga es la de la costumbre. «Noa» es ahora mismo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Voy a Bilbao ahora mismo. → Bilbora ____.",
+          "opciones": [
+            "joaten naiz",
+            "nator",
+            "nago",
+            "noa"
+          ],
+          "correcta": 3,
+          "explicacion": "Ahora mismo, la forma corta: noa.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Todos los lunes voy a la feria. → Astelehenero azokara ____.",
+          "opciones": [
+            "noa",
+            "nago",
+            "joaten naiz",
+            "nator"
+          ],
+          "correcta": 2,
+          "explicacion": "Es una costumbre —todos los lunes—, así que va la forma larga.",
+          "teclea": true
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estoy yendo a casa.",
+          "respuestas": [
+            "etxera noa",
+            "ni etxera noa"
+          ],
+          "pista": "No hace falta «ari»: la forma corta ya lo dice."
+        }
+      ],
+      "subnivel": "8.1"
+    },
+    {
       "id": "u9-g09",
       "variantes": [
         {
@@ -1582,7 +1670,8 @@
             "Lana"
           ],
           "correcta": 0,
-          "explicacion": "non → -n."
+          "explicacion": "non → -n.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -3222,6 +3311,74 @@
           "explicacion": "Orden + ordinal: aquí se juntan dos cosas que ya sabes."
         }
       ]
+    },
+    {
+      "id": "u8-g53",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Voy al trabajo. → ____ noa.",
+          "opciones": [
+            "Lanara",
+            "Lanean",
+            "Lanera",
+            "Lanra"
+          ],
+          "correcta": 2,
+          "explicacion": "La palabra es «lan», sin artículo, y tras consonante entra una -e-: lanera. «Lanara» cuela la -a de «lana»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Vengo del baño. → ____ nator.",
+          "opciones": [
+            "Komunetik",
+            "Komunatik",
+            "Komunean",
+            "Komuntik"
+          ],
+          "correcta": 0,
+          "explicacion": "«Komun» + e + tik. El artículo no entra."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Voy a casa. → ____ noa.",
+          "opciones": [
+            "Etxeara",
+            "Etxera",
+            "Etxean",
+            "Etxetik"
+          ],
+          "correcta": 1,
+          "explicacion": "«-ra» se pega a «etxe», no a «etxea»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué trío está bien escrito?",
+          "opciones": [
+            "lanan · lanara · lanatik",
+            "lanean · lanara · lanatik",
+            "lanen · lanra · lantik",
+            "lanean · lanera · lanetik"
+          ],
+          "correcta": 3,
+          "explicacion": "Tras consonante, las tres llevan su -e-, y ninguna la -a del artículo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Voy al trabajo.",
+          "respuestas": [
+            "lanera noa",
+            "ni lanera noa"
+          ],
+          "pista": "«Lan» acaba en consonante."
+        }
+      ],
+      "subnivel": "8.3"
     },
     {
       "id": "u9-g31",

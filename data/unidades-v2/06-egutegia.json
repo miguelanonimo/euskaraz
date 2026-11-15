@@ -106,7 +106,7 @@
     },
     {
       "titulo": "Los días de la semana",
-      "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana), y las piezas se leen solas:\n\naste (semana) + lehen (primero) → <i>astelehena</i>, «el primero de la semana»\naste (semana) + arte (entre) → <i>asteartea</i>, «el de en medio»\naste (semana) + azken (último) → <i>asteazkena</i>, «el último de la semana»\n\nY ahí hay algo que no cuadra: el «último de la semana» es el miércoles.\n\nLa explicación más extendida es que esos tres nombres son más viejos que la semana de siete días. Antes el tiempo se contaba en bloques más cortos, de tres días: uno para empezar, uno en medio y uno para cerrar. Cuando se adoptó la semana de siete, esos tres días conservaron el nombre que ya tenían, y por eso el «último» se quedó a mitad de camino.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nCompara las dos formas y se ve para qué sirve:\n\n<i>Gaur ostirala da.</i> — Hoy es viernes.\n<i>Ostiralean Bilbon nago.</i> — El viernes estoy en Bilbao.\n\nSin la <b>-n</b> nombras el día; con la <b>-n</b> dices que algo pasa ese día.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».",
+      "cuerpo": "<b>astelehena</b> — lunes\n<b>asteartea</b> — martes\n<b>asteazkena</b> — miércoles\n<b>osteguna</b> — jueves\n<b>ostirala</b> — viernes\n<b>larunbata</b> — sábado\n<b>igandea</b> — domingo\n\nLos tres primeros empiezan por <b>aste-</b> (semana), y las piezas se leen solas:\n\naste (semana) + lehen (primero) → <i>astelehena</i>, «el primero de la semana»\naste (semana) + arte (entre) → <i>asteartea</i>, «el de en medio»\naste (semana) + azken (último) → <i>asteazkena</i>, «el último de la semana»\n\nY ahí hay algo que no cuadra: el «último de la semana» es el miércoles.\n\nLa explicación más extendida es que esos tres nombres son más viejos que la semana de siete días. Antes el tiempo se contaba en bloques más cortos, de tres días: uno para empezar, uno en medio y uno para cerrar. Cuando se adoptó la semana de siete, esos tres días conservaron el nombre que ya tenían, y por eso el «último» se quedó a mitad de camino.\n\nPara decir <b>el lunes</b>, en el sentido de «ese día», otra vez la <b>-n</b>:\n\n<b>astelehenean, asteartean, asteazkenean, ostegunean, ostiralean, larunbatean, igandean</b>.\n\nEs la regla de la unidad 5. Los que acaban en consonante cogen <b>-ean</b> —<i>astelehen</i> → <i>astelehen<u>ean</u></i>, <i>larunbat</i> → <i>larunbat<u>ean</u></i>— y los dos que acaban en vocal, solo <b>-an</b>: <i>astearte</i> → <i>asteartean</i>, <i>igande</i> → <i>igandean</i>. «Larunbatan» es el mismo tropiezo que «lanan».\n\nCompara las dos formas y se ve para qué sirve:\n\n<i>Gaur ostirala da.</i> — Hoy es viernes.\n<i>Ostiralean Bilbon nago.</i> — El viernes estoy en Bilbao.\n\nSin la <b>-n</b> nombras el día; con la <b>-n</b> dices que algo pasa ese día.\n\nY el fin de semana es <b>asteburua</b>, «la cabeza de la semana».",
       "ejemplos": [
         {
           "eu": "larunbatean etxean nago",
@@ -149,8 +149,20 @@
       "subnivel": "6.2"
     },
     {
+      "titulo": "«El sábado por la noche»: el día se queda desnudo",
+      "cuerpo": "Ya sabes decir <b>larunbatean</b> (el sábado) y <b>gauean</b> (por la noche). Para juntarlos, «el sábado por la noche», solo el rato lleva la terminación. El día va delante y <b>desnudo</b>:\n\n<b>larunbat gauean</b> — el sábado por la noche\n<b>ostiral arratsaldean</b> — el viernes por la tarde\n<b>larunbat goizean</b> — el sábado por la mañana\n\nEl día no lleva ni artículo ni <b>-n</b>: no es «larunbata gauean». Las dos palabras funcionan como una sola, y la terminación va una vez, al final.\n\nEs lo mismo que ya hacías con <i>gaur</i> y <i>bihar</i>, que tampoco llevan nada: <b>gaur goizean</b>, <b>bihar arratsaldean</b>. Ahora con un día de la semana delante.",
+      "ejemplos": [
+        {
+          "eu": "gaur goizean etxean nago",
+          "es": "Esta mañana estoy en casa.",
+          "audio": "unidades/u7/gaur-goizean-etxean-nago.mp3"
+        }
+      ],
+      "subnivel": "6.2"
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
-      "cuerpo": "Aquí el bizkaiera no cambia un detalle: cambia <b>los nombres de los días</b>. Y es de lo primero que descoloca a quien llega con batua aprendido.\n\n<b>astelehena</b> — igual (a veces <i>astelena</i>)\n<b>martitzena</b> — batua: asteartea\n<b>eguaztena</b> — batua: asteazkena\n<b>eguena</b> — batua: osteguna\n<b>barikua</b> — batua: ostirala\n<b>zapatua</b> — batua: larunbata\n<b>domeka</b> — batua: igandea\n\nAsí que «el viernes por la noche» por allí es <b>barikuan gabean</b>, no <i>ostiralean gauean</i>. Los carteles y la prensa usan batua; la gente, en casa, sigue con estos.\n\n<b>gaua → gaba</b>\nLa noche es <b>gaba</b> en bizkaiera, de donde sale el <i>gabon</i> de «buenas noches» (gau on). En batua, <i>gaua</i>.\n\n<b>Ze ordu da?</b>\nEl <i>zer</i> del batua se acorta en <b>ze</b> delante de un nombre: <b>Ze ordu da?</b>, <b>Ze egun da gaur?</b>",
+      "cuerpo": "Aquí el bizkaiera no cambia un detalle: cambia <b>los nombres de los días</b>. Y es de lo primero que descoloca a quien llega con batua aprendido.\n\n<b>astelehena</b> — igual (a veces <i>astelena</i>)\n<b>martitzena</b> — batua: asteartea\n<b>eguaztena</b> — batua: asteazkena\n<b>eguena</b> — batua: osteguna\n<b>barikua</b> — batua: ostirala\n<b>zapatua</b> — batua: larunbata\n<b>domeka</b> — batua: igandea\n\nAsí que «el sábado por la tarde» por allí es <b>zapatu arratsaldean</b>, no <i>larunbat arratsaldean</i>. Los carteles y la prensa usan batua; la gente, en casa, sigue con estos.\n\n<b>gaua → gaba</b>\nLa noche es <b>gaba</b> en bizkaiera, de donde sale el <i>gabon</i> de «buenas noches» (gau on). En batua, <i>gaua</i>.\n\n<b>Ze ordu da?</b>\nEl <i>zer</i> del batua se acorta en <b>ze</b> delante de un nombre: <b>Ze ordu da?</b>, <b>Ze egun da gaur?</b>",
       "ejemplos": [
         {
           "eu": "zapatuan Bilbon nago",
@@ -161,11 +173,6 @@
           "eu": "ze ordu da?",
           "es": "¿Qué hora es? — batua: Zer ordu da?",
           "audio": "unidades/u7/ze-ordu-da.mp3"
-        },
-        {
-          "eu": "barikuan gabean",
-          "es": "El viernes por la noche. — batua: Ostiralean gauean.",
-          "audio": "unidades/u7/barikuan-gabean.mp3"
         }
       ],
       "subnivel": "6.2",
@@ -195,7 +202,7 @@
     },
     {
       "titulo": "«En mayo»: el mismo -n de siempre",
-      "cuerpo": "Ya lo tienes de la unidad 5, con los lugares: <b>etxean</b> (en casa), <b>tabernan</b> (en el bar). Con los meses funciona igual, solo que el artículo <i>-a</i> se convierte en <i>-e-</i> al añadir la terminación:\n\n<b>maiatza</b> → <b>maiatzean</b> — en mayo\n<b>abendua</b> → <b>abenduan</b> — en diciembre\n<b>urtarrila</b> → <b>urtarrilean</b> — en enero\n\nNo hace falta que lo memorices ahora mismo: con reconocerlo cuando lo oigas es suficiente en este punto.",
+      "cuerpo": "Ya lo tienes de la unidad 5, con los lugares: <b>etxean</b> (en casa), <b>lanean</b> (en el trabajo). Con los meses es <b>la misma regla</b>, y solo hay que mirar cómo acaba el mes sin su artículo.\n\nSi acaba en <b>vocal</b>, <b>-an</b>:\n\n<b>abendu</b> → <b>abendu<u>an</u></b> — en diciembre\n<b>martxo</b> → <b>martxo<u>an</u></b> — en marzo\n\nSi acaba en <b>consonante</b>, <b>-ean</b>:\n\n<b>maiatz</b> → <b>maiatz<u>ean</u></b> — en mayo\n<b>urtarril</b> → <b>urtarril<u>ean</u></b> — en enero\n\nLa mayoría acaba en consonante —<i>urtarril, otsail, apiril, maiatz, ekain, uztail, irail</i>—, así que lo que más vas a oír es <b>-ean</b>. Decir «maiatzan» o «urtarrilan» es el mismo tropiezo que «lanan»: pegar la -n sin mirar cómo acaba la palabra.",
       "ejemplos": [
         {
           "eu": "nire urtebetetzea maiatzean da",
@@ -3481,6 +3488,140 @@
       "subnivel": "6.2"
     },
     {
+      "id": "u6-g53",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El sábado estoy en casa. → ____ etxean nago.",
+          "opciones": [
+            "Larunbatan",
+            "Larunbatean",
+            "Larunbata",
+            "Larunbat"
+          ],
+          "correcta": 1,
+          "explicacion": "«Larunbat» acaba en consonante, así que es -ean, como «lanean». Y sin la -n solo nombrarías el día."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Igande» acaba en vocal. ¿Cómo dices que algo pasa el domingo?",
+          "opciones": [
+            "igandean",
+            "igandeean",
+            "igandea",
+            "iganden"
+          ],
+          "correcta": 0,
+          "explicacion": "Tras vocal basta con -an: igandean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Una acaba en consonante y la otra en vocal. ¿Qué pareja está bien escrita?",
+          "opciones": [
+            "astelehenan · asteartean",
+            "astelehenean · astearteean",
+            "astelehenean · asteartean",
+            "astelehenan · astearteean"
+          ],
+          "correcta": 2,
+          "explicacion": "Consonante, -ean: astelehenean. Vocal, -an: asteartean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El viernes estoy en Bilbao. → ____ Bilbon nago.",
+          "opciones": [
+            "Ostirala",
+            "Ostiralan",
+            "Ostiralen",
+            "Ostiralean"
+          ],
+          "correcta": 3,
+          "explicacion": "Algo pasa ese día, así que lleva el «en», y tras consonante es -ean."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "el sábado (ese día pasa algo)",
+          "respuestas": [
+            "larunbatean"
+          ],
+          "pista": "«Larunbat» acaba en consonante: no basta con una -n."
+        }
+      ],
+      "subnivel": "6.2"
+    },
+    {
+      "id": "u6-g54",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El sábado por la noche. → ____",
+          "opciones": [
+            "larunbata gauean",
+            "larunbat gauean",
+            "larunbatean gaua",
+            "gau larunbatean"
+          ],
+          "correcta": 1,
+          "explicacion": "El día va desnudo y solo el rato lleva la -n: larunbat gauean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El viernes por la tarde estoy en casa. → ____ arratsaldean etxean nago.",
+          "opciones": [
+            "Ostirala",
+            "Ostiralak",
+            "Ostiral",
+            "Ostiralen"
+          ],
+          "correcta": 2,
+          "explicacion": "Delante del rato, el día no lleva nada: ostiral arratsaldean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Gaur goizean» es «esta mañana». ¿Y «larunbat goizean»?",
+          "opciones": [
+            "el sábado por la mañana",
+            "los sábados y las mañanas",
+            "la mañana es sábado",
+            "hasta el sábado por la mañana"
+          ],
+          "correcta": 0,
+          "explicacion": "El mismo molde que «gaur goizean», con un día de la semana delante."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Dónde va la terminación en «el sábado por la noche»?",
+          "opciones": [
+            "Solo en el día",
+            "En las dos palabras",
+            "En ninguna",
+            "Solo en el rato: larunbat gauean"
+          ],
+          "correcta": 3,
+          "explicacion": "La terminación va una sola vez, al final, y el día se queda sin nada."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "el sábado por la noche",
+          "respuestas": [
+            "larunbat gauean"
+          ],
+          "pista": "El día delante, sin nada; la terminación solo en el rato."
+        }
+      ],
+      "subnivel": "6.2"
+    },
+    {
       "id": "u6-g52",
       "variantes": [
         {
@@ -3565,6 +3706,73 @@
           ],
           "correcta": 0,
           "explicacion": "abendua = diciembre."
+        }
+      ],
+      "subnivel": "6.3"
+    },
+    {
+      "id": "u6-g55",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Maiatz» acaba en consonante. ¿Cómo se dice «en mayo»?",
+          "opciones": [
+            "maiatzan",
+            "maiatzean",
+            "maiatza",
+            "maiatzen"
+          ],
+          "correcta": 1,
+          "explicacion": "Tras consonante, -ean: maiatzean. «Maiatzan» es el tropiezo de siempre."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En enero. → ____",
+          "opciones": [
+            "urtarrilean",
+            "urtarrilan",
+            "urtarrila",
+            "urtarrilen"
+          ],
+          "correcta": 0,
+          "explicacion": "«Urtarril» acaba en consonante: -ean."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En diciembre. → ____",
+          "opciones": [
+            "abenduean",
+            "abendua",
+            "abenduan",
+            "abenduen"
+          ],
+          "correcta": 2,
+          "explicacion": "«Abendu» acaba en vocal, así que basta con -an."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Uno acaba en vocal y el otro en consonante. ¿Qué pareja está bien escrita?",
+          "opciones": [
+            "martxoean · apirilean",
+            "martxoan · apirilan",
+            "martxoean · apirilan",
+            "martxoan · apirilean"
+          ],
+          "correcta": 3,
+          "explicacion": "Vocal, -an: martxoan. Consonante, -ean: apirilean."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "en mayo",
+          "respuestas": [
+            "maiatzean"
+          ],
+          "pista": "«Maiatz» acaba en consonante."
         }
       ],
       "subnivel": "6.3"
