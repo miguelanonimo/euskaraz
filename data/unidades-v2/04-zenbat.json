@@ -153,6 +153,23 @@
       "subnivel": "4.4"
     },
     {
+      "titulo": "NOR y NORK: los nombres que oirás en clase",
+      "cuerpo": "A la <b>-k</b> la hemos llamado «ergativo», que es su nombre técnico. Pero en un euskaltegi, o en cualquier curso hecho en Euskal Herria, casi nunca la vas a oír así. La llaman NORK. Y a la forma sin marca, NOR.\n\nNo son tecnicismos: son <b>las preguntas</b>.\n\n<b>nor?</b> — ¿quién?, cuando ese quién es o está\n<b>nork?</b> — ¿quién?, cuando ese quién hace algo a algo\n\n<b>Nor da irakaslea?</b> — ¿Quién es el profesor?\n<b>Nork du txakurra?</b> — ¿Quién tiene el perro?\n\nEs la idea que viste en la tercera unidad con <i>non</i> y <i>nora</i>: la pregunta lleva la misma cola que la respuesta. A <i>nork?</i> se contesta con <b>-k</b> —<i>nik</i>, <i>Anek</i>, <i>lagunak</i>—, y por eso a esas formas las llaman «el caso NORK»; en euskera, <i>NORK kasua</i>. Cada caso lleva el nombre de la pregunta que lo pide.\n\nUn detalle que despista. En <i>Anek txakur bat du</i>, Ane va en NORK. ¿Y el perro? Va en NOR, aunque sea una cosa y no un «quién»: NOR es el nombre del caso sin marca, y ahí caben tanto quien es o está como lo que se tiene.\n\n<b>Ane ikaslea da</b> — <i>Ane</i> va en NOR.\n<b>Anek txakur bat du</b> — <i>Anek</i> va en NORK, y <i>txakur bat</i>, en NOR.\n\nA los verbos les ponen el nombre de los casos que llevan dentro. Los verbos NOR —<i>naiz, zara, da</i>— solo dicen quién es o está. Los verbos NOR-NORK —<i>dut, duzu, du</i>— dicen quién hace y qué.\n\nMás adelante llegarán otros dos, cuando aparezca el «a quién». De momento, si en clase oyes «este verbo es NOR-NORK», ya sabes lo que quieren decir: el sujeto lleva <b>-k</b>.",
+      "ejemplos": [
+        {
+          "eu": "ni Bilbokoa naiz",
+          "es": "Soy de Bilbao. — «Ni», en NOR.",
+          "audio": "unidades/u5/ni-bilbokoa-naiz.mp3"
+        },
+        {
+          "eu": "nik anaia bat dut",
+          "es": "Tengo un hermano. — «Nik», en NORK; «anaia bat», en NOR.",
+          "audio": "unidades/u5/nik-anaia-bat-dut.mp3"
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
       "titulo": "Cuando tienes varias cosas: dut → ditut",
       "cuerpo": "El verbo también cambia según <b>cuántas</b> cosas tienes. Si son varias, entra una <b>-it-</b>:\n\n<b>nik ditut</b> — yo tengo (varios)\n<b>zuk dituzu</b> — tú tienes\n<b>hark ditu</b> — él/ella tiene\n<b>guk ditugu</b> — nosotros tenemos\n<b>zuek dituzue</b> — vosotros tenéis\n<b>haiek dituzte</b> — ellos tienen\n\nCompara: <i>katu bat <b>dut</b></i> (tengo un gato) frente a <i>bi katu <b>ditut</b></i> (tengo dos gatos). Lo que cambia es el verbo, no el nombre: <i>katu</i> se queda igual.\n\nEsto es lo que hace que el verbo vasco parezca complicado, y también lo que lo hace potente: lleva dentro la información de quién hace, a quién y cuántos.",
       "ejemplos": [
@@ -338,7 +355,7 @@
     },
     {
       "titulo": "De quién: «aitaren anaia», el hermano de mi padre",
-      "cuerpo": "Con la familia delante, tarde o temprano hace falta decir «el hermano <b>de</b> mi padre» o «la casa <b>de</b> Ane». En euskera ese «de» es una terminación, <b>-ren</b>, y va pegada al dueño.\n\nYa la conoces sin saberlo: <i>nire</i>, <i>zure</i> y <i>gure</i> son <i>ni</i>, <i>zu</i> y <i>gu</i> con esa misma pieza. Ahora se la pones a cualquier nombre.\n\n<b>Con nombres corrientes</b>, detrás del artículo:\n\n<b>aita<u>ren</u> anaia</b> — el hermano de mi padre\n<b>ama<u>ren</u> ahizpa</b> — la hermana de mi madre\n<b>laguna<u>ren</u> etxea</b> — la casa del amigo\n\n<b>Con nombres de persona</b>, <b>-ren</b> tras vocal y <b>-en</b> tras consonante:\n\n<b>Ane<u>ren</u> etxea</b> — la casa de Ane\n<b>Mikel<u>en</u> arreba</b> — la hermana de Mikel\n\nY si los dueños son varios, <b>-en</b>: <b>guraso<u>en</u> etxea</b>, la casa de mis padres.\n\n<b>El orden es el contrario del castellano</b>\n\nPrimero el dueño y después lo que tiene, igual que con <i>nire</i>: <i>nire etxea</i>, <i>Aneren etxea</i>. Decir «etxea Aneren» es calcar el orden castellano, y no funciona. Y lo que se tiene lleva su artículo: <i>Aneren etxe<u>a</u></i>.\n\nLa pregunta ya la traías de la tercera unidad: <b>noren?</b>, ¿de quién? Lleva la misma cola que la respuesta, como todas: <i>Noren etxea da? — Aneren etxea.</i>\n\nCon esto la familia se explica sola:\n\n<b>aitaren anaia</b> — el hermano de mi padre: <b>osaba</b>\n<b>amaren ahizpa</b> — la hermana de mi madre: <b>izeba</b>\n<b>aitaren aita</b> — el padre de mi padre: <b>aitona</b>",
+      "cuerpo": "Con la familia delante, tarde o temprano hace falta decir «el hermano <b>de</b> mi padre» o «la casa <b>de</b> Ane». En euskera ese «de» es una terminación, <b>-ren</b>, y va pegada al dueño.\n\nYa la conoces sin saberlo: <i>nire</i>, <i>zure</i> y <i>gure</i> son <i>ni</i>, <i>zu</i> y <i>gu</i> con esa misma pieza. Ahora se la pones a cualquier nombre.\n\n<b>Con nombres corrientes</b>, detrás del artículo:\n\n<b>aita<u>ren</u> anaia</b> — el hermano de mi padre\n<b>ama<u>ren</u> ahizpa</b> — la hermana de mi madre\n<b>laguna<u>ren</u> etxea</b> — la casa del amigo\n\n<b>Con nombres de persona</b>, <b>-ren</b> tras vocal y <b>-en</b> tras consonante:\n\n<b>Ane<u>ren</u> etxea</b> — la casa de Ane\n<b>Mikel<u>en</u> arreba</b> — la hermana de Mikel\n\nY si los dueños son varios, <b>-en</b>: <b>guraso<u>en</u> etxea</b>, la casa de mis padres.\n\n<b>El orden es el contrario del castellano</b>\n\nPrimero el dueño y después lo que tiene, igual que con <i>nire</i>: <i>nire etxea</i>, <i>Aneren etxea</i>. Decir «etxea Aneren» es calcar el orden castellano, y no funciona. Y lo que se tiene lleva su artículo: <i>Aneren etxe<u>a</u></i>.\n\nLa pregunta ya la traías de la tercera unidad: <b>noren?</b>, ¿de quién? Lleva la misma cola que la respuesta, como todas: <i>Noren etxea da? — Aneren etxea.</i> Por eso en clase a este caso lo llaman NOREN.\n\nCon esto la familia se explica sola:\n\n<b>aitaren anaia</b> — el hermano de mi padre: <b>osaba</b>\n<b>amaren ahizpa</b> — la hermana de mi madre: <b>izeba</b>\n<b>aitaren aita</b> — el padre de mi padre: <b>aitona</b>",
       "ejemplos": [],
       "subnivel": "4.6"
     },
@@ -1550,7 +1567,7 @@
             "Dativo"
           ],
           "correcta": 1,
-          "explicacion": "El caso ergativo. Es la seña de identidad gramatical del euskera."
+          "explicacion": "El caso ergativo. Es la seña de identidad gramatical del euskera. En clase lo oirás como «NORK»."
         },
         {
           "tipo": "opcion",
@@ -5447,6 +5464,77 @@
             "lagunek txakur bat daukate"
           ],
           "pista": "Varios que tienen algo: la terminación es -ek."
+        }
+      ],
+      "subnivel": "4.4"
+    },
+    {
+      "id": "u4-g70",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En clase, a la -k de quien hace algo la llaman «el caso…»",
+          "opciones": [
+            "NOR",
+            "NORK",
+            "NON",
+            "NORA"
+          ],
+          "correcta": 1,
+          "explicacion": "Por la pregunta: nork? — nik, Anek, lagunak. Es lo que las gramáticas llaman ergativo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «Anek txakur bat du», ¿qué va en el caso NORK?",
+          "opciones": [
+            "txakur bat",
+            "du",
+            "Anek",
+            "nada"
+          ],
+          "correcta": 2,
+          "explicacion": "Ane es quien tiene, y lleva la -k: NORK."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "En «Anek txakur bat du», ¿en qué caso va «txakur bat»?",
+          "opciones": [
+            "NORK",
+            "NOR",
+            "NON",
+            "En ninguno"
+          ],
+          "correcta": 1,
+          "explicacion": "NOR es el caso sin marca. Ahí va quien es o está, y también lo que se tiene."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ni ikaslea naiz»: ¿en qué caso va «ni»?",
+          "opciones": [
+            "NORK",
+            "NORA",
+            "NON",
+            "NOR"
+          ],
+          "correcta": 3,
+          "explicacion": "«Ser» no lleva objeto: quien es va sin marca, en NOR."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "A «dut, duzu, du» los llaman verbos NOR-NORK. ¿Por qué dos nombres?",
+          "opciones": [
+            "Porque valen para dos personas",
+            "Porque llevan dentro quién hace (NORK) y qué (NOR)",
+            "Porque tienen dos sílabas",
+            "Porque son irregulares"
+          ],
+          "correcta": 1,
+          "explicacion": "El nombre del verbo son los casos que lleva dentro. «Naiz» es solo NOR: dice quién es, y nada más."
         }
       ],
       "subnivel": "4.4"

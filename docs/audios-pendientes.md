@@ -1,9 +1,9 @@
 # Audios pendientes — para Miguel
 
-## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v140): 120 frases sin audio
+## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v141): 123 frases sin audio
 
 Ric y Claude repasaron la gramática del curso contra los «Errores típicos» de la
-*Gramática didáctica* de Zubiri y salieron veinticuatro fichas nuevas. Los ejemplos van
+*Gramática didáctica* de Zubiri y salieron veinticinco fichas nuevas. Los ejemplos van
 escritos en el cuerpo de la ficha, en líneas `<b>frase</b> — traducción`, y esas
 líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
 
@@ -11,7 +11,7 @@ líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
 
 ```
 cd scripts/generar-audio
-node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 120
+node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 123
 node generar-cuerpos.mjs           # genera, sube y las enlaza en audiosExtra
 ```
 
@@ -38,6 +38,9 @@ Lo que va a generar:
 | 4.4 | lagunak irakasleak dira | Los amigos son profesores |
 | 4.4 | lagunek txakur bat dute | Los amigos tienen un perro |
 | 4.4 | lagunek | los amigos, cuando tienen o hacen algo |
+| 4.4 | nork? | ¿quién?, cuando ese quién hace algo a algo |
+| 4.4 | Nor da irakaslea? | ¿Quién es el profesor? |
+| 4.4 | Nork du txakurra? | ¿Quién tiene el perro? |
 | 4.6 | seme-alabak | los hijos, hijos e hijas |
 | 4.6 | aitona-amonak | los abuelos, abuelo y abuela |
 | 4.6 | osaba-izebak | los tíos, tío y tía |
