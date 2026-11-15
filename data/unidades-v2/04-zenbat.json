@@ -263,6 +263,18 @@
       "subnivel": "4.6"
     },
     {
+      "titulo": "«Mis hijos», cuando hay chicos y chicas: seme-alabak",
+      "cuerpo": "En castellano «mis hijos» pueden ser dos chicos, o un chico y una chica: el masculino hace de comodín. En euskera no hay masculino que valga para todos, porque <i>semea</i> es «el hijo» y nada más. <i>Bi seme ditut</i> es «tengo dos hijos», y los dos son varones.\n\nCuando hay de todo, se nombran los dos y se juntan con un guion:\n\n<b>seme-alabak</b> — los hijos, hijos e hijas\n<b>aitona-amonak</b> — los abuelos, abuelo y abuela\n<b>osaba-izebak</b> — los tíos, tío y tía\n<b>senar-emazteak</b> — el matrimonio, marido y mujer\n\nEl plural y el artículo van una sola vez, al final. Y detrás de un número o de <i>zenbat</i> se quedan sin ellos, como cualquier nombre:\n\n<b>Zenbat seme-alaba dituzu?</b> — ¿Cuántos hijos tienes?\n<b>Hiru seme-alaba ditut.</b> — Tengo tres hijos.\n\nDos ya las conocías. <b>Gurasoak</b>, los padres, hace ese mismo trabajo con una sola palabra. Y <b>anai-arrebak</b>, de la ficha anterior, son los hermanos y las hermanas juntos.",
+      "ejemplos": [
+        {
+          "eu": "bi seme dituzte",
+          "es": "Tienen dos hijos. — Los dos, varones.",
+          "audio": "unidades/u4/bi-seme-dituzte.mp3"
+        }
+      ],
+      "subnivel": "4.6"
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "El verbo «tener» es donde el bizkaiera se separa del batua de forma más llamativa. Si oyes <i>dot</i> en vez de <i>dut</i>, estás en Bizkaia sin ninguna duda.\n\n<b>ukan en bizkaiera</b>\n\n<b>nik dot</b> — batua: dut\n<b>zuk dozu</b> — duzu\n<b>hark dau</b> — du\n<b>guk dogu</b> — dugu\n<b>zuek dozue</b> — duzue\n<b>haiek dabe</b> — dute\n\n<b>El plural se hace con -z</b>\nDonde el batua mete una <i>-it-</i>, el bizkaiera añade una <b>-z</b> al final:\n\n<i>ditugu</i> → <b>doguz</b>\n<i>ditut</i> → <b>dodaz</b>\n<i>daude</i> → <b>dagoz</b>\n\nAsí que «¿cuántos años tienes?» en Bilbao es <b>Zenbat urte dozuz?</b>\n\n<b>neba y ahizpa</b>\nEl sistema de cuatro palabras para hermanos está vivo en toda Euskal Herria, pero <i>neba</i> se conserva con especial fuerza en Bizkaia. En zonas de Gipuzkoa se ha ido perdiendo a favor de <i>anaia</i> para todo.",
       "ejemplos": [
@@ -327,6 +339,12 @@
     {
       "titulo": "De quién: «aitaren anaia», el hermano de mi padre",
       "cuerpo": "Con la familia delante, tarde o temprano hace falta decir «el hermano <b>de</b> mi padre» o «la casa <b>de</b> Ane». En euskera ese «de» es una terminación, <b>-ren</b>, y va pegada al dueño.\n\nYa la conoces sin saberlo: <i>nire</i>, <i>zure</i> y <i>gure</i> son <i>ni</i>, <i>zu</i> y <i>gu</i> con esa misma pieza. Ahora se la pones a cualquier nombre.\n\n<b>Con nombres corrientes</b>, detrás del artículo:\n\n<b>aita<u>ren</u> anaia</b> — el hermano de mi padre\n<b>ama<u>ren</u> ahizpa</b> — la hermana de mi madre\n<b>laguna<u>ren</u> etxea</b> — la casa del amigo\n\n<b>Con nombres de persona</b>, <b>-ren</b> tras vocal y <b>-en</b> tras consonante:\n\n<b>Ane<u>ren</u> etxea</b> — la casa de Ane\n<b>Mikel<u>en</u> arreba</b> — la hermana de Mikel\n\nY si los dueños son varios, <b>-en</b>: <b>guraso<u>en</u> etxea</b>, la casa de mis padres.\n\n<b>El orden es el contrario del castellano</b>\n\nPrimero el dueño y después lo que tiene, igual que con <i>nire</i>: <i>nire etxea</i>, <i>Aneren etxea</i>. Decir «etxea Aneren» es calcar el orden castellano, y no funciona. Y lo que se tiene lleva su artículo: <i>Aneren etxe<u>a</u></i>.\n\nLa pregunta ya la traías de la tercera unidad: <b>noren?</b>, ¿de quién? Lleva la misma cola que la respuesta, como todas: <i>Noren etxea da? — Aneren etxea.</i>\n\nCon esto la familia se explica sola:\n\n<b>aitaren anaia</b> — el hermano de mi padre: <b>osaba</b>\n<b>amaren ahizpa</b> — la hermana de mi madre: <b>izeba</b>\n<b>aitaren aita</b> — el padre de mi padre: <b>aitona</b>",
+      "ejemplos": [],
+      "subnivel": "4.6"
+    },
+    {
+      "titulo": "«Es mío», «es de Ane»: nirea da, Anerena da",
+      "cuerpo": "Con <i>nire</i> y <i>Aneren</i> dices de quién es algo que nombras a continuación: <i>nire etxea</i>, <i>Aneren etxea</i>. ¿Y cuando no nombras la cosa, cuando dices solo «es mío» o «es de Ane»?\n\nEntonces el dueño no puede quedarse suelto: se le pone el artículo.\n\n<b>etxe hau nirea da</b> — Esta casa es mía.\n<b>etxe hau Anerena da</b> — Esta casa es de Ane.\n\nEse <b>-a</b> hace de «la cosa»: <i>nirea</i> es «el mío, la mía», y <i>Anerena</i>, «el de Ane, la de Ane». Decir «etxe hau nire da» es dejar la frase a medias, como si en castellano dijeras «esta casa es mi».\n\nLa serie entera:\n\n<b>nirea</b> — mío, mía\n<b>zurea</b> — tuyo, tuya\n<b>harena</b> — suyo, de él o de ella\n<b>gurea</b> — nuestro, nuestra\n<b>zuena</b> — vuestro, vuestra\n<b>haiena</b> — suyo, de ellos o de ellas\n\nOjo con la primera: es <i>nirea</i>, no «nirena». <i>Nire</i> no lleva -n, así que no hay de dónde sacarla.\n\nSi lo que se tiene son varias cosas, el artículo va en plural: <b>katu hauek nireak dira</b>, estos gatos son míos.\n\nY la pregunta, con la misma cola que la respuesta: <b>Norena da?</b>, ¿de quién es?",
       "ejemplos": [],
       "subnivel": "4.6"
     },
@@ -5714,6 +5732,141 @@
             "mikelen arreba"
           ],
           "pista": "El dueño delante; tras consonante, -en."
+        }
+      ],
+      "subnivel": "4.6"
+    },
+    {
+      "id": "u4-g68",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tengo tres hijos: dos chicas y un chico. → Hiru ____ ditut.",
+          "opciones": [
+            "seme",
+            "seme-alabak",
+            "seme-alaba",
+            "alaba"
+          ],
+          "correcta": 2,
+          "explicacion": "Hay de los dos, así que se nombran los dos. Y detrás del número, sin artículo ni plural."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bi seme ditut» quiere decir que tengo…",
+          "opciones": [
+            "dos hijos varones",
+            "un hijo y una hija",
+            "dos hijas",
+            "dos hijos, sin saber si son chicos o chicas"
+          ],
+          "correcta": 0,
+          "explicacion": "«Seme» es solo el hijo varón. Si hay chicas, «seme-alabak»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Los abuelos, el abuelo y la abuela. → ____",
+          "opciones": [
+            "aitonak",
+            "aitona-amonak",
+            "amonak",
+            "aitonak-amonak"
+          ],
+          "correcta": 1,
+          "explicacion": "Los dos nombres juntos, y el plural una sola vez, al final."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Osaba-izebak» son…",
+          "opciones": [
+            "los primos",
+            "los abuelos",
+            "los tíos, tío y tía",
+            "los padres"
+          ],
+          "correcta": 2,
+          "explicacion": "Osaba, el tío; izeba, la tía. Juntos, los tíos."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "los abuelos",
+          "respuestas": [
+            "aitona-amonak"
+          ],
+          "pista": "El abuelo y la abuela, con un guion, y el plural al final."
+        }
+      ],
+      "subnivel": "4.6"
+    },
+    {
+      "id": "u4-g69",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Esta casa es mía. → Etxe hau ____ da.",
+          "opciones": [
+            "nire",
+            "nirea",
+            "nirena",
+            "ni"
+          ],
+          "correcta": 1,
+          "explicacion": "Sin nombre detrás, el dueño lleva el artículo: nirea. Y sin -n: «nirena» no existe."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Esta casa es de Ane. → Etxe hau ____ da.",
+          "opciones": [
+            "Aneren",
+            "Anek",
+            "Anerena",
+            "Anea"
+          ],
+          "correcta": 2,
+          "explicacion": "«Aneren» a secas se queda esperando un nombre. Con el artículo: Anerena, «la de Ane»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿De quién es? → ____ da?",
+          "opciones": [
+            "Noren",
+            "Nor",
+            "Nork",
+            "Norena"
+          ],
+          "correcta": 3,
+          "explicacion": "También la pregunta lleva su artículo cuando no hay nombre detrás: norena."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zurea da» significa…",
+          "opciones": [
+            "Es tuyo",
+            "Es de ella",
+            "Eres tú",
+            "Es tu casa"
+          ],
+          "correcta": 0,
+          "explicacion": "Zure + a: «el tuyo, la tuya»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Es mío.",
+          "respuestas": [
+            "nirea da",
+            "hau nirea da"
+          ],
+          "pista": "El dueño, con el artículo al final."
         }
       ],
       "subnivel": "4.6"

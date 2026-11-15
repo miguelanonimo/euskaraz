@@ -785,11 +785,16 @@
        traducción («<i>Bilbotik nator</i> — vengo desde Bilbao.»), también se narra
        entera si tiene audio. Solo al principio de línea y con la traducción detrás:
        una cursiva suelta en medio de un párrafo suele ser énfasis, no un ejemplo. */
-    html = html.replace(/(^|\n)<i>([^<]+)<\/i>(?=\s*—)/g, function (m, ini, texto) {
+    /* Dentro puede ir un <u> que subraya la terminación de la que habla la ficha
+       («<b>Mikel<u>ek</u> katu bat du</b>»): la frase es la misma, y el audio se
+       busca por su texto sin el subrayado. Cualquier otra etiqueta sigue sin contar. */
+    html = html.replace(/(^|\n)<i>((?:[^<]|<\/?u>)+)<\/i>(?=\s*—)/g, function (m, ini, dentro) {
+      var texto = dentro.replace(/<\/?u>/g, '');
       var audio = audioDePalabra(texto);
-      return audio ? ini + '<i>' + texto + '</i>' + botonAudioTexto(texto, audio) : m;
+      return audio ? ini + '<i>' + dentro + '</i>' + botonAudioTexto(texto, audio) : m;
     });
-    return html.replace(/<b>([^<]+)<\/b>/g, function (m, texto) {
+    return html.replace(/<b>((?:[^<]|<\/?u>)+)<\/b>/g, function (m, dentro) {
+      var texto = dentro.replace(/<\/?u>/g, '');
       /* «4. laugarrena»: en una lista numerada el número no forma parte de la palabra */
       var audio = audioDePalabra(texto) || audioDePalabra(texto.replace(/^\d+\.\s+/, ''));
       return audio ? m + botonAudioTexto(texto, audio) : m;

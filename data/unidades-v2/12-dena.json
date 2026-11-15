@@ -55,6 +55,18 @@
       "subnivel": "12.1"
     },
     {
+      "titulo": "«Badakit», «badago»: el «ba-» que sostiene al verbo",
+      "cuerpo": "Al final de la ficha anterior ha salido un <b>ba-</b> pegado al verbo: <i>Bai, banaiz</i>. No es un adorno, y lo vas a oír a todas horas.\n\nLos verbos que se conjugan solos —<i>naiz, nago, dut, daukat, noa, nator</i>— no aguantan estar <b>solos al principio</b> de una frase afirmativa. Necesitan algo delante. Cuando no hay nada, se les pone <b>ba-</b>:\n\n<b>badakit</b> — lo sé, ya lo sé\n<b>banoa</b> — me voy\n<b>badator</b> — ya viene\n<b>badago</b> — hay, sí que hay\n\nLa primera es la pareja que te faltaba. <i>Ez dakit</i>, no sé, lo tienes desde la tercera unidad, y su contrario no es «dakit» a secas, sino <b>badakit</b>.\n\nSirve igual para preguntar y para contestar:\n\n<b>Badago ogirik?</b> — ¿Hay pan?\n<b>Bai, badago.</b> — Sí, hay.\n<b>Ez, ez dago.</b> — No, no hay.\n\nFíjate en la negativa: con <i>ez</i> delante el verbo ya tiene dónde apoyarse, así que el <i>ba-</i> desaparece. O uno o el otro.\n\nY cuando delante hay algo que lleva el peso de la frase, tampoco hace falta: <i>etxean nago</i>, <i>Bilbora noa</i>. El <b>ba-</b> es para cuando lo que afirmas es el verbo mismo.\n\nCon la partícula <i>al</i> de las preguntas se escribe separado: <b>Ba al dago ogirik?</b>",
+      "ejemplos": [
+        {
+          "eu": "ez dakit",
+          "es": "No sé. — Su contrario: badakit.",
+          "audio": "unidades/u3/ez-dakit.mp3"
+        }
+      ],
+      "subnivel": "12.1"
+    },
+    {
       "titulo": "Enlazar frases",
       "cuerpo": "Los que ya tienes: <b>eta</b> (y), <b>baina</b> (pero), <b>edo</b> (o), <b>ere</b> (también).\n\nCuidado con <b>ere</b>: va <b>detrás</b> de lo que acompaña, no delante.\n<b>ni ere euskalduna naiz</b> — Yo también hablo euskera.\n\nY unos cuantos más:\n<b>beraz</b> — así que\n<b>gainera</b> — además\n<b>hala ere</b> — aun así\n<b>adibidez</b> — por ejemplo\n<b>noski</b> — claro, por supuesto\n<b>benetan</b> — de verdad\n\nPara «porque» el euskera no usa una palabra suelta, sino un sufijo pegado al verbo: <b>-lako</b>.\n\n<b>Zergatik ikasten duzu euskara?</b>\n<b>gustatzen zaidalako</b> — Porque me gusta.\n<b>Euskalduna naizelako</b> — Porque hablo euskera.\n\nNo hace falta que lo produzcas todavía. Reconocerlo ya es bastante: cuando oigas un verbo acabado en <b>-lako</b>, alguien te está dando una razón.",
       "ejemplos": [
@@ -2418,6 +2430,75 @@
             "euskara zaila al da"
           ],
           "pista": "El adjetivo con su -a, y la partícula de preguntar delante del verbo."
+        }
+      ],
+      "subnivel": "12.1"
+    },
+    {
+      "id": "u12-g23",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez dakit» es «no sé». ¿Cómo dices «lo sé»?",
+          "opciones": [
+            "Dakit",
+            "Bai dakit",
+            "Badakit",
+            "Ez badakit"
+          ],
+          "correcta": 2,
+          "explicacion": "El verbo va solo, así que necesita su ba-: badakit."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Badago ogirik? —Bai, ____.",
+          "opciones": [
+            "dago",
+            "badago",
+            "ez dago",
+            "badakit"
+          ],
+          "correcta": 1,
+          "explicacion": "Afirmas el verbo mismo, y va solo: badago."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Badago ogirik? —Ez, ____.",
+          "opciones": [
+            "ez badago",
+            "badago ez",
+            "ez da dago",
+            "ez dago"
+          ],
+          "correcta": 3,
+          "explicacion": "Con «ez» delante el verbo ya tiene apoyo, y el ba- desaparece."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cuál de estas es «me voy»?",
+          "opciones": [
+            "Banago",
+            "Badator",
+            "Banoa",
+            "Banator"
+          ],
+          "correcta": 2,
+          "explicacion": "Noa, «voy», con su ba-. Banago es «sí estoy»; badator, «ya viene»; banator, «ya vengo»."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Lo sé.",
+          "respuestas": [
+            "badakit",
+            "bai badakit",
+            "nik badakit"
+          ],
+          "pista": "El contrario de «ez dakit»."
         }
       ],
       "subnivel": "12.1"

@@ -249,6 +249,12 @@
       "ejemplos": []
     },
     {
+      "titulo": "«Un kilo de manzanas»: kilo bat sagar, sin «de»",
+      "cuerpo": "En la barra pides por unidades: <i>bi kafe</i>. En la tienda pides por cantidades —un kilo, un litro, una botella—, y ahí el castellano mete un «de» que el euskera no tiene.\n\n<b>kilo bat sagar</b> — un kilo de manzanas\n<b>litro bat esne</b> — un litro de leche\n<b>botila bat ardo</b> — una botella de vino\n\nEl molde es <b>cantidad + cosa</b>, y la cosa va <b>desnuda</b>: sin «de», sin artículo y sin plural. No es «kilo bat sagarrak», aunque en un kilo quepan muchas.\n\nEs la regla de los números otra vez. Igual que dices <i>hiru sagar</i>, tres manzanas, dices <i>hiru kilo sagar</i>, tres kilos de manzanas: cuando cuentas o mides, la cosa va sin artículo.\n\nY el orden no se toca: primero cuánto, después qué. No vale darle la vuelta, «sagar kilo bat».\n\nPara pedirlo, lo de siempre:\n\n<b>kilo bat patata, mesedez</b> — Un kilo de patatas, por favor.\n<b>bi litro esne nahi dut</b> — Quiero dos litros de leche.",
+      "ejemplos": [],
+      "subnivel": "7.5"
+    },
+    {
       "titulo": "«Tengo hambre» se dice con «ser»: gose naiz",
       "cuerpo": "En un tema de comer y beber faltaba lo primero: decir que tienes hambre. Y aquí el euskera no «tiene»: <b>es</b>.\n\n<b>gose naiz</b> — tengo hambre\n<b>egarri naiz</b> — tengo sed\n\nEl verbo es <i>izan</i>, el de la segunda unidad, y cambia con la persona como siempre:\n\n<b>gose zara?</b> — ¿Tienes hambre?\n<b>egarri gara</b> — Tenemos sed.\n<b>ez naiz gose</b> — No tengo hambre.\n\nFíjate en dos cosas. La palabra va <b>sin artículo</b>: <i>gose</i>, <i>egarri</i>, no «gosea». Y quien tiene hambre va <b>sin -k</b>, porque <i>izan</i> no lleva objeto: <i>ni gose naiz</i>.\n\nEl tropiezo de quien viene del castellano es traducir el «tengo» tal cual: «gose daukat». Se oye, también entre gente que habla euskera desde niña, pero la forma de siempre es con <i>izan</i>.\n\nPara decir que es mucha, <b>oso</b> delante:\n\n<b>oso gose naiz</b> — Tengo mucha hambre.",
       "ejemplos": [],
@@ -4266,6 +4272,73 @@
             "egarriz nago"
           ],
           "pista": "No se «tiene»: se «es»."
+        }
+      ],
+      "subnivel": "7.5"
+    },
+    {
+      "id": "u7-g40",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Un kilo de manzanas. → ____",
+          "opciones": [
+            "kilo bat sagarrak",
+            "sagar kilo bat",
+            "kilo bat sagar",
+            "kilo sagar bat"
+          ],
+          "correcta": 2,
+          "explicacion": "Primero la cantidad, después la cosa, y la cosa desnuda: ni «de» ni artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Una botella de vino. → Botila bat ____.",
+          "opciones": [
+            "ardoa",
+            "ardo",
+            "ardoak",
+            "ardoko"
+          ],
+          "correcta": 1,
+          "explicacion": "Lo que se mide va sin artículo: botila bat ardo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Tres kilos de patatas. → ____",
+          "opciones": [
+            "hiru kilo patatak",
+            "hiru patata kilo",
+            "hiru kiloak patata",
+            "hiru kilo patata"
+          ],
+          "correcta": 3,
+          "explicacion": "El número, la medida y la cosa, en ese orden y sin artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Qué le sobra a «litro bat esnea»?",
+          "opciones": [
+            "El «bat»",
+            "Nada: está bien",
+            "La -a del final: es «litro bat esne»",
+            "El orden: es «esne litro bat»"
+          ],
+          "correcta": 2,
+          "explicacion": "Detrás de una cantidad, la cosa no lleva artículo."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "un litro de leche",
+          "respuestas": [
+            "litro bat esne"
+          ],
+          "pista": "Cantidad + cosa, sin «de» y sin artículo."
         }
       ],
       "subnivel": "7.5"

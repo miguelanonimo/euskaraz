@@ -161,6 +161,12 @@
       "subnivel": "5.3"
     },
     {
+      "titulo": "«¿Cómo es?» se pregunta con «nolakoa»",
+      "cuerpo": "Para preguntar cómo <b>está</b> alguien, o cómo se hace algo, tienes <b>nola</b>, de la tercera unidad. Pero para preguntar cómo <b>es</b> una cosa —grande, pequeña, bonita— la pregunta es otra:\n\n<b>nolakoa da?</b> — ¿cómo es?\n\nEs <i>nola</i> con el <b>-ko</b> de <i>Bilbokoa</i> y el artículo detrás. Y, como siempre, la pregunta lleva la misma cola que la respuesta: preguntas con <b>-a</b> y te contestan con un adjetivo con su <b>-a</b>.\n\n<b>Nolakoa da zure etxea?</b> — ¿Cómo es tu casa?\n<b>Handia da.</b> — Es grande.\n\nSi preguntas por varias cosas, en plural:\n\n<b>Nolakoak dira?</b> — ¿Cómo son?\n<b>Txikiak dira.</b> — Son pequeñas.\n\nEl tropiezo de quien viene del castellano es usar <i>nola</i> para las dos cosas, porque nosotros decimos «cómo» en ambas: «Nola da zure etxea?». <i>Nola</i> pregunta por la manera o el estado; <i>nolakoa</i>, por cómo es algo.",
+      "ejemplos": [],
+      "subnivel": "5.3"
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "<b>egon en bizkaiera</b>\n\n<b>ni nago</b> — igual que en batua\n<b>zu zagoz</b> — batua: zaude\n<b>hura dago</b> — igual\n<b>gu gagoz</b> — gaude\n<b>zuek zagoze</b> — zaudete\n<b>haiek dagoz</b> — daude\n\nOtra vez esa <b>-z</b> del plural que ya viste en <i>doguz</i>. Es un rasgo sistemático del bizkaiera, no un capricho suelto.\n\nAsí que «¿dónde estás?» en Bilbao es <b>Non zagoz?</b>\n\n<b>Zelan y zelango</b>\nAl <i>zelan</i> (cómo) se le añade el mismo <i>-ko</i> que a los lugares: <b>zelango</b> = «de qué tipo». Donde el batua dice <i>nolako etxea?</i>, el bizkaiera dice <b>zelango etxea?</b>",
       "ejemplos": [
@@ -281,6 +287,12 @@
           "audio": "unidades/u5/bainugela-handia-da.mp3"
         }
       ],
+      "subnivel": "5.2"
+    },
+    {
+      "titulo": "Encima, debajo, al lado: «mahai gainean»",
+      "cuerpo": "Ya sabes decir dónde está algo: <i>sukaldean dago</i>, está en la cocina. Para afinar —encima de la mesa, debajo de la cama— el euskera pone una palabra de sitio <b>detrás</b> del nombre:\n\n<b>gainean</b> — encima\n<b>azpian</b> — debajo\n<b>ondoan</b> — al lado\n<b>aurrean</b> — delante\n<b>atzean</b> — detrás\n<b>barruan</b> — dentro\n\nLas seis acaban en <b>-an</b>: llevan puesto el «en» que ya conoces. Y el nombre que va delante se queda <b>desnudo</b>, sin artículo:\n\n<b>mahai gainean</b> — encima de la mesa\n<b>ohe azpian</b> — debajo de la cama\n<b>ate ondoan</b> — al lado de la puerta\n<b>etxe aurrean</b> — delante de casa\n<b>armairu barruan</b> — dentro del armario\n\nEl orden es otra vez el contrario del castellano: primero la mesa, después el «encima». Y el tropiezo corriente es dejarle el artículo al nombre —«mahaia gainean»—, porque así se aprendió la palabra.\n\nDentro de una frase:\n\n<b>katua ohe azpian dago</b> — El gato está debajo de la cama.\n<b>telebista mahai gainean dago</b> — La televisión está encima de la mesa.\n\nCon personas no vale dejarlo desnudo. Quien hace de referencia lleva el «de» de <i>nire</i>:\n\n<b>nire ondoan</b> — a mi lado\n<b>zure atzean</b> — detrás de ti",
+      "ejemplos": [],
       "subnivel": "5.2"
     },
     {
@@ -3881,6 +3893,75 @@
       "subnivel": "5.2"
     },
     {
+      "id": "u5-g55",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Encima de la mesa. → ____",
+          "opciones": [
+            "mahaia gainean",
+            "gainean mahai",
+            "mahai gainean",
+            "mahai azpian"
+          ],
+          "correcta": 2,
+          "explicacion": "Primero la mesa, sin artículo, y después «gainean». «Azpian» sería debajo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "El gato está debajo de la cama. → Katua ____ dago.",
+          "opciones": [
+            "ohe azpian",
+            "ohea azpian",
+            "ohe gainean",
+            "azpian ohe"
+          ],
+          "correcta": 0,
+          "explicacion": "El nombre va desnudo delante de la palabra de sitio: ohe azpian."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ate ondoan» significa…",
+          "opciones": [
+            "encima de la puerta",
+            "al lado de la puerta",
+            "detrás de la puerta",
+            "dentro de la puerta"
+          ],
+          "correcta": 1,
+          "explicacion": "Ondoan: al lado. Y «ate», la puerta, sin su artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "A mi lado. → ____ ondoan",
+          "opciones": [
+            "ni",
+            "nik",
+            "nire",
+            "niri"
+          ],
+          "correcta": 2,
+          "explicacion": "Con personas, la referencia lleva el «de»: nire ondoan.",
+          "teclea": true
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "debajo de la mesa",
+          "respuestas": [
+            "mahai azpian",
+            "mahaiaren azpian"
+          ],
+          "pista": "Primero la mesa, sin artículo; después la palabra de sitio."
+        }
+      ],
+      "subnivel": "5.2"
+    },
+    {
       "id": "u5-g52",
       "variantes": [
         {
@@ -3948,6 +4029,74 @@
           ],
           "correcta": 0,
           "explicacion": "Sobre todo hablando del mar o del cielo."
+        }
+      ],
+      "subnivel": "5.3"
+    },
+    {
+      "id": "u5-g56",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Cómo es tu casa? → ____ da zure etxea?",
+          "opciones": [
+            "Nola",
+            "Nolako",
+            "Nolakoak",
+            "Nolakoa"
+          ],
+          "correcta": 3,
+          "explicacion": "Preguntas cómo es una cosa: nolakoa, con su artículo. «Nola» preguntaría por la manera."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Nolakoa da zure etxea? —____",
+          "opciones": [
+            "Ondo",
+            "Handia da",
+            "Bilbon dago",
+            "Handi"
+          ],
+          "correcta": 1,
+          "explicacion": "La respuesta lleva la misma -a que la pregunta: un adjetivo con su artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Preguntas por varias cosas: ¿cómo son? → ____ dira?",
+          "opciones": [
+            "Nolakoa",
+            "Nola",
+            "Nolakoak",
+            "Nolako"
+          ],
+          "correcta": 2,
+          "explicacion": "Varias, y el verbo en plural: el artículo también, nolakoak."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Con cuál de estas preguntas cómo ESTÁ alguien?",
+          "opciones": [
+            "nolakoa",
+            "nola",
+            "nongoa",
+            "nor"
+          ],
+          "correcta": 1,
+          "explicacion": "Nola zaude? — Ondo. Para cómo ES algo, nolakoa."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Cómo es tu casa?",
+          "respuestas": [
+            "nolakoa da zure etxea",
+            "zure etxea nolakoa da"
+          ],
+          "pista": "No es «nola»: lleva -ko y el artículo."
         }
       ],
       "subnivel": "5.3"
