@@ -712,6 +712,7 @@
       "eu": "ukan",
       "es": "tener (el verbo de «dut»)",
       "nota": "Además de «tener», es el auxiliar de «jan dut», he comido.",
+      "audio": "unidades/u12/ukan.mp3",
       "categoria": "verbo",
       "subnivel": "4.4"
     },
@@ -719,6 +720,7 @@
       "eu": "hark",
       "es": "él, ella (cuando hace algo)",
       "nota": "«Hura» con la -k de quien hace: «hark du», él tiene.",
+      "audio": "unidades/u4/hark-2.mp3",
       "categoria": "otros",
       "subnivel": "4.4"
     },
@@ -726,6 +728,7 @@
       "eu": "dugu",
       "es": "(nosotros) tenemos",
       "nota": null,
+      "audio": "unidades/u4/dugu.mp3",
       "categoria": "verbo",
       "subnivel": "4.4"
     },
@@ -740,6 +743,7 @@
       "eu": "dute",
       "es": "(ellos) tienen",
       "nota": null,
+      "audio": "unidades/u4/dute.mp3",
       "categoria": "verbo",
       "subnivel": "4.4"
     },

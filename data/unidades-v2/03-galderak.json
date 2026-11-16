@@ -440,6 +440,7 @@
       "eu": "ez dut ulertzen",
       "es": "no entiendo",
       "nota": "Frase hecha. Junto con «ez dakit», de las más útiles al empezar.",
+      "audio": "unidades/u3/ez-dut-ulertzen.mp3",
       "categoria": "otros",
       "subnivel": "3.4"
     },
@@ -447,6 +448,7 @@
       "eu": "zenbat urte dituzu?",
       "es": "¿cuántos años tienes?",
       "nota": "Los años son varios: por eso «dituzu».",
+      "audio": "unidades/u5/zenbat-urte-dituzu.mp3",
       "categoria": "otros",
       "subnivel": "3.4"
     },

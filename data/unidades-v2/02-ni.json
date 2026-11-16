@@ -753,6 +753,7 @@
       "eu": "zeuek",
       "es": "vosotros mismos, vosotras mismas",
       "nota": null,
+      "audio": "unidades/u2/zeuek.mp3",
       "categoria": "otros",
       "subnivel": "2.2"
     },
@@ -832,6 +833,7 @@
       "eu": "izan",
       "es": "ser (el verbo)",
       "nota": "El de «naiz, zara, da». También es el auxiliar de «joan naiz».",
+      "audio": "unidades/u12/izan.mp3",
       "categoria": "verbo",
       "subnivel": "2.3"
     },

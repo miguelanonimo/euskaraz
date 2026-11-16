@@ -544,6 +544,7 @@
       "eu": "bizkaiera",
       "es": "el dialecto de Bizkaia",
       "nota": null,
+      "audio": "unidades/u1/bizkaiera.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3"
     },
@@ -558,6 +559,7 @@
       "eu": "jaso",
       "es": "recoger, levantar",
       "nota": "La «j» suena «y»: «yaso».",
+      "audio": "unidades/u1/jaso.mp3",
       "categoria": "verbo",
       "subnivel": "1.4"
     }

@@ -592,6 +592,7 @@
       "eu": "gauerdia",
       "es": "la medianoche",
       "nota": null,
+      "audio": "unidades/u6/gauerdia.mp3",
       "categoria": "sustantivo",
       "subnivel": "6.1"
     },
@@ -599,6 +600,7 @@
       "eu": "ordu batean",
       "es": "a la una",
       "nota": null,
+      "audio": "unidades/u6/ordu-batean.mp3",
       "categoria": "otros",
       "subnivel": "6.1"
     },
@@ -606,6 +608,7 @@
       "eu": "ordu bietan",
       "es": "a las dos",
       "nota": null,
+      "audio": "unidades/u6/ordu-bietan.mp3",
       "categoria": "otros",
       "subnivel": "6.1"
     },
@@ -687,6 +690,7 @@
       "eu": "goizean",
       "es": "por la mañana",
       "nota": null,
+      "audio": "unidades/u6/goizean.mp3",
       "categoria": "otros",
       "subnivel": "6.2"
     },
@@ -694,6 +698,7 @@
       "eu": "eguerdian",
       "es": "a mediodía",
       "nota": null,
+      "audio": "unidades/u6/eguerdian.mp3",
       "categoria": "otros",
       "subnivel": "6.2"
     },
@@ -701,6 +706,7 @@
       "eu": "arratsaldean",
       "es": "por la tarde",
       "nota": null,
+      "audio": "unidades/u6/arratsaldean.mp3",
       "categoria": "otros",
       "subnivel": "6.2"
     },
@@ -708,6 +714,7 @@
       "eu": "iluntzean",
       "es": "al anochecer",
       "nota": null,
+      "audio": "unidades/u6/iluntzean.mp3",
       "categoria": "otros",
       "subnivel": "6.2"
     },
@@ -715,6 +722,7 @@
       "eu": "gauean",
       "es": "por la noche",
       "nota": null,
+      "audio": "unidades/u6/gauean.mp3",
       "categoria": "otros",
       "subnivel": "6.2"
     },

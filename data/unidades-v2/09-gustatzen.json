@@ -528,6 +528,7 @@
       "eu": "norentzat?",
       "es": "¿para quién?",
       "nota": null,
+      "audio": "unidades/u9/norentzat.mp3",
       "categoria": "otros",
       "subnivel": "9.5"
     },
@@ -726,6 +727,7 @@
       "eu": "gertatzen zait",
       "es": "me pasa",
       "nota": null,
+      "audio": "unidades/u9/gertatzen-zait.mp3",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -733,6 +735,7 @@
       "eu": "ahaztu zait",
       "es": "se me ha olvidado",
       "nota": null,
+      "audio": "unidades/u10/ahaztu-zait.mp3",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -740,6 +743,7 @@
       "eu": "dit",
       "es": "me lo (da, dice…)",
       "nota": "El auxiliar de dar y decir: «eman dit», me lo ha dado.",
+      "audio": "unidades/u9/dit.mp3",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -747,6 +751,7 @@
       "eu": "dizu",
       "es": "te lo (da, dice…)",
       "nota": null,
+      "audio": "unidades/u9/dizu.mp3",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -754,6 +759,7 @@
       "eu": "dio",
       "es": "se lo (a él, a ella)",
       "nota": null,
+      "audio": "unidades/u9/dio.mp3",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -761,6 +767,7 @@
       "eu": "digu",
       "es": "nos lo (da, dice…)",
       "nota": null,
+      "audio": "unidades/u9/digu.mp3",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -768,6 +775,7 @@
       "eu": "dizue",
       "es": "os lo (da, dice…)",
       "nota": null,
+      "audio": "unidades/u9/dizue.mp3",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -775,6 +783,7 @@
       "eu": "die",
       "es": "se lo (a ellos, a ellas)",
       "nota": null,
+      "audio": "unidades/u9/die.mp3",
       "categoria": "verbo",
       "subnivel": "9.2"
     },
@@ -891,6 +900,7 @@
       "eu": "zait",
       "es": "me (gusta, parece…)",
       "nota": "El auxiliar de «gustatzen zait». Va con «niri».",
+      "audio": "unidades/u9/zait.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -898,6 +908,7 @@
       "eu": "zaizu",
       "es": "te (gusta, parece…)",
       "nota": null,
+      "audio": "unidades/u9/zaizu.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -905,6 +916,7 @@
       "eu": "zaio",
       "es": "le (gusta, parece…)",
       "nota": null,
+      "audio": "unidades/u9/zaio.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -926,6 +938,7 @@
       "eu": "zaie",
       "es": "les (gusta, parece…)",
       "nota": null,
+      "audio": "unidades/u9/zaie.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -933,6 +946,7 @@
       "eu": "zaizkit",
       "es": "me gustan",
       "nota": "Cuando lo que gusta son varias cosas.",
+      "audio": "unidades/u9/zaizkit.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -940,6 +954,7 @@
       "eu": "zaizkizu",
       "es": "te gustan",
       "nota": null,
+      "audio": "unidades/u9/zaizkizu.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -947,6 +962,7 @@
       "eu": "zaizkio",
       "es": "le gustan",
       "nota": null,
+      "audio": "unidades/u9/zaizkio.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -954,6 +970,7 @@
       "eu": "zaizkigu",
       "es": "nos gustan",
       "nota": null,
+      "audio": "unidades/u9/zaizkigu.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -961,6 +978,7 @@
       "eu": "zaizkizue",
       "es": "os gustan",
       "nota": null,
+      "audio": "unidades/u9/zaizkizue.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -968,6 +986,7 @@
       "eu": "zaizkie",
       "es": "les gustan",
       "nota": null,
+      "audio": "unidades/u9/zaizkie.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
