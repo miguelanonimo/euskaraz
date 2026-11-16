@@ -35,6 +35,12 @@
       "titulo_eu": "Baserria",
       "titulo": "El caserío y sus animales",
       "resumen": "La casa que incluye la tierra, los bichos y a los que viven allí."
+    },
+    {
+      "id": "5.6",
+      "titulo_eu": "Zer moduz zaude?",
+      "titulo": "Cómo estás",
+      "resumen": "Pozik, nekatuta, lasai: decir cómo te encuentras, con «egon» y sin artículo."
     }
   ],
   "gramatica": [
@@ -347,6 +353,23 @@
         }
       ],
       "subnivel": "5.5"
+    },
+    {
+      "titulo": "«Estoy contento», «estoy cansada»: pozik nago",
+      "cuerpo": "Desde la primera unidad sabes contestar a <i>zer moduz?</i> con <i>ondo</i> o <i>gaizki</i>. Ahora que tienes <i>egon</i>, puedes decir de verdad cómo estás.\n\n<b>pozik</b> — contento, contenta\n<b>triste</b> — triste\n<b>lasai</b> — tranquilo, tranquila\n<b>urduri</b> — nervioso, nerviosa\n<b>haserre</b> — enfadado, enfadada\n<b>nekatuta</b> — cansado, cansada\n<b>kezkatuta</b> — preocupado, preocupada\n<b>gaixorik</b> — enfermo, enferma\n\nSe usan con <i>egon</i>, y van <b>delante del verbo</b>:\n\n<b>pozik nago</b> — Estoy contento.\n<b>oso nekatuta nago</b> — Estoy muy cansada.\n<b>haserre zaude?</b> — ¿Estás enfadado?\n<b>lasai gaude</b> — Estamos tranquilos.\n\nLo que hay que mirar: ninguna lleva el artículo. No es «tristea nago» ni «lasaia nago». Estas palabras dicen <b>cómo</b> estás, no <b>qué</b> eres, y por eso van desnudas, igual que <i>ondo</i> en <i>ondo nago</i>.\n\nCon <i>izan</i> y el artículo, la frase cambia de sentido. Ya no hablas de un rato, sino de cómo es alguien:\n\n<b>urduri nago</b> — Estoy nervioso. Ahora.\n<b>urduria naiz</b> — Soy nervioso. De siempre.\n\nY como ninguna tiene género, cada una vale para él y para ella: <i>pozik</i> es contento y contenta.",
+      "ejemplos": [
+        {
+          "eu": "oso ondo nago",
+          "es": "Estoy muy bien.",
+          "audio": "unidades/u6/oso-ondo-nago.mp3"
+        },
+        {
+          "eu": "gauean beti nekatuta nago",
+          "es": "Por la noche siempre estoy cansado.",
+          "audio": "unidades/u7/gauean-beti-nekatuta-nago.mp3"
+        }
+      ],
+      "subnivel": "5.6"
     }
   ],
   "vocabulario": [
@@ -916,6 +939,62 @@
       "nota": "El plural de «bat». Va detrás del nombre, que se queda sin artículo: «mahai batzuk».",
       "audio": "unidades/u5/batzuk.mp3",
       "subnivel": "5.4"
+    },
+    {
+      "eu": "pozik",
+      "es": "contento, contenta",
+      "nota": "Con «egon» y sin artículo: «pozik nago».",
+      "categoria": "otros",
+      "subnivel": "5.6"
+    },
+    {
+      "eu": "triste",
+      "es": "triste",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.6"
+    },
+    {
+      "eu": "lasai",
+      "es": "tranquilo, tranquila",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.6"
+    },
+    {
+      "eu": "urduri",
+      "es": "nervioso, nerviosa",
+      "nota": "«Urduri nago», estoy nervioso; «urduria naiz», soy nervioso.",
+      "categoria": "adjetivo",
+      "subnivel": "5.6"
+    },
+    {
+      "eu": "haserre",
+      "es": "enfadado, enfadada",
+      "nota": null,
+      "categoria": "adjetivo",
+      "subnivel": "5.6"
+    },
+    {
+      "eu": "nekatuta",
+      "es": "cansado, cansada",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "5.6"
+    },
+    {
+      "eu": "kezkatuta",
+      "es": "preocupado, preocupada",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "5.6"
+    },
+    {
+      "eu": "gaixorik",
+      "es": "enfermo, enferma",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "5.6"
     }
   ],
   "ejercicios": [
@@ -4451,6 +4530,216 @@
         }
       ],
       "subnivel": "5.1"
+    },
+    {
+      "id": "u5-g58",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Estoy contento. → Pozik ____.",
+          "opciones": [
+            "naiz",
+            "nago",
+            "dut",
+            "daukat"
+          ],
+          "correcta": 1,
+          "explicacion": "Dices cómo te encuentras ahora: con «egon».",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Estoy triste. → ____ nago.",
+          "opciones": [
+            "Tristea",
+            "Tristeak",
+            "Triste",
+            "Tristean"
+          ],
+          "correcta": 2,
+          "explicacion": "Dice cómo estás, no qué eres: va sin artículo."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¿Estás enfadada? → Haserre ____?",
+          "opciones": [
+            "zara",
+            "zaude",
+            "duzu",
+            "nago"
+          ],
+          "correcta": 1,
+          "explicacion": "Le preguntas a «zu» cómo está: zaude.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Estamos tranquilos. → ____ gaude.",
+          "opciones": [
+            "Lasaiak",
+            "Lasaia",
+            "Lasai",
+            "Lasaian"
+          ],
+          "correcta": 2,
+          "explicacion": "Aunque seáis varios, va sin artículo y sin plural: lasai gaude."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estoy cansado.",
+          "respuestas": [
+            "nekatuta nago",
+            "ni nekatuta nago"
+          ],
+          "pista": "Con «egon», y la palabra delante del verbo."
+        }
+      ],
+      "subnivel": "5.6"
+    },
+    {
+      "id": "u5-g59",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Lasai nago» significa…",
+          "opciones": [
+            "Estoy nervioso",
+            "Estoy tranquilo",
+            "Estoy enfadado",
+            "Estoy enfermo"
+          ],
+          "correcta": 1,
+          "explicacion": "Lasai: tranquilo. Lo contrario es «urduri»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Gaixorik dago» significa…",
+          "opciones": [
+            "Está cansado",
+            "Está contento",
+            "Está enfermo",
+            "Está preocupado"
+          ],
+          "correcta": 2,
+          "explicacion": "Gaixorik: enfermo. Y «dago», de «egon»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Estamos preocupados. → Kezkatuta ____.",
+          "opciones": [
+            "gara",
+            "daude",
+            "dugu",
+            "gaude"
+          ],
+          "correcta": 3,
+          "explicacion": "Nosotros, y con «egon»: gaude.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "De «urduri nago» y «urduria naiz», ¿cuál es «soy nervioso», de siempre?",
+          "opciones": [
+            "urduri nago",
+            "urduria naiz",
+            "las dos",
+            "ninguna"
+          ],
+          "correcta": 1,
+          "explicacion": "Con «izan» y el artículo hablas de cómo es alguien. Con «egon» y sin artículo, de cómo está ahora."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Estoy contento.",
+          "respuestas": [
+            "pozik nago",
+            "ni pozik nago"
+          ],
+          "pista": "Con «egon», y sin artículo."
+        }
+      ],
+      "subnivel": "5.6"
+    },
+    {
+      "id": "u5-g60",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "—Zer moduz zaude? —Oso nekatuta ____.",
+          "opciones": [
+            "naiz",
+            "zaude",
+            "nago",
+            "dago"
+          ],
+          "correcta": 2,
+          "explicacion": "Te preguntan a ti y contestas por ti: nago.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Ane está contenta. → Ane pozik ____.",
+          "opciones": [
+            "da",
+            "dago",
+            "nago",
+            "du"
+          ],
+          "correcta": 1,
+          "explicacion": "Cómo está Ane ahora: «egon», en tercera persona.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Los amigos están tranquilos. → Lagunak lasai ____.",
+          "opciones": [
+            "dira",
+            "dago",
+            "dute",
+            "daude"
+          ],
+          "correcta": 3,
+          "explicacion": "Son varios y es cómo están: daude.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Una de estas está mal dicha. ¿Cuál?",
+          "opciones": [
+            "Triste nago",
+            "Pozik nago",
+            "Tristea nago",
+            "Lasai nago"
+          ],
+          "correcta": 2,
+          "explicacion": "Con «egon», estas palabras van sin artículo: triste nago."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¿Estás enfadado?",
+          "respuestas": [
+            "haserre zaude",
+            "zu haserre zaude"
+          ],
+          "pista": "Con «egon», y sin artículo."
+        }
+      ],
+      "subnivel": "5.6"
     }
   ],
   "audiosExtra": [
