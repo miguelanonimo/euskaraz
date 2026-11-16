@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<title>Mockup · 31-traducir-casi</title>
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+  .mockup-tag{
+    position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+    background: #111; color: #fff; font: 12px/1.4 monospace;
+    padding: 4px 10px; text-align: center;
+  }
+  body{ padding-top: 22px; }
+</style>
+</head>
+<body>
+<div class="mockup-tag">Traducir · "casi correcto" — falta un detalle pequeño, cuenta como acierto pero se enseña la forma buena</div>
+
+<div id="app">
+  <header class="topbar" id="topbar">
+    <button class="topbar__back" id="btnBack" aria-label="Volver"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="topbar__mid">
+      <span class="topbar__title">Práctica · 2. Los pronombres</span>
+      <div class="progressbar"><div class="progressbar__fill" style="width:35%"></div></div>
+    </div>
+    <div class="topbar__right"><span class="hearts"><b>3</b>/9</span></div>
+  </header>
+
+  <main class="screen screen--quiz" id="screenQuiz">
+    <div class="quiz" id="quizContent">
+<p class="q__inst">Escríbelo en euskera</p><h2 class="q__prompt q__prompt--es">Buenas tardes</h2><textarea class="typebox" rows="2">arratsalde in</textarea>
+    </div>
+  </main>
+
+  <div class="feedback is-leve-fb" id="feedback" aria-live="polite">
+    <div class="feedback__inner">
+      <div class="feedback__head">
+        <span class="feedback__icon" id="feedbackIcon" aria-hidden="true">~</span>
+        <span class="feedback__title" id="feedbackTitle">Casi correcto</span>
+      </div>
+      <p class="feedback__body" id="feedbackBody"><span class="dif__par"><span class="dif__lbl">escribiste</span><span class="dif__mal">arratsalde <u class="dif">in</u></span></span><span class="dif__par"><span class="dif__lbl">se escribe</span><span class="dif__ok">arratsalde <u class="dif">on</u></span></span></p>
+      <button class="btn btn--feedback" id="feedbackNext">Continuar</button>
+    </div>
+  </div>
+
+  <div class="actionbar" id="actionbar" hidden>
+    <button class="btn btn--primary" id="btnCheck" disabled>Comprobar</button>
+  </div>
+</div>
+</body>
+</html>

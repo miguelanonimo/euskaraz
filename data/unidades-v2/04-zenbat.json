@@ -665,6 +665,7 @@
       "eu": "Zazpikaleak",
       "es": "el Casco Viejo de Bilbao",
       "nota": "«Zazpi kale» más el artículo: las Siete Calles. Así se llama su parada de metro.",
+      "audio": "unidades/u5/zazpikaleak.mp3",
       "categoria": "sustantivo",
       "subnivel": "4.1"
     },
@@ -736,6 +737,7 @@
       "eu": "duzue",
       "es": "(vosotros) tenéis",
       "nota": null,
+      "audio": "unidades/u5/duzue.mp3",
       "categoria": "verbo",
       "subnivel": "4.4"
     },
@@ -751,6 +753,7 @@
       "eu": "dituzu",
       "es": "(tú) tienes (varias cosas)",
       "nota": null,
+      "audio": "unidades/u5/dituzu.mp3",
       "categoria": "verbo",
       "subnivel": "4.4"
     },
@@ -758,6 +761,7 @@
       "eu": "ditu",
       "es": "(él/ella) tiene (varias cosas)",
       "nota": null,
+      "audio": "unidades/u5/ditu.mp3",
       "categoria": "verbo",
       "subnivel": "4.4"
     },
@@ -765,6 +769,7 @@
       "eu": "ditugu",
       "es": "(nosotros) tenemos (varias cosas)",
       "nota": null,
+      "audio": "unidades/u5/ditugu.mp3",
       "categoria": "verbo",
       "subnivel": "4.4"
     },
@@ -772,6 +777,7 @@
       "eu": "dituzue",
       "es": "(vosotros) tenéis (varias cosas)",
       "nota": null,
+      "audio": "unidades/u5/dituzue.mp3",
       "categoria": "verbo",
       "subnivel": "4.4"
     },
@@ -779,6 +785,7 @@
       "eu": "dituzte",
       "es": "(ellos) tienen (varias cosas)",
       "nota": null,
+      "audio": "unidades/u5/dituzte.mp3",
       "categoria": "verbo",
       "subnivel": "4.4"
     },
@@ -1010,6 +1017,7 @@
       "eu": "anai-arrebak",
       "es": "los hermanos, hermanos y hermanas",
       "nota": "Los dos sexos juntos.",
+      "audio": "unidades/u4/anai-arrebak.mp3",
       "categoria": "sustantivo",
       "subnivel": "4.6"
     },
@@ -1017,6 +1025,7 @@
       "eu": "seme-alabak",
       "es": "los hijos, hijos e hijas",
       "nota": "Cuando hay chicos y chicas. «Semeak», a secas, son solo los hijos varones.",
+      "audio": "unidades/u4/seme-alabak.mp3",
       "categoria": "sustantivo",
       "subnivel": "4.6"
     },
@@ -1024,6 +1033,7 @@
       "eu": "aitona-amonak",
       "es": "los abuelos, abuelo y abuela",
       "nota": null,
+      "audio": "unidades/u4/aitona-amonak.mp3",
       "categoria": "sustantivo",
       "subnivel": "4.6"
     },
@@ -1031,6 +1041,7 @@
       "eu": "osaba-izebak",
       "es": "los tíos, tío y tía",
       "nota": null,
+      "audio": "unidades/u4/osaba-izebak.mp3",
       "categoria": "sustantivo",
       "subnivel": "4.6"
     },
@@ -1038,6 +1049,7 @@
       "eu": "senar-emazteak",
       "es": "el matrimonio, marido y mujer",
       "nota": null,
+      "audio": "unidades/u4/senar-emazteak.mp3",
       "categoria": "sustantivo",
       "subnivel": "4.6"
     },
@@ -1045,6 +1057,7 @@
       "eu": "norena?",
       "es": "¿de quién es?",
       "nota": "«Noren» con el artículo, cuando no hay nombre detrás.",
+      "audio": "unidades/u4/norena.mp3",
       "categoria": "otros",
       "subnivel": "4.6"
     },
@@ -1052,6 +1065,7 @@
       "eu": "nirea",
       "es": "el mío, la mía",
       "nota": "«Nire» con el artículo: «hau nirea da», esto es mío. Sin -n: «nirena» no existe.",
+      "audio": "unidades/u4/nirea.mp3",
       "categoria": "otros",
       "subnivel": "4.6"
     },
@@ -1059,6 +1073,7 @@
       "eu": "zurea",
       "es": "el tuyo, la tuya",
       "nota": null,
+      "audio": "unidades/u4/zurea.mp3",
       "categoria": "otros",
       "subnivel": "4.6"
     },
@@ -1066,6 +1081,7 @@
       "eu": "harena",
       "es": "el suyo, la suya (de él, de ella)",
       "nota": null,
+      "audio": "unidades/u4/harena.mp3",
       "categoria": "otros",
       "subnivel": "4.6"
     },
@@ -1073,6 +1089,7 @@
       "eu": "gurea",
       "es": "el nuestro, la nuestra",
       "nota": null,
+      "audio": "unidades/u4/gurea.mp3",
       "categoria": "otros",
       "subnivel": "4.6"
     },
@@ -1080,6 +1097,7 @@
       "eu": "zuena",
       "es": "el vuestro, la vuestra",
       "nota": null,
+      "audio": "unidades/u4/zuena.mp3",
       "categoria": "otros",
       "subnivel": "4.6"
     },
@@ -1087,6 +1105,7 @@
       "eu": "haiena",
       "es": "el suyo, la suya (de ellos, de ellas)",
       "nota": null,
+      "audio": "unidades/u4/haiena.mp3",
       "categoria": "otros",
       "subnivel": "4.6"
     },
@@ -1263,6 +1282,7 @@
       "eu": "solairua",
       "es": "el piso, la planta (de un edificio)",
       "nota": "«Hirugarren solairua», la tercera planta.",
+      "audio": "unidades/u4/solairua.mp3",
       "categoria": "sustantivo",
       "subnivel": "4.3"
     },
@@ -1316,6 +1336,7 @@
       "eu": "daukagu",
       "es": "(nosotros) tenemos, con «eduki»",
       "nota": null,
+      "audio": "unidades/u4/daukagu.mp3",
       "categoria": "verbo",
       "subnivel": "4.5"
     },
@@ -1323,6 +1344,7 @@
       "eu": "daukazue",
       "es": "(vosotros) tenéis, con «eduki»",
       "nota": null,
+      "audio": "unidades/u4/daukazue.mp3",
       "categoria": "verbo",
       "subnivel": "4.5"
     },
@@ -1330,6 +1352,7 @@
       "eu": "daukate",
       "es": "(ellos) tienen, con «eduki»",
       "nota": null,
+      "audio": "unidades/u4/daukate.mp3",
       "categoria": "verbo",
       "subnivel": "4.5"
     },
@@ -1337,6 +1360,7 @@
       "eu": "nork?",
       "es": "¿quién? (cuando hace algo)",
       "nota": "La pregunta de la -k: «Nork du txakurra? — Anek». Da nombre al caso NORK.",
+      "audio": "unidades/u4/nork.mp3",
       "categoria": "otros",
       "subnivel": "4.7"
     }
@@ -6795,6 +6819,138 @@
     {
       "eu": "nire gurasoak",
       "audio": "unidades/u4/nire-gurasoak.mp3"
+    },
+    {
+      "eu": "hiru lagunak",
+      "audio": "unidades/u4/hiru-lagunak.mp3"
+    },
+    {
+      "eu": "lagunek",
+      "audio": "unidades/u4/lagunek.mp3"
+    },
+    {
+      "eu": "Nor da irakaslea?",
+      "audio": "unidades/u4/nor-da-irakaslea.mp3"
+    },
+    {
+      "eu": "Nork du txakurra?",
+      "audio": "unidades/u4/nork-du-txakurra.mp3"
+    },
+    {
+      "eu": "senar-emazteak",
+      "audio": "unidades/u4/senar-emazteak.mp3"
+    },
+    {
+      "eu": "aitaren anaia",
+      "audio": "unidades/u4/aitaren-anaia.mp3"
+    },
+    {
+      "eu": "amaren ahizpa",
+      "audio": "unidades/u4/amaren-ahizpa.mp3"
+    },
+    {
+      "eu": "Mikelen arreba",
+      "audio": "unidades/u4/mikelen-arreba.mp3"
+    },
+    {
+      "eu": "aitaren aita",
+      "audio": "unidades/u4/aitaren-aita.mp3"
+    },
+    {
+      "eu": "Guk katu bat dugu.",
+      "audio": "unidades/u4/guk-katu-bat-dugu.mp3"
+    },
+    {
+      "eu": "guk etxe bat dugu",
+      "audio": "unidades/u4/guk-etxe-bat-dugu.mp3"
+    },
+    {
+      "eu": "anek katu bat du",
+      "audio": "unidades/u4/anek-katu-bat-du.mp3"
+    },
+    {
+      "eu": "lagunek txakur bat dute",
+      "audio": "unidades/u4/lagunek-txakur-bat-dute.mp3"
+    },
+    {
+      "eu": "irakasleek etxe bat dute",
+      "audio": "unidades/u4/irakasleek-etxe-bat-dute.mp3"
+    },
+    {
+      "eu": "bi ahizpa ditut",
+      "audio": "unidades/u4/bi-ahizpa-ditut.mp3"
+    },
+    {
+      "eu": "hiru seme",
+      "audio": "unidades/u4/hiru-seme.mp3"
+    },
+    {
+      "eu": "lau lehengusuak",
+      "audio": "unidades/u4/lau-lehengusuak.mp3"
+    },
+    {
+      "eu": "hiru anaia ditut",
+      "audio": "unidades/u4/hiru-anaia-ditut.mp3"
+    },
+    {
+      "eu": "Aneren etxea",
+      "audio": "unidades/u4/aneren-etxea.mp3"
+    },
+    {
+      "eu": "nirea da",
+      "audio": "unidades/u4/nirea-da.mp3"
+    },
+    {
+      "eu": "hiru lagun gara",
+      "audio": "unidades/u4/hiru-lagun-gara.mp3"
+    },
+    {
+      "eu": "hiru lagunak irakasleak dira",
+      "audio": "unidades/u4/hiru-lagunak-irakasleak-dira.mp3"
+    },
+    {
+      "eu": "Anek txakur bat du",
+      "audio": "unidades/u4/anek-txakur-bat-du.mp3"
+    },
+    {
+      "eu": "Mikelek katu bat du",
+      "audio": "unidades/u4/mikelek-katu-bat-du.mp3"
+    },
+    {
+      "eu": "lagunak txakur bat du",
+      "audio": "unidades/u4/lagunak-txakur-bat-du.mp3"
+    },
+    {
+      "eu": "irakasleak bi katu ditu",
+      "audio": "unidades/u4/irakasleak-bi-katu-ditu.mp3"
+    },
+    {
+      "eu": "Ane ikaslea da",
+      "audio": "unidades/u4/ane-ikaslea-da.mp3"
+    },
+    {
+      "eu": "lagunak irakasleak dira",
+      "audio": "unidades/u4/lagunak-irakasleak-dira.mp3"
+    },
+    {
+      "eu": "Zenbat seme-alaba dituzu?",
+      "audio": "unidades/u4/zenbat-seme-alaba-dituzu.mp3"
+    },
+    {
+      "eu": "Hiru seme-alaba ditut.",
+      "audio": "unidades/u4/hiru-seme-alaba-ditut.mp3"
+    },
+    {
+      "eu": "lagunaren etxea",
+      "audio": "unidades/u4/lagunaren-etxea.mp3"
+    },
+    {
+      "eu": "etxe hau nirea da",
+      "audio": "unidades/u4/etxe-hau-nirea-da.mp3"
+    },
+    {
+      "eu": "etxe hau Anerena da",
+      "audio": "unidades/u4/etxe-hau-anerena-da.mp3"
     }
   ]
 }

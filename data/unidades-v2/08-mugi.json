@@ -490,6 +490,7 @@
       "eu": "goaz",
       "es": "(nosotros) vamos",
       "nota": null,
+      "audio": "unidades/u9/goaz.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -497,6 +498,7 @@
       "eu": "zoazte",
       "es": "(vosotros) vais",
       "nota": null,
+      "audio": "unidades/u9/zoazte.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -504,6 +506,7 @@
       "eu": "doaz",
       "es": "(ellos) van",
       "nota": null,
+      "audio": "unidades/u9/doaz.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -511,6 +514,7 @@
       "eu": "gatoz",
       "es": "(nosotros) venimos",
       "nota": null,
+      "audio": "unidades/u9/gatoz.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -518,6 +522,7 @@
       "eu": "zatozte",
       "es": "(vosotros) venís",
       "nota": null,
+      "audio": "unidades/u9/zatozte.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -525,6 +530,7 @@
       "eu": "datoz",
       "es": "(ellos) vienen",
       "nota": null,
+      "audio": "unidades/u9/datoz.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -532,6 +538,7 @@
       "eu": "zabiltza",
       "es": "(tú) andas",
       "nota": null,
+      "audio": "unidades/u9/zabiltza.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -539,6 +546,7 @@
       "eu": "gabiltza",
       "es": "(nosotros) andamos",
       "nota": null,
+      "audio": "unidades/u9/gabiltza.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -546,6 +554,7 @@
       "eu": "zabiltzate",
       "es": "(vosotros) andáis",
       "nota": null,
+      "audio": "unidades/u9/zabiltzate.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -553,6 +562,7 @@
       "eu": "dabiltza",
       "es": "(ellos) andan",
       "nota": null,
+      "audio": "unidades/u9/dabiltza.mp3",
       "categoria": "verbo",
       "subnivel": "8.1"
     },
@@ -760,6 +770,7 @@
       "eu": "euskaraz",
       "es": "en euskera",
       "nota": "«Euskara» más la -z de «por medio de». Da nombre a esta app.",
+      "audio": "unidades/u9/euskaraz.mp3",
       "categoria": "otros",
       "subnivel": "8.3"
     },
@@ -4161,6 +4172,70 @@
     {
       "eu": "Barkatu, non dago…?",
       "audio": "unidades/u8/barkatu-non-dago.mp3"
+    },
+    {
+      "eu": "lanera noa",
+      "audio": "unidades/u8/lanera-noa.mp3"
+    },
+    {
+      "eu": "lanetik nator",
+      "audio": "unidades/u8/lanetik-nator.mp3"
+    },
+    {
+      "eu": "ez sartu!",
+      "audio": "unidades/u8/ez-sartu.mp3"
+    },
+    {
+      "eu": "ez joan!",
+      "audio": "unidades/u8/ez-joan.mp3"
+    },
+    {
+      "eu": "ez egin hori!",
+      "audio": "unidades/u8/ez-egin-hori.mp3"
+    },
+    {
+      "eu": "ez esan!",
+      "audio": "unidades/u8/ez-esan.mp3"
+    },
+    {
+      "eu": "ez joan kalera",
+      "audio": "unidades/u8/ez-joan-kalera.mp3"
+    },
+    {
+      "eu": "ez etorri berandu, mesedez",
+      "audio": "unidades/u8/ez-etorri-berandu-mesedez.mp3"
+    },
+    {
+      "eu": "ez dut joan nahi",
+      "audio": "unidades/u8/ez-dut-joan-nahi.mp3"
+    },
+    {
+      "eu": "ez dut lan egin behar",
+      "audio": "unidades/u8/ez-dut-lan-egin-behar.mp3"
+    },
+    {
+      "eu": "ez dut nahi",
+      "audio": "unidades/u8/ez-dut-nahi.mp3"
+    },
+    {
+      "eu": "Bihar mendira goaz.",
+      "audio": "unidades/u8/bihar-mendira-goaz.mp3"
+    },
+    {
+      "eu": "autobusez goaz",
+      "audio": "unidades/u8/autobusez-goaz.mp3"
+    },
+    {
+      "eu": "Gu kotxez gatoz.",
+      "audio": "unidades/u8/gu-kotxez-gatoz.mp3"
+    },
+    {
+      "eu": "Sartu nahi dut",
+      "audio": "unidades/u8/sartu-nahi-dut.mp3"
+    },
+    {
+      "eu": "behar",
+      "audio": "unidades/u8/behar.mp3"
     }
   ]
 }

@@ -535,6 +535,10 @@
     {
       "eu": "Haiek medikuak dira.",
       "audio": "unidades/u2/haiek-medikuak-dira.mp3"
+    },
+    {
+      "eu": "gernikakoa naiz",
+      "audio": "unidades/u2/gernikakoa-naiz.mp3"
     }
   ],
   "vocabulario": [
@@ -632,6 +636,7 @@
       "eu": "beraiek",
       "es": "ellos, ellas (en la conversación)",
       "nota": "El plural de «bera».",
+      "audio": "unidades/u2/beraiek.mp3",
       "categoria": "otros",
       "subnivel": "2.1"
     },

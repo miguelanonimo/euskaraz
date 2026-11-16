@@ -661,6 +661,7 @@
       "eu": "honek",
       "es": "este (cuando hace algo)",
       "nota": "«Hau» con la -k de quien hace: «lagun honek kafea edaten du».",
+      "audio": "unidades/u8/honek.mp3",
       "categoria": "otros",
       "subnivel": "7.1"
     },
@@ -668,6 +669,7 @@
       "eu": "horrek",
       "es": "ese (cuando hace algo)",
       "nota": "«Hori» con la -k de quien hace.",
+      "audio": "unidades/u8/horrek.mp3",
       "categoria": "otros",
       "subnivel": "7.1"
     },
@@ -795,6 +797,7 @@
       "eu": "kiloa",
       "es": "el kilo",
       "nota": "«Kilo bat sagar», un kilo de manzanas: sin «de» y sin artículo.",
+      "audio": "unidades/u7/kiloa.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -802,6 +805,7 @@
       "eu": "litroa",
       "es": "el litro",
       "nota": null,
+      "audio": "unidades/u7/litroa.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -809,6 +813,7 @@
       "eu": "botila",
       "es": "la botella",
       "nota": null,
+      "audio": "unidades/u7/botila.mp3",
       "categoria": "sustantivo",
       "subnivel": "7.5"
     },
@@ -816,6 +821,7 @@
       "eu": "beste bat",
       "es": "otro, otra",
       "nota": "Con un nombre, lo abrazan: «beste kafe bat», otro café.",
+      "audio": "unidades/u7/beste-bat.mp3",
       "categoria": "otros",
       "subnivel": "7.5"
     },
@@ -823,6 +829,7 @@
       "eu": "bestea",
       "es": "el otro, la otra",
       "nota": "Uno concreto, que ya sabemos cuál es.",
+      "audio": "unidades/u7/bestea.mp3",
       "categoria": "otros",
       "subnivel": "7.5"
     },
@@ -830,6 +837,7 @@
       "eu": "gose naiz",
       "es": "tengo hambre",
       "nota": "Con «izan», no con «tener». Y sin artículo: «gose», no «gosea».",
+      "audio": "unidades/u7/gose-naiz.mp3",
       "categoria": "otros",
       "subnivel": "7.5"
     },
@@ -837,6 +845,7 @@
       "eu": "egarri naiz",
       "es": "tengo sed",
       "nota": null,
+      "audio": "unidades/u7/egarri-naiz.mp3",
       "categoria": "otros",
       "subnivel": "7.5"
     },
@@ -844,6 +853,7 @@
       "eu": "logura naiz",
       "es": "tengo sueño",
       "nota": null,
+      "audio": "unidades/u7/logura-naiz.mp3",
       "categoria": "otros",
       "subnivel": "7.5"
     },
@@ -851,6 +861,7 @@
       "eu": "hotz naiz",
       "es": "tengo frío",
       "nota": null,
+      "audio": "unidades/u7/hotz-naiz.mp3",
       "categoria": "otros",
       "subnivel": "7.5"
     },
@@ -858,6 +869,7 @@
       "eu": "bero naiz",
       "es": "tengo calor",
       "nota": null,
+      "audio": "unidades/u7/bero-naiz.mp3",
       "categoria": "otros",
       "subnivel": "7.5"
     },
@@ -4863,6 +4875,94 @@
     {
       "eu": "ogia eta gazta jaten ditut",
       "audio": "unidades/u7/ogia-eta-gazta-jaten-ditut.mp3"
+    },
+    {
+      "eu": "lagun honek kafea edaten du",
+      "audio": "unidades/u7/lagun-honek-kafea-edaten-du.mp3"
+    },
+    {
+      "eu": "ikasle hori Bilbokoa da",
+      "audio": "unidades/u7/ikasle-hori-bilbokoa-da.mp3"
+    },
+    {
+      "eu": "ikasle horrek euskara ikasten du",
+      "audio": "unidades/u7/ikasle-horrek-euskara-ikasten-du.mp3"
+    },
+    {
+      "eu": "garagardo bat, mesedez",
+      "audio": "unidades/u7/garagardo-bat-mesedez.mp3"
+    },
+    {
+      "eu": "bi garagardo, mesedez",
+      "audio": "unidades/u7/bi-garagardo-mesedez.mp3"
+    },
+    {
+      "eu": "hiru kafe eta ardo bat",
+      "audio": "unidades/u7/hiru-kafe-eta-ardo-bat.mp3"
+    },
+    {
+      "eu": "kilo bat sagar",
+      "audio": "unidades/u7/kilo-bat-sagar.mp3"
+    },
+    {
+      "eu": "litro bat esne",
+      "audio": "unidades/u7/litro-bat-esne.mp3"
+    },
+    {
+      "eu": "botila bat ardo",
+      "audio": "unidades/u7/botila-bat-ardo.mp3"
+    },
+    {
+      "eu": "kilo bat patata, mesedez",
+      "audio": "unidades/u7/kilo-bat-patata-mesedez.mp3"
+    },
+    {
+      "eu": "bi litro esne nahi dut",
+      "audio": "unidades/u7/bi-litro-esne-nahi-dut.mp3"
+    },
+    {
+      "eu": "beste kafe bat, mesedez",
+      "audio": "unidades/u7/beste-kafe-bat-mesedez.mp3"
+    },
+    {
+      "eu": "beste garagardo bat",
+      "audio": "unidades/u7/beste-garagardo-bat.mp3"
+    },
+    {
+      "eu": "gose zara?",
+      "audio": "unidades/u7/gose-zara.mp3"
+    },
+    {
+      "eu": "egarri gara",
+      "audio": "unidades/u7/egarri-gara.mp3"
+    },
+    {
+      "eu": "ez naiz gose",
+      "audio": "unidades/u7/ez-naiz-gose.mp3"
+    },
+    {
+      "eu": "oso gose naiz",
+      "audio": "unidades/u7/oso-gose-naiz.mp3"
+    },
+    {
+      "eu": "Guk euskara ikasten dugu.",
+      "audio": "unidades/u7/guk-euskara-ikasten-dugu.mp3"
+    },
+    {
+      "eu": "hiru kafe",
+      "audio": "unidades/u7/hiru-kafe.mp3"
+    },
+    {
+      "eu": "zuku hiru",
+      "audio": "unidades/u7/zuku-hiru.mp3"
+    },
+    {
+      "eu": "hiru kilo patata",
+      "audio": "unidades/u7/hiru-kilo-patata.mp3"
+    },
+    {
+      "eu": "Beste kafe bat",
+      "audio": "unidades/u7/beste-kafe-bat.mp3"
     }
   ]
 }

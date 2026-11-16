@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<title>Mockup · 29-traducir-pendiente</title>
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+  .mockup-tag{
+    position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+    background: #111; color: #fff; font: 12px/1.4 monospace;
+    padding: 4px 10px; text-align: center;
+  }
+  body{ padding-top: 22px; }
+</style>
+</head>
+<body>
+<div class="mockup-tag">Traducir · textarea vacía, con pista</div>
+
+<div id="app">
+  <header class="topbar" id="topbar">
+    <button class="topbar__back" id="btnBack" aria-label="Volver"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="topbar__mid">
+      <span class="topbar__title">Práctica · 2. Los pronombres</span>
+      <div class="progressbar"><div class="progressbar__fill" style="width:35%"></div></div>
+    </div>
+    <div class="topbar__right"><span class="hearts"><b>3</b>/9</span></div>
+  </header>
+
+  <main class="screen screen--quiz" id="screenQuiz">
+    <div class="quiz" id="quizContent">
+<p class="q__inst">Escríbelo en euskera</p><h2 class="q__prompt q__prompt--es">Muchas gracias</h2><p class="q__hint">Literalmente: «gracias muchas».</p><textarea class="typebox" rows="2" placeholder="Escribe aquí en euskera…"></textarea>
+    </div>
+  </main>
+
+  <div class="feedback" id="feedback" hidden aria-live="polite"></div>
+
+  <div class="actionbar" id="actionbar">
+    <button class="btn btn--primary" id="btnCheck" disabled>Comprobar</button>
+  </div>
+</div>
+</body>
+</html>

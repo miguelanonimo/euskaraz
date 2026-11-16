@@ -279,6 +279,7 @@
       "eu": "onena",
       "es": "el mejor, la mejor",
       "nota": "«Ona» es irregular al comparar: «hobea», mejor; «onena», el mejor.",
+      "audio": "unidades/u12/onena.mp3",
       "categoria": "adjetivo",
       "subnivel": "11.3"
     },
@@ -286,6 +287,7 @@
       "eu": "txarra",
       "es": "malo, mala",
       "nota": "«Txarragoa», peor.",
+      "audio": "unidades/u12/txarra.mp3",
       "categoria": "adjetivo",
       "subnivel": "11.3"
     },
@@ -341,6 +343,7 @@
       "eu": "beharko dut",
       "es": "tendré que",
       "nota": "El -ko va en «behar»: «joan beharko dut».",
+      "audio": "unidades/u11/beharko-dut.mp3",
       "categoria": "verbo",
       "subnivel": "11.1"
     }
@@ -2396,6 +2399,30 @@
     {
       "eu": "Bihar ogia erosiko dut.",
       "audio": "unidades/u11/bihar-ogia-erosiko-dut.mp3"
+    },
+    {
+      "eu": "joan beharko dut",
+      "audio": "unidades/u11/joan-beharko-dut.mp3"
+    },
+    {
+      "eu": "egin behar dugu",
+      "audio": "unidades/u11/egin-behar-dugu.mp3"
+    },
+    {
+      "eu": "egin beharko dugu",
+      "audio": "unidades/u11/egin-beharko-dugu.mp3"
+    },
+    {
+      "eu": "joango",
+      "audio": "unidades/u11/joango.mp3"
+    },
+    {
+      "eu": "beharko",
+      "audio": "unidades/u11/beharko.mp3"
+    },
+    {
+      "eu": "hiri handiena da",
+      "audio": "unidades/u11/hiri-handiena-da.mp3"
     }
   ]
 }

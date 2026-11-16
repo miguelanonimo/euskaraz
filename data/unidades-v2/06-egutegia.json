@@ -683,6 +683,7 @@
       "eu": "behin",
       "es": "una vez",
       "nota": "«Astean behin», una vez a la semana.",
+      "audio": "unidades/u7/behin.mp3",
       "categoria": "otros",
       "subnivel": "6.2"
     },
@@ -946,6 +947,7 @@
       "eu": "ona",
       "es": "bueno, buena",
       "nota": "«Eguraldi ona», buen tiempo.",
+      "audio": "unidades/u6/ona.mp3",
       "categoria": "adjetivo",
       "subnivel": "6.4"
     },
@@ -1017,6 +1019,7 @@
       "eu": "nagusi",
       "es": "mayor, principal",
       "nota": "El de «Aste Nagusia», la Semana Grande.",
+      "audio": "unidades/u6/nagusi.mp3",
       "categoria": "adjetivo",
       "subnivel": "6.5"
     }
@@ -4377,6 +4380,70 @@
     {
       "eu": "Ostiralean Bilbon nago.",
       "audio": "unidades/u6/ostiralean-bilbon-nago.mp3"
+    },
+    {
+      "eu": "hirurak eta laurdenetan",
+      "audio": "unidades/u6/hirurak-eta-laurdenetan.mp3"
+    },
+    {
+      "eu": "laurak laurden gutxitan",
+      "audio": "unidades/u6/laurak-laurden-gutxitan.mp3"
+    },
+    {
+      "eu": "hiruretan",
+      "audio": "unidades/u6/hiruretan.mp3"
+    },
+    {
+      "eu": "larunbat gauean",
+      "audio": "unidades/u6/larunbat-gauean.mp3"
+    },
+    {
+      "eu": "ostiral arratsaldean",
+      "audio": "unidades/u6/ostiral-arratsaldean.mp3"
+    },
+    {
+      "eu": "larunbat goizean",
+      "audio": "unidades/u6/larunbat-goizean.mp3"
+    },
+    {
+      "eu": "maiatzaren bosta",
+      "audio": "unidades/u6/maiatzaren-bosta.mp3"
+    },
+    {
+      "eu": "urtarrilaren hogeia",
+      "audio": "unidades/u6/urtarrilaren-hogeia.mp3"
+    },
+    {
+      "eu": "Gaur maiatzaren bosta da.",
+      "audio": "unidades/u6/gaur-maiatzaren-bosta-da.mp3"
+    },
+    {
+      "eu": "maiatzaren bostean",
+      "audio": "unidades/u6/maiatzaren-bostean.mp3"
+    },
+    {
+      "eu": "urtarrilaren hogeian",
+      "audio": "unidades/u6/urtarrilaren-hogeian.mp3"
+    },
+    {
+      "eu": "Nire urtebetetzea maiatzaren bostean da.",
+      "audio": "unidades/u6/nire-urtebetetzea-maiatzaren-bostean-da.mp3"
+    },
+    {
+      "eu": "hotz handia egiten du",
+      "audio": "unidades/u6/hotz-handia-egiten-du.mp3"
+    },
+    {
+      "eu": "bero handia egiten du",
+      "audio": "unidades/u6/bero-handia-egiten-du.mp3"
+    },
+    {
+      "eu": "bero handia dago hemen",
+      "audio": "unidades/u6/bero-handia-dago-hemen.mp3"
+    },
+    {
+      "eu": "Bero handia",
+      "audio": "unidades/u6/bero-handia.mp3"
     }
   ]
 }

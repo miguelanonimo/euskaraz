@@ -536,6 +536,7 @@
       "eu": "niretzat",
       "es": "para mí",
       "nota": "Sin -n: no «nirentzat».",
+      "audio": "unidades/u9/niretzat.mp3",
       "categoria": "otros",
       "subnivel": "9.5"
     },
@@ -839,6 +840,7 @@
       "eu": "pilotalekua",
       "es": "el frontón",
       "nota": "«Pilota» + «leku» (sitio): el sitio de la pelota.",
+      "audio": "unidades/u10/pilotalekua.mp3",
       "categoria": "sustantivo",
       "subnivel": "9.4"
     },
@@ -846,6 +848,7 @@
       "eu": "frontoia",
       "es": "el frontón (la palabra prestada)",
       "nota": "Vale igual que «pilotalekua».",
+      "audio": "unidades/u10/frontoia.mp3",
       "categoria": "sustantivo",
       "subnivel": "9.4"
     },
@@ -893,6 +896,7 @@
       "eu": "nori?",
       "es": "¿a quién?",
       "nota": "Da nombre al caso NORI: «niri», «zuri», «Aneri».",
+      "audio": "unidades/u10/nori.mp3",
       "categoria": "otros",
       "subnivel": "9.1"
     },
@@ -924,6 +928,7 @@
       "eu": "zaigu",
       "es": "nos (gusta, parece…)",
       "nota": null,
+      "audio": "unidades/u10/zaigu.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -931,6 +936,7 @@
       "eu": "zaizue",
       "es": "os (gusta, parece…)",
       "nota": null,
+      "audio": "unidades/u10/zaizue.mp3",
       "categoria": "verbo",
       "subnivel": "9.1"
     },
@@ -1090,6 +1096,7 @@
       "eu": "eskuz",
       "es": "a mano",
       "nota": "«Esku» (mano) más la -z de «por medio de».",
+      "audio": "unidades/u9/eskuz.mp3",
       "categoria": "otros",
       "subnivel": "9.3"
     },
@@ -1097,6 +1104,7 @@
       "eu": "buruz",
       "es": "de memoria",
       "nota": "«Buru» (cabeza) más la -z: «buruz dakit», me lo sé de memoria.",
+      "audio": "unidades/u9/buruz.mp3",
       "categoria": "otros",
       "subnivel": "9.3"
     }
@@ -5025,6 +5033,58 @@
     {
       "eu": "Norentzat da?",
       "audio": "unidades/u9/norentzat-da.mp3"
+    },
+    {
+      "eu": "irakurtzea gustatzen zait",
+      "audio": "unidades/u9/irakurtzea-gustatzen-zait.mp3"
+    },
+    {
+      "eu": "mendira joatea gustatzen zait",
+      "audio": "unidades/u9/mendira-joatea-gustatzen-zait.mp3"
+    },
+    {
+      "eu": "hitz egitea asko gustatzen zaio",
+      "audio": "unidades/u9/hitz-egitea-asko-gustatzen-zaio.mp3"
+    },
+    {
+      "eu": "lagun asko",
+      "audio": "unidades/u9/lagun-asko.mp3"
+    },
+    {
+      "eu": "diru gutxi",
+      "audio": "unidades/u9/diru-gutxi.mp3"
+    },
+    {
+      "eu": "liburu asko ditut",
+      "audio": "unidades/u9/liburu-asko-ditut.mp3"
+    },
+    {
+      "eu": "liburu asko gustatzen zaizkit",
+      "audio": "unidades/u9/liburu-asko-gustatzen-zaizkit.mp3"
+    },
+    {
+      "eu": "Ane ikusi dut",
+      "audio": "unidades/u9/ane-ikusi-dut.mp3"
+    },
+    {
+      "eu": "liburua ikusi dut",
+      "audio": "unidades/u9/liburua-ikusi-dut.mp3"
+    },
+    {
+      "eu": "Miren ezagutzen dut",
+      "audio": "unidades/u9/miren-ezagutzen-dut.mp3"
+    },
+    {
+      "eu": "Hark Aneri esan dio.",
+      "audio": "unidades/u9/hark-aneri-esan-dio.mp3"
+    },
+    {
+      "eu": "Liburuak asko",
+      "audio": "unidades/u9/liburuak-asko.mp3"
+    },
+    {
+      "eu": "diru gutxi dut",
+      "audio": "unidades/u9/diru-gutxi-dut.mp3"
     }
   ]
 }

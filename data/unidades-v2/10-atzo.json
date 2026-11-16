@@ -3583,6 +3583,26 @@
     {
       "eu": "Hark bi sagar erosi zituen.",
       "audio": "unidades/u10/hark-bi-sagar-erosi-zituen.mp3"
+    },
+    {
+      "eu": "ikasten hasi naiz",
+      "audio": "unidades/u10/ikasten-hasi-naiz.mp3"
+    },
+    {
+      "eu": "euskara ikasten hasi naiz",
+      "audio": "unidades/u10/euskara-ikasten-hasi-naiz.mp3"
+    },
+    {
+      "eu": "lanean hasi da",
+      "audio": "unidades/u10/lanean-hasi-da.mp3"
+    },
+    {
+      "eu": "liburua hasi dut",
+      "audio": "unidades/u10/liburua-hasi-dut.mp3"
+    },
+    {
+      "eu": "irakurtzen hasi naiz",
+      "audio": "unidades/u10/irakurtzen-hasi-naiz.mp3"
     }
   ]
 }

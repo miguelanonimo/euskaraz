@@ -309,6 +309,7 @@
       "eu": "denek",
       "es": "todos (cuando hacen algo)",
       "nota": "«Denak» con la -k de quien hace: «denek euskara ikasten dute».",
+      "audio": "unidades/u12/denek.mp3",
       "categoria": "otros",
       "subnivel": "12.3"
     },
@@ -332,6 +333,7 @@
       "eu": "badakit",
       "es": "lo sé",
       "nota": "El contrario de «ez dakit».",
+      "audio": "unidades/u12/badakit.mp3",
       "categoria": "otros",
       "subnivel": "12.1"
     },
@@ -339,6 +341,7 @@
       "eu": "badago",
       "es": "hay, sí que hay",
       "nota": "«Badago ogirik? — Bai, badago».",
+      "audio": "unidades/u12/badago.mp3",
       "categoria": "otros",
       "subnivel": "12.1"
     },
@@ -346,6 +349,7 @@
       "eu": "banoa",
       "es": "me voy",
       "nota": null,
+      "audio": "unidades/u12/banoa.mp3",
       "categoria": "otros",
       "subnivel": "12.1"
     },
@@ -353,6 +357,7 @@
       "eu": "ados!",
       "es": "¡de acuerdo!",
       "nota": null,
+      "audio": "unidades/u12/ados.mp3",
       "categoria": "otros",
       "subnivel": "12.1"
     },
@@ -360,6 +365,7 @@
       "eu": "ederki",
       "es": "¡muy bien!, ¡estupendo!",
       "nota": null,
+      "audio": "unidades/u12/ederki.mp3",
       "categoria": "otros",
       "subnivel": "12.1"
     },
@@ -367,6 +373,7 @@
       "eu": "primeran",
       "es": "¡genial!",
       "nota": "De la calle, entre amigos.",
+      "audio": "unidades/u12/primeran.mp3",
       "categoria": "otros",
       "subnivel": "12.1"
     },
@@ -374,6 +381,7 @@
       "eu": "ezta pentsatu ere!",
       "es": "¡ni pensarlo!, ¡ni hablar!",
       "nota": null,
+      "audio": "unidades/u12/ezta-pentsatu-ere.mp3",
       "categoria": "otros",
       "subnivel": "12.1"
     },
@@ -381,6 +389,7 @@
       "eu": "bai zera!",
       "es": "¡qué va!",
       "nota": "Empieza por «bai» y es una negativa rotunda.",
+      "audio": "unidades/u12/bai-zera.mp3",
       "categoria": "otros",
       "subnivel": "12.1"
     },
@@ -388,6 +397,7 @@
       "eu": "badator",
       "es": "ya viene",
       "nota": null,
+      "audio": "unidades/u12/badator.mp3",
       "categoria": "verbo",
       "subnivel": "12.1"
     },
@@ -2873,6 +2883,38 @@
     {
       "eu": "euskara zaila al da",
       "audio": "unidades/u12/euskara-zaila-al-da.mp3"
+    },
+    {
+      "eu": "Euskara ikasten al duzu?",
+      "audio": "unidades/u12/euskara-ikasten-al-duzu.mp3"
+    },
+    {
+      "eu": "Badago ogirik?",
+      "audio": "unidades/u12/badago-ogirik.mp3"
+    },
+    {
+      "eu": "Bai, badago.",
+      "audio": "unidades/u12/bai-badago.mp3"
+    },
+    {
+      "eu": "Ez, ez dago.",
+      "audio": "unidades/u12/ez-ez-dago.mp3"
+    },
+    {
+      "eu": "ez, eskerrik asko",
+      "audio": "unidades/u12/ez-eskerrik-asko.mp3"
+    },
+    {
+      "eu": "Uno: ez dago inor",
+      "audio": "unidades/u12/uno-ez-dago-inor.mp3"
+    },
+    {
+      "eu": "ez dago",
+      "audio": "unidades/u12/ez-dago.mp3"
+    },
+    {
+      "eu": "¡Ni pensarlo!",
+      "audio": "unidades/u12/ni-pensarlo.mp3"
     }
   ]
 }

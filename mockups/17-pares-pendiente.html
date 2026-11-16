@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<title>Mockup · 17-pares-pendiente</title>
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+  .mockup-tag{
+    position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+    background: #111; color: #fff; font: 12px/1.4 monospace;
+    padding: 4px 10px; text-align: center;
+  }
+  body{ padding-top: 22px; }
+</style>
+</head>
+<body>
+<div class="mockup-tag">Parejas · nada tocado todavía</div>
+
+<div id="app">
+  <header class="topbar" id="topbar">
+    <button class="topbar__back" id="btnBack" aria-label="Volver"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="topbar__mid">
+      <span class="topbar__title">Práctica · 2. Los pronombres</span>
+      <div class="progressbar"><div class="progressbar__fill" style="width:35%"></div></div>
+    </div>
+    <div class="topbar__right"><span class="hearts"><b>3</b>/9</span></div>
+  </header>
+
+  <main class="screen screen--quiz" id="screenQuiz">
+    <div class="quiz" id="quizContent">
+<p class="q__inst">Toca las parejas</p><h2 class="q__prompt q__prompt--es">Toca las parejas</h2><div class="pairs"><div class="paircol" id="colEu"><button class="pair pair--eu" type="button" aria-pressed="false" data-i="0">
+      <span class="pair__txt">Bilbo</span>
+      <span class="pair__play" data-play="1" aria-label="Escuchar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg></span>
+    </button><button class="pair pair--eu" type="button" aria-pressed="false" data-i="1">
+      <span class="pair__txt">ikasle</span>
+      <span class="pair__play" data-play="1" aria-label="Escuchar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg></span>
+    </button><button class="pair pair--eu" type="button" aria-pressed="false" data-i="2">
+      <span class="pair__txt">irakasle</span>
+      <span class="pair__play" data-play="1" aria-label="Escuchar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg></span>
+    </button><button class="pair pair--eu" type="button" aria-pressed="false" data-i="3">
+      <span class="pair__txt">lagun</span>
+      <span class="pair__play" data-play="1" aria-label="Escuchar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg></span>
+    </button></div><div class="paircol" id="colEs"><button class="pair pair--es" type="button" aria-pressed="false" data-i="0">profesor/a</button><button class="pair pair--es" type="button" aria-pressed="false" data-i="1">amigo/a</button><button class="pair pair--es" type="button" aria-pressed="false" data-i="2">Bilbao</button><button class="pair pair--es" type="button" aria-pressed="false" data-i="3">alumno/a</button></div></div>
+    </div>
+  </main>
+
+  <div class="feedback" id="feedback" hidden aria-live="polite"></div>
+
+  
+</div>
+</body>
+</html>

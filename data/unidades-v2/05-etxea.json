@@ -572,6 +572,7 @@
       "eu": "gaude",
       "es": "(nosotros) estamos",
       "nota": null,
+      "audio": "unidades/u6/gaude.mp3",
       "categoria": "verbo",
       "subnivel": "5.1"
     },
@@ -579,6 +580,7 @@
       "eu": "zaudete",
       "es": "(vosotros) estáis",
       "nota": null,
+      "audio": "unidades/u6/zaudete.mp3",
       "categoria": "verbo",
       "subnivel": "5.1"
     },
@@ -682,6 +684,7 @@
       "eu": "nolakoa?",
       "es": "¿cómo es?",
       "nota": "Pregunta cómo es algo. «Nola?» pregunta cómo está o cómo se hace.",
+      "audio": "unidades/u5/nolakoa.mp3",
       "categoria": "otros",
       "subnivel": "5.3"
     },
@@ -689,6 +692,7 @@
       "eu": "ederra",
       "es": "hermoso, hermosa",
       "nota": "Lo contrario de «itsusia».",
+      "audio": "unidades/u5/ederra.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.3"
     },
@@ -840,6 +844,7 @@
       "eu": "gainean",
       "es": "encima",
       "nota": "Va detrás del nombre, que se queda sin artículo: «mahai gainean», encima de la mesa.",
+      "audio": "unidades/u5/gainean.mp3",
       "categoria": "otros",
       "subnivel": "5.2"
     },
@@ -847,6 +852,7 @@
       "eu": "azpian",
       "es": "debajo",
       "nota": "«Ohe azpian», debajo de la cama.",
+      "audio": "unidades/u5/azpian.mp3",
       "categoria": "otros",
       "subnivel": "5.2"
     },
@@ -854,6 +860,7 @@
       "eu": "ondoan",
       "es": "al lado",
       "nota": "«Ate ondoan», al lado de la puerta.",
+      "audio": "unidades/u5/ondoan.mp3",
       "categoria": "otros",
       "subnivel": "5.2"
     },
@@ -861,6 +868,7 @@
       "eu": "aurrean",
       "es": "delante",
       "nota": "«Etxe aurrean», delante de casa.",
+      "audio": "unidades/u5/aurrean.mp3",
       "categoria": "otros",
       "subnivel": "5.2"
     },
@@ -868,6 +876,7 @@
       "eu": "atzean",
       "es": "detrás",
       "nota": "«Zure atzean», detrás de ti.",
+      "audio": "unidades/u5/atzean.mp3",
       "categoria": "otros",
       "subnivel": "5.2"
     },
@@ -875,6 +884,7 @@
       "eu": "barruan",
       "es": "dentro",
       "nota": "«Armairu barruan», dentro del armario.",
+      "audio": "unidades/u5/barruan.mp3",
       "categoria": "otros",
       "subnivel": "5.2"
     },
@@ -882,6 +892,7 @@
       "eu": "igo",
       "es": "subir",
       "nota": "De ahí «igogailua», el ascensor: el aparato de subir.",
+      "audio": "unidades/u5/igo.mp3",
       "categoria": "verbo",
       "subnivel": "5.2"
     },
@@ -983,6 +994,7 @@
       "eu": "pozik",
       "es": "contento, contenta",
       "nota": "Con «egon» y sin artículo: «pozik nago».",
+      "audio": "unidades/u5/pozik.mp3",
       "categoria": "otros",
       "subnivel": "5.6"
     },
@@ -990,6 +1002,7 @@
       "eu": "triste",
       "es": "triste",
       "nota": null,
+      "audio": "unidades/u5/triste.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.6"
     },
@@ -997,6 +1010,7 @@
       "eu": "lasai",
       "es": "tranquilo, tranquila",
       "nota": null,
+      "audio": "unidades/u5/lasai.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.6"
     },
@@ -1004,6 +1018,7 @@
       "eu": "urduri",
       "es": "nervioso, nerviosa",
       "nota": "«Urduri nago», estoy nervioso; «urduria naiz», soy nervioso.",
+      "audio": "unidades/u5/urduri.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.6"
     },
@@ -1011,6 +1026,7 @@
       "eu": "haserre",
       "es": "enfadado, enfadada",
       "nota": null,
+      "audio": "unidades/u5/haserre.mp3",
       "categoria": "adjetivo",
       "subnivel": "5.6"
     },
@@ -1018,6 +1034,7 @@
       "eu": "nekatuta",
       "es": "cansado, cansada",
       "nota": null,
+      "audio": "unidades/u5/nekatuta.mp3",
       "categoria": "otros",
       "subnivel": "5.6"
     },
@@ -1025,6 +1042,7 @@
       "eu": "kezkatuta",
       "es": "preocupado, preocupada",
       "nota": null,
+      "audio": "unidades/u5/kezkatuta.mp3",
       "categoria": "otros",
       "subnivel": "5.6"
     },
@@ -1032,6 +1050,7 @@
       "eu": "gaixorik",
       "es": "enfermo, enferma",
       "nota": null,
+      "audio": "unidades/u5/gaixorik.mp3",
       "categoria": "otros",
       "subnivel": "5.6"
     }
@@ -5082,6 +5101,118 @@
     {
       "eu": "etxe berri bat",
       "audio": "unidades/u5/etxe-berri-bat.mp3"
+    },
+    {
+      "eu": "nolakoa da?",
+      "audio": "unidades/u5/nolakoa-da.mp3"
+    },
+    {
+      "eu": "Handia da.",
+      "audio": "unidades/u5/handia-da.mp3"
+    },
+    {
+      "eu": "Nolakoak dira?",
+      "audio": "unidades/u5/nolakoak-dira.mp3"
+    },
+    {
+      "eu": "Txikiak dira.",
+      "audio": "unidades/u5/txikiak-dira.mp3"
+    },
+    {
+      "eu": "Etxe polita da.",
+      "audio": "unidades/u5/etxe-polita-da.mp3"
+    },
+    {
+      "eu": "Txakur handia da.",
+      "audio": "unidades/u5/txakur-handia-da.mp3"
+    },
+    {
+      "eu": "mahai gainean",
+      "audio": "unidades/u5/mahai-gainean.mp3"
+    },
+    {
+      "eu": "ohe azpian",
+      "audio": "unidades/u5/ohe-azpian.mp3"
+    },
+    {
+      "eu": "ate ondoan",
+      "audio": "unidades/u5/ate-ondoan.mp3"
+    },
+    {
+      "eu": "armairu barruan",
+      "audio": "unidades/u5/armairu-barruan.mp3"
+    },
+    {
+      "eu": "zure atzean",
+      "audio": "unidades/u5/zure-atzean.mp3"
+    },
+    {
+      "eu": "kezkatuta",
+      "audio": "unidades/u5/kezkatuta.mp3"
+    },
+    {
+      "eu": "pozik nago",
+      "audio": "unidades/u5/pozik-nago.mp3"
+    },
+    {
+      "eu": "haserre zaude?",
+      "audio": "unidades/u5/haserre-zaude.mp3"
+    },
+    {
+      "eu": "lasai gaude",
+      "audio": "unidades/u5/lasai-gaude.mp3"
+    },
+    {
+      "eu": "urduri nago",
+      "audio": "unidades/u5/urduri-nago.mp3"
+    },
+    {
+      "eu": "urduria naiz",
+      "audio": "unidades/u5/urduria-naiz.mp3"
+    },
+    {
+      "eu": "Katu bat",
+      "audio": "unidades/u5/katu-bat.mp3"
+    },
+    {
+      "eu": "mahai azpian",
+      "audio": "unidades/u5/mahai-azpian.mp3"
+    },
+    {
+      "eu": "nolakoa da zure etxea",
+      "audio": "unidades/u5/nolakoa-da-zure-etxea.mp3"
+    },
+    {
+      "eu": "nekatuta nago",
+      "audio": "unidades/u5/nekatuta-nago.mp3"
+    },
+    {
+      "eu": "Tristea nago",
+      "audio": "unidades/u5/tristea-nago.mp3"
+    },
+    {
+      "eu": "Katu bat daukat.",
+      "audio": "unidades/u5/katu-bat-daukat.mp3"
+    },
+    {
+      "eu": "etxe aurrean",
+      "audio": "unidades/u5/etxe-aurrean.mp3"
+    },
+    {
+      "eu": "katua ohe azpian dago",
+      "audio": "unidades/u5/katua-ohe-azpian-dago.mp3"
+    },
+    {
+      "eu": "telebista mahai gainean dago",
+      "audio": "unidades/u5/telebista-mahai-gainean-dago.mp3"
+    },
+    {
+      "eu": "nire ondoan",
+      "audio": "unidades/u5/nire-ondoan.mp3"
+    },
+    {
+      "eu": "oso nekatuta nago",
+      "audio": "unidades/u5/oso-nekatuta-nago.mp3"
     }
   ]
 }

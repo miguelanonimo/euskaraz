@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<title>Mockup · 21-orden-pendiente</title>
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+  .mockup-tag{
+    position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+    background: #111; color: #fff; font: 12px/1.4 monospace;
+    padding: 4px 10px; text-align: center;
+  }
+  body{ padding-top: 22px; }
+</style>
+</head>
+<body>
+<div class="mockup-tag">Ordenar · bolsa completa, nada colocado</div>
+
+<div id="app">
+  <header class="topbar" id="topbar">
+    <button class="topbar__back" id="btnBack" aria-label="Volver"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="topbar__mid">
+      <span class="topbar__title">Práctica · 2. Los pronombres</span>
+      <div class="progressbar"><div class="progressbar__fill" style="width:35%"></div></div>
+    </div>
+    <div class="topbar__right"><span class="hearts"><b>3</b>/9</span></div>
+  </header>
+
+  <main class="screen screen--quiz" id="screenQuiz">
+    <div class="quiz" id="quizContent">
+<p class="q__inst">Ordena la frase</p><h2 class="q__prompt q__prompt--es">Mi amigo es profesor.</h2><div class="build" id="build"></div><div class="bank" id="bank"><button class="chip" type="button" data-p="Nire" data-k="0">Nire</button><button class="chip" type="button" data-p="laguna" data-k="1">laguna</button><button class="chip" type="button" data-p="irakaslea" data-k="2">irakaslea</button><button class="chip" type="button" data-p="da" data-k="3">da</button><button class="chip" type="button" data-p="zara" data-k="4">zara</button></div>
+    </div>
+  </main>
+
+  <div class="feedback" id="feedback" hidden aria-live="polite"></div>
+
+  <div class="actionbar" id="actionbar">
+    <button class="btn btn--primary" id="btnCheck" disabled>Comprobar</button>
+  </div>
+</div>
+</body>
+</html>

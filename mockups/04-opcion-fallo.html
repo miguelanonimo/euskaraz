@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5">
+<title>Mockup · 04-opcion-fallo</title>
+<link rel="stylesheet" href="../css/styles.css">
+<style>
+  /* Solo para el mockup: la barra de arriba con el nombre de la variante */
+  .mockup-tag{
+    position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+    background: #111; color: #fff; font: 12px/1.4 monospace;
+    padding: 4px 10px; text-align: center;
+  }
+  body{ padding-top: 22px; }
+</style>
+</head>
+<body>
+<div class="mockup-tag">Escuchar + opción · palabra suelta · corregido, fallo</div>
+
+<div id="app">
+
+  <header class="topbar" id="topbar">
+    <button class="topbar__back" id="btnBack" aria-label="Volver">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="topbar__mid">
+      <span class="topbar__title">Práctica · 2. Los pronombres</span>
+      <div class="progressbar">
+        <div class="progressbar__fill" style="width:35%"></div>
+      </div>
+    </div>
+    <div class="topbar__right">
+      <span class="hearts"><b>3</b>/9</span>
+    </div>
+  </header>
+
+  <main class="screen screen--quiz" id="screenQuiz">
+    <div class="quiz" id="quizContent">
+<p class="q__inst">Vocabulario · escucha y elige qué significa</p>
+      <button class="escuchar" type="button" aria-label="Escuchar la palabra">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z"/><path d="M16 8a5 5 0 010 8"/></svg>
+        <span>Escuchar</span>
+      </button>
+      <div class="opts" id="opts"><button class="opt" type="button" aria-pressed="false" disabled><span class="opt__key">A</span><span>Contigo</span></button><button class="opt is-ok" type="button" aria-pressed="false" disabled><span class="opt__key">B</span><span>Conmigo</span></button><button class="opt is-mal" type="button" aria-pressed="false" disabled><span class="opt__key">C</span><span>Con él/ella</span></button><button class="opt" type="button" aria-pressed="false" disabled><span class="opt__key">D</span><span>Con nosotros</span></button></div>
+    </div>
+  </main>
+
+  <div class="feedback is-mal-fb" aria-live="polite">
+    <div class="feedback__inner">
+      <div class="feedback__head">
+        <span class="feedback__icon" aria-hidden="true">&#10007;</span>
+        <span class="feedback__title">No exactamente</span>
+      </div>
+      <p class="feedback__body"><span class="sol">Conmigo</span></p>
+      <button class="btn btn--feedback" id="feedbackNext">Continuar</button>
+    </div>
+  </div>
+
+  <div class="actionbar" id="actionbar" hidden>
+    <button class="btn btn--primary" id="btnCheck">Comprobar</button>
+  </div>
+
+</div>
+</body>
+</html>
