@@ -662,6 +662,13 @@
       "subnivel": "4.1"
     },
     {
+      "eu": "Zazpikaleak",
+      "es": "el Casco Viejo de Bilbao",
+      "nota": "«Zazpi kale» más el artículo: las Siete Calles. Así se llama su parada de metro.",
+      "categoria": "sustantivo",
+      "subnivel": "4.1"
+    },
+    {
       "eu": "dut",
       "es": "(yo) tengo",
       "nota": null,
@@ -926,6 +933,90 @@
       "subnivel": "4.6"
     },
     {
+      "eu": "anai-arrebak",
+      "es": "los hermanos, hermanos y hermanas",
+      "nota": "Los dos sexos juntos.",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "seme-alabak",
+      "es": "los hijos, hijos e hijas",
+      "nota": "Cuando hay chicos y chicas. «Semeak», a secas, son solo los hijos varones.",
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "aitona-amonak",
+      "es": "los abuelos, abuelo y abuela",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "osaba-izebak",
+      "es": "los tíos, tío y tía",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "senar-emazteak",
+      "es": "el matrimonio, marido y mujer",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "norena?",
+      "es": "¿de quién es?",
+      "nota": "«Noren» con el artículo, cuando no hay nombre detrás.",
+      "categoria": "otros",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "nirea",
+      "es": "el mío, la mía",
+      "nota": "«Nire» con el artículo: «hau nirea da», esto es mío. Sin -n: «nirena» no existe.",
+      "categoria": "otros",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "zurea",
+      "es": "el tuyo, la tuya",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "harena",
+      "es": "el suyo, la suya (de él, de ella)",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "gurea",
+      "es": "el nuestro, la nuestra",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "zuena",
+      "es": "el vuestro, la vuestra",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.6"
+    },
+    {
+      "eu": "haiena",
+      "es": "el suyo, la suya (de ellos, de ellas)",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "4.6"
+    },
+    {
       "eu": "hogeita hamar",
       "es": "treinta",
       "nota": "Veinte y diez.",
@@ -1139,6 +1230,13 @@
       "nota": "No es el tiempo del reloj ni el del cielo: es el rato libre que tienes.",
       "audio": "unidades/u4/astia.mp3",
       "subnivel": "4.5"
+    },
+    {
+      "eu": "nork?",
+      "es": "¿quién? (cuando hace algo)",
+      "nota": "La pregunta de la -k: «Nork du txakurra? — Anek». Da nombre al caso NORK.",
+      "categoria": "otros",
+      "subnivel": "4.7"
     }
   ],
   "ejercicios": [
@@ -6058,7 +6156,8 @@
             "alaba"
           ],
           "correcta": 2,
-          "explicacion": "Hay de los dos, así que se nombran los dos. Y detrás del número, sin artículo ni plural."
+          "explicacion": "Hay de los dos, así que se nombran los dos. Y detrás del número, sin artículo ni plural.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -6151,7 +6250,8 @@
             "Norena"
           ],
           "correcta": 3,
-          "explicacion": "También la pregunta lleva su artículo cuando no hay nombre detrás: norena."
+          "explicacion": "También la pregunta lleva su artículo cuando no hay nombre detrás: norena.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

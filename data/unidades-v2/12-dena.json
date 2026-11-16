@@ -310,6 +310,27 @@
       "subnivel": "12.1"
     },
     {
+      "eu": "badakit",
+      "es": "lo sé",
+      "nota": "El contrario de «ez dakit».",
+      "categoria": "otros",
+      "subnivel": "12.1"
+    },
+    {
+      "eu": "badago",
+      "es": "hay, sí que hay",
+      "nota": "«Badago ogirik? — Bai, badago».",
+      "categoria": "otros",
+      "subnivel": "12.1"
+    },
+    {
+      "eu": "banoa",
+      "es": "me voy",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "12.1"
+    },
+    {
       "eu": "-lako",
       "es": "porque",
       "nota": "Se pega al verbo: «euskalduna naizelako».",
@@ -2461,7 +2482,8 @@
             "badakit"
           ],
           "correcta": 1,
-          "explicacion": "Afirmas el verbo mismo, y va solo: badago."
+          "explicacion": "Afirmas el verbo mismo, y va solo: badago.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2474,7 +2496,8 @@
             "ez dago"
           ],
           "correcta": 3,
-          "explicacion": "Con «ez» delante el verbo ya tiene apoyo, y el ba- desaparece."
+          "explicacion": "Con «ez» delante el verbo ya tiene apoyo, y el ba- desaparece.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

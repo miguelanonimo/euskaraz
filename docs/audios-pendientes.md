@@ -1,6 +1,6 @@
 # Audios pendientes — para Miguel
 
-## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v141): 121 frases sin audio
+## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v147): 121 frases sin audio
 
 Ric y Claude repasaron la gramática del curso contra los «Errores típicos» de la
 *Gramática didáctica* de Zubiri y salieron veinticinco fichas nuevas. Los ejemplos van
@@ -149,9 +149,58 @@ Lo que va a generar:
 | 12.1 | Bai, badago. | Sí, hay |
 | 12.1 | Ez, ez dago. | No, no hay |
 
-**Vocabulario que quizá merezca entrar en el Diccionario** (decisión de Ric; hoy solo
-vive en las fichas): *gose*, *egarri* (7.5) y las seis palabras de sitio de 5.2
-—*gainean, azpian, ondoan, aurrean, atzean, barruan*—.
+**Y 38 palabras nuevas en el Diccionario, sin audio** (v147). Ric ha fijado la norma: todo lo que
+entra en el curso entra también en el Diccionario. Son las que estrenaron estas fichas.
+Mientras no tengan mp3 se ven y se practican, pero no suenan. Antes de lo de arriba:
+
+```
+node generar-faltantes.mjs --seco    # tienen que salir estas 38
+node generar-faltantes.mjs
+```
+
+Conviene correr este primero: varias coinciden con frases de ficha («gose naiz») y así
+`generar-cuerpos.mjs` las enlaza en vez de generarlas dos veces.
+
+| Tema | Palabra | Traducción |
+|---|---|---|
+| 4.1 | Zazpikaleak | el Casco Viejo de Bilbao |
+| 4.6 | anai-arrebak | los hermanos, hermanos y hermanas |
+| 4.6 | seme-alabak | los hijos, hijos e hijas |
+| 4.6 | aitona-amonak | los abuelos, abuelo y abuela |
+| 4.6 | osaba-izebak | los tíos, tío y tía |
+| 4.6 | senar-emazteak | el matrimonio, marido y mujer |
+| 4.6 | norena? | ¿de quién es? |
+| 4.6 | nirea | el mío, la mía |
+| 4.6 | zurea | el tuyo, la tuya |
+| 4.6 | harena | el suyo, la suya (de él, de ella) |
+| 4.6 | gurea | el nuestro, la nuestra |
+| 4.6 | zuena | el vuestro, la vuestra |
+| 4.6 | haiena | el suyo, la suya (de ellos, de ellas) |
+| 4.7 | nork? | ¿quién? (cuando hace algo) |
+| 5.3 | nolakoa? | ¿cómo es? |
+| 5.2 | gainean | encima |
+| 5.2 | azpian | debajo |
+| 5.2 | ondoan | al lado |
+| 5.2 | aurrean | delante |
+| 5.2 | atzean | detrás |
+| 5.2 | barruan | dentro |
+| 6.2 | behin | una vez |
+| 7.1 | honek | este (cuando hace algo) |
+| 7.1 | horrek | ese (cuando hace algo) |
+| 7.5 | kiloa | el kilo |
+| 7.5 | litroa | el litro |
+| 7.5 | botila | la botella |
+| 7.5 | beste bat | otro, otra |
+| 7.5 | bestea | el otro, la otra |
+| 7.5 | gose naiz | tengo hambre |
+| 7.5 | egarri naiz | tengo sed |
+| 7.5 | logura naiz | tengo sueño |
+| 7.5 | hotz naiz | tengo frío |
+| 7.5 | bero naiz | tengo calor |
+| 9.1 | nori? | ¿a quién? |
+| 12.1 | badakit | lo sé |
+| 12.1 | badago | hay, sí que hay |
+| 12.1 | banoa | me voy |
 
 De paso: en la ficha de bizkaiera del tema 6.2 se quitó la frase «barikuan gabean»,
 que no apareció en ninguna fuente (Labayru da «zapatu arratsaldean», con el día sin
