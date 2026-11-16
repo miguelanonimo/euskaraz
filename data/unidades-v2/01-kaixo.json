@@ -539,6 +539,27 @@
       "audio": "unidades/u1/nafarroa.mp3",
       "categoria": "sustantivo",
       "subnivel": "1.3"
+    },
+    {
+      "eu": "bizkaiera",
+      "es": "el dialecto de Bizkaia",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "1.3"
+    },
+    {
+      "eu": "euskal",
+      "es": "vasco, del euskera (delante de un nombre)",
+      "nota": "Va pegado al nombre y sin artículo: «Euskal Herria».",
+      "categoria": "otros",
+      "subnivel": "1.3"
+    },
+    {
+      "eu": "jaso",
+      "es": "recoger, levantar",
+      "nota": "La «j» suena «y»: «yaso».",
+      "categoria": "verbo",
+      "subnivel": "1.4"
     }
   ],
   "ejercicios": [

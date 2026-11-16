@@ -152,7 +152,7 @@
     },
     {
       "titulo": "«Me gusta» no funciona como en castellano… o sí",
-      "cuerpo": "En castellano no dices «yo gusto el euskera»: dices <b>me gusta el euskera</b>. El que gusta es el euskera, y tú eres el «me».\n\nEl euskera hace exactamente lo mismo:\n\n<b>Niri euskara gustatzen zait.</b>\n\n<i>euskara</i> es el sujeto, <i>niri</i> es «a mí», y <b>zait</b> es un auxiliar nuevo que junta las dos cosas: «(él) a mí».\n\nEn clase, ese «a mí» tiene nombre, como los demás casos: es NORI, por la pregunta <i>nori?</i>, ¿a quién? Y a <i>zait</i> y los suyos los llaman verbos NOR-NORI: llevan dentro qué gusta (NOR) y a quién (NORI).\n\nLa serie entera:\n\n<b>niri … zait</b> — me\n<b>zuri … zaizu</b> — te\n<b>hari … zaio</b> — le\n<b>guri … zaigu</b> — nos\n<b>zuei … zaizue</b> — os\n<b>haiei … zaie</b> — les\n\nY como en castellano, el <i>niri</i> se puede callar cuando está claro: <b>Euskara gustatzen zait.</b>",
+      "cuerpo": "En castellano no dices «yo gusto el euskera»: dices <b>me gusta el euskera</b>. El que gusta es el euskera, y tú eres el «me».\n\nEl euskera hace exactamente lo mismo:\n\n<b>Niri euskara gustatzen zait.</b>\n\n<i>euskara</i> es el sujeto, <i>niri</i> es «a mí», y <b>zait</b> es un auxiliar nuevo que junta las dos cosas: «(él) a mí».\n\nEse «a mí» también se llama como su pregunta: es el caso NORI, por <i>nori?</i>, ¿a quién? Y a <i>zait</i> y los suyos se les llama verbos NOR-NORI: llevan dentro qué gusta (NOR) y a quién (NORI).\n\nLa serie entera:\n\n<b>niri … zait</b> — me\n<b>zuri … zaizu</b> — te\n<b>hari … zaio</b> — le\n<b>guri … zaigu</b> — nos\n<b>zuei … zaizue</b> — os\n<b>haiei … zaie</b> — les\n\nY como en castellano, el <i>niri</i> se puede callar cuando está claro: <b>Euskara gustatzen zait.</b>",
       "ejemplos": [
         {
           "eu": "niri kirola gustatzen zait",
@@ -274,7 +274,7 @@
     },
     {
       "titulo": "A quién: la -(r)i de los nombres",
-      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nEstos son los cinco verbos que piden un «a quién», y son los de este tema:\n\n<b>eman</b> — dar\n<b>esan</b> — decir\n<b>galdetu</b> — preguntar\n<b>erantzun</b> — responder\n<b>lagundu</b> — ayudar\n\nTodos ellos hacen algo <i>a alguien</i>, y por eso van con el <b>-ri</b>.\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién). En clase lo llaman NOR-NORI-NORK, por las tres preguntas que lleva dentro:\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>liburua eman dit</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
+      "cuerpo": "Los pronombres ya los tienes (<i>niri, zuri, hari…</i>). Con nombres corrientes, «a alguien» se dice con <b>-ri</b> tras vocal y <b>-i</b> tras consonante, siempre después del artículo:\n\n<b>Ane</b> → <b>Aneri</b> — a Ane\n<b>laguna</b> → <b>lagunari</b> — al amigo\n<b>ama</b> → <b>amari</b> — a la madre\n<b>lagunak</b> → <b>lagunei</b> — a los amigos\n\nEstos son los cinco verbos que piden un «a quién», y son los de este tema:\n\n<b>eman</b> — dar\n<b>esan</b> — decir\n<b>galdetu</b> — preguntar\n<b>erantzun</b> — responder\n<b>lagundu</b> — ayudar\n\nTodos ellos hacen algo <i>a alguien</i>, y por eso van con el <b>-ri</b>.\n\nY con verbos de dar y decir aparece otro auxiliar, que junta las tres cosas (quién, qué y a quién). Se le llama NOR-NORI-NORK, por las tres preguntas que lleva dentro:\n\n<b>dit</b> — me lo\n<b>dizu</b> — te lo\n<b>dio</b> — se lo (a él)\n<b>digu</b> — nos lo\n<b>dizue</b> — os lo\n<b>die</b> — se lo (a ellos)\n\n<b>liburua eman dit</b> — Me ha dado el libro.\n<b>Aneri liburua eman dio</b> — Le ha dado el libro a Ane.\n\nNo hace falta que lo domines hoy. Basta con reconocerlo cuando lo oigas.",
       "ejemplos": [
         {
           "eu": "Aneri esan dio",
@@ -525,6 +525,20 @@
       "subnivel": "9.5"
     },
     {
+      "eu": "norentzat?",
+      "es": "¿para quién?",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "9.5"
+    },
+    {
+      "eu": "niretzat",
+      "es": "para mí",
+      "nota": "Sin -n: no «nirentzat».",
+      "categoria": "otros",
+      "subnivel": "9.5"
+    },
+    {
       "eu": "txapelduna",
       "es": "el campeón / la campeona",
       "nota": null,
@@ -709,6 +723,62 @@
       "subnivel": "9.2"
     },
     {
+      "eu": "gertatzen zait",
+      "es": "me pasa",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "ahaztu zait",
+      "es": "se me ha olvidado",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "dit",
+      "es": "me lo (da, dice…)",
+      "nota": "El auxiliar de dar y decir: «eman dit», me lo ha dado.",
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "dizu",
+      "es": "te lo (da, dice…)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "dio",
+      "es": "se lo (a él, a ella)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "digu",
+      "es": "nos lo (da, dice…)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "dizue",
+      "es": "os lo (da, dice…)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
+      "eu": "die",
+      "es": "se lo (a ellos, a ellas)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.2"
+    },
+    {
       "eu": "kirola",
       "es": "el deporte",
       "nota": null,
@@ -757,6 +827,20 @@
       "subnivel": "9.4"
     },
     {
+      "eu": "pilotalekua",
+      "es": "el frontón",
+      "nota": "«Pilota» + «leku» (sitio): el sitio de la pelota.",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
+      "eu": "frontoia",
+      "es": "el frontón (la palabra prestada)",
+      "nota": "Vale igual que «pilotalekua».",
+      "categoria": "sustantivo",
+      "subnivel": "9.4"
+    },
+    {
       "eu": "janaria",
       "es": "la comida (en general)",
       "nota": "«bazkaria» es la del mediodía; «janaria», la comida como sustancia.",
@@ -801,6 +885,90 @@
       "es": "¿a quién?",
       "nota": "Da nombre al caso NORI: «niri», «zuri», «Aneri».",
       "categoria": "otros",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zait",
+      "es": "me (gusta, parece…)",
+      "nota": "El auxiliar de «gustatzen zait». Va con «niri».",
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaizu",
+      "es": "te (gusta, parece…)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaio",
+      "es": "le (gusta, parece…)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaigu",
+      "es": "nos (gusta, parece…)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaizue",
+      "es": "os (gusta, parece…)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaie",
+      "es": "les (gusta, parece…)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaizkit",
+      "es": "me gustan",
+      "nota": "Cuando lo que gusta son varias cosas.",
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaizkizu",
+      "es": "te gustan",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaizkio",
+      "es": "le gustan",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaizkigu",
+      "es": "nos gustan",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaizkizue",
+      "es": "os gustan",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "9.1"
+    },
+    {
+      "eu": "zaizkie",
+      "es": "les gustan",
+      "nota": null,
+      "categoria": "verbo",
       "subnivel": "9.1"
     },
     {
@@ -898,6 +1066,20 @@
       "audio": "unidades/u9/gorputza.mp3",
       "categoria": "sustantivo",
       "subnivel": "9.3"
+    },
+    {
+      "eu": "eskuz",
+      "es": "a mano",
+      "nota": "«Esku» (mano) más la -z de «por medio de».",
+      "categoria": "otros",
+      "subnivel": "9.3"
+    },
+    {
+      "eu": "buruz",
+      "es": "de memoria",
+      "nota": "«Buru» (cabeza) más la -z: «buruz dakit», me lo sé de memoria.",
+      "categoria": "otros",
+      "subnivel": "9.3"
     }
   ],
   "ejercicios": [
@@ -929,7 +1111,8 @@
             "zaie"
           ],
           "correcta": 1,
-          "explicacion": "«a ti» → zaizu."
+          "explicacion": "«a ti» → zaizu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -956,7 +1139,8 @@
             "zaie"
           ],
           "correcta": 1,
-          "explicacion": "«a nosotros» → zaigu."
+          "explicacion": "«a nosotros» → zaigu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -969,7 +1153,8 @@
             "zaio"
           ],
           "correcta": 2,
-          "explicacion": "«a ellos» → zaie."
+          "explicacion": "«a ellos» → zaie.",
+          "teclea": true
         }
       ],
       "subnivel": "9.5",
@@ -1003,7 +1188,8 @@
             "zaie"
           ],
           "correcta": 1,
-          "explicacion": "Singular → zait."
+          "explicacion": "Singular → zait.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1016,7 +1202,8 @@
             "zaizkie"
           ],
           "correcta": 1,
-          "explicacion": "«a ti» + plural = zaizkizu."
+          "explicacion": "«a ti» + plural = zaizkizu.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1029,7 +1216,8 @@
             "zaie"
           ],
           "correcta": 1,
-          "explicacion": "«a él» + plural = zaizkio."
+          "explicacion": "«a él» + plural = zaizkio.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1042,7 +1230,8 @@
             "zaizkizue"
           ],
           "correcta": 1,
-          "explicacion": "«a nosotros» + plural = zaizkigu."
+          "explicacion": "«a nosotros» + plural = zaizkigu.",
+          "teclea": true
         }
       ],
       "subnivel": "9.3",
@@ -1657,7 +1846,8 @@
             "zait"
           ],
           "correcta": 1,
-          "explicacion": "«a mí» con objeto → dit."
+          "explicacion": "«a mí» con objeto → dit.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1670,7 +1860,8 @@
             "zaio"
           ],
           "correcta": 2,
-          "explicacion": "Él, a ella → dio."
+          "explicacion": "Él, a ella → dio.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -1696,7 +1887,8 @@
             "zaigu"
           ],
           "correcta": 1,
-          "explicacion": "Él, a nosotros → digu."
+          "explicacion": "Él, a nosotros → digu.",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -1709,7 +1901,8 @@
             "zaio"
           ],
           "correcta": 2,
-          "explicacion": "Él, a él → dio."
+          "explicacion": "Él, a él → dio.",
+          "teclea": true
         }
       ],
       "subnivel": "9.2"
@@ -1767,7 +1960,8 @@
             "dut"
           ],
           "correcta": 1,
-          "explicacion": "dit → deust (o dost)."
+          "explicacion": "dit → deust (o dost).",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -3492,7 +3686,8 @@
             "Zer da?"
           ],
           "correcta": 1,
-          "explicacion": "-entzat es «para»: norentzat, para quién. «Nor da?» sería «¿quién es?»."
+          "explicacion": "-entzat es «para»: norentzat, para quién. «Nor da?» sería «¿quién es?».",
+          "teclea": true
         },
         {
           "tipo": "pares",

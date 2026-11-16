@@ -589,6 +589,27 @@
       "subnivel": "6.1"
     },
     {
+      "eu": "gauerdia",
+      "es": "la medianoche",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "6.1"
+    },
+    {
+      "eu": "ordu batean",
+      "es": "a la una",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "6.1"
+    },
+    {
+      "eu": "ordu bietan",
+      "es": "a las dos",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "6.1"
+    },
+    {
       "eu": "etzi",
       "es": "pasado mañana",
       "nota": null,
@@ -659,6 +680,41 @@
       "eu": "behin",
       "es": "una vez",
       "nota": "«Astean behin», una vez a la semana.",
+      "categoria": "otros",
+      "subnivel": "6.2"
+    },
+    {
+      "eu": "goizean",
+      "es": "por la mañana",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "6.2"
+    },
+    {
+      "eu": "eguerdian",
+      "es": "a mediodía",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "6.2"
+    },
+    {
+      "eu": "arratsaldean",
+      "es": "por la tarde",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "6.2"
+    },
+    {
+      "eu": "iluntzean",
+      "es": "al anochecer",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "6.2"
+    },
+    {
+      "eu": "gauean",
+      "es": "por la noche",
+      "nota": null,
       "categoria": "otros",
       "subnivel": "6.2"
     },
@@ -879,6 +935,13 @@
       "subnivel": "6.4"
     },
     {
+      "eu": "ona",
+      "es": "bueno, buena",
+      "nota": "«Eguraldi ona», buen tiempo.",
+      "categoria": "adjetivo",
+      "subnivel": "6.4"
+    },
+    {
       "eu": "jaiak",
       "es": "las fiestas",
       "nota": "Las de un pueblo. En singular, «jaia» es la fiesta suelta.",
@@ -940,6 +1003,13 @@
       "nota": "Siempre en plural, como en castellano «las vacaciones».",
       "audio": "unidades/u11/oporrak.mp3",
       "categoria": "sustantivo",
+      "subnivel": "6.5"
+    },
+    {
+      "eu": "nagusi",
+      "es": "mayor, principal",
+      "nota": "El de «Aste Nagusia», la Semana Grande.",
+      "categoria": "adjetivo",
       "subnivel": "6.5"
     }
   ],
@@ -1271,7 +1341,8 @@
             "Iluntzea"
           ],
           "correcta": 1,
-          "explicacion": "«eguerdia» = egu (día) + erdi (mitad)."
+          "explicacion": "«eguerdia» = egu (día) + erdi (mitad).",
+          "teclea": true
         }
       ],
       "subnivel": "6.1"
@@ -1824,7 +1895,8 @@
             "bihar"
           ],
           "correcta": 0,
-          "explicacion": "Las dos de la tarde ya son «arratsaldean»."
+          "explicacion": "Las dos de la tarde ya son «arratsaldean».",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -1837,7 +1909,8 @@
             "etzi"
           ],
           "correcta": 1,
-          "explicacion": "«gaur arratsaldean» = esta tarde. Los otros tres no son hoy."
+          "explicacion": "«gaur arratsaldean» = esta tarde. Los otros tres no son hoy.",
+          "teclea": false
         },
         {
           "tipo": "opcion",

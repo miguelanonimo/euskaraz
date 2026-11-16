@@ -124,7 +124,7 @@
     },
     {
       "titulo": "Las cuatro preguntas de lugar, completas",
-      "cuerpo": "Ahora ya puedes cerrar el cuadro que empezaste en la tercera unidad:\n\n<b>Non?</b> (¿dónde?) → <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\nCuatro preguntas, cuatro sufijos, y la respuesta lleva siempre la misma cola que la pregunta.\n\nEn clase, cada pregunta da nombre a su caso, igual que pasaba con NOR y NORK: NON, NORA, NONDIK y NONGO. Si oyes «el caso NORA», es este <i>-ra</i>.\n\nEste sistema de sufijos que encajan unos con otros es el corazón del euskera. Cuando llegues a los casos que faltan (a quién, con quién, para quién), ya sabrás cómo funciona el mecanismo.\n\nY las tres palabras con las que se contesta sin nombrar el sitio:\n\n<b>hemen</b> — aquí\n<b>hor</b> — ahí\n<b>han</b> — allí\n\nSon las hermanas de <i>hau</i>, <i>hori</i> y <i>hura</i>, los demostrativos de la tercera unidad, y van con su mismo criterio: no cuenta la distancia en metros, sino de quién está cerca.\n\n<b>hemen</b> (aquí) ↔ <i>hau</i> (este) — donde estoy yo\n<b>hor</b> (ahí) ↔ <i>hori</i> (ese) — donde estás tú\n<b>han</b> (allí) ↔ <i>hura</i> (aquel) — lejos de los dos\n\nY entran en el mismo cuadro de arriba — <i>hemendik</i> es «desde aquí», <i>hona</i> «hacia aquí».",
+      "cuerpo": "Ahora ya puedes cerrar el cuadro que empezaste en la tercera unidad:\n\n<b>Non?</b> (¿dónde?) → <b>-n</b>: <i>Bilbo<b>n</b></i>, en Bilbao\n<b>Nora?</b> (¿adónde?) → <b>-ra</b>: <i>Bilbo<b>ra</b></i>, a Bilbao\n<b>Nondik?</b> (¿de dónde?) → <b>-tik</b>: <i>Bilbo<b>tik</b></i>, desde Bilbao\n<b>Nongoa?</b> (¿de dónde eres?) → <b>-koa</b>: <i>Bilbo<b>koa</b></i>, de Bilbao\n\nCuatro preguntas, cuatro sufijos, y la respuesta lleva siempre la misma cola que la pregunta.\n\nY cada pregunta da nombre a su caso, igual que pasaba con NOR y NORK: NON, NORA, NONDIK y NONGO. Cuando leas «el caso NORA», es este <i>-ra</i>.\n\nEste sistema de sufijos que encajan unos con otros es el corazón del euskera. Cuando llegues a los casos que faltan (a quién, con quién, para quién), ya sabrás cómo funciona el mecanismo.\n\nY las tres palabras con las que se contesta sin nombrar el sitio:\n\n<b>hemen</b> — aquí\n<b>hor</b> — ahí\n<b>han</b> — allí\n\nSon las hermanas de <i>hau</i>, <i>hori</i> y <i>hura</i>, los demostrativos de la tercera unidad, y van con su mismo criterio: no cuenta la distancia en metros, sino de quién está cerca.\n\n<b>hemen</b> (aquí) ↔ <i>hau</i> (este) — donde estoy yo\n<b>hor</b> (ahí) ↔ <i>hori</i> (ese) — donde estás tú\n<b>han</b> (allí) ↔ <i>hura</i> (aquel) — lejos de los dos\n\nY entran en el mismo cuadro de arriba — <i>hemendik</i> es «desde aquí», <i>hona</i> «hacia aquí».",
       "ejemplos": [
         {
           "eu": "non zaude? — etxean nago",
@@ -362,11 +362,6 @@
           "eu": "oso ondo nago",
           "es": "Estoy muy bien.",
           "audio": "unidades/u6/oso-ondo-nago.mp3"
-        },
-        {
-          "eu": "gauean beti nekatuta nago",
-          "es": "Por la noche siempre estoy cansado.",
-          "audio": "unidades/u7/gauean-beti-nekatuta-nago.mp3"
         }
       ],
       "subnivel": "5.6"
@@ -566,6 +561,34 @@
       "subnivel": "5.1"
     },
     {
+      "eu": "egon",
+      "es": "estar (el verbo)",
+      "nota": "El de «nago, zaude, dago».",
+      "categoria": "verbo",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "gaude",
+      "es": "(nosotros) estamos",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "zaudete",
+      "es": "(vosotros) estáis",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "5.1"
+    },
+    {
+      "eu": "beren",
+      "es": "su, lo suyo (de ellos mismos)",
+      "nota": "El plural de «bere».",
+      "categoria": "otros",
+      "subnivel": "5.1"
+    },
+    {
       "eu": "gorria",
       "es": "rojo",
       "nota": null,
@@ -658,6 +681,13 @@
       "es": "¿cómo es?",
       "nota": "Pregunta cómo es algo. «Nola?» pregunta cómo está o cómo se hace.",
       "categoria": "otros",
+      "subnivel": "5.3"
+    },
+    {
+      "eu": "ederra",
+      "es": "hermoso, hermosa",
+      "nota": "Lo contrario de «itsusia».",
+      "categoria": "adjetivo",
       "subnivel": "5.3"
     },
     {
@@ -844,6 +874,13 @@
       "es": "dentro",
       "nota": "«Armairu barruan», dentro del armario.",
       "categoria": "otros",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "igo",
+      "es": "subir",
+      "nota": "De ahí «igogailua», el ascensor: el aparato de subir.",
+      "categoria": "verbo",
       "subnivel": "5.2"
     },
     {
@@ -1709,7 +1746,8 @@
             "zaude"
           ],
           "correcta": 1,
-          "explicacion": "Con «zuek» + egon → «zaudete»."
+          "explicacion": "Con «zuek» + egon → «zaudete».",
+          "teclea": true
         },
         {
           "tipo": "opcion",

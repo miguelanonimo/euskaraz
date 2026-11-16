@@ -73,7 +73,7 @@
     },
     {
       "titulo": "«hura» o «bera»: las dos se oyen",
-      "cuerpo": "Junto a <i>hura</i> vas a oír muchísimo <b>bera</b>, que significa lo mismo: él o ella.\n\n<i>Hura</i> es la forma que sale en las tablas y en los libros de texto. <b>Bera</b> es la que sale en la conversación real, y además tiene el matiz de «ese mismo, el que ya hemos mencionado».\n\nEn plural, la pareja es <i>haiek</i> y <b>beraiek</b>.\n\nNo te agobies con la diferencia ahora. Quédate con que si oyes <i>bera</i>, están diciendo «él» o «ella».",
+      "cuerpo": "Junto a <i>hura</i> vas a oír muchísimo <b>bera</b>, que significa lo mismo: él o ella.\n\n<i>Hura</i> es la forma que sale en las tablas y en los libros de texto. <b>Bera</b> es la que sale en la conversación real, y además tiene el matiz de «ese mismo, el que ya hemos mencionado».\n\nEn plural, la pareja es <i>haiek</i> y <b>beraiek</b>: ellos, ellas.\n\nNo te agobies con la diferencia ahora. Quédate con que si oyes <i>bera</i>, están diciendo «él» o «ella».",
       "ejemplos": [
         {
           "eu": "hura / bera",
@@ -629,6 +629,13 @@
       "subnivel": "2.1"
     },
     {
+      "eu": "beraiek",
+      "es": "ellos, ellas (en la conversación)",
+      "nota": "El plural de «bera».",
+      "categoria": "otros",
+      "subnivel": "2.1"
+    },
+    {
       "eu": "nire",
       "es": "mi",
       "nota": null,
@@ -743,6 +750,13 @@
       "subnivel": "2.2"
     },
     {
+      "eu": "zeuek",
+      "es": "vosotros mismos, vosotras mismas",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "2.2"
+    },
+    {
       "eu": "laguna",
       "es": "el/la amigo/a",
       "nota": null,
@@ -811,6 +825,13 @@
       "es": "(ellos) son",
       "nota": null,
       "audio": "unidades/u4/dira.mp3",
+      "categoria": "verbo",
+      "subnivel": "2.3"
+    },
+    {
+      "eu": "izan",
+      "es": "ser (el verbo)",
+      "nota": "El de «naiz, zara, da». También es el auxiliar de «joan naiz».",
       "categoria": "verbo",
       "subnivel": "2.3"
     },

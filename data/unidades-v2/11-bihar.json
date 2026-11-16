@@ -276,6 +276,27 @@
       "subnivel": "11.3"
     },
     {
+      "eu": "onena",
+      "es": "el mejor, la mejor",
+      "nota": "«Ona» es irregular al comparar: «hobea», mejor; «onena», el mejor.",
+      "categoria": "adjetivo",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "txarra",
+      "es": "malo, mala",
+      "nota": "«Txarragoa», peor.",
+      "categoria": "adjetivo",
+      "subnivel": "11.3"
+    },
+    {
+      "eu": "handiena",
+      "es": "el más grande, la más grande",
+      "nota": "«Handi» más -ena, el superlativo.",
+      "categoria": "adjetivo",
+      "subnivel": "11.3"
+    },
+    {
       "eu": "etorkizuna",
       "es": "el futuro",
       "nota": null,
@@ -297,6 +318,27 @@
       "nota": "Ya la tenías; aquí se usa con el futuro.",
       "audio": "unidades/u3/bihar.mp3",
       "categoria": "otros",
+      "subnivel": "11.1"
+    },
+    {
+      "eu": "joango naiz",
+      "es": "iré",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "11.1"
+    },
+    {
+      "eu": "egingo dut",
+      "es": "haré",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "11.1"
+    },
+    {
+      "eu": "beharko dut",
+      "es": "tendré que",
+      "nota": "El -ko va en «behar»: «joan beharko dut».",
+      "categoria": "verbo",
       "subnivel": "11.1"
     }
   ],
@@ -1877,7 +1919,8 @@
             "Berdin"
           ],
           "correcta": 0,
-          "explicacion": "«ona» es irregular: hobea (mejor) y onena (el mejor)."
+          "explicacion": "«ona» es irregular: hobea (mejor) y onena (el mejor).",
+          "teclea": true
         },
         {
           "tipo": "opcion",
