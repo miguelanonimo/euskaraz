@@ -61,6 +61,18 @@
       "subnivel": "9.4"
     },
     {
+      "titulo": "«Me gusta leer»: irakurtzea gustatzen zait",
+      "cuerpo": "Hasta aquí te han gustado cosas: <i>futbola</i>, <i>musika</i>, <i>liburuak</i>. Pero la mitad de lo que a uno le gusta no son cosas, sino <b>hacer algo</b>: leer, bailar, ir al monte. Para eso el verbo tiene que hacer de nombre.\n\nSe consigue con una forma que ya casi tienes. Coge la de la séptima unidad, la de <i>irakurtzen dut</i>, y cámbiale la <b>-n</b> final por una <b>-a</b>:\n\n<i>irakurtzen</i> → <b>irakurtze<u>a</u></b> — leer\n<i>jaten</i> → <b>jate<u>a</u></b> — comer\n<i>ikasten</i> → <b>ikaste<u>a</u></b> — estudiar\n<i>joaten</i> → <b>joate<u>a</u></b> — ir\n\nEsa <b>-a</b> es el artículo de siempre: convierte «leer» en «el leer», y ya puede gustar como gusta la música.\n\n<b>irakurtzea gustatzen zait</b> — Me gusta leer.\n<b>mendira joatea gustatzen zait</b> — Me gusta ir al monte.\n<b>hitz egitea asko gustatzen zaio</b> — Le gusta mucho hablar.\n\nDos cosas en las que se tropieza.\n\nLa primera, dejar el verbo en su forma de diccionario, como en castellano: «irakurri gustatzen zait». Con <i>gustatu</i> no vale. Lo que gusta tiene que ser un nombre, y el verbo solo lo es con su <b>-t(z)ea</b>.\n\nLa segunda, el plural. En <i>liburuak irakurtzea gustatzen zait</i> los libros son varios, pero lo que te gusta es una sola cosa —leerlos—, así que el auxiliar se queda en <b>zait</b> y no pasa a <i>zaizkit</i>.",
+      "ejemplos": [
+        {
+          "eu": "liburuak gustatzen zaizkit",
+          "es": "Me gustan los libros. — Aquí sí en plural: gustan los libros, no el leerlos.",
+          "audio": "unidades/u10/liburuak-gustatzen-zaizkit.mp3"
+        }
+      ],
+      "subnivel": "9.4"
+    },
+    {
       "titulo": "La pilota y el frontón: la plaza del pueblo",
       "cuerpo": "De todo el vocabulario de este tema, <b>pilota</b> —la pelota— es el que más cosas explica.\n\nLa pelota vasca se juega en un <b>pilotalekua</b> —el frontón—, y la palabra se arma igual que las de la unidad anterior: <i>pilota</i> + <i>leku</i> (sitio) + <b>-a</b>. El sitio de la pelota.\n\nVas a oír también <b>frontoia</b>, tomado del castellano. Las dos valen y las dos están en el diccionario; <i>pilotalekua</i> es la formada con piezas vascas, y es la que los diccionarios ponen primero.\n\nLo interesante es que <b>no es solo una cancha</b>. El frontón suele estar en el centro del pueblo, junto a la iglesia y al ayuntamiento, y ha hecho de plaza mayor: sitio de reunión, de fiestas y de mercado. El Gobierno Vasco lo llama «el ágora vasca», y la comparación es literal.\n\nAsí que cuando alguien te diga que ha quedado <i>pilotalekuan</i>, puede que no vaya a jugar a nada.",
       "ejemplos": [
@@ -3994,6 +4006,75 @@
             "niri pilota gustatzen zait"
           ],
           "pista": "Singular, así que «zait»."
+        }
+      ],
+      "subnivel": "9.4"
+    },
+    {
+      "id": "u9-g55",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Me gusta leer. → ____ gustatzen zait.",
+          "opciones": [
+            "Irakurri",
+            "Irakurtzen",
+            "Irakurtzea",
+            "Irakurriko"
+          ],
+          "correcta": 2,
+          "explicacion": "Lo que gusta tiene que ser un nombre: irakurtzea. «Irakurri gustatzen zait» es calcar el castellano."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Jaten» es la forma de «jaten dut», como. ¿Cuál usas para decir que te gusta comer?",
+          "opciones": [
+            "jan",
+            "jatea",
+            "jango",
+            "jaten"
+          ],
+          "correcta": 1,
+          "explicacion": "Cambias la -n por la -a del artículo: jaten → jatea."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Me gusta ir al monte. → Mendira ____ gustatzen zait.",
+          "opciones": [
+            "joan",
+            "joaten",
+            "noa",
+            "joatea"
+          ],
+          "correcta": 3,
+          "explicacion": "Joaten → joatea: «el ir»."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Me gusta leer libros. → Liburuak irakurtzea gustatzen ____.",
+          "opciones": [
+            "zaizkit",
+            "zait",
+            "dut",
+            "naiz"
+          ],
+          "correcta": 1,
+          "explicacion": "Los libros son varios, pero lo que gusta es una sola cosa: leerlos.",
+          "teclea": true
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "Me gusta leer.",
+          "respuestas": [
+            "irakurtzea gustatzen zait",
+            "niri irakurtzea gustatzen zait"
+          ],
+          "pista": "El verbo, con -tzea: «el leer»."
         }
       ],
       "subnivel": "9.4"

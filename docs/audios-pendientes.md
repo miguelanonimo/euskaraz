@@ -1,9 +1,10 @@
 # Audios pendientes — para Miguel
 
-## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v147): 121 frases sin audio
+## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v148): 150 frases sin audio
 
 Ric y Claude repasaron la gramática del curso contra los «Errores típicos» de la
-*Gramática didáctica* de Zubiri y salieron veinticinco fichas nuevas. Los ejemplos van
+*Gramática didáctica* de Zubiri y salieron veinticinco fichas nuevas. Otras cuatro
+vienen del curso oficial Ingura A1 que está haciendo Ric (v148). Los ejemplos van
 escritos en el cuerpo de la ficha, en líneas `<b>frase</b> — traducción`, y esas
 líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
 
@@ -11,7 +12,7 @@ líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
 
 ```
 cd scripts/generar-audio
-node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 121
+node generar-cuerpos.mjs --seco    # enseña el plan: tienen que salir, al menos, estas 150
 node generar-cuerpos.mjs           # genera, sube y las enlaza en audiosExtra
 ```
 
@@ -84,6 +85,20 @@ Lo que va a generar:
 | 5.2 | telebista mahai gainean dago | La televisión está encima de la mesa |
 | 5.2 | nire ondoan | a mi lado |
 | 5.2 | zure atzean | detrás de ti |
+| 5.6 | pozik | contento, contenta |
+| 5.6 | triste | triste |
+| 5.6 | lasai | tranquilo, tranquila |
+| 5.6 | urduri | nervioso, nerviosa |
+| 5.6 | haserre | enfadado, enfadada |
+| 5.6 | nekatuta | cansado, cansada |
+| 5.6 | kezkatuta | preocupado, preocupada |
+| 5.6 | gaixorik | enfermo, enferma |
+| 5.6 | pozik nago | Estoy contento |
+| 5.6 | oso nekatuta nago | Estoy muy cansada |
+| 5.6 | haserre zaude? | ¿Estás enfadado? |
+| 5.6 | lasai gaude | Estamos tranquilos |
+| 5.6 | urduri nago | Estoy nervioso |
+| 5.6 | urduria naiz | Soy nervioso |
 | 6.1 | hirurak eta laurdenetan | a las tres y cuarto |
 | 6.1 | laurak laurden gutxitan | a las cuatro menos cuarto |
 | 6.1 | hiruretan | a las tres |
@@ -121,9 +136,18 @@ Lo que va a generar:
 | 7.5 | oso gose naiz | Tengo mucha hambre |
 | 8.3 | lanera noa | Voy al trabajo |
 | 8.3 | lanetik nator | Vengo del trabajo |
+| 8.2 | ez sartu! | ¡No entres! |
+| 8.2 | ez joan! | ¡No vayas! ¡No te vayas! |
+| 8.2 | ez egin hori! | ¡No hagas eso! |
+| 8.2 | ez esan! | ¡No lo digas! |
+| 8.2 | ez joan kalera | No vayas a la calle |
+| 8.2 | ez etorri berandu, mesedez | No vengas tarde, por favor |
 | 8.4 | ez dut joan nahi | No quiero ir |
 | 8.4 | ez dut lan egin behar | No tengo que trabajar |
 | 8.4 | ez dut nahi | No quiero |
+| 9.4 | irakurtzea gustatzen zait | Me gusta leer |
+| 9.4 | mendira joatea gustatzen zait | Me gusta ir al monte |
+| 9.4 | hitz egitea asko gustatzen zaio | Le gusta mucho hablar |
 | 9.1 | lagun asko | muchos amigos |
 | 9.1 | diru gutxi | poco dinero |
 | 9.1 | liburu asko ditut | Tengo muchos libros |
@@ -148,13 +172,19 @@ Lo que va a generar:
 | 12.1 | Badago ogirik? | ¿Hay pan? |
 | 12.1 | Bai, badago. | Sí, hay |
 | 12.1 | Ez, ez dago. | No, no hay |
+| 12.1 | ados! | ¡de acuerdo! |
+| 12.1 | ederki! | ¡muy bien!, ¡estupendo! |
+| 12.1 | primeran! | ¡genial! |
+| 12.1 | ez, eskerrik asko | no, gracias |
+| 12.1 | ezta pentsatu ere! | ¡ni pensarlo!, ¡ni hablar! |
+| 12.1 | bai zera! | ¡qué va! |
 
-**Y 38 palabras nuevas en el Diccionario, sin audio** (v147). Ric ha fijado la norma: todo lo que
-entra en el curso entra también en el Diccionario. Son las que estrenaron estas fichas.
+**Y 51 palabras nuevas en el Diccionario, sin audio** (v147 y v148). Ric ha fijado la norma: todo lo
+que entra en el curso entra también en el Diccionario. Son las que estrenaron estas fichas.
 Mientras no tengan mp3 se ven y se practican, pero no suenan. Antes de lo de arriba:
 
 ```
-node generar-faltantes.mjs --seco    # tienen que salir estas 38
+node generar-faltantes.mjs --seco    # tienen que salir estas 51
 node generar-faltantes.mjs
 ```
 
@@ -184,6 +214,14 @@ Conviene correr este primero: varias coinciden con frases de ficha («gose naiz�
 | 5.2 | aurrean | delante |
 | 5.2 | atzean | detrás |
 | 5.2 | barruan | dentro |
+| 5.6 | pozik | contento, contenta |
+| 5.6 | triste | triste |
+| 5.6 | lasai | tranquilo, tranquila |
+| 5.6 | urduri | nervioso, nerviosa |
+| 5.6 | haserre | enfadado, enfadada |
+| 5.6 | nekatuta | cansado, cansada |
+| 5.6 | kezkatuta | preocupado, preocupada |
+| 5.6 | gaixorik | enfermo, enferma |
 | 6.2 | behin | una vez |
 | 7.1 | honek | este (cuando hace algo) |
 | 7.1 | horrek | ese (cuando hace algo) |
@@ -201,6 +239,11 @@ Conviene correr este primero: varias coinciden con frases de ficha («gose naiz�
 | 12.1 | badakit | lo sé |
 | 12.1 | badago | hay, sí que hay |
 | 12.1 | banoa | me voy |
+| 12.1 | ados! | ¡de acuerdo! |
+| 12.1 | ederki | ¡muy bien!, ¡estupendo! |
+| 12.1 | primeran | ¡genial! |
+| 12.1 | ezta pentsatu ere! | ¡ni pensarlo!, ¡ni hablar! |
+| 12.1 | bai zera! | ¡qué va! |
 
 De paso: en la ficha de bizkaiera del tema 6.2 se quitó la frase «barikuan gabean»,
 que no apareció en ninguna fuente (Labayru da «zapatu arratsaldean», con el día sin

@@ -228,6 +228,18 @@
       "subnivel": "8.2"
     },
     {
+      "titulo": "«No entres»: para prohibir, «ez» y el verbo",
+      "cuerpo": "Si el verbo desnudo ya es una orden —<i>sartu!</i>, ¡entra!—, prohibir es igual de corto: <b>ez</b> delante, y nada más.\n\n<b>ez sartu!</b> — ¡No entres!\n<b>ez joan!</b> — ¡No vayas! ¡No te vayas!\n<b>ez egin hori!</b> — ¡No hagas eso!\n<b>ez esan!</b> — ¡No lo digas!\n\nEl verbo no cambia: sigue en su forma de diccionario. En castellano la orden y la prohibición usan formas distintas —«entra», pero «no entr<b>es</b>»—, y eso empuja a buscar otra forma del verbo. No la hay.\n\nLo demás va detrás, en su orden de siempre:\n\n<b>ez joan kalera</b> — No vayas a la calle.\n<b>ez etorri berandu, mesedez</b> — No vengas tarde, por favor.\n\nLo que no vale para prohibir son las formas de una pieza que sirven para mandar. Se dice <i>zoaz!</i>, ¡vete!, pero la prohibición es <b>ez joan!</b>, no «ez zoaz»: eso sería «no vas».",
+      "ejemplos": [
+        {
+          "eu": "sartu, mesedez",
+          "es": "Entra, por favor. — Y para prohibirlo: «ez sartu».",
+          "audio": "unidades/u8/sartu-mesedez.mp3"
+        }
+      ],
+      "subnivel": "8.2"
+    },
+    {
       "titulo": "Cómo suena esto en Bizkaia",
       "cuerpo": "<b>Salir se dice «urten»</b>\nEl <i>irten</i> del batua por allí es <b>urten</b>. Y hay algo más que el nombre: en bizkaiera se conjuga <b>con «dut»</b>, no con «naiz».\n\n<b>urten dot</b> — salgo\nfrente al batua <b>irteten naiz</b>\n\nAsí que no cambia solo la palabra: cambia el auxiliar que la acompaña. Si oyes «urten dot» y esperabas un «naiz», es por esto.",
       "ejemplos": [
@@ -3815,6 +3827,74 @@
           ],
           "correcta": 0,
           "explicacion": "«mugitu» es mover o moverse. De ahí viene el título de la unidad, «Mugi»."
+        }
+      ],
+      "subnivel": "8.2"
+    },
+    {
+      "id": "u8-g55",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "¡No entres! → ____",
+          "opciones": [
+            "Sartu ez!",
+            "Ez sartzen!",
+            "Ez sartu!",
+            "Ez sartuko!"
+          ],
+          "correcta": 2,
+          "explicacion": "«Ez» delante y el verbo en su forma de diccionario."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Zoaz!» es «¡vete!». ¿Cómo se dice «¡no te vayas!»?",
+          "opciones": [
+            "Ez zoaz!",
+            "Ez joan!",
+            "Joan ez!",
+            "Ez noa!"
+          ],
+          "correcta": 1,
+          "explicacion": "«Ez zoaz» sería «no vas». Para prohibir, «ez» y el verbo en su forma de diccionario.",
+          "teclea": true
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "No hagas eso. → Ez ____ hori.",
+          "opciones": [
+            "egiten",
+            "egingo",
+            "egin",
+            "egina"
+          ],
+          "correcta": 2,
+          "explicacion": "El verbo no cambia: egin, como en la orden."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ez etorri berandu» significa…",
+          "opciones": [
+            "No vienes tarde",
+            "No vengas tarde",
+            "Ven tarde",
+            "No ha venido tarde"
+          ],
+          "correcta": 1,
+          "explicacion": "«Ez» y el verbo desnudo: es una prohibición."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¡No entres!",
+          "respuestas": [
+            "ez sartu"
+          ],
+          "pista": "«Ez» delante, y el verbo tal cual."
         }
       ],
       "subnivel": "8.2"

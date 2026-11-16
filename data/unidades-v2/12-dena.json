@@ -67,6 +67,18 @@
       "subnivel": "12.1"
     },
     {
+      "titulo": "«De acuerdo» y «ni hablar»: aceptar y rechazar",
+      "cuerpo": "Con <i>al</i> y con <i>nahi</i> ya sabes proponer: <i>Kafe bat nahi al duzu?</i> Falta la otra mitad de la conversación: decir que sí o que no con algo más que <i>bai</i> y <i>ez</i>.\n\n<b>Para decir que sí</b>\n\n<b>ados!</b> — ¡de acuerdo!\n<b>ederki!</b> — ¡muy bien!, ¡estupendo!\n<b>primeran!</b> — ¡genial!\n<b>noski!</b> — ¡claro!\n\n<b>Para decir que no</b>\n\n<b>ez, eskerrik asko</b> — no, gracias\n<b>ezta pentsatu ere!</b> — ¡ni pensarlo!, ¡ni hablar!\n<b>bai zera!</b> — ¡qué va!\n\nLa última engaña: empieza por <i>bai</i> y es una negativa rotunda. Es como el «¡sí, hombre!» castellano, que tampoco dice que sí.\n\n<b>Primeran</b> es de la calle, de entre amigos. <b>Ederki</b> y <b>ados</b> sirven en cualquier parte.\n\n—Bihar mendira joango gara? — ¿Vamos mañana al monte?\n—Ados! — ¡De acuerdo!",
+      "ejemplos": [
+        {
+          "eu": "kafea nahi al duzu?",
+          "es": "¿Quieres café?",
+          "audio": "unidades/u12/kafea-nahi-al-duzu.mp3"
+        }
+      ],
+      "subnivel": "12.1"
+    },
+    {
       "titulo": "Enlazar frases",
       "cuerpo": "Los que ya tienes: <b>eta</b> (y), <b>baina</b> (pero), <b>edo</b> (o), <b>ere</b> (también).\n\nCuidado con <b>ere</b>: va <b>detrás</b> de lo que acompaña, no delante.\n<b>ni ere euskalduna naiz</b> — Yo también hablo euskera.\n\nY unos cuantos más:\n<b>beraz</b> — así que\n<b>gainera</b> — además\n<b>hala ere</b> — aun así\n<b>adibidez</b> — por ejemplo\n<b>noski</b> — claro, por supuesto\n<b>benetan</b> — de verdad\n\nPara «porque» el euskera no usa una palabra suelta, sino un sufijo pegado al verbo: <b>-lako</b>.\n\n<b>Zergatik ikasten duzu euskara?</b>\n<b>gustatzen zaidalako</b> — Porque me gusta.\n<b>Euskalduna naizelako</b> — Porque hablo euskera.\n\nNo hace falta que lo produzcas todavía. Reconocerlo ya es bastante: cuando oigas un verbo acabado en <b>-lako</b>, alguien te está dando una razón.",
       "ejemplos": [
@@ -327,6 +339,41 @@
       "eu": "banoa",
       "es": "me voy",
       "nota": null,
+      "categoria": "otros",
+      "subnivel": "12.1"
+    },
+    {
+      "eu": "ados!",
+      "es": "¡de acuerdo!",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "12.1"
+    },
+    {
+      "eu": "ederki",
+      "es": "¡muy bien!, ¡estupendo!",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "12.1"
+    },
+    {
+      "eu": "primeran",
+      "es": "¡genial!",
+      "nota": "De la calle, entre amigos.",
+      "categoria": "otros",
+      "subnivel": "12.1"
+    },
+    {
+      "eu": "ezta pentsatu ere!",
+      "es": "¡ni pensarlo!, ¡ni hablar!",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "12.1"
+    },
+    {
+      "eu": "bai zera!",
+      "es": "¡qué va!",
+      "nota": "Empieza por «bai» y es una negativa rotunda.",
       "categoria": "otros",
       "subnivel": "12.1"
     },
@@ -2522,6 +2569,73 @@
             "nik badakit"
           ],
           "pista": "El contrario de «ez dakit»."
+        }
+      ],
+      "subnivel": "12.1"
+    },
+    {
+      "id": "u12-g24",
+      "variantes": [
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "Te proponen un plan y te parece bien. ¿Qué dices?",
+          "opciones": [
+            "Bai zera!",
+            "Ados!",
+            "Ezta pentsatu ere!",
+            "Ez dakit"
+          ],
+          "correcta": 1,
+          "explicacion": "Ados: de acuerdo. Las otras dos con exclamación son para decir que no."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Bai zera!» empieza por «bai». ¿Qué significa?",
+          "opciones": [
+            "¡Sí, claro!",
+            "¡De acuerdo!",
+            "¡Qué va!: es un no rotundo",
+            "¡Gracias!"
+          ],
+          "correcta": 2,
+          "explicacion": "Como el «¡sí, hombre!» castellano: suena a sí y es que no."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "«Ezta pentsatu ere!» es…",
+          "opciones": [
+            "¡Bien pensado!",
+            "¡Ni pensarlo!",
+            "¡De acuerdo!",
+            "¡Piénsalo!"
+          ],
+          "correcta": 1,
+          "explicacion": "Una negativa tajante: ni pensarlo, ni hablar."
+        },
+        {
+          "tipo": "opcion",
+          "instruccion": "Elige la opción correcta",
+          "pregunta": "De estas cuatro maneras de decir que sí, ¿cuál es la más de la calle?",
+          "opciones": [
+            "ederki",
+            "ados",
+            "noski",
+            "primeran"
+          ],
+          "correcta": 3,
+          "explicacion": "Primeran es coloquial, de entre amigos. Las otras sirven en cualquier parte."
+        },
+        {
+          "tipo": "traducir",
+          "instruccion": "Escríbelo en euskera",
+          "es": "¡De acuerdo!",
+          "respuestas": [
+            "ados"
+          ],
+          "pista": "Una sola palabra."
         }
       ],
       "subnivel": "12.1"
