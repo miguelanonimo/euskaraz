@@ -1080,7 +1080,8 @@
             "duzue"
           ],
           "correcta": 1,
-          "explicacion": "«Zuk musika entzuten duzu» = tú escuchas música. «la música» es el objeto → «duzu»."
+          "explicacion": "«Zuk musika entzuten duzu» = tú escuchas música. «la música» es el objeto → «duzu».",
+          "teclea": true
         },
         {
           "tipo": "opcion",

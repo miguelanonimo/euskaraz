@@ -46,7 +46,7 @@
       "id": "4.7",
       "titulo_eu": "Nor eta nork",
       "titulo": "Quién es y quién hace",
-      "resumen": "NOR y NORK: los nombres que oirás en clase, y por qué «lagunak» puede ser uno o varios."
+      "resumen": "NOR y NORK: el nombre de los casos, y por qué «lagunak» puede ser uno o varios."
     }
   ],
   "gramatica": [
@@ -159,8 +159,8 @@
       "subnivel": "4.7"
     },
     {
-      "titulo": "NOR y NORK: los nombres que oirás en clase",
-      "cuerpo": "A la <b>-k</b> la hemos llamado «ergativo», que es su nombre técnico. Pero en un euskaltegi, o en cualquier curso hecho en Euskal Herria, casi nunca la vas a oír así. La llaman NORK. Y a la forma sin marca, NOR.\n\nNo son tecnicismos: son <b>las preguntas</b>.\n\n<b>nor?</b> — ¿quién?, cuando ese quién es o está\n<b>nork?</b> — ¿quién?, cuando ese quién hace algo a algo\n\n<b>Nor da irakaslea?</b> — ¿Quién es el profesor?\n<b>Nork du txakurra?</b> — ¿Quién tiene el perro?\n\nEs la idea que viste en la tercera unidad con <i>non</i> y <i>nora</i>: la pregunta lleva la misma cola que la respuesta. A <i>nork?</i> se contesta con <b>-k</b> —<i>nik</i>, <i>Anek</i>, <i>lagunak</i>—, y por eso a esas formas las llaman «el caso NORK»; en euskera, <i>NORK kasua</i>. Cada caso lleva el nombre de la pregunta que lo pide. Ya conoces otro: el <b>-ren</b> de <i>aitaren anaia</i> responde a <i>noren?</i>, ¿de quién?, y es el caso NOREN.\n\nUn detalle que despista. En <i>Anek txakur bat du</i>, Ane va en NORK. ¿Y el perro? Va en NOR, aunque sea una cosa y no un «quién»: NOR es el nombre del caso sin marca, y ahí caben tanto quien es o está como lo que se tiene.\n\n<b>Ane ikaslea da</b> — <i>Ane</i> va en NOR.\n<b>Anek txakur bat du</b> — <i>Anek</i> va en NORK, y <i>txakur bat</i>, en NOR.\n\nA los verbos les ponen el nombre de los casos que llevan dentro. Los verbos NOR —<i>naiz, zara, da</i>— solo dicen quién es o está. Los verbos NOR-NORK —<i>dut, duzu, du</i>— dicen quién hace y qué.\n\nMás adelante llegarán otros dos, cuando aparezca el «a quién». De momento, si en clase oyes «este verbo es NOR-NORK», ya sabes lo que quieren decir: el sujeto lleva <b>-k</b>.",
+      "titulo": "NOR y NORK: los casos se llaman como su pregunta",
+      "cuerpo": "A la <b>-k</b> la hemos llamado «ergativo», que es su nombre técnico. Pero en euskera los casos tienen otro nombre, mucho más fácil de recordar: se llaman como <b>la pregunta</b> a la que responden. La <b>-k</b> es NORK, y la forma sin marca, NOR.\n\n<b>nor?</b> — ¿quién?, cuando ese quién es o está\n<b>nork?</b> — ¿quién?, cuando ese quién hace algo a algo\n\n<b>Nor da irakaslea?</b> — ¿Quién es el profesor?\n<b>Nork du txakurra?</b> — ¿Quién tiene el perro?\n\nEs la idea que viste en la tercera unidad con <i>non</i> y <i>nora</i>: la pregunta lleva la misma cola que la respuesta. A <i>nork?</i> se contesta con <b>-k</b> —<i>nik</i>, <i>Anek</i>, <i>lagunak</i>—, y por eso a esas formas se las llama «el caso NORK»; en euskera, <i>NORK kasua</i>. Cada caso lleva el nombre de la pregunta que lo pide. Ya conoces otro: el <b>-ren</b> de <i>aitaren anaia</i> responde a <i>noren?</i>, ¿de quién?, y es el caso NOREN.\n\nUn detalle que despista. En <i>Anek txakur bat du</i>, Ane va en NORK. ¿Y el perro? Va en NOR, aunque sea una cosa y no un «quién»: NOR es el nombre del caso sin marca, y ahí caben tanto quien es o está como lo que se tiene.\n\n<b>Ane ikaslea da</b> — <i>Ane</i> va en NOR.\n<b>Anek txakur bat du</b> — <i>Anek</i> va en NORK, y <i>txakur bat</i>, en NOR.\n\nLos verbos se nombran igual: por los casos que llevan dentro. Los verbos NOR —<i>naiz, zara, da</i>— solo dicen quién es o está. Los verbos NOR-NORK —<i>dut, duzu, du</i>— dicen quién hace y qué.\n\nMás adelante llegarán otros dos, cuando aparezca el «a quién». De momento, cuando leas que un verbo «es NOR-NORK», ya sabes lo que quiere decir: el sujeto lleva <b>-k</b>.",
       "ejemplos": [
         {
           "eu": "ni Bilbokoa naiz",
@@ -709,6 +709,76 @@
       "subnivel": "4.4"
     },
     {
+      "eu": "ukan",
+      "es": "tener (el verbo de «dut»)",
+      "nota": "Además de «tener», es el auxiliar de «jan dut», he comido.",
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "hark",
+      "es": "él, ella (cuando hace algo)",
+      "nota": "«Hura» con la -k de quien hace: «hark du», él tiene.",
+      "categoria": "otros",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "dugu",
+      "es": "(nosotros) tenemos",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "duzue",
+      "es": "(vosotros) tenéis",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "dute",
+      "es": "(ellos) tienen",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "dituzu",
+      "es": "(tú) tienes (varias cosas)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "ditu",
+      "es": "(él/ella) tiene (varias cosas)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "ditugu",
+      "es": "(nosotros) tenemos (varias cosas)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "dituzue",
+      "es": "(vosotros) tenéis (varias cosas)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
+      "eu": "dituzte",
+      "es": "(ellos) tienen (varias cosas)",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.4"
+    },
+    {
       "eu": "anaia",
       "es": "hermano (de un chico)",
       "nota": null,
@@ -1186,6 +1256,13 @@
       "subnivel": "4.3"
     },
     {
+      "eu": "solairua",
+      "es": "el piso, la planta (de un edificio)",
+      "nota": "«Hirugarren solairua», la tercera planta.",
+      "categoria": "sustantivo",
+      "subnivel": "4.3"
+    },
+    {
       "eu": "daukat",
       "es": "(yo) tengo",
       "nota": "Del verbo «eduki». Se oye muchísimo.",
@@ -1229,6 +1306,27 @@
       "es": "el tiempo (del que se dispone)",
       "nota": "No es el tiempo del reloj ni el del cielo: es el rato libre que tienes.",
       "audio": "unidades/u4/astia.mp3",
+      "subnivel": "4.5"
+    },
+    {
+      "eu": "daukagu",
+      "es": "(nosotros) tenemos, con «eduki»",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.5"
+    },
+    {
+      "eu": "daukazue",
+      "es": "(vosotros) tenéis, con «eduki»",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "4.5"
+    },
+    {
+      "eu": "daukate",
+      "es": "(ellos) tienen, con «eduki»",
+      "nota": null,
+      "categoria": "verbo",
       "subnivel": "4.5"
     },
     {
@@ -1600,7 +1698,8 @@
             "dituzue"
           ],
           "correcta": 1,
-          "explicacion": "«Guk» + objeto plural → «ditugu»."
+          "explicacion": "«Guk» + objeto plural → «ditugu».",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -1671,7 +1770,7 @@
             "Dativo"
           ],
           "correcta": 1,
-          "explicacion": "El caso ergativo. Es la seña de identidad gramatical del euskera. En clase lo oirás como «NORK»."
+          "explicacion": "El caso ergativo. Es la seña de identidad gramatical del euskera. Por la pregunta a la que responde, también se le llama «NORK»."
         },
         {
           "tipo": "opcion",
@@ -5578,7 +5677,7 @@
         {
           "tipo": "opcion",
           "instruccion": "Elige la opción correcta",
-          "pregunta": "En clase, a la -k de quien hace algo la llaman «el caso…»",
+          "pregunta": "A la -k de quien hace algo se la llama «el caso…»",
           "opciones": [
             "NOR",
             "NORK",

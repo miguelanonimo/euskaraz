@@ -487,6 +487,76 @@
       "subnivel": "8.1"
     },
     {
+      "eu": "goaz",
+      "es": "(nosotros) vamos",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "zoazte",
+      "es": "(vosotros) vais",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "doaz",
+      "es": "(ellos) van",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "gatoz",
+      "es": "(nosotros) venimos",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "zatozte",
+      "es": "(vosotros) venís",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "datoz",
+      "es": "(ellos) vienen",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "zabiltza",
+      "es": "(tú) andas",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "gabiltza",
+      "es": "(nosotros) andamos",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "zabiltzate",
+      "es": "(vosotros) andáis",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
+      "eu": "dabiltza",
+      "es": "(ellos) andan",
+      "nota": null,
+      "categoria": "verbo",
+      "subnivel": "8.1"
+    },
+    {
       "eu": "irten",
       "es": "salir",
       "nota": "También «atera» en muchos sitios.",
@@ -687,6 +757,13 @@
       "subnivel": "8.3"
     },
     {
+      "eu": "euskaraz",
+      "es": "en euskera",
+      "nota": "«Euskara» más la -z de «por medio de». Da nombre a esta app.",
+      "categoria": "otros",
+      "subnivel": "8.3"
+    },
+    {
       "eu": "mugitu",
       "es": "mover, moverse",
       "nota": "El título de la unidad, «Mugi zaitez!», es su imperativo: «¡muévete!».",
@@ -756,7 +833,8 @@
             "doaz"
           ],
           "correcta": 1,
-          "explicacion": "Con «zu» va «zoaz»."
+          "explicacion": "Con «zu» va «zoaz».",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -783,7 +861,8 @@
             "noa"
           ],
           "correcta": 0,
-          "explicacion": "Con «gu» va «goaz»."
+          "explicacion": "Con «gu» va «goaz».",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -796,7 +875,8 @@
             "doa"
           ],
           "correcta": 2,
-          "explicacion": "Con «haiek» va «doaz»."
+          "explicacion": "Con «haiek» va «doaz».",
+          "teclea": false
         }
       ],
       "subnivel": "8.1"
@@ -815,7 +895,8 @@
             "gatoz"
           ],
           "correcta": 0,
-          "explicacion": "«etorri» con «ni» hace «nator»."
+          "explicacion": "«etorri» con «ni» hace «nator».",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -828,7 +909,8 @@
             "datoz"
           ],
           "correcta": 1,
-          "explicacion": "Con «zu» va «zatoz»."
+          "explicacion": "Con «zu» va «zatoz».",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -841,7 +923,8 @@
             "gatoz"
           ],
           "correcta": 2,
-          "explicacion": "Con «hura» va «dator»."
+          "explicacion": "Con «hura» va «dator».",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -854,7 +937,8 @@
             "nator"
           ],
           "correcta": 0,
-          "explicacion": "Con «gu» va «gatoz»."
+          "explicacion": "Con «gu» va «gatoz».",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -867,7 +951,8 @@
             "dator"
           ],
           "correcta": 2,
-          "explicacion": "Con «haiek» va «datoz»."
+          "explicacion": "Con «haiek» va «datoz».",
+          "teclea": false
         }
       ],
       "subnivel": "8.1"
@@ -1257,7 +1342,8 @@
             "zabiltza"
           ],
           "correcta": 0,
-          "explicacion": "«ibili» con «ni»: nabil."
+          "explicacion": "«ibili» con «ni»: nabil.",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -1270,7 +1356,8 @@
             "zabiltzate"
           ],
           "correcta": 1,
-          "explicacion": "«ibili» con «hura»: dabil."
+          "explicacion": "«ibili» con «hura»: dabil.",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -1283,7 +1370,8 @@
             "zabiltza"
           ],
           "correcta": 0,
-          "explicacion": "«ibili» con «gu»: gabiltza."
+          "explicacion": "«ibili» con «gu»: gabiltza.",
+          "teclea": false
         },
         {
           "tipo": "opcion",
@@ -1296,7 +1384,8 @@
             "dabil"
           ],
           "correcta": 1,
-          "explicacion": "«ibili» con «haiek»: dabiltza."
+          "explicacion": "«ibili» con «haiek»: dabiltza.",
+          "teclea": false
         }
       ],
       "subnivel": "8.1"

@@ -471,6 +471,13 @@
       "subnivel": "10.5"
     },
     {
+      "eu": "joan den hilean",
+      "es": "el mes pasado",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "10.5"
+    },
+    {
       "eu": "jaio",
       "es": "nacer",
       "nota": null,
@@ -2880,7 +2887,8 @@
             "zaudete"
           ],
           "correcta": 2,
-          "explicacion": "Estar en un sitio es «egon»: con «zuek», zeundeten."
+          "explicacion": "Estar en un sitio es «egon»: con «zuek», zeundeten.",
+          "teclea": true
         },
         {
           "tipo": "opcion",
@@ -2955,7 +2963,8 @@
             "zenuten"
           ],
           "correcta": 1,
-          "explicacion": "Pasado de «egon» con «zuek»: zeundeten."
+          "explicacion": "Pasado de «egon» con «zuek»: zeundeten.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

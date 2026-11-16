@@ -1,10 +1,10 @@
 # Audios pendientes — para Miguel
 
-## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v148): 150 frases sin audio
+## Lo último · Fichas nuevas de noviembre de 2026 (v138 a v149): 150 frases sin audio
 
 Ric y Claude repasaron la gramática del curso contra los «Errores típicos» de la
-*Gramática didáctica* de Zubiri y salieron veinticinco fichas nuevas. Otras cuatro
-vienen del curso oficial Ingura A1 que está haciendo Ric (v148). Los ejemplos van
+*Gramática didáctica* de Zubiri y salieron veinticinco fichas nuevas, y otras cuatro
+después (v148). Los ejemplos van
 escritos en el cuerpo de la ficha, en líneas `<b>frase</b> — traducción`, y esas
 líneas todavía no suenan: desde el Mac de Ric no se puede generar audio.
 
@@ -179,12 +179,14 @@ Lo que va a generar:
 | 12.1 | ezta pentsatu ere! | ¡ni pensarlo!, ¡ni hablar! |
 | 12.1 | bai zera! | ¡qué va! |
 
-**Y 51 palabras nuevas en el Diccionario, sin audio** (v147 y v148). Ric ha fijado la norma: todo lo
-que entra en el curso entra también en el Diccionario. Son las que estrenaron estas fichas.
-Mientras no tengan mp3 se ven y se practican, pero no suenan. Antes de lo de arriba:
+**Y 135 palabras nuevas en el Diccionario, sin audio** (v147 a v149). Ric ha fijado la norma: todo lo
+que entra en el curso entra también en el Diccionario. Son las que enseñan las fichas y no estaban:
+las de las fichas nuevas y, en la v149, las formas que las fichas de siempre ponían en lista
+(«gaude», «zaizkit», «dit», «goizean»…). Mientras no tengan mp3 se ven y se practican, pero no
+suenan. Antes de lo de arriba:
 
 ```
-node generar-faltantes.mjs --seco    # tienen que salir estas 51
+node generar-faltantes.mjs --seco    # tienen que salir estas 135
 node generar-faltantes.mjs
 ```
 
@@ -193,7 +195,25 @@ Conviene correr este primero: varias coinciden con frases de ficha («gose naiz�
 
 | Tema | Palabra | Traducción |
 |---|---|---|
+| 1.3 | bizkaiera | el dialecto de Bizkaia |
+| 1.3 | euskal | vasco, del euskera (delante de un nombre) |
+| 1.4 | jaso | recoger, levantar |
+| 2.1 | beraiek | ellos, ellas (en la conversación) |
+| 2.2 | zeuek | vosotros mismos, vosotras mismas |
+| 2.3 | izan | ser (el verbo) |
+| 3.4 | ez dut ulertzen | no entiendo |
+| 3.4 | zenbat urte dituzu? | ¿cuántos años tienes? |
 | 4.1 | Zazpikaleak | el Casco Viejo de Bilbao |
+| 4.4 | ukan | tener (el verbo de «dut») |
+| 4.4 | hark | él, ella (cuando hace algo) |
+| 4.4 | dugu | (nosotros) tenemos |
+| 4.4 | duzue | (vosotros) tenéis |
+| 4.4 | dute | (ellos) tienen |
+| 4.4 | dituzu | (tú) tienes (varias cosas) |
+| 4.4 | ditu | (él/ella) tiene (varias cosas) |
+| 4.4 | ditugu | (nosotros) tenemos (varias cosas) |
+| 4.4 | dituzue | (vosotros) tenéis (varias cosas) |
+| 4.4 | dituzte | (ellos) tienen (varias cosas) |
 | 4.6 | anai-arrebak | los hermanos, hermanos y hermanas |
 | 4.6 | seme-alabak | los hijos, hijos e hijas |
 | 4.6 | aitona-amonak | los abuelos, abuelo y abuela |
@@ -206,14 +226,24 @@ Conviene correr este primero: varias coinciden con frases de ficha («gose naiz�
 | 4.6 | gurea | el nuestro, la nuestra |
 | 4.6 | zuena | el vuestro, la vuestra |
 | 4.6 | haiena | el suyo, la suya (de ellos, de ellas) |
+| 4.3 | solairua | el piso, la planta (de un edificio) |
+| 4.5 | daukagu | (nosotros) tenemos, con «eduki» |
+| 4.5 | daukazue | (vosotros) tenéis, con «eduki» |
+| 4.5 | daukate | (ellos) tienen, con «eduki» |
 | 4.7 | nork? | ¿quién? (cuando hace algo) |
+| 5.1 | egon | estar (el verbo) |
+| 5.1 | gaude | (nosotros) estamos |
+| 5.1 | zaudete | (vosotros) estáis |
+| 5.1 | beren | su, lo suyo (de ellos mismos) |
 | 5.3 | nolakoa? | ¿cómo es? |
+| 5.3 | ederra | hermoso, hermosa |
 | 5.2 | gainean | encima |
 | 5.2 | azpian | debajo |
 | 5.2 | ondoan | al lado |
 | 5.2 | aurrean | delante |
 | 5.2 | atzean | detrás |
 | 5.2 | barruan | dentro |
+| 5.2 | igo | subir |
 | 5.6 | pozik | contento, contenta |
 | 5.6 | triste | triste |
 | 5.6 | lasai | tranquilo, tranquila |
@@ -222,7 +252,17 @@ Conviene correr este primero: varias coinciden con frases de ficha («gose naiz�
 | 5.6 | nekatuta | cansado, cansada |
 | 5.6 | kezkatuta | preocupado, preocupada |
 | 5.6 | gaixorik | enfermo, enferma |
+| 6.1 | gauerdia | la medianoche |
+| 6.1 | ordu batean | a la una |
+| 6.1 | ordu bietan | a las dos |
 | 6.2 | behin | una vez |
+| 6.2 | goizean | por la mañana |
+| 6.2 | eguerdian | a mediodía |
+| 6.2 | arratsaldean | por la tarde |
+| 6.2 | iluntzean | al anochecer |
+| 6.2 | gauean | por la noche |
+| 6.4 | ona | bueno, buena |
+| 6.5 | nagusi | mayor, principal |
 | 7.1 | honek | este (cuando hace algo) |
 | 7.1 | horrek | ese (cuando hace algo) |
 | 7.5 | kiloa | el kilo |
@@ -235,7 +275,52 @@ Conviene correr este primero: varias coinciden con frases de ficha («gose naiz�
 | 7.5 | logura naiz | tengo sueño |
 | 7.5 | hotz naiz | tengo frío |
 | 7.5 | bero naiz | tengo calor |
+| 8.1 | goaz | (nosotros) vamos |
+| 8.1 | zoazte | (vosotros) vais |
+| 8.1 | doaz | (ellos) van |
+| 8.1 | gatoz | (nosotros) venimos |
+| 8.1 | zatozte | (vosotros) venís |
+| 8.1 | datoz | (ellos) vienen |
+| 8.1 | zabiltza | (tú) andas |
+| 8.1 | gabiltza | (nosotros) andamos |
+| 8.1 | zabiltzate | (vosotros) andáis |
+| 8.1 | dabiltza | (ellos) andan |
+| 8.3 | euskaraz | en euskera |
+| 9.5 | norentzat? | ¿para quién? |
+| 9.5 | niretzat | para mí |
+| 9.2 | gertatzen zait | me pasa |
+| 9.2 | ahaztu zait | se me ha olvidado |
+| 9.2 | dit | me lo (da, dice…) |
+| 9.2 | dizu | te lo (da, dice…) |
+| 9.2 | dio | se lo (a él, a ella) |
+| 9.2 | digu | nos lo (da, dice…) |
+| 9.2 | dizue | os lo (da, dice…) |
+| 9.2 | die | se lo (a ellos, a ellas) |
+| 9.4 | pilotalekua | el frontón |
+| 9.4 | frontoia | el frontón (la palabra prestada) |
 | 9.1 | nori? | ¿a quién? |
+| 9.1 | zait | me (gusta, parece…) |
+| 9.1 | zaizu | te (gusta, parece…) |
+| 9.1 | zaio | le (gusta, parece…) |
+| 9.1 | zaigu | nos (gusta, parece…) |
+| 9.1 | zaizue | os (gusta, parece…) |
+| 9.1 | zaie | les (gusta, parece…) |
+| 9.1 | zaizkit | me gustan |
+| 9.1 | zaizkizu | te gustan |
+| 9.1 | zaizkio | le gustan |
+| 9.1 | zaizkigu | nos gustan |
+| 9.1 | zaizkizue | os gustan |
+| 9.1 | zaizkie | les gustan |
+| 9.3 | eskuz | a mano |
+| 9.3 | buruz | de memoria |
+| 10.5 | joan den hilean | el mes pasado |
+| 11.3 | onena | el mejor, la mejor |
+| 11.3 | txarra | malo, mala |
+| 11.3 | handiena | el más grande, la más grande |
+| 11.1 | joango naiz | iré |
+| 11.1 | egingo dut | haré |
+| 11.1 | beharko dut | tendré que |
+| 12.3 | denek | todos (cuando hacen algo) |
 | 12.1 | badakit | lo sé |
 | 12.1 | badago | hay, sí que hay |
 | 12.1 | banoa | me voy |
@@ -244,6 +329,7 @@ Conviene correr este primero: varias coinciden con frases de ficha («gose naiz�
 | 12.1 | primeran | ¡genial! |
 | 12.1 | ezta pentsatu ere! | ¡ni pensarlo!, ¡ni hablar! |
 | 12.1 | bai zera! | ¡qué va! |
+| 12.1 | badator | ya viene |
 
 De paso: en la ficha de bizkaiera del tema 6.2 se quitó la frase «barikuan gabean»,
 que no apareció en ninguna fuente (Labayru da «zapatu arratsaldean», con el día sin

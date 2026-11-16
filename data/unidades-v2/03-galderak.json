@@ -437,6 +437,20 @@
       "subnivel": "3.4"
     },
     {
+      "eu": "ez dut ulertzen",
+      "es": "no entiendo",
+      "nota": "Frase hecha. Junto con «ez dakit», de las más útiles al empezar.",
+      "categoria": "otros",
+      "subnivel": "3.4"
+    },
+    {
+      "eu": "zenbat urte dituzu?",
+      "es": "¿cuántos años tienes?",
+      "nota": "Los años son varios: por eso «dituzu».",
+      "categoria": "otros",
+      "subnivel": "3.4"
+    },
+    {
       "eu": "beti",
       "es": "siempre",
       "nota": null,
