@@ -658,6 +658,20 @@
       "subnivel": "7.1"
     },
     {
+      "eu": "honek",
+      "es": "este (cuando hace algo)",
+      "nota": "«Hau» con la -k de quien hace: «lagun honek kafea edaten du».",
+      "categoria": "otros",
+      "subnivel": "7.1"
+    },
+    {
+      "eu": "horrek",
+      "es": "ese (cuando hace algo)",
+      "nota": "«Hori» con la -k de quien hace.",
+      "categoria": "otros",
+      "subnivel": "7.1"
+    },
+    {
       "eu": "platanoa",
       "es": "el plátano",
       "nota": null,
@@ -775,6 +789,76 @@
       "nota": null,
       "audio": "unidades/u7/azukrea.mp3",
       "categoria": "sustantivo",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "kiloa",
+      "es": "el kilo",
+      "nota": "«Kilo bat sagar», un kilo de manzanas: sin «de» y sin artículo.",
+      "categoria": "sustantivo",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "litroa",
+      "es": "el litro",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "botila",
+      "es": "la botella",
+      "nota": null,
+      "categoria": "sustantivo",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "beste bat",
+      "es": "otro, otra",
+      "nota": "Con un nombre, lo abrazan: «beste kafe bat», otro café.",
+      "categoria": "otros",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "bestea",
+      "es": "el otro, la otra",
+      "nota": "Uno concreto, que ya sabemos cuál es.",
+      "categoria": "otros",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "gose naiz",
+      "es": "tengo hambre",
+      "nota": "Con «izan», no con «tener». Y sin artículo: «gose», no «gosea».",
+      "categoria": "otros",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "egarri naiz",
+      "es": "tengo sed",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "logura naiz",
+      "es": "tengo sueño",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "hotz naiz",
+      "es": "tengo frío",
+      "nota": null,
+      "categoria": "otros",
+      "subnivel": "7.5"
+    },
+    {
+      "eu": "bero naiz",
+      "es": "tengo calor",
+      "nota": null,
+      "categoria": "otros",
       "subnivel": "7.5"
     },
     {
@@ -1940,7 +2024,8 @@
             "horrek"
           ],
           "correcta": 1,
-          "explicacion": "«Ser» no lleva objeto: sin -k."
+          "explicacion": "«Ser» no lleva objeto: sin -k.",
+          "teclea": true
         },
         {
           "tipo": "opcion",

@@ -631,6 +631,13 @@
       "subnivel": "5.3"
     },
     {
+      "eu": "nolakoa?",
+      "es": "¿cómo es?",
+      "nota": "Pregunta cómo es algo. «Nola?» pregunta cómo está o cómo se hace.",
+      "categoria": "otros",
+      "subnivel": "5.3"
+    },
+    {
       "eu": "egongela",
       "es": "el salón",
       "nota": null,
@@ -772,6 +779,48 @@
       "nota": null,
       "audio": "unidades/u5/teilatua.mp3",
       "categoria": "sustantivo",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "gainean",
+      "es": "encima",
+      "nota": "Va detrás del nombre, que se queda sin artículo: «mahai gainean», encima de la mesa.",
+      "categoria": "otros",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "azpian",
+      "es": "debajo",
+      "nota": "«Ohe azpian», debajo de la cama.",
+      "categoria": "otros",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "ondoan",
+      "es": "al lado",
+      "nota": "«Ate ondoan», al lado de la puerta.",
+      "categoria": "otros",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "aurrean",
+      "es": "delante",
+      "nota": "«Etxe aurrean», delante de casa.",
+      "categoria": "otros",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "atzean",
+      "es": "detrás",
+      "nota": "«Zure atzean», detrás de ti.",
+      "categoria": "otros",
+      "subnivel": "5.2"
+    },
+    {
+      "eu": "barruan",
+      "es": "dentro",
+      "nota": "«Armairu barruan», dentro del armario.",
+      "categoria": "otros",
       "subnivel": "5.2"
     },
     {
@@ -3981,7 +4030,8 @@
             "mahai azpian"
           ],
           "correcta": 2,
-          "explicacion": "Primero la mesa, sin artículo, y después «gainean». «Azpian» sería debajo."
+          "explicacion": "Primero la mesa, sin artículo, y después «gainean». «Azpian» sería debajo.",
+          "teclea": false
         },
         {
           "tipo": "opcion",
