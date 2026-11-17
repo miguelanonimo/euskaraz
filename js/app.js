@@ -4431,6 +4431,7 @@
     estado.resuelto = false;
     estado.sel = null;
     ocultarFeedback();
+    marcarEscribiendo(false, true);
 
     var ej;
     if (estado.modo === 'vocab') {
@@ -5043,6 +5044,26 @@
     if (nodo && CON_TECLADO.matches) nodo.focus({ preventScroll: true });
   }
 
+  /* Escribir en el móvil. La hoja de «Comprobar» va fija abajo, y con el
+     teclado en pantalla abierto se quedaba encima de la caja de respuesta:
+     al escribir, el navegador llevaba la página hacia abajo y en una
+     pantalla pequeña la caja quedaba tapada (lo vio Ric, 17/11/2026).
+     Mientras la caja tiene el foco, la hoja deja de ser fija y se coloca
+     justo debajo de la respuesta (body.escribiendo, en el CSS). */
+  var escribiendoTimer = null;
+  function marcarEscribiendo(si, yaMismo) {
+    clearTimeout(escribiendoTimer);
+    if (si) { document.body.classList.add('escribiendo'); return; }
+    if (yaMismo) { document.body.classList.remove('escribiendo'); return; }
+    // Al tocar «Comprobar» la caja pierde el foco un instante antes de que
+    // llegue el toque: si la hoja volviera a su sitio en ese momento, el
+    // botón se movería bajo el dedo y el toque se perdería.
+    escribiendoTimer = setTimeout(function () { document.body.classList.remove('escribiendo'); }, 300);
+  }
+  function esCajaDeRespuesta(nodo) {
+    return !!(nodo && nodo.classList && nodo.classList.contains('typebox'));
+  }
+
   function pintarTraducir(ej) {
     el.quizContent.innerHTML =
       cabeceraEj(ej, esc(ej.es)) +
@@ -5236,6 +5257,7 @@
 
   function comprobar() {
     var ej = ejActual();
+    marcarEscribiendo(false, true);
     if (estado.resuelto) return siguiente();
     if (!ej) return;
 
@@ -5826,6 +5848,12 @@
 
   // Ejercicio
   el.btnCheck.addEventListener('click', comprobar);
+  el.quizContent.addEventListener('focusin', function (e) {
+    if (esCajaDeRespuesta(e.target) && !CON_TECLADO.matches) marcarEscribiendo(true);
+  });
+  el.quizContent.addEventListener('focusout', function (e) {
+    if (esCajaDeRespuesta(e.target)) marcarEscribiendo(false);
+  });
   el.btnFicha.innerHTML = icono('dictionary', 24);
   el.btnFicha.addEventListener('click', abrirHoja);
   // Rotar el móvil cambia el alto de la hoja (el ancho disponible para

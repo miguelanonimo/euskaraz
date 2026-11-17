@@ -150,6 +150,12 @@ body.con-tabbar .screen{ padding-bottom: calc(72px + var(--safe-b-tabbar)); }
 /* Mismo criterio que con el tabbar: sin margen de más, solo un
    pelín (8px) para que la última fila no quede pegada al botón. */
 .screen--quiz{ padding-bottom: calc(var(--sheet-h, 180px) + 8px); }
+/* Escribiendo en el móvil (body.escribiendo, ver marcarEscribiendo() en
+   js/app.js): con el teclado abierto, la hoja fija tapaba la caja de
+   respuesta. Mientras se escribe, la hoja va en su sitio, debajo del
+   ejercicio, y la pantalla ya no le reserva hueco abajo. */
+body.escribiendo .screen--quiz{ padding-bottom: 8px; }
+body.escribiendo .sheet{ position: relative; left: auto; right: auto; bottom: auto; border-radius: 0; }
 
 .stack{ display: flex; flex-direction: column; gap: 24px; }
 .vocab__cab{ display: flex; flex-direction: column; gap: 24px; }
